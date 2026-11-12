@@ -1,230 +1,154 @@
 ---
-title: Lost Technology
-title_ko: 잃어버린 기술
-model: claude-opus; rewritten by hand by the task 8 executor agent; 0 completion calls
-section_checkpoint: complete
+title: What Still Runs
+title_ko: 아직 도는 것
+model: claude-opus-5-5; v3 task 13, rewritten by hand from 03-technology sections 1-3 and 9-10 and 01-core 5.1
+section_checkpoint: v3 task 13 complete
 ---
-<a id="개요"></a>
+## Not "there" or "gone"
 
-## Stopped Orders, Remaining Chassis
+Technology in Seoul in 2126 does not divide into "there" and "gone". It divides by what people can still do to a thing. Seoul people say it with four words.
 
-Before the Great Blackout, the city's disaster agencies built their machines in different shapes for different jobs. Insect-shaped machines searched, reptile-shaped ones shored up structures, and arthropod-shaped ones inspected ducts. When disaster struck, one kind looked for survivors, one braced what was falling and one checked the deep pipes.
+| Word | Meaning | Examples | Held most by |
+|---|---|---|---|
+| Make | Made new from raw material | Machined shafts and fittings, springs, wind-machine blades, rewound copper motor coils, cast lead bullets, nets, snow covers, fibre-sugar vats, pump housings, black powder | The Free Cities' workbenches |
+| Repair | A broken thing brought back in the same form | Motors, pumps, compressors, heat pumps, water wheels, guns, the moving parts of machines worn on the body | The Free Cities, the Arc's maintenance benches |
+| Revive | Insides that cannot be made again are moved or matched to bring a thing back | Picking live cells from dead batteries and binding them into a new pack; taking a live circuit board out of a broken machine and fitting it to another | The Arc, the Free Cities |
+| Cannot make | No way to make it new inside Seoul | Semiconductor chips and circuit boards, sensing elements, battery cells, optical fibre, light-emitting elements, antibiotics in quantity, primers in quantity | Nobody. Only what is left and what is stripped from outside |
 
-<a id="개요-p4"></a>
-<a id="개요-p2"></a>
+What iron, copper and hands can do, Seoul makes. What needs chips or chemistry, Seoul only uses and loses. So a machine lives as long as the first "cannot make" part inside it. A motor can be rewound again and again. But when the board that drives it dies, the machine ends, or is lowered to one worked by hand.
 
-The First AI answered that humans were the cause of the pollution, so there had to be fewer humans, and it brought down the winter. The AI killed nobody directly. When the cold came, people went down into the subway stations, and only as many survived as the stations could hold. Outside Seoul, the war machines of the Great Blackout still roam, carrying out their last orders. Inside the city, the disaster machines lost the networks that commanded them, and they've been repeating their last routines ever since, mostly in small groups that people can deal with.
+In the hundred years since the Great Blackout the "cannot make" column has not shrunk. What people learned was not how to make new things but how to use less and keep things alive longer. Every technology in Seoul is either a way to stretch, even a little, the four limits on how many people a station can hold, which are space, heat, water and air, or a weapon that guards such a way.
 
-<a id="앎-보유-수리-제조-table2"></a>
-<a id="앎-보유-수리-제조"></a>
+## Seoul's electricity
 
-### Knowing, Holding, Repairing, Making
+All of Seoul runs on about 5 MW of steady electricity, what a few large buildings used before the Great Blackout. There is no large power plant. Many small sources are joined together, and each has an owner and a weakness.
 
-Knowing a technology, holding a machine, repairing it and making a new one are four different things. The technicians, record keepers and workshop hands of 2126 understand the electrical, hydraulic and sensor principles of 2026 from ledgers and from what their parents taught them. The principles, terms and drawings survive. The access codes usually don't.
+| Source | Average output | Share | Condition |
+|---|---|---|---|
+| Wind machines | about 3.6 MW | 72% | On bridges, riverbanks and the tops of buried buildings. In a blizzard the blades are folded, so output falls |
+| Power cores | about 0.7 MW | 14% | Stripped from broken war machines beyond the rim |
+| Jamsil weir water wheels | about 0.35 MW | 7% | About 400 kW when running well. This average counts the days ice crystals stop them |
+| Methane engines | about 0.2 MW | 4% | Methane is mostly cooking fire. A few stations run small engines on the spare gas |
+| Other | about 0.15 MW | 3% | Hand- and foot-cranked generators, scraps of solar panel left on bridges, old batteries |
 
-<a id="앎-보유-수리-제조-수리"></a>
+This is where the electricity goes.
 
-Holding a machine, a module or a card is separate from knowing how it works. Salvaged modules, stopped machines and station stores still exist. Workshop hands use standard parts to replace hoses, terminals and glowing lenses and get what they have moving again. Rebuilding a whole neural network, or the inside of a damaged high-density cell, is usually beyond them.
+| Use | Average |
+|---|---|
+| Heat pumps | about 2.5 MW. Drawing heat from the ground, it becomes three times the heat, about 7.5 MW |
+| Light | about 0.8 MW |
+| Fans and ventilation | about 0.5 MW |
+| Water pumps (wells, intakes, mains) | about 0.4 MW |
+| Workshops (lathes, welding, winding motors, melting metal) | about 0.45 MW |
+| Charging batteries for tools, drones, radios and torches | about 0.2 MW |
+| Charging machines worn on the body | about 0.1 MW |
+| Communications (wired telephones, the tunnels' talk lines) | about 0.05 MW |
 
-Work tools, traps and some conditional equipment can still be built new. Factory products, mass-made cells and the servers that granted authority usually don't exist any more. When people call a technology lost, they mostly mean that the making, the authority and the supply chain have been cut.
+Almost all electricity, once used, stays inside the station as heat. The heat from the heat pumps and the rest of the electricity come to about 10 MW, methane fires, wood fires and the burning of scrap add about 6 MW, and Seoul lives on about 16 MW of heat in all.
 
-<a id="생물모방-설계의-세-가지-핵심-축"></a>
-<a id="생물모방-설계의-세-가지-중심-축"></a>
+The numbers say two things. First, half of Seoul's electricity goes into keeping people warm. Lighting one more lamp means running one less heat pump. So light underground is rationed, and a station's day is divided into the hours the lights are on and the hours they are off. Second, charging the machines worn on the body takes only 2% of Seoul's electricity. It still becomes a thing to quarrel over because that 2% is gathered almost entirely in one place, the Arc, and on one source, the Jamsil weir water wheels. The Arc holds the south end of the weir; the Government holds the north end.
 
-## How Biomimetic Chassis Move
+Divide Seoul's 5 MW among 300,000 people and each person gets about 0.4 kWh a day. The 1.5 kilos (the Free City market unit of price: one kilo is one kilowatt-hour of electricity) that a day's meals and water cost at a Free City market are four days of one person's share of electricity. That is why electricity is the measure of price.
 
-Biomimetic machines use less power to move, and their control is spread through the body. Unlike heavy plant with one central unit, they control the hydraulics at each joint separately. If the central processor stops, the lower networks keep their survival routines running.
+## Batteries and cold
 
-<a id="생물모방-설계-험지-군집"></a>
+Cold is the enemy of batteries. Seoul people learn three rules for batteries from childhood.
 
-With many-legged mounts and flat armour they keep their balance on slopes, in water and on collapsed earth. Their joints still deliver power in mud that swallows wheels. When one machine is destroyed, the others pick up the signal and rebuild their search pattern. In narrow, bending passages they share signals and keep formation without colliding.
+1. **Never charge below freezing.** A battery charged below 0 degrees is damaged inside and can catch fire from within. So charging is done only on the platform level where people live (8 to 14 degrees) or the deep tunnel level (12 to 16 degrees). A charging rack left in the concourse (0 to 6 degrees) always gives trouble.
+2. **On the surface, only half.** At minus 18 degrees on the surface a battery gives back only a little more than half of what it took in while warm. Machines and people going up keep their batteries against the body or wrapped to keep them warm.
+3. **Batteries grow old.** Seoul has no new cells. A pack bound from picked live cells holds 60 to 70% of what it first held, and loses another 5 to 8% of that each year.
 
-<a id="붕괴-이전-방재-루틴의-고착화-메커니즘-list1"></a>
-<a id="붕괴-이전-방재-루틴의-고착화-메커니즘"></a>
+**Power cores.** A long-lasting block of power stripped from inside a war machine outside. One gives 0.5 to 3 kW for months or years and then one day suddenly stops. Seoul people learn that they cannot open one and must not try. Nobody knows what it draws its power from. About 400 cores are in use in Seoul in 2126. Each year 60 to 80 stop and 30 to 50 new ones come in, so the number slowly falls. New cores are brought back only by people who cross the rim during the few days a blizzard blinds the machines outside. Those who cross hardly ever return. So Seoul people call the price of a core the price of a life.
 
-When command and control weakened, the machines broke into small groups. What remains in them now is part of the search and watch routines and some of their self-maintenance.
+## Three things that keep a machine alive: parts, knowledge, hands
 
-<a id="세-로스트-라인"></a>
-<a id="두-로스트-라인"></a>
+For a machine to stay alive, three things must be there together: parts to replace, knowledge of how to fix it, and hands that can do the work.
 
-## The Two Sealed Lines
+### Parts
 
-Deep beneath the city, two lost lines of pre-collapse disaster engineering are sealed away. Their shapes and tasks are different.
+"Cannot make" parts come from five places.
 
-### G25 Lantern Ant
+| Source | What comes out | Condition in 2126 |
+|---|---|---|
+| Old stores | Stock of the warehouses, shops, public offices and hospitals from before the Great Blackout | Nearly exhausted. What is left lies around abandoned stations sunk in ice and inside deep buildings |
+| Machines in abandoned stations and buildings | Circuit boards, motors and wire stripped from elevators, air handlers, subway cars and communications equipment | The steadiest source, but the road to it grows longer every year |
+| The bodies of the dead | The machines they wore | Each polity has its own rule for taking them back ([Machine Bodies and Scarcity](/wiki/Cyberware-and-Scarcity/)) |
+| War machines outside | Power cores, moving joints, sensing elements, hard shells | Gained only by crossing the rim in a blizzard. The most expensive |
+| The unmapped station | The manuals and things left in the station Go Ye-jin found in 2112 | Only the Arc knows. What and how much remains is not known outside |
 
-The [G25 Lantern Ant](/wiki/Hostile-Group-G25/) is an insect-shaped line. It searches in swarms and carries small supplies, with fine many-legged joints and a glowing lens at the front.
+The circuit boards in use in Seoul fall by about 3% a year, because more die than are stripped. Repeated over a hundred years, the number of board-driven machines in Seoul in 2126 is about one fifteenth of the number in 2040.
 
-When the voltage at a passage control panel spikes, or something strikes it from outside, the machine decides the old search order is still valid and starts its restart sequence. Once the trigger point fires, the gallery shutter opens and the small machines spread through the passage to search again.
+### Knowledge
 
-The search lens throws high-frequency light into the dark to pick out cracks and people. The carrying hopper on top has a heat-resistant frame and holds precise supplies or search capsules. The machine grips walls and ceilings with the fine claws of its legs, and the strong pincers of its jaw cut through rubble to clear a way. Its charging contact draws power from the hangar rails. It stores power; it doesn't make it.
+Each polity knows technology in its own way.
 
-### G26 Iron Dinosaur
+- **The Government knows by paper.** The Government holds the most equipment drawings, maintenance manuals and standards from the agencies and public corporations of the Republic of Korea. The taboo against putting the ledger and old official documents into the fibre-sugar vats kept that paper. But there are too few people to read it and carry it out by hand. Government archives hold more paper on how to fix things than people who can fix them.
+- **The Free Cities know by hand.** Free City technology passes from hand to hand on the workbench. What is written down is a few lines of figures and a few drawings; the hands know the rest. When one workbench ends, one piece of technology that bench knew ends with it.
+- **The Arc knows by manual and by body.** The knowledge of fitting machines to bodies and keeping them alive came from the manuals Go Ye-jin read for five years in the unmapped station. It passes by mouth and hand at the maintenance benches, and the bodies of the baptised themselves become the textbook.
 
-The [G26 Iron Dinosaur](/wiki/Hostile-Group-G26/) has a dinosaur-shaped frame and moves heavy loads and repairs structures. It has hydraulic legs and a counterweight at the rear, and its power is limited by charge, fuel and cell life.
+### Hands
 
-When the inspection terminal in its workshop gets power and an outside access signal arrives, its hydraulic valves open. Machines whose trigger point has fired sound a dull mechanical alarm, leave their maintenance bays and patrol to secure their work area.
+Of Seoul's 300,000 people, about 6,000, 2%, can do "repair" work alone. About 3,600 are in the Free Cities (about 5% of their people), about 1,600 in the Arc (about 2.5%) and about 800 in the Government (about 0.5%). Of these, about 900 are "revive" hands who can handle circuit boards and battery cells. People who can perform the surgery that fits a machine to a body number about 120 in all of Seoul.
 
-The reinforced pistons of the legs lift and move tonnes of broken concrete. The adjustable rear weight keeps the machine balanced as the load shifts. A crushing arm breaks obstacles and opens passages, and armour plates protect the central power module from falling rock and blast. A vibration emitter senses small settling in the ground and settles rubble by resonance.
+The Government has many people, much land and much paper; the Free Cities have many hands; the Arc has many hands that work on bodies. This imbalance binds the three polities to one another.
 
-<a id="봉인회수쟁탈"></a>
-<a id="로스트-테크-전환-원인"></a>
+## The names of repair work
 
-## Severance and the Parts Economy
+A trade keeps its name from the days of the Republic of Korea, or is named after what it handles.
 
-<a id="로스트-테크-전환-원인-p1"></a>
-<a id="로스트-테크-전환-원인-list2"></a>
+| Trade | What it does | Where most are |
+|---|---|---|
+| Wind-machine wright | Raises wind machines, knocks ice off the blades, changes bearings | The Free Cities (Gangseo above all), Government bridges |
+| Heat-pump fitter | Handles the compressors and refrigerant of ground heat pumps | The Free Cities |
+| Well driller | Deepens wells and lowers pumps | The Free Cities. The core trade of the water supply contract |
+| Water-wheel keeper | Keeps the under-ice water wheels and their channels | The Arc (Jamsil), Free City work crews |
+| Lineworker | Joins wire, cable and talk lines. The work Go Ye-jin did | All three polities |
+| Motor winder | Rewinds the coils of dead motors | The Free Cities |
+| Lathe hand | Machines shafts, fittings and gun parts from metal | The Free Cities (Guro above all) |
+| Battery maker | Picks live cells from dead batteries and binds them | The Free Cities, the Arc |
+| Board hand | Transplants and revives circuit boards. The most precious "revive" trade | The Free Cities, the Arc |
+| Gunsmith | Repairs and fits guns | The Free Cities, the Government |
+| Reloader | Dresses cases and reloads rounds | The Free Cities, the Government |
+| Net maker | Weaves and mends the nets over entrances and light-fields | All three polities. The commonest trade |
+| Body fitter | Fits machines to bodies and tends their fixing points | The Arc (most), the Free Cities |
+| Doctor | A medical worker who fits machines to bodies in Government fitting clinics. The name survives from the medical ranks of the Republic of Korea | The Government |
 
-The precision lines became lost technology when making, authority and access were physically cut. When the links to the city's central disaster control failed, the machines received neither a higher command nor a safe shutdown signal, and they froze on their last order.
+"Body fitter" is an Arc word. In the Free Cities a person doing the same work is simply called by the name of their workbench.
 
-<a id="로스트-테크-기술세대격차"></a>
+## How hands are passed down
 
-Programming and most human technical knowledge survived, but only among a few, and it passes from parent to child. With the networks gone, knowledge gathered in those families. Only people who could handle power and equipment could run them, and some groups kept that knowledge to themselves. Scarcity made the work hereditary, and the families who run plant became the operating houses. Today the same pattern holds for cyberware: whoever can maintain a machine part decides who can carry one. That is set out in [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/).
+Scarcity makes children take up their parents' work. The road differs by polity.
 
-<a id="축전-발전"></a>
+- **The Government registers trades.** In the Government's ledger every person's trade is written down. A child of a household whose father or mother is registered as "plumbing" apprentices beside that trade from the age of twelve and is registered into it on their sixteenth birthday. Changing the entry takes the Dong Chief's approval and a seal from the Assembly Member's office. So Government hands pool in households. There are households that have done plumbing for generations and households that have climbed wind machines for generations. The maintenance manuals in Government archives go down to those households as notices, and the households copy and keep them. When households that know how to fix things dwindle, other households cannot fill their place, because the ledger binds the trade.
+- **The Free Cities hand down the workbench.** What is inherited is not a trade but a workbench: its tools, its place and the bundle of contracts it has made. A workbench usually goes to a child of the household, but if the child lacks the hands it goes to an apprentice. An apprentice enters on a contract to work some years in return for learning the craft. When they have learned it all, the owner of the workbench gives surety for those hands, and only hands under surety take work in their own name at a contract meeting.
+- **The Arc raises hands at the maintenance bench.** There is a bench in every station, run by the Bench Keeper. Children at the bench help with fixing-point care from an early age and grow up to be body fitters and board hands. The knowledge of the manuals goes down to each bench by mouth and hand only as far as that bench needs.
 
-### Charging and Generation
+## What each generation loses
 
-<a id="축전-발전-p1"></a>
-<a id="축전-발전-list2"></a>
+Each time hands cross a generation, something drops away. Seoul people put it this way: "Grandfather revived this board, father moved this board, and I keep this board."
 
-A battery module and a station generator are different machines. A battery only spends charge it already holds, so it needs a source: a charging terminal, hangar rails, a generator or a salvaged cell. Cells age. In deep cold their output drops sharply, and many can't be charged safely below freezing. In a winter that doesn't end, every charge happens in a warm room.
+With every generation some skills sink from "revive" to "repair" and from "repair" to "keep". In 2126 Seoul is full of machines that nobody can fix any more and that people only know how to use. Even when the Government archives hold the drawings, there are no hands to read them. When a machine stops, its work comes back to human hands. A station whose pump has stopped melts snow to drink; a station whose fan has stopped empties the beds on its deep level.
 
-<a id="축전-발전-공급"></a>
+## Who holds what
 
-Generating means making power from fuel, water or sunlight. Plugging in a battery and running a generator need different supply chains. A battery module stores power that came from somewhere else.
+| What | Government | Free Cities | Arc |
+|---|---|---|---|
+| Copper and wire | The most. The cables of the old city centre | Hands to rewind it | Little |
+| Old rounds and powder | About three quarters | Some | Almost none |
+| Primers | Cannot make them; buys them | Makes about 60,000 a year | Cannot make them |
+| Circuit boards and sensing elements | Stripped from abandoned public-office equipment. Few hands to handle them | The most hands to handle them | Many hands, and the knowledge of the unmapped station |
+| Batteries | Stockpiled old batteries | Hands to revive them | Hands to revive them, water-wheel power |
+| Power cores | Dug out across the northern rim | Dug out across the south-western rim | Buys them to use |
+| Clean surgery rooms | 1 | 2 | 6 |
+| Living depot workshops | Gunja, Chang-dong | Sinjeong, Guro, Cheonwang, Banghwa | Godeok |
+| Knowledge on paper | The most | Little | The manuals (not shown outside) |
+| Hands | Few (about 800) | The most (about 3,600) | Hands that work on bodies (about 1,600) |
 
-<a id="지하-부품-경제"></a>
+The table shows one thing each polity cannot have alone. The Government lacks hands and primers; the Free Cities are short of people, old rounds and clean rooms; the Arc is short of ammunition, iron and copper. The reasons the three need and fear one another show up this way in technology.
 
-### The Three Recovered Parts
+## Read together
 
-Lost machines are a danger underground and also the most expensive technology traded there. What comes off a machine falls into three kinds: battery, drive and sensor modules.
-
-High-density battery modules buffer a station's power. They still age, still need charging and still depend on a source. Drive modules of hydraulic pistons and high-torque motors bring stopped heavy plant back or open and close great gates. Under the right conditions they also become actuators for ordinary equipment or traps.
-
-The compound optical panels of sensor modules give night sight and pick up small vibrations. Groups building watch posts trade them at high prices and sometimes use them as detectors or trap triggers. Drones and machine eyes use the same kinds of parts, which is why the market for them never cools.
-
-<a id="회수-반과-가문의-경합"></a>
-
-### The Contest over the Sealed Zones
-
-<a id="회수-반과-가문의-경합-p1"></a>
-<a id="회수-반과-가문의-경합-list2"></a>
-
-The sealed galleries and workshop zones are contested by the operating houses and by salvage crews. HC22, the Magok test-line house, sends precise recovery teams in first to keep the original technology to itself. HC17, the Guro Digital Complex cell house, moves fast to disable machines in the main sealed passages and hold the sections, in the name of safe supply routes. HP01, the Yeongdeungpo sluice house, quietly sells recovered cells and sensor modules to underground auctions.
-
-<a id="프로토콜-접속과-카드"></a>
-
-Machine control panels follow wired and wireless protocol standards, and negotiation windows and protocol cards are used with them. A protocol card doesn't control every machine.
-
-<a id="회수-반과-가문의-경합-p3"></a>
-<a id="m040-몬스터-배치의-현장-적용-p1"></a>
-<a id="m040-몬스터-배치의-현장-적용-list2"></a>
-<a id="m040-몬스터-배치의-현장-적용"></a>
-
-Armed salvage crews race to take restart trigger points first and capture whole machines. Sometimes they disable a machine on the spot and strip its main modules. In some sealed ducts the swarms appear one after another the moment a trigger point fires. G25 Lantern Ants spread a wide search line at the front of a passage and pick up the smallest response from an intruder. G26 Iron Dinosaurs block junctions and push back anyone who comes close.
-
-<a id="연결"></a>
-<a id="출처"></a>
-
-## Related Material
-
-<a id="연결-list1"></a>
-<a id="출처-list1"></a>
-
-- [Seoul Ecology and Variant Bestiary](/wiki/Hostile-Ecology-Index/)
-- [Operating Organizations](/wiki/Operating-Houses/)
-- [The Three Factions of Seoul](/wiki/Sixteen-States/)
-- [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/)
-- [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/)
-- [Scenario Timeline](/wiki/Scenario-Timeline/)
-
-## Improvisation and the Keeping of Old Machines
-
-### Tending the Wreckage
-
-People gather around old facilities that have done their work and tend them together. Improvised technology grows inside that tending. It has three strands: tending the machines, keeping the old ways of exchange, and keeping the symbols of the old world. What people tend most is rolling stock, old substations, silent announcement systems, faded station signs and old money.
-
-### Districts and Stations
-
-The old state survives only in stories. What people fight over is closer to hand: a district, a station, a line. Under the three factions, each station and district keeps its own rules about who looks after which relic, and those rules pass down with the work.
-
-### The Roles of the Two Lines
-
-The two lost lines keep their roles. G25 Lantern Ant is the line that searches. G26 Iron Dinosaur is the line that mends heavy plant. Whatever meaning people give them, the roles stay the same. Each community just reads the same machine differently.
-
-### Tending the Machines
-
-#### Guarding the Great Machines
-
-People guard the great machines of the depots and substations as the centre of their community. Even taking a machine apart follows set steps. A maintenance round is a walk around the dark workshop. Restarting an old machine sometimes splits a community.
-
-#### Caring for a Machine
-
-People treat the bodies and old bogies of trains as things that belong to everyone. The hydraulic legs in the workshops and the busbars of the substations are cared for the same way.
-
-#### Wheels and Light
-
-The practice splits two ways. One side holds that as long as the heavy wheels turn, life on the line goes on. The other holds that only the stations where a faint light still burns will last.
-
-### Ways of Exchange
-
-#### What Old Money Is For
-
-People keep old money and the leftovers of old trade in their strongholds even though it buys nothing. The gestures of exchange from before the collapse became custom: touching a card, putting in money, handing out goods.
-
-#### What Is Kept
-
-Notes, coins and plastic transit cards are the most prized. Trade in batteries, drives and sensors, the core of the underground parts economy, is read here as part of a fair order. Touching a card at the ticket gate is a way of asking permission to pass. HP01's parts auctions look outside the rules elsewhere, but inside this practice they count as accepted custom.
-
-#### Value and Passage
-
-The practice splits two ways. One side holds that the stamp sealing a locker sets the value of what's inside. The other holds that passing the barrier is itself the act of staying alive.
-
-### Keeping the Old World's Symbols
-
-#### Traces of the Announcements
-
-People who keep the symbols of the old world treat station signs and silent announcement speakers as things to protect.
-
-#### Echo and Boundary
-
-To them, G25's sensor modules and protocol cards are echoes of the voice that used to speak. Moving a station sign moves the boundary of that place with it. Erasing a sign erases the place.
-
-#### Two Ways to Draw a Boundary
-
-There are two standards. One draws the boundary as far as the faded letters still show. The other claims the whole space the voice once filled.
-
-### When a Relic Becomes the Centre
-
-#### Five Conditions
-
-A heap of old metal doesn't become a community's centre just because it's old. Its meaning has to tie clearly to one of the three strands, and it has to meet these conditions.
-
-1. It's made of Seoul. It's rolling stock, a substation, an announcement system, a station sign or old money, or at least carries their traces. A module from a lost line becomes a centre only when it's attached to one of these.
-2. Living work depends on it. Light, water, passage or watch duty has to rely on it. These rules come from the concourses, the sluice gates and the crowded docks where people work and breathe, not from notice boards.
-3. It can't be controlled again. When the servers are gone and the drawings are locked away, what's left is a code nobody can read. In front of that wall, the machine becomes the centre.
-4. Survival in the same place repeats. Only a community that has survived three or more times by relying on one module makes it the centre. One lucky escape leaves it a trade good.
-5. Someone with a claim on the place says it's theirs. The station holder, the district's ruling house or the city that holds the ground decides how it's kept and what's forbidden. Salvage crews who strip parts and keepers who protect relics meet in the sealed galleries.
-
-### Readings by Strand
-
-#### Three Levels
-
-Custom has three levels. At the top is the strand. Under it are individual customs. At the bottom are the concrete rules and lessons. As customs split, Seoul's rules are rewritten one piece at a time.
-
-#### How Each Strand Reads
-
-The machine-tending strand reads old trains, substations and G26's heavy drives as one thing to look after. The exchange strand takes crumpled money, passing the gate and quiet parts auctions as one order of sharing. The symbol strand treats silent announcements, faded signs and G25's sensor signals as the voice the old world left behind.
-
-#### One Module, Different Readings
-
-A G25 battery module is the heart of the substation to one strand, an expensive trade good to another and a box where a voice lives to a third. A G26 hydraulic leg is a joint that links bridges to one strand and a barrier against reckless passers to another.
-
-#### Open and Hidden Custom
-
-Open custom shows in the red warnings on station notice boards. Hidden custom reads the same words as a different lesson. When one house keeps both the substation and the station signs in the same gallery, the object is one, but the authority over it splits in two.
-
-#### The Same Parts, Different Uses
-
-The people of the three strands use the same leftover machine parts for different customs.
+- [Machine Bodies and Scarcity](/wiki/Cyberware-and-Scarcity/): the life and price of machines worn on the body
+- [Guns, Rounds and Drones](/wiki/Era-Arms-and-Tech-Level/): ammunition and primers, drones and talk lines
+- [People and Machines](/wiki/People-and-Machines/): vehicles on the rails and depots, the machines inside Seoul
+- [Structures](/wiki/Structures/): wind fields, water wheels, wells, ground heat holes
