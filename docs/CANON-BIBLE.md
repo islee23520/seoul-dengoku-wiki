@@ -40,8 +40,9 @@
 출처: 소유자 요청(owner request 2026-11-10). 1장 인용은 따로 표시했다.
 
 - 서류상으로는 대한민국의 삼권을 대표하는 부처와 다당제를 유지한다. 실제로는 OMO당(OMO Party)과 클로당(Claw Party) 두 당뿐이다. 실상은 의원 가문이 구를 세습하듯 쥐는 체제다(구조 설명. 세계 안의 표현은 v3 바이블 01-core "톤앤매너와 세계 안의 말"을 따른다).
-- 각 구에서 뽑힌 국회의원이 그 구의 공작령을 쥔다. 칭호는 상원의원(Senator)이다.
-- 상원의원들이 상원의원 가운데서 후보를 모아 대통령을 낸다. 대통령은 **종신**이다. (소유자가 구조를 설명하려고 든 비유는 본문에 옮기지 않는다. 9.4절 2026-11-13 행)
+- 각 구에서 뽑힌 국회의원(Member of the National Assembly)이 그 구의 공작령을 쥔다. 칭호는 국회의원이다. 대한민국 국회는 단원제이므로 상원·상원의원은 없다(9.4절 2026-11-13 행).
+- 정부의 기관·법·장부·직함은 대한민국 정부 제도(국회, 행정부처, 구청·동 주민센터, 주민 등록)가 결핍 속에서 살아남은 꼴이다.
+- 국회의원들이 국회의원 가운데서 후보를 모아 대통령을 낸다. 대통령은 **종신**이다. (소유자가 구조를 설명하려고 든 비유는 본문에 옮기지 않는다. 9.4절 2026-11-13 행)
 - 붕괴 뒤로 정부는 자기 장부에 기록된 사람만 국민으로 인정한다. 장부에 오른 사람은 거주지와 일을 마음대로 바꿀 수 없다.
 - 정부는 한강 남쪽 전체를 장부 밖의 땅, 사람이 아닌 이들이 사는 곳으로 대한다. 1장: "강 건너는 야만인들 사는 데라고 생각한다."
 - 결핍 때문에 사람들이 부모의 일을 이어 하게 됐고, 그래서 수직 계층이 생겼다.
@@ -64,24 +65,24 @@
 
 ### 2.4 25공작령 배정표
 
-공작령 보유자 칭호는 정부 상원의원과 관악 공작만 승인됐다. 나머지는 [제안] 또는 [미정]이다. 지명과 장소는 그대로 두고 정치적 소유만 25공작령으로 나뉜다. 이것은 소유자의 두 규칙("지리는 그대로 둔다", "구 하나가 공작령 하나")을 함께 적용한 결과이며 질문 대상이 아니다.
+공작령 보유자 칭호는 정부 국회의원과 관악 공작만 승인됐다. 나머지는 [제안] 또는 [미정]이다. 지명과 장소는 그대로 두고 정치적 소유만 25공작령으로 나뉜다. 이것은 소유자의 두 규칙("지리는 그대로 둔다", "구 하나가 공작령 하나")을 함께 적용한 결과이며 질문 대상이 아니다.
 
 | # | 구 | District | 세력 | 공작령 보유자 칭호 | 확정된 보유자 |
 |---|---|---|---|---|---|
-| 1 | 마포구 | Mapo-gu | 정부 Government | 상원의원(Senator). 지역구 국회의원이 겸한다 [승인] | 미정 |
-| 2 | 용산구 | Yongsan-gu | 정부 Government | 상원의원(Senator). 지역구 국회의원이 겸한다 [승인] | 미정 |
-| 3 | 중구 | Jung-gu | 정부 Government | 상원의원(Senator). 지역구 국회의원이 겸한다 [승인] | 미정 |
-| 4 | 성동구 | Seongdong-gu | 정부 Government | 상원의원(Senator). 지역구 국회의원이 겸한다 [승인] | 미정 |
-| 5 | 광진구 | Gwangjin-gu | 정부 Government | 상원의원(Senator). 지역구 국회의원이 겸한다 [승인] | 미정 |
-| 6 | 동대문구 | Dongdaemun-gu | 정부 Government | 상원의원(Senator). 지역구 국회의원이 겸한다 [승인] | 미정 |
-| 7 | 중랑구 | Jungnang-gu | 정부 Government | 상원의원(Senator). 지역구 국회의원이 겸한다 [승인] | 미정 |
-| 8 | 성북구 | Seongbuk-gu | 정부 Government | 상원의원(Senator). 지역구 국회의원이 겸한다 [승인] | 미정 |
-| 9 | 종로구 | Jongno-gu | 정부 Government | 상원의원(Senator). 지역구 국회의원이 겸한다 [승인] | 미정 |
-| 10 | 서대문구 | Seodaemun-gu | 정부 Government | 상원의원(Senator). 지역구 국회의원이 겸한다 [승인] | 미정 |
-| 11 | 은평구 | Eunpyeong-gu | 정부 Government | 상원의원(Senator). 지역구 국회의원이 겸한다 [승인] | 미정 |
-| 12 | 강북구 | Gangbuk-gu | 정부 Government | 상원의원(Senator). 지역구 국회의원이 겸한다 [승인] | 미정 |
-| 13 | 도봉구 | Dobong-gu | 정부 Government | 상원의원(Senator). 지역구 국회의원이 겸한다 [승인] | 미정 |
-| 14 | 노원구 | Nowon-gu | 정부 Government | 상원의원(Senator). 지역구 국회의원이 겸한다 [승인] | 미정 |
+| 1 | 마포구 | Mapo-gu | 정부 Government | 국회의원(Member of the National Assembly) [승인] | 미정 |
+| 2 | 용산구 | Yongsan-gu | 정부 Government | 국회의원(Member of the National Assembly) [승인] | 미정 |
+| 3 | 중구 | Jung-gu | 정부 Government | 국회의원(Member of the National Assembly) [승인] | 미정 |
+| 4 | 성동구 | Seongdong-gu | 정부 Government | 국회의원(Member of the National Assembly) [승인] | 미정 |
+| 5 | 광진구 | Gwangjin-gu | 정부 Government | 국회의원(Member of the National Assembly) [승인] | 미정 |
+| 6 | 동대문구 | Dongdaemun-gu | 정부 Government | 국회의원(Member of the National Assembly) [승인] | 미정 |
+| 7 | 중랑구 | Jungnang-gu | 정부 Government | 국회의원(Member of the National Assembly) [승인] | 미정 |
+| 8 | 성북구 | Seongbuk-gu | 정부 Government | 국회의원(Member of the National Assembly) [승인] | 미정 |
+| 9 | 종로구 | Jongno-gu | 정부 Government | 국회의원(Member of the National Assembly) [승인] | 미정 |
+| 10 | 서대문구 | Seodaemun-gu | 정부 Government | 국회의원(Member of the National Assembly) [승인] | 미정 |
+| 11 | 은평구 | Eunpyeong-gu | 정부 Government | 국회의원(Member of the National Assembly) [승인] | 미정 |
+| 12 | 강북구 | Gangbuk-gu | 정부 Government | 국회의원(Member of the National Assembly) [승인] | 미정 |
+| 13 | 도봉구 | Dobong-gu | 정부 Government | 국회의원(Member of the National Assembly) [승인] | 미정 |
+| 14 | 노원구 | Nowon-gu | 정부 Government | 국회의원(Member of the National Assembly) [승인] | 미정 |
 | 15 | 강서구 | Gangseo-gu | 자유도시 Free City | 도시마다 다르다 [제안] | 미정 |
 | 16 | 양천구 | Yangcheon-gu | 자유도시 Free City | 도시마다 다르다 [제안] | 미정 |
 | 17 | 영등포구 | Yeongdeungpo-gu | 자유도시 Free City | 도시마다 다르다 [제안] | 미정 |
@@ -165,7 +166,7 @@
 | 대정전 | Great Blackout | 사건 이름 |
 | 최초의 AI | the First AI | 1장에서 고예진은 "신"이라 부른다 |
 | 정부 | Government | 강북 14구 |
-| 상원의원 | Senator | 공작령을 쥔 지역구 국회의원 |
+| 국회의원 | Member of the National Assembly | 정부 구의 공작령을 쥔 의원. 상원의원·Senator는 쓰지 않는다(대한민국 국회는 단원제) |
 | 대통령 | President | 종신 |
 | OMO당 | OMO Party | |
 | 클로당 | Claw Party | |
@@ -315,12 +316,12 @@
 
 ### 9.1 세력별 칭호 사다리
 
-소유자가 승인한 칭호는 셋뿐이다. 정부 구 보유자의 상원의원(Senator), 이일섭의 관악 공작(Duke of Gwanak), 고예진의 교주(Hierophant)다. 표의 나머지 칭호는 모두 제안이다. 후보는 참고 조사에서 왔고, 그 조사는 수록 출처 58종 가운데 11종(약 19%)만 실제 페이지와 대조했으므로 참고 자료일 뿐이다.
+소유자가 승인한 칭호는 셋뿐이다. 정부 구 보유자의 국회의원(Member of the National Assembly, 2026-11-13 정정 전 표기는 상원의원), 이일섭의 관악 공작(Duke of Gwanak), 고예진의 교주(Hierophant)다. 표의 나머지 칭호는 모두 제안이다. 후보는 참고 조사에서 왔고, 그 조사는 수록 출처 58종 가운데 11종(약 19%)만 실제 페이지와 대조했으므로 참고 자료일 뿐이다.
 
 | 등급 | A안 "관제의 잔해" | B안 "기능 조어" | C안 "제도 모자이크" | 상태 |
 |---|---|---|---|---|
 | 정부 역 | 역장 Stationmaster | 역령 Station-Lord | 역장 Stationmaster | 제안 |
-| 정부 구 | 상원의원 Senator | 상원의원 Senator (별칭 선주 Elector-Duke) | 상원의원 Senator (실무 구청장) | 상원의원 [승인], 별칭·실무직 제안 |
+| 정부 구 | 국회의원 | 국회의원 | 국회의원 | 국회의원 [승인, 2026-11-13 정정]. 옛 별칭·실무직 제안은 폐기 |
 | 정부 수장 | 종신대통령 President for Life | 대선주 Grand Elector | 종신 대통령 | 종신 대통령이라는 사실 [승인], 칭호 형태 제안 |
 | 자유도시 소 | 소장 Depot-Master | 소주 Works-Master | 소장 Works Chief | 제안 |
 | 자유도시 도시 | 공작 Duke | 관악공 같은 약칭 | 도시마다 다름(공작, 집정관 등) | 관악 공작 [승인], 다른 도시 제안 |
@@ -365,7 +366,7 @@
 | Q25 | 정유라 position_ko를 바꿀까요? | "Arc 위원장" | "아크 가문 수장" |
 | Q26 | 백온 position_ko를 바꿀까요? | "안국총림 방장" | "명부 필사관"(직업 "명부 필사" 유지, 정부 소속) |
 | Q27 | 류은비 position_ko를 바꿀까요? | "흰십자단 단장" | "의료단 단장"(정부 소속) |
-| Q28 | 윤서린(person-0145)을 상원의원들이 뽑은 **현직** 종신 대통령으로 둘까요? (아니요라면 후보로 내리거나 대통령직과 무관하게 둔다) | title_ko "대통령", position_ko "대한민국정부 대통령" | position_ko "정부 종신 대통령". 기본값 예. 근거: 데이터상 지금도 대통령이고, 소유자는 종신 대통령이 있다는 것과 선출 방식만 정했다 |
+| Q28 | 윤서린(person-0145)을 국회의원들이 뽑은 **현직** 종신 대통령으로 둘까요? (아니요라면 후보로 내리거나 대통령직과 무관하게 둔다) | title_ko "대통령", position_ko "대한민국정부 대통령" | position_ko "정부 종신 대통령". 기본값 예. 근거: 데이터상 지금도 대통령이고, 소유자는 종신 대통령이 있다는 것과 선출 방식만 정했다 |
 | Q29 | 옛 국가 수장 8명(한재목 0001, 강민서 0029, 배우진 0116, 최지우 0220, 이홍원 0272, 고서준 0349, 정서온 1005, 민웅기 1008)의 국가 직함을 지우고, 각자 지금 거점이 있는 구의 공작령 보유자 후보로 둘까요? | 예: "수문국 선출 군주", "성하그룹 회장, 이씨 가문 세습" | 예: "○○구 공작령 보유자 후보"(구는 거점 기준) |
 | Q30 | 신종목의 소속 컬럼(정부, S14)을 그대로 둘까요? | faction government, state S14 | 그대로. 고예진의 "강북에서 온다"는 추론일 뿐이다 |
 
@@ -384,6 +385,7 @@
 | 2026-11-12 | 디자인 토큰 | "must follow design token defined on seoul-dengoku project" | seoul-dengoku 프로젝트의 디자인 토큰을 따른다 |
 | 2026-11-13 | 유니온 폐기 | "자유도시는 유니온이 아니야 그냥 자유 도시들이지 왕좌의 게임에서 에소스에 살고 있는 국가들을 유니온이라고 부르지 않자나 ??" | 1절 13행, 2.2절, 5절, 9.1절, Q9 |
 | 2026-11-13 | 비유 표현 | "장벽 너머의 존재 같은거라는 표현도 피규어 오브 스피치인데 이런 형태의 표현들을 그대로 인용해서 쓰지말고 너가 이 세계관에 맞게 톤앤매너를 설정해서 넣어 시아파라던가 왕이라던가 이런것도 이 세계관에 맞게 넣어 나는 그냥 피규어 오브 스피치로 그 구조에 대해서 설명 한거야" | 2.1~2.3절의 비유를 구조 문장으로 바꿨다. 세계 안의 표현은 v3 바이블 01-core가 정한다 |
+| 2026-11-13 | 국회의원 | "그리고 대한민국에는 양원이 없어 senator ?? 이런 표현이면 안됨 국회의원이 맞지 어쨌든 배경이 서울인데 대한민국이랑 연결이 되어야지" | 2.1절, 2.4절, 5절, 9.1절, Q28. 상원의원 칭호를 국회의원으로 바꾸고 정부 제도를 대한민국 제도의 연속으로 적었다 |
 
 ## 10. 원천 목록
 
