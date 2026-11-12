@@ -54,8 +54,8 @@ Seoul's steady electricity of about 5 MW comes from these sources (provisional T
 | Heat pumps | about 2.5 MW | Becomes three times its own heat, about 7.5 MW |
 | Light | about 0.8 MW | All heat |
 | Fans and ventilation | about 0.5 MW | All heat |
-| Water pumps (wells, intakes, mains) | about 0.4 MW | Mostly heat |
-| Workshops (lathes, welding, motor winding, melting metal) | about 0.45 MW | Mostly heat |
+| Water pumps (wells, intakes, mains) | about 0.4 MW | Almost all heat |
+| Workshops (lathes, welding, motor winding, melting metal) | about 0.45 MW | Almost all heat |
 | Charging machines worn on the body | about 0.1 MW | All heat |
 | Charging batteries of tools, drones, radios, hand lamps | about 0.2 MW | All heat |
 | Communications (wired telephone, tunnel radio cable) | about 0.05 MW | All heat |
@@ -63,7 +63,7 @@ Seoul's steady electricity of about 5 MW comes from these sources (provisional T
 
 (provisional T04-4)
 
-The heat balances like this. The heat pumps' heat of about 7.5 MW and the remaining electricity of about 2.5 MW all end as heat inside the stations, about 10 MW. Methane fire, wood fire and junk burning add about 6 MW, for about 16 MW. That equals the sum in 01-core 5.1 of about 12 MW of outside heat and about 4 MW for fibre-sugar vats and kitchens.
+The heat balances like this. The heat pumps' heat of about 7.5 MW and the remaining electricity of about 2.5 MW almost all end as heat inside the stations, about 10 MW. Methane fire, wood fire and junk burning add about 6 MW, for about 16 MW. That equals the sum in 01-core 5.1 of about 12 MW of outside heat and about 4 MW for fibre-sugar vats and kitchens.
 
 The table says two things. First, half of Seoul's electricity goes into warming people. Lighting one more lamp means running one less heat pump. Second, charging the machines worn on bodies is only 2% of Seoul's electricity. It becomes politics anyway because that 2% sits almost entirely on one polity's power, the Jamsil weir water wheels (4.4).
 
@@ -75,7 +75,7 @@ Cold is the enemy of batteries. This world has three battery rules (provisional 
 2. **On the surface you get half.** At minus 18 degrees on the surface a battery gives back little more than half of what it took in while warm. Machines and people going up carry batteries against the body or wrap them to keep them warm.
 3. **Batteries age.** Seoul has no new cells. A revived pack bound from picked live cells holds 60 to 70% of its original capacity and loses another 5 to 8% of that each year.
 
-**Power cores** (provisional T04-6). A long-lasting power lump stripped from the body of a war machine outside. Seoul people cannot open one and are taught that they must not. One core gives 0.5 to 3 kW for months to years and then stops suddenly. About 400 are in use in Seoul in 2126; 60 to 80 stop each year and 30 to 50 new ones come in each blizzard season, so the number falls slowly. Several people stake their lives on each core (01-core 6.3, "its price is the price of a life"). What a core draws its power from stays "unknown" in public canon.
+**Power cores** (provisional T04-6). A long-lasting power lump stripped from the body of a war machine outside. Seoul people cannot open one and are taught that they must not. One core gives 0.5 to 3 kW for months to years and then stops suddenly. About 400 are in use in Seoul in 2126; 60 to 80 stop each year and 30 to 50 new ones come in each year, so the number falls slowly. Several people stake their lives on each core (01-core 6.3, "its price is the price of a life"). What a core draws its power from stays "unknown" in public canon.
 
 ## 3. Three conditions for living technology: parts, knowledge, hands
 
@@ -143,7 +143,7 @@ There are three kinds of room for fitting (provisional T04-13).
 | Surgery room | Sets a fixing point in bone, opens a sense region | About 40 | Arc about 20, Free Cities about 14, Government about 6 |
 | Clean room | Spine-and-nerves and trunk-organ surgery. Uninterrupted power and filtered air | 9 | Arc 6, Free Cities 2, Government 1 |
 
-Three of the Arc's six clean rooms are revived underground surgical suites of the old large hospitals at Irwon, Banpo and Songpa. Those hospitals' deep basements are one reason the shelters of the four Gangnam districts could endure decades behind closed doors, and Go Ye-jin's manuals made the rooms usable again (provisional T04-14). The Government's one clean room is in the basement of an old large hospital in Jongno and is reserved for Assembly Member households and the President. Government fitting clinics can set fixing points, but for the maintenance and boards of electrically driven machines they depend in the end on the Arc's maintenance benches and Free City board hands (01-core 5.6, "for them it leans on the Arc").
+Three of the Arc's six clean rooms are revived underground surgical suites of the old large hospitals at Irwon, Banpo and Songpa. Those hospitals' deep basements are one reason the shelters of the four Gangnam districts could endure decades behind closed doors, and Go Ye-jin's manuals made the rooms usable again (provisional T04-14). The Government's one clean room is in the basement of an old large hospital in Jongno and is reserved for Assembly Member households and the President. Government fitting clinics can set fixing points, but for the maintenance and boards of electrically driven machines they depend in the end on the Arc's maintenance benches (01-core 5.6, "for them it leans on the Arc"). Free City board hands also quietly repair the body machines of Government people. Since 01-core 7.4 says the Arc is the only place to repair machine bodies, this is an extension of 01-core. Free City board hands repair only boards and moving parts; they do no fixing-point care or surgery (provisional T04-57).
 
 The risks of fitting (provisional T04-15).
 
@@ -175,7 +175,7 @@ Someone who skips maintenance loses the skin at the fixing point first, then the
 
 01-core 4.2 set the average charging draw per baptised Arc member at 8 W. That 8 W is the sum of the following per-region averages. Each is a daily average that includes working hours, resting hours, and the electricity spent warming the fixing point and battery in the cold (provisional T04-17).
 
-| Region | Daily average draw (per machine) | Number per 100 baptised | Total for 100 |
+| Region | Site average draw (incl. body-powered machines and plates, per machine) | Number per 100 baptised | Total for 100 |
 |---|---|---|---|
 | Senses | 1.5 W | 50 | 75 W |
 | Arms and hands | 4.5 W | 55 | 247.5 W |
@@ -185,6 +185,8 @@ Someone who skips maintenance loses the skin at the fixing point first, then the
 | Frame and skin | 0 W | 10 | 0 W |
 | Total | | 200 (2 parts per person) | about 780 W, about 8 W per person |
 
+The site averages include body-powered machines and plates that draw no electricity (4.6 item 2, about one part in three) at 0 W. Taken alone, one electrically driven machine draws about 12 W for a hand and about 14 W for a leg.
+
 How many people wear machines, and their charging (provisional T04-18).
 
 | Polity | People wearing machines | Share of population | Average charging per person | Total |
@@ -193,6 +195,8 @@ How many people wear machines, and their charging (provisional T04-18).
 | Free Cities | about 2,500 | about 3% | 4 W (many body-powered machines) | about 10 kW |
 | Government | about 600 | 0.4% | 3 W | about 2 kW |
 | Total | about 14,100 | about 5% | | about 100 kW, 2% of Seoul's electricity |
+
+The basis of this total is about 11,000 baptised (4.6) multiplied by the 8 W per person of 01-core 4.2. If another chapter sets a different number of baptised or a different charge per person, the Arc share and the Seoul total change accordingly. Reconciling figures between chapters is the integration task's job (task 9).
 
 Jamsil has 900 baptised, 29% of its roughly 3,100 people (01-core 4.2). That is higher than the Arc average of 17% because the baptised gather at stations fed by the water wheels. The Arc's total charging of 88 kW is about 22% of the 400 kW the Jamsil weir wheels give when running well. The weir's north end is in Government hands (01-core 5.1). So for the Arc the north end of the weir is the daily life of eleven thousand baptised.
 
@@ -218,7 +222,7 @@ Once a machine is removed, refitting in that place is harder. A second fixing po
 
 The first baptism around 2117 was twelve people (bible section 3), and the Arc has about 11,000 baptised in 2126. That is an increase of about 1,200 a year over nine years. Three things made it possible (provisional T04-23).
 
-1. The Gangnam shelters already had people wearing machines: machines inherited by descendants of those fitted before the Great Blackout, and machines passed around inside the shelters for decades. For these people the first baptism was not a new machine but connecting the old one to a maintenance bench.
+1. The Gangnam shelters already had people wearing machines: machines inherited by descendants of those fitted before the Great Blackout, and machines passed around inside the shelters for decades. For them too, baptism is replacing a body part with a machine (bible section 2.3). But their bodies already had fixing points, so the surgery was shorter and less risky, and the machines they wore could be revived by the maintenance benches and used again.
 2. About one in three of the parts the baptised wear are machines that iron and hands can make, such as body-powered limbs and frame-and-skin plates.
 3. The machines of baptised who die go back to the maintenance bench and on to the next baptised (4.7).
 
@@ -361,8 +365,15 @@ Rail vehicles are repaired at the workshops of the old train depots. Seoul's dep
 | Gunja | Gwangjin-gu | Government |
 | Changdong | Dobong-gu | Government |
 | Godeok | Gangdong-gu | Arc |
+| Suseo | Gangnam-gu | Arc. Line 3 depot. The workshop has been stripped and is used only as a parts store |
+| Seongsu | Seongdong-gu | Government. Line 2 depot. The surface workshop is buried in snow and iced over |
+| Sinnae | Jungnang-gu | Government. Line 6 depot. Iced over |
+| Sinimun | Dongdaemun-gu | Government. The Line 1 Imun depot. Stripped; it has become a salvage ground for copper and rail |
+| Gaehwa | Gangseo-gu | Free City. Line 9 depot. Iced over; one remaining building is used as the Wind Keeper's wind-machine store |
 
-Of the twelve maintenance locomotives, seven are at Free City depots, four at Government depots and one at the Arc depot. Heavy loads on the rails pass through Free City workshops in the end. The Government holds the Gunja and Changdong depots yet cannot repair locomotives itself because it lacks the hands of 3.3.
+The only live workshops are those where people dug out the snow, roofed them over and joined them to the tunnels. The other depots are iced over or stripped.
+
+Of the twelve maintenance locomotives, seven are at the Free Cities' live depots (Sinjeong, Guro, Cheonwang, Banghwa), four at the Government's live depots (Gunja, Changdong) and one at the Arc's live depot (Godeok). Heavy loads on the rails pass through Free City workshops in the end. The Government holds the Gunja and Changdong depots yet cannot repair locomotives itself because it lacks the hands of 3.3.
 
 ## 8. Machines inside Seoul
 
@@ -398,7 +409,7 @@ This widens the control table of 01-core 5.6 to the inputs of technology (provis
 | Power cores | Mined across the northern perimeter | Mined across the south-western perimeter | The user. Buys them |
 | Optical fibre and tunnel cable | Tunnels north of the river | South-western tunnels | Gangnam tunnels |
 | Clean rooms | 1 | 2 | 6 |
-| Depot workshops | Gunja, Changdong | Sinjeong, Guro, Cheonwang, Banghwa | Godeok |
+| Depot workshops (live) | Gunja, Changdong (Seongsu, Sinnae, Imun iced over or stripped) | Sinjeong, Guro, Cheonwang, Banghwa (Gaehwa iced over) | Godeok (Suseo stripped) |
 | Antibiotics | A little old stock | Grows a little from mould | Grows a little from mould |
 | Knowledge on paper | The most | Little | The manuals (not public) |
 | Hands | Few (about 800) | The most (about 3,600) | Hands that work on bodies (about 1,600) |
@@ -497,7 +508,7 @@ These are Free City market prices of winter 2126, converted to person-days. The 
 | 1 m³ of water (well water) | about 2 | Well-pump electricity and maintenance |
 | 1 kWh of electricity | about 0.7 | 2.1 |
 | Revived battery pack (holding 1 kWh) | about 30 | Picking live cells and a board hand's work |
-| One power core | about 400 | The lives spent crossing the perimeter |
+| One power core | about 20,000 | The electricity it gives over its life (about 1.75 kW on average for 5 to 6 years, about 80 MWh) and the lives spent crossing the perimeter. The risk that it may stop suddenly at any time discounts the price heavily |
 | One old rifle round | about 3 | The remaining stock shrinks every year |
 | One reloaded rifle round | about 1.2 | Of which the primer is about 0.8 |
 | One primer | about 0.8 | About 60,000 a year |
@@ -517,7 +528,7 @@ These are Free City market prices of winter 2126, converted to person-days. The 
 | Clean-room surgery | about 120 | The clean room's electricity and days |
 | Maintenance of a body machine (one year) | about 15% of the machine's price | Intervals of 4.3 |
 
-Fitting one electrically driven hand and keeping it for the first year costs the machine 200, surgery 30, maintenance 30 (15% of the machine's price) and charging about 27 (4.5 W on average, about 39 kWh a year), about 290 person-days in all. That is close to ten months of an ordinary worker's labour. So in all three polities a machine body is not something an individual buys but something a polity, a household or a workbench provides, and whoever provides it holds that body (bible section 1, row 14).
+Fitting one electrically driven hand and keeping it for the first year costs the machine 200, surgery 30, maintenance 30 (15% of the machine's price) and charging about 74 (one electrically driven hand alone draws about 12 W, about 105 kWh a year), about 335 person-days in all. That is close to a year of an ordinary worker's labour. So in all three polities a machine body is not something an individual buys but something a polity, a household or a workbench provides, and whoever provides it holds that body (bible section 1, row 14).
 
 ### 11.6 The reckoning of the water supply contract
 
