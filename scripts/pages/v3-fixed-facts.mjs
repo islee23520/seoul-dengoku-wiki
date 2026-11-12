@@ -22,7 +22,8 @@ function extract() {
   for (const f of fs.readdirSync(SQL_DIR).filter((x) => x.endsWith('.sql')).sort()) db.exec(fs.readFileSync(path.join(SQL_DIR, f), 'utf8'));
   const all = (sql) => db.prepare(sql).all().map((r) => ({ ...r }));
   const pick = (o, keys) => Object.fromEntries(keys.filter((k) => o && o[k] !== undefined).map((k) => [k, o[k]]));
-  const kin = (j) => ['outgoing', 'incoming'].flatMap((d) => (j.relations?.[d] ?? []).filter((r) => r.type === 'Kinship').map((r) => ({ d, ...r })));
+  const kin = (j) => ['outgoing', 'incoming'].flatMap((d) => (j.relations?.[d] ?? []).filter((r) => r.type === 'Kinship').map((r) => ({ d, from: r.from, type: r.type, to: r.to })));
+  // Kinship: who is kin to whom is fixed; the `basis` sentence is lore and is rewritten.
   const AGE = ['name', 'gender', 'birthDate', 'birthday', 'age', 'ageAsOf', 'generation', 'clan', 'characterId'];
   const details = new Map(all('SELECT * FROM person_detail').map((r) => [r.person_id, r]));
   const people = all('SELECT id, name, name_ko, gender, gender_ko FROM wiki_person ORDER BY id').map((p) => {
@@ -46,8 +47,17 @@ function extract() {
     if (!fs.existsSync(abs)) continue;
     for (const f of fs.readdirSync(abs).sort()) images[`${dir}/${f}`] = crypto.createHash('sha256').update(fs.readFileSync(path.join(abs, f))).digest('hex');
   }
+  // Portrait face: the face description that the portrait images were made from (the outfit and role are lore).
+  const faces = {};
+  const tokDir = path.join(REPO, 'public/portrait-tokens');
+  if (fs.existsSync(tokDir)) for (const f of fs.readdirSync(tokDir).filter((x) => x.endsWith('.json')).sort()) {
+    const t = JSON.parse(fs.readFileSync(path.join(tokDir, f), 'utf8'));
+    faces[f] = { personId: t.personId, name: t.name, face: t.artProposal?.face ?? null, slotFace: t.slots?.face ?? null, image: t.image?.sha256 ?? null,
+      identity: pick(t.identity ?? {}, ['name', 'gender', 'ethnicity', 'age', 'ageAsOf']) };
+  }
   return {
-    schema: 'v3-fixed-facts.1',
+    schema: 'v3-fixed-facts.2',
+    faces,
     people,
     clans,
     clanMembers: all('SELECT clan_id, person_id, branch_id FROM clan_member ORDER BY clan_id, person_id'),
@@ -60,15 +70,20 @@ function extract() {
       edges: all('SELECT id, a, b, line_ids FROM map_edge ORDER BY id'),
       lines: all('SELECT id, name, name_ko, color FROM map_line ORDER BY id'),
       landmarks: all('SELECT id, region_id, x, y FROM map_landmark ORDER BY id'),
-      titles: all('SELECT id, rank, parent_id, county_ids, path FROM map_title ORDER BY id'),
+      titles: all('SELECT id, rank, name, name_ko, parent_id, county_ids, path FROM map_title ORDER BY id'),
+      states: all('SELECT state_id, label_x, label_y, capital_x, capital_y, capital_station_id, capital_region_id, exclusive_districts FROM map_state ORDER BY state_id'),
+      meta: all("SELECT key, value FROM map_meta WHERE key IN ('width','height','projection','attribution','attribution_ko','major_station_ids') ORDER BY key"),
       rail: crypto.createHash('sha256').update(JSON.stringify(all('SELECT * FROM map_rail ORDER BY id'))).digest('hex'),
       underground: crypto.createHash('sha256').update(JSON.stringify(all('SELECT * FROM map_underground ORDER BY station_id'))).digest('hex'),
     },
   };
 }
 
+// Ages may be ADDED for the 511 people who had none (plan task 8 rule); a recorded age may never change or disappear.
+const ADDABLE = /^\$\.people\.\d+\.(en|ko)\.(birthDate|birthday|age|ageAsOf)$/;
 function diff(a, b, at, out) {
   if (out.length >= 50) return;
+  if (a === undefined && ADDABLE.test(at)) return;
   if (JSON.stringify(a) === JSON.stringify(b)) return;
   if (a && b && typeof a === 'object' && typeof b === 'object') {
     for (const k of new Set([...Object.keys(a), ...Object.keys(b)])) diff(a[k], b[k], `${at}.${k}`, out);
