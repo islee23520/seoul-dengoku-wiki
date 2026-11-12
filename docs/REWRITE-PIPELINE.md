@@ -91,4 +91,11 @@ node scripts/pages/rewrite-doc.mjs --add-slug <slug> --category <id> [--title <e
   라이브 페이지(`<base>/wiki/<slug>/`, `<base>/ko/wiki/<slug>/`)를 검사한다.
 - 금지 패턴은 기존 히트 기준선과 무관하게 **항상** 검사한다 — 기준선이 0이어도 새로 1건 나타나면 실패다.
 - `--scope`는 이번 배치가 교체한 문서로 판정을 한정하고, `--all`은 전수 검사한다.
+- `--md <파일|디렉터리>[,…]`는 SQL 밖의 마크다운을 그대로(URL 속 이름까지) 검사한다. 디렉터리는 안의 `*.md` 전부다.
+  **`docs/design`과 `docs/research`의 필수 게이트다**: 이 두 디렉터리를 바꾸는 과제는 끝내기 전에
+  `node scripts/pages/scan-terms.mjs --terms docs/canon-terms.json --md docs/research,docs/design`가 0이어야 하고, 게이트 검토자도 같은 명령을 돌린다.
+  `--md`는 필수 표를 적용하지 않고 `--scope`/`--all`/`--html`/`--url`/`--sql-dir`과 함께 쓸 수 없다. 출처 주소에는 이름 대신 `pageid=` 형식을 쓴다.
+- 다른 게임 이름(`tw-*` 항목)은 손으로 고르지 않고 `docs/canon-terms-sources/`의 커밋된 Fandom 분류 제목 스냅샷에서
+  `node scripts/pages/gen-tw-bans.mjs`로 만든다(`--check`는 현재 파일이 생성 결과와 같은지만 확인, `--fetch`만 네트워크를 쓰고 스냅샷을 새로 받는다).
+  일반 영어·오탐 단어는 `tw-stoplist.txt`의 수동 구역에서 조정하고, 이름 보강과 한국어 표기는 `tw-extra.txt`에서 고친다. `tw-*` 항목을 `canon-terms.json`에서 직접 고치지 않는다.
 - 위반 시 slug·패턴 id·60자 문맥을 출력하고 exit 1, 통과 시 건수를 출력하고 exit 0. `--json`으로 보고서 파일을 남긴다.

@@ -8,7 +8,7 @@
 
 - 모든 주장 뒤에 출처 URL을 붙였다. 영어 출처 제목은 원문 그대로 두었다.
 - Wikipedia는 조회한 리비전을 고정 링크(`oldid`)로 남겼다. 조회 시점은 2026-11-12다.
-- **참고 전용(reference only)**: Cyberpunk RED와 Cyberpunk 2077 자료는 **구조**(신체 부위 분류, 비용 개념, 시술 주체)만 참고한다. 제품명, 회사명, 고유 장치명은 정본에 옮기지 않는다. 이 문서 본문에도 고유 장치명을 적지 않았다. 다만 시술자를 가리키는 장르 일반어 '리퍼닥(ripperdoc)'은 참고 전용인 1절 안에서만 세 번 쓴다. URL 경로에 남은 이름은 출처 주소일 뿐이다.
+- **참고 전용(reference only)**: Cyberpunk RED와 Cyberpunk 2077 자료는 **구조**(신체 부위 분류, 비용 개념, 시술 주체)만 참고한다. 제품명, 회사명, 고유 장치명은 정본에 옮기지 않는다. 이 문서 본문에도 고유 장치명을 적지 않았다. 시술자는 '시술자'나 '개조 시술소'로 적고 원작의 말은 옮기지 않는다. 출처 주소는 가능한 곳에서 문서 번호(pageid) 형식을 쓴다.
 - 출처 등급: [1차] 공식 문서·정부 발표·논문, [보도] 주요 언론·연구소, [공동체] 팬 위키·포럼·업체 블로그. 공동체 출처는 사실 확인이 약하므로 수치를 정본 근거로 쓰지 않는다.
 - 사이트가 본문 수집을 막은 경우 그 사실을 적고 다른 출처를 썼다(9절).
 - 정본 바이블과의 관계: 세력은 셋(정부·자유도시·아크)뿐이고, 현대·미래 무기와 기계는 있으나 귀하며, 아크의 세례는 몸의 부위를 기계로 바꾸는 일이다(`docs/CANON-BIBLE.md` 1절 규칙 5·7, 2.3절). 이 조사는 그 전제 위에서 "귀하다"를 구체적으로 만드는 근거를 모은다.
@@ -18,10 +18,10 @@
 ### 1.1 Cyberpunk 2077의 부위 칸 구조
 
 - 2077(2.0 이후)은 몸을 열 개의 부위 칸으로 나눈다: 전두엽(Frontal Cortex) 3칸, 운영체제(Operating System) 1칸, 팔(Arms) 1칸, 얼굴(Face) 1칸(이야기 진행으로 1칸 추가), 골격(Skeleton) 2칸(능력으로 1칸 추가), 손(Hands) 1칸(능력으로 1칸 추가), 신경계(Nervous System) 3칸, 순환계(Circulatory System) 3칸, 외피계(Integumentary System) 3칸, 다리(Legs) 1칸이다. [공동체] https://cyberpunk.fandom.com/api.php?action=parse&page=Cyberpunk_2077_Cyberware&prop=wikitext&format=json
-- 같은 출처에 따르면 이식 총량은 "사이버웨어 용량(Cyberware Capacity)"이라는 상한으로 묶이고, 시술과 등급 상승은 리퍼닥(ripperdoc)에서 한다. [공동체] https://cyberpunk.fandom.com/api.php?action=parse&page=Cyberpunk_2077_Cyberware&prop=wikitext&format=json
+- 같은 출처에 따르면 이식 총량은 "사이버웨어 용량(Cyberware Capacity)"이라는 상한으로 묶이고, 시술과 등급 상승은 개조 시술소에서 한다. [공동체] https://cyberpunk.fandom.com/api.php?action=parse&page=Cyberpunk_2077_Cyberware&prop=wikitext&format=json
 - 2.0 이전 판에는 안구계(Ocular System) 1칸과 면역계(Immune System) 2칸이 따로 있었다는 공동체 정리가 있다. [공동체] https://www.reddit.com/r/cyberpunkgame/comments/k5eleo/cyberware_guide/
 - 부위 목록은 공략 위키의 탐색 메뉴에서도 같은 순서로 확인된다(Frontal Cortex, Operating System, Face, Circulatory System, Nervous System, Integumentary System, Skeleton, Hands, Arms, Legs). [공동체] https://cyberpunk2077.wiki.fextralife.com/Frontal_Cortex
-- 게임 본편 서술: 이식은 리퍼닥이 설치하고, 과도한 개조로 정신이 무너진 사람(cyberpsycho)은 경찰 특수부대가 처리한다. [보도/백과] https://en.wikipedia.org/w/index.php?title=Cyberpunk_2077&oldid=1384787867
+- 게임 본편 서술: 이식은 시술자가 설치하고, 이식 과부하로 정신이 무너진 사람은 경찰 특수부대가 처리한다. [보도/백과] https://en.wikipedia.org/w/index.php?title=Cyberpunk_2077&oldid=1384787867
 
 ### 1.2 Cyberpunk RED의 기반 장치와 선택 칸 구조
 
@@ -32,13 +32,13 @@
 - 공동체 질의응답에 따르면 시술 장소는 mall·clinic·hospital 세 등급이고, 습득한 부품도 시술비를 따로 내야 한다. [공동체] https://www.reddit.com/r/cyberpunkred/comments/15tnst8/cost_to_implant_multiple_cyberware_at_once/
 - RED 자체는 2045년을 배경으로 한 4판이고 2020년 11월 핵심 규칙서가 나왔다. [백과] https://en.wikipedia.org/w/index.php?title=Cyberpunk_%28role-playing_game%29&oldid=1384538674
 
-### 1.3 인간성 비용과 사이버사이코시스 (구조만)
+### 1.3 인간성 비용과 이식 과부하로 인한 정신 붕괴 (구조만)
 
-- RED에서 이식은 인간성(Humanity)을 깎는다. 장치마다 인간성 손실(HL) 값이 있고, 설치할 때 주사위를 굴려 그만큼 뺀다. 인간성이 0이 되면 사이버사이코가 된다. 치료(therapy)로 회복할 수 있지만 비싸다. [공동체] https://rpgstack.com/faq/cyberpunk_red/how-does-cyberware-work
+- RED에서 이식은 인간성(Humanity)을 깎는다. 장치마다 인간성 손실(HL) 값이 있고, 설치할 때 주사위를 굴려 그만큼 뺀다. 인간성이 0이 되면 이식 과부하로 정신이 무너진다. 치료(therapy)로 회복할 수 있지만 비싸다. [공동체] https://rpgstack.com/faq/cyberpunk_red/how-does-cyberware-work
 - 같은 장치라도 캐릭터 생성 때는 고정값(예: 7), 나중에 설치하면 주사위(예: 2d6)로 잃는다. 큰 시술은 손실도 크다(예: 14 또는 4d6). [공동체] https://cyberpunk.fandom.com/api.php?action=parse&page=Neural_Link&prop=wikitext&format=json , https://cyberpunk.fandom.com/api.php?action=parse&page=Grafted_Muscle_and_Bone_Lace&prop=wikitext&format=json
 - 공동체 해설: 인간성은 공감(EMP) x 10에서 시작하고, 인간성의 십의 자리가 떨어질 때마다 EMP가 1 줄어든다. (검색 요약에서 확인.) [공동체] https://theroleplayersguild.com/articles/cyberpunk-red/cyberware-guides/cpr-humanity-loss-guide
-- 설정 서술: 사이버사이코시스는 누적된다. 손 하나로는 거의 생기지 않지만 사지와 두 눈을 모두 바꾸면 내리막이 시작된다. 이식을 빼면 어느 정도 돌아오지만 선을 넘은 뒤에는 소용이 적다. 정부와 기업은 이식을 많이 한 사람을 추적한다. [공동체] https://cyberpunk.fandom.com/api.php?action=parse&page=Cyberpsychosis&prop=wikitext&format=json
-- 시술 주체는 합법 업소와 불법 업소로 갈린다. 일부 리퍼닥은 돈을 받고 불법 군용 장치를 달아 주며, 싸구려 업소는 중고 부품에 악성 코드를 끼워 판다는 서술도 있다. 기업은 자기 직원에게 무료 시술을 해 주는 대신 뇌에 접근할 권한을 얻는다. [공동체] https://cyberpunk.fandom.com/api.php?action=parse&page=Ripperdoc&prop=wikitext&format=json
+- 설정 서술: 이식 과부하로 인한 정신 붕괴는 누적된다. 손 하나로는 거의 생기지 않지만 사지와 두 눈을 모두 바꾸면 내리막이 시작된다. 이식을 빼면 어느 정도 돌아오지만 선을 넘은 뒤에는 소용이 적다. 정부와 기업은 이식을 많이 한 사람을 추적한다. [공동체] https://cyberpunk.fandom.com/api.php?action=parse&pageid=2421&prop=wikitext&format=json
+- 시술 주체는 합법 업소와 불법 업소로 갈린다. 일부 시술자는 돈을 받고 불법 군용 장치를 달아 주며, 싸구려 업소는 중고 부품에 악성 코드를 끼워 판다는 서술도 있다. 기업은 자기 직원에게 무료 시술을 해 주는 대신 뇌에 접근할 권한을 얻는다. [공동체] https://cyberpunk.fandom.com/api.php?action=parse&pageid=3476&prop=wikitext&format=json
 
 **이 세계에 쓸 구조적 교훈**: (a) 부위 칸 분류, (b) 기반 장치가 있어야 붙는 확장, (c) 시술 장소 등급, (d) 누적되는 정신·사회적 비용, (e) 합법·암시장 이원 구조. 이 다섯 가지는 장르 공통 구조라 옮겨 쓸 수 있다. 수치, 주사위 규칙, 장치명은 옮기지 않는다.
 
