@@ -96,7 +96,7 @@ The water supply contract trades what the Government puts in, sites, hands and g
 
 At the third contract the Arc takes a seat for the first time. The Arc holds the power of the Jamsil weir and the Amsa water intake. Now Seoul's water flows only if all three polities put their hands to it. So several questions lie before Seoul in the winter of 2126.
 
-- Will the Government set its seal beside the Arc's, an off-ledger body? The party of contracts and the party of the ledger split, and whichever side the life president takes, half the Members are lost.
+- Will the Government set its seal beside the Arc's, an off-ledger body? The party of contracts and the party of the ledger split, and whichever side the life president takes, the president loses half the Members.
 - How will the Free Cities seat the Arc at the contract meeting? Dongjak because of its land border, Yeongdeungpo for the dignity of the Host, Guro for fear the Arc will lure away its technicians: each says something different.
 - Can the Arc win water and maintenance while keeping baptism out of the contract?
 - Over the next thirty years the wells will drop about 9 metres more. Who will dig those wells?

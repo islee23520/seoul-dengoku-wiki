@@ -85,7 +85,7 @@ There are machines inside Seoul too. But they are not like the machines outside.
 
 The sleeping old machines lasted a hundred years thanks to the cold. In frozen basements rust is slow and oil only stiffens; nothing rots. Such machines sleep beneath the old warehouses and hospitals where the most fibre remains, so when a fibre crew hooks up a battery for light, they wake. The dangers inside Seoul are in the [Hostile Ecology Compendium](/wiki/Hostile-Ecology-Index/).
 
-Machines people use are scarce. There are about 150 revived worker machines in all of Seoul. They repeat a set task and a few words of guidance: carrying loads, watching pumps, clearing snow from entrances. One human-shaped machine carries as much as five people, but it eats as much electricity as heating four. So worker machines are found where hands are short and power is spare. More is in [People and Machines](/wiki/People-and-Machines/) and [Humanoids](/wiki/Synthetic-Actors/).
+Machines people use are scarce. There are about 150 revived worker machines in all of Seoul. They repeat a set task and a few words of guidance: carrying loads, watching pumps, clearing snow from entrances. One human-shaped machine carries as much as five people, but it eats as much electricity as the heating share of four people. So worker machines are found where hands are short and power is spare. More is in [People and Machines](/wiki/People-and-Machines/) and [Humanoids](/wiki/Synthetic-Actors/).
 
 <a id="ai-arcs-salvage"></a>
 

@@ -56,7 +56,7 @@ The two parties split over the Arc.
 - **The OMO Party** wants an annex with the Arc as well. The water wheels at the north end of the Jamsil weir are in Gwangjin, so it holds that even half the power must be run together. The Members for the four riverside districts (Mapo, Yongsan, Seongdong, Gwangjin) and for Jung-gu and Seodaemun-gu, that is, the six OMO Party Members, take this side.
 - **The Claw Party** wants no annex with the Arc at all. It holds that if the Government stamps a seal with an off-ledger body, the ledger's soldiers will read it as the ledger accepting baptism. The Members for the eight inland districts take this side.
 
-The Claw Party has more seats. But the bridges, tunnels and intakes the contract turns on all lie in OMO Party districts, and an annex is not a law, so it does not pass through an Assembly vote. The Claw Party's only way to stop an annex is the President's sign-off. So the third contract becomes a fight over whether the President signs when the Member for Gwangjin has stamped the annex for the north end of the weir. A President acclaimed by fourteen seals loses half the Members from the next day, whichever side is taken. The Government's inner workings are in [Government Society](/wiki/Government-Society/).
+The Claw Party has more seats. But the bridges, tunnels and intakes the contract turns on all lie in OMO Party districts, and an annex is not a law, so it does not pass through an Assembly vote. The Claw Party's only way to stop an annex is the President's sign-off. So the third contract becomes a fight over whether the President signs when the Member for Gwangjin has stamped the annex for the north end of the weir. A President acclaimed by fourteen seals loses half the Members from the next day, whichever side the President takes. The Government's inner workings are in [Government Society](/wiki/Government-Society/).
 
 <a id="opening-free-cities"></a>
 
@@ -110,7 +110,7 @@ People in Seoul do not divide the year into seasons. They call the half-year of 
 ### The Long-Dark Half: Up to the Contract Meeting
 
 - **The blizzard half.** Blizzards are frequent. One lasts 2 to 4 days, and through it the bridges close and work on the surface stops. But the rim machines are blinded too, so the Geumcheon border crews and the perimeter-runners of the north cross the rim now.
-- **Nights on the ice.** People fleeing the ledger and smugglers cross the ice on long-dark nights. Darkness hides the kilometre with nowhere to hide.
+- **Nights on the ice.** People fleeing the ledger and smugglers cross the ice on long-dark nights. Darkness covers the open kilometre where there is nowhere to hide.
 - **The light-fields rest.** The light-fields yield least. Fibre-sugar vats and mushroom tunnels carry the meals. When stores run short, the Government's dong community centres cut the office workers' share first.
 - **Gathering seals.** The Government's Members of the National Assembly size one another up over the seals on the annexes. The Free Cities choose who will go to Yeongdeungpo and what to entrust to them. In the Arc, the negotiator of the Hierophant's house settles the numbers of each sheet with the Heads of the Near Houses.
 - **The contract meeting.** Yeongdeungpo's Market Master opens the meeting in the Yeouido Assembly building. Sheet by sheet, seals are stamped, or withdrawn.

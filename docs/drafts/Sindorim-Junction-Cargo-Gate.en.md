@@ -68,7 +68,7 @@ Petrol and diesel did not last a hundred years, and the surface roads were made 
 | Battery cart | A rail cart whose motor runs on revived batteries. Carries 2 to 5 tonnes | About 300 in all Seoul. Used for long hauls and heavy loads |
 | Maintenance locomotive | A revived battery locomotive once used for tunnel maintenance. Hauls 20 to 40 tonnes | 12 in all Seoul. Seven of them are in the Free Cities' living depots (Sinjeong, Guro, Cheonwang, Banghwa) |
 
-Guro's Line 1 depot workshop is a living workshop for the vehicles of the rails. It is where the maintenance locomotives stand and where wheels and motors are rewound. In the end, the big loads of the rails pass through Free City workshops. Sindorim is the door in and out of that workshop.
+Guro's Line 1 depot workshop is a living workshop for the vehicles of the rails. It is where the maintenance locomotives stand and where wheels are turned and motors rewound. In the end, the big loads of the rails pass through Free City workshops. Sindorim is the door in and out of that workshop.
 
 <a id="market"></a>
 

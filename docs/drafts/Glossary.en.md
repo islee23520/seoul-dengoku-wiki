@@ -105,7 +105,7 @@ How the seats of the three polities fit together is in [Titles and Offices](/wik
 | contract meeting | The gathering the cities call whenever they have something to settle together. It has no fixed place and no standing body | Proposed |
 | Host | The head of the city that calls a contract meeting | Proposed |
 | there is no seat above | The saying that no single ruler stands over the Free Cities | Meaning settled; words proposed |
-| workbench, work crew | A Free City craft family and its working gang. What is inherited is the workbench, not a trade entry | Proposed |
+| workbench, work crew | A Free City craft family and its working gang. What is inherited is the workbench, not a trade | Proposed |
 | surety | A workbench owner vouching for a hand's skill. Only hands with surety take work in their own name | Proposed |
 | hand without surety | Someone who has lost surety and can no longer get work | Proposed |
 | kilo, hand-hour | Free City reckoning. A kilo is one kilowatt-hour of electricity; a hand-hour is one hour of one hand with surety | Proposed |

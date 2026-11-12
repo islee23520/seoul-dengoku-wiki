@@ -6,7 +6,7 @@ section_checkpoint: v3 task 10 complete
 ---
 <a id="annals-title"></a>
 
-These annals record Seoul's hundred years, decade by decade, from the Great Blackout to the winter of 2126: how people went down into the stations, how the Han froze and split the ledger's north from the south beyond it, the water supply contracts made every thirty years, what happened on the ice in 2079, how the Arc split off from the Free Cities, and the present, before the third water supply contract.
+These annals record Seoul's hundred years, decade by decade, from the Great Blackout to the winter of 2126: how people went down into the stations, how the Han froze and the north and south of the river split into on and off the ledger, the water supply contracts made every thirty years, what happened on the ice in 2079, how the Arc split off from the Free Cities, and the present, before the third water supply contract.
 
 <a id="annals-read"></a>
 

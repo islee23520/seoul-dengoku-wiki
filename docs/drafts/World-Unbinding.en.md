@@ -116,7 +116,7 @@ No one knows this for certain. The three polities tell the same thing in their o
 
 - Government people say: "When the ledger matched the quotas, the winter stopped." They believe that counting people and keeping each station to its quota is what keeps the winter from tightening.
 - Free City people say: "The heat balance came out even."
-- Arc people say: "God received all the answer it was owed."
+- Arc people say: "God has received all the answers it was waiting for."
 
 Nobody knows which of the three is right. But all three polities know one thing alike: the winter can get worse than it is now, and once it does, there is no going back.
 
