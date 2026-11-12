@@ -81,7 +81,7 @@ const activeHolding = computed(() => selectableHoldings.value.find((h) => h.id =
 const holdingRegions = computed(() => new Set(activeHolding.value?.regions ?? []))
 const edgeColor = (c: Control) => (c.status === 'held' && c.states[0] ? factionById.value.get(c.states[0])?.color ?? unassigned.value : unassigned.value)
 const statusLabel = (s: string) => L.value.status?.[s] ?? s
-const counts = (status: string) => displayedEdges.value.filter((e) => (status === 'unassigned' ? !['held', 'vacant', 'contested'].includes(e.control.status) : e.control.status === status)).length
+const counts = (status: string) => displayedEdges.value.filter((e) => (status === 'unassigned' ? !['held', 'vacant'].includes(e.control.status) : e.control.status === status)).length
 
 const sel = computed(() => machine.selection)
 const selTitle = computed(() => (sel.value.kind === 'title' ? titleById.value.get(sel.value.id) ?? null : null))
@@ -253,7 +253,7 @@ const stateLink = (id: string) => withBase(`/${props.prefix}wiki/factions/${stat
         <span v-for="f in core.factions" :key="f.id" role="listitem"><i :style="{ background: f.color }"></i>{{ f.name }}</span><span role="listitem"><i :style="{ background: unassigned }"></i>{{ L.neutral }}</span>
       </div>
       <div v-if="machine.layer === 'underground'" class="tm-legend" role="list" :aria-label="L.undergroundLegend">
-        <span role="listitem">{{ L.held }} {{ counts('held') }}</span><span role="listitem">{{ L.contested }} {{ counts('contested') }}</span><span role="listitem">{{ L.vacant }} {{ counts('vacant') }}</span><span role="listitem">{{ L.unassigned }} {{ counts('unassigned') }}</span>
+        <span role="listitem">{{ L.held }} {{ counts('held') }}</span><span role="listitem">{{ L.vacant }} {{ counts('vacant') }}</span><span role="listitem">{{ L.unassigned }} {{ counts('unassigned') }}</span>
       </div>
       <p class="tm-attribution">{{ core.epoch }} · {{ core.attribution }}</p>
     </template>
