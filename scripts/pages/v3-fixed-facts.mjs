@@ -15,6 +15,12 @@ import { fileURLToPath } from 'node:url';
 const REPO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const SQL_DIR = path.resolve(process.env.SITE_SQL_DIR ?? path.join(REPO, 'data/sql'));
 const SNAP = path.join(REPO, 'docs/design/v3/fixed-facts.snapshot.json');
+// Owner 2026-11-13: "번역오류는 전부 수정해야하는것" - translation errors in fixed fields are corrected.
+// Each correction is listed with its reason; --check applies them to the frozen snapshot before comparing,
+// so ONLY listed corrections may change a fixed fact.
+//   { "from": "Male", "to": "Namseong", "reason": "...", "at": ["geography.stations[id=남성].name"] }
+//   { "from": "...", "to": "...", "reason": "...", "everywhere": true, "fields": ["name", "nameEn"] }   // every field with that name whose value equals `from`
+const CORR = path.join(REPO, 'docs/design/v3/fixed-facts.corrections.json');
 const IMAGE_DIRS = ['public/portraits', 'artifacts/seoul-showcase/public/portraits', 'artifacts/seoul-showcase/public/history/portraits'];
 
 function extract() {
@@ -80,6 +86,44 @@ function extract() {
 
 // Ages may be ADDED for the 511 people who had none (plan task 8 rule); a recorded age may never change or disappear.
 const ADDABLE = /^\$\.people\.\d+\.(en|ko)\.(birthDate|birthday|age|ageAsOf)$/;
+function applyCorrections(snap) {
+  if (!fs.existsSync(CORR)) return { snap, applied: 0, unmatched: [] };
+  const list = JSON.parse(fs.readFileSync(CORR, 'utf8')).corrections ?? [];
+  let applied = 0;
+  const unmatched = [];
+  const step = (node, seg) => {
+    const m = /^([^[]+)(?:\[([^=\]]+)=([^\]]+)\])?$/.exec(seg);
+    if (!m) return undefined;
+    const v = node?.[m[1]];
+    if (!m[2]) return { parent: node, key: m[1], value: v };
+    if (!Array.isArray(v)) return undefined;
+    const i = v.findIndex((x) => String(x?.[m[2]]) === m[3]);
+    return i < 0 ? undefined : { parent: v, key: i, value: v[i] };
+  };
+  for (const c of list) {
+    if (!c.reason || c.from === undefined || c.to === undefined) throw new Error(`E_CORRECTION_FORMAT: ${JSON.stringify(c).slice(0, 120)}`);
+    let hit = 0;
+    if (c.everywhere) {
+      const walk = (n) => {
+        if (!n || typeof n !== 'object') return;
+        for (const k of Object.keys(n)) {
+          if (c.fields.includes(k) && n[k] === c.from) { n[k] = c.to; hit++; } else walk(n[k]);
+        }
+      };
+      walk(snap);
+    } else {
+      for (const at of c.at) {
+        const segs = at.split('.');
+        let cur = { value: snap };
+        for (const seg of segs) { cur = cur && step(cur.value, seg); }
+        if (cur && cur.value === c.from) { cur.parent[cur.key] = c.to; hit++; }
+      }
+    }
+    if (hit) applied += hit; else unmatched.push(`${c.from} -> ${c.to}`);
+  }
+  return { snap, applied, unmatched };
+}
+
 function diff(a, b, at, out) {
   if (out.length >= 50) return;
   if (a === undefined && ADDABLE.test(at)) return;
@@ -101,12 +145,12 @@ if (mode === '--write') {
   fs.writeFileSync(SNAP, `${JSON.stringify(now)}\n`);
   console.log(`wrote ${path.relative(REPO, SNAP)}: people ${now.people.length}, clans ${now.clans.length}, clanMembers ${now.clanMembers.length}, nonKorean ${now.nonKorean.length}, trees ${now.trees.length} (nodes ${now.trees.reduce((s, t) => s + t.nodes.length, 0)}, edges ${now.trees.reduce((s, t) => s + t.edges.length, 0)}), images ${Object.keys(now.images).length}, stations ${now.geography.stations.length}`);
 } else if (mode === '--check') {
-  const snap = JSON.parse(fs.readFileSync(SNAP, 'utf8'));
-  const out = [];
+  const { snap, applied, unmatched } = applyCorrections(JSON.parse(fs.readFileSync(SNAP, 'utf8')));
+  const out = unmatched.map((u) => `correction matched nothing in the snapshot: ${u}`);
   diff(snap, now, '$', out);
   if (ageMismatch.length) out.push(...ageMismatch.slice(0, 20).map((id) => `${id}: age fields differ between en and ko`));
   if (out.length) { console.error(`E_FIXED_FACT_CHANGED (${out.length}${out.length >= 50 ? '+' : ''}):\n${out.join('\n')}`); process.exit(1); }
-  console.log('fixed facts unchanged');
+  console.log(`fixed facts unchanged${applied ? ` (with ${applied} listed corrections applied)` : ''}`);
 } else {
   console.error('usage: v3-fixed-facts.mjs --write | --check');
   process.exit(2);
