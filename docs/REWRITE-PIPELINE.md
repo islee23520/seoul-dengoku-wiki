@@ -42,6 +42,21 @@ node scripts/pages/scan-terms.mjs --terms docs/canon-terms.json --scope <slug>,<
 - `--only slug,slug`: 이번 배치가 다룰 문서로 한정한다. `--sql-dir <dir>`: 사본 디렉터리를 대상으로
   실행한다(검증·스모크용; 기본은 저장소 `data/sql`).
 - `--allow-single-language` / `--allow-shrink`는 해당 불변식을 명시적으로 완화할 때만 쓴다.
+- 일반 실행은 기존 행만 UPDATE 하며 030에 없는 slug의 초안은 언제나 exit 2로 거부한다.
+
+## 새 문서 행 추가 (`--add-slug`)
+
+```bash
+node scripts/pages/rewrite-doc.mjs --add-slug <slug> --category <id> [--title <en>] [--title-ko <ko>] [--dry-run] [--sql-dir <dir>]
+```
+
+- 문서 slug의 정본 목록은 `docs/canon-slugs.json`(63개, `docs/CANON-BIBLE.md` 7.1)이다. 목록에 없는 slug와
+  이미 030에 있는 slug는 exit 2로 거부한다. `--category`가 없으면 exit 1, `wiki_category`에 없는 분류도 exit 1이다.
+- 030 끝에 INSERT 1행을 기존 직렬화 그대로(같은 열 순서, 작은따옴표 2배 이스케이프) 붙인다. `sort`는 그 분류의
+  최댓값 + 1이다. 본문은 H1 하나와 "작성 중" 문장 하나(ko/en)이며 명시 앵커가 없어 두 언어의 앵커 집합이 같다.
+  이후 같은 slug의 초안은 일반 실행으로 이 행을 UPDATE 한다(작성 중 본문은 짧으므로 `--allow-shrink`가 필요 없다).
+- 쓰기 전과 쓴 뒤에 파일을 다시 파싱·적재해 행 수(기존 + 1), slug 순서, 바이트 왕복을 검사한다.
+- 기존 030의 머리말 뒤 빈 줄 수만 정규 형식과 다르면 정규 형식(빈 줄 1개)으로 다시 쓰고, 그 밖의 차이가 있으면 exit 10으로 멈춘다.
 - 반영 결과는 slug별로 ko/en 바이트 전후(비율), 마크다운 제목 수, 앵커 수, model id를 출력한다.
 - 실제 변경을 기록할 때만 030의 둘째 머리말이 정본 안내 문구로 교체된다(2026-11-10 커밋으로 이미 교체됨).
   재작성 검증은 언제나 `--roundtrip`을 먼저 돌려 직렬화 무손실을 확인한다.
@@ -52,7 +67,7 @@ node scripts/pages/scan-terms.mjs --terms docs/canon-terms.json --scope <slug>,<
 
 | 코드 | 불변식 |
 |---|---|
-| 2 | slug가 `wiki_document`에 없거나 행 수(59)가 변했다 |
+| 2 | slug가 `wiki_document`에 없거나 행 수가 파싱 결과와 다르다. `--add-slug`: slug가 `docs/canon-slugs.json`에 없거나 이미 있다 |
 | 3 | 한 언어 초안만 제출됨(`--allow-single-language` 필요) |
 | 4 | ko/en 명시 앵커(`<a id="...">`) id 집합 불일치 |
 | 5 | ko/en 마크다운 제목(`#`로 시작하는 줄) 수 불일치 |
