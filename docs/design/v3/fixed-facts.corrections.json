@@ -1,0 +1,419 @@
+{
+  "corrections": [
+    {
+      "from": "Hansan Yi Clan",
+      "to": "Hansan I Clan",
+      "reason": "090 $.clan.name 한산 이씨: the surname disagrees with the clan table row (surname \"I\") and with the other four 이씨 clan labels (\"... I Clan\"). The member's own name is \"I Seo-dam\".",
+      "at": [
+        "people[id=person-0002].en.clan.name"
+      ]
+    },
+    {
+      "from": "Pungi Jin Clan",
+      "to": "Punggi Jin Clan",
+      "reason": "090 $.clan.name 풍기 진씨: 풍기 is \"Punggi\" (the clan table bongwan already reads Punggi).",
+      "at": [
+        "people[id=person-0012].en.clan.name",
+        "people[id=person-0040].en.clan.name",
+        "people[id=person-0068].en.clan.name",
+        "people[id=person-0740].en.clan.name"
+      ]
+    },
+    {
+      "from": "Choe clan of Suseong",
+      "to": "Choe Clan of Suseong",
+      "reason": "090 $.clan.name 수성 최씨: lowercase typo \"clan\". Every other label capitalizes Clan.",
+      "at": [
+        "people[id=person-0034].en.clan.name"
+      ]
+    },
+    {
+      "from": "Heo of Yangcheon",
+      "to": "Heo Clan of Yangcheon",
+      "reason": "090 $.clan.name 양천 허씨: the word \"Clan\" is missing (every other Korean clan label has it).",
+      "at": [
+        "people[id=person-0074].en.clan.name"
+      ]
+    },
+    {
+      "from": "Yeon of Goksan",
+      "to": "Yeon Clan of Goksan",
+      "reason": "090 $.clan.name 곡산 연씨: the word \"Clan\" is missing (every other Korean clan label has it).",
+      "at": [
+        "people[id=person-0153].en.clan.name",
+        "people[id=person-0161].en.clan.name",
+        "people[id=person-0211].en.clan.name"
+      ]
+    },
+    {
+      "from": "Martin Horak",
+      "to": "Martin Horák",
+      "reason": "person-0188: the surname differs from the family record DIV-K187 \"Horák\". The data keeps diacritics elsewhere (Müller, Wiśniewska, Zielińska).",
+      "at": [
+        "people[id=person-0188].name",
+        "people[id=person-0188].en.name"
+      ]
+    },
+    {
+      "from": "Ana Hierophantscu",
+      "to": "Ana Popescu",
+      "reason": "person-0190 아나 포페스쿠: a global Pope->Hierophant rename corrupted the surname Popescu.",
+      "at": [
+        "people[id=person-0190].name",
+        "people[id=person-0190].en.name"
+      ]
+    },
+    {
+      "from": "Su Choreong",
+      "to": "Su Chorong",
+      "reason": "Wrong romanization of the Korean name; 수초롱: 롱 is \"rong\" (Chorong), not \"reong\".",
+      "at": [
+        "people[id=person-0332].name",
+        "people[id=person-0332].en.name",
+        "trees[clan_id=c218-d55c-c591].nodes[id=K331].name"
+      ]
+    },
+    {
+      "from": "Yeong Clan by Birth",
+      "to": "Seoncheon Yeong Clan",
+      "reason": "090 $.clan.name 선천 영씨: the bongwan 선천 (Seoncheon) was translated as \"by birth\". Corrected to the \"<Bongwan> <Surname> Clan\" pattern.",
+      "at": [
+        "people[id=person-0357].en.clan.name",
+        "people[id=person-0365].en.clan.name"
+      ]
+    },
+    {
+      "from": "Jang Dowon",
+      "to": "Jang Dorwon",
+      "reason": "Wrong romanization of the Korean name; 장돌원: the ㄹ of 돌 was dropped (\"Dowon\" reads as 도원). The data's own liaison pattern for 달원 is \"Darwon\" (Bae Darwon, Jo Darwon), so 돌원 -> Dorwon.",
+      "at": [
+        "people[id=person-0471].name",
+        "people[id=person-0471].en.name"
+      ]
+    },
+    {
+      "from": "Pavel Nemets",
+      "to": "Pavel Němec",
+      "reason": "person-0526: Russian-style spelling of a Czech surname. The family record DIV-K526 reads \"Němec\" (Korean 네메츠).",
+      "at": [
+        "people[id=person-0526].name",
+        "people[id=person-0526].en.name"
+      ]
+    },
+    {
+      "from": "Millicent Mensa",
+      "to": "Millicent Mensah",
+      "reason": "person-0558: the surname must match her family record, nonkorean_family DIV-K558 \"Mensah\" (the Ghanaian surname; Korean 멘사). \"Mensa\" is a typo.",
+      "at": [
+        "people[id=person-0558].name",
+        "people[id=person-0558].en.name"
+      ]
+    },
+    {
+      "from": "Simon Kaminski",
+      "to": "Simon Kamiński",
+      "reason": "person-0606: the surname differs from the family record DIV-K606 \"Kamiński\".",
+      "at": [
+        "people[id=person-0606].name",
+        "people[id=person-0606].en.name"
+      ]
+    },
+    {
+      "from": "Zofia Dobrowska",
+      "to": "Zofia Dąbrowska",
+      "reason": "person-0638: misspelled. The family record DIV-K638 reads \"Dąbrowska\".",
+      "at": [
+        "people[id=person-0638].name",
+        "people[id=person-0638].en.name"
+      ]
+    },
+    {
+      "from": "Ryu Bipyeon",
+      "to": "Ryu Bichyeon",
+      "reason": "Wrong romanization of the Korean name; 류빛현: there is no p sound in 빛현. The data's own pattern for 빛+ㅎ is \"Bichun\" (최빛훈 Choe Bichun), so 빛현 -> Bichyeon.",
+      "at": [
+        "people[id=person-0641].name",
+        "people[id=person-0641].en.name"
+      ]
+    },
+    {
+      "from": "Viktor Stanescu",
+      "to": "Viktor Stănescu",
+      "reason": "person-0862: the surname differs from the family record DIV-K862 \"Stănescu\".",
+      "at": [
+        "people[id=person-0862].name",
+        "people[id=person-0862].en.name"
+      ]
+    },
+    {
+      "from": "Sangnak Kim Clan",
+      "to": "Sangnak Gim Clan",
+      "reason": "090 $.clan.name 상락 김씨: the surname disagrees with the clan table row (surname \"Gim\") and with every other 김씨 clan label (\"Gyeongju Gim Clan\", \"Gwangsan Gim Clan\", ...).",
+      "at": [
+        "people[id=person-0932].en.clan.name"
+      ]
+    },
+    {
+      "from": "Barbora Prohaskova",
+      "to": "Barbora Procházková",
+      "reason": "person-0958: misspelled (missing the c of \"ch\"). The family record DIV-K958 reads \"Procházková\" (Korean 프로하스코바).",
+      "at": [
+        "people[id=person-0958].name",
+        "people[id=person-0958].en.name"
+      ]
+    },
+    {
+      "from": "Isabel Garcia",
+      "to": "Isabel García",
+      "reason": "person-0990: the surname differs from the family record DIV-K990 \"García\".",
+      "at": [
+        "people[id=person-0990].name",
+        "people[id=person-0990].en.name"
+      ]
+    },
+    {
+      "from": "Jeonui Lee",
+      "to": "Jeonui I Clan",
+      "reason": "090 $.clan.name 전의 이씨: \"Clan\" is missing and the surname disagrees with the clan table (surname \"I\"; the other 이씨 clans are \"Yeonan I Clan\", \"Gyeongju I Clan\", \"Gwangju I Clan\", \"Seongju I Clan\").",
+      "at": [
+        "people[id=person-0998].en.clan.name"
+      ]
+    },
+    {
+      "from": "State",
+      "to": "Guk",
+      "reason": "clan 담양 국씨: the surname 국 (Guk) was translated as the word \"state\". The person clan label already reads \"Damyang Guk Clan\".",
+      "at": [
+        "clans[id=ad6d-b2f4-c591].surname"
+      ]
+    },
+    {
+      "from": "Gang Eum",
+      "to": "Gangeum",
+      "reason": "clan 강음 단씨: the bongwan 강음 was split into two words. Every other bongwan is one word, and the person clan label already reads \"Gangeum Dan Clan\".",
+      "at": [
+        "clans[id=b2e8-ac15-c74c].bongwan"
+      ]
+    },
+    {
+      "from": "Culture",
+      "to": "Munhwa",
+      "reason": "clan 문화 류씨: the bongwan place name 문화 (文化, Munhwa) was translated as the word \"culture\". The person clan label already reads \"Munhwa Ryu Clan\".",
+      "at": [
+        "clans[id=b958-bb38-d654-67f3].bongwan"
+      ]
+    },
+    {
+      "from": "By Birth",
+      "to": "Seoncheon",
+      "reason": "clan 선천 영씨: the bongwan place name 선천 (Seoncheon) was translated as the word 先天 \"by birth\".",
+      "at": [
+        "clans[id=c601-c120-cc9c-5f71].bongwan"
+      ]
+    },
+    {
+      "from": "Elderly",
+      "to": "Goryeong",
+      "reason": "clan 고령 신씨: the bongwan place name 고령 (Goryeong) was translated as the word \"elderly\". The person clan label already reads \"Goryeong Sin Clan\".",
+      "at": [
+        "clans[id=goryeong-shin].bongwan"
+      ]
+    },
+    {
+      "from": "Hierophantscu",
+      "to": "Popescu",
+      "reason": "nonkorean_family 포페스쿠: a global Pope->Hierophant rename corrupted the Romanian surname Popescu (Korean 포페스쿠 = Popescu).",
+      "at": [
+        "nonKorean[id=DIV-K189].surname"
+      ]
+    },
+    {
+      "from": "Gim Mimi",
+      "to": "Gim Minmi",
+      "reason": "Wrong romanization of the Korean name; family_tree historical node 김민미: the syllable 민 was dropped (Minmi).",
+      "at": [
+        "trees[clan_id=ae40-acbd-c8fc-91d1].nodes[id=FH-K1007-P-02].name"
+      ]
+    },
+    {
+      "from": "O Doug",
+      "to": "O Douk",
+      "reason": "Wrong romanization of the Korean name; family_tree historical node 오도욱: 도욱 was replaced by the English name \"Doug\". RR is Douk.",
+      "at": [
+        "trees[clan_id=b958-bb38-d654-67f3].nodes[id=FH-K836-M-01].name"
+      ]
+    },
+    {
+      "from": "Bak Doug",
+      "to": "Bak Douk",
+      "reason": "Wrong romanization of the Korean name; family_tree historical node 박도욱: 도욱 was replaced by the English name \"Doug\". RR is Douk.",
+      "at": [
+        "trees[clan_id=bc15-bc00-c591].nodes[id=FH-K820-P-02].name"
+      ]
+    },
+    {
+      "from": "Bak Dohyeon",
+      "to": "Bak Doheon",
+      "reason": "Wrong romanization of the Korean name; family_tree historical node 박도헌 (K169 line): 헌 is \"heon\"; \"Dohyeon\" would be 도현. The node's own nameEn already reads \"Park Doheon\".",
+      "at": [
+        "trees[clan_id=bc15-bc00-c591].nodes[id=FH-K169-P-03].name"
+      ]
+    },
+    {
+      "from": "Yun Hyeonggyeong",
+      "to": "Yun Hyeongyeong",
+      "reason": "Wrong romanization of the Korean name; family_tree historical node 윤현경: \"Hyeonggyeong\" would be 형경. RR is Hyeongyeong.",
+      "at": [
+        "trees[clan_id=c724-d30c-d3c9].nodes[id=FH-K196-P-03].name"
+      ]
+    },
+    {
+      "from": "Gwak Hyeonggyeong",
+      "to": "Gwak Hyeongyeong",
+      "reason": "Wrong romanization of the Korean name; family_tree historical node 곽현경: \"Hyeonggyeong\" would be 형경. RR is Hyeongyeong.",
+      "at": [
+        "trees[clan_id=c724-d30c-d3c9].nodes[id=FH-K196-M-02].name"
+      ]
+    },
+    {
+      "from": "Yun Mingwei",
+      "to": "Yun Mingyu",
+      "reason": "family_tree historical node 윤밍위 (K1011 Lin family): the given name disagrees with the Korean 밍위 and with the node's own nameEn \"Yin Mingyu\". \"Mingwei\" would be 밍웨이. Corrected to Mingyu; the surname Yun follows the node name convention.",
+      "at": [
+        "trees[clan_id=c784-b300-b9bc-6797].nodes[id=FH-K1011-M-02].name"
+      ]
+    },
+    {
+      "from": "Yun Chunzhi",
+      "to": "Yun Chunji",
+      "reason": "family_tree historical node 윤춘지 (K1011 Lin family): the given name disagrees with the Korean 춘지 and with the node's own nameEn \"Yin Chunji\". \"Chunzhi\" would be 춘즈. Corrected to Chunji.",
+      "at": [
+        "trees[clan_id=c784-b300-b9bc-6797].nodes[id=FH-K1011-M-03].name"
+      ]
+    },
+    {
+      "from": "Song Jaeseob",
+      "to": "Song Jaeseop",
+      "reason": "Wrong romanization of the Korean name; family_tree historical node 송재섭: a final ㅂ is \"p\" in RR (cf. surname Seop, 섭). Jaeseop.",
+      "at": [
+        "trees[clan_id=d5c8-d558-c591-8a31].nodes[id=FH-K728-M-02].name"
+      ]
+    },
+    {
+      "from": "Yeongdeungpo District",
+      "to": "Yeongdeungpo-gu",
+      "reason": "영등포구 is the only one of the 25 gu rendered \"District\"; the other 24 use the administrative romanization \"-gu\" (map_region.district, map_station.district, duchy map_title). Official Yeongdeungpo-gu.",
+      "at": [
+        "geography.regions[id=region:1156051500].district",
+        "geography.regions[id=region:1156053500].district",
+        "geography.regions[id=region:1156054000].district",
+        "geography.regions[id=region:1156055000].district",
+        "geography.regions[id=region:1156056000].district",
+        "geography.regions[id=region:1156058500].district",
+        "geography.regions[id=region:1156060500].district",
+        "geography.regions[id=region:1156061000].district",
+        "geography.regions[id=region:1156062000].district",
+        "geography.regions[id=region:1156063000].district",
+        "geography.regions[id=region:1156065000].district",
+        "geography.regions[id=region:1156066000].district",
+        "geography.regions[id=region:1156067000].district",
+        "geography.regions[id=region:1156068000].district",
+        "geography.regions[id=region:1156069000].district",
+        "geography.regions[id=region:1156070000].district",
+        "geography.regions[id=region:1156071000].district",
+        "geography.regions[id=region:1156072000].district",
+        "geography.stations[id=Yeongdeungpo].district",
+        "geography.stations[id=구로디지털단지].district",
+        "geography.stations[id=국회의사당].district",
+        "geography.stations[id=당산].district",
+        "geography.stations[id=대방].district",
+        "geography.stations[id=도림천].district",
+        "geography.stations[id=문래].district",
+        "geography.stations[id=보라매].district",
+        "geography.stations[id=보라매공원].district",
+        "geography.stations[id=샛강].district",
+        "geography.stations[id=서울지방병무청].district",
+        "geography.stations[id=선유도].district",
+        "geography.stations[id=신길].district",
+        "geography.stations[id=신풍].district",
+        "geography.stations[id=여의나루].district",
+        "geography.stations[id=여의도].district",
+        "geography.stations[id=영등포구청].district",
+        "geography.stations[id=영등포시장].district",
+        "geography.titles[id=geography:duchy:11560].name"
+      ]
+    },
+    {
+      "from": "Olyun-dong",
+      "to": "Oryun-dong",
+      "reason": "map_region 오륜동: 륜 is \"ryun\" in RR. The data itself writes Dunchon Oryun station and Oryun elsewhere. Official Oryun-dong.",
+      "at": [
+        "geography.regions[id=region:1171056600].name"
+      ]
+    },
+    {
+      "from": "Geumcheon District Office",
+      "to": "Geumcheon-gu Office",
+      "reason": "map_station 금천구청: \"District\" breaks the X-gu Office pattern of the other gu-office stations. Official Geumcheon-gu Office (Seoul-Station-Catalog).",
+      "at": [
+        "geography.stations[id=금천구청].name"
+      ]
+    },
+    {
+      "from": "Male",
+      "to": "Namseong",
+      "reason": "map_station 남성 (Line 7 Namseong): the place name was machine-translated as the word 남성 \"male\" instead of romanized. Official station name Namseong (Seoul-Station-Catalog 영문 column; the station control deltaId already reads S08-TRANSFER-2126-Namseong).",
+      "at": [
+        "geography.stations[id=남성].name"
+      ]
+    },
+    {
+      "from": "Magoknaru",
+      "to": "Magongnaru",
+      "reason": "map_station 마곡나루: nasal assimilation is missing (곡+나 is pronounced [공나]). The rest of the data applies it. Official Magongnaru (Seoul-Station-Catalog).",
+      "at": [
+        "geography.stations[id=마곡나루].name"
+      ]
+    },
+    {
+      "from": "Mapogucheong",
+      "to": "Mapo-gu Office",
+      "reason": "map_station 마포구청: untranslated, unlike the other gu-office stations (Gangnam-gu Office, Gangdong-gu Office, Yangcheon-gu Office, Yeongdeungpo-gu Office). Official Mapo-gu Office (Seoul-Station-Catalog; the lore already says \"Mapo-gu Office Station\").",
+      "at": [
+        "geography.stations[id=마포구청].name"
+      ]
+    },
+    {
+      "from": "Ollimpikgongwon",
+      "to": "Olympic Park",
+      "reason": "map_station 올림픽공원: the English loanword \"Olympic\" was romanized back from its Hangul spelling. Official Olympic Park (Seoul-Station-Catalog; the station summary already says \"Olympic Park Station\").",
+      "at": [
+        "geography.stations[id=올림픽공원].name"
+      ]
+    },
+    {
+      "from": "Yong Du",
+      "to": "Yongdu",
+      "reason": "map_station 용두 (Line 2 branch): a one-word place name split as if it were a surname and a given name. Official Yongdu (Seoul-Station-Catalog). The person 용두 (person-0263, surname 용 + given name 두) stays \"Yong Du\".",
+      "at": [
+        "geography.stations[id=용두].name"
+      ]
+    },
+    {
+      "from": "Woldeukeopgyeonggijang",
+      "to": "World Cup Stadium",
+      "reason": "map_station 월드컵경기장: the English loanword \"World Cup\" was romanized back from Hangul. Official World Cup Stadium (Seoul-Station-Catalog; the lore already says \"World Cup Stadium Station\").",
+      "at": [
+        "geography.stations[id=월드컵경기장].name"
+      ]
+    },
+    {
+      "from": "Hakyeoul",
+      "to": "Hangnyeoul",
+      "reason": "map_station 학여울: letter-by-letter transliteration. The data elsewhere applies RR sound changes (Gongneung, Dongnimmun, Seolleung). Official Hangnyeoul (Seoul-Station-Catalog).",
+      "at": [
+        "geography.stations[id=학여울].name"
+      ]
+    }
+  ]
+}

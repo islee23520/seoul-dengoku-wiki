@@ -5211,18 +5211,18 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 
 ## G12 · Sinnae Deserters
 
-- Modern anxiety: The Sinnae Transport freight duty places the duty desk on the clean-section side, away from the elevator. The duty keeps the dust-passage latch locked and leaves the gallery-side lamp on. The Sluice water-supply duty is in front of the backwash valve inside the fully sealed clean section. The Geumcheon District Office Machinery House machine duty closes the lift-panel cover and sets a cage in front of the panel.
+- Modern anxiety: The Sinnae Transport freight duty places the duty desk on the clean-section side, away from the elevator. The duty keeps the dust-passage latch locked and leaves the gallery-side lamp on. The Sluice water-supply duty is in front of the backwash valve inside the fully sealed clean section. The Geumcheon-gu Office Machinery House machine duty closes the lift-panel cover and sets a cage in front of the panel.
 - Origin: The Sinnae Transport freight duty first sees this group on a blizzard-week night in the dust passage of the Sinnae freight elevator. Several soldiers in combat uniforms stand in the passage. Rifles are on their shoulders. Ammunition boxes and water cans are at their feet. The insignia on the shoulders are the insignia of a national military organization.
 - Territory: The place where the group gathers is the dust passage of the Sinnae freight elevator. On the water-wash cycle and the purification backwash schedule they stand before the Yeouido water-filter gallery hatch. On days when dust comes in from the West Sea Granary docks they stand at the outer-passage entrance. In front of the fully sealed clean section they remain on the entrance side, and the inside of the section is the duty''s place.
-- Economy: Ammunition boxes, combat-ration tins, water cans, spare combat uniforms, and radio batteries lie between the freight elevator car and the filter gallery. The Sinnae Transport freight list is at the end of the table, and lines are drawn in its quantity columns. The Sluice water-supply duty''s gallery water cans are in the same car. A tool box from the Geumcheon District Office Machinery House is open beside the lift panel. The Ichaeon duty''s box is beside the radio.
+- Economy: Ammunition boxes, combat-ration tins, water cans, spare combat uniforms, and radio batteries lie between the freight elevator car and the filter gallery. The Sinnae Transport freight list is at the end of the table, and lines are drawn in its quantity columns. The Sluice water-supply duty''s gallery water cans are in the same car. A tool box from the Geumcheon-gu Office Machinery House is open beside the lift panel. The Ichaeon duty''s box is beside the radio.
 - Life cycle: On a blizzard-week night a few soldiers stand at the passage corner. In the convoy-season wash cycle more soldiers wearing the same unit insignia, and more wooden boxes, are in the elevator car. At dawn while the backwash runs, the group is divided between the landing and the front of the Yeouido water-filter gallery hatch.
 - Senses: The Sinnae Deserters watch the threshold of the Sinnae freight-elevator dust passage and the hatch of the Yeouido water-filter gallery. The soldier at the threshold faces the Sinnae Transport freight car, and the soldier at the hatch faces the Sluice backwash piping. When dust from the West Sea Granary docks piles in the outer passage, the Deserter Scouts at the entrance face the dock side.
 - Hierarchy: The Deserter Squad Leader is in front of the radio on the landing table. The Deserter Elite Squad is at the rail and the elevator door. The Deserter Scouts are at the dust-passage entrance and at the Yeouido water-filter gallery hatch. Ammunition boxes and water cans are at the squad leader''s feet, and magazines are at the Deserter Elite Squad''s hands.
 - Links: {"corporations_successor_only":["HC12"],"houses":["HC12"],"states":["government","free-city"],"synthetics":["H12"],"theaters":["XT02"]}
 - Escalation 1-3: In the same dust passage the sight has changed three times. At first a soldier with a rifle stands at the passage corner. Next the Deserter Elite Squad is at the landing rail, and a machine gun and ammunition boxes are on the rail. At the last the Deserter Squad Leader stands before the freight car and before the filter-gallery stair. Dust from the West Sea Granary docks lies on the passage floor, and the squad leader and the Deserter Scouts face the outer side.
-- Combat: The Sinnae Transport freight duty keeps the elevator door shut and the freight power down at the lift panel. The duty stacks freight cages at the car entrance. The Sluice water-supply duty keeps the gallery hatch locked at the hour on the backwash schedule. The Geumcheon District Office Machinery House machine duty stays at the panel with the breaker down.
-- Negotiation: The Sinnae Transport freight duty and the Sluice water-supply duty write the wash hour and the freight-car hour on one sheet. The Geumcheon District Office Machinery House machine duty is at the lift panel at that hour. The Ichaeon duty is beside the box on the landing table. The West Sea Granary Theater dock duty writes the dust hour in the lower column of the same sheet.
-- Moral cost: The Sinnae Transport freight duty remains on the landing on the night the car is blocked. That night''s freight car stays at the landing. The Sluice water-supply duty''s gallery water cans are in the deserters'' water-can line. The backwash water of the Yeouido water-filter gallery stays in front of the valve. The Geumcheon District Office Machinery House machine duty stands at the breaker on the same level as the machine gun on the rail.
+- Combat: The Sinnae Transport freight duty keeps the elevator door shut and the freight power down at the lift panel. The duty stacks freight cages at the car entrance. The Sluice water-supply duty keeps the gallery hatch locked at the hour on the backwash schedule. The Geumcheon-gu Office Machinery House machine duty stays at the panel with the breaker down.
+- Negotiation: The Sinnae Transport freight duty and the Sluice water-supply duty write the wash hour and the freight-car hour on one sheet. The Geumcheon-gu Office Machinery House machine duty is at the lift panel at that hour. The Ichaeon duty is beside the box on the landing table. The West Sea Granary Theater dock duty writes the dust hour in the lower column of the same sheet.
+- Moral cost: The Sinnae Transport freight duty remains on the landing on the night the car is blocked. That night''s freight car stays at the landing. The Sluice water-supply duty''s gallery water cans are in the deserters'' water-can line. The backwash water of the Yeouido water-filter gallery stays in front of the valve. The Geumcheon-gu Office Machinery House machine duty stands at the breaker on the same level as the machine gun on the rail.
 - Scenarios: [G12-SC1](/wiki/Hostile-Group-G12/), [G12-SC2](/wiki/Hostile-Group-G12/), [G12-SC3](/wiki/Hostile-Group-G12/)
 
 <a id="Hostile-Ecology-Index-heading-0300"></a>
@@ -5230,12 +5230,12 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G12-SC1 · Dust-passage landing
 
 - Stage: 1
-- Trigger: On a blizzard-week night the Sinnae Deserters stand with ammunition boxes in the dust passage of the Sinnae freight elevator. The lift panel of the Geumcheon District Office Machinery House is on. The Ichaeon duty''s box is on the landing table.
+- Trigger: On a blizzard-week night the Sinnae Deserters stand with ammunition boxes in the dust passage of the Sinnae freight elevator. The lift panel of the Geumcheon-gu Office Machinery House is on. The Ichaeon duty''s box is on the landing table.
 - Actors: government, HC12, H12
 - Ecological mechanism: The freight car, the lift panel, and the Ichaeon box are on one landing. The Deserter Squad Leader is in front of the radio. The Deserter Elite Squad is at the rail. The Sinnae Transport freight duty is at the threshold.
-- Choices: The Sinnae Transport freight duty stacks freight cages at the car entrance. / The Geumcheon District Office Machinery House machine duty puts the lift-panel breaker down. / The Ichaeon duty moves the box to the desk in the clean section.
+- Choices: The Sinnae Transport freight duty stacks freight cages at the car entrance. / The Geumcheon-gu Office Machinery House machine duty puts the lift-panel breaker down. / The Ichaeon duty moves the box to the desk in the clean section.
 - Outcomes: When the cages are stacked at the car entrance, the Sinnae Deserters are at the rail and the table. When the breaker is down, the elevator car is on that level and the machine duty is in front of the panel. When the Ichaeon box is on the clean-section desk, the Deserter Squad Leader''s radio is on the landing table.
-- Moral cost: The Sinnae Transport freight duty remains inside the cages. That night''s freight car is at the landing. The Geumcheon District Office Machinery House machine duty stands at the breaker on the same level as the machine gun on the rail.
+- Moral cost: The Sinnae Transport freight duty remains inside the cages. That night''s freight car is at the landing. The Geumcheon-gu Office Machinery House machine duty stands at the breaker on the same level as the machine gun on the rail.
 - Source dossier: G12
 
 <a id="Hostile-Ecology-Index-heading-0302"></a>
@@ -5243,10 +5243,10 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G12-SC2 · The hatch at the backwash hour
 
 - Stage: 2
-- Trigger: At a convoy-season dawn the backwash runs in the Yeouido water-filter gallery. The Deserter Scouts are in front of the hatch. The Sinnae freight elevator car is in the dust passage below. A power line runs from the lift panel of the Geumcheon District Office Machinery House to that car.
+- Trigger: At a convoy-season dawn the backwash runs in the Yeouido water-filter gallery. The Deserter Scouts are in front of the hatch. The Sinnae freight elevator car is in the dust passage below. A power line runs from the lift panel of the Geumcheon-gu Office Machinery House to that car.
 - Actors: government, free-city, HC12
-- Ecological mechanism: The wash cycle and the backwash schedule overlap on the same dawn. The Sluice water-supply duty is in front of the valve. The Sinnae Transport freight duty is beside the car. The Geumcheon District Office Machinery House machine duty is in front of the panel.
-- Choices: The Sluice water-supply duty locks the backwash valve at the hour on the schedule. / The Sinnae Transport freight duty fixes the freight car on the dust-passage level. / The Geumcheon District Office Machinery House machine duty separates the gallery auxiliary power from the lift panel.
+- Ecological mechanism: The wash cycle and the backwash schedule overlap on the same dawn. The Sluice water-supply duty is in front of the valve. The Sinnae Transport freight duty is beside the car. The Geumcheon-gu Office Machinery House machine duty is in front of the panel.
+- Choices: The Sluice water-supply duty locks the backwash valve at the hour on the schedule. / The Sinnae Transport freight duty fixes the freight car on the dust-passage level. / The Geumcheon-gu Office Machinery House machine duty separates the gallery auxiliary power from the lift panel.
 - Outcomes: When the valve is locked, the Deserter Scouts and the water-supply duty in front of the hatch stand at the same water''s edge. When the car is fixed on the dust-passage level, the Deserter Squad Leader is at that landing''s table. When the auxiliary power line lies outside the panel, the hatch lock is in the water-supply duty''s hand.
 - Moral cost: Backwash water pools in front of the valve. The water-supply duty''s water cans are in the Deserter Scouts'' line beside the hatch. The combat-ration tins from the freight car are on the landing.
 - Source dossier: G12
@@ -5256,10 +5256,10 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G12-SC3 · The outer side of the dock dust
 
 - Stage: 3
-- Trigger: Dust from the West Sea Granary docks is piled on the floor of the outer passage of the Sinnae freight elevator. The Deserter Scouts are at the outer entrance. The Sluice water-supply duty, the Sinnae Transport freight duty, the Geumcheon District Office Machinery House machine duty, and the Ichaeon duty are in front of the same hour sheet.
+- Trigger: Dust from the West Sea Granary docks is piled on the floor of the outer passage of the Sinnae freight elevator. The Deserter Scouts are at the outer entrance. The Sluice water-supply duty, the Sinnae Transport freight duty, the Geumcheon-gu Office Machinery House machine duty, and the Ichaeon duty are in front of the same hour sheet.
 - Actors: government, free-city, XT02, HC12, H12
 - Ecological mechanism: While the dust is in the outer passage, the Deserter Squad Leader is in front of the radio. The Deserter Elite Squad is at the rail. The Deserter Scouts are at the entrance. The dust hour of the West Sea Granary Theater dock duty is written in the lower column of the landing sheet.
-- Choices: The West Sea Granary Theater dock duty closes the dock entrance door. / The Sluice water-supply duty locks the Yeouido water-filter gallery hatch. / The Sinnae Transport freight duty, the Geumcheon District Office Machinery House machine duty, and the Ichaeon duty place the cage, the breaker handle, and the box in the fully sealed clean section.
+- Choices: The West Sea Granary Theater dock duty closes the dock entrance door. / The Sluice water-supply duty locks the Yeouido water-filter gallery hatch. / The Sinnae Transport freight duty, the Geumcheon-gu Office Machinery House machine duty, and the Ichaeon duty place the cage, the breaker handle, and the box in the fully sealed clean section.
 - Outcomes: When the dock entrance door is closed, the dust is in the passage inside the door and the Deserter Scouts are in front of the door. When the gallery hatch is locked, the Deserter Scouts are divided between the front of the hatch and the outer entrance, and the water-supply duty is in front of the valve. When the cage, the breaker, and the box are in the clean section, the Sinnae Deserters are on the dust-passage landing.
 - Moral cost: The dock''s freight sacks are inside the entrance door. The gallery backwash stays in front of the valve. The three duties of the clean section are inside the cage, and the dust in the outer passage is piled to the height of the boots.
 - Source dossier: G12
@@ -26301,7 +26301,7 @@ The branches are posts inside the one group of Sinnae Deserters. The Deserter Sq
 |---|---|
 | Origin | The Sinnae Transport freight duty first sees this group on a blizzard-week night in the dust passage of the Sinnae freight elevator. Several soldiers in combat uniforms stand in the passage. Rifles are on their shoulders. Ammunition boxes and water cans are at their feet. The insignia on the shoulders are the insignia of a national military organization. |
 | Habitat and movement | The place where the group gathers is the dust passage of the Sinnae freight elevator. On the water-wash cycle and the purification backwash schedule they stand before the Yeouido water-filter gallery hatch. On days when dust comes in from the West Sea Granary docks they stand at the outer-passage entrance. In front of the fully sealed clean section they remain on the entrance side, and the inside of the section is the duty''s place. |
-| Food and energy | Ammunition boxes, combat-ration tins, water cans, spare combat uniforms, and radio batteries lie between the freight elevator car and the filter gallery. The Sinnae Transport freight list is at the end of the table, and lines are drawn in its quantity columns. The Sluice water-supply duty''s gallery water cans are in the same car. A tool box from the Geumcheon District Office Machinery House is open beside the lift panel. The Ichaeon duty''s box is beside the radio. |
+| Food and energy | Ammunition boxes, combat-ration tins, water cans, spare combat uniforms, and radio batteries lie between the freight elevator car and the filter gallery. The Sinnae Transport freight list is at the end of the table, and lines are drawn in its quantity columns. The Sluice water-supply duty''s gallery water cans are in the same car. A tool box from the Geumcheon-gu Office Machinery House is open beside the lift panel. The Ichaeon duty''s box is beside the radio. |
 | Life cycle and upkeep | On a blizzard-week night a few soldiers stand at the passage corner. In the convoy-season wash cycle more soldiers wearing the same unit insignia, and more wooden boxes, are in the elevator car. At dawn while the backwash runs, the group is divided between the landing and the front of the Yeouido water-filter gallery hatch. |
 | Senses | The Sinnae Deserters watch the threshold of the Sinnae freight-elevator dust passage and the hatch of the Yeouido water-filter gallery. The soldier at the threshold faces the Sinnae Transport freight car, and the soldier at the hatch faces the Sluice backwash piping. When dust from the West Sea Granary docks piles in the outer passage, the Deserter Scouts at the entrance face the dock side. |
 | Group behavior | The Deserter Squad Leader is in front of the radio on the landing table. The Deserter Elite Squad is at the rail and the elevator door. The Deserter Scouts are at the dust-passage entrance and at the Yeouido water-filter gallery hatch. Ammunition boxes and water cans are at the squad leader''s feet, and magazines are at the Deserter Elite Squad''s hands. |
@@ -26314,7 +26314,7 @@ The branches are posts inside the one group of Sinnae Deserters. The Deserter Sq
 
 ## Individuals and battlefield formation
 
-Command is with the Deserter Squad Leader on the landing of the Sinnae freight elevator. The Deserter Elite Squad''s sector is the rail, the door, and the fire lane of the dust passage. The Deserter Scouts'' sector is the outer entrance, the Yeouido water-filter gallery hatch, and the passage reached by dust from the West Sea Granary docks. The lift panel of the Geumcheon District Office Machinery House and the Ichaeon duty''s box are on the same landing.
+Command is with the Deserter Squad Leader on the landing of the Sinnae freight elevator. The Deserter Elite Squad''s sector is the rail, the door, and the fire lane of the dust passage. The Deserter Scouts'' sector is the outer entrance, the Yeouido water-filter gallery hatch, and the passage reached by dust from the West Sea Granary docks. The lift panel of the Geumcheon-gu Office Machinery House and the Ichaeon duty''s box are on the same landing.
 
 | Individual | Type | Battlefield unit | Battlefield role | Former role class | Source batch |
 |---|---|---|---|---|---|
@@ -26403,13 +26403,13 @@ The Sinnae Deserters watch the dust-passage threshold and the gallery hatch. The
 
 The place where the group gathers is the dust passage of the Sinnae freight elevator. On the water-wash cycle and the purification backwash schedule they stand before the Yeouido water-filter gallery hatch. On days when dust comes in from the West Sea Granary docks they stand in the outer passage. In front of the fully sealed clean section they remain at the entrance, and the inside of the section is the duty''s place.
 
-Ammunition boxes, combat-ration tins, water cans, spare combat uniforms, and radio batteries are between the elevator car and the filter gallery. The Sinnae Transport freight list is on the table, and lines are drawn in the quantity columns. The Sluice water-supply duty''s gallery water cans are in the same car. A tool box from the Geumcheon District Office Machinery House is open beside the lift panel. The Ichaeon duty''s box is beside the radio.
+Ammunition boxes, combat-ration tins, water cans, spare combat uniforms, and radio batteries are between the elevator car and the filter gallery. The Sinnae Transport freight list is on the table, and lines are drawn in the quantity columns. The Sluice water-supply duty''s gallery water cans are in the same car. A tool box from the Geumcheon-gu Office Machinery House is open beside the lift panel. The Ichaeon duty''s box is beside the radio.
 
-The Sinnae Transport freight duty and the Sluice water-supply duty write the wash hour and the freight-car hour on one sheet. The Geumcheon District Office Machinery House machine duty is at the lift panel at that hour. The Ichaeon duty is beside the box on the landing table. The West Sea Granary Theater dock duty writes the dust hour in the lower column of the sheet.
+The Sinnae Transport freight duty and the Sluice water-supply duty write the wash hour and the freight-car hour on one sheet. The Geumcheon-gu Office Machinery House machine duty is at the lift panel at that hour. The Ichaeon duty is beside the box on the landing table. The West Sea Granary Theater dock duty writes the dust hour in the lower column of the sheet.
 
 In the same dust passage the sight has changed three times. At first a soldier with a rifle is at the passage corner. Next the Deserter Elite Squad is at the rail, and a machine gun and ammunition boxes are on the rail. At the last the Deserter Squad Leader stands before the freight car and before the filter-gallery stair. Dust from the West Sea Granary docks lies on the floor, and the squad leader and the Deserter Scouts face the outer side.
 
-The Sinnae Transport freight duty keeps the elevator door shut and the freight power down at the panel. Freight cages are stacked at the car entrance. The Sluice water-supply duty keeps the gallery hatch locked at the backwash hour. The Geumcheon District Office Machinery House machine duty is in front of the panel with the breaker down. The freight duty''s desk is on the clean-section side, and the gallery lamp is on. The water-supply duty is in front of the valve inside the fully sealed clean section. The freight duty remains on the landing on the night the car is blocked, the gallery water cans are in the deserters'' water-can line, and the backwash water stays in front of the valve.
+The Sinnae Transport freight duty keeps the elevator door shut and the freight power down at the panel. Freight cages are stacked at the car entrance. The Sluice water-supply duty keeps the gallery hatch locked at the backwash hour. The Geumcheon-gu Office Machinery House machine duty is in front of the panel with the breaker down. The freight duty''s desk is on the clean-section side, and the gallery lamp is on. The water-supply duty is in front of the valve inside the fully sealed clean section. The freight duty remains on the landing on the night the car is blocked, the gallery water cans are in the deserters'' water-can line, and the backwash water stays in front of the valve.
 
 <a id="Hostile-Group-G12-heading-0032"></a>
 
@@ -26420,12 +26420,12 @@ The Sinnae Transport freight duty keeps the elevator door shut and the freight p
 ### G12-SC1 · Dust-passage landing
 
 - Stage: 1
-- Trigger: On a blizzard-week night the Sinnae Deserters stand with ammunition boxes in the dust passage of the Sinnae freight elevator. The lift panel of the Geumcheon District Office Machinery House is on. The Ichaeon duty''s box is on the landing table.
+- Trigger: On a blizzard-week night the Sinnae Deserters stand with ammunition boxes in the dust passage of the Sinnae freight elevator. The lift panel of the Geumcheon-gu Office Machinery House is on. The Ichaeon duty''s box is on the landing table.
 - Actors: government, HC12, H12
 - Ecological mechanism: The freight car, the lift panel, and the Ichaeon box are on one landing. The Deserter Squad Leader is in front of the radio. The Deserter Elite Squad is at the rail. The Sinnae Transport freight duty is at the threshold.
-- Choices: The Sinnae Transport freight duty stacks freight cages at the car entrance. / The Geumcheon District Office Machinery House machine duty puts the lift-panel breaker down. / The Ichaeon duty moves the box to the desk in the clean section.
+- Choices: The Sinnae Transport freight duty stacks freight cages at the car entrance. / The Geumcheon-gu Office Machinery House machine duty puts the lift-panel breaker down. / The Ichaeon duty moves the box to the desk in the clean section.
 - Outcomes: When the cages are stacked at the car entrance, the Sinnae Deserters are at the rail and the table. When the breaker is down, the elevator car is on that level and the machine duty is in front of the panel. When the Ichaeon box is on the clean-section desk, the Deserter Squad Leader''s radio is on the landing table.
-- Moral cost: The Sinnae Transport freight duty remains inside the cages. That night''s freight car is at the landing. The Geumcheon District Office Machinery House machine duty stands at the breaker on the same level as the machine gun on the rail.
+- Moral cost: The Sinnae Transport freight duty remains inside the cages. That night''s freight car is at the landing. The Geumcheon-gu Office Machinery House machine duty stands at the breaker on the same level as the machine gun on the rail.
 - Source dossier: G12
 
 <a id="Hostile-Group-G12-heading-0035"></a>
@@ -26433,10 +26433,10 @@ The Sinnae Transport freight duty keeps the elevator door shut and the freight p
 ### G12-SC2 · The hatch at the backwash hour
 
 - Stage: 2
-- Trigger: At a convoy-season dawn the backwash runs in the Yeouido water-filter gallery. The Deserter Scouts are in front of the hatch. The Sinnae freight elevator car is in the dust passage below. A power line runs from the lift panel of the Geumcheon District Office Machinery House to that car.
+- Trigger: At a convoy-season dawn the backwash runs in the Yeouido water-filter gallery. The Deserter Scouts are in front of the hatch. The Sinnae freight elevator car is in the dust passage below. A power line runs from the lift panel of the Geumcheon-gu Office Machinery House to that car.
 - Actors: government, free-city, HC12
-- Ecological mechanism: The wash cycle and the backwash schedule overlap on the same dawn. The Sluice water-supply duty is in front of the valve. The Sinnae Transport freight duty is beside the car. The Geumcheon District Office Machinery House machine duty is in front of the panel.
-- Choices: The Sluice water-supply duty locks the backwash valve at the hour on the schedule. / The Sinnae Transport freight duty fixes the freight car on the dust-passage level. / The Geumcheon District Office Machinery House machine duty separates the gallery auxiliary power from the lift panel.
+- Ecological mechanism: The wash cycle and the backwash schedule overlap on the same dawn. The Sluice water-supply duty is in front of the valve. The Sinnae Transport freight duty is beside the car. The Geumcheon-gu Office Machinery House machine duty is in front of the panel.
+- Choices: The Sluice water-supply duty locks the backwash valve at the hour on the schedule. / The Sinnae Transport freight duty fixes the freight car on the dust-passage level. / The Geumcheon-gu Office Machinery House machine duty separates the gallery auxiliary power from the lift panel.
 - Outcomes: When the valve is locked, the Deserter Scouts and the water-supply duty in front of the hatch stand at the same water''s edge. When the car is fixed on the dust-passage level, the Deserter Squad Leader is at that landing''s table. When the auxiliary power line lies outside the panel, the hatch lock is in the water-supply duty''s hand.
 - Moral cost: Backwash water pools in front of the valve. The water-supply duty''s water cans are in the Deserter Scouts'' line beside the hatch. The combat-ration tins from the freight car are on the landing.
 - Source dossier: G12
@@ -26446,10 +26446,10 @@ The Sinnae Transport freight duty keeps the elevator door shut and the freight p
 ### G12-SC3 · The outer side of the dock dust
 
 - Stage: 3
-- Trigger: Dust from the West Sea Granary docks is piled on the floor of the outer passage of the Sinnae freight elevator. The Deserter Scouts are at the outer entrance. The Sluice water-supply duty, the Sinnae Transport freight duty, the Geumcheon District Office Machinery House machine duty, and the Ichaeon duty are in front of the same hour sheet.
+- Trigger: Dust from the West Sea Granary docks is piled on the floor of the outer passage of the Sinnae freight elevator. The Deserter Scouts are at the outer entrance. The Sluice water-supply duty, the Sinnae Transport freight duty, the Geumcheon-gu Office Machinery House machine duty, and the Ichaeon duty are in front of the same hour sheet.
 - Actors: government, free-city, XT02, HC12, H12
 - Ecological mechanism: While the dust is in the outer passage, the Deserter Squad Leader is in front of the radio. The Deserter Elite Squad is at the rail. The Deserter Scouts are at the entrance. The dust hour of the West Sea Granary Theater dock duty is written in the lower column of the landing sheet.
-- Choices: The West Sea Granary Theater dock duty closes the dock entrance door. / The Sluice water-supply duty locks the Yeouido water-filter gallery hatch. / The Sinnae Transport freight duty, the Geumcheon District Office Machinery House machine duty, and the Ichaeon duty place the cage, the breaker handle, and the box in the fully sealed clean section.
+- Choices: The West Sea Granary Theater dock duty closes the dock entrance door. / The Sluice water-supply duty locks the Yeouido water-filter gallery hatch. / The Sinnae Transport freight duty, the Geumcheon-gu Office Machinery House machine duty, and the Ichaeon duty place the cage, the breaker handle, and the box in the fully sealed clean section.
 - Outcomes: When the dock entrance door is closed, the dust is in the passage inside the door and the Deserter Scouts are in front of the door. When the gallery hatch is locked, the Deserter Scouts are divided between the front of the hatch and the outer entrance, and the water-supply duty is in front of the valve. When the cage, the breaker, and the box are in the clean section, the Sinnae Deserters are on the dust-passage landing.
 - Moral cost: The dock''s freight sacks are inside the entrance door. The gallery backwash stays in front of the valve. The three duties of the clean section are inside the cage, and the dust in the outer passage is piled to the height of the boots.
 - Source dossier: G12
@@ -43922,12 +43922,12 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Daeheung | Daeheung | 37.54770 | 126.94235 | Seoul Metropolitan Subway |
 | Dijiteolmidieositi | Digital Media City | 37.57740 | 126.89808 | Seoul Metropolitan Subway |
 | Mapo | Mapo | 37.53964 | 126.94599 | Seoul Metropolitan Subway |
-| Mapogucheong | Mapo-gu Office | 37.56356 | 126.90336 | Seoul Metropolitan Subway |
+| Mapo-gu Office | Mapo-gu Office | 37.56356 | 126.90336 | Seoul Metropolitan Subway |
 | Mangwon | Mangwon | 37.55603 | 126.91013 | Seoul Metropolitan Subway |
 | Sangsu | Sangsu | 37.54776 | 126.92289 | Seoul Metropolitan Subway |
 | Seogangdae | Sogang Univ. | 37.55235 | 126.93518 | Seoul Metropolitan Subway |
 | Aeogae | Aeogae | 37.55343 | 126.95670 | Seoul Metropolitan Subway |
-| Woldeukeopgyeonggijang | World Cup Stadium | 37.57019 | 126.89932 | Seoul Metropolitan Subway |
+| World Cup Stadium | World Cup Stadium | 37.57019 | 126.89932 | Seoul Metropolitan Subway |
 | Hapjeong | Hapjeong | 37.54936 | 126.91366 | Seoul Metropolitan Subway |
 | Hongdaeipgu | Hongik Univ. | 37.55735 | 126.92691 | Seoul Metropolitan Subway |
 
@@ -49322,7 +49322,7 @@ The table below links character IDs to people pages. Every character can be foun
 | K468 | [Gang Daryu](/wiki/people/person-0468/) |
 | K469 | [Jo Chaewon](/wiki/people/person-0469/) |
 | K470 | [Yun Soyul](/wiki/people/person-0470/) |
-| K471 | [Jang Dowon](/wiki/people/person-0471/) |
+| K471 | [Jang Dorwon](/wiki/people/person-0471/) |
 | K472 | [Im Geonu](/wiki/people/person-0472/) |
 | K473 | [Han Hyeonu](/wiki/people/person-0473/) |
 | K474 | [O Baseo](/wiki/people/person-0474/) |
@@ -49377,7 +49377,7 @@ The table below links character IDs to people pages. Every character can be foun
 | K523 | [Go Yujin](/wiki/people/person-0523/) |
 | K524 | [Mun Aeun](/wiki/people/person-0524/) |
 | K525 | [Yang Katae](/wiki/people/person-0525/) |
-| K526 | [Pavel Nemets](/wiki/people/person-0526/) |
+| K526 | [Pavel Němec](/wiki/people/person-0526/) |
 | K527 | [Bae Dong-min](/wiki/people/person-0527/) |
 | K528 | [Baek Buk-rae](/wiki/people/person-0528/) |
 | K529 | [Heo Eun-seo](/wiki/people/person-0529/) |
@@ -49409,7 +49409,7 @@ The table below links character IDs to people pages. Every character can be foun
 | K555 | [Seo Guseo](/wiki/people/person-0555/) |
 | K556 | [Sin Gangmin](/wiki/people/person-0556/) |
 | K557 | [Gwon Supyun](/wiki/people/person-0557/) |
-| K558 | [Millicent Mensa](/wiki/people/person-0558/) |
+| K558 | [Millicent Mensah](/wiki/people/person-0558/) |
 | K559 | [An Naneul](/wiki/people/person-0559/) |
 | K560 | [Song Maji](/wiki/people/person-0560/) |
 | K561 | [Ryu Ahyeon](/wiki/people/person-0561/) |
@@ -49457,7 +49457,7 @@ The table below links character IDs to people pages. Every character can be foun
 | K603 | [Go Byeolho](/wiki/people/person-0603/) |
 | K604 | [Mun Bitmin](/wiki/people/person-0604/) |
 | K605 | [Yang Santae](/wiki/people/person-0605/) |
-| K606 | [Simon Kaminski](/wiki/people/person-0606/) |
+| K606 | [Simon Kamiński](/wiki/people/person-0606/) |
 | K607 | [Bae Bawon](/wiki/people/person-0607/) |
 | K608 | [Baek Garae](/wiki/people/person-0608/) |
 | K609 | [Heo Rau](/wiki/people/person-0609/) |
@@ -49489,10 +49489,10 @@ The table below links character IDs to people pages. Every character can be foun
 | K635 | [Seo Aseo](/wiki/people/person-0635/) |
 | K636 | [Sin Kabin](/wiki/people/person-0636/) |
 | K637 | [Gwon Harin](/wiki/people/person-0637/) |
-| K638 | [Zofia Dobrowska](/wiki/people/person-0638/) |
+| K638 | [Zofia Dąbrowska](/wiki/people/person-0638/) |
 | K639 | [An Bungmin](/wiki/people/person-0639/) |
 | K640 | [Song Byeolhyeon](/wiki/people/person-0640/) |
-| K641 | [Ryu Bipyeon](/wiki/people/person-0641/) |
+| K641 | [Ryu Bichyeon](/wiki/people/person-0641/) |
 | K642 | [Hong Sanwon](/wiki/people/person-0642/) |
 | K643 | [Go Dajin](/wiki/people/person-0643/) |
 | K644 | [Mun Baeun](/wiki/people/person-0644/) |
@@ -49713,7 +49713,7 @@ The table below links character IDs to people pages. Every character can be foun
 | K859 | [Choe Baa](/wiki/people/person-0859/) |
 | K860 | [Jeong Gajun](/wiki/people/person-0860/) |
 | K861 | [Gang Rajun](/wiki/people/person-0861/) |
-| K862 | [Viktor Stanescu](/wiki/people/person-0862/) |
+| K862 | [Viktor Stănescu](/wiki/people/person-0862/) |
 | K863 | [Yun Chayul](/wiki/people/person-0863/) |
 | K864 | [Jang Parin](/wiki/people/person-0864/) |
 | K865 | [Im Eunna](/wiki/people/person-0865/) |
@@ -49809,7 +49809,7 @@ The table below links character IDs to people pages. Every character can be foun
 | K955 | [Baek Arae](/wiki/people/person-0955/) |
 | K956 | [Heo Kau](/wiki/people/person-0956/) |
 | K957 | [Yu Hahun](/wiki/people/person-0957/) |
-| K958 | [Barbora Prohaskova](/wiki/people/person-0958/) |
+| K958 | [Barbora Procházková](/wiki/people/person-0958/) |
 | K959 | [Sim Bukhyeon](/wiki/people/person-0959/) |
 | K960 | [No Byeora](/wiki/people/person-0960/) |
 | K961 | [Ha Bicheun](/wiki/people/person-0961/) |
@@ -49841,7 +49841,7 @@ The table below links character IDs to people pages. Every character can be foun
 | K987 | [Hong Ramwon](/wiki/people/person-0987/) |
 | K988 | [Go Najin](/wiki/people/person-0988/) |
 | K989 | [Mun Maeun](/wiki/people/person-0989/) |
-| K990 | [Isabel Garcia](/wiki/people/person-0990/) |
+| K990 | [Isabel García](/wiki/people/person-0990/) |
 | K991 | [Son Kaho](/wiki/people/person-0991/) |
 | K992 | [Bae Hamin](/wiki/people/person-0992/) |
 | K993 | [Baek Dongrae](/wiki/people/person-0993/) |
@@ -50930,7 +50930,7 @@ This ledger gathers operating organisations, old records of theatres outside Seo
 | Guro Digital Complex Battery House | supply-partner | Magok Test-Line House | the battery-cell supply contract was bound to audit rights over the energy-storage depot |
 | Digital Media City Index House | platform-rivalry | Digital Media City Payments House | the search index and the message relay competed for the Sangam transmission band |
 | Magok Seed House | affiliate | Yongsan Convoy House | kindred food-supply and transport contracts split the Garak auction-floor volume |
-| Yongsan Ship House | build-contract | Geumcheon District Office Machinery House | container ship-repair payments traded against rights to the Yongsan riverside wharf |
+| Yongsan Ship House | build-contract | Geumcheon-gu Office Machinery House | container ship-repair payments traded against rights to the Yongsan riverside wharf |
 | Dongdaeipgu Trading House | retail-rivalry | Seoul Station Inventory House | bids split over protocol goods at Seoul Station and access to the bonded warehouse |
 ', '<a id="World-Relation-Ledger-heading-0001"></a>
 
