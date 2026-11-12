@@ -55,54 +55,54 @@ const raw = {
 // Owner decision 2026-11-10: how each faction is governed. Titles (duchies) are held per district (gu).
 const FACTION_STRUCTURE = {
   government: {
-    en: 'Fourteen districts north of the Han river. Each district elects a National Assembly member, and each member holds that district\'s duchy under the title Senator. The Senators act like the prince-electors of the Holy Roman Empire: they gather candidates from among themselves and elect the President, who serves for life. Two parties compete: the OMO Party and the Claw Party.',
-    ko: '한강 이북 14개 구. 각 구가 국회의원을 뽑고, 그 의원이 해당 구의 공작위를 가지며 칭호는 Senator이다. Senator는 신성로마제국의 선제후처럼 자기들 중에서 후보를 모아 대통령을 선출하고, 대통령은 종신직이다. 정당은 OMO당과 Claw당 둘이다.',
+    en: 'Fourteen districts north of the Han river. On paper the Government keeps the ministries of the three branches of the Republic of Korea and a multi-party system; in practice there are only two parties, the OMO Party and the Claw Party, and the reality is a modern feudal order. The National Assembly member elected in each district holds that district\'s duchy under the title Senator. The Senators gather candidates from among themselves and elect the President, who serves for life, much like the prince-electors of the Holy Roman Empire. Only people recorded in the Government\'s own ledgers count as citizens.',
+    ko: '한강 북쪽 14구. 서류상으로는 대한민국의 삼권을 대표하는 부처와 다당제를 유지하지만, 실제로는 OMO당과 클로당 두 당뿐이고 실상은 현대 봉건제다. 각 구에서 뽑힌 국회의원이 그 구의 공작령을 쥐며 칭호는 상원의원(Senator)이다. 상원의원들은 신성로마제국의 선제후처럼 자기들 가운데서 후보를 모아 대통령을 내고, 대통령은 종신이다. 정부는 자기 장부에 기록된 사람만 국민으로 인정한다.',
   },
   'free-city': {
-    en: 'Seven districts south of the Han river (Gangseo, Yangcheon, Yeongdeungpo, Guro, Geumcheon, Dongjak, Gwanak). Every city is an independent power holding its own duchy. There is no king above them and no common ruler; the cities trade goods and skills as the Union.',
-    ko: '한강 이남의 7개 구(강서·양천·영등포·구로·금천·동작·관악). 각 도시가 공작위를 가진 개별 세력이며, 그 위에 왕도 공통 지도자도 없다. 도시들은 유니온으로서 물자와 기술을 주고받는다.',
+    en: 'Seven districts in the south-west (Gangseo, Yangcheon, Yeongdeungpo, Guro, Geumcheon, Dongjak, Gwanak). The Free City is not one power: like the city-states of ancient Greece, each city is its own power and holds its own duchy, and there is no king. Most people are engineers who trade goods and skills; with no way to tell whose skill is higher, they never chose a leader. Today the cities are called the Union together.',
+    ko: '남서쪽 7구(강서·양천·영등포·구로·금천·동작·관악). 하나의 권력이 아니라 고대 그리스 폴리스 같은 독립 도시국가들이다. 도시마다 각자 권력이고 각자 공작령을 쥐며, 왕은 없다. 주민 대부분은 물자와 기술을 주고받는 엔지니어이고, 누구 기술이 더 높은지 따질 방법이 없어 지도자도 뽑지 못했다. 지금은 묶어서 유니온이라고 부른다.',
   },
   arc: {
-    en: 'Four districts of Gangnam (Seocho, Gangnam, Songpa, Gangdong). A theocratic hierarchy centred on the head of the faith, the Hierophant (Go Ye-jin), in the manner of a Shia clan government. Followers replace body parts with machines.',
-    ko: '강남 4개 구(서초·강남·송파·강동). 교주(고예진)를 중심으로 한 신권 하이라키로, 시아파를 참조한 씨족정 방식이다. 신도는 몸을 기계로 바꾼다.',
+    en: 'Four districts of Gangnam (Seocho, Gangnam, Songpa, Gangdong), split off from the Free City. Go Ye-jin is the Messiah and the Hierophant, and Arc is governed by families in the manner of Shia clan rule. Followers replace parts of the body with machines; this is baptism.',
+    ko: '강남 4구(서초·강남·송파·강동). 자유도시에서 갈라져 나왔다. 고예진이 메시아이자 교주이며, 통치는 시아파식 가문 통치다. 신도는 몸의 부위를 기계로 바꾸고, 이것이 세례다.',
   },
 };
 const UI = {
   en: {
-    lang: 'en-US', label: 'English', prefix: '', wiki: 'Wiki', states: 'States', duchies: 'Duchies', orgs: 'Organizations (former states)', orgsNote: 'The sixteen-state chart is retired. Territory is now held as one duchy per district under three factions; the rows below are the organizations that used to be states.', factions: 'Factions', people: 'People', gdd: 'Design Docs (GDD)', showcase: 'Showcase',
+    lang: 'en-US', label: 'English', prefix: '', wiki: 'Wiki', states: 'Organizations', duchies: 'Duchies', orgs: 'Organizations (former states)', orgsNote: 'The sixteen-state chart is retired. Territory is now held as one duchy per district under three factions; the rows below are the organizations that used to be states.', factions: 'Factions', people: 'People', gdd: 'Design Docs (GDD)', showcase: 'Showcase',
     updates: 'Update History', wikiHome: 'Wiki Home', gddHome: 'GDD Home', designDocs: 'Design Docs', overview: 'Overview', onThisPage: 'On this page',
     prev: 'Previous page', next: 'Next page', menu: 'Menu', search: 'Search', noResults: 'No results for', reset: 'Reset search', toSelect: 'to select', toNavigate: 'to navigate', toClose: 'to close',
     appearance: 'Appearance', returnTop: 'Return to top', skip: 'Skip to content', footerMsg: 'Public world bible and game design documents.',
     heroText: 'World Bible & Game Design', openWiki: 'Open the Wiki', readGdd: 'Read the GDD', openShowcase: 'Watch the Showcase',
     showcaseCard: 'Interactive Showcase', showcaseDetail: 'A narrated, illustrated tour of the metro world. Korean voice with English subtitles.',
     openSource: 'Open Source', openSourceDetail: 'Everything is built from raw SQL data in the public repository.',
-    wikiLead: (n) => `${n} articles on the world, its states, people and history. Pick a category below or use the sidebar.`,
+    wikiLead: (n) => `${n} articles on the world, its factions, people and history. Pick a category below or use the sidebar.`,
     statesLead: (n, f) => `${f} factions rule the metro world: the Government, the Free City and Arc. Their domains are held as duchies, one per district.`,
     peopleLead: (n) => `${n} characters. Use the site search or your browser's find (Ctrl+F) to locate a name.`,
     gddLead: (n) => `${n} design documents: rules, architecture, art direction, decision records, references and system design.`,
-    cols: { id: 'ID', state: 'State', ruler: 'Ruler', capital: 'Capital', power: 'Power', faction: 'Faction', name: 'Name', title: 'Title', occupation: 'Occupation', rank: 'Rank' },
-    fields: { stateId: 'State ID', government: 'Government', power: 'Power', origin: 'Origin', ruler: 'Ruler', capital: 'Capital', faction: 'Faction', base: 'Base', position: 'Position', occupation: 'Occupation', gender: 'Gender', stage: 'Stage', state: 'State', rank: 'Rank', title: 'Title' },
-    members: 'Member states', centerRegion: 'Center', aiPosition: 'Stance toward AI', recorded: (n) => `${n} recorded people.`, independentNote: 'Affiliation is not yet decided in the canon.',
+    cols: { id: 'ID', state: 'Organization', ruler: 'Head', capital: 'Capital', power: 'Power', faction: 'Faction', name: 'Name', title: 'Title', occupation: 'Occupation', rank: 'Rank' },
+    fields: { stateId: 'Organization ID', government: 'Government', power: 'Power', origin: 'Origin', ruler: 'Head', capital: 'Capital', faction: 'Faction', base: 'Base', position: 'Position', occupation: 'Occupation', gender: 'Gender', stage: 'Stage', state: 'Organizations', rank: 'Rank', title: 'Title' },
+    members: 'Member organizations', centerRegion: 'Center', aiPosition: 'Stance toward AI', recorded: (n) => `${n} recorded people.`, independentNote: 'Affiliation is not yet decided in the canon.',
     featStates: (n) => `Three factions - the Government, the Free City and Arc - and the duchies they hold.`, featPeople: (n) => `${n} characters with ranks, occupations and allegiances.`,
     featWiki: (n) => `${n} articles on history, factions, ecology, culture and geography of a post-blackout Seoul.`, featGdd: (n) => `${n} documents covering rules, systems, art direction and decisions.`,
     featUpdates: 'What changed in the wiki and when.', tagline: meta.tagline, siteTitle: meta.title,
   },
   ko: {
-    lang: 'ko-KR', label: '한국어', prefix: 'ko/', wiki: '위키', states: '국가', duchies: '공작령', orgs: '단체 (옛 국가)', orgsNote: '십육국 체제는 폐지됐다. 영토는 이제 세 세력 아래 구 하나가 공작위 하나로 나뉜다. 아래 표는 옛 국가였던 단체들이다.', factions: '세력', people: '인물', gdd: '설계 문서(GDD)', showcase: '쇼케이스',
+    lang: 'ko-KR', label: '한국어', prefix: 'ko/', wiki: '위키', states: '단체', duchies: '공작령', orgs: '단체 (옛 국가)', orgsNote: '십육국 체제는 폐지됐다. 영토는 이제 세 세력 아래 구 하나가 공작령 하나로 나뉜다. 아래 표는 옛 국가였던 단체들이다.', factions: '세력', people: '인물', gdd: '설계 문서(GDD)', showcase: '쇼케이스',
     updates: '갱신 이력', wikiHome: '위키 홈', gddHome: 'GDD 홈', designDocs: '설계 문서', overview: '개요', onThisPage: '이 페이지에서',
     prev: '이전 문서', next: '다음 문서', menu: '메뉴', search: '검색', noResults: '결과 없음:', reset: '검색 초기화', toSelect: '선택', toNavigate: '이동', toClose: '닫기',
     appearance: '화면 모드', returnTop: '맨 위로', skip: '본문으로 건너뛰기', footerMsg: '공개 세계관 위키와 게임 설계 문서.',
     heroText: '세계관 위키 · 게임 설계', openWiki: '위키 열기', readGdd: 'GDD 읽기', openShowcase: '쇼케이스 보기',
     showcaseCard: '인터랙티브 쇼케이스', showcaseDetail: '지하철 세계를 돌아보는 음성 해설 투어. 한국어 음성과 영어 자막.',
     openSource: '오픈 소스', openSourceDetail: '모든 내용은 공개 저장소의 SQL 원본 데이터에서 빌드됩니다.',
-    wikiLead: (n) => `세계와 국가, 인물, 역사를 다룬 문서 ${n}개. 아래 분류에서 고르거나 사이드바를 이용하세요.`,
-    statesLead: (n, f) => `정부, 자유도시, Arc ${f}개 세력이 지하철 세계를 다스립니다. 영지는 구 하나가 공작위 하나로 나뉩니다.`,
+    wikiLead: (n) => `세계와 세력, 인물, 역사를 다룬 문서 ${n}개. 아래 분류에서 고르거나 사이드바를 이용하세요.`,
+    statesLead: (n, f) => `정부, 자유도시, 아크 ${f}개 세력이 지하철 세계를 다스립니다. 영지는 구 하나가 공작령 하나로 나뉩니다.`,
     peopleLead: (n) => `등장인물 ${n}명. 사이트 검색이나 브라우저 찾기(Ctrl+F)로 이름을 찾으세요.`,
     gddLead: (n) => `규칙, 아키텍처, 아트, 결정 기록, 레퍼런스, 시스템 설계 문서 ${n}개.`,
-    cols: { id: 'ID', state: '국가', ruler: '군주', capital: '수도', power: '국력', faction: '세력', name: '이름', title: '직함', occupation: '직업', rank: '직급' },
-    fields: { stateId: '국가 ID', government: '정체', power: '국력', origin: '기원', ruler: '군주', capital: '수도', faction: '세력', base: '거점', position: '직위', occupation: '직업', gender: '성별', stage: '단계', state: '국가', rank: '직급', title: '직함' },
-    members: '소속 국가', centerRegion: '중심 지역', aiPosition: 'AI에 대한 입장', recorded: (n) => `등록된 인물 ${n}명.`, independentNote: '정본에서 아직 소속이 정해지지 않았습니다.',
-    featStates: (n) => `정부, 자유도시, Arc 세 세력과 그들이 가진 공작령.`, featPeople: (n) => `직급, 직업, 소속을 가진 인물 ${n}명.`,
+    cols: { id: 'ID', state: '소속 단체', ruler: '수장', capital: '수도', power: '국력', faction: '세력', name: '이름', title: '직함', occupation: '직업', rank: '직급' },
+    fields: { stateId: '단체 ID', government: '정체', power: '국력', origin: '기원', ruler: '수장', capital: '수도', faction: '세력', base: '거점', position: '직위', occupation: '직업', gender: '성별', stage: '단계', state: '소속 단체', rank: '직급', title: '직함' },
+    members: '소속 단체', centerRegion: '중심 지역', aiPosition: 'AI에 대한 입장', recorded: (n) => `등록된 인물 ${n}명.`, independentNote: '정본에서 아직 소속이 정해지지 않았습니다.',
+    featStates: (n) => `정부, 자유도시, 아크 세 세력과 그들이 가진 공작령.`, featPeople: (n) => `직급, 직업, 소속을 가진 인물 ${n}명.`,
     featWiki: (n) => `대정전 이후 서울의 역사, 세력, 생태, 문화, 지리를 다룬 문서 ${n}개.`, featGdd: (n) => `규칙, 시스템, 아트 방향, 결정 기록을 담은 문서 ${n}개.`,
     featUpdates: '위키가 언제 무엇이 바뀌었는지.', tagline: meta.tagline_ko, siteTitle: meta.title_ko,
   },
@@ -183,7 +183,7 @@ for (const L of [UI.en, UI.ko]) {
   write(`${L.prefix}wiki/states/index.md`, page(L.factions, `# ${L.factions}\n\n${L.statesLead(states.length, factionCount)}\n\n${factions.filter((x) => x.id !== 'independent').map((x) => `## [${g(x, 'name')}](${P(`wiki/factions/${x.id}/`)})\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n- ${L.duchies}: ${duchiesOf(x.id).length} · ${L.people}: ${people.filter((p) => p.faction_id === x.id).length}\n`).join('\n')}
 \n---\n\n${L.orgsNote}`));
   // duchies: one per district (gu), faction by owner rule
-  write(`${L.prefix}wiki/duchies/index.md`, page(L.duchies, `# ${L.duchies}\n\n${L === UI.ko ? '구 하나가 공작위 하나다. 각 공작령은 세 세력 중 하나에 속한다.' : 'One duchy per district. Each duchy belongs to one of the three factions.'}\n\n| ${L === UI.ko ? '공작령' : 'Duchy'} | ${L.factions} | ${L === UI.ko ? '백작령' : 'Counties'} | ${L === UI.ko ? '역' : 'Stations'} |\n| --- | --- | --- | --- |\n${duchyRows.map((t) => `| [${g(t, 'name')}](${P(`wiki/duchies/${duchySlug(t)}/`)}) | [${cell(factionName(guFaction.get(t.name_ko)))}](${P(`wiki/factions/${guFaction.get(t.name_ko)}/`)}) | ${JSON.parse(t.county_ids).length} | ${stationsOfGu(t.name_ko)} |`).join('\n')}`));
+  write(`${L.prefix}wiki/duchies/index.md`, page(L.duchies, `# ${L.duchies}\n\n${L === UI.ko ? '구 하나가 공작령 하나다. 각 공작령은 세 세력 중 하나에 속한다.' : 'One duchy per district. Each duchy belongs to one of the three factions.'}\n\n| ${L === UI.ko ? '공작령' : 'Duchy'} | ${L.factions} | ${L === UI.ko ? '백작령' : 'Counties'} | ${L === UI.ko ? '역' : 'Stations'} |\n| --- | --- | --- | --- |\n${duchyRows.map((t) => `| [${g(t, 'name')}](${P(`wiki/duchies/${duchySlug(t)}/`)}) | [${cell(factionName(guFaction.get(t.name_ko)))}](${P(`wiki/factions/${guFaction.get(t.name_ko)}/`)}) | ${JSON.parse(t.county_ids).length} | ${stationsOfGu(t.name_ko)} |`).join('\n')}`));
   duchyRows.forEach((t) => {
     const fid = guFaction.get(t.name_ko); const counties = JSON.parse(t.county_ids).map((id) => titleById.get(id)).filter(Boolean);
     write(`${L.prefix}wiki/duchies/${duchySlug(t)}/index.md`, page(g(t, 'name'), `# ${g(t, 'name')}\n\n- ${L.factions}: [${cell(factionName(fid))}](${P(`wiki/factions/${fid}/`)})\n- ${L === UI.ko ? '백작령' : 'Counties'}: ${counties.map((c) => cell(g(c, 'name'))).join(' · ')}\n- ${L === UI.ko ? '역' : 'Stations'}: ${stationsOfGu(t.name_ko)}\n\n${FACTION_STRUCTURE[fid]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n[${L === UI.ko ? '영토 지도에서 보기' : 'Open the territory map'}](${P('wiki/map/')})`));

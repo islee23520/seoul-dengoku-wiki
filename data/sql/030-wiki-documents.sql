@@ -1,8 +1,6 @@
 -- Wiki articles (Markdown bodies, English and Korean)
 -- Source of truth: edit via scripts/pages/rewrite-doc.mjs (data/sql is canonical; the archived export-sql.mjs is not a sync path).
 
-
-
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Ailments', 'Ailments and Symptoms', '질병과 증상', 'ailments', 0, '
 **A. Where disease starts**
 
@@ -53397,4 +53395,32 @@ For clothing differences between trades at the same depth, see [Characters, Fact
 환승역의 여러 승강장은 같은 역 이름 아래 있어도 서로 다른 깊이에 놓인다. 대합실과 통로를 오가는 사람의 옷차림도 실제로 머무는 층과 그 공간의 실내 환경을 따른다. 전령과 호위뿐 아니라 평소 지하에서 일하던 사람도 지상 야외로 나설 때에는 해당 지역의 방한 외투를 입는다. 지상층 입구까지만 다녀오고 야외로 나가지 않는다면, 그곳의 실내 기온에 맞춰 입는다.
 
 같은 깊이에서도 생업에 따라 달라지는 옷차림은 [인물·세력·생업](/wiki/Characters-Factions-and-Professions/#깊이와-생업에-따른-옷차림)에서 살펴볼 수 있다.
+');
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Government-Society', 'Government Society', '정부 사회', 'factions', 5, '# Government Society
+
+This document is being written.
+', '# 정부 사회
+
+이 문서는 작성 중이다.
+');
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Free-City-Society', 'Free City Society', '자유도시 사회', 'factions', 6, '# Free City Society
+
+This document is being written.
+', '# 자유도시 사회
+
+이 문서는 작성 중이다.
+');
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Arc-Society', 'Arc Society', '아크 사회', 'factions', 7, '# Arc Society
+
+This document is being written.
+', '# 아크 사회
+
+이 문서는 작성 중이다.
+');
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Cyberware-and-Scarcity', 'Cyberware and Scarcity', '사이버웨어와 희소성', 'technology', 1, '# Cyberware and Scarcity
+
+This document is being written.
+', '# 사이버웨어와 희소성
+
+이 문서는 작성 중이다.
 ');
