@@ -37,7 +37,7 @@ Many people have single-syllable given names, and many families named their chil
 
 Of the 126 generation lines, 92 have people scattered across two or more polities. There are two reasons.
 
-1. **When the ledger was bound together.** In 2036 to 2045 the stations north of the river bound their ledgers into one around the Gwanghwamun Government complex. Even within one family, those at stations the clerks reached became the registered, and those across the river went off the ledger. From then on the registered could not change where they lived at will.
+1. **When the ledger was bound together.** Between 2036 and 2045 the stations north of the river bound their ledgers into one around the Gwanghwamun Government complex. Even within one family, those at stations the clerks reached became the registered, and those across the river went off the ledger. From then on the registered could not change where they lived at will.
 2. **When Arc split away.** Around 2122 the Gangnam shelters were bound together as Arc. Free City families who lived in the Gangnam shelters became Arc as they were.
 
 So cousins of the same generation live on both banks of the river and on both sides of the Dongjak and Seocho border. The "Ho" generation line of the Gwangju No Clan is an example. Of the same generation, No Ba-ho lives under the Government, No Solho in the Free Cities and No Haho in Arc. The three share one syllable in their names, yet live under different ledgers and in different ways of speaking.

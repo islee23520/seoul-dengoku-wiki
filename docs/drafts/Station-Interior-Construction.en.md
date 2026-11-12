@@ -34,7 +34,7 @@ Down the entrance shaft, the first level is the concourse. A lived-in concourse 
 - **Cold stores.** The cold of the concourse is useful. Food and fibre are kept here frozen.
 - **Entry control.** Here the station sees who comes in and who goes out. At a Government station the stationmaster's office checks coupons; at an Arc station the bench keeper looks at a person's parts.
 - **Markets and exchange posts.** Markets are held in the wide concourses of large stations. Government stations north of the river hold markets licensed by district notice; Arc stations hold exchange posts where goods are swapped with outsiders. The great market of the Free Cities uses both the platforms and the concourse between Yeongdeungpo and Yeongdeungpo Market.
-- **Stove exhaust.** Stoves that burn scrap, and their smoke, are allowed only under the exhaust shaft above the concourse, because what they burn, such as plastic and tyres, gives off poisonous smoke.
+- **Stove exhaust.** Stoves that burn scrap are kept only under the exhaust shaft above the concourse, and their smoke goes out only through that shaft, because what they burn, such as plastic and tyres, gives off poisonous smoke.
 
 At a Government station the outer end of the platform and the end nearest the concourse are where labour households sleep. The nearer the concourse, the colder, and the colder the place, the lower the standing.
 

@@ -97,7 +97,7 @@ There are thirteen places where a line runs from a station of one polity to a st
 | Government and Arc | Gwangnaru to Cheonho (Line 5), Seoul Forest to Apgujeong Rodeo (Suin-Bundang Line) | Under-river tunnel |
 | The Free Cities and Arc | Sadang to Bangbae (Line 2), Chongshin Univ. (Isu) to Naebang (Line 7), Dongjak to Gubanpo (Line 9) | Land border. No river |
 
-Of the ten places between the Government and the south, seven are bridges open to wind and blizzard, and only three are warm, hidden tunnels under the river. So the river is a line armies cannot easily cross, and who holds the three tunnels decides the field of any fight.
+Of the ten places between the Government and the south, seven are bridges open to wind and blizzard, and only three are warm, hidden tunnels under the river. So the river is a line armies cannot easily cross, and any fight across it is a fight over who holds the three tunnels.
 
 There is no river between the Free Cities and Arc. That border is a single line between Dongjak-gu and Seocho-gu, and the Free City border stations, Sadang, Chongshin Univ. (Isu) and Dongjak, are all in Dongjak-gu. Dongjak is the only city that meets Arc by rail. Dongjak station is joined by Line 4 to the Government's Ichon and by Line 9 to Arc's Gubanpo. It is the only place in Seoul where all three polities meet at one station. Gwanak touches Seocho on land, but no line joins them.
 

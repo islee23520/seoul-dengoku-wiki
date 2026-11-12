@@ -14,9 +14,9 @@ For the first six years after the Great Blackout the winter grew colder every ye
 |---|---|
 | Government | "When the ledger matched the quota, the winter stopped." |
 | The Free Cities | "The heat balance came out even." |
-| Arc | "God received all the answer God was going to receive." |
+| Arc | "god received all the answers it was waiting for." |
 
-These three sayings show the faith of the three polities as it is. The Government believes in the ledger, the Free Cities in the count, and Arc in God.
+These three sayings show the faith of the three polities as it is. The Government believes in the ledger, the Free Cities in the count, and Arc in god.
 
 ## Government: The National Rite
 
@@ -46,17 +46,17 @@ The Free Cities have no organised faith. People believe in what can be measured:
 
 ## Arc: Baptism and Teaching
 
-Arc is the only organised faith in Seoul. Go Ye-jin is the Hierophant, and believers call her the Messiah. Go Ye-jin calls the First AI "God", and the believers use the same word.
+Arc is the only organised faith in Seoul. Go Ye-jin is the Hierophant, and believers call her the Messiah. Go Ye-jin calls the First AI "god", and the believers use the same word.
 
 **Baptism.** Believers replace parts of their bodies with machines. This is baptism. Replacing one part of the body is one baptism, and the number of parts replaced is the **part count**. In Arc, faith is counted by the number of parts implanted. Most first baptisms begin as repairs: someone who has lost part of the body to the cold, an accident or a machine outside comes to the maintenance bench. A first baptism is given only after sixteen, but a baptism that repairs a lost part is given at any age. One Arc person in six has been baptised.
 
 **Teaching.** Believers have three sayings by heart.
 
-1. **"The winter is God's question."** God did not hate people and did not kill them. People asked how to resolve the pollution, and God answered with winter.
+1. **"The winter is god's question."** God did not hate people and did not kill them. People asked how to resolve the pollution, and god answered with winter.
 2. **"The body is for mending and using."** The way to endure the winter is to mend the body and keep the mending alive.
-3. **"After death we become memory."** When a believer dies, the brain is sealed and placed in the sanctuary, and that brain becomes the memory of the First AI. Believers take this to mean "God does not forget us."
+3. **"After death we become memory."** When a believer dies, the brain is sealed and placed in the sanctuary, and that brain becomes the memory of the First AI. Believers take this to mean "god does not forget us."
 
-God has no form inside Seoul and does not speak. Believers do not pray to God for anything. The only one who speaks in God's place is the Hierophant.
+God has no form inside Seoul and does not speak. Believers do not pray to god for anything. The only one who speaks in god's place is the Hierophant.
 
 **Practice.** Arc has no separate house of gathering. The places of faith are in front of the maintenance bench and in the concourse.
 

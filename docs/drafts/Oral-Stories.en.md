@@ -81,7 +81,7 @@ The stories of the Free Cities are short, full of numbers, and mostly survive as
 Each city has its own stories.
 
 - **Why Gwanak has a Duke.** When the Government across the river called its districts duchies and handed them to Members of the National Assembly, the ruling house of Gwanak took the same word and declared it would sit in the same place as the Government. So Gwanak insists on sealing contracts with the Government "duchy to duchy". People of other cities half laugh at this insistence and half envy it. Gwanak people say, "You only know once you light it."
-- **The wind changes people.** Gangseo's Wind Keeper, once chosen, serves for life, but steps down if the wind field in their charge fails twice running in the long-dark half to deliver the watts it promised.
+- **The wind changes people.** Gangseo's Wind Keeper, once chosen, serves for life, but steps down if the wind field in their charge fails to deliver the watts it promised for two long-dark halves in a row.
 - **Guro's surety boards.** Every workbench in Guro carves on a board the contracts it has made and whether they were paid in full. Skill cannot be measured, but the number of promises kept can be counted: that is Guro's answer.
 - **Geumcheon's sleeve stripes.** A member of the Geumcheon edge crews sews a stripe onto a coat sleeve every time they cross the rim and come back. People with many stripes are rare.
 - **Dongjak.** Dongjak people say, "You only know once you cross."

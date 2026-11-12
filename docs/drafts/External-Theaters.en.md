@@ -111,7 +111,7 @@ The three polities each speak of beyond the belt in their own way.
 |---|---|
 | Government | "Outside Seoul is the blockade zone. The Government of the Republic of Korea is here." A public notice forbids saying there may be another government outside |
 | The Free Cities | "Beyond the belt doesn't add up. Nobody has been and come back, so it can't be priced." The belt is a place to salvage, not a place to go |
-| Arc | "God brought down the winter and nothing more; God does not drive machines. The belt is what people left behind." |
+| Arc | "God brought down the winter and nothing more; god does not drive machines. The belt is what people left behind." |
 
 Rumours go round every station: that there are people living in stations beyond the belt too, that the winter is milder beyond the belt, that the people who drive the machines are still alive. None of them has ever been confirmed, because those who went to confirm them did not come back.
 
