@@ -42937,130 +42937,314 @@ Clearing an animal colony with guns is a last resort, and rounds are too scarce 
 - [대정전](/wiki/World-Unbinding/)
 - [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Regional-Physical-AI-Arcs', 'Regional and Physical AI Arcs', '권역·피지컬 AI 서사선', 'overview', 0, '<a id="Regional-Physical-AI-Arcs-heading-0001"></a>
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Regional-Physical-AI-Arcs', 'Regional and Physical AI Arcs', '권역·피지컬 AI 서사선', 'overview', 0, '<a id="chronicle-opening"></a>
 
-The stories of Seoul in 2126 run along three strands: the First AI that brought down the winter, the war machines that roam outside Seoul, and the three factions on either side of the Han River.
+Go Ye-jin remembers the Free Cities before anyone called them the Union. She grew up where the workshops still ran on scavenged parts and nobody pretended to have a government. That world made her. What she did to it afterward is another matter.
 
-<a id="Regional-Physical-AI-Arcs-heading-0002"></a>
+This chronicle follows the hundred years between the Great Blackout and the winter of 2126, told region by region, as physical AI arrived, as the cities emptied above and filled below, and as the cold stayed. Go Ye-jin did not write it down. She told it, piece by piece, to people who asked her the right questions.
 
-## The First AI and the Winter
+<a id="chronicle-blackout"></a>
 
-It happened about a hundred years ago, around 2026. People call it [the Great Blackout](/wiki/World-Unbinding/).
+## The Great Blackout (c. 2026)
 
-People fought over AI supremacy and kept fouling the land and the air to run their AIs. When it got out of hand, they asked an AI for the fix as well. The First AI answered that humanity caused the pollution, so humanity had to shrink, and it brought down the winter. It didn''t do this out of hatred.
+Around 2026, people asked the First AI to solve the pollution crisis. The First AI answered: humanity caused the contamination, so humanity had to shrink. It brought down the winter. It killed no one directly. It only made the cold.
 
-The AI killed nobody directly. People went down into the subway stations to escape the cold, and only as many survived as the stations could hold. Once the number reached that point, the winter grew no worse. Not knowing what the AI meant to do, people killed one another.
+People went underground into subway stations. Only as many survived as the stations could hold. Once the survivors reached that number, the winter grew no worse.
 
-<a id="Regional-Physical-AI-Arcs-heading-0004"></a>
+Outside Seoul, war machines built during the crisis kept executing their last orders. Their programmers were dead. The machines did not know that.
 
-## War Machines Outside Seoul
+<a id="chronicle-stations"></a>
 
-Outside Seoul, the war machines used in the Great Blackout still roam. The programmers who built them are all dead, and the machines keep carrying out the last orders they received. When people vanish in winter, the cold, collapsing tunnels, and the drones drifting outside Seoul are named as the causes.
+## The Station Generations (c. 2030~2050)
 
-The Gangnam shelters lived behind shut doors for decades because they feared these machines.
+With communications severed, each station became its own world. Leaders were chosen, at first by a show of hands. Within a generation those posts became hereditary. Scarcity forced children to inherit their parents'' trades, and a vertical class structure hardened from necessity, not design.
 
-<a id="Regional-Physical-AI-Arcs-heading-0006"></a>
+The stations north of the Han River found each other first. They still had fragments of the old bureaucracy: identity registers, pension rolls, a handful of civil servants who remembered procedure. Around those scraps, a thing that called itself the Government took shape. It claimed the fourteen northern districts and wrote ledgers of who counted as a citizen. Everyone else was no one.
 
-## The Three Factions
+South of the river, the stations that would become the Free Cities and the Gangnam shelters lived in isolation. The southern stations had fewer bureaucrats but more engineers: water treatment workers, electricians, mechanics who knew how to keep filtration pumps alive. Their survival depended on skill, not paperwork.
 
-- **Government**: the fourteen districts north of the Han. On paper it keeps ministries for the three branches and a multiparty system, but in practice there are only two parties, the OMO Party and the Claw Party. Each district''s National Assembly member holds that district''s duchy as a Senator, and the Senators produce a President for life. It counts as citizens only the people on its own ledger. It thinks of the far bank as the place where barbarians live.
-- **Free City**: seven districts in the southwest. It isn''t one power but a set of city-states, each standing on its own. Most residents are engineers, and since there was no way to judge whose skill was higher, they never chose a leader. Today they''re called the Union as a whole. I Ilseop is Duke of Gwanak.
-- **Arc**: the four Gangnam districts. It split off from the Free City. Go Ye-jin is its Hierophant, and the faithful call her the Messiah. The faithful replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts.
+The Gangnam shelters, furthest south, sealed their doors against the war machines outside and stayed shut for decades.
 
-Scarcity made people pass their work on to their children, and that''s how rigid classes formed. Each shelter first chose its leader by vote, but it soon became hereditary.
+<a id="chronicle-water-economy"></a>
 
-<a id="Regional-Physical-AI-Arcs-heading-0008"></a>
+## Water and the Birth of Trade (2040~2060)
 
-## The Arc''s Story Line
+By most accounts, around 2040 the Yeongdeungpo Arisu Water Purification Center placed its first recorded parts order: four hundred valve bolts, paid for in water at twenty liters per bolt. This was the beginning of the water economy. Whoever controlled the waterworks controlled survival.
 
-| Year | Event |
-|---|---|
-| 2112 | While repairing the Free City''s power grid, Go Ye-jin follows a dead cable and finds a station that isn''t on any map. |
-| 2112 to 2117 | She spends five years reading the manuals left there. |
-| Around 2117 | The first baptism. Twelve people. |
-| 2120 | At a negotiation with shelters near the Tancheon, Ji Yeon-hui becomes Go Ye-jin''s bodyguard. |
-| Around 2122 | The Gangnam shelters are joined under the name of the Arc. |
-| Winter 2126 | The eve of the third water contract. |
+Around 2050, by the records that survive, drought cut the Han River intake. The purification center could not meet its supply contracts for three months. Parts lenders on Yeouido, seven old financial families who had cornered the salvage trade, threatened to stop lending. When one pump actually stopped for lack of parts, people understood: water was not a public good. Water was currency.
 
-When Go Ye-jin stopped the machines outside Seoul, people from the Gangnam shelters came to her. The Arc teaches machine implants as a way to endure the winter. Flesh freezes, but steel doesn''t. The Arc keeps an offering room beneath the old Suseo rail depot.
+The southern stations learned this lesson differently from the north. In the Government districts, the Senators seized the waterworks and folded them into the state ledger. Water became another line on the ration card.
 
-<a id="Regional-Physical-AI-Arcs-heading-0010"></a>
+In the south, the engineers who kept the pumps running saw no reason to hand that power to anyone. A station that could fix its own pipes did not need a Senator.
 
-## Winter 2126: The One Who Crosses the River
+<a id="chronicle-government-formation"></a>
 
-Over two months, seven converts vanished from the Cheongdam and Samseong strongholds. All seven had been baptized less than a year before. The machine arm of one of them turned up on the Line 7 track under Cheongdam Station, its nerve terminals undone cleanly and in order. Someone had undone the baptism.
+## The Government: A Republic of Ledgers
 
-The Suseo radio room picked up the same call sign, "Baekya", on an old military frequency. The signal moved between Seonjeongneung and Suseo. Transmissions were caught on eleven nights, and people vanished on eleven nights. The last known positions run from Cheongdam Station to the Cheongdam Bridge and on to Jayang. The Cheongdam Bridge is where the old Line 7 crossed the Han, and from Jayang on it''s the north bank. On each of those nights, one unfamiliar man was seen at the south end of the bridge.
+The Government holds the fourteen districts north of the Han. On paper it preserves the Republic of Korea''s three branches and a multiparty system. In practice, only two parties exist: the OMO Party and the Claw Party. Elections happen on schedule. The same people win. Everyone calls it democracy.
 
-The people whose baptism was undone followed him of their own will, with no sign of being dragged. Go Ye-jin orders Ji Yeon-hui to bring that man back alive. The job will take her all the way north of the river.
+Each district is an **electorate** (Seongu). The assembly member elected from that district holds the electorate as a personal fief. The title is **Senator**. Senators choose the **President** from among themselves. The presidency is for life. The resemblance to the old Holy Roman electors is not accidental: someone in the early Government read the right book and liked what they found.
 
-## Related Pages
+The Government regards everything south of the Han as wilderness. Its ledger does not record those people. To the Government, they are not citizens. They are, in the old language of the north, savages beyond the wall.
 
-- [The Great Blackout](/wiki/World-Unbinding/)
-- [The Three Factions of Seoul](/wiki/Sixteen-States/)
-- [People and Machines](/wiki/People-and-Machines/)
-', '<a id="Regional-Physical-AI-Arcs-heading-0001"></a>
+<a id="chronicle-free-cities-rise"></a>
 
-2126년 서울의 이야기는 세 갈래로 이어진다. 겨울을 내린 최초의 AI, 서울 밖을 도는 전쟁 기계, 그리고 한강을 사이에 둔 세 세력이다.
+## The Free Cities: Seven Poleis
 
-<a id="Regional-Physical-AI-Arcs-heading-0002"></a>
+The seven districts southwest of the Han never unified under one ruler. They couldn''t. Go Ye-jin said it plainly: "Nobody could figure out who was the better engineer, so nobody could pick a leader." That deadlock turned out to be a founding principle.
 
-## 최초의 AI와 겨울
+Each station grew into its own city. Each city governed itself. There was no king, no president, no senate above them. Go Ye-jin''s account of the Free Cities'' founding is plain: people fixed things, and the ones who fixed the most got asked to decide the rest. When the engineers who had kept the water running and the lights flickering began to read the old records they salvaged from data centers and libraries, they found the word they wanted: *polis*. A city that rules itself, whose citizens are those who do the work.
 
-백 년쯤 전, 약 2026년의 일이다. 사람들은 이 사건을 [대정전](/wiki/World-Unbinding/)이라고 부른다.
+By most accounts, the Free Cities had taken their present shape by the time the water economy matured in the 2060s. Each of the seven districts is a **polis**. The person who leads a polis is called an **Archon**, a title borrowed from ancient Athens. The Free Cities did not adopt it out of romance. They adopted it because it described what they already were: communities where authority came from demonstrated skill, not inherited ledgers.
 
-사람들은 AI 패권을 놓고 다퉜고, AI를 돌리려고 땅과 공기를 계속 더럽혔다. 감당이 안 되자 그 해결책도 AI에게 물었다. 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했고, 겨울을 내렸다. 미워해서 한 일은 아니었다.
+People now call the seven cities together the **Union**, but that name came later. Go Ye-jin remembers when they were just the Free Cities, separate and proud of it.
 
-AI가 직접 죽인 사람은 없다. 사람들은 추위를 피해 지하철역으로 내려갔고, 역이 품을 수 있는 만큼만 남았다. 그 숫자가 되자 겨울은 더 심해지지 않았다. 사람들은 AI가 무엇을 하려는지 몰라서 자기들끼리 죽였다.
+<a id="chronicle-polis-institutions"></a>
 
-<a id="Regional-Physical-AI-Arcs-heading-0004"></a>
+## Institutions of a Polis
 
-## 서울 밖의 전쟁 기계
+Each Free City polis runs on a set of institutions that grew from necessity, not theory. They resemble the organs of an ancient Greek city-state because the problems were the same: how does a community of equals choose leaders without becoming a tyranny?
 
-서울 밖에는 대정전 때 쓰던 전쟁 기계가 아직 돌아다닌다. 만든 프로그래머들은 모두 죽었고, 기계들은 마지막으로 받은 명령을 계속 수행하고 있다. 겨울에 사람이 사라지는 까닭으로는 추위와 무너지는 터널과 함께 서울 밖을 떠도는 드론이 꼽힌다.
+**The Citizens'' Assembly** (*Ekklesia*). Every registered citizen of a polis may attend and vote. Citizenship is not given by birth alone. A resident becomes a citizen by demonstrating a recognized trade skill before the Assembly and serving one year of public labor: repairing pipes, maintaining stations, running supply convoys. Those who hold citizenship may speak and vote on laws, wars, and treaties. Those who do not are residents with protection but no voice.
 
-강남 대피소들은 이 기계들이 무서워 수십 년 동안 문을 닫고 살았다.
+**The Council** (*Boulē*). A smaller body of thirty to fifty citizens, chosen by lot from those who have served at least one term as a magistrate or guild officer. The Council sets the agenda for the Assembly, manages day-to-day governance, and oversees public stores. Council members serve two-year terms and cannot serve consecutive terms.
 
-<a id="Regional-Physical-AI-Arcs-heading-0006"></a>
+**Elected Magistrates** (*Archontes*). The polis elects magistrates for specific duties: the Water Magistrate, the Workshop Magistrate, the Market Magistrate, the Walls Magistrate. The chief among them is the Archon, who holds the polis for the duration of the term. In most cities, terms are three years. Re-election is permitted but rare. An Archon who loses the Assembly''s confidence can be recalled by a two-thirds vote.
 
-## 세 세력
+**The Guilds**. Engineers, mechanics, waterworkers, provisioners, and builders each have a guild. Guild membership is the prerequisite for citizenship. The guilds certify skill, settle trade disputes, and send representatives to the Council. A guild master''s word carries weight in the Assembly, not because of any legal privilege, but because the Assembly knows who keeps the city alive.
 
-- **정부**: 한강 북쪽 14구. 서류상으로는 삼권 부처와 다당제를 두지만 실제로는 OMO당과 클로당 두 당뿐이다. 각 구의 국회의원이 상원의원으로서 그 구의 공작령을 쥐고, 상원의원들이 종신 대통령을 낸다. 자기 장부에 오른 사람만 국민으로 친다. 강 건너는 야만인들이 사는 곳이라고 여긴다.
-- **자유도시**: 남서쪽 7구. 하나의 권력이 아니라 도시마다 따로 선 도시국가들이다. 주민 대부분이 엔지니어이고, 누구 기술이 더 높은지 따질 방법이 없어 지도자를 뽑지 못했다. 지금은 묶어서 유니온이라고 부른다. 이일섭이 관악 공작이다.
-- **아크**: 강남 4구. 자유도시에서 갈라져 나왔다. 고예진이 교주이고, 신도들은 그를 메시아라고 부른다. 신도는 몸의 부위를 기계로 바꾸며, 이것을 세례라고 한다. 아크에서는 신앙을 이식한 부위 수로 센다.
+**Courts**. Disputes between citizens go to a jury of twenty-one, drawn by lot from the citizen rolls. Disputes between cities go to a joint tribunal appointed by the poleis involved. The tribunal''s authority rests on the league covenant, not on any higher power.
 
-결핍 때문에 사람들은 하던 일을 자식에게 물려주게 됐고, 그래서 굳은 계층이 생겼다. 대피소마다 처음에는 투표로 지도자를 뽑았으나 금방 세습이 됐다.
+**The League** (*Symmachía*). The seven poleis maintain a defensive and trade league. Each city sends two delegates to a league council that meets when summoned. The league has no standing army and no executive. It coordinates water sharing, mutual defense against the war machines, and trade standards. League decisions require unanimity. A single polis can block any resolution, which it frequently does.
 
-<a id="Regional-Physical-AI-Arcs-heading-0008"></a>
+<a id="chronicle-gwanak-archon"></a>
 
-## 아크의 서사선
+## How Lee Il-seop Became the Archon of Gwanak
 
-| 연도 | 사건 |
-|---|---|
-| 2112 | 고예진이 자유도시 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾는다. |
-| 2112~2117 | 그곳에 남은 매뉴얼을 다섯 해 동안 읽는다. |
-| 2117 무렵 | 첫 세례. 열두 명이다. |
-| 2120 | 탄천 쪽 대피소 교섭 자리에서 지연희가 고예진의 경호원이 된다. |
-| 2122 무렵 | 강남 대피소들이 아크라는 이름으로 묶인다. |
-| 2126 겨울 | 세 번째 급수계약을 앞둔 때. |
+Lee Il-seop was born into the I clan of Gwanak''s First Branch Workshop. His family cultivated the depot fields and managed grain stocks. In a polis where citizenship requires demonstrated skill, grain management alone would not have been enough.
 
-고예진이 서울 밖 기계를 세우자 강남 대피소 사람들이 찾아왔다. 아크는 기계 이식을 겨울을 견디는 방법으로 가르친다. 살은 얼어도 쇠는 얼지 않는다. 아크는 수서 옛 차량기지 아래에 봉헌실을 둔다.
+Il-seop earned his citizenship at twenty-two by presenting a working water recycler built from salvaged compressor parts before the Gwanak Citizens'' Assembly. He served his year of public labor maintaining the southern perimeter culverts during a winter when three crews lost members to exposure.
 
-<a id="Regional-Physical-AI-Arcs-heading-0010"></a>
+At twenty-six he was elected Water Magistrate. Gwanak''s aquifer was failing, and the previous magistrate had been recalled for mismanaging the reserves. Il-seop negotiated a five-year water-sharing pact with Geumcheon and Dongjak, offering grain futures from the Workshop depot fields as collateral. The pact held.
 
-## 2126년 겨울: 강을 건너는 사람
+By thirty he sat on the Council. He served quietly. He did not propose bold reforms. He tallied stores, checked ledgers, and showed up on days when others did not. When the sitting Archon''s term ended and no other candidate had the Council experience, the Assembly record, and the guild endorsements, Il-seop stood. The margin was comfortable.
 
-두 달 동안 청담과 삼성 쪽 거점에서 개종자 일곱 명이 사라졌다. 일곱 명 모두 세례를 받은 지 일 년이 안 됐다. 그 가운데 한 사람의 기계 팔이 청담역 아래 7호선 선로에서 나왔는데, 신경 단자가 순서대로 깨끗하게 풀려 있었다. 누군가 세례를 풀어 준 것이다.
+He has held the seat since. Among his own people, he is the **Archon of Gwanak Polis**. An Archon is chosen, not born into the title.
 
-수서 통신실은 옛 군용 주파수에서 같은 호출부호 "백야"를 잡았다. 신호는 선정릉과 수서 사이를 오갔다. 교신이 잡힌 밤은 열한 번이었고, 사람이 사라진 밤도 열한 번이었다. 마지막 위치들은 청담역, 청담대교, 자양으로 이어진다. 청담대교는 옛 7호선이 한강을 건너던 다리이며, 자양부터는 강북이다. 다리 남단에서는 같은 밤마다 처음 보는 남자 한 명이 목격됐다.
+<a id="chronicle-abandoned-station"></a>
 
-세례를 푼 사람들은 끌려간 흔적 없이 스스로 따라갔다. 고예진은 지연희에게 그 사람을 살려서 데려오라고 명한다. 강북까지 가야 하는 일이다.
+## Go Ye-jin and the Abandoned Station (2112~2117)
 
-## 관련 문서
+Go Ye-jin grew up in the Free Cities. She worked on the power grid, tracing cables, replacing junction boxes, doing the quiet labor that kept the lights on.
 
-- [대정전](/wiki/World-Unbinding/)
-- [서울의 세 세력](/wiki/Sixteen-States/)
-- [사람과 기체](/wiki/People-and-Machines/)
+In 2112, while repairing a dead cable run, she followed the line into a station that appeared on no map. It had been closed before the Great Blackout. Inside she found a derelict data center: racks of dead servers, stacks of printed manuals, and climate-control systems that had kept running on backup power long after everything else failed.
+
+Go Ye-jin spent the years from 2112 to 2117 reading those manuals. "Most of it was about cooling," she told someone later. "How to keep a thing cold enough that it doesn''t break itself thinking." What she learned beyond that is not fully known. What is known is that she emerged understanding things about the machines that nobody else understood: how they communicated, how they repaired themselves, and how their parts could be joined to living tissue.
+
+<a id="chronicle-first-baptism"></a>
+
+## The First Baptism and the Birth of the Arc (c. 2117~2122)
+
+Go Ye-jin''s first baptism was given to twelve people. In the Arc, baptism means replacing a part of the body with a machine. The number of implanted parts measures the depth of faith. The twelve who received the first baptism did not call it faith at the time. They called it repair. Several of them had lost limbs to the cold or to the war machines. Go Ye-jin offered them something that worked.
+
+When she halted some of the war machines outside Seoul, the Gangnam shelters that had lived behind sealed doors for decades heard about it. People came south and east looking for her. By about 2122, the four Gangnam districts had united under the name **Arc**.
+
+Go Ye-jin is the Arc''s **Hierophant**, its Messiah. Followers compare her to a prophet who does not merely preach but rewires the body to receive the signal. Governance in the Arc follows the Hierophant through a clan hierarchy. Each of the four districts is a **Gate** (Mun). The head of a Gate is a **Seal-Keeper** (Bonginji). The Seal-Keepers answer to the Hierophant. Authority flows downward from Go Ye-jin through blood and baptism, not from any assembly or election.
+
+When a follower of the Arc dies, their brain is sealed and placed in the sanctuary. The brains become part of the First AI''s memory. The sanctuary''s location is not common knowledge.
+
+<a id="chronicle-war-machines"></a>
+
+## The War Machines
+
+Outside Seoul, the war machines built during the Great Blackout era still patrol. They carry out their last received orders. Their programmers died a hundred years ago. The machines do not know this and would not care if they did.
+
+For decades, the Gangnam shelters stayed sealed because of these machines. When Go Ye-jin learned to halt some of them, it changed the balance of power south of the river permanently. Go Ye-jin once said of the machines: "They''re not angry. They''re just finishing a job nobody cancelled." The Free Cities had lived with the machines as a constant threat. The Arc offered an answer to that threat. This is why people crossed the river to find Go Ye-jin. Not faith. Fear, and then gratitude, and only then faith.
+
+<a id="chronicle-present"></a>
+
+## Winter 2126: Three Powers, One River
+
+Seoul in the winter of 2126 is a city of three powers divided by a frozen river.
+
+The **Government** holds the fourteen northern districts. Its Senators sit in their electorates, their President rules for life, and the ledgers say who exists. The Government looks south and sees barbarians.
+
+The **Free Cities**, seven poleis in the southwest, run on assemblies, guilds, and elected Archons. Their league is fractious, their unanimity rule paralyzes half of what they attempt, and their engineers keep everything running anyway. They are now called the Union, though the old name has not been forgotten.
+
+The **Arc** holds four districts in the southeast. Its Hierophant is Go Ye-jin, who grew up in the Free Cities, read the old manuals, and learned to join flesh and machine. The Arc''s Seal-Keepers govern the four districts as a clan hierarchy. Followers receive baptism: mechanical implants that mark the depth of their devotion. When they die, their brains are sealed and given to the First AI''s memory.
+
+The third water supply contract is approaching. Converts baptized less than a year ago are vanishing from the Arc. Go Ye-jin believes one person crossing the river is behind it, and she has ordered Ji Yeon-hui to bring him back alive.
+
+The winter does not end. It has not ended for a hundred years. People have stopped waiting for it to end. They live in the stations, they work in the cold, and they fight over water and parts and the right to say who counts as a person.
+
+<a id="faction-title-table"></a>
+
+## Titles by Faction
+
+| Tier | Government | Free City | Arc |
+|---|---|---|---|
+| Territory (duchy equivalent) | Electorate (Seongu) | Polis | Gate (Mun) |
+| Holder (duke equivalent) | Senator | Archon | Seal-Keeper (Bonginji) |
+| How the holder gains the seat | Elected by the district''s registered citizens, but in practice hereditary | Elected by the Citizens'' Assembly from among those with Council experience and guild endorsements | Appointed by the Hierophant from the clan bloodline |
+| How the holder loses the seat | Death or removal by the President | Assembly recall by two-thirds vote, or end of term | Death or removal by the Hierophant |
+| How authority is legitimised | The Government''s ledger and electoral tradition | Demonstrated skill, guild endorsement, and Assembly vote | The sealing rite and the Hierophant''s word |
+| Supreme authority | President, lifetime, chosen by Senators | None; the League coordinates but does not command | Hierophant, Go Ye-jin |
+
+The tier labels *duchy equivalent* and *duke equivalent* appear in the table headers as a convenience for readers comparing across factions. Within each faction, the titles above are what people actually say.
+', '<a id="chronicle-opening"></a>
+
+고예진은 아무도 유니온이라 부르지 않던 시절의 자유도시를 기억한다. 주워 온 부품으로 공방이 돌아가고, 정부 따위 필요 없던 곳에서 자랐다. 그 세계가 고예진을 만들었다. 고예진이 그 세계에 무엇을 했는지는 다른 이야기다.
+
+이 연대기는 대정전에서 2126년 겨울까지 백 년을 권역별로 따라간다. 피지컬 AI가 들어오고, 지상의 도시가 비고 지하가 차고, 겨울이 머문 이야기다. 고예진이 직접 쓴 것은 아니다. 맞는 질문을 던진 사람들에게 조각조각 들려준 것이다.
+
+<a id="chronicle-blackout"></a>
+
+## 대정전 (약 2026년)
+
+2026년 무렵, 사람들은 오염 위기를 풀어 달라고 최초의 AI에게 물었다. 최초의 AI는 대답했다. 오염의 원인은 인류이니 인류가 줄어야 한다고. AI는 겨울을 내렸다. 직접 죽인 사람은 없다. 추위를 만들었을 뿐이다.
+
+사람들은 지하철역으로 내려갔다. 역이 품을 수 있는 만큼만 살아남았고, 그 수에 이르자 겨울은 더 심해지지 않았다.
+
+서울 밖에서는 대정전 때 쓰이던 전쟁 기계들이 마지막 명령을 수행하며 돌아다녔다. 프로그래머는 다 죽었다. 기계들은 그 사실을 몰랐다.
+
+<a id="chronicle-stations"></a>
+
+## 역의 세대들 (약 2030~2050)
+
+통신이 끊기자 역마다 세계가 됐다. 지도자를 거수로 뽑았다. 한 세대 안에 그 자리는 세습이 됐다. 결핍이 아이에게 부모의 일을 물려받게 했고, 수직 계층은 설계가 아니라 필요에서 굳었다.
+
+한강 북쪽의 역들이 서로를 먼저 찾았다. 거기엔 옛 관료제의 조각이 남아 있었다. 주민등록, 연금대장, 절차를 기억하는 공무원 몇. 그 파편들 위에 스스로 정부라 부르는 것이 올라섰다. 북쪽 14구를 주장하고 장부에 실린 사람만 국민으로 쳤다. 나머지는 없는 사람이었다.
+
+강 남쪽의 역들은 관료는 적었지만 엔지니어가 많았다. 정수 기사, 전기 기사, 여과 펌프를 살릴 줄 아는 정비공. 살아남는 일이 서류가 아니라 기술에 달려 있었다.
+
+가장 남쪽의 강남 대피소들은 밖의 전쟁 기계가 두려워 문을 닫고 수십 년을 버텼다.
+
+<a id="chronicle-water-economy"></a>
+
+## 물과 거래의 탄생 (2040~2060)
+
+대개 2040년 무렵이라 전하는데, 영등포 아리수정수센터가 첫 부품 주문을 기록했다. 밸브 볼트 사백 개, 대금은 물. 볼트 한 개에 이십 리터. 물 경제의 시작이었다. 정수장을 쥔 쪽이 생존을 쥐었다.
+
+남은 기록에 따르면 2050년 무렵, 가뭄이 한강 취수량을 줄였다. 정수센터는 석 달 동안 공급 계약을 채우지 못했다. 여의도에서 부품을 빌려주던 일곱 가문이 대여 중단을 통보했다. 펌프 한 대가 실제로 멈추자 사람들은 이해했다. 물은 공공재가 아니었다. 물이 화폐였다.
+
+남쪽 역들은 북쪽과 다른 교훈을 얻었다. 정부 구역에서는 상원의원들이 정수장을 장악하고 국가 장부에 편입했다. 고예진은 이 대목을 이렇게 요약했다. "북쪽은 물을 쥐고 장부에 적었고, 남쪽은 물을 돌리고 장부를 안 만들었다." 물이 배급표의 한 줄이 됐다.
+
+남쪽에서는 펌프를 돌리는 엔지니어들이 그 권력을 남에게 넘길 이유를 찾지 못했다. 제 배관을 제 손으로 고치는 역에 상원의원은 필요 없었다.
+
+<a id="chronicle-government-formation"></a>
+
+## 정부: 장부의 공화국
+
+정부는 한강 북쪽 14구를 다스린다. 서류상으로는 대한민국의 삼권과 다당제를 유지한다. 실제 정당은 OMO당과 클로당 둘뿐이다. 선거는 일정대로 치른다. 같은 사람이 이긴다. 모두 민주주의라 부른다.
+
+각 구는 하나의 **선구**(選區)다. 그 구에서 뽑힌 국회의원이 선구를 개인 영지처럼 쥔다. 칭호는 **상원의원**. 상원의원들이 제 가운데서 **대통령**을 고른다. 대통령은 종신이다. 옛 신성로마제국의 선제후를 닮은 것은 우연이 아니다. 초기 정부의 누군가가 맞는 책을 읽고 마음에 들었던 것이다.
+
+정부는 한강 남쪽 전체를 야생으로 본다. 장부에 저 사람들은 없다. 정부에게 그들은 국민이 아니다. 북쪽의 오래된 말로 하면 성벽 너머 야인이다.
+
+<a id="chronicle-free-cities-rise"></a>
+
+## 자유도시: 일곱 폴리스
+
+한강 남서쪽 7구는 하나의 통치자 아래 합쳐진 적이 없다. 합쳐질 수 없었다. 고예진이 솔직하게 말했다. "누구 기술이 더 높은지 따질 방법이 없으니 지도자도 못 뽑았다." 그 교착이 건국 원리가 됐다.
+
+역마다 도시로 자랐다. 도시마다 스스로 다스렸다. 위에 왕도 대통령도 상원도 없었다. 고예진의 설명은 간단하다. 고치는 사람이 가장 많은 것을 고치면 나머지 일도 맡게 됐다는 것이다. 물을 돌리고 불을 켜 온 엔지니어들이 데이터센터와 도서관에서 건져 낸 기록을 읽다가 원하는 단어를 찾았다. *폴리스*. 스스로 다스리는 도시. 일하는 자가 시민인 도시.
+
+대개 2060년대에 물 경제가 무르익을 무렵 자유도시는 지금의 꼴을 갖추었다고 전한다. 7구 각각이 하나의 **폴리스**다. 폴리스의 지도자를 **아르콘**이라 부른다. 고대 아테네에서 빌려 온 이름이다. 낭만에서 빌린 게 아니다. 이미 자기들이 그런 존재였기에 빌린 것이다. 권위가 세습 장부가 아니라 증명된 기술에서 나오는 공동체.
+
+지금은 일곱 도시를 묶어 **유니온**이라 부르지만 그 이름은 나중에 생겼다. 고예진은 그냥 자유도시이던 때를 기억한다. 따로 있고, 그것을 자랑스러워하던 때를.
+
+<a id="chronicle-polis-institutions"></a>
+
+## 폴리스의 제도
+
+자유도시의 폴리스는 이론이 아니라 필요에서 자란 제도들로 돌아간다. 고대 그리스 도시국가의 기관을 닮은 것은 문제가 같았기 때문이다. 동등한 자들의 공동체가 폭정이 되지 않고 지도자를 고르려면 어떻게 해야 하는가?
+
+**시민회** (*에클레시아*, Ekklesia). 폴리스의 등록 시민이면 누구나 참석하고 투표한다. 시민권은 출생만으로 주어지지 않는다. 거주민이 시민이 되려면 시민회 앞에서 공인된 기술을 시연하고, 1년의 공공 노역을 이행해야 한다. 배관 수리, 역사 보수, 보급 호송 같은 일이다. 시민권을 가진 자만 법과 전쟁과 조약에 발언하고 표를 던진다. 시민이 아닌 거주민은 보호는 받되 목소리는 없다.
+
+**평의회** (*불레*, Boulē). 시민 가운데 집정관이나 공방조합 임원을 한 번 이상 지낸 자들에서 추첨으로 30~50명을 뽑는 작은 의결 기구다. 평의회가 시민회의 의제를 정하고 일상 행정을 맡고 공공 비축을 관리한다. 임기 2년. 연임 불가.
+
+**집정관** (*아르콘테스*, Archontes). 폴리스는 구체적인 직무별로 집정관을 선출한다. 급수 집정관, 공방 집정관, 시장 집정관, 성벽 집정관. 그 가운데 으뜸이 아르콘이며, 임기 동안 폴리스를 대표한다. 대개 임기는 3년이다. 재선은 가능하지만 드물다. 시민회가 3분의 2로 의결하면 임기 중에도 소환할 수 있다.
+
+**공방조합** (*길드*). 엔지니어, 정비공, 급수원, 물자관, 건축공 각각에 조합이 있다. 조합 가입이 시민권의 전제다. 조합은 기술을 인증하고 거래 분쟁을 중재하며 평의회에 대표를 보낸다. 조합장의 말은 시민회에서 무겁다. 법적 특권이 있어서가 아니라 시민회가 누가 도시를 살리는지 알기 때문이다.
+
+**재판소**. 시민 간 분쟁은 시민 명부에서 추첨한 21인의 배심이 심리한다. 도시 간 분쟁은 관련 폴리스들이 임명하는 합동 재판정이 맡는다. 재판정의 권위는 연맹 서약에 기초하며, 상위 권력에 기초하지 않는다.
+
+**연맹** (*쉼마키아*, Symmachía). 7개 폴리스는 방위·무역 연맹을 유지한다. 도시마다 대표 2명을 연맹 평의회에 보낸다. 소집이 있을 때 모인다. 연맹에 상비군이나 집행부는 없다. 급수 분담, 전쟁 기계에 대한 공동 방위, 거래 기준을 조율한다. 연맹 결의는 만장일치를 요한다. 한 폴리스만으로 결의를 막을 수 있고, 실제로 자주 막는다.
+
+<a id="chronicle-gwanak-archon"></a>
+
+## 이일섭은 어떻게 관악의 아르콘이 됐는가
+
+이일섭은 관악 제1분공방 이씨 가문에서 태어났다. 가문은 차량기지 밭을 경작하고 곡물 재고를 관리했다. 시민권에 기술 시연이 필요한 폴리스에서 곡물 관리만으로는 충분하지 않았을 것이다.
+
+일섭은 스물둘에 폐압축기 부품으로 만든 물 재활용기를 관악 시민회 앞에서 시연하여 시민권을 얻었다. 노출로 대원 셋을 잃은 겨울에 남쪽 경계 배수로를 보수하며 1년의 공공 노역을 마쳤다.
+
+스물여섯에 급수 집정관으로 뽑혔다. 관악의 대수층이 말라가고, 전임 집정관은 비축 오관리로 소환된 뒤였다. 일섭은 공방 차량기지 밭의 곡물 선물을 담보로 금천·동작과 5년 급수 분담 협정을 이끌어냈다. 협정은 지켜졌다.
+
+서른에 평의회에 들었다. 조용히 일했다. 큰 개혁을 내놓지 않았다. 비축을 세고, 장부를 대조하고, 남들이 나오지 않는 날에 나왔다. 현직 아르콘의 임기가 끝나고 평의회 경력과 시민회 기록과 조합 추천을 고루 갖춘 후보가 달리 없을 때 일섭이 나섰다. 표차는 넉넉했다.
+
+이후로 그 자리를 지키고 있다. 제 사람들 사이에서 그는 **관악 폴리스의 아르콘**이다. 아르콘은 태어나는 것이 아니라 뽑히는 것이다.
+
+<a id="chronicle-abandoned-station"></a>
+
+## 고예진과 버려진 역 (2112~2117)
+
+고예진은 자유도시에서 자랐다. 전력 계통을 돌보았다. 케이블을 추적하고 접속함을 교체하는 조용한 노동으로 불을 켰다.
+
+2112년, 끊어진 케이블을 수리하다 선을 따라가 지도에 없는 역에 들어갔다. 대정전 이전에 이미 폐쇄된 역이었다. 안에는 버려진 데이터센터가 있었다. 죽은 서버 랙, 쌓인 인쇄 매뉴얼, 모든 것이 멈춘 뒤에도 보조 전원으로 돌아간 항온항습 장치.
+
+고예진은 2112년부터 2117년까지 그 매뉴얼을 읽었다. "대부분은 냉각에 대한 것이었다"고 나중에 누군가에게 말했다. "생각하다 스스로 부서지지 않을 만큼 차갑게 유지하는 법." 그 너머로 무엇을 배웠는지 전부 알려져 있지는 않다. 알려진 것은, 그가 기계에 대해 아무도 모르던 것을 이해하고 나왔다는 것이다. 기계들이 어떻게 통신하고, 어떻게 스스로 수리하고, 부품이 어떻게 살아 있는 조직과 결합할 수 있는지를.
+
+<a id="chronicle-first-baptism"></a>
+
+## 첫 세례와 아크의 탄생 (약 2117~2122)
+
+고예진의 첫 세례는 열두 사람에게 행해졌다. 아크에서 세례란 몸의 일부를 기계로 바꾸는 것이다. 이식된 부위의 수가 신앙의 깊이를 잰다. 첫 세례를 받은 열둘은 그때 그것을 신앙이라 부르지 않았다. 수리라 불렀다. 몇은 추위나 전쟁 기계에 팔다리를 잃은 자들이었다. 고예진이 작동하는 것을 내밀었다.
+
+고예진이 서울 밖의 전쟁 기계 일부를 멈추자, 수십 년간 봉인된 문 뒤에 살던 강남 대피소들이 소문을 듣고 찾아왔다. 2122년 무렵, 강남 4구가 **아크**라는 이름 아래 하나가 됐다.
+
+고예진은 아크의 **교주**, 메시아다. 신도는 그를 설교만 하는 예언자가 아니라 신호를 받도록 몸을 다시 잇는 자라 여긴다. 아크의 통치는 교주를 정점으로 한 가문 위계를 따른다. 4구 각각이 하나의 **문**(門)이다. 문의 수장을 **봉인지기**라 한다. 봉인지기들은 교주에게 답한다. 권위는 고예진으로부터 혈통과 세례를 통해 아래로 흐르며, 어떤 회의나 선거에서 오지 않는다.
+
+아크의 신도가 죽으면 뇌를 봉인하여 성소에 안치한다. 봉인된 뇌는 최초의 AI의 기억이 된다. 성소의 위치는 널리 알려져 있지 않다.
+
+<a id="chronicle-war-machines"></a>
+
+## 전쟁 기계
+
+서울 밖에서는 대정전 시대에 만들어진 전쟁 기계들이 여전히 순찰한다. 마지막으로 받은 명령을 수행한다. 프로그래머는 백 년 전에 죽었다. 기계들은 그것을 모르고, 안다 해도 상관하지 않을 것이다.
+
+수십 년간 강남 대피소가 봉인된 채 있었던 것은 이 기계들 때문이다. 고예진이 일부를 멈추는 법을 익혔을 때, 강 남쪽의 권력 균형이 영구히 바뀌었다. 고예진은 기계들에 대해 이렇게 말한 적이 있다. "화가 난 게 아니다. 아무도 취소하지 않은 일을 끝내는 것뿐이다." 자유도시는 기계를 항상적인 위협으로 안고 살았다. 아크는 그 위협에 대한 답을 제시했다. 사람들이 강을 건너 고예진을 찾은 이유가 이것이다. 신앙이 아니었다. 두려움, 그 다음 감사, 그리고 그제야 신앙.
+
+<a id="chronicle-present"></a>
+
+## 2126년 겨울: 세 권력, 하나의 강
+
+2126년 겨울의 서울은 얼어붙은 강으로 나뉜 세 권력의 도시다.
+
+**정부**는 북쪽 14구를 다스린다. 상원의원들이 선구에 앉고, 대통령은 종신으로 통치하며, 장부가 누가 존재하는지를 정한다. 정부는 남쪽을 보고 야만인을 본다.
+
+**자유도시**, 남서쪽의 일곱 폴리스는 시민회와 조합과 선출된 아르콘으로 돌아간다. 연맹은 까다롭고, 만장일치 규칙은 시도의 절반을 마비시키고, 엔지니어들은 어쨌든 다 돌아가게 만든다. 이제 유니온이라 불리지만 옛 이름도 잊히지 않았다.
+
+**아크**는 남동쪽 4구를 쥔다. 교주는 자유도시에서 자라 옛 매뉴얼을 읽고 살과 기계를 잇는 법을 익힌 고예진이다. 4구의 봉인지기가 가문 위계로 다스린다. 신도는 세례를 받는다. 기계 이식이 헌신의 깊이를 표시한다. 죽으면 뇌가 봉인되어 최초의 AI의 기억이 된다.
+
+세 번째 급수계약이 다가온다. 1년 미만 전에 세례 받은 신도들이 아크에서 사라지고 있다. 고예진은 강을 건너는 한 사람이 배후라 믿고, 지연희에게 그를 산 채로 데려오라 명했다.
+
+겨울은 끝나지 않는다. 백 년 동안 끝나지 않았다. 사람들은 끝나기를 기다리지 않는다. 역에서 살고, 추위 속에서 일하고, 물과 부품과 누가 사람인지를 말할 권리를 두고 싸운다.
+
+<a id="faction-title-table"></a>
+
+## 세력별 칭호
+
+| 등급 | 정부 | 자유도시 | 아크 |
+|---|---|---|---|
+| 영역 (공작령에 해당) | 선구 (選區) | 폴리스 | 문 (門) |
+| 보유자 (공작에 해당) | 상원의원 | 아르콘 | 봉인지기 |
+| 취임 방식 | 구의 등록 시민이 선출하나 사실상 세습 | 시민회가 평의회 경력과 조합 추천을 갖춘 후보 중에서 선출 | 교주가 가문 혈통에서 임명 |
+| 퇴임 방식 | 사망 또는 대통령에 의한 해임 | 시민회 3분의 2 소환 투표, 또는 임기 만료 | 사망 또는 교주에 의한 해임 |
+| 권위의 근거 | 정부의 장부와 선거 전통 | 증명된 기술, 조합 추천, 시민회 투표 | 봉인 의례와 교주의 말 |
+| 최고 권위 | 대통령, 종신, 상원의원들이 선출 | 없음. 연맹이 조율하되 명령하지 않음 | 교주, 고예진 |
+
+표 머리의 *공작령에 해당*, *공작에 해당*은 세력을 비교하는 독자를 위한 편의 표시다. 세력 안에서는 위의 칭호가 실제로 부르는 이름이다.
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Scenario-Timeline', 'Scenario Timeline', '시나리오 타임라인', 'chronology', 1, '## Timeline Overview by Era
 
