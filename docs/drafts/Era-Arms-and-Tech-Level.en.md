@@ -1,74 +1,104 @@
 ---
-title: The Arms and Technology of This Era
-title_ko: 이 시대의 기술과 무구
-model: claude-opus; rewritten by hand by the task 8 executor agent; 0 completion calls
-section_checkpoint: complete
+title: Guns, Rounds and Drones
+title_ko: 총, 탄, 드론
+model: claude-opus-5-5; v3 task 13, rewritten by hand from 03-technology 5-6, 07-people-and-war 12 and roster-framework 9
+section_checkpoint: v3 task 13 complete
 ---
+## The weapons exist; every round counts
 
-In 2026, Seoul had work tools, police equipment and military arms, along with drones, humanoid machines and machine parts for the body. All of it came down into the stations after the Great Blackout. A century later most of it still works. What changed is that almost nothing new is made, so every round, cell and spare part has to come from somewhere that already exists.
+In 2126 Seoul has guns, drones, and even the artillery and armoured vehicles left by the army from before the Great Blackout. It is not a world reduced to old close-combat weapons. But all of it is scarce. Guns can be repaired, but rounds dwindle every year; drones can fly, but losing one means losing a circuit board. Every fight in Seoul begins with the question "do I fire this one round?"
 
-Modern and future weapons exist in 2126, and so do humanoids and machines. They're scarce, not gone. The question in any station isn't whether a rifle works, but whether there are rounds for it and someone who can fix it.
+## Where the guns came from
 
-<a id="한-세기가-지난-손"></a>
+At the time of the Great Blackout Seoul had many guns: the army's armouries, the reserve-forces armouries in every neighbourhood, police weapons, and hunting guns kept in deposit at police stations. Over a hundred years most were used, broken or buried in ice. In 2126 Seoul has about 9,000 guns that can fire.
 
-## Equipment Used Across a Century
+| Polity | Guns that can fire | Source |
+|---|---|---|
+| Government | about 6,000 | It bound into its ledger the old defence facilities of Yongsan and the reserve armouries of every district north of the river. Guns are entered in the ledger, and even spent cases are counted |
+| Free Cities | about 2,200 | The reserve armouries and police weapons of the south-west taken in the 2030s and 2040s, and guns repaired and refitted at workbenches since |
+| Arc | about 800 | What the Gangnam shelters held. The Arc spends its resources on bodies rather than ammunition |
 
-### From 2026 to 2126
+A gun itself can be repaired. Free City workbenches machine barrels, bolts and springs. So guns dwindle, but slowly. The real scarcity is rounds.
 
-On the night of the Great Blackout, around 2026, the duty staff at the Yeongdeungpo water purification centre lost remote control and turned the valves by hand. That habit of keeping old equipment working by hand runs through the whole century. The generation of 2126 still repairs and uses the tools and plant of that time.
+## Three kinds of round
 
-### Firearms Then and Now
+| Kind | What it is | Reliability | Amount in 2126 |
+|---|---|---|---|
+| Old rounds | Rounds made in factories before the Great Blackout | The most reliable. Even so, about one in ten century-old rounds fails to fire | About 700,000 in all of Seoul. The Government holds about three quarters |
+| Reloaded rounds | Spent cases refilled with powder pulled from old rounds or left over, a new primer, and a cast bullet | Depends on the workbench's skill. About one in five fails or fires weak | About 20,000 a year |
+| Black-powder rounds | Rounds filled with black powder made from saltpetre, charcoal and sulphur | Used only in shotguns and low-pressure pistols. Thick smoke, fouls the gun quickly | About 40,000 a year |
 
-In 2026 firearms and crossbows were licensed under South Korean law, and the armed forces carried domestically made small arms. Civilians didn't carry guns as a matter of course. After the Blackout those weapons went wherever their carriers went. Rifles, pistols and shotguns still fire in 2126. Ammunition is what runs short: brass casings can be refilled, but primers and powder are spent once, and primers are the hardest thing to replace.
+**Why old powder lasted a hundred years.** Powder spoils fast when warm and slowly when cold. For a hundred years Seoul's rounds sat in the cold stores of the concourse level (minus 10 to minus 7 degrees) or in frozen armouries. The eternal winter kept the rounds. So the Government does not bring rounds down to the warm platform level. Rounds kept somewhere warm spoil within a few years.
 
-### Drones and Machines
+## Reloading and primers
 
-Drones came out of storerooms, police stations and depots, and they still scout exits and watch tunnels on short flights. Factory robots lost the networks that called them. Technicians took the hoses, terminals and lenses they could reuse, and kept a few whole machines moving. Machine body parts survived the same way, and they follow the same rule: they work as long as someone can service them. That rule is set out in [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/).
+Of the four materials of a reloaded round, only the case can be used again.
 
-## Surviving Arms: Function, Ownership, Access
+- **Cases.** A brass case can be reloaded 20 to 30 times for a low-pressure pistol round, 5 to 8 times for a rifle round. So all three polities pick up cases. The Government will not issue the next rounds until the spent cases are returned.
+- **Bullets.** Lead is melted and cast. The lead comes from old lead-acid batteries and cable sheathing.
+- **Powder.** Got by pulling old rounds apart, or replaced with black powder. Seoul cannot make new smokeless powder.
+- **Primers.** The bottleneck. A few Free City workshops make about 60,000 a year. About 20,000 go into reloaded rounds and about 40,000 into black-powder rounds. The work is dangerous and costs lives in accidents, and one in ten primers made does not fire. How primers are made is a craft that does not leave the workbench.
 
-### Equipment and What It Needs
+So the price of a round in Seoul is almost the price of its primer. On the Yeongdeungpo rate board one reloaded rifle round costs about 1.2 days of meals and water, of which the primer is about 0.8 days. One old rifle round costs about 3 days, and one rifle that can fire costs about 150 days. The Government does not sell guns.
 
-| Equipment | Function | Before the collapse | Access in 2126 | Consumption and repair | Who carries it |
-|---|---|---|---|---|---|
-| 5.56 mm service rifle, pre-collapse national issue | Standard rifle | Military issue; not a civilian item | Inherited, recovered or traded. Every carrier has their own story of how they got it | Compatible rounds, parts and a skilled hand. Numbers aren't recorded | Government levies and guards, Free City contract crews, Arc escorts |
-| Older 5.56 mm rifle from reserve stores | Reserve stock | Issued for reserve training in 2015 | Only where a unit's books or stores survived | Rounds, magazines, parts and storage are each a separate bottleneck | Holders of old stores; an empty rifle still serves as a bayonet staff |
-| Service pistols | Sidearm for guards and officers | Military and police issue | Locked stores with a key and a list | Pistol rounds are a separate stock from rifle rounds | Guards and officers. Former patrols start with a baton and shield |
-| Squad support weapons | Suppression and convoy cover | Military squad weapons | Held at faction scale, not by individuals | Heavy round use; barrels and cooling need a workshop | Defended stations and armies on campaign |
-| Baton, patrol shield, riot gear | Restraint, protection, station guard | Police, local guards, station security | Standard for former patrols and station guards | Shield and cloth repair; no rounds | Station guards |
-| Pry bar, axe, cutter | Opening, breaking down, close fighting | Construction, rail and building work | Common at work sites and depots | Edges dull; no hydraulics | Porters, scouts, technicians |
-| Hydraulic rescue tools | Spreading debris, opening doors and car bodies | Fire, rescue and rail recovery | Workshops and repair crews, not carried alone | Hydraulic fluid, power, hoses. Without power, it's dead weight | Repair and engineer crews |
-| Lamps and radios | Light and contact | Facility, police and civilian sets | Common in work and guard duty; the cell is the bottleneck | Cells and charging. Old cells age | Runners, scouts, patrols |
-| Gas detector, respirator, first-aid kit, portable power | Surviving in ducts, treating wounds, short power | Industrial safety, fire, medicine | Medics, scouts, station posts | Filters, medicine and cells run out. Charging isn't generating | Medics and scouts |
-| Stab, ballistic and work protection | Against blades, set ballistic threats, or work hazards | Police, military, guards, industry | Each kind is kept separate. Work clothes and riot shields aren't ballistic armour | Wear, ageing and replacement parts | Fitted to the role; membership alone doesn't give protection |
-| Bow (conditional) | Quiet ranged shot; not a standard arm | Sport archery; not military | Possible, not forbidden, not standard | Arrows made with work tools | Specific people and trades |
-| Crossbow (conditional) | Mechanical shot | Licensed under the firearms law | Rare | Bolts and strings | Not a starting arm |
-| Drones | Scouting, watching, carrying a small charge | Police, rescue, military and civilian stock | Kept warm and flown briefly | Cells and spare parts; radio drones can be jammed | Free City crews most of all; a few Government teams |
-| Machine body parts | Replacing a hand, eye, leg or more | Medical and military | Through the Government's registry, Free City surgeons, or Arc baptism | Repair, power, spares and medicine | See [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/) |
-| Sensors, inspection units, actuators, salvaged power | Detecting, opening, short power; sometimes traps or weapons | Disaster response and facility inspection | Modules taken from stopped machines in sealed galleries | Charging, ageing, supply. No cell lasts forever. A protocol card doesn't control everything | Scouts, record keepers, salvage crews. See [Lost Technology](/wiki/Lost-Technology-Lineage/) |
-| Vehicles and generators | Moving, powering a station | Rail, buses, emergency generators, military vehicles | Only where a community can run them | Fuel, oil, tyres, cells. A generator isn't a battery | Station holders and faction engineers |
-| Heavy weapons | Holding gates and strongpoints | Military support weapons and vehicle mounts | Held by factions at defended sites | Rounds, weight, upkeep. Supply is fought over | Faction garrisons |
+The saltpetre for black powder comes from leaving dung and refuse to age a long time on warm levels. Part of what is left after the methane tanks have done their work goes to saltpetre beds instead of light-field manure. Charcoal comes from wood and is expensive; sulphur is only what remains in old chemical stores. So black powder cannot be made in quantity.
 
-### What Each Faction Runs Short Of
+## Air guns
 
-The Government fields the most guns and armoured vehicles, so its rounds and fuel go first. The Free City runs drones and repair crews, so its cells and spare parts go first. The Arc puts its resources into the bodies of the faithful, so implant parts and medicine go first.
+Air guns are commoner than guns. Free City workbenches build them from old compressors and pressure tanks. Filling them takes only electricity or a hand pump, no primer and no powder, and the shot is steel balls or lead pellets that Seoul can make. They are too weak to kill a person at a distance, but enough at the short range of a tunnel, and they are quiet and smokeless. Most guards at Free City stations carry air guns. The Government enters air guns in its ledger and counts them, but cannot make them and buys them.
 
-## What Actually Existed in 2026
+## No powder guns inside a station
 
-### Records That Survive
+Stations and tunnels are places short of air. Firing a powder gun leaves smoke and poisonous gas on the platform, and black powder is especially thick. So all three polities hold as a principle that powder guns are not fired on the platform level where people live. Powder guns are used on the surface, at the entry-control line of the concourse level, and in tunnel stretches where nobody lives. Fights on a platform are fought with air guns, short blades, clubs and nets.
 
-In 2026 there were licensing rules for guns and crossbows, military arms, and rail and facility tools. These records show what existed then. They don't show how much of it reached any station a century later.
+This makes a geography of weapons. Fights on the river and on the surface are fights of guns; fights inside a station are fights of bodies and short weapons. Inside a station is where a person wearing machines is most useful, and the surface and the bridges are where the Government, with the most guns, is most useful.
 
-- The firearms law covered the making, sale, lending, carriage, holding and use of guns, swords, explosives, sprays, stun devices and crossbows. It wasn't a country where civilians carried guns every day. ([National Law Information Center](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98), read 2026-09-12)
-- Public sources describe the standard assault rifle of the armed forces. How many reached whom by 2026 isn't in those sources. (encyclopedia entry on the service rifle, read 2026-09-12)
-- A 2015 government briefing said older 5.56 mm rifles would replace carbines for reserve training. The issue is confirmed; quantities and depots aren't. ([Policy briefing](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), read 2026-09-20)
-- A domestic arms maker's public page shows the national small arms line existed. A product page doesn't say how many were issued. (Defence industry product catalogue, read 2026-09-20)
-- The police equipment rules and the issued pistol models of 2026 haven't survived.
+## Drones
 
-## Related Pages
+Flying a drone takes a motor, blades and a battery, and also the circuit board that controls flight and the sensing element that serves as its eye. Seoul cannot make the last two. So the number of drones is the number of circuit boards.
 
-- [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/)
-- [Lost Technology](/wiki/Lost-Technology-Lineage/)
-- [Seoul Ecology and Variant Bestiary](/wiki/Hostile-Ecology-Index/)
-- [Characters, Factions, and Trades](/wiki/Characters-Factions-and-Professions/)
-- [The Three Factions of Seoul](/wiki/Sixteen-States/)
+| Item | Value |
+|---|---|
+| Drones in Seoul that can fly | about 1,200. Free Cities about 950, Government about 200 (mostly for watching by ministries and district offices; only a few of the Capital Defense Command's are flown into a fight), Arc about 50 (for maintenance benches to inspect tunnels; never flown into a fight) |
+| Each year | about 150 lost and about 100 newly assembled |
+| One flight on the surface | 6 to 10 minutes, because below freezing a battery gives only half |
+| Days it can fly | Days with wind under 10 metres a second. Not in a blizzard |
+| Main uses | Scouting around entrances and on bridges, watching light-fields, finding loads on the surface |
+
+Drones that carry explosives and ram a target can be built, but each use loses a circuit board. So they are used only where they decide the fight.
+
+**Never flown outward.** The war machines circling Seoul treat anything moving inside the rim as an enemy. A drone is a moving thing. A drone flown towards the rim hardly ever comes back. Seoul people think it foolish to lose a circuit board trying to see the outside with a drone.
+
+## Lines underground and the talk line
+
+Underground, radio does not travel far. Tunnels bend, and earth and concrete swallow the signal. So machines underground are controlled by line.
+
+- **Line drones.** A drone that pays out a thin line as it flies, or a small cart rolling on the rails. The line is optical fibre and copper pulled from the communications cables laid in the old subway tunnels. A line used once and broken is hard to join again.
+- **Nets.** Nets are strung over and around the vertical shafts of surface entrances. A drone whose blades catch in a net falls. Nets can be made in Seoul, so they are the cheapest and steadiest defence.
+- **The talk line.** The old subway tunnels have long cables laid so that radio flows along the tunnel. Where this cable is alive, handheld radios reach from station to station. Seoul people call it the talk line. About a third of Seoul's tunnels have a live talk line, and there are about 6,000 handheld radios in all of Seoul. Whoever holds a talk line can listen to the talk on that section. That is why the three polities contest the talk lines of the three under-river tunnels: Mapo to Yeouinaru, Gwangnaru to Cheonho, and Seoul Forest to Apgujeong Rodeo.
+
+**Jamming.** A machine that blankets radio can be built, but it eats electricity. A jammer covering the surface around one station draws a few hundred watts, the heating share of several people. So jammers are not left on; they are switched on only when a drone is seen or a fight starts. Drones change frequency, and the jamming side follows. The Free City workbenches are best at this chase. Jamming has no effect on a drone controlled by line. So the fiercer the radio fight on a stretch, the more line drones and nets appear.
+
+## What the three polities' armies have and lack
+
+Each polity has a different army. In every army one commander directs all the squads, and squads do not move on their own. And every army lacks something on purpose. That empty place shows what kind of polity it is.
+
+| | Government | Free Cities | Arc |
+|---|---|---|---|
+| Strength | About 4,000 professional soldiers and about 2,500 serving conscripts. About 20,000 reservists who can be called up | No standing army. About 1,100 from the guard shares the workbenches owe, and about 600 more hands bought by contract | The four Near Houses and the guard of the Hierophant's house. About 1,300 baptised fighters |
+| What it has much of | Conscript infantry and reservists, checkpoint garrisons, scouting along the mountain rim. The old army's artillery and armoured vehicles. Old rounds | Drones and jamming, field repair and engineers, track carts on the rails, marksmen who save their rounds | Close-combat fighters wearing machines, high morale, guards who protect the commander. Old machines revived at the old Godeok depot |
+| What it does not have | No unit of soldiers wearing machines. No unit hired from off the ledger. Thin engineers for repairing bridges and tunnels | No infantry that pushes by numbers. No rounds to feed big guns, and heavy armour stops where batteries can move it. No single city can keep alive machines that cannot be made again | No drones flown into a fight. No artillery. Few marksmen |
+| What it runs shortest of | Rounds, and the large batteries and power cores that move armoured vehicles and tracked carriers | Batteries and machine parts | Parts for bodies, and medicine. When parts are cut off, the baptised fighters weaken all at once |
+| Where it fights | The north checkpoints of the three under-river tunnels, the north ends of the seven bridges, the rim watchtowers on the northern mountains | Bridge ends, the Mapo to Yeouinaru under-river tunnel, the three land crossings with the Arc | The land border between the Arc and the Free Cities, the Gwangnaru to Cheonho and Seoul Forest to Apgujeong Rodeo under-river tunnels, the south end of the Jamsil weir |
+
+The Government counts every spent case in its ledger and fights by numbers. The Free Cities fight by contract too, and make a station unbearable for an enemy inside it by stopping its fans and blocking its entrances. The Arc fights short and comes home before its parts run dry.
+
+**The ice is not crossed by armies.** In 2079 the Government tried to cross the ice and take the Yeongdeungpo intake, and was broken on the river by a blizzard. Since then none of the three polities crosses the frozen Han with an army. Only small raids cross. On the river there is nowhere to hide for a kilometre.
+
+**Seasons and weather.** In the long-light half, fighting on the surface is easier. In the long-dark half, light is short, and both drone eyes and marksmen's eyes grow short with it. During the two to four days of a blizzard, fighting on the surface stops.
+
+## Read together
+
+- [What Still Runs](/wiki/Lost-Technology-Lineage/): the "cannot make" list and primers
+- [Machine Bodies and Scarcity](/wiki/Cyberware-and-Scarcity/): the basis of fighters who wear machines
+- [Structures](/wiki/Structures/): under-river tunnel checkpoints and rim watchtowers

@@ -1,115 +1,137 @@
 ---
-title: Cyberware and Scarcity
-title_ko: 사이버웨어와 희소성
-model: claude-opus; written by hand by the task 8 executor agent; 0 completion calls
-section_checkpoint: complete
+title: Machine Bodies and Scarcity
+title_ko: 기계 몸과 결핍
+model: claude-opus-5-5; v3 task 13, rewritten by hand from 03-technology 4 and 11.5, 04-government 13.3, 06-arc 5 and 8
+section_checkpoint: v3 task 13 complete
 ---
+## A living but scarce technology
 
-Cyberware is living technology in Seoul. Machine hands close, machine eyes see, and a replaced leg carries a porter down the frozen stairs every morning. None of it is rare because it doesn't work. It's rare because every part needs upkeep, power and spares, and someone has to hold all three.
+In 2126 about 14,100 people in Seoul wear machines on their bodies, about one in twenty. Machines worn on the body are a living technology. They are still fitted, repaired and refitted today. But they are scarce. Four things decide who has a machine body and keeps it for long: maintenance, electricity, parts to replace, and whether one can reach the polity that holds them.
 
-The old world dreamed of a body that could be rebuilt piece by piece: an arm stronger than bone, an eye that sees in the dark, a spine wired to take whatever came next. Seoul inherited that dream as hardware. What it didn't inherit was the factories, the clinics on every corner or the cheap power. So the dream survives, but it has a price, and the price is paid every week.
+| Polity | People wearing machines | Share of population | Average charge per person | Total |
+|---|---|---|---|---|
+| Arc | about 11,000 (all baptised) | about 17% | 8 W | about 88 kW |
+| Free Cities | about 2,500 | about 3% | 4 W (many body-powered machines) | about 10 kW |
+| Government | about 600 | 0.4% | 3 W | about 2 kW |
+| Total | about 14,100 | about 5% | | about 100 kW. 2% of Seoul's electricity |
 
-This page sets out where a part can go, who can fit one, what it takes to keep it working, and what it costs the person who carries it. The last section covers drones and modern arms, which live under the same rules.
+## Place and work
 
-## Where a Part Goes
+Seoul people do not call the machines on a body by name. They call them by the body's **place** and by the **work** the machine does. They say "the machine below the left arm" or "the one who changed both eyes". The part count the Arc keeps is a count of these places.
 
-People in the stations talk about the body in six places: the head, the torso, the left arm, the right arm, the left leg and the right leg. Injury and sickness are counted the same way, so a machine part replaces or sits inside one of those six.
+| Place | Work | Electricity | What fitting takes |
+|---|---|---|---|
+| Senses (eyes, ears) | Sees in the dark and far off, restores lost hearing | Always draws a little | Surgery near the skull, delicate circuit boards |
+| Arms and hands | Replaces a lost arm or hand, grips and lifts heavy things | Some are electric, some body-powered | A fixing point set in the bone, regular repair |
+| Legs and feet | Replaces a lost leg, carries loads on stairs and snow paths | Some are electric, some body-powered | A fixing point set in the bone, joint parts |
+| Trunk organs | Assists a weak heart or lungs | Must never be cut off | The largest surgery, a clean room, uninterrupted power |
+| Spine and nerves | Carries the body's signals to other machines | Always draws a little | Major surgery, a clean room |
+| Frame and skin | Reinforces bone, plates the trunk and head | Draws nothing | Major surgery, a body that can bear the added weight |
 
-| Place | What gets replaced or added | What it usually needs |
+Two rules hide in this table.
+
+1. **Some machines stand on others.** Hands and feet that move by thought need a machine in the spine-and-nerves place. So whoever can fit a machine in that place decides what else that body can be given later. It is the most closely guarded surgery in Seoul.
+2. **Over time, the simple one wins.** A body-powered hand needs no charging and can be repaired with cord and springs at any Free City workbench. An electric hand does more, but stops along with its battery and circuit board. Many porters, pump workers and entrance keepers choose simple hands and feet on purpose.
+
+## Fitting
+
+There are three kinds of room for fitting machines.
+
+| Room | Work | How many in Seoul | Who holds them |
+|---|---|---|---|
+| Fitting bench | Attaches or swaps an outer machine on an existing fixing point | Hundreds. At every large workbench and maintenance bench | All three polities |
+| Surgery room | Sets fixing points in bone, opens sense places | about 40 | Arc about 20, Free Cities about 14, Government about 6 |
+| Clean room | Spine-and-nerves and trunk-organ surgery. A room with unbroken power and filtered air | 9 | Arc 6, Free Cities 2, Government 1 |
+
+Three of the Arc's six clean rooms are revived underground surgical suites of the old large hospitals at Irwon, Banpo and Songpa. Those hospitals' deep basements were one reason the shelters of Gangnam could endure decades behind closed doors. The Government's one clean room is in the basement of an old large hospital in Jongno, and is reserved for Assembly Member households and the President.
+
+Fitting puts lives at stake.
+
+| Surgery | Days taken | Dying in surgery or the first month | Until it takes |
+|---|---|---|---|
+| Attachment | Half a day | Almost none | A few days |
+| Setting a fixing point (arm, leg) | One day | about 2% | Three to six months. The limb cannot be worked with meanwhile |
+| Sense place | One day | about 3% | One or two months |
+| Spine and nerves | Two days | about 6% | Six months |
+| Trunk organ | Two days | about 10% | Six months, living close to a maintenance bench throughout |
+
+## Maintenance
+
+Maintenance starts the day a machine is fitted and does not end until the wearer dies.
+
+| What | How often |
+|---|---|
+| Skin care at the fixing point (wash, cover, inspect) | Daily. Done by oneself |
+| Inspection of electric machines | Every 30 days. At a maintenance bench or workbench |
+| Inspection of body-powered machines | Every 90 days |
+| Repair (moving parts, cords, joints, covers) | About 1.5 times a year per machine |
+| Replacement of moving parts | Every 2 to 3 years |
+| Circuit boards and sensing elements | Never replaced. When one dies, a live one is transplanted |
+| Battery pack | A revived pack is changed every 3 to 5 years |
+
+A person who skips maintenance loses the skin at the fixing point first, then the joint, and the circuit board last. So whoever holds the maintenance turns holds the day of everyone who wears a machine. The Arc counts one 30-day inspection as one **maintenance turn**, and sells turns to people outside the polity too.
+
+## Electricity
+
+One baptised person of the Arc uses on average 8 W to charge the machines on their body. Over a day that is about 0.2 kWh, which the Arc calls a **day charge**. Looking at one electric machine alone, a hand draws about 12 W and a leg about 14 W.
+
+Charging is done only on warm levels, because a battery charged below freezing is damaged inside. Most people plug the machines on their body into the charging rack beside their bed and sleep. One charge lasts an electric hand about a day and a leg about a day and a half. People going up to the surface carry a spare pack inside their clothes.
+
+When power is cut, the machines of the limbs and senses simply stop. A person lives on with one hand or one eye fewer. A machine assisting a trunk organ is different. It alternates between two batteries and is never cut off even for a moment; if both run empty, the wearer dies within hours. So a person with a machine in a trunk organ never goes more than half a day's walk from a maintenance bench and a charging rack. This is the strongest tie binding a person who wears machines to their polity.
+
+At Jamsil, 900 of the station's about 3,100 people are baptised. That is far above the Arc's average, because the baptised gather at the station that the electricity of the Jamsil weir water wheels reaches. The Arc's 88 kW of charging is about 22% of the 400 kW the wheels give when running well. The north end of the weir is in Government hands. For the Arc, the north end of the weir is the day of eleven thousand baptised people.
+
+## Rejection and infection
+
+A body may refuse a machine. Seoul divides this into three.
+
+| What | How | How often |
 |---|---|---|
-| Head and senses | An eye that sees in low light, a hearing aid set into the bone, a jaw rebuilt after a fall | A charged cell, a clean seal at the skin, a technician who knows that model |
-| Spine and nerves | A base implant at the neck or the back that carries signals to other parts | Major surgery, a sterile room and steady power. Most other powered parts won't work without it |
-| Arms and hands | A whole arm, a hand, or fingers for fine work | A socket fixed to the bone, regular repair, a cell for powered models |
-| Legs | A leg below the knee, a whole leg, or a reinforced foot | A socket fixed to the bone, joint parts, weekly checks after long walks |
-| Torso and organs | A pump that helps a failing heart, a filter that helps a lung | Constant power and the most careful upkeep of all |
-| Skin and skeleton | Plating over the ribs, braces along the long bones | Major surgery, and a body strong enough to carry the extra weight |
+| Fixing-point infection | Germs enter through the fixing point that comes through the skin. Seoul can hardly make antibiotics. The Arc and a few Free City stations grow a little medicine from moulds beside the fibre-sugar vats, but it is always short | With daily care about 8% a year; without care about 35% within two years |
+| Rejection that forces removal | Infection reaches the bone, the fixing point turns under load, or the nerve signal fades | About 4% a year with good care; about 15% without access to maintenance |
+| Cold wounds | Metal freezes faster than flesh. Frostbite sets in where machine meets flesh on the surface | Surface workers must wrap their fixing points. One day forgetting the wrap becomes a whole half-year's wound |
 
-Two rules shape the whole table.
+Once a machine is removed, fitting one again in that place is harder. A second fixing point is less likely to take than the first, and a third hardly ever takes.
 
-First, some parts stand on others. A powered hand that answers to thought needs the base implant along the spine. Whoever can fit that base controls what can be added later, so it's the most guarded work there is.
+In this world machines do not drive people mad. The price is paid in body and in days: the ache at the fixing point, the itch or pain of a hand that is not there, daily skin care, maintenance every 30 days, and a life that cannot leave the maintenance bench.
 
-Second, simple beats clever over time. A hand driven by the body's own pull on a cable needs no charge and can be fixed with a file and a spare spring. A powered hand does more, but it dies with its cell. Many porters and pump workers choose the simple one on purpose.
+## How the three polities treat machine bodies
 
-## Who Fits It
+- **The Government.** The Government has nowhere to repair electric machine bodies. Government clinics can set fixing points and attach body-powered limbs, but fitting and maintaining electric machines means leaning on the Arc's maintenance benches. So the Government keeps a **machine-body registration**. A person fitted under a permit from the Ministry of Health and Welfare has "machine body" and their place of maintenance written in their ledger entry, and passes through the under-river tunnel checkpoint to an Arc maintenance bench only on the permitted days. Fitting a machine without a permit, and receiving the Arc's baptism, are grounds for a strike-off hearing. Government papers separate a permitted machine, which is medicine, from baptism, which is joining a body off the ledger. Few Government people are sure the two are really different.
+- **The Free Cities.** The hands that repair machines are most numerous in the Free Cities. Board hands repair circuit boards and moving parts, and quietly repair Government people's body machines too. Fixing-point care and surgery, however, happen only where there are surgery rooms and clean rooms. Free City people often choose body-powered limbs.
+- **The Arc.** Changing one place of the body into a machine is one baptism. The number of changed places is the part count, and the Arc counts it as the measure of faith. A part belongs to the faith that fitted it, so a baptised person carries and uses their parts but may not sell or give them away. A machine fitted across the river or in the Free Cities counts as a part only after it is refitted at an Arc maintenance bench.
 
-Fitting a part takes three kinds of room. A fitting room can attach an outer part to an existing socket or swap a hand. A surgery can set a socket into bone. Only a sterile room with steady power can place a base implant or work on the torso. Sterile rooms are few, and each one belongs to somebody.
+## Death and return
 
-### The Government: State Clinics and the Registry
+When a person dies, the machines of the body go different ways in each polity.
 
-North of the river, the Government recognises only the people in its ledgers. Cyberware follows the same line. The Government's clinics sit in the larger stations, and each one works under the Senator who holds that district. A person in the ledgers can be granted a part, and the grant is written in the registry beside their name, their work and their household.
+| Polity | Rule |
+|---|---|
+| Government | Machines on the ledger return to the Government clinic. "Attachments returned" is written in the ledger entry. Machines not on the ledger are confiscated |
+| Free Cities | A machine is the wearer's own. As the contract says, the household inherits or sells it. If the wearer went into debt for the fitting, the workbench that lent takes it first |
+| Arc | Machines return to the maintenance bench, are reworked and used in the next baptism. When a believer dies, the brain is sealed and placed in the sanctuary, and that brain becomes a memory of the First AI |
 
-The registry is how the Government knows who carries what. Every part on the list is tracked through repair and return. When a registered worker dies, the part goes back to the clinic. Someone outside the ledgers has no claim on any clinic, and a part fitted elsewhere doesn't appear in the registry at all. People call that kind of metal unlisted, and an unlisted part makes its carrier a person the Government doesn't see.
+## Price
 
-### The Free City: Guild Surgeons and Markets
+Body machines are scarce. Here are the winter 2126 prices on the rate board of the Yeongdeungpo market, in kilos. At the market a day's meals and water cost 1.5 kilos.
 
-In the southwest, most people are engineers who trade materials and skill. Cyberware is part of that trade. Surgeons there belong to guilds of their own trade, learn from a parent or a master, and sell their work like any other repair. Parts move through the markets of the cities: new-looking ones salvaged from sealed stores, secondhand ones taken from the dead, and rebuilt ones that are mostly patches.
-
-The market is open, which is its strength and its danger. Anyone who can pay can be fitted. But a secondhand hand may have a cracked socket, a rebuilt eye may run hot, and nobody in the market is obliged to take a bad part back. A careful buyer pays a guild surgeon they know rather than the cheapest stall.
-
-### The Arc: Baptism
-
-In Gangnam, the faithful replace parts of the body with machines, and that is baptism. In the Arc, faith is counted by the number of implanted parts. The first twelve were baptised around 2117, and since then a part in the body has meant something more than a repair.
-
-Because a part is a sign of faith, the Arc puts its resources into bodies first. Its people fit, maintain and replace parts for the faithful. What happens inside the Arc beyond that is the Arc's own business, and it doesn't share it with outsiders.
-
-## Keeping It Working
-
-A fitted part isn't finished. It's the start of an upkeep that lasts as long as the person does.
-
-### Maintenance
-
-Most limbs need repair once or twice a year and replacement every couple of years, sooner for people who climb, haul or fight. Every station that relies on machine bodies keeps a repair queue, and a place near the front of it is worth more than a week of rations. Technicians are few and train mostly their own children, so the queue gets longer as the population shrinks.
-
-### Power
-
-A powered part runs on a cell, and the cell is the weak point. A powered hand usually lasts a long working day on one charge. In deep cold, cells lose their charge fast, and many can't be charged safely below freezing at all. People carry spare cells inside their clothes against their bodies and charge them in the warmest rooms of the station. In a winter that never ends, a powered part is only as good as the warm place where its cell waits.
-
-### Spare Parts
-
-Nothing new is made in any number. Every joint, seal and cell comes from salvage, from a store or from another body. A part that can't be serviced is a burden. The stations learned that the hard way, and the people who hold the stores and the salvage routes decide who keeps moving.
-
-## What It Costs
-
-### The Body
-
-Where metal passes through skin, there's a wound that never quite closes. It has to be cleaned every day. Infection is the commonest danger, and the medicine that treats it is rationed like water. A bad infection can cost the part, and sometimes the limb above it. Heavy parts strain the bones that hold them, and a socket that turns under load has to come out.
-
-### The Mind
-
-The cost doesn't stop at the body. People who've replaced a hand rarely change. People who've replaced most of themselves often say the world feels farther away, that warmth and touch arrive late, that they've stopped minding things they used to mind. The change builds up with each part. Taking parts out helps some people a little, but not all, and not completely. Families watch for it, and most stations treat it as a reason to slow down rather than as a disease.
-
-### The Debt
-
-Every part ties its carrier to whoever keeps it running. In the north, that's the clinic and the registry. In the southwest, it's a surgeon's account in a market. In the Arc, it's the faith. Nobody in Seoul owns a machine body outright. They hold it on terms.
-
-## Drones and Arms Under Scarcity
-
-Seoul has fewer people every generation, and the winter doesn't end. Even so, modern equipment, drones and firearms still work. They're scarce because what they eat is scarce, not because they've stopped working.
-
-### Firearms
-
-Rifles, pistols and shotguns came down into the stations with the people who carried them, and they still fire. What runs short is ammunition. Brass casings can be picked up and filled again many times, but the primer and the powder are spent once, and the primer is the hardest part to make. A station that can recover brass, cast bullets and get primers decides how often its guns speak.
-
-### Drones
-
-Small drones still scout station exits and watch the tunnels. Their limit is the cell, and cold makes it worse, so drones are kept warm, flown briefly and brought back down. Radio drones can be jammed. A drone that unspools a fine cable behind it can't be jammed, but it's tied to the length of its line, which suits the tunnels better than the open surface. Against drones from the other side, the cheapest defence works best: nets and wire over the exits, so a diving machine tangles before it reaches anyone.
-
-The machines outside Seoul still fly on their last orders. People who go far on the surface keep that in mind.
-
-### Each Faction's Bottleneck
-
-| Faction | What runs out first | What that means |
+| Item | Rate-board price | In days of meals and water |
 |---|---|---|
-| Government | Ammunition and fuel | The more guns and armoured vehicles it fields, the faster the stores empty |
-| Free City | Cells and machine parts | Drones and repairs tie up every charged cell and spare joint |
-| Arc | Implant parts and medicine | Its baptised fighters are strong, but when parts stop coming they weaken together |
+| Body-powered hand | about 60 kilos | about 40 days |
+| Electric hand | about 300 kilos | about 200 days |
+| Electric leg | about 375 kilos | about 250 days |
+| Sense-place machine (one eye) | about 225 kilos | about 150 days |
+| Machine assisting a trunk organ | about 900 kilos | about 600 days. Almost impossible to obtain |
+| Spine-and-nerves machine | about 1,200 kilos | about 800 days. Almost impossible to obtain |
+| Surgery setting a fixing point | about 45 kilos | about 30 days |
+| Clean-room surgery | about 180 kilos | about 120 days |
+| Maintenance of a body machine (one year) | about 15% of the machine's price | |
 
-## Related Pages
+Fitting one electric hand and keeping it through the first year, counting the machine, the surgery, maintenance and charging, comes to about 330 days of meals and water: nearly a year's work for an ordinary worker. So in all three polities a machine body is not something an individual buys. A polity, a household or a workbench grants it, and whoever grants it holds that body.
 
-- [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/)
-- [Lost Technology](/wiki/Lost-Technology-Lineage/)
-- [People and Machines](/wiki/People-and-Machines/)
-- [Synthetic Social Personas](/wiki/Synthetic-Actors/)
-- [Ailments and Symptoms](/wiki/Ailments/)
-- [The Three Factions of Seoul](/wiki/Sixteen-States/)
-- [Century Annals](/wiki/Century-Annals/)
+## Read together
+
+- [What Still Runs](/wiki/Lost-Technology-Lineage/): the four words of technology and Seoul's electricity
+- [Ailments of the Cold](/wiki/Ailments/): fixing-point infection and cold wounds
+- [Arc Society](/wiki/Arc-Society/): baptism and the part count
+- [Government Society](/wiki/Government-Society/): machine-body registration and striking off

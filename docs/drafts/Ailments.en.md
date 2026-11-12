@@ -1,99 +1,75 @@
 ---
-model: cpa/glm-5.3; 0 completion calls; replacement sentences written by the agent and applied by a script (docs/drafts/reports/w3-d-replace.mjs); not from a Gemini model (edited lines: sixteen-states control phrase, 2030-10-14 date, November 6 date)
+title: Ailments of the Cold
+title_ko: 추위의 병
+model: claude-opus-5-5; v3 task 13, rewritten by hand from 01-core 3.1, 4.1 and 5, 03-technology 4.5, 02-ecology G04, G05 and 3.4, 04-government 13.4, 05-free-city 10.4, 06-arc 6.3 and 8
+section_checkpoint: v3 task 13 complete
 ---
+## The cold kills first
 
-**A. Where disease starts**
+In the eternal winter of Seoul, what kills most people is neither beast nor machine but cold. The yearly average on the surface is minus 18 degrees; in the short-day half of the year it averages minus 25, and on a blizzard night it falls to minus 38. The platform level where people live is a warm 8 to 14 degrees and the deep tunnel level 12 to 16, but the concourse near the entrances is 0 to 6. Most illness in Seoul grows out of these differences of depth.
 
-In 2026, Seoul's tap water was supplied through treatment centers and pipes. Hospitals and clinics managed stock by the essential-medicines list. Asbestos, mold and machine coolant were present in the subways, schools and apartments. On the night of [The Great Blackout](/wiki/World-Unbinding/), remote control and grid power were cut. After that, human watches took over water supply, medicine and contamination control.
+## Frostbite and hypothermia
 
-**B. Causes in the timeline**
+**Frostbite.** Fingers, toes, ears and the tip of the nose freeze first. At first they turn white and hard and lose feeling; thawed, they swell and blister. Flesh frozen deep dies black and must be cut away. People in Seoul who have lost fingers or a foot are not rare. A limb lost this way is often the first reason a person has a machine fitted to the body.
 
-[The Scenario Timeline](/wiki/Scenario-Timeline/) did not treat nuclear war, climate collapse or plague as first causes of disease. In 2126, when a cough patient appeared in a concourse, the medical officer inspected the tanks, the medicine chests and the damp walls first. In summer, patients from turbid water and counterfeit medicine increased first. When water ran short, medical convoys ran late. When medicine ran short, trust in the ration windows fell.
+**Hypothermia.** Cooling to the core. First comes shivering, then slow speech and clumsy hands, and at last the shivering stops and sleepiness comes. A person who has stopped shivering is already in danger. Seoul people teach their children, "Do not let someone who has stopped shivering fall asleep."
 
-## Waterborne Disease
+The place where cold kills most is the road to dig fibre. Fibre-digging crews walk 1 to 3 kilometres over the snow from their station to dig into buried offices and warehouses. Caught by a blizzard on that road, they do not come back. A blizzard, once it comes, lasts two to four days, with wind above 25 metres a second. So all three polities stop surface work when a blizzard comes. Surface workers go up in twos or more, and in the long-dark half no one stays on the surface longer than two hours at a time.
 
-**A. The water treatment system**
+**Where metal meets flesh.** People who wear machines have one more cold wound. Metal freezes faster than flesh. On the surface, frostbite sets in at the fixing point where machine meets flesh. Surface workers must wrap their fixing points. One day forgetting the wrap becomes a whole half-year's wound.
 
-In 2026, Seoul's drinking water came from a system that treated raw Han water and sent it through pipes. The Yeongdeungpo Arisu treatment center supplied Gangseo, Guro, Geumcheon and Yangcheon; Ttukseom supplied Seongdong, Jung-gu and Yongsan; Guui supplied Gwangjin, Jungnang and Dongdaemun; Amsa supplied Gangnam, Gangdong and the southern districts. The Gangbuk center was in Namyangju and the Gwangam center in Hanam. Both lay outside Seoul, beyond the easy reach of [the three factions of Seoul](/wiki/Sixteen-States/).
+## Foul air in deep stations
 
-**B. Operation after the Great Blackout**
+The deeper, the warmer; the deeper, the harder to breathe. How many people a station can hold is set by the smallest of four limits: space, heat, water and air. Each person needs 3 litres of outside air a second. In winter the difference in temperature between the warm station and the cold outside moves air of its own accord, but only as far as entrances and vents are open. The deep levels need fans, and fans eat electricity.
 
-In the Great Blackout, around 2026, remote control failed at the Yeongdeungpo waterworks. The staff manually started the emergency generator and Han Jeonghun operated valves by hand. That year, Yeouido vault representatives supplied two generator parts.
+The sickness of a station short of air comes slowly. Heads are heavy in the morning, people are drowsy even by day, and the slightest effort leaves them short of breath. Children, the old and the sick tire first. Seoul children learn, alongside how to climb an entrance ladder and not to touch wires, "how to tell when the air is going bad" before anything else. When a fan stops or a blizzard blocks the entrances, the Stationmaster, the Station Foreman or the Bench Keeper empties the beds on the deep level first.
 
-**C. Symptoms**
+People's breath is not the only thing that fouls the air.
 
-The main symptoms of waterborne disease were diarrhea, fever and dehydration. As patients increased, the ration lines stopped and the work crews shrank.
+- **Methane.** Cooking is done with gas from fermented dung and food waste. A leaking methane tank gives headaches, and gathered gas explodes.
+- **Burning scrap.** Burning things with poisonous smoke, such as plastic sheeting, tyres and asphalt, is done only in the exhaust shafts above the concourse. Burning such things on a platform makes people collapse.
+- **Powder smoke.** Firing a powder gun leaves smoke and poisonous gas. So none of the three polities fires powder guns on the platform level where people live.
 
-**D. Tanks and drinking water**
+## Fibre-sugar sickness
 
-Station tanks raised carp, crucian carp and catfish (hereafter "tank fish"). The water that raised the tank fish and the drinking water were drawn from the same tank. When waste from the rearing cells mixed into the drinking water, the turbid water went into that evening's soup. Tank operation is recorded in [Food Culture](/wiki/Food-Culture/), and the sluices and treatment plants in [Structures](/wiki/Structures/).
+About 60% of the calories in Seoul's meals come from fibre sugar and yeast. Shredded paper, cardboard, wood and cotton are fermented with mushroom enzymes into sugar water, and part of it raises yeast. The vats only work warm. But when a vat cools, when other germs get into a poorly washed vat, or when mouldy fibre goes in, the vat sours. People who eat porridge from a soured vat suffer stomach pains and diarrhoea. In a station where water is precious, diarrhoea is no small illness. Children and the old waste first.
 
-**E. The first summer**
+So keeping the fibre-sugar vats is both keeping the meals and keeping illness away. Vat keepers check the smell and froth of each vat every day, and send a soured vat to the methane tanks, however much it hurts to lose it.
 
-In 2124, a box of counterfeit medicine appeared at a Seoul Station auction. Ryu Eunbi cut off all White Cross transactions at that auction. Jeong Hojun opened the seal of a sample in the Yangjae archive.
+## Illness carried by animals
 
-**F. The Flood-Mold Breath Cluster**
+- **Rabies from raccoon dogs.** The [raccoon dogs](/wiki/Hostile-Group-G04/) that live in the old pipes and ventilation ducts of riverside stations carry rabies and mange. A person bitten by a mad raccoon dog usually dies, because the medicine to treat it is scarce.
+- **Haemorrhagic fever from rats.** The [rats](/wiki/Hostile-Group-G05/) that live on the platform level of every inhabited station carry haemorrhagic fever with renal syndrome. It is an illness of high fever, bleeding marks under the skin and damaged kidneys. Rats spoil fibre-sugar vats and mushroom cellars and eat into the meals, and gnaw wires until the lights and heat pumps stop. Rat-catching is one of the trades inherited in every polity.
 
-The [Flood-Mold Breath Cluster](/wiki/Hostile-Group-G10/) (hereafter "the Cluster") arose from repeated flooding in the Bukhansan Bogukmun corridor and the lower logistics warehouses of Garak and Jamsil. The name referred to an ecology and did not denote a social class. Wet concrete, the heat of grain and late ventilation increased the number of cough patients.
+## Bodies short of light
 
-## Side Effects of Stockpiled Medicine
+There is a sun, but the light reaching the surface is about a quarter of what it was before the Great Blackout. And people live underground, seeing little even of that. So an illness that softens the bones is common in Seoul. Children's legs bow and their teeth come late; adults' bones break easily. Households that eat fish often suffer it less. People say the children of Dongjak, who fish through holes in the river ice, and of the riverside Arc stations have straight legs. Households that cannot get fish send their children up with the surface workers to sit in the daylight.
 
-**A. Stockpiles in 2026**
+## Treatment where medicine is scarce
 
-In 2026, Korea managed state stock by the essential-medicines list. Antibiotics, antipyretics and fluids were stored separately in hospitals, clinics and military medical stores. Preparations that needed refrigeration, such as insulin, were also on the list. The Jegi-dong medicinal-herb market traded herbal medicines and general pharmaceuticals together.
+Seoul can hardly make antibiotics. The Arc and a few Free City stations grow a little medicine from moulds beside the fibre-sugar vats, but it is always short. The rest of the medicine comes from hospitals and stores of before the Great Blackout. The basements of buried large hospitals still hold medicine, bandages and medical tools, but there the [Care Wheels](/wiki/Hostile-Group-G15/), which keep the old patient lists, lie asleep. A person who goes in alone is shut in and freezes to death.
 
-**B. Remaining packages and the sorting block**
+| Polity | Where the sick are cared for |
+|---|---|
+| Government | The Ministry of Health and Welfare's health posts and medical corps. "Doctor" is a name left from the medical ranks of the Republic of Korea. Medicine is shared out by ration grade |
+| Free Cities | Body fitters and workbenches that handle medicine. Treatment is a contract too, paid in hand-hours and kilos. But just as each station's Station Foreman keeps an "empty vat", there is a share that keeps those who could not work from going hungry |
+| Arc | Maintenance benches and recovery carers. Food and beds are shared by need, not rank, so the sick, and those newly baptised whose bodies are still taking to the machine, eat first |
 
-White Cross medics check drug seals and storage. When a counterfeit medicine box appeared at a Seoul Station auction in 2124, leader Ryu Eunbi ended all of the group’s transactions there.
+People who wear machines have one more illness: fixing-point infection. With daily care about 8% are infected in a year; without care about 35% within two years. When infection reaches the bone, the machine must come out, and fitting it again is harder. Details are in [Machine Bodies and Scarcity](/wiki/Cyberware-and-Scarcity/).
 
-**C. Checks before dosing**
+## Death
 
-The medical officer checked the sealing tape before dosing. Discolored tablets and syrups whose layers had separated went to the disposal cells. At stations where the ration ran late, some people took the 2026 stockpile without any check.
+In the cold nothing rots. Frozen ground cannot be dug, and wood is too precious to burn. The three polities lay their dead to rest in different ways.
 
-**D. Symptoms by case**
+| Polity | How the dead are laid to rest |
+|---|---|
+| Government | When the head of household reports the death, the Dong Chief draws one red line through the name in the ledger. The next morning the name is read during the moment of silence in the national ceremony. The body is buried in the surface snow cemetery appointed for each district. Bodies and the clothes of the dead never go into the fibre-sugar vats |
+| Free Cities | The dead are dressed in a cotton shroud and laid on an old platform that people have left and that has frozen, a frozen station. The ice keeps them as they are. At the funeral the dead person's workbench seal and tools pass to the child who will carry on |
+| Arc | The machines of the body return to the maintenance bench to be used in the next baptism. The body is carried up to the surface and laid on the shelter's snowfield. When a believer dies, the brain is sealed and placed in the sanctuary, and that brain becomes a memory of the First AI |
 
-Medics screen out medicine with damaged seals or poor storage conditions before administering it. In 2124, Jeong Hojun opened the seal of a counterfeit medicine sample in the Yangjae archive.
+## Read together
 
-E. The 2124 counterfeit medicine auction
-
-In 2124, a box of counterfeit medicine appeared at a Seoul Station auction. White Cross leader Ryu Eunbi ended all of the group’s transactions at that auction.
-
-## Hazardous Environments After the Blackout
-
-**A. Asbestos**
-
-Asbestos was used as insulation and fireproofing in subway concourses and platforms, school special rooms and the ceilings of 1970s and 1980s apartments. While grid power ran, sealing paint and ventilation kept the dust from spreading. After the Great Blackout the pumps stopped, and flooding soaked the ceiling materials. Once the materials dried and people passed through, the fibers rose.
-
-**B. Mold and condensation**
-
-An explorer put on breathing protection and a lamp before opening a deep tunnel. The trade zone's equipment list began with those two items. Mold grew on the same walls as asbestos. When quarters behind on the ventilation roster, the heat of ration grain and condensation-beaded drinking pipes came together in one block, coughs and stinging eyes appeared first.
-
-C. Damp walls and ventilation
-
-Mold grows on flooded walls and in shelters with delayed ventilation. Medics inspect damp walls and medicine cupboards when cough patients appear in a concourse.
-
-**D. Coolant**
-
-Coolant was kept off the drinking-water ledger. When the liquid left in depot heat exchangers, substation cooling loops and medical refrigerators stagnated, a film formed on the metal. The sensors then showed normal readings while the far branch pipes clogged. The field called that film the Coolant-Index Fungal Body.
-
-**E. Separate ledgers**
-
-The drinking-water and coolant ledgers were kept apart even in front of the [G19](/wiki/Hostile-Group-G19/) swarms or the equipment of [the old technology](/wiki/Lost-Technology-Lineage/). When a watchman poured coolant into a tank, waterborne disease spread.
-
-**F. Limits on low-floor living**
-
-First floors south of the Han and along the tributaries were used as monsoon storage or left empty. Living quarters were on the third floor and above. The ration windows were moved into [buildings inside the embankment](/wiki/Building-Reuse-Geography/). The medical officers' patients were mostly people who had slept on a wet first floor, used a special room full of asbestos dust as quarters, or washed in a coolant puddle.
-
-**G. Entering station interiors**
-
-[Machines](/wiki/People-and-Machines/) and people worked in the same air. Anyone who entered a [station interior](/wiki/Station-Interior-Construction/) whose ventilation and water supply had not been checked breathed contaminated air and touched contaminated water.
-
-| Layer | 2026 starting point | The symptoms remaining in 2126 |
-|---|---|---|
-| Waterborne disease | Han treatment, station tanks, flooded tunnels | Turbid water, diarrhea and dehydration, the mixing of tank aquaculture and drinking water |
-| Stockpiled medicine | Essential-medicine remnants, Jegi-dong herbs, cryo-cell sorting | Efficacy-less doses, counterfeit medicine, preparations cut from refrigeration |
-| Hazardous environments | Asbestos ceilings, condensation and mold, chiller coolant | Respiratory irritation, damp quarters, cooling loops mixed into drinking water |
-
-## Sources
-
-- Economy, Production and Logistics Rules
+- [Machine Bodies and Scarcity](/wiki/Cyberware-and-Scarcity/): rejection and infection, cold wounds
+- [The Great Blackout and the Eternal Winter](/wiki/World-Unbinding/): temperatures by depth and blizzards
+- [Meals and Food](/wiki/Food-Culture/): fibre sugar and light-fields
+- [Hostile Ecology Index](/wiki/Hostile-Ecology-Index/): animals that carry illness and sleeping machines

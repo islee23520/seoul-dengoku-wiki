@@ -1,89 +1,99 @@
 ---
-title: The Structures Compendium
-title_ko: 구조물 총람
-model: claude-opus; rewritten by hand by the task 8 executor agent; 0 completion calls
-section_checkpoint: complete
+title: Structures
+title_ko: 구조물
+model: claude-opus-5-5; v3 task 13, rewritten by hand from 01-core 3.3, 4 and 5, 03-technology 2 and 7.3, 04-government 14.4, 05-free-city 7.1, 06-arc 8.1
+section_checkpoint: v3 task 13 complete
 ---
+## Structures on the snow and underground
 
-Seoul in 2126 isn't a flat map of districts. It's a web of stations, tunnels, depots and sluices. In 2026 people already crossed districts by subway, and the purification plants and depots were the heavy points of that web. On the night of [the Great Blackout](/wiki/World-Unbinding/), remote control stopped. Then the winter came and didn't leave. People went down into the stations, and only as many survived as the stations could hold. Stations became strongholds, tunnels became passages that need permission, and sluices became gates that open only under signature.
+In 2126 the surface of Seoul lies under 6 to 8 metres of hard-packed snow. In the gaps between buildings, such as the great avenues, it has drifted more than 10 metres deep, and most buildings are buried to the second floor. People live in the stations underground. Still, a station lives only if it is joined to the surface, because the air to breathe, the water to drink, the light that grows food and the electricity that turns machines all come from above or outside. This page covers the structures people raise and keep to endure the winter.
 
-A century on, the three factions hold these points and lines as the places where they live. The Government holds the fourteen districts north of the river, the Free City the seven in the southwest, and the Arc the four in Gangnam. Each faction's holding goes by its district's name: the Government calls a district an Electorate held by a Senator, a Free City district is a Polis led by an Archon, and an Arc district is a Gate held by one of its clans.
+## Entrance shafts
 
-The [Rail Station Catalog](/wiki/Seoul-Station-Catalog/) records 334 observed station names for 315 stations. [The Structure of the World Map](/wiki/World-Map-Construction/) records the 25 districts and how they fit together, and the [World Map](/wiki/World-and-Subway-Layers/) records six layers. How buildings are reused is in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
+A station's entrance is a vertical shaft cut down through the snow. When snow piled over the old subway entrances, people cut shafts above them and fitted stairs and ladders. Large stations have one or two rope winches, entrance winches, that hoist goods and people. They are cranked by hand or by electricity.
 
-## Stations
+Keeping one entrance open is daily labour. Shovelling out the snow that blew into the shaft overnight, breaking the ice off the ladders, mending the nets strung over and around the shaft. The nets keep out drones and birds. A blizzard blocks the entrances, and when it passes, the entrances are the first thing dug out.
 
-### Station Strongholds
+An entrance is also a station's breathing hole. In winter the difference in temperature between the warm station and the cold outside moves air of its own accord, but only as far as entrances and vents are open. So whether to close an entrance decides how many people a station can hold. In the Government the Stationmaster decides; in the Free Cities, the Station Foreman. The number of closed entrances shows how worn out a station is.
 
-A station is where people, plant and connections are kept running. In a neighbourhood with a subway station, the station is the core facility. Rations, tolls, lodging and refuge are handled there. Schools, community centres and hospitals above ground support it. North of the river, passes for Jongno and Jung-gu carry the stamp of the old government complex at Gwanghwamun. Amsa administers water and escort protection from its platform. Sindorim is the bottleneck between Yeongdeungpo and Guro, and Suseo has a southern depot and contract offices.
+## Light-fields
 
-A station has six layers: surface ruins, the concourse, platforms and tracks, transfer passages, deep tunnels and the areas beside the depots. Markets, homes and offices fill the concourse. People and freight move along the platforms, and tolls are collected in the transfer passages. What each station holds inside is in [Entering the Station Interior](/wiki/Station-Interior-Construction/).
+A light-field is a greenhouse on the surface around a station entrance: a pit dug in the ground, banked with snow walls and roofed with a clear cover. Inside it is 0 to 8 degrees. Cabbage, turnip, mustard greens and barley are grown, and the beans and barley harvested are sprouted underground. About 12% of the calories in Seoul's meals come from light-fields.
 
-### Heat and the Cold Above
+A light-field burns no fuel of its own. Daylight and the heat stored in the soil of the banks do most of the work, and at night it is covered with snow covers. The shortfall is made up by routing into the light-field the heat that leaves people's bodies in the station and escapes with the ventilation. One person's breath keeps about 90 m² of light-field. So a light-field and its station are one body. The more people in the station, the warmer the light-field, and guarding the light-field is the same as guarding the entrance. All of Seoul's light-fields come to about 27 km², about 90 m² for each person.
 
-The surface belongs to the cold. Every station keeps its warmest rooms deep, where the earth holds heat, and that's where cells are charged, the sick are treated and the old sleep. Exits are kept few and narrow. Over the busiest ones, stations stretch nets and wire so that a diving drone tangles before it reaches anyone. Keeping those nets mended is ordinary work, like clearing snow.
+Large-billed crows peck at light-field roofs and wild boar dig at the banks. Nets are strung over light-fields too, and the light-field keepers check the roofs and banks every day. The Government, with the most surface land, has the widest light-fields, and Nowon-gu has the widest of any district. Among the Free Cities, the plains of Gangseo are good for spreading light-fields wide. The Arc, with little surface land, has small light-fields.
 
-## Tunnels
+## Wind fields
 
-### Track and Repair Status
+More than half of Seoul's electricity, about 3.6 MW, comes from wind machines. The wind blows mostly from the north-west, averaging 6 to 8 metres a second in open places and about 30% stronger along the Han. So wind machines stand on bridges, on riverbanks and on the tops of buried buildings.
 
-The lines between stations are kept. Only their state changes: open, hazardous, controlled, blockaded, flooded, collapsed or under temporary repair, each with a cause and a condition for reopening. Yeongdeungpo to Sindorim and Sindorim to Guro are adjacent on the map, and no line jumps straight from Yeongdeungpo to Guro. The full catalog lists 435 adjacencies drawn from map points.
+| Wind field | Who holds it |
+|---|---|
+| On bridges and the north riverbank | The Government, run by the Ministry of Climate, Energy and Environment. But the hands that build and repair the wind machines belong to the Free Cities |
+| The western riverside plains of Gangseo (Magok, Gayang) | Gangseo. Few buildings are buried there, so wind machines can stand in rows. Gangseo makes the most electricity of the Free Cities and sells the surplus by cable to Yangcheon and Yeongdeungpo |
+| The tops of buried buildings in Gangnam | The Arc. With wind power bought from the Free Cities, one share of the Arc's electricity |
 
-When a transfer station loses power, electric freight stops even if both tunnels are sound. Under temporary repair, only people on foot and light freight pass, and heavy freight and armed parties need separate approval. The deep tunnels have room for hidden movement and maintenance, but they flood and lose contact.
+Wind machine blades ice up, bearings wear, and blizzards tear the blades. So in a blizzard the blades are folded, which is why electricity falls just when the wind is strongest. There are always thieves after the wire too. Wind-machine hands, who knock ice off the blades and change bearings, do the coldest work in Seoul.
 
-Machines have repeated their last search and watch routines on the surviving track since 2026, and rat colonies nest in the cable trays under the transfer arcades. Machines that work or move beside people are described in [People and Machines](/wiki/People-and-Machines/).
+## The Jamsil weir water wheels
 
-## Depots
+The Han is frozen, but under the ice in the deep channels and in the pools above the weirs, water remains. The largest pool is above the Jamsil underwater weir. The water wheels turned by the under-ice water falling past the weir are one of Seoul's largest sources of electricity, about 400 kW when running well. On some days ice crystals in the water clog the wheels, so over a year they average about 350 kW.
 
-### The Eight Depots
+The wheels were built in the 2070s by Free City work crews together with the shelters of Songpa. Today the Arc (Songpa) holds the south end of the weir and the Government (Gwangjin) the north end. Block the north end and half the wheels stop. The roughly 88 kW that the Arc's about 11,000 baptised people use to charge the machines on their bodies depends on these wheels, so for the Arc the north end of the weir is the day of its baptised. Jamsil station is where the wheel power comes in, so it is the station where the most baptised people gather, and at Jamsil the Arc counts wheel power in day charges and trades it with outsiders.
 
-Depot size reflects the storage and maintenance of 2026. Eight depots lie inside Seoul: Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae and Suseo. Each belongs to the district holding it stands in. Jichuk, Dobong, Moran and Gimpo lie outside Seoul's boundaries.
+The river's flow falls a little each year. Since snow does not melt, the river holds only water seeping out of the ground, and that groundwater is not refilled either. The wheels' output falls slowly with it.
 
-| Depot | District | Faction |
+## Wells, mains and intakes
+
+Water comes from four places: melted snow, wells, under-ice river water and water used again. Of these, wells and intakes need structures.
+
+**Wells.** The frost line, the boundary of frozen ground, lies about 35 metres down, and wells pump up the groundwater below it. Groundwater is not refilled. Since snow does not melt, no water soaks into the ground; Seoul is drawing on the water that lay in the ground before the Great Blackout. Well water levels fall about 30 centimetres a year, and the wells of 2126 are 60 to 80 metres deep. Over the next thirty years they will fall about 9 metres more, so the wells must be dug again to 70 to 90 metres. Gwanak's drilling crews and Geumcheon's drilling rigs do that work.
+
+**Intakes.** Places that draw under-ice river water from the deep channels of the Han. They stand on the sites of old water treatment centres by the river.
+
+| Intake | District | Who holds it |
 |---|---|---|
-| Sinjeong | Yangcheon-gu | Free City |
-| Cheonwang | Guro-gu | Free City |
-| Banghwa | Gangseo-gu | Free City |
-| Gunja | Seongdong-gu | Government |
-| Changdong | Dobong-gu | Government |
-| Sinnae | Jungnang-gu | Government |
-| Godeok | Gangdong-gu | Arc |
-| Suseo | Gangnam-gu | Arc |
+| Guui | Gwangjin-gu | Government |
+| Ttukdo | Seongdong-gu | Government |
+| Yangpyeong-dong | Yeongdeungpo-gu | The Free City of Yeongdeungpo |
+| Amsa | Gangdong-gu | Arc |
 
-Depots are used for repair, bulk storage and siege. Sinjeong's unloading crews move stopped trains again, and Godeok's maintenance crews send out convoys. Changdong's wheels and brakes are leased out in neighbouring ledgers. Fish tanks and migrating birds share the drainage ponds. Repeating machines are sealed in the deep bays of the workshops. What can be done with charging terminals and hydraulic hoses is in [Lost Technology](/wiki/Lost-Technology-Lineage/).
+**Mains.** The Government holds the most of the water mains from before the Great Blackout. But it lacks the hands to keep pumps and mains alive. So every thirty years a **water supply contract** is made. The Government gives sites, labour and goods, and the Free Cities each give the maintenance and parts of the pumps and water wheels in their charge. Guro gives the large pump parts for the Government intakes and the full overhaul every thirty years; Yangcheon the rebuilding of the motors that drive pumps and water wheels; Gangseo the maintenance of the wind machines that drive the intake pumps; Gwanak the drilling crews that deepen the wells; Geumcheon drilling rigs and power cores. The winter of 2126 comes just before the third water supply contract.
 
-Depots also hold most of what's left for modern arms: fuel stores, workbenches for vehicles and the space to keep drones warm. That makes them worth fighting over. The industrial blocks of Guro and Geumcheon use schools beside the depots as drying rooms for parts. The housing blocks of Dobong and Nowon can't keep water if Changdong's supply fails.
+## Ground heat holes
 
-## Treatment Plants and Sluices
+A large share of the heat that warms the stations comes from the ground. Heat pumps draw it up from holes bored 100 to 200 metres deep. Put in 1 of electricity and you get 3 of heat. Every station has them, but the skill to bore and repair them lies with the Free Cities. Compressors wear, refrigerant leaks and the mouths of the holes freeze. Heat-pump hands handle this.
 
-### Water Plants and Their Watches
+## Under-river tunnel checkpoints
 
-Right after the Great Blackout, Han Jeong-hun, the duty head at the Yeongdeungpo purification centre, lost remote control and turned the valves by hand. His staff later moved their base to the store beneath Yangpyeong station. By most accounts, the first winter's trade of water for generator parts started there, and stations still tell it as [Water for Parts](/wiki/Oral-Stories/#2026년-물과-부품-거래).
+There are ten places where lines join the Government to the south of the river. Seven are bridges exposed to wind and blizzard; only three are warm, sheltered under-river tunnels.
 
-Ground floors on both sides of the Han, and along the Jungnangcheon, Anyangcheon, Tancheon, Cheonggyecheon and Hongjecheon, decide which neighbourhoods flood. Yeouido, Ichon, Banpo, Jamsil, Mangwon, Hapjeong, Amsa, Guui and Jayang sit on the main river. People live above the third floor and keep ration windows inside the embankment. The waterfront rules are in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
+| Under-river tunnel | Line | South side |
+|---|---|---|
+| Mapo to Yeouinaru | Line 5 | The Free City of Yeongdeungpo. The only under-river tunnel between the Government and the Free Cities |
+| Gwangnaru to Cheonho | Line 5 | Gangdong, Arc |
+| Seoul Forest to Apgujeong Rodeo | Suin-Bundang Line | Gangnam, Arc |
 
-## Passages
+After the Government tried in 2079 to cross the ice and take the Yeongdeungpo intake and was broken by a blizzard, it set ledger checkpoints at the north entrances of the three tunnels. The checkpoints look at the ledger. Soldiers check tokens before guns. Government people with a registered machine body also pass these checkpoints on their way to an Arc maintenance bench. The Arc takes in the maintenance of Government machine bodies at the south entrances of the tunnels, so that Government people do not come deep into Arc land.
 
-### Transfers and Evacuation
+The three tunnels carry talk lines, the cables along which radio runs through the tunnel. Whoever holds a talk line can listen to the talk on that stretch, so the three polities contest the talk lines in these tunnels. In a Seoul where no army crosses the river, who holds the three tunnels is itself the field of battle.
 
-Passages are where transfer, maintenance and refuge overlap. Blockades, tolls and crowding happen first in the transfer passages. Where the Gangdong and Amsa ration passages meet the Eunpyeong and Seongbuk shelter stairs, rat colonies keep warm nests. At Sindorim the junction splits into the main freight door and a maintenance passage for people and packs only. That junction isn't one of the 334 observed names in the catalog. Where the Sindorim events happen is in the [Scenario Timeline](/wiki/Scenario-Timeline/).
+## Rim watchtowers
 
-Vertical links are stairs, lifts and ventilation shafts. Flooded floors are marked with a cause and a condition for repair, and they're closed by design. The mountain refuge paths at Bukhansan Bogukmun, the herb docks at Jegi-dong and the low passages under the Noryangjin overpass join the same web from outside the stations. No connection is erased. When a state changes, the time it takes food, medicine and escorts to arrive changes with it.
+War machines from the time of the Great Blackout circle a band 2 to 10 kilometres outside Seoul's administrative boundary. For a hundred years they have kept the last order people gave them, the blockade of the capital. They treat anything moving inside the band, or crossing it, as an enemy. Seoul people call that band the rim.
 
-Garak, Gangseo, the grain market and the Noryangjin fish market sit around station strongholds. Garak is where prices are set, not where food is grown. Noryangjin depends on cold storage and ice credit, so it can't keep anything frozen when the power fails. Corner shops and clinics survive as trades around the stations.
+The Government keeps **watchtowers** looking down on the rim from the northern mountains: Bukhansan, Dobongsan, Suraksan and Buramsan. District units man them. A watchtower's work is not fighting but watching: where on the band the machines are circling, and when a blizzard is coming. The machines see movement and heat, so no fire is shown at a watchtower.
 
-| Structure | Starting point in 2026 | Work at the opening | Details |
-|---|---|---|---|
-| Station | 315 stations, concourses and platforms | Stronghold, ration window, faction seat | [Rail Station Catalog](/wiki/Seoul-Station-Catalog/) |
-| Tunnel | Adjacent track drawn from map points, transfers | Passage by permission, flooding and blockade | [World Map](/wiki/World-and-Subway-Layers/) |
-| Depot | Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, Suseo | Repair, storage, wheels, convoys, fuel and drones | [The Structure of the World Map](/wiki/World-Map-Construction/) |
-| Plant and sluice | Yeongdeungpo, Ttukseom, Guui and Amsa water plants | Water signatures, gate watches | [The Three Factions of Seoul](/wiki/Sixteen-States/) |
-| Passage | Transfers, maintenance passages, refuge stairs | Tolls, leftovers and heat, detours | [Entering the Station Interior](/wiki/Station-Interior-Construction/) |
+On the Free City side, Geumcheon's rim crew, in the city that touches Seoul's boundary, watches the rim from closest. Gangseo at the western edge, Guro at the south-western edge and Gwanak at the southern edge also face the rim. In the Arc, rim watchers keep watch outward from the border stations. The two to four days when a blizzard blinds the machines are the only time to cross the rim, and those who cross hardly ever return. Those who do return carry power cores from broken machines.
 
-## Related Pages
+## Depot workshops
 
-- [Ailments and Symptoms](/wiki/Ailments/)
-- [Food Culture](/wiki/Food-Culture/)
-- [The Stories](/wiki/Oral-Stories/)
-- [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/)
-- [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/)
+Vehicles on the rails are repaired in the workshops of the old rail depots. Only those where people dug out the snow, roofed them over and joined them to the tunnels are alive: Sinjeong, Guro, Cheonwang and Banghwa (Free Cities), Gunja and Chang-dong (Government) and Godeok (Arc). Details are in [People and Machines](/wiki/People-and-Machines/).
+
+## Read together
+
+- [What Still Runs](/wiki/Lost-Technology-Lineage/): Seoul's electricity and heat
+- [People and Machines](/wiki/People-and-Machines/): vehicles on the rails and depots
+- [Guns, Rounds and Drones](/wiki/Era-Arms-and-Tech-Level/): nets and talk lines, fighting at the checkpoints
+- [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/): the promise over water made every thirty years
