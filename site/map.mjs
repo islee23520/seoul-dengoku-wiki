@@ -32,7 +32,7 @@ const LABELS = {
     direct: 'Polity', current: 'Duchy holder', districtOf: 'District', area: 'Area (km²)', density: 'Density 2126', summary: 'Summary', holder: 'Holder', unknownHolder: 'Holder not confirmed',
     displayedFaction: 'Polity shown', politicalNote: 'Political colour shows only the three polities and neutral. It does not show who holds a seat.', members: 'Dongs in this frame',
     lines: 'Lines', control: 'Control', controlledBy: 'Polity', stationsOf: 'Stations', endpoints: 'Between', viewState: 'Open polity page',
-    regionsOfHolding: 'Districts', stationOfHolding: 'Station', directHolding: 'Direct holding', vassalHolding: 'Retainer holding', openPerson: 'Open person page',
+    regionsOfHolding: 'Dongs', stationOfHolding: 'Station', directHolding: 'Direct holding', vassalHolding: 'Retainer holding', openPerson: 'Open person page',
     count: (n) => `${n}`, attribution: 'Source',
   },
   ko: {
