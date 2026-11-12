@@ -79,6 +79,10 @@ const lineIds = computed(() => { const s = new Set<string>(); for (const e of co
 const selectableHoldings = computed(() => core.value?.holdings.filter((h) => h.regions.length || h.station || h.landmark) ?? [])
 const activeHolding = computed(() => selectableHoldings.value.find((h) => h.id === machine.holding) ?? null)
 const holdingRegions = computed(() => new Set(activeHolding.value?.regions ?? []))
+const holdingRegionNames = computed(() => [...holdingRegions.value].map((id) => regionById.value.get(id)?.name ?? id))
+// a holding whose territory is a station or a landmark marks that point on the map, in both layers
+const holdingStation = computed(() => (activeHolding.value?.station ? stationById.value.get(activeHolding.value.station) ?? null : null))
+const holdingLandmark = computed(() => (activeHolding.value?.landmark ? core.value?.landmarks.find((l) => l.id === activeHolding.value?.landmark) ?? null : null))
 const edgeColor = (c: Control) => (c.status === 'held' && c.states[0] ? factionById.value.get(c.states[0])?.color ?? unassigned.value : unassigned.value)
 const statusLabel = (s: string) => L.value.status?.[s] ?? s
 const counts = (status: string) => displayedEdges.value.filter((e) => (status === 'unassigned' ? !['held', 'vacant'].includes(e.control.status) : e.control.status === status)).length
@@ -334,9 +338,13 @@ const stateLink = (id: string) => withBase(`/${props.prefix}wiki/factions/${stat
                   @click="guarded(() => selectTitle(t.id))()" />
             <path v-for="id in holdingRegions" :key="id" :d="geometry.regions[id]" fill="none" stroke="#fff" stroke-width="2.4" vector-effect="non-scaling-stroke" pointer-events="none" />
             <g v-if="machine.showRail && rail"><polyline v-for="r in rail" :key="r.id" :points="r.points" fill="none" stroke="var(--vp-c-text-2)" stroke-opacity="0.55" stroke-width="1" vector-effect="non-scaling-stroke" pointer-events="none" :data-physical-rail-piece="r.id" /></g>
-            <g v-if="machine.showLandmarks"><circle v-for="l in core.landmarks" :key="l.id" :cx="l.x" :cy="l.y" r="5" :fill="colorOfState(l.holder ?? undefined)" stroke="#fff" stroke-width="1.8" vector-effect="non-scaling-stroke" role="button" tabindex="-1" :aria-label="l.name" :data-landmark="l.id" @click="guarded(() => dispatch({ type: 'select', selection: { kind: 'landmark', id: l.id } }))()" /></g>
+            <g v-if="machine.showLandmarks"><circle v-for="l in core.landmarks" :key="l.id" :cx="l.x" :cy="l.y" r="5" :fill="colorOfState(l.holder ?? undefined)" stroke="#fff" stroke-width="1.8" vector-effect="non-scaling-stroke" role="button" tabindex="-1" :aria-label="l.name" :data-landmark="l.id" :class="{ 'tm-selected': holdingLandmark?.id === l.id }" @click="guarded(() => dispatch({ type: 'select', selection: { kind: 'landmark', id: l.id } }))()" /></g>
           </g>
-          <g v-if="machine.showStations"><circle v-for="s in displayedStations" :key="s.id" :cx="s.x" :cy="s.y" :r="machine.layer === 'underground' ? 3.2 : 2" :fill="machine.layer === 'underground' ? edgeColor(s.control) : 'var(--vp-c-text-1)'" stroke="#fff" stroke-width="0.8" vector-effect="non-scaling-stroke" role="button" tabindex="-1" :aria-label="s.name" :data-station="s.id" :class="{ 'tm-selected': sel.kind === 'station' && sel.id === s.id }" @click="guarded(() => dispatch({ type: 'select', selection: { kind: 'station', id: s.id } }))()" /></g>
+          <g v-if="machine.showStations"><circle v-for="s in displayedStations" :key="s.id" :cx="s.x" :cy="s.y" :r="machine.layer === 'underground' ? 3.2 : 2" :fill="machine.layer === 'underground' ? edgeColor(s.control) : 'var(--vp-c-text-1)'" stroke="#fff" stroke-width="0.8" vector-effect="non-scaling-stroke" role="button" tabindex="-1" :aria-label="s.name" :data-station="s.id" :class="{ 'tm-selected': sel.kind === 'station' && sel.id === s.id || holdingStation?.id === s.id }" @click="guarded(() => dispatch({ type: 'select', selection: { kind: 'station', id: s.id } }))()" /></g>
+          <g v-if="holdingStation || holdingLandmark" data-holding-halo pointer-events="none">
+            <circle v-if="holdingStation" :cx="holdingStation.x" :cy="holdingStation.y" r="14" class="tm-holding-halo" />
+            <circle v-if="holdingLandmark" :cx="holdingLandmark.x" :cy="holdingLandmark.y" r="14" class="tm-holding-halo" />
+          </g>
           <g v-if="machine.layer === 'surface'"><text v-for="s in core.states.filter((x) => x.capitalX !== null)" :key="s.id" :x="s.capitalX" :y="(s.capitalY ?? 0) - 7" class="tm-state-label" text-anchor="middle" @click="guarded(() => dispatch({ type: 'select', selection: { kind: 'state', id: s.id } }))()">{{ s.name }}</text></g>
         </svg>
         <div v-if="machine.segmentChoices.length > 1" class="tm-segments" role="group" :aria-label="L.kSegment">
@@ -345,7 +353,7 @@ const stateLink = (id: string) => withBase(`/${props.prefix}wiki/factions/${stat
         </div>
       </div>
 
-      <button v-if="sel.kind !== 'none'" type="button" class="tm-detail-toggle" :aria-expanded="machine.detailOpen" aria-controls="tm-detail" @click="dispatch({ type: 'detail', open: !machine.detailOpen })">{{ machine.detailOpen ? L.hideDetail : L.openDetail }}</button>
+      <button v-if="sel.kind !== 'none' || activeHolding" type="button" class="tm-detail-toggle" :aria-expanded="machine.detailOpen" aria-controls="tm-detail" @click="dispatch({ type: 'detail', open: !machine.detailOpen })">{{ machine.detailOpen ? L.hideDetail : L.openDetail }}</button>
       <aside v-if="machine.detailOpen" id="tm-detail" class="tm-detail" :aria-label="L.detail" aria-live="polite">
         <button type="button" class="tm-detail-close" @click="dispatch({ type: 'detail', open: false })">{{ L.close }}</button>
         <section v-if="selTitle" :data-detail="selTitle.id">
@@ -377,9 +385,11 @@ const stateLink = (id: string) => withBase(`/${props.prefix}wiki/factions/${stat
           <table><tbody><tr><th>{{ L.lines }}</th><td>{{ selSegment.lines.map((l) => core!.lines[l]?.name ?? l).join(', ') }}</td></tr><tr><th>{{ L.control }}</th><td>{{ statusLabel(selSegment.control.status) }}</td></tr><tr><th>{{ L.controlledBy }}</th><td>{{ selSegment.control.names.join(' · ') || L.neutral }}</td></tr></tbody></table>
         </section>
         <section v-if="selLandmark"><p class="tm-kicker">{{ L.kLandmark }}</p><h3>{{ selLandmark.name }}</h3><p>{{ selLandmark.role }}</p><p>{{ selLandmark.detail }}</p></section>
-        <section v-if="activeHolding && sel.kind !== 'none'">
+        <section v-if="activeHolding">
           <p class="tm-kicker">{{ L.kHolding }}</p><h3>{{ activeHolding.name }}</h3>
           <p>{{ L.holder }}: <a v-if="personLink(activeHolding.holder)" :href="personLink(activeHolding.holder)!">{{ activeHolding.holderName }}</a><span v-else>{{ activeHolding.holderName }}</span> · {{ activeHolding.direct ? L.directHolding : L.vassalHolding }}</p>
+          <dl v-if="holdingRegionNames.length"><dt>{{ L.regionsOfHolding }}</dt><dd>{{ holdingRegionNames.join(' · ') }}</dd></dl>
+          <dl v-if="holdingStation"><dt>{{ L.stationOfHolding }}</dt><dd>{{ holdingStation.name }}</dd></dl>
         </section>
       </aside>
       <div v-if="machine.mode === 'political'" class="tm-legend" role="list" :aria-label="L.legend">
@@ -412,6 +422,8 @@ const stateLink = (id: string) => withBase(`/${props.prefix}wiki/factions/${stat
 .tm-svg [tabindex='-1']:focus { outline: none; }
 .tm-region { cursor: pointer; transition: fill-opacity 150ms ease-out; } .tm-region:hover { fill-opacity: 0.95; }
 .tm-selected { stroke: #fff !important; stroke-width: 2.6 !important; fill-opacity: 1 !important; }
+/* the dashed white ring marks the station or key site a selected personal domain owns; same mark language as the region outlines */
+.tm-holding-halo { fill: none; stroke: #fff; stroke-width: 2.4; stroke-dasharray: 4 3; vector-effect: non-scaling-stroke; }
 .tm-state-label { font: 600 11px var(--vp-font-family-base); fill: var(--vp-c-text-1); paint-order: stroke; stroke: var(--vp-c-bg); stroke-width: 3px; cursor: pointer; }
 /* map-app zoom stack: one column of square buttons joined into a single card, bottom-right like most map apps */
 .tm-zoom { position: absolute; right: 12px; bottom: 12px; z-index: 2; display: flex; flex-direction: column; border: 1px solid var(--vp-c-divider); border-radius: 8px; background: var(--vp-c-bg); overflow: hidden; }

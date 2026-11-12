@@ -114,6 +114,36 @@ const expectedScarce = (u) => {
   if (values.length === 1 && (u.category === 'drone' || u.category === 'war-machine') && values[0] !== 'parts') values.push('parts');
   return { matched, values: values.slice(0, 2) };
 };
+// Section 7 tag vocabulary: every id a roster may put in attributes, with its page labels. The build fails
+// (naming the tag) when a unit uses a tag that is not listed here, so no id is ever shown raw on a page.
+const UNIT_TAGS = {
+  'ledger-levy': { ko: '장부 징발', en: 'Ledger levy' }, 'house-bound': { ko: '가문 결속', en: 'House-bound' }, 'hired-company': { ko: '계약 용병', en: 'Hired company' },
+  'charge-breaker': { ko: '돌격 막이', en: 'Charge breaker' }, 'shield-line': { ko: '방패줄', en: 'Shield line' }, 'plate-biter': { ko: '쇠뚫이', en: 'Plate biter' },
+  'machine-hunter': { ko: '기계 사냥', en: 'Machine hunter' }, 'net-casting': { ko: '그물치기', en: 'Net casting' }, 'static-veil': { ko: '잡음 장막', en: 'Static veil' },
+  'fibre-guided': { ko: '줄조종', en: 'Fibre-guided' }, 'radio-linked': { ko: '전파 조종', en: 'Radio-linked' }, 'frost-hardened': { ko: '혹한 단련', en: 'Frost-hardened' },
+  'thin-clad': { ko: '얇은 차림', en: 'Thin-clad' }, 'tunnel-fighter': { ko: '굴길 싸움', en: 'Tunnel fighter' }, 'rail-borne': { ko: '궤도 기동', en: 'Rail-borne' },
+  'quiet-step': { ko: '발소리 죽이기', en: 'Quiet step' }, 'scout-deploy': { ko: '선발 배치', en: 'Scout deploy' }, 'roll-call': { ko: '호명', en: 'Roll call' },
+  'field-repair': { ko: '현장 수리', en: 'Field repair' }, 'field-dressing': { ko: '응급 처치', en: 'Field dressing' }, 'breach-charge': { ko: '문 따기', en: 'Breach charge' },
+  baptised: { ko: '세례받은 몸', en: 'Baptised body' }, 'wired-body': { ko: '기계 이식', en: 'Wired body' }, 'iron-dread': { ko: '쇠울림', en: 'Iron dread' },
+  'last-to-leave': { ko: '끝까지 남는 자', en: 'Last to leave' }, 'skilled-crew': { ko: '숙련 조원', en: 'Skilled crew' }, 'hand-loaded': { ko: '재장전 탄', en: 'Hand-loaded' },
+  'muscle-powered': { ko: '근력 사격', en: 'Muscle-powered' }, irreplaceable: { ko: '다시 못 만드는 것', en: 'Irreplaceable' },
+};
+// Section 9.2 "deliberate gaps" of each faction, one entry per gap. These are design choices, not the categories
+// that happen to be empty, so they are written out here. A faction with units must have an entry (checked below).
+const FACTION_GAPS = {
+  government: {
+    ko: ['이식 병종이 없다.', '용병이 없다.', '지원과 현장 수리가 얇다 (지원 1~2개).', '1~2등급 징집병의 사기가 낮다.'],
+    en: ['No implant units.', 'No mercenaries.', 'Support and field repair are thin (1-2 support units).', 'Tier 1-2 conscripts have low morale.'],
+  },
+  'free-city': {
+    ko: ['장부식 대량 징집이 없다 (1등급 보병은 최대 1개).', '5등급이 없다.', '무거운 장갑이 4등급에서 멈춘다.', '지휘관 호위가 적다 (1~2개).'],
+    en: ['No ledger-style mass conscription (at most one tier 1 infantry unit).', 'No tier 5.', 'Heavy armour stops at tier 4.', 'Few commander escorts (1-2 units).'],
+  },
+  arc: {
+    ko: ['드론이 없다.', '포가 없다.', '사격병이 적고 3등급에서 멈춘다.', '영토가 4구뿐이라 명단이 18~22개로 작다.'],
+    en: ['No drones.', 'No artillery.', 'Few missile units, and they stop at tier 3.', 'Only four districts of territory, so the roster is small (18-22 units).'],
+  },
+};
 // The society document of each faction (wiki_document slug); linked only when the row exists.
 const FACTION_SOCIETY_DOC = { government: 'Government-Society', 'free-city': 'Free-City-Society', arc: 'Arc-Society' };
 const UNIT_KO_PAIRS = ['name', 'recruit_building', 'equipment', 'appearance'];
@@ -143,6 +173,7 @@ const UNIT_KO_PAIRS = ['name', 'recruit_building', 'equipment', 'appearance'];
     }
     // Rule (a): every counters id must be an existing unit.
     for (const c of u.counterIds) if (!unitIds.has(c)) errs.push(`${u.id}: counters names unknown unit id '${c}'`);
+    for (const a of u.attrs) if (!Object.hasOwn(UNIT_TAGS, a)) errs.push(`${u.id}: [tag] attribute '${a}' has no ko/en label in UNIT_TAGS (site/build.mjs)`);
     // Rule (d): scarce_input is NULL or 1-2 section 6.1 words joined by ',' with no space; then Scarce-1..5.
     u.scarce = [];
     if (u.scarce_input !== null) {
@@ -172,6 +203,7 @@ const UNIT_KO_PAIRS = ['name', 'recruit_building', 'equipment', 'appearance'];
   }
   // Rule (c): tier 4-5 units may be at most 30% of a faction's roster.
   for (const fid of new Set(raw.units.map((u) => u.faction_id))) {
+    if (!FACTION_GAPS[fid]) errs.push(`faction '${fid}' has units but no FACTION_GAPS entry (section 9.2)`);
     const us = raw.units.filter((u) => u.faction_id === fid), high = us.filter((u) => u.tier >= 4);
     if (high.length / us.length > 0.3) errs.push(`${high.map((u) => u.id).join(', ')}: tier 4-5 share in faction '${fid}' is ${high.length}/${us.length} (${Math.round((100 * high.length) / us.length)}%), above 30%`);
   }
@@ -215,7 +247,7 @@ const UI = {
     featUpdates: 'What changed in the wiki and when.', tagline: meta.tagline, siteTitle: meta.title,
     u: {
       units: 'Units', title: (n) => `${n}: Units`, lead: (n) => `${n} units, grouped by category.`, identity: 'Identity', society: 'Society', factionPage: 'Faction page',
-      strengths: 'Strengths (categories fielded)', gaps: 'Deliberate gaps (categories with no unit)', none: 'none', highTier: 'Tier 4-5 share',
+      strengths: 'Strengths (categories fielded)', gaps: 'Deliberate gaps', highTier: 'Tier 4-5 share',
       unit: 'Unit', role: 'Role', tier: 'Tier', squad: 'Squad', hp: 'HP', ma: 'Melee attack', md: 'Melee defence', ws: 'Weapon strength', armour: 'Armour', missile: 'Missile damage', range: 'Range', ammo: 'Ammo', speed: 'Speed', ldr: 'Leadership', cost: 'Cost', upkeep: 'Upkeep', cap: 'Cap',
       category: 'Category', recruit: 'Recruited at', scarce: 'Scarce input', attributes: 'Attributes', counters: 'Counters', equipment: 'Equipment', look: 'Appearance', gdd: 'Design reference', details: 'Unit details', openUnits: 'Units of this faction',
     },
@@ -240,7 +272,7 @@ const UI = {
     featUpdates: '위키가 언제 무엇이 바뀌었는지.', tagline: meta.tagline_ko, siteTitle: meta.title_ko,
     u: {
       units: '병종', title: (n) => `${n} 병종`, lead: (n) => `병종 ${n}개를 분류별로 묶었다.`, identity: '정체성', society: '사회', factionPage: '세력 문서',
-      strengths: '강점 (갖춘 분류)', gaps: '의도된 공백 (병종이 없는 분류)', none: '없음', highTier: '4~5등급 비율',
+      strengths: '강점 (갖춘 분류)', gaps: '의도된 공백', highTier: '4~5등급 비율',
       unit: '병종', role: '역할', tier: '등급', squad: '분대 인원', hp: '체력', ma: '근접 공격', md: '근접 방어', ws: '무기 위력', armour: '장갑', missile: '원거리 피해', range: '사거리', ammo: '탄약', speed: '속도', ldr: '통솔', cost: '비용', upkeep: '유지비', cap: '보유 한도',
       category: '분류', recruit: '모집 건물', scarce: '희소 자원', attributes: '특성', counters: '상대 우위', equipment: '장비', look: '외형', gdd: '설계 참조', details: '병종 상세', openUnits: '이 세력의 병종',
     },
@@ -333,7 +365,7 @@ for (const L of [UI.en, UI.ko]) {
     const badgeHtml = (role) => `<span class="unit-role unit-role-${role}" title="${UNIT_ROLES[role][lk]}"><span class="unit-role-icon" aria-hidden="true">${UNIT_ROLES[role].icon}</span>${UNIT_ROLES[role][lk]}</span>`;
     const scarceText = (u) => (u.scarce.length ? u.scarce.map((w) => SCARCE_INPUTS[w][lk]).join(' · ') : '-');
     const present = UNIT_CATEGORIES.filter((c) => us.some((u) => u.category === c.id));
-    const absent = UNIT_CATEGORIES.filter((c) => !present.includes(c));
+    const tagLabel = (a) => UNIT_TAGS[a][lk];
     const high = us.filter((u) => u.tier >= 4).length;
     const soc = FACTION_SOCIETY_DOC[x.id] && raw.docs.find((d) => d.slug === FACTION_SOCIETY_DOC[x.id]);
     const unitName = (id) => g(raw.units.find((u) => u.id === id), 'name');
@@ -346,10 +378,10 @@ for (const L of [UI.en, UI.ko]) {
       hasFactionPage(x) ? `- ${U.factionPage}: [${cell(name)}](${P(`wiki/factions/${x.id}/`)})` : '',
       duchiesOf(x.id).length ? `- ${L.duchies}: ${duchiesOf(x.id).map((t) => `[${cell(g(t, 'name'))}](${P(`wiki/duchies/${duchySlug(t)}/`)})`).join(' · ')}` : '',
       `- ${U.strengths}: ${present.map((c) => `${catLabel(c)} (${us.filter((u) => u.category === c.id).length})`).join(' · ')}`,
-      `- ${U.gaps}: ${absent.length ? absent.map(catLabel).join(' · ') : U.none}`,
+      `- ${U.gaps}:\n${FACTION_GAPS[x.id][lk].map((t) => `  - ${t}`).join('\n')}`,
       `- ${U.highTier}: ${high}/${us.length}`,
     ].filter(Boolean).join('\n');
-    const detail = (u) => `### ${cell(g(u, 'name'))} {#unit-${u.id}}\n\n| ${L === UI.ko ? '항목' : 'Field'} | ${L === UI.ko ? '값' : 'Value'} |\n| --- | --- |\n| ${U.category} | ${catLabel(UNIT_CATEGORIES.find((c) => c.id === u.category))} |\n| ${U.role} | ${roleBadge(u)} |\n| ${U.tier} | ${num(u.tier)} |\n| ${U.recruit} | ${txt(g(u, 'recruit_building'))} |\n| ${U.scarce} | ${scarceText(u)} |\n| ${U.attributes} | ${u.attrs.length ? u.attrs.map((a) => `\`${cell(a)}\``).join(' ') : '-'} |\n| ${U.counters} | ${counterLinks(u)} |\n| ${U.equipment} | ${txt(g(u, 'equipment'))} |\n| ${U.look} | ${txt(g(u, 'appearance'))} |\n| ${U.gdd} | ${u.gdd_ref ? `\`${cell(u.gdd_ref)}\`` : '-'} |\n`;
+    const detail = (u) => `### ${cell(g(u, 'name'))} {#unit-${u.id}}\n\n| ${L === UI.ko ? '항목' : 'Field'} | ${L === UI.ko ? '값' : 'Value'} |\n| --- | --- |\n| ${U.category} | ${catLabel(UNIT_CATEGORIES.find((c) => c.id === u.category))} |\n| ${U.role} | ${roleBadge(u)} |\n| ${U.tier} | ${num(u.tier)} |\n| ${U.recruit} | ${txt(g(u, 'recruit_building'))} |\n| ${U.scarce} | ${scarceText(u)} |\n| ${U.attributes} | ${u.attrs.length ? u.attrs.map((a) => `\`${tagLabel(a)}\``).join(' ') : '-'} |\n| ${U.counters} | ${counterLinks(u)} |\n| ${U.equipment} | ${txt(g(u, 'equipment'))} |\n| ${U.look} | ${txt(g(u, 'appearance'))} |\n| ${U.gdd} | ${u.gdd_ref ? `\`${cell(u.gdd_ref)}\`` : '-'} |\n`;
     const md = `## ${U.identity}\n\n${summary}\n\n${present.map((c) => `## ${catLabel(c)}\n\n${table(us.filter((u) => u.category === c.id))}`).join('\n')}\n## ${U.details}\n\n${present.flatMap((c) => us.filter((u) => u.category === c.id)).map(detail).join('\n')}`;
     write(`${L.prefix}wiki/factions/${x.id}/units/index.md`, page(U.title(name), `# ${U.title(name)}\n\n${U.lead(us.length)}\n\n<div class="unit-roster">\n\n${body(md, L).replace(/@@ROLE:([a-z-]+)@@/g, (m, role) => badgeHtml(role))}\n</div>\n`, { outline: [2, 2] }));
   });
