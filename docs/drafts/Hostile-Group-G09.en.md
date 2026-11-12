@@ -26,6 +26,10 @@ The deserter squad leader stands in the center of the cold corridor, the deserte
 | Senses | The Sangam Deserters watch the removal passage and the cooling-valve side of the cold corridor in the Sangam cooling annex. The group stands beside the shelves that carry the Seoul Station Inventory House mark, with the fuel drums and tool shelves in the middle, and stands with its back toward the Achasan inspection window. When a train of the Duman River Far East Theater stands on the track outside the corridor, the deserter scouts watch the track-side door. |
 | Group behavior | The deserter squad leader stands in the center of the cold corridor, and ammunition boxes and a radio set are at the squad leader's feet. The deserter elite squad stands at the shelves to the squad leader's left and right, beside the fuel drums and tool piles. The deserter scouts stand divided between the removal passage and the track-side door, facing the squad leader's side while watching the outside. |
 
+**Life in the endless cold.** The Sangam Deserters keep to the cold corridor because cold preserves the goods they trade. They carry military clothing built for winter and weapons they keep oiled against frost, and they come out to the inspection windows only when heat on the panels says the guards are warm and slow.
+
+**Threat and the cost of fighting.** They are trained soldiers with working weapons. People are the most expensive threat a station can face, because they shoot back with the same scarce ammunition. Infantry hold the doors and corridors, missile infantry and marksmen cover the long stretches, and recon drone teams find the group before anyone walks into its sightline. Strike drones are kept back: a drone lost to a net or a jammer is parts and cells the station won't see again. War machines are rarely worth the fuel in a tunnel. Every fight costs rounds, medicine and lives on both sides, and fighters with implants risk parts no workshop can easily spare. That's why the watch talks first, and fighting is the last answer rather than the first.
+
 <a id="Hostile-Group-G09-heading-0008"></a>
 
 ## Individuals and battlefield formation

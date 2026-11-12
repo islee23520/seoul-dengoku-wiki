@@ -27,3 +27,16 @@ Chronology rewrite (Century-Annals, Scenario-Timeline, World-Unbinding, Oral-Sto
 | 17 | Scenario-Timeline | en: "Timeline Overview by Era", "Stations counted who belonged." / ko: "연표 시대별 총람", "역들이 누가 속하는지 셌다." | the middle eras of this table (station generations, irreplaceable machines, the middle of the century) are task 7 framing without fixed dates |
 | 18 | World-Unbinding | en: "The Generations After the Great Blackout", "By most accounts, each shelter cut off from the others chose its own l" / ko: "대정전 이후의 세대들", "대개 서로 끊긴 대피소마다" | shelter leaders first chosen by vote, then hereditary, is a provisional detail kept from the earlier text |
 | 19 | Oral-Stories | en: "(top)", "These are stories people tell in the stations." / ko: "(top)", "역에서 사람들이 하는 이야기들이다." | every story on this page is a told story; their tellers, places and details are provisional and none adds a dated event |
+
+## task 9
+
+Hostile ecology patch (Hostile-Ecology-Index, Hostile-Group-G01 to G26).
+
+| # | Document | Location (section, phrase) | Provisional item |
+|---|---|---|---|
+| 1 | Hostile-Ecology-Index | en: "(top)", "Threat against the tech doctrine." / ko: "(top)", "기술 교리에 맞춘 위협." | the four threat levels by class (animals low, people costliest, infected middle, machines high) are a task 9 default, not a roster value |
+| 2 | Hostile-Group-G01 to G26 | en: "Individuals and battlefield formation" (paragraph before), "Threat and the cost of fighting." / ko: "개체와 전장 편성" 앞 단락, "위협과 싸움의 값." | which unit categories and drones counter each group, and the cost mix named, are provisional defaults per class; rosters own numbers |
+| 3 | Hostile-Group-G01 to G26 | en: same location, "Life in the endless cold." / ko: same location, "끝나지 않는 겨울의 삶." | each group's eternal-winter ecology (heat sources, cell freezing, warm-water gathering) is provisional framing over the kept ecology tables |
+| 4 | Hostile-Group-G01 | en: "Life in the endless cold.", "The old words for the rains and the dry season" / ko: "끝나지 않는 겨울의 삶.", "장마와 건기라는 옛말은" | old season words (monsoon, dry season, thaw) left in the kept tables read as station meltwater pulses; applies to all 27 documents |
+| 5 | Hostile-Group-G15 | en: "Life in the endless cold.", "the Government's Myeongdong station" / ko: "정부 명동역" | the former Myeongdong Union habitat is restated as Government land per owner rule; the station-level wording is provisional |
+| 6 | Hostile-Ecology-Index, G13, G14, G16, G17, G18, G25, G26 | en: "Ecology" origin row, "but the cold never lifted." / ko: "추위는 끝내 물러나지 않았다." | replaces the old "slightly warmer temperatures" line to fit eternal winter |

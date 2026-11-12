@@ -26,6 +26,10 @@ The Raider Chief, the Raider Elite Squad, and the Raider Scouts are three places
 | Senses | From the place where the Junction's Itaewon freight duty watch stands, the Yongsan Raiders check the box count on the leak pallets and the door state of the Yongsan–Itaewon transfer freight elevator. The Raider Scouts face the entrance of the Itaewon passage alley, and the Raider Chief stands on the inner row of pallets. The door of a West Sea Granary Theater refrigerated container and a Guro Alloy House seal band lie in the same line of sight. |
 | Group behavior | The Raider Chief is on the inner side of the leak pallets and sets the box count. The Raider Elite Squad takes the elevator door, the ladder, and the sacks. The Raider Scouts stand at the entrance of the Itaewon passage alley and watch the arrival of cars. The column on the inventory board where the Junction is written is in front of the Junction's Itaewon freight duty watch. |
 
+**Life in the endless cold.** The Yongsan Raiders live off the cold itself. Frozen stock keeps in unheated sidings, and they raid when it moves: when a freight car leaves a warm platform, when a leak pallet thaws near a vent. Their year turns on fuel, because a raider who can't heat a room by night doesn't last the week.
+
+**Threat and the cost of fighting.** They know the sidings better than the watch does. People are the most expensive threat a station can face, because they shoot back with the same scarce ammunition. Infantry hold the doors and corridors, missile infantry and marksmen cover the long stretches, and recon drone teams find the group before anyone walks into its sightline. Strike drones are kept back: a drone lost to a net or a jammer is parts and cells the station won't see again. War machines are rarely worth the fuel in a tunnel. Every fight costs rounds, medicine and lives on both sides, and fighters with implants risk parts no workshop can easily spare. That's why the watch talks first, and fighting is the last answer rather than the first.
+
 <a id="Hostile-Group-G07-heading-0008"></a>
 
 ## Individuals and battlefield formation

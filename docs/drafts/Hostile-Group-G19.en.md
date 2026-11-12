@@ -26,6 +26,10 @@ The Water Ghost, the Water Cough, and the Pipe Apparatus are in the same valve r
 | Senses | The person in the valve room faces the pipe where cold water has pooled. The chest is toward the vibrating iron plate. The eyes under the work lamp are narrow. The head is toward the Noryangjin Line bypass water-supply pressure gauge. |
 | Group behavior | The Water Ghost has only the part above the shoulders out of the water in the floor pipe. The Water Cough stands in front of the valve. The Pipe Apparatus lies prone on the bypass water main. A Gurgler stands on every pipe where an iron plate lies across the joint. |
 
+**Life in the endless cold.** Gurglers gather where cold water pools in heated corridors: valve rooms, floor pipes, condensate drains. The warmth keeps them moving and the water keeps them wet, and in the deep cold outside they slow and gather closer to the pipes.
+
+**Threat and the cost of fighting.** They foul the water lines the station drinks from. The infected are a middle threat that grows in closed rooms. Infantry hold the doors in pairs, support teams bring medicine, isolation sheets and warm water, and missile infantry fire only when a line breaks. Recon drones are used to look into a room before anyone opens it, which saves lives but spends cells. War machines have no place here. The heaviest costs are medicine and the people who catch what they fight; ammunition spent on the infected is ammunition the station mourns later. Every watch knows the infected were people, and the duty log treats them that way.
+
 <a id="Hostile-Group-G19-heading-0008"></a>
 
 ## Individuals and battlefield formation

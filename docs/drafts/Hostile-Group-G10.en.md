@@ -21,6 +21,10 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 | Life cycle and upkeep | On ration-day afternoons, people from the Bukhansan Bogukmun corridor side join the lower levels at Garak and Jamsil. When sea wind from the Incheon Trust Theater enters the corridor, the number on the outer stair grows and attendants remain on the inner threshold. When the corridor dries, the Elite Squad stands before the granary doors, and only marker cloth stays tied to the drain handle. |
 | Group behavior | The Group leader stands on the threshold of the corridor junction. The Elite Squad takes the drain and the granary doors. The Scouts stand on the vents and the ration route and face the leader's side. Attendants hold sacks and water cans on the dry tread behind the leader. |
 
+**Life in the endless cold.** The Bogukmun group lives at the edge of the ration lines, in shelter corridors that drain badly and freeze worse. Its people come down to the granary doors when the corridor ices over and hunger outweighs fear, and they keep to themselves when it doesn't.
+
+**Threat and the cost of fighting.** Most of them are hungry people, and a fight here is often a failure of the ration ledger. People are the most expensive threat a station can face, because they shoot back with the same scarce ammunition. Infantry hold the doors and corridors, missile infantry and marksmen cover the long stretches, and recon drone teams find the group before anyone walks into its sightline. Strike drones are kept back: a drone lost to a net or a jammer is parts and cells the station won't see again. War machines are rarely worth the fuel in a tunnel. Every fight costs rounds, medicine and lives on both sides, and fighters with implants risk parts no workshop can easily spare. That's why the watch talks first, and fighting is the last answer rather than the first.
+
 <a id="Hostile-Group-G10-heading-0008"></a>
 
 ## Individuals and battlefield formation

@@ -26,6 +26,10 @@ The Stray Humanoid Guard and the Stray Humanoid Scouts are the same group, stand
 | Senses | The Gangnam Stray Humanoids watch the bay count on the sterile power-outlet row of the Gangnam maintenance siding and the battery-exchange order at the Suseo night convoy window. They look at the outlet row and at the exchange path that leads to the mouth of the remaining clinic corridors. |
 | Group behavior | The Stray Humanoid Lead stands in front of the middle bay of the outlet row. The Stray Humanoid Guard stands with the battery bays in the direction of the lead's hand. The Stray Humanoid Scouts stand on the sequence numbers of the convoy-window step while the return-register copy from the Imjin River Gate Theater is at the window. The lead sends a hand signal to the people standing on the row inside the line of sight. |
 
+**Life in the endless cold.** The Gangnam Stray Humanoids need power more than warmth. They live on a row of sterile outlets and move with the battery-exchange cycle, because a synthetic body whose cells freeze stops where it stands. In the cold they cluster around anything still charging.
+
+**Threat and the cost of fighting.** They are hard to stop with ordinary rounds and they compete with the stations for the same cells. People are the most expensive threat a station can face, because they shoot back with the same scarce ammunition. Infantry hold the doors and corridors, missile infantry and marksmen cover the long stretches, and recon drone teams find the group before anyone walks into its sightline. Strike drones are kept back: a drone lost to a net or a jammer is parts and cells the station won't see again. War machines are rarely worth the fuel in a tunnel. Every fight costs rounds, medicine and lives on both sides, and fighters with implants risk parts no workshop can easily spare. That's why the watch talks first, and fighting is the last answer rather than the first.
+
 <a id="Hostile-Group-G11-heading-0008"></a>
 
 ## Individuals and battlefield formation

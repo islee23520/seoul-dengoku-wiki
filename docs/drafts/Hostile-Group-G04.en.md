@@ -27,6 +27,10 @@ From conduit patrol to conduit bones, these were ordinary raccoons adapted to th
 | Group behavior | Loose family groups and shared hiding places were all there was. / The elder females held only movement priority, and had no combat command. / Several family groups used the same trunk by time division. / When H04 summed them as a single colony, the HC04 drainage watch split them again by hiding place. |
 | Long-term adaptation | Individuals learned the pressure changes before a pump start and the safe dredging timetable. / Across generations a smaller body and a nocturnal habit favorable to pipe life could be selected, but the more they specialized for narrow pipes, the more vulnerable they became to surface crossings and cold waves. / Moving a hiding place by following a leading indicator is distinguished as family-group learning, not a genetic change. |
 
+**Life in the endless cold.** Raccoon dogs sleep through the worst of the cold in dry pump-house cavities and wake when meltwater from heated pipes opens a passage. They eat almost anything, and their numbers rise and fall with the warm pipes rather than with any season.
+
+**Threat and the cost of fighting.** The danger is disease carried into pump rooms, more than bites. This is a low threat by the standards of the stations, and the doctrine is to spend as little as possible on it. Support teams with nets, fences and bait carry most of the work, and missile infantry fire only when a crossing has to be cleared. Recon drone teams are flown on a short leash to read heat on the surface, because every charge drawn from the cells in the cold is hard to replace. War machines are never sent, since the fuel they burn costs more than the animals are worth. The real costs are rounds that miss in the dark, bites that need medicine, and the hours of the people on the fence; lives are seldom lost unless a patrol is cut off in the snow.
+
 <a id="Hostile-Group-G04-heading-0008"></a>
 
 ## Individuals and battlefield formation

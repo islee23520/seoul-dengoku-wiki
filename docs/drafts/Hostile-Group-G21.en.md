@@ -26,6 +26,10 @@ Dueoksini's head presses the upper end of the junction niche. The Nail-scratcher
 | Senses | The Wall-knocker's chest faces the joint plate, and the head is toward the plate where the knocking lingers. The palms lie on the rivet line. In the stretch where the Yagwanggwi stands, the face is turned toward the blue light. |
 | Group behavior | Dueoksini is inside the junction niche. The Nail-scratcher is at the plate at hand height below Dueoksini. The Wall-knockers stand along the wall from the junction toward the door, and the Yagwanggwi is in the dark stretch outside the door. |
 
+**Life in the endless cold.** Wall-knockers press against the heating-pipe side of duct walls. They follow warmth through the walls and knock with each breath, and the colder the night the more of them gather on the same warm wall.
+
+**Threat and the cost of fighting.** Their knocking can mask alarms and draw others to the relay niche. The infected are a middle threat that grows in closed rooms. Infantry hold the doors in pairs, support teams bring medicine, isolation sheets and warm water, and missile infantry fire only when a line breaks. Recon drones are used to look into a room before anyone opens it, which saves lives but spends cells. War machines have no place here. The heaviest costs are medicine and the people who catch what they fight; ammunition spent on the infected is ammunition the station mourns later. Every watch knows the infected were people, and the duty log treats them that way.
+
 <a id="Hostile-Group-G21-heading-0008"></a>
 
 ## Individuals and battlefield formation

@@ -26,6 +26,10 @@ The group is divided into the raider chief, the raider elite squad, and the raid
 | Senses | The Dongdaemun Raiders watch the differential-pressure figures on the remaining positive-pressure doors and the layers of the entrance curtains, and they keep the door row with the filter crates in front of them. The raider scouts are looking at the ventilation-duct mouth on the Jegi-dong side and the end of the lower windbreak alley. |
 | Group behavior | The raider chief is before the doors and the differential-pressure board, the raider elite squad is beside the sacks and the curtains, and the raider scouts are at the end of the alley and the duct mouth. |
 
+**Life in the endless cold.** The Dongdaemun Raiders take what keeps people breathing in the cold: filters, work lamps and the warm air behind positive-pressure doors. They move when the filter count drops and the stations are weakest, and they winter in the windbreak alleys where the draft is least.
+
+**Threat and the cost of fighting.** A raid on filters can make a whole corridor unlivable. People are the most expensive threat a station can face, because they shoot back with the same scarce ammunition. Infantry hold the doors and corridors, missile infantry and marksmen cover the long stretches, and recon drone teams find the group before anyone walks into its sightline. Strike drones are kept back: a drone lost to a net or a jammer is parts and cells the station won't see again. War machines are rarely worth the fuel in a tunnel. Every fight costs rounds, medicine and lives on both sides, and fighters with implants risk parts no workshop can easily spare. That's why the watch talks first, and fighting is the last answer rather than the first.
+
 <a id="Hostile-Group-G08-heading-0008"></a>
 
 ## Individuals and battlefield formation

@@ -26,6 +26,10 @@ Bolts and plates gather at Bulgasari's mouth. Duduri is at the place that strike
 | Senses | The Iron-Clicker's chest is toward the girder where the crane's vibration comes down. The face is toward the fillet-weld toe where the steel and the grounding copper meet. The mouth is toward the holes that still hold bolt heads. The One-legged Dokkaebi's foot is toward the side where the angle's iron overlaps. |
 | Group behavior | Bulgasari is at the middle of the lower flange. Duduri is on the web in front of Bulgasari. The One-legged Dokkaebi is on the angle at the dock edge. The other Iron-Clickers stand off along the bolt line, one hole apart. |
 
+**Life in the endless cold.** Iron-Clickers cling to cold steel where sea fog freezes into flakes. They gather on bolt lines and weld seams, and the cold makes their clicking carry far through the dock structure.
+
+**Threat and the cost of fighting.** They damage the metal that holds the dock together. The infected are a middle threat that grows in closed rooms. Infantry hold the doors in pairs, support teams bring medicine, isolation sheets and warm water, and missile infantry fire only when a line breaks. Recon drones are used to look into a room before anyone opens it, which saves lives but spends cells. War machines have no place here. The heaviest costs are medicine and the people who catch what they fight; ammunition spent on the infected is ammunition the station mourns later. Every watch knows the infected were people, and the duty log treats them that way.
+
 <a id="Hostile-Group-G20-heading-0008"></a>
 
 ## Individuals and battlefield formation

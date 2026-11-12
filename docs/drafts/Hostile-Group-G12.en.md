@@ -26,6 +26,10 @@ The branches are posts inside the one group of Sinnae Deserters. The Deserter Sq
 | Senses | The Sinnae Deserters watch the threshold of the Sinnae freight-elevator dust passage and the hatch of the Yeouido water-filter gallery. The soldier at the threshold faces the Sinnae Transport freight car, and the soldier at the hatch faces the Sluice backwash piping. When dust from the West Sea Granary docks piles in the outer passage, the Deserter Scouts at the entrance face the dock side. |
 | Group behavior | The Deserter Squad Leader is in front of the radio on the landing table. The Deserter Elite Squad is at the rail and the elevator door. The Deserter Scouts are at the dust-passage entrance and at the Yeouido water-filter gallery hatch. Ammunition boxes and water cans are at the squad leader's feet, and magazines are at the Deserter Elite Squad's hands. |
 
+**Life in the endless cold.** The Sinnae Deserters hold a freight-elevator shaft where dust and cold keep strangers out. They live on what passes the water-filter hatch and time their moves to the wash cycles, when warm water runs and the watch is busy.
+
+**Threat and the cost of fighting.** They carry military weapons and know how stations defend themselves. People are the most expensive threat a station can face, because they shoot back with the same scarce ammunition. Infantry hold the doors and corridors, missile infantry and marksmen cover the long stretches, and recon drone teams find the group before anyone walks into its sightline. Strike drones are kept back: a drone lost to a net or a jammer is parts and cells the station won't see again. War machines are rarely worth the fuel in a tunnel. Every fight costs rounds, medicine and lives on both sides, and fighters with implants risk parts no workshop can easily spare. That's why the watch talks first, and fighting is the last answer rather than the first.
+
 <a id="Hostile-Group-G12-heading-0008"></a>
 
 ## Individuals and battlefield formation

@@ -26,6 +26,10 @@ Eoduksini is the place standing at the end of the dark compartment. Teojimi is t
 | Senses | The Udukeoni's head and chest face the defrost coil and the dark compartment at the end of the corridor. The palms rest on the cold doorframe and the pipe joint. |
 | Group behavior | Eoduksini stands in the dark compartment at the end of the corridor. Teojimi stands before the coil joint. Seorison has a hand laid over the barrier-door handle. The Udukeoni stand along the cold wall, facing that compartment. |
 
+**Life in the endless cold.** Udukeoni stand still in the defrost corridor as the frost settles on them. They need almost nothing and move almost never, and the cold that would kill a walker only holds them in place until the corridor thaws.
+
+**Threat and the cost of fighting.** They are dangerous when the corridor warms and they move all at once. The infected are a middle threat that grows in closed rooms. Infantry hold the doors in pairs, support teams bring medicine, isolation sheets and warm water, and missile infantry fire only when a line breaks. Recon drones are used to look into a room before anyone opens it, which saves lives but spends cells. War machines have no place here. The heaviest costs are medicine and the people who catch what they fight; ammunition spent on the infected is ammunition the station mourns later. Every watch knows the infected were people, and the duty log treats them that way.
+
 <a id="Hostile-Group-G23-heading-0008"></a>
 
 ## Individuals and battlefield formation

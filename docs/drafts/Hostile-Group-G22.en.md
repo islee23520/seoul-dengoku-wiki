@@ -26,6 +26,10 @@ Dokkaebi Fire is the several blue flames floating at the top of the outer wall. 
 | Senses | The Flame Lantern's body is toward the wet steel plate of the outer wall of the underground preservation vault of the Government of the Republic of Korea at central Seoul Station and toward the steam on the roofs of the grain cars on the Seongha Group siding of the Gangnam Line. The head is toward the siding corner. The palms are toward the face of the spent-battery boxes from the Changdong Wheel Chamber where the white crystals stand. |
 | Group behavior | Dokkaebi Fire floats at the top of the preservation-vault outer wall. Bulgwisin stands on the siding rail at the foot of the wall, and the face is toward Dokkaebi Fire. Hwama lies prone on the grain-train roof in front of Bulgwisin, and the head is toward the cars whose lids are pale. The people with a point of flame on the back of the hand stand on the steps between the cars. |
 
+**Life in the endless cold.** Flame Lanterns burn where wet steel meets spent battery crystal. Their flame is cold to the eye but real enough to melt frost, and in the long winter they gather at the vault walls where steam and old batteries meet.
+
+**Threat and the cost of fighting.** Their flame can set stores alight near grain and fuel. The infected are a middle threat that grows in closed rooms. Infantry hold the doors in pairs, support teams bring medicine, isolation sheets and warm water, and missile infantry fire only when a line breaks. Recon drones are used to look into a room before anyone opens it, which saves lives but spends cells. War machines have no place here. The heaviest costs are medicine and the people who catch what they fight; ammunition spent on the infected is ammunition the station mourns later. Every watch knows the infected were people, and the duty log treats them that way.
+
 <a id="Hostile-Group-G22-heading-0008"></a>
 
 ## Individuals and battlefield formation

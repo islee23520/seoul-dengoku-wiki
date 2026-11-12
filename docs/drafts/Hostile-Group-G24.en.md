@@ -26,6 +26,10 @@ While the big weeper’s cry spreads across the wash-room steel plate, the pipe 
 | Senses | The weeper keeps its chest toward the suction-pipe mouth where the crying comes out and toward the wet floor. When water sounds from the night wash-room duty officer’s boots, the head is toward that water sound. |
 | Group behavior | The big weeper stands at the rim of the recovery bath. The pipe puller is on its knees at each suction pipe, and its chest is toward the big weeper. The Jangsan tiger stands on two legs at the end of the corridor, face toward the corridor and back toward the wash room. |
 
+**Life in the endless cold.** Weepers gather where warm water runs: wash rooms, recovery baths and drain traps. The warm water draws them out of the cold, and their crying carries through pipes into corridors where people sleep.
+
+**Threat and the cost of fighting.** The crying lures people to open doors they shouldn't. The infected are a middle threat that grows in closed rooms. Infantry hold the doors in pairs, support teams bring medicine, isolation sheets and warm water, and missile infantry fire only when a line breaks. Recon drones are used to look into a room before anyone opens it, which saves lives but spends cells. War machines have no place here. The heaviest costs are medicine and the people who catch what they fight; ammunition spent on the infected is ammunition the station mourns later. Every watch knows the infected were people, and the duty log treats them that way.
+
 <a id="Hostile-Group-G24-heading-0008"></a>
 
 ## Individuals and battlefield formation
