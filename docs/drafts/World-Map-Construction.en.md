@@ -1,111 +1,118 @@
 ---
-model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agent and applied by a script (docs/drafts/reports/w3-c-replace.mjs); not from a Gemini model
+title: How the World Map Is Built
+title_ko: 세계 지도의 짜임
+model: cpa/claude-opus-5-5; written by the agent by hand from the v3 bible (plan wiki-lore-rebuild-v3 task 12); not from a Gemini model
+section_checkpoint: v3 task 12 complete
 ---
-<a id="월드맵의-구조"></a>
+This wiki's world map lays the politics of 2126 over Seoul's real geography. The land, the river, the stations and the lines are the Seoul of before the Great Blackout. The names of the twenty-five districts, the dong, the stations and the lines are the real names too. The only thing that has changed is who holds the land. This document explains how to read the map. One district is one duchy, the Han divides the three polities, and the thirteen places where a line crosses from one polity to another are the borders.
 
-A. Geographic skeleton
+## The Geography Is Unchanged
 
-An administrative map lays out Seoul from Jongno-gu to Gangdong-gu. The rail network has 315 stations reconciled from 334 observed name rows and the tunnels connecting them. Seoul Station, Sindorim, and Yeongdeungpo are major strongholds.
+The base of the map is fixed, real geography.
 
-B. Post-collapse geography
-
-The geography that grounded the new age consisted of the 25 autonomous districts, the principal stations within them, the key facilities at their sides, and the 25 duchies of the three factions. How buildings and facilities found new uses after the collapse was an important key to understanding the survivors' lives.
-
-C. Related documents
-
-Related documents: [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/), [the Three Factions of Seoul](/wiki/Sixteen-States/), Seoul region-setting data, [the Seoul Station Catalog](/wiki/Seoul-Station-Catalog/), [Entering the Station Interior](/wiki/Station-Interior-Construction/), [Travel and Encounters](/gdd/rules/travel-and-encounters/).
-
-## The 25 Autonomous Districts
-
-A. District-name sources
-
-The district names used the KOSTAT GeoJSON `properties.name` as they stood, and all twenty-five were present without omission.
-
-Jongno-gu, Jung-gu, Yongsan-gu, Seongdong-gu, Gwangjin-gu, Dongdaemun-gu, Jungnang-gu, Seongbuk-gu, Gangbuk-gu, Dobong-gu, Nowon-gu, Eunpyeong-gu, Seodaemun-gu, Mapo-gu, Yangcheon-gu, Gangseo-gu, Guro-gu, Geumcheon-gu, Yeongdeungpo-gu, Dongjak-gu, Gwanak-gu, Seocho-gu, Gangnam-gu, Songpa-gu, Gangdong-gu.
-
-B. Districts and spheres
-
-These twenty-five remained the world map's core sectors. Each district is one duchy, and a duchy is called by its district's name.
-
-## The Station List
-
-A. Station names and counts
-
-The Seoul station catalog records 334 observed-name rows. The wiki map displays 315 stations after joining official subtitles and spelling variants. The outer metropolitan network extends beyond them. Names such as Seoul Station, City Hall, Gangnam, Jamsil, and Yeouido are still used for their strongholds.
-
-B. Density by district
-
-Among the 315 Seoul stations on the wiki map, Gangnam-gu and Songpa-gu each have 23, while Geumcheon-gu has four. Major movement routes cross around Yeongdeungpo, Sindorim, and Guro.
-
-## Surrounding Facilities
-
-A. Infrastructure locations
-
-The vast infrastructures essential to the survivors' maintenance of their spheres sat beside the stations.
-
-B. Treatment plants and depots
-
-The water-treatment plants stood at Yeongdeungpo, Ttukseom, Guui, and Amsa, and Gangbuk (Namyangju) and Gwangam (Hanam) also worked as principal water-pressure sources.
-
-The depots lay at Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, and Suseo, and the outer depots at Jichuk, Dobong, Moran, and Gimpo were also key strongholds.
-
-C. Markets and support facilities
-
-The principal markets where bulk goods moved — Garak Market, Gangseo Market, Yanggok Market, and the Noryangjin Fisheries Market — formed the skeleton. Beyond them, hospitals, fire stations, police stations, substations, and rail marshaling yards remained beside the stations, backing each stronghold's role.
-
-## Laying the Duchies Over the Districts
-
-A. Basis of the duchies
-
-The duchies do not replace the districts. Place names, stations, and facilities remain as they were, and only political ownership is divided by district. The Government holds the 14 districts north of the Han River, the Free City the 7 southwestern districts, and the Arc the 4 Gangnam districts. A Government duchy is held by the Senator elected from that district. The Gwanak-gu duchy is held by I Ilseop, Duke of Gwanak.
-
-| District | Faction |
+| What | What the map has |
 |---|---|
-| Mapo-gu | Government |
-| Yongsan-gu | Government |
-| Jung-gu | Government |
-| Seongdong-gu | Government |
-| Gwangjin-gu | Government |
-| Dongdaemun-gu | Government |
-| Jungnang-gu | Government |
-| Seongbuk-gu | Government |
-| Jongno-gu | Government |
-| Seodaemun-gu | Government |
-| Eunpyeong-gu | Government |
-| Gangbuk-gu | Government |
-| Dobong-gu | Government |
-| Nowon-gu | Government |
-| Gangseo-gu | Free City |
-| Yangcheon-gu | Free City |
-| Yeongdeungpo-gu | Free City |
-| Guro-gu | Free City |
-| Geumcheon-gu | Free City |
-| Dongjak-gu | Free City |
-| Gwanak-gu | Free City |
-| Seocho-gu | Arc |
-| Gangnam-gu | Arc |
-| Songpa-gu | Arc |
-| Gangdong-gu | Arc |
+| Districts | Seoul's 25 districts (gu). One district is one duchy |
+| Dong | The neighbourhoods below a district. A dong with no station is grouped with the dong of the nearest station |
+| Stations | 312 map entries. Of these, 307 are stations where people live |
+| Lines | The old lines: Lines 1 to 9, the Airport Railroad, the Gyeongui-Jungang Line, the Gyeongchun Line, the Suin-Bundang Line, the Sillim Line, the Ui-Sinseol Line, GTX-A and others. Lines that run on out of Seoul keep their names too |
+| River | The Han. The frozen river divides the Government from the south |
 
-B. Ownership and occupation
+The six regional groupings on the map are only groupings of the old administrative geography, not political units of 2126. Nobody rules them and they have no titles.
 
-The opening map derives surface control at 311 stations from the territory register. Gwangmyeong Sageori, Daechi, and Seoksu lie outside the mapped surface regions; each station's interior has its own control record.
+## The 25 Duchies
 
-## Nodes and Layers
+One district is one duchy. The Government holds the 14 districts north of the Han, the Free Cities the 7 districts of the southwest, and Arc the 4 districts of Gangnam. 14 + 7 + 4 = 25.
 
-A. Stronghold layers
+| District | Polity | Title of the district's holder | Seat station |
+|---|---|---|---|
+| Mapo-gu | Government | Member of the National Assembly | Gongdeok |
+| Yongsan-gu | Government | Member of the National Assembly | Samgakji |
+| Jung-gu | Government | Member of the National Assembly | Seoul Station |
+| Seongdong-gu | Government | Member of the National Assembly | Wangsimni |
+| Gwangjin-gu | Government | Member of the National Assembly | Konkuk Univ. |
+| Dongdaemun-gu | Government | Member of the National Assembly | Cheongnyangni |
+| Jungnang-gu | Government | Member of the National Assembly | Sangbong |
+| Seongbuk-gu | Government | Member of the National Assembly | Bomun |
+| Jongno-gu | Government | Member of the National Assembly | Jongno 3-ga |
+| Seodaemun-gu | Government | Member of the National Assembly | Chungjeongno |
+| Eunpyeong-gu | Government | Member of the National Assembly | Yeonsinnae |
+| Gangbuk-gu | Government | Member of the National Assembly | April 19th National Cemetery |
+| Dobong-gu | Government | Member of the National Assembly | Chang-dong |
+| Nowon-gu | Government | Member of the National Assembly | Nowon |
+| Gangseo-gu | Free City | Wind Keeper | Gimpo Int'l Airport |
+| Yangcheon-gu | Free City | Depot Master | Sinjeongnegeori |
+| Yeongdeungpo-gu | Free City | Market Master | Yeongdeungpo |
+| Guro-gu | Free City | Works Master | Guro |
+| Geumcheon-gu | Free City | Edge Warden | Gasan Digital Complex |
+| Dongjak-gu | Free City | Ferry Keeper | Noryangjin |
+| Gwanak-gu | Free City | Duke (I Ilseop, Duke of Gwanak) | Sillim |
+| Seocho-gu | Arc | Head of the Near House | Express Bus Terminal |
+| Gangnam-gu | Arc | Head of the Near House | Suseo |
+| Songpa-gu | Arc | Head of the Near House | Jamsil |
+| Gangdong-gu | Arc | Head of the Near House | Cheonho |
 
-The single stronghold called a station divided into several vertical layers. Concourse, transfer corridors, deep tunnels — each layer carried its own role and its own lurking dangers.
+The **seat station** is the station where the district's holder works. Each Free City has a seat station of its own choosing, and in Arc the station where the Head of the Near House lives is called the home station. In a Government district the seat station is the station where the most lines meet. The business of the Government as a whole is done at the Government Complex Seoul in Gwanghwamun, and that of Arc as a whole at Jamsil, where the Hierophant lives.
 
-| Layer | Work | Risk |
+In the Government's fourteen districts, the Member of the National Assembly elected in each district holds its duchy. In the Free Cities' seven districts, each city has a different title for its head and a different way of choosing one. Only the head of Gwanak borrowed the Government's word and calls himself Duke. Arc's four districts are each held by one of four Near Houses, the families that stand beside the Hierophant.
+
+## The Land of the Three Polities
+
+| Polity | Land | Stations where people live | People |
+|---|---|---|---|
+| Government | The 14 districts north of the Han | 153 | About 160,000 |
+| The Free Cities | The 7 districts of the southwest | 77 | About 75,000 |
+| Arc | The 4 districts of Gangnam | 77 | About 65,000 |
+| Seoul | 25 districts | 307 | About 300,000 |
+
+The people of Seoul in 2126 number a little over 3% of those before the Great Blackout. The Government has the most people and land, the Free Cities have the skills, and Arc has the knowledge of machine bodies and the electricity of Jamsil.
+
+The map draws the land outside Seoul, but nobody holds it. Beyond the city boundary is a belt where the war machines of the Great Blackout still circle. More is in [Beyond Seoul: the Rim](/wiki/External-Theaters/).
+
+## The Five Tiers of Titles
+
+The map's land frame fits the tiers of titles: station, dong, district, the polity as a whole, and the head.
+
+| Tier | Government | The Free Cities | Arc |
+|---|---|---|---|
+| Station | Stationmaster | Station Foreman | Bench Keeper |
+| Dong | Dong Chief | Section Chief (the Free Cities group a few stations and the tunnels between them into a section) | Shelter Head (Arc calls a dong a shelter) |
+| District | Member of the National Assembly | Different in every city: Duke of Gwanak, Ferry Keeper, Market Master, Works Master, Edge Warden, Depot Master, Wind Keeper | Head of the Near House |
+| Polity as a whole | The National Assembly | None. Only contract meetings called as needed, and the Host who calls one | The Seat of the Four Near Houses |
+| Head | President for Life | None | Hierophant |
+
+A station belongs to the dong where its main entrance is. A dong with no station is held together with the dong of the nearest station, by whoever holds that one. The surface land of the dong, its scavenging, its light-field plots and its entrance rights belong to that person.
+
+The Government's fourteen districts once had twenty-four National Assembly constituencies before the Great Blackout. Those lines survive only on the map; the Government cut the seats to one per district. So the Government ladder has no tier between district and dong.
+
+## The Thirteen Border Junctions
+
+There are thirteen places where a line runs from a station of one polity to a station of another. These thirteen places are the borders on the map.
+
+| Border | Junction (line) | How it is crossed |
 |---|---|---|
-| Surface ruins | Gathering, solar power, observation | Weather, collapse |
-| Station concourse | Markets, habitation, administration | Crowding, fire |
-| Platform · tracks | Movement, defense, freight | Bottlenecks, ambush |
-| Transfer corridors | Politics and logistics between lines | Blockades, transit tolls |
-| Deep tunnels | Covert movement, maintenance | Flooding, communications loss |
-| Depot-adjacent | Repair, bulk storage | Siege, fire |
+| Government and the Free Cities | Yongsan to Noryangjin (Line 1), Hapjeong to Dangsan (Line 2), Ichon to Dongjak (Line 4), Digital Media City to Magongnaru (Airport Railroad) | Bridge |
+| Government and the Free Cities | Mapo to Yeouinaru (Line 5) | Under-river tunnel |
+| Government and Arc | Gangbyeon to Jamsillaru (Line 2), Oksu to Apgujeong (Line 3), Jayang to Cheongdam (Line 7) | Bridge |
+| Government and Arc | Gwangnaru to Cheonho (Line 5), Seoul Forest to Apgujeong Rodeo (Suin-Bundang Line) | Under-river tunnel |
+| The Free Cities and Arc | Sadang to Bangbae (Line 2), Chongshin Univ. (Isu) to Naebang (Line 7), Dongjak to Gubanpo (Line 9) | Land border. No river |
 
-B. Passage states
+Of the ten places between the Government and the south, seven are bridges open to wind and blizzard, and only three are warm, hidden tunnels under the river. So the river is a line armies cannot easily cross, and who holds the three tunnels decides the field of any fight.
 
-The passages joining layer to layer and station to station changed state without pause as events — collapse, flooding, control, blockade — passed over them, and this bore directly on logistics and on the survivors' movement.
+There is no river between the Free Cities and Arc. That border is a single line between Dongjak-gu and Seocho-gu, and the Free City border stations, Sadang, Chongshin Univ. (Isu) and Dongjak, are all in Dongjak-gu. Dongjak is the only city that meets Arc by rail. Dongjak station is joined by Line 4 to the Government's Ichon and by Line 9 to Arc's Gubanpo. It is the only place in Seoul where all three polities meet at one station. Gwanak touches Seocho on land, but no line joins them.
+
+## How to Read the Map
+
+- **Station colours.** A station is coloured by the polity that holds its surface.
+- **District borders.** A district boundary is the boundary of a duchy. The dong inside a district are the dong tier of titles.
+- **Lines.** Lines keep their old colours. Where a line passes from one polity's colour to another's is a border junction.
+- **Underground.** Some stations list the depth of their platforms and the number of exits. The depth tells how warm the station is and how many people it can hold. Read it together with [Inside a Station](/wiki/Station-Interior-Construction/).
+
+## Related Documents
+
+- [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/)
+- [The Surface and Underground](/wiki/World-and-Subway-Layers/)
+- [The Three Polities of Seoul](/wiki/Sixteen-States/)
+- [World Index: the Three Polities and the 25 Duchies](/wiki/World-Expansion-Index/)
+- [Titles and Offices](/wiki/Offices-and-Ranks/)
+- [Crossings and Smuggling](/wiki/Diaspora-Corridors/)
