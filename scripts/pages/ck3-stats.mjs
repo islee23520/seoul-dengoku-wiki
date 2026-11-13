@@ -34,30 +34,56 @@ export const OLD_TO_CK3 = {
   leadership: null, endurance: null,
 };
 // 직업 등급: [등급id, [키워드…]] — 표 순서대로 첫 일치. 순서가 규칙의 일부다.
+// v3 표(docs/design/v3/07-people-and-war.md 8.3~8.5절, 2026-11-13). 옛 일곱 등급의 기본값은 그대로 두고 다섯 등급을 더했다.
+// v3에서는 1,022명 전원이 이 표로 계산된다(07장 8.1절, 적용기 scripts/pages/v3-apply-people.mjs --recompute-stats).
 export const OCCUPATION_CLASSES = [
-  ['guard', ['경비', '순찰', '초계', '수비', '제지', '단속', '감시', '출입 검문', '경비 암호']],
-  ['medical', ['진료', '의료', '시약', '수술', '환자', '약품', '투약', '진단', '응급']],
-  ['trade', ['경매', '거래', '중개', '환전', '통행세', '결제', '계량', '저울', '재고', '배분', '배급', '구휼', '물자', '곡물']],
-  ['courier', ['전령', '전갈', '전달', '배차', '승무', '운전', '호송', '이송', '회송', '편집', '출발', '서명']],
-  ['maintenance', ['정비', '점검', '검수', '측정', '실측', '시험', '설비', '관로', '누수', '제동', '부품', '송신탑', '전지', '발전', '펌프', '차륜', '차량', '채수', '탁도', '수심', '진동', '균열', '좌표', '제설', '봉쇄', '개통', '방류']],
-  ['scout', ['탐사', '조사', '측량', '정찰', '외곽', '능선', '매복', '교습']],
-  ['record', ['기록', '열쇠', '인수인계', '인계', '등기', '필사', '장부', '대장', '명부', '사본', '봉함', '보관', '게시', '대조', '인준', '일지', '보고', '대기열', '당직', '교대', '창구', '대질', '증인', '증언', '속보', '방송', '공개']],
+  ['governance', ['국정', '행정', '운영', '통솔']],
+  ['soldier', ['보병', '사격', '포병', '드론 조종', '전투', '참모', '지휘', '징집']],
+  ['guard', ['경비', '순찰', '경호', '치안', '지킴']],
+  ['medical', ['진료', '응급', '약품', '돌봄']],
+  ['fitting', ['이식', '세례 집도', '충전']],
+  ['provision', ['섬유당', '빛밭', '버섯', '벌레', '어로', '싹', '부엌']],
+  ['labour', ['눈 굴', '제설', '땔감', '화덕', '메탄', '짐꾼', '옷 짓기']],
+  ['trade', ['배급', '거래', '교섭', '계량', '물자', '배분', '환전', '증표']],
+  ['courier', ['전령', '호송', '배차', '운전', '건넘', '무전', '전달']],
+  ['maintenance', ['정비', '펌프', '수차', '부품', '제작', '가공']],
+  ['scout', ['채집', '정찰', '탐사', '정보']],
+  ['record', ['장부', '필사', '기록', '교육', '비서', '셈판']],
 ];
-// 등급 기본값(여섯 스탯) — 3.3절 표.
+// 등급 기본값(여섯 스탯) — 07장 8.4절.
 export const CLASS_BASE = {
+  governance: { diplomacy: 9, martial: 5, stewardship: 9, intrigue: 7, learning: 6, prowess: 4 },
+  soldier: { diplomacy: 4, martial: 9, stewardship: 4, intrigue: 5, learning: 4, prowess: 10 },
   guard: { diplomacy: 5, martial: 8, stewardship: 6, intrigue: 6, learning: 5, prowess: 8 },
   medical: { diplomacy: 6, martial: 3, stewardship: 6, intrigue: 7, learning: 10, prowess: 3 },
+  fitting: { diplomacy: 6, martial: 3, stewardship: 7, intrigue: 6, learning: 10, prowess: 4 },
+  provision: { diplomacy: 5, martial: 3, stewardship: 9, intrigue: 5, learning: 6, prowess: 5 },
+  labour: { diplomacy: 5, martial: 5, stewardship: 6, intrigue: 4, learning: 4, prowess: 8 },
   trade: { diplomacy: 8, martial: 4, stewardship: 9, intrigue: 6, learning: 5, prowess: 3 },
   courier: { diplomacy: 8, martial: 5, stewardship: 6, intrigue: 6, learning: 5, prowess: 5 },
   maintenance: { diplomacy: 5, martial: 5, stewardship: 10, intrigue: 7, learning: 7, prowess: 4 },
   scout: { diplomacy: 5, martial: 7, stewardship: 5, intrigue: 9, learning: 6, prowess: 6 },
   record: { diplomacy: 6, martial: 3, stewardship: 10, intrigue: 7, learning: 8, prowess: 3 },
 };
-// 품계 보정 — 3.2절 표. 없는 품계는 E_UNKNOWN_RANK.
+// 품계 보정 — 07장 8.5절. 없는 품계는 E_UNKNOWN_RANK.
 export const RANK_MODIFIER = {
-  '주사': { stewardship: 1 }, '병장': { martial: 1 }, '조합원': { learning: 1 }, '교도': { prowess: 1 },
-  '대리': { diplomacy: 1 }, '사원': {}, '서기': { learning: 1 }, '교우': {}, '행자': {},
-  '호송원': { prowess: 1 }, '교사': { learning: 1 }, '수비대원': { martial: 1 },
+  '대통령': { diplomacy: 2, intrigue: 1 }, '국회의원': { diplomacy: 1, stewardship: 1 }, '장관': { stewardship: 2 },
+  '차관': { stewardship: 1, diplomacy: 1 }, '청장': { stewardship: 2 }, '총재': { stewardship: 1, intrigue: 1 },
+  '원장': { intrigue: 2 }, '구청장': { stewardship: 1, diplomacy: 1 }, '동장': { stewardship: 1 }, '역장': { stewardship: 1 },
+  '서기관': { stewardship: 1, learning: 1 }, '사무관': { stewardship: 1 }, '주사': { stewardship: 1 }, '서기': { learning: 1 },
+  '경찰관': { martial: 1 }, '전문의': { learning: 2 }, '수련의': { learning: 1 }, '교사': { learning: 1 }, '등재민': {},
+  '이병': {}, '일병': {}, '상병': { prowess: 1 }, '병장': { martial: 1 }, '하사': { martial: 1 }, '중사': { martial: 1, prowess: 1 },
+  '상사': { martial: 1, stewardship: 1 }, '소위': { martial: 1 }, '중위': { martial: 1 }, '대위': { martial: 1, prowess: 1 },
+  '소령': { martial: 2 }, '중령': { martial: 2 }, '대령': { martial: 2 },
+  '공작': { diplomacy: 1, stewardship: 1 }, '나루지기': { diplomacy: 1, martial: 1 }, '장주': { diplomacy: 2 },
+  '공장장': { stewardship: 1, learning: 1 }, '경계장': { martial: 1, intrigue: 1 }, '기지장': { stewardship: 2 },
+  '바람지기': { stewardship: 1, learning: 1 }, '구간장': { stewardship: 1 }, '역반장': { stewardship: 1 },
+  '건널목장': { diplomacy: 1, martial: 1 }, '교대장': { stewardship: 1 }, '밭장': { stewardship: 1, learning: 1 },
+  '대주': { stewardship: 1, learning: 1 }, '작업조장': { stewardship: 1 }, '손': { learning: 1 }, '일손': {}, '견습': {},
+  '교주': { diplomacy: 1, learning: 2 }, '곁집장': { diplomacy: 1, intrigue: 1 }, '곁집 어른': { diplomacy: 1, intrigue: 1 },
+  '대피소장': { stewardship: 1 }, '정비장': { stewardship: 1, learning: 1 }, '호위장': { martial: 1, prowess: 1 },
+  '말지기': { diplomacy: 1, learning: 1 }, '곁집원': { intrigue: 1 }, '정비공': { learning: 1 }, '세례자': { prowess: 1 }, '미세례자': {},
+  '후계': { diplomacy: 1 }, '미등록': {},
 };
 export const NAMED_EXCEPTIONS = [
   'person-0998', 'person-1018', 'person-1017', 'person-1009', 'person-1010', 'person-1003', 'person-0457',
