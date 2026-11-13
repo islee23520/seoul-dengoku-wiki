@@ -715,10 +715,23 @@ function crossCheck(lines, base, ctx, P) {
   const ageOf = (pid) => base.frozenAge.get(pid) ?? V.get(pid)?.o.age;
   const nkFamilyOf = (pid) => base.nonKorean.find((f) => f.members.includes(pid))?.id ?? null;
   const houseOf = (pid) => base.clanOf.get(pid) ?? (nkFamilyOf(pid) ? `nonkorean_family:${nkFamilyOf(pid)}` : null);
+  const houseSizes = new Map();
+  for (const { id: p } of base.people) { const h = houseOf(p); if (h) houseSizes.set(h, (houseSizes.get(h) ?? 0) + 1); }
+  const houseSize = (h) => houseSizes.get(h) ?? 0;
+  const TAKEN_IN_KO = /양자|양녀|양딸|양아들|입양|피후견|후견|거두어|거둔|데려다|들인|맡아 기른|맡아 키운/;
+  const TAKEN_IN_EN = /adopt|ward\b|guardian|took (?:\w+ )?in\b|taken in|foster/i;
   for (const [id, v] of V) {
     if (!isAssemblyHouse(v) || !/후계|아이/.test(v.o.role)) continue;
     const m = rowMember(v); if (!m) continue;
     const mc = houseOf(m); const c = base.clanOf.get(m) ? base.clanOf.get(id) ?? null : houseOf(id);
+    // 잠정 T30-gov-15: 집안 사람이 국회의원 한 사람뿐이면 후계·아이 칸에 다른 집안에서 들인 사람(양자·피후견인)을 둘 수 있다.
+    // 이 사람은 국회의원보다 어리고, 약력(ko·en)에 들인 사실을 적는다.
+    if (c !== mc && mc && houseSize(mc) === 1) {
+      const a = ageOf(id); const ma = ageOf(m);
+      if (Number.isInteger(a) && Number.isInteger(ma) && a >= ma) P.add('alloc', 'assembly-house-age', v.file, id, `taken-in ${v.o.role} age ${a} is not younger than the Member ${m} (${ma}) of row ${v.o.row} (07 6.2, T30-gov-15)`);
+      if (!TAKEN_IN_KO.test(v.o.biography_ko ?? '') || !TAKEN_IN_EN.test(v.o.biography_en ?? '')) P.add('alloc', 'assembly-house-adoption', v.file, id, `${v.o.role} of the one-person house ${mc} (Member ${m}) is from another house; the ko and en biographies must state the adoption or wardship (07 6.2, T30-gov-15)`);
+      continue;
+    }
     if (c !== mc) P.add('alloc', 'assembly-house-clan', v.file, id, `${v.o.role} has clan ${c ?? '(no clan)'}, the Member ${m} of row ${v.o.row} has ${mc ?? '(no clan)'}; heir and child slots are the Member's own clan (07 6.2)`);
     if (/아이/.test(v.o.role)) {
       const a = ageOf(id); const ma = ageOf(m);
