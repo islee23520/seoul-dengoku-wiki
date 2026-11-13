@@ -22,7 +22,7 @@ Government speech follows 01-core 2.2: official-document speech gone rigid under
 
 Basis: Bible 2.1 (Republic of Korea institutions surviving under scarcity; only people recorded in its ledger are citizens); 01-core 7.1 "Founding logic" and "What continues from the Republic of Korea"; 3.7.
 
-To Government people the Government is not a newly founded state. It is the Republic of Korea. In a hundred years since the Great Blackout, they say, it has not changed its name, the article numbers of its statute book, or its seals. Only the size of the country changed. The country reaches as far as a clerk can reach, and the river is its end.
+To Government people the Government is not a newly founded state. It is the Republic of Korea. In eighty years since the Great Blackout, they say, it has not changed its name, the article numbers of its statute book, or its seals. Only the size of the country changed. The country reaches as far as a clerk can reach, and the river is its end.
 
 The Government has never lifted the **state of disaster** it declared in the first year after the Great Blackout. Every notice of 2126 opens with the line "Under the state of disaster". The state of disaster is the ground on which the Government decides where people live and what they do, takes in goods, and calls people up. Government people do not find this strange. The winter has not ended, so the disaster has not ended (provisional T05-1).
 
@@ -34,24 +34,24 @@ South of the river is **off the ledger**: "off the ledger" in official writing, 
 
 ### 3.1 The National Assembly
 
-Basis: Bible 2.1 (an Assembly Member for each district, single chamber); 01-core 7.1; 8.1 (one seat per district, T02-67); 2.4 (handed-down seat, T02-3).
+Basis: Bible 2.1 (an Assembly Member for each district, single chamber); 01-core 7.1; 8.1 (one seat per district, T02-67); 2.4 (hereditary seat, T02-3).
 
 - **[Approved]** There is one National Assembly. Like the National Assembly of the Republic of Korea it is single-chamber; the only members are Assembly Members. Each district's Assembly Member holds that district's duchy.
 - There are fourteen Assembly Members, one seat per district (01-core 8.1). The National Assembly Building on Yeouido stands empty across the river, and the Assembly sits in an old meeting room below the main building of the Government Complex Seoul, a room joined by tunnel to Gwanghwamun station (provisional T05-2).
 - Elections are held every four years. Carrying on the Republic of Korea's numbering of Assemblies, the Assembly of 2126 is the **47th National Assembly**, opened in 2124. Registered adults stamp a ballot at the dong centre. Each of the two parties puts up one candidate, but the winner is known before the vote: the person the district's Member house backed (provisional T05-3).
 - A seat is handed down like this. When an Assembly Member dies or steps down, the head of household of that house names an heir, and the heir becomes the candidate at the next election. People call this "handing down the seat" (01-core T02-3). Until the election the heir uses the district office's seal as "acting Member" (provisional T05-4).
-- The Assembly does two things. It passes statutes with fourteen seals (7.1), and it acclaims the President for Life (3.2). Promises made across the river, such as the water supply contract, are not ratified by the Assembly; a ministry makes them as annexes (section 15). There is no budget. The Government's budget is the ration ledger itself (section 9).
+- The Assembly does two things. It passes statutes with fourteen seal impressions (7.1), and it acclaims the President for Life (3.2). Promises made across the river, such as the water supply contract, are not ratified by the Assembly; a ministry makes them as annexes (section 15). There is no budget. The Government's budget is the ration ledger itself (section 9).
 
 ### 3.2 Acclamation and the President for Life
 
-Basis: Bible 2.1 (the Assembly Members gather candidates from among themselves and produce a President; life tenure); 01-core 2.4 (acclamation, fourteen seals, T02-2); 7.1 "Structure of power" (the next acclamation opens only when the President dies); 8.1 (President for Life, T02-66).
+Basis: Bible 2.1 (the Assembly Members gather candidates from among themselves and produce a President; life tenure); 01-core 2.4 (acclamation, fourteen seal impressions, T02-2); 7.1 "Structure of power" (the next acclamation opens only when the President dies); 8.1 (President for Life, T02-66).
 
 - **[Approved]** The President is produced by the Assembly Members from among the Assembly Members. The President serves for life.
 - Acclamation opens the day after the President dies. The fourteen Assembly Members stamp their seals one after another under a candidate's name, and the acclamation succeeds only when all fourteen have stamped. If even one does not, they meet again the next day. So the President is always someone all fourteen houses can accept. The person from the strongest house rarely becomes President (provisional T05-5).
 - The oldest Assembly Member presides over the acclamation. It is the Republic of Korea National Assembly's practice of a senior member chairing when there is no speaker, set hard into an order of age. Until the acclamation is over, that person signs as acting President (provisional T05-6).
 - An Assembly Member who becomes President gives up the seat. The seat is handed down to the heir of the President's house. So the President's house holds the presidency and a seat at once (provisional T05-7).
 - What the President does is sign. The President appoints ministers, stamps notices, and writes the appointment of the army's top commander (section 14). The President does not hold a district. The President's power reaches as far as the fourteen Assembly Members accept the President's signature.
-- Who the sitting President is waits on the owner's answer (Bible section 9, Q28). Yun Seo-rin (person-0145) in the data is 27. If the Q28 default (sitting President for Life) is accepted, a young President is read as the result of the all-fourteen rule above: while the strong houses blocked one another, the fourteen seals gathered on a young Member who had not yet taken any side (provisional T05-8).
+- Who the sitting President is waits on the owner's answer (Bible section 9, Q28). Yun Seo-rin (person-0145) in the data is 27. If the Q28 default (sitting President for Life) is accepted, a young President is read as the result of the all-fourteen rule above: while the strong houses blocked one another, the fourteen seal impressions gathered on a young Member who had not yet taken any side (provisional T05-8).
 
 ### 3.3 The two parties
 
@@ -60,7 +60,7 @@ Basis: Bible 2.1 (a multi-party system on paper; in fact the OMO Party and the C
 - **[Approved]** On paper it is a multi-party system. In fact there are only two parties, the OMO Party and the Claw Party.
 - The lines of 01-core are used as they are. The **OMO Party** is the party of contracts: the ledger itself survives only by contracting across the river for skills and parts. The **Claw Party** is the party of the ledger: the north must feed itself from its own land and hands, and mixing with what is off the ledger will bring the ledger down.
 - The party register still lists eleven parties. Nine have no members or only a membership roll left. Striking them off needs an Assembly vote, and nobody puts the motion (provisional T05-9).
-- A party is a name that binds houses. A Member house chooses a party, and the registered of that district follow the Member house's party. The party leader is one of that party's Assembly Members; the party's working business is run by a party secretary general who is not an Assembly Member (provisional T05-10).
+- A party is a name that binds houses. A Member house chooses a party, and registered residents of that district follow the Member house's party. The party leader is one of that party's Assembly Members; the party's working business is run by a party secretary general who is not an Assembly Member (provisional T05-10).
 - The seats in 2126 are OMO Party 6, Claw Party 8. The four districts that touch the Han (Mapo, Yongsan, Seongdong, Gwangjin) are all OMO Party: they hold the bridges, tunnels and intakes, so they are hurt first when a contract breaks. Jung-gu and Seodaemun-gu, which do not touch the river, are OMO Party too: Jung-gu lives off the Seoul Station licensed traders' post and the Hoehyeon market, Seodaemun-gu off goods from across the river that come through the Gongdeok market in Mapo. The eight mountain and inland districts are Claw Party (provisional T05-11).
 
 ### 3.4 The fourteen seats
@@ -82,7 +82,7 @@ Basis: Bible 2.4 (14 Government districts; duchy holder title Assembly Member); 
 | Eunpyeong-gu | Claw Party | S1 | Yeonsinnae (a station on a deep line), Bukhansan firewood, the Bukhansan edge |
 | Gangbuk-gu | Claw Party | S1 | the April 19th National Cemetery burial field, the Bukhansan edge |
 | Dobong-gu | Claw Party | S1 | the Chang-dong depot, Dobongsan firewood and edge |
-| Nowon-gu | Claw Party | S1 | the Korea Military Academy at Hwarangdae, the edge toward Suraksan and Buramsan, the district with the most light-fields |
+| Nowon-gu | Claw Party | S1 | the Korea Military Academy at Hwarangdae, the edge toward Suraksan and Buramsan, the district with the most greenhouses |
 
 (provisional T05-11, T05-12)
 
@@ -97,15 +97,15 @@ The ministries of the Government Complex Seoul kept their names and seals. What 
 | Institution | Seat | What it does in 2126 |
 |---|---|---|
 | Ministry of the Interior and Safety | Government Complex Seoul | Keeps the master copy of resident registration (section 5). The state-of-disaster notices, civil defence, supervision of district offices and dong centres |
-| Ministry of Climate, Energy and Environment | Government Complex Seoul | Water and electricity. The Guui and Ttukdo intakes and the wells, water allocation by quota, the wind frames on the bridges and riverbanks, salvaged copper and cable, the working business of the water supply contract |
+| Ministry of Climate, Energy and Environment | Government Complex Seoul | Water and electricity. The Guui and Ttukdo intakes and the wells, water allocation by quota, the wind turbines on the bridges and riverbanks, salvaged copper and cable, the working business of the water supply contract |
 | Korea Forest Service | Government Complex Seoul | Firewood. Felling permits and firewood shares on Bukhansan and Dobongsan |
 | Ministry of Land, Infrastructure and Transport | Government Complex Seoul | Stations and tunnels. The stationmaster service, entrance management, handcar running on the tracks, setting station quotas |
-| Ministry of Agriculture, Food and Rural Affairs | Government Complex Seoul | Meals. Fibre-sugar vats and mushroom tunnels, light-field allocation, the fibre levy (9.3) |
+| Ministry of Agriculture, Food and Rural Affairs | Government Complex Seoul | Meals. Cellulosic-sugar vats and mushroom tunnels, greenhouse allocation, the fibre levy (9.3) |
 | Ministry of Health and Welfare | Government Complex Seoul | Health posts and the medical corps, dependants' rations, machine-body registration and Arc maintenance permits (13.3) |
 | Ministry of Justice | Government Complex Seoul | Strike-off hearings (7.3), carrying out labour sentences, keeping the hand-copied statute book |
 | Ministry of National Defense | Samgakji, Yongsan-gu | Administration of the army. Registration of conscripts and reservists, ammunition registration (section 14) |
 | National Intelligence Service | the foot of Namsan, Jung-gu | The institution said to know what happens off the ledger. After the Great Blackout it abandoned its headquarters at Naegok-dong across the river and returned to its old site at the foot of Namsan. Its Director is meant to be appointed by the President, but whose signature the Service answers to is unclear even inside the Government. Section 17 does not decide why either |
-| Bank of Korea | Jung-gu, near Hoehyeon station | Prints the ration tokens (9.1). Sets the notice value of the tokens |
+| Bank of Korea | Jung-gu, near Hoehyeon station | Prints the ration coupons (9.1). Sets the notice value of the tokens |
 | Office of the President | Government Complex Seoul | The President's signature and guard |
 | National Assembly Secretariat | Government Complex Seoul | The Assembly's records, the acclamation seal book, the party register |
 
@@ -115,7 +115,7 @@ Ministers and the Forest Service head are appointed by the President, but those 
 
 ## 5. Resident registration: the ledger
 
-Basis: Bible 2.1 (only people recorded in its ledger are citizens; they cannot change where they live or what they do); 01-core 2.2 (entry, registration, strike-off); 2.4 (the registered, strike-off, T02-4); 7.1 (resident registration became the ledger).
+Basis: Bible 2.1 (only people recorded in its ledger are citizens; they cannot change where they live or what they do); 01-core 2.2 (entry, registration, strike-off); 2.4 (registered residents, strike-off, T02-4); 7.1 (resident registration became the ledger).
 
 **The ledger** is resident registration. The Ministry of the Interior and Safety keeps the master copy in a deep level of the Government Complex Seoul, and each dong centre keeps a copy for its dong. When the master and a copy differ, the master wins.
 
@@ -132,7 +132,7 @@ The entries for one registered person are these (provisional T05-16).
 | Machine body | Whether the body carries machines, and where they are maintained (13.3) |
 | Sentence | The record of punishments received (7.3) |
 
-**The token.** The Republic of Korea's resident registration card became the **registration token**, a thin metal plate with the number cut into it. It is worn round the neck and shown when collecting rations and when passing between stations. Whoever loses it gets no rations until a new token is issued (provisional T05-17).
+**The token.** The Republic of Korea's resident registration card became a thin metal plate with the number cut into it; it is still called the **resident registration card**. It is worn round the neck and shown when collecting rations and when passing between stations. Whoever loses it gets no rations until a new token is issued (provisional T05-17).
 
 **Moving-in report.** To change one's station one files a moving-in report and needs three seals: the stationmaster of the station left, the Dong Chief of the dong left, and the receiving district office. Leaving one's registered station without the seals makes a person whereabouts-unknown, and after thirty days they are struck off (01-core T02-4) (provisional T05-18).
 
@@ -174,11 +174,11 @@ Government law has four layers (provisional T05-25).
 | Layer | What it is | Who makes it |
 |---|---|---|
 | Constitution | The Constitution of the Republic of Korea. Never amended. Almost nobody reads it, but the Government's legitimacy comes from it | Not amended |
-| Statute | Articles of the Republic of Korea statute book, rewritten under their old numbers | The Assembly passes them with fourteen seals |
+| Statute | Articles of the Republic of Korea statute book, rewritten under their old numbers | The Assembly passes them with fourteen seal impressions |
 | Notice | Orders a ministry issues under the state of disaster: ration grades, quotas, labour hours | The minister writes, the President signs |
 | District notice | Rules that differ by district: market pitch fees, entrance duty, firewood shares | The Head of the District Office writes, the Assembly Member signs |
 
-What actually decides people's lives is notices and district notices. Changing a statute needs fourteen seals and is rare. So Government law looks like layer upon layer of notices over old articles. Clerks who know the law are scarce, and households pay them in meal tokens to write their petitions.
+What actually decides people's lives is notices and district notices. Changing a statute needs fourteen seal impressions and is rare. So Government law looks like layer upon layer of notices over old articles. Clerks who know the law are scarce, and households pay them in meal tokens to write their petitions.
 
 ### 7.2 Hearings
 
@@ -208,7 +208,7 @@ The death penalty remains as an article in the statute book. But the Government,
 
 - Stealing heat and water. Taking more fuel or water than one's share counts as taking the lives of those whose share it was.
 - Altering the ledger: forging entries, forging tokens, drawing rations on someone else's token.
-- Using official documents as fibre: putting the ledger or old official papers into the fibre-sugar vats. The 01-core 5.3 taboo became law.
+- Using official documents as fibre: putting the ledger or old official papers into the saccharification tanks. The 01-core 5.3 taboo became law.
 - Crossing the river without a seal. Going across the river or trading with people off the ledger without a permit is read as leaving the ledger.
 - Fitting a machine to one's body without a permit. See 13.3.
 
@@ -227,8 +227,8 @@ Strata are assessed by household. The occupation of the head of household is the
 | Member houses | Assembly Members and their households, close kin households; the fourteen houses and the President's house | about 0.5% | Sleeping places on deep levels, their own stores outside the ration grades, wood fires, ministers' posts | Their seals for the President, the district's requisition share |
 | Civil-servant households | Dong Chiefs, clerks, stationmasters, police officers, ministry staff | about 8% | Sleeping places on the deep-tunnel level, office rations, the right to sit the examination | An accurate ledger; responsibility when the ledger is wrong |
 | Army households | Households of career soldiers (NCOs and officers) | about 7% | Army rations, barracks on the inner platform | Their sons' and daughters' career service |
-| Skilled households | Pump crews, heat-pump maintenance, fibre-sugar vat keepers, electricians, menders | about 18% | Reduced labour duty, alternative service instead of conscription | Shift work; they cannot leave their occupation |
-| Labour households | Entrance workers, salvage and fibre gatherers, light-field workers, porters, fellers | about 66.5% | The largest meal share, one sleeping place | Labour duty, conscription, the coldest work |
+| Skilled households | Pump work teams, heat-pump maintenance, saccharification tank keepers, electricians, menders | about 18% | Reduced labour duty, alternative service instead of conscription | Shift work; they cannot leave their occupation |
+| Labour households | Entrance workers, salvage and fibre gatherers, greenhouse workers, porters, fellers | about 66.5% | The largest meal share, one sleeping place | Labour duty, conscription, the coldest work |
 
 People off the ledger are not in this table. Struck-off and whereabouts-unknown people live north of the river too. The Government does not count them. People say there are several thousand in cold surface-level stations and abandoned tunnels (provisional T05-32).
 
@@ -237,21 +237,21 @@ Individuals carry a separate **dependant** mark: children under sixteen, and old
 ### 8.2 Inheritance, rising and falling
 
 - **Succession entry.** On their sixteenth birthday a child is entered under the head of household's occupation. This is called the succession entry. That day the child gets a new token, and the ration grade changes from dependant to the grade of that occupation (provisional T05-34).
-- **Civil service examination.** There is only one way up the strata: the civil service examination held by the Ministry of the Interior and Safety every year in the first month of the long-dark half at the Government Complex Seoul. It tests ledger arithmetic and statute articles. Whoever passes has their occupation changed to civil servant, and the household rises to a civil-servant household. A few dozen pass each year. For a labour-household child to study for it, the household must carry that child's labour share (provisional T05-35).
+- **Civil service examination.** There is only one way up the strata: the civil service examination held by the Ministry of the Interior and Safety every year in the first month of the short-daylight half at the Government Complex Seoul. It tests ledger arithmetic and statute articles. Whoever passes has their occupation changed to civil servant, and the household rises to a civil-servant household. A few dozen pass each year. For a labour-household child to study for it, the household must carry that child's labour share (provisional T05-35).
 - **Marriage.** Marriage between strata needs the Dong Chief's signature, and the wife or husband moves to the stratum of the head of household. Marriage in a Member house needs the Assembly Member's signature. Marriage between Member houses is the most common way of gathering seals for the next acclamation in advance (01-core 7.1) (provisional T05-36).
 - **Falling is easy.** A clerk who gets the ledger wrong goes to a labour household. A forced move (7.3) keeps the stratum and lowers only the sleeping place. A sentence strike-off drops a person out of the strata.
 
 ## 9. Taxes and rations
 
-Basis: 01-core 5.3 (Government rationing by ledger tokens, T02-37; fibre sugar about 60%, about 1 kg of fibre per person per day; the taboo on eating official papers); 4.1 (10 L of water per person per day); 3.1 (temperature by depth); 5.6.
+Basis: 01-core 5.3 (Government rationing by ledger tokens, T02-37; cellulosic sugar about 60%, about 1 kg of fibre per person per day; the taboo on eating official papers); 4.1 (10 L of water per person per day); 3.1 (temperature by depth); 5.6.
 
 ### 9.1 Tokens
 
-The Government's money is the **ration token**. The Bank of Korea prints it below its old main building near Hoehyeon station. The unit written on the token is still the **won**. There are four kinds: meal tokens, water tokens, fuel tokens and goods tokens. The Bank of Korea sets the token value as the **notice value**. At the 2126 notice value, a bowl of fibre-sugar porridge (about 600 kcal) is 1,000 won (provisional T05-37). The counting word "meal" (끼) of chapter 03 section 11.1 is one person's day of meal tokens together with a water token for 10 L. At an average of about 2,600 kcal a day (9.2), a meal's meal tokens come to about 4,300 won at the notice value (provisional T09-3).
+The Government's money is the **ration coupon**. The Bank of Korea prints it below its old main building near Hoehyeon station. The unit written on the token is still the **won**. There are four kinds: meal tokens, water tokens, fuel tokens and goods tokens. The Bank of Korea sets the token value as the **notice value**. At the 2126 notice value, a bowl of cellulosic-sugar porridge (about 600 kcal) is 1,000 won (provisional T05-37). The counting word "meal" (끼) of chapter 03 section 11.1 is one person's day of meal tokens together with a water token for 10 L. At an average of about 2,600 kcal a day (9.2), a meal's meal tokens come to about 4,300 won at the notice value (provisional T09-3).
 
 Tokens are collected monthly by household at the dong centre. They can be exchanged for meals only at the dong centre where the household is registered. In other dongs they can be used only for goods at a market. At market the token's value is always below its notice value (section 10).
 
-Ammunition, power cores and machine parts cannot be bought with tokens, because they are registered goods of the army and the ministries. Chapter 03 sets their price.
+Ammunition, power sources and machine parts cannot be bought with tokens, because they are registered goods of the army and the ministries. Chapter 03 sets their price.
 
 ### 9.2 Ration grades
 
@@ -274,9 +274,9 @@ Taxes are paid not in money but in work, goods and people (provisional T05-40).
 
 | Tax | What | How much |
 |---|---|---|
-| Labour duty | The time of registered adults (16-60) | One day in seven: opening entrance shafts, clearing snow, gathering fibre, building light-field banks |
-| Fibre levy | Paper, cardboard, wood and cotton a household gathers | All delivered to the dong centre and taken back as fibre sugar; the district office sets aside one tenth |
-| Produce share | The yield of fibre-sugar vats, mushroom tunnels, light-fields and insect tunnels | One tenth to the district office store |
+| Labour duty | The time of registered adults (16-60) | One day in seven: opening entrance shafts, clearing snow, gathering fibre, building greenhouse banks |
+| Fibre levy | Paper, cardboard, wood and cotton a household gathers | All delivered to the dong centre and taken back as cellulosic sugar; the district office sets aside one tenth |
+| Produce share | The yield of saccharification tanks, mushroom tunnels, greenhouses and insect tunnels | One tenth to the district office store |
 | Treasury payment | The district office store | One third of what the district office took, to the treasury at the Government Complex Seoul |
 | Pitch fee | Market pitches | Daily, in tokens (section 10) |
 | Military service | People | Section 14 |
@@ -305,7 +305,7 @@ The Government runs a ration economy, and markets grow in its gaps. Nobody lives
 | Sangbong | Jungnang-gu | Line 7, Gyeongui-Jungang, Gyeongchun | Meat and hides of hunted animals (which animals, chapter 02) |
 | Yeonsinnae | Eunpyeong-gu | Lines 3, 6, GTX-A | Bukhansan firewood. Servants of Member houses buy the wood for wood fires here |
 | Chang-dong | Dobong-gu | Lines 1, 4 | Machine parts stripped from the Chang-dong depot |
-| Nowon | Nowon-gu | Lines 4, 7 | Light-field vegetables and seed |
+| Nowon | Nowon-gu | Lines 4, 7 | Greenhouse vegetables and seed |
 | Konkuk Univ. | Gwangjin-gu | Lines 2, 7 | Fish caught through holes in the river ice |
 
 (provisional T05-42)
@@ -314,7 +314,7 @@ After tokens, the things most used at market are goods that last and keep their 
 
 ## 11. Clothing
 
-Basis: 01-core 3.1 (surface -18 °C, platform 8-14 °C), 5.3 (fibre is food), 7.1; Bible 2.1.
+Basis: 01-core 3.1 (surface -9 °C, platform 8-14 °C), 5.3 (fibre is food), 7.1; Bible 2.1.
 
 **Fibre to wear and fibre to eat.** In Seoul cotton, paper and wood are food (01-core 5.3). So the clothes Government people wear are made of inedible fibre: pre-Blackout synthetic-fibre clothes taken apart and remade. Making new cotton clothes takes from the meals, so only Member houses do it. Clothes are handed down inside the household, and worn-out synthetics become the wadding of quilted clothes (provisional T05-44).
 
@@ -327,7 +327,7 @@ Basis: 01-core 3.1 (surface -18 °C, platform 8-14 °C), 5.3 (fibre is food), 7.
 | President for Life | Long navy coat, cotton lining | The phoenix emblem; the emblem of the President of the Republic of Korea survived |
 | Assembly Member | Dark navy coat, animal-fur collar | The gold badge on the left lapel; the Assembly Member's badge survived |
 | Member house | Cotton lining, fur collar, leather boots. Light-coloured clothes mean one rarely goes to the surface | Buttons cut with the house seal |
-| Minister, ministry civil servant | Navy quilted coat | The civil-servant ID worn round the neck, one more beside the registration token |
+| Minister, ministry civil servant | Navy quilted coat | The civil-servant ID worn round the neck, one more beside the resident registration card |
 | Dong Chief, dong centre clerk | Quilted coat with a navy band | Civil-servant ID and a seal pouch |
 | Stationmaster | Navy coat and the old subway station staff cap | The station-name band on the cap |
 | Police officer | Navy coat with reflective bands | Police rank insignia |
@@ -339,7 +339,7 @@ Basis: 01-core 3.1 (surface -18 °C, platform 8-14 °C), 5.3 (fibre is food), 7.
 
 ## 12. The daily clock
 
-Basis: 01-core 3.2 (the long-light half and long-dark half; underground light is rationed and a station's day divides into lights-on and lights-off), 3.3 (entrances), 3.5 (blizzards).
+Basis: 01-core 3.2 (the long-daylight half and short-daylight half; underground light is rationed and a station's day divides into lights-on and lights-off), 3.3 (entrances), 3.5 (blizzards).
 
 The Government keeps Korea Standard Time. The reference clock at the Government Complex Seoul sends the time to each district office by tunnel telephone twice a day, and the district offices announce it to every station with the civil-defence siren. The Government's day begins and ends with a siren (provisional T05-47).
 
@@ -348,11 +348,11 @@ The Government keeps Korea Standard Time. The reference clock at the Government 
 | 05:30 | First shift rises. Platform lights come on at half |
 | 06:00 | Lights-on siren (one long blast). National ceremony in front of the dong centre (13.1). First shift begins |
 | 07:00 | Morning ration |
-| 08:00 | In the long-dark half the entrances open now; in the long-light half they open at 06:30 |
+| 08:00 | In the short-daylight half the entrances open now; in the long-daylight half they open at 06:30 |
 | 09:00-17:00 | Dong centre petition windows. Civil servants work days only |
 | 12:00 | Noon siren (two short blasts) |
 | 14:00 | Second shift begins |
-| 16:00 | In the long-dark half surface work ends and the entrances close; in the long-light half at 19:00 |
+| 16:00 | In the short-daylight half surface work ends and the entrances close; in the long-daylight half at 19:00 |
 | 17:00 | Evening ration |
 | 22:00 | Lights-out siren (two long blasts). Platform lights go off. Third shift begins; only pumps, heat and entrance watch run |
 
@@ -382,9 +382,9 @@ Government people's belief is mostly a belief in the ledger: that the winter cou
 Basis: Bible 2.3 (baptism is replacing parts of the body with machines); Bible 1, row 14 (cyberware is kept alive only with access to maintenance and power); 01-core 5.6 (the Government has almost no machine bodies and relies on the Arc); 7.4 (fear that ledger soldiers are drawn to baptism).
 
 - The Government ledger records the Arc as an **off-the-ledger body** (01-core section 9, row 2123-2125). Joining the Arc is joining an off-the-ledger body.
-- Yet the Government has nowhere to mend electrically driven machine bodies. Government fitting clinics (about six surgery rooms and one clean room, chapter 03 section 4.2) can set fixing points and fit body-powered hands and feet, but to fit and maintain an electrically driven machine there is no choice but to rely on the Arc's maintenance benches. The Government solves this with **machine-body registration**. Someone fitted with a machine under a Ministry of Health and Welfare permit has "machine body" and the place of maintenance written in their entries, and on permitted days only they pass the under-river tunnel checkpoint to the Arc's maintenance bench (provisional T05-53).
+- Yet the Government has nowhere to mend electrically driven machine bodies. Government fitting clinics (about six surgery rooms and one clean room, chapter 03 section 4.2) can set fixing points and fit body-powered hands and feet, but to fit and maintain an electrically driven machine there is no choice but to rely on the Arc's maintenance units. The Government solves this with **machine-body registration**. Someone fitted with a machine under a Ministry of Health and Welfare permit has "machine body" and the place of maintenance written in their entries, and on permitted days only they pass the under-river tunnel checkpoint to the Arc's maintenance unit (provisional T05-53).
 - Fitting a machine without a permit, and receiving the Arc's baptism (receiving it as faith, as Arc people do), are matters for a strike-off hearing. The Government separates fitting a machine from being baptised on paper: a permitted machine is medicine; baptism is joining an off-the-ledger body. Few Government people are sure the two are really different (provisional T05-54).
-- So the army dislikes nothing more than a soldier getting a maintenance permit. Several times a year a soldier who went to a maintenance bench does not come back.
+- So the army dislikes nothing more than a soldier getting a maintenance permit. Several times a year a soldier who went to a maintenance unit does not come back.
 
 ### 13.4 Death
 
@@ -392,8 +392,8 @@ Basis: 01-core 5.5 (nothing rots in the cold; funerals differ by faction and are
 
 - When a person dies, the head of household files a death report at the dong centre and the Dong Chief draws the red line of the death strike-off. At the next morning's national ceremony the name is read in the silence.
 - Bodies do not rot. Every district has a designated **snow burial field** on the surface, and a labour-household burial crew carries the body there by sled and buries it in the snow. The place number in the burial field is written in the death strike-off entry. Jungnang-gu people are buried in the Mangu burial field (provisional T05-55).
-- People of Member houses and people who did service to the state are buried at the site of the April 19th National Cemetery in Gangbuk-gu, the national cemetery of the Republic of Korea that remains north of the river. The Seoul National Cemetery at Dongjak-dong lies across the river, and for a hundred years the Government has buried nobody there (provisional T05-56).
-- Bodies and the clothes of the dead are not put into fibre-sugar vats. With the taboo on official papers, this is the Government's oldest taboo (provisional T05-57).
+- People of Member houses and people who did service to the state are buried at the site of the April 19th National Cemetery in Gangbuk-gu, the national cemetery of the Republic of Korea that remains north of the river. The Seoul National Cemetery at Dongjak-dong lies across the river, and for eighty years the Government has buried nobody there (provisional T05-56).
+- Bodies and the clothes of the dead are not put into saccharification tanks. With the taboo on official papers, this is the Government's oldest taboo (provisional T05-57).
 
 ## 14. The national army: doctrine and conscription
 
@@ -423,7 +423,7 @@ Individually resolved combat (duels and fights between heroes) stays separate fr
 ### 14.3 Conscription and service
 
 - **Conscription.** Registered people who turn nineteen, men and women alike, serve eighteen months. The pre-Blackout Republic of Korea conscripted only men; the Government, short of people, calls up women too. The Ministry of National Defense registers conscription, and service is mostly in the conscript's own district unit (provisional T05-60).
-- **Alternative service.** Core occupations of skilled households (pump crews, intake maintenance, heat-pump maintenance) do not carry rifles; they work eighteen months at the intakes or the bridge wind frames. A pump is worth more than a rifle (provisional T05-61).
+- **Alternative service.** Core occupations of skilled households (pump work teams, intake maintenance, heat-pump maintenance) do not carry rifles; they work eighteen months at the intakes or the bridge wind turbines. A pump is worth more than a rifle (provisional T05-61).
 - **Reserve and civil defence.** After service people are reservists until forty. In a crisis the district unit calls up its reservists. From forty to fifty they are civil defence, which clears entrance snow and handles sirens and shelter (provisional T05-62).
 - **Career soldiers.** NCOs and officers come from army households. An army-household child is entered in an army occupation by succession entry at sixteen, and a child who will be an officer studies two years at the Korea Military Academy at Hwarangdae (provisional T05-63).
 - **Size.** In 2126 the Government's standing force is about 4,000 career soldiers and about 2,500 serving conscripts. About 20,000 reservists can be called up. There is not that much ammunition (provisional T05-64).
@@ -451,7 +451,7 @@ Bible 2.5 decided that the deliberately empty slots of each faction's roster are
 
 Basis: Bible 1, row 11 (winter 2126, before the third water supply contract); 01-core 5.2 (the water supply contract, a thirty-year term, the Arc sits for the first time at the third, T02-33 and T02-34), 7.1 (the two parties split at every water supply contract), 7.4; item 5 of section 11 (chapter 04 writes the Government's negotiating position).
 
-To the Government the water supply contract is a question of the ledger before it is a question of water. The Government does not record across the river as a country. Yet a contract is the exchange of seals. Since the first contract the Government has resolved this contradiction this way: the Assembly does not ratify the contract. The Ministry of Climate, Energy and Environment makes a "maintenance service annex" for each facility, the Assembly Member of the district where the facility stands stamps it too, and the President signs. The cities across the river are recorded as work crews contracted for the service. In the ledger they are not countries but workers (provisional T05-67).
+To the Government the water supply contract is a question of the ledger before it is a question of water. The Government does not record across the river as a country. Yet a contract is the exchange of seals. Since the first contract the Government has resolved this contradiction this way: the Assembly does not ratify the contract. The Ministry of Climate, Energy and Environment makes a "maintenance service annex" for each facility, the Assembly Member of the district where the facility stands stamps it too, and the President signs. The cities across the river are recorded as work teams contracted for the service. In the ledger they are not countries but workers (provisional T05-67).
 
 **What the Government wants** (provisional T05-68).
 
@@ -465,7 +465,7 @@ To the Government the water supply contract is a question of the ledger before i
 
 - The **OMO Party** wants an annex with the Arc too. The north-end turbines of the weir are in Gwangjin, so even half the power has to be run together. The Assembly Members of the four districts that touch the Han and of Jung-gu and Seodaemun-gu, that is the six OMO Party Members, are on this side. Seodaemun-gu does not touch the river, but it is the first district to go hungry if goods from across the river stop coming through the Gongdeok market, so it stands here.
 - The **Claw Party** wants not even an annex with the Arc. If the ledger stamps a seal for an off-the-ledger body, ledger soldiers will read it as the ledger accepting baptism. The Assembly Members of the eight inland districts are on this side.
-- The Claw Party has more seats, but the bridges, tunnels and intakes the contract rests on are all in OMO Party districts. An annex is not a statute, so it does not go through an Assembly vote. The Claw Party's only way to block an annex is the President's signature. So the third contract turns into a fight over whether the President signs once the Gwangjin Assembly Member has stamped the weir's north-end annex. A President acclaimed by fourteen seals loses half the Members the next day whichever side the President takes.
+- The Claw Party has more seats, but the bridges, tunnels and intakes the contract rests on are all in OMO Party districts. An annex is not a statute, so it does not go through an Assembly vote. The Claw Party's only way to block an annex is the President's signature. So the third contract turns into a fight over whether the President signs once the Gwangjin Assembly Member has stamped the weir's north-end annex. A President acclaimed by fourteen seal impressions loses half the Members the next day whichever side the President takes.
 
 ## 16. Where the 504 sit: role-quota table by district
 
@@ -581,7 +581,7 @@ This chapter changed no 01-core decision. The following are places where it deci
 
 | 01-core | What this chapter adds | Ledger |
 |---|---|---|
-| 2.4 "fourteen seals" (T02-2) | Acclamation succeeds only with all fourteen seals (unanimity). The oldest Assembly Member presides and is acting President | T05-5, T05-6 |
+| 2.4 "fourteen seal impressions" (T02-2) | Acclamation succeeds only with all fourteen seal impressions (unanimity). The oldest Assembly Member presides and is acting President | T05-5, T05-6 |
 | 7.1 "the next acclamation opens only when the President dies" | The seat of an Assembly Member who becomes President is handed down to that house's heir | T05-7 |
 | 8.1 ladder (Stationmaster, Dong Chief, Assembly Member, National Assembly, President for Life) | Posts outside the ladder: Head of the District Office, minister, Secretary General of the Assembly, party secretary general. They hold no land, so "no separate tier between district and dong" (T02-67) stands | T05-10, T05-15, T05-21 |
 | 7.1 "the district office is the office of the Assembly Member's house" | The Head of the District Office's post and the signing line | T05-21, T05-24 |
