@@ -70,6 +70,8 @@ The general meaning of bon-gwan and hangnyeol follows these references.
 ## Related Documents
 
 - [People, Factions and Trades](/wiki/Characters-Factions-and-Professions/)
-- [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/)
+- [Government Society](/wiki/Government-Society/)
+- [Free City Society](/wiki/Free-City-Society/)
+- [Arc Society](/wiki/Arc-Society/)
 - [Crossings and Smuggling](/wiki/Diaspora-Corridors/)
 - [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/)

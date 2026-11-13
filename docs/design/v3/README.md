@@ -41,7 +41,7 @@ node scripts/pages/v3-fixed-facts.mjs --check   # 고정 사실이 스냅샷과 
 | `05-free-city.md` | 자유도시 사회 | 6 |
 | `06-arc.md` | 아크 사회 | 7 |
 | `07-people-and-war.md` | 인물 배치 규칙, 세력 간 생활, 병종 교리 | 8 |
-| `08-document-map.md` | 63개 slug의 v3 주제, 새 제목, 근거 절, 문서 과제 10~15 묶음. 새 slug 없음 | 9 |
+| `08-document-map.md` | 61개 slug의 v3 주제, 새 제목, 근거 절, 문서 과제 10~15 묶음. 새 slug 없음 | 9 |
 | `09-ck3-systems.md` | CK3 역공학 근거: 캠페인 층과 전장 층의 결합 계약, 세력별 CK3 대응 | 29 |
 | `10-design-profile.md` | 설계 지침(`.agents/skills/game-design-practice/SKILL.md`)을 이 프로젝트에 적용하는 값(한국어만) | 오케스트레이터(4ee82a33c) |
 
