@@ -99,14 +99,22 @@ const RANK_MIN_AGE = {
   '교주': 25, '곁집장': 0, '곁집 어른': 40, '대피소장': 28, '정비장': 25, '호위장': 30, '말지기': 25, '정비공': 18, '세례자': 16, '곁집원': 0, '미세례자': 0,
   '미등록': 0,
 };
-function occupationMinAge(faction, occKo, cls) {
+// 07장 5.1절의 직업 최소 나이는 06장 12.4절 갈래의 역할 낱말에 붙는다. 그 낱말이 닿는 직업 문구는 07장 8.7절 06 줄이다.
+// 직업 등급(scout, provision)으로 묶지 않는다: 바깥 일의 전령은 courier 등급이고, 탐사·벌레 치기 따위는 06장 갈래에 없다.
+const ARC_OCCUPATION_MIN_AGE = new Map([
+  ['계약 교섭', 30], // 교섭인
+  ['세례 전투', 20], // 세례 전투원
+  ['가문 징집', 17], // 가문 징집병
+  // 물·전기·열: 수차지기, 취수구지기, 열 펌프지기, 출입구지기
+  ...['수차 정비', '취수구 정비', '열 펌프 정비', '눈 굴 지기'].map((k) => [k, 16]),
+  // 먹거리: 섬유당 통지기, 빛밭지기, 버섯 굴지기, 얼음 낚시꾼, 부엌 일꾼
+  ...['섬유당 통 관리', '빛밭 경작', '버섯 재배', '얼음 어로', '부엌 취사'].map((k) => [k, 16]),
+  // 바깥 일: 고물꾼, 섬유 캐는 사람, 테두리 망꾼, 동력 덩이 캐는 사람, 전령
+  ...['고물 채집', '섬유 채집', '테두리 정찰', '동력 덩이 채집', '전령'].map((k) => [k, 18]),
+]);
+function occupationMinAge(faction, occKo) {
   if (faction !== 'arc') return 0;
-  if (occKo === '계약 교섭') return 30;
-  if (occKo === '세례 전투') return 20;
-  if (occKo === '가문 징집') return 17;
-  if (cls === 'scout') return 18;
-  if (cls === 'provision' || ['수차 정비', '취수구 정비', '열 펌프 정비', '전선 정비', '펌프 정비'].includes(occKo)) return 16;
-  return 0;
+  return ARC_OCCUPATION_MIN_AGE.get(occKo) ?? 0;
 }
 // ---- 07장 5.2절 나이 띠 -----------------------------------------------------------------------------
 const TIER_BAND = { T1: [40, 70], T2: [35, 68], T3: [35, 65], T4: [30, 62] };
@@ -592,7 +600,7 @@ function validateLine(L, base, ctx, P) {
   }
   // 기록된 나이가 품계 최소 나이보다 적은가(07 4.7절 4번, 5.3절)
   if (recorded && rank && occ) {
-    const min = Math.max(RANK_MIN_AGE[o.rank_ko] ?? 0, occupationMinAge(o.faction_id, o.occupation_ko, occ[2]));
+    const min = Math.max(RANK_MIN_AGE[o.rank_ko] ?? 0, occupationMinAge(o.faction_id, o.occupation_ko));
     if (base.frozenAge.get(id) < min) alloc('age-min', `recorded age ${base.frozenAge.get(id)} < minimum ${min} for ${o.rank_ko}/${o.occupation_ko} (07 5.1, 5.3)`);
   }
   ctx.valid.set(id, { o, file: fac, occ, rank });
@@ -662,6 +670,10 @@ function crossCheck(lines, base, ctx, P) {
     for (const [oid, ov] of V) if (oid !== id && ov.o.faction_id === v.o.faction_id && ['district', 'head'].includes(ov.o.seat?.layer) && base.clanOf.get(oid) === clan) return oid;
     return null;
   };
+  // 07장 6.2절 의원 집안 칸(과제 30 결정): 정부 줄의 후계·배우자·친족·아이 네 칸. 주군은 그 줄 의석의 국회의원이다.
+  // 종신 대통령의 옛 의석(종로)도 그 의석을 받은 사람(district 자리 주인)이 주군이고, 대통령(head 자리)은 주군이 아니다.
+  const isAssemblyHouse = (v) => v.o.faction_id === 'government' && !v.o.seat && /^의원 집안/.test(v.o.role);
+  const rowMember = (v) => holder.district[districtOf(v)] ?? null;
   // 주군 다시 계산(07장 9.4절)
   const expected = (id, v) => {
     if (id === 'person-1004') return 'person-1003';
@@ -674,6 +686,7 @@ function crossCheck(lines, base, ctx, P) {
       if (f === 'free-city') { for (const [sid, sec] of base.sections) if (sec.stationIds.includes(s.stationId) && holder.section[sid]) { up = holder.section[sid]; break; } } else up = holder.dong[base.dongOfStation.get(s.stationId)] ?? null;
       return up ?? holder.district[districtOf(v)] ?? null;
     }
+    if (isAssemblyHouse(v)) return rowMember(v);
     if (v.o.tier === 'T2') {
       if (/후계|이을 자식/.test(v.o.role)) return houseHolder(id, v);
       return f === 'free-city' ? holder.district[districtOf(v)] ?? null : top;
@@ -688,8 +701,22 @@ function crossCheck(lines, base, ctx, P) {
   for (const [id, v] of V) {
     const want = expected(id, v);
     if ((v.o.liege ?? null) !== want) {
-      const house = /후계|이을 자식|의원 집안|우두머리 집안|곁집 집안/.test(v.o.role) && !want;
-      P.add('alloc', 'liege', v.file, id, `liege ${v.o.liege ?? 'null'}, 07 9.4 gives ${want ?? 'null'} (role ${v.o.role}, tier ${v.o.tier}${house ? `; no T1 seat holder of the same clan ${base.clanOf.get(id) ?? '(no clan)'} in the faction, 07 6.2` : ''})`);
+      const assembly = isAssemblyHouse(v);
+      const house = !assembly && /후계|이을 자식|의원 집안|우두머리 집안|곁집 집안/.test(v.o.role) && !want;
+      const note = assembly ? `; Assembly-house slot, liege is the Member of row ${v.o.row}${want ? '' : ' (no district seat holder)'}, 07 6.2` : house ? `; no T1 seat holder of the same clan ${base.clanOf.get(id) ?? '(no clan)'} in the faction, 07 6.2` : '';
+      P.add('alloc', 'liege', v.file, id, `liege ${v.o.liege ?? 'null'}, 07 9.4 gives ${want ?? 'null'} (role ${v.o.role}, tier ${v.o.tier}${note})`);
+    }
+  }
+  // 의원 집안 칸의 핏줄(07장 6.2절): 후계와 아이는 국회의원과 같은 씨족, 아이는 국회의원보다 어리다. 배우자·친족 칸은 다른 씨족을 허용한다.
+  const ageOf = (pid) => base.frozenAge.get(pid) ?? V.get(pid)?.o.age;
+  for (const [id, v] of V) {
+    if (!isAssemblyHouse(v) || !/후계|아이/.test(v.o.role)) continue;
+    const m = rowMember(v); if (!m) continue;
+    const c = base.clanOf.get(id) ?? null; const mc = base.clanOf.get(m) ?? null;
+    if (c !== mc) P.add('alloc', 'assembly-house-clan', v.file, id, `${v.o.role} has clan ${c ?? '(no clan)'}, the Member ${m} of row ${v.o.row} has ${mc ?? '(no clan)'}; heir and child slots are the Member's own clan (07 6.2)`);
+    if (/아이/.test(v.o.role)) {
+      const a = ageOf(id); const ma = ageOf(m);
+      if (Number.isInteger(a) && Number.isInteger(ma) && a >= ma) P.add('alloc', 'assembly-house-age', v.file, id, `child age ${a} is not younger than the Member ${m} (${ma}) of row ${v.o.row} (07 6.2)`);
     }
   }
   // 자리 주인의 일하는 역(07장 4.6절 2번)
@@ -731,7 +758,7 @@ function crossCheck(lines, base, ctx, P) {
     let band = CHILD_ROLE.test(v.o.role) ? [6, 15] : TIER_BAND[v.o.tier] ?? (cls === 'soldier' ? SOLDIER_BAND[v.o.faction_id] : T5_BAND[cls]);
     band = [...band];
     // 5.2절: 품계는 쓰지 않는다. 나이에서 정해지는 정부 품계(8.6절)의 최소 나이는 띠에 넣지 않고, 역할로 정해지는 품계와 직업의 최소 나이만 넣는다.
-    const min = Math.max(AGE_DERIVED_RANKS.has(v.o.rank_ko) ? 0 : RANK_MIN_AGE[v.o.rank_ko] ?? 0, occupationMinAge(v.o.faction_id, v.o.occupation_ko, cls));
+    const min = Math.max(AGE_DERIVED_RANKS.has(v.o.rank_ko) ? 0 : RANK_MIN_AGE[v.o.rank_ko] ?? 0, occupationMinAge(v.o.faction_id, v.o.occupation_ko));
     if (min > band[0]) band[0] = min;
     if (band[1] < band[0]) band[1] = band[0];
     const kin = (branchOf.get(id) ?? []).map(recAge).filter((a) => a !== undefined);
