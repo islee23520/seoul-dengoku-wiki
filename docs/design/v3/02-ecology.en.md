@@ -211,6 +211,8 @@ Basis: 01-core 3.1 (depth bands), 3.3 (entrances are vertical shafts through the
 
 The grade is the threat of one meeting. For things like the brown rat, which is grade 2 alone but does greater harm to a station's food and wiring, a **threat to daily life** is written separately (`12a-terms.md` no. 193, the old "household threat"). The grade 4-5 line at the end of chapter 09 section 3 stays as it is (provisional T34-12).
 
+One exception. A calling machine (7.4, the blockade surveillance network) is put at grade 2 not for its own threat but to mean that, once it notices something, it raises the next encounter to grade 4-5.
+
 ### 4.2 Threats by depth
 
 | Layer | Depth | What is met most | Greatest threat |
@@ -238,9 +240,9 @@ In one line: **inside a lived-in station, the deeper the safer; outside a statio
 | Factory-ground stations | Gasan Digital Complex, Guro Digital Complex, Doksan, Magongnaru | feral dog, factory humanoid robot |
 | Round power plants and rail depots | Hapjeong, Sangsu (underground power plant), Gunja, Sinjeong, Cheonwang, Banghwa (rail depots) | quadruped inspection robot |
 | Mountain-foot stations of the Government's north | Dobongsan, Suraksan, Buramsan, Bukhansan Ui, Chang-dong | feral dog, crows going for the greenhouses |
-| Boundary stations (Government) | Gupabal, Dokbawi, Digital Media City, Dobongsan, Suraksan, Buramsan, Sinnae, Mangu | returning unmanned ground vehicles in the buffer zone, unexploded warheads and optical fibre at the rail tunnel end north of Gupabal, unexploded warheads (fibre is rare) at the surface line end north of Dobongsan |
-| Boundary stations (Free Cities) | Gaehwa, Gaehwasan, Banghwa, Onsu, Oryu-dong, Cheonwang, Geumcheon-gu Office, Namtaeryeong, Gwanaksan | returning unmanned ground vehicles in the buffer zone, unexploded warheads and optical fibre at the rail tunnel ends south of Namtaeryeong and west of Onsu (Line 7), unexploded warheads (fibre is rare) at the surface line ends south of Geumcheon-gu Office and west of Onsu (Gyeongin Line); unmanned sentry posts on the outer slopes of Gwanaksan and Namtaeryeong |
-| Boundary stations (Arc) | Cheonggyesan, Daemosan, Suseo, Bokjeong, Jangji, Macheon, Geoyeo, Gangil, Sangil-dong | returning unmanned ground vehicles in the buffer zone, unexploded warheads and optical fibre at the rail tunnel ends south of Bokjeong and east of Gangil; unmanned sentry posts on the outer passes of Cheonggyesan and Daemosan |
+| Boundary stations (Government) | Gupabal, Yeonsinnae, Dokbawi, Susaek, Digital Media City, Dobongsan, Suraksan, Buramsan, Sinnae, Yangwon, Mangu | returning unmanned ground vehicles in the buffer zone, unexploded warheads and optical fibre at the rail tunnel ends north of Gupabal (Line 3), north of Yeonsinnae (GTX-A) and north of Buramsan (Line 4), unexploded warheads (fibre is rare) at the surface line ends north of Dobongsan (Line 1, Line 7), west of Susaek (Gyeongui-Jungang Line), east of Sinnae (Gyeongchun Line) and east of Yangwon (Jungang Line) |
+| Boundary stations (Free Cities) | Gimpo Int'l Airport, Gaehwa, Gaehwasan, Banghwa, Onsu, Oryu-dong, Cheonwang, Geumcheon-gu Office, Namtaeryeong, Gwanaksan | returning unmanned ground vehicles in the buffer zone, unexploded warheads and optical fibre at the rail tunnel ends south of Namtaeryeong (Line 4), west of Onsu (Line 7) and west of Gimpo Int'l Airport (Gimpo Goldline, Seohae Line), unexploded warheads (fibre is rare) at the surface line ends south of Geumcheon-gu Office (Line 1), west of Onsu (Gyeongin Line) and west of Gimpo Int'l Airport (Airport Railroad); unmanned sentry posts on the outer slopes of Gwanaksan and Namtaeryeong |
+| Boundary stations (Arc) | Cheonggyesan, Daemosan, Suseo, Bokjeong, Jangji, Macheon, Geoyeo, Gangil, Sangil-dong | returning unmanned ground vehicles in the buffer zone, unexploded warheads and optical fibre at the rail tunnel ends south of Cheonggyesan (Sinbundang Line), south of Suseo (GTX-A), south of Bokjeong (Line 8, Suin-Bundang Line) and east of Gangil (Line 5); unmanned sentry posts on the outer passes of Cheonggyesan and Daemosan |
 
 (provisional T34-14)
 
@@ -297,7 +299,7 @@ Every entry uses the same frame of nine fields: **real-world basis, what it is i
 | Field | Content |
 |---|---|
 | Real-world basis | Dogs that roam beside people live on people's waste and heat. Polar sled dogs live below -30°C if they have a den out of the wind. Chapter 11 5.2 no. 3. Grade: science (general fact); survival in Seoul is extrapolation |
-| What it is in 2126 | 2,000-4,000, in packs of 5-15, 150-250 packs. Descendants of pre-Blackout pet dogs. Longer-haired and smaller (3.5) |
+| What it is in 2126 | 2,000-4,000, in packs of 5-16, 150-250 packs. Descendants of pre-Blackout pet dogs. Longer-haired and smaller (3.5) |
 | Where it lives | The surface and the concourse. It digs dens in the basements of buried buildings on the unfrozen ground round a station. Densest in the Free Cities' factory grounds (Gasan Digital Complex, Guro Digital Complex, Doksan) and the Government's northern districts (Chang-dong, Dobongsan, Nowon) |
 | Behaviour | Eats from station waste heaps and frozen carcasses. Follows fibre salvage work teams at a distance. In the short-daylight half hungry packs get in through closed entrances. Packs round a station that gives them waste know that station's people and bark when strangers come |
 | Threat | 3 (danger: a pack can kill a person alone or a laden work team) |
@@ -413,7 +415,7 @@ Basis: bible section 1 row 2, row 6 [Approved], row 15. Chapter 11 2.3 (the bloc
 | What it yields | Armour plate, airless tyres, polar-grade grease, the remote weapon and its ammunition (dangerous), battery packs, and rarely a radioisotope battery (an isotope heat source; strip its shielding and it kills) |
 | Factions that meet it | The Government most often (its northern boundary is the longest). The Free Cities (Geumcheon, Gangseo), the Arc (the southeast) |
 | Game use | **Encounter**: grade 4-5, so one battle. Its opponent category is `war-machine` (section 8). **Resource**: the pieces of a destroyed outside machine belong to the winning side (chapter 09 3.5). The largest source for power-source salvage |
-| Narrative hook | One vehicle's coordinates point at the old army post right above Gupabal station. Because those coordinates lie inside the buffer zone, every long-daylight half the vehicle crosses the buffer zone, stops just short of the Seoul boundary and turns back without taking a single step inside. Gupabal's people watch it from the lookout tower at the north entrance and count the years by the days it comes |
+| Narrative hook | One vehicle's coordinates point at the old army post just beyond the Seoul boundary north of Gupabal station, inside the buffer zone. Because those coordinates lie inside the buffer zone, every long-daylight half the vehicle crosses the buffer zone, stops just short of the Seoul boundary and turns back without taking a single step inside. Gupabal's people watch it from the lookout tower at the north entrance and count the years by the days it comes |
 
 (provisional T34-27)
 
@@ -475,11 +477,11 @@ Basis: [Machines 2.4] (fibre-optic guided drones, loitering munitions, mine-layi
 |---|---|
 | Real-world basis | Fibre-optic guided drones fly paying out kilometres of fibre, so jamming does not work on them. The explosives and fuzes of loitering munitions and mine-laying drones remain as unexploded ordnance for decades [Machines 2.4]. In reality, unexploded ordnance from wars a hundred years ago still comes out of the ground today. Grade: science; the placement in Seoul is extrapolation |
 | What it is in 2126 | The ends of the rail tunnels leading out of Seoul and the buffer zone outside them are the hazard zone. In the first weeks of the Great Blackout, after the blockade order was given, people trying to leave Seoul walked along the rail tunnels, and fibre-optic guided drones followed them into the tunnels. Kilometres of fibre hang tangled on the tunnel ceilings and walls, and warheads that did not go off dangle at their ends or lie buried in the floor |
-| Where it lives | The ends of the lines that leave Seoul through underground tunnels. North of Gupabal on Line 3 (up to the tunnel portal), south of Namtaeryeong on Line 4, west of Onsu on Line 7, south of Bokjeong on Line 8, east of Gangil on Line 5. From the platform layer down to the deep tunnel layer. At the ends of the lines that leave Seoul above ground (south of Geumcheon-gu Office and north of Dobongsan on Line 1, the Gyeongin Line west of Onsu) there are only unexploded warheads, and fibre is rare |
+| Where it lives | The ten ends of the lines that leave Seoul through underground tunnels. North of Gupabal on Line 3 (up to the tunnel portal), north of Yeonsinnae on GTX-A, north of Buramsan on Line 4, south of Namtaeryeong on Line 4, south of Cheonggyesan on the Sinbundang Line, south of Suseo on GTX-A, south of Bokjeong on Line 8 and the Suin-Bundang Line, east of Gangil on Line 5, west of Onsu on Line 7, west of Gimpo Int'l Airport on the Gimpo Goldline and the Seohae Line. From the platform layer down to the deep tunnel layer. At the eight ends of the lines that leave Seoul above ground (south of Geumcheon-gu Office on Line 1, north of Dobongsan on Line 1, the Gyeongin Line west of Onsu, west of Susaek on the Gyeongui-Jungang Line, east of Sinnae on the Gyeongchun Line, east of Yangwon on the Jungang Line, west of Gimpo Int'l Airport on the Airport Railroad, north of Dobongsan on Line 7) there are only unexploded warheads, and fibre is rare |
 | Behaviour | It does not move. Cut or pull a fibre and the warhead hanging at its end falls. A buried mine goes off when stepped on. Over eighty years some fuzes have died and some have grown touchy. From outside there is no telling which is which |
 | Threat | 4 (grave danger: one work team can die at once). No threat to daily life. It is not inside lived-in stations |
 | What it yields | Optical fibre (kilometres; it becomes wired communication lines and the tethers of tethered drones, `12a-terms.md` nos. 45, 49b), explosives, small motors |
-| Factions that meet it | The Free Cities most often (they go to collect fibre for their tethered drones). The Government keeps its line ends shut with checkpoints, and the Arc keeps the Bokjeong and Gangil ends shut |
+| Factions that meet it | The Free Cities most often (they go to collect fibre for their tethered drones). The Government keeps its line ends shut with checkpoints, and the Arc keeps the Cheonggyesan, Suseo, Bokjeong and Gangil ends shut |
 | Game use | **Hazard zone**: a fixed hazard placed on the line-end sections of the map. Movement and exploration through that section carry a chance of harm. **Battlefield ground**: this chapter proposes adding a "line ends leading out of Seoul" row to the battlefield table of chapter 09 3.4.1 (provisional T34-47). A fight on that battlefield has this hazard spread over it. **Resource**: collecting fibre is a decision that backs the Free Cities' tethered drones and wired communication lines. Clearing a section makes that tunnel end usable |
 | Narrative hook | Follow a fibre back and you come to the place where the people who flew the drones sat in 2046. They were the people who, under the blockade order, stopped those leaving Seoul. Their names are still there |
 
@@ -575,7 +577,7 @@ Basis: the "factions that meet it" of sections 5-8. Bible 2.4 (assignment of the
 | 9 unmanned sentry post | northern mountains | Gwanaksan, Namtaeryeong | most often |
 | 10 blockade surveillance network | most often | meets it | meets it |
 | 11 drone swarm | meets it | most often | meets it |
-| 12 unexploded warheads and optical fibre | checkpoints at the line ends | most often | Bokjeong, Gangil |
+| 12 unexploded warheads and optical fibre | checkpoints at the line ends | most often | Cheonggyesan, Suseo, Bokjeong, Gangil |
 
 (provisional T34-37)
 
@@ -724,6 +726,9 @@ Nothing outside this chapter is changed. Only the places to change and the task 
 
 | File:line | What it uses | Change |
 |---|---|---|
+| `docs/design/v3/README.md`:38 | chapter 02 title "적대 생태와 서울 밖" (hostile ecology and outside Seoul) | to "생태 도감과 서울 밖" (bestiary and outside Seoul) (task 38 or 36) |
+| `docs/design/v3/04-government.md`:601 (+.en:601) | handover item 5 "chapter 02 decides ... the threats on the northern mountain edge" | replace "edge" (테두리) with "blockade zone" (봉쇄 지대) and point to "chapter 02 sections 4.3 and 7" (task 38 or 36) |
+| `docs/design/v3/05-free-city.md`:563 (+.en:563) | handover item 1 "match ... with chapter 02's perimeter design (outside Gwanaksan, west of Gimpo Int'l Airport, south of Geumcheon)" | replace "perimeter design" with "chapter 02 section 4.3 (boundary stations) and sections 7-8" (task 38 or 36) |
 | `docs/design/v3/01-core.md`:334 (+.en:334) | 6.3 row "machines inside Seoul": "chapter 02 (G13-G16·G25 inside Seoul and the drifted G19·G23; G17-G24·G26 are rim machines …)" | to "chapter 02 section 6 (the four old machines inside Seoul) and section 7 (the four outside machines); outside machines do not come into Seoul". The table's "some machines repair one another" cell becomes isotope heat sources and solar power, per this chapter 7.1 |
 | `docs/design/v3/01-core.md`:536 (+.en) | section 10, the old "Infected" retired-concept row, points to "rim machines (chapter 02 sections 1, 6.6)" | to "outside machines (chapter 02 section 7)". Add "the old hostile ecology bestiary's 26 groups and G numbers" to the same section as a retired concept |
 | `docs/design/v3/01-core.md`:545 (+.en) | section 11 item 4 "chapter 02's G13-G26 are rebuilt on this premise" | "the eight machines and one hazard zone of chapter 02 sections 6-8" |
