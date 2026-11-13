@@ -123,7 +123,7 @@ Inside the Government, the OMO Party and the Claw Party split over whether to se
 - **Other polities.** Seoul has only the three. The many named statelets of older records do not exist.
 - **Rule outside Seoul.** Outside Seoul is the rim of the war machines. Nobody rules there and there are no domains ([Beyond Seoul: the Rim](/wiki/External-Theaters/)).
 - **A name binding the Free Cities.** The seven cities are neither a league nor a country. No name binds them.
-- **Company groups.** The great companies of before the Blackout did not survive as houses. The units in which work and position pool are Assembly Member houses, workbench houses and Near Houses ([Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/)).
+- **Company groups.** The great companies of before the Blackout did not survive as houses. The units in which work and position pool are Assembly Member houses, workbench houses and Near Houses ([Government Society](/wiki/Government-Society/), [Free City Society](/wiki/Free-City-Society/), [Arc Society](/wiki/Arc-Society/)).
 - **Organised faith outside the Arc.** The Arc has replaced every religion before it.
 
 <a id="unsettled"></a>
@@ -138,7 +138,6 @@ Inside the Government, the OMO Party and the Claw Party split over whether to se
 ## See also
 
 - [Government Society](/wiki/Government-Society/), [Free City Society](/wiki/Free-City-Society/), [Arc Society](/wiki/Arc-Society/)
-- [The Hands That Run a Station](/wiki/Operating-Houses/): how each polity runs a station
-- [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/): why work and position pool in houses
+- [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/): how a house carries its name down the generations
 - [Crossings and Smuggling](/wiki/Diaspora-Corridors/), [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/)
 - [Titles and Offices](/wiki/Offices-and-Ranks/), [World Index: the Three Polities and the 25 Duchies](/wiki/World-Expansion-Index/), [Century Annals 2026-2126](/wiki/Century-Annals/)

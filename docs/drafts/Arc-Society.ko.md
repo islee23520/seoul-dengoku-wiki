@@ -355,5 +355,5 @@ section_checkpoint: complete
 ## 함께 읽기
 
 - [서울의 세 정체](/wiki/Sixteen-States/), [정부 사회](/wiki/Government-Society/), [자유도시들의 사회](/wiki/Free-City-Society/)
-- [집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/), [역을 돌리는 손](/wiki/Operating-Houses/), [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/)
+- [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/), [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/)
 - [급수계약과 세 정체](/wiki/World-Relation-Ledger/), [기계 몸과 결핍](/wiki/Cyberware-and-Scarcity/), [믿음과 의례](/wiki/Faith-Culture-Schism/)

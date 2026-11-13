@@ -136,8 +136,6 @@ section_checkpoint: complete
 - **동주민센터**는 **동장**의 배급소다. 배급, 기재, 민원의 세 창구가 있다. 정부 사람이 가장 자주 마주치는 공무원은 이 창구의 서기다. 배급 서기 한 사람이 한 세대의 이번 달 끼니를 정할 수 있다.
 - **역장**은 역의 열과 공기를 쥔 사람이라 동장보다 아래이면서 동장보다 무섭다. 역장 자리는 역장 집안 안에서 물린다.
 
-역 하나가 하루를 어떻게 도는지는 [역을 돌리는 손](/wiki/Operating-Houses/)에 있다.
-
 <a id="law"></a>
 ## 법과 벌
 
@@ -342,5 +340,5 @@ section_checkpoint: complete
 ## 함께 읽기
 
 - [서울의 세 정체](/wiki/Sixteen-States/), [자유도시들의 사회](/wiki/Free-City-Society/), [아크 사회](/wiki/Arc-Society/)
-- [역을 돌리는 손](/wiki/Operating-Houses/), [집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/), [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/)
+- [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/), [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/)
 - [급수계약과 세 정체](/wiki/World-Relation-Ledger/), [칭호와 자리](/wiki/Offices-and-Ranks/), [총, 탄, 드론](/wiki/Era-Arms-and-Tech-Level/)

@@ -355,5 +355,5 @@ Baptised fighters are strong, but when parts and medicine are cut off the whole 
 ## See also
 
 - [The Three Polities of Seoul](/wiki/Sixteen-States/), [Government Society](/wiki/Government-Society/), [Free City Society](/wiki/Free-City-Society/)
-- [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/), [The Hands That Run a Station](/wiki/Operating-Houses/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/)
+- [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/)
 - [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/), [Machine Bodies and Scarcity](/wiki/Cyberware-and-Scarcity/), [Faith and Rites](/wiki/Faith-Culture-Schism/)

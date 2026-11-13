@@ -70,6 +70,8 @@ section_checkpoint: v3 task 12 complete
 ## 관련 문서
 
 - [인물·세력·생업](/wiki/Characters-Factions-and-Professions/)
-- [집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/)
+- [정부 사회](/wiki/Government-Society/)
+- [자유도시들의 사회](/wiki/Free-City-Society/)
+- [아크 사회](/wiki/Arc-Society/)
 - [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/)
 - [급수계약과 세 정체](/wiki/World-Relation-Ledger/)
