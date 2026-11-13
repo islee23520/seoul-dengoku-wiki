@@ -29,7 +29,7 @@ const BODY = { 'left-arm': ['Left arm', '왼팔'], 'right-arm': ['Right arm', '�
 const SECTION_ORDER_KO = ['생애', '관직', '훈련', '호위 대열', '일화', '가문', '관계', '야망', '공포', '개입'];
 const SECTION_EN = { '생애': 'Life', '관직': 'Offices', '훈련': 'Training', '호위 대열': 'Guard Formation', '일화': 'Anecdote', '가문': 'Houses', '관계': 'Relationships', '야망': 'Ambition', '공포': 'Fear', '개입': 'Intervention' };
 // v3 faith values (docs/design/v3/07-people-and-war.md 9.4, 10.2): Arc members with parts are baptised, without parts unbaptised; fitted = parts outside the Arc.
-const FAITH = { baptised: ['Baptised', '세례받음'], unbaptised: ['Unbaptised', '미세례자'], fitted: ['Fitted (outside the Arc)', '이식(아크 밖)'], none: ['None', '없음'] };
+const FAITH = { baptised: ['Baptised', '세례받음'], unbaptised: ['Unbaptised', '미세례자'], fitted: ['Fitted (outside the Arc)', '이식(아크 밖)'], hierophant: ['The one who opens baptism (Hierophant)', '세례를 여는 사람(교주)'], none: ['None', '없음'] };
 
 const STR = {
   en: {

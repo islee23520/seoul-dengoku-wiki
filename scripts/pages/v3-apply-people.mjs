@@ -847,7 +847,8 @@ function build(base, ctx, opts) {
   // 신앙
   const personFaith = (v) => {
     const pc = v.o.partCount;
-    if (v.o.faction_id === 'arc') return pc === null ? 'none' : pc >= 1 ? 'baptised' : 'unbaptised';
+    // 교주는 부위 수를 세지 않는다(07장 8.6절 partCount null). 세례를 여는 사람이지 '없음'이 아니다.
+    if (v.o.faction_id === 'arc') return pc === null ? 'hierophant' : pc >= 1 ? 'baptised' : 'unbaptised';
     return pc >= 1 ? 'fitted' : 'none';
   };
   // 보유지(07장 9.4절)
