@@ -125,7 +125,7 @@ const EX: Record<string, Exhibit> = {
     id: "gwanak", date: "2126",
     heading: { ko: "관악과 그 공작", en: "Gwanak and Its Duke" },
     note: { ko: "관악은 관악산의 땔감과 나무 섬유, 화강암을 뚫는 굴착으로 먹고산다. 관악의 대주회가 도장을 묶어 공작 자리는 이일섭의 집안 안에서 대물린다. 관악은 정부와 계약할 때 '공작령 대 공작령'으로 도장 찍기를 고집한다.", en: "Gwanak lives on the firewood and wood fibre of Gwanaksan and on drilling through its granite. Gwanak's masters' meeting bound the seal, so the dukedom passes within I Ilseop's house. In dealing with the Government, Gwanak insists on stamping duchy to duchy." },
-    images: [portrait("person-0998", "K998", "이일섭", "I Ilseop", "관악 공작 · 제1분공방 이씨 가문", "Duke of Gwanak · I House of the First Branch Workshop")],
+    images: [portrait("person-0998", "K998", "이일섭", "I Ilseop", "관악 공작 · 제1분공방 이씨 가문 후계", "Duke of Gwanak · Heir of the I House of the First Branch Workshop")],
     sources: [
       { label: { ko: "자유도시들의 사회 · 관악", en: "Free City Society · Gwanak" }, href: FREECITY },
       { label: { ko: "인물 기록 person-0998", en: "Person record person-0998" }, href: wikiPerson("person-0998") },

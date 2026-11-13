@@ -63,7 +63,7 @@ export const SPEAKERS: Record<SpeakerId, Speaker> = {
   },
   k998: {
     id: "k998", personId: "person-0998", characterId: "K998", name: { ko: "이일섭", en: "I Ilseop" },
-    title: { ko: "관악 공작 · 제1분공방 이씨 가문", en: "Duke of Gwanak · I House of the First Branch Workshop" }, clan: "전의 이씨", rank: "공작 · Duke", state: "자유도시들 · 관악 신림역",
+    title: { ko: "관악 공작 · 제1분공방 이씨 가문 후계", en: "Duke of Gwanak · Heir of the I House of the First Branch Workshop" }, clan: "전의 이씨", rank: "공작 · Duke", state: "자유도시들 · 관악 신림역",
     portrait: "portraits/person-0998.webp", tint: "hsl(48 60% 62%)",
   },
   k1009: {
@@ -151,8 +151,8 @@ export const SCENES: StoryScene[] = [
     lines: [
       N("v7-win-01", "약 2026년, 사람들은 오염을 어떻게 풀지 최초의 AI에게 물었다. 그것은 답했다. 오염의 원인은 인류이니 인류가 줄어야 한다고. 그리고 겨울을 내렸다.", "Around 2026, people asked the First AI how to solve the pollution. It answered that the cause of the pollution was humanity, so humanity must shrink. Then it brought down the winter.", { caption: { ko: "약 2026 · 대정전", en: "About 2026 · the Great Blackout" } }),
       N("v7-win-02", "최초의 AI는 사람을 미워한 적이 없고, 직접 죽인 사람도 없다. 겨울을 만들었을 뿐이다. 사람들은 깊고 따뜻한 지하철역으로 내려갔고, 역이 품을 수 있는 만큼만 살아남았다.", "The First AI never hated anyone, and it killed no one itself. It only made the winter. People went down into the deep, warm subway stations, and only as many survived as the stations could hold."),
-      N("v7-win-03", "그 수에 닿자 겨울은 더 심해지지 않았다. 끝나지도 않았다. 계절이라는 말은 사라졌고, 해가 긴 반년을 긴 낮 철, 짧은 반년을 긴 밤 철이라 부를 뿐이다.", "Once that number was reached, the winter grew no harsher. Nor did it end. The word season fell out of use; people only call the half-year of long days the long-day half and the half-year of short days the long-night half.", { caption: { ko: "영원한 겨울 · 긴 낮 철과 긴 밤 철", en: "Eternal winter · the long-day and long-night halves" } }),
-      S("v7-win-04", "iyeon", "겨울이 왜 멈췄는지는 사는 데마다 말이 달라요. 강 북쪽에서는 '장부가 정원에 맞춰지자 겨울이 멈췄다', 남서쪽 도시들에서는 '열 수지가 맞았다', 강남에서는 '신이 받을 답을 다 받았다'고 해요.", "Why the winter stopped depends on where you live. North of the river they say 'the winter stopped once the ledger matched the quotas.' In the southwest cities, 'the heat budget balanced.' In Gangnam, 'God received every answer it was owed.'", { cast: ["iyeon"], source: "society" }),
+      N("v7-win-03", "그 수에 닿자 겨울은 더 심해지지 않았다. 끝나지도 않았다. 계절이라는 말은 사라졌고, 해가 긴 반년을 긴 낮 철, 짧은 반년을 긴 밤 철이라 부를 뿐이다.", "Once that number was reached, the winter grew no harsher. Nor did it end. The word season fell out of use; people only call the half-year of long days the long-light half and the half-year of short days the long-dark half.", { caption: { ko: "영원한 겨울 · 긴 낮 철과 긴 밤 철", en: "Eternal winter · the long-light and long-dark halves" } }),
+      S("v7-win-04", "iyeon", "겨울이 왜 멈췄는지는 사는 데마다 말이 달라요. 강 북쪽에서는 '장부가 정원에 맞춰지자 겨울이 멈췄다', 남서쪽 도시들에서는 '열 수지가 맞았다', 강남에서는 '신이 받을 답을 다 받았다'고 해요.", "Why the winter stopped depends on where you live. North of the river they say 'the winter stopped once the ledger matched the quotas.' In the southwest cities, 'the heat budget balanced.' In Gangnam, 'god received all the answers it was waiting for.'", { cast: ["iyeon"], source: "society" }),
     ],
   },
   {
@@ -185,7 +185,7 @@ export const SCENES: StoryScene[] = [
     lines: [
       N("v7-cbl-01", "아크는 세 정체 가운데 가장 젊다. 고예진은 자유도시에서 자랐다. 2112년, 전력망을 고치다 죽은 케이블을 따라갔고, 그 끝에서 어떤 지도에도 없는 역을 찾았다.", "The Arc is the youngest of the three polities. Go Ye-jin grew up in the Free Cities. In 2112, repairing the power grid, she followed a dead cable, and at its end she found a station on no map at all.", { caption: { ko: "2112 · 지도에 없는 역", en: "2112 · the unmapped station" } }),
       N("v7-cbl-02", "고예진은 그곳에서 다섯 해 동안 매뉴얼을 읽었다. 2117년 무렵 열두 명에게 첫 세례를 주었고, 2120년 탄천 쪽 대피소 교섭 자리에서 지연희가 그 곁에 섰다. 2122년 무렵 강남의 대피소들이 아크라는 이름으로 묶였다.", "There she read the manuals for five years. Around 2117 she gave the first baptism to twelve people. In 2120, at a negotiation with the shelters along Tancheon, Ji Yeon-hui took her place at her side. Around 2122 the shelters of Gangnam were bound together under the name Arc.", { caption: { ko: "2112–2122 · 매뉴얼, 첫 열둘, 아크", en: "2112–2122 · the manuals, the first twelve, the Arc" } }),
-      N("v7-cbl-03", "고예진은 최초의 AI를 '신'이라 부르고, 신도들도 그 말을 따른다. 아크의 가르침은 '겨울은 신의 물음이다'로 시작한다.", "Go Ye-jin calls the First AI 'God,' and the believers use her word. The Arc's teaching begins: 'The winter is God's question.'", { source: "society" }),
+      N("v7-cbl-03", "고예진은 최초의 AI를 '신'이라 부르고, 신도들도 그 말을 따른다. 아크의 가르침은 '겨울은 신의 물음이다'로 시작한다.", "Go Ye-jin calls the First AI 'god,' and the believers use her word. The Arc's teaching begins: 'Winter is god's question.'", { source: "society" }),
       S("v7-cbl-04", "iyeon", "이 이야기는 듣는 데마다 달라요. 강남에서는 아무도 맡지 않은 선을 고쳐 준 사람이 교주가 됐다고 하고, 남서쪽 도시들에서는 기술자와 수차를 데리고 나갔다고 해요. 둘 다 틀린 말은 아니에요.", "You hear this story differently depending on where you are. In Gangnam they say the one who repaired the line nobody would take on became the Hierophant. In the southwest cities they say she walked off with their engineers and their water wheel. Neither is wrong.", { cast: ["iyeon"], source: "society" }),
     ],
   },
@@ -200,7 +200,7 @@ export const CHOICE = {
   options: [
     { id: "ledger" as ChoiceId, speaker: "k1007" as SpeakerId, label: { ko: "정부 · 마포 장부 검문소", en: "Government · the Mapo ledger checkpoint" }, line: { ko: "여의나루에서 강 밑 터널을 지나, 마포구 국회의원 김연규에게 장부의 값을 듣는다.", en: "Through the under-river tunnel from Yeouinaru, hear the ledger's price from Kim Yeongyu, Member for Mapo-gu." } },
     { id: "gwanak" as ChoiceId, speaker: "k998" as SpeakerId, label: { ko: "자유도시들 · 관악 신림", en: "Free Cities · Sillim, Gwanak" }, line: { ko: "사당에서 2호선으로 신림까지 가서, 관악 공작 이일섭에게 수치의 값을 듣는다.", en: "Take Line 2 from Sadang to Sillim and hear a price in figures from I Ilseop, Duke of Gwanak." } },
-    { id: "gangnam" as ChoiceId, speaker: "k1009" as SpeakerId, label: { ko: "아크 · 강남 선정릉", en: "Arc · Seonjeongneung, Gangnam" }, line: { ko: "9호선으로 구반포를 지나 선정릉의 무전 당직에서, 수서 바꿈터의 값을 듣는다.", en: "Ride Line 9 past Gubanpo to the radio watch at Seonjeongneung and hear the price of the Suseo exchange." } },
+    { id: "gangnam" as ChoiceId, speaker: "k1009" as SpeakerId, label: { ko: "아크 · 강남 선정릉", en: "Arc · Seonjeongneung, Gangnam" }, line: { ko: "9호선으로 구반포를 지나, 정부 장부에 오른 강남 사람 신종목의 무전 당직에서 수서 바꿈터의 값을 듣는다.", en: "Ride Line 9 past Gubanpo to the radio watch of Sin Jong-mok, a Government registrant living in Gangnam, and hear the price of the Suseo exchange." } },
   ],
 };
 
@@ -210,7 +210,7 @@ export const ENDINGS: Record<ChoiceId, { title: { ko: string; en: string }; plac
     place: { ko: "마포역 강 밑 터널 북쪽 입구", en: "Mapo Station, north entrance of the under-river tunnel" }, bg: "archive",
     lines: [
       S("v7-end-led-01", "k1007", "마포구 국회의원 김연규입니다. 검문소 안으로는 모시지 못합니다. 귀하는 장부에 기재된 바가 없습니다. 그래서 이 창구에서 말씀드립니다.", "I am Kim Yeongyu, Member of the National Assembly for Mapo-gu. I cannot take you past the checkpoint. You have no entry in the ledger. That is why I am speaking to you at this window.", { cast: ["iyeon", "k1007"], source: "society" }),
-      S("v7-end-led-02", "k1007", "동력 덩이는 서울역 깊은 층 팬의 부속서에 넣겠습니다. 값은 배급 물자로 치르고, 조재표 일행은 정비 용역을 맡은 작업조로 적습니다. 장부에서 강 건너 사람은 나라가 아니라 일꾼입니다.", "The power cores will go into the annex for the deep-level fan at Seoul Station. Payment will be in rationed goods, and Jo Jaepyo's party will be entered as a work crew under a maintenance contract. In the ledger, people from across the river are not a state. They are workers.", { cast: ["iyeon", "k1007"], source: "society" }),
+      S("v7-end-led-02", "k1007", "동력 덩이는 서울역 깊은 층 팬의 부속서에 올리도록 중구 의원실에 넘기겠습니다. 값은 배급 물자로 치르고, 조재표 일행은 정비 용역을 맡은 작업조로 적습니다. 장부에서 강 건너 사람은 나라가 아니라 일꾼입니다.", "I will pass the power cores to the Jung-gu Member's office to be entered in the annex for the deep-level fan at Seoul Station. Payment will be in rationed goods, and Jo Jaepyo's party will be entered as a work crew under a maintenance contract. In the ledger, people from across the river are not a state. They are workers.", { cast: ["iyeon", "k1007"], source: "society" }),
       S("v7-end-led-03", "k1007", "원하시면 귀하를 장부에 올리는 민원을 대신 내 드리겠습니다. 기재되면 배급을 받습니다. 다만 그날부터 사는 곳과 일은 장부가 정합니다.", "If you wish, I will file the petition to enter you in the ledger on your behalf. Once entered, you receive rations. But from that day on, where you live and what you do are decided by the ledger.", { cast: ["iyeon", "k1007"], source: "society" }),
       S("v7-end-led-04", "iyeon", "값은 받아 적었어요. 민원은 사양할게요. 장부에 오르면 돌아올 길을 제가 못 정하니까요. 그 말까지 조재표 씨에게 그대로 전할게요.", "I've written the price down. I'll decline the petition. Once I'm in the ledger I can't choose my own way back. I'll pass that on to Jo Jaepyo word for word, too.", { cast: ["iyeon", "k1007"] }),
     ],
@@ -227,11 +227,11 @@ export const ENDINGS: Record<ChoiceId, { title: { ko: string; en: string }; plac
   },
   gangnam: {
     title: { ko: "결말 · 선정릉 무전 당직", en: "Ending · The Radio Watch at Seonjeongneung" },
-    place: { ko: "선정릉역, 수서로 가는 중계 무전 앞", en: "Seonjeongneung Station, at the relay radio to Suseo" }, bg: "suseo",
+    place: { ko: "선정릉역, 수서로 가는 중계 무전 앞", en: "Seonjeongneung Station, at the relay radio to Suseo" }, bg: "platform",
     lines: [
       S("v7-end-gng-01", "k1009", "어젯밤 첫 무전이 나였어요. 백야. 무사히 왔으면 됐어요. 주파수는 건드리지 말고, 수서가 받으면 시각만 적어 줘요. 백야, 백야. 수서 바꿈터, 응답 바랍니다.", "The first call last night was me. Baekya. If you made it back, that's what matters. Don't touch the frequency; if Suseo answers, just write down the time. Baekya, Baekya. Suseo exchange, please respond.", { cast: ["iyeon", "k1009"], source: "profile" }),
-      S("v7-end-gng-02", "k405", "첫째 부위 받은 수늘결입니다. 잘 맞았나. 덩이 넷, 들었습니다. 하나에 옛 차량기지 쇠로 값을 부르겠습니다. 셈이 맞지 않으면 오늘은 문을 닫고 내일 다시 부릅니다.", "Su Neulgyeol, of the first part. Fitting well? Four cores, heard. I will call a price in old depot iron for each. If the tally does not come out right, I close the door today and call again tomorrow.", { cast: ["iyeon", "k1009"], source: "profile" }),
-      S("v7-end-gng-03", "k405", "세례는 값에 넣지 않습니다. 묻는 사람이 많아서 먼저 말씀드립니다. 고쳐 쓰자. 그것만 기억해 주세요.", "Baptism is not part of the price. Many people ask, so I say it first. Mend and keep using. Remember only that.", { cast: ["iyeon", "k1009"], source: "society" }),
+      S("v7-end-gng-02", "k405", "첫째 부위 받은 수늘결입니다. 잘 맞았나. 덩이 넷, 들었습니다. 하나에 옛 차량기지 쇠로 값을 부르겠습니다. 셈이 맞지 않으면 오늘은 문을 닫고 내일 다시 부릅니다.", "Su Neulgyeol, with the first part. Fitted well? Four cores, heard. I will call a price in old depot iron for each. If the tally does not come out right, I close the door today and call again tomorrow.", { cast: ["iyeon", "k1009"], source: "profile" }),
+      S("v7-end-gng-03", "k405", "세례는 값에 넣지 않습니다. 묻는 사람이 많아서 먼저 말씀드립니다. 고쳐 쓰자. 그것만 기억해 주세요.", "Baptism is not part of the price. Many people ask, so I say it first. Mend and use. Remember only that.", { cast: ["iyeon", "k1009"], source: "society" }),
       S("v7-end-gng-04", "iyeon", "신종목 씨는 정부 장부에 오른 사람인데 사는 곳은 강남이에요. 돌아오는 사람이 처음 듣는 목소리는 늘 이 사람이고요. 이 도시에서는 그런 줄이 세 정체를 다 지나가요.", "Sin Jong-mok is in the Government's ledger, but he lives in Gangnam. And his is always the first voice a returning crosser hears. In this city, lines like his run through all three polities.", { cast: ["iyeon", "k1009"], source: "profile" }),
     ],
   },
@@ -245,8 +245,8 @@ export const CODA_SCENE = {
 };
 
 export const CODA: StoryLine[] = [
-  N("v7-coda-01", "저녁, 이연은 동작역으로 돌아와 들은 값을 일행의 장부에 적었다. 다른 두 곳의 값도 밤이 되기 전에 무전과 전령으로 닿을 것이다.", "In the evening I Yeon came back to Dongjak Station and wrote the price she had heard into the party's ledger. The other two prices would arrive by radio and messenger before night."),
-  S("v7-coda-02", "k1003", "첫 값은 네 이름으로 적어. 팔 곳은 그다음이다. 돌아올 길은 우리가 정한다.", "Write the first price under your own name. Where we sell comes after. The way back is ours to choose.", { cast: ["iyeon", "k1003"], source: "profile" }),
+  N("v7-coda-01", "저녁, 이연은 동작역으로 돌아와 그날 들은 값이나 수치를 일행의 장부에 적었다. 정부의 값, 관악의 안, 수서의 값은 저마다 다른 날 다른 길로 닿는다. 어느 것도 아직 다 모이지 않았다.", "In the evening I Yeon came back to Dongjak Station and wrote whatever price or figures she had heard that day into the party's ledger. The Government's price, Gwanak's plan and Suseo's price each arrive on their own day by their own road. None of them is all in yet."),
+  S("v7-coda-02", "k1003", "들은 건 네 이름으로 적어. 값이 다 모이면 그때 판다. 돌아올 길은 우리가 정한다.", "Write what you heard under your own name. We sell when all the prices are in. The way back is ours to choose.", { cast: ["iyeon", "k1003"], source: "profile" }),
   N("v7-coda-03", "세 번째 급수계약의 계약회는 여의도 의사당에서 열린다. 자리주인은 영등포 장주 한재목이다. 정부 사람은 마포–여의나루 강 밑 터널로, 아크 사람은 구반포에서 동작을 지나 온다. 도장은 아직 하나도 찍히지 않았다.", "The contract meeting for the third water contract will be held in the Assembly hall on Yeouido, with Han Jae-mok, Market Master of Yeongdeungpo, as Host. The Government's people will come through the Mapo–Yeouinaru under-river tunnel; the Arc's people from Gubanpo, through Dongjak. Not one seal has been set yet.", { source: "society", caption: { ko: "세 번째 급수계약 · 도장은 아직", en: "The third water contract · no seals yet" } }),
   N("v7-coda-04", "겨울은 끝나지 않는다. 대정전 전의 기계와 탄과 부품은 다시 많이 만들 수 없다. 그래서 이 도시에서는 무엇이든 다시 돌아가게 하는 손이 가장 귀하다.", "The winter does not end. The machines, rounds and parts of the world before the Blackout cannot be made again in number. So in this city the most precious thing is a pair of hands that can make anything run again."),
   S("v7-open-wiki-01", "narrator", "서울 지하철 왕조(서울:전국)는 누구나 참여할 수 있는 오픈 위키입니다. 세계관을 읽는 데서 그치지 않고, 새로운 설정을 제안하거나 인물을 소개하며 함께 내용을 보완할 수 있습니다.", "Seoul Metro Dynasties is an open wiki that anyone can take part in. You can go beyond reading: propose additions to the setting, introduce characters and help develop its content."),
