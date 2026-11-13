@@ -132,16 +132,16 @@ const UNIT_TAGS = {
 // that happen to be empty, so they are written out here. A faction with units must have an entry (checked below).
 const FACTION_GAPS = {
   government: {
-    ko: ['이식 병종이 없다.', '용병이 없다.', '지원과 현장 수리가 얇다 (지원 1~2개).', '1~2등급 징집병의 사기가 낮다.'],
-    en: ['No implant units.', 'No mercenaries.', 'Support and field repair are thin (1-2 support units).', 'Tier 1-2 conscripts have low morale.'],
+    ko: ['기계 몸 부대가 없다. 기계 몸을 정비할 곳이 아크뿐이다.', '고용한 부대가 없다. 장부 밖 사람을 군에 들이지 않는다.', '공병과 정비가 얇다 (지원 2개, 공병 없음). 다리와 터널을 고치는 손은 자유도시들에서 빌린다.', '1~2등급 징집병의 사기가 낮다.'],
+    en: ['No machine-body units: only the Arc can maintain machine bodies.', 'No hired units: no one off the ledger joins the army.', 'Thin engineering and repair (two support units, no engineers): the hands that mend bridges and tunnels are borrowed from the Free Cities.', 'Tier 1-2 conscripts have low morale.'],
   },
   'free-city': {
-    ko: ['장부식 대량 징집이 없다 (1등급 보병은 최대 1개).', '5등급이 없다.', '무거운 장갑이 4등급에서 멈춘다.', '지휘관 호위가 적다 (1~2개).'],
-    en: ['No ledger-style mass conscription (at most one tier 1 infantry unit).', 'No tier 5.', 'Heavy armour stops at tier 4.', 'Few commander escorts (1-2 units).'],
+    ko: ['수로 미는 보병이 없다 (1등급 보병은 하나뿐).', '5등급이 없다.', '무거운 장갑이 4등급에서 멈춘다.', '지휘관 호위가 적다 (2개).', '기계 몸으로 싸우는 중보병이 없다.'],
+    en: ['No mass infantry (only one tier 1 infantry unit).', 'No tier 5.', 'Heavy armour stops at tier 4.', 'Few commander escorts (two units).', 'No machine-body heavy infantry.'],
   },
   arc: {
-    ko: ['드론이 없다.', '포가 없다.', '사격병이 적고 3등급에서 멈춘다.', '영토가 4구뿐이라 명단이 18~22개로 작다.'],
-    en: ['No drones.', 'No artillery.', 'Few missile units, and they stop at tier 3.', 'Only four districts of territory, so the roster is small (18-22 units).'],
+    ko: ['드론이 없다. 전지와 부품이 세례에 먼저 간다.', '포가 없다.', '사격병이 적고 3등급에서 멈춘다.', '영토가 4구뿐이라 명단이 18~22개로 작다.'],
+    en: ['No drones: cells and parts go to baptism first.', 'No artillery.', 'Few missile units, and they stop at tier 3.', 'Only four districts of territory, so the roster is small (18-22 units).'],
   },
 };
 // The society document of each faction (wiki_document slug); linked only when the row exists.
