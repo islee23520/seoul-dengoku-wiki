@@ -581,7 +581,7 @@ Each district leans differently. Seocho has many in exchange and negotiation bec
 | Fighting | 호위장 / Guard Captain. 세례 전투원 / baptised fighter. 가문 징집병 / house levy. 교주 호위 / Hierophant's guard | Guard Captain S1, the rest S2-S4 | Guard Captain 30, baptised fighter 20, levy 17 |
 | Water, power, heat | 수차지기 / water-wheel keeper. 취수구지기 / intake keeper. 열 펌프지기 / heat-pump keeper. 출입구지기 / entrance keeper | S2-S4 | 16 |
 | Food | 섬유당 통지기 / fibre-sugar vat keeper. 빛밭지기 / light-field keeper. 버섯 굴지기 / mushroom-cellar keeper. 얼음 낚시꾼 / ice fisher. 부엌 일꾼 / cook | S3-S4 | 16 |
-| Exchange posts, negotiation, records | 셈꾼 (handles day-charge and maintenance-turn tallies) / tally keeper. 교섭인 / negotiator. 세례록 기록꾼 / roll keeper. 말지기 (household only) / Word Keeper | Negotiators and Word Keepers S1-S2, the rest S2-S4 | negotiator 30, Word Keeper 25 |
+| Exchange posts, negotiation, records | 셈꾼 (handles day-charge and maintenance-turn tallies) / tally keeper. 교섭인 / negotiator. 세례록 기록꾼 / roll keeper. 말지기 (household only) / Word Keeper | Negotiators and Word Keepers S1-S2, the rest S2-S4 | negotiator 30, Word Keeper 22 (provisional T30-arc-11) |
 | Outside work | 고물꾼 / salvager. 섬유 캐는 사람 / fibre digger. 테두리 망꾼 / rim watcher. 동력 덩이 캐는 사람 / power-core runner. 전령 / runner | S3-S4 | 18 |
 
 (provisional T07-56)
