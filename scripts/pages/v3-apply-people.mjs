@@ -670,6 +670,9 @@ function crossCheck(lines, base, ctx, P) {
     for (const [oid, ov] of V) if (oid !== id && ov.o.faction_id === v.o.faction_id && ['district', 'head'].includes(ov.o.seat?.layer) && base.clanOf.get(oid) === clan) return oid;
     return null;
   };
+  // 07장 6.2절(잠정 T30-gov-14): 자유도시의 이을 자식·우두머리 집안의 어른은 같은 씨족의 우두머리가 없으면 그 줄 도시의 우두머리를 주군으로 둔다.
+  const freeCityHouseFallback = (v) => v.o.faction_id === 'free-city' && (v.o.tier === 'T2' ? /후계|이을 자식/.test(v.o.role) : /우두머리 집안/.test(v.o.role) && /어른/.test(v.o.role));
+  const houseLiege = (id, v) => houseHolder(id, v) ?? (freeCityHouseFallback(v) ? holder.district[districtOf(v)] ?? null : null);
   // 07장 6.2절 의원 집안 칸(과제 30 결정): 정부 줄의 후계·배우자·친족·아이 네 칸. 주군은 그 줄 의석의 국회의원이다.
   // 종신 대통령의 옛 의석(종로)도 그 의석을 받은 사람(district 자리 주인)이 주군이고, 대통령(head 자리)은 주군이 아니다.
   const isAssemblyHouse = (v) => v.o.faction_id === 'government' && !v.o.seat && /^의원 집안/.test(v.o.role);
@@ -688,13 +691,13 @@ function crossCheck(lines, base, ctx, P) {
     }
     if (isAssemblyHouse(v)) return rowMember(v);
     if (v.o.tier === 'T2') {
-      if (/후계|이을 자식/.test(v.o.role)) return houseHolder(id, v);
+      if (/후계|이을 자식/.test(v.o.role)) return houseLiege(id, v);
       return f === 'free-city' ? holder.district[districtOf(v)] ?? null : top;
     }
     if (v.o.tier === 'T5') {
       if (f === 'government' && /대통령실|대통령 비서관|비서관|경호/.test(v.o.role)) return holder.head.government ?? null;
       if (f === 'arc' && v.o.row === '교주의 집') return holder.head.arc ?? null;
-      if (/의원 집안|우두머리 집안|곁집 집안/.test(v.o.role)) return houseHolder(id, v);
+      if (/의원 집안|우두머리 집안|곁집 집안/.test(v.o.role)) return houseLiege(id, v);
     }
     return null;
   };
@@ -708,11 +711,14 @@ function crossCheck(lines, base, ctx, P) {
     }
   }
   // 의원 집안 칸의 핏줄(07장 6.2절): 후계와 아이는 국회의원과 같은 씨족, 아이는 국회의원보다 어리다. 배우자·친족 칸은 다른 씨족을 허용한다.
+  // 씨족이 없는 국회의원(비한국계 가족)은 그 비한국계 가족(100 nonkorean_family)을 집안으로 본다(잠정 T30-gov-14).
   const ageOf = (pid) => base.frozenAge.get(pid) ?? V.get(pid)?.o.age;
+  const nkFamilyOf = (pid) => base.nonKorean.find((f) => f.members.includes(pid))?.id ?? null;
+  const houseOf = (pid) => base.clanOf.get(pid) ?? (nkFamilyOf(pid) ? `nonkorean_family:${nkFamilyOf(pid)}` : null);
   for (const [id, v] of V) {
     if (!isAssemblyHouse(v) || !/후계|아이/.test(v.o.role)) continue;
     const m = rowMember(v); if (!m) continue;
-    const c = base.clanOf.get(id) ?? null; const mc = base.clanOf.get(m) ?? null;
+    const mc = houseOf(m); const c = base.clanOf.get(m) ? base.clanOf.get(id) ?? null : houseOf(id);
     if (c !== mc) P.add('alloc', 'assembly-house-clan', v.file, id, `${v.o.role} has clan ${c ?? '(no clan)'}, the Member ${m} of row ${v.o.row} has ${mc ?? '(no clan)'}; heir and child slots are the Member's own clan (07 6.2)`);
     if (/아이/.test(v.o.role)) {
       const a = ageOf(id); const ma = ageOf(m);
