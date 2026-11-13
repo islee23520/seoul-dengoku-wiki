@@ -65,13 +65,13 @@ The Free Cities are not one power. Each city is its own power and holds its own 
 
 | City (district) | Head's title | How the head is chosen | Seat station | Stations | Sections | People (2126) | Livelihood |
 |---|---|---|---|---|---|---|---|
-| Gangseo | Wind Keeper | Elected by the wind-field bench owners. For life, but steps down if the wind fields fail to deliver the contracted watts | Gimpo Int'l Airport | 18 | 4 | About 17,000 | Wind-machine electricity, wide light-fields |
-| Yangcheon | Depot Master | Handed down within one depot family | Sinjeongnegeori | 7 | 2 | About 4,200 | Rebuilding motors and wheels at the Sinjeong depot, track carts |
-| Yeongdeungpo | Market Master | The market families take turns three years at a time in a fixed order | Yeongdeungpo | 18 | 4 | About 20,600 | The great market, water from the Yangpyeong-dong intake, the contract meeting seat |
-| Guro | Works Master | The bench owner with the most sureties kept | Guro | 9 | 2 | About 9,600 | Parts and pumps from the old factory sites and the Line 1 depot |
-| Geumcheon | Edge Warden | Chosen by the border crews from among those who crossed the rim and came back | Gasan Digital Complex | 3 | 1 | About 3,200 | Power cores brought from outside, well-drilling machines |
-| Dongjak | Ferry Keeper | Chosen by the crossing chiefs from among themselves | Noryangjin | 14 | 4 | About 14,000 | Crossing tolls, fish from under the ice |
-| Gwanak | Duke | Handed down in I Ilseop's family | Sillim | 8 | 2 | About 6,200 | Firewood and wood fibre from Gwanaksan, drilling the mountain rock |
+| Gangseo | Wind Keeper | Set by name-worth at the masters' meeting of five wind-field seal houses. For life, but steps down if the wind fields fail to deliver the contracted watts | Gimpo Int'l Airport | 18 | 4 | About 17,000 | Wind-machine electricity, wide light-fields |
+| Yangcheon | Depot Master | The depot family is the only seal house, so it is set by name-worth within that family. For life | Sinjeongnegeori | 7 | 2 | About 4,200 | Rebuilding motors and wheels at the Sinjeong depot, track carts |
+| Yeongdeungpo | Market Master | Set by name-worth at the masters' meeting of five market seal houses. For life | Yeongdeungpo | 18 | 4 | About 20,600 | The great market, water from the Yangpyeong-dong intake, the contract meeting seat |
+| Guro | Works Master | The bench owner of the four seal houses with the most carvings on the surety board. For life, but steps down on breaking a surety | Guro | 9 | 2 | About 9,600 | Parts and pumps from the old factory sites and the Line 1 depot |
+| Geumcheon | Edge Warden | Set by name-worth from among those of the two seal houses who crossed the rim and came back. For life | Gasan Digital Complex | 3 | 1 | About 3,200 | Power cores brought from outside, well-drilling machines |
+| Dongjak | Ferry Keeper | Set by name-worth at the masters' meeting of five crossing seal houses. While holding their crossing | Noryangjin | 14 | 4 | About 14,000 | Crossing tolls, fish from under the ice |
+| Gwanak | Duke | The masters' meeting bound the seal, so it is handed down in I Ilseop's family | Sillim | 8 | 2 | About 6,200 | Firewood and wood fibre from Gwanaksan, drilling the mountain rock |
 
 - The title Duke of Gwanak, and that I Ilseop is the present Duke of Gwanak, are settled. The titles of the other six cities come from the work each lives by, and are not yet settled.
 - When the Government across the river called its districts duchies and handed them to Members of the National Assembly, Gwanak took the same word and declared it would sit in the same seat as the Government. So when Gwanak contracts with the Government, it insists on stamping "duchy to duchy".

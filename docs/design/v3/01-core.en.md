@@ -377,7 +377,7 @@ Basis: Bible 1, row 7 (only three factions), row 8 (25 duchies = 14 + 7 + 4), ro
 
 **Power structure** (provisional T02-53).
 
-- Each city governs itself its own way. In some cities the workbench houses take turns; in some, one house hands the post down. Gwanak is held by I Ilseop's house as Duke.
+- Each city governs itself its own way. The skeleton is the same: the bench masters of the workbench houses that share the city's seal meet and, without votes, set a holder for life by a countable name-worth. What is counted differs from city to city. Yangcheon, with only one seal house, takes its holder from one house, and in Gwanak I Ilseop's house has bound the seal and holds it as Duke (chapter 05, 2.1-2.2, task 31, provisional T31-1).
 - Why Gwanak chose "Duke" as its title: when the Government across the river called its districts duchies and handed them to Assembly Members, Gwanak's leading house took the same word to declare that it sat at the same height as the Government. The other cities keep names that came from their own work (8.2) (provisional T02-54).
 - There is nobody above the cities. When the cities have something to decide together, they call a contract meeting each time. A contract meeting has no fixed seat and no standing body; the city that calls it hosts it. What is agreed there binds only the cities that set their seals to it.
 
