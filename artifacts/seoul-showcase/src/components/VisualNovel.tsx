@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ChevronLeft, ExternalLink, FastForward, History, Play, Pause, RotateCcw, Subtitles, X } from "lucide-react";
 import {
-  CHOICE, CODA, ENDINGS, PORTRAIT_CREDIT, SCENES, SPEAKERS, WIKI_URL,
+  CHOICE, CODA, CODA_SCENE, ENDINGS, PORTRAIT_CREDIT, SCENES, SOURCE_LABEL, SPEAKERS, WIKI_URL, wikiDoc,
   type BgId, type ChoiceId, type SpeakerId, type StoryLine,
 } from "@/data/storyScript";
 import { EXHIBIT_BY_LINE } from "@/data/historyExhibits";
@@ -27,7 +27,7 @@ const BASE_STEPS: Step[] = SCENES.flatMap((s) => {
   const frame: Frame = { key: s.id, act: s.act.ko, actEn: s.act.en, title: s.title.ko, titleEn: s.title.en, place: s.place.ko, placeEn: s.place.en, year: s.year, bg: s.bg };
   return s.lines.map((line) => ({ kind: "line" as const, line, frame }));
 });
-const CHOICE_FRAME: Frame = { key: "crossroad", act: "결단", actEn: "The Choice", title: CHOICE.title.ko, titleEn: CHOICE.title.en, place: CHOICE.place.ko, placeEn: CHOICE.place.en, year: CHOICE.year, bg: CHOICE.bg };
+const CHOICE_FRAME: Frame = { key: "crossroad", act: CHOICE.act.ko, actEn: CHOICE.act.en, title: CHOICE.title.ko, titleEn: CHOICE.title.en, place: CHOICE.place.ko, placeEn: CHOICE.place.en, year: CHOICE.year, bg: CHOICE.bg };
 const CHOICE_INDEX = BASE_STEPS.length;
 const reduced = () => typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -46,9 +46,9 @@ export default function VisualNovel() {
     const s: Step[] = [...BASE_STEPS, { kind: "choice", line: CHOICE.prompt, frame: CHOICE_FRAME }];
     if (choice) {
       const e = ENDINGS[choice];
-      const ef: Frame = { key: `end-${choice}`, act: "결말", actEn: "Ending", title: e.title.ko, titleEn: e.title.en, place: CHOICE.place.ko, placeEn: CHOICE.place.en, year: "2126", bg: e.bg };
+      const ef: Frame = { key: `end-${choice}`, act: "결말", actEn: "Ending", title: e.title.ko, titleEn: e.title.en, place: e.place.ko, placeEn: e.place.en, year: CHOICE.year, bg: e.bg };
       e.lines.forEach((line) => s.push({ kind: "line", line, frame: ef }));
-      const cf: Frame = { key: "coda", act: "종장", actEn: "Coda", title: "백 년을 기억하는 방식", titleEn: "How the Century Is Remembered", place: "남산", placeEn: "Namsan", year: "2026 → 2126", bg: "namsan" };
+      const cf: Frame = { key: "coda", act: CODA_SCENE.act.ko, actEn: CODA_SCENE.act.en, title: CODA_SCENE.title.ko, titleEn: CODA_SCENE.title.en, place: CODA_SCENE.place.ko, placeEn: CODA_SCENE.place.en, year: CODA_SCENE.year, bg: CODA_SCENE.bg };
       CODA.forEach((line) => s.push({ kind: "line", line, frame: cf }));
     }
     return s;
@@ -228,11 +228,11 @@ function Snow() {
 type Slot = { id: SpeakerId; side: "left" | "right" | "center"; leaving: boolean };
 
 function Stage({ cast, speaker, speaking }: { cast: SpeakerId[]; speaker: SpeakerId; speaking: boolean }) {
-  // Iyen on the left as guide; the person she introduces on the right. Departing figures play an exit before unmounting.
+  // I Yeon on the left as guide; the person she introduces on the right. Departing figures play an exit before unmounting.
   const target = useMemo<Slot[]>(() => {
-    const right = cast.find((c) => c !== "iyen") ?? null;
+    const right = cast.find((c) => c !== "iyeon") ?? null;
     const out: Slot[] = [];
-    if (cast.includes("iyen")) out.push({ id: "iyen", side: right ? "left" : "center", leaving: false });
+    if (cast.includes("iyeon")) out.push({ id: "iyeon", side: right ? "left" : "center", leaving: false });
     if (right) out.push({ id: right, side: "right", leaving: false });
     return out;
   }, [cast.join(",")]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -298,7 +298,7 @@ function Dialogue(p: {
           <span className="font-display text-xl font-extrabold md:text-2xl" style={{ color: s.tint }}>{s.name.ko}</span>
           {p.subs && <span className="font-en text-base italic text-[hsl(var(--frost)/0.8)]">{s.name.en}</span>}
           {!narr && s.title && <span className="hidden font-ui text-[11px] text-[hsl(var(--frost)/0.6)] md:inline">{s.title.ko}</span>}
-          {p.line.source && <span className="ml-auto font-mono text-[9px] uppercase tracking-widest text-[hsl(var(--frost)/0.45)]">{p.line.source === "profile" ? "공개 인물 기록 기반" : p.line.source === "arcs" ? "권역 연대기" : p.line.source === "society" ? "세력 사회 문서" : "백년 연대기"}</span>}
+          {p.line.source && <span className="ml-auto font-mono text-[9px] uppercase tracking-widest text-[hsl(var(--frost)/0.45)]">{SOURCE_LABEL[p.line.source]}</span>}
         </div>
         <p lang="ko" className={`mt-2 min-h-[3.4em] text-lg leading-relaxed text-[hsl(var(--parchment))] md:text-[1.4rem] ${narr ? "" : ""} ${p.isDone && !p.isChoice ? "caret" : ""}`}>
           {p.line.ko.slice(0, p.revealed)}<span className="opacity-0">{p.line.ko.slice(p.revealed)}</span>
@@ -360,8 +360,8 @@ function Finale({ subs: sb, onRestart, onReselect }: { subs: boolean; onRestart:
       {sb && <p className="mt-1 max-w-2xl font-en text-xs text-[hsl(var(--frost))]">Project-owned content allows adaptation and commercial use with attribution, a link to its terms, and disclosure of changes. External materials and real people's names and likenesses require separate checks.</p>}
       <div className="mt-3 flex flex-wrap justify-center gap-x-4 gap-y-2 font-ui text-xs underline underline-offset-4 text-[hsl(var(--parchment))]">
         <a href="https://github.com/islee23520/seoul-dengoku-wiki/blob/main/LICENSE" target="_blank" rel="noreferrer">콘텐츠 이용 조건 {sb && "· Terms"}</a>
-        <a href={`${WIKI_URL}/world/Century-Annals`} target="_blank" rel="noreferrer">주요 사건 원문: 백년 연대기 {sb && "· Historical source"}</a>
-        <a href={`${WIKI_URL}/world/Sixteen-States`} target="_blank" rel="noreferrer">세 세력 원문 {sb && "· The Three Factions"}</a>
+        <a href={wikiDoc("Century-Annals")} target="_blank" rel="noreferrer">주요 사건 원문: 백 년 연표 {sb && "· Century Annals"}</a>
+        <a href={wikiDoc("Sixteen-States")} target="_blank" rel="noreferrer">서울의 세 정체 {sb && "· The Three Polities of Seoul"}</a>
       </div>
       <div className="mt-4 flex flex-wrap justify-center gap-2 font-ui text-xs">
         <button type="button" onClick={onReselect} className="px-3 py-2 text-[hsl(var(--parchment))] hover:bg-[hsl(var(--parchment)/0.1)]">다른 길 선택 {sb && "· Choose again"}</button>
@@ -435,9 +435,9 @@ function Title({ onBegin, subs: sb }: { onBegin: () => void; subs: boolean }) {
       <p className="rise mt-3 font-display text-2xl text-[hsl(var(--parchment)/0.9)] md:text-4xl" style={{ animationDelay: "350ms" }}>영원한 겨울의 연대기</p>
       {sb && <p className="rise font-en text-lg italic text-[hsl(var(--frost))] md:text-2xl" style={{ animationDelay: "420ms" }}>A Chronicle of the Eternal Winter</p>}
       <p className="rise mt-6 max-w-md text-base leading-relaxed text-[hsl(var(--parchment)/0.85)]" style={{ animationDelay: "550ms" }}>
-        전령 이연이 얼어붙은 서울로 당신을 안내한다. 대정전에서 시작해 세 세력이 선 자리까지, 죽은 케이블 하나를 따라간 전선공 고예진의 길을 중심에 두고 백 년을 걷는다.
+        세 번째 급수계약을 앞둔 2126년 겨울, 수행 전령 이연이 세 정체가 만나는 동작역에서 당신을 맞는다. 테두리 너머에서 가져온 동력 덩이의 첫 값을 들으러 가는 하루의 심부름길에, 이 도시의 백 년을 걷는다.
       </p>
-      {sb && <p className="rise font-en mt-1 max-w-md italic text-[hsl(var(--frost)/0.8)]" style={{ animationDelay: "600ms" }}>The courier Iyen takes you through frozen Seoul, from the Great Blackout to the rise of the three factions — a hundred years walked around one linesman, Go Ye-jin, and the dead cable he followed.</p>}
+      {sb && <p className="rise font-en mt-1 max-w-md italic text-[hsl(var(--frost)/0.8)]" style={{ animationDelay: "600ms" }}>Winter 2126, on the eve of the third water contract. The messenger I Yeon meets you at Dongjak Station, where the three polities meet. On one day's errand to hear the first price for power cores brought back from beyond the rim, you walk this city's hundred years.</p>}
       <button type="button" onClick={onBegin} autoFocus className="rise group mt-8 flex w-fit max-w-full flex-wrap items-center gap-x-4 gap-y-1 border-b border-[hsl(var(--parchment)/0.5)] pb-2 text-[hsl(var(--parchment))]" style={{ animationDelay: "750ms" }}>
         <span className="font-display text-2xl font-extrabold">이야기 시작</span>
         <span className="font-en italic opacity-70">Begin the story</span>
