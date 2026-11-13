@@ -180,6 +180,8 @@ Everyone has two real stations: the station where they work (`workStationId`) an
 
 Tasks 17-19 assign each faction in the following order. The same input gives the same result whoever does it (provisional T08-14).
 
+> Task 30 decision (2026-11-13): when the first assignment, written in batches, was reconciled across the whole faction, this order was not rerun from the start. The reconciliation chose the placement that keeps every quota table, seat and named seat while **moving the fewest people** (on a tie, the person later in P moves). The result and every person moved are in `docs/drafts/reports/v3-allocation-<faction>.md` (provisional T30-gov-1).
+
 1. **Priority order P.** The order used within one stage. (a) Old heads (people whose old rank is one of the old head words of section 7.2) 0, former lords (section 7.1) 1, the rest 2. (b) Old tier T1 < … < T5. (c) Higher recorded age first; people without an age last. (d) id order.
 2. **Seats set by name.** Seat first the people of the section 7.2 table and the section 7.3 table (which carries the seats chapters 04-06 fill by name).
 3. **Choosing the row.** Everyone else is divided, stage by stage, into the rows of the quota table (districts, the Hierophant's house, the Gangnam-gu off-ledger row). For each row, fill as many as remain in that row's cell for the stage: in P order, first the people whose old-record anchor is in that district, then the people with no anchor inside the faction. Rows are filled in the row order of each chapter's table.
@@ -274,6 +276,7 @@ The people of one clan within one faction are called a **house**. The house is t
 - A house's **house trade** is the occupation class of the house member already assigned on the highest layer (on a tie, the one earlier in P). This is item (b) of section 4.7 step 5. So members of one house do the same work as far as the role allows.
 - A person whose parent is recorded in a family tree follows the parent's class first (item (a) of section 4.7 step 5). In the people set this applies only to Im Chowon (who took over Im Hajun's pump work, chapter 06 section 4.5) and Sin Jun.
 - The fourteen Government Members are fourteen houses. One house holds only one seat (section 4.2).
+- **Assembly-house slots** (task 30 decision, 2026-11-13): the heir and child slots are blood, so they hold people of the Member's own clan, and a child is younger than the Member. Only the spouse/kin slots admit people of another clan who married in. The liege of all four slots is the National Assembly Member of that row's seat. For the life president's former seat (Jongno) the liege is the person who received that seat, not the president (provisional T30-gov-13).
 
 ### 6.3 Seats handed down
 
