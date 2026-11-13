@@ -87,7 +87,7 @@ Passing the Government's meal coupons to anyone off the ledger is also forbidden
 <a id="kin-lines"></a>
 ## Lines of kin
 
-The commonest road for quiet trading and for envoys is kin. Of the one hundred and twenty-six lines of the same generation that share a generation syllable, ninety-two are scattered across two polities or more. When the north bound its ledgers into one in 2036-2045, those in stations the clerks reached became the registered and those across the river were left off the ledger. When the Arc split away in 2122, the Free City houses living in the Gangnam shelters simply became the Arc. So cousins of the same generation live on both banks of the river and on both sides of the Dongjak–Seocho border ([Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/)).
+The commonest road for quiet trading and for envoys is kin. Of the one hundred and twenty-six lines of the same generation that share a generation syllable, ninety-two are scattered across two polities or more. When the north bound its ledgers into one in 2036-2045, those in stations the clerks reached became the registered and those across the river were left off the ledger. When the Arc split away in 2122, the Free City houses living in the Gangnam shelters simply became the Arc. So cousins of the same generation live on both banks of the river and on both sides of the Dongjak–Seocho border ([Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/)).
 
 <a id="living-across"></a>
 ## People who live on others' land

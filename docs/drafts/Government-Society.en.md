@@ -136,8 +136,6 @@ Government work begins at the station and ends at the district office. The line 
 - The **dong community centre** is the **Dong Chief**'s ration office, with three counters: rations, entries and petitions. The official Government people meet most often is the clerk at these counters. One ration clerk can decide a household's meals for the month.
 - The **Stationmaster** ranks below the Dong Chief but is more feared, because the Stationmaster holds the station's heat and air. The post is handed down within the Stationmaster's house.
 
-How a station turns through its day is in [The Hands That Run a Station](/wiki/Operating-Houses/).
-
 <a id="law"></a>
 ## Law and punishment
 
@@ -342,5 +340,5 @@ At the third contract the Arc sits down for the first time. The six OMO Party Me
 ## See also
 
 - [The Three Polities of Seoul](/wiki/Sixteen-States/), [Free City Society](/wiki/Free-City-Society/), [Arc Society](/wiki/Arc-Society/)
-- [The Hands That Run a Station](/wiki/Operating-Houses/), [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/)
+- [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/)
 - [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/), [Titles and Offices](/wiki/Offices-and-Ranks/), [Guns, Rounds and Drones](/wiki/Era-Arms-and-Tech-Level/)

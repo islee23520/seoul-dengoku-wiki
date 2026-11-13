@@ -123,7 +123,7 @@ section_checkpoint: complete
 - **다른 정체.** 서울에는 세 정체뿐이다. 옛 기록에 남은 여러 나라 이름의 정치체는 없다.
 - **서울 밖의 다스림.** 서울 밖은 전쟁 기계의 테두리다. 그곳을 다스리는 사람도, 영지도 없다([서울 밖과 테두리](/wiki/External-Theaters/)).
 - **자유도시들을 묶는 이름.** 일곱 도시는 연맹도 나라도 아니다. 묶는 이름이 없다.
-- **회사 집단.** 대정전 전의 큰 회사들은 집안으로 남지 않았다. 일과 자리가 고이는 단위는 의원 집안, 작업대 집안, 곁집이다([집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/)).
+- **회사 집단.** 대정전 전의 큰 회사들은 집안으로 남지 않았다. 일과 자리가 고이는 단위는 의원 집안, 작업대 집안, 곁집이다([정부 사회](/wiki/Government-Society/), [자유도시들의 사회](/wiki/Free-City-Society/), [아크 사회](/wiki/Arc-Society/)).
 - **아크 밖의 조직된 신앙.** 아크가 이전의 모든 종교를 대신했다.
 
 <a id="unsettled"></a>
@@ -138,7 +138,6 @@ section_checkpoint: complete
 ## 함께 읽기
 
 - [정부 사회](/wiki/Government-Society/), [자유도시들의 사회](/wiki/Free-City-Society/), [아크 사회](/wiki/Arc-Society/)
-- [역을 돌리는 손](/wiki/Operating-Houses/): 세 정체가 역 하나를 어떻게 돌리나
-- [집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/): 일과 자리가 집안에 고이는 까닭
+- [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/): 집안이 이름으로 대를 잇는 법
 - [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/), [급수계약과 세 정체](/wiki/World-Relation-Ledger/)
 - [칭호와 자리](/wiki/Offices-and-Ranks/), [세계 색인: 세 정체와 25공작령](/wiki/World-Expansion-Index/), [백 년 연표 2026~2126](/wiki/Century-Annals/)

@@ -151,7 +151,7 @@ Member of the National Assembly, the life-long seat of the President, Duke of Gw
 | The roots of the world | [World Narrative Atlas](/wiki/World-Narrative-Atlas/), [The Great Blackout and the Eternal Winter](/wiki/World-Unbinding/), [The First AI and the Machines Outside](/wiki/Regional-Physical-AI-Arcs/), [Glossary](/wiki/Glossary/) |
 | Time | [Century Annals 2026-2126](/wiki/Century-Annals/), [The Opening: Winter 2126](/wiki/Scenario-Timeline/), [Sindorim Junction Cargo Gate](/wiki/Sindorim-Junction-Cargo-Gate/) |
 | The three polities | [The Three Polities of Seoul](/wiki/Sixteen-States/), [Government Society](/wiki/Government-Society/), [Free City Society](/wiki/Free-City-Society/), [Arc Society](/wiki/Arc-Society/) |
-| Between the polities | [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/), [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/), [The Hands That Run a Station](/wiki/Operating-Houses/) |
+| Between the polities | [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/) |
 | Land and stations | [Seoul under the Snow](/wiki/Building-Reuse-Geography/), [Beyond Seoul: the Rim](/wiki/External-Theaters/), [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/), [Inside a Station](/wiki/Station-Interior-Construction/), [How the World Map Is Built](/wiki/World-Map-Construction/), [The Surface and Underground](/wiki/World-and-Subway-Layers/), [Structures](/wiki/Structures/) |
 | People | [People, Factions and Trades](/wiki/Characters-Factions-and-Professions/), [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/), [Values and Policy Scales](/wiki/Values-and-Policy-Scales/), [Titles and Offices](/wiki/Offices-and-Ranks/) |
 | Life | [Faith and Rites](/wiki/Faith-Culture-Schism/), [Meals and Food](/wiki/Food-Culture/), [The Stories](/wiki/Oral-Stories/), [Ailments of the Cold](/wiki/Ailments/) |
@@ -170,7 +170,7 @@ Member of the National Assembly, the life-long seat of the President, Duke of Gw
 |---|---|
 | Jongno-gu, Jung-gu | [Government Society](/wiki/Government-Society/), [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) |
 | Yongsan-gu, Mapo-gu, Seongdong-gu, Gwangjin-gu | [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/) |
-| Seodaemun-gu, Dongdaemun-gu, Jungnang-gu | [Government Society](/wiki/Government-Society/), [The Hands That Run a Station](/wiki/Operating-Houses/) |
+| Seodaemun-gu, Dongdaemun-gu, Jungnang-gu | [Government Society](/wiki/Government-Society/) |
 | Seongbuk-gu, Eunpyeong-gu, Gangbuk-gu, Dobong-gu, Nowon-gu | [Beyond Seoul: the Rim](/wiki/External-Theaters/), [The First AI and the Machines Outside](/wiki/Regional-Physical-AI-Arcs/) |
 | Gangseo-gu, Yangcheon-gu | [Free City Society](/wiki/Free-City-Society/), [People and Machines](/wiki/People-and-Machines/) |
 | Yeongdeungpo-gu | [Free City Society](/wiki/Free-City-Society/), [The Opening: Winter 2126](/wiki/Scenario-Timeline/) |
