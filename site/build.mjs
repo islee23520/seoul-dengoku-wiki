@@ -437,8 +437,8 @@ for (const L of [UI.en, UI.ko]) {
   // families: clan index, one page per clan with its family tree, non-Korean families
   const memberCount = new Map();
   raw.clanMembers.forEach((m) => memberCount.set(m.clan_id, (memberCount.get(m.clan_id) ?? 0) + 1));
-  const charToPerson = new Map(); // family-tree node personId (K001) -> roster id
-  raw.details.forEach((row, pid) => { const dd = JSON.parse(row.json); if (dd.characterId) charToPerson.set(dd.characterId, pid); });
+  const charToPerson = new Map(); // family-tree node personId (K001 or person id) -> roster id
+  raw.details.forEach((row, pid) => { charToPerson.set(pid, pid); const dd = JSON.parse(row.json); if (dd.characterId) charToPerson.set(dd.characterId, pid); });
   write(`${L.prefix}wiki/families/index.md`, page(SS.clanIndex, `# ${SS.clanIndex}\n\n${SS.clanLead(raw.clans.length, raw.clanMembers.length)}\n\n| ${L === UI.ko ? '본관' : 'Bongwan'} | ${L === UI.ko ? '성씨' : 'Surname'} | ${L === UI.ko ? '인원' : 'Members'} |\n| --- | --- | --- |\n${raw.clans.map((c) => `| [${cell(g(c, 'bongwan'))}](${P(`wiki/families/${c.id}/`)}) | ${cell(g(c, 'surname'))} | ${memberCount.get(c.id) ?? 0} |`).join('\n')}\n\n## ${SS.nonKorean}\n\n${SS.nonKoreanLead}\n\n${raw.nonKorean.map((n) => `- **${cell(g(n, 'surname'))}** — ${cell(g(n, 'basis'))} (${JSON.parse(n.members).map((id) => `[${(people.find((p) => p.id === id) ? g(people.find((p) => p.id === id), 'name') : id)}](${P(`wiki/people/${id}/`)})`).join(', ')})`).join('\n')}\n`, { outline: false }));
   raw.clans.forEach((c) => {
     const mem = raw.clanMembers.filter((m) => m.clan_id === c.id).map((m) => people.find((p) => p.id === m.person_id)).filter(Boolean);
@@ -510,7 +510,7 @@ for (const L of [UI.en, UI.ko]) {
 }
 {
   const charToPerson = new Map();
-  raw.details.forEach((row, pid) => { const dd = JSON.parse(row.json); if (dd.characterId) charToPerson.set(dd.characterId, pid); });
+  raw.details.forEach((row, pid) => { charToPerson.set(pid, pid); const dd = JSON.parse(row.json); if (dd.characterId) charToPerson.set(dd.characterId, pid); });
   const personById = new Map(raw.people.map((p) => [p.id, p]));
   let shared = null;
   for (const L of [UI.en, UI.ko]) {
