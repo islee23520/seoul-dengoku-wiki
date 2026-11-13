@@ -214,7 +214,7 @@ The minimum age is the youngest age at which a person can hold the rank. The ski
 |---|---|
 | Government | 대통령 25, 국회의원 18 (hereditary, chapter 04 section 16.5), 장관 30, 차관 30, 청장 30, 총재 30, 원장 30, 구청장 30, 동장 25, 역장 25, 서기관 30, 사무관 25, 주사 20, 서기 16 (succession entry, chapter 04 section 8.2), 경찰관 19, 전문의 30, 수련의 24, 교사 22, 이병·일병·상병·병장 19 (conscription, chapter 04 section 14.3), 하사 18, 중사 22, 상사 28, 소위 20, 중위 22, 대위 24, 소령 30, 중령 33, 대령 35, 후계 16, 등재민 0 |
 | Free Cities | the seven heads 25 (chapter 05 section 12.4), 구간장 25, 역반장 20, 대주 20, 작업조장 20, 건널목장 25, 교대장 20, 밭장 20, 손 16, 일손 16, 견습 12, 후계 16 |
-| Arc | 교주 25, 곁집장 0 (no minimum age; 2 parts or more instead of age, hereditary, chapter 06 sections 3.3, 3.5 and 12.4), 곁집 어른 40, 대피소장 28, 정비장 25, 호위장 30, 말지기 25, 정비공 18, 세례자 16, 곁집원 0, 미세례자 0, 후계 16 |
+| Arc | 교주 25, 곁집장 0 (no minimum age; 2 parts or more instead of age, hereditary, chapter 06 sections 3.3, 3.5 and 12.4), 곁집 어른 40, 대피소장 28, 정비장 25, 호위장 30, 말지기 22 (task 30 decision 2026-11-13, provisional T30-arc-11), 정비공 18, 세례자 16, 곁집원 0, 미세례자 0, 후계 16 |
 | Unaffiliated | 미등록 0 |
 
 There are also minimum ages attached to occupations: chapter 06 section 12.4's negotiator 30, baptised fighter 20, house levy 17, water-power-heat and food 16, outside work 18. If a cell has both a rank and an occupation minimum, the larger is used.
