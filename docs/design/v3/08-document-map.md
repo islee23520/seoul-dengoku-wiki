@@ -51,7 +51,7 @@ v3 바이블의 주제를 하나씩 대어 보았다. 모두 기존 slug 가운�
 | slug | 분류 | 현재 제목 | v3 주제 | 새 제목(ko / en) | 근거 |
 |---|---|---|---|---|---|
 | Building-Reuse-Geography | places | 강·구·동 건물 재사용 | 눈 밑의 서울: 묻힌 건물의 지하, 온실이 서는 출입구 둘레, 섬유를 캐러 가는 길, 고물과 섬유로 먹히는 도시 | 눈 밑의 서울 / Seoul under the Snow | 01 3.3·5.3~5.5절, 02 2.1·3.4절, 03 3.1절 |
-| External-Theaters | places | 바깥 | 서울 밖과 봉쇄선: 띠의 생김새, 눈보라에 넘는 일, 동력원을 캐 오는 사람, 귀환망, 봉쇄 지대 너머에 관해 아는 것. 서울 밖에는 다스리는 사람이 없다 | 서울 밖과 봉쇄선 / Beyond Seoul: the Rim | 01 6.3·10절, 02 7.1~7.3절(7.4절 비공개 제외), 07 7.1·7.4절 |
+| External-Theaters | places | 바깥 | 서울 밖과 봉쇄선: 봉쇄 지대의 생김새, 눈보라에 넘는 일, 동력원을 캐 오는 사람, 귀환망, 봉쇄 지대 너머에 관해 아는 것. 서울 밖에는 다스리는 사람이 없다 | 서울 밖과 봉쇄선 / Beyond Seoul: the Blockade Line | 01 6.3·10절, 02 7.1~7.3절(7.4절 비공개 제외), 07 7.1·7.4절 |
 | Seoul-Station-Catalog | places | 서울 연결 철도 역 카탈로그 | 서울의 역 312곳: 실제 이름과 노선, 정체별 수, 역의 크기 등급과 사람 수, 장터와 교환소가 서는 역 | 서울 역 목록 / Seoul Station Catalog | 01 4.3절, 04 10·16.1절, 05 2·3·5.4절, 06 4·8.6절, 지도 자료(`120-map-core.sql`) |
 | Station-Interior-Construction | places | 역 내부에 들어가면 | 역 안으로: 지상, 대합실, 승강장, 깊은 터널의 깊이 띠와 온도, 역의 네 한도(열, 물, 공기, 빛), 잠자리와 부엌의 자리. 초안이 아직 없어 과제 12가 새로 쓴다 | 역 안으로 / Inside a Station | 01 3.1·4.1~4.2절, 02 3.2절, 04 12절, 05 10.1절, 06 10.2절 |
 | World-Map-Construction | places | 세계 지도의 구성 | 세계 지도의 짜임: 25공작령, 세 정체의 땅, 자리 역, 경계의 열세 이음목 | 세계 지도의 짜임 / How the World Map Is Built | 바이블 2.4절, 01 7.4절, 07 4.3·11.1절, 지도 자료 |
@@ -93,25 +93,25 @@ v3 바이블의 주제를 하나씩 대어 보았다. 모두 기존 slug 가운�
 | Hostile-Group-G10 | bestiary | G10 · 보국문 집단 | 적대 사람 무리 | G10 · 보국문 월경자 / G10 · Bogungmun Perimeter-Runners | 02 5.1절, G10, 07 7.4절 |
 | Hostile-Group-G11 | bestiary | G11 · 강남 이탈 인간형 | 적대 사람 무리 | G11 · 수서 이탈자들 / G11 · Suseo Gone-Dark | 02 5.1절, G11, 06 5.5절 |
 | Hostile-Group-G12 | bestiary | G12 · 신내 탈영병 | 적대 사람 무리 | G12 · 금천 보증을 잃은 사람 / G12 · Geumcheon Hands Without Surety | 02 5.1절, G12, 05 3.5·6.3절 |
-| Hostile-Group-G13 | bestiary | G13 · 물류 로봇 팔 | 서울 안 옛 기계 | G13 · 물류 로봇 팔 / G13 · Claw Arms | 02 6.1~6.5절, G13 |
+| Hostile-Group-G13 | bestiary | G13 · 집게팔 | 서울 안 옛 기계 | G13 · 물류 로봇 팔 / G13 · logistics robot arms | 02 6.1~6.5절, G13 |
 
 ### 3.6 과제 15: G14~G26 (13)과 새 slug
 
 | slug | 분류 | 현재 제목 | v3 주제 | 새 제목(ko / en) | 근거 |
 |---|---|---|---|---|---|
-| Hostile-Group-G14 | bestiary | G14 · 선로 점검 로봇 | 서울 안 옛 기계 | G14 · 선로 점검 로봇 / G14 · Empty Carts | 02 6.1~6.5절, G14 |
-| Hostile-Group-G15 | bestiary | G15 · 서비스 로봇 | 서울 안 옛 기계 | G15 · 서비스 로봇 / G15 · Care Wheels | 02 6.1~6.5절, G15 |
-| Hostile-Group-G16 | bestiary | G16 · 공사 로봇 | 서울 안 옛 기계 | G16 · 공사 로봇 / G16 · Girder Spiders | 02 6.1~6.5절, G16 |
-| Hostile-Group-G17 | bestiary | G17 · 감시탑 | 봉쇄선 기계 | G17 · 감시탑 / G17 · One-Eye Towers | 02 6.1~6.2·6.6절, G17, 7절 |
-| Hostile-Group-G18 | bestiary | G18 · 선로 무장 차량 | 봉쇄선 기계 | G18 · 선로 무장 차량 / G18 · Tunnel-Stoppers | 02 6.6절, G18 |
-| Hostile-Group-G19 | bestiary | G19 · 귀환 무인 차량 | 봉쇄선 기계(서울 안으로 흘러들기도 한다) | G19 · 귀환 무인 차량 / G19 · Growlers | 02 6.1·6.6절, G19 |
-| Hostile-Group-G20 | bestiary | G20 · 철컥이 | 봉쇄선 기계 | G20 · 수리 기계 / G20 · Bulgasari | 02 6.6절, G20 |
-| Hostile-Group-G21 | bestiary | G21 · 벽두드리기 | 봉쇄선 기계 | G21 · 땅속 진동 감지기 / G21 · Ground-Knockers | 02 6.6절, G21 |
+| Hostile-Group-G14 | bestiary | G14 · 빈수레 | 서울 안 옛 기계 | G14 · 선로 점검 로봇 / G14 · track inspection robots | 02 6.1~6.5절, G14 |
+| Hostile-Group-G15 | bestiary | G15 · 돌봄바퀴 | 서울 안 옛 기계 | G15 · 서비스 로봇 / G15 · service robots | 02 6.1~6.5절, G15 |
+| Hostile-Group-G16 | bestiary | G16 · 철골거미 | 서울 안 옛 기계 | G16 · 공사 로봇 / G16 · construction robots | 02 6.1~6.5절, G16 |
+| Hostile-Group-G17 | bestiary | G17 · 외눈탑 | 봉쇄선 기계 | G17 · 감시탑 / G17 · watchtowers | 02 6.1~6.2·6.6절, G17, 7절 |
+| Hostile-Group-G18 | bestiary | G18 · 불다리열차 | 봉쇄선 기계 | G18 · 선로 무장 차량 / G18 · armed rail vehicles | 02 6.6절, G18 |
+| Hostile-Group-G19 | bestiary | G19 · 그르렁이 | 봉쇄선 기계(서울 안으로 흘러들기도 한다) | G19 · 귀환 무인 차량 / G19 · returning unmanned ground vehicles | 02 6.1·6.6절, G19 |
+| Hostile-Group-G20 | bestiary | G20 · 철컥이 | 봉쇄선 기계 | G20 · 수리 기계 / G20 · repair machines | 02 6.6절, G20 |
+| Hostile-Group-G21 | bestiary | G21 · 벽두드리기 | 봉쇄선 기계 | G21 · 땅속 진동 감지기 / G21 · buried seismic sensors | 02 6.6절, G21 |
 | Hostile-Group-G22 | bestiary | G22 · 불꽃등이 | 봉쇄선 기계 | G22 · 도깨비불 / G22 · Dokkaebi Lights | 02 6.6절, G22 |
-| Hostile-Group-G23 | bestiary | G23 · 무인 경계 초소 | 봉쇄선 기계(서울 안으로 흘러들기도 한다) | G23 · 무인 경계 초소 / G23 · Udukeoni | 02 6.1·6.6절, G23 |
-| Hostile-Group-G24 | bestiary | G24 · 울보 | 봉쇄선 기계 | G24 · 확성기 / G24 · Doenoemi | 02 6.6절, G24 |
-| Hostile-Group-G25 | bestiary | G25 · 케이블 점검 로봇 | 서울 안 옛 기계 | G25 · 케이블 점검 로봇 / G25 · Lamp Ants | 02 6.5절, G25 |
-| Hostile-Group-G26 | bestiary | G26 · 자율 건설 기계 | 봉쇄선 기계 | G26 · 자율 건설 기계 / G26 · Iron Dinosaurs | 02 6.6절, G26 |
+| Hostile-Group-G23 | bestiary | G23 · 우두커니 | 봉쇄선 기계(서울 안으로 흘러들기도 한다) | G23 · 무인 경계 초소 / G23 · unmanned sentry posts | 02 6.1·6.6절, G23 |
+| Hostile-Group-G24 | bestiary | G24 · 울보 | 봉쇄선 기계 | G24 · 확성기 / G24 · loudspeakers | 02 6.6절, G24 |
+| Hostile-Group-G25 | bestiary | G25 · 등불개미 | 서울 안 옛 기계 | G25 · 케이블 점검 로봇 / G25 · cable inspection robots | 02 6.5절, G25 |
+| Hostile-Group-G26 | bestiary | G26 · 철공룡 | 봉쇄선 기계 | G26 · 자율 건설 기계 / G26 · autonomous construction machines | 02 6.6절, G26 |
 
 새 slug는 없다(2절). 과제 15는 G14~G26 열세 문서만 쓴다.
 

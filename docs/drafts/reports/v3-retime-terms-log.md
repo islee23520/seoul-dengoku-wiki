@@ -14,7 +14,7 @@
 | B0 | 빛 | 대정전 전의 4분의 1 | 맑은 날 약 80%(곧장 오는 빛 약 60%), 회백색 하늘, 흐린 흰 해 | 11장 2.5절 표 그대로 |
 | B0 | 눈(물로 친 양) | 한 해 200 mm(7분의 1) | 한 해 350 mm(4분의 1) | 11장 2.5절 표. 대정전 전 서울 강수 약 1,400 mm의 4분의 1 |
 | B1 | 땅속 온도와 동결선 | 눈 밑 땅 표면 -10도, 동결선 35 m, 2036년 10 m, 2066년 22 m, 한 해 17 cm, 대합실 -10~-7, 승강장 -7~-4, 깊은 터널 -3~4 | 땅 표면 -8도, 동결선 33 m, 2056년 12 m, 2086년 23 m, 한 해 21 cm, 대합실 -7~-6, 승강장 -6~-2, 깊은 터널 -2~5 | 반무한 고체의 계단 냉각 T(z)=Ts+(T0-Ts)·erf(z/2√(κt)), T0=14도, Ts=-8도(14-22), κ=1×10⁻⁶ m²/s, t=80년=2.52×10⁹ s, 2√(κt)=100 m. z=3 m -7.3, 8 m -6.0, 10 m -5.5, 20 m -3.1, 25 m -2.0, 33 m -0.1, 40 m +1.4, 55 m +4.9(11장 2.5절 "10 m -6, 20 m -3, 40 m +2, 55 m +5, 경계 약 33 m"과 맞음). 동결선 깊이는 √t에 비례: 33×√(10/80)=11.7≈12 m(2056), 33×√(40/80)=23.3≈23 m(2086), 지금 속도 33/(2×80)=0.21 m/년. 11장 3.3절 7행의 35 m 기준 값(12 m, 25 m, 22 cm) 대신 B안 표의 33 m를 썼다(아래 4절) |
-| B2 | 쌓인 눈 | 평지 6~8 m, 골 10 m 넘게, 2층까지 묻힘 | 평지 7~9 m, 골 12 m 넘게, 2~3층까지 묻힘 | 남는 몫 15%(85% 승화·날림은 그대로): 350×0.15=52.5 mm/년, ×80년=4.2 m(물). 다져진 눈 밀도 0.45~0.6 → 7.0~9.3 m |
+| B2 | 쌓인 눈 | 평지 6~8 m, 골 10 m 넘게, 2층까지 묻힘 | 평지 7~9 m, 골 12 m 넘게, 2~3층까지 묻힘 | 남는 몫 15%(85% 승화·날림은 그대로): 350×0.15=52.5 mm/년, ×80년=4.2 m(물). 다져진 눈 밀도 0.45~0.6 → 7.0~9.3 m. 밀도를 올린 까닭: A안 6~8 m는 3.0 m(물)÷6~8 m로 밀도 0.375~0.5를 뜻했다. B안은 해마다 남는 눈이 75% 많아(52.5 대 30 mm/년) 위에 실리는 무게가 커지고, 여든 해 동안 아래층이 만년설 전 단계(firn)의 0.45~0.6까지 다져진다고 본다. A안 밀도를 그대로 쓰면 평지 8.4~11.2 m, 골 14 m 넘게가 된다. 01-core 109줄(+.en)의 7~9 m, 12 m, 2~3층은 이 밀도를 따른다 |
 | B3 | 1인당 바깥 열(수용력 열 계수) | 대합실 60 W, 승강장 40 W, 깊은 터널 10 W | 대합실 50 W, 승강장 36 W, 깊은 터널 9 W | 벽 손실 ∝ (안 온도 - 둘레 땅 온도). 대합실 안 3도: A 3-(-8.5)=11.5 → B 3-(-6.5)=9.5, 60×9.5/11.5=49.6≈50. 승강장 안 11도: A 16.5 → B 15, 40×15/16.5=36.4≈36. 깊은 터널 안 14도: A 13.5 → B 12.5, 10×12.5/13.5=9.3, 반올림해 9 W(다른 두 계수와 같은 반올림) |
 | B4 | 눈 녹이는 열 | 1인당 45 W | 1인당 43 W | 하루 10 kg: 녹임 10×334 kJ=3,340 kJ, 눈 데우기 10×2.09×9=188 kJ(A안은 ×18=376), 물 0→5도 210 kJ, 합 3,738 kJ/86,400 s=43.3 W(A안 3,926 kJ → 45.4 W) |
 | B5 | 역 계산 예(01-core 4.2절) | 서울역 4,200, 신도림 열 2,500·결과 2,000, 잠실 3,080→3,100, 충전 몫 돌리면 360명, 잠실 세례자 29% | 서울역 4,400, 신도림 열 2,780·결과 2,000, 잠실 3,420→3,400, 400명, 약 26% | 서울역: 깊은 층 1,000×9 W=9 kW, 남은 141 kW, 승강장 3,000×36=108 kW(물 4,000명 맞음), 남은 33 kW÷(36+43)=418 → 약 4,400. 신도림: 100 kW÷36=2,778, 공기 2,000이 그대로 막음. 잠실: 123 kW÷36=3,417 → 약 3,400(공간 3,750). 충전 7.2 kW를 열펌프로: 21.6-7.2=14.4 kW÷36=400. 900÷3,400=26.5% |
@@ -4413,6 +4413,11 @@
 - **바이블 3.3절 표의 `docs/CANON-BIBLE.md` 행(3: 322줄 "대정전 약 백 년 전", 4: 399줄 Q2).** 이 과제의 범위가 바이블 장(01, 03~10)이라 고치지 않았다. 통합 과제(36)가 고친다.
 - **11장 4.4절의 다른 고칠 것**(04~06장 생활 절의 지상 불빛 금기, 03장 8절의 휴머노이드 수 근거, 07장 12절과 130~132의 겉모습 문구)은 과제 38 2부의 몫이라 이 커밋에 넣지 않았다. 다만 01-core 5.3절 온실 문단에 금기를 한 문장 적었다.
 
+- **도감 행 G22(08장 3.6절 새 제목 "도깨비불 / Dokkaebi Lights").** 2차 검토 막는 점 2로 G13~G26의 새 제목을 12a 한·영 짝으로 맞추면서, 한·영이 이미 서로 맞고 12a 56번이 입말 "도깨비불"을 허용하는 G22는 두었다. 문서 제목을 "군집 드론"으로 바꿀지는 도감 과제(34)가 정한다. 현재 제목 열(G13~G26)은 030 SQL 값이라 옛 이름을 그대로 둔다.
+- **2차 검토의 영어 다시 훑기에 남은 세 곳.** 12a 2절의 옛 영어 186개를 한국어 장 열 개(01~10)에 대소문자 없이 훑어 남은 세 곳은 용어가 아니다. 01-core 54줄 "Lord, Baron"은 쓰지 말라는 규칙 문장, 07장 480줄 "Watch hand"는 경비원의 영어(12a 109번 신분 이름 "손"이 아님, .en과 같음), 07장 916줄 `Home Station`은 "잠자는 역" 키의 영어(12a 43번 "본역"이 아님, .en과 같음)다.
+- **밭장의 목록 밖 두 곳.** 2차 검토 막는 점 6의 목록에 없던 05장 97줄(+.en "field head")과 07장 688줄(+.en "Gangseo Field Chief")도 같은 낱말이라 함께 바꿨다. 07장 672줄 코드 키가 바뀌었으므로 인물 자료(Pf), 090 데이터, `scripts/pages/ck3-stats.mjs`도 "발전 단지 반장"으로 따라야 한다.
+- **06장 580줄 "maintenance-unit fitter".** .en의 "workshop fitter"와 다르지만 12a에 없는 말이고, 아크의 정비대는 maintenance unit이라는 이 기록의 bench 판정과 맞아 2차 검토에서 바꾸지 않았다.
+
 합계: 날짜·겨울 188건, 용어 4173건.
 
 ## 5. 검토 막는 점 고침 (파일:줄, 옛 값, 새 값, 까닭)
@@ -4505,3 +4510,120 @@
 | docs/design/v3/01-core.en.md:273 | With more light the same area yields more, but the greenhouses are not widened: roofing is short, and there is a taboo against showing light and heat on the surface. | With more light the same share of the diet is grown on half the old area (the "more light enlarges the greenhouse share" of chapter 11, 2.5 is realised as a larger yield per area; provisional T02-36). Roofing is short and there is a taboo against showing light and heat on the surface, so the spared area was not used to widen the greenhouses; they were made smaller instead. | 본문과 수치(1인당 90 → 45 m²) 맞춤, 11장 2.5절 "몫이 커진다"를 넓이당 수확으로 명시(검토 막는 점 8) |
 
 합계: 검토 고침 82건.
+
+### 5.2 2차 검토 막는 점 고침
+
+과제 35a 2차 검토에서 나온 막는 점 7개를 고쳤다. 줄 안에서만 고쳐 줄 번호는 그대로다. 12a 2.8절에 203번(밭장)을 더하고 2절 바꿀 말 수를 207에서 208로 고쳤다. 영어 다시 훑기의 남은 세 곳은 4절에 적었다.
+
+| 파일:줄 | 옛 값 | 새 값 | 까닭 |
+|---|---|---|---|
+| docs/design/v3/01-core.md:448 | none; host of a contract meeting: Host | none; host of a council: host | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 95·96) |
+| docs/design/v3/01-core.md:455 | \| Market Master \| | \| Head of the Merchants' Association \| | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤 |
+| docs/design/v3/01-core.md:456 | \| Works Master \| | \| Plant Manager \| | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤 |
+| docs/design/v3/01-core.md:457 | \| Edge Warden \| | \| Guard Commander \| | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤 |
+| docs/design/v3/01-core.md:458 | \| Depot Master \| | \| Depot Chief \| | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤 |
+| docs/design/v3/01-core.md:459 | \| Wind Keeper \| | \| Power Station Director \| | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤 |
+| docs/design/v3/01-core.md:465 | \| Bench Keeper \| | \| Maintenance Foreman \| | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 159) |
+| docs/design/v3/06-arc.md:579 | 정비 반장 / Bench Keeper | 정비 반장 / Maintenance Foreman | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 159) |
+| docs/design/v3/06-arc.md:580 | / recovery carer | / recovery caregiver | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 172) |
+| docs/design/v3/06-arc.md:584 | / tally keeper | / accountant | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 165) |
+| docs/design/v3/06-arc.md:584 | / roll keeper | / register clerk | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 163) |
+| docs/design/v3/06-arc.md:584 | / Word Keeper | / Spokesperson | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 164) |
+| docs/design/v3/06-arc.md:585 | / rim watcher | / blockade lookout | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 39) |
+| docs/design/v3/07-people-and-war.md:158 | `Bench Keeper of <Station>` | `Maintenance Foreman of <Station>` | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 159) |
+| docs/design/v3/07-people-and-war.md:459 | Shift Chief | Shift Leader | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤 |
+| docs/design/v3/07-people-and-war.md:465 | Leading a bench | Leading a maintenance unit | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤 |
+| docs/design/v3/07-people-and-war.md:465 | / Bench Keeper | / Maintenance Foreman | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 159) |
+| docs/design/v3/07-people-and-war.md:480 | Edge crew | Guard unit | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤 |
+| docs/design/v3/07-people-and-war.md:484 | Recovery carer | Recovery caregiver | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 172) |
+| docs/design/v3/07-people-and-war.md:501 | Household keeper | Household steward | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 198) |
+| docs/design/v3/07-people-and-war.md:516 | / Word Keeper | / Spokesperson | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 164) |
+| docs/design/v3/07-people-and-war.md:520 | Water-wheel keeper | Turbine mechanic | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 169) |
+| docs/design/v3/07-people-and-war.md:530 | Rim watcher | Blockade lookout | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 39) |
+| docs/design/v3/07-people-and-war.md:540 | Tally-board keeping | Price-board keeping | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 15) |
+| docs/design/v3/07-people-and-war.md:540 | Tally clerk, Tally keeper | Price-board clerk, Accountant | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 126·165) |
+| docs/design/v3/07-people-and-war.md:541 | Roll keeper | Register clerk | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 163) |
+| docs/design/v3/07-people-and-war.md:630 | \| Market Master \| | \| Head of the Merchants' Association \| | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤 |
+| docs/design/v3/07-people-and-war.md:631 | \| Works Master \| | \| Plant Manager \| | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤 |
+| docs/design/v3/07-people-and-war.md:632 | \| Edge Warden \| | \| Guard Commander \| | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤 |
+| docs/design/v3/07-people-and-war.md:633 | \| Depot Master \| | \| Depot Chief \| | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤 |
+| docs/design/v3/07-people-and-war.md:634 | \| Wind Keeper \| | \| Power Station Director \| | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤 |
+| docs/design/v3/07-people-and-war.md:638 | \| Shift Chief \| | \| Shift Leader \| | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤 |
+| docs/design/v3/07-people-and-war.md:640 | \| Bench Owner \| | \| Workshop Owner \| | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤 |
+| docs/design/v3/07-people-and-war.md:642 | \| Hand \| | \| Skilled worker \| | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤 |
+| docs/design/v3/07-people-and-war.md:646 | \| Head of the inner-circle house \| | \| House Head \| | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤 |
+| docs/design/v3/07-people-and-war.md:647 | \| inner-circle house elder \| | \| house elder \| | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤 |
+| docs/design/v3/07-people-and-war.md:649 | \| Bench Keeper \| | \| Maintenance Foreman \| | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 159) |
+| docs/design/v3/07-people-and-war.md:651 | \| Word Keeper \| | \| Spokesperson \| | 검토 2차 막는 점 1: 한국어 파일 영어 열을 .en.md 같은 줄의 12a 새 영어로 맞춤(12a 164) |
+| docs/design/v3/08-document-map.md:54 | 띠의 생김새 | 봉쇄 지대의 생김새 | 검토 2차 막는 점 3: 12a 38번 적용, ko/en 제목 맞춤 |
+| docs/design/v3/08-document-map.md:54 | / Beyond Seoul: the Rim \| | / Beyond Seoul: the Blockade Line \| | 검토 2차 막는 점 3: 12a 38번 적용, ko/en 제목 맞춤 |
+| docs/design/v3/08-document-map.en.md:54 | the shape of the band | the shape of the blockade zone | 검토 2차 막는 점 3: 12a 38번 적용, ko/en 제목 맞춤 |
+| docs/design/v3/08-document-map.en.md:54 | / Beyond Seoul: the Blockade line \| | / Beyond Seoul: the Blockade Line \| | 검토 2차 막는 점 3: 12a 38번 적용, ko/en 제목 맞춤(ko와 대소문자 맞춤) |
+| docs/design/v3/09-ck3-systems.md:511 | 세습을 결의했은지. | 세습을 결의했는지. | 검토 2차 막는 점 4: 용어 102 치환 뒤 어형, 영어 수 일치 |
+| docs/design/v3/09-ck3-systems.en.md:511 | whether heating contribution count, | whether heating contribution counts, | 검토 2차 막는 점 4: 용어 102 치환 뒤 어형, 영어 수 일치 |
+| docs/design/v3/07-people-and-war.md:945 | "Direct liege" | "Direct superior" | 검토 2차 막는 점 5: 12a 행 ko/en 일관 적용(195a) |
+| docs/design/v3/07-people-and-war.md:945 | `direct-liege` | `direct-superior` | 검토 2차 막는 점 5: 12a 행 ko/en 일관 적용(195a) |
+| docs/design/v3/07-people-and-war.md:1193 | (Assembly Member's Guard Hall) | (Assembly Member's Guard Headquarters) | 검토 2차 막는 점 5: 12a 행 ko/en 일관 적용(80) |
+| docs/design/v3/07-people-and-war.md:1193 | (Assembly Member's Sworn Retinue) | (Assembly Member's Escort Detail) | 검토 2차 막는 점 5: 12a 행 ko/en 일관 적용(81) |
+| docs/design/v3/07-people-and-war.en.md:1193 | (Assembly Member's Sworn Retinue) | (Assembly Member's Escort Detail) | 검토 2차 막는 점 5: 12a 행 ko/en 일관 적용(81) |
+| docs/design/v3/07-people-and-war.md:496 | 제설 인부 / Snow clearer | 제설 인부 / Snow-clearing labourer | 검토 2차 막는 점 5: 12a 행 ko/en 일관 적용(196) |
+| docs/design/v3/07-people-and-war.en.md:496 | 제설 인부 / Snow clearer | 제설 인부 / Snow-clearing labourer | 검토 2차 막는 점 5: 12a 행 ko/en 일관 적용(196) |
+| docs/design/v3/05-free-city.md:97 | 밭장이 있다 | 발전 단지 반장이 있다 | 검토 2차 막는 점 6: 조어 밭장 → 발전 단지 반장(12a 203). 목록 밖 같은 낱말 |
+| docs/design/v3/05-free-city.en.md:97 | one field head per wind farm | one wind farm foreman per wind farm | 검토 2차 막는 점 6: 조어 밭장 → 발전 단지 반장(12a 203). 목록 밖 같은 낱말 |
+| docs/design/v3/05-free-city.md:522 | 밭장을 겸하는 | 발전 단지 반장을 겸하는 | 검토 2차 막는 점 6: 조어 밭장 → 발전 단지 반장(12a 203) |
+| docs/design/v3/05-free-city.en.md:522 | who are also field heads | who are also wind farm foremen | 검토 2차 막는 점 6: 조어 밭장 → 발전 단지 반장(12a 203) |
+| docs/design/v3/07-people-and-war.md:216 | 밭장 20 | 발전 단지 반장 20 | 검토 2차 막는 점 6: 조어 밭장 → 발전 단지 반장(12a 203) |
+| docs/design/v3/07-people-and-war.en.md:216 | 밭장 20 | 발전 단지 반장 20 | 검토 2차 막는 점 6: 조어 밭장 → 발전 단지 반장(12a 203) |
+| docs/design/v3/07-people-and-war.md:460 | 구간장, 밭장 / Section Chief, Field Chief | 구간장, 발전 단지 반장 / Section Chief, Wind Farm Foreman | 검토 2차 막는 점 6: 조어 밭장 → 발전 단지 반장(12a 203) |
+| docs/design/v3/07-people-and-war.en.md:460 | 구간장, 밭장 / Section Chief, Field Chief | 구간장, 발전 단지 반장 / Section Chief, Wind Farm Foreman | 검토 2차 막는 점 6: 조어 밭장 → 발전 단지 반장(12a 203) |
+| docs/design/v3/07-people-and-war.md:639 | \| 밭장 \| Field Chief \| | \| 발전 단지 반장 \| Wind Farm Foreman \| | 검토 2차 막는 점 6: 조어 밭장 → 발전 단지 반장(12a 203) |
+| docs/design/v3/07-people-and-war.en.md:639 | \| 밭장 \| Field Chief \| | \| 발전 단지 반장 \| Wind Farm Foreman \| | 검토 2차 막는 점 6: 조어 밭장 → 발전 단지 반장(12a 203) |
+| docs/design/v3/07-people-and-war.md:672 | '밭장': | '발전 단지 반장': | 검토 2차 막는 점 6: 조어 밭장 → 발전 단지 반장(12a 203). 코드 키라 인물 자료와 scripts/pages/ck3-stats.mjs가 따라야 한다 |
+| docs/design/v3/07-people-and-war.en.md:672 | '밭장': | '발전 단지 반장': | 검토 2차 막는 점 6: 조어 밭장 → 발전 단지 반장(12a 203). 코드 키라 인물 자료와 scripts/pages/ck3-stats.mjs가 따라야 한다 |
+| docs/design/v3/07-people-and-war.md:688 | 강서 밭장을 겸하는 | 강서 발전 단지 반장을 겸하는 | 검토 2차 막는 점 6: 조어 밭장 → 발전 단지 반장(12a 203). 목록 밖 같은 낱말 |
+| docs/design/v3/07-people-and-war.en.md:688 | Gangseo Field Chief | Gangseo Wind Farm Foreman | 검토 2차 막는 점 6: 조어 밭장 → 발전 단지 반장(12a 203). 목록 밖 같은 낱말 |
+| docs/design/v3/07-people-and-war.md:719 | 역 반장, 밭장, | 역 반장, 발전 단지 반장, | 검토 2차 막는 점 6: 조어 밭장 → 발전 단지 반장(12a 203) |
+| docs/design/v3/07-people-and-war.en.md:719 | 역 반장, 밭장, | 역 반장, 발전 단지 반장, | 검토 2차 막는 점 6: 조어 밭장 → 발전 단지 반장(12a 203) |
+| docs/design/v3/08-document-map.md:96 | G13 · 물류 로봇 팔 | G13 · 집게팔 | 검토 2차 막는 점 2: 현재 제목 열을 a54452ac7 값(030 SQL 값)으로 되돌림 |
+| docs/design/v3/08-document-map.md:96 | G13 · 물류 로봇 팔 / G13 · Claw Arms | G13 · 물류 로봇 팔 / G13 · logistics robot arms | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.md:102 | G14 · 선로 점검 로봇 | G14 · 빈수레 | 검토 2차 막는 점 2: 현재 제목 열을 a54452ac7 값(030 SQL 값)으로 되돌림 |
+| docs/design/v3/08-document-map.md:102 | G14 · 선로 점검 로봇 / G14 · Empty Carts | G14 · 선로 점검 로봇 / G14 · track inspection robots | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.md:103 | G15 · 서비스 로봇 | G15 · 돌봄바퀴 | 검토 2차 막는 점 2: 현재 제목 열을 a54452ac7 값(030 SQL 값)으로 되돌림 |
+| docs/design/v3/08-document-map.md:103 | G15 · 서비스 로봇 / G15 · Care Wheels | G15 · 서비스 로봇 / G15 · service robots | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.md:104 | G16 · 공사 로봇 | G16 · 철골거미 | 검토 2차 막는 점 2: 현재 제목 열을 a54452ac7 값(030 SQL 값)으로 되돌림 |
+| docs/design/v3/08-document-map.md:104 | G16 · 공사 로봇 / G16 · Girder Spiders | G16 · 공사 로봇 / G16 · construction robots | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.md:105 | G17 · 감시탑 | G17 · 외눈탑 | 검토 2차 막는 점 2: 현재 제목 열을 a54452ac7 값(030 SQL 값)으로 되돌림 |
+| docs/design/v3/08-document-map.md:105 | G17 · 감시탑 / G17 · One-Eye Towers | G17 · 감시탑 / G17 · watchtowers | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.md:106 | G18 · 선로 무장 차량 | G18 · 불다리열차 | 검토 2차 막는 점 2: 현재 제목 열을 a54452ac7 값(030 SQL 값)으로 되돌림 |
+| docs/design/v3/08-document-map.md:106 | G18 · 선로 무장 차량 / G18 · Tunnel-Stoppers | G18 · 선로 무장 차량 / G18 · armed rail vehicles | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.md:107 | G19 · 귀환 무인 차량 | G19 · 그르렁이 | 검토 2차 막는 점 2: 현재 제목 열을 a54452ac7 값(030 SQL 값)으로 되돌림 |
+| docs/design/v3/08-document-map.md:107 | G19 · 귀환 무인 차량 / G19 · Growlers | G19 · 귀환 무인 차량 / G19 · returning unmanned ground vehicles | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.md:108 | G20 · 수리 기계 / G20 · Bulgasari | G20 · 수리 기계 / G20 · repair machines | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.md:109 | G21 · 땅속 진동 감지기 / G21 · Ground-Knockers | G21 · 땅속 진동 감지기 / G21 · buried seismic sensors | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.md:111 | G23 · 무인 경계 초소 | G23 · 우두커니 | 검토 2차 막는 점 2: 현재 제목 열을 a54452ac7 값(030 SQL 값)으로 되돌림 |
+| docs/design/v3/08-document-map.md:111 | G23 · 무인 경계 초소 / G23 · Udukeoni | G23 · 무인 경계 초소 / G23 · unmanned sentry posts | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.md:112 | G24 · 확성기 / G24 · Doenoemi | G24 · 확성기 / G24 · loudspeakers | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.md:113 | G25 · 케이블 점검 로봇 | G25 · 등불개미 | 검토 2차 막는 점 2: 현재 제목 열을 a54452ac7 값(030 SQL 값)으로 되돌림 |
+| docs/design/v3/08-document-map.md:113 | G25 · 케이블 점검 로봇 / G25 · Lamp Ants | G25 · 케이블 점검 로봇 / G25 · cable inspection robots | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.md:114 | G26 · 자율 건설 기계 | G26 · 철공룡 | 검토 2차 막는 점 2: 현재 제목 열을 a54452ac7 값(030 SQL 값)으로 되돌림 |
+| docs/design/v3/08-document-map.md:114 | G26 · 자율 건설 기계 / G26 · Iron Dinosaurs | G26 · 자율 건설 기계 / G26 · autonomous construction machines | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.en.md:96 | G13 · logistics robot arm | G13 · Pincer Arm | 검토 2차 막는 점 2: 현재 제목 열을 a54452ac7 값(030 SQL 값)으로 되돌림 |
+| docs/design/v3/08-document-map.en.md:96 | G13 · 물류 로봇 팔 / G13 · Claw Arms | G13 · 물류 로봇 팔 / G13 · logistics robot arms | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.en.md:102 | G14 · track inspection robot | G14 · Empty Cart | 검토 2차 막는 점 2: 현재 제목 열을 a54452ac7 값(030 SQL 값)으로 되돌림 |
+| docs/design/v3/08-document-map.en.md:103 | G15 · service robot | G15 · Care Wheel | 검토 2차 막는 점 2: 현재 제목 열을 a54452ac7 값(030 SQL 값)으로 되돌림 |
+| docs/design/v3/08-document-map.en.md:104 | G16 · construction robot | G16 · Girder Spider | 검토 2차 막는 점 2: 현재 제목 열을 a54452ac7 값(030 SQL 값)으로 되돌림 |
+| docs/design/v3/08-document-map.en.md:105 | G17 · watchtower | G17 · One-Eye Tower | 검토 2차 막는 점 2: 현재 제목 열을 a54452ac7 값(030 SQL 값)으로 되돌림 |
+| docs/design/v3/08-document-map.en.md:106 | G18 · 선로 무장 차량 / G18 · Tunnel-Stoppers | G18 · 선로 무장 차량 / G18 · armed rail vehicles | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.en.md:108 | G20 · 수리 기계 / G20 · repair machine | G20 · 수리 기계 / G20 · repair machines | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.en.md:109 | G21 · 땅속 진동 감지기 / G21 · Ground-Knockers | G21 · 땅속 진동 감지기 / G21 · buried seismic sensors | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.en.md:111 | G23 · 무인 경계 초소 / G23 · Udukeoni | G23 · 무인 경계 초소 / G23 · unmanned sentry posts | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.en.md:112 | G24 · 확성기 / G24 · Doenoemi | G24 · 확성기 / G24 · loudspeakers | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.en.md:113 | G25 · cable inspection robot | G25 · Lantern Ant | 검토 2차 막는 점 2: 현재 제목 열을 a54452ac7 값(030 SQL 값)으로 되돌림 |
+| docs/design/v3/08-document-map.en.md:113 | G25 · 케이블 점검 로봇 / G25 · Lamp Ants | G25 · 케이블 점검 로봇 / G25 · cable inspection robots | 검토 2차 막는 점 2: 새 제목 두 반쪽을 12a 한·영 짝으로 ko/en 같게 |
+| docs/design/v3/08-document-map.en.md:114 | G26 · autonomous construction machine | G26 · Iron Dinosaur | 검토 2차 막는 점 2: 현재 제목 열을 a54452ac7 값(030 SQL 값)으로 되돌림 |
+| docs/design/v3/07-people-and-war.md:522 | 취수구 관리인 / Intake keeper | 취수구 관리인 / Water intake keeper | 검토 2차 막는 점 1의 다시 훑기에서 찾음: .en.md 같은 줄의 12a 75 새 영어로 맞춤 |
+| docs/design/v3/12a-terms.md:299 | (없음) | 203 \| 밭장 \| 05, 07 \| 조어(바람밭 + -장) \| 발전 단지 반장 \| Field Chief → Wind Farm Foreman | 검토 2차 막는 점 6 |
+| docs/design/v3/12a-terms.md:49 | 바꿀 말 수: 207 | 바꿀 말 수: 208 | 203번 행을 더함 |
+| docs/drafts/reports/v3-retime-terms-log.md 1절 B2 | 다져진 눈 밀도 0.45~0.6 → 7.0~9.3 m | (같은 값에 A안 밀도 0.375~0.5와 올린 까닭, A안 밀도의 결과 8.4~11.2 m를 덧붙임) | 검토 2차 막는 점 7: 01-core 109줄 7~9 m를 두고 산식의 밀도 근거를 밝힘 |
+
+합계: 2차 검토 고침 108건.

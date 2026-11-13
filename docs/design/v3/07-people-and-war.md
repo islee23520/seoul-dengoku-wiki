@@ -155,7 +155,7 @@ v3에서 바꾸지 않는 것은 README의 고정 사실이다. 사람의 이름
 | 교주 | `교주` | `Hierophant` |
 | 정부 동장, 아크 대피소장 | `<동> 동장` / `<동> 대피소장` | `Dong Chief of <Dong>` / `Shelter Head of <Dong>` |
 | 자유도시 구간장 | `<구간 이름> 구간장` (예: 신도림 구간장) | `Section Chief of <Section>` |
-| 역 자리 | `<역>역 역장` / `<역>역 역 반장` / `<역>역 정비 반장`. 역 이름이 이미 "역"으로 끝나면 덧붙이지 않는다(서울역 역장) | `Stationmaster of <Station>` / `Station Foreman of <Station>` / `Bench Keeper of <Station>` |
+| 역 자리 | `<역>역 역장` / `<역>역 역 반장` / `<역>역 정비 반장`. 역 이름이 이미 "역"으로 끝나면 덧붙이지 않는다(서울역 역장) | `Stationmaster of <Station>` / `Station Foreman of <Station>` / `Maintenance Foreman of <Station>` |
 | 구청장 | `<구> 구청장` | `Head of the <District> Office` |
 | 그 밖의 역할 | 04~06장 표의 역할 이름(예: 수도방위사령관, 주민등록 원부 필경사, 시세표 서기, 건널목장, 호위대장, 대변인, 교주 호위). 역할 이름이 일만 가리키면 8.2절 목록의 "사람 이름" | 8.7절 낱말표와 8.2절 목록의 영어 |
 
@@ -213,7 +213,7 @@ v3에서 바꾸지 않는 것은 README의 고정 사실이다. 사람의 이름
 | 세력 | 직급과 최소 나이 |
 |---|---|
 | 정부 | 대통령 25, 국회의원 18(대물림, 04장 16.5절), 장관 30, 차관 30, 청장 30, 총재 30, 원장 30, 구청장 30, 동장 25, 역장 25, 서기관 30, 사무관 25, 주사 20, 서기 16(전승 기재, 04장 8.2절), 경찰관 19, 전문의 30, 수련의 24, 교사 22, 이병·일병·상병·병장 19(징병, 04장 14.3절), 하사 18, 중사 22, 상사 28, 소위 20, 중위 22, 대위 24, 소령 30, 중령 33, 대령 35, 후계 16, 등록 주민 0 |
-| 자유도시들 | 우두머리 일곱 25(05장 12.4절), 구간장 25, 역 반장 20, 대표 20, 작업반장 20, 건널목장 25, 교대 조장 20, 밭장 20, 숙련공 16, 일꾼 16, 수습 12, 후계 16 |
+| 자유도시들 | 우두머리 일곱 25(05장 12.4절), 구간장 25, 역 반장 20, 대표 20, 작업반장 20, 건널목장 25, 교대 조장 20, 발전 단지 반장 20, 숙련공 16, 일꾼 16, 수습 12, 후계 16 |
 | 아크 | 교주 25, 가문 수장 0(나이 하한 없음. 나이 대신 부위 2 이상, 대물림, 06장 3.3·3.5·12.4절), 가문 원로 40, 대피소장 28, 정비 반장 25, 호위대장 30, 대변인 22(과제 30 결정 2026-11-13, 잠정 T30-arc-11), 정비공 18, 세례 신도 16, 가문 구성원 0, 세례 전 신도 0, 후계 16 |
 | 무소속 | 미등록 0 |
 
@@ -456,13 +456,13 @@ v3의 **귀환망**은 바깥 기계의 봉쇄선을 넘었다 돌아오는 사�
 | governance | 부처 행정 | Ministry administration | 장관, 차관, 청장, 국장 / Minister, Vice Minister, Commissioner, Director-General | G |
 | governance | 동 행정 | Dong administration | 동장 / Dong Chief | G |
 | governance | 역 행정 | Station administration | 역장 / Stationmaster | G |
-| governance | 도시 운영 | City governance | 도시의 우두머리 칭호, 교대 조장 / the city's head title, Shift Chief | F |
-| governance | 구간 운영 | Section running | 구간장, 밭장 / Section Chief, Field Chief | F |
+| governance | 도시 운영 | City governance | 도시의 우두머리 칭호, 교대 조장 / the city's head title, Shift Leader | F |
+| governance | 구간 운영 | Section running | 구간장, 발전 단지 반장 / Section Chief, Wind Farm Foreman | F |
 | governance | 역 운영 | Station crew running | 역 반장 / Station Foreman | F |
 | governance | 신앙 통솔 | Leading the faith | 교주, 수석 신도 / Hierophant, First Believer | A |
 | governance | 측근 가문 통솔 | Leading an inner-circle house | 가문 수장, 가문 원로 / Head of the inner-circle house, inner-circle house elder | A |
 | governance | 대피소 통솔 | Leading a shelter | 대피소장 / Shelter Head | A |
-| governance | 정비대 통솔 | Leading a bench | 정비 반장 / Bench Keeper | A |
+| governance | 정비대 통솔 | Leading a maintenance unit | 정비 반장 / Maintenance Foreman | A |
 | soldier | 군 지휘 | Military command | 수도방위사령관, 구 부대 지휘관, 호위대장 / Capital Defense Commander, district unit commander, Guard Captain | GA |
 | soldier | 징집 보병 | Levy infantry | 징집병 / Conscript | G |
 | soldier | 가문 징집 | House levy | 가문 징집병 / House levy | A |
@@ -477,11 +477,11 @@ v3의 **귀환망**은 바깥 기계의 봉쇄선을 넘었다 돌아오는 사�
 | guard | 순찰 | Patrol | 순찰대원 / Patroller | GFA |
 | guard | 경호 | Bodyguard | 경호원, 교주 호위 / Bodyguard, Hierophant's guard | GFA |
 | guard | 치안 | Policing | 경찰관 / Police officer | G |
-| guard | 경비 분담 | Watch duty | 경비원, 산지기, 경비대원 / Watch hand, Mountain Keeper, Edge crew | F |
+| guard | 경비 분담 | Watch duty | 경비원, 산지기, 경비대원 / Watch hand, Mountain Keeper, Guard unit | F |
 | medical | 진료 | Medical care | 의사, 보건소장 / Doctor, Health post chief | GFA |
 | medical | 응급 처치 | Emergency care | 구호원 / Medic | GFA |
 | medical | 약품 관리 | Medicine keeping | 약품 관리인 / Medicine keeper | GFA |
-| medical | 세례 신도 돌봄 | Recovery care | 간병인 / Recovery carer | A |
+| medical | 세례 신도 돌봄 | Recovery care | 간병인 / Recovery caregiver | A |
 | fitting | 이식 정비 | Implant maintenance | 정비공, 야전 정비공 / Maintenance-unit fitter, Field fitter | AF |
 | fitting | 세례 집도 | Baptism fitting | 세례 집도자 / Baptism fitter | A |
 | fitting | 충전 관리 | Charging upkeep | 충전 관리인 / Charge keeper | A |
@@ -493,12 +493,12 @@ v3의 **귀환망**은 바깥 기계의 봉쇄선을 넘었다 돌아오는 사�
 | provision | 싹 기르기 | Sprouting | 싹 기르는 이 / Sprout grower | GFA |
 | provision | 부엌 취사 | Kitchen cooking | 부엌 일꾼 / Cook | GFA |
 | labour | 출입구 경비 | Entrance guard duty | 출입구 일꾼, 출입구 경비원 / Entrance worker, Entrance guard | GFA |
-| labour | 제설 | Snow clearing | 제설 인부 / Snow clearer | GFA |
+| labour | 제설 | Snow clearing | 제설 인부 / Snow-clearing labourer | GFA |
 | labour | 땔감 벌목 | Firewood felling | 벌목꾼 / Woodcutter | GF |
 | labour | 화덕 관리 | Hearth tending | 화덕 관리인 / Hearth attendant | GFA |
 | labour | 혐기성 소화조 관리 | Anaerobic digester tending | 혐기성 소화조 관리인 / Digester attendant | GFA |
 | labour | 짐꾼 | Porter | 짐꾼 / Porter | GFA |
-| labour | 옷 짓기 | Clothes making | 옷 짓는 이, 집안 살림 / Clothier, Household keeper | GFA |
+| labour | 옷 짓기 | Clothes making | 옷 짓는 이, 집안 살림 / Clothier, Household steward | GFA |
 | trade | 배급 집행 | Ration issuing | 배급 서기 / Ration clerk | G |
 | trade | 장터 거래 | Market trading | 장터 상인, 상인 가문 사람 / Market trader | GFA |
 | trade | 부품 거래 | Parts trading | 부품 상인 / Parts dealer | FA |
@@ -513,13 +513,13 @@ v3의 **귀환망**은 바깥 기계의 봉쇄선을 넘었다 돌아오는 사�
 | courier | 수레 운전 | Cart driving | 수레꾼 / Carter | GFA |
 | courier | 나루 건넘 안내 | River crossing guide | 나루 안내인 / Crossing guide | GF |
 | courier | 무전 중계 | Radio relay | 무전수 / Radio operator | GFA |
-| courier | 교주의 말 전달 | Carrying the Word | 대변인 / Word Keeper | A |
+| courier | 교주의 말 전달 | Carrying the Word | 대변인 / Spokesperson | A |
 | maintenance | 펌프 정비 | Pump maintenance | 펌프 정비공, 펌프조원 / Pump fitter | GFA |
 | maintenance | 풍력 발전기 정비 | Windmill maintenance | 풍력 발전기 정비공 / Windmill fitter | GF |
 | maintenance | 열펌프 정비 | Heat-pump maintenance | 열펌프 정비공, 열펌프 정비공 / Heat-pump fitter | GFA |
-| maintenance | 수차 정비 | Water-wheel maintenance | 수차 정비공 / Water-wheel keeper | FA |
+| maintenance | 수차 정비 | Water-wheel maintenance | 수차 정비공 / Turbine mechanic | FA |
 | maintenance | 우물 정비 | Well maintenance | 우물 정비공, 굴착공 / Well fitter, Driller | GFA |
-| maintenance | 취수구 정비 | Intake maintenance | 취수구 관리인 / Intake keeper | GFA |
+| maintenance | 취수구 정비 | Intake maintenance | 취수구 관리인 / Water intake keeper | GFA |
 | maintenance | 전선 정비 | Line maintenance | 전선 정비공, 전기공 / Lineman | GFA |
 | maintenance | 부품 가공 | Parts machining | 부품 가공 기능공 / Machinist | FA |
 | maintenance | 차량 정비 | Vehicle maintenance | 차량 정비공 / Vehicle fitter | GFA |
@@ -527,7 +527,7 @@ v3의 **귀환망**은 바깥 기계의 봉쇄선을 넘었다 돌아오는 사�
 | maintenance | 공구 제작 | Tool making | 공구 장인, 수선공 / Toolmaker, Mender | GF |
 | scout | 고물 채집 | Salvage gathering | 넝마주이 / Salvager | GFA |
 | scout | 섬유 채집 | Fibre gathering | 섬유 채집 일꾼, 섬유 채집 일꾼 / Fibre gatherer | GFA |
-| scout | 봉쇄선 정찰 | Edge watch | 봉쇄선 정찰병, 봉쇄선 망꾼 / Edge watcher, Rim watcher | GFA |
+| scout | 봉쇄선 정찰 | Edge watch | 봉쇄선 정찰병, 봉쇄선 망꾼 / Edge watcher, Blockade lookout | GFA |
 | scout | 탐사 | Survey | 탐사원 / Surveyor | GFA |
 | scout | 정보 수집 | Intelligence gathering | 정보원, 국가정보원장 / Intelligence agent, NIS Director | GFA |
 | scout | 동력원 회수 | Power-core running | 동력원 회수 일꾼 / Power-core runner | FA |
@@ -537,8 +537,8 @@ v3의 **귀환망**은 바깥 기계의 봉쇄선을 넘었다 돌아오는 사�
 | record | 공문 필사 | Document copying | 공문 필경사, 부처 서기, 국회 서기 / Document copyist | G |
 | record | 비서 업무 | Secretarial work | 대통령 비서실장, 비서관, 국회·당 사무총장 / Chief of Staff, Secretary, Secretary-General | G |
 | record | 계약서 기록 | Contract records | 계약서 서기 / Contract clerk | F |
-| record | 시세표 기록 | Tally-board keeping | 시세표 서기, 회계원 / Tally clerk, Tally keeper | FA |
-| record | 세례 명부 기록 | Baptism roll keeping | 세례 명부 기록원 / Roll keeper | A |
+| record | 시세표 기록 | Price-board keeping | 시세표 서기, 회계원 / Price-board clerk, Accountant | FA |
+| record | 세례 명부 기록 | Baptism roll keeping | 세례 명부 기록원 / Register clerk | A |
 | record | 교육 | Schooling and teaching | 교사, 학교 선생, 배우는 아이 / Teacher, pupil | GFA |
 
 정부에 `fitting`이 없는 것은 04장 14.4절 5항(기계 몸 병사로 꾸린 부대가 없다)과 13.3절(정비할 곳이 아크뿐이다)과 같은 까닭이다. 자유도시들의 `이식 정비`는 갈라지기 전부터 남아 있는 손이다(01-core 7.3절).
@@ -627,28 +627,28 @@ export const CLASS_BASE = {
 | 대령 | Colonel | G | 군사 +2 |
 | 공작 | Duke | F(관악) | 외교 +1, 관리 +1 |
 | 나루지기 | Ferry Keeper | F(동작) | 외교 +1, 군사 +1 |
-| 상인회장 | Market Master | F(영등포) | 외교 +2 |
-| 공장장 | Works Master | F(구로) | 관리 +1, 학식 +1 |
-| 경비대장 | Edge Warden | F(금천) | 군사 +1, 음모 +1 |
-| 기지장 | Depot Master | F(양천) | 관리 +2 |
-| 발전소장 | Wind Keeper | F(강서) | 관리 +1, 학식 +1 |
+| 상인회장 | Head of the Merchants' Association | F(영등포) | 외교 +2 |
+| 공장장 | Plant Manager | F(구로) | 관리 +1, 학식 +1 |
+| 경비대장 | Guard Commander | F(금천) | 군사 +1, 음모 +1 |
+| 기지장 | Depot Chief | F(양천) | 관리 +2 |
+| 발전소장 | Power Station Director | F(강서) | 관리 +1, 학식 +1 |
 | 구간장 | Section Chief | F | 관리 +1 |
 | 역 반장 | Station Foreman | F | 관리 +1 |
 | 건널목장 | Crossing Chief | F(동작) | 외교 +1, 군사 +1 |
-| 교대 조장 | Shift Chief | F(양천) | 관리 +1 |
-| 밭장 | Field Chief | F(강서) | 관리 +1, 학식 +1 |
-| 대표 | Bench Owner | F | 관리 +1, 학식 +1 |
+| 교대 조장 | Shift Leader | F(양천) | 관리 +1 |
+| 발전 단지 반장 | Wind Farm Foreman | F(강서) | 관리 +1, 학식 +1 |
+| 대표 | Workshop Owner | F | 관리 +1, 학식 +1 |
 | 작업반장 | Work Team Leader | F | 관리 +1 |
-| 숙련공 | Hand | F | 학식 +1 |
+| 숙련공 | Skilled worker | F | 학식 +1 |
 | 일꾼 | Labourer | F | 없음 |
 | 수습 | Apprentice | F | 없음 |
 | 교주 | Hierophant | A | 외교 +1, 학식 +2 |
-| 가문 수장 | Head of the inner-circle house | A | 외교 +1, 음모 +1 |
-| 가문 원로 | inner-circle house elder | A | 외교 +1, 음모 +1 |
+| 가문 수장 | House Head | A | 외교 +1, 음모 +1 |
+| 가문 원로 | house elder | A | 외교 +1, 음모 +1 |
 | 대피소장 | Shelter Head | A | 관리 +1 |
-| 정비 반장 | Bench Keeper | A | 관리 +1, 학식 +1 |
+| 정비 반장 | Maintenance Foreman | A | 관리 +1, 학식 +1 |
 | 호위대장 | Guard Captain | A | 군사 +1, 무용 +1 |
-| 대변인 | Word Keeper | A | 외교 +1, 학식 +1 |
+| 대변인 | Spokesperson | A | 외교 +1, 학식 +1 |
 | 가문 구성원 | inner-circle house member | A | 음모 +1 |
 | 정비공 | Fitter | A | 학식 +1 |
 | 세례 신도 | Baptised | A | 무용 +1 |
@@ -669,7 +669,7 @@ export const RANK_MODIFIER = {
   '공작': { diplomacy: 1, stewardship: 1 }, '나루지기': { diplomacy: 1, martial: 1 }, '상인회장': { diplomacy: 2 },
   '공장장': { stewardship: 1, learning: 1 }, '경비대장': { martial: 1, intrigue: 1 }, '기지장': { stewardship: 2 },
   '발전소장': { stewardship: 1, learning: 1 }, '구간장': { stewardship: 1 }, '역 반장': { stewardship: 1 },
-  '건널목장': { diplomacy: 1, martial: 1 }, '교대 조장': { stewardship: 1 }, '밭장': { stewardship: 1, learning: 1 },
+  '건널목장': { diplomacy: 1, martial: 1 }, '교대 조장': { stewardship: 1 }, '발전 단지 반장': { stewardship: 1, learning: 1 },
   '대표': { stewardship: 1, learning: 1 }, '작업반장': { stewardship: 1 }, '숙련공': { learning: 1 }, '일꾼': {}, '수습': {},
   '교주': { diplomacy: 1, learning: 2 }, '가문 수장': { diplomacy: 1, intrigue: 1 }, '가문 원로': { diplomacy: 1, intrigue: 1 },
   '대피소장': { stewardship: 1 }, '정비 반장': { stewardship: 1, learning: 1 }, '호위대장': { martial: 1, prowess: 1 },
@@ -685,7 +685,7 @@ export const RANK_MODIFIER = {
 | 세력 | 역할 → 직급 |
 |---|---|
 | 정부 | 국회의원 → 국회의원(대통령은 대통령). 동장 → 동장. 역장 → 역장. 장관 → 장관. 차관 → 차관. 산림청장 → 청장. 한국은행 총재 → 총재. 국가정보원장 → 원장. 구청장 → 구청장. 수도방위사령관 → 대령. 의원 집안 후계 → 후계. 부처 국장, 대통령 비서실장, 비서관, 국회·당 사무총장 → 서기관. 의료단 단장, 보건 요원 가운데 의사 → 나이 33세 미만 수련의, 그 위 전문의. 구 부대 지휘관 → 대위(34세 이상 소령). 수도방위사령부 참모 → 소령. 분대장 → 26세 미만 하사, 그 위 중사. 국군 병사 → 19세 일병, 20세 병장(징병 복무 18개월, 04장 14.3절), 21~25세 하사, 26~34세 중사, 35세 이상 상사. 경찰관 → 경찰관. 서기(동주민센터·구청·부처·국회·원부) → 30세 미만 서기, 30~44세 주사, 45세 이상 사무관. 학교 선생 → 교사. 나머지(기능·노역, 장터 상인, 부양 식구, 의원 집안의 배우자·친족·아이, 경호원, 증표 인쇄공) → 등록 주민 |
-| 자유도시들 | 우두머리 → 그 도시의 칭호. 구간장 → 구간장. 역 반장 → 역 반장. 후계자 → 후계. 양천 교대 조장 → 교대 조장. 건널목장 → 건널목장. 강서 밭장을 겸하는 역 반장 → 역 반장. 대표 → 대표. 작업반장, 경비 분대장 → 작업반장. 손, 장사·계약, 경비원, 산지기, 경비대, 우두머리의 배우자와 어른 → 숙련공. 수습 → 수습. 일꾼·살림 → 일손 |
+| 자유도시들 | 우두머리 → 그 도시의 칭호. 구간장 → 구간장. 역 반장 → 역 반장. 후계자 → 후계. 양천 교대 조장 → 교대 조장. 건널목장 → 건널목장. 강서 발전 단지 반장을 겸하는 역 반장 → 역 반장. 대표 → 대표. 작업반장, 경비 분대장 → 작업반장. 손, 장사·계약, 경비원, 산지기, 경비대, 우두머리의 배우자와 어른 → 숙련공. 수습 → 수습. 일꾼·살림 → 일손 |
 | 아크 | 교주 → 교주. 가문 수장 → 가문 수장. 대피소장 → 대피소장. 정비 반장 → 정비 반장. 가문 원로 → 가문 원로. 맞수 → 가문 구성원(가문 수장의 형제·부모 세대인 맞수는 가문 원로, 06장 12.4절. 7.2절의 이홍원). 호위대장 → 호위대장. 대변인 → 대변인. S1 교섭 담당자 → 가문 구성원. 정비공, 야전 정비공 → 정비공. 세례 전투원 → 세례 신도. 가문 징집병 → 세례 전 신도. 그 밖의 역할 → 부위 수가 1 이상이면 세례 신도, 0이면 세례 전 신도 |
 | 무소속 | 미등록 |
 
@@ -716,7 +716,7 @@ export const RANK_MODIFIER = {
 | 04 | 장터 상인, 학교 선생, 경호원, 부양 식구 | 직업 사람 이름 | 등록 주민, 교사 | 장터 거래, 교육, 경호, 교육(아이)·옷 짓기(어른) |
 | 05 | 우두머리 일곱 | 4.4절 | 그 칭호 | 도시 운영 |
 | 05 | 후계자, 우두머리 집안의 어른·배우자 | 그대로 | 후계 / 숙련공 | 가업 |
-| 05 | 구간장, 역 반장, 밭장, 교대 조장 | 4.4절, 그대로 | 그대로 | 구간 운영, 역 운영, 구간 운영, 도시 운영 |
+| 05 | 구간장, 역 반장, 발전 단지 반장, 교대 조장 | 4.4절, 그대로 | 그대로 | 구간 운영, 역 운영, 구간 운영, 도시 운영 |
 | 05 | 대표, 작업반장 | `<대 이름> 대표`(예: 천왕 통신 작업장 대표), 작업반장 | 대표, 작업반장 | 그 작업장의 일(05장 3절의 먹고사는 일) |
 | 05 | 숙련공, 수습 | 직업 사람 이름 | 숙련공, 수습 | 그 도시의 일 |
 | 05 | 상인 가문 사람, 시세표 서기, 계약서 서기, 짐꾼 반장, 환전상 | 그대로 | 숙련공 | 장터 거래, 시세표 기록, 계약서 기록, 짐꾼, 환전 |
@@ -942,7 +942,7 @@ v3 세력 기준값:
 | Kinship이 아닌 항목(Contract 924, Command 300, Oath 118, Master and Disciple 90, Rivalry 42, Debt 26, Grudge 22, Protective Residence 2)의 `from`, `type`, `to`, `basis` | DROP | 옛 역할에 묶인 관계다. 대신 Command는 상관 관계에서 다시 만들고(9.4절), 그 밖의 관계는 입력 `ties`로 새로 쓴다 |
 | `proseContacts[]`(511)와 `basis`, `recipientId`, `recipientName`, `sourceRef`, `sourceRef.anchor`, `sourceRef.path`(각 28) | DROP | 옛 원천 문서의 접점 |
 | `court`, `court.id`, `court.members[]`, `court.members[].name`, `court.members[].personId`(14, 27) | REDESIGN | 상관 관계에서 계산(9.4절) |
-| `directLiege`, `.personId`, `.name`, `.courtId`, `.effectiveYear`, `.ownerTerm`, `.relationKind`(37 이하) | REDESIGN | 상관 관계에서 계산. `effectiveYear`는 2126, `ownerTerm`은 "직속 상관"/"Direct liege", `relationKind`는 `direct-liege` |
+| `directLiege`, `.personId`, `.name`, `.courtId`, `.effectiveYear`, `.ownerTerm`, `.relationKind`(37 이하) | REDESIGN | 상관 관계에서 계산. `effectiveYear`는 2126, `ownerTerm`은 "직속 상관"/"Direct superior", `relationKind`는 `direct-superior` |
 | `retinueGroups[]`(1)와 `id`, `name`, `courtId`, `liegePersonId`, `count`, `duties[]`, `personhoodReview`, `technicalLimits[]`, `holdingIds[]`, `formalTitle` | REDESIGN | 민웅기만. 9.4절 |
 
 **능력과 몸(`characterProfile`)**
@@ -1190,7 +1190,7 @@ v3에서 바뀌는 것은 병종의 이름, 장비, 겉모습, 건물 이름, �
 
 | 지금 | 까닭 | v3 |
 |---|---|---|
-| 정부 징발 체인 3단계 건물과 그 건물에서 나오는 행의 이름, 정부 수장 호위 병종의 이름과 장비 문구, 겉모습 문구의 인장 이름 | 2026-11-13 정정 전의 정부 칭호와 폐기된 선구(選區) 개념(01-core 10절)을 담았다 | 국회의원 호위대 본부(Assembly Member's Guard Hall), 국회의원 호위 수행대(Assembly Member's Sworn Retinue), 국회의원 집안 인장 |
+| 정부 징발 체인 3단계 건물과 그 건물에서 나오는 행의 이름, 정부 수장 호위 병종의 이름과 장비 문구, 겉모습 문구의 인장 이름 | 2026-11-13 정정 전의 정부 칭호와 폐기된 선구(選區) 개념(01-core 10절)을 담았다 | 국회의원 호위대 본부(Assembly Member's Guard Headquarters), 국회의원 호위 수행대(Assembly Member's Escort Detail), 국회의원 집안 인장 |
 | 아크의 "가문 수장 호위대", "가문 본청" | 아크 구의 우두머리 칭호는 가문 수장이다(01-core 8.3절) | 가문 수장 호위대, 가문 본가. 가문 징집병의 이름은 06장 11.1절대로 그대로 둔다 |
 | 9.2절 정체성 표와 근거 문장에 남은 소유자 비유 낱말(01-core 2.4절 표 왼쪽 칸의 셋째, 다섯째, 여섯째 행) | 비유 낱말은 세계 본문에 쓰지 않는다(01-core 2.4절) | 장부의 군대 / 따로 선 도시들의 군대 / 윗자리가 없다 |
 | 4.2절 근거 문장의 옛 칭호 | 같은 까닭 | 국회의원 |

@@ -213,7 +213,7 @@ The minimum age is the youngest age at which a person can hold the rank. The ski
 | Faction | Ranks and minimum ages |
 |---|---|
 | Government | 대통령 25, 국회의원 18 (hereditary, chapter 04 section 16.5), 장관 30, 차관 30, 청장 30, 총재 30, 원장 30, 구청장 30, 동장 25, 역장 25, 서기관 30, 사무관 25, 주사 20, 서기 16 (succession entry, chapter 04 section 8.2), 경찰관 19, 전문의 30, 수련의 24, 교사 22, 이병·일병·상병·병장 19 (conscription, chapter 04 section 14.3), 하사 18, 중사 22, 상사 28, 소위 20, 중위 22, 대위 24, 소령 30, 중령 33, 대령 35, 후계 16, 등록 주민 0 |
-| Free Cities | the seven heads 25 (chapter 05 section 12.4), 구간장 25, 역 반장 20, 대표 20, 작업반장 20, 건널목장 25, 교대 조장 20, 밭장 20, 숙련공 16, 일꾼 16, 수습 12, 후계 16 |
+| Free Cities | the seven heads 25 (chapter 05 section 12.4), 구간장 25, 역 반장 20, 대표 20, 작업반장 20, 건널목장 25, 교대 조장 20, 발전 단지 반장 20, 숙련공 16, 일꾼 16, 수습 12, 후계 16 |
 | Arc | 교주 25, 가문 수장 0 (no minimum age; 2 parts or more instead of age, hereditary, chapter 06 sections 3.3, 3.5 and 12.4), 가문 원로 40, 대피소장 28, 정비 반장 25, 호위대장 30, 대변인 22 (task 30 decision 2026-11-13, provisional T30-arc-11), 정비공 18, 세례 신도 16, 가문 구성원 0, 세례 전 신도 0, 후계 16 |
 | Unaffiliated | 미등록 0 |
 
@@ -457,7 +457,7 @@ Occupation phrases (`occupation_ko`) are chosen from this list only, one phrase 
 | governance | 동 행정 | Dong administration | 동장 / Dong Chief | G |
 | governance | 역 행정 | Station administration | 역장 / Stationmaster | G |
 | governance | 도시 운영 | City governance | 도시의 우두머리 칭호, 교대 조장 / the city's head title, Shift Leader | F |
-| governance | 구간 운영 | Section running | 구간장, 밭장 / Section Chief, Field Chief | F |
+| governance | 구간 운영 | Section running | 구간장, 발전 단지 반장 / Section Chief, Wind Farm Foreman | F |
 | governance | 역 운영 | Station team running | 역 반장 / Station Foreman | F |
 | governance | 신앙 통솔 | Leading the faith | 교주, 수석 신도 / Hierophant, First Believer | A |
 | governance | 측근 가문 통솔 | Leading an inner-circle house | 가문 수장, 가문 원로 / House Head, house elder | A |
@@ -493,7 +493,7 @@ Occupation phrases (`occupation_ko`) are chosen from this list only, one phrase 
 | provision | 싹 기르기 | Sprouting | 싹 기르는 이 / Sprout grower | GFA |
 | provision | 부엌 취사 | Kitchen cooking | 부엌 일꾼 / Cook | GFA |
 | labour | 출입구 경비 | Entrance guard duty | 출입구 일꾼, 출입구 경비원 / Entrance worker, Entrance guard | GFA |
-| labour | 제설 | Snow clearing | 제설 인부 / Snow clearer | GFA |
+| labour | 제설 | Snow clearing | 제설 인부 / Snow-clearing labourer | GFA |
 | labour | 땔감 벌목 | Firewood felling | 벌목꾼 / Woodcutter | GF |
 | labour | 화덕 관리 | Hearth tending | 화덕 관리인 / Hearth attendant | GFA |
 | labour | 혐기성 소화조 관리 | Anaerobic digester tending | 혐기성 소화조 관리인 / Digester attendant | GFA |
@@ -636,7 +636,7 @@ Ranks (`rank_ko`) are chosen from this list only. The 56 old rank words (군주,
 | 역 반장 | Station Foreman | F | Stewardship +1 |
 | 건널목장 | Crossing Chief | F (Dongjak) | Diplomacy +1, Martial +1 |
 | 교대 조장 | Shift Leader | F (Yangcheon) | Stewardship +1 |
-| 밭장 | Field Chief | F (Gangseo) | Stewardship +1, Learning +1 |
+| 발전 단지 반장 | Wind Farm Foreman | F (Gangseo) | Stewardship +1, Learning +1 |
 | 대표 | Workshop Owner | F | Stewardship +1, Learning +1 |
 | 작업반장 | Work Team Leader | F | Stewardship +1 |
 | 숙련공 | Skilled worker | F | Learning +1 |
@@ -669,7 +669,7 @@ export const RANK_MODIFIER = {
   '공작': { diplomacy: 1, stewardship: 1 }, '나루지기': { diplomacy: 1, martial: 1 }, '상인회장': { diplomacy: 2 },
   '공장장': { stewardship: 1, learning: 1 }, '경비대장': { martial: 1, intrigue: 1 }, '기지장': { stewardship: 2 },
   '발전소장': { stewardship: 1, learning: 1 }, '구간장': { stewardship: 1 }, '역 반장': { stewardship: 1 },
-  '건널목장': { diplomacy: 1, martial: 1 }, '교대 조장': { stewardship: 1 }, '밭장': { stewardship: 1, learning: 1 },
+  '건널목장': { diplomacy: 1, martial: 1 }, '교대 조장': { stewardship: 1 }, '발전 단지 반장': { stewardship: 1, learning: 1 },
   '대표': { stewardship: 1, learning: 1 }, '작업반장': { stewardship: 1 }, '숙련공': { learning: 1 }, '일꾼': {}, '수습': {},
   '교주': { diplomacy: 1, learning: 2 }, '가문 수장': { diplomacy: 1, intrigue: 1 }, '가문 원로': { diplomacy: 1, intrigue: 1 },
   '대피소장': { stewardship: 1 }, '정비 반장': { stewardship: 1, learning: 1 }, '호위대장': { martial: 1, prowess: 1 },
@@ -685,7 +685,7 @@ export const RANK_MODIFIER = {
 | Faction | Role → rank |
 |---|---|
 | Government | Member → 국회의원 (the President: 대통령). Dong Chief → 동장. Stationmaster → 역장. Minister → 장관. Vice Minister → 차관. Commissioner of the Korea Forest Service → 청장. Governor of the Bank of Korea → 총재. NIS Director → 원장. Head of the District Office → 구청장. Capital Defense Commander → 대령. Heir of an Assembly Member house → 후계. Ministry Director-General, Presidential Chief of Staff, secretaries, Secretaries-General of the Assembly and the parties → 서기관. Head of the medical corps, doctors among the health workers → 수련의 under 33, 전문의 above. District unit commander → 대위 (소령 at 34 or over). Capital Defense Command staff → 소령. Squad leader → 하사 under 26, 중사 above. Army soldiers → 일병 at 19, 병장 at 20 (18 months of conscript service, chapter 04 section 14.3), 하사 at 21-25, 중사 at 26-34, 상사 at 35 or over. Police officer → 경찰관. Clerks (community centre, district office, ministry, Assembly, master copy) → 서기 under 30, 주사 at 30-44, 사무관 at 45 or over. School teacher → 교사. Everyone else (skilled and labour work, market traders, dependants, spouses, kin and children of Assembly Member houses, bodyguards, coupon printers) → 등록 주민 |
-| Free Cities | Head → the city's title. Section Chief → 구간장. Station Foreman → 역 반장. Heir → 후계. Yangcheon Shift Leader → 교대 조장. Crossing Chief → 건널목장. Station Foreman who is also a Gangseo Field Chief → 역 반장. Workshop owner → 대표. Work team leader, squad leader of the watch duty → 작업반장. Skilled workers, trade and contract, watch, Mountain Keepers, guard unit, the head's spouse and elders → 숙련공. Apprentice → 수습. Labourers and household → 일손 |
+| Free Cities | Head → the city's title. Section Chief → 구간장. Station Foreman → 역 반장. Heir → 후계. Yangcheon Shift Leader → 교대 조장. Crossing Chief → 건널목장. Station Foreman who is also a Gangseo Wind Farm Foreman → 역 반장. Workshop owner → 대표. Work team leader, squad leader of the watch duty → 작업반장. Skilled workers, trade and contract, watch, Mountain Keepers, guard unit, the head's spouse and elders → 숙련공. Apprentice → 수습. Labourers and household → 일손 |
 | Arc | Hierophant → 교주. House Head → 가문 수장. Shelter Head → 대피소장. Maintenance Foreman → 정비 반장. house elder → 가문 원로. Rival → 가문 구성원 (a rival of the Head's siblings' or parents' generation → 가문 원로, chapter 06 section 12.4; Yi Hong-won of section 7.2). Guard Captain → 호위대장. Spokesperson → 대변인. S1 negotiator → 가문 구성원. Workshop fitters, field fitters → 정비공. Baptised fighters → 세례 신도. House levies → 세례 전 신도. Other roles → 세례 신도 if the part count is 1 or more, 세례 전 신도 if 0 |
 | Unaffiliated | 미등록 |
 
@@ -716,7 +716,7 @@ This table records which slot (title, rank, occupation) each role word used by c
 | 04 | 장터 상인, 학교 선생, 경호원, 부양 식구 | occupation person name | 등록 주민, 교사 | 장터 거래, 교육, 경호, 교육 (child) / 옷 짓기 (adult) |
 | 05 | the seven heads | section 4.4 | that title | 도시 운영 |
 | 05 | 후계자, the head's house elders and spouse | as is | 후계 / 숙련공 | house trade |
-| 05 | 구간장, 역 반장, 밭장, 교대 조장 | section 4.4, as is | as is | 구간 운영, 역 운영, 구간 운영, 도시 운영 |
+| 05 | 구간장, 역 반장, 발전 단지 반장, 교대 조장 | section 4.4, as is | as is | 구간 운영, 역 운영, 구간 운영, 도시 운영 |
 | 05 | 대표, 작업반장 | `<workshop name> 대표` (e.g. 천왕 통신 작업장 대표), 작업반장 | 대표, 작업반장 | the workshop's work (the livelihood of chapter 05 section 3) |
 | 05 | 숙련공, 수습 | occupation person name | 숙련공, 수습 | the city's work |
 | 05 | 상인 가문 사람, 시세표 서기, 계약서 서기, 짐꾼 반장, 환전상 | as is | 숙련공 | 장터 거래, 시세표 기록, 계약서 기록, 짐꾼, 환전 |
@@ -1190,7 +1190,7 @@ When task 20 revises `roster-framework.md` and the 130-132 rows to v3, it change
 
 | Now | Why | v3 |
 |---|---|---|
-| The name of the third-stage building of the Government levy chain and of the rows it produces, the name and equipment text of the Government head's escort unit, the seal name in the appearance text | They carry the Government title from before the 2026-11-13 correction and the retired electoral-district concept (선구, chapter 1 section 10) | 국회의원 호위대 본부 (Assembly Member's Guard Headquarters), 국회의원 호위 수행대 (Assembly Member's Sworn Retinue), seal of the Assembly Member's house |
+| The name of the third-stage building of the Government levy chain and of the rows it produces, the name and equipment text of the Government head's escort unit, the seal name in the appearance text | They carry the Government title from before the 2026-11-13 correction and the retired electoral-district concept (선구, chapter 1 section 10) | 국회의원 호위대 본부 (Assembly Member's Guard Headquarters), 국회의원 호위 수행대 (Assembly Member's Escort Detail), seal of the Assembly Member's house |
 | The Arc's "가문 수장 호위대" and "가문 본청" | The title of an Arc district head is House Head (chapter 1 section 8.3) | 가문 수장 호위대, 가문 본가. The name of the house levies (가문 징집병) stays as it is, as chapter 06 section 11.1 says |
 | The owner's comparison words left in the section 9.2 identity table and basis sentences (the words of the third, fifth and sixth rows of the left column of the chapter 1 section 2.4 table) | Comparison words are not used in the world's text (chapter 1 section 2.4) | the army of the ledger / the armies of cities that stand apart / there is no seat above |
 | The old title in the section 4.2 basis sentence | Same reason | Member of the National Assembly |

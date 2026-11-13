@@ -51,7 +51,7 @@ Columns: **Task** is the plan's document task number. **Basis** is the bible sec
 | slug | Category | Current title | v3 topic | New title (ko / en) | Basis |
 |---|---|---|---|---|---|
 | Building-Reuse-Geography | places | River, Gu, and Dong Building Reuse | Seoul under the snow: the basements of buried buildings, the entrance surroundings where greenhouses stand, the roads for digging fibre, a city eaten as salvage and fibre | 눈 밑의 서울 / Seoul under the Snow | 01 3.3 and 5.3-5.5, 02 2.1 and 3.4, 03 3.1 |
-| External-Theaters | places | Outside | Beyond Seoul and the blockade line: the shape of the band, crossing in a blizzard, the people who bring back power sources, the return net, what is known of what lies beyond. Nobody rules outside Seoul | 서울 밖과 봉쇄선 / Beyond Seoul: the Blockade line | 01 6.3 and 10, 02 7.1-7.3 (not the private 7.4), 07 7.1 and 7.4 |
+| External-Theaters | places | Outside | Beyond Seoul and the blockade line: the shape of the blockade zone, crossing in a blizzard, the people who bring back power sources, the return net, what is known of what lies beyond. Nobody rules outside Seoul | 서울 밖과 봉쇄선 / Beyond Seoul: the Blockade Line | 01 6.3 and 10, 02 7.1-7.3 (not the private 7.4), 07 7.1 and 7.4 |
 | Seoul-Station-Catalog | places | Rail Station Catalog Connected to Seoul | Seoul's 312 stations: real names and lines, counts per polity, station size grades and populations, the stations where markets and exchanges stand | 서울 역 목록 / Seoul Station Catalog | 01 4.3, 04 10 and 16.1, 05 2, 3 and 5.4, 06 4 and 8.6, map data (`120-map-core.sql`) |
 | Station-Interior-Construction | places | Entering the Station Interior | Inside a station: the depth bands of surface, concourse, platform and deep tunnel and their temperatures, the four limits of a station (heat, water, air, light), where people sleep and cook. There is no draft yet; task 12 writes it new | 역 안으로 / Inside a Station | 01 3.1 and 4.1-4.2, 02 3.2, 04 12, 05 10.1, 06 10.2 |
 | World-Map-Construction | places | The Structure of the World Map | How the world map is built: the 25 duchies, the lands of the three polities, seat stations, the thirteen border links | 세계 지도의 짜임 / How the World Map Is Built | bible 2.4, 01 7.4, 07 4.3 and 11.1, map data |
@@ -93,25 +93,25 @@ Columns: **Task** is the plan's document task number. **Basis** is the bible sec
 | Hostile-Group-G10 | bestiary | G10 · Bogukmun group | Hostile human groups | G10 · 보국문 월경자 / G10 · Bogungmun Perimeter-Runners | 02 5.1, G10, 07 7.4 |
 | Hostile-Group-G11 | bestiary | G11 · Gangnam Stray Humanoids | Hostile human groups | G11 · 수서 이탈자들 / G11 · Suseo Gone-Dark | 02 5.1, G11, 06 5.5 |
 | Hostile-Group-G12 | bestiary | G12 · Sinnae Deserters | Hostile human groups | G12 · 금천 보증을 잃은 사람 / G12 · Geumcheon Hands Without Surety | 02 5.1, G12, 05 3.5 and 6.3 |
-| Hostile-Group-G13 | bestiary | G13 · logistics robot arm | Old machines inside Seoul | G13 · 물류 로봇 팔 / G13 · Claw Arms | 02 6.1-6.5, G13 |
+| Hostile-Group-G13 | bestiary | G13 · Pincer Arm | Old machines inside Seoul | G13 · 물류 로봇 팔 / G13 · logistics robot arms | 02 6.1-6.5, G13 |
 
 ### 3.6 Task 15: G14-G26 (13) and new slugs
 
 | slug | Category | Current title | v3 topic | New title (ko / en) | Basis |
 |---|---|---|---|---|---|
-| Hostile-Group-G14 | bestiary | G14 · track inspection robot | Old machines inside Seoul | G14 · 선로 점검 로봇 / G14 · track inspection robots | 02 6.1-6.5, G14 |
-| Hostile-Group-G15 | bestiary | G15 · service robot | Old machines inside Seoul | G15 · 서비스 로봇 / G15 · service robots | 02 6.1-6.5, G15 |
-| Hostile-Group-G16 | bestiary | G16 · construction robot | Old machines inside Seoul | G16 · 공사 로봇 / G16 · construction robots | 02 6.1-6.5, G16 |
-| Hostile-Group-G17 | bestiary | G17 · watchtower | Blockade-line machines | G17 · 감시탑 / G17 · watchtowers | 02 6.1-6.2 and 6.6, G17, 7 |
-| Hostile-Group-G18 | bestiary | G18 · Fire-Leg Train | Blockade-line machines | G18 · 선로 무장 차량 / G18 · Tunnel-Stoppers | 02 6.6, G18 |
+| Hostile-Group-G14 | bestiary | G14 · Empty Cart | Old machines inside Seoul | G14 · 선로 점검 로봇 / G14 · track inspection robots | 02 6.1-6.5, G14 |
+| Hostile-Group-G15 | bestiary | G15 · Care Wheel | Old machines inside Seoul | G15 · 서비스 로봇 / G15 · service robots | 02 6.1-6.5, G15 |
+| Hostile-Group-G16 | bestiary | G16 · Girder Spider | Old machines inside Seoul | G16 · 공사 로봇 / G16 · construction robots | 02 6.1-6.5, G16 |
+| Hostile-Group-G17 | bestiary | G17 · One-Eye Tower | Blockade-line machines | G17 · 감시탑 / G17 · watchtowers | 02 6.1-6.2 and 6.6, G17, 7 |
+| Hostile-Group-G18 | bestiary | G18 · Fire-Leg Train | Blockade-line machines | G18 · 선로 무장 차량 / G18 · armed rail vehicles | 02 6.6, G18 |
 | Hostile-Group-G19 | bestiary | G19 · Gurgler | Blockade-line machines (some drift into Seoul) | G19 · 귀환 무인 차량 / G19 · returning unmanned ground vehicles | 02 6.1 and 6.6, G19 |
-| Hostile-Group-G20 | bestiary | G20 · Iron-Clicker | Blockade-line machines | G20 · 수리 기계 / G20 · repair machine | 02 6.6, G20 |
-| Hostile-Group-G21 | bestiary | G21 · Wall-knocker | Blockade-line machines | G21 · 땅속 진동 감지기 / G21 · Ground-Knockers | 02 6.6, G21 |
+| Hostile-Group-G20 | bestiary | G20 · Iron-Clicker | Blockade-line machines | G20 · 수리 기계 / G20 · repair machines | 02 6.6, G20 |
+| Hostile-Group-G21 | bestiary | G21 · Wall-knocker | Blockade-line machines | G21 · 땅속 진동 감지기 / G21 · buried seismic sensors | 02 6.6, G21 |
 | Hostile-Group-G22 | bestiary | G22 · Flame Lantern | Blockade-line machines | G22 · 도깨비불 / G22 · Dokkaebi Lights | 02 6.6, G22 |
-| Hostile-Group-G23 | bestiary | G23 · Udukeoni | Blockade-line machines (some drift into Seoul) | G23 · 무인 경계 초소 / G23 · Udukeoni | 02 6.1 and 6.6, G23 |
-| Hostile-Group-G24 | bestiary | G24 · Weeper | Blockade-line machines | G24 · 확성기 / G24 · Doenoemi | 02 6.6, G24 |
-| Hostile-Group-G25 | bestiary | G25 · cable inspection robot | Old machines inside Seoul | G25 · 케이블 점검 로봇 / G25 · Lamp Ants | 02 6.5, G25 |
-| Hostile-Group-G26 | bestiary | G26 · autonomous construction machine | Blockade-line machines | G26 · 자율 건설 기계 / G26 · autonomous construction machines | 02 6.6, G26 |
+| Hostile-Group-G23 | bestiary | G23 · Udukeoni | Blockade-line machines (some drift into Seoul) | G23 · 무인 경계 초소 / G23 · unmanned sentry posts | 02 6.1 and 6.6, G23 |
+| Hostile-Group-G24 | bestiary | G24 · Weeper | Blockade-line machines | G24 · 확성기 / G24 · loudspeakers | 02 6.6, G24 |
+| Hostile-Group-G25 | bestiary | G25 · Lantern Ant | Old machines inside Seoul | G25 · 케이블 점검 로봇 / G25 · cable inspection robots | 02 6.5, G25 |
+| Hostile-Group-G26 | bestiary | G26 · Iron Dinosaur | Blockade-line machines | G26 · 자율 건설 기계 / G26 · autonomous construction machines | 02 6.6, G26 |
 
 There is no new slug (section 2). Task 15 writes only the thirteen documents G14-G26.
 

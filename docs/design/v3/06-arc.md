@@ -576,13 +576,13 @@
 | 갈래 | 칭호·직업(한국어 / English) | 놓는 단계 | 가장 적은 나이 |
 |---|---|---|---|
 | 다스림 | 교주 / Hierophant [승인]. 가문 수장 / Head of the inner-circle house. 맞수(측근 가문의 다음 사람 또는 가문 수장 자리를 넘보는 사람. 칭호가 아니라 자리) / rival heir. 가문 원로(가문 수장의 형제·부모 세대) / inner-circle house elder | 교주·가문 수장·맞수 Key, 가문 원로 S1~S2 | 가문 수장은 나이 대신 부위 2(3.5절). 가문 원로 40 |
-| 대피소장·정비 반장 | 대피소장 / Shelter Head. 정비 반장 / Bench Keeper | 거점 역 정비 반장과 큰 대피소의 대피소장은 S1, 나머지 S2 | 대피소장 28, 정비 반장 25 |
-| 정비·돌봄 | 정비공 / maintenance-unit fitter. 야전 정비공 / field fitter. 간병인(앓는 세례 신도를 돌본다) / recovery carer | S2~S4 | 정비공 18 |
+| 대피소장·정비 반장 | 대피소장 / Shelter Head. 정비 반장 / Maintenance Foreman | 거점 역 정비 반장과 큰 대피소의 대피소장은 S1, 나머지 S2 | 대피소장 28, 정비 반장 25 |
+| 정비·돌봄 | 정비공 / maintenance-unit fitter. 야전 정비공 / field fitter. 간병인(앓는 세례 신도를 돌본다) / recovery caregiver | S2~S4 | 정비공 18 |
 | 싸움 | 호위대장 / Guard Captain. 세례 전투원 / baptised fighter. 가문 징집병 / house levy. 교주 호위 / Hierophant's guard | 호위대장 S1, 나머지 S2~S4 | 호위대장 30, 세례 전투원 20, 징집병 17 |
 | 물·전기·열 | 수차 정비공 / turbine mechanic. 취수구 관리인 / water intake keeper. 열펌프 정비공 / heat-pump technician. 출입구 경비원 / entrance guard | S2~S4 | 16 |
 | 먹거리 | 당화 탱크 관리인 / saccharification tank keeper. 온실 관리인 / greenhouse keeper. 버섯 재배 일꾼 / mushroom grower. 얼음 낚시꾼 / ice fisher. 부엌 일꾼 / cook | S3~S4 | 16 |
-| 교환소·교섭·기록 | 회계원(하루 충전량·정비 순번 셈표를 다룬다) / tally keeper. 교섭 담당자 / negotiator. 세례 명부 기록원 / roll keeper. 대변인(교주의 집만) / Word Keeper | 교섭 담당자와 대변인 S1~S2, 나머지 S2~S4 | 교섭 담당자 30, 대변인 22(잠정 T30-arc-11) |
-| 바깥 일 | 넝마주이 / salvager. 섬유 채집 일꾼 / fibre digger. 봉쇄선 망꾼 / rim watcher. 동력원 회수 일꾼 / power-core runner. 전령 / runner | S3~S4 | 18 |
+| 교환소·교섭·기록 | 회계원(하루 충전량·정비 순번 셈표를 다룬다) / accountant. 교섭 담당자 / negotiator. 세례 명부 기록원 / register clerk. 대변인(교주의 집만) / Spokesperson | 교섭 담당자와 대변인 S1~S2, 나머지 S2~S4 | 교섭 담당자 30, 대변인 22(잠정 T30-arc-11) |
+| 바깥 일 | 넝마주이 / salvager. 섬유 채집 일꾼 / fibre digger. 봉쇄선 망꾼 / blockade lookout. 동력원 회수 일꾼 / power-core runner. 전령 / runner | S3~S4 | 18 |
 
 (잠정 T07-56)
 
