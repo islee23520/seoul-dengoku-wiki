@@ -513,7 +513,7 @@ Basis: Bible 1, row 13 [Approved], 2.2 [Approved], 01-core 7.2 and 8.2, chapter 
 | Campaign fund | Adapt | **Heating contribution.** Electricity given to the heat and meals of the meeting of representatives. It can be taken back while the holder lives, and burns win or lose once the meeting opens (CK2 campaign fund, B-) | Chapter 05 section 2.1 item 5 (provisional T31-7) |
 | Candidacy | Adapt | One per shareholding house; no one under sixteen or with a broken seal. Taking a post in another city or another faction drops a candidate. The move of handing a rival an external office (CK2: an heir holding land cannot inherit, B-) | Chapter 05 section 2.1 item 6 (provisional T31-8) |
 | Family palace | Adapt | **Losing houses keep their workshop and seal.** They cannot be seized or taken back. If a house dies out, the remaining houses share its external offices and the other workshop with the most kept sureties becomes a new shareholding house (CK2 family palace, house replacement, B-) | Chapter 05 section 2.1 item 9 (provisional T31-11) |
-| Trade posts | Adapt | **Outside posts.** A workshop's foothold in another city's station. One per station; one for every five hands of the house (four at most). Shareholding houses of the same city quarrel over them but cannot quarrel with the holder. If the station's city closes one, it becomes a broken sheet (CK2 trade post limit, B-; CK3 S&S one per county, B) | Chapter 05 section 2.1 items 10, 11 (provisional T31-12, T31-13) |
+| Trade posts | Adapt | **External offices.** A workshop's foothold in another city's station. One per station; one for every five hands of the house (four at most). Shareholding houses of the same city quarrel over them but cannot quarrel with the holder. If the station's city closes one, it becomes a broken sheet (CK2 trade post limit, B-; CK3 S&S one per county, B) | Chapter 05 section 2.1 items 10, 11 (provisional T31-12, T31-13) |
 | Despot succession | Adapt | **The hereditary resolution (Gwanak).** The meeting of representatives changes the law so that the seat passes within one house. The title changes (Duke) and the other shareholding houses hold a grievance. The meeting remains and can send back Gwanak's sheet of the water supply contract (CK3 S&S despot succession and title change, B, unreleased design) | Chapter 05 section 2.1 item 14, section 3.7 (provisional T31-16, T31-25, T31-26) |
 | Hidden random | Adapt | **The tie-break.** Within 5 reputation, the candidate standing before the hearth at the first wind hour stands. In the game, a small hidden bonus on one candidate (CK2 hidden Respect 500, B-) | Chapter 05 section 2.1 item 15 (provisional T31-17) |
 | Trade leagues | Drop | There is no way for a league of cities to become one title (CK3 S&S, B) | Bible 2.2 [Approved] |
@@ -549,7 +549,7 @@ Basis: Bible 2.3 [Approved], 1 rows 9 and 14, 01-core 7.3 and 8.3, chapter 06 se
 | Faith (doctrines, conversion) | Adapt | The Arc is the one organised faith. Conversion's place is baptism, costing implant parts, maintenance queue places and power. Doctrine's place is the Hierophant's word (not written down; repeated until it becomes law) | Bible 1, row 9 [Approved], chapter 06 sections 2.2 and 5 |
 | Holy sites | Drop | No equivalent in the public setting | Chapter 06 section 15 is private, and this chapter does not deal with it |
 | Piety | Adapt | **The giving.** People of households that give generously move up the maintenance order sooner | Chapter 06 section 8.4 (provisional T07-38) (provisional T29-22) |
-| Gold | Adapt | Day charges and maintenance queue places | Chapter 03 section 11.3 (provisional T04-52), chapter 06 section 8.2 (provisional T07-36) |
+| Gold | Adapt | Daily charge allowances and maintenance queue places | Chapter 03 section 11.3 (provisional T04-52), chapter 06 section 8.2 (provisional T07-36) |
 | Council | Adapt | **The Council of House Heads.** It hears disputes, divides power and parts shares, and settles agreements with other polities. No votes. Decisions end with the Hierophant's word | Chapter 06 section 3.6 (provisional T07-11) |
 | Cultural divergence | Take (as setting) | The Arc's split from the Free Cities is the real case. Free City workshop speech remains at the maintenance units | 01-core 7.3 (provisional T02-101) |
 | Marriage | Take | Marriage with the Hierophant's bloodline is one of the ways to become an inner-circle house. None in 2126 | Chapter 06 section 3.2 (provisional T07-7) |
@@ -565,10 +565,10 @@ Basis: Bible 2.3 [Approved], 1 rows 9 and 14, 01-core 7.3 and 8.3, chapter 06 se
 | CK3 | Government | Free Cities | Arc |
 |---|---|---|---|
 | Passing of the turn | The named heir (handing down the seat) | The child who has shown a hand | By blood, but two parts or more |
-| Succession of the head | Acclamation by fourteen seal impressions | Reputation at the meeting of representatives (Gwanak: the bound seal) | The name the Hierophant spoke; failing that, the Council of House Heads |
+| Succession of the head | Acclamation by fourteen seal impressions | Reputation at the meeting of representatives (Gwanak: hereditary resolution) | The name the Hierophant spoke; failing that, the Council of House Heads |
 | Contract | Steps of ration share and levy quota | Contract sheets and pledges | Maintenance order and charging shares |
 | Prestige | The household's name | Surety | Blood and iron |
-| Gold | Meals, workdays | Kilos, labour hours | Day charges, maintenance queue places |
+| Gold | Meals, workdays | Kilos, labour hours | Daily charge allowances, maintenance queue places |
 | Piety | None | None | The giving |
 | Council | Ministers | Meeting of representatives (inside a city), councils (between cities) | The Council of House Heads |
 | Factions | OMO Party and Claw Party | The cities | Blood and iron |

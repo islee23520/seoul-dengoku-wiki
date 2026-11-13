@@ -97,7 +97,7 @@ The ministries of the Government Complex Seoul kept their names and seals. What 
 | Institution | Seat | What it does in 2126 |
 |---|---|---|
 | Ministry of the Interior and Safety | Government Complex Seoul | Keeps the master copy of resident registration (section 5). The state-of-disaster notices, civil defence, supervision of district offices and dong centres |
-| Ministry of Climate, Energy and Environment | Government Complex Seoul | Water and electricity. The Guui and Ttukdo intakes and the wells, water allocation by quota, the wind frames on the bridges and riverbanks, salvaged copper and cable, the working business of the water supply contract |
+| Ministry of Climate, Energy and Environment | Government Complex Seoul | Water and electricity. The Guui and Ttukdo intakes and the wells, water allocation by quota, the wind turbines on the bridges and riverbanks, salvaged copper and cable, the working business of the water supply contract |
 | Korea Forest Service | Government Complex Seoul | Firewood. Felling permits and firewood shares on Bukhansan and Dobongsan |
 | Ministry of Land, Infrastructure and Transport | Government Complex Seoul | Stations and tunnels. The stationmaster service, entrance management, handcar running on the tracks, setting station quotas |
 | Ministry of Agriculture, Food and Rural Affairs | Government Complex Seoul | Meals. Cellulosic-sugar vats and mushroom tunnels, greenhouse allocation, the fibre levy (9.3) |
@@ -423,7 +423,7 @@ Individually resolved combat (duels and fights between heroes) stays separate fr
 ### 14.3 Conscription and service
 
 - **Conscription.** Registered people who turn nineteen, men and women alike, serve eighteen months. The pre-Blackout Republic of Korea conscripted only men; the Government, short of people, calls up women too. The Ministry of National Defense registers conscription, and service is mostly in the conscript's own district unit (provisional T05-60).
-- **Alternative service.** Core occupations of skilled households (pump work teams, intake maintenance, heat-pump maintenance) do not carry rifles; they work eighteen months at the intakes or the bridge wind frames. A pump is worth more than a rifle (provisional T05-61).
+- **Alternative service.** Core occupations of skilled households (pump work teams, intake maintenance, heat-pump maintenance) do not carry rifles; they work eighteen months at the intakes or the bridge wind turbines. A pump is worth more than a rifle (provisional T05-61).
 - **Reserve and civil defence.** After service people are reservists until forty. In a crisis the district unit calls up its reservists. From forty to fifty they are civil defence, which clears entrance snow and handles sirens and shelter (provisional T05-62).
 - **Career soldiers.** NCOs and officers come from army households. An army-household child is entered in an army occupation by succession entry at sixteen, and a child who will be an officer studies two years at the Korea Military Academy at Hwarangdae (provisional T05-63).
 - **Size.** In 2126 the Government's standing force is about 4,000 career soldiers and about 2,500 serving conscripts. About 20,000 reservists can be called up. There is not that much ammunition (provisional T05-64).

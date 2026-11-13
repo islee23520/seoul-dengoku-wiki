@@ -429,7 +429,7 @@ Trades keep the occupational names of the Republic of Korea era or are named fro
 | Wind-machine wright | Raises wind turbines, knocks ice off blades, changes bearings | The Free Cities (especially Gangseo), the Government's bridges |
 | Heat-pump fitter | Handles compressors and refrigerant of ground-source heat pumps | The Free Cities |
 | Well driller | Drills wells deeper and lowers pumps | The Free Cities. The core trade of the water supply contract |
-| Turbine mechanic | Keeps the under-ice water wheels and their channels | The Arc (Jamsil), Free City work teams |
+| Turbine mechanic | Keeps the under-ice small hydro turbines and their channels | The Arc (Jamsil), Free City work teams |
 | Lineworker | Joins wire, cable and wired communication lines. The work Go Ye-jin did (bible section 3, row 2112) | All three polities |
 | Motor winder | Rewinds the coils of dead motors | The Free Cities |
 | Lathe hand | Machines shafts, fittings and gun parts from metal | The Free Cities (especially Guro) |

@@ -57,8 +57,8 @@ Stages are the current 050 values (section 4.3).
 | id | Name | Age | Stage | Assignment | Row and role | Location (real station) | Reason |
 |---|---|---|---|---|---|---|---|
 | person-0035 | Jang Useok | 55 | S1 | Free Cities | added to the Guro row of the chapter 05 table. Price-board clerk | Cheonwang | The work and the contract partners in her old record (workshop people of Guro and Cheonwang) are all in Guro. The old "polity outside Seoul" does not exist in v3, so she gets a place inside Seoul (section 7.1) (provisional T08-1) |
-| person-0038 | Heo Daon | 50 | S2 | Free Cities | added to the Guro row. Crew chief (wheels) | Cheonwang | His work is wheel maintenance at the Cheonwang depot (the Cheonwang workshop of chapter 05 section 3.4). Same as above (provisional T08-1) |
-| person-0039 | Gu Chansol | 40 | S2 | Free Cities | added to the Guro row. Crew chief (tool carrying) | Guro | His workplace is the Guro tool market. Same as above (provisional T08-1) |
+| person-0038 | Heo Daon | 50 | S2 | Free Cities | added to the Guro row. Work team leader (wheels) | Cheonwang | His work is wheel maintenance at the Cheonwang depot (the Cheonwang workshop of chapter 05 section 3.4). Same as above (provisional T08-1) |
+| person-0039 | Gu Chansol | 40 | S2 | Free Cities | added to the Guro row. Work team leader (tool carrying) | Guro | His workplace is the Guro tool market. Same as above (provisional T08-1) |
 | person-1008 | Min Ung-gi | 32 | S1 | Free Cities | added to the Guro row. Workshop owner of the Cheonwang radio workshop (T2) | Cheonwang | The former superior of the three above. His work is radio maintenance and salvage repair, and he holds a workshop that keeps humanoids. In a world where machines are scarce, the hands that keep humanoids running are in the Free Cities (chapter 1 section 5.6). Follows Q29's default (candidate head of his base district), but since the Guro head's seat is filled he goes to T2 of the same district (section 7.2) (provisional T08-2) |
 | person-1017 | Ji Yeon-hui | 26 | S1 | Arc | added to the "Hierophant's house" row of the chapter 06 table. Hierophant's guard | Jamsil | Go Ye-jin's bodyguard since 2120 (Bible section 6 [Approved], chapter 1). The Hierophant's house is at Jamsil (chapter 06 section 2.3). Follows the affiliation of Q5's default (Arc), and the location follows chapter 06: Jamsil instead of the Suseo area (provisional T08-3) |
 | person-1003 | Jo Jaepyo | 37 | S1 | kept independent | in no table | Dongjak | Section 7.4. A crossing party that crosses the blockade line from any polity's edge wherever the blizzard opens and works for whichever side pays. The Government ledger strikes off anyone who crosses the blockade line without a permit, and the only permitted crossing is the army's blockade line posting (section 7.4), so he cannot be a Government man. A Free City's crossers are Geumcheon's guard unit, bound to Geumcheon's edge and Geumcheon's contracts (chapter 05 section 3.5). The Arc counts people by the baptism roll and maintenance unit turns, so an Arc man is bound to the maintenance units' order (chapter 06 section 5.4). Belonging to none of the three is what keeps all three polities' contracts open. He stays at Dongjak, where the three polities meet, under contract (provisional T08-4) |
@@ -492,11 +492,11 @@ Occupation phrases (`occupation_ko`) are chosen from this list only, one phrase 
 | provision | 얼음 어로 | Ice fishing | 얼음 낚시꾼 / Ice fisher | GFA |
 | provision | 싹 기르기 | Sprouting | 싹 기르는 이 / Sprout grower | GFA |
 | provision | 부엌 취사 | Kitchen cooking | 부엌 일꾼 / Cook | GFA |
-| labour | 출입구 경비 | Snow-shaft keeping | 출입구 일꾼, 출입구 경비원 / Entrance worker, Entrance guard | GFA |
+| labour | 출입구 경비 | Entrance guard duty | 출입구 일꾼, 출입구 경비원 / Entrance worker, Entrance guard | GFA |
 | labour | 제설 | Snow clearing | 제설 인부 / Snow clearer | GFA |
-| labour | 땔감 벌목 | Firewood felling | 벌목꾼, 벌목꾼 / Woodcutter | GF |
-| labour | 화덕 지기 | Hearth keeping | 화덕 지기 / Hearth attendant | GFA |
-| labour | 혐기성 소화조 지기 | Methane vat keeping | 혐기성 소화조지기 / Methane keeper | GFA |
+| labour | 땔감 벌목 | Firewood felling | 벌목꾼 / Woodcutter | GF |
+| labour | 화덕 관리 | Hearth tending | 화덕 관리인 / Hearth attendant | GFA |
+| labour | 혐기성 소화조 관리 | Anaerobic digester tending | 혐기성 소화조 관리인 / Digester attendant | GFA |
 | labour | 짐꾼 | Porter | 짐꾼 / Porter | GFA |
 | labour | 옷 짓기 | Clothes making | 옷 짓는 이, 집안 살림 / Clothier, Household steward | GFA |
 | trade | 배급 집행 | Ration issuing | 배급 서기 / Ration clerk | G |
@@ -525,7 +525,7 @@ Occupation phrases (`occupation_ko`) are chosen from this list only, one phrase 
 | maintenance | 차량 정비 | Vehicle maintenance | 차량 정비공 / Vehicle fitter | GFA |
 | maintenance | 통신 정비 | Radio maintenance | 통신 정비공 / Radio fitter | GFA |
 | maintenance | 공구 제작 | Tool making | 공구 장인, 수선공 / Toolmaker, Mender | GF |
-| scout | 고물 채집 | Salvage gathering | 넝마주이, 넝마주이 / Salvager | GFA |
+| scout | 고물 채집 | Salvage gathering | 넝마주이 / Salvager | GFA |
 | scout | 섬유 채집 | Fibre gathering | 섬유 채집 일꾼, 섬유 채집 일꾼 / Fibre gatherer | GFA |
 | scout | 봉쇄선 정찰 | Edge watch | 봉쇄선 정찰병, 봉쇄선 망꾼 / Edge watcher, Blockade lookout | GFA |
 | scout | 탐사 | Survey | 탐사원 / Surveyor | GFA |
@@ -685,7 +685,7 @@ export const RANK_MODIFIER = {
 | Faction | Role → rank |
 |---|---|
 | Government | Member → 국회의원 (the President: 대통령). Dong Chief → 동장. Stationmaster → 역장. Minister → 장관. Vice Minister → 차관. Commissioner of the Korea Forest Service → 청장. Governor of the Bank of Korea → 총재. NIS Director → 원장. Head of the District Office → 구청장. Capital Defense Commander → 대령. Heir of an Assembly Member house → 후계. Ministry Director-General, Presidential Chief of Staff, secretaries, Secretaries-General of the Assembly and the parties → 서기관. Head of the medical corps, doctors among the health workers → 수련의 under 33, 전문의 above. District unit commander → 대위 (소령 at 34 or over). Capital Defense Command staff → 소령. Squad leader → 하사 under 26, 중사 above. Army soldiers → 일병 at 19, 병장 at 20 (18 months of conscript service, chapter 04 section 14.3), 하사 at 21-25, 중사 at 26-34, 상사 at 35 or over. Police officer → 경찰관. Clerks (community centre, district office, ministry, Assembly, master copy) → 서기 under 30, 주사 at 30-44, 사무관 at 45 or over. School teacher → 교사. Everyone else (skilled and labour work, market traders, dependants, spouses, kin and children of Assembly Member houses, bodyguards, coupon printers) → 등록 주민 |
-| Free Cities | Head → the city's title. Section Chief → 구간장. Station Foreman → 역 반장. Heir → 후계. Yangcheon Shift Leader → 교대 조장. Crossing Chief → 건널목장. Station Foreman who is also a Gangseo Field Chief → 역 반장. Workshop owner → 대표. Crew chief, squad leader of the watch duty → 작업반장. Skilled workers, trade and contract, watch, Mountain Keepers, guard unit, the head's spouse and elders → 숙련공. Apprentice → 수습. Labourers and household → 일손 |
+| Free Cities | Head → the city's title. Section Chief → 구간장. Station Foreman → 역 반장. Heir → 후계. Yangcheon Shift Leader → 교대 조장. Crossing Chief → 건널목장. Station Foreman who is also a Gangseo Field Chief → 역 반장. Workshop owner → 대표. Work team leader, squad leader of the watch duty → 작업반장. Skilled workers, trade and contract, watch, Mountain Keepers, guard unit, the head's spouse and elders → 숙련공. Apprentice → 수습. Labourers and household → 일손 |
 | Arc | Hierophant → 교주. House Head → 가문 수장. Shelter Head → 대피소장. Maintenance Foreman → 정비 반장. house elder → 가문 원로. Rival → 가문 구성원 (a rival of the Head's siblings' or parents' generation → 가문 원로, chapter 06 section 12.4; Yi Hong-won of section 7.2). Guard Captain → 호위대장. Spokesperson → 대변인. S1 negotiator → 가문 구성원. Workshop fitters, field fitters → 정비공. Baptised fighters → 세례 신도. House levies → 세례 전 신도. Other roles → 세례 신도 if the part count is 1 or more, 세례 전 신도 if 0 |
 | Unaffiliated | 미등록 |
 

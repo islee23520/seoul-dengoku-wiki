@@ -151,7 +151,7 @@ v3에서 바꾸지 않는 것은 README의 고정 사실이다. 사람의 이름
 | 국회의원 | `<구> 국회의원` (예: 종로구 국회의원) | `Member of the National Assembly for <District>` |
 | 종신 대통령 | `종신 대통령` | `President for Life` |
 | 자유도시 우두머리 | `<구 이름에서 '구'를 뺀 말> <칭호>` (예: 관악 공작, 동작 나루지기) | `<District stem> <Title>` (예: Dongjak Ferry Keeper). 관악만 승인된 영어 Duke of Gwanak을 쓴다 |
-| 가문 수장 | `<구 이름에서 '구'를 뺀 말> 가문 수장` (예: 송파 가문 수장) | `Head of the <District stem> Near House` |
+| 가문 수장 | `<구 이름에서 '구'를 뺀 말> 가문 수장` (예: 송파 가문 수장) | `Head of the <District stem> inner-circle house` |
 | 교주 | `교주` | `Hierophant` |
 | 정부 동장, 아크 대피소장 | `<동> 동장` / `<동> 대피소장` | `Dong Chief of <Dong>` / `Shelter Head of <Dong>` |
 | 자유도시 구간장 | `<구간 이름> 구간장` (예: 신도림 구간장) | `Section Chief of <Section>` |
@@ -460,7 +460,7 @@ v3의 **귀환망**은 바깥 기계의 봉쇄선을 넘었다 돌아오는 사�
 | governance | 구간 운영 | Section running | 구간장, 밭장 / Section Chief, Field Chief | F |
 | governance | 역 운영 | Station crew running | 역 반장 / Station Foreman | F |
 | governance | 신앙 통솔 | Leading the faith | 교주, 수석 신도 / Hierophant, First Believer | A |
-| governance | 측근 가문 통솔 | Leading a Near House | 가문 수장, 가문 원로 / Head of the Near House, Near House elder | A |
+| governance | 측근 가문 통솔 | Leading an inner-circle house | 가문 수장, 가문 원로 / Head of the inner-circle house, inner-circle house elder | A |
 | governance | 대피소 통솔 | Leading a shelter | 대피소장 / Shelter Head | A |
 | governance | 정비대 통솔 | Leading a bench | 정비 반장 / Bench Keeper | A |
 | soldier | 군 지휘 | Military command | 수도방위사령관, 구 부대 지휘관, 호위대장 / Capital Defense Commander, district unit commander, Guard Captain | GA |
@@ -482,21 +482,21 @@ v3의 **귀환망**은 바깥 기계의 봉쇄선을 넘었다 돌아오는 사�
 | medical | 응급 처치 | Emergency care | 구호원 / Medic | GFA |
 | medical | 약품 관리 | Medicine keeping | 약품 관리인 / Medicine keeper | GFA |
 | medical | 세례 신도 돌봄 | Recovery care | 간병인 / Recovery carer | A |
-| fitting | 이식 정비 | Implant maintenance | 정비공, 야전 정비공 / Bench fitter, Field fitter | AF |
+| fitting | 이식 정비 | Implant maintenance | 정비공, 야전 정비공 / Maintenance-unit fitter, Field fitter | AF |
 | fitting | 세례 집도 | Baptism fitting | 세례 집도자 / Baptism fitter | A |
 | fitting | 충전 관리 | Charging upkeep | 충전 관리인 / Charge keeper | A |
-| provision | 당화 탱크 관리 | Fibre-sugar vats | 당화 탱크 관리인 / Vat keeper | GFA |
-| provision | 온실 경작 | Light-field farming | 온실 일꾼, 온실 관리인 / Light-field worker | GFA |
-| provision | 버섯 재배 | Mushroom growing | 버섯 재배 일꾼 / Mushroom-cellar keeper | GFA |
+| provision | 당화 탱크 관리 | Saccharification tanks | 당화 탱크 관리인 / Saccharification tank keeper | GFA |
+| provision | 온실 경작 | Greenhouse farming | 온실 일꾼, 온실 관리인 / Greenhouse worker | GFA |
+| provision | 버섯 재배 | Mushroom growing | 버섯 재배 일꾼 / Mushroom grower | GFA |
 | provision | 벌레 치기 | Insect rearing | 벌레치기 / Insect keeper | GFA |
 | provision | 얼음 어로 | Ice fishing | 얼음 낚시꾼 / Ice fisher | GFA |
 | provision | 싹 기르기 | Sprouting | 싹 기르는 이 / Sprout grower | GFA |
 | provision | 부엌 취사 | Kitchen cooking | 부엌 일꾼 / Cook | GFA |
-| labour | 출입구 경비 | Snow-shaft keeping | 출입구 일꾼, 출입구 경비원 / Entrance worker, Entrance keeper | GFA |
+| labour | 출입구 경비 | Entrance guard duty | 출입구 일꾼, 출입구 경비원 / Entrance worker, Entrance guard | GFA |
 | labour | 제설 | Snow clearing | 제설 인부 / Snow clearer | GFA |
-| labour | 땔감 벌목 | Firewood felling | 벌목꾼, 벌목꾼 / Woodcutter | GF |
-| labour | 화덕 지기 | Hearth keeping | 화덕 지기 / Hearth keeper | GFA |
-| labour | 혐기성 소화조 지기 | Methane vat keeping | 혐기성 소화조지기 / Methane keeper | GFA |
+| labour | 땔감 벌목 | Firewood felling | 벌목꾼 / Woodcutter | GF |
+| labour | 화덕 관리 | Hearth tending | 화덕 관리인 / Hearth attendant | GFA |
+| labour | 혐기성 소화조 관리 | Anaerobic digester tending | 혐기성 소화조 관리인 / Digester attendant | GFA |
 | labour | 짐꾼 | Porter | 짐꾼 / Porter | GFA |
 | labour | 옷 짓기 | Clothes making | 옷 짓는 이, 집안 살림 / Clothier, Household keeper | GFA |
 | trade | 배급 집행 | Ration issuing | 배급 서기 / Ration clerk | G |
@@ -525,7 +525,7 @@ v3의 **귀환망**은 바깥 기계의 봉쇄선을 넘었다 돌아오는 사�
 | maintenance | 차량 정비 | Vehicle maintenance | 차량 정비공 / Vehicle fitter | GFA |
 | maintenance | 통신 정비 | Radio maintenance | 통신 정비공 / Radio fitter | GFA |
 | maintenance | 공구 제작 | Tool making | 공구 장인, 수선공 / Toolmaker, Mender | GF |
-| scout | 고물 채집 | Salvage gathering | 넝마주이, 넝마주이 / Salvager | GFA |
+| scout | 고물 채집 | Salvage gathering | 넝마주이 / Salvager | GFA |
 | scout | 섬유 채집 | Fibre gathering | 섬유 채집 일꾼, 섬유 채집 일꾼 / Fibre gatherer | GFA |
 | scout | 봉쇄선 정찰 | Edge watch | 봉쇄선 정찰병, 봉쇄선 망꾼 / Edge watcher, Rim watcher | GFA |
 | scout | 탐사 | Survey | 탐사원 / Surveyor | GFA |
@@ -638,18 +638,18 @@ export const CLASS_BASE = {
 | 교대 조장 | Shift Chief | F(양천) | 관리 +1 |
 | 밭장 | Field Chief | F(강서) | 관리 +1, 학식 +1 |
 | 대표 | Bench Owner | F | 관리 +1, 학식 +1 |
-| 작업반장 | Crew Chief | F | 관리 +1 |
+| 작업반장 | Work Team Leader | F | 관리 +1 |
 | 숙련공 | Hand | F | 학식 +1 |
 | 일꾼 | Labourer | F | 없음 |
 | 수습 | Apprentice | F | 없음 |
 | 교주 | Hierophant | A | 외교 +1, 학식 +2 |
-| 가문 수장 | Head of the Near House | A | 외교 +1, 음모 +1 |
-| 가문 원로 | Near House elder | A | 외교 +1, 음모 +1 |
+| 가문 수장 | Head of the inner-circle house | A | 외교 +1, 음모 +1 |
+| 가문 원로 | inner-circle house elder | A | 외교 +1, 음모 +1 |
 | 대피소장 | Shelter Head | A | 관리 +1 |
 | 정비 반장 | Bench Keeper | A | 관리 +1, 학식 +1 |
 | 호위대장 | Guard Captain | A | 군사 +1, 무용 +1 |
 | 대변인 | Word Keeper | A | 외교 +1, 학식 +1 |
-| 가문 구성원 | Near House member | A | 음모 +1 |
+| 가문 구성원 | inner-circle house member | A | 음모 +1 |
 | 정비공 | Fitter | A | 학식 +1 |
 | 세례 신도 | Baptised | A | 무용 +1 |
 | 세례 전 신도 | Unbaptised | A | 없음 |

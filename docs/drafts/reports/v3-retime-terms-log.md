@@ -15,9 +15,9 @@
 | B0 | 눈(물로 친 양) | 한 해 200 mm(7분의 1) | 한 해 350 mm(4분의 1) | 11장 2.5절 표. 대정전 전 서울 강수 약 1,400 mm의 4분의 1 |
 | B1 | 땅속 온도와 동결선 | 눈 밑 땅 표면 -10도, 동결선 35 m, 2036년 10 m, 2066년 22 m, 한 해 17 cm, 대합실 -10~-7, 승강장 -7~-4, 깊은 터널 -3~4 | 땅 표면 -8도, 동결선 33 m, 2056년 12 m, 2086년 23 m, 한 해 21 cm, 대합실 -7~-6, 승강장 -6~-2, 깊은 터널 -2~5 | 반무한 고체의 계단 냉각 T(z)=Ts+(T0-Ts)·erf(z/2√(κt)), T0=14도, Ts=-8도(14-22), κ=1×10⁻⁶ m²/s, t=80년=2.52×10⁹ s, 2√(κt)=100 m. z=3 m -7.3, 8 m -6.0, 10 m -5.5, 20 m -3.1, 25 m -2.0, 33 m -0.1, 40 m +1.4, 55 m +4.9(11장 2.5절 "10 m -6, 20 m -3, 40 m +2, 55 m +5, 경계 약 33 m"과 맞음). 동결선 깊이는 √t에 비례: 33×√(10/80)=11.7≈12 m(2056), 33×√(40/80)=23.3≈23 m(2086), 지금 속도 33/(2×80)=0.21 m/년. 11장 3.3절 7행의 35 m 기준 값(12 m, 25 m, 22 cm) 대신 B안 표의 33 m를 썼다(아래 4절) |
 | B2 | 쌓인 눈 | 평지 6~8 m, 골 10 m 넘게, 2층까지 묻힘 | 평지 7~9 m, 골 12 m 넘게, 2~3층까지 묻힘 | 남는 몫 15%(85% 승화·날림은 그대로): 350×0.15=52.5 mm/년, ×80년=4.2 m(물). 다져진 눈 밀도 0.45~0.6 → 7.0~9.3 m |
-| B3 | 1인당 바깥 열(수용력 열 계수) | 대합실 60 W, 승강장 40 W, 깊은 터널 10 W | 대합실 50 W, 승강장 36 W, 깊은 터널 10 W | 벽 손실 ∝ (안 온도 - 둘레 땅 온도). 대합실 안 3도: A 3-(-8.5)=11.5 → B 3-(-6.5)=9.5, 60×9.5/11.5=49.6≈50. 승강장 안 11도: A 16.5 → B 15, 40×15/16.5=36.4≈36. 깊은 터널 안 14도: A 13.5 → B 12.5, 10×0.93=9.3≈10 |
+| B3 | 1인당 바깥 열(수용력 열 계수) | 대합실 60 W, 승강장 40 W, 깊은 터널 10 W | 대합실 50 W, 승강장 36 W, 깊은 터널 9 W | 벽 손실 ∝ (안 온도 - 둘레 땅 온도). 대합실 안 3도: A 3-(-8.5)=11.5 → B 3-(-6.5)=9.5, 60×9.5/11.5=49.6≈50. 승강장 안 11도: A 16.5 → B 15, 40×15/16.5=36.4≈36. 깊은 터널 안 14도: A 13.5 → B 12.5, 10×12.5/13.5=9.3, 반올림해 9 W(다른 두 계수와 같은 반올림) |
 | B4 | 눈 녹이는 열 | 1인당 45 W | 1인당 43 W | 하루 10 kg: 녹임 10×334 kJ=3,340 kJ, 눈 데우기 10×2.09×9=188 kJ(A안은 ×18=376), 물 0→5도 210 kJ, 합 3,738 kJ/86,400 s=43.3 W(A안 3,926 kJ → 45.4 W) |
-| B5 | 역 계산 예(01-core 4.2절) | 서울역 4,200, 신도림 열 2,500·결과 2,000, 잠실 3,080→3,100, 충전 몫 돌리면 360명, 잠실 세례자 29% | 서울역 4,400, 신도림 열 2,780·결과 2,000, 잠실 3,420→3,400, 400명, 약 26% | 서울역: 깊은 층 1,000×10 W=10 kW, 남은 140 kW, 승강장 3,000×36=108 kW(물 4,000명 맞음), 남은 32 kW÷(36+43)=405 → 약 4,400. 신도림: 100 kW÷36=2,778, 공기 2,000이 그대로 막음. 잠실: 123 kW÷36=3,417 → 약 3,400(공간 3,750). 충전 7.2 kW를 열펌프로: 21.6-7.2=14.4 kW÷36=400. 900÷3,400=26.5% |
+| B5 | 역 계산 예(01-core 4.2절) | 서울역 4,200, 신도림 열 2,500·결과 2,000, 잠실 3,080→3,100, 충전 몫 돌리면 360명, 잠실 세례자 29% | 서울역 4,400, 신도림 열 2,780·결과 2,000, 잠실 3,420→3,400, 400명, 약 26% | 서울역: 깊은 층 1,000×9 W=9 kW, 남은 141 kW, 승강장 3,000×36=108 kW(물 4,000명 맞음), 남은 33 kW÷(36+43)=418 → 약 4,400. 신도림: 100 kW÷36=2,778, 공기 2,000이 그대로 막음. 잠실: 123 kW÷36=3,417 → 약 3,400(공간 3,750). 충전 7.2 kW를 열펌프로: 21.6-7.2=14.4 kW÷36=400. 900÷3,400=26.5% |
 | B6 | 역 등급과 인구 총계 | 환승역 1,500~3,200명, 총계 약 30만 | 환승역 1,500~3,500명, 총계 약 30만(그대로) | 잠실 3,400이 들도록 환승역 위끝만 올림. 열이 막는 역만 약 10% 풀리고(40/36=1.11), 공기·공간·물이 막는 역(신도림)과 세력 한도인 섬유(5.3절)는 그대로라 30만, 16만·7만 5천·6만 5천은 두었다 |
 | B7 | 서울 열 합계 | 바깥 열 12 MW, 열 합계 16 MW, 태우는 불 6 MW | 바깥 열 11 MW, 열 합계 15 MW, 태우는 불 5 MW | 평균 1인 바깥 열 40 W×30만=12 MW → 36 W×30만=10.8≈11 MW. 당화 탱크·부엌 4 MW 그대로. 03장: 전기에서 나는 열 10 MW는 그대로, 메탄·나무·고물 불이 6→5 MW |
 | B8 | 온실(옛 빛밭) | 1인당 90 m², 서울 27 km²(4.5%), 1 m²당 한 해 1,250 kcal(옛 밭의 3분의 1), 모자라는 열 1 W/m² | 1인당 45 m², 서울 13.5 km²(2.2%), 1 m²당 한 해 2,500 kcal(옛 밭의 3분의 2), 모자라는 열 0.5 W/m² | 빛 0.25→0.8(3.2배)이지만 안 온도 0~8도의 찬 작물이라 수확은 2배로만 잡음(옛 밭 3,750 kcal의 3분의 2). 끼니 몫 12%(하루 약 310 kcal)는 그대로: 310×365÷2,500=45 m². 30만×45 m²=13.5 km², 서울 605 km²의 2.2%. 모자라는 열은 온도 차 비례(4-(-25)=29 → 4-(-13)=17, ×0.59)와 햇빛 증가로 약 0.5 W/m²: 45 m²×0.5=23 W < 1인 날숨 열 90 W. 11장 2.4절 T33-12(지상 불빛과 열은 신호)와 지붕감 부족 때문에 넓이를 늘리지 않고 끼니 몫을 그대로 둔다 |
@@ -67,17 +67,17 @@
 | docs/design/v3/01-core.en.md:128 | came down to 35 metres over a century | came down to 33 metres over eighty years | retime(11장 3.3절 #8) + B안 파생 재계산(로그 2절 산식 B1) |
 | docs/design/v3/01-core.md:131 | 식량은 2030년 무렵 바닥났다. 2030년대 초부터 | 식량은 2050년 무렵 바닥났다. 2049~2052년부터 | retime(11장 3.3절 #10) |
 | docs/design/v3/01-core.en.md:131 | ran out around 2030. Mushroom cellars, fibre-sugar vats and light-fields went up from the early 2030s | ran out around 2050. Mushroom cellars, fibre-sugar vats and light-fields went up from 2049-2052 | retime(11장 3.3절 #10) |
-| docs/design/v3/01-core.md:172 | 대합실 60 W, 승강장 40 W, 깊은 터널 10 W | 대합실 50 W, 승강장 36 W, 깊은 터널 10 W | B안 파생 재계산(로그 2절 산식 B3) |
-| docs/design/v3/01-core.en.md:172 | concourse 60 W, platform 40 W, deep tunnel 10 W | concourse 50 W, platform 36 W, deep tunnel 10 W | B안 파생 재계산(로그 2절 산식 B3) |
+| docs/design/v3/01-core.md:172 | 대합실 60 W, 승강장 40 W, 깊은 터널 10 W | 대합실 50 W, 승강장 36 W, 깊은 터널 9 W | B안 파생 재계산(로그 2절 산식 B3) |
+| docs/design/v3/01-core.en.md:172 | concourse 60 W, platform 40 W, deep tunnel 10 W | concourse 50 W, platform 36 W, deep tunnel 9 W | B안 파생 재계산(로그 2절 산식 B3) |
 | docs/design/v3/01-core.md:173 | 눈을 녹여 쓰면 1인당 45 W를 열에 더 얹는다 | 눈을 녹여 쓰면 1인당 43 W를 열에 더 얹는다 | B안 파생 재계산(로그 2절 산식 B4) |
 | docs/design/v3/01-core.en.md:173 | Melting snow adds 45 W per person | Melting snow adds 43 W per person | B안 파생 재계산(로그 2절 산식 B4) |
 | docs/design/v3/01-core.md:176 | (잠정 T02-24)  | (잠정 T02-24. 열 계수와 눈 녹이는 열은 11장 2.5절 B안의 기온과 땅속 온도로 다시 셈했다.)  | B안 파생 재계산(로그 2절 산식 B3, B4) |
 | docs/design/v3/01-core.en.md:176 | (provisional T02-24)  | (provisional T02-24. The heat coefficients and the snow-melting heat were recomputed from the air and ground temperatures of option B, chapter 11, 2.5.)  | B안 파생 재계산(로그 2절 산식 B3, B4) |
 | docs/design/v3/01-core.md:193 | 승강장 층에 3,000명을 들이면 120 kW가 들고 | 승강장 층에 3,000명을 들이면 108 kW가 들고 | B안 파생 재계산(로그 2절 산식 B5) |
-| docs/design/v3/01-core.md:194 | 승강장 열 40 W에 눈 녹이는 열 45 W, 모두 85 W가 든다. 남은 20 kW로 약 235명을 더 들인다. | 승강장 열 36 W에 눈 녹이는 열 43 W, 모두 79 W가 든다. 남은 32 kW로 약 405명을 더 들인다. | B안 파생 재계산(로그 2절 산식 B5) |
+| docs/design/v3/01-core.md:194 | 승강장 열 40 W에 눈 녹이는 열 45 W, 모두 85 W가 든다. 남은 20 kW로 약 235명을 더 들인다. | 승강장 열 36 W에 눈 녹이는 열 43 W, 모두 79 W가 든다. 남은 33 kW로 약 418명을 더 들인다. | B안 파생 재계산(로그 2절 산식 B5) |
 | docs/design/v3/01-core.md:195 | - 결과: 약 **4,200명**. | - 결과: 약 **4,400명**. | B안 파생 재계산(로그 2절 산식 B5) |
 | docs/design/v3/01-core.en.md:193 | on the platform layer uses 120 kW | on the platform layer uses 108 kW | B안 파생 재계산(로그 2절 산식 B5) |
-| docs/design/v3/01-core.en.md:194 | needs 40 W of platform heat plus 45 W for melting snow, 85 W in all. The remaining 20 kW adds about 235 people. | needs 36 W of platform heat plus 43 W for melting snow, 79 W in all. The remaining 32 kW adds about 405 people. | B안 파생 재계산(로그 2절 산식 B5) |
+| docs/design/v3/01-core.en.md:194 | needs 40 W of platform heat plus 45 W for melting snow, 85 W in all. The remaining 20 kW adds about 235 people. | needs 36 W of platform heat plus 43 W for melting snow, 79 W in all. The remaining 33 kW adds about 418 people. | B안 파생 재계산(로그 2절 산식 B5) |
 | docs/design/v3/01-core.en.md:195 | - Result: about **4,200 people**. | - Result: about **4,400 people**. | B안 파생 재계산(로그 2절 산식 B5) |
 | docs/design/v3/01-core.md:201 | - 계산: 공간 2,250명, 열 2,500명, | - 계산: 공간 2,250명, 열 2,780명, | B안 파생 재계산(로그 2절 산식 B5) |
 | docs/design/v3/01-core.en.md:201 | - Working: space 2,250 people, heat 2,500, | - Working: space 2,250 people, heat 2,780, | B안 파생 재계산(로그 2절 산식 B5) |
@@ -4414,3 +4414,94 @@
 - **11장 4.4절의 다른 고칠 것**(04~06장 생활 절의 지상 불빛 금기, 03장 8절의 휴머노이드 수 근거, 07장 12절과 130~132의 겉모습 문구)은 과제 38 2부의 몫이라 이 커밋에 넣지 않았다. 다만 01-core 5.3절 온실 문단에 금기를 한 문장 적었다.
 
 합계: 날짜·겨울 188건, 용어 4173건.
+
+## 5. 검토 막는 점 고침 (파일:줄, 옛 값, 새 값, 까닭)
+
+과제 35a 검토에서 나온 막는 점 8개를 고쳤다. 1절 B3·B5와 2절 01-core 172·194줄 행의 새 값은 이 고침(깊은 터널 9 W)에 맞춰 바꿔 두었다. 이 고침도 줄 안에서만 이루어져 줄 번호는 그대로다.
+
+| 파일:줄 | 옛 값 | 새 값 | 까닭 |
+|---|---|---|---|
+| docs/design/v3/05-free-city.md:79 | 셋, 세습을 결의하음 | 셋, 세습을 결의함 | 용어 102 기계 치환 뒤 어형 바로잡기(검토 막는 점 1) |
+| docs/design/v3/05-free-city.md:559 | 세습을 결의했이다 | 세습을 결의했다 | 용어 102 기계 치환 뒤 어형 바로잡기(검토 막는 점 1) |
+| docs/design/v3/05-free-city.md:141 | 다른 두 지분 가문은 묶인 도장을 잊지 않는다 | 다른 두 지분 가문은 세습 결의를 잊지 않는다 | 용어 102 변이형(검토 막는 점 2) |
+| docs/design/v3/09-ck3-systems.md:568 | (관악은 묶인 도장) | (관악은 세습 결의) | 용어 102 변이형(검토 막는 점 2) |
+| docs/design/v3/05-free-city.en.md:79 | three, seal bound | three, hereditary resolution | 용어 102 변이형(검토 막는 점 2) |
+| docs/design/v3/05-free-city.en.md:141 | do not forget the bound seal | do not forget the hereditary resolution | 용어 102 변이형(검토 막는 점 2) |
+| docs/design/v3/09-ck3-systems.en.md:568 | (Gwanak: the bound seal) | (Gwanak: hereditary resolution) | 용어 102 변이형(검토 막는 점 2) |
+| docs/design/v3/07-people-and-war.md:498 | \| 화덕 지기 \| Hearth keeping \| 화덕 지기 / Hearth keeper \| | \| 화덕 관리 \| Hearth tending \| 화덕 관리인 / Hearth attendant \| | 용어 201(화덕 관리인) 띄어 쓴 꼴, -지기 금지(검토 막는 점 3) |
+| docs/design/v3/07-people-and-war.en.md:498 | \| 화덕 지기 \| Hearth keeping \| 화덕 지기 / Hearth attendant \| | \| 화덕 관리 \| Hearth tending \| 화덕 관리인 / Hearth attendant \| | 용어 201(화덕 관리인) 띄어 쓴 꼴, -지기 금지(검토 막는 점 3) |
+| docs/design/v3/07-people-and-war.md:499 | \| 혐기성 소화조 지기 \| Methane vat keeping \| 혐기성 소화조지기 / Methane keeper \| | \| 혐기성 소화조 관리 \| Anaerobic digester tending \| 혐기성 소화조 관리인 / Digester attendant \| | 용어 28 적용 뒤 생긴 -지기 조어 정리(검토 막는 점 3) |
+| docs/design/v3/07-people-and-war.en.md:499 | \| 혐기성 소화조 지기 \| Methane vat keeping \| 혐기성 소화조지기 / Methane keeper \| | \| 혐기성 소화조 관리 \| Anaerobic digester tending \| 혐기성 소화조 관리인 / Digester attendant \| | 용어 28 적용 뒤 생긴 -지기 조어 정리(검토 막는 점 3) |
+| docs/design/v3/03-technology.md:134 | 출입구 지기 | 출입구 경비원 | 용어 168(출입구 경비원) 띄어 쓴 꼴(검토 막는 점 3) |
+| docs/design/v3/07-people-and-war.md:497 | 벌목꾼, 벌목꾼 / | 벌목꾼 / | 치환 뒤 겹친 말 하나로(검토 막는 점 4) |
+| docs/design/v3/07-people-and-war.md:528 | 넝마주이, 넝마주이 / | 넝마주이 / | 치환 뒤 겹친 말 하나로(검토 막는 점 4) |
+| docs/design/v3/07-people-and-war.en.md:497 | 벌목꾼, 벌목꾼 / | 벌목꾼 / | 치환 뒤 겹친 말 하나로(검토 막는 점 4) |
+| docs/design/v3/07-people-and-war.en.md:528 | 넝마주이, 넝마주이 / | 넝마주이 / | 치환 뒤 겹친 말 하나로(검토 막는 점 4) |
+| docs/design/v3/07-people-and-war.md:154 | `Head of the <District stem> Near House` | `Head of the <District stem> inner-circle house` | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/07-people-and-war.md:463 | Leading a Near House \| 가문 수장, 가문 원로 / Head of the Near House, Near House elder | Leading an inner-circle house \| 가문 수장, 가문 원로 / Head of the inner-circle house, inner-circle house elder | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/07-people-and-war.md:485 | Bench fitter | Maintenance-unit fitter | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/07-people-and-war.md:488 | Fibre-sugar vats \| 당화 탱크 관리인 / Vat keeper | Saccharification tanks \| 당화 탱크 관리인 / Saccharification tank keeper | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/07-people-and-war.md:489 | Light-field farming \| 온실 일꾼, 온실 관리인 / Light-field worker | Greenhouse farming \| 온실 일꾼, 온실 관리인 / Greenhouse worker | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/07-people-and-war.md:490 | Mushroom-cellar keeper | Mushroom grower | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/07-people-and-war.md:495 | Snow-shaft keeping | Entrance guard duty | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/07-people-and-war.md:495 | Entrance keeper | Entrance guard | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/07-people-and-war.md:641 | \| Crew Chief \| | \| Work Team Leader \| | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/07-people-and-war.md:646 | \| Head of the Near House \| | \| Head of the inner-circle house \| | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/07-people-and-war.md:647 | \| Near House elder \| | \| inner-circle house elder \| | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/07-people-and-war.md:652 | \| Near House member \| | \| inner-circle house member \| | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/06-arc.md:578 | 가문 수장 / Head of the Near House. | 가문 수장 / Head of the inner-circle house. | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/06-arc.md:578 | / Near House elder | / inner-circle house elder | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/06-arc.md:580 | / bench fitter. | / maintenance-unit fitter. | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/06-arc.md:582 | / water-wheel keeper. | / turbine mechanic. | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/06-arc.md:582 | / intake keeper. | / water intake keeper. | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/06-arc.md:582 | / heat-pump keeper. | / heat-pump technician. | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/06-arc.md:582 | / entrance keeper | / entrance guard | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/06-arc.md:583 | / fibre-sugar vat keeper. | / saccharification tank keeper. | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/06-arc.md:583 | / light-field keeper. | / greenhouse keeper. | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/06-arc.md:583 | / mushroom-cellar keeper. | / mushroom grower. | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/01-core.md:467 | \| Head of the Near House \| | \| Head of the inner-circle house \| | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/01-core.md:468 | \| the Seat of the Four Near Houses \| | \| the Council of House Heads \| | 한국어 파일의 영어 열을 12a 새 영어·영어 미러에 맞춤(검토 막는 점 5) |
+| docs/design/v3/04-government.en.md:100 | the wind frames on the bridges | the wind turbines on the bridges | 용어 24 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/04-government.en.md:426 | bridge wind frames | bridge wind turbines | 용어 24 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/05-free-city.en.md:60 | **Outside posts.** | **External offices.** | 용어 101 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/09-ck3-systems.en.md:516 | **Outside posts.** | **External offices.** | 용어 101 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/05-free-city.en.md:261 | **Full packs.** | **Charged battery packs.** | 용어 9 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/05-free-city.en.md:378 | Wind field people | Wind farm people | 용어 25 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/05-free-city.en.md:382 | Market house people | Merchant house people | 용어 125 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/05-free-city.en.md:525 | Market house people | Merchant house people | 용어 125 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/06-arc.en.md:351 | \| Maintenance turns \| | \| Maintenance queue places \| | 용어 20 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/06-arc.en.md:424 | **Part-count stitches.** | **Part-marking stitches.** | 용어 177 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/06-arc.en.md:247 | feeds the person first from one pot (10.3) | feeds the person first from its own pot and becomes their one-pot kin (10.3) | 용어 180 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/06-arc.en.md:465 | is fed first from one pot by the household of the fitter who fitted them. From then on the two households call each other "one pot" | is fed first from the household pot of the fitter who fitted them. From then on the two households call each other "one-pot kin" | 용어 180 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/06-arc.en.md:561 | \| Exchange posts, negotiation, records \| | \| Exchanges, negotiation, records \| | 용어 16 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/06-arc.en.md:584 | \| Exchange posts, negotiation, records \| | \| Exchanges, negotiation, records \| | 용어 16 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/06-arc.en.md:584 | maintenance-turn tallies | maintenance queue place tallies | 용어 20 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/06-arc.en.md:112 | The unbaptised also eat | Unbaptised believers also eat | 용어 161 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/06-arc.en.md:204 | ### 5.5 The unbaptised | ### 5.5 Unbaptised believers | 용어 161 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/06-arc.en.md:206 | They are called the **unbaptised** (세례 전 신도) | They are called **unbaptised believers** (세례 전 신도) | 용어 161 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/06-arc.en.md:208 | - The unbaptised are Arc people. | - Unbaptised believers are Arc people. | 용어 161 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/06-arc.en.md:210 | The unbaptised are treated | Unbaptised believers are treated | 용어 161 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/06-arc.en.md:259 | - The unbaptised are laid | - Unbaptised believers are laid | 용어 161 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/06-arc.en.md:377 | - The unbaptised take | - Unbaptised believers take | 용어 161 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/06-arc.en.md:438 | \| The unbaptised \| | \| Unbaptised believers \| | 용어 161 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/06-arc.en.md:453 | The unbaptised go to | Unbaptised believers go to | 용어 161 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/07-people-and-war.en.md:60 | Crew chief (wheels) | Work team leader (wheels) | 용어 108 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/07-people-and-war.en.md:61 | Crew chief (tool carrying) | Work team leader (tool carrying) | 용어 108 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/07-people-and-war.en.md:688 | Crew chief, squad leader | Work team leader, squad leader | 용어 108 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/07-people-and-war.en.md:495 | Snow-shaft keeping | Entrance guard duty | 용어 33 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/09-ck3-systems.en.md:552 | Day charges and maintenance queue places | Daily charge allowances and maintenance queue places | 하루 충전량 영어 미러를 daily charge allowance로 맞춤(검토 막는 점 6) |
+| docs/design/v3/09-ck3-systems.en.md:571 | Day charges, maintenance queue places | Daily charge allowances, maintenance queue places | 하루 충전량 영어 미러를 daily charge allowance로 맞춤(검토 막는 점 6) |
+| docs/design/v3/01-core.en.md:496 | build the under-ice water wheels at the Jamsil weir | build the under-ice small hydro turbines at the Jamsil weir | 용어 27 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/03-technology.en.md:432 | Keeps the under-ice water wheels and their channels | Keeps the under-ice small hydro turbines and their channels | 용어 27 영어 미러에 새 영어 적용(검토 막는 점 6) |
+| docs/design/v3/01-core.md:172 | 깊은 터널 10 W | 깊은 터널 9 W | B안 파생 재계산(로그 1절 산식 B3·B5, 깊은 터널 9.3 → 9 W 반올림, 검토 막는 점 7) |
+| docs/design/v3/01-core.en.md:172 | deep tunnel 10 W | deep tunnel 9 W | B안 파생 재계산(로그 1절 산식 B3·B5, 깊은 터널 9.3 → 9 W 반올림, 검토 막는 점 7) |
+| docs/design/v3/01-core.md:191 | 1,000 × 10 W = 10 kW다 | 1,000 × 9 W = 9 kW다 | B안 파생 재계산(로그 1절 산식 B3·B5, 깊은 터널 9.3 → 9 W 반올림, 검토 막는 점 7) |
+| docs/design/v3/01-core.en.md:191 | 1,000 × 10 W = 10 kW. | 1,000 × 9 W = 9 kW. | B안 파생 재계산(로그 1절 산식 B3·B5, 깊은 터널 9.3 → 9 W 반올림, 검토 막는 점 7) |
+| docs/design/v3/01-core.md:193 | 남은 열 140 kW로 | 남은 열 141 kW로 | B안 파생 재계산(로그 1절 산식 B3·B5, 깊은 터널 9.3 → 9 W 반올림, 검토 막는 점 7) |
+| docs/design/v3/01-core.en.md:193 | the remaining 140 kW | the remaining 141 kW | B안 파생 재계산(로그 1절 산식 B3·B5, 깊은 터널 9.3 → 9 W 반올림, 검토 막는 점 7) |
+| docs/design/v3/01-core.md:194 | 남은 32 kW로 약 405명을 | 남은 33 kW로 약 418명을 | B안 파생 재계산(로그 1절 산식 B3·B5, 깊은 터널 9.3 → 9 W 반올림, 검토 막는 점 7) |
+| docs/design/v3/01-core.en.md:194 | The remaining 32 kW adds about 405 people. | The remaining 33 kW adds about 418 people. | B안 파생 재계산(로그 1절 산식 B3·B5, 깊은 터널 9.3 → 9 W 반올림, 검토 막는 점 7) |
+| docs/design/v3/01-core.md:273 | 빛이 넉넉해져 같은 넓이에서 더 거두지만 온실을 더 넓히지는 않는다. 지붕감이 모자라고, 지상에 불빛과 열을 드러내지 말라는 금기가 있기 때문이다. | 빛이 넉넉해져 같은 끼니 몫을 옛 넓이의 절반에서 거둔다(11장 2.5절의 "빛이 늘면 온실의 몫이 커진다"는 넓이당 수확이 커지는 것으로 반영한다. 잠정 T02-36). 지붕감이 모자라고 지상에 불빛과 열을 드러내지 말라는 금기가 있어, 남는 넓이로 온실을 늘리지 않고 오히려 줄였다. | 본문과 수치(1인당 90 → 45 m²) 맞춤, 11장 2.5절 "몫이 커진다"를 넓이당 수확으로 명시(검토 막는 점 8) |
+| docs/design/v3/01-core.en.md:273 | With more light the same area yields more, but the greenhouses are not widened: roofing is short, and there is a taboo against showing light and heat on the surface. | With more light the same share of the diet is grown on half the old area (the "more light enlarges the greenhouse share" of chapter 11, 2.5 is realised as a larger yield per area; provisional T02-36). Roofing is short and there is a taboo against showing light and heat on the surface, so the spared area was not used to widen the greenhouses; they were made smaller instead. | 본문과 수치(1인당 90 → 45 m²) 맞춤, 11장 2.5절 "몫이 커진다"를 넓이당 수확으로 명시(검토 막는 점 8) |
+
+합계: 검토 고침 82건.

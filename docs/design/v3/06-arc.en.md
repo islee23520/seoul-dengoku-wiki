@@ -109,7 +109,7 @@ Beside the title ladder the Arc has a ladder of part count (01-core 8.3). They i
 | House Head | 2 | One who does not show the faith in the body does not hold a district |
 | Shelter Head | 1 | Keeps the baptismal list of the shelter's people |
 | Maintenance Foreman | 3 | Before opening another's body one's own must have been opened |
-| Everyone else | 0 | The unbaptised also eat and work in the Arc (5.5) |
+| Everyone else | 0 | Unbaptised believers also eat and work in the Arc (5.5) |
 
 Because of this table, a Maintenance Foreman with more parts than the House Head is common in the Arc. A fitter with many parts going ahead of an inner-circle house cousin in the maintenance queue (01-core 7.3) comes from here. People call it **blood and iron**: the side that wants blood to decide, and the side that wants the iron in the body to decide (provisional T02-57).
 
@@ -201,13 +201,13 @@ Each station keeps a list of baptised believers: name, house, part count, baptis
 
 Someone not on a baptism register may trade, eat and work in the Arc, but cannot ask for a place in the maintenance queue.
 
-### 5.5 The unbaptised
+### 5.5 Unbaptised believers
 
-Five in six Arc people are not baptised. They are called the **unbaptised** (세례 전 신도): children, newcomers, those whose bodies cannot take the machine, and those whose turn has not come (provisional T07-21).
+Five in six Arc people are not baptised. They are called **unbaptised believers** (세례 전 신도): children, newcomers, those whose bodies cannot take the machine, and those whose turn has not come (provisional T07-21).
 
-- The unbaptised are Arc people. The inner-circle house feeds them, and their names go on the Shelter Head's shelter register instead of a baptism register.
+- Unbaptised believers are Arc people. The inner-circle house feeds them, and their names go on the Shelter Head's shelter register instead of a baptism register.
 - At the calling they answer with name and house. They do not speak in the faith's place.
-- They cannot hold another faith. The Arc replaced all earlier religions [Approved]. The unbaptised are treated not as unbelievers but as people not yet counted.
+- They cannot hold another faith. The Arc replaced all earlier religions [Approved]. Unbaptised believers are treated not as unbelievers but as people not yet counted.
 
 ### 5.6 Whose are the parts
 
@@ -244,7 +244,7 @@ The Arc has no separate house of gathering. The faith's places are the front of 
 | Calling | every day, first shift | The Maintenance Foreman calls the baptism register; baptised believers answer with name and part count, unbaptised believers with name and house |
 | Fitting day | a set day for each person | The person goes up to the maintenance unit to have the parts tended. Family come along and sit beside them |
 | Baptism | baptism day | 5.2 |
-| Food for the newly baptised | while ailing after baptism | The fitter's household feeds the person first from one pot (10.3) |
+| Food for the newly baptised | while ailing after baptism | The fitter's household feeds the person first from its own pot and becomes their one-pot kin (10.3) |
 | Memory calling | first shift after a believer dies | The station speaks the dead person's name and last part count together, once. After that the name is not erased from the baptism register; a line is drawn through it |
 | First day of the short-daylight half | once a year | The Council of House Heads (3.6) meets, and each seat station calls again the names of that year's dead |
 
@@ -256,7 +256,7 @@ What is public is this (provisional T07-26).
 
 - The parts return to the maintenance unit, are reworked, and go into the next baptism. Parts are scarce, so this is a large share of the Arc's parts (8.4).
 - The body is carried to the surface and laid in the shelter's snowfield. In the cold it does not rot and stays frozen (01-core 5.5). Families keep not a grave but a name and a part count.
-- The unbaptised are laid in the same snowfield. The brains of unbaptised believers, however, are not sealed.
+- Unbaptised believers are laid in the same snowfield. The brains of unbaptised believers, however, are not sealed.
 
 ### 6.4 What is said
 
@@ -348,7 +348,7 @@ This section writes only **what is needed** to keep a machine body alive. What t
 | Need | Why | Where the Arc gets it |
 |---|---|---|
 | Electricity | Charging parts; 8 W per baptised person on average (01-core 4.2) | The Jamsil weir wheels, bought power sources, and wind-turbine power bought from the Free City side. About 0.7 MW for the whole Arc |
-| Maintenance turns | Parts are tended at the maintenance unit on every fitting day | The hands of Maintenance Foremen and fitters. The most precious thing in the Arc |
+| Maintenance queue places | Parts are tended at the maintenance unit on every fitting day | The hands of Maintenance Foremen and fitters. The most precious thing in the Arc |
 | Parts | Worn ones are replaced | Parts returned from the dead, salvage, machined parts bought from the Free Cities, pieces of war machines broken outside |
 | Medicine and care | While the body takes the machine, and when it cannot | Little. One of the scarcest things |
 | Warmth | The iron in the body draws the cold inward | Sleeping places on the deep layers; insulated sleeves (9) |
@@ -374,7 +374,7 @@ Each household gives the maintenance unit a share of what is usable in the salva
 Scarcity passes work from parents to children [Approved, Bible 1 row 12]. In the Arc this is sharper.
 
 - A fitter's child grows up beside the tools and takes the first baptism early. Fitter households almost always stay fitter households.
-- The unbaptised take the heavy shifts: carrying batteries, clearing tunnels, entrance duty, stirring the saccharification tanks.
+- Unbaptised believers take the heavy shifts: carrying batteries, clearing tunnels, entrance duty, stirring the saccharification tanks.
 - The baptised take the skilled work. One fitted with a useful part is expected to use it for the station.
 - inner-circle house people take ruling and fighting.
 
@@ -421,7 +421,7 @@ The Arc adds one rule. **Parts must be seen and reached.** A fitter must be able
 
 ### 9.2 Marks
 
-- **Part-count stitches.** One line of thread on the right collar for each part, showing above the scarf.
+- **Part-marking stitches.** One line of thread on the right collar for each part, showing above the scarf.
 - **house armband.** A band on the upper arm. Its ground is the Arc's red, and each inner-circle house sews a different pattern on it (Seocho a diagonal, Gangnam two horizontal lines, Songpa a wave, Gangdong vertical lines).
 - **Insulated sleeves.** On the surface every part is wrapped in a padded sleeve, because the iron in the body draws the cold. Family usually knit them from scrap fibre. Baring a part on the surface is a fighter's habit or foolishness.
 
@@ -435,7 +435,7 @@ The Arc adds one rule. **Parts must be seen and reached.** A fitter must be able
 | Heads and inner-circle house people | Dark fitted coat, a slit at every part, the house pattern on the left collar | Long lined coat, fur collar, warmed sleeves over the parts |
 | Maintenance Foremen, fitters | Heavy apron over a quilted shirt, sleeves rolled or tied. Burn marks on the apron | Rarely go up; the maintenance unit cannot spare them |
 | The baptised | Quilted jacket with slits, part-marking stitches on the right collar | Felt coat, padded over-trousers, insulated sleeves on every part |
-| The unbaptised | Wool and felt layers with the slits sewn shut, no stitches | The thickest coats in the Arc, since they take entrance duty and surface work |
+| Unbaptised believers | Wool and felt layers with the slits sewn shut, no stitches | The thickest coats in the Arc, since they take entrance duty and surface work |
 | Baptised fighters | Coat cut short with shoulders and knees opened. Sleeves fitted tight on the parts, closed with leather straps that one hand can undo | The same with a fur over-layer. The part count painted on collar and helmet both |
 
 (provisional T07-44)
@@ -450,7 +450,7 @@ A station's day is three shifts set by the maintenance unit. While the maintenan
 
 | Shift | What happens |
 |---|---|
-| First shift | Begins with the calling (6.2). The maintenance unit's busiest time. The unbaptised go to the entrances and saccharification tanks |
+| First shift | Begins with the calling (6.2). The maintenance unit's busiest time. Unbaptised believers go to the entrances and saccharification tanks |
 | Second shift | The inner-circle house stores hand out the day's shares. Stations with an exchange receive outsiders. Children learn tool names and counting beside the maintenance unit |
 | Third shift | Lights are turned down. One maintenance unit stays lit, and the ailing are tended |
 
@@ -462,7 +462,7 @@ The deeper, the warmer (01-core 3.1). inner-circle house people and fitter house
 
 Meals are plain and hot: cellulosic-sugar porridge, yeast cake, fried larvae, deep-layer mushroom soup, and fish taken through holes in the ice on the Amsa and Jamsil banks. Greenhouses are small, so greens are precious, and bean sprouts and barley shoots fill their place.
 
-The Arc has a custom of its own: someone ailing after a fresh baptism is fed first from one pot by the household of the fitter who fitted them. From then on the two households call each other "one pot" (provisional T07-47).
+The Arc has a custom of its own: someone ailing after a fresh baptism is fed first from the household pot of the fitter who fitted them. From then on the two households call each other "one-pot kin" (provisional T07-47).
 
 ### 10.4 Marriage and children
 
@@ -558,7 +558,7 @@ Chapter 07 section 3.2 adds the independent Ji Yeon-hui (person-1017) to the S1 
 
 Eight groups. The titles and occupation names used in each group are in 12.4.
 
-| Place | Ruling | Shelter Heads, Maintenance Foremen | Fitting and care | Fighting | Water, power, heat | Food | Exchange posts, negotiation, records | Outside work | Total |
+| Place | Ruling | Shelter Heads, Maintenance Foremen | Fitting and care | Fighting | Water, power, heat | Food | Exchanges, negotiation, records | Outside work | Total |
 |---|---|---|---|---|---|---|---|---|---|
 | The Hierophant's household | 1 | 0 | 3 | 3 | 0 | 1 | 4 | 0 | 12 |
 | Seocho-gu | 5 | 12 | 12 | 12 | 6 | 10 | 9 | 6 | 72 |
@@ -581,7 +581,7 @@ Each district leans differently. Seocho has many in exchange and negotiation bec
 | Fighting | 호위대장 / Guard Captain. 세례 전투원 / baptised fighter. 가문 징집병 / house levy. 교주 호위 / Hierophant's guard | Guard Captain S1, the rest S2-S4 | Guard Captain 30, baptised fighter 20, levy 17 |
 | Water, power, heat | 수차 정비공 / turbine mechanic. 취수구 관리인 / water intake keeper. 열펌프 정비공 / heat-pump technician. 출입구 경비원 / entrance guard | S2-S4 | 16 |
 | Food | 당화 탱크 관리인 / saccharification tank keeper. 온실 관리인 / greenhouse keeper. 버섯 재배 일꾼 / mushroom grower. 얼음 낚시꾼 / ice fisher. 부엌 일꾼 / cook | S3-S4 | 16 |
-| Exchange posts, negotiation, records | 회계원 (handles daily charge allowance and maintenance-turn tallies) / accountant. 교섭 담당자 / negotiator. 세례 명부 기록원 / register clerk. 대변인 (household only) / Spokesperson | Negotiators and Spokespersons S1-S2, the rest S2-S4 | negotiator 30, Spokesperson 22 (provisional T30-arc-11) |
+| Exchanges, negotiation, records | 회계원 (handles daily charge allowance and maintenance queue place tallies) / accountant. 교섭 담당자 / negotiator. 세례 명부 기록원 / register clerk. 대변인 (household only) / Spokesperson | Negotiators and Spokespersons S1-S2, the rest S2-S4 | negotiator 30, Spokesperson 22 (provisional T30-arc-11) |
 | Outside work | 넝마주이 / salvager. 섬유 채집 일꾼 / fibre digger. 봉쇄선 망꾼 / blockade lookout. 동력원 회수 일꾼 / power-core runner. 전령 / runner | S3-S4 | 18 |
 
 (provisional T07-56)
