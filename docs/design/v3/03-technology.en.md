@@ -7,7 +7,7 @@ How to read:
 - **[Approved]** marks text carried over unchanged from the skeleton in `docs/CANON-BIBLE.md`.
 - **(provisional T04-n)** marks something invented in this chapter. Every one is listed under the same number in `docs/drafts/reports/v3-ledger-parts/t04.md`. None is approved canon until the owner answers.
 - The "Basis" line at the head of each section names the skeleton rows and 01-core sections it builds on. "01-core 5.1" means section 5.1 of `docs/design/v3/01-core.md`.
-- No 01-core figure is changed. This chapter uses as given: Seoul's electricity of about 5 MW, outside heat of about 12 MW, about 4 MW of heat for fibre-sugar vats and kitchens, about 16 MW of heat in total (01-core 5.1); an average charging draw of 8 W per baptised person and 7.2 kW for Jamsil's 900 baptised (01-core 4.2); and faction populations of about 160,000, 75,000 and 65,000 (01-core 4.3).
+- No 01-core figure is changed. This chapter uses as given: Seoul's electricity of about 5 MW, outside heat of about 11 MW, about 4 MW of heat for fibre-sugar vats and kitchens, about 15 MW of heat in total (01-core 5.1, option B); an average charging draw of 8 W per baptised person and 7.2 kW for Jamsil's 900 baptised (01-core 4.2); and faction populations of about 160,000, 75,000 and 65,000 (01-core 4.3).
 - The research consulted (`docs/research/w2v-tech-scarcity.md`) and the old documents (`docs/drafts/Cyberware-and-Scarcity.ko.md` and others) are not a basis. Real facts of prosthetic medicine, handloading and drone warfare were used only to keep the chosen figures plausible.
 - Cyberware is described only by body region and function. No individual part is named (bible section 1, row 14).
 
@@ -28,7 +28,7 @@ Technology in Seoul in 2126 does not divide into "there" and "gone". It divides 
 
 These four grades are the rule of the whole chapter. **What iron, copper and hands can do, Seoul makes. What needs chips or chemistry, Seoul only uses and loses.** So a machine lives as long as the first "cannot make" part inside it. A motor can be rewound again and again, but when the board that drives it dies, the machine ends or is lowered to one worked by hand.
 
-In the hundred years since the Great Blackout the "cannot make" column has not shrunk. What people learned was not how to make new things but how to use less and keep things alive longer. As 01-core 11 item 2 says, every technology in this chapter is either a means of easing a station's capacity limits (space, heat, water, air) or a weapon that guards those means.
+In the eighty years since the Great Blackout the "cannot make" column has not shrunk. What people learned was not how to make new things but how to use less and keep things alive longer. As 01-core 11 item 2 says, every technology in this chapter is either a means of easing a station's capacity limits (space, heat, water, air) or a weapon that guards those means.
 
 ## 2. What still runs: the electricity and heat budget
 
@@ -63,7 +63,7 @@ Seoul's steady electricity of about 5 MW comes from these sources (provisional T
 
 (provisional T04-4)
 
-The heat balances like this. The heat pumps' heat of about 7.5 MW and the remaining electricity of about 2.5 MW almost all end as heat inside the stations, about 10 MW. Methane fire, wood fire and junk burning add about 6 MW, for about 16 MW. That equals the sum in 01-core 5.1 of about 12 MW of outside heat and about 4 MW for fibre-sugar vats and kitchens.
+The heat balances like this. The heat pumps' heat of about 7.5 MW and the remaining electricity of about 2.5 MW almost all end as heat inside the stations, about 10 MW. Methane fire, wood fire and junk burning add about 5 MW, for about 15 MW. That equals the sum in 01-core 5.1 of about 11 MW of outside heat and about 4 MW for fibre-sugar vats and kitchens.
 
 The table says two things. First, half of Seoul's electricity goes into warming people. Lighting one more lamp means running one less heat pump. Second, charging the machines worn on bodies is only 2% of Seoul's electricity. It becomes politics anyway because that 2% sits almost entirely on one polity's power, the Jamsil weir water wheels (4.4).
 
@@ -72,7 +72,7 @@ The table says two things. First, half of Seoul's electricity goes into warming 
 Cold is the enemy of batteries. This world has three battery rules (provisional T04-5).
 
 1. **No charging below freezing.** A battery charged below 0 degrees is damaged inside and, at worst, catches fire inside. So all charging happens on the platform layer (8 to 14 degrees where people live) or the deep-tunnel layer (12 to 16 degrees) (01-core 3.1). Charging racks on the concourse layer (0 to 6 degrees) always cause trouble.
-2. **On the surface you get half.** At minus 18 degrees on the surface a battery gives back little more than half of what it took in while warm. Machines and people going up carry batteries against the body or wrap them to keep them warm.
+2. **On the surface you get half.** At the January surface mean of minus 22 degrees a battery gives back little more than half (50-60%) of what it took in while warm. Machines and people going up carry batteries against the body or wrap them to keep them warm.
 3. **Batteries age.** Seoul has no new cells. A revived pack bound from picked live cells holds 60 to 70% of its original capacity and loses another 5 to 8% of that each year.
 
 **Power cores** (provisional T04-6). A long-lasting power lump stripped from the body of a war machine outside. Seoul people cannot open one and are taught that they must not. One core gives 0.5 to 3 kW for months to years and then stops suddenly. About 400 are in use in Seoul in 2126; 60 to 80 stop each year and 30 to 50 new ones come in each year, so the number falls slowly. Several people stake their lives on each core (01-core 6.3, "its price is the price of a life"). What a core draws its power from stays "unknown" in public canon.
@@ -93,7 +93,7 @@ Basis: bible section 1 row 12 (scarcity made children inherit their parents' wor
 | War machines outside | Power cores, moving joints, sensing elements, hard shells | Only by crossing the perimeter in a blizzard (01-core 6.3). The most expensive |
 | The unmapped station | The manuals of the station Go Ye-jin found in 2112 and whatever remained inside | Only the Arc knows. What is left, and how much, is not made public |
 
-The circuit boards in use in Seoul fall by about 3% a year, because more die than are stripped. Repeated over a hundred years, the number of board-driven machines in Seoul in 2126 is about one fifteenth of the 2040 number (provisional T04-8).
+The circuit boards in use in Seoul fall by about 3% a year, because more die than are stripped. Repeated over eighty years, the number of board-driven machines in Seoul in 2126 is about one ninth of the 2046 number (provisional T04-8).
 
 ### 3.2 Where knowledge lives
 
@@ -198,7 +198,7 @@ How many people wear machines, and their charging (provisional T04-18).
 
 The basis of this total is about 11,000 baptised (4.6) multiplied by the 8 W per person of 01-core 4.2. If another chapter sets a different number of baptised or a different charge per person, the Arc share and the Seoul total change accordingly. Reconciling figures between chapters is the integration task's job (task 9).
 
-Jamsil has 900 baptised, 29% of its roughly 3,100 people (01-core 4.2). That is higher than the Arc average of 17% because the baptised gather at stations fed by the water wheels. The Arc's total charging of 88 kW is about 22% of the 400 kW the Jamsil weir wheels give when running well. The weir's north end is in Government hands (01-core 5.1). So for the Arc the north end of the weir is the daily life of eleven thousand baptised.
+Jamsil has 900 baptised, about 26% of its roughly 3,400 people (01-core 4.2). That is higher than the Arc average of 17% because the baptised gather at stations fed by the water wheels. The Arc's total charging of 88 kW is about 22% of the 400 kW the Jamsil weir wheels give when running well. The weir's north end is in Government hands (01-core 5.1). So for the Arc the north end of the weir is the daily life of eleven thousand baptised.
 
 **Where and when to charge** (provisional T04-19). By the rule in 2.3, charging is done only in the warm layers. Most people connect their machines to a charging rack beside their sleeping place and sleep. One charge lasts about a day for an electrically driven hand and about a day and a half for a leg. People going to the surface carry a spare pack inside their clothes. A machine assisting a trunk organ alternates between two batteries and is never cut off for a moment.
 
@@ -242,16 +242,16 @@ On brain sealing this chapter writes only the [Approved] sentence above. Where t
 
 ## 5. Firearms and ammunition
 
-Basis: bible section 1 row 5 (modern and future weapons exist but are scarce; the old premise of a world with only close-combat weapons is abolished), row 15 (modern firearms work; ammunition and parts are so scarce that every round counts), section 2.5 (unit figures live only in SQL). 01-core 3.1 (concourse cold store at -10 to -7 degrees), 4.1 (air limit), 5.5 (waste and methane vats), 7.4.
+Basis: bible section 1 row 5 (modern and future weapons exist but are scarce; the old premise of a world with only close-combat weapons is abolished), row 15 (modern firearms work; ammunition and parts are so scarce that every round counts), section 2.5 (unit figures live only in SQL). 01-core 3.1 (concourse cold store at -7 to -6 degrees), 4.1 (air limit), 5.5 (waste and methane vats), 7.4.
 
 ### 5.1 Where the guns came from
 
-At the time of the Great Blackout Seoul held many guns: the armouries of the Republic of Korea Armed Forces, the reserve-forces armouries found in every neighbourhood, police weapons, and hunting guns kept in deposit at police stations. Over a hundred years most were used, broken or buried in ice. In 2126 Seoul has about 9,000 guns that can fire (provisional T04-25).
+At the time of the Great Blackout Seoul held many guns: the armouries of the Republic of Korea Armed Forces, the reserve-forces armouries found in every neighbourhood, police weapons, and hunting guns kept in deposit at police stations. Over eighty years most were used, broken or buried in ice. In 2126 Seoul has about 9,000 guns that can fire (provisional T04-25).
 
 | Polity | Guns that can fire | Source |
 |---|---|---|
 | Government | about 6,000 | The Government bound the old defence facilities of Yongsan and the reserve-forces armouries of every district north of the river into its ledger. Guns are entered in the ledger, and even spent cases are counted |
-| Free Cities | about 2,200 | Reserve-forces armouries and police weapons south-west of the river in the 2030s and 2040s, then guns repaired and refitted at the workbenches |
+| Free Cities | about 2,200 | Reserve-forces armouries and police weapons south-west of the river from 2046 into the 2060s, then guns repaired and refitted at the workbenches |
 | Arc | about 800 | What the Gangnam shelters held. The Arc spends resources on bodies rather than ammunition |
 
 The gun itself is a "repair"-grade object. Free City workbenches machine barrels, bolts and springs. So guns decline, but slowly. The real scarcity is ammunition.
@@ -262,11 +262,11 @@ Seoul's ammunition falls into three kinds (provisional T04-26).
 
 | Kind | What it is | Reliability | Quantity in 2126 |
 |---|---|---|---|
-| Old rounds | Rounds made in factories before the Great Blackout | The most reliable. Even so, about one in ten century-old rounds fails to fire | About 700,000 in all of Seoul. The Government holds about three quarters |
+| Old rounds | Rounds made in factories before the Great Blackout | The most reliable. Even so, about one in ten eighty-year-old rounds fails to fire | About 700,000 in all of Seoul. The Government holds about three quarters |
 | Reloaded rounds | A spent case refilled with powder pulled from old rounds or remaining powder, newly primed, with a cast bullet seated | Depends on the workbench. About one in five fails or fires weak | About 20,000 a year. The number of primers decides (5.3) |
 | Black-powder rounds | Rounds filled with black powder made of saltpetre, charcoal and sulphur | Only for shotguns and low-pressure pistols. Thick smoke, fouls guns quickly | About 40,000 a year. These need primers too |
 
-**Why old powder lasted a hundred years** (provisional T04-27). Powder spoils quickly when warm and slowly when cold. For a hundred years Seoul's ammunition sat in the cold stores of the concourse layer (-10 to -7 degrees, 01-core 3.1) or in frozen armouries. The eternal winter, in effect, preserved the ammunition. That is why the Government never takes ammunition down to the platform layer: rounds kept warm spoil within a few years.
+**Why old powder lasted eighty years** (provisional T04-27). Powder spoils quickly when warm and slowly when cold. For eighty years Seoul's ammunition sat in the cold stores of the concourse layer (-7 to -6 degrees, 01-core 3.1) or in frozen armouries. The eternal winter, in effect, preserved the ammunition. That is why the Government never takes ammunition down to the platform layer: rounds kept warm spoil within a few years.
 
 ### 5.3 Reloading and primers
 
@@ -293,7 +293,7 @@ This makes a geography of weapons. Fighting on the river and the surface is a fi
 
 ## 6. Drones and the radio fight
 
-Basis: bible section 1 row 15 (drones and war equipment work, but every unit counts). 01-core 3.2 (a quarter of the light), 3.5 (wind, blizzards), 6.3 (outside machines see movement and heat).
+Basis: bible section 1 row 15 (drones and war equipment work, but every unit counts). 01-core 3.2 (about 80% of the light, a dim greyish-white sky), 3.5 (wind, blizzards), 6.3 (outside machines see movement and heat).
 
 ### 6.1 Drones on the surface
 
@@ -315,7 +315,7 @@ A drone carrying explosives to ram a target can be made, but one use costs one b
 
 Radio does not travel far underground. Tunnels bend, and soil and concrete swallow the signal. So machines underground are controlled by line (provisional T04-34).
 
-- **Line drones.** A drone that pays out a thin line as it flies, or a small cart rolling on the rails. The line is optical fibre and copper pulled from the communications cables laid in the old subway tunnels. Optical fibre itself is "cannot make", but Seoul's tunnels hold cable that a hundred years has not used up. A line used once and broken is hard to join again.
+- **Line drones.** A drone that pays out a thin line as it flies, or a small cart rolling on the rails. The line is optical fibre and copper pulled from the communications cables laid in the old subway tunnels. Optical fibre itself is "cannot make", but Seoul's tunnels hold cable that eighty years has not used up. A line used once and broken is hard to join again.
 - **Nets.** Nets are strung over and around the vertical shafts of surface entrances. A drone whose blades catch in a net falls. Nets are "make" grade, the cheapest and steadiest defence. Mending nets is part of keeping an entrance open (01-core 3.3) (provisional T04-35).
 
 ### 6.3 Radio and the tunnels' talk line
@@ -329,7 +329,7 @@ The old subway tunnels have long cables laid so that radio flows along the tunne
 
 ### 6.4 Jamming
 
-Machines that blanket radio can be made, but they eat electricity. A jammer covering the surface around one station draws a few hundred watts, the heating share of several people (01-core 4.1, 40 W per person on the platform). So jammers are not left on; they are switched on only when a drone is seen or a fight starts. Drones change frequency to escape jamming, and the jamming side retunes. Free City workbenches are best at this chase. Jamming does not touch line-controlled drones. So the harder the radio fight on a section, the more line drones and nets it has (provisional T04-37).
+Machines that blanket radio can be made, but they eat electricity. A jammer covering the surface around one station draws a few hundred watts, the heating share of several people (01-core 4.1, 36 W per person on the platform). So jammers are not left on; they are switched on only when a drone is seen or a fight starts. Drones change frequency to escape jamming, and the jamming side retunes. Free City workbenches are best at this chase. Jamming does not touch line-controlled drones. So the harder the radio fight on a section, the more line drones and nets it has (provisional T04-37).
 
 ## 7. Vehicles and haulage
 
@@ -337,7 +337,7 @@ Basis: bible section 1 row 5. 01-core 3.3 (snow layer, vertical entrance shafts)
 
 ### 7.1 Fuel is dead
 
-Petrol and diesel did not survive a hundred years. The cold slowed their spoiling, but by the 2060s most remaining fuel had become a residue that ruins engines. Surface roads were made anew on top of 6 to 8 metres of snow (01-core 3.3), and the old cars lie buried beneath. So vehicles in Seoul in 2126 run on electricity, are pushed or pulled by people, or go by wind (provisional T04-38).
+Petrol and diesel did not survive eighty years. The cold slowed their spoiling, but by the 2070s most remaining fuel had become a residue that ruins engines. Surface roads were made anew on top of 7 to 9 metres of snow (01-core 3.3), and the old cars lie buried beneath. So vehicles in Seoul in 2126 run on electricity, are pushed or pulled by people, or go by wind (provisional T04-38).
 
 ### 7.2 The rails are the roads
 
@@ -457,7 +457,7 @@ Something falls away each time hands cross a generation (provisional T04-48). Se
 
 ## 11. The scarcity economy: how the three polities count and price
 
-Basis: 01-core 2.2 (Government words "token, ration"; Free City words "watt, litre, hour, contract, surety, share"; Arc words), 4.1 (10 L of water per person per day, 40 W of platform heat), 4.2 (8 W charging per baptised), 5.2 (water supply contract), 5.3 (each faction rations differently), 5.6. Bible section 1 row 11, section 2.1.
+Basis: 01-core 2.2 (Government words "token, ration"; Free City words "watt, litre, hour, contract, surety, share"; Arc words), 4.1 (10 L of water per person per day, 36 W of platform heat), 4.2 (8 W charging per baptised), 5.2 (water supply contract), 5.3 (each faction rations differently), 5.6. Bible section 1 row 11, section 2.1.
 
 01-core has no money. This chapter does not make one money for all of Seoul either. Each polity counts value by something different (provisional T04-49).
 
@@ -545,7 +545,7 @@ The Government counts in meals and the Free Cities in kilos, so the longest work
 Basis: sections 1 to 11 of this chapter, 01-core 11.
 
 1. Every chapter uses the four grades of technology (make, repair, revive, cannot make) and the "cannot make" list (section 1) in the same words. A machine's life is set by the first "cannot make" part to die inside it.
-2. The tables of electricity sources and uses (2.1 to 2.2) are matched to the totals of 01-core 5.1 (5 MW of electricity, 16 MW of heat). Use these ratios as the starting point when dividing electricity by station.
+2. The tables of electricity sources and uses (2.1 to 2.2) are matched to the totals of 01-core 5.1 (5 MW of electricity, 15 MW of heat). Use these ratios as the starting point when dividing electricity by station.
 3. Cyberware is described only by region and function (4.1). No chapter names individual parts (bible section 1, row 14). Chapter 06 builds the rite of baptism and the ladder of the count of parts on this chapter's six regions.
 4. Use the numbers of machine wearers (Arc about 11,000, Free Cities about 2,500, Government about 600) and the charging total (about 100 kW) for chapter 07's placement of people and the society sizes of chapters 04 to 06.
 5. Brain sealing is written only as the one [Approved] sentence (4.7). Its technology does not leave the private subsection of chapter 06.

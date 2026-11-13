@@ -1082,7 +1082,7 @@ Where something is forbidden, there is smuggling (provisional T08-74).
 - **Government.** A marriage exists only when the Dong Chief enters it in the ledger. A marriage to a person off the ledger is entered only when that person passes a registration review. Water supply contracts include a clause that registers the families of a few technicians each year (provisional). Children are registered at the station where the household is registered (provisional T08-75).
 - **Free Cities.** A marriage is a household contract made by two houses. Monogamy, contract cohabitation and contracts of several people living together all take the same contract form. A marriage with a person of another city leaves a contract in the markets of both cities.
 - **Arc.** A house that comes close to the Hierophant through marriage becomes a Near House (chapter 1 section 7.3), so a Near House marriage is politics. Baptism is not a condition of marriage. An unbaptised spouse lives as one of the unbaptised.
-- **Kin across the river.** 92 of the 126 generation lines are spread over two or more factions (section 6.4). There are two causes. One is 2036-2045, when the north of the river bound its ledger into one: even within one house, the people at stations the clerks reached became registered residents, and the people across the river went off the ledger. The other is 2122, when the Arc split off: Free City houses living in the shelters of Gangnam simply became the Arc. So cousins of the same generation live on both sides of the river and on both sides of the Dongjak–Seocho border. This kinship is the most common thread of smuggling and of diplomacy (provisional T08-76).
+- **Kin across the river.** 92 of the 126 generation lines are spread over two or more factions (section 6.4). There are two causes. One is 2053-2059, when the north of the river bound its ledger into one: even within one house, the people at stations the clerks reached became registered residents, and the people across the river went off the ledger. The other is 2122, when the Arc split off: Free City houses living in the shelters of Gangnam simply became the Arc. So cousins of the same generation live on both sides of the river and on both sides of the Dongjak–Seocho border. This kinship is the most common thread of smuggling and of diplomacy (provisional T08-76).
 
 ### 11.5 Diplomacy
 
@@ -1210,7 +1210,7 @@ Basis: chapter 1 section 3.7 (the winter ratchet, game rule table: "if winter pr
 | Notch check | Count consecutive turns with winter pressure above 1. A turn at 1 or below resets the count to 0. When the count reaches 12 (one year), the ratchet tightens one notch and counting starts again from 0. This carries chapter 1 section 3.7's "stays above 1 for a year" into turns |
 | One notch | The whole surface temperature band (the annual mean, long-light half, long-dark half and blizzard night of chapter 1 section 3.1) drops by 2 degrees. Light-field harvest becomes 85% of its value at that time. Windmill capacity factor becomes 95% of its value at that time |
 | Release | None. Even if the population falls, a notch does not come back |
-| Opening | Winter 2126. Notches tightened: 0, and the count is 0. It has not tightened since it stopped around 2032 |
+| Opening | Winter 2126. Notches tightened: 0, and the count is 0. It has not tightened since it stopped around 2052 |
 
 (provisional T08-86)
 

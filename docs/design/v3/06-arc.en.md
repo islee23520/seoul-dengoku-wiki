@@ -29,7 +29,7 @@ The Arc is the four districts south-east of the Han: Seocho, Gangnam, Songpa and
 
 The 78 stations are a map-data value. The total of about 65,000 is 01-core 4.3 (provisional T02-29); the split by district is set by this chapter from station counts and large interchanges (the station grades of 4.3). Songpa is largest because of the Jamsil water-wheel power and the large stores at Garak Market (가락시장); Gangdong is smallest because it has the fewest stations and its eastern edge touches the Seoul boundary.
 
-A **seat station** is the station where the Head of the Near House lives and where the district's maintenance benches and baptismal lists are gathered (provisional T07-2). All four seat stations are interchanges. Express Bus Terminal is the widest station in Seocho, where three lines meet; Suseo has a deep line layer and the old depot; Jamsil is the station of about 3,100 people computed in 01-core 4.2; Cheonho is joined by under-river tunnel to the Government's Gwangnaru (광나루).
+A **seat station** is the station where the Head of the Near House lives and where the district's maintenance benches and baptismal lists are gathered (provisional T07-2). All four seat stations are interchanges. Express Bus Terminal is the widest station in Seocho, where three lines meet; Suseo has a deep line layer and the old depot; Jamsil is the station of about 3,400 people computed in 01-core 4.2; Cheonho is joined by under-river tunnel to the Government's Gwangnaru (광나루).
 
 ## 2. The Hierophant and Messiah
 
@@ -191,7 +191,7 @@ First baptism is taken only after sixteen. Baptism that mends a lost place does 
 
 ### 5.3 How many are baptised
 
-Of about 65,000 Arc people in 2126, about 11,000 are baptised, about one in six (about 17%; the value of chapter 03, section 4). Jamsil, at 900 or 29% of the station, is well above that (01-core 4.2), because the baptised gather at stations the wheel power reaches. Among the baptised, about 50% have one part, about 25% two, about 18% three or four, and about 7% five or more. That averages about two parts a person, matching the charging count of chapter 03 section 4.4 (two parts a person, about 8 W). About 770 people in the whole Arc have five parts or more, most of them Bench Keepers, Near House people and baptised fighters (provisional T07-19).
+Of about 65,000 Arc people in 2126, about 11,000 are baptised, about one in six (about 17%; the value of chapter 03, section 4). Jamsil, at 900 or about 26% of the station, is well above that (01-core 4.2), because the baptised gather at stations the wheel power reaches. Among the baptised, about 50% have one part, about 25% two, about 18% three or four, and about 7% five or more. That averages about two parts a person, matching the charging count of chapter 03 section 4.4 (two parts a person, about 8 W). About 770 people in the whole Arc have five parts or more, most of them Bench Keepers, Near House people and baptised fighters (provisional T07-19).
 
 The reason only one in six is baptised is simple: there are only that many parts, maintenance turns and watts. A baptised person uses 8 W on average for charging; 11,000 people use about 88 kW (chapter 03; body-machine charging for all Seoul is about 100 kW). About an eighth of the roughly 0.7 MW the Arc uses (8.1) goes into bodies.
 

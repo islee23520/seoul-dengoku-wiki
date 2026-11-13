@@ -73,24 +73,24 @@ The comparison words in the left column are named only in this table; they never
 
 ## 3. Physics of the eternal winter
 
-Basis: Bible 1, row 1 (2126, about a hundred years after the Great Blackout), row 2 (the First AI brought down the winter), row 3 (only as many survived as the stations could hold, and then the winter got no worse), row 4 (eternal winter), section 3 row "c. 2026".
+Basis: Bible 1, row 1 (2126, about eighty years after the Great Blackout of about 2046), row 2 (the First AI brought down the winter), row 3 (only as many survived as the stations could hold, and then the winter got no worse), row 4 (eternal winter), section 3 row "c. 2046". The figures follow option B of chapter 11, 2.5 (owner decision 2026-11-13).
 
 The figures in this section are design values shared by the game and the text. They are not the output of a climate model; they were picked to agree with simple heat conduction and the behaviour of snow and ice (provisional T02-9).
 
 ### 3.1 Temperature by depth
 
-The surface annual mean is minus 18 °C. The long-light half averages minus 11 °C, the long-dark half minus 25 °C, and blizzard nights reach minus 38 °C. In a hundred years the surface air has never risen above minus 3 °C (provisional T02-10).
+The surface annual mean is minus 9 °C. The long-daylight half averages minus 6 °C and the short-daylight half minus 13 °C. The warmest month, August, averages minus 4 °C and the coldest, January, minus 22 °C, and blizzard nights reach minus 35 °C. In eighty years the daytime air has risen above zero on fewer than ten days a year, and the lying snow never melts (provisional T02-10).
 
-The ground cools more slowly than the air. Before the Great Blackout, Seoul's ground was about 14 °C at any depth. After the winter came down, the cold crept a little deeper every year. Thick snow kept the ground surface at about minus 10 °C, warmer than the air, and the heat released as ground water froze slowed the cold down. So in 2126, ground where nobody lives is frozen to about 35 metres, and above zero below that. The frozen-ground line was at about 10 metres in 2036 and about 22 metres in 2066, and now moves down about 17 centimetres a year (provisional T02-11).
+The ground cools more slowly than the air. Before the Great Blackout, Seoul's ground was about 14 °C at any depth. After the winter came down, the cold crept a little deeper every year. Thick snow kept the ground surface at about minus 8 °C, warmer than the air, and the heat released as ground water froze slowed the cold down. So in 2126, ground where nobody lives is frozen to about 33 metres, and above zero below that. The frozen-ground line was at about 12 metres in 2056 and about 23 metres in 2086, and now moves down about 21 centimetres a year (provisional T02-11).
 
-Lived-in stations are different. The heat of bodies, stoves and machines has warmed the ground around them for a hundred years, so every living station sits in a pocket of thawed ground. This is called the **thaw pocket**. When a station is abandoned, its thaw pocket freezes within a few years, and bringing people back in costs that much more heat (provisional T02-12).
+Lived-in stations are different. The heat of bodies, stoves and machines has warmed the ground around them for eighty years, so every living station sits in a pocket of thawed ground. This is called the **thaw pocket**. When a station is abandoned, its thaw pocket freezes within a few years, and bringing people back in costs that much more heat (provisional T02-12).
 
 | Layer | Depth | Empty | Lived in | Use |
 |---|---|---|---|---|
-| Surface | 0 m | annual mean -18 °C (long-light half -11 °C, long-dark half -25 °C, blizzard night -38 °C) | inside a light-field 0-8 °C | light-fields, wind machines, salvage, entrances |
-| Concourse | 3-8 m below ground | -10 to -7 °C | 0-6 °C | cold stores, entry control, markets, stove exhaust |
-| Platform | 8-25 m below ground | -7 to -4 °C | 8-14 °C | sleeping, kitchens, workshops, mushroom cellars |
-| Deep tunnel | below 25 m | -3 to 4 °C (always above zero below the 35 m frozen-ground line) | 12-16 °C | the warmest sleeping, wells, ground-heat bores |
+| Surface | 0 m | annual mean -9 °C (long-daylight half -6 °C, short-daylight half -13 °C, January -22 °C, blizzard night -35 °C) | inside a light-field 0-8 °C | light-fields, wind machines, salvage, entrances |
+| Concourse | 3-8 m below ground | -7 to -6 °C | 0-6 °C | cold stores, entry control, markets, stove exhaust |
+| Platform | 8-25 m below ground | -6 to -2 °C | 8-14 °C | sleeping, kitchens, workshops, mushroom cellars |
+| Deep tunnel | below 25 m | -2 to 5 °C (always above zero below the 33 m frozen-ground line) | 12-16 °C | the warmest sleeping, wells, ground-heat bores |
 
 The depth boundaries of 8 and 25 metres are design values (provisional T02-13). By the real station data, the Line 1 platform at Seoul Station is 11.85 m below ground, the Line 4 platform 13.95 m, the Line 2 platform at Sindorim 10.84 m, the Line 2 platform at Jamsil 10.02 m and its Line 8 platform 19.93 m (`123-map-holdings.sql`, map_underground). All fall in the platform layer. Deep lines whose depth is empty in the data, such as GTX-A at Seoul Station, are treated as deep-tunnel layer (provisional T02-14).
 
@@ -98,21 +98,21 @@ This table makes the first law of this world: **the deeper, the warmer, and the 
 
 ### 3.2 Light
 
-There is a sun. But a thin veil high in the sky lets only about a quarter of the pre-Blackout light reach the ground. A clear noon is like an overcast day of the old world. The sun shows as a clear white disc about one day in eight, and at night almost no stars are seen (provisional T02-15).
+There is a sun. But a thin veil sits high in the sky, so on a clear day the light reaching the ground is about 80% of the pre-Blackout light. Direct sunlight is cut to about 60% and the rest arrives scattered across the sky. So the sky is always a greyish white, the sun shows as a dim white disc, and shadows are faint. At night almost no stars are seen (provisional T02-15).
 
-Day length is unchanged. The tilt of the earth is the same, so Seoul's day still runs from about nine and a half hours near the winter solstice to about fourteen and a half near the summer solstice. The warm season never comes back, but the season of light does. People call the half-year of long days the **long-light half** and the half-year of short days the **long-dark half**. The word "season" is not used (provisional T02-16).
+Day length is unchanged. The tilt of the earth is the same, so Seoul's day still runs from about nine and a half hours near the winter solstice to about fourteen and a half near the summer solstice. The warm season never comes back, but the cycle of light does. People call the half-year of long days the **long-daylight half** and the half-year of short days the **short-daylight half**. The word "season" is not used (provisional T02-16).
 
 Light underground is electric. Electricity is scarce, so light is rationed, and a station's day is divided by when the lights go on and off. Oil lamps and tallow lights are used only where fat is to be had. The far ends of deep tunnels are always dark (provisional T02-96).
 
 ### 3.3 Snow and ice
 
-Cold air holds little water. Seoul's snowfall is about 200 millimetres of water a year, one seventh of the pre-Blackout precipitation. A fine snow falls almost all the time, and about 85% of it is blown away or goes straight from ice to vapour without melting (sublimation). What remains has packed down over a hundred years into a hard snow layer 6 to 8 metres thick on open flat ground. In the troughs between buildings, such as big streets, it has drifted to more than 10 metres, while bridges and ridgetops are scoured down to bare ground by the wind. Most buildings are buried up to the second floor (provisional T02-17).
+Cold air holds little water. Seoul's snowfall is about 350 millimetres of water a year, a quarter of the pre-Blackout precipitation. A fine snow falls almost all the time, and about 85% of it is blown away or goes straight from ice to vapour without melting (sublimation). What remains has packed down over eighty years into a hard snow layer 7 to 9 metres thick on open flat ground. In the troughs between buildings, such as big streets, it has drifted to more than 12 metres, while bridges and ridgetops are scoured down to bare ground by the wind. Most buildings are buried up to the second or third floor (provisional T02-17).
 
 A station entrance is a vertical shaft dug through the snow, fitted with stairs and ladders and kept open by hand. Keeping one entrance open is daily labour, and the number of closed entrances shows how worn out a station is.
 
 ### 3.4 The Han River
 
-The Han is frozen. The ice on it is 2 to 4 metres thick and the shallow reaches are frozen to the bed. Water remains under the ice in the deep channel and in the pools above the underwater weirs; the largest pool is above the Jamsil underwater weir. Since the snow never melts, the river is only ground water seeping in, and its flow has fallen to about one twentieth of the old winter low flow (provisional T02-18). That ground water is not refilled either. Water that lay in the ground of the Han basin before the Great Blackout has been draining out slowly for a hundred years, so the river's flow shrinks a little every year (5.2).
+The Han is frozen. The ice on it is 2 to 4 metres thick and the shallow reaches are frozen to the bed. Water remains under the ice in the deep channel and in the pools above the underwater weirs; the largest pool is above the Jamsil underwater weir. Since the snow never melts, the river is only ground water seeping in, and its flow has fallen to about one twentieth of the old winter low flow (provisional T02-18). That ground water is not refilled either. Water that lay in the ground of the Han basin before the Great Blackout has been draining out slowly for eighty years, so the river's flow shrinks a little every year (5.2).
 
 The frozen river can be crossed on foot. But on a flat sheet of ice about a kilometre wide there is nowhere to hide, and the wind blows hardest along the river. On the river a person is seen from far off, and caught by a blizzard there is nowhere to go (provisional T02-97). Why the river divides the three polities is in 7.4.
 
@@ -120,15 +120,15 @@ The frozen river can be crossed on foot. But on a flat sheet of ice about a kilo
 
 The wind blows mostly from the northwest. Mean wind speed in the open is 6 to 8 metres per second, about 30% stronger along the Han. A blizzard lasts 2 to 4 days once it comes, with winds above 25 metres per second throughout. Blizzards block entrances, stop surface work, and also blind the machines outside (6.3). Wind is this world's commonest danger and its largest source of electricity (5.1) (provisional T02-19).
 
-### 3.6 What changed in a hundred years
+### 3.6 What changed in eighty years
 
 | What | How it changed |
 |---|---|
-| Temperature | Fell every year for the first six winters after the Great Blackout. Around 2032, when the number of survivors reached what the stations could hold, it fell no further. Since then it has neither risen nor fallen |
-| Ground | The frozen-ground line came down to 35 metres over a century. Abandoned stations are sealed in ice; living stations sit in their thaw pockets |
+| Temperature | Fell every year for the first six winters after the Great Blackout. Around 2052, when the number of survivors reached what the stations could hold, it fell no further. Since then it has neither risen nor fallen |
+| Ground | The frozen-ground line came down to 33 metres over eighty years. Abandoned stations are sealed in ice; living stations sit in their thaw pockets |
 | Snow | Built up a little every year and buried the city's lower floors. Surface paths now run on top of the snow |
 | Forests | The trees died in the first winters. The forests stood frozen without rotting and were cut for firewood and fibre-sugar stock; the forests of the near mountains ran out in the 2060s |
-| Food | The food in the frozen old warehouses ran out around 2030. Mushroom cellars, fibre-sugar vats and light-fields went up from the early 2030s; since then people eat only what they grow and make |
+| Food | The food in the frozen old warehouses ran out around 2050. Mushroom cellars, fibre-sugar vats and light-fields went up from 2049-2052; since then people eat only what they grow and make |
 | Ground water | Not refilled. The water level in the wells falls every year, and wells get deeper and deeper |
 | River | The ice thickened every year and froze to the bed, starting from the shallows |
 | Machines outside | The war machines keeping their last orders grew fewer every year, but not all have stopped |
@@ -169,11 +169,11 @@ The number of people one station holds is the smallest of four limits. Food move
 | Limit | Coefficient | Meaning |
 |---|---|---|
 | Space | 4 m² of living area per person | Includes sleeping places, passages and kitchens |
-| Heat | Outside heat per person: concourse 60 W, platform 40 W, deep tunnel 10 W | Almost all of the heat a body gives off (about 100 W) leaves with the ventilation air. Heat lost through the walls to the ground must be made up by stoves, ground heat and electricity. The deeper, the less cold the ground, so the less is needed |
-| Water | 10 L per person per day | Well or river water costs only the power to lift it. Melting snow adds 45 W per person to the heat load |
+| Heat | Outside heat per person: concourse 50 W, platform 36 W, deep tunnel 10 W | Almost all of the heat a body gives off (about 100 W) leaves with the ventilation air. Heat lost through the walls to the ground must be made up by stoves, ground heat and electricity. The deeper, the less cold the ground, so the less is needed |
+| Water | 10 L per person per day | Well or river water costs only the power to lift it. Melting snow adds 43 W per person to the heat load |
 | Air | 3 L per second per person (3 m³ per second per 1,000 people) | In winter the temperature difference between the warm station and the cold outside moves air by itself, but only as far as entrances and vents are open. Deep layers need fans, and fans eat electricity |
 
-(provisional T02-24)
+(provisional T02-24. The heat coefficients and the snow-melting heat were recomputed from the air and ground temperatures of option B, chapter 11, 2.5.)
 
 Electricity is counted separately. A station's electricity is split between heat pumps, light, fans and charging. Electricity put into heat pumps becomes three times as much heat, and electricity used for light, fans and charging also ends up as heat inside the station. So a station's outside heat is "heat-pump electricity × 3 + the rest of the electricity + stove heat". What electricity is used for decides how many people can be kept warm (provisional T02-98).
 
@@ -190,15 +190,15 @@ Station names, districts, lines, depths and exit counts are values from `data/sq
 - Working:
   1. The deep layer is limited by air. 3 m³ per second is 1,000 people. Their heat is 1,000 × 10 W = 10 kW.
   2. 40 m³ of water covers 4,000 people.
-  3. With the remaining 140 kW, putting 3,000 people on the platform layer uses 120 kW, and the water just covers them.
-  4. Above that, each extra person needs 40 W of platform heat plus 45 W for melting snow, 85 W in all. The remaining 20 kW adds about 235 people.
-- Result: about **4,200 people**. Heat and water bind together; space (6,000 people) is left over. What the Government most wants at this station is one more well and one more deep-layer fan. Both need the hands of Free City engineers.
+  3. With the remaining 140 kW, putting 3,000 people on the platform layer uses 108 kW, and the water just covers them.
+  4. Above that, each extra person needs 36 W of platform heat plus 43 W for melting snow, 79 W in all. The remaining 32 kW adds about 405 people.
+- Result: about **4,400 people**. Heat and water bind together; space (6,000 people) is left over. What the Government most wants at this station is one more well and one more deep-layer fan. Both need the hands of Free City engineers.
 
 **Sindorim, Guro-gu, Free Cities** (provisional T02-26)
 
 - Data: Line 1 and Line 2; degree 5. Line 2 platform 10.84 m below ground, 3 exits. Line 1 has no depth in the data.
 - Inputs: platform-layer living area 9,000 m², no deep layer. Outside heat 100 kW (ground-heat pumps run on wind-machine power). Well water 30 m³ a day. Air 6 m³ per second.
-- Working: space 2,250 people, heat 2,500, water 3,000, air 2,000.
+- Working: space 2,250 people, heat 2,780, water 3,000, air 2,000.
 - Result: about **2,000 people**. Air binds, because there are only three exits. Fitting one fan raises the air limit to 3,000 people, and then space (2,250 people) binds. Free City stations usually go like this: technology lifts one limit and meets the next.
 
 **Jamsil, Songpa-gu, Arc** (provisional T02-27)
@@ -208,20 +208,20 @@ Station names, districts, lines, depths and exit counts are values from `data/sq
 - Working:
   1. Of the 50 kW of electricity, 6 kW goes to light and fans and 7.2 kW to charging; the remaining 36.8 kW goes into heat pumps and gives about 110 kW of heat.
   2. The 13.2 kW used for light, fans and charging also becomes heat inside the station. Outside heat totals about 123 kW.
-  3. 123 kW divided by 40 W is about 3,080 people. Space allows 3,750, water 5,000, air 4,000.
-- Result: about **3,100 people**. Heat binds. Charging is counted against electricity, not heat. The electricity five baptised use for charging (40 W) equals one person's platform heating share (40 W). But the same electricity put into heat pumps becomes three times the heat, so moving the 900 people's 7.2 kW of charging into heat pumps would make room for about 360 more people. The Arc knows that every baptism eats a little of the station's electricity.
+  3. 123 kW divided by 36 W is about 3,420 people. Space allows 3,750, water 5,000, air 4,000.
+- Result: about **3,400 people**. Heat binds. Charging is counted against electricity, not heat. The electricity five baptised use for charging (40 W) is about one person's platform heating share (36 W). But the same electricity put into heat pumps becomes three times the heat, so moving the 900 people's 7.2 kW of charging into heat pumps would make room for about 400 more people. The Arc knows that every baptism eats a little of the station's electricity.
 
 ### 4.3 Station size and population by faction
 
 | Station class | Example | People held |
 |---|---|---|
 | Small station | one line, 2-4 exits | 400-800 |
-| Interchange | two lines, 5 or more exits | 1,500-3,200 |
+| Interchange | two lines, 5 or more exits | 1,500-3,500 |
 | Large interchange complex | three or more lines, or a deep layer | 3,000-5,000 |
 
 (provisional T02-28)
 
-Counted by surface control in `120-map-core.sql`, the Government has 157 stations, the Free Cities 77 and the Arc 78, 312 in all. That is the number of map entries. The five entries with no line (four Government: the two Daehyeonsan Reservoir Park monorail platforms, Metro Hotel and Sinchon (Underground); one Arc: Saengtaegongwon-ap) are not counted as lived-in stations. So there are 307 lived-in stations (Government 153, Free Cities 77, Arc 77) (provisional T09-32). Applying the station classes, v3 sets the 2126 population at about 160,000 for the Government, about 75,000 for the Free Cities and about 65,000 for the Arc, about 300,000 for all of Seoul. That is a little over 3% of Seoul's pre-Blackout population (provisional T02-29).
+Counted by surface control in `120-map-core.sql`, the Government has 157 stations, the Free Cities 77 and the Arc 78, 312 in all. That is the number of map entries. The five entries with no line (four Government: the two Daehyeonsan Reservoir Park monorail platforms, Metro Hotel and Sinchon (Underground); one Arc: Saengtaegongwon-ap) are not counted as lived-in stations. So there are 307 lived-in stations (Government 153, Free Cities 77, Arc 77) (provisional T09-32). Applying the station classes, v3 sets the 2126 population at about 160,000 for the Government, about 75,000 for the Free Cities and about 65,000 for the Arc, about 300,000 for all of Seoul. Under option B the limit of heat-bound stations eased by about 10%, but many stations are bound first by air, space or water, and food is a faction limit (5.3), so these totals stand. That is a little over 3% of Seoul's pre-Blackout population (provisional T02-29).
 
 ## 5. Energy, water and food chains
 
@@ -239,16 +239,16 @@ In 2126 Seoul has no large power plant. Electricity is many small sources stitch
 | Wood | Dead forests on the mountains | Bukhansan and Dobongsan are Government, Gwanaksan is Gwanak's. The near forests were all cut by the 2060s; what remains lies close to the machines' perimeter (6.3) | Ever farther and more dangerous to cut; smoke fouls station air |
 | Methane | Gas from fermenting waste and food scraps. Mostly for cooking fires | Every station | Stops fermenting in the cold; explodes if it leaks |
 | Batteries and power cores | Old batteries, and power cores pulled from war machines wrecked outside | Anyone who pulls them out. The skill to revive them is the Arc's and the Free Cities' | Wear out in the cold; people die bringing them in from outside |
-| Sunlight | Panels are buried in snow and the light is a quarter | Hardly used. Sunlight belongs to the light-fields (5.3) | Not applicable |
+| Sunlight | The light is about 80% of the pre-Blackout level, but panels are buried in snow, have lost a third of their output over eighty years, and no new ones can be made (chapter 11, 4.1) | Only a few old panels dug out and set up on the snow (chapter 03, 2.1, "other"). Sunlight belongs mainly to the greenhouses (5.3) | Snow and frost cover them; frames break |
 
-All of Seoul in 2126 uses about 5 MW of electricity as a steady load, with about 12 MW of outside heat to warm living space and about 4 MW for fibre-sugar vats and kitchens, about 16 MW of heat in all. That is what a few large buildings used before the Blackout (provisional T02-31).
+All of Seoul in 2126 uses about 5 MW of electricity as a steady load, with about 11 MW of outside heat to warm living space and about 4 MW for fibre-sugar vats and kitchens, about 15 MW of heat in all. That is what a few large buildings used before the Blackout (provisional T02-31).
 
 ### 5.2 Water and the water supply contract
 
 Water comes from four places (provisional T02-32).
 
 1. **Melted snow.** Available everywhere, but it eats heat (4.1). The water of poor stations. The snow that falls each year is the only water in Seoul that is renewed.
-2. **Wells.** Ground water pumped from below the frozen-ground line (35 m). Lifting costs little power, but it takes the skill to drill deep bores and keep pumps alive. Ground water is not refilled. Since the snow never melts, no water seeps into the ground; the wells draw on water that lay in the ground before the Great Blackout. Only people refill it: water used and thrown away in the stations seeps down through the thaw pockets. Even so, the water level in the wells falls about 30 centimetres a year, and the wells of 2126 are 60 to 80 metres deep (provisional T02-99).
+2. **Wells.** Ground water pumped from below the frozen-ground line (33 m). Lifting costs little power, but it takes the skill to drill deep bores and keep pumps alive. Ground water is not refilled. Since the snow never melts, no water seeps into the ground; the wells draw on water that lay in the ground before the Great Blackout. Only people refill it: water used and thrown away in the stations seeps down through the thaw pockets. Even so, the water level in the wells falls about 30 centimetres a year, and the wells of 2126 are 60 to 80 metres deep (provisional T02-99).
 3. **River water under the ice.** Drawn from the deep channel of the Han. The intakes stand at old water-treatment sites on the banks. Guui (Gwangjin) and Ttukdo (Seongdong) on the north bank are the Government's; Yeongdeungpo (Yangpyeong-dong) in the southwest belongs to Yeongdeungpo among the Free Cities; Amsa (Gangdong) in the southeast is the Arc's. This river water, too, is the ground water of the Han basin draining out, and it shrinks a little every year.
 4. **Reused water.** Washing water and filtered water. Every station does it, with losses.
 
@@ -258,21 +258,21 @@ The contract runs for thirty years, a term that settled because overhauling the 
 
 ### 5.3 Food
 
-Every meal in this world comes from light or from old carbon. Growing enough to feed one person under electric light alone takes several kilowatts, and with a quarter of the sunlight and minus 18 °C at the surface, greenhouses cannot be heated over wide areas either. So Seoul eats the carbon stored before the Blackout: paper, cardboard, wood and cotton. Fermenting enzymes taken from mushrooms break this fibre down into sugar, and part of the sugar is used to grow yeast. This is called **fibre sugar**. The v3 food chain is this (provisional T02-35):
+Every meal in this world comes from light or from old carbon. Growing enough to feed one person under electric light alone takes several kilowatts, and although the sunlight is about 80% of the old level, the surface averages minus 9 °C and the only clear roofing is what can be salvaged, so greenhouses cannot be spread without limit either. So Seoul eats the carbon stored before the Blackout: paper, cardboard, wood and cotton. Fermenting enzymes taken from mushrooms break this fibre down into sugar, and part of the sugar is used to grow yeast. This is called **fibre sugar**. The v3 food chain is this (provisional T02-35):
 
 | What | How | Share of the diet |
 |---|---|---|
 | Fibre sugar and yeast | In warm platform-layer vats, shredded paper, cardboard, wood and cotton are fermented with mushroom enzymes into sugar water, part of which grows yeast. 1 kg of fibre gives about 0.4 kg of sugar; each person in effect eats about 1 kg of fibre a day | About 60% of the calories |
-| Light-fields | Greenhouses on the surface around station entrances, dug into the ground, banked with snow and roofed with clear sheeting. Inside it is 0-8 °C. Cabbage, turnips, mustard greens, barley | About 12% of the calories. About 90 m² per person |
+| Light-fields | Greenhouses on the surface around station entrances, dug into the ground, banked with snow and roofed with clear sheeting. Inside it is 0-8 °C. Cabbage, turnips, mustard greens, barley | About 12% of the calories. About 45 m² per person |
 | Insects | Larvae raised on fibre-sugar waste, mushroom waste and food scraps | About 12%. The cheapest protein |
 | Mushrooms | Grown on fibre waste in dark platform-layer cellars | About 6% |
 | Fish and hunting | Fish caught through holes in the river ice, tanks in warm stations, animals left on the surface and in the tunnels (which survived and how is set by chapter 02) | About 6% |
 | Sprouts | Bean sprouts and barley shoots grown from light-field beans and barley. Need almost no light | About 4% |
-| Salvage | Pre-Blackout food ran out around 2030. In 2126 salvage yields only long-lasting things such as salt and seeds. Seoul produces no salt, so it grows scarcer every year | Seasoning and seed |
+| Salvage | Pre-Blackout food ran out around 2050. In 2126 salvage yields only long-lasting things such as salt and seeds. Seoul produces no salt, so it grows scarcer every year | Seasoning and seed |
 
-**The light-field heat balance** (provisional T02-36). Light-fields burn no fuel of their own. Daylight and the heat held in the earth banks do most of the work, and at night they are covered with snow blankets. The remaining shortfall (about 1 W per m² on average in the long-dark half) is made up by turning into the light-fields the heat that leaves the station people's bodies with the ventilation air (about 90 W per person). One person's breath heat keeps 90 m² of light-field from freezing, so light-fields take nothing more from the heat budgets of 4.1 and 5.1. Across Seoul, light-fields cover about 27 km², 4.5% of Seoul's area. The harvest is about a third of an old field, about 1,250 kcal per m² a year. At 90 m² a person that is about 310 kcal a day, about 12% of the calories. That is why the light-field and the station are one body: the more people in the station, the warmer its light-field, and guarding the light-field is the same work as guarding the entrance.
+**The light-field heat balance** (provisional T02-36). Light-fields burn no fuel of their own. Daylight and the heat held in the earth banks do most of the work, and at night they are covered with snow blankets. The remaining shortfall (about 0.5 W per m² on average in the short-daylight half) is made up by turning into the light-fields the heat that leaves the station people's bodies with the ventilation air (about 90 W per person). One person's breath heat keeps 45 m² of light-field from freezing with heat to spare, so light-fields take nothing more from the heat budgets of 4.1 and 5.1. Across Seoul, light-fields cover about 13.5 km², 2.2% of Seoul's area. The harvest is about two thirds of an old field, about 2,500 kcal per m² a year. At 45 m² a person that is about 310 kcal a day, about 12% of the calories. With more light the same area yields more, but the light-fields are not widened: roofing is short, and there is a taboo against showing light and heat on the surface. That is why the light-field and the station are one body: the more people in the station, the warmer its light-field, and guarding the light-field is the same work as guarding the entrance.
 
-**The fibre is running out** (provisional T02-100). Seoul eats about 110,000 tonnes of fibre a year. For a hundred years Seoul has been eating the paper, furniture, doors and clothes of its homes, offices and warehouses, and the dead trees of its mountains. The near districts are already empty, and the trips to dig fibre get longer every year. The Government, holding the offices and warehouses of the old downtown, has the most fibre. But the ledger and the old official papers are never eaten: that is the Government's taboo.
+**The fibre is running out** (provisional T02-100). Seoul eats about 110,000 tonnes of fibre a year. For eighty years Seoul has been eating the paper, furniture, doors and clothes of its homes, offices and warehouses, and the dead trees of its mountains. The near districts are already empty, and the trips to dig fibre get longer every year. The Government, holding the offices and warehouses of the old downtown, has the most fibre. But the ledger and the old official papers are never eaten: that is the Government's taboo.
 
 Rationing differs by faction (chapters 04-06). The Government hands out food against ledger coupons. The Free Cities move it through contracts and markets. In the Arc, the Near Houses and each station's Bench Keeper share it out (provisional T02-37).
 
@@ -321,7 +321,7 @@ Basis: Bible 1, row 2 (never hated, killed no one directly), row 6 (the war mach
 
 ### 6.3 Outside Seoul and the boundary
 
-The war machines' last order is **seal the capital**. In the first weeks of the Great Blackout, a command whose name has not even survived ordered the ring around Seoul shut: nothing in, nothing out. The machines have kept that order for a hundred years. So the machines do not enter Seoul; they circle a band around it (provisional T02-43).
+The war machines' last order is **seal the capital**. In the first weeks of the Great Blackout, a command whose name has not even survived ordered the ring around Seoul shut: nothing in, nothing out. The machines have kept that order for eighty years. So the machines do not enter Seoul; they circle a band around it (provisional T02-43).
 
 | Item | Content |
 |---|---|
@@ -480,7 +480,7 @@ Rule for the dong tier: a station belongs to the dong where its main entrance is
 | Faction as a whole | the National Assembly | none (contract meetings and a Host) | the Seat of the Four Near Houses |
 | Head | President for Life | none | Hierophant [Approved] |
 
-## 9. Decade chronology 2026-2126
+## 9. Decade chronology 2046-2126
 
 Basis: Bible section 3 (the [승인] chronology rows), Bible 1, rows 1-4, 11-13.
 
@@ -488,11 +488,11 @@ Basis: Bible section 3 (the [승인] chronology rows), Bible 1, rows 1-4, 11-13.
 
 | Year | Event | Status |
 |---|---|---|
-| c. 2026 | The Great Blackout. The First AI brought down the winter ("about a hundred years ago"). The exact date is not set (Q2). | [Approved] |
-| 2026-2035 | People go down into the stations. Each of the first six winters is colder than the last. The food of the frozen old warehouses runs out around 2030, and the first mushroom cellars, fibre-sugar vats and light-fields go up in the early 2030s. Each station chose a leader by show of hands, and within a generation the post became hereditary. Around 2032 the number of survivors reaches station capacity and the winter gets no worse | provisional T02-81 |
-| 2036-2045 | The stations north of the river bind their ledgers into one around the Gwanghwamun complex. Seats are cut to one per district, each district's Assembly Member holds its duchy, and the fourteen Assembly Members acclaim the first President for Life. The south of the river becomes off the ledger | provisional T02-82 |
-| 2046-2055 | The age of firewood is at its height. The dead forests of Bukhansan, Dobongsan and Gwanaksan are cut for firewood and fibre-sugar stock. Light-fields spread to every station. The southwestern stations trade skills and harden into one city per district | provisional T02-83 |
-| 2056-2065 | In the 2060s the forests of the near mountains run out. The switch to ground-heat pumps and wind machines becomes unavoidable, and the southwestern cities that hold those skills grow strong. Gwanak's leading house takes the title Duke | provisional T02-84 |
+| c. 2046 | The Great Blackout. The First AI brought down the winter. The exact date is not set (Q2). The old value "c. 2026" ("about a hundred years ago") was replaced by the owner decision of 2026-11-13 (Bible 9.4). | [Approved] |
+| 2046-2052 | People go down into the stations. Each of the first six winters is colder than the last. The food of the frozen old warehouses runs out around 2050, and the first mushroom cellars, fibre-sugar vats and light-fields go up in 2049-2052. Each station chose a leader by show of hands. Around 2052 the number of survivors reaches station capacity and the winter gets no worse. Seoul's population falls from about 8.5 million to about 350,000 | provisional T02-81, T33-17 |
+| 2053-2059 | The stations north of the river bind their ledgers into one around the Gwanghwamun complex. Seats are cut to one per district, each district's Assembly Member holds its duchy, and the fourteen Assembly Members acclaim the first President for Life (around 2058). The south of the river becomes off the ledger. Leaders' posts begin to pass by inheritance | provisional T02-82, T33-18 |
+| 2053-2062 | The age of firewood. The forests of Bukhansan, Dobongsan and Gwanaksan are cut for firewood and fibre-sugar stock. Light-fields spread to every station. The southwestern stations trade skills and harden into one city per district (the forests died in the first winters) | provisional T02-83, T33-19 |
+| 2060-2065 | The forests of the near mountains run out. The switch to ground-heat pumps and wind machines becomes unavoidable, and the southwestern cities that hold those skills grow strong. Gwanak's leading house takes the title Duke. The first generation born after the Great Blackout comes of age | provisional T02-84, T33-20 |
 | 2066-2075 | 2066: the first water supply contract. The Government and the Free Cities trade water for maintenance for a thirty-year term. In the 2070s Free City crews build the under-ice water wheels at the Jamsil weir together with the Songpa shelters. Wells go below 50 metres | provisional T02-85 |
 | 2076-2085 | 2079: the Government tries to cross the ice and take the Yeongdeungpo intake, but is caught by a blizzard on the river and broken. After that the river becomes a line not crossed by armies. The Government sets ledger checkpoints at the north mouths of the three under-river tunnels (Mapo–Yeouinaru, Gwangnaru–Cheonho, Seoul Forest–Apgujeongrodeo) | provisional T02-86 |
 | 2086-2095 | The Gangnam shelters shut their doors one by one and live apart. Their deep buildings keep them warm, but Free City crews come less often and their machines go out one by one. The number of machines outside falls noticeably, and crossing the perimeter in blizzards to dig out power cores becomes a trade for the first time. Salvaged salt runs short for the first time | provisional T02-87 |
@@ -531,7 +531,7 @@ Concepts from the old wiki (`docs/drafts/*.ko.md`, `data/sql`) that v3 does not 
 | The synthetic-personality ledger (forty-eight H, F, V) | the synthetic actors document | Humanoids and machines are precious equipment (Bible 1, row 5). Whether separate thinking personalities exist is set by chapter 03, and until then they are not written (provisional T02-91) |
 | A "physical AI" era and timelines in which the AI wiped people out | the regional narrative document, the scenario timeline | The eras of winter and stations (section 9). The First AI killed no one directly |
 | A world with only hand-to-hand weapons | the old premise of the era arms document | Modern and future weapons exist but are scarce (Bible 1, rows 5 and 15) |
-| Great Blackout date 2030-10-14 | old timelines | About 2026, no date (Bible section 3, Q2) |
+| Great Blackout date 2030-10-14 | old timelines | About 2046, no date (Bible section 3, Q2) |
 | Martial-arts schools and titles | old people's titles | Job names (Bible section 4) |
 | The old "Infected" group (the old compendium's reading of G19-G24 as changed people) | the old hostile ecology compendium and its category name | Rim machines (chapter 02 sections 1 and 6.6). No sickness turns people into something else (added by task 9 from chapter 02 section 10, item 9) |
 

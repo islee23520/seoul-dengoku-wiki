@@ -22,7 +22,7 @@ Government speech follows 01-core 2.2: official-document speech gone rigid under
 
 Basis: Bible 2.1 (Republic of Korea institutions surviving under scarcity; only people recorded in its ledger are citizens); 01-core 7.1 "Founding logic" and "What continues from the Republic of Korea"; 3.7.
 
-To Government people the Government is not a newly founded state. It is the Republic of Korea. In a hundred years since the Great Blackout, they say, it has not changed its name, the article numbers of its statute book, or its seals. Only the size of the country changed. The country reaches as far as a clerk can reach, and the river is its end.
+To Government people the Government is not a newly founded state. It is the Republic of Korea. In eighty years since the Great Blackout, they say, it has not changed its name, the article numbers of its statute book, or its seals. Only the size of the country changed. The country reaches as far as a clerk can reach, and the river is its end.
 
 The Government has never lifted the **state of disaster** it declared in the first year after the Great Blackout. Every notice of 2126 opens with the line "Under the state of disaster". The state of disaster is the ground on which the Government decides where people live and what they do, takes in goods, and calls people up. Government people do not find this strange. The winter has not ended, so the disaster has not ended (provisional T05-1).
 
@@ -314,7 +314,7 @@ After tokens, the things most used at market are goods that last and keep their 
 
 ## 11. Clothing
 
-Basis: 01-core 3.1 (surface -18 °C, platform 8-14 °C), 5.3 (fibre is food), 7.1; Bible 2.1.
+Basis: 01-core 3.1 (surface -9 °C, platform 8-14 °C), 5.3 (fibre is food), 7.1; Bible 2.1.
 
 **Fibre to wear and fibre to eat.** In Seoul cotton, paper and wood are food (01-core 5.3). So the clothes Government people wear are made of inedible fibre: pre-Blackout synthetic-fibre clothes taken apart and remade. Making new cotton clothes takes from the meals, so only Member houses do it. Clothes are handed down inside the household, and worn-out synthetics become the wadding of quilted clothes (provisional T05-44).
 
@@ -392,7 +392,7 @@ Basis: 01-core 5.5 (nothing rots in the cold; funerals differ by faction and are
 
 - When a person dies, the head of household files a death report at the dong centre and the Dong Chief draws the red line of the death strike-off. At the next morning's national ceremony the name is read in the silence.
 - Bodies do not rot. Every district has a designated **snow burial field** on the surface, and a labour-household burial crew carries the body there by sled and buries it in the snow. The place number in the burial field is written in the death strike-off entry. Jungnang-gu people are buried in the Mangu burial field (provisional T05-55).
-- People of Member houses and people who did service to the state are buried at the site of the April 19th National Cemetery in Gangbuk-gu, the national cemetery of the Republic of Korea that remains north of the river. The Seoul National Cemetery at Dongjak-dong lies across the river, and for a hundred years the Government has buried nobody there (provisional T05-56).
+- People of Member houses and people who did service to the state are buried at the site of the April 19th National Cemetery in Gangbuk-gu, the national cemetery of the Republic of Korea that remains north of the river. The Seoul National Cemetery at Dongjak-dong lies across the river, and for eighty years the Government has buried nobody there (provisional T05-56).
 - Bodies and the clothes of the dead are not put into fibre-sugar vats. With the taboo on official papers, this is the Government's oldest taboo (provisional T05-57).
 
 ## 14. The national army: doctrine and conscription
