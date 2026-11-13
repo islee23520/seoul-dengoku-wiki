@@ -3,27 +3,27 @@
   "personId": "person-0900",
   "characterId": "K900",
   "name": "강파유",
-  "stateId": "S13",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "약재 물류상"
+    "role": "국군 병사 · 불암산역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, youthful smooth skin",
     "hair": "medium-length hair swept back",
-    "upper": "khaki wool cardigan over a collared shirt with sleeve garters",
-    "outfit": "khaki wool cardigan over a collared shirt with sleeve garters",
+    "upper": "restitched camouflage cold-weather jacket with sergeant first class insignia over a quilted liner",
+    "outfit": "restitched camouflage cold-weather jacket with sergeant first class insignia over a quilted liner",
     "palette": [
-      "khaki",
-      "charcoal",
-      "sand beige"
+      "olive drab",
+      "bark brown",
+      "slate blue"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "charcoal high-waisted pleated trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "quilted camouflage trousers",
+    "footwear": "felt-lined synthetic rubber boots",
+    "accessories": "binoculars in a worn leather case"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "ear-flap cap with a face cover",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "khaki wool cardigan over a collared shirt with sleeve garters",
+        "value": "restitched camouflage cold-weather jacket with sergeant first class insignia over a quilted liner",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "charcoal high-waisted pleated trousers",
+        "value": "quilted camouflage trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt-lined synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "buttoned stand collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "binoculars in a worn leather case",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "black metal and brown leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "glass, metal, leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "strap across the chest",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "compact twin-barrel case",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 강파유, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: tan warm beige. upper garment: khaki wool cardigan over a collared shirt with sleeve garters; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: khaki, charcoal, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 강파유, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: tan warm beige. headwear: ear-flap cap with a face cover; upper garment: restitched camouflage cold-weather jacket with sergeant first class insignia over a quilted liner; neckline: buttoned stand collar. accessories: binoculars in a worn leather case; worn as strap across the chest. color palette: olive drab, bark brown, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 강파유, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: tan warm beige; average adult male height. upper garment: khaki wool cardigan over a collared shirt with sleeve garters; neckline: buttoned shirt collar; lower garment: charcoal high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: khaki, charcoal, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 강파유, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: tan warm beige; average adult male height. headwear: ear-flap cap with a face cover; upper garment: restitched camouflage cold-weather jacket with sergeant first class insignia over a quilted liner; neckline: buttoned stand collar; lower garment: quilted camouflage trousers; footwear: felt-lined synthetic rubber boots. accessories: binoculars in a worn leather case; worn as strap across the chest. color palette: olive drab, bark brown, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 강파유, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: tan warm beige; average adult male height. upper garment: khaki wool cardigan over a collared shirt with sleeve garters; neckline: buttoned shirt collar; lower garment: charcoal high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: khaki, charcoal, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 강파유, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: tan warm beige; average adult male height. headwear: ear-flap cap with a face cover; upper garment: restitched camouflage cold-weather jacket with sergeant first class insignia over a quilted liner; neckline: buttoned stand collar; lower garment: quilted camouflage trousers; footwear: felt-lined synthetic rubber boots. accessories: binoculars in a worn leather case; worn as strap across the chest. color palette: olive drab, bark brown, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 강파유, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: tan warm beige; average adult male height. upper garment: khaki wool cardigan over a collared shirt with sleeve garters; neckline: buttoned shirt collar; lower garment: charcoal high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: khaki, charcoal, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 강파유, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: tan warm beige; average adult male height. headwear: ear-flap cap with a face cover; upper garment: restitched camouflage cold-weather jacket with sergeant first class insignia over a quilted liner; neckline: buttoned stand collar; lower garment: quilted camouflage trousers; footwear: felt-lined synthetic rubber boots. accessories: binoculars in a worn leather case; worn as strap across the chest. color palette: olive drab, bark brown, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 강파유, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: tan warm beige; average adult male height. upper garment: khaki wool cardigan over a collared shirt with sleeve garters; neckline: buttoned shirt collar; lower garment: charcoal high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: khaki, charcoal, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 강파유, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: tan warm beige; average adult male height. headwear: ear-flap cap with a face cover; upper garment: restitched camouflage cold-weather jacket with sergeant first class insignia over a quilted liner; neckline: buttoned stand collar; lower garment: quilted camouflage trousers; footwear: felt-lined synthetic rubber boots. accessories: binoculars in a worn leather case; worn as strap across the chest. color palette: olive drab, bark brown, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

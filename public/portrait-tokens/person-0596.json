@@ -3,27 +3,27 @@
   "personId": "person-0596",
   "characterId": "K596",
   "name": "신나빈",
-  "stateId": "S13",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "방역 기록관"
+    "role": "장터 상인 · 제기동역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "long hair tied in a low ponytail",
-    "upper": "mustard ochre buttoned linen work coat over a turtleneck",
-    "outfit": "mustard ochre buttoned linen work coat over a turtleneck",
+    "upper": "patched wadded synthetic-fibre quilted coat with a trade tag stitched on the left breast",
+    "outfit": "patched wadded synthetic-fibre quilted coat with a trade tag stitched on the left breast",
     "palette": [
-      "mustard ochre",
-      "clay brown",
-      "oxblood"
+      "grey-brown",
+      "faded indigo",
+      "cream"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "clay brown A-line mid-calf wool skirt over thick stockings",
-    "footwear": "laced leather walking shoes",
-    "accessories": "canvas medical satchel without markings"
+    "lower": "wadded synthetic-fibre quilted trousers",
+    "footwear": "felt boots with rubber soles",
+    "accessories": "cloth token purse and a small brass hand scale"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "knitted wool cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "mustard ochre buttoned linen work coat over a turtleneck",
+        "value": "patched wadded synthetic-fibre quilted coat with a trade tag stitched on the left breast",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "clay brown A-line mid-calf wool skirt over thick stockings",
+        "value": "wadded synthetic-fibre quilted trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt boots with rubber soles",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "open coat collar over a rolled sweater neck",
+        "value": "wrapped knitted scarf",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "canvas medical satchel without markings",
+        "value": "cloth token purse and a small brass hand scale",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat rectangular satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "undyed canvas and brown leather",
+        "value": "faded indigo cloth and tarnished brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "canvas, leather",
+        "value": "synthetic cloth, brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the shoulder",
+        "value": "purse on a cord at the belt, scale in hand",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "drawstring purse and a small beam scale",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 신나빈, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. long hair tied in a low ponytail; black hair; long length. build: soft rounded; skin: tan warm beige. upper garment: mustard ochre buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: mustard ochre, clay brown, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 신나빈, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. long hair tied in a low ponytail; black hair; long length. build: soft rounded; skin: tan warm beige. headwear: knitted wool cap; upper garment: patched wadded synthetic-fibre quilted coat with a trade tag stitched on the left breast; neckline: wrapped knitted scarf. accessories: cloth token purse and a small brass hand scale; worn as purse on a cord at the belt, scale in hand. color palette: grey-brown, faded indigo, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 신나빈, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. long hair tied in a low ponytail; black hair; long length. build: soft rounded; skin: tan warm beige; average adult female height. upper garment: mustard ochre buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: clay brown A-line mid-calf wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: mustard ochre, clay brown, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 신나빈, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. long hair tied in a low ponytail; black hair; long length. build: soft rounded; skin: tan warm beige; average adult female height. headwear: knitted wool cap; upper garment: patched wadded synthetic-fibre quilted coat with a trade tag stitched on the left breast; neckline: wrapped knitted scarf; lower garment: wadded synthetic-fibre quilted trousers; footwear: felt boots with rubber soles. accessories: cloth token purse and a small brass hand scale; worn as purse on a cord at the belt, scale in hand. color palette: grey-brown, faded indigo, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 신나빈, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. long hair tied in a low ponytail; black hair; long length. build: soft rounded; skin: tan warm beige; average adult female height. upper garment: mustard ochre buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: clay brown A-line mid-calf wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: mustard ochre, clay brown, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 신나빈, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. long hair tied in a low ponytail; black hair; long length. build: soft rounded; skin: tan warm beige; average adult female height. headwear: knitted wool cap; upper garment: patched wadded synthetic-fibre quilted coat with a trade tag stitched on the left breast; neckline: wrapped knitted scarf; lower garment: wadded synthetic-fibre quilted trousers; footwear: felt boots with rubber soles. accessories: cloth token purse and a small brass hand scale; worn as purse on a cord at the belt, scale in hand. color palette: grey-brown, faded indigo, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 신나빈, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. long hair tied in a low ponytail; black hair; long length. build: soft rounded; skin: tan warm beige; average adult female height. upper garment: mustard ochre buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: clay brown A-line mid-calf wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: mustard ochre, clay brown, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 신나빈, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. long hair tied in a low ponytail; black hair; long length. build: soft rounded; skin: tan warm beige; average adult female height. headwear: knitted wool cap; upper garment: patched wadded synthetic-fibre quilted coat with a trade tag stitched on the left breast; neckline: wrapped knitted scarf; lower garment: wadded synthetic-fibre quilted trousers; footwear: felt boots with rubber soles. accessories: cloth token purse and a small brass hand scale; worn as purse on a cord at the belt, scale in hand. color palette: grey-brown, faded indigo, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 신나빈, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. long hair tied in a low ponytail; black hair; long length. build: soft rounded; skin: tan warm beige; average adult female height. upper garment: mustard ochre buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: clay brown A-line mid-calf wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: mustard ochre, clay brown, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 신나빈, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. long hair tied in a low ponytail; black hair; long length. build: soft rounded; skin: tan warm beige; average adult female height. headwear: knitted wool cap; upper garment: patched wadded synthetic-fibre quilted coat with a trade tag stitched on the left breast; neckline: wrapped knitted scarf; lower garment: wadded synthetic-fibre quilted trousers; footwear: felt boots with rubber soles. accessories: cloth token purse and a small brass hand scale; worn as purse on a cord at the belt, scale in hand. color palette: grey-brown, faded indigo, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

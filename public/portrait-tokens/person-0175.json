@@ -3,27 +3,27 @@
   "personId": "person-0175",
   "characterId": "K174",
   "name": "클라라 베넷",
-  "stateId": "S07",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "선로 가문 배차원"
+    "role": "산림청장 · 광화문역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "short pin-curled hair",
-    "upper": "clay brown patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer",
-    "outfit": "clay brown patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer",
+    "upper": "navy quilted long coat over a sand beige knit vest",
+    "outfit": "navy quilted long coat over a sand beige knit vest",
     "palette": [
-      "clay brown",
-      "slate blue",
-      "khaki"
+      "navy",
+      "sand beige",
+      "mustard ochre"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "slate blue canvas work trousers tucked into boots",
-    "footwear": "steel-toe leather work boots",
-    "accessories": "rolled leather tool roll and work gloves tucked into the belt"
+    "lower": "dark wool trousers tucked into felt boots",
+    "footwear": "felt boots with synthetic rubber soles",
+    "accessories": "civil-servant ID card on a neck cord beside a stamped metal registration token"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -175,27 +175,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "flat cloth cap",
+        "value": "ear-flap cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "clay brown patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer",
+        "value": "navy quilted long coat over a sand beige knit vest",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "slate blue canvas work trousers tucked into boots",
+        "value": "dark wool trousers tucked into felt boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "steel-toe leather work boots",
+        "value": "felt boots with synthetic rubber soles",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -205,41 +205,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "open work collar",
+        "value": "shirt collar under a knit vest",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "rolled leather tool roll and work gloves tucked into the belt",
+        "value": "civil-servant ID card on a neck cord beside a stamped metal registration token",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "rolled bundle and gloves",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "oiled brown leather",
+        "value": "navy cord, dull steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, steel",
+        "value": "laminated card, steel, cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "tucked into the belt",
+        "value": "hung from the neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat card and small plate",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -260,27 +260,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 클라라 베넷, an European heritage woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; deep-set brown eyes; angled eyebrows; nose: broad bridge; mouth: small closed mouth; muted red lips. short pin-curled hair; light brown hair; short length. build: stocky; skin: fair with pink undertone. headwear: flat cloth cap; upper garment: clay brown patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer; neckline: open work collar. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: clay brown, slate blue, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 클라라 베넷, an European heritage woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; deep-set brown eyes; angled eyebrows; nose: broad bridge; mouth: small closed mouth; muted red lips. short pin-curled hair; light brown hair; short length. build: stocky; skin: fair with pink undertone. headwear: ear-flap cap; upper garment: navy quilted long coat over a sand beige knit vest; neckline: shirt collar under a knit vest. accessories: civil-servant ID card on a neck cord beside a stamped metal registration token; worn as hung from the neck. color palette: navy, sand beige, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 클라라 베넷, an European heritage woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; deep-set brown eyes; angled eyebrows; nose: broad bridge; mouth: small closed mouth; muted red lips. short pin-curled hair; light brown hair; short length. build: stocky; skin: fair with pink undertone; average adult female height. headwear: flat cloth cap; upper garment: clay brown patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: slate blue canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: clay brown, slate blue, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 클라라 베넷, an European heritage woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; deep-set brown eyes; angled eyebrows; nose: broad bridge; mouth: small closed mouth; muted red lips. short pin-curled hair; light brown hair; short length. build: stocky; skin: fair with pink undertone; average adult female height. headwear: ear-flap cap; upper garment: navy quilted long coat over a sand beige knit vest; neckline: shirt collar under a knit vest; lower garment: dark wool trousers tucked into felt boots; footwear: felt boots with synthetic rubber soles. accessories: civil-servant ID card on a neck cord beside a stamped metal registration token; worn as hung from the neck. color palette: navy, sand beige, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 클라라 베넷, an European heritage woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; deep-set brown eyes; angled eyebrows; nose: broad bridge; mouth: small closed mouth; muted red lips. short pin-curled hair; light brown hair; short length. build: stocky; skin: fair with pink undertone; average adult female height. headwear: flat cloth cap; upper garment: clay brown patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: slate blue canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: clay brown, slate blue, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 클라라 베넷, an European heritage woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; deep-set brown eyes; angled eyebrows; nose: broad bridge; mouth: small closed mouth; muted red lips. short pin-curled hair; light brown hair; short length. build: stocky; skin: fair with pink undertone; average adult female height. headwear: ear-flap cap; upper garment: navy quilted long coat over a sand beige knit vest; neckline: shirt collar under a knit vest; lower garment: dark wool trousers tucked into felt boots; footwear: felt boots with synthetic rubber soles. accessories: civil-servant ID card on a neck cord beside a stamped metal registration token; worn as hung from the neck. color palette: navy, sand beige, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 클라라 베넷, an European heritage woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; deep-set brown eyes; angled eyebrows; nose: broad bridge; mouth: small closed mouth; muted red lips. short pin-curled hair; light brown hair; short length. build: stocky; skin: fair with pink undertone; average adult female height. headwear: flat cloth cap; upper garment: clay brown patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: slate blue canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: clay brown, slate blue, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 클라라 베넷, an European heritage woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; deep-set brown eyes; angled eyebrows; nose: broad bridge; mouth: small closed mouth; muted red lips. short pin-curled hair; light brown hair; short length. build: stocky; skin: fair with pink undertone; average adult female height. headwear: ear-flap cap; upper garment: navy quilted long coat over a sand beige knit vest; neckline: shirt collar under a knit vest; lower garment: dark wool trousers tucked into felt boots; footwear: felt boots with synthetic rubber soles. accessories: civil-servant ID card on a neck cord beside a stamped metal registration token; worn as hung from the neck. color palette: navy, sand beige, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 클라라 베넷, an European heritage woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; deep-set brown eyes; angled eyebrows; nose: broad bridge; mouth: small closed mouth; muted red lips. short pin-curled hair; light brown hair; short length. build: stocky; skin: fair with pink undertone; average adult female height. headwear: flat cloth cap; upper garment: clay brown patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: slate blue canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: clay brown, slate blue, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 클라라 베넷, an European heritage woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; deep-set brown eyes; angled eyebrows; nose: broad bridge; mouth: small closed mouth; muted red lips. short pin-curled hair; light brown hair; short length. build: stocky; skin: fair with pink undertone; average adult female height. headwear: ear-flap cap; upper garment: navy quilted long coat over a sand beige knit vest; neckline: shirt collar under a knit vest; lower garment: dark wool trousers tucked into felt boots; footwear: felt boots with synthetic rubber soles. accessories: civil-servant ID card on a neck cord beside a stamped metal registration token; worn as hung from the neck. color palette: navy, sand beige, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

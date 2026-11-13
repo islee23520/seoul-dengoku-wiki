@@ -3,27 +3,27 @@
   "personId": "person-1006",
   "characterId": "K1006",
   "name": "탁서윤",
-  "stateId": "S14",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "아관사 구의수비대장"
+    "role": "수도방위사령관 · 삼각지역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "very short buzz-cut hair",
-    "upper": "dove grey belted canvas field jacket with flap chest pockets, with a light knitted scarf",
-    "outfit": "dove grey belted canvas field jacket with flap chest pockets, with a light knitted scarf",
+    "upper": "대정전 전 얼룩무늬 방한복을 고쳐 지은 누빔 긴 외투",
+    "outfit": "대정전 전 얼룩무늬 방한복을 고쳐 지은 누빔 긴 외투",
     "palette": [
-      "dove grey",
-      "oxblood",
-      "slate blue"
+      "olive drab",
+      "navy",
+      "oxblood"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "oxblood canvas work trousers tucked into boots",
-    "footwear": "lace-up leather combat boots",
-    "accessories": "small hand lamp clipped to a leather belt"
+    "lower": "camouflage winter trousers over quilted liners",
+    "footwear": "polished felt-lined combat boots",
+    "accessories": "leather map case on a shoulder strap"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "soft wool field cap without badge",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "dove grey belted canvas field jacket with flap chest pockets, with a light knitted scarf",
+        "value": "대정전 전 얼룩무늬 방한복을 고쳐 지은 누빔 긴 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "oxblood canvas work trousers tucked into boots",
+        "value": "camouflage winter trousers over quilted liners",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "lace-up leather combat boots",
+        "value": "polished felt-lined combat boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -206,39 +206,39 @@
       "neckline": {
         "value": "closed turn-down collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "small hand lamp clipped to a leather belt",
+        "value": "leather map case on a shoulder strap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
-        "derived": true
-      },
-      "shape": {
-        "value": "compact cylindrical lamp",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull steel and dark brown leather",
+        "value": "dark brown leather and dull brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "steel, leather",
+        "value": "leather, brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "clipped at the belt",
+        "value": "slung from the shoulder",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat rectangular case",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 탁서윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: sturdy; skin: tan warm beige. headwear: soft wool field cap without badge; upper garment: dove grey belted canvas field jacket with flap chest pockets, with a light knitted scarf; neckline: closed turn-down collar. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: dove grey, oxblood, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 탁서윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: sturdy; skin: tan warm beige. headwear: soft wool field cap without badge; upper garment: 대정전 전 얼룩무늬 방한복을 고쳐 지은 누빔 긴 외투; neckline: closed turn-down collar. accessories: leather map case on a shoulder strap; worn as slung from the shoulder. color palette: olive drab, navy, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 탁서윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: sturdy; skin: tan warm beige; average adult male height. headwear: soft wool field cap without badge; upper garment: dove grey belted canvas field jacket with flap chest pockets, with a light knitted scarf; neckline: closed turn-down collar; lower garment: oxblood canvas work trousers tucked into boots; footwear: lace-up leather combat boots. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: dove grey, oxblood, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 탁서윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: sturdy; skin: tan warm beige; average adult male height. headwear: soft wool field cap without badge; upper garment: 대정전 전 얼룩무늬 방한복을 고쳐 지은 누빔 긴 외투; neckline: closed turn-down collar; lower garment: camouflage winter trousers over quilted liners; footwear: polished felt-lined combat boots. accessories: leather map case on a shoulder strap; worn as slung from the shoulder. color palette: olive drab, navy, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 탁서윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: sturdy; skin: tan warm beige; average adult male height. headwear: soft wool field cap without badge; upper garment: dove grey belted canvas field jacket with flap chest pockets, with a light knitted scarf; neckline: closed turn-down collar; lower garment: oxblood canvas work trousers tucked into boots; footwear: lace-up leather combat boots. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: dove grey, oxblood, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 탁서윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: sturdy; skin: tan warm beige; average adult male height. headwear: soft wool field cap without badge; upper garment: 대정전 전 얼룩무늬 방한복을 고쳐 지은 누빔 긴 외투; neckline: closed turn-down collar; lower garment: camouflage winter trousers over quilted liners; footwear: polished felt-lined combat boots. accessories: leather map case on a shoulder strap; worn as slung from the shoulder. color palette: olive drab, navy, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 탁서윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: sturdy; skin: tan warm beige; average adult male height. headwear: soft wool field cap without badge; upper garment: dove grey belted canvas field jacket with flap chest pockets, with a light knitted scarf; neckline: closed turn-down collar; lower garment: oxblood canvas work trousers tucked into boots; footwear: lace-up leather combat boots. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: dove grey, oxblood, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 탁서윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: sturdy; skin: tan warm beige; average adult male height. headwear: soft wool field cap without badge; upper garment: 대정전 전 얼룩무늬 방한복을 고쳐 지은 누빔 긴 외투; neckline: closed turn-down collar; lower garment: camouflage winter trousers over quilted liners; footwear: polished felt-lined combat boots. accessories: leather map case on a shoulder strap; worn as slung from the shoulder. color palette: olive drab, navy, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 탁서윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: sturdy; skin: tan warm beige; average adult male height. headwear: soft wool field cap without badge; upper garment: dove grey belted canvas field jacket with flap chest pockets, with a light knitted scarf; neckline: closed turn-down collar; lower garment: oxblood canvas work trousers tucked into boots; footwear: lace-up leather combat boots. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: dove grey, oxblood, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 탁서윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: sturdy; skin: tan warm beige; average adult male height. headwear: soft wool field cap without badge; upper garment: 대정전 전 얼룩무늬 방한복을 고쳐 지은 누빔 긴 외투; neckline: closed turn-down collar; lower garment: camouflage winter trousers over quilted liners; footwear: polished felt-lined combat boots. accessories: leather map case on a shoulder strap; worn as slung from the shoulder. color palette: olive drab, navy, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

@@ -3,27 +3,27 @@
   "personId": "person-0232",
   "characterId": "K231",
   "name": "국두봉",
-  "stateId": "S09",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "화폐 감정 기록관, 황은설의 실무 담당자"
+    "role": "보라매역 역반장 · 자유도시들"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, youthful smooth skin",
     "hair": "medium-length hair swept back",
-    "upper": "mustard ochre buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer",
-    "outfit": "mustard ochre buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer",
+    "upper": "깃에 금빛 끈을 두른 솜 조끼를 겹친 짙은 남색 합성 섬유 작업 외투",
+    "outfit": "깃에 금빛 끈을 두른 솜 조끼를 겹친 짙은 남색 합성 섬유 작업 외투",
     "palette": [
-      "mustard ochre",
-      "olive drab",
-      "sand beige"
+      "midnight blue",
+      "gold",
+      "brass"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "olive drab high-waisted pleated trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "dark synthetic trousers",
+    "footwear": "felt-lined boots",
+    "accessories": "pocket sand-glass and a ring of keys"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "knitted dark cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "mustard ochre buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer",
+        "value": "깃에 금빛 끈을 두른 솜 조끼를 겹친 짙은 남색 합성 섬유 작업 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "olive drab high-waisted pleated trousers",
+        "value": "dark synthetic trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt-lined boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "quilted collar with a gold cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "pocket sand-glass and a ring of keys",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "glass and blackened brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "glass, brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "sand-glass in the breast pocket, keys on the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small hourglass and key ring",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 국두봉, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: average; skin: fair with a neutral undertone. upper garment: mustard ochre buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: mustard ochre, olive drab, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 국두봉, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: average; skin: fair with a neutral undertone. headwear: knitted dark cap; upper garment: 깃에 금빛 끈을 두른 솜 조끼를 겹친 짙은 남색 합성 섬유 작업 외투; neckline: quilted collar with a gold cord. accessories: pocket sand-glass and a ring of keys; worn as sand-glass in the breast pocket, keys on the belt. color palette: midnight blue, gold, brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 국두봉, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: mustard ochre buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: olive drab high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: mustard ochre, olive drab, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 국두봉, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: average; skin: fair with a neutral undertone; average adult male height. headwear: knitted dark cap; upper garment: 깃에 금빛 끈을 두른 솜 조끼를 겹친 짙은 남색 합성 섬유 작업 외투; neckline: quilted collar with a gold cord; lower garment: dark synthetic trousers; footwear: felt-lined boots. accessories: pocket sand-glass and a ring of keys; worn as sand-glass in the breast pocket, keys on the belt. color palette: midnight blue, gold, brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 국두봉, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: mustard ochre buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: olive drab high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: mustard ochre, olive drab, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 국두봉, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: average; skin: fair with a neutral undertone; average adult male height. headwear: knitted dark cap; upper garment: 깃에 금빛 끈을 두른 솜 조끼를 겹친 짙은 남색 합성 섬유 작업 외투; neckline: quilted collar with a gold cord; lower garment: dark synthetic trousers; footwear: felt-lined boots. accessories: pocket sand-glass and a ring of keys; worn as sand-glass in the breast pocket, keys on the belt. color palette: midnight blue, gold, brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 국두봉, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: mustard ochre buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: olive drab high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: mustard ochre, olive drab, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 국두봉, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: average; skin: fair with a neutral undertone; average adult male height. headwear: knitted dark cap; upper garment: 깃에 금빛 끈을 두른 솜 조끼를 겹친 짙은 남색 합성 섬유 작업 외투; neckline: quilted collar with a gold cord; lower garment: dark synthetic trousers; footwear: felt-lined boots. accessories: pocket sand-glass and a ring of keys; worn as sand-glass in the breast pocket, keys on the belt. color palette: midnight blue, gold, brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 국두봉, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: mustard ochre buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: olive drab high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: mustard ochre, olive drab, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 국두봉, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: average; skin: fair with a neutral undertone; average adult male height. headwear: knitted dark cap; upper garment: 깃에 금빛 끈을 두른 솜 조끼를 겹친 짙은 남색 합성 섬유 작업 외투; neckline: quilted collar with a gold cord; lower garment: dark synthetic trousers; footwear: felt-lined boots. accessories: pocket sand-glass and a ring of keys; worn as sand-glass in the breast pocket, keys on the belt. color palette: midnight blue, gold, brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

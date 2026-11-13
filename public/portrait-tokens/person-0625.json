@@ -3,27 +3,27 @@
   "personId": "person-0625",
   "characterId": "K625",
   "name": "박금은",
-  "stateId": "S10",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "장경 필사 행자"
+    "role": "구청 서기 · 서울역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "medium-length hair swept back",
-    "upper": "cream simple high-collared tunic under a long woven shawl, with a thick knitted scarf and an extra padded layer",
-    "outfit": "cream simple high-collared tunic under a long woven shawl, with a thick knitted scarf and an extra padded layer",
+    "upper": "quilted long coat with a navy band at the upper arm, over a navy quilted vest",
+    "outfit": "quilted long coat with a navy band at the upper arm, over a navy quilted vest",
     "palette": [
-      "cream",
-      "slate blue",
-      "sand beige"
+      "navy",
+      "grey",
+      "cream"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "slate blue wool breeches with buttoned cuffs",
-    "footwear": "soft leather slip-on shoes",
-    "accessories": "simple wooden prayer beads"
+    "lower": "navy quilted wool trousers",
+    "footwear": "felt boots with rubber soles",
+    "accessories": "civil-servant ID card on a neck cord beside the metal registration token, and a small seal pouch"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "cream simple high-collared tunic under a long woven shawl, with a thick knitted scarf and an extra padded layer",
+        "value": "quilted long coat with a navy band at the upper arm, over a navy quilted vest",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "slate blue wool breeches with buttoned cuffs",
+        "value": "navy quilted wool trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "soft leather slip-on shoes",
+        "value": "felt boots with rubber soles",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "standing collar",
+        "value": "buttoned shirt collar under a knitted scarf",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "simple wooden prayer beads",
+        "value": "civil-servant ID card on a neck cord beside the metal registration token, and a small seal pouch",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(religious)",
-        "derived": true
-      },
-      "shape": {
-        "value": "loop of round beads",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(religious)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dark polished wood",
+        "value": "navy cord, dull steel and brown leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(religious)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "wood, cord",
+        "value": "card, steel, leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(religious)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "wrapped around the wrist",
+        "value": "card and token on cords at the neck, pouch at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(religious)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat card, oblong token and a small round-flap pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 박금은, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; round dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: slim; skin: fair with a neutral undertone. upper garment: cream simple high-collared tunic under a long woven shawl, with a thick knitted scarf and an extra padded layer; neckline: standing collar. accessories: simple wooden prayer beads; worn as wrapped around the wrist. color palette: cream, slate blue, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 박금은, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; round dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: slim; skin: fair with a neutral undertone. upper garment: quilted long coat with a navy band at the upper arm, over a navy quilted vest; neckline: buttoned shirt collar under a knitted scarf. accessories: civil-servant ID card on a neck cord beside the metal registration token, and a small seal pouch; worn as card and token on cords at the neck, pouch at the belt. color palette: navy, grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 박금은, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; round dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: cream simple high-collared tunic under a long woven shawl, with a thick knitted scarf and an extra padded layer; neckline: standing collar; lower garment: slate blue wool breeches with buttoned cuffs; footwear: soft leather slip-on shoes. accessories: simple wooden prayer beads; worn as wrapped around the wrist. color palette: cream, slate blue, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 박금은, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; round dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: quilted long coat with a navy band at the upper arm, over a navy quilted vest; neckline: buttoned shirt collar under a knitted scarf; lower garment: navy quilted wool trousers; footwear: felt boots with rubber soles. accessories: civil-servant ID card on a neck cord beside the metal registration token, and a small seal pouch; worn as card and token on cords at the neck, pouch at the belt. color palette: navy, grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 박금은, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; round dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: cream simple high-collared tunic under a long woven shawl, with a thick knitted scarf and an extra padded layer; neckline: standing collar; lower garment: slate blue wool breeches with buttoned cuffs; footwear: soft leather slip-on shoes. accessories: simple wooden prayer beads; worn as wrapped around the wrist. color palette: cream, slate blue, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 박금은, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; round dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: quilted long coat with a navy band at the upper arm, over a navy quilted vest; neckline: buttoned shirt collar under a knitted scarf; lower garment: navy quilted wool trousers; footwear: felt boots with rubber soles. accessories: civil-servant ID card on a neck cord beside the metal registration token, and a small seal pouch; worn as card and token on cords at the neck, pouch at the belt. color palette: navy, grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 박금은, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; round dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: cream simple high-collared tunic under a long woven shawl, with a thick knitted scarf and an extra padded layer; neckline: standing collar; lower garment: slate blue wool breeches with buttoned cuffs; footwear: soft leather slip-on shoes. accessories: simple wooden prayer beads; worn as wrapped around the wrist. color palette: cream, slate blue, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 박금은, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; round dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: quilted long coat with a navy band at the upper arm, over a navy quilted vest; neckline: buttoned shirt collar under a knitted scarf; lower garment: navy quilted wool trousers; footwear: felt boots with rubber soles. accessories: civil-servant ID card on a neck cord beside the metal registration token, and a small seal pouch; worn as card and token on cords at the neck, pouch at the belt. color palette: navy, grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 박금은, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; round dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: cream simple high-collared tunic under a long woven shawl, with a thick knitted scarf and an extra padded layer; neckline: standing collar; lower garment: slate blue wool breeches with buttoned cuffs; footwear: soft leather slip-on shoes. accessories: simple wooden prayer beads; worn as wrapped around the wrist. color palette: cream, slate blue, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 박금은, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; round dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: quilted long coat with a navy band at the upper arm, over a navy quilted vest; neckline: buttoned shirt collar under a knitted scarf; lower garment: navy quilted wool trousers; footwear: felt boots with rubber soles. accessories: civil-servant ID card on a neck cord beside the metal registration token, and a small seal pouch; worn as card and token on cords at the neck, pouch at the belt. color palette: navy, grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

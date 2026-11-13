@@ -3,27 +3,27 @@
   "personId": "person-0055",
   "characterId": "K055",
   "name": "여시온",
-  "stateId": "S02",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "제작헌장 전령"
+    "role": "구로역 역반장 · 자유도시들"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "shoulder-length hair styled in 1940s victory rolls",
-    "upper": "mustard ochre wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "mustard ochre wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "깃에 남색 끈을 두른 그을린 회색 합성 섬유 작업 외투, 공구 고리를 단 허리띠",
+    "outfit": "깃에 남색 끈을 두른 그을린 회색 합성 섬유 작업 외투, 공구 고리를 단 허리띠",
     "palette": [
-      "mustard ochre",
-      "slate blue",
-      "forest green"
+      "smoke grey",
+      "navy",
+      "tin"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "slate blue wool trousers bloused over boots",
-    "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "leather dispatch satchel"
+    "lower": "grey synthetic trousers with knee patches",
+    "footwear": "resoled boots",
+    "accessories": "tin whistle on a cord and a ring of keys"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "knitted wool watch cap",
+        "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "mustard ochre wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "깃에 남색 끈을 두른 그을린 회색 합성 섬유 작업 외투, 공구 고리를 단 허리띠",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "slate blue wool trousers bloused over boots",
+        "value": "grey synthetic trousers with knee patches",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "thick-soled leather winter boots with wool socks",
+        "value": "resoled boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "turned-up jacket collar",
+        "value": "open collar with a navy cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "leather dispatch satchel",
+        "value": "tin whistle on a cord and a ring of keys",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat flap satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "worn brown leather",
+        "value": "tin and brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, brass buckle",
+        "value": "tin, brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the chest",
+        "value": "whistle around the neck, keys on the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "whistle and key ring",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 여시온, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: light olive. headwear: knitted wool watch cap; upper garment: mustard ochre wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar. accessories: leather dispatch satchel; worn as strap across the chest. color palette: mustard ochre, slate blue, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 여시온, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: light olive. upper garment: 깃에 남색 끈을 두른 그을린 회색 합성 섬유 작업 외투, 공구 고리를 단 허리띠; neckline: open collar with a navy cord. accessories: tin whistle on a cord and a ring of keys; worn as whistle around the neck, keys on the belt. color palette: smoke grey, navy, tin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 여시온, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: light olive; average adult female height. headwear: knitted wool watch cap; upper garment: mustard ochre wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: slate blue wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: mustard ochre, slate blue, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 여시온, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: light olive; average adult female height. upper garment: 깃에 남색 끈을 두른 그을린 회색 합성 섬유 작업 외투, 공구 고리를 단 허리띠; neckline: open collar with a navy cord; lower garment: grey synthetic trousers with knee patches; footwear: resoled boots. accessories: tin whistle on a cord and a ring of keys; worn as whistle around the neck, keys on the belt. color palette: smoke grey, navy, tin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 여시온, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: light olive; average adult female height. headwear: knitted wool watch cap; upper garment: mustard ochre wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: slate blue wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: mustard ochre, slate blue, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 여시온, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: light olive; average adult female height. upper garment: 깃에 남색 끈을 두른 그을린 회색 합성 섬유 작업 외투, 공구 고리를 단 허리띠; neckline: open collar with a navy cord; lower garment: grey synthetic trousers with knee patches; footwear: resoled boots. accessories: tin whistle on a cord and a ring of keys; worn as whistle around the neck, keys on the belt. color palette: smoke grey, navy, tin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 여시온, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: light olive; average adult female height. headwear: knitted wool watch cap; upper garment: mustard ochre wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: slate blue wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: mustard ochre, slate blue, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 여시온, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: light olive; average adult female height. upper garment: 깃에 남색 끈을 두른 그을린 회색 합성 섬유 작업 외투, 공구 고리를 단 허리띠; neckline: open collar with a navy cord; lower garment: grey synthetic trousers with knee patches; footwear: resoled boots. accessories: tin whistle on a cord and a ring of keys; worn as whistle around the neck, keys on the belt. color palette: smoke grey, navy, tin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 여시온, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: light olive; average adult female height. headwear: knitted wool watch cap; upper garment: mustard ochre wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: slate blue wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: mustard ochre, slate blue, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 여시온, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: light olive; average adult female height. upper garment: 깃에 남색 끈을 두른 그을린 회색 합성 섬유 작업 외투, 공구 고리를 단 허리띠; neckline: open collar with a navy cord; lower garment: grey synthetic trousers with knee patches; footwear: resoled boots. accessories: tin whistle on a cord and a ring of keys; worn as whistle around the neck, keys on the belt. color palette: smoke grey, navy, tin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

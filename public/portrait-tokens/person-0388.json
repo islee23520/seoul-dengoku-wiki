@@ -3,26 +3,27 @@
   "personId": "person-0388",
   "characterId": "K387",
   "name": "천솔빛",
-  "stateId": "S15",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "명동역 인준 명부 수사"
+    "role": "종로3가역 역장 · 정부"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "chin-length bob with soft waves",
-    "upper": "burgundy plain single-breasted clerk's jacket with cotton oversleeves",
-    "outfit": "burgundy plain single-breasted clerk's jacket with cotton oversleeves",
+    "upper": "남색 누비 긴 외투, 안에 누빈 조끼",
+    "outfit": "남색 누비 긴 외투, 안에 누빈 조끼",
     "palette": [
-      "burgundy",
-      "cream"
+      "navy",
+      "charcoal grey",
+      "dull brass"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "cream straight wool trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "dark grey wadded trousers",
+    "footwear": "felt-lined synthetic rubber boots",
+    "accessories": "station-name band on the cap and a ring of entrance keys"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -173,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "old subway station staff cap with a station-name band",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "burgundy plain single-breasted clerk's jacket with cotton oversleeves",
+        "value": "남색 누비 긴 외투, 안에 누빈 조끼",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "cream straight wool trousers",
+        "value": "dark grey wadded trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt-lined synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "high quilted collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "station-name band on the cap and a ring of entrance keys",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "navy and dull brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "cloth, iron",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "band on the cap; keys on a belt ring",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "narrow band; ring of keys",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 천솔빛, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone. upper garment: burgundy plain single-breasted clerk's jacket with cotton oversleeves; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 천솔빛, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone. headwear: old subway station staff cap with a station-name band; upper garment: 남색 누비 긴 외투, 안에 누빈 조끼; neckline: high quilted collar. accessories: station-name band on the cap and a ring of entrance keys; worn as band on the cap; keys on a belt ring. color palette: navy, charcoal grey, dull brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 천솔빛, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. upper garment: burgundy plain single-breasted clerk's jacket with cotton oversleeves; neckline: buttoned shirt collar; lower garment: cream straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 천솔빛, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. headwear: old subway station staff cap with a station-name band; upper garment: 남색 누비 긴 외투, 안에 누빈 조끼; neckline: high quilted collar; lower garment: dark grey wadded trousers; footwear: felt-lined synthetic rubber boots. accessories: station-name band on the cap and a ring of entrance keys; worn as band on the cap; keys on a belt ring. color palette: navy, charcoal grey, dull brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 천솔빛, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. upper garment: burgundy plain single-breasted clerk's jacket with cotton oversleeves; neckline: buttoned shirt collar; lower garment: cream straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 천솔빛, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. headwear: old subway station staff cap with a station-name band; upper garment: 남색 누비 긴 외투, 안에 누빈 조끼; neckline: high quilted collar; lower garment: dark grey wadded trousers; footwear: felt-lined synthetic rubber boots. accessories: station-name band on the cap and a ring of entrance keys; worn as band on the cap; keys on a belt ring. color palette: navy, charcoal grey, dull brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 천솔빛, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. upper garment: burgundy plain single-breasted clerk's jacket with cotton oversleeves; neckline: buttoned shirt collar; lower garment: cream straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 천솔빛, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. headwear: old subway station staff cap with a station-name band; upper garment: 남색 누비 긴 외투, 안에 누빈 조끼; neckline: high quilted collar; lower garment: dark grey wadded trousers; footwear: felt-lined synthetic rubber boots. accessories: station-name band on the cap and a ring of entrance keys; worn as band on the cap; keys on a belt ring. color palette: navy, charcoal grey, dull brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 천솔빛, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. upper garment: burgundy plain single-breasted clerk's jacket with cotton oversleeves; neckline: buttoned shirt collar; lower garment: cream straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 천솔빛, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. headwear: old subway station staff cap with a station-name band; upper garment: 남색 누비 긴 외투, 안에 누빈 조끼; neckline: high quilted collar; lower garment: dark grey wadded trousers; footwear: felt-lined synthetic rubber boots. accessories: station-name band on the cap and a ring of entrance keys; worn as band on the cap; keys on a belt ring. color palette: navy, charcoal grey, dull brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

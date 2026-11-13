@@ -3,26 +3,27 @@
   "personId": "person-0056",
   "characterId": "K056",
   "name": "기필호",
-  "stateId": "S02",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "제작 병참"
+    "role": "신대방 구간장 · 자유도시들"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, youthful smooth skin",
     "hair": "medium-length hair swept back",
-    "upper": "sand beige short wool jacket with a stand collar",
-    "outfit": "sand beige short wool jacket with a stand collar",
+    "upper": "깃에 하늘색 끈을 두른 짙은 회색 합성 섬유 짧은 겉옷, 공구 고리를 단 허리띠",
+    "outfit": "깃에 하늘색 끈을 두른 짙은 회색 합성 섬유 짧은 겉옷, 공구 고리를 단 허리띠",
     "palette": [
-      "sand beige",
-      "charcoal"
+      "charcoal",
+      "sky blue",
+      "slate grey"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "charcoal wool breeches with buttoned cuffs",
-    "footwear": "leather ankle boots",
-    "accessories": "duty whistle on a cord lanyard"
+    "lower": "charcoal synthetic work trousers",
+    "footwear": "laced rubber boots",
+    "accessories": "slate tally board and chalk"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -175,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "sand beige short wool jacket with a stand collar",
+        "value": "깃에 하늘색 끈을 두른 짙은 회색 합성 섬유 짧은 겉옷, 공구 고리를 단 허리띠",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "charcoal wool breeches with buttoned cuffs",
+        "value": "charcoal synthetic work trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "leather ankle boots",
+        "value": "laced rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "stand collar with a sky blue cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "duty whistle on a cord lanyard",
+        "value": "slate tally board and chalk",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull brass",
+        "value": "grey slate",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, cord",
+        "value": "slate",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "lanyard around the neck",
+        "value": "hung at the hip",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat rectangle",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 기필호, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige. upper garment: sand beige short wool jacket with a stand collar; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: sand beige, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 기필호, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige. upper garment: 깃에 하늘색 끈을 두른 짙은 회색 합성 섬유 짧은 겉옷, 공구 고리를 단 허리띠; neckline: stand collar with a sky blue cord. accessories: slate tally board and chalk; worn as hung at the hip. color palette: charcoal, sky blue, slate grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 기필호, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige; average adult male height. upper garment: sand beige short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: charcoal wool breeches with buttoned cuffs; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: sand beige, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 기필호, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige; average adult male height. upper garment: 깃에 하늘색 끈을 두른 짙은 회색 합성 섬유 짧은 겉옷, 공구 고리를 단 허리띠; neckline: stand collar with a sky blue cord; lower garment: charcoal synthetic work trousers; footwear: laced rubber boots. accessories: slate tally board and chalk; worn as hung at the hip. color palette: charcoal, sky blue, slate grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 기필호, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige; average adult male height. upper garment: sand beige short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: charcoal wool breeches with buttoned cuffs; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: sand beige, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 기필호, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige; average adult male height. upper garment: 깃에 하늘색 끈을 두른 짙은 회색 합성 섬유 짧은 겉옷, 공구 고리를 단 허리띠; neckline: stand collar with a sky blue cord; lower garment: charcoal synthetic work trousers; footwear: laced rubber boots. accessories: slate tally board and chalk; worn as hung at the hip. color palette: charcoal, sky blue, slate grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 기필호, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige; average adult male height. upper garment: sand beige short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: charcoal wool breeches with buttoned cuffs; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: sand beige, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 기필호, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige; average adult male height. upper garment: 깃에 하늘색 끈을 두른 짙은 회색 합성 섬유 짧은 겉옷, 공구 고리를 단 허리띠; neckline: stand collar with a sky blue cord; lower garment: charcoal synthetic work trousers; footwear: laced rubber boots. accessories: slate tally board and chalk; worn as hung at the hip. color palette: charcoal, sky blue, slate grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 기필호, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige; average adult male height. upper garment: sand beige short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: charcoal wool breeches with buttoned cuffs; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: sand beige, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 기필호, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige; average adult male height. upper garment: 깃에 하늘색 끈을 두른 짙은 회색 합성 섬유 짧은 겉옷, 공구 고리를 단 허리띠; neckline: stand collar with a sky blue cord; lower garment: charcoal synthetic work trousers; footwear: laced rubber boots. accessories: slate tally board and chalk; worn as hung at the hip. color palette: charcoal, sky blue, slate grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

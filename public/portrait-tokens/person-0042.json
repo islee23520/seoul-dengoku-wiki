@@ -3,27 +3,27 @@
   "personId": "person-0042",
   "characterId": "K042",
   "name": "표강호",
-  "stateId": "S02",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "제작규격 전령"
+    "role": "구로 표씨네 부품대 대주 · 구로역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "shoulder-length hair styled in 1940s victory rolls",
-    "upper": "navy wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "navy wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "깃에 남색 끈을 두른 쇳가루 묻은 진회색 합성 섬유 겹 작업복, 소매를 걷어 올린 짧은 겉옷",
+    "outfit": "깃에 남색 끈을 두른 쇳가루 묻은 진회색 합성 섬유 겹 작업복, 소매를 걷어 올린 짧은 겉옷",
     "palette": [
+      "iron grey",
       "navy",
-      "cream",
-      "slate blue"
+      "rust"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "cream wool trousers bloused over boots",
-    "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "leather dispatch satchel"
+    "lower": "dark synthetic work trousers with leather knee patches",
+    "footwear": "steel-toed resoled work boots",
+    "accessories": "stamped iron guarantee token of the bench on a neck chain"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "fur-lined ear-flap cap",
+        "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "navy wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "깃에 남색 끈을 두른 쇳가루 묻은 진회색 합성 섬유 겹 작업복, 소매를 걷어 올린 짧은 겉옷",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "cream wool trousers bloused over boots",
+        "value": "dark synthetic work trousers with leather knee patches",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "thick-soled leather winter boots with wool socks",
+        "value": "steel-toed resoled work boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "turned-up jacket collar",
+        "value": "open collar with a navy cord and a guarantee token on a chain",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "leather dispatch satchel",
+        "value": "stamped iron guarantee token of the bench on a neck chain",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat flap satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "worn brown leather",
+        "value": "dark iron",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, brass buckle",
+        "value": "iron, chain",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the chest",
+        "value": "worn around the neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small round stamped disc",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 표강호, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown with grey at the temples hair; shoulder-length length. build: soft rounded; skin: fair with a neutral undertone. headwear: fur-lined ear-flap cap; upper garment: navy wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar. accessories: leather dispatch satchel; worn as strap across the chest. color palette: navy, cream, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 표강호, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown with grey at the temples hair; shoulder-length length. build: soft rounded; skin: fair with a neutral undertone. upper garment: 깃에 남색 끈을 두른 쇳가루 묻은 진회색 합성 섬유 겹 작업복, 소매를 걷어 올린 짧은 겉옷; neckline: open collar with a navy cord and a guarantee token on a chain. accessories: stamped iron guarantee token of the bench on a neck chain; worn as worn around the neck. color palette: iron grey, navy, rust. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 표강호, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown with grey at the temples hair; shoulder-length length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: navy wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: cream wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: navy, cream, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 표강호, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown with grey at the temples hair; shoulder-length length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. upper garment: 깃에 남색 끈을 두른 쇳가루 묻은 진회색 합성 섬유 겹 작업복, 소매를 걷어 올린 짧은 겉옷; neckline: open collar with a navy cord and a guarantee token on a chain; lower garment: dark synthetic work trousers with leather knee patches; footwear: steel-toed resoled work boots. accessories: stamped iron guarantee token of the bench on a neck chain; worn as worn around the neck. color palette: iron grey, navy, rust. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 표강호, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown with grey at the temples hair; shoulder-length length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: navy wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: cream wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: navy, cream, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 표강호, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown with grey at the temples hair; shoulder-length length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. upper garment: 깃에 남색 끈을 두른 쇳가루 묻은 진회색 합성 섬유 겹 작업복, 소매를 걷어 올린 짧은 겉옷; neckline: open collar with a navy cord and a guarantee token on a chain; lower garment: dark synthetic work trousers with leather knee patches; footwear: steel-toed resoled work boots. accessories: stamped iron guarantee token of the bench on a neck chain; worn as worn around the neck. color palette: iron grey, navy, rust. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 표강호, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown with grey at the temples hair; shoulder-length length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: navy wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: cream wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: navy, cream, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 표강호, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown with grey at the temples hair; shoulder-length length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. upper garment: 깃에 남색 끈을 두른 쇳가루 묻은 진회색 합성 섬유 겹 작업복, 소매를 걷어 올린 짧은 겉옷; neckline: open collar with a navy cord and a guarantee token on a chain; lower garment: dark synthetic work trousers with leather knee patches; footwear: steel-toed resoled work boots. accessories: stamped iron guarantee token of the bench on a neck chain; worn as worn around the neck. color palette: iron grey, navy, rust. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 표강호, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown with grey at the temples hair; shoulder-length length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: navy wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: cream wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: navy, cream, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 표강호, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown with grey at the temples hair; shoulder-length length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. upper garment: 깃에 남색 끈을 두른 쇳가루 묻은 진회색 합성 섬유 겹 작업복, 소매를 걷어 올린 짧은 겉옷; neckline: open collar with a navy cord and a guarantee token on a chain; lower garment: dark synthetic work trousers with leather knee patches; footwear: steel-toed resoled work boots. accessories: stamped iron guarantee token of the bench on a neck chain; worn as worn around the neck. color palette: iron grey, navy, rust. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

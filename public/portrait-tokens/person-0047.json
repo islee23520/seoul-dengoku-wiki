@@ -3,27 +3,27 @@
   "personId": "person-0047",
   "characterId": "K047",
   "name": "명다해",
-  "stateId": "S02",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "금천 배급솥 시장 중개인"
+    "role": "금천구청 명씨네 굴착틀대 대주 · 금천구청역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short side-parted hair combed neatly",
-    "upper": "rust brown cardigan-style knit jacket over a collared shirt",
-    "outfit": "rust brown cardigan-style knit jacket over a collared shirt",
+    "upper": "깃에 올리브빛 끈을 두른 쇳가루 박힌 검회색 합성 섬유 겹 작업복, 가죽 앞치마",
+    "outfit": "깃에 올리브빛 끈을 두른 쇳가루 박힌 검회색 합성 섬유 겹 작업복, 가죽 앞치마",
     "palette": [
-      "rust brown",
-      "mustard ochre",
-      "sand beige"
+      "gunmetal",
+      "olive",
+      "scorched brown"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "mustard ochre straight wool trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "small leather coin purse and a folded ledger"
+    "lower": "black synthetic work trousers with knee pads",
+    "footwear": "steel-capped boots",
+    "accessories": "bench guarantee token on a chain and heavy leather gauntlets"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "rust brown cardigan-style knit jacket over a collared shirt",
+        "value": "깃에 올리브빛 끈을 두른 쇳가루 박힌 검회색 합성 섬유 겹 작업복, 가죽 앞치마",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "mustard ochre straight wool trousers",
+        "value": "black synthetic work trousers with knee pads",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "steel-capped boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "shirt collar under a knit vest",
+        "value": "collarless neck with an olive cord and a bench token chain",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "small leather coin purse and a folded ledger",
+        "value": "bench guarantee token on a chain and heavy leather gauntlets",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
-        "derived": true
-      },
-      "shape": {
-        "value": "pouch and narrow ledger",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "brown leather and paper",
+        "value": "dark iron and scorched leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, paper",
+        "value": "iron, leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "purse at the belt, ledger in the coat pocket",
+        "value": "token around the neck, gauntlets tucked in the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "disc and folded gloves",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 명다해, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: light warm beige. upper garment: rust brown cardigan-style knit jacket over a collared shirt; neckline: shirt collar under a knit vest. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: rust brown, mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 명다해, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: light warm beige. upper garment: 깃에 올리브빛 끈을 두른 쇳가루 박힌 검회색 합성 섬유 겹 작업복, 가죽 앞치마; neckline: collarless neck with an olive cord and a bench token chain. accessories: bench guarantee token on a chain and heavy leather gauntlets; worn as token around the neck, gauntlets tucked in the belt. color palette: gunmetal, olive, scorched brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 명다해, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: rust brown cardigan-style knit jacket over a collared shirt; neckline: shirt collar under a knit vest; lower garment: mustard ochre straight wool trousers; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: rust brown, mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 명다해, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: 깃에 올리브빛 끈을 두른 쇳가루 박힌 검회색 합성 섬유 겹 작업복, 가죽 앞치마; neckline: collarless neck with an olive cord and a bench token chain; lower garment: black synthetic work trousers with knee pads; footwear: steel-capped boots. accessories: bench guarantee token on a chain and heavy leather gauntlets; worn as token around the neck, gauntlets tucked in the belt. color palette: gunmetal, olive, scorched brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 명다해, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: rust brown cardigan-style knit jacket over a collared shirt; neckline: shirt collar under a knit vest; lower garment: mustard ochre straight wool trousers; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: rust brown, mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 명다해, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: 깃에 올리브빛 끈을 두른 쇳가루 박힌 검회색 합성 섬유 겹 작업복, 가죽 앞치마; neckline: collarless neck with an olive cord and a bench token chain; lower garment: black synthetic work trousers with knee pads; footwear: steel-capped boots. accessories: bench guarantee token on a chain and heavy leather gauntlets; worn as token around the neck, gauntlets tucked in the belt. color palette: gunmetal, olive, scorched brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 명다해, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: rust brown cardigan-style knit jacket over a collared shirt; neckline: shirt collar under a knit vest; lower garment: mustard ochre straight wool trousers; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: rust brown, mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 명다해, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: 깃에 올리브빛 끈을 두른 쇳가루 박힌 검회색 합성 섬유 겹 작업복, 가죽 앞치마; neckline: collarless neck with an olive cord and a bench token chain; lower garment: black synthetic work trousers with knee pads; footwear: steel-capped boots. accessories: bench guarantee token on a chain and heavy leather gauntlets; worn as token around the neck, gauntlets tucked in the belt. color palette: gunmetal, olive, scorched brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 명다해, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: rust brown cardigan-style knit jacket over a collared shirt; neckline: shirt collar under a knit vest; lower garment: mustard ochre straight wool trousers; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: rust brown, mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 명다해, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: 깃에 올리브빛 끈을 두른 쇳가루 박힌 검회색 합성 섬유 겹 작업복, 가죽 앞치마; neckline: collarless neck with an olive cord and a bench token chain; lower garment: black synthetic work trousers with knee pads; footwear: steel-capped boots. accessories: bench guarantee token on a chain and heavy leather gauntlets; worn as token around the neck, gauntlets tucked in the belt. color palette: gunmetal, olive, scorched brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

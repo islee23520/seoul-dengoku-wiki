@@ -3,27 +3,27 @@
   "personId": "person-0034",
   "characterId": "K034",
   "name": "최다인",
-  "stateId": "S02",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "공병 작업반장"
+    "role": "강서 바람지기 · 자유도시들"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short wavy hair",
-    "upper": "olive drab short wool jacket with a stand collar",
-    "outfit": "olive drab short wool jacket with a stand collar",
+    "upper": "보라 도시 끈을 깃에 두른 짙은 올리브색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷",
+    "outfit": "보라 도시 끈을 깃에 두른 짙은 올리브색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷",
     "palette": [
       "olive drab",
       "navy",
       "clay brown"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "navy wool breeches with buttoned cuffs",
-    "footwear": "laced leather walking shoes",
-    "accessories": "duty whistle on a cord lanyard"
+    "lower": "navy synthetic work trousers with patched knees",
+    "footwear": "thick-soled insulated boots with rubber overshoes",
+    "accessories": "rope harness hook at the waist for climbing windmills"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "padded synthetic hood with snow goggles pushed up",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "olive drab short wool jacket with a stand collar",
+        "value": "보라 도시 끈을 깃에 두른 짙은 올리브색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "navy wool breeches with buttoned cuffs",
+        "value": "navy synthetic work trousers with patched knees",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "thick-soled insulated boots with rubber overshoes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "stand collar with a purple city cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "duty whistle on a cord lanyard",
+        "value": "rope harness hook at the waist for climbing windmills",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull brass",
+        "value": "dull steel and purple webbing",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, cord",
+        "value": "steel, synthetic webbing",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "lanyard around the neck",
+        "value": "clipped to a waist harness",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "large snap hook on a harness",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 최다인, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short wavy hair; black hair; short length. build: average with narrow shoulders; skin: medium warm beige. upper garment: olive drab short wool jacket with a stand collar; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 최다인, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short wavy hair; black hair; short length. build: average with narrow shoulders; skin: medium warm beige. headwear: padded synthetic hood with snow goggles pushed up; upper garment: 보라 도시 끈을 깃에 두른 짙은 올리브색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷; neckline: stand collar with a purple city cord. accessories: rope harness hook at the waist for climbing windmills; worn as clipped to a waist harness. color palette: olive drab, navy, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 최다인, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short wavy hair; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: olive drab short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: navy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 최다인, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short wavy hair; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. headwear: padded synthetic hood with snow goggles pushed up; upper garment: 보라 도시 끈을 깃에 두른 짙은 올리브색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷; neckline: stand collar with a purple city cord; lower garment: navy synthetic work trousers with patched knees; footwear: thick-soled insulated boots with rubber overshoes. accessories: rope harness hook at the waist for climbing windmills; worn as clipped to a waist harness. color palette: olive drab, navy, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 최다인, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short wavy hair; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: olive drab short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: navy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 최다인, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short wavy hair; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. headwear: padded synthetic hood with snow goggles pushed up; upper garment: 보라 도시 끈을 깃에 두른 짙은 올리브색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷; neckline: stand collar with a purple city cord; lower garment: navy synthetic work trousers with patched knees; footwear: thick-soled insulated boots with rubber overshoes. accessories: rope harness hook at the waist for climbing windmills; worn as clipped to a waist harness. color palette: olive drab, navy, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 최다인, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short wavy hair; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: olive drab short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: navy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 최다인, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short wavy hair; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. headwear: padded synthetic hood with snow goggles pushed up; upper garment: 보라 도시 끈을 깃에 두른 짙은 올리브색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷; neckline: stand collar with a purple city cord; lower garment: navy synthetic work trousers with patched knees; footwear: thick-soled insulated boots with rubber overshoes. accessories: rope harness hook at the waist for climbing windmills; worn as clipped to a waist harness. color palette: olive drab, navy, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 최다인, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short wavy hair; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: olive drab short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: navy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 최다인, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short wavy hair; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. headwear: padded synthetic hood with snow goggles pushed up; upper garment: 보라 도시 끈을 깃에 두른 짙은 올리브색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷; neckline: stand collar with a purple city cord; lower garment: navy synthetic work trousers with patched knees; footwear: thick-soled insulated boots with rubber overshoes. accessories: rope harness hook at the waist for climbing windmills; worn as clipped to a waist harness. color palette: olive drab, navy, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

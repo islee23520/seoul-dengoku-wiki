@@ -3,27 +3,27 @@
   "personId": "person-0254",
   "characterId": "K253",
   "name": "봉감",
-  "stateId": "S10",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "약초 의무 주지"
+    "role": "공덕동 동장 · 정부"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short side-parted hair combed neatly",
-    "upper": "oxblood cotton coat over a knitted wool sweater",
-    "outfit": "oxblood cotton coat over a knitted wool sweater",
+    "upper": "quilted slate blue coat with a navy band around the upper arm",
+    "outfit": "quilted slate blue coat with a navy band around the upper arm",
     "palette": [
-      "oxblood",
+      "navy",
       "slate blue",
       "burgundy"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "slate blue wool breeches with buttoned cuffs",
-    "footwear": "laced leather walking shoes",
-    "accessories": "canvas medical satchel without markings"
+    "lower": "quilted trousers",
+    "footwear": "felt boots with synthetic rubber soles",
+    "accessories": "civil-servant ID card and a leather seal pouch on the belt"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "ear-flap cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "oxblood cotton coat over a knitted wool sweater",
+        "value": "quilted slate blue coat with a navy band around the upper arm",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "slate blue wool breeches with buttoned cuffs",
+        "value": "quilted trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt boots with synthetic rubber soles",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -206,39 +206,39 @@
       "neckline": {
         "value": "open coat collar over a rolled sweater neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "canvas medical satchel without markings",
+        "value": "civil-servant ID card and a leather seal pouch on the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat rectangular satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "undyed canvas and brown leather",
+        "value": "navy and worn brown",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "canvas, leather",
+        "value": "laminated card, leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the shoulder",
+        "value": "ID on a neck cord, pouch on the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat card and small pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 봉감, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: slim; skin: fair with a neutral undertone. upper garment: oxblood cotton coat over a knitted wool sweater; neckline: open coat collar over a rolled sweater neck. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: oxblood, slate blue, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 봉감, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: slim; skin: fair with a neutral undertone. headwear: ear-flap cap; upper garment: quilted slate blue coat with a navy band around the upper arm; neckline: open coat collar over a rolled sweater neck. accessories: civil-servant ID card and a leather seal pouch on the belt; worn as ID on a neck cord, pouch on the belt. color palette: navy, slate blue, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 봉감, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: oxblood cotton coat over a knitted wool sweater; neckline: open coat collar over a rolled sweater neck; lower garment: slate blue wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: oxblood, slate blue, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 봉감, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. headwear: ear-flap cap; upper garment: quilted slate blue coat with a navy band around the upper arm; neckline: open coat collar over a rolled sweater neck; lower garment: quilted trousers; footwear: felt boots with synthetic rubber soles. accessories: civil-servant ID card and a leather seal pouch on the belt; worn as ID on a neck cord, pouch on the belt. color palette: navy, slate blue, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 봉감, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: oxblood cotton coat over a knitted wool sweater; neckline: open coat collar over a rolled sweater neck; lower garment: slate blue wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: oxblood, slate blue, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 봉감, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. headwear: ear-flap cap; upper garment: quilted slate blue coat with a navy band around the upper arm; neckline: open coat collar over a rolled sweater neck; lower garment: quilted trousers; footwear: felt boots with synthetic rubber soles. accessories: civil-servant ID card and a leather seal pouch on the belt; worn as ID on a neck cord, pouch on the belt. color palette: navy, slate blue, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 봉감, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: oxblood cotton coat over a knitted wool sweater; neckline: open coat collar over a rolled sweater neck; lower garment: slate blue wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: oxblood, slate blue, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 봉감, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. headwear: ear-flap cap; upper garment: quilted slate blue coat with a navy band around the upper arm; neckline: open coat collar over a rolled sweater neck; lower garment: quilted trousers; footwear: felt boots with synthetic rubber soles. accessories: civil-servant ID card and a leather seal pouch on the belt; worn as ID on a neck cord, pouch on the belt. color palette: navy, slate blue, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 봉감, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: oxblood cotton coat over a knitted wool sweater; neckline: open coat collar over a rolled sweater neck; lower garment: slate blue wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: oxblood, slate blue, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 봉감, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. headwear: ear-flap cap; upper garment: quilted slate blue coat with a navy band around the upper arm; neckline: open coat collar over a rolled sweater neck; lower garment: quilted trousers; footwear: felt boots with synthetic rubber soles. accessories: civil-servant ID card and a leather seal pouch on the belt; worn as ID on a neck cord, pouch on the belt. color palette: navy, slate blue, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

@@ -3,26 +3,27 @@
   "personId": "person-0606",
   "characterId": "K606",
   "name": "시몬 카민스키",
-  "stateId": "S07",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "호송 전령"
+    "role": "구청 서기 · 동대문역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, youthful smooth skin",
     "hair": "short side-parted hair combed neatly",
-    "upper": "forest green short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "forest green short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "quilted long coat with a navy band at the upper arm, over a navy quilted vest",
+    "outfit": "quilted long coat with a navy band at the upper arm, over a navy quilted vest",
     "palette": [
-      "forest green",
-      "clay brown"
+      "navy",
+      "grey",
+      "cream"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "clay brown heavy twill trousers with knee patches",
-    "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "small hand lamp clipped to a leather belt"
+    "lower": "navy quilted wool trousers",
+    "footwear": "felt boots with rubber soles",
+    "accessories": "civil-servant ID card on a neck cord beside the metal registration token, and a small seal pouch"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +175,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "knitted wool watch cap",
+        "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "forest green short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "quilted long coat with a navy band at the upper arm, over a navy quilted vest",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "clay brown heavy twill trousers with knee patches",
+        "value": "navy quilted wool trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "thick-soled leather winter boots with wool socks",
+        "value": "felt boots with rubber soles",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +205,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "closed turn-down collar",
+        "value": "buttoned shirt collar under a knitted scarf",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "small hand lamp clipped to a leather belt",
+        "value": "civil-servant ID card on a neck cord beside the metal registration token, and a small seal pouch",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
-        "derived": true
-      },
-      "shape": {
-        "value": "compact cylindrical lamp",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull steel and dark brown leather",
+        "value": "navy cord, dull steel and brown leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "steel, leather",
+        "value": "card, steel, leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "clipped at the belt",
+        "value": "card and token on cords at the neck, pouch at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat card, oblong token and a small round-flap pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +260,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 시몬 카민스키, an European heritage man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; gently hooded blue eyes; angled eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: sturdy; skin: light beige. headwear: knitted wool watch cap; upper garment: forest green short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: forest green, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 시몬 카민스키, an European heritage man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; gently hooded blue eyes; angled eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: sturdy; skin: light beige. upper garment: quilted long coat with a navy band at the upper arm, over a navy quilted vest; neckline: buttoned shirt collar under a knitted scarf. accessories: civil-servant ID card on a neck cord beside the metal registration token, and a small seal pouch; worn as card and token on cords at the neck, pouch at the belt. color palette: navy, grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 시몬 카민스키, an European heritage man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; gently hooded blue eyes; angled eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: sturdy; skin: light beige; average adult male height. headwear: knitted wool watch cap; upper garment: forest green short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: clay brown heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: forest green, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 시몬 카민스키, an European heritage man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; gently hooded blue eyes; angled eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: sturdy; skin: light beige; average adult male height. upper garment: quilted long coat with a navy band at the upper arm, over a navy quilted vest; neckline: buttoned shirt collar under a knitted scarf; lower garment: navy quilted wool trousers; footwear: felt boots with rubber soles. accessories: civil-servant ID card on a neck cord beside the metal registration token, and a small seal pouch; worn as card and token on cords at the neck, pouch at the belt. color palette: navy, grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 시몬 카민스키, an European heritage man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; gently hooded blue eyes; angled eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: sturdy; skin: light beige; average adult male height. headwear: knitted wool watch cap; upper garment: forest green short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: clay brown heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: forest green, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 시몬 카민스키, an European heritage man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; gently hooded blue eyes; angled eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: sturdy; skin: light beige; average adult male height. upper garment: quilted long coat with a navy band at the upper arm, over a navy quilted vest; neckline: buttoned shirt collar under a knitted scarf; lower garment: navy quilted wool trousers; footwear: felt boots with rubber soles. accessories: civil-servant ID card on a neck cord beside the metal registration token, and a small seal pouch; worn as card and token on cords at the neck, pouch at the belt. color palette: navy, grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 시몬 카민스키, an European heritage man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; gently hooded blue eyes; angled eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: sturdy; skin: light beige; average adult male height. headwear: knitted wool watch cap; upper garment: forest green short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: clay brown heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: forest green, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 시몬 카민스키, an European heritage man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; gently hooded blue eyes; angled eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: sturdy; skin: light beige; average adult male height. upper garment: quilted long coat with a navy band at the upper arm, over a navy quilted vest; neckline: buttoned shirt collar under a knitted scarf; lower garment: navy quilted wool trousers; footwear: felt boots with rubber soles. accessories: civil-servant ID card on a neck cord beside the metal registration token, and a small seal pouch; worn as card and token on cords at the neck, pouch at the belt. color palette: navy, grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 시몬 카민스키, an European heritage man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; gently hooded blue eyes; angled eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: sturdy; skin: light beige; average adult male height. headwear: knitted wool watch cap; upper garment: forest green short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: clay brown heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: forest green, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 시몬 카민스키, an European heritage man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; gently hooded blue eyes; angled eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: sturdy; skin: light beige; average adult male height. upper garment: quilted long coat with a navy band at the upper arm, over a navy quilted vest; neckline: buttoned shirt collar under a knitted scarf; lower garment: navy quilted wool trousers; footwear: felt boots with rubber soles. accessories: civil-servant ID card on a neck cord beside the metal registration token, and a small seal pouch; worn as card and token on cords at the neck, pouch at the belt. color palette: navy, grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

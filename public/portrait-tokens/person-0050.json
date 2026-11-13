@@ -3,27 +3,27 @@
   "personId": "person-0050",
   "characterId": "K050",
   "name": "종마루",
-  "stateId": "S02",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "가짜 펌프 부품 피해자 대표"
+    "role": "대림역 역반장 · 자유도시들"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "very short buzz-cut hair",
-    "upper": "cream denim chore jacket over a henley shirt",
-    "outfit": "cream denim chore jacket over a henley shirt",
+    "upper": "깃에 남색 끈을 두른 솜 조끼를 겹쳐 입은 회색 합성 섬유 작업 외투",
+    "outfit": "깃에 남색 끈을 두른 솜 조끼를 겹쳐 입은 회색 합성 섬유 작업 외투",
     "palette": [
-      "cream",
-      "forest green",
-      "slate blue"
+      "ash grey",
+      "navy",
+      "lamp amber"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "forest green canvas work trousers tucked into boots",
-    "footwear": "steel-toe leather work boots",
-    "accessories": "rolled leather tool roll and work gloves tucked into the belt"
+    "lower": "grey synthetic trousers",
+    "footwear": "felt-lined rubber boots",
+    "accessories": "ring of entrance keys and a lamp-wick trimmer"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "flat cloth cap",
+        "value": "knitted grey cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "cream denim chore jacket over a henley shirt",
+        "value": "깃에 남색 끈을 두른 솜 조끼를 겹쳐 입은 회색 합성 섬유 작업 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "forest green canvas work trousers tucked into boots",
+        "value": "grey synthetic trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "steel-toe leather work boots",
+        "value": "felt-lined rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "open work collar",
+        "value": "quilted collar with a navy cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "rolled leather tool roll and work gloves tucked into the belt",
+        "value": "ring of entrance keys and a lamp-wick trimmer",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "rolled bundle and gloves",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "oiled brown leather",
+        "value": "blackened brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, steel",
+        "value": "brass, steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "tucked into the belt",
+        "value": "clipped to the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "key ring and small scissors",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 종마루, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black streaked with grey hair; very short length. build: broad-shouldered; skin: light warm beige. headwear: flat cloth cap; upper garment: cream denim chore jacket over a henley shirt; neckline: open work collar. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: cream, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 종마루, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black streaked with grey hair; very short length. build: broad-shouldered; skin: light warm beige. headwear: knitted grey cap; upper garment: 깃에 남색 끈을 두른 솜 조끼를 겹쳐 입은 회색 합성 섬유 작업 외투; neckline: quilted collar with a navy cord. accessories: ring of entrance keys and a lamp-wick trimmer; worn as clipped to the belt. color palette: ash grey, navy, lamp amber. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 종마루, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black streaked with grey hair; very short length. build: broad-shouldered; skin: light warm beige; average adult male height. headwear: flat cloth cap; upper garment: cream denim chore jacket over a henley shirt; neckline: open work collar; lower garment: forest green canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: cream, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 종마루, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black streaked with grey hair; very short length. build: broad-shouldered; skin: light warm beige; average adult male height. headwear: knitted grey cap; upper garment: 깃에 남색 끈을 두른 솜 조끼를 겹쳐 입은 회색 합성 섬유 작업 외투; neckline: quilted collar with a navy cord; lower garment: grey synthetic trousers; footwear: felt-lined rubber boots. accessories: ring of entrance keys and a lamp-wick trimmer; worn as clipped to the belt. color palette: ash grey, navy, lamp amber. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 종마루, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black streaked with grey hair; very short length. build: broad-shouldered; skin: light warm beige; average adult male height. headwear: flat cloth cap; upper garment: cream denim chore jacket over a henley shirt; neckline: open work collar; lower garment: forest green canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: cream, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 종마루, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black streaked with grey hair; very short length. build: broad-shouldered; skin: light warm beige; average adult male height. headwear: knitted grey cap; upper garment: 깃에 남색 끈을 두른 솜 조끼를 겹쳐 입은 회색 합성 섬유 작업 외투; neckline: quilted collar with a navy cord; lower garment: grey synthetic trousers; footwear: felt-lined rubber boots. accessories: ring of entrance keys and a lamp-wick trimmer; worn as clipped to the belt. color palette: ash grey, navy, lamp amber. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 종마루, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black streaked with grey hair; very short length. build: broad-shouldered; skin: light warm beige; average adult male height. headwear: flat cloth cap; upper garment: cream denim chore jacket over a henley shirt; neckline: open work collar; lower garment: forest green canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: cream, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 종마루, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black streaked with grey hair; very short length. build: broad-shouldered; skin: light warm beige; average adult male height. headwear: knitted grey cap; upper garment: 깃에 남색 끈을 두른 솜 조끼를 겹쳐 입은 회색 합성 섬유 작업 외투; neckline: quilted collar with a navy cord; lower garment: grey synthetic trousers; footwear: felt-lined rubber boots. accessories: ring of entrance keys and a lamp-wick trimmer; worn as clipped to the belt. color palette: ash grey, navy, lamp amber. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 종마루, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black streaked with grey hair; very short length. build: broad-shouldered; skin: light warm beige; average adult male height. headwear: flat cloth cap; upper garment: cream denim chore jacket over a henley shirt; neckline: open work collar; lower garment: forest green canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: cream, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 종마루, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black streaked with grey hair; very short length. build: broad-shouldered; skin: light warm beige; average adult male height. headwear: knitted grey cap; upper garment: 깃에 남색 끈을 두른 솜 조끼를 겹쳐 입은 회색 합성 섬유 작업 외투; neckline: quilted collar with a navy cord; lower garment: grey synthetic trousers; footwear: felt-lined rubber boots. accessories: ring of entrance keys and a lamp-wick trimmer; worn as clipped to the belt. color palette: ash grey, navy, lamp amber. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

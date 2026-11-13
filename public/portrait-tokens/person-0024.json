@@ -3,26 +3,27 @@
   "personId": "person-0024",
   "characterId": "K024",
   "name": "류한뫼",
-  "stateId": "S01",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "유언 사본 입회 증인"
+    "role": "작업조장 · 당산역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short wavy hair",
-    "upper": "mustard ochre buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer",
-    "outfit": "mustard ochre buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer",
+    "upper": "금빛 도시 끈을 깃에 두르고 왼쪽 가슴에 사본 작업조 천 표지를 단 겨자색 합성 섬유 조끼와 긴소매 셔츠, 그 위에 솜 둔 조끼",
+    "outfit": "금빛 도시 끈을 깃에 두르고 왼쪽 가슴에 사본 작업조 천 표지를 단 겨자색 합성 섬유 조끼와 긴소매 셔츠, 그 위에 솜 둔 조끼",
     "palette": [
       "mustard ochre",
-      "rust brown"
+      "rust brown",
+      "cream"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "rust brown straight wool trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "rust brown straight synthetic trousers",
+    "footwear": "laced rubber-soled walking shoes",
+    "accessories": "flat document case and a bundle of paper scraps tied with cord"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -175,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "mustard ochre buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer",
+        "value": "금빛 도시 끈을 깃에 두르고 왼쪽 가슴에 사본 작업조 천 표지를 단 겨자색 합성 섬유 조끼와 긴소매 셔츠, 그 위에 솜 둔 조끼",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "rust brown straight wool trousers",
+        "value": "rust brown straight synthetic trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "laced rubber-soled walking shoes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "buttoned shirt collar with a gold city cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "flat document case and a bundle of paper scraps tied with cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "grey synthetic and undyed cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "synthetic board, cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "case under the arm, bundle at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat case and small tied bundle",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 류한뫼, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone. upper garment: mustard ochre buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: mustard ochre, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 류한뫼, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone. upper garment: 금빛 도시 끈을 깃에 두르고 왼쪽 가슴에 사본 작업조 천 표지를 단 겨자색 합성 섬유 조끼와 긴소매 셔츠, 그 위에 솜 둔 조끼; neckline: buttoned shirt collar with a gold city cord. accessories: flat document case and a bundle of paper scraps tied with cord; worn as case under the arm, bundle at the belt. color palette: mustard ochre, rust brown, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 류한뫼, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: mustard ochre buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: rust brown straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: mustard ochre, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 류한뫼, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: 금빛 도시 끈을 깃에 두르고 왼쪽 가슴에 사본 작업조 천 표지를 단 겨자색 합성 섬유 조끼와 긴소매 셔츠, 그 위에 솜 둔 조끼; neckline: buttoned shirt collar with a gold city cord; lower garment: rust brown straight synthetic trousers; footwear: laced rubber-soled walking shoes. accessories: flat document case and a bundle of paper scraps tied with cord; worn as case under the arm, bundle at the belt. color palette: mustard ochre, rust brown, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 류한뫼, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: mustard ochre buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: rust brown straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: mustard ochre, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 류한뫼, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: 금빛 도시 끈을 깃에 두르고 왼쪽 가슴에 사본 작업조 천 표지를 단 겨자색 합성 섬유 조끼와 긴소매 셔츠, 그 위에 솜 둔 조끼; neckline: buttoned shirt collar with a gold city cord; lower garment: rust brown straight synthetic trousers; footwear: laced rubber-soled walking shoes. accessories: flat document case and a bundle of paper scraps tied with cord; worn as case under the arm, bundle at the belt. color palette: mustard ochre, rust brown, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 류한뫼, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: mustard ochre buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: rust brown straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: mustard ochre, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 류한뫼, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: 금빛 도시 끈을 깃에 두르고 왼쪽 가슴에 사본 작업조 천 표지를 단 겨자색 합성 섬유 조끼와 긴소매 셔츠, 그 위에 솜 둔 조끼; neckline: buttoned shirt collar with a gold city cord; lower garment: rust brown straight synthetic trousers; footwear: laced rubber-soled walking shoes. accessories: flat document case and a bundle of paper scraps tied with cord; worn as case under the arm, bundle at the belt. color palette: mustard ochre, rust brown, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 류한뫼, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: mustard ochre buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: rust brown straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: mustard ochre, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 류한뫼, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: 금빛 도시 끈을 깃에 두르고 왼쪽 가슴에 사본 작업조 천 표지를 단 겨자색 합성 섬유 조끼와 긴소매 셔츠, 그 위에 솜 둔 조끼; neckline: buttoned shirt collar with a gold city cord; lower garment: rust brown straight synthetic trousers; footwear: laced rubber-soled walking shoes. accessories: flat document case and a bundle of paper scraps tied with cord; worn as case under the arm, bundle at the belt. color palette: mustard ochre, rust brown, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

@@ -3,27 +3,27 @@
   "personId": "person-0868",
   "characterId": "K868",
   "name": "서달서",
-  "stateId": "S13",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "처방 서기"
+    "role": "펌프 정비공 · 제기동역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "medium-length hair swept back",
-    "upper": "oxblood buttoned linen work coat over a turtleneck",
-    "outfit": "oxblood buttoned linen work coat over a turtleneck",
+    "upper": "grey quilted work jacket with a trade tag stitched on the left breast, over a knitted sweater",
+    "outfit": "grey quilted work jacket with a trade tag stitched on the left breast, over a knitted sweater",
     "palette": [
-      "oxblood",
-      "navy",
-      "burgundy"
+      "slate grey",
+      "charcoal",
+      "navy"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "navy high-waisted pleated trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "canvas medical satchel without markings"
+    "lower": "grey quilted work trousers",
+    "footwear": "felt-lined synthetic rubber boots",
+    "accessories": "canvas tool roll of spanners on a shoulder strap"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "oxblood buttoned linen work coat over a turtleneck",
+        "value": "grey quilted work jacket with a trade tag stitched on the left breast, over a knitted sweater",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "navy high-waisted pleated trousers",
+        "value": "grey quilted work trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt-lined synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "open coat collar over a rolled sweater neck",
+        "value": "rolled sweater neck under an open quilted collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "canvas medical satchel without markings",
+        "value": "canvas tool roll of spanners on a shoulder strap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat rectangular satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "undyed canvas and brown leather",
+        "value": "undyed canvas and dull steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "canvas, leather",
+        "value": "canvas, steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
         "value": "strap across the shoulder",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "rolled bundle",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 서달서, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black streaked with grey hair; medium length. build: soft rounded; skin: light warm beige. upper garment: oxblood buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: oxblood, navy, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 서달서, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black streaked with grey hair; medium length. build: soft rounded; skin: light warm beige. upper garment: grey quilted work jacket with a trade tag stitched on the left breast, over a knitted sweater; neckline: rolled sweater neck under an open quilted collar. accessories: canvas tool roll of spanners on a shoulder strap; worn as strap across the shoulder. color palette: slate grey, charcoal, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 서달서, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black streaked with grey hair; medium length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: oxblood buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: navy high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: oxblood, navy, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 서달서, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black streaked with grey hair; medium length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: grey quilted work jacket with a trade tag stitched on the left breast, over a knitted sweater; neckline: rolled sweater neck under an open quilted collar; lower garment: grey quilted work trousers; footwear: felt-lined synthetic rubber boots. accessories: canvas tool roll of spanners on a shoulder strap; worn as strap across the shoulder. color palette: slate grey, charcoal, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 서달서, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black streaked with grey hair; medium length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: oxblood buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: navy high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: oxblood, navy, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 서달서, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black streaked with grey hair; medium length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: grey quilted work jacket with a trade tag stitched on the left breast, over a knitted sweater; neckline: rolled sweater neck under an open quilted collar; lower garment: grey quilted work trousers; footwear: felt-lined synthetic rubber boots. accessories: canvas tool roll of spanners on a shoulder strap; worn as strap across the shoulder. color palette: slate grey, charcoal, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 서달서, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black streaked with grey hair; medium length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: oxblood buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: navy high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: oxblood, navy, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 서달서, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black streaked with grey hair; medium length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: grey quilted work jacket with a trade tag stitched on the left breast, over a knitted sweater; neckline: rolled sweater neck under an open quilted collar; lower garment: grey quilted work trousers; footwear: felt-lined synthetic rubber boots. accessories: canvas tool roll of spanners on a shoulder strap; worn as strap across the shoulder. color palette: slate grey, charcoal, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 서달서, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black streaked with grey hair; medium length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: oxblood buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: navy high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: oxblood, navy, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 서달서, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black streaked with grey hair; medium length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: grey quilted work jacket with a trade tag stitched on the left breast, over a knitted sweater; neckline: rolled sweater neck under an open quilted collar; lower garment: grey quilted work trousers; footwear: felt-lined synthetic rubber boots. accessories: canvas tool roll of spanners on a shoulder strap; worn as strap across the shoulder. color palette: slate grey, charcoal, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

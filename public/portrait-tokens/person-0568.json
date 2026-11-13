@@ -3,27 +3,27 @@
   "personId": "person-0568",
   "characterId": "K568",
   "name": "백산석",
-  "stateId": "S01",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "배급구역 서기"
+    "role": "영등포 장주 집안의 어른 · 영등포역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "short wavy hair",
-    "upper": "burgundy plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
-    "outfit": "burgundy plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+    "upper": "금빛 깃끈을 두른 버건디색 긴 합성 섬유 겹 작업복, 덧소매를 맴",
+    "outfit": "금빛 깃끈을 두른 버건디색 긴 합성 섬유 겹 작업복, 덧소매를 맴",
     "palette": [
       "burgundy",
       "khaki",
-      "dove grey"
+      "dull gold"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "khaki wool breeches with buttoned cuffs",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "khaki synthetic trousers with buttoned cuffs",
+    "footwear": "laced walking shoes",
+    "accessories": "graduated water ladle and a small tally board"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "knitted synthetic cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "burgundy plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+        "value": "금빛 깃끈을 두른 버건디색 긴 합성 섬유 겹 작업복, 덧소매를 맴",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "khaki wool breeches with buttoned cuffs",
+        "value": "khaki synthetic trousers with buttoned cuffs",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "laced walking shoes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "collar edged with a gold city cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "graduated water ladle and a small tally board",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "dull steel and grey",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "steel, slate",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "hung at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "long-handled ladle and small board",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 백산석, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; salt-and-pepper hair; short length. build: average; skin: tan warm beige. upper garment: burgundy plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, khaki, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 백산석, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; salt-and-pepper hair; short length. build: average; skin: tan warm beige. headwear: knitted synthetic cap; upper garment: 금빛 깃끈을 두른 버건디색 긴 합성 섬유 겹 작업복, 덧소매를 맴; neckline: collar edged with a gold city cord. accessories: graduated water ladle and a small tally board; worn as hung at the belt. color palette: burgundy, khaki, dull gold. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 백산석, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; salt-and-pepper hair; short length. build: average; skin: tan warm beige; average adult male height. upper garment: burgundy plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: khaki wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, khaki, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 백산석, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; salt-and-pepper hair; short length. build: average; skin: tan warm beige; average adult male height. headwear: knitted synthetic cap; upper garment: 금빛 깃끈을 두른 버건디색 긴 합성 섬유 겹 작업복, 덧소매를 맴; neckline: collar edged with a gold city cord; lower garment: khaki synthetic trousers with buttoned cuffs; footwear: laced walking shoes. accessories: graduated water ladle and a small tally board; worn as hung at the belt. color palette: burgundy, khaki, dull gold. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 백산석, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; salt-and-pepper hair; short length. build: average; skin: tan warm beige; average adult male height. upper garment: burgundy plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: khaki wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, khaki, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 백산석, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; salt-and-pepper hair; short length. build: average; skin: tan warm beige; average adult male height. headwear: knitted synthetic cap; upper garment: 금빛 깃끈을 두른 버건디색 긴 합성 섬유 겹 작업복, 덧소매를 맴; neckline: collar edged with a gold city cord; lower garment: khaki synthetic trousers with buttoned cuffs; footwear: laced walking shoes. accessories: graduated water ladle and a small tally board; worn as hung at the belt. color palette: burgundy, khaki, dull gold. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 백산석, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; salt-and-pepper hair; short length. build: average; skin: tan warm beige; average adult male height. upper garment: burgundy plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: khaki wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, khaki, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 백산석, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; salt-and-pepper hair; short length. build: average; skin: tan warm beige; average adult male height. headwear: knitted synthetic cap; upper garment: 금빛 깃끈을 두른 버건디색 긴 합성 섬유 겹 작업복, 덧소매를 맴; neckline: collar edged with a gold city cord; lower garment: khaki synthetic trousers with buttoned cuffs; footwear: laced walking shoes. accessories: graduated water ladle and a small tally board; worn as hung at the belt. color palette: burgundy, khaki, dull gold. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 백산석, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; salt-and-pepper hair; short length. build: average; skin: tan warm beige; average adult male height. upper garment: burgundy plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: khaki wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, khaki, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 백산석, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; salt-and-pepper hair; short length. build: average; skin: tan warm beige; average adult male height. headwear: knitted synthetic cap; upper garment: 금빛 깃끈을 두른 버건디색 긴 합성 섬유 겹 작업복, 덧소매를 맴; neckline: collar edged with a gold city cord; lower garment: khaki synthetic trousers with buttoned cuffs; footwear: laced walking shoes. accessories: graduated water ladle and a small tally board; worn as hung at the belt. color palette: burgundy, khaki, dull gold. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

@@ -3,27 +3,27 @@
   "personId": "person-0030",
   "characterId": "K030",
   "name": "정시우",
-  "stateId": "S02",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "천왕기지 제작원로"
+    "role": "이을 자식 · 천왕역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "short side-parted hair combed neatly",
-    "upper": "forest green long fitted wool frock jacket over a buttoned waistcoat, in thin fine-weave fabric",
-    "outfit": "forest green long fitted wool frock jacket over a buttoned waistcoat, in thin fine-weave fabric",
+    "upper": "남색 도시 끈을 깃에 두르고 왼쪽 가슴에 펌프대 쇠 표지를 단 짙은 녹색 합성 섬유 작업 겉옷, 소매를 걷은 겹 작업복",
+    "outfit": "남색 도시 끈을 깃에 두르고 왼쪽 가슴에 펌프대 쇠 표지를 단 짙은 녹색 합성 섬유 작업 겉옷, 소매를 걷은 겹 작업복",
     "palette": [
       "forest green",
       "khaki",
-      "rust brown"
+      "navy"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "khaki wool breeches with buttoned cuffs",
-    "footwear": "polished leather oxford shoes",
-    "accessories": "plain brass pocket watch on a short chain"
+    "lower": "khaki synthetic work trousers with patched knees",
+    "footwear": "steel-toe rubber work boots",
+    "accessories": "small steel gauge on a short chain and a tool loop belt"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "forest green long fitted wool frock jacket over a buttoned waistcoat, in thin fine-weave fabric",
+        "value": "남색 도시 끈을 깃에 두르고 왼쪽 가슴에 펌프대 쇠 표지를 단 짙은 녹색 합성 섬유 작업 겉옷, 소매를 걷은 겹 작업복",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "khaki wool breeches with buttoned cuffs",
+        "value": "khaki synthetic work trousers with patched knees",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "polished leather oxford shoes",
+        "value": "steel-toe rubber work boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned high shirt collar",
+        "value": "buttoned work-shirt collar with a navy city cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "plain brass pocket watch on a short chain",
+        "value": "small steel gauge on a short chain and a tool loop belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(leader)",
-        "derived": true
-      },
-      "shape": {
-        "value": "round watch with a fine chain",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(leader)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass",
+        "value": "bright steel and navy cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(leader)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass",
+        "value": "steel, synthetic webbing",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(leader)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "chain clipped to the waistcoat or jacket buttonhole",
+        "value": "gauge chained to the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(leader)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small round gauge",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 정시우, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: slim; skin: medium warm beige. upper garment: forest green long fitted wool frock jacket over a buttoned waistcoat, in thin fine-weave fabric; neckline: buttoned high shirt collar. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: forest green, khaki, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 정시우, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: slim; skin: medium warm beige. upper garment: 남색 도시 끈을 깃에 두르고 왼쪽 가슴에 펌프대 쇠 표지를 단 짙은 녹색 합성 섬유 작업 겉옷, 소매를 걷은 겹 작업복; neckline: buttoned work-shirt collar with a navy city cord. accessories: small steel gauge on a short chain and a tool loop belt; worn as gauge chained to the belt. color palette: forest green, khaki, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 정시우, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: slim; skin: medium warm beige; average adult male height. upper garment: forest green long fitted wool frock jacket over a buttoned waistcoat, in thin fine-weave fabric; neckline: buttoned high shirt collar; lower garment: khaki wool breeches with buttoned cuffs; footwear: polished leather oxford shoes. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: forest green, khaki, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 정시우, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: slim; skin: medium warm beige; average adult male height. upper garment: 남색 도시 끈을 깃에 두르고 왼쪽 가슴에 펌프대 쇠 표지를 단 짙은 녹색 합성 섬유 작업 겉옷, 소매를 걷은 겹 작업복; neckline: buttoned work-shirt collar with a navy city cord; lower garment: khaki synthetic work trousers with patched knees; footwear: steel-toe rubber work boots. accessories: small steel gauge on a short chain and a tool loop belt; worn as gauge chained to the belt. color palette: forest green, khaki, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 정시우, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: slim; skin: medium warm beige; average adult male height. upper garment: forest green long fitted wool frock jacket over a buttoned waistcoat, in thin fine-weave fabric; neckline: buttoned high shirt collar; lower garment: khaki wool breeches with buttoned cuffs; footwear: polished leather oxford shoes. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: forest green, khaki, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 정시우, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: slim; skin: medium warm beige; average adult male height. upper garment: 남색 도시 끈을 깃에 두르고 왼쪽 가슴에 펌프대 쇠 표지를 단 짙은 녹색 합성 섬유 작업 겉옷, 소매를 걷은 겹 작업복; neckline: buttoned work-shirt collar with a navy city cord; lower garment: khaki synthetic work trousers with patched knees; footwear: steel-toe rubber work boots. accessories: small steel gauge on a short chain and a tool loop belt; worn as gauge chained to the belt. color palette: forest green, khaki, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 정시우, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: slim; skin: medium warm beige; average adult male height. upper garment: forest green long fitted wool frock jacket over a buttoned waistcoat, in thin fine-weave fabric; neckline: buttoned high shirt collar; lower garment: khaki wool breeches with buttoned cuffs; footwear: polished leather oxford shoes. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: forest green, khaki, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 정시우, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: slim; skin: medium warm beige; average adult male height. upper garment: 남색 도시 끈을 깃에 두르고 왼쪽 가슴에 펌프대 쇠 표지를 단 짙은 녹색 합성 섬유 작업 겉옷, 소매를 걷은 겹 작업복; neckline: buttoned work-shirt collar with a navy city cord; lower garment: khaki synthetic work trousers with patched knees; footwear: steel-toe rubber work boots. accessories: small steel gauge on a short chain and a tool loop belt; worn as gauge chained to the belt. color palette: forest green, khaki, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 정시우, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: slim; skin: medium warm beige; average adult male height. upper garment: forest green long fitted wool frock jacket over a buttoned waistcoat, in thin fine-weave fabric; neckline: buttoned high shirt collar; lower garment: khaki wool breeches with buttoned cuffs; footwear: polished leather oxford shoes. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: forest green, khaki, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 정시우, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: slim; skin: medium warm beige; average adult male height. upper garment: 남색 도시 끈을 깃에 두르고 왼쪽 가슴에 펌프대 쇠 표지를 단 짙은 녹색 합성 섬유 작업 겉옷, 소매를 걷은 겹 작업복; neckline: buttoned work-shirt collar with a navy city cord; lower garment: khaki synthetic work trousers with patched knees; footwear: steel-toe rubber work boots. accessories: small steel gauge on a short chain and a tool loop belt; worn as gauge chained to the belt. color palette: forest green, khaki, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

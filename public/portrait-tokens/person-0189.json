@@ -3,27 +3,27 @@
   "personId": "person-0189",
   "characterId": "K188",
   "name": "스테판 페트로프",
-  "stateId": "S07",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "의료열차 무기 목격자"
+    "role": "동주민센터 선임 서기 · 독바위역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "very short buzz-cut hair",
-    "upper": "cream buttoned linen work coat over a turtleneck, with a thick knitted scarf and an extra padded layer",
-    "outfit": "cream buttoned linen work coat over a turtleneck, with a thick knitted scarf and an extra padded layer",
+    "upper": "남색 띠를 두른 누빔 외투",
+    "outfit": "남색 띠를 두른 누빔 외투",
     "palette": [
-      "cream",
-      "rust brown",
-      "slate blue"
+      "navy",
+      "dove grey",
+      "rust brown"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "rust brown high-waisted pleated trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "canvas medical satchel without markings"
+    "lower": "grey quilted trousers",
+    "footwear": "felt-lined synthetic rubber boots",
+    "accessories": "civil servant ID card on a cord and a cloth seal pouch at the hip"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -175,27 +175,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "grey knitted cap with ear flaps",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "cream buttoned linen work coat over a turtleneck, with a thick knitted scarf and an extra padded layer",
+        "value": "남색 띠를 두른 누빔 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "rust brown high-waisted pleated trousers",
+        "value": "grey quilted trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt-lined synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -205,41 +205,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "open coat collar over a rolled sweater neck",
+        "value": "quilted collar with a navy band",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "canvas medical satchel without markings",
+        "value": "civil servant ID card on a cord and a cloth seal pouch at the hip",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat rectangular satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "undyed canvas and brown leather",
+        "value": "navy cord, worn brown pouch",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "canvas, leather",
+        "value": "cloth cord, laminated card, cotton canvas",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the shoulder",
+        "value": "card hung from the neck, pouch tied to the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat card and small drawstring pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -260,27 +260,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 스테판 페트로프, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; deep-set green eyes; straight and thin eyebrows; nose: broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; greying blond hair; very short length. build: soft rounded; skin: fair. upper garment: cream buttoned linen work coat over a turtleneck, with a thick knitted scarf and an extra padded layer; neckline: open coat collar over a rolled sweater neck. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, rust brown, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 스테판 페트로프, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; deep-set green eyes; straight and thin eyebrows; nose: broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; greying blond hair; very short length. build: soft rounded; skin: fair. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band. accessories: civil servant ID card on a cord and a cloth seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: navy, dove grey, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 스테판 페트로프, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; deep-set green eyes; straight and thin eyebrows; nose: broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; greying blond hair; very short length. build: soft rounded; skin: fair; average adult male height. upper garment: cream buttoned linen work coat over a turtleneck, with a thick knitted scarf and an extra padded layer; neckline: open coat collar over a rolled sweater neck; lower garment: rust brown high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, rust brown, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 스테판 페트로프, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; deep-set green eyes; straight and thin eyebrows; nose: broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; greying blond hair; very short length. build: soft rounded; skin: fair; average adult male height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a cord and a cloth seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: navy, dove grey, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 스테판 페트로프, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; deep-set green eyes; straight and thin eyebrows; nose: broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; greying blond hair; very short length. build: soft rounded; skin: fair; average adult male height. upper garment: cream buttoned linen work coat over a turtleneck, with a thick knitted scarf and an extra padded layer; neckline: open coat collar over a rolled sweater neck; lower garment: rust brown high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, rust brown, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 스테판 페트로프, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; deep-set green eyes; straight and thin eyebrows; nose: broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; greying blond hair; very short length. build: soft rounded; skin: fair; average adult male height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a cord and a cloth seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: navy, dove grey, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 스테판 페트로프, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; deep-set green eyes; straight and thin eyebrows; nose: broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; greying blond hair; very short length. build: soft rounded; skin: fair; average adult male height. upper garment: cream buttoned linen work coat over a turtleneck, with a thick knitted scarf and an extra padded layer; neckline: open coat collar over a rolled sweater neck; lower garment: rust brown high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, rust brown, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 스테판 페트로프, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; deep-set green eyes; straight and thin eyebrows; nose: broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; greying blond hair; very short length. build: soft rounded; skin: fair; average adult male height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a cord and a cloth seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: navy, dove grey, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 스테판 페트로프, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; deep-set green eyes; straight and thin eyebrows; nose: broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; greying blond hair; very short length. build: soft rounded; skin: fair; average adult male height. upper garment: cream buttoned linen work coat over a turtleneck, with a thick knitted scarf and an extra padded layer; neckline: open coat collar over a rolled sweater neck; lower garment: rust brown high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, rust brown, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 스테판 페트로프, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; deep-set green eyes; straight and thin eyebrows; nose: broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; greying blond hair; very short length. build: soft rounded; skin: fair; average adult male height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a cord and a cloth seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: navy, dove grey, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

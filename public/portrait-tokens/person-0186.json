@@ -3,27 +3,27 @@
   "personId": "person-0186",
   "characterId": "K185",
   "name": "노아 데이비스",
-  "stateId": "S07",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "용산창 이동의무차 반장"
+    "role": "삼각지역 역장 · 정부"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "very short buzz-cut hair",
-    "upper": "rust brown medical smock with rolled sleeves over a knit vest, with a thick knitted scarf and an extra padded layer",
-    "outfit": "rust brown medical smock with rolled sleeves over a knit vest, with a thick knitted scarf and an extra padded layer",
+    "upper": "남색 외투에 옛 지하철 역무원 상의",
+    "outfit": "남색 외투에 옛 지하철 역무원 상의",
     "palette": [
-      "rust brown",
-      "olive drab",
-      "dove grey"
+      "navy",
+      "brass",
+      "grey"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "olive drab wool breeches with buttoned cuffs",
-    "footwear": "laced leather walking shoes",
-    "accessories": "canvas medical satchel without markings"
+    "lower": "navy wool trousers",
+    "footwear": "felt-lined rubber boots",
+    "accessories": "ring of entrance keys on the belt"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -175,27 +175,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "old subway staff cap with a band bearing the station name",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "rust brown medical smock with rolled sleeves over a knit vest, with a thick knitted scarf and an extra padded layer",
+        "value": "남색 외투에 옛 지하철 역무원 상의",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "olive drab wool breeches with buttoned cuffs",
+        "value": "navy wool trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt-lined rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -205,41 +205,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "open coat collar over a rolled sweater neck",
+        "value": "buttoned uniform collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "canvas medical satchel without markings",
+        "value": "ring of entrance keys on the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat rectangular satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "undyed canvas and brown leather",
+        "value": "blackened steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "canvas, leather",
+        "value": "steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the shoulder",
+        "value": "clipped to the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "large key ring",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -260,27 +260,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 노아 데이비스, an European heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round green eyes; straight and thick eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; blond hair; very short length. build: average with narrow shoulders; skin: fair with pink undertone. upper garment: rust brown medical smock with rolled sleeves over a knit vest, with a thick knitted scarf and an extra padded layer; neckline: open coat collar over a rolled sweater neck. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: rust brown, olive drab, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 노아 데이비스, an European heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round green eyes; straight and thick eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; blond hair; very short length. build: average with narrow shoulders; skin: fair with pink undertone. headwear: old subway staff cap with a band bearing the station name; upper garment: 남색 외투에 옛 지하철 역무원 상의; neckline: buttoned uniform collar. accessories: ring of entrance keys on the belt; worn as clipped to the belt. color palette: navy, brass, grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 노아 데이비스, an European heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round green eyes; straight and thick eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; blond hair; very short length. build: average with narrow shoulders; skin: fair with pink undertone; average adult male height. upper garment: rust brown medical smock with rolled sleeves over a knit vest, with a thick knitted scarf and an extra padded layer; neckline: open coat collar over a rolled sweater neck; lower garment: olive drab wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: rust brown, olive drab, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 노아 데이비스, an European heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round green eyes; straight and thick eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; blond hair; very short length. build: average with narrow shoulders; skin: fair with pink undertone; average adult male height. headwear: old subway staff cap with a band bearing the station name; upper garment: 남색 외투에 옛 지하철 역무원 상의; neckline: buttoned uniform collar; lower garment: navy wool trousers; footwear: felt-lined rubber boots. accessories: ring of entrance keys on the belt; worn as clipped to the belt. color palette: navy, brass, grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 노아 데이비스, an European heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round green eyes; straight and thick eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; blond hair; very short length. build: average with narrow shoulders; skin: fair with pink undertone; average adult male height. upper garment: rust brown medical smock with rolled sleeves over a knit vest, with a thick knitted scarf and an extra padded layer; neckline: open coat collar over a rolled sweater neck; lower garment: olive drab wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: rust brown, olive drab, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 노아 데이비스, an European heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round green eyes; straight and thick eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; blond hair; very short length. build: average with narrow shoulders; skin: fair with pink undertone; average adult male height. headwear: old subway staff cap with a band bearing the station name; upper garment: 남색 외투에 옛 지하철 역무원 상의; neckline: buttoned uniform collar; lower garment: navy wool trousers; footwear: felt-lined rubber boots. accessories: ring of entrance keys on the belt; worn as clipped to the belt. color palette: navy, brass, grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 노아 데이비스, an European heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round green eyes; straight and thick eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; blond hair; very short length. build: average with narrow shoulders; skin: fair with pink undertone; average adult male height. upper garment: rust brown medical smock with rolled sleeves over a knit vest, with a thick knitted scarf and an extra padded layer; neckline: open coat collar over a rolled sweater neck; lower garment: olive drab wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: rust brown, olive drab, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 노아 데이비스, an European heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round green eyes; straight and thick eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; blond hair; very short length. build: average with narrow shoulders; skin: fair with pink undertone; average adult male height. headwear: old subway staff cap with a band bearing the station name; upper garment: 남색 외투에 옛 지하철 역무원 상의; neckline: buttoned uniform collar; lower garment: navy wool trousers; footwear: felt-lined rubber boots. accessories: ring of entrance keys on the belt; worn as clipped to the belt. color palette: navy, brass, grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 노아 데이비스, an European heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round green eyes; straight and thick eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; blond hair; very short length. build: average with narrow shoulders; skin: fair with pink undertone; average adult male height. upper garment: rust brown medical smock with rolled sleeves over a knit vest, with a thick knitted scarf and an extra padded layer; neckline: open coat collar over a rolled sweater neck; lower garment: olive drab wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: rust brown, olive drab, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 노아 데이비스, an European heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: heart-shaped; round green eyes; straight and thick eyebrows; nose: slightly aquiline; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; blond hair; very short length. build: average with narrow shoulders; skin: fair with pink undertone; average adult male height. headwear: old subway staff cap with a band bearing the station name; upper garment: 남색 외투에 옛 지하철 역무원 상의; neckline: buttoned uniform collar; lower garment: navy wool trousers; footwear: felt-lined rubber boots. accessories: ring of entrance keys on the belt; worn as clipped to the belt. color palette: navy, brass, grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

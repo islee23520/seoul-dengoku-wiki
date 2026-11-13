@@ -3,27 +3,27 @@
   "personId": "person-0193",
   "characterId": "K192",
   "name": "올렉산드르 셰우첸코",
-  "stateId": "S07",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "후계시험 부품 고발 보조"
+    "role": "동주민센터 선임 서기 · 합정역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "short hair slicked back with a side part",
-    "upper": "dove grey knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer",
-    "outfit": "dove grey knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer",
+    "upper": "quilted olive drab coat with a navy band around the upper arm",
+    "outfit": "quilted olive drab coat with a navy band around the upper arm",
     "palette": [
-      "dove grey",
+      "navy",
       "olive drab",
       "cream"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "olive drab wool breeches with buttoned cuffs",
-    "footwear": "laced leather walking shoes",
-    "accessories": "duty whistle on a cord lanyard"
+    "lower": "quilted trousers",
+    "footwear": "felt boots with synthetic rubber soles",
+    "accessories": "civil-servant ID card and a leather seal pouch on the belt"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -175,27 +175,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "ear-flap cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "dove grey knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer",
+        "value": "quilted olive drab coat with a navy band around the upper arm",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "olive drab wool breeches with buttoned cuffs",
+        "value": "quilted trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt boots with synthetic rubber soles",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -207,39 +207,39 @@
       "neckline": {
         "value": "buttoned shirt collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "duty whistle on a cord lanyard",
+        "value": "civil-servant ID card and a leather seal pouch on the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull brass",
+        "value": "navy and worn brown",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, cord",
+        "value": "laminated card, leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "lanyard around the neck",
+        "value": "ID on a neck cord, pouch on the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat card and small pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -260,27 +260,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 올렉산드르 셰우첸코, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; greying blond hair; short length. build: lean; skin: fair with pink undertone. upper garment: dove grey knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: dove grey, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 올렉산드르 셰우첸코, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; greying blond hair; short length. build: lean; skin: fair with pink undertone. headwear: ear-flap cap; upper garment: quilted olive drab coat with a navy band around the upper arm; neckline: buttoned shirt collar. accessories: civil-servant ID card and a leather seal pouch on the belt; worn as ID on a neck cord, pouch on the belt. color palette: navy, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 올렉산드르 셰우첸코, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; greying blond hair; short length. build: lean; skin: fair with pink undertone; average adult male height. upper garment: dove grey knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: olive drab wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: dove grey, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 올렉산드르 셰우첸코, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; greying blond hair; short length. build: lean; skin: fair with pink undertone; average adult male height. headwear: ear-flap cap; upper garment: quilted olive drab coat with a navy band around the upper arm; neckline: buttoned shirt collar; lower garment: quilted trousers; footwear: felt boots with synthetic rubber soles. accessories: civil-servant ID card and a leather seal pouch on the belt; worn as ID on a neck cord, pouch on the belt. color palette: navy, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 올렉산드르 셰우첸코, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; greying blond hair; short length. build: lean; skin: fair with pink undertone; average adult male height. upper garment: dove grey knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: olive drab wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: dove grey, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 올렉산드르 셰우첸코, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; greying blond hair; short length. build: lean; skin: fair with pink undertone; average adult male height. headwear: ear-flap cap; upper garment: quilted olive drab coat with a navy band around the upper arm; neckline: buttoned shirt collar; lower garment: quilted trousers; footwear: felt boots with synthetic rubber soles. accessories: civil-servant ID card and a leather seal pouch on the belt; worn as ID on a neck cord, pouch on the belt. color palette: navy, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 올렉산드르 셰우첸코, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; greying blond hair; short length. build: lean; skin: fair with pink undertone; average adult male height. upper garment: dove grey knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: olive drab wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: dove grey, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 올렉산드르 셰우첸코, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; greying blond hair; short length. build: lean; skin: fair with pink undertone; average adult male height. headwear: ear-flap cap; upper garment: quilted olive drab coat with a navy band around the upper arm; neckline: buttoned shirt collar; lower garment: quilted trousers; footwear: felt boots with synthetic rubber soles. accessories: civil-servant ID card and a leather seal pouch on the belt; worn as ID on a neck cord, pouch on the belt. color palette: navy, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 올렉산드르 셰우첸코, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; greying blond hair; short length. build: lean; skin: fair with pink undertone; average adult male height. upper garment: dove grey knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: olive drab wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: dove grey, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 올렉산드르 셰우첸코, an European heritage man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; greying blond hair; short length. build: lean; skin: fair with pink undertone; average adult male height. headwear: ear-flap cap; upper garment: quilted olive drab coat with a navy band around the upper arm; neckline: buttoned shirt collar; lower garment: quilted trousers; footwear: felt boots with synthetic rubber soles. accessories: civil-servant ID card and a leather seal pouch on the belt; worn as ID on a neck cord, pouch on the belt. color palette: navy, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

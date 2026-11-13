@@ -3,26 +3,27 @@
   "personId": "person-0212",
   "characterId": "K211",
   "name": "나루희",
-  "stateId": "S08",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "노량진 제빙 비상발전 운전장"
+    "role": "상봉1동 동장 · 정부"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, youthful smooth skin",
     "hair": "short side-parted hair combed neatly",
-    "upper": "burgundy patched twill work jacket with reinforced elbows, with a light knitted scarf",
-    "outfit": "burgundy patched twill work jacket with reinforced elbows, with a light knitted scarf",
+    "upper": "quilted olive drab coat with a navy band around the upper arm",
+    "outfit": "quilted olive drab coat with a navy band around the upper arm",
     "palette": [
-      "burgundy",
-      "olive drab"
+      "navy",
+      "olive drab",
+      "cream"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "olive drab heavy twill trousers with knee patches",
-    "footwear": "steel-toe leather work boots",
-    "accessories": "rolled leather tool roll and work gloves tucked into the belt"
+    "lower": "quilted trousers",
+    "footwear": "felt boots with synthetic rubber soles",
+    "accessories": "civil-servant ID card and a leather seal pouch on the belt"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -173,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "flat cloth cap",
+        "value": "ear-flap cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "burgundy patched twill work jacket with reinforced elbows, with a light knitted scarf",
+        "value": "quilted olive drab coat with a navy band around the upper arm",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "olive drab heavy twill trousers with knee patches",
+        "value": "quilted trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "steel-toe leather work boots",
+        "value": "felt boots with synthetic rubber soles",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -205,39 +206,39 @@
       "neckline": {
         "value": "open work collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "rolled leather tool roll and work gloves tucked into the belt",
+        "value": "civil-servant ID card and a leather seal pouch on the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "rolled bundle and gloves",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "oiled brown leather",
+        "value": "navy and worn brown",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, steel",
+        "value": "laminated card, leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "tucked into the belt",
+        "value": "ID on a neck cord, pouch on the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat card and small pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 나루희, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; upturned almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: sturdy; skin: medium warm beige. headwear: flat cloth cap; upper garment: burgundy patched twill work jacket with reinforced elbows, with a light knitted scarf; neckline: open work collar. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: burgundy, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 나루희, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; upturned almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: sturdy; skin: medium warm beige. headwear: ear-flap cap; upper garment: quilted olive drab coat with a navy band around the upper arm; neckline: open work collar. accessories: civil-servant ID card and a leather seal pouch on the belt; worn as ID on a neck cord, pouch on the belt. color palette: navy, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 나루희, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; upturned almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: sturdy; skin: medium warm beige; average adult male height. headwear: flat cloth cap; upper garment: burgundy patched twill work jacket with reinforced elbows, with a light knitted scarf; neckline: open work collar; lower garment: olive drab heavy twill trousers with knee patches; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: burgundy, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 나루희, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; upturned almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: sturdy; skin: medium warm beige; average adult male height. headwear: ear-flap cap; upper garment: quilted olive drab coat with a navy band around the upper arm; neckline: open work collar; lower garment: quilted trousers; footwear: felt boots with synthetic rubber soles. accessories: civil-servant ID card and a leather seal pouch on the belt; worn as ID on a neck cord, pouch on the belt. color palette: navy, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 나루희, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; upturned almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: sturdy; skin: medium warm beige; average adult male height. headwear: flat cloth cap; upper garment: burgundy patched twill work jacket with reinforced elbows, with a light knitted scarf; neckline: open work collar; lower garment: olive drab heavy twill trousers with knee patches; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: burgundy, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 나루희, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; upturned almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: sturdy; skin: medium warm beige; average adult male height. headwear: ear-flap cap; upper garment: quilted olive drab coat with a navy band around the upper arm; neckline: open work collar; lower garment: quilted trousers; footwear: felt boots with synthetic rubber soles. accessories: civil-servant ID card and a leather seal pouch on the belt; worn as ID on a neck cord, pouch on the belt. color palette: navy, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 나루희, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; upturned almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: sturdy; skin: medium warm beige; average adult male height. headwear: flat cloth cap; upper garment: burgundy patched twill work jacket with reinforced elbows, with a light knitted scarf; neckline: open work collar; lower garment: olive drab heavy twill trousers with knee patches; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: burgundy, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 나루희, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; upturned almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: sturdy; skin: medium warm beige; average adult male height. headwear: ear-flap cap; upper garment: quilted olive drab coat with a navy band around the upper arm; neckline: open work collar; lower garment: quilted trousers; footwear: felt boots with synthetic rubber soles. accessories: civil-servant ID card and a leather seal pouch on the belt; worn as ID on a neck cord, pouch on the belt. color palette: navy, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 나루희, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; upturned almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: sturdy; skin: medium warm beige; average adult male height. headwear: flat cloth cap; upper garment: burgundy patched twill work jacket with reinforced elbows, with a light knitted scarf; neckline: open work collar; lower garment: olive drab heavy twill trousers with knee patches; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: burgundy, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 나루희, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: round; upturned almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: sturdy; skin: medium warm beige; average adult male height. headwear: ear-flap cap; upper garment: quilted olive drab coat with a navy band around the upper arm; neckline: open work collar; lower garment: quilted trousers; footwear: felt boots with synthetic rubber soles. accessories: civil-servant ID card and a leather seal pouch on the belt; worn as ID on a neck cord, pouch on the belt. color palette: navy, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

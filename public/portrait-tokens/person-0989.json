@@ -3,26 +3,27 @@
   "personId": "person-0989",
   "characterId": "K989",
   "name": "문마은",
-  "stateId": "S06",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "인준 기록관"
+    "role": "동주민센터 서기 · 서울역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "braids pinned up into a crown",
-    "upper": "oxblood wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
-    "outfit": "oxblood wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
+    "upper": "남색 띠를 두른 누빔 외투",
+    "outfit": "남색 띠를 두른 누빔 외투",
     "palette": [
-      "oxblood",
-      "dove grey"
+      "olive drab",
+      "navy",
+      "sand beige"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "dove grey pleated knee-length wool skirt over thick stockings",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "grey quilted trousers",
+    "footwear": "felt-lined synthetic rubber boots",
+    "accessories": "civil servant ID card on a synthetic cord and a nylon webbing seal pouch at the hip"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -173,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "grey knitted cap with ear flaps",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "oxblood wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
+        "value": "남색 띠를 두른 누빔 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "dove grey pleated knee-length wool skirt over thick stockings",
+        "value": "grey quilted trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt-lined synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "quilted collar with a navy band",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "civil servant ID card on a synthetic cord and a nylon webbing seal pouch at the hip",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "navy cord, worn brown pouch",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "synthetic cord, laminated card, nylon webbing",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "card hung from the neck, pouch tied to the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat card and small drawstring pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 문마은, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. braids pinned up into a crown; dark brown hair; long length. build: lean; skin: light warm beige. upper garment: oxblood wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 문마은, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. braids pinned up into a crown; dark brown hair; long length. build: lean; skin: light warm beige. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band. accessories: civil servant ID card on a synthetic cord and a nylon webbing seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: olive drab, navy, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 문마은, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. braids pinned up into a crown; dark brown hair; long length. build: lean; skin: light warm beige; average adult female height. upper garment: oxblood wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: dove grey pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 문마은, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. braids pinned up into a crown; dark brown hair; long length. build: lean; skin: light warm beige; average adult female height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a synthetic cord and a nylon webbing seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: olive drab, navy, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 문마은, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. braids pinned up into a crown; dark brown hair; long length. build: lean; skin: light warm beige; average adult female height. upper garment: oxblood wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: dove grey pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 문마은, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. braids pinned up into a crown; dark brown hair; long length. build: lean; skin: light warm beige; average adult female height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a synthetic cord and a nylon webbing seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: olive drab, navy, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 문마은, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. braids pinned up into a crown; dark brown hair; long length. build: lean; skin: light warm beige; average adult female height. upper garment: oxblood wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: dove grey pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 문마은, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. braids pinned up into a crown; dark brown hair; long length. build: lean; skin: light warm beige; average adult female height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a synthetic cord and a nylon webbing seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: olive drab, navy, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 문마은, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. braids pinned up into a crown; dark brown hair; long length. build: lean; skin: light warm beige; average adult female height. upper garment: oxblood wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: dove grey pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 문마은, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. braids pinned up into a crown; dark brown hair; long length. build: lean; skin: light warm beige; average adult female height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a synthetic cord and a nylon webbing seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: olive drab, navy, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

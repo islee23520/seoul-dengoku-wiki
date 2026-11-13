@@ -3,27 +3,27 @@
   "personId": "person-0397",
   "characterId": "K396",
   "name": "석오름",
-  "stateId": "S15",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "선거 유효성 증인 부제"
+    "role": "동주민센터 선임 서기 · 창동역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "short hair slicked back with a side part",
-    "upper": "dove grey belted canvas field jacket with flap chest pockets, with a light knitted scarf",
-    "outfit": "dove grey belted canvas field jacket with flap chest pockets, with a light knitted scarf",
+    "upper": "남색 띠를 두른 누빔 외투",
+    "outfit": "남색 띠를 두른 누빔 외투",
     "palette": [
-      "dove grey",
-      "forest green",
-      "sand beige"
+      "navy",
+      "grey",
+      "off-white"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "forest green wool trousers bloused over boots",
-    "footwear": "lace-up leather combat boots",
-    "accessories": "small hand lamp clipped to a leather belt"
+    "lower": "grey quilted trousers",
+    "footwear": "felt-lined synthetic rubber boots",
+    "accessories": "civil-servant ID worn beside the registration token, and a cloth seal pouch at the belt"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "soft wool field cap without badge",
+        "value": "cap with ear flaps",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "dove grey belted canvas field jacket with flap chest pockets, with a light knitted scarf",
+        "value": "남색 띠를 두른 누빔 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "forest green wool trousers bloused over boots",
+        "value": "grey quilted trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "lace-up leather combat boots",
+        "value": "felt-lined synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "closed turn-down collar",
+        "value": "quilted collar with a navy band",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "small hand lamp clipped to a leather belt",
+        "value": "civil-servant ID worn beside the registration token, and a cloth seal pouch at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
-        "derived": true
-      },
-      "shape": {
-        "value": "compact cylindrical lamp",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull steel and dark brown leather",
+        "value": "off-white card, dull iron and navy cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "steel, leather",
+        "value": "card, thin iron plate, cord, cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "clipped at the belt",
+        "value": "ID and token on cords around the neck; pouch tied to the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "two flat rectangles and a small drawstring pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 석오름, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black streaked with grey hair; short length. build: lean and wiry; skin: tan warm beige. headwear: soft wool field cap without badge; upper garment: dove grey belted canvas field jacket with flap chest pockets, with a light knitted scarf; neckline: closed turn-down collar. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: dove grey, forest green, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 석오름, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black streaked with grey hair; short length. build: lean and wiry; skin: tan warm beige. headwear: cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band. accessories: civil-servant ID worn beside the registration token, and a cloth seal pouch at the belt; worn as ID and token on cords around the neck; pouch tied to the belt. color palette: navy, grey, off-white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 석오름, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black streaked with grey hair; short length. build: lean and wiry; skin: tan warm beige; average adult male height. headwear: soft wool field cap without badge; upper garment: dove grey belted canvas field jacket with flap chest pockets, with a light knitted scarf; neckline: closed turn-down collar; lower garment: forest green wool trousers bloused over boots; footwear: lace-up leather combat boots. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: dove grey, forest green, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 석오름, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black streaked with grey hair; short length. build: lean and wiry; skin: tan warm beige; average adult male height. headwear: cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil-servant ID worn beside the registration token, and a cloth seal pouch at the belt; worn as ID and token on cords around the neck; pouch tied to the belt. color palette: navy, grey, off-white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 석오름, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black streaked with grey hair; short length. build: lean and wiry; skin: tan warm beige; average adult male height. headwear: soft wool field cap without badge; upper garment: dove grey belted canvas field jacket with flap chest pockets, with a light knitted scarf; neckline: closed turn-down collar; lower garment: forest green wool trousers bloused over boots; footwear: lace-up leather combat boots. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: dove grey, forest green, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 석오름, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black streaked with grey hair; short length. build: lean and wiry; skin: tan warm beige; average adult male height. headwear: cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil-servant ID worn beside the registration token, and a cloth seal pouch at the belt; worn as ID and token on cords around the neck; pouch tied to the belt. color palette: navy, grey, off-white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 석오름, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black streaked with grey hair; short length. build: lean and wiry; skin: tan warm beige; average adult male height. headwear: soft wool field cap without badge; upper garment: dove grey belted canvas field jacket with flap chest pockets, with a light knitted scarf; neckline: closed turn-down collar; lower garment: forest green wool trousers bloused over boots; footwear: lace-up leather combat boots. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: dove grey, forest green, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 석오름, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black streaked with grey hair; short length. build: lean and wiry; skin: tan warm beige; average adult male height. headwear: cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil-servant ID worn beside the registration token, and a cloth seal pouch at the belt; worn as ID and token on cords around the neck; pouch tied to the belt. color palette: navy, grey, off-white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 석오름, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black streaked with grey hair; short length. build: lean and wiry; skin: tan warm beige; average adult male height. headwear: soft wool field cap without badge; upper garment: dove grey belted canvas field jacket with flap chest pockets, with a light knitted scarf; neckline: closed turn-down collar; lower garment: forest green wool trousers bloused over boots; footwear: lace-up leather combat boots. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: dove grey, forest green, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 석오름, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black streaked with grey hair; short length. build: lean and wiry; skin: tan warm beige; average adult male height. headwear: cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil-servant ID worn beside the registration token, and a cloth seal pouch at the belt; worn as ID and token on cords around the neck; pouch tied to the belt. color palette: navy, grey, off-white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

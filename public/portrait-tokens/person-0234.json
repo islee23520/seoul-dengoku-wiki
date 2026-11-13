@@ -3,27 +3,27 @@
   "personId": "person-0234",
   "characterId": "K233",
   "name": "두용",
-  "stateId": "S09",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "여의도 금고 열쇠지기, 송재민의 실무 담당자"
+    "role": "대방역 역반장 · 자유도시들"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short hair slicked back with a side part",
-    "upper": "cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
-    "outfit": "cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+    "upper": "깃에 금빛 끈을 두른 갈회색 합성 섬유 작업 외투, 공구 고리를 단 허리띠",
+    "outfit": "깃에 금빛 끈을 두른 갈회색 합성 섬유 작업 외투, 공구 고리를 단 허리띠",
     "palette": [
-      "cream",
-      "charcoal",
-      "dove grey"
+      "taupe",
+      "gold",
+      "brass"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "charcoal straight wool trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "brown grey synthetic trousers",
+    "footwear": "resoled boots",
+    "accessories": "hanging balance scale and a key ring"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+        "value": "깃에 금빛 끈을 두른 갈회색 합성 섬유 작업 외투, 공구 고리를 단 허리띠",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "charcoal straight wool trousers",
+        "value": "brown grey synthetic trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "resoled boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "turned-down collar with a gold cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "hanging balance scale and a key ring",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "dull brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "brass, steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "scale hooked to the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small beam balance",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 두용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black hair; short length. build: average; skin: fair with a neutral undertone. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, charcoal, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 두용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black hair; short length. build: average; skin: fair with a neutral undertone. upper garment: 깃에 금빛 끈을 두른 갈회색 합성 섬유 작업 외투, 공구 고리를 단 허리띠; neckline: turned-down collar with a gold cord. accessories: hanging balance scale and a key ring; worn as scale hooked to the belt. color palette: taupe, gold, brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 두용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black hair; short length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: charcoal straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, charcoal, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 두용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black hair; short length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: 깃에 금빛 끈을 두른 갈회색 합성 섬유 작업 외투, 공구 고리를 단 허리띠; neckline: turned-down collar with a gold cord; lower garment: brown grey synthetic trousers; footwear: resoled boots. accessories: hanging balance scale and a key ring; worn as scale hooked to the belt. color palette: taupe, gold, brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 두용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black hair; short length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: charcoal straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, charcoal, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 두용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black hair; short length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: 깃에 금빛 끈을 두른 갈회색 합성 섬유 작업 외투, 공구 고리를 단 허리띠; neckline: turned-down collar with a gold cord; lower garment: brown grey synthetic trousers; footwear: resoled boots. accessories: hanging balance scale and a key ring; worn as scale hooked to the belt. color palette: taupe, gold, brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 두용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black hair; short length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: charcoal straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, charcoal, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 두용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black hair; short length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: 깃에 금빛 끈을 두른 갈회색 합성 섬유 작업 외투, 공구 고리를 단 허리띠; neckline: turned-down collar with a gold cord; lower garment: brown grey synthetic trousers; footwear: resoled boots. accessories: hanging balance scale and a key ring; worn as scale hooked to the belt. color palette: taupe, gold, brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 두용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black hair; short length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: charcoal straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, charcoal, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 두용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black hair; short length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: 깃에 금빛 끈을 두른 갈회색 합성 섬유 작업 외투, 공구 고리를 단 허리띠; neckline: turned-down collar with a gold cord; lower garment: brown grey synthetic trousers; footwear: resoled boots. accessories: hanging balance scale and a key ring; worn as scale hooked to the belt. color palette: taupe, gold, brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

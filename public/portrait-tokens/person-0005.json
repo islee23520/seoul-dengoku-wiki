@@ -3,27 +3,27 @@
   "personId": "person-0005",
   "characterId": "K005",
   "name": "최한결",
-  "stateId": "S01",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "신정기지 장갑보수열차장"
+    "role": "낙성대 굴착대 대주 · 낙성대역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "braids pinned up into a crown",
-    "upper": "olive drab denim chore jacket over a henley shirt, with a thick knitted scarf and an extra padded layer",
-    "outfit": "olive drab denim chore jacket over a henley shirt, with a thick knitted scarf and an extra padded layer",
+    "upper": "파란 도시 끈을 깃에 두르고 왼쪽 가슴에 굴착대 표지를 단 짙은 올리브색 합성 섬유 겹 작업복, 팔꿈치에 덧댄 천",
+    "outfit": "파란 도시 끈을 깃에 두르고 왼쪽 가슴에 굴착대 표지를 단 짙은 올리브색 합성 섬유 겹 작업복, 팔꿈치에 덧댄 천",
     "palette": [
       "olive drab",
       "charcoal",
       "navy"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "charcoal heavy twill trousers with knee patches",
-    "footwear": "steel-toe leather work boots",
-    "accessories": "rolled leather tool roll and work gloves tucked into the belt"
+    "lower": "charcoal synthetic twill trousers with knee patches",
+    "footwear": "steel-toe rubber work boots",
+    "accessories": "sample surety tag on a cord and a tool loop belt"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "flat cloth cap",
+        "value": "flat synthetic cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "olive drab denim chore jacket over a henley shirt, with a thick knitted scarf and an extra padded layer",
+        "value": "파란 도시 끈을 깃에 두르고 왼쪽 가슴에 굴착대 표지를 단 짙은 올리브색 합성 섬유 겹 작업복, 팔꿈치에 덧댄 천",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "charcoal heavy twill trousers with knee patches",
+        "value": "charcoal synthetic twill trousers with knee patches",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "steel-toe leather work boots",
+        "value": "steel-toe rubber work boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "open work collar",
+        "value": "open work collar with a blue city cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "rolled leather tool roll and work gloves tucked into the belt",
+        "value": "sample surety tag on a cord and a tool loop belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "rolled bundle and gloves",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "oiled brown leather",
+        "value": "dull steel and blue cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, steel",
+        "value": "steel, synthetic webbing",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "tucked into the belt",
+        "value": "token on a neck cord, tools on the belt loops",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat token and a row of tool loops",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 최한결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. braids pinned up into a crown; black hair; long length. build: sturdy; skin: tan warm beige. headwear: flat cloth cap; upper garment: olive drab denim chore jacket over a henley shirt, with a thick knitted scarf and an extra padded layer; neckline: open work collar. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: olive drab, charcoal, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 최한결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. braids pinned up into a crown; black hair; long length. build: sturdy; skin: tan warm beige. headwear: flat synthetic cap; upper garment: 파란 도시 끈을 깃에 두르고 왼쪽 가슴에 굴착대 표지를 단 짙은 올리브색 합성 섬유 겹 작업복, 팔꿈치에 덧댄 천; neckline: open work collar with a blue city cord. accessories: sample surety tag on a cord and a tool loop belt; worn as token on a neck cord, tools on the belt loops. color palette: olive drab, charcoal, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 최한결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. braids pinned up into a crown; black hair; long length. build: sturdy; skin: tan warm beige; average adult female height. headwear: flat cloth cap; upper garment: olive drab denim chore jacket over a henley shirt, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: charcoal heavy twill trousers with knee patches; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: olive drab, charcoal, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 최한결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. braids pinned up into a crown; black hair; long length. build: sturdy; skin: tan warm beige; average adult female height. headwear: flat synthetic cap; upper garment: 파란 도시 끈을 깃에 두르고 왼쪽 가슴에 굴착대 표지를 단 짙은 올리브색 합성 섬유 겹 작업복, 팔꿈치에 덧댄 천; neckline: open work collar with a blue city cord; lower garment: charcoal synthetic twill trousers with knee patches; footwear: steel-toe rubber work boots. accessories: sample surety tag on a cord and a tool loop belt; worn as token on a neck cord, tools on the belt loops. color palette: olive drab, charcoal, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 최한결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. braids pinned up into a crown; black hair; long length. build: sturdy; skin: tan warm beige; average adult female height. headwear: flat cloth cap; upper garment: olive drab denim chore jacket over a henley shirt, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: charcoal heavy twill trousers with knee patches; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: olive drab, charcoal, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 최한결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. braids pinned up into a crown; black hair; long length. build: sturdy; skin: tan warm beige; average adult female height. headwear: flat synthetic cap; upper garment: 파란 도시 끈을 깃에 두르고 왼쪽 가슴에 굴착대 표지를 단 짙은 올리브색 합성 섬유 겹 작업복, 팔꿈치에 덧댄 천; neckline: open work collar with a blue city cord; lower garment: charcoal synthetic twill trousers with knee patches; footwear: steel-toe rubber work boots. accessories: sample surety tag on a cord and a tool loop belt; worn as token on a neck cord, tools on the belt loops. color palette: olive drab, charcoal, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 최한결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. braids pinned up into a crown; black hair; long length. build: sturdy; skin: tan warm beige; average adult female height. headwear: flat cloth cap; upper garment: olive drab denim chore jacket over a henley shirt, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: charcoal heavy twill trousers with knee patches; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: olive drab, charcoal, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 최한결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. braids pinned up into a crown; black hair; long length. build: sturdy; skin: tan warm beige; average adult female height. headwear: flat synthetic cap; upper garment: 파란 도시 끈을 깃에 두르고 왼쪽 가슴에 굴착대 표지를 단 짙은 올리브색 합성 섬유 겹 작업복, 팔꿈치에 덧댄 천; neckline: open work collar with a blue city cord; lower garment: charcoal synthetic twill trousers with knee patches; footwear: steel-toe rubber work boots. accessories: sample surety tag on a cord and a tool loop belt; worn as token on a neck cord, tools on the belt loops. color palette: olive drab, charcoal, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 최한결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. braids pinned up into a crown; black hair; long length. build: sturdy; skin: tan warm beige; average adult female height. headwear: flat cloth cap; upper garment: olive drab denim chore jacket over a henley shirt, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: charcoal heavy twill trousers with knee patches; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: olive drab, charcoal, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 최한결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. braids pinned up into a crown; black hair; long length. build: sturdy; skin: tan warm beige; average adult female height. headwear: flat synthetic cap; upper garment: 파란 도시 끈을 깃에 두르고 왼쪽 가슴에 굴착대 표지를 단 짙은 올리브색 합성 섬유 겹 작업복, 팔꿈치에 덧댄 천; neckline: open work collar with a blue city cord; lower garment: charcoal synthetic twill trousers with knee patches; footwear: steel-toe rubber work boots. accessories: sample surety tag on a cord and a tool loop belt; worn as token on a neck cord, tools on the belt loops. color palette: olive drab, charcoal, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

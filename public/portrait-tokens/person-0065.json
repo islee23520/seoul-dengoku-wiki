@@ -3,27 +3,27 @@
   "personId": "person-0065",
   "characterId": "K065",
   "name": "임시온",
-  "stateId": "S03",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "연구기록·통신서고 감사관"
+    "role": "호위장 · 고속터미널역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "short pin-curled hair",
-    "upper": "charcoal plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
-    "outfit": "charcoal plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+    "upper": "어깨와 무릎을 터서 짧게 자른 외투, 부위에 바짝 끼운 단열 토시를 한 손으로 풀리는 가죽끈으로 여밈, 깃에 부위 수 3 칠, 위팔에 붉은 바탕 사선 무늬의 서초 곁집 띠",
+    "outfit": "어깨와 무릎을 터서 짧게 자른 외투, 부위에 바짝 끼운 단열 토시를 한 손으로 풀리는 가죽끈으로 여밈, 깃에 부위 수 3 칠, 위팔에 붉은 바탕 사선 무늬의 서초 곁집 띠",
     "palette": [
       "charcoal",
       "forest green",
       "slate blue"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "forest green A-line mid-calf wool skirt over thick stockings",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "padded wool trousers cut open at the knee and strapped",
+    "footwear": "hobnailed leather boots",
+    "accessories": "leather belt with a whistle on a short chain"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "steel helmet painted with the part count 3",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "charcoal plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+        "value": "어깨와 무릎을 터서 짧게 자른 외투, 부위에 바짝 끼운 단열 토시를 한 손으로 풀리는 가죽끈으로 여밈, 깃에 부위 수 3 칠, 위팔에 붉은 바탕 사선 무늬의 서초 곁집 띠",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "forest green A-line mid-calf wool skirt over thick stockings",
+        "value": "padded wool trousers cut open at the knee and strapped",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "hobnailed leather boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "turned-down collar painted with the part count",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "leather belt with a whistle on a short chain",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "blackened leather and dull brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "leather, brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "belt at the waist",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small cylindrical whistle",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 임시온, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: thin straight lips; muted pink lips. short pin-curled hair; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: medium warm beige. upper garment: charcoal plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: charcoal, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 임시온, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: thin straight lips; muted pink lips. short pin-curled hair; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: medium warm beige. headwear: steel helmet painted with the part count 3; upper garment: 어깨와 무릎을 터서 짧게 자른 외투, 부위에 바짝 끼운 단열 토시를 한 손으로 풀리는 가죽끈으로 여밈, 깃에 부위 수 3 칠, 위팔에 붉은 바탕 사선 무늬의 서초 곁집 띠; neckline: turned-down collar painted with the part count. accessories: leather belt with a whistle on a short chain; worn as belt at the waist. color palette: charcoal, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 임시온, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: thin straight lips; muted pink lips. short pin-curled hair; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. upper garment: charcoal plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: forest green A-line mid-calf wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: charcoal, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 임시온, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: thin straight lips; muted pink lips. short pin-curled hair; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. headwear: steel helmet painted with the part count 3; upper garment: 어깨와 무릎을 터서 짧게 자른 외투, 부위에 바짝 끼운 단열 토시를 한 손으로 풀리는 가죽끈으로 여밈, 깃에 부위 수 3 칠, 위팔에 붉은 바탕 사선 무늬의 서초 곁집 띠; neckline: turned-down collar painted with the part count; lower garment: padded wool trousers cut open at the knee and strapped; footwear: hobnailed leather boots. accessories: leather belt with a whistle on a short chain; worn as belt at the waist. color palette: charcoal, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 임시온, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: thin straight lips; muted pink lips. short pin-curled hair; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. upper garment: charcoal plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: forest green A-line mid-calf wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: charcoal, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 임시온, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: thin straight lips; muted pink lips. short pin-curled hair; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. headwear: steel helmet painted with the part count 3; upper garment: 어깨와 무릎을 터서 짧게 자른 외투, 부위에 바짝 끼운 단열 토시를 한 손으로 풀리는 가죽끈으로 여밈, 깃에 부위 수 3 칠, 위팔에 붉은 바탕 사선 무늬의 서초 곁집 띠; neckline: turned-down collar painted with the part count; lower garment: padded wool trousers cut open at the knee and strapped; footwear: hobnailed leather boots. accessories: leather belt with a whistle on a short chain; worn as belt at the waist. color palette: charcoal, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 임시온, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: thin straight lips; muted pink lips. short pin-curled hair; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. upper garment: charcoal plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: forest green A-line mid-calf wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: charcoal, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 임시온, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: thin straight lips; muted pink lips. short pin-curled hair; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. headwear: steel helmet painted with the part count 3; upper garment: 어깨와 무릎을 터서 짧게 자른 외투, 부위에 바짝 끼운 단열 토시를 한 손으로 풀리는 가죽끈으로 여밈, 깃에 부위 수 3 칠, 위팔에 붉은 바탕 사선 무늬의 서초 곁집 띠; neckline: turned-down collar painted with the part count; lower garment: padded wool trousers cut open at the knee and strapped; footwear: hobnailed leather boots. accessories: leather belt with a whistle on a short chain; worn as belt at the waist. color palette: charcoal, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 임시온, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: thin straight lips; muted pink lips. short pin-curled hair; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. upper garment: charcoal plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: forest green A-line mid-calf wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: charcoal, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 임시온, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: thin straight lips; muted pink lips. short pin-curled hair; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. headwear: steel helmet painted with the part count 3; upper garment: 어깨와 무릎을 터서 짧게 자른 외투, 부위에 바짝 끼운 단열 토시를 한 손으로 풀리는 가죽끈으로 여밈, 깃에 부위 수 3 칠, 위팔에 붉은 바탕 사선 무늬의 서초 곁집 띠; neckline: turned-down collar painted with the part count; lower garment: padded wool trousers cut open at the knee and strapped; footwear: hobnailed leather boots. accessories: leather belt with a whistle on a short chain; worn as belt at the waist. color palette: charcoal, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

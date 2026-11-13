@@ -3,27 +3,27 @@
   "personId": "person-0249",
   "characterId": "K248",
   "name": "강태산",
-  "stateId": "S10",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "회랑 정찰 주지"
+    "role": "의원 집안 후계 · 망우역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "shoulder-length hair styled in 1940s victory rolls",
-    "upper": "oxblood plain wool work jacket over a collared shirt, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "oxblood plain wool work jacket over a collared shirt, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "목화 안감에 털깃을 단 밝은 빛깔 누빔 외투",
+    "outfit": "목화 안감에 털깃을 단 밝은 빛깔 누빔 외투",
     "palette": [
-      "oxblood",
-      "burgundy",
-      "forest green"
+      "cream",
+      "forest green",
+      "khaki"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "burgundy A-line mid-calf wool skirt over thick stockings",
-    "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "duty whistle on a cord lanyard"
+    "lower": "khaki wool breeches with buttoned cuffs",
+    "footwear": "leather boots",
+    "accessories": "buttons cut with the house seal"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "knitted wool watch cap",
+        "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "oxblood plain wool work jacket over a collared shirt, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "목화 안감에 털깃을 단 밝은 빛깔 누빔 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "burgundy A-line mid-calf wool skirt over thick stockings",
+        "value": "khaki wool breeches with buttoned cuffs",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "thick-soled leather winter boots with wool socks",
+        "value": "leather boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "open coat collar over a rolled sweater neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "duty whistle on a cord lanyard",
+        "value": "buttons cut with the house seal",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull brass",
+        "value": "polished pale horn",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, cord",
+        "value": "horn",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "lanyard around the neck",
+        "value": "sewn down the front of the coat",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "round buttons carved with a seal",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 강태산, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: soft rounded; skin: light warm beige. headwear: knitted wool watch cap; upper garment: oxblood plain wool work jacket over a collared shirt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: oxblood, burgundy, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 강태산, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: soft rounded; skin: light warm beige. upper garment: 목화 안감에 털깃을 단 밝은 빛깔 누빔 외투; neckline: open coat collar over a rolled sweater neck. accessories: buttons cut with the house seal; worn as sewn down the front of the coat. color palette: cream, forest green, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 강태산, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: soft rounded; skin: light warm beige; average adult female height. headwear: knitted wool watch cap; upper garment: oxblood plain wool work jacket over a collared shirt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned shirt collar; lower garment: burgundy A-line mid-calf wool skirt over thick stockings; footwear: thick-soled leather winter boots with wool socks. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: oxblood, burgundy, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 강태산, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: soft rounded; skin: light warm beige; average adult female height. upper garment: 목화 안감에 털깃을 단 밝은 빛깔 누빔 외투; neckline: open coat collar over a rolled sweater neck; lower garment: khaki wool breeches with buttoned cuffs; footwear: leather boots. accessories: buttons cut with the house seal; worn as sewn down the front of the coat. color palette: cream, forest green, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 강태산, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: soft rounded; skin: light warm beige; average adult female height. headwear: knitted wool watch cap; upper garment: oxblood plain wool work jacket over a collared shirt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned shirt collar; lower garment: burgundy A-line mid-calf wool skirt over thick stockings; footwear: thick-soled leather winter boots with wool socks. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: oxblood, burgundy, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 강태산, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: soft rounded; skin: light warm beige; average adult female height. upper garment: 목화 안감에 털깃을 단 밝은 빛깔 누빔 외투; neckline: open coat collar over a rolled sweater neck; lower garment: khaki wool breeches with buttoned cuffs; footwear: leather boots. accessories: buttons cut with the house seal; worn as sewn down the front of the coat. color palette: cream, forest green, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 강태산, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: soft rounded; skin: light warm beige; average adult female height. headwear: knitted wool watch cap; upper garment: oxblood plain wool work jacket over a collared shirt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned shirt collar; lower garment: burgundy A-line mid-calf wool skirt over thick stockings; footwear: thick-soled leather winter boots with wool socks. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: oxblood, burgundy, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 강태산, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: soft rounded; skin: light warm beige; average adult female height. upper garment: 목화 안감에 털깃을 단 밝은 빛깔 누빔 외투; neckline: open coat collar over a rolled sweater neck; lower garment: khaki wool breeches with buttoned cuffs; footwear: leather boots. accessories: buttons cut with the house seal; worn as sewn down the front of the coat. color palette: cream, forest green, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 강태산, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: soft rounded; skin: light warm beige; average adult female height. headwear: knitted wool watch cap; upper garment: oxblood plain wool work jacket over a collared shirt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned shirt collar; lower garment: burgundy A-line mid-calf wool skirt over thick stockings; footwear: thick-soled leather winter boots with wool socks. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: oxblood, burgundy, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 강태산, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: soft rounded; skin: light warm beige; average adult female height. upper garment: 목화 안감에 털깃을 단 밝은 빛깔 누빔 외투; neckline: open coat collar over a rolled sweater neck; lower garment: khaki wool breeches with buttoned cuffs; footwear: leather boots. accessories: buttons cut with the house seal; worn as sewn down the front of the coat. color palette: cream, forest green, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

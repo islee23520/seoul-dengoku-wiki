@@ -3,26 +3,27 @@
   "personId": "person-0053",
   "characterId": "K053",
   "name": "류겨레",
-  "stateId": "S02",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "난민 수용 전령"
+    "role": "가산디지털단지역 역반장 · 자유도시들"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, youthful smooth skin",
     "hair": "chin-length bob with soft waves",
-    "upper": "clay brown wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "clay brown wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "깃에 올리브빛 끈을 두른 짙은 회색 합성 섬유 겹 작업복, 소매에 덧댄 천",
+    "outfit": "깃에 올리브빛 끈을 두른 짙은 회색 합성 섬유 겹 작업복, 소매에 덧댄 천",
     "palette": [
-      "clay brown",
-      "khaki"
+      "charcoal",
+      "olive",
+      "steel"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "khaki canvas work trousers tucked into boots",
-    "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "leather dispatch satchel"
+    "lower": "charcoal synthetic work trousers",
+    "footwear": "laced rubber boots",
+    "accessories": "hanging spring scale and a key ring"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -173,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "fur-lined ear-flap cap",
+        "value": "olive knitted cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "clay brown wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "깃에 올리브빛 끈을 두른 짙은 회색 합성 섬유 겹 작업복, 소매에 덧댄 천",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "khaki canvas work trousers tucked into boots",
+        "value": "charcoal synthetic work trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "thick-soled leather winter boots with wool socks",
+        "value": "laced rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "turned-up jacket collar",
+        "value": "buttoned collar with an olive cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "leather dispatch satchel",
+        "value": "hanging spring scale and a key ring",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat flap satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "worn brown leather",
+        "value": "dull steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, brass buckle",
+        "value": "steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the chest",
+        "value": "scale hooked to the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "hooked spring scale",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 류겨레, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: long oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: average with narrow shoulders; skin: light warm beige. headwear: fur-lined ear-flap cap; upper garment: clay brown wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar. accessories: leather dispatch satchel; worn as strap across the chest. color palette: clay brown, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 류겨레, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: long oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: average with narrow shoulders; skin: light warm beige. headwear: olive knitted cap; upper garment: 깃에 올리브빛 끈을 두른 짙은 회색 합성 섬유 겹 작업복, 소매에 덧댄 천; neckline: buttoned collar with an olive cord. accessories: hanging spring scale and a key ring; worn as scale hooked to the belt. color palette: charcoal, olive, steel. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 류겨레, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: long oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: average with narrow shoulders; skin: light warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: clay brown wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: khaki canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: clay brown, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 류겨레, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: long oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: average with narrow shoulders; skin: light warm beige; average adult female height. headwear: olive knitted cap; upper garment: 깃에 올리브빛 끈을 두른 짙은 회색 합성 섬유 겹 작업복, 소매에 덧댄 천; neckline: buttoned collar with an olive cord; lower garment: charcoal synthetic work trousers; footwear: laced rubber boots. accessories: hanging spring scale and a key ring; worn as scale hooked to the belt. color palette: charcoal, olive, steel. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 류겨레, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: long oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: average with narrow shoulders; skin: light warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: clay brown wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: khaki canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: clay brown, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 류겨레, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: long oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: average with narrow shoulders; skin: light warm beige; average adult female height. headwear: olive knitted cap; upper garment: 깃에 올리브빛 끈을 두른 짙은 회색 합성 섬유 겹 작업복, 소매에 덧댄 천; neckline: buttoned collar with an olive cord; lower garment: charcoal synthetic work trousers; footwear: laced rubber boots. accessories: hanging spring scale and a key ring; worn as scale hooked to the belt. color palette: charcoal, olive, steel. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 류겨레, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: long oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: average with narrow shoulders; skin: light warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: clay brown wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: khaki canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: clay brown, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 류겨레, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: long oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: average with narrow shoulders; skin: light warm beige; average adult female height. headwear: olive knitted cap; upper garment: 깃에 올리브빛 끈을 두른 짙은 회색 합성 섬유 겹 작업복, 소매에 덧댄 천; neckline: buttoned collar with an olive cord; lower garment: charcoal synthetic work trousers; footwear: laced rubber boots. accessories: hanging spring scale and a key ring; worn as scale hooked to the belt. color palette: charcoal, olive, steel. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 류겨레, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: long oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: average with narrow shoulders; skin: light warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: clay brown wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: khaki canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: clay brown, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 류겨레, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: long oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: average with narrow shoulders; skin: light warm beige; average adult female height. headwear: olive knitted cap; upper garment: 깃에 올리브빛 끈을 두른 짙은 회색 합성 섬유 겹 작업복, 소매에 덧댄 천; neckline: buttoned collar with an olive cord; lower garment: charcoal synthetic work trousers; footwear: laced rubber boots. accessories: hanging spring scale and a key ring; worn as scale hooked to the belt. color palette: charcoal, olive, steel. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

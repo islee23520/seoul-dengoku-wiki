@@ -3,26 +3,27 @@
   "personId": "person-0021",
   "characterId": "K021",
   "name": "채한솔",
-  "stateId": "S01",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "신정기지 비상발전 운전장"
+    "role": "목동 구간장 · 자유도시들"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "chin-length bob with soft waves",
-    "upper": "dove grey patched twill work jacket with reinforced elbows, with a light knitted scarf",
-    "outfit": "dove grey patched twill work jacket with reinforced elbows, with a light knitted scarf",
+    "upper": "초록 도시 끈을 깃에 두른 비둘기색 합성 섬유 작업 재킷, 팔꿈치에 덧댄 천",
+    "outfit": "초록 도시 끈을 깃에 두른 비둘기색 합성 섬유 작업 재킷, 팔꿈치에 덧댄 천",
     "palette": [
       "dove grey",
-      "navy"
+      "navy",
+      "forest green"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "navy canvas work trousers tucked into boots",
-    "footwear": "steel-toe leather work boots",
-    "accessories": "rolled leather tool roll and work gloves tucked into the belt"
+    "lower": "navy synthetic work trousers tucked into boots",
+    "footwear": "steel-toe rubber work boots",
+    "accessories": "tool loop belt with a cable tester"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -173,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "flat cloth cap",
+        "value": "flat synthetic cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "dove grey patched twill work jacket with reinforced elbows, with a light knitted scarf",
+        "value": "초록 도시 끈을 깃에 두른 비둘기색 합성 섬유 작업 재킷, 팔꿈치에 덧댄 천",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "navy canvas work trousers tucked into boots",
+        "value": "navy synthetic work trousers tucked into boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "steel-toe leather work boots",
+        "value": "steel-toe rubber work boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "open work collar",
+        "value": "open work collar with a green city cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "rolled leather tool roll and work gloves tucked into the belt",
+        "value": "tool loop belt with a cable tester",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "rolled bundle and gloves",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "oiled brown leather",
+        "value": "black rubber and grey webbing",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, steel",
+        "value": "rubber, steel, synthetic webbing",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "tucked into the belt",
+        "value": "worn at the waist",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "belt with a small boxy tester",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 채한솔, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: broad-shouldered; skin: tan warm beige. headwear: flat cloth cap; upper garment: dove grey patched twill work jacket with reinforced elbows, with a light knitted scarf; neckline: open work collar. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 채한솔, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: broad-shouldered; skin: tan warm beige. headwear: flat synthetic cap; upper garment: 초록 도시 끈을 깃에 두른 비둘기색 합성 섬유 작업 재킷, 팔꿈치에 덧댄 천; neckline: open work collar with a green city cord. accessories: tool loop belt with a cable tester; worn as worn at the waist. color palette: dove grey, navy, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 채한솔, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: broad-shouldered; skin: tan warm beige; average adult female height. headwear: flat cloth cap; upper garment: dove grey patched twill work jacket with reinforced elbows, with a light knitted scarf; neckline: open work collar; lower garment: navy canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 채한솔, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: broad-shouldered; skin: tan warm beige; average adult female height. headwear: flat synthetic cap; upper garment: 초록 도시 끈을 깃에 두른 비둘기색 합성 섬유 작업 재킷, 팔꿈치에 덧댄 천; neckline: open work collar with a green city cord; lower garment: navy synthetic work trousers tucked into boots; footwear: steel-toe rubber work boots. accessories: tool loop belt with a cable tester; worn as worn at the waist. color palette: dove grey, navy, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 채한솔, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: broad-shouldered; skin: tan warm beige; average adult female height. headwear: flat cloth cap; upper garment: dove grey patched twill work jacket with reinforced elbows, with a light knitted scarf; neckline: open work collar; lower garment: navy canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 채한솔, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: broad-shouldered; skin: tan warm beige; average adult female height. headwear: flat synthetic cap; upper garment: 초록 도시 끈을 깃에 두른 비둘기색 합성 섬유 작업 재킷, 팔꿈치에 덧댄 천; neckline: open work collar with a green city cord; lower garment: navy synthetic work trousers tucked into boots; footwear: steel-toe rubber work boots. accessories: tool loop belt with a cable tester; worn as worn at the waist. color palette: dove grey, navy, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 채한솔, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: broad-shouldered; skin: tan warm beige; average adult female height. headwear: flat cloth cap; upper garment: dove grey patched twill work jacket with reinforced elbows, with a light knitted scarf; neckline: open work collar; lower garment: navy canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 채한솔, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: broad-shouldered; skin: tan warm beige; average adult female height. headwear: flat synthetic cap; upper garment: 초록 도시 끈을 깃에 두른 비둘기색 합성 섬유 작업 재킷, 팔꿈치에 덧댄 천; neckline: open work collar with a green city cord; lower garment: navy synthetic work trousers tucked into boots; footwear: steel-toe rubber work boots. accessories: tool loop belt with a cable tester; worn as worn at the waist. color palette: dove grey, navy, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 채한솔, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: broad-shouldered; skin: tan warm beige; average adult female height. headwear: flat cloth cap; upper garment: dove grey patched twill work jacket with reinforced elbows, with a light knitted scarf; neckline: open work collar; lower garment: navy canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 채한솔, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: broad-shouldered; skin: tan warm beige; average adult female height. headwear: flat synthetic cap; upper garment: 초록 도시 끈을 깃에 두른 비둘기색 합성 섬유 작업 재킷, 팔꿈치에 덧댄 천; neckline: open work collar with a green city cord; lower garment: navy synthetic work trousers tucked into boots; footwear: steel-toe rubber work boots. accessories: tool loop belt with a cable tester; worn as worn at the waist. color palette: dove grey, navy, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

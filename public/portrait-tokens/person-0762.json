@@ -3,26 +3,27 @@
   "personId": "person-0762",
   "characterId": "K762",
   "name": "양름태",
-  "stateId": "S03",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "종자 기록관"
+    "role": "가문 징집병 · 신논현역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "short side-parted hair combed neatly",
-    "upper": "dove grey wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
-    "outfit": "dove grey wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
+    "upper": "khaki quilted wool levy jacket with the maintenance gaps sewn shut, under a heavy felt greatcoat with a raised collar for surface cold",
+    "outfit": "khaki quilted wool levy jacket with the maintenance gaps sewn shut, under a heavy felt greatcoat with a raised collar for surface cold",
     "palette": [
-      "dove grey",
+      "khaki",
+      "charcoal",
       "clay brown"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "clay brown straight wool trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "charcoal felt-lined trousers tucked into wrapped wool leggings",
+    "footwear": "felt-lined lace-up winter boots",
+    "accessories": "red Near House band with diagonal stitching tied on the upper arm"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -173,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "knitted wool cap with ear flaps",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "dove grey wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
+        "value": "khaki quilted wool levy jacket with the maintenance gaps sewn shut, under a heavy felt greatcoat with a raised collar for surface cold",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "clay brown straight wool trousers",
+        "value": "charcoal felt-lined trousers tucked into wrapped wool leggings",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt-lined lace-up winter boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "high wool collar wrapped in a thick scarf, no stitching",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "red Near House band with diagonal stitching tied on the upper arm",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "faded red with dark diagonal stitching",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "wool felt, cotton thread",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "tied around the upper arm",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "narrow cloth band",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 양름태, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average; skin: medium warm beige. upper garment: dove grey wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: dove grey, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 양름태, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average; skin: medium warm beige. headwear: knitted wool cap with ear flaps; upper garment: khaki quilted wool levy jacket with the maintenance gaps sewn shut, under a heavy felt greatcoat with a raised collar for surface cold; neckline: high wool collar wrapped in a thick scarf, no stitching. accessories: red Near House band with diagonal stitching tied on the upper arm; worn as tied around the upper arm. color palette: khaki, charcoal, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 양름태, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average; skin: medium warm beige; average adult male height. upper garment: dove grey wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: clay brown straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: dove grey, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 양름태, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average; skin: medium warm beige; average adult male height. headwear: knitted wool cap with ear flaps; upper garment: khaki quilted wool levy jacket with the maintenance gaps sewn shut, under a heavy felt greatcoat with a raised collar for surface cold; neckline: high wool collar wrapped in a thick scarf, no stitching; lower garment: charcoal felt-lined trousers tucked into wrapped wool leggings; footwear: felt-lined lace-up winter boots. accessories: red Near House band with diagonal stitching tied on the upper arm; worn as tied around the upper arm. color palette: khaki, charcoal, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 양름태, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average; skin: medium warm beige; average adult male height. upper garment: dove grey wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: clay brown straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: dove grey, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 양름태, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average; skin: medium warm beige; average adult male height. headwear: knitted wool cap with ear flaps; upper garment: khaki quilted wool levy jacket with the maintenance gaps sewn shut, under a heavy felt greatcoat with a raised collar for surface cold; neckline: high wool collar wrapped in a thick scarf, no stitching; lower garment: charcoal felt-lined trousers tucked into wrapped wool leggings; footwear: felt-lined lace-up winter boots. accessories: red Near House band with diagonal stitching tied on the upper arm; worn as tied around the upper arm. color palette: khaki, charcoal, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 양름태, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average; skin: medium warm beige; average adult male height. upper garment: dove grey wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: clay brown straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: dove grey, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 양름태, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average; skin: medium warm beige; average adult male height. headwear: knitted wool cap with ear flaps; upper garment: khaki quilted wool levy jacket with the maintenance gaps sewn shut, under a heavy felt greatcoat with a raised collar for surface cold; neckline: high wool collar wrapped in a thick scarf, no stitching; lower garment: charcoal felt-lined trousers tucked into wrapped wool leggings; footwear: felt-lined lace-up winter boots. accessories: red Near House band with diagonal stitching tied on the upper arm; worn as tied around the upper arm. color palette: khaki, charcoal, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 양름태, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average; skin: medium warm beige; average adult male height. upper garment: dove grey wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: clay brown straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: dove grey, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 양름태, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average; skin: medium warm beige; average adult male height. headwear: knitted wool cap with ear flaps; upper garment: khaki quilted wool levy jacket with the maintenance gaps sewn shut, under a heavy felt greatcoat with a raised collar for surface cold; neckline: high wool collar wrapped in a thick scarf, no stitching; lower garment: charcoal felt-lined trousers tucked into wrapped wool leggings; footwear: felt-lined lace-up winter boots. accessories: red Near House band with diagonal stitching tied on the upper arm; worn as tied around the upper arm. color palette: khaki, charcoal, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

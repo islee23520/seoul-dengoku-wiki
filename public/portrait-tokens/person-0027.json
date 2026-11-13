@@ -3,27 +3,27 @@
   "personId": "person-0027",
   "characterId": "K027",
   "name": "기바름",
-  "stateId": "S01",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "서부 비상 호송 전령"
+    "role": "영등포구청역 역반장 · 자유도시들"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "chin-length bob with soft waves",
-    "upper": "dove grey short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "dove grey short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "금빛 도시 끈을 깃에 두른 비둘기색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷",
+    "outfit": "금빛 도시 끈을 깃에 두른 비둘기색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷",
     "palette": [
       "dove grey",
       "mustard ochre",
       "cream"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "mustard ochre wool trousers bloused over boots",
-    "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "small hand lamp clipped to a leather belt"
+    "lower": "mustard ochre synthetic trousers bloused over boots",
+    "footwear": "thick-soled insulated boots with rubber overshoes",
+    "accessories": "hand lamp at the belt and a long arrivals log"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "knitted wool watch cap",
+        "value": "knitted synthetic watch cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "dove grey short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "금빛 도시 끈을 깃에 두른 비둘기색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "mustard ochre wool trousers bloused over boots",
+        "value": "mustard ochre synthetic trousers bloused over boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "thick-soled leather winter boots with wool socks",
+        "value": "thick-soled insulated boots with rubber overshoes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "closed turn-down collar",
+        "value": "closed turn-down collar with a gold city cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "small hand lamp clipped to a leather belt",
+        "value": "hand lamp at the belt and a long arrivals log",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
-        "derived": true
-      },
-      "shape": {
-        "value": "compact cylindrical lamp",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull steel and dark brown leather",
+        "value": "dull steel and grey paper",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "steel, leather",
+        "value": "steel, paper",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "clipped at the belt",
+        "value": "lamp clipped at the belt, log in the coat",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "compact cylindrical lamp and long narrow log",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 기바름, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: sturdy; skin: light olive. headwear: knitted wool watch cap; upper garment: dove grey short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: dove grey, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 기바름, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: sturdy; skin: light olive. headwear: knitted synthetic watch cap; upper garment: 금빛 도시 끈을 깃에 두른 비둘기색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷; neckline: closed turn-down collar with a gold city cord. accessories: hand lamp at the belt and a long arrivals log; worn as lamp clipped at the belt, log in the coat. color palette: dove grey, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 기바름, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: sturdy; skin: light olive; average adult female height. headwear: knitted wool watch cap; upper garment: dove grey short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: mustard ochre wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: dove grey, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 기바름, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: sturdy; skin: light olive; average adult female height. headwear: knitted synthetic watch cap; upper garment: 금빛 도시 끈을 깃에 두른 비둘기색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷; neckline: closed turn-down collar with a gold city cord; lower garment: mustard ochre synthetic trousers bloused over boots; footwear: thick-soled insulated boots with rubber overshoes. accessories: hand lamp at the belt and a long arrivals log; worn as lamp clipped at the belt, log in the coat. color palette: dove grey, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 기바름, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: sturdy; skin: light olive; average adult female height. headwear: knitted wool watch cap; upper garment: dove grey short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: mustard ochre wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: dove grey, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 기바름, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: sturdy; skin: light olive; average adult female height. headwear: knitted synthetic watch cap; upper garment: 금빛 도시 끈을 깃에 두른 비둘기색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷; neckline: closed turn-down collar with a gold city cord; lower garment: mustard ochre synthetic trousers bloused over boots; footwear: thick-soled insulated boots with rubber overshoes. accessories: hand lamp at the belt and a long arrivals log; worn as lamp clipped at the belt, log in the coat. color palette: dove grey, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 기바름, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: sturdy; skin: light olive; average adult female height. headwear: knitted wool watch cap; upper garment: dove grey short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: mustard ochre wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: dove grey, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 기바름, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: sturdy; skin: light olive; average adult female height. headwear: knitted synthetic watch cap; upper garment: 금빛 도시 끈을 깃에 두른 비둘기색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷; neckline: closed turn-down collar with a gold city cord; lower garment: mustard ochre synthetic trousers bloused over boots; footwear: thick-soled insulated boots with rubber overshoes. accessories: hand lamp at the belt and a long arrivals log; worn as lamp clipped at the belt, log in the coat. color palette: dove grey, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 기바름, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: sturdy; skin: light olive; average adult female height. headwear: knitted wool watch cap; upper garment: dove grey short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: mustard ochre wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: dove grey, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 기바름, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: sturdy; skin: light olive; average adult female height. headwear: knitted synthetic watch cap; upper garment: 금빛 도시 끈을 깃에 두른 비둘기색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷; neckline: closed turn-down collar with a gold city cord; lower garment: mustard ochre synthetic trousers bloused over boots; footwear: thick-soled insulated boots with rubber overshoes. accessories: hand lamp at the belt and a long arrivals log; worn as lamp clipped at the belt, log in the coat. color palette: dove grey, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

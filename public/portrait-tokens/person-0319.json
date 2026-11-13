@@ -3,27 +3,27 @@
   "personId": "person-0319",
   "characterId": "K318",
   "name": "석봄우",
-  "stateId": "S12",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "패권전 개막 징발 인파 대표"
+    "role": "구청 서기 · 숙대입구역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "braids pinned up into a crown",
-    "upper": "charcoal plain wool work jacket over a collared shirt",
-    "outfit": "charcoal plain wool work jacket over a collared shirt",
+    "upper": "남색 띠를 두른 누빔 외투",
+    "outfit": "남색 띠를 두른 누빔 외투",
     "palette": [
+      "navy",
       "charcoal",
-      "dove grey",
-      "cream"
+      "dove grey"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
     "lower": "dove grey high-waisted wide-leg wool trousers",
     "footwear": "laced leather walking shoes",
-    "accessories": "duty whistle on a cord lanyard"
+    "accessories": "civil-servant ID and a leather seal pouch"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "charcoal plain wool work jacket over a collared shirt",
+        "value": "남색 띠를 두른 누빔 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
         "value": "dove grey high-waisted wide-leg wool trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
         "value": "laced leather walking shoes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -206,39 +206,39 @@
       "neckline": {
         "value": "buttoned shirt collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "duty whistle on a cord lanyard",
+        "value": "civil-servant ID and a leather seal pouch",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull brass",
+        "value": "navy cord and dark brown leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, cord",
+        "value": "card, leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "lanyard around the neck",
+        "value": "ID round the neck, pouch at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat card and a small square pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 석봄우, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; salt-and-pepper hair; long length. build: average with narrow shoulders; skin: fair with a neutral undertone. upper garment: charcoal plain wool work jacket over a collared shirt; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: charcoal, dove grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 석봄우, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; salt-and-pepper hair; long length. build: average with narrow shoulders; skin: fair with a neutral undertone. upper garment: 남색 띠를 두른 누빔 외투; neckline: buttoned shirt collar. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, charcoal, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 석봄우, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; salt-and-pepper hair; long length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult female height. upper garment: charcoal plain wool work jacket over a collared shirt; neckline: buttoned shirt collar; lower garment: dove grey high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: charcoal, dove grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 석봄우, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; salt-and-pepper hair; long length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult female height. upper garment: 남색 띠를 두른 누빔 외투; neckline: buttoned shirt collar; lower garment: dove grey high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, charcoal, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 석봄우, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; salt-and-pepper hair; long length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult female height. upper garment: charcoal plain wool work jacket over a collared shirt; neckline: buttoned shirt collar; lower garment: dove grey high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: charcoal, dove grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 석봄우, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; salt-and-pepper hair; long length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult female height. upper garment: 남색 띠를 두른 누빔 외투; neckline: buttoned shirt collar; lower garment: dove grey high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, charcoal, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 석봄우, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; salt-and-pepper hair; long length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult female height. upper garment: charcoal plain wool work jacket over a collared shirt; neckline: buttoned shirt collar; lower garment: dove grey high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: charcoal, dove grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 석봄우, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; salt-and-pepper hair; long length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult female height. upper garment: 남색 띠를 두른 누빔 외투; neckline: buttoned shirt collar; lower garment: dove grey high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, charcoal, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 석봄우, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; salt-and-pepper hair; long length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult female height. upper garment: charcoal plain wool work jacket over a collared shirt; neckline: buttoned shirt collar; lower garment: dove grey high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: charcoal, dove grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 석봄우, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; salt-and-pepper hair; long length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult female height. upper garment: 남색 띠를 두른 누빔 외투; neckline: buttoned shirt collar; lower garment: dove grey high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, charcoal, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

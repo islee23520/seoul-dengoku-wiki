@@ -3,27 +3,27 @@
   "personId": "person-0013",
   "characterId": "K013",
   "name": "채온결",
-  "stateId": "S01",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "영등포 관로 순찰대 조장"
+    "role": "보라매 구간장 · 자유도시들"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "chin-length bob with soft waves",
-    "upper": "khaki short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "khaki short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "금빛 도시 끈을 깃에 두른 카키색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷",
+    "outfit": "금빛 도시 끈을 깃에 두른 카키색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷",
     "palette": [
       "khaki",
       "olive drab",
       "slate blue"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "olive drab canvas work trousers tucked into boots",
-    "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "small hand lamp clipped to a leather belt"
+    "lower": "olive drab synthetic work trousers tucked into boots",
+    "footwear": "thick-soled insulated boots with rubber overshoes",
+    "accessories": "hand lamp and a short pipe hammer at the belt"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "fur-lined ear-flap cap",
+        "value": "padded synthetic cap with ear flaps",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "khaki short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "금빛 도시 끈을 깃에 두른 카키색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "olive drab canvas work trousers tucked into boots",
+        "value": "olive drab synthetic work trousers tucked into boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "thick-soled leather winter boots with wool socks",
+        "value": "thick-soled insulated boots with rubber overshoes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "closed turn-down collar",
+        "value": "closed turn-down collar with a gold city cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "small hand lamp clipped to a leather belt",
+        "value": "hand lamp and a short pipe hammer at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
-        "derived": true
-      },
-      "shape": {
-        "value": "compact cylindrical lamp",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull steel and dark brown leather",
+        "value": "dull steel and black webbing",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "steel, leather",
+        "value": "steel, synthetic webbing",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
         "value": "clipped at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "compact cylindrical lamp and short hammer",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 채온결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: broad-shouldered; skin: light warm beige. headwear: fur-lined ear-flap cap; upper garment: khaki short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: khaki, olive drab, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 채온결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: broad-shouldered; skin: light warm beige. headwear: padded synthetic cap with ear flaps; upper garment: 금빛 도시 끈을 깃에 두른 카키색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷; neckline: closed turn-down collar with a gold city cord. accessories: hand lamp and a short pipe hammer at the belt; worn as clipped at the belt. color palette: khaki, olive drab, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 채온결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: broad-shouldered; skin: light warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: khaki short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: olive drab canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: khaki, olive drab, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 채온결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: broad-shouldered; skin: light warm beige; average adult female height. headwear: padded synthetic cap with ear flaps; upper garment: 금빛 도시 끈을 깃에 두른 카키색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷; neckline: closed turn-down collar with a gold city cord; lower garment: olive drab synthetic work trousers tucked into boots; footwear: thick-soled insulated boots with rubber overshoes. accessories: hand lamp and a short pipe hammer at the belt; worn as clipped at the belt. color palette: khaki, olive drab, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 채온결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: broad-shouldered; skin: light warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: khaki short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: olive drab canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: khaki, olive drab, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 채온결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: broad-shouldered; skin: light warm beige; average adult female height. headwear: padded synthetic cap with ear flaps; upper garment: 금빛 도시 끈을 깃에 두른 카키색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷; neckline: closed turn-down collar with a gold city cord; lower garment: olive drab synthetic work trousers tucked into boots; footwear: thick-soled insulated boots with rubber overshoes. accessories: hand lamp and a short pipe hammer at the belt; worn as clipped at the belt. color palette: khaki, olive drab, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 채온결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: broad-shouldered; skin: light warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: khaki short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: olive drab canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: khaki, olive drab, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 채온결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: broad-shouldered; skin: light warm beige; average adult female height. headwear: padded synthetic cap with ear flaps; upper garment: 금빛 도시 끈을 깃에 두른 카키색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷; neckline: closed turn-down collar with a gold city cord; lower garment: olive drab synthetic work trousers tucked into boots; footwear: thick-soled insulated boots with rubber overshoes. accessories: hand lamp and a short pipe hammer at the belt; worn as clipped at the belt. color palette: khaki, olive drab, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 채온결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: broad-shouldered; skin: light warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: khaki short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: olive drab canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: khaki, olive drab, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 채온결, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted pink lips. chin-length bob with soft waves; dark brown hair; short length. build: broad-shouldered; skin: light warm beige; average adult female height. headwear: padded synthetic cap with ear flaps; upper garment: 금빛 도시 끈을 깃에 두른 카키색 짧은 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷; neckline: closed turn-down collar with a gold city cord; lower garment: olive drab synthetic work trousers tucked into boots; footwear: thick-soled insulated boots with rubber overshoes. accessories: hand lamp and a short pipe hammer at the belt; worn as clipped at the belt. color palette: khaki, olive drab, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

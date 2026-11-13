@@ -3,27 +3,27 @@
   "personId": "person-0370",
   "characterId": "K369",
   "name": "창지안",
-  "stateId": "S14",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "양군 외부 징발 피난 인파 대표"
+    "role": "동주민센터 선임 서기 · 동대입구역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, youthful smooth skin",
     "hair": "medium-length hair swept back",
-    "upper": "olive drab knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer",
-    "outfit": "olive drab knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer",
+    "upper": "navy-banded quilted long coat",
+    "outfit": "navy-banded quilted long coat",
     "palette": [
-      "olive drab",
       "navy",
-      "khaki"
+      "dove grey",
+      "charcoal"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "navy wool breeches with buttoned cuffs",
-    "footwear": "leather ankle boots",
-    "accessories": "duty whistle on a cord lanyard"
+    "lower": "quilted synthetic trousers",
+    "footwear": "felt-lined synthetic rubber boots",
+    "accessories": "civil servant card on a cord beside the metal registration tag, with a cloth seal pouch"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "fur-lined ear-flap cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "olive drab knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer",
+        "value": "navy-banded quilted long coat",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "navy wool breeches with buttoned cuffs",
+        "value": "quilted synthetic trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "leather ankle boots",
+        "value": "felt-lined synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "high quilted collar with a cloth face covering",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "duty whistle on a cord lanyard",
+        "value": "civil servant card on a cord beside the metal registration tag, with a cloth seal pouch",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull brass",
+        "value": "dull steel and navy cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, cord",
+        "value": "steel, cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "lanyard around the neck",
+        "value": "hung at the neck and tied at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat rectangular card and small drawstring pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 창지안, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: average; skin: medium warm beige. upper garment: olive drab knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 창지안, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: average; skin: medium warm beige. headwear: fur-lined ear-flap cap; upper garment: navy-banded quilted long coat; neckline: high quilted collar with a cloth face covering. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, dove grey, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 창지안, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: average; skin: medium warm beige; average adult male height. upper garment: olive drab knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy wool breeches with buttoned cuffs; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 창지안, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: average; skin: medium warm beige; average adult male height. headwear: fur-lined ear-flap cap; upper garment: navy-banded quilted long coat; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, dove grey, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 창지안, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: average; skin: medium warm beige; average adult male height. upper garment: olive drab knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy wool breeches with buttoned cuffs; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 창지안, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: average; skin: medium warm beige; average adult male height. headwear: fur-lined ear-flap cap; upper garment: navy-banded quilted long coat; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, dove grey, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 창지안, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: average; skin: medium warm beige; average adult male height. upper garment: olive drab knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy wool breeches with buttoned cuffs; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 창지안, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: average; skin: medium warm beige; average adult male height. headwear: fur-lined ear-flap cap; upper garment: navy-banded quilted long coat; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, dove grey, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 창지안, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: average; skin: medium warm beige; average adult male height. upper garment: olive drab knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy wool breeches with buttoned cuffs; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, khaki. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 창지안, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; black hair; medium length. build: average; skin: medium warm beige; average adult male height. headwear: fur-lined ear-flap cap; upper garment: navy-banded quilted long coat; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, dove grey, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

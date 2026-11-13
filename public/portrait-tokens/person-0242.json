@@ -3,27 +3,27 @@
   "personId": "person-0242",
   "characterId": "K241",
   "name": "순한결",
-  "stateId": "S09",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "북한산보국문 행렬 환전 증인"
+    "role": "까치산역 역반장 · 자유도시들"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "short side-parted hair combed neatly",
-    "upper": "slate blue long belted wool coat with deep patch pockets, with a thick knitted scarf and an extra padded layer",
-    "outfit": "slate blue long belted wool coat with deep patch pockets, with a thick knitted scarf and an extra padded layer",
+    "upper": "깃에 보랏빛 끈을 두른 솜 조끼를 겹친 낡은 갈색 합성 섬유 작업 외투",
+    "outfit": "깃에 보랏빛 끈을 두른 솜 조끼를 겹친 낡은 갈색 합성 섬유 작업 외투",
     "palette": [
-      "slate blue",
-      "rust brown",
-      "oxblood"
+      "faded brown",
+      "purple",
+      "brass"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "rust brown high-waisted pleated trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "small leather coin purse and a folded ledger"
+    "lower": "brown synthetic trousers",
+    "footwear": "felt-lined boots",
+    "accessories": "ring of keys and a folded passage sheet"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "knitted purple cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "slate blue long belted wool coat with deep patch pockets, with a thick knitted scarf and an extra padded layer",
+        "value": "깃에 보랏빛 끈을 두른 솜 조끼를 겹친 낡은 갈색 합성 섬유 작업 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "rust brown high-waisted pleated trousers",
+        "value": "brown synthetic trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt-lined boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "shirt collar under a knit vest",
+        "value": "quilted collar with a purple cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "small leather coin purse and a folded ledger",
+        "value": "ring of keys and a folded passage sheet",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
-        "derived": true
-      },
-      "shape": {
-        "value": "pouch and narrow ledger",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "brown leather and paper",
+        "value": "brass and grey sheet",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, paper",
+        "value": "brass, synthetic sheet",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "purse at the belt, ledger in the coat pocket",
+        "value": "keys on the belt, sheet in the pocket",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "ring and folded sheet",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 순한결, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: fair with a neutral undertone. upper garment: slate blue long belted wool coat with deep patch pockets, with a thick knitted scarf and an extra padded layer; neckline: shirt collar under a knit vest. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: slate blue, rust brown, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 순한결, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: fair with a neutral undertone. headwear: knitted purple cap; upper garment: 깃에 보랏빛 끈을 두른 솜 조끼를 겹친 낡은 갈색 합성 섬유 작업 외투; neckline: quilted collar with a purple cord. accessories: ring of keys and a folded passage sheet; worn as keys on the belt, sheet in the pocket. color palette: faded brown, purple, brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 순한결, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult male height. upper garment: slate blue long belted wool coat with deep patch pockets, with a thick knitted scarf and an extra padded layer; neckline: shirt collar under a knit vest; lower garment: rust brown high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: slate blue, rust brown, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 순한결, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult male height. headwear: knitted purple cap; upper garment: 깃에 보랏빛 끈을 두른 솜 조끼를 겹친 낡은 갈색 합성 섬유 작업 외투; neckline: quilted collar with a purple cord; lower garment: brown synthetic trousers; footwear: felt-lined boots. accessories: ring of keys and a folded passage sheet; worn as keys on the belt, sheet in the pocket. color palette: faded brown, purple, brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 순한결, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult male height. upper garment: slate blue long belted wool coat with deep patch pockets, with a thick knitted scarf and an extra padded layer; neckline: shirt collar under a knit vest; lower garment: rust brown high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: slate blue, rust brown, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 순한결, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult male height. headwear: knitted purple cap; upper garment: 깃에 보랏빛 끈을 두른 솜 조끼를 겹친 낡은 갈색 합성 섬유 작업 외투; neckline: quilted collar with a purple cord; lower garment: brown synthetic trousers; footwear: felt-lined boots. accessories: ring of keys and a folded passage sheet; worn as keys on the belt, sheet in the pocket. color palette: faded brown, purple, brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 순한결, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult male height. upper garment: slate blue long belted wool coat with deep patch pockets, with a thick knitted scarf and an extra padded layer; neckline: shirt collar under a knit vest; lower garment: rust brown high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: slate blue, rust brown, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 순한결, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult male height. headwear: knitted purple cap; upper garment: 깃에 보랏빛 끈을 두른 솜 조끼를 겹친 낡은 갈색 합성 섬유 작업 외투; neckline: quilted collar with a purple cord; lower garment: brown synthetic trousers; footwear: felt-lined boots. accessories: ring of keys and a folded passage sheet; worn as keys on the belt, sheet in the pocket. color palette: faded brown, purple, brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 순한결, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult male height. upper garment: slate blue long belted wool coat with deep patch pockets, with a thick knitted scarf and an extra padded layer; neckline: shirt collar under a knit vest; lower garment: rust brown high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: slate blue, rust brown, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 순한결, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short side-parted hair combed neatly; salt-and-pepper hair; short length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult male height. headwear: knitted purple cap; upper garment: 깃에 보랏빛 끈을 두른 솜 조끼를 겹친 낡은 갈색 합성 섬유 작업 외투; neckline: quilted collar with a purple cord; lower garment: brown synthetic trousers; footwear: felt-lined boots. accessories: ring of keys and a folded passage sheet; worn as keys on the belt, sheet in the pocket. color palette: faded brown, purple, brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

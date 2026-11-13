@@ -3,27 +3,27 @@
   "personId": "person-0570",
   "characterId": "K570",
   "name": "유바영",
-  "stateId": "S03",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "종자 기록관"
+    "role": "가문 징집병 · 신사역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "hair pinned in a low chignon bun",
-    "upper": "khaki wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
-    "outfit": "khaki wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
+    "upper": "무릎 길이로 짧게 자른 두꺼운 모직·펠트 겹외투, 정비 틈은 꿰매 막고 깃 땀 없음, 위팔에 사선 무늬 붉은 곁집 띠",
+    "outfit": "무릎 길이로 짧게 자른 두꺼운 모직·펠트 겹외투, 정비 틈은 꿰매 막고 깃 땀 없음, 위팔에 사선 무늬 붉은 곁집 띠",
     "palette": [
       "khaki",
-      "burgundy",
-      "mustard ochre"
+      "charcoal",
+      "deep red"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "burgundy pleated knee-length wool skirt over thick stockings",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "khaki padded wool trousers over thick stockings",
+    "footwear": "laced leather winter boots with wool socks",
+    "accessories": "coiled throwing net and a leather strap slung across the shoulder"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "fur-lined ear-flap cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "khaki wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
+        "value": "무릎 길이로 짧게 자른 두꺼운 모직·펠트 겹외투, 정비 틈은 꿰매 막고 깃 땀 없음, 위팔에 사선 무늬 붉은 곁집 띠",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "burgundy pleated knee-length wool skirt over thick stockings",
+        "value": "khaki padded wool trousers over thick stockings",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "laced leather winter boots with wool socks",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "buttoned high collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "coiled throwing net and a leather strap slung across the shoulder",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "tarred brown cord and dark leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "cord, leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "slung across the shoulder",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "coiled net and strap",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 유바영, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: thin straight lips; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: slim; skin: tan warm beige. upper garment: khaki wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: khaki, burgundy, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 유바영, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: thin straight lips; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: slim; skin: tan warm beige. headwear: fur-lined ear-flap cap; upper garment: 무릎 길이로 짧게 자른 두꺼운 모직·펠트 겹외투, 정비 틈은 꿰매 막고 깃 땀 없음, 위팔에 사선 무늬 붉은 곁집 띠; neckline: buttoned high collar. accessories: coiled throwing net and a leather strap slung across the shoulder; worn as slung across the shoulder. color palette: khaki, charcoal, deep red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 유바영, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: thin straight lips; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: slim; skin: tan warm beige; average adult female height. upper garment: khaki wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: burgundy pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: khaki, burgundy, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 유바영, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: thin straight lips; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: slim; skin: tan warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: 무릎 길이로 짧게 자른 두꺼운 모직·펠트 겹외투, 정비 틈은 꿰매 막고 깃 땀 없음, 위팔에 사선 무늬 붉은 곁집 띠; neckline: buttoned high collar; lower garment: khaki padded wool trousers over thick stockings; footwear: laced leather winter boots with wool socks. accessories: coiled throwing net and a leather strap slung across the shoulder; worn as slung across the shoulder. color palette: khaki, charcoal, deep red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 유바영, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: thin straight lips; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: slim; skin: tan warm beige; average adult female height. upper garment: khaki wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: burgundy pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: khaki, burgundy, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 유바영, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: thin straight lips; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: slim; skin: tan warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: 무릎 길이로 짧게 자른 두꺼운 모직·펠트 겹외투, 정비 틈은 꿰매 막고 깃 땀 없음, 위팔에 사선 무늬 붉은 곁집 띠; neckline: buttoned high collar; lower garment: khaki padded wool trousers over thick stockings; footwear: laced leather winter boots with wool socks. accessories: coiled throwing net and a leather strap slung across the shoulder; worn as slung across the shoulder. color palette: khaki, charcoal, deep red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 유바영, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: thin straight lips; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: slim; skin: tan warm beige; average adult female height. upper garment: khaki wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: burgundy pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: khaki, burgundy, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 유바영, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: thin straight lips; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: slim; skin: tan warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: 무릎 길이로 짧게 자른 두꺼운 모직·펠트 겹외투, 정비 틈은 꿰매 막고 깃 땀 없음, 위팔에 사선 무늬 붉은 곁집 띠; neckline: buttoned high collar; lower garment: khaki padded wool trousers over thick stockings; footwear: laced leather winter boots with wool socks. accessories: coiled throwing net and a leather strap slung across the shoulder; worn as slung across the shoulder. color palette: khaki, charcoal, deep red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 유바영, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: thin straight lips; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: slim; skin: tan warm beige; average adult female height. upper garment: khaki wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: burgundy pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: khaki, burgundy, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 유바영, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: rectangular; narrow almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: thin straight lips; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: slim; skin: tan warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: 무릎 길이로 짧게 자른 두꺼운 모직·펠트 겹외투, 정비 틈은 꿰매 막고 깃 땀 없음, 위팔에 사선 무늬 붉은 곁집 띠; neckline: buttoned high collar; lower garment: khaki padded wool trousers over thick stockings; footwear: laced leather winter boots with wool socks. accessories: coiled throwing net and a leather strap slung across the shoulder; worn as slung across the shoulder. color palette: khaki, charcoal, deep red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

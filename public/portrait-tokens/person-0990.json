@@ -3,27 +3,27 @@
   "personId": "person-0990",
   "characterId": "K990",
   "name": "이사벨 가르시아",
-  "stateId": "S07",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "호송 전령"
+    "role": "동주민센터 서기 · 이태원역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, youthful smooth skin",
     "hair": "shoulder-length hair styled in 1940s victory rolls",
-    "upper": "cream wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "cream wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "남색 띠를 두른 누빔 외투",
+    "outfit": "남색 띠를 두른 누빔 외투",
     "palette": [
-      "cream",
-      "slate blue",
+      "ash grey",
+      "navy",
       "rust brown"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "slate blue wool trousers bloused over boots",
-    "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "small hand lamp clipped to a leather belt"
+    "lower": "grey quilted trousers",
+    "footwear": "felt-lined synthetic rubber boots",
+    "accessories": "civil servant ID card on a synthetic cord and a nylon webbing seal pouch at the hip"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -175,27 +175,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "fur-lined ear-flap cap",
+        "value": "grey knitted cap with ear flaps",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "cream wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "남색 띠를 두른 누빔 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "slate blue wool trousers bloused over boots",
+        "value": "grey quilted trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "thick-soled leather winter boots with wool socks",
+        "value": "felt-lined synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -205,41 +205,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "closed turn-down collar",
+        "value": "quilted collar with a navy band",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "small hand lamp clipped to a leather belt",
+        "value": "civil servant ID card on a synthetic cord and a nylon webbing seal pouch at the hip",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
-        "derived": true
-      },
-      "shape": {
-        "value": "compact cylindrical lamp",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull steel and dark brown leather",
+        "value": "navy cord, worn brown pouch",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "steel, leather",
+        "value": "synthetic cord, laminated card, nylon webbing",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "clipped at the belt",
+        "value": "card hung from the neck, pouch tied to the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat card and small drawstring pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -260,27 +260,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 이사벨 가르시아, a Hispanic heritage woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; almond brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; auburn hair; shoulder-length length. build: stocky; skin: warm light brown. headwear: fur-lined ear-flap cap; upper garment: cream wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: cream, slate blue, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 이사벨 가르시아, a Hispanic heritage woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; almond brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; auburn hair; shoulder-length length. build: stocky; skin: warm light brown. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band. accessories: civil servant ID card on a synthetic cord and a nylon webbing seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: ash grey, navy, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 이사벨 가르시아, a Hispanic heritage woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; almond brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; auburn hair; shoulder-length length. build: stocky; skin: warm light brown; average adult female height. headwear: fur-lined ear-flap cap; upper garment: cream wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: slate blue wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: cream, slate blue, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 이사벨 가르시아, a Hispanic heritage woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; almond brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; auburn hair; shoulder-length length. build: stocky; skin: warm light brown; average adult female height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a synthetic cord and a nylon webbing seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: ash grey, navy, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 이사벨 가르시아, a Hispanic heritage woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; almond brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; auburn hair; shoulder-length length. build: stocky; skin: warm light brown; average adult female height. headwear: fur-lined ear-flap cap; upper garment: cream wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: slate blue wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: cream, slate blue, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 이사벨 가르시아, a Hispanic heritage woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; almond brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; auburn hair; shoulder-length length. build: stocky; skin: warm light brown; average adult female height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a synthetic cord and a nylon webbing seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: ash grey, navy, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 이사벨 가르시아, a Hispanic heritage woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; almond brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; auburn hair; shoulder-length length. build: stocky; skin: warm light brown; average adult female height. headwear: fur-lined ear-flap cap; upper garment: cream wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: slate blue wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: cream, slate blue, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 이사벨 가르시아, a Hispanic heritage woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; almond brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; auburn hair; shoulder-length length. build: stocky; skin: warm light brown; average adult female height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a synthetic cord and a nylon webbing seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: ash grey, navy, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 이사벨 가르시아, a Hispanic heritage woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; almond brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; auburn hair; shoulder-length length. build: stocky; skin: warm light brown; average adult female height. headwear: fur-lined ear-flap cap; upper garment: cream wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: slate blue wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: cream, slate blue, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 이사벨 가르시아, a Hispanic heritage woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; almond brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; auburn hair; shoulder-length length. build: stocky; skin: warm light brown; average adult female height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a synthetic cord and a nylon webbing seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: ash grey, navy, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

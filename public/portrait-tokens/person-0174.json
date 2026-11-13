@@ -3,27 +3,27 @@
   "personId": "person-0174",
   "characterId": "K173",
   "name": "루카스 슈나이더",
-  "stateId": "S07",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "환적 배차원"
+    "role": "국방부 장관 · 삼각지역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "short side-parted hair combed neatly",
-    "upper": "olive drab wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
-    "outfit": "olive drab wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
+    "upper": "남색 누빔 긴 외투, 안에 누빔 조끼",
+    "outfit": "남색 누빔 긴 외투, 안에 누빔 조끼",
     "palette": [
-      "olive drab",
-      "mustard ochre",
-      "cream"
+      "navy",
+      "slate grey",
+      "off-white"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "mustard ochre high-waisted pleated trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "dark navy quilted trousers",
+    "footwear": "felt-lined synthetic rubber boots",
+    "accessories": "civil servant ID card hung beside the registration token on a cord around the neck"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -175,27 +175,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "navy quilted cap with ear flaps",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "olive drab wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
+        "value": "남색 누빔 긴 외투, 안에 누빔 조끼",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "mustard ochre high-waisted pleated trousers",
+        "value": "dark navy quilted trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt-lined synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -205,41 +205,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "high quilted collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "civil servant ID card hung beside the registration token on a cord around the neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "navy cord, pale grey card, dull steel token",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "cloth cord, laminated card, thin steel plate",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "hung from the neck on a cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "two flat tags on one cord",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -260,27 +260,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 루카스 슈나이더, an European heritage man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: small closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; grey hair; short length. build: lean; skin: fair with pink undertone. upper garment: olive drab wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: olive drab, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 루카스 슈나이더, an European heritage man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: small closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; grey hair; short length. build: lean; skin: fair with pink undertone. headwear: navy quilted cap with ear flaps; upper garment: 남색 누빔 긴 외투, 안에 누빔 조끼; neckline: high quilted collar. accessories: civil servant ID card hung beside the registration token on a cord around the neck; worn as hung from the neck on a cord. color palette: navy, slate grey, off-white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 루카스 슈나이더, an European heritage man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: small closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; grey hair; short length. build: lean; skin: fair with pink undertone; average adult male height. upper garment: olive drab wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: mustard ochre high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: olive drab, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 루카스 슈나이더, an European heritage man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: small closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; grey hair; short length. build: lean; skin: fair with pink undertone; average adult male height. headwear: navy quilted cap with ear flaps; upper garment: 남색 누빔 긴 외투, 안에 누빔 조끼; neckline: high quilted collar; lower garment: dark navy quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card hung beside the registration token on a cord around the neck; worn as hung from the neck on a cord. color palette: navy, slate grey, off-white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 루카스 슈나이더, an European heritage man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: small closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; grey hair; short length. build: lean; skin: fair with pink undertone; average adult male height. upper garment: olive drab wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: mustard ochre high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: olive drab, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 루카스 슈나이더, an European heritage man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: small closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; grey hair; short length. build: lean; skin: fair with pink undertone; average adult male height. headwear: navy quilted cap with ear flaps; upper garment: 남색 누빔 긴 외투, 안에 누빔 조끼; neckline: high quilted collar; lower garment: dark navy quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card hung beside the registration token on a cord around the neck; worn as hung from the neck on a cord. color palette: navy, slate grey, off-white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 루카스 슈나이더, an European heritage man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: small closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; grey hair; short length. build: lean; skin: fair with pink undertone; average adult male height. upper garment: olive drab wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: mustard ochre high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: olive drab, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 루카스 슈나이더, an European heritage man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: small closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; grey hair; short length. build: lean; skin: fair with pink undertone; average adult male height. headwear: navy quilted cap with ear flaps; upper garment: 남색 누빔 긴 외투, 안에 누빔 조끼; neckline: high quilted collar; lower garment: dark navy quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card hung beside the registration token on a cord around the neck; worn as hung from the neck on a cord. color palette: navy, slate grey, off-white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 루카스 슈나이더, an European heritage man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: small closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; grey hair; short length. build: lean; skin: fair with pink undertone; average adult male height. upper garment: olive drab wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: mustard ochre high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: olive drab, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 루카스 슈나이더, an European heritage man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; deep-set blue eyes; angled eyebrows; nose: straight bridge; mouth: small closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; grey hair; short length. build: lean; skin: fair with pink undertone; average adult male height. headwear: navy quilted cap with ear flaps; upper garment: 남색 누빔 긴 외투, 안에 누빔 조끼; neckline: high quilted collar; lower garment: dark navy quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card hung beside the registration token on a cord around the neck; worn as hung from the neck on a cord. color palette: navy, slate grey, off-white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

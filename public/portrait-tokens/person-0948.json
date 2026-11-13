@@ -3,27 +3,27 @@
   "personId": "person-0948",
   "characterId": "K948",
   "name": "안서민",
-  "stateId": "S13",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "약재 물류상"
+    "role": "국군 병사 · 노원역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "shoulder-length hair styled in 1940s victory rolls",
-    "upper": "clay brown buttoned wool vest over a long-sleeved collared shirt",
-    "outfit": "clay brown buttoned wool vest over a long-sleeved collared shirt",
+    "upper": "camouflage cold-weather parka reworked with quilted panels, rank insignia on the sleeve",
+    "outfit": "camouflage cold-weather parka reworked with quilted panels, rank insignia on the sleeve",
     "palette": [
-      "clay brown",
-      "dove grey",
-      "slate blue"
+      "olive drab",
+      "khaki",
+      "dove grey"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "dove grey straight wool trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "padded camouflage trousers",
+    "footwear": "laced leather winter boots",
+    "accessories": "service number tag on a cord and a sewing kit in a breast pocket"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "knitted cap under a hood",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "clay brown buttoned wool vest over a long-sleeved collared shirt",
+        "value": "camouflage cold-weather parka reworked with quilted panels, rank insignia on the sleeve",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "dove grey straight wool trousers",
+        "value": "padded camouflage trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "laced leather winter boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "high quilted collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "service number tag on a cord and a sewing kit in a breast pocket",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "dull steel and olive cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "steel, synthetic cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "cord around the neck, kit in the breast pocket",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "oblong tag and flat folded kit",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 안서민, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown hair; shoulder-length length. build: slim; skin: medium warm beige. upper garment: clay brown buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: clay brown, dove grey, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 안서민, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown hair; shoulder-length length. build: slim; skin: medium warm beige. headwear: knitted cap under a hood; upper garment: camouflage cold-weather parka reworked with quilted panels, rank insignia on the sleeve; neckline: high quilted collar. accessories: service number tag on a cord and a sewing kit in a breast pocket; worn as cord around the neck, kit in the breast pocket. color palette: olive drab, khaki, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 안서민, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown hair; shoulder-length length. build: slim; skin: medium warm beige; average adult female height. upper garment: clay brown buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: dove grey straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: clay brown, dove grey, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 안서민, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown hair; shoulder-length length. build: slim; skin: medium warm beige; average adult female height. headwear: knitted cap under a hood; upper garment: camouflage cold-weather parka reworked with quilted panels, rank insignia on the sleeve; neckline: high quilted collar; lower garment: padded camouflage trousers; footwear: laced leather winter boots. accessories: service number tag on a cord and a sewing kit in a breast pocket; worn as cord around the neck, kit in the breast pocket. color palette: olive drab, khaki, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 안서민, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown hair; shoulder-length length. build: slim; skin: medium warm beige; average adult female height. upper garment: clay brown buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: dove grey straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: clay brown, dove grey, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 안서민, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown hair; shoulder-length length. build: slim; skin: medium warm beige; average adult female height. headwear: knitted cap under a hood; upper garment: camouflage cold-weather parka reworked with quilted panels, rank insignia on the sleeve; neckline: high quilted collar; lower garment: padded camouflage trousers; footwear: laced leather winter boots. accessories: service number tag on a cord and a sewing kit in a breast pocket; worn as cord around the neck, kit in the breast pocket. color palette: olive drab, khaki, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 안서민, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown hair; shoulder-length length. build: slim; skin: medium warm beige; average adult female height. upper garment: clay brown buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: dove grey straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: clay brown, dove grey, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 안서민, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown hair; shoulder-length length. build: slim; skin: medium warm beige; average adult female height. headwear: knitted cap under a hood; upper garment: camouflage cold-weather parka reworked with quilted panels, rank insignia on the sleeve; neckline: high quilted collar; lower garment: padded camouflage trousers; footwear: laced leather winter boots. accessories: service number tag on a cord and a sewing kit in a breast pocket; worn as cord around the neck, kit in the breast pocket. color palette: olive drab, khaki, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 안서민, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown hair; shoulder-length length. build: slim; skin: medium warm beige; average adult female height. upper garment: clay brown buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: dove grey straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: clay brown, dove grey, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 안서민, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; dark brown hair; shoulder-length length. build: slim; skin: medium warm beige; average adult female height. headwear: knitted cap under a hood; upper garment: camouflage cold-weather parka reworked with quilted panels, rank insignia on the sleeve; neckline: high quilted collar; lower garment: padded camouflage trousers; footwear: laced leather winter boots. accessories: service number tag on a cord and a sewing kit in a breast pocket; worn as cord around the neck, kit in the breast pocket. color palette: olive drab, khaki, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

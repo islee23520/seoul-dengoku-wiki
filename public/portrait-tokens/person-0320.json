@@ -3,27 +3,27 @@
   "personId": "person-0320",
   "characterId": "K319",
   "name": "근솔이",
-  "stateId": "S12",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "중립시장 경매 유찰 관계자"
+    "role": "분대장 · 망우역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short wavy hair",
-    "upper": "clay brown long belted wool coat with deep patch pockets, with a thick knitted scarf and an extra padded layer",
-    "outfit": "clay brown long belted wool coat with deep patch pockets, with a thick knitted scarf and an extra padded layer",
+    "upper": "대정전 전 위장 무늬 동계 군복을 고쳐 지은 옷",
+    "outfit": "대정전 전 위장 무늬 동계 군복을 고쳐 지은 옷",
     "palette": [
+      "olive drab",
       "clay brown",
-      "charcoal",
-      "sand beige"
+      "charcoal"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
     "lower": "charcoal straight wool trousers",
     "footwear": "laced leather walking shoes",
-    "accessories": "small leather coin purse and a folded ledger"
+    "accessories": "army rank insignia and a service-number token"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "clay brown long belted wool coat with deep patch pockets, with a thick knitted scarf and an extra padded layer",
+        "value": "대정전 전 위장 무늬 동계 군복을 고쳐 지은 옷",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
         "value": "charcoal straight wool trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
         "value": "laced leather walking shoes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -206,39 +206,39 @@
       "neckline": {
         "value": "shirt collar under a knit vest",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "small leather coin purse and a folded ledger",
+        "value": "army rank insignia and a service-number token",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
-        "derived": true
-      },
-      "shape": {
-        "value": "pouch and narrow ledger",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "brown leather and paper",
+        "value": "dull brass and grey steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, paper",
+        "value": "brass, steel plate",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "purse at the belt, ledger in the coat pocket",
+        "value": "rank on the collar, token on a neck chain",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small insignia and an oval plate",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 근솔이, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; monolid almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average; skin: medium warm beige. upper garment: clay brown long belted wool coat with deep patch pockets, with a thick knitted scarf and an extra padded layer; neckline: shirt collar under a knit vest. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: clay brown, charcoal, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 근솔이, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; monolid almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average; skin: medium warm beige. upper garment: 대정전 전 위장 무늬 동계 군복을 고쳐 지은 옷; neckline: shirt collar under a knit vest. accessories: army rank insignia and a service-number token; worn as rank on the collar, token on a neck chain. color palette: olive drab, clay brown, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 근솔이, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; monolid almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average; skin: medium warm beige; average adult male height. upper garment: clay brown long belted wool coat with deep patch pockets, with a thick knitted scarf and an extra padded layer; neckline: shirt collar under a knit vest; lower garment: charcoal straight wool trousers; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: clay brown, charcoal, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 근솔이, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; monolid almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average; skin: medium warm beige; average adult male height. upper garment: 대정전 전 위장 무늬 동계 군복을 고쳐 지은 옷; neckline: shirt collar under a knit vest; lower garment: charcoal straight wool trousers; footwear: laced leather walking shoes. accessories: army rank insignia and a service-number token; worn as rank on the collar, token on a neck chain. color palette: olive drab, clay brown, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 근솔이, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; monolid almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average; skin: medium warm beige; average adult male height. upper garment: clay brown long belted wool coat with deep patch pockets, with a thick knitted scarf and an extra padded layer; neckline: shirt collar under a knit vest; lower garment: charcoal straight wool trousers; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: clay brown, charcoal, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 근솔이, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; monolid almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average; skin: medium warm beige; average adult male height. upper garment: 대정전 전 위장 무늬 동계 군복을 고쳐 지은 옷; neckline: shirt collar under a knit vest; lower garment: charcoal straight wool trousers; footwear: laced leather walking shoes. accessories: army rank insignia and a service-number token; worn as rank on the collar, token on a neck chain. color palette: olive drab, clay brown, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 근솔이, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; monolid almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average; skin: medium warm beige; average adult male height. upper garment: clay brown long belted wool coat with deep patch pockets, with a thick knitted scarf and an extra padded layer; neckline: shirt collar under a knit vest; lower garment: charcoal straight wool trousers; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: clay brown, charcoal, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 근솔이, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; monolid almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average; skin: medium warm beige; average adult male height. upper garment: 대정전 전 위장 무늬 동계 군복을 고쳐 지은 옷; neckline: shirt collar under a knit vest; lower garment: charcoal straight wool trousers; footwear: laced leather walking shoes. accessories: army rank insignia and a service-number token; worn as rank on the collar, token on a neck chain. color palette: olive drab, clay brown, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 근솔이, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; monolid almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average; skin: medium warm beige; average adult male height. upper garment: clay brown long belted wool coat with deep patch pockets, with a thick knitted scarf and an extra padded layer; neckline: shirt collar under a knit vest; lower garment: charcoal straight wool trousers; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: clay brown, charcoal, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 근솔이, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; monolid almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average; skin: medium warm beige; average adult male height. upper garment: 대정전 전 위장 무늬 동계 군복을 고쳐 지은 옷; neckline: shirt collar under a knit vest; lower garment: charcoal straight wool trousers; footwear: laced leather walking shoes. accessories: army rank insignia and a service-number token; worn as rank on the collar, token on a neck chain. color palette: olive drab, clay brown, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

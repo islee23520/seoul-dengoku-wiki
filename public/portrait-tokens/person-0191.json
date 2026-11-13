@@ -3,26 +3,27 @@
   "personId": "person-0191",
   "characterId": "K190",
   "name": "필리프 뮐러",
-  "stateId": "S07",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "급수 계약 환적 증인"
+    "role": "분대장 · 신이문역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short side-parted hair combed neatly",
-    "upper": "cream plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer",
-    "outfit": "cream plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer",
+    "upper": "altered pre-Blackout camouflage cold-weather jacket with quilted lining",
+    "outfit": "altered pre-Blackout camouflage cold-weather jacket with quilted lining",
     "palette": [
-      "cream",
-      "olive drab"
+      "olive camouflage",
+      "olive drab",
+      "navy"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "olive drab high-waisted pleated trousers",
-    "footwear": "leather ankle boots",
-    "accessories": "duty whistle on a cord lanyard"
+    "lower": "camouflage cold-weather trousers",
+    "footwear": "felt-lined army boots",
+    "accessories": "army rank insignia on the chest and a service-number token on a cord"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +175,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "fur-lined ear-flap cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "cream plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer",
+        "value": "altered pre-Blackout camouflage cold-weather jacket with quilted lining",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "olive drab high-waisted pleated trousers",
+        "value": "camouflage cold-weather trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "leather ankle boots",
+        "value": "felt-lined army boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -206,39 +207,39 @@
       "neckline": {
         "value": "buttoned shirt collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "duty whistle on a cord lanyard",
+        "value": "army rank insignia on the chest and a service-number token on a cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull brass",
+        "value": "olive and dull steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, cord",
+        "value": "embroidered cloth, steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "lanyard around the neck",
+        "value": "sewn on the chest, token on a cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small patch and tag",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +260,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 필리프 뮐러, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; deep-set hazel eyes; straight and thin eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; light brown hair; short length. build: lean; skin: fair. upper garment: cream plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: cream, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 필리프 뮐러, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; deep-set hazel eyes; straight and thin eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; light brown hair; short length. build: lean; skin: fair. headwear: fur-lined ear-flap cap; upper garment: altered pre-Blackout camouflage cold-weather jacket with quilted lining; neckline: buttoned shirt collar. accessories: army rank insignia on the chest and a service-number token on a cord; worn as sewn on the chest, token on a cord. color palette: olive camouflage, olive drab, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 필리프 뮐러, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; deep-set hazel eyes; straight and thin eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; light brown hair; short length. build: lean; skin: fair; average adult male height. upper garment: cream plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: olive drab high-waisted pleated trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: cream, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 필리프 뮐러, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; deep-set hazel eyes; straight and thin eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; light brown hair; short length. build: lean; skin: fair; average adult male height. headwear: fur-lined ear-flap cap; upper garment: altered pre-Blackout camouflage cold-weather jacket with quilted lining; neckline: buttoned shirt collar; lower garment: camouflage cold-weather trousers; footwear: felt-lined army boots. accessories: army rank insignia on the chest and a service-number token on a cord; worn as sewn on the chest, token on a cord. color palette: olive camouflage, olive drab, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 필리프 뮐러, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; deep-set hazel eyes; straight and thin eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; light brown hair; short length. build: lean; skin: fair; average adult male height. upper garment: cream plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: olive drab high-waisted pleated trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: cream, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 필리프 뮐러, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; deep-set hazel eyes; straight and thin eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; light brown hair; short length. build: lean; skin: fair; average adult male height. headwear: fur-lined ear-flap cap; upper garment: altered pre-Blackout camouflage cold-weather jacket with quilted lining; neckline: buttoned shirt collar; lower garment: camouflage cold-weather trousers; footwear: felt-lined army boots. accessories: army rank insignia on the chest and a service-number token on a cord; worn as sewn on the chest, token on a cord. color palette: olive camouflage, olive drab, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 필리프 뮐러, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; deep-set hazel eyes; straight and thin eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; light brown hair; short length. build: lean; skin: fair; average adult male height. upper garment: cream plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: olive drab high-waisted pleated trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: cream, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 필리프 뮐러, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; deep-set hazel eyes; straight and thin eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; light brown hair; short length. build: lean; skin: fair; average adult male height. headwear: fur-lined ear-flap cap; upper garment: altered pre-Blackout camouflage cold-weather jacket with quilted lining; neckline: buttoned shirt collar; lower garment: camouflage cold-weather trousers; footwear: felt-lined army boots. accessories: army rank insignia on the chest and a service-number token on a cord; worn as sewn on the chest, token on a cord. color palette: olive camouflage, olive drab, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 필리프 뮐러, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; deep-set hazel eyes; straight and thin eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; light brown hair; short length. build: lean; skin: fair; average adult male height. upper garment: cream plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: olive drab high-waisted pleated trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: cream, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 필리프 뮐러, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; deep-set hazel eyes; straight and thin eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; light brown hair; short length. build: lean; skin: fair; average adult male height. headwear: fur-lined ear-flap cap; upper garment: altered pre-Blackout camouflage cold-weather jacket with quilted lining; neckline: buttoned shirt collar; lower garment: camouflage cold-weather trousers; footwear: felt-lined army boots. accessories: army rank insignia on the chest and a service-number token on a cord; worn as sewn on the chest, token on a cord. color palette: olive camouflage, olive drab, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

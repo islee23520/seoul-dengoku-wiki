@@ -3,26 +3,27 @@
   "personId": "person-1002",
   "characterId": "K1002",
   "name": "성라현",
-  "stateId": "S02",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "작업반 전령"
+    "role": "개화산역 역반장 · 자유도시들"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, youthful smooth skin",
     "hair": "long hair tied in a low ponytail",
-    "upper": "oxblood zip-front canvas windbreaker over a knit sweater, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "oxblood zip-front canvas windbreaker over a knit sweater, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "보라색 깃띠를 두른 검붉은 누빔 조끼, 그 아래 소매를 걷은 짧은 합성섬유 작업 윗옷",
+    "outfit": "보라색 깃띠를 두른 검붉은 누빔 조끼, 그 아래 소매를 걷은 짧은 합성섬유 작업 윗옷",
     "palette": [
       "oxblood",
+      "purple",
       "charcoal"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "charcoal heavy twill trousers with knee patches",
-    "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "leather dispatch satchel"
+    "lower": "charcoal synthetic trousers with knee patches",
+    "footwear": "thick-soled winter boots with synthetic-knit socks",
+    "accessories": "ring of entrance keys and a small hand lamp at the belt"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -175,25 +176,25 @@
       "headwear": {
         "value": "fur-lined ear-flap cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "oxblood zip-front canvas windbreaker over a knit sweater, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "보라색 깃띠를 두른 검붉은 누빔 조끼, 그 아래 소매를 걷은 짧은 합성섬유 작업 윗옷",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "charcoal heavy twill trousers with knee patches",
+        "value": "charcoal synthetic trousers with knee patches",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "thick-soled leather winter boots with wool socks",
+        "value": "thick-soled winter boots with synthetic-knit socks",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "turned-up jacket collar",
+        "value": "purple collar band",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "leather dispatch satchel",
+        "value": "ring of entrance keys and a small hand lamp at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat flap satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "worn brown leather",
+        "value": "aged brass and dull steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, brass buckle",
+        "value": "brass, steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the chest",
+        "value": "hung at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "key ring and compact cylindrical lamp",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 성라현, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted red lips. long hair tied in a low ponytail; dark brown hair; long length. build: average; skin: fair with a neutral undertone. headwear: fur-lined ear-flap cap; upper garment: oxblood zip-front canvas windbreaker over a knit sweater, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar. accessories: leather dispatch satchel; worn as strap across the chest. color palette: oxblood, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 성라현, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted red lips. long hair tied in a low ponytail; dark brown hair; long length. build: average; skin: fair with a neutral undertone. headwear: fur-lined ear-flap cap; upper garment: 보라색 깃띠를 두른 검붉은 누빔 조끼, 그 아래 소매를 걷은 짧은 합성섬유 작업 윗옷; neckline: purple collar band. accessories: ring of entrance keys and a small hand lamp at the belt; worn as hung at the belt. color palette: oxblood, purple, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 성라현, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted red lips. long hair tied in a low ponytail; dark brown hair; long length. build: average; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: oxblood zip-front canvas windbreaker over a knit sweater, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: charcoal heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: oxblood, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 성라현, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted red lips. long hair tied in a low ponytail; dark brown hair; long length. build: average; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: 보라색 깃띠를 두른 검붉은 누빔 조끼, 그 아래 소매를 걷은 짧은 합성섬유 작업 윗옷; neckline: purple collar band; lower garment: charcoal synthetic trousers with knee patches; footwear: thick-soled winter boots with synthetic-knit socks. accessories: ring of entrance keys and a small hand lamp at the belt; worn as hung at the belt. color palette: oxblood, purple, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 성라현, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted red lips. long hair tied in a low ponytail; dark brown hair; long length. build: average; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: oxblood zip-front canvas windbreaker over a knit sweater, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: charcoal heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: oxblood, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 성라현, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted red lips. long hair tied in a low ponytail; dark brown hair; long length. build: average; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: 보라색 깃띠를 두른 검붉은 누빔 조끼, 그 아래 소매를 걷은 짧은 합성섬유 작업 윗옷; neckline: purple collar band; lower garment: charcoal synthetic trousers with knee patches; footwear: thick-soled winter boots with synthetic-knit socks. accessories: ring of entrance keys and a small hand lamp at the belt; worn as hung at the belt. color palette: oxblood, purple, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 성라현, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted red lips. long hair tied in a low ponytail; dark brown hair; long length. build: average; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: oxblood zip-front canvas windbreaker over a knit sweater, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: charcoal heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: oxblood, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 성라현, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted red lips. long hair tied in a low ponytail; dark brown hair; long length. build: average; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: 보라색 깃띠를 두른 검붉은 누빔 조끼, 그 아래 소매를 걷은 짧은 합성섬유 작업 윗옷; neckline: purple collar band; lower garment: charcoal synthetic trousers with knee patches; footwear: thick-soled winter boots with synthetic-knit socks. accessories: ring of entrance keys and a small hand lamp at the belt; worn as hung at the belt. color palette: oxblood, purple, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 성라현, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted red lips. long hair tied in a low ponytail; dark brown hair; long length. build: average; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: oxblood zip-front canvas windbreaker over a knit sweater, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: charcoal heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: oxblood, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 성라현, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; muted red lips. long hair tied in a low ponytail; dark brown hair; long length. build: average; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: 보라색 깃띠를 두른 검붉은 누빔 조끼, 그 아래 소매를 걷은 짧은 합성섬유 작업 윗옷; neckline: purple collar band; lower garment: charcoal synthetic trousers with knee patches; footwear: thick-soled winter boots with synthetic-knit socks. accessories: ring of entrance keys and a small hand lamp at the belt; worn as hung at the belt. color palette: oxblood, purple, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

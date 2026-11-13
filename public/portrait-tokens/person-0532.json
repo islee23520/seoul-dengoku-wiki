@@ -3,26 +3,27 @@
   "personId": "person-0532",
   "characterId": "K532",
   "name": "심태양",
-  "stateId": "S13",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "처방 서기"
+    "role": "옷 짓는 이 · 상월곡역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "braids pinned up into a crown",
-    "upper": "mustard ochre cotton coat over a knitted wool sweater",
-    "outfit": "mustard ochre cotton coat over a knitted wool sweater",
+    "upper": "세대에서 물려 입은 겨자색 누빔 솜옷, 덧댄 천이 여러 겹인 차림",
+    "outfit": "세대에서 물려 입은 겨자색 누빔 솜옷, 덧댄 천이 여러 겹인 차림",
     "palette": [
       "mustard ochre",
-      "navy"
+      "navy",
+      "off-white"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "navy high-waisted wide-leg wool trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "canvas medical satchel without markings"
+    "lower": "navy padded cotton trousers",
+    "footwear": "felt boots",
+    "accessories": "cloth wraps around both hands and a needle cushion pinned at the chest"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -175,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "mustard ochre cotton coat over a knitted wool sweater",
+        "value": "세대에서 물려 입은 겨자색 누빔 솜옷, 덧댄 천이 여러 겹인 차림",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "navy high-waisted wide-leg wool trousers",
+        "value": "navy padded cotton trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "open coat collar over a rolled sweater neck",
+        "value": "wrapped quilted collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "canvas medical satchel without markings",
+        "value": "cloth wraps around both hands and a needle cushion pinned at the chest",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat rectangular satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "undyed canvas and brown leather",
+        "value": "off-white cloth, faded red cushion",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "canvas, leather",
+        "value": "cotton cloth, padded fabric",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the shoulder",
+        "value": "wrapped around the hands; cushion pinned to the coat",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "bandage wraps and small round cushion",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 심태양, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; muted pink lips. braids pinned up into a crown; black hair; long length. build: average; skin: tan warm beige. upper garment: mustard ochre cotton coat over a knitted wool sweater; neckline: open coat collar over a rolled sweater neck. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: mustard ochre, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 심태양, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; muted pink lips. braids pinned up into a crown; black hair; long length. build: average; skin: tan warm beige. upper garment: 세대에서 물려 입은 겨자색 누빔 솜옷, 덧댄 천이 여러 겹인 차림; neckline: wrapped quilted collar. accessories: cloth wraps around both hands and a needle cushion pinned at the chest; worn as wrapped around the hands; cushion pinned to the coat. color palette: mustard ochre, navy, off-white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 심태양, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; muted pink lips. braids pinned up into a crown; black hair; long length. build: average; skin: tan warm beige; average adult female height. upper garment: mustard ochre cotton coat over a knitted wool sweater; neckline: open coat collar over a rolled sweater neck; lower garment: navy high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: mustard ochre, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 심태양, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; muted pink lips. braids pinned up into a crown; black hair; long length. build: average; skin: tan warm beige; average adult female height. upper garment: 세대에서 물려 입은 겨자색 누빔 솜옷, 덧댄 천이 여러 겹인 차림; neckline: wrapped quilted collar; lower garment: navy padded cotton trousers; footwear: felt boots. accessories: cloth wraps around both hands and a needle cushion pinned at the chest; worn as wrapped around the hands; cushion pinned to the coat. color palette: mustard ochre, navy, off-white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 심태양, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; muted pink lips. braids pinned up into a crown; black hair; long length. build: average; skin: tan warm beige; average adult female height. upper garment: mustard ochre cotton coat over a knitted wool sweater; neckline: open coat collar over a rolled sweater neck; lower garment: navy high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: mustard ochre, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 심태양, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; muted pink lips. braids pinned up into a crown; black hair; long length. build: average; skin: tan warm beige; average adult female height. upper garment: 세대에서 물려 입은 겨자색 누빔 솜옷, 덧댄 천이 여러 겹인 차림; neckline: wrapped quilted collar; lower garment: navy padded cotton trousers; footwear: felt boots. accessories: cloth wraps around both hands and a needle cushion pinned at the chest; worn as wrapped around the hands; cushion pinned to the coat. color palette: mustard ochre, navy, off-white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 심태양, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; muted pink lips. braids pinned up into a crown; black hair; long length. build: average; skin: tan warm beige; average adult female height. upper garment: mustard ochre cotton coat over a knitted wool sweater; neckline: open coat collar over a rolled sweater neck; lower garment: navy high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: mustard ochre, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 심태양, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; muted pink lips. braids pinned up into a crown; black hair; long length. build: average; skin: tan warm beige; average adult female height. upper garment: 세대에서 물려 입은 겨자색 누빔 솜옷, 덧댄 천이 여러 겹인 차림; neckline: wrapped quilted collar; lower garment: navy padded cotton trousers; footwear: felt boots. accessories: cloth wraps around both hands and a needle cushion pinned at the chest; worn as wrapped around the hands; cushion pinned to the coat. color palette: mustard ochre, navy, off-white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 심태양, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; muted pink lips. braids pinned up into a crown; black hair; long length. build: average; skin: tan warm beige; average adult female height. upper garment: mustard ochre cotton coat over a knitted wool sweater; neckline: open coat collar over a rolled sweater neck; lower garment: navy high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: mustard ochre, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 심태양, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; muted pink lips. braids pinned up into a crown; black hair; long length. build: average; skin: tan warm beige; average adult female height. upper garment: 세대에서 물려 입은 겨자색 누빔 솜옷, 덧댄 천이 여러 겹인 차림; neckline: wrapped quilted collar; lower garment: navy padded cotton trousers; footwear: felt boots. accessories: cloth wraps around both hands and a needle cushion pinned at the chest; worn as wrapped around the hands; cushion pinned to the coat. color palette: mustard ochre, navy, off-white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

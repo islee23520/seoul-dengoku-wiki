@@ -3,27 +3,27 @@
   "personId": "person-0069",
   "characterId": "K069",
   "name": "채봄",
-  "stateId": "S03",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "방화 관문 순찰대 조장"
+    "role": "올림픽공원역 정비장 · 아크"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "medium-length hair swept back",
-    "upper": "clay brown wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "clay brown wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "누빈 흙갈색 셔츠 위 두꺼운 가죽 앞치마, 덴 자국이 있는 앞치마, 소매를 걷어 끈으로 묶음, 위팔에 붉은 바탕 곁집 띠(물결 무늬), 오른쪽 깃에 부위 수 땀 4줄",
+    "outfit": "누빈 흙갈색 셔츠 위 두꺼운 가죽 앞치마, 덴 자국이 있는 앞치마, 소매를 걷어 끈으로 묶음, 위팔에 붉은 바탕 곁집 띠(물결 무늬), 오른쪽 깃에 부위 수 땀 4줄",
     "palette": [
       "clay brown",
-      "oxblood",
-      "burgundy"
+      "clay brown",
+      "oxblood"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "oxblood wool trousers bloused over boots",
-    "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "small hand lamp clipped to a leather belt"
+    "lower": "clay brown quilted work trousers",
+    "footwear": "thick-soled leather work boots",
+    "accessories": "leather tool roll with a stamped roll slip tucked in"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "fur-lined ear-flap cap",
+        "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "clay brown wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "누빈 흙갈색 셔츠 위 두꺼운 가죽 앞치마, 덴 자국이 있는 앞치마, 소매를 걷어 끈으로 묶음, 위팔에 붉은 바탕 곁집 띠(물결 무늬), 오른쪽 깃에 부위 수 땀 4줄",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "oxblood wool trousers bloused over boots",
+        "value": "clay brown quilted work trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "thick-soled leather winter boots with wool socks",
+        "value": "thick-soled leather work boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "closed turn-down collar",
+        "value": "open quilted collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "small hand lamp clipped to a leather belt",
+        "value": "leather tool roll with a stamped roll slip tucked in",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
-        "derived": true
-      },
-      "shape": {
-        "value": "compact cylindrical lamp",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull steel and dark brown leather",
+        "value": "dark brown",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "steel, leather",
+        "value": "leather, paper",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "clipped at the belt",
+        "value": "tied at the apron waist",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "rolled bundle",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 채봄, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: lean and wiry; skin: fair with a neutral undertone. headwear: fur-lined ear-flap cap; upper garment: clay brown wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: clay brown, oxblood, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 채봄, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: lean and wiry; skin: fair with a neutral undertone. upper garment: 누빈 흙갈색 셔츠 위 두꺼운 가죽 앞치마, 덴 자국이 있는 앞치마, 소매를 걷어 끈으로 묶음, 위팔에 붉은 바탕 곁집 띠(물결 무늬), 오른쪽 깃에 부위 수 땀 4줄; neckline: open quilted collar. accessories: leather tool roll with a stamped roll slip tucked in; worn as tied at the apron waist. color palette: clay brown, clay brown, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 채봄, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: lean and wiry; skin: fair with a neutral undertone; average adult male height. headwear: fur-lined ear-flap cap; upper garment: clay brown wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: oxblood wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: clay brown, oxblood, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 채봄, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: lean and wiry; skin: fair with a neutral undertone; average adult male height. upper garment: 누빈 흙갈색 셔츠 위 두꺼운 가죽 앞치마, 덴 자국이 있는 앞치마, 소매를 걷어 끈으로 묶음, 위팔에 붉은 바탕 곁집 띠(물결 무늬), 오른쪽 깃에 부위 수 땀 4줄; neckline: open quilted collar; lower garment: clay brown quilted work trousers; footwear: thick-soled leather work boots. accessories: leather tool roll with a stamped roll slip tucked in; worn as tied at the apron waist. color palette: clay brown, clay brown, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 채봄, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: lean and wiry; skin: fair with a neutral undertone; average adult male height. headwear: fur-lined ear-flap cap; upper garment: clay brown wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: oxblood wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: clay brown, oxblood, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 채봄, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: lean and wiry; skin: fair with a neutral undertone; average adult male height. upper garment: 누빈 흙갈색 셔츠 위 두꺼운 가죽 앞치마, 덴 자국이 있는 앞치마, 소매를 걷어 끈으로 묶음, 위팔에 붉은 바탕 곁집 띠(물결 무늬), 오른쪽 깃에 부위 수 땀 4줄; neckline: open quilted collar; lower garment: clay brown quilted work trousers; footwear: thick-soled leather work boots. accessories: leather tool roll with a stamped roll slip tucked in; worn as tied at the apron waist. color palette: clay brown, clay brown, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 채봄, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: lean and wiry; skin: fair with a neutral undertone; average adult male height. headwear: fur-lined ear-flap cap; upper garment: clay brown wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: oxblood wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: clay brown, oxblood, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 채봄, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: lean and wiry; skin: fair with a neutral undertone; average adult male height. upper garment: 누빈 흙갈색 셔츠 위 두꺼운 가죽 앞치마, 덴 자국이 있는 앞치마, 소매를 걷어 끈으로 묶음, 위팔에 붉은 바탕 곁집 띠(물결 무늬), 오른쪽 깃에 부위 수 땀 4줄; neckline: open quilted collar; lower garment: clay brown quilted work trousers; footwear: thick-soled leather work boots. accessories: leather tool roll with a stamped roll slip tucked in; worn as tied at the apron waist. color palette: clay brown, clay brown, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 채봄, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: lean and wiry; skin: fair with a neutral undertone; average adult male height. headwear: fur-lined ear-flap cap; upper garment: clay brown wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: oxblood wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: clay brown, oxblood, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 채봄, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: lean and wiry; skin: fair with a neutral undertone; average adult male height. upper garment: 누빈 흙갈색 셔츠 위 두꺼운 가죽 앞치마, 덴 자국이 있는 앞치마, 소매를 걷어 끈으로 묶음, 위팔에 붉은 바탕 곁집 띠(물결 무늬), 오른쪽 깃에 부위 수 땀 4줄; neckline: open quilted collar; lower garment: clay brown quilted work trousers; footwear: thick-soled leather work boots. accessories: leather tool roll with a stamped roll slip tucked in; worn as tied at the apron waist. color palette: clay brown, clay brown, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

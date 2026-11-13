@@ -3,27 +3,27 @@
   "personId": "person-0368",
   "characterId": "K367",
   "name": "탁윤재",
-  "stateId": "S14",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "양군 교량 통행 사고 당사자"
+    "role": "구청 서기 · 건대입구역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "shoulder-length hair styled in 1940s victory rolls",
-    "upper": "oxblood wool cardigan over a collared shirt with sleeve garters, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "oxblood wool cardigan over a collared shirt with sleeve garters, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "navy-banded quilted long coat",
+    "outfit": "navy-banded quilted long coat",
     "palette": [
-      "oxblood",
-      "clay brown",
-      "dove grey"
+      "navy",
+      "dove grey",
+      "charcoal"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "clay brown straight wool trousers",
-    "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "quilted synthetic trousers",
+    "footwear": "felt-lined synthetic rubber boots",
+    "accessories": "civil servant card on a cord beside the metal registration tag, with a cloth seal pouch"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "fur-lined ear-flap cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "oxblood wool cardigan over a collared shirt with sleeve garters, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "navy-banded quilted long coat",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "clay brown straight wool trousers",
+        "value": "quilted synthetic trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "thick-soled leather winter boots with wool socks",
+        "value": "felt-lined synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "high quilted collar with a cloth face covering",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "civil servant card on a cord beside the metal registration tag, with a cloth seal pouch",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "dull steel and navy cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "steel, cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "hung at the neck and tied at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat rectangular card and small drawstring pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 탁윤재, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black streaked with grey hair; shoulder-length length. build: soft rounded; skin: light olive. headwear: fur-lined ear-flap cap; upper garment: oxblood wool cardigan over a collared shirt with sleeve garters, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, clay brown, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 탁윤재, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black streaked with grey hair; shoulder-length length. build: soft rounded; skin: light olive. headwear: fur-lined ear-flap cap; upper garment: navy-banded quilted long coat; neckline: high quilted collar with a cloth face covering. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, dove grey, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 탁윤재, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black streaked with grey hair; shoulder-length length. build: soft rounded; skin: light olive; average adult female height. headwear: fur-lined ear-flap cap; upper garment: oxblood wool cardigan over a collared shirt with sleeve garters, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned shirt collar; lower garment: clay brown straight wool trousers; footwear: thick-soled leather winter boots with wool socks. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, clay brown, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 탁윤재, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black streaked with grey hair; shoulder-length length. build: soft rounded; skin: light olive; average adult female height. headwear: fur-lined ear-flap cap; upper garment: navy-banded quilted long coat; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, dove grey, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 탁윤재, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black streaked with grey hair; shoulder-length length. build: soft rounded; skin: light olive; average adult female height. headwear: fur-lined ear-flap cap; upper garment: oxblood wool cardigan over a collared shirt with sleeve garters, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned shirt collar; lower garment: clay brown straight wool trousers; footwear: thick-soled leather winter boots with wool socks. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, clay brown, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 탁윤재, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black streaked with grey hair; shoulder-length length. build: soft rounded; skin: light olive; average adult female height. headwear: fur-lined ear-flap cap; upper garment: navy-banded quilted long coat; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, dove grey, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 탁윤재, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black streaked with grey hair; shoulder-length length. build: soft rounded; skin: light olive; average adult female height. headwear: fur-lined ear-flap cap; upper garment: oxblood wool cardigan over a collared shirt with sleeve garters, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned shirt collar; lower garment: clay brown straight wool trousers; footwear: thick-soled leather winter boots with wool socks. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, clay brown, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 탁윤재, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black streaked with grey hair; shoulder-length length. build: soft rounded; skin: light olive; average adult female height. headwear: fur-lined ear-flap cap; upper garment: navy-banded quilted long coat; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, dove grey, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 탁윤재, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black streaked with grey hair; shoulder-length length. build: soft rounded; skin: light olive; average adult female height. headwear: fur-lined ear-flap cap; upper garment: oxblood wool cardigan over a collared shirt with sleeve garters, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned shirt collar; lower garment: clay brown straight wool trousers; footwear: thick-soled leather winter boots with wool socks. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, clay brown, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 탁윤재, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black streaked with grey hair; shoulder-length length. build: soft rounded; skin: light olive; average adult female height. headwear: fur-lined ear-flap cap; upper garment: navy-banded quilted long coat; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, dove grey, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

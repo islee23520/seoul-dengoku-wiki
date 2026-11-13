@@ -3,26 +3,27 @@
   "personId": "person-0699",
   "characterId": "K699",
   "name": "구서결",
-  "stateId": "S04",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "부품 물류상"
+    "role": "돌봄이 · 고속터미널역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "shoulder-length hair styled in 1940s victory rolls",
-    "upper": "rust brown short wool jacket with a stand collar",
-    "outfit": "rust brown short wool jacket with a stand collar",
+    "upper": "rust brown layered wool and felt jacket with the fitting slits sewn shut, over a stand-collar shirt, no part-count stitches on the right collar",
+    "outfit": "rust brown layered wool and felt jacket with the fitting slits sewn shut, over a stand-collar shirt, no part-count stitches on the right collar",
     "palette": [
       "rust brown",
-      "burgundy"
+      "burgundy",
+      "red"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
     "lower": "burgundy high-waisted wide-leg wool trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "duty whistle on a cord lanyard"
+    "footwear": "soft felt indoor boots",
+    "accessories": "red Near House armband with diagonal stripes on the upper arm and a cloth satchel of rolled bandages"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -175,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "rust brown short wool jacket with a stand collar",
+        "value": "rust brown layered wool and felt jacket with the fitting slits sewn shut, over a stand-collar shirt, no part-count stitches on the right collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
         "value": "burgundy high-waisted wide-leg wool trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "soft felt indoor boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "plain stand collar, no stitching",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "duty whistle on a cord lanyard",
+        "value": "red Near House armband with diagonal stripes on the upper arm and a cloth satchel of rolled bandages",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull brass",
+        "value": "red cloth and undyed linen",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, cord",
+        "value": "wool cloth, cotton",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "lanyard around the neck",
+        "value": "armband on the left upper arm, satchel on a shoulder strap at the hip",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "narrow striped band and small flat satchel",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 구서결, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted pink lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: tan warm beige. upper garment: rust brown short wool jacket with a stand collar; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: rust brown, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 구서결, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted pink lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: tan warm beige. upper garment: rust brown layered wool and felt jacket with the fitting slits sewn shut, over a stand-collar shirt, no part-count stitches on the right collar; neckline: plain stand collar, no stitching. accessories: red Near House armband with diagonal stripes on the upper arm and a cloth satchel of rolled bandages; worn as armband on the left upper arm, satchel on a shoulder strap at the hip. color palette: rust brown, burgundy, red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 구서결, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted pink lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: tan warm beige; average adult female height. upper garment: rust brown short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: burgundy high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: rust brown, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 구서결, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted pink lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: tan warm beige; average adult female height. upper garment: rust brown layered wool and felt jacket with the fitting slits sewn shut, over a stand-collar shirt, no part-count stitches on the right collar; neckline: plain stand collar, no stitching; lower garment: burgundy high-waisted wide-leg wool trousers; footwear: soft felt indoor boots. accessories: red Near House armband with diagonal stripes on the upper arm and a cloth satchel of rolled bandages; worn as armband on the left upper arm, satchel on a shoulder strap at the hip. color palette: rust brown, burgundy, red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 구서결, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted pink lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: tan warm beige; average adult female height. upper garment: rust brown short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: burgundy high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: rust brown, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 구서결, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted pink lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: tan warm beige; average adult female height. upper garment: rust brown layered wool and felt jacket with the fitting slits sewn shut, over a stand-collar shirt, no part-count stitches on the right collar; neckline: plain stand collar, no stitching; lower garment: burgundy high-waisted wide-leg wool trousers; footwear: soft felt indoor boots. accessories: red Near House armband with diagonal stripes on the upper arm and a cloth satchel of rolled bandages; worn as armband on the left upper arm, satchel on a shoulder strap at the hip. color palette: rust brown, burgundy, red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 구서결, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted pink lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: tan warm beige; average adult female height. upper garment: rust brown short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: burgundy high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: rust brown, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 구서결, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted pink lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: tan warm beige; average adult female height. upper garment: rust brown layered wool and felt jacket with the fitting slits sewn shut, over a stand-collar shirt, no part-count stitches on the right collar; neckline: plain stand collar, no stitching; lower garment: burgundy high-waisted wide-leg wool trousers; footwear: soft felt indoor boots. accessories: red Near House armband with diagonal stripes on the upper arm and a cloth satchel of rolled bandages; worn as armband on the left upper arm, satchel on a shoulder strap at the hip. color palette: rust brown, burgundy, red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 구서결, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted pink lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: tan warm beige; average adult female height. upper garment: rust brown short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: burgundy high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: rust brown, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 구서결, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted pink lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average; skin: tan warm beige; average adult female height. upper garment: rust brown layered wool and felt jacket with the fitting slits sewn shut, over a stand-collar shirt, no part-count stitches on the right collar; neckline: plain stand collar, no stitching; lower garment: burgundy high-waisted wide-leg wool trousers; footwear: soft felt indoor boots. accessories: red Near House armband with diagonal stripes on the upper arm and a cloth satchel of rolled bandages; worn as armband on the left upper arm, satchel on a shoulder strap at the hip. color palette: rust brown, burgundy, red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

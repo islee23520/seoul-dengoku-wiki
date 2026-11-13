@@ -3,27 +3,27 @@
   "personId": "person-0155",
   "characterId": "K154",
   "name": "양해온",
-  "stateId": "S06",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "인준 심사 전령"
+    "role": "광희동 동장 · 정부"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "hair pinned in a low chignon bun",
-    "upper": "forest green wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "forest green wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "남색 띠를 두른 누빔 외투",
+    "outfit": "남색 띠를 두른 누빔 외투",
     "palette": [
-      "forest green",
+      "navy",
       "dove grey",
-      "mustard ochre"
+      "rust brown"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "dove grey wool trousers bloused over boots",
-    "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "leather dispatch satchel"
+    "lower": "grey quilted trousers",
+    "footwear": "felt-lined synthetic rubber boots",
+    "accessories": "civil servant ID card on a cord and a cloth seal pouch at the hip"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "fur-lined ear-flap cap",
+        "value": "grey knitted cap with ear flaps",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "forest green wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "남색 띠를 두른 누빔 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "dove grey wool trousers bloused over boots",
+        "value": "grey quilted trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "thick-soled leather winter boots with wool socks",
+        "value": "felt-lined synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "turned-up jacket collar",
+        "value": "quilted collar with a navy band",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "leather dispatch satchel",
+        "value": "civil servant ID card on a cord and a cloth seal pouch at the hip",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat flap satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "worn brown leather",
+        "value": "navy cord, worn brown pouch",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, brass buckle",
+        "value": "cloth cord, laminated card, cotton canvas",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the chest",
+        "value": "card hung from the neck, pouch tied to the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat card and small drawstring pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 양해온, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; dusty rose lips. hair pinned in a low chignon bun; black hair; long length. build: lean; skin: light olive. headwear: fur-lined ear-flap cap; upper garment: forest green wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar. accessories: leather dispatch satchel; worn as strap across the chest. color palette: forest green, dove grey, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 양해온, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; dusty rose lips. hair pinned in a low chignon bun; black hair; long length. build: lean; skin: light olive. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band. accessories: civil servant ID card on a cord and a cloth seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: navy, dove grey, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 양해온, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; dusty rose lips. hair pinned in a low chignon bun; black hair; long length. build: lean; skin: light olive; average adult female height. headwear: fur-lined ear-flap cap; upper garment: forest green wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: dove grey wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: forest green, dove grey, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 양해온, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; dusty rose lips. hair pinned in a low chignon bun; black hair; long length. build: lean; skin: light olive; average adult female height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a cord and a cloth seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: navy, dove grey, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 양해온, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; dusty rose lips. hair pinned in a low chignon bun; black hair; long length. build: lean; skin: light olive; average adult female height. headwear: fur-lined ear-flap cap; upper garment: forest green wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: dove grey wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: forest green, dove grey, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 양해온, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; dusty rose lips. hair pinned in a low chignon bun; black hair; long length. build: lean; skin: light olive; average adult female height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a cord and a cloth seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: navy, dove grey, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 양해온, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; dusty rose lips. hair pinned in a low chignon bun; black hair; long length. build: lean; skin: light olive; average adult female height. headwear: fur-lined ear-flap cap; upper garment: forest green wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: dove grey wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: forest green, dove grey, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 양해온, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; dusty rose lips. hair pinned in a low chignon bun; black hair; long length. build: lean; skin: light olive; average adult female height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a cord and a cloth seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: navy, dove grey, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 양해온, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; dusty rose lips. hair pinned in a low chignon bun; black hair; long length. build: lean; skin: light olive; average adult female height. headwear: fur-lined ear-flap cap; upper garment: forest green wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: dove grey wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: forest green, dove grey, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 양해온, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: heart-shaped; gently hooded dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; dusty rose lips. hair pinned in a low chignon bun; black hair; long length. build: lean; skin: light olive; average adult female height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a cord and a cloth seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: navy, dove grey, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

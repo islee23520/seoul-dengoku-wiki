@@ -3,25 +3,27 @@
   "personId": "person-0932",
   "characterId": "K932",
   "name": "김사연",
-  "stateId": "S13",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "방역 기록관"
+    "role": "옷 짓는 이 · 제기동역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short hair slicked back with a side part",
-    "upper": "dove grey medical smock with rolled sleeves over a knit vest",
-    "outfit": "dove grey medical smock with rolled sleeves over a knit vest",
+    "upper": "hand-me-down quilted vest over a patched synthetic sweater",
+    "outfit": "hand-me-down quilted vest over a patched synthetic sweater",
     "palette": [
-      "dove grey"
+      "faded navy",
+      "dove grey",
+      "oatmeal"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "dove grey high-waisted pleated trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "canvas medical satchel without markings"
+    "lower": "worn padded trousers",
+    "footwear": "felt slippers",
+    "accessories": "needle case and a skein of thread in a cloth-scrap pouch"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "dove grey medical smock with rolled sleeves over a knit vest",
+        "value": "hand-me-down quilted vest over a patched synthetic sweater",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "dove grey high-waisted pleated trousers",
+        "value": "worn padded trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt slippers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -202,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "open coat collar over a rolled sweater neck",
+        "value": "patched round sweater neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "canvas medical satchel without markings",
+        "value": "needle case and a skein of thread in a cloth-scrap pouch",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat rectangular satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "undyed canvas and brown leather",
+        "value": "faded navy synthetic cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "canvas, leather",
+        "value": "synthetic cloth, steel needles",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the shoulder",
+        "value": "tied at the waist",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small soft pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -257,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 김사연, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; black hair; short length. build: lean; skin: light olive. upper garment: dove grey medical smock with rolled sleeves over a knit vest; neckline: open coat collar over a rolled sweater neck. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 김사연, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; black hair; short length. build: lean; skin: light olive. upper garment: hand-me-down quilted vest over a patched synthetic sweater; neckline: patched round sweater neck. accessories: needle case and a skein of thread in a cloth-scrap pouch; worn as tied at the waist. color palette: faded navy, dove grey, oatmeal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 김사연, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; black hair; short length. build: lean; skin: light olive; average adult male height. upper garment: dove grey medical smock with rolled sleeves over a knit vest; neckline: open coat collar over a rolled sweater neck; lower garment: dove grey high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 김사연, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; black hair; short length. build: lean; skin: light olive; average adult male height. upper garment: hand-me-down quilted vest over a patched synthetic sweater; neckline: patched round sweater neck; lower garment: worn padded trousers; footwear: felt slippers. accessories: needle case and a skein of thread in a cloth-scrap pouch; worn as tied at the waist. color palette: faded navy, dove grey, oatmeal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 김사연, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; black hair; short length. build: lean; skin: light olive; average adult male height. upper garment: dove grey medical smock with rolled sleeves over a knit vest; neckline: open coat collar over a rolled sweater neck; lower garment: dove grey high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 김사연, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; black hair; short length. build: lean; skin: light olive; average adult male height. upper garment: hand-me-down quilted vest over a patched synthetic sweater; neckline: patched round sweater neck; lower garment: worn padded trousers; footwear: felt slippers. accessories: needle case and a skein of thread in a cloth-scrap pouch; worn as tied at the waist. color palette: faded navy, dove grey, oatmeal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 김사연, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; black hair; short length. build: lean; skin: light olive; average adult male height. upper garment: dove grey medical smock with rolled sleeves over a knit vest; neckline: open coat collar over a rolled sweater neck; lower garment: dove grey high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 김사연, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; black hair; short length. build: lean; skin: light olive; average adult male height. upper garment: hand-me-down quilted vest over a patched synthetic sweater; neckline: patched round sweater neck; lower garment: worn padded trousers; footwear: felt slippers. accessories: needle case and a skein of thread in a cloth-scrap pouch; worn as tied at the waist. color palette: faded navy, dove grey, oatmeal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 김사연, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; black hair; short length. build: lean; skin: light olive; average adult male height. upper garment: dove grey medical smock with rolled sleeves over a knit vest; neckline: open coat collar over a rolled sweater neck; lower garment: dove grey high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 김사연, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short hair slicked back with a side part; black hair; short length. build: lean; skin: light olive; average adult male height. upper garment: hand-me-down quilted vest over a patched synthetic sweater; neckline: patched round sweater neck; lower garment: worn padded trousers; footwear: felt slippers. accessories: needle case and a skein of thread in a cloth-scrap pouch; worn as tied at the waist. color palette: faded navy, dove grey, oatmeal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

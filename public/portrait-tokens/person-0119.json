@@ -3,27 +3,27 @@
   "personId": "person-0119",
   "characterId": "K118",
   "name": "장석윤",
-  "stateId": "S05",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "고덕 장교단 교관"
+    "role": "명일2동 대피소장 · 아크"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "medium-length hair swept back",
-    "upper": "mustard ochre short wool jacket with a stand collar, with a thick knitted scarf and an extra padded layer",
-    "outfit": "mustard ochre short wool jacket with a stand collar, with a thick knitted scarf and an extra padded layer",
+    "upper": "몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 세로줄 무늬의 강동 곁집 띠",
+    "outfit": "몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 세로줄 무늬의 강동 곁집 띠",
     "palette": [
-      "mustard ochre",
-      "forest green",
-      "oxblood"
+      "navy",
+      "rust red",
+      "stone grey"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "forest green straight wool trousers",
+    "lower": "dark straight wool trousers",
     "footwear": "leather ankle boots",
-    "accessories": "duty whistle on a cord lanyard"
+    "accessories": "cloth-bound shelter register on a cord"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "mustard ochre short wool jacket with a stand collar, with a thick knitted scarf and an extra padded layer",
+        "value": "몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 세로줄 무늬의 강동 곁집 띠",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "forest green straight wool trousers",
+        "value": "dark straight wool trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
         "value": "leather ankle boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "buttoned stand collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "duty whistle on a cord lanyard",
+        "value": "cloth-bound shelter register on a cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull brass",
+        "value": "faded brown cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, cord",
+        "value": "cloth, paper, cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "lanyard around the neck",
+        "value": "cord over the shoulder",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small flat book",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 장석윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: fair with a neutral undertone. upper garment: mustard ochre short wool jacket with a stand collar, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: mustard ochre, forest green, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 장석윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: fair with a neutral undertone. upper garment: 몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 세로줄 무늬의 강동 곁집 띠; neckline: buttoned stand collar. accessories: cloth-bound shelter register on a cord; worn as cord over the shoulder. color palette: navy, rust red, stone grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 장석윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult male height. upper garment: mustard ochre short wool jacket with a stand collar, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: forest green straight wool trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: mustard ochre, forest green, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 장석윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult male height. upper garment: 몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 세로줄 무늬의 강동 곁집 띠; neckline: buttoned stand collar; lower garment: dark straight wool trousers; footwear: leather ankle boots. accessories: cloth-bound shelter register on a cord; worn as cord over the shoulder. color palette: navy, rust red, stone grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 장석윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult male height. upper garment: mustard ochre short wool jacket with a stand collar, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: forest green straight wool trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: mustard ochre, forest green, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 장석윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult male height. upper garment: 몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 세로줄 무늬의 강동 곁집 띠; neckline: buttoned stand collar; lower garment: dark straight wool trousers; footwear: leather ankle boots. accessories: cloth-bound shelter register on a cord; worn as cord over the shoulder. color palette: navy, rust red, stone grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 장석윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult male height. upper garment: mustard ochre short wool jacket with a stand collar, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: forest green straight wool trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: mustard ochre, forest green, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 장석윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult male height. upper garment: 몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 세로줄 무늬의 강동 곁집 띠; neckline: buttoned stand collar; lower garment: dark straight wool trousers; footwear: leather ankle boots. accessories: cloth-bound shelter register on a cord; worn as cord over the shoulder. color palette: navy, rust red, stone grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 장석윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult male height. upper garment: mustard ochre short wool jacket with a stand collar, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: forest green straight wool trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: mustard ochre, forest green, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 장석윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: fair with a neutral undertone; average adult male height. upper garment: 몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 세로줄 무늬의 강동 곁집 띠; neckline: buttoned stand collar; lower garment: dark straight wool trousers; footwear: leather ankle boots. accessories: cloth-bound shelter register on a cord; worn as cord over the shoulder. color palette: navy, rust red, stone grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }
