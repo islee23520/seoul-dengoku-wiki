@@ -1,16 +1,31 @@
 # Seoul Metro Dynasties — Official Wiki
 
-This repository holds the world canon ("lore") of **Seoul Metro Dynasties** — 서울 지하철 왕조(서울:전국) —, a character-centered grand-strategy game set in the subway network of post-collapse Seoul, together with the React application that publishes it as the official wiki at <https://seoul-dengoku.linalab.io/wiki/>.
+**서울 지하철 왕조(Seoul Metro Dynasties)** 의 세계관 정본과, 그것을 공개하는 위키 사이트의 저장소다. 위키는 GitHub Pages로 <https://sss.linalab.io/> 에 영어(기본)와 한국어로 게시된다.
 
-The public wiki renders Korean pages only. Generated files are never edited by hand; contract checks reject the retired English catalog and generated English documents.
+## 지금의 체계 (2026-11-13 기준)
 
-PostgreSQL `wiki`가 현재 운영 저작 정본이며 typed 레코드와 문서 head를 보유한다. 비공개 editorial·Soul 데이터는 별도 `wiki_private` 권한 경계로 보호한다. 저작 CLI와 문서 API는 SQLite 폴백 없이 PostgreSQL을 사용한다. 운영 승격은 커밋 `24f3c676f7df0b9903e02f4278ac65bf8fac688f`, run `20261030T150126Z-11560`에서 `deployed`로 확인됐다([운영 관측](deploy/README.md#운영-전환-관측-2026-10-30)). 앞선 격리 환경의 SQLite·PG reader 대사, 전체 worker 출력 1,433개 동등성, 일반 PG 빌드 및 `check-contract`·`check:artifacts`·게이트 통과는 별도의 이관 검증 기록이며 운영 배포 증거를 대신하지 않는다.
+| 무엇 | 어디 | 설명 |
+|---|---|---|
+| 세계관 골격 | `docs/CANON-BIBLE.md` 1~3절 | 소유자가 승인한 세계 규칙, 세 세력(정부·자유도시들·아크), 25구 배정, 지휘 원칙, 연표 기준점. 다른 모든 문서보다 우선한다 |
+| v3 바이블 | `docs/design/v3/` | 골격 아래의 세계 설계 전체(01-core ~ 10-design-profile). 위키·인물·병종·GDD·쇼케이스는 여기서 다시 쓴다 |
+| 공개 데이터 정본 | `data/sql/*.sql` | 위키 문서(030), 인물(050·090), 가문·가계도(100·110), 지도(120~123), 병종(130~132) 등. 사이트 빌드가 이 SQL만 읽는다 |
+| 위키 문서 초안 | `docs/drafts/<slug>.{ko,en}.md` | `scripts/pages/rewrite-doc.mjs`로 030에 반영한다 |
+| 인물 배치 입력 | `docs/drafts/people/{government,free-city,arc}.jsonl` | `scripts/pages/v3-apply-people.mjs`로 050·090·110·115·123과 초상 토큰에 반영한다 |
+| 고정 사실 | `docs/design/v3/fixed-facts.snapshot.json` | 인물 이름·초상 얼굴·성별·나이·가족과 서울 실제 지리. `node scripts/pages/v3-fixed-facts.mjs --check`가 지킨다. 번역 오류 정정만 `fixed-facts.corrections.json`으로 허용한다 |
+| 잠정 원장 | `docs/drafts/reports/v3-provisional-ledger.md` (+ `v3-ledger-parts/`) | 소유자 승인 전의 모든 지어낸 항목 |
+| 설계 지침 | `.agents/skills/game-design-practice/SKILL.md` | 장르 중립 핵심 지침(하네스 중립). 이 프로젝트 적용값은 바이블 10장 |
 
-On 2026-10-31, the fully migrated tracked `data/canonical/wiki-cast.sqlite` was removed by owner direction. External SQLite files may be used only for explicit migration/comparison with an explicitly supplied external path, never as runtime inputs or an editable production authority. Keep all other archives and the previous deployment rollback available. PostgreSQL historical evidence (`wiki.source_file` bytes/hashes, `source_record` provenance and sealed revisions) must remain immutable; do not rewrite historical bytes to match edited heads. Migration/regression code removal is outside this change.
+## 빌드와 검사
 
-Generation and the document API share current-source and category-publication predicates. Category-ready drafts may be published under the existing catalog policy without changing their editorial approval status. Excluded sources, examples, private namespaces and retired cast articles are not published. Typed public routes derive from the selected document's logical filename; historical `article_route` and publication-admission rows do not freeze that route inventory. Computed index/glossary derivations retain their explicit stored bindings.
+```bash
+cd site && npm ci --ignore-scripts && cd ..
+node site/build.mjs && node site/check-site.mjs          # CI(Linux)와 같은 명령
+# Windows 로컬: MSYS_NO_PATHCONV=1 SITE_BASE=/ SITE_OUT=<E: 또는 F: 경로> node site/build.mjs
+node scripts/pages/v3-fixed-facts.mjs --check             # 고정 사실 동결 검사
+node scripts/pages/scan-terms.mjs --terms docs/canon-terms.json --all   # 금지어 검사
+```
 
-Current writing follows [WORLD_BUILDING_GUIDE.md](WORLD_BUILDING_GUIDE.md): Seoul is the only current world, and the retired wuxia/martial-arts system must not be carried forward under new names. These editing requirements do not claim that every stored head or published page has already completed the editorial migration. Public Korean-only publication also retires simultaneous English authoring; preserve sealed multilingual history without making it a current publication requirement.
+작업트리·검증용 사본·빌드 출력은 E: 또는 F: 드라이브에만 만든다(소유자 지시 2026-11-13).
 
 ## Repository layout
 
