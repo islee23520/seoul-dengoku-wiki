@@ -1,397 +1,108 @@
 {
   "id": "person-0106",
   "name": "명우솔",
-  "title": "성수 공방시장 경매사",
-  "position": "성수 공방시장 경매사",
+  "title": "교섭인",
+  "position": "교섭인 · 강남역",
   "characterId": "K105",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "공방시장 출고·배급 기록",
+  "rank": "세례자",
+  "commonTier": "T5",
+  "occupation": "계약 교섭",
   "gender": "남성",
   "stage": "S2",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-명우솔",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0106",
   "birthDate": "2077-12-27",
   "birthday": "12-27",
   "age": 49,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/202",
-    "lore/characters/Cast-State-04.json#/content/203",
-    "lore/characters/Cast-State-04.json#/content/205"
-  ],
-  "familyTree": {
-    "personId": "K105",
-    "nodes": [
-      {
-        "id": "K105",
-        "personId": "K105",
-        "kind": "person",
-        "name": "명우솔",
-        "birthDate": "2077-12-27",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K105"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-명우솔-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 노량진 선창에서 자랐다. 성수 공방시장 경매사 자리는 저울 재점검 공개로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-명우솔-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0106"
-      },
-      {
-        "id": "FH-K105-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "명승연",
-        "lineage": {
-          "surname": "명",
-          "bongwan": "연안",
-          "clan": "ba85-c5f0-c548-agreed-c194-second"
-        },
-        "birthDate": "2047-12-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-명우솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2085,
-            "summary": "명승연은 노량진 선창에서 공방시장 출고·배급 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-명우솔-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K105-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "명승정",
-        "lineage": {
-          "surname": "명",
-          "bongwan": "연안",
-          "clan": "ba85-c5f0-c548-agreed-c194-second"
-        },
-        "birthDate": "2017-12-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-명우솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "명승정은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-명우솔-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K105-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "송승문",
-        "birthDate": "2047-12-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-명우솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2085,
-            "summary": "송승문은 노량진 선창에서 공방시장 출고·배급 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-명우솔-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K105-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "조승범",
-        "birthDate": "2017-12-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-명우솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조승범은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-명우솔-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K105-P-01:K105:biological",
-        "from": "FH-K105-P-01",
-        "to": "K105",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-명우솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K105-P-02:FH-K105-P-01:biological",
-        "from": "FH-K105-P-02",
-        "to": "FH-K105-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-명우솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K105-M-01:K105:biological",
-        "from": "FH-K105-M-01",
-        "to": "K105",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-명우솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K105-M-02:FH-K105-M-01:biological",
-        "from": "FH-K105-M-02",
-        "to": "FH-K105-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-명우솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ba85-c5f0-c548",
+    "name": "연안 명씨",
+    "crest": "clan-crests/ba85-c5f0-c548.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "명우솔이 방배역 경계에서 맡는 일은 세례를 받으러 넘어오겠다는 동작 사람을 먼저 앉혀 놓고 무엇을 내놓을 수 있는지 묻는 것이다. 넘어오는 자유도시 기술자 문제는 아크와 동작 사이의 가장 오래된 다툼이라, 마흔아홉의 그는 묻는 말의 차례를 한 번도 바꾸지 않는다. 그가 받은 셈표에는 도장 옆에 그 사람이 어느 곁집 띠를 둘렀는지, 띠가 없으면 어디서 왔는지가 따로 적혀 있다. 부위는 하나이고, 셈표 뭉치는 강남역 곁집 창고로 가져간다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "교섭인",
+    "품계": "세례자",
+    "생업": "계약 교섭",
+    "일하는 역": "강남역",
+    "잠자는 역": "강남역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "명우솔이 방배역 경계에서 맡는 일은 세례를 받으러 넘어오겠다는 동작 사람을 먼저 앉혀 놓고 무엇을 내놓을 수 있는지 묻는 것이다. 넘어오는 자유도시 기술자 문제는 아크와 동작 사이의 가장 오래된 다툼이라, 마흔아홉의 그는 묻는 말의 차례를 한 번도 바꾸지 않는다. 그가 받은 셈표에는 도장 옆에 그 사람이 어느 곁집 띠를 둘렀는지, 띠가 없으면 어디서 왔는지가 따로 적혀 있다. 부위는 하나이고, 셈표 뭉치는 강남역 곁집 창고로 가져간다.",
+    "관직": "직함 교섭인. 직위 교섭인 · 강남역. 품계 세례자. 일하는 역 강남역."
+  },
+  "values": {
+    "권위": 15,
+    "개방": 0,
+    "무력": -20,
+    "물질": -20,
+    "공동": 45,
+    "원칙": -15,
+    "공개": -65,
+    "자격": 0,
+    "분산": -15,
+    "변혁": 40
+  },
+  "desire": {
+    "갈망": 25,
+    "독점": 25,
+    "위험": -20,
+    "과시": 40,
+    "지속": 30,
+    "지향": "동성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0106",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 8,
         "effective": 8
       },
-      "negotiation": {
-        "base": 10,
-        "effective": 10
+      "martial": {
+        "base": 4,
+        "effective": 4
       },
-      "management": {
-        "base": 11,
-        "effective": 11
+      "stewardship": {
+        "base": 9,
+        "effective": 9
       },
-      "insight": {
-        "base": 10,
-        "effective": 10
+      "intrigue": {
+        "base": 6,
+        "effective": 6
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 5,
+        "effective": 5
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "ration",
-        "name": {
-          "ko": "비상배급표 공개",
-          "en": "Emergency-ration disclosure"
-        },
-        "rating": 60
-      },
-      {
-        "id": "trade",
-        "name": {
-          "ko": "공개 조건 물류 거래",
-          "en": "Logistics under disclosed terms"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "no-military-boot-priority-in-bids",
-        "name": {
-          "ko": "군화 우선 낙찰 거부",
-          "en": "No Military Boot Priority in Bids"
-        },
-        "description": {
-          "ko": "명우솔은 민수용 필수품을 밀어내는 군화 우선 낙찰을 거부한다.",
-          "en": "Myeong Woosol rejects military-boot bidding priority that displaces essential civilian goods."
-        },
-        "behavior": {
-          "ko": "원단과 기어의 출처를 추궁하고 군수 우선은 수비대의 누수 경보가 있을 때만 허용한다.",
-          "en": "They question fabric and gear origins and allow military supply priority only when the garrison issues a leak warning."
-        },
-        "stress": {
-          "ko": "보호계약이 원단을 군화에 묶으려 하면 민수용 펌프 패킹의 공급을 지키기 위해 우선 배정 조건을 더 따질 수 있다.",
-          "en": "If a protection contract reserves fabric for military boots, they may scrutinize allocation conditions to protect civilian pump-packing supplies."
-        },
-        "relationship": {
-          "ko": "유하은과 구도영에게는 공개된 배정 순서를 기대하며 성수 시세를 가로채는 가격 원장에는 적대적으로 반응할 수 있다.",
-          "en": "They may expect transparent allocation order from Yu Haeun and Gu Doyeong and react adversely to price ledgers that commandeer Seongsu prices."
-        },
-        "effects": []
-      },
-      {
-        "id": "transparent-emergency-rations",
-        "name": {
-          "ko": "비상배급 공개",
-          "en": "Transparent Emergency Rations"
-        },
-        "description": {
-          "ko": "명우솔은 공급 불안 때 창고 봉쇄보다 배급과 출고 정보의 공개를 중시한다.",
-          "en": "Myeong Woosol values open ration and shipment information over warehouse lockdowns during supply uncertainty."
-        },
-        "behavior": {
-          "ko": "흉작 소문 때 창고 봉쇄를 풀고 비상배급표를 공개했으며 출고 수량을 직능 칠판에 올린다.",
-          "en": "They lifted a warehouse lockdown and published emergency ration sheets during crop-failure rumors, and post shipment quantities on the occupational board."
-        },
-        "stress": {
-          "ko": "군화 우선 계약으로 민수 물자가 줄 우려가 생기면 공개 수량과 배급 순서로 공급 판단을 설명하려 할 수 있다.",
-          "en": "If military-boot priority threatens civilian supplies, they may use public quantities and ration order to explain allocation decisions."
-        },
-        "relationship": {
-          "ko": "유하은의 칠판과 구도영의 운송 순번을 맞추며 거래 상대에게도 배급 정보의 공개를 기대할 수 있다.",
-          "en": "They may align Yu Haeun's board with Gu Doyeong's transport order and expect trading partners to disclose ration information."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "흉작 소문에 창고를 열고 배급표를 공개했다. 실제 거래 조정과 공급 판단이 근거이며 경매 직함만으로 경매 전문 숙련을 추가하지 않았다.",
-      "en": "He opened storage and disclosed rations during crop-failure rumors. Trade coordination and supply judgment are supported; an auctioneer title alone does not add auction mastery."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -401,7 +112,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -427,89 +138,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-41450-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K105",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:kingdom-s04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-41450-S04",
-          "directLiegePersonId": "K423"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ba85-c5f0-c548",
-    "name": "연안 명씨",
-    "crest": "clan-crests/ba85-c5f0-c548.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -10,
-    "개방": 15,
-    "무력": -30,
-    "물질": 30,
-    "공동": 25,
-    "원칙": -5,
-    "공개": -20,
-    "자격": 35,
-    "분산": 15,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 25,
-    "독점": 25,
-    "위험": -20,
-    "과시": 40,
-    "지속": 30,
-    "지향": "동성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "공방시장 출고·배급 기록",
-    "품계": "교사",
-    "직함": "성수 공방시장 경매사",
-    "가치관": "권위 −10 | 개방 15 | 무력 −30 | 물질 30 | 공동 25 | 원칙 −5 | 공개 −20 | 자격 35 | 분산 15 | 변혁 −5",
-    "욕망": "갈망 25 | 독점 25 | 위험 −20 | 과시 40 | 지속 30 | 지향 동성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2126년 세대. 명우솔은 노량진 선창에서 자랐다. 명우솔은 저울 재점검 공개로 성수 공방시장 경매사 자리를 맡았다.\n- 명우솔의 성수 공방시장 경매사 업무는 성수2가1동과 연결된다.",
-    "관직": "품계 교사. 직함은 성수 공방시장 경매사. 출고 수량을 직능 칠판에 공개하고, 군수 우선은 수비대의 누수 경보가 있을 때만 허용한다.",
-    "일화": "2125년 명우솔은 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다. 이 일로 성수 공방시장 경매사 자리의 서명이 장부에 올랐다.",
-    "관계": "유하은의 직능 칠판을 경매로 집행하고, 구도영의 패킹 운송과 순번을 나누며, 남윤경의 가격 원장이 성수 시세를 가로채면 원한으로 돌아선다.",
-    "야망": "가죽·펌프 패킹·소형 기어를 공동규격의 필수 품목으로 경매에 올려 물만 가진 가문과 나사만 가진 평의회가 서로를 인질로 못 삼게 한다.",
-    "공포": "명우솔은 동부 보호계약이 성수 원단을 군화 우선으로 묶고 민수용 펌프 패킹이 사라지는 상황을 두려워한다.",
-    "개입": "대체 원단을 구하거나, 군화 창고의 숨은 발주를 폭로해 경매 잠금을 풀 수 있다."
-  },
-  "biography": "원단과 기어의 출처를 숨기는 공방을 추궁하고, 신발 한 켤레의 시세가 방호보다 먼저 사람을 살린다고 믿는다. 흥정을 즐기되 군화 우선 낙찰은 거부한다.\n\n- 소속: 명부교회\n- 생업: 공방시장 출고·배급 기록\n- 품계: 교사\n- 직함: 성수 공방시장 경매사\n**생애.** 2126년 세대. 명우솔은 노량진 선창에서 자랐다. 명우솔은 저울 재점검 공개로 성수 공방시장 경매사 자리를 맡았다.\n- 명우솔의 성수 공방시장 경매사 업무는 성수2가1동과 연결된다.\n\n**관직.** 품계 교사. 직함은 성수 공방시장 경매사. 출고 수량을 직능 칠판에 공개하고, 군수 우선은 수비대의 누수 경보가 있을 때만 허용한다.\n\n**일화.** 2125년 명우솔은 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다. 이 일로 성수 공방시장 경매사 자리의 서명이 장부에 올랐다.\n\n**관계.** 유하은의 직능 칠판을 경매로 집행하고, 구도영의 패킹 운송과 순번을 나누며, 남윤경의 가격 원장이 성수 시세를 가로채면 원한으로 돌아선다.\n\n**야망.** 가죽·펌프 패킹·소형 기어를 공동규격의 필수 품목으로 경매에 올려 물만 가진 가문과 나사만 가진 평의회가 서로를 인질로 못 삼게 한다.\n\n**공포.** 명우솔은 동부 보호계약이 성수 원단을 군화 우선으로 묶고 민수용 펌프 패킹이 사라지는 상황을 두려워한다.\n\n**개입.** 대체 원단을 구하거나, 군화 창고의 숨은 발주를 폭로해 경매 잠금을 풀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 15 | 무력 −30 | 물질 30 | 공동 25 | 원칙 −5 | 공개 −20 | 자격 35 | 분산 15 | 변혁 −5\n- 욕망: 갈망 25 | 독점 25 | 위험 −20 | 과시 40 | 지속 30 | 지향 동성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "명우솔",
-        "type": "지휘",
-        "to": "유하은",
-        "basis": "유하은의 직능 칠판을 경매로 집행하고"
-      },
-      {
-        "from": "명우솔",
-        "type": "지휘",
-        "to": "구도영",
-        "basis": "구도영의 패킹 운송과 순번을 나누며"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

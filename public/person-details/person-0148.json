@@ -1,385 +1,155 @@
 {
   "id": "person-0148",
   "name": "윤지율",
-  "title": "의료이송 기록관",
-  "position": "의료이송 기록관",
+  "title": "대통령 비서실장",
+  "position": "대통령 비서실장 · 광화문역",
   "characterId": "K147",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "중증도별 의료이송 배차 관리",
+  "rank": "서기관",
+  "commonTier": "T2",
+  "occupation": "비서 업무",
   "gender": "남성",
   "stage": "S1",
-  "state": "S06",
-  "stateName": "대한민국정부",
-  "sourceRoute": "/world/Cast-State-06#인물-윤지율",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0148",
   "birthDate": "2064-07-24",
   "birthday": "07-24",
   "age": 62,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-06.json#/content/61"
-  ],
-  "familyTree": {
-    "personId": "K147",
-    "nodes": [
-      {
-        "id": "K147",
-        "personId": "K147",
-        "kind": "person",
-        "name": "윤지율",
-        "birthDate": "2064-07-24",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K147"
-          },
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤지율-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 의료이송 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-윤지율-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0148"
-      },
-      {
-        "id": "FH-K147-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승온",
-        "lineage": {
-          "surname": "윤",
-          "bongwan": "파평",
-          "clan": "c724-d30c-d3c9-agreed-c728-second"
-        },
-        "birthDate": "2034-07-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤지율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "윤승온은 서울역 등기소에서 중증도별 의료이송 배차 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-윤지율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K147-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승빈",
-        "lineage": {
-          "surname": "윤",
-          "bongwan": "파평",
-          "clan": "c724-d30c-d3c9-agreed-c728-second"
-        },
-        "birthDate": "2004-07-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤지율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤승빈은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-윤지율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K147-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정현영",
-        "birthDate": "2034-07-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤지율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "정현영은 서울역 등기소에서 중증도별 의료이송 배차 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-윤지율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K147-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승솔",
-        "birthDate": "2004-07-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤지율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤승솔은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-윤지율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K147-P-01:K147:biological",
-        "from": "FH-K147-P-01",
-        "to": "K147",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤지율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K147-P-02:FH-K147-P-01:biological",
-        "from": "FH-K147-P-02",
-        "to": "FH-K147-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤지율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K147-M-01:K147:biological",
-        "from": "FH-K147-M-01",
-        "to": "K147",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤지율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K147-M-02:FH-K147-M-01:biological",
-        "from": "FH-K147-M-02",
-        "to": "FH-K147-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤지율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c724-d30c-d3c9",
+    "name": "파평 윤씨",
+    "crest": "clan-crests/c724-d30c-d3c9.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "대통령 비서실장, 파평 윤씨 대통령 집안의 어른이다. 광화문 청사 깊은 층에서 자고, 결재 서류가 대통령의 책상에 오르기 전에 한 장씩 순서를 매긴다. 오래도록 다친 사람을 어느 역 보건소로 먼저 옮길지 적는 일을 했기에, 서류에도 급한 정도를 붙이는 버릇이 있다. 집안 사람이 추대된 날 밤, 그는 대통령 앞에서 남은 생을 결재함 곁에서 보내겠다고 맹세했다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "대통령 비서실장",
+    "품계": "서기관",
+    "생업": "비서 업무",
+    "일하는 역": "광화문역",
+    "잠자는 역": "광화문역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "대통령 비서실장, 파평 윤씨 대통령 집안의 어른이다. 광화문 청사 깊은 층에서 자고, 결재 서류가 대통령의 책상에 오르기 전에 한 장씩 순서를 매긴다. 오래도록 다친 사람을 어느 역 보건소로 먼저 옮길지 적는 일을 했기에, 서류에도 급한 정도를 붙이는 버릇이 있다. 집안 사람이 추대된 날 밤, 그는 대통령 앞에서 남은 생을 결재함 곁에서 보내겠다고 맹세했다.",
+    "관직": "직함 대통령 비서실장. 직위 대통령 비서실장 · 광화문역. 품계 서기관. 일하는 역 광화문역."
+  },
+  "values": {
+    "권위": 65,
+    "개방": -65,
+    "무력": 0,
+    "물질": -40,
+    "공동": 15,
+    "원칙": 90,
+    "공개": -40,
+    "자격": 30,
+    "분산": -90,
+    "변혁": -60
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": -30,
+    "위험": -30,
+    "과시": 5,
+    "지속": 40,
+    "지향": "이성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0148",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "윤지율",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "윤지율",
+        "type": "맹세",
+        "to": "윤서린",
+        "basis": "남은 생을 대통령의 결재함 곁에서 보내겠다는 맹세"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "윤서린",
+        "type": "맹세",
+        "to": "윤지율",
+        "basis": "추대된 날 밤 집안 어른 윤지율이 결재함 곁을 지키겠다고 맹세했다"
+      },
+      {
+        "from": "오해린",
+        "type": "경쟁",
+        "to": "윤지율",
+        "basis": "보고를 비서실장의 책상을 거치지 않고 봉투째 올려 비서실장과 맞선다."
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
+      },
+      "martial": {
+        "base": 3,
+        "effective": 3
+      },
+      "stewardship": {
+        "base": 11,
+        "effective": 11
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
-      },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 13,
-        "effective": 13
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 9,
+        "effective": 9
       },
       "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 3,
+        "effective": 3
       }
     },
     "skills": [
       {
-        "id": "k147-medical-dispatch",
-        "name": {
-          "ko": "중증도 배차",
-          "en": "Severity-based dispatch"
-        },
-        "rating": 65
+        "id": "s17-0148-ordering",
+        "name": "서류 순서 매기기",
+        "rating": 80
       }
     ],
     "traits": [
       {
-        "id": "k147-choice",
-        "name": {
-          "ko": "환자를 병력과 분리",
-          "en": "Separates patients from troops"
-        },
-        "description": {
-          "ko": "원칙적이지만 환자 앞에서는 절차를 접는다. 이름 없는 시신을 장부에 남기는 일을 자신의 본분으로 본다.",
-          "en": "Principled, but she folded procedure before patients. She saw leaving nameless dead in the ledger as her own calling."
-        },
-        "behavior": {
-          "ko": "일화. 북한산보국문 피난 가족이 암사 복무계약서와 함께 급수권 철표를 들고 서울역 의무실로 몰려왔다.",
-          "en": "Anecdote. The refugee families of Bukhansan Bogukmun crowded into the Seoul Station infirmary carrying withdrawal notices bound with Amsa service contracts."
-        },
-        "stress": {
-          "ko": "공포. 이송 명단이 군사호적과 합쳐져 피난민이 병력 숫자로만 남는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That the transfer lists would merge with military registries and the refugees would remain as troop numbers alone. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 윤서린의 추대 세력에 속하고 류은비에게 약품 배정 장부를 빚졌다. 신보람의 가족 이송을 우선 기록으로 남긴다.",
-          "en": "Relations. Belonged to Yun Seorin's endorsement faction and owed Ryu Eunbi the medicine-allocation ledger. Left Shin Boram's family transfer as a priority record."
-        },
-        "effects": []
-      },
-      {
-        "id": "k147-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 주사. 직함은 의료이송 기록관. 중증도 순 배차를 공개하고, 무기와 환자가 한 열차에 타면 즉시 운행을 취소한다.",
-          "en": "Office. Rank: registrar. Title: medical-transfer registrar. She published severity-order dispatches and cancelled a run at once whenever weapons and patients boarded one train."
-        },
-        "behavior": {
-          "ko": "관직. 품계 주사. 직함은 의료이송 기록관. 중증도 순 배차를 공개하고, 무기와 환자가 한 열차에 타면 즉시 운행을 취소한다.",
-          "en": "Office. Rank: registrar. Title: medical-transfer registrar. She published severity-order dispatches and cancelled a run at once whenever weapons and patients boarded one train."
-        },
-        "stress": {
-          "ko": "공포. 이송 명단이 군사호적과 합쳐져 피난민이 병력 숫자로만 남는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That the transfer lists would merge with military registries and the refugees would remain as troop numbers alone. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 윤서린의 추대 세력에 속하고 류은비에게 약품 배정 장부를 빚졌다. 신보람의 가족 이송을 우선 기록으로 남긴다.",
-          "en": "Relations. Belonged to Yun Seorin's endorsement faction and owed Ryu Eunbi the medicine-allocation ledger. Left Shin Boram's family transfer as a priority record."
-        },
+        "id": "t17-0148-urgency",
+        "name": "급한 정도를 매긴다",
+        "description": "모든 일에 먼저 할 것과 나중 할 것의 순서를 붙인다.",
+        "behavior": "서류 모서리에 급한 정도를 숫자로 적는다.",
+        "stress": "순서가 뒤집히면 밤새 서류를 다시 늘어놓는다.",
+        "relationship": "대통령을 집안의 아이처럼 지킨다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "중증도 배차를 공개하고 무기와 환자의 혼승을 취소한다. 의료 기록과 배차의 수행은 진료 전문성을 뜻하지 않는다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Posts severity-based dispatch and cancels mixed weapons and patient transport. Medical records and dispatch do not establish clinical expertise. Titles and ambitions are not treated as accomplished authority or results."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,126 +187,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-51110-S06",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K147",
-      "stateId": "S06",
-      "politicalParentTitleId": "title:kingdom-s06",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-51110-S06",
-          "directLiegePersonId": "K144"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c724-d30c-d3c9",
-    "name": "파평 윤씨",
-    "crest": "clan-crests/c724-d30c-d3c9.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 20,
-    "개방": -10,
-    "무력": -35,
-    "물질": -35,
-    "공동": 10,
-    "원칙": 70,
-    "공개": -15,
-    "자격": 15,
-    "분산": -40,
-    "변혁": -40
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": -30,
-    "위험": -30,
-    "과시": 5,
-    "지속": 40,
-    "지향": "이성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "중증도별 의료이송 배차 관리",
-    "소속": "서울특별시 지방공무원 조직",
-    "직위·직급": "지방보건계",
-    "담당 업무": "의료이송 기록관",
-    "가치관": "권위 20 | 개방 −10 | 무력 −35 | 물질 −35 | 공동 10 | 원칙 70 | 공개 −15 | 자격 15 | 분산 −40 | 변혁 −40",
-    "욕망": "갈망 40 | 독점 −30 | 위험 −30 | 과시 5 | 지속 40 | 지향 이성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "서울역 등기소에서 자랐다. 의료이송 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 윤지율의 중증도에 따라 의료이송을 배차하는 일은 회현동의 업무와 이어진다.",
-    "공무원 직위·직급": "지방보건계. 담당 업무: 의료이송 기록관.",
-    "일화": "북한산보국문 피난 가족이 암사 복무계약서와 함께 급수권 철표를 들고 서울역 의무실로 몰려왔다.",
-    "관계": "윤서린의 추대 세력에 속하고 류은비에게 약품 배정 장부를 빚졌다. 신보람의 가족 이송을 우선 기록으로 남긴다.",
-    "야망": "중앙 재난의료 조정망을 기록청 인준 아래 두어 강국이 구급 열차를 군수로 돌리지 못하게 한다.",
-    "공포": "이송 명단이 군사호적과 합쳐져 피난민이 병력 숫자로만 남는 것.",
-    "개입": "환자만 태운 열차를 호송하거나, 군사호적이 섞인 이송 명단을 분리해 줄 수 있다."
-  },
-  "biography": "원칙적이지만 환자 앞에서는 절차를 접는다. 이름 없는 시신을 장부에 남기는 일을 자신의 본분으로 본다.\n\n- 생업: 중증도별 의료이송 배차 관리\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방보건계\n- 담당 업무: 의료이송 기록관\n**생애.** 서울역 등기소에서 자랐다. 의료이송 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 윤지율의 중증도에 따라 의료이송을 배차하는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 지방보건계. 담당 업무: 의료이송 기록관.\n\n**일화.** 북한산보국문 피난 가족이 암사 복무계약서와 함께 급수권 철표를 들고 서울역 의무실로 몰려왔다.\n\n**관계.** 윤서린의 추대 세력에 속하고 류은비에게 약품 배정 장부를 빚졌다. 신보람의 가족 이송을 우선 기록으로 남긴다.\n\n**야망.** 중앙 재난의료 조정망을 기록청 인준 아래 두어 강국이 구급 열차를 군수로 돌리지 못하게 한다.\n\n**공포.** 이송 명단이 군사호적과 합쳐져 피난민이 병력 숫자로만 남는 것.\n\n**개입.** 환자만 태운 열차를 호송하거나, 군사호적이 섞인 이송 명단을 분리해 줄 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −10 | 무력 −35 | 물질 −35 | 공동 10 | 원칙 70 | 공개 −15 | 자격 15 | 분산 −40 | 변혁 −40\n- 욕망: 갈망 40 | 독점 −30 | 위험 −30 | 과시 5 | 지속 40 | 지향 이성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-06"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "윤지율",
-        "type": "지휘",
-        "to": "윤서린",
-        "basis": "대통령 추대 세력의 의료이송 기록"
-      },
-      {
-        "from": "윤지율",
-        "type": "빚",
-        "to": "류은비",
-        "basis": "약품 배정 장부를 치료길드에 빚짐"
-      },
-      {
-        "from": "윤지율",
-        "type": "계약",
-        "to": "신보람",
-        "basis": "북한산보국문 가족 이송을 우선 기록으로 남김"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "서나연",
-        "type": "계약",
-        "to": "윤지율",
-        "basis": "의무실 얼음을 우선 배정"
-      },
-      {
-        "from": "신보람",
-        "type": "계약",
-        "to": "윤지율",
-        "basis": "이송 우선 기록을 부탁"
-      },
-      {
-        "from": "연지우",
-        "type": "지휘",
-        "to": "윤지율",
-        "basis": "윤지율의 이송 장부를 침상에서 집행하는 지휘를 받고"
-      },
-      {
-        "from": "설다흰",
-        "type": "지휘",
-        "to": "윤지율",
-        "basis": "윤지율의 배차 취소를 승강장에서 집행하며"
-      },
-      {
-        "from": "연태솔",
-        "type": "사제",
-        "to": "윤지율",
-        "basis": "윤지율의 의료이송 원장을 조정표로 번역하는 사제이고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

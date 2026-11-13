@@ -1,394 +1,126 @@
 {
   "id": "person-0198",
   "name": "신태산",
-  "title": "호송 반장",
-  "position": "호송 반장",
+  "title": "의원 집안 후계",
+  "position": "의원 집안 후계 · 공덕역",
   "characterId": "K197",
-  "rank": "교도",
-  "commonTier": "T5",
-  "occupation": "호송 경로·도착 중량 대조",
+  "rank": "후계",
+  "commonTier": "T2",
+  "occupation": "전령",
   "gender": "남성",
   "stage": "S1",
-  "state": "S08",
-  "stateName": "중앙정보부",
-  "sourceRoute": "/world/Cast-State-08#인물-신태산",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0198",
   "birthDate": "2079-12-17",
   "birthday": "12-17",
   "age": 47,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-08.json#/content/72",
-    "lore/characters/Cast-State-08.json#/content/74"
-  ],
-  "familyTree": {
-    "personId": "K197",
-    "nodes": [
-      {
-        "id": "K197",
-        "personId": "K197",
-        "kind": "person",
-        "name": "신태산",
-        "birthDate": "2079-12-17",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K197"
-          },
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-신태산-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 반장 자리는 무표 출발 열차 저지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-신태산-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0198"
-      },
-      {
-        "id": "FH-K197-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "신승호",
-        "lineage": {
-          "surname": "신",
-          "bongwan": "평산",
-          "clan": "c2e0-d3c9-c0b0"
-        },
-        "birthDate": "2049-12-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-신태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2087,
-            "summary": "신승호는 신내 환승 당직에서 호송 경로·도착 중량 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-신태산-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K197-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "신승원",
-        "lineage": {
-          "surname": "신",
-          "bongwan": "평산",
-          "clan": "c2e0-d3c9-c0b0"
-        },
-        "birthDate": "2019-12-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-신태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "신승원은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-신태산-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K197-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한현수",
-        "birthDate": "2049-12-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-신태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2087,
-            "summary": "한현수는 신내 환승 당직에서 호송 경로·도착 중량 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-신태산-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K197-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현은",
-        "birthDate": "2019-12-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-신태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강현은은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-신태산-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K197-P-01:K197:biological",
-        "from": "FH-K197-P-01",
-        "to": "K197",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-신태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K197-P-02:FH-K197-P-01:biological",
-        "from": "FH-K197-P-02",
-        "to": "FH-K197-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-신태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K197-M-01:K197:biological",
-        "from": "FH-K197-M-01",
-        "to": "K197",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-신태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K197-M-02:FH-K197-M-01:biological",
-        "from": "FH-K197-M-02",
-        "to": "FH-K197-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-신태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c2e0-d3c9-c0b0",
+    "name": "평산 신씨",
+    "crest": "clan-crests/c2e0-d3c9-c0b0.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "마포 터널 검문소에서 신태산은 언제나 병사가 묻기 전에 통행 서류부터 내밀고, 그 서류에는 공덕역에 기재된 의원 집안 후계라는 그의 자리가 적혀 있다. 마포구 국회의원 김연규 집안의 후계이며 평산 신씨다. 경주 김씨 가운데 정부 쪽에는 의석을 물려받을 어른이 없어, 김연규는 자기보다 열일곱 살 많은 그를 다른 집안에서 들인 후계로 세웠다. 집안의 봉한 서신 가방은 언제나 그의 어깨에 걸려 있고, 그는 그 가방을 메고 마포 터널 검문소와 정부서울청사 사이를 걷는다. 세 번째 급수계약의 부속서 초안이 오갈 때마다 그는 봉인의 개수와 도장 자리를 직접 세어 의원에게 전한다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "의원 집안 후계",
+    "품계": "후계",
+    "생업": "전령",
+    "일하는 역": "공덕역",
+    "잠자는 역": "공덕역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "마포 터널 검문소에서 신태산은 언제나 병사가 묻기 전에 통행 서류부터 내밀고, 그 서류에는 공덕역에 기재된 의원 집안 후계라는 그의 자리가 적혀 있다. 마포구 국회의원 김연규 집안의 후계이며 평산 신씨다. 경주 김씨 가운데 정부 쪽에는 의석을 물려받을 어른이 없어, 김연규는 자기보다 열일곱 살 많은 그를 다른 집안에서 들인 후계로 세웠다. 집안의 봉한 서신 가방은 언제나 그의 어깨에 걸려 있고, 그는 그 가방을 메고 마포 터널 검문소와 정부서울청사 사이를 걷는다. 세 번째 급수계약의 부속서 초안이 오갈 때마다 그는 봉인의 개수와 도장 자리를 직접 세어 의원에게 전한다.",
+    "관직": "직함 의원 집안 후계. 직위 의원 집안 후계 · 공덕역. 품계 후계. 일하는 역 공덕역."
+  },
+  "values": {
+    "권위": 50,
+    "개방": -20,
+    "무력": 10,
+    "물질": 55,
+    "공동": -10,
+    "원칙": -5,
+    "공개": 0,
+    "자격": 15,
+    "분산": -20,
+    "변혁": -10
+  },
+  "desire": {
+    "갈망": -10,
+    "독점": -20,
+    "위험": -30,
+    "과시": -5,
+    "지속": 15,
+    "지향": "동성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0198",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "신태산",
+        "type": "지휘",
+        "to": "김연규",
+        "basis": "마포구 국회의원 김연규의 직속"
+      },
+      {
+        "from": "신태산",
+        "type": "맹세",
+        "to": "김연규",
+        "basis": "김연규 의원 집안의 후계로 지명받으며 의원의 서신을 봉한 채 나르겠다고 선서했다."
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K1007",
+    "name": "김연규",
+    "courtId": "court:K1007",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 11,
-        "effective": 11
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "management": {
-        "base": 10,
-        "effective": 10
+      "stewardship": {
+        "base": 6,
+        "effective": 6
       },
-      "insight": {
-        "base": 10,
-        "effective": 10
+      "intrigue": {
+        "base": 6,
+        "effective": 6
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 5,
+        "effective": 5
       },
       "prowess": {
-        "base": 8,
-        "effective": 8
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
+        "base": 5,
+        "effective": 5
       }
     },
-    "skills": [
-      {
-        "id": "convoy-route-operation",
-        "name": {
-          "ko": "호송 경로 운영",
-          "en": "Convoy route operation"
-        },
-        "rating": 65
-      },
-      {
-        "id": "arrival-weight-check",
-        "name": {
-          "ko": "도착 중량 대조",
-          "en": "Arrival weight checking"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k197-disposition",
-        "name": {
-          "ko": "화물 개봉 불관용",
-          "en": "Intolerance of cargo opening"
-        },
-        "description": {
-          "ko": "과묵하고 신의가 강하다. 호송 중에 화물을 열어본 대원은 그날로 자경대에서 뺀다.",
-          "en": "Taciturn and strong of faith. A member who opened freight mid-convoy he struck from the vigilante squad that same day."
-        },
-        "behavior": {
-          "ko": "관직. 품계 교도. 직함은 호송 반장. 경로와 무장은 출발 직전에만 알리고, 도착 중량이 출발과 다르면 전 대원 배급을 깎는다.",
-          "en": "Office. Rank: lay instructor. Title: convoy squad leader. He announced routes and arms only just before departure, and when arrival tonnage differed from departure he shaved the whole squad's rations."
-        },
-        "stress": {
-          "ko": "공포. 호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.",
-          "en": "Fear. That a convoy train would carry munitions and the neutral market's legitimacy would fall in one day."
-        },
-        "relationship": {
-          "ko": "관계. 오해린과 호송 계약을 맺고 송이든의 환적 창에서 인계한다. 장세화의 공동호송 초안을 현장 기준으로 검토 중이다.",
-          "en": "Relations. Held a convoy contract with O Haerin and took over at Song I-deun's transshipment warehouse. Was reviewing Jang Sehwa's joint convoy draft against field standards."
-        },
-        "effects": []
-      },
-      {
-        "id": "k197-choice",
-        "name": {
-          "ko": "도착 손실 공동 책임",
-          "en": "Shared responsibility for arrival loss"
-        },
-        "description": {
-          "ko": "일화. 한 호송칸에서 암사제 봉인 상자가 나와 시장 자경대가 선단 출항을 막았다.",
-          "en": "Anecdote. A box with the Amsa seal came out of a convoy car, and the market vigilantes blocked the fleet's departure."
-        },
-        "behavior": {
-          "ko": "관계. 오해린과 호송 계약을 맺고 송이든의 환적 창에서 인계한다. 장세화의 공동호송 초안을 현장 기준으로 검토 중이다.",
-          "en": "Relations. Held a convoy contract with O Haerin and took over at Song I-deun's transshipment warehouse. Was reviewing Jang Sehwa's joint convoy draft against field standards."
-        },
-        "stress": {
-          "ko": "공포. 호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.",
-          "en": "Fear. That a convoy train would carry munitions and the neutral market's legitimacy would fall in one day."
-        },
-        "relationship": {
-          "ko": "관계. 오해린과 호송 계약을 맺고 송이든의 환적 창에서 인계한다. 장세화의 공동호송 초안을 현장 기준으로 검토 중이다.",
-          "en": "Relations. Held a convoy contract with O Haerin and took over at Song I-deun's transshipment warehouse. Was reviewing Jang Sehwa's joint convoy draft against field standards."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "경로 공개 시점을 제한하고 도착 중량을 확인하며 공동호송 초안을 검토한다. 봉인 상자를 발견해 해결했다거나 전투에 이겼다는 기록은 없다.",
-      "en": "Limits route disclosure, checks arrival weight and reviews joint-convoy drafts. Discovery and resolution of the sealed box or battle victory are not recorded."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -426,85 +158,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c2e0-d3c9-c0b0",
-    "name": "평산 신씨",
-    "crest": "clan-crests/c2e0-d3c9-c0b0.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 5,
-    "개방": 35,
-    "무력": -25,
-    "물질": 60,
-    "공동": -15,
-    "원칙": -25,
-    "공개": 25,
-    "자격": 0,
-    "분산": 30,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": -10,
-    "독점": -20,
-    "위험": -30,
-    "과시": -5,
-    "지속": 15,
-    "지향": "동성",
-    "결합": "다자"
-  },
-  "fields": {
-    "소속": "중앙정보부",
-    "품계": "교도",
-    "생업": "호송 경로·도착 중량 대조",
-    "직함": "호송 반장",
-    "가치관": "권위 5 | 개방 35 | 무력 −25 | 물질 60 | 공동 −15 | 원칙 −25 | 공개 25 | 자격 0 | 분산 30 | 변혁 10",
-    "욕망": "갈망 −10 | 독점 −20 | 위험 −30 | 과시 −5 | 지속 15 | 지향 동성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 반장 자리는 무표 출발 열차 저지로 열렸다.\n- 신태산은 노량진1동에서 호송 경로·도착 중량 대조 업무를 맡는다.\n- 신태산은 한강로동에서 호송 경로·도착 중량 대조 업무를 맡는다.",
-    "관직": "품계 교도. 직함은 호송 반장. 경로와 무장은 출발 직전에만 알리고, 도착 중량이 출발과 다르면 전 대원 배급을 깎는다.",
-    "일화": "한 호송칸에서 암사제 봉인 상자가 나와 시장 자경대가 선단 출항을 막았다.",
-    "관계": "오해린과 호송 계약을 맺고 송이든의 환적 창에서 인계한다. 장세화의 공동호송 초안을 현장 기준으로 검토 중이다.",
-    "야망": "노량진 호송선단을 공동호송의 실무 뼈대로 키워 강국의 보호비를 시장 자경으로 대체한다.",
-    "공포": "호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.",
-    "개입": "밀수 상자의 출처를 밝히거나, 호송을 강행해 노량진의 중립을 시험할 수 있다."
-  },
-  "biography": "과묵하고 신의가 강하다. 호송 중에 화물을 열어본 대원은 그날로 자경대에서 뺀다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 호송 경로·도착 중량 대조\n- 직함: 호송 반장\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 반장 자리는 무표 출발 열차 저지로 열렸다.\n- 신태산은 노량진1동에서 호송 경로·도착 중량 대조 업무를 맡는다.\n- 신태산은 한강로동에서 호송 경로·도착 중량 대조 업무를 맡는다.\n\n**관직.** 품계 교도. 직함은 호송 반장. 경로와 무장은 출발 직전에만 알리고, 도착 중량이 출발과 다르면 전 대원 배급을 깎는다.\n\n**일화.** 한 호송칸에서 암사제 봉인 상자가 나와 시장 자경대가 선단 출항을 막았다.\n\n**관계.** 오해린과 호송 계약을 맺고 송이든의 환적 창에서 인계한다. 장세화의 공동호송 초안을 현장 기준으로 검토 중이다.\n\n**야망.** 노량진 호송선단을 공동호송의 실무 뼈대로 키워 강국의 보호비를 시장 자경으로 대체한다.\n\n**공포.** 호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.\n\n**개입.** 밀수 상자의 출처를 밝히거나, 호송을 강행해 노량진의 중립을 시험할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 35 | 무력 −25 | 물질 60 | 공동 −15 | 원칙 −25 | 공개 25 | 자격 0 | 분산 30 | 변혁 10\n- 욕망: 갈망 −10 | 독점 −20 | 위험 −30 | 과시 −5 | 지속 15 | 지향 동성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-08"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "신태산",
-        "type": "계약",
-        "to": "오해린",
-        "basis": "상회 호송 계약을 현장에서 집행"
-      },
-      {
-        "from": "신태산",
-        "type": "계약",
-        "to": "루카스 슈나이더",
-        "basis": "환적 창에서 호송을 인계"
-      },
-      {
-        "from": "신태산",
-        "type": "계약",
-        "to": "장세화",
-        "basis": "공동호송 초안을 현장 기준으로 검토"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "루카스 슈나이더",
-        "type": "계약",
-        "to": "신태산",
-        "basis": "호송 도착 시각을 맞춤"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

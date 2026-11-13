@@ -1,385 +1,126 @@
 {
   "id": "person-0249",
   "name": "강태산",
-  "title": "산악 정찰 반장",
-  "position": "회랑 정찰 주지",
+  "title": "의원 집안 후계",
+  "position": "의원 집안 후계 · 망우역",
   "characterId": "K248",
-  "rank": "주지",
-  "commonTier": "T3",
-  "occupation": "회랑 정찰 보고·통행 확인",
+  "rank": "후계",
+  "commonTier": "T2",
+  "occupation": "구 행정",
   "gender": "여성",
   "stage": "S1",
-  "state": "S10",
-  "stateName": "안국총림",
-  "sourceRoute": "/world/Cast-State-10#인물-강태산",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0249",
   "birthDate": "2077-12-20",
   "birthday": "12-20",
   "age": 49,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-10.json#/content/72"
-  ],
-  "familyTree": {
-    "personId": "K248",
-    "nodes": [
-      {
-        "id": "K248",
-        "personId": "K248",
-        "kind": "person",
-        "name": "강태산",
-        "birthDate": "2077-12-20",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K248"
-          },
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-강태산-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 회랑 정찰 주지 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-강태산-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0249"
-      },
-      {
-        "id": "FH-K248-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현문",
-        "lineage": {
-          "surname": "강",
-          "bongwan": "진주",
-          "clan": "ac15-c9c4-c8fc"
-        },
-        "birthDate": "2047-12-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-강태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2085,
-            "summary": "강현문은 대합실 당직에서 회랑 정찰 보고·통행 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-강태산-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K248-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현섭",
-        "lineage": {
-          "surname": "강",
-          "bongwan": "진주",
-          "clan": "ac15-c9c4-c8fc"
-        },
-        "birthDate": "2017-12-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-강태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강현섭은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-강태산-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K248-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현재",
-        "birthDate": "2047-12-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-강태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2085,
-            "summary": "오현재는 대합실 당직에서 회랑 정찰 보고·통행 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-강태산-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K248-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "송현규",
-        "birthDate": "2017-12-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-강태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "송현규는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-강태산-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K248-P-01:K248:biological",
-        "from": "FH-K248-P-01",
-        "to": "K248",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-강태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K248-P-02:FH-K248-P-01:biological",
-        "from": "FH-K248-P-02",
-        "to": "FH-K248-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-강태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K248-M-01:K248:biological",
-        "from": "FH-K248-M-01",
-        "to": "K248",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-강태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K248-M-02:FH-K248-M-01:biological",
-        "from": "FH-K248-M-02",
-        "to": "FH-K248-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-강태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ac15-c9c4-c8fc",
+    "name": "진주 강씨",
+    "crest": "clan-crests/ac15-c9c4-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "망우역 의원 집안 칸의 후계 줄에 진주 강씨 강태산, 마흔아홉 살이 올라 있다. 오래 정부서울청사에서 물 배정 서류를 다루다가, 세대주 강예준 의원이 집안 후계로 지명하면서 중랑구로 내려왔다. 그녀는 아침마다 망우 매장지로 나가는 매장조의 썰매 수와 돌아온 사람 수를 집안 장부에 맞춰 적고, 열흘마다 그 장부를 의원에게 올린다. 청사에서 익힌 버릇대로 장부의 여백에는 그날 열고 닫은 출입구 이름을 연필로 적는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "의원 집안 후계",
+    "품계": "후계",
+    "생업": "구 행정",
+    "일하는 역": "망우역",
+    "잠자는 역": "망우역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "망우역 의원 집안 칸의 후계 줄에 진주 강씨 강태산, 마흔아홉 살이 올라 있다. 오래 정부서울청사에서 물 배정 서류를 다루다가, 세대주 강예준 의원이 집안 후계로 지명하면서 중랑구로 내려왔다. 그녀는 아침마다 망우 매장지로 나가는 매장조의 썰매 수와 돌아온 사람 수를 집안 장부에 맞춰 적고, 열흘마다 그 장부를 의원에게 올린다. 청사에서 익힌 버릇대로 장부의 여백에는 그날 열고 닫은 출입구 이름을 연필로 적는다.",
+    "관직": "직함 의원 집안 후계. 직위 의원 집안 후계 · 망우역. 품계 후계. 일하는 역 망우역."
+  },
+  "values": {
+    "권위": 5,
+    "개방": 5,
+    "무력": -5,
+    "물질": -25,
+    "공동": 60,
+    "원칙": 55,
+    "공개": 10,
+    "자격": 50,
+    "분산": 0,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": 25,
+    "독점": 15,
+    "위험": -10,
+    "과시": 20,
+    "지속": -10,
+    "지향": "유동",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0249",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "강태산",
+        "type": "지휘",
+        "to": "강예준",
+        "basis": "중랑구 국회의원 강예준의 직속"
+      },
+      {
+        "from": "강태산",
+        "type": "맹세",
+        "to": "강예준",
+        "basis": "집안 후계로 지명받으며 강예준 의원 앞에서 집안 장부를 지키기로 맹세했다"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K145",
+    "name": "강예준",
+    "courtId": "court:K145",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 9,
-        "effective": 9
-      },
-      "strategy": {
-        "base": 11,
-        "effective": 11
-      },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
-      "learning": {
-        "base": 9,
-        "effective": 9
-      },
-      "prowess": {
-        "base": 6,
-        "effective": 6
-      },
-      "endurance": {
+      "diplomacy": {
         "base": 10,
         "effective": 10
-      }
-    },
-    "skills": [
-      {
-        "id": "corridor-recon",
-        "name": {
-          "ko": "회랑 정찰",
-          "en": "Corridor reconnaissance"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "corridor-recon-disposition",
-        "name": {
-          "ko": "가족을 가르지 않음",
-          "en": "Refuses family separation"
-        },
-        "description": {
-          "ko": "효율을 이유로 가족을 갈라놓는 명령을 듣지 않는다.",
-          "en": "Rejects orders separating families for efficiency."
-        },
-        "behavior": {
-          "ko": "효율을 이유로 가족을 갈라놓는 명령을 듣지 않는다.",
-          "en": "Rejects orders separating families for efficiency."
-        },
-        "stress": {
-          "ko": "회랑이 군사 호송로가 될 것을 두려워한다.",
-          "en": "Fears the corridor becoming a military escort route."
-        },
-        "relationship": {
-          "ko": "백온의 지휘로 회랑을 지키며 배우진의 순찰대와 원한에 가깝다. 송하율의 북문 순찰과 횃불 신호를 맞춘다.",
-          "en": "Guards corridors under Baek On, opposes Bae Woojin’s patrol and coordinates torch signals with Song Hayul."
-        },
-        "effects": []
       },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "총회 먼저 보고",
-          "en": "Assembly report first"
-        },
-        "description": {
-          "ko": "무장 통과 전에 정찰을 총회에 보고하고 신도 표를 확인한다.",
-          "en": "Reports reconnaissance to assembly and checks member passes before armed transit."
-        },
-        "behavior": {
-          "ko": "무장 통과 전에 정찰을 총회에 보고하고 신도 표를 확인한다.",
-          "en": "Reports reconnaissance to assembly and checks member passes before armed transit."
-        },
-        "stress": {
-          "ko": "회랑이 군사 호송로로 바뀌어 피난 장부가 지도에서 지워지는 것.",
-          "en": "Fears the corridor becoming a military escort route."
-        },
-        "relationship": {
-          "ko": "백온의 지휘로 회랑을 지키며 배우진의 순찰대와 원한에 가깝다. 송하율의 북문 순찰과 횃불 신호를 맞춘다.",
-          "en": "Guards corridors under Baek On, opposes Bae Woojin’s patrol and coordinates torch signals with Song Hayul."
-        },
-        "effects": []
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 9,
+        "effective": 9
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "정찰 보고를 총회에 먼저 올리고 신도 표 없는 무장 통과를 막는다. 지형 기억은 회랑 보호에 쓰이며 가족 분리 명령을 거부한다.",
-      "en": "Reports reconnaissance to the assembly first and requires member passes for armed transit. Terrain memory serves corridor protection and refusal of family separation."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,103 +158,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ac15-c9c4-c8fc",
-    "name": "진주 강씨",
-    "crest": "clan-crests/ac15-c9c4-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -40,
-    "개방": 60,
-    "무력": -40,
-    "물질": -20,
-    "공동": 55,
-    "원칙": 35,
-    "공개": 35,
-    "자격": 35,
-    "분산": 50,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 25,
-    "독점": 15,
-    "위험": -10,
-    "과시": 20,
-    "지속": -10,
-    "지향": "유동",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "회랑 정찰 보고·통행 확인",
-    "소속": "안국총림",
-    "품계": "주지",
-    "직함": "회랑 정찰 주지",
-    "가치관": "권위 −40 | 개방 60 | 무력 −40 | 물질 −20 | 공동 55 | 원칙 35 | 공개 35 | 자격 35 | 분산 50 | 변혁 5",
-    "욕망": "갈망 25 | 독점 15 | 위험 −10 | 과시 20 | 지속 −10 | 지향 유동 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2077-12-20 출생, 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 회랑 정찰 주지 당직 기록에는 교대 무단 결근 뒤 대체 당직을 맡은 일이 남아 있다.\n- 강태산의 회랑 정찰 보고·통행 확인 업무 기준점으로 평창동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n- 강태산의 회랑 정찰 보고·통행 확인 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
-    "관직": "품계 주지. 직함은 회랑 정찰 주지. 정찰 보고를 산중총회에 먼저 올리고, 무장 통과는 신도 명부 주지의 표가 있어야 연다.",
-    "일화": "암사 순찰대가 급수 철표를 들고 회랑 입구까지 올라와 가족 숙영을 인원 조사하겠다고 통보했다.",
-    "관계": "백온의 지휘로 회랑을 지키며 배우진의 순찰대와 원한에 가깝다. 송하율의 북문 순찰과 횃불 신호를 맞춘다.",
-    "야망": "북한산·탕춘대 회랑을 독립 통행로로 남겨 암사 순찰이 숙영지까지 올라오지 못하게 한다.",
-    "공포": "회랑이 군사 호송로로 바뀌어 피난 장부가 지도에서 지워지는 것.",
-    "개입": "회랑을 하루 닫거나, 순찰대와 정찰대의 충돌을 증언으로 기록할 수 있다."
-  },
-  "biography": "과묵하고 지형을 사람 얼굴처럼 기억한다. 가족을 갈라놓는 명령을 거부한다.\n\n- 생업: 회랑 정찰 보고·통행 확인\n- 소속: 안국총림\n- 품계: 주지\n- 직함: 회랑 정찰 주지\n**생애.** 2077-12-20 출생, 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 회랑 정찰 주지 당직 기록에는 교대 무단 결근 뒤 대체 당직을 맡은 일이 남아 있다.\n- 강태산의 회랑 정찰 보고·통행 확인 업무 기준점으로 평창동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n- 강태산의 회랑 정찰 보고·통행 확인 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n**관직.** 품계 주지. 직함은 회랑 정찰 주지. 정찰 보고를 산중총회에 먼저 올리고, 무장 통과는 신도 명부 주지의 표가 있어야 연다.\n\n**일화.** 암사 순찰대가 급수 철표를 들고 회랑 입구까지 올라와 가족 숙영을 인원 조사하겠다고 통보했다.\n\n**관계.** 백온의 지휘로 회랑을 지키며 배우진의 순찰대와 원한에 가깝다. 송하율의 북문 순찰과 횃불 신호를 맞춘다.\n\n**야망.** 북한산·탕춘대 회랑을 독립 통행로로 남겨 암사 순찰이 숙영지까지 올라오지 못하게 한다.\n\n**공포.** 회랑이 군사 호송로로 바뀌어 피난 장부가 지도에서 지워지는 것.\n\n**개입.** 회랑을 하루 닫거나, 순찰대와 정찰대의 충돌을 증언으로 기록할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −40 | 개방 60 | 무력 −40 | 물질 −20 | 공동 55 | 원칙 35 | 공개 35 | 자격 35 | 분산 50 | 변혁 5\n- 욕망: 갈망 25 | 독점 15 | 위험 −10 | 과시 20 | 지속 −10 | 지향 유동 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-10"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "강태산",
-        "type": "지휘",
-        "to": "백온",
-        "basis": "회랑 정찰을 방장 지휘로 지킴"
-      },
-      {
-        "from": "강태산",
-        "type": "원한",
-        "to": "배우진",
-        "basis": "암사 순찰대와 회랑을 둘러싼 원한"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "권도하",
-        "type": "계약",
-        "to": "강태산",
-        "basis": "회랑 신호를 공유"
-      },
-      {
-        "from": "모봉",
-        "type": "계약",
-        "to": "강태산",
-        "basis": "강태산의 정찰 보고를 운송 시각에 맞추고"
-      },
-      {
-        "from": "용국",
-        "type": "지휘",
-        "to": "강태산",
-        "basis": "강태산의 지휘로 회랑을 돌고"
-      },
-      {
-        "from": "복모",
-        "type": "계약",
-        "to": "강태산",
-        "basis": "강태산에게 우회로를 보고하고"
-      },
-      {
-        "from": "용모",
-        "type": "계약",
-        "to": "강태산",
-        "basis": "강태산과 회랑 횃불을 맞춘다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

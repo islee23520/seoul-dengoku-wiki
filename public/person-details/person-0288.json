@@ -1,397 +1,133 @@
 {
   "id": "person-0288",
   "name": "봉국",
-  "title": "철재 회수장 거점장, 황노을의 실무 담당자",
-  "position": "성하전자 철재 회수장 거점장, 황노을의 실무 담당자",
+  "title": "역삼역 정비장",
+  "position": "역삼역 정비장 · 아크",
   "characterId": "K287",
-  "rank": "상무",
-  "commonTier": "T3",
-  "occupation": "철재 회수 중량 공개·출고 확인",
+  "rank": "정비장",
+  "commonTier": "T4",
+  "occupation": "정비대 통솔",
   "gender": "여성",
   "stage": "S2",
-  "state": "S11",
-  "stateName": "성하그룹",
-  "sourceRoute": "/world/Cast-State-11#인물-봉국",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0288",
   "birthDate": "2080-12-26",
   "birthday": "12-26",
   "age": 46,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-11.json#/content/6"
-  ],
-  "familyTree": {
-    "personId": "K287",
-    "nodes": [
-      {
-        "id": "K287",
-        "personId": "K287",
-        "kind": "person",
-        "name": "봉국",
-        "birthDate": "2080-12-26",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K287"
-          },
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-봉국-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 성하전자 철재 회수장 거점장, 황노을의 실무 담당자 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-봉국-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0288"
-      },
-      {
-        "id": "FH-K287-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "봉승은",
-        "lineage": {
-          "surname": "봉",
-          "bongwan": "하음",
-          "clan": "bd09-d558-c74c"
-        },
-        "birthDate": "2050-12-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-봉국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2088,
-            "summary": "봉승은은 대합실 당직에서 철재 회수 중량 공개·출고 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-봉국-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K287-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "봉승연",
-        "lineage": {
-          "surname": "봉",
-          "bongwan": "하음",
-          "clan": "bd09-d558-c74c"
-        },
-        "birthDate": "2020-12-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-봉국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "봉승연은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-봉국-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K287-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김현미",
-        "birthDate": "2050-12-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-봉국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2088,
-            "summary": "김현미는 대합실 당직에서 철재 회수 중량 공개·출고 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-봉국-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K287-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준호",
-        "birthDate": "2020-12-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-봉국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박준호는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-봉국-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K287-P-01:K287:biological",
-        "from": "FH-K287-P-01",
-        "to": "K287",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-봉국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K287-P-02:FH-K287-P-01:biological",
-        "from": "FH-K287-P-02",
-        "to": "FH-K287-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-봉국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K287-M-01:K287:biological",
-        "from": "FH-K287-M-01",
-        "to": "K287",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-봉국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K287-M-02:FH-K287-M-01:biological",
-        "from": "FH-K287-M-02",
-        "to": "FH-K287-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-봉국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bd09-d558-c74c",
+    "name": "하음 봉씨",
+    "crest": "clan-crests/bd09-d558-c74c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "역삼역 정비대 앞 줄을 봉국은 서열이 아니라 앓는 정도로 세운다. 맞춤 날이 겹쳐 줄이 승강장 끝까지 늘어나면, 첫 교대 부르기 끝에 그 순서를 소리 내어 부르는 것으로 역삼역 정비장의 하루를 시작한다. 셋째 부위는 고물 더미에서 끊어진 전선을 가려내다 다친 자리에 들었고, 그 뒤로 마흔여섯이 된 지금까지 그는 맨손으로 전선을 가리지 않는다. 역삼에는 대피소장이 없어, 정비대 몫은 강남 곁집장 오경재에게서 바로 내려온다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "역삼역 정비장",
+    "품계": "정비장",
+    "생업": "정비대 통솔",
+    "일하는 역": "역삼역",
+    "잠자는 역": "역삼역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 3
+  },
+  "sections": {
+    "생애": "역삼역 정비대 앞 줄을 봉국은 서열이 아니라 앓는 정도로 세운다. 맞춤 날이 겹쳐 줄이 승강장 끝까지 늘어나면, 첫 교대 부르기 끝에 그 순서를 소리 내어 부르는 것으로 역삼역 정비장의 하루를 시작한다. 셋째 부위는 고물 더미에서 끊어진 전선을 가려내다 다친 자리에 들었고, 그 뒤로 마흔여섯이 된 지금까지 그는 맨손으로 전선을 가리지 않는다. 역삼에는 대피소장이 없어, 정비대 몫은 강남 곁집장 오경재에게서 바로 내려온다.",
+    "관직": "직함 역삼역 정비장. 직위 역삼역 정비장 · 아크. 품계 정비장. 일하는 역 역삼역."
+  },
+  "values": {
+    "권위": 40,
+    "개방": -25,
+    "무력": 5,
+    "물질": -15,
+    "공동": 50,
+    "원칙": 5,
+    "공개": -45,
+    "자격": 25,
+    "분산": -25,
+    "변혁": 30
+  },
+  "desire": {
+    "갈망": -5,
+    "독점": 10,
+    "위험": 30,
+    "과시": -5,
+    "지속": 30,
+    "지향": "이성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0288",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "봉국",
+        "type": "지휘",
+        "to": "오경재",
+        "basis": "강남 곁집장 오경재의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K423",
+    "name": "오경재",
+    "courtId": "court:K423",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
+      },
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
         "base": 7,
         "effective": 7
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k287-lot-reconciliation",
-        "name": {
-          "ko": "로트 대조",
-          "en": "Lot reconciliation"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k287-priority",
-        "name": {
-          "ko": "중량의 공정성",
-          "en": "Fair weights"
-        },
-        "description": {
-          "ko": "봉국은 모소의 송장과 회수 로트를 맞추며 시험 철재를 지킨다. 은닉에 대한 가혹함도 남는다.",
-          "en": "Bongguk reconciles recovered lots with Moso’s invoices and reserves trial metal, but remains harsh toward concealment."
-        },
-        "behavior": {
-          "ko": "회수 중량을 공개 저울에 올리고, 이씨 가문 전용 칸으로 들어간 철재는 회장실 인준 전 출고를 막는다.",
-          "en": "Office. Rank: section chief. Title: steel salvage yard outpost chief, duty officer of Hwang Noeul. He put salvage tonnage on the public scales and blocked the release of any steel that had entered a house-only column before the seniority council's ratification."
-        },
-        "stress": {
-          "ko": "결함 로트가 회수장에서 군수 칸으로 빠져 민생 열차가 멈추는 것.",
-          "en": "Fear. That a defective lot would leave the salvage yard into a munitions column and the civil trains would stop."
-        },
-        "relationship": {
-          "ko": "황노을의 지휘로 저울을 지키고, 모소의 물류 송장과 로트를 맞춘다. 조우찬의 시험 차륜에 쓸 철재를 우선 칸에 둔다.",
-          "en": "Relations. Kept the scales under Hwang Noeul's command and matched the lots with Mo So's freight invoices. Put the steel for Jo Woochan's trial wheels in the priority column."
-        },
-        "effects": []
-      },
-      {
-        "id": "k287-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 상무. 직함은 성하전자 철재 회수장 거점장, 황노을의 실무 담당자. 회수 중량을 공개 저울에 올리고, 이씨 가문 전용 칸으로 들어간 철재는 회장실 인준 전 출고를 막는다.",
-          "en": "Office. Rank: section chief. Title: steel salvage yard outpost chief, duty officer of Hwang Noeul. He put salvage tonnage on the public scales and blocked the release of any steel that had entered a house-only column before the seniority council's ratification."
-        },
-        "stress": {
-          "ko": "공포. 결함 로트가 회수장에서 군수 칸으로 빠져 민생 열차가 멈추는 것.",
-          "en": "Fear. That a defective lot would leave the salvage yard into a munitions column and the civil trains would stop."
-        },
-        "relationship": {
-          "ko": "관계. 황노을의 지휘로 저울을 지키고, 모소의 물류 송장과 로트를 맞춘다. 조우찬의 시험 차륜에 쓸 철재를 우선 칸에 둔다.",
-          "en": "Relations. Kept the scales under Hwang Noeul's command and matched the lots with Mo So's freight invoices. Put the steel for Jo Woochan's trial wheels in the priority column."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "봉국은 모소의 송장과 회수 로트를 맞추며 시험 철재를 지킨다. 은닉에 대한 가혹함도 남는다.",
-      "en": "Bongguk reconciles recovered lots with Moso’s invoices and reserves trial metal, but remains harsh toward concealment."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -401,7 +137,7 @@
         {
           "id": "right-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "head",
@@ -419,183 +155,27 @@
   },
   "confirmedHoldings": [
     {
-      "id": "holding:opening-duchy-gu-11320-S11",
+      "id": "holding:v3:station:역삼",
       "name": {
-        "ko": "도봉구 공작령 직영지"
+        "ko": "역삼역"
       },
       "holderPersonId": "K287",
-      "directLiegePersonId": "K144",
-      "stateId": "S11",
+      "directLiegePersonId": "K423",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "역삼",
+        "stationName": "역삼"
+      },
       "adminRefs": [
         {
-          "id": "region:1132051100",
-          "name": "창1동"
-        },
-        {
-          "id": "region:1132051200",
-          "name": "창2동"
-        },
-        {
-          "id": "region:1132051300",
-          "name": "창3동"
-        },
-        {
-          "id": "region:1132051400",
-          "name": "창4동"
-        },
-        {
-          "id": "region:1132051500",
-          "name": "창5동"
-        },
-        {
-          "id": "region:1132052100",
-          "name": "도봉1동"
-        },
-        {
-          "id": "region:1132052200",
-          "name": "도봉2동"
-        },
-        {
-          "id": "region:1132066000",
-          "name": "쌍문1동"
-        },
-        {
-          "id": "region:1132067000",
-          "name": "쌍문2동"
-        },
-        {
-          "id": "region:1132068000",
-          "name": "쌍문3동"
-        },
-        {
-          "id": "region:1132068100",
-          "name": "쌍문4동"
-        },
-        {
-          "id": "region:1132069000",
-          "name": "방학1동"
-        },
-        {
-          "id": "region:1132070000",
-          "name": "방학2동"
-        },
-        {
-          "id": "region:1132071000",
-          "name": "방학3동"
+          "id": "region:1168064000",
+          "name": "역삼1동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11320-S11",
+      "territorialScale": "station",
+      "titleId": null,
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
+      "formalTitleRank": null
     }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
-    {
-      "id": "title:duchy-gu-11320-S11",
-      "name": "도봉구 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K287",
-      "basis": "개막 행정 규모 그룹 gu:11320(duchy) 배분 · 결정적 후보 선정",
-      "stateId": "S11",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "region:1132051100",
-        "region:1132051200",
-        "region:1132051300",
-        "region:1132051400",
-        "region:1132051500",
-        "region:1132052100",
-        "region:1132052200",
-        "region:1132066000",
-        "region:1132067000",
-        "region:1132068000",
-        "region:1132068100",
-        "region:1132069000",
-        "region:1132070000",
-        "region:1132071000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
-    }
-  ],
-  "clan": {
-    "id": "bd09-d558-c74c",
-    "name": "하음 봉씨",
-    "crest": "clan-crests/bd09-d558-c74c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": -10,
-    "무력": -5,
-    "물질": 35,
-    "공동": 30,
-    "원칙": 15,
-    "공개": 0,
-    "자격": 60,
-    "분산": 5,
-    "변혁": -15
-  },
-  "desire": {
-    "갈망": -5,
-    "독점": 10,
-    "위험": 30,
-    "과시": -5,
-    "지속": 30,
-    "지향": "이성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "철재 회수 중량 공개·출고 확인",
-    "소속": "성하그룹",
-    "품계": "상무",
-    "직함": "성하전자 철재 회수장 거점장, 황노을의 실무 담당자",
-    "가치관": "권위 15 | 개방 −10 | 무력 −5 | 물질 35 | 공동 30 | 원칙 15 | 공개 0 | 자격 60 | 분산 5 | 변혁 −15",
-    "욕망": "갈망 −5 | 독점 10 | 위험 30 | 과시 −5 | 지속 30 | 지향 이성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "대합실 당직에서 자랐다. 성하전자 철재 회수장 거점장, 황노을의 실무 담당자 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 봉국은 역삼1동에서 철재 회수 중량 공개·출고 확인 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 황노을의 지휘로 저울을 지키고, 모소의 물류 송장과 로트를 맞춘다. 조우찬의 시험 차륜에 쓸 철재를 우선 칸에 둔다",
-    "관직": "품계 상무. 직함은 성하전자 철재 회수장 거점장, 황노을의 실무 담당자. 회수 중량을 공개 저울에 올리고, 이씨 가문 전용 칸으로 들어간 철재는 회장실 인준 전 출고를 막는다.",
-    "일화": "결함 베어링과 같은 로트의 철재가 용산 창고 쪽으로 빠졌다는 중량 기록이 회수장에서 나왔다.",
-    "관계": "황노을의 지휘로 저울을 지키고, 모소의 물류 송장과 로트를 맞춘다. 조우찬의 시험 차륜에 쓸 철재를 우선 칸에 둔다.",
-    "야망": "회수장을 성하전자 표준 재고의 입구로 남겨 이씨 가문 전용 칸이 시험 철재를 볼모로 잡지 못하게 한다.",
-    "공포": "결함 로트가 회수장에서 군수 칸으로 빠져 민생 열차가 멈추는 것.",
-    "개입": "철재 로트를 회수하거나, 가문 쪽 출고를 거점 칠판에서 정지시킬 수 있다."
-  },
-  "biography": "실리적이나 고철을 숨기는 사람을 가혹하게 다룬다. 저울을 속이는 일을 선로를 깎는 일과 같다고 본다.\n\n- 생업: 철재 회수 중량 공개·출고 확인\n- 소속: 성하그룹\n- 품계: 상무\n- 직함: 성하전자 철재 회수장 거점장, 황노을의 실무 담당자\n**생애.** 대합실 당직에서 자랐다. 성하전자 철재 회수장 거점장, 황노을의 실무 담당자 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 봉국은 역삼1동에서 철재 회수 중량 공개·출고 확인 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 황노을의 지휘로 저울을 지키고, 모소의 물류 송장과 로트를 맞춘다. 조우찬의 시험 차륜에 쓸 철재를 우선 칸에 둔다\n\n**관직.** 품계 상무. 직함은 성하전자 철재 회수장 거점장, 황노을의 실무 담당자. 회수 중량을 공개 저울에 올리고, 이씨 가문 전용 칸으로 들어간 철재는 회장실 인준 전 출고를 막는다.\n\n**일화.** 결함 베어링과 같은 로트의 철재가 용산 창고 쪽으로 빠졌다는 중량 기록이 회수장에서 나왔다.\n\n**관계.** 황노을의 지휘로 저울을 지키고, 모소의 물류 송장과 로트를 맞춘다. 조우찬의 시험 차륜에 쓸 철재를 우선 칸에 둔다.\n\n**야망.** 회수장을 성하전자 표준 재고의 입구로 남겨 이씨 가문 전용 칸이 시험 철재를 볼모로 잡지 못하게 한다.\n\n**공포.** 결함 로트가 회수장에서 군수 칸으로 빠져 민생 열차가 멈추는 것.\n\n**개입.** 철재 로트를 회수하거나, 가문 쪽 출고를 거점 칠판에서 정지시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −10 | 무력 −5 | 물질 35 | 공동 30 | 원칙 15 | 공개 0 | 자격 60 | 분산 5 | 변혁 −15\n- 욕망: 갈망 −5 | 독점 10 | 위험 30 | 과시 −5 | 지속 30 | 지향 이성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-11"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "봉국",
-        "type": "지휘",
-        "to": "황노을",
-        "basis": "황노을의 지휘로 저울을 지키고"
-      },
-      {
-        "from": "봉국",
-        "type": "계약",
-        "to": "모소",
-        "basis": "모소의 물류 송장과 로트를 맞춘다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "모소",
-        "type": "계약",
-        "to": "봉국",
-        "basis": "봉국의 회수장에서 로트를 인수한다"
-      }
-    ]
-  }
+  ]
 }

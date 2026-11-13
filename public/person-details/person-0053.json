@@ -1,501 +1,120 @@
 {
   "id": "person-0053",
   "name": "류겨레",
-  "title": "난민 수용 전령",
-  "position": "난민 수용 전령",
+  "title": "가산디지털단지역 역반장",
+  "position": "가산디지털단지역 역반장 · 자유도시들",
   "characterId": "K053",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "수용 문서 전달",
+  "rank": "역반장",
+  "commonTier": "T4",
+  "occupation": "역반 운영",
   "gender": "여성",
   "stage": "S3",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-류겨레",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0053",
   "birthDate": "2099-03-16",
   "birthday": "03-16",
   "age": 27,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/258",
-    "lore/characters/Cast-State-02.json#/content/260"
-  ],
-  "familyTree": {
-    "personId": "K053",
-    "nodes": [
-      {
-        "id": "K053",
-        "personId": "K053",
-        "kind": "person",
-        "name": "류겨레",
-        "birthDate": "2099-03-16",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K053"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류겨레-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 난민 수용 전령 자리는 무표 출발 열차 저지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-류겨레-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0053"
-      },
-      {
-        "id": "FH-K053-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "류승민",
-        "lineage": {
-          "surname": "류",
-          "bongwan": "문화",
-          "clan": "b958-bb38-d654-67f3"
-        },
-        "birthDate": "2069-03-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2107,
-            "summary": "류승민은 신내 환승 당직에서 수용 문서 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-류겨레-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K053-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "류승원",
-        "lineage": {
-          "surname": "류",
-          "bongwan": "문화",
-          "clan": "b958-bb38-d654-67f3"
-        },
-        "birthDate": "2039-03-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "류승원은 신내 환승 당직에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-류겨레-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K053-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "류승진",
-        "lineage": {
-          "surname": "류",
-          "bongwan": "문화",
-          "clan": "b958-bb38-d654-67f3"
-        },
-        "birthDate": "2009-03-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "류승진은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-류겨레-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K053-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한승아",
-        "birthDate": "2069-03-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2107,
-            "summary": "한승아는 신내 환승 당직에서 수용 문서 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-류겨레-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K053-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강승은",
-        "birthDate": "2039-03-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "강승은은 신내 환승 당직에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-류겨레-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K053-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승희",
-        "birthDate": "2009-03-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임승희는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-류겨레-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K053-P-01:K053:biological",
-        "from": "FH-K053-P-01",
-        "to": "K053",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K053-P-02:FH-K053-P-01:biological",
-        "from": "FH-K053-P-02",
-        "to": "FH-K053-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K053-P-03:FH-K053-P-02:biological",
-        "from": "FH-K053-P-03",
-        "to": "FH-K053-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K053-M-01:K053:biological",
-        "from": "FH-K053-M-01",
-        "to": "K053",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K053-M-02:FH-K053-M-01:biological",
-        "from": "FH-K053-M-02",
-        "to": "FH-K053-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K053-M-03:FH-K053-M-02:biological",
-        "from": "FH-K053-M-03",
-        "to": "FH-K053-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b958-bb38-d654-67f3",
+    "name": "문화 류씨",
+    "crest": "clan-crests/b958-bb38-d654-67f3.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "경계조가 테두리를 넘었다 돌아오면 가장 먼저 닿는 곳이 금천의 자리 역인 가산디지털단지이고, 경계장 이강묵도 이 역에서 일한다. 돌아온 사람이 들고 온 동력 덩이는 역 안에 들기 전에 류겨레의 저울에 먼저 오르고, 그는 그 몫을 셈판에 적는다. 스물일곱 해를 사는 동안 그가 가장 오래 손에 쥔 물건이 그 저울이고, 날마다 같은 쇠추로 저울을 맞춰 본 다음에야 그는 출입구를 연다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "가산디지털단지역 역반장",
+    "품계": "역반장",
+    "생업": "역반 운영",
+    "일하는 역": "가산디지털단지역",
+    "잠자는 역": "가산디지털단지역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "경계조가 테두리를 넘었다 돌아오면 가장 먼저 닿는 곳이 금천의 자리 역인 가산디지털단지이고, 경계장 이강묵도 이 역에서 일한다. 돌아온 사람이 들고 온 동력 덩이는 역 안에 들기 전에 류겨레의 저울에 먼저 오르고, 그는 그 몫을 셈판에 적는다. 스물일곱 해를 사는 동안 그가 가장 오래 손에 쥔 물건이 그 저울이고, 날마다 같은 쇠추로 저울을 맞춰 본 다음에야 그는 출입구를 연다.",
+    "관직": "직함 가산디지털단지역 역반장. 직위 가산디지털단지역 역반장 · 자유도시들. 품계 역반장. 일하는 역 가산디지털단지역."
+  },
+  "values": {
+    "권위": -85,
+    "개방": 50,
+    "무력": -25,
+    "물질": 50,
+    "공동": 35,
+    "원칙": 10,
+    "공개": 35,
+    "자격": 65,
+    "분산": 65,
+    "변혁": 20
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": 10,
+    "위험": -30,
+    "과시": -15,
+    "지속": 40,
+    "지향": "이성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0053",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "류겨레",
+        "type": "지휘",
+        "to": "진우람",
+        "basis": "가산 구간장 진우람의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K040",
+    "name": "진우람",
+    "courtId": "court:K040",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "management": {
-        "base": 9,
-        "effective": 9
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 11,
-        "effective": 11
       }
     },
-    "skills": [
-      {
-        "id": "k053-refugee-message",
-        "name": {
-          "ko": "난민 수용 전갈",
-          "en": "Refugee admission messages"
-        },
-        "rating": 60
-      },
-      {
-        "id": "k053-register-salvage",
-        "name": {
-          "ko": "습격 장부 회수",
-          "en": "Attack register salvage"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "k053-children-before-cargo",
-        "name": {
-          "ko": "부품보다 아이 배급",
-          "en": "Children’s rations before parts"
-        },
-        "description": {
-          "ko": "수용을 부품 대금과 바꾸자는 제안을 거절한다.",
-          "en": "Rejects exchanging admissions for parts payments."
-        },
-        "behavior": {
-          "ko": "수용을 부품 대금과 바꾸자는 제안을 거절한다.",
-          "en": "Rejects exchanging admissions for parts payments."
-        },
-        "stress": {
-          "ko": "행렬이 금천 차단문에 막힌 채 얼고, 그 죽음이 자체 원수 부족을 가리는 통계가 되는 것.",
-          "en": "That the column would freeze against the Geumcheon barrier gates, and those deaths would become statistics hiding the raw-water shortage."
-        },
-        "relationship": {
-          "ko": "한지온의 원수·식량 배분을 행렬에 연결하고, 백온의 남하를 금천 쪽에서 맞으며, 강민서의 시민권 연대를 전령로로 실어 나른다.",
-          "en": "Linking Han Jion's raw-water and food distribution to the column, meeting Baek On's southward movement from the Geumcheon side, and carrying Gang Minseo's citizenship solidarity over the courier route."
-        },
-        "effects": []
-      },
-      {
-        "id": "k053-joint-admission",
-        "name": {
-          "ko": "공동 수용 쪽지",
-          "en": "Joint admission notes"
-        },
-        "description": {
-          "ko": "경비대 단독 통행증을 가방에 넣지 않는다.",
-          "en": "Does not carry guard-only passes."
-        },
-        "behavior": {
-          "ko": "경비대 단독 통행증을 가방에 넣지 않는다.",
-          "en": "Does not carry guard-only passes."
-        },
-        "stress": {
-          "ko": "행렬이 금천 차단문에 막힌 채 얼고, 그 죽음이 자체 원수 부족을 가리는 통계가 되는 것.",
-          "en": "That the column would freeze against the Geumcheon barrier gates, and those deaths would become statistics hiding the raw-water shortage."
-        },
-        "relationship": {
-          "ko": "한지온의 원수·식량 배분을 행렬에 연결하고, 백온의 남하를 금천 쪽에서 맞으며, 강민서의 시민권 연대를 전령로로 실어 나른다.",
-          "en": "Linking Han Jion's raw-water and food distribution to the column, meeting Baek On's southward movement from the Geumcheon side, and carrying Gang Minseo's citizenship solidarity over the courier route."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "공동 수용 쪽지와 행렬 연결, 습격 중 장부 보호를 발급했다. 피난민 전체의 수용 성공이나 무장 호위 승리는 확인되지 않았다.",
-      "en": "Issues joint admission notices, convoy connections, and record protection during attack. Complete refugee admission success and armed escort victories are unconfirmed."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -533,90 +152,29 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
+  "confirmedHoldings": [
     {
-      "id": "title:duchy-44710-S02",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
+      "id": "holding:v3:station:가산디지털단지",
+      "name": {
+        "ko": "가산디지털단지역"
+      },
       "holderPersonId": "K053",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:kingdom-s02",
-      "personalLieges": [
+      "directLiegePersonId": "K040",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "가산디지털단지",
+        "stationName": "가산디지털단지"
+      },
+      "adminRefs": [
         {
-          "holdingId": "holding:opening-duchy-44710-S02",
-          "directLiegePersonId": "K029"
+          "id": "region:1154551000",
+          "name": "가산동"
         }
       ],
-      "directOwnership": false
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
     }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b958-bb38-d654-67f3",
-    "name": "문화 류씨",
-    "crest": "clan-crests/b958-bb38-d654-67f3.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -50,
-    "개방": 35,
-    "무력": -15,
-    "물질": 35,
-    "공동": 60,
-    "원칙": 20,
-    "공개": 35,
-    "자격": 45,
-    "분산": 10,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": 10,
-    "위험": -30,
-    "과시": -15,
-    "지속": 40,
-    "지향": "이성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "소속": "규격맹",
-    "생업": "수용 문서 전달",
-    "품계": "조합원",
-    "직함": "난민 수용 전령",
-    "업무 위치": "독산1동. 류겨레는 독산1동 겨울 수용 창구에서 백온의 행렬 이름과 한지온의 원수·식량 배분표를 대조한다. 시민대표와 노동조합이 함께 적은 수용 쪽지를 받아 강민서의 시민권 서명 당직으로 전달한다.",
-    "가치관": "권위 −50 | 개방 35 | 무력 −15 | 물질 35 | 공동 60 | 원칙 20 | 공개 35 | 자격 45 | 분산 10 | 변혁 10",
-    "욕망": "갈망 45 | 독점 10 | 위험 −30 | 과시 −15 | 지속 40 | 지향 이성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 난민 수용 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 독산1동. 류겨레는 독산1동 겨울 수용 창구에서 백온의 행렬 이름과 한지온의 원수·식량 배분표를 대조한다. 시민대표와 노동조합이 함께 적은 수용 쪽지를 받아 강민서의 시민권 서명 당직으로 전달한다.",
-    "관직": "품계 조합원. 직함은 난민 수용 전령. 수용 쪽지는 시민대표와 노동조합이 함께 찍어야 유효하고, 경비대 단독 통행증은 전령 가방에 넣지 않는다.",
-    "일화": "2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 난민 수용 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "한지온의 원수·식량 배분을 행렬에 연결하고, 백온의 서울 안 수용 행렬을 금천 쪽에서 맞으며, 강민서의 시민권 연대를 전령로로 실어 나른다.",
-    "야망": "북부 난민의 하룻밤 숙영과 아침 급수를 조합 추첨으로 열어, 규격맹이 암사의 복무 재등록 창구가 되지 않게 한다.",
-    "공포": "행렬이 금천 차단문에 막힌 채 얼고, 그 죽음이 자체 원수 부족을 가리는 통계가 되는 것.",
-    "개입": "하룻밤 식량과 급수통을 구해 그의 숙영을 열거나, 전령 쪽지를 복무 등록서로 바꾼 자를 밝혀 경로를 끊을 수 있다."
-  },
-  "biography": "서울 안 수용 행렬의 발자국 수보다 아이 배급통을 먼저 세고, 수용을 부품 대금과 바꾸자는 제안을 모욕으로 듣는다. 경로는 짧게, 거절은 분명하게 전한다.\n\n- 소속: 규격맹\n- 생업: 수용 문서 전달\n- 품계: 조합원\n- 직함: 난민 수용 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 난민 수용 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 독산1동. 류겨레는 독산1동 겨울 수용 창구에서 백온의 행렬 이름과 한지온의 원수·식량 배분표를 대조한다. 시민대표와 노동조합이 함께 적은 수용 쪽지를 받아 강민서의 시민권 서명 당직으로 전달한다.\n\n**관직.** 품계 조합원. 직함은 난민 수용 전령. 수용 쪽지는 시민대표와 노동조합이 함께 찍어야 유효하고, 경비대 단독 통행증은 전령 가방에 넣지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 난민 수용 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 한지온의 원수·식량 배분을 행렬에 연결하고, 백온의 서울 안 수용 행렬을 금천 쪽에서 맞으며, 강민서의 시민권 연대를 전령로로 실어 나른다.\n\n**야망.** 북부 난민의 하룻밤 숙영과 아침 급수를 조합 추첨으로 열어, 규격맹이 암사의 복무 재등록 창구가 되지 않게 한다.\n\n**공포.** 행렬이 금천 차단문에 막힌 채 얼고, 그 죽음이 자체 원수 부족을 가리는 통계가 되는 것.\n\n**개입.** 하룻밤 식량과 급수통을 구해 그의 숙영을 열거나, 전령 쪽지를 복무 등록서로 바꾼 자를 밝혀 경로를 끊을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −50 | 개방 35 | 무력 −15 | 물질 35 | 공동 60 | 원칙 20 | 공개 35 | 자격 45 | 분산 10 | 변혁 10\n- 욕망: 갈망 45 | 독점 10 | 위험 −30 | 과시 −15 | 지속 40 | 지향 이성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-02"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "류겨레",
-        "type": "계약",
-        "to": "한지온",
-        "basis": "한지온의 원수·식량 배분을 행렬에 연결하고"
-      },
-      {
-        "from": "류겨레",
-        "type": "계약",
-        "to": "백온",
-        "basis": "백온의 남하를 금천 쪽에서 맞으며"
-      }
-    ],
-    "incoming": []
-  }
+  ]
 }

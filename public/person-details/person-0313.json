@@ -1,493 +1,127 @@
 {
   "id": "person-0313",
   "name": "국감",
-  "title": "의료열차 수비창 거점장, 곽태산의 실무 담당자",
-  "position": "의료열차 수비창 거점장, 곽태산의 실무 담당자",
+  "title": "의사",
+  "position": "의사 · 봉화산역",
   "characterId": "K312",
-  "rank": "서기",
-  "commonTier": "T4",
-  "occupation": "의료열차 칸 열쇠·무기함 봉인 관리",
+  "rank": "등재민",
+  "commonTier": "T5",
+  "occupation": "진료",
   "gender": "남성",
   "stage": "S2",
-  "state": "S12",
-  "stateName": "신내운수",
-  "sourceRoute": "/world/Cast-State-12#인물-국감",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0313",
   "birthDate": "2096-10-18",
   "birthday": "10-18",
   "age": 30,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-12.json#/content/39",
-    "lore/characters/Cast-State-12.json#/content/44"
-  ],
-  "familyTree": {
-    "personId": "K312",
-    "nodes": [
-      {
-        "id": "K312",
-        "personId": "K312",
-        "kind": "person",
-        "name": "국감",
-        "birthDate": "2096-10-18",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K312"
-          },
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국감-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 의료열차 수비창 거점장, 곽태산의 실무 담당자 자리는 야간 무단 도하 적발로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-국감-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0313"
-      },
-      {
-        "id": "FH-K312-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "국승수",
-        "lineage": {
-          "surname": "국",
-          "bongwan": "담양",
-          "clan": "ad6d-b2f4-c591"
-        },
-        "birthDate": "2066-10-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2104,
-            "summary": "국승수는 암사 경비 초소에서 의료열차 칸 열쇠·무기함 봉인 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-국감-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K312-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "국승은",
-        "lineage": {
-          "surname": "국",
-          "bongwan": "담양",
-          "clan": "ad6d-b2f4-c591"
-        },
-        "birthDate": "2036-10-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "국승은은 암사 경비 초소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-국감-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K312-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "국승연",
-        "lineage": {
-          "surname": "국",
-          "bongwan": "담양",
-          "clan": "ad6d-b2f4-c591"
-        },
-        "birthDate": "2006-10-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "국승연은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-국감-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K312-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준영",
-        "birthDate": "2066-10-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2104,
-            "summary": "박준영은 암사 경비 초소에서 의료열차 칸 열쇠·무기함 봉인 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-국감-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K312-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준현",
-        "birthDate": "2036-10-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "이준현은 암사 경비 초소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-국감-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K312-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준연",
-        "birthDate": "2006-10-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최준연은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-국감-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K312-P-01:K312:biological",
-        "from": "FH-K312-P-01",
-        "to": "K312",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K312-P-02:FH-K312-P-01:biological",
-        "from": "FH-K312-P-02",
-        "to": "FH-K312-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K312-P-03:FH-K312-P-02:biological",
-        "from": "FH-K312-P-03",
-        "to": "FH-K312-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K312-M-01:K312:biological",
-        "from": "FH-K312-M-01",
-        "to": "K312",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K312-M-02:FH-K312-M-01:biological",
-        "from": "FH-K312-M-02",
-        "to": "FH-K312-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K312-M-03:FH-K312-M-02:biological",
-        "from": "FH-K312-M-03",
-        "to": "FH-K312-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ad6d-b2f4-c591",
+    "name": "담양 국씨",
+    "crest": "clan-crests/ad6d-b2f4-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "담양 국씨 국감, 서른 살. 노원구 국회의원 집안의 깊은 층 거처에 딸린 의사로, 집안 사람과 집안 일꾼의 병을 보고 약품 장부를 따로 쓴다. 약품 장부의 숫자가 달마다 줄면 그는 진통제보다 해열제를 먼저 아껴 두는데, 깊은 층에 열병이 돌면 집안 사람들이 한 방에서 함께 앓기 때문이다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "의사",
+    "품계": "등재민",
+    "생업": "진료",
+    "일하는 역": "봉화산역",
+    "잠자는 역": "봉화산역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "담양 국씨 국감, 서른 살. 노원구 국회의원 집안의 깊은 층 거처에 딸린 의사로, 집안 사람과 집안 일꾼의 병을 보고 약품 장부를 따로 쓴다. 약품 장부의 숫자가 달마다 줄면 그는 진통제보다 해열제를 먼저 아껴 두는데, 깊은 층에 열병이 돌면 집안 사람들이 한 방에서 함께 앓기 때문이다.",
+    "관직": "직함 의사. 직위 의사 · 봉화산역. 품계 등재민. 일하는 역 봉화산역."
+  },
+  "values": {
+    "권위": 45,
+    "개방": -25,
+    "무력": 30,
+    "물질": 5,
+    "공동": 40,
+    "원칙": 25,
+    "공개": -15,
+    "자격": 45,
+    "분산": 0,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": 25,
+    "위험": 5,
+    "과시": 30,
+    "지속": -10,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0313",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "국감",
+        "type": "지휘",
+        "to": "은채윤",
+        "basis": "노원구 국회의원 은채윤의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "류은비",
+        "type": "스승과 제자",
+        "to": "국감",
+        "basis": "노원구 의원 집안의 의사를 수련시킨 스승"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K324",
+    "name": "은채윤",
+    "courtId": "court:K324",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "strategy": {
+      "martial": {
+        "base": 3,
+        "effective": 3
+      },
+      "stewardship": {
+        "base": 6,
+        "effective": 6
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
-      },
-      "negotiation": {
-        "base": 4,
-        "effective": 4
-      },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 8,
-        "effective": 8
       },
       "learning": {
-        "base": 7,
-        "effective": 7
+        "base": 10,
+        "effective": 10
       },
       "prowess": {
-        "base": 7,
-        "effective": 7
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 3,
+        "effective": 3
       }
     },
-    "skills": [
-      {
-        "id": "k312-separate-carriage-seal-custody",
-        "name": {
-          "ko": "칸 봉인 분리 보관",
-          "en": "Separate carriage seal custody"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "k312-priority",
-        "name": {
-          "ko": "권한 분리",
-          "en": "Separates authority"
-        },
-        "description": {
-          "ko": "국감은 칸 열쇠와 무기함 봉인을 나누고 입회 수색을 고수한다. 빠진 당직자는 아직 특정되지 않았다.",
-          "en": "Gukgam separates carriage keys from weapon-box seals and insists on witnessed searches. The missing duty worker is not identified."
-        },
-        "behavior": {
-          "ko": "칸 열쇠와 무기함 봉인을 분리해 보관하고, 수색은 통행 심사관 입회 아래에서만 한다.",
-          "en": "Office. Rank: clerk. Title: medical train defense shop outpost chief, duty officer of Gwak Taesan. He kept the car keys and the weapons-box seal in separate custody and conducted searches only under the passage examiner's attendance."
-        },
-        "stress": {
-          "ko": "수비창 안에서 암사제 무기를 숨긴 자가 나와 장세화의 중립이 내부에서 깨지는 것.",
-          "en": "Fear. That someone hiding Amsa-made weapons inside the defense shop would break Jang Sehwa's neutrality from within."
-        },
-        "relationship": {
-          "ko": "곽태산의 지휘로 수비창을 맡고, 문시온과 봉인 입회를 공유한다. 전미리의 환자 칸을 창 쪽에서 지킨다.",
-          "en": "Relations. Held the defense shop under Gwak Taesan's command and shared the sealing attendance with Mun Sion. Shielded Jeon Miri's patient cars on the shop side."
-        },
-        "effects": []
-      },
-      {
-        "id": "k312-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 서기. 직함은 의료열차 수비창 거점장, 곽태산의 실무 담당자. 칸 열쇠와 무기함 봉인을 분리해 보관하고, 수색은 통행 심사관 입회 아래에서만 한다.",
-          "en": "Office. Rank: clerk. Title: medical train defense shop outpost chief, duty officer of Gwak Taesan. He kept the car keys and the weapons-box seal in separate custody and conducted searches only under the passage examiner's attendance."
-        },
-        "stress": {
-          "ko": "공포. 수비창 안에서 암사제 무기를 숨긴 자가 나와 장세화의 중립이 내부에서 깨지는 것.",
-          "en": "Fear. That someone hiding Amsa-made weapons inside the defense shop would break Jang Sehwa's neutrality from within."
-        },
-        "relationship": {
-          "ko": "관계. 곽태산의 지휘로 수비창을 맡고, 문시온과 봉인 입회를 공유한다. 전미리의 환자 칸을 창 쪽에서 지킨다.",
-          "en": "Relations. Held the defense shop under Gwak Taesan's command and shared the sealing attendance with Mun Sion. Shielded Jeon Miri's patient cars on the shop side."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "국감은 칸 열쇠와 무기함 봉인을 나누고 입회 수색을 고수한다. 빠진 당직자는 아직 특정되지 않았다.",
-      "en": "Gukgam separates carriage keys from weapon-box seals and insists on witnessed searches. The missing duty worker is not identified."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -525,72 +159,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ad6d-b2f4-c591",
-    "name": "담양 국씨",
-    "crest": "clan-crests/ad6d-b2f4-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 0,
-    "개방": 30,
-    "무력": -5,
-    "물질": 10,
-    "공동": 35,
-    "원칙": 5,
-    "공개": 10,
-    "자격": 30,
-    "분산": 50,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": 25,
-    "위험": 5,
-    "과시": 30,
-    "지속": -10,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "의료열차 칸 열쇠·무기함 봉인 관리",
-    "소속": "신내운수",
-    "품계": "서기",
-    "직함": "의료열차 수비창 거점장, 곽태산의 실무 담당자",
-    "가치관": "권위 0 | 개방 30 | 무력 −5 | 물질 10 | 공동 35 | 원칙 5 | 공개 10 | 자격 30 | 분산 50 | 변혁 −5",
-    "욕망": "갈망 15 | 독점 25 | 위험 5 | 과시 30 | 지속 −10 | 지향 이성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2096-10-18에 태어났다. 암사 경비 초소에서 자랐다. 2126년 개막에는 의료열차 수비창 거점장, 곽태산의 실무 담당자 당직을 맡으며, 직위 인수 기록에는 야간 무단 도하 적발로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 국감의 의료열차 칸 열쇠·무기함 봉인 관리 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
-    "관직": "품계 서기. 직함은 의료열차 수비창 거점장, 곽태산의 실무 담당자. 칸 열쇠와 무기함 봉인을 분리해 보관하고, 수색은 통행 심사관 입회 아래에서만 한다.",
-    "일화": "의료열차 무기함에서 암사 문장이 찍힌 탄약이 발견되고 수비 당직 명단이 한 줄 빠져 있었다.",
-    "관계": "곽태산의 지휘로 수비창을 맡고, 문시온과 봉인 입회를 공유한다. 전미리의 환자 칸을 창 쪽에서 지킨다.",
-    "야망": "의료열차 수비를 신내운수 고유 직능으로 남겨 외부 호위병이 칸 안에 서는 관행을 없애려 한다.",
-    "공포": "수비창 안에서 암사제 무기를 숨긴 자가 나와 장세화의 중립이 내부에서 깨지는 것.",
-    "개입": "빠진 당직자를 찾거나, 무기함 봉인을 바꿔 사건을 외부 조작으로 몰 수 있다."
-  },
-  "biography": "2096-10-18생인 국감은 과묵하고 칸 출입을 몸으로 막는다. 수비대가 호송대보다 눈에 띄는 것을 싫어하고, 열쇠와 무기함 봉인을 한 사람이 쥐는 일을 사고로 본다.\n\n- 생업: 의료열차 칸 열쇠·무기함 봉인 관리\n- 소속: 신내운수\n- 품계: 서기\n- 직함: 의료열차 수비창 거점장, 곽태산의 실무 담당자\n**생애.** 2096-10-18에 태어났다. 암사 경비 초소에서 자랐다. 2126년 개막에는 의료열차 수비창 거점장, 곽태산의 실무 담당자 당직을 맡으며, 직위 인수 기록에는 야간 무단 도하 적발로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 국감의 의료열차 칸 열쇠·무기함 봉인 관리 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 서기. 직함은 의료열차 수비창 거점장, 곽태산의 실무 담당자. 칸 열쇠와 무기함 봉인을 분리해 보관하고, 수색은 통행 심사관 입회 아래에서만 한다.\n\n**일화.** 의료열차 무기함에서 암사 문장이 찍힌 탄약이 발견되고 수비 당직 명단이 한 줄 빠져 있었다.\n\n**관계.** 곽태산의 지휘로 수비창을 맡고, 문시온과 봉인 입회를 공유한다. 전미리의 환자 칸을 창 쪽에서 지킨다.\n\n**야망.** 의료열차 수비를 신내운수 고유 직능으로 남겨 외부 호위병이 칸 안에 서는 관행을 없애려 한다.\n\n**공포.** 수비창 안에서 암사제 무기를 숨긴 자가 나와 장세화의 중립이 내부에서 깨지는 것.\n\n**개입.** 빠진 당직자를 찾거나, 무기함 봉인을 바꿔 사건을 외부 조작으로 몰 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 30 | 무력 −5 | 물질 10 | 공동 35 | 원칙 5 | 공개 10 | 자격 30 | 분산 50 | 변혁 −5\n- 욕망: 갈망 15 | 독점 25 | 위험 5 | 과시 30 | 지속 −10 | 지향 이성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-12"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "국감",
-        "type": "지휘",
-        "to": "곽태산",
-        "basis": "곽태산의 지휘로 수비창을 맡고"
-      },
-      {
-        "from": "국감",
-        "type": "계약",
-        "to": "문시온",
-        "basis": "문시온과 봉인 입회를 공유한다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

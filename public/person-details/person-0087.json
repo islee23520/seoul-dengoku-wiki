@@ -1,503 +1,179 @@
 {
   "id": "person-0087",
   "name": "임초원",
-  "title": "펌프기술자, 임하준의 양자",
-  "position": "펌프기술자, 임하준의 양자",
+  "title": "펌프 정비공",
+  "position": "펌프 정비공 · 천호역",
   "characterId": "K087",
-  "rank": "교사",
-  "commonTier": "T5",
-  "occupation": "펌프기술자",
+  "rank": "곁집원",
+  "commonTier": "T2",
+  "occupation": "펌프 정비",
   "gender": "여성",
   "stage": "주요",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Core-Characters#임초원",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0087",
   "birthDate": "2100-06-11",
   "birthday": "06-11",
   "age": 26,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Core-Characters.json#/content/50",
-    "lore/characters/Core-Characters.json#/content/51",
-    "lore/characters/Core-Characters.json#/content/53",
-    "lore/characters/Core-Characters.json#/content/54",
-    "lore/characters/Core-Characters.json#/content/55",
-    "lore/characters/Core-Characters.json#/content/56",
-    "lore/chronology/Century-Annals.json#/content/600",
-    "lore/chronology/Scenario-Timeline.json#/content/8",
-    "lore/chronology/Scenario-Timeline.json#/content/38"
-  ],
-  "familyTree": {
-    "personId": "K087",
-    "nodes": [
-      {
-        "id": "K086",
-        "personId": "K086",
-        "kind": "person",
-        "name": "임하준",
-        "birthDate": "2072-12-03",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K086"
-          },
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 2119년 오씨 적장자 오경재가 미성년이었다. 장로들은 인준 투표로 임하준을 당회장에 앉혔다. 뚝섬 열원 당직에서 펌프 규격을 익힌 손은 양자 임초원에게 그 기술의 절반만 넘겼다. 2125년 겨울 임하준이 실종되었다. 실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠는 유언 3장과 함께 장로회에 접수되었다. 임시 관리인은 박누리가 맡았다. 실종의 경위와 유언 3장의 내용은 정해지지 않았다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "임하준-p2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0086"
-      },
-      {
-        "id": "K087",
-        "personId": "K087",
-        "kind": "person",
-        "name": "임초원",
-        "birthDate": "2100-06-11",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K087"
-          },
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임초원-p2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 펌프 곁에서 자랐다. 임하준에게 배운 것은 당회 후계가 아니라 펌프 정비 기술이었다. 품계는 교사다. 2125년 겨울 실종 다음 교대에 원본 함의 봉인을 확인하였다. 확인 사실은 유언 3장의 증인 칸에 기재되었다. 2126년 당회장 자리는 오경재가 앉았다. 임초원은 개막에 펌프기술자로 남는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "임초원-p2"
-              }
-            ]
-          }
-        ],
-        "generationException": {
-          "reason": "확정 생년월일과 기존 임하준→임초원 관계를 보존한다. 30년 간격을 맞추기 위해 관계나 날짜를 바꾸지 않는다.",
-          "sourceRefs": [
-            {
-              "path": "lore/name-pools/cast-birthdays.json"
-            },
-            {
-              "path": "lore/characters/Core-Characters.json",
-              "anchor": "/content/40"
-            }
-          ]
-        },
-        "detailRoute": "/people/person-0087"
-      },
-      {
-        "id": "K089",
-        "personId": "K089",
-        "kind": "person",
-        "name": "박세린",
-        "birthDate": "2093-07-25",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K089"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-박세린-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 펌프기술가문 대행 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-박세린-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0090"
-      },
-      {
-        "id": "FH-K086-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승섭",
-        "lineage": {
-          "surname": "임",
-          "bongwan": "조양",
-          "clan": "c784-c870-c591-6797"
-        },
-        "birthDate": "2042-12-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "임승섭은 생활권의 공동 거처에서 펌프기술 총관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "임하준-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K086-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승성",
-        "lineage": {
-          "surname": "임",
-          "bongwan": "조양",
-          "clan": "c784-c870-c591-6797"
-        },
-        "birthDate": "2012-12-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임승성은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "임하준-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K086-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승온",
-        "birthDate": "2042-12-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "최승온은 생활권의 공동 거처에서 펌프기술 총관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "임하준-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K086-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정승리",
-        "birthDate": "2012-12-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정승리는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "임하준-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "generationException": {
-          "reason": "명시된 친족 관계의 두 가계를 연결하되 각 가계의 확정 생일에서 파생된 날짜를 보존한다. 공동 조상의 생일은 더 이른 자녀를 기준으로 30년 앞서 저작한다.",
-          "sourceRefs": [
-            {
-              "path": "lore/characters/Cast-Relations.json",
-              "anchor": "관계-원장-table3"
-            },
-            {
-              "path": "lore/name-pools/cast-family-trees.json"
-            }
-          ]
-        },
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "K086:K087:adoptive",
-        "from": "K086",
-        "to": "K087",
-        "type": "adoptive",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p2"
-          }
-        ]
-      },
-      {
-        "id": "FH-K086-P-01:K086:biological",
-        "from": "FH-K086-P-01",
-        "to": "K086",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K086-P-02:FH-K086-P-01:biological",
-        "from": "FH-K086-P-02",
-        "to": "FH-K086-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K086-M-01:K086:biological",
-        "from": "FH-K086-M-01",
-        "to": "K086",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K086-M-02:FH-K086-M-01:biological",
-        "from": "FH-K086-M-02",
-        "to": "FH-K086-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "K086:K089:household",
-        "from": "K086",
-        "to": "K089",
-        "type": "household",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Relations.json",
-            "anchor": "관계-원장-table3"
-          }
-        ]
-      }
-    ],
-    "parentStatus": "biological-parents-unrecorded"
+  "generation": "opening",
+  "clan": {
+    "id": "c784-c608-cc9c-6797",
+    "name": "예천 임씨",
+    "crest": "clan-crests/c784-c608-cc9c-6797.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "강동 곁집의 맞수다. 스물여섯 살의 그는 2125년 겨울 사라진 양부 임하준의 펌프 일을 이어 암사 취수구의 펌프를 돌린다. 양자는 핏줄이 아니어서 그는 곁집장 배우진 앞에서 피가 아니라 쇠로 맞선다. 취수구가 멎은 날 가장 먼저 얼음 밑으로 내려간 사람이 그였다는 것을 강동 사람은 모두 안다. 천호의 같은 칸에서 임하준의 피후견인 박세린과 함께 잔다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "펌프 정비공",
+    "품계": "곁집원",
+    "생업": "펌프 정비",
+    "일하는 역": "천호역",
+    "잠자는 역": "천호역",
+    "가구": "임하준 가구의 가구원",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "강동 곁집의 맞수다. 스물여섯 살의 그는 2125년 겨울 사라진 양부 임하준의 펌프 일을 이어 암사 취수구의 펌프를 돌린다. 양자는 핏줄이 아니어서 그는 곁집장 배우진 앞에서 피가 아니라 쇠로 맞선다. 취수구가 멎은 날 가장 먼저 얼음 밑으로 내려간 사람이 그였다는 것을 강동 사람은 모두 안다. 천호의 같은 칸에서 임하준의 피후견인 박세린과 함께 잔다.",
+    "관직": "직함 펌프 정비공. 직위 펌프 정비공 · 천호역. 품계 곁집원. 일하는 역 천호역."
+  },
+  "values": {
+    "권위": -5,
+    "개방": 5,
+    "무력": -10,
+    "물질": -40,
+    "공동": 0,
+    "원칙": 10,
+    "공개": -25,
+    "자격": 45,
+    "분산": 10,
+    "변혁": 55
+  },
+  "desire": {
+    "갈망": 20,
+    "독점": -20,
+    "위험": 20,
+    "과시": -30,
+    "지속": 10,
+    "지향": "동성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0086",
+    "role": "member",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "임초원",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "임초원",
+        "type": "경쟁",
+        "to": "배우진",
+        "basis": "강동 곁집장 자리를 두고 배우진과 맞선다. 배우진은 곁집 집안의 차례를, 임초원은 암사 취수구를 돌리는 손을 내세운다"
+      },
+      {
+        "from": "임초원",
+        "type": "스승과 제자",
+        "to": "임하준",
+        "basis": "양부 임하준에게서 암사 취수구의 펌프 일을 배웠다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "임하준",
+        "type": "스승과 제자",
+        "to": "임초원",
+        "basis": "암사 취수구의 펌프를 다루는 법을 양자 임초원에게 가르쳤다"
+      },
+      {
+        "from": "배우진",
+        "type": "경쟁",
+        "to": "임초원",
+        "basis": "강동 곁집장 자리를 두고 맞선다. 배우진은 곁집의 피로, 임초원은 펌프의 손과 부위로 선다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K1018",
+    "name": "고예진",
+    "courtId": "court:K1018",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 5,
+        "effective": 5
+      },
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
         "base": 8,
         "effective": 8
-      },
-      "strategy": {
-        "base": 9,
-        "effective": 9
-      },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
       },
       "learning": {
-        "base": 13,
-        "effective": 13
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "k087-seal-witness",
-        "name": {
-          "ko": "봉인 증언",
-          "en": "Seal witnessing"
-        },
-        "rating": 60
+        "id": "skill-pump-maintenance",
+        "name": "펌프 정비",
+        "rating": 74
       },
       {
-        "id": "k087-pump-maintenance",
-        "name": {
-          "ko": "펌프 정비",
-          "en": "Pump maintenance"
-        },
-        "rating": 60
+        "id": "skill-under-ice-work",
+        "name": "얼음 밑 작업",
+        "rating": 63
       }
     ],
     "traits": [
       {
-        "id": "k087-trait-1",
-        "name": {
-          "ko": "열지 않는 증인",
-          "en": "A witness who does not open"
-        },
-        "description": {
-          "ko": "자신이 확인한 봉인과 열지 않은 사본을 구분한다.",
-          "en": "Distinguishes the seal he checked from copies he did not open."
-        },
-        "behavior": {
-          "ko": "자신이 확인한 봉인과 열지 않은 사본을 구분한다.",
-          "en": "Distinguishes the seal he checked from copies he did not open."
-        },
-        "stress": {
-          "ko": "양부 실종 뒤에도 사본을 열지 않았다.",
-          "en": "Did not open the copies after his adoptive father disappeared."
-        },
-        "relationship": {
-          "ko": "오경재와 기술 동맹을 맺되 당회장 자리를 주장하지 않는다.",
-          "en": "Works with O Gyeongjae technically without claiming his chair."
-        },
+        "id": "trait-goes-down-first",
+        "name": "먼저 내려가는 사람",
+        "description": "멎은 기계 앞에서 남을 보내지 않고 자기가 내려간다",
+        "behavior": "말보다 손을 먼저 보이고, 곁집 자리에서도 고친 수를 먼저 댄다",
+        "stress": "양부의 이름이 나오면 입을 닫고 펌프 칸으로 내려간다",
+        "relationship": "함께 얼음 밑에 내려간 사람을 끝까지 믿는다",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "양부에게 펌프 정비를 배웠지만 당회 후계가 되지는 않았다. 실종 다음 교대에 사본 함을 열지 않고 원본 봉인만 확인해 증인 칸에 남겼다. 기술 동맹과 총관 후계 경쟁은 별개의 관계다.",
-      "en": "He learned pump maintenance from his adoptive father without becoming the church successor. On the shift after the disappearance, he checked the original seal without opening the copies and left a witness entry. His technical alliance and stewardship rivalry are separate ties."
-    },
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -523,82 +199,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c784-c608-cc9c-6797",
-    "name": "예천 임씨",
-    "crest": "clan-crests/c784-c608-cc9c-6797.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": true,
-  "values": {
-    "권위": -30,
-    "개방": 20,
-    "무력": -20,
-    "물질": 10,
-    "공동": -20,
-    "원칙": 20,
-    "공개": 20,
-    "자격": 80,
-    "분산": 40,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 20,
-    "독점": -20,
-    "위험": 20,
-    "과시": -30,
-    "지속": 10,
-    "지향": "동성",
-    "결합": "계약동거"
-  },
-  "fields": {},
-  "sections": {
-    "생애": "2126년 세대. 펌프 곁에서 자랐다. 임하준에게 배운 것은 당회 후계가 아니라 펌프 정비 기술이었다. 품계는 교사다. 2125년 겨울 실종 다음 교대에 원본 함의 봉인을 확인하였다. 확인 사실은 유언 3장의 증인 칸에 기재되었다. 2126년 당회장 자리는 오경재가 앉았다. 임초원은 개막에 펌프기술자로 남는다.",
-    "관직": "품계 교사. 직함 없음. 생업 별명은 펌프기술자.",
-    "일화": "실종 다음 교대, 임초원은 사본 함을 열지 않았다. 원본 함의 봉인만 확인하였다. 그 확인이 유언 3장의 증인 칸에 기재되었다.",
-    "가문": "뚝섬열원가(HC04)의 양자 줄. 관리인은 박누리다. 키는 반만 넘어왔다.",
-    "관계": "임하준의 양자. 오경재와 펌프 기술 동맹. 한소미와 총관 후계를 두고 경쟁한다."
-  },
-  "biography": "펌프기술자 임초원은 실종된 임하준의 양자다. 성수1가2동에서 펌프 정비 기록을 인계하고, 실종 다음 교대에 확인한 원본 함의 봉인을 장로회 기록과 대조한다. 임하준에게 배운 정비 교육은 끝나지 않았다.\n\n**생애.** 2126년 세대. 펌프 곁에서 자랐다. 임하준에게 배운 것은 당회 후계가 아니라 펌프 정비 기술이었다. 품계는 교사다. 2125년 겨울 실종 다음 교대에 원본 함의 봉인을 확인하였다. 확인 사실은 유언 3장의 증인 칸에 기재되었다. 2126년 당회장 자리는 오경재가 앉았다. 임초원은 개막에 펌프기술자로 남는다.\n\n**관직.** 품계 교사. 직함 없음. 생업 별명은 펌프기술자.\n\n**일화.** 실종 다음 교대, 임초원은 사본 함을 열지 않았다. 원본 함의 봉인만 확인하였다. 그 확인이 유언 3장의 증인 칸에 기재되었다.\n\n**가문.** 뚝섬열원가(HC04)의 양자 줄. 관리인은 박누리다. 키는 반만 넘어왔다.\n\n**관계.** 임하준의 양자. 오경재와 펌프 기술 동맹. 한소미와 총관 후계를 두고 경쟁한다.",
-  "sources": [
-    "Core-Characters"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": [
-      {
-        "from": "오경재",
-        "type": "계약",
-        "to": "임초원",
-        "basis": "총회 인준으로 펌프 기술 동맹을 맺음"
-      },
-      {
-        "from": "한소미",
-        "type": "경쟁",
-        "to": "임초원",
-        "basis": "총관 후계를 둘러싼 경쟁"
-      },
-      {
-        "from": "강예준",
-        "type": "계약",
-        "to": "임초원",
-        "basis": "당회장 인준 청구를 심사"
-      },
-      {
-        "from": "알렉산더 밀러",
-        "type": "원한",
-        "to": "임초원",
-        "basis": "귀환 열차를 억류한 원한"
-      },
-      {
-        "from": "허겸",
-        "type": "계약",
-        "to": "임초원",
-        "basis": "임초원의 공개 설계를 뚜껑 아래에서 맞춰 본다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

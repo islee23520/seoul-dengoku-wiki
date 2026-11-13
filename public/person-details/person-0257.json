@@ -1,492 +1,105 @@
 {
   "id": "person-0257",
   "name": "복모",
-  "title": "피난로 탐사원",
-  "position": "우회로 실측 주지",
+  "title": "구 부대 지휘관",
+  "position": "구 부대 지휘관 · 옥수역",
   "characterId": "K256",
-  "rank": "주지",
-  "commonTier": "T3",
-  "occupation": "우회로 실측·고지 좌표 관리",
+  "rank": "대위",
+  "commonTier": "T5",
+  "occupation": "군 지휘",
   "gender": "여성",
   "stage": "S2",
-  "state": "S10",
-  "stateName": "안국총림",
-  "sourceRoute": "/world/Cast-State-10#인물-복모",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0257",
   "birthDate": "2101-06-19",
   "birthday": "06-19",
   "age": 25,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-10.json#/content/160"
-  ],
-  "familyTree": {
-    "personId": "K256",
-    "nodes": [
-      {
-        "id": "K256",
-        "personId": "K256",
-        "kind": "person",
-        "name": "복모",
-        "birthDate": "2101-06-19",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K256"
-          },
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-복모-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 보국문 피난 막사에서 자랐다. 우회로 실측 주지 자리는 고아 명부 줄로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-복모-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0257"
-      },
-      {
-        "id": "FH-K256-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "복승민",
-        "lineage": {
-          "surname": "복",
-          "bongwan": "면천",
-          "clan": "bcf5-ba74-cc9c"
-        },
-        "birthDate": "2071-06-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-복모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2109,
-            "summary": "복승민은 보국문 피난 막사에서 우회로 실측·고지 좌표 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-복모-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K256-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "복승원",
-        "lineage": {
-          "surname": "복",
-          "bongwan": "면천",
-          "clan": "bcf5-ba74-cc9c"
-        },
-        "birthDate": "2041-06-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-복모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2079,
-            "summary": "복승원은 보국문 피난 막사에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-복모-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K256-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "복승진",
-        "lineage": {
-          "surname": "복",
-          "bongwan": "면천",
-          "clan": "bcf5-ba74-cc9c"
-        },
-        "birthDate": "2011-06-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-복모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "복승진은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-복모-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K256-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤현섭",
-        "birthDate": "2071-06-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-복모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2109,
-            "summary": "윤현섭은 보국문 피난 막사에서 우회로 실측·고지 좌표 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-복모-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K256-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한현혁",
-        "birthDate": "2041-06-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-복모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2079,
-            "summary": "한현혁은 보국문 피난 막사에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-복모-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K256-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현성",
-        "birthDate": "2011-06-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-복모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강현성은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-복모-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K256-P-01:K256:biological",
-        "from": "FH-K256-P-01",
-        "to": "K256",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-복모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K256-P-02:FH-K256-P-01:biological",
-        "from": "FH-K256-P-02",
-        "to": "FH-K256-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-복모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K256-P-03:FH-K256-P-02:biological",
-        "from": "FH-K256-P-03",
-        "to": "FH-K256-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-복모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K256-M-01:K256:biological",
-        "from": "FH-K256-M-01",
-        "to": "K256",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-복모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K256-M-02:FH-K256-M-01:biological",
-        "from": "FH-K256-M-02",
-        "to": "FH-K256-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-복모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K256-M-03:FH-K256-M-02:biological",
-        "from": "FH-K256-M-03",
-        "to": "FH-K256-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-복모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bcf5-ba74-cc9c",
+    "name": "면천 복씨",
+    "crest": "clan-crests/bcf5-ba74-cc9c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "옥수역 승강장 끝, 강바람이 들이치는 계단참에 성동구 부대의 지휘소가 있다. 스물다섯 살 대위로, 성동구의 역과 출입구와 망대를 지키는 성동구 부대 전체를 지휘한다. 서울숲 터널 검문소와 옥수–압구정 다리의 북쪽 끝은 수도방위사령부 직할대가 맡으므로, 다리를 닫는 명령서에 그녀의 도장은 없다. 다만 다리가 닫혀 직할대 병사들이 옥수역으로 물러나면 그들을 승강장 안쪽에 재워 달라고 두감 역장에게 청하는 사람은 그녀이고, 그 청은 한 번도 거절된 적이 없다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "구 부대 지휘관",
+    "품계": "대위",
+    "생업": "군 지휘",
+    "일하는 역": "옥수역",
+    "잠자는 역": "옥수역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "옥수역 승강장 끝, 강바람이 들이치는 계단참에 성동구 부대의 지휘소가 있다. 스물다섯 살 대위로, 성동구의 역과 출입구와 망대를 지키는 성동구 부대 전체를 지휘한다. 서울숲 터널 검문소와 옥수–압구정 다리의 북쪽 끝은 수도방위사령부 직할대가 맡으므로, 다리를 닫는 명령서에 그녀의 도장은 없다. 다만 다리가 닫혀 직할대 병사들이 옥수역으로 물러나면 그들을 승강장 안쪽에 재워 달라고 두감 역장에게 청하는 사람은 그녀이고, 그 청은 한 번도 거절된 적이 없다.",
+    "관직": "직함 구 부대 지휘관. 직위 구 부대 지휘관 · 옥수역. 품계 대위. 일하는 역 옥수역."
+  },
+  "values": {
+    "권위": -25,
+    "개방": 10,
+    "무력": 5,
+    "물질": -20,
+    "공동": 85,
+    "원칙": 40,
+    "공개": -5,
+    "자격": 40,
+    "분산": 5,
+    "변혁": -5
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": 20,
+    "위험": -40,
+    "과시": -15,
+    "지속": 35,
+    "지향": "동성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0257",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
-      },
-      "strategy": {
-        "base": 10,
-        "effective": 10
-      },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
-      "learning": {
-        "base": 9,
-        "effective": 9
-      },
-      "prowess": {
+      "diplomacy": {
         "base": 4,
         "effective": 4
       },
-      "endurance": {
+      "martial": {
         "base": 10,
         "effective": 10
-      }
-    },
-    "skills": [
-      {
-        "id": "mountain-survey",
-        "name": {
-          "ko": "우회로 실측",
-          "en": "Detour measurement"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "mountain-survey-disposition",
-        "name": {
-          "ko": "지도에서 숙영을 지키기",
-          "en": "Protects camps on maps"
-        },
-        "description": {
-          "ko": "효율을 이유로 숙영을 지우지 않고 닫힌 산길의 표지를 고친다.",
-          "en": "Does not erase camps for efficiency and revises blocked-path signs."
-        },
-        "behavior": {
-          "ko": "효율을 이유로 숙영을 지우지 않고 닫힌 산길의 표지를 고친다.",
-          "en": "Does not erase camps for efficiency and revises blocked-path signs."
-        },
-        "stress": {
-          "ko": "좌표가 군사 호송 지도로 복사될 것을 두려워한다.",
-          "en": "Fears coordinates copied into military escort maps."
-        },
-        "relationship": {
-          "ko": "강태산에게 우회로를 보고하고, 두소의 회랑 안내 표지와 표시를 맞춘다. 백온의 피난처 맹세를 지도 여백에 적는다.",
-          "en": "Reports to Kang Taesan, matches signs with Duso and records Baek On’s refuge pledge on the map."
-        },
-        "effects": []
       },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "좌표 동의",
-          "en": "Consent for coordinates"
-        },
-        "description": {
-          "ko": "신도 명부 주지 동의 없이 좌표를 외부로 넘기지 않는다.",
-          "en": "Does not share coordinates externally without roster overseer consent."
-        },
-        "behavior": {
-          "ko": "신도 명부 주지 동의 없이 좌표를 외부로 넘기지 않는다.",
-          "en": "Does not share coordinates externally without roster overseer consent."
-        },
-        "stress": {
-          "ko": "탐사 기록이 군사 호송 지도로 복사되어 정착지가 노출되는 것.",
-          "en": "Fears coordinates copied into military escort maps."
-        },
-        "relationship": {
-          "ko": "강태산에게 우회로를 보고하고, 두소의 회랑 안내 표지와 표시를 맞춘다. 백온의 피난처 맹세를 지도 여백에 적는다.",
-          "en": "Reports to Kang Taesan, matches signs with Duso and records Baek On’s refuge pledge on the map."
-        },
-        "effects": []
+      "stewardship": {
+        "base": 4,
+        "effective": 4
+      },
+      "intrigue": {
+        "base": 5,
+        "effective": 5
+      },
+      "learning": {
+        "base": 4,
+        "effective": 4
+      },
+      "prowess": {
+        "base": 11,
+        "effective": 11
       }
-    ],
-    "narrative": {
-      "ko": "실측한 산길만 실선으로 남기고 동의 없는 고지 좌표 공개를 거부한다. 지워진 우회로는 아직 복구 성과로 기록하지 않는다.",
-      "en": "Marks measured mountain paths solid and refuses hill coordinates without consent. Erased detours are not recorded as already restored."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,85 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bcf5-ba74-cc9c",
-    "name": "면천 복씨",
-    "crest": "clan-crests/bcf5-ba74-cc9c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -70,
-    "개방": 65,
-    "무력": -30,
-    "물질": -15,
-    "공동": 80,
-    "원칙": 20,
-    "공개": 20,
-    "자격": 25,
-    "분산": 55,
-    "변혁": 15
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": 20,
-    "위험": -40,
-    "과시": -15,
-    "지속": 35,
-    "지향": "동성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "우회로 실측·고지 좌표 관리",
-    "소속": "안국총림",
-    "품계": "주지",
-    "직함": "우회로 실측 주지",
-    "가치관": "권위 −70 | 개방 65 | 무력 −30 | 물질 −15 | 공동 80 | 원칙 20 | 공개 20 | 자격 25 | 분산 55 | 변혁 15",
-    "욕망": "갈망 45 | 독점 20 | 위험 −40 | 과시 −15 | 지속 35 | 지향 동성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2101-06-19 출생, 2126년 개막에 활동했다. 보국문 피난 막사에서 자랐다. 우회로 실측 주지 당직 기록에는 고아 명부 줄 일이 남아 있다.\n- 복모의 우회로 실측·고지 좌표 관리 업무 기준점으로 평창동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n- 복모의 우회로 실측·고지 좌표 관리 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
-    "관직": "품계 주지. 직함은 우회로 실측 주지. 실측한 길만 실선으로 남기고, 신도 명부 주지의 동의 없이 고지 좌표를 외부에 넘기지 않는다.",
-    "일화": "철표를 든 순찰이 입구까지 오자 옛 창고 흔적 쪽으로 우회로가 지워져 있었다.",
-    "관계": "강태산에게 우회로를 보고하고, 두소의 회랑 안내 표지와 표시를 맞춘다. 백온의 피난처 맹세를 지도 여백에 적는다.",
-    "야망": "산악 피난로를 신도 명부의 통행로로 남겨 암사 순찰이 우회로까지 못 올라오게 한다.",
-    "공포": "탐사 기록이 군사 호송 지도로 복사되어 정착지가 노출되는 것.",
-    "개입": "우회로를 다시 긋거나, 노출된 정착지 좌표를 거둬들일 수 있다. 좌표는 산중총회의 필사본에만 남긴다."
-  },
-  "biography": "닫힌 산길을 보면 표시부터 고치고, 지도에 없는 숙영을 지우는 일을 거부한다. 눈보라 뒤의 발자국을 사람 수로 세지 않는다.\n\n- 생업: 우회로 실측·고지 좌표 관리\n- 소속: 안국총림\n- 품계: 주지\n- 직함: 우회로 실측 주지\n**생애.** 2101-06-19 출생, 2126년 개막에 활동했다. 보국문 피난 막사에서 자랐다. 우회로 실측 주지 당직 기록에는 고아 명부 줄 일이 남아 있다.\n- 복모의 우회로 실측·고지 좌표 관리 업무 기준점으로 평창동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n- 복모의 우회로 실측·고지 좌표 관리 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n**관직.** 품계 주지. 직함은 우회로 실측 주지. 실측한 길만 실선으로 남기고, 신도 명부 주지의 동의 없이 고지 좌표를 외부에 넘기지 않는다.\n\n**일화.** 철표를 든 순찰이 입구까지 오자 옛 창고 흔적 쪽으로 우회로가 지워져 있었다.\n\n**관계.** 강태산에게 우회로를 보고하고, 두소의 회랑 안내 표지와 표시를 맞춘다. 백온의 피난처 맹세를 지도 여백에 적는다.\n\n**야망.** 산악 피난로를 신도 명부의 통행로로 남겨 암사 순찰이 우회로까지 못 올라오게 한다.\n\n**공포.** 탐사 기록이 군사 호송 지도로 복사되어 정착지가 노출되는 것.\n\n**개입.** 우회로를 다시 긋거나, 노출된 정착지 좌표를 거둬들일 수 있다. 좌표는 산중총회의 필사본에만 남긴다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −70 | 개방 65 | 무력 −30 | 물질 −15 | 공동 80 | 원칙 20 | 공개 20 | 자격 25 | 분산 55 | 변혁 15\n- 욕망: 갈망 45 | 독점 20 | 위험 −40 | 과시 −15 | 지속 35 | 지향 동성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-10"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "복모",
-        "type": "계약",
-        "to": "강태산",
-        "basis": "강태산에게 우회로를 보고하고"
-      },
-      {
-        "from": "복모",
-        "type": "계약",
-        "to": "두소",
-        "basis": "두소의 회랑 안내 표지와 표시를 맞춘다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "두소",
-        "type": "계약",
-        "to": "복모",
-        "basis": "복모의 우회로 표시를 이정표에 옮긴다"
-      },
-      {
-        "from": "순지민",
-        "type": "계약",
-        "to": "복모",
-        "basis": "복모의 우회로로 숙영을 우회하며"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

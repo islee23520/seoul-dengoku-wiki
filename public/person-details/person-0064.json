@@ -1,516 +1,146 @@
 {
   "id": "person-0064",
   "name": "장예린",
-  "title": "서부 수질검사망 운영관",
-  "position": "서부 수질검사망 운영관",
+  "title": "잠실역 정비장",
+  "position": "잠실역 정비장 · 아크",
   "characterId": "K064",
-  "rank": "대리",
-  "commonTier": "T5",
-  "occupation": "수질 채수·검사",
+  "rank": "정비장",
+  "commonTier": "T4",
+  "occupation": "정비대 통솔",
   "gender": "남성",
   "stage": "S1",
-  "state": "S03",
-  "stateName": "태욱그룹",
-  "sourceRoute": "/world/Cast-State-03#인물-장예린",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0064",
   "birthDate": "2100-08-03",
   "birthday": "08-03",
   "age": 26,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-03.json#/content/93",
-    "lore/characters/Cast-State-03.json#/content/94",
-    "lore/characters/Cast-State-03.json#/content/95",
-    "lore/characters/Cast-State-03.json#/content/98",
-    "lore/characters/Cast-State-03.json#/content/99"
-  ],
-  "familyTree": {
-    "personId": "K064",
-    "nodes": [
-      {
-        "id": "K064",
-        "personId": "K064",
-        "kind": "person",
-        "name": "장예린",
-        "birthDate": "2100-08-03",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K064"
-          },
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-장예린-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 마곡 시험동에서 자랐다. 서부 수질검사망 운영관 자리는 표본 이중 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-장예린-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0064"
-      },
-      {
-        "id": "FH-K064-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "장승진",
-        "lineage": {
-          "surname": "장",
-          "bongwan": "단양",
-          "clan": "c7a5-b2e8-c591-5f35"
-        },
-        "birthDate": "2070-08-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-장예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2108,
-            "summary": "장승진은 마곡 시험동에서 수질 채수·검사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-장예린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K064-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "장승현",
-        "lineage": {
-          "surname": "장",
-          "bongwan": "단양",
-          "clan": "c7a5-b2e8-c591-5f35"
-        },
-        "birthDate": "2040-08-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-장예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2078,
-            "summary": "장승현은 마곡 시험동에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-장예린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K064-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "장승영",
-        "lineage": {
-          "surname": "장",
-          "bongwan": "단양",
-          "clan": "c7a5-b2e8-c591-5f35"
-        },
-        "birthDate": "2010-08-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-장예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "장승영은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-장예린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K064-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승연",
-        "birthDate": "2070-08-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-장예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2108,
-            "summary": "윤승연은 마곡 시험동에서 수질 채수·검사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-장예린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K064-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한승희",
-        "birthDate": "2040-08-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-장예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2078,
-            "summary": "한승희는 마곡 시험동에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-장예린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K064-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "강승정",
-        "birthDate": "2010-08-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-장예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강승정은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-장예린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K064-P-01:K064:biological",
-        "from": "FH-K064-P-01",
-        "to": "K064",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-장예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K064-P-02:FH-K064-P-01:biological",
-        "from": "FH-K064-P-02",
-        "to": "FH-K064-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-장예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K064-P-03:FH-K064-P-02:biological",
-        "from": "FH-K064-P-03",
-        "to": "FH-K064-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-장예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K064-M-01:K064:biological",
-        "from": "FH-K064-M-01",
-        "to": "K064",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-장예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K064-M-02:FH-K064-M-01:biological",
-        "from": "FH-K064-M-02",
-        "to": "FH-K064-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-장예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K064-M-03:FH-K064-M-02:biological",
-        "from": "FH-K064-M-03",
-        "to": "FH-K064-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-장예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c7a5-b2e8-c591-5f35",
+    "name": "단양 장씨",
+    "crest": "clan-crests/c7a5-b2e8-c591-5f35.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "장예린은 스물여섯 살에 셋째 부위를 받고 잠실역 정비대를 맡았다. 수차의 전기가 가장 먼저 닿는 정비대이고 교주의 집과 한 역을 쓰는 곳이라, 바깥 사람이 전기 바꿈터에서 산 정비 차례도 이 정비대에서 치른다. 정비대를 받던 날 그는 송파 곁집장 남윤경 앞에서, 수차가 멎는 날에도 앓는 사람 몫의 충전을 먼저 떼어 두겠다고 맹세했다. 나이 든 정비공들은 그를 아직 \"막내 정비장\"이라 부르지만, 그는 순번을 짤 때마다 그들에게 먼저 묻는다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "잠실역 정비장",
+    "품계": "정비장",
+    "생업": "정비대 통솔",
+    "일하는 역": "잠실역",
+    "잠자는 역": "잠실역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 3
+  },
+  "sections": {
+    "생애": "장예린은 스물여섯 살에 셋째 부위를 받고 잠실역 정비대를 맡았다. 수차의 전기가 가장 먼저 닿는 정비대이고 교주의 집과 한 역을 쓰는 곳이라, 바깥 사람이 전기 바꿈터에서 산 정비 차례도 이 정비대에서 치른다. 정비대를 받던 날 그는 송파 곁집장 남윤경 앞에서, 수차가 멎는 날에도 앓는 사람 몫의 충전을 먼저 떼어 두겠다고 맹세했다. 나이 든 정비공들은 그를 아직 \"막내 정비장\"이라 부르지만, 그는 순번을 짤 때마다 그들에게 먼저 묻는다.",
+    "관직": "직함 잠실역 정비장. 직위 잠실역 정비장 · 아크. 품계 정비장. 일하는 역 잠실역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": 15,
+    "무력": -25,
+    "물질": -40,
+    "공동": 15,
+    "원칙": 35,
+    "공개": -5,
+    "자격": 15,
+    "분산": -10,
+    "변혁": 55
+  },
+  "desire": {
+    "갈망": 5,
+    "독점": -30,
+    "위험": -30,
+    "과시": 20,
+    "지속": 15,
+    "지향": "양성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0064",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "장예린",
+        "type": "지휘",
+        "to": "이윤서",
+        "basis": "잠실6동 대피소장 이윤서의 직속"
+      },
+      {
+        "from": "장예린",
+        "type": "맹세",
+        "to": "남윤경",
+        "basis": "잠실 정비대를 받으며 수차가 멎는 날에도 앓는 사람 몫의 충전을 먼저 떼어 두겠다고 남윤경에게 한 맹세"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "이윤서",
+        "type": "계약",
+        "to": "장예린",
+        "basis": "잠실 정비 순번에 오른 사람의 집안 끼니를 잠실6동 대피소가 먼저 늘린다는 숫자로 적은 약속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K119",
+    "name": "이윤서",
+    "courtId": "court:K119",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "management": {
-        "base": 11,
-        "effective": 11
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
-      "learning": {
-        "base": 12,
-        "effective": 12
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "intrigue": {
         "base": 7,
         "effective": 7
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "water-test",
-        "name": {
-          "ko": "채수·시약 기록",
-          "en": "Sampling and reagent records"
-        },
-        "rating": 65
-      },
-      {
-        "id": "sample",
-        "name": {
-          "ko": "표본 기록 심사",
-          "en": "Sample-record review"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "one-pass-is-not-enough",
-        "name": {
-          "ko": "한 번의 합격 불신",
-          "en": "One Pass Is Not Enough"
-        },
-        "description": {
-          "ko": "장예린은 한 번의 합격 판정만으로 관로의 안전을 믿지 않는다.",
-          "en": "Jang Yerin does not trust a pipeline’s safety on the strength of one passing result."
-        },
-        "behavior": {
-          "ko": "채수 시각과 시약 로트를 기록하고 박누리의 영등포 표본과 교차검증한다.",
-          "en": "She records sampling times and reagent lots and cross-checks Yeongdeungpo samples with Park Nuri."
-        },
-        "stress": {
-          "ko": "검사 공백 사이에 탁수가 골목에 도착할 우려가 있다면 반복 검사와 교차검증을 더 중시할 수 있다.",
-          "en": "If turbid water might reach alleys during a testing gap, she may give greater weight to repeated testing and cross-checks."
-        },
-        "relationship": {
-          "ko": "검사 결과의 신뢰성을 높여야 한다면 박누리와의 표본 교차검증 동맹을 활용할 수 있다.",
-          "en": "She may draw on her sample-cross-checking alliance with Park Nuri when test reliability needs strengthening."
-        },
-        "effects": []
-      },
-      {
-        "id": "inspection-over-schedules",
-        "name": {
-          "ko": "일정보다 검사",
-          "en": "Inspection Over Schedules"
-        },
-        "description": {
-          "ko": "장예린은 정치 일정에 맞춘 검사 축소보다 검증 주기를 지키는 데 집요하다.",
-          "en": "Jang Yerin persistently protects testing cycles against reductions demanded by political schedules."
-        },
-        "behavior": {
-          "ko": "검사 주기 축소 쪽지를 찢고 기준 초과가 나오면 즉시 송수 중단을 권고한다.",
-          "en": "She tears up requests to shorten testing cycles and immediately recommends halting water delivery when limits are exceeded."
-        },
-        "stress": {
-          "ko": "검사망 정지가 군사 보호권의 개입으로 이어질 우려가 있다면 일정 압박에도 검증을 유지하려 할 수 있다.",
-          "en": "If a testing shutdown could invite military protection claims, she may seek to sustain verification despite scheduling pressure."
-        },
-        "relationship": {
-          "ko": "한소미의 센서 수리를 기다리는 상황이라면 검사망 유지에 필요한 협력을 중시할 수 있다.",
-          "en": "While awaiting Han Somi’s sensor repairs, she may prioritize cooperation needed to keep the testing network operating."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "채수 시각과 시약 로트를 기록하고 봉인 구역의 우회 검증을 설계했다. 반복 검사와 대안 설계가 강점이며 의사 경력은 없다.",
-      "en": "She records sampling times and reagent lots and designed alternate verification. Repeated testing and alternatives are strengths, not a medical career."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -520,7 +150,7 @@
         {
           "id": "right-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "head",
@@ -536,80 +166,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c7a5-b2e8-c591-5f35",
-    "name": "단양 장씨",
-    "crest": "clan-crests/c7a5-b2e8-c591-5f35.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -5,
-    "개방": 30,
-    "무력": -35,
-    "물질": 10,
-    "공동": -5,
-    "원칙": 45,
-    "공개": 40,
-    "자격": 50,
-    "분산": 20,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 5,
-    "독점": -30,
-    "위험": -30,
-    "과시": 20,
-    "지속": 15,
-    "지향": "양성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "태욱그룹",
-    "생업": "수질 채수·검사",
-    "품계": "대리",
-    "직함": "서부 수질검사망 운영관",
-    "업무": "가양1동. 장예린은 마곡의 채수 시각과 시약 로트를 영등포 표본에 대조하고 기준을 넘긴 결과는 평의회에 송수 중단 권고로 올린다.",
-    "가치관": "권위 −5 | 개방 30 | 무력 −35 | 물질 10 | 공동 −5 | 원칙 45 | 공개 40 | 자격 50 | 분산 20 | 변혁 10",
-    "욕망": "갈망 5 | 독점 −30 | 위험 −30 | 과시 20 | 지속 15 | 지향 양성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2126년 세대. 마곡 시험동에서 자랐다. 장예린은 마곡의 채수 시각과 시약 로트를 영등포 표본에 대조하고 기준을 넘긴 결과는 평의회에 송수 중단 권고로 올린다.\n- 업무: 가양1동. 장예린은 마곡의 채수 시각과 시약 로트를 영등포 표본에 대조하고 기준을 넘긴 결과는 평의회에 송수 중단 권고로 올린다.",
-    "관직": "품계 대리. 직함은 서부 수질검사망 운영관. 채수 시각과 시약 로트를 방송 가능한 원장에 남기고, 기준 초과가 나오면 송수 중단 권고를 평의회에 즉시 올린다.",
-    "일화": "2125년 봉인 구역 진입 허가를 거절하고 우회 검증을 설계했다.",
-    "관계": "박누리와 영등포 표본을 교차검증하는 동맹이고, 한소미의 펌프 공방이 검사 센서를 고치길 기다리며, 최지우에게 탁수 속보의 원본 숫자를 넘길지 망설인다.",
-    "야망": "수문국·뚝섬·마곡의 수질 검사 주기를 하나의 공개망으로 묶어 물·부품 공동규격의 과학 근거를 만든다.",
-    "공포": "검사망이 멈추면 탁수가 먼저 골목에 도착하고, 그 공백을 군사 보호권이 메우는 것.",
-    "개입": "센서 부품을 뚝섬에서 가져와 검사망을 복구하거나, 중단 권고를 숨기려는 쪽지를 폭로할 수 있다."
-  },
-  "biography": "회의적이고 끈질기며 한 번의 합격 판정으로 관로를 믿지 않는다. 정치 일정에 맞춰 검사 주기를 줄이라는 쪽지를 찢어 버린다.\n\n- 소속: 태욱그룹\n- 생업: 수질 채수·검사\n- 품계: 대리\n- 직함: 서부 수질검사망 운영관\n**생애.** 2126년 세대. 마곡 시험동에서 자랐다. 장예린은 마곡의 채수 시각과 시약 로트를 영등포 표본에 대조하고 기준을 넘긴 결과는 평의회에 송수 중단 권고로 올린다.\n- 업무: 가양1동. 장예린은 마곡의 채수 시각과 시약 로트를 영등포 표본에 대조하고 기준을 넘긴 결과는 평의회에 송수 중단 권고로 올린다.\n\n**관직.** 품계 대리. 직함은 서부 수질검사망 운영관. 채수 시각과 시약 로트를 방송 가능한 원장에 남기고, 기준 초과가 나오면 송수 중단 권고를 평의회에 즉시 올린다.\n\n**일화.** 2125년 봉인 구역 진입 허가를 거절하고 우회 검증을 설계했다.\n\n**관계.** 박누리와 영등포 표본을 교차검증하는 동맹이고, 한소미의 펌프 공방이 검사 센서를 고치길 기다리며, 최지우에게 탁수 속보의 원본 숫자를 넘길지 망설인다.\n\n**야망.** 수문국·뚝섬·마곡의 수질 검사 주기를 하나의 공개망으로 묶어 물·부품 공동규격의 과학 근거를 만든다.\n\n**공포.** 검사망이 멈추면 탁수가 먼저 골목에 도착하고, 그 공백을 군사 보호권이 메우는 것.\n\n**개입.** 센서 부품을 뚝섬에서 가져와 검사망을 복구하거나, 중단 권고를 숨기려는 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 30 | 무력 −35 | 물질 10 | 공동 −5 | 원칙 45 | 공개 40 | 자격 50 | 분산 20 | 변혁 10\n- 욕망: 갈망 5 | 독점 −30 | 위험 −30 | 과시 20 | 지속 15 | 지향 양성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-03"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "장예린",
-        "type": "계약",
-        "to": "박누리",
-        "basis": "영등포 표본을 교차검증"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:잠실",
+      "name": {
+        "ko": "잠실역"
       },
-      {
-        "from": "장예린",
-        "type": "계약",
-        "to": "한소미",
-        "basis": "검사 센서 수리를 성수 공방에 맡김"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "고초윤",
-        "type": "맹세",
-        "to": "장예린",
-        "basis": "장예린의 검사망 운영을 증언으로 받치고"
-      }
-    ]
-  }
+      "holderPersonId": "K064",
+      "directLiegePersonId": "K119",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "잠실",
+        "stationName": "잠실"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1171071000",
+          "name": "잠실6동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

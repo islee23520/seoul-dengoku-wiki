@@ -1,394 +1,156 @@
 {
   "id": "person-0045",
   "name": "변시람",
-  "title": "구로 대합실 역장",
-  "position": "구로 대합실 역장",
+  "title": "신도림 구간장",
+  "position": "신도림 구간장 · 자유도시들",
   "characterId": "K045",
-  "rank": "감사",
-  "commonTier": "T4",
-  "occupation": "대합실 당직",
+  "rank": "구간장",
+  "commonTier": "T3",
+  "occupation": "구간 운영",
   "gender": "남성",
   "stage": "S2",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-변시람",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0045",
   "birthDate": "2067-12-08",
   "birthday": "12-08",
   "age": 59,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/49",
-    "lore/characters/Cast-State-02.json#/content/51"
-  ],
-  "familyTree": {
-    "personId": "K045",
-    "nodes": [
-      {
-        "id": "K045",
-        "personId": "K045",
-        "kind": "person",
-        "name": "변시람",
-        "birthDate": "2067-12-08",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K045"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-변시람-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 구로 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-변시람-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0045"
-      },
-      {
-        "id": "FH-K045-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "변승민",
-        "lineage": {
-          "surname": "변",
-          "bongwan": "초계",
-          "clan": "bcc0-cd08-acc4"
-        },
-        "birthDate": "2037-12-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-변시람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "변승민은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-변시람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K045-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "변승원",
-        "lineage": {
-          "surname": "변",
-          "bongwan": "초계",
-          "clan": "bcc0-cd08-acc4"
-        },
-        "birthDate": "2007-12-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-변시람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "변승원은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-변시람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K045-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "송승경",
-        "birthDate": "2037-12-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-변시람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "송승경은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-변시람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K045-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "조승우",
-        "birthDate": "2007-12-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-변시람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조승우는 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-변시람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K045-P-01:K045:biological",
-        "from": "FH-K045-P-01",
-        "to": "K045",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-변시람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K045-P-02:FH-K045-P-01:biological",
-        "from": "FH-K045-P-02",
-        "to": "FH-K045-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-변시람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K045-M-01:K045:biological",
-        "from": "FH-K045-M-01",
-        "to": "K045",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-변시람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K045-M-02:FH-K045-M-01:biological",
-        "from": "FH-K045-M-02",
-        "to": "FH-K045-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-변시람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bcc0-cd08-acc4",
+    "name": "초계 변씨",
+    "crest": "clan-crests/bcc0-cd08-acc4.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "구로가 다음에 달려는 팬이 바로 신도림의 팬이고, 변시람은 그 팬 하나에 들 킬로와 손시간을 몇 해째 셈판에 적어 왔다. 신도림, 구로, 대림, 남구로의 터널과 케이블이 그의 몫인데, 그 가운데 신도림은 출구가 셋뿐이라 공기가 막히는 역이다. 팬이 돌기 전에는 신도림에 새 식구를 받지 않는다는 것이 쉰아홉 살 구간장의 고집이다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "신도림 구간장",
+    "품계": "구간장",
+    "생업": "구간 운영",
+    "일하는 역": "신도림역",
+    "잠자는 역": "신도림역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "구로가 다음에 달려는 팬이 바로 신도림의 팬이고, 변시람은 그 팬 하나에 들 킬로와 손시간을 몇 해째 셈판에 적어 왔다. 신도림, 구로, 대림, 남구로의 터널과 케이블이 그의 몫인데, 그 가운데 신도림은 출구가 셋뿐이라 공기가 막히는 역이다. 팬이 돌기 전에는 신도림에 새 식구를 받지 않는다는 것이 쉰아홉 살 구간장의 고집이다.",
+    "관직": "직함 신도림 구간장. 직위 신도림 구간장 · 자유도시들. 품계 구간장. 일하는 역 신도림역."
+  },
+  "values": {
+    "권위": -70,
+    "개방": 20,
+    "무력": -15,
+    "물질": 55,
+    "공동": 10,
+    "원칙": 10,
+    "공개": 25,
+    "자격": 65,
+    "분산": 70,
+    "변혁": 30
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": 20,
+    "위험": -15,
+    "과시": 20,
+    "지속": -10,
+    "지향": "이성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0045",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "변시람",
+        "type": "지휘",
+        "to": "강민서",
+        "basis": "구로 공장장 강민서의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "종마루",
+        "type": "지휘",
+        "to": "변시람",
+        "basis": "신도림 구간장 변시람의 직속"
+      },
+      {
+        "from": "배온결",
+        "type": "지휘",
+        "to": "변시람",
+        "basis": "신도림 구간장 변시람의 직속"
+      },
+      {
+        "from": "여시온",
+        "type": "지휘",
+        "to": "변시람",
+        "basis": "신도림 구간장 변시람의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K029",
+    "name": "강민서",
+    "courtId": "court:K029",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K045",
+    "members": [
+      {
+        "personId": "K050",
+        "name": "종마루"
+      },
+      {
+        "personId": "K052",
+        "name": "배온결"
+      },
+      {
+        "personId": "K055",
+        "name": "여시온"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
+      },
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "strategy": {
-        "base": 9,
-        "effective": 9
-      },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
-      },
-      "management": {
-        "base": 13,
-        "effective": 13
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
       }
     },
-    "skills": [
-      {
-        "id": "k045-station-counter",
-        "name": {
-          "ko": "대합실 창구 운영",
-          "en": "Station-counter administration"
-        },
-        "rating": 65
-      },
-      {
-        "id": "k045-public-referral",
-        "name": {
-          "ko": "공개 창구 안내",
-          "en": "Public-counter referral"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k045-civil-registration-first",
-        "name": {
-          "ko": "등록 창구 먼저",
-          "en": "Registration counter first"
-        },
-        "description": {
-          "ko": "시민권 창구가 닫힌 뒤 군수 화차를 붙인다.",
-          "en": "Admits military freight after the citizenship counter closes."
-        },
-        "behavior": {
-          "ko": "시민권 창구가 닫힌 뒤 군수 화차를 붙인다.",
-          "en": "Admits military freight after the citizenship counter closes."
-        },
-        "stress": {
-          "ko": "자체 원수가 끊겨 대합실 저수조가 마르면 역 대기열이 수문국 급수계약의 인질이 되는 것.",
-          "en": "That after the raw water was cut, when the concourse reservoir ran dry, the station waiting line would become the water contract's hostage."
-        },
-        "relationship": {
-          "ko": "구찬솔의 공구 화차를 승강장 순번에 올리고, 한지온의 배급 솥을 대합실 한쪽에 두며, 유세진의 서부 급수열차 우회를 구로에서 받는다.",
-          "en": "Putting Gu Chansol's tool cars into the platform order, placing Han Jion's ration pots at one end of the concourse, and receiving Yu Sejin's western water-train bypass at Guro."
-        },
-        "effects": []
-      },
-      {
-        "id": "k045-no-private-favor",
-        "name": {
-          "ko": "사적 청탁 거절",
-          "en": "Reject private favors"
-        },
-        "description": {
-          "ko": "청탁을 공개 창구로 돌린다.",
-          "en": "Redirects favors to public counters."
-        },
-        "behavior": {
-          "ko": "청탁을 공개 창구로 돌린다.",
-          "en": "Redirects favors to public counters."
-        },
-        "stress": {
-          "ko": "자체 원수가 끊겨 대합실 저수조가 마르면 역 대기열이 수문국 급수계약의 인질이 되는 것.",
-          "en": "That after the raw water was cut, when the concourse reservoir ran dry, the station waiting line would become the water contract's hostage."
-        },
-        "relationship": {
-          "ko": "구찬솔의 공구 화차를 승강장 순번에 올리고, 한지온의 배급 솥을 대합실 한쪽에 두며, 유세진의 서부 급수열차 우회를 구로에서 받는다.",
-          "en": "Putting Gu Chansol's tool cars into the platform order, placing Han Jion's ration pots at one end of the concourse, and receiving Yu Sejin's western water-train bypass at Guro."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "청탁 거절과 시민권·배급·출고 창구 운영을 반영했다. 시간표를 메우는 성향은 사람을 뒤로 미루는 긴장도 남긴다.",
-      "en": "Reflects refusal of favors and management of citizenship, ration, and dispatch counters. Prioritizing timetable gaps can also put people second."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -426,73 +188,118 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bcc0-cd08-acc4",
-    "name": "초계 변씨",
-    "crest": "clan-crests/bcc0-cd08-acc4.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -35,
-    "개방": 5,
-    "무력": -5,
-    "물질": 40,
-    "공동": 35,
-    "원칙": 20,
-    "공개": 25,
-    "자격": 45,
-    "분산": 15,
-    "변혁": 20
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": 20,
-    "위험": -15,
-    "과시": 20,
-    "지속": -10,
-    "지향": "이성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "소속": "규격맹",
-    "생업": "대합실 당직",
-    "품계": "감사",
-    "직함": "구로 대합실 역장",
-    "업무 위치": "구로5동. 변시람은 구로5동 대합실에서 구찬솔의 공구 화차를 공개 승강장 순번에 올린다. 한지온의 배급솥과 유세진의 급수열차가 겹치면 겨울 출고 칸을 나누어 다음 창구 당직에 넘기고 사적 청탁은 공개 접수로 돌린다.",
-    "가치관": "권위 −35 | 개방 5 | 무력 −5 | 물질 40 | 공동 35 | 원칙 20 | 공개 25 | 자격 45 | 분산 15 | 변혁 20",
-    "욕망": "갈망 30 | 독점 20 | 위험 −15 | 과시 20 | 지속 −10 | 지향 이성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 구로 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 구로5동. 변시람은 구로5동 대합실에서 구찬솔의 공구 화차를 공개 승강장 순번에 올린다. 한지온의 배급솥과 유세진의 급수열차가 겹치면 겨울 출고 칸을 나누어 다음 창구 당직에 넘기고 사적 청탁은 공개 접수로 돌린다.",
-    "관직": "품계 감사. 직함은 구로 대합실 역장. 대합실 배급과 출고 창구를 매일 공개하고, 군수 화차는 시민권 등록 창구가 닫힌 뒤에만 붙인다.",
-    "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 구로 대합실 역장 자리의 서명이 장부에 올랐다.",
-    "관계": "구찬솔의 공구 화차를 승강장 순번에 올리고, 한지온의 배급 솥을 대합실 한쪽에 두며, 유세진의 서부 급수열차 우회를 구로에서 받는다.",
-    "야망": "구로 대합실을 부품 출고·시민권 등록·배급 솥이 한 지붕에서 서명되는 규격맹의 대면 창구로 만든다.",
-    "공포": "자체 원수가 끊겨 대합실 저수조가 마르면 역 대기열이 수문국 급수계약의 인질이 되는 것.",
-    "개입": "대체 저수 펌프를 구해 봉인을 풀거나, 창구 담합 장부를 폭로해 역 추첨을 다시 열 수 있다."
-  },
-  "biography": "승강장 분진으로 작업반 규모를 읽고, 급수열차를 정치 순위로 미루는 명령을 참지 못한다. 시간표의 빈칸을 사람보다 먼저 메운다.\n\n- 소속: 규격맹\n- 생업: 대합실 당직\n- 품계: 감사\n- 직함: 구로 대합실 역장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 구로 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 구로5동. 변시람은 구로5동 대합실에서 구찬솔의 공구 화차를 공개 승강장 순번에 올린다. 한지온의 배급솥과 유세진의 급수열차가 겹치면 겨울 출고 칸을 나누어 다음 창구 당직에 넘기고 사적 청탁은 공개 접수로 돌린다.\n\n**관직.** 품계 감사. 직함은 구로 대합실 역장. 대합실 배급과 출고 창구를 매일 공개하고, 군수 화차는 시민권 등록 창구가 닫힌 뒤에만 붙인다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 구로 대합실 역장 자리의 서명이 장부에 올랐다.\n\n**관계.** 구찬솔의 공구 화차를 승강장 순번에 올리고, 한지온의 배급 솥을 대합실 한쪽에 두며, 유세진의 서부 급수열차 우회를 구로에서 받는다.\n\n**야망.** 구로 대합실을 부품 출고·시민권 등록·배급 솥이 한 지붕에서 서명되는 규격맹의 대면 창구로 만든다.\n\n**공포.** 자체 원수가 끊겨 대합실 저수조가 마르면 역 대기열이 수문국 급수계약의 인질이 되는 것.\n\n**개입.** 대체 저수 펌프를 구해 봉인을 풀거나, 창구 담합 장부를 폭로해 역 추첨을 다시 열 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 5 | 무력 −5 | 물질 40 | 공동 35 | 원칙 20 | 공개 25 | 자격 45 | 분산 15 | 변혁 20\n- 욕망: 갈망 30 | 독점 20 | 위험 −15 | 과시 20 | 지속 −10 | 지향 이성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-02"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "변시람",
-        "type": "계약",
-        "to": "한지온",
-        "basis": "한지온의 배급 솥을 대합실 한쪽에 두며"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:section:구로구:신도림",
+      "name": {
+        "ko": "신도림 구간"
       },
-      {
-        "from": "변시람",
-        "type": "계약",
-        "to": "구찬솔",
-        "basis": "구찬솔의 공구 화차를 승강장 순번에 올리고"
-      }
-    ],
-    "incoming": []
-  }
+      "holderPersonId": "K045",
+      "directLiegePersonId": "K029",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "Sindorim",
+        "stationName": "신도림"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1153051000",
+          "name": "신도림동"
+        },
+        {
+          "id": "region:1153056000",
+          "name": "구로5동"
+        },
+        {
+          "id": "region:1156072000",
+          "name": "대림3동"
+        },
+        {
+          "id": "region:1153054000",
+          "name": "구로3동"
+        }
+      ],
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ],
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:대림",
+      "name": {
+        "ko": "대림역"
+      },
+      "holderPersonId": "K050",
+      "directLiegePersonId": "K045",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "대림",
+        "stationName": "대림"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1156072000",
+          "name": "대림3동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "종마루",
+      "holderRoute": "/people/person-0050"
+    },
+    {
+      "id": "holding:v3:station:Sindorim",
+      "name": {
+        "ko": "신도림역"
+      },
+      "holderPersonId": "K052",
+      "directLiegePersonId": "K045",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "Sindorim",
+        "stationName": "신도림"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1153051000",
+          "name": "신도림동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "배온결",
+      "holderRoute": "/people/person-0052"
+    },
+    {
+      "id": "holding:v3:station:Guro",
+      "name": {
+        "ko": "구로역"
+      },
+      "holderPersonId": "K055",
+      "directLiegePersonId": "K045",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "Guro",
+        "stationName": "구로"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1153056000",
+          "name": "구로5동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "여시온",
+      "holderRoute": "/people/person-0055"
+    }
+  ]
 }

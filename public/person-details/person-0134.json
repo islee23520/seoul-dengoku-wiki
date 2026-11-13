@@ -1,397 +1,133 @@
 {
   "id": "person-0134",
   "name": "주단아",
-  "title": "고덕 급수시장 경매사",
-  "position": "고덕 급수시장 경매사",
+  "title": "굽은다리역 정비장",
+  "position": "굽은다리역 정비장 · 아크",
   "characterId": "K133",
-  "rank": "병장",
-  "commonTier": "T5",
-  "occupation": "급수시장 수질 표본 확인·경매",
+  "rank": "정비장",
+  "commonTier": "T4",
+  "occupation": "정비대 통솔",
   "gender": "남성",
   "stage": "S2",
-  "state": "S05",
-  "stateName": "동방사",
-  "sourceRoute": "/world/Cast-State-05#인물-주단아",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0134",
   "birthDate": "2077-10-15",
   "birthday": "10-15",
   "age": 49,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-05.json#/content/203"
-  ],
-  "familyTree": {
-    "personId": "K133",
-    "nodes": [
-      {
-        "id": "K133",
-        "personId": "K133",
-        "kind": "person",
-        "name": "주단아",
-        "birthDate": "2077-10-15",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K133"
-          },
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-주단아-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 고덕 급수시장 경매사 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-주단아-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0134"
-      },
-      {
-        "id": "FH-K133-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "주승호",
-        "lineage": {
-          "surname": "주",
-          "bongwan": "신안",
-          "clan": "c8fc-c2e0-c548"
-        },
-        "birthDate": "2047-10-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-주단아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2085,
-            "summary": "주승호는 영등포 정수 당직에서 급수시장 수질 표본 확인·경매 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-주단아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K133-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "주승민",
-        "lineage": {
-          "surname": "주",
-          "bongwan": "신안",
-          "clan": "c8fc-c2e0-c548"
-        },
-        "birthDate": "2017-10-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-주단아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "주승민은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-주단아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K133-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이현원",
-        "birthDate": "2047-10-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-주단아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2085,
-            "summary": "이현원은 영등포 정수 당직에서 급수시장 수질 표본 확인·경매 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-주단아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K133-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최현영",
-        "birthDate": "2017-10-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-주단아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최현영은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-주단아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K133-P-01:K133:biological",
-        "from": "FH-K133-P-01",
-        "to": "K133",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-주단아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K133-P-02:FH-K133-P-01:biological",
-        "from": "FH-K133-P-02",
-        "to": "FH-K133-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-주단아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K133-M-01:K133:biological",
-        "from": "FH-K133-M-01",
-        "to": "K133",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-주단아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K133-M-02:FH-K133-M-01:biological",
-        "from": "FH-K133-M-02",
-        "to": "FH-K133-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-주단아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c8fc-c2e0-c548",
+    "name": "신안 주씨",
+    "crest": "clan-crests/c8fc-c2e0-c548.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "주단아는 강동이 아크에 든 2122년부터 굽은다리역 정비대에 서 왔고, 그 정비대에서 일하다 두 번 다친 몸을 고치며 부위를 받았다. 굽은다리 정비대는 하루에 맞춤을 받는 사람을 열둘로 정해 두었는데, 그는 열셋째 사람이 오면 자기 저녁 끼니를 미루고 받는다. 강동 곁집이 가문 징집병을 모을 때는 그 정비대에서 맞춤을 받는 집안마다 몇 사람을 낼 수 있는지를 적어 천호의 곁집장 배우진에게 올린다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "굽은다리역 정비장",
+    "품계": "정비장",
+    "생업": "정비대 통솔",
+    "일하는 역": "굽은다리역",
+    "잠자는 역": "굽은다리역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 3
+  },
+  "sections": {
+    "생애": "주단아는 강동이 아크에 든 2122년부터 굽은다리역 정비대에 서 왔고, 그 정비대에서 일하다 두 번 다친 몸을 고치며 부위를 받았다. 굽은다리 정비대는 하루에 맞춤을 받는 사람을 열둘로 정해 두었는데, 그는 열셋째 사람이 오면 자기 저녁 끼니를 미루고 받는다. 강동 곁집이 가문 징집병을 모을 때는 그 정비대에서 맞춤을 받는 집안마다 몇 사람을 낼 수 있는지를 적어 천호의 곁집장 배우진에게 올린다.",
+    "관직": "직함 굽은다리역 정비장. 직위 굽은다리역 정비장 · 아크. 품계 정비장. 일하는 역 굽은다리역."
+  },
+  "values": {
+    "권위": 80,
+    "개방": -55,
+    "무력": 70,
+    "물질": -5,
+    "공동": 55,
+    "원칙": -30,
+    "공개": -80,
+    "자격": -55,
+    "분산": -80,
+    "변혁": 25
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": 0,
+    "위험": 35,
+    "과시": 25,
+    "지속": 40,
+    "지향": "유동",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0134",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "주단아",
+        "type": "지휘",
+        "to": "배우진",
+        "basis": "강동 곁집장 배우진의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K115",
+    "name": "배우진",
+    "courtId": "court:K115",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 12,
-        "effective": 12
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k133-water-auction",
-        "name": {
-          "ko": "급수 경매",
-          "en": "Water auction"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k133-choice",
-        "name": {
-          "ko": "낙찰보다 품질 기준",
-          "en": "Quality before sale"
-        },
-        "description": {
-          "ko": "강바람보다 수통 시세를 빨리 읽고, 저울을 속이는 상인을 아침 추첨에서 즉시 뺀다. 흥정을 노래처럼 하지만 복무 골목의 가격은 올리지 않는다.",
-          "en": "She read canteen prices faster than the river wind and struck out at once from the morning lottery any merchant who cheated the scales. She bargained like a song but never raised the price in the service alleys."
-        },
-        "behavior": {
-          "ko": "일화. 남윤경 쪽의 비상 시세 제의가 고덕 급수시장 아침 추첨 직전에 도착한다. 주단아는 제의서를 돌려보내고 경매대에 오른 원수의 수질 표본 스티커를 하나씩 읽으며, 기준에 모자란 원수는 낙찰자 이름을 적은 뒤 선석에 묶어 둔다.",
-          "en": "Anecdote. An emergency price offer from Nam Yungyeong's side arrives just before the Godeok water market's morning lottery. Ju Dana sends the offer back, reads the quality-sample sticker on each lot of raw water, and ties the substandard lots to the berth after writing down the winning bidder's name."
-        },
-        "stress": {
-          "ko": "공포. 가락의 가격 원장이 고덕 선석까지 삼켜 동부 식수가 군량 시세로 팔리는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That Garak's price ledger would swallow the Godeok berths and eastern drinking water would sell at ration prices. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 주은솔의 관문 전표와 순번을 나누는 계약이고, 정소율의 급수 구역 봉인을 경매 전 확인하며, 남윤경의 비상 시세 제의를 원한으로 돌려보낸다.",
-          "en": "Relations. A contract splitting gate slips and order with Ju Eunsol, checking Jeong Soyul's water district seals before the auction, and sending Nam Yungyeong's emergency price offer back as a grudge."
-        },
-        "effects": []
-      },
-      {
-        "id": "k133-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 병장. 직함은 고덕 급수시장 경매사. 경매 시작 전 수질 표본 스티커를 확인하고, 기준 미달 원수는 낙찰이 되어도 출항시키지 않는다.",
-          "en": "Office. Rank: sergeant. Title: Godeok water market auctioneer. She checked water-quality specimen stickers before the auction opened and let no substandard raw water sail even after a winning bid."
-        },
-        "behavior": {
-          "ko": "관직. 품계 병장. 직함은 고덕 급수시장 경매사. 경매 시작 전 수질 표본 스티커를 확인하고, 기준 미달 원수는 낙찰이 되어도 출항시키지 않는다.",
-          "en": "Office. Rank: sergeant. Title: Godeok water market auctioneer. She checked water-quality specimen stickers before the auction opened and let no substandard raw water sail even after a winning bid."
-        },
-        "stress": {
-          "ko": "공포. 가락의 가격 원장이 고덕 선석까지 삼켜 동부 식수가 군량 시세로 팔리는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That Garak's price ledger would swallow the Godeok berths and eastern drinking water would sell at ration prices. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 주은솔의 관문 전표와 순번을 나누는 계약이고, 정소율의 급수 구역 봉인을 경매 전 확인하며, 남윤경의 비상 시세 제의를 원한으로 돌려보낸다.",
-          "en": "Relations. A contract splitting gate slips and order with Ju Eunsol, checking Jeong Soyul's water district seals before the auction, and sending Nam Yungyeong's emergency price offer back as a grudge."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "일화. 남윤경 쪽의 비상 시세 제의가 고덕 급수시장 아침 추첨 직전에 도착한다. 주단아는 제의서를 돌려보내고 경매대에 오른 원수의 수질 표본 스티커를 하나씩 읽으며, 기준에 모자란 원수는 낙찰자 이름을 적은 뒤 선석에 묶어 둔다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Anecdote. An emergency price offer from Nam Yungyeong's side arrives just before the Godeok water market's morning lottery. Ju Dana sends the offer back, reads the quality-sample sticker on each lot of raw water, and ties the substandard lots to the berth after writing down the winning bidder's name. Titles and ambitions are not treated as accomplished authority or results."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -401,7 +137,7 @@
         {
           "id": "right-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "head",
@@ -417,64 +153,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c8fc-c2e0-c548",
-    "name": "신안 주씨",
-    "crest": "clan-crests/c8fc-c2e0-c548.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 55,
-    "개방": -40,
-    "무력": 60,
-    "물질": 45,
-    "공동": 35,
-    "원칙": -20,
-    "공개": -35,
-    "자격": -20,
-    "분산": -50,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": 0,
-    "위험": 35,
-    "과시": 25,
-    "지속": 40,
-    "지향": "유동",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "동방사",
-    "생업": "급수시장 수질 표본 확인·경매",
-    "품계": "병장",
-    "직함": "고덕 급수시장 경매사",
-    "가치관": "권위 55 | 개방 −40 | 무력 60 | 물질 45 | 공동 35 | 원칙 −20 | 공개 −35 | 자격 −20 | 분산 −50 | 변혁 −20",
-    "욕망": "갈망 10 | 독점 0 | 위험 35 | 과시 25 | 지속 40 | 지향 유동 | 결합 없음"
-  },
-  "sections": {
-    "관직": "품계 병장. 직함은 고덕 급수시장 경매사. 경매 시작 전 수질 표본 스티커를 확인하고, 기준 미달 원수는 낙찰이 되어도 출항시키지 않는다.",
-    "일화": "남윤경 쪽의 비상 시세 제의가 고덕 급수시장 아침 추첨 직전에 도착한다. 주단아는 제의서를 돌려보내고 경매대에 오른 원수의 수질 표본 스티커를 하나씩 읽으며, 기준에 모자란 원수는 낙찰자 이름을 적은 뒤 선석에 묶어 둔다.",
-    "관계": "관문 전표와 순번을 나누는 계약이고, 정소율의 급수 구역 봉인을 경매 전 확인하며, 남윤경의 비상 시세 제의를 원한으로 돌려보낸다.",
-    "야망": "급수 바지선과 관문 화물의 경매를 행정 봉인과 함께만 열어 물 시세가 보호계약의 공개 장부가 되게 한다.\n\n공포. 주단아는 가락의 가격 원장이 고덕 선석까지 삼켜 동부 식수가 군량 시세로 팔리는 일을 두려워한다.",
-    "개입": "밀선 낙찰 장부를 폭로하거나, 봉인 표본을 호송해 그의 공개 경매를 지킬 수 있다."
-  },
-  "biography": "주단아는 강바람보다 수통 시세를 빨리 읽고, 저울을 속이는 상인을 아침 추첨에서 즉시 뺀다. 흥정을 노래처럼 하지만 복무 골목의 가격은 올리지 않는다.\n\n- 소속: 동방사\n- 생업: 급수시장 수질 표본 확인·경매\n- 품계: 병장\n- 직함: 고덕 급수시장 경매사\n생애. 주단아는 3세대에 태어났다. 주단아는 영등포 정수 당직에서 자랐다. 주단아의 고덕 급수시장 경매사 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 주단아는 고덕1동과 연결된 업무에서 급수시장 수질 표본과 행정 봉인을 맡고 기준에 못 미친 원수의 출항을 보류한다.\n\n**관직.** 품계 병장. 직함은 고덕 급수시장 경매사. 경매 시작 전 수질 표본 스티커를 확인하고, 기준 미달 원수는 낙찰이 되어도 출항시키지 않는다.\n\n**일화.** 남윤경 쪽의 비상 시세 제의가 고덕 급수시장 아침 추첨 직전에 도착한다. 주단아는 제의서를 돌려보내고 경매대에 오른 원수의 수질 표본 스티커를 하나씩 읽으며, 기준에 모자란 원수는 낙찰자 이름을 적은 뒤 선석에 묶어 둔다.\n\n**관계.** 관문 전표와 순번을 나누는 계약이고, 정소율의 급수 구역 봉인을 경매 전 확인하며, 남윤경의 비상 시세 제의를 원한으로 돌려보낸다.\n\n**야망.** 급수 바지선과 관문 화물의 경매를 행정 봉인과 함께만 열어 물 시세가 보호계약의 공개 장부가 되게 한다.\n\n공포. 주단아는 가락의 가격 원장이 고덕 선석까지 삼켜 동부 식수가 군량 시세로 팔리는 일을 두려워한다.\n\n**개입.** 밀선 낙찰 장부를 폭로하거나, 봉인 표본을 호송해 그의 공개 경매를 지킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −40 | 무력 60 | 물질 45 | 공동 35 | 원칙 −20 | 공개 −35 | 자격 −20 | 분산 −50 | 변혁 −20\n- 욕망: 갈망 10 | 독점 0 | 위험 35 | 과시 25 | 지속 40 | 지향 유동 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-05"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "주단아",
-        "type": "계약",
-        "to": "정소율",
-        "basis": "정소율의 급수 구역 봉인을 경매 전 확인하며"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:굽은다리",
+      "name": {
+        "ko": "굽은다리역"
+      },
+      "holderPersonId": "K133",
+      "directLiegePersonId": "K115",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "굽은다리",
+        "stationName": "굽은다리"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1174060000",
+          "name": "천호1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

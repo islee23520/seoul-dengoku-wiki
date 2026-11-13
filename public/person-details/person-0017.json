@@ -1,501 +1,136 @@
 {
   "id": "person-0017",
   "name": "변고운",
-  "title": "영등포 대합실 역장",
-  "position": "영등포 대합실 역장",
+  "title": "여의도 구간장",
+  "position": "여의도 구간장 · 자유도시들",
   "characterId": "K017",
-  "rank": "당직장",
-  "commonTier": "T4",
-  "occupation": "대합실 당직",
+  "rank": "구간장",
+  "commonTier": "T3",
+  "occupation": "구간 운영",
   "gender": "여성",
   "stage": "S2",
-  "state": "S01",
-  "stateName": "수문국",
-  "sourceRoute": "/world/Cast-State-01#인물-변고운",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0017",
   "birthDate": "2090-09-06",
   "birthday": "09-06",
   "age": 36,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-01.json#/content/49",
-    "lore/characters/Cast-State-01.json#/content/51"
-  ],
-  "familyTree": {
-    "personId": "K017",
-    "nodes": [
-      {
-        "id": "K017",
-        "personId": "K017",
-        "kind": "person",
-        "name": "변고운",
-        "birthDate": "2090-09-06",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K017"
-          },
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-변고운-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 영등포 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-변고운-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0017"
-      },
-      {
-        "id": "FH-K017-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "변승석",
-        "lineage": {
-          "surname": "변",
-          "bongwan": "원주",
-          "clan": "bcc0-c6d0-c8fc-908a"
-        },
-        "birthDate": "2060-09-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-변고운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2098,
-            "summary": "변승석은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-변고운-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K017-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "변승준",
-        "lineage": {
-          "surname": "변",
-          "bongwan": "원주",
-          "clan": "bcc0-c6d0-c8fc-908a"
-        },
-        "birthDate": "2030-09-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-변고운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "변승준은 대합실 당직에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-변고운-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K017-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "변승호",
-        "lineage": {
-          "surname": "변",
-          "bongwan": "원주",
-          "clan": "bcc0-c6d0-c8fc-908a"
-        },
-        "birthDate": "2000-09-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-변고운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "변승호는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-변고운-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K017-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한승진",
-        "birthDate": "2060-09-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-변고운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2098,
-            "summary": "한승진은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-변고운-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K017-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강승원",
-        "birthDate": "2030-09-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-변고운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "강승원은 대합실 당직에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-변고운-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K017-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승현",
-        "birthDate": "2000-09-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-변고운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임승현은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-변고운-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K017-P-01:K017:biological",
-        "from": "FH-K017-P-01",
-        "to": "K017",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-변고운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K017-P-02:FH-K017-P-01:biological",
-        "from": "FH-K017-P-02",
-        "to": "FH-K017-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-변고운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K017-P-03:FH-K017-P-02:biological",
-        "from": "FH-K017-P-03",
-        "to": "FH-K017-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-변고운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K017-M-01:K017:biological",
-        "from": "FH-K017-M-01",
-        "to": "K017",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-변고운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K017-M-02:FH-K017-M-01:biological",
-        "from": "FH-K017-M-02",
-        "to": "FH-K017-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-변고운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K017-M-03:FH-K017-M-02:biological",
-        "from": "FH-K017-M-03",
-        "to": "FH-K017-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-변고운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bcc0-c6d0-c8fc-908a",
+    "name": "원주 변씨",
+    "crest": "clan-crests/bcc0-c6d0-c8fc-908a.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "계약회 전까지 변고운은 의사당 아래층과 9호선 국회의사당역 층을 사흘 동안 데울 열 몫을 쌓아 두어야 한다. 세 번째 급수계약의 자리가 그녀의 여의도 구간 네 역 안에 들었기 때문이다. 정부 사람은 마포–여의나루 강 밑 터널로 오므로 여의나루 남쪽 입구의 열과 빛도 그녀가 맡는다. 손님맞이를 이유로 역 사람들의 빛 시간을 줄이라는 쪽지가 오면, 그녀는 그 뒷면에 지난 철 역 사람들의 빛 시간을 적어 돌려보낸다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "여의도 구간장",
+    "품계": "구간장",
+    "생업": "구간 운영",
+    "일하는 역": "여의도역",
+    "잠자는 역": "여의도역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "계약회 전까지 변고운은 의사당 아래층과 9호선 국회의사당역 층을 사흘 동안 데울 열 몫을 쌓아 두어야 한다. 세 번째 급수계약의 자리가 그녀의 여의도 구간 네 역 안에 들었기 때문이다. 정부 사람은 마포–여의나루 강 밑 터널로 오므로 여의나루 남쪽 입구의 열과 빛도 그녀가 맡는다. 손님맞이를 이유로 역 사람들의 빛 시간을 줄이라는 쪽지가 오면, 그녀는 그 뒷면에 지난 철 역 사람들의 빛 시간을 적어 돌려보낸다.",
+    "관직": "직함 여의도 구간장. 직위 여의도 구간장 · 자유도시들. 품계 구간장. 일하는 역 여의도역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": 10,
+    "무력": 5,
+    "물질": 35,
+    "공동": 5,
+    "원칙": 0,
+    "공개": 20,
+    "자격": 30,
+    "분산": 5,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": 5,
+    "위험": -5,
+    "과시": -25,
+    "지속": -10,
+    "지향": "양성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0017",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "변고운",
+        "type": "지휘",
+        "to": "한재목",
+        "basis": "영등포 장주 한재목의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "엄새울",
+        "type": "지휘",
+        "to": "변고운",
+        "basis": "여의도 구간장 변고운의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K001",
+    "name": "한재목",
+    "courtId": "court:K001",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K017",
+    "members": [
+      {
+        "personId": "K025",
+        "name": "엄새울"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 11,
-        "effective": 11
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "management": {
-        "base": 13,
-        "effective": 13
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
       }
     },
-    "skills": [
-      {
-        "id": "k017-public-announcements",
-        "name": {
-          "ko": "대합실 방송",
-          "en": "Station announcements"
-        },
-        "rating": 60
-      },
-      {
-        "id": "k017-queue-administration",
-        "name": {
-          "ko": "대기표 관리",
-          "en": "Queue administration"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k017-open-counter",
-        "name": {
-          "ko": "공개 창구로",
-          "en": "Use the public counter"
-        },
-        "description": {
-          "ko": "사적 청탁을 공개 창구로 돌려보낸다.",
-          "en": "Redirects private requests to the public counter."
-        },
-        "behavior": {
-          "ko": "사적 청탁을 공개 창구로 돌려보낸다.",
-          "en": "Redirects private requests to the public counter."
-        },
-        "stress": {
-          "ko": "단수 예고가 뜨면 직접 방송을 잡는다.",
-          "en": "Takes the microphone personally after cutoff warnings."
-        },
-        "relationship": {
-          "ko": "임바다의 골목 대기표를 역 칠판에 옮긴다.",
-          "en": "Posts Im Bada’s neighborhood queue lists at the station."
-        },
-        "effects": []
-      },
-      {
-        "id": "k017-water-before-military",
-        "name": {
-          "ko": "급수 먼저",
-          "en": "Water first"
-        },
-        "description": {
-          "ko": "급수열차 출발 뒤에 군수 화차를 붙인다.",
-          "en": "Admits military freight only after water trains leave."
-        },
-        "behavior": {
-          "ko": "급수열차 출발 뒤에 군수 화차를 붙인다.",
-          "en": "Admits military freight only after water trains leave."
-        },
-        "stress": {
-          "ko": "배급열을 군수 뒤로 미루라는 명령을 모욕으로 듣는다.",
-          "en": "Takes orders to put ration queues behind military freight as insulting."
-        },
-        "relationship": {
-          "ko": "유세진의 배차 순서를 현장에서 집행한다.",
-          "en": "Implements Yu Sejin’s dispatch order on the platform."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "청탁을 공개 창구로 돌리고 급수·진료 대기열을 운영한다. 대합실 운영의 숙련은 인정하되 군수 화차 제한을 전투 지휘 실적으로 계산하지 않았다.",
-      "en": "Redirects favors and administers water and medical queues. Station-management competence is supported; restricting military freight is not counted as combat command."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -535,122 +170,54 @@
   },
   "confirmedHoldings": [
     {
-      "id": "holding:yeongdeungpo-concourse",
+      "id": "holding:v3:section:영등포구:여의도",
       "name": {
-        "ko": "영등포 대합실"
+        "ko": "여의도 구간"
       },
       "holderPersonId": "K017",
       "directLiegePersonId": "K001",
-      "stateId": "S01",
-      "facilityRef": {
-        "sourcePath": "lore/regions/station-interiors.json",
-        "stationName": "영등포",
-        "stationId": "Yeongdeungpo",
-        "stationIdentity": {
-          "district": "영등포구",
-          "lat": 37.51536,
-          "lon": 126.90693
-        },
-        "siteSourcePath": "lore/regions/content/11560.json",
-        "siteAnchor": "osm:node:5835544502",
-        "layerId": "concourse",
-        "layerName": "역사 대합실"
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "여의도",
+        "stationName": "여의도"
       },
-      "adminRefs": [],
+      "adminRefs": [
+        {
+          "id": "region:1156054000",
+          "name": "여의동"
+        }
+      ],
+      "territorialScale": "section",
+      "titleId": null,
       "geometrySource": null,
-      "territorialScale": null,
       "formalTitleRank": null
     }
   ],
-  "clan": {
-    "id": "bcc0-c6d0-c8fc-908a",
-    "name": "원주 변씨",
-    "crest": "clan-crests/bcc0-c6d0-c8fc-908a.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 55,
-    "개방": -5,
-    "무력": 15,
-    "물질": 20,
-    "공동": 30,
-    "원칙": 10,
-    "공개": 20,
-    "자격": 10,
-    "분산": -50,
-    "변혁": -25
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": 5,
-    "위험": -5,
-    "과시": -25,
-    "지속": -10,
-    "지향": "양성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "소속": "수문국",
-    "생업": "대합실 당직",
-    "품계": "당직장",
-    "직함": "영등포 대합실 역장",
-    "업무 위치": "영등포본동. 영등포본동 대합실에서 변고운은 진하겸의 진료 중단을 방송하고 유세진의 열차 순서와 임바다의 배급 대기표를 공개 칠판에 옮긴다.",
-    "가치관": "권위 55 | 개방 −5 | 무력 15 | 물질 20 | 공동 30 | 원칙 10 | 공개 20 | 자격 10 | 분산 −50 | 변혁 −25",
-    "욕망": "갈망 40 | 독점 5 | 위험 −5 | 과시 −25 | 지속 −10 | 지향 양성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 영등포 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 영등포본동. 영등포본동 대합실에서 변고운은 진하겸의 진료 중단을 방송하고 유세진의 열차 순서와 임바다의 배급 대기표를 공개 칠판에 옮긴다.",
-    "관직": "품계 당직장. 직함은 영등포 대합실 역장. 대합실 배급 창구와 의무 대기표를 매일 공개하고, 군수 화차는 급수열차가 떠난 뒤에만 승강장에 붙인다.",
-    "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 영등포 대합실 역장 자리의 서명이 장부에 올랐다.",
-    "관계": "진하겸의 의무소 봉쇄를 대합실 방송으로 알리는 동맹이고, 유세진의 배차 순서를 승강장에서 집행하며, 임바다의 골목 대기표를 역 칠판에 옮겨 적는다.",
-    "야망": "영등포 대합실을 급수·진료·통행이 한 지붕에서 서명되는 서부 허브로 만들어 물 계약의 대면 창구가 된다.",
-    "공포": "탁수 소문만으로 대합실이 봉쇄되고 주민이 교량 밑 밀선으로 흩어지는 것.",
-    "개입": "대합실 봉쇄 명령을 막아 창구를 지키거나, 대기표 조작을 밝혀 역장을 강등시킬 수 있다."
-  },
-  "biography": "승강장 습기로 인파를 가늠하고, 배급 대기열을 군수 화차 뒤로 미루라는 명령을 모욕으로 듣는다. 온화하나 단수 예고가 뜨면 방송을 직접 잡는다.\n\n- 소속: 수문국\n- 생업: 대합실 당직\n- 품계: 당직장\n- 직함: 영등포 대합실 역장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 영등포 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 영등포본동. 영등포본동 대합실에서 변고운은 진하겸의 진료 중단을 방송하고 유세진의 열차 순서와 임바다의 배급 대기표를 공개 칠판에 옮긴다.\n\n**관직.** 품계 당직장. 직함은 영등포 대합실 역장. 대합실 배급 창구와 의무 대기표를 매일 공개하고, 군수 화차는 급수열차가 떠난 뒤에만 승강장에 붙인다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 영등포 대합실 역장 자리의 서명이 장부에 올랐다.\n\n**관계.** 진하겸의 의무소 봉쇄를 대합실 방송으로 알리는 동맹이고, 유세진의 배차 순서를 승강장에서 집행하며, 임바다의 골목 대기표를 역 칠판에 옮겨 적는다.\n\n**야망.** 영등포 대합실을 급수·진료·통행이 한 지붕에서 서명되는 서부 허브로 만들어 물 계약의 대면 창구가 된다.\n\n**공포.** 탁수 소문만으로 대합실이 봉쇄되고 주민이 교량 밑 밀선으로 흩어지는 것.\n\n**개입.** 대합실 봉쇄 명령을 막아 창구를 지키거나, 대기표 조작을 밝혀 역장을 강등시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −5 | 무력 15 | 물질 20 | 공동 30 | 원칙 10 | 공개 20 | 자격 10 | 분산 −50 | 변혁 −25\n- 욕망: 갈망 40 | 독점 5 | 위험 −5 | 과시 −25 | 지속 −10 | 지향 양성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-01"
-  ],
-  "directLiege": {
-    "personId": "K001",
-    "name": "한재목",
-    "relationKind": "direct-liege",
-    "ownerTerm": "직속 주군",
-    "effectiveYear": 2126
-  },
-  "court": {
-    "id": "court:K017",
-    "members": [
-      {
-        "personId": "K600",
-        "name": "송하지"
-      }
-    ]
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "변고운",
-        "type": "지휘",
-        "to": "유세진",
-        "basis": "유세진의 배차 순서를 승강장에서 집행하며"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:여의도",
+      "name": {
+        "ko": "여의도역"
       },
-      {
-        "from": "변고운",
-        "type": "계약",
-        "to": "진하겸",
-        "basis": "진하겸의 의무소 봉쇄를 대합실 방송으로 알리는 동맹이고"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "송하지",
-        "type": "지휘",
-        "to": "변고운",
-        "basis": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"
-      }
-    ]
-  }
+      "holderPersonId": "K025",
+      "directLiegePersonId": "K017",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "여의도",
+        "stationName": "여의도"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1156054000",
+          "name": "여의동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "엄새울",
+      "holderRoute": "/people/person-0025"
+    }
+  ]
 }

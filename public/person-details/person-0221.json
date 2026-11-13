@@ -1,387 +1,126 @@
 {
   "id": "person-0221",
   "name": "권미래",
-  "title": "송신 기사",
-  "position": "금고 기사",
+  "title": "이을 자식",
+  "position": "이을 자식 · 개화역",
   "characterId": "K220",
-  "rank": "평의원",
-  "commonTier": "T4",
-  "occupation": "금고 예비 전원 점검·배분",
+  "rank": "후계",
+  "commonTier": "T2",
+  "occupation": "장터 거래",
   "gender": "여성",
   "stage": "S1",
-  "state": "S09",
-  "stateName": "여의도출자연합회",
-  "sourceRoute": "/world/Cast-State-09#인물-권미래",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0221",
   "birthDate": "2078-01-20",
   "birthday": "01-20",
   "age": 48,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-09.json#/content/6",
-    "lore/characters/Cast-State-09.json#/content/8",
-    "lore/characters/Cast-State-09.json#/content/10"
-  ],
-  "familyTree": {
-    "personId": "K220",
-    "nodes": [
-      {
-        "id": "K220",
-        "personId": "K220",
-        "kind": "person",
-        "name": "권미래",
-        "birthDate": "2078-01-20",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K220"
-          },
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-권미래-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 여의도 금고 당직에서 자랐다. 금고 기사 자리는 정전 사흘 금고 유지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-권미래-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0221"
-      },
-      {
-        "id": "FH-K220-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "권승원",
-        "lineage": {
-          "surname": "권",
-          "bongwan": "안동",
-          "clan": "ad8c-c548-b3d9"
-        },
-        "birthDate": "2048-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-권미래-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2086,
-            "summary": "권승원은 여의도 금고 당직에서 금고 예비 전원 점검·배분 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-권미래-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K220-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "권승진",
-        "lineage": {
-          "surname": "권",
-          "bongwan": "안동",
-          "clan": "ad8c-c548-b3d9"
-        },
-        "birthDate": "2018-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-권미래-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "권승진은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-권미래-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K220-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤현희",
-        "birthDate": "2048-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-권미래-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2086,
-            "summary": "윤현희는 여의도 금고 당직에서 금고 예비 전원 점검·배분 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-권미래-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K220-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한현아",
-        "birthDate": "2018-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-권미래-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한현아는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-권미래-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K220-P-01:K220:biological",
-        "from": "FH-K220-P-01",
-        "to": "K220",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-권미래-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K220-P-02:FH-K220-P-01:biological",
-        "from": "FH-K220-P-02",
-        "to": "FH-K220-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-권미래-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K220-M-01:K220:biological",
-        "from": "FH-K220-M-01",
-        "to": "K220",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-권미래-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K220-M-02:FH-K220-M-01:biological",
-        "from": "FH-K220-M-02",
-        "to": "FH-K220-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-권미래-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ad8c-c548-b3d9",
+    "name": "안동 권씨",
+    "crest": "clan-crests/ad8c-c548-b3d9.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "강서는 바람지기를 대주회가 이름값으로 세우므로 자리가 피로 이어지지 않는다. 대주들은 바람지기 자리가 비면 다음 대주회까지 바람밭의 셈을 맡을 사람으로 권미래를 적어 두었고, 그는 올해 마흔여덟이다. 개화에 사는 그는 바람밭이 남긴 와트를 영등포 장터와 양천에 넘기는 거래를 맡고, 그 거래의 바탕으로 김포공항 구간 바람밭이 철마다 계약서에 적은 와트를 채웠는지 날마다 셈한다. 긴 밤 철 두 번 잇달아 수치를 못 채우면 바람지기가 물러나는 도시이니, 그가 적는 수치가 곧 최다인의 자리를 지키는 수치다. 그는 최다인 앞에서 그 셈을 한 번도 부풀리지 않겠다고 맹세했다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "이을 자식",
+    "품계": "후계",
+    "생업": "장터 거래",
+    "일하는 역": "개화역",
+    "잠자는 역": "개화역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "강서는 바람지기를 대주회가 이름값으로 세우므로 자리가 피로 이어지지 않는다. 대주들은 바람지기 자리가 비면 다음 대주회까지 바람밭의 셈을 맡을 사람으로 권미래를 적어 두었고, 그는 올해 마흔여덟이다. 개화에 사는 그는 바람밭이 남긴 와트를 영등포 장터와 양천에 넘기는 거래를 맡고, 그 거래의 바탕으로 김포공항 구간 바람밭이 철마다 계약서에 적은 와트를 채웠는지 날마다 셈한다. 긴 밤 철 두 번 잇달아 수치를 못 채우면 바람지기가 물러나는 도시이니, 그가 적는 수치가 곧 최다인의 자리를 지키는 수치다. 그는 최다인 앞에서 그 셈을 한 번도 부풀리지 않겠다고 맹세했다.",
+    "관직": "직함 이을 자식. 직위 이을 자식 · 개화역. 품계 후계. 일하는 역 개화역."
+  },
+  "values": {
+    "권위": -50,
+    "개방": 45,
+    "무력": -30,
+    "물질": 10,
+    "공동": -25,
+    "원칙": 10,
+    "공개": 75,
+    "자격": 25,
+    "분산": 75,
+    "변혁": 10
+  },
+  "desire": {
+    "갈망": -10,
+    "독점": 30,
+    "위험": -25,
+    "과시": 10,
+    "지속": 15,
+    "지향": "무성향",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0221",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "권미래",
+        "type": "지휘",
+        "to": "최다인",
+        "basis": "강서 바람지기 최다인의 직속"
+      },
+      {
+        "from": "권미래",
+        "type": "맹세",
+        "to": "최다인",
+        "basis": "바람밭이 채운 와트의 셈을 부풀리지 않겠다고 바람지기 앞에서 맹세했다"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K034",
+    "name": "최다인",
+    "courtId": "court:K034",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 11,
-        "effective": 11
-      },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 13,
-        "effective": 13
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
-      "learning": {
-        "base": 10,
-        "effective": 10
-      },
-      "prowess": {
+      "martial": {
         "base": 4,
         "effective": 4
       },
-      "endurance": {
-        "base": 11,
-        "effective": 11
-      }
-    },
-    "skills": [
-      {
-        "id": "backup-power",
-        "name": {
-          "ko": "예비 전원 운용",
-          "en": "Backup power operation"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "backup-power-disposition",
-        "name": {
-          "ko": "전원에 몰입함",
-          "en": "Absorbed in power continuity"
-        },
-        "description": {
-          "ko": "밤샘을 두려워하지 않고 전원 끊김을 자기 모욕으로 느낀다.",
-          "en": "Takes power loss personally and does not fear overnight work."
-        },
-        "behavior": {
-          "ko": "밤샘을 두려워하지 않고 전원 끊김을 자기 모욕으로 느낀다.",
-          "en": "Takes power loss personally and does not fear overnight work."
-        },
-        "stress": {
-          "ko": "사고가 화폐 신용을 망칠 것을 두려워한다.",
-          "en": "Fears accidents destroying currency trust."
-        },
-        "relationship": {
-          "ko": "최지우의 지휘를 받으며 서라온에게 금고 좌표를 넘긴다. 배우진의 검열 요구를 기술 장애로 위장해 지연시킨다.",
-          "en": "Takes Choi Jiwoo’s direction, shares vault coordinates with Seo Raon and delays Bae Woojin’s censorship request."
-        },
-        "effects": []
+      "stewardship": {
+        "base": 9,
+        "effective": 9
       },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "분산 승인",
-          "en": "Distributed approval"
-        },
-        "description": {
-          "ko": "금고 단독 개방을 평의회 승인에 묶는다.",
-          "en": "Requires council approval for unilateral vault opening."
-        },
-        "behavior": {
-          "ko": "금고 단독 개방을 평의회 승인에 묶는다.",
-          "en": "Requires council approval for unilateral vault opening."
-        },
-        "stress": {
-          "ko": "한 번의 금고 사고로 공용 화폐가 승자의 증서로 낙인찍히는 것.",
-          "en": "Fears accidents destroying currency trust."
-        },
-        "relationship": {
-          "ko": "최지우의 지휘를 받으며 서라온에게 금고 좌표를 넘긴다. 배우진의 검열 요구를 기술 장애로 위장해 지연시킨다.",
-          "en": "Takes Choi Jiwoo’s direction, shares vault coordinates with Seo Raon and delays Bae Woojin’s censorship request."
-        },
-        "effects": []
+      "intrigue": {
+        "base": 6,
+        "effective": 6
+      },
+      "learning": {
+        "base": 5,
+        "effective": 5
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
       }
-    ],
-    "narrative": {
-      "ko": "정전 사흘 유지와 예비 전원 분산으로 금고 발행을 지켰다. 검열 요구는 장애로 미룬다.",
-      "en": "Kept issuance alive through blackout duty and distributed power, delaying censorship as faults."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -419,109 +158,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ad8c-c548-b3d9",
-    "name": "안동 권씨",
-    "crest": "clan-crests/ad8c-c548-b3d9.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -15,
-    "개방": 30,
-    "무력": -20,
-    "물질": -5,
-    "공동": 0,
-    "원칙": 20,
-    "공개": 75,
-    "자격": 5,
-    "분산": 20,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": -10,
-    "독점": 30,
-    "위험": -25,
-    "과시": 10,
-    "지속": 15,
-    "지향": "무성향",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "금고 예비 전원 점검·배분",
-    "소속": "여의도출자연합회",
-    "품계": "평의원",
-    "직함": "금고 기사",
-    "가치관": "권위 −15 | 개방 30 | 무력 −20 | 물질 −5 | 공동 0 | 원칙 20 | 공개 75 | 자격 5 | 분산 20 | 변혁 0",
-    "욕망": "갈망 −10 | 독점 30 | 위험 −25 | 과시 10 | 지속 15 | 지향 무성향 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2078-01-20 출생으로 승인된 출생군은 3군이다. 2126년 개막에 활동했다. 여의도 금고 당직에서 자랐다. 금고 기사 자리는 정전 사흘 금고 유지로 열렸다.\n- 권미래는 여의동을 업무동으로 삼아 금고 예비 전원 점검·배분 업무를 맡는다.",
-    "관직": "품계 평의원. 직함은 금고 기사. 예비 전원을 세 곳으로 나누고, 금고 단독 개방은 출자 평의회의 승인 없이 막는다.",
-    "일화": "2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다. 이 일로 금고 기사 자리의 서명이 장부에 올랐다.",
-    "관계": "최지우의 지휘를 받으며 서라온에게 금고 좌표를 넘긴다. 배우진의 검열 요구를 기술 장애로 위장해 지연시킨다.",
-    "야망": "강국이 전원을 내려도 여의도 금고가 살아남도록 예비 전원을 상암·서울역·창동에 심어 공용 화폐의 발행을 잇는다.",
-    "공포": "한 번의 금고 사고로 공용 화폐가 승자의 증서로 낙인찍히는 것.",
-    "개입": "금고 원본 키를 회수하거나, 예비 전원을 한 강국에 팔아넘기는 거래를 막을 수 있다."
-  },
-  "biography": "밤샘을 두려워하지 않고 금고 전원의 끊김을 인격 모욕으로 느낀다. 기계를 사람보다 정직하다고 말한다.\n\n- 생업: 금고 예비 전원 점검·배분\n- 소속: 여의도출자연합회\n- 품계: 평의원\n- 직함: 금고 기사\n**생애.** 2078-01-20 출생으로 승인된 출생군은 3군이다. 2126년 개막에 활동했다. 여의도 금고 당직에서 자랐다. 금고 기사 자리는 정전 사흘 금고 유지로 열렸다.\n- 권미래는 여의동을 업무동으로 삼아 금고 예비 전원 점검·배분 업무를 맡는다.\n\n**관직.** 품계 평의원. 직함은 금고 기사. 예비 전원을 세 곳으로 나누고, 금고 단독 개방은 출자 평의회의 승인 없이 막는다.\n\n**일화.** 2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다. 이 일로 금고 기사 자리의 서명이 장부에 올랐다.\n\n**관계.** 최지우의 지휘를 받으며 서라온에게 금고 좌표를 넘긴다. 배우진의 검열 요구를 기술 장애로 위장해 지연시킨다.\n\n**야망.** 강국이 전원을 내려도 여의도 금고가 살아남도록 예비 전원을 상암·서울역·창동에 심어 공용 화폐의 발행을 잇는다.\n\n**공포.** 한 번의 금고 사고로 공용 화폐가 승자의 증서로 낙인찍히는 것.\n\n**개입.** 금고 원본 키를 회수하거나, 예비 전원을 한 강국에 팔아넘기는 거래를 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 30 | 무력 −20 | 물질 −5 | 공동 0 | 원칙 20 | 공개 75 | 자격 5 | 분산 20 | 변혁 0\n- 욕망: 갈망 −10 | 독점 30 | 위험 −25 | 과시 10 | 지속 15 | 지향 무성향 | 결합 계약동거",
-  "sources": [
-    "Cast-State-09"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "권미래",
-        "type": "지휘",
-        "to": "최지우",
-        "basis": "송신 기사를 의장 지휘 아래 운용"
-      },
-      {
-        "from": "권미래",
-        "type": "계약",
-        "to": "서라온",
-        "basis": "송신탑 좌표를 지도 원판에 넘김"
-      },
-      {
-        "from": "권미래",
-        "type": "원한",
-        "to": "배우진",
-        "basis": "검열 요구를 기술 장애로 지연"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "조은우",
-        "type": "지휘",
-        "to": "권미래",
-        "basis": "송신탑을 전파추적조가 지킴"
-      },
-      {
-        "from": "서라온",
-        "type": "계약",
-        "to": "권미래",
-        "basis": "송신탑 좌표를 받아 원판에 붙임"
-      },
-      {
-        "from": "두봉",
-        "type": "지휘",
-        "to": "권미래",
-        "basis": "권미래의 지휘로 송신기를 고치고"
-      },
-      {
-        "from": "봉소",
-        "type": "계약",
-        "to": "권미래",
-        "basis": "권미래의 밤샘 조를 진료하고"
-      },
-      {
-        "from": "평지우",
-        "type": "맹세",
-        "to": "권미래",
-        "basis": "권미래의 송신 기록을 목격으로 받치고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

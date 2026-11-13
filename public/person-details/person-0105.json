@@ -1,407 +1,143 @@
 {
   "id": "person-0105",
   "name": "표누리",
-  "title": "군자기지 유치 실무장",
-  "position": "군자기지 유치 실무장",
+  "title": "선정릉역 정비장",
+  "position": "선정릉역 정비장 · 아크",
   "characterId": "K104",
-  "rank": "집사",
+  "rank": "정비장",
   "commonTier": "T4",
-  "occupation": "유치선 칸 배정·출고 관리",
+  "occupation": "정비대 통솔",
   "gender": "여성",
   "stage": "S2",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-표누리",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0105",
   "birthDate": "2080-03-04",
   "birthday": "03-04",
   "age": 46,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/60"
-  ],
-  "familyTree": {
-    "personId": "K104",
-    "nodes": [
-      {
-        "id": "K104",
-        "personId": "K104",
-        "kind": "person",
-        "name": "표누리",
-        "birthDate": "2080-03-04",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K104"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-표누리-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 군자기지 유치 실무장 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-표누리-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0105"
-      },
-      {
-        "id": "FH-K104-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "표승연",
-        "lineage": {
-          "surname": "표",
-          "bongwan": "신창",
-          "clan": "d45c-c2e0-cc3d"
-        },
-        "birthDate": "2050-03-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-표누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2088,
-            "summary": "표승연은 신정 차량기지에서 유치선 칸 배정·출고 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-표누리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K104-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "표승정",
-        "lineage": {
-          "surname": "표",
-          "bongwan": "신창",
-          "clan": "d45c-c2e0-cc3d"
-        },
-        "birthDate": "2020-03-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-표누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "표승정은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-표누리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K104-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오승완",
-        "birthDate": "2050-03-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-표누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2088,
-            "summary": "오승완은 신정 차량기지에서 유치선 칸 배정·출고 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-표누리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K104-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "송승혁",
-        "birthDate": "2020-03-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-표누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "송승혁은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-표누리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K104-P-01:K104:biological",
-        "from": "FH-K104-P-01",
-        "to": "K104",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-표누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K104-P-02:FH-K104-P-01:biological",
-        "from": "FH-K104-P-02",
-        "to": "FH-K104-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-표누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K104-M-01:K104:biological",
-        "from": "FH-K104-M-01",
-        "to": "K104",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-표누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K104-M-02:FH-K104-M-01:biological",
-        "from": "FH-K104-M-02",
-        "to": "FH-K104-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-표누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d45c-c2e0-cc3d",
+    "name": "신창 표씨",
+    "crest": "clan-crests/d45c-c2e0-cc3d.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "표누리는 넷째 부위를 단 선정릉역 정비장이다. 선정릉은 두 노선이 만나는 역이라, 언주와 삼성중앙 쪽에서 오는 사람과 선릉·강남구청 쪽에서 오는 사람의 순번이 한 명부에 모인다. 그는 순번을 앞당겨 달라는 사람에게 부위 수가 아니라 그 사람이 역에서 맡은 일을 먼저 묻는다. 서초역 정비장 표지안과는 신창 표씨라는 것 하나로 말이 통해서, 두 정비대는 깎은 부품이 남으면 서로에게 먼저 돌린다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "선정릉역 정비장",
+    "품계": "정비장",
+    "생업": "정비대 통솔",
+    "일하는 역": "선정릉역",
+    "잠자는 역": "선정릉역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 4
+  },
+  "sections": {
+    "생애": "표누리는 넷째 부위를 단 선정릉역 정비장이다. 선정릉은 두 노선이 만나는 역이라, 언주와 삼성중앙 쪽에서 오는 사람과 선릉·강남구청 쪽에서 오는 사람의 순번이 한 명부에 모인다. 그는 순번을 앞당겨 달라는 사람에게 부위 수가 아니라 그 사람이 역에서 맡은 일을 먼저 묻는다. 서초역 정비장 표지안과는 신창 표씨라는 것 하나로 말이 통해서, 두 정비대는 깎은 부품이 남으면 서로에게 먼저 돌린다.",
+    "관직": "직함 선정릉역 정비장. 직위 선정릉역 정비장 · 아크. 품계 정비장. 일하는 역 선정릉역."
+  },
+  "values": {
+    "권위": 25,
+    "개방": -5,
+    "무력": -10,
+    "물질": -40,
+    "공동": 45,
+    "원칙": 0,
+    "공개": -70,
+    "자격": 0,
+    "분산": -15,
+    "변혁": 50
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": 40,
+    "위험": 10,
+    "과시": 25,
+    "지속": 40,
+    "지향": "무성향",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0105",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "표누리",
+        "type": "지휘",
+        "to": "정하린",
+        "basis": "삼성2동 대피소장 정하린의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K058",
+    "name": "정하린",
+    "courtId": "court:K058",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "dispatch",
-        "name": {
-          "ko": "화차 순서 조정",
-          "en": "Freight-car sequencing"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "stop-at-unchalked-compartments",
-        "name": {
-          "ko": "분필 없는 칸 정지",
-          "en": "Stop at Unchalked Compartments"
-        },
-        "description": {
-          "ko": "표누리는 분필과 배정 줄이 없는 유치 칸을 출고 가능한 자리로 인정하지 않는다.",
-          "en": "Pyo Nuri does not treat unchalked or unassigned holding compartments as ready for dispatch."
-        },
-        "behavior": {
-          "ko": "호각 전에 공방과 수비 분필을 다시 긋고 줄이 없는 개조칸은 자갈에 세운다.",
-          "en": "Pyo redraws workshop and guard chalk marks before the whistle and holds modified compartments without allocation lines on the gravel."
-        },
-        "stress": {
-          "ko": "빈 칸이 숙영 천막으로 바뀔 우려가 커지면 칸 배정 표시와 출고 정지를 더 엄격히 적용할 수 있다.",
-          "en": "If empty compartments risk becoming encampments, Pyo may enforce allocation marks and dispatch stops more strictly."
-        },
-        "relationship": {
-          "ko": "이준택의 정비 완료 도장을 받아도 유치 칸의 배정 확인을 거쳐 호각으로 이어갈 수 있다.",
-          "en": "Even after receiving Lee Juntaek's maintenance-completion stamp, Pyo may verify holding allocation before sounding the whistle."
-        },
-        "effects": []
-      },
-      {
-        "id": "synchronize-pump-room-clocks",
-        "name": {
-          "ko": "펌프실 시각 맞춤",
-          "en": "Synchronize Pump-Room Clocks"
-        },
-        "description": {
-          "ko": "표누리는 유치 칠판의 전용줄과 펌프실 호각을 같은 출고 시각에 맞추려 한다.",
-          "en": "Pyo Nuri seeks to align the dedicated line on the holding board with the pump-room whistle at one dispatch time."
-        },
-        "behavior": {
-          "ko": "부품 연장이 끊긴 날 전용줄을 고정하고 암사행 칸의 호각을 보류했다.",
-          "en": "When the parts extension was cut off, Pyo fixed the dedicated line and withheld the whistle for Amsa-bound compartments."
-        },
-        "stress": {
-          "ko": "군자 호각이 보호 방송에 종속될 우려가 커지면 칠판 배정에 따른 시각 통제를 더 고수할 수 있다.",
-          "en": "If Gunja's whistle risks being subordinated to protection broadcasts, Pyo may hold more firmly to board-based timing control."
-        },
-        "relationship": {
-          "ko": "한소미의 제동 부품이 늦으면 전용줄을 미루며 공급 일정에 맞춰 출고를 조정할 수 있다.",
-          "en": "If Han Somi's brake parts arrive late, Pyo may postpone the dedicated line and adjust dispatch to the supply schedule."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "전용줄을 고정하고 부품 연장이 끊긴 날 호각을 울리지 않았다. 칸 배정과 출고 시각 조정이 강점이며 차량 정비는 추가하지 않는다.",
-      "en": "She fixed the dedicated car line and withheld the whistle when parts supply lapsed. Car allocation and timing are strengths, not vehicle maintenance."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "head",
@@ -417,59 +153,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d45c-c2e0-cc3d",
-    "name": "신창 표씨",
-    "crest": "clan-crests/d45c-c2e0-cc3d.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 0,
-    "개방": 10,
-    "무력": -20,
-    "물질": 10,
-    "공동": 25,
-    "원칙": 10,
-    "공개": -25,
-    "자격": 35,
-    "분산": 15,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": 40,
-    "위험": 10,
-    "과시": 25,
-    "지속": 40,
-    "지향": "무성향",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "유치선 칸 배정·출고 관리",
-    "품계": "집사",
-    "직함": "군자기지 유치 실무장",
-    "가치관": "권위 0 | 개방 10 | 무력 −20 | 물질 10 | 공동 25 | 원칙 10 | 공개 −25 | 자격 35 | 분산 15 | 변혁 5",
-    "욕망": "갈망 45 | 독점 40 | 위험 10 | 과시 25 | 지속 40 | 지향 무성향 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 표누리는 신정 차량기지에서 자랐다. 표누리는 탈선 직전 결함 보고로 군자기지 유치 실무장 자리를 맡았다.\n- 표누리의 군자기지 유치 실무장 업무는 용답동과 연결된다.",
-    "관직": "품계 집사. 직함은 군자기지 유치 실무장. 호각 전에 공방 분필과 수비 분필을 칸마다 다시 긋고, 줄이 없는 개조칸은 자갈에 세운다.",
-    "일화": "중앙 부품 연장이 끊긴 날 표누리는 펌프실 전용줄을 유치 칠판에 고정하고 암사행 칸의 호각을 울리지 않았다.",
-    "관계": "정비 완료 도장을 유치 칸에서 호각으로 바꾸는 지휘를 받고, 정시우의 천왕 차륜 호환을 칸 줄에서 확인한다. 한소미의 소형 제동 부품이 늦게 오면 전용줄을 하루 미룬다.",
-    "야망": "유치 칠판의 전용줄을 펌프실 호각과 한 시각에 맞춰, 중앙권역 출고가 군자 칸의 분필을 따르게 한다.",
-    "공포": "표누리는 빈 유치 칸이 숙영 천막으로 바뀌면 군자 호각이 보호 방송 아래로 내려가는 상황을 두려워한다.",
-    "개입": "펌프실 전용줄이 지워진 칸에 제동 상자를 올리거나, 자갈 위 개조칸의 쪽지를 유치 칠판에 옮길 수 있다."
-  },
-  "biography": "유치선 칸 분필이 지워진 자리를 빈 사람으로 보고, 후계 회의 전갈보다 출고 호각이 늦은 쪽을 먼저 부른다. 칸이 겹치면 말보다 줄을 친다.\n\n- 소속: 명부교회\n- 생업: 유치선 칸 배정·출고 관리\n- 품계: 집사\n- 직함: 군자기지 유치 실무장\n**생애.** 2126년 세대. 표누리는 신정 차량기지에서 자랐다. 표누리는 탈선 직전 결함 보고로 군자기지 유치 실무장 자리를 맡았다.\n- 표누리의 군자기지 유치 실무장 업무는 용답동과 연결된다.\n\n**관직.** 품계 집사. 직함은 군자기지 유치 실무장. 호각 전에 공방 분필과 수비 분필을 칸마다 다시 긋고, 줄이 없는 개조칸은 자갈에 세운다.\n\n**일화.** 중앙 부품 연장이 끊긴 날 표누리는 펌프실 전용줄을 유치 칠판에 고정하고 암사행 칸의 호각을 울리지 않았다.\n\n**관계.** 정비 완료 도장을 유치 칸에서 호각으로 바꾸는 지휘를 받고, 정시우의 천왕 차륜 호환을 칸 줄에서 확인한다. 한소미의 소형 제동 부품이 늦게 오면 전용줄을 하루 미룬다.\n\n**야망.** 유치 칠판의 전용줄을 펌프실 호각과 한 시각에 맞춰, 중앙권역 출고가 군자 칸의 분필을 따르게 한다.\n\n**공포.** 표누리는 빈 유치 칸이 숙영 천막으로 바뀌면 군자 호각이 보호 방송 아래로 내려가는 상황을 두려워한다.\n\n**개입.** 펌프실 전용줄이 지워진 칸에 제동 상자를 올리거나, 자갈 위 개조칸의 쪽지를 유치 칠판에 옮길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 10 | 무력 −20 | 물질 10 | 공동 25 | 원칙 10 | 공개 −25 | 자격 35 | 분산 15 | 변혁 5\n- 욕망: 갈망 45 | 독점 40 | 위험 10 | 과시 25 | 지속 40 | 지향 무성향 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:선정릉",
+      "name": {
+        "ko": "선정릉역"
+      },
+      "holderPersonId": "K104",
+      "directLiegePersonId": "K058",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "선정릉",
+        "stationName": "선정릉"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1168059000",
+          "name": "삼성2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

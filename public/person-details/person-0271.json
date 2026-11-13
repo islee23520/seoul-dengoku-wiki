@@ -1,317 +1,108 @@
 {
   "id": "person-0271",
   "name": "윤산호",
-  "title": "피난로 안내 반장",
-  "position": "피난로 안내 주지",
+  "title": "장부 서기",
+  "position": "장부 서기 · 종로3가역",
   "characterId": "K270",
-  "rank": "주지",
-  "commonTier": "T3",
-  "occupation": "피난로 이정표·증서 대기열 안내",
+  "rank": "등재민",
+  "commonTier": "T5",
+  "occupation": "장부 기재",
   "gender": "여성",
   "stage": "S2",
-  "state": "S10",
-  "stateName": "안국총림",
-  "sourceRoute": "/world/Cast-State-10#인물-윤산호",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0271",
   "birthDate": "2064-12-13",
   "birthday": "12-13",
   "age": 62,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-10.json#/content/666"
-  ],
-  "familyTree": {
-    "personId": "K270",
-    "nodes": [
-      {
-        "id": "K270",
-        "personId": "K270",
-        "kind": "person",
-        "name": "윤산호",
-        "birthDate": "2064-12-13",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K270"
-          },
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-윤산호-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 보국문 피난 막사에서 자랐다. 피난로 안내 주지 자리는 고아 명부 줄로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-윤산호-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0271"
-      },
-      {
-        "id": "FH-K270-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤현리",
-        "lineage": {
-          "surname": "윤",
-          "bongwan": "파평",
-          "clan": "c724-d30c-d3c9"
-        },
-        "birthDate": "2034-12-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-윤산호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "윤현리는 보국문 피난 막사에서 피난로 이정표·증서 대기열 안내 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-윤산호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K270-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤현나",
-        "lineage": {
-          "surname": "윤",
-          "bongwan": "파평",
-          "clan": "c724-d30c-d3c9"
-        },
-        "birthDate": "2004-12-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-윤산호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤현나는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-윤산호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K270-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현나",
-        "birthDate": "2034-12-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-윤산호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "강현나는 보국문 피난 막사에서 피난로 이정표·증서 대기열 안내 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-윤산호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K270-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현온",
-        "birthDate": "2004-12-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-윤산호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임현온은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-윤산호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K270-P-01:K270:biological",
-        "from": "FH-K270-P-01",
-        "to": "K270",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-윤산호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K270-P-02:FH-K270-P-01:biological",
-        "from": "FH-K270-P-02",
-        "to": "FH-K270-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-윤산호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K270-M-01:K270:biological",
-        "from": "FH-K270-M-01",
-        "to": "K270",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-윤산호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K270-M-02:FH-K270-M-01:biological",
-        "from": "FH-K270-M-02",
-        "to": "FH-K270-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-윤산호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c724-d30c-d3c9",
+    "name": "파평 윤씨",
+    "crest": "clan-crests/c724-d30c-d3c9.svg"
   },
-  "proseContacts": [
-    {
-      "recipientId": "K245",
-      "recipientName": "백온",
-      "basis": "백온의 난민대표 명부와 맞물리되, 이정표 열쇠는 반장이 쥔다.",
-      "sourceRef": {
-        "path": "lore/characters/Cast-State-10.json",
-        "anchor": "인물-윤산호-p5"
-      }
-    }
-  ],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "윤산호는 종로구 국회의원 집안(파평 윤씨)의 곳간 장부를 맡은 장부 서기로 기재돼 있다. 예순두 살인 그녀가 지키는 곳간은 배급 등급 밖에서 제 창고로 먹는 그 집안의 것이다. 종로3가역 깊은 굴 층 곳간의 섬유당과 땔감을 열흘마다 세어 윤초아 의원에게 올리며, 집안 사람이 늘 때마다 곳간 줄이 줄어드는 셈을 먼저 보인다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "장부 서기",
+    "품계": "등재민",
+    "생업": "장부 기재",
+    "일하는 역": "종로3가역",
+    "잠자는 역": "종로3가역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "윤산호는 종로구 국회의원 집안(파평 윤씨)의 곳간 장부를 맡은 장부 서기로 기재돼 있다. 예순두 살인 그녀가 지키는 곳간은 배급 등급 밖에서 제 창고로 먹는 그 집안의 것이다. 종로3가역 깊은 굴 층 곳간의 섬유당과 땔감을 열흘마다 세어 윤초아 의원에게 올리며, 집안 사람이 늘 때마다 곳간 줄이 줄어드는 셈을 먼저 보인다.",
+    "관직": "직함 장부 서기. 직위 장부 서기 · 종로3가역. 품계 등재민. 일하는 역 종로3가역."
+  },
+  "values": {
+    "권위": -20,
+    "개방": 20,
+    "무력": -5,
+    "물질": -30,
+    "공동": 85,
+    "원칙": 40,
+    "공개": 15,
+    "자격": 45,
+    "분산": 5,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": 20,
+    "독점": -15,
+    "위험": -20,
+    "과시": 20,
+    "지속": 15,
+    "지향": "유동",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0271",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "윤산호",
+        "type": "지휘",
+        "to": "윤초아",
+        "basis": "종로구 국회의원 윤초아의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K249",
+    "name": "윤초아",
+    "courtId": "court:K249",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "management": {
-        "base": 9,
-        "effective": 9
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "insight": {
+      "stewardship": {
         "base": 10,
         "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
         "base": 8,
@@ -320,76 +111,10 @@
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
       }
     },
-    "skills": [
-      {
-        "id": "refuge-guidance",
-        "name": {
-          "ko": "피난 표지·대기열 안내",
-          "en": "Refuge-sign and queue guidance"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "refuge-guidance-disposition",
-        "name": {
-          "ko": "지운 글자 옆 기록",
-          "en": "Records beside erased text"
-        },
-        "description": {
-          "ko": "원래 글자를 임의로 새로 쓰지 않고 옆에 보완 쪽지를 붙인다.",
-          "en": "Does not invent erased text and posts a supplemental note beside it."
-        },
-        "behavior": {
-          "ko": "원래 글자를 임의로 새로 쓰지 않고 옆에 보완 쪽지를 붙인다.",
-          "en": "Does not invent erased text and posts a supplemental note beside it."
-        },
-        "stress": {
-          "ko": "안내 공백이 검역 볼모의 줄이 될 것을 두려워한다.",
-          "en": "Fears guidance gaps becoming a quarantine hostage line."
-        },
-        "relationship": {
-          "ko": "백온의 난민대표 명부와 맞물리되, 이정표 열쇠는 반장이 쥔다.",
-          "en": "Checks against Baek On’s refugee roster while the sign keys remain with the team lead."
-        },
-        "effects": []
-      },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "판단 권한의 경계",
-          "en": "Boundary of assessment"
-        },
-        "description": {
-          "ko": "위조 의심은 장경 필사 당직에만 넘긴다.",
-          "en": "Refers forgery suspicion only to scripture-copy duty."
-        },
-        "behavior": {
-          "ko": "위조 의심은 장경 필사 당직에만 넘긴다.",
-          "en": "Refers forgery suspicion only to scripture-copy duty."
-        },
-        "stress": {
-          "ko": "안내 공백이 생기면 회랑이 검역 볼모의 줄이 되는 것.",
-          "en": "Fears guidance gaps becoming a quarantine hostage line."
-        },
-        "relationship": {
-          "ko": "백온의 난민대표 명부와 맞물리되, 이정표 열쇠는 반장이 쥔다.",
-          "en": "Checks against Baek On’s refugee roster while the sign keys remain with the team lead."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "지워진 표지를 손전등으로 확인하고 옆에 쪽지를 붙였다. 증서 없는 일행은 대기열로 보내며 위조 판단은 필사 당직에 넘긴다.",
-      "en": "Checked an erased sign with a flashlight and posted a note beside it. Routes those without certificates to the queue and refers forgery concerns to copy duty."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -427,59 +152,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c724-d30c-d3c9",
-    "name": "파평 윤씨",
-    "crest": "clan-crests/c724-d30c-d3c9.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -65,
-    "개방": 75,
-    "무력": -40,
-    "물질": -25,
-    "공동": 80,
-    "원칙": 20,
-    "공개": 40,
-    "자격": 30,
-    "분산": 55,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 20,
-    "독점": -15,
-    "위험": -20,
-    "과시": 20,
-    "지속": 15,
-    "지향": "유동",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "피난로 이정표·증서 대기열 안내",
-    "소속": "안국총림",
-    "품계": "주지",
-    "직함": "피난로 안내 주지",
-    "가치관": "권위 −65 | 개방 75 | 무력 −40 | 물질 −25 | 공동 80 | 원칙 20 | 공개 40 | 자격 30 | 분산 55 | 변혁 0",
-    "욕망": "갈망 20 | 독점 −15 | 위험 −20 | 과시 20 | 지속 15 | 지향 유동 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2064-12-13 출생, 2126년 개막에 활동했다. 보국문 피난 막사에서 자랐다. 피난로 안내 주지 당직 기록에는 고아 명부 줄 일이 남아 있다.\n- 윤산호의 피난로 이정표·증서 대기열 안내 업무 기준점으로 평창동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n- 윤산호의 피난로 이정표·증서 대기열 안내 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
-    "관직": "품계 주지. 직함은 피난로 안내 주지. 혈연 증서가 없는 일행은 대기열로 보내고, 위조 의심은 장경 필사 당직에만 넘긴다.",
-    "일화": "피난로 이정표 하나의 글자가 지워진 밤, 혈연 증서 없는 일행이 그 길목에 모인다. 윤산호는 손전등으로 이정표를 확인해 지워진 글자 옆에 쪽지를 붙이고, 일행을 대기열로 보낸 뒤 위조 의심 건은 장경 필사 당직에 넘긴다.",
-    "관계": "백온의 난민대표 명부와 맞물리되, 이정표 열쇠는 반장이 쥔다.",
-    "야망": "피난로 안내를 신도 재결합 명부와 서울 내부 안내 시각표에 맞춰 연다.",
-    "공포": "안내 공백이 생기면 회랑이 검역 볼모의 줄이 되는 것.",
-    "개입": "봉한 남쪽 길의 이유를 열거나, 명부 합류를 증언할 수 있다."
-  },
-  "biography": "피난로 이정표를 손전등으로 확인하고, 지워진 글자는 새로 쓰지 않고 옆에 붙인다. 큰 약속은 하지 않는다.\n\n- 생업: 피난로 이정표·증서 대기열 안내\n- 소속: 안국총림\n- 품계: 주지\n- 직함: 피난로 안내 주지\n**생애.** 2064-12-13 출생, 2126년 개막에 활동했다. 보국문 피난 막사에서 자랐다. 피난로 안내 주지 당직 기록에는 고아 명부 줄 일이 남아 있다.\n- 윤산호의 피난로 이정표·증서 대기열 안내 업무 기준점으로 평창동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n- 윤산호의 피난로 이정표·증서 대기열 안내 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n**관직.** 품계 주지. 직함은 피난로 안내 주지. 혈연 증서가 없는 일행은 대기열로 보내고, 위조 의심은 장경 필사 당직에만 넘긴다.\n\n**일화.** 피난로 이정표 하나의 글자가 지워진 밤, 혈연 증서 없는 일행이 그 길목에 모인다. 윤산호는 손전등으로 이정표를 확인해 지워진 글자 옆에 쪽지를 붙이고, 일행을 대기열로 보낸 뒤 위조 의심 건은 장경 필사 당직에 넘긴다.\n\n**관계.** 백온의 난민대표 명부와 맞물리되, 이정표 열쇠는 반장이 쥔다.\n\n**야망.** 피난로 안내를 신도 재결합 명부와 서울 내부 안내 시각표에 맞춰 연다.\n\n**공포.** 안내 공백이 생기면 회랑이 검역 볼모의 줄이 되는 것.\n\n**개입.** 봉한 남쪽 길의 이유를 열거나, 명부 합류를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −65 | 개방 75 | 무력 −40 | 물질 −25 | 공동 80 | 원칙 20 | 공개 40 | 자격 30 | 분산 55 | 변혁 0\n- 욕망: 갈망 20 | 독점 −15 | 위험 −20 | 과시 20 | 지속 15 | 지향 유동 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-10"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

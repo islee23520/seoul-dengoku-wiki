@@ -1,387 +1,105 @@
 {
   "id": "person-0425",
   "name": "박도윤",
-  "title": "작업반 전령",
-  "position": "작업반 전령",
+  "title": "작업조장",
+  "position": "작업조장 · 천왕역",
   "characterId": "K425",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "환승 전갈 전달",
+  "rank": "작업조장",
+  "commonTier": "T5",
+  "occupation": "부품 가공",
   "gender": "남성",
   "stage": "S4",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-박도윤",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0425",
   "birthDate": "2082-07-05",
   "birthday": "07-05",
   "age": 44,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/302",
-    "lore/characters/Cast-State-02.json#/content/304",
-    "lore/characters/Cast-State-02.json#/content/305"
-  ],
-  "familyTree": {
-    "personId": "K425",
-    "nodes": [
-      {
-        "id": "K425",
-        "personId": "K425",
-        "kind": "person",
-        "name": "박도윤",
-        "birthDate": "2082-07-05",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K425"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-박도윤-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-박도윤-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0425"
-      },
-      {
-        "id": "FH-K425-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준나",
-        "lineage": {
-          "surname": "박",
-          "bongwan": "밀양",
-          "clan": "bc15-bc00-c591-agreed-c724-second"
-        },
-        "birthDate": "2052-07-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-박도윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2090,
-            "summary": "박준나는 신내 환승 당직에서 환승 전갈 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-박도윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K425-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준온",
-        "lineage": {
-          "surname": "박",
-          "bongwan": "밀양",
-          "clan": "bc15-bc00-c591-agreed-c724-second"
-        },
-        "birthDate": "2022-07-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-박도윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박준온은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-박도윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K425-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한준혁",
-        "birthDate": "2052-07-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-박도윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2090,
-            "summary": "한준혁은 신내 환승 당직에서 환승 전갈 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-박도윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K425-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강준찬",
-        "birthDate": "2022-07-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-박도윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강준찬은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-박도윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K425-P-01:K425:biological",
-        "from": "FH-K425-P-01",
-        "to": "K425",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-박도윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K425-P-02:FH-K425-P-01:biological",
-        "from": "FH-K425-P-02",
-        "to": "FH-K425-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-박도윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K425-M-01:K425:biological",
-        "from": "FH-K425-M-01",
-        "to": "K425",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-박도윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K425-M-02:FH-K425-M-01:biological",
-        "from": "FH-K425-M-02",
-        "to": "FH-K425-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-박도윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bc15-bc00-c591",
+    "name": "밀양 박씨",
+    "crest": "clan-crests/bc15-bc00-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "박도윤은 천왕 차량기지 작업장에서 부품대 작업조를 이끄는 작업조장이다. 펌프 날개 한 벌을 깎는 장이 들어오면 그는 모터대와 전선대에서 손을 빌려 조를 짜고, 보증판에 새길 날짜부터 받아 둔다. 천왕은 서울 서남쪽 끝이라 작업장 위 지상에 테두리를 보는 자리가 있다. 눈보라 속에서 조원 하나를 지상에 놓칠 뻔한 일이 있은 뒤로, 그는 눈보라가 오는 날이면 조원 수를 두 번 센다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "작업조장",
+    "품계": "작업조장",
+    "생업": "부품 가공",
+    "일하는 역": "천왕역",
+    "잠자는 역": "천왕역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "박도윤은 천왕 차량기지 작업장에서 부품대 작업조를 이끄는 작업조장이다. 펌프 날개 한 벌을 깎는 장이 들어오면 그는 모터대와 전선대에서 손을 빌려 조를 짜고, 보증판에 새길 날짜부터 받아 둔다. 천왕은 서울 서남쪽 끝이라 작업장 위 지상에 테두리를 보는 자리가 있다. 눈보라 속에서 조원 하나를 지상에 놓칠 뻔한 일이 있은 뒤로, 그는 눈보라가 오는 날이면 조원 수를 두 번 센다.",
+    "관직": "직함 작업조장. 직위 작업조장 · 천왕역. 품계 작업조장. 일하는 역 천왕역."
+  },
+  "values": {
+    "권위": -55,
+    "개방": 45,
+    "무력": -20,
+    "물질": 50,
+    "공동": 10,
+    "원칙": 0,
+    "공개": 45,
+    "자격": 60,
+    "분산": 65,
+    "변혁": 25
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": 10,
+    "위험": -15,
+    "과시": -20,
+    "지속": 5,
+    "지향": "유동",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0425",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "management": {
-        "base": 8,
-        "effective": 8
+      "stewardship": {
+        "base": 11,
+        "effective": 11
       },
-      "insight": {
-        "base": 10,
-        "effective": 10
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
         "base": 7,
         "effective": 7
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k425-hazard-closure",
-        "name": {
-          "ko": "붕괴 구간 폐쇄",
-          "en": "Collapse-zone closure"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "k425-action-priority",
-        "name": {
-          "ko": "보고를 미루지 않는다",
-          "en": "Do not delay reports"
-        },
-        "description": {
-          "ko": "2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다.",
-          "en": "In 2125 he did not sit on the collapse report of a flooded section and closed it on the spot. By this deed the signature of the work-squad courier post rose into the ledger."
-        },
-        "behavior": {
-          "ko": "2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다.",
-          "en": "In 2125 he did not sit on the collapse report of a flooded section and closed it on the spot. By this deed the signature of the work-squad courier post rose into the ledger."
-        },
-        "stress": {
-          "ko": "작업반 전령 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
-          "en": "That the work-squad courier duty post would stand empty and the Alliance's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      },
-      {
-        "id": "k425-bounded-handover",
-        "name": {
-          "ko": "기록으로 잇는 당직",
-          "en": "Duty linked by records"
-        },
-        "description": {
-          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
-          "en": "Passes keys and records to the next shift without enlarging authority."
-        },
-        "behavior": {
-          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
-          "en": "Passes keys and records to the next shift without enlarging authority."
-        },
-        "stress": {
-          "ko": "작업반 전령 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
-          "en": "That the work-squad courier duty post would stand empty and the Alliance's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 짧은 행위와 인수인계가 근거여서 다른 분야의 숙련이나 보정은 발급하지 않았다.",
-      "en": "In 2125 he did not sit on the collapse report of a flooded section and closed it on the spot. By this deed the signature of the work-squad courier post rose into the ledger. The brief action and handover support only limited strengths; no unrelated proficiency or numeric trait bonus is issued."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -419,435 +137,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-44825-S02",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:kingdom-s02",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-44825-S02",
-          "directLiegePersonId": "K029"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611031000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611031000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611032000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611032000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611033000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611033000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611034000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611034000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611035000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611035000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611036000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611036000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611037000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611037000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611038000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611038000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611039000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611039000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611051000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611051000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611051500",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611051500",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611051800",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611051800",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611052000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611052000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611052300",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611052300",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611052500",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611052500",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611053000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611053000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611054000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611054000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611055000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611055000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611055500",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611055500",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611055600",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611055600",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611056000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611056000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611057000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611057000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611058000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K425",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-3611058000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bc15-bc00-c591",
-    "name": "밀양 박씨",
-    "crest": "clan-crests/bc15-bc00-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -20,
-    "개방": 30,
-    "무력": -10,
-    "물질": 35,
-    "공동": 35,
-    "원칙": 10,
-    "공개": 45,
-    "자격": 40,
-    "분산": 10,
-    "변혁": 15
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": 10,
-    "위험": -15,
-    "과시": -20,
-    "지속": 5,
-    "지향": "유동",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "규격맹",
-    "생업": "환승 전갈 전달",
-    "품계": "조합원",
-    "직함": "작업반 전령",
-    "업무 위치": "오류2동. 박도윤은 오류2동 제1분공방에서 이일섭의 종자 대금 제안서를 받아 평의회 수령 칸을 확인한다. 결빙 통로에서 전갈이 늦으면 수령 시각을 숨기지 않고 다음 교대 장부에 적어 후계에게 돌린다.",
-    "가치관": "권위 −20 | 개방 30 | 무력 −10 | 물질 35 | 공동 35 | 원칙 10 | 공개 45 | 자격 40 | 분산 10 | 변혁 15",
-    "욕망": "갈망 15 | 독점 10 | 위험 −15 | 과시 −20 | 지속 5 | 지향 유동 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 오류2동. 박도윤은 오류2동 제1분공방에서 이일섭의 종자 대금 제안서를 받아 평의회 수령 칸을 확인한다. 결빙 통로에서 전갈이 늦으면 수령 시각을 숨기지 않고 다음 교대 장부에 적어 후계에게 돌린다.",
-    "관직": "품계 조합원. 직함은 작업반 전령. 결빙 통로에서 전갈이 늦으면 수령 시각을 숨기지 않고 다음 교대 장부에 적어 후계에게 돌린다.",
-    "일화": "2125년 오류2동의 결빙 선로 밑 누수로 침목이 내려앉았다는 보고를 받자 출고 구간을 바로 닫았다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "박도윤은 이일섭의 직속 전령으로 전갈 전달과 수령 확인을 맡음.",
-    "야망": "박도윤은 이일섭의 종자 대금 제안서가 평의회 수령 장부에 시각까지 남도록 전갈을 끝까지 확인하려 한다.",
-    "공포": "종자 대금 제안서의 수령 시각이 빠져 이일섭의 평의회 인계가 끊기는 것.",
-    "개입": "플레이어는 박도윤과 제안서 수령 칸을 대조하거나 결빙 통로에서 늦어진 전갈의 시각을 다음 교대 장부에 함께 남길 수 있다."
-  },
-  "biography": "박도윤은 전갈이 늦어도 수령 시각을 지워 제안서의 인계를 앞당기지 않는다.\n\n- 소속: 규격맹\n- 생업: 환승 전갈 전달\n- 품계: 조합원\n- 직함: 작업반 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 오류2동. 박도윤은 오류2동 제1분공방에서 이일섭의 종자 대금 제안서를 받아 평의회 수령 칸을 확인한다. 결빙 통로에서 전갈이 늦으면 수령 시각을 숨기지 않고 다음 교대 장부에 적어 후계에게 돌린다.\n\n**관직.** 품계 조합원. 직함은 작업반 전령. 결빙 통로에서 전갈이 늦으면 수령 시각을 숨기지 않고 다음 교대 장부에 적어 후계에게 돌린다.\n\n**일화.** 2125년 오류2동의 결빙 선로 밑 누수로 침목이 내려앉았다는 보고를 받자 출고 구간을 바로 닫았다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 박도윤은 이일섭의 직속 전령으로 전갈 전달과 수령 확인을 맡음.\n\n**야망.** 박도윤은 이일섭의 종자 대금 제안서가 평의회 수령 장부에 시각까지 남도록 전갈을 끝까지 확인하려 한다.\n\n**공포.** 종자 대금 제안서의 수령 시각이 빠져 이일섭의 평의회 인계가 끊기는 것.\n\n**개입.** 플레이어는 박도윤과 제안서 수령 칸을 대조하거나 결빙 통로에서 늦어진 전갈의 시각을 다음 교대 장부에 함께 남길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 30 | 무력 −10 | 물질 35 | 공동 35 | 원칙 10 | 공개 45 | 자격 40 | 분산 10 | 변혁 15\n- 욕망: 갈망 15 | 독점 10 | 위험 −15 | 과시 −20 | 지속 5 | 지향 유동 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-02"
-  ],
-  "directLiege": {
-    "personId": "K998",
-    "name": "이일섭",
-    "courtId": "court:K998",
-    "effectiveYear": 2126
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "박도윤",
-        "type": "지휘",
-        "to": "이일섭",
-        "basis": "이일섭의 직속 전령으로 전갈 전달과 수령 확인을 맡음"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

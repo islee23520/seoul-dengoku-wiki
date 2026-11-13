@@ -1,500 +1,120 @@
 {
   "id": "person-0056",
   "name": "기필호",
-  "title": "제작 병참",
-  "position": "제작 병참",
+  "title": "신대방 구간장",
+  "position": "신대방 구간장 · 자유도시들",
   "characterId": "K056",
-  "rank": "",
+  "rank": "구간장",
   "commonTier": "T3",
-  "occupation": "대합실 당직",
+  "occupation": "구간 운영",
   "gender": "남성",
   "stage": "S3",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-기필호",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0056",
   "birthDate": "2099-10-24",
   "birthday": "10-24",
   "age": 27,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/291"
-  ],
-  "familyTree": {
-    "personId": "K056",
-    "nodes": [
-      {
-        "id": "K056",
-        "personId": "K056",
-        "kind": "person",
-        "name": "기필호",
-        "birthDate": "2099-10-24",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K056"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-기필호-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 제작 병참 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-기필호-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0056"
-      },
-      {
-        "id": "FH-K056-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "기승호",
-        "lineage": {
-          "surname": "기",
-          "bongwan": "행주",
-          "clan": "ae30-d589-c8fc"
-        },
-        "birthDate": "2069-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-기필호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2107,
-            "summary": "기승호는 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-기필호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K056-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "기승민",
-        "lineage": {
-          "surname": "기",
-          "bongwan": "행주",
-          "clan": "ae30-d589-c8fc"
-        },
-        "birthDate": "2039-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-기필호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "기승민은 대합실 당직에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-기필호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K056-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "기승원",
-        "lineage": {
-          "surname": "기",
-          "bongwan": "행주",
-          "clan": "ae30-d589-c8fc"
-        },
-        "birthDate": "2009-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-기필호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "기승원은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-기필호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K056-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오승경",
-        "birthDate": "2069-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-기필호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2107,
-            "summary": "오승경은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-기필호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K056-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "송승수",
-        "birthDate": "2039-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-기필호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "송승수는 대합실 당직에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-기필호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K056-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "조승수",
-        "birthDate": "2009-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-기필호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조승수는 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-기필호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K056-P-01:K056:biological",
-        "from": "FH-K056-P-01",
-        "to": "K056",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-기필호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K056-P-02:FH-K056-P-01:biological",
-        "from": "FH-K056-P-02",
-        "to": "FH-K056-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-기필호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K056-P-03:FH-K056-P-02:biological",
-        "from": "FH-K056-P-03",
-        "to": "FH-K056-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-기필호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K056-M-01:K056:biological",
-        "from": "FH-K056-M-01",
-        "to": "K056",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-기필호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K056-M-02:FH-K056-M-01:biological",
-        "from": "FH-K056-M-02",
-        "to": "FH-K056-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-기필호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K056-M-03:FH-K056-M-02:biological",
-        "from": "FH-K056-M-03",
-        "to": "FH-K056-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-기필호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ae30-d589-c8fc",
+    "name": "행주 기씨",
+    "crest": "clan-crests/ae30-d589-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "신대방 구간은 2호선 신대방과 신림선의 보라매병원, 당곡 세 역과 그 사이 터널이고, 동작 안에서 건널목이 하나도 없는 구간이다. 스물일곱에 나루지기 최지우에게서 이 구간을 맡은 기필호는 노량진 얼음 구멍 장의 물고기가 신림선을 타고 관악으로 가는 길목을 지키며, 수레가 지날 때마다 터널 케이블의 온도를 함께 적는다. 당곡 쪽 고물 터의 열쇠도 그가 쥐고, 고물을 캐러 들어가는 사람마다 들어간 시각과 나온 시각을 적는다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "신대방 구간장",
+    "품계": "구간장",
+    "생업": "구간 운영",
+    "일하는 역": "신대방역",
+    "잠자는 역": "신대방역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "신대방 구간은 2호선 신대방과 신림선의 보라매병원, 당곡 세 역과 그 사이 터널이고, 동작 안에서 건널목이 하나도 없는 구간이다. 스물일곱에 나루지기 최지우에게서 이 구간을 맡은 기필호는 노량진 얼음 구멍 장의 물고기가 신림선을 타고 관악으로 가는 길목을 지키며, 수레가 지날 때마다 터널 케이블의 온도를 함께 적는다. 당곡 쪽 고물 터의 열쇠도 그가 쥐고, 고물을 캐러 들어가는 사람마다 들어간 시각과 나온 시각을 적는다.",
+    "관직": "직함 신대방 구간장. 직위 신대방 구간장 · 자유도시들. 품계 구간장. 일하는 역 신대방역."
+  },
+  "values": {
+    "권위": -55,
+    "개방": 30,
+    "무력": -20,
+    "물질": 55,
+    "공동": 25,
+    "원칙": 0,
+    "공개": 40,
+    "자격": 70,
+    "분산": 85,
+    "변혁": 25
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": 10,
+    "위험": 0,
+    "과시": -10,
+    "지속": -15,
+    "지향": "무성향",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0056",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "기필호",
+        "type": "지휘",
+        "to": "최지우",
+        "basis": "동작 나루지기 최지우의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K219",
+    "name": "최지우",
+    "courtId": "court:K219",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
-      },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k056-materials-dispatch",
-        "name": {
-          "ko": "병참 출고 관리",
-          "en": "Materials dispatch management"
-        },
-        "rating": 65
-      },
-      {
-        "id": "k056-skill-posting",
-        "name": {
-          "ko": "숙련 점수 게시",
-          "en": "Skill-score posting"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k056-public-order-before-dispatch",
-        "name": {
-          "ko": "공개 순서 뒤 출고",
-          "en": "Dispatch after public ordering"
-        },
-        "description": {
-          "ko": "추첨과 숙련 공개 전에 들어온 요구를 미룬다.",
-          "en": "Defers requests arriving before lottery and skill publication."
-        },
-        "behavior": {
-          "ko": "추첨과 숙련 공개 전에 들어온 요구를 미룬다.",
-          "en": "Defers requests arriving before lottery and skill publication."
-        },
-        "stress": {
-          "ko": "병참 열차가 차단문 전투조의 탄약칸으로 바뀌고, 규격맹이 부품 봉쇄의 다른 이름이 되는 것.",
-          "en": "That commissariat trains would turn into the barrier-gate combat squads' ammunition cars, and the Fabrication The Gauge would become another name for the parts blockade."
-        },
-        "relationship": {
-          "ko": "최다인의 공병 작업반과 출고 순서를 다투고, 강민서의 규격맹 통일안을 물자표로 옮기며, 서부 호송의 기바름과 부품 칸을 교환한다.",
-          "en": "Contesting release order with Choi Dain's engineering squads, moving Gang Minseo's fabrication alliance unification plan onto supply tables, and exchanging parts columns with Ki Bareum of the western convoys."
-        },
-        "effects": []
-      },
-      {
-        "id": "k056-repair-not-ammunition",
-        "name": {
-          "ko": "수리 물자를 지킨다",
-          "en": "Protect repair supplies"
-        },
-        "description": {
-          "ko": "비밀 군수 칸을 출력과 함께 잠근다.",
-          "en": "Locks secret military compartments with generator output."
-        },
-        "behavior": {
-          "ko": "비밀 군수 칸을 출력과 함께 잠근다.",
-          "en": "Locks secret military compartments with generator output."
-        },
-        "stress": {
-          "ko": "병참 열차가 차단문 전투조의 탄약칸으로 바뀌고, 규격맹이 부품 봉쇄의 다른 이름이 되는 것.",
-          "en": "That commissariat trains would turn into the barrier-gate combat squads' ammunition cars, and the Fabrication The Gauge would become another name for the parts blockade."
-        },
-        "relationship": {
-          "ko": "최다인의 공병 작업반과 출고 순서를 다투고, 강민서의 규격맹 통일안을 물자표로 옮기며, 서부 호송의 기바름과 부품 칸을 교환한다.",
-          "en": "Contesting release order with Choi Dain's engineering squads, moving Gang Minseo's fabrication alliance unification plan onto supply tables, and exchanging parts columns with Ki Bareum of the western convoys."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "조기 출고 요구를 거부하고 숙련 공개 뒤 순서를 정했다. 상호 수리권의 물자표를 지향하지만 탄약·장비를 발급하지 않는다.",
-      "en": "Rejected early dispatch and set order after publishing skill scores. Seeks a mutual-repair supply table without granting ammunition or equipment."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -532,90 +152,37 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
+  "confirmedHoldings": [
     {
-      "id": "title:duchy-44790-S02",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
+      "id": "holding:v3:section:동작구:신대방",
+      "name": {
+        "ko": "신대방 구간"
+      },
       "holderPersonId": "K056",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:kingdom-s02",
-      "personalLieges": [
+      "directLiegePersonId": "K219",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "신대방",
+        "stationName": "신대방"
+      },
+      "adminRefs": [
         {
-          "holdingId": "holding:opening-duchy-44790-S02",
-          "directLiegePersonId": "K029"
+          "id": "region:1159067000",
+          "name": "신대방1동"
+        },
+        {
+          "id": "region:1159068000",
+          "name": "신대방2동"
+        },
+        {
+          "id": "region:1162052500",
+          "name": "보라매동"
         }
       ],
-      "directOwnership": false
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
     }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ae30-d589-c8fc",
-    "name": "행주 기씨",
-    "crest": "clan-crests/ae30-d589-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -20,
-    "개방": 15,
-    "무력": -10,
-    "물질": 40,
-    "공동": 50,
-    "원칙": 10,
-    "공개": 40,
-    "자격": 50,
-    "분산": 30,
-    "변혁": 15
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": 10,
-    "위험": 0,
-    "과시": -10,
-    "지속": -15,
-    "지향": "무성향",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "규격맹",
-    "생업": "대합실 당직",
-    "품계": "조합원",
-    "직함": "제작 병참",
-    "업무 위치": "구로3동. 기필호는 구로3동 병참 칠판에 민가 전력과 숙련공 교대에 필요한 겨울 부품을 먼저 적는다. 최다인의 공병 작업반이 추첨 전에 출고를 요구하면 숙련점수 게시를 기다리고 기바름과 교환할 부품 칸을 따로 봉한다.",
-    "가치관": "권위 −20 | 개방 15 | 무력 −10 | 물질 40 | 공동 50 | 원칙 10 | 공개 40 | 자격 50 | 분산 30 | 변혁 15",
-    "욕망": "갈망 40 | 독점 10 | 위험 0 | 과시 −10 | 지속 −15 | 지향 무성향 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 제작 병참 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 구로3동. 기필호는 구로3동 병참 칠판에 민가 전력과 숙련공 교대에 필요한 겨울 부품을 먼저 적는다. 최다인의 공병 작업반이 추첨 전에 출고를 요구하면 숙련점수 게시를 기다리고 기바름과 교환할 부품 칸을 따로 봉한다.",
-    "관직": "품계 조합원. 직함은 제작 병참. 병참 출고는 길드 평의회 추첨과 숙련 점수 공개 뒤에만 하고, 비밀 군수 칸은 발전 출력과 함께 잠근다.",
-    "일화": "최다인의 공병 작업반이 길드 평의회 추첨보다 먼저 병참 출고를 요구한다. 기필호는 숙련 점수를 게시한 뒤에야 출고 순서를 정하고, 비밀 군수 칸은 발전 출력과 함께 잠가 둔 채 기바름과 바꿀 부품 칸을 물자표에 옮긴다.",
-    "관계": "최다인의 공병 작업반과 출고 순서를 다투고, 강민서의 규격맹 통일안을 물자표로 옮기며, 서부 호송의 기바름과 부품 칸을 교환한다.",
-    "야망": "수리 규격 통일안이 무력 정복이 아니라 상호 수리권의 물자표로 남게 해, 작업반이 공병대로만 전환되지 않게 한다.",
-    "공포": "병참 열차가 차단문 전투조의 탄약칸으로 바뀌고, 규격맹이 부품 봉쇄의 다른 이름이 되는 것.",
-    "개입": "상호 수리권 물자를 채워 그의 봉인을 정당화하거나, 숨겨진 탄약칸을 폭로해 병참을 교체할 수 있다."
-  },
-  "biography": "공구 상자 수보다 숙련공의 교대 시간을 먼저 세고, 통일안의 이름을 군량 딱지로 붙이는 사람을 경계한다. 실리를 말하되 민가 전력을 병참으로 빼지 않는다.\n\n- 소속: 규격맹\n- 생업: 대합실 당직\n- 품계: 조합원\n- 직함: 제작 병참\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 제작 병참 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 구로3동. 기필호는 구로3동 병참 칠판에 민가 전력과 숙련공 교대에 필요한 겨울 부품을 먼저 적는다. 최다인의 공병 작업반이 추첨 전에 출고를 요구하면 숙련점수 게시를 기다리고 기바름과 교환할 부품 칸을 따로 봉한다.\n\n**관직.** 품계 조합원. 직함은 제작 병참. 병참 출고는 길드 평의회 추첨과 숙련 점수 공개 뒤에만 하고, 비밀 군수 칸은 발전 출력과 함께 잠근다.\n\n**일화.** 최다인의 공병 작업반이 길드 평의회 추첨보다 먼저 병참 출고를 요구한다. 기필호는 숙련 점수를 게시한 뒤에야 출고 순서를 정하고, 비밀 군수 칸은 발전 출력과 함께 잠가 둔 채 기바름과 바꿀 부품 칸을 물자표에 옮긴다.\n\n**관계.** 최다인의 공병 작업반과 출고 순서를 다투고, 강민서의 규격맹 통일안을 물자표로 옮기며, 서부 호송의 기바름과 부품 칸을 교환한다.\n\n**야망.** 수리 규격 통일안이 무력 정복이 아니라 상호 수리권의 물자표로 남게 해, 작업반이 공병대로만 전환되지 않게 한다.\n\n**공포.** 병참 열차가 차단문 전투조의 탄약칸으로 바뀌고, 규격맹이 부품 봉쇄의 다른 이름이 되는 것.\n\n**개입.** 상호 수리권 물자를 채워 그의 봉인을 정당화하거나, 숨겨진 탄약칸을 폭로해 병참을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 15 | 무력 −10 | 물질 40 | 공동 50 | 원칙 10 | 공개 40 | 자격 50 | 분산 30 | 변혁 15\n- 욕망: 갈망 40 | 독점 10 | 위험 0 | 과시 −10 | 지속 −15 | 지향 무성향 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-02"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "기필호",
-        "type": "경쟁",
-        "to": "최다인",
-        "basis": "최다인의 공병 작업반과 출고 순서를 다투고"
-      },
-      {
-        "from": "기필호",
-        "type": "계약",
-        "to": "기바름",
-        "basis": "서부 호송의 기바름과 부품 칸을 교환한다"
-      }
-    ],
-    "incoming": []
-  }
+  ]
 }

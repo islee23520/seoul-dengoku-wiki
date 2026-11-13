@@ -1,501 +1,136 @@
 {
   "id": "person-0013",
   "name": "채온결",
-  "title": "영등포 관로 순찰대 조장",
-  "position": "영등포 관로 순찰대 조장",
+  "title": "보라매 구간장",
+  "position": "보라매 구간장 · 자유도시들",
   "characterId": "K013",
-  "rank": "주사",
-  "commonTier": "T5",
-  "occupation": "관로 순찰",
+  "rank": "구간장",
+  "commonTier": "T3",
+  "occupation": "구간 운영",
   "gender": "여성",
   "stage": "S2",
-  "state": "S01",
-  "stateName": "수문국",
-  "sourceRoute": "/world/Cast-State-01#인물-채온결",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0013",
   "birthDate": "2093-07-05",
   "birthday": "07-05",
   "age": 33,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-01.json#/content/170",
-    "lore/characters/Cast-State-01.json#/content/172"
-  ],
-  "familyTree": {
-    "personId": "K013",
-    "nodes": [
-      {
-        "id": "K013",
-        "personId": "K013",
-        "kind": "person",
-        "name": "채온결",
-        "birthDate": "2093-07-05",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K013"
-          },
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-채온결-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 영등포 관로 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-채온결-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0013"
-      },
-      {
-        "id": "FH-K013-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "채승석",
-        "lineage": {
-          "surname": "채",
-          "bongwan": "평강",
-          "clan": "cc44-d3c9-ac15"
-        },
-        "birthDate": "2063-07-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-채온결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2101,
-            "summary": "채승석은 암사 경비 초소에서 관로 순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-채온결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K013-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "채승준",
-        "lineage": {
-          "surname": "채",
-          "bongwan": "평강",
-          "clan": "cc44-d3c9-ac15"
-        },
-        "birthDate": "2033-07-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-채온결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2071,
-            "summary": "채승준은 암사 경비 초소에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-채온결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K013-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "채승호",
-        "lineage": {
-          "surname": "채",
-          "bongwan": "평강",
-          "clan": "cc44-d3c9-ac15"
-        },
-        "birthDate": "2003-07-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-채온결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "채승호는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-채온결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K013-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이승원",
-        "birthDate": "2063-07-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-채온결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2101,
-            "summary": "이승원은 암사 경비 초소에서 관로 순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-채온결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K013-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승현",
-        "birthDate": "2033-07-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-채온결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2071,
-            "summary": "최승현은 암사 경비 초소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-채온결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K013-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "정승원",
-        "birthDate": "2003-07-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-채온결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정승원은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-채온결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K013-P-01:K013:biological",
-        "from": "FH-K013-P-01",
-        "to": "K013",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-채온결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K013-P-02:FH-K013-P-01:biological",
-        "from": "FH-K013-P-02",
-        "to": "FH-K013-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-채온결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K013-P-03:FH-K013-P-02:biological",
-        "from": "FH-K013-P-03",
-        "to": "FH-K013-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-채온결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K013-M-01:K013:biological",
-        "from": "FH-K013-M-01",
-        "to": "K013",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-채온결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K013-M-02:FH-K013-M-01:biological",
-        "from": "FH-K013-M-02",
-        "to": "FH-K013-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-채온결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K013-M-03:FH-K013-M-02:biological",
-        "from": "FH-K013-M-03",
-        "to": "FH-K013-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-채온결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cc44-d3c9-ac15",
+    "name": "평강 채씨",
+    "crest": "clan-crests/cc44-d3c9-ac15.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "구로디지털단지역에 닿는 부품 수레마다 채온결은 열 몫을 낸 표를 받아 그날 장부에 붙인다. 그녀가 맡은 보라매 구간 다섯 역은 이 역에서 구로와 맞닿아, 남의 역을 지나는 수레가 열 몫을 빠뜨리기 쉬운 자리다. 표를 빠뜨린 수레꾼의 이름은 다음 철까지 장부 첫 쪽에 남겨 둔다. 구간 일손의 몫이 밀리면 자기가 먼저 터널을 걷는다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "보라매 구간장",
+    "품계": "구간장",
+    "생업": "구간 운영",
+    "일하는 역": "보라매역",
+    "잠자는 역": "보라매역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "구로디지털단지역에 닿는 부품 수레마다 채온결은 열 몫을 낸 표를 받아 그날 장부에 붙인다. 그녀가 맡은 보라매 구간 다섯 역은 이 역에서 구로와 맞닿아, 남의 역을 지나는 수레가 열 몫을 빠뜨리기 쉬운 자리다. 표를 빠뜨린 수레꾼의 이름은 다음 철까지 장부 첫 쪽에 남겨 둔다. 구간 일손의 몫이 밀리면 자기가 먼저 터널을 걷는다.",
+    "관직": "직함 보라매 구간장. 직위 보라매 구간장 · 자유도시들. 품계 구간장. 일하는 역 보라매역."
+  },
+  "values": {
+    "권위": 30,
+    "개방": -10,
+    "무력": 15,
+    "물질": 50,
+    "공동": 0,
+    "원칙": 10,
+    "공개": 5,
+    "자격": 20,
+    "분산": 15,
+    "변혁": -5
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": -25,
+    "위험": 25,
+    "과시": 5,
+    "지속": -10,
+    "지향": "무성향",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0013",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "채온결",
+        "type": "지휘",
+        "to": "한재목",
+        "basis": "영등포 장주 한재목의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "국두봉",
+        "type": "지휘",
+        "to": "채온결",
+        "basis": "보라매 구간장 채온결의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K001",
+    "name": "한재목",
+    "courtId": "court:K001",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K013",
+    "members": [
+      {
+        "personId": "K231",
+        "name": "국두봉"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 11,
-        "effective": 11
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "negotiation": {
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
         "base": 6,
         "effective": 6
       },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
       "prowess": {
-        "base": 11,
-        "effective": 11
-      },
-      "endurance": {
-        "base": 11,
-        "effective": 11
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k013-intruder-restraint",
-        "name": {
-          "ko": "난입자 저지",
-          "en": "Intruder restraint"
-        },
-        "rating": 60
-      },
-      {
-        "id": "k013-patrol-redeployment",
-        "name": {
-          "ko": "순찰 재배치",
-          "en": "Patrol redeployment"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k013-vulnerable-lanes",
-        "name": {
-          "ko": "단수 골목 우선",
-          "en": "Cutoff neighborhoods first"
-        },
-        "description": {
-          "ko": "단수 골목을 먼저 지키고 부하 대신 습지를 걷는다.",
-          "en": "Protects cutoff lanes first and walks wetlands ahead of subordinates."
-        },
-        "behavior": {
-          "ko": "단수 골목을 먼저 지키고 부하 대신 습지를 걷는다.",
-          "en": "Protects cutoff lanes first and walks wetlands ahead of subordinates."
-        },
-        "stress": {
-          "ko": "관로 한 곳이 폭파되어 정수가 역류하고, 그 공백을 외부 보호군이 메우는 것.",
-          "en": "That one pipeline would be blown, the purification would backflow, and an outside protection force would fill the gap."
-        },
-        "relationship": {
-          "ko": "김태운의 수문 지휘를 현장에서 집행하고, 허도담의 펌프 시운전이 끝나는 시각에 맞춰 순찰을 재배치하며, 임바다의 단수 골목을 우선 지킨다.",
-          "en": "Executing Kim Taeun's water-gate command in the field, re-deploying patrols to the hour Heo Dodam's pump trials ended, and guarding Im Bada's cutoff alleys first."
-        },
-        "effects": []
-      },
-      {
-        "id": "k013-night-challenge",
-        "name": {
-          "ko": "야간 검문",
-          "en": "Night challenge"
-        },
-        "description": {
-          "ko": "무단 도하를 고의로 보고 암호패를 요구한다.",
-          "en": "Treats unauthorized crossings as intentional and demands passcodes."
-        },
-        "behavior": {
-          "ko": "무단 도하를 고의로 보고 암호패를 요구한다.",
-          "en": "Treats unauthorized crossings as intentional and demands passcodes."
-        },
-        "stress": {
-          "ko": "관로 한 곳이 폭파되어 정수가 역류하고, 그 공백을 외부 보호군이 메우는 것.",
-          "en": "That one pipeline would be blown, the purification would backflow, and an outside protection force would fill the gap."
-        },
-        "relationship": {
-          "ko": "김태운의 수문 지휘를 현장에서 집행하고, 허도담의 펌프 시운전이 끝나는 시각에 맞춰 순찰을 재배치하며, 임바다의 단수 골목을 우선 지킨다.",
-          "en": "Executing Kim Taeun's water-gate command in the field, re-deploying patrols to the hour Heo Dodam's pump trials ended, and guarding Im Bada's cutoff alleys first."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "난입자 저지는 개인 수행, 순찰 재배치는 집단 운영의 직접 근거다. 국가 장군 경력이나 사법 권한은 추가하지 않는다.",
-      "en": "Intruder restraint supports personal performance; patrol redeployment supports group operations. National generalship and judicial authority are not added."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -533,73 +168,68 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "cc44-d3c9-ac15",
-    "name": "평강 채씨",
-    "crest": "clan-crests/cc44-d3c9-ac15.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 65,
-    "개방": -25,
-    "무력": 25,
-    "물질": 35,
-    "공동": 25,
-    "원칙": 20,
-    "공개": 5,
-    "자격": 0,
-    "분산": -40,
-    "변혁": -15
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": -25,
-    "위험": 25,
-    "과시": 5,
-    "지속": -10,
-    "지향": "무성향",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "수문국",
-    "생업": "관로 순찰",
-    "품계": "주사",
-    "직함": "영등포 관로 순찰대 조장",
-    "업무 위치": "당산2동. 당산2동 교량 보고를 받은 채온결은 허도담의 펌프 시운전 종료 시각에 맞춰 관로 순찰을 바꾸고 임바다가 단수를 예고받은 골목을 먼저 살핀다.",
-    "가치관": "권위 65 | 개방 −25 | 무력 25 | 물질 35 | 공동 25 | 원칙 20 | 공개 5 | 자격 0 | 분산 −40 | 변혁 −15",
-    "욕망": "갈망 40 | 독점 −25 | 위험 25 | 과시 5 | 지속 −10 | 지향 무성향 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 영등포 관로 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.\n- 업무 위치: 당산2동. 당산2동 교량 보고를 받은 채온결은 허도담의 펌프 시운전 종료 시각에 맞춰 관로 순찰을 바꾸고 임바다가 단수를 예고받은 골목을 먼저 살핀다.",
-    "관직": "품계 주사. 직함은 영등포 관로 순찰대 조장. 순찰 시각을 공개 칠판에 쓰되, 야간 교량 밑은 김태운의 암호패 없이는 통과시키지 않는다.",
-    "일화": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 영등포 관로 순찰대 조장 자리의 서명이 장부에 올랐다.",
-    "관계": "김태운의 수문 지휘를 현장에서 집행하고, 허도담의 펌프 시운전이 끝나는 시각에 맞춰 순찰을 재배치하며, 임바다의 단수 골목을 우선 지킨다.",
-    "야망": "영등포 관로와 교량 밑 순찰을 수문경비 단일 암호패로 묶어 물 계약의 야간 뼈대가 된다.",
-    "공포": "관로 한 곳이 폭파되어 정수가 역류하고, 그 공백을 외부 보호군이 메우는 것.",
-    "개입": "관로 폭파 위협의 진원을 밝혀 사격선을 거두거나, 암호패 유출을 넘겨 조장을 교체하게 할 수 있다."
-  },
-  "biography": "발소리보다 관로 쇠망치 소리를 먼저 듣고, 야간 무단 도하를 사고보다 고의로 본다. 부하의 급수표가 밀리면 자신이 습지를 먼저 걷는다.\n\n- 소속: 수문국\n- 생업: 관로 순찰\n- 품계: 주사\n- 직함: 영등포 관로 순찰대 조장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 영등포 관로 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.\n- 업무 위치: 당산2동. 당산2동 교량 보고를 받은 채온결은 허도담의 펌프 시운전 종료 시각에 맞춰 관로 순찰을 바꾸고 임바다가 단수를 예고받은 골목을 먼저 살핀다.\n\n**관직.** 품계 주사. 직함은 영등포 관로 순찰대 조장. 순찰 시각을 공개 칠판에 쓰되, 야간 교량 밑은 김태운의 암호패 없이는 통과시키지 않는다.\n\n**일화.** 2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 영등포 관로 순찰대 조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 김태운의 수문 지휘를 현장에서 집행하고, 허도담의 펌프 시운전이 끝나는 시각에 맞춰 순찰을 재배치하며, 임바다의 단수 골목을 우선 지킨다.\n\n**야망.** 영등포 관로와 교량 밑 순찰을 수문경비 단일 암호패로 묶어 물 계약의 야간 뼈대가 된다.\n\n**공포.** 관로 한 곳이 폭파되어 정수가 역류하고, 그 공백을 외부 보호군이 메우는 것.\n\n**개입.** 관로 폭파 위협의 진원을 밝혀 사격선을 거두거나, 암호패 유출을 넘겨 조장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −25 | 무력 25 | 물질 35 | 공동 25 | 원칙 20 | 공개 5 | 자격 0 | 분산 −40 | 변혁 −15\n- 욕망: 갈망 40 | 독점 −25 | 위험 25 | 과시 5 | 지속 −10 | 지향 무성향 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-01"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "채온결",
-        "type": "지휘",
-        "to": "김태운",
-        "basis": "김태운의 수문 지휘를 현장에서 집행하고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:section:영등포구:보라매",
+      "name": {
+        "ko": "보라매 구간"
       },
-      {
-        "from": "채온결",
-        "type": "지휘",
-        "to": "허도담",
-        "basis": "허도담의 펌프 시운전이 끝나는 시각에 맞춰 순찰을 재배치하며"
-      }
-    ],
-    "incoming": []
-  }
+      "holderPersonId": "K013",
+      "directLiegePersonId": "K001",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "보라매",
+        "stationName": "보라매"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1156068000",
+          "name": "신길6동"
+        },
+        {
+          "id": "region:1159068000",
+          "name": "신대방2동"
+        },
+        {
+          "id": "region:1159066000",
+          "name": "대방동"
+        },
+        {
+          "id": "region:1153054000",
+          "name": "구로3동"
+        }
+      ],
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ],
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:보라매",
+      "name": {
+        "ko": "보라매역"
+      },
+      "holderPersonId": "K231",
+      "directLiegePersonId": "K013",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "보라매",
+        "stationName": "보라매"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1156068000",
+          "name": "신길6동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "국두봉",
+      "holderRoute": "/people/person-0232"
+    }
+  ]
 }

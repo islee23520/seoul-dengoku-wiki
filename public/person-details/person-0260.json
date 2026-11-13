@@ -1,492 +1,105 @@
 {
   "id": "person-0260",
   "name": "두소",
-  "title": "회랑 통행 안내 거점장",
-  "position": "통행 장부 수좌",
+  "title": "구 부대 지휘관",
+  "position": "구 부대 지휘관 · 공덕역",
   "characterId": "K259",
-  "rank": "수좌",
-  "commonTier": "T3",
-  "occupation": "통행 시각·신도 표 게시",
+  "rank": "소령",
+  "commonTier": "T5",
+  "occupation": "군 지휘",
   "gender": "남성",
   "stage": "S2",
-  "state": "S10",
-  "stateName": "안국총림",
-  "sourceRoute": "/world/Cast-State-10#인물-두소",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0260",
   "birthDate": "2087-10-13",
   "birthday": "10-13",
   "age": 39,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-10.json#/content/6"
-  ],
-  "familyTree": {
-    "personId": "K259",
-    "nodes": [
-      {
-        "id": "K259",
-        "personId": "K259",
-        "kind": "person",
-        "name": "두소",
-        "birthDate": "2087-10-13",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K259"
-          },
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-두소-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 통행 장부 수좌 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-두소-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0260"
-      },
-      {
-        "id": "FH-K259-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "두승윤",
-        "lineage": {
-          "surname": "두",
-          "bongwan": "두릉",
-          "clan": "b450-b450-b989"
-        },
-        "birthDate": "2057-10-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-두소-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2095,
-            "summary": "두승윤은 대합실 당직에서 통행 시각·신도 표 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-두소-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K259-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "두승우",
-        "lineage": {
-          "surname": "두",
-          "bongwan": "두릉",
-          "clan": "b450-b450-b989"
-        },
-        "birthDate": "2027-10-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-두소-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2065,
-            "summary": "두승우는 대합실 당직에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-두소-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K259-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "두승경",
-        "lineage": {
-          "surname": "두",
-          "bongwan": "두릉",
-          "clan": "b450-b450-b989"
-        },
-        "birthDate": "1997-10-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-두소-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "두승경은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-두소-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K259-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현나",
-        "birthDate": "2057-10-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-두소-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2095,
-            "summary": "임현나는 대합실 당직에서 통행 시각·신도 표 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-두소-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K259-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현성",
-        "birthDate": "2027-10-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-두소-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2065,
-            "summary": "오현성은 대합실 당직에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-두소-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K259-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "송현훈",
-        "birthDate": "1997-10-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-두소-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "송현훈은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-두소-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K259-P-01:K259:biological",
-        "from": "FH-K259-P-01",
-        "to": "K259",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-두소-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K259-P-02:FH-K259-P-01:biological",
-        "from": "FH-K259-P-02",
-        "to": "FH-K259-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-두소-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K259-P-03:FH-K259-P-02:biological",
-        "from": "FH-K259-P-03",
-        "to": "FH-K259-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-두소-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K259-M-01:K259:biological",
-        "from": "FH-K259-M-01",
-        "to": "K259",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-두소-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K259-M-02:FH-K259-M-01:biological",
-        "from": "FH-K259-M-02",
-        "to": "FH-K259-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-두소-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K259-M-03:FH-K259-M-02:biological",
-        "from": "FH-K259-M-03",
-        "to": "FH-K259-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-두소-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b450-b450-b989",
+    "name": "두릉 두씨",
+    "crest": "clan-crests/b450-b450-b989.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "주민등록과 국방부 기재가 모두 마포구 공덕동 공덕역을 가리키는 군 가구의 소령이다. 김연규 국회의원의 추천서와 국방부의 임명장을 함께 받아 마포구 부대 전체를 지휘한다. 마포구 부대는 역과 출입구, 망대를 지키고, 강 밑 터널 검문소 하나와 두 다리 끝은 수도방위사령부 직할대가 맡으므로 그의 도장은 그 셋에 미치지 않는다. 강 건너 영등포와 강서 쪽 끝의 사정은 세 초소가 저녁마다 공덕으로 보내는 한 줄 소식으로만 듣고, 그는 그 세 줄을 맞춰 본 뒤에야 다음 날 출입구 명령서를 쓴다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "구 부대 지휘관",
+    "품계": "소령",
+    "생업": "군 지휘",
+    "일하는 역": "공덕역",
+    "잠자는 역": "공덕역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "주민등록과 국방부 기재가 모두 마포구 공덕동 공덕역을 가리키는 군 가구의 소령이다. 김연규 국회의원의 추천서와 국방부의 임명장을 함께 받아 마포구 부대 전체를 지휘한다. 마포구 부대는 역과 출입구, 망대를 지키고, 강 밑 터널 검문소 하나와 두 다리 끝은 수도방위사령부 직할대가 맡으므로 그의 도장은 그 셋에 미치지 않는다. 강 건너 영등포와 강서 쪽 끝의 사정은 세 초소가 저녁마다 공덕으로 보내는 한 줄 소식으로만 듣고, 그는 그 세 줄을 맞춰 본 뒤에야 다음 날 출입구 명령서를 쓴다.",
+    "관직": "직함 구 부대 지휘관. 직위 구 부대 지휘관 · 공덕역. 품계 소령. 일하는 역 공덕역."
+  },
+  "values": {
+    "권위": 0,
+    "개방": 0,
+    "무력": -5,
+    "물질": -30,
+    "공동": 70,
+    "원칙": 45,
+    "공개": 0,
+    "자격": 45,
+    "분산": -5,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": 40,
+    "위험": 40,
+    "과시": 10,
+    "지속": 40,
+    "지향": "유동",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0260",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
-      },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 9,
-        "effective": 9
-      },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
+      "diplomacy": {
         "base": 4,
         "effective": 4
       },
-      "endurance": {
-        "base": 9,
-        "effective": 9
-      }
-    },
-    "skills": [
-      {
-        "id": "passage-guidance",
-        "name": {
-          "ko": "통행 안내·표 확인",
-          "en": "Passage guidance and pass checking"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "passage-guidance-disposition",
-        "name": {
-          "ko": "보호비 안내 거부",
-          "en": "Rejects fee-based coercive guidance"
-        },
-        "description": {
-          "ko": "칼보다 말로 길을 나누고 눈 덮인 표지를 직접 닦는다.",
-          "en": "Shares routes with words rather than a knife and cleans snowy signs."
-        },
-        "behavior": {
-          "ko": "칼보다 말로 길을 나누고 눈 덮인 표지를 직접 닦는다.",
-          "en": "Shares routes with words rather than a knife and cleans snowy signs."
-        },
-        "stress": {
-          "ko": "피난 표지가 군사 이정표로 바뀔 것을 두려워한다.",
-          "en": "Fears refuge signs becoming military route markers."
-        },
-        "relationship": {
-          "ko": "모봉의 산악 운송을 입구에서 받고, 복모의 우회로 표시를 이정표에 옮긴다. 용국의 순찰과 횃불 교대를 나눈다.",
-          "en": "Receives Mobong’s cargo, updates Bokmo’s signs and shares torch shifts with Yongguk."
-        },
-        "effects": []
+      "martial": {
+        "base": 11,
+        "effective": 11
       },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "정찰 뒤 안내",
-          "en": "Guidance after reconnaissance"
-        },
-        "description": {
-          "ko": "무장 안내는 정찰 보고 뒤에 연다.",
-          "en": "Opens armed guidance after reconnaissance reports."
-        },
-        "behavior": {
-          "ko": "무장 안내는 정찰 보고 뒤에 연다.",
-          "en": "Opens armed guidance after reconnaissance reports."
-        },
-        "stress": {
-          "ko": "안내 표지가 군사 호송 이정표로 덧칠되어 피난로가 지워지는 것.",
-          "en": "Fears refuge signs becoming military route markers."
-        },
-        "relationship": {
-          "ko": "모봉의 산악 운송을 입구에서 받고, 복모의 우회로 표시를 이정표에 옮긴다. 용국의 순찰과 횃불 교대를 나눈다.",
-          "en": "Receives Mobong’s cargo, updates Bokmo’s signs and shares torch shifts with Yongguk."
-        },
-        "effects": []
+      "stewardship": {
+        "base": 4,
+        "effective": 4
+      },
+      "intrigue": {
+        "base": 5,
+        "effective": 5
+      },
+      "learning": {
+        "base": 4,
+        "effective": 4
+      },
+      "prowess": {
+        "base": 10,
+        "effective": 10
       }
-    ],
-    "narrative": {
-      "ko": "통행 시각과 신도 표를 게시하며 안내를 보호비로 바꾸는 사람을 길에서 내려보낸다. 검문 줄 사건은 군사 통제에 대한 미해결 압력이다.",
-      "en": "Posts passage times with member passes and removes people who turn guidance into protection fees. The checkpoint line remains unresolved military pressure."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,180 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-gu-11305-S10",
-      "name": {
-        "ko": "강북구 공작령 직영지"
-      },
-      "holderPersonId": "K259",
-      "directLiegePersonId": "K144",
-      "stateId": "S10",
-      "adminRefs": [
-        {
-          "id": "region:1130553400",
-          "name": "삼양동"
-        },
-        {
-          "id": "region:1130553500",
-          "name": "미아동"
-        },
-        {
-          "id": "region:1130554500",
-          "name": "송중동"
-        },
-        {
-          "id": "region:1130555500",
-          "name": "송천동"
-        },
-        {
-          "id": "region:1130557500",
-          "name": "삼각산동"
-        },
-        {
-          "id": "region:1130559500",
-          "name": "번1동"
-        },
-        {
-          "id": "region:1130560300",
-          "name": "번2동"
-        },
-        {
-          "id": "region:1130560800",
-          "name": "번3동"
-        },
-        {
-          "id": "region:1130561500",
-          "name": "수유1동"
-        },
-        {
-          "id": "region:1130562500",
-          "name": "수유2동"
-        },
-        {
-          "id": "region:1130563500",
-          "name": "수유3동"
-        },
-        {
-          "id": "region:1130564500",
-          "name": "우이동"
-        },
-        {
-          "id": "region:1130566000",
-          "name": "인수동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11305-S10",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
-    {
-      "id": "title:duchy-gu-11305-S10",
-      "name": "강북구 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K259",
-      "basis": "개막 행정 규모 그룹 gu:11305(duchy) 배분 · 결정적 후보 선정",
-      "stateId": "S10",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "region:1130553400",
-        "region:1130553500",
-        "region:1130554500",
-        "region:1130555500",
-        "region:1130557500",
-        "region:1130559500",
-        "region:1130560300",
-        "region:1130560800",
-        "region:1130561500",
-        "region:1130562500",
-        "region:1130563500",
-        "region:1130564500",
-        "region:1130566000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
-    }
-  ],
-  "clan": {
-    "id": "b450-b450-b989",
-    "name": "두릉 두씨",
-    "crest": "clan-crests/b450-b450-b989.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -45,
-    "개방": 55,
-    "무력": -40,
-    "물질": -25,
-    "공동": 65,
-    "원칙": 25,
-    "공개": 25,
-    "자격": 30,
-    "분산": 45,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": 40,
-    "위험": 40,
-    "과시": 10,
-    "지속": 40,
-    "지향": "유동",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "통행 시각·신도 표 게시",
-    "소속": "안국총림",
-    "품계": "수좌",
-    "직함": "통행 장부 수좌",
-    "가치관": "권위 −45 | 개방 55 | 무력 −40 | 물질 −25 | 공동 65 | 원칙 25 | 공개 25 | 자격 30 | 분산 45 | 변혁 5",
-    "욕망": "갈망 10 | 독점 40 | 위험 40 | 과시 10 | 지속 40 | 지향 유동 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2087-10-13 출생, 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 통행 장부 수좌 당직 기록에는 교대 무단 결근 뒤 대체 당직을 맡은 일이 남아 있다.\n- 두소의 통행 시각·신도 표 게시 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
-    "관직": "품계 수좌. 직함은 통행 장부 수좌. 통행 시각과 신도 표를 같은 칠판에 적고, 무장 안내는 강태산의 정찰 보고 뒤에만 연다.",
-    "일화": "암사 순찰대가 철표를 들고 안내 칠판 앞에 검문 줄을 치려고 했다.",
-    "관계": "모봉의 산악 운송을 입구에서 받고, 복모의 우회로 표시를 이정표에 옮긴다. 용국의 순찰과 횃불 교대를 나눈다.",
-    "야망": "통행 장부를 총림의 공개 거점으로 남겨 암사 순찰이 숙영 입구를 검문소로 쓰지 못하게 한다.",
-    "공포": "안내 표지가 군사 호송 이정표로 덧칠되어 피난로가 지워지는 것.",
-    "개입": "검문 줄을 거두거나, 안내 칠판의 원본 시각을 산중총회의 증언으로 남길 수 있다."
-  },
-  "biography": "이정표를 깎는 칼보다 말로 길을 나누고, 보호비를 안내료로 바꾸는 사람을 길에서 내려보낸다. 눈 덮인 표지는 자랑하지 않고 손으로 닦는다.\n\n- 생업: 통행 시각·신도 표 게시\n- 소속: 안국총림\n- 품계: 수좌\n- 직함: 통행 장부 수좌\n**생애.** 2087-10-13 출생, 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 통행 장부 수좌 당직 기록에는 교대 무단 결근 뒤 대체 당직을 맡은 일이 남아 있다.\n- 두소의 통행 시각·신도 표 게시 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n**관직.** 품계 수좌. 직함은 통행 장부 수좌. 통행 시각과 신도 표를 같은 칠판에 적고, 무장 안내는 강태산의 정찰 보고 뒤에만 연다.\n\n**일화.** 암사 순찰대가 철표를 들고 안내 칠판 앞에 검문 줄을 치려고 했다.\n\n**관계.** 모봉의 산악 운송을 입구에서 받고, 복모의 우회로 표시를 이정표에 옮긴다. 용국의 순찰과 횃불 교대를 나눈다.\n\n**야망.** 통행 장부를 총림의 공개 거점으로 남겨 암사 순찰이 숙영 입구를 검문소로 쓰지 못하게 한다.\n\n**공포.** 안내 표지가 군사 호송 이정표로 덧칠되어 피난로가 지워지는 것.\n\n**개입.** 검문 줄을 거두거나, 안내 칠판의 원본 시각을 산중총회의 증언으로 남길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 55 | 무력 −40 | 물질 −25 | 공동 65 | 원칙 25 | 공개 25 | 자격 30 | 분산 45 | 변혁 5\n- 욕망: 갈망 10 | 독점 40 | 위험 40 | 과시 10 | 지속 40 | 지향 유동 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-10"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "두소",
-        "type": "계약",
-        "to": "모봉",
-        "basis": "모봉의 산악 운송을 입구에서 받고"
-      },
-      {
-        "from": "두소",
-        "type": "계약",
-        "to": "복모",
-        "basis": "복모의 우회로 표시를 이정표에 옮긴다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "복모",
-        "type": "계약",
-        "to": "두소",
-        "basis": "두소의 회랑 안내 표지와 표시를 맞춘다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

@@ -1,393 +1,126 @@
 {
   "id": "person-0199",
   "name": "서나연",
-  "title": "얼음 상인",
-  "position": "얼음 상인",
+  "title": "의원 집안 후계",
+  "position": "의원 집안 후계 · 보문역",
   "characterId": "K198",
-  "rank": "교도",
-  "commonTier": "T5",
-  "occupation": "얼음 벽돌 무게·제작 시각 각인",
+  "rank": "후계",
+  "commonTier": "T2",
+  "occupation": "구 행정",
   "gender": "여성",
   "stage": "S1",
-  "state": "S08",
-  "stateName": "중앙정보부",
-  "sourceRoute": "/world/Cast-State-08#인물-서나연",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0199",
   "birthDate": "2064-03-14",
   "birthday": "03-14",
   "age": 62,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-08.json#/content/83"
-  ],
-  "familyTree": {
-    "personId": "K198",
-    "nodes": [
-      {
-        "id": "K198",
-        "personId": "K198",
-        "kind": "person",
-        "name": "서나연",
-        "birthDate": "2064-03-14",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K198"
-          },
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-서나연-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 얼음 상인 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-서나연-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0199"
-      },
-      {
-        "id": "FH-K198-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "서승호",
-        "lineage": {
-          "surname": "서",
-          "bongwan": "달성",
-          "clan": "c11c-b2ec-c131"
-        },
-        "birthDate": "2034-03-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-서나연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "서승호는 대합실 당직에서 얼음 벽돌 무게·제작 시각 각인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-서나연-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K198-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "서승민",
-        "lineage": {
-          "surname": "서",
-          "bongwan": "달성",
-          "clan": "c11c-b2ec-c131"
-        },
-        "birthDate": "2004-03-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-서나연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "서승민은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-서나연-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K198-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현연",
-        "birthDate": "2034-03-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-서나연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "강현연은 대합실 당직에서 얼음 벽돌 무게·제작 시각 각인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-서나연-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K198-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현아",
-        "birthDate": "2004-03-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-서나연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임현아는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-서나연-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K198-P-01:K198:biological",
-        "from": "FH-K198-P-01",
-        "to": "K198",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-서나연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K198-P-02:FH-K198-P-01:biological",
-        "from": "FH-K198-P-02",
-        "to": "FH-K198-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-서나연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K198-M-01:K198:biological",
-        "from": "FH-K198-M-01",
-        "to": "K198",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-서나연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K198-M-02:FH-K198-M-01:biological",
-        "from": "FH-K198-M-02",
-        "to": "FH-K198-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-서나연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c11c-b2ec-c131",
+    "name": "달성 서씨",
+    "crest": "clan-crests/c11c-b2ec-c131.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "성북구 의원 집안 후계 서나연은 달성 서씨이고 예순두 살이며, 보문역 깊은 층에 기재돼 있다. 정부서울청사에서 산림 일을 오래 본 뒤 세대주 서라온 의원이 집안의 맏어른인 그녀를 후계로 지명했다. 구 부대가 올린 망대 보고에 지도가 붙어 있지 않으면 의원이 그날 밤 그녀 편에 망대로 돌려보내므로, 그녀는 북한산 쪽 테두리 망대까지 오르는 길을 썰매 길처럼 외운다. 의원 집안 사람의 장례가 있는 날이면 장례조의 썰매 순서도 그녀가 정한다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "의원 집안 후계",
+    "품계": "후계",
+    "생업": "구 행정",
+    "일하는 역": "보문역",
+    "잠자는 역": "보문역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "성북구 의원 집안 후계 서나연은 달성 서씨이고 예순두 살이며, 보문역 깊은 층에 기재돼 있다. 정부서울청사에서 산림 일을 오래 본 뒤 세대주 서라온 의원이 집안의 맏어른인 그녀를 후계로 지명했다. 구 부대가 올린 망대 보고에 지도가 붙어 있지 않으면 의원이 그날 밤 그녀 편에 망대로 돌려보내므로, 그녀는 북한산 쪽 테두리 망대까지 오르는 길을 썰매 길처럼 외운다. 의원 집안 사람의 장례가 있는 날이면 장례조의 썰매 순서도 그녀가 정한다.",
+    "관직": "직함 의원 집안 후계. 직위 의원 집안 후계 · 보문역. 품계 후계. 일하는 역 보문역."
+  },
+  "values": {
+    "권위": 35,
+    "개방": -15,
+    "무력": 15,
+    "물질": 75,
+    "공동": -15,
+    "원칙": -30,
+    "공개": -10,
+    "자격": 10,
+    "분산": -30,
+    "변혁": 0
+  },
+  "desire": {
+    "갈망": 35,
+    "독점": 0,
+    "위험": -10,
+    "과시": 50,
+    "지속": 0,
+    "지향": "유동",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0199",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "서나연",
+        "type": "지휘",
+        "to": "서라온",
+        "basis": "성북구 국회의원 서라온의 직속"
+      },
+      {
+        "from": "서나연",
+        "type": "맹세",
+        "to": "서라온",
+        "basis": "서라온 앞에서 집안 도장을 지키겠다고 맹세하고 후계 기재를 받았다"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K149",
+    "name": "서라온",
+    "courtId": "court:K149",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 10,
         "effective": 10
       },
-      "management": {
-        "base": 12,
-        "effective": 12
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
-      "learning": {
+      "stewardship": {
         "base": 9,
         "effective": 9
       },
-      "prowess": {
-        "base": 3,
-        "effective": 3
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
-      "endurance": {
+      "learning": {
         "base": 6,
         "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "ice-weight-marking",
-        "name": {
-          "ko": "얼음 중량 각인",
-          "en": "Ice weight marking"
-        },
-        "rating": 65
-      },
-      {
-        "id": "ice-allocation",
-        "name": {
-          "ko": "얼음 배정",
-          "en": "Ice allocation"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k198-disposition",
-        "name": {
-          "ko": "병든 아이 먼저",
-          "en": "Sick children first"
-        },
-        "description": {
-          "ko": "꼼꼼하고 인색해 보이지만 병든 아이에게는 얼음을 먼저 푼다. 온도보다 신용이 먼저 녹는다고 말한다.",
-          "en": "Meticulous and seeming stingy, she opened the ice first for a sick child. She said credit melted before temperature did."
-        },
-        "behavior": {
-          "ko": "관직. 품계 교도. 직함은 얼음 상인. 벽돌 무게와 제작 시각을 각인하고, 녹은 얼음으로 중량을 맞춘 상인을 시장에서 내보낸다.",
-          "en": "Office. Rank: lay instructor. Title: ice merchant. She engraved brick weight and production hour and sent out of the market any merchant who matched weight with melted ice."
-        },
-        "stress": {
-          "ko": "공포. 한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.",
-          "en": "Fear. That Han River intake and ice-making power would cut at once and the ice ledger would become scrap paper."
-        },
-        "relationship": {
-          "ko": "관계. 오해린의 담보 창고를 채우고 조민재와 온도 기록을 공유한다. 윤지율에게 의무실 얼음을 우선 배정한다.",
-          "en": "Relations. Filled O Haerin's collateral warehouse and shared temperature records with Jo Minjae. Assigned infirmary ice as priority to Yun Jiyul."
-        },
-        "effects": []
-      },
-      {
-        "id": "k198-choice",
-        "name": {
-          "ko": "녹은 중량 거부",
-          "en": "Rejecting melted weight fraud"
-        },
-        "description": {
-          "ko": "일화. 정전 첫날 제빙기가 멈추자 상인들이 녹은 물을 다시 얼렸다며 중량을 속이기 시작했다.",
-          "en": "Anecdote. When the ice machines stopped on the first blackout day, merchants began cheating weights, refreezing melted water."
-        },
-        "behavior": {
-          "ko": "관계. 오해린의 담보 창고를 채우고 조민재와 온도 기록을 공유한다. 윤지율에게 의무실 얼음을 우선 배정한다.",
-          "en": "Relations. Filled O Haerin's collateral warehouse and shared temperature records with Jo Minjae. Assigned infirmary ice as priority to Yun Jiyul."
-        },
-        "stress": {
-          "ko": "공포. 한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.",
-          "en": "Fear. That Han River intake and ice-making power would cut at once and the ice ledger would become scrap paper."
-        },
-        "relationship": {
-          "ko": "관계. 오해린의 담보 창고를 채우고 조민재와 온도 기록을 공유한다. 윤지율에게 의무실 얼음을 우선 배정한다.",
-          "en": "Relations. Filled O Haerin's collateral warehouse and shared temperature records with Jo Minjae. Assigned infirmary ice as priority to Yun Jiyul."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "얼음 제작 시각·무게를 새기고 병든 아이와 의무실에 먼저 배정한다. 얼음의 결제 단위 표준화는 아직 목표다.",
-      "en": "Marks ice production times and weight and gives priority to sick children and clinics. Standardization as a payment unit remains a goal."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -425,103 +158,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c11c-b2ec-c131",
-    "name": "달성 서씨",
-    "crest": "clan-crests/c11c-b2ec-c131.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -10,
-    "개방": 40,
-    "무력": -20,
-    "물질": 80,
-    "공동": -20,
-    "원칙": -50,
-    "공개": 15,
-    "자격": -5,
-    "분산": 20,
-    "변혁": 20
-  },
-  "desire": {
-    "갈망": 35,
-    "독점": 0,
-    "위험": -10,
-    "과시": 50,
-    "지속": 0,
-    "지향": "유동",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "중앙정보부",
-    "품계": "교도",
-    "생업": "얼음 벽돌 무게·제작 시각 각인",
-    "직함": "얼음 상인",
-    "가치관": "권위 −10 | 개방 40 | 무력 −20 | 물질 80 | 공동 −20 | 원칙 −50 | 공개 15 | 자격 −5 | 분산 20 | 변혁 20",
-    "욕망": "갈망 35 | 독점 0 | 위험 −10 | 과시 50 | 지속 0 | 지향 유동 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 얼음 상인 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 서나연은 노량진1동에서 얼음 벽돌 무게·제작 시각 각인 업무를 맡는다.",
-    "관직": "품계 교도. 직함은 얼음 상인. 벽돌 무게와 제작 시각을 각인하고, 녹은 얼음으로 중량을 맞춘 상인을 시장에서 내보낸다.",
-    "일화": "정전 첫날 제빙기가 멈추자 상인들이 녹은 물을 다시 얼렸다며 중량을 속이기 시작했다.",
-    "관계": "오해린의 담보 창고를 채우고 조민재와 온도 기록을 공유한다. 윤지율에게 의무실 얼음을 우선 배정한다.",
-    "야망": "얼음 벽돌을 결제 단위로 표준화해 전력이 흔들려도 노량진 시세가 하루를 버티게 한다.",
-    "공포": "한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.",
-    "개입": "수동 제빙 도구를 들여오거나, 가짜 중량 벽돌을 경매 전에 깨 보일 수 있다."
-  },
-  "biography": "꼼꼼하고 인색해 보이지만 병든 아이에게는 얼음을 먼저 푼다. 온도보다 신용이 먼저 녹는다고 말한다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 얼음 벽돌 무게·제작 시각 각인\n- 직함: 얼음 상인\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 얼음 상인 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 서나연은 노량진1동에서 얼음 벽돌 무게·제작 시각 각인 업무를 맡는다.\n\n**관직.** 품계 교도. 직함은 얼음 상인. 벽돌 무게와 제작 시각을 각인하고, 녹은 얼음으로 중량을 맞춘 상인을 시장에서 내보낸다.\n\n**일화.** 정전 첫날 제빙기가 멈추자 상인들이 녹은 물을 다시 얼렸다며 중량을 속이기 시작했다.\n\n**관계.** 오해린의 담보 창고를 채우고 조민재와 온도 기록을 공유한다. 윤지율에게 의무실 얼음을 우선 배정한다.\n\n**야망.** 얼음 벽돌을 결제 단위로 표준화해 전력이 흔들려도 노량진 시세가 하루를 버티게 한다.\n\n**공포.** 한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.\n\n**개입.** 수동 제빙 도구를 들여오거나, 가짜 중량 벽돌을 경매 전에 깨 보일 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 40 | 무력 −20 | 물질 80 | 공동 −20 | 원칙 −50 | 공개 15 | 자격 −5 | 분산 20 | 변혁 20\n- 욕망: 갈망 35 | 독점 0 | 위험 −10 | 과시 50 | 지속 0 | 지향 유동 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-08"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "서나연",
-        "type": "지휘",
-        "to": "오해린",
-        "basis": "담보 창고를 얼음으로 채움"
-      },
-      {
-        "from": "서나연",
-        "type": "계약",
-        "to": "윤지율",
-        "basis": "의무실 얼음을 우선 배정"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "루카스 슈나이더",
-        "type": "계약",
-        "to": "서나연",
-        "basis": "얼음 벽돌을 환적 창에서 받음"
-      },
-      {
-        "from": "황세린",
-        "type": "계약",
-        "to": "서나연",
-        "basis": "얼음·식량 호송을 검수"
-      },
-      {
-        "from": "나탈리야 소콜로바",
-        "type": "계약",
-        "to": "서나연",
-        "basis": "서나연의 얼음 벽돌을 인계하며"
-      },
-      {
-        "from": "지윤재",
-        "type": "사제",
-        "to": "서나연",
-        "basis": "서나연의 벽돌 각인을 현장에서 받치는 사제이고"
-      },
-      {
-        "from": "단노을",
-        "type": "맹세",
-        "to": "서나연",
-        "basis": "서나연의 벽돌 각인이 밤에 바뀐 칸을 가리키고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

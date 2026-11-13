@@ -1,387 +1,105 @@
 {
   "id": "person-0396",
   "name": "초시람",
-  "title": "공신 보상 경매 당사자",
-  "position": "선거 증인 부제",
+  "title": "동주민센터 선임 서기",
+  "position": "동주민센터 선임 서기 · 창동역",
   "characterId": "K395",
-  "rank": "부제",
-  "commonTier": "T4",
-  "occupation": "선거 증언·보좌",
+  "rank": "주사",
+  "commonTier": "T5",
+  "occupation": "장부 기재",
   "gender": "여성",
   "stage": "S3",
-  "state": "S15",
-  "stateName": "명동대교구",
-  "sourceRoute": "/world/Cast-State-15#인물-초시람",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0396",
   "birthDate": "2086-12-13",
   "birthday": "12-13",
   "age": 40,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-15.json#/content/236",
-    "lore/characters/Cast-State-15.json#/content/237",
-    "lore/characters/Cast-State-15.json#/content/238"
-  ],
-  "familyTree": {
-    "personId": "K395",
-    "nodes": [
-      {
-        "id": "K395",
-        "personId": "K395",
-        "kind": "person",
-        "name": "초시람",
-        "birthDate": "2086-12-13",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K395"
-          },
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-초시람-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 선거 증인 부제 일을 맡았다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-초시람-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0396"
-      },
-      {
-        "id": "FH-K395-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "초승진",
-        "lineage": {
-          "surname": "초",
-          "bongwan": "성주",
-          "clan": "cd08-c131-c8fc"
-        },
-        "birthDate": "2056-12-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-초시람-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2094,
-            "summary": "초승진은 노량진 선창에서 선거 증언·보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-초시람-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K395-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "초승현",
-        "lineage": {
-          "surname": "초",
-          "bongwan": "성주",
-          "clan": "cd08-c131-c8fc"
-        },
-        "birthDate": "2026-12-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-초시람-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "초승현은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-초시람-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K395-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김준재",
-        "birthDate": "2056-12-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-초시람-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2094,
-            "summary": "김준재는 노량진 선창에서 선거 증언·보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-초시람-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K395-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준찬",
-        "birthDate": "2026-12-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-초시람-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박준찬은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-초시람-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K395-P-01:K395:biological",
-        "from": "FH-K395-P-01",
-        "to": "K395",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-초시람-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K395-P-02:FH-K395-P-01:biological",
-        "from": "FH-K395-P-02",
-        "to": "FH-K395-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-초시람-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K395-M-01:K395:biological",
-        "from": "FH-K395-M-01",
-        "to": "K395",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-초시람-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K395-M-02:FH-K395-M-01:biological",
-        "from": "FH-K395-M-02",
-        "to": "FH-K395-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-초시람-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cd08-c131-c8fc",
+    "name": "성주 초씨",
+    "crest": "clan-crests/cd08-c131-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "도봉구 창4동, 동주민센터 선임 서기, 주사 초시람, 마흔. 잠은 녹천역에서 자고, 아침마다 한 정거장 선로를 걸어 창동역 동주민센터의 배급 창구에 앉아 끼니 증표 대장을 맡는다. 창동 차량기지에서 부품을 뜯는 노역 의무일이 돌아오면 그날 나온 세대와 나오지 않은 세대를 대장에서 가르는 것도 그의 일인데, 빠진 세대마다 사유를 한 줄씩 받아 적기 전에는 대장을 덮지 않는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "동주민센터 선임 서기",
+    "품계": "주사",
+    "생업": "장부 기재",
+    "일하는 역": "창동역",
+    "잠자는 역": "녹천역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "도봉구 창4동, 동주민센터 선임 서기, 주사 초시람, 마흔. 잠은 녹천역에서 자고, 아침마다 한 정거장 선로를 걸어 창동역 동주민센터의 배급 창구에 앉아 끼니 증표 대장을 맡는다. 창동 차량기지에서 부품을 뜯는 노역 의무일이 돌아오면 그날 나온 세대와 나오지 않은 세대를 대장에서 가르는 것도 그의 일인데, 빠진 세대마다 사유를 한 줄씩 받아 적기 전에는 대장을 덮지 않는다.",
+    "관직": "직함 동주민센터 선임 서기. 직위 동주민센터 선임 서기 · 창동역. 품계 주사. 일하는 역 창동역."
+  },
+  "values": {
+    "권위": 50,
+    "개방": -30,
+    "무력": 35,
+    "물질": 75,
+    "공동": -15,
+    "원칙": -40,
+    "공개": -40,
+    "자격": 10,
+    "분산": -40,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": -15,
+    "위험": 5,
+    "과시": 15,
+    "지속": 15,
+    "지향": "양성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0396",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
       },
-      "strategy": {
-        "base": 5,
-        "effective": 5
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
+      "stewardship": {
+        "base": 11,
+        "effective": 11
       },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 9,
-        "effective": 9
-      },
-      "learning": {
+      "intrigue": {
         "base": 7,
         "effective": 7
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
       },
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
       }
     },
-    "skills": [
-      {
-        "id": "public-objection",
-        "name": {
-          "ko": "공개 이의 제기",
-          "en": "Public objection"
-        },
-        "rating": 45
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "대상 취급에 이의",
-          "en": "Objects to being treated as a lot"
-        },
-        "description": {
-          "ko": "시작가 없는 번호를 남긴 사건 뒤 조정 호가에 이의를 올리고 증서가 물건 번호로 불리지 않기를 청한다. 낙찰 결과는 확인되지 않는다.",
-          "en": "After a number is left without an opening price, challenges adjusted bids and asks that certificates not be treated as goods numbers. The award outcome is unknown."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 대상 취급에 이의을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "번호만 남을 때 호가와 명칭에 항의할 수 있다.",
-          "en": "May challenge bids and labels when reduced to a number."
-        },
-        "relationship": {
-          "ko": "은태호의 호가에 이의를 내고 윤서린의 빈칸 복원을 원한다.",
-          "en": "Challenges Eun Taeho’s bids and seeks restoration of Yun Seorin’s blank entry."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "은태호의 호가에 이의를 내고 윤서린의 빈칸 복원을 원한다.",
-          "en": "Challenges Eun Taeho’s bids and seeks restoration of Yun Seorin’s blank entry."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "시작가 없는 번호를 남긴 사건 뒤 조정 호가에 이의를 올리고 증서가 물건 번호로 불리지 않기를 청한다. 낙찰 결과는 확인되지 않는다.",
-      "en": "After a number is left without an opening price, challenges adjusted bids and asks that certificates not be treated as goods numbers. The award outcome is unknown."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -419,72 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "cd08-c131-c8fc",
-    "name": "성주 초씨",
-    "crest": "clan-crests/cd08-c131-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 5,
-    "개방": 25,
-    "무력": 0,
-    "물질": 80,
-    "공동": -20,
-    "원칙": -60,
-    "공개": -15,
-    "자격": -5,
-    "분산": 10,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": -15,
-    "위험": 5,
-    "과시": 15,
-    "지속": 15,
-    "지향": "양성",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "선거 증언·보좌",
-    "소속": "명동대교구 (명동역)",
-    "품계": "부제",
-    "직함": "선거 증인 부제",
-    "가치관": "권위 5 | 개방 25 | 무력 0 | 물질 80 | 공동 −20 | 원칙 −60 | 공개 −15 | 자격 −5 | 분산 10 | 변혁 −5",
-    "욕망": "갈망 15 | 독점 −15 | 위험 5 | 과시 15 | 지속 15 | 지향 양성 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2086-12-13에 태어난 초시람은 영구 겨울의 명동역 교구청에서 선거 증인 부제 일을 맡는다. 선거 증언·보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 초시람은 명동 행정동의 명동역 교구청에서 선거 증인 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 부제. 직함은 선거 증인 부제. 선거 증언·보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
-    "일화": "경매대 패들이 한꺼번에 올라가던 겨울, 초시람의 번호만 시작가 없이 칠판에 남았다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.",
-    "관계": "은태호의 조정 호가에 패들로 이의를 올리고, 남시윤의 상인회의가 증서를 물건 번호로 부르지 않기를 청한다. 윤서린의 공신록에 낙찰 빈칸을 돌려놓으려 한다.",
-    "야망": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-    "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-    "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
-  },
-  "biography": "초시람은 선거 증인 부제 업무에서 선거 증언·보좌 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 선거 증언·보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 선거 증인 부제\n**생애.** 2086-12-13에 태어난 초시람은 영구 겨울의 명동역 교구청에서 선거 증인 부제 일을 맡는다. 선거 증언·보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 초시람은 명동 행정동의 명동역 교구청에서 선거 증인 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 부제. 직함은 선거 증인 부제. 선거 증언·보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 경매대 패들이 한꺼번에 올라가던 겨울, 초시람의 번호만 시작가 없이 칠판에 남았다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.\n\n**관계.** 은태호의 조정 호가에 패들로 이의를 올리고, 남시윤의 상인회의가 증서를 물건 번호로 부르지 않기를 청한다. 윤서린의 공신록에 낙찰 빈칸을 돌려놓으려 한다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 25 | 무력 0 | 물질 80 | 공동 −20 | 원칙 −60 | 공개 −15 | 자격 −5 | 분산 10 | 변혁 −5\n- 욕망: 갈망 15 | 독점 −15 | 위험 5 | 과시 15 | 지속 15 | 지향 양성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-15"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "초시람",
-        "type": "계약",
-        "to": "은태호",
-        "basis": "은태호의 조정 호가에 패들로 이의를 올리고"
-      },
-      {
-        "from": "초시람",
-        "type": "계약",
-        "to": "남시윤",
-        "basis": "남시윤의 상인회의가 증서를 물건 번호로 부르지 않기를 청한다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

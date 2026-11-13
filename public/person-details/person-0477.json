@@ -1,387 +1,120 @@
 {
   "id": "person-0477",
   "name": "권금윤",
-  "title": "증언 탐사원",
-  "position": "증언 탐사원",
+  "title": "경호원",
+  "position": "경호원 · 광화문역",
   "characterId": "K477",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "인명 장부 구조·보관",
+  "rank": "등재민",
+  "commonTier": "T5",
+  "occupation": "경호",
   "gender": "여성",
   "stage": "S4",
-  "state": "S06",
-  "stateName": "대한민국정부",
-  "sourceRoute": "/world/Cast-State-06#인물-권금윤",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0477",
   "birthDate": "2064-12-19",
   "birthday": "12-19",
   "age": 62,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-06.json#/content/292",
-    "lore/characters/Cast-State-06.json#/content/294",
-    "lore/characters/Cast-State-06.json#/content/295"
-  ],
-  "familyTree": {
-    "personId": "K477",
-    "nodes": [
-      {
-        "id": "K477",
-        "personId": "K477",
-        "kind": "person",
-        "name": "권금윤",
-        "birthDate": "2064-12-19",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K477"
-          },
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-권금윤-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 증언 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-권금윤-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0477"
-      },
-      {
-        "id": "FH-K477-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "권승수",
-        "lineage": {
-          "surname": "권",
-          "bongwan": "안동",
-          "clan": "ad8c-c548-b3d9-agreed-c724-second"
-        },
-        "birthDate": "2034-12-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-권금윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "권승수는 대합실 당직에서 인명 장부 구조·보관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-권금윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K477-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "권승은",
-        "lineage": {
-          "surname": "권",
-          "bongwan": "안동",
-          "clan": "ad8c-c548-b3d9-agreed-c724-second"
-        },
-        "birthDate": "2004-12-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-권금윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "권승은은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-권금윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K477-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "송준빈",
-        "birthDate": "2034-12-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-권금윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "송준빈은 대합실 당직에서 인명 장부 구조·보관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-권금윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K477-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "조태호",
-        "birthDate": "2004-12-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-권금윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조태호는 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-권금윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K477-P-01:K477:biological",
-        "from": "FH-K477-P-01",
-        "to": "K477",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-권금윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K477-P-02:FH-K477-P-01:biological",
-        "from": "FH-K477-P-02",
-        "to": "FH-K477-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-권금윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K477-M-01:K477:biological",
-        "from": "FH-K477-M-01",
-        "to": "K477",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-권금윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K477-M-02:FH-K477-M-01:biological",
-        "from": "FH-K477-M-02",
-        "to": "FH-K477-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-권금윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ad8c-c548-b3d9",
+    "name": "안동 권씨",
+    "crest": "clan-crests/ad8c-c548-b3d9.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "대통령실 경호원 권금윤, 안동 권씨, 예순둘. 광화문역 대합실에서 청사로 이어지는 통로의 검문 줄을 세우는 것이 그의 일이다. 민원 서류를 든 사람과 부처 서기를 한 줄에 세우지 않는 것, 권금윤은 그것 하나로 청사 앞의 소란을 줄여 왔다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "경호원",
+    "품계": "등재민",
+    "생업": "경호",
+    "일하는 역": "광화문역",
+    "잠자는 역": "안국역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "대통령실 경호원 권금윤, 안동 권씨, 예순둘. 광화문역 대합실에서 청사로 이어지는 통로의 검문 줄을 세우는 것이 그의 일이다. 민원 서류를 든 사람과 부처 서기를 한 줄에 세우지 않는 것, 권금윤은 그것 하나로 청사 앞의 소란을 줄여 왔다.",
+    "관직": "직함 경호원. 직위 경호원 · 광화문역. 품계 등재민. 일하는 역 광화문역."
+  },
+  "values": {
+    "권위": 60,
+    "개방": -65,
+    "무력": 10,
+    "물질": -35,
+    "공동": 5,
+    "원칙": 75,
+    "공개": -50,
+    "자격": 30,
+    "분산": -70,
+    "변혁": -40
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": 5,
+    "위험": 30,
+    "과시": -10,
+    "지속": 20,
+    "지향": "동성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0477",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "권금윤",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 3,
-        "effective": 3
+      "diplomacy": {
+        "base": 5,
+        "effective": 5
       },
-      "strategy": {
-        "base": 4,
-        "effective": 4
+      "martial": {
+        "base": 8,
+        "effective": 8
       },
-      "negotiation": {
-        "base": 3,
-        "effective": 3
-      },
-      "management": {
+      "stewardship": {
         "base": 6,
         "effective": 6
       },
-      "insight": {
-        "base": 7,
-        "effective": 7
+      "intrigue": {
+        "base": 6,
+        "effective": 6
       },
       "learning": {
         "base": 5,
         "effective": 5
       },
       "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
         "base": 8,
         "effective": 8
       }
     },
-    "skills": [
-      {
-        "id": "k477-roster-rescue",
-        "name": {
-          "ko": "인명 장부 구조",
-          "en": "Life roster rescue"
-        },
-        "rating": 45
-      }
-    ],
-    "traits": [
-      {
-        "id": "k477-choice",
-        "name": {
-          "ko": "불 속에서 이름 먼저",
-          "en": "Names first in fire"
-        },
-        "description": {
-          "ko": "일화. 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 증언 탐사원 자리의 서명이 장부에 올랐다. 이 선택을 넘어선 지속 성향은 미확인이다.",
-          "en": "Anecdote. In the 2125 station fire he carried out the roster of lives first. By this deed the signature of the testimony surveyor post rose into the ledger. A lasting disposition beyond this choice is unconfirmed."
-        },
-        "behavior": {
-          "ko": "일화. 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 증언 탐사원 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In the 2125 station fire he carried out the roster of lives first. By this deed the signature of the testimony surveyor post rose into the ledger."
-        },
-        "stress": {
-          "ko": "공포. 증언 탐사원 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That the testimony surveyor duty post would stand empty and the Government's passage would become a break in the eight states' recognition. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      },
-      {
-        "id": "k477-boundary",
-        "name": {
-          "ko": "당직 연속성을 중시",
-          "en": "Values duty continuity"
-        },
-        "description": {
-          "ko": "당직 공백을 피하고 기록을 믿는 원문 성향이다. 반복 문구이므로 개인의 특별한 장점으로 확대하지 않는다.",
-          "en": "The source favors unbroken shifts and written records. Repeated wording does not establish a distinctive exceptional virtue."
-        },
-        "behavior": {
-          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.",
-          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
-        },
-        "stress": {
-          "ko": "공포. 증언 탐사원 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That the testimony surveyor duty post would stand empty and the Government's passage would become a break in the eight states' recognition. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "일화. 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 증언 탐사원 자리의 서명이 장부에 올랐다. 단일 일화와 반복 당직 문구만 있어 장기 성향·광범위 경력·후속 결과는 미확인이다.",
-      "en": "Anecdote. In the 2125 station fire he carried out the roster of lives first. By this deed the signature of the testimony surveyor post rose into the ledger. Only one anecdote and repeated duty wording are available; enduring disposition, broader experience, and later results remain unconfirmed."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -419,83 +152,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-gu-28125-S06",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K477",
-      "stateId": "S06",
-      "politicalParentTitleId": "title:kingdom-s06",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-gu-28125-S06",
-          "directLiegePersonId": "K144"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ad8c-c548-b3d9",
-    "name": "안동 권씨",
-    "crest": "clan-crests/ad8c-c548-b3d9.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": -10,
-    "무력": -25,
-    "물질": -30,
-    "공동": 0,
-    "원칙": 55,
-    "공개": -25,
-    "자격": 15,
-    "분산": -20,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": 5,
-    "위험": 30,
-    "과시": -10,
-    "지속": 20,
-    "지향": "동성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "인명 장부 구조·보관",
-    "소속": "서울특별시 지방공무원 조직",
-    "직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급",
-    "담당 업무": "증언 탐사원",
-    "가치관": "권위 15 | 개방 −10 | 무력 −25 | 물질 −30 | 공동 0 | 원칙 55 | 공개 −25 | 자격 15 | 분산 −20 | 변혁 −20",
-    "욕망": "갈망 30 | 독점 5 | 위험 30 | 과시 −10 | 지속 20 | 지향 동성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "대합실 당직에서 자랐다. 증언 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 권금윤의 인명 장부 구조·보관 업무는 종로1·2·3·4가동과 이어진다.",
-    "공무원 직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 증언 탐사원.",
-    "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 증언 탐사원 자리의 서명이 장부에 올랐다.",
-    "관계": "인명 장부 구조·보관 업무의 인수인계를 통해 같은 생활권의 선배 당직과 이어진다.",
-    "야망": "증언 탐사원 자리에서 인명 장부 구조·보관 기록을 이어 서울특별시 지방공무원 조직의 장부가 당직 사이에 끊기지 않게 한다.",
-    "공포": "증언 탐사원 당직이 비어 인명 장부 구조·보관 업무와 연결된 도심 통행의 도장·명부가 끊기고, 그 기록에 기대는 서울특별시 지방공무원 조직 구성 세력의 인준까지 멈추는 것.",
-    "개입": "인명 장부 구조·보관 업무의 당직 인수 증인을 세우거나, 그 직위의 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "당직이 끊기는 것과 인명 장부가 사라지는 것을 함께 경계한다. 화재 때 먼저 들고 나온 것도 그 장부였다.\n\n- 생업: 인명 장부 구조·보관\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급\n- 담당 업무: 증언 탐사원\n**생애.** 대합실 당직에서 자랐다. 증언 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 권금윤의 인명 장부 구조·보관 업무는 종로1·2·3·4가동과 이어진다.\n\n**공무원 직위·직급.** 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 증언 탐사원.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 증언 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 인명 장부 구조·보관 업무의 인수인계를 통해 같은 생활권의 선배 당직과 이어진다.\n\n**야망.** 증언 탐사원 자리에서 인명 장부 구조·보관 기록을 이어 서울특별시 지방공무원 조직의 장부가 당직 사이에 끊기지 않게 한다.\n\n**공포.** 증언 탐사원 당직이 비어 인명 장부 구조·보관 업무와 연결된 도심 통행의 도장·명부가 끊기고, 그 기록에 기대는 서울특별시 지방공무원 조직 구성 세력의 인준까지 멈추는 것.\n\n**개입.** 인명 장부 구조·보관 업무의 당직 인수 증인을 세우거나, 그 직위의 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −10 | 무력 −25 | 물질 −30 | 공동 0 | 원칙 55 | 공개 −25 | 자격 15 | 분산 −20 | 변혁 −20\n- 욕망: 갈망 30 | 독점 5 | 위험 30 | 과시 −10 | 지속 20 | 지향 동성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-06"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "권금윤",
-        "type": "계약",
-        "to": "차세온",
-        "basis": "권금윤은 화재에서 구해 보관한 인명 장부를 차세온에게 가져간다. 차세온은 장부에 관한 증언과 원본의 필적을 살펴, 구조 과정에서 사라진 기록과 나중에 덧쓴 기록을 구분할 근거를 남긴다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

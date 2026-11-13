@@ -1,834 +1,151 @@
 {
   "id": "person-0090",
   "name": "박세린",
-  "title": "펌프기술가문 대행",
-  "position": "펌프기술가문 대행",
+  "title": "천호2동 대피소장",
+  "position": "천호2동 대피소장 · 아크",
   "characterId": "K089",
-  "rank": "교사",
-  "commonTier": "T5",
-  "occupation": "펌프 부품 보관·출고 관리",
+  "rank": "대피소장",
+  "commonTier": "T3",
+  "occupation": "대피소 통솔",
   "gender": "남성",
   "stage": "S1",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-박세린",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0090",
   "birthDate": "2093-07-25",
   "birthday": "07-25",
   "age": 33,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/82",
-    "lore/characters/Cast-State-04.json#/content/84",
-    "lore/characters/Cast-State-04.json#/content/85",
-    "lore/characters/Cast-State-04.json#/content/86",
-    "lore/characters/Cast-State-04.json#/content/87"
-  ],
-  "familyTree": {
-    "personId": "K089",
-    "nodes": [
-      {
-        "id": "K086",
-        "personId": "K086",
-        "kind": "person",
-        "name": "임하준",
-        "birthDate": "2072-12-03",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K086"
-          },
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 2119년 오씨 적장자 오경재가 미성년이었다. 장로들은 인준 투표로 임하준을 당회장에 앉혔다. 뚝섬 열원 당직에서 펌프 규격을 익힌 손은 양자 임초원에게 그 기술의 절반만 넘겼다. 2125년 겨울 임하준이 실종되었다. 실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠는 유언 3장과 함께 장로회에 접수되었다. 임시 관리인은 박누리가 맡았다. 실종의 경위와 유언 3장의 내용은 정해지지 않았다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "임하준-p2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0086"
-      },
-      {
-        "id": "K087",
-        "personId": "K087",
-        "kind": "person",
-        "name": "임초원",
-        "birthDate": "2100-06-11",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K087"
-          },
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임초원-p2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 펌프 곁에서 자랐다. 임하준에게 배운 것은 당회 후계가 아니라 펌프 정비 기술이었다. 품계는 교사다. 2125년 겨울 실종 다음 교대에 원본 함의 봉인을 확인하였다. 확인 사실은 유언 3장의 증인 칸에 기재되었다. 2126년 당회장 자리는 오경재가 앉았다. 임초원은 개막에 펌프기술자로 남는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "임초원-p2"
-              }
-            ]
-          }
-        ],
-        "generationException": {
-          "reason": "확정 생년월일과 기존 임하준→임초원 관계를 보존한다. 30년 간격을 맞추기 위해 관계나 날짜를 바꾸지 않는다.",
-          "sourceRefs": [
-            {
-              "path": "lore/name-pools/cast-birthdays.json"
-            },
-            {
-              "path": "lore/characters/Core-Characters.json",
-              "anchor": "/content/40"
-            }
-          ]
-        },
-        "detailRoute": "/people/person-0087"
-      },
-      {
-        "id": "K089",
-        "personId": "K089",
-        "kind": "person",
-        "name": "박세린",
-        "birthDate": "2093-07-25",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K089"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-박세린-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 펌프기술가문 대행 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-박세린-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0090"
-      },
-      {
-        "id": "FH-K086-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승섭",
-        "lineage": {
-          "surname": "임",
-          "bongwan": "조양",
-          "clan": "c784-c870-c591-6797"
-        },
-        "birthDate": "2042-12-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "임승섭은 생활권의 공동 거처에서 펌프기술 총관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "임하준-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K086-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승성",
-        "lineage": {
-          "surname": "임",
-          "bongwan": "조양",
-          "clan": "c784-c870-c591-6797"
-        },
-        "birthDate": "2012-12-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임승성은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "임하준-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K086-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승온",
-        "birthDate": "2042-12-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "최승온은 생활권의 공동 거처에서 펌프기술 총관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "임하준-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K086-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정승리",
-        "birthDate": "2012-12-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정승리는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "임하준-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "generationException": {
-          "reason": "명시된 친족 관계의 두 가계를 연결하되 각 가계의 확정 생일에서 파생된 날짜를 보존한다. 공동 조상의 생일은 더 이른 자녀를 기준으로 30년 앞서 저작한다.",
-          "sourceRefs": [
-            {
-              "path": "lore/characters/Cast-Relations.json",
-              "anchor": "관계-원장-table3"
-            },
-            {
-              "path": "lore/name-pools/cast-family-trees.json"
-            }
-          ]
-        },
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K089-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박승성",
-        "lineage": {
-          "surname": "박",
-          "bongwan": "밀양",
-          "clan": "bc15-bc00-c591"
-        },
-        "birthDate": "2063-07-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-박세린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2101,
-            "summary": "박승성은 신정 차량기지에서 펌프 부품 보관·출고 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-박세린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K089-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박승욱",
-        "lineage": {
-          "surname": "박",
-          "bongwan": "밀양",
-          "clan": "bc15-bc00-c591"
-        },
-        "birthDate": "2033-07-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-박세린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2071,
-            "summary": "박승욱은 신정 차량기지에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-박세린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K089-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "박승란",
-        "lineage": {
-          "surname": "박",
-          "bongwan": "밀양",
-          "clan": "bc15-bc00-c591"
-        },
-        "birthDate": "2003-07-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-박세린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박승란은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-박세린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K089-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한승혁",
-        "birthDate": "2063-07-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-박세린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2101,
-            "summary": "한승혁은 신정 차량기지에서 펌프 부품 보관·출고 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-박세린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K089-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강승범",
-        "birthDate": "2033-07-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-박세린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2071,
-            "summary": "강승범은 신정 차량기지에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-박세린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K089-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승욱",
-        "birthDate": "2003-07-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-박세린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임승욱은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-박세린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "K086:K087:adoptive",
-        "from": "K086",
-        "to": "K087",
-        "type": "adoptive",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p2"
-          }
-        ]
-      },
-      {
-        "id": "FH-K086-P-01:K086:biological",
-        "from": "FH-K086-P-01",
-        "to": "K086",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K086-P-02:FH-K086-P-01:biological",
-        "from": "FH-K086-P-02",
-        "to": "FH-K086-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K086-M-01:K086:biological",
-        "from": "FH-K086-M-01",
-        "to": "K086",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K086-M-02:FH-K086-M-01:biological",
-        "from": "FH-K086-M-02",
-        "to": "FH-K086-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "임하준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K089-P-01:K089:biological",
-        "from": "FH-K089-P-01",
-        "to": "K089",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-박세린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K089-P-02:FH-K089-P-01:biological",
-        "from": "FH-K089-P-02",
-        "to": "FH-K089-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-박세린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K089-P-03:FH-K089-P-02:biological",
-        "from": "FH-K089-P-03",
-        "to": "FH-K089-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-박세린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K089-M-01:K089:biological",
-        "from": "FH-K089-M-01",
-        "to": "K089",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-박세린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K089-M-02:FH-K089-M-01:biological",
-        "from": "FH-K089-M-02",
-        "to": "FH-K089-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-박세린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K089-M-03:FH-K089-M-02:biological",
-        "from": "FH-K089-M-03",
-        "to": "FH-K089-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-박세린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "K086:K089:household",
-        "from": "K086",
-        "to": "K089",
-        "type": "household",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Relations.json",
-            "anchor": "관계-원장-table3"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bc15-bc00-c591",
+    "name": "밀양 박씨",
+    "crest": "clan-crests/bc15-bc00-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "박세린은 천호2동 대피소의 대피소장이다. 임하준의 가구에 피후견인으로 함께 살아왔고, 임하준이 사라진 뒤에도 천호의 그 칸을 지키며 임초원과 한 칸에서 잔다. 펌프 부품을 내주고 들이는 셈을 맡던 손이 지금은 대피소 명부를 쥐는데, 부품 셈을 하던 버릇대로 명부의 끼니 차례도 나간 것과 들어온 것을 짝지어 적는다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "천호2동 대피소장",
+    "품계": "대피소장",
+    "생업": "대피소 통솔",
+    "일하는 역": "천호역",
+    "잠자는 역": "천호역",
+    "가구": "임하준 가구의 가구원",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "박세린은 천호2동 대피소의 대피소장이다. 임하준의 가구에 피후견인으로 함께 살아왔고, 임하준이 사라진 뒤에도 천호의 그 칸을 지키며 임초원과 한 칸에서 잔다. 펌프 부품을 내주고 들이는 셈을 맡던 손이 지금은 대피소 명부를 쥐는데, 부품 셈을 하던 버릇대로 명부의 끼니 차례도 나간 것과 들어온 것을 짝지어 적는다.",
+    "관직": "직함 천호2동 대피소장. 직위 천호2동 대피소장 · 아크. 품계 대피소장. 일하는 역 천호역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": -5,
+    "무력": -10,
+    "물질": -15,
+    "공동": 40,
+    "원칙": -5,
+    "공개": -65,
+    "자격": 20,
+    "분산": 0,
+    "변혁": 50
+  },
+  "desire": {
+    "갈망": -5,
+    "독점": -30,
+    "위험": -35,
+    "과시": -25,
+    "지속": 0,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0086",
+    "role": "member",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "박세린",
+        "type": "친족",
+        "to": "임하준",
+        "basis": "임하준 가구에 함께 사는 피후견인. 임하준이 사라진 뒤에도 천호의 같은 칸에서 잔다"
+      },
+      {
+        "from": "박세린",
+        "type": "지휘",
+        "to": "배우진",
+        "basis": "강동 곁집장 배우진의 직속"
+      },
+      {
+        "from": "박세린",
+        "type": "보호체류",
+        "to": "임하준",
+        "basis": "임하준의 가구에 피후견인으로 함께 살며, 임하준이 사라진 지금은 그 칸을 지킨다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "곽은재",
+        "type": "지휘",
+        "to": "박세린",
+        "basis": "천호2동 대피소장 박세린의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K115",
+    "name": "배우진",
+    "courtId": "court:K115",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K089",
+    "members": [
+      {
+        "personId": "K400",
+        "name": "곽은재"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
-      },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
-      "learning": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "prowess": {
-        "base": 3,
-        "effective": 3
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "endurance": {
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "wheel",
-        "name": {
-          "ko": "차륜 결함 점검",
-          "en": "Wheel-defect inspection"
-        },
-        "rating": 55
-      },
-      {
-        "id": "parts",
-        "name": {
-          "ko": "불량 부품 출고 검사",
-          "en": "Defective-parts dispatch inspection"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "insist-on-the-family-seal",
-        "name": {
-          "ko": "가문 도장 고수",
-          "en": "Insist on the Family Seal"
-        },
-        "description": {
-          "ko": "박세린은 평의회 계약보다 가문 도장과 공구 일련번호의 권위를 더 오래 신뢰한다.",
-          "en": "Park Serin places more enduring trust in family seals and tool serial numbers than in council contracts."
-        },
-        "behavior": {
-          "ko": "핵심 나사를 별도 창고에 두고 평의회 연서가 있어도 가문 원로의 도장 없이는 출고하지 않는다.",
-          "en": "Park stores core screws separately and refuses shipment without a family elder's seal even when council co-signatures are present."
-        },
-        "stress": {
-          "ko": "펌프 주권이 공동기술원장에 흡수될 우려가 커지면 가문 날인 조건을 더 완강히 지킬 수 있다.",
-          "en": "If pump sovereignty risks absorption into a shared technical ledger, Park may defend the family-seal condition more firmly."
-        },
-        "relationship": {
-          "ko": "한소미의 공방 동의 중심 구상과는 출고 승인과 후계 정당성을 두고 충돌할 수 있다.",
-          "en": "Park may clash with Han Somi's workshop-consent approach over shipment approval and succession legitimacy."
-        },
-        "effects": []
-      },
-      {
-        "id": "caution-toward-open-designs",
-        "name": {
-          "ko": "공개 설계 경계",
-          "en": "Caution Toward Open Designs"
-        },
-        "description": {
-          "ko": "박세린은 공개 설계를 가문 기술의 공유보다 도둑질에 가깝게 받아들인다.",
-          "en": "Park Serin views open designs as closer to theft than to sharing family technology."
-        },
-        "behavior": {
-          "ko": "가문 핵심 부품을 분리 보관하고 혈연 가까운 공정을 가문 원장으로 되찾으려 한다.",
-          "en": "Park keeps core family parts separate and seeks to reclaim bloodline-associated processes into the family ledger."
-        },
-        "stress": {
-          "ko": "임초원이 마곡의 제자로만 인정될 우려가 커지면 공동기술원장과 공개 설계에 대한 경계가 더 강해질 수 있다.",
-          "en": "If Im Chowon risks recognition only as Magok's disciple, Park may become more wary of shared technical ledgers and open designs."
-        },
-        "relationship": {
-          "ko": "배우진이 가문을 명목 후보로 부르면 가문 기술을 지킬 기회와 종속될 위험 사이에서 망설일 수 있다.",
-          "en": "If Bae Ujin invokes the family as a nominal candidate, Park may hesitate between protecting family technology and risking dependency."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "별도 부품 창고의 가문 날인을 지키고 차륜 결함을 찾아 세웠다. 보관·점검과 혈연 공정에 대한 집착을 함께 남기며 총관 권한은 없다.",
-      "en": "She requires family signatures for a separate parts store and found a wheel defect. Storage and inspection coexist with attachment to kinship processes; chief-engineer authority is not implied."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -838,7 +155,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -864,79 +181,52 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bc15-bc00-c591",
-    "name": "밀양 박씨",
-    "crest": "clan-crests/bc15-bc00-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -5,
-    "개방": 10,
-    "무력": -20,
-    "물질": 35,
-    "공동": 20,
-    "원칙": 5,
-    "공개": -20,
-    "자격": 55,
-    "분산": 30,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": -5,
-    "독점": -30,
-    "위험": -35,
-    "과시": -25,
-    "지속": 0,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "펌프 부품 보관·출고 관리",
-    "품계": "교사",
-    "직함": "펌프기술가문 대행",
-    "가치관": "권위 −5 | 개방 10 | 무력 −20 | 물질 35 | 공동 20 | 원칙 5 | 공개 −20 | 자격 55 | 분산 30 | 변혁 5",
-    "욕망": "갈망 −5 | 독점 −30 | 위험 −35 | 과시 −25 | 지속 0 | 지향 이성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2126년 세대. 박세린은 신정 차량기지에서 자랐다. 박세린은 탈선 직전 결함 보고로 펌프기술가문 대행 자리를 맡았다.\n- 박세린의 펌프기술가문 대행 업무는 성수2가3동과 연결된다.",
-    "관직": "품계 교사. 직함은 펌프기술가문 대행. 가문 공방의 핵심 나사를 별도 창고에 두고, 평의회 연서가 있어도 가문 원로의 도장이 없으면 출고하지 않는다.",
-    "일화": "2125년 박세린은 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 펌프기술가문 대행 자리의 서명이 장부에 올랐다.",
-    "관계": "임하준의 친족 공정을 지키는 후견을 자처하고, 한소미와는 후계 원한이며, 배우진이 동방사 명목 후보로 가문을 부를 때 유혹과 공포를 동시에 느낀다.",
-    "야망": "임하준의 혈연 가까운 공정을 가문 원장으로 되찾아, 양자가 아닌 기술가문이 다음 총관을 지명하게 한다.",
-    "공포": "박세린은 임초원이 마곡의 제자로만 인정받아 뚝섬의 펌프 주권이 공동기술원장에 흡수되는 상황을 두려워한다.",
-    "개입": "가문 키의 진위를 감정해 대행의 해석권을 세우거나, 별도 창고의 밀반출을 폭로해 가문 지명을 실격시킬 수 있다."
-  },
-  "biography": "신중하고 예의를 지키지만 가문의 공구 일련번호를 계약보다 오래 믿는다. 공개 설계를 도둑질로 부르는 버릇이 있다.\n\n- 소속: 명부교회\n- 생업: 펌프 부품 보관·출고 관리\n- 품계: 교사\n- 직함: 펌프기술가문 대행\n**생애.** 2126년 세대. 박세린은 신정 차량기지에서 자랐다. 박세린은 탈선 직전 결함 보고로 펌프기술가문 대행 자리를 맡았다.\n- 박세린의 펌프기술가문 대행 업무는 성수2가3동과 연결된다.\n\n**관직.** 품계 교사. 직함은 펌프기술가문 대행. 가문 공방의 핵심 나사를 별도 창고에 두고, 평의회 연서가 있어도 가문 원로의 도장이 없으면 출고하지 않는다.\n\n**일화.** 2125년 박세린은 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 펌프기술가문 대행 자리의 서명이 장부에 올랐다.\n\n**관계.** 임하준의 친족 공정을 지키는 후견을 자처하고, 한소미와는 후계 원한이며, 배우진이 동방사 명목 후보로 가문을 부를 때 유혹과 공포를 동시에 느낀다.\n\n**야망.** 임하준의 혈연 가까운 공정을 가문 원장으로 되찾아, 양자가 아닌 기술가문이 다음 총관을 지명하게 한다.\n\n**공포.** 박세린은 임초원이 마곡의 제자로만 인정받아 뚝섬의 펌프 주권이 공동기술원장에 흡수되는 상황을 두려워한다.\n\n**개입.** 가문 키의 진위를 감정해 대행의 해석권을 세우거나, 별도 창고의 밀반출을 폭로해 가문 지명을 실격시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 10 | 무력 −20 | 물질 35 | 공동 20 | 원칙 5 | 공개 −20 | 자격 55 | 분산 30 | 변혁 5\n- 욕망: 갈망 −5 | 독점 −30 | 위험 −35 | 과시 −25 | 지속 0 | 지향 이성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "박세린",
-        "type": "친족",
-        "to": "임하준",
-        "basis": "펌프기술가문 친족 공정의 후견"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "구서결",
-        "type": "계약",
-        "to": "박세린",
-        "basis": "구서결은 출고 전에 가려낸 불량 펌프 부품을 박세린에게 돌려보낸다. 박세린은 별도 창고의 부품과 원로 날인을 확인해 불량 상자가 정상 출고품과 섞인 곳을 찾는다."
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1174061000",
+      "name": {
+        "ko": "천호2동"
       },
-      {
-        "from": "윤북율",
-        "type": "계약",
-        "to": "박세린",
-        "basis": "윤북율은 출고 검사에서 가려낸 불량 펌프 부품을 박세린에게 돌려보낸다. 박세린은 창고 부품과 원로 날인을 확인해 불량품이 정상 출고 목록에 섞인 지점을 찾는다."
-      }
-    ]
-  }
+      "holderPersonId": "K089",
+      "directLiegePersonId": "K115",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1174061000",
+          "name": "천호2동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ],
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:천호",
+      "name": {
+        "ko": "천호역"
+      },
+      "holderPersonId": "K400",
+      "directLiegePersonId": "K089",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "천호",
+        "stationName": "천호"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1174061000",
+          "name": "천호2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "곽은재",
+      "holderRoute": "/people/person-0401"
+    }
+  ]
 }

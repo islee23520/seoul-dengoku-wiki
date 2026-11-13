@@ -1,501 +1,105 @@
 {
   "id": "person-0162",
   "name": "나봄결",
-  "title": "문서고 비상발전 운전장",
-  "position": "문서고 비상발전 운전장",
+  "title": "국가정보원 간부",
+  "position": "국가정보원 간부 · 명동역",
   "characterId": "K161",
-  "rank": "미등록",
-  "commonTier": "T4",
-  "occupation": "문서고 발전 연료·출력 운전",
+  "rank": "서기관",
+  "commonTier": "T5",
+  "occupation": "정보 수집",
   "gender": "남성",
   "stage": "S2",
-  "state": "S06",
-  "stateName": "대한민국정부",
-  "sourceRoute": "/world/Cast-State-06#인물-나봄결",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0162",
   "birthDate": "2093-03-25",
   "birthday": "03-25",
   "age": 33,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-06.json#/content/28",
-    "lore/characters/Cast-State-06.json#/content/30"
-  ],
-  "familyTree": {
-    "personId": "K161",
-    "nodes": [
-      {
-        "id": "K161",
-        "personId": "K161",
-        "kind": "person",
-        "name": "나봄결",
-        "birthDate": "2093-03-25",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K161"
-          },
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-나봄결-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 문서고 비상발전 운전장 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-나봄결-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0162"
-      },
-      {
-        "id": "FH-K161-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "나승현",
-        "lineage": {
-          "surname": "나",
-          "bongwan": "나주",
-          "clan": "b098-b098-c8fc-7f85"
-        },
-        "birthDate": "2063-03-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-나봄결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2101,
-            "summary": "나승현은 서울역 등기소에서 문서고 발전 연료·출력 운전 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-나봄결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K161-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "나승영",
-        "lineage": {
-          "surname": "나",
-          "bongwan": "나주",
-          "clan": "b098-b098-c8fc-7f85"
-        },
-        "birthDate": "2033-03-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-나봄결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2071,
-            "summary": "나승영은 서울역 등기소에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-나봄결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K161-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "나승윤",
-        "lineage": {
-          "surname": "나",
-          "bongwan": "나주",
-          "clan": "b098-b098-c8fc-7f85"
-        },
-        "birthDate": "2003-03-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-나봄결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "나승윤은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-나봄결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K161-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한현민",
-        "birthDate": "2063-03-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-나봄결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2101,
-            "summary": "한현민은 서울역 등기소에서 문서고 발전 연료·출력 운전 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-나봄결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K161-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현준",
-        "birthDate": "2033-03-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-나봄결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2071,
-            "summary": "강현준은 서울역 등기소에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-나봄결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K161-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현영",
-        "birthDate": "2003-03-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-나봄결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임현영은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-나봄결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K161-P-01:K161:biological",
-        "from": "FH-K161-P-01",
-        "to": "K161",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-나봄결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K161-P-02:FH-K161-P-01:biological",
-        "from": "FH-K161-P-02",
-        "to": "FH-K161-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-나봄결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K161-P-03:FH-K161-P-02:biological",
-        "from": "FH-K161-P-03",
-        "to": "FH-K161-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-나봄결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K161-M-01:K161:biological",
-        "from": "FH-K161-M-01",
-        "to": "K161",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-나봄결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K161-M-02:FH-K161-M-01:biological",
-        "from": "FH-K161-M-02",
-        "to": "FH-K161-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-나봄결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K161-M-03:FH-K161-M-02:biological",
-        "from": "FH-K161-M-03",
-        "to": "FH-K161-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-나봄결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b098-b098-c8fc-7f85",
+    "name": "나주 나씨",
+    "crest": "clan-crests/b098-b098-c8fc-7f85.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "젊어서는 비상 발전기를 돌렸고, 지금은 국가정보원 간부로 남산 자락 사무실의 등과 무전기에 들어가는 전기 몫을 맡는 나주 나씨 사람이다. 정보원들이 밤에 얼마나 오래 불을 켤 수 있는지를 그가 정하고, 연료 한 통이 몇 시간을 가는지 셈이 빠르다. 서울역 깊은 층에 기재돼 있다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "국가정보원 간부",
+    "품계": "서기관",
+    "생업": "정보 수집",
+    "일하는 역": "명동역",
+    "잠자는 역": "서울역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "젊어서는 비상 발전기를 돌렸고, 지금은 국가정보원 간부로 남산 자락 사무실의 등과 무전기에 들어가는 전기 몫을 맡는 나주 나씨 사람이다. 정보원들이 밤에 얼마나 오래 불을 켤 수 있는지를 그가 정하고, 연료 한 통이 몇 시간을 가는지 셈이 빠르다. 서울역 깊은 층에 기재돼 있다.",
+    "관직": "직함 국가정보원 간부. 직위 국가정보원 간부 · 명동역. 품계 서기관. 일하는 역 명동역."
+  },
+  "values": {
+    "권위": 65,
+    "개방": -70,
+    "무력": 5,
+    "물질": -40,
+    "공동": 20,
+    "원칙": 80,
+    "공개": -50,
+    "자격": 20,
+    "분산": -75,
+    "변혁": -60
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -15,
+    "위험": -35,
+    "과시": 5,
+    "지속": 25,
+    "지향": "무성향",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0162",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
-      },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 5,
         "effective": 5
       },
-      "management": {
-        "base": 12,
-        "effective": 12
+      "martial": {
+        "base": 7,
+        "effective": 7
       },
-      "insight": {
-        "base": 10,
-        "effective": 10
+      "stewardship": {
+        "base": 6,
+        "effective": 6
+      },
+      "intrigue": {
+        "base": 9,
+        "effective": 9
       },
       "learning": {
-        "base": 10,
-        "effective": 10
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 6,
+        "effective": 6
       }
     },
-    "skills": [
-      {
-        "id": "k161-generator-operation",
-        "name": {
-          "ko": "발전 출력 운전",
-          "en": "Generator output operation"
-        },
-        "rating": 65
-      },
-      {
-        "id": "k161-document-copying",
-        "name": {
-          "ko": "젖은 문서 필사",
-          "en": "Copying wet documents"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "k161-choice",
-        "name": {
-          "ko": "필수 출력 우선",
-          "en": "Essential output first"
-        },
-        "description": {
-          "ko": "연료 냄새에 예민하고 구두 배전을 싫어한다. 제습기보다 의전 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.",
-          "en": "Sensitive to the smell of fuel, she hated verbal power routing. She took the political pressure to divert power from the dehumidifiers to the protocol lighting as an insult."
-        },
-        "behavior": {
-          "ko": "일화. 2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다. 이 일로 문서고 비상발전 운전장 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In 2125 he dried ratification papers soaked on the platform and left a hand copy. By this deed the signature of the archive emergency generator operator post rose into the ledger."
-        },
-        "stress": {
-          "ko": "공포. 연료가 바닥난 밤에 함이 수동으로만 열리고, 그 공백을 동부 보호권이 메우는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That on a night when the fuel ran dry the boxes would open by hand alone, and the eastern protection zone would fill the gap. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 지서윤의 제습기에 출력을 맞추고, 지한솔의 함 온도를 발전 쪽에서 받치며, 윤서린의 교차검증에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
-          "en": "Relations. Matched output to Ji Seoyun's dehumidifiers, backed Ji Hansol's box temperature from the generation side, and had obeyed Yun Seorin's cross-verification but refused concealed power routing."
-        },
-        "effects": []
-      },
-      {
-        "id": "k161-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 국장. 직함은 문서고 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 지한솔에게 보내고, 최저 출력 이하면 청장의 독촉이 있어도 의전 배전을 끊는다.",
-          "en": "Office. Rank: bureau director. Title: archive emergency generator operator. Every shift he sealed the fuel remainder and output logs and sent them to Ji Hansol, and below minimum output he cut the protocol power even under the bureau chief's urging."
-        },
-        "behavior": {
-          "ko": "관직. 품계 국장. 직함은 문서고 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 지한솔에게 보내고, 최저 출력 이하면 청장의 독촉이 있어도 의전 배전을 끊는다.",
-          "en": "Office. Rank: bureau director. Title: archive emergency generator operator. Every shift he sealed the fuel remainder and output logs and sent them to Ji Hansol, and below minimum output he cut the protocol power even under the bureau chief's urging."
-        },
-        "stress": {
-          "ko": "공포. 연료가 바닥난 밤에 함이 수동으로만 열리고, 그 공백을 동부 보호권이 메우는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That on a night when the fuel ran dry the boxes would open by hand alone, and the eastern protection zone would fill the gap. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 지서윤의 제습기에 출력을 맞추고, 지한솔의 함 온도를 발전 쪽에서 받치며, 윤서린의 교차검증에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
-          "en": "Relations. Matched output to Ji Seoyun's dehumidifiers, backed Ji Hansol's box temperature from the generation side, and had obeyed Yun Seorin's cross-verification but refused concealed power routing."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "최저 출력에서 의전 배전을 끊고 젖은 인준 문서를 필사로 남겼다. 발전망 통합은 목표이며 발명 경력으로 보지 않는다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Cuts ceremonial power at minimum output and preserved wet approval papers through copying. A unified power network is a goal, not an invention. Titles and ambitions are not treated as accomplished authority or results."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -533,102 +137,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-51770-S06",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K161",
-      "stateId": "S06",
-      "politicalParentTitleId": "title:kingdom-s06",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-51770-S06",
-          "directLiegePersonId": "K144"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b098-b098-c8fc-7f85",
-    "name": "나주 나씨",
-    "crest": "clan-crests/b098-b098-c8fc-7f85.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 20,
-    "개방": -15,
-    "무력": -30,
-    "물질": -35,
-    "공동": 15,
-    "원칙": 60,
-    "공개": -25,
-    "자격": 5,
-    "분산": -25,
-    "변혁": -40
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -15,
-    "위험": -35,
-    "과시": 5,
-    "지속": 25,
-    "지향": "무성향",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "문서고 발전 연료·출력 운전",
-    "소속": "서울특별시 지방공무원 조직",
-    "직위·직급": "지방공업주사·지방공업주사보 또는 지방시설주사·지방시설주사보 중 서울특별시 사업소 보직에 맞는 직급",
-    "담당 업무": "문서고 비상발전 운전장",
-    "가치관": "권위 20 | 개방 −15 | 무력 −30 | 물질 −35 | 공동 15 | 원칙 60 | 공개 −25 | 자격 5 | 분산 −25 | 변혁 −40",
-    "욕망": "갈망 0 | 독점 −15 | 위험 −35 | 과시 5 | 지속 25 | 지향 무성향 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "서울역 등기소에서 자랐다. 문서고 비상발전 운전장 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 나봄결의 문서고 발전 연료와 출력을 운전하는 일은 회현동의 업무와 이어진다.",
-    "공무원 직위·직급": "지방공업주사·지방공업주사보 또는 지방시설주사·지방시설주사보 중 서울특별시 사업소 보직에 맞는 직급. 담당 업무: 문서고 비상발전 운전장.",
-    "일화": "2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다. 이 일로 문서고 비상발전 운전장 자리의 서명이 장부에 올랐다.",
-    "관계": "지서윤의 제습기에 출력을 맞추고, 지한솔의 함 온도를 발전 쪽에서 받치며, 윤서린의 교차검증에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
-    "야망": "문서고 비상 발전과 의무실 전력을 하나의 공개 배전망으로 묶어 기록과 진료의 품질 주권을 지킨다.",
-    "공포": "연료가 바닥난 밤에 함이 수동으로만 열리고, 그 공백을 동부 보호권이 메우는 것.",
-    "개입": "대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다."
-  },
-  "biography": "연료 냄새에 예민하고 구두 배전을 싫어한다. 제습기보다 의전 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.\n\n- 생업: 문서고 발전 연료·출력 운전\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방공업주사·지방공업주사보 또는 지방시설주사·지방시설주사보 중 서울특별시 사업소 보직에 맞는 직급\n- 담당 업무: 문서고 비상발전 운전장\n**생애.** 서울역 등기소에서 자랐다. 문서고 비상발전 운전장 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 나봄결의 문서고 발전 연료와 출력을 운전하는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 지방공업주사·지방공업주사보 또는 지방시설주사·지방시설주사보 중 서울특별시 사업소 보직에 맞는 직급. 담당 업무: 문서고 비상발전 운전장.\n\n**일화.** 2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다. 이 일로 문서고 비상발전 운전장 자리의 서명이 장부에 올랐다.\n\n**관계.** 지서윤의 제습기에 출력을 맞추고, 지한솔의 함 온도를 발전 쪽에서 받치며, 윤서린의 교차검증에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 문서고 비상 발전과 의무실 전력을 하나의 공개 배전망으로 묶어 기록과 진료의 품질 주권을 지킨다.\n\n**공포.** 연료가 바닥난 밤에 함이 수동으로만 열리고, 그 공백을 동부 보호권이 메우는 것.\n\n**개입.** 대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −15 | 무력 −30 | 물질 −35 | 공동 15 | 원칙 60 | 공개 −25 | 자격 5 | 분산 −25 | 변혁 −40\n- 욕망: 갈망 0 | 독점 −15 | 위험 −35 | 과시 5 | 지속 25 | 지향 무성향 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-06"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "나봄결",
-        "type": "계약",
-        "to": "윤서린",
-        "basis": "윤서린의 교차검증에는 복종하되 은폐 배전은 거부한다"
-      },
-      {
-        "from": "나봄결",
-        "type": "계약",
-        "to": "지서윤",
-        "basis": "지서윤의 제습기에 출력을 맞추고"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "지서윤",
-        "type": "사제",
-        "to": "나봄결",
-        "basis": "나봄결의 비상 발전에 제습 전력을 맞추며"
-      },
-      {
-        "from": "평예준",
-        "type": "맹세",
-        "to": "나봄결",
-        "basis": "나봄결의 비상 발전 일지와 시각을 맞추며"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

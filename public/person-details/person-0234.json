@@ -1,493 +1,120 @@
 {
   "id": "person-0234",
   "name": "두용",
-  "title": "기록 저장소 열쇠지기, 송재민의 실무 담당자",
-  "position": "여의도 금고 열쇠지기, 송재민의 실무 담당자",
+  "title": "대방역 역반장",
+  "position": "대방역 역반장 · 자유도시들",
   "characterId": "K233",
-  "rank": "서기",
-  "commonTier": "T5",
-  "occupation": "금고 키 함 분할·개함 확인",
+  "rank": "역반장",
+  "commonTier": "T4",
+  "occupation": "역반 운영",
   "gender": "남성",
   "stage": "S2",
-  "state": "S09",
-  "stateName": "여의도출자연합회",
-  "sourceRoute": "/world/Cast-State-09#인물-두용",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0234",
   "birthDate": "2095-01-28",
   "birthday": "01-28",
   "age": 31,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-09.json#/content/149",
-    "lore/characters/Cast-State-09.json#/content/151"
-  ],
-  "familyTree": {
-    "personId": "K233",
-    "nodes": [
-      {
-        "id": "K233",
-        "personId": "K233",
-        "kind": "person",
-        "name": "두용",
-        "birthDate": "2095-01-28",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K233"
-          },
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두용-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 여의도 금고 열쇠지기, 송재민의 실무 담당자 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-두용-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0234"
-      },
-      {
-        "id": "FH-K233-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "두승호",
-        "lineage": {
-          "surname": "두",
-          "bongwan": "두릉",
-          "clan": "b450-b450-b989"
-        },
-        "birthDate": "2065-01-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2103,
-            "summary": "두승호는 서울역 등기소에서 금고 키 함 분할·개함 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-두용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K233-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "두승민",
-        "lineage": {
-          "surname": "두",
-          "bongwan": "두릉",
-          "clan": "b450-b450-b989"
-        },
-        "birthDate": "2035-01-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "두승민은 서울역 등기소에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-두용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K233-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "두승원",
-        "lineage": {
-          "surname": "두",
-          "bongwan": "두릉",
-          "clan": "b450-b450-b989"
-        },
-        "birthDate": "2005-01-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "두승원은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-두용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K233-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한현훈",
-        "birthDate": "2065-01-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2103,
-            "summary": "한현훈은 서울역 등기소에서 금고 키 함 분할·개함 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-두용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K233-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현범",
-        "birthDate": "2035-01-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "강현범은 서울역 등기소에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-두용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K233-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현혁",
-        "birthDate": "2005-01-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임현혁은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-두용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K233-P-01:K233:biological",
-        "from": "FH-K233-P-01",
-        "to": "K233",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K233-P-02:FH-K233-P-01:biological",
-        "from": "FH-K233-P-02",
-        "to": "FH-K233-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K233-P-03:FH-K233-P-02:biological",
-        "from": "FH-K233-P-03",
-        "to": "FH-K233-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K233-M-01:K233:biological",
-        "from": "FH-K233-M-01",
-        "to": "K233",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K233-M-02:FH-K233-M-01:biological",
-        "from": "FH-K233-M-02",
-        "to": "FH-K233-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K233-M-03:FH-K233-M-02:biological",
-        "from": "FH-K233-M-03",
-        "to": "FH-K233-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b450-b450-b989",
+    "name": "두릉 두씨",
+    "crest": "clan-crests/b450-b450-b989.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "1호선과 신림선이 만나는 대방에서는 동작의 노량진과 영등포 장터 사이를 오가는 짐이 쉬어 간다. 두용은 서른한 살로, 짐꾼 무리마다 승강장에 묵을 칸을 셈해 내주고, 칸 값은 손시간으로 받는다. 그는 승강장 바닥에 분필로 그 칸들을 긋고 무리마다 번호를 매기며, 밤마다 칸 사이 통로를 한 번 걸으며 쉬는 짐이 길을 막지 않았는지 살핀다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "대방역 역반장",
+    "품계": "역반장",
+    "생업": "역반 운영",
+    "일하는 역": "대방역",
+    "잠자는 역": "대방역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "1호선과 신림선이 만나는 대방에서는 동작의 노량진과 영등포 장터 사이를 오가는 짐이 쉬어 간다. 두용은 서른한 살로, 짐꾼 무리마다 승강장에 묵을 칸을 셈해 내주고, 칸 값은 손시간으로 받는다. 그는 승강장 바닥에 분필로 그 칸들을 긋고 무리마다 번호를 매기며, 밤마다 칸 사이 통로를 한 번 걸으며 쉬는 짐이 길을 막지 않았는지 살핀다.",
+    "관직": "직함 대방역 역반장. 직위 대방역 역반장 · 자유도시들. 품계 역반장. 일하는 역 대방역."
+  },
+  "values": {
+    "권위": -40,
+    "개방": 30,
+    "무력": -45,
+    "물질": 0,
+    "공동": -20,
+    "원칙": 35,
+    "공개": 60,
+    "자격": 25,
+    "분산": 75,
+    "변혁": 10
+  },
+  "desire": {
+    "갈망": 35,
+    "독점": 35,
+    "위험": -10,
+    "과시": 0,
+    "지속": 5,
+    "지향": "유동",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0234",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "두용",
+        "type": "지휘",
+        "to": "진하겸",
+        "basis": "영등포 구간장 진하겸의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K012",
+    "name": "진하겸",
+    "courtId": "court:K012",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
-      },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
       "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
         "base": 6,
         "effective": 6
-      }
-    },
-    "skills": [
-      {
-        "id": "chest-custody",
-        "name": {
-          "ko": "키 함 보관·개함 확인",
-          "en": "Key-chest custody and opening checks"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "chest-custody-disposition",
-        "name": {
-          "ko": "호기심 개함 거부",
-          "en": "Rejects curious opening"
-        },
-        "description": {
-          "ko": "호기심으로 함을 여는 일을 누설과 같은 죄로 본다.",
-          "en": "Treats curious opening as equivalent to leakage."
-        },
-        "behavior": {
-          "ko": "호기심으로 함을 여는 일을 누설과 같은 죄로 본다.",
-          "en": "Treats curious opening as equivalent to leakage."
-        },
-        "stress": {
-          "ko": "키가 군사 측에 넘어가 비밀 창고가 될 것을 두려워한다.",
-          "en": "Fears keys turning the vault into a military secret store."
-        },
-        "relationship": {
-          "ko": "송재민의 금고 키 함을 보관하고, 국두봉의 필사 원장을 잠근다. 정호준의 공개 자료 중계를 함 단위로 지지한다.",
-          "en": "Stores Song Jaemin’s key chests, locks Gukdubong’s ledger and supports Jeong Hojun’s public data relay."
-        },
-        "effects": []
       },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "공동 개함",
-          "en": "Joint opening"
-        },
-        "description": {
-          "ko": "세 조각 키로 단독 개함을 막는다.",
-          "en": "Blocks unilateral opening through three key pieces."
-        },
-        "behavior": {
-          "ko": "세 조각 키로 단독 개함을 막는다.",
-          "en": "Blocks unilateral opening through three key pieces."
-        },
-        "stress": {
-          "ko": "금고 키가 군사 측에 넘어가 여의도 금고가 비밀 창고가 되는 것.",
-          "en": "Fears keys turning the vault into a military secret store."
-        },
-        "relationship": {
-          "ko": "송재민의 금고 키 함을 보관하고, 국두봉의 필사 원장을 잠근다. 정호준의 공개 자료 중계를 함 단위로 지지한다.",
-          "en": "Stores Song Jaemin’s key chests, locks Gukdubong’s ledger and supports Jeong Hojun’s public data relay."
-        },
-        "effects": []
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "키 조각을 세 주체에게 나누고 단독 개함을 금한다. 연구자를 인질 삼는 조건 앞에서 함의 권한을 분리하려 한다.",
-      "en": "Divides key pieces among three parties and forbids unilateral opening, seeking separation of chest access amid researcher hostage terms."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -527,117 +154,27 @@
   },
   "confirmedHoldings": [
     {
-      "id": "holding:saetgang-concourse",
+      "id": "holding:v3:station:대방",
       "name": {
-        "ko": "샛강 대합실"
+        "ko": "대방역"
       },
       "holderPersonId": "K233",
-      "directLiegePersonId": "K222",
-      "stateId": "S09",
-      "facilityRef": {
-        "sourcePath": "lore/regions/station-interiors.json",
-        "stationName": "샛강",
-        "stationIdentity": {
-          "district": "영등포구",
-          "lat": 37.51736,
-          "lon": 126.92828
-        },
-        "siteSourcePath": "lore/regions/content/11560.json",
-        "siteAnchor": "osm:node:8401534578",
-        "layerId": "concourse",
-        "layerName": "역사 대합실"
+      "directLiegePersonId": "K012",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "대방",
+        "stationName": "대방"
       },
-      "adminRefs": [],
+      "adminRefs": [
+        {
+          "id": "region:1156069000",
+          "name": "신길7동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
       "geometrySource": null,
-      "territorialScale": null,
       "formalTitleRank": null
     }
-  ],
-  "clan": {
-    "id": "b450-b450-b989",
-    "name": "두릉 두씨",
-    "crest": "clan-crests/b450-b450-b989.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -5,
-    "개방": 15,
-    "무력": -35,
-    "물질": -15,
-    "공동": 5,
-    "원칙": 45,
-    "공개": 60,
-    "자격": 5,
-    "분산": 20,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 35,
-    "독점": 35,
-    "위험": -10,
-    "과시": 0,
-    "지속": 5,
-    "지향": "유동",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "금고 키 함 분할·개함 확인",
-    "소속": "여의도출자연합회",
-    "품계": "서기",
-    "직함": "여의도 금고 열쇠지기, 송재민의 실무 담당자",
-    "가치관": "권위 −5 | 개방 15 | 무력 −35 | 물질 −15 | 공동 5 | 원칙 45 | 공개 60 | 자격 5 | 분산 20 | 변혁 0",
-    "욕망": "갈망 35 | 독점 35 | 위험 −10 | 과시 0 | 지속 5 | 지향 유동 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2095-01-28 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 서울역 등기소에서 자랐다. 여의도 금고 열쇠지기, 송재민의 실무 담당자 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 두용은 여의동을 업무동으로 삼아 금고 키 함 분할·개함 확인 업무를 맡는다.",
-    "관직": "품계 서기. 직함은 여의도 금고 열쇠지기, 송재민의 실무 담당자. 키를 세 조각으로 쪼개 출자 평의회·감정관·외부 증인에게 나누고, 단독 개함을 금지한다. 샛강 대합실은 그의 시설 보유지이며, 금고 열쇠 업무와는 구분된다.",
-    "일화": "뚝섬 수질 검사망이 멈추자 마곡이 금고 개함을 조건으로 연구자 파견을 제안했다.",
-    "관계": "송재민의 금고 키 함을 보관하고, 국두봉의 필사 원장을 잠근다. 정호준의 공개 자료 중계를 함 단위로 지지한다.",
-    "야망": "공동기술원장의 검증 자료를 금고 함으로만 중계해, 연구자를 인질 삼는 관행을 열쇠 권한으로 끊는다.",
-    "공포": "금고 키가 군사 측에 넘어가 여의도 금고가 비밀 창고가 되는 것.",
-    "개입": "키 조각 하나를 안전하게 옮기거나, 군사 측이 요구한 뒷문을 폭로할 수 있다."
-  },
-  "biography": "말이 없고 열쇠를 몸에서 떼지 않는다. 호기심으로 함을 여는 일을 누설과 같은 죄로 본다.\n\n- 생업: 금고 키 함 분할·개함 확인\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 여의도 금고 열쇠지기, 송재민의 실무 담당자\n**생애.** 2095-01-28 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 서울역 등기소에서 자랐다. 여의도 금고 열쇠지기, 송재민의 실무 담당자 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 두용은 여의동을 업무동으로 삼아 금고 키 함 분할·개함 확인 업무를 맡는다.\n\n**관직.** 품계 서기. 직함은 여의도 금고 열쇠지기, 송재민의 실무 담당자. 키를 세 조각으로 쪼개 출자 평의회·감정관·외부 증인에게 나누고, 단독 개함을 금지한다. 샛강 대합실은 그의 시설 보유지이며, 금고 열쇠 업무와는 구분된다.\n\n**일화.** 뚝섬 수질 검사망이 멈추자 마곡이 금고 개함을 조건으로 연구자 파견을 제안했다.\n\n**관계.** 송재민의 금고 키 함을 보관하고, 국두봉의 필사 원장을 잠근다. 정호준의 공개 자료 중계를 함 단위로 지지한다.\n\n**야망.** 공동기술원장의 검증 자료를 금고 함으로만 중계해, 연구자를 인질 삼는 관행을 열쇠 권한으로 끊는다.\n\n**공포.** 금고 키가 군사 측에 넘어가 여의도 금고가 비밀 창고가 되는 것.\n\n**개입.** 키 조각 하나를 안전하게 옮기거나, 군사 측이 요구한 뒷문을 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 15 | 무력 −35 | 물질 −15 | 공동 5 | 원칙 45 | 공개 60 | 자격 5 | 분산 20 | 변혁 0\n- 욕망: 갈망 35 | 독점 35 | 위험 −10 | 과시 0 | 지속 5 | 지향 유동 | 결합 없음",
-  "sources": [
-    "Cast-State-09"
-  ],
-  "directLiege": {
-    "personId": "K222",
-    "name": "송재민",
-    "relationKind": "direct-vassal",
-    "ownerTerm": "직속 가신",
-    "effectiveYear": 2126
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "두용",
-        "type": "계약",
-        "to": "송재민",
-        "basis": "송재민의 암호 함을 보관하고"
-      },
-      {
-        "from": "두용",
-        "type": "계약",
-        "to": "국두봉",
-        "basis": "국두봉의 필사 원장을 잠근다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "국두봉",
-        "type": "계약",
-        "to": "두용",
-        "basis": "두용의 저장소 열쇠와 봉인을 나눈다"
-      },
-      {
-        "from": "용소",
-        "type": "계약",
-        "to": "두용",
-        "basis": "두용의 저장소 함과 봉인을 맞춘다"
-      }
-    ]
-  }
+  ]
 }

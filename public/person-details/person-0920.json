@@ -1,386 +1,105 @@
 {
   "id": "person-0920",
   "name": "남아은",
-  "title": "교량 통행 전령",
-  "position": "교량 통행 전령",
+  "title": "바람틀 정비공",
+  "position": "바람틀 정비공 · 당산역",
   "characterId": "K920",
-  "rank": "주사",
+  "rank": "손",
   "commonTier": "T5",
-  "occupation": "교량 경비 당직",
+  "occupation": "바람틀 정비",
   "gender": "남성",
   "stage": "S4",
-  "state": "S01",
-  "stateName": "수문국",
-  "sourceRoute": "/world/Cast-State-01#인물-남아은",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0920",
   "birthDate": "2073-10-10",
   "birthday": "10-10",
   "age": 53,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-01.json#/content/643",
-    "lore/characters/Cast-State-01.json#/content/645"
-  ],
-  "familyTree": {
-    "personId": "K920",
-    "nodes": [
-      {
-        "id": "K920",
-        "personId": "K920",
-        "kind": "person",
-        "name": "남아은",
-        "birthDate": "2073-10-10",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K920"
-          },
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-남아은-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "소속: 수문국",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-남아은-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0920"
-      },
-      {
-        "id": "FH-K920-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "남현호",
-        "lineage": {
-          "surname": "남",
-          "bongwan": "의령",
-          "clan": "b0a8-c758-b839-agreed-c740-second"
-        },
-        "birthDate": "2043-10-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-남아은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2081,
-            "summary": "남현호는 암사 경비 초소에서 교량 경비 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-남아은-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K920-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "남현민",
-        "lineage": {
-          "surname": "남",
-          "bongwan": "의령",
-          "clan": "b0a8-c758-b839-agreed-c740-second"
-        },
-        "birthDate": "2013-10-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-남아은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "남현민은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-남아은-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K920-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오민경",
-        "birthDate": "2043-10-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-남아은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2081,
-            "summary": "오민경은 암사 경비 초소에서 교량 경비 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-남아은-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K920-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "송민호",
-        "birthDate": "2013-10-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-남아은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "송민호는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-남아은-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K920-P-01:K920:biological",
-        "from": "FH-K920-P-01",
-        "to": "K920",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-남아은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K920-P-02:FH-K920-P-01:biological",
-        "from": "FH-K920-P-02",
-        "to": "FH-K920-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-남아은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K920-M-01:K920:biological",
-        "from": "FH-K920-M-01",
-        "to": "K920",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-남아은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K920-M-02:FH-K920-M-01:biological",
-        "from": "FH-K920-M-02",
-        "to": "FH-K920-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-남아은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b0a8-c758-b839",
+    "name": "의령 남씨",
+    "crest": "clan-crests/b0a8-c758-b839.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "선유도와 당산 사이 강변에 선 바람틀 네 대는 남아은이 날개를 돌본다. 강 얼음 위로 부는 바람이 세서 날개 축에는 날마다 얼음이 끼고, 그것을 깨는 데 그는 하루의 반을 쓴다. 바람 시간 전에는 제 밧줄 고리를 하나하나 당겨 보고 끊어질 듯한 고리는 그 자리에서 잘라 버리는데, 쉰셋까지 바람틀에서 한 번도 떨어지지 않은 것은 그 버릇 덕이다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "바람틀 정비공",
+    "품계": "손",
+    "생업": "바람틀 정비",
+    "일하는 역": "당산역",
+    "잠자는 역": "당산역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "선유도와 당산 사이 강변에 선 바람틀 네 대는 남아은이 날개를 돌본다. 강 얼음 위로 부는 바람이 세서 날개 축에는 날마다 얼음이 끼고, 그것을 깨는 데 그는 하루의 반을 쓴다. 바람 시간 전에는 제 밧줄 고리를 하나하나 당겨 보고 끊어질 듯한 고리는 그 자리에서 잘라 버리는데, 쉰셋까지 바람틀에서 한 번도 떨어지지 않은 것은 그 버릇 덕이다.",
+    "관직": "직함 바람틀 정비공. 직위 바람틀 정비공 · 당산역. 품계 손. 일하는 역 당산역."
+  },
+  "values": {
+    "권위": 15,
+    "개방": 5,
+    "무력": 0,
+    "물질": 40,
+    "공동": -10,
+    "원칙": 15,
+    "공개": 30,
+    "자격": 30,
+    "분산": -5,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": -5,
+    "위험": -5,
+    "과시": 10,
+    "지속": -10,
+    "지향": "무성향",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0920",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
-        "base": 9,
-        "effective": 9
-      },
-      "negotiation": {
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "management": {
-        "base": 8,
-        "effective": 8
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
         "base": 8,
         "effective": 8
       },
       "prowess": {
-        "base": 6,
-        "effective": 6
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k920-ambush-trace-reading",
-        "name": {
-          "ko": "매복 흔적 확인",
-          "en": "Reading ambush traces"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k920-action-priority",
-        "name": {
-          "ko": "피해 전 흔적",
-          "en": "Traces before harm"
-        },
-        "description": {
-          "ko": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다.",
-          "en": "In 2125, on a ridge patrol, he read the ambush traces first and prevented the harm. By this deed the signature of the bridge passage courier post rose into the ledger."
-        },
-        "behavior": {
-          "ko": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다.",
-          "en": "In 2125, on a ridge patrol, he read the ambush traces first and prevented the harm. By this deed the signature of the bridge passage courier post rose into the ledger."
-        },
-        "stress": {
-          "ko": "교량 통행 전령 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
-          "en": "That the bridge passage courier duty post would stand empty and the Compact's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡는다.",
-          "en": "Serves under Kim Taeun on bridge passage and night-crossing reports."
-        },
-        "effects": []
-      },
-      {
-        "id": "k920-bounded-handover",
-        "name": {
-          "ko": "기록으로 잇는 당직",
-          "en": "Duty linked by records"
-        },
-        "description": {
-          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
-          "en": "Passes keys and records to the next shift without enlarging authority."
-        },
-        "behavior": {
-          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
-          "en": "Passes keys and records to the next shift without enlarging authority."
-        },
-        "stress": {
-          "ko": "교량 통행 전령 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
-          "en": "That the bridge passage courier duty post would stand empty and the Compact's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡는다.",
-          "en": "Serves under Kim Taeun on bridge passage and night-crossing reports."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 짧은 행위와 인수인계가 근거여서 다른 분야의 숙련이나 보정은 발급하지 않았다.",
-      "en": "In 2125, on a ridge patrol, he read the ambush traces first and prevented the harm. By this deed the signature of the bridge passage courier post rose into the ledger. The brief action and handover support only limited strengths; no unrelated proficiency or numeric trait bonus is issued."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -418,73 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b0a8-c758-b839",
-    "name": "의령 남씨",
-    "crest": "clan-crests/b0a8-c758-b839.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 50,
-    "개방": -10,
-    "무력": 10,
-    "물질": 25,
-    "공동": 15,
-    "원칙": 25,
-    "공개": 30,
-    "자격": 10,
-    "분산": -60,
-    "변혁": -25
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": -5,
-    "위험": -5,
-    "과시": 10,
-    "지속": -10,
-    "지향": "무성향",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "수문국",
-    "생업": "교량 경비 당직",
-    "품계": "주사",
-    "직함": "교량 통행 전령",
-    "업무 위치": "당산2동. 남아은은 2125년 암사 경비 초소에서 이어지는 서울 언덕길의 매복 흔적을 먼저 읽어 피해를 막았다. 지금은 김태운의 당산2동 교량 당직에 야간 도하 기록을 별도로 보낸다.",
-    "가치관": "권위 50 | 개방 −10 | 무력 10 | 물질 25 | 공동 15 | 원칙 25 | 공개 30 | 자격 10 | 분산 −60 | 변혁 −25",
-    "욕망": "갈망 10 | 독점 −5 | 위험 −5 | 과시 10 | 지속 −10 | 지향 무성향 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 교량 통행 전령 자리는 야간 무단 도하 적발로 열렸다.\n- 업무 위치: 당산2동. 남아은은 2125년 암사 경비 초소에서 이어지는 서울 언덕길의 매복 흔적을 먼저 읽어 피해를 막았다. 지금은 김태운의 당산2동 교량 당직에 야간 도하 기록을 별도로 보낸다.",
-    "관직": "품계 주사. 직함은 교량 통행 전령이다. 남아은은 2125년 암사 경비 초소에서 이어지는 서울 언덕길의 매복 흔적을 먼저 읽어 피해를 막았다. 지금은 김태운의 당산2동 교량 당직에 야간 도하 기록을 별도로 보낸다.",
-    "일화": "2125년 암사 경비 초소에서 이어지는 서울 언덕길을 돌던 남아은은 매복 흔적을 먼저 찾아 경비대에 알리고 통행 인원을 돌렸다.",
-    "관계": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡는다.",
-    "야망": "교량 통행 전령 자리에서 수문국의 장부를 끊기지 않게 잇는다.",
-    "공포": "교량 통행 전령 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 수문국\n- 생업: 교량 경비 당직\n- 품계: 주사\n- 직함: 교량 통행 전령\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 교량 통행 전령 자리는 야간 무단 도하 적발로 열렸다.\n- 업무 위치: 당산2동. 남아은은 2125년 암사 경비 초소에서 이어지는 서울 언덕길의 매복 흔적을 먼저 읽어 피해를 막았다. 지금은 김태운의 당산2동 교량 당직에 야간 도하 기록을 별도로 보낸다.\n\n**관직.** 품계 주사. 직함은 교량 통행 전령이다. 남아은은 2125년 암사 경비 초소에서 이어지는 서울 언덕길의 매복 흔적을 먼저 읽어 피해를 막았다. 지금은 김태운의 당산2동 교량 당직에 야간 도하 기록을 별도로 보낸다.\n\n**일화.** 2125년 암사 경비 초소에서 이어지는 서울 언덕길을 돌던 남아은은 매복 흔적을 먼저 찾아 경비대에 알리고 통행 인원을 돌렸다.\n\n**관계.** 김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡는다.\n\n**야망.** 교량 통행 전령 자리에서 수문국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 교량 통행 전령 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −10 | 무력 10 | 물질 25 | 공동 15 | 원칙 25 | 공개 30 | 자격 10 | 분산 −60 | 변혁 −25\n- 욕망: 갈망 10 | 독점 −5 | 위험 −5 | 과시 10 | 지속 −10 | 지향 무성향 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-01"
-  ],
-  "directLiege": {
-    "personId": "K003",
-    "name": "김태운",
-    "courtId": "court:K003",
-    "effectiveYear": 2126
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "남아은",
-        "type": "지휘",
-        "to": "김태운",
-        "basis": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

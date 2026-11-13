@@ -1,310 +1,93 @@
 {
   "id": "person-0394",
   "name": "범채온",
-  "title": "군량 징발 인파 대표",
-  "position": "명동역 구휼 담당 신부",
+  "title": "구청 서기",
+  "position": "구청 서기 · 광화문역",
   "characterId": "K393",
-  "rank": "신부",
-  "commonTier": "T2",
-  "occupation": "구휼 배분·사제단 투표 기록 보관",
+  "rank": "사무관",
+  "commonTier": "T5",
+  "occupation": "장부 기재",
   "gender": "여성",
   "stage": "S3",
-  "state": "S15",
-  "stateName": "명동대교구",
-  "sourceRoute": "/world/Cast-State-15#인물-범채온",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0394",
   "birthDate": "2067-11-18",
   "birthday": "11-18",
   "age": 59,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-15.json#/content/16",
-    "lore/characters/Cast-State-15.json#/content/17",
-    "lore/characters/Cast-State-15.json#/content/18",
-    "lore/characters/Cast-State-15.json#/content/21"
-  ],
-  "familyTree": {
-    "personId": "K393",
-    "nodes": [
-      {
-        "id": "K393",
-        "personId": "K393",
-        "kind": "person",
-        "name": "범채온",
-        "birthDate": "2067-11-18",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K393"
-          },
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-범채온-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 명동역 구휼 담당 신부 일을 맡았다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-범채온-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0394"
-      },
-      {
-        "id": "FH-K393-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "범승영",
-        "lineage": {
-          "surname": "범",
-          "bongwan": "금성",
-          "clan": "bc94-ae08-c131"
-        },
-        "birthDate": "2037-11-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-범채온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "범승영은 대합실 당직에서 구휼 배분·사제단 투표 기록 보관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-범채온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K393-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "범승윤",
-        "lineage": {
-          "surname": "범",
-          "bongwan": "금성",
-          "clan": "bc94-ae08-c131"
-        },
-        "birthDate": "2007-11-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-범채온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "범승윤은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-범채온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K393-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "송준은",
-        "birthDate": "2037-11-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-범채온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "송준은은 대합실 당직에서 구휼 배분·사제단 투표 기록 보관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-범채온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K393-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "조준희",
-        "birthDate": "2007-11-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-범채온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조준희는 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-범채온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K393-P-01:K393:biological",
-        "from": "FH-K393-P-01",
-        "to": "K393",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-범채온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K393-P-02:FH-K393-P-01:biological",
-        "from": "FH-K393-P-02",
-        "to": "FH-K393-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-범채온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K393-M-01:K393:biological",
-        "from": "FH-K393-M-01",
-        "to": "K393",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-범채온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K393-M-02:FH-K393-M-01:biological",
-        "from": "FH-K393-M-02",
-        "to": "FH-K393-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-범채온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bc94-ae08-c131",
+    "name": "금성 범씨",
+    "crest": "clan-crests/bc94-ae08-c131.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "종로구 구청 서기, 사무관 범채온. 윤초아 의원의 구청이 내는 구 고시의 원본과 사본이 범채온의 책상을 거쳐 각 동주민센터로 나간다. 쉰아홉의 그는 고시 한 장을 베낄 때마다 끝줄에 사본 번호를 적고, 광화문역 잠자리로 돌아가기 전에 그날 나간 사본 수를 다시 센다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "구청 서기",
+    "품계": "사무관",
+    "생업": "장부 기재",
+    "일하는 역": "광화문역",
+    "잠자는 역": "광화문역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "종로구 구청 서기, 사무관 범채온. 윤초아 의원의 구청이 내는 구 고시의 원본과 사본이 범채온의 책상을 거쳐 각 동주민센터로 나간다. 쉰아홉의 그는 고시 한 장을 베낄 때마다 끝줄에 사본 번호를 적고, 광화문역 잠자리로 돌아가기 전에 그날 나간 사본 수를 다시 센다.",
+    "관직": "직함 구청 서기. 직위 구청 서기 · 광화문역. 품계 사무관. 일하는 역 광화문역."
+  },
+  "values": {
+    "권위": 50,
+    "개방": -30,
+    "무력": 30,
+    "물질": 40,
+    "공동": -10,
+    "원칙": -20,
+    "공개": -45,
+    "자격": 20,
+    "분산": -40,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": 30,
+    "위험": -5,
+    "과시": -20,
+    "지속": 5,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0394",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 9,
-        "effective": 9
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
+      "stewardship": {
         "base": 11,
         "effective": 11
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
         "base": 8,
@@ -313,76 +96,10 @@
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
       }
     },
-    "skills": [
-      {
-        "id": "relief-allocation",
-        "name": {
-          "ko": "구휼 배분",
-          "en": "Relief allocation"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "구휼을 앞세운 거절",
-          "en": "Relief before military purchases"
-        },
-        "description": {
-          "ko": "군량 선매를 돌려보낸 뒤 개표 이의와 재고 원장을 구휼 줄에 맞춘다. 거절에는 배우진에 대한 원한도 섞인다.",
-          "en": "Rejects advance military purchases, then aligns election objections and inventory with the relief queue. Resentment toward Bae Ujin also shapes the refusal."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 구휼을 앞세운 거절을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "군량 압박과 기록 누락이 겹치면 거절이 날카로워질 수 있다.",
-          "en": "Refusal may sharpen when military demands coincide with missing records."
-        },
-        "relationship": {
-          "ko": "라진우와 재고와 줄을 나누고 배우진에게 반감을 보인다.",
-          "en": "Coordinates stock and queues with Ra Jinwoo and resents Bae Ujin."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "사제단 비밀 투표의 독립성을 지켜 교황 없는 대주교 선출을 둘러싼 이의에 개표 기록으로 답한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "비밀 투표의 개표 기록이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "라진우와 재고와 줄을 나누고 배우진에게 반감을 보인다.",
-          "en": "Coordinates stock and queues with Ra Jinwoo and resents Bae Ujin."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "군량 선매를 돌려보낸 뒤 개표 이의와 재고 원장을 구휼 줄에 맞춘다. 거절에는 배우진에 대한 원한도 섞인다.",
-      "en": "Rejects advance military purchases, then aligns election objections and inventory with the relief queue. Resentment toward Bae Ujin also shapes the refusal."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -420,72 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bc94-ae08-c131",
-    "name": "금성 범씨",
-    "crest": "clan-crests/bc94-ae08-c131.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 5,
-    "개방": 25,
-    "무력": -5,
-    "물질": 45,
-    "공동": -15,
-    "원칙": -40,
-    "공개": -20,
-    "자격": 5,
-    "분산": 10,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": 30,
-    "위험": -5,
-    "과시": -20,
-    "지속": 5,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "구휼 배분·사제단 투표 기록 보관",
-    "소속": "명동대교구 (명동역)",
-    "품계": "신부",
-    "직함": "명동역 구휼 담당 신부",
-    "가치관": "권위 5 | 개방 25 | 무력 −5 | 물질 45 | 공동 −15 | 원칙 −40 | 공개 −20 | 자격 5 | 분산 10 | 변혁 0",
-    "욕망": "갈망 15 | 독점 30 | 위험 −5 | 과시 −20 | 지속 5 | 지향 이성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2067-11-18에 태어난 범채온은 영구 겨울의 명동역 교구청에서 명동역 구휼 담당 신부 일을 맡는다. 구휼 배분·사제단 투표 기록 보관 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 범채온은 명동 행정동의 명동역 교구청에서 명동역 구휼 담당 신부 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 신부. 직함은 명동역 구휼 담당 신부. 구휼 배분·사제단 투표 기록 보관 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
-    "일화": "배우진 쪽 군량 선매 요청이 명동역 구휼 창구에 들어온 날, 대주교 비밀 투표의 개표 기록에서 누락이 눈에 띈다. 범채온은 선매 요청을 돌려보내고, 개표 기록과 교황 인준 부재에 대한 이의를 한데 보관한 뒤 라진우의 재고 원장과 구휼 인파의 줄을 맞춘다.",
-    "관계": "라진우의 재고 원장과 인파 줄을 나누고, 흥다온의 제기동 거부 문구와 문장을 맞춘다. 배우진의 군량 선매를 원한으로 돌려보낸다.",
-    "야망": "사제단 비밀 투표의 독립성을 지켜 교황 없는 대주교 선출을 둘러싼 이의에 개표 기록으로 답한다.",
-    "공포": "비밀 투표의 개표 기록이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-    "개입": "비밀 투표의 개표 기록의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
-  },
-  "biography": "범채온은 명동역 구휼 담당 신부 업무에서 구휼 배분·사제단 투표 기록 보관 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 구휼 배분·사제단 투표 기록 보관\n- 소속: 명동대교구 (명동역)\n- 품계: 신부\n- 직함: 명동역 구휼 담당 신부\n**생애.** 2067-11-18에 태어난 범채온은 영구 겨울의 명동역 교구청에서 명동역 구휼 담당 신부 일을 맡는다. 구휼 배분·사제단 투표 기록 보관 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 범채온은 명동 행정동의 명동역 교구청에서 명동역 구휼 담당 신부 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 신부. 직함은 명동역 구휼 담당 신부. 구휼 배분·사제단 투표 기록 보관 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 배우진 쪽 군량 선매 요청이 명동역 구휼 창구에 들어온 날, 대주교 비밀 투표의 개표 기록에서 누락이 눈에 띈다. 범채온은 선매 요청을 돌려보내고, 개표 기록과 교황 인준 부재에 대한 이의를 한데 보관한 뒤 라진우의 재고 원장과 구휼 인파의 줄을 맞춘다.\n\n**관계.** 라진우의 재고 원장과 인파 줄을 나누고, 흥다온의 제기동 거부 문구와 문장을 맞춘다. 배우진의 군량 선매를 원한으로 돌려보낸다.\n\n**야망.** 사제단 비밀 투표의 독립성을 지켜 교황 없는 대주교 선출을 둘러싼 이의에 개표 기록으로 답한다.\n\n**공포.** 비밀 투표의 개표 기록이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 비밀 투표의 개표 기록의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 25 | 무력 −5 | 물질 45 | 공동 −15 | 원칙 −40 | 공개 −20 | 자격 5 | 분산 10 | 변혁 0\n- 욕망: 갈망 15 | 독점 30 | 위험 −5 | 과시 −20 | 지속 5 | 지향 이성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-15"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "범채온",
-        "type": "계약",
-        "to": "라진우",
-        "basis": "라진우의 재고 원장과 인파 줄을 나누고"
-      },
-      {
-        "from": "범채온",
-        "type": "계약",
-        "to": "흥다온",
-        "basis": "흥다온의 제기동 거부 문구와 문장을 맞춘다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

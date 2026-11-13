@@ -1,495 +1,108 @@
 {
   "id": "person-0405",
   "name": "수늘결",
-  "title": "수서 기지 정비사, 은보람의 실무 담당자",
-  "position": "수서 기지 정비사, 은보람의 실무 담당자",
+  "title": "교섭인",
+  "position": "교섭인 · 수서역",
   "characterId": "K404",
-  "rank": "미등록",
+  "rank": "세례자",
   "commonTier": "T5",
-  "occupation": "차량정비 추천·시험 점수 게시·출고 스위치 관리",
+  "occupation": "계약 교섭",
   "gender": "여성",
   "stage": "S2",
-  "state": "S16",
-  "stateName": "정동노총",
-  "sourceRoute": "/world/Cast-State-16#인물-수늘결",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0405",
   "birthDate": "2095-05-09",
   "birthday": "05-09",
   "age": 31,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-16.json#/content/94",
-    "lore/characters/Cast-State-16.json#/content/97"
-  ],
-  "familyTree": {
-    "personId": "K404",
-    "nodes": [
-      {
-        "id": "K404",
-        "personId": "K404",
-        "kind": "person",
-        "name": "수늘결",
-        "birthDate": "2095-05-09",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K404"
-          },
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-수늘결-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 시청역 조합 차량정비소 정비사, 은보람의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-수늘결-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0405"
-      },
-      {
-        "id": "FH-K404-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "수승경",
-        "lineage": {
-          "surname": "수",
-          "bongwan": "한양",
-          "clan": "c218-d55c-c591"
-        },
-        "birthDate": "2065-05-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-수늘결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2103,
-            "summary": "수승경은 신정 차량기지에서 차량정비 추천·시험 점수 게시·출고 스위치 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-수늘결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K404-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "수승수",
-        "lineage": {
-          "surname": "수",
-          "bongwan": "한양",
-          "clan": "c218-d55c-c591"
-        },
-        "birthDate": "2035-05-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-수늘결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "수승수는 신정 차량기지에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-수늘결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K404-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "수승은",
-        "lineage": {
-          "surname": "수",
-          "bongwan": "한양",
-          "clan": "c218-d55c-c591"
-        },
-        "birthDate": "2005-05-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-수늘결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "수승은은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-수늘결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K404-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오준완",
-        "birthDate": "2065-05-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-수늘결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2103,
-            "summary": "오준완은 신정 차량기지에서 차량정비 추천·시험 점수 게시·출고 스위치 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-수늘결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K404-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "송준연",
-        "birthDate": "2035-05-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-수늘결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "송준연은 신정 차량기지에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-수늘결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K404-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "조준완",
-        "birthDate": "2005-05-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-수늘결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조준완은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-수늘결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K404-P-01:K404:biological",
-        "from": "FH-K404-P-01",
-        "to": "K404",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-수늘결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K404-P-02:FH-K404-P-01:biological",
-        "from": "FH-K404-P-02",
-        "to": "FH-K404-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-수늘결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K404-P-03:FH-K404-P-02:biological",
-        "from": "FH-K404-P-03",
-        "to": "FH-K404-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-수늘결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K404-M-01:K404:biological",
-        "from": "FH-K404-M-01",
-        "to": "K404",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-수늘결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K404-M-02:FH-K404-M-01:biological",
-        "from": "FH-K404-M-02",
-        "to": "FH-K404-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-수늘결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K404-M-03:FH-K404-M-02:biological",
-        "from": "FH-K404-M-03",
-        "to": "FH-K404-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-수늘결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c218-d55c-c591",
+    "name": "한양 수씨",
+    "crest": "clan-crests/c218-d55c-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "테두리 너머에서 캐 온 동력 덩이 하나에 옛 차량기지 쇠붙이를 얼마나 내줄지, 수서 쇠 바꿈터에서는 수늘결이 부른다. 바깥 사람이 그의 부위를 쳐다보면, 그는 소매의 정비 틈을 일부러 열어 하나뿐인 부위를 보여 준다. 셈이 맞지 않는 날에는 바꿈터 문을 닫고 다음 날 다시 부르는데, 서른한 해를 살며 그 문을 닫은 날을 그는 모두 손가락으로 꼽을 수 있다고 한다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "교섭인",
+    "품계": "세례자",
+    "생업": "계약 교섭",
+    "일하는 역": "수서역",
+    "잠자는 역": "수서역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "테두리 너머에서 캐 온 동력 덩이 하나에 옛 차량기지 쇠붙이를 얼마나 내줄지, 수서 쇠 바꿈터에서는 수늘결이 부른다. 바깥 사람이 그의 부위를 쳐다보면, 그는 소매의 정비 틈을 일부러 열어 하나뿐인 부위를 보여 준다. 셈이 맞지 않는 날에는 바꿈터 문을 닫고 다음 날 다시 부르는데, 서른한 해를 살며 그 문을 닫은 날을 그는 모두 손가락으로 꼽을 수 있다고 한다.",
+    "관직": "직함 교섭인. 직위 교섭인 · 수서역. 품계 세례자. 일하는 역 수서역."
+  },
+  "values": {
+    "권위": 5,
+    "개방": 20,
+    "무력": -10,
+    "물질": -50,
+    "공동": 25,
+    "원칙": 25,
+    "공개": -20,
+    "자격": 5,
+    "분산": 15,
+    "변혁": 65
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": 0,
+    "위험": 5,
+    "과시": 30,
+    "지속": 25,
+    "지향": "양성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0405",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
+      "diplomacy": {
+        "base": 8,
+        "effective": 8
       },
-      "strategy": {
+      "martial": {
+        "base": 4,
+        "effective": 4
+      },
+      "stewardship": {
+        "base": 9,
+        "effective": 9
+      },
+      "intrigue": {
         "base": 6,
         "effective": 6
-      },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
       },
       "learning": {
-        "base": 10,
-        "effective": 10
+        "base": 5,
+        "effective": 5
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
       }
     },
-    "skills": [
-      {
-        "id": "defect-reporting",
-        "name": {
-          "ko": "정비 결함 보고",
-          "en": "Maintenance defect reporting"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "공개 시험을 지킴",
-          "en": "Protects public testing"
-        },
-        "description": {
-          "ko": "탈선 직전 결함을 보고한 생애와 시험 점수 게시가 있다. 비공개 파견 명단이 돌자 시험 창을 닫았다.",
-          "en": "Has a recorded pre-derailment defect report and posts examination scores. Closes the test window when private dispatch lists circulate."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 공개 시험을 지킴을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "파견 압박 때 출고 스위치를 잠글 수 있다.",
-          "en": "May lock dispatch switches under pressure for deployments."
-        },
-        "relationship": {
-          "ko": "은보람의 규칙을 실무로 받치며 원초온과 공구를 나눈다.",
-          "en": "Supports Eun Boram’s rules in practice and shares tools with Won Choon."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "시청역 조합 차량정비소 전문 인력 추천을 공개 숙련 시험과 정비 서명으로 바꿔 조합원 총회에서 파벌의 독점 추천을 깨뜨린다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "정비창이 강국에 기술자를 넘기는 인질 창구가 되어 공구가 인장의 하청이 되는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "은보람의 규칙을 실무로 받치며 원초온과 공구를 나눈다.",
-          "en": "Supports Eun Boram’s rules in practice and shares tools with Won Choon."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "탈선 직전 결함을 보고한 생애와 시험 점수 게시가 있다. 비공개 파견 명단이 돌자 시험 창을 닫았다.",
-      "en": "Has a recorded pre-derailment defect report and posts examination scores. Closes the test window when private dispatch lists circulate."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -499,7 +112,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -525,79 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c218-d55c-c591",
-    "name": "한양 수씨",
-    "crest": "clan-crests/c218-d55c-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -20,
-    "개방": 35,
-    "무력": -20,
-    "물질": 0,
-    "공동": 5,
-    "원칙": 35,
-    "공개": 25,
-    "자격": 40,
-    "분산": 45,
-    "변혁": 20
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": 0,
-    "위험": 5,
-    "과시": 30,
-    "지속": 25,
-    "지향": "양성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "차량정비 추천·시험 점수 게시·출고 스위치 관리",
-    "소속": "정동노총",
-    "공동체 역할": "조합원",
-    "직무": "시청역 조합 차량정비소 정비사, 은보람의 실무 담당자",
-    "가치관": "권위 −20 | 개방 35 | 무력 −20 | 물질 0 | 공동 5 | 원칙 35 | 공개 25 | 자격 40 | 분산 45 | 변혁 20",
-    "욕망": "갈망 15 | 독점 0 | 위험 5 | 과시 30 | 지속 25 | 지향 양성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2095-05-09에 태어난 수늘결은 영구 겨울의 시청역 조합 작업장에서 시청역 조합 차량정비소 정비사, 은보람의 실무 담당자 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 수늘결은 소공동의 시청역 조합 작업장에서 시청역 조합 차량정비소 정비사, 은보람의 실무 담당자 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "직무": "공동체 역할은 조합원이며 직무는 시청역 조합 차량정비소 정비사, 은보람의 실무 담당자이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.",
-    "일화": "마곡이 수질 검사 인력을 요청하자 숙련심사위원 일부가 비공개 파견 명단을 먼저 돌렸고 수늘결은 시험 창을 봉쇄했다.",
-    "관계": "수늘결의 기존 관계 기록은 다음과 같다. 은보람의 추천 규칙을 현장에서 받치는 사제이고, 원초온의 기지 당직과 공구를 나눈다. 정호준의 공동기술원장 구상을 시험 칠판에 반영한다.",
-    "목표": "수늘결은 시청역 조합 차량정비소 정비사, 은보람의 실무 담당자 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.",
-    "공포": "시청역 조합 차량정비소 정비사, 은보람의 실무 담당자 업무의 서명이나 인계 기록이 바뀌어 수늘결의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.",
-    "개입": "수늘결은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다."
-  },
-  "biography": "수늘결은 영구 겨울의 시청역 조합 작업장에서 시청역 조합 차량정비소 정비사, 은보람의 실무 담당자 업무 기록과 공개 표결 서명을 먼저 대조한다. 급수·통행·계약 일정이 겹치는 날에는 접수 시각과 인계 순서를 같은 장부에 남긴다.\n\n- 생업: 차량정비 추천·시험 점수 게시·출고 스위치 관리\n- 소속: 정동노총\n- 공동체 역할: 조합원\n- 직무: 시청역 조합 차량정비소 정비사, 은보람의 실무 담당자\n**생애.** 2095-05-09에 태어난 수늘결은 영구 겨울의 시청역 조합 작업장에서 시청역 조합 차량정비소 정비사, 은보람의 실무 담당자 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 수늘결은 소공동의 시청역 조합 작업장에서 시청역 조합 차량정비소 정비사, 은보람의 실무 담당자 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**직무.** 공동체 역할은 조합원이며 직무는 시청역 조합 차량정비소 정비사, 은보람의 실무 담당자이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.\n\n**일화.** 마곡이 수질 검사 인력을 요청하자 숙련심사위원 일부가 비공개 파견 명단을 먼저 돌렸고 수늘결은 시험 창을 봉쇄했다.\n\n**관계.** 수늘결의 기존 관계 기록은 다음과 같다. 은보람의 추천 규칙을 현장에서 받치는 사제이고, 원초온의 기지 당직과 공구를 나눈다. 정호준의 공동기술원장 구상을 시험 칠판에 반영한다.\n\n**목표.** 수늘결은 시청역 조합 차량정비소 정비사, 은보람의 실무 담당자 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.\n\n**공포.** 시청역 조합 차량정비소 정비사, 은보람의 실무 담당자 업무의 서명이나 인계 기록이 바뀌어 수늘결의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.\n\n**개입.** 수늘결은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 35 | 무력 −20 | 물질 0 | 공동 5 | 원칙 35 | 공개 25 | 자격 40 | 분산 45 | 변혁 20\n- 욕망: 갈망 15 | 독점 0 | 위험 5 | 과시 30 | 지속 25 | 지향 양성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-16"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "수늘결",
-        "type": "사제",
-        "to": "은보람",
-        "basis": "은보람의 추천 규칙을 현장에서 받치는 사제이고"
-      },
-      {
-        "from": "수늘결",
-        "type": "사제",
-        "to": "원초온",
-        "basis": "원초온의 기지 당직과 공구를 나눈다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "원초온",
-        "type": "계약",
-        "to": "수늘결",
-        "basis": "수늘결의 정비 창과 당직을 나누고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

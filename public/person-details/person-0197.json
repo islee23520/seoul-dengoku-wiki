@@ -1,515 +1,126 @@
 {
   "id": "person-0197",
   "name": "윤서하",
-  "title": "경매사",
-  "position": "경매사",
+  "title": "의원 집안 후계",
+  "position": "의원 집안 후계 · 종로3가역",
   "characterId": "K196",
-  "rank": "교도",
-  "commonTier": "T5",
-  "occupation": "경매 시작가·낙찰가 기록",
+  "rank": "후계",
+  "commonTier": "T2",
+  "occupation": "장터 거래",
   "gender": "여성",
   "stage": "S1",
-  "state": "S08",
-  "stateName": "중앙정보부",
-  "sourceRoute": "/world/Cast-State-08#인물-윤서하",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0197",
   "birthDate": "2088-05-10",
   "birthday": "05-10",
   "age": 38,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-08.json#/content/61"
-  ],
-  "familyTree": {
-    "personId": "K196",
-    "nodes": [
-      {
-        "id": "K196",
-        "personId": "K196",
-        "kind": "person",
-        "name": "윤서하",
-        "birthDate": "2088-05-10",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K196"
-          },
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-윤서하-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 노량진 선창에서 자랐다. 경매사 자리는 저울 재점검 공개로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-윤서하-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0197"
-      },
-      {
-        "id": "FH-K196-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤현윤",
-        "lineage": {
-          "surname": "윤",
-          "bongwan": "파평",
-          "clan": "c724-d30c-d3c9-agreed-c11c-first"
-        },
-        "birthDate": "2058-05-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-윤서하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2096,
-            "summary": "윤현윤은 노량진 선창에서 경매 시작가·낙찰가 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-윤서하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K196-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤현우",
-        "lineage": {
-          "surname": "윤",
-          "bongwan": "파평",
-          "clan": "c724-d30c-d3c9-agreed-c11c-first"
-        },
-        "birthDate": "2028-05-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-윤서하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2066,
-            "summary": "윤현우는 노량진 선창에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-윤서하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K196-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤현경",
-        "lineage": {
-          "surname": "윤",
-          "bongwan": "파평",
-          "clan": "c724-d30c-d3c9-agreed-c11c-first"
-        },
-        "birthDate": "1998-05-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-윤서하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤현경은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-윤서하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K196-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "곽현수",
-        "lineage": {
-          "surname": "곽",
-          "bongwan": "현풍",
-          "clan": "acfd-d604-d48d"
-        },
-        "birthDate": "2058-05-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-윤서하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2096,
-            "summary": "곽현수는 노량진 선창에서 경매 시작가·낙찰가 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-윤서하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K196-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "곽현경",
-        "lineage": {
-          "surname": "곽",
-          "bongwan": "현풍",
-          "clan": "acfd-d604-d48d"
-        },
-        "birthDate": "2028-05-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-윤서하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2066,
-            "summary": "곽현경은 노량진 선창에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-윤서하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K196-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "곽현수",
-        "lineage": {
-          "surname": "곽",
-          "bongwan": "현풍",
-          "clan": "acfd-d604-d48d"
-        },
-        "birthDate": "1998-05-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-윤서하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "곽현수는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-윤서하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K196-P-01:K196:biological",
-        "from": "FH-K196-P-01",
-        "to": "K196",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-윤서하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K196-P-02:FH-K196-P-01:biological",
-        "from": "FH-K196-P-02",
-        "to": "FH-K196-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-윤서하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K196-P-03:FH-K196-P-02:biological",
-        "from": "FH-K196-P-03",
-        "to": "FH-K196-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-윤서하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K196-M-01:K196:biological",
-        "from": "FH-K196-M-01",
-        "to": "K196",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-윤서하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K196-M-02:FH-K196-M-01:biological",
-        "from": "FH-K196-M-02",
-        "to": "FH-K196-M-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-윤서하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K196-M-03:FH-K196-M-02:biological",
-        "from": "FH-K196-M-03",
-        "to": "FH-K196-M-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-윤서하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c724-d30c-d3c9",
+    "name": "파평 윤씨",
+    "crest": "clan-crests/c724-d30c-d3c9.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "기재된 역은 종로3가역, 동은 종로1·2·3·4가동, 세대는 종로구 의원 집안이다. 종로구 의석을 쥔 파평 윤씨 집안의 다음 후계로, 윤초아 의원 다음에 의석을 받을 사람으로 장부에 적혀 있다. 의원 집안 사람이면서 종로3가 장터의 증표 중개를 직접 보고, 대서꾼들이 받는 민원 서류 값과 증표의 장터 값을 매일 저녁 칠판에 적어 집안 창고 장부와 맞춘다. 정부가 가장 오래 눈감아 온 장을 의원 집안이 쥐고 있다는 말을 그녀는 부인하지 않는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "의원 집안 후계",
+    "품계": "후계",
+    "생업": "장터 거래",
+    "일하는 역": "종로3가역",
+    "잠자는 역": "종로3가역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "기재된 역은 종로3가역, 동은 종로1·2·3·4가동, 세대는 종로구 의원 집안이다. 종로구 의석을 쥔 파평 윤씨 집안의 다음 후계로, 윤초아 의원 다음에 의석을 받을 사람으로 장부에 적혀 있다. 의원 집안 사람이면서 종로3가 장터의 증표 중개를 직접 보고, 대서꾼들이 받는 민원 서류 값과 증표의 장터 값을 매일 저녁 칠판에 적어 집안 창고 장부와 맞춘다. 정부가 가장 오래 눈감아 온 장을 의원 집안이 쥐고 있다는 말을 그녀는 부인하지 않는다.",
+    "관직": "직함 의원 집안 후계. 직위 의원 집안 후계 · 종로3가역. 품계 후계. 일하는 역 종로3가역."
+  },
+  "values": {
+    "권위": 50,
+    "개방": -15,
+    "무력": 20,
+    "물질": 80,
+    "공동": -5,
+    "원칙": -20,
+    "공개": -10,
+    "자격": 15,
+    "분산": -30,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": 5,
+    "독점": -10,
+    "위험": -10,
+    "과시": 45,
+    "지속": 15,
+    "지향": "무성향",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0197",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "윤서하",
+        "type": "지휘",
+        "to": "윤초아",
+        "basis": "종로구 국회의원 윤초아의 직속"
+      },
+      {
+        "from": "윤서하",
+        "type": "맹세",
+        "to": "윤초아",
+        "basis": "윤초아 의원 다음의 후계로 장부에 오르며 집안의 의석을 지키겠다고 선서했다."
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K249",
+    "name": "윤초아",
+    "courtId": "court:K249",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
-      },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 12,
-        "effective": 12
-      },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
-      "learning": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
+      },
+      "martial": {
+        "base": 4,
+        "effective": 4
+      },
+      "stewardship": {
+        "base": 9,
+        "effective": 9
+      },
+      "intrigue": {
+        "base": 6,
+        "effective": 6
+      },
+      "learning": {
+        "base": 5,
+        "effective": 5
       },
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
       }
     },
-    "skills": [
-      {
-        "id": "auction-administration",
-        "name": {
-          "ko": "경매 운영",
-          "en": "Auction administration"
-        },
-        "rating": 75
-      },
-      {
-        "id": "price-recording",
-        "name": {
-          "ko": "가격 기록",
-          "en": "Price recording"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k196-disposition",
-        "name": {
-          "ko": "눈짓 거래 중단",
-          "en": "Stopping wink deals"
-        },
-        "description": {
-          "ko": "목소리가 맑고 잔인할 만큼 공정하다. 입찰자가 눈짓을 교환하면 즉시 그 품목을 다음 회로 미룬다.",
-          "en": "Her voice was clear and fair to the point of cruelty. When bidders exchanged glances she postponed that lot to the next session at once."
-        },
-        "behavior": {
-          "ko": "관직. 품계 교도. 직함은 경매사. 시작가와 낙찰가를 벽에 쓰고, 호송권만은 별도 봉투 경매로 돌린다.",
-          "en": "Office. Rank: lay instructor. Title: auctioneer. She wrote the opening and winning bids on the wall and ran the convoy right alone as a sealed-envelope auction."
-        },
-        "stress": {
-          "ko": "공포. 강국이 비공개 직거래로 경매판을 빈 의자로 만드는 것.",
-          "en": "Fear. That great powers would make the auction floor empty chairs through closed direct deals."
-        },
-        "relationship": {
-          "ko": "관계. 오해린에게 호송권 비공개 경매를 위임받았고 남윤경과 가격 주도권을 경쟁한다. 신태산의 호송 입찰을 자주 낙찰시킨다.",
-          "en": "Relations. Received mandate over the closed convoy-right auction from O Haerin and competed with Nam Yungyeong for price leadership. Often awarded Sin Taesan's convoy bids."
-        },
-        "effects": []
-      },
-      {
-        "id": "k196-choice",
-        "name": {
-          "ko": "공개가와 봉투 분리",
-          "en": "Separating public prices and envelopes"
-        },
-        "description": {
-          "ko": "일화. 흉작 소문만으로 가락 시세가 뛰자 노량진 경매판에도 빈 상자가 고가로 나가기 시작했다.",
-          "en": "Anecdote. When Garak prices jumped on famine rumor alone, empty boxes began going for high prices on the Noryangjin auction floor too."
-        },
-        "behavior": {
-          "ko": "관계. 오해린에게 호송권 비공개 경매를 위임받았고 남윤경과 가격 주도권을 경쟁한다. 신태산의 호송 입찰을 자주 낙찰시킨다.",
-          "en": "Relations. Received mandate over the closed convoy-right auction from O Haerin and competed with Nam Yungyeong for price leadership. Often awarded Sin Taesan's convoy bids."
-        },
-        "stress": {
-          "ko": "공포. 강국이 비공개 직거래로 경매판을 빈 의자로 만드는 것.",
-          "en": "Fear. That great powers would make the auction floor empty chairs through closed direct deals."
-        },
-        "relationship": {
-          "ko": "관계. 오해린에게 호송권 비공개 경매를 위임받았고 남윤경과 가격 주도권을 경쟁한다. 신태산의 호송 입찰을 자주 낙찰시킨다.",
-          "en": "Relations. Received mandate over the closed convoy-right auction from O Haerin and competed with Nam Yungyeong for price leadership. Often awarded Sin Taesan's convoy bids."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "담합 눈짓에 품목을 미루고 공개 가격과 비공개 호송권 봉투를 분리한다. 공정성 주장과 비공개 위임이 함께 있는 운영이다.",
-      "en": "Defers lots on collusive glances and separates public prices from sealed convoy rights. Fairness claims coexist with private delegated bidding."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -547,85 +158,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c724-d30c-d3c9",
-    "name": "파평 윤씨",
-    "crest": "clan-crests/c724-d30c-d3c9.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 5,
-    "개방": 40,
-    "무력": -15,
-    "물질": 85,
-    "공동": -10,
-    "원칙": -40,
-    "공개": 15,
-    "자격": 0,
-    "분산": 20,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 5,
-    "독점": -10,
-    "위험": -10,
-    "과시": 45,
-    "지속": 15,
-    "지향": "무성향",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "중앙정보부",
-    "품계": "교도",
-    "생업": "경매 시작가·낙찰가 기록",
-    "직함": "경매사",
-    "가치관": "권위 5 | 개방 40 | 무력 −15 | 물질 85 | 공동 −10 | 원칙 −40 | 공개 15 | 자격 0 | 분산 20 | 변혁 0",
-    "욕망": "갈망 5 | 독점 −10 | 위험 −10 | 과시 45 | 지속 15 | 지향 무성향 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 노량진 선창에서 자랐다. 경매사 자리는 저울 재점검 공개로 열렸다.\n- 윤서하는 노량진1동에서 경매 시작가·낙찰가 기록 업무를 맡는다.",
-    "관직": "품계 교도. 직함은 경매사. 시작가와 낙찰가를 벽에 쓰고, 호송권만은 별도 봉투 경매로 돌린다.",
-    "일화": "흉작 소문만으로 가락 시세가 뛰자 노량진 경매판에도 빈 상자가 고가로 나가기 시작했다.",
-    "관계": "오해린에게 호송권 비공개 경매를 위임받았고 남윤경과 가격 주도권을 경쟁한다. 신태산의 호송 입찰을 자주 낙찰시킨다.",
-    "야망": "물·전력·식량 계약을 같은 경매판에서 교환하게 만들어 오해린의 공통 결제권을 시장 규칙으로 굳힌다.",
-    "공포": "강국이 비공개 직거래로 경매판을 빈 의자로 만드는 것.",
-    "개입": "실제 재고를 경매 전에 공개하거나, 특정 후계자에게 군량 입찰을 몰아줄 수 있다."
-  },
-  "biography": "목소리가 맑고 잔인할 만큼 공정하다. 입찰자가 눈짓을 교환하면 즉시 그 품목을 다음 회로 미룬다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 경매 시작가·낙찰가 기록\n- 직함: 경매사\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 경매사 자리는 저울 재점검 공개로 열렸다.\n- 윤서하는 노량진1동에서 경매 시작가·낙찰가 기록 업무를 맡는다.\n\n**관직.** 품계 교도. 직함은 경매사. 시작가와 낙찰가를 벽에 쓰고, 호송권만은 별도 봉투 경매로 돌린다.\n\n**일화.** 흉작 소문만으로 가락 시세가 뛰자 노량진 경매판에도 빈 상자가 고가로 나가기 시작했다.\n\n**관계.** 오해린에게 호송권 비공개 경매를 위임받았고 남윤경과 가격 주도권을 경쟁한다. 신태산의 호송 입찰을 자주 낙찰시킨다.\n\n**야망.** 물·전력·식량 계약을 같은 경매판에서 교환하게 만들어 오해린의 공통 결제권을 시장 규칙으로 굳힌다.\n\n**공포.** 강국이 비공개 직거래로 경매판을 빈 의자로 만드는 것.\n\n**개입.** 실제 재고를 경매 전에 공개하거나, 특정 후계자에게 군량 입찰을 몰아줄 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 40 | 무력 −15 | 물질 85 | 공동 −10 | 원칙 −40 | 공개 15 | 자격 0 | 분산 20 | 변혁 0\n- 욕망: 갈망 5 | 독점 −10 | 위험 −10 | 과시 45 | 지속 15 | 지향 무성향 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-08"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "윤서하",
-        "type": "지휘",
-        "to": "오해린",
-        "basis": "호송권 비공개 경매를 위임받음"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "오하늘",
-        "type": "계약",
-        "to": "윤서하",
-        "basis": "경매 속보 시각을 맞춤"
-      },
-      {
-        "from": "설초아",
-        "type": "지휘",
-        "to": "윤서하",
-        "basis": "윤서하의 경매 순서를 승강장에서 집행하며"
-      },
-      {
-        "from": "홍지훈",
-        "type": "계약",
-        "to": "윤서하",
-        "basis": "윤서하의 경매 규칙을 물가 품목에서 집행하고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

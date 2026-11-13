@@ -1,501 +1,120 @@
 {
   "id": "person-0209",
   "name": "지마루",
-  "title": "노량진 냉동기지 감독",
-  "position": "노량진 냉동기지 감독",
+  "title": "보문역 역장",
+  "position": "보문역 역장 · 정부",
   "characterId": "K208",
-  "rank": "기사",
+  "rank": "역장",
   "commonTier": "T4",
-  "occupation": "냉동기지 전력 배분·충전 점검",
+  "occupation": "역 행정",
   "gender": "여성",
   "stage": "S2",
-  "state": "S08",
-  "stateName": "중앙정보부",
-  "sourceRoute": "/world/Cast-State-08#인물-지마루",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0209",
   "birthDate": "2090-03-22",
   "birthday": "03-22",
   "age": 36,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-08.json#/content/28",
-    "lore/characters/Cast-State-08.json#/content/30"
-  ],
-  "familyTree": {
-    "personId": "K208",
-    "nodes": [
-      {
-        "id": "K208",
-        "personId": "K208",
-        "kind": "person",
-        "name": "지마루",
-        "birthDate": "2090-03-22",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K208"
-          },
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지마루-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 노량진 냉동기지 감독 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-지마루-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0209"
-      },
-      {
-        "id": "FH-K208-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "지승정",
-        "lineage": {
-          "surname": "지",
-          "bongwan": "충주",
-          "clan": "c9c0-cda9-c8fc"
-        },
-        "birthDate": "2060-03-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2098,
-            "summary": "지승정은 신정 차량기지에서 냉동기지 전력 배분·충전 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-지마루-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K208-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "지승아",
-        "lineage": {
-          "surname": "지",
-          "bongwan": "충주",
-          "clan": "c9c0-cda9-c8fc"
-        },
-        "birthDate": "2030-03-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "지승아는 신정 차량기지에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-지마루-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K208-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "지승희",
-        "lineage": {
-          "surname": "지",
-          "bongwan": "충주",
-          "clan": "c9c0-cda9-c8fc"
-        },
-        "birthDate": "2000-03-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "지승희는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-지마루-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K208-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤현연",
-        "birthDate": "2060-03-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2098,
-            "summary": "윤현연은 신정 차량기지에서 냉동기지 전력 배분·충전 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-지마루-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K208-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한현은",
-        "birthDate": "2030-03-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "한현은은 신정 차량기지에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-지마루-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K208-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현정",
-        "birthDate": "2000-03-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강현정은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-지마루-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K208-P-01:K208:biological",
-        "from": "FH-K208-P-01",
-        "to": "K208",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K208-P-02:FH-K208-P-01:biological",
-        "from": "FH-K208-P-02",
-        "to": "FH-K208-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K208-P-03:FH-K208-P-02:biological",
-        "from": "FH-K208-P-03",
-        "to": "FH-K208-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K208-M-01:K208:biological",
-        "from": "FH-K208-M-01",
-        "to": "K208",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K208-M-02:FH-K208-M-01:biological",
-        "from": "FH-K208-M-02",
-        "to": "FH-K208-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K208-M-03:FH-K208-M-02:biological",
-        "from": "FH-K208-M-03",
-        "to": "FH-K208-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c9c0-cda9-c8fc",
+    "name": "충주 지씨",
+    "crest": "clan-crests/c9c0-cda9-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "기재 사항: 성북구 보문동 보문역, 역장 집안, 역장. 보문역은 서라온 의원의 사무소가 있는 역이라, 그녀가 내는 역 정원 보고는 천다움 동장의 결재를 거쳐 곧바로 의원의 책상에 오른다. 메탄 통의 밸브를 볼 줄 알아서 대합실 난로의 연료 점검은 서기에게 맡기지 않고 직접 돈다. 서른여섯 살인 그녀는 소등 사이렌 뒤에 출입구 굴의 눈막이 문을 한 번 더 확인하고서야 잠자리로 내려간다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "보문역 역장",
+    "품계": "역장",
+    "생업": "역 행정",
+    "일하는 역": "보문역",
+    "잠자는 역": "보문역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "기재 사항: 성북구 보문동 보문역, 역장 집안, 역장. 보문역은 서라온 의원의 사무소가 있는 역이라, 그녀가 내는 역 정원 보고는 천다움 동장의 결재를 거쳐 곧바로 의원의 책상에 오른다. 메탄 통의 밸브를 볼 줄 알아서 대합실 난로의 연료 점검은 서기에게 맡기지 않고 직접 돈다. 서른여섯 살인 그녀는 소등 사이렌 뒤에 출입구 굴의 눈막이 문을 한 번 더 확인하고서야 잠자리로 내려간다.",
+    "관직": "직함 보문역 역장. 직위 보문역 역장 · 정부. 품계 역장. 일하는 역 보문역."
+  },
+  "values": {
+    "권위": 55,
+    "개방": -20,
+    "무력": 10,
+    "물질": 55,
+    "공동": -25,
+    "원칙": -15,
+    "공개": 0,
+    "자격": 10,
+    "분산": -40,
+    "변혁": -10
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": 15,
+    "위험": -10,
+    "과시": -20,
+    "지속": 10,
+    "지향": "이성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0209",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "지마루",
+        "type": "지휘",
+        "to": "천다움",
+        "basis": "보문동 동장 천다움의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K328",
+    "name": "천다움",
+    "courtId": "court:K328",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
         "base": 6,
         "effective": 6
       },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
-      "learning": {
-        "base": 11,
-        "effective": 11
-      },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "cold-base-power-allocation",
-        "name": {
-          "ko": "냉동 전력 배분",
-          "en": "Cold-base power allocation"
-        },
-        "rating": 70
-      },
-      {
-        "id": "defective-part-inspection",
-        "name": {
-          "ko": "불량 부품 검사",
-          "en": "Defective-part inspection"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k208-disposition",
-        "name": {
-          "ko": "시민 얼음 최저선",
-          "en": "Minimum civilian ice"
-        },
-        "description": {
-          "ko": "압축기 진동으로 과부하를 읽고, 시민 얼음보다 군량 충전에 칸을 내주라는 쪽지를 태운다. 과묵하고 교대 일지를 깎지 않는다.",
-          "en": "He read overload from the compressor's vibration and burned any note telling him to give a column to military-ration charging over citizens' ice. Taciturn, he shaved no rotation log."
-        },
-        "behavior": {
-          "ko": "관직. 품계 기사. 직함은 노량진 냉동기지 감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 벽돌 재고가 최저선을 넘을 때만 허용한다.",
-          "en": "Office. Rank: temple student. Title: Noryangjin cold-storage depot supervisor. He left the power distribution on the public gauge board and allowed military charging only when the brick inventory crossed the minimum line."
-        },
-        "stress": {
-          "ko": "공포. 한 번의 과방전으로 삼호 창고가 죽고, 그 정전을 수문 정부가 통행세로 압박하는 것.",
-          "en": "Fear. That one over-discharge would kill the Samho warehouse, and the sluice government would press that blackout as a passage toll."
-        },
-        "relationship": {
-          "ko": "관계. 조민재의 온도 공개에 전력을 대는 지휘를 받고, 지윤재의 제빙 시운전에 출력을 맞추며, 한재목의 전력·물 계약을 기지 쪽에서 꺼린다.",
-          "en": "Relations. Under command to power Jo Minjae's temperature disclosure, he matched output to Ji Yunjae's ice-machine trials and disliked Han Jaemok's power and water contracts on the depot side."
-        },
-        "effects": []
-      },
-      {
-        "id": "k208-choice",
-        "name": {
-          "ko": "군량 쪽지 거부",
-          "en": "Rejecting military-grain pressure"
-        },
-        "description": {
-          "ko": "일화. 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 노량진 냉동기지 감독 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In 2125 he turned back a box of defective parts just before release. By this deed the signature of the Noryangjin cold-storage depot supervisor post rose into the ledger."
-        },
-        "behavior": {
-          "ko": "관계. 조민재의 온도 공개에 전력을 대는 지휘를 받고, 지윤재의 제빙 시운전에 출력을 맞추며, 한재목의 전력·물 계약을 기지 쪽에서 꺼린다.",
-          "en": "Relations. Under command to power Jo Minjae's temperature disclosure, he matched output to Ji Yunjae's ice-machine trials and disliked Han Jaemok's power and water contracts on the depot side."
-        },
-        "stress": {
-          "ko": "공포. 한 번의 과방전으로 삼호 창고가 죽고, 그 정전을 수문 정부가 통행세로 압박하는 것.",
-          "en": "Fear. That one over-discharge would kill the Samho warehouse, and the sluice government would press that blackout as a passage toll."
-        },
-        "relationship": {
-          "ko": "관계. 조민재의 온도 공개에 전력을 대는 지휘를 받고, 지윤재의 제빙 시운전에 출력을 맞추며, 한재목의 전력·물 계약을 기지 쪽에서 꺼린다.",
-          "en": "Relations. Under command to power Jo Minjae's temperature disclosure, he matched output to Ji Yunjae's ice-machine trials and disliked Han Jaemok's power and water contracts on the depot side."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "압축기 진동을 읽고 불량 부품을 반송하며 제빙 시운전에 출력을 맞춘다. 기술 운용을 새로운 기계 발명으로 확대하지 않는다.",
-      "en": "Reads compressor vibration, returns defective parts and matches output to ice trials. Technical operation does not establish new-machine invention."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -533,79 +152,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c9c0-cda9-c8fc",
-    "name": "충주 지씨",
-    "crest": "clan-crests/c9c0-cda9-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 10,
-    "개방": 35,
-    "무력": -25,
-    "물질": 60,
-    "공동": -30,
-    "원칙": -35,
-    "공개": 25,
-    "자격": -5,
-    "분산": 10,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": 15,
-    "위험": -10,
-    "과시": -20,
-    "지속": 10,
-    "지향": "이성",
-    "결합": "다자"
-  },
-  "fields": {
-    "소속": "중앙정보부",
-    "품계": "기사",
-    "생업": "냉동기지 전력 배분·충전 점검",
-    "직함": "노량진 냉동기지 감독",
-    "가치관": "권위 10 | 개방 35 | 무력 −25 | 물질 60 | 공동 −30 | 원칙 −35 | 공개 25 | 자격 −5 | 분산 10 | 변혁 10",
-    "욕망": "갈망 30 | 독점 15 | 위험 −10 | 과시 −20 | 지속 10 | 지향 이성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 노량진 냉동기지 감독 자리는 탈선 직전 결함 보고로 열렸다.\n- 지마루는 노량진1동에서 냉동기지 전력 배분·충전 점검 업무를 맡는다.",
-    "관직": "품계 기사. 직함은 노량진 냉동기지 감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 벽돌 재고가 최저선을 넘을 때만 허용한다.",
-    "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 노량진 냉동기지 감독 자리의 서명이 장부에 올랐다.",
-    "관계": "조민재의 온도 공개에 전력을 대는 지휘를 받고, 지윤재의 제빙 시운전에 출력을 맞추며, 한재목의 전력·물 계약을 기지 쪽에서 꺼린다.",
-    "야망": "노량진 냉동기지의 비상 전력을 제빙·식량 칸 전용으로 고정해 상회 신용의 심야 동맥이 된다.",
-    "공포": "한 번의 과방전으로 삼호 창고가 죽고, 그 정전을 수문 정부가 통행세로 압박하는 것.",
-    "개입": "대체 축전지를 구해 이중 공급을 열거나, 계기판 조작을 폭로해 감독을 교체할 수 있다."
-  },
-  "biography": "압축기 진동으로 과부하를 읽고, 시민 얼음보다 군량 충전에 칸을 내주라는 쪽지를 태운다. 과묵하고 교대 일지를 깎지 않는다.\n\n- 소속: 중앙정보부\n- 품계: 기사\n- 생업: 냉동기지 전력 배분·충전 점검\n- 직함: 노량진 냉동기지 감독\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 노량진 냉동기지 감독 자리는 탈선 직전 결함 보고로 열렸다.\n- 지마루는 노량진1동에서 냉동기지 전력 배분·충전 점검 업무를 맡는다.\n\n**관직.** 품계 기사. 직함은 노량진 냉동기지 감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 벽돌 재고가 최저선을 넘을 때만 허용한다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 노량진 냉동기지 감독 자리의 서명이 장부에 올랐다.\n\n**관계.** 조민재의 온도 공개에 전력을 대는 지휘를 받고, 지윤재의 제빙 시운전에 출력을 맞추며, 한재목의 전력·물 계약을 기지 쪽에서 꺼린다.\n\n**야망.** 노량진 냉동기지의 비상 전력을 제빙·식량 칸 전용으로 고정해 상회 신용의 심야 동맥이 된다.\n\n**공포.** 한 번의 과방전으로 삼호 창고가 죽고, 그 정전을 수문 정부가 통행세로 압박하는 것.\n\n**개입.** 대체 축전지를 구해 이중 공급을 열거나, 계기판 조작을 폭로해 감독을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 35 | 무력 −25 | 물질 60 | 공동 −30 | 원칙 −35 | 공개 25 | 자격 −5 | 분산 10 | 변혁 10\n- 욕망: 갈망 30 | 독점 15 | 위험 −10 | 과시 −20 | 지속 10 | 지향 이성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-08"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "지마루",
-        "type": "지휘",
-        "to": "조민재",
-        "basis": "조민재의 온도 공개에 전력을 대는 지휘를 받고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:보문",
+      "name": {
+        "ko": "보문역"
       },
-      {
-        "from": "지마루",
-        "type": "지휘",
-        "to": "지윤재",
-        "basis": "지윤재의 제빙 시운전에 출력을 맞추며"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "나루희",
-        "type": "계약",
-        "to": "지마루",
-        "basis": "지마루의 냉동기지 전력 배분을 발전 쪽에서 받치고"
-      }
-    ]
-  }
+      "holderPersonId": "K208",
+      "directLiegePersonId": "K328",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "보문",
+        "stationName": "보문"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1129061000",
+          "name": "보문동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

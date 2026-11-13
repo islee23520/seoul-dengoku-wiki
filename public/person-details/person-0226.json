@@ -1,386 +1,136 @@
 {
   "id": "person-0226",
   "name": "두봉",
-  "title": "송신 정비사, 권미래의 실무 담당자",
-  "position": "금고 정비사, 권미래의 실무 담당자",
+  "title": "가양 구간장",
+  "position": "가양 구간장 · 자유도시들",
   "characterId": "K225",
-  "rank": "서기",
-  "commonTier": "T5",
-  "occupation": "금고 예비 전원 정비·순환 시험",
+  "rank": "구간장",
+  "commonTier": "T3",
+  "occupation": "구간 운영",
   "gender": "남성",
   "stage": "S2",
-  "state": "S09",
-  "stateName": "여의도출자연합회",
-  "sourceRoute": "/world/Cast-State-09#인물-두봉",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0226",
   "birthDate": "2077-12-30",
   "birthday": "12-30",
   "age": 49,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-09.json#/content/61",
-    "lore/characters/Cast-State-09.json#/content/63"
-  ],
-  "familyTree": {
-    "personId": "K225",
-    "nodes": [
-      {
-        "id": "K225",
-        "personId": "K225",
-        "kind": "person",
-        "name": "두봉",
-        "birthDate": "2077-12-30",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K225"
-          },
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두봉-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 금고 정비사, 권미래의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-두봉-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0226"
-      },
-      {
-        "id": "FH-K225-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "두승석",
-        "lineage": {
-          "surname": "두",
-          "bongwan": "두릉",
-          "clan": "b450-b450-b989"
-        },
-        "birthDate": "2047-12-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2085,
-            "summary": "두승석은 신정 차량기지에서 금고 예비 전원 정비·순환 시험 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-두봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K225-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "두승준",
-        "lineage": {
-          "surname": "두",
-          "bongwan": "두릉",
-          "clan": "b450-b450-b989"
-        },
-        "birthDate": "2017-12-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "두승준은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-두봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K225-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "송현정",
-        "birthDate": "2047-12-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2085,
-            "summary": "송현정은 신정 차량기지에서 금고 예비 전원 정비·순환 시험 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-두봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K225-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "조현희",
-        "birthDate": "2017-12-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조현희는 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-두봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K225-P-01:K225:biological",
-        "from": "FH-K225-P-01",
-        "to": "K225",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K225-P-02:FH-K225-P-01:biological",
-        "from": "FH-K225-P-02",
-        "to": "FH-K225-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K225-M-01:K225:biological",
-        "from": "FH-K225-M-01",
-        "to": "K225",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K225-M-02:FH-K225-M-01:biological",
-        "from": "FH-K225-M-02",
-        "to": "FH-K225-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b450-b450-b989",
+    "name": "두릉 두씨",
+    "crest": "clan-crests/b450-b450-b989.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "가양의 벌판은 묻힌 건물이 적어 바람틀을 줄지어 세울 수 있는 땅이라, 새 바람틀 자리를 누구에게 내줄지가 두봉의 구간에서는 늘 셈거리다. 가양, 증미, 등촌, 염창의 터널과 9호선 케이블을 맡은 그는 마흔아홉으로, 자리를 내줄 때마다 바람틀이 설 땅을 발로 걸어 잰 다음에야 대주들과 수치를 맞춘다. 벌판 가장자리 빛밭의 소출 수치를 셈판에 올리는 날 아침이면, 그는 같은 두릉 두씨 집안인 영등포 대방역 역반장 두용에게도 그 수치를 적어 보낸다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "가양 구간장",
+    "품계": "구간장",
+    "생업": "구간 운영",
+    "일하는 역": "가양역",
+    "잠자는 역": "가양역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "가양의 벌판은 묻힌 건물이 적어 바람틀을 줄지어 세울 수 있는 땅이라, 새 바람틀 자리를 누구에게 내줄지가 두봉의 구간에서는 늘 셈거리다. 가양, 증미, 등촌, 염창의 터널과 9호선 케이블을 맡은 그는 마흔아홉으로, 자리를 내줄 때마다 바람틀이 설 땅을 발로 걸어 잰 다음에야 대주들과 수치를 맞춘다. 벌판 가장자리 빛밭의 소출 수치를 셈판에 올리는 날 아침이면, 그는 같은 두릉 두씨 집안인 영등포 대방역 역반장 두용에게도 그 수치를 적어 보낸다.",
+    "관직": "직함 가양 구간장. 직위 가양 구간장 · 자유도시들. 품계 구간장. 일하는 역 가양역."
+  },
+  "values": {
+    "권위": -50,
+    "개방": 35,
+    "무력": -35,
+    "물질": 15,
+    "공동": -25,
+    "원칙": 20,
+    "공개": 65,
+    "자격": 55,
+    "분산": 85,
+    "변혁": 10
+  },
+  "desire": {
+    "갈망": -5,
+    "독점": 0,
+    "위험": 30,
+    "과시": 20,
+    "지속": -5,
+    "지향": "유동",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0226",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "두봉",
+        "type": "지휘",
+        "to": "최다인",
+        "basis": "강서 바람지기 최다인의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "란세온",
+        "type": "지휘",
+        "to": "두봉",
+        "basis": "가양 구간장 두봉의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K034",
+    "name": "최다인",
+    "courtId": "court:K034",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K225",
+    "members": [
+      {
+        "personId": "K237",
+        "name": "란세온"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "management": {
-        "base": 11,
-        "effective": 11
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 11,
-        "effective": 11
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 10,
-        "effective": 10
       }
     },
-    "skills": [
-      {
-        "id": "power-maintenance",
-        "name": {
-          "ko": "예비 전원 정비",
-          "en": "Backup power maintenance"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "power-maintenance-disposition",
-        "name": {
-          "ko": "대충 감은 선 거부",
-          "en": "Rejects careless wiring"
-        },
-        "description": {
-          "ko": "선이 대충 감겼으면 처음부터 다시 한다.",
-          "en": "Restarts work over careless wiring."
-        },
-        "behavior": {
-          "ko": "선이 대충 감겼으면 처음부터 다시 한다.",
-          "en": "Restarts work over careless wiring."
-        },
-        "stress": {
-          "ko": "정비 실수가 발행을 멈출 것을 두려워한다.",
-          "en": "Fears maintenance errors stopping issuance."
-        },
-        "relationship": {
-          "ko": "권미래의 지휘로 금고를 고치고, 감봉과 금고 당직을 나눈다. 배우진의 전원 차단 요구는 기술 장애로 미룬다.",
-          "en": "Repairs the vault under Gwon Mirae, shares duty with Gambong and delays Bae Woojin’s shutoff demands."
-        },
-        "effects": []
-      },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "공백에서 중지",
-          "en": "Stops at gaps"
-        },
-        "description": {
-          "ko": "장부 두 줄이 비자 스위치를 봉인했다.",
-          "en": "Sealed the switch over two missing ledger lines."
-        },
-        "behavior": {
-          "ko": "장부 두 줄이 비자 스위치를 봉인했다.",
-          "en": "Sealed the switch over two missing ledger lines."
-        },
-        "stress": {
-          "ko": "정비 실수로 금고가 한순간 닫혀 공용 화폐가 승자의 증서로 몰리는 것.",
-          "en": "Fears maintenance errors stopping issuance."
-        },
-        "relationship": {
-          "ko": "권미래의 지휘로 금고를 고치고, 감봉과 금고 당직을 나눈다. 배우진의 전원 차단 요구는 기술 장애로 미룬다.",
-          "en": "Repairs the vault under Gwon Mirae, shares duty with Gambong and delays Bae Woojin’s shutoff demands."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "매일 전원을 시험하며 빈 장부 두 줄에 스위치를 봉인했다. 정비 정확성과 위험 중지가 함께 확인된다.",
-      "en": "Tests power daily and sealed a switch over blank ledger lines, showing precision and hazard restraint."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -418,91 +168,68 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b450-b450-b989",
-    "name": "두릉 두씨",
-    "crest": "clan-crests/b450-b450-b989.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -15,
-    "개방": 20,
-    "무력": -25,
-    "물질": 0,
-    "공동": 0,
-    "원칙": 30,
-    "공개": 65,
-    "자격": 35,
-    "분산": 30,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": -5,
-    "독점": 0,
-    "위험": 30,
-    "과시": 20,
-    "지속": -5,
-    "지향": "유동",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "금고 예비 전원 정비·순환 시험",
-    "소속": "여의도출자연합회",
-    "품계": "서기",
-    "직함": "금고 정비사, 권미래의 실무 담당자",
-    "가치관": "권위 −15 | 개방 20 | 무력 −25 | 물질 0 | 공동 0 | 원칙 30 | 공개 65 | 자격 35 | 분산 30 | 변혁 0",
-    "욕망": "갈망 −5 | 독점 0 | 위험 30 | 과시 20 | 지속 −5 | 지향 유동 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2077-12-30 출생으로 승인된 출생군은 3군이다. 2126년 개막에 활동했다. 신정 차량기지에서 자랐다. 금고 정비사, 권미래의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.\n- 두봉은 여의동을 업무동으로 삼아 금고 예비 전원 정비·순환 시험 업무를 맡는다.",
-    "관직": "품계 서기. 직함은 금고 정비사, 권미래의 실무 담당자. 예비 전원을 매일 순환 시험하고, 금고 단독 개방은 출자 평의회의 승인 없이 연결하지 않는다.",
-    "일화": "임하준 실종 전 장부에 빈 칸이 두 줄 나타나자 예비 전원 스위치를 봉인했다.",
-    "관계": "권미래의 지휘로 금고를 고치고, 감봉과 금고 당직을 나눈다. 배우진의 전원 차단 요구는 기술 장애로 미룬다.",
-    "야망": "여의도 금고의 예비 전원을 세 곳으로 나눠, 강국이 한 곳을 꺼도 공용 화폐의 발행이 남게 한다.",
-    "공포": "정비 실수로 금고가 한순간 닫혀 공용 화폐가 승자의 증서로 몰리는 것.",
-    "개입": "봉인된 스위치를 함께 열거나, 예비 전원을 한 강국에 넘기려는 거래를 막을 수 있다."
-  },
-  "biography": "밤이 깊을수록 손이 정확해지고, 예비 전원의 잡음을 사람 말보다 먼저 듣는다. 대충 감은 선을 보면 그날 일을 처음부터 다시 한다.\n\n- 생업: 금고 예비 전원 정비·순환 시험\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 금고 정비사, 권미래의 실무 담당자\n**생애.** 2077-12-30 출생으로 승인된 출생군은 3군이다. 2126년 개막에 활동했다. 신정 차량기지에서 자랐다. 금고 정비사, 권미래의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.\n- 두봉은 여의동을 업무동으로 삼아 금고 예비 전원 정비·순환 시험 업무를 맡는다.\n\n**관직.** 품계 서기. 직함은 금고 정비사, 권미래의 실무 담당자. 예비 전원을 매일 순환 시험하고, 금고 단독 개방은 출자 평의회의 승인 없이 연결하지 않는다.\n\n**일화.** 임하준 실종 전 장부에 빈 칸이 두 줄 나타나자 예비 전원 스위치를 봉인했다.\n\n**관계.** 권미래의 지휘로 금고를 고치고, 감봉과 금고 당직을 나눈다. 배우진의 전원 차단 요구는 기술 장애로 미룬다.\n\n**야망.** 여의도 금고의 예비 전원을 세 곳으로 나눠, 강국이 한 곳을 꺼도 공용 화폐의 발행이 남게 한다.\n\n**공포.** 정비 실수로 금고가 한순간 닫혀 공용 화폐가 승자의 증서로 몰리는 것.\n\n**개입.** 봉인된 스위치를 함께 열거나, 예비 전원을 한 강국에 넘기려는 거래를 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 20 | 무력 −25 | 물질 0 | 공동 0 | 원칙 30 | 공개 65 | 자격 35 | 분산 30 | 변혁 0\n- 욕망: 갈망 −5 | 독점 0 | 위험 30 | 과시 20 | 지속 −5 | 지향 유동 | 결합 비독점",
-  "sources": [
-    "Cast-State-09"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:section:강서구:가양",
+      "name": {
+        "ko": "가양 구간"
+      },
+      "holderPersonId": "K225",
+      "directLiegePersonId": "K034",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "가양",
+        "stationName": "가양"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1150060400",
+          "name": "가양2동"
+        },
+        {
+          "id": "region:1150052000",
+          "name": "등촌1동"
+        },
+        {
+          "id": "region:1147053000",
+          "name": "목3동"
+        },
+        {
+          "id": "region:1150051000",
+          "name": "염창동"
+        }
+      ],
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
   ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "두봉",
-        "type": "지휘",
-        "to": "권미래",
-        "basis": "권미래의 지휘로 송신기를 고치고"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:가양",
+      "name": {
+        "ko": "가양역"
       },
-      {
-        "from": "두봉",
-        "type": "계약",
-        "to": "감봉",
-        "basis": "감봉과 탑 당직을 나눈다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "하람은",
-        "type": "계약",
-        "to": "두봉",
-        "basis": "하람은은 금고 설비 점검의 공급 이상을 두봉에게 알린다. 두봉은 예비 전원을 순환 시험하고 하람은은 설비를 다시 확인해 전력 문제와 기계 고장을 구분한다."
+      "holderPersonId": "K237",
+      "directLiegePersonId": "K225",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "가양",
+        "stationName": "가양"
       },
-      {
-        "from": "모봉용",
-        "type": "계약",
-        "to": "두봉",
-        "basis": "두봉에게 정비용 전선을 대고"
-      },
-      {
-        "from": "감봉",
-        "type": "계약",
-        "to": "두봉",
-        "basis": "두봉과 정비 창을 나누고"
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1150060400",
+          "name": "가양2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "란세온",
+      "holderRoute": "/people/person-0238"
+    }
+  ]
 }

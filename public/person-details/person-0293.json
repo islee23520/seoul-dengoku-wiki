@@ -1,397 +1,118 @@
 {
   "id": "person-0293",
   "name": "섭채원",
-  "title": "북한산보국문 행렬 북문 안내인",
-  "position": "강남역 북문 피난 안내인",
+  "title": "정비공",
+  "position": "정비공 · 반포역",
   "characterId": "K292",
-  "rank": "사원",
+  "rank": "정비공",
   "commonTier": "T5",
-  "occupation": "북문 피난 통행 시각·가족 표 안내",
+  "occupation": "이식 정비",
   "gender": "남성",
   "stage": "S3",
-  "state": "S11",
-  "stateName": "성하그룹",
-  "sourceRoute": "/world/Cast-State-11#인물-섭채원",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0293",
   "birthDate": "2064-11-25",
   "birthday": "11-25",
   "age": 62,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-11.json#/content/226"
-  ],
-  "familyTree": {
-    "personId": "K292",
-    "nodes": [
-      {
-        "id": "K292",
-        "personId": "K292",
-        "kind": "person",
-        "name": "섭채원",
-        "birthDate": "2064-11-25",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K292"
-          },
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-섭채원-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 강남역 북문 피난 안내인 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-섭채원-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0293"
-      },
-      {
-        "id": "FH-K292-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "섭승수",
-        "lineage": {
-          "surname": "섭",
-          "bongwan": "경주",
-          "clan": "c12d-acbd-c8fc"
-        },
-        "birthDate": "2034-11-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-섭채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "섭승수는 대합실 당직에서 북문 피난 통행 시각·가족 표 안내 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-섭채원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K292-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "섭승은",
-        "lineage": {
-          "surname": "섭",
-          "bongwan": "경주",
-          "clan": "c12d-acbd-c8fc"
-        },
-        "birthDate": "2004-11-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-섭채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "섭승은은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-섭채원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K292-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤준석",
-        "birthDate": "2034-11-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-섭채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "윤준석은 대합실 당직에서 북문 피난 통행 시각·가족 표 안내 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-섭채원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K292-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한현온",
-        "birthDate": "2004-11-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-섭채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한현온은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-섭채원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K292-P-01:K292:biological",
-        "from": "FH-K292-P-01",
-        "to": "K292",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-섭채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K292-P-02:FH-K292-P-01:biological",
-        "from": "FH-K292-P-02",
-        "to": "FH-K292-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-섭채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K292-M-01:K292:biological",
-        "from": "FH-K292-M-01",
-        "to": "K292",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-섭채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K292-M-02:FH-K292-M-01:biological",
-        "from": "FH-K292-M-02",
-        "to": "FH-K292-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-섭채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c12d-acbd-c8fc",
+    "name": "경주 섭씨",
+    "crest": "clan-crests/c12d-acbd-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "자유도시 쪽 손이 맞춘 이음매를 열 때마다, 섭채원은 그 손의 버릇을 혼잣말로 짚는다. 구반포 경계를 넘어온 사람이 밖에서 단 부위를 내보이면 반포역 정비대에서 다시 맞춤이 필요한지를 먼저 말하는 것이 그이고, 반포 사람들은 대개 그 말을 따른다. 예순둘이라 지상에는 거의 오르지 않지만, 부위 둘을 지닌 몸으로 반포역 출입구까지는 지팡이 없이 오른다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "정비공",
+    "품계": "정비공",
+    "생업": "이식 정비",
+    "일하는 역": "반포역",
+    "잠자는 역": "반포역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "자유도시 쪽 손이 맞춘 이음매를 열 때마다, 섭채원은 그 손의 버릇을 혼잣말로 짚는다. 구반포 경계를 넘어온 사람이 밖에서 단 부위를 내보이면 반포역 정비대에서 다시 맞춤이 필요한지를 먼저 말하는 것이 그이고, 반포 사람들은 대개 그 말을 따른다. 예순둘이라 지상에는 거의 오르지 않지만, 부위 둘을 지닌 몸으로 반포역 출입구까지는 지팡이 없이 오른다.",
+    "관직": "직함 정비공. 직위 정비공 · 반포역. 품계 정비공. 일하는 역 반포역."
+  },
+  "values": {
+    "권위": 40,
+    "개방": -35,
+    "무력": 0,
+    "물질": -30,
+    "공동": 40,
+    "원칙": 0,
+    "공개": -40,
+    "자격": 30,
+    "분산": -20,
+    "변혁": 25
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": 30,
+    "위험": 35,
+    "과시": 30,
+    "지속": 40,
+    "지향": "이성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0293",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
+      },
+      "martial": {
+        "base": 3,
+        "effective": 3
+      },
+      "stewardship": {
         "base": 7,
         "effective": 7
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
-      },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 8,
-        "effective": 8
+      "intrigue": {
+        "base": 6,
+        "effective": 6
       },
       "learning": {
-        "base": 7,
-        "effective": 7
+        "base": 11,
+        "effective": 11
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
       }
     },
-    "skills": [
-      {
-        "id": "k292-evacuation-queue-guidance",
-        "name": {
-          "ko": "피난 행렬 안내",
-          "en": "Evacuation queue guidance"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k292-priority",
-        "name": {
-          "ko": "가족 통행 우선",
-          "en": "Family passage first"
-        },
-        "description": {
-          "ko": "섭채원은 급수 철표 검문을 거두고 가족 표의 통행을 열었다. 피난 칠판을 군사 이정표로 바꾸지 않으려 한다.",
-          "en": "Seop Chaewon removed water-token screening and admitted family slips, seeking to keep evacuation boards from becoming military signposts."
-        },
-        "behavior": {
-          "ko": "통행 시각과 가족 표를 같은 칠판에 적고, 무장 안내는 정찰 보고 뒤에만 연다.",
-          "en": "Office. Rank: assistant manager. Title: Bukhansan Bogukmun column north gate guide. He wrote the passage hours and the family tables on one chalkboard and opened armed guidance only after reconnaissance reports."
-        },
-        "stress": {
-          "ko": "안내 칠판이 군사 호송 이정표로 덧칠되어 피난로가 지워지는 것.",
-          "en": "Fear. That the guidance chalkboard would be painted over as a military convoy signpost and the refugee road would be erased."
-        },
-        "relationship": {
-          "ko": "두국의 북문 호송 거점에서 행렬을 안내하고, 강태산의 회랑 횃불과 시각을 맞추며, 어하은의 지워진 가족 이름을 안내 명부에 다시 넣으려 한다.",
-          "en": "Relations. Guided the column at Du Guk's north gate convoy outpost and matched the hours with Kang Taesan's corridor torches. Sought to put Eo Haeun's erased family names back into the guide roster."
-        },
-        "effects": []
-      },
-      {
-        "id": "k292-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 사원. 직함은 강남역 북문 피난 안내인. 통행 시각과 가족 표를 같은 칠판에 적고, 무장 안내는 정찰 보고 뒤에만 연다.",
-          "en": "Office. Rank: assistant manager. Title: Bukhansan Bogukmun column north gate guide. He wrote the passage hours and the family tables on one chalkboard and opened armed guidance only after reconnaissance reports."
-        },
-        "stress": {
-          "ko": "공포. 안내 칠판이 군사 호송 이정표로 덧칠되어 피난로가 지워지는 것.",
-          "en": "Fear. That the guidance chalkboard would be painted over as a military convoy signpost and the refugee road would be erased."
-        },
-        "relationship": {
-          "ko": "관계. 두국의 북문 호송 거점에서 행렬을 안내하고, 강태산의 회랑 횃불과 시각을 맞추며, 어하은의 지워진 가족 이름을 안내 명부에 다시 넣으려 한다.",
-          "en": "Relations. Guided the column at Du Guk's north gate convoy outpost and matched the hours with Kang Taesan's corridor torches. Sought to put Eo Haeun's erased family names back into the guide roster."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "섭채원은 급수 철표 검문을 거두고 가족 표의 통행을 열었다. 피난 칠판을 군사 이정표로 바꾸지 않으려 한다.",
-      "en": "Seop Chaewon removed water-token screening and admitted family slips, seeking to keep evacuation boards from becoming military signposts."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -417,66 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c12d-acbd-c8fc",
-    "name": "경주 섭씨",
-    "crest": "clan-crests/c12d-acbd-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": -20,
-    "무력": -10,
-    "물질": 20,
-    "공동": 20,
-    "원칙": 10,
-    "공개": 5,
-    "자격": 65,
-    "분산": 10,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": 30,
-    "위험": 35,
-    "과시": 30,
-    "지속": 40,
-    "지향": "이성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "북문 피난 통행 시각·가족 표 안내",
-    "소속": "성하그룹",
-    "품계": "사원",
-    "직함": "강남역 북문 피난 안내인",
-    "가치관": "권위 15 | 개방 −20 | 무력 −10 | 물질 20 | 공동 20 | 원칙 10 | 공개 5 | 자격 65 | 분산 10 | 변혁 −20",
-    "욕망": "갈망 0 | 독점 30 | 위험 35 | 과시 30 | 지속 40 | 지향 이성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "대합실 당직에서 자랐다. 강남역 북문 피난 안내인 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 섭채원은 서초4동에서 북문 피난 통행 시각·가족 표 안내 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다. 두국의 북문 호송 거점에서 행렬을 안내하고, 강태산의 회랑 횃불과 시각을 맞추며, 어하은의 지워진 가족 이름을 안내 명부에 다시 넣으려 한다",
-    "관직": "품계 사원. 직함은 강남역 북문 피난 안내인. 통행 시각과 가족 표를 같은 칠판에 적고, 무장 안내는 정찰 보고 뒤에만 연다.",
-    "일화": "가을의 북한산보국문 행렬이 북문에 닿자 섭채원은 급수 철표를 든 검문 줄을 거두고 가족 표만 있는 칸을 통과시켰다.",
-    "관계": "두국의 북문 호송 거점에서 행렬을 안내하고, 강태산의 회랑 횃불과 시각을 맞추며, 어하은의 지워진 가족 이름을 안내 명부에 다시 넣으려 한다.",
-    "야망": "북문을 피난 행렬의 공개 안내 거점으로 남겨 동부 순찰이 숙영 입구를 검문소로 쓰지 못하게 한다.",
-    "공포": "안내 칠판이 군사 호송 이정표로 덧칠되어 피난로가 지워지는 것.",
-    "개입": "검문 줄을 다시 치려는 장교를 막거나, 안내 칠판의 원본 시각을 증언으로 남길 수 있다."
-  },
-  "biography": "호송 시각의 빈칸을 모욕처럼 기억하고, 통행세를 통행 조건으로 내미는 장교를 선로에서 내려보낸다. 이정표를 깎는 칼보다 말로 길을 나눈다.\n\n- 생업: 북문 피난 통행 시각·가족 표 안내\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 북문 피난 안내인\n**생애.** 대합실 당직에서 자랐다. 강남역 북문 피난 안내인 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 섭채원은 서초4동에서 북문 피난 통행 시각·가족 표 안내 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다. 두국의 북문 호송 거점에서 행렬을 안내하고, 강태산의 회랑 횃불과 시각을 맞추며, 어하은의 지워진 가족 이름을 안내 명부에 다시 넣으려 한다\n\n**관직.** 품계 사원. 직함은 강남역 북문 피난 안내인. 통행 시각과 가족 표를 같은 칠판에 적고, 무장 안내는 정찰 보고 뒤에만 연다.\n\n**일화.** 가을의 북한산보국문 행렬이 북문에 닿자 섭채원은 급수 철표를 든 검문 줄을 거두고 가족 표만 있는 칸을 통과시켰다.\n\n**관계.** 두국의 북문 호송 거점에서 행렬을 안내하고, 강태산의 회랑 횃불과 시각을 맞추며, 어하은의 지워진 가족 이름을 안내 명부에 다시 넣으려 한다.\n\n**야망.** 북문을 피난 행렬의 공개 안내 거점으로 남겨 동부 순찰이 숙영 입구를 검문소로 쓰지 못하게 한다.\n\n**공포.** 안내 칠판이 군사 호송 이정표로 덧칠되어 피난로가 지워지는 것.\n\n**개입.** 검문 줄을 다시 치려는 장교를 막거나, 안내 칠판의 원본 시각을 증언으로 남길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −20 | 무력 −10 | 물질 20 | 공동 20 | 원칙 10 | 공개 5 | 자격 65 | 분산 10 | 변혁 −20\n- 욕망: 갈망 0 | 독점 30 | 위험 35 | 과시 30 | 지속 40 | 지향 이성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-11"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "섭채원",
-        "type": "계약",
-        "to": "어하은",
-        "basis": "어하은의 지워진 가족 이름을 안내 명부에 다시 넣으려 한다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

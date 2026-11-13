@@ -1,385 +1,105 @@
 {
   "id": "person-0306",
   "name": "감국",
-  "title": "동북 외곽로 순찰대, 하세온의 실무 담당자",
-  "position": "동북 외곽로 순찰대, 하세온의 실무 담당자",
+  "title": "구 부대 지휘관",
+  "position": "구 부대 지휘관 · 봉화산역",
   "characterId": "K305",
-  "rank": "호송원",
+  "rank": "소령",
   "commonTier": "T5",
-  "occupation": "외곽 호송 인원·발포 권한 확인",
+  "occupation": "군 지휘",
   "gender": "여성",
   "stage": "S2",
-  "state": "S12",
-  "stateName": "신내운수",
-  "sourceRoute": "/world/Cast-State-12#인물-감국",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0306",
   "birthDate": "2082-07-04",
   "birthday": "07-04",
   "age": 44,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-12.json#/content/138"
-  ],
-  "familyTree": {
-    "personId": "K305",
-    "nodes": [
-      {
-        "id": "K305",
-        "personId": "K305",
-        "kind": "person",
-        "name": "감국",
-        "birthDate": "2082-07-04",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K305"
-          },
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-감국-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 동북 외곽로 순찰대, 하세온의 실무 담당자 자리는 야간 무단 도하 적발로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-감국-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0306"
-      },
-      {
-        "id": "FH-K305-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "감승우",
-        "lineage": {
-          "surname": "감",
-          "bongwan": "창원",
-          "clan": "ac10-cc3d-c6d0"
-        },
-        "birthDate": "2052-07-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-감국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2090,
-            "summary": "감승우는 암사 경비 초소에서 외곽 호송 인원·발포 권한 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-감국-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K305-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "감승경",
-        "lineage": {
-          "surname": "감",
-          "bongwan": "창원",
-          "clan": "ac10-cc3d-c6d0"
-        },
-        "birthDate": "2022-07-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-감국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "감승경은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-감국-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K305-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한현미",
-        "birthDate": "2052-07-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-감국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2090,
-            "summary": "한현미는 암사 경비 초소에서 외곽 호송 인원·발포 권한 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-감국-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K305-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현도",
-        "birthDate": "2022-07-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-감국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강현도는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-감국-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K305-P-01:K305:biological",
-        "from": "FH-K305-P-01",
-        "to": "K305",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-감국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K305-P-02:FH-K305-P-01:biological",
-        "from": "FH-K305-P-02",
-        "to": "FH-K305-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-감국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K305-M-01:K305:biological",
-        "from": "FH-K305-M-01",
-        "to": "K305",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-감국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K305-M-02:FH-K305-M-01:biological",
-        "from": "FH-K305-M-02",
-        "to": "FH-K305-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-감국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ac10-cc3d-c6d0",
+    "name": "창원 감씨",
+    "crest": "clan-crests/ac10-cc3d-c6d0.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "노원구 부대 지휘관 감국, 소령, 마흔네 살. 봉화산역에 머물며 수락산과 불암산 쪽 테두리 감시초소를 맡고, 화랑대 육군사관학교에서 나온 젊은 장교들을 초소에 하나씩 붙여 가르친다. 그녀는 탄약 등록 장부와 탄피 반납 장부가 한 발이라도 어긋나면 그 달 교대를 다시 짠다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "구 부대 지휘관",
+    "품계": "소령",
+    "생업": "군 지휘",
+    "일하는 역": "봉화산역",
+    "잠자는 역": "봉화산역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "노원구 부대 지휘관 감국, 소령, 마흔네 살. 봉화산역에 머물며 수락산과 불암산 쪽 테두리 감시초소를 맡고, 화랑대 육군사관학교에서 나온 젊은 장교들을 초소에 하나씩 붙여 가르친다. 그녀는 탄약 등록 장부와 탄피 반납 장부가 한 발이라도 어긋나면 그 달 교대를 다시 짠다.",
+    "관직": "직함 구 부대 지휘관. 직위 구 부대 지휘관 · 봉화산역. 품계 소령. 일하는 역 봉화산역."
+  },
+  "values": {
+    "권위": 35,
+    "개방": -20,
+    "무력": 20,
+    "물질": 0,
+    "공동": 25,
+    "원칙": 20,
+    "공개": 0,
+    "자격": 35,
+    "분산": -5,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": -15,
+    "위험": -35,
+    "과시": 20,
+    "지속": 40,
+    "지향": "동성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0306",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
+      "diplomacy": {
+        "base": 4,
+        "effective": 4
       },
-      "strategy": {
-        "base": 9,
-        "effective": 9
+      "martial": {
+        "base": 11,
+        "effective": 11
       },
-      "negotiation": {
+      "stewardship": {
+        "base": 4,
+        "effective": 4
+      },
+      "intrigue": {
         "base": 5,
         "effective": 5
       },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 8,
-        "effective": 8
-      },
       "learning": {
-        "base": 7,
-        "effective": 7
+        "base": 4,
+        "effective": 4
       },
       "prowess": {
-        "base": 7,
-        "effective": 7
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 10,
+        "effective": 10
       }
     },
-    "skills": [
-      {
-        "id": "k305-escort-patrol-allocation",
-        "name": {
-          "ko": "호송 순찰 배치",
-          "en": "Escort patrol allocation"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "k305-priority",
-        "name": {
-          "ko": "발포 자랑 거부",
-          "en": "Rejects boasts about firing"
-        },
-        "description": {
-          "ko": "감국은 칸별 인원을 나누고 봉인 명령 전 발포를 막는다. 순찰열차와 마주친 일화는 교전을 이겼다는 뜻이 아니다.",
-          "en": "Gamguk distributes personnel by car and blocks fire before sealed orders. Meeting a patrol train does not mean winning a fight."
-        },
-        "behavior": {
-          "ko": "호송 인원을 의료칸과 화물칸에 섞어 두고, 발포 권한은 장세화의 봉인된 명령 전에는 주지 않는다.",
-          "en": "Office. Rank: convoy hand. Title: northeast outer-road patrol, duty officer of Ha Seon. He mixed convoy personnel into the medical cars and the freight cars and granted firing authority only before Jang Sehwa's sealed order."
-        },
-        "stress": {
-          "ko": "순찰이 암사 순찰열차와 마주쳐 교전 한 방으로 중립이 전쟁으로 바뀌는 것.",
-          "en": "Fear. That the patrol would meet the Amsa patrol train and one exchange of fire would turn neutrality into war."
-        },
-        "relationship": {
-          "ko": "하세온의 지휘로 외곽로를 돌고, 문시온의 심사대 봉인을 길에서 확인한다. 배우진의 보호 검색을 순찰 원장에 남기지 않는다.",
-          "en": "Relations. Rounded the outer road under Ha Seon's command and confirmed Mun Sion's examination-stand seals on the road. He left none of Bae Woojin's protection searches in the patrol ledger."
-        },
-        "effects": []
-      },
-      {
-        "id": "k305-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 호송원. 직함은 동북 외곽로 순찰대, 하세온의 실무 담당자. 호송 인원을 의료칸과 화물칸에 섞어 두고, 발포 권한은 장세화의 봉인된 명령 전에는 주지 않는다.",
-          "en": "Office. Rank: convoy hand. Title: northeast outer-road patrol, duty officer of Ha Seon. He mixed convoy personnel into the medical cars and the freight cars and granted firing authority only before Jang Sehwa's sealed order."
-        },
-        "stress": {
-          "ko": "공포. 순찰이 암사 순찰열차와 마주쳐 교전 한 방으로 중립이 전쟁으로 바뀌는 것.",
-          "en": "Fear. That the patrol would meet the Amsa patrol train and one exchange of fire would turn neutrality into war."
-        },
-        "relationship": {
-          "ko": "관계. 하세온의 지휘로 외곽로를 돌고, 문시온의 심사대 봉인을 길에서 확인한다. 배우진의 보호 검색을 순찰 원장에 남기지 않는다.",
-          "en": "Relations. Rounded the outer road under Ha Seon's command and confirmed Mun Sion's examination-stand seals on the road. He left none of Bae Woojin's protection searches in the patrol ledger."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "감국은 칸별 인원을 나누고 봉인 명령 전 발포를 막는다. 순찰열차와 마주친 일화는 교전을 이겼다는 뜻이 아니다.",
-      "en": "Gamguk distributes personnel by car and blocks fire before sealed orders. Meeting a patrol train does not mean winning a fight."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,72 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ac10-cc3d-c6d0",
-    "name": "창원 감씨",
-    "crest": "clan-crests/ac10-cc3d-c6d0.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -10,
-    "개방": 35,
-    "무력": -15,
-    "물질": 5,
-    "공동": 20,
-    "원칙": 0,
-    "공개": 25,
-    "자격": 20,
-    "분산": 45,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": -15,
-    "위험": -35,
-    "과시": 20,
-    "지속": 40,
-    "지향": "동성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "외곽 호송 인원·발포 권한 확인",
-    "소속": "신내운수",
-    "품계": "호송원",
-    "직함": "동북 외곽로 순찰대, 하세온의 실무 담당자",
-    "가치관": "권위 −10 | 개방 35 | 무력 −15 | 물질 5 | 공동 20 | 원칙 0 | 공개 25 | 자격 20 | 분산 45 | 변혁 −5",
-    "욕망": "갈망 40 | 독점 −15 | 위험 −35 | 과시 20 | 지속 40 | 지향 동성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2082-07-04에 태어났다. 암사 경비 초소에서 자랐다. 2126년 개막에는 동북 외곽로 순찰대, 하세온의 실무 담당자 당직을 맡으며, 직위 인수 기록에는 야간 무단 도하 적발로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 감국의 외곽 호송 인원·발포 권한 확인 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
-    "관직": "품계 호송원. 직함은 동북 외곽로 순찰대, 하세온의 실무 담당자. 호송 인원을 의료칸과 화물칸에 섞어 두고, 발포 권한은 장세화의 봉인된 명령 전에는 주지 않는다.",
-    "일화": "겨울 배차 조사 중 호송대가 암사 순찰열차와 망우 외곽에서 정면으로 마주쳤다.",
-    "관계": "하세온의 지휘로 외곽로를 돌고, 문시온의 심사대 봉인을 길에서 확인한다. 배우진의 보호 검색을 순찰 원장에 남기지 않는다.",
-    "야망": "중립 호송의 외곽 순찰을 신내 호송대가 맡아 호송료 없는 동북 회랑의 실력을 증명하려 한다.",
-    "공포": "순찰이 암사 순찰열차와 마주쳐 교전 한 방으로 중립이 전쟁으로 바뀌는 것.",
-    "개입": "교전을 피하도록 신호기를 전달하거나, 발포 명령을 위조한 쪽을 추적할 수 있다."
-  },
-  "biography": "2082-07-04생인 감국은 낙관적인 상관의 공백을 현장에서 메우고, 적은 병력으로 긴 열차를 지키는 침묵을 안다. 발포를 자랑하는 사람을 호송에서 내린다.\n\n- 생업: 외곽 호송 인원·발포 권한 확인\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 동북 외곽로 순찰대, 하세온의 실무 담당자\n**생애.** 2082-07-04에 태어났다. 암사 경비 초소에서 자랐다. 2126년 개막에는 동북 외곽로 순찰대, 하세온의 실무 담당자 당직을 맡으며, 직위 인수 기록에는 야간 무단 도하 적발로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 감국의 외곽 호송 인원·발포 권한 확인 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 호송원. 직함은 동북 외곽로 순찰대, 하세온의 실무 담당자. 호송 인원을 의료칸과 화물칸에 섞어 두고, 발포 권한은 장세화의 봉인된 명령 전에는 주지 않는다.\n\n**일화.** 겨울 배차 조사 중 호송대가 암사 순찰열차와 망우 외곽에서 정면으로 마주쳤다.\n\n**관계.** 하세온의 지휘로 외곽로를 돌고, 문시온의 심사대 봉인을 길에서 확인한다. 배우진의 보호 검색을 순찰 원장에 남기지 않는다.\n\n**야망.** 중립 호송의 외곽 순찰을 신내 호송대가 맡아 호송료 없는 동북 회랑의 실력을 증명하려 한다.\n\n**공포.** 순찰이 암사 순찰열차와 마주쳐 교전 한 방으로 중립이 전쟁으로 바뀌는 것.\n\n**개입.** 교전을 피하도록 신호기를 전달하거나, 발포 명령을 위조한 쪽을 추적할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 35 | 무력 −15 | 물질 5 | 공동 20 | 원칙 0 | 공개 25 | 자격 20 | 분산 45 | 변혁 −5\n- 욕망: 갈망 40 | 독점 −15 | 위험 −35 | 과시 20 | 지속 40 | 지향 동성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-12"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "감국",
-        "type": "지휘",
-        "to": "하세온",
-        "basis": "하세온의 지휘로 외곽로를 돌고"
-      },
-      {
-        "from": "감국",
-        "type": "계약",
-        "to": "문시온",
-        "basis": "문시온의 심사대 봉인을 길에서 확인한다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

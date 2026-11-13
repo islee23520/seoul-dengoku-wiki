@@ -1,492 +1,105 @@
 {
   "id": "person-0317",
   "name": "창다흰",
-  "title": "약재 오염 이송 피해자 대표",
-  "position": "약재 오염 이송 피해자 대표",
+  "title": "동주민센터 선임 서기",
+  "position": "동주민센터 선임 서기 · 봉화산역",
   "characterId": "K316",
-  "rank": "호송원",
+  "rank": "주사",
   "commonTier": "T5",
-  "occupation": "약재 복용 시각·열 기록",
+  "occupation": "장부 기재",
   "gender": "남성",
   "stage": "S3",
-  "state": "S12",
-  "stateName": "신내운수",
-  "sourceRoute": "/world/Cast-State-12#인물-창다흰",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0317",
   "birthDate": "2096-01-24",
   "birthday": "01-24",
   "age": 30,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-12.json#/content/226"
-  ],
-  "familyTree": {
-    "personId": "K316",
-    "nodes": [
-      {
-        "id": "K316",
-        "personId": "K316",
-        "kind": "person",
-        "name": "창다흰",
-        "birthDate": "2096-01-24",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K316"
-          },
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-창다흰-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 약재 오염 이송 피해자 대표 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-창다흰-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0317"
-      },
-      {
-        "id": "FH-K316-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "창승석",
-        "lineage": {
-          "surname": "창",
-          "bongwan": "거창",
-          "clan": "cc3d-ac70-cc3d"
-        },
-        "birthDate": "2066-01-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-창다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2104,
-            "summary": "창승석은 제기동 의무소에서 약재 복용 시각·열 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-창다흰-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K316-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "창승준",
-        "lineage": {
-          "surname": "창",
-          "bongwan": "거창",
-          "clan": "cc3d-ac70-cc3d"
-        },
-        "birthDate": "2036-01-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-창다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "창승준은 제기동 의무소에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-창다흰-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K316-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "창승호",
-        "lineage": {
-          "surname": "창",
-          "bongwan": "거창",
-          "clan": "cc3d-ac70-cc3d"
-        },
-        "birthDate": "2006-01-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-창다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "창승호는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-창다흰-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K316-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤준진",
-        "birthDate": "2066-01-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-창다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2104,
-            "summary": "윤준진은 제기동 의무소에서 약재 복용 시각·열 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-창다흰-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K316-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한현도",
-        "birthDate": "2036-01-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-창다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "한현도는 제기동 의무소에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-창다흰-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K316-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "강준준",
-        "birthDate": "2006-01-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-창다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강준준은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-창다흰-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K316-P-01:K316:biological",
-        "from": "FH-K316-P-01",
-        "to": "K316",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-창다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K316-P-02:FH-K316-P-01:biological",
-        "from": "FH-K316-P-02",
-        "to": "FH-K316-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-창다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K316-P-03:FH-K316-P-02:biological",
-        "from": "FH-K316-P-03",
-        "to": "FH-K316-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-창다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K316-M-01:K316:biological",
-        "from": "FH-K316-M-01",
-        "to": "K316",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-창다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K316-M-02:FH-K316-M-01:biological",
-        "from": "FH-K316-M-02",
-        "to": "FH-K316-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-창다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K316-M-03:FH-K316-M-02:biological",
-        "from": "FH-K316-M-03",
-        "to": "FH-K316-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-창다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cc3d-ac70-cc3d",
+    "name": "거창 창씨",
+    "crest": "clan-crests/cc3d-ac70-cc3d.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "봉화산역 배급 창구에 앉는 창다흰은 서른 살, 주사 계급의 노원구 동주민센터 서기다. 그는 부양 식구 등급을 맡아, 열여섯 살 생일을 맞는 아이의 전승 기재 날짜를 한 달 앞서 가구에 알려 준다. 그날부터 아이의 끼니 몫이 바뀌기 때문에, 그는 생일 목록을 창구 서랍 맨 위에 둔다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "동주민센터 선임 서기",
+    "품계": "주사",
+    "생업": "장부 기재",
+    "일하는 역": "봉화산역",
+    "잠자는 역": "봉화산역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "봉화산역 배급 창구에 앉는 창다흰은 서른 살, 주사 계급의 노원구 동주민센터 서기다. 그는 부양 식구 등급을 맡아, 열여섯 살 생일을 맞는 아이의 전승 기재 날짜를 한 달 앞서 가구에 알려 준다. 그날부터 아이의 끼니 몫이 바뀌기 때문에, 그는 생일 목록을 창구 서랍 맨 위에 둔다.",
+    "관직": "직함 동주민센터 선임 서기. 직위 동주민센터 선임 서기 · 봉화산역. 품계 주사. 일하는 역 봉화산역."
+  },
+  "values": {
+    "권위": 10,
+    "개방": -5,
+    "무력": 5,
+    "물질": -5,
+    "공동": 20,
+    "원칙": 20,
+    "공개": -5,
+    "자격": 25,
+    "분산": 10,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": -5,
+    "독점": 5,
+    "위험": -10,
+    "과시": 5,
+    "지속": -15,
+    "지향": "양성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0317",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
       },
-      "strategy": {
-        "base": 5,
-        "effective": 5
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "negotiation": {
+      "stewardship": {
+        "base": 11,
+        "effective": 11
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
-      },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 9,
-        "effective": 9
       },
       "learning": {
-        "base": 7,
-        "effective": 7
+        "base": 8,
+        "effective": 8
       },
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 5,
-        "effective": 5
       }
     },
-    "skills": [
-      {
-        "id": "k316-dose-and-fever-record-review",
-        "name": {
-          "ko": "복용·열 기록 대조",
-          "en": "Dose and fever record review"
-        },
-        "rating": 45
-      }
-    ],
-    "traits": [
-      {
-        "id": "k316-priority",
-        "name": {
-          "ko": "피해 기록의 공개",
-          "en": "Public harm records"
-        },
-        "description": {
-          "ko": "창다흰은 가족의 해열제 피해 뒤 복용 시각과 열 기록을 맞춘다. 피해자 대표에게 의료 처방 숙련이나 본인 질병은 부여하지 않는다.",
-          "en": "Chang Daheun matches dose times and fever records after family harm. A victims’ representative receives no prescription proficiency or presumed personal disease."
-        },
-        "behavior": {
-          "ko": "복용 시각과 열 기록을 같은 책에 겹치고, 원산지 말목이 없는 상자는 대표 날인 없이 내리지 않는다.",
-          "en": "Office. Rank: convoy hand. Title: herb contamination transfer victims' representative. He overlaid dosage hours and fever records in one book and unloaded no box without origin inspection posts or the representative's stamp."
-        },
-        "stress": {
-          "ko": "피해자 명단이 외부 구매 장부로 팔려 자신이 은폐의 얼굴이 되는 것.",
-          "en": "Fear. That the victims' list would be sold as a great power's purchase ledger and he would become the face of the concealment."
-        },
-        "relationship": {
-          "ko": "전미리의 중증도 표에 피해자 줄을 올리고, 매하루의 제기동 피해 원장과 이름을 맞춘다. 류은비의 치료 원칙을 이송칸의 마지막 기준으로 둔다.",
-          "en": "Relations. Raised the victims' line onto Jeon Miri's severity table and matched names with Mae Haru's Jegi-dong harm ledger. Made Ryu Eunbi's care principles the last standard of the transfer cars."
-        },
-        "effects": []
-      },
-      {
-        "id": "k316-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 호송원. 직함은 약재 오염 이송 피해자 대표. 복용 시각과 열 기록을 같은 책에 겹치고, 원산지 말목이 없는 상자는 대표 날인 없이 내리지 않는다.",
-          "en": "Office. Rank: convoy hand. Title: herb contamination transfer victims' representative. He overlaid dosage hours and fever records in one book and unloaded no box without origin inspection posts or the representative's stamp."
-        },
-        "stress": {
-          "ko": "공포. 피해자 명단이 외부 구매 장부로 팔려 자신이 은폐의 얼굴이 되는 것.",
-          "en": "Fear. That the victims' list would be sold as a great power's purchase ledger and he would become the face of the concealment."
-        },
-        "relationship": {
-          "ko": "관계. 전미리의 중증도 표에 피해자 줄을 올리고, 매하루의 제기동 피해 원장과 이름을 맞춘다. 류은비의 치료 원칙을 이송칸의 마지막 기준으로 둔다.",
-          "en": "Relations. Raised the victims' line onto Jeon Miri's severity table and matched names with Mae Haru's Jegi-dong harm ledger. Made Ryu Eunbi's care principles the last standard of the transfer cars."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "창다흰은 가족의 해열제 피해 뒤 복용 시각과 열 기록을 맞춘다. 피해자 대표에게 의료 처방 숙련이나 본인 질병은 부여하지 않는다.",
-      "en": "Chang Daheun matches dose times and fever records after family harm. A victims’ representative receives no prescription proficiency or presumed personal disease."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,79 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "cc3d-ac70-cc3d",
-    "name": "거창 창씨",
-    "crest": "clan-crests/cc3d-ac70-cc3d.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -35,
-    "개방": 50,
-    "무력": -30,
-    "물질": 0,
-    "공동": 15,
-    "원칙": 0,
-    "공개": 20,
-    "자격": 10,
-    "분산": 60,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": -5,
-    "독점": 5,
-    "위험": -10,
-    "과시": 5,
-    "지속": -15,
-    "지향": "양성",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "약재 복용 시각·열 기록",
-    "소속": "신내운수",
-    "품계": "호송원",
-    "직함": "약재 오염 이송 피해자 대표",
-    "가치관": "권위 −35 | 개방 50 | 무력 −30 | 물질 0 | 공동 15 | 원칙 0 | 공개 20 | 자격 10 | 분산 60 | 변혁 0",
-    "욕망": "갈망 −5 | 독점 5 | 위험 −10 | 과시 5 | 지속 −15 | 지향 양성 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2096-01-24에 태어났다. 제기동 의무소에서 자랐다. 2126년 개막에는 약재 오염 이송 피해자 대표 당직을 맡으며, 직위 인수 기록에는 가짜 약 봉인으로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 창다흰의 약재 복용 시각·열 기록 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
-    "관직": "품계 호송원. 직함은 약재 오염 이송 피해자 대표. 복용 시각과 열 기록을 같은 책에 겹치고, 원산지 말목이 없는 상자는 대표 날인 없이 내리지 않는다.",
-    "일화": "여름의 탁수와 가짜 약이 퍼진 주간에 창다흰의 가족이 신내 의료열차에서 해열제를 먹고 쓰러졌다.",
-    "관계": "전미리의 중증도 표에 피해자 줄을 올리고, 매하루의 제기동 피해 원장과 이름을 맞춘다. 류은비의 치료 원칙을 이송칸의 마지막 기준으로 둔다.",
-    "야망": "오염 약으로 쓰러진 이송 명단을 공개 피해 원장으로 묶어 가짜 약이 다시 환승칸에 타지 못하게 하려 한다.",
-    "공포": "피해자 명단이 외부 구매 장부로 팔려 자신이 은폐의 얼굴이 되는 것.",
-    "개입": "오염 약 상자를 압수해 원장을 채우거나, 피해자 대표를 은폐 거래에 끌어들일 수 있다."
-  },
-  "biography": "2096-01-24생인 창다흰은 해열제 쓴맛을 아직도 혀에 남기고, 포장만 깨끗한 약을 들것에 올리지 않는다. 온화하나 열 곡선이 어긋나면 자리에서 일어나지 않는다.\n\n- 생업: 약재 복용 시각·열 기록\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 약재 오염 이송 피해자 대표\n**생애.** 2096-01-24에 태어났다. 제기동 의무소에서 자랐다. 2126년 개막에는 약재 오염 이송 피해자 대표 당직을 맡으며, 직위 인수 기록에는 가짜 약 봉인으로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 창다흰의 약재 복용 시각·열 기록 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 호송원. 직함은 약재 오염 이송 피해자 대표. 복용 시각과 열 기록을 같은 책에 겹치고, 원산지 말목이 없는 상자는 대표 날인 없이 내리지 않는다.\n\n**일화.** 여름의 탁수와 가짜 약이 퍼진 주간에 창다흰의 가족이 신내 의료열차에서 해열제를 먹고 쓰러졌다.\n\n**관계.** 전미리의 중증도 표에 피해자 줄을 올리고, 매하루의 제기동 피해 원장과 이름을 맞춘다. 류은비의 치료 원칙을 이송칸의 마지막 기준으로 둔다.\n\n**야망.** 오염 약으로 쓰러진 이송 명단을 공개 피해 원장으로 묶어 가짜 약이 다시 환승칸에 타지 못하게 하려 한다.\n\n**공포.** 피해자 명단이 외부 구매 장부로 팔려 자신이 은폐의 얼굴이 되는 것.\n\n**개입.** 오염 약 상자를 압수해 원장을 채우거나, 피해자 대표를 은폐 거래에 끌어들일 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 50 | 무력 −30 | 물질 0 | 공동 15 | 원칙 0 | 공개 20 | 자격 10 | 분산 60 | 변혁 0\n- 욕망: 갈망 −5 | 독점 5 | 위험 −10 | 과시 5 | 지속 −15 | 지향 양성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-12"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "창다흰",
-        "type": "계약",
-        "to": "전미리",
-        "basis": "전미리의 중증도 표에 피해자 줄을 올리고"
-      },
-      {
-        "from": "창다흰",
-        "type": "계약",
-        "to": "매하루",
-        "basis": "매하루의 제기동 피해 원장과 이름을 맞춘다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "매하루",
-        "type": "계약",
-        "to": "창다흰",
-        "basis": "창다흰의 이송 피해자 명단과 이름을 맞추고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

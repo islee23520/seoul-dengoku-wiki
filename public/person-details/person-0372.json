@@ -1,492 +1,105 @@
 {
   "id": "person-0372",
   "name": "석주아",
-  "title": "열여섯 깃발 관문 인준 관계자",
-  "position": "양군 각국 관문 인준 관계자",
+  "title": "장터 상인 우두머리",
+  "position": "장터 상인 우두머리 · 신용산역",
   "characterId": "K371",
-  "rank": "공동실무원",
+  "rank": "등재민",
   "commonTier": "T5",
-  "occupation": "깃발 인준일 기록·사후 추인 증인 확인",
+  "occupation": "장터 거래",
   "gender": "남성",
   "stage": "S3",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-석주아",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0372",
   "birthDate": "2102-06-04",
   "birthday": "06-04",
   "age": 24,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/248"
-  ],
-  "familyTree": {
-    "personId": "K371",
-    "nodes": [
-      {
-        "id": "K371",
-        "personId": "K371",
-        "kind": "person",
-        "name": "석주아",
-        "birthDate": "2102-06-04",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K371"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-석주아-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 양군 각국 관문 인준 관계자 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-석주아-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0372"
-      },
-      {
-        "id": "FH-K371-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "석승진",
-        "lineage": {
-          "surname": "석",
-          "bongwan": "충주",
-          "clan": "c11d-cda9-c8fc"
-        },
-        "birthDate": "2072-06-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-석주아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2110,
-            "summary": "석승진은 서울역 등기소에서 깃발 인준일 기록·사후 추인 증인 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-석주아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K371-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "석승현",
-        "lineage": {
-          "surname": "석",
-          "bongwan": "충주",
-          "clan": "c11d-cda9-c8fc"
-        },
-        "birthDate": "2042-06-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-석주아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "석승현은 서울역 등기소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-석주아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K371-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "석승영",
-        "lineage": {
-          "surname": "석",
-          "bongwan": "충주",
-          "clan": "c11d-cda9-c8fc"
-        },
-        "birthDate": "2012-06-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-석주아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "석승영은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-석주아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K371-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김준희",
-        "birthDate": "2072-06-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-석주아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2110,
-            "summary": "김준희는 서울역 등기소에서 깃발 인준일 기록·사후 추인 증인 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-석주아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K371-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준완",
-        "birthDate": "2042-06-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-석주아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "박준완은 서울역 등기소에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-석주아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K371-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준훈",
-        "birthDate": "2012-06-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-석주아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이준훈은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-석주아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K371-P-01:K371:biological",
-        "from": "FH-K371-P-01",
-        "to": "K371",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-석주아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K371-P-02:FH-K371-P-01:biological",
-        "from": "FH-K371-P-02",
-        "to": "FH-K371-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-석주아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K371-P-03:FH-K371-P-02:biological",
-        "from": "FH-K371-P-03",
-        "to": "FH-K371-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-석주아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K371-M-01:K371:biological",
-        "from": "FH-K371-M-01",
-        "to": "K371",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-석주아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K371-M-02:FH-K371-M-01:biological",
-        "from": "FH-K371-M-02",
-        "to": "FH-K371-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-석주아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K371-M-03:FH-K371-M-02:biological",
-        "from": "FH-K371-M-03",
-        "to": "FH-K371-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-석주아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c11d-cda9-c8fc",
+    "name": "충주 석씨",
+    "crest": "clan-crests/c11d-cda9-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "충주 석씨 석주아는 스물네 살에 용산구 장터의 상인 우두머리가 됐고, 신용산역에 기재돼 있다. 이촌 쪽 다리 끝 초소를 오가는 군 가구 사람들이 단골이라, 그가 자리를 정해 주는 좌판들은 막사로 들어가는 실과 바늘, 장갑 조각을 주로 판다. 나이 든 상인들이 자릿세 순서를 두고 젊은 그를 시험하지만, 그는 고시 값을 외워 대답한다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "장터 상인 우두머리",
+    "품계": "등재민",
+    "생업": "장터 거래",
+    "일하는 역": "신용산역",
+    "잠자는 역": "신용산역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "충주 석씨 석주아는 스물네 살에 용산구 장터의 상인 우두머리가 됐고, 신용산역에 기재돼 있다. 이촌 쪽 다리 끝 초소를 오가는 군 가구 사람들이 단골이라, 그가 자리를 정해 주는 좌판들은 막사로 들어가는 실과 바늘, 장갑 조각을 주로 판다. 나이 든 상인들이 자릿세 순서를 두고 젊은 그를 시험하지만, 그는 고시 값을 외워 대답한다.",
+    "관직": "직함 장터 상인 우두머리. 직위 장터 상인 우두머리 · 신용산역. 품계 등재민. 일하는 역 신용산역."
+  },
+  "values": {
+    "권위": 85,
+    "개방": -75,
+    "무력": 85,
+    "물질": 15,
+    "공동": 15,
+    "원칙": 25,
+    "공개": -40,
+    "자격": 5,
+    "분산": -70,
+    "변혁": -30
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": 35,
+    "위험": -20,
+    "과시": 25,
+    "지속": 25,
+    "지향": "무성향",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0372",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 8,
+        "effective": 8
+      },
+      "martial": {
+        "base": 4,
+        "effective": 4
+      },
+      "stewardship": {
+        "base": 9,
+        "effective": 9
+      },
+      "intrigue": {
         "base": 6,
         "effective": 6
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
       "learning": {
-        "base": 10,
-        "effective": 10
+        "base": 5,
+        "effective": 5
       },
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
       }
     },
-    "skills": [
-      {
-        "id": "authorization-date-comparison",
-        "name": {
-          "ko": "인준일 대조",
-          "en": "Authorization date comparison"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "소급 인준에 함을 잠근다",
-          "en": "Locks the chest against retroactive authorization"
-        },
-        "description": {
-          "ko": "다른 인준일을 발견해 함을 잠그고 당시 증인 서명으로 날짜를 가렸다. 문서 판단을 인준 권한의 확대와 구분한다.",
-          "en": "A conflicting date prompted locking the chest and checking contemporary witness signatures. Documentary judgment does not expand authorization powers."
-        },
-        "behavior": {
-          "ko": "헌장 사본의 접힌 자국까지 기억하고, 늦게 온 인준을 소급하자고 하면 함을 잠근다. 날짜를 고치는 손을 관문 위에서 용서하지 않는다.",
-          "en": "She remembered even the fold marks on charter copies and locked the box whenever someone proposed back-dating a late ratification. She never forgave, above the gate, a hand that changed a date."
-        },
-        "stress": {
-          "ko": "공포. 인준 함이 강국의 보호 문장으로 덧칠되어 관문 헌장이 하청 문서가 되는 것.",
-          "en": "Fear. That the ratification box would be painted over with a great power's protection clause and the gate charter would become a subcontract."
-        },
-        "relationship": {
-          "ko": "관계. 고서준이 맡긴 건국 인준 함을 지키고, 윤서린의 서울역 인준 날짜와 대조한다. 심가은의 공동승인 문서와 보관 주기를 맞춘다.",
-          "en": "Relations. Kept the founding ratification box entrusted by Go Seojun and cross-checked Yun Seorin's Seoul Station ratification dates. Matched custody cycles with Sim Gaeun's joint-approval papers."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 공동실무원. 직함은 양군 각국 관문 인준 관계자. 깃발 인준일을 능선 벽에 적고, 사후 추인 청구는 당시 증인 두 명이 다시 서지 않으면 받지 않는다.",
-          "en": "Office. Rank: sergeant. Title: states gate ratification party. She wrote the banner ratification days on the ridge wall and accepted no after-the-fact countersignature unless the two witnesses of the day signed again."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 공동실무원. 직함은 양군 각국 관문 인준 관계자. 깃발 인준일을 능선 벽에 적고, 사후 추인 청구는 당시 증인 두 명이 다시 서지 않으면 받지 않는다.",
-          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: states gate ratification party. She wrote the banner ratification days on the ridge wall and accepted no after-the-fact countersignature unless the two witnesses of the day signed again."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 인준 함이 강국의 보호 문장으로 덧칠되어 관문 헌장이 하청 문서가 되는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That the ratification box would be painted over with a great power's protection clause and the gate charter would become a subcontract."
-        },
-        "relationship": {
-          "ko": "관계. 고서준이 맡긴 건국 인준 함을 지키고, 윤서린의 서울역 인준 날짜와 대조한다. 심가은의 공동승인 문서와 보관 주기를 맞춘다.",
-          "en": "Relations. Kept the founding ratification box entrusted by Go Seojun and cross-checked Yun Seorin's Seoul Station ratification dates. Matched custody cycles with Sim Gaeun's joint-approval papers."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "다른 인준일을 발견해 함을 잠그고 당시 증인 서명으로 날짜를 가렸다. 문서 판단을 인준 권한의 확대와 구분한다.",
-      "en": "A conflicting date prompted locking the chest and checking contemporary witness signatures. Documentary judgment does not expand authorization powers."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,66 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c11d-cda9-c8fc",
-    "name": "충주 석씨",
-    "crest": "clan-crests/c11d-cda9-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 40,
-    "개방": -20,
-    "무력": 50,
-    "물질": 20,
-    "공동": 10,
-    "원칙": 5,
-    "공개": -15,
-    "자격": -10,
-    "분산": -20,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": 35,
-    "위험": -20,
-    "과시": 25,
-    "지속": 25,
-    "지향": "무성향",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "깃발 인준일 기록·사후 추인 증인 확인",
-    "소속": "아관사 양군 공동실무",
-    "품계": "공동실무원",
-    "직함": "양군 각국 관문 인준 관계자",
-    "가치관": "권위 40 | 개방 −20 | 무력 50 | 물질 20 | 공동 10 | 원칙 5 | 공개 −15 | 자격 −10 | 분산 −20 | 변혁 −10",
-    "욕망": "갈망 45 | 독점 35 | 위험 −20 | 과시 25 | 지속 25 | 지향 무성향 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2102-06-04에 태어났다. 2126년 개막 현재 양군 각국 관문 인준 관계자 직무를 맡아 깃발 인준일 기록·사후 추인 증인 확인 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의1동의 깃발 인준일 기록·사후 추인 증인 확인 창구가 석주아의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 공동실무원. 직함은 양군 각국 관문 인준 관계자. 깃발 인준일 기록·사후 추인 증인 확인 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
-    "일화": "고서준이 맡긴 건국 인준 함에서 한 깃발의 인준일이 윤서린의 서울역 날짜와 다르게 적혀 있다. 석주아는 함을 잠그고 능선 벽의 인준일 기록을 다시 읽으며, 심가은의 공동승인 문서를 꺼내 두 날짜 가운데 당시 증인의 서명과 맞는 쪽을 가린다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
-    "관계": "고서준이 맡긴 건국 인준 함을 지키고, 윤서린의 서울역 인준 날짜와 대조한다. 심가은의 공동승인 문서와 보관 주기를 맞춘다.",
-    "야망": "석주아는 양군 각국 관문 인준 관계자 직무에서 깃발 인준일 기록·사후 추인 증인 확인 기록을 공개 인계표와 맞물리게 하려 한다.",
-    "공포": "양군 각국 관문 인준 관계자 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
-    "개입": "접힌 목록을 공개해 빚을 드러내거나, 함이 덧칠되기 전에 원본을 호송할 수 있다. 석주아의 깃발 인준일 기록·사후 추인 증인 확인 원장을 대조해 다음 인계의 증거를 세울 수 있다."
-  },
-  "biography": "석주아는 깃발 인준일 기록·사후 추인 증인 확인 기록을 손에 익힌 아관사 양군 공동실무 인물이다. 헌장 사본의 접힌 자국까지 기억하고, 늦게 온 인준을 소급하자고 하면 함을 잠근다. 날짜를 고치는 손을 관문 위에서 용서하지 않는다.\n\n- 생업: 깃발 인준일 기록·사후 추인 증인 확인\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 각국 관문 인준 관계자\n**생애.** 2102-06-04에 태어났다. 2126년 개막 현재 양군 각국 관문 인준 관계자 직무를 맡아 깃발 인준일 기록·사후 추인 증인 확인 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의1동의 깃발 인준일 기록·사후 추인 증인 확인 창구가 석주아의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 공동실무원. 직함은 양군 각국 관문 인준 관계자. 깃발 인준일 기록·사후 추인 증인 확인 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 고서준이 맡긴 건국 인준 함에서 한 깃발의 인준일이 윤서린의 서울역 날짜와 다르게 적혀 있다. 석주아는 함을 잠그고 능선 벽의 인준일 기록을 다시 읽으며, 심가은의 공동승인 문서를 꺼내 두 날짜 가운데 당시 증인의 서명과 맞는 쪽을 가린다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 고서준이 맡긴 건국 인준 함을 지키고, 윤서린의 서울역 인준 날짜와 대조한다. 심가은의 공동승인 문서와 보관 주기를 맞춘다.\n\n**야망.** 석주아는 양군 각국 관문 인준 관계자 직무에서 깃발 인준일 기록·사후 추인 증인 확인 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 양군 각국 관문 인준 관계자 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 접힌 목록을 공개해 빚을 드러내거나, 함이 덧칠되기 전에 원본을 호송할 수 있다. 석주아의 깃발 인준일 기록·사후 추인 증인 확인 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 40 | 개방 −20 | 무력 50 | 물질 20 | 공동 10 | 원칙 5 | 공개 −15 | 자격 −10 | 분산 −20 | 변혁 −10\n- 욕망: 갈망 45 | 독점 35 | 위험 −20 | 과시 25 | 지속 25 | 지향 무성향 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-14"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": [
-      {
-        "from": "범하겸",
-        "type": "계약",
-        "to": "석주아",
-        "basis": "석주아의 관문 인준 잉크 마름과 대조한다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

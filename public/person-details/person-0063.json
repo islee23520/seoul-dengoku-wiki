@@ -1,399 +1,155 @@
 {
   "id": "person-0063",
   "name": "박진솔",
-  "title": "종자보존고 책임자",
-  "position": "종자보존고 책임자",
+  "title": "수서동 대피소장",
+  "position": "수서동 대피소장 · 아크",
   "characterId": "K063",
-  "rank": "대리",
-  "commonTier": "T5",
-  "occupation": "종자 보존·온습도 기록",
+  "rank": "대피소장",
+  "commonTier": "T3",
+  "occupation": "대피소 통솔",
   "gender": "여성",
   "stage": "S1",
-  "state": "S03",
-  "stateName": "태욱그룹",
-  "sourceRoute": "/world/Cast-State-03#인물-박진솔",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0063",
   "birthDate": "2067-11-09",
   "birthday": "11-09",
   "age": 59,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-03.json#/content/82",
-    "lore/characters/Cast-State-03.json#/content/84",
-    "lore/characters/Cast-State-03.json#/content/88"
-  ],
-  "familyTree": {
-    "personId": "K063",
-    "nodes": [
-      {
-        "id": "K063",
-        "personId": "K063",
-        "kind": "person",
-        "name": "박진솔",
-        "birthDate": "2067-11-09",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K063"
-          },
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-박진솔-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 종자보존고 책임자 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-박진솔-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0063"
-      },
-      {
-        "id": "FH-K063-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박승훈",
-        "lineage": {
-          "surname": "박",
-          "bongwan": "밀양",
-          "clan": "bc15-bc00-c591"
-        },
-        "birthDate": "2037-11-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-박진솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "박승훈은 대합실 당직에서 종자 보존·온습도 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-박진솔-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K063-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박승범",
-        "lineage": {
-          "surname": "박",
-          "bongwan": "밀양",
-          "clan": "bc15-bc00-c591"
-        },
-        "birthDate": "2007-11-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-박진솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박승범은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-박진솔-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K063-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정승섭",
-        "birthDate": "2037-11-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-박진솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "정승섭은 대합실 당직에서 종자 보존·온습도 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-박진솔-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K063-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승은",
-        "birthDate": "2007-11-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-박진솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤승은은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-박진솔-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K063-P-01:K063:biological",
-        "from": "FH-K063-P-01",
-        "to": "K063",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-박진솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K063-P-02:FH-K063-P-01:biological",
-        "from": "FH-K063-P-02",
-        "to": "FH-K063-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-박진솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K063-M-01:K063:biological",
-        "from": "FH-K063-M-01",
-        "to": "K063",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-박진솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K063-M-02:FH-K063-M-01:biological",
-        "from": "FH-K063-M-02",
-        "to": "FH-K063-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-박진솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bc15-bc00-c591",
+    "name": "밀양 박씨",
+    "crest": "clan-crests/bc15-bc00-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "수서 대피소의 명부는 강남에서 가장 길고, 박진솔은 그 명부를 쥔 대피소장이다. 수서가 강남 곁집의 본역이라 깊은 노선 층의 잠자리 차례도 그 명부로 정해진다. 씨앗 상자의 온도를 손수 재는 버릇은 둘째 부위를 받기 전부터였고, 쉰아홉이 된 지금도 셋째 교대에 창고 칸 불을 끄지 않는다. 2122년 겨울 이홍원이 수서에 비상 몫을 열어 준 일을 아직 갚지 못한 빚으로 여겨, 곁집 자리에서 그의 말에 쉽게 맞서지 못한다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "수서동 대피소장",
+    "품계": "대피소장",
+    "생업": "대피소 통솔",
+    "일하는 역": "수서역",
+    "잠자는 역": "수서역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "수서 대피소의 명부는 강남에서 가장 길고, 박진솔은 그 명부를 쥔 대피소장이다. 수서가 강남 곁집의 본역이라 깊은 노선 층의 잠자리 차례도 그 명부로 정해진다. 씨앗 상자의 온도를 손수 재는 버릇은 둘째 부위를 받기 전부터였고, 쉰아홉이 된 지금도 셋째 교대에 창고 칸 불을 끄지 않는다. 2122년 겨울 이홍원이 수서에 비상 몫을 열어 준 일을 아직 갚지 못한 빚으로 여겨, 곁집 자리에서 그의 말에 쉽게 맞서지 못한다.",
+    "관직": "직함 수서동 대피소장. 직위 수서동 대피소장 · 아크. 품계 대피소장. 일하는 역 수서역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": 5,
+    "무력": -20,
+    "물질": -50,
+    "공동": 20,
+    "원칙": 45,
+    "공개": -15,
+    "자격": 10,
+    "분산": -30,
+    "변혁": 60
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": -20,
+    "위험": 30,
+    "과시": 15,
+    "지속": -5,
+    "지향": "양성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0063",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "박진솔",
+        "type": "지휘",
+        "to": "오경재",
+        "basis": "강남 곁집장 오경재의 직속"
+      },
+      {
+        "from": "박진솔",
+        "type": "빚",
+        "to": "이홍원",
+        "basis": "2122년 겨울 이홍원이 수서 대피소에 열어 준 비상 몫을 아직 갚지 못한 빚"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "황노을",
+        "type": "지휘",
+        "to": "박진솔",
+        "basis": "수서동 대피소장 박진솔의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K423",
+    "name": "오경재",
+    "courtId": "court:K423",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K063",
+    "members": [
+      {
+        "personId": "K276",
+        "name": "황노을"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
+      },
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
+      "learning": {
         "base": 6,
         "effective": 6
-      },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
-      "learning": {
-        "base": 10,
-        "effective": 10
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "seed",
-        "name": {
-          "ko": "온습도·종자 출고 확인",
-          "en": "Temperature and seed-release checks"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "no-record-gaps",
-        "name": {
-          "ko": "기록 공백 불허",
-          "en": "No Record Gaps"
-        },
-        "description": {
-          "ko": "박진솔은 종자 보존의 온습도 기록에 한 칸의 공백도 허용하지 않는다.",
-          "en": "Park Jinsol tolerates no gaps in seed-preservation temperature and humidity records."
-        },
-        "behavior": {
-          "ko": "온도 로그가 끊긴 상자는 전시 징발 문서가 있어도 손대지 않고 출고에는 이중 날인을 요구한다.",
-          "en": "She leaves boxes with interrupted temperature logs untouched even under wartime requisition and requires two approvals for release."
-        },
-        "stress": {
-          "ko": "전력 단절이 보존고를 약탈 창고로 만들 우려가 있다면 온도 로그와 반출 조건을 더 엄격히 지킬 수 있다.",
-          "en": "If power loss threatens to turn the repository into a plunder storehouse, she may enforce temperature logs and release conditions more strictly."
-        },
-        "relationship": {
-          "ko": "정하린이 반출을 잠근다면 이중 날인 원칙에 따라 그 결정을 따를 수 있다.",
-          "en": "If Jeong Harin locks down removal, she may follow that decision in accordance with the dual-approval rule."
-        },
-        "effects": []
-      },
-      {
-        "id": "no-seed-trading",
-        "name": {
-          "ko": "종자 거래 거부",
-          "en": "No Seed Trading"
-        },
-        "description": {
-          "ko": "박진솔은 종자를 군량 협상물이나 보호비가 아닌 공동의 보존 자산으로 본다.",
-          "en": "Park Jinsol views seeds as a shared preservation asset rather than military bargaining stock or protection payments."
-        },
-        "behavior": {
-          "ko": "씨앗을 군량 협상물로 부르는 태도를 배척하고 종자 원장을 공개 자산으로 올리려 한다.",
-          "en": "She rejects treating seeds as military bargaining stock and seeks to establish the seed ledger as a public asset."
-        },
-        "stress": {
-          "ko": "냉온고 정지로 종자가 보호비로 흩어질 위험이 있다면 거래보다 보존 통제를 우선할 수 있다.",
-          "en": "If storage failure risks dispersing seeds as protection payments, she may prioritize preservation controls over trade."
-        },
-        "relationship": {
-          "ko": "남윤경의 가격 원장이 종자 시세를 매기기 시작한다면 적대적으로 돌아설 수 있다.",
-          "en": "She may turn hostile if Nam Yungyeong’s price ledger begins assigning market prices to seeds."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "온습도 로그와 이중 날인으로 종자 반출을 관리한다. 보존 업무를 평가하며 관로 대장 일화를 공학 전체 숙련으로 확대하지 않는다.",
-      "en": "He controls seed release through temperature logs and dual signatures. Preservation work is supported; a pipeline-register episode does not establish broad engineering."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -419,92 +175,52 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bc15-bc00-c591",
-    "name": "밀양 박씨",
-    "crest": "clan-crests/bc15-bc00-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -5,
-    "개방": 20,
-    "무력": -30,
-    "물질": 0,
-    "공동": 0,
-    "원칙": 55,
-    "공개": 30,
-    "자격": 45,
-    "분산": 0,
-    "변혁": 15
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": -20,
-    "위험": 30,
-    "과시": 15,
-    "지속": -5,
-    "지향": "양성",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "태욱그룹",
-    "생업": "종자 보존·온습도 기록",
-    "품계": "대리",
-    "직함": "종자보존고 책임자",
-    "업무": "가양1동. 박진솔은 보존고 온도 로그와 주민대표·안전심사의 두 날인을 대조한 뒤에야 종자 상자 출고를 판단한다.",
-    "가치관": "권위 −5 | 개방 20 | 무력 −30 | 물질 0 | 공동 0 | 원칙 55 | 공개 30 | 자격 45 | 분산 0 | 변혁 15",
-    "욕망": "갈망 45 | 독점 −20 | 위험 30 | 과시 15 | 지속 −5 | 지향 양성 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 박진솔은 보존고 온도 로그와 주민대표·안전심사의 두 날인을 대조한 뒤에야 종자 상자 출고를 판단한다.\n- 업무: 가양1동. 박진솔은 보존고 온도 로그와 주민대표·안전심사의 두 날인을 대조한 뒤에야 종자 상자 출고를 판단한다.",
-    "관직": "품계 대리. 직함은 종자보존고 책임자. 출고는 주민대표와 안전심사의 이중 날인만 인정하고, 전시 징발 문서라도 온도 로그가 끊긴 상자에는 손을 대지 않는다.",
-    "일화": "2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다.",
-    "관계": "정호준의 지식 공유 맹세를 종자 쪽에서 지키고, 정하린의 반출 잠금에 복종하며, 남윤경의 가격 원장이 종자 시세를 매기기 시작하면 원한으로 돌아선다.",
-    "야망": "종자 원장을 공동기술원장의 공개 자산으로 올려, 어느 교섭 상대도 한 해 농사의 유전자를 독점하지 못하게 한다.",
-    "공포": "전력 단절로 냉온고가 죽으면 보존고가 약탈 창고로 바뀌고 종자가 보호비로 흩어지는 것.",
-    "개입": "박진솔의 냉온고 전압표와 상자별 온도 로그를 맞춰 미확인 종자 반출을 멈추는 근거를 확인할 수 있다."
-  },
-  "biography": "인내심이 길고 온습도 기록의 한 칸 빈칸도 용납하지 않는다. 씨앗을 군량 협상물로 부르는 사람을 도둑으로 본다.\n\n- 소속: 태욱그룹\n- 생업: 종자 보존·온습도 기록\n- 품계: 대리\n- 직함: 종자보존고 책임자\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 박진솔은 보존고 온도 로그와 주민대표·안전심사의 두 날인을 대조한 뒤에야 종자 상자 출고를 판단한다.\n- 업무: 가양1동. 박진솔은 보존고 온도 로그와 주민대표·안전심사의 두 날인을 대조한 뒤에야 종자 상자 출고를 판단한다.\n\n**관직.** 품계 대리. 직함은 종자보존고 책임자. 출고는 주민대표와 안전심사의 이중 날인만 인정하고, 전시 징발 문서라도 온도 로그가 끊긴 상자에는 손을 대지 않는다.\n\n**일화.** 2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다.\n\n**관계.** 정호준의 지식 공유 맹세를 종자 쪽에서 지키고, 정하린의 반출 잠금에 복종하며, 남윤경의 가격 원장이 종자 시세를 매기기 시작하면 원한으로 돌아선다.\n\n**야망.** 종자 원장을 공동기술원장의 공개 자산으로 올려, 어느 교섭 상대도 한 해 농사의 유전자를 독점하지 못하게 한다.\n\n**공포.** 전력 단절로 냉온고가 죽으면 보존고가 약탈 창고로 바뀌고 종자가 보호비로 흩어지는 것.\n\n**개입.** 박진솔의 냉온고 전압표와 상자별 온도 로그를 맞춰 미확인 종자 반출을 멈추는 근거를 확인할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −30 | 물질 0 | 공동 0 | 원칙 55 | 공개 30 | 자격 45 | 분산 0 | 변혁 15\n- 욕망: 갈망 45 | 독점 −20 | 위험 30 | 과시 15 | 지속 −5 | 지향 양성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-03"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1168075000",
+      "name": {
+        "ko": "수서동"
+      },
+      "holderPersonId": "K063",
+      "directLiegePersonId": "K423",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1168075000",
+          "name": "수서동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
   ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "박진솔",
-        "type": "맹세",
-        "to": "정호준",
-        "basis": "지식 공유 맹세를 종자 반출로 지킴"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:수서",
+      "name": {
+        "ko": "수서역"
       },
-      {
-        "from": "박진솔",
-        "type": "원한",
-        "to": "남윤경",
-        "basis": "종자 시세를 가격 원장에 매기는 원한"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "양름태",
-        "type": "계약",
-        "to": "박진솔",
-        "basis": "양름태는 끊긴 온습도 기록의 시각과 상자 번호를 박진솔에게 넘긴다. 박진솔은 해당 상자를 확인해 온도 로그가 없는 구간의 물자가 정상 출고로 넘어가지 않게 한다."
+      "holderPersonId": "K276",
+      "directLiegePersonId": "K063",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "수서",
+        "stationName": "수서"
       },
-      {
-        "from": "곽강호",
-        "type": "계약",
-        "to": "박진솔",
-        "basis": "곽강호는 종자 기록과 공동기술원장에 올릴 목록을 대조한 사본을 박진솔 앞에서 읽는다. 박진솔은 품목과 보존 기록을 확인해 가격 원장의 종자 시세와 실제 보관 목록이 뒤섞이지 않게 한다."
-      },
-      {
-        "from": "서돌서",
-        "type": "계약",
-        "to": "박진솔",
-        "basis": "서돌서는 온도 로그가 끊긴 상자와 반출 잠금 번호를 박진솔에게 올린다. 박진솔은 그 상자의 보존 기록을 확인해 전시 징발 문서가 있어도 미확인 상자를 출고하지 않는다."
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1168075000",
+          "name": "수서동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "황노을",
+      "holderRoute": "/people/person-0277"
+    }
+  ]
 }

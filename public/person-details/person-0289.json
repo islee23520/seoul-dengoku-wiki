@@ -1,504 +1,149 @@
 {
   "id": "person-0289",
   "name": "용두봉",
-  "title": "궤도기병 정비창 거점장",
-  "position": "강남역 궤도기병 정비창 거점장",
+  "title": "반포1동 대피소장",
+  "position": "반포1동 대피소장 · 아크",
   "characterId": "K288",
-  "rank": "상무",
+  "rank": "대피소장",
   "commonTier": "T3",
-  "occupation": "궤도기병 출격 전 정비·무장 탑재 확인",
+  "occupation": "대피소 통솔",
   "gender": "남성",
   "stage": "S2",
-  "state": "S11",
-  "stateName": "성하그룹",
-  "sourceRoute": "/world/Cast-State-11#인물-용두봉",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0289",
   "birthDate": "2097-10-19",
   "birthday": "10-19",
   "age": 29,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-11.json#/content/17"
-  ],
-  "familyTree": {
-    "personId": "K288",
-    "nodes": [
-      {
-        "id": "K288",
-        "personId": "K288",
-        "kind": "person",
-        "name": "용두봉",
-        "birthDate": "2097-10-19",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K288"
-          },
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용두봉-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 강남역 차량기지에서 자랐다. 강남역 궤도기병 정비창 거점장 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-용두봉-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0289"
-      },
-      {
-        "id": "FH-K288-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "용승경",
-        "lineage": {
-          "surname": "용",
-          "bongwan": "홍천",
-          "clan": "c6a9-d64d-cc9c"
-        },
-        "birthDate": "2067-10-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "용승경은 강남역 차량기지에서 궤도기병 출격 전 정비·무장 탑재 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-용두봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K288-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "용승수",
-        "lineage": {
-          "surname": "용",
-          "bongwan": "홍천",
-          "clan": "c6a9-d64d-cc9c"
-        },
-        "birthDate": "2037-10-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "용승수는 강남역 차량기지에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-용두봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K288-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "용승은",
-        "lineage": {
-          "surname": "용",
-          "bongwan": "홍천",
-          "clan": "c6a9-d64d-cc9c"
-        },
-        "birthDate": "2007-10-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "용승은은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-용두봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K288-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준민",
-        "birthDate": "2067-10-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "박준민은 강남역 차량기지에서 궤도기병 출격 전 정비·무장 탑재 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-용두봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K288-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준준",
-        "birthDate": "2037-10-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "이준준은 강남역 차량기지에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-용두봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K288-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준영",
-        "birthDate": "2007-10-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최준영은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-용두봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K288-P-01:K288:biological",
-        "from": "FH-K288-P-01",
-        "to": "K288",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K288-P-02:FH-K288-P-01:biological",
-        "from": "FH-K288-P-02",
-        "to": "FH-K288-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K288-P-03:FH-K288-P-02:biological",
-        "from": "FH-K288-P-03",
-        "to": "FH-K288-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K288-M-01:K288:biological",
-        "from": "FH-K288-M-01",
-        "to": "K288",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K288-M-02:FH-K288-M-01:biological",
-        "from": "FH-K288-M-02",
-        "to": "FH-K288-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K288-M-03:FH-K288-M-02:biological",
-        "from": "FH-K288-M-03",
-        "to": "FH-K288-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용두봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c6a9-d64d-cc9c",
+    "name": "홍천 용씨",
+    "crest": "clan-crests/c6a9-d64d-cc9c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "논현역 대합실 탁자 위에서, 용두봉은 첫 교대마다 반포1동 여러 역의 명부를 한 장으로 다시 옮긴다. 동 안에 역이 여럿이라 명부가 갈라지기 쉬워서다. 둘째 부위를 받은 이듬해, 스물아홉에 그는 이 동의 대피소를 맡았다. 구반포 경계에서 넘어와 아직 세어지지 않은 사람이 반포 쪽에 머물면 그 이름은 따로 한 장에 적어 서초 곁집장 정유라에게 가장 먼저 올린다. 명부 쓰는 법은 홍천 용씨 어른인 양재1동 대피소장 용모에게서 처음 배웠다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "반포1동 대피소장",
+    "품계": "대피소장",
+    "생업": "대피소 통솔",
+    "일하는 역": "논현역",
+    "잠자는 역": "논현역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "논현역 대합실 탁자 위에서, 용두봉은 첫 교대마다 반포1동 여러 역의 명부를 한 장으로 다시 옮긴다. 동 안에 역이 여럿이라 명부가 갈라지기 쉬워서다. 둘째 부위를 받은 이듬해, 스물아홉에 그는 이 동의 대피소를 맡았다. 구반포 경계에서 넘어와 아직 세어지지 않은 사람이 반포 쪽에 머물면 그 이름은 따로 한 장에 적어 서초 곁집장 정유라에게 가장 먼저 올린다. 명부 쓰는 법은 홍천 용씨 어른인 양재1동 대피소장 용모에게서 처음 배웠다.",
+    "관직": "직함 반포1동 대피소장. 직위 반포1동 대피소장 · 아크. 품계 대피소장. 일하는 역 논현역."
+  },
+  "values": {
+    "권위": 55,
+    "개방": -45,
+    "무력": 30,
+    "물질": -15,
+    "공동": 40,
+    "원칙": 0,
+    "공개": -45,
+    "자격": 40,
+    "분산": -30,
+    "변혁": 35
+  },
+  "desire": {
+    "갈망": 35,
+    "독점": 30,
+    "위험": -30,
+    "과시": 5,
+    "지속": 30,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0289",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "용두봉",
+        "type": "지휘",
+        "to": "정유라",
+        "basis": "서초 곁집장 정유라의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "봉복",
+        "type": "지휘",
+        "to": "용두봉",
+        "basis": "반포1동 대피소장 용두봉의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K398",
+    "name": "정유라",
+    "courtId": "court:K398",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K288",
+    "members": [
+      {
+        "personId": "K279",
+        "name": "봉복"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 4,
-        "effective": 4
-      },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 8,
-        "effective": 8
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
       }
     },
-    "skills": [
-      {
-        "id": "k288-predeparture-inspection",
-        "name": {
-          "ko": "출격 전 점검",
-          "en": "Predeparture inspection"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k288-priority",
-        "name": {
-          "ko": "점검을 앞세움",
-          "en": "Inspection first"
-        },
-        "description": {
-          "ko": "용두봉은 출격 목록과 차륜 표본을 정비 대기열에 연결한다. 제동 불량과 무단 무장을 같은 승인 문제로 본다.",
-          "en": "Yongdubong connects departure lists and wheel samples to the maintenance queue, treating brake defects and unauthorized armament as approval problems."
-        },
-        "behavior": {
-          "ko": "출격 전 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다.",
-          "en": "Office. Rank: section chief. Title: rail cavalry repair shop outpost chief. He made the pre-sortie inspection mandatory and allowed arms loading only with the joint stamp of the Elder and the auditor."
-        },
-        "stress": {
-          "ko": "제동 불량 한 대가 정비창 서명으로 나가 북문 호송 전체가 멈추는 것.",
-          "en": "Fear. That one car with bad brakes would go out under the repair shop's signature and the whole north gate convoy would stop."
-        },
-        "relationship": {
-          "ko": "권도하의 출격 목록을 정비창에서 받고, 두모의 차륜 표본을 기병 칸에 쓴다. 용모의 북문 순찰차만 우선 고친다.",
-          "en": "Relations. Received Gwon Doha's sortie lists at the repair shop and used Du Mo's wheel specimens in the cavalry cars. Repaired Yong Mo's north gate patrol cars first only."
-        },
-        "effects": []
-      },
-      {
-        "id": "k288-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 상무. 직함은 강남역 궤도기병 정비창 거점장. 출격 전 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다.",
-          "en": "Office. Rank: section chief. Title: rail cavalry repair shop outpost chief. He made the pre-sortie inspection mandatory and allowed arms loading only with the joint stamp of the Elder and the auditor."
-        },
-        "stress": {
-          "ko": "공포. 제동 불량 한 대가 정비창 서명으로 나가 북문 호송 전체가 멈추는 것.",
-          "en": "Fear. That one car with bad brakes would go out under the repair shop's signature and the whole north gate convoy would stop."
-        },
-        "relationship": {
-          "ko": "관계. 권도하의 출격 목록을 정비창에서 받고, 두모의 차륜 표본을 기병 칸에 쓴다. 용모의 북문 순찰차만 우선 고친다.",
-          "en": "Relations. Received Gwon Doha's sortie lists at the repair shop and used Du Mo's wheel specimens in the cavalry cars. Repaired Yong Mo's north gate patrol cars first only."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "용두봉은 출격 목록과 차륜 표본을 정비 대기열에 연결한다. 제동 불량과 무단 무장을 같은 승인 문제로 본다.",
-      "en": "Yongdubong connects departure lists and wheel samples to the maintenance queue, treating brake defects and unauthorized armament as approval problems."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -524,72 +169,52 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c6a9-d64d-cc9c",
-    "name": "홍천 용씨",
-    "crest": "clan-crests/c6a9-d64d-cc9c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 30,
-    "개방": -30,
-    "무력": 20,
-    "물질": 35,
-    "공동": 20,
-    "원칙": 10,
-    "공개": 0,
-    "자격": 75,
-    "분산": 0,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 35,
-    "독점": 30,
-    "위험": -30,
-    "과시": 5,
-    "지속": 30,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "궤도기병 출격 전 정비·무장 탑재 확인",
-    "소속": "성하그룹",
-    "품계": "상무",
-    "직함": "강남역 궤도기병 정비창 거점장",
-    "가치관": "권위 30 | 개방 −30 | 무력 20 | 물질 35 | 공동 20 | 원칙 10 | 공개 0 | 자격 75 | 분산 0 | 변혁 −10",
-    "욕망": "갈망 35 | 독점 30 | 위험 −30 | 과시 5 | 지속 30 | 지향 이성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "강남역 차량기지에서 자랐다. 강남역 궤도기병 정비창 거점장 자리는 탈선 직전 결함 보고로 열렸다.\n- 용두봉은 서초4동에서 궤도기병 출격 전 정비·무장 탑재 확인 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다. 권도하의 출격 목록을 정비창에서 받고, 두모의 차륜 표본을 기병 칸에 쓴다. 용모의 북문 순찰차만 우선 고친다",
-    "관직": "품계 상무. 직함은 강남역 궤도기병 정비창 거점장. 출격 전 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다.",
-    "일화": "시험 차륜 결함 직후 같은 로트의 제동이 정비창 대기열에 남아 있었다.",
-    "관계": "권도하의 출격 목록을 정비창에서 받고, 두모의 차륜 표본을 기병 칸에 쓴다. 용모의 북문 순찰차만 우선 고친다.",
-    "야망": "궤도기병 정비창을 기지 고유 직능으로 남겨 사택 민병이 공구를 집어 병영을 만들지 못하게 한다.",
-    "공포": "제동 불량 한 대가 정비창 서명으로 나가 북문 호송 전체가 멈추는 것.",
-    "개입": "대기열 제동을 현장에서 갈아 끼우거나, 무단 무장을 정비창 원장에 올릴 수 있다."
-  },
-  "biography": "출격 전 차륜을 보지 않은 기병을 빈 칸으로 돌리고, 숙련 없는 무장 탑재를 사고로 기록한다. 정비창의 침묵을 전투의 일부로 본다.\n\n- 생업: 궤도기병 출격 전 정비·무장 탑재 확인\n- 소속: 성하그룹\n- 품계: 상무\n- 직함: 강남역 궤도기병 정비창 거점장\n**생애.** 강남역 차량기지에서 자랐다. 강남역 궤도기병 정비창 거점장 자리는 탈선 직전 결함 보고로 열렸다.\n- 용두봉은 서초4동에서 궤도기병 출격 전 정비·무장 탑재 확인 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다. 권도하의 출격 목록을 정비창에서 받고, 두모의 차륜 표본을 기병 칸에 쓴다. 용모의 북문 순찰차만 우선 고친다\n\n**관직.** 품계 상무. 직함은 강남역 궤도기병 정비창 거점장. 출격 전 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다.\n\n**일화.** 시험 차륜 결함 직후 같은 로트의 제동이 정비창 대기열에 남아 있었다.\n\n**관계.** 권도하의 출격 목록을 정비창에서 받고, 두모의 차륜 표본을 기병 칸에 쓴다. 용모의 북문 순찰차만 우선 고친다.\n\n**야망.** 궤도기병 정비창을 기지 고유 직능으로 남겨 사택 민병이 공구를 집어 병영을 만들지 못하게 한다.\n\n**공포.** 제동 불량 한 대가 정비창 서명으로 나가 북문 호송 전체가 멈추는 것.\n\n**개입.** 대기열 제동을 현장에서 갈아 끼우거나, 무단 무장을 정비창 원장에 올릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 −30 | 무력 20 | 물질 35 | 공동 20 | 원칙 10 | 공개 0 | 자격 75 | 분산 0 | 변혁 −10\n- 욕망: 갈망 35 | 독점 30 | 위험 −30 | 과시 5 | 지속 30 | 지향 이성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-11"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "용두봉",
-        "type": "계약",
-        "to": "권도하",
-        "basis": "권도하의 출격 목록을 정비창에서 받고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1165056000",
+      "name": {
+        "ko": "반포1동"
       },
-      {
-        "from": "용두봉",
-        "type": "계약",
-        "to": "두모",
-        "basis": "두모의 차륜 표본을 기병 칸에 쓴다"
-      }
-    ],
-    "incoming": []
-  }
+      "holderPersonId": "K288",
+      "directLiegePersonId": "K398",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1165056000",
+          "name": "반포1동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ],
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:논현",
+      "name": {
+        "ko": "논현역"
+      },
+      "holderPersonId": "K279",
+      "directLiegePersonId": "K288",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "논현",
+        "stationName": "논현"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1165056000",
+          "name": "반포1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "봉복",
+      "holderRoute": "/people/person-0280"
+    }
+  ]
 }

@@ -1,495 +1,108 @@
 {
   "id": "person-0420",
   "name": "범하겸",
-  "title": "열여섯 깃발 인준 감사 보조",
-  "position": "열여섯 깃발 인준 감사 보조",
+  "title": "정비공",
+  "position": "정비공 · 개롱역",
   "characterId": "K419",
-  "rank": "미등록",
+  "rank": "정비공",
   "commonTier": "T5",
-  "occupation": "인준 잉크 마름·직인 위치 보조 기록",
+  "occupation": "이식 정비",
   "gender": "남성",
   "stage": "S3",
-  "state": "S16",
-  "stateName": "정동노총",
-  "sourceRoute": "/world/Cast-State-16#인물-범하겸",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0420",
   "birthDate": "2091-03-11",
   "birthday": "03-11",
   "age": 35,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-16.json#/content/225",
-    "lore/characters/Cast-State-16.json#/content/226"
-  ],
-  "familyTree": {
-    "personId": "K419",
-    "nodes": [
-      {
-        "id": "K419",
-        "personId": "K419",
-        "kind": "person",
-        "name": "범하겸",
-        "birthDate": "2091-03-11",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K419"
-          },
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-범하겸-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 각국 인준 감사 보조 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-범하겸-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0420"
-      },
-      {
-        "id": "FH-K419-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "범승우",
-        "lineage": {
-          "surname": "범",
-          "bongwan": "금성",
-          "clan": "bc94-ae08-c131"
-        },
-        "birthDate": "2061-03-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-범하겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2099,
-            "summary": "범승우는 서울역 등기소에서 인준 잉크 마름·직인 위치 보조 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-범하겸-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K419-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "범승경",
-        "lineage": {
-          "surname": "범",
-          "bongwan": "금성",
-          "clan": "bc94-ae08-c131"
-        },
-        "birthDate": "2031-03-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-범하겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2069,
-            "summary": "범승경은 서울역 등기소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-범하겸-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K419-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "범승수",
-        "lineage": {
-          "surname": "범",
-          "bongwan": "금성",
-          "clan": "bc94-ae08-c131"
-        },
-        "birthDate": "2001-03-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-범하겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "범승수는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-범하겸-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K419-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김준욱",
-        "birthDate": "2061-03-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-범하겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2099,
-            "summary": "김준욱은 서울역 등기소에서 인준 잉크 마름·직인 위치 보조 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-범하겸-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K419-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준란",
-        "birthDate": "2031-03-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-범하겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2069,
-            "summary": "박준란은 서울역 등기소에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-범하겸-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K419-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준란",
-        "birthDate": "2001-03-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-범하겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이준란은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-범하겸-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K419-P-01:K419:biological",
-        "from": "FH-K419-P-01",
-        "to": "K419",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-범하겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K419-P-02:FH-K419-P-01:biological",
-        "from": "FH-K419-P-02",
-        "to": "FH-K419-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-범하겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K419-P-03:FH-K419-P-02:biological",
-        "from": "FH-K419-P-03",
-        "to": "FH-K419-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-범하겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K419-M-01:K419:biological",
-        "from": "FH-K419-M-01",
-        "to": "K419",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-범하겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K419-M-02:FH-K419-M-01:biological",
-        "from": "FH-K419-M-02",
-        "to": "FH-K419-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-범하겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K419-M-03:FH-K419-M-02:biological",
-        "from": "FH-K419-M-03",
-        "to": "FH-K419-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-범하겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bc94-ae08-c131",
+    "name": "금성 범씨",
+    "crest": "clan-crests/bc94-ae08-c131.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "개롱역의 정비 밥 솥은 범하겸이 지킨다. 어느 정비공 집안이 오늘 누구에게 먼저 떠 먹였는지를 그가 기억하기에, 개롱에서는 한 솥끼리의 다툼이 그에게서 끝난다. 자기 끼니는 솥을 비운 뒤에야 뜨는데, 서른다섯 해 동안 하나뿐인 부위를 받고 앓던 때에도 그 차례만은 바꾸지 않았다고 한다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "정비공",
+    "품계": "정비공",
+    "생업": "이식 정비",
+    "일하는 역": "개롱역",
+    "잠자는 역": "개롱역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "개롱역의 정비 밥 솥은 범하겸이 지킨다. 어느 정비공 집안이 오늘 누구에게 먼저 떠 먹였는지를 그가 기억하기에, 개롱에서는 한 솥끼리의 다툼이 그에게서 끝난다. 자기 끼니는 솥을 비운 뒤에야 뜨는데, 서른다섯 해 동안 하나뿐인 부위를 받고 앓던 때에도 그 차례만은 바꾸지 않았다고 한다.",
+    "관직": "직함 정비공. 직위 정비공 · 개롱역. 품계 정비공. 일하는 역 개롱역."
+  },
+  "values": {
+    "권위": -5,
+    "개방": 15,
+    "무력": -10,
+    "물질": -45,
+    "공동": 30,
+    "원칙": 45,
+    "공개": 0,
+    "자격": -10,
+    "분산": 5,
+    "변혁": 55
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": 35,
+    "위험": 35,
+    "과시": -20,
+    "지속": 30,
+    "지향": "무성향",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0420",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
-      "learning": {
-        "base": 10,
-        "effective": 10
-      },
-      "prowess": {
+      "martial": {
         "base": 3,
         "effective": 3
       },
-      "endurance": {
+      "stewardship": {
+        "base": 7,
+        "effective": 7
+      },
+      "intrigue": {
         "base": 6,
         "effective": 6
-      }
-    },
-    "skills": [
-      {
-        "id": "stamp-timing-check",
-        "name": {
-          "ko": "날인 시각 대조",
-          "en": "Stamp timing comparison"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "소급 날인 거부",
-          "en": "Rejects backdated stamping"
-        },
-        "description": {
-          "ko": "늦은 날인을 소급하라는 요청에 직인을 보관하고 고친 사본을 밖에서 말렸다. 잉크 마름 시각을 다른 인준 기록과 대조한다.",
-          "en": "Stores the stamp after a backdating request and dries altered copies outside. Compares ink drying time with other ratification records."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 소급 날인 거부을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "날짜 수정 요청 때 보조 직인을 잠글 수 있다.",
-          "en": "May lock away the auxiliary stamp after altered-date requests."
-        },
-        "relationship": {
-          "ko": "석주아의 잉크 기록과 맞추고 윤서린의 젖은 목록은 분리한다.",
-          "en": "Matches Seok Jua’s ink records and separates Yun Seorin’s damp lists."
-        },
-        "effects": []
       },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "보조 직인이 마른 뒤에만 깃발을 함 걸이에 매달아, 서울역 날짜만으로 명목이 팔리지 않게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "보조 직인이 외부 통제 문장 아래에 숨어 조합원 선거관리회가 빈 의자가 되는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "석주아의 잉크 기록과 맞추고 윤서린의 젖은 목록은 분리한다.",
-          "en": "Matches Seok Jua’s ink records and separates Yun Seorin’s damp lists."
-        },
-        "effects": []
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "늦은 날인을 소급하라는 요청에 직인을 보관하고 고친 사본을 밖에서 말렸다. 잉크 마름 시각을 다른 인준 기록과 대조한다.",
-      "en": "Stores the stamp after a backdating request and dries altered copies outside. Compares ink drying time with other ratification records."
     },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -499,7 +112,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -525,66 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bc94-ae08-c131",
-    "name": "금성 범씨",
-    "crest": "clan-crests/bc94-ae08-c131.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -30,
-    "개방": 30,
-    "무력": -20,
-    "물질": 5,
-    "공동": 10,
-    "원칙": 55,
-    "공개": 45,
-    "자격": 25,
-    "분산": 35,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": 35,
-    "위험": 35,
-    "과시": -20,
-    "지속": 30,
-    "지향": "무성향",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "인준 잉크 마름·직인 위치 보조 기록",
-    "소속": "정동노총",
-    "공동체 역할": "조합원",
-    "직무": "각국 인준 감사 보조",
-    "가치관": "권위 −30 | 개방 30 | 무력 −20 | 물질 5 | 공동 10 | 원칙 55 | 공개 45 | 자격 25 | 분산 35 | 변혁 10",
-    "욕망": "갈망 15 | 독점 35 | 위험 35 | 과시 −20 | 지속 30 | 지향 무성향 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2091-03-11에 태어난 범하겸은 영구 겨울의 시청역 조합 작업장에서 각국 인준 감사 보조 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 범하겸은 소공동의 시청역 조합 작업장에서 각국 인준 감사 보조 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "직무": "공동체 역할은 조합원이며 직무는 각국 인준 감사 보조이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.",
-    "일화": "정유라가 맡긴 건국 인준 함에 늦은 날인을 소급해 달라는 요청이 날짜를 고친 사본과 함께 들어온다. 범하겸은 보조 직인을 서랍에 넣고 사본을 함 바깥 걸이에 매달아 말리며, 잉크 마름 시각을 석주아의 관문 인준 기록과 대조한다.",
-    "관계": "범하겸의 기존 관계 기록은 다음과 같다. 정유라가 맡긴 건국 인준 함의 보조 직인을 지키고, 석주아의 관문 인준 잉크 마름과 대조한다. 윤서린의 서울역 목록이 습도로 번지면 수서 사본만 따로 말린다.",
-    "목표": "범하겸은 각국 인준 감사 보조 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.",
-    "공포": "각국 인준 감사 보조 업무의 서명이나 인계 기록이 바뀌어 범하겸의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.",
-    "개입": "범하겸은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다."
-  },
-  "biography": "범하겸은 영구 겨울의 시청역 조합 작업장에서 각국 인준 감사 보조 업무 기록과 공개 표결 서명을 먼저 대조한다. 급수·통행·계약 일정이 겹치는 날에는 접수 시각과 인계 순서를 같은 장부에 남긴다.\n\n- 생업: 인준 잉크 마름·직인 위치 보조 기록\n- 소속: 정동노총\n- 공동체 역할: 조합원\n- 직무: 각국 인준 감사 보조\n**생애.** 2091-03-11에 태어난 범하겸은 영구 겨울의 시청역 조합 작업장에서 각국 인준 감사 보조 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 범하겸은 소공동의 시청역 조합 작업장에서 각국 인준 감사 보조 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**직무.** 공동체 역할은 조합원이며 직무는 각국 인준 감사 보조이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.\n\n**일화.** 정유라가 맡긴 건국 인준 함에 늦은 날인을 소급해 달라는 요청이 날짜를 고친 사본과 함께 들어온다. 범하겸은 보조 직인을 서랍에 넣고 사본을 함 바깥 걸이에 매달아 말리며, 잉크 마름 시각을 석주아의 관문 인준 기록과 대조한다.\n\n**관계.** 범하겸의 기존 관계 기록은 다음과 같다. 정유라가 맡긴 건국 인준 함의 보조 직인을 지키고, 석주아의 관문 인준 잉크 마름과 대조한다. 윤서린의 서울역 목록이 습도로 번지면 수서 사본만 따로 말린다.\n\n**목표.** 범하겸은 각국 인준 감사 보조 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.\n\n**공포.** 각국 인준 감사 보조 업무의 서명이나 인계 기록이 바뀌어 범하겸의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.\n\n**개입.** 범하겸은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 30 | 무력 −20 | 물질 5 | 공동 10 | 원칙 55 | 공개 45 | 자격 25 | 분산 35 | 변혁 10\n- 욕망: 갈망 15 | 독점 35 | 위험 35 | 과시 −20 | 지속 30 | 지향 무성향 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-16"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "범하겸",
-        "type": "계약",
-        "to": "석주아",
-        "basis": "석주아의 관문 인준 잉크 마름과 대조한다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

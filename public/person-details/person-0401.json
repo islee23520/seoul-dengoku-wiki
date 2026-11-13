@@ -1,515 +1,156 @@
 {
   "id": "person-0401",
   "name": "곽은재",
-  "title": "감사 보조",
-  "position": "감사 보조",
+  "title": "천호역 정비장",
+  "position": "천호역 정비장 · 아크",
   "characterId": "K400",
-  "rank": "미등록",
-  "commonTier": "T5",
-  "occupation": "급수 중단·호송 지연 감사표 기록",
+  "rank": "정비장",
+  "commonTier": "T4",
+  "occupation": "정비대 통솔",
   "gender": "여성",
   "stage": "S1",
-  "state": "S16",
-  "stateName": "정동노총",
-  "sourceRoute": "/world/Cast-State-16#인물-곽은재",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0401",
   "birthDate": "2099-12-11",
   "birthday": "12-11",
   "age": 27,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-16.json#/content/50",
-    "lore/characters/Cast-State-16.json#/content/52"
-  ],
-  "familyTree": {
-    "personId": "K400",
-    "nodes": [
-      {
-        "id": "K400",
-        "personId": "K400",
-        "kind": "person",
-        "name": "곽은재",
-        "birthDate": "2099-12-11",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K400"
-          },
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-곽은재-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 감사 보조 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-곽은재-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0401"
-      },
-      {
-        "id": "FH-K400-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "곽승원",
-        "lineage": {
-          "surname": "곽",
-          "bongwan": "현풍",
-          "clan": "acfd-d604-d48d-agreed-c7ac-second"
-        },
-        "birthDate": "2069-12-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-곽은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2107,
-            "summary": "곽승원은 서울역 등기소에서 급수 중단·호송 지연 감사표 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-곽은재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K400-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "곽승진",
-        "lineage": {
-          "surname": "곽",
-          "bongwan": "현풍",
-          "clan": "acfd-d604-d48d-agreed-c7ac-second"
-        },
-        "birthDate": "2039-12-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-곽은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "곽승진은 서울역 등기소에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-곽은재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K400-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "곽승현",
-        "lineage": {
-          "surname": "곽",
-          "bongwan": "현풍",
-          "clan": "acfd-d604-d48d-agreed-c7ac-second"
-        },
-        "birthDate": "2009-12-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-곽은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "곽승현은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-곽은재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K400-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤준혁",
-        "birthDate": "2069-12-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-곽은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2107,
-            "summary": "윤준혁은 서울역 등기소에서 급수 중단·호송 지연 감사표 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-곽은재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K400-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한준규",
-        "birthDate": "2039-12-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-곽은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "한준규는 서울역 등기소에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-곽은재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K400-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "강준희",
-        "birthDate": "2009-12-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-곽은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강준희는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-곽은재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K400-P-01:K400:biological",
-        "from": "FH-K400-P-01",
-        "to": "K400",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-곽은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K400-P-02:FH-K400-P-01:biological",
-        "from": "FH-K400-P-02",
-        "to": "FH-K400-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-곽은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K400-P-03:FH-K400-P-02:biological",
-        "from": "FH-K400-P-03",
-        "to": "FH-K400-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-곽은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K400-M-01:K400:biological",
-        "from": "FH-K400-M-01",
-        "to": "K400",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-곽은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K400-M-02:FH-K400-M-01:biological",
-        "from": "FH-K400-M-02",
-        "to": "FH-K400-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-곽은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K400-M-03:FH-K400-M-02:biological",
-        "from": "FH-K400-M-03",
-        "to": "FH-K400-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-곽은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "acfd-d604-d48d",
+    "name": "현풍 곽씨",
+    "crest": "clan-crests/acfd-d604-d48d.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "곽은재는 스물일곱에 넷째 부위를 받고 천호역 정비대를 맡았다. 천호 터널 바꿈터로 정부 쪽 기계 몸이 정비를 받으러 오면, 그는 그들을 아크 땅 깊이 들이지 않고 터널 남쪽 입구 곁의 정비대에서 손본다. 값은 섬유와 소금으로 받아 곧장 곁집 창고로 넘기며, 이 일은 강동 곁집장 배우진과 맺은 약속으로 돌아간다. 송파 석촌에서 자라 강동으로 건너온 그는, 손본 사람의 이름과 부위를 정비대 벽에 분필로 적었다가 셋째 교대에 지운다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "천호역 정비장",
+    "품계": "정비장",
+    "생업": "정비대 통솔",
+    "일하는 역": "천호역",
+    "잠자는 역": "천호역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 4
+  },
+  "sections": {
+    "생애": "곽은재는 스물일곱에 넷째 부위를 받고 천호역 정비대를 맡았다. 천호 터널 바꿈터로 정부 쪽 기계 몸이 정비를 받으러 오면, 그는 그들을 아크 땅 깊이 들이지 않고 터널 남쪽 입구 곁의 정비대에서 손본다. 값은 섬유와 소금으로 받아 곧장 곁집 창고로 넘기며, 이 일은 강동 곁집장 배우진과 맺은 약속으로 돌아간다. 송파 석촌에서 자라 강동으로 건너온 그는, 손본 사람의 이름과 부위를 정비대 벽에 분필로 적었다가 셋째 교대에 지운다.",
+    "관직": "직함 천호역 정비장. 직위 천호역 정비장 · 아크. 품계 정비장. 일하는 역 천호역."
+  },
+  "values": {
+    "권위": -10,
+    "개방": 15,
+    "무력": -10,
+    "물질": -45,
+    "공동": 30,
+    "원칙": 35,
+    "공개": -15,
+    "자격": -10,
+    "분산": 20,
+    "변혁": 50
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": 35,
+    "위험": 10,
+    "과시": -30,
+    "지속": 0,
+    "지향": "무성향",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0401",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "곽은재",
+        "type": "지휘",
+        "to": "박세린",
+        "basis": "천호2동 대피소장 박세린의 직속"
+      },
+      {
+        "from": "곽은재",
+        "type": "맹세",
+        "to": "배우진",
+        "basis": "천호 정비대를 받으며, 터널 바꿈터로 온 기계 몸을 아크 땅 깊이 들이지 않겠다고 배우진에게 한 맹세"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "배우진",
+        "type": "계약",
+        "to": "곽은재",
+        "basis": "천호 터널 바꿈터에서 정부 쪽 기계 몸을 정비하고 섬유와 소금을 받는 약속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K089",
+    "name": "박세린",
+    "courtId": "court:K089",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
-      "learning": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "implementation-audit",
-        "name": {
-          "ko": "계약 이행 대조",
-          "en": "Contract implementation audit"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "구두 약속 불신",
-          "en": "Distrusts oral promises"
-        },
-        "description": {
-          "ko": "단수와 호송 지연을 같은 감사표에 적고 공개 열람 전에는 종결하지 않는다. 위조 도장 사건에서 사본을 태우고 원본을 지켰다.",
-          "en": "Records outages and escort delays in one audit and refuses closure before public review. Burns copies and preserves originals in a forged-stamp incident."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 구두 약속 불신을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "빈칸과 비공개 회의 앞에서 종결을 늦출 수 있다.",
-          "en": "May delay closure over gaps and private meetings."
-        },
-        "relationship": {
-          "ko": "정호준의 이행을 대조하고 라진우의 원장으로 손실을 산정한다.",
-          "en": "Checks Jeong Hojun’s performance and uses Ra Jinwoo’s ledger to estimate losses."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "대외 교섭안 이행 감사를 조합원 총회의 감사 권한으로 격상해 암사와 여의신의 일방 해석을 끊는다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "감사가 강국 손실만 계산하고 조합 작업장 단수·강제복무 피해를 누락하는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "정호준의 이행을 대조하고 라진우의 원장으로 손실을 산정한다.",
-          "en": "Checks Jeong Hojun’s performance and uses Ra Jinwoo’s ledger to estimate losses."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "단수와 호송 지연을 같은 감사표에 적고 공개 열람 전에는 종결하지 않는다. 위조 도장 사건에서 사본을 태우고 원본을 지켰다.",
-      "en": "Records outages and escort delays in one audit and refuses closure before public review. Burns copies and preserves originals in a forged-stamp incident."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "head",
@@ -525,85 +166,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "acfd-d604-d48d",
-    "name": "현풍 곽씨",
-    "crest": "clan-crests/acfd-d604-d48d.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -35,
-    "개방": 30,
-    "무력": -20,
-    "물질": 5,
-    "공동": 10,
-    "원칙": 45,
-    "공개": 30,
-    "자격": 25,
-    "분산": 50,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": 35,
-    "위험": 10,
-    "과시": -30,
-    "지속": 0,
-    "지향": "무성향",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "급수 중단·호송 지연 감사표 기록",
-    "소속": "정동노총",
-    "공동체 역할": "조합원",
-    "직무": "감사 보조",
-    "가치관": "권위 −35 | 개방 30 | 무력 −20 | 물질 5 | 공동 10 | 원칙 45 | 공개 30 | 자격 25 | 분산 50 | 변혁 5",
-    "욕망": "갈망 40 | 독점 35 | 위험 10 | 과시 −30 | 지속 0 | 지향 무성향 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2099-12-11에 태어난 곽은재는 영구 겨울의 시청역 조합 작업장에서 감사 보조 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 곽은재는 소공동의 시청역 조합 작업장에서 감사 보조 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "직무": "공동체 역할은 조합원이며 직무는 감사 보조이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.",
-    "일화": "2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 그날의 조치와 증언은 같은 업무 장부에 남아 있다.",
-    "관계": "곽은재의 기존 관계 기록은 다음과 같다. 정유라의 감사권을 실무로 집행하고, 정호준의 기술공유 계약 이행을 대조하며, 라진우의 가락 재고 원장을 손실 산정에 쓴다.",
-    "목표": "곽은재는 감사 보조 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.",
-    "공포": "감사 보조 업무의 서명이나 인계 기록이 바뀌어 곽은재의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.",
-    "개입": "곽은재는 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다."
-  },
-  "biography": "곽은재는 영구 겨울의 시청역 조합 작업장에서 감사 보조 업무 기록과 공개 표결 서명을 먼저 대조한다. 급수·통행·계약 일정이 겹치는 날에는 접수 시각과 인계 순서를 같은 장부에 남긴다.\n\n- 생업: 급수 중단·호송 지연 감사표 기록\n- 소속: 정동노총\n- 공동체 역할: 조합원\n- 직무: 감사 보조\n**생애.** 2099-12-11에 태어난 곽은재는 영구 겨울의 시청역 조합 작업장에서 감사 보조 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 곽은재는 소공동의 시청역 조합 작업장에서 감사 보조 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**직무.** 공동체 역할은 조합원이며 직무는 감사 보조이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 그날의 조치와 증언은 같은 업무 장부에 남아 있다.\n\n**관계.** 곽은재의 기존 관계 기록은 다음과 같다. 정유라의 감사권을 실무로 집행하고, 정호준의 기술공유 계약 이행을 대조하며, 라진우의 가락 재고 원장을 손실 산정에 쓴다.\n\n**목표.** 곽은재는 감사 보조 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.\n\n**공포.** 감사 보조 업무의 서명이나 인계 기록이 바뀌어 곽은재의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.\n\n**개입.** 곽은재는 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 30 | 무력 −20 | 물질 5 | 공동 10 | 원칙 45 | 공개 30 | 자격 25 | 분산 50 | 변혁 5\n- 욕망: 갈망 40 | 독점 35 | 위험 10 | 과시 −30 | 지속 0 | 지향 무성향 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-16"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "곽은재",
-        "type": "지휘",
-        "to": "정유라",
-        "basis": "감사권을 실무로 집행"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "서사서",
-        "type": "계약",
-        "to": "곽은재",
-        "basis": "서사서는 공개 열람을 기다리는 감사표의 보관 상태와 표시한 단수 시간 칸을 곽은재에게 알린다. 곽은재는 열람 사본을 확인해 공개 확인 전 종결 도장이 찍히지 않게 한다."
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:천호",
+      "name": {
+        "ko": "천호역"
       },
-      {
-        "from": "동새결",
-        "type": "사제",
-        "to": "곽은재",
-        "basis": "곽은재의 보조 직인을 철끈으로 이어 받는 사제이고"
+      "holderPersonId": "K400",
+      "directLiegePersonId": "K089",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "천호",
+        "stationName": "천호"
       },
-      {
-        "from": "흥미리",
-        "type": "계약",
-        "to": "곽은재",
-        "basis": "곽은재의 감사표를 보조로 받치고"
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1174061000",
+          "name": "천호2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

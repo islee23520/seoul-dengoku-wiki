@@ -1,309 +1,93 @@
 {
   "id": "person-0393",
   "name": "탁필호",
-  "title": "남하 피난 배급 인파 대표",
-  "position": "명동역 피난 구휼 부제",
+  "title": "동주민센터 선임 서기",
+  "position": "동주민센터 선임 서기 · 종로5가역",
   "characterId": "K392",
-  "rank": "부제",
-  "commonTier": "T4",
-  "occupation": "피난 구휼 지원·선거 보좌",
+  "rank": "사무관",
+  "commonTier": "T5",
+  "occupation": "장부 기재",
   "gender": "남성",
   "stage": "S3",
-  "state": "S15",
-  "stateName": "명동대교구",
-  "sourceRoute": "/world/Cast-State-15#인물-탁필호",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0393",
   "birthDate": "2068-11-27",
   "birthday": "11-27",
   "age": 58,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-15.json#/content/214",
-    "lore/characters/Cast-State-15.json#/content/215",
-    "lore/characters/Cast-State-15.json#/content/216"
-  ],
-  "familyTree": {
-    "personId": "K392",
-    "nodes": [
-      {
-        "id": "K392",
-        "personId": "K392",
-        "kind": "person",
-        "name": "탁필호",
-        "birthDate": "2068-11-27",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K392"
-          },
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-탁필호-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 명동역 교구청에서 명동역 피난 구휼 부제 일을 맡았다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-탁필호-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0393"
-      },
-      {
-        "id": "FH-K392-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "탁승영",
-        "lineage": {
-          "surname": "탁",
-          "bongwan": "광산",
-          "clan": "d0c1-ad11-c0b0"
-        },
-        "birthDate": "2038-11-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-탁필호-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "탁승영은 영등포 정수 당직에서 피난 구휼 지원·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-탁필호-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K392-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "탁승윤",
-        "lineage": {
-          "surname": "탁",
-          "bongwan": "광산",
-          "clan": "d0c1-ad11-c0b0"
-        },
-        "birthDate": "2008-11-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-탁필호-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "탁승윤은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-탁필호-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K392-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오준희",
-        "birthDate": "2038-11-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-탁필호-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "오준희는 영등포 정수 당직에서 피난 구휼 지원·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-탁필호-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K392-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "송준수",
-        "birthDate": "2008-11-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-탁필호-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "송준수는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-탁필호-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K392-P-01:K392:biological",
-        "from": "FH-K392-P-01",
-        "to": "K392",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-탁필호-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K392-P-02:FH-K392-P-01:biological",
-        "from": "FH-K392-P-02",
-        "to": "FH-K392-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-탁필호-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K392-M-01:K392:biological",
-        "from": "FH-K392-M-01",
-        "to": "K392",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-탁필호-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K392-M-02:FH-K392-M-01:biological",
-        "from": "FH-K392-M-02",
-        "to": "FH-K392-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-탁필호-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d0c1-ad11-c0b0",
+    "name": "광산 탁씨",
+    "crest": "clan-crests/d0c1-ad11-c0b0.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "종로구 종로5·6가동 종로5가역 동주민센터 선임 서기, 사무관 탁필호, 쉰여덟. 그가 앉는 곳은 배급 창구 옆의 등록 창구로, 출생과 사망과 전입이 이 창구에서 장부로 옮겨진다. 동대문 장터로 오가는 짐꾼들이 잠자리를 이 역으로 옮겨 달라고 줄을 서는 아침이 잦아, 탁필호는 빈 잠자리 수를 창구 유리에 분필로 적어 두고 그 수가 0이 되면 창구 덧문을 내린다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "동주민센터 선임 서기",
+    "품계": "사무관",
+    "생업": "장부 기재",
+    "일하는 역": "종로5가역",
+    "잠자는 역": "종로5가역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "종로구 종로5·6가동 종로5가역 동주민센터 선임 서기, 사무관 탁필호, 쉰여덟. 그가 앉는 곳은 배급 창구 옆의 등록 창구로, 출생과 사망과 전입이 이 창구에서 장부로 옮겨진다. 동대문 장터로 오가는 짐꾼들이 잠자리를 이 역으로 옮겨 달라고 줄을 서는 아침이 잦아, 탁필호는 빈 잠자리 수를 창구 유리에 분필로 적어 두고 그 수가 0이 되면 창구 덧문을 내린다.",
+    "관직": "직함 동주민센터 선임 서기. 직위 동주민센터 선임 서기 · 종로5가역. 품계 사무관. 일하는 역 종로5가역."
+  },
+  "values": {
+    "권위": 25,
+    "개방": 5,
+    "무력": 35,
+    "물질": 65,
+    "공동": 0,
+    "원칙": -35,
+    "공개": -55,
+    "자격": 10,
+    "분산": -45,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": -25,
+    "위험": -10,
+    "과시": 10,
+    "지속": 40,
+    "지향": "유동",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0393",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
+      },
+      "martial": {
+        "base": 3,
+        "effective": 3
+      },
+      "stewardship": {
         "base": 11,
         "effective": 11
       },
-      "strategy": {
+      "intrigue": {
         "base": 7,
         "effective": 7
-      },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 9,
-        "effective": 9
       },
       "learning": {
         "base": 8,
@@ -312,76 +96,10 @@
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
       }
     },
-    "skills": [
-      {
-        "id": "displaced-queue-representation",
-        "name": {
-          "ko": "피난 대기열 대표",
-          "en": "Displaced queue representation"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "줄을 해산시키지 않음",
-          "en": "Keeps the queue together"
-        },
-        "description": {
-          "ko": "피난 인파가 몰리자 배급 중단 요구를 밀어내고 원장을 유지했다. 임시표와 비상배급 마차로 줄을 이어 간다.",
-          "en": "Keeps the register when displaced crowds arrive and pushes back against suspended rations. Sustains the queue with temporary tickets and relief carts."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 줄을 해산시키지 않음을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "배급 중단 앞에서 인파 유지에 힘을 쏟을 수 있다.",
-          "en": "May focus on keeping people together when rations are threatened."
-        },
-        "relationship": {
-          "ko": "천솔빛의 줄에서 인파를 대표하고 전나경의 마차를 우선한다.",
-          "en": "Represents the crowd in Cheon Solbit’s queue and prioritizes Jeon Nagyeong’s carts."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "천솔빛의 줄에서 인파를 대표하고 전나경의 마차를 우선한다.",
-          "en": "Represents the crowd in Cheon Solbit’s queue and prioritizes Jeon Nagyeong’s carts."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "피난 인파가 몰리자 배급 중단 요구를 밀어내고 원장을 유지했다. 임시표와 비상배급 마차로 줄을 이어 간다.",
-      "en": "Keeps the register when displaced crowds arrive and pushes back against suspended rations. Sustains the queue with temporary tickets and relief carts."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -419,72 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d0c1-ad11-c0b0",
-    "name": "광산 탁씨",
-    "crest": "clan-crests/d0c1-ad11-c0b0.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -20,
-    "개방": 60,
-    "무력": 0,
-    "물질": 70,
-    "공동": -5,
-    "원칙": -55,
-    "공개": -30,
-    "자격": -5,
-    "분산": 5,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": -25,
-    "위험": -10,
-    "과시": 10,
-    "지속": 40,
-    "지향": "유동",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "피난 구휼 지원·선거 보좌",
-    "소속": "명동대교구 (명동역)",
-    "품계": "부제",
-    "직함": "명동역 피난 구휼 부제",
-    "가치관": "권위 −20 | 개방 60 | 무력 0 | 물질 70 | 공동 −5 | 원칙 −55 | 공개 −30 | 자격 −5 | 분산 5 | 변혁 −5",
-    "욕망": "갈망 30 | 독점 −25 | 위험 −10 | 과시 10 | 지속 40 | 지향 유동 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2068-11-27에 태어난 탁필호는 영구 겨울의 명동역 교구청에서 명동역 피난 구휼 부제 일을 맡는다. 피난 구휼 지원·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 탁필호는 명동 행정동의 명동역 교구청에서 명동역 피난 구휼 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 부제. 직함은 명동역 피난 구휼 부제. 피난 구휼 지원·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
-    "일화": "가을의 북한산보국문 행렬이 잠실 집결지를 메우자 탁필호는 상인회의의 배급 중단 요구를 광장에서 밀어내고 원장을 내리지 않았다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.",
-    "관계": "천솔빛의 광장 줄에서 피난 인파를 대표하고, 백온의 남하 가족에게 임시표를 건넨다. 전나경의 비상 배급 마차를 줄의 맨 위에 둔다.",
-    "야망": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-    "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-    "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
-  },
-  "biography": "탁필호는 명동역 피난 구휼 부제 업무에서 피난 구휼 지원·선거 보좌 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 피난 구휼 지원·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 명동역 피난 구휼 부제\n**생애.** 2068-11-27에 태어난 탁필호는 영구 겨울의 명동역 교구청에서 명동역 피난 구휼 부제 일을 맡는다. 피난 구휼 지원·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 탁필호는 명동 행정동의 명동역 교구청에서 명동역 피난 구휼 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 부제. 직함은 명동역 피난 구휼 부제. 피난 구휼 지원·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 가을의 북한산보국문 행렬이 잠실 집결지를 메우자 탁필호는 상인회의의 배급 중단 요구를 광장에서 밀어내고 원장을 내리지 않았다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.\n\n**관계.** 천솔빛의 광장 줄에서 피난 인파를 대표하고, 백온의 남하 가족에게 임시표를 건넨다. 전나경의 비상 배급 마차를 줄의 맨 위에 둔다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 60 | 무력 0 | 물질 70 | 공동 −5 | 원칙 −55 | 공개 −30 | 자격 −5 | 분산 5 | 변혁 −5\n- 욕망: 갈망 30 | 독점 −25 | 위험 −10 | 과시 10 | 지속 40 | 지향 유동 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-15"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "탁필호",
-        "type": "계약",
-        "to": "천솔빛",
-        "basis": "천솔빛의 광장 줄에서 피난 인파를 대표하고"
-      },
-      {
-        "from": "탁필호",
-        "type": "계약",
-        "to": "백온",
-        "basis": "백온의 남하 가족에게 임시표를 건넨다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

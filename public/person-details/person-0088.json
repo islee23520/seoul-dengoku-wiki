@@ -1,488 +1,282 @@
 {
   "id": "person-0088",
   "name": "오경재",
-  "title": "종교 연합 왕 · 명부교회 당회장",
-  "position": "종교 연합 왕 · 명부교회 당회장",
+  "title": "강남 곁집장",
+  "position": "강남 곁집장 · 아크",
   "characterId": "K423",
-  "rank": "왕 · 당회장",
+  "rank": "곁집장",
   "commonTier": "T1",
-  "occupation": "총회 당직·유언 원본 관리",
+  "occupation": "곁집 통솔",
   "gender": "남성",
   "stage": "주요",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-오경재",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0088",
   "birthDate": "2104-08-22",
   "birthday": "08-22",
   "age": 22,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/1",
-    "lore/characters/Core-Characters.json#/content/155",
-    "lore/characters/Core-Characters.json#/content/156",
-    "lore/characters/Core-Characters.json#/content/157",
-    "lore/characters/Core-Characters.json#/content/159",
-    "lore/characters/Core-Characters.json#/content/160",
-    "lore/chronology/Century-Annals.json#/content/465",
-    "lore/chronology/Century-Annals.json#/content/625",
-    "lore/chronology/Scenario-Timeline.json#/content/7"
-  ],
-  "familyTree": {
-    "personId": "K423",
-    "nodes": [
-      {
-        "id": "K423",
-        "personId": "K423",
-        "kind": "person",
-        "name": "오경재",
-        "birthDate": "2104-08-22",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K423"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-오경재-p1"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 종로구 대학로3길 29 총회회관의 마지막 당직 수습생. 임하준이 2125년 겨울 실종된 뒤, 뚝섬 열원과 연지동 총회 사이의 펌프 정비 기록을 이어받았다. 임초원이 펌프 정비를 배운 것과 달리, 오경재는 오씨 가문의 당회장 직무를 이어받아 2126년에 당회장으로 착좌했다. 명부교회의 당회장 목사직은 오씨 가문이 부자 세습하고, 장로의 인준 투표는 의례로 남는다. 오경재는 한재목의 서부 확대안을 인준하지 않았다. 펌프 정비 공정의 원본 함은 수문국과 공동 봉인하기로 합의했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-오경재-p1"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0088"
-      },
-      {
-        "id": "FH-K423-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오준찬",
-        "lineage": {
-          "surname": "오",
-          "bongwan": "해주",
-          "clan": "c624-d574-c8fc"
-        },
-        "birthDate": "2074-08-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-오경재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2112,
-            "summary": "오준찬은 생활권의 공동 거처에서 생활 물자 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-오경재-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K423-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오준혁",
-        "lineage": {
-          "surname": "오",
-          "bongwan": "해주",
-          "clan": "c624-d574-c8fc"
-        },
-        "birthDate": "2044-08-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-오경재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2082,
-            "summary": "오준혁은 생활권의 공동 거처에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-오경재-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K423-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "오준문",
-        "lineage": {
-          "surname": "오",
-          "bongwan": "해주",
-          "clan": "c624-d574-c8fc"
-        },
-        "birthDate": "2014-08-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-오경재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오준문은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-오경재-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K423-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준욱",
-        "birthDate": "2074-08-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-오경재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2112,
-            "summary": "정준욱은 생활권의 공동 거처에서 생활 물자 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-오경재-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K423-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤준성",
-        "birthDate": "2044-08-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-오경재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2082,
-            "summary": "윤준성은 생활권의 공동 거처에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-오경재-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K423-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "한준재",
-        "birthDate": "2014-08-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-오경재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한준재는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-오경재-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K423-P-01:K423:biological",
-        "from": "FH-K423-P-01",
-        "to": "K423",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-오경재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K423-P-02:FH-K423-P-01:biological",
-        "from": "FH-K423-P-02",
-        "to": "FH-K423-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-오경재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K423-P-03:FH-K423-P-02:biological",
-        "from": "FH-K423-P-03",
-        "to": "FH-K423-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-오경재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K423-M-01:K423:biological",
-        "from": "FH-K423-M-01",
-        "to": "K423",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-오경재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K423-M-02:FH-K423-M-01:biological",
-        "from": "FH-K423-M-02",
-        "to": "FH-K423-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-오경재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K423-M-03:FH-K423-M-02:biological",
-        "from": "FH-K423-M-03",
-        "to": "FH-K423-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-오경재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c624-d574-c8fc",
+    "name": "해주 오씨",
+    "crest": "clan-crests/c624-d574-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "강남 곁집장이다. 해주 오씨는 아크에서 손꼽히는 큰 집안이고, 스물두 살의 그는 수서 대피소들의 우두머리였던 그 집안의 핏줄로 자리에 앉았다. 부위는 둘로, 곁집장이 되는 데 드는 가장 적은 수다. 쉰아홉 살 맞수 이홍원이 쇠를 내세우는 앞에서, 그는 수서 깊은 노선 층의 열과 집안 어른들의 차례로 버틴다. 서울숲–압구정로데오 터널 남쪽 입구에서 정부 쪽 기계 몸 정비를 받는 약정도 그의 도장으로 이어진다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "강남 곁집장",
+    "품계": "곁집장",
+    "생업": "곁집 통솔",
+    "일하는 역": "수서역",
+    "잠자는 역": "수서역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "강남 곁집장이다. 해주 오씨는 아크에서 손꼽히는 큰 집안이고, 스물두 살의 그는 수서 대피소들의 우두머리였던 그 집안의 핏줄로 자리에 앉았다. 부위는 둘로, 곁집장이 되는 데 드는 가장 적은 수다. 쉰아홉 살 맞수 이홍원이 쇠를 내세우는 앞에서, 그는 수서 깊은 노선 층의 열과 집안 어른들의 차례로 버틴다. 서울숲–압구정로데오 터널 남쪽 입구에서 정부 쪽 기계 몸 정비를 받는 약정도 그의 도장으로 이어진다.",
+    "관직": "직함 강남 곁집장. 직위 강남 곁집장 · 아크. 품계 곁집장. 일하는 역 수서역."
+  },
+  "values": {
+    "권위": 45,
+    "개방": -25,
+    "무력": -10,
+    "물질": -40,
+    "공동": 60,
+    "원칙": 20,
+    "공개": -65,
+    "자격": -5,
+    "분산": -40,
+    "변혁": 45
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": -10,
+    "위험": -20,
+    "과시": -10,
+    "지속": 40,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "christian",
-    "houseFaith": "christian",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0088",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "오경재",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "오경재",
+        "type": "경쟁",
+        "to": "이홍원",
+        "basis": "강남 곁집장 자리를 두고 이홍원과 맞선다. 스물두 살의 핏줄과 쉰아홉 살의 쇠의 다툼이다"
+      },
+      {
+        "from": "오경재",
+        "type": "맹세",
+        "to": "고예진",
+        "basis": "교주에게서 강남 곁집장 자리를 받으며 교주의 말을 강남의 법으로 삼겠다고 한 맹세"
+      },
+      {
+        "from": "오경재",
+        "type": "계약",
+        "to": "장세화",
+        "basis": "서울숲–압구정로데오 터널 남쪽 입구에서 정부의 허가받은 기계 몸을 정비하고 섬유와 소금을 받는 약정. 정부 쪽은 성동구 국회의원 장세화의 도장으로 맺는다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "정하린",
+        "type": "지휘",
+        "to": "오경재",
+        "basis": "강남 곁집장 오경재의 직속"
+      },
+      {
+        "from": "박진솔",
+        "type": "지휘",
+        "to": "오경재",
+        "basis": "강남 곁집장 오경재의 직속"
+      },
+      {
+        "from": "지목현",
+        "type": "지휘",
+        "to": "오경재",
+        "basis": "강남 곁집장 오경재의 직속"
+      },
+      {
+        "from": "국두",
+        "type": "지휘",
+        "to": "오경재",
+        "basis": "강남 곁집장 오경재의 직속"
+      },
+      {
+        "from": "봉국",
+        "type": "지휘",
+        "to": "오경재",
+        "basis": "강남 곁집장 오경재의 직속"
+      },
+      {
+        "from": "동새결",
+        "type": "지휘",
+        "to": "오경재",
+        "basis": "강남 곁집장 오경재의 직속"
+      },
+      {
+        "from": "노세람",
+        "type": "지휘",
+        "to": "오경재",
+        "basis": "강남 곁집장 오경재의 직속"
+      },
+      {
+        "from": "한서경",
+        "type": "지휘",
+        "to": "오경재",
+        "basis": "강남 곁집장 오경재의 직속"
+      },
+      {
+        "from": "정하린",
+        "type": "맹세",
+        "to": "오경재",
+        "basis": "대피소 명부를 강남 곁집장 오경재에게 바치며, 곁집장의 말이 교주의 말과 어긋나지 않는 한 따르겠다고 한 맹세"
+      },
+      {
+        "from": "유하은",
+        "type": "스승과 제자",
+        "to": "오경재",
+        "basis": "강남 곁집장 오경재에게 셈표를 읽고 곁집 창고의 몫을 나누는 법을 가르쳤다"
+      },
+      {
+        "from": "정소율",
+        "type": "맹세",
+        "to": "오경재",
+        "basis": "맞수 이홍원에 맞서 곁집장 오경재 편에 서겠다고 맹세했다"
+      },
+      {
+        "from": "이홍원",
+        "type": "경쟁",
+        "to": "오경재",
+        "basis": "강남 곁집장 자리를 두고 맞선다. 오경재는 핏줄로, 이홍원은 수서 창고의 쇠와 오랜 섬김으로 선다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K1018",
+    "name": "고예진",
+    "courtId": "court:K1018",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K423",
+    "members": [
+      {
+        "personId": "K058",
+        "name": "정하린"
+      },
+      {
+        "personId": "K063",
+        "name": "박진솔"
+      },
+      {
+        "personId": "K128",
+        "name": "지목현"
+      },
+      {
+        "personId": "K283",
+        "name": "국두"
+      },
+      {
+        "personId": "K287",
+        "name": "봉국"
+      },
+      {
+        "personId": "K410",
+        "name": "동새결"
+      },
+      {
+        "personId": "K422",
+        "name": "노세람"
+      },
+      {
+        "personId": "K1020",
+        "name": "한서경"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 10,
         "effective": 10
       },
-      "strategy": {
-        "base": 10,
-        "effective": 10
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 11,
-        "effective": 11
+      "stewardship": {
+        "base": 9,
+        "effective": 9
       },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 8,
+        "effective": 8
       },
       "learning": {
-        "base": 11,
-        "effective": 11
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "k423-will-disclosure",
-        "name": {
-          "ko": "유언 공개 절차",
-          "en": "Will-disclosure procedure"
-        },
-        "rating": 60
+        "id": "skill-house-holding",
+        "name": "곁집 다스림",
+        "rating": 52
+      },
+      {
+        "id": "skill-tunnel-dealing",
+        "name": "터널 약정",
+        "rating": 44
       }
     ],
     "traits": [
       {
-        "id": "k423-trait-1",
-        "name": {
-          "ko": "공개하되 인준하지 않음",
-          "en": "Disclosure without ratification"
-        },
-        "description": {
-          "ko": "유언 공개와 서부안 인준을 별개로 다룬다.",
-          "en": "Treats disclosure of wills separately from approval of the western plan."
-        },
-        "behavior": {
-          "ko": "유언 공개와 서부안 인준을 별개로 다룬다.",
-          "en": "Treats disclosure of wills separately from approval of the western plan."
-        },
-        "stress": {
-          "ko": "취임 뒤에도 확대안을 인준하지 않는다.",
-          "en": "Still refuses the expansion proposal after taking office."
-        },
-        "relationship": {
-          "ko": "임초원과 기술 동맹을 유지하고 수문국과 원본을 공동 봉인한다.",
-          "en": "Maintains a technical alliance with Im Chowon and jointly seals originals with the Sluice."
-        },
+        "id": "trait-quiet-holder",
+        "name": "말없이 버티는 사람",
+        "description": "깊은 층의 집안답게 말수가 적고 오래 버틴다",
+        "behavior": "곁집 자리에서는 끝까지 듣고 마지막에 한 문장만 말한다",
+        "stress": "어른들 앞에서 나이를 들먹이면 깊은 터널 층으로 내려가 혼자 지낸다",
+        "relationship": "자기 편에 선 대피소장들의 명부를 직접 읽어 본다",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "취임 뒤 임하준의 세 유언을 공개하고 한재목의 서부 확대안을 인준하지 않았다. 공정 원본을 수문국과 공동 봉인하는 데 동의했으나 유언의 내용이나 실종 경위는 공개 행동만으로 확정할 수 없다.",
-      "en": "After taking office, he disclosed Im Hajun’s three wills and refused the western expansion proposal. He agreed to seal process originals jointly with the Sluice, but disclosure alone establishes neither the wills’ contents nor the disappearance’s cause."
-    },
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -510,30 +304,13 @@
   },
   "confirmedHoldings": [
     {
-      "id": "holding:capital-s04",
+      "id": "holding:v3:duchy:11680",
       "name": {
-        "ko": "삼성역 직영지"
+        "ko": "강남구 공작령"
       },
       "holderPersonId": "K423",
-      "directLiegePersonId": null,
-      "stateId": "S04",
-      "stationRef": {
-        "stationId": "삼성",
-        "stationName": "삼성"
-      },
-      "adminRefs": [],
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": null
-    },
-    {
-      "id": "holding:opening-duchy-gu-11680-S04",
-      "name": {
-        "ko": "강남구 명부교회 공작령 직영지"
-      },
-      "holderPersonId": "K423",
-      "directLiegePersonId": null,
-      "stateId": "S04",
+      "directLiegePersonId": "K1018",
+      "stateId": "arc",
       "adminRefs": [
         {
           "id": "region:1168051000",
@@ -543,184 +320,6 @@
           "id": "region:1168052100",
           "name": "논현1동"
         },
-        {
-          "id": "region:1168061000",
-          "name": "대치2동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11680-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [
-    {
-      "id": "holding:opening-duchy-gu-11200-S04",
-      "name": {
-        "ko": "성동구 공작령 직영지"
-      },
-      "holderPersonId": "K099",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "region:1120052000",
-          "name": "왕십리2동"
-        },
-        {
-          "id": "region:1120053500",
-          "name": "왕십리도선동"
-        },
-        {
-          "id": "region:1120054000",
-          "name": "마장동"
-        },
-        {
-          "id": "region:1120055000",
-          "name": "사근동"
-        },
-        {
-          "id": "region:1120056000",
-          "name": "행당1동"
-        },
-        {
-          "id": "region:1120057000",
-          "name": "행당2동"
-        },
-        {
-          "id": "region:1120058000",
-          "name": "응봉동"
-        },
-        {
-          "id": "region:1120059000",
-          "name": "금호1가동"
-        },
-        {
-          "id": "region:1120061500",
-          "name": "금호2·3가동"
-        },
-        {
-          "id": "region:1120062000",
-          "name": "금호4가동"
-        },
-        {
-          "id": "region:1120064500",
-          "name": "옥수동"
-        },
-        {
-          "id": "region:1120065000",
-          "name": "성수1가1동"
-        },
-        {
-          "id": "region:1120066000",
-          "name": "성수1가2동"
-        },
-        {
-          "id": "region:1120067000",
-          "name": "성수2가1동"
-        },
-        {
-          "id": "region:1120069000",
-          "name": "성수2가3동"
-        },
-        {
-          "id": "region:1120072000",
-          "name": "송정동"
-        },
-        {
-          "id": "region:1120079000",
-          "name": "용답동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11200-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "채구름",
-      "holderRoute": "/people/person-0100"
-    },
-    {
-      "id": "holding:opening-duchy-gu-11650-S16",
-      "name": {
-        "ko": "서초구 정동노총 공작령 직영지"
-      },
-      "holderPersonId": "K406",
-      "directLiegePersonId": "K423",
-      "stateId": "S16",
-      "adminRefs": [
-        {
-          "id": "region:1165054000",
-          "name": "잠원동"
-        },
-        {
-          "id": "region:1165055000",
-          "name": "반포본동"
-        },
-        {
-          "id": "region:1165056000",
-          "name": "반포1동"
-        },
-        {
-          "id": "region:1165057000",
-          "name": "반포2동"
-        },
-        {
-          "id": "region:1165058000",
-          "name": "반포3동"
-        },
-        {
-          "id": "region:1165058100",
-          "name": "반포4동"
-        },
-        {
-          "id": "region:1165059000",
-          "name": "방배본동"
-        },
-        {
-          "id": "region:1165060000",
-          "name": "방배1동"
-        },
-        {
-          "id": "region:1165061000",
-          "name": "방배2동"
-        },
-        {
-          "id": "region:1165062000",
-          "name": "방배3동"
-        },
-        {
-          "id": "region:1165062100",
-          "name": "방배4동"
-        },
-        {
-          "id": "region:1165065200",
-          "name": "양재2동"
-        },
-        {
-          "id": "region:1165066000",
-          "name": "내곡동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11650-S16",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "원새울",
-      "holderRoute": "/people/person-0407"
-    },
-    {
-      "id": "holding:opening-duchy-gu-11680-S16",
-      "name": {
-        "ko": "강남구 정동노총 공작령 직영지"
-      },
-      "holderPersonId": "K405",
-      "directLiegePersonId": "K423",
-      "stateId": "S16",
-      "adminRefs": [
         {
           "id": "region:1168053100",
           "name": "논현2동"
@@ -744,6 +343,10 @@
         {
           "id": "region:1168060000",
           "name": "대치1동"
+        },
+        {
+          "id": "region:1168061000",
+          "name": "대치2동"
         },
         {
           "id": "region:1168063000",
@@ -798,334 +401,184 @@
           "name": "수서동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11680-S16",
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11680",
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "선초별",
-      "holderRoute": "/people/person-0406"
-    },
+      "formalTitleRank": null
+    }
+  ],
+  "subordinateHoldings": [
     {
-      "id": "holding:opening-duchy-gu-11710-S15",
+      "id": "holding:v3:dong:1168059000",
       "name": {
-        "ko": "송파구 공작령 직영지"
+        "ko": "삼성2동"
       },
-      "holderPersonId": "K388",
+      "holderPersonId": "K058",
       "directLiegePersonId": "K423",
-      "stateId": "S15",
+      "stateId": "arc",
       "adminRefs": [
         {
-          "id": "region:1171051000",
-          "name": "풍납1동"
-        },
-        {
-          "id": "region:1171052000",
-          "name": "풍납2동"
-        },
-        {
-          "id": "region:1171053100",
-          "name": "거여1동"
-        },
-        {
-          "id": "region:1171053200",
-          "name": "거여2동"
-        },
-        {
-          "id": "region:1171054000",
-          "name": "마천1동"
-        },
-        {
-          "id": "region:1171055000",
-          "name": "마천2동"
-        },
-        {
-          "id": "region:1171056100",
-          "name": "방이1동"
-        },
-        {
-          "id": "region:1171056200",
-          "name": "방이2동"
-        },
-        {
-          "id": "region:1171056600",
-          "name": "오륜동"
-        },
-        {
-          "id": "region:1171057000",
-          "name": "오금동"
-        },
-        {
-          "id": "region:1171058000",
-          "name": "송파1동"
-        },
-        {
-          "id": "region:1171059000",
-          "name": "송파2동"
-        },
-        {
-          "id": "region:1171060000",
-          "name": "석촌동"
-        },
-        {
-          "id": "region:1171061000",
-          "name": "삼전동"
-        },
-        {
-          "id": "region:1171062000",
-          "name": "가락본동"
-        },
-        {
-          "id": "region:1171063100",
-          "name": "가락1동"
-        },
-        {
-          "id": "region:1171063200",
-          "name": "가락2동"
-        },
-        {
-          "id": "region:1171064100",
-          "name": "문정1동"
-        },
-        {
-          "id": "region:1171064200",
-          "name": "문정2동"
-        },
-        {
-          "id": "region:1171064600",
-          "name": "장지동"
-        },
-        {
-          "id": "region:1171064700",
-          "name": "위례동"
-        },
-        {
-          "id": "region:1171065000",
-          "name": "잠실본동"
-        },
-        {
-          "id": "region:1171067000",
-          "name": "잠실2동"
-        },
-        {
-          "id": "region:1171068000",
-          "name": "잠실3동"
-        },
-        {
-          "id": "region:1171069000",
-          "name": "잠실4동"
-        },
-        {
-          "id": "region:1171071000",
-          "name": "잠실6동"
-        },
-        {
-          "id": "region:1171072000",
-          "name": "잠실7동"
+          "id": "region:1168059000",
+          "name": "삼성2동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11710-S15",
+      "territorialScale": "dong",
+      "titleId": null,
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "동예솔",
-      "holderRoute": "/people/person-0389"
-    }
-  ],
-  "openingTitles": [
-    {
-      "id": "title:duchy-gu-11680-S04",
-      "name": "강남구 명부교회 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K423",
-      "basis": "개막 수도 직할 공작 결정(왕급 직속 최대 둘 중 하나)",
-      "stateId": "S04",
-      "parentTitleId": "title:kingdom-s04",
-      "jurisdictionRefs": [
-        "region:1168051000",
-        "region:1168052100",
-        "region:1168061000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s04",
-        "name": "종교 연합 왕국",
-        "holderPersonId": "K423"
-      }
+      "formalTitleRank": null,
+      "holderName": "정하린",
+      "holderRoute": "/people/person-0058"
     },
     {
-      "id": "title:kingdom-s04",
-      "name": "종교 연합 왕국",
-      "rank": "kingdom",
-      "holderPersonId": "K423",
-      "stateId": "S04",
-      "parentTitleId": null,
-      "jurisdictionRefs": [
-        "region:1120052000",
-        "region:1120053500",
-        "region:1120054000",
-        "region:1120055000",
-        "region:1120056000",
-        "region:1120057000",
-        "region:1120058000",
-        "region:1120059000",
-        "region:1120061500",
-        "region:1120062000",
-        "region:1120064500",
-        "region:1120065000",
-        "region:1120066000",
-        "region:1120067000",
-        "region:1120069000",
-        "region:1120072000",
-        "region:1120079000",
-        "region:1165054000",
-        "region:1165055000",
-        "region:1165056000",
-        "region:1165057000",
-        "region:1165058000",
-        "region:1165058100",
-        "region:1165059000",
-        "region:1165060000",
-        "region:1165061000",
-        "region:1165062000",
-        "region:1165062100",
-        "region:1165065200",
-        "region:1165066000",
-        "region:1168051000",
-        "region:1168052100",
-        "region:1168053100",
-        "region:1168054500",
-        "region:1168056500",
-        "region:1168058000",
-        "region:1168059000",
-        "region:1168060000",
-        "region:1168061000",
-        "region:1168063000",
-        "region:1168064000",
-        "region:1168065000",
-        "region:1168065500",
-        "region:1168065600",
-        "region:1168066000",
-        "region:1168067000",
-        "region:1168067500",
-        "region:1168069000",
-        "region:1168070000",
-        "region:1168072000",
-        "region:1168073000",
-        "region:1168075000",
-        "region:1171051000",
-        "region:1171052000",
-        "region:1171053100",
-        "region:1171053200",
-        "region:1171054000",
-        "region:1171055000",
-        "region:1171056100",
-        "region:1171056200",
-        "region:1171056600",
-        "region:1171057000",
-        "region:1171058000",
-        "region:1171059000",
-        "region:1171060000",
-        "region:1171061000",
-        "region:1171062000",
-        "region:1171063100",
-        "region:1171063200",
-        "region:1171064100",
-        "region:1171064200",
-        "region:1171064600",
-        "region:1171064700",
-        "region:1171065000",
-        "region:1171067000",
-        "region:1171068000",
-        "region:1171069000",
-        "region:1171071000",
-        "region:1171072000"
+      "id": "holding:v3:dong:1168075000",
+      "name": {
+        "ko": "수서동"
+      },
+      "holderPersonId": "K063",
+      "directLiegePersonId": "K423",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1168075000",
+          "name": "수서동"
+        }
       ],
-      "basis": "owner:call_3UEeOQxXrDzuYt8E1BFfhRqe:religious_title_root 승인(정치 종류는 연합 유지)",
-      "parentTitle": null
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "박진솔",
+      "holderRoute": "/people/person-0063"
     },
     {
-      "id": "title:kingdom-geography:seoul:06",
-      "name": "동남 왕국",
-      "rank": "kingdom",
-      "holderPersonId": "K423",
-      "stateId": "S04",
-      "geographicTitleId": "geography:kingdom:seoul:06",
-      "basis": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 종교 연합 왕. 강남 공작령과 왕국 s04 보유, 종교 연합의 강남 중심 권역 근거.",
-      "parentTitle": null
+      "id": "holding:v3:dong:1168058000",
+      "name": {
+        "ko": "삼성1동"
+      },
+      "holderPersonId": "K128",
+      "directLiegePersonId": "K423",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1168058000",
+          "name": "삼성1동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "지목현",
+      "holderRoute": "/people/person-0129"
+    },
+    {
+      "id": "holding:v3:dong:1168067500",
+      "name": {
+        "ko": "개포3동"
+      },
+      "holderPersonId": "K283",
+      "directLiegePersonId": "K423",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1168067500",
+          "name": "개포3동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "국두",
+      "holderRoute": "/people/person-0284"
+    },
+    {
+      "id": "holding:v3:station:역삼",
+      "name": {
+        "ko": "역삼역"
+      },
+      "holderPersonId": "K287",
+      "directLiegePersonId": "K423",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "역삼",
+        "stationName": "역삼"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1168064000",
+          "name": "역삼1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "봉국",
+      "holderRoute": "/people/person-0288"
+    },
+    {
+      "id": "holding:v3:dong:1168065600",
+      "name": {
+        "ko": "도곡2동"
+      },
+      "holderPersonId": "K410",
+      "directLiegePersonId": "K423",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1168065600",
+          "name": "도곡2동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "동새결",
+      "holderRoute": "/people/person-0411"
+    },
+    {
+      "id": "holding:v3:dong:1168067000",
+      "name": {
+        "ko": "개포2동"
+      },
+      "holderPersonId": "K422",
+      "directLiegePersonId": "K423",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1168067000",
+          "name": "개포2동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "노세람",
+      "holderRoute": "/people/person-0423"
+    },
+    {
+      "id": "holding:v3:dong:1168060000",
+      "name": {
+        "ko": "대치1동"
+      },
+      "holderPersonId": "K1020",
+      "directLiegePersonId": "K423",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1168060000",
+          "name": "대치1동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "한서경",
+      "holderRoute": "/people/person-1020"
     }
-  ],
-  "clan": {
-    "id": "c624-d574-c8fc",
-    "name": "해주 오씨",
-    "crest": "clan-crests/c624-d574-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": true,
-  "values": {
-    "권위": 20,
-    "개방": -10,
-    "무력": -20,
-    "물질": 10,
-    "공동": 40,
-    "원칙": 30,
-    "공개": -20,
-    "자격": 30,
-    "분산": -10,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": -10,
-    "위험": -20,
-    "과시": -10,
-    "지속": 40,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "총회 당직·유언 원본 관리",
-    "품계": "당회장",
-    "직함": "명부교회 당회장"
-  },
-  "sections": {
-    "생애": "2126년 세대. 오경재는 종로구 대학로3길 29 총회회관의 마지막 당직 수습생이었다. 임하준이 2125년 겨울 실종된 뒤, 뚝섬 열원과 연지동 총회 사이의 펌프 정비 기록을 이어받았다. 임초원은 펌프 정비를 배웠고 오경재는 오씨 가문 출신으로서 2126년 총회 인준을 받아 당회장이 되었다. 오경재는 한재목의 서부 확대안을 인준하지 않았다. 펌프 정비 공정의 원본 함은 수문국과 공동 봉인하기로 합의했다.\n관직. 품계 당회장. 직함은 명부교회 당회장.\n일화. 취임 직후, 임하준의 세 유언을 함에서 꺼내 총회 회의실에 공개했다. 공개가 윤서린의 인준 보류를 깨뜨리는 강한 신호가 됐다.\n가문. 오경재는 오씨 가문 출신이다. HC14 여의도장부가는 장필규가 맡는다.\n관계. 임초원과 펌프 기술 동맹. 한재목과 정수 공정 거래. 윤서린의 인준권을 견제.\n\n- 소속: 명부교회\n- 생업: 총회 당직·유언 원본 관리\n- 품계: 당회장\n- 직함: 명부교회 당회장\n- 오경재의 명부교회 당회장 업무는 삼성1동과 연결된다.\n- 오경재의 당직과 유언 원본 관리 업무는 종로5·6가동과 연결된다."
-  },
-  "biography": "**생애.** 2126년 세대. 오경재는 종로구 대학로3길 29 총회회관의 마지막 당직 수습생이었다. 임하준이 2125년 겨울 실종된 뒤, 뚝섬 열원과 연지동 총회 사이의 펌프 정비 기록을 이어받았다. 임초원은 펌프 정비를 배웠고 오경재는 오씨 가문 출신으로서 2126년 총회 인준을 받아 당회장이 되었다. 오경재는 한재목의 서부 확대안을 인준하지 않았다. 펌프 정비 공정의 원본 함은 수문국과 공동 봉인하기로 합의했다.\n관직. 품계 당회장. 직함은 명부교회 당회장.\n일화. 취임 직후, 임하준의 세 유언을 함에서 꺼내 총회 회의실에 공개했다. 공개가 윤서린의 인준 보류를 깨뜨리는 강한 신호가 됐다.\n가문. 오경재는 오씨 가문 출신이다. HC14 여의도장부가는 장필규가 맡는다.\n관계. 임초원과 펌프 기술 동맹. 한재목과 정수 공정 거래. 윤서린의 인준권을 견제.\n\n- 소속: 명부교회\n- 생업: 총회 당직·유언 원본 관리\n- 품계: 당회장\n- 직함: 명부교회 당회장\n- 오경재의 명부교회 당회장 업무는 삼성1동과 연결된다.\n- 오경재의 당직과 유언 원본 관리 업무는 종로5·6가동과 연결된다.",
-  "sources": [
-    "Cast-State-04",
-    "Core-Characters"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "오경재",
-        "type": "계약",
-        "to": "임하준",
-        "basis": "2126년 장로 인준을 거쳐 당회장에 취임"
-      },
-      {
-        "from": "오경재",
-        "type": "계약",
-        "to": "임초원",
-        "basis": "총회 인준으로 펌프 기술 동맹을 맺음"
-      },
-      {
-        "from": "오경재",
-        "type": "계약",
-        "to": "한재목",
-        "basis": "서부 확대안 인준을 거절하고 펌프 정비 공정 원본 함의 공동 봉인에 합의"
-      },
-      {
-        "from": "오경재",
-        "type": "경쟁",
-        "to": "윤서린",
-        "basis": "세 유언 공개로 대통령 인준권을 견제"
-      }
-    ],
-    "incoming": []
-  }
+  ]
 }

@@ -1,388 +1,161 @@
 {
   "id": "person-0379",
   "name": "문도윤",
-  "title": "호송 입찰 조정",
-  "position": "선거 절차 감찰 부제",
+  "title": "한국은행 총재",
+  "position": "한국은행 총재 · 회현역",
   "characterId": "K378",
-  "rank": "부제",
-  "commonTier": "T4",
-  "occupation": "선거 절차 감찰·보좌",
+  "rank": "총재",
+  "commonTier": "T2",
+  "occupation": "증표 발행",
   "gender": "남성",
   "stage": "S1",
-  "state": "S15",
-  "stateName": "명동대교구",
-  "sourceRoute": "/world/Cast-State-15#인물-문도윤",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0379",
   "birthDate": "2067-01-31",
   "birthday": "01-31",
   "age": 59,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-15.json#/content/93",
-    "lore/characters/Cast-State-15.json#/content/94",
-    "lore/characters/Cast-State-15.json#/content/95",
-    "lore/characters/Cast-State-15.json#/content/96"
-  ],
-  "familyTree": {
-    "personId": "K378",
-    "nodes": [
-      {
-        "id": "K378",
-        "personId": "K378",
-        "kind": "person",
-        "name": "문도윤",
-        "birthDate": "2067-01-31",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K378"
-          },
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-문도윤-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 명동역 교구청에서 선거 절차 감찰 부제 일을 맡았다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-문도윤-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0379"
-      },
-      {
-        "id": "FH-K378-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "문승진",
-        "lineage": {
-          "surname": "문",
-          "bongwan": "남평",
-          "clan": "bb38-b0a8-d3c9-6587"
-        },
-        "birthDate": "2037-01-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-문도윤-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "문승진은 신내 환승 당직에서 선거 절차 감찰·보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-문도윤-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K378-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "문승현",
-        "lineage": {
-          "surname": "문",
-          "bongwan": "남평",
-          "clan": "bb38-b0a8-d3c9-6587"
-        },
-        "birthDate": "2007-01-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-문도윤-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "문승현은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-문도윤-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K378-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강준연",
-        "birthDate": "2037-01-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-문도윤-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "강준연은 신내 환승 당직에서 선거 절차 감찰·보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-문도윤-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K378-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임준아",
-        "birthDate": "2007-01-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-문도윤-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임준아는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-문도윤-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K378-P-01:K378:biological",
-        "from": "FH-K378-P-01",
-        "to": "K378",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-문도윤-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K378-P-02:FH-K378-P-01:biological",
-        "from": "FH-K378-P-02",
-        "to": "FH-K378-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-문도윤-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K378-M-01:K378:biological",
-        "from": "FH-K378-M-01",
-        "to": "K378",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-문도윤-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K378-M-02:FH-K378-M-01:biological",
-        "from": "FH-K378-M-02",
-        "to": "FH-K378-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-문도윤-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bb38-b0a8-d3c9-6587",
+    "name": "남평 문씨",
+    "crest": "clan-crests/bb38-b0a8-d3c9-6587.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "한국은행 총재 문도윤은 중구 회현동 회현역에 기재된 쉰아홉 살 남성이며, 남평 문씨다. 회현역 가까운 옛 본관 지하에서 끼니·물·연료·물품 네 가지 증표를 찍게 하고, 섬유당 죽 한 그릇을 1,000원으로 묶은 고시 값을 지킨다. 바로 아래 회현 장터에서 증표 값이 고시 값보다 낮게 정해지는 것을 날마다 보면서도 막지 못한다. 장터를 줄이자는 그의 의견서는 해마다 중구 국회의원 남시윤의 반대에 막힌다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "한국은행 총재",
+    "품계": "총재",
+    "생업": "증표 발행",
+    "일하는 역": "회현역",
+    "잠자는 역": "회현역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "한국은행 총재 문도윤은 중구 회현동 회현역에 기재된 쉰아홉 살 남성이며, 남평 문씨다. 회현역 가까운 옛 본관 지하에서 끼니·물·연료·물품 네 가지 증표를 찍게 하고, 섬유당 죽 한 그릇을 1,000원으로 묶은 고시 값을 지킨다. 바로 아래 회현 장터에서 증표 값이 고시 값보다 낮게 정해지는 것을 날마다 보면서도 막지 못한다. 장터를 줄이자는 그의 의견서는 해마다 중구 국회의원 남시윤의 반대에 막힌다.",
+    "관직": "직함 한국은행 총재. 직위 한국은행 총재 · 회현역. 품계 총재. 일하는 역 회현역."
+  },
+  "values": {
+    "권위": 55,
+    "개방": -35,
+    "무력": 25,
+    "물질": 40,
+    "공동": -15,
+    "원칙": -20,
+    "공개": -40,
+    "자격": 5,
+    "분산": -40,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": 20,
+    "위험": -30,
+    "과시": 5,
+    "지속": 5,
+    "지향": "양성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0379",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "문도윤",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "문도윤",
+        "type": "경쟁",
+        "to": "남시윤",
+        "basis": "장터를 줄이자는 의견서를 낼 때마다 중구 국회의원이 막는다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "문시온",
+        "type": "계약",
+        "to": "문도윤",
+        "basis": "같은 남평 문씨인 한국은행 총재와 끼니 증표 발행량을 빛밭 배정 고시에 맞추는 결재로 묶인 사이"
+      },
+      {
+        "from": "라세영",
+        "type": "빚",
+        "to": "문도윤",
+        "basis": "한국은행 총재에게 매장 행렬 연료 증표를 앞당겨 받은 빚"
+      },
+      {
+        "from": "남시윤",
+        "type": "경쟁",
+        "to": "문도윤",
+        "basis": "회현 장터를 줄이자는 총재와 자릿세로 구청 창고를 채우려는 의원으로 맞선다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 8,
+        "effective": 8
+      },
+      "martial": {
+        "base": 4,
+        "effective": 4
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 5,
+        "effective": 5
       },
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
       }
     },
     "skills": [
       {
-        "id": "arrival-verification",
-        "name": {
-          "ko": "도착 확인",
-          "en": "Arrival verification"
-        },
-        "rating": 55
+        "id": "p0379-coupon",
+        "name": "증표 고시 값 정하기",
+        "rating": 72
       }
     ],
     "traits": [
       {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "위험 보고를 미루지 않음",
-          "en": "Reports danger promptly"
-        },
-        "description": {
-          "ko": "붕괴 보고를 미루지 않고 침수 구간을 닫았다. 공동호송 조건을 입찰에 넣고 출고 봉인으로 도착을 확인한다.",
-          "en": "Closes a flooded section without delaying the collapse report. Adds joint escort terms to bids and uses dispatch seals to verify arrivals."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 위험 보고를 미루지 않음을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "위험 신호가 오면 이용 유지보다 폐쇄를 먼저 택할 수 있다.",
-          "en": "May choose closure over continued use when danger appears."
-        },
-        "relationship": {
-          "ko": "장세화의 호송안과 라진우의 봉인을 연결한다.",
-          "en": "Connects Jang Sehwa’s escort proposal with Ra Jinwoo’s seals."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "장세화의 호송안과 라진우의 봉인을 연결한다.",
-          "en": "Connects Jang Sehwa’s escort proposal with Ra Jinwoo’s seals."
-        },
+        "id": "p0379-trait-1",
+        "name": "고시 값의 사람",
+        "description": "값은 정하는 것이지 흥정하는 것이 아니라고 믿는다.",
+        "behavior": "장터 값을 날마다 적어 고시 값과 나란히 둔다.",
+        "stress": "두 값의 틈이 벌어지면 인쇄를 늦춘다.",
+        "relationship": "상인들은 그를 겨울보다 차갑다고 말한다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "붕괴 보고를 미루지 않고 침수 구간을 닫았다. 공동호송 조건을 입찰에 넣고 출고 봉인으로 도착을 확인한다.",
-      "en": "Closes a flooded section without delaying the collapse report. Adds joint escort terms to bids and uses dispatch seals to verify arrivals."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -420,79 +193,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bb38-b0a8-d3c9-6587",
-    "name": "남평 문씨",
-    "crest": "clan-crests/bb38-b0a8-d3c9-6587.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 10,
-    "개방": 20,
-    "무력": -10,
-    "물질": 45,
-    "공동": -20,
-    "원칙": -40,
-    "공개": -15,
-    "자격": -10,
-    "분산": 10,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": 20,
-    "위험": -30,
-    "과시": 5,
-    "지속": 5,
-    "지향": "양성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "선거 절차 감찰·보좌",
-    "소속": "명동대교구 (명동역)",
-    "품계": "부제",
-    "직함": "선거 절차 감찰 부제",
-    "가치관": "권위 10 | 개방 20 | 무력 −10 | 물질 45 | 공동 −20 | 원칙 −40 | 공개 −15 | 자격 −10 | 분산 10 | 변혁 0",
-    "욕망": "갈망 10 | 독점 20 | 위험 −30 | 과시 5 | 지속 5 | 지향 양성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2067-01-31에 태어난 문도윤은 영구 겨울의 명동역 교구청에서 선거 절차 감찰 부제 일을 맡는다. 선거 절차 감찰·보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 문도윤은 명동 행정동의 명동역 교구청에서 선거 절차 감찰 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 부제. 직함은 선거 절차 감찰 부제. 선거 절차 감찰·보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
-    "일화": "2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.",
-    "관계": "장세화의 공동호송안을 입찰 조건에 심고, 하세온의 경량 호송을 선호하며, 라진우의 출고 봉인을 도착 확인에 쓴다.",
-    "야망": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-    "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-    "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
-  },
-  "biography": "문도윤은 선거 절차 감찰 부제 업무에서 선거 절차 감찰·보좌 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 선거 절차 감찰·보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 선거 절차 감찰 부제\n**생애.** 2067-01-31에 태어난 문도윤은 영구 겨울의 명동역 교구청에서 선거 절차 감찰 부제 일을 맡는다. 선거 절차 감찰·보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 문도윤은 명동 행정동의 명동역 교구청에서 선거 절차 감찰 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 부제. 직함은 선거 절차 감찰 부제. 선거 절차 감찰·보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.\n\n**관계.** 장세화의 공동호송안을 입찰 조건에 심고, 하세온의 경량 호송을 선호하며, 라진우의 출고 봉인을 도착 확인에 쓴다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 −10 | 물질 45 | 공동 −20 | 원칙 −40 | 공개 −15 | 자격 −10 | 분산 10 | 변혁 0\n- 욕망: 갈망 10 | 독점 20 | 위험 −30 | 과시 5 | 지속 5 | 지향 양성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-15"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "문도윤",
-        "type": "계약",
-        "to": "장세화",
-        "basis": "공동호송안을 입찰 조건에 심음"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "선다솜",
-        "type": "지휘",
-        "to": "문도윤",
-        "basis": "문도윤의 입찰 조건을 봉인 상태로만 나르는 지휘를 받고"
-      },
-      {
-        "from": "석오름",
-        "type": "맹세",
-        "to": "문도윤",
-        "basis": "문도윤의 호송 입찰 게시와 증언을 겹치고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

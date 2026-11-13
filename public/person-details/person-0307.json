@@ -1,385 +1,136 @@
 {
   "id": "person-0307",
   "name": "두복",
-  "title": "계절 교대 전령, 전미리의 실무 담당자",
-  "position": "계절 교대 전령, 전미리의 실무 담당자",
+  "title": "상계6·7동 동장",
+  "position": "상계6·7동 동장 · 정부",
   "characterId": "K306",
-  "rank": "호송원",
-  "commonTier": "T5",
-  "occupation": "계절 교대 통지·환자 활력 기록",
+  "rank": "동장",
+  "commonTier": "T3",
+  "occupation": "동 행정",
   "gender": "남성",
   "stage": "S2",
-  "state": "S12",
-  "stateName": "신내운수",
-  "sourceRoute": "/world/Cast-State-12#인물-두복",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0307",
   "birthDate": "2066-08-08",
   "birthday": "08-08",
   "age": 60,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-12.json#/content/149"
-  ],
-  "familyTree": {
-    "personId": "K306",
-    "nodes": [
-      {
-        "id": "K306",
-        "personId": "K306",
-        "kind": "person",
-        "name": "두복",
-        "birthDate": "2066-08-08",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K306"
-          },
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-두복-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 계절 교대 전령, 전미리의 실무 담당자 자리는 무표 출발 열차 저지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-두복-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0307"
-      },
-      {
-        "id": "FH-K306-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "두승아",
-        "lineage": {
-          "surname": "두",
-          "bongwan": "두릉",
-          "clan": "b450-b450-b989"
-        },
-        "birthDate": "2036-08-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-두복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "두승아는 신내 환승 당직에서 계절 교대 통지·환자 활력 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-두복-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K306-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "두승희",
-        "lineage": {
-          "surname": "두",
-          "bongwan": "두릉",
-          "clan": "b450-b450-b989"
-        },
-        "birthDate": "2006-08-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-두복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "두승희는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-두복-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K306-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강준석",
-        "birthDate": "2036-08-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-두복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "강준석은 신내 환승 당직에서 계절 교대 통지·환자 활력 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-두복-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K306-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임준준",
-        "birthDate": "2006-08-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-두복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임준준은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-두복-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K306-P-01:K306:biological",
-        "from": "FH-K306-P-01",
-        "to": "K306",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-두복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K306-P-02:FH-K306-P-01:biological",
-        "from": "FH-K306-P-02",
-        "to": "FH-K306-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-두복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K306-M-01:K306:biological",
-        "from": "FH-K306-M-01",
-        "to": "K306",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-두복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K306-M-02:FH-K306-M-01:biological",
-        "from": "FH-K306-M-02",
-        "to": "FH-K306-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-두복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b450-b450-b989",
+    "name": "두릉 두씨",
+    "crest": "clan-crests/b450-b450-b989.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "두복의 기재는 노원구 상계6·7동 동장, 노원역 동주민센터다. 예순 살인 그는 노원역 빛밭 채소와 씨앗 장터가 동 사본 장부보다 사람을 더 많이 안다는 것을 인정하고, 장터 상인들에게 정원을 넘긴 가구를 알려 달라고 하지 않는다. 노원역이 정원을 넘기면 그는 전입 명령서를 손수 쓰는데, 옮겨 갈 역 칸에는 얕고 추운 역 대신 빛밭 둑에 가까운 역을 골라 적는다. 그런 역에도 빈자리가 없을 때에만 국토교통부에 역 정원을 다시 셈해 달라는 요청서를 올린다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "상계6·7동 동장",
+    "품계": "동장",
+    "생업": "동 행정",
+    "일하는 역": "노원역",
+    "잠자는 역": "노원역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "두복의 기재는 노원구 상계6·7동 동장, 노원역 동주민센터다. 예순 살인 그는 노원역 빛밭 채소와 씨앗 장터가 동 사본 장부보다 사람을 더 많이 안다는 것을 인정하고, 장터 상인들에게 정원을 넘긴 가구를 알려 달라고 하지 않는다. 노원역이 정원을 넘기면 그는 전입 명령서를 손수 쓰는데, 옮겨 갈 역 칸에는 얕고 추운 역 대신 빛밭 둑에 가까운 역을 골라 적는다. 그런 역에도 빈자리가 없을 때에만 국토교통부에 역 정원을 다시 셈해 달라는 요청서를 올린다.",
+    "관직": "직함 상계6·7동 동장. 직위 상계6·7동 동장 · 정부. 품계 동장. 일하는 역 노원역."
+  },
+  "values": {
+    "권위": 25,
+    "개방": -15,
+    "무력": 5,
+    "물질": 0,
+    "공동": 25,
+    "원칙": 25,
+    "공개": 0,
+    "자격": 40,
+    "분산": -5,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": -10,
+    "위험": 35,
+    "과시": 5,
+    "지속": 0,
+    "지향": "양성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0307",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "두복",
+        "type": "지휘",
+        "to": "은채윤",
+        "basis": "노원구 국회의원 은채윤의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "봉모",
+        "type": "지휘",
+        "to": "두복",
+        "basis": "상계6·7동 동장 두복의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K324",
+    "name": "은채윤",
+    "courtId": "court:K324",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K306",
+    "members": [
+      {
+        "personId": "K308",
+        "name": "봉모"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
-      },
-      "strategy": {
-        "base": 6,
-        "effective": 6
-      },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "learning": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "learning": {
         "base": 6,
         "effective": 6
-      }
-    },
-    "skills": [
-      {
-        "id": "k306-shift-notice-recording",
-        "name": {
-          "ko": "교대 통지 기록",
-          "en": "Shift notice recording"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k306-priority",
-        "name": {
-          "ko": "승인 순서 보존",
-          "en": "Preserves approval order"
-        },
-        "description": {
-          "ko": "두복은 교대 날인을 양쪽 칠판에 동시에 붙이고 심사 거부를 사본으로 남긴다. 없는 시각 두 칸의 실제 이동은 미확인이다.",
-          "en": "Dubok posts shift seals to both boards simultaneously and preserves inspection refusals. Actual movements for the missing two times remain unknown."
-        },
-        "behavior": {
-          "ko": "교대 통지와 환자 활력 표를 같은 원장에 적고, 매수된 쪽지는 당직실 문에 붙인다.",
-          "en": "Office. Rank: convoy hand. Title: seasonal rotation courier, duty officer of Jeon Miri. He wrote the rotation notices and the patient vital table in the same ledger and pasted bought notes on the duty-room door."
-        },
-        "stress": {
-          "ko": "전령 가방이 무기 적재 통지로 바뀌어 교대 결재가 외부 호위 시간표가 되는 것.",
-          "en": "Fear. That the courier bag would turn into an arms-loading notice and the rotation decree would become a protection force's timetable."
-        },
-        "relationship": {
-          "ko": "전미리와 안도한의 승인 순서 다툼을 쪽지로 나르고, 장세화의 계절 교대 날인을 양쪽 칠판에 동시에 붙인다. 문시온의 심사 거부를 전령 사본으로 남긴다.",
-          "en": "Relations. Carried the approval-order dispute between Jeon Miri and An Dohan by note and pasted Jang Sehwa's seasonal rotation stamp on both chalkboards at once. Left Mun Sion's examination refusal as courier copies."
-        },
-        "effects": []
       },
-      {
-        "id": "k306-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 호송원. 직함은 계절 교대 전령, 전미리의 실무 담당자. 교대 통지와 환자 활력 표를 같은 원장에 적고, 매수된 쪽지는 당직실 문에 붙인다.",
-          "en": "Office. Rank: convoy hand. Title: seasonal rotation courier, duty officer of Jeon Miri. He wrote the rotation notices and the patient vital table in the same ledger and pasted bought notes on the duty-room door."
-        },
-        "stress": {
-          "ko": "공포. 전령 가방이 무기 적재 통지로 바뀌어 교대 결재가 외부 호위 시간표가 되는 것.",
-          "en": "Fear. That the courier bag would turn into an arms-loading notice and the rotation decree would become a protection force's timetable."
-        },
-        "relationship": {
-          "ko": "관계. 전미리와 안도한의 승인 순서 다툼을 쪽지로 나르고, 장세화의 계절 교대 날인을 양쪽 칠판에 동시에 붙인다. 문시온의 심사 거부를 전령 사본으로 남긴다.",
-          "en": "Relations. Carried the approval-order dispute between Jeon Miri and An Dohan by note and pasted Jang Sehwa's seasonal rotation stamp on both chalkboards at once. Left Mun Sion's examination refusal as courier copies."
-        },
-        "effects": []
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "두복은 교대 날인을 양쪽 칠판에 동시에 붙이고 심사 거부를 사본으로 남긴다. 없는 시각 두 칸의 실제 이동은 미확인이다.",
-      "en": "Dubok posts shift seals to both boards simultaneously and preserves inspection refusals. Actual movements for the missing two times remain unknown."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,72 +168,52 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b450-b450-b989",
-    "name": "두릉 두씨",
-    "crest": "clan-crests/b450-b450-b989.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -20,
-    "개방": 40,
-    "무력": -30,
-    "물질": 5,
-    "공동": 20,
-    "원칙": 5,
-    "공개": 25,
-    "자격": 25,
-    "분산": 45,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": -10,
-    "위험": 35,
-    "과시": 5,
-    "지속": 0,
-    "지향": "양성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "계절 교대 통지·환자 활력 기록",
-    "소속": "신내운수",
-    "품계": "호송원",
-    "직함": "계절 교대 전령, 전미리의 실무 담당자",
-    "가치관": "권위 −20 | 개방 40 | 무력 −30 | 물질 5 | 공동 20 | 원칙 5 | 공개 25 | 자격 25 | 분산 45 | 변혁 5",
-    "욕망": "갈망 30 | 독점 −10 | 위험 35 | 과시 5 | 지속 0 | 지향 양성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2066-08-08에 태어났다. 신내 환승 당직에서 자랐다. 2126년 개막에는 계절 교대 전령, 전미리의 실무 담당자 당직을 맡으며, 직위 인수 기록에는 무표 출발 열차 저지로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 두복의 계절 교대 통지·환자 활력 기록 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
-    "관직": "품계 호송원. 직함은 계절 교대 전령, 전미리의 실무 담당자. 교대 통지와 환자 활력 표를 같은 원장에 적고, 매수된 쪽지는 당직실 문에 붙인다.",
-    "일화": "의료열차 무기 발견 직후 교대 쪽지에 없는 시각이 두 칸 생겼다.",
-    "관계": "전미리와 안도한의 승인 순서 다툼을 쪽지로 나르고, 장세화의 계절 교대 날인을 양쪽 칠판에 동시에 붙인다. 문시온의 심사 거부를 전령 사본으로 남긴다.",
-    "야망": "배차조와 의료조의 계절 교대를 고정 전령로로 남겨 노선 면허 밖의 호송료가 결재 순서를 사지 못하게 하려 한다.",
-    "공포": "전령 가방이 무기 적재 통지로 바뀌어 교대 결재가 외부 호위 시간표가 되는 것.",
-    "개입": "매수 쪽지를 공개하거나, 의료조 우선 교대를 전령로에 고정할 수 있다."
-  },
-  "biography": "2066-08-08생인 두복은 결재 교대 쪽지를 분 단위로 기억하고, 구두 승인을 전령 원장에 옮기기 전에 배차표를 고치지 않는다. 의료조와 배차조의 순서를 한 장에 몰면 분필을 꺾는다.\n\n- 생업: 계절 교대 통지·환자 활력 기록\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 계절 교대 전령, 전미리의 실무 담당자\n**생애.** 2066-08-08에 태어났다. 신내 환승 당직에서 자랐다. 2126년 개막에는 계절 교대 전령, 전미리의 실무 담당자 당직을 맡으며, 직위 인수 기록에는 무표 출발 열차 저지로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 두복의 계절 교대 통지·환자 활력 기록 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 호송원. 직함은 계절 교대 전령, 전미리의 실무 담당자. 교대 통지와 환자 활력 표를 같은 원장에 적고, 매수된 쪽지는 당직실 문에 붙인다.\n\n**일화.** 의료열차 무기 발견 직후 교대 쪽지에 없는 시각이 두 칸 생겼다.\n\n**관계.** 전미리와 안도한의 승인 순서 다툼을 쪽지로 나르고, 장세화의 계절 교대 날인을 양쪽 칠판에 동시에 붙인다. 문시온의 심사 거부를 전령 사본으로 남긴다.\n\n**야망.** 배차조와 의료조의 계절 교대를 고정 전령로로 남겨 노선 면허 밖의 호송료가 결재 순서를 사지 못하게 하려 한다.\n\n**공포.** 전령 가방이 무기 적재 통지로 바뀌어 교대 결재가 외부 호위 시간표가 되는 것.\n\n**개입.** 매수 쪽지를 공개하거나, 의료조 우선 교대를 전령로에 고정할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 40 | 무력 −30 | 물질 5 | 공동 20 | 원칙 5 | 공개 25 | 자격 25 | 분산 45 | 변혁 5\n- 욕망: 갈망 30 | 독점 −10 | 위험 35 | 과시 5 | 지속 0 | 지향 양성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-12"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "두복",
-        "type": "계약",
-        "to": "전미리",
-        "basis": "전미리와 안도한의 승인 순서 다툼을 쪽지로 나르고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1135069500",
+      "name": {
+        "ko": "상계6·7동"
       },
-      {
-        "from": "두복",
-        "type": "계약",
-        "to": "안도한",
-        "basis": "전미리와 안도한의 승인 순서 다툼을 쪽지로 나르고"
-      }
-    ],
-    "incoming": []
-  }
+      "holderPersonId": "K306",
+      "directLiegePersonId": "K324",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1135069500",
+          "name": "상계6·7동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ],
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:노원",
+      "name": {
+        "ko": "노원역"
+      },
+      "holderPersonId": "K308",
+      "directLiegePersonId": "K306",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "노원",
+        "stationName": "노원"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1135069500",
+          "name": "상계6·7동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "봉모",
+      "holderRoute": "/people/person-0309"
+    }
+  ]
 }

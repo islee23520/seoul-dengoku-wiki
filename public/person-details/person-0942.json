@@ -1,492 +1,101 @@
 {
   "id": "person-0942",
   "name": "조지 앤더슨",
-  "title": "호송 전령",
-  "position": "호송 전령",
+  "title": "국군 병사",
+  "position": "국군 병사 · 이태원역",
   "characterId": "K942",
-  "rank": "주사",
+  "rank": "중사",
   "commonTier": "T5",
-  "occupation": "무표 열차 출발·서명 확인",
+  "occupation": "징집 보병",
   "gender": "남성",
   "stage": "S4",
-  "state": "S07",
-  "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-조지 앤더슨",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0942",
   "birthDate": "2092-02-22",
   "birthday": "02-22",
   "age": 34,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-07.json#/content/611",
-    "lore/characters/Cast-State-07.json#/content/613",
-    "lore/characters/Cast-State-07.json#/content/614"
-  ],
-  "familyTree": {
-    "personId": "K942",
-    "nodes": [
-      {
-        "id": "K942",
-        "personId": "K942",
-        "kind": "person",
-        "name": "조지 앤더슨",
-        "birthDate": "2092-02-22",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K942"
-          },
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-조지-앤더슨-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "소속: 환적국",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-조지-앤더슨-list2"
-              }
-            ]
-          }
-        ],
-        "nameEn": "George Anderson",
-        "detailRoute": "/people/person-0942"
-      },
-      {
-        "id": "FH-K942-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "로버트 앤더슨",
-        "birthDate": "2062-02-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-조지-앤더슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2100,
-            "summary": "로버트 앤더슨은 2062년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2080년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-조지-앤더슨-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Robert Anderson was born in 2062 and grew up reading family and work records. From 2080, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Robert Anderson",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K942-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "제임스 앤더슨",
-        "birthDate": "2032-02-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-조지-앤더슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2070,
-            "summary": "제임스 앤더슨은 2032년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2050년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-조지-앤더슨-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "James Anderson was born in 2032 and grew up reading family and work records. From 2050, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "James Anderson",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K942-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "에드워드 앤더슨",
-        "birthDate": "2002-02-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-조지-앤더슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "에드워드 앤더슨은 2030년 대정전 당시 용산·이태원 생활권에서 미 육군 보급 업무를 맡고 있었다. 연락이 끊긴 뒤 남은 물자와 인계받은 사람을 종이에 적었다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-조지-앤더슨-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Edward Anderson was in the family's local community when communications failed in 2030. Serving in US Army logistics, he recorded remaining supplies and their recipients."
-          }
-        ],
-        "nameEn": "Edward Anderson",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K942-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "베아트리스 테일러",
-        "birthDate": "2062-02-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-조지-앤더슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2100,
-            "summary": "베아트리스 테일러는 2062년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2080년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-조지-앤더슨-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Beatrice Taylor was born in 2062 and grew up reading family and work records. From 2080, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Beatrice Taylor",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K942-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "로절린 테일러",
-        "birthDate": "2032-02-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-조지-앤더슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2070,
-            "summary": "로절린 테일러는 2032년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2050년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-조지-앤더슨-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Rosalind Taylor was born in 2032 and grew up reading family and work records. From 2050, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Rosalind Taylor",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K942-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "실비아 테일러",
-        "birthDate": "2002-02-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-조지-앤더슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "실비아 테일러는 2030년 대정전 당시 용산·이태원 생활권에서 용산의 민간 창고 관리와 이태원 숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-조지-앤더슨-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Sylvia Taylor was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
-          }
-        ],
-        "nameEn": "Sylvia Taylor",
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K942-P-01:K942:biological",
-        "from": "FH-K942-P-01",
-        "to": "K942",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-조지-앤더슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K942-P-02:FH-K942-P-01:biological",
-        "from": "FH-K942-P-02",
-        "to": "FH-K942-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-조지-앤더슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K942-P-03:FH-K942-P-02:biological",
-        "from": "FH-K942-P-03",
-        "to": "FH-K942-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-조지-앤더슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K942-M-01:K942:biological",
-        "from": "FH-K942-M-01",
-        "to": "K942",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-조지-앤더슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K942-M-02:FH-K942-M-01:biological",
-        "from": "FH-K942-M-02",
-        "to": "FH-K942-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-조지-앤더슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K942-M-03:FH-K942-M-02:biological",
-        "from": "FH-K942-M-03",
-        "to": "FH-K942-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-조지-앤더슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": null,
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "용산구 부대의 중사로 이태원역 막사에 기재되어 있다. 이촌과 용산 다리의 북쪽 끝 검문소에 교대로 서며, 다리를 건너오는 사람의 증표를 총보다 먼저 확인한다. 집안은 대정전 무렵 용산에서 미 육군 보급 일을 맡았던 에드워드 앤더슨에서 이어 온 미국계 가계이고, 그가 남긴 물품 인계 기록을 대대로 생활 장부와 맞춰 왔다. 허가 상인의 임시 기재와 그가 들고 온 통행 서류가 서로 다르면, 그는 허리에 찬 등불 아래에서 두 장을 한 줄씩 맞춰 본다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "국군 병사",
+    "품계": "중사",
+    "생업": "징집 보병",
+    "일하는 역": "이태원역",
+    "잠자는 역": "이태원역",
+    "가구": "혼자 사는 가구"
   },
-  "proseContacts": [],
+  "sections": {
+    "생애": "용산구 부대의 중사로 이태원역 막사에 기재되어 있다. 이촌과 용산 다리의 북쪽 끝 검문소에 교대로 서며, 다리를 건너오는 사람의 증표를 총보다 먼저 확인한다. 집안은 대정전 무렵 용산에서 미 육군 보급 일을 맡았던 에드워드 앤더슨에서 이어 온 미국계 가계이고, 그가 남긴 물품 인계 기록을 대대로 생활 장부와 맞춰 왔다. 허가 상인의 임시 기재와 그가 들고 온 통행 서류가 서로 다르면, 그는 허리에 찬 등불 아래에서 두 장을 한 줄씩 맞춰 본다.",
+    "관직": "직함 국군 병사. 직위 국군 병사 · 이태원역. 품계 중사. 일하는 역 이태원역."
+  },
+  "values": {
+    "권위": 55,
+    "개방": -15,
+    "무력": 35,
+    "물질": 25,
+    "공동": 5,
+    "원칙": 10,
+    "공개": -25,
+    "자격": 55,
+    "분산": -50,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": 10,
+    "위험": -20,
+    "과시": 15,
+    "지속": -10,
+    "지향": "이성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0942",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 4,
         "effective": 4
       },
-      "strategy": {
+      "martial": {
+        "base": 10,
+        "effective": 10
+      },
+      "stewardship": {
+        "base": 4,
+        "effective": 4
+      },
+      "intrigue": {
         "base": 5,
         "effective": 5
-      },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 8,
-        "effective": 8
       },
       "learning": {
-        "base": 7,
-        "effective": 7
+        "base": 4,
+        "effective": 4
       },
       "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
+        "base": 11,
+        "effective": 11
       }
     },
-    "skills": [
-      {
-        "id": "departure-document-check",
-        "name": {
-          "ko": "출발 문서 확인",
-          "en": "Departure document checking"
-        },
-        "rating": 45
-      }
-    ],
-    "traits": [
-      {
-        "id": "k942-disposition",
-        "name": {
-          "ko": "미확인 점유 경계",
-          "en": "Caution about unverified occupancy"
-        },
-        "description": {
-          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.",
-          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
-        },
-        "behavior": {
-          "ko": "관직. 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-          "en": "Office. Rank: registrar. Title: convoy courier. He handed over only the keys and records of his own post, and never made authority he did not hold."
-        },
-        "stress": {
-          "ko": "공포. 호송 전령 당직이 비면 용산의 배차·환적 인계가 끊기고, 서울 안의 급수·진료·물품 인계 상대에게 확인되지 않은 완료 기록이 넘어가는 것.",
-          "en": "Fear. That the convoy courier duty post would stand empty, interrupting dispatch and transshipment handovers in Yongsan and passing unverified completion records to water-supply, medical-care and goods handover counterparts within Seoul."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 조지 앤더슨은 배차표·출발 서명 누락을 레아 마르탱에게 알린다. 레아 마르탱은 게시 사본을 확인해 미확인 출발이 후속 창 점유의 정상 기록으로 이어지지 않게 한다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. George Anderson reports missing dispatch sheets and departure signatures to Léa Martin. Léa checks posted copies so unverified departures do not become regular entries in subsequent slot occupation."
-        },
-        "effects": []
-      },
-      {
-        "id": "k942-choice",
-        "name": {
-          "ko": "서명 없는 출발 거부",
-          "en": "Refusing unsigned departures"
-        },
-        "description": {
-          "ko": "일화. 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In 2125 he stopped a dispatch-sheetless train and blocked an unsigned departure. By this deed the signature of the convoy courier post rose into the ledger."
-        },
-        "behavior": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 조지 앤더슨은 배차표·출발 서명 누락을 레아 마르탱에게 알린다. 레아 마르탱은 게시 사본을 확인해 미확인 출발이 후속 창 점유의 정상 기록으로 이어지지 않게 한다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. George Anderson reports missing dispatch sheets and departure signatures to Léa Martin. Léa checks posted copies so unverified departures do not become regular entries in subsequent slot occupation."
-        },
-        "stress": {
-          "ko": "공포. 호송 전령 당직이 비면 용산의 배차·환적 인계가 끊기고, 서울 안의 급수·진료·물품 인계 상대에게 확인되지 않은 완료 기록이 넘어가는 것.",
-          "en": "Fear. That the convoy courier duty post would stand empty, interrupting dispatch and transshipment handovers in Yongsan and passing unverified completion records to water-supply, medical-care and goods handover counterparts within Seoul."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 조지 앤더슨은 배차표·출발 서명 누락을 레아 마르탱에게 알린다. 레아 마르탱은 게시 사본을 확인해 미확인 출발이 후속 창 점유의 정상 기록으로 이어지지 않게 한다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. George Anderson reports missing dispatch sheets and departure signatures to Léa Martin. Léa checks posted copies so unverified departures do not become regular entries in subsequent slot occupation."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "서명 없는 출발을 막고 레아에게 알린다. 게시 사본 확인은 레아가 하며 전령에게 원장 심사 전체를 주지 않았다.",
-      "en": "Blocks an unsigned departure and notifies Lea. Lea checks the posted copies; the courier is not granted full ledger-review expertise."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,55 +133,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": null,
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 10,
-    "개방": 40,
-    "무력": 0,
-    "물질": 30,
-    "공동": 0,
-    "원칙": -10,
-    "공개": 0,
-    "자격": 40,
-    "분산": 0,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": 10,
-    "위험": -20,
-    "과시": 15,
-    "지속": -10,
-    "지향": "이성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "소속": "환적국",
-    "품계": "주사",
-    "생업": "무표 열차 출발·서명 확인",
-    "직함": "호송 전령",
-    "가치관": "권위 10 | 개방 40 | 무력 0 | 물질 30 | 공동 0 | 원칙 −10 | 공개 0 | 자격 40 | 분산 0 | 변혁 5",
-    "욕망": "갈망 30 | 독점 10 | 위험 −20 | 과시 15 | 지속 −10 | 지향 이성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2092년생인 조지 앤더슨은 2126년 개막기에 호송 전령 업무를 맡는다. 신내 환승 당직에서 자랐다. 호송 전령 업무는 무표 출발 열차 저지를 계기로 시작됐다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 에드워드 앤더슨은 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 조지 앤더슨의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 조지 앤더슨의 무표 열차 출발·서명 확인 업무는 한강로동과 연결된다.",
-    "관직": "품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 인계하며, 없는 권한은 만들어 내지 않는다.",
-    "일화": "2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 행동을 계기로 호송 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "조지 앤더슨은 배차표·출발 서명 누락을 기록 담당자에게 알린다. 기록 담당자는 게시 사본을 확인해 미확인 출발이 후속 창 점유의 정상 기록으로 이어지지 않게 한다.",
-    "야망": "호송 전령 업무의 무표 열차 출발·서명 확인 기록을 환적국 장부와 이어, 다음 당직이 같은 기록을 확인하게 한다.",
-    "공포": "호송 전령 당직이 비면 용산의 배차·환적 인계가 끊기고, 서울 안의 급수·진료·물품 인계 상대에게 확인되지 않은 완료 기록이 넘어가는 것.",
-    "개입": "당직 인수에 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "조지 앤더슨은 무표 열차 출발·서명 확인 업무를 맡는다. 조지 앤더슨은 배차표·출발 서명 누락을 기록 담당자에게 알린다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 무표 열차 출발·서명 확인\n- 직함: 호송 전령\n**생애.** 2092년생인 조지 앤더슨은 2126년 개막기에 호송 전령 업무를 맡는다. 신내 환승 당직에서 자랐다. 호송 전령 업무는 무표 출발 열차 저지를 계기로 시작됐다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 에드워드 앤더슨은 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 조지 앤더슨의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 조지 앤더슨의 무표 열차 출발·서명 확인 업무는 한강로동과 연결된다.\n\n**관직.** 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 인계하며, 없는 권한은 만들어 내지 않는다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 행동을 계기로 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 조지 앤더슨은 배차표·출발 서명 누락을 기록 담당자에게 알린다. 기록 담당자는 게시 사본을 확인해 미확인 출발이 후속 창 점유의 정상 기록으로 이어지지 않게 한다.\n\n**야망.** 호송 전령 업무의 무표 열차 출발·서명 확인 기록을 환적국 장부와 이어, 다음 당직이 같은 기록을 확인하게 한다.\n\n**공포.** 호송 전령 당직이 비면 용산의 배차·환적 인계가 끊기고, 서울 안의 급수·진료·물품 인계 상대에게 확인되지 않은 완료 기록이 넘어가는 것.\n\n**개입.** 당직 인수에 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 40 | 무력 0 | 물질 30 | 공동 0 | 원칙 −10 | 공개 0 | 자격 40 | 분산 0 | 변혁 5\n- 욕망: 갈망 30 | 독점 10 | 위험 −20 | 과시 15 | 지속 −10 | 지향 이성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-07"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

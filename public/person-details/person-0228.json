@@ -1,493 +1,105 @@
 {
   "id": "person-0228",
   "name": "봉소",
-  "title": "송신조 당직 의무원",
-  "position": "금고 당직 의무원",
+  "title": "김포공항 봉씨네 바람대 대주",
+  "position": "김포공항 봉씨네 바람대 대주 · 김포공항역",
   "characterId": "K227",
-  "rank": "서기",
+  "rank": "대주",
   "commonTier": "T5",
-  "occupation": "금고 당직 진료·각성제 사용 기록",
+  "occupation": "바람틀 정비",
   "gender": "남성",
   "stage": "S2",
-  "state": "S09",
-  "stateName": "여의도출자연합회",
-  "sourceRoute": "/world/Cast-State-09#인물-봉소",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0228",
   "birthDate": "2090-05-24",
   "birthday": "05-24",
   "age": 36,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-09.json#/content/82",
-    "lore/characters/Cast-State-09.json#/content/83"
-  ],
-  "familyTree": {
-    "personId": "K227",
-    "nodes": [
-      {
-        "id": "K227",
-        "personId": "K227",
-        "kind": "person",
-        "name": "봉소",
-        "birthDate": "2090-05-24",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K227"
-          },
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉소-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 금고 당직 의무원 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-봉소-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0228"
-      },
-      {
-        "id": "FH-K227-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "봉승석",
-        "lineage": {
-          "surname": "봉",
-          "bongwan": "하음",
-          "clan": "bd09-d558-c74c"
-        },
-        "birthDate": "2060-05-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉소-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2098,
-            "summary": "봉승석은 제기동 의무소에서 금고 당직 진료·각성제 사용 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-봉소-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K227-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "봉승준",
-        "lineage": {
-          "surname": "봉",
-          "bongwan": "하음",
-          "clan": "bd09-d558-c74c"
-        },
-        "birthDate": "2030-05-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉소-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "봉승준은 제기동 의무소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-봉소-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K227-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "봉승호",
-        "lineage": {
-          "surname": "봉",
-          "bongwan": "하음",
-          "clan": "bd09-d558-c74c"
-        },
-        "birthDate": "2000-05-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉소-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "봉승호는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-봉소-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K227-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김현문",
-        "birthDate": "2060-05-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉소-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2098,
-            "summary": "김현문은 제기동 의무소에서 금고 당직 진료·각성제 사용 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-봉소-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K227-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박현문",
-        "birthDate": "2030-05-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉소-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "박현문은 제기동 의무소에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-봉소-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K227-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "이현재",
-        "birthDate": "2000-05-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉소-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이현재는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-봉소-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K227-P-01:K227:biological",
-        "from": "FH-K227-P-01",
-        "to": "K227",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉소-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K227-P-02:FH-K227-P-01:biological",
-        "from": "FH-K227-P-02",
-        "to": "FH-K227-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉소-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K227-P-03:FH-K227-P-02:biological",
-        "from": "FH-K227-P-03",
-        "to": "FH-K227-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉소-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K227-M-01:K227:biological",
-        "from": "FH-K227-M-01",
-        "to": "K227",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉소-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K227-M-02:FH-K227-M-01:biological",
-        "from": "FH-K227-M-02",
-        "to": "FH-K227-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉소-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K227-M-03:FH-K227-M-02:biological",
-        "from": "FH-K227-M-03",
-        "to": "FH-K227-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉소-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bd09-d558-c74c",
+    "name": "하음 봉씨",
+    "crest": "clan-crests/bd09-d558-c74c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "봉소는 큰 대들이 버린 날개 조각을 이어 붙여 작은 바람틀을 짠다. 김포공항의 봉씨네 바람대는 작아서 계약 와트로는 강서에서 중간에 들고, 그 작은 틀들은 김포공항 출입구 위 바람이 센 자리에 서서 역의 환풍기를 돌린다. 큰 대와 맞서지 않는 것이 서른여섯 해를 산 봉소의 셈이고, 그는 셈판 값이 오를 때 제 틀의 와트를 조금씩 더 판다. 봉씨네도 바람밭 도장 집안 다섯 가운데 하나라 대주회가 열리면 그가 후보로 서지만, 화덕에 킬로를 거는 다툼만큼은 큰 대들에게 맡겨 둔다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "김포공항 봉씨네 바람대 대주",
+    "품계": "대주",
+    "생업": "바람틀 정비",
+    "일하는 역": "김포공항역",
+    "잠자는 역": "김포공항역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "봉소는 큰 대들이 버린 날개 조각을 이어 붙여 작은 바람틀을 짠다. 김포공항의 봉씨네 바람대는 작아서 계약 와트로는 강서에서 중간에 들고, 그 작은 틀들은 김포공항 출입구 위 바람이 센 자리에 서서 역의 환풍기를 돌린다. 큰 대와 맞서지 않는 것이 서른여섯 해를 산 봉소의 셈이고, 그는 셈판 값이 오를 때 제 틀의 와트를 조금씩 더 판다. 봉씨네도 바람밭 도장 집안 다섯 가운데 하나라 대주회가 열리면 그가 후보로 서지만, 화덕에 킬로를 거는 다툼만큼은 큰 대들에게 맡겨 둔다.",
+    "관직": "직함 김포공항 봉씨네 바람대 대주. 직위 김포공항 봉씨네 바람대 대주 · 김포공항역. 품계 대주. 일하는 역 김포공항역."
+  },
+  "values": {
+    "권위": -50,
+    "개방": 50,
+    "무력": -70,
+    "물질": 10,
+    "공동": -15,
+    "원칙": 10,
+    "공개": 55,
+    "자격": 25,
+    "분산": 75,
+    "변혁": 5
+  },
+  "desire": {
+    "갈망": 50,
+    "독점": -10,
+    "위험": -5,
+    "과시": 5,
+    "지속": 30,
+    "지향": "무성향",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0228",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 11,
+        "effective": 11
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
-      },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
       },
       "learning": {
-        "base": 10,
-        "effective": 10
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
         "base": 8,
         "effective": 8
-      }
-    },
-    "skills": [
-      {
-        "id": "duty-care",
-        "name": {
-          "ko": "당직자 진료",
-          "en": "Duty-worker care"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "duty-care-disposition",
-        "name": {
-          "ko": "국적보다 환자",
-          "en": "Patient before nationality"
-        },
-        "description": {
-          "ko": "손떨림을 먼저 보고 약 봉투에 국적을 쓰지 않는다.",
-          "en": "Notices trembling first and refuses nationality on medicine packets."
-        },
-        "behavior": {
-          "ko": "손떨림을 먼저 보고 약 봉투에 국적을 쓰지 않는다.",
-          "en": "Notices trembling first and refuses nationality on medicine packets."
-        },
-        "stress": {
-          "ko": "가짜 각성제 확산을 두려워한다.",
-          "en": "Fears counterfeit stimulant spread."
-        },
-        "relationship": {
-          "ko": "권미래의 밤샘 조를 진료하고, 황은설의 보류 감정 밤에 대기한다. 류은비에게 해열 약재 배정을 빚졌다.",
-          "en": "Treats Gwon Mirae’s overnight crew, stands by for Hwang Eunseol and owes Ryu Eunbi for fever herbs."
-        },
-        "effects": []
       },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "보호를 위한 침묵",
-          "en": "Protective silence"
-        },
-        "description": {
-          "ko": "환자를 살리기 위해 감정 요청을 미룬다.",
-          "en": "Delays appraisal requests to protect patients."
-        },
-        "behavior": {
-          "ko": "환자를 살리기 위해 감정 요청을 미룬다.",
-          "en": "Delays appraisal requests to protect patients."
-        },
-        "stress": {
-          "ko": "가짜 각성제가 당직 줄에 퍼져 위조 화폐가 그대로 나가는 것.",
-          "en": "Fears counterfeit stimulant spread."
-        },
-        "relationship": {
-          "ko": "권미래의 밤샘 조를 진료하고, 황은설의 보류 감정 밤에 대기한다. 류은비에게 해열 약재 배정을 빚졌다.",
-          "en": "Treats Gwon Mirae’s overnight crew, stands by for Hwang Eunseol and owes Ryu Eunbi for fever herbs."
-        },
-        "effects": []
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "밤샘 조를 진료하고 각성제를 공동 서명에 묶는다. 보호를 위해 감정 요청도 미룬다.",
-      "en": "Treats overnight crews, requires joint stimulant signatures and delays appraisal for patient protection."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -525,72 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bd09-d558-c74c",
-    "name": "하음 봉씨",
-    "crest": "clan-crests/bd09-d558-c74c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -15,
-    "개방": 35,
-    "무력": -60,
-    "물질": -5,
-    "공동": 10,
-    "원칙": 20,
-    "공개": 55,
-    "자격": 5,
-    "분산": 20,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 50,
-    "독점": -10,
-    "위험": -5,
-    "과시": 5,
-    "지속": 30,
-    "지향": "무성향",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "금고 당직 진료·각성제 사용 기록",
-    "소속": "여의도출자연합회",
-    "품계": "서기",
-    "직함": "금고 당직 의무원",
-    "가치관": "권위 −15 | 개방 35 | 무력 −60 | 물질 −5 | 공동 10 | 원칙 20 | 공개 55 | 자격 5 | 분산 20 | 변혁 −5",
-    "욕망": "갈망 50 | 독점 −10 | 위험 −5 | 과시 5 | 지속 30 | 지향 무성향 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2090-05-24 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 제기동 의무소에서 자랐다. 금고 당직 의무원 자리는 가짜 약 봉인으로 열렸다.\n- 봉소는 여의동을 업무동으로 삼아 금고 당직 진료·각성제 사용 기록 업무를 맡는다.",
-    "관직": "품계 서기. 직함은 금고 당직 의무원. 당직 활력 기록을 의무실 문에 붙이고, 각성제 사용은 두 의무원의 서명 없이 금지한다.",
-    "일화": "편집 공백이 발견된 밤에 당직 두 명이 쓰러지고 각성제 봉인이 한 줄 빠져 있었다.",
-    "관계": "권미래의 밤샘 조를 진료하고, 황은설의 보류 감정 밤에 대기한다. 류은비에게 해열 약재 배정을 빚졌다.",
-    "야망": "여의도 금고와 장부 저장소에 독립 의무실을 두어, 감정 교대가 쓰러져도 공용 화폐의 발행이 멈추지 않게 한다.",
-    "공포": "가짜 각성제가 당직 줄에 퍼져 위조 화폐가 그대로 나가는 것.",
-    "개입": "빠진 봉인을 추적하거나, 의무실 열쇠를 출자 평의회와 나눠 쥐게 할 수 있다."
-  },
-  "biography": "밤샘하는 기사의 손떨림을 먼저 보고, 약 봉투에 국적을 적는 일을 거부한다. 침묵으로 환자를 살릴 때는 감정 요청도 미룬다.\n\n- 생업: 금고 당직 진료·각성제 사용 기록\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 금고 당직 의무원\n**생애.** 2090-05-24 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 제기동 의무소에서 자랐다. 금고 당직 의무원 자리는 가짜 약 봉인으로 열렸다.\n- 봉소는 여의동을 업무동으로 삼아 금고 당직 진료·각성제 사용 기록 업무를 맡는다.\n\n**관직.** 품계 서기. 직함은 금고 당직 의무원. 당직 활력 기록을 의무실 문에 붙이고, 각성제 사용은 두 의무원의 서명 없이 금지한다.\n\n**일화.** 편집 공백이 발견된 밤에 당직 두 명이 쓰러지고 각성제 봉인이 한 줄 빠져 있었다.\n\n**관계.** 권미래의 밤샘 조를 진료하고, 황은설의 보류 감정 밤에 대기한다. 류은비에게 해열 약재 배정을 빚졌다.\n\n**야망.** 여의도 금고와 장부 저장소에 독립 의무실을 두어, 감정 교대가 쓰러져도 공용 화폐의 발행이 멈추지 않게 한다.\n\n**공포.** 가짜 각성제가 당직 줄에 퍼져 위조 화폐가 그대로 나가는 것.\n\n**개입.** 빠진 봉인을 추적하거나, 의무실 열쇠를 출자 평의회와 나눠 쥐게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 35 | 무력 −60 | 물질 −5 | 공동 10 | 원칙 20 | 공개 55 | 자격 5 | 분산 20 | 변혁 −5\n- 욕망: 갈망 50 | 독점 −10 | 위험 −5 | 과시 5 | 지속 30 | 지향 무성향 | 결합 없음",
-  "sources": [
-    "Cast-State-09"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "봉소",
-        "type": "계약",
-        "to": "권미래",
-        "basis": "권미래의 밤샘 조를 진료하고"
-      },
-      {
-        "from": "봉소",
-        "type": "계약",
-        "to": "황은설",
-        "basis": "황은설의 보류 방송 밤에 대기한다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

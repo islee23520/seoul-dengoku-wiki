@@ -1,496 +1,108 @@
 {
   "id": "person-0290",
   "name": "추지훈",
-  "title": "차륜 정비 불량 폭로자",
-  "position": "성하전자 차륜 정비 불량 폭로자",
+  "title": "야전 정비공",
+  "position": "야전 정비공 · 강남역",
   "characterId": "K289",
-  "rank": "사원",
+  "rank": "정비공",
   "commonTier": "T5",
-  "occupation": "차륜 정비 일지·불량 부품 표본 공개",
+  "occupation": "이식 정비",
   "gender": "여성",
   "stage": "S3",
-  "state": "S11",
-  "stateName": "성하그룹",
-  "sourceRoute": "/world/Cast-State-11#인물-추지훈",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0290",
   "birthDate": "2105-10-20",
   "birthday": "10-20",
   "age": 21,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-11.json#/content/193",
-    "lore/characters/Cast-State-11.json#/content/196",
-    "lore/characters/Cast-State-11.json#/content/197"
-  ],
-  "familyTree": {
-    "personId": "K289",
-    "nodes": [
-      {
-        "id": "K289",
-        "personId": "K289",
-        "kind": "person",
-        "name": "추지훈",
-        "birthDate": "2105-10-20",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K289"
-          },
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-추지훈-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 강남역 차량기지에서 자랐다. 성하전자 차륜 정비 불량 폭로자 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-추지훈-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0290"
-      },
-      {
-        "id": "FH-K289-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "추승윤",
-        "lineage": {
-          "surname": "추",
-          "bongwan": "추계",
-          "clan": "cd94-cd94-acc4"
-        },
-        "birthDate": "2075-10-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-추지훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2113,
-            "summary": "추승윤은 강남역 차량기지에서 차륜 정비 일지·불량 부품 표본 공개 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-추지훈-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K289-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "추승우",
-        "lineage": {
-          "surname": "추",
-          "bongwan": "추계",
-          "clan": "cd94-cd94-acc4"
-        },
-        "birthDate": "2045-10-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-추지훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2083,
-            "summary": "추승우는 강남역 차량기지에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-추지훈-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K289-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "추승경",
-        "lineage": {
-          "surname": "추",
-          "bongwan": "추계",
-          "clan": "cd94-cd94-acc4"
-        },
-        "birthDate": "2015-10-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-추지훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "추승경은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-추지훈-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K289-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준호",
-        "birthDate": "2075-10-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-추지훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2113,
-            "summary": "이준호는 강남역 차량기지에서 차륜 정비 일지·불량 부품 표본 공개 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-추지훈-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K289-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준윤",
-        "birthDate": "2045-10-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-추지훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2083,
-            "summary": "최준윤은 강남역 차량기지에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-추지훈-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K289-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "정현빈",
-        "birthDate": "2015-10-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-추지훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정현빈은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-추지훈-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K289-P-01:K289:biological",
-        "from": "FH-K289-P-01",
-        "to": "K289",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-추지훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K289-P-02:FH-K289-P-01:biological",
-        "from": "FH-K289-P-02",
-        "to": "FH-K289-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-추지훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K289-P-03:FH-K289-P-02:biological",
-        "from": "FH-K289-P-03",
-        "to": "FH-K289-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-추지훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K289-M-01:K289:biological",
-        "from": "FH-K289-M-01",
-        "to": "K289",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-추지훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K289-M-02:FH-K289-M-01:biological",
-        "from": "FH-K289-M-02",
-        "to": "FH-K289-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-추지훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K289-M-03:FH-K289-M-02:biological",
-        "from": "FH-K289-M-03",
-        "to": "FH-K289-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-추지훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cd94-cd94-acc4",
+    "name": "추계 추씨",
+    "crest": "clan-crests/cd94-cd94-acc4.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "부르기 자리에서 추지훈이 소리 내어 말한 것은, 한 정비공이 맞춤 날을 건너뛰고 셈표에만 도장을 찍은 일이었다. 그 일 뒤로 강남역 사람들은 셈표가 의심스러우면 스물한 살의 그를 찾고, 그는 자기가 본 것만 본 날과 교대를 함께 대어 말한다. 지금은 부위 하나를 지닌 야전 정비공으로, 연장 꾸러미를 메고 강남역에서 경계 출입구로 나간다. 출입구에서 언 부위를 열 때도 그는 연 시각을 먼저 적는다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "야전 정비공",
+    "품계": "정비공",
+    "생업": "이식 정비",
+    "일하는 역": "강남역",
+    "잠자는 역": "강남역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "부르기 자리에서 추지훈이 소리 내어 말한 것은, 한 정비공이 맞춤 날을 건너뛰고 셈표에만 도장을 찍은 일이었다. 그 일 뒤로 강남역 사람들은 셈표가 의심스러우면 스물한 살의 그를 찾고, 그는 자기가 본 것만 본 날과 교대를 함께 대어 말한다. 지금은 부위 하나를 지닌 야전 정비공으로, 연장 꾸러미를 메고 강남역에서 경계 출입구로 나간다. 출입구에서 언 부위를 열 때도 그는 연 시각을 먼저 적는다.",
+    "관직": "직함 야전 정비공. 직위 야전 정비공 · 강남역. 품계 정비공. 일하는 역 강남역."
+  },
+  "values": {
+    "권위": 40,
+    "개방": -25,
+    "무력": 5,
+    "물질": -20,
+    "공동": 45,
+    "원칙": -10,
+    "공개": -40,
+    "자격": 50,
+    "분산": -25,
+    "변혁": 15
+  },
+  "desire": {
+    "갈망": 35,
+    "독점": 10,
+    "위험": -30,
+    "과시": 20,
+    "지속": 25,
+    "지향": "무성향",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0290",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
+      "martial": {
         "base": 3,
         "effective": 3
       },
-      "endurance": {
+      "stewardship": {
         "base": 7,
         "effective": 7
-      }
-    },
-    "skills": [
-      {
-        "id": "k289-defect-lot-documentation",
-        "name": {
-          "ko": "결함 로트 증빙",
-          "en": "Defect lot documentation"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k289-priority",
-        "name": {
-          "ko": "불량 공개",
-          "en": "Public defect disclosure"
-        },
-        "description": {
-          "ko": "추지훈은 같은 로트의 깎인 베어링을 정문에 걸어 조작을 폭로했다. 폭로가 사택 점거 명분으로 전용될 위험도 의식한다.",
-          "en": "Chu Jihun exposed manipulation by hanging a shaved bearing from the same lot at the gate, while fearing disclosure could justify occupation."
-        },
-        "behavior": {
-          "ko": "정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.",
-          "en": "Office. Rank: assistant manager. Title: wheel maintenance defect whistleblower. He pasted the maintenance logs directly on the Elder's board and cut defective parts out as specimens."
-        },
-        "stress": {
-          "ko": "폭로 서명이 사택 청원 벽보로 복사되어 기지가 인구 논리로 점거되는 것.",
-          "en": "Fear. That the exposure signature would be copied into residential election posters and the base would be seized by the logic of population."
-        },
-        "relationship": {
-          "ko": "송하율의 도제 일과를 폭로 근거로 받고, 이홍원의 공개 승계 시험 기록을 잠그지 않으며, 란하율의 용산 환적 로트와 번호를 맞춘다.",
-          "en": "Relations. Took Song Hayul's apprentice routine as exposure grounds, did not lock I Hongwon's public technology trial records, and matched numbers with Ran Hayul's Yongsan transshipment lots."
-        },
-        "effects": []
       },
-      {
-        "id": "k289-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 사원. 직함은 성하전자 차륜 정비 불량 폭로자. 정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.",
-          "en": "Office. Rank: assistant manager. Title: wheel maintenance defect whistleblower. He pasted the maintenance logs directly on the Elder's board and cut defective parts out as specimens."
-        },
-        "stress": {
-          "ko": "공포. 폭로 서명이 사택 청원 벽보로 복사되어 기지가 인구 논리로 점거되는 것.",
-          "en": "Fear. That the exposure signature would be copied into residential election posters and the base would be seized by the logic of population."
-        },
-        "relationship": {
-          "ko": "관계. 송하율의 도제 일과를 폭로 근거로 받고, 이홍원의 공개 승계 시험 기록을 잠그지 않으며, 란하율의 용산 환적 로트와 번호를 맞춘다.",
-          "en": "Relations. Took Song Hayul's apprentice routine as exposure grounds, did not lock I Hongwon's public technology trial records, and matched numbers with Ran Hayul's Yongsan transshipment lots."
-        },
-        "effects": []
+      "intrigue": {
+        "base": 6,
+        "effective": 6
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "추지훈은 같은 로트의 깎인 베어링을 정문에 걸어 조작을 폭로했다. 폭로가 사택 점거 명분으로 전용될 위험도 의식한다.",
-      "en": "Chu Jihun exposed manipulation by hanging a shaved bearing from the same lot at the gate, while fearing disclosure could justify occupation."
     },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -500,7 +112,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -526,72 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "cd94-cd94-acc4",
-    "name": "추계 추씨",
-    "crest": "clan-crests/cd94-cd94-acc4.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": -10,
-    "무력": -5,
-    "물질": 30,
-    "공동": 25,
-    "원칙": 0,
-    "공개": 5,
-    "자격": 85,
-    "분산": 5,
-    "변혁": -30
-  },
-  "desire": {
-    "갈망": 35,
-    "독점": 10,
-    "위험": -30,
-    "과시": 20,
-    "지속": 25,
-    "지향": "무성향",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "차륜 정비 일지·불량 부품 표본 공개",
-    "소속": "성하그룹",
-    "품계": "사원",
-    "직함": "성하전자 차륜 정비 불량 폭로자",
-    "가치관": "권위 15 | 개방 −10 | 무력 −5 | 물질 30 | 공동 25 | 원칙 0 | 공개 5 | 자격 85 | 분산 5 | 변혁 −30",
-    "욕망": "갈망 35 | 독점 10 | 위험 −30 | 과시 20 | 지속 25 | 지향 무성향 | 결합 다자"
-  },
-  "sections": {
-    "생애": "강남역 차량기지에서 자랐다. 성하전자 차륜 정비 불량 폭로자 자리는 탈선 직전 결함 보고로 열렸다.\n- 추지훈은 역삼1동에서 차륜 정비 일지·불량 부품 표본 공개 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 송하율의 도제 일과를 폭로 근거로 받고, 이홍원의 공개 승계 시험 기록을 잠그지 않으며, 란하율의 용산 환적 로트와 번호를 맞춘다",
-    "관직": "품계 사원. 직함은 성하전자 차륜 정비 불량 폭로자. 정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.",
-    "일화": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 추지훈은 같은 로트의 깎인 베어링을 기지 정문에 걸어 폭로했다.",
-    "관계": "송하율의 도제 일과를 폭로 근거로 받고, 이홍원의 공개 승계 시험 기록을 잠그지 않으며, 란하율의 용산 환적 로트와 번호를 맞춘다.",
-    "야망": "깎인 베어링과 제동 불량을 회장실 게시판의 유일한 가동 근거로 올려 이씨 가문 승계 소문을 일지로 끊는다.",
-    "공포": "폭로 서명이 사택 청원 벽보로 복사되어 기지가 인구 논리로 점거되는 것.",
-    "개입": "결함 부품의 출처 자국을 추적하거나, 폭로를 하루 늦춰 사택 점거를 막을 수 있다."
-  },
-  "biography": "남의 공구를 빼돌리는 일을 시험 부정과 같은 죄로 보고, 결함 표본을 자르지 않고 넘기는 반장을 참지 못한다. 손이 빠르고 말은 적다.\n\n- 생업: 차륜 정비 일지·불량 부품 표본 공개\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 차륜 정비 불량 폭로자\n**생애.** 강남역 차량기지에서 자랐다. 성하전자 차륜 정비 불량 폭로자 자리는 탈선 직전 결함 보고로 열렸다.\n- 추지훈은 역삼1동에서 차륜 정비 일지·불량 부품 표본 공개 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 송하율의 도제 일과를 폭로 근거로 받고, 이홍원의 공개 승계 시험 기록을 잠그지 않으며, 란하율의 용산 환적 로트와 번호를 맞춘다\n\n**관직.** 품계 사원. 직함은 성하전자 차륜 정비 불량 폭로자. 정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.\n\n**일화.** 겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 추지훈은 같은 로트의 깎인 베어링을 기지 정문에 걸어 폭로했다.\n\n**관계.** 송하율의 도제 일과를 폭로 근거로 받고, 이홍원의 공개 승계 시험 기록을 잠그지 않으며, 란하율의 용산 환적 로트와 번호를 맞춘다.\n\n**야망.** 깎인 베어링과 제동 불량을 회장실 게시판의 유일한 가동 근거로 올려 이씨 가문 승계 소문을 일지로 끊는다.\n\n**공포.** 폭로 서명이 사택 청원 벽보로 복사되어 기지가 인구 논리로 점거되는 것.\n\n**개입.** 결함 부품의 출처 자국을 추적하거나, 폭로를 하루 늦춰 사택 점거를 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −10 | 무력 −5 | 물질 30 | 공동 25 | 원칙 0 | 공개 5 | 자격 85 | 분산 5 | 변혁 −30\n- 욕망: 갈망 35 | 독점 10 | 위험 −30 | 과시 20 | 지속 25 | 지향 무성향 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-11"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "추지훈",
-        "type": "맹세",
-        "to": "송하율",
-        "basis": "송하율의 도제 일과를 폭로 근거로 받고"
-      },
-      {
-        "from": "추지훈",
-        "type": "맹세",
-        "to": "올렉산드르 셰우첸코",
-        "basis": "올렉산드르 셰우첸코의 용산 환적 로트와 번호를 맞춘다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

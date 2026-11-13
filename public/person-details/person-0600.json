@@ -1,386 +1,105 @@
 {
   "id": "person-0600",
   "name": "송하지",
-  "title": "관로 탐사원",
-  "position": "관로 탐사원",
+  "title": "취수구지기",
+  "position": "취수구지기 · 영등포역",
   "characterId": "K600",
-  "rank": "주사",
+  "rank": "견습",
   "commonTier": "T5",
-  "occupation": "대합실 당직",
+  "occupation": "취수구 정비",
   "gender": "남성",
   "stage": "S4",
-  "state": "S01",
-  "stateName": "수문국",
-  "sourceRoute": "/world/Cast-State-01#인물-송하지",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0600",
   "birthDate": "2073-02-13",
   "birthday": "02-13",
   "age": 53,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-01.json#/content/423",
-    "lore/characters/Cast-State-01.json#/content/425"
-  ],
-  "familyTree": {
-    "personId": "K600",
-    "nodes": [
-      {
-        "id": "K600",
-        "personId": "K600",
-        "kind": "person",
-        "name": "송하지",
-        "birthDate": "2073-02-13",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K600"
-          },
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-송하지-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-송하지-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0600"
-      },
-      {
-        "id": "FH-K600-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "송태섭",
-        "lineage": {
-          "surname": "송",
-          "bongwan": "은진",
-          "clan": "c1a1-c740-c9c4-5b8b-agreed-c9c0-second"
-        },
-        "birthDate": "2043-02-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-송하지-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2081,
-            "summary": "송태섭은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-송하지-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K600-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "송태성",
-        "lineage": {
-          "surname": "송",
-          "bongwan": "은진",
-          "clan": "c1a1-c740-c9c4-5b8b-agreed-c9c0-second"
-        },
-        "birthDate": "2013-02-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-송하지-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "송태성은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-송하지-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K600-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박재영",
-        "birthDate": "2043-02-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-송하지-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2081,
-            "summary": "박재영은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-송하지-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K600-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이재진",
-        "birthDate": "2013-02-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-송하지-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이재진은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-송하지-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K600-P-01:K600:biological",
-        "from": "FH-K600-P-01",
-        "to": "K600",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-송하지-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K600-P-02:FH-K600-P-01:biological",
-        "from": "FH-K600-P-02",
-        "to": "FH-K600-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-송하지-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K600-M-01:K600:biological",
-        "from": "FH-K600-M-01",
-        "to": "K600",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-송하지-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K600-M-02:FH-K600-M-01:biological",
-        "from": "FH-K600-M-02",
-        "to": "FH-K600-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-송하지-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c1a1-c740-c9c4-5b8b",
+    "name": "은진 송씨",
+    "crest": "clan-crests/c1a1-c740-c9c4-5b8b.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "송하지는 쉰세 살에 취수구대의 견습이 된 사람이다. 오랫동안 영등포 장터에서 물통을 나르는 일손이었고, 양평동 취수구를 손보는 손들 곁에서 품삯을 받다가 그 대 대주의 허락을 얻어 견습으로 붙었다. 그는 아이들과 같은 빛깔 끈만 단 채 취수구 관의 얼음을 깨는 법을 배운다. 세 번째 급수계약에서 취수구를 깊은 물길 쪽으로 내미는 일에 그는 손 하나를 보태고 싶어 한다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "취수구지기",
+    "품계": "견습",
+    "생업": "취수구 정비",
+    "일하는 역": "영등포역",
+    "잠자는 역": "영등포역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "송하지는 쉰세 살에 취수구대의 견습이 된 사람이다. 오랫동안 영등포 장터에서 물통을 나르는 일손이었고, 양평동 취수구를 손보는 손들 곁에서 품삯을 받다가 그 대 대주의 허락을 얻어 견습으로 붙었다. 그는 아이들과 같은 빛깔 끈만 단 채 취수구 관의 얼음을 깨는 법을 배운다. 세 번째 급수계약에서 취수구를 깊은 물길 쪽으로 내미는 일에 그는 손 하나를 보태고 싶어 한다.",
+    "관직": "직함 취수구지기. 직위 취수구지기 · 영등포역. 품계 견습. 일하는 역 영등포역."
+  },
+  "values": {
+    "권위": 15,
+    "개방": 15,
+    "무력": 5,
+    "물질": 45,
+    "공동": 5,
+    "원칙": 20,
+    "공개": 0,
+    "자격": 25,
+    "분산": 15,
+    "변혁": -10
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -20,
+    "위험": -15,
+    "과시": 15,
+    "지속": -10,
+    "지향": "동성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0600",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
-        "base": 6,
-        "effective": 6
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
-      },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 8,
-        "effective": 8
       },
       "learning": {
         "base": 7,
         "effective": 7
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k600-public-counter-referral",
-        "name": {
-          "ko": "공개 창구 안내",
-          "en": "Public-counter referral"
-        },
-        "rating": 45
-      }
-    ],
-    "traits": [
-      {
-        "id": "k600-action-priority",
-        "name": {
-          "ko": "공개 요청으로",
-          "en": "Requests in public"
-        },
-        "description": {
-          "ko": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다.",
-          "en": "In 2125 he sent a private petition back and passed it to the public window. By this deed the signature of the pipeline surveyor post rose into the ledger."
-        },
-        "behavior": {
-          "ko": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다.",
-          "en": "In 2125 he sent a private petition back and passed it to the public window. By this deed the signature of the pipeline surveyor post rose into the ledger."
-        },
-        "stress": {
-          "ko": "관로 탐사원 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
-          "en": "That the pipeline surveyor duty post would stand empty and the Compact's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡는다.",
-          "en": "Serves under Byeon Goun on concourse shifts and conduit surveys."
-        },
-        "effects": []
-      },
-      {
-        "id": "k600-bounded-handover",
-        "name": {
-          "ko": "기록으로 잇는 당직",
-          "en": "Duty linked by records"
-        },
-        "description": {
-          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
-          "en": "Passes keys and records to the next shift without enlarging authority."
-        },
-        "behavior": {
-          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
-          "en": "Passes keys and records to the next shift without enlarging authority."
-        },
-        "stress": {
-          "ko": "관로 탐사원 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
-          "en": "That the pipeline surveyor duty post would stand empty and the Compact's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡는다.",
-          "en": "Serves under Byeon Goun on concourse shifts and conduit surveys."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 짧은 행위와 인수인계가 근거여서 다른 분야의 숙련이나 보정은 발급하지 않았다.",
-      "en": "In 2125 he sent a private petition back and passed it to the public window. By this deed the signature of the pipeline surveyor post rose into the ledger. The brief action and handover support only limited strengths; no unrelated proficiency or numeric trait bonus is issued."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -418,73 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c1a1-c740-c9c4-5b8b",
-    "name": "은진 송씨",
-    "crest": "clan-crests/c1a1-c740-c9c4-5b8b.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 50,
-    "개방": 0,
-    "무력": 15,
-    "물질": 30,
-    "공동": 30,
-    "원칙": 30,
-    "공개": 0,
-    "자격": 5,
-    "분산": -40,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -20,
-    "위험": -15,
-    "과시": 15,
-    "지속": -10,
-    "지향": "동성",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "수문국",
-    "생업": "대합실 당직",
-    "품계": "주사",
-    "직함": "관로 탐사원",
-    "업무 위치": "영등포본동. 송하지는 사적 청탁을 공개 창구로 넘긴 기록을 영등포본동 대합실에서 변고운의 다음 교대 명부에 옮긴다.",
-    "가치관": "권위 50 | 개방 0 | 무력 15 | 물질 30 | 공동 30 | 원칙 30 | 공개 0 | 자격 5 | 분산 −40 | 변혁 −20",
-    "욕망": "갈망 0 | 독점 −20 | 위험 −15 | 과시 15 | 지속 −10 | 지향 동성 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 영등포본동. 송하지는 사적 청탁을 공개 창구로 넘긴 기록을 영등포본동 대합실에서 변고운의 다음 교대 명부에 옮긴다.",
-    "관직": "품계 주사. 직함은 관로 탐사원이다. 송하지는 사적 청탁을 공개 창구로 넘긴 기록을 영등포본동 대합실에서 변고운의 다음 교대 명부에 옮긴다.",
-    "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 관로 탐사원 자리의 서명이 장부에 올랐다.",
-    "관계": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡는다.",
-    "야망": "관로 탐사원 자리에서 수문국의 장부를 끊기지 않게 잇는다.",
-    "공포": "관로 탐사원 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 수문국\n- 생업: 대합실 당직\n- 품계: 주사\n- 직함: 관로 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 영등포본동. 송하지는 사적 청탁을 공개 창구로 넘긴 기록을 영등포본동 대합실에서 변고운의 다음 교대 명부에 옮긴다.\n\n**관직.** 품계 주사. 직함은 관로 탐사원이다. 송하지는 사적 청탁을 공개 창구로 넘긴 기록을 영등포본동 대합실에서 변고운의 다음 교대 명부에 옮긴다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 관로 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡는다.\n\n**야망.** 관로 탐사원 자리에서 수문국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 관로 탐사원 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 0 | 무력 15 | 물질 30 | 공동 30 | 원칙 30 | 공개 0 | 자격 5 | 분산 −40 | 변혁 −20\n- 욕망: 갈망 0 | 독점 −20 | 위험 −15 | 과시 15 | 지속 −10 | 지향 동성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-01"
-  ],
-  "directLiege": {
-    "personId": "K017",
-    "name": "변고운",
-    "courtId": "court:K017",
-    "effectiveYear": 2126
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "송하지",
-        "type": "지휘",
-        "to": "변고운",
-        "basis": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

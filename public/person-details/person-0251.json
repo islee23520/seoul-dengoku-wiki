@@ -1,492 +1,126 @@
 {
   "id": "person-0251",
   "name": "오한결",
-  "title": "민병 배급 감시",
-  "position": "배급 당직 주지",
+  "title": "의원 집안 후계",
+  "position": "의원 집안 후계 · 제기동역",
   "characterId": "K250",
-  "rank": "주지",
-  "commonTier": "T3",
-  "occupation": "배급·무장 근무 분리·창고 열쇠 관리",
+  "rank": "후계",
+  "commonTier": "T2",
+  "occupation": "구 행정",
   "gender": "여성",
   "stage": "S1",
-  "state": "S10",
-  "stateName": "안국총림",
-  "sourceRoute": "/world/Cast-State-10#인물-오한결",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0251",
   "birthDate": "2095-07-22",
   "birthday": "07-22",
   "age": 31,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-10.json#/content/94"
-  ],
-  "familyTree": {
-    "personId": "K250",
-    "nodes": [
-      {
-        "id": "K250",
-        "personId": "K250",
-        "kind": "person",
-        "name": "오한결",
-        "birthDate": "2095-07-22",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K250"
-          },
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-오한결-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 배급 당직 주지 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-오한결-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0251"
-      },
-      {
-        "id": "FH-K250-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현찬",
-        "lineage": {
-          "surname": "오",
-          "bongwan": "해주",
-          "clan": "c624-d574-c8fc"
-        },
-        "birthDate": "2065-07-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-오한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2103,
-            "summary": "오현찬은 영등포 정수 당직에서 배급·무장 근무 분리·창고 열쇠 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-오한결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K250-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현혁",
-        "lineage": {
-          "surname": "오",
-          "bongwan": "해주",
-          "clan": "c624-d574-c8fc"
-        },
-        "birthDate": "2035-07-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-오한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "오현혁은 영등포 정수 당직에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-오한결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K250-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현문",
-        "lineage": {
-          "surname": "오",
-          "bongwan": "해주",
-          "clan": "c624-d574-c8fc"
-        },
-        "birthDate": "2005-07-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-오한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오현문은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-오한결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K250-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조현재",
-        "birthDate": "2065-07-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-오한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2103,
-            "summary": "조현재는 영등포 정수 당직에서 배급·무장 근무 분리·창고 열쇠 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-오한결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K250-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김현욱",
-        "birthDate": "2035-07-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-오한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "김현욱은 영등포 정수 당직에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-오한결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K250-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "박현리",
-        "birthDate": "2005-07-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-오한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박현리는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-오한결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K250-P-01:K250:biological",
-        "from": "FH-K250-P-01",
-        "to": "K250",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-오한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K250-P-02:FH-K250-P-01:biological",
-        "from": "FH-K250-P-02",
-        "to": "FH-K250-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-오한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K250-P-03:FH-K250-P-02:biological",
-        "from": "FH-K250-P-03",
-        "to": "FH-K250-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-오한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K250-M-01:K250:biological",
-        "from": "FH-K250-M-01",
-        "to": "K250",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-오한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K250-M-02:FH-K250-M-01:biological",
-        "from": "FH-K250-M-02",
-        "to": "FH-K250-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-오한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K250-M-03:FH-K250-M-02:biological",
-        "from": "FH-K250-M-03",
-        "to": "FH-K250-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-오한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c624-d574-c8fc",
+    "name": "해주 오씨",
+    "crest": "clan-crests/c624-d574-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "해주 오씨 오한결은 서른한 살이고, 세대주 오서율 의원의 지명으로 동대문구 의원 집안 후계에 올랐다. 그녀는 제기동역에서 버섯과 말린 약초 장터를 오가는 집안 곳간을 맡고, 곳간에서 나간 약초가 어느 보건소로 갔는지를 집안 장부와 구 보건소 장부에 같이 적는다. 장터에서 젖은 채 들어온 약초 묶음은 마른 뒤에 다시 달아 줄어든 만큼 값을 깎고, 그 차이를 그날 저녁 의원에게 직접 읽어 준다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "의원 집안 후계",
+    "품계": "후계",
+    "생업": "구 행정",
+    "일하는 역": "제기동역",
+    "잠자는 역": "제기동역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "해주 오씨 오한결은 서른한 살이고, 세대주 오서율 의원의 지명으로 동대문구 의원 집안 후계에 올랐다. 그녀는 제기동역에서 버섯과 말린 약초 장터를 오가는 집안 곳간을 맡고, 곳간에서 나간 약초가 어느 보건소로 갔는지를 집안 장부와 구 보건소 장부에 같이 적는다. 장터에서 젖은 채 들어온 약초 묶음은 마른 뒤에 다시 달아 줄어든 만큼 값을 깎고, 그 차이를 그날 저녁 의원에게 직접 읽어 준다.",
+    "관직": "직함 의원 집안 후계. 직위 의원 집안 후계 · 제기동역. 품계 후계. 일하는 역 제기동역."
+  },
+  "values": {
+    "권위": -15,
+    "개방": 5,
+    "무력": -5,
+    "물질": -10,
+    "공동": 60,
+    "원칙": 30,
+    "공개": 0,
+    "자격": 45,
+    "분산": -5,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": 5,
+    "위험": 10,
+    "과시": 5,
+    "지속": 0,
+    "지향": "동성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0251",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "오한결",
+        "type": "지휘",
+        "to": "오서율",
+        "basis": "동대문구 국회의원 오서율의 직속"
+      },
+      {
+        "from": "오한결",
+        "type": "맹세",
+        "to": "오서율",
+        "basis": "의원 집안 후계로서 오서율 의원의 곳간 장부를 지키기로 한 사이"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K148",
+    "name": "오서율",
+    "courtId": "court:K148",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 9,
-        "effective": 9
-      },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
+      "diplomacy": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 9,
         "effective": 9
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 8,
-        "effective": 8
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "duty-separation",
-        "name": {
-          "ko": "배급·무장 교대 분리",
-          "en": "Ration and armed-duty separation"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "duty-separation-disposition",
-        "name": {
-          "ko": "생존 앞의 침묵",
-          "en": "Silence before survival"
-        },
-        "description": {
-          "ko": "배고픈 대원을 막지 못할 때가 있고 갈등 때 오래 침묵한다.",
-          "en": "Sometimes cannot stop hungry workers and remains silent in conflict."
-        },
-        "behavior": {
-          "ko": "배고픈 대원을 막지 못할 때가 있고 갈등 때 오래 침묵한다.",
-          "en": "Sometimes cannot stop hungry workers and remains silent in conflict."
-        },
-        "stress": {
-          "ko": "당직 승려가 창고를 열어 피난 약속을 깰 것을 두려워한다.",
-          "en": "Fears duty monks breaking refuge promises by opening stores."
-        },
-        "relationship": {
-          "ko": "황세린의 배급 감시를 무력으로 뒷받침하고 백온에게 민병 서약을 바쳤다. 강태산과 회랑 교대를 나눈다.",
-          "en": "Supports Hwang Serin’s ration oversight, has pledged to Baek On and shares corridor shifts with Kang Taesan."
-        },
-        "effects": []
-      },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "야간 열쇠 분리",
-          "en": "Separate night keys"
-        },
-        "description": {
-          "ko": "야간 창고 열쇠를 필사 당직에 둔다.",
-          "en": "Leaves night-store keys with copy duty."
-        },
-        "behavior": {
-          "ko": "야간 창고 열쇠를 필사 당직에 둔다.",
-          "en": "Leaves night-store keys with copy duty."
-        },
-        "stress": {
-          "ko": "연료와 식량이 떨어진 겨울에 당직 승려가 창고를 열고 피난 장부를 스스로 깨는 것.",
-          "en": "Fears duty monks breaking refuge promises by opening stores."
-        },
-        "relationship": {
-          "ko": "황세린의 배급 감시를 무력으로 뒷받침하고 백온에게 민병 서약을 바쳤다. 강태산과 회랑 교대를 나눈다.",
-          "en": "Supports Hwang Serin’s ration oversight, has pledged to Baek On and shares corridor shifts with Kang Taesan."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "배급과 무장 근무를 분리하며 공개 배급 감시를 뒷받침한다. 굶주린 대원 앞에서 서약과 생존 사이에 오래 침묵한다.",
-      "en": "Separates distribution from armed duty and supports public ration oversight, remaining silent between oath and survival before hungry workers."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,85 +158,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c624-d574-c8fc",
-    "name": "해주 오씨",
-    "crest": "clan-crests/c624-d574-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -60,
-    "개방": 60,
-    "무력": -40,
-    "물질": -5,
-    "공동": 55,
-    "원칙": 10,
-    "공개": 25,
-    "자격": 30,
-    "분산": 45,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": 5,
-    "위험": 10,
-    "과시": 5,
-    "지속": 0,
-    "지향": "동성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "배급·무장 근무 분리·창고 열쇠 관리",
-    "소속": "안국총림",
-    "품계": "주지",
-    "직함": "배급 당직 주지",
-    "가치관": "권위 −60 | 개방 60 | 무력 −40 | 물질 −5 | 공동 55 | 원칙 10 | 공개 25 | 자격 30 | 분산 45 | 변혁 0",
-    "욕망": "갈망 0 | 독점 5 | 위험 10 | 과시 5 | 지속 0 | 지향 동성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2095-07-22 출생, 2126년 개막에 활동했다. 영등포 정수 당직에서 자랐다. 배급 당직 주지 당직 기록에는 탁수 밤의 밸브 서명으 일이 남아 있다.\n- 오한결의 배급·무장 근무 분리·창고 열쇠 관리 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
-    "관직": "품계 주지. 직함은 배급 당직 주지. 무장 근무와 배급 근무를 같은 사람이 겸하지 못하게 하고, 야간 창고 열쇠는 장경 필사 당직에만 둔다.",
-    "일화": "난방 연료가 사흘치로 줄자 당직 승려 일부가 창고 옆문을 열자고 속삭이기 시작했다.",
-    "관계": "황세린의 배급 감시를 무력으로 뒷받침하고 백온에게 민병 서약을 바쳤다. 강태산과 회랑 교대를 나눈다.",
-    "야망": "배급 당직을 총림의 호위에만 머물게 묶어 총림이 용병이 되지 않게 한다.",
-    "공포": "연료와 식량이 떨어진 겨울에 당직 승려가 창고를 열고 피난 장부를 스스로 깨는 것.",
-    "개입": "연료를 들여와 창고를 지키거나, 옆문을 연 승려를 산중총회에 세울 수 있다."
-  },
-  "biography": "충성스러우나 배고픈 대원의 손을 막지 못할 때가 있다. 맹세와 생존이 충돌하면 오래 침묵한다.\n\n- 생업: 배급·무장 근무 분리·창고 열쇠 관리\n- 소속: 안국총림\n- 품계: 주지\n- 직함: 배급 당직 주지\n**생애.** 2095-07-22 출생, 2126년 개막에 활동했다. 영등포 정수 당직에서 자랐다. 배급 당직 주지 당직 기록에는 탁수 밤의 밸브 서명으 일이 남아 있다.\n- 오한결의 배급·무장 근무 분리·창고 열쇠 관리 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n**관직.** 품계 주지. 직함은 배급 당직 주지. 무장 근무와 배급 근무를 같은 사람이 겸하지 못하게 하고, 야간 창고 열쇠는 장경 필사 당직에만 둔다.\n\n**일화.** 난방 연료가 사흘치로 줄자 당직 승려 일부가 창고 옆문을 열자고 속삭이기 시작했다.\n\n**관계.** 황세린의 배급 감시를 무력으로 뒷받침하고 백온에게 민병 서약을 바쳤다. 강태산과 회랑 교대를 나눈다.\n\n**야망.** 배급 당직을 총림의 호위에만 머물게 묶어 총림이 용병이 되지 않게 한다.\n\n**공포.** 연료와 식량이 떨어진 겨울에 당직 승려가 창고를 열고 피난 장부를 스스로 깨는 것.\n\n**개입.** 연료를 들여와 창고를 지키거나, 옆문을 연 승려를 산중총회에 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −60 | 개방 60 | 무력 −40 | 물질 −5 | 공동 55 | 원칙 10 | 공개 25 | 자격 30 | 분산 45 | 변혁 0\n- 욕망: 갈망 0 | 독점 5 | 위험 10 | 과시 5 | 지속 0 | 지향 동성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-10"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "오한결",
-        "type": "지휘",
-        "to": "황세린",
-        "basis": "배급 감시를 민병으로 뒷받침"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "두감",
-        "type": "계약",
-        "to": "오한결",
-        "basis": "오한결의 연료고 당직과 공구를 나누고"
-      },
-      {
-        "from": "용두",
-        "type": "지휘",
-        "to": "오한결",
-        "basis": "오한결의 지휘로 연료고를 지키고"
-      },
-      {
-        "from": "순지민",
-        "type": "계약",
-        "to": "오한결",
-        "basis": "오한결의 민병 서약과 충돌하면서도 창고 옆문은 열지 않았고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

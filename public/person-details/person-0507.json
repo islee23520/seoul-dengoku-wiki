@@ -1,529 +1,118 @@
 {
   "id": "person-0507",
   "name": "정바준",
-  "title": "부품 물류상",
-  "position": "부품 물류상",
+  "title": "세례 전투원",
+  "position": "세례 전투원 · 내방역",
   "characterId": "K507",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "차륜·펌프 정비",
+  "rank": "세례자",
+  "commonTier": "T5",
+  "occupation": "세례 전투",
   "gender": "여성",
   "stage": "S4",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-정바준",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0507",
   "birthDate": "2096-05-19",
   "birthday": "05-19",
   "age": 30,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/357",
-    "lore/characters/Cast-State-04.json#/content/359",
-    "lore/characters/Cast-State-04.json#/content/360"
-  ],
-  "familyTree": {
-    "personId": "K507",
-    "nodes": [
-      {
-        "id": "K507",
-        "personId": "K507",
-        "kind": "person",
-        "name": "정바준",
-        "birthDate": "2096-05-19",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K507"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-정바준-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-정바준-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0507"
-      },
-      {
-        "id": "FH-K507-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정태연",
-        "lineage": {
-          "surname": "정",
-          "bongwan": "경주",
-          "clan": "c815-acbd-c8fc-912d-agreed-c900-second"
-        },
-        "birthDate": "2066-05-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-정바준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2104,
-            "summary": "정태연은 신정 차량기지에서 차륜·펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-정바준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K507-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정태정",
-        "lineage": {
-          "surname": "정",
-          "bongwan": "경주",
-          "clan": "c815-acbd-c8fc-912d-agreed-c900-second"
-        },
-        "birthDate": "2036-05-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-정바준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "정태정은 신정 차량기지에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-정바준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K507-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "정태아",
-        "lineage": {
-          "surname": "정",
-          "bongwan": "경주",
-          "clan": "c815-acbd-c8fc-912d-agreed-c900-second"
-        },
-        "birthDate": "2006-05-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-정바준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정태아는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-정바준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K507-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "권태희",
-        "lineage": {
-          "surname": "권",
-          "bongwan": "안동",
-          "clan": "ad8c-c548-b3d9"
-        },
-        "birthDate": "2066-05-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-정바준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2104,
-            "summary": "권태희는 신정 차량기지에서 차륜·펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-정바준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K507-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "권태경",
-        "lineage": {
-          "surname": "권",
-          "bongwan": "안동",
-          "clan": "ad8c-c548-b3d9"
-        },
-        "birthDate": "2036-05-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-정바준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "권태경은 신정 차량기지에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-정바준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K507-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "권태우",
-        "lineage": {
-          "surname": "권",
-          "bongwan": "안동",
-          "clan": "ad8c-c548-b3d9"
-        },
-        "birthDate": "2006-05-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-정바준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "권태우는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-정바준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K507-P-01:K507:biological",
-        "from": "FH-K507-P-01",
-        "to": "K507",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-정바준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K507-P-02:FH-K507-P-01:biological",
-        "from": "FH-K507-P-02",
-        "to": "FH-K507-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-정바준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K507-P-03:FH-K507-P-02:biological",
-        "from": "FH-K507-P-03",
-        "to": "FH-K507-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-정바준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K507-M-01:K507:biological",
-        "from": "FH-K507-M-01",
-        "to": "K507",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-정바준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K507-M-02:FH-K507-M-01:biological",
-        "from": "FH-K507-M-02",
-        "to": "FH-K507-M-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-정바준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K507-M-03:FH-K507-M-02:biological",
-        "from": "FH-K507-M-03",
-        "to": "FH-K507-M-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-정바준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c815-acbd-c8fc-912d",
+    "name": "경주 정씨",
+    "crest": "clan-crests/c815-acbd-c8fc-912d.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "총신대입구(이수)–내방 경계는 자유도시와 맞닿은 땅이라, 내방 대피소의 서른 살 세례 전투원 정바준은 경계 너머 사람들과 얼굴을 아는 사이다. 막는 날에도 그는 자유도시 작업장 말을 섞어 \"다섯 걸음 안으로 들어오면 막는다\"처럼 숫자로 일러 준다. 부위 둘을 받은 뒤로 그는 깃의 땀 두 줄이 보이게 목도리를 낮게 맨다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "세례 전투원",
+    "품계": "세례자",
+    "생업": "세례 전투",
+    "일하는 역": "내방역",
+    "잠자는 역": "내방역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "총신대입구(이수)–내방 경계는 자유도시와 맞닿은 땅이라, 내방 대피소의 서른 살 세례 전투원 정바준은 경계 너머 사람들과 얼굴을 아는 사이다. 막는 날에도 그는 자유도시 작업장 말을 섞어 \"다섯 걸음 안으로 들어오면 막는다\"처럼 숫자로 일러 준다. 부위 둘을 받은 뒤로 그는 깃의 땀 두 줄이 보이게 목도리를 낮게 맨다.",
+    "관직": "직함 세례 전투원. 직위 세례 전투원 · 내방역. 품계 세례자. 일하는 역 내방역."
+  },
+  "values": {
+    "권위": 30,
+    "개방": -15,
+    "무력": -20,
+    "물질": -10,
+    "공동": 60,
+    "원칙": -20,
+    "공개": -70,
+    "자격": -10,
+    "분산": -5,
+    "변혁": 45
+  },
+  "desire": {
+    "갈망": 5,
+    "독점": 40,
+    "위험": 40,
+    "과시": 10,
+    "지속": 10,
+    "지향": "양성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0507",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 4,
         "effective": 4
       },
-      "strategy": {
+      "martial": {
+        "base": 9,
+        "effective": 9
+      },
+      "stewardship": {
+        "base": 4,
+        "effective": 4
+      },
+      "intrigue": {
         "base": 5,
         "effective": 5
       },
-      "negotiation": {
+      "learning": {
         "base": 4,
         "effective": 4
       },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 9,
-        "effective": 9
-      },
-      "learning": {
-        "base": 9,
-        "effective": 9
-      },
       "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 11,
+        "effective": 11
       }
     },
-    "skills": [
-      {
-        "id": "pump",
-        "name": {
-          "ko": "펌프 분해·축 교체",
-          "en": "Pump disassembly and shaft replacement"
-        },
-        "rating": 55
-      },
-      {
-        "id": "wheel",
-        "name": {
-          "ko": "차륜 결함 점검",
-          "en": "Wheel-defect inspection"
-        },
-        "rating": 40
-      }
-    ],
-    "traits": [
-      {
-        "id": "replace-only-worn-axles",
-        "name": {
-          "ko": "마모 축만 교체",
-          "en": "Replace Only Worn Axles"
-        },
-        "description": {
-          "ko": "정바준은 확인된 마모 부위에 수리를 한정하는 실용적 성향을 보인다.",
-          "en": "Jeong Bajun shows a practical preference for repairing only the confirmed worn component."
-        },
-        "behavior": {
-          "ko": "멈춘 펌프를 분해해 마모 축 하나만 교체하고 다시 가동했다.",
-          "en": "He dismantled the stopped pump, replaced one worn axle, and restarted it."
-        },
-        "stress": {
-          "ko": "당직 공백으로 통행이 강국에 종속될 우려가 커지면 필요한 수리에 집중하려 할 수 있다.",
-          "en": "If a duty gap threatens to leave passage subject to a powerful state, he may focus on the necessary repair."
-        },
-        "relationship": {
-          "ko": "선배 당직과 인계할 때는 교체한 축처럼 확인된 작업 내용을 중심으로 설명할 수 있다.",
-          "en": "When handing over to the senior duty holder, he may focus on verified work such as the replaced axle."
-        },
-        "effects": []
-      },
-      {
-        "id": "duty-continuity-through-maintenance",
-        "name": {
-          "ko": "정비로 당직 연결",
-          "en": "Duty Continuity Through Maintenance"
-        },
-        "description": {
-          "ko": "정바준은 구체적 정비를 당직과 장부의 연속성을 지키는 수단으로 여긴다.",
-          "en": "Jeong Bajun treats concrete maintenance as a means of sustaining duty and ledger continuity."
-        },
-        "behavior": {
-          "ko": "펌프를 재가동하는 수리로 중단을 해소하고 자기 직위의 열쇠와 기록을 넘긴다.",
-          "en": "He resolves an interruption by restarting the pump and passes on the keys and records belonging to his post."
-        },
-        "stress": {
-          "ko": "당직이 비어 통행이 강국의 볼모가 될 가능성을 느끼면 정비와 인계의 연결을 더 중시할 수 있다.",
-          "en": "If vacant duty could make passage hostage to a powerful state, he may place greater weight on connecting repairs with handover."
-        },
-        "relationship": {
-          "ko": "선배 당직과는 수리 결과와 직위 기록을 이어 주는 인계를 통해 협력하려 할 수 있다.",
-          "en": "He may cooperate with the senior duty holder through handovers linking repair results to post records."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "정지 펌프를 분해해 마모 축 하나를 갈았다. 구체적 정비 수행만 평가하며 제조·발명 전체 능력은 없다.",
-      "en": "He disassembled a stopped pump and replaced one worn shaft. Specific repair is supported, not comprehensive manufacture or invention."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -549,76 +138,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-43730-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K507",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:kingdom-s04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-43730-S04",
-          "directLiegePersonId": "K423"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c815-acbd-c8fc-912d",
-    "name": "경주 정씨",
-    "crest": "clan-crests/c815-acbd-c8fc-912d.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 5,
-    "개방": 0,
-    "무력": -30,
-    "물질": 40,
-    "공동": 40,
-    "원칙": -10,
-    "공개": -25,
-    "자격": 25,
-    "분산": 25,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 5,
-    "독점": 40,
-    "위험": 40,
-    "과시": 10,
-    "지속": 10,
-    "지향": "양성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "차륜·펌프 정비",
-    "품계": "교사",
-    "직함": "부품 물류상",
-    "가치관": "권위 5 | 개방 0 | 무력 −30 | 물질 40 | 공동 40 | 원칙 −10 | 공개 −25 | 자격 25 | 분산 25 | 변혁 0",
-    "욕망": "갈망 5 | 독점 40 | 위험 40 | 과시 10 | 지속 10 | 지향 양성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2126년 세대. 정바준은 신정 차량기지에서 자랐다. 정바준은 탈선 직전 결함 보고로 부품 물류상 자리를 맡았다.\n- 정바준의 부품 물류상 업무는 성수2가1동과 연결된다.",
-    "관직": "정바준은 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.",
-    "일화": "2125년 정바준은 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.",
-    "관계": "정바준은 같은 생활권 선배 당직자와 인수인계로 묶인다.",
-    "야망": "정바준은 부품 물류상 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.",
-    "공포": "정바준은 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.",
-    "개입": "정바준은 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "정바준은 당직을 끊지 않는 쪽을 먼저 고른다. 정바준은 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 차륜·펌프 정비\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 정바준은 신정 차량기지에서 자랐다. 정바준은 탈선 직전 결함 보고로 부품 물류상 자리를 맡았다.\n- 정바준의 부품 물류상 업무는 성수2가1동과 연결된다.\n\n**관직.** 정바준은 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 정바준은 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 정바준은 같은 생활권 선배 당직자와 인수인계로 묶인다.\n\n**야망.** 정바준은 부품 물류상 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.\n\n**공포.** 정바준은 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.\n\n**개입.** 정바준은 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 0 | 무력 −30 | 물질 40 | 공동 40 | 원칙 −10 | 공개 −25 | 자격 25 | 분산 25 | 변혁 0\n- 욕망: 갈망 5 | 독점 40 | 위험 40 | 과시 10 | 지속 10 | 지향 양성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

@@ -1,397 +1,133 @@
 {
   "id": "person-0281",
   "name": "용모",
-  "title": "북문 순찰대, 권도하의 실무 담당자",
-  "position": "강남역 북문 순찰대, 권도하의 실무 담당자",
+  "title": "양재1동 대피소장",
+  "position": "양재1동 대피소장 · 아크",
   "characterId": "K280",
-  "rank": "사원",
-  "commonTier": "T5",
-  "occupation": "북문 출격 차륜 점검·무장 탑재 확인",
+  "rank": "대피소장",
+  "commonTier": "T3",
+  "occupation": "대피소 통솔",
   "gender": "남성",
   "stage": "S2",
-  "state": "S11",
-  "stateName": "성하그룹",
-  "sourceRoute": "/world/Cast-State-11#인물-용모",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0281",
   "birthDate": "2069-05-31",
   "birthday": "05-31",
   "age": 57,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-11.json#/content/116"
-  ],
-  "familyTree": {
-    "personId": "K280",
-    "nodes": [
-      {
-        "id": "K280",
-        "personId": "K280",
-        "kind": "person",
-        "name": "용모",
-        "birthDate": "2069-05-31",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K280"
-          },
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용모-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 강남역 북문 순찰대, 권도하의 실무 담당자 자리는 야간 무단 도하 적발로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-용모-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0281"
-      },
-      {
-        "id": "FH-K280-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "용승윤",
-        "lineage": {
-          "surname": "용",
-          "bongwan": "홍천",
-          "clan": "c6a9-d64d-cc9c"
-        },
-        "birthDate": "2039-05-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "용승윤은 암사 경비 초소에서 북문 출격 차륜 점검·무장 탑재 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-용모-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K280-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "용승우",
-        "lineage": {
-          "surname": "용",
-          "bongwan": "홍천",
-          "clan": "c6a9-d64d-cc9c"
-        },
-        "birthDate": "2009-05-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "용승우는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-용모-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K280-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤현솔",
-        "birthDate": "2039-05-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "윤현솔은 암사 경비 초소에서 북문 출격 차륜 점검·무장 탑재 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-용모-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K280-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한현리",
-        "birthDate": "2009-05-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한현리는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-용모-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K280-P-01:K280:biological",
-        "from": "FH-K280-P-01",
-        "to": "K280",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K280-P-02:FH-K280-P-01:biological",
-        "from": "FH-K280-P-02",
-        "to": "FH-K280-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K280-M-01:K280:biological",
-        "from": "FH-K280-M-01",
-        "to": "K280",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K280-M-02:FH-K280-M-01:biological",
-        "from": "FH-K280-M-02",
-        "to": "FH-K280-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-용모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c6a9-d64d-cc9c",
+    "name": "홍천 용씨",
+    "crest": "clan-crests/c6a9-d64d-cc9c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "청계산입구에서 테두리를 지켜보고 돌아온 사람에게, 용모는 양재 대피소의 다른 사람보다 한 끼 먼저 먹을 것을 내준다. 양재1동 대피소장인 그는 그 까닭을 숫자로 적어 서초 곁집장 정유라에게 올린다. 젊어서는 방배와 내방 경계를 걸으며 자유도시 쪽 발자국을 셌고, 첫째 부위는 쉰이 넘어서, 둘째는 쉰다섯에 받았다. 쉰일곱인 지금도 말수가 적어, 대피소 다툼에서는 남이 먼저 숫자를 꺼내기를 기다린다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "양재1동 대피소장",
+    "품계": "대피소장",
+    "생업": "대피소 통솔",
+    "일하는 역": "양재역",
+    "잠자는 역": "양재역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "청계산입구에서 테두리를 지켜보고 돌아온 사람에게, 용모는 양재 대피소의 다른 사람보다 한 끼 먼저 먹을 것을 내준다. 양재1동 대피소장인 그는 그 까닭을 숫자로 적어 서초 곁집장 정유라에게 올린다. 젊어서는 방배와 내방 경계를 걸으며 자유도시 쪽 발자국을 셌고, 첫째 부위는 쉰이 넘어서, 둘째는 쉰다섯에 받았다. 쉰일곱인 지금도 말수가 적어, 대피소 다툼에서는 남이 먼저 숫자를 꺼내기를 기다린다.",
+    "관직": "직함 양재1동 대피소장. 직위 양재1동 대피소장 · 아크. 품계 대피소장. 일하는 역 양재역."
+  },
+  "values": {
+    "권위": 40,
+    "개방": -45,
+    "무력": 20,
+    "물질": -25,
+    "공동": 30,
+    "원칙": -5,
+    "공개": -55,
+    "자격": 20,
+    "분산": -30,
+    "변혁": 30
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": 5,
+    "위험": 10,
+    "과시": -25,
+    "지속": 30,
+    "지향": "무성향",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0281",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "용모",
+        "type": "지휘",
+        "to": "정유라",
+        "basis": "서초 곁집장 정유라의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K398",
+    "name": "정유라",
+    "courtId": "court:K398",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
+      },
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
-      },
-      "negotiation": {
-        "base": 4,
-        "effective": 4
-      },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 8,
-        "effective": 8
       },
       "learning": {
-        "base": 7,
-        "effective": 7
-      },
-      "prowess": {
         "base": 6,
         "effective": 6
       },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k280-patrol-signal-coordination",
-        "name": {
-          "ko": "순찰 신호 맞춤",
-          "en": "Patrol signal coordination"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "k280-priority",
-        "name": {
-          "ko": "점검 규율",
-          "en": "Inspection discipline"
-        },
-        "description": {
-          "ko": "용모는 북문 순찰과 회랑 횃불을 맞추고 호송 시각을 옮긴다. 실무 순찰과 집단 지휘는 구분한다.",
-          "en": "Yongmo aligns gate patrol with corridor torches and records escort times. Practical patrol work is distinct from group command."
-        },
-        "behavior": {
-          "ko": "출격 전에 차륜 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 서명만 인정한다.",
-          "en": "Office. Rank: assistant manager. Title: north gate patrol, duty officer of Gwon Doha. He made wheel checks mandatory before sorties and recognized arms loading only with the Elder's and the auditor's joint signature."
-        },
-        "stress": {
-          "ko": "궤도기병이 사택 민병으로 흡수되어 기지가 병영이 되는 것.",
-          "en": "Fear. That the rail cavalry would be absorbed into a residential militia and the base would become a barracks."
-        },
-        "relationship": {
-          "ko": "권도하의 지휘로 북문을 돌고, 강태산과 회랑 횃불을 맞춘다. 장세화의 북부 호송 시각을 순찰 칠판에 옮긴다.",
-          "en": "Relations. Rounded the north gate under Gwon Doha's command and matched the corridor torches with Kang Taesan. Moved Jang Sehwa's northern convoy hours onto the patrol chalkboard."
-        },
-        "effects": []
-      },
-      {
-        "id": "k280-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 사원. 직함은 강남역 북문 순찰대, 권도하의 실무 담당자. 출격 전에 차륜 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 서명만 인정한다.",
-          "en": "Office. Rank: assistant manager. Title: north gate patrol, duty officer of Gwon Doha. He made wheel checks mandatory before sorties and recognized arms loading only with the Elder's and the auditor's joint signature."
-        },
-        "stress": {
-          "ko": "공포. 궤도기병이 사택 민병으로 흡수되어 기지가 병영이 되는 것.",
-          "en": "Fear. That the rail cavalry would be absorbed into a residential militia and the base would become a barracks."
-        },
-        "relationship": {
-          "ko": "관계. 권도하의 지휘로 북문을 돌고, 강태산과 회랑 횃불을 맞춘다. 장세화의 북부 호송 시각을 순찰 칠판에 옮긴다.",
-          "en": "Relations. Rounded the north gate under Gwon Doha's command and matched the corridor torches with Kang Taesan. Moved Jang Sehwa's northern convoy hours onto the patrol chalkboard."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "용모는 북문 순찰과 회랑 횃불을 맞추고 호송 시각을 옮긴다. 실무 순찰과 집단 지휘는 구분한다.",
-      "en": "Yongmo aligns gate patrol with corridor torches and records escort times. Practical patrol work is distinct from group command."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -417,73 +153,25 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c6a9-d64d-cc9c",
-    "name": "홍천 용씨",
-    "crest": "clan-crests/c6a9-d64d-cc9c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": -30,
-    "무력": 10,
-    "물질": 25,
-    "공동": 10,
-    "원칙": 5,
-    "공개": -10,
-    "자격": 55,
-    "분산": 0,
-    "변혁": -15
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": 5,
-    "위험": 10,
-    "과시": -25,
-    "지속": 30,
-    "지향": "무성향",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "북문 출격 차륜 점검·무장 탑재 확인",
-    "소속": "성하그룹",
-    "품계": "사원",
-    "직함": "강남역 북문 순찰대, 권도하의 실무 담당자",
-    "가치관": "권위 15 | 개방 −30 | 무력 10 | 물질 25 | 공동 10 | 원칙 5 | 공개 −10 | 자격 55 | 분산 0 | 변혁 −15",
-    "욕망": "갈망 0 | 독점 5 | 위험 10 | 과시 −25 | 지속 30 | 지향 무성향 | 결합 없음"
-  },
-  "sections": {
-    "생애": "암사 경비 초소에서 자랐다. 강남역 북문 순찰대, 권도하의 실무 담당자 자리는 야간 무단 도하 적발로 열렸다.\n- 용모는 서초4동에서 북문 출격 차륜 점검·무장 탑재 확인 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다. 권도하의 지휘로 북문을 돌고, 강태산과 회랑 횃불을 맞춘다. 장세화의 북부 호송 시각을 순찰 칠판에 옮긴다",
-    "관직": "품계 사원. 직함은 강남역 북문 순찰대, 권도하의 실무 담당자. 출격 전에 차륜 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 서명만 인정한다.",
-    "일화": "시험 차륜 결함 직후 북문 순찰차가 제동 불량으로 정차해 호송 시각이 어긋났다.",
-    "관계": "권도하의 지휘로 북문을 돌고, 강태산과 회랑 횃불을 맞춘다. 장세화의 북부 호송 시각을 순찰 칠판에 옮긴다.",
-    "야망": "북문 순찰을 강남역 호송의 북문로 묶어 서울 내부 계약과 당직표에 따라 성하전자 열차를 움직인다.",
-    "공포": "궤도기병이 사택 민병으로 흡수되어 기지가 병영이 되는 것.",
-    "개입": "제동 부품을 현장에서 갈아 끼우거나, 무단 무장을 회장실에 보고할 수 있다."
-  },
-  "biography": "규율을 좋아하고 선로 위의 침묵을 순찰의 일부로 본다. 숙련 없는 돌격을 배신에 가깝다고 말한다.\n\n- 생업: 북문 출격 차륜 점검·무장 탑재 확인\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 북문 순찰대, 권도하의 실무 담당자\n**생애.** 암사 경비 초소에서 자랐다. 강남역 북문 순찰대, 권도하의 실무 담당자 자리는 야간 무단 도하 적발로 열렸다.\n- 용모는 서초4동에서 북문 출격 차륜 점검·무장 탑재 확인 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다. 권도하의 지휘로 북문을 돌고, 강태산과 회랑 횃불을 맞춘다. 장세화의 북부 호송 시각을 순찰 칠판에 옮긴다\n\n**관직.** 품계 사원. 직함은 강남역 북문 순찰대, 권도하의 실무 담당자. 출격 전에 차륜 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 서명만 인정한다.\n\n**일화.** 시험 차륜 결함 직후 북문 순찰차가 제동 불량으로 정차해 호송 시각이 어긋났다.\n\n**관계.** 권도하의 지휘로 북문을 돌고, 강태산과 회랑 횃불을 맞춘다. 장세화의 북부 호송 시각을 순찰 칠판에 옮긴다.\n\n**야망.** 북문 순찰을 강남역 호송의 북문로 묶어 서울 내부 계약과 당직표에 따라 성하전자 열차를 움직인다.\n\n**공포.** 궤도기병이 사택 민병으로 흡수되어 기지가 병영이 되는 것.\n\n**개입.** 제동 부품을 현장에서 갈아 끼우거나, 무단 무장을 회장실에 보고할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −30 | 무력 10 | 물질 25 | 공동 10 | 원칙 5 | 공개 −10 | 자격 55 | 분산 0 | 변혁 −15\n- 욕망: 갈망 0 | 독점 5 | 위험 10 | 과시 −25 | 지속 30 | 지향 무성향 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-11"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "용모",
-        "type": "계약",
-        "to": "강태산",
-        "basis": "강태산과 회랑 횃불을 맞춘다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "두국",
-        "type": "계약",
-        "to": "용모",
-        "basis": "용모의 교대와 횃불을 나눈다"
-      }
-    ]
-  }
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1165065100",
+      "name": {
+        "ko": "양재1동"
+      },
+      "holderPersonId": "K280",
+      "directLiegePersonId": "K398",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1165065100",
+          "name": "양재1동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

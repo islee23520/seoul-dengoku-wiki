@@ -1,398 +1,161 @@
 {
   "id": "person-0273",
   "name": "송하율",
-  "title": "차량 정비 도제",
-  "position": "성하전자 차량 정비 도제",
+  "title": "반포4동 대피소장",
+  "position": "반포4동 대피소장 · 아크",
   "characterId": "K272",
-  "rank": "사원",
-  "commonTier": "T5",
-  "occupation": "차량 정비 일지·불량 부품 표본 관리",
+  "rank": "대피소장",
+  "commonTier": "T3",
+  "occupation": "대피소 통솔",
   "gender": "남성",
   "stage": "S1",
-  "state": "S11",
-  "stateName": "성하그룹",
-  "sourceRoute": "/world/Cast-State-11#인물-송하율",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0273",
   "birthDate": "2068-01-01",
   "birthday": "01-01",
   "age": 58,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-11.json#/content/28",
-    "lore/characters/Cast-State-11.json#/content/32"
-  ],
-  "familyTree": {
-    "personId": "K272",
-    "nodes": [
-      {
-        "id": "K272",
-        "personId": "K272",
-        "kind": "person",
-        "name": "송하율",
-        "birthDate": "2068-01-01",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K272"
-          },
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-송하율-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 강남역 차량기지에서 자랐다. 성하전자 차량 정비 도제 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-송하율-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0273"
-      },
-      {
-        "id": "FH-K272-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "송현찬",
-        "lineage": {
-          "surname": "송",
-          "bongwan": "홍주",
-          "clan": "c1a1-d64d-c8fc-5b8b"
-        },
-        "birthDate": "2038-01-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-송하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "송현찬은 강남역 차량기지에서 차량 정비 일지·불량 부품 표본 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-송하율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K272-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "송현혁",
-        "lineage": {
-          "surname": "송",
-          "bongwan": "홍주",
-          "clan": "c1a1-d64d-c8fc-5b8b"
-        },
-        "birthDate": "2008-01-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-송하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "송현혁은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-송하율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K272-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현리",
-        "birthDate": "2038-01-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-송하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "오현리는 강남역 차량기지에서 차량 정비 일지·불량 부품 표본 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-송하율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K272-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "송현문",
-        "birthDate": "2008-01-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-송하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "송현문은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-송하율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K272-P-01:K272:biological",
-        "from": "FH-K272-P-01",
-        "to": "K272",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-송하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K272-P-02:FH-K272-P-01:biological",
-        "from": "FH-K272-P-02",
-        "to": "FH-K272-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-송하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K272-M-01:K272:biological",
-        "from": "FH-K272-M-01",
-        "to": "K272",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-송하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K272-M-02:FH-K272-M-01:biological",
-        "from": "FH-K272-M-02",
-        "to": "FH-K272-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-송하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c1a1-d64d-c8fc-5b8b",
+    "name": "홍주 송씨",
+    "crest": "clan-crests/c1a1-d64d-c8fc-5b8b.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "송하율은 쉰여덟 해 가운데 마흔 해를 고속터미널의 대합실 층에서 잤고, 반포4동 대피소장이 되고서야 승강장 층으로 잠자리를 옮겼다. 고속터미널 부품 바꿈터로 자유도시 짐꾼이 드는 날이면 그의 대피소가 바깥 사람의 잠자리를 내주고, 그는 그 칸을 몇 밤 빌려줬는지를 하루 충전의 수로 적어 곁집에 올린다. 서초 곁집장 정유라에게 맹세하고 본역 대피소를 받은 사람이라, 가장 힘든 철에 비상 몫을 여는 날은 정유라의 말을 듣고서야 정한다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "반포4동 대피소장",
+    "품계": "대피소장",
+    "생업": "대피소 통솔",
+    "일하는 역": "고속터미널역",
+    "잠자는 역": "고속터미널역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "송하율은 쉰여덟 해 가운데 마흔 해를 고속터미널의 대합실 층에서 잤고, 반포4동 대피소장이 되고서야 승강장 층으로 잠자리를 옮겼다. 고속터미널 부품 바꿈터로 자유도시 짐꾼이 드는 날이면 그의 대피소가 바깥 사람의 잠자리를 내주고, 그는 그 칸을 몇 밤 빌려줬는지를 하루 충전의 수로 적어 곁집에 올린다. 서초 곁집장 정유라에게 맹세하고 본역 대피소를 받은 사람이라, 가장 힘든 철에 비상 몫을 여는 날은 정유라의 말을 듣고서야 정한다.",
+    "관직": "직함 반포4동 대피소장. 직위 반포4동 대피소장 · 아크. 품계 대피소장. 일하는 역 고속터미널역."
+  },
+  "values": {
+    "권위": 25,
+    "개방": -35,
+    "무력": -5,
+    "물질": -20,
+    "공동": 45,
+    "원칙": -5,
+    "공개": -40,
+    "자격": 55,
+    "분산": -25,
+    "변혁": 15
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -25,
+    "위험": 10,
+    "과시": 20,
+    "지속": 30,
+    "지향": "이성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0273",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "송하율",
+        "type": "지휘",
+        "to": "정유라",
+        "basis": "서초 곁집장 정유라의 직속"
+      },
+      {
+        "from": "송하율",
+        "type": "맹세",
+        "to": "정유라",
+        "basis": "서초 곁집장 정유라에게 맹세하고 본역 고속터미널의 대피소를 받았다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "권도하",
+        "type": "지휘",
+        "to": "송하율",
+        "basis": "반포4동 대피소장 송하율의 직속"
+      },
+      {
+        "from": "서진아",
+        "type": "경쟁",
+        "to": "송하율",
+        "basis": "비상 몫을 나눌 때마다 서초4동과 본역 반포4동의 사람 수를 두고 맞선다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K398",
+    "name": "정유라",
+    "courtId": "court:K398",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K272",
+    "members": [
+      {
+        "personId": "K275",
+        "name": "권도하"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
-      },
-      "strategy": {
-        "base": 6,
-        "effective": 6
-      },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "learning": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "intrigue": {
         "base": 7,
         "effective": 7
-      }
-    },
-    "skills": [
-      {
-        "id": "k272-defect-sample-preservation",
-        "name": {
-          "ko": "불량 표본 보존",
-          "en": "Defect sample preservation"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "k272-priority",
-        "name": {
-          "ko": "공구에 대한 책임",
-          "en": "Tool accountability"
-        },
-        "description": {
-          "ko": "송하율은 불량을 표본으로 남기고 일지를 직접 게시한다. 공개 시험 진입의 야망은 확인되지만 지휘 성과는 없다.",
-          "en": "Song Hayul preserves defective samples and posts logs directly. His ambition to enter through public trials is documented, not command success."
-        },
-        "behavior": {
-          "ko": "정비 일지를 성하전자 작업 반장이 아닌 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.",
-          "en": "Office. Rank: assistant manager. Title: vehicle maintenance apprentice. He pasted the maintenance logs directly on the Elder's board, not the squad leader's, and cut defective parts out as specimens."
-        },
-        "stress": {
-          "ko": "시험 차륜에 숨은 결함이 자기 서명으로 남아 사택 대표에게 기지를 내주는 명분이 되는 것.",
-          "en": "Fear. That a hidden defect in a trial wheel would remain under his signature and become the pretext for handing the base to the residents' representatives."
-        },
-        "relationship": {
-          "ko": "이홍원의 도제이며 박태겸과의 도제 교환으로 황지호와 제동 부품을 나눈다. 강태산과 북문 횃불 신호를 맞춘다.",
-          "en": "Relations. I Hongwon's apprentice, he shared brake parts with Hwang Jiho through the apprentice exchange with Park Taegyeom. Matched the north gate torch signals with Kang Taesan."
-        },
-        "effects": []
       },
-      {
-        "id": "k272-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 사원. 직함은 성하전자 차량 정비 도제. 정비 일지를 성하전자 작업 반장이 아닌 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.",
-          "en": "Office. Rank: assistant manager. Title: vehicle maintenance apprentice. He pasted the maintenance logs directly on the Elder's board, not the squad leader's, and cut defective parts out as specimens."
-        },
-        "stress": {
-          "ko": "공포. 시험 차륜에 숨은 결함이 자기 서명으로 남아 사택 대표에게 기지를 내주는 명분이 되는 것.",
-          "en": "Fear. That a hidden defect in a trial wheel would remain under his signature and become the pretext for handing the base to the residents' representatives."
-        },
-        "relationship": {
-          "ko": "관계. 이홍원의 도제이며 박태겸과의 도제 교환으로 황지호와 제동 부품을 나눈다. 강태산과 북문 횃불 신호를 맞춘다.",
-          "en": "Relations. I Hongwon's apprentice, he shared brake parts with Hwang Jiho through the apprentice exchange with Park Taegyeom. Matched the north gate torch signals with Kang Taesan."
-        },
-        "effects": []
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "송하율은 불량을 표본으로 남기고 일지를 직접 게시한다. 공개 시험 진입의 야망은 확인되지만 지휘 성과는 없다.",
-      "en": "Song Hayul preserves defective samples and posts logs directly. His ambition to enter through public trials is documented, not command success."
     },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -418,85 +181,52 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c1a1-d64d-c8fc-5b8b",
-    "name": "홍주 송씨",
-    "crest": "clan-crests/c1a1-d64d-c8fc-5b8b.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 0,
-    "개방": -20,
-    "무력": -15,
-    "물질": 30,
-    "공동": 25,
-    "원칙": 5,
-    "공개": 5,
-    "자격": 90,
-    "분산": 5,
-    "변혁": -30
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -25,
-    "위험": 10,
-    "과시": 20,
-    "지속": 30,
-    "지향": "이성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "차량 정비 일지·불량 부품 표본 관리",
-    "소속": "성하그룹",
-    "품계": "사원",
-    "직함": "성하전자 차량 정비 도제",
-    "가치관": "권위 0 | 개방 −20 | 무력 −15 | 물질 30 | 공동 25 | 원칙 5 | 공개 5 | 자격 90 | 분산 5 | 변혁 −30",
-    "욕망": "갈망 0 | 독점 −25 | 위험 10 | 과시 20 | 지속 30 | 지향 이성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "강남역 차량기지에서 자랐다. 성하전자 차량 정비 도제 자리는 탈선 직전 결함 보고로 열렸다.\n- 송하율은 서초4동에서 차량 정비 일지·불량 부품 표본 관리 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다. 이홍원의 도제이며 박태겸과의 도제 교환으로 황지호와 제동 부품을 나눈다. 강태산과 북문 횃불 신호를 맞춘다",
-    "관직": "품계 사원. 직함은 성하전자 차량 정비 도제. 정비 일지를 성하전자 작업 반장이 아닌 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.",
-    "일화": "유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나왔다.",
-    "관계": "이홍원의 도제이며 박태겸과의 도제 교환으로 황지호와 제동 부품을 나눈다. 강태산과 북문 횃불 신호를 맞춘다.",
-    "야망": "공개 승계 시험으로 다음 원로 후보에 올라 이씨 가문 승계를 끊는 이홍원의 길을 자기 손으로 증명한다.",
-    "공포": "시험 차륜에 숨은 결함이 자기 서명으로 남아 사택 대표에게 기지를 내주는 명분이 되는 것.",
-    "개입": "시험 감독을 맡거나, 결함 부품의 출처 공구를 추적할 수 있다."
-  },
-  "biography": "손이 빠르고 말이 적다. 시험 점수를 자랑하지 않지만 남의 공구를 빼돌리는 일은 참지 못한다.\n\n- 생업: 차량 정비 일지·불량 부품 표본 관리\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 차량 정비 도제\n**생애.** 강남역 차량기지에서 자랐다. 성하전자 차량 정비 도제 자리는 탈선 직전 결함 보고로 열렸다.\n- 송하율은 서초4동에서 차량 정비 일지·불량 부품 표본 관리 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다. 이홍원의 도제이며 박태겸과의 도제 교환으로 황지호와 제동 부품을 나눈다. 강태산과 북문 횃불 신호를 맞춘다\n\n**관직.** 품계 사원. 직함은 성하전자 차량 정비 도제. 정비 일지를 성하전자 작업 반장이 아닌 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.\n\n**일화.** 유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나왔다.\n\n**관계.** 이홍원의 도제이며 박태겸과의 도제 교환으로 황지호와 제동 부품을 나눈다. 강태산과 북문 횃불 신호를 맞춘다.\n\n**야망.** 공개 승계 시험으로 다음 원로 후보에 올라 이씨 가문 승계를 끊는 이홍원의 길을 자기 손으로 증명한다.\n\n**공포.** 시험 차륜에 숨은 결함이 자기 서명으로 남아 사택 대표에게 기지를 내주는 명분이 되는 것.\n\n**개입.** 시험 감독을 맡거나, 결함 부품의 출처 공구를 추적할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 −20 | 무력 −15 | 물질 30 | 공동 25 | 원칙 5 | 공개 5 | 자격 90 | 분산 5 | 변혁 −30\n- 욕망: 갈망 0 | 독점 −25 | 위험 10 | 과시 20 | 지속 30 | 지향 이성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-11"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1165058100",
+      "name": {
+        "ko": "반포4동"
+      },
+      "holderPersonId": "K272",
+      "directLiegePersonId": "K398",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1165058100",
+          "name": "반포4동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
   ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "송하율",
-        "type": "사제",
-        "to": "이홍원",
-        "basis": "차량 정비 도제로 회장 밑에서 수련"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:고속터미널",
+      "name": {
+        "ko": "고속터미널역"
       },
-      {
-        "from": "송하율",
-        "type": "계약",
-        "to": "아이작 워커",
-        "basis": "제동 부품을 용산 도제와 나눔"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "두모",
-        "type": "사제",
-        "to": "송하율",
-        "basis": "송하율의 도제 일과를 현장에서 받고"
+      "holderPersonId": "K275",
+      "directLiegePersonId": "K272",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "고속터미널",
+        "stationName": "고속터미널"
       },
-      {
-        "from": "추지훈",
-        "type": "맹세",
-        "to": "송하율",
-        "basis": "송하율의 도제 일과를 폭로 근거로 받고"
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1165058100",
+          "name": "반포4동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "권도하",
+      "holderRoute": "/people/person-0276"
+    }
+  ]
 }

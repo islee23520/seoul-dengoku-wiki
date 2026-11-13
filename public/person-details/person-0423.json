@@ -1,408 +1,159 @@
 {
   "id": "person-0423",
   "name": "노세람",
-  "title": "계약 감사 서기",
-  "position": "계약 감사 서기",
+  "title": "개포2동 대피소장",
+  "position": "개포2동 대피소장 · 아크",
   "characterId": "K422",
-  "rank": "미등록",
-  "commonTier": "T5",
-  "occupation": "계약 감사 기록·당직 열쇠 인계",
+  "rank": "대피소장",
+  "commonTier": "T3",
+  "occupation": "대피소 통솔",
   "gender": "여성",
   "stage": "S2",
-  "state": "S16",
-  "stateName": "정동노총",
-  "sourceRoute": "/world/Cast-State-16#인물-노세람",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0423",
   "birthDate": "2070-06-25",
   "birthday": "06-25",
   "age": 56,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-16.json#/content/655",
-    "lore/characters/Cast-State-16.json#/content/660"
-  ],
-  "familyTree": {
-    "personId": "K422",
-    "nodes": [
-      {
-        "id": "K422",
-        "personId": "K422",
-        "kind": "person",
-        "name": "노세람",
-        "birthDate": "2070-06-25",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K422"
-          },
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-노세람-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 계약 감사 서기 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-노세람-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0423"
-      },
-      {
-        "id": "FH-K422-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "노승석",
-        "lineage": {
-          "surname": "노",
-          "bongwan": "장연",
-          "clan": "b178-c7a5-c5f0-76e7"
-        },
-        "birthDate": "2040-06-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-노세람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2078,
-            "summary": "노승석은 서울역 등기소에서 계약 감사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-노세람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K422-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "노승준",
-        "lineage": {
-          "surname": "노",
-          "bongwan": "장연",
-          "clan": "b178-c7a5-c5f0-76e7"
-        },
-        "birthDate": "2010-06-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-노세람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "노승준은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-노세람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K422-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최태호",
-        "birthDate": "2040-06-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-노세람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2078,
-            "summary": "최태호는 서울역 등기소에서 계약 감사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-노세람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K422-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준성",
-        "birthDate": "2010-06-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-노세람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정준성은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-노세람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K422-P-01:K422:biological",
-        "from": "FH-K422-P-01",
-        "to": "K422",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-노세람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K422-P-02:FH-K422-P-01:biological",
-        "from": "FH-K422-P-02",
-        "to": "FH-K422-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-노세람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K422-M-01:K422:biological",
-        "from": "FH-K422-M-01",
-        "to": "K422",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-노세람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K422-M-02:FH-K422-M-01:biological",
-        "from": "FH-K422-M-02",
-        "to": "FH-K422-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-노세람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b178-c7a5-c5f0-76e7",
+    "name": "장연 노씨",
+    "crest": "clan-crests/b178-c7a5-c5f0-76e7.svg"
   },
-  "proseContacts": [
-    {
-      "recipientId": "K398",
-      "recipientName": "정유라",
-      "basis": "노세람의 기존 관계 기록은 다음과 같다. 정유라의 감사 방향과 맞되, 서고 열쇠는 따로 둔다.",
-      "sourceRef": {
-        "path": "lore/characters/Cast-State-16.json",
-        "anchor": "인물-노세람-p5"
-      }
-    }
-  ],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "창고 열쇠를 넘겨받는 교대마다, 노세람은 남은 것을 하나씩 소리 내어 센다. 개포 쪽은 옛 대피소 집안이 많아 몫을 두고 말이 많지만, 개포2동 대피소장인 그가 센 수에는 아무도 토를 달지 않는다. 쉰여섯이 된 지금도 그 열쇠는 남에게 맡기지 않고 허리에 찬 채 잠자리에 든다. 개포동역에서 강남 곁집 창고로 올리는 셈표 끝에는 늘 남은 땔감의 수를 따로 적는다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "개포2동 대피소장",
+    "품계": "대피소장",
+    "생업": "대피소 통솔",
+    "일하는 역": "개포동역",
+    "잠자는 역": "개포동역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "창고 열쇠를 넘겨받는 교대마다, 노세람은 남은 것을 하나씩 소리 내어 센다. 개포 쪽은 옛 대피소 집안이 많아 몫을 두고 말이 많지만, 개포2동 대피소장인 그가 센 수에는 아무도 토를 달지 않는다. 쉰여섯이 된 지금도 그 열쇠는 남에게 맡기지 않고 허리에 찬 채 잠자리에 든다. 개포동역에서 강남 곁집 창고로 올리는 셈표 끝에는 늘 남은 땔감의 수를 따로 적는다.",
+    "관직": "직함 개포2동 대피소장. 직위 개포2동 대피소장 · 아크. 품계 대피소장. 일하는 역 개포동역."
+  },
+  "values": {
+    "권위": -5,
+    "개방": 15,
+    "무력": -15,
+    "물질": -45,
+    "공동": 25,
+    "원칙": 40,
+    "공개": -5,
+    "자격": -20,
+    "분산": 0,
+    "변혁": 65
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": -5,
+    "위험": -25,
+    "과시": -50,
+    "지속": 10,
+    "지향": "양성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0423",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "노세람",
+        "type": "지휘",
+        "to": "오경재",
+        "basis": "강남 곁집장 오경재의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "허서겸",
+        "type": "지휘",
+        "to": "노세람",
+        "basis": "개포2동 대피소장 노세람의 직속"
+      },
+      {
+        "from": "변오름",
+        "type": "지휘",
+        "to": "노세람",
+        "basis": "개포2동 대피소장 노세람의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K423",
+    "name": "오경재",
+    "courtId": "court:K423",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K422",
+    "members": [
+      {
+        "personId": "K066",
+        "name": "허서겸"
+      },
+      {
+        "personId": "K103",
+        "name": "변오름"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
-      "learning": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "prowess": {
-        "base": 3,
-        "effective": 3
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
-      "endurance": {
+      "learning": {
         "base": 6,
         "effective": 6
-      }
-    },
-    "skills": [
-      {
-        "id": "contract-date-check",
-        "name": {
-          "ko": "계약 날짜 대조",
-          "en": "Contract date check"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "유효기간을 먼저 확인",
-          "en": "Checks validity first"
-        },
-        "description": {
-          "ko": "계약 사본에서 지워진 날짜를 찾고 열람을 잠갔다. 도장 없는 사본은 반출하지 않고 교차검증으로 감사 서명을 남기려 한다. 확인된 행동 범위를 넘는 권한과 성과는 부여하지 않는다.",
-          "en": "Finds erased dates in a contract copy and locks access. Withholds unstamped copies from removal and seeks cross-checked audit signatures. No authority or achievement beyond these actions is granted."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 유효기간을 먼저 확인을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "교대가 막히거나 기록이 사라지면 원본과 인계를 재확인할 수 있다.",
-          "en": "May recheck originals and handovers when shifts are blocked or records disappear."
-        },
-        "relationship": {
-          "ko": "다음 당직에게 열쇠와 기록을 넘기며 파벌의 인계 방해를 경계한다.",
-          "en": "Hands keys and records to the next duty worker and watches for factional obstruction."
-        },
-        "effects": []
       },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "시청역 공동교섭의 감사 서명을 감사관 한 명이 아니라 서기 교차검증으로 바꾼다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "만료된 조항이 살아 있는 것처럼 다시 찍혀 나가는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "다음 당직에게 열쇠와 기록을 넘기며 파벌의 인계 방해를 경계한다.",
-          "en": "Hands keys and records to the next duty worker and watches for factional obstruction."
-        },
-        "effects": []
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "계약 사본에서 지워진 날짜를 찾고 열람을 잠갔다. 도장 없는 사본은 반출하지 않고 교차검증으로 감사 서명을 남기려 한다. 확인된 행동 범위를 넘는 권한과 성과는 부여하지 않는다.",
-      "en": "Finds erased dates in a contract copy and locks access. Withholds unstamped copies from removal and seeks cross-checked audit signatures. No authority or achievement beyond these actions is granted."
     },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -428,59 +179,77 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b178-c7a5-c5f0-76e7",
-    "name": "장연 노씨",
-    "crest": "clan-crests/b178-c7a5-c5f0-76e7.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -30,
-    "개방": 30,
-    "무력": -25,
-    "물질": 5,
-    "공동": 5,
-    "원칙": 50,
-    "공개": 40,
-    "자격": 15,
-    "분산": 30,
-    "변혁": 20
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": -5,
-    "위험": -25,
-    "과시": -50,
-    "지속": 10,
-    "지향": "양성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "계약 감사 기록·당직 열쇠 인계",
-    "소속": "정동노총",
-    "공동체 역할": "조합원",
-    "직무": "계약 감사 서기",
-    "가치관": "권위 −30 | 개방 30 | 무력 −25 | 물질 5 | 공동 5 | 원칙 50 | 공개 40 | 자격 15 | 분산 30 | 변혁 20",
-    "욕망": "갈망 30 | 독점 −5 | 위험 −25 | 과시 −50 | 지속 10 | 지향 양성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2070-06-25에 태어난 노세람은 영구 겨울의 시청역 조합 작업장에서 계약 감사 서기 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 노세람은 소공동의 시청역 조합 작업장에서 계약 감사 서기 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "직무": "공동체 역할은 조합원이며 직무는 계약 감사 서기이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.",
-    "일화": "세 번째 급수계약 사본에서 날짜가 지워진 칸을 발견하고 열람을 잠갔다.",
-    "관계": "노세람의 기존 관계 기록은 다음과 같다. 정유라의 감사 방향과 맞되, 서고 열쇠는 따로 둔다.",
-    "목표": "노세람은 계약 감사 서기 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.",
-    "공포": "계약 감사 서기 업무의 서명이나 인계 기록이 바뀌어 노세람의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.",
-    "개입": "노세람은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다."
-  },
-  "biography": "노세람은 영구 겨울의 시청역 조합 작업장에서 계약 감사 서기 업무 기록과 공개 표결 서명을 먼저 대조한다. 급수·통행·계약 일정이 겹치는 날에는 접수 시각과 인계 순서를 같은 장부에 남긴다.\n\n- 생업: 계약 감사 기록·당직 열쇠 인계\n- 소속: 정동노총\n- 공동체 역할: 조합원\n- 직무: 계약 감사 서기\n**생애.** 2070-06-25에 태어난 노세람은 영구 겨울의 시청역 조합 작업장에서 계약 감사 서기 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 노세람은 소공동의 시청역 조합 작업장에서 계약 감사 서기 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**직무.** 공동체 역할은 조합원이며 직무는 계약 감사 서기이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.\n\n**일화.** 세 번째 급수계약 사본에서 날짜가 지워진 칸을 발견하고 열람을 잠갔다.\n\n**관계.** 노세람의 기존 관계 기록은 다음과 같다. 정유라의 감사 방향과 맞되, 서고 열쇠는 따로 둔다.\n\n**목표.** 노세람은 계약 감사 서기 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.\n\n**공포.** 계약 감사 서기 업무의 서명이나 인계 기록이 바뀌어 노세람의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.\n\n**개입.** 노세람은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 30 | 무력 −25 | 물질 5 | 공동 5 | 원칙 50 | 공개 40 | 자격 15 | 분산 30 | 변혁 20\n- 욕망: 갈망 30 | 독점 −5 | 위험 −25 | 과시 −50 | 지속 10 | 지향 양성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-16"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1168067000",
+      "name": {
+        "ko": "개포2동"
+      },
+      "holderPersonId": "K422",
+      "directLiegePersonId": "K423",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1168067000",
+          "name": "개포2동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
   ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:구룡",
+      "name": {
+        "ko": "구룡역"
+      },
+      "holderPersonId": "K066",
+      "directLiegePersonId": "K422",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "구룡",
+        "stationName": "구룡"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1168067000",
+          "name": "개포2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "허서겸",
+      "holderRoute": "/people/person-0066"
+    },
+    {
+      "id": "holding:v3:station:개포동",
+      "name": {
+        "ko": "개포동역"
+      },
+      "holderPersonId": "K103",
+      "directLiegePersonId": "K422",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "개포동",
+        "stationName": "개포동"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1168067000",
+          "name": "개포2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "변오름",
+      "holderRoute": "/people/person-0104"
+    }
+  ]
 }

@@ -1,492 +1,105 @@
 {
   "id": "person-0366",
   "name": "판초담",
-  "title": "구의 펌프실 비상발전 운전장",
-  "position": "구의수비대 구의 펌프실 비상발전 운전장",
+  "title": "수도방위사령부 직할대 초소장",
+  "position": "수도방위사령부 직할대 초소장 · 구의역",
   "characterId": "K365",
-  "rank": "현장책임자",
-  "commonTier": "T4",
-  "occupation": "펌프실 연료 잔량·출력 일지 봉인",
+  "rank": "대위",
+  "commonTier": "T5",
+  "occupation": "군 지휘",
   "gender": "남성",
   "stage": "S2",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-판초담",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0366",
   "birthDate": "2102-12-12",
   "birthday": "12-12",
   "age": 24,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/50"
-  ],
-  "familyTree": {
-    "personId": "K365",
-    "nodes": [
-      {
-        "id": "K365",
-        "personId": "K365",
-        "kind": "person",
-        "name": "판초담",
-        "birthDate": "2102-12-12",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K365"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-판초담-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 구의수비대 구의 펌프실 비상발전 운전장 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-판초담-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0366"
-      },
-      {
-        "id": "FH-K365-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "판승진",
-        "lineage": {
-          "surname": "판",
-          "bongwan": "해주",
-          "clan": "d310-d574-c8fc-agreed-b2f4-second"
-        },
-        "birthDate": "2072-12-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-판초담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2110,
-            "summary": "판승진은 신정 차량기지에서 펌프실 연료 잔량·출력 일지 봉인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-판초담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K365-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "판승현",
-        "lineage": {
-          "surname": "판",
-          "bongwan": "해주",
-          "clan": "d310-d574-c8fc-agreed-b2f4-second"
-        },
-        "birthDate": "2042-12-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-판초담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "판승현은 신정 차량기지에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-판초담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K365-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "판승영",
-        "lineage": {
-          "surname": "판",
-          "bongwan": "해주",
-          "clan": "d310-d574-c8fc-agreed-b2f4-second"
-        },
-        "birthDate": "2012-12-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-판초담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "판승영은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-판초담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K365-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한준수",
-        "birthDate": "2072-12-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-판초담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2110,
-            "summary": "한준수는 신정 차량기지에서 펌프실 연료 잔량·출력 일지 봉인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-판초담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K365-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강준경",
-        "birthDate": "2042-12-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-판초담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "강준경은 신정 차량기지에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-판초담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K365-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "임준은",
-        "birthDate": "2012-12-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-판초담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임준은은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-판초담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K365-P-01:K365:biological",
-        "from": "FH-K365-P-01",
-        "to": "K365",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-판초담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K365-P-02:FH-K365-P-01:biological",
-        "from": "FH-K365-P-02",
-        "to": "FH-K365-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-판초담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K365-P-03:FH-K365-P-02:biological",
-        "from": "FH-K365-P-03",
-        "to": "FH-K365-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-판초담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K365-M-01:K365:biological",
-        "from": "FH-K365-M-01",
-        "to": "K365",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-판초담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K365-M-02:FH-K365-M-01:biological",
-        "from": "FH-K365-M-02",
-        "to": "FH-K365-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-판초담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K365-M-03:FH-K365-M-02:biological",
-        "from": "FH-K365-M-03",
-        "to": "FH-K365-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-판초담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d310-d574-c8fc",
+    "name": "해주 판씨",
+    "crest": "clan-crests/d310-d574-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "해주 판씨인 스물네 살 남성 판초담은 광진구 자양2동 구의역에 국군 대위로 기재돼 있다. 그는 구의역 강변 쪽 출입구 밖, 자양–청담 다리 북쪽 끝에 선 수도방위사령부 직할대 초소의 초소장이고, 구의역 출입구를 지키는 수지완 지휘관의 분대와 날마다 교대 장부를 주고받는다. 바람에 다리가 닫히는 날에는 그가 초소 병사들을 이끌고 구의역 대피칸으로 들어오고, 그 시각과 머릿수를 초소 일지에 적는다. 탄피 장부를 맞추는 법은 해주 판씨 어른인 아차산 검문소의 판늘샘 소령에게서 처음 배웠다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "수도방위사령부 직할대 초소장",
+    "품계": "대위",
+    "생업": "군 지휘",
+    "일하는 역": "구의역",
+    "잠자는 역": "구의역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "해주 판씨인 스물네 살 남성 판초담은 광진구 자양2동 구의역에 국군 대위로 기재돼 있다. 그는 구의역 강변 쪽 출입구 밖, 자양–청담 다리 북쪽 끝에 선 수도방위사령부 직할대 초소의 초소장이고, 구의역 출입구를 지키는 수지완 지휘관의 분대와 날마다 교대 장부를 주고받는다. 바람에 다리가 닫히는 날에는 그가 초소 병사들을 이끌고 구의역 대피칸으로 들어오고, 그 시각과 머릿수를 초소 일지에 적는다. 탄피 장부를 맞추는 법은 해주 판씨 어른인 아차산 검문소의 판늘샘 소령에게서 처음 배웠다.",
+    "관직": "직함 수도방위사령부 직할대 초소장. 직위 수도방위사령부 직할대 초소장 · 구의역. 품계 대위. 일하는 역 구의역."
+  },
+  "values": {
+    "권위": 95,
+    "개방": -65,
+    "무력": 75,
+    "물질": 10,
+    "공동": 25,
+    "원칙": 25,
+    "공개": -40,
+    "자격": 20,
+    "분산": -70,
+    "변혁": -30
+  },
+  "desire": {
+    "갈망": 25,
+    "독점": 15,
+    "위험": 40,
+    "과시": -20,
+    "지속": -15,
+    "지향": "양성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0366",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
+      "diplomacy": {
+        "base": 4,
+        "effective": 4
       },
-      "strategy": {
-        "base": 9,
-        "effective": 9
-      },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
-      "learning": {
+      "martial": {
         "base": 10,
         "effective": 10
       },
+      "stewardship": {
+        "base": 4,
+        "effective": 4
+      },
+      "intrigue": {
+        "base": 5,
+        "effective": 5
+      },
+      "learning": {
+        "base": 4,
+        "effective": 4
+      },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 11,
+        "effective": 11
       }
     },
-    "skills": [
-      {
-        "id": "emergency-power-allocation",
-        "name": {
-          "ko": "비상 배전",
-          "en": "Emergency power allocation"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "펌프와 의무소 우선",
-          "en": "Pumps and care first"
-        },
-        "description": {
-          "ko": "정전 때 펌프와 의무소 전력을 남기고 능선 조명을 껐다. 지휘에 복종하되 은폐 배전은 거부하는 긴장을 보존한다.",
-          "en": "An outage left power for pumps and care while ridge lights went dark. Obedience to command coexists with refusal of concealed allocation."
-        },
-        "behavior": {
-          "ko": "연료 냄새에 예민하고 구두 배전을 싫어한다. 정수 펌프보다 능선 조명에 전력을 돌리라는 압박을 모욕으로 여긴다.",
-          "en": "Sensitive to the smell of fuel, he hated verbal power routing. He took the pressure to divert power from the purification pumps to the ridge lighting as an insult."
-        },
-        "stress": {
-          "ko": "공포. 연료가 바닥난 밤에 잔압이 떨어지고, 그 공백을 암사 외부 징발권이 메우는 것.",
-          "en": "Fear. That on a night when the fuel ran dry the residual pressure would fall, and the Amsa protection zone would fill the gap."
-        },
-        "relationship": {
-          "ko": "관계. 선솔우의 펌프에 출력을 맞추고, 영한뫼의 의무소 전력을 같은 일지에 남긴다. 고서준의 전시 지휘에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
-          "en": "Relations. Matched output to Seon Solwoo's pumps and kept Yeong Hanmoe's clinic power on the same log. He had obeyed Go Seojun's wartime command but refused concealed power routing."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 현장책임자. 직함은 구의수비대 구의 펌프실 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 선솔우에게 보내고, 최저 출력 이하면 수비대장의 독촉이 있어도 봉화 배전을 끊는다.",
-          "en": "Office. Rank: company commander. Title: Guui pump-room emergency generator operator. Every shift he sealed the fuel remainder and output logs and sent them to Seon Solwoo, and below minimum output he cut the beacon power even under the defense chief's urging."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 현장책임자. 직함은 구의수비대 구의 펌프실 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 선솔우에게 보내고, 최저 출력 이하면 수비대장의 독촉이 있어도 봉화 배전을 끊는다.",
-          "en": "Recorded duty and limits: Office. Rank: company commander. Title: Guui pump-room emergency generator operator. Every shift he sealed the fuel remainder and output logs and sent them to Seon Solwoo, and below minimum output he cut the beacon power even under the defense chief's urging."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 연료가 바닥난 밤에 잔압이 떨어지고, 그 공백을 암사 외부 징발권이 메우는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That on a night when the fuel ran dry the residual pressure would fall, and the Amsa protection zone would fill the gap."
-        },
-        "relationship": {
-          "ko": "관계. 선솔우의 펌프에 출력을 맞추고, 영한뫼의 의무소 전력을 같은 일지에 남긴다. 고서준의 전시 지휘에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
-          "en": "Relations. Matched output to Seon Solwoo's pumps and kept Yeong Hanmoe's clinic power on the same log. He had obeyed Go Seojun's wartime command but refused concealed power routing."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "정전 때 펌프와 의무소 전력을 남기고 능선 조명을 껐다. 지휘에 복종하되 은폐 배전은 거부하는 긴장을 보존한다.",
-      "en": "An outage left power for pumps and care while ridge lights went dark. Obedience to command coexists with refusal of concealed allocation."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,72 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d310-d574-c8fc",
-    "name": "해주 판씨",
-    "crest": "clan-crests/d310-d574-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 50,
-    "개방": -10,
-    "무력": 40,
-    "물질": 15,
-    "공동": 20,
-    "원칙": 5,
-    "공개": -15,
-    "자격": 5,
-    "분산": -20,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 25,
-    "독점": 15,
-    "위험": 40,
-    "과시": -20,
-    "지속": -15,
-    "지향": "양성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "펌프실 연료 잔량·출력 일지 봉인",
-    "소속": "구의수비대",
-    "품계": "현장책임자",
-    "직함": "구의수비대 구의 펌프실 비상발전 운전장",
-    "가치관": "권위 50 | 개방 −10 | 무력 40 | 물질 15 | 공동 20 | 원칙 5 | 공개 −15 | 자격 5 | 분산 −20 | 변혁 −10",
-    "욕망": "갈망 25 | 독점 15 | 위험 40 | 과시 −20 | 지속 −15 | 지향 양성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2102-12-12에 태어났다. 2126년 개막 현재 구의수비대 구의 펌프실 비상발전 운전장 직무를 맡아 펌프실 연료 잔량·출력 일지 봉인 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 펌프실 연료 잔량·출력 일지 봉인 창구가 판초담의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 현장책임자. 직함은 구의수비대 구의 펌프실 비상발전 운전장. 펌프실 연료 잔량·출력 일지 봉인 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
-    "일화": "상수관 파손과 정전이 겹치자 판초담은 비상 발전을 펌프와 의무소에 잠그고 능선 조명을 껐다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
-    "관계": "선솔우의 펌프에 출력을 맞추고, 영한뫼의 의무소 전력을 같은 일지에 남긴다. 고서준의 전시 지휘에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
-    "야망": "판초담은 구의수비대 구의 펌프실 비상발전 운전장 직무에서 펌프실 연료 잔량·출력 일지 봉인 기록을 공개 인계표와 맞물리게 하려 한다.",
-    "공포": "구의수비대 구의 펌프실 비상발전 운전장 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
-    "개입": "대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다. 판초담의 펌프실 연료 잔량·출력 일지 봉인 원장을 대조해 다음 인계의 증거를 세울 수 있다."
-  },
-  "biography": "판초담은 펌프실 연료 잔량·출력 일지 봉인 기록을 손에 익힌 구의수비대 인물이다. 연료 냄새에 예민하고 구두 배전을 싫어한다. 정수 펌프보다 능선 조명에 전력을 돌리라는 압박을 모욕으로 여긴다.\n\n- 생업: 펌프실 연료 잔량·출력 일지 봉인\n- 소속: 구의수비대\n- 품계: 현장책임자\n- 직함: 구의수비대 구의 펌프실 비상발전 운전장\n**생애.** 2102-12-12에 태어났다. 2126년 개막 현재 구의수비대 구의 펌프실 비상발전 운전장 직무를 맡아 펌프실 연료 잔량·출력 일지 봉인 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 펌프실 연료 잔량·출력 일지 봉인 창구가 판초담의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 현장책임자. 직함은 구의수비대 구의 펌프실 비상발전 운전장. 펌프실 연료 잔량·출력 일지 봉인 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 상수관 파손과 정전이 겹치자 판초담은 비상 발전을 펌프와 의무소에 잠그고 능선 조명을 껐다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 선솔우의 펌프에 출력을 맞추고, 영한뫼의 의무소 전력을 같은 일지에 남긴다. 고서준의 전시 지휘에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 판초담은 구의수비대 구의 펌프실 비상발전 운전장 직무에서 펌프실 연료 잔량·출력 일지 봉인 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 구의수비대 구의 펌프실 비상발전 운전장 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다. 판초담의 펌프실 연료 잔량·출력 일지 봉인 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −10 | 무력 40 | 물질 15 | 공동 20 | 원칙 5 | 공개 −15 | 자격 5 | 분산 −20 | 변혁 −10\n- 욕망: 갈망 25 | 독점 15 | 위험 40 | 과시 −20 | 지속 −15 | 지향 양성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-14"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "판초담",
-        "type": "지휘",
-        "to": "고서준",
-        "basis": "고서준의 전시 지휘에는 복종하되 은폐 배전은 거부한다"
-      },
-      {
-        "from": "판초담",
-        "type": "계약",
-        "to": "선솔우",
-        "basis": "선솔우의 펌프에 출력을 맞추고"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

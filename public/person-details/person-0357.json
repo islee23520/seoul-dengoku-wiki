@@ -1,385 +1,120 @@
 {
   "id": "person-0357",
   "name": "영석온",
-  "title": "능선·교량 당직 의무원",
-  "position": "구의수비대 능선·교량 당직 의무원",
+  "title": "창동역 역장",
+  "position": "창동역 역장 · 정부",
   "characterId": "K356",
-  "rank": "수비대원",
-  "commonTier": "T5",
-  "occupation": "중증도 표·급수 시간 게시·전쟁명령 결재 확인",
+  "rank": "역장",
+  "commonTier": "T4",
+  "occupation": "역 행정",
   "gender": "여성",
   "stage": "S2",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-영석온",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0357",
   "birthDate": "2071-04-19",
   "birthday": "04-19",
   "age": 55,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/127"
-  ],
-  "familyTree": {
-    "personId": "K356",
-    "nodes": [
-      {
-        "id": "K356",
-        "personId": "K356",
-        "kind": "person",
-        "name": "영석온",
-        "birthDate": "2071-04-19",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K356"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-영석온-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 구의수비대 능선·교량 당직 의무원 자리는 야간 무단 도하 적발로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-영석온-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0357"
-      },
-      {
-        "id": "FH-K356-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "영승호",
-        "lineage": {
-          "surname": "영",
-          "bongwan": "선천",
-          "clan": "c601-c120-cc9c-5f71"
-        },
-        "birthDate": "2041-04-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-영석온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2079,
-            "summary": "영승호는 암사 경비 초소에서 중증도 표·급수 시간 게시·전쟁명령 결재 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-영석온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K356-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "영승민",
-        "lineage": {
-          "surname": "영",
-          "bongwan": "선천",
-          "clan": "c601-c120-cc9c-5f71"
-        },
-        "birthDate": "2011-04-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-영석온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "영승민은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-영석온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K356-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오준우",
-        "birthDate": "2041-04-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-영석온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2079,
-            "summary": "오준우는 암사 경비 초소에서 중증도 표·급수 시간 게시·전쟁명령 결재 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-영석온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K356-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "송준원",
-        "birthDate": "2011-04-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-영석온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "송준원은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-영석온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K356-P-01:K356:biological",
-        "from": "FH-K356-P-01",
-        "to": "K356",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-영석온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K356-P-02:FH-K356-P-01:biological",
-        "from": "FH-K356-P-02",
-        "to": "FH-K356-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-영석온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K356-M-01:K356:biological",
-        "from": "FH-K356-M-01",
-        "to": "K356",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-영석온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K356-M-02:FH-K356-M-01:biological",
-        "from": "FH-K356-M-02",
-        "to": "FH-K356-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-영석온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c601-c120-cc9c-5f71",
+    "name": "선천 영씨",
+    "crest": "clan-crests/c601-c120-cc9c-5f71.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "창동역 역장. 도봉구 창4동 기재, 선천 영씨, 쉰다섯 살 여성. 창동 차량기지와 이어진 역이라 출입구가 넓고 바람이 세서, 바람이 거센 날이면 기지 쪽 출입구부터 닫게 한다. 광진의 고서준 의원 집안 장부를 맡은 영한뫼와는 선천 영씨 한 씨족이라, 두 사람은 터널 전화로 강가 역들의 출입구 고장과 대피칸 손질 소식을 주고받는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "창동역 역장",
+    "품계": "역장",
+    "생업": "역 행정",
+    "일하는 역": "창동역",
+    "잠자는 역": "창동역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "창동역 역장. 도봉구 창4동 기재, 선천 영씨, 쉰다섯 살 여성. 창동 차량기지와 이어진 역이라 출입구가 넓고 바람이 세서, 바람이 거센 날이면 기지 쪽 출입구부터 닫게 한다. 광진의 고서준 의원 집안 장부를 맡은 영한뫼와는 선천 영씨 한 씨족이라, 두 사람은 터널 전화로 강가 역들의 출입구 고장과 대피칸 손질 소식을 주고받는다.",
+    "관직": "직함 창동역 역장. 직위 창동역 역장 · 정부. 품계 역장. 일하는 역 창동역."
+  },
+  "values": {
+    "권위": 90,
+    "개방": -65,
+    "무력": 45,
+    "물질": 0,
+    "공동": 20,
+    "원칙": 25,
+    "공개": -30,
+    "자격": 10,
+    "분산": -80,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": 25,
+    "독점": -25,
+    "위험": 10,
+    "과시": 5,
+    "지속": 5,
+    "지향": "동성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0357",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "영석온",
+        "type": "지휘",
+        "to": "판효담",
+        "basis": "창4동 동장 판효담의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K386",
+    "name": "판효담",
+    "courtId": "court:K386",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 10,
-        "effective": 10
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "duty-triage-documentation",
-        "name": {
-          "ko": "당직 중증도 기록",
-          "en": "Duty triage documentation"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "상처를 먼저 본다",
-          "en": "Looks at wounds first"
-        },
-        "description": {
-          "ko": "상처의 열과 활력으로 부상자를 보고 호송증을 당직 원장에 옮긴다. 혼입된 무장 줄의 해결이나 독립 의료 경력은 미확인이다.",
-          "en": "Heat and vitality shape attention to casualties, and transport papers enter the duty ledger. Resolution of armed queues and independent medical experience are unconfirmed."
-        },
-        "behavior": {
-          "ko": "고지 바람보다 상처의 열을 먼저 읽고, 초병의 단독 차단을 진료 중단의 원인으로 적는다. 적의 부상도 활력이 떨어지면 같은 들것으로 본다.",
-          "en": "He read a wound's heat before the hill wind and wrote a sentry's solitary blockade down as a cause of interrupted care. An enemy's wound, when the pulse fell, rode the same stretcher."
-        },
-        "stress": {
-          "ko": "공포. 고지가 뚫린 밤에 의무소가 전리품 창구로 바뀌고 잔압 기록과 병상이 함께 비는 것.",
-          "en": "Fear. That on the night the hill was pierced the clinic would become a war-booty window and the residual-pressure record and the sickbeds would empty together."
-        },
-        "relationship": {
-          "ko": "관계. 영한뫼의 교량 의무소와 병상을 나누고, 남호성의 호송증을 당직 원장에 옮긴다. 류은비의 치료 원칙을 고지 침상에도 붙인다.",
-          "en": "Relations. Shared sickbeds with Yeong Hanmoe's bridge clinic and moved Nam Hoseong's convoy passes into the duty ledger. Pasted Ryu Eunbi's care principles on the hill sickbeds too."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 수비대원. 직함은 구의수비대 능선·교량 당직 의무원. 중증도 표와 급수 시간을 같은 칠판에 붙이고, 단독 전쟁명령 쪽지는 구의수비대의 결재이 풀리기 전에는 침상에 들이지 않는다.",
-          "en": "Office. Rank: sergeant. Title: ridge and bridge duty medic. He posted the severity table and the water-supply hours on the same chalkboard and let no wartime sole-command note reach the sickbeds before the engineers' council veto lifted."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 수비대원. 직함은 구의수비대 능선·교량 당직 의무원. 중증도 표와 급수 시간을 같은 칠판에 붙이고, 단독 전쟁명령 쪽지는 구의수비대의 결재이 풀리기 전에는 침상에 들이지 않는다.",
-          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: ridge and bridge duty medic. He posted the severity table and the water-supply hours on the same chalkboard and let no wartime sole-command note reach the sickbeds before the engineers' council veto lifted."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 고지가 뚫린 밤에 의무소가 전리품 창구로 바뀌고 잔압 기록과 병상이 함께 비는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That on the night the hill was pierced the clinic would become a war-booty window and the residual-pressure record and the sickbeds would empty together."
-        },
-        "relationship": {
-          "ko": "관계. 영한뫼의 교량 의무소와 병상을 나누고, 남호성의 호송증을 당직 원장에 옮긴다. 류은비의 치료 원칙을 고지 침상에도 붙인다.",
-          "en": "Relations. Shared sickbeds with Yeong Hanmoe's bridge clinic and moved Nam Hoseong's convoy passes into the duty ledger. Pasted Ryu Eunbi's care principles on the hill sickbeds too."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "상처의 열과 활력으로 부상자를 보고 호송증을 당직 원장에 옮긴다. 혼입된 무장 줄의 해결이나 독립 의료 경력은 미확인이다.",
-      "en": "Heat and vitality shape attention to casualties, and transport papers enter the duty ledger. Resolution of armed queues and independent medical experience are unconfirmed."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,79 +152,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c601-c120-cc9c-5f71",
-    "name": "선천 영씨",
-    "crest": "clan-crests/c601-c120-cc9c-5f71.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 45,
-    "개방": -10,
-    "무력": 10,
-    "물질": 5,
-    "공동": 15,
-    "원칙": 5,
-    "공개": -5,
-    "자격": -5,
-    "분산": -30,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 25,
-    "독점": -25,
-    "위험": 10,
-    "과시": 5,
-    "지속": 5,
-    "지향": "동성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "중증도 표·급수 시간 게시·전쟁명령 결재 확인",
-    "소속": "구의수비대",
-    "품계": "수비대원",
-    "직함": "구의수비대 능선·교량 당직 의무원",
-    "가치관": "권위 45 | 개방 −10 | 무력 10 | 물질 5 | 공동 15 | 원칙 5 | 공개 −5 | 자격 −5 | 분산 −30 | 변혁 −5",
-    "욕망": "갈망 25 | 독점 −25 | 위험 10 | 과시 5 | 지속 5 | 지향 동성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2071-04-19에 태어났다. 2126년 개막 현재 구의수비대 능선·교량 당직 의무원 직무를 맡아 중증도 표·급수 시간 게시·전쟁명령 결재 확인 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 중증도 표·급수 시간 게시·전쟁명령 결재 확인 창구가 영석온의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 수비대원. 직함은 구의수비대 능선·교량 당직 의무원. 중증도 표·급수 시간 게시·전쟁명령 결재 확인 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
-    "일화": "교량 쪽 상수관 파손 연기를 적대 봉화로 오인한 밤, 의무소 대기표에 무장 대기열이 한 줄 끼어 있었다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
-    "관계": "영한뫼의 교량 의무소와 병상을 나누고, 남호성의 호송증을 당직 원장에 옮긴다. 류은비의 치료 원칙을 고지 침상에도 붙인다.",
-    "야망": "영석온은 구의수비대 능선·교량 당직 의무원 직무에서 중증도 표·급수 시간 게시·전쟁명령 결재 확인 기록을 공개 인계표와 맞물리게 하려 한다.",
-    "공포": "구의수비대 능선·교량 당직 의무원 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
-    "개입": "무장 줄을 환자 줄과 분리하거나, 호송증 초안을 제기동까지 운반할 수 있다. 영석온의 중증도 표·급수 시간 게시·전쟁명령 결재 확인 원장을 대조해 다음 인계의 증거를 세울 수 있다."
-  },
-  "biography": "영석온은 중증도 표·급수 시간 게시·전쟁명령 결재 확인 기록을 손에 익힌 구의수비대 인물이다. 고지 바람보다 상처의 열을 먼저 읽고, 초병의 단독 차단을 진료 중단의 원인으로 적는다. 적의 부상도 활력이 떨어지면 같은 들것으로 본다.\n\n- 생업: 중증도 표·급수 시간 게시·전쟁명령 결재 확인\n- 소속: 구의수비대\n- 품계: 수비대원\n- 직함: 구의수비대 능선·교량 당직 의무원\n**생애.** 2071-04-19에 태어났다. 2126년 개막 현재 구의수비대 능선·교량 당직 의무원 직무를 맡아 중증도 표·급수 시간 게시·전쟁명령 결재 확인 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 중증도 표·급수 시간 게시·전쟁명령 결재 확인 창구가 영석온의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 수비대원. 직함은 구의수비대 능선·교량 당직 의무원. 중증도 표·급수 시간 게시·전쟁명령 결재 확인 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 교량 쪽 상수관 파손 연기를 적대 봉화로 오인한 밤, 의무소 대기표에 무장 대기열이 한 줄 끼어 있었다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 영한뫼의 교량 의무소와 병상을 나누고, 남호성의 호송증을 당직 원장에 옮긴다. 류은비의 치료 원칙을 고지 침상에도 붙인다.\n\n**야망.** 영석온은 구의수비대 능선·교량 당직 의무원 직무에서 중증도 표·급수 시간 게시·전쟁명령 결재 확인 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 구의수비대 능선·교량 당직 의무원 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 무장 줄을 환자 줄과 분리하거나, 호송증 초안을 제기동까지 운반할 수 있다. 영석온의 중증도 표·급수 시간 게시·전쟁명령 결재 확인 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 45 | 개방 −10 | 무력 10 | 물질 5 | 공동 15 | 원칙 5 | 공개 −5 | 자격 −5 | 분산 −30 | 변혁 −5\n- 욕망: 갈망 25 | 독점 −25 | 위험 10 | 과시 5 | 지속 5 | 지향 동성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-14"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "영석온",
-        "type": "계약",
-        "to": "남호성",
-        "basis": "남호성의 호송증을 당직 원장에 옮긴다"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:창동",
+      "name": {
+        "ko": "창동역"
       },
-      {
-        "from": "영석온",
-        "type": "계약",
-        "to": "영한뫼",
-        "basis": "영한뫼의 교량 의무소와 병상을 나누고"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "영한뫼",
-        "type": "계약",
-        "to": "영석온",
-        "basis": "영석온의 당직 침상과 병상을 나누고"
-      }
-    ]
-  }
+      "holderPersonId": "K356",
+      "directLiegePersonId": "K386",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "창동",
+        "stationName": "창동"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1132051400",
+          "name": "창4동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

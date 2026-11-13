@@ -1,502 +1,120 @@
 {
   "id": "person-0169",
   "name": "조이록",
-  "title": "기록 공증 감사관",
-  "position": "기록 공증 감사관",
+  "title": "시청역 역장",
+  "position": "시청역 역장 · 정부",
   "characterId": "K168",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "원본 해시 확인·사본 공증 감사",
+  "rank": "역장",
+  "commonTier": "T4",
+  "occupation": "역 행정",
   "gender": "여성",
   "stage": "S2",
-  "state": "S06",
-  "stateName": "대한민국정부",
-  "sourceRoute": "/world/Cast-State-06#인물-조이록",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0169",
   "birthDate": "2099-08-20",
   "birthday": "08-20",
   "age": 27,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-06.json#/content/655"
-  ],
-  "familyTree": {
-    "personId": "K168",
-    "nodes": [
-      {
-        "id": "K168",
-        "personId": "K168",
-        "kind": "person",
-        "name": "조이록",
-        "birthDate": "2099-08-20",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K168"
-          },
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조이록-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 기록 공증 감사관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-조이록-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0169"
-      },
-      {
-        "id": "FH-K168-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조승도",
-        "lineage": {
-          "surname": "조",
-          "bongwan": "창녕",
-          "clan": "c870-cc3d-b155-66fa"
-        },
-        "birthDate": "2069-08-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조이록-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2107,
-            "summary": "조승도는 서울역 등기소에서 원본 해시 확인·사본 공증 감사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-조이록-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K168-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "조현석",
-        "lineage": {
-          "surname": "조",
-          "bongwan": "창녕",
-          "clan": "c870-cc3d-b155-66fa"
-        },
-        "birthDate": "2039-08-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조이록-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "조현석은 서울역 등기소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-조이록-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K168-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "조현준",
-        "lineage": {
-          "surname": "조",
-          "bongwan": "창녕",
-          "clan": "c870-cc3d-b155-66fa"
-        },
-        "birthDate": "2009-08-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조이록-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조현준은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-조이록-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K168-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박현은",
-        "birthDate": "2069-08-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조이록-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2107,
-            "summary": "박현은은 서울역 등기소에서 원본 해시 확인·사본 공증 감사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-조이록-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K168-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이현우",
-        "birthDate": "2039-08-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조이록-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "이현우는 서울역 등기소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-조이록-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K168-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최현아",
-        "birthDate": "2009-08-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조이록-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최현아는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-조이록-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K168-P-01:K168:biological",
-        "from": "FH-K168-P-01",
-        "to": "K168",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조이록-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K168-P-02:FH-K168-P-01:biological",
-        "from": "FH-K168-P-02",
-        "to": "FH-K168-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조이록-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K168-P-03:FH-K168-P-02:biological",
-        "from": "FH-K168-P-03",
-        "to": "FH-K168-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조이록-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K168-M-01:K168:biological",
-        "from": "FH-K168-M-01",
-        "to": "K168",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조이록-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K168-M-02:FH-K168-M-01:biological",
-        "from": "FH-K168-M-02",
-        "to": "FH-K168-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조이록-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K168-M-03:FH-K168-M-02:biological",
-        "from": "FH-K168-M-03",
-        "to": "FH-K168-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조이록-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c870-cc3d-b155-66fa",
+    "name": "창녕 조씨",
+    "crest": "clan-crests/c870-cc3d-b155-66fa.svg"
   },
-  "proseContacts": [
-    {
-      "recipientId": "K144",
-      "recipientName": "윤서린",
-      "basis": "윤서린의 봉인 권한과 겹치지만, 공증 날인은 따로 둔다.",
-      "sourceRef": {
-        "path": "lore/characters/Cast-State-06.json",
-        "anchor": "인물-조이록-p5"
-      }
-    }
-  ],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "시청역 역장으로서 그가 고집하는 일은 하나, 출입 장부에 지나간 사람의 증표 번호를 하나도 빼놓지 않고 적는 것이다. 옛 시청 건물 아래의 이 역은 구청과 부처의 서류를 든 전령이 가장 많이 지나가는 출입구라, 그 고집은 급한 전령들의 원망을 산다. 소공동 동장 지서윤이 습기 찬 원부 사본을 들고 내려오는 날이면, 그는 출입 장부를 덮고 역의 마른 배전실 한쪽을 내준다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "시청역 역장",
+    "품계": "역장",
+    "생업": "역 행정",
+    "일하는 역": "시청역",
+    "잠자는 역": "시청역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "시청역 역장으로서 그가 고집하는 일은 하나, 출입 장부에 지나간 사람의 증표 번호를 하나도 빼놓지 않고 적는 것이다. 옛 시청 건물 아래의 이 역은 구청과 부처의 서류를 든 전령이 가장 많이 지나가는 출입구라, 그 고집은 급한 전령들의 원망을 산다. 소공동 동장 지서윤이 습기 찬 원부 사본을 들고 내려오는 날이면, 그는 출입 장부를 덮고 역의 마른 배전실 한쪽을 내준다.",
+    "관직": "직함 시청역 역장. 직위 시청역 역장 · 정부. 품계 역장. 일하는 역 시청역."
+  },
+  "values": {
+    "권위": 70,
+    "개방": -60,
+    "무력": 5,
+    "물질": -45,
+    "공동": 20,
+    "원칙": 80,
+    "공개": -40,
+    "자격": 25,
+    "분산": -80,
+    "변혁": -70
+  },
+  "desire": {
+    "갈망": 20,
+    "독점": 25,
+    "위험": 35,
+    "과시": -45,
+    "지속": -15,
+    "지향": "양성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0169",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "조이록",
+        "type": "지휘",
+        "to": "지서윤",
+        "basis": "소공동 동장 지서윤의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K150",
+    "name": "지서윤",
+    "courtId": "court:K150",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
+      },
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 13,
-        "effective": 13
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 11,
-        "effective": 11
-      },
-      "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
         "base": 6,
         "effective": 6
-      }
-    },
-    "skills": [
-      {
-        "id": "k168-hash-comparison",
-        "name": {
-          "ko": "원본 해시 대조",
-          "en": "Original hash comparison"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k168-choice",
-        "name": {
-          "ko": "독립 날인 유지",
-          "en": "Maintains independent certification"
-        },
-        "description": {
-          "ko": "공증 도장의 잉크가 번진 자리는 통과시키지 않는다. 큰 인준보다 한 장의 원본 해시를 지킨다.",
-          "en": "He passed no spot where a notary stamp's ink had smudged. He guarded one original's hash over any grand ratification."
-        },
-        "behavior": {
-          "ko": "일화. 잉크가 번진 공증 도장을 단 사본이 원본 해시 두 개를 달고 감사대에 오른다. 조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다.",
-          "en": "Anecdote. A copy with a smudged notarial stamp comes to the audit desk carrying two original hashes. Jo Irok holds the copy until it is confirmed which hash points to the original, and meanwhile leaves blank the notarial box kept apart from Yun Seorin's seal."
-        },
-        "stress": {
-          "ko": "공포. 번진 도장이 유효한 인준처럼 유통되는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That smudged stamps would circulate as valid ratifications. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 윤서린의 봉인 권한과 겹치지만, 공증 날인은 따로 둔다.",
-          "en": "Relations. Overlapped with Yun Seorin's seal authority, but kept the notary stamp separate."
-        },
-        "effects": []
       },
-      {
-        "id": "k168-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 주사. 직함은 기록 공증 감사관. 사본 공증은 원본 해시가 확인되기 전에 내보내지 않는다.",
-          "en": "Office. Rank: registrar. Title: record notarization auditor. He sent out no copy notarization before the original's hash was confirmed."
-        },
-        "behavior": {
-          "ko": "관직. 품계 주사. 직함은 기록 공증 감사관. 사본 공증은 원본 해시가 확인되기 전에 내보내지 않는다.",
-          "en": "Office. Rank: registrar. Title: record notarization auditor. He sent out no copy notarization before the original's hash was confirmed."
-        },
-        "stress": {
-          "ko": "공포. 번진 도장이 유효한 인준처럼 유통되는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That smudged stamps would circulate as valid ratifications. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 윤서린의 봉인 권한과 겹치지만, 공증 날인은 따로 둔다.",
-          "en": "Relations. Overlapped with Yun Seorin's seal authority, but kept the notary stamp separate."
-        },
-        "effects": []
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "일화. 잉크가 번진 공증 도장을 단 사본이 원본 해시 두 개를 달고 감사대에 오른다. 조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Anecdote. A copy with a smudged notarial stamp comes to the audit desk carrying two original hashes. Jo Irok holds the copy until it is confirmed which hash points to the original, and meanwhile leaves blank the notarial box kept apart from Yun Seorin's seal. Titles and ambitions are not treated as accomplished authority or results."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -534,76 +152,29 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
+  "confirmedHoldings": [
     {
-      "id": "title:duchy-51820-S06",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
+      "id": "holding:v3:station:시청",
+      "name": {
+        "ko": "시청역"
+      },
       "holderPersonId": "K168",
-      "stateId": "S06",
-      "politicalParentTitleId": "title:kingdom-s06",
-      "personalLieges": [
+      "directLiegePersonId": "K150",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "시청",
+        "stationName": "시청"
+      },
+      "adminRefs": [
         {
-          "holdingId": "holding:opening-duchy-51820-S06",
-          "directLiegePersonId": "K144"
+          "id": "region:1114052000",
+          "name": "소공동"
         }
       ],
-      "directOwnership": false
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
     }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c870-cc3d-b155-66fa",
-    "name": "창녕 조씨",
-    "crest": "clan-crests/c870-cc3d-b155-66fa.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 25,
-    "개방": -5,
-    "무력": -30,
-    "물질": -40,
-    "공동": 15,
-    "원칙": 60,
-    "공개": -15,
-    "자격": 10,
-    "분산": -30,
-    "변혁": -50
-  },
-  "desire": {
-    "갈망": 20,
-    "독점": 25,
-    "위험": 35,
-    "과시": -45,
-    "지속": -15,
-    "지향": "양성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "원본 해시 확인·사본 공증 감사",
-    "소속": "서울특별시 지방공무원 조직",
-    "직위·직급": "행정안전부 국가기록원 기록관리부·기록관리정책과 기능에 대응하는 서울특별시 기록관리 감사 담당 지방행정사무관(5급) 보직",
-    "담당 업무": "기록 공증 감사관",
-    "가치관": "권위 25 | 개방 −5 | 무력 −30 | 물질 −40 | 공동 15 | 원칙 60 | 공개 −15 | 자격 10 | 분산 −30 | 변혁 −50",
-    "욕망": "갈망 20 | 독점 25 | 위험 35 | 과시 −45 | 지속 −15 | 지향 양성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "서울역 등기소에서 자랐다. 기록 공증 감사관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 조이록의 원본 해시를 확인하고 사본 공증을 감사하는 일은 회현동의 업무와 이어진다.",
-    "공무원 직위·직급": "행정안전부 국가기록원 기록관리부·기록관리정책과 기능에 대응하는 서울특별시 기록관리 감사 담당 지방행정사무관(5급) 보직. 담당 업무: 기록 공증 감사관.",
-    "일화": "잉크가 번진 공증 도장을 단 사본이 원본 해시 두 개를 달고 감사대에 오른다. 조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다.",
-    "관계": "윤서린의 봉인 권한과 겹치지만, 공증 날인은 따로 둔다.",
-    "야망": "기록 공증을 청장 단독 서명이 아니라 감사·서기 교차 날인으로 고정한다.",
-    "공포": "번진 도장이 유효한 인준처럼 유통되는 것.",
-    "개입": "잠긴 두 해시 중 원본을 가리키거나, 열람 범위를 넓힐 수 있다."
-  },
-  "biography": "공증 도장의 잉크가 번진 자리는 통과시키지 않는다. 큰 인준보다 한 장의 원본 해시를 지킨다.\n\n- 생업: 원본 해시 확인·사본 공증 감사\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 행정안전부 국가기록원 기록관리부·기록관리정책과 기능에 대응하는 서울특별시 기록관리 감사 담당 지방행정사무관(5급) 보직\n- 담당 업무: 기록 공증 감사관\n**생애.** 서울역 등기소에서 자랐다. 기록 공증 감사관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 조이록의 원본 해시를 확인하고 사본 공증을 감사하는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 행정안전부 국가기록원 기록관리부·기록관리정책과 기능에 대응하는 서울특별시 기록관리 감사 담당 지방행정사무관(5급) 보직. 담당 업무: 기록 공증 감사관.\n\n**일화.** 잉크가 번진 공증 도장을 단 사본이 원본 해시 두 개를 달고 감사대에 오른다. 조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다.\n\n**관계.** 윤서린의 봉인 권한과 겹치지만, 공증 날인은 따로 둔다.\n\n**야망.** 기록 공증을 청장 단독 서명이 아니라 감사·서기 교차 날인으로 고정한다.\n\n**공포.** 번진 도장이 유효한 인준처럼 유통되는 것.\n\n**개입.** 잠긴 두 해시 중 원본을 가리키거나, 열람 범위를 넓힐 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 −5 | 무력 −30 | 물질 −40 | 공동 15 | 원칙 60 | 공개 −15 | 자격 10 | 분산 −30 | 변혁 −50\n- 욕망: 갈망 20 | 독점 25 | 위험 35 | 과시 −45 | 지속 −15 | 지향 양성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-06"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  ]
 }

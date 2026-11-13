@@ -1,407 +1,139 @@
 {
   "id": "person-0095",
   "name": "장민재",
-  "title": "성수·성동 급수 시민대표",
-  "position": "성수·성동 급수 시민대표",
+  "title": "서초 곁집 어른",
+  "position": "서초 곁집 어른 · 고속터미널역",
   "characterId": "K094",
-  "rank": "권사",
-  "commonTier": "T3",
-  "occupation": "골목 급수·수압 게시",
+  "rank": "곁집 어른",
+  "commonTier": "T2",
+  "occupation": "곁집 통솔",
   "gender": "여성",
   "stage": "S1",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-장민재",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0095",
   "birthDate": "2075-10-04",
   "birthday": "10-04",
   "age": 51,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/27",
-    "lore/characters/Cast-State-04.json#/content/29",
-    "lore/characters/Cast-State-04.json#/content/32"
-  ],
-  "familyTree": {
-    "personId": "K094",
-    "nodes": [
-      {
-        "id": "K094",
-        "personId": "K094",
-        "kind": "person",
-        "name": "장민재",
-        "birthDate": "2075-10-04",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K094"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-장민재-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 성수·성동 급수 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-장민재-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0095"
-      },
-      {
-        "id": "FH-K094-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "장승윤",
-        "lineage": {
-          "surname": "장",
-          "bongwan": "흥덕",
-          "clan": "c7a5-d765-b355"
-        },
-        "birthDate": "2045-10-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-장민재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2083,
-            "summary": "장승윤은 영등포 정수 당직에서 골목 급수·수압 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-장민재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K094-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "장승우",
-        "lineage": {
-          "surname": "장",
-          "bongwan": "흥덕",
-          "clan": "c7a5-d765-b355"
-        },
-        "birthDate": "2015-10-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-장민재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "장승우는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-장민재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K094-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조승훈",
-        "birthDate": "2045-10-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-장민재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2083,
-            "summary": "조승훈은 영등포 정수 당직에서 골목 급수·수압 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-장민재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K094-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김승리",
-        "birthDate": "2015-10-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-장민재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "김승리는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-장민재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K094-P-01:K094:biological",
-        "from": "FH-K094-P-01",
-        "to": "K094",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-장민재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K094-P-02:FH-K094-P-01:biological",
-        "from": "FH-K094-P-02",
-        "to": "FH-K094-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-장민재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K094-M-01:K094:biological",
-        "from": "FH-K094-M-01",
-        "to": "K094",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-장민재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K094-M-02:FH-K094-M-01:biological",
-        "from": "FH-K094-M-02",
-        "to": "FH-K094-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-장민재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c7a5-d765-b355",
+    "name": "흥덕 장씨",
+    "crest": "clan-crests/c7a5-d765-b355.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "서초 곁집의 어른인 장민재는 사당–방배 경계를 오가는 갈라진 집안 사람들의 날짜를 동작 나루지기와 맞추는 일을 오래 해 왔다. 쉰한 해를 살며 두 부위를 받는 동안 그 날짜를 한 번도 어긴 적이 없다는 것이 그의 자랑이다. 서초 사람답게 자유도시 사람을 구 이름으로 부르고, 숫자로 약속한다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "서초 곁집 어른",
+    "품계": "곁집 어른",
+    "생업": "곁집 통솔",
+    "일하는 역": "고속터미널역",
+    "잠자는 역": "고속터미널역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "서초 곁집의 어른인 장민재는 사당–방배 경계를 오가는 갈라진 집안 사람들의 날짜를 동작 나루지기와 맞추는 일을 오래 해 왔다. 쉰한 해를 살며 두 부위를 받는 동안 그 날짜를 한 번도 어긴 적이 없다는 것이 그의 자랑이다. 서초 사람답게 자유도시 사람을 구 이름으로 부르고, 숫자로 약속한다.",
+    "관직": "직함 서초 곁집 어른. 직위 서초 곁집 어른 · 고속터미널역. 품계 곁집 어른. 일하는 역 고속터미널역."
+  },
+  "values": {
+    "권위": 0,
+    "개방": 5,
+    "무력": 0,
+    "물질": -40,
+    "공동": 45,
+    "원칙": 0,
+    "공개": -75,
+    "자격": -10,
+    "분산": 5,
+    "변혁": 45
+  },
+  "desire": {
+    "갈망": 25,
+    "독점": 10,
+    "위험": 30,
+    "과시": 20,
+    "지속": -15,
+    "지향": "이성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0095",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "장민재",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "장민재",
+        "type": "계약",
+        "to": "최지우",
+        "basis": "사당–방배 경계를 오가는 갈라진 집안 사람들의 날짜와 인원을 동작 나루지기와 맞추는 약속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K1018",
+    "name": "고예진",
+    "courtId": "court:K1018",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 10,
         "effective": 10
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
-        "base": 11,
-        "effective": 11
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
+      "intrigue": {
+        "base": 8,
+        "effective": 8
       },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "water-board",
-        "name": {
-          "ko": "급수 게시판 운영",
-          "en": "Water-supply notice management"
-        },
-        "rating": 65
-      },
-      {
-        "id": "closure",
-        "name": {
-          "ko": "위험 구간 폐쇄",
-          "en": "Hazardous-route closure"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "reservoirs-first",
-        "name": {
-          "ko": "저수조 먼저",
-          "en": "Reservoirs First"
-        },
-        "description": {
-          "ko": "장민재는 후계 논의보다 골목 수도와 저수조의 실제 상태를 먼저 살핀다.",
-          "en": "Jang Minjae puts the actual condition of neighborhood taps and reservoirs before succession discussions."
-        },
-        "behavior": {
-          "ko": "후계자 이름보다 저수조 수위를 먼저 묻고 동파 관로에는 우회 급수로로 대응했다.",
-          "en": "Jang asks about reservoir levels before successor names and responded to frozen pipes by opening a bypass supply route."
-        },
-        "stress": {
-          "ko": "계약 만료가 집단 단수로 번질 조짐이 보이면 회의보다 현장 급수 확보를 더 급하게 여길 수 있다.",
-          "en": "If contract expiry appears likely to cause collective water cutoffs, Jang may treat securing local supply as more urgent than meetings."
-        },
-        "relationship": {
-          "ko": "한소미와 동맹을 유지하더라도 생활 복구 공약이 현장 급수로 이어지는지 계속 확인할 수 있다.",
-          "en": "Even while allied with Han Somi, Jang may keep checking whether recovery promises produce actual neighborhood water supply."
-        },
-        "effects": []
-      },
-      {
-        "id": "minimum-water-supply",
-        "name": {
-          "ko": "급수 최저선",
-          "en": "Minimum Water Supply"
-        },
-        "description": {
-          "ko": "장민재는 후계 공백과 거래 조건에도 주민의 최소 급수가 유지되어야 한다고 본다.",
-          "en": "Jang Minjae holds that residents' minimum water supply must survive succession vacancies and bargaining terms."
-        },
-        "behavior": {
-          "ko": "골목별 수압을 공개하고 펌프가 군수나 가문 창고로만 향하면 시민 연서로 평의회 소집을 요구한다.",
-          "en": "Jang publishes neighborhood water pressure and uses citizen co-signatures to call the council when pumps go only to military or family warehouses."
-        },
-        "stress": {
-          "ko": "집단 단수가 노동자의 이주로 이어질 우려가 커지면 급수 최저선의 헌장 명시를 더 강하게 요구할 수 있다.",
-          "en": "If collective cutoffs threaten to displace workers, Jang may press harder to enshrine the supply minimum in the workshop charter."
-        },
-        "relationship": {
-          "ko": "임바다와 최저선 문구를 함께 다듬되 김보람의 야간 봉쇄가 급수 창구를 닫으면 충돌할 수 있다.",
-          "en": "Jang may collaborate with Im Bada on minimum-supply wording but clash with Kim Boram when night closures shut water-service counters."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "수압 게시판을 운영하고 동파 때 우회 급수로를 열었다. 생활 급수와 시민 연서가 근거이며 후계 정치의 전권은 없다.",
-      "en": "He maintains pressure notices and opened an alternate supply route during freezing. Household supply and citizen petitions are supported, not full control of succession politics."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -427,102 +159,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-41550-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K094",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:kingdom-s04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-41550-S04",
-          "directLiegePersonId": "K423"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c7a5-d765-b355",
-    "name": "흥덕 장씨",
-    "crest": "clan-crests/c7a5-d765-b355.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -25,
-    "개방": 20,
-    "무력": -10,
-    "물질": 10,
-    "공동": 25,
-    "원칙": 10,
-    "공개": -30,
-    "자격": 25,
-    "분산": 35,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 25,
-    "독점": 10,
-    "위험": 30,
-    "과시": 20,
-    "지속": -15,
-    "지향": "이성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "골목 급수·수압 게시",
-    "품계": "권사",
-    "직함": "성수·성동 급수 시민대표",
-    "가치관": "권위 −25 | 개방 20 | 무력 −10 | 물질 10 | 공동 25 | 원칙 10 | 공개 −30 | 자격 25 | 분산 35 | 변혁 0",
-    "욕망": "갈망 25 | 독점 10 | 위험 30 | 과시 20 | 지속 −15 | 지향 이성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2126년 세대. 장민재는 영등포 정수 당직에서 자랐다. 장민재는 탁수 밤의 밸브 서명으로 성수·성동 급수 시민대표 자리를 맡았다.\n- 장민재의 성수·성동 급수 시민대표 업무는 성수1가1동과 연결된다.",
-    "관직": "품계 권사. 직함은 성수·성동 급수 시민대표. 골목별 수압 게시판을 운영하고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다.",
-    "일화": "2125년 장민재는 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 성수·성동 급수 시민대표 자리의 서명이 장부에 올랐다.",
-    "관계": "한소미의 생활 복구 공약을 현장에서 감시하는 동맹이고, 임바다의 시민 급수권과 최저선 문구를 나누며, 김보람의 야간 봉쇄가 급수 창구를 닫을 때 충돌한다.",
-    "야망": "후계가 공백이어도 성동 급수의 최저선을 공방헌장에 못 박아, 중앙권역 주민이 강국 거래의 숫자가 되지 않게 한다.",
-    "공포": "장민재는 총관 실종 뒤의 계약 만료가 집단 단수로 번져 성수 공방 노동자가 난민 명부로 떠밀리는 상황을 두려워한다.",
-    "개입": "수압 실측표를 가져와 최저선을 관철하거나, 게시판 조작을 밝혀 대표 연서를 무효로 만들 수 있다."
-  },
-  "biography": "온화하나 골목 수도꼭지가 마르면 공방 회의를 사치로 여긴다. 후계자 이름보다 저수조 수위를 먼저 묻는다.\n\n- 소속: 명부교회\n- 생업: 골목 급수·수압 게시\n- 품계: 권사\n- 직함: 성수·성동 급수 시민대표\n**생애.** 2126년 세대. 장민재는 영등포 정수 당직에서 자랐다. 장민재는 탁수 밤의 밸브 서명으로 성수·성동 급수 시민대표 자리를 맡았다.\n- 장민재의 성수·성동 급수 시민대표 업무는 성수1가1동과 연결된다.\n\n**관직.** 품계 권사. 직함은 성수·성동 급수 시민대표. 골목별 수압 게시판을 운영하고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다.\n\n**일화.** 2125년 장민재는 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 성수·성동 급수 시민대표 자리의 서명이 장부에 올랐다.\n\n**관계.** 한소미의 생활 복구 공약을 현장에서 감시하는 동맹이고, 임바다의 시민 급수권과 최저선 문구를 나누며, 김보람의 야간 봉쇄가 급수 창구를 닫을 때 충돌한다.\n\n**야망.** 후계가 공백이어도 성동 급수의 최저선을 공방헌장에 못 박아, 중앙권역 주민이 강국 거래의 숫자가 되지 않게 한다.\n\n**공포.** 장민재는 총관 실종 뒤의 계약 만료가 집단 단수로 번져 성수 공방 노동자가 난민 명부로 떠밀리는 상황을 두려워한다.\n\n**개입.** 수압 실측표를 가져와 최저선을 관철하거나, 게시판 조작을 밝혀 대표 연서를 무효로 만들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 20 | 무력 −10 | 물질 10 | 공동 25 | 원칙 10 | 공개 −30 | 자격 25 | 분산 35 | 변혁 0\n- 욕망: 갈망 25 | 독점 10 | 위험 30 | 과시 20 | 지속 −15 | 지향 이성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "장민재",
-        "type": "계약",
-        "to": "한소미",
-        "basis": "생활 복구 공약을 급수 창구에서 감시"
-      },
-      {
-        "from": "장민재",
-        "type": "계약",
-        "to": "임바다",
-        "basis": "시민 급수권 최저선 문구를 나눔"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "변오름",
-        "type": "지휘",
-        "to": "장민재",
-        "basis": "장민재의 시민 급수권을 대합실 창구에서 집행하고"
-      },
-      {
-        "from": "제바름",
-        "type": "지휘",
-        "to": "장민재",
-        "basis": "장민재의 급수 시민권을 진료에서 집행하고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

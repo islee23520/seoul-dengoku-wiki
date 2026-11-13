@@ -1,394 +1,105 @@
 {
   "id": "person-0158",
   "name": "설다흰",
-  "title": "서울역 대합실 역장",
-  "position": "서울역 대합실 역장",
+  "title": "국가정보원 간부",
+  "position": "국가정보원 간부 · 명동역",
   "characterId": "K157",
-  "rank": "미등록",
-  "commonTier": "T4",
-  "occupation": "대합실 의무 대기표·공증 창구 운영",
+  "rank": "서기관",
+  "commonTier": "T5",
+  "occupation": "정보 수집",
   "gender": "남성",
   "stage": "S2",
-  "state": "S06",
-  "stateName": "대한민국정부",
-  "sourceRoute": "/world/Cast-State-06#인물-설다흰",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0158",
   "birthDate": "2083-12-14",
   "birthday": "12-14",
   "age": 43,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-06.json#/content/6",
-    "lore/characters/Cast-State-06.json#/content/8"
-  ],
-  "familyTree": {
-    "personId": "K157",
-    "nodes": [
-      {
-        "id": "K157",
-        "personId": "K157",
-        "kind": "person",
-        "name": "설다흰",
-        "birthDate": "2083-12-14",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K157"
-          },
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-설다흰-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 서울역 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-설다흰-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0158"
-      },
-      {
-        "id": "FH-K157-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "설승원",
-        "lineage": {
-          "surname": "설",
-          "bongwan": "순창",
-          "clan": "c124-c21c-cc3d"
-        },
-        "birthDate": "2053-12-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-설다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2091,
-            "summary": "설승원은 대합실 당직에서 대합실 의무 대기표·공증 창구 운영 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-설다흰-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K157-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "설승진",
-        "lineage": {
-          "surname": "설",
-          "bongwan": "순창",
-          "clan": "c124-c21c-cc3d"
-        },
-        "birthDate": "2023-12-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-설다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "설승진은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-설다흰-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K157-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이현윤",
-        "birthDate": "2053-12-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-설다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2091,
-            "summary": "이현윤은 대합실 당직에서 대합실 의무 대기표·공증 창구 운영 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-설다흰-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K157-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최현연",
-        "birthDate": "2023-12-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-설다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최현연은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-설다흰-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K157-P-01:K157:biological",
-        "from": "FH-K157-P-01",
-        "to": "K157",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-설다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K157-P-02:FH-K157-P-01:biological",
-        "from": "FH-K157-P-02",
-        "to": "FH-K157-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-설다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K157-M-01:K157:biological",
-        "from": "FH-K157-M-01",
-        "to": "K157",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-설다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K157-M-02:FH-K157-M-01:biological",
-        "from": "FH-K157-M-02",
-        "to": "FH-K157-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-설다흰-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c124-c21c-cc3d",
+    "name": "순창 설씨",
+    "crest": "clan-crests/c124-c21c-cc3d.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "국가정보원 간부로 기재돼 있지만, 서울역 사람들은 그를 오래전 대합실 창구를 보던 사람으로 기억한다. 명동역을 지나 남산 자락 사무실로 출근하고, 저녁이면 서울역 허가 상인 대기소의 임시 기재 명단을 들여다본다. 강 건너 상인이 무엇을 들고 와서 무엇을 묻는지 적는 것이 그의 일이다. 그 기록을 누구에게 올리는지는 그도 말하지 않는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "국가정보원 간부",
+    "품계": "서기관",
+    "생업": "정보 수집",
+    "일하는 역": "명동역",
+    "잠자는 역": "서울역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "국가정보원 간부로 기재돼 있지만, 서울역 사람들은 그를 오래전 대합실 창구를 보던 사람으로 기억한다. 명동역을 지나 남산 자락 사무실로 출근하고, 저녁이면 서울역 허가 상인 대기소의 임시 기재 명단을 들여다본다. 강 건너 상인이 무엇을 들고 와서 무엇을 묻는지 적는 것이 그의 일이다. 그 기록을 누구에게 올리는지는 그도 말하지 않는다.",
+    "관직": "직함 국가정보원 간부. 직위 국가정보원 간부 · 명동역. 품계 서기관. 일하는 역 명동역."
+  },
+  "values": {
+    "권위": 60,
+    "개방": -70,
+    "무력": 0,
+    "물질": -45,
+    "공동": 20,
+    "원칙": 70,
+    "공개": -45,
+    "자격": 30,
+    "분산": -85,
+    "변혁": -60
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": -25,
+    "위험": 35,
+    "과시": 30,
+    "지속": -10,
+    "지향": "이성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0158",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 5,
+        "effective": 5
+      },
+      "martial": {
+        "base": 7,
+        "effective": 7
+      },
+      "stewardship": {
+        "base": 6,
+        "effective": 6
+      },
+      "intrigue": {
         "base": 9,
         "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 10,
-        "effective": 10
-      },
-      "management": {
-        "base": 13,
-        "effective": 13
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
       "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
         "base": 7,
         "effective": 7
+      },
+      "prowess": {
+        "base": 6,
+        "effective": 6
       }
     },
-    "skills": [
-      {
-        "id": "k157-queue-posting",
-        "name": {
-          "ko": "대기표 게시",
-          "en": "Queue posting"
-        },
-        "rating": 65
-      },
-      {
-        "id": "k157-platform-announcement",
-        "name": {
-          "ko": "승강장 방송",
-          "en": "Platform announcements"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k157-choice",
-        "name": {
-          "ko": "환자 먼저",
-          "en": "Patients first"
-        },
-        "description": {
-          "ko": "승강장 습기로 인파를 가늠하고, 의전 열차를 환자 대기열 앞으로 끌어오라는 명령을 모욕으로 듣는다. 온화하나 이송 취소가 뜨면 방송을 직접 잡는다.",
-          "en": "She gauged crowds by platform humidity and heard as an insult any order to pull the protocol train ahead of the patient waiting line. Mild in manner, she took the broadcast herself whenever a transfer cancellation rose."
-        },
-        "behavior": {
-          "ko": "일화. 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 서울역 대합실 역장 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In 2125 she sent a private petition back and passed it to the public window. By this deed the signature of the Seoul Station concourse stationmaster post rose into the ledger."
-        },
-        "stress": {
-          "ko": "공포. 탁수와 복무 소문만으로 대합실이 봉쇄되고 피난민이 밀선으로 흩어지는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That turbid water and service rumor alone would blockade the concourse and scatter the refugees into smuggler boats. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 연지우의 의무실 봉쇄를 방송으로 알리는 동맹이고, 윤지율의 배차 취소를 승강장에서 집행하며, 마도한의 사본 상자를 대합실 봉인 칸에 둔다.",
-          "en": "Relations. An alliance announcing Yeon Jiwoo's infirmary lockdown by broadcast, she executed Yun Jiyul's dispatch cancellations at the platform and kept Ma Dohan's copy boxes in the concourse sealed rack."
-        },
-        "effects": []
-      },
-      {
-        "id": "k157-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 국장. 직함은 서울역 대합실 역장. 대합실 의무 대기표와 공증 창구를 매일 공개하고, 군수 화차는 의료 이송이 떠난 뒤에만 승강장에 붙인다.",
-          "en": "Office. Rank: bureau director. Title: Seoul Station concourse stationmaster. She published the concourse care waiting lists and the notary window daily and coupled munitions cars to the platform only after the medical transfer had left."
-        },
-        "behavior": {
-          "ko": "관직. 품계 국장. 직함은 서울역 대합실 역장. 대합실 의무 대기표와 공증 창구를 매일 공개하고, 군수 화차는 의료 이송이 떠난 뒤에만 승강장에 붙인다.",
-          "en": "Office. Rank: bureau director. Title: Seoul Station concourse stationmaster. She published the concourse care waiting lists and the notary window daily and coupled munitions cars to the platform only after the medical transfer had left."
-        },
-        "stress": {
-          "ko": "공포. 탁수와 복무 소문만으로 대합실이 봉쇄되고 피난민이 밀선으로 흩어지는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That turbid water and service rumor alone would blockade the concourse and scatter the refugees into smuggler boats. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 연지우의 의무실 봉쇄를 방송으로 알리는 동맹이고, 윤지율의 배차 취소를 승강장에서 집행하며, 마도한의 사본 상자를 대합실 봉인 칸에 둔다.",
-          "en": "Relations. An alliance announcing Yeon Jiwoo's infirmary lockdown by broadcast, she executed Yun Jiyul's dispatch cancellations at the platform and kept Ma Dohan's copy boxes in the concourse sealed rack."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "의료 이송 뒤에 군수 화차를 붙이고 사적 청탁을 공개 창구로 돌린다. 창구 통합은 야망이지 이미 완성한 제도가 아니다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Medical transfers precede military wagons, and private requests go to the public desk. An integrated hub remains an ambition. Titles and ambitions are not treated as accomplished authority or results."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -426,96 +137,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-51730-S06",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K157",
-      "stateId": "S06",
-      "politicalParentTitleId": "title:kingdom-s06",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-51730-S06",
-          "directLiegePersonId": "K144"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c124-c21c-cc3d",
-    "name": "순창 설씨",
-    "crest": "clan-crests/c124-c21c-cc3d.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": -15,
-    "무력": -35,
-    "물질": -40,
-    "공동": 15,
-    "원칙": 50,
-    "공개": -20,
-    "자격": 15,
-    "분산": -35,
-    "변혁": -40
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": -25,
-    "위험": 35,
-    "과시": 30,
-    "지속": -10,
-    "지향": "이성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "대합실 의무 대기표·공증 창구 운영",
-    "지위": "기능·생업 역할(정부 임용 아님)",
-    "공무원 직위·직급": "없음",
-    "생업 역할": "서울역 대합실 역장",
-    "가치관": "권위 15 | 개방 −15 | 무력 −35 | 물질 −40 | 공동 15 | 원칙 50 | 공개 −20 | 자격 15 | 분산 −35 | 변혁 −40",
-    "욕망": "갈망 30 | 독점 −25 | 위험 35 | 과시 30 | 지속 −10 | 지향 이성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "대합실 당직에서 자랐다. 서울역 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 설다흰이 맡는 대합실의 의무 대기표와 공증 창구를 운영하는 일은 회현동의 업무와 이어진다.",
-    "기능·생업 역할": "서울역 대합실 역장. 대한민국정부 또는 서울특별시 공무원 관직·직위·직급이 아니다.",
-    "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 서울역 대합실 역장 자리의 서명이 장부에 올랐다.",
-    "관계": "연지우의 의무실 봉쇄를 방송으로 알리는 동맹이고, 윤지율의 배차 취소를 승강장에서 집행하며, 마도한의 사본 상자를 대합실 봉인 칸에 둔다.",
-    "야망": "서울역 대합실을 인준·진료·공증이 한 지붕에서 서명되는 서울역 허브로 만들어 도심 인준의 대면 창구가 된다.",
-    "공포": "탁수와 복무 소문만으로 대합실이 봉쇄되고 피난민이 밀선으로 흩어지는 것.",
-    "개입": "대합실 봉쇄 명령을 막아 창구를 지키거나, 대기표 조작을 밝혀 역장을 강등시킬 수 있다."
-  },
-  "biography": "승강장 습기로 인파를 가늠하고, 의전 열차를 환자 대기열 앞으로 끌어오라는 명령을 모욕으로 듣는다. 온화하나 이송 취소가 뜨면 방송을 직접 잡는다.\n\n- 생업: 대합실 의무 대기표·공증 창구 운영\n- 지위: 기능·생업 역할(정부 임용 아님)\n- 공무원 직위·직급: 없음\n- 생업 역할: 서울역 대합실 역장\n**생애.** 대합실 당직에서 자랐다. 서울역 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 설다흰이 맡는 대합실의 의무 대기표와 공증 창구를 운영하는 일은 회현동의 업무와 이어진다.\n\n**기능·생업 역할.** 서울역 대합실 역장. 대한민국정부 또는 서울특별시 공무원 관직·직위·직급이 아니다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 서울역 대합실 역장 자리의 서명이 장부에 올랐다.\n\n**관계.** 연지우의 의무실 봉쇄를 방송으로 알리는 동맹이고, 윤지율의 배차 취소를 승강장에서 집행하며, 마도한의 사본 상자를 대합실 봉인 칸에 둔다.\n\n**야망.** 서울역 대합실을 인준·진료·공증이 한 지붕에서 서명되는 서울역 허브로 만들어 도심 인준의 대면 창구가 된다.\n\n**공포.** 탁수와 복무 소문만으로 대합실이 봉쇄되고 피난민이 밀선으로 흩어지는 것.\n\n**개입.** 대합실 봉쇄 명령을 막아 창구를 지키거나, 대기표 조작을 밝혀 역장을 강등시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −15 | 무력 −35 | 물질 −40 | 공동 15 | 원칙 50 | 공개 −20 | 자격 15 | 분산 −35 | 변혁 −40\n- 욕망: 갈망 30 | 독점 −25 | 위험 35 | 과시 30 | 지속 −10 | 지향 이성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-06"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "설다흰",
-        "type": "지휘",
-        "to": "윤지율",
-        "basis": "윤지율의 배차 취소를 승강장에서 집행하며"
-      },
-      {
-        "from": "설다흰",
-        "type": "계약",
-        "to": "연지우",
-        "basis": "연지우의 의무실 봉쇄를 방송으로 알리는 동맹이고"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "노사호",
-        "type": "계약",
-        "to": "설다흰",
-        "basis": "노사호는 공개 창구로 돌린 청탁의 접수 내용과 증언을 설다흰에게 전한다. 설다흰은 공증 창구와 의무 대기표에 필요한 확인을 받아, 사적인 이송 요청이 환자 대기열보다 먼저 처리되지 않게 한다."
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

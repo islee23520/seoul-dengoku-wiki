@@ -1,385 +1,120 @@
 {
   "id": "person-0305",
   "name": "국용",
-  "title": "환승 당직 의무원, 전미리의 실무 담당자",
-  "position": "환승 당직 의무원, 전미리의 실무 담당자",
+  "title": "4.19민주묘지역 역장",
+  "position": "4.19민주묘지역 역장 · 정부",
   "characterId": "K304",
-  "rank": "호송원",
-  "commonTier": "T5",
-  "occupation": "환승 환자 중증도·이송 시각 기록",
+  "rank": "역장",
+  "commonTier": "T4",
+  "occupation": "역 행정",
   "gender": "남성",
   "stage": "S2",
-  "state": "S12",
-  "stateName": "신내운수",
-  "sourceRoute": "/world/Cast-State-12#인물-국용",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0305",
   "birthDate": "2071-08-05",
   "birthday": "08-05",
   "age": 55,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-12.json#/content/127"
-  ],
-  "familyTree": {
-    "personId": "K304",
-    "nodes": [
-      {
-        "id": "K304",
-        "personId": "K304",
-        "kind": "person",
-        "name": "국용",
-        "birthDate": "2071-08-05",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K304"
-          },
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국용-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 환승 당직 의무원, 전미리의 실무 담당자 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-국용-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0305"
-      },
-      {
-        "id": "FH-K304-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "국승영",
-        "lineage": {
-          "surname": "국",
-          "bongwan": "담양",
-          "clan": "ad6d-b2f4-c591"
-        },
-        "birthDate": "2041-08-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2079,
-            "summary": "국승영은 제기동 의무소에서 환승 환자 중증도·이송 시각 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-국용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K304-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "국승윤",
-        "lineage": {
-          "surname": "국",
-          "bongwan": "담양",
-          "clan": "ad6d-b2f4-c591"
-        },
-        "birthDate": "2011-08-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "국승윤은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-국용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K304-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤준민",
-        "birthDate": "2041-08-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2079,
-            "summary": "윤준민은 제기동 의무소에서 환승 환자 중증도·이송 시각 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-국용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K304-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한현솔",
-        "birthDate": "2011-08-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한현솔은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-국용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K304-P-01:K304:biological",
-        "from": "FH-K304-P-01",
-        "to": "K304",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K304-P-02:FH-K304-P-01:biological",
-        "from": "FH-K304-P-02",
-        "to": "FH-K304-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K304-M-01:K304:biological",
-        "from": "FH-K304-M-01",
-        "to": "K304",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K304-M-02:FH-K304-M-01:biological",
-        "from": "FH-K304-M-02",
-        "to": "FH-K304-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-국용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ad6d-b2f4-c591",
+    "name": "담양 국씨",
+    "crest": "clan-crests/ad6d-b2f4-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "장부에는 4.19민주묘지역 역장, 국용, 쉰다섯 살로 올라 있다. 의원 집안 사람과 나라에 공을 세운 사람이 묻히는 옛 국립묘지 터가 이 역 위에 있어서, 그는 썰매 행렬이 지상으로 나가는 날 출입구를 몇 시에 열지 정한다. 눈보라 경보가 나면 장례 행렬이라도 출입구를 닫는 것이 그의 원칙이고, 그 원칙 때문에 그는 의원 집안 몇 곳과 사이가 좋지 않다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "4.19민주묘지역 역장",
+    "품계": "역장",
+    "생업": "역 행정",
+    "일하는 역": "4.19민주묘지역",
+    "잠자는 역": "4.19민주묘지역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "장부에는 4.19민주묘지역 역장, 국용, 쉰다섯 살로 올라 있다. 의원 집안 사람과 나라에 공을 세운 사람이 묻히는 옛 국립묘지 터가 이 역 위에 있어서, 그는 썰매 행렬이 지상으로 나가는 날 출입구를 몇 시에 열지 정한다. 눈보라 경보가 나면 장례 행렬이라도 출입구를 닫는 것이 그의 원칙이고, 그 원칙 때문에 그는 의원 집안 몇 곳과 사이가 좋지 않다.",
+    "관직": "직함 4.19민주묘지역 역장. 직위 4.19민주묘지역 역장 · 정부. 품계 역장. 일하는 역 4.19민주묘지역."
+  },
+  "values": {
+    "권위": 30,
+    "개방": 5,
+    "무력": -15,
+    "물질": -5,
+    "공동": 25,
+    "원칙": 35,
+    "공개": -10,
+    "자격": 25,
+    "분산": -5,
+    "변혁": -30
+  },
+  "desire": {
+    "갈망": 25,
+    "독점": -20,
+    "위험": 30,
+    "과시": -10,
+    "지속": 10,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0305",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "국용",
+        "type": "지휘",
+        "to": "복용",
+        "basis": "우이동 동장 복용의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K311",
+    "name": "복용",
+    "courtId": "court:K311",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 9,
-        "effective": 9
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k304-stretcher-ordering",
-        "name": {
-          "ko": "들것 순서 집행",
-          "en": "Stretcher ordering"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k304-priority",
-        "name": {
-          "ko": "당직을 연장함",
-          "en": "Extends duty"
-        },
-        "description": {
-          "ko": "국용은 행렬이 쌓이자 당직을 연장하고 배차 교대를 거부했다. 환자 우선이지만 완료된 의료호송 제도는 아니다.",
-          "en": "Gukyong extended duty and refused dispatch rotation when crowds accumulated. Patient priority does not establish a completed medical escort system."
-        },
-        "behavior": {
-          "ko": "중증도 표와 이송 시각을 당직실에 붙이고, 무기 적재 의심 칸은 심사관 입회 없이 열지 않는다.",
-          "en": "Office. Rank: convoy hand. Title: transfer duty medic, duty officer of Jeon Miri. He pasted the severity table and transfer hours in the duty room and opened no car suspected of arms loading without the examiner's attendance."
-        },
-        "stress": {
-          "ko": "환자 칸이 군수 칸으로 오인되어 호송대 전체가 무장 해제를 당하는 것.",
-          "en": "Fear. That the patient cars would be mistaken for munitions cars and the whole convoy squad would be disarmed."
-        },
-        "relationship": {
-          "ko": "전미리의 지휘로 들것 순서를 집행하고, 감모의 의료조 당직실과 병상을 나눈다. 류은비의 의료동맹 호송증을 당직 원장에 옮긴다.",
-          "en": "Relations. Executed the stretcher order under Jeon Miri's command and shared the medical crew's duty room and sickbeds with Gam Mo. Moved Ryu Eunbi's medical alliance convoy passes into the duty ledger."
-        },
-        "effects": []
-      },
-      {
-        "id": "k304-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 호송원. 직함은 환승 당직 의무원, 전미리의 실무 담당자. 중증도 표와 이송 시각을 당직실에 붙이고, 무기 적재 의심 칸은 심사관 입회 없이 열지 않는다.",
-          "en": "Office. Rank: convoy hand. Title: transfer duty medic, duty officer of Jeon Miri. He pasted the severity table and transfer hours in the duty room and opened no car suspected of arms loading without the examiner's attendance."
-        },
-        "stress": {
-          "ko": "공포. 환자 칸이 군수 칸으로 오인되어 호송대 전체가 무장 해제를 당하는 것.",
-          "en": "Fear. That the patient cars would be mistaken for munitions cars and the whole convoy squad would be disarmed."
-        },
-        "relationship": {
-          "ko": "관계. 전미리의 지휘로 들것 순서를 집행하고, 감모의 의료조 당직실과 병상을 나눈다. 류은비의 의료동맹 호송증을 당직 원장에 옮긴다.",
-          "en": "Relations. Executed the stretcher order under Jeon Miri's command and shared the medical crew's duty room and sickbeds with Gam Mo. Moved Ryu Eunbi's medical alliance convoy passes into the duty ledger."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "국용은 행렬이 쌓이자 당직을 연장하고 배차 교대를 거부했다. 환자 우선이지만 완료된 의료호송 제도는 아니다.",
-      "en": "Gukyong extended duty and refused dispatch rotation when crowds accumulated. Patient priority does not establish a completed medical escort system."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,79 +152,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ad6d-b2f4-c591",
-    "name": "담양 국씨",
-    "crest": "clan-crests/ad6d-b2f4-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -15,
-    "개방": 60,
-    "무력": -50,
-    "물질": 0,
-    "공동": 20,
-    "원칙": 15,
-    "공개": 15,
-    "자격": 10,
-    "분산": 45,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 25,
-    "독점": -20,
-    "위험": 30,
-    "과시": -10,
-    "지속": 10,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "환승 환자 중증도·이송 시각 기록",
-    "소속": "신내운수",
-    "품계": "호송원",
-    "직함": "환승 당직 의무원, 전미리의 실무 담당자",
-    "가치관": "권위 −15 | 개방 60 | 무력 −50 | 물질 0 | 공동 20 | 원칙 15 | 공개 15 | 자격 10 | 분산 45 | 변혁 −10",
-    "욕망": "갈망 25 | 독점 −20 | 위험 30 | 과시 −10 | 지속 10 | 지향 이성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2071-08-05에 태어났다. 제기동 의무소에서 자랐다. 2126년 개막에는 환승 당직 의무원, 전미리의 실무 담당자 당직을 맡으며, 직위 인수 기록에는 가짜 약 봉인으로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 국용의 환승 환자 중증도·이송 시각 기록 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
-    "관직": "품계 호송원. 직함은 환승 당직 의무원, 전미리의 실무 담당자. 중증도 표와 이송 시각을 당직실에 붙이고, 무기 적재 의심 칸은 심사관 입회 없이 열지 않는다.",
-    "일화": "북한산보국문 남하 행렬이 신내 승강장에 쌓이자 당직을 연장하고 배차조 교대를 거부했다.",
-    "관계": "전미리의 지휘로 들것 순서를 집행하고, 감모의 의료조 당직실과 병상을 나눈다. 류은비의 의료동맹 호송증을 당직 원장에 옮긴다.",
-    "야망": "중랑·망우 응급 이송을 제기동 치료계약과 한 장의 호송증으로 묶어, 호송료 없는 의료 호송을 당직실에서 완성하려 한다.",
-    "공포": "환자 칸이 군수 칸으로 오인되어 호송대 전체가 무장 해제를 당하는 것.",
-    "개입": "환자 명부와 무기 적재 기록을 대조하거나, 의료 호송증 초안을 당직실에서 복사할 수 있다."
-  },
-  "biography": "2071-08-05생인 국용은 부상 등급을 먼저 보고 국적을 나중에 본다. 중립 문구보다 들것 순서를 믿고, 배차조의 빈 슬롯 요구를 활력이 안정되기 전에는 받지 않는다.\n\n- 생업: 환승 환자 중증도·이송 시각 기록\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 환승 당직 의무원, 전미리의 실무 담당자\n**생애.** 2071-08-05에 태어났다. 제기동 의무소에서 자랐다. 2126년 개막에는 환승 당직 의무원, 전미리의 실무 담당자 당직을 맡으며, 직위 인수 기록에는 가짜 약 봉인으로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 국용의 환승 환자 중증도·이송 시각 기록 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 호송원. 직함은 환승 당직 의무원, 전미리의 실무 담당자. 중증도 표와 이송 시각을 당직실에 붙이고, 무기 적재 의심 칸은 심사관 입회 없이 열지 않는다.\n\n**일화.** 북한산보국문 남하 행렬이 신내 승강장에 쌓이자 당직을 연장하고 배차조 교대를 거부했다.\n\n**관계.** 전미리의 지휘로 들것 순서를 집행하고, 감모의 의료조 당직실과 병상을 나눈다. 류은비의 의료동맹 호송증을 당직 원장에 옮긴다.\n\n**야망.** 중랑·망우 응급 이송을 제기동 치료계약과 한 장의 호송증으로 묶어, 호송료 없는 의료 호송을 당직실에서 완성하려 한다.\n\n**공포.** 환자 칸이 군수 칸으로 오인되어 호송대 전체가 무장 해제를 당하는 것.\n\n**개입.** 환자 명부와 무기 적재 기록을 대조하거나, 의료 호송증 초안을 당직실에서 복사할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 60 | 무력 −50 | 물질 0 | 공동 20 | 원칙 15 | 공개 15 | 자격 10 | 분산 45 | 변혁 −10\n- 욕망: 갈망 25 | 독점 −20 | 위험 30 | 과시 −10 | 지속 10 | 지향 이성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-12"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "국용",
-        "type": "지휘",
-        "to": "전미리",
-        "basis": "전미리의 지휘로 들것 순서를 집행하고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:4.19민주묘지",
+      "name": {
+        "ko": "4.19민주묘지역"
       },
-      {
-        "from": "국용",
-        "type": "지휘",
-        "to": "감모",
-        "basis": "감모의 의료조 당직실과 병상을 나눈다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "감모",
-        "type": "지휘",
-        "to": "국용",
-        "basis": "국용의 들것 순서와 병상을 나눈다"
-      }
-    ]
-  }
+      "holderPersonId": "K304",
+      "directLiegePersonId": "K311",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "4.19민주묘지",
+        "stationName": "4.19민주묘지"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1130564500",
+          "name": "우이동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

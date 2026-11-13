@@ -1,387 +1,105 @@
 {
   "id": "person-0557",
   "name": "권숲윤",
-  "title": "인준 기록관",
-  "position": "인준 기록관",
+  "title": "증표 인쇄공",
+  "position": "증표 인쇄공 · 회현역",
   "characterId": "K557",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "이중 지급 장부 대조·정정",
+  "rank": "등재민",
+  "commonTier": "T5",
+  "occupation": "증표 발행",
   "gender": "남성",
   "stage": "S4",
-  "state": "S06",
-  "stateName": "대한민국정부",
-  "sourceRoute": "/world/Cast-State-06#인물-권숲윤",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0557",
   "birthDate": "2079-10-24",
   "birthday": "10-24",
   "age": 47,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-06.json#/content/347",
-    "lore/characters/Cast-State-06.json#/content/349",
-    "lore/characters/Cast-State-06.json#/content/350"
-  ],
-  "familyTree": {
-    "personId": "K557",
-    "nodes": [
-      {
-        "id": "K557",
-        "personId": "K557",
-        "kind": "person",
-        "name": "권숲윤",
-        "birthDate": "2079-10-24",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K557"
-          },
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-권숲윤-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 인준 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-권숲윤-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0557"
-      },
-      {
-        "id": "FH-K557-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "권승아",
-        "lineage": {
-          "surname": "권",
-          "bongwan": "안동",
-          "clan": "ad8c-c548-b3d9-agreed-c724-second"
-        },
-        "birthDate": "2049-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-권숲윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2087,
-            "summary": "권승아는 서울역 등기소에서 이중 지급 장부 대조·정정 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-권숲윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K557-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "권승희",
-        "lineage": {
-          "surname": "권",
-          "bongwan": "안동",
-          "clan": "ad8c-c548-b3d9-agreed-c724-second"
-        },
-        "birthDate": "2019-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-권숲윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "권승희는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-권숲윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K557-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한태섭",
-        "birthDate": "2049-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-권숲윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2087,
-            "summary": "한태섭은 서울역 등기소에서 이중 지급 장부 대조·정정 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-권숲윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K557-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강태재",
-        "birthDate": "2019-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-권숲윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강태재는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-권숲윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K557-P-01:K557:biological",
-        "from": "FH-K557-P-01",
-        "to": "K557",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-권숲윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K557-P-02:FH-K557-P-01:biological",
-        "from": "FH-K557-P-02",
-        "to": "FH-K557-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-권숲윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K557-M-01:K557:biological",
-        "from": "FH-K557-M-01",
-        "to": "K557",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-권숲윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K557-M-02:FH-K557-M-01:biological",
-        "from": "FH-K557-M-02",
-        "to": "FH-K557-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-권숲윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ad8c-c548-b3d9",
+    "name": "안동 권씨",
+    "crest": "clan-crests/ad8c-c548-b3d9.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "중구 서울역 승강장의 잠자리 칸 하나가 마흔일곱 살 한국은행 증표 인쇄공 권숲윤의 기재다. 증표 인쇄실 맨 끝 자리에서 연료 증표의 일련번호를 찍는다. 같은 번호가 두 번 찍힌 묶음을 찾아내 한 줄을 지우고 서명한 일이 있어, 그 뒤로 번호 대조는 그의 몫이 됐다. 그는 번호 하나가 겹치면 어느 세대의 화덕 하나가 꺼진다고 말한다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "증표 인쇄공",
+    "품계": "등재민",
+    "생업": "증표 발행",
+    "일하는 역": "회현역",
+    "잠자는 역": "서울역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "중구 서울역 승강장의 잠자리 칸 하나가 마흔일곱 살 한국은행 증표 인쇄공 권숲윤의 기재다. 증표 인쇄실 맨 끝 자리에서 연료 증표의 일련번호를 찍는다. 같은 번호가 두 번 찍힌 묶음을 찾아내 한 줄을 지우고 서명한 일이 있어, 그 뒤로 번호 대조는 그의 몫이 됐다. 그는 번호 하나가 겹치면 어느 세대의 화덕 하나가 꺼진다고 말한다.",
+    "관직": "직함 증표 인쇄공. 직위 증표 인쇄공 · 회현역. 품계 등재민. 일하는 역 회현역."
+  },
+  "values": {
+    "권위": 65,
+    "개방": -60,
+    "무력": 5,
+    "물질": -35,
+    "공동": 15,
+    "원칙": 85,
+    "공개": -45,
+    "자격": 25,
+    "분산": -90,
+    "변혁": -65
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": 30,
+    "위험": 20,
+    "과시": -25,
+    "지속": 35,
+    "지향": "동성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0557",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 3,
-        "effective": 3
+      "diplomacy": {
+        "base": 8,
+        "effective": 8
       },
-      "strategy": {
+      "martial": {
         "base": 4,
         "effective": 4
       },
-      "negotiation": {
-        "base": 3,
-        "effective": 3
+      "stewardship": {
+        "base": 9,
+        "effective": 9
       },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 8,
-        "effective": 8
+      "intrigue": {
+        "base": 6,
+        "effective": 6
       },
       "learning": {
-        "base": 7,
-        "effective": 7
-      },
-      "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
         "base": 5,
         "effective": 5
-      }
-    },
-    "skills": [
-      {
-        "id": "k557-payment-correction",
-        "name": {
-          "ko": "지급 장부 정정",
-          "en": "Payment ledger correction"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "k557-choice",
-        "name": {
-          "ko": "수정 흔적 유지",
-          "en": "Keeps correction traces"
-        },
-        "description": {
-          "ko": "일화. 2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다. 이 일로 인준 기록관 자리의 서명이 장부에 올랐다. 이 선택을 넘어선 지속 성향은 미확인이다.",
-          "en": "Anecdote. In 2125 he cross-checked a double payment ledger, struck one line, and left his signature. By this deed the signature of the ratification registrar post rose into the ledger. A lasting disposition beyond this choice is unconfirmed."
-        },
-        "behavior": {
-          "ko": "일화. 2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다. 이 일로 인준 기록관 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In 2125 he cross-checked a double payment ledger, struck one line, and left his signature. By this deed the signature of the ratification registrar post rose into the ledger."
-        },
-        "stress": {
-          "ko": "공포. 인준 기록관 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That the ratification registrar duty post would stand empty and the Government's passage would become a break in the eight states' recognition. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
       },
-      {
-        "id": "k557-boundary",
-        "name": {
-          "ko": "당직 연속성을 중시",
-          "en": "Values duty continuity"
-        },
-        "description": {
-          "ko": "당직 공백을 피하고 기록을 믿는 원문 성향이다. 반복 문구이므로 개인의 특별한 장점으로 확대하지 않는다.",
-          "en": "The source favors unbroken shifts and written records. Repeated wording does not establish a distinctive exceptional virtue."
-        },
-        "behavior": {
-          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.",
-          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
-        },
-        "stress": {
-          "ko": "공포. 인준 기록관 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That the ratification registrar duty post would stand empty and the Government's passage would become a break in the eight states' recognition. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
+      "prowess": {
+        "base": 3,
+        "effective": 3
       }
-    ],
-    "narrative": {
-      "ko": "일화. 2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다. 이 일로 인준 기록관 자리의 서명이 장부에 올랐다. 단일 일화와 반복 당직 문구만 있어 장기 성향·광범위 경력·후속 결과는 미확인이다.",
-      "en": "Anecdote. In 2125 he cross-checked a double payment ledger, struck one line, and left his signature. By this deed the signature of the ratification registrar post rose into the ledger. Only one anecdote and repeated duty wording are available; enduring disposition, broader experience, and later results remain unconfirmed."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -419,83 +137,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-gu-28200-S06",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K557",
-      "stateId": "S06",
-      "politicalParentTitleId": "title:kingdom-s06",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-gu-28200-S06",
-          "directLiegePersonId": "K144"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ad8c-c548-b3d9",
-    "name": "안동 권씨",
-    "crest": "clan-crests/ad8c-c548-b3d9.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 20,
-    "개방": -5,
-    "무력": -30,
-    "물질": -30,
-    "공동": 10,
-    "원칙": 65,
-    "공개": -20,
-    "자격": 10,
-    "분산": -40,
-    "변혁": -45
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": 30,
-    "위험": 20,
-    "과시": -25,
-    "지속": 35,
-    "지향": "동성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "이중 지급 장부 대조·정정",
-    "소속": "서울특별시 지방공무원 조직",
-    "직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급",
-    "담당 업무": "인준 기록관",
-    "가치관": "권위 20 | 개방 −5 | 무력 −30 | 물질 −30 | 공동 10 | 원칙 65 | 공개 −20 | 자격 10 | 분산 −40 | 변혁 −45",
-    "욕망": "갈망 0 | 독점 30 | 위험 20 | 과시 −25 | 지속 35 | 지향 동성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "서울역 등기소에서 자랐다. 인준 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 권숲윤의 이중 지급 장부 대조·정정 업무는 회현동과 이어진다.",
-    "공무원 직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 인준 기록관.",
-    "일화": "2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다. 이 일로 인준 기록관 자리의 서명이 장부에 올랐다.",
-    "관계": "이중 지급 장부 대조·정정 업무의 인수인계를 통해 같은 생활권의 선배 당직과 이어진다.",
-    "야망": "인준 기록관 자리에서 이중 지급 장부 대조·정정 기록을 이어 서울특별시 지방공무원 조직의 장부가 당직 사이에 끊기지 않게 한다.",
-    "공포": "인준 기록관 당직이 비어 이중 지급 장부 대조·정정 업무와 연결된 도심 통행의 도장·명부가 끊기고, 그 기록에 기대는 서울특별시 지방공무원 조직 구성 세력의 인준까지 멈추는 것.",
-    "개입": "이중 지급 장부 대조·정정 업무의 당직 인수 증인을 세우거나, 그 직위의 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "큰소리로 지급을 재촉해도 이중 장부를 대조하는 쪽을 택한다. 정정한 한 줄과 서명으로 당직을 잇는다.\n\n- 생업: 이중 지급 장부 대조·정정\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급\n- 담당 업무: 인준 기록관\n**생애.** 서울역 등기소에서 자랐다. 인준 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 권숲윤의 이중 지급 장부 대조·정정 업무는 회현동과 이어진다.\n\n**공무원 직위·직급.** 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 인준 기록관.\n\n**일화.** 2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다. 이 일로 인준 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 이중 지급 장부 대조·정정 업무의 인수인계를 통해 같은 생활권의 선배 당직과 이어진다.\n\n**야망.** 인준 기록관 자리에서 이중 지급 장부 대조·정정 기록을 이어 서울특별시 지방공무원 조직의 장부가 당직 사이에 끊기지 않게 한다.\n\n**공포.** 인준 기록관 당직이 비어 이중 지급 장부 대조·정정 업무와 연결된 도심 통행의 도장·명부가 끊기고, 그 기록에 기대는 서울특별시 지방공무원 조직 구성 세력의 인준까지 멈추는 것.\n\n**개입.** 이중 지급 장부 대조·정정 업무의 당직 인수 증인을 세우거나, 그 직위의 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −5 | 무력 −30 | 물질 −30 | 공동 10 | 원칙 65 | 공개 −20 | 자격 10 | 분산 −40 | 변혁 −45\n- 욕망: 갈망 0 | 독점 30 | 위험 20 | 과시 −25 | 지속 35 | 지향 동성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-06"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "권숲윤",
-        "type": "계약",
-        "to": "어태산",
-        "basis": "권숲윤은 이중 지급을 바로잡은 서명과 관련 인준 기록을 어태산에게 가져간다. 어태산은 보관 원본의 날짜와 증인을 확인해 같은 인준이 다른 날짜로 다시 지급 근거가 된 곳을 찾는다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

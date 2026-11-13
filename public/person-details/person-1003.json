@@ -1,397 +1,30 @@
 {
   "id": "person-1003",
   "name": "조재표",
-  "title": "규격맹 조합원 · 귀환 일행 지휘자",
-  "position": "규격맹 조합원 · 귀환 일행 지휘자",
+  "title": "귀환 일행 지휘자",
+  "position": "귀환 일행 지휘자 · 동작역",
   "characterId": "K1003",
-  "rank": "",
+  "rank": "미등록",
   "commonTier": "T5",
-  "occupation": "주 탐사원 / 부 순찰대",
+  "occupation": "귀환 탐사",
   "gender": "남성",
   "stage": "S1",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-Unaffiliated#인물-조재표",
+  "state": "independent",
+  "stateName": "무소속",
   "detailRoute": "/people/person-1003",
   "birthDate": "2089-07-26",
   "birthday": "07-26",
   "age": 37,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-Unaffiliated.json#/content/3",
-    "lore/chronology/Century-Annals.json#/content/507",
-    "lore/chronology/Century-Annals.json#/content/554",
-    "lore/chronology/Century-Annals.json#/content/610",
-    "lore/chronology/Scenario-Timeline.json#/content/12"
-  ],
-  "familyTree": {
-    "personId": "K1003",
-    "nodes": [
-      {
-        "id": "K1003",
-        "personId": "K1003",
-        "kind": "person",
-        "name": "조재표",
-        "birthDate": "2089-07-26",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K1003"
-          },
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-조재표-list1"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "성명: 조재표 (Jaepyo Jo). 별칭 없음",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-조재표-list1"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-1003"
-      },
-      {
-        "id": "FH-K1003-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조민빈",
-        "lineage": {
-          "surname": "조",
-          "bongwan": "창녕",
-          "clan": "c870-cc3d-b155-66fa"
-        },
-        "birthDate": "2059-07-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-조재표-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "조민빈은 서울 종로구의 공동 거처에서 주 탐사원 / 부 순찰대 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-조재표-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1003-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "조민솔",
-        "lineage": {
-          "surname": "조",
-          "bongwan": "창녕",
-          "clan": "c870-cc3d-b155-66fa"
-        },
-        "birthDate": "2029-07-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-조재표-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "조민솔은 서울 종로구의 공동 거처에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-조재표-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1003-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "조민미",
-        "lineage": {
-          "surname": "조",
-          "bongwan": "창녕",
-          "clan": "c870-cc3d-b155-66fa"
-        },
-        "birthDate": "1999-07-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-조재표-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조민미는 서울 종로구에서 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-조재표-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1003-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임민욱",
-        "birthDate": "2059-07-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-조재표-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "임민욱은 서울 종로구의 공동 거처에서 주 탐사원 / 부 순찰대 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-조재표-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1003-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오민나",
-        "birthDate": "2029-07-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-조재표-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "오민나는 서울 종로구의 공동 거처에서 2067년 그 거처의 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-조재표-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1003-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "송민범",
-        "birthDate": "1999-07-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-조재표-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "송민범은 서울 종로구에서 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-조재표-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K1003-P-01:K1003:biological",
-        "from": "FH-K1003-P-01",
-        "to": "K1003",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-조재표-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1003-P-02:FH-K1003-P-01:biological",
-        "from": "FH-K1003-P-02",
-        "to": "FH-K1003-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-조재표-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1003-P-03:FH-K1003-P-02:biological",
-        "from": "FH-K1003-P-03",
-        "to": "FH-K1003-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-조재표-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1003-M-01:K1003:biological",
-        "from": "FH-K1003-M-01",
-        "to": "K1003",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-조재표-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1003-M-02:FH-K1003-M-01:biological",
-        "from": "FH-K1003-M-02",
-        "to": "FH-K1003-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-조재표-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1003-M-03:FH-K1003-M-02:biological",
-        "from": "FH-K1003-M-03",
-        "to": "FH-K1003-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-조재표-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c870-cc3d-b155-66fa",
+    "name": "창녕 조씨",
+    "crest": "clan-crests/c870-cc3d-b155-66fa.svg"
   },
-  "proseContacts": [],
-  "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
-  },
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
   "rightsPermissions": {
     "applicability": "real-person",
     "identityBasisRef": "owner-confirmed-named-identity-20261003",
@@ -409,126 +42,149 @@
       "evidenceRef": "owner-current-subject-permissions-20261003"
     }
   },
+  "biography": "어느 정체의 장부에도 이름이 없는 귀환 일행의 지휘자다. 눈보라가 바깥 기계의 눈을 가리는 이삼일 사이에 테두리를 넘고, 가져온 동력 덩이와 부품은 값을 치르는 쪽에 판다. 넘기 전에는 일행에게 갈 길과 돌아올 길과 몫을 먼저 말하고, 돌아오는 길을 닫으라는 계약은 받지 않는다. 일이 없을 때는 세 정체가 만나는 동작역에 동작 나루지기와 맺은 계약으로 머문다. 정부 쪽으로 돌아올 때는 귀환망의 백야가 그를 무전으로 맞는다.",
+  "fields": {
+    "소속": "무소속",
+    "직함": "귀환 일행 지휘자",
+    "품계": "미등록",
+    "생업": "귀환 탐사",
+    "일하는 역": "동작역",
+    "잠자는 역": "동작역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "어느 정체의 장부에도 이름이 없는 귀환 일행의 지휘자다. 눈보라가 바깥 기계의 눈을 가리는 이삼일 사이에 테두리를 넘고, 가져온 동력 덩이와 부품은 값을 치르는 쪽에 판다. 넘기 전에는 일행에게 갈 길과 돌아올 길과 몫을 먼저 말하고, 돌아오는 길을 닫으라는 계약은 받지 않는다. 일이 없을 때는 세 정체가 만나는 동작역에 동작 나루지기와 맺은 계약으로 머문다. 정부 쪽으로 돌아올 때는 귀환망의 백야가 그를 무전으로 맞는다.",
+    "관직": "직함 귀환 일행 지휘자. 직위 귀환 일행 지휘자 · 동작역. 품계 미등록. 일하는 역 동작역."
+  },
+  "values": {
+    "권위": 30,
+    "개방": -5,
+    "무력": 45,
+    "물질": -40,
+    "공동": -10,
+    "원칙": -20,
+    "공개": -30,
+    "자격": -15,
+    "분산": 10,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": -20,
+    "위험": 30,
+    "과시": 10,
+    "지속": 20,
+    "지향": "미확인",
+    "결합": "미확인"
+  },
+  "household": {
+    "id": "hh:person-1003",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "조재표",
+        "type": "계약",
+        "to": "신종목",
+        "basis": "귀환망이 정부 쪽으로 돌아오는 그의 일행을 무전과 피난처로 맞는다"
+      },
+      {
+        "from": "조재표",
+        "type": "계약",
+        "to": "최지우",
+        "basis": "동작역에 머무는 대가로 건너는 몫을 동작 나루지기에게 낸다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "이연",
+        "type": "지휘",
+        "to": "조재표",
+        "basis": "귀환 일행 지휘자 조재표의 직속"
+      },
+      {
+        "from": "이연",
+        "type": "맹세",
+        "to": "조재표",
+        "basis": "조재표의 명령을 나르되 돌아올 길을 닫는 명령은 나르지 않겠다고 맹세했다"
+      },
+      {
+        "from": "신종목",
+        "type": "계약",
+        "to": "조재표",
+        "basis": "정부 쪽으로 돌아오는 조재표 일행을 첫 무전으로 맞는다"
+      },
+      {
+        "from": "이강묵",
+        "type": "계약",
+        "to": "조재표",
+        "basis": "길잡이를 팔고 들고 온 동력 덩이에서 몫을 떼는 장을 맺었다"
+      }
+    ]
+  },
+  "court": {
+    "id": "court:K1003",
+    "members": [
+      {
+        "personId": "K1004",
+        "name": "이연"
+      }
+    ]
+  },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 18,
-        "effective": 18
+      "diplomacy": {
+        "base": 5,
+        "effective": 5
       },
-      "strategy": {
-        "base": 17,
-        "effective": 17
+      "martial": {
+        "base": 7,
+        "effective": 7
       },
-      "negotiation": {
-        "base": 12,
-        "effective": 12
+      "stewardship": {
+        "base": 5,
+        "effective": 5
       },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 17,
-        "effective": 17
+      "intrigue": {
+        "base": 9,
+        "effective": 9
       },
       "learning": {
-        "base": 13,
-        "effective": 13
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 20,
-        "effective": 28
-      },
-      "endurance": {
-        "base": 19,
-        "effective": 19
+        "base": 6,
+        "effective": 6
       }
     },
     "skills": [
       {
-        "id": "k1003-skill-1",
-        "name": {
-          "ko": "호위 지휘",
-          "en": "Escort command"
-        },
-        "rating": 90
+        "id": "v3-1003-edge-crossing",
+        "name": "테두리 넘기",
+        "rating": 80
       },
       {
-        "id": "k1003-skill-2",
-        "name": {
-          "ko": "철수로 확보",
-          "en": "Securing withdrawal routes"
-        },
-        "rating": 90
-      },
-      {
-        "id": "k1003-skill-3",
-        "name": {
-          "ko": "근접전",
-          "en": "Close combat"
-        },
-        "rating": 95
+        "id": "v3-1003-withdrawal",
+        "name": "철수 대열 지휘",
+        "rating": 70
       }
     ],
     "traits": [
       {
-        "id": "k1003-trait-1",
-        "name": {
-          "ko": "탁월한 전투원",
-          "en": "Exceptional combatant"
-        },
-        "description": {
-          "ko": "강자 지정과 현장 호위 수행을 반영한다.",
-          "en": "Reflects the established strong-combatant designation and field escort work."
-        },
-        "behavior": {
-          "ko": "강자 지정과 현장 호위 수행을 반영한다.",
-          "en": "Reflects the established strong-combatant designation and field escort work."
-        },
-        "stress": {
-          "ko": "추격을 끊는 판단이 민간인 퇴로와 충돌할 수 있다.",
-          "en": "A decision to break pursuit may conflict with civilians’ escape."
-        },
-        "relationship": {
-          "ko": "부하의 철수선을 중시하나 이연의 공개 거부를 마주한다.",
-          "en": "Values subordinates’ withdrawal lines yet faces Iyen’s public refusal."
-        },
-        "effects": [
-          {
-            "ability": "prowess",
-            "delta": 8
-          }
-        ]
-      },
-      {
-        "id": "k1003-trait-2",
-        "name": {
-          "ko": "철수선 중시",
-          "en": "Withdrawal lines matter"
-        },
-        "description": {
-          "ko": "구두 충성보다 돌아올 경로를 보장하려 한다.",
-          "en": "Seeks a return route rather than verbal loyalty."
-        },
-        "behavior": {
-          "ko": "구두 충성보다 돌아올 경로를 보장하려 한다.",
-          "en": "Seeks a return route rather than verbal loyalty."
-        },
-        "stress": {
-          "ko": "쫓기는 상황에서도 일행의 퇴로를 계산한다.",
-          "en": "Calculates the company’s exit even under pursuit."
-        },
-        "relationship": {
-          "ko": "계약 상대에게 철수 조건을 먼저 밝힌다.",
-          "en": "Discloses withdrawal terms to contracting partners first."
-        },
+        "id": "v3-1003-trait-1",
+        "name": "돌아올 길 먼저",
+        "description": "어디로 가든 돌아올 길을 먼저 정한다.",
+        "behavior": "계약을 받기 전에 철수 조건과 몫을 의뢰인에게 먼저 밝힌다.",
+        "stress": "돌아올 길이 막히면 짐을 버리고 사람을 먼저 데려온다.",
+        "relationship": "이연의 이의를 일행 장부에서 지우지 않는다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "위험·대가·철수 조건을 먼저 밝히고 민간인과 일행의 퇴로를 지키는 대열을 가르친다. 추격을 끊으려 문 폐쇄를 명령했을 때 민간인이 남아 있어 보호 원칙과 명령이 충돌한다.",
-      "en": "He discloses risks, costs, and withdrawal terms and teaches a formation protecting civilians and the company. His order to shut a gate against pursuit conflicts with that principle when civilians remain."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -566,80 +222,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c870-cc3d-b155-66fa",
-    "name": "창녕 조씨",
-    "crest": "clan-crests/c870-cc3d-b155-66fa.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": false,
-  "values": {
-    "권위": 10,
-    "개방": 20,
-    "무력": 30,
-    "물질": -20,
-    "공동": 20,
-    "원칙": -10,
-    "공개": -20,
-    "자격": 20,
-    "분산": 40,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": -20,
-    "위험": 30,
-    "과시": 10,
-    "지속": 20,
-    "지향": "미확인",
-    "결합": "미확인"
-  },
-  "fields": {
-    "성명": "조재표",
-    "캐릭터 ID": "unaffiliated-jaepyo-jo. 영구 인물 ID K1003",
-    "출신 공동체": "서울 종로구 창신제1동의 창신 공동 거처에서 성장했고 지금도 그곳에 산다. 출생지는 미확인이다.",
-    "생년월일": "2089-07-26",
-    "가치관": "권위 10 | 개방 20 | 무력 30 | 물질 −20 | 공동 20 | 원칙 −10 | 공개 −20 | 자격 20 | 분산 40 | 변혁 10",
-    "욕망과 취향": "갈망 30 | 독점 −20 | 위험 30 | 과시 10 | 지속 20 | 지향 미확인 | 결합 미확인",
-    "봉건 작위": "없음. 품계는 규격맹 조합 직제의 조합원이며 대한민국 정부 관직·공무원 계급이 아니다.",
-    "징집 이력": "의무 대상·복무 여부·형태·시기·동원 경험은 미확인이다.",
-    "무장 접근": "보유 장비·입수 경로·탄약·전력·정비 접근은 미확인이다.",
-    "언어": "한국어",
-    "생업": "주 탐사원 / 부 순찰대",
-    "소속": "규격맹 조합원, 조재표 일행(2026-10-22 세력 이동)",
-    "민간·공동체 직무": "유명 귀환 일행 지휘자(규격맹 조합원). 이동 경로·호위 계약·철수 판단에 서명한다. 개인 영지와 봉건 작위는 없다. 대한민국 정부 관직이나 공무원 계급이 아니다.",
-    "성격": "사람보다 경로와 약속 이행을 먼저 보지만 부하의 철수선을 버리지 않는 계산적 현장 지휘자다.",
-    "개인 야망": "규격맹 조합의 틀 안에서 귀환 호위망을 넓히려 한다.",
-    "공포": "유명세 때문에 일행이 현상금·징집·정치 선전의 표적이 되는 것을 두려워한다.",
-    "통치 방식": "위험과 대가, 철수 조건을 먼저 공개하고 계약한다. 구두 충성보다 돌아올 수 있는 경로를 보장한다.",
-    "관계": "이연이 조재표로 보내는 지휘 간선을 받는다. 이연의 판단은 이연의 이름으로 남긴다.",
-    "촉발 사건": "개막 직전 창신 거처의 출입 회랑에서 민간인이 남아 있는데도 폐문을 지시했고, 이연이 처음으로 공개 거부했다.",
-    "플레이어 개입": "이연의 구조를 돕거나 거부 기록을 조재표에게 넘기는 개입안이다. 분기 시점은 미확정이다."
-  },
-  "sections": {
-    "생애": "조재표는 창신제1동의 공동 거처에서 성장했다. 2121년 2월, 동대문역 생활권의 이 거처 앞마당에서 출발하는 짐 운반 일행의 길 안내와 호위를 맡았다. 의뢰인의 짐과 사람을 모두 돌려보내야 대금을 받는 귀환 조건을 받아들이면서 계약 일을 시작했다. 지금도 이 앞마당에서 계약을 접수하고 일행을 모은다. 개막의 현재 위치도 이곳이다.\n\n2125년 겨울에는 세 호위 의뢰 일행이 같은 날 같은 길을 쓰겠다고 요청했다. 이동 범위는 창신 거처 앞마당에서 종로의 지상 보행 구간과 동묘앞 생활권을 지나 신설동 생활권의 인계 마당까지였다. 조재표는 세 일행을 한꺼번에 호위할 수 없다고 알렸다. 대신 귀환 시간을 서로 다르게 정하는 조건으로 각각의 계약을 받았다. 세 일행은 각자의 의뢰와 귀환 시간을 두고 계약했다.",
-    "계약과 권한": "조재표는 창신 거처 앞마당에서 의뢰인과 동행 짐을 모아 지상 길로 호위한다. 거처와 앞마당은 거주·집결에 쓰고, 계약의 권한은 사람과 짐을 호위하는 범위에 머문다. 통행료 징수와 독점 통행, 검문·수사는 맡지 않는다. 선로 보행이나 대합실 출입, 역 환적에는 별도의 허가가 필요하다.",
-    "호위 대열": "창신 공동 거처의 좁은 하역 출입구에서 짐을 내려놓은 사람들이 빠져나갈 길을 지키며 일행과 함께 물러나는 대열을 가르친다.",
-    "호위와 철수": "조재표는 창신 거처의 좁은 출입구에서 짐을 내려놓은 사람들이 빠져나갈 길을 지킨다. 추격을 끊으면서 일행의 철수로를 확보하고, 돌아올 조건을 의뢰인에게 먼저 밝힌다.",
-    "특성": "- **탁월한 전투원** 추격이 출입구까지 따라오면 조재표는 짐을 내려놓은 사람들의 퇴로를 지키며 일행을 물린다. 추격을 끊으려 문을 닫으라는 판단은 민간인이 남은 길과 부딪히고, 이연은 그 명령을 공개 거부한다.\n- **철수선 중시** 조재표는 의뢰인에게 위험과 대가, 철수 조건을 먼저 밝힌다. 쫓기는 동안에도 일행이 돌아갈 길을 살피고 부하의 철수선을 지킨다.",
-    "신체": "평가되지 않았다. 왼팔·오른팔·왼다리·오른다리·머리·몸통의 손상 정도와 기능은 미확인이다. 질병 진행은 미확인이다."
-  },
-  "biography": "- 성명: 조재표\n- 캐릭터 ID: unaffiliated-jaepyo-jo. 영구 인물 ID K1003\n- 출신 공동체: 서울 종로구 창신제1동의 창신 공동 거처에서 성장했고 지금도 그곳에 산다. 출생지는 미확인이다.\n- 생년월일: 2089-07-26\n- 가치관: 권위 10 | 개방 20 | 무력 30 | 물질 −20 | 공동 20 | 원칙 −10 | 공개 −20 | 자격 20 | 분산 40 | 변혁 10\n- 욕망과 취향: 갈망 30 | 독점 −20 | 위험 30 | 과시 10 | 지속 20 | 지향 미확인 | 결합 미확인\n- 봉건 작위: 없음. 품계는 규격맹 조합 직제의 조합원이며 대한민국 정부 관직·공무원 계급이 아니다.\n- 징집 이력: 의무 대상·복무 여부·형태·시기·동원 경험은 미확인이다.\n- 무장 접근: 보유 장비·입수 경로·탄약·전력·정비 접근은 미확인이다.\n- 언어: 한국어\n- 생업: 주 탐사원 / 부 순찰대\n- 소속: 규격맹 조합원, 조재표 일행(2026-10-22 세력 이동)\n- 민간·공동체 직무: 유명 귀환 일행 지휘자(규격맹 조합원). 이동 경로·호위 계약·철수 판단에 서명한다. 개인 영지와 봉건 작위는 없다. 대한민국 정부 관직이나 공무원 계급이 아니다.\n- 성격: 사람보다 경로와 약속 이행을 먼저 보지만 부하의 철수선을 버리지 않는 계산적 현장 지휘자다.\n- 개인 야망: 규격맹 조합의 틀 안에서 귀환 호위망을 넓히려 한다.\n- 공포: 유명세 때문에 일행이 현상금·징집·정치 선전의 표적이 되는 것을 두려워한다.\n- 통치 방식: 위험과 대가, 철수 조건을 먼저 공개하고 계약한다. 구두 충성보다 돌아올 수 있는 경로를 보장한다.\n- 관계: 이연이 조재표로 보내는 지휘 간선을 받는다. 이연의 판단은 이연의 이름으로 남긴다.\n- 촉발 사건: 개막 직전 창신 거처의 출입 회랑에서 민간인이 남아 있는데도 폐문을 지시했고, 이연이 처음으로 공개 거부했다.\n- 플레이어 개입: 이연의 구조를 돕거나 거부 기록을 조재표에게 넘기는 개입안이다. 분기 시점은 미확정이다.\n\n생애. 조재표는 창신제1동의 공동 거처에서 성장했다. 2121년 2월, 동대문역 생활권의 이 거처 앞마당에서 출발하는 짐 운반 일행의 길 안내와 호위를 맡았다. 의뢰인의 짐과 사람을 모두 돌려보내야 대금을 받는 귀환 조건을 받아들이면서 계약 일을 시작했다. 지금도 이 앞마당에서 계약을 접수하고 일행을 모은다. 개막의 현재 위치도 이곳이다.\n\n2125년 겨울에는 세 호위 의뢰 일행이 같은 날 같은 길을 쓰겠다고 요청했다. 이동 범위는 창신 거처 앞마당에서 종로의 지상 보행 구간과 동묘앞 생활권을 지나 신설동 생활권의 인계 마당까지였다. 조재표는 세 일행을 한꺼번에 호위할 수 없다고 알렸다. 대신 귀환 시간을 서로 다르게 정하는 조건으로 각각의 계약을 받았다. 세 일행은 각자의 의뢰와 귀환 시간을 두고 계약했다.\n\n계약과 권한. 조재표는 창신 거처 앞마당에서 의뢰인과 동행 짐을 모아 지상 길로 호위한다. 거처와 앞마당은 거주·집결에 쓰고, 계약의 권한은 사람과 짐을 호위하는 범위에 머문다. 통행료 징수와 독점 통행, 검문·수사는 맡지 않는다. 선로 보행이나 대합실 출입, 역 환적에는 별도의 허가가 필요하다.\n\n호위 대열. 창신 공동 거처의 좁은 하역 출입구에서 짐을 내려놓은 사람들이 빠져나갈 길을 지키며 일행과 함께 물러나는 대열을 가르친다.\n\n호위와 철수. 조재표는 창신 거처의 좁은 출입구에서 짐을 내려놓은 사람들이 빠져나갈 길을 지킨다. 추격을 끊으면서 일행의 철수로를 확보하고, 돌아올 조건을 의뢰인에게 먼저 밝힌다.\n\n특성.\n\n- **탁월한 전투원** 추격이 출입구까지 따라오면 조재표는 짐을 내려놓은 사람들의 퇴로를 지키며 일행을 물린다. 추격을 끊으려 문을 닫으라는 판단은 민간인이 남은 길과 부딪히고, 이연은 그 명령을 공개 거부한다.\n- **철수선 중시** 조재표는 의뢰인에게 위험과 대가, 철수 조건을 먼저 밝힌다. 쫓기는 동안에도 일행이 돌아갈 길을 살피고 부하의 철수선을 지킨다.\n\n신체. 평가되지 않았다. 왼팔·오른팔·왼다리·오른다리·머리·몸통의 손상 정도와 기능은 미확인이다. 질병 진행은 미확인이다.",
-  "sources": [
-    "Cast-Unaffiliated"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": [
-      {
-        "from": "이연",
-        "type": "지휘",
-        "to": "조재표",
-        "basis": "조재표의 이동·호위 명령을 현장에서 수행하되 민간인 희생과 귀환로 폐쇄 명령은 거부한다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

@@ -1,504 +1,118 @@
 {
   "id": "person-0413",
   "name": "선한솜",
-  "title": "지하시설 방어조 거점장",
-  "position": "지하시설 방어조 거점장",
+  "title": "정비공",
+  "position": "정비공 · 매봉역",
   "characterId": "K412",
-  "rank": "미등록",
-  "commonTier": "T4",
-  "occupation": "서고 열쇠·초안함 봉인 관리",
+  "rank": "정비공",
+  "commonTier": "T5",
+  "occupation": "이식 정비",
   "gender": "남성",
   "stage": "S2",
-  "state": "S16",
-  "stateName": "정동노총",
-  "sourceRoute": "/world/Cast-State-16#인물-선한솜",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0413",
   "birthDate": "2097-11-27",
   "birthday": "11-27",
   "age": 29,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-16.json#/content/17"
-  ],
-  "familyTree": {
-    "personId": "K412",
-    "nodes": [
-      {
-        "id": "K412",
-        "personId": "K412",
-        "kind": "person",
-        "name": "선한솜",
-        "birthDate": "2097-11-27",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K412"
-          },
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-선한솜-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 지하시설 방어조 거점장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-선한솜-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0413"
-      },
-      {
-        "id": "FH-K412-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "선승은",
-        "lineage": {
-          "surname": "선",
-          "bongwan": "보성",
-          "clan": "c120-bcf4-c131-agreed-c19c-second"
-        },
-        "birthDate": "2067-11-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-선한솜-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "선승은은 대합실 당직에서 서고 열쇠·초안함 봉인 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-선한솜-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K412-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "선승연",
-        "lineage": {
-          "surname": "선",
-          "bongwan": "보성",
-          "clan": "c120-bcf4-c131-agreed-c19c-second"
-        },
-        "birthDate": "2037-11-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-선한솜-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "선승연은 대합실 당직에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-선한솜-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K412-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "선승정",
-        "lineage": {
-          "surname": "선",
-          "bongwan": "보성",
-          "clan": "c120-bcf4-c131-agreed-c19c-second"
-        },
-        "birthDate": "2007-11-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-선한솜-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "선승정은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-선한솜-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K412-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤준섭",
-        "birthDate": "2067-11-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-선한솜-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "윤준섭은 대합실 당직에서 서고 열쇠·초안함 봉인 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-선한솜-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K412-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한준훈",
-        "birthDate": "2037-11-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-선한솜-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "한준훈은 대합실 당직에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-선한솜-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K412-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "강준훈",
-        "birthDate": "2007-11-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-선한솜-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강준훈은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-선한솜-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K412-P-01:K412:biological",
-        "from": "FH-K412-P-01",
-        "to": "K412",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-선한솜-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K412-P-02:FH-K412-P-01:biological",
-        "from": "FH-K412-P-02",
-        "to": "FH-K412-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-선한솜-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K412-P-03:FH-K412-P-02:biological",
-        "from": "FH-K412-P-03",
-        "to": "FH-K412-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-선한솜-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K412-M-01:K412:biological",
-        "from": "FH-K412-M-01",
-        "to": "K412",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-선한솜-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K412-M-02:FH-K412-M-01:biological",
-        "from": "FH-K412-M-02",
-        "to": "FH-K412-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-선한솜-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K412-M-03:FH-K412-M-02:biological",
-        "from": "FH-K412-M-03",
-        "to": "FH-K412-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-선한솜-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c120-bcf4-c131",
+    "name": "보성 선씨",
+    "crest": "clan-crests/c120-bcf4-c131.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "선한솜은 매봉역 정비대의 정비공이고, 스물아홉에 부위가 둘이다. 맞춤 날 줄에 선 사람이 순번을 앞당겨 달라고 해도 그는 대꾸 없이 정비장이 짠 셈표만 가리킨다. 도곡2동 대피소에서 바침이 늦게 오는 날에도 줄의 차례를 바꾸지 않고, 늦은 몫을 셈표 끝에 따로 적어 정비장에게 넘긴다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "정비공",
+    "품계": "정비공",
+    "생업": "이식 정비",
+    "일하는 역": "매봉역",
+    "잠자는 역": "매봉역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "선한솜은 매봉역 정비대의 정비공이고, 스물아홉에 부위가 둘이다. 맞춤 날 줄에 선 사람이 순번을 앞당겨 달라고 해도 그는 대꾸 없이 정비장이 짠 셈표만 가리킨다. 도곡2동 대피소에서 바침이 늦게 오는 날에도 줄의 차례를 바꾸지 않고, 늦은 몫을 셈표 끝에 따로 적어 정비장에게 넘긴다.",
+    "관직": "직함 정비공. 직위 정비공 · 매봉역. 품계 정비공. 일하는 역 매봉역."
+  },
+  "values": {
+    "권위": 10,
+    "개방": 20,
+    "무력": -25,
+    "물질": -60,
+    "공동": 40,
+    "원칙": 20,
+    "공개": -25,
+    "자격": -25,
+    "분산": 15,
+    "변혁": 50
+  },
+  "desire": {
+    "갈망": 35,
+    "독점": -40,
+    "위험": -20,
+    "과시": 25,
+    "지속": 0,
+    "지향": "이성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0413",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 9,
-        "effective": 9
-      },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "management": {
-        "base": 11,
-        "effective": 11
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "stewardship": {
+        "base": 7,
+        "effective": 7
+      },
+      "intrigue": {
+        "base": 6,
+        "effective": 6
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 11,
+        "effective": 11
       },
       "prowess": {
-        "base": 9,
-        "effective": 9
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "split-custody",
-        "name": {
-          "ko": "열쇠 봉인 분리 보관",
-          "en": "Split key and seal custody"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "권한을 한 손에 모으지 않음",
-          "en": "Avoids concentrated custody"
-        },
-        "description": {
-          "ko": "서고 출입을 몸으로 막고 열쇠와 봉인을 분리한다. 수색 입회를 요구하지만 풀린 끈의 원인은 아직 밝혀지지 않았다.",
-          "en": "Physically blocks archive entry and separates keys from seals. Requires witnessed searches; the loosened cord’s cause remains unknown."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 권한을 한 손에 모으지 않음을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "내부 위조 의심 때 출입 통제를 강화할 수 있다.",
-          "en": "May tighten access when internal forgery is suspected."
-        },
-        "relationship": {
-          "ko": "하서진의 초안함을 지키며 곽은재의 감사표를 온도 일지와 맞춘다.",
-          "en": "Guards Ha Seojin’s drafts and matches Gwak Eunjae’s audits to temperature logs."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "지하 서고 방어를 독립 조합국 고유 직능으로 남겨 강국 호위병이 초안함 옆에 서는 관행을 없앤다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "방어조 안에서 위조 정서본을 숨긴 자가 나와 정유라의 표준 서식이 내부에서 깨지는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "하서진의 초안함을 지키며 곽은재의 감사표를 온도 일지와 맞춘다.",
-          "en": "Guards Ha Seojin’s drafts and matches Gwak Eunjae’s audits to temperature logs."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "서고 출입을 몸으로 막고 열쇠와 봉인을 분리한다. 수색 입회를 요구하지만 풀린 끈의 원인은 아직 밝혀지지 않았다.",
-      "en": "Physically blocks archive entry and separates keys from seals. Requires witnessed searches; the loosened cord’s cause remains unknown."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -524,85 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c120-bcf4-c131",
-    "name": "보성 선씨",
-    "crest": "clan-crests/c120-bcf4-c131.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -15,
-    "개방": 35,
-    "무력": -35,
-    "물질": -10,
-    "공동": 20,
-    "원칙": 30,
-    "공개": 20,
-    "자격": 10,
-    "분산": 45,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 35,
-    "독점": -40,
-    "위험": -20,
-    "과시": 25,
-    "지속": 0,
-    "지향": "이성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "서고 열쇠·초안함 봉인 관리",
-    "소속": "정동노총",
-    "공동체 역할": "지부장",
-    "직무": "지하시설 방어조 거점장",
-    "가치관": "권위 −15 | 개방 35 | 무력 −35 | 물질 −10 | 공동 20 | 원칙 30 | 공개 20 | 자격 10 | 분산 45 | 변혁 5",
-    "욕망": "갈망 35 | 독점 −40 | 위험 −20 | 과시 25 | 지속 0 | 지향 이성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2097-11-27에 태어난 선한솜은 영구 겨울의 시청역 조합 작업장에서 지하시설 방어조 거점장 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 선한솜은 소공동의 시청역 조합 작업장에서 지하시설 방어조 거점장 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "직무": "공동체 역할은 지부장이며 직무는 지하시설 방어조 거점장이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.",
-    "일화": "세 대외 세력 급수계약서가 같은 주에 들어오자 지하 당직 명단이 한 줄 빠져 있고 초안함 봉인 끈이 한 가닥 풀어져 있었다.",
-    "관계": "선한솜의 기존 관계 기록은 다음과 같다. 하서진의 초안함을 지하에서 지키고, 영마온의 외곽 순찰과 교대를 나눈다. 선한솜의 감사표를 함 온도 일지와 겹친다.",
-    "목표": "선한솜은 지하시설 방어조 거점장 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.",
-    "공포": "지하시설 방어조 거점장 업무의 서명이나 인계 기록이 바뀌어 선한솜의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.",
-    "개입": "선한솜은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다."
-  },
-  "biography": "선한솜은 영구 겨울의 시청역 조합 작업장에서 지하시설 방어조 거점장 업무 기록과 공개 표결 서명을 먼저 대조한다. 급수·통행·계약 일정이 겹치는 날에는 접수 시각과 인계 순서를 같은 장부에 남긴다.\n\n- 생업: 서고 열쇠·초안함 봉인 관리\n- 소속: 정동노총\n- 공동체 역할: 지부장\n- 직무: 지하시설 방어조 거점장\n**생애.** 2097-11-27에 태어난 선한솜은 영구 겨울의 시청역 조합 작업장에서 지하시설 방어조 거점장 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 선한솜은 소공동의 시청역 조합 작업장에서 지하시설 방어조 거점장 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**직무.** 공동체 역할은 지부장이며 직무는 지하시설 방어조 거점장이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.\n\n**일화.** 세 대외 세력 급수계약서가 같은 주에 들어오자 지하 당직 명단이 한 줄 빠져 있고 초안함 봉인 끈이 한 가닥 풀어져 있었다.\n\n**관계.** 선한솜의 기존 관계 기록은 다음과 같다. 하서진의 초안함을 지하에서 지키고, 영마온의 외곽 순찰과 교대를 나눈다. 선한솜의 감사표를 함 온도 일지와 겹친다.\n\n**목표.** 선한솜은 지하시설 방어조 거점장 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.\n\n**공포.** 지하시설 방어조 거점장 업무의 서명이나 인계 기록이 바뀌어 선한솜의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.\n\n**개입.** 선한솜은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 35 | 무력 −35 | 물질 −10 | 공동 20 | 원칙 30 | 공개 20 | 자격 10 | 분산 45 | 변혁 5\n- 욕망: 갈망 35 | 독점 −40 | 위험 −20 | 과시 25 | 지속 0 | 지향 이성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-16"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "선한솜",
-        "type": "계약",
-        "to": "하서진",
-        "basis": "하서진의 초안함을 지하에서 지키고"
-      },
-      {
-        "from": "선한솜",
-        "type": "계약",
-        "to": "영마온",
-        "basis": "영마온의 외곽 순찰과 교대를 나눈다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "영마온",
-        "type": "지휘",
-        "to": "선한솜",
-        "basis": "선한솜의 지하 방어와 교대를 나눈다"
-      },
-      {
-        "from": "천늘샘",
-        "type": "계약",
-        "to": "선한솜",
-        "basis": "선한솜의 지하 함 온도를 발전 쪽에서 받치고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

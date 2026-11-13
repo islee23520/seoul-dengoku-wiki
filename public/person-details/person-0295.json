@@ -1,399 +1,118 @@
 {
   "id": "person-0295",
   "name": "단건우",
-  "title": "약소국 회의 북부 사절 기술자",
-  "position": "약소국 회의 북부 사절 기술자",
+  "title": "정비공",
+  "position": "정비공 · 가락시장역",
   "characterId": "K294",
-  "rank": "사원",
+  "rank": "정비공",
   "commonTier": "T5",
-  "occupation": "역삼1동 작업 조·사고 원장 기록",
+  "occupation": "이식 정비",
   "gender": "남성",
   "stage": "S3",
-  "state": "S11",
-  "stateName": "성하그룹",
-  "sourceRoute": "/world/Cast-State-11#인물-단건우",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0295",
   "birthDate": "2086-10-18",
   "birthday": "10-18",
   "age": 40,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-11.json#/content/248",
-    "lore/characters/Cast-State-11.json#/content/250",
-    "lore/characters/Cast-State-11.json#/content/251"
-  ],
-  "familyTree": {
-    "personId": "K294",
-    "nodes": [
-      {
-        "id": "K294",
-        "personId": "K294",
-        "kind": "person",
-        "name": "단건우",
-        "birthDate": "2086-10-18",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K294"
-          },
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-단건우-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 성하전자 바깥 작업장 사절 기술자 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-단건우-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0295"
-      },
-      {
-        "id": "FH-K294-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "단승경",
-        "lineage": {
-          "surname": "단",
-          "bongwan": "강음",
-          "clan": "b2e8-ac15-c74c"
-        },
-        "birthDate": "2056-10-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-단건우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2094,
-            "summary": "단승경은 제기동 의무소에서 바깥 작업장 작업 조·사고 원장 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-단건우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K294-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "단승수",
-        "lineage": {
-          "surname": "단",
-          "bongwan": "강음",
-          "clan": "b2e8-ac15-c74c"
-        },
-        "birthDate": "2026-10-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-단건우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "단승수는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-단건우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K294-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현미",
-        "birthDate": "2056-10-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-단건우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2094,
-            "summary": "강현미는 제기동 의무소에서 바깥 작업장 작업 조·사고 원장 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-단건우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K294-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현도",
-        "birthDate": "2026-10-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-단건우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임현도는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-단건우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K294-P-01:K294:biological",
-        "from": "FH-K294-P-01",
-        "to": "K294",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-단건우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K294-P-02:FH-K294-P-01:biological",
-        "from": "FH-K294-P-02",
-        "to": "FH-K294-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-단건우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K294-M-01:K294:biological",
-        "from": "FH-K294-M-01",
-        "to": "K294",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-단건우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K294-M-02:FH-K294-M-01:biological",
-        "from": "FH-K294-M-02",
-        "to": "FH-K294-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-단건우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b2e8-ac15-c74c",
+    "name": "강음 단씨",
+    "crest": "clan-crests/b2e8-ac15-c74c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "단건우의 공책에는 가락시장역 정비대에서 연 부위마다 연 날과 바꾼 것이 적혀 있다. 젊어서 자유도시 작업장의 사고 원장을 적던 버릇이 마흔이 되도록 남은 것이다. 가락시장 먹거리 바꿈터에 드나드는 바깥 사람도 이 정비대에서 정비 차례를 사 가므로, 공책에는 아크 사람과 바깥 사람의 이음매가 한데 적혀 있다. 부위 둘을 지닌 그의 공책을 정비장 영마온은 순번을 다툴 때 셈표보다 먼저 편다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "정비공",
+    "품계": "정비공",
+    "생업": "이식 정비",
+    "일하는 역": "가락시장역",
+    "잠자는 역": "가락시장역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "단건우의 공책에는 가락시장역 정비대에서 연 부위마다 연 날과 바꾼 것이 적혀 있다. 젊어서 자유도시 작업장의 사고 원장을 적던 버릇이 마흔이 되도록 남은 것이다. 가락시장 먹거리 바꿈터에 드나드는 바깥 사람도 이 정비대에서 정비 차례를 사 가므로, 공책에는 아크 사람과 바깥 사람의 이음매가 한데 적혀 있다. 부위 둘을 지닌 그의 공책을 정비장 영마온은 순번을 다툴 때 셈표보다 먼저 편다.",
+    "관직": "직함 정비공. 직위 정비공 · 가락시장역. 품계 정비공. 일하는 역 가락시장역."
+  },
+  "values": {
+    "권위": 45,
+    "개방": -25,
+    "무력": 5,
+    "물질": -10,
+    "공동": 45,
+    "원칙": -5,
+    "공개": -50,
+    "자격": 50,
+    "분산": -10,
+    "변혁": 30
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": 0,
+    "위험": -30,
+    "과시": -5,
+    "지속": 0,
+    "지향": "이성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0295",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 10,
-        "effective": 10
-      },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 8,
-        "effective": 8
-      },
-      "learning": {
-        "base": 9,
-        "effective": 9
-      },
-      "prowess": {
+      "martial": {
         "base": 3,
         "effective": 3
       },
-      "endurance": {
+      "stewardship": {
+        "base": 7,
+        "effective": 7
+      },
+      "intrigue": {
         "base": 6,
         "effective": 6
-      }
-    },
-    "skills": [
-      {
-        "id": "k294-technical-clause-drafting",
-        "name": {
-          "ko": "기술 문안 작성",
-          "en": "Technical clause drafting"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k294-priority",
-        "name": {
-          "ko": "사적 쪽지 공개",
-          "en": "Discloses private notes"
-        },
-        "description": {
-          "ko": "단건우는 연기 쪽지를 공개한 뒤 작업·사고 원장을 교섭 자리로 가져갔다. 수리권 문안 제출과 실제 협약 성립은 다르다.",
-          "en": "Dan Geonu disclosed the postponement note and brought work and accident records to negotiations. Submitting repair clauses is not concluding an agreement."
-        },
-        "behavior": {
-          "ko": "작업 조 순환과 사고 서명을 같은 원장에 적고, 시험 연기를 요구하는 쪽지는 게시판에 그대로 붙인다.",
-          "en": "Office. Rank: assistant manager. Title: lesser-states council northern envoy technician. He wrote work-squad rotations and accident signatures in the same ledger and pasted notes demanding a trial postponement on the board as they came."
-        },
-        "stress": {
-          "ko": "사절 가방이 배급 창구 쪽지로 바뀌어 정문이 사택 창구가 되고 회의가 분할 복속으로 끝나는 것.",
-          "en": "Fear. That the envoy bag would turn into ration-window notes, the main gate would become a housing counter, and the council would end in partition."
-        },
-        "relationship": {
-          "ko": "이홍원의 승계 시험 일정을 회의 사절의 근거로 들고, 강민서의 수리 규격을 문안에 옮기며, 정유라의 본사 교섭 좌석에 북부 기술 조항을 올린다.",
-          "en": "Relations. Cited I Hongwon's technology trial schedule as the council envoys' grounds, moved Gang Minseo's repair standards into the draft, and raised the northern technical clause onto Jeong Yura's joint-negotiation seat."
-        },
-        "effects": []
       },
-      {
-        "id": "k294-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 사원. 직함은 성하전자 바깥 작업장 사절 기술자. 작업 조 순환과 사고 서명을 같은 원장에 적고, 시험 연기를 요구하는 쪽지는 게시판에 그대로 붙인다.",
-          "en": "Office. Rank: assistant manager. Title: lesser-states council northern envoy technician. He wrote work-squad rotations and accident signatures in the same ledger and pasted notes demanding a trial postponement on the board as they came."
-        },
-        "stress": {
-          "ko": "공포. 사절 가방이 배급 창구 쪽지로 바뀌어 정문이 사택 창구가 되고 회의가 분할 복속으로 끝나는 것.",
-          "en": "Fear. That the envoy bag would turn into ration-window notes, the main gate would become a housing counter, and the council would end in partition."
-        },
-        "relationship": {
-          "ko": "관계. 이홍원의 승계 시험 일정을 회의 사절의 근거로 들고, 강민서의 수리 규격을 문안에 옮기며, 정유라의 본사 교섭 좌석에 북부 기술 조항을 올린다.",
-          "en": "Relations. Cited I Hongwon's technology trial schedule as the council envoys' grounds, moved Gang Minseo's repair standards into the draft, and raised the northern technical clause onto Jeong Yura's joint-negotiation seat."
-        },
-        "effects": []
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "단건우는 연기 쪽지를 공개한 뒤 작업·사고 원장을 교섭 자리로 가져갔다. 수리권 문안 제출과 실제 협약 성립은 다르다.",
-      "en": "Dan Geonu disclosed the postponement note and brought work and accident records to negotiations. Submitting repair clauses is not concluding an agreement."
     },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -419,72 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b2e8-ac15-c74c",
-    "name": "강음 단씨",
-    "crest": "clan-crests/b2e8-ac15-c74c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 20,
-    "개방": -10,
-    "무력": -5,
-    "물질": 40,
-    "공동": 25,
-    "원칙": 5,
-    "공개": -5,
-    "자격": 85,
-    "분산": 20,
-    "변혁": -15
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": 0,
-    "위험": -30,
-    "과시": -5,
-    "지속": 0,
-    "지향": "이성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "역삼1동 작업 조·사고 원장 기록",
-    "소속": "성하그룹",
-    "품계": "사원",
-    "직함": "약소국 회의 북부 사절 기술자",
-    "가치관": "권위 20 | 개방 −10 | 무력 −5 | 물질 40 | 공동 25 | 원칙 5 | 공개 −5 | 자격 85 | 분산 20 | 변혁 −15",
-    "욕망": "갈망 30 | 독점 0 | 위험 −30 | 과시 −5 | 지속 0 | 지향 이성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "제기동 의무소에서 자랐다. 약소국 회의 북부 사절 기술자 자리는 가짜 약 봉인으로 열렸다.\n- 단건우는 역삼1동에서 역삼1동 작업 조·사고 원장 기록 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 이홍원의 승계 시험 일정을 회의 사절의 근거로 들고, 강민서의 수리 규격을 문안에 옮기며, 정유라의 본사 교섭 좌석에 북부 기술 조항을 올린다",
-    "관직": "품계 사원. 직함은 약소국 회의 북부 사절 기술자. 작업 조 순환과 사고 서명을 같은 원장에 적고, 시험 연기를 요구하는 쪽지는 게시판에 그대로 붙인다.",
-    "일화": "이홍원의 승계 시험을 미루라는 사택 쪽 쪽지가 역삼1동 기술 일지 위에 붙는다. 단건우는 쪽지를 게시판으로 옮겨 공개하고, 작업 조 순환과 사고 서명을 적은 원장을 들고 정유라의 본사 교섭 자리로 간다.",
-    "관계": "이홍원의 승계 시험 일정을 회의 사절의 근거로 들고, 강민서의 수리 규격을 문안에 옮기며, 정유라의 본사 교섭 좌석에 북부 기술 조항을 올린다.",
-    "야망": "작업 생활권 회의에서 성하전자의 수리 규격과 노동 이동권을 본사 교섭 문안에 넣어 성하그룹이 작업 생활권 사절의 손으로도 서명되게 한다.",
-    "공포": "사절 가방이 배급 창구 쪽지로 바뀌어 정문이 사택 창구가 되고 회의가 분할 복속으로 끝나는 것.",
-    "개입": "매수된 연기 쪽지를 공개하거나, 수리권 초안 증인을 회의장까지 호송할 수 있다."
-  },
-  "biography": "사고 날짜를 사람 이름보다 먼저 기억하고, 구두 승인을 전령 원장에 옮기기 전에 기지 가동을 열지 않는다. 사택 쪽 쪽지가 기술 일지보다 위에 붙으면 분필을 꺾는다.\n\n- 생업: 역삼1동 작업 조·사고 원장 기록\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 약소국 회의 북부 사절 기술자\n**생애.** 제기동 의무소에서 자랐다. 약소국 회의 북부 사절 기술자 자리는 가짜 약 봉인으로 열렸다.\n- 단건우는 역삼1동에서 역삼1동 작업 조·사고 원장 기록 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 이홍원의 승계 시험 일정을 회의 사절의 근거로 들고, 강민서의 수리 규격을 문안에 옮기며, 정유라의 본사 교섭 좌석에 북부 기술 조항을 올린다\n\n**관직.** 품계 사원. 직함은 약소국 회의 북부 사절 기술자. 작업 조 순환과 사고 서명을 같은 원장에 적고, 시험 연기를 요구하는 쪽지는 게시판에 그대로 붙인다.\n\n**일화.** 이홍원의 승계 시험을 미루라는 사택 쪽 쪽지가 역삼1동 기술 일지 위에 붙는다. 단건우는 쪽지를 게시판으로 옮겨 공개하고, 작업 조 순환과 사고 서명을 적은 원장을 들고 정유라의 본사 교섭 자리로 간다.\n\n**관계.** 이홍원의 승계 시험 일정을 회의 사절의 근거로 들고, 강민서의 수리 규격을 문안에 옮기며, 정유라의 본사 교섭 좌석에 북부 기술 조항을 올린다.\n\n**야망.** 작업 생활권 회의에서 성하전자의 수리 규격과 노동 이동권을 본사 교섭 문안에 넣어 성하그룹이 작업 생활권 사절의 손으로도 서명되게 한다.\n\n**공포.** 사절 가방이 배급 창구 쪽지로 바뀌어 정문이 사택 창구가 되고 회의가 분할 복속으로 끝나는 것.\n\n**개입.** 매수된 연기 쪽지를 공개하거나, 수리권 초안 증인을 회의장까지 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −10 | 무력 −5 | 물질 40 | 공동 25 | 원칙 5 | 공개 −5 | 자격 85 | 분산 20 | 변혁 −15\n- 욕망: 갈망 30 | 독점 0 | 위험 −30 | 과시 −5 | 지속 0 | 지향 이성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-11"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "단건우",
-        "type": "계약",
-        "to": "이홍원",
-        "basis": "이홍원의 기술시험 일정을 회의 사절의 근거로 들고"
-      },
-      {
-        "from": "단건우",
-        "type": "계약",
-        "to": "강민서",
-        "basis": "강민서의 수리 규격을 문안에 옮기며"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

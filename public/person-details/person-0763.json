@@ -1,502 +1,106 @@
 {
   "id": "person-0763",
   "name": "손바호",
-  "title": "유치선 순찰대",
-  "position": "유치선 순찰대",
+  "title": "가문 징집병",
+  "position": "가문 징집병 · 암사역",
   "characterId": "K763",
-  "rank": "교사",
+  "rank": "미세례자",
   "commonTier": "T5",
-  "occupation": "경비·순찰",
+  "occupation": "가문 징집",
   "gender": "여성",
   "stage": "S4",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-손바호",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0763",
   "birthDate": "2098-05-05",
   "birthday": "05-05",
   "age": 28,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/533",
-    "lore/characters/Cast-State-04.json#/content/535",
-    "lore/characters/Cast-State-04.json#/content/536"
-  ],
-  "familyTree": {
-    "personId": "K763",
-    "nodes": [
-      {
-        "id": "K763",
-        "personId": "K763",
-        "kind": "person",
-        "name": "손바호",
-        "birthDate": "2098-05-05",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K763"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-손바호-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-손바호-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0763"
-      },
-      {
-        "id": "FH-K763-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "손승재",
-        "lineage": {
-          "surname": "손",
-          "bongwan": "밀양",
-          "clan": "c190-bc00-c591-agreed-d638-second"
-        },
-        "birthDate": "2068-05-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-손바호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2106,
-            "summary": "손승재는 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-손바호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K763-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "손승찬",
-        "lineage": {
-          "surname": "손",
-          "bongwan": "밀양",
-          "clan": "c190-bc00-c591-agreed-d638-second"
-        },
-        "birthDate": "2038-05-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-손바호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "손승찬은 암사 경비 초소에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-손바호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K763-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "손승혁",
-        "lineage": {
-          "surname": "손",
-          "bongwan": "밀양",
-          "clan": "c190-bc00-c591-agreed-d638-second"
-        },
-        "birthDate": "2008-05-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-손바호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "손승혁은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-손바호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K763-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임도원",
-        "birthDate": "2068-05-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-손바호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2106,
-            "summary": "임도원은 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-손바호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K763-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오도영",
-        "birthDate": "2038-05-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-손바호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "오도영은 암사 경비 초소에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-손바호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K763-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "송재미",
-        "birthDate": "2008-05-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-손바호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "송재미는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-손바호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K763-P-01:K763:biological",
-        "from": "FH-K763-P-01",
-        "to": "K763",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-손바호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K763-P-02:FH-K763-P-01:biological",
-        "from": "FH-K763-P-02",
-        "to": "FH-K763-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-손바호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K763-P-03:FH-K763-P-02:biological",
-        "from": "FH-K763-P-03",
-        "to": "FH-K763-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-손바호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K763-M-01:K763:biological",
-        "from": "FH-K763-M-01",
-        "to": "K763",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-손바호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K763-M-02:FH-K763-M-01:biological",
-        "from": "FH-K763-M-02",
-        "to": "FH-K763-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-손바호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K763-M-03:FH-K763-M-02:biological",
-        "from": "FH-K763-M-03",
-        "to": "FH-K763-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-손바호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c190-bc00-c591",
+    "name": "밀양 손씨",
+    "crest": "clan-crests/c190-bc00-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "암사 취수구 둘레의 얼음 둑을 도는 순찰조에서 스물여덟 살 손바호는 늘 둑 바깥쪽을 맡는다. 취수구가 아크의 물을 대는 곳이라 그녀는 그 자리를 가볍게 여기지 않고, 교대가 끝나도 둑 위를 한 바퀴 더 돈다. 다른 구 사람 앞에서 말을 아끼고 손을 먼저 움직이는 것이 강동에서 자란 사람의 버릇이라고 그녀는 말한다. 순찰에서 돌아오면 둑 밑 얼음 구멍에서 건진 물고기 몇 마리를 부엌에 놓고 간다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "가문 징집병",
+    "품계": "미세례자",
+    "생업": "가문 징집",
+    "일하는 역": "암사역",
+    "잠자는 역": "암사역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 0
+  },
+  "sections": {
+    "생애": "암사 취수구 둘레의 얼음 둑을 도는 순찰조에서 스물여덟 살 손바호는 늘 둑 바깥쪽을 맡는다. 취수구가 아크의 물을 대는 곳이라 그녀는 그 자리를 가볍게 여기지 않고, 교대가 끝나도 둑 위를 한 바퀴 더 돈다. 다른 구 사람 앞에서 말을 아끼고 손을 먼저 움직이는 것이 강동에서 자란 사람의 버릇이라고 그녀는 말한다. 순찰에서 돌아오면 둑 밑 얼음 구멍에서 건진 물고기 몇 마리를 부엌에 놓고 간다.",
+    "관직": "직함 가문 징집병. 직위 가문 징집병 · 암사역. 품계 미세례자. 일하는 역 암사역."
+  },
+  "values": {
+    "권위": 45,
+    "개방": -5,
+    "무력": 10,
+    "물질": -25,
+    "공동": 50,
+    "원칙": 5,
+    "공개": -65,
+    "자격": -10,
+    "분산": -5,
+    "변혁": 55
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": 10,
+    "위험": 25,
+    "과시": -25,
+    "지속": 20,
+    "지향": "무성향",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0763",
+    "role": "single",
+    "personFaith": "unbaptised",
+    "houseFaith": "unbaptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
-      },
-      "strategy": {
-        "base": 5,
-        "effective": 5
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 4,
         "effective": 4
       },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 8,
-        "effective": 8
-      },
-      "learning": {
-        "base": 6,
-        "effective": 6
-      },
-      "prowess": {
-        "base": 8,
-        "effective": 8
-      },
-      "endurance": {
+      "martial": {
         "base": 9,
         "effective": 9
+      },
+      "stewardship": {
+        "base": 4,
+        "effective": 4
+      },
+      "intrigue": {
+        "base": 5,
+        "effective": 5
+      },
+      "learning": {
+        "base": 4,
+        "effective": 4
+      },
+      "prowess": {
+        "base": 10,
+        "effective": 10
       }
     },
-    "skills": [
-      {
-        "id": "guard",
-        "name": {
-          "ko": "출입 저지·암호패 교체",
-          "en": "Entry control and pass replacement"
-        },
-        "rating": 55
-      },
-      {
-        "id": "handover",
-        "name": {
-          "ko": "기록·열쇠 인수인계",
-          "en": "Record and key handover"
-        },
-        "rating": 40
-      }
-    ],
-    "traits": [
-      {
-        "id": "detect-unauthorized-crossings",
-        "name": {
-          "ko": "무단 도하 적발",
-          "en": "Detect Unauthorized Crossings"
-        },
-        "description": {
-          "ko": "손바호는 야간 무단 도하를 놓치지 않고 당직의 통행 경계를 지키려는 성향을 보인다.",
-          "en": "Son Baho shows a disposition to uphold crossing controls, grounded in catching an unauthorized night crosser."
-        },
-        "behavior": {
-          "ko": "야간 무단 도하자를 붙잡아 통행 위반에 직접 대응했다.",
-          "en": "He directly addressed a crossing violation by catching the unauthorized night crosser."
-        },
-        "stress": {
-          "ko": "당직 공백으로 통행이 강국의 볼모가 될 우려가 커지면 도하 감시에 더 주의를 기울일 수 있다.",
-          "en": "If a duty gap threatens to leave passage hostage to a powerful state, he may become more attentive to crossings."
-        },
-        "relationship": {
-          "ko": "선배 당직과 인계할 때 통행 경계를 이어 맡을 책임을 중요하게 여길 수 있다.",
-          "en": "In handovers with senior duty staff, he may emphasize responsibility for maintaining crossing controls."
-        },
-        "effects": []
-      },
-      {
-        "id": "reissue-security-tokens",
-        "name": {
-          "ko": "보안패 재발급",
-          "en": "Reissue Security Tokens"
-        },
-        "description": {
-          "ko": "손바호는 통행 위반 뒤 경비 암호패를 바꾸어 보안 조건을 바로잡으려는 성향을 보인다.",
-          "en": "Son Baho shows a disposition to restore security conditions by changing guard tokens after a crossing violation."
-        },
-        "behavior": {
-          "ko": "무단 도하자를 붙잡은 뒤 경비 암호패를 교체했다.",
-          "en": "He replaced the guard password token after catching the unauthorized crosser."
-        },
-        "stress": {
-          "ko": "통행 통제가 흔들릴 우려가 생기면 자기 권한 안에서 보안패 갱신을 우선할 수 있다.",
-          "en": "If passage control appears threatened, he may prioritize token renewal within his actual authority."
-        },
-        "relationship": {
-          "ko": "선배 당직에게 열쇠와 기록을 넘길 때 암호패 변경 사실도 명확히 전달하려 할 수 있다.",
-          "en": "When handing over keys and records to senior duty staff, he may seek to clarify the token change."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "야간 도하자를 저지하고 암호패를 바꿨다. 실제 경비 경험은 있으나 지위만으로 병력이나 장비를 배정하지 않는다.",
-      "en": "He stopped a night crosser and changed security passes. Guard experience is supported; rank does not grant troops or equipment."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -534,66 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c190-bc00-c591",
-    "name": "밀양 손씨",
-    "crest": "clan-crests/c190-bc00-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 20,
-    "개방": 10,
-    "무력": 0,
-    "물질": 25,
-    "공동": 30,
-    "원칙": 15,
-    "공개": -20,
-    "자격": 25,
-    "분산": 25,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": 10,
-    "위험": 25,
-    "과시": -25,
-    "지속": 20,
-    "지향": "무성향",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "경비·순찰",
-    "품계": "교사",
-    "직함": "유치선 순찰대",
-    "가치관": "권위 20 | 개방 10 | 무력 0 | 물질 25 | 공동 30 | 원칙 15 | 공개 −20 | 자격 25 | 분산 25 | 변혁 10",
-    "욕망": "갈망 40 | 독점 10 | 위험 25 | 과시 −25 | 지속 20 | 지향 무성향 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2126년 세대. 손바호는 암사 경비 초소에서 자랐다. 손바호는 야간 무단 도하 적발로 유치선 순찰대 자리를 맡았다.\n- 손바호의 유치선 순찰대 업무는 용답동과 연결된다.",
-    "관직": "손바호는 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.",
-    "일화": "2125년 손바호는 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.",
-    "관계": "손바호는 같은 생활권 선배 당직자와 인수인계로 묶인다.",
-    "야망": "손바호는 유치선 순찰대 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.",
-    "공포": "손바호는 유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.",
-    "개입": "손바호는 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "손바호는 당직을 끊지 않는 쪽을 먼저 고른다. 손바호는 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 경비·순찰\n- 품계: 교사\n- 직함: 유치선 순찰대\n**생애.** 2126년 세대. 손바호는 암사 경비 초소에서 자랐다. 손바호는 야간 무단 도하 적발로 유치선 순찰대 자리를 맡았다.\n- 손바호의 유치선 순찰대 업무는 용답동과 연결된다.\n\n**관직.** 손바호는 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 손바호는 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 손바호는 같은 생활권 선배 당직자와 인수인계로 묶인다.\n\n**야망.** 손바호는 유치선 순찰대 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.\n\n**공포.** 손바호는 유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.\n\n**개입.** 손바호는 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 10 | 무력 0 | 물질 25 | 공동 30 | 원칙 15 | 공개 −20 | 자격 25 | 분산 25 | 변혁 10\n- 욕망: 갈망 40 | 독점 10 | 위험 25 | 과시 −25 | 지속 20 | 지향 무성향 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "손바호",
-        "type": "계약",
-        "to": "채구름",
-        "basis": "손바호는 유치선 야간 출입 기록과 교체 암호패 내용을 채구름에게 전한다. 채구름은 교량 출입에서 이중 확인을 지켜 경비 교대의 빈 곳을 통한 접근을 살핀다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

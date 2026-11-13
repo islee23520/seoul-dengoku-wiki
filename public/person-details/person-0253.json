@@ -1,385 +1,136 @@
 {
   "id": "person-0253",
   "name": "모봉",
-  "title": "산악 운송 물류상",
-  "position": "짐 장부 주지",
+  "title": "상암동 동장",
+  "position": "상암동 동장 · 정부",
   "characterId": "K252",
-  "rank": "주지",
+  "rank": "동장",
   "commonTier": "T3",
-  "occupation": "짐 출처 장부·통행 표 확인",
+  "occupation": "동 행정",
   "gender": "여성",
   "stage": "S2",
-  "state": "S10",
-  "stateName": "안국총림",
-  "sourceRoute": "/world/Cast-State-10#인물-모봉",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0253",
   "birthDate": "2081-07-20",
   "birthday": "07-20",
   "age": 45,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-10.json#/content/116"
-  ],
-  "familyTree": {
-    "personId": "K252",
-    "nodes": [
-      {
-        "id": "K252",
-        "personId": "K252",
-        "kind": "person",
-        "name": "모봉",
-        "birthDate": "2081-07-20",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K252"
-          },
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-모봉-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 노량진 선창에서 자랐다. 짐 장부 주지 자리는 저울 재점검 공개로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-모봉-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0253"
-      },
-      {
-        "id": "FH-K252-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "모승현",
-        "lineage": {
-          "surname": "모",
-          "bongwan": "함평",
-          "clan": "baa8-d568-d3c9"
-        },
-        "birthDate": "2051-07-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-모봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2089,
-            "summary": "모승현은 노량진 선창에서 짐 출처 장부·통행 표 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-모봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K252-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "모승영",
-        "lineage": {
-          "surname": "모",
-          "bongwan": "함평",
-          "clan": "baa8-d568-d3c9"
-        },
-        "birthDate": "2021-07-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-모봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "모승영은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-모봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K252-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박현온",
-        "birthDate": "2051-07-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-모봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2089,
-            "summary": "박현온은 노량진 선창에서 짐 출처 장부·통행 표 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-모봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K252-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이현란",
-        "birthDate": "2021-07-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-모봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이현란은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-모봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K252-P-01:K252:biological",
-        "from": "FH-K252-P-01",
-        "to": "K252",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-모봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K252-P-02:FH-K252-P-01:biological",
-        "from": "FH-K252-P-02",
-        "to": "FH-K252-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-모봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K252-M-01:K252:biological",
-        "from": "FH-K252-M-01",
-        "to": "K252",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-모봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K252-M-02:FH-K252-M-01:biological",
-        "from": "FH-K252-M-02",
-        "to": "FH-K252-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-모봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "baa8-d568-d3c9",
+    "name": "함평 모씨",
+    "crest": "clan-crests/baa8-d568-d3c9.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "상암동 동주민센터 반출 기재부의 결재란에 도장을 찍는 사람은 디지털미디어시티역에 기재된 동장 모봉이다. 상암동 동장 자리는 김연규 국회의원이 내린 임명장으로 받았다. 디지털미디어시티–마곡나루 다리의 북쪽 끝이 이 동에 있어, 썰매에 실린 땔감과 고물이 다리를 건널 때마다 그녀의 동주민센터가 반출 기재를 한다. 다리를 지키는 감용 소령과는 아침마다 다리를 열지 말지를 두고 같은 꼴의 쪽지를 주고받는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "상암동 동장",
+    "품계": "동장",
+    "생업": "동 행정",
+    "일하는 역": "디지털미디어시티역",
+    "잠자는 역": "디지털미디어시티역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "상암동 동주민센터 반출 기재부의 결재란에 도장을 찍는 사람은 디지털미디어시티역에 기재된 동장 모봉이다. 상암동 동장 자리는 김연규 국회의원이 내린 임명장으로 받았다. 디지털미디어시티–마곡나루 다리의 북쪽 끝이 이 동에 있어, 썰매에 실린 땔감과 고물이 다리를 건널 때마다 그녀의 동주민센터가 반출 기재를 한다. 다리를 지키는 감용 소령과는 아침마다 다리를 열지 말지를 두고 같은 꼴의 쪽지를 주고받는다.",
+    "관직": "직함 상암동 동장. 직위 상암동 동장 · 정부. 품계 동장. 일하는 역 디지털미디어시티역."
+  },
+  "values": {
+    "권위": 0,
+    "개방": -5,
+    "무력": 0,
+    "물질": -15,
+    "공동": 70,
+    "원칙": 45,
+    "공개": 0,
+    "자격": 40,
+    "분산": -5,
+    "변혁": -10
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": -15,
+    "위험": 40,
+    "과시": 5,
+    "지속": -20,
+    "지향": "유동",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0253",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "모봉",
+        "type": "지휘",
+        "to": "김연규",
+        "basis": "마포구 국회의원 김연규의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "방늘재",
+        "type": "지휘",
+        "to": "모봉",
+        "basis": "상암동 동장 모봉의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K1007",
+    "name": "김연규",
+    "courtId": "court:K1007",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K252",
+    "members": [
+      {
+        "personId": "K381",
+        "name": "방늘재"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 10,
-        "effective": 10
       }
     },
-    "skills": [
-      {
-        "id": "cargo-provenance",
-        "name": {
-          "ko": "짐 출처·통행 표 확인",
-          "en": "Cargo provenance and passage-pass checking"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "cargo-provenance-disposition",
-        "name": {
-          "ko": "짐과 이름을 함께 기록",
-          "en": "Records cargo with names"
-        },
-        "description": {
-          "ko": "눈이 오면 경로를 자랑하지 않고 표시를 고친다.",
-          "en": "Revises signs in snow instead of boasting of routes."
-        },
-        "behavior": {
-          "ko": "눈이 오면 경로를 자랑하지 않고 표시를 고친다.",
-          "en": "Revises signs in snow instead of boasting of routes."
-        },
-        "stress": {
-          "ko": "운송로가 군사 호송로가 될 것을 두려워한다.",
-          "en": "Fears cargo routes becoming military escort routes."
-        },
-        "relationship": {
-          "ko": "강태산의 정찰 보고를 운송 시각에 맞추고, 모봉용의 절연재 짐을 회랑에서 인수한다. 신보람의 가족 명부에 없는 짐은 받지 않는다.",
-          "en": "Coordinates Kang Taesan’s reconnaissance and Mobongyong’s cargo while requiring Sin Boram’s family-roster entries."
-        },
-        "effects": []
-      },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "표 있는 짐",
-          "en": "Cargo with passes"
-        },
-        "description": {
-          "ko": "가족 명부에 없는 짐을 받지 않는다.",
-          "en": "Does not accept cargo absent from the family roster."
-        },
-        "behavior": {
-          "ko": "가족 명부에 없는 짐을 받지 않는다.",
-          "en": "Does not accept cargo absent from the family roster."
-        },
-        "stress": {
-          "ko": "운송로가 군사 호송로로 바뀌어 피난 장부가 지도에서 지워지는 것.",
-          "en": "Fears cargo routes becoming military escort routes."
-        },
-        "relationship": {
-          "ko": "강태산의 정찰 보고를 운송 시각에 맞추고, 모봉용의 절연재 짐을 회랑에서 인수한다. 신보람의 가족 명부에 없는 짐은 받지 않는다.",
-          "en": "Coordinates Kang Taesan’s reconnaissance and Mobongyong’s cargo while requiring Sin Boram’s family-roster entries."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "상자 출처와 신도 표를 맞추며 짐의 무게와 아이 이름을 함께 적는다. 회랑 운송을 보호비와 군사 인원조사에서 떼려 한다.",
-      "en": "Matches box provenance to member passes and records cargo weights with children’s names, resisting protection fees and military census use."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,79 +168,52 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "baa8-d568-d3c9",
-    "name": "함평 모씨",
-    "crest": "clan-crests/baa8-d568-d3c9.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -45,
-    "개방": 50,
-    "무력": -35,
-    "물질": -10,
-    "공동": 65,
-    "원칙": 25,
-    "공개": 25,
-    "자격": 25,
-    "분산": 45,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": -15,
-    "위험": 40,
-    "과시": 5,
-    "지속": -20,
-    "지향": "유동",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "짐 출처 장부·통행 표 확인",
-    "소속": "안국총림",
-    "품계": "주지",
-    "직함": "짐 장부 주지",
-    "가치관": "권위 −45 | 개방 50 | 무력 −35 | 물질 −10 | 공동 65 | 원칙 25 | 공개 25 | 자격 25 | 분산 45 | 변혁 10",
-    "욕망": "갈망 45 | 독점 −15 | 위험 40 | 과시 5 | 지속 −20 | 지향 유동 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2081-07-20 출생, 2126년 개막에 활동했다. 노량진 선창에서 자랐다. 짐 장부 주지 당직 기록에는 저울 재점검 공개 일이 남아 있다.\n- 모봉의 짐 출처 장부·통행 표 확인 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
-    "관직": "품계 주지. 직함은 짐 장부 주지. 짐 출처를 상자마다 적고, 무장 통과는 신도 명부 주지의 표가 있어야 실어 나른다.",
-    "일화": "암사 순찰대가 급수 철표를 들고 회랑 입구까지 올라와 인원 조사를 통보했다.",
-    "관계": "강태산의 정찰 보고를 운송 시각에 맞추고, 모봉용의 절연재 짐을 회랑에서 인수한다. 신보람의 가족 명부에 없는 짐은 받지 않는다.",
-    "야망": "북한산·탕춘대 회랑의 산악 운송을 신도 단위 계약으로 남겨 숙영지 운송이 순찰 통제에 넘어가지 않게 한다.",
-    "공포": "운송로가 군사 호송로로 바뀌어 피난 장부가 지도에서 지워지는 것.",
-    "개입": "운송로를 하루 닫거나, 철표와 짐 장부를 대조해 산중총회에 증언할 수 있다."
-  },
-  "biography": "짐의 무게와 아이의 이름을 같은 장부에 적고, 통행 안내를 보호비로 바꾸는 상인을 경멸한다. 눈이 오면 경로를 자랑하지 않고 표시만 고친다.\n\n- 생업: 짐 출처 장부·통행 표 확인\n- 소속: 안국총림\n- 품계: 주지\n- 직함: 짐 장부 주지\n**생애.** 2081-07-20 출생, 2126년 개막에 활동했다. 노량진 선창에서 자랐다. 짐 장부 주지 당직 기록에는 저울 재점검 공개 일이 남아 있다.\n- 모봉의 짐 출처 장부·통행 표 확인 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n**관직.** 품계 주지. 직함은 짐 장부 주지. 짐 출처를 상자마다 적고, 무장 통과는 신도 명부 주지의 표가 있어야 실어 나른다.\n\n**일화.** 암사 순찰대가 급수 철표를 들고 회랑 입구까지 올라와 인원 조사를 통보했다.\n\n**관계.** 강태산의 정찰 보고를 운송 시각에 맞추고, 모봉용의 절연재 짐을 회랑에서 인수한다. 신보람의 가족 명부에 없는 짐은 받지 않는다.\n\n**야망.** 북한산·탕춘대 회랑의 산악 운송을 신도 단위 계약으로 남겨 숙영지 운송이 순찰 통제에 넘어가지 않게 한다.\n\n**공포.** 운송로가 군사 호송로로 바뀌어 피난 장부가 지도에서 지워지는 것.\n\n**개입.** 운송로를 하루 닫거나, 철표와 짐 장부를 대조해 산중총회에 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 50 | 무력 −35 | 물질 −10 | 공동 65 | 원칙 25 | 공개 25 | 자격 25 | 분산 45 | 변혁 10\n- 욕망: 갈망 45 | 독점 −15 | 위험 40 | 과시 5 | 지속 −20 | 지향 유동 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-10"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "모봉",
-        "type": "계약",
-        "to": "강태산",
-        "basis": "강태산의 정찰 보고를 운송 시각에 맞추고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1144074000",
+      "name": {
+        "ko": "상암동"
       },
-      {
-        "from": "모봉",
-        "type": "계약",
-        "to": "모봉용",
-        "basis": "모봉용의 절연재 짐을 회랑에서 인수한다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "두소",
-        "type": "계약",
-        "to": "모봉",
-        "basis": "모봉의 산악 운송을 입구에서 받고"
-      }
-    ]
-  }
+      "holderPersonId": "K252",
+      "directLiegePersonId": "K1007",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1144074000",
+          "name": "상암동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ],
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:디지털미디어시티",
+      "name": {
+        "ko": "디지털미디어시티역"
+      },
+      "holderPersonId": "K381",
+      "directLiegePersonId": "K252",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "디지털미디어시티",
+        "stationName": "디지털미디어시티"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1144074000",
+          "name": "상암동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "방늘재",
+      "holderRoute": "/people/person-0382"
+    }
+  ]
 }

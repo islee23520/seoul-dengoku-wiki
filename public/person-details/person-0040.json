@@ -1,395 +1,136 @@
 {
   "id": "person-0040",
   "name": "진우람",
-  "title": "금천 공방의무원",
-  "position": "금천 공방의무원",
+  "title": "가산 구간장",
+  "position": "가산 구간장 · 자유도시들",
   "characterId": "K040",
-  "rank": "",
+  "rank": "구간장",
   "commonTier": "T3",
-  "occupation": "공방 진료",
+  "occupation": "구간 운영",
   "gender": "여성",
   "stage": "S2",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-진우람",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0040",
   "birthDate": "2078-09-22",
   "birthday": "09-22",
   "age": 48,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/148",
-    "lore/characters/Cast-State-02.json#/content/150",
-    "lore/characters/Cast-State-02.json#/content/151"
-  ],
-  "familyTree": {
-    "personId": "K040",
-    "nodes": [
-      {
-        "id": "K040",
-        "personId": "K040",
-        "kind": "person",
-        "name": "진우람",
-        "birthDate": "2078-09-22",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K040"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-진우람-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 금천 공방의무원 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-진우람-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0040"
-      },
-      {
-        "id": "FH-K040-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "진승현",
-        "lineage": {
-          "surname": "진",
-          "bongwan": "풍기",
-          "clan": "c9c4-d48d-ae30"
-        },
-        "birthDate": "2048-09-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-진우람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2086,
-            "summary": "진승현은 제기동 의무소에서 공방 진료 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-진우람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K040-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "진승영",
-        "lineage": {
-          "surname": "진",
-          "bongwan": "풍기",
-          "clan": "c9c4-d48d-ae30"
-        },
-        "birthDate": "2018-09-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-진우람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "진승영은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-진우람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K040-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승윤",
-        "birthDate": "2048-09-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-진우람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2086,
-            "summary": "윤승윤은 제기동 의무소에서 공방 진료 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-진우람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K040-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한승수",
-        "birthDate": "2018-09-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-진우람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한승수는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-진우람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K040-P-01:K040:biological",
-        "from": "FH-K040-P-01",
-        "to": "K040",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-진우람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K040-P-02:FH-K040-P-01:biological",
-        "from": "FH-K040-P-02",
-        "to": "FH-K040-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-진우람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K040-M-01:K040:biological",
-        "from": "FH-K040-M-01",
-        "to": "K040",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-진우람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K040-M-02:FH-K040-M-01:biological",
-        "from": "FH-K040-M-02",
-        "to": "FH-K040-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-진우람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c9c4-d48d-ae30",
+    "name": "풍기 진씨",
+    "crest": "clan-crests/c9c4-d48d-ae30.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "가산디지털단지에서 금천구청까지 1호선 터널 두 토막과 그 안의 케이블, 옛 공장 터의 고물 자리가 모두 그의 몫이다. 금천에는 구간이 가산 하나뿐이어서, 금천의 터널 일을 묻는 사람은 누구든 그를 먼저 찾는다. 아침마다 독산 쪽 터널 벽의 온도를 재어 셈판에 적고, 영하로 떨어진 토막이 있으면 그날은 굴착 틀을 실은 수레를 그 길로 보내지 않는다. 경계조가 테두리에서 돌아오는 날에는 가산 출입구 하나를 밤새 열어 두고 그 앞에서 기다린다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "가산 구간장",
+    "품계": "구간장",
+    "생업": "구간 운영",
+    "일하는 역": "가산디지털단지역",
+    "잠자는 역": "가산디지털단지역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "가산디지털단지에서 금천구청까지 1호선 터널 두 토막과 그 안의 케이블, 옛 공장 터의 고물 자리가 모두 그의 몫이다. 금천에는 구간이 가산 하나뿐이어서, 금천의 터널 일을 묻는 사람은 누구든 그를 먼저 찾는다. 아침마다 독산 쪽 터널 벽의 온도를 재어 셈판에 적고, 영하로 떨어진 토막이 있으면 그날은 굴착 틀을 실은 수레를 그 길로 보내지 않는다. 경계조가 테두리에서 돌아오는 날에는 가산 출입구 하나를 밤새 열어 두고 그 앞에서 기다린다.",
+    "관직": "직함 가산 구간장. 직위 가산 구간장 · 자유도시들. 품계 구간장. 일하는 역 가산디지털단지역."
+  },
+  "values": {
+    "권위": -70,
+    "개방": 30,
+    "무력": -50,
+    "물질": 45,
+    "공동": 10,
+    "원칙": 10,
+    "공개": 30,
+    "자격": 65,
+    "분산": 80,
+    "변혁": 25
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": 40,
+    "위험": -10,
+    "과시": -5,
+    "지속": -10,
+    "지향": "동성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0040",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "진우람",
+        "type": "지휘",
+        "to": "이강묵",
+        "basis": "금천 경계장 이강묵의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "류겨레",
+        "type": "지휘",
+        "to": "진우람",
+        "basis": "가산 구간장 진우람의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K032",
+    "name": "이강묵",
+    "courtId": "court:K032",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K040",
+    "members": [
+      {
+        "personId": "K053",
+        "name": "류겨레"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
-      },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "management": {
-        "base": 11,
-        "effective": 11
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 11,
-        "effective": 11
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k040-medicine-distribution",
-        "name": {
-          "ko": "약재 분배",
-          "en": "Medicine distribution"
-        },
-        "rating": 60
-      },
-      {
-        "id": "k040-filter-clinic-allocation",
-        "name": {
-          "ko": "필터·진료 배분",
-          "en": "Filter and clinic allocation"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k040-care-before-spoils",
-        "name": {
-          "ko": "전리품보다 진료",
-          "en": "Care before spoils"
-        },
-        "description": {
-          "ko": "필터를 쌓아 두는 장교를 피하고 배급이 비면 의무 배식을 연다.",
-          "en": "Avoids filter-hoarding officers and opens medical meals when rations run out."
-        },
-        "behavior": {
-          "ko": "필터를 쌓아 두는 장교를 피하고 배급이 비면 의무 배식을 연다.",
-          "en": "Avoids filter-hoarding officers and opens medical meals when rations run out."
-        },
-        "stress": {
-          "ko": "필터 원단이 동부 보호계약에 묶여 금천 작업반이 탁수와 분진 속에 방치되는 것.",
-          "en": "That filter fabric would be bound to the eastern protection contract, and the Geumcheon work squads would be left in turbid water and dust."
-        },
-        "relationship": {
-          "ko": "임채원의 필터 규격을 진료에 적용하는 사제에 가깝고, 한지온의 배급 솥이 비면 의무 배식을 열며, 최은재의 필터 인증 도장이 떨어지면 출고를 잠근다.",
-          "en": "Near an apprentice applying Im Chaewon's filter standards to care, opening duty meals whenever Han Jion's ration pot ran empty, and locking releases whenever Choi Eunjae's filter certification stamp lapsed."
-        },
-        "effects": []
-      },
-      {
-        "id": "k040-certified-release",
-        "name": {
-          "ko": "인증 뒤 출고",
-          "en": "Release after certification"
-        },
-        "description": {
-          "ko": "인증 도장이 없으면 필터 출고를 잠근다.",
-          "en": "Blocks filter release without certification seals."
-        },
-        "behavior": {
-          "ko": "인증 도장이 없으면 필터 출고를 잠근다.",
-          "en": "Blocks filter release without certification seals."
-        },
-        "stress": {
-          "ko": "필터 원단이 동부 보호계약에 묶여 금천 작업반이 탁수와 분진 속에 방치되는 것.",
-          "en": "That filter fabric would be bound to the eastern protection contract, and the Geumcheon work squads would be left in turbid water and dust."
-        },
-        "relationship": {
-          "ko": "임채원의 필터 규격을 진료에 적용하는 사제에 가깝고, 한지온의 배급 솥이 비면 의무 배식을 열며, 최은재의 필터 인증 도장이 떨어지면 출고를 잠근다.",
-          "en": "Near an apprentice applying Im Chaewon's filter standards to care, opening duty meals whenever Han Jion's ration pot ran empty, and locking releases whenever Choi Eunjae's filter certification stamp lapsed."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "약재 배분과 필터 규격 적용이 확인된다. 분진 기침 관찰을 고난도 수술이나 전문 연구 숙련으로 환산하지 않는다.",
-      "en": "Medicine allocation and applying filter standards are confirmed. Observing dust coughs does not grant advanced surgery or research proficiency."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -427,92 +168,64 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
+  "confirmedHoldings": [
     {
-      "id": "title:duchy-41590-S02",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
+      "id": "holding:v3:section:금천구:가산",
+      "name": {
+        "ko": "가산 구간"
+      },
       "holderPersonId": "K040",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:kingdom-s02",
-      "personalLieges": [],
-      "directOwnership": false
+      "directLiegePersonId": "K032",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "가산디지털단지",
+        "stationName": "가산디지털단지"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1154551000",
+          "name": "가산동"
+        },
+        {
+          "id": "region:1154561000",
+          "name": "독산1동"
+        },
+        {
+          "id": "region:1154567000",
+          "name": "시흥1동"
+        }
+      ],
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
     }
   ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c9c4-d48d-ae30",
-    "name": "풍기 진씨",
-    "crest": "clan-crests/c9c4-d48d-ae30.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -35,
-    "개방": 15,
-    "무력": -40,
-    "물질": 30,
-    "공동": 35,
-    "원칙": 20,
-    "공개": 30,
-    "자격": 45,
-    "분산": 25,
-    "변혁": 15
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": 40,
-    "위험": -10,
-    "과시": -5,
-    "지속": -10,
-    "지향": "동성",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "규격맹",
-    "생업": "공방 진료",
-    "품계": "조합원",
-    "직함": "금천 공방의무원",
-    "업무 위치": "가산동. 진우람은 가산동 공방 진료 당직에서 분진 환자의 방호복 필터 번호를 확인한다. 임채원의 출고표와 최은재의 인증 도장이 맞지 않으면 그 물량을 보류하고, 한지온의 배급솥이 비는 날의 의무 배식 수를 적는다.",
-    "가치관": "권위 −35 | 개방 15 | 무력 −40 | 물질 30 | 공동 35 | 원칙 20 | 공개 30 | 자격 45 | 분산 25 | 변혁 15",
-    "욕망": "갈망 30 | 독점 40 | 위험 −10 | 과시 −5 | 지속 −10 | 지향 동성 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 금천 공방의무원 자리는 가짜 약 봉인으로 열렸다.\n- 업무 위치: 가산동. 진우람은 가산동 공방 진료 당직에서 분진 환자의 방호복 필터 번호를 확인한다. 임채원의 출고표와 최은재의 인증 도장이 맞지 않으면 그 물량을 보류하고, 한지온의 배급솥이 비는 날의 의무 배식 수를 적는다.",
-    "관직": "품계 조합원. 직함은 금천 공방의무원. 진료 인원과 필터 출고를 같은 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다.",
-    "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 금천 공방의무원 자리의 서명이 장부에 올랐다.",
-    "관계": "임채원의 필터 규격을 진료에 적용하는 사제에 가깝고, 한지온의 배급 솥이 비면 의무 배식을 열며, 최은재의 필터 인증 도장이 떨어지면 출고를 잠근다.",
-    "야망": "방호 필터와 공방 진료를 복구복무자의 시민권 조건으로 묶어 규격맹이 군복이 아니어도 숨 쉬게 한다.",
-    "공포": "필터 원단이 동부 보호계약에 묶여 금천 작업반이 탁수와 분진 속에 방치되는 것.",
-    "개입": "대체 원단을 구하거나, 군수 창고에 숨긴 필터를 폭로해 투표의 방향을 바꿀 수 있다."
-  },
-  "biography": "분진 기침을 용접 불꽃보다 먼저 듣고, 방호 필터를 전리품처럼 쌓는 장교를 재앙처럼 피한다. 자비롭지만 공복 상태의 숫자 놀음을 용서하지 않는다.\n\n- 소속: 규격맹\n- 생업: 공방 진료\n- 품계: 조합원\n- 직함: 금천 공방의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 금천 공방의무원 자리는 가짜 약 봉인으로 열렸다.\n- 업무 위치: 가산동. 진우람은 가산동 공방 진료 당직에서 분진 환자의 방호복 필터 번호를 확인한다. 임채원의 출고표와 최은재의 인증 도장이 맞지 않으면 그 물량을 보류하고, 한지온의 배급솥이 비는 날의 의무 배식 수를 적는다.\n\n**관직.** 품계 조합원. 직함은 금천 공방의무원. 진료 인원과 필터 출고를 같은 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 금천 공방의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 임채원의 필터 규격을 진료에 적용하는 사제에 가깝고, 한지온의 배급 솥이 비면 의무 배식을 열며, 최은재의 필터 인증 도장이 떨어지면 출고를 잠근다.\n\n**야망.** 방호 필터와 공방 진료를 복구복무자의 시민권 조건으로 묶어 규격맹이 군복이 아니어도 숨 쉬게 한다.\n\n**공포.** 필터 원단이 동부 보호계약에 묶여 금천 작업반이 탁수와 분진 속에 방치되는 것.\n\n**개입.** 대체 원단을 구하거나, 군수 창고에 숨긴 필터를 폭로해 투표의 방향을 바꿀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 15 | 무력 −40 | 물질 30 | 공동 35 | 원칙 20 | 공개 30 | 자격 45 | 분산 25 | 변혁 15\n- 욕망: 갈망 30 | 독점 40 | 위험 −10 | 과시 −5 | 지속 −10 | 지향 동성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-02"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "진우람",
-        "type": "사제",
-        "to": "임채원",
-        "basis": "임채원의 필터 규격을 진료에 적용하는 사제에 가깝고"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:가산디지털단지",
+      "name": {
+        "ko": "가산디지털단지역"
       },
-      {
-        "from": "진우람",
-        "type": "사제",
-        "to": "한지온",
-        "basis": "한지온의 배급 솥이 비면 의무 배식을 열며"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "제문석",
-        "type": "계약",
-        "to": "진우람",
-        "basis": "진우람의 금천 의무와 환자 이송을 나누고"
-      }
-    ]
-  }
+      "holderPersonId": "K053",
+      "directLiegePersonId": "K040",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "가산디지털단지",
+        "stationName": "가산디지털단지"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1154551000",
+          "name": "가산동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "류겨레",
+      "holderRoute": "/people/person-0053"
+    }
+  ]
 }

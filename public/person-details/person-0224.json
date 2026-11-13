@@ -1,385 +1,133 @@
 {
   "id": "person-0224",
   "name": "오하늘",
-  "title": "채널 길드 편성관",
-  "position": "출자 평의회 서기",
+  "title": "공항시장 오씨네 바람대 대주",
+  "position": "공항시장 오씨네 바람대 대주 · 공항시장역",
   "characterId": "K223",
-  "rank": "평의원",
-  "commonTier": "T4",
-  "occupation": "평의회 발언 순번·시세 정정 기록",
+  "rank": "대주",
+  "commonTier": "T2",
+  "occupation": "바람틀 정비",
   "gender": "남성",
   "stage": "S1",
-  "state": "S09",
-  "stateName": "여의도출자연합회",
-  "sourceRoute": "/world/Cast-State-09#인물-오하늘",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0224",
   "birthDate": "2081-08-02",
   "birthday": "08-02",
   "age": 45,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-09.json#/content/39"
-  ],
-  "familyTree": {
-    "personId": "K223",
-    "nodes": [
-      {
-        "id": "K223",
-        "personId": "K223",
-        "kind": "person",
-        "name": "오하늘",
-        "birthDate": "2081-08-02",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K223"
-          },
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-오하늘-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 출자 평의회 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-오하늘-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0224"
-      },
-      {
-        "id": "FH-K223-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현연",
-        "lineage": {
-          "surname": "오",
-          "bongwan": "해주",
-          "clan": "c624-d574-c8fc"
-        },
-        "birthDate": "2051-08-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-오하늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2089,
-            "summary": "오현연은 대합실 당직에서 평의회 발언 순번·시세 정정 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-오하늘-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K223-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현정",
-        "lineage": {
-          "surname": "오",
-          "bongwan": "해주",
-          "clan": "c624-d574-c8fc"
-        },
-        "birthDate": "2021-08-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-오하늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오현정은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-오하늘-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K223-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현찬",
-        "birthDate": "2051-08-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-오하늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2089,
-            "summary": "임현찬은 대합실 당직에서 평의회 발언 순번·시세 정정 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-오하늘-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K223-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현아",
-        "birthDate": "2021-08-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-오하늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오현아는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-오하늘-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K223-P-01:K223:biological",
-        "from": "FH-K223-P-01",
-        "to": "K223",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-오하늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K223-P-02:FH-K223-P-01:biological",
-        "from": "FH-K223-P-02",
-        "to": "FH-K223-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-오하늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K223-M-01:K223:biological",
-        "from": "FH-K223-M-01",
-        "to": "K223",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-오하늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K223-M-02:FH-K223-M-01:biological",
-        "from": "FH-K223-M-02",
-        "to": "FH-K223-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-오하늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c624-d574-c8fc",
+    "name": "해주 오씨",
+    "crest": "clan-crests/c624-d574-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "김포공항의 옛 격납고에서 떼어 온 가벼운 금속판으로 오하늘네 바람대는 날개를 새로 짜고, 공항시장에 있는 이 오씨네 대의 올해 계약 와트는 강서 바람대 가운데 가장 많다. 그는 남는 전기를 5호선 케이블로 양천에 파는 장을 기지장 이서담과 맺었고, 장마다 몇 킬로를 언제까지 보낼지 한 줄도 비우지 않고 적는다. 개화산의 송재민네와는 다음 바람지기 자리를 놓고 서로 수치를 견주는데, 그는 마흔다섯, 송재민은 마흔넷으로 나이도 한 살 차이다. 오씨네와 송씨네는 둘 다 바람밭 도장 집안이라, 다음 대주회가 열리면 두 대주가 곧 맞수 후보다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "공항시장 오씨네 바람대 대주",
+    "품계": "대주",
+    "생업": "바람틀 정비",
+    "일하는 역": "공항시장역",
+    "잠자는 역": "공항시장역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "김포공항의 옛 격납고에서 떼어 온 가벼운 금속판으로 오하늘네 바람대는 날개를 새로 짜고, 공항시장에 있는 이 오씨네 대의 올해 계약 와트는 강서 바람대 가운데 가장 많다. 그는 남는 전기를 5호선 케이블로 양천에 파는 장을 기지장 이서담과 맺었고, 장마다 몇 킬로를 언제까지 보낼지 한 줄도 비우지 않고 적는다. 개화산의 송재민네와는 다음 바람지기 자리를 놓고 서로 수치를 견주는데, 그는 마흔다섯, 송재민은 마흔넷으로 나이도 한 살 차이다. 오씨네와 송씨네는 둘 다 바람밭 도장 집안이라, 다음 대주회가 열리면 두 대주가 곧 맞수 후보다.",
+    "관직": "직함 공항시장 오씨네 바람대 대주. 직위 공항시장 오씨네 바람대 대주 · 공항시장역. 품계 대주. 일하는 역 공항시장역."
+  },
+  "values": {
+    "권위": -50,
+    "개방": 30,
+    "무력": -40,
+    "물질": -5,
+    "공동": -20,
+    "원칙": 10,
+    "공개": 45,
+    "자격": 25,
+    "분산": 75,
+    "변혁": 5
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": -35,
+    "위험": -5,
+    "과시": -10,
+    "지속": 30,
+    "지향": "양성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0224",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "오하늘",
+        "type": "지휘",
+        "to": "최다인",
+        "basis": "강서 바람지기 최다인의 직속"
+      },
+      {
+        "from": "오하늘",
+        "type": "계약",
+        "to": "이서담",
+        "basis": "강서의 남는 전기를 5호선 케이블로 양천 신정 기지에 보내는 장"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "송재민",
+        "type": "경쟁",
+        "to": "오하늘",
+        "basis": "강서 바람대 가운데 계약 와트 첫째와 둘째를 다툰다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K034",
+    "name": "최다인",
+    "courtId": "court:K034",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 9,
-        "effective": 9
+      "diplomacy": {
+        "base": 5,
+        "effective": 5
       },
-      "strategy": {
-        "base": 9,
-        "effective": 9
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
+      "stewardship": {
         "base": 11,
         "effective": 11
       },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 9,
-        "effective": 9
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
         "base": 8,
         "effective": 8
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "speaking-allocation",
-        "name": {
-          "ko": "발언 시간 배분",
-          "en": "Speaking-time allocation"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "speaking-allocation-disposition",
-        "name": {
-          "ko": "엄격한 순번",
-          "en": "Strict turns"
-        },
-        "description": {
-          "ko": "사교적이지만 초과 발언은 즉시 끊는다.",
-          "en": "Is sociable but cuts off overruns immediately."
-        },
-        "behavior": {
-          "ko": "사교적이지만 초과 발언은 즉시 끊는다.",
-          "en": "Is sociable but cuts off overruns immediately."
-        },
-        "stress": {
-          "ko": "평의회가 보호비에 팔릴 것을 두려워한다.",
-          "en": "Fears the council being sold for protection fees."
-        },
-        "relationship": {
-          "ko": "최지우과 평의회 거부권을 나누고 오해린의 시세를 평의회 시간에 넣는다. 윤서하와 경매 시각을 맞춘다.",
-          "en": "Shares council veto arrangements with Choi Jiwoo, includes O Haerin’s prices and coordinates auction times with Yun Seoha."
-        },
-        "effects": []
-      },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "반론의 같은 길이",
-          "en": "Equal space for dissent"
-        },
-        "description": {
-          "ko": "정정 시세 다음 날 같은 길이의 반대 의견을 붙인다.",
-          "en": "Posts equal-length dissent the day after corrected prices."
-        },
-        "behavior": {
-          "ko": "정정 시세 다음 날 같은 길이의 반대 의견을 붙인다.",
-          "en": "Posts equal-length dissent the day after corrected prices."
-        },
-        "stress": {
-          "ko": "평의회가 광고와 보호비에 팔려 출자 순번이 승자의 시간표가 되는 것.",
-          "en": "Fears the council being sold for protection fees."
-        },
-        "relationship": {
-          "ko": "최지우과 평의회 거부권을 나누고 오해린의 시세를 평의회 시간에 넣는다. 윤서하와 경매 시각을 맞춘다.",
-          "en": "Shares council veto arrangements with Choi Jiwoo, includes O Haerin’s prices and coordinates auction times with Yun Seoha."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "초과 발언을 끊고 가문별 시간을 나눈다. 매수 사건 속에서 교차 감정 시간을 권리로 만들려 한다.",
-      "en": "Cuts overruns and allocates speaking time, seeking appraisal time as a right amid bribery."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,97 +165,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c624-d574-c8fc",
-    "name": "해주 오씨",
-    "crest": "clan-crests/c624-d574-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -15,
-    "개방": 15,
-    "무력": -30,
-    "물질": -20,
-    "공동": 5,
-    "원칙": 20,
-    "공개": 45,
-    "자격": 5,
-    "분산": 20,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": -35,
-    "위험": -5,
-    "과시": -10,
-    "지속": 30,
-    "지향": "양성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "평의회 발언 순번·시세 정정 기록",
-    "소속": "여의도출자연합회",
-    "품계": "평의원",
-    "직함": "출자 평의회 서기",
-    "가치관": "권위 −15 | 개방 15 | 무력 −30 | 물질 −20 | 공동 5 | 원칙 20 | 공개 45 | 자격 5 | 분산 20 | 변혁 −5",
-    "욕망": "갈망 15 | 독점 −35 | 위험 −5 | 과시 −10 | 지속 30 | 지향 양성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2081-08-02 출생으로 승인된 출생군은 3군이다. 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 출자 평의회 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 오하늘은 여의동을 업무동으로 삼아 평의회 발언 순번·시세 정정 기록 업무를 맡는다.",
-    "관직": "품계 평의원. 직함은 출자 평의회 서기. 가문별 발언 시간을 추첨과 감정 점수로 나누고, 단독 정정 시세는 다음 날 같은 길이에 반대 의견을 붙인다.",
-    "일화": "암사가 보호 발표 시간을 두 배로 사려 하자 서기 일부가 수수료를 받고 발언 순번을 팔았다.",
-    "관계": "최지우과 평의회 거부권을 나누고 오해린의 시세를 평의회 시간에 넣는다. 윤서하와 경매 시각을 맞춘다.",
-    "야망": "출자 평의회를 강국 발표의 관문으로 만들어 검열 없는 교차 감정 시간을 고정 권리로 박는다.",
-    "공포": "평의회가 광고와 보호비에 팔려 출자 순번이 승자의 시간표가 되는 것.",
-    "개입": "매수된 순번을 공개하거나, 공동 시간을 평의회에 고정할 수 있다."
-  },
-  "biography": "사교적이고 발언 시간을 나누는 데 가혹하다. 한 출자 가문이 너무 오래 말하면 발언을 그 자리에서 끊는다.\n\n- 생업: 평의회 발언 순번·시세 정정 기록\n- 소속: 여의도출자연합회\n- 품계: 평의원\n- 직함: 출자 평의회 서기\n**생애.** 2081-08-02 출생으로 승인된 출생군은 3군이다. 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 출자 평의회 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 오하늘은 여의동을 업무동으로 삼아 평의회 발언 순번·시세 정정 기록 업무를 맡는다.\n\n**관직.** 품계 평의원. 직함은 출자 평의회 서기. 가문별 발언 시간을 추첨과 감정 점수로 나누고, 단독 정정 시세는 다음 날 같은 길이에 반대 의견을 붙인다.\n\n**일화.** 암사가 보호 발표 시간을 두 배로 사려 하자 서기 일부가 수수료를 받고 발언 순번을 팔았다.\n\n**관계.** 최지우과 평의회 거부권을 나누고 오해린의 시세를 평의회 시간에 넣는다. 윤서하와 경매 시각을 맞춘다.\n\n**야망.** 출자 평의회를 강국 발표의 관문으로 만들어 검열 없는 교차 감정 시간을 고정 권리로 박는다.\n\n**공포.** 평의회가 광고와 보호비에 팔려 출자 순번이 승자의 시간표가 되는 것.\n\n**개입.** 매수된 순번을 공개하거나, 공동 시간을 평의회에 고정할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 15 | 무력 −30 | 물질 −20 | 공동 5 | 원칙 20 | 공개 45 | 자격 5 | 분산 20 | 변혁 −5\n- 욕망: 갈망 15 | 독점 −35 | 위험 −5 | 과시 −10 | 지속 30 | 지향 양성 | 결합 다자",
-  "sources": [
-    "Cast-State-09"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "오하늘",
-        "type": "지휘",
-        "to": "최지우",
-        "basis": "채널 편성 거부권을 나눔"
-      },
-      {
-        "from": "오하늘",
-        "type": "계약",
-        "to": "오해린",
-        "basis": "시세 방송을 길드 시간에 넣음"
-      },
-      {
-        "from": "오하늘",
-        "type": "계약",
-        "to": "윤서하",
-        "basis": "경매 속보 시각을 맞춤"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "소감",
-        "type": "계약",
-        "to": "오하늘",
-        "basis": "오하늘의 편성 통지를 나르고"
-      },
-      {
-        "from": "봉용",
-        "type": "지휘",
-        "to": "오하늘",
-        "basis": "오하늘의 지휘로 칠판을 맡고"
-      },
-      {
-        "from": "단보람",
-        "type": "맹세",
-        "to": "오하늘",
-        "basis": "오하늘의 편성 거부권을 현장에서 집행하고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

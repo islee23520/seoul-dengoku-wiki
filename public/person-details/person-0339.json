@@ -1,385 +1,120 @@
 {
   "id": "person-0339",
   "name": "방미산",
-  "title": "청량리 진료소 거점장, 은채윤의 실무 담당자",
-  "position": "청량리 진료소 거점장, 은채윤의 실무 담당자",
+  "title": "동대문구 구청장",
+  "position": "동대문구 구청장 · 청량리역",
   "characterId": "K338",
-  "rank": "전문의",
+  "rank": "구청장",
   "commonTier": "T2",
-  "occupation": "중증도 표·진료 소견 게시",
+  "occupation": "구 행정",
   "gender": "여성",
   "stage": "S2",
-  "state": "S13",
-  "stateName": "흰십자단",
-  "sourceRoute": "/world/Cast-State-13#인물-방미산",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0339",
   "birthDate": "2084-01-16",
   "birthday": "01-16",
   "age": 42,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-13.json#/content/50"
-  ],
-  "familyTree": {
-    "personId": "K338",
-    "nodes": [
-      {
-        "id": "K338",
-        "personId": "K338",
-        "kind": "person",
-        "name": "방미산",
-        "birthDate": "2084-01-16",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K338"
-          },
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방미산-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 청량리 진료소 전문의 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-방미산-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0339"
-      },
-      {
-        "id": "FH-K338-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "방승민",
-        "lineage": {
-          "surname": "방",
-          "bongwan": "남양",
-          "clan": "bc29-b0a8-c591-623f"
-        },
-        "birthDate": "2054-01-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방미산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2092,
-            "summary": "방승민은 대합실 당직에서 중증도 표·진료 소견 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-방미산-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K338-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "방승원",
-        "lineage": {
-          "surname": "방",
-          "bongwan": "남양",
-          "clan": "bc29-b0a8-c591-623f"
-        },
-        "birthDate": "2024-01-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방미산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "방승원은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-방미산-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K338-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준재",
-        "birthDate": "2054-01-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방미산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2092,
-            "summary": "최준재는 대합실 당직에서 중증도 표·진료 소견 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-방미산-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K338-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준현",
-        "birthDate": "2024-01-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방미산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정준현은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-방미산-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K338-P-01:K338:biological",
-        "from": "FH-K338-P-01",
-        "to": "K338",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방미산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K338-P-02:FH-K338-P-01:biological",
-        "from": "FH-K338-P-02",
-        "to": "FH-K338-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방미산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K338-M-01:K338:biological",
-        "from": "FH-K338-M-01",
-        "to": "K338",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방미산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K338-M-02:FH-K338-M-01:biological",
-        "from": "FH-K338-M-02",
-        "to": "FH-K338-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방미산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bc29-b0a8-c591-623f",
+    "name": "남양 방씨",
+    "crest": "clan-crests/bc29-b0a8-c591-623f.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "청량리역 구청 창구가 문을 여는 시각은 그 역에 기재된 동대문구 구청장 방미산이 정한다. 남양 방씨인 마흔두 살 여성이다. 오서율 의원이 임명해 의원의 도장을 대신 찍고, 구 고시를 내고, 민원 심리를 연다. 연료 장터의 자릿세 가운데 구청 창고로 갈 몫을 셈하는 날이면 구청 서기들과 밤을 넘긴다. 강 건너 물자에 기대지 않고 구를 먹이는 셈법을 지켜 온 것을 그녀는 자기 일의 자랑으로 여긴다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "동대문구 구청장",
+    "품계": "구청장",
+    "생업": "구 행정",
+    "일하는 역": "청량리역",
+    "잠자는 역": "청량리역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "청량리역 구청 창구가 문을 여는 시각은 그 역에 기재된 동대문구 구청장 방미산이 정한다. 남양 방씨인 마흔두 살 여성이다. 오서율 의원이 임명해 의원의 도장을 대신 찍고, 구 고시를 내고, 민원 심리를 연다. 연료 장터의 자릿세 가운데 구청 창고로 갈 몫을 셈하는 날이면 구청 서기들과 밤을 넘긴다. 강 건너 물자에 기대지 않고 구를 먹이는 셈법을 지켜 온 것을 그녀는 자기 일의 자랑으로 여긴다.",
+    "관직": "직함 동대문구 구청장. 직위 동대문구 구청장 · 청량리역. 품계 구청장. 일하는 역 청량리역."
+  },
+  "values": {
+    "권위": 30,
+    "개방": -15,
+    "무력": -25,
+    "물질": -20,
+    "공동": 30,
+    "원칙": 60,
+    "공개": -10,
+    "자격": 40,
+    "분산": -30,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": 35,
+    "위험": 20,
+    "과시": -15,
+    "지속": 35,
+    "지향": "양성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0339",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "방미산",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 10,
         "effective": 10
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 11,
-        "effective": 11
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
       }
     },
-    "skills": [
-      {
-        "id": "triage-bed-allocation",
-        "name": {
-          "ko": "중증도 병상 배정",
-          "en": "Triage bed allocation"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "적도 환자로 본다",
-          "en": "Enemies remain patients"
-        },
-        "description": {
-          "ko": "적의 부상자를 중증도로 받고 임상 판단으로 병상을 연다. 풀린 봉인과 약품 출처 문제의 수습 성공은 미확인이다.",
-          "en": "Enemy casualties enter by severity and beds open on clinical judgment. Successful resolution of the loosened seal and medicine provenance issue remains unconfirmed."
-        },
-        "behavior": {
-          "ko": "적의 부상도 중증도만으로 들이고, 진료소를 전리품 창구로 부르라는 쪽지를 찢는다. 진료 소견 표를 침상 발치에 붙인다. 제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다.",
-          "en": "He took even an enemy's wounded in by severity alone and tore up any note that called the clinic a war-booty window. He pasted the contribution-labor table at the foot of the sickbeds."
-        },
-        "stress": {
-          "ko": "공포. 가짜 해열제가 침상에서 쓰인 뒤 진료소가 보호창고 하청으로 찍히는 것.",
-          "en": "Fear. That after counterfeit febrifuges were used at the sickbeds the clinic would be stamped a protection-warehouse subcontract."
-        },
-        "relationship": {
-          "ko": "관계. 은채윤의 지휘로 병상을 나누고, 방한울의 당직 원장을 문에 붙인다. 백온의 피난민을 중증도 순으로 받는다.",
-          "en": "Relations. Divided the sickbeds under Eun Chaeyun's command and pasted Bang Hanul's duty roster on the door. Received Baek On's refugees in severity order."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 전문의. 직함은 청량리 진료소 전문의. 중증도 표와 진료 소견을 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단을 거친 뒤에만 침상을 연다.",
-          "en": "Office. Rank: supervisor. Title: Cheongnyangni clinic outpost chief, duty officer of Eun Chaeyun. She posted the severity table and contribution labor side by side and opened a sickbed for a priority care request only after it rose to the guild council."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 전문의. 직함은 청량리 진료소 전문의. 중증도 표와 진료 소견을 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단을 거친 뒤에만 침상을 연다.",
-          "en": "Recorded duty and limits: Office. Rank: supervisor. Title: Cheongnyangni clinic outpost chief, duty officer of Eun Chaeyun. She posted the severity table and contribution labor side by side and opened a sickbed for a priority care request only after it rose to the guild council."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 가짜 해열제가 침상에서 쓰인 뒤 진료소가 보호창고 하청으로 찍히는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That after counterfeit febrifuges were used at the sickbeds the clinic would be stamped a protection-warehouse subcontract."
-        },
-        "relationship": {
-          "ko": "관계. 은채윤의 지휘로 병상을 나누고, 방한울의 당직 원장을 문에 붙인다. 백온의 피난민을 중증도 순으로 받는다.",
-          "en": "Relations. Divided the sickbeds under Eun Chaeyun's command and pasted Bang Hanul's duty roster on the door. Received Baek On's refugees in severity order."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "적의 부상자를 중증도로 받고 임상 판단으로 병상을 연다. 풀린 봉인과 약품 출처 문제의 수습 성공은 미확인이다.",
-      "en": "Enemy casualties enter by severity and beds open on clinical judgment. Successful resolution of the loosened seal and medicine provenance issue remains unconfirmed."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,85 +152,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bc29-b0a8-c591-623f",
-    "name": "남양 방씨",
-    "crest": "clan-crests/bc29-b0a8-c591-623f.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -15,
-    "개방": 40,
-    "무력": -60,
-    "물질": -15,
-    "공동": 25,
-    "원칙": 40,
-    "공개": 15,
-    "자격": 25,
-    "분산": 20,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": 35,
-    "위험": 20,
-    "과시": -15,
-    "지속": 35,
-    "지향": "양성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "중증도 표·진료 소견 게시",
-    "소속": "흰십자단",
-    "품계": "전문의",
-    "직함": "청량리 진료소 거점장, 은채윤의 실무 담당자",
-    "가치관": "권위 −15 | 개방 40 | 무력 −60 | 물질 −15 | 공동 25 | 원칙 40 | 공개 15 | 자격 25 | 분산 20 | 변혁 −5",
-    "욕망": "갈망 15 | 독점 35 | 위험 20 | 과시 −15 | 지속 35 | 지향 양성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2084-01-16에 태어났다. 2126년 개막 현재 청량리 진료소 거점장, 은채윤의 실무 담당자 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 교대 무단 결근 대체 당직으로 열렸다.\n- 청량리동의 중증도 표·진료 소견 게시 창구가 방미산의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 전문의. 직함은 청량리 진료소 전문의. 중증도 표와 진료 소견을 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단을 거친 뒤에만 침상을 연다.",
-    "일화": "제조 캡슐이 서울 내부 보호창고 인장과 같다는 증언이 들어온 밤, 진료소 선반의 봉인 끈이 한 줄 풀어져 있었다.",
-    "관계": "은채윤의 지휘로 병상을 나누고, 방한울의 당직 원장을 문에 붙인다. 백온의 피난민을 중증도 순으로 받는다.",
-    "야망": "청량리 진료소를 서울 의료헌장의 현장 본문으로 남겨 무장 당직 책임자의 우선 치료가 문 앞에서 멈추게 하려 한다.",
-    "공포": "가짜 해열제가 침상에서 쓰인 뒤 진료소가 보호창고 하청으로 찍히는 일을 두려워한다.",
-    "개입": "선반 봉인을 복원하거나, 적군 부상자를 숨겨 헌장 위반 누명을 씌울 수 있다."
-  },
-  "biography": "적의 부상도 중증도만으로 들이고, 진료소를 전리품 창구로 부르라는 쪽지를 찢는다. 진료 소견 표를 침상 발치에 붙인다.\n\n- 생업: 중증도 표·진료 소견 게시\n- 소속: 흰십자단\n- 품계: 전문의\n- 직함: 청량리 진료소 거점장, 은채윤의 실무 담당자\n**생애.** 2084-01-16에 태어났다. 2126년 개막 현재 청량리 진료소 거점장, 은채윤의 실무 담당자 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 교대 무단 결근 대체 당직으로 열렸다.\n- 청량리동의 중증도 표·진료 소견 게시 창구가 방미산의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 전문의. 직함은 청량리 진료소 전문의. 중증도 표와 진료 소견을 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단을 거친 뒤에만 침상을 연다.\n\n**일화.** 제조 캡슐이 서울 내부 보호창고 인장과 같다는 증언이 들어온 밤, 진료소 선반의 봉인 끈이 한 줄 풀어져 있었다.\n\n**관계.** 은채윤의 지휘로 병상을 나누고, 방한울의 당직 원장을 문에 붙인다. 백온의 피난민을 중증도 순으로 받는다.\n\n**야망.** 청량리 진료소를 서울 의료헌장의 현장 본문으로 남겨 무장 당직 책임자의 우선 치료가 문 앞에서 멈추게 하려 한다.\n\n**공포.** 가짜 해열제가 침상에서 쓰인 뒤 진료소가 보호창고 하청으로 찍히는 일을 두려워한다.\n\n**개입.** 선반 봉인을 복원하거나, 적군 부상자를 숨겨 헌장 위반 누명을 씌울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 40 | 무력 −60 | 물질 −15 | 공동 25 | 원칙 40 | 공개 15 | 자격 25 | 분산 20 | 변혁 −5\n- 욕망: 갈망 15 | 독점 35 | 위험 20 | 과시 −15 | 지속 35 | 지향 양성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-13"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "방미산",
-        "type": "지휘",
-        "to": "은채윤",
-        "basis": "은채윤의 지휘로 병상을 나누고"
-      },
-      {
-        "from": "방미산",
-        "type": "계약",
-        "to": "방한울",
-        "basis": "방한울의 당직 원장을 문에 붙인다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "방한울",
-        "type": "사제",
-        "to": "방미산",
-        "basis": "방미산의 진료소 병상을 나눈다"
-      },
-      {
-        "from": "매하루",
-        "type": "계약",
-        "to": "방미산",
-        "basis": "방미산의 진료소 봉인 끈을 함께 본다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

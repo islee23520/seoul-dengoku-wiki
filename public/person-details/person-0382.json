@@ -1,494 +1,120 @@
 {
   "id": "person-0382",
   "name": "방늘재",
-  "title": "잠실 집결 의무소 거점 의무원",
-  "position": "명동역 구휼 의무 부제",
+  "title": "디지털미디어시티역 역장",
+  "position": "디지털미디어시티역 역장 · 정부",
   "characterId": "K381",
-  "rank": "부제",
+  "rank": "역장",
   "commonTier": "T4",
-  "occupation": "구휼 의무 지원·선거 보좌",
+  "occupation": "역 행정",
   "gender": "여성",
   "stage": "S2",
-  "state": "S15",
-  "stateName": "명동대교구",
-  "sourceRoute": "/world/Cast-State-15#인물-방늘재",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0382",
   "birthDate": "2089-04-30",
   "birthday": "04-30",
   "age": 37,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-15.json#/content/126",
-    "lore/characters/Cast-State-15.json#/content/127",
-    "lore/characters/Cast-State-15.json#/content/128"
-  ],
-  "familyTree": {
-    "personId": "K381",
-    "nodes": [
-      {
-        "id": "K381",
-        "personId": "K381",
-        "kind": "person",
-        "name": "방늘재",
-        "birthDate": "2089-04-30",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K381"
-          },
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방늘재-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 명동역 교구청에서 명동역 구휼 의무 부제 일을 맡았다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-방늘재-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0382"
-      },
-      {
-        "id": "FH-K381-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "방승윤",
-        "lineage": {
-          "surname": "방",
-          "bongwan": "온양",
-          "clan": "bc29-c628-c591"
-        },
-        "birthDate": "2059-04-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방늘재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "방승윤은 제기동 의무소에서 구휼 의무 지원·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-방늘재-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K381-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "방승우",
-        "lineage": {
-          "surname": "방",
-          "bongwan": "온양",
-          "clan": "bc29-c628-c591"
-        },
-        "birthDate": "2029-04-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방늘재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "방승우는 제기동 의무소에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-방늘재-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K381-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "방승경",
-        "lineage": {
-          "surname": "방",
-          "bongwan": "온양",
-          "clan": "bc29-c628-c591"
-        },
-        "birthDate": "1999-04-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방늘재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "방승경은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-방늘재-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K381-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "송준우",
-        "birthDate": "2059-04-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방늘재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "송준우는 제기동 의무소에서 구휼 의무 지원·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-방늘재-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K381-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "조준정",
-        "birthDate": "2029-04-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방늘재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "조준정은 제기동 의무소에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-방늘재-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K381-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "김준규",
-        "birthDate": "1999-04-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방늘재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "김준규는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-방늘재-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K381-P-01:K381:biological",
-        "from": "FH-K381-P-01",
-        "to": "K381",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방늘재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K381-P-02:FH-K381-P-01:biological",
-        "from": "FH-K381-P-02",
-        "to": "FH-K381-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방늘재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K381-P-03:FH-K381-P-02:biological",
-        "from": "FH-K381-P-03",
-        "to": "FH-K381-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방늘재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K381-M-01:K381:biological",
-        "from": "FH-K381-M-01",
-        "to": "K381",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방늘재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K381-M-02:FH-K381-M-01:biological",
-        "from": "FH-K381-M-02",
-        "to": "FH-K381-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방늘재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K381-M-03:FH-K381-M-02:biological",
-        "from": "FH-K381-M-03",
-        "to": "FH-K381-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방늘재-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bc29-c628-c591",
+    "name": "온양 방씨",
+    "crest": "clan-crests/bc29-c628-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "장부에는 마포구 상암동 디지털미디어시티역 역장, 온양 방씨, 서른일곱으로 올라 있다. 세 노선이 만나는 이 역의 지상 출입구는 다리 끝 초소로 가는 길목이라 눈보라가 먼저 닿고, 사이렌을 울려 지상 작업을 멈추게 하는 것이 방늘재의 몫이다. 지난겨울 그는 고물 채집조 하나가 아직 지상에 있는데도 사이렌을 울렸고, 그 조가 계단을 다 내려온 것은 사십 분 뒤였다. 그 뒤로 채집조 조장들은 지상에 오르기 전에 역장 사무소에 들러 돌아올 시각을 적고 간다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "디지털미디어시티역 역장",
+    "품계": "역장",
+    "생업": "역 행정",
+    "일하는 역": "디지털미디어시티역",
+    "잠자는 역": "디지털미디어시티역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "장부에는 마포구 상암동 디지털미디어시티역 역장, 온양 방씨, 서른일곱으로 올라 있다. 세 노선이 만나는 이 역의 지상 출입구는 다리 끝 초소로 가는 길목이라 눈보라가 먼저 닿고, 사이렌을 울려 지상 작업을 멈추게 하는 것이 방늘재의 몫이다. 지난겨울 그는 고물 채집조 하나가 아직 지상에 있는데도 사이렌을 울렸고, 그 조가 계단을 다 내려온 것은 사십 분 뒤였다. 그 뒤로 채집조 조장들은 지상에 오르기 전에 역장 사무소에 들러 돌아올 시각을 적고 간다.",
+    "관직": "직함 디지털미디어시티역 역장. 직위 디지털미디어시티역 역장 · 정부. 품계 역장. 일하는 역 디지털미디어시티역."
+  },
+  "values": {
+    "권위": 45,
+    "개방": -15,
+    "무력": 5,
+    "물질": 35,
+    "공동": -10,
+    "원칙": -10,
+    "공개": -45,
+    "자격": 10,
+    "분산": -45,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": -5,
+    "독점": 10,
+    "위험": -25,
+    "과시": -15,
+    "지속": 5,
+    "지향": "유동",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0382",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "방늘재",
+        "type": "지휘",
+        "to": "모봉",
+        "basis": "상암동 동장 모봉의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K252",
+    "name": "모봉",
+    "courtId": "court:K252",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
-      },
-      "strategy": {
-        "base": 6,
-        "effective": 6
-      },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
       "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
         "base": 6,
         "effective": 6
-      }
-    },
-    "skills": [
-      {
-        "id": "bed-allocation",
-        "name": {
-          "ko": "침상 배분",
-          "en": "Bed allocation"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "돌봄 창구 유지",
-          "en": "Keeps care accessible"
-        },
-        "description": {
-          "ko": "진료 중단 요구에도 의무막을 유지하고 임시 침상을 준다. 확인된 것은 지원과 물자 조정이지 전문 진단 성과가 아니다.",
-          "en": "Keeps the medical tent open despite suspension demands and provides temporary beds. Evidence supports aid and supply coordination, not diagnostic mastery."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 돌봄 창구 유지을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "중단 요구가 오면 기존 침상을 지키는 데 집중할 수 있다.",
-          "en": "May focus on preserving existing beds under suspension demands."
-        },
-        "relationship": {
-          "ko": "전나경과 침상을 나누고 선다솜의 의료 물자를 맞춘다.",
-          "en": "Coordinates beds with Jeon Nagyeong and medical supplies with Seon Dasom."
-        },
-        "effects": []
       },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "전나경과 침상을 나누고 선다솜의 의료 물자를 맞춘다.",
-          "en": "Coordinates beds with Jeon Nagyeong and medical supplies with Seon Dasom."
-        },
-        "effects": []
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "진료 중단 요구에도 의무막을 유지하고 임시 침상을 준다. 확인된 것은 지원과 물자 조정이지 전문 진단 성과가 아니다.",
-      "en": "Keeps the medical tent open despite suspension demands and provides temporary beds. Evidence supports aid and supply coordination, not diagnostic mastery."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -526,85 +152,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bc29-c628-c591",
-    "name": "온양 방씨",
-    "crest": "clan-crests/bc29-c628-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 0,
-    "개방": 40,
-    "무력": -30,
-    "물질": 40,
-    "공동": -15,
-    "원칙": -30,
-    "공개": -20,
-    "자격": -5,
-    "분산": 5,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": -5,
-    "독점": 10,
-    "위험": -25,
-    "과시": -15,
-    "지속": 5,
-    "지향": "유동",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "구휼 의무 지원·선거 보좌",
-    "소속": "명동대교구 (명동역)",
-    "품계": "부제",
-    "직함": "명동역 구휼 의무 부제",
-    "가치관": "권위 0 | 개방 40 | 무력 −30 | 물질 40 | 공동 −15 | 원칙 −30 | 공개 −20 | 자격 −5 | 분산 5 | 변혁 5",
-    "욕망": "갈망 −5 | 독점 10 | 위험 −25 | 과시 −15 | 지속 5 | 지향 유동 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2089-04-30에 태어난 방늘재는 영구 겨울의 명동역 교구청에서 명동역 구휼 의무 부제 일을 맡는다. 구휼 의무 지원·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 방늘재는 명동 행정동의 명동역 교구청에서 명동역 구휼 의무 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 부제. 직함은 명동역 구휼 의무 부제. 구휼 의무 지원·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
-    "일화": "가격 폭등 주간에 비상 배급줄이 잠실 집결지를 메우자 상인회의가 진료 중단을 요구했고 방늘재는 광장 의무막을 내리지 않았다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.",
-    "관계": "전나경의 비상 배급줄과 침상을 나누고, 선다솜의 의료 거점과 물자를 맞춘다. 백온의 남하 가족에게 임시 침상을 준다.",
-    "야망": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-    "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-    "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
-  },
-  "biography": "방늘재는 명동역 구휼 의무 부제 업무에서 구휼 의무 지원·선거 보좌 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 구휼 의무 지원·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 명동역 구휼 의무 부제\n**생애.** 2089-04-30에 태어난 방늘재는 영구 겨울의 명동역 교구청에서 명동역 구휼 의무 부제 일을 맡는다. 구휼 의무 지원·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 방늘재는 명동 행정동의 명동역 교구청에서 명동역 구휼 의무 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 부제. 직함은 명동역 구휼 의무 부제. 구휼 의무 지원·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 가격 폭등 주간에 비상 배급줄이 잠실 집결지를 메우자 상인회의가 진료 중단을 요구했고 방늘재는 광장 의무막을 내리지 않았다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.\n\n**관계.** 전나경의 비상 배급줄과 침상을 나누고, 선다솜의 의료 거점과 물자를 맞춘다. 백온의 남하 가족에게 임시 침상을 준다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 40 | 무력 −30 | 물질 40 | 공동 −15 | 원칙 −30 | 공개 −20 | 자격 −5 | 분산 5 | 변혁 5\n- 욕망: 갈망 −5 | 독점 10 | 위험 −25 | 과시 −15 | 지속 5 | 지향 유동 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-15"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "방늘재",
-        "type": "계약",
-        "to": "전나경",
-        "basis": "전나경의 비상 배급줄과 침상을 나누고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:디지털미디어시티",
+      "name": {
+        "ko": "디지털미디어시티역"
       },
-      {
-        "from": "방늘재",
-        "type": "계약",
-        "to": "선다솜",
-        "basis": "선다솜의 의료 거점과 물자를 맞춘다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "동미온",
-        "type": "계약",
-        "to": "방늘재",
-        "basis": "방늘재의 시장 추에 입하 무게를 겹친다"
+      "holderPersonId": "K381",
+      "directLiegePersonId": "K252",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "디지털미디어시티",
+        "stationName": "디지털미디어시티"
       },
-      {
-        "from": "천솔빛",
-        "type": "지휘",
-        "to": "방늘재",
-        "basis": "방늘재의 진료 막과 대기열을 나눈다"
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1144074000",
+          "name": "상암동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

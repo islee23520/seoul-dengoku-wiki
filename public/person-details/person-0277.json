@@ -1,514 +1,156 @@
 {
   "id": "person-0277",
   "name": "황노을",
-  "title": "철재 회수 작업반장",
-  "position": "성하전자 철재 회수 작업반장",
+  "title": "수서역 정비장",
+  "position": "수서역 정비장 · 아크",
   "characterId": "K276",
-  "rank": "사원",
-  "commonTier": "T5",
-  "occupation": "철재 회수 중량·출고 검증",
+  "rank": "정비장",
+  "commonTier": "T4",
+  "occupation": "정비대 통솔",
   "gender": "남성",
   "stage": "S1",
-  "state": "S11",
-  "stateName": "성하그룹",
-  "sourceRoute": "/world/Cast-State-11#인물-황노을",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0277",
   "birthDate": "2097-05-10",
   "birthday": "05-10",
   "age": 29,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-11.json#/content/72"
-  ],
-  "familyTree": {
-    "personId": "K276",
-    "nodes": [
-      {
-        "id": "K276",
-        "personId": "K276",
-        "kind": "person",
-        "name": "황노을",
-        "birthDate": "2097-05-10",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K276"
-          },
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-황노을-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 성하전자 철재 회수 작업반장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-황노을-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0277"
-      },
-      {
-        "id": "FH-K276-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "황승윤",
-        "lineage": {
-          "surname": "황",
-          "bongwan": "회덕",
-          "clan": "d669-d68c-b355-9ec3"
-        },
-        "birthDate": "2067-05-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-황노을-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "황승윤은 대합실 당직에서 철재 회수 중량·출고 검증 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-황노을-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K276-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "황승우",
-        "lineage": {
-          "surname": "황",
-          "bongwan": "회덕",
-          "clan": "d669-d68c-b355-9ec3"
-        },
-        "birthDate": "2037-05-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-황노을-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "황승우는 대합실 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-황노을-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K276-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "황승경",
-        "lineage": {
-          "surname": "황",
-          "bongwan": "회덕",
-          "clan": "d669-d68c-b355-9ec3"
-        },
-        "birthDate": "2007-05-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-황노을-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "황승경은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-황노을-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K276-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준석",
-        "birthDate": "2067-05-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-황노을-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "박준석은 대합실 당직에서 철재 회수 중량·출고 검증 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-황노을-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K276-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이현도",
-        "birthDate": "2037-05-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-황노을-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "이현도는 대합실 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-황노을-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K276-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준원",
-        "birthDate": "2007-05-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-황노을-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최준원은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-황노을-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K276-P-01:K276:biological",
-        "from": "FH-K276-P-01",
-        "to": "K276",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-황노을-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K276-P-02:FH-K276-P-01:biological",
-        "from": "FH-K276-P-02",
-        "to": "FH-K276-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-황노을-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K276-P-03:FH-K276-P-02:biological",
-        "from": "FH-K276-P-03",
-        "to": "FH-K276-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-황노을-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K276-M-01:K276:biological",
-        "from": "FH-K276-M-01",
-        "to": "K276",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-황노을-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K276-M-02:FH-K276-M-01:biological",
-        "from": "FH-K276-M-02",
-        "to": "FH-K276-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-황노을-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K276-M-03:FH-K276-M-02:biological",
-        "from": "FH-K276-M-03",
-        "to": "FH-K276-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-황노을-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d669-d68c-b355-9ec3",
+    "name": "회덕 황씨",
+    "crest": "clan-crests/d669-d68c-b355-9ec3.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "스물두 살 때 옛 차량기지에서 쇠붙이를 건지던 황노을은 무너진 선반 밑에서 몸 세 곳을 잃었고, 그때 수서역 정비장이던 은보람이 그 자리마다 부위를 맞춰 주었다. 그 뒤 은보람의 정비대에 들어 연장을 익혔고, 넷째 부위를 받은 해에 강남 곁집이 은보람을 호위장으로 고르자 스물아홉 살에 수서 정비대를 물려받았다. 옛 차량기지 부품 창고에서 나온 것은 지금도 그가 먼저 가려 쓴 뒤에야 다른 정비대로 간다. 세 부위의 정비 차례를 아직 다 갚지 못했다고 여겨, 은보람이 터널 입구에서 돌아오는 날이면 그 토시부터 손본다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "수서역 정비장",
+    "품계": "정비장",
+    "생업": "정비대 통솔",
+    "일하는 역": "수서역",
+    "잠자는 역": "수서역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 4
+  },
+  "sections": {
+    "생애": "스물두 살 때 옛 차량기지에서 쇠붙이를 건지던 황노을은 무너진 선반 밑에서 몸 세 곳을 잃었고, 그때 수서역 정비장이던 은보람이 그 자리마다 부위를 맞춰 주었다. 그 뒤 은보람의 정비대에 들어 연장을 익혔고, 넷째 부위를 받은 해에 강남 곁집이 은보람을 호위장으로 고르자 스물아홉 살에 수서 정비대를 물려받았다. 옛 차량기지 부품 창고에서 나온 것은 지금도 그가 먼저 가려 쓴 뒤에야 다른 정비대로 간다. 세 부위의 정비 차례를 아직 다 갚지 못했다고 여겨, 은보람이 터널 입구에서 돌아오는 날이면 그 토시부터 손본다.",
+    "관직": "직함 수서역 정비장. 직위 수서역 정비장 · 아크. 품계 정비장. 일하는 역 수서역."
+  },
+  "values": {
+    "권위": 35,
+    "개방": -35,
+    "무력": 10,
+    "물질": -15,
+    "공동": 45,
+    "원칙": 5,
+    "공개": -45,
+    "자격": 35,
+    "분산": -25,
+    "변혁": 25
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": 30,
+    "위험": 15,
+    "과시": 10,
+    "지속": -15,
+    "지향": "유동",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0277",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "황노을",
+        "type": "지휘",
+        "to": "박진솔",
+        "basis": "수서동 대피소장 박진솔의 직속"
+      },
+      {
+        "from": "황노을",
+        "type": "빚",
+        "to": "은보람",
+        "basis": "은보람이 맞춰 준 세 부위의 정비 차례를 아직 다 갚지 못했다고 여긴다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "은보람",
+        "type": "스승과 제자",
+        "to": "황노을",
+        "basis": "수서 정비대를 물려주기 전에 황노을에게 정비대의 연장을 가르쳤다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K063",
+    "name": "박진솔",
+    "courtId": "court:K063",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 8,
-        "effective": 8
-      },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "intrigue": {
         "base": 7,
         "effective": 7
-      }
-    },
-    "skills": [
-      {
-        "id": "k276-recovered-inventory-management",
-        "name": {
-          "ko": "회수 재고 관리",
-          "en": "Recovered inventory management"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k276-priority",
-        "name": {
-          "ko": "재고의 공적 기준",
-          "en": "Public inventory standards"
-        },
-        "description": {
-          "ko": "황노을은 공개 저울과 재고 보고로 시험 철재를 따로 둔다. 공급 조건 거래는 확인되지만 광역 자원 장악으로 확대하지 않는다.",
-          "en": "Hwang Noeul uses public scales and inventory reports to reserve trial metal. Supply bargaining is documented, not control over regional resources."
-        },
-        "behavior": {
-          "ko": "회수 중량을 공개 저울에 올리고, 이씨 가문 전용 칸으로 들어간 철재는 회장실 인준 전 출고를 막는다.",
-          "en": "Office. Rank: assistant manager. Title: steel salvage work squad leader. He put salvage tonnage on the public scales and blocked the release of any steel that had entered a house-only column before the seniority council's ratification."
-        },
-        "stress": {
-          "ko": "회수 철재가 군수 전용으로 빠져 민생 열차가 영영 멈추는 것.",
-          "en": "Fear. That salvage steel would leave as munitions-only and the civil trains would stop forever."
-        },
-        "relationship": {
-          "ko": "이홍원에게 재고를 보고하고 신가온에게 차륜 공급 조건을 거래한다. 조우찬의 시험 차륜에 쓸 철재를 우선 떼어 둔다.",
-          "en": "Relations. Reported inventory to I Hongwon and traded the wheel supply terms with Shin Gaon. Set aside the steel for Jo Woochan's trial wheels first."
-        },
-        "effects": []
       },
-      {
-        "id": "k276-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 사원. 직함은 성하전자 철재 회수 작업반장. 회수 중량을 공개 저울에 올리고, 이씨 가문 전용 칸으로 들어간 철재는 회장실 인준 전 출고를 막는다.",
-          "en": "Office. Rank: assistant manager. Title: steel salvage work squad leader. He put salvage tonnage on the public scales and blocked the release of any steel that had entered a house-only column before the seniority council's ratification."
-        },
-        "stress": {
-          "ko": "공포. 회수 철재가 군수 전용으로 빠져 민생 열차가 영영 멈추는 것.",
-          "en": "Fear. That salvage steel would leave as munitions-only and the civil trains would stop forever."
-        },
-        "relationship": {
-          "ko": "관계. 이홍원에게 재고를 보고하고 신가온에게 차륜 공급 조건을 거래한다. 조우찬의 시험 차륜에 쓸 철재를 우선 떼어 둔다.",
-          "en": "Relations. Reported inventory to I Hongwon and traded the wheel supply terms with Shin Gaon. Set aside the steel for Jo Woochan's trial wheels first."
-        },
-        "effects": []
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "황노을은 공개 저울과 재고 보고로 시험 철재를 따로 둔다. 공급 조건 거래는 확인되지만 광역 자원 장악으로 확대하지 않는다.",
-      "en": "Hwang Noeul uses public scales and inventory reports to reserve trial metal. Supply bargaining is documented, not control over regional resources."
     },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "head",
@@ -524,91 +166,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d669-d68c-b355-9ec3",
-    "name": "회덕 황씨",
-    "crest": "clan-crests/d669-d68c-b355-9ec3.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 10,
-    "개방": -20,
-    "무력": 0,
-    "물질": 35,
-    "공동": 25,
-    "원칙": 15,
-    "공개": 0,
-    "자격": 70,
-    "분산": 5,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": 30,
-    "위험": 15,
-    "과시": 10,
-    "지속": -15,
-    "지향": "유동",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "철재 회수 중량·출고 검증",
-    "소속": "성하그룹",
-    "품계": "사원",
-    "직함": "성하전자 철재 회수 작업반장",
-    "가치관": "권위 10 | 개방 −20 | 무력 0 | 물질 35 | 공동 25 | 원칙 15 | 공개 0 | 자격 70 | 분산 5 | 변혁 −20",
-    "욕망": "갈망 0 | 독점 30 | 위험 15 | 과시 10 | 지속 −15 | 지향 유동 | 결합 없음"
-  },
-  "sections": {
-    "생애": "대합실 당직에서 자랐다. 성하전자 철재 회수 작업반장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 황노을은 역삼1동에서 철재 회수 중량·출고 검증 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 이홍원에게 재고를 보고하고 신가온에게 차륜 공급 조건을 거래한다. 조우찬의 시험 차륜에 쓸 철재를 우선 떼어 둔다",
-    "관직": "품계 사원. 직함은 성하전자 철재 회수 작업반장. 회수 중량을 공개 저울에 올리고, 이씨 가문 전용 칸으로 들어간 철재는 회장실 인준 전 출고를 막는다.",
-    "일화": "결함 베어링과 같은 로트의 철재가 용산 창고 쪽으로 빠졌다는 중량 기록이 나왔다.",
-    "관계": "이홍원에게 재고를 보고하고 신가온에게 차륜 공급 조건을 거래한다. 조우찬의 시험 차륜에 쓸 철재를 우선 떼어 둔다.",
-    "야망": "차륜·제동 철재를 성하전자 표준 재고로 묶어 특정 작업 조가 부품을 볼모로 후계를 흔들지 못하게 한다.",
-    "공포": "회수 철재가 군수 전용으로 빠져 민생 열차가 영영 멈추는 것.",
-    "개입": "철재 로트를 회수하거나, 가문 쪽 출고를 회장실에서 정지시킬 수 있다."
-  },
-  "biography": "실리적이나 고철을 숨기는 사람을 가혹하게 다룬다. 무게를 속이는 일은 선로를 깎는 일과 같다고 본다.\n\n- 생업: 철재 회수 중량·출고 검증\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 철재 회수 작업반장\n**생애.** 대합실 당직에서 자랐다. 성하전자 철재 회수 작업반장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 황노을은 역삼1동에서 철재 회수 중량·출고 검증 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 이홍원에게 재고를 보고하고 신가온에게 차륜 공급 조건을 거래한다. 조우찬의 시험 차륜에 쓸 철재를 우선 떼어 둔다\n\n**관직.** 품계 사원. 직함은 성하전자 철재 회수 작업반장. 회수 중량을 공개 저울에 올리고, 이씨 가문 전용 칸으로 들어간 철재는 회장실 인준 전 출고를 막는다.\n\n**일화.** 결함 베어링과 같은 로트의 철재가 용산 창고 쪽으로 빠졌다는 중량 기록이 나왔다.\n\n**관계.** 이홍원에게 재고를 보고하고 신가온에게 차륜 공급 조건을 거래한다. 조우찬의 시험 차륜에 쓸 철재를 우선 떼어 둔다.\n\n**야망.** 차륜·제동 철재를 성하전자 표준 재고로 묶어 특정 작업 조가 부품을 볼모로 후계를 흔들지 못하게 한다.\n\n**공포.** 회수 철재가 군수 전용으로 빠져 민생 열차가 영영 멈추는 것.\n\n**개입.** 철재 로트를 회수하거나, 가문 쪽 출고를 회장실에서 정지시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −20 | 무력 0 | 물질 35 | 공동 25 | 원칙 15 | 공개 0 | 자격 70 | 분산 5 | 변혁 −20\n- 욕망: 갈망 0 | 독점 30 | 위험 15 | 과시 10 | 지속 −15 | 지향 유동 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-11"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "황노을",
-        "type": "지휘",
-        "to": "이홍원",
-        "basis": "철재 재고를 회장에게 보고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:수서",
+      "name": {
+        "ko": "수서역"
       },
-      {
-        "from": "황노을",
-        "type": "계약",
-        "to": "알렉산더 밀러",
-        "basis": "차륜 공급 조건을 선로 가문과 거래"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "모소",
-        "type": "계약",
-        "to": "황노을",
-        "basis": "황노을의 회수 저울과 출고를 맞추고"
+      "holderPersonId": "K276",
+      "directLiegePersonId": "K063",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "수서",
+        "stationName": "수서"
       },
-      {
-        "from": "봉국",
-        "type": "지휘",
-        "to": "황노을",
-        "basis": "황노을의 지휘로 저울을 지키고"
-      },
-      {
-        "from": "순하준",
-        "type": "맹세",
-        "to": "황노을",
-        "basis": "황노을의 회수 저울에 협약 중량을 겹치고"
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1168075000",
+          "name": "수서동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

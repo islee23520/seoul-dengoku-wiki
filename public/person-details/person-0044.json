@@ -1,493 +1,146 @@
 {
   "id": "person-0044",
   "name": "제하온",
-  "title": "숙련점수 원장 기록관",
-  "position": "숙련점수 원장 기록관",
+  "title": "노량진 구간장",
+  "position": "노량진 구간장 · 자유도시들",
   "characterId": "K044",
-  "rank": "",
+  "rank": "구간장",
   "commonTier": "T3",
-  "occupation": "숙련점수 기록",
+  "occupation": "구간 운영",
   "gender": "여성",
   "stage": "S2",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-제하온",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0044",
   "birthDate": "2095-09-03",
   "birthday": "09-03",
   "age": 31,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/192",
-    "lore/characters/Cast-State-02.json#/content/194"
-  ],
-  "familyTree": {
-    "personId": "K044",
-    "nodes": [
-      {
-        "id": "K044",
-        "personId": "K044",
-        "kind": "person",
-        "name": "제하온",
-        "birthDate": "2095-09-03",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K044"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제하온-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 숙련점수 원장 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-제하온-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0044"
-      },
-      {
-        "id": "FH-K044-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "제승민",
-        "lineage": {
-          "surname": "제",
-          "bongwan": "칠원",
-          "clan": "c81c-ce60-c6d0-agreed-c628-second"
-        },
-        "birthDate": "2065-09-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제하온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2103,
-            "summary": "제승민은 서울역 등기소에서 숙련점수 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-제하온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K044-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "제승원",
-        "lineage": {
-          "surname": "제",
-          "bongwan": "칠원",
-          "clan": "c81c-ce60-c6d0-agreed-c628-second"
-        },
-        "birthDate": "2035-09-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제하온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "제승원은 서울역 등기소에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-제하온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K044-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "제승진",
-        "lineage": {
-          "surname": "제",
-          "bongwan": "칠원",
-          "clan": "c81c-ce60-c6d0-agreed-c628-second"
-        },
-        "birthDate": "2005-09-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제하온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "제승진은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-제하온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K044-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오승영",
-        "birthDate": "2065-09-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제하온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2103,
-            "summary": "오승영은 서울역 등기소에서 숙련점수 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-제하온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K044-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "송승우",
-        "birthDate": "2035-09-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제하온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "송승우는 서울역 등기소에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-제하온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K044-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "조승윤",
-        "birthDate": "2005-09-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제하온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조승윤은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-제하온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K044-P-01:K044:biological",
-        "from": "FH-K044-P-01",
-        "to": "K044",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제하온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K044-P-02:FH-K044-P-01:biological",
-        "from": "FH-K044-P-02",
-        "to": "FH-K044-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제하온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K044-P-03:FH-K044-P-02:biological",
-        "from": "FH-K044-P-03",
-        "to": "FH-K044-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제하온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K044-M-01:K044:biological",
-        "from": "FH-K044-M-01",
-        "to": "K044",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제하온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K044-M-02:FH-K044-M-01:biological",
-        "from": "FH-K044-M-02",
-        "to": "FH-K044-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제하온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K044-M-03:FH-K044-M-02:biological",
-        "from": "FH-K044-M-03",
-        "to": "FH-K044-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제하온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c81c-ce60-c6d0",
+    "name": "칠원 제씨",
+    "crest": "clan-crests/c81c-ce60-c6d0.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "1호선과 4호선 다리, 9호선이 아크로 넘어가는 동작 건널목이 모두 노량진에서 동작까지 강가 네 역 안에 있고, 그 네 역이 제하온의 구간이다. 그는 하루에 다리 끝을 지나는 썰매 수와 짐 무게를 세어 나루지기에게 올리고, 그 수가 통행 몫의 바탕이 된다. 그는 서른한 살이고, 같은 칠원 제씨 집안의 제문석이 사당 구간장이다. '온' 항렬을 함께 쓰는 친척 제라온은 아크에 산다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "노량진 구간장",
+    "품계": "구간장",
+    "생업": "구간 운영",
+    "일하는 역": "노량진역",
+    "잠자는 역": "노량진역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "1호선과 4호선 다리, 9호선이 아크로 넘어가는 동작 건널목이 모두 노량진에서 동작까지 강가 네 역 안에 있고, 그 네 역이 제하온의 구간이다. 그는 하루에 다리 끝을 지나는 썰매 수와 짐 무게를 세어 나루지기에게 올리고, 그 수가 통행 몫의 바탕이 된다. 그는 서른한 살이고, 같은 칠원 제씨 집안의 제문석이 사당 구간장이다. '온' 항렬을 함께 쓰는 친척 제라온은 아크에 산다.",
+    "관직": "직함 노량진 구간장. 직위 노량진 구간장 · 자유도시들. 품계 구간장. 일하는 역 노량진역."
+  },
+  "values": {
+    "권위": -55,
+    "개방": 30,
+    "무력": -30,
+    "물질": 55,
+    "공동": 20,
+    "원칙": 25,
+    "공개": 30,
+    "자격": 70,
+    "분산": 70,
+    "변혁": 40
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": -35,
+    "위험": -10,
+    "과시": 0,
+    "지속": -20,
+    "지향": "유동",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0044",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "제하온",
+        "type": "지휘",
+        "to": "최지우",
+        "basis": "동작 나루지기 최지우의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "고늘결",
+        "type": "지휘",
+        "to": "제하온",
+        "basis": "노량진 구간장 제하온의 직속"
+      },
+      {
+        "from": "단보람",
+        "type": "지휘",
+        "to": "제하온",
+        "basis": "노량진 구간장 제하온의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K219",
+    "name": "최지우",
+    "courtId": "court:K219",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K044",
+    "members": [
+      {
+        "personId": "person-0022",
+        "name": "고늘결"
+      },
+      {
+        "personId": "K240",
+        "name": "단보람"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
-      "learning": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "intrigue": {
         "base": 7,
         "effective": 7
-      }
-    },
-    "skills": [
-      {
-        "id": "k044-skill-register-crosscheck",
-        "name": {
-          "ko": "숙련 원장 교차검증",
-          "en": "Skill-ledger crosscheck"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k044-preserve-original",
-        "name": {
-          "ko": "원본 칸을 지킨다",
-          "en": "Protect the original entry"
-        },
-        "description": {
-          "ko": "위조 도장 일화에서 사본을 불사르고 원본 칸을 지킨다.",
-          "en": "In the forged-seal anecdote burns copies while preserving the original entry."
-        },
-        "behavior": {
-          "ko": "위조 도장 일화에서 사본을 불사르고 원본 칸을 지킨다.",
-          "en": "In the forged-seal anecdote burns copies while preserving the original entry."
-        },
-        "stress": {
-          "ko": "경비대가 파업 공방을 가두고 조합 명부를 군사호적으로 바꿔 쓰는 것.",
-          "en": "That the guards would pen strike workshops in and use the union roster as a military registry."
-        },
-        "relationship": {
-          "ko": "김나율의 서기 명부를 원장으로 고정하는 계약이고, 장우석의 규격 날인과 숙련 점수를 교차검증하며, 백온의 난민 시민권 요구를 기록으로 지지한다.",
-          "en": "A contract fixing Kim Nayul's clerk roster in the ledger, cross-verifying Jang Wooseok's standards stamps and proficiency scores, and backing Baek On's refugee citizenship demand with records."
-        },
-        "effects": []
       },
-      {
-        "id": "k044-civilian-ledger",
-        "name": {
-          "ko": "시민권과 숙련의 원장",
-          "en": "Citizenship and skill ledger"
-        },
-        "description": {
-          "ko": "서기 명부를 기록에 옮기고 난민 시민권 요구를 지지한다.",
-          "en": "Transfers clerical registers into records and supports refugee citizenship."
-        },
-        "behavior": {
-          "ko": "서기 명부를 기록에 옮기고 난민 시민권 요구를 지지한다.",
-          "en": "Transfers clerical registers into records and supports refugee citizenship."
-        },
-        "stress": {
-          "ko": "경비대가 파업 공방을 가두고 조합 명부를 군사호적으로 바꿔 쓰는 것.",
-          "en": "That the guards would pen strike workshops in and use the union roster as a military registry."
-        },
-        "relationship": {
-          "ko": "김나율의 서기 명부를 원장으로 고정하는 계약이고, 장우석의 규격 날인과 숙련 점수를 교차검증하며, 백온의 난민 시민권 요구를 기록으로 지지한다.",
-          "en": "A contract fixing Kim Nayul's clerk roster in the ledger, cross-verifying Jang Wooseok's standards stamps and proficiency scores, and backing Baek On's refugee citizenship demand with records."
-        },
-        "effects": []
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "원장 대조와 위조 도장 일화가 근거다. 위조를 자신이 발견했는지는 문장이 모호해 탐지 숙련은 발급하지 않았다.",
-      "en": "Ledger comparison and a forged-seal anecdote are evidence. The wording does not establish who discovered the forgery, so detection skill is not issued."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -525,90 +178,89 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
+  "confirmedHoldings": [
     {
-      "id": "title:duchy-41210-S02",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
+      "id": "holding:v3:section:동작구:노량진",
+      "name": {
+        "ko": "노량진 구간"
+      },
       "holderPersonId": "K044",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:kingdom-s02",
-      "personalLieges": [
+      "directLiegePersonId": "K219",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "노량진",
+        "stationName": "노량진"
+      },
+      "adminRefs": [
         {
-          "holdingId": "holding:opening-duchy-41210-S02",
-          "directLiegePersonId": "K029"
+          "id": "region:1159051000",
+          "name": "노량진1동"
+        },
+        {
+          "id": "region:1159060500",
+          "name": "흑석동"
+        },
+        {
+          "id": "region:1159063000",
+          "name": "사당2동"
         }
       ],
-      "directOwnership": false
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
     }
   ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c81c-ce60-c6d0",
-    "name": "칠원 제씨",
-    "crest": "clan-crests/c81c-ce60-c6d0.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -20,
-    "개방": 15,
-    "무력": -20,
-    "물질": 40,
-    "공동": 45,
-    "원칙": 35,
-    "공개": 30,
-    "자격": 50,
-    "분산": 15,
-    "변혁": 30
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": -35,
-    "위험": -10,
-    "과시": 0,
-    "지속": -20,
-    "지향": "유동",
-    "결합": "비독점"
-  },
-  "fields": {
-    "소속": "규격맹",
-    "생업": "숙련점수 기록",
-    "품계": "조합원",
-    "직함": "숙련점수 원장 기록관",
-    "업무 위치": "구로2동. 제하온은 구로2동에서 김나율의 교대·시민권 명부를 숙련점수 원장과 나란히 펼친다. 위조 도장이 발견되면 원본 칸을 보존하고 장우석의 규격 날인과 대조한 결과를 백온의 명단을 맡은 당직으로 보낸다.",
-    "가치관": "권위 −20 | 개방 15 | 무력 −20 | 물질 40 | 공동 45 | 원칙 35 | 공개 30 | 자격 50 | 분산 15 | 변혁 30",
-    "욕망": "갈망 30 | 독점 −35 | 위험 −10 | 과시 0 | 지속 −20 | 지향 유동 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 숙련점수 원장 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 업무 위치: 구로2동. 제하온은 구로2동에서 김나율의 교대·시민권 명부를 숙련점수 원장과 나란히 펼친다. 위조 도장이 발견되면 원본 칸을 보존하고 장우석의 규격 날인과 대조한 결과를 백온의 명단을 맡은 당직으로 보낸다.",
-    "관직": "품계 조합원. 직함은 숙련점수 원장 기록관. 작업반 교대와 숙련 점수를 공개 칠판에 옮기고, 시민권 미등록 노동은 길드 평의회 안건 원장에 올리지 않는다.",
-    "일화": "2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 숙련점수 원장 기록관 자리의 서명이 장부에 올랐다.",
-    "관계": "김나율의 서기 명부를 원장으로 고정하는 계약이고, 장우석의 규격 날인과 숙련 점수를 교차검증하며, 백온의 난민 시민권 요구를 기록으로 지지한다.",
-    "야망": "복구복무자의 시민권과 숙련 점수를 같은 원장에 올려 규격맹이 군수가 아니라 노동 이동권으로 퍼지게 한다.",
-    "공포": "경비대가 파업 공방을 가두고 조합 명부를 군사호적으로 바꿔 쓰는 것.",
-    "개입": "숙련 명부를 지켜 시민권안을 통과시키거나, 태업 명단 조작을 밝혀 기록관을 흔들 수 있다."
-  },
-  "biography": "원칙적이고 문장의 빈칸을 증오한다. 태업 명단을 밤새 대조하는 서기의 숫자를 원장 밖으로 밀어내지 않는다.\n\n- 소속: 규격맹\n- 생업: 숙련점수 기록\n- 품계: 조합원\n- 직함: 숙련점수 원장 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 숙련점수 원장 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 업무 위치: 구로2동. 제하온은 구로2동에서 김나율의 교대·시민권 명부를 숙련점수 원장과 나란히 펼친다. 위조 도장이 발견되면 원본 칸을 보존하고 장우석의 규격 날인과 대조한 결과를 백온의 명단을 맡은 당직으로 보낸다.\n\n**관직.** 품계 조합원. 직함은 숙련점수 원장 기록관. 작업반 교대와 숙련 점수를 공개 칠판에 옮기고, 시민권 미등록 노동은 길드 평의회 안건 원장에 올리지 않는다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 숙련점수 원장 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 김나율의 서기 명부를 원장으로 고정하는 계약이고, 장우석의 규격 날인과 숙련 점수를 교차검증하며, 백온의 난민 시민권 요구를 기록으로 지지한다.\n\n**야망.** 복구복무자의 시민권과 숙련 점수를 같은 원장에 올려 규격맹이 군수가 아니라 노동 이동권으로 퍼지게 한다.\n\n**공포.** 경비대가 파업 공방을 가두고 조합 명부를 군사호적으로 바꿔 쓰는 것.\n\n**개입.** 숙련 명부를 지켜 시민권안을 통과시키거나, 태업 명단 조작을 밝혀 기록관을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 15 | 무력 −20 | 물질 40 | 공동 45 | 원칙 35 | 공개 30 | 자격 50 | 분산 15 | 변혁 30\n- 욕망: 갈망 30 | 독점 −35 | 위험 −10 | 과시 0 | 지속 −20 | 지향 유동 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-02"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "제하온",
-        "type": "계약",
-        "to": "김나율",
-        "basis": "김나율의 서기 명부를 원장으로 고정하는 계약이고"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:동작",
+      "name": {
+        "ko": "동작역"
       },
-      {
-        "from": "제하온",
-        "type": "계약",
-        "to": "장우석",
-        "basis": "장우석의 규격 날인과 숙련 점수를 교차검증하며"
-      }
-    ],
-    "incoming": []
-  }
+      "holderPersonId": "person-0022",
+      "directLiegePersonId": "K044",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "동작",
+        "stationName": "동작"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1159063000",
+          "name": "사당2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "고늘결",
+      "holderRoute": "/people/person-0022"
+    },
+    {
+      "id": "holding:v3:station:노량진",
+      "name": {
+        "ko": "노량진역"
+      },
+      "holderPersonId": "K240",
+      "directLiegePersonId": "K044",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "노량진",
+        "stationName": "노량진"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1159051000",
+          "name": "노량진1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "단보람",
+      "holderRoute": "/people/person-0241"
+    }
+  ]
 }

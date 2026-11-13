@@ -1,387 +1,136 @@
 {
   "id": "person-0387",
   "name": "판효담",
-  "title": "가락 대형 창고 기지 당직장, 라진우의 실무 담당자",
-  "position": "명동역 보관함 당직 부제",
+  "title": "창4동 동장",
+  "position": "창4동 동장 · 정부",
   "characterId": "K386",
-  "rank": "부제",
-  "commonTier": "T4",
-  "occupation": "보관함 당직·선거 보좌",
+  "rank": "동장",
+  "commonTier": "T3",
+  "occupation": "동 행정",
   "gender": "남성",
   "stage": "S2",
-  "state": "S15",
-  "stateName": "명동대교구",
-  "sourceRoute": "/world/Cast-State-15#인물-판효담",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0387",
   "birthDate": "2086-01-15",
   "birthday": "01-15",
   "age": 40,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-15.json#/content/181",
-    "lore/characters/Cast-State-15.json#/content/182",
-    "lore/characters/Cast-State-15.json#/content/183"
-  ],
-  "familyTree": {
-    "personId": "K386",
-    "nodes": [
-      {
-        "id": "K386",
-        "personId": "K386",
-        "kind": "person",
-        "name": "판효담",
-        "birthDate": "2086-01-15",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K386"
-          },
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-판효담-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 명동역 교구청에서 명동역 보관함 당직 부제 일을 맡았다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-판효담-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0387"
-      },
-      {
-        "id": "FH-K386-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "판승윤",
-        "lineage": {
-          "surname": "판",
-          "bongwan": "해주",
-          "clan": "d310-d574-c8fc-agreed-b2f4-second"
-        },
-        "birthDate": "2056-01-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-판효담-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2094,
-            "summary": "판승윤은 신정 차량기지에서 보관함 당직·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-판효담-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K386-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "판승우",
-        "lineage": {
-          "surname": "판",
-          "bongwan": "해주",
-          "clan": "d310-d574-c8fc-agreed-b2f4-second"
-        },
-        "birthDate": "2026-01-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-판효담-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "판승우는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-판효담-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K386-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준온",
-        "birthDate": "2056-01-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-판효담-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2094,
-            "summary": "최준온은 신정 차량기지에서 보관함 당직·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-판효담-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K386-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준희",
-        "birthDate": "2026-01-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-판효담-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정준희는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-판효담-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K386-P-01:K386:biological",
-        "from": "FH-K386-P-01",
-        "to": "K386",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-판효담-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K386-P-02:FH-K386-P-01:biological",
-        "from": "FH-K386-P-02",
-        "to": "FH-K386-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-판효담-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K386-M-01:K386:biological",
-        "from": "FH-K386-M-01",
-        "to": "K386",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-판효담-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K386-M-02:FH-K386-M-01:biological",
-        "from": "FH-K386-M-02",
-        "to": "FH-K386-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-판효담-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d310-d574-c8fc",
+    "name": "해주 판씨",
+    "crest": "clan-crests/d310-d574-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "창4동 동주민센터의 세 창구, 배급과 등록과 민원은 모두 판효담의 도장으로 하루를 닫는다. 전솔 의원이 앉힌 마흔 살의 동장으로, 아침 국민의례에서 전날 사망 말소된 이름을 읽는 것도 그의 목소리다. 창동역 역장이 올린 보고서는 그의 책상에서 동의 보고와 한 장으로 묶여 구청으로 간다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "창4동 동장",
+    "품계": "동장",
+    "생업": "동 행정",
+    "일하는 역": "창동역",
+    "잠자는 역": "창동역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "창4동 동주민센터의 세 창구, 배급과 등록과 민원은 모두 판효담의 도장으로 하루를 닫는다. 전솔 의원이 앉힌 마흔 살의 동장으로, 아침 국민의례에서 전날 사망 말소된 이름을 읽는 것도 그의 목소리다. 창동역 역장이 올린 보고서는 그의 책상에서 동의 보고와 한 장으로 묶여 구청으로 간다.",
+    "관직": "직함 창4동 동장. 직위 창4동 동장 · 정부. 품계 동장. 일하는 역 창동역."
+  },
+  "values": {
+    "권위": 65,
+    "개방": -30,
+    "무력": 30,
+    "물질": 35,
+    "공동": -10,
+    "원칙": -20,
+    "공개": -55,
+    "자격": 15,
+    "분산": -50,
+    "변혁": -10
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": 15,
+    "위험": -40,
+    "과시": -20,
+    "지속": 35,
+    "지향": "동성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0387",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "판효담",
+        "type": "지휘",
+        "to": "전솔",
+        "basis": "도봉구 국회의원 전솔의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "영석온",
+        "type": "지휘",
+        "to": "판효담",
+        "basis": "창4동 동장 판효담의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K327",
+    "name": "전솔",
+    "courtId": "court:K327",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K386",
+    "members": [
+      {
+        "personId": "K356",
+        "name": "영석온"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
-      },
-      "strategy": {
-        "base": 6,
-        "effective": 6
-      },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "learning": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
       }
     },
-    "skills": [
-      {
-        "id": "dispatch-prioritization",
-        "name": {
-          "ko": "출고 순서 조정",
-          "en": "Dispatch prioritization"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "구휼 출고 우선",
-          "en": "Prioritizes relief dispatch"
-        },
-        "description": {
-          "ko": "군량 봉인의 내부 개봉과 당직 누락을 증언한다. 비상배급 마차를 출고 맨 위에 두지만 원인 규명 성과는 없다.",
-          "en": "Testifies about military seals opened from inside and missing duty names. Puts relief carts first in dispatch, without a recorded solution to the breach."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 구휼 출고 우선을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "당직 누락 앞에서 출고 순서와 잠금을 재확인할 수 있다.",
-          "en": "May recheck dispatch order and locks after duty gaps."
-        },
-        "relationship": {
-          "ko": "수한별과 자물쇠를 나누고 전나경의 마차를 먼저 둔다.",
-          "en": "Shares locks with Su Hanbyeol and prioritizes Jeon Nagyeong’s carts."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "수한별과 자물쇠를 나누고 전나경의 마차를 먼저 둔다.",
-          "en": "Shares locks with Su Hanbyeol and prioritizes Jeon Nagyeong’s carts."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "군량 봉인의 내부 개봉과 당직 누락을 증언한다. 비상배급 마차를 출고 맨 위에 두지만 원인 규명 성과는 없다.",
-      "en": "Testifies about military seals opened from inside and missing duty names. Puts relief carts first in dispatch, without a recorded solution to the breach."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -419,85 +168,52 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d310-d574-c8fc",
-    "name": "해주 판씨",
-    "crest": "clan-crests/d310-d574-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 20,
-    "개방": 25,
-    "무력": -5,
-    "물질": 40,
-    "공동": -15,
-    "원칙": -40,
-    "공개": -30,
-    "자격": 0,
-    "분산": 0,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": 15,
-    "위험": -40,
-    "과시": -20,
-    "지속": 35,
-    "지향": "동성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "보관함 당직·선거 보좌",
-    "소속": "명동대교구 (명동역)",
-    "품계": "부제",
-    "직함": "명동역 보관함 당직 부제",
-    "가치관": "권위 20 | 개방 25 | 무력 −5 | 물질 40 | 공동 −15 | 원칙 −40 | 공개 −30 | 자격 0 | 분산 0 | 변혁 10",
-    "욕망": "갈망 45 | 독점 15 | 위험 −40 | 과시 −20 | 지속 35 | 지향 동성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2086-01-15에 태어난 판효담은 영구 겨울의 명동역 교구청에서 명동역 보관함 당직 부제 일을 맡는다. 보관함 당직·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 판효담은 명동 행정동의 명동역 교구청에서 명동역 보관함 당직 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 부제. 직함은 명동역 보관함 당직 부제. 보관함 당직·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
-    "일화": "상인들이 창고를 봉쇄한 밤, 군량 칸의 봉인만 안쪽에서 열리고 기지 당직 명단이 한 줄 빠져 있었다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.",
-    "관계": "라진우의 재고 원장을 기지에서 집행하고, 수한별의 순찰과 자물쇠를 나눈다. 전나경의 비상 배급 마차를 출고 맨 위에 둔다.",
-    "야망": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-    "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-    "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
-  },
-  "biography": "판효담은 명동역 보관함 당직 부제 업무에서 보관함 당직·선거 보좌 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 보관함 당직·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 명동역 보관함 당직 부제\n**생애.** 2086-01-15에 태어난 판효담은 영구 겨울의 명동역 교구청에서 명동역 보관함 당직 부제 일을 맡는다. 보관함 당직·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 판효담은 명동 행정동의 명동역 교구청에서 명동역 보관함 당직 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 부제. 직함은 명동역 보관함 당직 부제. 보관함 당직·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 상인들이 창고를 봉쇄한 밤, 군량 칸의 봉인만 안쪽에서 열리고 기지 당직 명단이 한 줄 빠져 있었다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.\n\n**관계.** 라진우의 재고 원장을 기지에서 집행하고, 수한별의 순찰과 자물쇠를 나눈다. 전나경의 비상 배급 마차를 출고 맨 위에 둔다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 25 | 무력 −5 | 물질 40 | 공동 −15 | 원칙 −40 | 공개 −30 | 자격 0 | 분산 0 | 변혁 10\n- 욕망: 갈망 45 | 독점 15 | 위험 −40 | 과시 −20 | 지속 35 | 지향 동성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-15"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1132051400",
+      "name": {
+        "ko": "창4동"
+      },
+      "holderPersonId": "K386",
+      "directLiegePersonId": "K327",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1132051400",
+          "name": "창4동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
   ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "판효담",
-        "type": "지휘",
-        "to": "라진우",
-        "basis": "라진우의 재고 원장을 기지에서 집행하고"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:창동",
+      "name": {
+        "ko": "창동역"
       },
-      {
-        "from": "판효담",
-        "type": "지휘",
-        "to": "수한별",
-        "basis": "수한별의 순찰과 자물쇠를 나눈다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "원주온",
-        "type": "계약",
-        "to": "판효담",
-        "basis": "판효담의 창고 기지 칠판에 좌표를 붙인다"
+      "holderPersonId": "K356",
+      "directLiegePersonId": "K386",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "창동",
+        "stationName": "창동"
       },
-      {
-        "from": "방석담",
-        "type": "계약",
-        "to": "판효담",
-        "basis": "판효담의 창고 기지에 출력을 맞추고"
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1132051400",
+          "name": "창4동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "영석온",
+      "holderRoute": "/people/person-0357"
+    }
+  ]
 }

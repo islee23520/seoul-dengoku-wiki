@@ -1,394 +1,120 @@
 {
   "id": "person-0100",
   "name": "채구름",
-  "title": "성동 교량 순찰대 조장 · 성동구 영주",
-  "position": "성동 교량 순찰대 조장 · 성동구 영주",
+  "title": "행정안전부 차관",
+  "position": "행정안전부 차관 · 광화문역",
   "characterId": "K099",
-  "rank": "영주",
-  "commonTier": "T3",
-  "occupation": "교량 경비·출입 통제",
+  "rank": "차관",
+  "commonTier": "T2",
+  "occupation": "부처 행정",
   "gender": "남성",
   "stage": "S2",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-채구름",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0100",
   "birthDate": "2073-11-14",
   "birthday": "11-14",
   "age": 53,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/159",
-    "lore/characters/Cast-State-04.json#/content/161"
-  ],
-  "familyTree": {
-    "personId": "K099",
-    "nodes": [
-      {
-        "id": "K099",
-        "personId": "K099",
-        "kind": "person",
-        "name": "채구름",
-        "birthDate": "2073-11-14",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K099"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-채구름-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 성동 교량 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-채구름-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0100"
-      },
-      {
-        "id": "FH-K099-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "채승연",
-        "lineage": {
-          "surname": "채",
-          "bongwan": "평강",
-          "clan": "cc44-d3c9-ac15"
-        },
-        "birthDate": "2043-11-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-채구름-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2081,
-            "summary": "채승연은 암사 경비 초소에서 교량 경비·출입 통제 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-채구름-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K099-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "채승정",
-        "lineage": {
-          "surname": "채",
-          "bongwan": "평강",
-          "clan": "cc44-d3c9-ac15"
-        },
-        "birthDate": "2013-11-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-채구름-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "채승정은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-채구름-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K099-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정승솔",
-        "birthDate": "2043-11-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-채구름-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2081,
-            "summary": "정승솔은 암사 경비 초소에서 교량 경비·출입 통제 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-채구름-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K099-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승훈",
-        "birthDate": "2013-11-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-채구름-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤승훈은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-채구름-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K099-P-01:K099:biological",
-        "from": "FH-K099-P-01",
-        "to": "K099",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-채구름-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K099-P-02:FH-K099-P-01:biological",
-        "from": "FH-K099-P-02",
-        "to": "FH-K099-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-채구름-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K099-M-01:K099:biological",
-        "from": "FH-K099-M-01",
-        "to": "K099",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-채구름-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K099-M-02:FH-K099-M-01:biological",
-        "from": "FH-K099-M-02",
-        "to": "FH-K099-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-채구름-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cc44-d3c9-ac15",
+    "name": "평강 채씨",
+    "crest": "clan-crests/cc44-d3c9-ac15.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "행정안전부 차관으로 기재돼 있고, 등재 주소는 종로구 독립문역이다. 아침 점등 사이렌이 울리면 독립문에서 광화문까지 터널을 걸어 정부서울청사로 가서, 그날 나갈 재난 사태 고시의 초안을 장관보다 먼저 읽는다. 젊어서 성동 쪽 다리 끝 초소에서 증표를 확인하던 버릇이 남아, 초안의 여백에는 그 고시로 새로 열리거나 닫히는 출입구의 이름을 연필로 적어 넣는다. 장관의 도장 앞에 마지막으로 서류를 넘기는 사람이 그다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "행정안전부 차관",
+    "품계": "차관",
+    "생업": "부처 행정",
+    "일하는 역": "광화문역",
+    "잠자는 역": "독립문역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "행정안전부 차관으로 기재돼 있고, 등재 주소는 종로구 독립문역이다. 아침 점등 사이렌이 울리면 독립문에서 광화문까지 터널을 걸어 정부서울청사로 가서, 그날 나갈 재난 사태 고시의 초안을 장관보다 먼저 읽는다. 젊어서 성동 쪽 다리 끝 초소에서 증표를 확인하던 버릇이 남아, 초안의 여백에는 그 고시로 새로 열리거나 닫히는 출입구의 이름을 연필로 적어 넣는다. 장관의 도장 앞에 마지막으로 서류를 넘기는 사람이 그다.",
+    "관직": "직함 행정안전부 차관. 직위 행정안전부 차관 · 광화문역. 품계 차관. 일하는 역 광화문역."
+  },
+  "values": {
+    "권위": 60,
+    "개방": -55,
+    "무력": 30,
+    "물질": 25,
+    "공동": 35,
+    "원칙": 25,
+    "공개": -35,
+    "자격": 40,
+    "분산": -35,
+    "변혁": -30
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": 0,
+    "위험": -15,
+    "과시": 25,
+    "지속": -10,
+    "지향": "동성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0100",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "채구름",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 9,
-        "effective": 9
+      "diplomacy": {
+        "base": 10,
+        "effective": 10
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 9,
-        "effective": 9
-      },
-      "endurance": {
-        "base": 10,
-        "effective": 10
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "bridge",
-        "name": {
-          "ko": "교량 출입 통제",
-          "en": "Bridge entry control"
-        },
-        "rating": 65
-      },
-      {
-        "id": "guard",
-        "name": {
-          "ko": "출입 저지·암호패 교체",
-          "en": "Entry control and pass replacement"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "direct-code-token-control",
-        "name": {
-          "ko": "암호패 직접 관리",
-          "en": "Direct Code Token Control"
-        },
-        "description": {
-          "ko": "채구름은 야간 암호패 관리를 부하에게 넘기지 않고 직접 맡으려 한다.",
-          "en": "Chae Gureum keeps nighttime code-token control personally rather than delegating it to subordinates."
-        },
-        "behavior": {
-          "ko": "야간 암호패를 직접 관리하고 교량 출입에 암호패와 공정 감독의 이중 확인을 요구한다.",
-          "en": "Chae personally controls night code tokens and requires both a token and process-supervisor confirmation for bridge entry."
-        },
-        "stress": {
-          "ko": "점검 공백이 보호군 주둔으로 이어질 우려가 커지면 직접 암호패 관리와 명부 재확인을 강화할 수 있다.",
-          "en": "If inspection gaps threaten protection-force occupation, Chae may tighten personal token control and roster rechecks."
-        },
-        "relationship": {
-          "ko": "김보람의 지휘를 집행하더라도 야간 출입을 넓히려는 요구에는 직접 확인 원칙을 내세울 수 있다.",
-          "en": "Even while carrying out Kim Boram's command, Chae may invoke direct verification against demands to broaden nighttime access."
-        },
-        "effects": []
-      },
-      {
-        "id": "no-outside-guards",
-        "name": {
-          "ko": "외부 수비 거부",
-          "en": "No Outside Guards"
-        },
-        "description": {
-          "ko": "채구름은 보호군 명목으로 교량 수비를 외부에 넘기는 일을 배신으로 본다.",
-          "en": "Chae Gureum regards transferring bridge defense to outside protection forces as betrayal."
-        },
-        "behavior": {
-          "ko": "무장 난입자를 문 밖에 붙들어 명부를 재점검했고 교량 접근의 순찰대 단독 봉쇄권을 추구한다.",
-          "en": "Chae held an armed intruder outside for a roster recheck and seeks exclusive patrol authority over bridge closures."
-        },
-        "stress": {
-          "ko": "암사 보호군이 점검 공백을 구원으로 내세우면 외부 주둔과 수비 이양을 더 강하게 거부할 수 있다.",
-          "en": "If Amsa's protection force presents inspection gaps as a rescue opportunity, Chae may reject outside stationing and defense transfer more strongly."
-        },
-        "relationship": {
-          "ko": "최나래와 순찰을 나누면서도 야간 봉쇄가 장민재의 급수 창구를 닫으면 시민 급수권과 충돌할 수 있다.",
-          "en": "While sharing patrols with Choe Narae, Chae may clash with civic water rights when night closures shut Jang Minjae's supply counter."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "무장 난입자를 문밖에 붙들고 명부 재점검을 열었다. 실제 저지와 순찰을 반영하지만 대규모 승전이나 외부 지휘권은 없다.",
-      "en": "He held an armed intruder outside and reopened manifest checks. Actual restraint and patrol work are reflected, not large victories or external command."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -426,206 +152,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-gu-11200-S04",
-      "name": {
-        "ko": "성동구 공작령 직영지"
-      },
-      "holderPersonId": "K099",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "region:1120052000",
-          "name": "왕십리2동"
-        },
-        {
-          "id": "region:1120053500",
-          "name": "왕십리도선동"
-        },
-        {
-          "id": "region:1120054000",
-          "name": "마장동"
-        },
-        {
-          "id": "region:1120055000",
-          "name": "사근동"
-        },
-        {
-          "id": "region:1120056000",
-          "name": "행당1동"
-        },
-        {
-          "id": "region:1120057000",
-          "name": "행당2동"
-        },
-        {
-          "id": "region:1120058000",
-          "name": "응봉동"
-        },
-        {
-          "id": "region:1120059000",
-          "name": "금호1가동"
-        },
-        {
-          "id": "region:1120061500",
-          "name": "금호2·3가동"
-        },
-        {
-          "id": "region:1120062000",
-          "name": "금호4가동"
-        },
-        {
-          "id": "region:1120064500",
-          "name": "옥수동"
-        },
-        {
-          "id": "region:1120065000",
-          "name": "성수1가1동"
-        },
-        {
-          "id": "region:1120066000",
-          "name": "성수1가2동"
-        },
-        {
-          "id": "region:1120067000",
-          "name": "성수2가1동"
-        },
-        {
-          "id": "region:1120069000",
-          "name": "성수2가3동"
-        },
-        {
-          "id": "region:1120072000",
-          "name": "송정동"
-        },
-        {
-          "id": "region:1120079000",
-          "name": "용답동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11200-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
-    {
-      "id": "title:duchy-gu-11200-S04",
-      "name": "성동구 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K099",
-      "basis": "개막 행정 규모 그룹 gu:11200(duchy) 배분 · 결정적 후보 선정",
-      "stateId": "S04",
-      "parentTitleId": "title:kingdom-s04",
-      "jurisdictionRefs": [
-        "region:1120052000",
-        "region:1120053500",
-        "region:1120054000",
-        "region:1120055000",
-        "region:1120056000",
-        "region:1120057000",
-        "region:1120058000",
-        "region:1120059000",
-        "region:1120061500",
-        "region:1120062000",
-        "region:1120064500",
-        "region:1120065000",
-        "region:1120066000",
-        "region:1120067000",
-        "region:1120069000",
-        "region:1120072000",
-        "region:1120079000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s04",
-        "name": "종교 연합 왕국",
-        "holderPersonId": "K423"
-      }
-    }
-  ],
-  "clan": {
-    "id": "cc44-d3c9-ac15",
-    "name": "평강 채씨",
-    "crest": "clan-crests/cc44-d3c9-ac15.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": 0,
-    "무력": -5,
-    "물질": 30,
-    "공동": 30,
-    "원칙": 5,
-    "공개": -10,
-    "자격": 25,
-    "분산": 15,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": 0,
-    "위험": -15,
-    "과시": 25,
-    "지속": -10,
-    "지향": "동성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "교량 경비·출입 통제",
-    "품계": "교사",
-    "직함": "성동 교량 순찰대 조장",
-    "가치관": "권위 15 | 개방 0 | 무력 −5 | 물질 30 | 공동 30 | 원칙 5 | 공개 −10 | 자격 25 | 분산 15 | 변혁 −10",
-    "욕망": "갈망 10 | 독점 0 | 위험 −15 | 과시 25 | 지속 −10 | 지향 동성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 채구름은 암사 경비 초소에서 자랐다. 채구름은 야간 무단 도하 적발로 성동 교량 순찰대 조장 자리를 맡았다.\n- 채구름의 성동 교량 순찰대 조장 업무는 성수1가1동과 연결된다.",
-    "관직": "품계 교사. 직함은 성동 교량 순찰대 조장. 주간은 당회와 교대 명부를 공유하고, 야간 교량 출입은 수비대 암호패와 공정 감독의 이중 확인만 허용한다.",
-    "일화": "2125년 채구름은 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 성동 교량 순찰대 조장 자리의 서명이 장부에 올랐다.",
-    "관계": "김보람의 펌프수비 지휘를 교량에서 집행하고, 기동 정비조와 교량 순찰을 맹세로 나누며, 장민재의 급수 창구가 야간 봉쇄로 닫힐 때 충돌한다.",
-    "야망": "동부 교량 접근을 순찰대 단독 봉쇄권으로 묶어 후계가 누가 되든 물이 무력의 볼모가 되지 않게 한다.",
-    "공포": "채구름은 암사 보호군이 점검 공백을 구원으로 위장해 교량에 주둔하는 상황을 두려워한다.",
-    "개입": "외부 장교의 출입 시도 증거를 가져와 봉쇄를 정당화하거나, 암호패 유출을 밝혀 조장을 교체하게 할 수 있다."
-  },
-  "biography": "교량 밑 수위로 침투를 읽고, 수비를 보호군 명목으로 내주라는 제안을 배신으로 본다. 직선적이며 야간 암호패를 부하에게 맡기지 않는다.\n\n- 소속: 명부교회\n- 생업: 교량 경비·출입 통제\n- 품계: 교사\n- 직함: 성동 교량 순찰대 조장\n**생애.** 2126년 세대. 채구름은 암사 경비 초소에서 자랐다. 채구름은 야간 무단 도하 적발로 성동 교량 순찰대 조장 자리를 맡았다.\n- 채구름의 성동 교량 순찰대 조장 업무는 성수1가1동과 연결된다.\n\n**관직.** 품계 교사. 직함은 성동 교량 순찰대 조장. 주간은 당회와 교대 명부를 공유하고, 야간 교량 출입은 수비대 암호패와 공정 감독의 이중 확인만 허용한다.\n\n**일화.** 2125년 채구름은 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 성동 교량 순찰대 조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 김보람의 펌프수비 지휘를 교량에서 집행하고, 기동 정비조와 교량 순찰을 맹세로 나누며, 장민재의 급수 창구가 야간 봉쇄로 닫힐 때 충돌한다.\n\n**야망.** 동부 교량 접근을 순찰대 단독 봉쇄권으로 묶어 후계가 누가 되든 물이 무력의 볼모가 되지 않게 한다.\n\n**공포.** 채구름은 암사 보호군이 점검 공백을 구원으로 위장해 교량에 주둔하는 상황을 두려워한다.\n\n**개입.** 외부 장교의 출입 시도 증거를 가져와 봉쇄를 정당화하거나, 암호패 유출을 밝혀 조장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 0 | 무력 −5 | 물질 30 | 공동 30 | 원칙 5 | 공개 −10 | 자격 25 | 분산 15 | 변혁 −10\n- 욕망: 갈망 10 | 독점 0 | 위험 −15 | 과시 25 | 지속 −10 | 지향 동성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "채구름",
-        "type": "지휘",
-        "to": "김보람",
-        "basis": "김보람의 펌프수비 지휘를 교량에서 집행하고"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "손바호",
-        "type": "계약",
-        "to": "채구름",
-        "basis": "손바호는 유치선 야간 출입 기록과 교체 암호패 내용을 채구름에게 전한다. 채구름은 교량 출입에서 이중 확인을 지켜 경비 교대의 빈 곳을 통한 접근을 살핀다."
-      },
-      {
-        "from": "최바아",
-        "type": "계약",
-        "to": "채구름",
-        "basis": "최바아는 순찰에서 읽은 매복 흔적을 채구름에게 알린다. 채구름은 교량 수위와 출입 기록을 살펴 그 관찰이 실제 접근 흔적과 이어지는지 확인한다."
-      },
-      {
-        "from": "백아래",
-        "type": "계약",
-        "to": "채구름",
-        "basis": "백아래는 정정한 교량 훈련 참관 내용을 채구름에게 전한다. 채구름은 실제 교량 접근 기록과 구분해 틀린 최초 보고가 현재 야간 봉쇄 근거로 쓰이지 않게 한다."
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

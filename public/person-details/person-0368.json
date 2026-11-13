@@ -1,385 +1,105 @@
 {
   "id": "person-0368",
   "name": "탁윤재",
-  "title": "교량 통행 사고 당사자",
-  "position": "양군 교량 통행 사고 당사자",
+  "title": "구청 서기",
+  "position": "구청 서기 · 건대입구역",
   "characterId": "K367",
-  "rank": "공동실무원",
+  "rank": "사무관",
   "commonTier": "T5",
-  "occupation": "충돌 시각·잔압 수치 일지 기록",
+  "occupation": "장부 기재",
   "gender": "여성",
   "stage": "S3",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-탁윤재",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0368",
   "birthDate": "2065-05-03",
   "birthday": "05-03",
   "age": 61,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/204"
-  ],
-  "familyTree": {
-    "personId": "K367",
-    "nodes": [
-      {
-        "id": "K367",
-        "personId": "K367",
-        "kind": "person",
-        "name": "탁윤재",
-        "birthDate": "2065-05-03",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K367"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-탁윤재-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 양군 교량 통행 사고 당사자 자리는 야간 무단 도하 적발로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-탁윤재-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0368"
-      },
-      {
-        "id": "FH-K367-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "탁승진",
-        "lineage": {
-          "surname": "탁",
-          "bongwan": "광산",
-          "clan": "d0c1-ad11-c0b0"
-        },
-        "birthDate": "2035-05-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-탁윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "탁승진은 암사 경비 초소에서 충돌 시각·잔압 수치 일지 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-탁윤재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K367-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "탁승현",
-        "lineage": {
-          "surname": "탁",
-          "bongwan": "광산",
-          "clan": "d0c1-ad11-c0b0"
-        },
-        "birthDate": "2005-05-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-탁윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "탁승현은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-탁윤재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K367-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임준정",
-        "birthDate": "2035-05-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-탁윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "임준정은 암사 경비 초소에서 충돌 시각·잔압 수치 일지 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-탁윤재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K367-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오준수",
-        "birthDate": "2005-05-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-탁윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오준수는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-탁윤재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K367-P-01:K367:biological",
-        "from": "FH-K367-P-01",
-        "to": "K367",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-탁윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K367-P-02:FH-K367-P-01:biological",
-        "from": "FH-K367-P-02",
-        "to": "FH-K367-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-탁윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K367-M-01:K367:biological",
-        "from": "FH-K367-M-01",
-        "to": "K367",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-탁윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K367-M-02:FH-K367-M-01:biological",
-        "from": "FH-K367-M-02",
-        "to": "FH-K367-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-탁윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d0c1-ad11-c0b0",
+    "name": "광산 탁씨",
+    "crest": "clan-crests/d0c1-ad11-c0b0.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "광진구청 서기들 가운데 사무관 품계를 받은 사람은 화양동 건대입구역에 기재된 탁윤재다. 예순한 살 여성이고 광산 탁씨다. 구청 창고의 생산 몫과 섬유 납부 장부를 맡아, 구청이 떼어 둔 것 가운데 정부서울청사 국고로 얼마가 올라가는지 셈한다. 도장이 찍힌 옛 종이가 섬유 더미에 섞여 들어오면 그녀가 먼저 골라내 행정안전부로 보낸다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "구청 서기",
+    "품계": "사무관",
+    "생업": "장부 기재",
+    "일하는 역": "건대입구역",
+    "잠자는 역": "건대입구역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "광진구청 서기들 가운데 사무관 품계를 받은 사람은 화양동 건대입구역에 기재된 탁윤재다. 예순한 살 여성이고 광산 탁씨다. 구청 창고의 생산 몫과 섬유 납부 장부를 맡아, 구청이 떼어 둔 것 가운데 정부서울청사 국고로 얼마가 올라가는지 셈한다. 도장이 찍힌 옛 종이가 섬유 더미에 섞여 들어오면 그녀가 먼저 골라내 행정안전부로 보낸다.",
+    "관직": "직함 구청 서기. 직위 구청 서기 · 건대입구역. 품계 사무관. 일하는 역 건대입구역."
+  },
+  "values": {
+    "권위": 95,
+    "개방": -80,
+    "무력": 70,
+    "물질": 0,
+    "공동": 30,
+    "원칙": 25,
+    "공개": -35,
+    "자격": 10,
+    "분산": -65,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": 20,
+    "독점": 30,
+    "위험": 20,
+    "과시": -25,
+    "지속": -5,
+    "지향": "양성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0368",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
+      "stewardship": {
         "base": 11,
         "effective": 11
       },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 8,
+        "effective": 8
       },
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
       }
     },
-    "skills": [
-      {
-        "id": "accident-log-reconciliation",
-        "name": {
-          "ko": "사고 일지 대조",
-          "en": "Accident log reconciliation"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "사고를 군수로 바꾸지 않는다",
-          "en": "Will not recast accidents as military supply"
-        },
-        "description": {
-          "ko": "급수 호스를 군수 줄로 바꾸라는 쪽지를 태우고 충돌 시각과 잔압을 펌프 일지에 맞췄다. 사고 경험에서 손상 상태를 추정하지 않는다.",
-          "en": "A note recasting a water hose as military supply was burned; collision time and pressure were checked against pump logs. Accident experience does not establish injury status."
-        },
-        "behavior": {
-          "ko": "난간 충격의 각도를 몸으로 기억하고, 급수 호스를 군수 줄로 바꾸라는 쪽지를 태운다. 말은 짧고 발자국은 정확하다.",
-          "en": "He remembered the angle of a railing strike with his body and burned any note that told him to turn the water hose into a munitions line. His words were short and his footfalls exact."
-        },
-        "stress": {
-          "ko": "공포. 사고 칸이 일방의 무장 진입의 발판으로 찍혀 자신이 없는 전쟁의 구실이 되는 것.",
-          "en": "Fear. That the accident car would be stamped the foothold of a protection force's entry and become the pretext of a war he never owned."
-        },
-        "relationship": {
-          "ko": "관계. 선솔우의 펌프 일지와 잔압을 맞추고, 영한뫼의 의무소 들것과 사고 줄을 나눈다. 한재목의 급수 연장 제의를 사고 뒤에만 읽는다.",
-          "en": "Relations. Matched residual pressure with Seon Solwoo's pump logs and split the accident line with Yeong Hanmoe's clinic stretchers. Read Han Jaemok's water-extension offer only after the accident."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 공동실무원. 직함은 양군 교량 통행 사고 당사자. 충돌 시각과 잔압 수치를 같은 일지에 적고, 외부 무장 접근은 양군의 공동 승인 없이 증언에서 뺀다.",
-          "en": "Office. Rank: sergeant. Title: bridge passage accident party. He wrote the collision hour and the residual-pressure figures in the same log and struck armed outside approach from his testimony unless Go Seojun stood by."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 공동실무원. 직함은 양군 교량 통행 사고 당사자. 충돌 시각과 잔압 수치를 같은 일지에 적고, 외부 무장 접근은 양군의 공동 승인 없이 증언에서 뺀다.",
-          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: bridge passage accident party. He wrote the collision hour and the residual-pressure figures in the same log and struck armed outside approach from his testimony unless Go Seojun stood by."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 사고 칸이 일방의 무장 진입의 발판으로 찍혀 자신이 없는 전쟁의 구실이 되는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That the accident car would be stamped the foothold of a protection force's entry and become the pretext of a war he never owned."
-        },
-        "relationship": {
-          "ko": "관계. 선솔우의 펌프 일지와 잔압을 맞추고, 영한뫼의 의무소 들것과 사고 줄을 나눈다. 한재목의 급수 연장 제의를 사고 뒤에만 읽는다.",
-          "en": "Relations. Matched residual pressure with Seon Solwoo's pump logs and split the accident line with Yeong Hanmoe's clinic stretchers. Read Han Jaemok's water-extension offer only after the accident."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "급수 호스를 군수 줄로 바꾸라는 쪽지를 태우고 충돌 시각과 잔압을 펌프 일지에 맞췄다. 사고 경험에서 손상 상태를 추정하지 않는다.",
-      "en": "A note recasting a water hose as military supply was burned; collision time and pressure were checked against pump logs. Accident experience does not establish injury status."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,72 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d0c1-ad11-c0b0",
-    "name": "광산 탁씨",
-    "crest": "clan-crests/d0c1-ad11-c0b0.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 50,
-    "개방": -25,
-    "무력": 35,
-    "물질": 5,
-    "공동": 25,
-    "원칙": 5,
-    "공개": -10,
-    "자격": -5,
-    "분산": -15,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 20,
-    "독점": 30,
-    "위험": 20,
-    "과시": -25,
-    "지속": -5,
-    "지향": "양성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "충돌 시각·잔압 수치 일지 기록",
-    "소속": "아관사 양군 공동실무",
-    "품계": "공동실무원",
-    "직함": "양군 교량 통행 사고 당사자",
-    "가치관": "권위 50 | 개방 −25 | 무력 35 | 물질 5 | 공동 25 | 원칙 5 | 공개 −10 | 자격 −5 | 분산 −15 | 변혁 −5",
-    "욕망": "갈망 20 | 독점 30 | 위험 20 | 과시 −25 | 지속 −5 | 지향 양성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2065-05-03에 태어났다. 2126년 개막 현재 양군 교량 통행 사고 당사자 직무를 맡아 충돌 시각·잔압 수치 일지 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 충돌 시각·잔압 수치 일지 기록 창구가 탁윤재의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 공동실무원. 직함은 양군 교량 통행 사고 당사자. 충돌 시각·잔압 수치 일지 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
-    "일화": "구의 교량 난간 충돌 직후, 급수 호스를 군수 줄로 바꾸라는 쪽지가 탁윤재에게 건네진다. 탁윤재는 쪽지를 태우고 충돌 시각과 잔압 수치를 한 일지에 옮기고, 선솔우의 펌프 일지와 수치를 맞추러 간다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
-    "관계": "선솔우의 펌프 일지와 잔압을 맞추고, 영한뫼의 의무소 들것과 사고 줄을 나눈다. 한재목의 급수 연장 제의를 사고 뒤에만 읽는다.",
-    "야망": "탁윤재는 양군 교량 통행 사고 당사자 직무에서 충돌 시각·잔압 수치 일지 기록을 공개 인계표와 맞물리게 하려 한다.",
-    "공포": "양군 교량 통행 사고 당사자 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
-    "개입": "당사자 진술로 잔압 사고를 밝히거나, 충돌을 적대행위로 고쳐 쓸 수 있다. 탁윤재의 충돌 시각·잔압 수치 일지 기록 원장을 대조해 다음 인계의 증거를 세울 수 있다."
-  },
-  "biography": "탁윤재는 충돌 시각·잔압 수치 일지 기록을 손에 익힌 아관사 양군 공동실무 인물이다. 난간 충격의 각도를 몸으로 기억하고, 급수 호스를 군수 줄로 바꾸라는 쪽지를 태운다. 말은 짧고 발자국은 정확하다.\n\n- 생업: 충돌 시각·잔압 수치 일지 기록\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 교량 통행 사고 당사자\n**생애.** 2065-05-03에 태어났다. 2126년 개막 현재 양군 교량 통행 사고 당사자 직무를 맡아 충돌 시각·잔압 수치 일지 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 충돌 시각·잔압 수치 일지 기록 창구가 탁윤재의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 공동실무원. 직함은 양군 교량 통행 사고 당사자. 충돌 시각·잔압 수치 일지 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 구의 교량 난간 충돌 직후, 급수 호스를 군수 줄로 바꾸라는 쪽지가 탁윤재에게 건네진다. 탁윤재는 쪽지를 태우고 충돌 시각과 잔압 수치를 한 일지에 옮기고, 선솔우의 펌프 일지와 수치를 맞추러 간다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 선솔우의 펌프 일지와 잔압을 맞추고, 영한뫼의 의무소 들것과 사고 줄을 나눈다. 한재목의 급수 연장 제의를 사고 뒤에만 읽는다.\n\n**야망.** 탁윤재는 양군 교량 통행 사고 당사자 직무에서 충돌 시각·잔압 수치 일지 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 양군 교량 통행 사고 당사자 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 당사자 진술로 잔압 사고를 밝히거나, 충돌을 적대행위로 고쳐 쓸 수 있다. 탁윤재의 충돌 시각·잔압 수치 일지 기록 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −25 | 무력 35 | 물질 5 | 공동 25 | 원칙 5 | 공개 −10 | 자격 −5 | 분산 −15 | 변혁 −5\n- 욕망: 갈망 20 | 독점 30 | 위험 20 | 과시 −25 | 지속 −5 | 지향 양성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-14"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "탁윤재",
-        "type": "계약",
-        "to": "선솔우",
-        "basis": "선솔우의 펌프 일지와 잔압을 맞추고"
-      },
-      {
-        "from": "탁윤재",
-        "type": "계약",
-        "to": "영한뫼",
-        "basis": "영한뫼의 의무소 들것과 사고 줄을 나눈다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

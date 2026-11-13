@@ -1,469 +1,119 @@
 {
   "id": "person-1012",
   "name": "팜반득",
-  "title": "차단문 안쪽 야간 정비 조장",
-  "position": "차단문 안쪽 야간 정비 조장",
+  "title": "부품 가공공",
+  "position": "부품 가공공 · 구로역",
   "characterId": "K1012",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "정비사",
+  "rank": "손",
+  "commonTier": "T5",
+  "occupation": "부품 가공",
   "gender": "남성",
   "stage": "S4",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Diaspora-Corridors#인물-팜반득-phạm-văn-đức-범반득",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-1012",
   "birthDate": "2089-04-17",
   "birthday": "04-17",
   "age": 37,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/name-pools/diaspora-family-lineages.json",
-    "lore/factions/Diaspora-Corridors.json"
-  ],
-  "familyTree": {
-    "personId": "K1012",
-    "nodes": [
-      {
-        "id": "FH-K1012-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "응우옌 티 란",
-        "nameEn": "Nguyễn Thị Lan",
-        "birthDate": "2059-04-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K1012-M-01"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "응우옌 티 란은 2059년에 태어났다. 구로공단 기숙사의 가족 기록과 작업 사본을 읽으며 자랐고, 2077년부터 이웃과 물품 인계 내역을 대조했다.",
-            "summaryEn": "Nguyễn Thị Lan was born in 2059 and grew up reading family and work records. From 2077, this ancestor compared goods-transfer records with neighbors.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/cast-family-trees.json",
-                "anchor": "FH-K1012-M-01"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1012-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "응우옌 티 흐엉",
-        "nameEn": "Nguyễn Thị Hương",
-        "birthDate": "2029-04-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K1012-M-02"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2047,
-            "summary": "응우옌 티 흐엉은 2029년에 태어났다. 구로공단 기숙사의 가족 기록과 작업 사본을 읽으며 자랐고, 2047년부터 이웃과 물품 인계 내역을 대조했다.",
-            "summaryEn": "Nguyễn Thị Hương was born in 2029 and grew up reading family and work records. From 2047, this ancestor compared goods-transfer records with neighbors.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/cast-family-trees.json",
-                "anchor": "FH-K1012-M-02"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1012-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "쩐 티 마이",
-        "nameEn": "Trần Thị Mai",
-        "birthDate": "1999-04-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K1012-M-03"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "쩐 티 마이는 2030년 대정전 당시 구로공단 기숙사 생활권에서 구로공단 민간 야간 라인 기능공 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "summaryEn": "Trần Thị Mai was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/cast-family-trees.json",
-                "anchor": "FH-K1012-M-03"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "DF-PHAM-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "팜반민",
-        "birthDate": "1999-04-17",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/diaspora-family-lineages.json",
-            "anchor": "guro-pham-family/DF-PHAM-01"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "date": "2030-10-14",
-            "summary": "2030년 구로 야간 라인에서 수동 정비와 기숙사 교대 명부를 지키고, 2046년부터 아들 팜반뚜언에게 정비를 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/diaspora-family-lineages.json",
-                "anchor": "guro-pham-family/DF-PHAM-01"
-              }
-            ]
-          },
-          {
-            "year": 2046,
-            "summary": "2030년 구로 야간 라인에서 수동 정비와 기숙사 교대 명부를 지키고, 2046년부터 아들 팜반뚜언에게 정비를 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/diaspora-family-lineages.json",
-                "anchor": "guro-pham-family/DF-PHAM-01"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "DF-PHAM-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "팜반뚜언",
-        "birthDate": "2029-04-17",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/diaspora-family-lineages.json",
-            "anchor": "guro-pham-family/DF-PHAM-02"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2046,
-            "summary": "2046년 정비를 배우기 시작하고, 2055년 가산 생활권의 친족 곁으로 거처를 옮기며 구로 동료들과 정비 기록 사본을 나누어 보관한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/diaspora-family-lineages.json",
-                "anchor": "guro-pham-family/DF-PHAM-02"
-              }
-            ]
-          },
-          {
-            "year": 2055,
-            "summary": "2046년 정비를 배우기 시작하고, 2055년 가산 생활권의 친족 곁으로 거처를 옮기며 구로 동료들과 정비 기록 사본을 나누어 보관한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/diaspora-family-lineages.json",
-                "anchor": "guro-pham-family/DF-PHAM-02"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "DF-PHAM-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "팜반록",
-        "birthDate": "2059-04-17",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/diaspora-family-lineages.json",
-            "anchor": "guro-pham-family/DF-PHAM-03"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2109,
-            "summary": "가산에서 정비 기록과 작업 언어를 아들 팜반득에게 가르치고, 2109년 함께 가족의 정비 기록을 구로 작업 현장으로 가져와 설비와 대조하고 수리를 익힌다.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/diaspora-family-lineages.json",
-                "anchor": "guro-pham-family/DF-PHAM-03"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "K1012",
-        "personId": "K1012",
-        "kind": "person",
-        "name": "팜반득",
-        "birthDate": "2089-04-17",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/diaspora-family-lineages.json",
-            "anchor": "guro-pham-family/K1012"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2109,
-            "summary": "가산 생활권에서 태어난 팜반득은 2109년 아버지 팜반록과 함께 가족의 정비 기록을 구로 작업 현장으로 가져와 기숙사 정비사들에게 차단문 수리를 배운다. 공구 반납과 교대 기록을 지키며 동료들의 신뢰를 얻어 야간 정비 조장을 맡는다. 2126년에는 린샤오메이와 식량 계약을 맺고 최일석과 탄약고 하청을 교섭한다. 증조부의 기록은 작업과 숙소를 설명하는 자료로 쓰며, 기숙사 세대 명부를 시민권과 같은 급으로 인정받으려 한다. 구로공단 기숙 잔존의 베트남계 가계. 증조부 팜반민은 붕괴 전 야간 라인 기능공이었다. 팜반득은 2089년 가산 생활권에서 태어났고, 2109년 아버지 팜반록과 함께 가족의 정비 기록을 구로의 작업 현장으로 가져와 기숙사 정비사들에게 일을 배웠다. 낡은 작업 기록을 설비에 대조하며 수리를 익혔고, 공구 반납과 교대 기록을 지켜 야간 정비 조장을 맡았다. 베트남어로 일상 대화를 나누며 작업에서는 한국어 지시를 쓴다. 1999년생 증조부 팜반민은 2030년 구로공단 설비가 멈추자 동료들과 수동 정비를 이어갔다. 아들 팜반뚜언은 공구와 반납 내역을 적었고, 2055년 가산 생활권의 친족 곁으로 거처를 옮기며 사본을 가져가고 구로에도 한 벌을 남겼다. 손자 팜반록은 가산에서 그 기록을 풀어 읽었다. 팜반록은 2109년 아들 팜반득과 기록을 구로 작업 현장으로 가져와 설비와 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/diaspora-family-lineages.json",
-                "anchor": "guro-pham-family/K1012"
-              }
-            ]
-          },
-          {
-            "year": 2126,
-            "summary": "가산 생활권에서 태어난 팜반득은 2109년 아버지 팜반록과 함께 가족의 정비 기록을 구로 작업 현장으로 가져와 기숙사 정비사들에게 차단문 수리를 배운다. 공구 반납과 교대 기록을 지키며 동료들의 신뢰를 얻어 야간 정비 조장을 맡는다. 2126년에는 린샤오메이와 식량 계약을 맺고 최일석과 탄약고 하청을 교섭한다. 증조부의 기록은 작업과 숙소를 설명하는 자료로 쓰며, 기숙사 세대 명부를 시민권과 같은 급으로 인정받으려 한다. 구로공단 기숙 잔존의 베트남계 가계. 증조부 팜반민은 붕괴 전 야간 라인 기능공이었다. 팜반득은 2089년 가산 생활권에서 태어났고, 2109년 아버지 팜반록과 함께 가족의 정비 기록을 구로의 작업 현장으로 가져와 기숙사 정비사들에게 일을 배웠다. 낡은 작업 기록을 설비에 대조하며 수리를 익혔고, 공구 반납과 교대 기록을 지켜 야간 정비 조장을 맡았다. 베트남어로 일상 대화를 나누며 작업에서는 한국어 지시를 쓴다. 1999년생 증조부 팜반민은 2030년 구로공단 설비가 멈추자 동료들과 수동 정비를 이어갔다. 아들 팜반뚜언은 공구와 반납 내역을 적었고, 2055년 가산 생활권의 친족 곁으로 거처를 옮기며 사본을 가져가고 구로에도 한 벌을 남겼다. 손자 팜반록은 가산에서 그 기록을 풀어 읽었다. 팜반록은 2109년 아들 팜반득과 기록을 구로 작업 현장으로 가져와 설비와 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/diaspora-family-lineages.json",
-                "anchor": "guro-pham-family/K1012"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-1012"
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K1012-M-02:FH-K1012-M-01:biological",
-        "from": "FH-K1012-M-02",
-        "to": "FH-K1012-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K1012-M-02"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1012-M-03:FH-K1012-M-02:biological",
-        "from": "FH-K1012-M-03",
-        "to": "FH-K1012-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K1012-M-03"
-          }
-        ]
-      },
-      {
-        "id": "DF-PHAM-01:DF-PHAM-02:biological",
-        "from": "DF-PHAM-01",
-        "to": "DF-PHAM-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/diaspora-family-lineages.json",
-            "anchor": "guro-pham-family/DF-PHAM-02"
-          }
-        ]
-      },
-      {
-        "id": "DF-PHAM-02:DF-PHAM-03:biological",
-        "from": "DF-PHAM-02",
-        "to": "DF-PHAM-03",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/diaspora-family-lineages.json",
-            "anchor": "guro-pham-family/DF-PHAM-03"
-          }
-        ]
-      },
-      {
-        "id": "DF-PHAM-03:K1012:biological",
-        "from": "DF-PHAM-03",
-        "to": "K1012",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/diaspora-family-lineages.json",
-            "anchor": "guro-pham-family/K1012"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1012-M-01:K1012:biological",
-        "from": "FH-K1012-M-01",
-        "to": "K1012",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/diaspora-family-lineages.json",
-            "anchor": "guro-pham-family/K1012"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bc94-ad6c-b85c-8303",
+    "name": "구로 범씨",
+    "crest": "clan-crests/bc94-ad6c-b85c-8303.svg"
   },
-  "proseContacts": [
-    {
-      "recipientId": "K1011",
-      "recipientName": "린샤오메이",
-      "basis": "주요 관계: 구로공단 기숙의 팜반득과 부품 대 식량 계약. 서남 경비대와는 원한에 가까운 통행 검사",
-      "sourceRef": {
-        "path": "lore/factions/Diaspora-Corridors.json",
-        "anchor": "인물-린샤오메이-임소매-list1"
-      }
-    },
-    {
-      "recipientId": "K1011",
-      "recipientName": "린샤오메이",
-      "basis": "주요 관계: 린샤오메이와 식량 계약. 동원잔존 서기 최일석과는 탄약고 하청을 두고 긴장",
-      "sourceRef": {
-        "path": "lore/factions/Diaspora-Corridors.json",
-        "anchor": "인물-팜반득-phm-vn-c-범반득-list1"
-      }
-    },
-    {
-      "recipientId": "K1016",
-      "recipientName": "최일석",
-      "basis": "주요 관계: 팜반득과 하청 긴장. 탈영 소대와는 원한. 린샤오메이와는 통행 검사",
-      "sourceRef": {
-        "path": "lore/factions/Diaspora-Corridors.json",
-        "anchor": "인물-최일석-list1"
-      }
-    }
-  ],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "구로역의 밤 교대가 시작되면 부품 가공공 팜반득이 선반 앞에 선다. 그는 집안에 전해 온 베트남어 정비 기록을 설비와 맞대어 가며 일을 익혔고, 기록은 베트남어로 읽되 조원들과는 한국어로 말한다. 차단문이 닫히면 그는 사람보다 볼트 수를 먼저 세고, 빌린 공구의 반납표가 비면 그날 깎은 부품을 내보내지 않는다. 나이는 서른일곱이다. 대림 린샤오메이의 조와 맺은 끼니 계약은 사본 두 장을 따로 보관한다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "부품 가공공",
+    "품계": "손",
+    "생업": "부품 가공",
+    "일하는 역": "구로역",
+    "잠자는 역": "구로역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "구로역의 밤 교대가 시작되면 부품 가공공 팜반득이 선반 앞에 선다. 그는 집안에 전해 온 베트남어 정비 기록을 설비와 맞대어 가며 일을 익혔고, 기록은 베트남어로 읽되 조원들과는 한국어로 말한다. 차단문이 닫히면 그는 사람보다 볼트 수를 먼저 세고, 빌린 공구의 반납표가 비면 그날 깎은 부품을 내보내지 않는다. 나이는 서른일곱이다. 대림 린샤오메이의 조와 맺은 끼니 계약은 사본 두 장을 따로 보관한다.",
+    "관직": "직함 부품 가공공. 직위 부품 가공공 · 구로역. 품계 손. 일하는 역 구로역."
+  },
+  "values": {
+    "권위": -45,
+    "개방": 55,
+    "무력": -30,
+    "물질": 25,
+    "공동": 25,
+    "원칙": 30,
+    "공개": 10,
+    "자격": 50,
+    "분산": 95,
+    "변혁": 40
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": -20,
+    "위험": -30,
+    "과시": -20,
+    "지속": 50,
+    "지향": "이성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-1012",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "팜반득",
+        "type": "계약",
+        "to": "린샤오메이",
+        "basis": "대림 조가 깎은 펌프 날개를 받고 끼니 꾸러미를 내주는 장. 사본 두 장을 따로 둔다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "린샤오메이",
+        "type": "계약",
+        "to": "팜반득",
+        "basis": "펌프 날개를 내주고 끼니 꾸러미를 받는 장. 한국어와 중국어 두 장으로 쓴다"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 5,
+        "effective": 5
+      },
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "strategy": {
-        "base": 10,
-        "effective": 10
-      },
-      "negotiation": {
-        "base": 11,
-        "effective": 11
-      },
-      "management": {
-        "base": 13,
-        "effective": 13
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 13,
-        "effective": 13
+        "base": 8,
+        "effective": 8
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 10,
-        "effective": 10
       }
     },
-    "skills": [
-      {
-        "id": "k1012-equipment-repair",
-        "name": {
-          "ko": "설비 정비",
-          "en": "Equipment repair"
-        },
-        "rating": 70
-      },
-      {
-        "id": "k1012-tool-return",
-        "name": {
-          "ko": "공구 반납 관리",
-          "en": "Tool-return tracking"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k1012-trait-1",
-        "name": {
-          "ko": "볼트와 부절",
-          "en": "Bolts and attachments"
-        },
-        "description": {
-          "ko": "작업 조건이 자기 언어로 확인되기 전에는 설비를 죄지 않는다.",
-          "en": "Does not secure equipment before work terms are confirmed in his language."
-        },
-        "behavior": {
-          "ko": "작업 조건이 자기 언어로 확인되기 전에는 설비를 죄지 않는다.",
-          "en": "Does not secure equipment before work terms are confirmed in his language."
-        },
-        "stress": {
-          "ko": "차단 훈련에서 기숙사 대피가 빠지는 것을 경계한다.",
-          "en": "Guards against dormitory evacuation being omitted in gate drills."
-        },
-        "relationship": {
-          "ko": "린샤오메이와 식량을 계약하고 최일석과 하청을 두고 긴장한다.",
-          "en": "Contracts food with Lin Xiaomei and disputes subcontracting with Choe Ilseok."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "낡은 작업 기록을 설비와 대조해 수리를 익혔고 공구 반납과 교대 기록으로 동료의 신뢰를 얻었다. 베트남어 부절 없는 계약에는 볼트를 죄지 않으며 기숙사 대피가 빠지는 차단 훈련을 두려워한다.",
-      "en": "He learned repairs by comparing old work records with equipment and earned colleagues’ trust through tool returns and shift records. He will not tighten bolts on a contract lacking a Vietnamese attachment and fears drills omitting dormitory evacuation."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -501,85 +151,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-44810-S02",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K1012",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:kingdom-s02",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-44810-S02",
-          "directLiegePersonId": "K029"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bc94-ad6c-b85c-8303",
-    "name": "구로 범씨",
-    "crest": "clan-crests/bc94-ad6c-b85c-8303.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": false,
-  "values": {
-    "권위": -10,
-    "개방": 40,
-    "무력": -20,
-    "물질": 10,
-    "공동": 50,
-    "원칙": 40,
-    "공개": 10,
-    "자격": 30,
-    "분산": 40,
-    "변혁": 30
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": -20,
-    "위험": -30,
-    "과시": -20,
-    "지속": 50,
-    "지향": "이성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "성명": "팜반득. 기숙사 명부 덕. 장부 한글 범반득",
-    "캐릭터 ID": "K1012",
-    "생년월일": "2089-04-17. 나이: 2126년 12월 31일 기준 만 37세",
-    "출생지": "가산 생활권",
-    "성별": "남성",
-    "품계": "없음",
-    "가치관": "권위 −10 | 개방 40 | 무력 −20 | 물질 10 | 공동 50 | 원칙 40 | 공개 10 | 자격 30 | 분산 40 | 변혁 30",
-    "욕망": "갈망 40 | 독점 −20 | 위험 −30 | 과시 −20 | 지속 50 | 지향 이성 | 결합 계약동거",
-    "출신 공동체": "구로공단 기숙 잔존의 베트남계 가계. 증조부 팜반민은 붕괴 전 야간 라인 기능공이었다. 팜반득은 2089년 가산 생활권에서 태어났고, 2109년 아버지 팜반록과 함께 가족의 정비 기록을 구로의 작업 현장으로 가져와 기숙사 정비사들에게 일을 배웠다. 낡은 작업 기록을 설비에 대조하며 수리를 익혔고, 공구 반납과 교대 기록을 지켜 야간 정비 조장을 맡았다. 베트남어로 일상 대화를 나누며 작업에서는 한국어 지시를 쓴다. 1999년생 증조부 팜반민은 2030년 구로공단 설비가 멈추자 동료들과 수동 정비를 이어갔다. 아들 팜반뚜언은 공구와 반납 내역을 적었고, 2055년 가산 생활권의 친족 곁으로 거처를 옮기며 사본을 가져가고 구로에도 한 벌을 남겼다. 손자 팜반록은 가산에서 그 기록을 풀어 읽었다. 팜반록은 2109년 아들 팜반득과 기록을 구로 작업 현장으로 가져와 설비와 대조했다.",
-    "언어": "베트남어 일상, 한국어 작업 지시, 중국어 숫자만",
-    "생업": "정비사",
-    "소속": "규격맹(S02). 기숙 잔존 교대 장부. 서남 공병대에 하청으로 이름이 있다",
-    "직위": "차단문 안쪽 야간 정비 조장",
-    "징집 이력": "없음. 베트남 군적 없음. 한국 동원 명부 없음",
-    "무장 접근": "생업 공구·방호복. 공병이 빌려 주는 절단기는 반납 조건",
-    "성격": "문이 닫히면 사람보다 볼트를 먼저 센다",
-    "개인 야망": "기숙사 세대 명부를 규격맹 평의회 시민권과 같은 급으로 올린다",
-    "공포": "차단 훈련 때 기숙사 쪽 대피가 빠지는 것",
-    "통치·교섭 방식": "한국어 계약에 베트남어 부절을 붙이지 않으면 볼트를 죄지 않는다",
-    "주요 관계": "린샤오메이와 식량 계약. 동원잔존 서기 최일석과는 탄약고 하청을 두고 긴장",
-    "촉발 사건": "야간 교대가 거부되면 구로 차단문이 수동으로 안 닫힌다",
-    "업무 위치": "구로3동. 팜반득은 구로3동의 결빙 차단문 점검 결과를 가산동 야간 교대 장부에 옮긴다. 린샤오메이의 식량 계약 두 사본을 확인하고 대피 명부에서 기숙사 쪽 이름이 빠지면 수동 폐쇄 인계를 보류한다."
-  },
-  "sections": {},
-  "biography": "- 성명: 팜반득. 기숙사 명부 덕. 장부 한글 범반득\n- 캐릭터 ID: K1012\n- 생년월일: 2089-04-17. 나이: 2126년 12월 31일 기준 만 37세\n- 출생지: 가산 생활권\n- 성별: 남성\n- 품계: 없음\n- 가치관: 권위 −10 | 개방 40 | 무력 −20 | 물질 10 | 공동 50 | 원칙 40 | 공개 10 | 자격 30 | 분산 40 | 변혁 30\n- 욕망: 갈망 40 | 독점 −20 | 위험 −30 | 과시 −20 | 지속 50 | 지향 이성 | 결합 계약동거\n- 출신 공동체: 구로공단 기숙 잔존의 베트남계 가계. 증조부 팜반민은 붕괴 전 야간 라인 기능공이었다. 팜반득은 2089년 가산 생활권에서 태어났고, 2109년 아버지 팜반록과 함께 가족의 정비 기록을 구로의 작업 현장으로 가져와 기숙사 정비사들에게 일을 배웠다. 낡은 작업 기록을 설비에 대조하며 수리를 익혔고, 공구 반납과 교대 기록을 지켜 야간 정비 조장을 맡았다. 베트남어로 일상 대화를 나누며 작업에서는 한국어 지시를 쓴다. 1999년생 증조부 팜반민은 2030년 구로공단 설비가 멈추자 동료들과 수동 정비를 이어갔다. 아들 팜반뚜언은 공구와 반납 내역을 적었고, 2055년 가산 생활권의 친족 곁으로 거처를 옮기며 사본을 가져가고 구로에도 한 벌을 남겼다. 손자 팜반록은 가산에서 그 기록을 풀어 읽었다. 팜반록은 2109년 아들 팜반득과 기록을 구로 작업 현장으로 가져와 설비와 대조했다.\n- 언어: 베트남어 일상, 한국어 작업 지시, 중국어 숫자만\n- 생업: 정비사\n- 소속: 규격맹(S02). 기숙 잔존 교대 장부. 서남 공병대에 하청으로 이름이 있다\n- 직위: 차단문 안쪽 야간 정비 조장\n- 징집 이력: 없음. 베트남 군적 없음. 한국 동원 명부 없음\n- 무장 접근: 생업 공구·방호복. 공병이 빌려 주는 절단기는 반납 조건\n- 성격: 문이 닫히면 사람보다 볼트를 먼저 센다\n- 개인 야망: 기숙사 세대 명부를 규격맹 평의회 시민권과 같은 급으로 올린다\n- 공포: 차단 훈련 때 기숙사 쪽 대피가 빠지는 것\n- 통치·교섭 방식: 한국어 계약에 베트남어 부절을 붙이지 않으면 볼트를 죄지 않는다\n- 주요 관계: 린샤오메이와 식량 계약. 동원잔존 서기 최일석과는 탄약고 하청을 두고 긴장\n- 촉발 사건: 야간 교대가 거부되면 구로 차단문이 수동으로 안 닫힌다\n- 업무 위치: 가산동. 팜반득은 가산동 야간 정비 당직에서 빌린 절단기와 방호복의 반납표를 확인한다. 공병의 한국어 하청 계약에 베트남어 부절이 붙지 않으면 볼트를 죄지 않고 기숙사 교대 명부에 미완료 작업을 남긴다.\n- 업무 위치: 구로3동. 팜반득은 구로3동의 결빙 차단문 점검 결과를 가산동 야간 교대 장부에 옮긴다. 린샤오메이의 식량 계약 두 사본을 확인하고 대피 명부에서 기숙사 쪽 이름이 빠지면 수동 폐쇄 인계를 보류한다.\n\n1999년 4월 17일 베트남에서 태어난 팜반민은 구로공단 야간 라인에서 일한다. 2030년 10월 14일 설비가 멈추자 동료들과 수동 정비를 이어 가고, 식량 배분에서 기숙사 주민이 빠지지 않도록 교대 명부에 이름을 적는다. 2029년 4월 17일 구로에서 태어난 아들 팜반뚜언은 2046년부터 아버지와 동료들에게 공구 사용을 배우며 빌린 공구와 반납 내역을 함께 기록한다. 2055년 가산 생활권의 친족 곁으로 거처를 옮길 때는 정비 기록 사본을 가져가고 구로에도 한 벌을 남긴다.\n\n팜반뚜언의 아들 팜반록은 2059년 4월 17일 가산 생활권에서 태어나 아버지의 기록을 풀어 쓰며 정비를 배운다. 2089년 4월 17일 같은 생활권에서 태어난 아들 팜반득에게 베트남어 작업 설명과 구로에서 쓰던 한국어 지시를 가르친다. 두 사람은 2109년 가족의 정비 기록을 구로 작업 현장으로 가져와 설비와 대조하고 기숙사 정비사들과 함께 수리를 익힌다. 팜반득은 공구 반납과 교대 기록을 지키며 동료들의 신뢰를 얻어 야간 정비 조장을 맡는다. 2126년에는 린샤오메이와 식량 계약을 맺고 최일석과 탄약고 하청을 교섭하며, 세대 명부를 시민권과 같은 급으로 인정받으려 한다.",
-  "sources": [
-    "Diaspora-Corridors"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

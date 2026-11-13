@@ -1,479 +1,232 @@
 {
   "id": "person-0170",
   "name": "박태겸",
-  "title": "역장",
-  "position": "환적국 역장",
+  "title": "용산구 국회의원",
+  "position": "용산구 국회의원 · 정부",
   "characterId": "K169",
-  "rank": "역장",
+  "rank": "국회의원",
   "commonTier": "T1",
-  "occupation": "호송 배차표 관리·공개",
+  "occupation": "구 행정",
   "gender": "남성",
   "stage": "주요",
-  "state": "S07",
-  "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-박태겸",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0170",
   "birthDate": "2071-01-09",
   "birthday": "01-09",
   "age": 55,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-07.json#/content/1",
-    "lore/characters/Core-Characters.json#/content/67",
-    "lore/chronology/Century-Annals.json#/content/441",
-    "lore/chronology/Century-Annals.json#/content/521",
-    "lore/chronology/Century-Annals.json#/content/565",
-    "lore/chronology/Century-Annals.json#/content/611",
-    "lore/chronology/Scenario-Timeline.json#/content/12"
-  ],
-  "familyTree": {
-    "personId": "K169",
-    "nodes": [
-      {
-        "id": "K169",
-        "personId": "K169",
-        "kind": "person",
-        "name": "박태겸",
-        "birthDate": "2071-01-09",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K169"
-          },
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-박태겸-p1"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 용산 철도 환적과 주둔지 울타리 용역의 손. 비상 호송이 열리면 선로가 나라보다 먼저 움직인다. 박태겸은 그 순서를 후국회의에 남기려 용산호송가의 배차표를 지켰다. 용산선로문의 유치선 당직은 장세화의 것이다. 두 손이 계절마다 자리를 바꾸면 나라가 둘로 보인다. 이태원 통역은 이 나라 안의 호다. 그래서 후국회의를 연다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-박태겸-p1"
-              }
-            ]
-          }
-        ],
-        "nameEn": "Park Taegyeom",
-        "detailRoute": "/people/person-0170"
-      },
-      {
-        "id": "FH-K169-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박현연",
-        "lineage": {
-          "surname": "박",
-          "bongwan": "밀양",
-          "clan": "bc15-bc00-c591"
-        },
-        "birthDate": "2041-01-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-박태겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2079,
-            "summary": "박현연은 2041년에 태어났다. 용산호송가의 가족 기록과 작업 사본을 읽으며 자랐고, 2059년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-박태겸-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Park Hyeonyeon was born in 2041 and grew up reading family and work records. From 2059, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Park Hyeonyeon",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K169-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박현정",
-        "lineage": {
-          "surname": "박",
-          "bongwan": "밀양",
-          "clan": "bc15-bc00-c591"
-        },
-        "birthDate": "2011-01-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-박태겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2029,
-            "summary": "박현정은 2011년에 태어났다. 용산호송가의 가족 기록과 작업 사본을 읽으며 자랐고, 2029년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-박태겸-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Park Hyeonjeong was born in 2011 and grew up reading family and work records. From 2029, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Park Hyeonjeong",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K169-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "메리 월시",
-        "birthDate": "2041-01-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-박태겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2079,
-            "summary": "메리 월시는 2041년에 태어났다. 용산호송가의 가족 기록과 작업 사본을 읽으며 자랐고, 2059년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-박태겸-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Mary Walsh was born in 2041 and grew up reading family and work records. From 2059, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Mary Walsh",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K169-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "브리짓 월시",
-        "birthDate": "2011-01-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-박태겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2029,
-            "summary": "브리짓 월시는 2011년에 태어났다. 용산호송가의 가족 기록과 작업 사본을 읽으며 자랐고, 2029년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-박태겸-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Brigid Walsh was born in 2011 and grew up reading family and work records. From 2029, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Brigid Walsh",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K169-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "박도헌",
-        "lineage": {
-          "surname": "박",
-          "bongwan": "밀양",
-          "clan": "bc15-bc00-c591"
-        },
-        "nameEn": "Park Doheon",
-        "birthDate": "1981-01-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K169-P-03"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박도헌는 2030년 대정전 당시 용산호송가 생활권에서 용산 철도 민간 용역과 이태원 민간 숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "summaryEn": "Park Doheon was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/cast-family-trees.json",
-                "anchor": "FH-K169-P-03"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K169-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "브로나 월시",
-        "nameEn": "Bróna Walsh",
-        "birthDate": "1981-01-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K169-M-03"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "브로나 월시는 2030년 대정전 당시 용산호송가 생활권에서 용산 철도 민간 용역과 이태원 민간 숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "summaryEn": "Bróna Walsh was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/cast-family-trees.json",
-                "anchor": "FH-K169-M-03"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K169-P-01:K169:biological",
-        "from": "FH-K169-P-01",
-        "to": "K169",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-박태겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K169-P-02:FH-K169-P-01:biological",
-        "from": "FH-K169-P-02",
-        "to": "FH-K169-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-박태겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K169-M-01:K169:biological",
-        "from": "FH-K169-M-01",
-        "to": "K169",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-박태겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K169-M-02:FH-K169-M-01:biological",
-        "from": "FH-K169-M-02",
-        "to": "FH-K169-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-박태겸-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K169-P-03:FH-K169-P-02:biological",
-        "from": "FH-K169-P-03",
-        "to": "FH-K169-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K169-P-03"
-          }
-        ]
-      },
-      {
-        "id": "FH-K169-M-03:FH-K169-M-02:biological",
-        "from": "FH-K169-M-03",
-        "to": "FH-K169-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K169-M-03"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bc15-bc00-c591",
+    "name": "밀양 박씨",
+    "crest": "clan-crests/bc15-bc00-c591.svg"
   },
-  "proseContacts": [
-    {
-      "recipientId": "K193",
-      "recipientName": "케빈 화이트",
-      "basis": "박태겸의 조정안을 현장에 옮기되, 선로 열쇠는 넘기지 않는다.",
-      "sourceRef": {
-        "path": "lore/characters/Cast-State-07.json",
-        "anchor": "인물-케빈-화이트-p5"
-      }
-    }
-  ],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "대통령 윤서린의 추대 때 첫 도장을 찍은 사람이 자기라는 것을, 용산구 국회의원이자 밀양 박씨 의원 집안의 세대주인 그는 잊지 않고 남들도 잊지 않게 한다. 국방부 청사와 같은 삼각지역에 구청을 두고, 이촌과 용산의 다리 북쪽 끝 초소에 대는 배급 몫을 구청 창고에서 손수 내준다. 세 번째 급수계약의 부속서가 걸린 강가 네 구 가운데 하나라, 그의 도장 없이는 정부가 강 건너와 맺는 약속이 서지 않는다. 수도방위사령관 탁서윤과는 초소 배급을 구청이 대는 대신 다리 끝 병력을 줄이지 않는다는 약정을 맺었다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "용산구 국회의원",
+    "품계": "국회의원",
+    "생업": "구 행정",
+    "일하는 역": "삼각지역",
+    "잠자는 역": "삼각지역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "대통령 윤서린의 추대 때 첫 도장을 찍은 사람이 자기라는 것을, 용산구 국회의원이자 밀양 박씨 의원 집안의 세대주인 그는 잊지 않고 남들도 잊지 않게 한다. 국방부 청사와 같은 삼각지역에 구청을 두고, 이촌과 용산의 다리 북쪽 끝 초소에 대는 배급 몫을 구청 창고에서 손수 내준다. 세 번째 급수계약의 부속서가 걸린 강가 네 구 가운데 하나라, 그의 도장 없이는 정부가 강 건너와 맺는 약속이 서지 않는다. 수도방위사령관 탁서윤과는 초소 배급을 구청이 대는 대신 다리 끝 병력을 줄이지 않는다는 약정을 맺었다.",
+    "관직": "직함 용산구 국회의원. 직위 용산구 국회의원 · 정부. 품계 국회의원. 일하는 역 삼각지역."
+  },
+  "values": {
+    "권위": 55,
+    "개방": -35,
+    "무력": 25,
+    "물질": 15,
+    "공동": -25,
+    "원칙": -20,
+    "공개": -65,
+    "자격": 55,
+    "분산": -60,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": -40,
+    "위험": 20,
+    "과시": 10,
+    "지속": -20,
+    "지향": "양성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0170",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "박태겸",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "박태겸",
+        "type": "빚",
+        "to": "윤서린",
+        "basis": "추대 때 첫 도장을 찍어 준 일을 대통령의 빚으로 적어 둔다"
+      },
+      {
+        "from": "박태겸",
+        "type": "계약",
+        "to": "탁서윤",
+        "basis": "구청이 다리 끝 초소의 배급을 대고, 수도방위사령부는 다리 끝 병력을 줄이지 않는다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "미콜라 본다렌코",
+        "type": "지휘",
+        "to": "박태겸",
+        "basis": "용산구 국회의원 박태겸의 직속"
+      },
+      {
+        "from": "가브리엘 존슨",
+        "type": "지휘",
+        "to": "박태겸",
+        "basis": "용산구 국회의원 박태겸의 직속"
+      },
+      {
+        "from": "노아 데이비스",
+        "type": "지휘",
+        "to": "박태겸",
+        "basis": "용산구 국회의원 박태겸의 직속"
+      },
+      {
+        "from": "선늘봄",
+        "type": "지휘",
+        "to": "박태겸",
+        "basis": "용산구 국회의원 박태겸의 직속"
+      },
+      {
+        "from": "박은윤",
+        "type": "지휘",
+        "to": "박태겸",
+        "basis": "용산구 국회의원 박태겸의 직속"
+      },
+      {
+        "from": "박성수",
+        "type": "지휘",
+        "to": "박태겸",
+        "basis": "용산구 국회의원 박태겸의 직속"
+      },
+      {
+        "from": "윤서린",
+        "type": "빚",
+        "to": "박태겸",
+        "basis": "추대 때 첫 도장을 찍은 박태겸에게 진 빚"
+      },
+      {
+        "from": "박성수",
+        "type": "맹세",
+        "to": "박태겸",
+        "basis": "후계 지명을 받으며 구청 장부를 집안 창고 장부보다 먼저 맞추겠다고 맹세했다"
+      },
+      {
+        "from": "문도현",
+        "type": "맹세",
+        "to": "박태겸",
+        "basis": "구청장 자리를 받으며 국회의원의 도장을 자기 뜻으로는 찍지 않겠다고 맹세했다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K169",
+    "members": [
+      {
+        "personId": "K175",
+        "name": "미콜라 본다렌코"
+      },
+      {
+        "personId": "K177",
+        "name": "가브리엘 존슨"
+      },
+      {
+        "personId": "K185",
+        "name": "노아 데이비스"
+      },
+      {
+        "personId": "K362",
+        "name": "선늘봄"
+      },
+      {
+        "personId": "person-0465",
+        "name": "박은윤"
+      },
+      {
+        "personId": "K1019",
+        "name": "박성수"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 12,
-        "effective": 12
+      "diplomacy": {
+        "base": 10,
+        "effective": 10
       },
-      "strategy": {
-        "base": 11,
-        "effective": 11
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 13,
-        "effective": 13
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "management": {
-        "base": 14,
-        "effective": 14
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 11,
-        "effective": 11
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
       }
     },
     "skills": [
       {
-        "id": "k169-dispatch-disclosure",
-        "name": {
-          "ko": "배차표 공개",
-          "en": "Dispatch disclosure"
-        },
-        "rating": 65
+        "id": "s17-0170-annex",
+        "name": "부속서 흥정",
+        "rating": 74
       }
     ],
     "traits": [
       {
-        "id": "k169-trait-1",
-        "name": {
-          "ko": "호송보다 회의",
-          "en": "Council before escort"
-        },
-        "description": {
-          "ko": "운송 정체에 공동 회의를 먼저 연다.",
-          "en": "Calls a shared council first when transport stalls."
-        },
-        "behavior": {
-          "ko": "운송 정체에 공동 회의를 먼저 연다.",
-          "en": "Calls a shared council first when transport stalls."
-        },
-        "stress": {
-          "ko": "열차가 멈춰도 소집을 호송보다 앞세운다.",
-          "en": "Keeps council convening ahead of escorting a stopped train."
-        },
-        "relationship": {
-          "ko": "장세화와 배차를 나누며 서로의 당직을 구분한다.",
-          "en": "Shares scheduling with Jang Sehwa while keeping their duties distinct."
-        },
+        "id": "t17-0170-ledger",
+        "name": "빚을 적어 둔다",
+        "description": "준 것과 받은 것을 모두 장부에 적는다.",
+        "behavior": "도장을 찍기 전에 상대가 자기에게 무엇을 빚졌는지부터 읽는다.",
+        "stress": "빚이 장부에 적히지 않은 채 잊히면 견디지 못한다.",
+        "relationship": "동맹을 빚으로 묶어 두려 한다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "펌프 열차가 멈추자 배차표를 공개하고 호송보다 먼저 후국회의를 소집했다. 운송의 이해관계를 회의로 묶으려 하지만 장세화의 유치선 당직을 자기 배차권과 합치지는 못한다.",
-      "en": "When a pump train stopped, he disclosed its schedule and called the council before escorting it. He seeks to coordinate transport interests through the council without absorbing Jang Sehwa’s siding duty into his own scheduling authority."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -513,176 +266,156 @@
   },
   "confirmedHoldings": [
     {
-      "id": "holding:capital-s07",
+      "id": "holding:v3:duchy:11170",
       "name": {
-        "ko": "용산역 직영지"
+        "ko": "용산구 공작령"
       },
       "holderPersonId": "K169",
-      "directLiegePersonId": null,
-      "stateId": "S07",
+      "directLiegePersonId": "K144",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1117051000",
+          "name": "후암동"
+        },
+        {
+          "id": "region:1117052000",
+          "name": "용산2가동"
+        },
+        {
+          "id": "region:1117053000",
+          "name": "남영동"
+        },
+        {
+          "id": "region:1117055500",
+          "name": "청파동"
+        },
+        {
+          "id": "region:1117056000",
+          "name": "원효로1동"
+        },
+        {
+          "id": "region:1117057000",
+          "name": "원효로2동"
+        },
+        {
+          "id": "region:1117058000",
+          "name": "효창동"
+        },
+        {
+          "id": "region:1117059000",
+          "name": "용문동"
+        },
+        {
+          "id": "region:1117062500",
+          "name": "한강로동"
+        },
+        {
+          "id": "region:1117063000",
+          "name": "이촌1동"
+        },
+        {
+          "id": "region:1117064000",
+          "name": "이촌2동"
+        },
+        {
+          "id": "region:1117065000",
+          "name": "이태원1동"
+        },
+        {
+          "id": "region:1117066000",
+          "name": "이태원2동"
+        },
+        {
+          "id": "region:1117068500",
+          "name": "한남동"
+        },
+        {
+          "id": "region:1117069000",
+          "name": "서빙고동"
+        },
+        {
+          "id": "region:1117070000",
+          "name": "보광동"
+        }
+      ],
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11170",
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ],
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:용산",
+      "name": {
+        "ko": "용산역"
+      },
+      "holderPersonId": "K177",
+      "directLiegePersonId": "K169",
+      "stateId": "government",
       "stationRef": {
         "stationId": "용산",
         "stationName": "용산"
       },
-      "adminRefs": [],
+      "adminRefs": [
+        {
+          "id": "region:1117062500",
+          "name": "한강로동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": null
+      "formalTitleRank": null,
+      "holderName": "가브리엘 존슨",
+      "holderRoute": "/people/person-0178"
+    },
+    {
+      "id": "holding:v3:station:삼각지",
+      "name": {
+        "ko": "삼각지역"
+      },
+      "holderPersonId": "K185",
+      "directLiegePersonId": "K169",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "삼각지",
+        "stationName": "삼각지"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1117062500",
+          "name": "한강로동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "노아 데이비스",
+      "holderRoute": "/people/person-0186"
+    },
+    {
+      "id": "holding:v3:dong:1117058000",
+      "name": {
+        "ko": "효창동"
+      },
+      "holderPersonId": "K362",
+      "directLiegePersonId": "K169",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1117058000",
+          "name": "효창동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "선늘봄",
+      "holderRoute": "/people/person-0363"
     }
-  ],
-  "clan": {
-    "id": "bc15-bc00-c591",
-    "name": "밀양 박씨",
-    "crest": "clan-crests/bc15-bc00-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": true,
-  "values": {
-    "권위": 10,
-    "개방": 20,
-    "무력": -10,
-    "물질": 20,
-    "공동": -30,
-    "원칙": -40,
-    "공개": -40,
-    "자격": 40,
-    "분산": -10,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": -40,
-    "위험": 20,
-    "과시": 10,
-    "지속": -20,
-    "지향": "양성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "소속": "환적국",
-    "품계": "역장",
-    "직함": "환적국 역장",
-    "생업": "호송 배차표 관리·공개"
-  },
-  "sections": {
-    "생애": "2071년생인 박태겸은 2126년 환적국 역장을 맡는다. 용산 철도 환적과 주둔지 울타리 용역에 얽혀 일했다. 비상 호송이 열리면 선로가 나라보다 먼저 움직인다. 박태겸은 그 순서를 후국회의에 남기려 용산호송가의 배차표를 지켰다. 용산선로문의 유치선 당직은 장세화의 것이다. 두 손이 계절마다 자리를 바꾸면 나라가 둘로 보인다. 이태원 통역은 이 나라 안의 호다. 그래서 후국회의를 연다. 한국계 아버지와 아일랜드계 어머니를 둔 가계는 용산호송가 생활권에 뿌리를 두고 있다. 박도헌은 2030년 용산호송가에서 용산 철도 민간 용역과 이태원 민간 숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 박태겸의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "관직": "품계 역장. 직함은 환적국 역장. 생업 별명은 철도조정관.",
-    "일화": "임하준의 펌프 열차가 용산 창에 멈췄을 때, 박태겸은 배차표를 공개하고 후국회의를 소집했다. 소집이 호송보다 먼저였다.",
-    "가문": "용산호송가(HC11). 관리인. 용산선로문(HP02) 관리인은 장세화다.",
-    "관계": "장세화와 배차. 임하준의 펌프 열차.\n\n- 소속: 환적국\n- 품계: 역장\n- 직함: 환적국 역장\n- 생업: 호송 배차표 관리·공개\n- 박태겸의 환적국 역장 업무는 한강로동과 연결된다.\n\n철도조정관 박태겸을 둘러싼 선로 가문 원로와 배차원·도제다."
-  },
-  "biography": "**생애.** 2071년생인 박태겸은 2126년 환적국 역장을 맡는다. 용산 철도 환적과 주둔지 울타리 용역에 얽혀 일했다. 비상 호송이 열리면 선로가 나라보다 먼저 움직인다. 박태겸은 그 순서를 후국회의에 남기려 용산호송가의 배차표를 지켰다. 용산선로문의 유치선 당직은 장세화의 것이다. 두 손이 계절마다 자리를 바꾸면 나라가 둘로 보인다. 이태원 통역은 이 나라 안의 호다. 그래서 후국회의를 연다. 한국계 아버지와 아일랜드계 어머니를 둔 가계는 용산호송가 생활권에 뿌리를 두고 있다. 박도헌은 2030년 용산호송가에서 용산 철도 민간 용역과 이태원 민간 숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 박태겸의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**관직.** 품계 역장. 직함은 환적국 역장. 생업 별명은 철도조정관.\n**일화.** 임하준의 펌프 열차가 용산 창에 멈췄을 때, 박태겸은 배차표를 공개하고 후국회의를 소집했다. 소집이 호송보다 먼저였다.\n**가문.** 용산호송가(HC11). 관리인. 용산선로문(HP02) 관리인은 장세화다.\n**관계.** 장세화와 배차. 임하준의 펌프 열차.\n\n- 소속: 환적국\n- 품계: 역장\n- 직함: 환적국 역장\n- 생업: 호송 배차표 관리·공개\n- 박태겸의 환적국 역장 업무는 한강로동과 연결된다.\n\n철도조정관 박태겸을 둘러싼 선로 가문 원로와 배차원·도제다.",
-  "sources": [
-    "Cast-State-07",
-    "Core-Characters"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": [
-      {
-        "from": "유세진",
-        "type": "계약",
-        "to": "박태겸",
-        "basis": "서부 중계 배차 계약"
-      },
-      {
-        "from": "알렉산더 밀러",
-        "type": "경쟁",
-        "to": "박태겸",
-        "basis": "선로 가문 후계를 역장과 겨룸"
-      },
-      {
-        "from": "에바 노바코바",
-        "type": "지휘",
-        "to": "박태겸",
-        "basis": "서부 철도계약을 배차에서 운용"
-      },
-      {
-        "from": "아이작 워커",
-        "type": "사제",
-        "to": "박태겸",
-        "basis": "선로 도제로 역장 밑에서 수련"
-      },
-      {
-        "from": "루카스 슈나이더",
-        "type": "지휘",
-        "to": "박태겸",
-        "basis": "창고 임대 장부를 역장에게 보고"
-      },
-      {
-        "from": "최한결",
-        "type": "계약",
-        "to": "박태겸",
-        "basis": "서부 보수열차 배차 창구를 빌림"
-      },
-      {
-        "from": "유민호",
-        "type": "계약",
-        "to": "박태겸",
-        "basis": "중계 창구와 외곽 열차를 나눔"
-      },
-      {
-        "from": "시몬 카민스키",
-        "type": "계약",
-        "to": "박태겸",
-        "basis": "시몬 카민스키는 호송에서 지킨 인명 장부를 박태겸의 배차 창구에 전달한다. 박태겸은 실제 도착과 작은 호송의 출발을 확인해 사람의 인수가 화물 칸 기록에 빠지지 않게 한다."
-      },
-      {
-        "from": "제이컵 토머스",
-        "type": "계약",
-        "to": "박태겸",
-        "basis": "제이컵 토머스는 호송에서 지킨 인명 장부를 박태겸의 창구에 넘긴다. 박태겸은 도착 인원·배차 순서를 확인해 화물만 도착한 기록에 사람이 빠지지 않게 한다."
-      },
-      {
-        "from": "미콜라 본다렌코",
-        "type": "사제",
-        "to": "박태겸",
-        "basis": "박태겸의 도제 경로를 창에서 받치며"
-      },
-      {
-        "from": "소피아 로시",
-        "type": "지휘",
-        "to": "박태겸",
-        "basis": "박태겸의 후계 제안을 봉인 상태로만 나르는 지휘이고"
-      },
-      {
-        "from": "패트릭 오코너",
-        "type": "계약",
-        "to": "박태겸",
-        "basis": "박태겸에게 우회 좌표를 넘기는 동맹이고"
-      },
-      {
-        "from": "아데올라 아데예미",
-        "type": "계약",
-        "to": "박태겸",
-        "basis": "박태겸의 중계 유지에는 복종하되 은폐 배전은 거부한다"
-      },
-      {
-        "from": "마르틴 호라크",
-        "type": "계약",
-        "to": "박태겸",
-        "basis": "박태겸의 배차 원장 열람을 청구하고"
-      },
-      {
-        "from": "아나 포페스쿠",
-        "type": "맹세",
-        "to": "박태겸",
-        "basis": "박태겸의 중계 유지를 창 점유로 시험하며"
-      },
-      {
-        "from": "석오름",
-        "type": "맹세",
-        "to": "박태겸",
-        "basis": "박태겸의 배차 조사 시각을 증인석의 기준으로 삼는다"
-      },
-      {
-        "from": "초진솔",
-        "type": "맹세",
-        "to": "박태겸",
-        "basis": "박태겸의 배차 조사와 이홍원의 후계시험 부품 조작 소문을 증인석에서 가른다"
-      }
-    ]
-  }
+  ]
 }

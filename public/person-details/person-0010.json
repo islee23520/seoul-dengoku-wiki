@@ -1,502 +1,136 @@
 {
   "id": "person-0010",
   "name": "허도담",
-  "title": "신정기지 수문펌프 정비사",
-  "position": "신정기지 수문펌프 정비사",
+  "title": "신림 구간장",
+  "position": "신림 구간장 · 자유도시들",
   "characterId": "K010",
-  "rank": "주사",
-  "commonTier": "T5",
-  "occupation": "펌프 정비",
+  "rank": "구간장",
+  "commonTier": "T3",
+  "occupation": "구간 운영",
   "gender": "남성",
   "stage": "S2",
-  "state": "S01",
-  "stateName": "수문국",
-  "sourceRoute": "/world/Cast-State-01#인물-허도담",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0010",
   "birthDate": "2098-09-04",
   "birthday": "09-04",
   "age": 28,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-01.json#/content/137",
-    "lore/characters/Cast-State-01.json#/content/140",
-    "lore/characters/Cast-State-01.json#/content/143"
-  ],
-  "familyTree": {
-    "personId": "K010",
-    "nodes": [
-      {
-        "id": "K010",
-        "personId": "K010",
-        "kind": "person",
-        "name": "허도담",
-        "birthDate": "2098-09-04",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K010"
-          },
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허도담-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 신정기지 수문펌프 정비사 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-허도담-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0010"
-      },
-      {
-        "id": "FH-K010-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "허승석",
-        "lineage": {
-          "surname": "허",
-          "bongwan": "하양",
-          "clan": "d5c8-d558-c591-8a31"
-        },
-        "birthDate": "2068-09-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허도담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2106,
-            "summary": "허승석은 영등포 정수 당직에서 펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-허도담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K010-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "허승준",
-        "lineage": {
-          "surname": "허",
-          "bongwan": "하양",
-          "clan": "d5c8-d558-c591-8a31"
-        },
-        "birthDate": "2038-09-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허도담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "허승준은 영등포 정수 당직에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-허도담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K010-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "허승호",
-        "lineage": {
-          "surname": "허",
-          "bongwan": "하양",
-          "clan": "d5c8-d558-c591-8a31"
-        },
-        "birthDate": "2008-09-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허도담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "허승호는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-허도담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K010-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조승호",
-        "birthDate": "2068-09-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허도담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2106,
-            "summary": "조승호는 영등포 정수 당직에서 펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-허도담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K010-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김승민",
-        "birthDate": "2038-09-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허도담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "김승민은 영등포 정수 당직에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-허도담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K010-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "박승민",
-        "birthDate": "2008-09-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허도담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박승민은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-허도담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K010-P-01:K010:biological",
-        "from": "FH-K010-P-01",
-        "to": "K010",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허도담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K010-P-02:FH-K010-P-01:biological",
-        "from": "FH-K010-P-02",
-        "to": "FH-K010-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허도담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K010-P-03:FH-K010-P-02:biological",
-        "from": "FH-K010-P-03",
-        "to": "FH-K010-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허도담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K010-M-01:K010:biological",
-        "from": "FH-K010-M-01",
-        "to": "K010",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허도담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K010-M-02:FH-K010-M-01:biological",
-        "from": "FH-K010-M-02",
-        "to": "FH-K010-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허도담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K010-M-03:FH-K010-M-02:biological",
-        "from": "FH-K010-M-03",
-        "to": "FH-K010-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허도담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d5c8-d558-c591-8a31",
+    "name": "하양 허씨",
+    "crest": "clan-crests/d5c8-d558-c591-8a31.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "허도담은 하루의 대부분을 신림선 터널에서 케이블과 펌프 이음을 쇠망치로 두드려 보며 보낸다. 신림에서 관악산까지 네 역이 그의 신림 구간이고, 스물여덟의 그에게 이 구간을 준 것은 관악 공작이다. 공구함 뚜껑을 열어 두는 손은 믿지 않는다. 대답은 말보다 시운전 소리로 한다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "신림 구간장",
+    "품계": "구간장",
+    "생업": "구간 운영",
+    "일하는 역": "신림역",
+    "잠자는 역": "신림역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "허도담은 하루의 대부분을 신림선 터널에서 케이블과 펌프 이음을 쇠망치로 두드려 보며 보낸다. 신림에서 관악산까지 네 역이 그의 신림 구간이고, 스물여덟의 그에게 이 구간을 준 것은 관악 공작이다. 공구함 뚜껑을 열어 두는 손은 믿지 않는다. 대답은 말보다 시운전 소리로 한다.",
+    "관직": "직함 신림 구간장. 직위 신림 구간장 · 자유도시들. 품계 구간장. 일하는 역 신림역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": 15,
+    "무력": 0,
+    "물질": 45,
+    "공동": 0,
+    "원칙": 0,
+    "공개": 5,
+    "자격": 30,
+    "분산": 15,
+    "변혁": -5
+  },
+  "desire": {
+    "갈망": -10,
+    "독점": 35,
+    "위험": 0,
+    "과시": 15,
+    "지속": 20,
+    "지향": "무성향",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0010",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "허도담",
+        "type": "지휘",
+        "to": "이일섭",
+        "basis": "관악 공작 이일섭의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "진세빈",
+        "type": "지휘",
+        "to": "허도담",
+        "basis": "신림 구간장 허도담의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K998",
+    "name": "이일섭",
+    "courtId": "court:K998",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K010",
+    "members": [
+      {
+        "personId": "person-0020",
+        "name": "진세빈"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
       "learning": {
-        "base": 12,
-        "effective": 12
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k010-pump-maintenance",
-        "name": {
-          "ko": "펌프 정비",
-          "en": "Pump maintenance"
-        },
-        "rating": 65
-      },
-      {
-        "id": "k010-seal-measurement",
-        "name": {
-          "ko": "밀봉 두께 기록",
-          "en": "Seal-thickness recording"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k010-measured-admission",
-        "name": {
-          "ko": "계측 뒤 반입",
-          "en": "Admission after measurement"
-        },
-        "description": {
-          "ko": "도장 없는 개조 펌프를 유치선 밖에 둔다.",
-          "en": "Keeps unmeasured modified pumps outside the sidings."
-        },
-        "behavior": {
-          "ko": "도장 없는 개조 펌프를 유치선 밖에 둔다.",
-          "en": "Keeps unmeasured modified pumps outside the sidings."
-        },
-        "stress": {
-          "ko": "천왕 쪽 밀봉재가 끊긴 날 수문이 헛돌기만 하며 영등포 송수가 멈추는 것.",
-          "en": "That on the day the Cheonwang sealing stock ran out, the water gates would spin empty and the Yeongdeungpo supply would stop."
-        },
-        "relationship": {
-          "ko": "최한결에게 차륜과 펌프를 함께 고치는 사제로 묶여 있고, 박누리의 탁수 잠금이 떨어지면 야간 정비를 지휘받으며, 정시우의 호환 나사를 계약으로 받는다.",
-          "en": "Bound to Choi Hangyeol as an apprentice fixing wheels and pumps together, taking orders for night maintenance whenever Park Nuri's turbid-water lock lifted, and receiving Jeong Siwoo's compatible screws by contract."
-        },
-        "effects": []
-      },
-      {
-        "id": "k010-respect-safety-lock",
-        "name": {
-          "ko": "잠금 해제 뒤 정비",
-          "en": "Maintenance after release"
-        },
-        "description": {
-          "ko": "박누리의 탁수 잠금이 풀린 뒤 야간 정비한다.",
-          "en": "Performs night maintenance after Park Nuri releases the turbidity lock."
-        },
-        "behavior": {
-          "ko": "박누리의 탁수 잠금이 풀린 뒤 야간 정비한다.",
-          "en": "Performs night maintenance after Park Nuri releases the turbidity lock."
-        },
-        "stress": {
-          "ko": "천왕 쪽 밀봉재가 끊긴 날 수문이 헛돌기만 하며 영등포 송수가 멈추는 것.",
-          "en": "That on the day the Cheonwang sealing stock ran out, the water gates would spin empty and the Yeongdeungpo supply would stop."
-        },
-        "relationship": {
-          "ko": "최한결에게 차륜과 펌프를 함께 고치는 사제로 묶여 있고, 박누리의 탁수 잠금이 떨어지면 야간 정비를 지휘받으며, 정시우의 호환 나사를 계약으로 받는다.",
-          "en": "Bound to Choi Hangyeol as an apprentice fixing wheels and pumps together, taking orders for night maintenance whenever Park Nuri's turbid-water lock lifted, and receiving Jeong Siwoo's compatible screws by contract."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "미계측 펌프를 거부하고 밀봉 두께를 기록했다. 배운 정비와 안전 공정 준수가 강점이며 발명 경력은 없다.",
-      "en": "Rejected an unmeasured pump and recorded seal thickness. Learned maintenance and safety sequencing are strengths; invention is not recorded."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -534,80 +168,64 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d5c8-d558-c591-8a31",
-    "name": "하양 허씨",
-    "crest": "clan-crests/d5c8-d558-c591-8a31.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 55,
-    "개방": 0,
-    "무력": 10,
-    "물질": 30,
-    "공동": 25,
-    "원칙": 10,
-    "공개": 5,
-    "자격": 10,
-    "분산": -40,
-    "변혁": -15
-  },
-  "desire": {
-    "갈망": -10,
-    "독점": 35,
-    "위험": 0,
-    "과시": 15,
-    "지속": 20,
-    "지향": "무성향",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "수문국",
-    "생업": "펌프 정비",
-    "품계": "주사",
-    "직함": "신정기지 수문펌프 정비사",
-    "업무 위치": "신정3동. 신정3동 기지에서 허도담은 계측 도장이 빠진 펌프를 유치선 앞에 세워 두고 박누리의 탁수 밸브 보류가 이어지는 동안 밀봉 두께와 시운전 소음을 다시 확인한다.",
-    "가치관": "권위 55 | 개방 0 | 무력 10 | 물질 30 | 공동 25 | 원칙 10 | 공개 5 | 자격 10 | 분산 −40 | 변혁 −15",
-    "욕망": "갈망 −10 | 독점 35 | 위험 0 | 과시 15 | 지속 20 | 지향 무성향 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 신정기지 수문펌프 정비사 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 신정3동. 신정3동 기지에서 허도담은 계측 도장이 빠진 펌프를 유치선 앞에 세워 두고 박누리의 탁수 밸브 보류가 이어지는 동안 밀봉 두께와 시운전 소음을 다시 확인한다.",
-    "관직": "품계 주사. 직함은 신정기지 수문펌프 정비사. 교대마다 밀봉 두께를 칠판에 쓰고, 계측 도장 없는 개조 펌프는 유치선에 올리지 않는다.",
-    "일화": "계측 도장이 빠진 개조 펌프 한 대가 신정기지 유치선 앞에 도착한다. 허도담은 그 펌프를 유치선 밖에 세워 두고 교대 칠판의 밀봉 두께를 다시 적은 뒤, 박누리의 탁수 잠금이 풀리는 밤에 야간 정비를 시작한다.",
-    "관계": "최한결에게 차륜과 펌프를 함께 고치는 사제로 묶여 있고, 박누리의 탁수 잠금이 떨어지면 야간 정비를 지휘받으며, 정시우의 호환 나사를 계약으로 받는다.",
-    "야망": "서부 수문 펌프의 밀봉 주기를 신정 공개 정비표로 묶어 물 계약의 물리적 보증인이 된다.",
-    "공포": "천왕 쪽 밀봉재가 끊긴 날 수문이 헛돌기만 하며 영등포 송수가 멈추는 것.",
-    "개입": "대체 밀봉재를 구해 그의 정비표를 살리거나, 도장 없는 개조 펌프의 발주자를 밝혀 반장을 흔들 수 있다."
-  },
-  "biography": "나사 머리의 마모로 교대 성실을 읽고, 공구함 뚜껑을 열어 두지 않는 사람을 불신한다. 말보다 시운전 소음으로 대답한다.\n\n- 소속: 수문국\n- 생업: 펌프 정비\n- 품계: 주사\n- 직함: 신정기지 수문펌프 정비사\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 신정기지 수문펌프 정비사 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 신정3동. 신정3동 기지에서 허도담은 계측 도장이 빠진 펌프를 유치선 앞에 세워 두고 박누리의 탁수 밸브 보류가 이어지는 동안 밀봉 두께와 시운전 소음을 다시 확인한다.\n\n**관직.** 품계 주사. 직함은 신정기지 수문펌프 정비사. 교대마다 밀봉 두께를 칠판에 쓰고, 계측 도장 없는 개조 펌프는 유치선에 올리지 않는다.\n\n**일화.** 계측 도장이 빠진 개조 펌프 한 대가 신정기지 유치선 앞에 도착한다. 허도담은 그 펌프를 유치선 밖에 세워 두고 교대 칠판의 밀봉 두께를 다시 적은 뒤, 박누리의 탁수 잠금이 풀리는 밤에 야간 정비를 시작한다.\n\n**관계.** 최한결에게 차륜과 펌프를 함께 고치는 사제로 묶여 있고, 박누리의 탁수 잠금이 떨어지면 야간 정비를 지휘받으며, 정시우의 호환 나사를 계약으로 받는다.\n\n**야망.** 서부 수문 펌프의 밀봉 주기를 신정 공개 정비표로 묶어 물 계약의 물리적 보증인이 된다.\n\n**공포.** 천왕 쪽 밀봉재가 끊긴 날 수문이 헛돌기만 하며 영등포 송수가 멈추는 것.\n\n**개입.** 대체 밀봉재를 구해 그의 정비표를 살리거나, 도장 없는 개조 펌프의 발주자를 밝혀 반장을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 0 | 무력 10 | 물질 30 | 공동 25 | 원칙 10 | 공개 5 | 자격 10 | 분산 −40 | 변혁 −15\n- 욕망: 갈망 −10 | 독점 35 | 위험 0 | 과시 15 | 지속 20 | 지향 무성향 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-01"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "허도담",
-        "type": "사제",
-        "to": "최한결",
-        "basis": "최한결에게 차륜과 펌프를 함께 고치는 사제로 묶여 있고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:section:관악구:신림",
+      "name": {
+        "ko": "신림 구간"
       },
-      {
-        "from": "허도담",
-        "type": "지휘",
-        "to": "박누리",
-        "basis": "박누리의 탁수 잠금이 떨어지면 야간 정비를 지휘받으며"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "채온결",
-        "type": "지휘",
-        "to": "허도담",
-        "basis": "허도담의 펌프 시운전이 끝나는 시각에 맞춰 순찰을 재배치하며"
-      }
-    ]
-  }
+      "holderPersonId": "K010",
+      "directLiegePersonId": "K998",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "신림",
+        "stationName": "신림"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1162064500",
+          "name": "서원동"
+        },
+        {
+          "id": "region:1162074500",
+          "name": "삼성동"
+        },
+        {
+          "id": "region:1162073500",
+          "name": "대학동"
+        }
+      ],
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ],
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:신림",
+      "name": {
+        "ko": "신림역"
+      },
+      "holderPersonId": "person-0020",
+      "directLiegePersonId": "K010",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "신림",
+        "stationName": "신림"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1162064500",
+          "name": "서원동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "진세빈",
+      "holderRoute": "/people/person-0020"
+    }
+  ]
 }

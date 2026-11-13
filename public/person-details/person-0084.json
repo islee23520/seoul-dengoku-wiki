@@ -1,503 +1,108 @@
 {
   "id": "person-0084",
   "name": "기서진",
-  "title": "비군사 공동조사 전령",
-  "position": "비군사 공동조사 전령",
+  "title": "정비공",
+  "position": "정비공 · 거여역",
   "characterId": "K084",
-  "rank": "대리",
+  "rank": "정비공",
   "commonTier": "T5",
-  "occupation": "조사 문서 전달",
+  "occupation": "이식 정비",
   "gender": "남성",
   "stage": "S3",
-  "state": "S03",
-  "stateName": "태욱그룹",
-  "sourceRoute": "/world/Cast-State-03#인물-기서진",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0084",
   "birthDate": "2092-09-01",
   "birthday": "09-01",
   "age": 34,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-03.json#/content/291",
-    "lore/characters/Cast-State-03.json#/content/293"
-  ],
-  "familyTree": {
-    "personId": "K084",
-    "nodes": [
-      {
-        "id": "K084",
-        "personId": "K084",
-        "kind": "person",
-        "name": "기서진",
-        "birthDate": "2092-09-01",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K084"
-          },
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-기서진-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 비군사 공동조사 전령 자리는 무표 출발 열차 저지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-기서진-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0084"
-      },
-      {
-        "id": "FH-K084-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "기승진",
-        "lineage": {
-          "surname": "기",
-          "bongwan": "행주",
-          "clan": "ae30-d589-c8fc"
-        },
-        "birthDate": "2062-09-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-기서진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2100,
-            "summary": "기승진은 신내 환승 당직에서 조사 문서 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-기서진-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K084-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "기승현",
-        "lineage": {
-          "surname": "기",
-          "bongwan": "행주",
-          "clan": "ae30-d589-c8fc"
-        },
-        "birthDate": "2032-09-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-기서진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2070,
-            "summary": "기승현은 신내 환승 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-기서진-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K084-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "기승영",
-        "lineage": {
-          "surname": "기",
-          "bongwan": "행주",
-          "clan": "ae30-d589-c8fc"
-        },
-        "birthDate": "2002-09-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-기서진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "기승영은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-기서진-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K084-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박승섭",
-        "birthDate": "2062-09-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-기서진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2100,
-            "summary": "박승섭은 신내 환승 당직에서 조사 문서 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-기서진-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K084-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이승혁",
-        "birthDate": "2032-09-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-기서진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2070,
-            "summary": "이승혁은 신내 환승 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-기서진-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K084-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승리",
-        "birthDate": "2002-09-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-기서진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최승리는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-기서진-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K084-P-01:K084:biological",
-        "from": "FH-K084-P-01",
-        "to": "K084",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-기서진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K084-P-02:FH-K084-P-01:biological",
-        "from": "FH-K084-P-02",
-        "to": "FH-K084-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-기서진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K084-P-03:FH-K084-P-02:biological",
-        "from": "FH-K084-P-03",
-        "to": "FH-K084-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-기서진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K084-M-01:K084:biological",
-        "from": "FH-K084-M-01",
-        "to": "K084",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-기서진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K084-M-02:FH-K084-M-01:biological",
-        "from": "FH-K084-M-02",
-        "to": "FH-K084-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-기서진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K084-M-03:FH-K084-M-02:biological",
-        "from": "FH-K084-M-03",
-        "to": "FH-K084-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-기서진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ae30-d589-c8fc",
+    "name": "행주 기씨",
+    "crest": "clan-crests/ae30-d589-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "거여역 정비대는 송파 동쪽 끝 대피소들의 맞춤 날을 받는 작은 정비대라, 정비장이 비는 교대에는 서른네 살 정비공 기서진이 혼자 부위를 손본다. 그런 밤이면 그는 꺼내 쓴 연장을 쓴 차례대로 정비대 위에 늘어놓아, 첫 교대가 밤사이 무엇을 했는지 알게 한다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "정비공",
+    "품계": "정비공",
+    "생업": "이식 정비",
+    "일하는 역": "거여역",
+    "잠자는 역": "거여역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "거여역 정비대는 송파 동쪽 끝 대피소들의 맞춤 날을 받는 작은 정비대라, 정비장이 비는 교대에는 서른네 살 정비공 기서진이 혼자 부위를 손본다. 그런 밤이면 그는 꺼내 쓴 연장을 쓴 차례대로 정비대 위에 늘어놓아, 첫 교대가 밤사이 무엇을 했는지 알게 한다.",
+    "관직": "직함 정비공. 직위 정비공 · 거여역. 품계 정비공. 일하는 역 거여역."
+  },
+  "values": {
+    "권위": 25,
+    "개방": 20,
+    "무력": -30,
+    "물질": -45,
+    "공동": 25,
+    "원칙": 35,
+    "공개": 10,
+    "자격": 5,
+    "분산": -10,
+    "변혁": 45
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": -5,
+    "위험": 40,
+    "과시": 25,
+    "지속": 5,
+    "지향": "양성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0084",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
+      "martial": {
         "base": 3,
         "effective": 3
       },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+      "stewardship": {
+        "base": 7,
+        "effective": 7
+      },
+      "intrigue": {
+        "base": 6,
+        "effective": 6
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "mission",
-        "name": {
-          "ko": "공동조사 날인 확인",
-          "en": "Joint-investigation signature checks"
-        },
-        "rating": 60
-      },
-      {
-        "id": "departure",
-        "name": {
-          "ko": "배차표·출발 확인",
-          "en": "Departure and dispatch checks"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "wait-for-three-stamps",
-        "name": {
-          "ko": "세 날인 대기",
-          "en": "Wait for Three Stamps"
-        },
-        "description": {
-          "ko": "기서진은 전달의 신속함보다 세 검증 주체의 날인 완비를 출발 기준으로 삼는다.",
-          "en": "Gi Seojin makes complete approval from three validating bodies a departure condition rather than prioritizing delivery speed alone."
-        },
-        "behavior": {
-          "ko": "치료길드·안전심사·송신 검증의 날인이 모여야 출발하고 배차표 없는 열차의 무서명 출발을 막았다.",
-          "en": "Gi Seojin waits for treatment-guild, safety-review, and transmission-verification stamps and stopped an unsigned departure by a train without a dispatch schedule."
-        },
-        "stress": {
-          "ko": "전령로에서 표본 압수가 우려되면 출발을 재촉받아도 날인 조건을 유지할 수 있다.",
-          "en": "If samples risk seizure along the messenger route, Gi Seojin may retain stamp requirements despite pressure to depart."
-        },
-        "relationship": {
-          "ko": "최지우에게 도착 시각을 넘길 때도 세 날인이 갖춰진 출발이라는 조건을 우선할 수 있다.",
-          "en": "When reporting arrival times to Choi Jiu, Gi Seojin may still prioritize departure only after all three stamps are secured."
-        },
-        "effects": []
-      },
-      {
-        "id": "nonmilitary-investigations",
-        "name": {
-          "ko": "조사단 비군사성",
-          "en": "Nonmilitary Investigations"
-        },
-        "description": {
-          "ko": "기서진은 공동조사가 군사 호위나 보호권의 증거 수집으로 바뀌는 것을 거부한다.",
-          "en": "Gi Seojin rejects turning joint investigations into military escort operations or evidence collection for a protection regime."
-        },
-        "behavior": {
-          "ko": "조사단을 호위단으로 바꾸라는 쪽지를 찢고 군사 호위 칸이 적힌 경로를 되돌려 보낸다.",
-          "en": "Gi Seojin tears up requests to turn investigators into escorts and returns routes containing military-escort fields."
-        },
-        "stress": {
-          "ko": "순찰열차와 전령로가 겹쳐 표본이 압수될 우려가 있으면 비군사 경로 조건을 더욱 엄격히 볼 수 있다.",
-          "en": "If overlapping patrol-train and messenger routes threaten sample seizure, Gi Seojin may scrutinize nonmilitary route conditions more strictly."
-        },
-        "relationship": {
-          "ko": "류은비의 의료헌장에 표본 경로를 맞출 때 조사 전달이 군사 목적에 흡수되지 않도록 중시할 수 있다.",
-          "en": "When aligning sample routes with Ryu Eunbi's medical charter, Gi Seojin may emphasize preventing investigative delivery from serving military purposes."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "조사 문서의 세 날인을 확인하고 무표 열차를 세웠다. 전달 조건 집행을 평가하며 외교 대표 권한이나 무장 호위는 부여하지 않는다.",
-      "en": "He checks three signatures and stopped an undocumented train. Delivery-condition enforcement is supported, not diplomatic authority or armed escort expertise."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -507,7 +112,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -533,73 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ae30-d589-c8fc",
-    "name": "행주 기씨",
-    "crest": "clan-crests/ae30-d589-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 0,
-    "개방": 35,
-    "무력": -40,
-    "물질": 5,
-    "공동": 5,
-    "원칙": 45,
-    "공개": 55,
-    "자격": 40,
-    "분산": 20,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": -5,
-    "위험": 40,
-    "과시": 25,
-    "지속": 5,
-    "지향": "양성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "태욱그룹",
-    "생업": "조사 문서 전달",
-    "품계": "대리",
-    "직함": "비군사 공동조사 전령",
-    "업무": "가양1동. 기서진은 마곡 공동조사 쪽지에 치료·안전심사·송신 검증 날인이 모였는지 확인하고 군사 호위 칸이 있으면 경로를 되돌린다.",
-    "가치관": "권위 0 | 개방 35 | 무력 −40 | 물질 5 | 공동 5 | 원칙 45 | 공개 55 | 자격 40 | 분산 20 | 변혁 0",
-    "욕망": "갈망 45 | 독점 −5 | 위험 40 | 과시 25 | 지속 5 | 지향 양성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 기서진은 마곡 공동조사 쪽지에 치료·안전심사·송신 검증 날인이 모였는지 확인하고 군사 호위 칸이 있으면 경로를 되돌린다.\n- 업무: 가양1동. 기서진은 마곡 공동조사 쪽지에 치료·안전심사·송신 검증 날인이 모였는지 확인하고 군사 호위 칸이 있으면 경로를 되돌린다.",
-    "관직": "품계 대리. 직함은 비군사 공동조사 전령. 조사 쪽지는 치료길드·안전심사·송신 검증의 세 날인이 모인 뒤에만 출발하고, 군사 호위 칸이 적힌 경로는 되돌려 보낸다.",
-    "일화": "2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다.",
-    "관계": "류은비의 의료헌장에 표본 경로를 맞추고, 최지우의 속보 협약에 도착 시각을 넘기며, 고초윤의 공개 검사표를 상자 겉면에 붙인다.",
-    "야망": "제기동·마곡·상암의 공동조사를 무력 없이 끝내는 공개 경로를 남겨, 가짜 약과 탁수가 한 교섭자의 보호 사건으로 흡수되지 않게 한다.",
-    "공포": "전령로가 순찰열차와 겹쳐 표본이 압수되고, 공동조사가 동부 보호권의 증거 수집으로 둔갑하는 것.",
-    "개입": "세 날인이 모인 쪽지를 호송해 조사를 성사시키거나, 압수된 표본의 행방을 밝혀 전령을 구하거나 실격시킬 수 있다."
-  },
-  "biography": "표본 상자의 온도보다 호송 깃발의 색깔을 먼저 확인하고, 조사단을 호위단으로 바꾸라는 쪽지를 찢는다. 말은 적고 도착 시각은 지킨다.\n\n- 소속: 태욱그룹\n- 생업: 조사 문서 전달\n- 품계: 대리\n- 직함: 비군사 공동조사 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 기서진은 마곡 공동조사 쪽지에 치료·안전심사·송신 검증 날인이 모였는지 확인하고 군사 호위 칸이 있으면 경로를 되돌린다.\n- 업무: 가양1동. 기서진은 마곡 공동조사 쪽지에 치료·안전심사·송신 검증 날인이 모였는지 확인하고 군사 호위 칸이 있으면 경로를 되돌린다.\n\n**관직.** 품계 대리. 직함은 비군사 공동조사 전령. 조사 쪽지는 치료길드·안전심사·송신 검증의 세 날인이 모인 뒤에만 출발하고, 군사 호위 칸이 적힌 경로는 되돌려 보낸다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다.\n\n**관계.** 류은비의 의료헌장에 표본 경로를 맞추고, 최지우의 속보 협약에 도착 시각을 넘기며, 고초윤의 공개 검사표를 상자 겉면에 붙인다.\n\n**야망.** 제기동·마곡·상암의 공동조사를 무력 없이 끝내는 공개 경로를 남겨, 가짜 약과 탁수가 한 교섭자의 보호 사건으로 흡수되지 않게 한다.\n\n**공포.** 전령로가 순찰열차와 겹쳐 표본이 압수되고, 공동조사가 동부 보호권의 증거 수집으로 둔갑하는 것.\n\n**개입.** 세 날인이 모인 쪽지를 호송해 조사를 성사시키거나, 압수된 표본의 행방을 밝혀 전령을 구하거나 실격시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 35 | 무력 −40 | 물질 5 | 공동 5 | 원칙 45 | 공개 55 | 자격 40 | 분산 20 | 변혁 0\n- 욕망: 갈망 45 | 독점 −5 | 위험 40 | 과시 25 | 지속 5 | 지향 양성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-03"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "기서진",
-        "type": "계약",
-        "to": "류은비",
-        "basis": "류은비의 의료헌장에 표본 경로를 맞추고"
-      },
-      {
-        "from": "기서진",
-        "type": "계약",
-        "to": "고초윤",
-        "basis": "고초윤의 공개 검사표를 상자 겉면에 붙인다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

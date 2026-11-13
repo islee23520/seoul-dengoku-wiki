@@ -1,504 +1,118 @@
 {
   "id": "person-0415",
   "name": "천늘샘",
-  "title": "서고·의회 비상발전 운전장",
-  "position": "서고·의회 비상발전 운전장",
+  "title": "정비공",
+  "position": "정비공 · 삼성중앙역",
   "characterId": "K414",
-  "rank": "미등록",
-  "commonTier": "T4",
-  "occupation": "비상발전 연료·출력 일지 봉인",
+  "rank": "정비공",
+  "commonTier": "T5",
+  "occupation": "이식 정비",
   "gender": "남성",
   "stage": "S2",
-  "state": "S16",
-  "stateName": "정동노총",
-  "sourceRoute": "/world/Cast-State-16#인물-천늘샘",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0415",
   "birthDate": "2098-05-14",
   "birthday": "05-14",
   "age": 28,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-16.json#/content/28"
-  ],
-  "familyTree": {
-    "personId": "K414",
-    "nodes": [
-      {
-        "id": "K414",
-        "personId": "K414",
-        "kind": "person",
-        "name": "천늘샘",
-        "birthDate": "2098-05-14",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K414"
-          },
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-천늘샘-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 서고·의회 비상발전 운전장 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-천늘샘-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0415"
-      },
-      {
-        "id": "FH-K414-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "천승희",
-        "lineage": {
-          "surname": "천",
-          "bongwan": "영양",
-          "clan": "cc9c-c601-c591-agreed-b298-first"
-        },
-        "birthDate": "2068-05-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-천늘샘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2106,
-            "summary": "천승희는 서울역 등기소에서 비상발전 연료·출력 일지 봉인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-천늘샘-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K414-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "천승규",
-        "lineage": {
-          "surname": "천",
-          "bongwan": "영양",
-          "clan": "cc9c-c601-c591-agreed-b298-first"
-        },
-        "birthDate": "2038-05-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-천늘샘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "천승규는 서울역 등기소에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-천늘샘-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K414-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "천승완",
-        "lineage": {
-          "surname": "천",
-          "bongwan": "영양",
-          "clan": "cc9c-c601-c591-agreed-b298-first"
-        },
-        "birthDate": "2008-05-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-천늘샘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "천승완은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-천늘샘-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K414-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강준재",
-        "birthDate": "2068-05-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-천늘샘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2106,
-            "summary": "강준재는 서울역 등기소에서 비상발전 연료·출력 일지 봉인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-천늘샘-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K414-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임준혁",
-        "birthDate": "2038-05-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-천늘샘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "임준혁은 서울역 등기소에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-천늘샘-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K414-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "오준훈",
-        "birthDate": "2008-05-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-천늘샘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오준훈은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-천늘샘-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K414-P-01:K414:biological",
-        "from": "FH-K414-P-01",
-        "to": "K414",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-천늘샘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K414-P-02:FH-K414-P-01:biological",
-        "from": "FH-K414-P-02",
-        "to": "FH-K414-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-천늘샘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K414-P-03:FH-K414-P-02:biological",
-        "from": "FH-K414-P-03",
-        "to": "FH-K414-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-천늘샘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K414-M-01:K414:biological",
-        "from": "FH-K414-M-01",
-        "to": "K414",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-천늘샘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K414-M-02:FH-K414-M-01:biological",
-        "from": "FH-K414-M-02",
-        "to": "FH-K414-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-천늘샘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K414-M-03:FH-K414-M-02:biological",
-        "from": "FH-K414-M-03",
-        "to": "FH-K414-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-천늘샘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cc9c-c601-c591",
+    "name": "영양 천씨",
+    "crest": "clan-crests/cc9c-c601-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "천늘샘은 삼성중앙역 정비대의 정비공이고, 스물여덟에 부위가 둘이다. 셈이 빨라 정비대가 바꿈터에서 받아 온 충전을 하루 몫으로 나누는 일을 맡고, 셈이 끝나면 늘 자기 부위의 이음매를 한 번 쓸어 본다. 삼성중앙은 9호선의 깊은 역이라 굴과 터널에서 다친 사람이 많이 실려 오고, 그는 다친 사람의 몸을 열기 전에 자기 정비 틈을 먼저 열어 보이는 이 정비대의 버릇을 따른다. 역삼역 정비대의 천늘우와는 영양 천씨 한 집안에서 갈라져 나왔다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "정비공",
+    "품계": "정비공",
+    "생업": "이식 정비",
+    "일하는 역": "삼성중앙역",
+    "잠자는 역": "삼성중앙역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "천늘샘은 삼성중앙역 정비대의 정비공이고, 스물여덟에 부위가 둘이다. 셈이 빨라 정비대가 바꿈터에서 받아 온 충전을 하루 몫으로 나누는 일을 맡고, 셈이 끝나면 늘 자기 부위의 이음매를 한 번 쓸어 본다. 삼성중앙은 9호선의 깊은 역이라 굴과 터널에서 다친 사람이 많이 실려 오고, 그는 다친 사람의 몸을 열기 전에 자기 정비 틈을 먼저 열어 보이는 이 정비대의 버릇을 따른다. 역삼역 정비대의 천늘우와는 영양 천씨 한 집안에서 갈라져 나왔다.",
+    "관직": "직함 정비공. 직위 정비공 · 삼성중앙역. 품계 정비공. 일하는 역 삼성중앙역."
+  },
+  "values": {
+    "권위": 5,
+    "개방": 25,
+    "무력": -15,
+    "물질": -55,
+    "공동": 35,
+    "원칙": 30,
+    "공개": -5,
+    "자격": -5,
+    "분산": 10,
+    "변혁": 55
+  },
+  "desire": {
+    "갈망": 20,
+    "독점": -30,
+    "위험": 15,
+    "과시": -5,
+    "지속": -15,
+    "지향": "양성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0415",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
-      "learning": {
-        "base": 10,
-        "effective": 10
-      },
-      "prowess": {
+      "martial": {
         "base": 3,
         "effective": 3
       },
-      "endurance": {
-        "base": 8,
-        "effective": 8
-      }
-    },
-    "skills": [
-      {
-        "id": "emergency-generation",
-        "name": {
-          "ko": "비상발전 운전",
-          "en": "Emergency generator operation"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "출력 기준 준수",
-          "en": "Follows output thresholds"
-        },
-        "description": {
-          "ko": "최저 출력 이하에는 독촉에도 배전을 끊고 정전 때 서고와 투표 광장에 전력을 남겼다.",
-          "en": "Cuts distribution below minimum output despite pressure and preserves archive and voting-square power during a blackout."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 출력 기준 준수을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "연료 부족 때 배전 범위를 좁힐 수 있다.",
-          "en": "May narrow power allocation when fuel runs low."
-        },
-        "relationship": {
-          "ko": "선한솜과 방마빛의 시설을 받치되 은폐 배전은 거부한다.",
-          "en": "Supports Seon Hansom’s and Bang Mabit’s facilities but refuses hidden allocation."
-        },
-        "effects": []
+      "stewardship": {
+        "base": 7,
+        "effective": 7
       },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "서고와 조합원 직접투표 광장 전력을 하나의 공개 배전망으로 묶어 계약 감사의 품질 주권을 지킨다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "연료가 바닥난 밤에 함이 수동으로만 열리고, 그 공백을 동부 외부 통제이 메우는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "선한솜과 방마빛의 시설을 받치되 은폐 배전은 거부한다.",
-          "en": "Supports Seon Hansom’s and Bang Mabit’s facilities but refuses hidden allocation."
-        },
-        "effects": []
+      "intrigue": {
+        "base": 6,
+        "effective": 6
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "최저 출력 이하에는 독촉에도 배전을 끊고 정전 때 서고와 투표 광장에 전력을 남겼다.",
-      "en": "Cuts distribution below minimum output despite pressure and preserves archive and voting-square power during a blackout."
     },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -524,72 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "cc9c-c601-c591",
-    "name": "영양 천씨",
-    "crest": "clan-crests/cc9c-c601-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -20,
-    "개방": 40,
-    "무력": -25,
-    "물질": -5,
-    "공동": 15,
-    "원칙": 40,
-    "공개": 40,
-    "자격": 30,
-    "분산": 40,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 20,
-    "독점": -30,
-    "위험": 15,
-    "과시": -5,
-    "지속": -15,
-    "지향": "양성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "비상발전 연료·출력 일지 봉인",
-    "소속": "정동노총",
-    "공동체 역할": "지부장",
-    "직무": "서고·의회 비상발전 운전장",
-    "가치관": "권위 −20 | 개방 40 | 무력 −25 | 물질 −5 | 공동 15 | 원칙 40 | 공개 40 | 자격 30 | 분산 40 | 변혁 10",
-    "욕망": "갈망 20 | 독점 −30 | 위험 15 | 과시 −5 | 지속 −15 | 지향 양성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2098-05-14에 태어난 천늘샘은 영구 겨울의 시청역 조합 작업장에서 서고·의회 비상발전 운전장 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 천늘샘은 소공동의 시청역 조합 작업장에서 서고·의회 비상발전 운전장 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "직무": "공동체 역할은 지부장이며 직무는 서고·의회 비상발전 운전장이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.",
-    "일화": "세 초안 도착과 정전이 겹치자 천늘샘은 비상 발전을 서고와 투표 광장에 잠그고 조합원 총회 조명을 껐다.",
-    "관계": "천늘샘의 기존 관계 기록은 다음과 같다. 선한솜의 지하 함 온도를 발전 쪽에서 받치고, 방마빛의 대합실 창구에 출력을 맞춘다. 정유라의 교차검증에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
-    "목표": "천늘샘은 서고·의회 비상발전 운전장 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.",
-    "공포": "서고·의회 비상발전 운전장 업무의 서명이나 인계 기록이 바뀌어 천늘샘의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.",
-    "개입": "천늘샘은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다."
-  },
-  "biography": "천늘샘은 영구 겨울의 시청역 조합 작업장에서 서고·의회 비상발전 운전장 업무 기록과 공개 표결 서명을 먼저 대조한다. 급수·통행·계약 일정이 겹치는 날에는 접수 시각과 인계 순서를 같은 장부에 남긴다.\n\n- 생업: 비상발전 연료·출력 일지 봉인\n- 소속: 정동노총\n- 공동체 역할: 지부장\n- 직무: 서고·의회 비상발전 운전장\n**생애.** 2098-05-14에 태어난 천늘샘은 영구 겨울의 시청역 조합 작업장에서 서고·의회 비상발전 운전장 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 천늘샘은 소공동의 시청역 조합 작업장에서 서고·의회 비상발전 운전장 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**직무.** 공동체 역할은 지부장이며 직무는 서고·의회 비상발전 운전장이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.\n\n**일화.** 세 초안 도착과 정전이 겹치자 천늘샘은 비상 발전을 서고와 투표 광장에 잠그고 조합원 총회 조명을 껐다.\n\n**관계.** 천늘샘의 기존 관계 기록은 다음과 같다. 선한솜의 지하 함 온도를 발전 쪽에서 받치고, 방마빛의 대합실 창구에 출력을 맞춘다. 정유라의 교차검증에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**목표.** 천늘샘은 서고·의회 비상발전 운전장 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.\n\n**공포.** 서고·의회 비상발전 운전장 업무의 서명이나 인계 기록이 바뀌어 천늘샘의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.\n\n**개입.** 천늘샘은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 40 | 무력 −25 | 물질 −5 | 공동 15 | 원칙 40 | 공개 40 | 자격 30 | 분산 40 | 변혁 10\n- 욕망: 갈망 20 | 독점 −30 | 위험 15 | 과시 −5 | 지속 −15 | 지향 양성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-16"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "천늘샘",
-        "type": "계약",
-        "to": "정유라",
-        "basis": "정유라의 교차검증에는 복종하되 은폐 배전은 거부한다"
-      },
-      {
-        "from": "천늘샘",
-        "type": "계약",
-        "to": "선한솜",
-        "basis": "선한솜의 지하 함 온도를 발전 쪽에서 받치고"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

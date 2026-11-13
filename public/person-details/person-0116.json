@@ -1,386 +1,260 @@
 {
   "id": "person-0116",
   "name": "배우진",
-  "title": "사령관",
-  "position": "동방사 사령관",
+  "title": "강동 곁집장",
+  "position": "강동 곁집장 · 아크",
   "characterId": "K115",
-  "rank": "사령관",
+  "rank": "곁집장",
   "commonTier": "T1",
-  "occupation": "복구복무 명부·부품 대가 조정",
+  "occupation": "곁집 통솔",
   "gender": "남성",
   "stage": "주요",
-  "state": "S05",
-  "stateName": "동방사",
-  "sourceRoute": "/world/Cast-State-05#인물-배우진",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0116",
   "birthDate": "2083-03-04",
   "birthday": "03-04",
   "age": 43,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-05.json#/content/1",
-    "lore/characters/Core-Characters.json#/content/43",
-    "lore/chronology/Century-Annals.json#/content/444",
-    "lore/chronology/Century-Annals.json#/content/540"
-  ],
-  "familyTree": {
-    "personId": "K115",
-    "nodes": [
-      {
-        "id": "K115",
-        "personId": "K115",
-        "kind": "person",
-        "name": "배우진",
-        "birthDate": "2083-03-04",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K115"
-          },
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-배우진-p1"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 동방사 군벌 가문의 손. 민간 명부를 경비 명부와 섞는 일은 금기이다. 동부 정수와 고덕 기지를 군사 감독으로 묶은 것은 배우진의 선대가 아니라, 암사아리수정수센터가 서울 안에 남은 사실이다. 사령관 자리는 군벌 가문이 세습하고, 선대 사령관이 죽은 뒤 참모장이 비상감독 1년을 거친 뒤에 열렸다. 창동방호가의 차단문은 이홍원의 것이다. 배우진이 복구복무자 등록을 부품 대가로 요구한 것은 병조의 손이며, 가문의 서명이 따라붙지는 않는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-배우진-p1"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0116"
-      },
-      {
-        "id": "FH-K115-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "배승윤",
-        "lineage": {
-          "surname": "배",
-          "bongwan": "흥해",
-          "clan": "bc30-d765-d574-88f5"
-        },
-        "birthDate": "2053-03-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-배우진-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2091,
-            "summary": "배승윤은 생활권의 공동 거처에서 상수호위사령 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-배우진-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K115-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "배승우",
-        "lineage": {
-          "surname": "배",
-          "bongwan": "흥해",
-          "clan": "bc30-d765-d574-88f5"
-        },
-        "birthDate": "2023-03-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-배우진-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "배승우는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-배우진-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K115-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승미",
-        "birthDate": "2053-03-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-배우진-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2091,
-            "summary": "임승미는 생활권의 공동 거처에서 상수호위사령 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-배우진-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K115-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오승훈",
-        "birthDate": "2023-03-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-배우진-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오승훈은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-배우진-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K115-P-01:K115:biological",
-        "from": "FH-K115-P-01",
-        "to": "K115",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-배우진-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K115-P-02:FH-K115-P-01:biological",
-        "from": "FH-K115-P-02",
-        "to": "FH-K115-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-배우진-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K115-M-01:K115:biological",
-        "from": "FH-K115-M-01",
-        "to": "K115",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-배우진-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K115-M-02:FH-K115-M-01:biological",
-        "from": "FH-K115-M-02",
-        "to": "FH-K115-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-배우진-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bc30-d765-d574-88f5",
+    "name": "흥해 배씨",
+    "crest": "clan-crests/bc30-d765-d574-88f5.svg"
   },
-  "proseContacts": [
-    {
-      "recipientId": "K143",
-      "recipientName": "남휘강",
-      "basis": "배우진의 호위망과 겹치지만, 교량 레버는 나누어 쥔다.",
-      "sourceRef": {
-        "path": "lore/characters/Cast-State-05.json",
-        "anchor": "인물-남휘강-p5"
-      }
-    }
-  ],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "배우진은 강동 곁집장이다. 2122년 강남 대피소들이 아크로 묶일 때 가장 늦게 든 동쪽 대피소들의 집안이고, 그때 암사 취수구를 내놓은 약속을 지금 그가 지킨다. 부위는 둘로, 곁집장이 될 수 있는 가장 적은 수다. 그래서 펌프 손으로 이름난 맞수 임초원이 쇠로 맞설 때마다 그는 피가 아니라 물로 답한다. 천호 바꿈터에서 정부 쪽 기계 몸을 정비하는 일은 천호역 정비장 곽은재와 맺은 약속으로 돌아간다. 네 곁집 자리에서 그는 \"물은 우리가 대는데 자리는 맨 끝\"이라는 강동의 말을 삼키고 앉는다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "강동 곁집장",
+    "품계": "곁집장",
+    "생업": "곁집 통솔",
+    "일하는 역": "천호역",
+    "잠자는 역": "천호역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "배우진은 강동 곁집장이다. 2122년 강남 대피소들이 아크로 묶일 때 가장 늦게 든 동쪽 대피소들의 집안이고, 그때 암사 취수구를 내놓은 약속을 지금 그가 지킨다. 부위는 둘로, 곁집장이 될 수 있는 가장 적은 수다. 그래서 펌프 손으로 이름난 맞수 임초원이 쇠로 맞설 때마다 그는 피가 아니라 물로 답한다. 천호 바꿈터에서 정부 쪽 기계 몸을 정비하는 일은 천호역 정비장 곽은재와 맺은 약속으로 돌아간다. 네 곁집 자리에서 그는 \"물은 우리가 대는데 자리는 맨 끝\"이라는 강동의 말을 삼키고 앉는다.",
+    "관직": "직함 강동 곁집장. 직위 강동 곁집장 · 아크. 품계 곁집장. 일하는 역 천호역."
+  },
+  "values": {
+    "권위": 95,
+    "개방": -65,
+    "무력": 80,
+    "물질": -30,
+    "공동": 60,
+    "원칙": -40,
+    "공개": -95,
+    "자격": -55,
+    "분산": -90,
+    "변혁": 5
+  },
+  "desire": {
+    "갈망": 50,
+    "독점": 60,
+    "위험": 40,
+    "과시": 30,
+    "지속": -10,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0116",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "배우진",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "배우진",
+        "type": "경쟁",
+        "to": "임초원",
+        "basis": "강동 곁집장 자리를 두고 맞선다. 배우진은 곁집의 피로, 임초원은 펌프의 손과 부위로 선다"
+      },
+      {
+        "from": "배우진",
+        "type": "계약",
+        "to": "곽은재",
+        "basis": "천호 터널 바꿈터에서 정부 쪽 기계 몸을 정비하고 섬유와 소금을 받는 약속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "박세린",
+        "type": "지휘",
+        "to": "배우진",
+        "basis": "강동 곁집장 배우진의 직속"
+      },
+      {
+        "from": "장석윤",
+        "type": "지휘",
+        "to": "배우진",
+        "basis": "강동 곁집장 배우진의 직속"
+      },
+      {
+        "from": "양필호",
+        "type": "지휘",
+        "to": "배우진",
+        "basis": "강동 곁집장 배우진의 직속"
+      },
+      {
+        "from": "주단아",
+        "type": "지휘",
+        "to": "배우진",
+        "basis": "강동 곁집장 배우진의 직속"
+      },
+      {
+        "from": "남휘강",
+        "type": "지휘",
+        "to": "배우진",
+        "basis": "강동 곁집장 배우진의 직속"
+      },
+      {
+        "from": "임초원",
+        "type": "경쟁",
+        "to": "배우진",
+        "basis": "강동 곁집장 자리를 두고 배우진과 맞선다. 배우진은 곁집 집안의 차례를, 임초원은 암사 취수구를 돌리는 손을 내세운다"
+      },
+      {
+        "from": "이준택",
+        "type": "맹세",
+        "to": "배우진",
+        "basis": "강동 곁집장 배우진을 받들어 곁집 자리에서 강동의 몫을 말하겠다는 맹세"
+      },
+      {
+        "from": "장석윤",
+        "type": "맹세",
+        "to": "배우진",
+        "basis": "강동 곁집장 배우진에게 맹세한 뒤 고덕의 명일2동 대피소를 맡았다"
+      },
+      {
+        "from": "곽은재",
+        "type": "맹세",
+        "to": "배우진",
+        "basis": "천호 정비대를 받으며, 터널 바꿈터로 온 기계 몸을 아크 땅 깊이 들이지 않겠다고 배우진에게 한 맹세"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K1018",
+    "name": "고예진",
+    "courtId": "court:K1018",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K115",
+    "members": [
+      {
+        "personId": "K089",
+        "name": "박세린"
+      },
+      {
+        "personId": "K118",
+        "name": "장석윤"
+      },
+      {
+        "personId": "person-0125",
+        "name": "양필호"
+      },
+      {
+        "personId": "K133",
+        "name": "주단아"
+      },
+      {
+        "personId": "K143",
+        "name": "남휘강"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 12,
-        "effective": 12
-      },
-      "strategy": {
-        "base": 12,
-        "effective": 12
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 10,
         "effective": 10
       },
-      "management": {
-        "base": 13,
-        "effective": 13
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
-      "learning": {
+      "stewardship": {
         "base": 9,
         "effective": 9
       },
-      "prowess": {
+      "intrigue": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
         "base": 6,
         "effective": 6
       },
-      "endurance": {
-        "base": 9,
-        "effective": 9
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "k115-service-roster",
-        "name": {
-          "ko": "복무 명부 처리",
-          "en": "Service-roster handling"
-        },
-        "rating": 60
+        "id": "amsa-intake",
+        "name": "암사 취수구 운영",
+        "rating": 78
+      },
+      {
+        "id": "tunnel-exchange",
+        "name": "터널 바꿈터 교섭",
+        "rating": 64
+      },
+      {
+        "id": "house-levy",
+        "name": "가문 징집병 모으기",
+        "rating": 55
       }
     ],
     "traits": [
       {
-        "id": "k115-trait-1",
-        "name": {
-          "ko": "복무를 대가로",
-          "en": "Service as the price"
-        },
-        "description": {
-          "ko": "부품 거래에 복무 등록을 결부한다.",
-          "en": "Links parts exchange to service registration."
-        },
-        "behavior": {
-          "ko": "부품 거래에 복무 등록을 결부한다.",
-          "en": "Links parts exchange to service registration."
-        },
-        "stress": {
-          "ko": "상자가 돌아와도 명부를 병조에 남긴다.",
-          "en": "Retains the roster in military administration after the box is returned."
-        },
-        "relationship": {
-          "ko": "강민서와 충돌하고 이홍원의 차단문을 빌리는 관계에 머문다.",
-          "en": "Clashes with Gang Minseo and remains a borrower of I Hongwon’s gate."
-        },
+        "id": "reckons-in-water",
+        "name": "물로 셈하는 사람",
+        "description": "모든 다툼을 암사 취수구의 물 몫으로 바꾸어 말한다.",
+        "behavior": "다른 곁집과 맞설 때 물길부터 쥐고 말을 꺼낸다.",
+        "stress": "강물이 얼음 알갱이로 막히는 날에는 말이 끊기고 직접 취수구로 내려간다.",
+        "relationship": "약속을 지킨 사람은 끝까지 믿고, 한 번 어긴 사람과는 물 몫으로만 말한다.",
+        "effects": []
+      },
+      {
+        "id": "latecomers-house",
+        "name": "늦게 든 집안",
+        "description": "강동이 가장 늦게 들었다는 것을 잊지 않고, 한 번 더 증명하려 한다.",
+        "behavior": "네 곁집 자리에 가장 먼저 와서 가장 늦게 일어난다.",
+        "stress": "강동이 업신여겨진다고 느끼면 약속을 더 크게 걸어 버린다.",
+        "relationship": "전기를 쥔 송파 곁집을 경계하고, 같은 처지의 작은 대피소 사람들에게는 너그럽다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "부품 대가로 복구복무자 등록을 요구했으나 강민서는 상자를 돌려보냈다. 거부된 명부를 병조 함으로 옮긴 선택은 시민권이 아니라 호위의 빚을 남겼다. 사령관 지위가 이홍원의 차단문 권한까지 주지는 않는다.",
-      "en": "He demanded restoration-service registration in exchange for parts, but Gang Minseo returned the box. Moving the rejected roster to military administration left an escort debt rather than citizenship. His command position does not confer I Hongwon’s gate authority."
-    },
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -408,30 +282,13 @@
   },
   "confirmedHoldings": [
     {
-      "id": "holding:capital-s05",
+      "id": "holding:v3:duchy:11740",
       "name": {
-        "ko": "암사역 직영지"
+        "ko": "강동구 공작령"
       },
       "holderPersonId": "K115",
-      "directLiegePersonId": null,
-      "stateId": "S05",
-      "stationRef": {
-        "stationId": "암사",
-        "stationName": "암사"
-      },
-      "adminRefs": [],
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": null
-    },
-    {
-      "id": "holding:opening-duchy-gu-11740-S05",
-      "name": {
-        "ko": "강동구 공작령 직영지"
-      },
-      "holderPersonId": "K115",
-      "directLiegePersonId": "K144",
-      "stateId": "S05",
+      "directLiegePersonId": "K1018",
+      "stateId": "arc",
       "adminRefs": [
         {
           "id": "region:1174051500",
@@ -510,162 +367,121 @@
           "name": "둔촌2동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11740-S05",
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11740",
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
+      "formalTitleRank": null
     }
   ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "subordinateHoldings": [
     {
-      "id": "title:duchy-gu-11740-S05",
-      "name": "강동구 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K115",
-      "basis": "개막 행정 규모 그룹 gu:11740(duchy) 배분 · 결정적 후보 선정",
-      "stateId": "S05",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "region:1174051500",
-        "region:1174052500",
-        "region:1174052600",
-        "region:1174053000",
-        "region:1174054000",
-        "region:1174055000",
-        "region:1174056000",
-        "region:1174057000",
-        "region:1174058000",
-        "region:1174059000",
-        "region:1174060000",
-        "region:1174061000",
-        "region:1174062000",
-        "region:1174064000",
-        "region:1174065000",
-        "region:1174066000",
-        "region:1174068500",
-        "region:1174069000",
-        "region:1174070000"
+      "id": "holding:v3:dong:1174061000",
+      "name": {
+        "ko": "천호2동"
+      },
+      "holderPersonId": "K089",
+      "directLiegePersonId": "K115",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1174061000",
+          "name": "천호2동"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "박세린",
+      "holderRoute": "/people/person-0090"
+    },
+    {
+      "id": "holding:v3:dong:1174054000",
+      "name": {
+        "ko": "명일2동"
+      },
+      "holderPersonId": "K118",
+      "directLiegePersonId": "K115",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1174054000",
+          "name": "명일2동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "장석윤",
+      "holderRoute": "/people/person-0119"
+    },
+    {
+      "id": "holding:v3:dong:1174065000",
+      "name": {
+        "ko": "성내2동"
+      },
+      "holderPersonId": "person-0125",
+      "directLiegePersonId": "K115",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1174065000",
+          "name": "성내2동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "양필호",
+      "holderRoute": "/people/person-0125"
+    },
+    {
+      "id": "holding:v3:station:굽은다리",
+      "name": {
+        "ko": "굽은다리역"
+      },
+      "holderPersonId": "K133",
+      "directLiegePersonId": "K115",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "굽은다리",
+        "stationName": "굽은다리"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1174060000",
+          "name": "천호1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "주단아",
+      "holderRoute": "/people/person-0134"
+    },
+    {
+      "id": "holding:v3:dong:1174058000",
+      "name": {
+        "ko": "암사2동"
+      },
+      "holderPersonId": "K143",
+      "directLiegePersonId": "K115",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1174058000",
+          "name": "암사2동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "남휘강",
+      "holderRoute": "/people/person-0144"
     }
-  ],
-  "clan": {
-    "id": "bc30-d765-d574-88f5",
-    "name": "흥해 배씨",
-    "crest": "clan-crests/bc30-d765-d574-88f5.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": true,
-  "values": {
-    "권위": 70,
-    "개방": -50,
-    "무력": 70,
-    "물질": 20,
-    "공동": 40,
-    "원칙": -30,
-    "공개": -50,
-    "자격": -20,
-    "분산": -60,
-    "변혁": -40
-  },
-  "desire": {
-    "갈망": 50,
-    "독점": 60,
-    "위험": 40,
-    "과시": 30,
-    "지속": -10,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "동방사",
-    "생업": "복구복무 명부·부품 대가 조정",
-    "품계": "사령관",
-    "직함": "동방사 사령관"
-  },
-  "sections": {
-    "생애": "배우진은 3세대에 태어났다. 배우진은 동방사 군벌 가문에서 자랐다. 암사아리수정수센터는 2126년에도 서울아리수본부 산하 공공기관으로 운영되고 지방공업·지방시설 계열 서울특별시 지방공무원이 근무한다. 배우진의 동부 정수 조정과 고덕 기지 군사 감독은 그 공공기관 직위와 별개이며, 배우진에게 서울시 공무원 직급을 부여하지 않는다. 선대는 이 군사 감독 체계를 세우지 않았다. 선대 사령관이 죽은 뒤 참모장이 1년 동안 비상감독을 맡았고, 군벌 가문의 세습 사령관 자리는 그 뒤 배우진에게 열렸다. 이홍원이 창동방호가의 차단문을 관리한다. 배우진은 병조를 통해 부품 대가로 복구복무자 등록을 요구하였다. 가문은 그 요구에 서명하지 않았다.",
-    "관직": "품계 사령관. 직함은 동방사 사령관. 생업 별명은 상수호위사령.",
-    "일화": "강민서가 부품 상자를 봉해 돌려보낸 뒤, 배우진은 등록 명부를 병조 함으로 옮겼다. 그 명부로 시민권을 부여할 수 없었고, 호위의 빚만 남았다.",
-    "가문": "병조가 호위를 맡고, 이홍원이 창동방호가(HC08)의 차단문을 관리한다. 가문은 호위에 차단문 열쇠를 넘기지 않는다.",
-    "관계": "한재목과 수문 전술. 남윤경에게 동부 군량을 받는다. 강민서와 복무 등록을 두고 맞선다.\n\n- 소속: 동방사\n- 생업: 복구복무 명부·부품 대가 조정\n- 품계: 사령관\n- 직함: 동방사 사령관\n- 배우진은 암사2동과 연결된 복구복무 명부와 부품 대가 조정 업무를 맡는다. 암사역 직영지와 관련된 일에서도 창동방호가 차단문 열쇠는 이홍원이 관리한다.\n- 암사아리수정수센터는 2126년에도 서울아리수본부 산하 공공기관으로 운영되고 지방공업·지방시설 계열 서울특별시 지방공무원이 근무한다. 배우진의 동부 정수 조정과 고덕 기지 군사 감독은 그 공공기관 직위와 별개이며, 배우진에게 서울시 공무원 직급을 부여하지 않는다.\n- 배우진은 고덕2동과 연결된 고덕기지 군사 감독을 맡는다. 고덕역과 기지는 서로 다른 시설이다."
-  },
-  "biography": "**생애.** 배우진은 3세대에 태어났다. 배우진은 동방사 군벌 가문에서 자랐다. 암사아리수정수센터는 2126년에도 서울아리수본부 산하 공공기관으로 운영되고 지방공업·지방시설 계열 서울특별시 지방공무원이 근무한다. 배우진의 동부 정수 조정과 고덕 기지 군사 감독은 그 공공기관 직위와 별개이며, 배우진에게 서울시 공무원 직급을 부여하지 않는다. 선대는 이 군사 감독 체계를 세우지 않았다. 선대 사령관이 죽은 뒤 참모장이 1년 동안 비상감독을 맡았고, 군벌 가문의 세습 사령관 자리는 그 뒤 배우진에게 열렸다. 이홍원이 창동방호가의 차단문을 관리한다. 배우진은 병조를 통해 부품 대가로 복구복무자 등록을 요구하였다. 가문은 그 요구에 서명하지 않았다.\n**관직.** 품계 사령관. 직함은 동방사 사령관. 생업 별명은 상수호위사령.\n**일화.** 강민서가 부품 상자를 봉해 돌려보낸 뒤, 배우진은 등록 명부를 병조 함으로 옮겼다. 그 명부로 시민권을 부여할 수 없었고, 호위의 빚만 남았다.\n**가문.** 병조가 호위를 맡고, 이홍원이 창동방호가(HC08)의 차단문을 관리한다. 가문은 호위에 차단문 열쇠를 넘기지 않는다.\n**관계.** 한재목과 수문 전술. 남윤경에게 동부 군량을 받는다. 강민서와 복무 등록을 두고 맞선다.\n\n- 소속: 동방사\n- 생업: 복구복무 명부·부품 대가 조정\n- 품계: 사령관\n- 직함: 동방사 사령관\n- 배우진은 암사2동과 연결된 복구복무 명부와 부품 대가 조정 업무를 맡는다. 암사역 직영지와 관련된 일에서도 창동방호가 차단문 열쇠는 이홍원이 관리한다.\n- 암사아리수정수센터는 2126년에도 서울아리수본부 산하 공공기관으로 운영되고 지방공업·지방시설 계열 서울특별시 지방공무원이 근무한다. 배우진의 동부 정수 조정과 고덕 기지 군사 감독은 그 공공기관 직위와 별개이며, 배우진에게 서울시 공무원 직급을 부여하지 않는다.\n- 배우진은 고덕2동과 연결된 고덕기지 군사 감독을 맡는다. 고덕역과 기지는 서로 다른 시설이다.",
-  "sources": [
-    "Cast-State-05",
-    "Core-Characters"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": [
-      {
-        "from": "신종목",
-        "type": "지휘",
-        "to": "배우진",
-        "basis": "동방사 특수회수반 선임 공작원 출신"
-      },
-      {
-        "from": "김우찬",
-        "type": "지휘",
-        "to": "배우진",
-        "basis": "동방사 참모로서 사령 지휘를 받음"
-      },
-      {
-        "from": "정소율",
-        "type": "원한",
-        "to": "배우진",
-        "basis": "비상감독을 행정 원장에 받아 안는 원한"
-      },
-      {
-        "from": "이윤서",
-        "type": "지휘",
-        "to": "배우진",
-        "basis": "동부 교량 봉쇄 지휘를 집행"
-      },
-      {
-        "from": "정하린",
-        "type": "원한",
-        "to": "배우진",
-        "basis": "군사감독 요구에 대한 원한"
-      },
-      {
-        "from": "권미래",
-        "type": "원한",
-        "to": "배우진",
-        "basis": "검열 요구를 기술 장애로 지연"
-      },
-      {
-        "from": "조은우",
-        "type": "원한",
-        "to": "배우진",
-        "basis": "재밍 의혹을 추적"
-      },
-      {
-        "from": "강태산",
-        "type": "원한",
-        "to": "배우진",
-        "basis": "암사 순찰대와 회랑을 둘러싼 원한"
-      },
-      {
-        "from": "설봄이",
-        "type": "계약",
-        "to": "배우진",
-        "basis": "배우진의 복구 실적 공개에는 복종하되 은폐 배전은 거부한다"
-      },
-      {
-        "from": "근우람",
-        "type": "맹세",
-        "to": "배우진",
-        "basis": "배우진의 가족 복무 요구를 침상 앞에서 거부한다"
-      }
-    ]
-  }
+  ]
 }

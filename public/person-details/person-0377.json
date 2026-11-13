@@ -1,388 +1,155 @@
 {
   "id": "person-0377",
   "name": "전나경",
-  "title": "비상배급원",
-  "position": "명동역 구휼 부제",
+  "title": "서울역 역장",
+  "position": "서울역 역장 · 정부",
   "characterId": "K376",
-  "rank": "부제",
+  "rank": "역장",
   "commonTier": "T4",
-  "occupation": "구휼 물자 배분·선거 보좌",
+  "occupation": "역 행정",
   "gender": "남성",
   "stage": "S1",
-  "state": "S15",
-  "stateName": "명동대교구",
-  "sourceRoute": "/world/Cast-State-15#인물-전나경",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0377",
   "birthDate": "2075-07-04",
   "birthday": "07-04",
   "age": 51,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-15.json#/content/82",
-    "lore/characters/Cast-State-15.json#/content/83",
-    "lore/characters/Cast-State-15.json#/content/84",
-    "lore/characters/Cast-State-15.json#/content/85"
-  ],
-  "familyTree": {
-    "personId": "K376",
-    "nodes": [
-      {
-        "id": "K376",
-        "personId": "K376",
-        "kind": "person",
-        "name": "전나경",
-        "birthDate": "2075-07-04",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K376"
-          },
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-전나경-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 명동역 교구청에서 명동역 구휼 부제 일을 맡았다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-전나경-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0377"
-      },
-      {
-        "id": "FH-K376-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "전승진",
-        "lineage": {
-          "surname": "전",
-          "bongwan": "전주",
-          "clan": "c804-c804-c8fc-5168"
-        },
-        "birthDate": "2045-07-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-전나경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2083,
-            "summary": "전승진은 영등포 정수 당직에서 구휼 물자 배분·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-전나경-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K376-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "전승현",
-        "lineage": {
-          "surname": "전",
-          "bongwan": "전주",
-          "clan": "c804-c804-c8fc-5168"
-        },
-        "birthDate": "2015-07-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-전나경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "전승현은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-전나경-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K376-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤준완",
-        "birthDate": "2045-07-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-전나경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2083,
-            "summary": "윤준완은 영등포 정수 당직에서 구휼 물자 배분·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-전나경-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K376-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한준은",
-        "birthDate": "2015-07-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-전나경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한준은은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-전나경-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K376-P-01:K376:biological",
-        "from": "FH-K376-P-01",
-        "to": "K376",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-전나경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K376-P-02:FH-K376-P-01:biological",
-        "from": "FH-K376-P-02",
-        "to": "FH-K376-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-전나경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K376-M-01:K376:biological",
-        "from": "FH-K376-M-01",
-        "to": "K376",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-전나경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K376-M-02:FH-K376-M-01:biological",
-        "from": "FH-K376-M-02",
-        "to": "FH-K376-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-전나경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c804-c804-c8fc-5168",
+    "name": "전주 전씨",
+    "crest": "clan-crests/c804-c804-c8fc-5168.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "서울역 역장실의 열쇠 꾸러미는 중구 회현동 서울역에 기재된 역장 전나경이 늘 들고 다닌다. 전주 전씨인 쉰한 살 남성이다. 서울에서 가장 큰 역의 출입구와 열과 공기를 맡고, 강 건너 상인이 임시 기재를 받고 머무는 허가 상인 대기소도 그의 사무소가 관리한다. 대기소에 들일 상인의 수는 여러 도시 상인들의 위임을 받은 차유선과 철마다 맞추는 약정으로 정한다. 세 번째 급수계약에 서울역 우물 하나와 깊은 층 팬 하나가 걸려 있어, 그는 올겨울 우물 자리의 도면을 손에서 놓지 않는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "서울역 역장",
+    "품계": "역장",
+    "생업": "역 행정",
+    "일하는 역": "서울역",
+    "잠자는 역": "서울역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "서울역 역장실의 열쇠 꾸러미는 중구 회현동 서울역에 기재된 역장 전나경이 늘 들고 다닌다. 전주 전씨인 쉰한 살 남성이다. 서울에서 가장 큰 역의 출입구와 열과 공기를 맡고, 강 건너 상인이 임시 기재를 받고 머무는 허가 상인 대기소도 그의 사무소가 관리한다. 대기소에 들일 상인의 수는 여러 도시 상인들의 위임을 받은 차유선과 철마다 맞추는 약정으로 정한다. 세 번째 급수계약에 서울역 우물 하나와 깊은 층 팬 하나가 걸려 있어, 그는 올겨울 우물 자리의 도면을 손에서 놓지 않는다.",
+    "관직": "직함 서울역 역장. 직위 서울역 역장 · 정부. 품계 역장. 일하는 역 서울역."
+  },
+  "values": {
+    "권위": 45,
+    "개방": -20,
+    "무력": 20,
+    "물질": 60,
+    "공동": -25,
+    "원칙": -30,
+    "공개": -45,
+    "자격": 5,
+    "분산": -55,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": 15,
+    "위험": -15,
+    "과시": 10,
+    "지속": -15,
+    "지향": "무성향",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0377",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "전나경",
+        "type": "지휘",
+        "to": "남시윤",
+        "basis": "중구 국회의원 남시윤의 직속"
+      },
+      {
+        "from": "전나경",
+        "type": "계약",
+        "to": "차유선",
+        "basis": "허가 상인 대기소에 들일 강 건너 상인의 수를 철마다 맞추는 약정"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "신보람",
+        "type": "경쟁",
+        "to": "전나경",
+        "basis": "서울역 정원 고시를 두고 세 해째 서류로 맞서고 있다."
+      },
+      {
+        "from": "남시윤",
+        "type": "계약",
+        "to": "전나경",
+        "basis": "서울역 대기소에 머물 강 건너 상인의 정원을 두고 맺은 약정"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K377",
+    "name": "남시윤",
+    "courtId": "court:K377",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "intrigue": {
         "base": 7,
         "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "water-routing",
-        "name": {
-          "ko": "우회 급수로 운용",
-          "en": "Alternate water routing"
-        },
-        "rating": 55
+        "id": "p0377-air",
+        "name": "역 공기 관리",
+        "rating": 68
       }
     ],
     "traits": [
       {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "대체 경로를 찾음",
-          "en": "Seeks alternate routes"
-        },
-        "description": {
-          "ko": "동파 관로를 억지로 녹이지 않고 우회 급수를 열었다. 비밀 군량에 반대하고 피난 가족에게 임시표를 줬다.",
-          "en": "Opens alternate water access rather than forcing frozen pipes to thaw. Opposes hidden military rations and issues temporary tickets to displaced families."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 대체 경로를 찾음을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "공급이 막히면 원래 경로보다 우회에 집중할 수 있다.",
-          "en": "May focus on alternatives rather than the original route when supply fails."
-        },
-        "relationship": {
-          "ko": "윤서린에게 사본을 넘기고 남윤경의 비밀 군량을 거스른다.",
-          "en": "Passes copies to Yun Seorin and resists Nam Yungyeong’s hidden military rations."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "윤서린에게 사본을 넘기고 남윤경의 비밀 군량을 거스른다.",
-          "en": "Passes copies to Yun Seorin and resists Nam Yungyeong’s hidden military rations."
-        },
+        "id": "p0377-trait-1",
+        "name": "큰 역의 호흡",
+        "description": "역을 하나의 몸으로 보고 공기부터 챙긴다.",
+        "behavior": "사람 수가 늘면 팬의 돌림을 먼저 확인한다.",
+        "stress": "대기소가 차면 바깥 사람보다 등재민의 공기를 먼저 지킨다.",
+        "relationship": "강 건너 상인들은 그를 까다롭지만 약속을 지키는 사람으로 안다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "동파 관로를 억지로 녹이지 않고 우회 급수를 열었다. 비밀 군량에 반대하고 피난 가족에게 임시표를 줬다.",
-      "en": "Opens alternate water access rather than forcing frozen pipes to thaw. Opposes hidden military rations and issues temporary tickets to displaced families."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -420,79 +187,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c804-c804-c8fc-5168",
-    "name": "전주 전씨",
-    "crest": "clan-crests/c804-c804-c8fc-5168.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 0,
-    "개방": 35,
-    "무력": -15,
-    "물질": 65,
-    "공동": -30,
-    "원칙": -50,
-    "공개": -20,
-    "자격": -10,
-    "분산": -5,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": 15,
-    "위험": -15,
-    "과시": 10,
-    "지속": -15,
-    "지향": "무성향",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "구휼 물자 배분·선거 보좌",
-    "소속": "명동대교구 (명동역)",
-    "품계": "부제",
-    "직함": "명동역 구휼 부제",
-    "가치관": "권위 0 | 개방 35 | 무력 −15 | 물질 65 | 공동 −30 | 원칙 −50 | 공개 −20 | 자격 −10 | 분산 −5 | 변혁 −5",
-    "욕망": "갈망 0 | 독점 15 | 위험 −15 | 과시 10 | 지속 −15 | 지향 무성향 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2075-07-04에 태어난 전나경은 영구 겨울의 명동역 교구청에서 명동역 구휼 부제 일을 맡는다. 구휼 물자 배분·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 전나경은 명동 행정동의 명동역 교구청에서 명동역 구휼 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 부제. 직함은 명동역 구휼 부제. 구휼 물자 배분·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
-    "일화": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.",
-    "관계": "윤서린에게 배급 원장 사본을 넘기고, 남윤경의 비밀 군량을 거스르며, 백온의 남하 가족에게 임시표를 준다.",
-    "야망": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-    "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-    "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
-  },
-  "biography": "전나경은 명동역 구휼 부제 업무에서 구휼 물자 배분·선거 보좌 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 구휼 물자 배분·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 명동역 구휼 부제\n**생애.** 2075-07-04에 태어난 전나경은 영구 겨울의 명동역 교구청에서 명동역 구휼 부제 일을 맡는다. 구휼 물자 배분·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 전나경은 명동 행정동의 명동역 교구청에서 명동역 구휼 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 부제. 직함은 명동역 구휼 부제. 구휼 물자 배분·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.\n\n**관계.** 윤서린에게 배급 원장 사본을 넘기고, 남윤경의 비밀 군량을 거스르며, 백온의 남하 가족에게 임시표를 준다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 35 | 무력 −15 | 물질 65 | 공동 −30 | 원칙 −50 | 공개 −20 | 자격 −10 | 분산 −5 | 변혁 −5\n- 욕망: 갈망 0 | 독점 15 | 위험 −15 | 과시 10 | 지속 −15 | 지향 무성향 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-15"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "전나경",
-        "type": "계약",
-        "to": "윤서린",
-        "basis": "배급 원장 사본을 기록청에 넘김"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "방늘재",
-        "type": "계약",
-        "to": "전나경",
-        "basis": "전나경의 비상 배급줄과 침상을 나누고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:서울역",
+      "name": {
+        "ko": "서울역"
       },
-      {
-        "from": "천솔빛",
-        "type": "지휘",
-        "to": "전나경",
-        "basis": "전나경의 지휘로 광장 줄을 집행하고"
-      }
-    ]
-  }
+      "holderPersonId": "K376",
+      "directLiegePersonId": "K377",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "서울역",
+        "stationName": "서울역"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1117053000",
+          "name": "남영동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

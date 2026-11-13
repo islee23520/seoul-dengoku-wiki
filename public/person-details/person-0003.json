@@ -1,394 +1,132 @@
 {
   "id": "person-0003",
   "name": "김태운",
-  "title": "수문경비대장",
-  "position": "수문경비대장",
+  "title": "당산 취수구대 대주",
+  "position": "당산 취수구대 대주 · 당산역",
   "characterId": "K003",
-  "rank": "주사",
-  "commonTier": "T5",
-  "occupation": "수문 경비",
+  "rank": "대주",
+  "commonTier": "T2",
+  "occupation": "취수구 정비",
   "gender": "여성",
   "stage": "S1",
-  "state": "S01",
-  "stateName": "수문국",
-  "sourceRoute": "/world/Cast-State-01#인물-김태운",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0003",
   "birthDate": "2064-10-31",
   "birthday": "10-31",
   "age": 62,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-01.json#/content/82",
-    "lore/characters/Cast-State-01.json#/content/84"
-  ],
-  "familyTree": {
-    "personId": "K003",
-    "nodes": [
-      {
-        "id": "K003",
-        "personId": "K003",
-        "kind": "person",
-        "name": "김태운",
-        "birthDate": "2064-10-31",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K003"
-          },
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-김태운-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 수문경비대장 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-김태운-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0003"
-      },
-      {
-        "id": "FH-K003-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김승석",
-        "lineage": {
-          "surname": "김",
-          "bongwan": "청풍",
-          "clan": "ae40-ccad-d48d-91d1"
-        },
-        "birthDate": "2034-10-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-김태운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "김승석은 영등포 정수 당직에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-김태운-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K003-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김승준",
-        "lineage": {
-          "surname": "김",
-          "bongwan": "청풍",
-          "clan": "ae40-ccad-d48d-91d1"
-        },
-        "birthDate": "2004-10-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-김태운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "김승준은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-김태운-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K003-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정승준",
-        "birthDate": "2034-10-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-김태운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "정승준은 영등포 정수 당직에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-김태운-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K003-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승석",
-        "birthDate": "2004-10-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-김태운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤승석은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-김태운-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K003-P-01:K003:biological",
-        "from": "FH-K003-P-01",
-        "to": "K003",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-김태운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K003-P-02:FH-K003-P-01:biological",
-        "from": "FH-K003-P-02",
-        "to": "FH-K003-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-김태운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K003-M-01:K003:biological",
-        "from": "FH-K003-M-01",
-        "to": "K003",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-김태운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K003-M-02:FH-K003-M-01:biological",
-        "from": "FH-K003-M-02",
-        "to": "FH-K003-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-김태운-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ae40-ccad-d48d-91d1",
+    "name": "청풍 김씨",
+    "crest": "clan-crests/ae40-ccad-d48d-91d1.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "김태운은 당산에 대를 둔 취수구대의 대주로, 그녀의 대는 양평동 취수구에서 당산까지 오는 물길의 관과 거름망을 맡는다. 손 열한 명이 하루 세 번 교대하며 얼음 밑 거름망에 걸린 것을 걷어 내고, 밤 교대가 비면 그녀는 젊은 손들을 재우고 제가 선다. 물이 흐려지면 영등포 장터로 가는 밸브를 먼저 잠그는 것도 그녀의 대가 정한다. 영등포 장주 한재목과 맺은 장에 따라 계약회 동안에는 선유도 쪽 취수구 길목에도 손 넷을 더 낸다. 목에 건 보증표 견본에는 \"물길 한 철 손시간 900\"이 새겨져 있다. 그녀의 김씨 집안은 영등포 장터가 처음 섰을 때 자리를 가진 다섯 장터 집안 가운데 하나이고, 2119년 대주회에서 한재목에게 이름값으로 졌어도 취수구대와 도장을 그대로 지켰다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "당산 취수구대 대주",
+    "품계": "대주",
+    "생업": "취수구 정비",
+    "일하는 역": "당산역",
+    "잠자는 역": "당산역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "김태운은 당산에 대를 둔 취수구대의 대주로, 그녀의 대는 양평동 취수구에서 당산까지 오는 물길의 관과 거름망을 맡는다. 손 열한 명이 하루 세 번 교대하며 얼음 밑 거름망에 걸린 것을 걷어 내고, 밤 교대가 비면 그녀는 젊은 손들을 재우고 제가 선다. 물이 흐려지면 영등포 장터로 가는 밸브를 먼저 잠그는 것도 그녀의 대가 정한다. 영등포 장주 한재목과 맺은 장에 따라 계약회 동안에는 선유도 쪽 취수구 길목에도 손 넷을 더 낸다. 목에 건 보증표 견본에는 \"물길 한 철 손시간 900\"이 새겨져 있다. 그녀의 김씨 집안은 영등포 장터가 처음 섰을 때 자리를 가진 다섯 장터 집안 가운데 하나이고, 2119년 대주회에서 한재목에게 이름값으로 졌어도 취수구대와 도장을 그대로 지켰다.",
+    "관직": "직함 당산 취수구대 대주. 직위 당산 취수구대 대주 · 당산역. 품계 대주. 일하는 역 당산역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": 0,
+    "무력": 0,
+    "물질": 45,
+    "공동": -15,
+    "원칙": 10,
+    "공개": 10,
+    "자격": 10,
+    "분산": 5,
+    "변혁": -10
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": 30,
+    "위험": -5,
+    "과시": 25,
+    "지속": 10,
+    "지향": "이성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0003",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "김태운",
+        "type": "지휘",
+        "to": "한재목",
+        "basis": "영등포 장주 한재목의 직속"
+      },
+      {
+        "from": "김태운",
+        "type": "계약",
+        "to": "한재목",
+        "basis": "계약회 동안 취수구 길목에 손 넷을 더 내는 장을 맺었다"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K001",
+    "name": "한재목",
+    "courtId": "court:K001",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 12,
-        "effective": 12
+      "diplomacy": {
+        "base": 5,
+        "effective": 5
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 11,
         "effective": 11
       },
-      "negotiation": {
+      "intrigue": {
         "base": 7,
         "effective": 7
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
       },
       "learning": {
         "base": 8,
         "effective": 8
       },
       "prowess": {
-        "base": 8,
-        "effective": 8
-      },
-      "endurance": {
-        "base": 10,
-        "effective": 10
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "k003-sluice-access-control",
-        "name": {
-          "ko": "수문 출입 통제",
-          "en": "Sluice access control"
-        },
-        "rating": 65
-      },
-      {
-        "id": "k003-leak-inspection",
-        "name": {
-          "ko": "누수 확인",
-          "en": "Leak inspection"
-        },
-        "rating": 60
+        "id": "fc-0003-intake-upkeep",
+        "name": "취수구 물길 정비",
+        "rating": 68
       }
     ],
-    "traits": [
-      {
-        "id": "k003-cover-for-subordinates",
-        "name": {
-          "ko": "부하의 당직을 대신",
-          "en": "Cover subordinates’ shifts"
-        },
-        "description": {
-          "ko": "부하 급수표가 밀리면 야간 당직을 선다.",
-          "en": "Covers night duty when subordinates’ water rations are delayed."
-        },
-        "behavior": {
-          "ko": "부하 급수표가 밀리면 야간 당직을 선다.",
-          "en": "Covers night duty when subordinates’ water rations are delayed."
-        },
-        "stress": {
-          "ko": "규율에 기대 잠을 줄이며 경계를 유지한다.",
-          "en": "Sacrifices sleep to maintain disciplined vigilance."
-        },
-        "relationship": {
-          "ko": "부하의 배급을 지휘 책임으로 받아들인다.",
-          "en": "Treats subordinates’ water allocation as a command responsibility."
-        },
-        "effects": []
-      },
-      {
-        "id": "k003-suspect-unauthorized-crossing",
-        "name": {
-          "ko": "무단 도하 경계",
-          "en": "Watch unauthorized crossings"
-        },
-        "description": {
-          "ko": "나사의 녹보다 무단 도하를 먼저 의심한다.",
-          "en": "Suspects unauthorized crossings before rusted screws."
-        },
-        "behavior": {
-          "ko": "나사의 녹보다 무단 도하를 먼저 의심한다.",
-          "en": "Suspects unauthorized crossings before rusted screws."
-        },
-        "stress": {
-          "ko": "폭파나 무단 개방의 가능성에 암호패를 엄격히 요구한다.",
-          "en": "Strictly demands passcodes when sabotage or unauthorized opening is feared."
-        },
-        "relationship": {
-          "ko": "김우찬과 수문 전술을 놓고 경쟁한다.",
-          "en": "Competes with Kim Uchan over sluice tactics."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "누수 시험과 야간 당직 대행, 통행 통제가 근거다. 지휘와 경계에는 강점이 있지만 구체적 교전 성과가 없어 개인 기량은 제한했다.",
-      "en": "Leak tests, covering night duty, and access control are the evidence. Command and vigilance are strengths, while personal prowess remains limited by the absence of recorded engagements."
-    },
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -426,123 +164,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "openingDisposition": {
-    "status": "personal-landless",
-    "openingYear": 2126
-  },
-  "clan": {
-    "id": "ae40-ccad-d48d-91d1",
-    "name": "청풍 김씨",
-    "crest": "clan-crests/ae40-ccad-d48d-91d1.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 55,
-    "개방": -15,
-    "무력": 10,
-    "물질": 30,
-    "공동": 10,
-    "원칙": 20,
-    "공개": 10,
-    "자격": -10,
-    "분산": -50,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": 30,
-    "위험": -5,
-    "과시": 25,
-    "지속": 10,
-    "지향": "이성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "소속": "수문국",
-    "생업": "수문 경비",
-    "품계": "주사",
-    "직함": "수문경비대장",
-    "업무 위치": "당산2동. 당산2동 교량 보고를 받는 김태운은 야간 도하 기록과 수압 시험에서 표시한 누수 이음매를 맞대어 다음 수문 경비 교대를 정한다.",
-    "가치관": "권위 55 | 개방 −15 | 무력 10 | 물질 30 | 공동 10 | 원칙 20 | 공개 10 | 자격 −10 | 분산 −50 | 변혁 −20",
-    "욕망": "갈망 15 | 독점 30 | 위험 −5 | 과시 25 | 지속 10 | 지향 이성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 수문경비대장 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 당산2동. 당산2동 교량 보고를 받는 김태운은 야간 도하 기록과 수압 시험에서 표시한 누수 이음매를 맞대어 다음 수문 경비 교대를 정한다.",
-    "관직": "품계 주사. 직함은 수문경비대장. 개방·폐쇄 시각을 공개 칠판에 쓰지만, 야간 교량 통행은 경비대 암호패 없이는 통과시키지 않는다.",
-    "일화": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 수문경비대장 자리의 서명이 장부에 올랐다.",
-    "관계": "한재목의 수문 지휘를 받으며, 최한결의 장갑 보수열차와 차단 부품을 계약으로 나누고, 암사 참모 김우찬과는 한강 수문 전술에서 경쟁한다.",
-    "야망": "한강 서부 수문과 교량을 경비대 단일 지휘 아래 묶어 물 계약의 무력 보증인이 된다.",
-    "공포": "수문 한 기가 폭파되거나 무단 개방되어 영등포 정수가 한순간에 오염되는 것.",
-    "개입": "수문 폭파 위협의 진원을 밝혀 그의 경계를 풀거나, 암호패를 위조한 밀항 증거를 넘겨 대장을 교체하게 할 수 있다."
-  },
-  "biography": "규율에 기대 잠을 줄이고, 수문 나사의 녹보다 무단 도하를 먼저 의심한다. 부하의 급수표가 밀리면 자신이 야간 당직을 선다.\n\n- 소속: 수문국\n- 생업: 수문 경비\n- 품계: 주사\n- 직함: 수문경비대장\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 수문경비대장 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 당산2동. 당산2동 교량 보고를 받는 김태운은 야간 도하 기록과 수압 시험에서 표시한 누수 이음매를 맞대어 다음 수문 경비 교대를 정한다.\n\n**관직.** 품계 주사. 직함은 수문경비대장. 개방·폐쇄 시각을 공개 칠판에 쓰지만, 야간 교량 통행은 경비대 암호패 없이는 통과시키지 않는다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 수문경비대장 자리의 서명이 장부에 올랐다.\n\n**관계.** 한재목의 수문 지휘를 받으며, 최한결의 장갑 보수열차와 차단 부품을 계약으로 나누고, 암사 참모 김우찬과는 한강 수문 전술에서 경쟁한다.\n\n**야망.** 한강 서부 수문과 교량을 경비대 단일 지휘 아래 묶어 물 계약의 무력 보증인이 된다.\n\n**공포.** 수문 한 기가 폭파되거나 무단 개방되어 영등포 정수가 한순간에 오염되는 것.\n\n**개입.** 수문 폭파 위협의 진원을 밝혀 그의 경계를 풀거나, 암호패를 위조한 밀항 증거를 넘겨 대장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −15 | 무력 10 | 물질 30 | 공동 10 | 원칙 20 | 공개 10 | 자격 −10 | 분산 −50 | 변혁 −20\n- 욕망: 갈망 15 | 독점 30 | 위험 −5 | 과시 25 | 지속 10 | 지향 이성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-01"
-  ],
-  "directLiege": {
-    "personId": "K001",
-    "name": "한재목",
-    "relationKind": "direct-liege",
-    "ownerTerm": "직속 주군",
-    "courtId": "court:K001",
-    "effectiveYear": 2126
-  },
-  "court": {
-    "id": "court:K003",
-    "members": [
-      {
-        "personId": "K728",
-        "name": "허바우"
-      },
-      {
-        "personId": "K920",
-        "name": "남아은"
-      }
-    ]
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "김태운",
-        "type": "지휘",
-        "to": "한재목",
-        "basis": "군주의 수문 지휘를 현장에서 집행"
-      },
-      {
-        "from": "김태운",
-        "type": "경쟁",
-        "to": "김우찬",
-        "basis": "한강 수문 전술을 암사 참모와 겨룸"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "김우찬",
-        "type": "경쟁",
-        "to": "김태운",
-        "basis": "한강 수문 전술을 수문국 경비와 겨룸"
-      },
-      {
-        "from": "채온결",
-        "type": "지휘",
-        "to": "김태운",
-        "basis": "김태운의 수문 지휘를 현장에서 집행하고"
-      },
-      {
-        "from": "허바우",
-        "type": "지휘",
-        "to": "김태운",
-        "basis": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"
-      },
-      {
-        "from": "남아은",
-        "type": "지휘",
-        "to": "김태운",
-        "basis": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

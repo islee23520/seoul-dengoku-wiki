@@ -1,415 +1,100 @@
 {
   "id": "person-0457",
   "name": "차예원",
-  "title": "복구복무 기록관 · 관악구 영주",
-  "position": "복구복무 기록관 · 관악구 영주",
+  "title": "계약서 서기",
+  "position": "복구복무 기록관",
   "characterId": "K457",
-  "rank": "영주",
-  "commonTier": "T3",
-  "occupation": "등기·기록",
+  "rank": "손",
+  "commonTier": "T5",
+  "occupation": "계약서 기록",
   "gender": "남성",
   "stage": "S4",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-차예원",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0457",
   "birthDate": "2098-10-29",
   "birthday": "10-29",
   "age": 28,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/324",
-    "lore/characters/Cast-State-02.json#/content/327"
-  ],
-  "familyTree": {
-    "personId": "K457",
-    "nodes": [
-      {
-        "id": "K457",
-        "personId": "K457",
-        "kind": "person",
-        "name": "차예원",
-        "birthDate": "2098-10-29",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K457"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-차예원-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-차예원-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0457"
-      },
-      {
-        "id": "FH-K457-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "차승아",
-        "lineage": {
-          "surname": "차",
-          "bongwan": "연안",
-          "clan": "cc28-c5f0-c548-agreed-c6d0-second"
-        },
-        "birthDate": "2068-10-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-차예원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2106,
-            "summary": "차승아는 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-차예원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K457-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "차승희",
-        "lineage": {
-          "surname": "차",
-          "bongwan": "연안",
-          "clan": "cc28-c5f0-c548-agreed-c6d0-second"
-        },
-        "birthDate": "2038-10-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-차예원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "차승희는 서울역 등기소에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-차예원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K457-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "차승규",
-        "lineage": {
-          "surname": "차",
-          "bongwan": "연안",
-          "clan": "cc28-c5f0-c548-agreed-c6d0-second"
-        },
-        "birthDate": "2008-10-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-차예원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "차승규는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-차예원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K457-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이태민",
-        "birthDate": "2068-10-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-차예원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2106,
-            "summary": "이태민은 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-차예원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K457-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최태수",
-        "birthDate": "2038-10-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-차예원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "최태수는 서울역 등기소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-차예원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K457-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준도",
-        "birthDate": "2008-10-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-차예원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정준도는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-차예원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K457-P-01:K457:biological",
-        "from": "FH-K457-P-01",
-        "to": "K457",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-차예원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K457-P-02:FH-K457-P-01:biological",
-        "from": "FH-K457-P-02",
-        "to": "FH-K457-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-차예원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K457-P-03:FH-K457-P-02:biological",
-        "from": "FH-K457-P-03",
-        "to": "FH-K457-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-차예원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K457-M-01:K457:biological",
-        "from": "FH-K457-M-01",
-        "to": "K457",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-차예원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K457-M-02:FH-K457-M-01:biological",
-        "from": "FH-K457-M-02",
-        "to": "FH-K457-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-차예원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K457-M-03:FH-K457-M-02:biological",
-        "from": "FH-K457-M-03",
-        "to": "FH-K457-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-차예원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cc28-c5f0-c548",
+    "name": "연안 차씨",
+    "crest": "clan-crests/cc28-c5f0-c548.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "차예원은 신림역에서 관악의 계약서를 적는 손으로, 스물여덟 해 가운데 열 해를 같은 장부 앞에서 보냈다. 관악의 작업대들이 산 아래 굴과 터널을 손보는 데 해마다 내야 하는 날수를 장부에 올리는 것이 그의 일이고, 관악 사람들은 이 날수를 복구복무라 부른다. 공작 이일섭의 도장이 찍힌 장은 모두 그의 손으로 한 번 더 베껴져 대마다 한 부씩 돌아간다. 나무 연기가 밴 신림 승강장에서 그는 날수를 채우지 못한 대의 이름을 공작에게 올리기 전에 그 대주부터 찾아간다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "계약서 서기",
+    "품계": "손",
+    "생업": "계약서 기록",
+    "일하는 역": "신림역",
+    "잠자는 역": "신림역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "차예원은 신림역에서 관악의 계약서를 적는 손으로, 스물여덟 해 가운데 열 해를 같은 장부 앞에서 보냈다. 관악의 작업대들이 산 아래 굴과 터널을 손보는 데 해마다 내야 하는 날수를 장부에 올리는 것이 그의 일이고, 관악 사람들은 이 날수를 복구복무라 부른다. 공작 이일섭의 도장이 찍힌 장은 모두 그의 손으로 한 번 더 베껴져 대마다 한 부씩 돌아간다. 나무 연기가 밴 신림 승강장에서 그는 날수를 채우지 못한 대의 이름을 공작에게 올리기 전에 그 대주부터 찾아간다.",
+    "관직": "직함 계약서 서기. 직위 복구복무 기록관. 품계 손. 일하는 역 신림역."
+  },
+  "values": {
+    "권위": -55,
+    "개방": 30,
+    "무력": -20,
+    "물질": 50,
+    "공동": 5,
+    "원칙": 10,
+    "공개": 45,
+    "자격": 70,
+    "분산": 85,
+    "변혁": 35
+  },
+  "desire": {
+    "갈망": -20,
+    "독점": -30,
+    "위험": 30,
+    "과시": -45,
+    "지속": 20,
+    "지향": "양성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0457",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": [
+      {
+        "from": "이일섭",
+        "type": "계약",
+        "to": "차예원",
+        "basis": "관악의 계약 기록을 맡은 손. 우물을 더 팔 미터 수와 손시간을 함께 맞춘다"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "management": {
-        "base": 11,
-        "effective": 11
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
         "base": 9,
@@ -418,76 +103,10 @@
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
       }
     },
-    "skills": [
-      {
-        "id": "k457-citizenship-register-check",
-        "name": {
-          "ko": "시민권 등기 대조",
-          "en": "Citizenship-registration crosscheck"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k457-action-priority",
-        "name": {
-          "ko": "원본과 이름 대조",
-          "en": "Compare names with originals"
-        },
-        "description": {
-          "ko": "구로역 길드 평의회가 강민서의 위원장 자리 근거로 삼은 시민권 줄을 다시 펼친다. 차예원은 복구복무자 등록을 거부해 그 줄에 오른 이름을 등기 원본과 차례로 맞추고, 평의회로 보낼 사본 끝에 자기 당직의 서명을 단다.",
-          "en": "The Guro Station guild council opens again the citizenship line it took as the ground for Gang Minseo's chair. Cha Yewon matches, in order against the registry originals, the names that entered that line by refusing restoration-service registration, and signs the end of the copy bound for the council with the signature of the duty."
-        },
-        "behavior": {
-          "ko": "구로역 길드 평의회가 강민서의 위원장 자리 근거로 삼은 시민권 줄을 다시 펼친다. 차예원은 복구복무자 등록을 거부해 그 줄에 오른 이름을 등기 원본과 차례로 맞추고, 평의회로 보낼 사본 끝에 자기 당직의 서명을 단다.",
-          "en": "The Guro Station guild council opens again the citizenship line it took as the ground for Gang Minseo's chair. Cha Yewon matches, in order against the registry originals, the names that entered that line by refusing restoration-service registration, and signs the end of the copy bound for the council with the signature of the duty."
-        },
-        "stress": {
-          "ko": "복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
-          "en": "That the restoration service registrar duty post would stand empty and the Alliance's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      },
-      {
-        "id": "k457-bounded-handover",
-        "name": {
-          "ko": "기록으로 잇는 당직",
-          "en": "Duty linked by records"
-        },
-        "description": {
-          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
-          "en": "Passes keys and records to the next shift without enlarging authority."
-        },
-        "behavior": {
-          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
-          "en": "Passes keys and records to the next shift without enlarging authority."
-        },
-        "stress": {
-          "ko": "복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
-          "en": "That the restoration service registrar duty post would stand empty and the Alliance's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "구로역 길드 평의회가 강민서의 위원장 자리 근거로 삼은 시민권 줄을 다시 펼친다. 차예원은 복구복무자 등록을 거부해 그 줄에 오른 이름을 등기 원본과 차례로 맞추고, 평의회로 보낼 사본 끝에 자기 당직의 서명을 단다. 짧은 행위와 인수인계가 근거여서 다른 분야의 숙련이나 보정은 발급하지 않았다.",
-      "en": "The Guro Station guild council opens again the citizenship line it took as the ground for Gang Minseo's chair. Cha Yewon matches, in order against the registry originals, the names that entered that line by refusing restoration-service registration, and signs the end of the copy bound for the council with the signature of the duty. The brief action and handover support only limited strengths; no unrelated proficiency or numeric trait bonus is issued."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -525,208 +144,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-gu-11620-S02",
-      "name": {
-        "ko": "관악구 공작령 직영지"
-      },
-      "holderPersonId": "K457",
-      "directLiegePersonId": "K029",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "region:1162052500",
-          "name": "보라매동"
-        },
-        {
-          "id": "region:1162054500",
-          "name": "청림동"
-        },
-        {
-          "id": "region:1162056500",
-          "name": "성현동"
-        },
-        {
-          "id": "region:1162057500",
-          "name": "행운동"
-        },
-        {
-          "id": "region:1162058500",
-          "name": "낙성대동"
-        },
-        {
-          "id": "region:1162059500",
-          "name": "청룡동"
-        },
-        {
-          "id": "region:1162060500",
-          "name": "은천동"
-        },
-        {
-          "id": "region:1162061500",
-          "name": "중앙동"
-        },
-        {
-          "id": "region:1162062500",
-          "name": "인헌동"
-        },
-        {
-          "id": "region:1162063000",
-          "name": "남현동"
-        },
-        {
-          "id": "region:1162064500",
-          "name": "서원동"
-        },
-        {
-          "id": "region:1162065500",
-          "name": "신원동"
-        },
-        {
-          "id": "region:1162066500",
-          "name": "서림동"
-        },
-        {
-          "id": "region:1162068500",
-          "name": "신사동"
-        },
-        {
-          "id": "region:1162069500",
-          "name": "신림동"
-        },
-        {
-          "id": "region:1162071500",
-          "name": "난향동"
-        },
-        {
-          "id": "region:1162072500",
-          "name": "조원동"
-        },
-        {
-          "id": "region:1162073500",
-          "name": "대학동"
-        },
-        {
-          "id": "region:1162074500",
-          "name": "삼성동"
-        },
-        {
-          "id": "region:1162076500",
-          "name": "미성동"
-        },
-        {
-          "id": "region:1162077500",
-          "name": "난곡동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11620-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
-    {
-      "id": "title:duchy-gu-11620-S02",
-      "name": "관악구 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K457",
-      "basis": "개막 행정 규모 그룹 gu:11620(duchy) 배분 · 결정적 후보 선정",
-      "stateId": "S02",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "region:1162052500",
-        "region:1162054500",
-        "region:1162056500",
-        "region:1162057500",
-        "region:1162058500",
-        "region:1162059500",
-        "region:1162060500",
-        "region:1162061500",
-        "region:1162062500",
-        "region:1162063000",
-        "region:1162064500",
-        "region:1162065500",
-        "region:1162066500",
-        "region:1162068500",
-        "region:1162069500",
-        "region:1162071500",
-        "region:1162072500",
-        "region:1162073500",
-        "region:1162074500",
-        "region:1162076500",
-        "region:1162077500"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
-    }
-  ],
-  "clan": {
-    "id": "cc28-c5f0-c548",
-    "name": "연안 차씨",
-    "crest": "clan-crests/cc28-c5f0-c548.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -20,
-    "개방": 15,
-    "무력": -10,
-    "물질": 35,
-    "공동": 30,
-    "원칙": 20,
-    "공개": 45,
-    "자격": 50,
-    "분산": 30,
-    "변혁": 25
-  },
-  "desire": {
-    "갈망": -20,
-    "독점": -30,
-    "위험": 30,
-    "과시": -45,
-    "지속": 20,
-    "지향": "양성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "규격맹",
-    "생업": "등기·기록",
-    "품계": "조합원",
-    "직함": "복구복무 기록관",
-    "업무 위치": "구로2동. 차예원은 구로2동 복구복무 원본에서 등록을 거부한 시민권 명단의 이름을 차례로 찾는다. 평의회에 보낼 사본에는 자기 당직의 서명을 달고 김나율의 교대 칠판에서 빠진 이름을 따로 표시한다.",
-    "가치관": "권위 −20 | 개방 15 | 무력 −10 | 물질 35 | 공동 30 | 원칙 20 | 공개 45 | 자격 50 | 분산 30 | 변혁 25",
-    "욕망": "갈망 −20 | 독점 −30 | 위험 30 | 과시 −45 | 지속 20 | 지향 양성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 업무 위치: 구로2동. 차예원은 구로2동 복구복무 원본에서 등록을 거부한 시민권 명단의 이름을 차례로 찾는다. 평의회에 보낼 사본에는 자기 당직의 서명을 달고 김나율의 교대 칠판에서 빠진 이름을 따로 표시한다.",
-    "관직": "품계 조합원. 직함은 복구복무 기록관. 평의회에 보낼 사본에는 자기 당직의 서명을 달고 김나율의 교대 칠판에서 빠진 이름을 따로 표시한다.",
-    "일화": "구로역 길드 평의회가 강민서의 위원장 자리 근거로 삼은 시민권 줄을 다시 펼친다. 차예원은 복구복무자 등록을 거부해 그 줄에 오른 이름을 등기 원본과 차례로 맞추고, 평의회로 보낼 사본 끝에 자기 당직의 서명을 단다.",
-    "관계": "차예원은 등기 원본과 맞춘 복구복무자 시민권 줄의 사본을 김나율에게 넘긴다. 김나율은 실제 교대·등록 기록을 확인해 평의회 안건에 올릴 노동 기록과 경비대가 요구하는 군사호적 사본을 구분한다.",
-    "야망": "차예원은 등록 거부자의 시민권 줄을 등기 원본과 맞추고, 누락된 이름을 표시한 사본에 자기 당직 서명을 남기려 한다.",
-    "공포": "시민권 사본을 군사호적 요구와 섞어 김나율의 교대 기록이 잘못 쓰이는 것.",
-    "개입": "플레이어는 차예원과 시민권 사본을 등기 원본에 대조하거나 김나율의 교대 칠판에서 빠진 이름을 표시할 수 있다."
-  },
-  "biography": "차예원은 시민권 사본의 누락을 표시하면서도 군사호적 요구와 노동 교대를 섞지 않는다.\n\n- 소속: 규격맹\n- 생업: 등기·기록\n- 품계: 조합원\n- 직함: 복구복무 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 업무 위치: 구로2동. 차예원은 구로2동 복구복무 원본에서 등록을 거부한 시민권 명단의 이름을 차례로 찾는다. 평의회에 보낼 사본에는 자기 당직의 서명을 달고 김나율의 교대 칠판에서 빠진 이름을 따로 표시한다.\n\n**관직.** 품계 조합원. 직함은 복구복무 기록관. 평의회에 보낼 사본에는 자기 당직의 서명을 달고 김나율의 교대 칠판에서 빠진 이름을 따로 표시한다.\n\n**일화.** 구로역 길드 평의회가 강민서의 위원장 자리 근거로 삼은 시민권 줄을 다시 펼친다. 차예원은 복구복무자 등록을 거부해 그 줄에 오른 이름을 등기 원본과 차례로 맞추고, 평의회로 보낼 사본 끝에 자기 당직의 서명을 단다.\n\n**관계.** 차예원은 등기 원본과 맞춘 복구복무자 시민권 줄의 사본을 김나율에게 넘긴다. 김나율은 실제 교대·등록 기록을 확인해 평의회 안건에 올릴 노동 기록과 경비대가 요구하는 군사호적 사본을 구분한다.\n\n**야망.** 차예원은 등록 거부자의 시민권 줄을 등기 원본과 맞추고, 누락된 이름을 표시한 사본에 자기 당직 서명을 남기려 한다.\n\n**공포.** 시민권 사본을 군사호적 요구와 섞어 김나율의 교대 기록이 잘못 쓰이는 것.\n\n**개입.** 플레이어는 차예원과 시민권 사본을 등기 원본에 대조하거나 김나율의 교대 칠판에서 빠진 이름을 표시할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 15 | 무력 −10 | 물질 35 | 공동 30 | 원칙 20 | 공개 45 | 자격 50 | 분산 30 | 변혁 25\n- 욕망: 갈망 −20 | 독점 −30 | 위험 30 | 과시 −45 | 지속 20 | 지향 양성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-02"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "차예원",
-        "type": "계약",
-        "to": "김나율",
-        "basis": "차예원은 등기 원본과 맞춘 복구복무자 시민권 줄의 사본을 김나율에게 넘긴다. 김나율은 실제 교대·등록 기록을 확인해 평의회 안건에 올릴 노동 기록과 경비대가 요구하는 군사호적 사본을 구분한다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

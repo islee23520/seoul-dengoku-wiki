@@ -1,492 +1,136 @@
 {
   "id": "person-0312",
   "name": "복용",
-  "title": "북동부 중립시장 거점장",
-  "position": "북동부 중립시장 거점장",
+  "title": "우이동 동장",
+  "position": "우이동 동장 · 정부",
   "characterId": "K311",
-  "rank": "서기",
-  "commonTier": "T4",
-  "occupation": "시장 시세·재고 게시·출고 확인",
+  "rank": "동장",
+  "commonTier": "T3",
+  "occupation": "동 행정",
   "gender": "남성",
   "stage": "S2",
-  "state": "S12",
-  "stateName": "신내운수",
-  "sourceRoute": "/world/Cast-State-12#인물-복용",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0312",
   "birthDate": "2090-10-28",
   "birthday": "10-28",
   "age": 36,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-12.json#/content/28"
-  ],
-  "familyTree": {
-    "personId": "K311",
-    "nodes": [
-      {
-        "id": "K311",
-        "personId": "K311",
-        "kind": "person",
-        "name": "복용",
-        "birthDate": "2090-10-28",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K311"
-          },
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복용-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 노량진 선창에서 자랐다. 북동부 중립시장 거점장 자리는 저울 재점검 공개로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-복용-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0312"
-      },
-      {
-        "id": "FH-K311-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "복승연",
-        "lineage": {
-          "surname": "복",
-          "bongwan": "면천",
-          "clan": "bcf5-ba74-cc9c"
-        },
-        "birthDate": "2060-10-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2098,
-            "summary": "복승연은 노량진 선창에서 시장 시세·재고 게시·출고 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-복용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K311-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "복승정",
-        "lineage": {
-          "surname": "복",
-          "bongwan": "면천",
-          "clan": "bcf5-ba74-cc9c"
-        },
-        "birthDate": "2030-10-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "복승정은 노량진 선창에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-복용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K311-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "복승아",
-        "lineage": {
-          "surname": "복",
-          "bongwan": "면천",
-          "clan": "bcf5-ba74-cc9c"
-        },
-        "birthDate": "2000-10-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "복승아는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-복용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K311-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김준원",
-        "birthDate": "2060-10-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2098,
-            "summary": "김준원은 노량진 선창에서 시장 시세·재고 게시·출고 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-복용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K311-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준현",
-        "birthDate": "2030-10-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "박준현은 노량진 선창에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-복용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K311-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준진",
-        "birthDate": "2000-10-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이준진은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-복용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K311-P-01:K311:biological",
-        "from": "FH-K311-P-01",
-        "to": "K311",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K311-P-02:FH-K311-P-01:biological",
-        "from": "FH-K311-P-02",
-        "to": "FH-K311-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K311-P-03:FH-K311-P-02:biological",
-        "from": "FH-K311-P-03",
-        "to": "FH-K311-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K311-M-01:K311:biological",
-        "from": "FH-K311-M-01",
-        "to": "K311",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K311-M-02:FH-K311-M-01:biological",
-        "from": "FH-K311-M-02",
-        "to": "FH-K311-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K311-M-03:FH-K311-M-02:biological",
-        "from": "FH-K311-M-03",
-        "to": "FH-K311-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bcf5-ba74-cc9c",
+    "name": "면천 복씨",
+    "crest": "clan-crests/bcf5-ba74-cc9c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "강북구 우이동 동장 복용은 서른여섯 살로, 라세영 의원이 임명했다. 4.19민주묘지역 동주민센터 창구 셋 가운데 민원 창구를 직접 맡아, 매장지 썰매를 끄는 노역 가구의 노역 일수 이의를 받는다. 같은 면천 복씨인 복봉이 노원구 구청장이라, 그는 노원으로 전입을 청하는 가구의 서류에는 제 도장 대신 선임 서기의 도장을 받게 한다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "우이동 동장",
+    "품계": "동장",
+    "생업": "동 행정",
+    "일하는 역": "4.19민주묘지역",
+    "잠자는 역": "4.19민주묘지역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "강북구 우이동 동장 복용은 서른여섯 살로, 라세영 의원이 임명했다. 4.19민주묘지역 동주민센터 창구 셋 가운데 민원 창구를 직접 맡아, 매장지 썰매를 끄는 노역 가구의 노역 일수 이의를 받는다. 같은 면천 복씨인 복봉이 노원구 구청장이라, 그는 노원으로 전입을 청하는 가구의 서류에는 제 도장 대신 선임 서기의 도장을 받게 한다.",
+    "관직": "직함 우이동 동장. 직위 우이동 동장 · 정부. 품계 동장. 일하는 역 4.19민주묘지역."
+  },
+  "values": {
+    "권위": 35,
+    "개방": -10,
+    "무력": 10,
+    "물질": -10,
+    "공동": 35,
+    "원칙": 35,
+    "공개": -10,
+    "자격": 40,
+    "분산": -10,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": 35,
+    "독점": 10,
+    "위험": -15,
+    "과시": -20,
+    "지속": -5,
+    "지향": "유동",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0312",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "복용",
+        "type": "지휘",
+        "to": "라세영",
+        "basis": "강북구 국회의원 라세영의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "국용",
+        "type": "지휘",
+        "to": "복용",
+        "basis": "우이동 동장 복용의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K325",
+    "name": "라세영",
+    "courtId": "court:K325",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K311",
+    "members": [
+      {
+        "personId": "K304",
+        "name": "국용"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 8,
-        "effective": 8
-      },
-      "learning": {
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "learning": {
         "base": 6,
         "effective": 6
-      }
-    },
-    "skills": [
-      {
-        "id": "k311-market-inventory-posting",
-        "name": {
-          "ko": "시장 재고 게시",
-          "en": "Market inventory posting"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k311-priority",
-        "name": {
-          "ko": "응급 물자 우선",
-          "en": "Emergency supplies first"
-        },
-        "description": {
-          "ko": "복용은 시세와 재고를 공개하고 의무실 물자를 우선 댄다. 숨기는 상인에 대한 잔인함도 공공 기준과 함께 남는다.",
-          "en": "Bogyong posts prices and inventory and prioritizes medical supplies. Cruelty toward concealing merchants remains alongside public standards."
-        },
-        "behavior": {
-          "ko": "시세와 재고를 벽에 적고, 무기 문장이 찍힌 주문서는 의료조 게시 전까지 출고를 막는다.",
-          "en": "Office. Rank: clerk. Title: northeast neutral market outpost chief. He wrote the prices and inventory on the wall and blocked the release of any order stamped with a weapons clause until the medical crew posted it."
-        },
-        "stress": {
-          "ko": "시장 재고가 군수 전용으로 빠져 의료열차 보급이 멈추는 것.",
-          "en": "Fear. That the market inventory would leave as munitions-only and the medical train's supply would stop."
-        },
-        "relationship": {
-          "ko": "복봉의 중계 송장과 시세를 맞추고, 국용의 당직 의무실에 응급 물자를 우선 댄다. 오해린의 시세 방송을 시장 시간에만 참고한다.",
-          "en": "Relations. Matched the prices with Bok Bong's relay invoices and put emergency supplies first for Guk Yong's duty infirmary. Consulted O Haerin's price broadcasts only at market hours."
-        },
-        "effects": []
       },
-      {
-        "id": "k311-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 서기. 직함은 북동부 중립시장 거점장. 시세와 재고를 벽에 적고, 무기 문장이 찍힌 주문서는 의료조 게시 전까지 출고를 막는다.",
-          "en": "Office. Rank: clerk. Title: northeast neutral market outpost chief. He wrote the prices and inventory on the wall and blocked the release of any order stamped with a weapons clause until the medical crew posted it."
-        },
-        "stress": {
-          "ko": "공포. 시장 재고가 군수 전용으로 빠져 의료열차 보급이 멈추는 것.",
-          "en": "Fear. That the market inventory would leave as munitions-only and the medical train's supply would stop."
-        },
-        "relationship": {
-          "ko": "관계. 복봉의 중계 송장과 시세를 맞추고, 국용의 당직 의무실에 응급 물자를 우선 댄다. 오해린의 시세 방송을 시장 시간에만 참고한다.",
-          "en": "Relations. Matched the prices with Bok Bong's relay invoices and put emergency supplies first for Guk Yong's duty infirmary. Consulted O Haerin's price broadcasts only at market hours."
-        },
-        "effects": []
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "복용은 시세와 재고를 공개하고 의무실 물자를 우선 댄다. 숨기는 상인에 대한 잔인함도 공공 기준과 함께 남는다.",
-      "en": "Bogyong posts prices and inventory and prioritizes medical supplies. Cruelty toward concealing merchants remains alongside public standards."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -526,199 +170,50 @@
   },
   "confirmedHoldings": [
     {
-      "id": "holding:opening-duchy-gu-11260-S12",
+      "id": "holding:v3:dong:1130564500",
       "name": {
-        "ko": "중랑구 공작령 직영지"
+        "ko": "우이동"
       },
       "holderPersonId": "K311",
-      "directLiegePersonId": "K144",
-      "stateId": "S12",
+      "directLiegePersonId": "K325",
+      "stateId": "government",
       "adminRefs": [
         {
-          "id": "region:1126052000",
-          "name": "면목2동"
-        },
-        {
-          "id": "region:1126054000",
-          "name": "면목4동"
-        },
-        {
-          "id": "region:1126055000",
-          "name": "면목5동"
-        },
-        {
-          "id": "region:1126056500",
-          "name": "면목본동"
-        },
-        {
-          "id": "region:1126057000",
-          "name": "면목7동"
-        },
-        {
-          "id": "region:1126057500",
-          "name": "면목3·8동"
-        },
-        {
-          "id": "region:1126058000",
-          "name": "상봉1동"
-        },
-        {
-          "id": "region:1126059000",
-          "name": "상봉2동"
-        },
-        {
-          "id": "region:1126060000",
-          "name": "중화1동"
-        },
-        {
-          "id": "region:1126061000",
-          "name": "중화2동"
-        },
-        {
-          "id": "region:1126062000",
-          "name": "묵1동"
-        },
-        {
-          "id": "region:1126063000",
-          "name": "묵2동"
-        },
-        {
-          "id": "region:1126065500",
-          "name": "망우본동"
-        },
-        {
-          "id": "region:1126066000",
-          "name": "망우3동"
-        },
-        {
-          "id": "region:1126068000",
-          "name": "신내1동"
-        },
-        {
-          "id": "region:1126069000",
-          "name": "신내2동"
+          "id": "region:1130564500",
+          "name": "우이동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11260-S12",
+      "territorialScale": "dong",
+      "titleId": null,
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
+      "formalTitleRank": null
     }
   ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "subordinateHoldings": [
     {
-      "id": "title:duchy-gu-11260-S12",
-      "name": "중랑구 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K311",
-      "basis": "개막 행정 규모 그룹 gu:11260(duchy) 배분 · 결정적 후보 선정",
-      "stateId": "S12",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "region:1126052000",
-        "region:1126054000",
-        "region:1126055000",
-        "region:1126056500",
-        "region:1126057000",
-        "region:1126057500",
-        "region:1126058000",
-        "region:1126059000",
-        "region:1126060000",
-        "region:1126061000",
-        "region:1126062000",
-        "region:1126063000",
-        "region:1126065500",
-        "region:1126066000",
-        "region:1126068000",
-        "region:1126069000"
+      "id": "holding:v3:station:4.19민주묘지",
+      "name": {
+        "ko": "4.19민주묘지역"
+      },
+      "holderPersonId": "K304",
+      "directLiegePersonId": "K311",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "4.19민주묘지",
+        "stationName": "4.19민주묘지"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1130564500",
+          "name": "우이동"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "국용",
+      "holderRoute": "/people/person-0305"
     }
-  ],
-  "clan": {
-    "id": "bcf5-ba74-cc9c",
-    "name": "면천 복씨",
-    "crest": "clan-crests/bcf5-ba74-cc9c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -10,
-    "개방": 45,
-    "무력": -25,
-    "물질": -5,
-    "공동": 30,
-    "원칙": 15,
-    "공개": 15,
-    "자격": 25,
-    "분산": 40,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 35,
-    "독점": 10,
-    "위험": -15,
-    "과시": -20,
-    "지속": -5,
-    "지향": "유동",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "시장 시세·재고 게시·출고 확인",
-    "소속": "신내운수",
-    "품계": "서기",
-    "직함": "북동부 중립시장 거점장",
-    "가치관": "권위 −10 | 개방 45 | 무력 −25 | 물질 −5 | 공동 30 | 원칙 15 | 공개 15 | 자격 25 | 분산 40 | 변혁 −5",
-    "욕망": "갈망 35 | 독점 10 | 위험 −15 | 과시 −20 | 지속 −5 | 지향 유동 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2090-10-28에 태어났다. 노량진 선창에서 자랐다. 2126년 개막에는 북동부 중립시장 거점장 당직을 맡으며, 직위 인수 기록에는 저울 재점검 공개로 열렸다이 남아 있다.\n- 상봉1동의 망우 환승 대기열·환자·화물 구분·중량·송장·시세·공개 증언 기록대가 복용의 시장 시세·재고 게시·출고 확인 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
-    "관직": "품계 서기. 직함은 북동부 중립시장 거점장. 시세와 재고를 벽에 적고, 무기 문장이 찍힌 주문서는 의료조 게시 전까지 출고를 막는다.",
-    "일화": "무기 발견 직후 시장 저울에 군수 문장 주문서가 한 장 끼어 있었다.",
-    "관계": "복봉의 중계 송장과 시세를 맞추고, 국용의 당직 의무실에 응급 물자를 우선 댄다. 오해린의 시세 방송을 시장 시간에만 참고한다.",
-    "야망": "중립시장을 환승 중계의 공개 시세 거점으로 남겨 노선 면허 밖의 호송료가 시장 칸을 사지 못하게 하려 한다.",
-    "공포": "시장 재고가 군수 전용으로 빠져 의료열차 보급이 멈추는 것.",
-    "개입": "주문서를 공개하거나, 응급 물자 우선 칸을 시장 원장에 고정할 수 있다."
-  },
-  "biography": "2090-10-28생인 복용은 가격을 숨기는 상인을 가장 잔인하게 몰아붙이고, 환자 이송 칸을 경매에 올리는 말을 시장에서 쫓아낸다. 공개 저울을 신용으로 본다.\n\n- 생업: 시장 시세·재고 게시·출고 확인\n- 소속: 신내운수\n- 품계: 서기\n- 직함: 북동부 중립시장 거점장\n**생애.** 2090-10-28에 태어났다. 노량진 선창에서 자랐다. 2126년 개막에는 북동부 중립시장 거점장 당직을 맡으며, 직위 인수 기록에는 저울 재점검 공개로 열렸다이 남아 있다.\n- 상봉1동의 망우 환승 대기열·환자·화물 구분·중량·송장·시세·공개 증언 기록대가 복용의 시장 시세·재고 게시·출고 확인 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 서기. 직함은 북동부 중립시장 거점장. 시세와 재고를 벽에 적고, 무기 문장이 찍힌 주문서는 의료조 게시 전까지 출고를 막는다.\n\n**일화.** 무기 발견 직후 시장 저울에 군수 문장 주문서가 한 장 끼어 있었다.\n\n**관계.** 복봉의 중계 송장과 시세를 맞추고, 국용의 당직 의무실에 응급 물자를 우선 댄다. 오해린의 시세 방송을 시장 시간에만 참고한다.\n\n**야망.** 중립시장을 환승 중계의 공개 시세 거점으로 남겨 노선 면허 밖의 호송료가 시장 칸을 사지 못하게 하려 한다.\n\n**공포.** 시장 재고가 군수 전용으로 빠져 의료열차 보급이 멈추는 것.\n\n**개입.** 주문서를 공개하거나, 응급 물자 우선 칸을 시장 원장에 고정할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 45 | 무력 −25 | 물질 −5 | 공동 30 | 원칙 15 | 공개 15 | 자격 25 | 분산 40 | 변혁 −5\n- 욕망: 갈망 35 | 독점 10 | 위험 −15 | 과시 −20 | 지속 −5 | 지향 유동 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-12"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "복용",
-        "type": "계약",
-        "to": "오해린",
-        "basis": "오해린의 시세 방송을 시장 시간에만 참고한다"
-      },
-      {
-        "from": "복용",
-        "type": "계약",
-        "to": "복봉",
-        "basis": "복봉의 중계 송장과 시세를 맞추고"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "복봉",
-        "type": "계약",
-        "to": "복용",
-        "basis": "복용의 중립시장 시세를 송장에 옮긴다"
-      },
-      {
-        "from": "근솔이",
-        "type": "계약",
-        "to": "복용",
-        "basis": "복용의 중립시장 시세와 유찰 종을 맞추고"
-      }
-    ]
-  }
+  ]
 }

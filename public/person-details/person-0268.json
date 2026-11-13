@@ -1,492 +1,105 @@
 {
   "id": "person-0268",
   "name": "단유진",
-  "title": "약소국 회의 난민 수행원",
-  "position": "협의 수행 행자",
+  "title": "부처 선임 서기",
+  "position": "부처 선임 서기 · 광화문역",
   "characterId": "K267",
-  "rank": "행자",
+  "rank": "주사",
   "commonTier": "T5",
-  "occupation": "협의 문안·문중 표 결과 게시",
+  "occupation": "공문 필사",
   "gender": "남성",
   "stage": "S3",
-  "state": "S10",
-  "stateName": "안국총림",
-  "sourceRoute": "/world/Cast-State-10#인물-단유진",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0268",
   "birthDate": "2087-07-31",
   "birthday": "07-31",
   "age": 39,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-10.json#/content/237"
-  ],
-  "familyTree": {
-    "personId": "K267",
-    "nodes": [
-      {
-        "id": "K267",
-        "personId": "K267",
-        "kind": "person",
-        "name": "단유진",
-        "birthDate": "2087-07-31",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K267"
-          },
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-단유진-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 협의 수행 행자 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-단유진-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0268"
-      },
-      {
-        "id": "FH-K267-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "단승영",
-        "lineage": {
-          "surname": "단",
-          "bongwan": "연안",
-          "clan": "b2e8-c5f0-c548-6bb5"
-        },
-        "birthDate": "2057-07-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-단유진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2095,
-            "summary": "단승영은 제기동 의무소에서 협의 문안·문중 표 결과 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-단유진-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K267-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "단승윤",
-        "lineage": {
-          "surname": "단",
-          "bongwan": "연안",
-          "clan": "b2e8-c5f0-c548-6bb5"
-        },
-        "birthDate": "2027-07-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-단유진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2065,
-            "summary": "단승윤은 제기동 의무소에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-단유진-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K267-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "단승우",
-        "lineage": {
-          "surname": "단",
-          "bongwan": "연안",
-          "clan": "b2e8-c5f0-c548-6bb5"
-        },
-        "birthDate": "1997-07-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-단유진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "단승우는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-단유진-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K267-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정현리",
-        "birthDate": "2057-07-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-단유진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2095,
-            "summary": "정현리는 제기동 의무소에서 협의 문안·문중 표 결과 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-단유진-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K267-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤현욱",
-        "birthDate": "2027-07-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-단유진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2065,
-            "summary": "윤현욱은 제기동 의무소에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-단유진-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K267-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "한현섭",
-        "birthDate": "1997-07-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-단유진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한현섭은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-단유진-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K267-P-01:K267:biological",
-        "from": "FH-K267-P-01",
-        "to": "K267",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-단유진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K267-P-02:FH-K267-P-01:biological",
-        "from": "FH-K267-P-02",
-        "to": "FH-K267-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-단유진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K267-P-03:FH-K267-P-02:biological",
-        "from": "FH-K267-P-03",
-        "to": "FH-K267-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-단유진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K267-M-01:K267:biological",
-        "from": "FH-K267-M-01",
-        "to": "K267",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-단유진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K267-M-02:FH-K267-M-01:biological",
-        "from": "FH-K267-M-02",
-        "to": "FH-K267-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-단유진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K267-M-03:FH-K267-M-02:biological",
-        "from": "FH-K267-M-03",
-        "to": "FH-K267-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-단유진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b2e8-c5f0-c548-6bb5",
+    "name": "연안 단씨",
+    "crest": "clan-crests/b2e8-c5f0-c548-6bb5.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "단유진은 법무부 서기로 기재돼 있고, 계급은 주사, 근무지는 광화문역과 이어진 정부서울청사다. 서른아홉 살인 그는 손으로 베낀 법전을 다시 베끼는 일과, 말소 심의에서 심의관 셋이 받는 국회의원의 의견서를 옮겨 적는 일을 한다. 의견서의 한 글자가 한 가구의 장부를 지우기도 한다는 것을 알아서, 그는 베낀 줄을 원문에 대고 손가락으로 두 번 짚는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "부처 선임 서기",
+    "품계": "주사",
+    "생업": "공문 필사",
+    "일하는 역": "광화문역",
+    "잠자는 역": "광화문역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "단유진은 법무부 서기로 기재돼 있고, 계급은 주사, 근무지는 광화문역과 이어진 정부서울청사다. 서른아홉 살인 그는 손으로 베낀 법전을 다시 베끼는 일과, 말소 심의에서 심의관 셋이 받는 국회의원의 의견서를 옮겨 적는 일을 한다. 의견서의 한 글자가 한 가구의 장부를 지우기도 한다는 것을 알아서, 그는 베낀 줄을 원문에 대고 손가락으로 두 번 짚는다.",
+    "관직": "직함 부처 선임 서기. 직위 부처 선임 서기 · 광화문역. 품계 주사. 일하는 역 광화문역."
+  },
+  "values": {
+    "권위": -20,
+    "개방": 20,
+    "무력": 0,
+    "물질": -20,
+    "공동": 85,
+    "원칙": 55,
+    "공개": 0,
+    "자격": 50,
+    "분산": -10,
+    "변혁": -10
+  },
+  "desire": {
+    "갈망": -5,
+    "독점": 0,
+    "위험": 10,
+    "과시": 10,
+    "지속": 20,
+    "지향": "동성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0268",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
+      "stewardship": {
         "base": 11,
         "effective": 11
       },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 8,
+        "effective": 8
       },
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
       }
     },
-    "skills": [
-      {
-        "id": "meeting-support",
-        "name": {
-          "ko": "회의 문안·표결 게시",
-          "en": "Meeting draft and vote posting"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "meeting-support-disposition",
-        "name": {
-          "ko": "매수 쪽지를 남김",
-          "en": "Leaves bribery notes visible"
-        },
-        "description": {
-          "ko": "매수 쪽지를 지우지 않고 공개 게시한다.",
-          "en": "Publishes bribery notes rather than erasing them."
-        },
-        "behavior": {
-          "ko": "매수 쪽지를 지우지 않고 공개 게시한다.",
-          "en": "Publishes bribery notes rather than erasing them."
-        },
-        "stress": {
-          "ko": "회의 발언이 노동력 숫자로 바뀔 것을 두려워한다.",
-          "en": "Fears meeting statements reduced to labor numbers."
-        },
-        "relationship": {
-          "ko": "백온의 회의 발언을 수행으로 받치고, 정유라의 공동교섭 좌석에 시민권 문안을 올리며, 소두의 가족 회의 전령로와 줄을 맞춘다.",
-          "en": "Supports Baek On at meetings, places citizenship text at Jeong Yura’s seat and coordinates Sodu’s family-message route."
-        },
-        "effects": []
-      },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "두 곳의 같은 표결",
-          "en": "Same votes in two places"
-        },
-        "description": {
-          "ko": "숙영과 회의장에 표결 결과를 동시에 게시한다.",
-          "en": "Posts vote results simultaneously at camp and meeting."
-        },
-        "behavior": {
-          "ko": "숙영과 회의장에 표결 결과를 동시에 게시한다.",
-          "en": "Posts vote results simultaneously at camp and meeting."
-        },
-        "stress": {
-          "ko": "수행 가방이 군사호적 사본으로 바뀌어 회의 발언이 노동력 숫자로만 남는 것.",
-          "en": "Fears meeting statements reduced to labor numbers."
-        },
-        "relationship": {
-          "ko": "백온의 회의 발언을 수행으로 받치고, 정유라의 공동교섭 좌석에 시민권 문안을 올리며, 소두의 가족 회의 전령로와 줄을 맞춘다.",
-          "en": "Supports Baek On at meetings, places citizenship text at Jeong Yura’s seat and coordinates Sodu’s family-message route."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "수행 가방의 매수 쪽지를 공개하고 표결을 숙영과 회의장에 동시에 붙였다. 시민권 문안을 협의 좌석에 올린 행동이 근거다.",
-      "en": "Published a bribery note from the attendance bag and posted votes at camp and meeting together, then placed a citizenship draft at negotiations."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,72 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b2e8-c5f0-c548-6bb5",
-    "name": "연안 단씨",
-    "crest": "clan-crests/b2e8-c5f0-c548-6bb5.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -65,
-    "개방": 75,
-    "무력": -35,
-    "물질": -15,
-    "공동": 80,
-    "원칙": 35,
-    "공개": 25,
-    "자격": 35,
-    "분산": 40,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": -5,
-    "독점": 0,
-    "위험": 10,
-    "과시": 10,
-    "지속": 20,
-    "지향": "동성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "협의 문안·문중 표 결과 게시",
-    "소속": "안국총림",
-    "품계": "행자",
-    "직함": "협의 수행 행자",
-    "가치관": "권위 −65 | 개방 75 | 무력 −35 | 물질 −15 | 공동 80 | 원칙 35 | 공개 25 | 자격 35 | 분산 40 | 변혁 10",
-    "욕망": "갈망 −5 | 독점 0 | 위험 10 | 과시 10 | 지속 20 | 지향 동성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2087-07-31 출생, 2126년 개막에 활동했다. 제기동 의무소에서 자랐다. 협의 수행 행자 당직 기록에는 가짜 약 봉인으 일이 남아 있다.\n- 단유진의 협의 문안·문중 표 결과 게시 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
-    "관직": "품계 행자. 직함은 협의 수행 행자. 문중 표 결과를 당일 숙영과 회의장에 동시에 붙이고, 매수 쪽지는 게시판에 그대로 남긴다.",
-    "일화": "협의 자리에서 백온의 발언 차례 직전에 매수 쪽지 한 장이 수행 가방에 들어온다. 단유진은 쪽지를 게시판에 붙여 공개하고, 문중 표 결과를 숙영과 회의장에 동시에 게시한 뒤 정유라의 공동교섭 좌석에 시민권 문안을 올린다.",
-    "관계": "백온의 회의 발언을 수행으로 받치고, 정유라의 공동교섭 좌석에 시민권 문안을 올리며, 소두의 가족 회의 전령로와 줄을 맞춘다.",
-    "야망": "협의에서 신도 명부를 공동교섭의 조항으로 올려 분할 복속이 신도 명부를 갈라놓지 못하게 한다.",
-    "공포": "수행 가방이 군사호적 사본으로 바뀌어 회의 발언이 노동력 숫자로만 남는 것.",
-    "개입": "매수 쪽지를 공개하거나, 신도 명부 초안 증인을 회의장까지 호송할 수 있다."
-  },
-  "biography": "구두 구호 약속을 전령 원장에 옮기지 않으면 없던 일로 돌리고, 아이 이름을 숫자로 줄이는 기호를 쓰지 않는다. 따뜻하나 회의 쪽지는 차갑다.\n\n- 생업: 협의 문안·문중 표 결과 게시\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 협의 수행 행자\n**생애.** 2087-07-31 출생, 2126년 개막에 활동했다. 제기동 의무소에서 자랐다. 협의 수행 행자 당직 기록에는 가짜 약 봉인으 일이 남아 있다.\n- 단유진의 협의 문안·문중 표 결과 게시 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n**관직.** 품계 행자. 직함은 협의 수행 행자. 문중 표 결과를 당일 숙영과 회의장에 동시에 붙이고, 매수 쪽지는 게시판에 그대로 남긴다.\n\n**일화.** 협의 자리에서 백온의 발언 차례 직전에 매수 쪽지 한 장이 수행 가방에 들어온다. 단유진은 쪽지를 게시판에 붙여 공개하고, 문중 표 결과를 숙영과 회의장에 동시에 게시한 뒤 정유라의 공동교섭 좌석에 시민권 문안을 올린다.\n\n**관계.** 백온의 회의 발언을 수행으로 받치고, 정유라의 공동교섭 좌석에 시민권 문안을 올리며, 소두의 가족 회의 전령로와 줄을 맞춘다.\n\n**야망.** 협의에서 신도 명부를 공동교섭의 조항으로 올려 분할 복속이 신도 명부를 갈라놓지 못하게 한다.\n\n**공포.** 수행 가방이 군사호적 사본으로 바뀌어 회의 발언이 노동력 숫자로만 남는 것.\n\n**개입.** 매수 쪽지를 공개하거나, 신도 명부 초안 증인을 회의장까지 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −65 | 개방 75 | 무력 −35 | 물질 −15 | 공동 80 | 원칙 35 | 공개 25 | 자격 35 | 분산 40 | 변혁 10\n- 욕망: 갈망 −5 | 독점 0 | 위험 10 | 과시 10 | 지속 20 | 지향 동성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-10"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "단유진",
-        "type": "계약",
-        "to": "백온",
-        "basis": "백온의 회의 발언을 수행으로 뒷받침하고"
-      },
-      {
-        "from": "단유진",
-        "type": "계약",
-        "to": "정유라",
-        "basis": "정유라의 공동교섭 좌석에 시민권 문안을 올리며"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

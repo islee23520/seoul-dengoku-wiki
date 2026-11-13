@@ -1,407 +1,133 @@
 {
   "id": "person-0108",
   "name": "변석훈",
-  "title": "뚝섬 펌프실 발전운전장",
-  "position": "뚝섬 펌프실 발전운전장",
+  "title": "선릉역 정비장",
+  "position": "선릉역 정비장 · 아크",
   "characterId": "K107",
-  "rank": "집사",
+  "rank": "정비장",
   "commonTier": "T4",
-  "occupation": "펌프실 발전·배전 운전",
+  "occupation": "정비대 통솔",
   "gender": "남성",
   "stage": "S2",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-변석훈",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0108",
   "birthDate": "2068-02-15",
   "birthday": "02-15",
   "age": 58,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/71",
-    "lore/characters/Cast-State-04.json#/content/73",
-    "lore/characters/Cast-State-04.json#/content/74"
-  ],
-  "familyTree": {
-    "personId": "K107",
-    "nodes": [
-      {
-        "id": "K107",
-        "personId": "K107",
-        "kind": "person",
-        "name": "변석훈",
-        "birthDate": "2068-02-15",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K107"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-변석훈-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 뚝섬 펌프실 발전운전장 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-변석훈-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0108"
-      },
-      {
-        "id": "FH-K107-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "변승정",
-        "lineage": {
-          "surname": "변",
-          "bongwan": "초계",
-          "clan": "bcc0-cd08-acc4"
-        },
-        "birthDate": "2038-02-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-변석훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "변승정은 신정 차량기지에서 펌프실 발전·배전 운전 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-변석훈-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K107-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "변승아",
-        "lineage": {
-          "surname": "변",
-          "bongwan": "초계",
-          "clan": "bcc0-cd08-acc4"
-        },
-        "birthDate": "2008-02-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-변석훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "변승아는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-변석훈-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K107-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김승빈",
-        "birthDate": "2038-02-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-변석훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "김승빈은 신정 차량기지에서 펌프실 발전·배전 운전 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-변석훈-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K107-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박승빈",
-        "birthDate": "2008-02-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-변석훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박승빈은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-변석훈-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K107-P-01:K107:biological",
-        "from": "FH-K107-P-01",
-        "to": "K107",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-변석훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K107-P-02:FH-K107-P-01:biological",
-        "from": "FH-K107-P-02",
-        "to": "FH-K107-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-변석훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K107-M-01:K107:biological",
-        "from": "FH-K107-M-01",
-        "to": "K107",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-변석훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K107-M-02:FH-K107-M-01:biological",
-        "from": "FH-K107-M-02",
-        "to": "FH-K107-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-변석훈-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bcc0-cd08-acc4",
+    "name": "초계 변씨",
+    "crest": "clan-crests/bcc0-cd08-acc4.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "변석훈은 쉰여덟에 부위가 셋인 선릉역 정비장이다. 첫 부위는 대피소들이 아크로 묶이던 2122년 무렵에 받았고, 쉰을 넘겨서야 둘을 더 받았다. 선릉은 2호선과 수인분당선이 만나는 큰 역이라, 그는 셋째 교대에 어느 정비대를 켜 둘지를 앓는 사람이 누운 칸을 보고 날마다 정한다. 개포동역의 젊은 정비장 변오름에게 부품 몫을 떼어 보낼 때도, 그는 그것을 한 씨족 안의 인정이 아니라 강남 곁집의 나눔으로 장부에 적는다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "선릉역 정비장",
+    "품계": "정비장",
+    "생업": "정비대 통솔",
+    "일하는 역": "선릉역",
+    "잠자는 역": "선릉역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 3
+  },
+  "sections": {
+    "생애": "변석훈은 쉰여덟에 부위가 셋인 선릉역 정비장이다. 첫 부위는 대피소들이 아크로 묶이던 2122년 무렵에 받았고, 쉰을 넘겨서야 둘을 더 받았다. 선릉은 2호선과 수인분당선이 만나는 큰 역이라, 그는 셋째 교대에 어느 정비대를 켜 둘지를 앓는 사람이 누운 칸을 보고 날마다 정한다. 개포동역의 젊은 정비장 변오름에게 부품 몫을 떼어 보낼 때도, 그는 그것을 한 씨족 안의 인정이 아니라 강남 곁집의 나눔으로 장부에 적는다.",
+    "관직": "직함 선릉역 정비장. 직위 선릉역 정비장 · 아크. 품계 정비장. 일하는 역 선릉역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": 0,
+    "무력": -15,
+    "물질": -25,
+    "공동": 55,
+    "원칙": -5,
+    "공개": -65,
+    "자격": 15,
+    "분산": -5,
+    "변혁": 35
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": -30,
+    "위험": -30,
+    "과시": -10,
+    "지속": -5,
+    "지향": "유동",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0108",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "변석훈",
+        "type": "지휘",
+        "to": "정하린",
+        "basis": "삼성2동 대피소장 정하린의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K058",
+    "name": "정하린",
+    "courtId": "court:K058",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
-      "learning": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "power",
-        "name": {
-          "ko": "펌프실 배전 확인",
-          "en": "Pump-room distribution checks"
-        },
-        "rating": 65
-      },
-      {
-        "id": "parts",
-        "name": {
-          "ko": "불량 부품 출고 검사",
-          "en": "Defective-parts dispatch inspection"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "reduce-power-on-vibration-changes",
-        "name": {
-          "ko": "진동 바뀌면 감출력",
-          "en": "Reduce Power on Vibration Changes"
-        },
-        "description": {
-          "ko": "변석훈은 펌프실 진동 변화를 출력 조정이 필요한 신호로 받아들인다.",
-          "en": "Byeon Seokhun treats changes in pump-room vibration as signals requiring output adjustment."
-        },
-        "behavior": {
-          "ko": "진동이 바뀌면 출력을 낮추고 연료 일지를 축소 기록하지 않는다.",
-          "en": "Byeon reduces output when vibration changes and does not understate the fuel log."
-        },
-        "stress": {
-          "ko": "과방전이 펌프 정지와 보호군 주둔으로 이어질 우려가 커지면 감출력 판단을 더 보수적으로 할 수 있다.",
-          "en": "If over-discharge threatens pump failure and protection-force occupation, Byeon may make more conservative output-reduction decisions."
-        },
-        "relationship": {
-          "ko": "김보람의 수비에 전력을 대면서도 펌프 진동이 바뀌면 공급 출력을 낮출 수 있다.",
-          "en": "While supplying Kim Boram's guards, Byeon may still reduce supplied output when pump vibration changes."
-        },
-        "effects": []
-      },
-      {
-        "id": "minimum-pump-output-first",
-        "name": {
-          "ko": "펌프 최저선 먼저",
-          "en": "Minimum Pump Output First"
-        },
-        "description": {
-          "ko": "변석훈은 다른 전력 수요보다 펌프의 최소 운전 전력을 먼저 확보한다.",
-          "en": "Byeon Seokhun secures minimum pump operating power before other electricity demands."
-        },
-        "behavior": {
-          "ko": "이준택의 군자 보수차 충전을 펌프 최저선 확보 다음 순서에 둔다.",
-          "en": "Byeon schedules charging for Lee Juntaek's Gunja maintenance vehicles after securing the pump minimum."
-        },
-        "stress": {
-          "ko": "펌프 정지의 공백이 외부 주둔 명분이 될 우려가 커지면 다른 충전 수요를 더 뒤로 미룰 수 있다.",
-          "en": "If pump outages risk providing a pretext for outside occupation, Byeon may defer other charging demands further."
-        },
-        "relationship": {
-          "ko": "이준택과 협력하더라도 보수차 충전이 펌프 최저선을 침해하면 우선순위를 두고 마찰이 생길 수 있다.",
-          "en": "Despite cooperation with Lee Juntaek, friction may arise if maintenance-vehicle charging threatens the pump minimum."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "진동 변화에 출력을 낮추고 보수차 충전을 펌프 뒤에 둔다. 발전 운전과 불량 반송이 근거이며 실종 책임감은 실제 과실 판정이 아니다.",
-      "en": "He reduces output on vibration changes and prioritizes pumps over repair-car charging. Power operation and parts returns are supported; guilt over a disappearance is not a finding of negligence."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -411,7 +137,7 @@
         {
           "id": "right-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "head",
@@ -427,66 +153,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bcc0-cd08-acc4",
-    "name": "초계 변씨",
-    "crest": "clan-crests/bcc0-cd08-acc4.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -5,
-    "개방": 15,
-    "무력": -25,
-    "물질": 25,
-    "공동": 35,
-    "원칙": 5,
-    "공개": -20,
-    "자격": 50,
-    "분산": 25,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": -30,
-    "위험": -30,
-    "과시": -10,
-    "지속": -5,
-    "지향": "유동",
-    "결합": "비독점"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "펌프실 발전·배전 운전",
-    "품계": "집사",
-    "직함": "뚝섬 펌프실 발전운전장",
-    "가치관": "권위 −5 | 개방 15 | 무력 −25 | 물질 25 | 공동 35 | 원칙 5 | 공개 −20 | 자격 50 | 분산 25 | 변혁 −10",
-    "욕망": "갈망 45 | 독점 −30 | 위험 −30 | 과시 −10 | 지속 −5 | 지향 유동 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2126년 세대. 변석훈은 신정 차량기지에서 자랐다. 변석훈은 탈선 직전 결함 보고로 뚝섬 펌프실 발전운전장 자리를 맡았다.\n- 변석훈의 뚝섬 펌프실 발전운전장 업무는 성수1가2동과 연결된다.",
-    "관직": "품계 집사. 직함은 뚝섬 펌프실 발전운전장. 주간은 당회와 출력 일지를 공유하고, 야간 배전은 수비대 암호패와 공정 감독의 이중 확인만 허용한다.",
-    "일화": "2125년 변석훈은 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 뚝섬 펌프실 발전운전장 자리의 서명이 장부에 올랐다.",
-    "관계": "김보람의 펌프수비 지휘에 전력을 대고, 군자 보수차 충전을 펌프 최저선 다음에 두며, 임하준 실종을 자신의 야간 당직 공백으로 여긴다.",
-    "야망": "정수 펌프와 군자 유치선의 전력을 하나의 공개 배전망으로 묶어 후계가 누가 되든 물이 정전의 볼모가 되지 않게 한다.",
-    "공포": "변석훈은 한 번의 과방전으로 펌프가 죽고, 그 공백을 암사 보호군이 구원으로 위장해 주둔하는 상황을 두려워한다.",
-    "개입": "대체 축전지를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다."
-  },
-  "biography": "펌프실의 진동이 바뀌면 출력을 낮추고, 수비를 보호군 명목으로 내주라는 제안을 배신으로 본다. 과묵하고 연료 일지를 깎지 않는다.\n\n- 소속: 명부교회\n- 생업: 펌프실 발전·배전 운전\n- 품계: 집사\n- 직함: 뚝섬 펌프실 발전운전장\n**생애.** 2126년 세대. 변석훈은 신정 차량기지에서 자랐다. 변석훈은 탈선 직전 결함 보고로 뚝섬 펌프실 발전운전장 자리를 맡았다.\n- 변석훈의 뚝섬 펌프실 발전운전장 업무는 성수1가2동과 연결된다.\n\n**관직.** 품계 집사. 직함은 뚝섬 펌프실 발전운전장. 주간은 당회와 출력 일지를 공유하고, 야간 배전은 수비대 암호패와 공정 감독의 이중 확인만 허용한다.\n\n**일화.** 2125년 변석훈은 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 뚝섬 펌프실 발전운전장 자리의 서명이 장부에 올랐다.\n\n**관계.** 김보람의 펌프수비 지휘에 전력을 대고, 군자 보수차 충전을 펌프 최저선 다음에 두며, 임하준 실종을 자신의 야간 당직 공백으로 여긴다.\n\n**야망.** 정수 펌프와 군자 유치선의 전력을 하나의 공개 배전망으로 묶어 후계가 누가 되든 물이 정전의 볼모가 되지 않게 한다.\n\n**공포.** 변석훈은 한 번의 과방전으로 펌프가 죽고, 그 공백을 암사 보호군이 구원으로 위장해 주둔하는 상황을 두려워한다.\n\n**개입.** 대체 축전지를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 15 | 무력 −25 | 물질 25 | 공동 35 | 원칙 5 | 공개 −20 | 자격 50 | 분산 25 | 변혁 −10\n- 욕망: 갈망 45 | 독점 −30 | 위험 −30 | 과시 −10 | 지속 −5 | 지향 유동 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "변석훈",
-        "type": "지휘",
-        "to": "김보람",
-        "basis": "김보람의 펌프수비 지휘에 전력을 대고"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:선릉",
+      "name": {
+        "ko": "선릉역"
+      },
+      "holderPersonId": "K107",
+      "directLiegePersonId": "K058",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "선릉",
+        "stationName": "선릉"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1168059000",
+          "name": "삼성2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

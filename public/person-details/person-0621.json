@@ -1,387 +1,120 @@
 {
   "id": "person-0621",
   "name": "민다현",
-  "title": "증언 탐사원",
-  "position": "증언 탐사원",
+  "title": "경호원",
+  "position": "경호원 · 광화문역",
   "characterId": "K621",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "증인 공개 대질·증언 기록",
+  "rank": "등재민",
+  "commonTier": "T5",
+  "occupation": "경호",
   "gender": "남성",
   "stage": "S4",
-  "state": "S06",
-  "stateName": "대한민국정부",
-  "sourceRoute": "/world/Cast-State-06#인물-민다현",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0621",
   "birthDate": "2070-10-03",
   "birthday": "10-03",
   "age": 56,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-06.json#/content/391",
-    "lore/characters/Cast-State-06.json#/content/393",
-    "lore/characters/Cast-State-06.json#/content/394"
-  ],
-  "familyTree": {
-    "personId": "K621",
-    "nodes": [
-      {
-        "id": "K621",
-        "personId": "K621",
-        "kind": "person",
-        "name": "민다현",
-        "birthDate": "2070-10-03",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K621"
-          },
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-민다현-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 증언 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-민다현-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0621"
-      },
-      {
-        "id": "FH-K621-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "민승우",
-        "lineage": {
-          "surname": "민",
-          "bongwan": "여흥",
-          "clan": "bbfc-c5ec-d765-9594-agreed-d604-second"
-        },
-        "birthDate": "2040-10-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-민다현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2078,
-            "summary": "민승우는 대합실 당직에서 증인 공개 대질·증언 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-민다현-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K621-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "민승경",
-        "lineage": {
-          "surname": "민",
-          "bongwan": "여흥",
-          "clan": "bbfc-c5ec-d765-9594-agreed-d604-second"
-        },
-        "birthDate": "2010-10-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-민다현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "민승경은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-민다현-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K621-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "송태나",
-        "birthDate": "2040-10-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-민다현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2078,
-            "summary": "송태나는 대합실 당직에서 증인 공개 대질·증언 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-민다현-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K621-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "조재석",
-        "birthDate": "2010-10-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-민다현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조재석은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-민다현-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K621-P-01:K621:biological",
-        "from": "FH-K621-P-01",
-        "to": "K621",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-민다현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K621-P-02:FH-K621-P-01:biological",
-        "from": "FH-K621-P-02",
-        "to": "FH-K621-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-민다현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K621-M-01:K621:biological",
-        "from": "FH-K621-M-01",
-        "to": "K621",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-민다현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K621-M-02:FH-K621-M-01:biological",
-        "from": "FH-K621-M-02",
-        "to": "FH-K621-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-민다현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bbfc-c5ec-d765-9594",
+    "name": "여흥 민씨",
+    "crest": "clan-crests/bbfc-c5ec-d765-9594.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "대통령실 경호원 민다현의 기재 역은 종로3가, 근무는 광화문이고, 그는 쉰여섯이다. 서른 해 넘게 정부서울청사 지하 복도를 지켜 왔고, 지금 그가 지키는 종신 대통령 윤서린은 그가 처음 근무를 설 때 아직 태어나지 않았다. 해가 바뀌는 밤 대통령이 제야의 종을 치러 종각으로 갈 때 앞장서는 것이 그의 해마다의 일이다. 젊은 대통령의 결재를 두고 의원 집안들이 하는 말을 그는 듣고도 옮기지 않는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "경호원",
+    "품계": "등재민",
+    "생업": "경호",
+    "일하는 역": "광화문역",
+    "잠자는 역": "종로3가역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "대통령실 경호원 민다현의 기재 역은 종로3가, 근무는 광화문이고, 그는 쉰여섯이다. 서른 해 넘게 정부서울청사 지하 복도를 지켜 왔고, 지금 그가 지키는 종신 대통령 윤서린은 그가 처음 근무를 설 때 아직 태어나지 않았다. 해가 바뀌는 밤 대통령이 제야의 종을 치러 종각으로 갈 때 앞장서는 것이 그의 해마다의 일이다. 젊은 대통령의 결재를 두고 의원 집안들이 하는 말을 그는 듣고도 옮기지 않는다.",
+    "관직": "직함 경호원. 직위 경호원 · 광화문역. 품계 등재민. 일하는 역 광화문역."
+  },
+  "values": {
+    "권위": 60,
+    "개방": -60,
+    "무력": 0,
+    "물질": -35,
+    "공동": 20,
+    "원칙": 70,
+    "공개": -45,
+    "자격": 30,
+    "분산": -75,
+    "변혁": -40
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": -30,
+    "위험": 25,
+    "과시": -5,
+    "지속": 30,
+    "지향": "무성향",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0621",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "민다현",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 3,
-        "effective": 3
+      "diplomacy": {
+        "base": 5,
+        "effective": 5
       },
-      "strategy": {
-        "base": 4,
-        "effective": 4
+      "martial": {
+        "base": 8,
+        "effective": 8
       },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
+      "stewardship": {
         "base": 6,
         "effective": 6
       },
-      "insight": {
-        "base": 9,
-        "effective": 9
+      "intrigue": {
+        "base": 6,
+        "effective": 6
       },
       "learning": {
-        "base": 7,
-        "effective": 7
-      },
-      "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
         "base": 5,
         "effective": 5
-      }
-    },
-    "skills": [
-      {
-        "id": "k621-witness-confrontation",
-        "name": {
-          "ko": "증인 대질",
-          "en": "Witness confrontation"
-        },
-        "rating": 45
-      }
-    ],
-    "traits": [
-      {
-        "id": "k621-choice",
-        "name": {
-          "ko": "충돌을 공개함",
-          "en": "Makes conflict visible"
-        },
-        "description": {
-          "ko": "일화. 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 증언 탐사원 자리의 서명이 장부에 올랐다. 이 선택을 넘어선 지속 성향은 미확인이다.",
-          "en": "Anecdote. In 2125, when the accounts of two witnesses split, he opened a public confrontation. By this deed the signature of the testimony surveyor post rose into the ledger. A lasting disposition beyond this choice is unconfirmed."
-        },
-        "behavior": {
-          "ko": "일화. 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 증언 탐사원 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In 2125, when the accounts of two witnesses split, he opened a public confrontation. By this deed the signature of the testimony surveyor post rose into the ledger."
-        },
-        "stress": {
-          "ko": "공포. 증언 탐사원 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That the testimony surveyor duty post would stand empty and the Government's passage would become a break in the eight states' recognition. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
       },
-      {
-        "id": "k621-boundary",
-        "name": {
-          "ko": "당직 연속성을 중시",
-          "en": "Values duty continuity"
-        },
-        "description": {
-          "ko": "당직 공백을 피하고 기록을 믿는 원문 성향이다. 반복 문구이므로 개인의 특별한 장점으로 확대하지 않는다.",
-          "en": "The source favors unbroken shifts and written records. Repeated wording does not establish a distinctive exceptional virtue."
-        },
-        "behavior": {
-          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.",
-          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
-        },
-        "stress": {
-          "ko": "공포. 증언 탐사원 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That the testimony surveyor duty post would stand empty and the Government's passage would become a break in the eight states' recognition. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
+      "prowess": {
+        "base": 8,
+        "effective": 8
       }
-    ],
-    "narrative": {
-      "ko": "일화. 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 증언 탐사원 자리의 서명이 장부에 올랐다. 단일 일화와 반복 당직 문구만 있어 장기 성향·광범위 경력·후속 결과는 미확인이다.",
-      "en": "Anecdote. In 2125, when the accounts of two witnesses split, he opened a public confrontation. By this deed the signature of the testimony surveyor post rose into the ledger. Only one anecdote and repeated duty wording are available; enduring disposition, broader experience, and later results remain unconfirmed."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -419,83 +152,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-gu-28290-S06",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K621",
-      "stateId": "S06",
-      "politicalParentTitleId": "title:kingdom-s06",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-gu-28290-S06",
-          "directLiegePersonId": "K144"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bbfc-c5ec-d765-9594",
-    "name": "여흥 민씨",
-    "crest": "clan-crests/bbfc-c5ec-d765-9594.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": -5,
-    "무력": -35,
-    "물질": -30,
-    "공동": 15,
-    "원칙": 50,
-    "공개": -20,
-    "자격": 15,
-    "분산": -25,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": -30,
-    "위험": 25,
-    "과시": -5,
-    "지속": 30,
-    "지향": "무성향",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "증인 공개 대질·증언 기록",
-    "소속": "서울특별시 지방공무원 조직",
-    "직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급",
-    "담당 업무": "증언 탐사원",
-    "가치관": "권위 15 | 개방 −5 | 무력 −35 | 물질 −30 | 공동 15 | 원칙 50 | 공개 −20 | 자격 15 | 분산 −25 | 변혁 −20",
-    "욕망": "갈망 10 | 독점 −30 | 위험 25 | 과시 −5 | 지속 30 | 지향 무성향 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "대합실 당직에서 자랐다. 증언 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 민다현의 증인 공개 대질·증언 기록 업무는 종로1·2·3·4가동과 이어진다.",
-    "공무원 직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 증언 탐사원.",
-    "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 증언 탐사원 자리의 서명이 장부에 올랐다.",
-    "관계": "증인 공개 대질·증언 기록 업무의 인수인계를 통해 같은 생활권의 선배 당직과 이어진다.",
-    "야망": "증언 탐사원 자리에서 증인 공개 대질·증언 기록을 이어 서울특별시 지방공무원 조직의 장부가 당직 사이에 끊기지 않게 한다.",
-    "공포": "증언 탐사원 당직이 비어 증인 공개 대질·증언 기록 업무와 연결된 도심 통행의 도장·명부가 끊기고, 그 기록에 기대는 서울특별시 지방공무원 조직 구성 세력의 인준까지 멈추는 것.",
-    "개입": "증인 공개 대질·증언 기록 업무의 당직 인수 증인을 세우거나, 그 직위의 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "증인 두 명의 말이 다르면 큰소리로 결론을 내리지 않는다. 공개 대질 기록으로 당직을 잇는 쪽을 택한다.\n\n- 생업: 증인 공개 대질·증언 기록\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급\n- 담당 업무: 증언 탐사원\n**생애.** 대합실 당직에서 자랐다. 증언 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 민다현의 증인 공개 대질·증언 기록 업무는 종로1·2·3·4가동과 이어진다.\n\n**공무원 직위·직급.** 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 증언 탐사원.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 증언 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 증인 공개 대질·증언 기록 업무의 인수인계를 통해 같은 생활권의 선배 당직과 이어진다.\n\n**야망.** 증언 탐사원 자리에서 증인 공개 대질·증언 기록을 이어 서울특별시 지방공무원 조직의 장부가 당직 사이에 끊기지 않게 한다.\n\n**공포.** 증언 탐사원 당직이 비어 증인 공개 대질·증언 기록 업무와 연결된 도심 통행의 도장·명부가 끊기고, 그 기록에 기대는 서울특별시 지방공무원 조직 구성 세력의 인준까지 멈추는 것.\n\n**개입.** 증인 공개 대질·증언 기록 업무의 당직 인수 증인을 세우거나, 그 직위의 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −5 | 무력 −35 | 물질 −30 | 공동 15 | 원칙 50 | 공개 −20 | 자격 15 | 분산 −25 | 변혁 −20\n- 욕망: 갈망 10 | 독점 −30 | 위험 25 | 과시 −5 | 지속 30 | 지향 무성향 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-06"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "민다현",
-        "type": "계약",
-        "to": "차세온",
-        "basis": "민다현은 대질로 확인한 증언을 차세온에게 가져간다. 차세온은 원본과 필적을 함께 살펴 증언이 달라진 부분과 문서에 덧쓴 부분을 구분한다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

@@ -1,501 +1,132 @@
 {
   "id": "person-0036",
   "name": "임채원",
-  "title": "방호복 직능 대표",
-  "position": "방호복 직능 대표",
+  "title": "남구로 부품대 대주",
+  "position": "남구로 부품대 대주 · 남구로역",
   "characterId": "K036",
-  "rank": "이사",
-  "commonTier": "T3",
-  "occupation": "대합실 당직",
+  "rank": "대주",
+  "commonTier": "T2",
+  "occupation": "부품 가공",
   "gender": "남성",
   "stage": "S1",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-임채원",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0036",
   "birthDate": "2096-11-16",
   "birthday": "11-16",
   "age": 30,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/27",
-    "lore/characters/Cast-State-02.json#/content/29"
-  ],
-  "familyTree": {
-    "personId": "K036",
-    "nodes": [
-      {
-        "id": "K036",
-        "personId": "K036",
-        "kind": "person",
-        "name": "임채원",
-        "birthDate": "2096-11-16",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K036"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-임채원-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 방호복 직능 대표 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-임채원-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0036"
-      },
-      {
-        "id": "FH-K036-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승수",
-        "lineage": {
-          "surname": "임",
-          "bongwan": "조양",
-          "clan": "c784-c870-c591-6797"
-        },
-        "birthDate": "2066-11-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-임채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2104,
-            "summary": "임승수는 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-임채원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K036-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승은",
-        "lineage": {
-          "surname": "임",
-          "bongwan": "조양",
-          "clan": "c784-c870-c591-6797"
-        },
-        "birthDate": "2036-11-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-임채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "임승은은 대합실 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-임채원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K036-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승연",
-        "lineage": {
-          "surname": "임",
-          "bongwan": "조양",
-          "clan": "c784-c870-c591-6797"
-        },
-        "birthDate": "2006-11-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-임채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임승연은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-임채원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K036-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박승정",
-        "birthDate": "2066-11-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-임채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2104,
-            "summary": "박승정은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-임채원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K036-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이승우",
-        "birthDate": "2036-11-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-임채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "이승우는 대합실 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-임채원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K036-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승정",
-        "birthDate": "2006-11-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-임채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최승정은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-임채원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K036-P-01:K036:biological",
-        "from": "FH-K036-P-01",
-        "to": "K036",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-임채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K036-P-02:FH-K036-P-01:biological",
-        "from": "FH-K036-P-02",
-        "to": "FH-K036-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-임채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K036-P-03:FH-K036-P-02:biological",
-        "from": "FH-K036-P-03",
-        "to": "FH-K036-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-임채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K036-M-01:K036:biological",
-        "from": "FH-K036-M-01",
-        "to": "K036",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-임채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K036-M-02:FH-K036-M-01:biological",
-        "from": "FH-K036-M-02",
-        "to": "FH-K036-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-임채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K036-M-03:FH-K036-M-02:biological",
-        "from": "FH-K036-M-03",
-        "to": "FH-K036-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-임채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c784-c870-c591-6797",
+    "name": "조양 임씨",
+    "crest": "clan-crests/c784-c870-c591-6797.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "남구로의 선반 넷에서 바람틀 베어링과 수차의 날이 나오고, 그 부품대의 도장은 임채원의 목에 걸려 있다. 손 아홉이 그 선반들을 돌리고, 그는 교대가 끝날 때마다 깎아 낸 베어링을 한 상자씩 꺼내 치수를 잰다. 틀린 베어링 하나가 나가도 장이 깨진 것으로 셈될 수 있으니, 그는 바늘땀을 세듯 치수를 두 번씩 센다. 공장장 강민서와는 펌프 축받이를 철마다 마흔 개씩 대는 장을 맺었고, 그 장을 다 갚으면 보증판에 그의 대의 수가 하나 오른다. 남구로는 7호선으로 금천과 이어지는 역이라, 금천 굴착 틀에 들어갈 날받이도 그의 선반에서 나온다. 임씨네 부품대는 구로의 네 도장 집안 가운데 하나라, 다음 대주회가 열리면 보증판에 쌓인 그 수가 곧 서른 살 대주의 이름값이다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "남구로 부품대 대주",
+    "품계": "대주",
+    "생업": "부품 가공",
+    "일하는 역": "남구로역",
+    "잠자는 역": "남구로역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "남구로의 선반 넷에서 바람틀 베어링과 수차의 날이 나오고, 그 부품대의 도장은 임채원의 목에 걸려 있다. 손 아홉이 그 선반들을 돌리고, 그는 교대가 끝날 때마다 깎아 낸 베어링을 한 상자씩 꺼내 치수를 잰다. 틀린 베어링 하나가 나가도 장이 깨진 것으로 셈될 수 있으니, 그는 바늘땀을 세듯 치수를 두 번씩 센다. 공장장 강민서와는 펌프 축받이를 철마다 마흔 개씩 대는 장을 맺었고, 그 장을 다 갚으면 보증판에 그의 대의 수가 하나 오른다. 남구로는 7호선으로 금천과 이어지는 역이라, 금천 굴착 틀에 들어갈 날받이도 그의 선반에서 나온다. 임씨네 부품대는 구로의 네 도장 집안 가운데 하나라, 다음 대주회가 열리면 보증판에 쌓인 그 수가 곧 서른 살 대주의 이름값이다.",
+    "관직": "직함 남구로 부품대 대주. 직위 남구로 부품대 대주 · 남구로역. 품계 대주. 일하는 역 남구로역."
+  },
+  "values": {
+    "권위": -80,
+    "개방": 25,
+    "무력": -30,
+    "물질": 65,
+    "공동": 10,
+    "원칙": -5,
+    "공개": 30,
+    "자격": 75,
+    "분산": 80,
+    "변혁": 35
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": -10,
+    "위험": -5,
+    "과시": -20,
+    "지속": -5,
+    "지향": "이성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0036",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "임채원",
+        "type": "지휘",
+        "to": "강민서",
+        "basis": "구로 공장장 강민서의 직속"
+      },
+      {
+        "from": "임채원",
+        "type": "계약",
+        "to": "강민서",
+        "basis": "보증판에 올릴 장으로, 펌프 축받이를 철마다 마흔 개씩 대는 장을 맺었다"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K029",
+    "name": "강민서",
+    "courtId": "court:K029",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 9,
-        "effective": 9
+      "diplomacy": {
+        "base": 5,
+        "effective": 5
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 10,
-        "effective": 10
-      },
-      "management": {
+      "stewardship": {
         "base": 11,
         "effective": 11
       },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 10,
-        "effective": 10
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
         "base": 8,
         "effective": 8
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "k036-filter-verification",
-        "name": {
-          "ko": "필터 성능 검증",
-          "en": "Filter-performance verification"
-        },
-        "rating": 60
-      },
-      {
-        "id": "k036-witness-confrontation",
-        "name": {
-          "ko": "증언 대질",
-          "en": "Witness confrontation"
-        },
-        "rating": 50
+        "id": "fc-0036-sheet-checking",
+        "name": "치수 두 번 세기",
+        "rating": 62
       }
     ],
-    "traits": [
-      {
-        "id": "k036-protective-stock-access",
-        "name": {
-          "ko": "방호 물자 접근",
-          "en": "Access to protective supplies"
-        },
-        "description": {
-          "ko": "방호복을 전리품처럼 쌓아 두는 장교를 피한다.",
-          "en": "Avoids officers hoarding protective clothes as spoils."
-        },
-        "behavior": {
-          "ko": "방호복을 전리품처럼 쌓아 두는 장교를 피한다.",
-          "en": "Avoids officers hoarding protective clothes as spoils."
-        },
-        "stress": {
-          "ko": "필터 원단이 동부 보호계약에 묶여 구로 작업반이 탁수와 분진 속에 방치되는 것.",
-          "en": "That filter fabric would be bound to the eastern protection contract, and the Guro work squads would be left in turbid water and dust."
-        },
-        "relationship": {
-          "ko": "마곡 인증관 최은재와 필터 성능 검증을 동맹으로 나누고, 강민서의 공정 분할에서 방호 공정을 맡으며, 한소미의 가죽 공방과 원자재 교환을 경쟁한다.",
-          "en": "Sharing filter performance verification as an ally with Choi Eunjae, the Magok certification officer, taking the protective process in Gang Minseo's process division, and competing for raw materials with Han Somi's leather workshops."
-        },
-        "effects": []
-      },
-      {
-        "id": "k036-samples-before-priority",
-        "name": {
-          "ko": "표본 뒤 우선 배정",
-          "en": "Samples before priority allocation"
-        },
-        "description": {
-          "ko": "군수 배정은 방재 표본이 기준을 넘을 때만 허용한다.",
-          "en": "Allows military priority only when disaster samples meet the stated condition."
-        },
-        "behavior": {
-          "ko": "군수 배정은 방재 표본이 기준을 넘을 때만 허용한다.",
-          "en": "Allows military priority only when disaster samples meet the stated condition."
-        },
-        "stress": {
-          "ko": "필터 원단이 동부 보호계약에 묶여 구로 작업반이 탁수와 분진 속에 방치되는 것.",
-          "en": "That filter fabric would be bound to the eastern protection contract, and the Guro work squads would be left in turbid water and dust."
-        },
-        "relationship": {
-          "ko": "마곡 인증관 최은재와 필터 성능 검증을 동맹으로 나누고, 강민서의 공정 분할에서 방호 공정을 맡으며, 한소미의 가죽 공방과 원자재 교환을 경쟁한다.",
-          "en": "Sharing filter performance verification as an ally with Choi Eunjae, the Magok certification officer, taking the protective process in Gang Minseo's process division, and competing for raw materials with Han Somi's leather workshops."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "필터 검증 협력과 공개 대질이 확인된다. 바느질 관찰을 실제 봉제 수행 경력으로 확대하지 않았다.",
-      "en": "Filter-verification cooperation and public confrontation are confirmed. Observing stitches is not expanded into a sewing career."
-    },
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -533,110 +164,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-41190-S02",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K036",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:kingdom-s02",
-      "personalLieges": [],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c784-c870-c591-6797",
-    "name": "조양 임씨",
-    "crest": "clan-crests/c784-c870-c591-6797.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -45,
-    "개방": 10,
-    "무력": -20,
-    "물질": 50,
-    "공동": 35,
-    "원칙": 5,
-    "공개": 30,
-    "자격": 55,
-    "분산": 25,
-    "변혁": 25
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": -10,
-    "위험": -5,
-    "과시": -20,
-    "지속": -5,
-    "지향": "이성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "규격맹",
-    "생업": "대합실 당직",
-    "품계": "이사",
-    "직함": "방호복 직능 대표",
-    "업무 위치": "구로3동. 임채원은 구로3동 방호복 직능 칠판에 겨울 방호복의 봉합 상태와 출고 수량을 적는다. 최은재의 필터 검증 표본이 기준을 넘은 때에만 군수 우선 배정을 기록하고, 진우람에게 진료용 출고분을 따로 인계한다.",
-    "가치관": "권위 −45 | 개방 10 | 무력 −20 | 물질 50 | 공동 35 | 원칙 5 | 공개 30 | 자격 55 | 분산 25 | 변혁 25",
-    "욕망": "갈망 15 | 독점 −10 | 위험 −5 | 과시 −20 | 지속 −5 | 지향 이성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 방호복 직능 대표 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 구로3동. 임채원은 구로3동 방호복 직능 칠판에 겨울 방호복의 봉합 상태와 출고 수량을 적는다. 최은재의 필터 검증 표본이 기준을 넘은 때에만 군수 우선 배정을 기록하고, 진우람에게 진료용 출고분을 따로 인계한다.",
-    "관직": "품계 이사. 직함은 방호복 직능 대표. 출고 수량을 조합 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다.",
-    "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 방호복 직능 대표 자리의 서명이 장부에 올랐다.",
-    "관계": "마곡 인증관 최은재와 필터 성능 검증을 동맹으로 나누고, 강민서의 공정 분할에서 방호 공정을 맡으며, 한소미의 가죽 공방과 원자재 교환을 경쟁한다.",
-    "야망": "방호복과 필터 규격을 의료·정수 작업반까지 열어, 복구복무자가 군복이 아니어도 시민으로 숨 쉬게 한다.",
-    "공포": "필터 원단이 동부 보호계약에 묶여 구로 작업반이 탁수와 분진 속에 방치되는 것.",
-    "개입": "대체 원단을 구하거나, 군수 창고에 숨긴 필터를 폭로해 직능 투표의 방향을 바꿀 수 있다."
-  },
-  "biography": "실용적이고 바느질 간격으로 위험을 가늠한다. 방호복을 전리품처럼 쌓아 두는 장교를 재앙처럼 피한다.\n\n- 소속: 규격맹\n- 생업: 대합실 당직\n- 품계: 이사\n- 직함: 방호복 직능 대표\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 방호복 직능 대표 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 구로3동. 임채원은 구로3동 방호복 직능 칠판에 겨울 방호복의 봉합 상태와 출고 수량을 적는다. 최은재의 필터 검증 표본이 기준을 넘은 때에만 군수 우선 배정을 기록하고, 진우람에게 진료용 출고분을 따로 인계한다.\n\n**관직.** 품계 이사. 직함은 방호복 직능 대표. 출고 수량을 조합 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 방호복 직능 대표 자리의 서명이 장부에 올랐다.\n\n**관계.** 마곡 인증관 최은재와 필터 성능 검증을 동맹으로 나누고, 강민서의 공정 분할에서 방호 공정을 맡으며, 한소미의 가죽 공방과 원자재 교환을 경쟁한다.\n\n**야망.** 방호복과 필터 규격을 의료·정수 작업반까지 열어, 복구복무자가 군복이 아니어도 시민으로 숨 쉬게 한다.\n\n**공포.** 필터 원단이 동부 보호계약에 묶여 구로 작업반이 탁수와 분진 속에 방치되는 것.\n\n**개입.** 대체 원단을 구하거나, 군수 창고에 숨긴 필터를 폭로해 직능 투표의 방향을 바꿀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 10 | 무력 −20 | 물질 50 | 공동 35 | 원칙 5 | 공개 30 | 자격 55 | 분산 25 | 변혁 25\n- 욕망: 갈망 15 | 독점 −10 | 위험 −5 | 과시 −20 | 지속 −5 | 지향 이성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-02"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "임채원",
-        "type": "계약",
-        "to": "최은재",
-        "basis": "방호 필터 성능 검증을 나눔"
-      },
-      {
-        "from": "임채원",
-        "type": "경쟁",
-        "to": "한소미",
-        "basis": "가죽 공방과 방호 원단 원자재를 겨룸"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "유하은",
-        "type": "경쟁",
-        "to": "임채원",
-        "basis": "방호 원단·가죽 원자재 경쟁"
-      },
-      {
-        "from": "최은재",
-        "type": "계약",
-        "to": "임채원",
-        "basis": "필터 검증을 방호 직능에 맡음"
-      },
-      {
-        "from": "진우람",
-        "type": "사제",
-        "to": "임채원",
-        "basis": "임채원의 필터 규격을 진료에 적용하는 사제에 가깝고"
-      },
-      {
-        "from": "제문석",
-        "type": "계약",
-        "to": "임채원",
-        "basis": "임채원의 방호 출고를 진료 수량에 맞추며"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

@@ -1,493 +1,142 @@
 {
   "id": "person-0350",
   "name": "문하율",
-  "title": "능선 초병",
-  "position": "아관사 능선 초병",
+  "title": "의원 집안 후계",
+  "position": "의원 집안 후계 · 왕십리역",
   "characterId": "K349",
-  "rank": "병장",
-  "commonTier": "T5",
-  "occupation": "봉화·호각 차단·경위 보고",
+  "rank": "후계",
+  "commonTier": "T2",
+  "occupation": "배급 집행",
   "gender": "남성",
   "stage": "S1",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-문하율",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0350",
   "birthDate": "2091-11-19",
   "birthday": "11-19",
   "age": 35,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/61",
-    "lore/characters/Cast-State-14.json#/content/63"
-  ],
-  "familyTree": {
-    "personId": "K349",
-    "nodes": [
-      {
-        "id": "K349",
-        "personId": "K349",
-        "kind": "person",
-        "name": "문하율",
-        "birthDate": "2091-11-19",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K349"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-문하율-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 아관사 능선 초병 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-문하율-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0350"
-      },
-      {
-        "id": "FH-K349-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "문승호",
-        "lineage": {
-          "surname": "문",
-          "bongwan": "남평",
-          "clan": "bb38-b0a8-d3c9-6587"
-        },
-        "birthDate": "2061-11-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-문하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2099,
-            "summary": "문승호는 대합실 당직에서 봉화·호각 차단·경위 보고 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-문하율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K349-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "문승민",
-        "lineage": {
-          "surname": "문",
-          "bongwan": "남평",
-          "clan": "bb38-b0a8-d3c9-6587"
-        },
-        "birthDate": "2031-11-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-문하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2069,
-            "summary": "문승민은 대합실 당직에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-문하율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K349-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "문승원",
-        "lineage": {
-          "surname": "문",
-          "bongwan": "남평",
-          "clan": "bb38-b0a8-d3c9-6587"
-        },
-        "birthDate": "2001-11-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-문하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "문승원은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-문하율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K349-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준아",
-        "birthDate": "2061-11-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-문하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2099,
-            "summary": "이준아는 대합실 당직에서 봉화·호각 차단·경위 보고 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-문하율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K349-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준혁",
-        "birthDate": "2031-11-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-문하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2069,
-            "summary": "최준혁은 대합실 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-문하율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K349-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준윤",
-        "birthDate": "2001-11-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-문하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정준윤은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-문하율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K349-P-01:K349:biological",
-        "from": "FH-K349-P-01",
-        "to": "K349",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-문하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K349-P-02:FH-K349-P-01:biological",
-        "from": "FH-K349-P-02",
-        "to": "FH-K349-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-문하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K349-P-03:FH-K349-P-02:biological",
-        "from": "FH-K349-P-03",
-        "to": "FH-K349-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-문하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K349-M-01:K349:biological",
-        "from": "FH-K349-M-01",
-        "to": "K349",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-문하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K349-M-02:FH-K349-M-01:biological",
-        "from": "FH-K349-M-02",
-        "to": "FH-K349-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-문하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K349-M-03:FH-K349-M-02:biological",
-        "from": "FH-K349-M-03",
-        "to": "FH-K349-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-문하율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bb38-b0a8-d3c9-6587",
+    "name": "남평 문씨",
+    "crest": "clan-crests/bb38-b0a8-d3c9-6587.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "성동구 행당1동 왕십리역에 장세화 의원 집안의 후계로 기재된 서른다섯 살 남성이며, 남평 문씨다. 목천 장씨 가운데 정부 쪽에는 의석을 물려받을 어른이 없어, 그는 장세화의 집안이 다른 집안에서 들인 후계다. 의원보다 일곱 살 위인 그를 집안 세대주가 의석을 물릴 사람으로 적었고, 그는 그 기재를 맹세로 받았다. 집안의 배급 창고를 맡아, 의원이 국회에 가는 날이면 왕십리역 배급 창구에서 뚝도 취수구 일꾼들의 배급표를 대신 끊어 준다. 장세화가 쓰러지면 다음 선거까지 의원 직무대리로 구청의 도장을 쓸 사람이다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "의원 집안 후계",
+    "품계": "후계",
+    "생업": "배급 집행",
+    "일하는 역": "왕십리역",
+    "잠자는 역": "왕십리역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "성동구 행당1동 왕십리역에 장세화 의원 집안의 후계로 기재된 서른다섯 살 남성이며, 남평 문씨다. 목천 장씨 가운데 정부 쪽에는 의석을 물려받을 어른이 없어, 그는 장세화의 집안이 다른 집안에서 들인 후계다. 의원보다 일곱 살 위인 그를 집안 세대주가 의석을 물릴 사람으로 적었고, 그는 그 기재를 맹세로 받았다. 집안의 배급 창고를 맡아, 의원이 국회에 가는 날이면 왕십리역 배급 창구에서 뚝도 취수구 일꾼들의 배급표를 대신 끊어 준다. 장세화가 쓰러지면 다음 선거까지 의원 직무대리로 구청의 도장을 쓸 사람이다.",
+    "관직": "직함 의원 집안 후계. 직위 의원 집안 후계 · 왕십리역. 품계 후계. 일하는 역 왕십리역."
+  },
+  "values": {
+    "권위": 90,
+    "개방": -80,
+    "무력": 75,
+    "물질": -5,
+    "공동": 20,
+    "원칙": 15,
+    "공개": -25,
+    "자격": -5,
+    "분산": -80,
+    "변혁": -35
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": 0,
+    "위험": -30,
+    "과시": -20,
+    "지속": 35,
+    "지향": "유동",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0350",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "문하율",
+        "type": "지휘",
+        "to": "장세화",
+        "basis": "성동구 국회의원 장세화의 직속"
+      },
+      {
+        "from": "문하율",
+        "type": "맹세",
+        "to": "장세화",
+        "basis": "집안 세대주가 적은 후계 기재를 의석을 지키겠다는 맹세로 받았다"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K296",
+    "name": "장세화",
+    "courtId": "court:K296",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 4,
+        "effective": 4
       },
-      "negotiation": {
-        "base": 10,
-        "effective": 10
+      "stewardship": {
+        "base": 9,
+        "effective": 9
       },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
+      "intrigue": {
         "base": 6,
         "effective": 6
       },
-      "endurance": {
-        "base": 10,
-        "effective": 10
+      "learning": {
+        "base": 5,
+        "effective": 5
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
       }
     },
     "skills": [
       {
-        "id": "shift-condition-negotiation",
-        "name": {
-          "ko": "교대 조건 협의",
-          "en": "Shift condition negotiation"
-        },
+        "id": "p0350-ration",
+        "name": "배급표 정리",
         "rating": 55
       }
     ],
     "traits": [
       {
-        "id": "stated-priority",
-        "name": {
-          "ko": "보고는 국적보다 먼저",
-          "en": "Reports before nationality"
-        },
-        "description": {
-          "ko": "불빛을 먼저 보고하고 태업 작업반과 밤새 조건을 나눴다. 독자 차단 야망은 있으나 지휘 지연을 없앴다는 성과는 없다.",
-          "en": "Lights are reported before nationality and an overnight crew negotiation opened a shift. Independent closure is an ambition, not proof of eliminating command delays."
-        },
-        "behavior": {
-          "ko": "직선적이고 산바람보다 회의실을 싫어한다. 한 번 본 불빛은 국적보다 먼저 보고한다.",
-          "en": "Direct, he hated meeting rooms more than mountain wind. A light he had seen once he reported before its nationality."
-        },
-        "stress": {
-          "ko": "공포. 고지가 뚫려 구의 정수와 동부 교량이 같은 밤에 열리는 것.",
-          "en": "Fear. That the hill would be pierced and the Guui purification works and the eastern bridges would open on the same night."
-        },
-        "relationship": {
-          "ko": "관계. 고서준의 수비 명령을 최전에서 수행하고, 곽민재의 급수 점검을 감시 공백으로 여기며, 배우진의 후견 제의를 고서준보다 먼저 듣는다.",
-          "en": "Relations. Carried out Go Seojun's defense orders at the front line, read Gwak Minjae's water inspections as a watch gap, and heard Bae Woojin's guardianship offer before Go Seojun did."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 병장. 직함은 아관사 능선 초병. 봉화와 호각으로 먼저 막고 차단 경위를 양군에 보고한다. 전쟁·급수 공동승인 문서를 초소 당직 원장에도 남긴다.",
-          "en": "Office. Rank: sergeant. Title: ridge sentry. He blocked first with beacon and whistle and took after-approval from Go Seojun. He kept no peacetime joint-approval papers at the outpost."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 병장. 직함은 아관사 능선 초병. 봉화와 호각으로 먼저 막고 차단 경위를 양군에 보고한다. 전쟁·급수 공동승인 문서를 초소 당직 원장에도 남긴다.",
-          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: ridge sentry. He blocked first with beacon and whistle and took after-approval from Go Seojun. He kept no peacetime joint-approval papers at the outpost."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 고지가 뚫려 구의 정수와 동부 교량이 같은 밤에 열리는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That the hill would be pierced and the Guui purification works and the eastern bridges would open on the same night."
-        },
-        "relationship": {
-          "ko": "관계. 고서준의 수비 명령을 최전에서 수행하고, 곽민재의 급수 점검을 감시 공백으로 여기며, 배우진의 후견 제의를 고서준보다 먼저 듣는다.",
-          "en": "Relations. Carried out Go Seojun's defense orders at the front line, read Gwak Minjae's water inspections as a watch gap, and heard Bae Woojin's guardianship offer before Go Seojun did."
-        },
+        "id": "p0350-trait-1",
+        "name": "두 번째 자리",
+        "description": "앞에 서지 않고 의원 곁에서 일을 끝낸다.",
+        "behavior": "보고를 받으면 의원이 읽을 순서대로 다시 묶는다.",
+        "stress": "자기 이름으로 결재하라는 말을 들으면 굳는다.",
+        "relationship": "장세화와 나이를 두고 말하는 사람을 싫어한다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "불빛을 먼저 보고하고 태업 작업반과 밤새 조건을 나눴다. 독자 차단 야망은 있으나 지휘 지연을 없앴다는 성과는 없다.",
-      "en": "Lights are reported before nationality and an overnight crew negotiation opened a shift. Independent closure is an ambition, not proof of eliminating command delays."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -525,91 +174,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bb38-b0a8-d3c9-6587",
-    "name": "남평 문씨",
-    "crest": "clan-crests/bb38-b0a8-d3c9-6587.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 45,
-    "개방": -25,
-    "무력": 40,
-    "물질": 0,
-    "공동": 15,
-    "원칙": -5,
-    "공개": 0,
-    "자격": -20,
-    "분산": -30,
-    "변혁": -15
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": 0,
-    "위험": -30,
-    "과시": -20,
-    "지속": 35,
-    "지향": "유동",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "봉화·호각 차단·경위 보고",
-    "소속": "아관사",
-    "품계": "병장",
-    "직함": "아관사 능선 초병",
-    "가치관": "권위 45 | 개방 −25 | 무력 40 | 물질 0 | 공동 15 | 원칙 −5 | 공개 0 | 자격 −20 | 분산 −30 | 변혁 −15",
-    "욕망": "갈망 15 | 독점 0 | 위험 −30 | 과시 −20 | 지속 35 | 지향 유동 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2091-11-19에 태어났다. 2126년 개막 현재 아관사 능선 초병 직무를 맡아 봉화·호각 차단·경위 보고 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의2동의 봉화·호각 차단·경위 보고 창구가 문하율의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 병장. 직함은 아관사 능선 초병. 봉화·호각 차단·경위 보고 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
-    "일화": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
-    "관계": "고서준의 수비 명령을 최전에서 수행하고, 곽민재의 급수 점검을 감시 공백으로 여기며, 배우진의 후견 제의를 고서준보다 먼저 듣는다.",
-    "야망": "문하율은 아관사 능선 초병 직무에서 봉화·호각 차단·경위 보고 기록을 공개 인계표와 맞물리게 하려 한다.",
-    "공포": "아관사 능선 초병 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
-    "개입": "오인 봉화를 정정하거나, 초병의 단독 차단을 일방의 지휘권 확대의 증거로 이용할 수 있다. 문하율의 봉화·호각 차단·경위 보고 원장을 대조해 다음 인계의 증거를 세울 수 있다."
-  },
-  "biography": "문하율은 봉화·호각 차단·경위 보고 기록을 손에 익힌 아관사 인물이다. 직선적이고 산바람보다 회의실을 싫어한다. 한 번 본 불빛은 국적보다 먼저 보고한다.\n\n- 생업: 봉화·호각 차단·경위 보고\n- 소속: 아관사\n- 품계: 병장\n- 직함: 아관사 능선 초병\n**생애.** 2091-11-19에 태어났다. 2126년 개막 현재 아관사 능선 초병 직무를 맡아 봉화·호각 차단·경위 보고 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의2동의 봉화·호각 차단·경위 보고 창구가 문하율의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 병장. 직함은 아관사 능선 초병. 봉화·호각 차단·경위 보고 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 고서준의 수비 명령을 최전에서 수행하고, 곽민재의 급수 점검을 감시 공백으로 여기며, 배우진의 후견 제의를 고서준보다 먼저 듣는다.\n\n**야망.** 문하율은 아관사 능선 초병 직무에서 봉화·호각 차단·경위 보고 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 아관사 능선 초병 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 오인 봉화를 정정하거나, 초병의 단독 차단을 일방의 지휘권 확대의 증거로 이용할 수 있다. 문하율의 봉화·호각 차단·경위 보고 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 45 | 개방 −25 | 무력 40 | 물질 0 | 공동 15 | 원칙 −5 | 공개 0 | 자격 −20 | 분산 −30 | 변혁 −15\n- 욕망: 갈망 15 | 독점 0 | 위험 −30 | 과시 −20 | 지속 35 | 지향 유동 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-14"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "문하율",
-        "type": "지휘",
-        "to": "고서준",
-        "basis": "능선 초병으로 수비 명령을 수행"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "선솔우",
-        "type": "계약",
-        "to": "문하율",
-        "basis": "문하율의 능선 감시 일정에 맞춰 개폐 시각을 조정한다"
-      },
-      {
-        "from": "판늘샘",
-        "type": "지휘",
-        "to": "문하율",
-        "basis": "문하율의 지휘로 능선을 돌고"
-      },
-      {
-        "from": "선늘봄",
-        "type": "지휘",
-        "to": "문하율",
-        "basis": "문하율의 초병 명령을 기지에서 집행하고"
-      },
-      {
-        "from": "창지안",
-        "type": "계약",
-        "to": "문하율",
-        "basis": "문하율의 초소 당직과 인파 줄을 나누고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

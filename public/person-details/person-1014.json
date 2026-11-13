@@ -1,473 +1,105 @@
 {
   "id": "person-1014",
   "name": "조엘 박",
-  "title": "창고 열람 통역",
-  "position": "울타리 안 창고 열람 통역",
+  "title": "수도방위사령부 직할대 병사",
+  "position": "수도방위사령부 직할대 병사 · 삼각지역",
   "characterId": "K1014",
-  "rank": "없음",
+  "rank": "상사",
   "commonTier": "T5",
-  "occupation": "기록관 (주), 전령 (부)",
+  "occupation": "징집 보병",
   "gender": "여성",
   "stage": "S4",
-  "state": "S07",
-  "stateName": "환적국",
-  "sourceRoute": "/world/Diaspora-Corridors#인물-조엘-박-joel-park",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-1014",
   "birthDate": "2082-05-14",
   "birthday": "05-14",
   "age": 44,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/factions/Diaspora-Corridors.json#/content/14"
-  ],
-  "familyTree": {
-    "personId": "K1014",
-    "nodes": [
-      {
-        "id": "K1014",
-        "personId": "K1014",
-        "kind": "person",
-        "name": "조엘 박",
-        "birthDate": "2082-05-14",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K1014"
-          },
-          {
-            "path": "lore/factions/Diaspora-Corridors.json",
-            "anchor": "인물-조엘-박-joel-park-list1"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "성명: 조엘 박. 울타리 안에서는 Joel. 후국 장부 박조엘",
-            "sourceRefs": [
-              {
-                "path": "lore/factions/Diaspora-Corridors.json",
-                "anchor": "인물-조엘-박-joel-park-list1"
-              }
-            ]
-          }
-        ],
-        "nameEn": "Joel Park",
-        "detailRoute": "/people/person-1014"
-      },
-      {
-        "id": "FH-K1014-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박서윤",
-        "lineage": {
-          "surname": "박",
-          "bongwan": "밀양",
-          "clan": "bc15-bc00-c591"
-        },
-        "birthDate": "2052-05-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/factions/Diaspora-Corridors.json",
-            "anchor": "인물-조엘-박-joel-park-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2090,
-            "summary": "박서윤은 2052년에 태어났다. 용산 울타리 용역의 가족 기록과 작업 사본을 읽으며 자랐고, 2070년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/factions/Diaspora-Corridors.json",
-                "anchor": "인물-조엘-박-joel-park-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Park Seoyun was born in 2052 and grew up reading family and work records. From 2070, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Park Seoyun",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1014-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박서우",
-        "lineage": {
-          "surname": "박",
-          "bongwan": "밀양",
-          "clan": "bc15-bc00-c591"
-        },
-        "birthDate": "2022-05-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/factions/Diaspora-Corridors.json",
-            "anchor": "인물-조엘-박-joel-park-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2040,
-            "summary": "박서우는 2022년에 태어났다. 용산 울타리 용역의 가족 기록과 작업 사본을 읽으며 자랐고, 2040년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/factions/Diaspora-Corridors.json",
-                "anchor": "인물-조엘-박-joel-park-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Park Seou was born in 2022 and grew up reading family and work records. From 2040, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Park Seou",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1014-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "에디스 카터",
-        "birthDate": "2052-05-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/factions/Diaspora-Corridors.json",
-            "anchor": "인물-조엘-박-joel-park-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2090,
-            "summary": "에디스 카터는 2052년에 태어났다. 용산 울타리 용역의 가족 기록과 작업 사본을 읽으며 자랐고, 2070년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/factions/Diaspora-Corridors.json",
-                "anchor": "인물-조엘-박-joel-park-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Edith Carter was born in 2052 and grew up reading family and work records. From 2070, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Edith Carter",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1014-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "머틀 카터",
-        "birthDate": "2022-05-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/factions/Diaspora-Corridors.json",
-            "anchor": "인물-조엘-박-joel-park-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2040,
-            "summary": "머틀 카터는 2022년에 태어났다. 용산 울타리 용역의 가족 기록과 작업 사본을 읽으며 자랐고, 2040년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/factions/Diaspora-Corridors.json",
-                "anchor": "인물-조엘-박-joel-park-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Myrtle Carter was born in 2022 and grew up reading family and work records. From 2040, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Myrtle Carter",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1014-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "박윤석",
-        "lineage": {
-          "surname": "박",
-          "bongwan": "밀양",
-          "clan": "bc15-bc00-c591"
-        },
-        "nameEn": "Park Yunseok",
-        "birthDate": "1992-05-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K1014-P-03"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박윤석은 2030년 대정전 당시 용산 울타리 용역 생활권에서 용산 주둔지의 민간 하청 통역을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "summaryEn": "Park Yunseok was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/cast-family-trees.json",
-                "anchor": "FH-K1014-P-03"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1014-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "로레인 카터",
-        "nameEn": "Lorraine Carter",
-        "birthDate": "1992-05-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K1014-M-03"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "로레인 카터는 2030년 대정전 당시 용산 울타리 용역 생활권에서 용산 주둔지의 민간 하청 통역을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "summaryEn": "Lorraine Carter was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/cast-family-trees.json",
-                "anchor": "FH-K1014-M-03"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K1014-P-01:K1014:biological",
-        "from": "FH-K1014-P-01",
-        "to": "K1014",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/factions/Diaspora-Corridors.json",
-            "anchor": "인물-조엘-박-joel-park-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1014-P-02:FH-K1014-P-01:biological",
-        "from": "FH-K1014-P-02",
-        "to": "FH-K1014-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/factions/Diaspora-Corridors.json",
-            "anchor": "인물-조엘-박-joel-park-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1014-M-01:K1014:biological",
-        "from": "FH-K1014-M-01",
-        "to": "K1014",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/factions/Diaspora-Corridors.json",
-            "anchor": "인물-조엘-박-joel-park-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1014-M-02:FH-K1014-M-01:biological",
-        "from": "FH-K1014-M-02",
-        "to": "FH-K1014-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/factions/Diaspora-Corridors.json",
-            "anchor": "인물-조엘-박-joel-park-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1014-P-03:FH-K1014-P-02:biological",
-        "from": "FH-K1014-P-03",
-        "to": "FH-K1014-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K1014-P-03"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1014-M-03:FH-K1014-M-02:biological",
-        "from": "FH-K1014-M-03",
-        "to": "FH-K1014-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K1014-M-03"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bc15-bc00-c591",
+    "name": "밀양 박씨",
+    "crest": "clan-crests/bc15-bc00-c591.svg"
   },
-  "proseContacts": [
-    {
-      "recipientId": "K1013",
-      "recipientName": "아미라 카심",
-      "basis": "주요 관계: 박태겸의 배차 가문과 계약. 용산 울타리 용역 조엘 박과 협력",
-      "sourceRef": {
-        "path": "lore/factions/Diaspora-Corridors.json",
-        "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
-      }
-    }
-  ],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "탄약 상자 서른일곱 개, 조엘 박이 오늘 아침 교대에서 넘겨받은 수다. 마흔넷의 그는 수도방위사령부 직할대 상사로, 삼각지 청사의 사령부 탄약 기재 창고 앞을 지키며 상자가 들고 날 때마다 상자 번호를 국방부 기재와 한 줄씩 맞춘다. 밀양 박씨인 그는 그 본관을 군번 증표 뒷면에 새겨 두었고, 잠은 용산역에서 잔다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "수도방위사령부 직할대 병사",
+    "품계": "상사",
+    "생업": "징집 보병",
+    "일하는 역": "삼각지역",
+    "잠자는 역": "용산역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "탄약 상자 서른일곱 개, 조엘 박이 오늘 아침 교대에서 넘겨받은 수다. 마흔넷의 그는 수도방위사령부 직할대 상사로, 삼각지 청사의 사령부 탄약 기재 창고 앞을 지키며 상자가 들고 날 때마다 상자 번호를 국방부 기재와 한 줄씩 맞춘다. 밀양 박씨인 그는 그 본관을 군번 증표 뒷면에 새겨 두었고, 잠은 용산역에서 잔다.",
+    "관직": "직함 수도방위사령부 직할대 병사. 직위 수도방위사령부 직할대 병사 · 삼각지역. 품계 상사. 일하는 역 삼각지역."
+  },
+  "values": {
+    "권위": 55,
+    "개방": -45,
+    "무력": 15,
+    "물질": -15,
+    "공동": 5,
+    "원칙": 60,
+    "공개": -65,
+    "자격": 15,
+    "분산": -50,
+    "변혁": -40
+  },
+  "desire": {
+    "갈망": 50,
+    "독점": 30,
+    "위험": 0,
+    "과시": -10,
+    "지속": 20,
+    "지향": "양성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-1014",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
+      "diplomacy": {
+        "base": 4,
+        "effective": 4
       },
-      "strategy": {
-        "base": 9,
-        "effective": 9
-      },
-      "negotiation": {
+      "martial": {
         "base": 10,
         "effective": 10
       },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
-      "learning": {
-        "base": 12,
-        "effective": 12
-      },
-      "prowess": {
+      "stewardship": {
         "base": 5,
         "effective": 5
       },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+      "intrigue": {
+        "base": 5,
+        "effective": 5
+      },
+      "learning": {
+        "base": 4,
+        "effective": 4
+      },
+      "prowess": {
+        "base": 10,
+        "effective": 10
       }
     },
-    "skills": [
-      {
-        "id": "k1014-warehouse-translation",
-        "name": {
-          "ko": "창고 열람 통역",
-          "en": "Warehouse-access interpretation"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k1014-trait-1",
-        "name": {
-          "ko": "번호로 말하는 창고",
-          "en": "A warehouse described by numbers"
-        },
-        "description": {
-          "ko": "군 이름 대신 층수와 상자 번호를 사용한다.",
-          "en": "Uses floor and box numbers instead of military names."
-        },
-        "behavior": {
-          "ko": "군 이름 대신 층수와 상자 번호를 사용한다.",
-          "en": "Uses floor and box numbers instead of military names."
-        },
-        "stress": {
-          "ko": "고유 군 명칭이 들어간 문서는 번역하지 않고 돌려보낸다.",
-          "en": "Returns documents with specific military names without translating them."
-        },
-        "relationship": {
-          "ko": "아미라와 협력하되 박태겸과는 열람 권한을 다툰다.",
-          "en": "Cooperates with Amira but disputes access rights with Park Taegyeom."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "창고 열람에서 층수와 상자 번호를 말하며 고유 군 명칭이 적힌 문서는 번역하지 않고 돌려보낸다. 창고 기억의 정식 열람을 바라지만 문장이 점령 표지로 읽힐 위험을 경계한다. 문장 재현 시도 때 봉인하는 열람은 용산역 대합실 예약 화물 창고의 해당 열람이며, 모든 창고의 지배권이나 군사 점령권을 주장하지 않는다.",
-      "en": "She uses floor and box numbers for warehouse access and returns documents bearing specific military names untranslated. She seeks formal access to warehouse memory but guards against insignia being read as an occupation claim. An attempt to reproduce insignia seals only the affected access at the reserved-cargo warehouse in the Yongsan Station concourse, without a claim over all warehouses or military occupation rights."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -505,67 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bc15-bc00-c591",
-    "name": "밀양 박씨",
-    "crest": "clan-crests/bc15-bc00-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": false,
-  "values": {
-    "권위": 10,
-    "개방": 10,
-    "무력": -20,
-    "물질": -10,
-    "공동": 0,
-    "원칙": 40,
-    "공개": -40,
-    "자격": 0,
-    "분산": 0,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": 50,
-    "독점": 30,
-    "위험": 0,
-    "과시": -10,
-    "지속": 20,
-    "지향": "양성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "성명": "조엘 박. 울타리 안에서는 Joel. 후국 장부 박조엘",
-    "캐릭터 ID": "K1014",
-    "출생지": "용산",
-    "성별": "여성",
-    "품계": "없음",
-    "가치관": "권위 10 | 개방 10 | 무력 −20 | 물질 −10 | 공동 0 | 원칙 40 | 공개 −40 | 자격 0 | 분산 0 | 변혁 −20",
-    "욕망": "갈망 50 | 독점 30 | 위험 0 | 과시 −10 | 지속 20 | 지향 양성 | 결합 단혼",
-    "출신 공동체": "용산 울타리 용역. 한국 국적, 영어 일상. 붕괴 전 주둔지 하청 통역. 조엘 박은 2082년 용산에서 태어났다. 한국계 박씨 가구와 아프리카계 미국인 카터 가구를 양친으로 두고 영어와 한국어를 사용한다. 한국 국적을 지니고 한국 병역을 마쳤으며, 용산 울타리 용역 장부를 맡아 창고 열람을 통역한다. 박윤석은 2030년 용산 울타리 용역에서 용산 주둔지의 민간 하청 통역을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 조엘 박의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다.",
-    "언어": "영어·한국어. 군 용어 잔존",
-    "생업": "기록관 (주), 전령 (부)",
-    "소속": "환적국(S07). 울타리 용역 장부. 환적국에 창고 기억으로 등록",
-    "직위": "울타리 안 창고 열람 통역",
-    "징집 이력": "한국 병역 필. 예비군 명부는 용산 잔편 쪽에 찢겨 있다",
-    "무장 접근": "없음. 열쇠만. 제식 소화기는 울타리 안 봉인",
-    "성격": "외국 군 이름을 입 밖에 내지 않는다. 층수와 상자 번호만 말한다",
-    "개인 야망": "창고 기억을 후국회의 정식 열람으로 올려 문장 없는 열쇠를 남긴다",
-    "공포": "누군가가 문장을 그려 넣어 울타리를 「점령」으로 읽는 것",
-    "통치·교섭 방식": "고유 군 명칭이 적힌 문서는 번역하지 않고 돌려보낸다",
-    "주요 관계": "아미라와 통행 협력. 박태겸과는 열람 권한을 두고 계약 경쟁",
-    "거주지": "한강로동 용산역 주변 용역 가구의 임시 숙소. 위치 참조이며 소유권을 부여하지 않는다.",
-    "업무 위치": "용산역 대합실 생활 화물 인계·배급 창구 및 예약 화물 창고. 위치 참조이며 소유권을 부여하지 않는다."
-  },
-  "sections": {},
-  "biography": "- 성명: 조엘 박. 울타리 안에서는 Joel. 후국 장부 박조엘\n- 캐릭터 ID: K1014\n- 출생지: 용산\n- 성별: 여성\n- 품계: 없음\n- 가치관: 권위 10 | 개방 10 | 무력 −20 | 물질 −10 | 공동 0 | 원칙 40 | 공개 −40 | 자격 0 | 분산 0 | 변혁 −20\n- 욕망: 갈망 50 | 독점 30 | 위험 0 | 과시 −10 | 지속 20 | 지향 양성 | 결합 단혼\n- 출신 공동체: 용산 울타리 용역. 한국 국적, 영어 일상. 붕괴 전 주둔지 하청 통역. 조엘 박은 2082년 용산에서 태어났다. 한국계 박씨 가구와 아프리카계 미국인 카터 가구를 양친으로 두고 영어와 한국어를 사용한다. 한국 국적을 지니고 한국 병역을 마쳤으며, 용산 울타리 용역 장부를 맡아 창고 열람을 통역한다. 박윤석은 2030년 용산 울타리 용역에서 용산 주둔지의 민간 하청 통역을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 조엘 박의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다.\n- 언어: 영어·한국어. 군 용어 잔존\n- 생업: 기록관 (주), 전령 (부)\n- 소속: 환적국(S07). 울타리 용역 장부. 환적국에 창고 기억으로 등록\n- 직위: 울타리 안 창고 열람 통역\n- 징집 이력: 한국 병역 필. 예비군 명부는 용산 잔편 쪽에 찢겨 있다\n- 무장 접근: 없음. 열쇠만. 제식 소화기는 울타리 안 봉인\n- 성격: 외국 군 이름을 입 밖에 내지 않는다. 층수와 상자 번호만 말한다\n- 개인 야망: 창고 기억을 후국회의 정식 열람으로 올려 문장 없는 열쇠를 남긴다\n- 공포: 누군가가 문장을 그려 넣어 울타리를 「점령」으로 읽는 것\n- 통치·교섭 방식: 고유 군 명칭이 적힌 문서는 번역하지 않고 돌려보낸다\n- 주요 관계: 아미라와 통행 협력. 박태겸과는 열람 권한을 두고 계약 경쟁\n- 문장 재현 시도가 있으면 용산역 대합실 예약 화물 창고의 해당 열람을 봉인한다. 조엘은 군 고유 명칭 문서를 돌려보내고 아미라는 인계 대상 통행증의 언어를 대조한다. 모든 창고의 지배권이나 군사 점령권을 주장하지 않는다.\n- 거주지: 한강로동 용산역 주변 용역 가구의 임시 숙소. 위치 참조이며 소유권을 부여하지 않는다.\n- 업무 위치: 용산역 대합실 생활 화물 인계·배급 창구 및 예약 화물 창고. 위치 참조이며 소유권을 부여하지 않는다.",
-  "sources": [
-    "Diaspora-Corridors"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

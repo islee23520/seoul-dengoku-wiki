@@ -1,500 +1,136 @@
 {
   "id": "person-0155",
   "name": "양해온",
-  "title": "인준 심사 전령",
-  "position": "인준 심사 전령",
+  "title": "광희동 동장",
+  "position": "광희동 동장 · 정부",
   "characterId": "K154",
-  "rank": "",
+  "rank": "동장",
   "commonTier": "T3",
-  "occupation": "인준 보류 전갈·보관 확인 전달",
+  "occupation": "동 행정",
   "gender": "여성",
   "stage": "S2",
-  "state": "S06",
-  "stateName": "대한민국정부",
-  "sourceRoute": "/world/Cast-State-06#인물-양해온",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0155",
   "birthDate": "2091-09-25",
   "birthday": "09-25",
   "age": 35,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-06.json#/content/138"
-  ],
-  "familyTree": {
-    "personId": "K154",
-    "nodes": [
-      {
-        "id": "K154",
-        "personId": "K154",
-        "kind": "person",
-        "name": "양해온",
-        "birthDate": "2091-09-25",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K154"
-          },
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양해온-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 인준 심사 전령 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-양해온-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0155"
-      },
-      {
-        "id": "FH-K154-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "양승진",
-        "lineage": {
-          "surname": "양",
-          "bongwan": "남원",
-          "clan": "c591-b0a8-c6d0-694a"
-        },
-        "birthDate": "2061-09-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양해온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2099,
-            "summary": "양승진은 서울역 등기소에서 인준 보류 전갈·보관 확인 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-양해온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K154-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "양승현",
-        "lineage": {
-          "surname": "양",
-          "bongwan": "남원",
-          "clan": "c591-b0a8-c6d0-694a"
-        },
-        "birthDate": "2031-09-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양해온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2069,
-            "summary": "양승현은 서울역 등기소에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-양해온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K154-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "양승영",
-        "lineage": {
-          "surname": "양",
-          "bongwan": "남원",
-          "clan": "c591-b0a8-c6d0-694a"
-        },
-        "birthDate": "2001-09-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양해온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "양승영은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-양해온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K154-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조승빈",
-        "birthDate": "2061-09-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양해온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2099,
-            "summary": "조승빈은 서울역 등기소에서 인준 보류 전갈·보관 확인 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-양해온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K154-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김현윤",
-        "birthDate": "2031-09-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양해온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2069,
-            "summary": "김현윤은 서울역 등기소에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-양해온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K154-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "박현영",
-        "birthDate": "2001-09-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양해온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박현영은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-양해온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K154-P-01:K154:biological",
-        "from": "FH-K154-P-01",
-        "to": "K154",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양해온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K154-P-02:FH-K154-P-01:biological",
-        "from": "FH-K154-P-02",
-        "to": "FH-K154-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양해온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K154-P-03:FH-K154-P-02:biological",
-        "from": "FH-K154-P-03",
-        "to": "FH-K154-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양해온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K154-M-01:K154:biological",
-        "from": "FH-K154-M-01",
-        "to": "K154",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양해온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K154-M-02:FH-K154-M-01:biological",
-        "from": "FH-K154-M-02",
-        "to": "FH-K154-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양해온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K154-M-03:FH-K154-M-02:biological",
-        "from": "FH-K154-M-03",
-        "to": "FH-K154-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양해온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c591-b0a8-c6d0-694a",
+    "name": "남원 양씨",
+    "crest": "clan-crests/c591-b0a8-c6d0-694a.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "아침 일곱 시 배급 창구가 열리기 전, 남원 양씨인 중구 광희동 동장은 그날 깎일 몫이 있는지 구청의 전갈부터 받아 본다. 전령으로 터널을 오가던 시절의 걸음으로 하루에 두 번 동 안의 역을 모두 돈다. 국민의례 묵념 때 사망 말소된 이름을 읽는 그의 목소리가 낮고 고르다는 말을 듣는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "광희동 동장",
+    "품계": "동장",
+    "생업": "동 행정",
+    "일하는 역": "동대문역사문화공원역",
+    "잠자는 역": "동대문역사문화공원역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "아침 일곱 시 배급 창구가 열리기 전, 남원 양씨인 중구 광희동 동장은 그날 깎일 몫이 있는지 구청의 전갈부터 받아 본다. 전령으로 터널을 오가던 시절의 걸음으로 하루에 두 번 동 안의 역을 모두 돈다. 국민의례 묵념 때 사망 말소된 이름을 읽는 그의 목소리가 낮고 고르다는 말을 듣는다.",
+    "관직": "직함 광희동 동장. 직위 광희동 동장 · 정부. 품계 동장. 일하는 역 동대문역사문화공원역."
+  },
+  "values": {
+    "권위": 75,
+    "개방": -45,
+    "무력": 0,
+    "물질": -35,
+    "공동": 25,
+    "원칙": 80,
+    "공개": -35,
+    "자격": 15,
+    "분산": -85,
+    "변혁": -60
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": -10,
+    "위험": 25,
+    "과시": 10,
+    "지속": 30,
+    "지향": "무성향",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0155",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "양해온",
+        "type": "지휘",
+        "to": "남시윤",
+        "basis": "중구 국회의원 남시윤의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "나선재",
+        "type": "지휘",
+        "to": "양해온",
+        "basis": "광희동 동장 양해온의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K377",
+    "name": "남시윤",
+    "courtId": "court:K377",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K154",
+    "members": [
+      {
+        "personId": "K153",
+        "name": "나선재"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
+      },
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "negotiation": {
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 10,
-        "effective": 10
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k154-sealed-delivery",
-        "name": {
-          "ko": "봉인 전갈 전달",
-          "en": "Sealed dispatch delivery"
-        },
-        "rating": 65
-      },
-      {
-        "id": "k154-delivery-order",
-        "name": {
-          "ko": "전갈 순서 판단",
-          "en": "Dispatch sequencing"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k154-choice",
-        "name": {
-          "ko": "확인을 받은 뒤 출발",
-          "en": "Departs after confirmation"
-        },
-        "description": {
-          "ko": "봉인 끈이 느슨하면 출발을 거부하고, 구두 전갈을 기록하지 않는 사신을 위조일 수 있다고 본다. 숨이 차도 사본 두 장을 한 손에 쥔다.",
-          "en": "She refused departure whenever a seal cord sat loose and read any envoy who did not record verbal dispatches as a potential forger. Short of breath or not, she held two copies in one hand."
-        },
-        "behavior": {
-          "ko": "일화. 강예준의 심사 정지 선언과 지목현의 동부 파견 전갈이 같은 날 전령 가방에 함께 든다. 양해온은 조하린의 보관 확인을 먼저 받아 인준 보류를 달고, 두 전갈 가운데 어느 쪽을 먼저 문서고에 넣을지 인준 시점을 따져 정한다.",
-          "en": "Anecdote. Gang Yejun's suspension of review and Ji Mokhyeon's eastern dispatch message end up in the courier bag on the same day. Yang Haeon first obtains Jo Harin's custody confirmation to post the ratification hold, then weighs the ratification timing to decide which message goes into the archive first."
-        },
-        "stress": {
-          "ko": "공포. 위조 인준 전갈 한 장이 유언을 통과시켜 전령망이 강국 하청으로 몰락하는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That one forged ratification dispatch would pass a testament and the courier network would sink into a great power's subcontract. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 강예준의 심사 정지 선언을 봉인 상태로만 나르는 지휘이고, 마도한의 사본 상자와 순번을 계약으로 나누며, 지목현의 동부 파견 전갈과 인준 시점을 저울질한다.",
-          "en": "Relations. Under command to carry Gang Yejun's examination-suspension declaration only under seal, split boxes and order with Ma Dohan by contract, and weighed ratification timing against Ji Mokhyeon's eastern dispatches."
-        },
-        "effects": []
-      },
-      {
-        "id": "k154-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 주사. 직함은 인준 심사 전령. 전갈을 심사관과 문서고에 동시에 보내고, 인준 보류는 강예준의 날인과 조하린의 보관 확인이 둘 다 있어야 달린다.",
-          "en": "Office. Rank: registrar. Title: ratification examination courier. He sent the dispatches to the examiner and the archive at once, and a ratification hold ran only with both Gang Yejun's stamp and Jo Harin's custody confirmation."
-        },
-        "behavior": {
-          "ko": "관직. 품계 주사. 직함은 인준 심사 전령. 전갈을 심사관과 문서고에 동시에 보내고, 인준 보류는 강예준의 날인과 조하린의 보관 확인이 둘 다 있어야 달린다.",
-          "en": "Office. Rank: registrar. Title: ratification examination courier. He sent the dispatches to the examiner and the archive at once, and a ratification hold ran only with both Gang Yejun's stamp and Jo Harin's custody confirmation."
-        },
-        "stress": {
-          "ko": "공포. 위조 인준 전갈 한 장이 유언을 통과시켜 전령망이 강국 하청으로 몰락하는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That one forged ratification dispatch would pass a testament and the courier network would sink into a great power's subcontract. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 강예준의 심사 정지 선언을 봉인 상태로만 나르는 지휘이고, 마도한의 사본 상자와 순번을 계약으로 나누며, 지목현의 동부 파견 전갈과 인준 시점을 저울질한다.",
-          "en": "Relations. Under command to carry Gang Yejun's examination-suspension declaration only under seal, split boxes and order with Ma Dohan by contract, and weighed ratification timing against Ji Mokhyeon's eastern dispatches."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "보관 확인을 먼저 받아 보류 통지를 달고 인준 시점을 따져 전갈 순서를 정한다. 전달 판단을 독립 외교권으로 바꾸지 않는다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Obtains custody confirmation before a suspension notice and orders messages around approval timing. Delivery judgment is not independent diplomatic authority. Titles and ambitions are not treated as accomplished authority or results."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -532,126 +168,52 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
+  "confirmedHoldings": [
     {
-      "id": "title:duchy-51210-S06",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
+      "id": "holding:v3:dong:1114059000",
+      "name": {
+        "ko": "광희동"
+      },
       "holderPersonId": "K154",
-      "stateId": "S06",
-      "politicalParentTitleId": "title:kingdom-s06",
-      "personalLieges": [
+      "directLiegePersonId": "K377",
+      "stateId": "government",
+      "adminRefs": [
         {
-          "holdingId": "holding:opening-duchy-51210-S06",
-          "directLiegePersonId": "K144"
+          "id": "region:1114059000",
+          "name": "광희동"
         }
       ],
-      "directOwnership": false
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
     }
   ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c591-b0a8-c6d0-694a",
-    "name": "남원 양씨",
-    "crest": "clan-crests/c591-b0a8-c6d0-694a.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 30,
-    "개방": 10,
-    "무력": -35,
-    "물질": -30,
-    "공동": 20,
-    "원칙": 60,
-    "공개": -10,
-    "자격": 0,
-    "분산": -35,
-    "변혁": -40
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": -10,
-    "위험": 25,
-    "과시": 10,
-    "지속": 30,
-    "지향": "무성향",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "인준 보류 전갈·보관 확인 전달",
-    "소속": "서울특별시 지방공무원 조직",
-    "직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급",
-    "담당 업무": "인준 심사 전령",
-    "가치관": "권위 30 | 개방 10 | 무력 −35 | 물질 −30 | 공동 20 | 원칙 60 | 공개 −10 | 자격 0 | 분산 −35 | 변혁 −40",
-    "욕망": "갈망 30 | 독점 −10 | 위험 25 | 과시 10 | 지속 30 | 지향 무성향 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "서울역 등기소에서 자랐다. 인준 심사 전령 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 양해온의 인준 보류 전갈과 보관 확인을 전하는 일은 회현동의 업무와 이어진다.",
-    "공무원 직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 인준 심사 전령.",
-    "일화": "강예준의 심사 정지 선언과 지목현의 동부 파견 전갈이 같은 날 전령 가방에 함께 든다. 양해온은 조하린의 보관 확인을 먼저 받아 인준 보류를 달고, 두 전갈 가운데 어느 쪽을 먼저 문서고에 넣을지 인준 시점을 따져 정한다.",
-    "관계": "강예준의 심사 정지 선언을 봉인 상태로만 나르는 지휘이고, 마도한의 사본 상자와 순번을 계약으로 나누며, 지목현의 동부 파견 전갈과 인준 시점을 저울질한다.",
-    "야망": "계승과 급수·수리 조약의 인준 통지를 자신이 날인하는 전령 원장에만 유효하게 만든다.",
-    "공포": "위조 인준 전갈 한 장이 유언을 통과시켜 전령망이 강국 하청으로 몰락하는 것.",
-    "개입": "위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 폭로해 인준을 강제할 수 있다."
-  },
-  "biography": "봉인 끈이 느슨하면 출발을 거부하고, 구두 전갈을 기록하지 않는 사신을 위조일 수 있다고 본다. 숨이 차도 사본 두 장을 한 손에 쥔다.\n\n- 생업: 인준 보류 전갈·보관 확인 전달\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급\n- 담당 업무: 인준 심사 전령\n**생애.** 서울역 등기소에서 자랐다. 인준 심사 전령 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 양해온의 인준 보류 전갈과 보관 확인을 전하는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 인준 심사 전령.\n\n**일화.** 강예준의 심사 정지 선언과 지목현의 동부 파견 전갈이 같은 날 전령 가방에 함께 든다. 양해온은 조하린의 보관 확인을 먼저 받아 인준 보류를 달고, 두 전갈 가운데 어느 쪽을 먼저 문서고에 넣을지 인준 시점을 따져 정한다.\n\n**관계.** 강예준의 심사 정지 선언을 봉인 상태로만 나르는 지휘이고, 마도한의 사본 상자와 순번을 계약으로 나누며, 지목현의 동부 파견 전갈과 인준 시점을 저울질한다.\n\n**야망.** 계승과 급수·수리 조약의 인준 통지를 자신이 날인하는 전령 원장에만 유효하게 만든다.\n\n**공포.** 위조 인준 전갈 한 장이 유언을 통과시켜 전령망이 강국 하청으로 몰락하는 것.\n\n**개입.** 위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 폭로해 인준을 강제할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 10 | 무력 −35 | 물질 −30 | 공동 20 | 원칙 60 | 공개 −10 | 자격 0 | 분산 −35 | 변혁 −40\n- 욕망: 갈망 30 | 독점 −10 | 위험 25 | 과시 10 | 지속 30 | 지향 무성향 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-06"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "양해온",
-        "type": "지휘",
-        "to": "강예준",
-        "basis": "강예준의 심사 정지 선언을 봉인 상태로만 나르는 지휘이고"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:동대문역사문화공원",
+      "name": {
+        "ko": "동대문역사문화공원역"
       },
-      {
-        "from": "양해온",
-        "type": "계약",
-        "to": "마도한",
-        "basis": "마도한의 사본 상자와 순번을 계약으로 나누며"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "임빛나",
-        "type": "계약",
-        "to": "양해온",
-        "basis": "임빛나는 인준 접수 시각과 보류 상태의 연속 기록을 양해온에게 넘긴다. 양해온은 심사관 날인과 문서고 보관 확인을 살펴 다음 교대에 보류가 누락되지 않은 전갈을 전한다."
+      "holderPersonId": "K153",
+      "directLiegePersonId": "K154",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "동대문역사문화공원",
+        "stationName": "동대문역사문화공원"
       },
-      {
-        "from": "류달현",
-        "type": "계약",
-        "to": "양해온",
-        "basis": "류달현은 교대마다 확인한 봉인 시각과 인준 보류 순서를 양해온에게 넘긴다. 양해온은 심사 날인과 보관 확인을 살펴 보류 상태가 다음 전갈에서 사라지지 않게 한다."
-      },
-      {
-        "from": "문마은",
-        "type": "계약",
-        "to": "양해온",
-        "basis": "문마은은 인준 보류 중인 사본과 효력이 멈춘 구간의 연속 기록을 양해온에게 넘긴다. 양해온은 심사 날인·보관 확인을 살펴 보류가 누락되지 않은 전갈을 잇는다."
-      },
-      {
-        "from": "마도한",
-        "type": "계약",
-        "to": "양해온",
-        "basis": "양해온의 전령 봉인과 순번을 나누며"
-      },
-      {
-        "from": "소피아 로시",
-        "type": "계약",
-        "to": "양해온",
-        "basis": "양해온의 인준 전갈과 시점을 맞춘다"
-      },
-      {
-        "from": "섭도윤",
-        "type": "계약",
-        "to": "양해온",
-        "basis": "양해온의 인준 전갈과 순번을 나누며"
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1114059000",
+          "name": "광희동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "나선재",
+      "holderRoute": "/people/person-0154"
+    }
+  ]
 }

@@ -1,492 +1,120 @@
 {
   "id": "person-0239",
   "name": "섭달호",
-  "title": "음성기록 회수 전령",
-  "position": "장부 원본 회수 전령",
+  "title": "목동역 역반장",
+  "position": "목동역 역반장 · 자유도시들",
   "characterId": "K238",
-  "rank": "서기",
-  "commonTier": "T5",
-  "occupation": "장부 원본 함·열쇠 조각 이송",
+  "rank": "역반장",
+  "commonTier": "T4",
+  "occupation": "역반 운영",
   "gender": "여성",
   "stage": "S3",
-  "state": "S09",
-  "stateName": "여의도출자연합회",
-  "sourceRoute": "/world/Cast-State-09#인물-섭달호",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0239",
   "birthDate": "2092-03-12",
   "birthday": "03-12",
   "age": 34,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-09.json#/content/204"
-  ],
-  "familyTree": {
-    "personId": "K238",
-    "nodes": [
-      {
-        "id": "K238",
-        "personId": "K238",
-        "kind": "person",
-        "name": "섭달호",
-        "birthDate": "2092-03-12",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K238"
-          },
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-섭달호-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 장부 원본 회수 전령 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-섭달호-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0239"
-      },
-      {
-        "id": "FH-K238-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "섭승진",
-        "lineage": {
-          "surname": "섭",
-          "bongwan": "경주",
-          "clan": "c12d-acbd-c8fc"
-        },
-        "birthDate": "2062-03-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-섭달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2100,
-            "summary": "섭승진은 서울역 등기소에서 장부 원본 함·열쇠 조각 이송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-섭달호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K238-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "섭승현",
-        "lineage": {
-          "surname": "섭",
-          "bongwan": "경주",
-          "clan": "c12d-acbd-c8fc"
-        },
-        "birthDate": "2032-03-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-섭달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2070,
-            "summary": "섭승현은 서울역 등기소에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-섭달호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K238-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "섭승영",
-        "lineage": {
-          "surname": "섭",
-          "bongwan": "경주",
-          "clan": "c12d-acbd-c8fc"
-        },
-        "birthDate": "2002-03-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-섭달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "섭승영은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-섭달호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K238-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조현훈",
-        "birthDate": "2062-03-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-섭달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2100,
-            "summary": "조현훈은 서울역 등기소에서 장부 원본 함·열쇠 조각 이송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-섭달호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K238-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김현섭",
-        "birthDate": "2032-03-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-섭달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2070,
-            "summary": "김현섭은 서울역 등기소에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-섭달호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K238-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "박현성",
-        "birthDate": "2002-03-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-섭달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박현성은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-섭달호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K238-P-01:K238:biological",
-        "from": "FH-K238-P-01",
-        "to": "K238",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-섭달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K238-P-02:FH-K238-P-01:biological",
-        "from": "FH-K238-P-02",
-        "to": "FH-K238-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-섭달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K238-P-03:FH-K238-P-02:biological",
-        "from": "FH-K238-P-03",
-        "to": "FH-K238-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-섭달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K238-M-01:K238:biological",
-        "from": "FH-K238-M-01",
-        "to": "K238",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-섭달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K238-M-02:FH-K238-M-01:biological",
-        "from": "FH-K238-M-02",
-        "to": "FH-K238-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-섭달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K238-M-03:FH-K238-M-02:biological",
-        "from": "FH-K238-M-03",
-        "to": "FH-K238-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-섭달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c12d-acbd-c8fc",
+    "name": "경주 섭씨",
+    "crest": "clan-crests/c12d-acbd-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "목동역은 5호선이 강서에서 영등포로 지나는 길목이라, 신정 기지에서 되살린 모터를 실은 궤도 수레가 이 승강장에서 쉬어 간다. 섭달호는 아침마다 출입구의 눈을 얼마나 치울지 정해 손을 보내고, 수레가 몰리는 날에는 열이 새지 않도록 출입구 하나를 닫아 둔다. 빛 시간은 작업대마다 나눠 적고, 공기가 탁해지면 환풍기를 돌릴 와트를 강서에서 오는 케이블에서 사 온다. 양천은 일곱 도시 가운데 가장 작아서, 서른넷의 역반장은 손이 모자란 날 수레를 직접 밀기도 한다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "목동역 역반장",
+    "품계": "역반장",
+    "생업": "역반 운영",
+    "일하는 역": "목동역",
+    "잠자는 역": "목동역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "목동역은 5호선이 강서에서 영등포로 지나는 길목이라, 신정 기지에서 되살린 모터를 실은 궤도 수레가 이 승강장에서 쉬어 간다. 섭달호는 아침마다 출입구의 눈을 얼마나 치울지 정해 손을 보내고, 수레가 몰리는 날에는 열이 새지 않도록 출입구 하나를 닫아 둔다. 빛 시간은 작업대마다 나눠 적고, 공기가 탁해지면 환풍기를 돌릴 와트를 강서에서 오는 케이블에서 사 온다. 양천은 일곱 도시 가운데 가장 작아서, 서른넷의 역반장은 손이 모자란 날 수레를 직접 밀기도 한다.",
+    "관직": "직함 목동역 역반장. 직위 목동역 역반장 · 자유도시들. 품계 역반장. 일하는 역 목동역."
+  },
+  "values": {
+    "권위": -45,
+    "개방": 25,
+    "무력": -40,
+    "물질": 0,
+    "공동": -20,
+    "원칙": 25,
+    "공개": 65,
+    "자격": 30,
+    "분산": 65,
+    "변혁": 10
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": 5,
+    "위험": 10,
+    "과시": -10,
+    "지속": -15,
+    "지향": "유동",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0239",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "섭달호",
+        "type": "지휘",
+        "to": "채한솔",
+        "basis": "목동 구간장 채한솔의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K021",
+    "name": "채한솔",
+    "courtId": "court:K021",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 10,
-        "effective": 10
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 11,
-        "effective": 11
       }
     },
-    "skills": [
-      {
-        "id": "original-dispatch",
-        "name": {
-          "ko": "원본 함·열쇠 이송",
-          "en": "Original chest and key dispatch"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "original-dispatch-disposition",
-        "name": {
-          "ko": "이중 도착 확인",
-          "en": "Dual-arrival checking"
-        },
-        "description": {
-          "ko": "숨이 차도 사본 둘을 지키고 양쪽 도착 확인 전 창구를 열지 않는다.",
-          "en": "Keeps two copies despite exertion and waits for both arrival confirmations before opening."
-        },
-        "behavior": {
-          "ko": "숨이 차도 사본 둘을 지키고 양쪽 도착 확인 전 창구를 열지 않는다.",
-          "en": "Keeps two copies despite exertion and waits for both arrival confirmations before opening."
-        },
-        "stress": {
-          "ko": "가방이 군사 호위단에 열릴 것을 두려워한다.",
-          "en": "Fears military escorts opening the bag."
-        },
-        "relationship": {
-          "ko": "송재민의 금고 키 함을 전령로로 옮기고, 윤서린에게 화폐·문서 교차 사본을 전하며, 임초원의 정비일지 해석이 장부 공개보다 앞서지 않게 순번을 맞춘다.",
-          "en": "Carries Song Jaemin’s chests and Yun Seorin’s copies, coordinating sequence so Im Chowon’s interpretation does not outrun disclosure."
-        },
-        "effects": []
-      },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "분리 이송",
-          "en": "Separate transport"
-        },
-        "description": {
-          "ko": "키와 원본 함을 다른 길로 보내고 둘의 도착을 확인한다.",
-          "en": "Sends keys and originals by different routes and checks both arrivals."
-        },
-        "behavior": {
-          "ko": "키와 원본 함을 다른 길로 보내고 둘의 도착을 확인한다.",
-          "en": "Sends keys and originals by different routes and checks both arrivals."
-        },
-        "stress": {
-          "ko": "전령 가방이 군사 호위단에 열려 여의도 금고가 비밀 장부의 하청이 되는 것.",
-          "en": "Fears military escorts opening the bag."
-        },
-        "relationship": {
-          "ko": "송재민의 금고 키 함을 전령로로 옮기고, 윤서린에게 화폐·문서 교차 사본을 전하며, 임초원의 정비일지 해석이 장부 공개보다 앞서지 않게 순번을 맞춘다.",
-          "en": "Carries Song Jaemin’s chests and Yun Seorin’s copies, coordinating sequence so Im Chowon’s interpretation does not outrun disclosure."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "전갈을 잠그고 원본 증거를 찾으러 서울역으로 달렸다. 열쇠와 원본을 다른 길로 보내 해석보다 증거 도착을 앞세운다.",
-      "en": "Locked the dispatch and ran to Seoul Station for originals. Sends keys and originals separately, prioritizing evidence arrival over interpretation."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,72 +152,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c12d-acbd-c8fc",
-    "name": "경주 섭씨",
-    "crest": "clan-crests/c12d-acbd-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -10,
-    "개방": 10,
-    "무력": -30,
-    "물질": -15,
-    "공동": 5,
-    "원칙": 35,
-    "공개": 65,
-    "자격": 10,
-    "분산": 10,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": 5,
-    "위험": 10,
-    "과시": -10,
-    "지속": -15,
-    "지향": "유동",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "장부 원본 함·열쇠 조각 이송",
-    "소속": "여의도출자연합회",
-    "품계": "서기",
-    "직함": "장부 원본 회수 전령",
-    "가치관": "권위 −10 | 개방 10 | 무력 −30 | 물질 −15 | 공동 5 | 원칙 35 | 공개 65 | 자격 10 | 분산 10 | 변혁 0",
-    "욕망": "갈망 15 | 독점 5 | 위험 10 | 과시 −10 | 지속 −15 | 지향 유동 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2092-03-12 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 서울역 등기소에서 자랐다. 장부 원본 회수 전령 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 섭달호는 여의동을 업무동으로 삼아 장부 원본 함·열쇠 조각 이송 업무를 맡는다.",
-    "관직": "품계 서기. 직함은 장부 원본 회수 전령. 열쇠 조각과 원본 함을 다른 길로 보내고, 도착 확인이 둘 다 오기 전에는 창구를 열지 않는다고 적는다.",
-    "일화": "봄의 세 유언이 열리자 섭달호는 원본 증거를 찾으라는 여의도 금고의 전갈을 가방에 잠그고 서울역으로 달리기 시작했다.",
-    "관계": "송재민의 금고 키 함을 전령로로 옮기고, 윤서린에게 화폐·문서 교차 사본을 전하며, 임초원의 정비일지 해석이 장부 공개보다 앞서지 않게 순번을 맞춘다.",
-    "야망": "임초원만 읽을 수 있는 정비일지와 장부 원본을 같은 전령로로 옮겨 위조 화폐보다 증거가 먼저 도착하게 한다.",
-    "공포": "전령 가방이 군사 호위단에 열려 여의도 금고가 비밀 장부의 하청이 되는 것.",
-    "개입": "열쇠 조각 하나를 안전하게 옮기거나, 가방을 가로채 공개 시점을 흔들 수 있다."
-  },
-  "biography": "원본 함의 무게를 손가락으로 기억하고, 구두로 해독하라는 쪽지를 가방에 넣지 않는다. 숨이 차도 사본은 두 장이다.\n\n- 생업: 장부 원본 함·열쇠 조각 이송\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 장부 원본 회수 전령\n**생애.** 2092-03-12 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 서울역 등기소에서 자랐다. 장부 원본 회수 전령 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 섭달호는 여의동을 업무동으로 삼아 장부 원본 함·열쇠 조각 이송 업무를 맡는다.\n\n**관직.** 품계 서기. 직함은 장부 원본 회수 전령. 열쇠 조각과 원본 함을 다른 길로 보내고, 도착 확인이 둘 다 오기 전에는 창구를 열지 않는다고 적는다.\n\n**일화.** 봄의 세 유언이 열리자 섭달호는 원본 증거를 찾으라는 여의도 금고의 전갈을 가방에 잠그고 서울역으로 달리기 시작했다.\n\n**관계.** 송재민의 금고 키 함을 전령로로 옮기고, 윤서린에게 화폐·문서 교차 사본을 전하며, 임초원의 정비일지 해석이 장부 공개보다 앞서지 않게 순번을 맞춘다.\n\n**야망.** 임초원만 읽을 수 있는 정비일지와 장부 원본을 같은 전령로로 옮겨 위조 화폐보다 증거가 먼저 도착하게 한다.\n\n**공포.** 전령 가방이 군사 호위단에 열려 여의도 금고가 비밀 장부의 하청이 되는 것.\n\n**개입.** 열쇠 조각 하나를 안전하게 옮기거나, 가방을 가로채 공개 시점을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 10 | 무력 −30 | 물질 −15 | 공동 5 | 원칙 35 | 공개 65 | 자격 10 | 분산 10 | 변혁 0\n- 욕망: 갈망 15 | 독점 5 | 위험 10 | 과시 −10 | 지속 −15 | 지향 유동 | 결합 단혼",
-  "sources": [
-    "Cast-State-09"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "섭달호",
-        "type": "계약",
-        "to": "송재민",
-        "basis": "송재민의 암호 함을 전령로로 옮기고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:목동",
+      "name": {
+        "ko": "목동역"
       },
-      {
-        "from": "섭달호",
-        "type": "계약",
-        "to": "윤서린",
-        "basis": "윤서린에게 음성·문서 교차 사본을 전하며"
-      }
-    ],
-    "incoming": []
-  }
+      "holderPersonId": "K238",
+      "directLiegePersonId": "K021",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "목동",
+        "stationName": "목동"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1147051000",
+          "name": "목1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

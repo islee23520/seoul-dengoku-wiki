@@ -1,498 +1,116 @@
 {
   "id": "person-0014",
   "name": "대니얼 브룩스",
-  "title": "수문헌장 전령",
-  "position": "계약 회의 전령",
+  "title": "마곡나루역 역반장",
+  "position": "마곡나루역 역반장 · 자유도시들",
   "characterId": "K014",
-  "rank": "주사",
-  "commonTier": "T5",
-  "occupation": "계약 전갈 전달",
+  "rank": "역반장",
+  "commonTier": "T4",
+  "occupation": "역반 운영",
   "gender": "남성",
   "stage": "S2",
-  "state": "S01",
-  "stateName": "수문국",
-  "sourceRoute": "/world/Cast-State-01#인물-대니얼 브룩스",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0014",
   "birthDate": "2089-07-12",
   "birthday": "07-12",
   "age": 37,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-01.json#/content/181"
-  ],
-  "familyTree": {
-    "personId": "K014",
-    "nodes": [
-      {
-        "id": "K014",
-        "personId": "K014",
-        "kind": "person",
-        "name": "대니얼 브룩스",
-        "birthDate": "2089-07-12",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K014"
-          },
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-대니얼-브룩스-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 계약 회의 전령 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-대니얼-브룩스-list2"
-              }
-            ]
-          }
-        ],
-        "nameEn": "Daniel Brooks",
-        "detailRoute": "/people/person-0014"
-      },
-      {
-        "id": "FH-K014-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "마이클 브룩스",
-        "birthDate": "2059-07-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-대니얼-브룩스-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "마이클 브룩스는 2059년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2077년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-대니얼-브룩스-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Michael Brooks was born in 2059 and grew up reading family and work records. From 2077, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Michael Brooks",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K014-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "토머스 브룩스",
-        "birthDate": "2029-07-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-대니얼-브룩스-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "토머스 브룩스는 2029년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2047년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-대니얼-브룩스-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Thomas Brooks was born in 2029 and grew up reading family and work records. From 2047, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Thomas Brooks",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K014-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "새뮤얼 브룩스",
-        "birthDate": "1999-07-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-대니얼-브룩스-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "새뮤얼 브룩스는 2030년 대정전 당시 용산·이태원 생활권에서 미 육군 보급 업무를 맡고 있었다. 연락이 끊긴 뒤 남은 물자와 인계받은 사람을 종이에 적었다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-대니얼-브룩스-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Samuel Brooks was in the family's local community when communications failed in 2030. Serving in US Army logistics, he recorded remaining supplies and their recipients."
-          }
-        ],
-        "nameEn": "Samuel Brooks",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K014-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "그레이스 카터",
-        "birthDate": "2059-07-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-대니얼-브룩스-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "그레이스 카터는 2059년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2077년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-대니얼-브룩스-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Grace Carter was born in 2059 and grew up reading family and work records. From 2077, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Grace Carter",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K014-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "루스 카터",
-        "birthDate": "2029-07-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-대니얼-브룩스-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "루스 카터는 2029년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2047년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-대니얼-브룩스-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Ruth Carter was born in 2029 and grew up reading family and work records. From 2047, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Ruth Carter",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K014-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "엠마 카터",
-        "birthDate": "1999-07-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-대니얼-브룩스-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "엠마 카터는 2030년 대정전 당시 용산·이태원 생활권에서 이태원 숙박업과 민간 통역 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-대니얼-브룩스-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Emma Carter was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
-          }
-        ],
-        "nameEn": "Emma Carter",
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K014-P-01:K014:biological",
-        "from": "FH-K014-P-01",
-        "to": "K014",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-대니얼-브룩스-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K014-P-02:FH-K014-P-01:biological",
-        "from": "FH-K014-P-02",
-        "to": "FH-K014-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-대니얼-브룩스-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K014-P-03:FH-K014-P-02:biological",
-        "from": "FH-K014-P-03",
-        "to": "FH-K014-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-대니얼-브룩스-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K014-M-01:K014:biological",
-        "from": "FH-K014-M-01",
-        "to": "K014",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-대니얼-브룩스-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K014-M-02:FH-K014-M-01:biological",
-        "from": "FH-K014-M-02",
-        "to": "FH-K014-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-대니얼-브룩스-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K014-M-03:FH-K014-M-02:biological",
-        "from": "FH-K014-M-03",
-        "to": "FH-K014-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-대니얼-브룩스-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": null,
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "대니얼 브룩스는 마곡나루역 역반장으로, 역에 사는 대주들이 그를 뽑았다. 대정전 전 용산에 자리 잡은 아프리카계 미국인 가계의 후손이고, 할머니 대에 강을 건너 강서에 왔다. 마곡나루는 공항철도 다리로 정부의 디지털미디어시티와 이어지는 역이라, 그는 다리를 건너오는 짐마다 건너는 몫을 와트와 리터로 매긴다. 봉인 끈의 매듭이 느슨한 짐은 다리 끝에서 다시 묶게 한다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "마곡나루역 역반장",
+    "품계": "역반장",
+    "생업": "역반 운영",
+    "일하는 역": "마곡나루역",
+    "잠자는 역": "마곡나루역",
+    "가구": "혼자 사는 가구"
   },
-  "proseContacts": [],
+  "sections": {
+    "생애": "대니얼 브룩스는 마곡나루역 역반장으로, 역에 사는 대주들이 그를 뽑았다. 대정전 전 용산에 자리 잡은 아프리카계 미국인 가계의 후손이고, 할머니 대에 강을 건너 강서에 왔다. 마곡나루는 공항철도 다리로 정부의 디지털미디어시티와 이어지는 역이라, 그는 다리를 건너오는 짐마다 건너는 몫을 와트와 리터로 매긴다. 봉인 끈의 매듭이 느슨한 짐은 다리 끝에서 다시 묶게 한다.",
+    "관직": "직함 마곡나루역 역반장. 직위 마곡나루역 역반장 · 자유도시들. 품계 역반장. 일하는 역 마곡나루역."
+  },
+  "values": {
+    "권위": 15,
+    "개방": 20,
+    "무력": 5,
+    "물질": 35,
+    "공동": 5,
+    "원칙": 5,
+    "공개": 30,
+    "자격": 30,
+    "분산": 0,
+    "변혁": -5
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": 25,
+    "위험": -15,
+    "과시": 10,
+    "지속": 35,
+    "지향": "동성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0014",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "대니얼 브룩스",
+        "type": "지휘",
+        "to": "용소",
+        "basis": "마곡 구간장 용소의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K236",
+    "name": "용소",
+    "courtId": "court:K236",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 11,
-        "effective": 11
       }
     },
-    "skills": [
-      {
-        "id": "k014-sealed-delivery",
-        "name": {
-          "ko": "봉인 전갈 전달",
-          "en": "Sealed-message delivery"
-        },
-        "rating": 65
-      },
-      {
-        "id": "k014-signature-check",
-        "name": {
-          "ko": "연서 확인",
-          "en": "Joint-signature check"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k014-two-signatures",
-        "name": {
-          "ko": "두 서명부터",
-          "en": "Two signatures first"
-        },
-        "description": {
-          "ko": "단수 예고에 감사 날인과 대표 연서를 함께 구한다.",
-          "en": "Requires the audit seal and district signature for cutoff notices."
-        },
-        "behavior": {
-          "ko": "단수 예고에 감사 날인과 대표 연서를 함께 구한다.",
-          "en": "Requires the audit seal and district signature for cutoff notices."
-        },
-        "stress": {
-          "ko": "위조 배급 전갈 한 장이 집단 단수를 발동시켜 전령망이 정치 도구로 몰락하는 것.",
-          "en": "That one forged ration dispatch would trigger a collective cutoff and the courier network would fall into politics."
-        },
-        "relationship": {
-          "ko": "장필규의 감사 문구를 현장에서 배달하는 계약이고, 한재목의 보호권 확대안을 봉인 상태로만 나르며, 윤서린에게 인준 사본을 넘길지 매번 저울질한다.",
-          "en": "A contract delivering Jang Pilgyu's audit wording in the field, carrying Han Jaemok's protection-power expansion proposal only under seal, and weighing each time whether to pass ratification copies to Yun Seorin."
-        },
-        "effects": []
-      },
-      {
-        "id": "k014-sealed-loyalty",
-        "name": {
-          "ko": "봉인 속 충성",
-          "en": "Loyalty under seal"
-        },
-        "description": {
-          "ko": "보호권 확대안 자체는 거부하지 않고 봉인 상태로 나른다.",
-          "en": "Carries protection-expansion proposals under seal rather than rejecting them."
-        },
-        "behavior": {
-          "ko": "보호권 확대안 자체는 거부하지 않고 봉인 상태로 나른다.",
-          "en": "Carries protection-expansion proposals under seal rather than rejecting them."
-        },
-        "stress": {
-          "ko": "위조 배급 전갈 한 장이 집단 단수를 발동시켜 전령망이 정치 도구로 몰락하는 것.",
-          "en": "That one forged ration dispatch would trigger a collective cutoff and the courier network would fall into politics."
-        },
-        "relationship": {
-          "ko": "장필규의 감사 문구를 현장에서 배달하는 계약이고, 한재목의 보호권 확대안을 봉인 상태로만 나르며, 윤서린에게 인준 사본을 넘길지 매번 저울질한다.",
-          "en": "A contract delivering Jang Pilgyu's audit wording in the field, carrying Han Jaemok's protection-power expansion proposal only under seal, and weighing each time whether to pass ratification copies to Yun Seorin."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "달려가 연서를 구하고 봉인을 확인한 전달이 강점이다. 문서 효력을 지키면서도 확대안을 나르는 복합적인 충성이 남는다.",
-      "en": "Running to obtain signatures and checking sealed delivery are strengths. Protecting document validity coexists with carrying an expansion proposal."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -530,76 +148,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": null,
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 50,
-    "개방": 5,
-    "무력": 15,
-    "물질": 20,
-    "공동": 30,
-    "원칙": 15,
-    "공개": 30,
-    "자격": 10,
-    "분산": -55,
-    "변혁": -15
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": 25,
-    "위험": -15,
-    "과시": 10,
-    "지속": 35,
-    "지향": "동성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "수문국",
-    "생업": "계약 전갈 전달",
-    "품계": "주사",
-    "직함": "계약 회의 전령",
-    "업무 위치": "이태원1동. 대니얼 브룩스는 이태원통역문의 언어 쌍 당직에서 인준 문장을 사람에게 읽히고 양평1동 계약 전령의 봉인 사본을 따로 인계한다.",
-    "가치관": "권위 50 | 개방 5 | 무력 15 | 물질 20 | 공동 30 | 원칙 15 | 공개 30 | 자격 10 | 분산 −55 | 변혁 −15",
-    "욕망": "갈망 40 | 독점 25 | 위험 −15 | 과시 10 | 지속 35 | 지향 동성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 계약 회의 전령 자리는 탁수 밤의 밸브 서명으로 열렸다. 대니얼 브룩스는 2089년에 태어나 영등포 정수 당직 가구에서 자랐다. 아프리카계 미국인 가계의 영어를 집에서 배우고 한국어로 계약 전갈을 나른다. 수문국의 계약 회의 전령으로 봉인된 사본을 전달하며, 이태원통역문의 언어 쌍 당직에서는 인준 문장을 사람이 읽도록 한다. 대니얼의 선조 새뮤얼 브룩스는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 대니얼 브룩스의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 대니얼은 2089년 출생 뒤 그 장부를 영등포 정수 당직 기록과 다시 맞춰 보았다.\n- 업무 위치: 양평1동. 양평1동 계약 전령 인계에서 대니얼 브룩스는 봉인 사본을 배급구역과 감사실에 각각 보내고 이태원1동 언어 당직으로 넘길 인준 문장을 따로 챙긴다.\n- 업무 위치: 이태원1동. 대니얼 브룩스는 이태원통역문의 언어 쌍 당직에서 인준 문장을 사람에게 읽히고 양평1동 계약 전령의 봉인 사본을 따로 인계한다.",
-    "관직": "품계 주사. 직함은 계약 회의 전령. 전갈을 배급구역과 감사실에 동시에 보내고, 단수 예고는 장필규의 날인과 이서담의 연서가 둘 다 있어야 달린다.",
-    "일화": "장필규의 날인만 찍힌 단수 예고가 전령 가방에 들어온다. 대니얼 브룩스는 이서담의 연서를 받으러 배급구역으로 먼저 달려가고, 같은 가방에 든 한재목의 보호권 확대안은 봉인을 확인한 채로 나른다.",
-    "관계": "장필규의 감사 문구를 현장에서 배달하는 계약이고, 한재목의 보호권 확대안을 봉인 상태로만 나르며, 윤서린에게 인준 사본을 넘길지 매번 저울질한다.",
-    "야망": "서부 급수·통행 계약의 종료 통지를 자신이 날인하는 전령 원장에만 유효하게 만들어 물 계약의 입이가 된다.",
-    "공포": "위조 배급 전갈 한 장이 집단 단수를 발동시켜 전령망이 정치 도구로 몰락하는 것.",
-    "개입": "위조 전갈을 찾아 그의 봉인을 지키거나, 가방 속 보류 문서를 폭로해 확대안을 무력화할 수 있다."
-  },
-  "biography": "봉인 끈의 매듭이 느슨하면 출발을 거부하고, 구두 전갈을 기록하지 않는 사신을 위조 소지가 있는 자로 본다. 숨이 차도 사본 두 장을 한 손에 쥔다.\n\n- 소속: 수문국\n- 생업: 계약 전갈 전달\n- 품계: 주사\n- 직함: 계약 회의 전령\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 계약 회의 전령 자리는 탁수 밤의 밸브 서명으로 열렸다. 대니얼 브룩스는 2089년에 태어나 영등포 정수 당직 가구에서 자랐다. 아프리카계 미국인 가계의 영어를 집에서 배우고 한국어로 계약 전갈을 나른다. 수문국의 계약 회의 전령으로 봉인된 사본을 전달하며, 이태원통역문의 언어 쌍 당직에서는 인준 문장을 사람이 읽도록 한다. 대니얼의 선조 새뮤얼 브룩스는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 대니얼 브룩스의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 대니얼은 2089년 출생 뒤 그 장부를 영등포 정수 당직 기록과 다시 맞춰 보았다.\n- 업무 위치: 양평1동. 양평1동 계약 전령 인계에서 대니얼 브룩스는 봉인 사본을 배급구역과 감사실에 각각 보내고 이태원1동 언어 당직으로 넘길 인준 문장을 따로 챙긴다.\n- 업무 위치: 이태원1동. 대니얼 브룩스는 이태원통역문의 언어 쌍 당직에서 인준 문장을 사람에게 읽히고 양평1동 계약 전령의 봉인 사본을 따로 인계한다.\n\n**관직.** 품계 주사. 직함은 계약 회의 전령. 전갈을 배급구역과 감사실에 동시에 보내고, 단수 예고는 장필규의 날인과 이서담의 연서가 둘 다 있어야 달린다.\n\n**일화.** 장필규의 날인만 찍힌 단수 예고가 전령 가방에 들어온다. 대니얼 브룩스는 이서담의 연서를 받으러 배급구역으로 먼저 달려가고, 같은 가방에 든 한재목의 보호권 확대안은 봉인을 확인한 채로 나른다.\n\n**관계.** 장필규의 감사 문구를 현장에서 배달하는 계약이고, 한재목의 보호권 확대안을 봉인 상태로만 나르며, 윤서린에게 인준 사본을 넘길지 매번 저울질한다.\n\n**야망.** 서부 급수·통행 계약의 종료 통지를 자신이 날인하는 전령 원장에만 유효하게 만들어 물 계약의 입이가 된다.\n\n**공포.** 위조 배급 전갈 한 장이 집단 단수를 발동시켜 전령망이 정치 도구로 몰락하는 것.\n\n**개입.** 위조 전갈을 찾아 그의 봉인을 지키거나, 가방 속 보류 문서를 폭로해 확대안을 무력화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 5 | 무력 15 | 물질 20 | 공동 30 | 원칙 15 | 공개 30 | 자격 10 | 분산 −55 | 변혁 −15\n- 욕망: 갈망 40 | 독점 25 | 위험 −15 | 과시 10 | 지속 35 | 지향 동성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-01"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "대니얼 브룩스",
-        "type": "계약",
-        "to": "장필규",
-        "basis": "장필규의 감사 문구를 현장에서 배달하는 계약이고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:마곡나루",
+      "name": {
+        "ko": "마곡나루역"
       },
-      {
-        "from": "대니얼 브룩스",
-        "type": "계약",
-        "to": "한재목",
-        "basis": "한재목의 보호권 확대안을 봉인 상태로만 나르며"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "기바름",
-        "type": "계약",
-        "to": "대니얼 브룩스",
-        "basis": "대니얼 브룩스의 헌장 전령로를 비상 호송에 빌리고"
-      }
-    ]
-  }
+      "holderPersonId": "K014",
+      "directLiegePersonId": "K236",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "마곡나루",
+        "stationName": "마곡나루"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1150060300",
+          "name": "가양1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

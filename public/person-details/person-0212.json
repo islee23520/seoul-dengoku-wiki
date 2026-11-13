@@ -1,501 +1,136 @@
 {
   "id": "person-0212",
   "name": "나루희",
-  "title": "노량진 제빙 비상발전 운전장",
-  "position": "노량진 제빙 비상발전 운전장",
+  "title": "상봉1동 동장",
+  "position": "상봉1동 동장 · 정부",
   "characterId": "K211",
-  "rank": "기사",
-  "commonTier": "T4",
-  "occupation": "제빙 비상발전 연료·출력 기록",
+  "rank": "동장",
+  "commonTier": "T3",
+  "occupation": "동 행정",
   "gender": "남성",
   "stage": "S2",
-  "state": "S08",
-  "stateName": "중앙정보부",
-  "sourceRoute": "/world/Cast-State-08#인물-나루희",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0212",
   "birthDate": "2099-08-26",
   "birthday": "08-26",
   "age": 27,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-08.json#/content/39",
-    "lore/characters/Cast-State-08.json#/content/41"
-  ],
-  "familyTree": {
-    "personId": "K211",
-    "nodes": [
-      {
-        "id": "K211",
-        "personId": "K211",
-        "kind": "person",
-        "name": "나루희",
-        "birthDate": "2099-08-26",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K211"
-          },
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-나루희-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 노량진 제빙 비상발전 운전장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-나루희-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0212"
-      },
-      {
-        "id": "FH-K211-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "나승연",
-        "lineage": {
-          "surname": "나",
-          "bongwan": "나주",
-          "clan": "b098-b098-c8fc-7f85"
-        },
-        "birthDate": "2069-08-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-나루희-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2107,
-            "summary": "나승연은 대합실 당직에서 제빙 비상발전 연료·출력 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-나루희-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K211-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "나승정",
-        "lineage": {
-          "surname": "나",
-          "bongwan": "나주",
-          "clan": "b098-b098-c8fc-7f85"
-        },
-        "birthDate": "2039-08-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-나루희-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "나승정은 대합실 당직에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-나루희-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K211-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "나승아",
-        "lineage": {
-          "surname": "나",
-          "bongwan": "나주",
-          "clan": "b098-b098-c8fc-7f85"
-        },
-        "birthDate": "2009-08-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-나루희-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "나승아는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-나루희-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K211-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현훈",
-        "birthDate": "2069-08-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-나루희-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2107,
-            "summary": "임현훈은 대합실 당직에서 제빙 비상발전 연료·출력 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-나루희-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K211-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현수",
-        "birthDate": "2039-08-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-나루희-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "오현수는 대합실 당직에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-나루희-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K211-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "송현윤",
-        "birthDate": "2009-08-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-나루희-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "송현윤은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-나루희-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K211-P-01:K211:biological",
-        "from": "FH-K211-P-01",
-        "to": "K211",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-나루희-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K211-P-02:FH-K211-P-01:biological",
-        "from": "FH-K211-P-02",
-        "to": "FH-K211-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-나루희-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K211-P-03:FH-K211-P-02:biological",
-        "from": "FH-K211-P-03",
-        "to": "FH-K211-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-나루희-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K211-M-01:K211:biological",
-        "from": "FH-K211-M-01",
-        "to": "K211",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-나루희-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K211-M-02:FH-K211-M-01:biological",
-        "from": "FH-K211-M-02",
-        "to": "FH-K211-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-나루희-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K211-M-03:FH-K211-M-02:biological",
-        "from": "FH-K211-M-03",
-        "to": "FH-K211-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-나루희-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b098-b098-c8fc-7f85",
+    "name": "나주 나씨",
+    "crest": "clan-crests/b098-b098-c8fc-7f85.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "아침 국민의례에서 망우역 사람들의 이름을 읽는 순서는 상봉1동 동장 나루희부터 시작한다. 강예준 국회의원이 임명한 상봉1동 동장으로, 중랑구 동장 가운데 나이가 가장 어리다. 망우 묘역으로 가는 장례조가 이 동의 출입구를 쓰기 때문에, 그는 아침 국민의례에서 다른 동 사망 말소자의 이름까지 함께 읽는다. 망우역 비상 발전기의 연료 일지를 손수 쓰던 습관을 동장이 되고도 버리지 못했다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "상봉1동 동장",
+    "품계": "동장",
+    "생업": "동 행정",
+    "일하는 역": "망우역",
+    "잠자는 역": "망우역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "아침 국민의례에서 망우역 사람들의 이름을 읽는 순서는 상봉1동 동장 나루희부터 시작한다. 강예준 국회의원이 임명한 상봉1동 동장으로, 중랑구 동장 가운데 나이가 가장 어리다. 망우 묘역으로 가는 장례조가 이 동의 출입구를 쓰기 때문에, 그는 아침 국민의례에서 다른 동 사망 말소자의 이름까지 함께 읽는다. 망우역 비상 발전기의 연료 일지를 손수 쓰던 습관을 동장이 되고도 버리지 못했다.",
+    "관직": "직함 상봉1동 동장. 직위 상봉1동 동장 · 정부. 품계 동장. 일하는 역 망우역."
+  },
+  "values": {
+    "권위": 50,
+    "개방": -20,
+    "무력": 10,
+    "물질": 65,
+    "공동": -15,
+    "원칙": -15,
+    "공개": -15,
+    "자격": 5,
+    "분산": -35,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": 40,
+    "위험": -10,
+    "과시": -15,
+    "지속": 40,
+    "지향": "유동",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0212",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "나루희",
+        "type": "지휘",
+        "to": "강예준",
+        "basis": "중랑구 국회의원 강예준의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "차진아",
+        "type": "지휘",
+        "to": "나루희",
+        "basis": "상봉1동 동장 나루희의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K145",
+    "name": "강예준",
+    "courtId": "court:K145",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K211",
+    "members": [
+      {
+        "personId": "person-0207",
+        "name": "차진아"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
-      "learning": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "intrigue": {
         "base": 7,
         "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "emergency-generation",
-        "name": {
-          "ko": "비상발전 운전",
-          "en": "Emergency generation"
-        },
-        "rating": 70
-      },
-      {
-        "id": "fuel-output-logging",
-        "name": {
-          "ko": "연료 출력 기록",
-          "en": "Fuel and output logging"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k211-disposition",
-        "name": {
-          "ko": "경매 조명보다 제빙",
-          "en": "Ice-making before auction lights"
-        },
-        "description": {
-          "ko": "연료 냄새에 예민하고 구두 배전을 싫어한다. 제빙기보다 경매 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.",
-          "en": "Sensitive to the smell of fuel, she hated verbal power routing. She took the political pressure to divert power from the ice machines to the auction lighting as an insult."
-        },
-        "behavior": {
-          "ko": "관직. 품계 기사. 직함은 노량진 제빙 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 지마루에게 보내고, 최저 출력 이하면 대표의 독촉이 있어도 경매 배전을 끊는다.",
-          "en": "Office. Rank: temple student. Title: Noryangjin ice-making emergency generator operator. Every shift she sealed the fuel remainder and output logs and sent them to Ji Maru, and below minimum output she cut the auction power even under the representative's urging."
-        },
-        "stress": {
-          "ko": "공포. 연료가 바닥난 밤에 냉동이 녹고, 그 공백을 수문 보호권이 메우는 것.",
-          "en": "Fear. That on a night when the fuel ran dry the cold storage would thaw, and the water-gate protection zone would fill the gap."
-        },
-        "relationship": {
-          "ko": "관계. 지마루의 냉동기지 전력 배분을 발전 쪽에서 받치고, 지윤재의 시운전에 출력을 맞추며, 오해린의 재고 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
-          "en": "Relations. Backed Ji Maru's cold-storage depot power distribution from the generation side, matched output to Ji Yunjae's trials, and had obeyed O Haerin's inventory disclosure but refused concealed power routing."
-        },
-        "effects": []
-      },
-      {
-        "id": "k211-choice",
-        "name": {
-          "ko": "은폐 배전 거부",
-          "en": "Rejecting concealed power allocation"
-        },
-        "description": {
-          "ko": "일화. 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 노량진 제빙 비상발전 운전장 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In 2125 she sent a private petition back and passed it to the public window. By this deed the signature of the Noryangjin ice-making emergency generator operator post rose into the ledger."
-        },
-        "behavior": {
-          "ko": "관계. 지마루의 냉동기지 전력 배분을 발전 쪽에서 받치고, 지윤재의 시운전에 출력을 맞추며, 오해린의 재고 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
-          "en": "Relations. Backed Ji Maru's cold-storage depot power distribution from the generation side, matched output to Ji Yunjae's trials, and had obeyed O Haerin's inventory disclosure but refused concealed power routing."
-        },
-        "stress": {
-          "ko": "공포. 연료가 바닥난 밤에 냉동이 녹고, 그 공백을 수문 보호권이 메우는 것.",
-          "en": "Fear. That on a night when the fuel ran dry the cold storage would thaw, and the water-gate protection zone would fill the gap."
-        },
-        "relationship": {
-          "ko": "관계. 지마루의 냉동기지 전력 배분을 발전 쪽에서 받치고, 지윤재의 시운전에 출력을 맞추며, 오해린의 재고 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
-          "en": "Relations. Backed Ji Maru's cold-storage depot power distribution from the generation side, matched output to Ji Yunjae's trials, and had obeyed O Haerin's inventory disclosure but refused concealed power routing."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "교대 연료·출력을 기록하고 최저선 아래 경매 배전을 끊는다. 오해린에게 복종하면서도 은폐 배전을 거부하는 경계가 있다.",
-      "en": "Logs fuel and output each shift and cuts auction supply below the minimum. Obedience to Oh Haerin has a limit at concealed allocation."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -533,79 +168,52 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b098-b098-c8fc-7f85",
-    "name": "나주 나씨",
-    "crest": "clan-crests/b098-b098-c8fc-7f85.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 5,
-    "개방": 35,
-    "무력": -25,
-    "물질": 70,
-    "공동": -20,
-    "원칙": -35,
-    "공개": 10,
-    "자격": -10,
-    "분산": 15,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": 40,
-    "위험": -10,
-    "과시": -15,
-    "지속": 40,
-    "지향": "유동",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "중앙정보부",
-    "품계": "기사",
-    "생업": "제빙 비상발전 연료·출력 기록",
-    "직함": "노량진 제빙 비상발전 운전장",
-    "가치관": "권위 5 | 개방 35 | 무력 −25 | 물질 70 | 공동 −20 | 원칙 −35 | 공개 10 | 자격 −10 | 분산 15 | 변혁 0",
-    "욕망": "갈망 45 | 독점 40 | 위험 −10 | 과시 −15 | 지속 40 | 지향 유동 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 노량진 제빙 비상발전 운전장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 나루희는 노량진1동에서 제빙 비상발전 연료·출력 기록 업무를 맡는다.",
-    "관직": "품계 기사. 직함은 노량진 제빙 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 지마루에게 보내고, 최저 출력 이하면 대표의 독촉이 있어도 경매 배전을 끊는다.",
-    "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 노량진 제빙 비상발전 운전장 자리의 서명이 장부에 올랐다.",
-    "관계": "지마루의 냉동기지 전력 배분을 발전 쪽에서 받치고, 지윤재의 시운전에 출력을 맞추며, 오해린의 재고 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
-    "야망": "노량진 비상 발전과 제빙 전력을 하나의 공개 배전망으로 묶어 얼음 원장의 품질 주권을 지킨다.",
-    "공포": "연료가 바닥난 밤에 냉동이 녹고, 그 공백을 수문 보호권이 메우는 것.",
-    "개입": "대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다."
-  },
-  "biography": "연료 냄새에 예민하고 구두 배전을 싫어한다. 제빙기보다 경매 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.\n\n- 소속: 중앙정보부\n- 품계: 기사\n- 생업: 제빙 비상발전 연료·출력 기록\n- 직함: 노량진 제빙 비상발전 운전장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 노량진 제빙 비상발전 운전장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 나루희는 노량진1동에서 제빙 비상발전 연료·출력 기록 업무를 맡는다.\n\n**관직.** 품계 기사. 직함은 노량진 제빙 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 지마루에게 보내고, 최저 출력 이하면 대표의 독촉이 있어도 경매 배전을 끊는다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 노량진 제빙 비상발전 운전장 자리의 서명이 장부에 올랐다.\n\n**관계.** 지마루의 냉동기지 전력 배분을 발전 쪽에서 받치고, 지윤재의 시운전에 출력을 맞추며, 오해린의 재고 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 노량진 비상 발전과 제빙 전력을 하나의 공개 배전망으로 묶어 얼음 원장의 품질 주권을 지킨다.\n\n**공포.** 연료가 바닥난 밤에 냉동이 녹고, 그 공백을 수문 보호권이 메우는 것.\n\n**개입.** 대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 35 | 무력 −25 | 물질 70 | 공동 −20 | 원칙 −35 | 공개 10 | 자격 −10 | 분산 15 | 변혁 0\n- 욕망: 갈망 45 | 독점 40 | 위험 −10 | 과시 −15 | 지속 40 | 지향 유동 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-08"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "나루희",
-        "type": "계약",
-        "to": "오해린",
-        "basis": "오해린의 재고 공개에는 복종하되 은폐 배전은 거부한다"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1126058000",
+      "name": {
+        "ko": "상봉1동"
       },
-      {
-        "from": "나루희",
-        "type": "계약",
-        "to": "지마루",
-        "basis": "지마루의 냉동기지 전력 배분을 발전 쪽에서 받치고"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "지윤재",
-        "type": "사제",
-        "to": "나루희",
-        "basis": "나루희의 발전에 제빙 전력을 맞추며"
-      }
-    ]
-  }
+      "holderPersonId": "K211",
+      "directLiegePersonId": "K145",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1126058000",
+          "name": "상봉1동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ],
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:망우",
+      "name": {
+        "ko": "망우역"
+      },
+      "holderPersonId": "person-0207",
+      "directLiegePersonId": "K211",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "망우",
+        "stationName": "망우"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1126058000",
+          "name": "상봉1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "차진아",
+      "holderRoute": "/people/person-0207"
+    }
+  ]
 }

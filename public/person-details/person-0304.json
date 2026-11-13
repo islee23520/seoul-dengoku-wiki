@@ -1,386 +1,120 @@
 {
   "id": "person-0304",
   "name": "복봉",
-  "title": "환승 중계 물류상",
-  "position": "환승 중계 물류상",
+  "title": "노원구 구청장",
+  "position": "노원구 구청장 · 중계역",
   "characterId": "K303",
-  "rank": "호송원",
-  "commonTier": "T5",
-  "occupation": "환승 화물 입고 중량·송장 확인",
+  "rank": "구청장",
+  "commonTier": "T2",
+  "occupation": "구 행정",
   "gender": "여성",
   "stage": "S2",
-  "state": "S12",
-  "stateName": "신내운수",
-  "sourceRoute": "/world/Cast-State-12#인물-복봉",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0304",
   "birthDate": "2071-11-24",
   "birthday": "11-24",
   "age": 55,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-12.json#/content/116",
-    "lore/characters/Cast-State-12.json#/content/118"
-  ],
-  "familyTree": {
-    "personId": "K303",
-    "nodes": [
-      {
-        "id": "K303",
-        "personId": "K303",
-        "kind": "person",
-        "name": "복봉",
-        "birthDate": "2071-11-24",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K303"
-          },
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복봉-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 상암 송신실에서 자랐다. 환승 중계 물류상 자리는 정전 사흘 송신 유지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-복봉-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0304"
-      },
-      {
-        "id": "FH-K303-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "복승우",
-        "lineage": {
-          "surname": "복",
-          "bongwan": "면천",
-          "clan": "bcf5-ba74-cc9c"
-        },
-        "birthDate": "2041-11-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2079,
-            "summary": "복승우는 상암 송신실에서 환승 화물 입고 중량·송장 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-복봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K303-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "복승경",
-        "lineage": {
-          "surname": "복",
-          "bongwan": "면천",
-          "clan": "bcf5-ba74-cc9c"
-        },
-        "birthDate": "2011-11-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "복승경은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-복봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K303-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준석",
-        "birthDate": "2041-11-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2079,
-            "summary": "정준석은 상암 송신실에서 환승 화물 입고 중량·송장 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-복봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K303-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤준호",
-        "birthDate": "2011-11-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤준호는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-복봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K303-P-01:K303:biological",
-        "from": "FH-K303-P-01",
-        "to": "K303",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K303-P-02:FH-K303-P-01:biological",
-        "from": "FH-K303-P-02",
-        "to": "FH-K303-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K303-M-01:K303:biological",
-        "from": "FH-K303-M-01",
-        "to": "K303",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K303-M-02:FH-K303-M-01:biological",
-        "from": "FH-K303-M-02",
-        "to": "FH-K303-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-복봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bcf5-ba74-cc9c",
+    "name": "면천 복씨",
+    "crest": "clan-crests/bcf5-ba74-cc9c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "노원구 구청장 복봉, 쉰다섯 살. 노원은 빛밭이 가장 많은 구여서, 그녀가 중계역 구청 분소에서 쓰는 구청 고시는 대부분 빛밭 둑 쌓기 노역과 생산 몫 열에 하나를 거두는 날짜에 관한 것이다. 동장들이 올린 둑 길이가 가구 수와 맞지 않으면 그녀는 고시를 하루 늦추고 그 동에 서기를 보내 둑을 다시 재게 한다. 같은 면천 복씨인 복용이 강북구 우이동 동장이 된 뒤로, 그녀는 두 구 사이를 오가는 전입 서류를 직접 열지 않고 구청 서기에게 먼저 맡긴다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "노원구 구청장",
+    "품계": "구청장",
+    "생업": "구 행정",
+    "일하는 역": "중계역",
+    "잠자는 역": "중계역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "노원구 구청장 복봉, 쉰다섯 살. 노원은 빛밭이 가장 많은 구여서, 그녀가 중계역 구청 분소에서 쓰는 구청 고시는 대부분 빛밭 둑 쌓기 노역과 생산 몫 열에 하나를 거두는 날짜에 관한 것이다. 동장들이 올린 둑 길이가 가구 수와 맞지 않으면 그녀는 고시를 하루 늦추고 그 동에 서기를 보내 둑을 다시 재게 한다. 같은 면천 복씨인 복용이 강북구 우이동 동장이 된 뒤로, 그녀는 두 구 사이를 오가는 전입 서류를 직접 열지 않고 구청 서기에게 먼저 맡긴다.",
+    "관직": "직함 노원구 구청장. 직위 노원구 구청장 · 중계역. 품계 구청장. 일하는 역 중계역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": -15,
+    "무력": 15,
+    "물질": 15,
+    "공동": 15,
+    "원칙": 10,
+    "공개": 0,
+    "자격": 35,
+    "분산": -10,
+    "변혁": -10
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": -20,
+    "위험": -30,
+    "과시": -25,
+    "지속": -10,
+    "지향": "이성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0304",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "복봉",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
+      "diplomacy": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 9,
-        "effective": 9
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "learning": {
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "learning": {
         "base": 6,
         "effective": 6
-      }
-    },
-    "skills": [
-      {
-        "id": "k303-transfer-invoice-recording",
-        "name": {
-          "ko": "중계 송장 작성",
-          "en": "Transfer invoice recording"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k303-priority",
-        "name": {
-          "ko": "환자 안정 전 대기",
-          "en": "Waits for patient stability"
-        },
-        "description": {
-          "ko": "복봉은 하역과 배차를 맞추고 환자 활력 전 빈 슬롯을 팔지 않는다. 송장 무게 공백의 범인은 미확인이다.",
-          "en": "Bokbong aligns unloading with dispatch and does not sell empty slots before patient stability. The cause of invoice weight gaps is unknown."
-        },
-        "behavior": {
-          "ko": "입고 중량을 두 증인이 보고, 무기 적재가 의심되는 송장은 의료조 게시 전까지 하역을 막는다.",
-          "en": "Office. Rank: convoy hand. Title: transfer relay logistics merchant. Two witnesses reported intake weights, and he blocked the unloading of any invoice suspected of arms loading until the medical crew posted it."
-        },
-        "stress": {
-          "ko": "군수 문장이 환자 칸 송장에 섞여 신내운수가 하역장으로 전락하는 것.",
-          "en": "Fear. That a munitions clause would mix into patient-car invoices and the transfer city would sink into a freight yard."
-        },
-        "relationship": {
-          "ko": "안도한의 배차 칠판과 하역 순서를 맞추고, 복용의 중립시장 시세를 송장에 옮긴다. 전미리의 환자 활력이 안정되기 전에는 빈 슬롯을 팔지 않는다.",
-          "en": "Relations. Matched the unloading order with An Dohan's dispatch chalkboard and moved Bok Yong's neutral-market prices onto the invoices. He sold no empty slots before Jeon Miri's patient vitals were stable."
-        },
-        "effects": []
       },
-      {
-        "id": "k303-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 호송원. 직함은 환승 중계 물류상. 입고 중량을 두 증인이 보고, 무기 적재가 의심되는 송장은 의료조 게시 전까지 하역을 막는다.",
-          "en": "Office. Rank: convoy hand. Title: transfer relay logistics merchant. Two witnesses reported intake weights, and he blocked the unloading of any invoice suspected of arms loading until the medical crew posted it."
-        },
-        "stress": {
-          "ko": "공포. 군수 문장이 환자 칸 송장에 섞여 신내운수가 하역장으로 전락하는 것.",
-          "en": "Fear. That a munitions clause would mix into patient-car invoices and the transfer city would sink into a freight yard."
-        },
-        "relationship": {
-          "ko": "관계. 안도한의 배차 칠판과 하역 순서를 맞추고, 복용의 중립시장 시세를 송장에 옮긴다. 전미리의 환자 활력이 안정되기 전에는 빈 슬롯을 팔지 않는다.",
-          "en": "Relations. Matched the unloading order with An Dohan's dispatch chalkboard and moved Bok Yong's neutral-market prices onto the invoices. He sold no empty slots before Jeon Miri's patient vitals were stable."
-        },
-        "effects": []
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "복봉은 하역과 배차를 맞추고 환자 활력 전 빈 슬롯을 팔지 않는다. 송장 무게 공백의 범인은 미확인이다.",
-      "en": "Bokbong aligns unloading with dispatch and does not sell empty slots before patient stability. The cause of invoice weight gaps is unknown."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -418,85 +152,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bcf5-ba74-cc9c",
-    "name": "면천 복씨",
-    "crest": "clan-crests/bcf5-ba74-cc9c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -25,
-    "개방": 40,
-    "무력": -20,
-    "물질": 20,
-    "공동": 10,
-    "원칙": -10,
-    "공개": 25,
-    "자격": 20,
-    "분산": 40,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": -20,
-    "위험": -30,
-    "과시": -25,
-    "지속": -10,
-    "지향": "이성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "환승 화물 입고 중량·송장 확인",
-    "소속": "신내운수",
-    "품계": "호송원",
-    "직함": "환승 중계 물류상",
-    "가치관": "권위 −25 | 개방 40 | 무력 −20 | 물질 20 | 공동 10 | 원칙 −10 | 공개 25 | 자격 20 | 분산 40 | 변혁 10",
-    "욕망": "갈망 15 | 독점 −20 | 위험 −30 | 과시 −25 | 지속 −10 | 지향 이성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2071-11-24에 태어났다. 상암 송신실에서 자랐다. 2126년 개막에는 환승 중계 물류상 당직을 맡으며, 직위 인수 기록에는 정전 사흘 송신 유지로 열렸다이 남아 있다.\n- 상봉1동의 망우 환승 대기열·환자·화물 구분·중량·송장·시세·공개 증언 기록대가 복봉의 환승 화물 입고 중량·송장 확인 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
-    "관직": "품계 호송원. 직함은 환승 중계 물류상. 입고 중량을 두 증인이 보고, 무기 적재가 의심되는 송장은 의료조 게시 전까지 하역을 막는다.",
-    "일화": "의료열차에서 암사제 무기가 나오자 같은 시각의 중계 송장에 무게 공백이 두 칸 있었다.",
-    "관계": "안도한의 배차 칠판과 하역 순서를 맞추고, 복용의 중립시장 시세를 송장에 옮긴다. 전미리의 환자 활력이 안정되기 전에는 빈 슬롯을 팔지 않는다.",
-    "야망": "북동부 중립시장의 환승 중계를 공개 시세로 묶어 호송료 없는 화물 순서를 고정하려 한다.",
-    "공포": "군수 문장이 환자 칸 송장에 섞여 신내운수가 하역장으로 전락하는 것.",
-    "개입": "공백 송장을 공개하거나, 중립시장 하역을 의료 우선으로 되돌릴 수 있다."
-  },
-  "biography": "2071-11-24생인 복봉은 송장의 무게와 환자 칸의 봉인을 같은 저울에 올리고, 호송료를 통행 조건으로 적는 상인을 경멸한다. 계절 교대 전에 이미 하역 순서를 고쳐 둔다.\n\n- 생업: 환승 화물 입고 중량·송장 확인\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 환승 중계 물류상\n**생애.** 2071-11-24에 태어났다. 상암 송신실에서 자랐다. 2126년 개막에는 환승 중계 물류상 당직을 맡으며, 직위 인수 기록에는 정전 사흘 송신 유지로 열렸다이 남아 있다.\n- 상봉1동의 망우 환승 대기열·환자·화물 구분·중량·송장·시세·공개 증언 기록대가 복봉의 환승 화물 입고 중량·송장 확인 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 호송원. 직함은 환승 중계 물류상. 입고 중량을 두 증인이 보고, 무기 적재가 의심되는 송장은 의료조 게시 전까지 하역을 막는다.\n\n**일화.** 의료열차에서 암사제 무기가 나오자 같은 시각의 중계 송장에 무게 공백이 두 칸 있었다.\n\n**관계.** 안도한의 배차 칠판과 하역 순서를 맞추고, 복용의 중립시장 시세를 송장에 옮긴다. 전미리의 환자 활력이 안정되기 전에는 빈 슬롯을 팔지 않는다.\n\n**야망.** 북동부 중립시장의 환승 중계를 공개 시세로 묶어 호송료 없는 화물 순서를 고정하려 한다.\n\n**공포.** 군수 문장이 환자 칸 송장에 섞여 신내운수가 하역장으로 전락하는 것.\n\n**개입.** 공백 송장을 공개하거나, 중립시장 하역을 의료 우선으로 되돌릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 40 | 무력 −20 | 물질 20 | 공동 10 | 원칙 −10 | 공개 25 | 자격 20 | 분산 40 | 변혁 10\n- 욕망: 갈망 15 | 독점 −20 | 위험 −30 | 과시 −25 | 지속 −10 | 지향 이성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-12"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "복봉",
-        "type": "계약",
-        "to": "안도한",
-        "basis": "안도한의 배차 칠판과 하역 순서를 맞추고"
-      },
-      {
-        "from": "복봉",
-        "type": "계약",
-        "to": "복용",
-        "basis": "복용의 중립시장 시세를 송장에 옮긴다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "용봉",
-        "type": "계약",
-        "to": "복봉",
-        "basis": "복봉의 하역 순서와 줄을 나눈다"
-      },
-      {
-        "from": "복용",
-        "type": "계약",
-        "to": "복봉",
-        "basis": "복봉의 중계 송장과 시세를 맞추고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

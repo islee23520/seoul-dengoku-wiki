@@ -1,497 +1,120 @@
 {
   "id": "person-0388",
   "name": "천솔빛",
-  "title": "잠실역 대합실 거점장, 전나경의 실무 담당자",
-  "position": "명동역 인준 명부 수사",
+  "title": "종로3가역 역장",
+  "position": "종로3가역 역장 · 정부",
   "characterId": "K387",
-  "rank": "수사",
-  "commonTier": "T3",
-  "occupation": "인준 명부 대조·선거 보좌",
+  "rank": "역장",
+  "commonTier": "T4",
+  "occupation": "역 행정",
   "gender": "여성",
   "stage": "S2",
-  "state": "S15",
-  "stateName": "명동대교구",
-  "sourceRoute": "/world/Cast-State-15#인물-천솔빛",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0388",
   "birthDate": "2090-03-28",
   "birthday": "03-28",
   "age": 36,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-15.json#/content/27",
-    "lore/characters/Cast-State-15.json#/content/28",
-    "lore/characters/Cast-State-15.json#/content/29",
-    "lore/characters/Cast-State-15.json#/content/32",
-    "lore/characters/Cast-State-15.json#/content/33",
-    "lore/characters/Cast-State-15.json#/content/34"
-  ],
-  "familyTree": {
-    "personId": "K387",
-    "nodes": [
-      {
-        "id": "K387",
-        "personId": "K387",
-        "kind": "person",
-        "name": "천솔빛",
-        "birthDate": "2090-03-28",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K387"
-          },
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-천솔빛-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 명동역 인준 명부 수사 일을 맡았다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-천솔빛-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0388"
-      },
-      {
-        "id": "FH-K387-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "천승경",
-        "lineage": {
-          "surname": "천",
-          "bongwan": "영양",
-          "clan": "cc9c-c601-c591"
-        },
-        "birthDate": "2060-03-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-천솔빛-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2098,
-            "summary": "천승경은 대합실 당직에서 인준 명부 대조·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-천솔빛-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K387-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "천승수",
-        "lineage": {
-          "surname": "천",
-          "bongwan": "영양",
-          "clan": "cc9c-c601-c591"
-        },
-        "birthDate": "2030-03-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-천솔빛-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "천승수는 대합실 당직에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-천솔빛-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K387-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "천승은",
-        "lineage": {
-          "surname": "천",
-          "bongwan": "영양",
-          "clan": "cc9c-c601-c591"
-        },
-        "birthDate": "2000-03-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-천솔빛-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "천승은은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-천솔빛-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K387-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준규",
-        "birthDate": "2060-03-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-천솔빛-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2098,
-            "summary": "정준규는 대합실 당직에서 인준 명부 대조·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-천솔빛-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K387-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤준훈",
-        "birthDate": "2030-03-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-천솔빛-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "윤준훈은 대합실 당직에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-천솔빛-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K387-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "한준정",
-        "birthDate": "2000-03-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-천솔빛-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한준정은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-천솔빛-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K387-P-01:K387:biological",
-        "from": "FH-K387-P-01",
-        "to": "K387",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-천솔빛-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K387-P-02:FH-K387-P-01:biological",
-        "from": "FH-K387-P-02",
-        "to": "FH-K387-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-천솔빛-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K387-P-03:FH-K387-P-02:biological",
-        "from": "FH-K387-P-03",
-        "to": "FH-K387-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-천솔빛-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K387-M-01:K387:biological",
-        "from": "FH-K387-M-01",
-        "to": "K387",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-천솔빛-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K387-M-02:FH-K387-M-01:biological",
-        "from": "FH-K387-M-02",
-        "to": "FH-K387-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-천솔빛-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K387-M-03:FH-K387-M-02:biological",
-        "from": "FH-K387-M-03",
-        "to": "FH-K387-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-천솔빛-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cc9c-c601-c591",
+    "name": "영양 천씨",
+    "crest": "clan-crests/cc9c-c601-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "종로구 종로1·2·3·4가동 종로3가역 역장 천솔빛. 세 노선이 만나는 대합실에 증표 중개와 대서 장터가 서기 때문에, 서른여섯의 천솔빛은 하루의 절반을 서류 꾸러미를 든 사람들의 줄이 출입구 바람길을 막지 않게 세우는 데 쓴다. 윤초아 의원의 사무소가 같은 역에 있어도 그는 의원 사무소 앞의 줄을 다른 줄보다 먼저 세워 주는 일이 없다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "종로3가역 역장",
+    "품계": "역장",
+    "생업": "역 행정",
+    "일하는 역": "종로3가역",
+    "잠자는 역": "종로3가역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "종로구 종로1·2·3·4가동 종로3가역 역장 천솔빛. 세 노선이 만나는 대합실에 증표 중개와 대서 장터가 서기 때문에, 서른여섯의 천솔빛은 하루의 절반을 서류 꾸러미를 든 사람들의 줄이 출입구 바람길을 막지 않게 세우는 데 쓴다. 윤초아 의원의 사무소가 같은 역에 있어도 그는 의원 사무소 앞의 줄을 다른 줄보다 먼저 세워 주는 일이 없다.",
+    "관직": "직함 종로3가역 역장. 직위 종로3가역 역장 · 정부. 품계 역장. 일하는 역 종로3가역."
+  },
+  "values": {
+    "권위": 60,
+    "개방": -20,
+    "무력": 30,
+    "물질": 45,
+    "공동": 0,
+    "원칙": -20,
+    "공개": -35,
+    "자격": 15,
+    "분산": -45,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": -5,
+    "독점": 25,
+    "위험": -40,
+    "과시": 25,
+    "지속": 35,
+    "지향": "동성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0388",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "천솔빛",
+        "type": "지휘",
+        "to": "동예솔",
+        "basis": "종로1·2·3·4가동 동장 동예솔의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K388",
+    "name": "동예솔",
+    "courtId": "court:K388",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
-      },
-      "strategy": {
-        "base": 6,
-        "effective": 6
-      },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
       "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
         "base": 6,
         "effective": 6
-      }
-    },
-    "skills": [
-      {
-        "id": "queue-administration",
-        "name": {
-          "ko": "배급 대기열 집행",
-          "en": "Ration queue administration"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "중단 압박을 버팀",
-          "en": "Resists suspension pressure"
-        },
-        "description": {
-          "ko": "배급 중단 요구에도 광장 원장을 유지하고 남하 가족에게 임시표를 준다. 선거 보좌는 하지만 투표권은 없다.",
-          "en": "Keeps the square register despite demands to stop rations and gives temporary tickets to arriving families. Assists elections without a vote."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 중단 압박을 버팀을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "중단 요구가 커질수록 장부를 지키는 데 집중할 수 있다.",
-          "en": "May focus more narrowly on keeping the register under suspension pressure."
-        },
-        "relationship": {
-          "ko": "전나경의 지휘 아래 방늘재와 대기열을 나눈다.",
-          "en": "Works under Jeon Nagyeong and coordinates queues with Bang Neuljae."
-        },
-        "effects": []
       },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "사제단 소집 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "사제단 소집 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "전나경의 지휘 아래 방늘재와 대기열을 나눈다.",
-          "en": "Works under Jeon Nagyeong and coordinates queues with Bang Neuljae."
-        },
-        "effects": []
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "배급 중단 요구에도 광장 원장을 유지하고 남하 가족에게 임시표를 준다. 선거 보좌는 하지만 투표권은 없다.",
-      "en": "Keeps the square register despite demands to stop rations and gives temporary tickets to arriving families. Assists elections without a vote."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -529,79 +152,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "cc9c-c601-c591",
-    "name": "영양 천씨",
-    "crest": "clan-crests/cc9c-c601-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": 35,
-    "무력": -5,
-    "물질": 50,
-    "공동": -5,
-    "원칙": -40,
-    "공개": -10,
-    "자격": 0,
-    "분산": 5,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": -5,
-    "독점": 25,
-    "위험": -40,
-    "과시": 25,
-    "지속": 35,
-    "지향": "동성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "인준 명부 대조·선거 보좌",
-    "소속": "명동대교구 (명동역)",
-    "품계": "수사",
-    "직함": "명동역 인준 명부 수사",
-    "가치관": "권위 15 | 개방 35 | 무력 −5 | 물질 50 | 공동 −5 | 원칙 −40 | 공개 −10 | 자격 0 | 분산 5 | 변혁 0",
-    "욕망": "갈망 −5 | 독점 25 | 위험 −40 | 과시 25 | 지속 35 | 지향 동성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2090-03-28에 태어난 천솔빛은 영구 겨울의 명동역 교구청에서 명동역 인준 명부 수사 일을 맡는다. 인준 명부 대조·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 천솔빛은 명동 행정동의 명동역 교구청에서 명동역 인준 명부 수사 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 수사. 직함은 명동역 인준 명부 수사. 인준 명부 대조·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
-    "일화": "가격 폭등 주간에 비상 배급줄이 잠실 집결지를 메우고, 상인회의가 배급 중단을 요구하자 천솔빛은 광장 원장을 내리지 않았다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.",
-    "관계": "전나경의 지휘로 광장 줄을 집행하고, 방늘재의 진료 막과 대기열을 나눈다. 백온의 남하 가족에게 임시표를 준다.",
-    "야망": "사제단 소집 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-    "공포": "사제단 소집 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-    "개입": "사제단 소집 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
-  },
-  "biography": "천솔빛은 명동역 인준 명부 수사 업무에서 인준 명부 대조·선거 보좌 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 인준 명부 대조·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 수사\n- 직함: 명동역 인준 명부 수사\n**생애.** 2090-03-28에 태어난 천솔빛은 영구 겨울의 명동역 교구청에서 명동역 인준 명부 수사 일을 맡는다. 인준 명부 대조·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 천솔빛은 명동 행정동의 명동역 교구청에서 명동역 인준 명부 수사 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 수사. 직함은 명동역 인준 명부 수사. 인준 명부 대조·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 가격 폭등 주간에 비상 배급줄이 잠실 집결지를 메우고, 상인회의가 배급 중단을 요구하자 천솔빛은 광장 원장을 내리지 않았다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.\n\n**관계.** 전나경의 지휘로 광장 줄을 집행하고, 방늘재의 진료 막과 대기열을 나눈다. 백온의 남하 가족에게 임시표를 준다.\n\n**야망.** 사제단 소집 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 사제단 소집 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 사제단 소집 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 35 | 무력 −5 | 물질 50 | 공동 −5 | 원칙 −40 | 공개 −10 | 자격 0 | 분산 5 | 변혁 0\n- 욕망: 갈망 −5 | 독점 25 | 위험 −40 | 과시 25 | 지속 35 | 지향 동성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-15"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "천솔빛",
-        "type": "지휘",
-        "to": "전나경",
-        "basis": "전나경의 지휘로 광장 줄을 집행하고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:종로3가",
+      "name": {
+        "ko": "종로3가역"
       },
-      {
-        "from": "천솔빛",
-        "type": "지휘",
-        "to": "방늘재",
-        "basis": "방늘재의 진료 막과 대기열을 나눈다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "탁필호",
-        "type": "계약",
-        "to": "천솔빛",
-        "basis": "천솔빛의 광장 줄에서 피난 인파를 대표하고"
-      }
-    ]
-  }
+      "holderPersonId": "K387",
+      "directLiegePersonId": "K388",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "종로3가",
+        "stationName": "종로3가"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1111061500",
+          "name": "종로1·2·3·4가동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

@@ -1,501 +1,132 @@
 {
   "id": "person-0008",
   "name": "임바다",
-  "title": "서부 급수권 시민대표",
-  "position": "서부 급수권 시민대표",
+  "title": "교대장",
+  "position": "교대장 · 목동역",
   "characterId": "K008",
-  "rank": "구역장",
-  "commonTier": "T3",
-  "occupation": "급수 배분 당직",
+  "rank": "교대장",
+  "commonTier": "T2",
+  "occupation": "도시 운영",
   "gender": "남성",
   "stage": "S1",
-  "state": "S01",
-  "stateName": "수문국",
-  "sourceRoute": "/world/Cast-State-01#인물-임바다",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0008",
   "birthDate": "2089-04-16",
   "birthday": "04-16",
   "age": 37,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-01.json#/content/16",
-    "lore/characters/Cast-State-01.json#/content/18"
-  ],
-  "familyTree": {
-    "personId": "K008",
-    "nodes": [
-      {
-        "id": "K008",
-        "personId": "K008",
-        "kind": "person",
-        "name": "임바다",
-        "birthDate": "2089-04-16",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K008"
-          },
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-임바다-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 서부 급수권 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-임바다-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0008"
-      },
-      {
-        "id": "FH-K008-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승민",
-        "lineage": {
-          "surname": "임",
-          "bongwan": "나주",
-          "clan": "c784-b098-c8fc"
-        },
-        "birthDate": "2059-04-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-임바다-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "임승민은 영등포 정수 당직에서 급수 배분 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-임바다-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K008-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승원",
-        "lineage": {
-          "surname": "임",
-          "bongwan": "나주",
-          "clan": "c784-b098-c8fc"
-        },
-        "birthDate": "2029-04-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-임바다-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "임승원은 영등포 정수 당직에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-임바다-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K008-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승진",
-        "lineage": {
-          "surname": "임",
-          "bongwan": "나주",
-          "clan": "c784-b098-c8fc"
-        },
-        "birthDate": "1999-04-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-임바다-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임승진은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-임바다-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K008-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오승준",
-        "birthDate": "2059-04-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-임바다-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "오승준은 영등포 정수 당직에서 급수 배분 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-임바다-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K008-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "송승준",
-        "birthDate": "2029-04-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-임바다-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "송승준은 영등포 정수 당직에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-임바다-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K008-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "조승석",
-        "birthDate": "1999-04-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-임바다-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조승석은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-임바다-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K008-P-01:K008:biological",
-        "from": "FH-K008-P-01",
-        "to": "K008",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-임바다-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K008-P-02:FH-K008-P-01:biological",
-        "from": "FH-K008-P-02",
-        "to": "FH-K008-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-임바다-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K008-P-03:FH-K008-P-02:biological",
-        "from": "FH-K008-P-03",
-        "to": "FH-K008-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-임바다-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K008-M-01:K008:biological",
-        "from": "FH-K008-M-01",
-        "to": "K008",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-임바다-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K008-M-02:FH-K008-M-01:biological",
-        "from": "FH-K008-M-02",
-        "to": "FH-K008-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-임바다-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K008-M-03:FH-K008-M-02:biological",
-        "from": "FH-K008-M-03",
-        "to": "FH-K008-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-임바다-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c784-b098-c8fc",
+    "name": "나주 임씨",
+    "crest": "clan-crests/c784-b098-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "임바다는 신정 차량기지 네 교대 가운데 하나를 맡은 교대장이고, 교대 명부는 목동역에서 맡는다. 그의 교대는 밤 바람 시간에 모터를 감는 조라, 바람이 세면 한밤에 일어나 궤도 수레를 타고 기지로 간다. 기지장 이서담 앞에서 맹세한 대로 교대 일지는 한 줄도 깎지 않는다. 성품은 온화하지만, 역의 빈 통이 비는 날에는 교대 몫에서 섬유당 한 통을 덜어 채우라고 고집한다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "교대장",
+    "품계": "교대장",
+    "생업": "도시 운영",
+    "일하는 역": "목동역",
+    "잠자는 역": "목동역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "임바다는 신정 차량기지 네 교대 가운데 하나를 맡은 교대장이고, 교대 명부는 목동역에서 맡는다. 그의 교대는 밤 바람 시간에 모터를 감는 조라, 바람이 세면 한밤에 일어나 궤도 수레를 타고 기지로 간다. 기지장 이서담 앞에서 맹세한 대로 교대 일지는 한 줄도 깎지 않는다. 성품은 온화하지만, 역의 빈 통이 비는 날에는 교대 몫에서 섬유당 한 통을 덜어 채우라고 고집한다.",
+    "관직": "직함 교대장. 직위 교대장 · 목동역. 품계 교대장. 일하는 역 목동역."
+  },
+  "values": {
+    "권위": 0,
+    "개방": 10,
+    "무력": 10,
+    "물질": 35,
+    "공동": -5,
+    "원칙": 5,
+    "공개": 15,
+    "자격": 20,
+    "분산": 10,
+    "변혁": 0
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": -40,
+    "위험": 10,
+    "과시": -25,
+    "지속": -15,
+    "지향": "양성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0008",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "임바다",
+        "type": "지휘",
+        "to": "이서담",
+        "basis": "양천 기지장 이서담의 직속"
+      },
+      {
+        "from": "임바다",
+        "type": "맹세",
+        "to": "이서담",
+        "basis": "교대 일지를 깎지 않겠다고 기지장 앞에서 맹세했다"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K002",
+    "name": "이서담",
+    "courtId": "court:K002",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
+      },
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 12,
-        "effective": 12
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "k008-release-negotiation",
-        "name": {
-          "ko": "방류량 협의",
-          "en": "Release negotiation"
-        },
-        "rating": 60
-      },
-      {
-        "id": "k008-ration-queue-posting",
-        "name": {
-          "ko": "대기표 게시",
-          "en": "Ration-queue posting"
-        },
-        "rating": 55
+        "id": "fc-0008-shift-roll",
+        "name": "교대 짜기",
+        "rating": 63
       }
     ],
-    "traits": [
-      {
-        "id": "k008-family-minimum",
-        "name": {
-          "ko": "가족의 식수선",
-          "en": "Family water minimum"
-        },
-        "description": {
-          "ko": "가족 배급이 끊기면 효율을 이유로 한 타협을 멈춘다.",
-          "en": "Stops compromising when family water rations are cut."
-        },
-        "behavior": {
-          "ko": "가족 배급이 끊기면 효율을 이유로 한 타협을 멈춘다.",
-          "en": "Stops compromising when family water rations are cut."
-        },
-        "stress": {
-          "ko": "골목 하나를 희생하자는 말을 모욕으로 받아들인다.",
-          "en": "Takes proposals to sacrifice a neighborhood as an insult."
-        },
-        "relationship": {
-          "ko": "백온의 이동 급수권과 이서담의 거부권을 따른다.",
-          "en": "Works with Baek On’s mobile water rights and Lee Seodam’s veto."
-        },
-        "effects": []
-      },
-      {
-        "id": "k008-public-waiting-order",
-        "name": {
-          "ko": "공개 대기표",
-          "en": "Public waiting order"
-        },
-        "description": {
-          "ko": "단수 예고에 대표 연서를 모아 개방을 요구한다.",
-          "en": "Demands reservoir access through joint signatures after cutoff notices."
-        },
-        "behavior": {
-          "ko": "단수 예고에 대표 연서를 모아 개방을 요구한다.",
-          "en": "Demands reservoir access through joint signatures after cutoff notices."
-        },
-        "stress": {
-          "ko": "주민이 난민 명부로 떠밀릴 상황을 두려워한다.",
-          "en": "Fears residents being pushed onto refugee registers."
-        },
-        "relationship": {
-          "ko": "한재목의 집단 단수에는 깊은 원한을 남긴다.",
-          "en": "Retains deep resentment toward Han Jaemok’s collective cutoffs."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "가뭄 방류량 협의와 대기표 공개는 실제 실무다. 식수 최저선을 계약에 남기려 하지만 협상 성과와 전투 경력은 확인되지 않았다.",
-      "en": "Drought-release discussions and public waiting lists establish practical experience. The contractual water minimum remains an ambition; negotiation outcomes and combat experience are unconfirmed."
-    },
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -533,80 +164,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c784-b098-c8fc",
-    "name": "나주 임씨",
-    "crest": "clan-crests/c784-b098-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 35,
-    "개방": -5,
-    "무력": 20,
-    "물질": 20,
-    "공동": 20,
-    "원칙": 15,
-    "공개": 15,
-    "자격": 0,
-    "분산": -45,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": -40,
-    "위험": 10,
-    "과시": -25,
-    "지속": -15,
-    "지향": "양성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "수문국",
-    "생업": "급수 배분 당직",
-    "품계": "구역장",
-    "직함": "서부 급수권 시민대표",
-    "업무 위치": "신정2동. 신정2동 골목에서 임바다는 가족별 배급 대기표를 게시한다. 단수 예고가 나오면 배급 대표들의 연서를 모아 저수조 개방을 요구하고, 구역의 거부권을 가진 이서담에게 협조를 구한다.",
-    "가치관": "권위 35 | 개방 −5 | 무력 20 | 물질 20 | 공동 20 | 원칙 15 | 공개 15 | 자격 0 | 분산 −45 | 변혁 −10",
-    "욕망": "갈망 40 | 독점 −40 | 위험 10 | 과시 −25 | 지속 −15 | 지향 양성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 서부 급수권 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 신정2동. 신정2동 골목에서 임바다는 가족별 배급 대기표를 게시한다. 단수 예고가 나오면 배급 대표들의 연서를 모아 저수조 개방을 요구하고, 구역의 거부권을 가진 이서담에게 협조를 구한다.",
-    "관직": "품계 구역장. 직함은 서부 급수권 시민대표. 골목별 배급 대기표를 공개 게시하고, 단수 예고가 뜨면 대표 연서로 저수조 개방을 요구한다.",
-    "일화": "2125년 가뭄에 임바다는 신정동 골목 저수조의 남은 물을 세어 배급 대표들과 가족별 최소 배분량을 밤새 협의했다.",
-    "관계": "백온과 이동 급수권 동맹을 맺었고, 한재목의 집단 단수 제재에는 깊은 원한이 있으며, 이서담의 구역 거부권을 후견처럼 따른다.",
-    "야망": "집단 단수 대상이 되어도 식수 최저선을 남기는 시민 급수권을 물 계약에 못 박는다.",
-    "공포": "재난 구역 주민이 급수 의무의 숫자로만 남아 난민 명부로 떠밀리는 것.",
-    "개입": "단수 예고의 피해 골목을 실측해 최저선을 관철하거나, 대기표 조작을 밝혀 대표 자격을 박탈할 수 있다."
-  },
-  "biography": "온화하나 가족 단위 배급이 끊기는 순간 타협을 멈춘다. 효율을 이유로 한 골목을 희생하자는 말을 모욕으로 듣는다.\n\n- 소속: 수문국\n- 생업: 급수 배분 당직\n- 품계: 구역장\n- 직함: 서부 급수권 시민대표\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 서부 급수권 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 신정2동. 신정2동 골목에서 임바다는 가족별 배급 대기표를 게시한다. 단수 예고가 나오면 배급 대표들의 연서를 모아 저수조 개방을 요구하고, 구역의 거부권을 가진 이서담에게 협조를 구한다.\n\n**관직.** 품계 구역장. 직함은 서부 급수권 시민대표. 골목별 배급 대기표를 공개 게시하고, 단수 예고가 뜨면 대표 연서로 저수조 개방을 요구한다.\n\n**일화.** 2125년 가뭄에 임바다는 신정동 골목 저수조의 남은 물을 세어 배급 대표들과 가족별 최소 배분량을 밤새 협의했다.\n\n**관계.** 백온과 이동 급수권 동맹을 맺었고, 한재목의 집단 단수 제재에는 깊은 원한이 있으며, 이서담의 구역 거부권을 후견처럼 따른다.\n\n**야망.** 집단 단수 대상이 되어도 식수 최저선을 남기는 시민 급수권을 물 계약에 못 박는다.\n\n**공포.** 재난 구역 주민이 급수 의무의 숫자로만 남아 난민 명부로 떠밀리는 것.\n\n**개입.** 단수 예고의 피해 골목을 실측해 최저선을 관철하거나, 대기표 조작을 밝혀 대표 자격을 박탈할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −5 | 무력 20 | 물질 20 | 공동 20 | 원칙 15 | 공개 15 | 자격 0 | 분산 −45 | 변혁 −10\n- 욕망: 갈망 40 | 독점 −40 | 위험 10 | 과시 −25 | 지속 −15 | 지향 양성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-01"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "임바다",
-        "type": "계약",
-        "to": "백온",
-        "basis": "이동 급수권 동맹"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "장민재",
-        "type": "계약",
-        "to": "임바다",
-        "basis": "시민 급수권 최저선 문구를 나눔"
-      },
-      {
-        "from": "진하겸",
-        "type": "맹세",
-        "to": "임바다",
-        "basis": "임바다의 시민 급수권 맹세를 환자 명부로 받치며"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

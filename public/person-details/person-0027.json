@@ -1,394 +1,120 @@
 {
   "id": "person-0027",
   "name": "기바름",
-  "title": "서부 비상 호송 전령",
-  "position": "서부 비상 호송 전령",
+  "title": "영등포구청역 역반장",
+  "position": "영등포구청역 역반장 · 자유도시들",
   "characterId": "K027",
-  "rank": "주사",
-  "commonTier": "T5",
-  "occupation": "호송 전갈 전달",
+  "rank": "역반장",
+  "commonTier": "T4",
+  "occupation": "역반 운영",
   "gender": "여성",
   "stage": "S3",
-  "state": "S01",
-  "stateName": "수문국",
-  "sourceRoute": "/world/Cast-State-01#인물-기바름",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0027",
   "birthDate": "2071-11-28",
   "birthday": "11-28",
   "age": 55,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-01.json#/content/280",
-    "lore/characters/Cast-State-01.json#/content/282"
-  ],
-  "familyTree": {
-    "personId": "K027",
-    "nodes": [
-      {
-        "id": "K027",
-        "personId": "K027",
-        "kind": "person",
-        "name": "기바름",
-        "birthDate": "2071-11-28",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K027"
-          },
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-기바름-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 서부 비상 호송 전령 자리는 무표 출발 열차 저지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-기바름-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0027"
-      },
-      {
-        "id": "FH-K027-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "기승석",
-        "lineage": {
-          "surname": "기",
-          "bongwan": "행주",
-          "clan": "ae30-d589-c8fc"
-        },
-        "birthDate": "2041-11-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-기바름-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2079,
-            "summary": "기승석은 신내 환승 당직에서 호송 전갈 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-기바름-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K027-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "기승준",
-        "lineage": {
-          "surname": "기",
-          "bongwan": "행주",
-          "clan": "ae30-d589-c8fc"
-        },
-        "birthDate": "2011-11-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-기바름-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "기승준은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-기바름-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K027-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정승우",
-        "birthDate": "2041-11-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-기바름-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2079,
-            "summary": "정승우는 신내 환승 당직에서 호송 전갈 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-기바름-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K027-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승진",
-        "birthDate": "2011-11-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-기바름-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤승진은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-기바름-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K027-P-01:K027:biological",
-        "from": "FH-K027-P-01",
-        "to": "K027",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-기바름-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K027-P-02:FH-K027-P-01:biological",
-        "from": "FH-K027-P-02",
-        "to": "FH-K027-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-기바름-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K027-M-01:K027:biological",
-        "from": "FH-K027-M-01",
-        "to": "K027",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-기바름-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K027-M-02:FH-K027-M-01:biological",
-        "from": "FH-K027-M-02",
-        "to": "FH-K027-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-기바름-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ae30-d589-c8fc",
+    "name": "행주 기씨",
+    "crest": "clan-crests/ae30-d589-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "기바름은 영등포구청역 역반장이다. 2호선과 5호선이 만나는 이 역으로 강서의 전기 케이블과 장터로 가는 짐이 함께 들어오고, 그녀는 출입구마다 들어오는 수레의 도착 시각을 길게 적는다. 말은 짧고 일지는 길다. 쉰다섯이 되도록 약속한 시각에 늦은 수레를 그냥 들여보낸 적이 없다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "영등포구청역 역반장",
+    "품계": "역반장",
+    "생업": "역반 운영",
+    "일하는 역": "영등포구청역",
+    "잠자는 역": "영등포구청역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "기바름은 영등포구청역 역반장이다. 2호선과 5호선이 만나는 이 역으로 강서의 전기 케이블과 장터로 가는 짐이 함께 들어오고, 그녀는 출입구마다 들어오는 수레의 도착 시각을 길게 적는다. 말은 짧고 일지는 길다. 쉰다섯이 되도록 약속한 시각에 늦은 수레를 그냥 들여보낸 적이 없다.",
+    "관직": "직함 영등포구청역 역반장. 직위 영등포구청역 역반장 · 자유도시들. 품계 역반장. 일하는 역 영등포구청역."
+  },
+  "values": {
+    "권위": 15,
+    "개방": 20,
+    "무력": 0,
+    "물질": 50,
+    "공동": -5,
+    "원칙": 5,
+    "공개": 30,
+    "자격": 15,
+    "분산": 10,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": 10,
+    "위험": 10,
+    "과시": -30,
+    "지속": 15,
+    "지향": "양성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0027",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "기바름",
+        "type": "지휘",
+        "to": "구하온",
+        "basis": "당산 구간장 구하온의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K019",
+    "name": "구하온",
+    "courtId": "court:K019",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "endurance": {
-        "base": 11,
-        "effective": 11
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k027-emergency-message",
-        "name": {
-          "ko": "비상 전갈 전달",
-          "en": "Emergency message delivery"
-        },
-        "rating": 60
-      },
-      {
-        "id": "k027-register-salvage",
-        "name": {
-          "ko": "습격 중 장부 회수",
-          "en": "Register salvage during attack"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "k027-people-before-cargo",
-        "name": {
-          "ko": "화물보다 인명",
-          "en": "People before cargo"
-        },
-        "description": {
-          "ko": "습격에서 화물보다 인명 장부를 챙긴다.",
-          "en": "Saves the life register before cargo during an attack."
-        },
-        "behavior": {
-          "ko": "습격에서 화물보다 인명 장부를 챙긴다.",
-          "en": "Saves the life register before cargo during an attack."
-        },
-        "stress": {
-          "ko": "호송 열차가 교량에서 멈추고, 그 공백을 동부 보호군이 구원으로 위장해 서부 수문을 통과하는 것.",
-          "en": "That the convoy train would stop on a bridge, and the eastern protection force would disguise that gap as rescue and cross the western water gates."
-        },
-        "relationship": {
-          "ko": "표시완의 헌장 전령로를 비상 호송에 빌리고, 최한결의 장갑 보수열차에 부품 칸을 붙이며, 둘째 협약 때 임하준의 보증 서명을 직접 날랐다.",
-          "en": "Borrowing Daniel Brooks's charter courier route for emergency convoys, coupling a parts car onto Choi Hangyeol's armored repair train, and carrying with his own hands the guarantee signature Im Hajun gave at the second Compact."
-        },
-        "effects": []
-      },
-      {
-        "id": "k027-arrival-not-politics",
-        "name": {
-          "ko": "일정보다 도착 약속",
-          "en": "Arrival promises before politics"
-        },
-        "description": {
-          "ko": "도착 시각을 정치 일정에 맞추라는 압박을 거부한다.",
-          "en": "Rejects pressure to adjust arrival times for politics."
-        },
-        "behavior": {
-          "ko": "도착 시각을 정치 일정에 맞추라는 압박을 거부한다.",
-          "en": "Rejects pressure to adjust arrival times for politics."
-        },
-        "stress": {
-          "ko": "호송 열차가 교량에서 멈추고, 그 공백을 동부 보호군이 구원으로 위장해 서부 수문을 통과하는 것.",
-          "en": "That the convoy train would stop on a bridge, and the eastern protection force would disguise that gap as rescue and cross the western water gates."
-        },
-        "relationship": {
-          "ko": "표시완의 헌장 전령로를 비상 호송에 빌리고, 최한결의 장갑 보수열차에 부품 칸을 붙이며, 둘째 협약 때 임하준의 보증 서명을 직접 날랐다.",
-          "en": "Borrowing Daniel Brooks's charter courier route for emergency convoys, coupling a parts car onto Choi Hangyeol's armored repair train, and carrying with his own hands the guarantee signature Im Hajun gave at the second Compact."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "호송 중 장부 보호와 서명 전달을 반영했다. 습격 경험을 전투 승리로 해석하지 않았고 하루 안 호송망은 아직 야망이다.",
-      "en": "Reflects register protection during an escort and signature delivery. An attack encounter is not a combat victory; a one-day escort network remains an ambition."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -426,80 +152,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ae30-d589-c8fc",
-    "name": "행주 기씨",
-    "crest": "clan-crests/ae30-d589-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 50,
-    "개방": 5,
-    "무력": 10,
-    "물질": 35,
-    "공동": 20,
-    "원칙": 15,
-    "공개": 30,
-    "자격": -5,
-    "분산": -45,
-    "변혁": -25
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": 10,
-    "위험": 10,
-    "과시": -30,
-    "지속": 15,
-    "지향": "양성",
-    "결합": "다자"
-  },
-  "fields": {
-    "소속": "수문국",
-    "생업": "호송 전갈 전달",
-    "품계": "주사",
-    "직함": "서부 비상 호송 전령",
-    "업무 위치": "당산2동. 당산2동 교량 경유 일지에 기바름은 표시완의 전령 경로와 최한결 보수열차의 부품 칸 인계를 적어 호송 봉인이 다음 교대까지 이어지게 한다.",
-    "가치관": "권위 50 | 개방 5 | 무력 10 | 물질 35 | 공동 20 | 원칙 15 | 공개 30 | 자격 −5 | 분산 −45 | 변혁 −25",
-    "욕망": "갈망 0 | 독점 10 | 위험 10 | 과시 −30 | 지속 15 | 지향 양성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 서부 비상 호송 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 당산2동. 당산2동 교량 경유 일지에 기바름은 표시완의 전령 경로와 최한결 보수열차의 부품 칸 인계를 적어 호송 봉인이 다음 교대까지 이어지게 한다.",
-    "관직": "품계 주사. 직함은 서부 비상 호송 전령. 호송 순번은 배급구역과 보수열차장이 함께 추첨하고, 암호패 없는 야간 추가는 수문에서 되돌린다.",
-    "일화": "2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 서부 비상 호송 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "표시완의 헌장 전령로를 비상 호송에 빌리고, 최한결의 장갑 보수열차에 부품 칸을 붙이며, 둘째 협약 때 임하준의 보증 서명을 직접 날랐다.",
-    "야망": "물 공급 최저선이 깨질 때 부품과 급수통을 하루 안에 오가는 공개 호송망을 만들어, 비상 경로가 비밀 장교망에 넘어가지 않게 한다.",
-    "공포": "호송 열차가 교량에서 멈추고, 그 공백을 동부 보호군이 구원으로 위장해 서부 수문을 통과하는 것.",
-    "개입": "끊긴 교량 우회 경로를 열어 그의 호송을 끝내거나, 봉인함 바꿔치기를 적발해 전령 자격을 박탈할 수 있다."
-  },
-  "biography": "야간 교량 바람보다 호송 봉인 끈의 풀림을 먼저 느끼고, 약속한 도착 시각을 정치 일정에 맞추라는 압박을 모욕으로 여긴다. 말은 짧고 경로 쪽지는 길다.\n\n- 소속: 수문국\n- 생업: 호송 전갈 전달\n- 품계: 주사\n- 직함: 서부 비상 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 서부 비상 호송 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 당산2동. 당산2동 교량 경유 일지에 기바름은 표시완의 전령 경로와 최한결 보수열차의 부품 칸 인계를 적어 호송 봉인이 다음 교대까지 이어지게 한다.\n\n**관직.** 품계 주사. 직함은 서부 비상 호송 전령. 호송 순번은 배급구역과 보수열차장이 함께 추첨하고, 암호패 없는 야간 추가는 수문에서 되돌린다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 서부 비상 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 표시완의 헌장 전령로를 비상 호송에 빌리고, 최한결의 장갑 보수열차에 부품 칸을 붙이며, 둘째 협약 때 임하준의 보증 서명을 직접 날랐다.\n\n**야망.** 물 공급 최저선이 깨질 때 부품과 급수통을 하루 안에 오가는 공개 호송망을 만들어, 비상 경로가 비밀 장교망에 넘어가지 않게 한다.\n\n**공포.** 호송 열차가 교량에서 멈추고, 그 공백을 동부 보호군이 구원으로 위장해 서부 수문을 통과하는 것.\n\n**개입.** 끊긴 교량 우회 경로를 열어 그의 호송을 끝내거나, 봉인함 바꿔치기를 적발해 전령 자격을 박탈할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 5 | 무력 10 | 물질 35 | 공동 20 | 원칙 15 | 공개 30 | 자격 −5 | 분산 −45 | 변혁 −25\n- 욕망: 갈망 0 | 독점 10 | 위험 10 | 과시 −30 | 지속 15 | 지향 양성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-01"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "기바름",
-        "type": "계약",
-        "to": "대니얼 브룩스",
-        "basis": "대니얼 브룩스의 헌장 전령로를 비상 호송에 빌리고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:영등포구청",
+      "name": {
+        "ko": "영등포구청역"
       },
-      {
-        "from": "기바름",
-        "type": "계약",
-        "to": "최한결",
-        "basis": "최한결의 장갑 보수열차에 부품 칸을 붙이며"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "기필호",
-        "type": "계약",
-        "to": "기바름",
-        "basis": "서부 호송의 기바름과 부품 칸을 교환한다"
-      }
-    ]
-  }
+      "holderPersonId": "K027",
+      "directLiegePersonId": "K019",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "영등포구청",
+        "stationName": "영등포구청"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1156055000",
+          "name": "당산1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

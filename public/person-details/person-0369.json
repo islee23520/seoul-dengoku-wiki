@@ -1,494 +1,105 @@
 {
   "id": "person-0369",
   "name": "범한들",
-  "title": "급수계약 만료 증인",
-  "position": "양군 급수계약 만료 증인",
+  "title": "장터 상인 우두머리",
+  "position": "장터 상인 우두머리 · 공덕역",
   "characterId": "K368",
-  "rank": "공동실무원",
+  "rank": "등재민",
   "commonTier": "T5",
-  "occupation": "급수계약 만료 시각·잔량 표 대조",
+  "occupation": "장터 거래",
   "gender": "남성",
   "stage": "S3",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-범한들",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0369",
   "birthDate": "2096-08-04",
   "birthday": "08-04",
   "age": 30,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/215",
-    "lore/characters/Cast-State-14.json#/content/217",
-    "lore/characters/Cast-State-14.json#/content/218"
-  ],
-  "familyTree": {
-    "personId": "K368",
-    "nodes": [
-      {
-        "id": "K368",
-        "personId": "K368",
-        "kind": "person",
-        "name": "범한들",
-        "birthDate": "2096-08-04",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K368"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-범한들-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 양군 급수계약 만료 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-범한들-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0369"
-      },
-      {
-        "id": "FH-K368-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "범승원",
-        "lineage": {
-          "surname": "범",
-          "bongwan": "금성",
-          "clan": "bc94-ae08-c131"
-        },
-        "birthDate": "2066-08-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-범한들-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2104,
-            "summary": "범승원은 영등포 정수 당직에서 급수계약 만료 시각·잔량 표 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-범한들-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K368-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "범승진",
-        "lineage": {
-          "surname": "범",
-          "bongwan": "금성",
-          "clan": "bc94-ae08-c131"
-        },
-        "birthDate": "2036-08-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-범한들-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "범승진은 영등포 정수 당직에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-범한들-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K368-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "범승현",
-        "lineage": {
-          "surname": "범",
-          "bongwan": "금성",
-          "clan": "bc94-ae08-c131"
-        },
-        "birthDate": "2006-08-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-범한들-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "범승현은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-범한들-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K368-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오준은",
-        "birthDate": "2066-08-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-범한들-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2104,
-            "summary": "오준은은 영등포 정수 당직에서 급수계약 만료 시각·잔량 표 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-범한들-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K368-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "송준현",
-        "birthDate": "2036-08-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-범한들-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "송준현은 영등포 정수 당직에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-범한들-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K368-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "조준경",
-        "birthDate": "2006-08-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-범한들-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조준경은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-범한들-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K368-P-01:K368:biological",
-        "from": "FH-K368-P-01",
-        "to": "K368",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-범한들-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K368-P-02:FH-K368-P-01:biological",
-        "from": "FH-K368-P-02",
-        "to": "FH-K368-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-범한들-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K368-P-03:FH-K368-P-02:biological",
-        "from": "FH-K368-P-03",
-        "to": "FH-K368-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-범한들-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K368-M-01:K368:biological",
-        "from": "FH-K368-M-01",
-        "to": "K368",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-범한들-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K368-M-02:FH-K368-M-01:biological",
-        "from": "FH-K368-M-02",
-        "to": "FH-K368-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-범한들-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K368-M-03:FH-K368-M-02:biological",
-        "from": "FH-K368-M-03",
-        "to": "FH-K368-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-범한들-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bc94-ae08-c131",
+    "name": "금성 범씨",
+    "crest": "clan-crests/bc94-ae08-c131.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "범한들이 상인 기재를 받은 곳은 마포구 대흥역이다. 서른 살 남성으로 금성 범씨이고, 마포구 장터의 상인 우두머리다. 날마다 공덕 장터로 나가 대합실 좌판들의 자리를 정하고, 자릿세를 증표로 걷는다. 공구 한 자루 값을 소금 몇 줌으로 부르는 흥정이 끊이지 않아, 그는 구청 고시의 값을 좌판마다 붙여 둔다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "장터 상인 우두머리",
+    "품계": "등재민",
+    "생업": "장터 거래",
+    "일하는 역": "공덕역",
+    "잠자는 역": "대흥역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "범한들이 상인 기재를 받은 곳은 마포구 대흥역이다. 서른 살 남성으로 금성 범씨이고, 마포구 장터의 상인 우두머리다. 날마다 공덕 장터로 나가 대합실 좌판들의 자리를 정하고, 자릿세를 증표로 걷는다. 공구 한 자루 값을 소금 몇 줌으로 부르는 흥정이 끊이지 않아, 그는 구청 고시의 값을 좌판마다 붙여 둔다.",
+    "관직": "직함 장터 상인 우두머리. 직위 장터 상인 우두머리 · 공덕역. 품계 등재민. 일하는 역 공덕역."
+  },
+  "values": {
+    "권위": 80,
+    "개방": -70,
+    "무력": 70,
+    "물질": 5,
+    "공동": 25,
+    "원칙": 20,
+    "공개": -40,
+    "자격": -5,
+    "분산": -65,
+    "변혁": -40
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": 25,
+    "위험": -20,
+    "과시": -20,
+    "지속": -15,
+    "지향": "양성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0369",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 8,
+        "effective": 8
+      },
+      "martial": {
+        "base": 4,
+        "effective": 4
+      },
+      "stewardship": {
+        "base": 9,
+        "effective": 9
+      },
+      "intrigue": {
         "base": 6,
         "effective": 6
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 5,
+        "effective": 5
       },
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
       }
     },
-    "skills": [
-      {
-        "id": "leaking-joint-inspection",
-        "name": {
-          "ko": "누수 이음매 점검",
-          "en": "Leaking joint inspection"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "만료와 잔량을 함께 읽는다",
-          "en": "Reads expiry alongside remaining supply"
-        },
-        "description": {
-          "ko": "시험에서 누수 세 곳을 찾아 게시했고 만료 시각과 잔량을 함께 둔다. 계약 증언과 실제 점검을 구분해 기록한다.",
-          "en": "Three leaks were found and posted during testing; expiry and remaining supply stay paired. Contract testimony is kept distinct from performed inspection."
-        },
-        "behavior": {
-          "ko": "만료일을 손가락으로 세고, 구두로 보호 연장을 증언하자는 사신을 증인석에서 내려보낸다. 숫자는 믿되 빈칸 조항은 믿지 않는다.",
-          "en": "He counted expiry dates on his fingers and sent down from the witness stand any envoy who proposed testifying to a verbal protection extension. He trusted numbers but not blank clauses."
-        },
-        "stress": {
-          "ko": "공포. 자신이 서명한 증언이 집단 단수의 면죄부가 되는 것.",
-          "en": "Fear. That testimony he signed would become an indulgence for a collective cutoff."
-        },
-        "relationship": {
-          "ko": "관계. 곽민재의 급수 점검을 증인석에서 받치고, 임하준의 실종 뒤에 남은 만료 표시를 증언의 뼈대로 삼는다. 한재목의 서부 문안을 읽어 주되 날인은 미룬다.",
-          "en": "Relations. Backed Gwak Minjae's water inspections from the witness stand and made the expiry marks Im Hajun left behind after his disappearance the frame of his testimony. He read Han Jaemok's western draft aloud but put off the stamp."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 공동실무원. 직함은 양군 급수계약 만료 증인. 만료 시각과 잔량 표를 같은 책에 붙이고, 인장이 마르기 전의 사본은 증언에서 뺀다.",
-          "en": "Office. Rank: sergeant. Title: water contract expiry witness. He pasted the expiry hours and the residual-volume table in one book and struck from his testimony any copy taken before the stamps dried."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 공동실무원. 직함은 양군 급수계약 만료 증인. 만료 시각과 잔량 표를 같은 책에 붙이고, 인장이 마르기 전의 사본은 증언에서 뺀다.",
-          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: water contract expiry witness. He pasted the expiry hours and the residual-volume table in one book and struck from his testimony any copy taken before the stamps dried."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 자신이 서명한 증언이 집단 단수의 면죄부가 되는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That testimony he signed would become an indulgence for a collective cutoff."
-        },
-        "relationship": {
-          "ko": "관계. 곽민재의 급수 점검을 증인석에서 받치고, 임하준의 실종 뒤에 남은 만료 표시를 증언의 뼈대로 삼는다. 한재목의 서부 문안을 읽어 주되 날인은 미룬다.",
-          "en": "Relations. Backed Gwak Minjae's water inspections from the witness stand and made the expiry marks Im Hajun left behind after his disappearance the frame of his testimony. He read Han Jaemok's western draft aloud but put off the stamp."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "시험에서 누수 세 곳을 찾아 게시했고 만료 시각과 잔량을 함께 둔다. 계약 증언과 실제 점검을 구분해 기록한다.",
-      "en": "Three leaks were found and posted during testing; expiry and remaining supply stay paired. Contract testimony is kept distinct from performed inspection."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -526,79 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bc94-ae08-c131",
-    "name": "금성 범씨",
-    "crest": "clan-crests/bc94-ae08-c131.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 35,
-    "개방": -15,
-    "무력": 35,
-    "물질": 10,
-    "공동": 20,
-    "원칙": 0,
-    "공개": -15,
-    "자격": -20,
-    "분산": -15,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": 25,
-    "위험": -20,
-    "과시": -20,
-    "지속": -15,
-    "지향": "양성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "급수계약 만료 시각·잔량 표 대조",
-    "소속": "아관사 양군 공동실무",
-    "품계": "공동실무원",
-    "직함": "양군 급수계약 만료 증인",
-    "가치관": "권위 35 | 개방 −15 | 무력 35 | 물질 10 | 공동 20 | 원칙 0 | 공개 −15 | 자격 −20 | 분산 −15 | 변혁 −20",
-    "욕망": "갈망 40 | 독점 25 | 위험 −20 | 과시 −20 | 지속 −15 | 지향 양성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2096-08-04에 태어났다. 2126년 개막 현재 양군 급수계약 만료 증인 직무를 맡아 급수계약 만료 시각·잔량 표 대조 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 급수계약 만료 시각·잔량 표 대조 창구가 범한들의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 공동실무원. 직함은 양군 급수계약 만료 증인. 급수계약 만료 시각·잔량 표 대조 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
-    "일화": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
-    "관계": "곽민재의 급수 점검을 증인석에서 받치고, 임하준의 실종 뒤에 남은 만료 표시를 증언의 뼈대로 삼는다. 한재목의 서부 문안을 읽어 주되 날인은 미룬다.",
-    "야망": "범한들은 양군 급수계약 만료 증인 직무에서 급수계약 만료 시각·잔량 표 대조 기록을 공개 인계표와 맞물리게 하려 한다.",
-    "공포": "양군 급수계약 만료 증인 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
-    "개입": "단수 조항을 뺀 수정본을 증인석에 올리거나, 증인이 받은 급수 사례를 원장에 올릴 수 있다. 범한들의 급수계약 만료 시각·잔량 표 대조 원장을 대조해 다음 인계의 증거를 세울 수 있다."
-  },
-  "biography": "범한들은 급수계약 만료 시각·잔량 표 대조 기록을 손에 익힌 아관사 양군 공동실무 인물이다. 만료일을 손가락으로 세고, 구두로 보호 연장을 증언하자는 사신을 증인석에서 내려보낸다. 숫자는 믿되 빈칸 조항은 믿지 않는다.\n\n- 생업: 급수계약 만료 시각·잔량 표 대조\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 급수계약 만료 증인\n**생애.** 2096-08-04에 태어났다. 2126년 개막 현재 양군 급수계약 만료 증인 직무를 맡아 급수계약 만료 시각·잔량 표 대조 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 급수계약 만료 시각·잔량 표 대조 창구가 범한들의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 공동실무원. 직함은 양군 급수계약 만료 증인. 급수계약 만료 시각·잔량 표 대조 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 곽민재의 급수 점검을 증인석에서 받치고, 임하준의 실종 뒤에 남은 만료 표시를 증언의 뼈대로 삼는다. 한재목의 서부 문안을 읽어 주되 날인은 미룬다.\n\n**야망.** 범한들은 양군 급수계약 만료 증인 직무에서 급수계약 만료 시각·잔량 표 대조 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 양군 급수계약 만료 증인 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 단수 조항을 뺀 수정본을 증인석에 올리거나, 증인이 받은 급수 사례를 원장에 올릴 수 있다. 범한들의 급수계약 만료 시각·잔량 표 대조 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −15 | 무력 35 | 물질 10 | 공동 20 | 원칙 0 | 공개 −15 | 자격 −20 | 분산 −15 | 변혁 −20\n- 욕망: 갈망 40 | 독점 25 | 위험 −20 | 과시 −20 | 지속 −15 | 지향 양성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-14"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "범한들",
-        "type": "맹세",
-        "to": "곽민재",
-        "basis": "곽민재의 급수 점검을 증인석에서 받치고"
-      },
-      {
-        "from": "범한들",
-        "type": "맹세",
-        "to": "임하준",
-        "basis": "임하준의 실종 뒤에 남은 만료 표시를 증언의 바탕으로 삼는다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "흥미리",
-        "type": "계약",
-        "to": "범한들",
-        "basis": "범한들의 관문 만료 증언과 날짜를 맞춘다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

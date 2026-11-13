@@ -1,385 +1,120 @@
 {
   "id": "person-0314",
   "name": "감모",
-  "title": "의료조 당직실 거점장",
-  "position": "의료조 당직실 거점장",
+  "title": "가오리역 역장",
+  "position": "가오리역 역장 · 정부",
   "characterId": "K313",
-  "rank": "호송원",
-  "commonTier": "T5",
-  "occupation": "의료조 중증도·이송 시각 기록",
+  "rank": "역장",
+  "commonTier": "T4",
+  "occupation": "역 행정",
   "gender": "여성",
   "stage": "S2",
-  "state": "S12",
-  "stateName": "신내운수",
-  "sourceRoute": "/world/Cast-State-12#인물-감모",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0314",
   "birthDate": "2078-01-22",
   "birthday": "01-22",
   "age": 48,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-12.json#/content/193"
-  ],
-  "familyTree": {
-    "personId": "K313",
-    "nodes": [
-      {
-        "id": "K313",
-        "personId": "K313",
-        "kind": "person",
-        "name": "감모",
-        "birthDate": "2078-01-22",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K313"
-          },
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-감모-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 의료조 당직실 거점장 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-감모-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0314"
-      },
-      {
-        "id": "FH-K313-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "감승수",
-        "lineage": {
-          "surname": "감",
-          "bongwan": "창원",
-          "clan": "ac10-cc3d-c6d0"
-        },
-        "birthDate": "2048-01-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-감모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2086,
-            "summary": "감승수는 제기동 의무소에서 의료조 중증도·이송 시각 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-감모-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K313-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "감승은",
-        "lineage": {
-          "surname": "감",
-          "bongwan": "창원",
-          "clan": "ac10-cc3d-c6d0"
-        },
-        "birthDate": "2018-01-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-감모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "감승은은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-감모-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K313-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준영",
-        "birthDate": "2048-01-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-감모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2086,
-            "summary": "이준영은 제기동 의무소에서 의료조 중증도·이송 시각 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-감모-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K313-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준정",
-        "birthDate": "2018-01-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-감모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최준정은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-감모-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K313-P-01:K313:biological",
-        "from": "FH-K313-P-01",
-        "to": "K313",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-감모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K313-P-02:FH-K313-P-01:biological",
-        "from": "FH-K313-P-02",
-        "to": "FH-K313-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-감모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K313-M-01:K313:biological",
-        "from": "FH-K313-M-01",
-        "to": "K313",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-감모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K313-M-02:FH-K313-M-01:biological",
-        "from": "FH-K313-M-02",
-        "to": "FH-K313-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-감모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ac10-cc3d-c6d0",
+    "name": "창원 감씨",
+    "crest": "clan-crests/ac10-cc3d-c6d0.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "주민등록 주소란에 가오리역이 적힌 창원 감씨 감모는 그 역의 역장이고, 마흔여덟 살이다. 가오리역은 얕은 경전철 역이라 승강장이 차고, 정원을 넘긴 역에서 전입 명령을 받은 가구가 자주 이리로 온다. 그녀는 새로 온 가구에게 첫 달에는 바깥 승강장 대신 대합실 쪽 벽 옆 자리를 내주고, 그 일로 역 정원표가 맞지 않는다는 지적을 받으면 숫자를 고치지 않고 이유를 적어 낸다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "가오리역 역장",
+    "품계": "역장",
+    "생업": "역 행정",
+    "일하는 역": "가오리역",
+    "잠자는 역": "가오리역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "주민등록 주소란에 가오리역이 적힌 창원 감씨 감모는 그 역의 역장이고, 마흔여덟 살이다. 가오리역은 얕은 경전철 역이라 승강장이 차고, 정원을 넘긴 역에서 전입 명령을 받은 가구가 자주 이리로 온다. 그녀는 새로 온 가구에게 첫 달에는 바깥 승강장 대신 대합실 쪽 벽 옆 자리를 내주고, 그 일로 역 정원표가 맞지 않는다는 지적을 받으면 숫자를 고치지 않고 이유를 적어 낸다.",
+    "관직": "직함 가오리역 역장. 직위 가오리역 역장 · 정부. 품계 역장. 일하는 역 가오리역."
+  },
+  "values": {
+    "권위": 30,
+    "개방": -20,
+    "무력": 15,
+    "물질": 5,
+    "공동": 45,
+    "원칙": 25,
+    "공개": -5,
+    "자격": 25,
+    "분산": -10,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": 50,
+    "독점": -10,
+    "위험": -40,
+    "과시": 0,
+    "지속": 0,
+    "지향": "양성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0314",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "감모",
+        "type": "지휘",
+        "to": "라세영",
+        "basis": "강북구 국회의원 라세영의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K325",
+    "name": "라세영",
+    "courtId": "court:K325",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "learning": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "prowess": {
-        "base": 3,
-        "effective": 3
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "endurance": {
+      "intrigue": {
         "base": 7,
         "effective": 7
-      }
-    },
-    "skills": [
-      {
-        "id": "k313-transfer-timing-posting",
-        "name": {
-          "ko": "이송 시각 게시",
-          "en": "Transfer timing posting"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "k313-priority",
-        "name": {
-          "ko": "활력 안정 우선",
-          "en": "Vital stability first"
-        },
-        "description": {
-          "ko": "감모는 중증도와 이송 시각을 게시하고 의료조 연장을 집행한다. 연장을 약으로 대신한다는 말을 거부한다.",
-          "en": "Gammo posts severity and transfer times and implements medical duty extensions, rejecting the idea that extended duty substitutes for medicine."
-        },
-        "behavior": {
-          "ko": "중증도 표와 이송 시각을 당직실 문에 붙이고, 무기 적재 기록은 심사관 입회 없이 고치지 않는다.",
-          "en": "Office. Rank: convoy hand. Title: medical crew duty room outpost chief. He pasted the severity table and transfer hours on the duty-room door and corrected no arms-loading record without the examiner's attendance."
-        },
-        "stress": {
-          "ko": "당직실이 군수 대기실로 오인되어 호송대 전체가 무장 해제를 당하는 것.",
-          "en": "Fear. That the duty room would be mistaken for a munitions waiting room and the whole convoy squad would be disarmed."
-        },
-        "relationship": {
-          "ko": "전미리의 의료조 연장을 당직실에서 집행하고, 국용의 들것 순서와 병상을 나눈다. 장세화의 부서 날인을 당직 원장 맨 위에 둔다.",
-          "en": "Relations. Executed Jeon Miri's medical crew extension in the duty room and split the stretcher order and sickbeds with Guk Yong. Put Jang Sehwa's departmental stamp at the top of the duty ledger."
-        },
-        "effects": []
       },
-      {
-        "id": "k313-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 호송원. 직함은 의료조 당직실 거점장. 중증도 표와 이송 시각을 당직실 문에 붙이고, 무기 적재 기록은 심사관 입회 없이 고치지 않는다.",
-          "en": "Office. Rank: convoy hand. Title: medical crew duty room outpost chief. He pasted the severity table and transfer hours on the duty-room door and corrected no arms-loading record without the examiner's attendance."
-        },
-        "stress": {
-          "ko": "공포. 당직실이 군수 대기실로 오인되어 호송대 전체가 무장 해제를 당하는 것.",
-          "en": "Fear. That the duty room would be mistaken for a munitions waiting room and the whole convoy squad would be disarmed."
-        },
-        "relationship": {
-          "ko": "관계. 전미리의 의료조 연장을 당직실에서 집행하고, 국용의 들것 순서와 병상을 나눈다. 장세화의 부서 날인을 당직 원장 맨 위에 둔다.",
-          "en": "Relations. Executed Jeon Miri's medical crew extension in the duty room and split the stretcher order and sickbeds with Guk Yong. Put Jang Sehwa's departmental stamp at the top of the duty ledger."
-        },
-        "effects": []
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "감모는 중증도와 이송 시각을 게시하고 의료조 연장을 집행한다. 연장을 약으로 대신한다는 말을 거부한다.",
-      "en": "Gammo posts severity and transfer times and implements medical duty extensions, rejecting the idea that extended duty substitutes for medicine."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,79 +152,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ac10-cc3d-c6d0",
-    "name": "창원 감씨",
-    "crest": "clan-crests/ac10-cc3d-c6d0.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -15,
-    "개방": 35,
-    "무력": -20,
-    "물질": 10,
-    "공동": 40,
-    "원칙": 5,
-    "공개": 20,
-    "자격": 10,
-    "분산": 40,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 50,
-    "독점": -10,
-    "위험": -40,
-    "과시": 0,
-    "지속": 0,
-    "지향": "양성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "의료조 중증도·이송 시각 기록",
-    "소속": "신내운수",
-    "품계": "호송원",
-    "직함": "의료조 당직실 거점장",
-    "가치관": "권위 −15 | 개방 35 | 무력 −20 | 물질 10 | 공동 40 | 원칙 5 | 공개 20 | 자격 10 | 분산 40 | 변혁 −5",
-    "욕망": "갈망 50 | 독점 −10 | 위험 −40 | 과시 0 | 지속 0 | 지향 양성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2078-01-22에 태어났다. 제기동 의무소에서 자랐다. 2126년 개막에는 의료조 당직실 거점장 당직을 맡으며, 직위 인수 기록에는 가짜 약 봉인으로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 감모의 의료조 중증도·이송 시각 기록 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
-    "관직": "품계 호송원. 직함은 의료조 당직실 거점장. 중증도 표와 이송 시각을 당직실 문에 붙이고, 무기 적재 기록은 심사관 입회 없이 고치지 않는다.",
-    "일화": "북한산보국문 남하 행렬이 승강장에 쌓이자 당직실 교대 쪽지가 한 장 사라졌다.",
-    "관계": "전미리의 의료조 연장을 당직실에서 집행하고, 국용의 들것 순서와 병상을 나눈다. 장세화의 부서 날인을 당직 원장 맨 위에 둔다.",
-    "야망": "의료조 당직실을 계절 교대 결재의 한쪽 날개로 남겨 호송료 없는 응급 이송이 끊기지 않게 하려 한다.",
-    "공포": "당직실이 군수 대기실로 오인되어 호송대 전체가 무장 해제를 당하는 것.",
-    "개입": "사라진 쪽지를 찾거나, 당직 연장을 배차조 앞에서 관철할 수 있다."
-  },
-  "biography": "2078-01-22생인 감모는 들것 순서를 국적보다 앞에 두고, 배차조의 빈 슬롯 요구를 활력이 안정된 뒤에만 받는다. 당직 연장을 약으로 포장하는 말을 거부한다.\n\n- 생업: 의료조 중증도·이송 시각 기록\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 의료조 당직실 거점장\n**생애.** 2078-01-22에 태어났다. 제기동 의무소에서 자랐다. 2126년 개막에는 의료조 당직실 거점장 당직을 맡으며, 직위 인수 기록에는 가짜 약 봉인으로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 감모의 의료조 중증도·이송 시각 기록 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 호송원. 직함은 의료조 당직실 거점장. 중증도 표와 이송 시각을 당직실 문에 붙이고, 무기 적재 기록은 심사관 입회 없이 고치지 않는다.\n\n**일화.** 북한산보국문 남하 행렬이 승강장에 쌓이자 당직실 교대 쪽지가 한 장 사라졌다.\n\n**관계.** 전미리의 의료조 연장을 당직실에서 집행하고, 국용의 들것 순서와 병상을 나눈다. 장세화의 부서 날인을 당직 원장 맨 위에 둔다.\n\n**야망.** 의료조 당직실을 계절 교대 결재의 한쪽 날개로 남겨 호송료 없는 응급 이송이 끊기지 않게 하려 한다.\n\n**공포.** 당직실이 군수 대기실로 오인되어 호송대 전체가 무장 해제를 당하는 것.\n\n**개입.** 사라진 쪽지를 찾거나, 당직 연장을 배차조 앞에서 관철할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 35 | 무력 −20 | 물질 10 | 공동 40 | 원칙 5 | 공개 20 | 자격 10 | 분산 40 | 변혁 −5\n- 욕망: 갈망 50 | 독점 −10 | 위험 −40 | 과시 0 | 지속 0 | 지향 양성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-12"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "감모",
-        "type": "지휘",
-        "to": "전미리",
-        "basis": "전미리의 의료조 연장을 당직실에서 집행하고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:가오리",
+      "name": {
+        "ko": "가오리역"
       },
-      {
-        "from": "감모",
-        "type": "지휘",
-        "to": "국용",
-        "basis": "국용의 들것 순서와 병상을 나눈다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "국용",
-        "type": "지휘",
-        "to": "감모",
-        "basis": "감모의 의료조 당직실과 병상을 나눈다"
-      }
-    ]
-  }
+      "holderPersonId": "K313",
+      "directLiegePersonId": "K325",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "가오리",
+        "stationName": "가오리"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1130566000",
+          "name": "인수동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

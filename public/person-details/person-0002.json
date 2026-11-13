@@ -1,396 +1,178 @@
 {
   "id": "person-0002",
   "name": "이서담",
-  "title": "양천 구역장",
-  "position": "양천 배급구역 대표",
+  "title": "양천 기지장",
+  "position": "양천 기지장 · 자유도시들",
   "characterId": "K002",
-  "rank": "구역장",
-  "commonTier": "T3",
-  "occupation": "급수 배분 당직",
+  "rank": "기지장",
+  "commonTier": "T1",
+  "occupation": "도시 운영",
   "gender": "남성",
   "stage": "S1",
-  "state": "S01",
-  "stateName": "수문국",
-  "sourceRoute": "/world/Cast-State-01#인물-이서담",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0002",
   "birthDate": "2068-07-10",
   "birthday": "07-10",
   "age": 58,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-01.json#/content/5",
-    "lore/chronology/Century-Annals.json#/content/462",
-    "lore/chronology/Century-Annals.json#/content/595",
-    "lore/chronology/Scenario-Timeline.json#/content/11"
-  ],
-  "familyTree": {
-    "personId": "K002",
-    "nodes": [
-      {
-        "id": "K002",
-        "personId": "K002",
-        "kind": "person",
-        "name": "이서담",
-        "birthDate": "2068-07-10",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K002"
-          },
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-이서담-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 양천 배급구역 대표 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-이서담-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0002"
-      },
-      {
-        "id": "FH-K002-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이승준",
-        "lineage": {
-          "surname": "이",
-          "bongwan": "한산",
-          "clan": "c774-d55c-c0b0-674e"
-        },
-        "birthDate": "2038-07-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-이서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "이승준은 영등포 정수 당직에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-이서담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K002-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이승호",
-        "lineage": {
-          "surname": "이",
-          "bongwan": "한산",
-          "clan": "c774-d55c-c0b0-674e"
-        },
-        "birthDate": "2008-07-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-이서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이승호는 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-이서담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K002-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승준",
-        "birthDate": "2038-07-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-이서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "최승준은 영등포 정수 당직에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-이서담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K002-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정승석",
-        "birthDate": "2008-07-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-이서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정승석은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-이서담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K002-P-01:K002:biological",
-        "from": "FH-K002-P-01",
-        "to": "K002",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-이서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K002-P-02:FH-K002-P-01:biological",
-        "from": "FH-K002-P-02",
-        "to": "FH-K002-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-이서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K002-M-01:K002:biological",
-        "from": "FH-K002-M-01",
-        "to": "K002",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-이서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K002-M-02:FH-K002-M-01:biological",
-        "from": "FH-K002-M-02",
-        "to": "FH-K002-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-이서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c774-d55c-c0b0-674e",
+    "name": "한산 이씨",
+    "crest": "clan-crests/c774-d55c-c0b0-674e.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "이서담은 2040년대에 신정 차량기지를 처음 되살린 집안, 곧 양천의 하나뿐인 도장 집안 사람이고, 앞 기지장이 죽은 2108년 그 집안 손들의 대주회가 되살린 모터의 수로 이름값을 맞춰 마흔의 그를 기지장으로 세웠다. 기지의 일은 네 교대로 돌고, 그는 신정네거리에서 교대장 넷이 올리는 모터 재생 수와 바퀴 깎기 수를 날마다 한 장에 모은다. 궤도 수레가 자유도시들의 짐을 거의 다 나르니, 수레 한 대가 서면 그 값이 일곱 도시의 셈판에 같이 오른다. 기지 지붕 밑을 데우는 전기는 강서 바람지기 최다인과 맺은 장으로 5호선 케이블을 타고 들어온다. 말수가 적은 그는 집안이 처음 되살린 모터의 명판을 기지장 방 벽에 걸어 두고, 아침마다 그 앞에서 그날의 수를 읽는다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "양천 기지장",
+    "품계": "기지장",
+    "생업": "도시 운영",
+    "일하는 역": "신정네거리역",
+    "잠자는 역": "신정네거리역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "이서담은 2040년대에 신정 차량기지를 처음 되살린 집안, 곧 양천의 하나뿐인 도장 집안 사람이고, 앞 기지장이 죽은 2108년 그 집안 손들의 대주회가 되살린 모터의 수로 이름값을 맞춰 마흔의 그를 기지장으로 세웠다. 기지의 일은 네 교대로 돌고, 그는 신정네거리에서 교대장 넷이 올리는 모터 재생 수와 바퀴 깎기 수를 날마다 한 장에 모은다. 궤도 수레가 자유도시들의 짐을 거의 다 나르니, 수레 한 대가 서면 그 값이 일곱 도시의 셈판에 같이 오른다. 기지 지붕 밑을 데우는 전기는 강서 바람지기 최다인과 맺은 장으로 5호선 케이블을 타고 들어온다. 말수가 적은 그는 집안이 처음 되살린 모터의 명판을 기지장 방 벽에 걸어 두고, 아침마다 그 앞에서 그날의 수를 읽는다.",
+    "관직": "직함 양천 기지장. 직위 양천 기지장 · 자유도시들. 품계 기지장. 일하는 역 신정네거리역."
+  },
+  "values": {
+    "권위": -5,
+    "개방": 15,
+    "무력": 0,
+    "물질": 60,
+    "공동": -5,
+    "원칙": 0,
+    "공개": 5,
+    "자격": 15,
+    "분산": 10,
+    "변혁": -10
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": -15,
+    "위험": 25,
+    "과시": 30,
+    "지속": 20,
+    "지향": "이성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0002",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "이서담",
+        "type": "계약",
+        "to": "최다인",
+        "basis": "강서 바람밭의 전기를 5호선 케이블로 받아 기지를 데우는 장을 맺었다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "임바다",
+        "type": "지휘",
+        "to": "이서담",
+        "basis": "양천 기지장 이서담의 직속"
+      },
+      {
+        "from": "허은찬",
+        "type": "지휘",
+        "to": "이서담",
+        "basis": "양천 기지장 이서담의 직속"
+      },
+      {
+        "from": "채한솔",
+        "type": "지휘",
+        "to": "이서담",
+        "basis": "양천 기지장 이서담의 직속"
+      },
+      {
+        "from": "임바다",
+        "type": "맹세",
+        "to": "이서담",
+        "basis": "교대 일지를 깎지 않겠다고 기지장 앞에서 맹세했다"
+      },
+      {
+        "from": "유세진",
+        "type": "계약",
+        "to": "이서담",
+        "basis": "대가 벤 나무를 실어 나르는 수레의 바퀴와 축을 양천 기지에서 보증표로 사는 장을 맺었다"
+      },
+      {
+        "from": "최다인",
+        "type": "계약",
+        "to": "이서담",
+        "basis": "남는 전기를 5호선 케이블로 양천에 보내는 장을 맺었다"
+      },
+      {
+        "from": "오하늘",
+        "type": "계약",
+        "to": "이서담",
+        "basis": "강서의 남는 전기를 5호선 케이블로 양천 신정 기지에 보내는 장"
+      }
+    ]
+  },
+  "court": {
+    "id": "court:K002",
+    "members": [
+      {
+        "personId": "K008",
+        "name": "임바다"
+      },
+      {
+        "personId": "K018",
+        "name": "허은찬"
+      },
+      {
+        "personId": "K021",
+        "name": "채한솔"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 12,
-        "effective": 12
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 11,
         "effective": 11
       },
-      "negotiation": {
-        "base": 12,
-        "effective": 12
-      },
-      "management": {
-        "base": 13,
-        "effective": 13
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
       }
     },
     "skills": [
       {
-        "id": "k002-district-sealing",
-        "name": {
-          "ko": "배급 봉인",
-          "en": "Ration sealing"
-        },
-        "rating": 65
-      },
-      {
-        "id": "k002-water-level-reporting",
-        "name": {
-          "ko": "수위 보고",
-          "en": "Water-level reporting"
-        },
-        "rating": 60
+        "id": "fc-0002-motor-count",
+        "name": "모터 재생 셈",
+        "rating": 66
       }
     ],
-    "traits": [
-      {
-        "id": "k002-pressure-before-totals",
-        "name": {
-          "ko": "합계보다 물줄기",
-          "en": "Pressure before totals"
-        },
-        "description": {
-          "ko": "합계보다 현장 압력을 먼저 확인한다.",
-          "en": "Checks physical pressure before ledger totals."
-        },
-        "behavior": {
-          "ko": "합계보다 현장 압력을 먼저 확인한다.",
-          "en": "Checks physical pressure before ledger totals."
-        },
-        "stress": {
-          "ko": "저수조 수위가 낮아지면 군주 앞에서도 항의한다.",
-          "en": "Protests even before the monarch when reservoir levels fall."
-        },
-        "relationship": {
-          "ko": "임바다의 최저선 요구를 보증한다.",
-          "en": "Guarantees Im Bada’s minimum-water demand."
-        },
-        "effects": []
-      },
-      {
-        "id": "k002-veto-despite-debt",
-        "name": {
-          "ko": "빚보다 연서",
-          "en": "Signatures before debts"
-        },
-        "description": {
-          "ko": "연서 없는 계약에는 봉인으로 맞선다.",
-          "en": "Answers unsigned contracts by sealing allocations."
-        },
-        "behavior": {
-          "ko": "연서 없는 계약에는 봉인으로 맞선다.",
-          "en": "Answers unsigned contracts by sealing allocations."
-        },
-        "stress": {
-          "ko": "원장 누락을 덮은 빚이 드러나도 수위 보고를 늦추지 않는다.",
-          "en": "Does not delay reporting even when a concealed omission may surface."
-        },
-        "relationship": {
-          "ko": "한재목과 동맹을 유지하면서 계약안에 저항한다.",
-          "en": "Keeps the alliance with Han Jaemok while resisting his proposal."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "수위 하락을 계약 회의에 올리고 연서 없는 배분을 봉인했다. 구역 운영과 교섭이 강점이지만 과거 누락을 덮은 빚 때문에 원칙을 일관되게 지켰다고 단정할 수 없다.",
-      "en": "Reported falling water levels and sealed allocations lacking joint signatures. District administration and negotiation are strengths, but a concealed ledger omission complicates any claim of consistent principle."
-    },
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -430,20 +212,13 @@
   },
   "confirmedHoldings": [
     {
-      "id": "holding:yangcheon",
+      "id": "holding:v3:duchy:11470",
       "name": {
-        "ko": "양천구 영지",
-        "en": "Yangcheon District Holding"
+        "ko": "양천구 공작령"
       },
       "holderPersonId": "K002",
-      "directLiegePersonId": "K001",
-      "stateId": "S01",
-      "designation": {
-        "ko": "양천구 영주",
-        "en": "Lord of Yangcheon District"
-      },
-      "territorialScale": "duchy",
-      "formalTitleRank": null,
+      "directLiegePersonId": null,
+      "stateId": "free-city",
       "adminRefs": [
         {
           "id": "region:1147051000",
@@ -518,225 +293,78 @@
           "name": "신정7동"
         }
       ],
-      "geometrySource": "opening-territories.regions",
-      "parentGeography": "서울특별시",
-      "wholeSeoulControl": false,
-      "titleId": "title:duchy-gu-11470-S01",
-      "liegeRelationshipKind": "preserved-personal-service"
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11470",
+      "geometrySource": null,
+      "formalTitleRank": null
     }
   ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "subordinateHoldings": [
     {
-      "id": "title:duchy-gu-11470-S01",
-      "name": "양천구 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K002",
-      "basis": "기존 보유 권리 결속: holding:yangcheon",
-      "stateId": "S01",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "region:1147051000",
-        "region:1147052000",
-        "region:1147053000",
-        "region:1147054000",
-        "region:1147055000",
-        "region:1147056000",
-        "region:1147057000",
-        "region:1147058000",
-        "region:1147059000",
-        "region:1147060000",
-        "region:1147061000",
-        "region:1147061100",
-        "region:1147062000",
-        "region:1147063000",
-        "region:1147064000",
-        "region:1147065000",
-        "region:1147067000",
-        "region:1147068000"
+      "id": "holding:v3:section:양천구:신정",
+      "name": {
+        "ko": "신정 구간"
+      },
+      "holderPersonId": "K018",
+      "directLiegePersonId": "K002",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "신정",
+        "stationName": "신정"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1147065000",
+          "name": "신정4동"
+        },
+        {
+          "id": "region:1147062000",
+          "name": "신정1동"
+        },
+        {
+          "id": "region:1147068000",
+          "name": "신정7동"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "허은찬",
+      "holderRoute": "/people/person-0018"
+    },
+    {
+      "id": "holding:v3:section:양천구:목동",
+      "name": {
+        "ko": "목동 구간"
+      },
+      "holderPersonId": "K021",
+      "directLiegePersonId": "K002",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "목동",
+        "stationName": "목동"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1147051000",
+          "name": "목1동"
+        },
+        {
+          "id": "region:1156061000",
+          "name": "양평1동"
+        },
+        {
+          "id": "region:1147052000",
+          "name": "목2동"
+        }
+      ],
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "채한솔",
+      "holderRoute": "/people/person-0021"
     }
-  ],
-  "clan": {
-    "id": "c774-d55c-c0b0-674e",
-    "name": "한산 이씨",
-    "crest": "clan-crests/c774-d55c-c0b0-674e.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 30,
-    "개방": 0,
-    "무력": 10,
-    "물질": 45,
-    "공동": 20,
-    "원칙": 10,
-    "공개": 5,
-    "자격": -5,
-    "분산": -45,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": -15,
-    "위험": 25,
-    "과시": 30,
-    "지속": 20,
-    "지향": "이성",
-    "결합": "다자"
-  },
-  "fields": {
-    "소속": "수문국",
-    "생업": "급수 배분 당직",
-    "품계": "구역장",
-    "직함": "양천 배급구역 대표",
-    "업무 위치": "신정2동. 신정2동 배급 당직에서 이서담은 골목 저수조의 수위와 수도꼭지 압력을 대조하고 연서가 빠진 계약안의 배급표와 교량 통행세를 함께 봉인한다.",
-    "가치관": "권위 30 | 개방 0 | 무력 10 | 물질 45 | 공동 20 | 원칙 10 | 공개 5 | 자격 −5 | 분산 −45 | 변혁 −20",
-    "욕망": "갈망 15 | 독점 −15 | 위험 25 | 과시 30 | 지속 20 | 지향 이성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 양천 배급구역 대표 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 신정2동. 신정2동 배급 당직에서 이서담은 골목 저수조의 수위와 수도꼭지 압력을 대조하고 연서가 빠진 계약안의 배급표와 교량 통행세를 함께 봉인한다.",
-    "관직": "품계 구역장. 직함은 양천 배급구역 대표. 선출 군주의 계약안에 계약 회의 선거인의 연서가 없으면 배급표와 교량 통행세를 함께 봉인한다.\n\n이서담은 양천구 영주이며 한재목의 직속 봉신이다. 그의 양천구 영지는 목1동부터 목5동, 신월1동부터 신월7동, 신정1동부터 신정4동과 신정6동·신정7동의 열여덟 동이다.",
-    "일화": "한재목의 계약안이 계약 회의 선거인의 연서 없이 양천 배급구역에 내려온다. 이서담은 그날로 배급표와 교량 통행세를 함께 봉인하고, 장필규의 배급 원장 누락을 덮어 준 빚이 도로 불려 나올 줄 알면서도 골목 저수조 수위를 계약 회의에 올린다.",
-    "관계": "한재목과는 계약 회의의 동맹이자 선거인 경쟁이고, 장필규에게는 배급 원장 누락을 덮어준 빚이 있으며, 임바다의 시민 급수권 맹세를 보증한다.",
-    "야망": "배급구역 대표의 거부권을 물 계약에 명문화해 선출 군주의 단독 단수를 막는다.",
-    "공포": "한 구역의 관로 파손이 집단 단수 명분이 되어 양천 전체가 서부 약소국과의 거래 카드가 되는 것.",
-    "개입": "양천 저수조 실측표를 가져와 그의 거부권을 뒷받침하거나, 누락 배급을 폭로해 대표 연서를 흔들 수 있다."
-  },
-  "biography": "말수는 적지만 골목 저수조 수위가 떨어지면 선출 군주 앞에서도 목소리를 높인다. 합계 장부보다 수도꼭지에서 나오는 압력을 먼저 믿는다.\n\n- 소속: 수문국\n- 생업: 급수 배분 당직\n- 품계: 구역장\n- 직함: 양천 배급구역 대표\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 양천 배급구역 대표 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 신정2동. 신정2동 배급 당직에서 이서담은 골목 저수조의 수위와 수도꼭지 압력을 대조하고 연서가 빠진 계약안의 배급표와 교량 통행세를 함께 봉인한다.\n\n**관직.** 품계 구역장. 직함은 양천 배급구역 대표. 선출 군주의 계약안에 계약 회의 선거인의 연서가 없으면 배급표와 교량 통행세를 함께 봉인한다.\n\n이서담은 양천구 영주이며 한재목의 직속 봉신이다. 그의 양천구 영지는 목1동부터 목5동, 신월1동부터 신월7동, 신정1동부터 신정4동과 신정6동·신정7동의 열여덟 동이다.\n\n**일화.** 한재목의 계약안이 계약 회의 선거인의 연서 없이 양천 배급구역에 내려온다. 이서담은 그날로 배급표와 교량 통행세를 함께 봉인하고, 장필규의 배급 원장 누락을 덮어 준 빚이 도로 불려 나올 줄 알면서도 골목 저수조 수위를 계약 회의에 올린다.\n\n**관계.** 한재목과는 계약 회의의 동맹이자 선거인 경쟁이고, 장필규에게는 배급 원장 누락을 덮어준 빚이 있으며, 임바다의 시민 급수권 맹세를 보증한다.\n\n**야망.** 배급구역 대표의 거부권을 물 계약에 명문화해 선출 군주의 단독 단수를 막는다.\n\n**공포.** 한 구역의 관로 파손이 집단 단수 명분이 되어 양천 전체가 서부 약소국과의 거래 카드가 되는 것.\n\n**개입.** 양천 저수조 실측표를 가져와 그의 거부권을 뒷받침하거나, 누락 배급을 폭로해 대표 연서를 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 0 | 무력 10 | 물질 45 | 공동 20 | 원칙 10 | 공개 5 | 자격 −5 | 분산 −45 | 변혁 −20\n- 욕망: 갈망 15 | 독점 −15 | 위험 25 | 과시 30 | 지속 20 | 지향 이성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-01"
-  ],
-  "directLiege": {
-    "personId": "K001",
-    "name": "한재목",
-    "relationKind": "direct-liege",
-    "ownerTerm": "직속 주군",
-    "effectiveYear": 2126
-  },
-  "court": {
-    "id": "court:K002",
-    "members": [
-      {
-        "personId": "K568",
-        "name": "백산석"
-      },
-      {
-        "personId": "K616",
-        "name": "성달현"
-      },
-      {
-        "personId": "K712",
-        "name": "한북우"
-      },
-      {
-        "personId": "K952",
-        "name": "문숲민"
-      },
-      {
-        "personId": "K1001",
-        "name": "곽가현"
-      },
-      {
-        "personId": "K424",
-        "name": "이민석"
-      },
-      {
-        "personId": "K520",
-        "name": "송재현"
-      },
-      {
-        "personId": "K760",
-        "name": "고늘진"
-      },
-      {
-        "personId": "K472",
-        "name": "임건우"
-      }
-    ]
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "이서담",
-        "type": "지휘",
-        "to": "한재목",
-        "basis": "2119년 양천 구역장 임명"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "장필규",
-        "type": "빚",
-        "to": "이서담",
-        "basis": "배급 원장 누락을 덮어준 빚"
-      },
-      {
-        "from": "구태윤",
-        "type": "지휘",
-        "to": "이서담",
-        "basis": "이서담의 배급구역 거부권을 현장에서 집행하며"
-      },
-      {
-        "from": "백산석",
-        "type": "지휘",
-        "to": "이서담",
-        "basis": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
-      },
-      {
-        "from": "성달현",
-        "type": "지휘",
-        "to": "이서담",
-        "basis": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
-      },
-      {
-        "from": "한북우",
-        "type": "지휘",
-        "to": "이서담",
-        "basis": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
-      },
-      {
-        "from": "문숲민",
-        "type": "지휘",
-        "to": "이서담",
-        "basis": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
-      },
-      {
-        "from": "곽가현",
-        "type": "지휘",
-        "to": "이서담",
-        "basis": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
-      },
-      {
-        "from": "이민석",
-        "type": "지휘",
-        "to": "이서담",
-        "basis": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
-      },
-      {
-        "from": "송재현",
-        "type": "지휘",
-        "to": "이서담",
-        "basis": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
-      },
-      {
-        "from": "고늘진",
-        "type": "지휘",
-        "to": "이서담",
-        "basis": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
-      },
-      {
-        "from": "임건우",
-        "type": "지휘",
-        "to": "이서담",
-        "basis": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
-      }
-    ]
-  }
+  ]
 }

@@ -1,395 +1,106 @@
 {
   "id": "person-0699",
   "name": "구서결",
-  "title": "부품 물류상",
-  "position": "부품 물류상",
+  "title": "돌봄이",
+  "position": "돌봄이 · 고속터미널역",
   "characterId": "K699",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "부품 출고 검사",
+  "rank": "미세례자",
+  "commonTier": "T5",
+  "occupation": "세례자 돌봄",
   "gender": "여성",
   "stage": "S4",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-구서결",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0699",
   "birthDate": "2083-05-14",
   "birthday": "05-14",
   "age": 43,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/489",
-    "lore/characters/Cast-State-04.json#/content/491",
-    "lore/characters/Cast-State-04.json#/content/492"
-  ],
-  "familyTree": {
-    "personId": "K699",
-    "nodes": [
-      {
-        "id": "K699",
-        "personId": "K699",
-        "kind": "person",
-        "name": "구서결",
-        "birthDate": "2083-05-14",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K699"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-구서결-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-구서결-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0699"
-      },
-      {
-        "id": "FH-K699-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "구승섭",
-        "lineage": {
-          "surname": "구",
-          "bongwan": "능성",
-          "clan": "ad6c-b2a5-c131-agreed-acb0-second"
-        },
-        "birthDate": "2053-05-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-구서결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2091,
-            "summary": "구승섭은 신정 차량기지에서 부품 출고 검사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-구서결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K699-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "구승성",
-        "lineage": {
-          "surname": "구",
-          "bongwan": "능성",
-          "clan": "ad6c-b2a5-c131-agreed-acb0-second"
-        },
-        "birthDate": "2023-05-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-구서결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "구승성은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-구서결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K699-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정재섭",
-        "birthDate": "2053-05-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-구서결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2091,
-            "summary": "정재섭은 신정 차량기지에서 부품 출고 검사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-구서결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K699-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤재혁",
-        "birthDate": "2023-05-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-구서결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤재혁은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-구서결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K699-P-01:K699:biological",
-        "from": "FH-K699-P-01",
-        "to": "K699",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-구서결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K699-P-02:FH-K699-P-01:biological",
-        "from": "FH-K699-P-02",
-        "to": "FH-K699-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-구서결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K699-M-01:K699:biological",
-        "from": "FH-K699-M-01",
-        "to": "K699",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-구서결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K699-M-02:FH-K699-M-01:biological",
-        "from": "FH-K699-M-02",
-        "to": "FH-K699-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-구서결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ad6c-b2a5-c131",
+    "name": "능성 구씨",
+    "crest": "clan-crests/ad6c-b2a5-c131.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "고속터미널 본역에서 갓 세례를 받아 앓는 사람들은 깊은 칸 잠자리로 옮겨지고, 마흔세 살 구서결이 그들의 사흘을 맡는다. 능성 구씨 집안 출신으로 자기는 세례를 받지 않았지만, 그는 부품 바꿈터로 들어온 자유도시의 깎은 부품을 단 사람이 열이 오래 가면 그것부터 정비공에게 알린다. 밖에서 단 부위를 숨기려는 사람에게도 그는 캐묻지 않고 토시를 감아 준다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "돌봄이",
+    "품계": "미세례자",
+    "생업": "세례자 돌봄",
+    "일하는 역": "고속터미널역",
+    "잠자는 역": "고속터미널역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 0
+  },
+  "sections": {
+    "생애": "고속터미널 본역에서 갓 세례를 받아 앓는 사람들은 깊은 칸 잠자리로 옮겨지고, 마흔세 살 구서결이 그들의 사흘을 맡는다. 능성 구씨 집안 출신으로 자기는 세례를 받지 않았지만, 그는 부품 바꿈터로 들어온 자유도시의 깎은 부품을 단 사람이 열이 오래 가면 그것부터 정비공에게 알린다. 밖에서 단 부위를 숨기려는 사람에게도 그는 캐묻지 않고 토시를 감아 준다.",
+    "관직": "직함 돌봄이. 직위 돌봄이 · 고속터미널역. 품계 미세례자. 일하는 역 고속터미널역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": 0,
+    "무력": -15,
+    "물질": 0,
+    "공동": 45,
+    "원칙": -15,
+    "공개": -70,
+    "자격": 0,
+    "분산": -20,
+    "변혁": 50
+  },
+  "desire": {
+    "갈망": 35,
+    "독점": 10,
+    "위험": -25,
+    "과시": 30,
+    "지속": 20,
+    "지향": "무성향",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0699",
+    "role": "single",
+    "personFaith": "unbaptised",
+    "houseFaith": "unbaptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
       },
-      "strategy": {
-        "base": 5,
-        "effective": 5
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "negotiation": {
-        "base": 4,
-        "effective": 4
+      "stewardship": {
+        "base": 6,
+        "effective": 6
       },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 9,
-        "effective": 9
-      },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
+      "intrigue": {
         "base": 7,
         "effective": 7
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
       }
     },
-    "skills": [
-      {
-        "id": "parts",
-        "name": {
-          "ko": "불량 부품 출고 검사",
-          "en": "Defective-parts dispatch inspection"
-        },
-        "rating": 50
-      },
-      {
-        "id": "wheel",
-        "name": {
-          "ko": "차륜 결함 점검",
-          "en": "Wheel-defect inspection"
-        },
-        "rating": 40
-      }
-    ],
-    "traits": [
-      {
-        "id": "return-defects-before-shipment",
-        "name": {
-          "ko": "출고 직전 불량 반송",
-          "en": "Return Defects Before Shipment"
-        },
-        "description": {
-          "ko": "구서결은 출고 직전이라도 불량 부품을 그대로 보내지 않는 성향을 보인다.",
-          "en": "Gu Seogyeol shows a reluctance to send defective parts onward even immediately before shipment."
-        },
-        "behavior": {
-          "ko": "불량 부품 상자를 출고 직전에 되돌려 보냈다.",
-          "en": "He returned a box of defective parts just before shipment."
-        },
-        "stress": {
-          "ko": "당직 공백과 통행 종속을 우려하더라도 확인된 불량을 출고시키는 데 신중할 수 있다.",
-          "en": "Even when concerned about duty gaps and dependent passage, he may hesitate to release confirmed defective parts."
-        },
-        "relationship": {
-          "ko": "선배 당직에게는 반송한 상자와 불량이라는 판단 근거를 함께 전달하려 할 수 있다.",
-          "en": "He may pass along both the returned box and the grounds for judging it defective to the senior duty holder."
-        },
-        "effects": []
-      },
-      {
-        "id": "preserve-handover-grounds",
-        "name": {
-          "ko": "인계 근거 보존",
-          "en": "Preserve Handover Grounds"
-        },
-        "description": {
-          "ko": "구서결은 출고 판단을 기록과 연결해 다음 당직에 근거를 남기는 쪽을 중시한다.",
-          "en": "Gu Seogyeol values connecting shipment decisions to records that leave grounds for the next duty holder."
-        },
-        "behavior": {
-          "ko": "불량 상자를 반송하고 자기 직위의 열쇠와 기록을 넘기는 범위를 지킨다.",
-          "en": "He returns the defective box and keeps handover within his post's keys and records."
-        },
-        "stress": {
-          "ko": "당직이 비어 통행이 강국의 볼모가 될까 우려되면 반송 이유와 인계 기록의 연결을 중시할 수 있다.",
-          "en": "If vacant duty could make passage hostage to a powerful state, he may emphasize linking the return reason to handover records."
-        },
-        "relationship": {
-          "ko": "선배 당직과는 불량 반송의 이유를 확인할 수 있는 기록을 공유하려 할 수 있다.",
-          "en": "He may share records that allow the senior duty holder to verify the reason for returning the defective parts."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "불량 부품 상자를 출고 직전에 돌려보냈다. 실물 점검과 결함 보고 생애가 근거이며 생산 설계는 확인되지 않는다.",
-      "en": "He returned defective parts just before dispatch. Physical checks and defect reporting are supported, not production design."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -427,83 +138,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-43760-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K699",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:kingdom-s04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-43760-S04",
-          "directLiegePersonId": "K423"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ad6c-b2a5-c131",
-    "name": "능성 구씨",
-    "crest": "clan-crests/ad6c-b2a5-c131.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -5,
-    "개방": 15,
-    "무력": -25,
-    "물질": 50,
-    "공동": 25,
-    "원칙": -5,
-    "공개": -25,
-    "자격": 35,
-    "분산": 10,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 35,
-    "독점": 10,
-    "위험": -25,
-    "과시": 30,
-    "지속": 20,
-    "지향": "무성향",
-    "결합": "비독점"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "부품 출고 검사",
-    "품계": "교사",
-    "직함": "부품 물류상",
-    "가치관": "권위 −5 | 개방 15 | 무력 −25 | 물질 50 | 공동 25 | 원칙 −5 | 공개 −25 | 자격 35 | 분산 10 | 변혁 5",
-    "욕망": "갈망 35 | 독점 10 | 위험 −25 | 과시 30 | 지속 20 | 지향 무성향 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2126년 세대. 구서결은 신정 차량기지에서 자랐다. 구서결은 탈선 직전 결함 보고로 부품 물류상 자리를 맡았다.\n- 구서결의 부품 물류상 업무는 성수2가1동과 연결된다.",
-    "관직": "구서결은 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.",
-    "일화": "2125년 구서결은 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.",
-    "관계": "구서결은 같은 생활권 선배 당직자와 인수인계로 묶인다.",
-    "야망": "구서결은 부품 물류상 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.",
-    "공포": "구서결은 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.",
-    "개입": "구서결은 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "구서결은 당직을 끊지 않는 쪽을 먼저 고른다. 구서결은 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 부품 출고 검사\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 구서결은 신정 차량기지에서 자랐다. 구서결은 탈선 직전 결함 보고로 부품 물류상 자리를 맡았다.\n- 구서결의 부품 물류상 업무는 성수2가1동과 연결된다.\n\n**관직.** 구서결은 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 구서결은 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 구서결은 같은 생활권 선배 당직자와 인수인계로 묶인다.\n\n**야망.** 구서결은 부품 물류상 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.\n\n**공포.** 구서결은 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.\n\n**개입.** 구서결은 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 15 | 무력 −25 | 물질 50 | 공동 25 | 원칙 −5 | 공개 −25 | 자격 35 | 분산 10 | 변혁 5\n- 욕망: 갈망 35 | 독점 10 | 위험 −25 | 과시 30 | 지속 20 | 지향 무성향 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "구서결",
-        "type": "계약",
-        "to": "박세린",
-        "basis": "구서결은 출고 전에 가려낸 불량 펌프 부품을 박세린에게 돌려보낸다. 박세린은 별도 창고의 부품과 원로 날인을 확인해 불량 상자가 정상 출고품과 섞인 곳을 찾는다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

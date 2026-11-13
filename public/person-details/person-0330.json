@@ -1,385 +1,120 @@
 {
   "id": "person-0330",
   "name": "동늘솔",
-  "title": "약재 운송 물류상",
-  "position": "약재 운송 물류상",
+  "title": "종로구 구청장",
+  "position": "종로구 구청장 · 종로3가역",
   "characterId": "K329",
-  "rank": "수련의",
-  "commonTier": "T3",
-  "occupation": "약재 입고 중량·출고 송장 확인",
+  "rank": "구청장",
+  "commonTier": "T2",
+  "occupation": "구 행정",
   "gender": "여성",
   "stage": "S2",
-  "state": "S13",
-  "stateName": "흰십자단",
-  "sourceRoute": "/world/Cast-State-13#인물-동늘솔",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0330",
   "birthDate": "2075-03-13",
   "birthday": "03-13",
   "age": 51,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-13.json#/content/116"
-  ],
-  "familyTree": {
-    "personId": "K329",
-    "nodes": [
-      {
-        "id": "K329",
-        "personId": "K329",
-        "kind": "person",
-        "name": "동늘솔",
-        "birthDate": "2075-03-13",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K329"
-          },
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동늘솔-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 약재 운송 수련의 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-동늘솔-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0330"
-      },
-      {
-        "id": "FH-K329-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "동승석",
-        "lineage": {
-          "surname": "동",
-          "bongwan": "광천",
-          "clan": "b3d9-ad11-cc9c-agreed-c194-second"
-        },
-        "birthDate": "2045-03-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동늘솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2083,
-            "summary": "동승석은 제기동 의무소에서 약재 입고 중량·출고 송장 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-동늘솔-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K329-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "동승준",
-        "lineage": {
-          "surname": "동",
-          "bongwan": "광천",
-          "clan": "b3d9-ad11-cc9c-agreed-c194-second"
-        },
-        "birthDate": "2015-03-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동늘솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "동승준은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-동늘솔-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K329-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한준민",
-        "birthDate": "2045-03-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동늘솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2083,
-            "summary": "한준민은 제기동 의무소에서 약재 입고 중량·출고 송장 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-동늘솔-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K329-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강준원",
-        "birthDate": "2015-03-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동늘솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강준원은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-동늘솔-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K329-P-01:K329:biological",
-        "from": "FH-K329-P-01",
-        "to": "K329",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동늘솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K329-P-02:FH-K329-P-01:biological",
-        "from": "FH-K329-P-02",
-        "to": "FH-K329-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동늘솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K329-M-01:K329:biological",
-        "from": "FH-K329-M-01",
-        "to": "K329",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동늘솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K329-M-02:FH-K329-M-01:biological",
-        "from": "FH-K329-M-02",
-        "to": "FH-K329-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동늘솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b3d9-ad11-cc9c",
+    "name": "광천 동씨",
+    "crest": "clan-crests/b3d9-ad11-cc9c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "장부상 동늘솔은 종로구 구청장이고 쉰한 살이며, 종로3가역의 구청 창구에서 일한다. 종로3가역 대합실의 증표 중개와 대서 장터는 그녀가 쓴 구 고시로 자릿세를 내지만, 그 고시는 윤초아 의원이 결재해야 벽에 붙는다. 민원 심리에 장터 대서꾼이 쓴 서류가 올라오면 그녀는 세대주가 직접 와서 도장을 찍기 전에는 심리를 열지 않고, 그 일로 장터 사람들은 그녀의 창구를 가장 느린 창구라 부른다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "종로구 구청장",
+    "품계": "구청장",
+    "생업": "구 행정",
+    "일하는 역": "종로3가역",
+    "잠자는 역": "종로3가역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "장부상 동늘솔은 종로구 구청장이고 쉰한 살이며, 종로3가역의 구청 창구에서 일한다. 종로3가역 대합실의 증표 중개와 대서 장터는 그녀가 쓴 구 고시로 자릿세를 내지만, 그 고시는 윤초아 의원이 결재해야 벽에 붙는다. 민원 심리에 장터 대서꾼이 쓴 서류가 올라오면 그녀는 세대주가 직접 와서 도장을 찍기 전에는 심리를 열지 않고, 그 일로 장터 사람들은 그녀의 창구를 가장 느린 창구라 부른다.",
+    "관직": "직함 종로구 구청장. 직위 종로구 구청장 · 종로3가역. 품계 구청장. 일하는 역 종로3가역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": -20,
+    "무력": -10,
+    "물질": 0,
+    "공동": 20,
+    "원칙": 60,
+    "공개": 5,
+    "자격": 35,
+    "분산": -35,
+    "변혁": -30
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": 10,
+    "위험": 10,
+    "과시": -10,
+    "지속": 40,
+    "지향": "유동",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0330",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "동늘솔",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 10,
+        "effective": 10
+      },
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 10,
-        "effective": 10
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "shipment-weight-reconciliation",
-        "name": {
-          "ko": "운송 중량 대조",
-          "en": "Shipment weight reconciliation"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "구두 운임을 인정하지 않는다",
-          "en": "No verbal freight rates"
-        },
-        "description": {
-          "ko": "두 증인 앞에서 입고 중량을 확인하고 날인 없는 송장을 싣지 않는다. 무게 공백의 원인 규명은 아직 없다.",
-          "en": "Receiving weight is checked before two witnesses and unsealed invoices are not loaded. The cause of missing weights is not established."
-        },
-        "behavior": {
-          "ko": "상자 무게와 건조 일자를 같은 저울에 올리고, 선매 영수증만 들고 온 사신을 손님으로 들이지 않는다. 흥정은 짧게 끝내고 구두 운임을 인정하지 않는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.",
-          "en": "He put box weights and drying dates on the same scales and did not admit as a guest any envoy who arrived with pre-buying receipts alone. He cut bargains short and honored no verbal freight."
-        },
-        "stress": {
-          "ko": "공포. 군수 문장이 해열 생약 송장에 섞여 시장 바닥이 한 계절에 드러나는 것.",
-          "en": "Fear. That a munitions clause would mix into febrifuge invoices and lay the market floor bare for a season."
-        },
-        "relationship": {
-          "ko": "관계. 심달호와 운송 계약을 맺고, 동주하의 시장 저울에 무게를 맞춘다. 은태호의 가락 식량과 약재 교환 비율을 송장 말미에 적는다.",
-          "en": "Relations. Held a transport contract with Sim Dalho and matched weights on Dong Juha's market scales. Wrote the exchange ratio between Eun Taeho's Garak food and herbs into the invoice tail."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 수련의. 직함은 약재 운송 수련의. 입고 중량을 두 증인이 보고, 대량 출고 송장은 담당 전문의와 단장의 진료 배정 날인이 있기 전에는 싣지 않는다.",
-          "en": "Office. Rank: member. Title: herb transport logistics merchant. Two witnesses reported intake weights, and he loaded no bulk pre-buying invoice before the stamps of Sim Dalho and Jeon Sol."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 수련의. 직함은 약재 운송 수련의. 입고 중량을 두 증인이 보고, 대량 출고 송장은 담당 전문의와 단장의 진료 배정 날인이 있기 전에는 싣지 않는다.",
-          "en": "Recorded duty and limits: Office. Rank: member. Title: herb transport logistics merchant. Two witnesses reported intake weights, and he loaded no bulk pre-buying invoice before the stamps of Sim Dalho and Jeon Sol."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 군수 문장이 해열 생약 송장에 섞여 시장 바닥이 한 계절에 드러나는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That a munitions clause would mix into febrifuge invoices and lay the market floor bare for a season."
-        },
-        "relationship": {
-          "ko": "관계. 심달호와 운송 계약을 맺고, 동주하의 시장 저울에 무게를 맞춘다. 은태호의 가락 식량과 약재 교환 비율을 송장 말미에 적는다.",
-          "en": "Relations. Held a transport contract with Sim Dalho and matched weights on Dong Juha's market scales. Wrote the exchange ratio between Eun Taeho's Garak food and herbs into the invoice tail."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "두 증인 앞에서 입고 중량을 확인하고 날인 없는 송장을 싣지 않는다. 무게 공백의 원인 규명은 아직 없다.",
-      "en": "Receiving weight is checked before two witnesses and unsealed invoices are not loaded. The cause of missing weights is not established."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,79 +152,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b3d9-ad11-cc9c",
-    "name": "광천 동씨",
-    "crest": "clan-crests/b3d9-ad11-cc9c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -25,
-    "개방": 35,
-    "무력": -45,
-    "물질": 5,
-    "공동": 15,
-    "원칙": 40,
-    "공개": 30,
-    "자격": 20,
-    "분산": 15,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": 10,
-    "위험": 10,
-    "과시": -10,
-    "지속": 40,
-    "지향": "유동",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "약재 입고 중량·출고 송장 확인",
-    "소속": "흰십자단",
-    "품계": "수련의",
-    "직함": "약재 운송 물류상",
-    "가치관": "권위 −25 | 개방 35 | 무력 −45 | 물질 5 | 공동 15 | 원칙 40 | 공개 30 | 자격 20 | 분산 15 | 변혁 −10",
-    "욕망": "갈망 10 | 독점 10 | 위험 10 | 과시 −10 | 지속 40 | 지향 유동 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2075-03-13에 태어났다. 2126년 개막 현재 약재 운송 물류상 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 입고 중량·출고 송장 확인 창구가 동늘솔의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 수련의. 직함은 약재 운송 수련의. 입고 중량을 두 증인이 보고, 대량 출고 송장은 담당 전문의와 단장의 진료 배정 날인이 있기 전에는 싣지 않는다.",
-    "일화": "선매 장부가 사라진 날, 같은 시각의 운송 송장에 무게 공백이 세 칸 있었다.",
-    "관계": "심달호와 운송 계약을 맺고, 동주하의 시장 저울에 무게를 맞춘다. 은태호의 가락 식량과 약재 교환 비율을 송장 말미에 적는다.",
-    "야망": "제기동·청량리 약재 운송을 공개 시세와 중증도 배정 무게로만 열어 비공개 독점 입찰이 마차를 사지 못하게 하려 한다.",
-    "공포": "군수 문장이 해열 생약 송장에 섞여 시장 바닥이 한 계절에 드러나는 일을 두려워한다.",
-    "개입": "공백 송장을 공개하거나, 비공개 선매 대리인의 마차를 저울 앞에서 세울 수 있다."
-  },
-  "biography": "상자 무게와 건조 일자를 같은 저울에 올리고, 선매 영수증만 들고 온 사신을 손님으로 들이지 않는다. 흥정은 짧게 끝내고 구두 운임을 인정하지 않는다.\n\n- 생업: 약재 입고 중량·출고 송장 확인\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재 운송 물류상\n**생애.** 2075-03-13에 태어났다. 2126년 개막 현재 약재 운송 물류상 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 입고 중량·출고 송장 확인 창구가 동늘솔의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 수련의. 직함은 약재 운송 수련의. 입고 중량을 두 증인이 보고, 대량 출고 송장은 담당 전문의와 단장의 진료 배정 날인이 있기 전에는 싣지 않는다.\n\n**일화.** 선매 장부가 사라진 날, 같은 시각의 운송 송장에 무게 공백이 세 칸 있었다.\n\n**관계.** 심달호와 운송 계약을 맺고, 동주하의 시장 저울에 무게를 맞춘다. 은태호의 가락 식량과 약재 교환 비율을 송장 말미에 적는다.\n\n**야망.** 제기동·청량리 약재 운송을 공개 시세와 중증도 배정 무게로만 열어 비공개 독점 입찰이 마차를 사지 못하게 하려 한다.\n\n**공포.** 군수 문장이 해열 생약 송장에 섞여 시장 바닥이 한 계절에 드러나는 일을 두려워한다.\n\n**개입.** 공백 송장을 공개하거나, 비공개 선매 대리인의 마차를 저울 앞에서 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 35 | 무력 −45 | 물질 5 | 공동 15 | 원칙 40 | 공개 30 | 자격 20 | 분산 15 | 변혁 −10\n- 욕망: 갈망 10 | 독점 10 | 위험 10 | 과시 −10 | 지속 40 | 지향 유동 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-13"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "동늘솔",
-        "type": "계약",
-        "to": "심달호",
-        "basis": "심달호와 운송 계약을 맺고"
-      },
-      {
-        "from": "동늘솔",
-        "type": "계약",
-        "to": "동주하",
-        "basis": "동주하의 시장 저울에 무게를 맞춘다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "동주하",
-        "type": "지휘",
-        "to": "동늘솔",
-        "basis": "동늘솔의 운송 무게를 같은 눈금에 맞춘다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

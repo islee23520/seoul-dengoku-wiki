@@ -1,390 +1,120 @@
 {
   "id": "person-0390",
   "name": "방석담",
-  "title": "동남 호송 기지 비상발전 운전장",
-  "position": "명동역 제대 설비 수사",
+  "title": "펌프 정비공",
+  "position": "펌프 정비공 · 고려대역",
   "characterId": "K389",
-  "rank": "수사",
-  "commonTier": "T3",
-  "occupation": "제대 설비 점검·선거 보좌",
+  "rank": "등재민",
+  "commonTier": "T5",
+  "occupation": "펌프 정비",
   "gender": "여성",
   "stage": "S2",
-  "state": "S15",
-  "stateName": "명동대교구",
-  "sourceRoute": "/world/Cast-State-15#인물-방석담",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0390",
   "birthDate": "2064-08-06",
   "birthday": "08-06",
   "age": 62,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-15.json#/content/49",
-    "lore/characters/Cast-State-15.json#/content/50",
-    "lore/characters/Cast-State-15.json#/content/51",
-    "lore/characters/Cast-State-15.json#/content/54",
-    "lore/characters/Cast-State-15.json#/content/55",
-    "lore/characters/Cast-State-15.json#/content/56"
-  ],
-  "familyTree": {
-    "personId": "K389",
-    "nodes": [
-      {
-        "id": "K389",
-        "personId": "K389",
-        "kind": "person",
-        "name": "방석담",
-        "birthDate": "2064-08-06",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K389"
-          },
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방석담-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 명동역 교구청에서 명동역 제대 설비 수사 일을 맡았다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-방석담-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0390"
-      },
-      {
-        "id": "FH-K389-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "방승수",
-        "lineage": {
-          "surname": "방",
-          "bongwan": "남양",
-          "clan": "bc29-b0a8-c591-623f"
-        },
-        "birthDate": "2034-08-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방석담-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "방승수는 신정 차량기지에서 제대 설비 점검·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-방석담-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K389-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "방승은",
-        "lineage": {
-          "surname": "방",
-          "bongwan": "남양",
-          "clan": "bc29-b0a8-c591-623f"
-        },
-        "birthDate": "2004-08-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방석담-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "방승은은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-방석담-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K389-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한준희",
-        "birthDate": "2034-08-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방석담-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "한준희는 신정 차량기지에서 제대 설비 점검·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-방석담-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K389-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강준정",
-        "birthDate": "2004-08-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방석담-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강준정은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-방석담-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K389-P-01:K389:biological",
-        "from": "FH-K389-P-01",
-        "to": "K389",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방석담-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K389-P-02:FH-K389-P-01:biological",
-        "from": "FH-K389-P-02",
-        "to": "FH-K389-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방석담-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K389-M-01:K389:biological",
-        "from": "FH-K389-M-01",
-        "to": "K389",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방석담-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K389-M-02:FH-K389-M-01:biological",
-        "from": "FH-K389-M-02",
-        "to": "FH-K389-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-방석담-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bc29-b0a8-c591-623f",
+    "name": "남양 방씨",
+    "crest": "clan-crests/bc29-b0a8-c591-623f.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "성북구 서라온 의원 집안의 세대 칸에 이름이 올라 있는 예순두 살의 방석담은 남양 방씨 사람이다. 그가 맡은 일은 고려대역 깊은 층에서 의원 집안 창고와 잠자리로 물을 올리는 펌프다. 펌프 소리가 바뀌면 집안의 누구보다 먼저 알아채고, 달마다 정한 날에 마흔여섯 살의 의원에게 펌프 일지를 펴 보인다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "펌프 정비공",
+    "품계": "등재민",
+    "생업": "펌프 정비",
+    "일하는 역": "고려대역",
+    "잠자는 역": "고려대역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "성북구 서라온 의원 집안의 세대 칸에 이름이 올라 있는 예순두 살의 방석담은 남양 방씨 사람이다. 그가 맡은 일은 고려대역 깊은 층에서 의원 집안 창고와 잠자리로 물을 올리는 펌프다. 펌프 소리가 바뀌면 집안의 누구보다 먼저 알아채고, 달마다 정한 날에 마흔여섯 살의 의원에게 펌프 일지를 펴 보인다.",
+    "관직": "직함 펌프 정비공. 직위 펌프 정비공 · 고려대역. 품계 등재민. 일하는 역 고려대역."
+  },
+  "values": {
+    "권위": 50,
+    "개방": -25,
+    "무력": 35,
+    "물질": 40,
+    "공동": -10,
+    "원칙": -20,
+    "공개": -50,
+    "자격": 10,
+    "분산": -40,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": -5,
+    "독점": 0,
+    "위험": -30,
+    "과시": 10,
+    "지속": 20,
+    "지향": "유동",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0390",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "방석담",
+        "type": "지휘",
+        "to": "서라온",
+        "basis": "성북구 국회의원 서라온의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K149",
+    "name": "서라온",
+    "courtId": "court:K149",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
+      "diplomacy": {
+        "base": 5,
+        "effective": 5
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
+      "stewardship": {
         "base": 10,
         "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 10,
-        "effective": 10
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
         "base": 7,
         "effective": 7
-      }
-    },
-    "skills": [
-      {
-        "id": "power-allocation",
-        "name": {
-          "ko": "전력 배분",
-          "en": "Power allocation"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "은폐 배전 거부",
-          "en": "Rejects concealed power allocation"
-        },
-        "description": {
-          "ko": "정전 때 시민 배급 칸에 발전을 배정하고 군량 조명을 껐다. 출력을 조정해 왔으나 은폐 배전은 거부했다.",
-          "en": "Assigns emergency power to civilian rations and shuts off military lighting during a blackout. Coordinates output but refuses concealed distribution."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 은폐 배전 거부을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "정전과 봉쇄가 겹치면 공급 우선순위를 좁힐 수 있다.",
-          "en": "May narrow supply priorities when blockade and blackout coincide."
-        },
-        "relationship": {
-          "ko": "판효담의 기지와 천솔빛의 광장 사이에서 출력을 나눈다.",
-          "en": "Divides output between Pan Hyodam’s base and Cheon Solbit’s square."
-        },
-        "effects": []
       },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "사제단 소집 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "사제단 소집 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "판효담의 기지와 천솔빛의 광장 사이에서 출력을 나눈다.",
-          "en": "Divides output between Pan Hyodam’s base and Cheon Solbit’s square."
-        },
-        "effects": []
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "정전 때 시민 배급 칸에 발전을 배정하고 군량 조명을 껐다. 출력을 조정해 왔으나 은폐 배전은 거부했다.",
-      "en": "Assigns emergency power to civilian rations and shuts off military lighting during a blackout. Coordinates output but refuses concealed distribution."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -422,72 +152,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bc29-b0a8-c591-623f",
-    "name": "남양 방씨",
-    "crest": "clan-crests/bc29-b0a8-c591-623f.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 5,
-    "개방": 30,
-    "무력": 0,
-    "물질": 45,
-    "공동": -15,
-    "원칙": -40,
-    "공개": -25,
-    "자격": -5,
-    "분산": 10,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": -5,
-    "독점": 0,
-    "위험": -30,
-    "과시": 10,
-    "지속": 20,
-    "지향": "유동",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "제대 설비 점검·선거 보좌",
-    "소속": "명동대교구 (명동역)",
-    "품계": "수사",
-    "직함": "명동역 제대 설비 수사",
-    "가치관": "권위 5 | 개방 30 | 무력 0 | 물질 45 | 공동 −15 | 원칙 −40 | 공개 −25 | 자격 −5 | 분산 10 | 변혁 5",
-    "욕망": "갈망 −5 | 독점 0 | 위험 −30 | 과시 10 | 지속 20 | 지향 유동 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2064-08-06에 태어난 방석담은 영구 겨울의 명동역 교구청에서 명동역 제대 설비 수사 일을 맡는다. 제대 설비 점검·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 방석담은 명동 행정동의 명동역 교구청에서 명동역 제대 설비 수사 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 수사. 직함은 명동역 제대 설비 수사. 제대 설비 점검·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
-    "일화": "창고 봉쇄와 정전이 겹치자 방석담은 비상 발전을 시민 배급 칸에 잠그고 군량 조명을 껐다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.",
-    "관계": "판효담의 창고 기지에 출력을 맞추고, 천솔빛의 광장 조명과 전력을 나눈다. 남윤경의 공개 경매에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
-    "야망": "사제단 소집 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-    "공포": "사제단 소집 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-    "개입": "사제단 소집 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
-  },
-  "biography": "방석담은 명동역 제대 설비 수사 업무에서 제대 설비 점검·선거 보좌 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 제대 설비 점검·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 수사\n- 직함: 명동역 제대 설비 수사\n**생애.** 2064-08-06에 태어난 방석담은 영구 겨울의 명동역 교구청에서 명동역 제대 설비 수사 일을 맡는다. 제대 설비 점검·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 방석담은 명동 행정동의 명동역 교구청에서 명동역 제대 설비 수사 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 수사. 직함은 명동역 제대 설비 수사. 제대 설비 점검·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 창고 봉쇄와 정전이 겹치자 방석담은 비상 발전을 시민 배급 칸에 잠그고 군량 조명을 껐다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.\n\n**관계.** 판효담의 창고 기지에 출력을 맞추고, 천솔빛의 광장 조명과 전력을 나눈다. 남윤경의 공개 경매에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 사제단 소집 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 사제단 소집 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 사제단 소집 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 30 | 무력 0 | 물질 45 | 공동 −15 | 원칙 −40 | 공개 −25 | 자격 −5 | 분산 10 | 변혁 5\n- 욕망: 갈망 −5 | 독점 0 | 위험 −30 | 과시 10 | 지속 20 | 지향 유동 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-15"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "방석담",
-        "type": "계약",
-        "to": "남윤경",
-        "basis": "남윤경의 공개 경매에는 복종하되 은폐 배전은 거부한다"
-      },
-      {
-        "from": "방석담",
-        "type": "계약",
-        "to": "판효담",
-        "basis": "판효담의 창고 기지에 출력을 맞추고"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

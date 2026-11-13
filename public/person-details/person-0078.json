@@ -1,396 +1,108 @@
 {
   "id": "person-0078",
   "name": "우다온",
-  "title": "음성기록 원본 호송원",
-  "position": "음성기록 원본 호송원",
+  "title": "정비공",
+  "position": "정비공 · 양재역",
   "characterId": "K078",
-  "rank": "대리",
+  "rank": "정비공",
   "commonTier": "T5",
-  "occupation": "음성 원본 호송",
+  "occupation": "이식 정비",
   "gender": "남성",
   "stage": "S3",
-  "state": "S03",
-  "stateName": "태욱그룹",
-  "sourceRoute": "/world/Cast-State-03#인물-우다온",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0078",
   "birthDate": "2066-03-10",
   "birthday": "03-10",
   "age": 60,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-03.json#/content/225",
-    "lore/characters/Cast-State-03.json#/content/227"
-  ],
-  "familyTree": {
-    "personId": "K078",
-    "nodes": [
-      {
-        "id": "K078",
-        "personId": "K078",
-        "kind": "person",
-        "name": "우다온",
-        "birthDate": "2066-03-10",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K078"
-          },
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-우다온-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 음성기록 원본 호송원 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-우다온-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0078"
-      },
-      {
-        "id": "FH-K078-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "우승호",
-        "lineage": {
-          "surname": "우",
-          "bongwan": "단양",
-          "clan": "c6b0-b2e8-c591"
-        },
-        "birthDate": "2036-03-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-우다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "우승호는 서울역 등기소에서 음성 원본 호송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-우다온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K078-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "우승민",
-        "lineage": {
-          "surname": "우",
-          "bongwan": "단양",
-          "clan": "c6b0-b2e8-c591"
-        },
-        "birthDate": "2006-03-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-우다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "우승민은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-우다온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K078-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강승훈",
-        "birthDate": "2036-03-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-우다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "강승훈은 서울역 등기소에서 음성 원본 호송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-우다온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K078-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승혁",
-        "birthDate": "2006-03-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-우다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임승혁은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-우다온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K078-P-01:K078:biological",
-        "from": "FH-K078-P-01",
-        "to": "K078",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-우다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K078-P-02:FH-K078-P-01:biological",
-        "from": "FH-K078-P-02",
-        "to": "FH-K078-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-우다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K078-M-01:K078:biological",
-        "from": "FH-K078-M-01",
-        "to": "K078",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-우다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K078-M-02:FH-K078-M-01:biological",
-        "from": "FH-K078-M-02",
-        "to": "FH-K078-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-우다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c6b0-b2e8-c591",
+    "name": "단양 우씨",
+    "crest": "clan-crests/c6b0-b2e8-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "서초 정비공 가운데 손꼽히게 나이 많은 우다온은 예순이 되도록 자기 몸에는 부위를 하나만 받았다. 남의 몸에 맞춘 부위는 셀 수 없이 많아서, 양재 정비대의 젊은 정비공들은 그를 놀리면서도 이음매 손질은 꼭 그에게 묻는다. 여다솜에게 이음매 손질을 가르친 것도 그였다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "정비공",
+    "품계": "정비공",
+    "생업": "이식 정비",
+    "일하는 역": "양재역",
+    "잠자는 역": "양재역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "서초 정비공 가운데 손꼽히게 나이 많은 우다온은 예순이 되도록 자기 몸에는 부위를 하나만 받았다. 남의 몸에 맞춘 부위는 셀 수 없이 많아서, 양재 정비대의 젊은 정비공들은 그를 놀리면서도 이음매 손질은 꼭 그에게 묻는다. 여다솜에게 이음매 손질을 가르친 것도 그였다.",
+    "관직": "직함 정비공. 직위 정비공 · 양재역. 품계 정비공. 일하는 역 양재역."
+  },
+  "values": {
+    "권위": 10,
+    "개방": 0,
+    "무력": -30,
+    "물질": -50,
+    "공동": 25,
+    "원칙": 60,
+    "공개": 0,
+    "자격": 10,
+    "분산": -10,
+    "변혁": 50
+  },
+  "desire": {
+    "갈망": 5,
+    "독점": 25,
+    "위험": -5,
+    "과시": -30,
+    "지속": 10,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0078",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
+      "martial": {
         "base": 3,
         "effective": 3
       },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+      "stewardship": {
+        "base": 7,
+        "effective": 7
+      },
+      "intrigue": {
+        "base": 6,
+        "effective": 6
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "audio",
-        "name": {
-          "ko": "음성 원본 봉인 호송",
-          "en": "Sealed audio-original transport"
-        },
-        "rating": 60
-      },
-      {
-        "id": "accounts",
-        "name": {
-          "ko": "지급 장부 대조",
-          "en": "Payment ledger reconciliation"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "double-sealed-transport",
-        "name": {
-          "ko": "이중 봉인 호송",
-          "en": "Double-Sealed Transport"
-        },
-        "description": {
-          "ko": "우다온은 원본 릴의 이동에 안전심사와 송신 검증의 독립된 잠금이 필요하다고 여긴다.",
-          "en": "U Daon treats separate safety-review and transmission-verification locks as necessary for moving original reels."
-        },
-        "behavior": {
-          "ko": "두 자물쇠가 채워진 뒤에만 릴 상자를 출발시키고 방재대가 요청해도 단독 호송을 거절한다.",
-          "en": "U Daon dispatches reel boxes only after both locks are secured and refuses solo transport even at the disaster-response unit's request."
-        },
-        "stress": {
-          "ko": "호송 중 릴 교체가 우려되면 이중 잠금과 단독 이동 금지를 더욱 고수할 수 있다.",
-          "en": "Concern about reels being swapped during transport may strengthen U Daon's insistence on dual locks and no solo journeys."
-        },
-        "relationship": {
-          "ko": "정호준과 협력할 때 안전심사를 편의상 생략할 절차가 아니라 호송의 조건으로 유지하려 할 수 있다.",
-          "en": "In working with Jeong Hojun, U Daon may retain safety review as a transport condition rather than waive it for convenience."
-        },
-        "effects": []
-      },
-      {
-        "id": "no-reading-before-verification",
-        "name": {
-          "ko": "검증 전 낭독 거부",
-          "en": "No Reading Before Verification"
-        },
-        "description": {
-          "ko": "우다온은 검증되지 않은 방송 문구에 자신의 낭독을 보태지 않는다.",
-          "en": "U Daon withholds personal narration from broadcast wording that has not been verified."
-        },
-        "behavior": {
-          "ko": "검증 전에는 방송 문구를 읽지 않고 편집 흔적 검증을 위해 최지우에게 원본을 넘긴다.",
-          "en": "U Daon refuses to read broadcast wording before verification and passes originals to Choi Jiu for checking editing traces."
-        },
-        "stress": {
-          "ko": "조작된 목소리가 유언 진본으로 인준될 우려가 있으면 낭독보다 검증 완료를 우선할 수 있다.",
-          "en": "If a manipulated voice risks certification as an authentic testament, U Daon may prioritize completed verification over narration."
-        },
-        "relationship": {
-          "ko": "최지우와의 협력에서는 검증을 맡기되 정치 일정에 따른 원본 개봉 지연에는 동의하기 어려울 수 있다.",
-          "en": "U Daon may rely on Choi Jiu's verification while resisting delays in opening originals for political scheduling."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "이중 잠금 뒤에만 릴을 호송하고 단독 이동을 거부한다. 원본 보존과 장부 대조가 근거이며 전문 음향 분석을 추가하지 않는다.",
-      "en": "She moves reels only after dual locks and refuses solo delivery. Preservation and ledger checks are supported, not professional audio analysis."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -400,7 +112,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -426,73 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c6b0-b2e8-c591",
-    "name": "단양 우씨",
-    "crest": "clan-crests/c6b0-b2e8-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -15,
-    "개방": 15,
-    "무력": -40,
-    "물질": 0,
-    "공동": 5,
-    "원칙": 70,
-    "공개": 45,
-    "자격": 45,
-    "분산": 20,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 5,
-    "독점": 25,
-    "위험": -5,
-    "과시": -30,
-    "지속": 10,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "태욱그룹",
-    "생업": "음성 원본 호송",
-    "품계": "대리",
-    "직함": "음성기록 원본 호송원",
-    "업무": "양재1동. 우다온은 음성 원본 릴의 안전심사와 송신 검증 잠금을 각각 확인하고 동행 호송 없이 출발하지 않는다.",
-    "가치관": "권위 −15 | 개방 15 | 무력 −40 | 물질 0 | 공동 5 | 원칙 70 | 공개 45 | 자격 45 | 분산 20 | 변혁 5",
-    "욕망": "갈망 5 | 독점 25 | 위험 −5 | 과시 −30 | 지속 10 | 지향 이성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 우다온은 음성 원본 릴의 안전심사와 송신 검증 잠금을 각각 확인하고 동행 호송 없이 출발하지 않는다.\n- 업무: 양재1동. 우다온은 음성 원본 릴의 안전심사와 송신 검증 잠금을 각각 확인하고 동행 호송 없이 출발하지 않는다.",
-    "관직": "품계 대리. 직함은 음성기록 원본 호송원. 릴 상자는 안전심사와 송신 검증이 각각 자물쇠를 채운 뒤에만 출발하고, 단독 호송은 방재대 요청이어도 거절한다.",
-    "일화": "2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다.",
-    "관계": "최지우의 편집 흔적 검증에 원본을 넘기고, 정호준의 안전심사를 호송 조건으로 삼으며, 표지안의 기술원장 전령로를 일부 빌려 쓴다.",
-    "야망": "어느 교섭자도 중간에 끌 수 없는 이중 봉인 호송로를 만들어, 음성기록이 승자의 선전 조각으로 잘리지 않게 한다.",
-    "공포": "호송 중 릴이 바뀌고, 조작된 목소리가 유언 진본으로 인준되어 연구자가 증인 인질이 되는 것.",
-    "개입": "끊긴 호송로를 열어 릴을 제시간에 닿게 하거나, 상자 무게가 다른 바꿔치기를 밝혀 호송원을 실격시킬 수 있다."
-  },
-  "biography": "편집 잡음을 사람 말보다 먼저 듣고, 원본 릴을 정치 일정에 맞춰 늦게 열라는 요청을 모욕으로 여긴다. 검증 전까지는 방송 문구를 읽지 않는다.\n\n- 소속: 태욱그룹\n- 생업: 음성 원본 호송\n- 품계: 대리\n- 직함: 음성기록 원본 호송원\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 우다온은 음성 원본 릴의 안전심사와 송신 검증 잠금을 각각 확인하고 동행 호송 없이 출발하지 않는다.\n- 업무: 양재1동. 우다온은 음성 원본 릴의 안전심사와 송신 검증 잠금을 각각 확인하고 동행 호송 없이 출발하지 않는다.\n\n**관직.** 품계 대리. 직함은 음성기록 원본 호송원. 릴 상자는 안전심사와 송신 검증이 각각 자물쇠를 채운 뒤에만 출발하고, 단독 호송은 방재대 요청이어도 거절한다.\n\n**일화.** 2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다.\n\n**관계.** 최지우의 편집 흔적 검증에 원본을 넘기고, 정호준의 안전심사를 호송 조건으로 삼으며, 표지안의 기술원장 전령로를 일부 빌려 쓴다.\n\n**야망.** 어느 교섭자도 중간에 끌 수 없는 이중 봉인 호송로를 만들어, 음성기록이 승자의 선전 조각으로 잘리지 않게 한다.\n\n**공포.** 호송 중 릴이 바뀌고, 조작된 목소리가 유언 진본으로 인준되어 연구자가 증인 인질이 되는 것.\n\n**개입.** 끊긴 호송로를 열어 릴을 제시간에 닿게 하거나, 상자 무게가 다른 바꿔치기를 밝혀 호송원을 실격시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 15 | 무력 −40 | 물질 0 | 공동 5 | 원칙 70 | 공개 45 | 자격 45 | 분산 20 | 변혁 5\n- 욕망: 갈망 5 | 독점 25 | 위험 −5 | 과시 −30 | 지속 10 | 지향 이성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-03"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "우다온",
-        "type": "계약",
-        "to": "최지우",
-        "basis": "최지우의 편집 흔적 검증에 원본을 넘기고"
-      },
-      {
-        "from": "우다온",
-        "type": "계약",
-        "to": "정호준",
-        "basis": "정호준의 안전심사를 호송 조건으로 삼으며"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

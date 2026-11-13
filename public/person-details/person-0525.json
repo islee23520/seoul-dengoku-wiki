@@ -1,387 +1,105 @@
 {
   "id": "person-0525",
   "name": "양카태",
-  "title": "증언 탐사원",
-  "position": "증언 탐사원",
+  "title": "국회 서기",
+  "position": "국회 서기 · 광화문역",
   "characterId": "K525",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "인명 장부 구조·보관",
+  "rank": "사무관",
+  "commonTier": "T5",
+  "occupation": "공문 필사",
   "gender": "남성",
   "stage": "S4",
-  "state": "S06",
-  "stateName": "대한민국정부",
-  "sourceRoute": "/world/Cast-State-06#인물-양카태",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0525",
   "birthDate": "2079-08-10",
   "birthday": "08-10",
   "age": 47,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-06.json#/content/325",
-    "lore/characters/Cast-State-06.json#/content/327",
-    "lore/characters/Cast-State-06.json#/content/328"
-  ],
-  "familyTree": {
-    "personId": "K525",
-    "nodes": [
-      {
-        "id": "K525",
-        "personId": "K525",
-        "kind": "person",
-        "name": "양카태",
-        "birthDate": "2079-08-10",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K525"
-          },
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양카태-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 증언 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-양카태-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0525"
-      },
-      {
-        "id": "FH-K525-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "양승훈",
-        "lineage": {
-          "surname": "양",
-          "bongwan": "중화",
-          "clan": "c591-c911-d654-694a-agreed-d0dc-second"
-        },
-        "birthDate": "2049-08-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양카태-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2087,
-            "summary": "양승훈은 대합실 당직에서 인명 장부 구조·보관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-양카태-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K525-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "양승범",
-        "lineage": {
-          "surname": "양",
-          "bongwan": "중화",
-          "clan": "c591-c911-d654-694a-agreed-d0dc-second"
-        },
-        "birthDate": "2019-08-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양카태-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "양승범은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-양카태-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K525-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "송태우",
-        "birthDate": "2049-08-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양카태-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2087,
-            "summary": "송태우는 대합실 당직에서 인명 장부 구조·보관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-양카태-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K525-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "조태연",
-        "birthDate": "2019-08-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양카태-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조태연은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-양카태-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K525-P-01:K525:biological",
-        "from": "FH-K525-P-01",
-        "to": "K525",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양카태-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K525-P-02:FH-K525-P-01:biological",
-        "from": "FH-K525-P-02",
-        "to": "FH-K525-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양카태-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K525-M-01:K525:biological",
-        "from": "FH-K525-M-01",
-        "to": "K525",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양카태-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K525-M-02:FH-K525-M-01:biological",
-        "from": "FH-K525-M-02",
-        "to": "FH-K525-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-양카태-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c591-c911-d654-694a",
+    "name": "중화 양씨",
+    "crest": "clan-crests/c591-c911-d654-694a.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "국회 서기 양카태는 마흔일곱 살 사무관이고, 기재지는 종로구 종로3가역이다. 날마다 광화문역 터널로 정부서울청사 본관 지하의 옛 회의실에 내려가 국회의 기록을 옮겨 적는다. 열네 도장이 찍힌 의결문의 사본은 그의 필사로 국회사무처에 남는다. 회의실에 불이 났던 해에 기록부터 끌어안고 나온 일은 국회사무처의 기록에 한 줄로 남아 있다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "국회 서기",
+    "품계": "사무관",
+    "생업": "공문 필사",
+    "일하는 역": "광화문역",
+    "잠자는 역": "종로3가역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "국회 서기 양카태는 마흔일곱 살 사무관이고, 기재지는 종로구 종로3가역이다. 날마다 광화문역 터널로 정부서울청사 본관 지하의 옛 회의실에 내려가 국회의 기록을 옮겨 적는다. 열네 도장이 찍힌 의결문의 사본은 그의 필사로 국회사무처에 남는다. 회의실에 불이 났던 해에 기록부터 끌어안고 나온 일은 국회사무처의 기록에 한 줄로 남아 있다.",
+    "관직": "직함 국회 서기. 직위 국회 서기 · 광화문역. 품계 사무관. 일하는 역 광화문역."
+  },
+  "values": {
+    "권위": 60,
+    "개방": -70,
+    "무력": 0,
+    "물질": -35,
+    "공동": 10,
+    "원칙": 70,
+    "공개": -45,
+    "자격": 30,
+    "분산": -85,
+    "변혁": -40
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": -10,
+    "위험": -20,
+    "과시": 30,
+    "지속": 5,
+    "지향": "양성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0525",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 3,
-        "effective": 3
-      },
-      "strategy": {
-        "base": 4,
-        "effective": 4
-      },
-      "negotiation": {
-        "base": 3,
-        "effective": 3
-      },
-      "management": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "insight": {
+      "martial": {
+        "base": 3,
+        "effective": 3
+      },
+      "stewardship": {
+        "base": 11,
+        "effective": 11
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
       "learning": {
-        "base": 5,
-        "effective": 5
-      },
-      "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
         "base": 8,
         "effective": 8
-      }
-    },
-    "skills": [
-      {
-        "id": "k525-roster-rescue",
-        "name": {
-          "ko": "인명 장부 구조",
-          "en": "Life roster rescue"
-        },
-        "rating": 45
-      }
-    ],
-    "traits": [
-      {
-        "id": "k525-choice",
-        "name": {
-          "ko": "인명 기록 우선",
-          "en": "Life records first"
-        },
-        "description": {
-          "ko": "일화. 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 증언 탐사원 자리의 서명이 장부에 올랐다. 이 선택을 넘어선 지속 성향은 미확인이다.",
-          "en": "Anecdote. In the 2125 station fire he carried out the roster of lives first. By this deed the signature of the testimony surveyor post rose into the ledger. A lasting disposition beyond this choice is unconfirmed."
-        },
-        "behavior": {
-          "ko": "일화. 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 증언 탐사원 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In the 2125 station fire he carried out the roster of lives first. By this deed the signature of the testimony surveyor post rose into the ledger."
-        },
-        "stress": {
-          "ko": "공포. 증언 탐사원 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That the testimony surveyor duty post would stand empty and the Government's passage would become a break in the eight states' recognition. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
       },
-      {
-        "id": "k525-boundary",
-        "name": {
-          "ko": "당직 연속성을 중시",
-          "en": "Values duty continuity"
-        },
-        "description": {
-          "ko": "당직 공백을 피하고 기록을 믿는 원문 성향이다. 반복 문구이므로 개인의 특별한 장점으로 확대하지 않는다.",
-          "en": "The source favors unbroken shifts and written records. Repeated wording does not establish a distinctive exceptional virtue."
-        },
-        "behavior": {
-          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.",
-          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
-        },
-        "stress": {
-          "ko": "공포. 증언 탐사원 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That the testimony surveyor duty post would stand empty and the Government's passage would become a break in the eight states' recognition. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
+      "prowess": {
+        "base": 3,
+        "effective": 3
       }
-    ],
-    "narrative": {
-      "ko": "일화. 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 증언 탐사원 자리의 서명이 장부에 올랐다. 단일 일화와 반복 당직 문구만 있어 장기 성향·광범위 경력·후속 결과는 미확인이다.",
-      "en": "Anecdote. In the 2125 station fire he carried out the roster of lives first. By this deed the signature of the testimony surveyor post rose into the ledger. Only one anecdote and repeated duty wording are available; enduring disposition, broader experience, and later results remain unconfirmed."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -419,83 +137,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-gu-28185-S06",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K525",
-      "stateId": "S06",
-      "politicalParentTitleId": "title:kingdom-s06",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-gu-28185-S06",
-          "directLiegePersonId": "K144"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c591-c911-d654-694a",
-    "name": "중화 양씨",
-    "crest": "clan-crests/c591-c911-d654-694a.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": -15,
-    "무력": -35,
-    "물질": -30,
-    "공동": 5,
-    "원칙": 50,
-    "공개": -20,
-    "자격": 15,
-    "분산": -35,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": -10,
-    "위험": -20,
-    "과시": 30,
-    "지속": 5,
-    "지향": "양성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "인명 장부 구조·보관",
-    "소속": "서울특별시 지방공무원 조직",
-    "직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급",
-    "담당 업무": "증언 탐사원",
-    "가치관": "권위 15 | 개방 −15 | 무력 −35 | 물질 −30 | 공동 5 | 원칙 50 | 공개 −20 | 자격 15 | 분산 −35 | 변혁 −20",
-    "욕망": "갈망 40 | 독점 −10 | 위험 −20 | 과시 30 | 지속 5 | 지향 양성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "대합실 당직에서 자랐다. 증언 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 양카태의 인명 장부 구조·보관 업무는 종로1·2·3·4가동과 이어진다.",
-    "공무원 직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 증언 탐사원.",
-    "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 증언 탐사원 자리의 서명이 장부에 올랐다.",
-    "관계": "인명 장부 구조·보관 업무의 인수인계를 통해 같은 생활권의 선배 당직과 이어진다.",
-    "야망": "증언 탐사원 자리에서 인명 장부 구조·보관 기록을 이어 서울특별시 지방공무원 조직의 장부가 당직 사이에 끊기지 않게 한다.",
-    "공포": "증언 탐사원 당직이 비어 인명 장부 구조·보관 업무와 연결된 도심 통행의 도장·명부가 끊기고, 그 기록에 기대는 서울특별시 지방공무원 조직 구성 세력의 인준까지 멈추는 것.",
-    "개입": "인명 장부 구조·보관 업무의 당직 인수 증인을 세우거나, 그 직위의 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "역사 화재에서 꺼낸 인명 장부처럼 당직 기록도 먼저 챙긴다. 장부를 남기는 쪽으로 판단한다.\n\n- 생업: 인명 장부 구조·보관\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급\n- 담당 업무: 증언 탐사원\n**생애.** 대합실 당직에서 자랐다. 증언 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 양카태의 인명 장부 구조·보관 업무는 종로1·2·3·4가동과 이어진다.\n\n**공무원 직위·직급.** 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 증언 탐사원.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 증언 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 인명 장부 구조·보관 업무의 인수인계를 통해 같은 생활권의 선배 당직과 이어진다.\n\n**야망.** 증언 탐사원 자리에서 인명 장부 구조·보관 기록을 이어 서울특별시 지방공무원 조직의 장부가 당직 사이에 끊기지 않게 한다.\n\n**공포.** 증언 탐사원 당직이 비어 인명 장부 구조·보관 업무와 연결된 도심 통행의 도장·명부가 끊기고, 그 기록에 기대는 서울특별시 지방공무원 조직 구성 세력의 인준까지 멈추는 것.\n\n**개입.** 인명 장부 구조·보관 업무의 당직 인수 증인을 세우거나, 그 직위의 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −15 | 무력 −35 | 물질 −30 | 공동 5 | 원칙 50 | 공개 −20 | 자격 15 | 분산 −35 | 변혁 −20\n- 욕망: 갈망 40 | 독점 −10 | 위험 −20 | 과시 30 | 지속 5 | 지향 양성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-06"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "양카태",
-        "type": "계약",
-        "to": "차세온",
-        "basis": "양카태는 화재에서 구한 인명 장부를 차세온에게 가져가 기록의 손상 상태를 알린다. 차세온은 원본 필적과 증언을 살펴 읽히지 않는 부분을 임의로 채우지 않고 확인 근거를 남긴다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

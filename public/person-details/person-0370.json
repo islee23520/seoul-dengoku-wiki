@@ -1,414 +1,93 @@
 {
   "id": "person-0370",
   "name": "창지안",
-  "title": "보호권 징발 피난 인파 대표",
-  "position": "양군 외부 징발 피난 인파 대표",
+  "title": "동주민센터 선임 서기",
+  "position": "동주민센터 선임 서기 · 동대입구역",
   "characterId": "K369",
-  "rank": "공동실무원",
+  "rank": "서기",
   "commonTier": "T5",
-  "occupation": "징발 쪽지·통행 인원 대조·공동 승인 확인",
+  "occupation": "장부 기재",
   "gender": "남성",
   "stage": "S3",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-창지안",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0370",
   "birthDate": "2100-03-01",
   "birthday": "03-01",
   "age": 26,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/226"
-  ],
-  "familyTree": {
-    "personId": "K369",
-    "nodes": [
-      {
-        "id": "K369",
-        "personId": "K369",
-        "kind": "person",
-        "name": "창지안",
-        "birthDate": "2100-03-01",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K369"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-창지안-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 보국문 피난 막사에서 자랐다. 양군 외부 징발 피난 인파 대표 자리는 고아 명부 시민권 줄로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-창지안-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0370"
-      },
-      {
-        "id": "FH-K369-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "창승현",
-        "lineage": {
-          "surname": "창",
-          "bongwan": "창녕",
-          "clan": "cc3d-cc3d-b155-660c"
-        },
-        "birthDate": "2070-03-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-창지안-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2108,
-            "summary": "창승현은 보국문 피난 막사에서 징발 쪽지·통행 인원 대조·공동 승인 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-창지안-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K369-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "창승영",
-        "lineage": {
-          "surname": "창",
-          "bongwan": "창녕",
-          "clan": "cc3d-cc3d-b155-660c"
-        },
-        "birthDate": "2040-03-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-창지안-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2078,
-            "summary": "창승영은 보국문 피난 막사에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-창지안-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K369-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "창승윤",
-        "lineage": {
-          "surname": "창",
-          "bongwan": "창녕",
-          "clan": "cc3d-cc3d-b155-660c"
-        },
-        "birthDate": "2010-03-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-창지안-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "창승윤은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-창지안-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K369-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "송준영",
-        "birthDate": "2070-03-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-창지안-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2108,
-            "summary": "송준영은 보국문 피난 막사에서 징발 쪽지·통행 인원 대조·공동 승인 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-창지안-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K369-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "조준수",
-        "birthDate": "2040-03-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-창지안-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2078,
-            "summary": "조준수는 보국문 피난 막사에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-창지안-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K369-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "김준정",
-        "birthDate": "2010-03-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-창지안-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "김준정은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-창지안-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K369-P-01:K369:biological",
-        "from": "FH-K369-P-01",
-        "to": "K369",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-창지안-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K369-P-02:FH-K369-P-01:biological",
-        "from": "FH-K369-P-02",
-        "to": "FH-K369-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-창지안-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K369-P-03:FH-K369-P-02:biological",
-        "from": "FH-K369-P-03",
-        "to": "FH-K369-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-창지안-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K369-M-01:K369:biological",
-        "from": "FH-K369-M-01",
-        "to": "K369",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-창지안-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K369-M-02:FH-K369-M-01:biological",
-        "from": "FH-K369-M-02",
-        "to": "FH-K369-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-창지안-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K369-M-03:FH-K369-M-02:biological",
-        "from": "FH-K369-M-03",
-        "to": "FH-K369-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-창지안-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cc3d-cc3d-b155-660c",
+    "name": "창녕 창씨",
+    "crest": "clan-crests/cc3d-cc3d-b155-660c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "동대입구역 동주민센터의 기재 창구에서 전입 신고와 잠자리 번호 변경 서류를 받는 선임 서기가 창지안이다. 스물여섯 살, 중구에 기재된 창녕 창씨 남성이다. 젊은 선임 서기라 중구의 두 동장에게 도장을 받으러 오가는 걸음이 하루에 가장 많다. 그는 사본의 빈칸을 연필로 먼저 채우고, 원부와 맞춘 다음에야 먹으로 덧쓴다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "동주민센터 선임 서기",
+    "품계": "서기",
+    "생업": "장부 기재",
+    "일하는 역": "동대입구역",
+    "잠자는 역": "동대입구역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "동대입구역 동주민센터의 기재 창구에서 전입 신고와 잠자리 번호 변경 서류를 받는 선임 서기가 창지안이다. 스물여섯 살, 중구에 기재된 창녕 창씨 남성이다. 젊은 선임 서기라 중구의 두 동장에게 도장을 받으러 오가는 걸음이 하루에 가장 많다. 그는 사본의 빈칸을 연필로 먼저 채우고, 원부와 맞춘 다음에야 먹으로 덧쓴다.",
+    "관직": "직함 동주민센터 선임 서기. 직위 동주민센터 선임 서기 · 동대입구역. 품계 서기. 일하는 역 동대입구역."
+  },
+  "values": {
+    "권위": 65,
+    "개방": -60,
+    "무력": 70,
+    "물질": 10,
+    "공동": 35,
+    "원칙": 30,
+    "공개": -45,
+    "자격": -5,
+    "분산": -55,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": 50,
+    "독점": 5,
+    "위험": 10,
+    "과시": -5,
+    "지속": 45,
+    "지향": "양성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0370",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
+      },
+      "martial": {
+        "base": 3,
+        "effective": 3
+      },
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
         "base": 9,
@@ -417,76 +96,10 @@
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
       }
     },
-    "skills": [
-      {
-        "id": "transit-headcount-reconciliation",
-        "name": {
-          "ko": "통행 인원 대조",
-          "en": "Transit headcount reconciliation"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "해산 전 공동 승인을 기다린다",
-          "en": "Waits for joint approval before dispersal"
-        },
-        "description": {
-          "ko": "빈집과 실제 통행 인원을 대조하고 공동 승인까지 인파 줄을 남겼다. 인원 조정의 좁은 강점을 반영한다.",
-          "en": "Empty homes and actual passage were compared, and crowd lines remained pending joint approval. The strength is narrowly in people coordination."
-        },
-        "behavior": {
-          "ko": "능선 초소의 빈집을 먼저 세고, 수비대를 아관사 징발로 부르라는 방송을 모욕으로 듣는다. 줄이 길어질수록 목소리는 낮아진다.",
-          "en": "He counted the empty posts of the ridge outposts first and heard any broadcast that called the defense squad a protection vanguard an insult. The longer the line grew, the lower his voice fell."
-        },
-        "stress": {
-          "ko": "공포. 대표로 나선 자신의 이름이 동부 외부 간섭 명부의 맨 위가 되는 것.",
-          "en": "Fear. That his own name, once he stepped out as representative, would top the eastern guardianship roster."
-        },
-        "relationship": {
-          "ko": "관계. 문하율의 초소 당직과 인파 줄을 나누고, 석봄우의 환승 거부 문구와 문장을 맞춘다. 배우진의 동부 후견 제안을 원한으로 돌려보낸다.",
-          "en": "Relations. Split the crowd queue with Mun Hayul's outpost duty and matched the wording with Seok Bomwoo's transfer refusal clause. Sent Bae Woojin's eastern guardianship proposal back as a grudge."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 공동실무원. 직함은 양군 외부 징발 피난 인파 대표. 징발 쪽지와 실제 통행 인원을 저녁마다 대조하고, 아관사와 구의수비대의 공동 승인이 내려오기 전에는 인파를 해산시키지 않는다.",
-          "en": "Office. Rank: sergeant. Title: protection-zone requisition refugee crowd representative. He checked requisition notes against actual passage numbers every evening and did not disperse the crowd before Go Seojun's joint-rule declaration came down."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 공동실무원. 직함은 양군 외부 징발 피난 인파 대표. 징발 쪽지와 실제 통행 인원을 저녁마다 대조하고, 아관사와 구의수비대의 공동 승인이 내려오기 전에는 인파를 해산시키지 않는다.",
-          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: protection-zone requisition refugee crowd representative. He checked requisition notes against actual passage numbers every evening and did not disperse the crowd before Go Seojun's joint-rule declaration came down."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 대표로 나선 자신의 이름이 동부 외부 간섭 명부의 맨 위가 되는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That his own name, once he stepped out as representative, would top the eastern guardianship roster."
-        },
-        "relationship": {
-          "ko": "관계. 문하율의 초소 당직과 인파 줄을 나누고, 석봄우의 환승 거부 문구와 문장을 맞춘다. 배우진의 동부 후견 제안을 원한으로 돌려보낸다.",
-          "en": "Relations. Split the crowd queue with Mun Hayul's outpost duty and matched the wording with Seok Bomwoo's transfer refusal clause. Sent Bae Woojin's eastern guardianship proposal back as a grudge."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "빈집과 실제 통행 인원을 대조하고 공동 승인까지 인파 줄을 남겼다. 인원 조정의 좁은 강점을 반영한다.",
-      "en": "Empty homes and actual passage were compared, and crowd lines remained pending joint approval. The strength is narrowly in people coordination."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,72 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "cc3d-cc3d-b155-660c",
-    "name": "창녕 창씨",
-    "crest": "clan-crests/cc3d-cc3d-b155-660c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 20,
-    "개방": -5,
-    "무력": 35,
-    "물질": 15,
-    "공동": 30,
-    "원칙": 10,
-    "공개": -20,
-    "자격": -20,
-    "분산": -5,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 50,
-    "독점": 5,
-    "위험": 10,
-    "과시": -5,
-    "지속": 45,
-    "지향": "양성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "징발 쪽지·통행 인원 대조·공동 승인 확인",
-    "소속": "아관사 양군 공동실무",
-    "품계": "공동실무원",
-    "직함": "양군 외부 징발 피난 인파 대표",
-    "가치관": "권위 20 | 개방 −5 | 무력 35 | 물질 15 | 공동 30 | 원칙 10 | 공개 −20 | 자격 −20 | 분산 −5 | 변혁 0",
-    "욕망": "갈망 50 | 독점 5 | 위험 10 | 과시 −5 | 지속 45 | 지향 양성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2100-03-01에 태어났다. 2126년 개막 현재 양군 외부 징발 피난 인파 대표 직무를 맡아 징발 쪽지·통행 인원 대조·공동 승인 확인 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의1동의 징발 쪽지·통행 인원 대조·공동 승인 확인 창구가 창지안의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 공동실무원. 직함은 양군 외부 징발 피난 인파 대표. 징발 쪽지·통행 인원 대조·공동 승인 확인 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
-    "일화": "배우진의 동부 후견 제안이 능선 초소에 붙은 날, 피난 인파의 통행 인원이 징발 쪽지와 맞지 않게 세어진다. 창지안은 능선 초소의 빈집을 먼저 세어 차이를 적고, 양군의 공동 승인이 내려올 때까지 문하율의 초소 당직과 인파 줄을 나눈 채 제안서를 돌려보낸다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
-    "관계": "문하율의 초소 당직과 인파 줄을 나누고, 석봄우의 환승 거부 문구와 문장을 맞춘다. 배우진의 동부 후견 제안을 원한으로 돌려보낸다.",
-    "야망": "창지안은 양군 외부 징발 피난 인파 대표 직무에서 징발 쪽지·통행 인원 대조·공동 승인 확인 기록을 공개 인계표와 맞물리게 하려 한다.",
-    "공포": "양군 외부 징발 피난 인파 대표 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
-    "개입": "거부 원장을 협의에 올리거나, 인파를 해산시켜 보호군 통과를 열 수 있다. 창지안의 징발 쪽지·통행 인원 대조·공동 승인 확인 원장을 대조해 다음 인계의 증거를 세울 수 있다."
-  },
-  "biography": "창지안은 징발 쪽지·통행 인원 대조·공동 승인 확인 기록을 손에 익힌 아관사 양군 공동실무 인물이다. 능선 초소의 빈집을 먼저 세고, 수비대를 아관사 징발로 부르라는 방송을 모욕으로 듣는다. 줄이 길어질수록 목소리는 낮아진다.\n\n- 생업: 징발 쪽지·통행 인원 대조·공동 승인 확인\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 외부 징발 피난 인파 대표\n**생애.** 2100-03-01에 태어났다. 2126년 개막 현재 양군 외부 징발 피난 인파 대표 직무를 맡아 징발 쪽지·통행 인원 대조·공동 승인 확인 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의1동의 징발 쪽지·통행 인원 대조·공동 승인 확인 창구가 창지안의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 공동실무원. 직함은 양군 외부 징발 피난 인파 대표. 징발 쪽지·통행 인원 대조·공동 승인 확인 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 배우진의 동부 후견 제안이 능선 초소에 붙은 날, 피난 인파의 통행 인원이 징발 쪽지와 맞지 않게 세어진다. 창지안은 능선 초소의 빈집을 먼저 세어 차이를 적고, 양군의 공동 승인이 내려올 때까지 문하율의 초소 당직과 인파 줄을 나눈 채 제안서를 돌려보낸다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 문하율의 초소 당직과 인파 줄을 나누고, 석봄우의 환승 거부 문구와 문장을 맞춘다. 배우진의 동부 후견 제안을 원한으로 돌려보낸다.\n\n**야망.** 창지안은 양군 외부 징발 피난 인파 대표 직무에서 징발 쪽지·통행 인원 대조·공동 승인 확인 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 양군 외부 징발 피난 인파 대표 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 거부 원장을 협의에 올리거나, 인파를 해산시켜 보호군 통과를 열 수 있다. 창지안의 징발 쪽지·통행 인원 대조·공동 승인 확인 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −5 | 무력 35 | 물질 15 | 공동 30 | 원칙 10 | 공개 −20 | 자격 −20 | 분산 −5 | 변혁 0\n- 욕망: 갈망 50 | 독점 5 | 위험 10 | 과시 −5 | 지속 45 | 지향 양성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-14"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "창지안",
-        "type": "계약",
-        "to": "문하율",
-        "basis": "문하율의 초소 당직과 인파 줄을 나누고"
-      },
-      {
-        "from": "창지안",
-        "type": "계약",
-        "to": "석봄우",
-        "basis": "석봄우의 환승 거부 문구와 문장을 맞춘다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

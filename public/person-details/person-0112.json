@@ -1,396 +1,108 @@
 {
   "id": "person-0112",
   "name": "류다인",
-  "title": "가짜 정수 부품 피해자 직공",
-  "position": "가짜 정수 부품 피해자 직공",
+  "title": "야전 정비공",
+  "position": "야전 정비공 · 삼성역",
   "characterId": "K111",
-  "rank": "교사",
+  "rank": "정비공",
   "commonTier": "T5",
-  "occupation": "회수 부품·피해 명부 관리",
+  "occupation": "이식 정비",
   "gender": "남성",
   "stage": "S3",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-류다인",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0112",
   "birthDate": "2081-09-02",
   "birthday": "09-02",
   "age": 45,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/258",
-    "lore/characters/Cast-State-04.json#/content/260"
-  ],
-  "familyTree": {
-    "personId": "K111",
-    "nodes": [
-      {
-        "id": "K111",
-        "personId": "K111",
-        "kind": "person",
-        "name": "류다인",
-        "birthDate": "2081-09-02",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K111"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-류다인-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 가짜 정수 부품 피해자 직공 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-류다인-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0112"
-      },
-      {
-        "id": "FH-K111-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "류승윤",
-        "lineage": {
-          "surname": "류",
-          "bongwan": "문화",
-          "clan": "b958-bb38-d654-67f3"
-        },
-        "birthDate": "2051-09-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-류다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2089,
-            "summary": "류승윤은 영등포 정수 당직에서 회수 부품·피해 명부 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-류다인-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K111-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "류승우",
-        "lineage": {
-          "surname": "류",
-          "bongwan": "문화",
-          "clan": "b958-bb38-d654-67f3"
-        },
-        "birthDate": "2021-09-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-류다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "류승우는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-류다인-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K111-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정승도",
-        "birthDate": "2051-09-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-류다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2089,
-            "summary": "정승도는 영등포 정수 당직에서 회수 부품·피해 명부 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-류다인-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K111-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승재",
-        "birthDate": "2021-09-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-류다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤승재는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-류다인-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K111-P-01:K111:biological",
-        "from": "FH-K111-P-01",
-        "to": "K111",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-류다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K111-P-02:FH-K111-P-01:biological",
-        "from": "FH-K111-P-02",
-        "to": "FH-K111-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-류다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K111-M-01:K111:biological",
-        "from": "FH-K111-M-01",
-        "to": "K111",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-류다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K111-M-02:FH-K111-M-01:biological",
-        "from": "FH-K111-M-02",
-        "to": "FH-K111-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-류다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b958-bb38-d654-67f3",
+    "name": "문화 류씨",
+    "crest": "clan-crests/b958-bb38-d654-67f3.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "류다인은 삼성역의 야전 정비공이다. 첫 부위는 마흔 무렵 종합운동장 쪽 굴을 치우다 무너진 기둥에 다리를 다쳐 받았다. 강남 군대가 북쪽 경계로 나가면 그는 지원 분대에 끼어, 뜯어진 정비 틈의 단추 덮개를 그 자리에서 꿰매어 잇는 일을 맡는다. 군대가 나가지 않는 날에는 삼성 정비대의 연장을 갈며, 날 하나를 두고 반나절을 쓴다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "야전 정비공",
+    "품계": "정비공",
+    "생업": "이식 정비",
+    "일하는 역": "삼성역",
+    "잠자는 역": "삼성역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "류다인은 삼성역의 야전 정비공이다. 첫 부위는 마흔 무렵 종합운동장 쪽 굴을 치우다 무너진 기둥에 다리를 다쳐 받았다. 강남 군대가 북쪽 경계로 나가면 그는 지원 분대에 끼어, 뜯어진 정비 틈의 단추 덮개를 그 자리에서 꿰매어 잇는 일을 맡는다. 군대가 나가지 않는 날에는 삼성 정비대의 연장을 갈며, 날 하나를 두고 반나절을 쓴다.",
+    "관직": "직함 야전 정비공. 직위 야전 정비공 · 삼성역. 품계 정비공. 일하는 역 삼성역."
+  },
+  "values": {
+    "권위": 25,
+    "개방": 0,
+    "무력": -15,
+    "물질": -40,
+    "공동": 45,
+    "원칙": 10,
+    "공개": -70,
+    "자격": 5,
+    "분산": -15,
+    "변혁": 45
+  },
+  "desire": {
+    "갈망": -5,
+    "독점": -30,
+    "위험": 15,
+    "과시": 10,
+    "지속": -10,
+    "지향": "동성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0112",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
-      "learning": {
-        "base": 9,
-        "effective": 9
-      },
-      "prowess": {
+      "martial": {
         "base": 3,
         "effective": 3
       },
-      "endurance": {
+      "stewardship": {
         "base": 7,
         "effective": 7
+      },
+      "intrigue": {
+        "base": 6,
+        "effective": 6
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "leak",
-        "name": {
-          "ko": "수압 시험 누수 점검",
-          "en": "Pressure-test leak inspection"
-        },
-        "rating": 60
-      },
-      {
-        "id": "evidence",
-        "name": {
-          "ko": "피해 표본·명부 보존",
-          "en": "Preserving victim samples and registers"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "seal-retrieved-boxes",
-        "name": {
-          "ko": "회수 상자 봉인",
-          "en": "Seal Retrieved Boxes"
-        },
-        "description": {
-          "ko": "류다인은 회수한 불량 부품과 피해 기록을 함께 봉인해 증거의 연결을 지키려 한다.",
-          "en": "Ryu Dain seeks to preserve the connection between defective retrieved parts and harm records by sealing them together."
-        },
-        "behavior": {
-          "ko": "회수 부품과 피해 명부를 같은 함에 넣고 골목펌프 정비사와 평의회 전령이 함께 볼 때만 감정을 위해 연다.",
-          "en": "They place retrieved parts and the affected-person register in one box and open it for appraisal only before both an alley-pump mechanic and council messenger."
-        },
-        "stress": {
-          "ko": "가짜 패킹으로 펌프가 멈추고 외부 주둔의 명분이 될 우려가 커지면 회수품의 봉인과 공동 확인을 더 중시할 수 있다.",
-          "en": "If fake packing threatens a pump shutdown that could justify outside stationing, they may emphasize sealing retrieved parts and joint inspection."
-        },
-        "relationship": {
-          "ko": "허겸과 평의회 전령에게 공동 확인을 기대하며 종마루의 증언과 회수 증거를 서로 대조하려 할 수 있다.",
-          "en": "They may expect joint verification from Heo Gyeom and the council messenger and compare Jong Maru's testimony with retrieved evidence."
-        },
-        "effects": []
-      },
-      {
-        "id": "no-shifting-defect-costs",
-        "name": {
-          "ko": "불량 비용 전가 거부",
-          "en": "No Shifting Defect Costs"
-        },
-        "description": {
-          "ko": "류다인은 불량 부품의 책임을 수습 비용이라는 말로 떠넘기는 중개인을 용납하지 않는다.",
-          "en": "Ryu Dain rejects intermediaries who disguise responsibility for defective parts as cleanup costs to be passed on."
-        },
-        "behavior": {
-          "ko": "불량 비용을 전가하는 중개인을 공방 밖으로 밀어내고 한소미에게 출고 중지를 요구하며 가짜 부품의 출고 공방 공개를 추진한다.",
-          "en": "They push cost-shifting intermediaries out of the workshop, ask Han Somi to halt shipments, and seek disclosure of the workshop that shipped fake parts."
-        },
-        "stress": {
-          "ko": "결함이 펌프 정지와 보호군 주둔으로 이어질 우려가 있으면 위조 도장보다 부품의 출처와 책임을 더 집요하게 물을 수 있다.",
-          "en": "If defects threaten pump shutdowns and protection-force stationing, they may press harder for origins and responsibility rather than accept forged stamps."
-        },
-        "relationship": {
-          "ko": "한소미에게 출고 중지의 응답을 기대하고 책임을 피해자에게 넘기는 중개인과는 협력하기 어려울 수 있다.",
-          "en": "They may expect Han Somi to respond to shipment-stop requests and find cooperation difficult with intermediaries who shift responsibility onto those affected."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "수압 시험에서 누수를 찾고 회수 부품과 명부를 함께 보관한다. 결함 증거와 검사에 한정하며 건강 손상을 추정하지 않는다.",
-      "en": "She found leaks in a pressure test and retains returned parts with victim registers. Defect evidence and inspection are supported; health damage is not inferred."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -400,7 +112,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -426,79 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b958-bb38-d654-67f3",
-    "name": "문화 류씨",
-    "crest": "clan-crests/b958-bb38-d654-67f3.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 0,
-    "개방": 15,
-    "무력": -25,
-    "물질": 10,
-    "공동": 25,
-    "원칙": 20,
-    "공개": -25,
-    "자격": 40,
-    "분산": 15,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": -5,
-    "독점": -30,
-    "위험": 15,
-    "과시": 10,
-    "지속": -10,
-    "지향": "동성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "회수 부품·피해 명부 관리",
-    "품계": "교사",
-    "직함": "가짜 정수 부품 피해자 직공",
-    "가치관": "권위 0 | 개방 15 | 무력 −25 | 물질 10 | 공동 25 | 원칙 20 | 공개 −25 | 자격 40 | 분산 15 | 변혁 0",
-    "욕망": "갈망 −5 | 독점 −30 | 위험 15 | 과시 10 | 지속 −10 | 지향 동성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 류다인은 영등포 정수 당직에서 자랐다. 류다인은 탁수 밤의 밸브 서명으로 가짜 정수 부품 피해자 직공 자리를 맡았다.\n- 류다인의 가짜 정수 부품 피해자 직공 업무는 성수2가3동과 연결된다.",
-    "관직": "품계 교사. 직함은 가짜 정수 부품 피해자 직공. 회수 부품과 피해 명부를 같은 함에 넣고, 감정은 골목펌프 정비사와 평의회 전령이 함께 볼 때만 연다.",
-    "일화": "2125년 류다인은 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 가짜 정수 부품 피해자 직공 자리의 서명이 장부에 올랐다.",
-    "관계": "구로의 종마루와 같은 가짜 부품의 양쪽 끝을 증언하고, 허겸의 골목펌프 일지에 단내를 남기며, 한소미에게 출고 중지를 요구해 온 빚이 있다.",
-    "야망": "뚝섬 펌프에 들어간 가짜 부품의 출고 공방을 공개해, 물·부품 공동규격이 위조 도장의 방패가 되지 않게 한다.",
-    "공포": "류다인은 가짜 패킹이 한 기 펌프를 죽이고, 그 정전을 암사 보호군이 구원으로 위장해 주둔하는 상황을 두려워한다.",
-    "개입": "위조 도장 원판을 회수해 그의 라인 중지를 정당화하거나, 명부에 없는 공방을 끼워 넣은 자를 밝혀 직공을 고립시킬 수 있다."
-  },
-  "biography": "패킹에서 나는 단내를 규격 도장보다 먼저 맡고, 불량을 수습 비용으로 넘기는 중개인을 공방 밖으로 밀어낸다. 손은 느려도 회수 상자는 봉인한다.\n\n- 소속: 명부교회\n- 생업: 회수 부품·피해 명부 관리\n- 품계: 교사\n- 직함: 가짜 정수 부품 피해자 직공\n**생애.** 2126년 세대. 류다인은 영등포 정수 당직에서 자랐다. 류다인은 탁수 밤의 밸브 서명으로 가짜 정수 부품 피해자 직공 자리를 맡았다.\n- 류다인의 가짜 정수 부품 피해자 직공 업무는 성수2가3동과 연결된다.\n\n**관직.** 품계 교사. 직함은 가짜 정수 부품 피해자 직공. 회수 부품과 피해 명부를 같은 함에 넣고, 감정은 골목펌프 정비사와 평의회 전령이 함께 볼 때만 연다.\n\n**일화.** 2125년 류다인은 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 가짜 정수 부품 피해자 직공 자리의 서명이 장부에 올랐다.\n\n**관계.** 구로의 종마루와 같은 가짜 부품의 양쪽 끝을 증언하고, 허겸의 골목펌프 일지에 단내를 남기며, 한소미에게 출고 중지를 요구해 온 빚이 있다.\n\n**야망.** 뚝섬 펌프에 들어간 가짜 부품의 출고 공방을 공개해, 물·부품 공동규격이 위조 도장의 방패가 되지 않게 한다.\n\n**공포.** 류다인은 가짜 패킹이 한 기 펌프를 죽이고, 그 정전을 암사 보호군이 구원으로 위장해 주둔하는 상황을 두려워한다.\n\n**개입.** 위조 도장 원판을 회수해 그의 라인 중지를 정당화하거나, 명부에 없는 공방을 끼워 넣은 자를 밝혀 직공을 고립시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 15 | 무력 −25 | 물질 10 | 공동 25 | 원칙 20 | 공개 −25 | 자격 40 | 분산 15 | 변혁 0\n- 욕망: 갈망 −5 | 독점 −30 | 위험 15 | 과시 10 | 지속 −10 | 지향 동성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "류다인",
-        "type": "계약",
-        "to": "허겸",
-        "basis": "허겸의 골목펌프 일지에 단내를 남기며"
-      },
-      {
-        "from": "류다인",
-        "type": "계약",
-        "to": "종마루",
-        "basis": "구로의 종마루와 같은 가짜 부품의 양쪽 끝을 증언하고"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "종마루",
-        "type": "계약",
-        "to": "류다인",
-        "basis": "뚝섬의 류다인과 같은 가짜 부품의 양쪽 끝을 증언한다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

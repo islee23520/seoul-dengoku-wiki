@@ -1,503 +1,129 @@
 {
   "id": "person-0062",
   "name": "유민호",
-  "title": "방화기지 유치·배차장",
-  "position": "방화기지 유치·배차장",
+  "title": "말지기",
+  "position": "말지기 · 잠실역",
   "characterId": "K062",
-  "rank": "부장",
-  "commonTier": "T4",
-  "occupation": "유치선 배차",
+  "rank": "말지기",
+  "commonTier": "T2",
+  "occupation": "교주의 말 전달",
   "gender": "남성",
   "stage": "S1",
-  "state": "S03",
-  "stateName": "태욱그룹",
-  "sourceRoute": "/world/Cast-State-03#인물-유민호",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0062",
   "birthDate": "2102-06-01",
   "birthday": "06-01",
   "age": 24,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-03.json#/content/16",
-    "lore/characters/Cast-State-03.json#/content/18"
-  ],
-  "familyTree": {
-    "personId": "K062",
-    "nodes": [
-      {
-        "id": "K062",
-        "personId": "K062",
-        "kind": "person",
-        "name": "유민호",
-        "birthDate": "2102-06-01",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K062"
-          },
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-유민호-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 방화기지 유치·배차장 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-유민호-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0062"
-      },
-      {
-        "id": "FH-K062-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "유승민",
-        "lineage": {
-          "surname": "유",
-          "bongwan": "강릉",
-          "clan": "c720-ac15-b989"
-        },
-        "birthDate": "2072-06-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-유민호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2110,
-            "summary": "유승민은 신정 차량기지에서 유치선 배차 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-유민호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K062-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "유승원",
-        "lineage": {
-          "surname": "유",
-          "bongwan": "강릉",
-          "clan": "c720-ac15-b989"
-        },
-        "birthDate": "2042-06-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-유민호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "유승원은 신정 차량기지에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-유민호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K062-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "유승진",
-        "lineage": {
-          "surname": "유",
-          "bongwan": "강릉",
-          "clan": "c720-ac15-b989"
-        },
-        "birthDate": "2012-06-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-유민호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "유승진은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-유민호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K062-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승섭",
-        "birthDate": "2072-06-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-유민호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2110,
-            "summary": "최승섭은 신정 차량기지에서 유치선 배차 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-유민호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K062-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정승문",
-        "birthDate": "2042-06-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-유민호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "정승문은 신정 차량기지에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-유민호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K062-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승수",
-        "birthDate": "2012-06-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-유민호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤승수는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-유민호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K062-P-01:K062:biological",
-        "from": "FH-K062-P-01",
-        "to": "K062",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-유민호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K062-P-02:FH-K062-P-01:biological",
-        "from": "FH-K062-P-02",
-        "to": "FH-K062-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-유민호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K062-P-03:FH-K062-P-02:biological",
-        "from": "FH-K062-P-03",
-        "to": "FH-K062-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-유민호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K062-M-01:K062:biological",
-        "from": "FH-K062-M-01",
-        "to": "K062",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-유민호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K062-M-02:FH-K062-M-01:biological",
-        "from": "FH-K062-M-02",
-        "to": "FH-K062-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-유민호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K062-M-03:FH-K062-M-02:biological",
-        "from": "FH-K062-M-03",
-        "to": "FH-K062-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-유민호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c720-ac15-b989",
+    "name": "강릉 유씨",
+    "crest": "clan-crests/c720-ac15-b989.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "교주의 집의 다른 말지기로, 스물네 살이며 둘 가운데 어리다. 잠실과 천호 사이를 오가며 판정을 옮기는데, 지금은 오륜동 대피소장이 된 앞선 말지기 김도하에게서 판정을 외는 법과 옮길 때 숨을 끊는 자리까지 배웠다. 두 말지기가 옮긴 말이 어긋난 일이 지난 긴 밤 철에 한 번 있었고, 다음 네 곁집 자리에서 교주가 다시 말해 준 뒤로 그는 판정을 소리 내어 세 번 외고서야 길을 나선다. 부위는 하나다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "말지기",
+    "품계": "말지기",
+    "생업": "교주의 말 전달",
+    "일하는 역": "잠실역",
+    "잠자는 역": "잠실역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "교주의 집의 다른 말지기로, 스물네 살이며 둘 가운데 어리다. 잠실과 천호 사이를 오가며 판정을 옮기는데, 지금은 오륜동 대피소장이 된 앞선 말지기 김도하에게서 판정을 외는 법과 옮길 때 숨을 끊는 자리까지 배웠다. 두 말지기가 옮긴 말이 어긋난 일이 지난 긴 밤 철에 한 번 있었고, 다음 네 곁집 자리에서 교주가 다시 말해 준 뒤로 그는 판정을 소리 내어 세 번 외고서야 길을 나선다. 부위는 하나다.",
+    "관직": "직함 말지기. 직위 말지기 · 잠실역. 품계 말지기. 일하는 역 잠실역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": 10,
+    "무력": -25,
+    "물질": -30,
+    "공동": 25,
+    "원칙": 35,
+    "공개": -15,
+    "자격": -5,
+    "분산": -20,
+    "변혁": 60
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -40,
+    "위험": 5,
+    "과시": 5,
+    "지속": -15,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0062",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "유민호",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "유민호",
+        "type": "스승과 제자",
+        "to": "김도하",
+        "basis": "판정을 외고 같은 낱말로 옮기는 법을 김도하에게서 배웠다"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K1018",
+    "name": "고예진",
+    "courtId": "court:K1018",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
+      "stewardship": {
+        "base": 6,
+        "effective": 6
       },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 6,
+        "effective": 6
       },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 5,
+        "effective": 5
       }
     },
-    "skills": [
-      {
-        "id": "dispatch",
-        "name": {
-          "ko": "화차 순서 조정",
-          "en": "Freight-car sequencing"
-        },
-        "rating": 65
-      },
-      {
-        "id": "parts",
-        "name": {
-          "ko": "불량 부품 출고 검사",
-          "en": "Defective-parts dispatch inspection"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "no-disguised-cargo",
-        "name": {
-          "ko": "위장 화물 거부",
-          "en": "No Disguised Cargo"
-        },
-        "description": {
-          "ko": "유민호는 연구 물자를 군수 화차로 위장하는 지시를 용납하지 않는다.",
-          "en": "Yu Minho rejects orders to disguise research materials as military cargo."
-        },
-        "behavior": {
-          "ko": "무기가 의심되는 화차는 인증 도장과 심사 봉인이 모두 없으면 출고하지 않는다.",
-          "en": "He withholds suspected weapons wagons unless both certification stamps and review seals are present."
-        },
-        "stress": {
-          "ko": "기지가 군사 집결지로 전용될 조짐이 있다면 화물 인증과 출고 제한을 더 엄격히 지킬 수 있다.",
-          "en": "If the depot appears at risk of becoming a military assembly site, he may enforce cargo certification and shipment restrictions more strictly."
-        },
-        "relationship": {
-          "ko": "화물의 중립성을 지킬 수 있다면 최은재의 인증에 배차를 묶는 협력을 유지할 수 있다.",
-          "en": "He may maintain certification-linked dispatch cooperation with Choi Eunjae when it safeguards cargo neutrality."
-        },
-        "effects": []
-      },
-      {
-        "id": "transparent-dispatch",
-        "name": {
-          "ko": "배차 공개",
-          "en": "Transparent Dispatch"
-        },
-        "description": {
-          "ko": "유민호는 연구·방재·주민 화물의 순서를 공개해 배차를 검증 가능하게 한다.",
-          "en": "Yu Minho makes dispatch reviewable by publishing the order of research, disaster-response, and resident cargo."
-        },
-        "behavior": {
-          "ko": "화물 순서를 매일 공개하고 출고 직전 확인된 불량 부품 상자를 되돌려 보낸다.",
-          "en": "He publishes cargo order daily and returned a defective-parts box identified just before shipment."
-        },
-        "stress": {
-          "ko": "배차망이 군사 보호권의 발판이 될 우려가 있다면 공개 순서와 인증 기준을 유지하려 할 수 있다.",
-          "en": "If the dispatch network risks becoming a foothold for military protection claims, he may seek to preserve published priorities and certification standards."
-        },
-        "relationship": {
-          "ko": "김도하가 민가 배급 화차의 우선을 요구한다면 공개 배차 순서를 둘러싼 긴장이 생길 수 있다.",
-          "en": "Kim Doha’s demands to prioritize household-ration wagons may create tension over the published dispatch order."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "화물 순서를 매일 공개하고 불량 상자를 반송했다. 선로 진동 비유를 초감각으로 읽지 않고 실제 배차와 점검만 평가한다.",
-      "en": "He publishes freight order and returns defective boxes. Track vibration imagery is not supernatural perception; dispatch and inspection are supported."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -507,7 +133,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -533,102 +159,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c720-ac15-b989",
-    "name": "강릉 유씨",
-    "crest": "clan-crests/c720-ac15-b989.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -5,
-    "개방": 25,
-    "무력": -35,
-    "물질": 20,
-    "공동": 5,
-    "원칙": 45,
-    "공개": 30,
-    "자격": 30,
-    "분산": 10,
-    "변혁": 15
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -40,
-    "위험": 5,
-    "과시": 5,
-    "지속": -15,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "태욱그룹",
-    "생업": "유치선 배차",
-    "품계": "부장",
-    "직함": "방화기지 유치·배차장",
-    "업무": "방화3동. 유민호는 방화기지에서 연구·방재·주민 화물의 순서를 공개하고 최은재의 인증과 정하린의 심사가 빠진 의심 화차는 붙이지 않는다.",
-    "가치관": "권위 −5 | 개방 25 | 무력 −35 | 물질 20 | 공동 5 | 원칙 45 | 공개 30 | 자격 30 | 분산 10 | 변혁 15",
-    "욕망": "갈망 0 | 독점 −40 | 위험 5 | 과시 5 | 지속 −15 | 지향 이성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 유민호는 방화기지에서 연구·방재·주민 화물의 순서를 공개하고 최은재의 인증과 정하린의 심사가 빠진 의심 화차는 붙이지 않는다.\n- 업무: 방화3동. 유민호는 방화기지에서 연구·방재·주민 화물의 순서를 공개하고 최은재의 인증과 정하린의 심사가 빠진 의심 화차는 붙이지 않는다.",
-    "관직": "품계 부장. 직함은 방화기지 유치·배차장. 연구·방재·주민 화물의 순서를 매일 공개하고, 무기 의심 화차는 인증 도장과 심사 봉인이 둘 다 없으면 출고하지 않는다.",
-    "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다.",
-    "관계": "최은재의 인증 도장에 배차를 묶는 계약이고, 박태겸의 서울 중계 창구와 배차 시간을 나누며, 김도하의 민가 배급 화차를 우선하라는 압력과 경쟁한다.",
-    "야망": "서울 서부 교통과 방화 유치선을 기술 인증 화물만 오가는 중립 배차망으로 만들어 공동기술원장의 동맥이 된다.",
-    "공포": "항공 접근의 기억만 남은 활주로 터가 군사 집결지가 되어 기지가 보호권의 발판으로 팔리는 것.",
-    "개입": "위장 화차의 실화주를 밝히거나, 중립 배차망 조항에 서명할 증인을 호송할 수 있다."
-  },
-  "biography": "과묵하고 선로 진동으로 열차의 거짓을 읽는다. 연구 물자를 군수 화차로 위장하는 명령을 모욕으로 듣는다.\n\n- 소속: 태욱그룹\n- 생업: 유치선 배차\n- 품계: 부장\n- 직함: 방화기지 유치·배차장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 유민호는 방화기지에서 연구·방재·주민 화물의 순서를 공개하고 최은재의 인증과 정하린의 심사가 빠진 의심 화차는 붙이지 않는다.\n- 업무: 방화3동. 유민호는 방화기지에서 연구·방재·주민 화물의 순서를 공개하고 최은재의 인증과 정하린의 심사가 빠진 의심 화차는 붙이지 않는다.\n\n**관직.** 품계 부장. 직함은 방화기지 유치·배차장. 연구·방재·주민 화물의 순서를 매일 공개하고, 무기 의심 화차는 인증 도장과 심사 봉인이 둘 다 없으면 출고하지 않는다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다.\n\n**관계.** 최은재의 인증 도장에 배차를 묶는 계약이고, 박태겸의 서울 중계 창구와 배차 시간을 나누며, 김도하의 민가 배급 화차를 우선하라는 압력과 경쟁한다.\n\n**야망.** 서울 서부 교통과 방화 유치선을 기술 인증 화물만 오가는 중립 배차망으로 만들어 공동기술원장의 동맥이 된다.\n\n**공포.** 항공 접근의 기억만 남은 활주로 터가 군사 집결지가 되어 기지가 보호권의 발판으로 팔리는 것.\n\n**개입.** 위장 화차의 실화주를 밝히거나, 중립 배차망 조항에 서명할 증인을 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 25 | 무력 −35 | 물질 20 | 공동 5 | 원칙 45 | 공개 30 | 자격 30 | 분산 10 | 변혁 15\n- 욕망: 갈망 0 | 독점 −40 | 위험 5 | 과시 5 | 지속 −15 | 지향 이성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-03"
-  ],
-  "directLiege": {
-    "personId": "K1005",
-    "name": "정서온",
-    "relationKind": "direct-vassal",
-    "ownerTerm": "직속 가신",
-    "effectiveYear": 2126
-  },
-  "court": {
-    "id": "court:K062",
-    "members": [
-      {
-        "personId": "K074",
-        "name": "허미리"
-      }
-    ]
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "유민호",
-        "type": "계약",
-        "to": "최은재",
-        "basis": "인증 도장에 외곽 배차를 묶음"
-      },
-      {
-        "from": "유민호",
-        "type": "계약",
-        "to": "박태겸",
-        "basis": "중계 창구와 외곽 열차를 나눔"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "허서겸",
-        "type": "계약",
-        "to": "유민호",
-        "basis": "유민호의 배차 순서를 정비로 받치는 계약이고"
-      },
-      {
-        "from": "허미리",
-        "type": "지휘",
-        "to": "유민호",
-        "basis": "유민호의 배차 순서를 유치 분필로 집행하는 지휘를 받고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

@@ -1,502 +1,216 @@
 {
   "id": "person-0034",
   "name": "최다인",
-  "title": "공병 작업반장",
-  "position": "공병 작업반장",
+  "title": "강서 바람지기",
+  "position": "강서 바람지기 · 자유도시들",
   "characterId": "K034",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "대합실 당직",
+  "rank": "바람지기",
+  "commonTier": "T1",
+  "occupation": "도시 운영",
   "gender": "남성",
   "stage": "S1",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-최다인",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0034",
   "birthDate": "2091-02-06",
   "birthday": "02-06",
   "age": 35,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/104",
-    "lore/characters/Cast-State-02.json#/content/106",
-    "lore/characters/Cast-State-02.json#/content/107"
-  ],
-  "familyTree": {
-    "personId": "K034",
-    "nodes": [
-      {
-        "id": "K034",
-        "personId": "K034",
-        "kind": "person",
-        "name": "최다인",
-        "birthDate": "2091-02-06",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K034"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-최다인-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 공병 작업반장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-최다인-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0034"
-      },
-      {
-        "id": "FH-K034-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승수",
-        "lineage": {
-          "surname": "최",
-          "bongwan": "수성",
-          "clan": "cd5c-c218-c131-5d14"
-        },
-        "birthDate": "2061-02-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-최다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2099,
-            "summary": "최승수는 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-최다인-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K034-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승은",
-        "lineage": {
-          "surname": "최",
-          "bongwan": "수성",
-          "clan": "cd5c-c218-c131-5d14"
-        },
-        "birthDate": "2031-02-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-최다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2069,
-            "summary": "최승은은 대합실 당직에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-최다인-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K034-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승연",
-        "lineage": {
-          "surname": "최",
-          "bongwan": "수성",
-          "clan": "cd5c-c218-c131-5d14"
-        },
-        "birthDate": "2001-02-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-최다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최승연은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-최다인-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K034-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조승영",
-        "birthDate": "2061-02-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-최다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2099,
-            "summary": "조승영은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-최다인-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K034-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김승은",
-        "birthDate": "2031-02-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-최다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2069,
-            "summary": "김승은은 대합실 당직에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-최다인-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K034-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "박승은",
-        "birthDate": "2001-02-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-최다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박승은은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-최다인-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K034-P-01:K034:biological",
-        "from": "FH-K034-P-01",
-        "to": "K034",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-최다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K034-P-02:FH-K034-P-01:biological",
-        "from": "FH-K034-P-02",
-        "to": "FH-K034-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-최다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K034-P-03:FH-K034-P-02:biological",
-        "from": "FH-K034-P-03",
-        "to": "FH-K034-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-최다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K034-M-01:K034:biological",
-        "from": "FH-K034-M-01",
-        "to": "K034",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-최다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K034-M-02:FH-K034-M-01:biological",
-        "from": "FH-K034-M-02",
-        "to": "FH-K034-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-최다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K034-M-03:FH-K034-M-02:biological",
-        "from": "FH-K034-M-03",
-        "to": "FH-K034-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-최다인-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cd5c-c218-c131-5d14",
+    "name": "수성 최씨",
+    "crest": "clan-crests/cd5c-c218-c131-5d14.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "최다인은 바람밭 도장 집안의 대주로, 앞 바람지기가 맡은 바람밭이 긴 밤 철 두 번 잇달아 와트를 못 채워 물러난 2122년에 김포공항 대주회에서 이름값으로 서 바람지기가 됐다. 서른하나의 나이 몫은 작았지만, 용접 이음을 보고 손을 고르는 그의 집안 바람대가 계약서의 와트를 채운 긴 밤 철은 다섯 집안 가운데 가장 많았다. 그가 맡은 바람밭이 계약서의 와트를 긴 밤 철 두 번 잇달아 채우지 못하면 그는 물러난다. 김포공항역에서 밭장들이 올리는 와트를 날마다 받고, 남는 전기는 양천 기지장 이서담과 맺은 장대로 5호선 케이블에 싣는다. 강서 사람들은 그를 두고 \"바람이 사람을 바꾼다\"는 말을 반쯤 농담으로 한다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "강서 바람지기",
+    "품계": "바람지기",
+    "생업": "도시 운영",
+    "일하는 역": "김포공항역",
+    "잠자는 역": "김포공항역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "최다인은 바람밭 도장 집안의 대주로, 앞 바람지기가 맡은 바람밭이 긴 밤 철 두 번 잇달아 와트를 못 채워 물러난 2122년에 김포공항 대주회에서 이름값으로 서 바람지기가 됐다. 서른하나의 나이 몫은 작았지만, 용접 이음을 보고 손을 고르는 그의 집안 바람대가 계약서의 와트를 채운 긴 밤 철은 다섯 집안 가운데 가장 많았다. 그가 맡은 바람밭이 계약서의 와트를 긴 밤 철 두 번 잇달아 채우지 못하면 그는 물러난다. 김포공항역에서 밭장들이 올리는 와트를 날마다 받고, 남는 전기는 양천 기지장 이서담과 맺은 장대로 5호선 케이블에 싣는다. 강서 사람들은 그를 두고 \"바람이 사람을 바꾼다\"는 말을 반쯤 농담으로 한다.",
+    "관직": "직함 강서 바람지기. 직위 강서 바람지기 · 자유도시들. 품계 바람지기. 일하는 역 김포공항역."
+  },
+  "values": {
+    "권위": -70,
+    "개방": 20,
+    "무력": -15,
+    "물질": 45,
+    "공동": 10,
+    "원칙": 5,
+    "공개": 20,
+    "자격": 80,
+    "분산": 75,
+    "변혁": 30
+  },
+  "desire": {
+    "갈망": -5,
+    "독점": 0,
+    "위험": -30,
+    "과시": -25,
+    "지속": 30,
+    "지향": "이성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0034",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "최다인",
+        "type": "계약",
+        "to": "이서담",
+        "basis": "남는 전기를 5호선 케이블로 양천에 보내는 장을 맺었다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "권미래",
+        "type": "지휘",
+        "to": "최다인",
+        "basis": "강서 바람지기 최다인의 직속"
+      },
+      {
+        "from": "송재민",
+        "type": "지휘",
+        "to": "최다인",
+        "basis": "강서 바람지기 최다인의 직속"
+      },
+      {
+        "from": "오하늘",
+        "type": "지휘",
+        "to": "최다인",
+        "basis": "강서 바람지기 최다인의 직속"
+      },
+      {
+        "from": "두봉",
+        "type": "지휘",
+        "to": "최다인",
+        "basis": "강서 바람지기 최다인의 직속"
+      },
+      {
+        "from": "소감",
+        "type": "지휘",
+        "to": "최다인",
+        "basis": "강서 바람지기 최다인의 직속"
+      },
+      {
+        "from": "용소",
+        "type": "지휘",
+        "to": "최다인",
+        "basis": "강서 바람지기 최다인의 직속"
+      },
+      {
+        "from": "류해담",
+        "type": "지휘",
+        "to": "최다인",
+        "basis": "강서 바람지기 최다인의 직속"
+      },
+      {
+        "from": "하람은",
+        "type": "지휘",
+        "to": "최다인",
+        "basis": "강서 바람지기 최다인의 직속"
+      },
+      {
+        "from": "이서담",
+        "type": "계약",
+        "to": "최다인",
+        "basis": "강서 바람밭의 전기를 5호선 케이블로 받아 기지를 데우는 장을 맺었다"
+      },
+      {
+        "from": "권미래",
+        "type": "맹세",
+        "to": "최다인",
+        "basis": "바람밭이 채운 와트의 셈을 부풀리지 않겠다고 바람지기 앞에서 맹세했다"
+      }
+    ]
+  },
+  "court": {
+    "id": "court:K034",
+    "members": [
+      {
+        "personId": "K220",
+        "name": "권미래"
+      },
+      {
+        "personId": "K222",
+        "name": "송재민"
+      },
+      {
+        "personId": "K223",
+        "name": "오하늘"
+      },
+      {
+        "personId": "K225",
+        "name": "두봉"
+      },
+      {
+        "personId": "K229",
+        "name": "소감"
+      },
+      {
+        "personId": "K236",
+        "name": "용소"
+      },
+      {
+        "personId": "K244",
+        "name": "류해담"
+      },
+      {
+        "personId": "K848",
+        "name": "하람은"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 11,
-        "effective": 11
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "negotiation": {
-        "base": 11,
-        "effective": 11
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 12,
-        "effective": 12
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
-        "base": 6,
-        "effective": 6
-      },
-      "endurance": {
-        "base": 10,
-        "effective": 10
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "k034-crew-negotiation",
-        "name": {
-          "ko": "작업반 조건 협의",
-          "en": "Crew-condition negotiation"
-        },
-        "rating": 65
-      },
-      {
-        "id": "k034-barrier-track-repair",
-        "name": {
-          "ko": "차단문·선로 보수",
-          "en": "Barrier and track repair"
-        },
-        "rating": 60
+        "id": "fc-0034-wind-output",
+        "name": "바람밭 와트 셈",
+        "rating": 68
       }
     ],
-    "traits": [
-      {
-        "id": "k034-seal-before-night-draft",
-        "name": {
-          "ko": "야간 차출의 도장",
-          "en": "Seal before night draft"
-        },
-        "description": {
-          "ko": "야간 무장 차출은 평의회 도장 뒤에 따른다.",
-          "en": "Follows armed night drafts only after the council seal."
-        },
-        "behavior": {
-          "ko": "야간 무장 차출은 평의회 도장 뒤에 따른다.",
-          "en": "Follows armed night drafts only after the council seal."
-        },
-        "stress": {
-          "ko": "자체 식량이 바닥나 공병이 군량 징발대로 바뀌고 복구 노동의 시민권이 사라지는 것.",
-          "en": "That when self-grown food ran out, engineers would turn into ration requisition squads, and repair labor's citizenship would vanish."
-        },
-        "relationship": {
-          "ko": "정시우에게 공차 사제로 묶여 있고, 이강묵의 야간 편성을 마지막에야 승인하며, 박소언의 지붕 공사 인력과 작업반을 나눠 쓴다.",
-          "en": "Bound to Jeong Siwoo as a machine-shop apprentice, approving I Gangmuk's night formations only at the last, and sharing squads with Park Soeon's roof-work crews."
-        },
-        "effects": []
-      },
-      {
-        "id": "k034-restoration-not-requisition",
-        "name": {
-          "ko": "복구를 징발로 바꾸지 않는다",
-          "en": "Restoration without requisition"
-        },
-        "description": {
-          "ko": "복구 노동의 시민권을 지키려 한다.",
-          "en": "Seeks to preserve restoration workers’ citizenship."
-        },
-        "behavior": {
-          "ko": "복구 노동의 시민권을 지키려 한다.",
-          "en": "Seeks to preserve restoration workers’ citizenship."
-        },
-        "stress": {
-          "ko": "자체 식량이 바닥나 공병이 군량 징발대로 바뀌고 복구 노동의 시민권이 사라지는 것.",
-          "en": "That when self-grown food ran out, engineers would turn into ration requisition squads, and repair labor's citizenship would vanish."
-        },
-        "relationship": {
-          "ko": "정시우에게 공차 사제로 묶여 있고, 이강묵의 야간 편성을 마지막에야 승인하며, 박소언의 지붕 공사 인력과 작업반을 나눠 쓴다.",
-          "en": "Bound to Jeong Siwoo as a machine-shop apprentice, approving I Gangmuk's night formations only at the last, and sharing squads with Park Soeon's roof-work crews."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "조건 협의와 보수 수행, 공차 학습이 확인된다. 공병 편성을 개인 전투 탁월함이나 무력 정복 실적으로 읽지 않았다.",
-      "en": "Condition negotiation, repairs, and tolerance learning are confirmed. Engineering formation does not establish exceptional personal combat or conquest."
-    },
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -534,103 +248,239 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
+  "confirmedHoldings": [
     {
-      "id": "title:duchy-41430-S02",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
+      "id": "holding:v3:duchy:11500",
+      "name": {
+        "ko": "강서구 공작령"
+      },
       "holderPersonId": "K034",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:kingdom-s02",
-      "personalLieges": [
+      "directLiegePersonId": null,
+      "stateId": "free-city",
+      "adminRefs": [
         {
-          "holdingId": "holding:opening-duchy-41430-S02",
-          "directLiegePersonId": "K029"
+          "id": "region:1150051000",
+          "name": "염창동"
+        },
+        {
+          "id": "region:1150052000",
+          "name": "등촌1동"
+        },
+        {
+          "id": "region:1150053000",
+          "name": "등촌2동"
+        },
+        {
+          "id": "region:1150053500",
+          "name": "등촌3동"
+        },
+        {
+          "id": "region:1150054000",
+          "name": "화곡1동"
+        },
+        {
+          "id": "region:1150055000",
+          "name": "화곡2동"
+        },
+        {
+          "id": "region:1150056000",
+          "name": "화곡3동"
+        },
+        {
+          "id": "region:1150057000",
+          "name": "화곡4동"
+        },
+        {
+          "id": "region:1150059000",
+          "name": "화곡본동"
+        },
+        {
+          "id": "region:1150059100",
+          "name": "화곡6동"
+        },
+        {
+          "id": "region:1150059300",
+          "name": "화곡8동"
+        },
+        {
+          "id": "region:1150060300",
+          "name": "가양1동"
+        },
+        {
+          "id": "region:1150060400",
+          "name": "가양2동"
+        },
+        {
+          "id": "region:1150060500",
+          "name": "가양3동"
+        },
+        {
+          "id": "region:1150061100",
+          "name": "발산1동"
+        },
+        {
+          "id": "region:1150061500",
+          "name": "우장산동"
+        },
+        {
+          "id": "region:1150062000",
+          "name": "공항동"
+        },
+        {
+          "id": "region:1150063000",
+          "name": "방화1동"
+        },
+        {
+          "id": "region:1150064000",
+          "name": "방화2동"
+        },
+        {
+          "id": "region:1150064100",
+          "name": "방화3동"
         }
       ],
-      "directOwnership": false
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11500",
+      "geometrySource": null,
+      "formalTitleRank": null
     }
   ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "cd5c-c218-c131-5d14",
-    "name": "수성 최씨",
-    "crest": "clan-crests/cd5c-c218-c131-5d14.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -35,
-    "개방": 5,
-    "무력": -5,
-    "물질": 30,
-    "공동": 35,
-    "원칙": 15,
-    "공개": 20,
-    "자격": 60,
-    "분산": 20,
-    "변혁": 20
-  },
-  "desire": {
-    "갈망": -5,
-    "독점": 0,
-    "위험": -30,
-    "과시": -25,
-    "지속": 30,
-    "지향": "이성",
-    "결합": "다자"
-  },
-  "fields": {
-    "소속": "규격맹",
-    "생업": "대합실 당직",
-    "품계": "조합원",
-    "직함": "공병 작업반장",
-    "업무 위치": "오류2동. 최다인은 오류2동에서 결빙한 남서 선로와 차단문의 보수 순서를 작업반에 읽어 준다. 정시우의 실측 공차가 나오기 전에는 천왕 쪽 부품을 끼우지 않고, 박소언에게 빠지는 지붕 공사 인원을 적어 다음 낮 교대로 넘긴다.",
-    "가치관": "권위 −35 | 개방 5 | 무력 −5 | 물질 30 | 공동 35 | 원칙 15 | 공개 20 | 자격 60 | 분산 20 | 변혁 20",
-    "욕망": "갈망 −5 | 독점 0 | 위험 −30 | 과시 −25 | 지속 30 | 지향 이성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 공병 작업반장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 오류2동. 최다인은 오류2동에서 결빙한 남서 선로와 차단문의 보수 순서를 작업반에 읽어 준다. 정시우의 실측 공차가 나오기 전에는 천왕 쪽 부품을 끼우지 않고, 박소언에게 빠지는 지붕 공사 인원을 적어 다음 낮 교대로 넘긴다.",
-    "관직": "품계 조합원. 직함은 공병 작업반장. 차단문과 선로 보수를 낮 교대에 공개하고, 야간 무장 차출은 길드 평의회의 도장이 있어야 따른다.",
-    "일화": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 공병 작업반장 자리의 서명이 장부에 올랐다.",
-    "관계": "정시우에게 공차 사제로 묶여 있고, 이강묵의 야간 편성을 마지막에야 승인하며, 박소언의 지붕 공사 인력과 작업반을 나눠 쓴다.",
-    "야망": "작업반 전환 공병대를 규격 복구의 선봉으로 만들어, 무력 정복 없이 남서 외곽 선로를 규격맹 표준으로 깐다.",
-    "공포": "자체 식량이 바닥나 공병이 군량 징발대로 바뀌고 복구 노동의 시민권이 사라지는 것.",
-    "개입": "외곽 선로 보수에 동행해 최다인의 표준 깔기를 돕거나, 군량 징발 명령을 증거로 남겨 작업반 투표를 막을 수 있다."
-  },
-  "biography": "대담하고 손빠르며 계급 배지보다 용접 이음을 본다. 완성된 차단문을 정치 협상용으로 열어 두라는 명령을 싫어한다.\n\n- 소속: 규격맹\n- 생업: 대합실 당직\n- 품계: 조합원\n- 직함: 공병 작업반장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 공병 작업반장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 오류2동. 최다인은 오류2동에서 결빙한 남서 선로와 차단문의 보수 순서를 작업반에 읽어 준다. 정시우의 실측 공차가 나오기 전에는 천왕 쪽 부품을 끼우지 않고, 박소언에게 빠지는 지붕 공사 인원을 적어 다음 낮 교대로 넘긴다.\n\n**관직.** 품계 조합원. 직함은 공병 작업반장. 차단문과 선로 보수를 낮 교대에 공개하고, 야간 무장 차출은 길드 평의회의 도장이 있어야 따른다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 공병 작업반장 자리의 서명이 장부에 올랐다.\n\n**관계.** 정시우에게 공차 사제로 묶여 있고, 이강묵의 야간 편성을 마지막에야 승인하며, 박소언의 지붕 공사 인력과 작업반을 나눠 쓴다.\n\n**야망.** 작업반 전환 공병대를 규격 복구의 선봉으로 만들어, 무력 정복 없이 남서 외곽 선로를 규격맹 표준으로 깐다.\n\n**공포.** 자체 식량이 바닥나 공병이 군량 징발대로 바뀌고 복구 노동의 시민권이 사라지는 것.\n\n**개입.** 외곽 선로 보수에 동행해 최다인의 표준 깔기를 돕거나, 군량 징발 명령을 증거로 남겨 작업반 투표를 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 5 | 무력 −5 | 물질 30 | 공동 35 | 원칙 15 | 공개 20 | 자격 60 | 분산 20 | 변혁 20\n- 욕망: 갈망 −5 | 독점 0 | 위험 −30 | 과시 −25 | 지속 30 | 지향 이성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-02"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "최다인",
-        "type": "사제",
-        "to": "정시우",
-        "basis": "공차 사제로 회장 계측에 묶임"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "허다온",
-        "type": "계약",
-        "to": "최다인",
-        "basis": "최다인의 공병 작업반에 차륜을 대며"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:section:강서구:가양",
+      "name": {
+        "ko": "가양 구간"
       },
-      {
-        "from": "명소이",
-        "type": "사제",
-        "to": "최다인",
-        "basis": "최다인에게 공차 사제로 묶여 외곽 깔기를 나누고"
+      "holderPersonId": "K225",
+      "directLiegePersonId": "K034",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "가양",
+        "stationName": "가양"
       },
-      {
-        "from": "기필호",
-        "type": "경쟁",
-        "to": "최다인",
-        "basis": "최다인의 공병 작업반과 출고 순서를 다투고"
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1150060400",
+          "name": "가양2동"
+        },
+        {
+          "id": "region:1150052000",
+          "name": "등촌1동"
+        },
+        {
+          "id": "region:1147053000",
+          "name": "목3동"
+        },
+        {
+          "id": "region:1150051000",
+          "name": "염창동"
+        }
+      ],
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "두봉",
+      "holderRoute": "/people/person-0226"
+    },
+    {
+      "id": "holding:v3:section:강서구:화곡",
+      "name": {
+        "ko": "화곡 구간"
+      },
+      "holderPersonId": "K229",
+      "directLiegePersonId": "K034",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "우장산",
+        "stationName": "우장산"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1150061500",
+          "name": "우장산동"
+        },
+        {
+          "id": "region:1150054000",
+          "name": "화곡1동"
+        }
+      ],
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "소감",
+      "holderRoute": "/people/person-0230"
+    },
+    {
+      "id": "holding:v3:section:강서구:마곡",
+      "name": {
+        "ko": "마곡 구간"
+      },
+      "holderPersonId": "K236",
+      "directLiegePersonId": "K034",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "마곡",
+        "stationName": "마곡"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1150062000",
+          "name": "공항동"
+        },
+        {
+          "id": "region:1150060300",
+          "name": "가양1동"
+        },
+        {
+          "id": "region:1150061100",
+          "name": "발산1동"
+        }
+      ],
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "용소",
+      "holderRoute": "/people/person-0237"
+    },
+    {
+      "id": "holding:v3:section:강서구:김포공항",
+      "name": {
+        "ko": "김포공항 구간"
+      },
+      "holderPersonId": "K244",
+      "directLiegePersonId": "K034",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "김포공항",
+        "stationName": "김포공항"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1150062000",
+          "name": "공항동"
+        },
+        {
+          "id": "region:1150064100",
+          "name": "방화3동"
+        },
+        {
+          "id": "region:1150064000",
+          "name": "방화2동"
+        },
+        {
+          "id": "region:1150063000",
+          "name": "방화1동"
+        }
+      ],
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "류해담",
+      "holderRoute": "/people/person-0245"
+    }
+  ]
 }

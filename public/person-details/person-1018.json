@@ -1,362 +1,557 @@
 {
   "id": "person-1018",
   "name": "고예진",
-  "title": "권역 간 계약 자문가",
-  "position": "권역 간 계약 자문가",
+  "title": "교주",
+  "position": "교주 · 아크",
   "characterId": "K1018",
-  "rank": "미등록",
-  "commonTier": "T5",
-  "occupation": "주 물류상 / 부 기록관",
+  "rank": "교주",
+  "commonTier": "T1",
+  "occupation": "신앙 통솔",
   "gender": "여성",
-  "stage": "S1",
-  "state": "S16",
-  "stateName": "정동노총",
-  "sourceRoute": "/world/Cast-Unaffiliated#인물-고예진",
+  "stage": "주요",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-1018",
   "birthDate": "2088-11-04",
   "birthday": "11-04",
   "age": 38,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-Unaffiliated.json#/content/40",
-    "lore/characters/Cast-Unaffiliated.json#/content/42",
-    "lore/characters/Cast-Unaffiliated.json#/content/48",
-    "lore/chronology/Century-Annals.json#/content/488"
-  ],
-  "familyTree": {
-    "personId": "K1018",
-    "nodes": [
-      {
-        "id": "K1018",
-        "personId": "K1018",
-        "kind": "person",
-        "name": "고예진",
-        "birthDate": "2088-11-04",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K1018"
-          },
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-서하진-list1"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "성명: 고예진 (Goh Yejin)",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-서하진-list1"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-1018"
-      },
-      {
-        "id": "FH-K1018-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "고현연",
-        "birthDate": "2050-11-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-서하진-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2096,
-            "summary": "고현연은 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-서하진-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1018-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "고현정",
-        "birthDate": "2007-11-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-서하진-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "고현정은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-서하진-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1018-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조서호",
-        "birthDate": "2052-11-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-서하진-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2096,
-            "summary": "조서호는 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-서하진-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1018-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김서민",
-        "birthDate": "2012-11-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-서하진-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "김서민은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-서하진-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K1018-P-01:K1018:biological",
-        "from": "FH-K1018-P-01",
-        "to": "K1018",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-서하진-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1018-P-02:FH-K1018-P-01:biological",
-        "from": "FH-K1018-P-02",
-        "to": "FH-K1018-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-서하진-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1018-M-01:K1018:biological",
-        "from": "FH-K1018-M-01",
-        "to": "K1018",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-서하진-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1018-M-02:FH-K1018-M-01:biological",
-        "from": "FH-K1018-M-02",
-        "to": "FH-K1018-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-서하진-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": null,
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "고예진은 아크의 교주이고, 신도들은 그를 메시아라 부른다. 자유도시에서 자랐고, 2112년 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾았으며, 다섯 해 동안 매뉴얼을 읽은 끝에 2117년 무렵 열두 명에게 첫 세례를 주었다. 지금은 잠실 교주의 집에서 정비대 앞에 서고, 그가 말한 판정은 말지기의 입을 거쳐 네 본역에 같은 낱말로 닿는다. 다른 아크 사람은 모두 이름과 부위 수로 불리지만, 교주의 부위는 아무도 세지 않는다. 2120년부터 곁을 지킨 지연희는 부위 하나 없는 몸으로 지금도 그 뒤에 선다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "교주",
+    "품계": "교주",
+    "생업": "신앙 통솔",
+    "일하는 역": "잠실역",
+    "잠자는 역": "잠실역",
+    "가구": "혼자 사는 가구"
   },
-  "proseContacts": [],
+  "sections": {
+    "생애": "고예진은 아크의 교주이고, 신도들은 그를 메시아라 부른다. 자유도시에서 자랐고, 2112년 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾았으며, 다섯 해 동안 매뉴얼을 읽은 끝에 2117년 무렵 열두 명에게 첫 세례를 주었다. 지금은 잠실 교주의 집에서 정비대 앞에 서고, 그가 말한 판정은 말지기의 입을 거쳐 네 본역에 같은 낱말로 닿는다. 다른 아크 사람은 모두 이름과 부위 수로 불리지만, 교주의 부위는 아무도 세지 않는다. 2120년부터 곁을 지킨 지연희는 부위 하나 없는 몸으로 지금도 그 뒤에 선다.",
+    "관직": "직함 교주. 직위 교주 · 아크. 품계 교주. 일하는 역 잠실역."
+  },
+  "values": {
+    "권위": 15,
+    "개방": 25,
+    "무력": -30,
+    "물질": 10,
+    "공동": -20,
+    "원칙": 10,
+    "공개": -100,
+    "자격": -5,
+    "분산": 20,
+    "변혁": 65
+  },
+  "desire": {
+    "갈망": 50,
+    "독점": 40,
+    "위험": 60,
+    "과시": -30,
+    "지속": 20,
+    "지향": "양성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-1018",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "고예진",
+        "type": "맹세",
+        "to": "지연희",
+        "basis": "2120년 탄천 쪽 대피소 교섭 자리에서 곁에 선 뒤로 지연희가 교주를 지킨다"
+      },
+      {
+        "from": "고예진",
+        "type": "계약",
+        "to": "남윤경",
+        "basis": "송파 곁집이 2120년에 약속한 잠실수중보 수차의 전기가 교주의 집 정비대로 들어온다. 남윤경이 지금 그 약속을 쥔다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "정호준",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "이봄결",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "유민호",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "임시온",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "변태온",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "임하준",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "임초원",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "오경재",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "한소미",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "김보람",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "이준택",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "최나래",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "정가온",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "장민재",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "유하은",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "종나솔",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "엄미래",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "배우진",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "김우찬",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "정소율",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "박하율",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "최도윤",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "임겨레",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "차윤목",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "이홍원",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "조우찬",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "소봉",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "남윤경",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "정유라",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "하서진",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "심유리",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "은보람",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "안태경",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "고영호",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "서구서",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "고별호",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "정서온",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "지연희",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "오경재",
+        "type": "맹세",
+        "to": "고예진",
+        "basis": "교주에게서 강남 곁집장 자리를 받으며 교주의 말을 강남의 법으로 삼겠다고 한 맹세"
+      },
+      {
+        "from": "한소미",
+        "type": "맹세",
+        "to": "고예진",
+        "basis": "어느 곁집에도 매이지 않고 교주의 말만 따르겠다는 호위의 맹세"
+      },
+      {
+        "from": "남윤경",
+        "type": "맹세",
+        "to": "고예진",
+        "basis": "2120년 송파 집안이 수차의 전기를 교주의 정비대에 대기로 한 약속을 맹세로 지킨다"
+      },
+      {
+        "from": "심유리",
+        "type": "맹세",
+        "to": "고예진",
+        "basis": "교주의 판정을 들은 그대로, 한 글자도 보태거나 빼지 않고 본역에 옮기겠다는 맹세"
+      },
+      {
+        "from": "지연희",
+        "type": "맹세",
+        "to": "고예진",
+        "basis": "2120년 탄천 쪽 대피소 교섭 자리에서 고예진 곁에 선 뒤로 그 뒤를 지킨다"
+      },
+      {
+        "from": "한서경",
+        "type": "맹세",
+        "to": "고예진",
+        "basis": "고예진이 매뉴얼을 읽던 다섯 해 동안 수서 옛 차량기지 둘레 대피소들이 정비대에 대던 먹을 것과 고물의 셈을 끝까지 지켜 교주 곁에 섰다"
+      }
+    ]
+  },
+  "court": {
+    "id": "court:K1018",
+    "members": [
+      {
+        "personId": "K057",
+        "name": "정호준"
+      },
+      {
+        "personId": "K060",
+        "name": "이봄결"
+      },
+      {
+        "personId": "K062",
+        "name": "유민호"
+      },
+      {
+        "personId": "K065",
+        "name": "임시온"
+      },
+      {
+        "personId": "K073",
+        "name": "변태온"
+      },
+      {
+        "personId": "K086",
+        "name": "임하준"
+      },
+      {
+        "personId": "K087",
+        "name": "임초원"
+      },
+      {
+        "personId": "K423",
+        "name": "오경재"
+      },
+      {
+        "personId": "K088",
+        "name": "한소미"
+      },
+      {
+        "personId": "K090",
+        "name": "김보람"
+      },
+      {
+        "personId": "person-0092",
+        "name": "이준택"
+      },
+      {
+        "personId": "person-0093",
+        "name": "최나래"
+      },
+      {
+        "personId": "K093",
+        "name": "정가온"
+      },
+      {
+        "personId": "K094",
+        "name": "장민재"
+      },
+      {
+        "personId": "K095",
+        "name": "유하은"
+      },
+      {
+        "personId": "K108",
+        "name": "종나솔"
+      },
+      {
+        "personId": "K112",
+        "name": "엄미래"
+      },
+      {
+        "personId": "K115",
+        "name": "배우진"
+      },
+      {
+        "personId": "K116",
+        "name": "김우찬"
+      },
+      {
+        "personId": "K117",
+        "name": "정소율"
+      },
+      {
+        "personId": "K120",
+        "name": "박하율"
+      },
+      {
+        "personId": "K121",
+        "name": "최도윤"
+      },
+      {
+        "personId": "K122",
+        "name": "임겨레"
+      },
+      {
+        "personId": "K134",
+        "name": "차윤목"
+      },
+      {
+        "personId": "K271",
+        "name": "이홍원"
+      },
+      {
+        "personId": "K273",
+        "name": "조우찬"
+      },
+      {
+        "personId": "K281",
+        "name": "소봉"
+      },
+      {
+        "personId": "K373",
+        "name": "남윤경"
+      },
+      {
+        "personId": "K398",
+        "name": "정유라"
+      },
+      {
+        "personId": "K399",
+        "name": "하서진"
+      },
+      {
+        "personId": "K401",
+        "name": "심유리"
+      },
+      {
+        "personId": "K402",
+        "name": "은보람"
+      },
+      {
+        "personId": "K403",
+        "name": "안태경"
+      },
+      {
+        "personId": "K443",
+        "name": "고영호"
+      },
+      {
+        "personId": "K555",
+        "name": "서구서"
+      },
+      {
+        "personId": "K603",
+        "name": "고별호"
+      },
+      {
+        "personId": "K1005",
+        "name": "정서온"
+      },
+      {
+        "personId": "K1017",
+        "name": "지연희"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 10,
         "effective": 10
       },
-      "strategy": {
-        "base": 13,
-        "effective": 13
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 16,
-        "effective": 16
-      },
-      "management": {
-        "base": 13,
-        "effective": 13
-      },
-      "insight": {
-        "base": 16,
-        "effective": 16
-      },
-      "learning": {
-        "base": 15,
-        "effective": 15
-      },
-      "prowess": {
-        "base": 11,
-        "effective": 11
-      },
-      "endurance": {
+      "stewardship": {
         "base": 9,
         "effective": 9
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "k1018-contract-advice",
-        "name": {
-          "ko": "계약 자문",
-          "en": "Contract advice"
-        },
-        "rating": 75
+        "id": "skill-v3-manual-reading",
+        "name": "매뉴얼 읽기",
+        "rating": 80
       },
       {
-        "id": "k1018-pistol-training",
-        "name": {
-          "ko": "권총 사격",
-          "en": "Pistol shooting"
-        },
-        "rating": 60
+        "id": "skill-v3-bench-judgement",
+        "name": "정비대 판정",
+        "rating": 75
       }
     ],
     "traits": [
       {
-        "id": "k1018-trait-1",
-        "name": {
-          "ko": "근거 앞의 수정",
-          "en": "Revision when evidence changes"
-        },
-        "description": {
-          "ko": "오류를 확인하면 판단과 계획을 고친다.",
-          "en": "Revises judgment and plans when an error is established."
-        },
-        "behavior": {
-          "ko": "오류를 확인하면 판단과 계획을 고친다.",
-          "en": "Revises judgment and plans when an error is established."
-        },
-        "stress": {
-          "ko": "지루함을 피해도 회수 대책 없는 자산 위험은 택하지 않는다.",
-          "en": "Does not choose unrecoverable asset risks just to avoid boredom."
-        },
-        "relationship": {
-          "ko": "거절을 인정하지만 감정으로 바뀐 입장은 예측하기 어렵다.",
-          "en": "Accepts refusal but struggles to predict positions changed by emotion."
-        },
+        "id": "trait-v3-judgement-corrected",
+        "name": "고쳐 말하는 판정",
+        "description": "새 근거가 나오면 정비대 앞에서 한 자기 판정을 스스로 고쳐 말한다.",
+        "behavior": "판정하기 전에 말한 사람의 말과 정비대의 기록을 맞대어 본다.",
+        "stress": "같은 날이 되풀이되면 정비대 곁을 떠나지 않고 낡은 매뉴얼을 다시 읽는다.",
+        "relationship": "남의 마음을 짐작하지만 함께 느끼지는 못해, 마음이 움직여 뜻을 바꾼 사람의 다음 걸음을 자주 잘못 읽는다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "진술·몸짓·기록의 모순을 대조하고 손익·권한·책임을 확인한다. 근거가 바뀌면 판단을 고치며 상대의 거절을 인정한다. 감정 변화는 추론해도 정서적으로 공유하지 못해 예측이 빗나갈 수 있다.",
-      "en": "She compares statements, gestures, and records, then checks costs, authority, and responsibility. She revises judgments when evidence changes and accepts refusal. She infers emotions without sharing them, so emotional changes can defeat predictions."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -395,85 +590,418 @@
     }
   },
   "confirmedHoldings": [],
-  "clan": null,
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": false,
-  "values": {
-    "권위": -10,
-    "개방": 40,
-    "무력": -40,
-    "물질": 60,
-    "공동": -40,
-    "원칙": 20,
-    "공개": -60,
-    "자격": 30,
-    "분산": 50,
-    "변혁": 20
-  },
-  "desire": {
-    "갈망": 50,
-    "독점": 40,
-    "위험": 60,
-    "과시": -30,
-    "지속": 20,
-    "지향": "양성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "성명": "고예진 (Goh Yejin)",
-    "캐릭터 ID": "K1018",
-    "출신 공동체": "이수역 생활권에서 성장하였다. 출생지는 미정이며, 지금은 수서 차량기지에 계약 자문 업무 거점을 둔다.",
-    "생년월일": "2088-11-04",
-    "언어": "한국어",
-    "생업": "주 물류상 / 부 기록관",
-    "소속": "정동노총(S16). 어느 나라의 관직도 맡지 않는다.",
-    "봉건 품계": "없음. 대한민국 정부가 수여한 관직도 없다.",
-    "민간·공동체 직무": "권역 간 계약 자문가 대한민국 정부 관직이나 봉건 품계가 아니다.",
-    "성격": "진술과 표정·몸짓, 상황과 기록의 모순을 대조한 뒤 손익과 권한·책임을 확인한다. 감정은 추론하지만 정서적으로 공유하지 못한다. 상대가 감정적 계기로 입장을 바꾸면 예측이 빗나갈 수 있다.",
-    "개인 야망": "특정 국가의 관직에 속하지 않고 권역 사이의 거래를 조정하려 한다.",
-    "공포": "지루함을 두려워한다. 복잡한 문제에 흥미를 느끼지만 재미만으로 회수 대책 없는 자산 위험을 택하지 않는다.",
-    "통치 방식": "타당한 근거가 나오면 판단을 바꾼다. 자기 판단을 유지하더라도 상대의 불참과 거절을 인정한다.",
-    "관계": "권역 사이의 계약을 준비하는 사람들에게 자문한다.",
-    "촉발 사건": "운송 계약을 준비하는 사람들이 자문을 요청한다.",
-    "플레이어 개입": "거래 현장의 조건을 대조하거나 연락·협상·운송 인계를 맡을 수 있다.",
-    "거주지": "수서동 역 밖 개별 거처(제안); 세 인물의 동거·임차권·소유권을 가정하지 않는다.",
-    "업무 위치": "기존 수서 차량기지 계약 자문 거점 유지. 수서동의 역 밖 자문 접수·기록 대조 공간을 위치안으로 추가한다. 수서역 대합실의 생활 화물 인계·배급과 예약 화물 창고는 업무 수요 근거다. 역 시설 사용권·감사권·배차권·결제권·선로 보행권은 부여하지 않는다."
-  },
-  "sections": {},
-  "biography": "- 성명: 고예진 (Goh Yejin)\n- 캐릭터 ID: K1018\n- 출신 공동체: 이수역 생활권에서 성장하였다. 출생지는 미정이며, 지금은 수서 차량기지에 계약 자문 업무 거점을 둔다.\n- 생년월일: 2088-11-04\n- 언어: 한국어\n- 생업: 주 물류상 / 부 기록관\n- 소속: 정동노총(S16). 어느 나라의 관직도 맡지 않는다.\n- 봉건 품계: 없음. 대한민국 정부가 수여한 관직도 없다.\n- 민간·공동체 직무: 권역 간 계약 자문가 대한민국 정부 관직이나 봉건 품계가 아니다.\n- 성격: 진술과 표정·몸짓, 상황과 기록의 모순을 대조한 뒤 손익과 권한·책임을 확인한다. 감정은 추론하지만 정서적으로 공유하지 못한다. 상대가 감정적 계기로 입장을 바꾸면 예측이 빗나갈 수 있다.\n- 개인 야망: 특정 국가의 관직에 속하지 않고 권역 사이의 거래를 조정하려 한다.\n- 공포: 지루함을 두려워한다. 복잡한 문제에 흥미를 느끼지만 재미만으로 회수 대책 없는 자산 위험을 택하지 않는다.\n- 통치 방식: 타당한 근거가 나오면 판단을 바꾼다. 자기 판단을 유지하더라도 상대의 불참과 거절을 인정한다.\n- 관계: 권역 사이의 계약을 준비하는 사람들에게 자문한다.\n- 촉발 사건: 운송 계약을 준비하는 사람들이 자문을 요청한다.\n- 플레이어 개입: 거래 현장의 조건을 대조하거나 연락·협상·운송 인계를 맡을 수 있다.\n- 거주지: 수서동 역 밖 개별 거처(제안); 세 인물의 동거·임차권·소유권을 가정하지 않는다.\n- 업무 위치: 기존 수서 차량기지 계약 자문 거점 유지. 수서동의 역 밖 자문 접수·기록 대조 공간을 위치안으로 추가한다. 수서역 대합실의 생활 화물 인계·배급과 예약 화물 창고는 업무 수요 근거다. 역 시설 사용권·감사권·배차권·결제권·선로 보행권은 부여하지 않는다.\n- 고예진은 수서동의 역 밖 거처에 머물며 기존 수서 차량기지 계약 자문을 이어 간다. 수서동의 자문 접수 자리에서는 서울 안의 상인들이 가져온 운송 조건과 인계 기록을 대조한다. 특정 국가의 관직을 맡지 않으며 수서의 감사권, 용산의 배차권, 노량진의 결제권은 없다.\n\n고예진은 이수역 생활권에서 상단 실무를 시작하였다. 거래와 운송, 정산을 익힌 뒤 계약 업무로 일의 범위를 넓혔다.\n\n수서 차량기지는 2080년 이후 어느 나라에도 속하지 않았다. 2120년대 고예진은 그곳에서 권역 간 계약 자문가로 일하였다.\n\n고예진은 거래 계약을 자문한다. 수서의 감사권과 용산의 배차권, 노량진의 결제권은 고예진에게 없다.\n\n고예진은 자기 판단이 틀렸음을 확인하면 이를 인정하고 계획을 고치며 관련 당사자와 처리 방식을 협의한다.\n\n고예진은 공동체의 경비·방호·비상 동원에 참여하였다. 방호 교육과 반복 사격으로 권총을 익혔으며 개인 소유 권총을 사용한다. 모델과 탄약 수량은 정하지 않았다.\n\n고예진은 상대와 상황에 따라 말투를 바꾼다. 평소 차분하고 정중하며 흥미가 생기면 여유와 장난스러움이 드러난다. 게임과 퍼즐을 즐기고 침대에 누워 추리소설을 많이 읽는다.\n\n검정 머리는 어깨 전후의 길이이며 정말 집중해야 할 때에만 묶는다. 보통 체형에 안정적이고 단정한 자세를 취한다. 자문 업무에는 정돈된 복장을 입고 상대와 장소에 맞춰 조정하며 어두운 중성색과 고채도·저명도의 색을 의상별로 사용한다.\n\n얇은 문서집과 필요한 수첩·필기구를 휴대하며 쉬는 동안에는 편한 실내복을 입는다. 출생지와 가족의 신원은 정하지 않았다.",
-  "sources": [
-    "Cast-Unaffiliated"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "고예진",
-        "type": "계약",
-        "to": "한서경",
-        "basis": "범위를 정한 계약 검토·정산 업무 위임"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:duchy:11680",
+      "name": {
+        "ko": "강남구 공작령"
       },
-      {
-        "from": "고예진",
-        "type": "경쟁",
-        "to": "차유선",
-        "basis": "계약의 정보 공개·책임 조건을 둘러싼 이견"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "한서경",
-        "type": "계약",
-        "to": "고예진",
-        "basis": "보수와 위임 범위를 정해 함께 일한다"
+      "holderPersonId": "K423",
+      "directLiegePersonId": "K1018",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1168051000",
+          "name": "신사동"
+        },
+        {
+          "id": "region:1168052100",
+          "name": "논현1동"
+        },
+        {
+          "id": "region:1168053100",
+          "name": "논현2동"
+        },
+        {
+          "id": "region:1168054500",
+          "name": "압구정동"
+        },
+        {
+          "id": "region:1168056500",
+          "name": "청담동"
+        },
+        {
+          "id": "region:1168058000",
+          "name": "삼성1동"
+        },
+        {
+          "id": "region:1168059000",
+          "name": "삼성2동"
+        },
+        {
+          "id": "region:1168060000",
+          "name": "대치1동"
+        },
+        {
+          "id": "region:1168061000",
+          "name": "대치2동"
+        },
+        {
+          "id": "region:1168063000",
+          "name": "대치4동"
+        },
+        {
+          "id": "region:1168064000",
+          "name": "역삼1동"
+        },
+        {
+          "id": "region:1168065000",
+          "name": "역삼2동"
+        },
+        {
+          "id": "region:1168065500",
+          "name": "도곡1동"
+        },
+        {
+          "id": "region:1168065600",
+          "name": "도곡2동"
+        },
+        {
+          "id": "region:1168066000",
+          "name": "개포1동"
+        },
+        {
+          "id": "region:1168067000",
+          "name": "개포2동"
+        },
+        {
+          "id": "region:1168067500",
+          "name": "개포3동"
+        },
+        {
+          "id": "region:1168069000",
+          "name": "개포4동"
+        },
+        {
+          "id": "region:1168070000",
+          "name": "세곡동"
+        },
+        {
+          "id": "region:1168072000",
+          "name": "일원본동"
+        },
+        {
+          "id": "region:1168073000",
+          "name": "일원1동"
+        },
+        {
+          "id": "region:1168075000",
+          "name": "수서동"
+        }
+      ],
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11680",
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "오경재",
+      "holderRoute": "/people/person-0088"
+    },
+    {
+      "id": "holding:v3:duchy:11740",
+      "name": {
+        "ko": "강동구 공작령"
       },
-      {
-        "from": "차유선",
-        "type": "경쟁",
-        "to": "고예진",
-        "basis": "상인들의 위임에 따라 계약 조건을 교섭한다"
-      }
-    ]
-  }
+      "holderPersonId": "K115",
+      "directLiegePersonId": "K1018",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1174051500",
+          "name": "강일동"
+        },
+        {
+          "id": "region:1174052500",
+          "name": "상일제1동"
+        },
+        {
+          "id": "region:1174052600",
+          "name": "상일제2동"
+        },
+        {
+          "id": "region:1174053000",
+          "name": "명일1동"
+        },
+        {
+          "id": "region:1174054000",
+          "name": "명일2동"
+        },
+        {
+          "id": "region:1174055000",
+          "name": "고덕1동"
+        },
+        {
+          "id": "region:1174056000",
+          "name": "고덕2동"
+        },
+        {
+          "id": "region:1174057000",
+          "name": "암사1동"
+        },
+        {
+          "id": "region:1174058000",
+          "name": "암사2동"
+        },
+        {
+          "id": "region:1174059000",
+          "name": "암사3동"
+        },
+        {
+          "id": "region:1174060000",
+          "name": "천호1동"
+        },
+        {
+          "id": "region:1174061000",
+          "name": "천호2동"
+        },
+        {
+          "id": "region:1174062000",
+          "name": "천호3동"
+        },
+        {
+          "id": "region:1174064000",
+          "name": "성내1동"
+        },
+        {
+          "id": "region:1174065000",
+          "name": "성내2동"
+        },
+        {
+          "id": "region:1174066000",
+          "name": "성내3동"
+        },
+        {
+          "id": "region:1174068500",
+          "name": "길동"
+        },
+        {
+          "id": "region:1174069000",
+          "name": "둔촌1동"
+        },
+        {
+          "id": "region:1174070000",
+          "name": "둔촌2동"
+        }
+      ],
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11740",
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "배우진",
+      "holderRoute": "/people/person-0116"
+    },
+    {
+      "id": "holding:v3:duchy:11710",
+      "name": {
+        "ko": "송파구 공작령"
+      },
+      "holderPersonId": "K373",
+      "directLiegePersonId": "K1018",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1171051000",
+          "name": "풍납1동"
+        },
+        {
+          "id": "region:1171052000",
+          "name": "풍납2동"
+        },
+        {
+          "id": "region:1171053100",
+          "name": "거여1동"
+        },
+        {
+          "id": "region:1171053200",
+          "name": "거여2동"
+        },
+        {
+          "id": "region:1171054000",
+          "name": "마천1동"
+        },
+        {
+          "id": "region:1171055000",
+          "name": "마천2동"
+        },
+        {
+          "id": "region:1171056100",
+          "name": "방이1동"
+        },
+        {
+          "id": "region:1171056200",
+          "name": "방이2동"
+        },
+        {
+          "id": "region:1171056600",
+          "name": "오륜동"
+        },
+        {
+          "id": "region:1171057000",
+          "name": "오금동"
+        },
+        {
+          "id": "region:1171058000",
+          "name": "송파1동"
+        },
+        {
+          "id": "region:1171059000",
+          "name": "송파2동"
+        },
+        {
+          "id": "region:1171060000",
+          "name": "석촌동"
+        },
+        {
+          "id": "region:1171061000",
+          "name": "삼전동"
+        },
+        {
+          "id": "region:1171062000",
+          "name": "가락본동"
+        },
+        {
+          "id": "region:1171063100",
+          "name": "가락1동"
+        },
+        {
+          "id": "region:1171063200",
+          "name": "가락2동"
+        },
+        {
+          "id": "region:1171064100",
+          "name": "문정1동"
+        },
+        {
+          "id": "region:1171064200",
+          "name": "문정2동"
+        },
+        {
+          "id": "region:1171064600",
+          "name": "장지동"
+        },
+        {
+          "id": "region:1171064700",
+          "name": "위례동"
+        },
+        {
+          "id": "region:1171065000",
+          "name": "잠실본동"
+        },
+        {
+          "id": "region:1171067000",
+          "name": "잠실2동"
+        },
+        {
+          "id": "region:1171068000",
+          "name": "잠실3동"
+        },
+        {
+          "id": "region:1171069000",
+          "name": "잠실4동"
+        },
+        {
+          "id": "region:1171071000",
+          "name": "잠실6동"
+        },
+        {
+          "id": "region:1171072000",
+          "name": "잠실7동"
+        }
+      ],
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11710",
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "남윤경",
+      "holderRoute": "/people/person-0374"
+    },
+    {
+      "id": "holding:v3:duchy:11650",
+      "name": {
+        "ko": "서초구 공작령"
+      },
+      "holderPersonId": "K398",
+      "directLiegePersonId": "K1018",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1165051000",
+          "name": "서초1동"
+        },
+        {
+          "id": "region:1165052000",
+          "name": "서초2동"
+        },
+        {
+          "id": "region:1165053000",
+          "name": "서초3동"
+        },
+        {
+          "id": "region:1165053100",
+          "name": "서초4동"
+        },
+        {
+          "id": "region:1165054000",
+          "name": "잠원동"
+        },
+        {
+          "id": "region:1165055000",
+          "name": "반포본동"
+        },
+        {
+          "id": "region:1165056000",
+          "name": "반포1동"
+        },
+        {
+          "id": "region:1165057000",
+          "name": "반포2동"
+        },
+        {
+          "id": "region:1165058000",
+          "name": "반포3동"
+        },
+        {
+          "id": "region:1165058100",
+          "name": "반포4동"
+        },
+        {
+          "id": "region:1165059000",
+          "name": "방배본동"
+        },
+        {
+          "id": "region:1165060000",
+          "name": "방배1동"
+        },
+        {
+          "id": "region:1165061000",
+          "name": "방배2동"
+        },
+        {
+          "id": "region:1165062000",
+          "name": "방배3동"
+        },
+        {
+          "id": "region:1165062100",
+          "name": "방배4동"
+        },
+        {
+          "id": "region:1165065100",
+          "name": "양재1동"
+        },
+        {
+          "id": "region:1165065200",
+          "name": "양재2동"
+        },
+        {
+          "id": "region:1165066000",
+          "name": "내곡동"
+        }
+      ],
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11650",
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "정유라",
+      "holderRoute": "/people/person-0399"
+    }
+  ]
 }

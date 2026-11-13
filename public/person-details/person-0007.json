@@ -1,501 +1,125 @@
 {
   "id": "person-0007",
   "name": "장필규",
-  "title": "급수계약 감사관",
-  "position": "급수계약 감사관",
+  "title": "셈판 서기",
+  "position": "셈판 서기 · 영등포역",
   "characterId": "K007",
-  "rank": "주사",
+  "rank": "손",
   "commonTier": "T5",
-  "occupation": "계약 기록·감수",
+  "occupation": "셈판 기록",
   "gender": "여성",
   "stage": "S1",
-  "state": "S01",
-  "stateName": "수문국",
-  "sourceRoute": "/world/Cast-State-01#인물-장필규",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0007",
   "birthDate": "2092-10-28",
   "birthday": "10-28",
   "age": 34,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-01.json#/content/115",
-    "lore/characters/Cast-State-01.json#/content/117"
-  ],
-  "familyTree": {
-    "personId": "K007",
-    "nodes": [
-      {
-        "id": "K007",
-        "personId": "K007",
-        "kind": "person",
-        "name": "장필규",
-        "birthDate": "2092-10-28",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K007"
-          },
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-장필규-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수계약 감사관 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-장필규-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0007"
-      },
-      {
-        "id": "FH-K007-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "장승석",
-        "lineage": {
-          "surname": "장",
-          "bongwan": "덕수",
-          "clan": "c7a5-b355-c218-5f35"
-        },
-        "birthDate": "2062-10-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-장필규-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2100,
-            "summary": "장승석은 영등포 정수 당직에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-장필규-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K007-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "장승준",
-        "lineage": {
-          "surname": "장",
-          "bongwan": "덕수",
-          "clan": "c7a5-b355-c218-5f35"
-        },
-        "birthDate": "2032-10-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-장필규-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2070,
-            "summary": "장승준은 영등포 정수 당직에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-장필규-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K007-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "장승호",
-        "lineage": {
-          "surname": "장",
-          "bongwan": "덕수",
-          "clan": "c7a5-b355-c218-5f35"
-        },
-        "birthDate": "2002-10-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-장필규-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "장승호는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-장필규-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K007-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승호",
-        "birthDate": "2062-10-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-장필규-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2100,
-            "summary": "임승호는 영등포 정수 당직에서 계약 기록·감수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-장필규-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K007-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오승석",
-        "birthDate": "2032-10-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-장필규-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2070,
-            "summary": "오승석은 영등포 정수 당직에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-장필규-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K007-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "송승석",
-        "birthDate": "2002-10-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-장필규-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "송승석은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-장필규-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K007-P-01:K007:biological",
-        "from": "FH-K007-P-01",
-        "to": "K007",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-장필규-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K007-P-02:FH-K007-P-01:biological",
-        "from": "FH-K007-P-02",
-        "to": "FH-K007-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-장필규-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K007-P-03:FH-K007-P-02:biological",
-        "from": "FH-K007-P-03",
-        "to": "FH-K007-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-장필규-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K007-M-01:K007:biological",
-        "from": "FH-K007-M-01",
-        "to": "K007",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-장필규-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K007-M-02:FH-K007-M-01:biological",
-        "from": "FH-K007-M-02",
-        "to": "FH-K007-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-장필규-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K007-M-03:FH-K007-M-02:biological",
-        "from": "FH-K007-M-03",
-        "to": "FH-K007-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-장필규-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c7a5-b355-c218-5f35",
+    "name": "덕수 장씨",
+    "crest": "clan-crests/c7a5-b355-c218-5f35.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "장필규는 영등포역 장터의 셈판에 그날 값을 써 붙이는 셈판 서기로, 계약회 동안에는 자리주인 한재목 곁에 앉는다. 장 하나가 읽힐 때마다 그녀는 킬로와 리터와 손시간을 셈판 값으로 옮겨 적고, 빈칸이 보이면 도장 차례를 멈추게 한다. 한재목에게 맹세한 것은 하나다. 계약회가 끝날 때까지 자기 판의 숫자를 누구의 부탁으로도 고치지 않는다는 것이다. 숫자는 크게 쓰고, 제 생각은 판 귀퉁이에 작게 적는다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "셈판 서기",
+    "품계": "손",
+    "생업": "셈판 기록",
+    "일하는 역": "영등포역",
+    "잠자는 역": "영등포역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "장필규는 영등포역 장터의 셈판에 그날 값을 써 붙이는 셈판 서기로, 계약회 동안에는 자리주인 한재목 곁에 앉는다. 장 하나가 읽힐 때마다 그녀는 킬로와 리터와 손시간을 셈판 값으로 옮겨 적고, 빈칸이 보이면 도장 차례를 멈추게 한다. 한재목에게 맹세한 것은 하나다. 계약회가 끝날 때까지 자기 판의 숫자를 누구의 부탁으로도 고치지 않는다는 것이다. 숫자는 크게 쓰고, 제 생각은 판 귀퉁이에 작게 적는다.",
+    "관직": "직함 셈판 서기. 직위 셈판 서기 · 영등포역. 품계 손. 일하는 역 영등포역."
+  },
+  "values": {
+    "권위": 25,
+    "개방": 10,
+    "무력": 0,
+    "물질": 55,
+    "공동": -5,
+    "원칙": 30,
+    "공개": 20,
+    "자격": 25,
+    "분산": 5,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": 5,
+    "위험": -15,
+    "과시": -5,
+    "지속": 0,
+    "지향": "무성향",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0007",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "장필규",
+        "type": "맹세",
+        "to": "한재목",
+        "basis": "계약회 동안 판의 숫자를 고치지 않겠다고 맹세했다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "한재목",
+        "type": "맹세",
+        "to": "장필규",
+        "basis": "셈판 서기 장필규가 계약회 내내 판의 숫자를 고치지 않겠다고 그에게 맹세했다"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
       },
-      "strategy": {
-        "base": 9,
-        "effective": 9
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "negotiation": {
-        "base": 11,
-        "effective": 11
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 13,
-        "effective": 13
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 11,
-        "effective": 11
+        "base": 9,
+        "effective": 9
       },
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
       }
     },
     "skills": [
       {
-        "id": "k007-contract-clause-review",
-        "name": {
-          "ko": "계약 문구 감수",
-          "en": "Contract-clause review"
-        },
-        "rating": 65
-      },
-      {
-        "id": "k007-release-discussion",
-        "name": {
-          "ko": "방류량 협의",
-          "en": "Release discussion"
-        },
-        "rating": 55
+        "id": "fc-0007-rate-board",
+        "name": "셈판 옮겨 적기",
+        "rating": 69
       }
     ],
-    "traits": [
-      {
-        "id": "k007-written-obligations",
-        "name": {
-          "ko": "구두 약속의 기록",
-          "en": "Record spoken promises"
-        },
-        "description": {
-          "ko": "문구 빈칸을 찾고 구두 약속의 기록을 요구한다.",
-          "en": "Seeks gaps in clauses and demands records of oral promises."
-        },
-        "behavior": {
-          "ko": "문구 빈칸을 찾고 구두 약속의 기록을 요구한다.",
-          "en": "Seeks gaps in clauses and demands records of oral promises."
-        },
-        "stress": {
-          "ko": "위조 배급표가 전체 계약을 흔들 것을 두려워한다.",
-          "en": "Fears forged ration tickets undermining all contracts."
-        },
-        "relationship": {
-          "ko": "정유라와 종료 조건을 다툰다.",
-          "en": "Disputes termination clauses with Jeong Yura."
-        },
-        "effects": []
-      },
-      {
-        "id": "k007-private-margins",
-        "name": {
-          "ko": "난외의 해석권",
-          "en": "Interpretation in the margins"
-        },
-        "description": {
-          "ko": "숫자는 공개하지만 해석을 자기 난외에 둔다.",
-          "en": "Publishes figures but keeps interpretations in private margins."
-        },
-        "behavior": {
-          "ko": "숫자는 공개하지만 해석을 자기 난외에 둔다.",
-          "en": "Publishes figures but keeps interpretations in private margins."
-        },
-        "stress": {
-          "ko": "감사실이 정치 도구로 몰락할 가능성을 경계한다.",
-          "en": "Fears the audit office becoming a political tool."
-        },
-        "relationship": {
-          "ko": "이서담에게 누락을 덮어 준 빚이 있다.",
-          "en": "Owes Lee Seodam for concealing a ledger omission."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "사본 배포와 조항 해석을 수행하지만 과거 누락의 빚과 해석권 집중이 함께 있다. 감사 숙련을 인정하고 완전한 청렴이나 국가 설계 능력으로 넓히지 않았다.",
-      "en": "Distributes copies and interprets clauses, with a debt from an old omission and a desire to centralize interpretation. Auditing competence does not establish flawless integrity or state-building mastery."
-    },
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -533,92 +157,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c7a5-b355-c218-5f35",
-    "name": "덕수 장씨",
-    "crest": "clan-crests/c7a5-b355-c218-5f35.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 60,
-    "개방": -5,
-    "무력": 10,
-    "물질": 40,
-    "공동": 20,
-    "원칙": 40,
-    "공개": 20,
-    "자격": 5,
-    "분산": -50,
-    "변혁": -30
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": 5,
-    "위험": -15,
-    "과시": -5,
-    "지속": 0,
-    "지향": "무성향",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "수문국",
-    "생업": "계약 기록·감수",
-    "품계": "주사",
-    "직함": "급수계약 감사관",
-    "업무 위치": "양평1동. 양평1동 계약 서기석에서 장필규는 배급구역 사본과 기록청 사본의 단수 조항을 대조하고 빠진 원장 때문에 이서담과 남은 해석권 다툼을 기록한다.",
-    "가치관": "권위 60 | 개방 −5 | 무력 10 | 물질 40 | 공동 20 | 원칙 40 | 공개 20 | 자격 5 | 분산 −50 | 변혁 −30",
-    "욕망": "갈망 30 | 독점 5 | 위험 −15 | 과시 −5 | 지속 0 | 지향 무성향 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수계약 감사관 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 양평1동. 양평1동 계약 서기석에서 장필규는 배급구역 사본과 기록청 사본의 단수 조항을 대조하고 빠진 원장 때문에 이서담과 남은 해석권 다툼을 기록한다.",
-    "관직": "품계 주사. 직함은 급수계약 감사관. 계약 사본을 배급구역과 기록청에 동시에 보내지만, 단수 발동 조항의 최종 해석은 감사관 날인을 요구한다.",
-    "일화": "2125년 서울 서부 급수망의 저수조 방류량이 모자라자 장필규는 배급 대표와 밤새 원장을 대조하고 계약 감사 칸에 합의량을 기록했다.",
-    "관계": "윤서린과는 계약 인준 사본을 교환하는 협력이나 해석권을 놓고 경쟁하고, 정유라와는 종료 조건 문구를 다투며, 이서담에게는 과거 원장 누락을 덮어준 빚을 지고 있다.",
-    "야망": "서부 모든 급수·통행 계약의 종료 조건과 집단 단수 요건을 자신이 감수한 원장에만 유효하게 만든다.",
-    "공포": "위조 배급표 한 장이 물 계약 전체를 무효로 만들어 감사실이 정치 도구로 몰락하는 것.",
-    "개입": "위조 배급표를 찾아 그의 날인을 지키거나, 난외 해석 노트를 폭로해 단수 조항을 무력화할 수 있다."
-  },
-  "biography": "문구의 빈칸을 집요하게 찾고, 구두 약속을 기록하지 않는 사람을 위반 소지가 있는 자로 본다. 숫자는 공개하되 해석은 자기 난외에 남긴다.\n\n- 소속: 수문국\n- 생업: 계약 기록·감수\n- 품계: 주사\n- 직함: 급수계약 감사관\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수계약 감사관 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 양평1동. 양평1동 계약 서기석에서 장필규는 배급구역 사본과 기록청 사본의 단수 조항을 대조하고 빠진 원장 때문에 이서담과 남은 해석권 다툼을 기록한다.\n\n**관직.** 품계 주사. 직함은 급수계약 감사관. 계약 사본을 배급구역과 기록청에 동시에 보내지만, 단수 발동 조항의 최종 해석은 감사관 날인을 요구한다.\n\n**일화.** 2125년 서울 서부 급수망의 저수조 방류량이 모자라자 장필규는 배급 대표와 밤새 원장을 대조하고 계약 감사 칸에 합의량을 기록했다.\n\n**관계.** 윤서린과는 계약 인준 사본을 교환하는 협력이나 해석권을 놓고 경쟁하고, 정유라와는 종료 조건 문구를 다투며, 이서담에게는 과거 원장 누락을 덮어준 빚을 지고 있다.\n\n**야망.** 서부 모든 급수·통행 계약의 종료 조건과 집단 단수 요건을 자신이 감수한 원장에만 유효하게 만든다.\n\n**공포.** 위조 배급표 한 장이 물 계약 전체를 무효로 만들어 감사실이 정치 도구로 몰락하는 것.\n\n**개입.** 위조 배급표를 찾아 그의 날인을 지키거나, 난외 해석 노트를 폭로해 단수 조항을 무력화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 60 | 개방 −5 | 무력 10 | 물질 40 | 공동 20 | 원칙 40 | 공개 20 | 자격 5 | 분산 −50 | 변혁 −30\n- 욕망: 갈망 30 | 독점 5 | 위험 −15 | 과시 −5 | 지속 0 | 지향 무성향 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-01"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "장필규",
-        "type": "빚",
-        "to": "이서담",
-        "basis": "배급 원장 누락을 덮어준 빚"
-      },
-      {
-        "from": "장필규",
-        "type": "경쟁",
-        "to": "윤서린",
-        "basis": "급수계약 인준 사본의 해석권 경쟁"
-      },
-      {
-        "from": "장필규",
-        "type": "경쟁",
-        "to": "정유라",
-        "basis": "종료 조건 문구를 공동교섭과 다툼"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "대니얼 브룩스",
-        "type": "계약",
-        "to": "장필규",
-        "basis": "장필규의 감사 문구를 현장에서 배달하는 계약이고"
-      },
-      {
-        "from": "우오름",
-        "type": "계약",
-        "to": "장필규",
-        "basis": "장필규의 종료 조건 문구를 회의 사본에 옮기고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

@@ -1,489 +1,732 @@
 {
   "id": "person-0145",
   "name": "윤서린",
-  "title": "대통령",
-  "position": "대통령",
+  "title": "종신 대통령",
+  "position": "정부 종신 대통령",
   "characterId": "K144",
   "rank": "대통령",
   "commonTier": "T1",
-  "occupation": "도장함 봉인·인준 보류 관리",
+  "occupation": "국정 총괄",
   "gender": "남성",
   "stage": "주요",
-  "state": "S06",
-  "stateName": "대한민국정부",
-  "sourceRoute": "/world/Cast-State-06#인물-윤서린",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0145",
   "birthDate": "2099-02-11",
   "birthday": "02-11",
   "age": 27,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-06.json#/content/1",
-    "lore/characters/Core-Characters.json#/content/59",
-    "lore/chronology/Century-Annals.json#/content/503",
-    "lore/chronology/Century-Annals.json#/content/528",
-    "lore/chronology/Century-Annals.json#/content/530",
-    "lore/chronology/Century-Annals.json#/content/546",
-    "lore/chronology/Century-Annals.json#/content/548",
-    "lore/chronology/Century-Annals.json#/content/550",
-    "lore/chronology/Century-Annals.json#/content/602",
-    "lore/chronology/Scenario-Timeline.json#/content/8",
-    "lore/chronology/Scenario-Timeline.json#/content/47",
-    "lore/chronology/Scenario-Timeline.json#/content/49"
-  ],
-  "familyTree": {
-    "personId": "K144",
-    "nodes": [
-      {
-        "id": "K144",
-        "personId": "K144",
-        "kind": "person",
-        "name": "윤서린",
-        "birthDate": "2099-02-11",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K144"
-          },
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤서린-p1"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 정부서울청사 본관 종로구 세종대로 209 등기 당직의 손. 기록 위조는 금지된다. 정부 도장이 없으면 도심의 급수계약은 효력이 없다. 윤서린이 대통령이 된 것은 북한산보국문기록가의 도장함을 끊기지 않게 지킨 뒤였다. 서울역기록법가의 도장함은 여리안의 것이다. 2126년 정부는 청와대에서 종로·중구의 주민 명부와 배급·인준을 맡았고, 정부서울청사 경비대는 도심 역을 지켰다. 한재목의 서부안을 멈추면 빚이 쌓이고, 찍으면 양천의 거부권이 죽는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-윤서린-p1"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0145"
-      },
-      {
-        "id": "FH-K144-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승욱",
-        "lineage": {
-          "surname": "윤",
-          "bongwan": "파평",
-          "clan": "c724-d30c-d3c9-agreed-c11c-first"
-        },
-        "birthDate": "2069-02-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤서린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2107,
-            "summary": "윤승욱은 생활권의 공동 거처에서 기록청장 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-윤서린-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K144-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승란",
-        "lineage": {
-          "surname": "윤",
-          "bongwan": "파평",
-          "clan": "c724-d30c-d3c9-agreed-c11c-first"
-        },
-        "birthDate": "2039-02-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤서린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "윤승란은 생활권의 공동 거처에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-윤서린-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K144-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승리",
-        "lineage": {
-          "surname": "윤",
-          "bongwan": "파평",
-          "clan": "c724-d30c-d3c9-agreed-c11c-first"
-        },
-        "birthDate": "2009-02-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤서린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤승리는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-윤서린-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K144-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박현현",
-        "birthDate": "2069-02-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤서린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2107,
-            "summary": "박현현은 생활권의 공동 거처에서 기록청장 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-윤서린-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K144-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이현진",
-        "birthDate": "2039-02-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤서린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "이현진은 생활권의 공동 거처에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-윤서린-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K144-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최현우",
-        "birthDate": "2009-02-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤서린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최현우는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-윤서린-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K144-P-01:K144:biological",
-        "from": "FH-K144-P-01",
-        "to": "K144",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤서린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K144-P-02:FH-K144-P-01:biological",
-        "from": "FH-K144-P-02",
-        "to": "FH-K144-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤서린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K144-P-03:FH-K144-P-02:biological",
-        "from": "FH-K144-P-03",
-        "to": "FH-K144-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤서린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K144-M-01:K144:biological",
-        "from": "FH-K144-M-01",
-        "to": "K144",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤서린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K144-M-02:FH-K144-M-01:biological",
-        "from": "FH-K144-M-02",
-        "to": "FH-K144-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤서린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K144-M-03:FH-K144-M-02:biological",
-        "from": "FH-K144-M-03",
-        "to": "FH-K144-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-윤서린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c724-d30c-d3c9",
+    "name": "파평 윤씨",
+    "crest": "clan-crests/c724-d30c-d3c9.svg"
   },
-  "proseContacts": [
-    {
-      "recipientId": "K168",
-      "recipientName": "조이록",
-      "basis": "윤서린의 봉인 권한과 겹치지만, 공증 날인은 따로 둔다.",
-      "sourceRef": {
-        "path": "lore/characters/Cast-State-06.json",
-        "anchor": "인물-조이록-p5"
-      }
-    }
-  ],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "주민등록 원부의 첫 장에 종신 대통령으로 기재된 파평 윤씨 사람이다. 종로구 국회의원이던 시절, 힘센 집안들이 서로의 후보를 막느라 아직 어느 편도 들지 않은 그의 이름 아래 열네 도장이 모였다. 의석은 집안 후계 윤초아에게 물렸고, 집안 어른 윤지율이 비서실장으로 결재 서류를 먼저 본다. 용산구 국회의원 박태겸이 그날 첫 도장을 찍었다는 것을 그는 잊지 않는다. 광화문 청사에서 고시와 임명장에 도장을 찍으며 하루를 보내지만, 세 번째 급수계약의 광진 부속서가 결재함에 오르면 어느 편을 들어도 의원 절반을 잃는다는 것을 안다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "종신 대통령",
+    "품계": "대통령",
+    "생업": "국정 총괄",
+    "일하는 역": "광화문역",
+    "잠자는 역": "광화문역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "주민등록 원부의 첫 장에 종신 대통령으로 기재된 파평 윤씨 사람이다. 종로구 국회의원이던 시절, 힘센 집안들이 서로의 후보를 막느라 아직 어느 편도 들지 않은 그의 이름 아래 열네 도장이 모였다. 의석은 집안 후계 윤초아에게 물렸고, 집안 어른 윤지율이 비서실장으로 결재 서류를 먼저 본다. 용산구 국회의원 박태겸이 그날 첫 도장을 찍었다는 것을 그는 잊지 않는다. 광화문 청사에서 고시와 임명장에 도장을 찍으며 하루를 보내지만, 세 번째 급수계약의 광진 부속서가 결재함에 오르면 어느 편을 들어도 의원 절반을 잃는다는 것을 안다.",
+    "관직": "직함 종신 대통령. 직위 정부 종신 대통령. 품계 대통령. 일하는 역 광화문역."
+  },
+  "values": {
+    "권위": 65,
+    "개방": -65,
+    "무력": 5,
+    "물질": -25,
+    "공동": 15,
+    "원칙": 60,
+    "공개": -55,
+    "자격": 15,
+    "분산": -90,
+    "변혁": -70
+  },
+  "desire": {
+    "갈망": -10,
+    "독점": 10,
+    "위험": -40,
+    "과시": -20,
+    "지속": 40,
+    "지향": "무성향",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0145",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "윤서린",
+        "type": "맹세",
+        "to": "윤지율",
+        "basis": "추대된 날 밤 집안 어른 윤지율이 결재함 곁을 지키겠다고 맹세했다"
+      },
+      {
+        "from": "윤서린",
+        "type": "빚",
+        "to": "박태겸",
+        "basis": "추대 때 첫 도장을 찍은 박태겸에게 진 빚"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "채구름",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "강예준",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "조하린",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "윤지율",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "오서율",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "서라온",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "연지우",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "주리안",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "박태겸",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "알렉산더 밀러",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "에바 노바코바",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "루카스 슈나이더",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "클라라 베넷",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "나탈리야 소콜로바",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "아데올라 아데예미",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "케빈 화이트",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "오해린",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "피터 얀센",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "마솔",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "백온",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "신보람",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "황세린",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "윤초아",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "용국",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "용두",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "두국",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "장세화",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "안도한",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "전미리",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "문시온",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "하세온",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "곽태산",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "복봉",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "국소",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "류은비",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "심달호",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "은채윤",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "라세영",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "전솔",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "동늘솔",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "방미산",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "고서준",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "곽민재",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "심가은",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "선솔우",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "남시윤",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "문도윤",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "천나솔",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "수한별",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "양서현",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "권금윤",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "민다현",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "탁서윤",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "김연규",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "문도현",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "윤지율",
+        "type": "맹세",
+        "to": "윤서린",
+        "basis": "남은 생을 대통령의 결재함 곁에서 보내겠다는 맹세"
+      },
+      {
+        "from": "박태겸",
+        "type": "빚",
+        "to": "윤서린",
+        "basis": "추대 때 첫 도장을 찍어 준 일을 대통령의 빚으로 적어 둔다"
+      },
+      {
+        "from": "윤초아",
+        "type": "맹세",
+        "to": "윤서린",
+        "basis": "대통령 집안의 후계로 종로구 의석을 물려받으며 대통령 앞에 도장을 찍었다."
+      },
+      {
+        "from": "전미리",
+        "type": "맹세",
+        "to": "윤서린",
+        "basis": "자신을 법무부 장관으로 임명한 종신 대통령에게 말소 심의의 결재를 올리는 사이"
+      },
+      {
+        "from": "하세온",
+        "type": "맹세",
+        "to": "윤서린",
+        "basis": "국회 회의록을 열네 도장의 순서대로 지켜 종신 대통령에게 올리겠다는 맹세"
+      },
+      {
+        "from": "탁서윤",
+        "type": "맹세",
+        "to": "윤서린",
+        "basis": "대통령의 임명장을 받으며 국군의 명령서에 도장 하나만 찍겠다고 맹세했다"
+      },
+      {
+        "from": "김연규",
+        "type": "계약",
+        "to": "윤서린",
+        "basis": "마포의 터널·다리 부속서에 찍은 도장을 대통령의 결재에 올려야 부속서가 선다"
+      }
+    ]
+  },
+  "court": {
+    "id": "court:K144",
+    "members": [
+      {
+        "personId": "K099",
+        "name": "채구름"
+      },
+      {
+        "personId": "K145",
+        "name": "강예준"
+      },
+      {
+        "personId": "K146",
+        "name": "조하린"
+      },
+      {
+        "personId": "K147",
+        "name": "윤지율"
+      },
+      {
+        "personId": "K148",
+        "name": "오서율"
+      },
+      {
+        "personId": "K149",
+        "name": "서라온"
+      },
+      {
+        "personId": "K152",
+        "name": "연지우"
+      },
+      {
+        "personId": "K155",
+        "name": "주리안"
+      },
+      {
+        "personId": "K169",
+        "name": "박태겸"
+      },
+      {
+        "personId": "K170",
+        "name": "알렉산더 밀러"
+      },
+      {
+        "personId": "K171",
+        "name": "에바 노바코바"
+      },
+      {
+        "personId": "K173",
+        "name": "루카스 슈나이더"
+      },
+      {
+        "personId": "K174",
+        "name": "클라라 베넷"
+      },
+      {
+        "personId": "K176",
+        "name": "나탈리야 소콜로바"
+      },
+      {
+        "personId": "K186",
+        "name": "아데올라 아데예미"
+      },
+      {
+        "personId": "K193",
+        "name": "케빈 화이트"
+      },
+      {
+        "personId": "K194",
+        "name": "오해린"
+      },
+      {
+        "personId": "K199",
+        "name": "피터 얀센"
+      },
+      {
+        "personId": "person-0202",
+        "name": "마솔"
+      },
+      {
+        "personId": "K245",
+        "name": "백온"
+      },
+      {
+        "personId": "K246",
+        "name": "신보람"
+      },
+      {
+        "personId": "K247",
+        "name": "황세린"
+      },
+      {
+        "personId": "K249",
+        "name": "윤초아"
+      },
+      {
+        "personId": "K254",
+        "name": "용국"
+      },
+      {
+        "personId": "K262",
+        "name": "용두"
+      },
+      {
+        "personId": "K285",
+        "name": "두국"
+      },
+      {
+        "personId": "K296",
+        "name": "장세화"
+      },
+      {
+        "personId": "K297",
+        "name": "안도한"
+      },
+      {
+        "personId": "K298",
+        "name": "전미리"
+      },
+      {
+        "personId": "K299",
+        "name": "문시온"
+      },
+      {
+        "personId": "K300",
+        "name": "하세온"
+      },
+      {
+        "personId": "K301",
+        "name": "곽태산"
+      },
+      {
+        "personId": "K303",
+        "name": "복봉"
+      },
+      {
+        "personId": "K310",
+        "name": "국소"
+      },
+      {
+        "personId": "K322",
+        "name": "류은비"
+      },
+      {
+        "personId": "K323",
+        "name": "심달호"
+      },
+      {
+        "personId": "K324",
+        "name": "은채윤"
+      },
+      {
+        "personId": "K325",
+        "name": "라세영"
+      },
+      {
+        "personId": "K327",
+        "name": "전솔"
+      },
+      {
+        "personId": "K329",
+        "name": "동늘솔"
+      },
+      {
+        "personId": "K338",
+        "name": "방미산"
+      },
+      {
+        "personId": "K348",
+        "name": "고서준"
+      },
+      {
+        "personId": "K352",
+        "name": "곽민재"
+      },
+      {
+        "personId": "K353",
+        "name": "심가은"
+      },
+      {
+        "personId": "K354",
+        "name": "선솔우"
+      },
+      {
+        "personId": "K377",
+        "name": "남시윤"
+      },
+      {
+        "personId": "K378",
+        "name": "문도윤"
+      },
+      {
+        "personId": "K379",
+        "name": "천나솔"
+      },
+      {
+        "personId": "K382",
+        "name": "수한별"
+      },
+      {
+        "personId": "K445",
+        "name": "양서현"
+      },
+      {
+        "personId": "K477",
+        "name": "권금윤"
+      },
+      {
+        "personId": "K621",
+        "name": "민다현"
+      },
+      {
+        "personId": "K1006",
+        "name": "탁서윤"
+      },
+      {
+        "personId": "K1007",
+        "name": "김연규"
+      },
+      {
+        "personId": "K1022",
+        "name": "문도현"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 12,
-        "effective": 12
+      "diplomacy": {
+        "base": 11,
+        "effective": 11
       },
-      "strategy": {
-        "base": 12,
-        "effective": 12
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 12,
-        "effective": 12
+      "stewardship": {
+        "base": 9,
+        "effective": 9
       },
-      "management": {
-        "base": 15,
-        "effective": 15
-      },
-      "insight": {
-        "base": 13,
-        "effective": 13
+      "intrigue": {
+        "base": 8,
+        "effective": 8
       },
       "learning": {
-        "base": 13,
-        "effective": 13
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "k144-ratification-review",
-        "name": {
-          "ko": "인준 검토",
-          "en": "Ratification review"
-        },
-        "rating": 70
+        "id": "s17-0145-approval",
+        "name": "결재",
+        "rating": 62
       }
     ],
     "traits": [
       {
-        "id": "k144-trait-1",
-        "name": {
-          "ko": "확인과 인준 사이",
-          "en": "Checking before ratification"
-        },
-        "description": {
-          "ko": "봉인 확인을 인준으로 바꾸지 않는다.",
-          "en": "Does not turn a seal check into ratification."
-        },
-        "behavior": {
-          "ko": "봉인 확인을 인준으로 바꾸지 않는다.",
-          "en": "Does not turn a seal check into ratification."
-        },
-        "stress": {
-          "ko": "서부안의 빚과 거부권 손실 사이에서 결재를 보류한다.",
-          "en": "Holds approval between debt from blocking and lost veto rights from signing."
-        },
-        "relationship": {
-          "ko": "한재목·정유라와 효력 발급을 둘러싸고 다툰다.",
-          "en": "Disputes validation with Han Jaemok and Jeong Yura."
-        },
+        "id": "t17-0145-hold",
+        "name": "도장을 미룬다",
+        "description": "편을 들어야 하는 서류에는 하루를 넘겨 도장을 찍는다.",
+        "behavior": "결재함에 오른 서류를 바로 열지 않고 비서실장의 순서를 기다린다.",
+        "stress": "열네 집안이 같은 날 같은 서류를 재촉하면 잠을 못 잔다.",
+        "relationship": "추대의 도장을 준 사람들에게 빚진 마음을 숨기지 못한다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "세 유언을 접수하고 봉인은 확인했으나 인준하지 않았다. 기록의 지속과 계약 효력을 다루는 실무가 강점이다. 서부안을 막으면 빚이 늘고 찍으면 양천 거부권을 해칠 수 있다는 갈등이 남아 있다.",
-      "en": "She checked the seals of three received wills without ratifying them. Record continuity and contract validation are strengths. Blocking the western proposal adds debt, while stamping it threatens Yangcheon’s veto."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -521,422 +764,16 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:capital-s06",
-      "name": {
-        "ko": "광화문역 직영지"
-      },
-      "holderPersonId": "K144",
-      "directLiegePersonId": null,
-      "stateId": "S06",
-      "stationRef": {
-        "stationId": "광화문",
-        "stationName": "광화문"
-      },
-      "adminRefs": [],
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": null
-    },
-    {
-      "id": "holding:opening-duchy-gu-11110-S06",
-      "name": {
-        "ko": "종로구 공작령 직영지"
-      },
-      "holderPersonId": "K144",
-      "directLiegePersonId": null,
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "region:1111051500",
-          "name": "청운효자동"
-        },
-        {
-          "id": "region:1111053000",
-          "name": "사직동"
-        },
-        {
-          "id": "region:1111054000",
-          "name": "삼청동"
-        },
-        {
-          "id": "region:1111055000",
-          "name": "부암동"
-        },
-        {
-          "id": "region:1111056000",
-          "name": "평창동"
-        },
-        {
-          "id": "region:1111057000",
-          "name": "무악동"
-        },
-        {
-          "id": "region:1111058000",
-          "name": "교남동"
-        },
-        {
-          "id": "region:1111060000",
-          "name": "가회동"
-        },
-        {
-          "id": "region:1111061500",
-          "name": "종로1·2·3·4가동"
-        },
-        {
-          "id": "region:1111063000",
-          "name": "종로5·6가동"
-        },
-        {
-          "id": "region:1111064000",
-          "name": "이화동"
-        },
-        {
-          "id": "region:1111065000",
-          "name": "혜화동"
-        },
-        {
-          "id": "region:1111067000",
-          "name": "창신1동"
-        },
-        {
-          "id": "region:1111068000",
-          "name": "창신2동"
-        },
-        {
-          "id": "region:1111069000",
-          "name": "창신3동"
-        },
-        {
-          "id": "region:1111070000",
-          "name": "숭인1동"
-        },
-        {
-          "id": "region:1111071000",
-          "name": "숭인2동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11110-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
+  "confirmedHoldings": [],
   "subordinateHoldings": [
     {
-      "id": "holding:opening-duchy-gu-11140-S06",
+      "id": "holding:v3:duchy:11260",
       "name": {
-        "ko": "중구 공작령 직영지"
+        "ko": "중랑구 공작령"
       },
-      "holderPersonId": "K445",
+      "holderPersonId": "K145",
       "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "region:1114052000",
-          "name": "소공동"
-        },
-        {
-          "id": "region:1114054000",
-          "name": "회현동"
-        },
-        {
-          "id": "region:1114055000",
-          "name": "명동"
-        },
-        {
-          "id": "region:1114057000",
-          "name": "필동"
-        },
-        {
-          "id": "region:1114058000",
-          "name": "장충동"
-        },
-        {
-          "id": "region:1114059000",
-          "name": "광희동"
-        },
-        {
-          "id": "region:1114060500",
-          "name": "을지로동"
-        },
-        {
-          "id": "region:1114061500",
-          "name": "신당동"
-        },
-        {
-          "id": "region:1114062500",
-          "name": "다산동"
-        },
-        {
-          "id": "region:1114063500",
-          "name": "약수동"
-        },
-        {
-          "id": "region:1114064500",
-          "name": "청구동"
-        },
-        {
-          "id": "region:1114065000",
-          "name": "신당5동"
-        },
-        {
-          "id": "region:1114066500",
-          "name": "동화동"
-        },
-        {
-          "id": "region:1114067000",
-          "name": "황학동"
-        },
-        {
-          "id": "region:1114068000",
-          "name": "중림동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11140-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "양서현",
-      "holderRoute": "/people/person-0445"
-    },
-    {
-      "id": "holding:opening-duchy-gu-11170-S07",
-      "name": {
-        "ko": "용산구 공작령 직영지"
-      },
-      "holderPersonId": "K175",
-      "directLiegePersonId": "K144",
-      "stateId": "S07",
-      "adminRefs": [
-        {
-          "id": "region:1117053000",
-          "name": "남영동"
-        },
-        {
-          "id": "region:1117055500",
-          "name": "청파동"
-        },
-        {
-          "id": "region:1117056000",
-          "name": "원효로1동"
-        },
-        {
-          "id": "region:1117057000",
-          "name": "원효로2동"
-        },
-        {
-          "id": "region:1117058000",
-          "name": "효창동"
-        },
-        {
-          "id": "region:1117059000",
-          "name": "용문동"
-        },
-        {
-          "id": "region:1117062500",
-          "name": "한강로동"
-        },
-        {
-          "id": "region:1117063000",
-          "name": "이촌1동"
-        },
-        {
-          "id": "region:1117064000",
-          "name": "이촌2동"
-        },
-        {
-          "id": "region:1117065000",
-          "name": "이태원1동"
-        },
-        {
-          "id": "region:1117068500",
-          "name": "한남동"
-        },
-        {
-          "id": "region:1117069000",
-          "name": "서빙고동"
-        },
-        {
-          "id": "region:1117070000",
-          "name": "보광동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11170-S07",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "미콜라 본다렌코",
-      "holderRoute": "/people/person-0176"
-    },
-    {
-      "id": "holding:opening-duchy-gu-11215-S14",
-      "name": {
-        "ko": "광진구 공작령 직영지"
-      },
-      "holderPersonId": "K363",
-      "directLiegePersonId": "K144",
-      "stateId": "S14",
-      "adminRefs": [
-        {
-          "id": "region:1121571000",
-          "name": "화양동"
-        },
-        {
-          "id": "region:1121573000",
-          "name": "군자동"
-        },
-        {
-          "id": "region:1121574000",
-          "name": "중곡1동"
-        },
-        {
-          "id": "region:1121575000",
-          "name": "중곡2동"
-        },
-        {
-          "id": "region:1121576000",
-          "name": "중곡3동"
-        },
-        {
-          "id": "region:1121577000",
-          "name": "중곡4동"
-        },
-        {
-          "id": "region:1121578000",
-          "name": "능동"
-        },
-        {
-          "id": "region:1121581000",
-          "name": "광장동"
-        },
-        {
-          "id": "region:1121582000",
-          "name": "자양1동"
-        },
-        {
-          "id": "region:1121583000",
-          "name": "자양2동"
-        },
-        {
-          "id": "region:1121584000",
-          "name": "자양3동"
-        },
-        {
-          "id": "region:1121584700",
-          "name": "자양4동"
-        },
-        {
-          "id": "region:1121585000",
-          "name": "구의1동"
-        },
-        {
-          "id": "region:1121586000",
-          "name": "구의2동"
-        },
-        {
-          "id": "region:1121587000",
-          "name": "구의3동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11215-S14",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "원다결",
-      "holderRoute": "/people/person-0364"
-    },
-    {
-      "id": "holding:opening-duchy-gu-11230-S13",
-      "name": {
-        "ko": "동대문구 공작령 직영지"
-      },
-      "holderPersonId": "K337",
-      "directLiegePersonId": "K144",
-      "stateId": "S13",
-      "adminRefs": [
-        {
-          "id": "region:1123051500",
-          "name": "신설동"
-        },
-        {
-          "id": "region:1123053300",
-          "name": "용두동"
-        },
-        {
-          "id": "region:1123054500",
-          "name": "제기동"
-        },
-        {
-          "id": "region:1123056000",
-          "name": "전농1동"
-        },
-        {
-          "id": "region:1123057000",
-          "name": "전농2동"
-        },
-        {
-          "id": "region:1123060000",
-          "name": "답십리1동"
-        },
-        {
-          "id": "region:1123061000",
-          "name": "답십리2동"
-        },
-        {
-          "id": "region:1123065000",
-          "name": "장안1동"
-        },
-        {
-          "id": "region:1123066000",
-          "name": "장안2동"
-        },
-        {
-          "id": "region:1123070500",
-          "name": "청량리동"
-        },
-        {
-          "id": "region:1123071000",
-          "name": "회기동"
-        },
-        {
-          "id": "region:1123072000",
-          "name": "휘경1동"
-        },
-        {
-          "id": "region:1123073000",
-          "name": "휘경2동"
-        },
-        {
-          "id": "region:1123074000",
-          "name": "이문1동"
-        },
-        {
-          "id": "region:1123075000",
-          "name": "이문2동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11230-S13",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "동주하",
-      "holderRoute": "/people/person-0338"
-    },
-    {
-      "id": "holding:opening-duchy-gu-11260-S12",
-      "name": {
-        "ko": "중랑구 공작령 직영지"
-      },
-      "holderPersonId": "K311",
-      "directLiegePersonId": "K144",
-      "stateId": "S12",
+      "stateId": "government",
       "adminRefs": [
         {
           "id": "region:1126052000",
@@ -1003,22 +840,179 @@
           "name": "신내2동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11260-S12",
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11260",
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "복용",
-      "holderRoute": "/people/person-0312"
+      "formalTitleRank": null,
+      "holderName": "강예준",
+      "holderRoute": "/people/person-0146"
     },
     {
-      "id": "holding:opening-duchy-gu-11290-S10",
+      "id": "holding:v3:duchy:11380",
       "name": {
-        "ko": "성북구 공작령 직영지"
+        "ko": "은평구 공작령"
       },
-      "holderPersonId": "K258",
+      "holderPersonId": "K146",
       "directLiegePersonId": "K144",
-      "stateId": "S10",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1138051000",
+          "name": "녹번동"
+        },
+        {
+          "id": "region:1138052000",
+          "name": "불광1동"
+        },
+        {
+          "id": "region:1138053000",
+          "name": "불광2동"
+        },
+        {
+          "id": "region:1138055100",
+          "name": "갈현1동"
+        },
+        {
+          "id": "region:1138055200",
+          "name": "갈현2동"
+        },
+        {
+          "id": "region:1138056000",
+          "name": "구산동"
+        },
+        {
+          "id": "region:1138057000",
+          "name": "대조동"
+        },
+        {
+          "id": "region:1138058000",
+          "name": "응암1동"
+        },
+        {
+          "id": "region:1138059000",
+          "name": "응암2동"
+        },
+        {
+          "id": "region:1138060000",
+          "name": "응암3동"
+        },
+        {
+          "id": "region:1138062500",
+          "name": "역촌동"
+        },
+        {
+          "id": "region:1138063100",
+          "name": "신사1동"
+        },
+        {
+          "id": "region:1138063200",
+          "name": "신사2동"
+        },
+        {
+          "id": "region:1138064000",
+          "name": "증산동"
+        },
+        {
+          "id": "region:1138065000",
+          "name": "수색동"
+        },
+        {
+          "id": "region:1138069000",
+          "name": "진관동"
+        }
+      ],
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11380",
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "조하린",
+      "holderRoute": "/people/person-0147"
+    },
+    {
+      "id": "holding:v3:duchy:11230",
+      "name": {
+        "ko": "동대문구 공작령"
+      },
+      "holderPersonId": "K148",
+      "directLiegePersonId": "K144",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1123051500",
+          "name": "신설동"
+        },
+        {
+          "id": "region:1123053300",
+          "name": "용두동"
+        },
+        {
+          "id": "region:1123054500",
+          "name": "제기동"
+        },
+        {
+          "id": "region:1123056000",
+          "name": "전농1동"
+        },
+        {
+          "id": "region:1123057000",
+          "name": "전농2동"
+        },
+        {
+          "id": "region:1123060000",
+          "name": "답십리1동"
+        },
+        {
+          "id": "region:1123061000",
+          "name": "답십리2동"
+        },
+        {
+          "id": "region:1123065000",
+          "name": "장안1동"
+        },
+        {
+          "id": "region:1123066000",
+          "name": "장안2동"
+        },
+        {
+          "id": "region:1123070500",
+          "name": "청량리동"
+        },
+        {
+          "id": "region:1123071000",
+          "name": "회기동"
+        },
+        {
+          "id": "region:1123072000",
+          "name": "휘경1동"
+        },
+        {
+          "id": "region:1123073000",
+          "name": "휘경2동"
+        },
+        {
+          "id": "region:1123074000",
+          "name": "이문1동"
+        },
+        {
+          "id": "region:1123075000",
+          "name": "이문2동"
+        }
+      ],
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11230",
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "오서율",
+      "holderRoute": "/people/person-0149"
+    },
+    {
+      "id": "holding:v3:duchy:11290",
+      "name": {
+        "ko": "성북구 공작령"
+      },
+      "holderPersonId": "K149",
+      "directLiegePersonId": "K144",
+      "stateId": "government",
       "adminRefs": [
         {
           "id": "region:1129052500",
@@ -1101,166 +1095,345 @@
           "name": "석관동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11290-S10",
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11290",
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "감용",
-      "holderRoute": "/people/person-0259"
+      "formalTitleRank": null,
+      "holderName": "서라온",
+      "holderRoute": "/people/person-0150"
     },
     {
-      "id": "holding:opening-duchy-gu-11305-S10",
+      "id": "holding:v3:duchy:11170",
       "name": {
-        "ko": "강북구 공작령 직영지"
+        "ko": "용산구 공작령"
       },
-      "holderPersonId": "K259",
+      "holderPersonId": "K169",
       "directLiegePersonId": "K144",
-      "stateId": "S10",
+      "stateId": "government",
       "adminRefs": [
         {
-          "id": "region:1130553400",
-          "name": "삼양동"
+          "id": "region:1117051000",
+          "name": "후암동"
         },
         {
-          "id": "region:1130553500",
-          "name": "미아동"
+          "id": "region:1117052000",
+          "name": "용산2가동"
         },
         {
-          "id": "region:1130554500",
-          "name": "송중동"
+          "id": "region:1117053000",
+          "name": "남영동"
         },
         {
-          "id": "region:1130555500",
-          "name": "송천동"
+          "id": "region:1117055500",
+          "name": "청파동"
         },
         {
-          "id": "region:1130557500",
-          "name": "삼각산동"
+          "id": "region:1117056000",
+          "name": "원효로1동"
         },
         {
-          "id": "region:1130559500",
-          "name": "번1동"
+          "id": "region:1117057000",
+          "name": "원효로2동"
         },
         {
-          "id": "region:1130560300",
-          "name": "번2동"
+          "id": "region:1117058000",
+          "name": "효창동"
         },
         {
-          "id": "region:1130560800",
-          "name": "번3동"
+          "id": "region:1117059000",
+          "name": "용문동"
         },
         {
-          "id": "region:1130561500",
-          "name": "수유1동"
+          "id": "region:1117062500",
+          "name": "한강로동"
         },
         {
-          "id": "region:1130562500",
-          "name": "수유2동"
+          "id": "region:1117063000",
+          "name": "이촌1동"
         },
         {
-          "id": "region:1130563500",
-          "name": "수유3동"
+          "id": "region:1117064000",
+          "name": "이촌2동"
         },
         {
-          "id": "region:1130564500",
-          "name": "우이동"
+          "id": "region:1117065000",
+          "name": "이태원1동"
         },
         {
-          "id": "region:1130566000",
-          "name": "인수동"
+          "id": "region:1117066000",
+          "name": "이태원2동"
+        },
+        {
+          "id": "region:1117068500",
+          "name": "한남동"
+        },
+        {
+          "id": "region:1117069000",
+          "name": "서빙고동"
+        },
+        {
+          "id": "region:1117070000",
+          "name": "보광동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11305-S10",
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11170",
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "두소",
-      "holderRoute": "/people/person-0260"
+      "formalTitleRank": null,
+      "holderName": "박태겸",
+      "holderRoute": "/people/person-0170"
     },
     {
-      "id": "holding:opening-duchy-gu-11320-S11",
+      "id": "holding:v3:duchy:11410",
       "name": {
-        "ko": "도봉구 공작령 직영지"
+        "ko": "서대문구 공작령"
       },
-      "holderPersonId": "K287",
+      "holderPersonId": "K170",
       "directLiegePersonId": "K144",
-      "stateId": "S11",
+      "stateId": "government",
       "adminRefs": [
         {
-          "id": "region:1132051100",
-          "name": "창1동"
+          "id": "region:1141052000",
+          "name": "천연동"
         },
         {
-          "id": "region:1132051200",
-          "name": "창2동"
+          "id": "region:1141055500",
+          "name": "북아현동"
         },
         {
-          "id": "region:1132051300",
-          "name": "창3동"
+          "id": "region:1141056500",
+          "name": "충현동"
         },
         {
-          "id": "region:1132051400",
-          "name": "창4동"
+          "id": "region:1141058500",
+          "name": "신촌동"
         },
         {
-          "id": "region:1132051500",
-          "name": "창5동"
+          "id": "region:1141061500",
+          "name": "연희동"
         },
         {
-          "id": "region:1132052100",
-          "name": "도봉1동"
+          "id": "region:1141062000",
+          "name": "홍제1동"
         },
         {
-          "id": "region:1132052200",
-          "name": "도봉2동"
+          "id": "region:1141064000",
+          "name": "홍제3동"
         },
         {
-          "id": "region:1132066000",
-          "name": "쌍문1동"
+          "id": "region:1141065500",
+          "name": "홍제2동"
         },
         {
-          "id": "region:1132067000",
-          "name": "쌍문2동"
+          "id": "region:1141066000",
+          "name": "홍은1동"
         },
         {
-          "id": "region:1132068000",
-          "name": "쌍문3동"
+          "id": "region:1141068500",
+          "name": "홍은2동"
         },
         {
-          "id": "region:1132068100",
-          "name": "쌍문4동"
+          "id": "region:1141069000",
+          "name": "남가좌1동"
         },
         {
-          "id": "region:1132069000",
-          "name": "방학1동"
+          "id": "region:1141070000",
+          "name": "남가좌2동"
         },
         {
-          "id": "region:1132070000",
-          "name": "방학2동"
+          "id": "region:1141071000",
+          "name": "북가좌1동"
         },
         {
-          "id": "region:1132071000",
-          "name": "방학3동"
+          "id": "region:1141072000",
+          "name": "북가좌2동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11320-S11",
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11410",
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "봉국",
-      "holderRoute": "/people/person-0288"
+      "formalTitleRank": null,
+      "holderName": "알렉산더 밀러",
+      "holderRoute": "/people/person-0171"
     },
     {
-      "id": "holding:opening-duchy-gu-11350-S11",
+      "id": "holding:v3:duchy:11110",
       "name": {
-        "ko": "노원구 공작령 직영지"
+        "ko": "종로구 공작령"
       },
-      "holderPersonId": "K285",
+      "holderPersonId": "K249",
       "directLiegePersonId": "K144",
-      "stateId": "S11",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1111051500",
+          "name": "청운효자동"
+        },
+        {
+          "id": "region:1111053000",
+          "name": "사직동"
+        },
+        {
+          "id": "region:1111054000",
+          "name": "삼청동"
+        },
+        {
+          "id": "region:1111055000",
+          "name": "부암동"
+        },
+        {
+          "id": "region:1111056000",
+          "name": "평창동"
+        },
+        {
+          "id": "region:1111057000",
+          "name": "무악동"
+        },
+        {
+          "id": "region:1111058000",
+          "name": "교남동"
+        },
+        {
+          "id": "region:1111060000",
+          "name": "가회동"
+        },
+        {
+          "id": "region:1111061500",
+          "name": "종로1·2·3·4가동"
+        },
+        {
+          "id": "region:1111063000",
+          "name": "종로5·6가동"
+        },
+        {
+          "id": "region:1111064000",
+          "name": "이화동"
+        },
+        {
+          "id": "region:1111065000",
+          "name": "혜화동"
+        },
+        {
+          "id": "region:1111067000",
+          "name": "창신1동"
+        },
+        {
+          "id": "region:1111068000",
+          "name": "창신2동"
+        },
+        {
+          "id": "region:1111069000",
+          "name": "창신3동"
+        },
+        {
+          "id": "region:1111070000",
+          "name": "숭인1동"
+        },
+        {
+          "id": "region:1111071000",
+          "name": "숭인2동"
+        }
+      ],
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11110",
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "윤초아",
+      "holderRoute": "/people/person-0250"
+    },
+    {
+      "id": "holding:v3:duchy:11200",
+      "name": {
+        "ko": "성동구 공작령"
+      },
+      "holderPersonId": "K296",
+      "directLiegePersonId": "K144",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1120052000",
+          "name": "왕십리2동"
+        },
+        {
+          "id": "region:1120053500",
+          "name": "왕십리도선동"
+        },
+        {
+          "id": "region:1120054000",
+          "name": "마장동"
+        },
+        {
+          "id": "region:1120055000",
+          "name": "사근동"
+        },
+        {
+          "id": "region:1120056000",
+          "name": "행당1동"
+        },
+        {
+          "id": "region:1120057000",
+          "name": "행당2동"
+        },
+        {
+          "id": "region:1120058000",
+          "name": "응봉동"
+        },
+        {
+          "id": "region:1120059000",
+          "name": "금호1가동"
+        },
+        {
+          "id": "region:1120061500",
+          "name": "금호2·3가동"
+        },
+        {
+          "id": "region:1120062000",
+          "name": "금호4가동"
+        },
+        {
+          "id": "region:1120064500",
+          "name": "옥수동"
+        },
+        {
+          "id": "region:1120065000",
+          "name": "성수1가1동"
+        },
+        {
+          "id": "region:1120066000",
+          "name": "성수1가2동"
+        },
+        {
+          "id": "region:1120067000",
+          "name": "성수2가1동"
+        },
+        {
+          "id": "region:1120069000",
+          "name": "성수2가3동"
+        },
+        {
+          "id": "region:1120072000",
+          "name": "송정동"
+        },
+        {
+          "id": "region:1120079000",
+          "name": "용답동"
+        }
+      ],
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11200",
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "장세화",
+      "holderRoute": "/people/person-0297"
+    },
+    {
+      "id": "holding:v3:duchy:11350",
+      "name": {
+        "ko": "노원구 공작령"
+      },
+      "holderPersonId": "K324",
+      "directLiegePersonId": "K144",
+      "stateId": "government",
       "adminRefs": [
         {
           "id": "region:1135056000",
@@ -1339,673 +1512,389 @@
           "name": "상계10동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11350-S11",
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11350",
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "두국",
-      "holderRoute": "/people/person-0286"
+      "formalTitleRank": null,
+      "holderName": "은채윤",
+      "holderRoute": "/people/person-0325"
     },
     {
-      "id": "holding:opening-duchy-gu-11380-S10",
+      "id": "holding:v3:duchy:11305",
       "name": {
-        "ko": "은평구 공작령 직영지"
+        "ko": "강북구 공작령"
       },
-      "holderPersonId": "K260",
+      "holderPersonId": "K325",
       "directLiegePersonId": "K144",
-      "stateId": "S10",
+      "stateId": "government",
       "adminRefs": [
         {
-          "id": "region:1138051000",
-          "name": "녹번동"
+          "id": "region:1130553400",
+          "name": "삼양동"
         },
         {
-          "id": "region:1138052000",
-          "name": "불광1동"
+          "id": "region:1130553500",
+          "name": "미아동"
         },
         {
-          "id": "region:1138053000",
-          "name": "불광2동"
+          "id": "region:1130554500",
+          "name": "송중동"
         },
         {
-          "id": "region:1138055100",
-          "name": "갈현1동"
+          "id": "region:1130555500",
+          "name": "송천동"
         },
         {
-          "id": "region:1138055200",
-          "name": "갈현2동"
+          "id": "region:1130557500",
+          "name": "삼각산동"
         },
         {
-          "id": "region:1138056000",
-          "name": "구산동"
+          "id": "region:1130559500",
+          "name": "번1동"
         },
         {
-          "id": "region:1138057000",
-          "name": "대조동"
+          "id": "region:1130560300",
+          "name": "번2동"
         },
         {
-          "id": "region:1138058000",
-          "name": "응암1동"
+          "id": "region:1130560800",
+          "name": "번3동"
         },
         {
-          "id": "region:1138059000",
-          "name": "응암2동"
+          "id": "region:1130561500",
+          "name": "수유1동"
         },
         {
-          "id": "region:1138060000",
-          "name": "응암3동"
+          "id": "region:1130562500",
+          "name": "수유2동"
         },
         {
-          "id": "region:1138062500",
-          "name": "역촌동"
+          "id": "region:1130563500",
+          "name": "수유3동"
         },
         {
-          "id": "region:1138063100",
-          "name": "신사1동"
+          "id": "region:1130564500",
+          "name": "우이동"
         },
         {
-          "id": "region:1138063200",
-          "name": "신사2동"
-        },
-        {
-          "id": "region:1138064000",
-          "name": "증산동"
-        },
-        {
-          "id": "region:1138065000",
-          "name": "수색동"
-        },
-        {
-          "id": "region:1138069000",
-          "name": "진관동"
+          "id": "region:1130566000",
+          "name": "인수동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11380-S10",
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11305",
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "모감",
-      "holderRoute": "/people/person-0261"
+      "formalTitleRank": null,
+      "holderName": "라세영",
+      "holderRoute": "/people/person-0326"
     },
     {
-      "id": "holding:opening-duchy-gu-11410-S06",
+      "id": "holding:v3:duchy:11320",
       "name": {
-        "ko": "서대문구 대한민국정부 공작령 직영지"
+        "ko": "도봉구 공작령"
       },
-      "holderPersonId": "K461",
+      "holderPersonId": "K327",
       "directLiegePersonId": "K144",
-      "stateId": "S06",
+      "stateId": "government",
       "adminRefs": [
         {
-          "id": "region:1141052000",
-          "name": "천연동"
+          "id": "region:1132051100",
+          "name": "창1동"
         },
         {
-          "id": "region:1141055500",
-          "name": "북아현동"
+          "id": "region:1132051200",
+          "name": "창2동"
         },
         {
-          "id": "region:1141056500",
-          "name": "충현동"
+          "id": "region:1132051300",
+          "name": "창3동"
+        },
+        {
+          "id": "region:1132051400",
+          "name": "창4동"
+        },
+        {
+          "id": "region:1132051500",
+          "name": "창5동"
+        },
+        {
+          "id": "region:1132052100",
+          "name": "도봉1동"
+        },
+        {
+          "id": "region:1132052200",
+          "name": "도봉2동"
+        },
+        {
+          "id": "region:1132066000",
+          "name": "쌍문1동"
+        },
+        {
+          "id": "region:1132067000",
+          "name": "쌍문2동"
+        },
+        {
+          "id": "region:1132068000",
+          "name": "쌍문3동"
+        },
+        {
+          "id": "region:1132068100",
+          "name": "쌍문4동"
+        },
+        {
+          "id": "region:1132069000",
+          "name": "방학1동"
+        },
+        {
+          "id": "region:1132070000",
+          "name": "방학2동"
+        },
+        {
+          "id": "region:1132071000",
+          "name": "방학3동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11410-S06",
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11320",
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "민시현",
-      "holderRoute": "/people/person-0461"
+      "formalTitleRank": null,
+      "holderName": "전솔",
+      "holderRoute": "/people/person-0328"
     },
     {
-      "id": "holding:opening-duchy-gu-11410-S10",
+      "id": "holding:v3:duchy:11215",
       "name": {
-        "ko": "서대문구 안국총림 공작령 직영지"
+        "ko": "광진구 공작령"
       },
-      "holderPersonId": "K261",
+      "holderPersonId": "K348",
       "directLiegePersonId": "K144",
-      "stateId": "S10",
+      "stateId": "government",
       "adminRefs": [
         {
-          "id": "region:1141065500",
-          "name": "홍제2동"
+          "id": "region:1121571000",
+          "name": "화양동"
         },
         {
-          "id": "region:1141066000",
-          "name": "홍은1동"
+          "id": "region:1121573000",
+          "name": "군자동"
         },
         {
-          "id": "region:1141068500",
-          "name": "홍은2동"
+          "id": "region:1121574000",
+          "name": "중곡1동"
+        },
+        {
+          "id": "region:1121575000",
+          "name": "중곡2동"
+        },
+        {
+          "id": "region:1121576000",
+          "name": "중곡3동"
+        },
+        {
+          "id": "region:1121577000",
+          "name": "중곡4동"
+        },
+        {
+          "id": "region:1121578000",
+          "name": "능동"
+        },
+        {
+          "id": "region:1121581000",
+          "name": "광장동"
+        },
+        {
+          "id": "region:1121582000",
+          "name": "자양1동"
+        },
+        {
+          "id": "region:1121583000",
+          "name": "자양2동"
+        },
+        {
+          "id": "region:1121584000",
+          "name": "자양3동"
+        },
+        {
+          "id": "region:1121584700",
+          "name": "자양4동"
+        },
+        {
+          "id": "region:1121585000",
+          "name": "구의1동"
+        },
+        {
+          "id": "region:1121586000",
+          "name": "구의2동"
+        },
+        {
+          "id": "region:1121587000",
+          "name": "구의3동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11410-S10",
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11215",
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "봉두",
-      "holderRoute": "/people/person-0262"
+      "formalTitleRank": null,
+      "holderName": "고서준",
+      "holderRoute": "/people/person-0349"
     },
     {
-      "id": "holding:opening-duchy-gu-11650-S11",
+      "id": "holding:v3:duchy:11140",
       "name": {
-        "ko": "서초구 성하그룹 공작령 직영지"
+        "ko": "중구 공작령"
       },
-      "holderPersonId": "K286",
+      "holderPersonId": "K377",
       "directLiegePersonId": "K144",
-      "stateId": "S11",
+      "stateId": "government",
       "adminRefs": [
         {
-          "id": "region:1165051000",
-          "name": "서초1동"
+          "id": "region:1114052000",
+          "name": "소공동"
         },
         {
-          "id": "region:1165053000",
-          "name": "서초3동"
+          "id": "region:1114054000",
+          "name": "회현동"
         },
         {
-          "id": "region:1165053100",
-          "name": "서초4동"
+          "id": "region:1114055000",
+          "name": "명동"
+        },
+        {
+          "id": "region:1114057000",
+          "name": "필동"
+        },
+        {
+          "id": "region:1114058000",
+          "name": "장충동"
+        },
+        {
+          "id": "region:1114059000",
+          "name": "광희동"
+        },
+        {
+          "id": "region:1114060500",
+          "name": "을지로동"
+        },
+        {
+          "id": "region:1114061500",
+          "name": "신당동"
+        },
+        {
+          "id": "region:1114062500",
+          "name": "다산동"
+        },
+        {
+          "id": "region:1114063500",
+          "name": "약수동"
+        },
+        {
+          "id": "region:1114064500",
+          "name": "청구동"
+        },
+        {
+          "id": "region:1114065000",
+          "name": "신당5동"
+        },
+        {
+          "id": "region:1114066500",
+          "name": "동화동"
+        },
+        {
+          "id": "region:1114067000",
+          "name": "황학동"
+        },
+        {
+          "id": "region:1114068000",
+          "name": "중림동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11650-S11",
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11140",
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "모복",
-      "holderRoute": "/people/person-0287"
+      "formalTitleRank": null,
+      "holderName": "남시윤",
+      "holderRoute": "/people/person-0378"
     },
     {
-      "id": "holding:opening-duchy-gu-11740-S05",
+      "id": "holding:v3:duchy:11440",
       "name": {
-        "ko": "강동구 공작령 직영지"
+        "ko": "마포구 공작령"
       },
-      "holderPersonId": "K115",
+      "holderPersonId": "K1007",
       "directLiegePersonId": "K144",
-      "stateId": "S05",
+      "stateId": "government",
       "adminRefs": [
         {
-          "id": "region:1174051500",
-          "name": "강일동"
+          "id": "region:1144055500",
+          "name": "아현동"
         },
         {
-          "id": "region:1174052500",
-          "name": "상일제1동"
+          "id": "region:1144056500",
+          "name": "공덕동"
         },
         {
-          "id": "region:1174052600",
-          "name": "상일제2동"
+          "id": "region:1144058500",
+          "name": "도화동"
         },
         {
-          "id": "region:1174053000",
-          "name": "명일1동"
+          "id": "region:1144059000",
+          "name": "용강동"
         },
         {
-          "id": "region:1174054000",
-          "name": "명일2동"
+          "id": "region:1144060000",
+          "name": "대흥동"
         },
         {
-          "id": "region:1174055000",
-          "name": "고덕1동"
+          "id": "region:1144061000",
+          "name": "염리동"
         },
         {
-          "id": "region:1174056000",
-          "name": "고덕2동"
+          "id": "region:1144063000",
+          "name": "신수동"
         },
         {
-          "id": "region:1174057000",
-          "name": "암사1동"
+          "id": "region:1144065500",
+          "name": "서강동"
         },
         {
-          "id": "region:1174058000",
-          "name": "암사2동"
+          "id": "region:1144066000",
+          "name": "서교동"
         },
         {
-          "id": "region:1174059000",
-          "name": "암사3동"
+          "id": "region:1144068000",
+          "name": "합정동"
         },
         {
-          "id": "region:1174060000",
-          "name": "천호1동"
+          "id": "region:1144069000",
+          "name": "망원1동"
         },
         {
-          "id": "region:1174061000",
-          "name": "천호2동"
+          "id": "region:1144070000",
+          "name": "망원2동"
         },
         {
-          "id": "region:1174062000",
-          "name": "천호3동"
+          "id": "region:1144071000",
+          "name": "연남동"
         },
         {
-          "id": "region:1174064000",
-          "name": "성내1동"
+          "id": "region:1144072000",
+          "name": "성산1동"
         },
         {
-          "id": "region:1174065000",
-          "name": "성내2동"
+          "id": "region:1144073000",
+          "name": "성산2동"
         },
         {
-          "id": "region:1174066000",
-          "name": "성내3동"
-        },
-        {
-          "id": "region:1174068500",
-          "name": "길동"
-        },
-        {
-          "id": "region:1174069000",
-          "name": "둔촌1동"
-        },
-        {
-          "id": "region:1174070000",
-          "name": "둔촌2동"
+          "id": "region:1144074000",
+          "name": "상암동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11740-S05",
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11440",
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "배우진",
-      "holderRoute": "/people/person-0116"
+      "formalTitleRank": null,
+      "holderName": "김연규",
+      "holderRoute": "/people/person-1007"
     }
-  ],
-  "openingTitles": [
-    {
-      "id": "title:duchy-gu-11110-S06",
-      "name": "종로구 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K144",
-      "basis": "개막 수도 직할 공작 결정(왕급 직속 최대 둘 중 하나)",
-      "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "region:1111051500",
-        "region:1111053000",
-        "region:1111054000",
-        "region:1111055000",
-        "region:1111056000",
-        "region:1111057000",
-        "region:1111058000",
-        "region:1111060000",
-        "region:1111061500",
-        "region:1111063000",
-        "region:1111064000",
-        "region:1111065000",
-        "region:1111067000",
-        "region:1111068000",
-        "region:1111069000",
-        "region:1111070000",
-        "region:1111071000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
-    },
-    {
-      "id": "title:kingdom-s06",
-      "name": "대한민국정부 왕국",
-      "rank": "kingdom",
-      "holderPersonId": "K144",
-      "stateId": "S06",
-      "parentTitleId": null,
-      "jurisdictionRefs": [
-        "region:1111051500",
-        "region:1111053000",
-        "region:1111054000",
-        "region:1111055000",
-        "region:1111056000",
-        "region:1111057000",
-        "region:1111058000",
-        "region:1111060000",
-        "region:1111061500",
-        "region:1111063000",
-        "region:1111064000",
-        "region:1111065000",
-        "region:1111067000",
-        "region:1111068000",
-        "region:1111069000",
-        "region:1111070000",
-        "region:1111071000",
-        "region:1114052000",
-        "region:1114054000",
-        "region:1114055000",
-        "region:1114057000",
-        "region:1114058000",
-        "region:1114059000",
-        "region:1114060500",
-        "region:1114061500",
-        "region:1114062500",
-        "region:1114063500",
-        "region:1114064500",
-        "region:1114065000",
-        "region:1114066500",
-        "region:1114067000",
-        "region:1114068000",
-        "region:1117053000",
-        "region:1117055500",
-        "region:1117056000",
-        "region:1117057000",
-        "region:1117058000",
-        "region:1117059000",
-        "region:1117062500",
-        "region:1117063000",
-        "region:1117064000",
-        "region:1117065000",
-        "region:1117068500",
-        "region:1117069000",
-        "region:1117070000",
-        "region:1121571000",
-        "region:1121573000",
-        "region:1121574000",
-        "region:1121575000",
-        "region:1121576000",
-        "region:1121577000",
-        "region:1121578000",
-        "region:1121581000",
-        "region:1121582000",
-        "region:1121583000",
-        "region:1121584000",
-        "region:1121584700",
-        "region:1121585000",
-        "region:1121586000",
-        "region:1121587000",
-        "region:1123051500",
-        "region:1123053300",
-        "region:1123054500",
-        "region:1123056000",
-        "region:1123057000",
-        "region:1123060000",
-        "region:1123061000",
-        "region:1123065000",
-        "region:1123066000",
-        "region:1123070500",
-        "region:1123071000",
-        "region:1123072000",
-        "region:1123073000",
-        "region:1123074000",
-        "region:1123075000",
-        "region:1126052000",
-        "region:1126054000",
-        "region:1126055000",
-        "region:1126056500",
-        "region:1126057000",
-        "region:1126057500",
-        "region:1126058000",
-        "region:1126059000",
-        "region:1126060000",
-        "region:1126061000",
-        "region:1126062000",
-        "region:1126063000",
-        "region:1126065500",
-        "region:1126066000",
-        "region:1126068000",
-        "region:1126069000",
-        "region:1129052500",
-        "region:1129055500",
-        "region:1129057500",
-        "region:1129058000",
-        "region:1129059000",
-        "region:1129060000",
-        "region:1129061000",
-        "region:1129062000",
-        "region:1129063000",
-        "region:1129064000",
-        "region:1129065000",
-        "region:1129066000",
-        "region:1129068500",
-        "region:1129070500",
-        "region:1129071500",
-        "region:1129072500",
-        "region:1129076000",
-        "region:1129077000",
-        "region:1129078000",
-        "region:1129081000",
-        "region:1130553400",
-        "region:1130553500",
-        "region:1130554500",
-        "region:1130555500",
-        "region:1130557500",
-        "region:1130559500",
-        "region:1130560300",
-        "region:1130560800",
-        "region:1130561500",
-        "region:1130562500",
-        "region:1130563500",
-        "region:1130564500",
-        "region:1130566000",
-        "region:1132051100",
-        "region:1132051200",
-        "region:1132051300",
-        "region:1132051400",
-        "region:1132051500",
-        "region:1132052100",
-        "region:1132052200",
-        "region:1132066000",
-        "region:1132067000",
-        "region:1132068000",
-        "region:1132068100",
-        "region:1132069000",
-        "region:1132070000",
-        "region:1132071000",
-        "region:1135056000",
-        "region:1135057000",
-        "region:1135058000",
-        "region:1135059500",
-        "region:1135060000",
-        "region:1135061100",
-        "region:1135061200",
-        "region:1135061900",
-        "region:1135062100",
-        "region:1135062400",
-        "region:1135062500",
-        "region:1135063000",
-        "region:1135064000",
-        "region:1135066500",
-        "region:1135067000",
-        "region:1135069500",
-        "region:1135070000",
-        "region:1135071000",
-        "region:1135072000",
-        "region:1138051000",
-        "region:1138052000",
-        "region:1138053000",
-        "region:1138055100",
-        "region:1138055200",
-        "region:1138056000",
-        "region:1138057000",
-        "region:1138058000",
-        "region:1138059000",
-        "region:1138060000",
-        "region:1138062500",
-        "region:1138063100",
-        "region:1138063200",
-        "region:1138064000",
-        "region:1138065000",
-        "region:1138069000",
-        "region:1141052000",
-        "region:1141055500",
-        "region:1141056500",
-        "region:1141065500",
-        "region:1141066000",
-        "region:1141068500",
-        "region:1165051000",
-        "region:1165053000",
-        "region:1165053100",
-        "region:1174051500",
-        "region:1174052500",
-        "region:1174052600",
-        "region:1174053000",
-        "region:1174054000",
-        "region:1174055000",
-        "region:1174056000",
-        "region:1174057000",
-        "region:1174058000",
-        "region:1174059000",
-        "region:1174060000",
-        "region:1174061000",
-        "region:1174062000",
-        "region:1174064000",
-        "region:1174065000",
-        "region:1174066000",
-        "region:1174068500",
-        "region:1174069000",
-        "region:1174070000"
-      ],
-      "basis": "개막 왕국 루트 결정(2026-10-11 사용자 승인)",
-      "parentTitle": null
-    },
-    {
-      "id": "title:kingdom-geography:seoul:01",
-      "name": "중앙 왕국",
-      "rank": "kingdom",
-      "holderPersonId": "K144",
-      "stateId": "S06",
-      "geographicTitleId": "geography:kingdom:seoul:01",
-      "basis": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 대한민국정부 대통령. 청와대·광화문 중심의 강북 권역과 종로 공작령 보유 근거.",
-      "parentTitle": null
-    }
-  ],
-  "clan": {
-    "id": "c724-d30c-d3c9",
-    "name": "파평 윤씨",
-    "crest": "clan-crests/c724-d30c-d3c9.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": true,
-  "values": {
-    "권위": 20,
-    "개방": -10,
-    "무력": -30,
-    "물질": -20,
-    "공동": 10,
-    "원칙": 40,
-    "공개": -30,
-    "자격": 0,
-    "분산": -40,
-    "변혁": -50
-  },
-  "desire": {
-    "갈망": -10,
-    "독점": 10,
-    "위험": -40,
-    "과시": -20,
-    "지속": 40,
-    "지향": "무성향",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "도장함 봉인·인준 보류 관리",
-    "헌법기관": "대한민국 대통령",
-    "관직": "대한민국 대통령"
-  },
-  "sections": {
-    "생애": "윤서린은 종로구 세종대로 209 정부서울청사 본관에서 등기 당직을 맡으며 기록을 다뤘다. 기록 위조는 금지된다. 정부 도장이 없으면 도심의 급수계약은 효력이 없다. 윤서린이 대통령이 된 것은 북한산보국문기록가의 도장함을 끊기지 않게 지킨 뒤였다. 서울역기록법가의 도장함은 여리안의 것이다. 2126년 정부는 청와대에서 종로·중구의 주민 명부와 배급·인준 업무를 맡고, 정부서울청사 경비대는 도심 역을 지킨다. 한재목의 서부안을 멈추면 빚이 쌓이고, 찍으면 양천의 거부권이 죽는다.",
-    "관직": "품계 대통령. 관직은 대한민국 대통령. 생업 별명은 기록청장(대통령 직위와 별개).",
-    "일화": "세 유언이 접수됐을 때, 윤서린은 인준을 보류하고 함의 봉인만 확인했다.",
-    "가문": "북한산보국문기록가(HC05). 관리인. 서울역기록법가(HP04) 관리인은 여리안이다.",
-    "관계": "한재목과 인준권 분쟁. 남윤경과 배급 원장 교환. 정유라와 인준 경쟁.\n\n- 생업: 도장함 봉인·인준 보류 관리\n- 헌법기관: 대한민국 대통령\n- 헌법기관: 대한민국 대통령\n- 관직: 대한민국 대통령\n- 윤서린이 맡는 정부서울청사 등기 당직과 도장함 봉인·인준 보류 관리는 사직동의 업무와 이어진다.\n- 윤서린이 맡는 청와대의 종로·중구 주민 명부와 배급·인준 업무는 청운효자동과 이어진다.\n- 윤서린이 맡는 북한산보국문기록가의 도장함을 돌보는 일은 정릉4동의 업무와 이어진다.\n\n기록청장 윤서린 곁에서 인준·공증·지도와 의료 이송 장부를 실제로 굴리는 실세다."
-  },
-  "biography": "**생애.** 윤서린은 종로구 세종대로 209 정부서울청사 본관에서 등기 당직을 맡으며 기록을 다뤘다. 기록 위조는 금지된다. 정부 도장이 없으면 도심의 급수계약은 효력이 없다. 윤서린이 대통령이 된 것은 북한산보국문기록가의 도장함을 끊기지 않게 지킨 뒤였다. 서울역기록법가의 도장함은 여리안의 것이다. 2126년 정부는 청와대에서 종로·중구의 주민 명부와 배급·인준 업무를 맡고, 정부서울청사 경비대는 도심 역을 지킨다. 한재목의 서부안을 멈추면 빚이 쌓이고, 찍으면 양천의 거부권이 죽는다.\n**관직.** 품계 대통령. 관직은 대한민국 대통령. 생업 별명은 기록청장(대통령 직위와 별개).\n**일화.** 세 유언이 접수됐을 때, 윤서린은 인준을 보류하고 함의 봉인만 확인했다.\n**가문.** 북한산보국문기록가(HC05). 관리인. 서울역기록법가(HP04) 관리인은 여리안이다.\n**관계.** 한재목과 인준권 분쟁. 남윤경과 배급 원장 교환. 정유라와 인준 경쟁.\n\n- 생업: 도장함 봉인·인준 보류 관리\n- 헌법기관: 대한민국 대통령\n- 헌법기관: 대한민국 대통령\n- 관직: 대한민국 대통령\n- 윤서린이 맡는 정부서울청사 등기 당직과 도장함 봉인·인준 보류 관리는 사직동의 업무와 이어진다.\n- 윤서린이 맡는 청와대의 종로·중구 주민 명부와 배급·인준 업무는 청운효자동과 이어진다.\n- 윤서린이 맡는 북한산보국문기록가의 도장함을 돌보는 일은 정릉4동의 업무와 이어진다.\n\n기록청장 윤서린 곁에서 인준·공증·지도와 의료 이송 장부를 실제로 굴리는 실세다.",
-  "sources": [
-    "Cast-State-06",
-    "Core-Characters"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": [
-      {
-        "from": "김연규",
-        "type": "계약",
-        "to": "윤서린",
-        "basis": "온민의 문서 등재"
-      },
-      {
-        "from": "김연규",
-        "type": "경쟁",
-        "to": "윤서린",
-        "basis": "온민의 문서 등재는 허락되고 인준은 거부됨"
-      },
-      {
-        "from": "오경재",
-        "type": "경쟁",
-        "to": "윤서린",
-        "basis": "세 유언 공개로 대통령 인준권을 견제"
-      },
-      {
-        "from": "정가온",
-        "type": "계약",
-        "to": "윤서린",
-        "basis": "유언 사본을 기록청에 넘김"
-      },
-      {
-        "from": "강예준",
-        "type": "지휘",
-        "to": "윤서린",
-        "basis": "당회장 인준을 대통령 지휘로 심사"
-      },
-      {
-        "from": "조하린",
-        "type": "지휘",
-        "to": "윤서린",
-        "basis": "임하준 유언 삼본을 문서고에서 지킴"
-      },
-      {
-        "from": "윤지율",
-        "type": "지휘",
-        "to": "윤서린",
-        "basis": "대통령 추대 세력의 의료이송 기록"
-      },
-      {
-        "from": "오서율",
-        "type": "지휘",
-        "to": "윤서린",
-        "basis": "공증 권한을 위임받아 급수문안을 심사"
-      },
-      {
-        "from": "전나경",
-        "type": "계약",
-        "to": "윤서린",
-        "basis": "배급 원장 사본을 기록청에 넘김"
-      },
-      {
-        "from": "장필규",
-        "type": "경쟁",
-        "to": "윤서린",
-        "basis": "급수계약 인준 사본의 해석권 경쟁"
-      },
-      {
-        "from": "나봄결",
-        "type": "계약",
-        "to": "윤서린",
-        "basis": "윤서린의 교차검증에는 복종하되 은폐 배전은 거부한다"
-      },
-      {
-        "from": "류한뫼",
-        "type": "맹세",
-        "to": "윤서린",
-        "basis": "윤서린의 인준 심사에 서부 사본을 넘기고"
-      },
-      {
-        "from": "홍예준",
-        "type": "계약",
-        "to": "윤서린",
-        "basis": "윤서린의 인준 심사에 서기 원장을 바치고"
-      },
-      {
-        "from": "섭달호",
-        "type": "계약",
-        "to": "윤서린",
-        "basis": "윤서린에게 음성·문서 교차 사본을 전하며"
-      }
-    ]
-  }
+  ]
 }

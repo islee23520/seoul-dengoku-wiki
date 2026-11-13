@@ -1,522 +1,185 @@
 {
   "id": "person-1005",
   "name": "정서온",
-  "title": "회장",
-  "position": "태욱그룹 회장",
+  "title": "교섭인",
+  "position": "교섭인 · 잠실역",
   "characterId": "K1005",
-  "rank": "회장",
-  "commonTier": "T1",
-  "occupation": "회장 직무·검증 인준",
+  "rank": "곁집원",
+  "commonTier": "T2",
+  "occupation": "계약 교섭",
   "gender": "여성",
   "stage": "주요",
-  "state": "S03",
-  "stateName": "태욱그룹",
-  "sourceRoute": "/world/Core-Characters#정서온",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-1005",
   "birthDate": "2090-06-17",
   "birthday": "06-17",
   "age": 36,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Core-Characters.json#/content/26",
-    "lore/characters/Core-Characters.json#/content/27",
-    "lore/characters/Core-Characters.json#/content/32",
-    "lore/chronology/Century-Annals.json#/content/405",
-    "lore/chronology/Century-Annals.json#/content/409",
-    "lore/chronology/Century-Annals.json#/content/411",
-    "lore/chronology/Century-Annals.json#/content/413",
-    "lore/chronology/Century-Annals.json#/content/420",
-    "lore/chronology/Century-Annals.json#/content/441",
-    "lore/chronology/Century-Annals.json#/content/617",
-    "lore/chronology/Scenario-Timeline.json#/content/10"
-  ],
-  "familyTree": {
-    "personId": "K1005",
-    "nodes": [
-      {
-        "id": "K398",
-        "personId": "K398",
-        "kind": "person",
-        "name": "정유라",
-        "birthDate": "2090-01-26",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K398"
-          },
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정유라-p2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 중구 정동길 3 경향신문사 자리의 계약 감사. 기록 위조는 금지된다. 정동 사무실의 조합원 명부가 비상 소집이 되었다. 공장이 멈추자 파업권이 통행권으로 바뀌었다. 정유라가 위원장이 된 것은 수서건설가의 보호 표준 도면을 끊기지 않게 지킨 뒤였다. 수서 기지는 임자 없는 무주지로 남는다. 시청역 총연맹이 나라 행세를 한다. 세 강국이 서로 다른 급수계약을 약소국에 동시에 내민 철, 정유라는 종료조건과 감사권을 한 장에 넣었다. 그 장이 협의의 뼈대가 되었다. 장세화의 호송이 그 장을 싣는다. 정씨 분가의 일원이다. 정서온과는 먼 친척이다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정유라-p2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0399"
-      },
-      {
-        "id": "K1005",
-        "personId": "K1005",
-        "kind": "person",
-        "name": "정서온",
-        "birthDate": "2090-06-17",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K1005"
-          },
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "생애. 2126년 세대. 정일환의 외동딸이다. 문중 족보에는 항렬자 없이 올라 있다. 분가의 남성 후계론이 이어졌다. 정통회는 후계 인준에 답을 하지 않았다. 그 무응답이 가문 안의 부담으로 남았다. 정유라는 정씨 분가의 일원이다. 정서온과는 먼 친척이다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정서온-p2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-1005"
-      },
-      {
-        "id": "FH-EX-JEONG-ILHWAN",
-        "personId": null,
-        "kind": "historical",
-        "name": "정일환",
-        "lineage": {
-          "surname": "정",
-          "bongwan": "진양",
-          "clan": "c815-c9c4-c591-912d"
-        },
-        "birthDate": "2060-06-17",
-        "deathDate": "2112-04-09",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/chronology/Century-Annals.json"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2112,
-            "summary": "정일환은 가문의 후계 인준 갈등 속에 외동딸 정서온을 남기고 사망한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정서온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1005-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "송민재",
-        "birthDate": "2060-06-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2098,
-            "summary": "송민재는 생활권의 공동 거처에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정서온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1005-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "조민도",
-        "birthDate": "2030-06-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "조민도는 생활권의 공동 거처에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정서온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1005-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "김민온",
-        "birthDate": "2000-06-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "김민온은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정서온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1005-X정일환-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정서영",
-        "lineage": {
-          "surname": "정",
-          "bongwan": "진양",
-          "clan": "c815-c9c4-c591-912d"
-        },
-        "birthDate": "2030-06-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "정서영은 생활권의 공동 거처에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정서온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1005-X정일환-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정서윤",
-        "lineage": {
-          "surname": "정",
-          "bongwan": "진양",
-          "clan": "c815-c9c4-c591-912d"
-        },
-        "birthDate": "2000-06-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정서윤은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정서온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-EX-JEONG-ILHWAN:K1005:biological",
-        "from": "FH-EX-JEONG-ILHWAN",
-        "to": "K1005",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/chronology/Century-Annals.json",
-            "anchor": "ch31-i1-p"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1005-M-01:K1005:biological",
-        "from": "FH-K1005-M-01",
-        "to": "K1005",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1005-M-02:FH-K1005-M-01:biological",
-        "from": "FH-K1005-M-02",
-        "to": "FH-K1005-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1005-M-03:FH-K1005-M-02:biological",
-        "from": "FH-K1005-M-03",
-        "to": "FH-K1005-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1005-X정일환-01:FH-EX-JEONG-ILHWAN:biological",
-        "from": "FH-K1005-X정일환-01",
-        "to": "FH-EX-JEONG-ILHWAN",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1005-X정일환-02:FH-K1005-X정일환-01:biological",
-        "from": "FH-K1005-X정일환-02",
-        "to": "FH-K1005-X정일환-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "K1005:K398:household",
-        "from": "K1005",
-        "to": "K398",
-        "type": "household",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Relations.json",
-            "anchor": "관계-원장-table3"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c815-c9c4-c591-912d",
+    "name": "진양 정씨",
+    "crest": "clan-crests/c815-c9c4-c591-912d.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "부위가 둘인 서른여섯 살 정서온은 송파 곁집의 맞수로, 남윤경 다음의 자리를 넘보는 사람이다. 잠실 바꿈터에서 수차 전기를 하루 충전의 수로 바깥 사람에게 내주는 일을 맡고, 받을 몫은 정비장의 도장이 찍힌 셈표로만 믿는다. 서초 곁집장 정유라는 먼 친척으로 정서온이 세대주인 한 세대에 함께 적혀 있지만, 두 사람은 서로 다른 구의 본역에서 잔다. 송파 사람들은 남윤경이 핏줄로 이은 자리를 정서온이 셈으로 흔든다고 말한다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "교섭인",
+    "품계": "곁집원",
+    "생업": "계약 교섭",
+    "일하는 역": "잠실역",
+    "잠자는 역": "잠실역",
+    "가구": "가구주",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "부위가 둘인 서른여섯 살 정서온은 송파 곁집의 맞수로, 남윤경 다음의 자리를 넘보는 사람이다. 잠실 바꿈터에서 수차 전기를 하루 충전의 수로 바깥 사람에게 내주는 일을 맡고, 받을 몫은 정비장의 도장이 찍힌 셈표로만 믿는다. 서초 곁집장 정유라는 먼 친척으로 정서온이 세대주인 한 세대에 함께 적혀 있지만, 두 사람은 서로 다른 구의 본역에서 잔다. 송파 사람들은 남윤경이 핏줄로 이은 자리를 정서온이 셈으로 흔든다고 말한다.",
+    "관직": "직함 교섭인. 직위 교섭인 · 잠실역. 품계 곁집원. 일하는 역 잠실역."
+  },
+  "values": {
+    "권위": 15,
+    "개방": 5,
+    "무력": -20,
+    "물질": -40,
+    "공동": 20,
+    "원칙": 40,
+    "공개": -5,
+    "자격": 5,
+    "분산": -20,
+    "변혁": 55
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": 50,
+    "위험": -20,
+    "과시": 40,
+    "지속": 50,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-1005",
+    "role": "head",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "정서온",
+        "type": "친족",
+        "to": "정유라",
+        "basis": "정서온이 세대주인 한 세대에 먼 친척으로 함께 적혀 있다. 정유라는 서초의 본역에서 따로 잔다"
+      },
+      {
+        "from": "정서온",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "정서온",
+        "type": "경쟁",
+        "to": "남윤경",
+        "basis": "송파 곁집장 자리를 두고 맞선다. 남윤경은 핏줄로 이었고, 정서온은 부위와 셈으로 그 다음을 넘본다"
+      },
+      {
+        "from": "정서온",
+        "type": "계약",
+        "to": "차유선",
+        "basis": "여러 도시 상인의 몫을 대신 든 차유선에게 잠실에서 채운 전지를 하루 충전의 수로 판다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "임겨레",
+        "type": "경쟁",
+        "to": "정서온",
+        "basis": "송파 곁집 안에서 교섭의 이름을 두고 정서온과 겨룬다"
+      },
+      {
+        "from": "남윤경",
+        "type": "경쟁",
+        "to": "정서온",
+        "basis": "잠실에서 교섭을 맡은 정서온이 송파 곁집장 자리를 넘본다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K1018",
+    "name": "고예진",
+    "courtId": "court:K1018",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 8,
+        "effective": 8
+      },
+      "martial": {
+        "base": 4,
+        "effective": 4
+      },
+      "stewardship": {
         "base": 9,
         "effective": 9
       },
-      "strategy": {
-        "base": 10,
-        "effective": 10
-      },
-      "negotiation": {
-        "base": 11,
-        "effective": 11
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 10,
-        "effective": 10
+        "base": 5,
+        "effective": 5
       },
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
       }
     },
-    "skills": [],
+    "skills": [
+      {
+        "id": "skill-v3-exchange-bargaining",
+        "name": "바꿈터 교섭",
+        "rating": 70
+      },
+      {
+        "id": "skill-v3-charge-tally",
+        "name": "하루 충전 셈",
+        "rating": 65
+      }
+    ],
     "traits": [
       {
-        "id": "k1005-trait-1",
-        "name": {
-          "ko": "무응답 속의 취임",
-          "en": "Taking office amid silence"
-        },
-        "description": {
-          "ko": "인준 무응답과 회장 취임이 함께 남아 있다.",
-          "en": "Council silence and taking the chair coexist."
-        },
-        "behavior": {
-          "ko": "인준 무응답과 회장 취임이 함께 남아 있다.",
-          "en": "Council silence and taking the chair coexist."
-        },
-        "stress": {
-          "ko": "분가의 남성 후계론을 마주했으나 구체적 대응은 제한적으로 기록됐다.",
-          "en": "Faces a male-heir proposal, though her specific response is sparsely recorded."
-        },
-        "relationship": {
-          "ko": "정호준을 연구책임자로 두고 정유라와 먼 친족 관계다.",
-          "en": "Shares the group with research director Jeong Hojun and is distantly related to Jeong Yura."
-        },
+        "id": "trait-v3-count-against-blood",
+        "name": "쇠로 맞서는 셈",
+        "description": "핏줄이 아니라 몸에 든 쇠와 도장 찍힌 셈표로 자리를 다툰다.",
+        "behavior": "약속을 하루 충전의 수로 적어 두고, 그 수에서 한 걸음도 물러나지 않는다.",
+        "stress": "셈이 맞지 않는 자리에서는 말이 짧아지고 같은 수를 되풀이한다.",
+        "relationship": "남윤경을 깎아내리지 않지만, 송파 곁집의 다음 자리를 양보할 뜻도 없다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "남성 후계론과 정통회의 무응답 속에서 회장 자리에 앉았다. 회장 직무와 정호준의 연구 책임은 구분된다. 확인된 선택은 제한적이며 세습과 친족관계만으로 연구·군사 숙련을 부여하지 않는다.",
-      "en": "She took the chair amid a male-heir challenge and silence from the legitimacy council. Her chairmanship remains distinct from Jeong Hojun’s research remit. Evidence of personal choices is limited; heredity and kinship do not confer research or military skills."
-    },
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -542,82 +205,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:capital-s03",
-      "name": {
-        "ko": "양재역 직영지"
-      },
-      "holderPersonId": "K1005",
-      "directLiegePersonId": null,
-      "stateId": "S03",
-      "stationRef": {
-        "stationId": "양재",
-        "stationName": "양재"
-      },
-      "adminRefs": [],
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": null
-    }
-  ],
-  "clan": {
-    "id": "c815-c9c4-c591-912d",
-    "name": "진양 정씨",
-    "crest": "clan-crests/c815-c9c4-c591-912d.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": false,
-  "values": {
-    "권위": -10,
-    "개방": 20,
-    "무력": -30,
-    "물질": 10,
-    "공동": 0,
-    "원칙": 50,
-    "공개": 40,
-    "자격": 40,
-    "분산": 10,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": 50,
-    "위험": -20,
-    "과시": 40,
-    "지속": 50,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {},
-  "sections": {
-    "생애": "2126년 세대. 정일환의 외동딸이다. 문중 족보에는 항렬자 없이 올라 있다. 분가의 남성 후계론이 이어졌다. 정통회는 후계 인준에 답을 하지 않았다. 그 무응답이 가문 안의 부담으로 남았다. 정유라는 정씨 분가의 일원이다. 정서온과는 먼 친척이다.",
-    "관직": "품계 회장. 직함은 태욱그룹 회장. 생업 별명은 회장 직무·검증 인준.",
-    "일화": "회장 인준이 열렸을 때, 분가는 남성 후계를 올렸다. 정통회는 답을 하지 않았다. 정서온은 회장 자리에 앉았다. 정호준은 생명안전 연구책임자로 남았다.",
-    "가문": "정씨 회장가. 마곡생명가(HC03)의 관리인이 아니다.",
-    "관계": "정호준은 같은 그룹의 연구책임자다. 정유라는 먼 친척이다. 남윤경의 정통회가 후계 인준을 보류한다. 박태겸의 혼인 제안은 답을 받지 못한 채 남아 있다."
-  },
-  "biography": "태욱그룹 회장. 정씨 회장가의 외동딸. 정서온은 도곡1동에서 회장 직무를 보며 양재역 직영지의 기존 기록을 대조한다. 분가의 후계 주장과 정통회의 무응답을 확인한 뒤에도 생명안전 연구책임은 정호준에게 남긴다.\n\n**생애.** 2126년 세대. 정일환의 외동딸이다. 문중 족보에는 항렬자 없이 올라 있다. 분가의 남성 후계론이 이어졌다. 정통회는 후계 인준에 답을 하지 않았다. 그 무응답이 가문 안의 부담으로 남았다. 정유라는 정씨 분가의 일원이다. 정서온과는 먼 친척이다.\n\n**관직.** 품계 회장. 직함은 태욱그룹 회장. 생업 별명은 회장 직무·검증 인준.\n\n**일화.** 회장 인준이 열렸을 때, 분가는 남성 후계를 올렸다. 정통회는 답을 하지 않았다. 정서온은 회장 자리에 앉았다. 정호준은 생명안전 연구책임자로 남았다.\n\n**가문.** 정씨 회장가. 마곡생명가(HC03)의 관리인이 아니다.\n\n**관계.** 정호준은 같은 그룹의 연구책임자다. 정유라는 먼 친척이다. 남윤경의 정통회가 후계 인준을 보류한다. 박태겸의 혼인 제안은 답을 받지 못한 채 남아 있다.",
-  "sources": [
-    "Core-Characters"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "정서온",
-        "type": "친족",
-        "to": "정유라",
-        "basis": "정씨 분가의 먼 친척"
-      },
-      {
-        "from": "정서온",
-        "type": "지휘",
-        "to": "정호준",
-        "basis": "태욱그룹 회장이 생명안전 연구책임을 분리해 둠"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

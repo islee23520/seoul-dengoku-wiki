@@ -1,394 +1,106 @@
 {
   "id": "person-0762",
   "name": "양름태",
-  "title": "종자 기록관",
-  "position": "종자 기록관",
+  "title": "가문 징집병",
+  "position": "가문 징집병 · 신논현역",
   "characterId": "K762",
-  "rank": "대리",
+  "rank": "미세례자",
   "commonTier": "T5",
-  "occupation": "기록·열쇠 인수인계",
+  "occupation": "가문 징집",
   "gender": "남성",
   "stage": "S4",
-  "state": "S03",
-  "stateName": "태욱그룹",
-  "sourceRoute": "/world/Cast-State-03#인물-양름태",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0762",
   "birthDate": "2072-06-10",
   "birthday": "06-10",
   "age": 54,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-03.json#/content/533",
-    "lore/characters/Cast-State-03.json#/content/536"
-  ],
-  "familyTree": {
-    "personId": "K762",
-    "nodes": [
-      {
-        "id": "K762",
-        "personId": "K762",
-        "kind": "person",
-        "name": "양름태",
-        "birthDate": "2072-06-10",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K762"
-          },
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-양름태-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-양름태-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0762"
-      },
-      {
-        "id": "FH-K762-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "양승미",
-        "lineage": {
-          "surname": "양",
-          "bongwan": "청주",
-          "clan": "c591-ccad-c8fc-agreed-d0dc-second"
-        },
-        "birthDate": "2042-06-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-양름태-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "양승미는 서울역 등기소에서 기록·열쇠 인수인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-양름태-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K762-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "양승도",
-        "lineage": {
-          "surname": "양",
-          "bongwan": "청주",
-          "clan": "c591-ccad-c8fc-agreed-d0dc-second"
-        },
-        "birthDate": "2012-06-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-양름태-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "양승도는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-양름태-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K762-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강도준",
-        "birthDate": "2042-06-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-양름태-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "강도준은 서울역 등기소에서 기록·열쇠 인수인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-양름태-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K762-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임도민",
-        "birthDate": "2012-06-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-양름태-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임도민은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-양름태-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K762-P-01:K762:biological",
-        "from": "FH-K762-P-01",
-        "to": "K762",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-양름태-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K762-P-02:FH-K762-P-01:biological",
-        "from": "FH-K762-P-02",
-        "to": "FH-K762-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-양름태-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K762-M-01:K762:biological",
-        "from": "FH-K762-M-01",
-        "to": "K762",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-양름태-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K762-M-02:FH-K762-M-01:biological",
-        "from": "FH-K762-M-02",
-        "to": "FH-K762-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-양름태-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c591-ccad-c8fc",
+    "name": "청주 양씨",
+    "crest": "clan-crests/c591-ccad-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "신논현역 출입구 초소를 지킨 지 서른 해가 넘었어도, 쉰네 살 양름태의 깃에는 부위 수 땀이 한 줄도 없다. 지상 순찰에서 그는 솜을 두 겹 넣은 덧옷을 입고 맨 뒤에 서는데, 앞선 세례 전투원이 미끄러지면 끌어올리는 것이 그 자리의 일이다. 젊은 징집병들은 눈 위에서 발을 어디에 디딜지 물을 때 호위장보다 그를 먼저 찾는다. 그는 대답 대신 제 발자국을 따라오라고 한다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "가문 징집병",
+    "품계": "미세례자",
+    "생업": "가문 징집",
+    "일하는 역": "신논현역",
+    "잠자는 역": "신논현역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 0
+  },
+  "sections": {
+    "생애": "신논현역 출입구 초소를 지킨 지 서른 해가 넘었어도, 쉰네 살 양름태의 깃에는 부위 수 땀이 한 줄도 없다. 지상 순찰에서 그는 솜을 두 겹 넣은 덧옷을 입고 맨 뒤에 서는데, 앞선 세례 전투원이 미끄러지면 끌어올리는 것이 그 자리의 일이다. 젊은 징집병들은 눈 위에서 발을 어디에 디딜지 물을 때 호위장보다 그를 먼저 찾는다. 그는 대답 대신 제 발자국을 따라오라고 한다.",
+    "관직": "직함 가문 징집병. 직위 가문 징집병 · 신논현역. 품계 미세례자. 일하는 역 신논현역."
+  },
+  "values": {
+    "권위": 25,
+    "개방": 5,
+    "무력": -30,
+    "물질": -50,
+    "공동": 20,
+    "원칙": 65,
+    "공개": -10,
+    "자격": 0,
+    "분산": -25,
+    "변혁": 60
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": -5,
+    "위험": -40,
+    "과시": 5,
+    "지속": 40,
+    "지향": "무성향",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0762",
+    "role": "single",
+    "personFaith": "unbaptised",
+    "houseFaith": "unbaptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 4,
         "effective": 4
       },
-      "strategy": {
-        "base": 6,
-        "effective": 6
-      },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
+      "martial": {
         "base": 9,
         "effective": 9
       },
-      "insight": {
-        "base": 10,
-        "effective": 10
+      "stewardship": {
+        "base": 4,
+        "effective": 4
       },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
+      "intrigue": {
         "base": 5,
         "effective": 5
+      },
+      "learning": {
+        "base": 4,
+        "effective": 4
+      },
+      "prowess": {
+        "base": 10,
+        "effective": 10
       }
     },
-    "skills": [
-      {
-        "id": "log-gap",
-        "name": {
-          "ko": "온습도 기록 공백 대조",
-          "en": "Temperature-log gap reconciliation"
-        },
-        "rating": 55
-      },
-      {
-        "id": "handover",
-        "name": {
-          "ko": "기록·열쇠 인수인계",
-          "en": "Record and key handover"
-        },
-        "rating": 45
-      }
-    ],
-    "traits": [
-      {
-        "id": "check-gaps-against-shifts",
-        "name": {
-          "ko": "공백을 교대와 대조",
-          "en": "Check Gaps Against Shifts"
-        },
-        "description": {
-          "ko": "양름태는 온습도 기록의 빈칸을 교대 시각과 맞춰 추적하는 쪽이다.",
-          "en": "Yang Reumtae traces gaps in temperature and humidity records against shift times."
-        },
-        "behavior": {
-          "ko": "빈칸 앞뒤 기록과 교대 시각을 대조해 기록이 끊긴 구간을 표시한다.",
-          "en": "They compare entries surrounding a gap with shift times and mark the interrupted interval."
-        },
-        "stress": {
-          "ko": "당직 공백이 통행의 종속으로 이어질 우려가 커지면 끊긴 구간의 확인을 더 중시할 수 있다.",
-          "en": "Concern that an unattended shift could compromise the group's passage may heighten their attention to interrupted records."
-        },
-        "relationship": {
-          "ko": "교대 상대와 기록 공백을 공유해야 한다면 표시된 구간을 설명의 근거로 삼을 수 있다.",
-          "en": "When explaining record gaps to a shift partner, they may rely on the marked intervals."
-        },
-        "effects": []
-      },
-      {
-        "id": "hand-over-box-numbers",
-        "name": {
-          "ko": "상자 번호 인계",
-          "en": "Hand Over Box Numbers"
-        },
-        "description": {
-          "ko": "양름태는 기록 공백에 관련된 상자를 번호로 특정해 인계하는 쪽이다.",
-          "en": "Yang Reumtae identifies boxes associated with a record gap by number for handover."
-        },
-        "behavior": {
-          "ko": "끊긴 구간에 있던 상자 번호를 열쇠 인계 기록지에 옮겨 박진솔에게 넘긴다.",
-          "en": "They copy the affected box numbers onto the key handover sheet and pass it to Park Jinsol."
-        },
-        "stress": {
-          "ko": "당직이 비어 통행이 위태로워질 우려가 있으면 관련 상자 번호의 누락을 더 경계할 수 있다.",
-          "en": "If a vacant shift threatens passage, they may become especially wary of omitting affected box numbers."
-        },
-        "relationship": {
-          "ko": "박진솔과 인계 내용을 확인할 때 권한을 넓히기보다 번호와 기록을 공유하는 데 집중할 수 있다.",
-          "en": "When checking the handover with Park Jinsol, they may focus on sharing numbers and records rather than extending their authority."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "전력 불안 때 온습도 공백을 교대와 대조하고 관련 상자 번호를 넘겼다. 기록 추적이 강점이며 종자 생물학은 추가하지 않는다.",
-      "en": "She matched temperature-log gaps to shift times during unstable power and passed affected box numbers. Record tracing is supported, not seed biology."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -426,67 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c591-ccad-c8fc",
-    "name": "청주 양씨",
-    "crest": "clan-crests/c591-ccad-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 0,
-    "개방": 20,
-    "무력": -40,
-    "물질": 0,
-    "공동": 0,
-    "원칙": 75,
-    "공개": 35,
-    "자격": 35,
-    "분산": 5,
-    "변혁": 15
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": -5,
-    "위험": -40,
-    "과시": 5,
-    "지속": 40,
-    "지향": "무성향",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "태욱그룹",
-    "생업": "기록·열쇠 인수인계",
-    "품계": "대리",
-    "직함": "종자 기록관",
-    "업무": "가양1동. 양름태는 가양1동에서 종자 기록과 인수 서명을 원본에 맞춰 다음 당직에 넘긴다. 온습도 기록이 끊긴 상자는 번호를 따로 적어 박진솔에게 알린다.",
-    "가치관": "권위 0 | 개방 20 | 무력 −40 | 물질 0 | 공동 0 | 원칙 75 | 공개 35 | 자격 35 | 분산 5 | 변혁 15",
-    "욕망": "갈망 40 | 독점 −5 | 위험 −40 | 과시 5 | 지속 40 | 지향 무성향 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 양름태는 종자 기록과 보존고 인수 기록을 맞추는 일을 맡는다.\n- 업무: 가양1동. 양름태는 가양1동에서 종자 기록과 인수 서명을 원본에 맞춰 다음 당직에 넘긴다. 온습도 기록이 끊긴 상자는 번호를 따로 적어 박진솔에게 알린다.",
-    "관직": "품계 대리. 직함은 종자 기록관. 원본과 인수 서명을 대조하고, 기록이 끊긴 상자는 번호를 표시해 박진솔의 출고 판단에 올린다.",
-    "일화": "밤사이 전력이 흔들려 냉온고 온습도 기록에 빈칸이 생긴다. 양름태는 빈칸 앞뒤의 기록을 교대 시각과 맞춰 끊긴 구간을 표시하고, 그 구간에 들어 있던 상자 번호를 열쇠를 넘기는 기록지에 옮겨 박진솔에게 넘긴다.",
-    "관계": "양름태는 끊긴 온습도 기록의 시각과 상자 번호를 박진솔에게 넘긴다. 박진솔은 해당 상자를 확인해 온도 로그가 없는 구간의 물자가 정상 출고로 넘어가지 않게 한다.",
-    "야망": "양름태는 끊긴 온습도 기록의 앞뒤 교대 시각과 상자 번호를 열쇠 인수 기록에 함께 남기려 한다.",
-    "공포": "전력 흔들림 때 기록되지 않은 상자가 정상 보존 상태로 출고되는 것.",
-    "개입": "플레이어는 양름태의 열쇠 인수지와 온습도 공백의 상자 번호를 대조할 수 있다."
-  },
-  "biography": "가양1동에서 양름태는 종자 원본의 빠진 줄을 먼저 살핀다. 보존고 출고를 재촉받아도 인수 기록과 온습도 장부를 맞춘 뒤 박진솔에게 넘긴다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 종자 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 양름태는 종자 기록과 보존고 인수 기록을 맞추는 일을 맡는다.\n- 업무: 가양1동. 양름태는 가양1동에서 종자 기록과 인수 서명을 원본에 맞춰 다음 당직에 넘긴다. 온습도 기록이 끊긴 상자는 번호를 따로 적어 박진솔에게 알린다.\n\n**관직.** 품계 대리. 직함은 종자 기록관. 원본과 인수 서명을 대조하고, 기록이 끊긴 상자는 번호를 표시해 박진솔의 출고 판단에 올린다.\n\n**일화.** 밤사이 전력이 흔들려 냉온고 온습도 기록에 빈칸이 생긴다. 양름태는 빈칸 앞뒤의 기록을 교대 시각과 맞춰 끊긴 구간을 표시하고, 그 구간에 들어 있던 상자 번호를 열쇠를 넘기는 기록지에 옮겨 박진솔에게 넘긴다.\n\n**관계.** 양름태는 끊긴 온습도 기록의 시각과 상자 번호를 박진솔에게 넘긴다. 박진솔은 해당 상자를 확인해 온도 로그가 없는 구간의 물자가 정상 출고로 넘어가지 않게 한다.\n\n**야망.** 양름태는 끊긴 온습도 기록의 앞뒤 교대 시각과 상자 번호를 열쇠 인수 기록에 함께 남기려 한다.\n\n**공포.** 전력 흔들림 때 기록되지 않은 상자가 정상 보존 상태로 출고되는 것.\n\n**개입.** 플레이어는 양름태의 열쇠 인수지와 온습도 공백의 상자 번호를 대조할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 20 | 무력 −40 | 물질 0 | 공동 0 | 원칙 75 | 공개 35 | 자격 35 | 분산 5 | 변혁 15\n- 욕망: 갈망 40 | 독점 −5 | 위험 −40 | 과시 5 | 지속 40 | 지향 무성향 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-03"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "양름태",
-        "type": "계약",
-        "to": "박진솔",
-        "basis": "양름태는 끊긴 온습도 기록의 시각과 상자 번호를 박진솔에게 넘긴다. 박진솔은 해당 상자를 확인해 온도 로그가 없는 구간의 물자가 정상 출고로 넘어가지 않게 한다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

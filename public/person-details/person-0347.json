@@ -1,385 +1,105 @@
 {
   "id": "person-0347",
   "name": "흥다온",
-  "title": "패권전 개막 징발 인파 대표",
-  "position": "패권전 개막 징발 인파 대표",
+  "title": "동주민센터 선임 서기",
+  "position": "동주민센터 선임 서기 · 제기동역",
   "characterId": "K346",
-  "rank": "전문의",
-  "commonTier": "T2",
-  "occupation": "징발 쪽지·출입 인원 대조",
+  "rank": "주사",
+  "commonTier": "T5",
+  "occupation": "장부 기재",
   "gender": "남성",
   "stage": "S3",
-  "state": "S13",
-  "stateName": "흰십자단",
-  "sourceRoute": "/world/Cast-State-13#인물-흥다온",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0347",
   "birthDate": "2082-01-16",
   "birthday": "01-16",
   "age": 44,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-13.json#/content/17"
-  ],
-  "familyTree": {
-    "personId": "K346",
-    "nodes": [
-      {
-        "id": "K346",
-        "personId": "K346",
-        "kind": "person",
-        "name": "흥다온",
-        "birthDate": "2082-01-16",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K346"
-          },
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-흥다온-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 방역·의무동원 전문의 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-흥다온-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0347"
-      },
-      {
-        "id": "FH-K346-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "흥승민",
-        "lineage": {
-          "surname": "흥",
-          "bongwan": "수색",
-          "clan": "creative-d765-c218-c0c9"
-        },
-        "birthDate": "2052-01-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-흥다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2090,
-            "summary": "흥승민은 대합실 당직에서 징발 쪽지·출입 인원 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-흥다온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K346-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "흥승원",
-        "lineage": {
-          "surname": "흥",
-          "bongwan": "수색",
-          "clan": "creative-d765-c218-c0c9"
-        },
-        "birthDate": "2022-01-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-흥다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "흥승원은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-흥다온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K346-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조준영",
-        "birthDate": "2052-01-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-흥다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2090,
-            "summary": "조준영은 대합실 당직에서 징발 쪽지·출입 인원 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-흥다온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K346-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김준경",
-        "birthDate": "2022-01-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-흥다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "김준경은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-흥다온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K346-P-01:K346:biological",
-        "from": "FH-K346-P-01",
-        "to": "K346",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-흥다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K346-P-02:FH-K346-P-01:biological",
-        "from": "FH-K346-P-02",
-        "to": "FH-K346-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-흥다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K346-M-01:K346:biological",
-        "from": "FH-K346-M-01",
-        "to": "K346",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-흥다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K346-M-02:FH-K346-M-01:biological",
-        "from": "FH-K346-M-02",
-        "to": "FH-K346-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-흥다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "creative-d765-c218-c0c9",
+    "name": "수색 흥씨",
+    "crest": "clan-crests/creative-d765-c218-c0c9.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "제기동주민센터 선임 서기, 품계 주사, 동대문구 제기동역 기재. 수색 흥씨인 마흔네 살 남성이다. 민원 창구에서 전입·혼인·사망 신고의 서류를 받아, 동장 동주하의 도장이 필요한 것을 하루 두 번 묶어 올린다. 제기동 장터의 약초 상인이 상인 기재를 새로 받으러 오면, 그는 직종 칸을 세 번 읽고서야 도장을 찍는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "동주민센터 선임 서기",
+    "품계": "주사",
+    "생업": "장부 기재",
+    "일하는 역": "제기동역",
+    "잠자는 역": "제기동역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "제기동주민센터 선임 서기, 품계 주사, 동대문구 제기동역 기재. 수색 흥씨인 마흔네 살 남성이다. 민원 창구에서 전입·혼인·사망 신고의 서류를 받아, 동장 동주하의 도장이 필요한 것을 하루 두 번 묶어 올린다. 제기동 장터의 약초 상인이 상인 기재를 새로 받으러 오면, 그는 직종 칸을 세 번 읽고서야 도장을 찍는다.",
+    "관직": "직함 동주민센터 선임 서기. 직위 동주민센터 선임 서기 · 제기동역. 품계 주사. 일하는 역 제기동역."
+  },
+  "values": {
+    "권위": 10,
+    "개방": -35,
+    "무력": -5,
+    "물질": -30,
+    "공동": 20,
+    "원칙": 55,
+    "공개": -15,
+    "자격": 25,
+    "분산": -20,
+    "변혁": -40
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": 35,
+    "위험": -40,
+    "과시": -25,
+    "지속": 0,
+    "지향": "양성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0347",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
+      },
+      "martial": {
+        "base": 3,
+        "effective": 3
+      },
+      "stewardship": {
         "base": 11,
         "effective": 11
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
-      },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 10,
-        "effective": 10
-      },
-      "prowess": {
-        "base": 4,
-        "effective": 4
-      },
-      "endurance": {
         "base": 8,
         "effective": 8
-      }
-    },
-    "skills": [
-      {
-        "id": "attendance-reconciliation",
-        "name": {
-          "ko": "출입 인원 대조",
-          "en": "Attendance reconciliation"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "징발을 거부하는 조정자",
-          "en": "Organizer who rejects requisition"
-        },
-        "description": {
-          "ko": "변조된 징발 쪽지를 찢고 호송과 인파를 나누어 다시 센다. 인원 운영의 강점은 이 현장 대응에 한정한다.",
-          "en": "Tearing up an altered requisition, they separate escort and crowd lines and recount arrivals. The management strength is confined to this response."
-        },
-        "behavior": {
-          "ko": "방역대를 징발 병력으로 부르라는 방송을 모욕으로 듣고, 약재 칸을 군량으로 적는 쪽지를 찢는다. 줄이 길어질수록 목소리는 낮아진다. 제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다.",
-          "en": "He heard as an insult any broadcast that called the quarantine squad a requisition force, and tore up any note that wrote the herb column as military rations. The longer the line grew, the lower his voice fell."
-        },
-        "stress": {
-          "ko": "공포. 현장에 나선 자신의 이름이 보호군 의무 선발의 맨 위가 되는 것.",
-          "en": "Fear. That his own name, once he stepped out as representative, would top the protection force's medical draft."
-        },
-        "relationship": {
-          "ko": "관계. 남호성의 의무호송과 인파 줄을 나누고, 석봄우의 신내 거부 문구와 문장을 맞춘다. 배우진의 상수보호 징발을 원한으로 돌려보낸다.",
-          "en": "Relations. Split the crowd queue with Nam Hoseong's medical convoy and matched the wording with Seok Bomwoo's Sinnae refusal clause. Sent Bae Woojin's water-protection requisition back as a grudge."
-        },
-        "effects": []
       },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 전문의. 직함은 방역·의무동원 전문의. 징발 쪽지와 실제 출입 인원을 저녁마다 대조하고, 류은비의 중립 선언이 내려오기 전에는 인파를 해산시키지 않는다.",
-          "en": "Office. Rank: section chief. Title:  reconstruction-era requisition crowd representative. He checked requisition notes against actual entry numbers every evening and did not disperse the crowd before Ryu Eunbi's neutrality declaration came down."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 전문의. 직함은 방역·의무동원 전문의. 징발 쪽지와 실제 출입 인원을 저녁마다 대조하고, 류은비의 중립 선언이 내려오기 전에는 인파를 해산시키지 않는다.",
-          "en": "Recorded duty and limits: Office. Rank: section chief. Title:  reconstruction-era requisition crowd representative. He checked requisition notes against actual entry numbers every evening and did not disperse the crowd before Ryu Eunbi's neutrality declaration came down."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 현장에 나선 자신의 이름이 보호군 의무 선발의 맨 위가 되는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That his own name, once he stepped out as representative, would top the protection force's medical draft."
-        },
-        "relationship": {
-          "ko": "관계. 남호성의 의무호송과 인파 줄을 나누고, 석봄우의 신내 거부 문구와 문장을 맞춘다. 배우진의 상수보호 징발을 원한으로 돌려보낸다.",
-          "en": "Relations. Split the crowd queue with Nam Hoseong's medical convoy and matched the wording with Seok Bomwoo's Sinnae refusal clause. Sent Bae Woojin's water-protection requisition back as a grudge."
-        },
-        "effects": []
+      "prowess": {
+        "base": 3,
+        "effective": 3
       }
-    ],
-    "narrative": {
-      "ko": "변조된 징발 쪽지를 찢고 호송과 인파를 나누어 다시 센다. 인원 운영의 강점은 이 현장 대응에 한정한다.",
-      "en": "Tearing up an altered requisition, they separate escort and crowd lines and recount arrivals. The management strength is confined to this response."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,79 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "creative-d765-c218-c0c9",
-    "name": "수색 흥씨",
-    "crest": "clan-crests/creative-d765-c218-c0c9.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -35,
-    "개방": 20,
-    "무력": -40,
-    "물질": -25,
-    "공동": 15,
-    "원칙": 35,
-    "공개": 10,
-    "자격": 10,
-    "분산": 30,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": 35,
-    "위험": -40,
-    "과시": -25,
-    "지속": 0,
-    "지향": "양성",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "징발 쪽지·출입 인원 대조",
-    "소속": "흰십자단",
-    "품계": "전문의",
-    "직함": "패권전 개막 징발 인파 대표",
-    "가치관": "권위 −35 | 개방 20 | 무력 −40 | 물질 −25 | 공동 15 | 원칙 35 | 공개 10 | 자격 10 | 분산 30 | 변혁 −20",
-    "욕망": "갈망 15 | 독점 35 | 위험 −40 | 과시 −25 | 지속 0 | 지향 양성 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2082-01-16에 태어났다. 2126년 개막 현재 패권전 개막 징발 인파 대표 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 교대 무단 결근 대체 당직으로 열렸다.\n- 제기동의 징발 쪽지·출입 인원 대조 창구가 흥다온의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 전문의. 직함은 방역·의무동원 전문의. 징발 쪽지와 실제 출입 인원을 저녁마다 대조하고, 류은비의 중립 선언이 내려오기 전에는 인파를 해산시키지 않는다.",
-    "일화": "약재 칸을 군량으로 고쳐 적은 징발 쪽지가 제기동 방역대에 붙는다. 흥다온은 쪽지를 찢고 저녁 대조로 실제 출입 인원을 다시 세며, 류은비의 중립 선언이 내려올 때까지 남호성의 의무호송 줄과 인파를 나누어 세워 둔다.",
-    "관계": "남호성의 의무호송과 인파 줄을 나누고, 석봄우의 신내 거부 문구와 문장을 맞춘다. 배우진의 상수보호 징발을 원한으로 돌려보낸다.",
-    "야망": "의약 인파의 징발 명단을 공개 거부 원장으로 묶어 치료 중립이 동원 창구로 바뀌지 않게 하려 한다.",
-    "공포": "현장에 나선 자신의 이름이 보호군 의무 선발의 맨 위가 되는 일을 두려워한다.",
-    "개입": "거부 원장을 회의에 올리거나, 인파를 해산시켜 징발 마차를 통과시킬 수 있다."
-  },
-  "biography": "방역대를 징발 병력으로 부르라는 방송을 모욕으로 듣고, 약재 칸을 군량으로 적는 쪽지를 찢는다. 줄이 길어질수록 목소리는 낮아진다.\n\n- 생업: 징발 쪽지·출입 인원 대조\n- 소속: 흰십자단\n- 품계: 전문의\n- 직함: 패권전 개막 징발 인파 대표\n**생애.** 2082-01-16에 태어났다. 2126년 개막 현재 패권전 개막 징발 인파 대표 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 교대 무단 결근 대체 당직으로 열렸다.\n- 제기동의 징발 쪽지·출입 인원 대조 창구가 흥다온의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 전문의. 직함은 방역·의무동원 전문의. 징발 쪽지와 실제 출입 인원을 저녁마다 대조하고, 류은비의 중립 선언이 내려오기 전에는 인파를 해산시키지 않는다.\n\n**일화.** 약재 칸을 군량으로 고쳐 적은 징발 쪽지가 제기동 방역대에 붙는다. 흥다온은 쪽지를 찢고 저녁 대조로 실제 출입 인원을 다시 세며, 류은비의 중립 선언이 내려올 때까지 남호성의 의무호송 줄과 인파를 나누어 세워 둔다.\n\n**관계.** 남호성의 의무호송과 인파 줄을 나누고, 석봄우의 신내 거부 문구와 문장을 맞춘다. 배우진의 상수보호 징발을 원한으로 돌려보낸다.\n\n**야망.** 의약 인파의 징발 명단을 공개 거부 원장으로 묶어 치료 중립이 동원 창구로 바뀌지 않게 하려 한다.\n\n**공포.** 현장에 나선 자신의 이름이 보호군 의무 선발의 맨 위가 되는 일을 두려워한다.\n\n**개입.** 거부 원장을 회의에 올리거나, 인파를 해산시켜 징발 마차를 통과시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 20 | 무력 −40 | 물질 −25 | 공동 15 | 원칙 35 | 공개 10 | 자격 10 | 분산 30 | 변혁 −20\n- 욕망: 갈망 15 | 독점 35 | 위험 −40 | 과시 −25 | 지속 0 | 지향 양성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-13"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "흥다온",
-        "type": "계약",
-        "to": "남호성",
-        "basis": "남호성의 의무호송과 인파 줄을 나누고"
-      },
-      {
-        "from": "흥다온",
-        "type": "계약",
-        "to": "석봄우",
-        "basis": "석봄우의 신내 거부 문구와 문장을 맞춘다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "범채온",
-        "type": "계약",
-        "to": "흥다온",
-        "basis": "흥다온의 제기동 거부 문구와 문장을 맞춘다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }
