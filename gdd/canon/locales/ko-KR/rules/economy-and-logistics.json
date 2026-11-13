@@ -17,12 +17,15 @@
       "ch.sp",
       "ch.s0",
       "ch.p0",
+      "v3.t21.reckoning",
       "ch.s1",
       "ch.p1",
+      "v3.t21.facilities",
       "ch.s2",
       "ch.p2",
       "ch.s3",
       "ch.p3",
+      "v3.t21.supply",
       "ch.decisions",
       "ch.terms",
       "overhaul.20261027.contract-map",
@@ -99,6 +102,16 @@
       ]
     },
     {
+      "id": "v3.t21.reckoning",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "v3 세계 기준: 서울 전체가 쓰는 돈은 없다. 정부는 끼와 근무일, 자유도시들은 킬로와 손시간, 아크는 하루 충전과 정비 차례로 센다. 세 셈을 한 표에 놓는 설계 잣대는 사람날(사람 하나가 승강장 층에서 하루를 사는 데 드는 끼니와 물 10 L)이고, 사람날은 세계 안의 돈이 아니다(03장 11절). 배급은 정부가 장부 증표로, 자유도시들이 계약과 장터로 나누고, 아크에서는 곁집과 역의 정비장이 나눈다(01-core 5.3절)."
+        }
+      ]
+    },
+    {
       "id": "ch.s1",
       "kind": "heading",
       "level": 2,
@@ -116,6 +129,16 @@
         {
           "kind": "text",
           "text": "서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/AGENTS.md#L67-L71 의 저작 데이터→검증된 불변 카탈로그→Core 소비를 따른다. GAME/Assets/Janseon/Data/Authoring/BattleSetupDefinition.cs:10-25와 Data/Validation/GameDataCatalogValidator.cs:30-32는 규칙 판본과 rule-drift 검증의 코드 사례다. CK3 참조: mechanics-05-economy.md:54-98의 비용 계산 분리·건물 완료 훅은 저작 관례다. CK3 건물 비용을 서울 가격으로 복사하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "v3.t21.facilities",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "v3 세계 기준: 영지의 건물 자리는 역의 시설(열 펌프, 우물, 팬, 섬유당 통, 빛밭, 바람틀, 수차, 정비대)이고, 시설의 비용에는 부품과 기술자의 손이 든다. 기술은 부품, 지식, 손 셋이 모두 있어야 산다(09장 4.1절, 03장 3절)."
         }
       ]
     },
@@ -158,6 +181,16 @@
         {
           "kind": "text",
           "text": "서울 사실: 기존 warfare-and-sieges의 보급·고립·과확장 공유 척도는 설계 가정과 승인 부분을 구분하여 참조한다. 부대 규모는 결정 15의 가변 정원과 인원 보존을 따른다. CK3 참조: mechanics-05-economy.md:118-153의 통제 보간과 성장 재료는 곡선 구조 사례일 뿐 서울 세율·과확장 벌칙이 아니다. 제품 권한: 수송 처리량·고립 손실·기준 기간·제작비 전부는 승인된 저작값 외 제도 미정이다."
+        }
+      ]
+    },
+    {
+      "id": "v3.t21.supply",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "v3 세계 기준: 보급의 한도는 경로 위 역의 열·공기·물 한도다(01-core 4.1절). 지상 행군은 추위로, 깊은 터널 행군은 공기로 소모된다(09장 3.13절). 기름은 없고 짐은 레일로 나른다(03장 7절). 전장에 넘기는 결핍 투입물은 `ammo`, `cells`, `implants`, `fuel`, `parts`, `medicine` 여섯이며, 정부는 `ammo`와 `fuel`, 자유도시들은 `cells`와 `parts`, 아크는 `implants`와 `medicine`이 먼저 모자란다(09장 5절)."
         }
       ]
     },

@@ -52,7 +52,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "이 페이지는 수여·임명·위임·회수 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+          "text": "이 페이지는 수여·임명·위임·회수 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다. v3 기준: 수여·임명·회수의 실제 권한자는 세력마다 다르다. 정부는 국회의원이 동장·역장과의 배급 몫과 징발 단계를 정하고 대통령은 구를 쥐지 않는다. 자유도시들은 도시 안의 대주회와 우두머리가 정하며 도시들 위의 수여자는 없다. 아크는 교주가 곁집을 정하고 물린다(근거: 09장 4.2~4.4절, 01-core 7.3절). (잠정 T21-sysdesign-1-3)"
         }
       ]
     },
@@ -302,7 +302,7 @@
         [
           {
             "kind": "text",
-            "text": "수여할 하위 작위 — [작위 수여] 기존 작위와 현재 보유자·개정을 확인한다. 수여자의 지위보다 낮은 작위와 해당 국가 구성원 수혜자가 필요하다. (원문: d11.b9.orderedSteps[4])"
+            "text": "수여할 하위 작위 — [작위 수여] 기존 작위와 현재 보유자·개정을 확인한다. 수여자의 지위보다 낮은 작위와 해당 세력 구성원 수혜자가 필요하다. (원문: d11.b9.orderedSteps[4])"
           }
         ],
         [
@@ -1237,7 +1237,7 @@
         [
           "운용 — 수여할 하위 작위",
           "d11.b9.orderedSteps[4]",
-          "\"For grant require existing lower title, country-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. Direct ducal holding after addition cannot exceed existing limit two.\""
+          "\"For grant require existing lower title, faction-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. Direct ducal holding after addition cannot exceed existing limit two.\""
         ],
         [
           "운용 — 보유 범위 내 위임",
@@ -1417,7 +1417,7 @@
         [
           "보류 — 운용 경로 제외",
           "d11.b9.proposalHeld[0].d​escription",
-          "\"Actual 16-country ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar.\""
+          "\"Actual per-faction ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar.\""
         ],
         [
           "보류 — 운용 경로 제외",
@@ -1782,7 +1782,7 @@
         [
           "운용 — 현재 판본·행위 선택",
           "d11.b11.decisionApplicat​ion.country",
-          "\"Country-specific elector/quorum/resolver/​ratifier/acting inputs remain owned by D09; no universal quorum or chair vote.\""
+          "\"Faction-specific voter/quorum/resolver/​ratifier/acting inputs remain owned by D09; no universal quorum or chair vote.\""
         ],
         [
           "운용 — 현재 판본·행위 선택",
@@ -1797,7 +1797,7 @@
         [
           "운용 — 현재 판본·행위 선택",
           "d11.b11.approvalBoundary​",
-          "\"Approved shared semantics are executable only with verified institution/contract inputs. Synthetic oracle premises are not country laws, title records, authorizations or approvals. Whole-domain ready remains false while required production inputs are proposals.\""
+          "\"Approved shared semantics are executable only with verified institution/contract inputs. Synthetic oracle premises are not faction laws, title records, authorizations or approvals. Whole-domain ready remains false while required production inputs are proposals.\""
         ],
         [
           "역사 참조 — 운용 경로 제외",

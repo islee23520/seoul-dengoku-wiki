@@ -2661,7 +2661,7 @@
         [
           "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[3].h​eld",
-          "\"actual entries, issuers, targets, beneficiaries, invalidators, costs, truces, reparations and country/title payloads\""
+          "\"actual entries, issuers, targets, beneficiaries, invalidators, costs, truces, reparations and faction/title payloads\""
         ],
         [
           "보류 — 운용 경로 제외",
@@ -3181,7 +3181,7 @@
         [
           "운용 — 현재 판본·행위 선택",
           "d16.b11.separation.LORE",
-          "\"Read-only authored country, title, office, person and place facts; this evidence pack creates none.\""
+          "\"Read-only authored faction, title, office, person and place facts; this evidence pack creates none.\""
         ],
         [
           "운용 — 현재 판본·행위 선택",
@@ -3371,7 +3371,7 @@
         [
           "보류 — 운용 경로 제외",
           "d16.b11.requiredHeldInpu​ts[2]",
-          "\"concrete casus belli catalog, costs, truce lengths, reparations and country/title records\""
+          "\"concrete casus belli catalog, costs, truce lengths, reparations and faction/title records\""
         ],
         [
           "보류 — 운용 경로 제외",
@@ -3466,7 +3466,7 @@
         [
           "운용 — 현재 판본·행위 선택",
           "d16.b11.domainClosure.re​ason",
-          "\"Sealed choices approve authoring and separation directions, not the exact required occupation, siege, custody, pricing, truce, country/title and event-order records. This pack closes the approved bounded invariants without inventing those values.\""
+          "\"Sealed choices approve authoring and separation directions, not the exact required occupation, siege, custody, pricing, truce, faction/title and event-order records. This pack closes the approved bounded invariants without inventing those values.\""
         ],
         [
           "역사 참조 — 운용 경로 제외",
@@ -3606,7 +3606,7 @@
         [
           "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[8].reason",
-          "\"Country institutions supply authority facts later; no actual country record is approved here.\""
+          "\"Faction institutions supply authority facts later; no actual faction record is approved here.\""
         ],
         [
           "운용 — 현재 판본·행위 선택",

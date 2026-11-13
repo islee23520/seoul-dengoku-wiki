@@ -1,0 +1,16 @@
+# v3 잠정 항목 원장 조각: task 21, 배치 rules-a
+
+계획 `.omo/plans/wiki-lore-rebuild-v3.md` 과제 21의 GDD 배치 `rules-a`(규칙 문서 14개 가운데 12개 변경, `doc.Determinism-and-Save-Contracts`와 `doc.Implementation-Mapping`은 세계 서술이 없어 그대로 둔다). 과제 24가 `docs/drafts/reports/v3-provisional-ledger.md`로 합치고 전역 번호를 다시 매긴다. 여기 있는 항목은 소유자가 답하기 전까지 승인된 설정이 아니다. 한국어 본문에는 "(잠정 T21-rules-a-n)", 영어 본문의 같은 자리에는 "(provisional T21-rules-a-n)"으로 표시돼 있다.
+
+| # | Document | Location | Provisional item |
+|---|---|---|---|
+| T21-rules-a-1 | doc.Campaign-Loop (`gdd/canon/locales/ko-KR/rules/campaign-loop.json`), doc.Campaign-Progression (`campaign-progression.json`) | 원정 시간 문단, "v3 시간" 문단 | 캠페인 턴은 한 달(09장 3.2절)이고, 원정의 칸·시간·하루·한 주와 진행 문서의 일·주 단위 값은 그 턴 안의 세부 시간·세부 정산으로 읽는다. 턴과의 환산은 OD-MOVE와 함께 정한다 |
+| T21-rules-a-2 | doc.Campaign-Loop | 신앙 문단(source.b9) | 옛 "나서기 전에 종파·유물·의례를 고른다"를 버린다. 정부·자유도시들 사람에게는 고를 신앙이 없고, 아크 사람은 나서기 전에 정비대에서 맞춤과 충전을 받으며, 원정 중에는 세례(새 부위 받기)를 하지 않아 부위 수가 바뀌지 않는다(근거: 바이블 1절 9행, 01-core 7.3절) |
+| T21-rules-a-3 | doc.Campaign-Progression | "침입과 사건이 세력 그래프를 바꾸는 규칙" 절(source.b17~b21) | 옛 신앙 그래프(통치자·공개 종파·숨은 신앙·유물 정통성·소비 의례, 혼합 밸브)를 v3 세력 그래프로 바꾼다. 꼭짓점은 자리를 쥔 집안과 세력별 정당성 원천(장부, 보증과 계약서 장, 교주의 말과 세례 명단), 변은 급수계약·부속서·계약서 장·맡김·곁 섬김·정비 순번·혼인·적대·통행, 침입이 바꾸는 세 축은 장부 축(말소·강제 전입), 계약 축(깨진 보증·맡김 넘김), 정비 축(정비 순번·하루 충전 몫). 외부 충격은 물·부품·정비를 빌리는 기한부 변을 연다(근거: 01-core 7절, 09장 4~5절) |
+| T21-rules-a-4 | doc.Campaign-Progression | 신앙 축 문단(r2.faith-axes, r2.faith-axes-change) | 옛 신앙 축 `Salv`·`Sym`·`Mech`와 당집 기본값을 버리고 아크 역에만 있는 축 `Bap`(세례받은 사람 비율)·`Tithe`(바침을 제때 낸 집안 비율)·`Svc`(정비 차례를 제때 받은 세례자 비율), 범위 0~100, 개막 기본값 아크 역 50을 둔다. 변동 규칙(부품 약탈·정비대 붕괴로 `Svc` 하락, 바침의 많고 적음, 세례와 죽음)은 설계 가정이다(근거: 바이블 1절 9행, 06장 8.4절) |
+| T21-rules-a-5 | doc.Campaign-Progression | "개막 정책 표 (v3 세 세력)" | 옛 정치체 열여섯 줄의 개막 정책 표(한국어·영어 두 표)를 폐기하고 세력마다 한 줄인 표로 바꾼다. 칸 이름 "이주민"은 "장부 밖 사람"으로 바꿨고, "손을 보이면 작업대가 받는다"(자유도시들), "세례로 받아들인다"(아크) 두 칸은 새로 지었다. 나머지 칸은 01-core 5·7·8절, 03장 11절, 09장 4~5절에서 옮겼다 |
+| T21-rules-a-6 | doc.Power-and-Institutions (`power-and-institutions.json`), doc.Game-Logic-Principles (`game-logic-principles.json`) | 3.1절 첫 문단, 0.4절 | v3 세계에서는 새 세력이 서지 않으므로 `gdd/canon/contracts/state-formation-contract.json`의 독립 취득→국가 전이·사전 가입 조항은 쓰이지 않는다고 적었다. 계약 파일 자체는 고치지 않았고, 개정 여부는 소유자 결정이다(근거: 바이블 1절 7·8행) |
+| T21-rules-a-7 | doc.Hero-Squads-and-Time-Based-Movement (`hero-squads-and-time-based-movement.json`), doc.Rules-Battle (`rules-battle-clauses.json`) | "v3 전장 계약" 문단, 금지 사항 뒤 문단 | 09장의 "군대 하나의 배속 영웅 기본 넷"(잠정 T29-7)과 `roster-framework.md`의 분대 상한 20칸(대기)은 이 문서들의 2026-09-24 사용자 확정(영웅 수·분대 수 고정 상한 없음)과 맞지 않는다. 기본값: 소유자가 정하기 전까지 상한을 두지 않는다. 소유자 질문 |
+| T21-rules-a-8 | doc.Campaign-Loop | 다섯 결말 목록 2번(정착) | 버린 거점에는 그 땅을 쥔 세력이 01-core 8절 역 층의 우두머리(정부 역장, 자유도시들 역반장, 아크 정비장)를 앉힌다. 옛 "남의 수령"을 대신한다 |
+| T21-rules-a-9 | doc.Personal-Resolution-Battle (`personal-resolution-battle.json`) | "전장 원형" 표와 근거 문단 | 옛 일곱 원형(작은 역사, 한강 횡단 구간의 붕괴·침수 등)을 v3의 아홉 원형으로 바꾼다: 지상 출입구와 대합실, 승강장, 깊은 터널, 환승역, 차량기지 인접, 다리, 강 밑 터널(세 곳), 땅 경계(세 곳), 지상 폐허와 얼음판. 원형별 전술 특징 문구는 새로 지었다(근거: 09장 3.4.1절, 07장 12.6절, 01-core 3.1·7.4절) |
+| T21-rules-a-10 | doc.Rules-Battle | RBATTLE-23 머리와 조항 본문, 금지 사항 뒤 문단 | 옛 "유파 기법"(무예 유파의 전수)을 "개인 기술"(직업의 숙련, 아크 사람의 부위)로 바꾼다. 조항의 규칙(새 명령 종류·큐·카드·능력 자원을 만들지 않는다, 정원과 무관, 종료 판정을 덮어쓰지 않는다)은 그대로다. 병종 수치는 세력별 병종 명단(`data/sql/130`~`132`)에서만 읽는다고 적었다 |

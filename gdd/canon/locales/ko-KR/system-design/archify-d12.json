@@ -52,7 +52,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "이 페이지는 후계·사망·본체 전환 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+          "text": "이 페이지는 후계·사망·본체 전환 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다. v3 기준: 승계는 세력마다 다르다. 정부는 국회의원 집안의 세대주가 지명한 후계와 열네 도장의 추대, 자유도시들은 손을 보인 자식과 대주회의 이름값(관악은 묶인 도장), 아크는 피를 따르되 부위 둘 이상과 교주가 생전에 말해 둔 이름이다(근거: 09장 4~5절). 이 문서의 후계 계약은 그 값을 받는 틀이다."
         }
       ]
     },
@@ -356,7 +356,7 @@
         [
           {
             "kind": "text",
-            "text": "직위 공석·인준 — [직위·유산·약속 독립 정산] 사망자의 직위만 비운다. 후보 지명만으로 채우지 않고 국가별 적격·인준된 결과만 적용한다. 기관과 금고는 유지한다. (원문: d12.b11.mechanisms[2].al​gorithm)"
+            "text": "직위 공석·인준 — [직위·유산·약속 독립 정산] 사망자의 직위만 비운다. 후보 지명만으로 채우지 않고 세력별 적격·인준된 결과만 적용한다. 기관과 금고는 유지한다. (원문: d12.b11.mechanisms[2].al​gorithm)"
           }
         ],
         [
@@ -1411,7 +1411,7 @@
         [
           "보류 — 운용 경로 제외",
           "d12.b9.proposalHeld[2].d​etail",
-          "\"Actual 16-country electors, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values.\""
+          "\"Actual per-faction voters, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values.\""
         ],
         [
           "보류 — 운용 경로 제외",
@@ -2091,7 +2091,7 @@
         [
           "운용 — 현재 판본·행위 선택",
           "d12.b11.authority.sealed​Selections[1].applicatio​n",
-          "\"Each of 16 countries supplies its own electors, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records.\""
+          "\"Each of the three factions supplies its own voters, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records.\""
         ],
         [
           "운용 — 현재 판본·행위 선택",
@@ -2696,7 +2696,7 @@
         [
           "운용 — 현재 판본·행위 선택",
           "d12.b11.decisionDisposit​ion[8].selectedLabel",
-          "\"16국 각각 선거인·정족수·해결자·인준·대행을 명시\""
+          "\"세 세력 각각 선거인·정족수·해결자·인준·대행을 명시\""
         ],
         [
           "운용 — 현재 판본·행위 선택",
@@ -2706,7 +2706,7 @@
         [
           "운용 — 현재 판본·행위 선택",
           "d12.b11.decisionDisposit​ion[8].boundary",
-          "\"D09 country-specific procedure; OFFICE/P-COUNTRIES\""
+          "\"D09 faction-specific procedure; OFFICE/P-COUNTRIES\""
         ],
         [
           "운용 — 현재 판본·행위 선택",
@@ -4041,7 +4041,7 @@
         [
           "운용 — 직위 공석·인준",
           "d12.b11.mechanisms[2].al​gorithm",
-          "\"Death vacates that subject's offices; consume only ratified eligible country-resolver result; nomination alone leaves vacancy. Institution/treasury survives; missing procedure stays pending; no anonymous holder.\""
+          "\"Death vacates that subject's offices; consume only ratified eligible faction-resolver result; nomination alone leaves vacancy. Institution/treasury survives; missing procedure stays pending; no anonymous holder.\""
         ],
         [
           "운용 — 현재 판본·행위 선택",

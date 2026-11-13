@@ -52,7 +52,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "이 페이지는 작위·권리·명분·인준 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+          "text": "이 페이지는 작위·권리·명분·인준 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다. v3 기준: 칭호 사다리는 역, 동, 구(공작령), 세력 전체, 수장의 다섯 층이고 공작령은 25곳(14 + 7 + 4)이다. 칭호 이름은 세력마다 다르다. 정부는 역장·동장·국회의원·종신 대통령, 자유도시들은 역반장·구간장·도시마다 다른 우두머리(관악 공작 등), 아크는 정비장·대피소장·곁집장·교주다(근거: 01-core 8절, 바이블 1절 8행 [승인]). 지리 칭호(`121-map-titles.sql`)는 고정된 땅 틀이며 법리상 영역의 끌림은 없다(근거: 09장 4.1절)."
         }
       ]
     },
@@ -584,7 +584,7 @@
         [
           "운용 — 정확 입력·단위",
           "d10.b9.fields[0].read",
-          "\"complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
+          "\"complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered faction institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -634,7 +634,7 @@
         [
           "운용 — 정확 입력·단위",
           "d10.b9.fields[1].read",
-          "\"complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
+          "\"complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered faction institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -679,7 +679,7 @@
         [
           "운용 — 정확 입력·단위",
           "d10.b9.fields[2].read",
-          "\"complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
+          "\"complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered faction institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -724,7 +724,7 @@
         [
           "운용 — 정확 입력·단위",
           "d10.b9.fields[3].read",
-          "\"complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
+          "\"complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered faction institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -769,7 +769,7 @@
         [
           "운용 — 정확 입력·단위",
           "d10.b9.fields[4].read",
-          "\"complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
+          "\"complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered faction institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -814,7 +814,7 @@
         [
           "운용 — 정확 입력·단위",
           "d10.b9.fields[5].read",
-          "\"complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
+          "\"complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered faction institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -844,7 +844,7 @@
         [
           "운용 — 현재 판본·행위 선택",
           "d10.b9.readSet[2]",
-          "\"registered country institution and ratification evidence when required\""
+          "\"registered faction institution and ratification evidence when required\""
         ],
         [
           "운용 — 현재 판본·행위 선택",
@@ -1274,7 +1274,7 @@
         [
           "보류 — 운용 경로 제외",
           "d10.b9.proposalHeld[1].h​eld",
-          "\"Country-by-country ratification bodies, electors, quorum/meeting validity, tie resolver, acting/regency scope and evidence formats.\""
+          "\"Faction-by-faction ratification bodies, voters, quorum/meeting validity, tie resolver, acting/regency scope and evidence formats.\""
         ],
         [
           "보류 — 운용 경로 제외",
@@ -1549,7 +1549,7 @@
         [
           "운용 — 현재 판본·행위 선택",
           "d10.b11.authority.sealed​RowsApplied[1].scope",
-          "\"Only a registered country-specific resolver, scope and ratification evidence may resolve an institutional tie; missing authority stays unresolved.\""
+          "\"Only a registered faction-specific resolver, scope and ratification evidence may resolve an institutional tie; missing authority stays unresolved.\""
         ],
         [
           "운용 — 현재 판본·행위 선택",

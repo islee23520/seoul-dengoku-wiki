@@ -52,7 +52,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "이 페이지는 가문·친족·혼인·양자 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+          "text": "이 페이지는 가문·친족·혼인·양자 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다. v3 기준: 집안은 세력마다 정부의 국회의원 집안, 자유도시들의 작업대 집안, 아크의 곁집이며 회사 집단이나 운영 가문은 없다(근거: 01-core 10절). 서울에는 인격을 인정받는 합성 인물이 없으므로(근거: 03장 8절 \"생각하는 기계는 없다\", 잠정 T04-42) 아래 합성 인격 인정 검사는 v3 공개 설정에서 늘 거짓으로 읽는 예비 술어이고, 휴머노이드와 기계는 귀한 장비로서 자산 규칙을 따른다. (잠정 T21-sysdesign-1-2)"
         }
       ]
     },
@@ -692,7 +692,7 @@
         [
           "운용 — 등록 관할·권한·경로",
           "d08.b9.fields[2].owner",
-          "\"country institution record\""
+          "\"faction institution record\""
         ],
         [
           "운용 — 등록 관할·권한·경로",
@@ -1292,7 +1292,7 @@
         [
           "운용 — 독립 가족 작업",
           "d08.b9.orderedSteps[2]",
-          "\"Resolve the explicitly registered forum law. Unknown registration, authority or route permission yields unresolved; never select a party's country by fallback.\""
+          "\"Resolve the explicitly registered forum law. Unknown registration, authority or route permission yields unresolved; never select a party's faction by fallback.\""
         ],
         [
           "운용 — 등록 관할·권한·경로",
@@ -1377,7 +1377,7 @@
         [
           "운용 — 등록 관할·권한·경로",
           "d08.b9.formulaSheet[0].l​imits",
-          "\"Unknown predicate yields unresolved. The formula does not choose a country law or invent its eligibility contents.\""
+          "\"Unknown predicate yields unresolved. The formula does not choose a faction law or invent its eligibility contents.\""
         ],
         [
           "운용 — 동의·인준 개별 기록",
@@ -1772,7 +1772,7 @@
         [
           "미결 — 운용 경로 제외",
           "d08.b9.proposalHeld[0].s​cope",
-          "\"Which registered country or institution law applies to each family action, its authority, conflicts and route eligibility.\""
+          "\"Which registered faction or institution law applies to each family action, its authority, conflicts and route eligibility.\""
         ],
         [
           "미결 — 운용 경로 제외",
@@ -1812,7 +1812,7 @@
         [
           "미결 — 운용 경로 제외",
           "d08.b9.proposalHeld[1].r​eason",
-          "\"No owner-approved substantive country law.\""
+          "\"No owner-approved substantive faction law.\""
         ],
         [
           "미결 — 운용 경로 제외",
@@ -1882,7 +1882,7 @@
         [
           "미결 — 운용 경로 제외",
           "d08.b9.proposalHeld[3].r​eason",
-          "\"D09 country procedures remain separate.\""
+          "\"D09 faction procedures remain separate.\""
         ],
         [
           "미결 — 운용 경로 제외",
@@ -2122,7 +2122,7 @@
         [
           "미결 — 운용 경로 제외",
           "d08.b9.proposalHeld[10].​scope",
-          "\"Unreviewed candidate identities, family memberships, marriages, adoptions and actual country assignments.\""
+          "\"Unreviewed candidate identities, family memberships, marriages, adoptions and actual faction assignments.\""
         ],
         [
           "미결 — 운용 경로 제외",
@@ -2512,7 +2512,7 @@
         [
           "운용 — 관할 미결 기록 보존",
           "d08.b11.authority.symbol​icFamilyContract.boundar​y",
-          "\"These selections approve symbolic operators only. Actual country laws, ages, eligibility, adoption procedure, shares, durations and coefficients remain proposals.\""
+          "\"These selections approve symbolic operators only. Actual faction laws, ages, eligibility, adoption procedure, shares, durations and coefficients remain proposals.\""
         ],
         [
           "역사 참조 — 운용 경로 제외",

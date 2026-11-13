@@ -52,7 +52,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "이 페이지는 관계·신뢰·충성·명령 평가 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+          "text": "이 페이지는 관계·신뢰·충성·명령 평가 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다. v3 기준: 충성을 받는 수장은 세력마다 다르다. 정부는 구의 국회의원과 종신 대통령, 자유도시들은 그 도시의 우두머리(관악은 관악 공작), 아크는 곁집장과 교주다. 자유도시들 전체 위에는 수장이 없다(근거: 01-core 8절, 바이블 2.2절 [승인]). (잠정 T21-sysdesign-1-1)"
         }
       ]
     },
@@ -365,7 +365,7 @@
         [
           {
             "kind": "text",
-            "text": "충성·자기 군주 검사 — 0..100 정수. 자기 군주이면 100. 모르는 값을 0으로 두지 않는다. (원문: d07.b9.orderedSteps[6])"
+            "text": "충성·자기 수장 검사 — 0..100 정수. 자기 수장이면 100. 모르는 값을 0으로 두지 않는다. (원문: d07.b9.orderedSteps[6])"
           }
         ],
         [
@@ -696,37 +696,37 @@
           "\"After identity/version/awarene​ss/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\""
         ],
         [
-          "운용 — 충성·자기 군주 검사",
+          "운용 — 충성·자기 수장 검사",
           "d07.b9.fields[3].name",
           "\"loyalty\""
         ],
         [
-          "운용 — 충성·자기 군주 검사",
+          "운용 — 충성·자기 수장 검사",
           "d07.b9.fields[3].type",
           "\"integer&#124;null\""
         ],
         [
-          "운용 — 충성·자기 군주 검사",
+          "운용 — 충성·자기 수장 검사",
           "d07.b9.fields[3].unit",
           "\"loyalty-point\""
         ],
         [
-          "운용 — 충성·자기 군주 검사",
+          "운용 — 충성·자기 수장 검사",
           "d07.b9.fields[3].range",
           "\"0..100\""
         ],
         [
-          "운용 — 충성·자기 군주 검사",
+          "운용 — 충성·자기 수장 검사",
           "d07.b9.fields[3].null",
-          "\"unknown; monarch self resolves to 100\""
+          "\"unknown; leader self resolves to 100\""
         ],
         [
-          "운용 — 충성·자기 군주 검사",
+          "운용 — 충성·자기 수장 검사",
           "d07.b9.fields[3].owner",
           "\"D07\""
         ],
         [
-          "운용 — 충성·자기 군주 검사",
+          "운용 — 충성·자기 수장 검사",
           "d07.b9.fields[3].read",
           "\"D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time\""
         ],
@@ -1428,12 +1428,12 @@
         [
           "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[5].s​cope",
-          "\"Country/institution-spe​cific relationship establishment and termination inputs\""
+          "\"Faction/institution-spe​cific relationship establishment and termination inputs\""
         ],
         [
           "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[5].r​eason",
-          "\"D09-A approves per-country authoring and registered authority/basis review, but no actual country procedure or relation-establishment payload is supplied here.\""
+          "\"D09-A approves per-faction authoring and registered authority/basis review, but no actual faction procedure or relation-establishment payload is supplied here.\""
         ],
         [
           "미결 — 운용 경로 제외",
@@ -1658,7 +1658,7 @@
         [
           "운용 — 인지·효과 정책 미결",
           "d07.b11.decisions[1].app​lied",
-          "\"Institution-specific relationship inputs must be authored per country with explicit electors/quorum/resolver​/ratification/acting authority where relevant. D07 may preserve existing valid facts and read verified inputs, but cannot invent a universal institution or establish a new relation when the applicable institution/basis is missing.\""
+          "\"Institution-specific relationship inputs must be authored per faction with explicit voters/quorum/resolver​/ratification/acting authority where relevant. D07 may preserve existing valid facts and read verified inputs, but cannot invent a universal institution or establish a new relation when the applicable institution/basis is missing.\""
         ],
         [
           "운용 — 명령 당시 증거 분리",
@@ -1708,7 +1708,7 @@
         [
           "운용 — 인지·효과 정책 미결",
           "d07.b11.approvalBoundary​",
-          "\"Sealed choices approve effect-specific lifecycle authoring, institution-input authoring boundaries, decision-time versus later-performance separation, and field-by-field review methods for person/organization payloads. They do not approve unspecified trust deltas, credibility weights, decay functions, loyalty cadence, persistence duration, actual person/country values, or source-game coefficients.\""
+          "\"Sealed choices approve effect-specific lifecycle authoring, institution-input authoring boundaries, decision-time versus later-performance separation, and field-by-field review methods for person/organization payloads. They do not approve unspecified trust deltas, credibility weights, decay functions, loyalty cadence, persistence duration, actual person/faction values, or source-game coefficients.\""
         ],
         [
           "운용 — 알려진 방향 신뢰 입력",
@@ -1736,9 +1736,9 @@
           "\"Hidden world facts and personal knowledge are separate; late discovery does not rewrite earlier decisions.\""
         ],
         [
-          "운용 — 충성·자기 군주 검사",
+          "운용 — 충성·자기 수장 검사",
           "d07.b11.approvedExisting​Rules[5]",
-          "\"Loyalty is a separate 0..100 state toward the hero's monarch; monarch self-loyalty is 100; exactly 25 is not below 25.\""
+          "\"Loyalty is a separate 0..100 state toward the hero's leader; leader self-loyalty is 100; exactly 25 is not below 25.\""
         ],
         [
           "운용 — 신원·판본·중복 결과",
@@ -1878,7 +1878,7 @@
         [
           "운용 — 인지·효과 정책 미결",
           "d07.b11.stateSheet.insti​tutionInputs",
-          "\"D09-A requires country-specific institution records and actual authority/basis evidence. Existing valid relation facts survive missing inputs; unsupported new establishment remains unresolved rather than globally rejected or invented.\""
+          "\"D09-A requires faction-specific institution records and actual authority/basis evidence. Existing valid relation facts survive missing inputs; unsupported new establishment remains unresolved rather than globally rejected or invented.\""
         ],
         [
           "운용 — 인지·효과 정책 미결",
@@ -1891,9 +1891,9 @@
           "\"D21-A requires organization-by-organiza​tion, field-by-field source and disposition. Organization policy does not automatically write an individual's trust or loyalty.\""
         ],
         [
-          "운용 — 충성·자기 군주 검사",
+          "운용 — 충성·자기 수장 검사",
           "d07.b11.stateSheet.loyal​ty",
-          "\"Separate hero-to-own-monarch state in 0..100. Monarch self is 100. Below25 is a predicate; path opening requires an approved persistence/risk rule and is otherwise withheld.\""
+          "\"Separate hero-to-own-leader state in 0..100. Leader self is 100. Below25 is a predicate; path opening requires an approved persistence/risk rule and is otherwise withheld.\""
         ],
         [
           "운용 — 명령 당시 증거 분리",

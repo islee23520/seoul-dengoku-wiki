@@ -94,7 +94,7 @@
         [
           {
             "kind": "text",
-            "text": "LORE는 인물·국가·지역·역·문화의 세계 안 사실을 소유한다."
+            "text": "LORE는 인물·세력·공작령·지역·역·문화의 세계 안 사실을 소유한다. 세계 정본의 순서는 `docs/CANON-BIBLE.md` 골격, `docs/design/v3/` 장, 그 밖의 문서다."
           }
         ],
         [
@@ -173,9 +173,9 @@
           "JSON",
           "`LORE/name-pools/values-orgs.json`",
           "`janseon.values.orgs.v1`",
-          "37개 조직",
-          "사용 중",
-          "조직 ID·국가 참조 검사"
+          "옛 조직 37개",
+          "재정의 대기",
+          "조직 ID·세력 참조 검사. 옛 정치체 기준의 조직이라 v3 세 세력의 조직(부처, 작업대, 정비대)으로 다시 정한다"
         ],
         [
           "서울 이동 그래프",
@@ -221,6 +221,24 @@
           "흐름·화면·연결",
           "설계 자료",
           "생성기와 HTML 렌더 검사"
+        ],
+        [
+          "세력·공작령",
+          "SQL",
+          "`data/sql/035-factions.sql`, `040-wiki-states.sql`, `121-map-titles.sql`",
+          "`data/sql/000-schema.sql`의 `faction`·`wiki_state`·`map_title`",
+          "세 세력과 무소속, 25공작령",
+          "정본(바이블 2.1~2.4절)",
+          "공작령 25 = 정부 14 + 자유도시들 7 + 아크 4. 지도 칭호는 고정 사실"
+        ],
+        [
+          "병종",
+          "SQL",
+          "`data/sql/130-units-government.sql`, `131-units-free-city.sql`, `132-units-arc.sql`",
+          "`data/sql/000-schema.sql`의 `wiki_unit`",
+          "세력마다 따로 둔 병종 명단",
+          "정본(병종 수치는 이 SQL 한 곳, 바이블 2.5절)",
+          "`faction_id`가 세 세력 가운데 하나, `counters`는 있는 병종 id만 가리킴. 다른 문서는 병종 id만 가리키고 수치를 옮겨 적지 않는다"
         ]
       ]
     },
@@ -283,12 +301,12 @@
           "LORE/characters"
         ],
         [
-          "국가 식별자",
-          "`state`",
+          "세력 식별자",
+          "`faction_id`",
           "문자열",
-          "`S00` 또는 `S01`–`S16`",
+          "`government`·`free-city`·`arc`·`independent`",
           "예",
-          "국가 원장"
+          "세력 원장(`data/sql/035-factions.sql`)"
         ],
         [
           "가치관",
@@ -453,20 +471,20 @@
         [
           "`person`",
           "`character_id`",
-          "`state_id`",
+          "`faction_id`",
           "이름 변경 뒤에도 ID 유지, 사용자 잠금 성별 보존"
         ],
         [
-          "`state`",
-          "`state_id`",
+          "`faction`",
+          "`faction_id`",
           "`capital_station_id`",
-          "`S01`–`S16`, 개막 국가 16개"
+          "세 세력(`government`·`free-city`·`arc`)과 `independent`. 정부의 자리 역은 광화문, 아크는 잠실이고 자유도시들에는 하나의 자리 역이 없다"
         ],
         [
           "`organization`",
           "`organization_id`",
-          "다대다 `organization_state`",
-          "조직 37개 원장의 ID 유지"
+          "다대다 `organization_faction`",
+          "옛 조직 37개의 ID는 `retired`로 남기고 v3 조직을 새로 등록한다"
         ],
         [
           "`station`",
@@ -489,8 +507,20 @@
         [
           "`station_control_delta`",
           "`delta_id`",
-          "`station_id`, `state_id`",
+          "`station_id`, `faction_id`",
           "기준선 변경만 기록, 원인·판본·시점 필수"
+        ],
+        [
+          "`duchy`",
+          "`duchy_id`",
+          "`faction_id`, `district_id`",
+          "25공작령. 구 하나가 공작령 하나이고 정부 14, 자유도시들 7, 아크 4로 나뉜다"
+        ],
+        [
+          "`unit`",
+          "`unit_id`",
+          "`faction_id`",
+          "병종 id는 `data/sql/130`~`132`의 `wiki_unit.id`를 그대로 쓴다. 수치를 이 표에 옮겨 적지 않는다"
         ],
         [
           "`dataset_receipt`",

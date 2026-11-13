@@ -309,7 +309,7 @@
         [
           {
             "kind": "text",
-            "text": "빠진 규칙: 능력 비용, 기본 파생식, 기능 비용과 기본값, ST 피해표, 기본 방어식, 방호·부상·치명 결과, 전체 거리·명중 위치표, 서울 계수와 국가 제도는 미정이다."
+            "text": "빠진 규칙: 능력 비용, 기본 파생식, 기능 비용과 기본값, ST 피해표, 기본 방어식, 방호·부상·치명 결과, 전체 거리·명중 위치표, 서울 계수와 세력 제도는 미정이다."
           }
         ]
       ]
@@ -2311,13 +2311,13 @@
           "D08 가문·친족·혼인·양자",
           "identity; 수치 식 없음",
           "existing valid marriage/family facts persist; new formation requires applicable institution and evidence",
-          "Country marriage/adoption eligibility, consent effects and shares"
+          "Faction marriage/adoption eligibility, consent effects and shares"
         ],
         [
-          "D09 국가·정부·기관·정통성",
+          "D09 세력·정부·기관·정통성",
           "identity; 수치 식 없음",
           "office vacancy stops that office authority only; living personal contracts remain separate",
-          "Country office eligibility/election/regency and legitimacy coefficients"
+          "Faction office eligibility/election/regency and legitimacy coefficients"
         ],
         [
           "D10 작위·권리·명분·인준",
@@ -2329,7 +2329,7 @@
           "D11 수여·위임·회수·봉신",
           "identity; 수치 식 없음",
           "appointment changes office powers, delegation preserves original holder, grant changes specified right",
-          "Country ratification/revocation and contract termination details"
+          "Faction ratification/revocation and contract termination details"
         ],
         [
           "D12 후계·사망·본체 전환",
@@ -3003,7 +3003,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "서울 근거는 인구의 actor-authority-labor.20261003.transitions, 도착의 economy-owner.20261003.arrival, 신뢰의 sp1.b79, 협상의 sp1.b122와 sp1.b124–127, 끝점의 sp1.b119·sp1.b121, 결과 재적용 방지의 sp1.b13·sp1.b93이다. 반개방 예약은 같은 시각 전환을 허용한 명시 응답 범위다. 자료형 모델에 이러한 규칙이 들어 있어도 기획 전체의 미정 수치·국가별 법·실행 구현을 승인하지 않는다."
+          "text": "서울 근거는 인구의 actor-authority-labor.20261003.transitions, 도착의 economy-owner.20261003.arrival, 신뢰의 sp1.b79, 협상의 sp1.b122와 sp1.b124–127, 끝점의 sp1.b119·sp1.b121, 결과 재적용 방지의 sp1.b13·sp1.b93이다. 반개방 예약은 같은 시각 전환을 허용한 명시 응답 범위다. 자료형 모델에 이러한 규칙이 들어 있어도 기획 전체의 미정 수치·세력별 법·실행 구현을 승인하지 않는다."
         }
       ]
     },

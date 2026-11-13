@@ -42,7 +42,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "D09 아치파이 — 국가·정부·기관·직위 전체 논리"
+          "text": "D09 아치파이 — 세력·정체·기관·직위 전체 논리"
         }
       ]
     },
@@ -52,7 +52,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "이 페이지는 국가·정부·기관·직위 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+          "text": "이 페이지는 세력·정체·기관·직위 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다. v3 기준: 세력은 정부·자유도시들·아크 셋뿐이고 공작령은 25곳(14 + 7 + 4)이다(근거: 바이블 1절 7~8행 [승인], 01-core 7~8절). 세력별 직위 절차의 실제 값은 각 세력 장(04~06장)이 정한다. 정부는 국회의원 열넷의 추대(열네 도장), 자유도시들은 도시마다 대주회의 이름값(관악은 묶인 도장), 아크는 교주가 말해 둔 이름과 네 곁집 자리다(근거: 09장 4~5절). 이 문서의 선거·정족수·동률 계약은 그 값을 받는 틀이며 값을 만들지 않는다."
         }
       ]
     },
@@ -100,7 +100,7 @@
       "kind": "codeFence",
       "fence": "```",
       "info": "text",
-      "text": "D09-CANDIDATE-FILTER [approved-structure-payload-values-per-state] eligible = candidates where eligible=true and, when exam.required, examScore is known in exam.scoreUnit and examScore >= exam.minimumScore\nD09-QUORUM [approved-structure-payload-values-per-state] participatingVoters = count(unique valid voter IDs with one valid ballot); met = mode=count ? participatingVoters >= requiredCount : participatingVoters == eligibleVoterCount\nD09-VOTE-TALLY [approved-structure] tally[candidateId] = count(valid ballots for candidateId); leaders = eligible candidates with maximal tally\nD09-TIE [approved-structure-payload-values-per-state] resolver-order selects the first tied candidate in orderedCandidateIds; remain-vacant selects nobody\nD09-LEGITIMACY-STATUS [approved-categorical-only] lawful when approved matching procedure completes selection and every required appointment/ratification condition; otherwise selection-pending|no-candidate|quorum-unmet|tie-unresolved|appointment-blocked\nD09-LEGITIMACY-SCORE [proposal-held] null\nGURPS-LIKE-REFERENCE [not-used-by-D09-resolution] No 3d6 roll, margin or contest is invoked unless a future per-state payload explicitly and separately approves one.\nD09-F1 [후보·승인 전] eligible=explicitEligible && (!examRequired || knownScore>=registeredMinimum); quorum=count(uniqueValidVoters)>=requiredCount OR all mode equality; tally=count(validBallots per candidate)\nD09-F2 [후보·승인 전] unique top tally wins selection; tie uses registered resolver order or remains vacant; lawful only after required appointment and ratification\n"
+      "text": "D09-CANDIDATE-FILTER [approved-structure-payload-values-per-state] eligible = candidates where eligible=true and, when exam.required, examScore is known in exam.scoreUnit and examScore >= exam.minimumScore\nD09-QUORUM [approved-structure-payload-values-per-state] participatingVoters = count(unique valid voter IDs with one valid ballot); met = mode=count ? participatingVoters >= requiredCount : participatingVoters == eligibleVoterCount\nD09-VOTE-TALLY [approved-structure] tally[candidateId] = count(valid ballots for candidateId); leaders = eligible candidates with maximal tally\nD09-TIE [approved-structure-payload-values-per-state] resolver-order selects the first tied candidate in orderedCandidateIds; remain-vacant selects nobody\nD09-LEGITIMACY-STATUS [approved-categorical-only] lawful when approved matching procedure completes selection and every required appointment/ratification condition; otherwise selection-pending|no-candidate|quorum-unmet|tie-unresolved|appointment-blocked\nD09-LEGITIMACY-SCORE [proposal-held] null\nGURPS-LIKE-REFERENCE [not-used-by-D09-resolution] No 3d6 roll, margin or contest is invoked unless a future per-faction payload explicitly and separately approves one.\nD09-F1 [후보·승인 전] eligible=explicitEligible && (!examRequired || knownScore>=registeredMinimum); quorum=count(uniqueValidVoters)>=requiredCount OR all mode equality; tally=count(validBallots per candidate)\nD09-F2 [후보·승인 전] unique top tally wins selection; tie uses registered resolver order or remains vacant; lawful only after required appointment and ratification\n"
     },
     {
       "id": "archify.b8",
@@ -220,7 +220,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "자료 소유자는 D09 owns country, government, institution, office-procedure, acting-scope, legitimacy-status and continuity records; D01 owns person identity/life; D08 owns family and marriage; D10 owns titles/claims; D11 owns grants and physical handover; D12 owns body succession; D17 owns negotiated terms; D18 owns time/save boundaries, 유지 계약은 D09-CANDIDATE-FILTER·D09-QUORUM·D09-VOTE-TALLY·D09-TIE·D09-LEGITIMACY-STATUS·GURPS-LIKE-REFERENCE다. 상태 소유 경계는 institution+office IDs,procedure revision,eligible candidates/voters,ballots,quorum,tie rule,appointment/ratification,acting scope. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
+          "text": "자료 소유자는 D09 owns faction, polity, institution, office-procedure, acting-scope, legitimacy-status and continuity records; D01 owns person identity/life; D08 owns family and marriage; D10 owns titles/claims; D11 owns grants and physical handover; D12 owns body succession; D17 owns negotiated terms; D18 owns time/save boundaries, 유지 계약은 D09-CANDIDATE-FILTER·D09-QUORUM·D09-VOTE-TALLY·D09-TIE·D09-LEGITIMACY-STATUS·GURPS-LIKE-REFERENCE다. 상태 소유 경계는 institution+office IDs,procedure revision,eligible candidates/voters,ballots,quorum,tie rule,appointment/ratification,acting scope. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
         }
       ]
     },
@@ -320,13 +320,13 @@
         [
           {
             "kind": "text",
-            "text": "직위·절차·대행 요청 — state/institution/office​/event ID, 현재·절차 개정·규칙과 승인 payload. (원문: d09.b9.orderedSteps[0])"
+            "text": "직위·절차·대행 요청 — faction/institution/office​/event ID, 현재·절차 개정·규칙과 승인 payload. (원문: d09.b9.orderedSteps[0])"
           }
         ],
         [
           {
             "kind": "text",
-            "text": "같은 국가·직위·판본 — 혼합·stale·중복 사건·없는 기관·잘못된 직위 참조 거부. (원문: d09.b9.orderedSteps[0])"
+            "text": "같은 세력·직위·판본 — 혼합·stale·중복 사건·없는 기관·잘못된 직위 참조 거부. (원문: d09.b9.orderedSteps[0])"
           }
         ],
         [
@@ -344,7 +344,7 @@
         [
           {
             "kind": "text",
-            "text": "승인된 국가·직위 절차 — approvalStatus=approved와​ selector별 필수 fields 필요. 실제 16국 값·기관 payload는 자동 작성하지 않는다. (원문: d09.b9.orderedSteps[2]; d09.b9.orderedSteps[3])"
+            "text": "승인된 세력·직위 절차 — approvalStatus=approved와​ selector별 필수 fields 필요. 실제 세 세력 값·기관 payload는 자동 작성하지 않는다. (원문: d09.b9.orderedSteps[2]; d09.b9.orderedSteps[3])"
           }
         ],
         [
@@ -368,7 +368,7 @@
         [
           {
             "kind": "text",
-            "text": "후보 없음·공석 유지 — no-candidate. 최고 기량·새 후보·자동 군주 생성 없음. (원문: d09.b9.orderedSteps[3])"
+            "text": "후보 없음·공석 유지 — no-candidate. 최고 기량·새 후보·자동 수장 생성 없음. (원문: d09.b9.orderedSteps[3])"
           }
         ],
         [
@@ -526,7 +526,7 @@
           "\"D09-owner-directions-20​261008-v1\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.rulesVersionLinka​ge.sourceRulesVersion",
           "\"D09-owner-directions-20​261008-v1\""
         ],
@@ -581,14 +581,14 @@
           "\"cd10396fbf6bf4368f043a5​efb493f5e743b496f2c0f3b6​1f19db2b148adfdec\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.rulesVersionLinka​ge.compatibility",
           "\"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\""
         ],
         [
           "운용 — 직위·절차·대행 요청",
           "d09.b9.dataOwner",
-          "\"D09 owns country, government, institution, office-procedure, acting-scope, legitimacy-status and continuity records; D01 owns person identity/life; D08 owns family and marriage; D10 owns titles/claims; D11 owns grants and physical handover; D12 owns body succession; D17 owns negotiated terms; D18 owns time/save boundaries\""
+          "\"D09 owns faction, polity, institution, office-procedure, acting-scope, legitimacy-status and continuity records; D01 owns person identity/life; D08 owns family and marriage; D10 owns titles/claims; D11 owns grants and physical handover; D12 owns body succession; D17 owns negotiated terms; D18 owns time/save boundaries\""
         ],
         [
           "운용 — 직위·절차·대행 요청",
@@ -618,7 +618,7 @@
         [
           "운용 — 직위·절차·대행 요청",
           "d09.b9.fields[0].read",
-          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
+          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-faction procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -626,9 +626,9 @@
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[0].snapsho​t",
-          "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
+          "\"All records use one exact checkpoint. Faction, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -636,39 +636,39 @@
           "\"After candidate filtering, exam filtering, selector resolution, quorum, tally/tie resolution and appointment/ratification​ all complete. Vacancy/dispute receipts may commit without filling the office; no partial holder or treasury write is allowed.\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[1].name",
           "\"stateId\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[1].type",
           "\"stableId\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[1].unit",
           "\"identity\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[1].null",
           "false"
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[1].owner",
           "\"D09\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[1].rule",
           "\"must match procedure and institution\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[1].read",
-          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
+          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-faction procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -676,9 +676,9 @@
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[1].snapsho​t",
-          "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
+          "\"All records use one exact checkpoint. Faction, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -686,34 +686,34 @@
           "\"After candidate filtering, exam filtering, selector resolution, quorum, tally/tie resolution and appointment/ratification​ all complete. Vacancy/dispute receipts may commit without filling the office; no partial holder or treasury write is allowed.\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[2].name",
           "\"institutionId,officeId\"​"
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[2].type",
           "\"stableId\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[2].unit",
           "\"identity\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[2].null",
           "false"
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[2].owner",
           "\"D09\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[2].read",
-          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
+          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-faction procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -721,9 +721,9 @@
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[2].snapsho​t",
-          "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
+          "\"All records use one exact checkpoint. Faction, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -758,7 +758,7 @@
         [
           "운용 — 대상 직위만 공석",
           "d09.b9.fields[3].read",
-          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
+          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-faction procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -766,9 +766,9 @@
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[3].snapsho​t",
-          "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
+          "\"All records use one exact checkpoint. Faction, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -808,7 +808,7 @@
         [
           "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[4].read",
-          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
+          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-faction procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -816,9 +816,9 @@
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[4].snapsho​t",
-          "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
+          "\"All records use one exact checkpoint. Faction, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -848,12 +848,12 @@
         [
           "운용 — 투표·임명 경로",
           "d09.b9.fields[5].owner",
-          "\"per-state procedure payload\""
+          "\"per-faction procedure payload\""
         ],
         [
           "운용 — 투표·임명 경로",
           "d09.b9.fields[5].read",
-          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
+          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-faction procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -861,9 +861,9 @@
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[5].snapsho​t",
-          "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
+          "\"All records use one exact checkpoint. Faction, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -898,7 +898,7 @@
         [
           "운용 — 고유 명시 적격 후보",
           "d09.b9.fields[6].read",
-          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
+          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-faction procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -906,9 +906,9 @@
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[6].snapsho​t",
-          "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
+          "\"All records use one exact checkpoint. Faction, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -938,12 +938,12 @@
         [
           "운용 — 고유 유권자·유효 한 표",
           "d09.b9.fields[7].owner",
-          "\"per-state procedure payload/event\""
+          "\"per-faction procedure payload/event\""
         ],
         [
           "운용 — 고유 유권자·유효 한 표",
           "d09.b9.fields[7].read",
-          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
+          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-faction procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -951,9 +951,9 @@
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[7].snapsho​t",
-          "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
+          "\"All records use one exact checkpoint. Faction, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -983,12 +983,12 @@
         [
           "운용 — 등록 정족수",
           "d09.b9.fields[8].owner",
-          "\"per-state procedure payload\""
+          "\"per-faction procedure payload\""
         ],
         [
           "운용 — 등록 정족수",
           "d09.b9.fields[8].read",
-          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
+          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-faction procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -996,9 +996,9 @@
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[8].snapsho​t",
-          "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
+          "\"All records use one exact checkpoint. Faction, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -1028,12 +1028,12 @@
         [
           "운용 — 등록 동률 규칙",
           "d09.b9.fields[9].owner",
-          "\"per-state procedure payload\""
+          "\"per-faction procedure payload\""
         ],
         [
           "운용 — 등록 동률 규칙",
           "d09.b9.fields[9].read",
-          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
+          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-faction procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -1041,9 +1041,9 @@
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[9].snapsho​t",
-          "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
+          "\"All records use one exact checkpoint. Faction, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -1073,12 +1073,12 @@
         [
           "운용 — 시험 점수·단위·기준",
           "d09.b9.fields[10].owner",
-          "\"per-state procedure payload\""
+          "\"per-faction procedure payload\""
         ],
         [
           "운용 — 시험 점수·단위·기준",
           "d09.b9.fields[10].read",
-          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
+          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-faction procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -1086,9 +1086,9 @@
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[10].snapsh​ot",
-          "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
+          "\"All records use one exact checkpoint. Faction, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -1118,12 +1118,12 @@
         [
           "운용 — 임명자·필수 인준자",
           "d09.b9.fields[11].owner",
-          "\"per-state procedure payload\""
+          "\"per-faction procedure payload\""
         ],
         [
           "운용 — 임명자·필수 인준자",
           "d09.b9.fields[11].read",
-          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
+          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-faction procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -1131,9 +1131,9 @@
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[11].snapsh​ot",
-          "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
+          "\"All records use one exact checkpoint. Faction, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -1163,12 +1163,12 @@
         [
           "운용 — 정확 대행자·행위 범위",
           "d09.b9.fields[12].owner",
-          "\"per-state procedure payload\""
+          "\"per-faction procedure payload\""
         ],
         [
           "운용 — 정확 대행자·행위 범위",
           "d09.b9.fields[12].read",
-          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
+          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-faction procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -1176,9 +1176,9 @@
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[12].snapsh​ot",
-          "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
+          "\"All records use one exact checkpoint. Faction, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -1186,34 +1186,34 @@
           "\"After candidate filtering, exam filtering, selector resolution, quorum, tally/tie resolution and appointment/ratification​ all complete. Vacancy/dispute receipts may commit without filling the office; no partial holder or treasury write is allowed.\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[13].name",
           "\"snapshotRevision,proced​ureRevision,rulesVersion​\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[13].type",
           "\"revision\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[13].unit",
           "\"version\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[13].null",
           "false"
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[13].owner",
           "\"D18/D09\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[13].read",
-          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
+          "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-faction procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -1221,9 +1221,9 @@
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.fields[13].snapsh​ot",
-          "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
+          "\"All records use one exact checkpoint. Faction, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -1243,7 +1243,7 @@
         [
           "운용 — 직위·절차·대행 요청",
           "d09.b9.readSet[2]",
-          "\"one matching approved per-state procedure revision\""
+          "\"one matching approved per-faction procedure revision\""
         ],
         [
           "운용 — 직위·절차·대행 요청",
@@ -1276,9 +1276,9 @@
           "\"categorical legitimacy status and event receipt\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.snapshot",
-          "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
+          "\"All records use one exact checkpoint. Faction, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
           "운용 — 대상 결과·영수증 반영",
@@ -1288,7 +1288,7 @@
         [
           "운용 — 직위·절차·대행 요청",
           "d09.b9.orderedSteps[0]",
-          "\"Resolve stable IDs, exact rules version, state, institution, office and procedure revision; reject any mismatch or duplicate event.\""
+          "\"Resolve stable IDs, exact rules version, faction, institution, office and procedure revision; reject any mismatch or duplicate event.\""
         ],
         [
           "운용 — 직위 사건 종류",
@@ -1298,10 +1298,10 @@
         [
           "운용 — 직위 사건 종류",
           "d09.b9.orderedSteps[2]",
-          "\"For a procedure attempt, require approvalStatus=approved and every field required by that state/office selector. Proposal or missing payload returns E_PROPOSAL with the full before state unchanged.\""
+          "\"For a procedure attempt, require approvalStatus=approved and every field required by that faction/office selector. Proposal or missing payload returns E_PROPOSAL with the full before state unchanged.\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b9.orderedSteps[3]",
           "\"Filter candidate records by explicit eligible=true. If the selector requires an examination, require declared score unit and retain candidates whose score is at least the registered threshold. No candidate leaves a vacancy with no-candidate status.\""
         ],
@@ -1583,7 +1583,7 @@
         [
           "역사 참조 — 운용 경로 제외",
           "d09.b9.formulaSheet[6].e​xpression",
-          "\"No 3d6 roll, margin or contest is invoked unless a future per-state payload explicitly and separately approves one.\""
+          "\"No 3d6 roll, margin or contest is invoked unless a future per-faction payload explicitly and separately approves one.\""
         ],
         [
           "역사 참조 — 운용 경로 제외",
@@ -1598,7 +1598,7 @@
         [
           "운용 — 직위·절차·대행 요청",
           "d09.b9.rng",
-          "\"None in the approved D09 structure. Random tie breakers, generated candidates and hidden legitimacy rolls are prohibited unless a later state-specific approved payload defines stream, draw count and receipt.\""
+          "\"None in the approved D09 structure. Random tie breakers, generated candidates and hidden legitimacy rolls are prohibited unless a later faction-specific approved payload defines stream, draw count and receipt.\""
         ],
         [
           "운용 — 직위·절차·대행 요청",
@@ -1631,9 +1631,9 @@
           "\"Restore exact procedure and receipt revision. Do not rerun completed appointment or acting authorization. Unsupported/mixed version fails explicitly.\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b9.failure",
-          "\"Duplicate event, duplicate ballot, vote by an ineligible voter, vote for an ineligible candidate, mismatched state/office, stale revision, absent required per-state field, incompatible unit or concurrent revision rejects atomically.\""
+          "\"Duplicate event, duplicate ballot, vote by an ineligible voter, vote for an ineligible candidate, mismatched faction/office, stale revision, absent required per-faction field, incompatible unit or concurrent revision rejects atomically.\""
         ],
         [
           "미결 — 운용 경로 제외",
@@ -1643,7 +1643,7 @@
         [
           "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].s​cope",
-          "\"Sixteen state/office procedure payloads\""
+          "\"The three factions' office procedure payloads\""
         ],
         [
           "미결 — 운용 경로 제외",
@@ -1658,7 +1658,7 @@
         [
           "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].f​ields[2]",
-          "\"voterRule and actual elector roster\""
+          "\"voterRule and actual voter roster\""
         ],
         [
           "미결 — 운용 경로 제외",
@@ -2111,19 +2111,19 @@
           "\"D22\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.decisions[0].row​",
           "\"D09\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.decisions[0].cho​senOption",
           "\"A\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.decisions[0].app​lied",
-          "\"Each state must register its own selector, candidates, voters, quorum, tie resolver, examination, appointment/ratification​ and acting-scope payload. A registered resolver is not itself an appointment and no universal chair table is inferred.\""
+          "\"Each faction must register its own selector, candidates, voters, quorum, tie resolver, examination, appointment/ratification​ and acting-scope payload. A registered resolver is not itself an appointment and no universal chair table is inferred.\""
         ],
         [
           "운용 — 대상 직위만 공석",
@@ -2153,7 +2153,7 @@
         [
           "운용 — 절차·점수·수치 정책 미결",
           "d09.b11.decisions[2].app​lied",
-          "\"Organization values and policies require field-by-field source and disposition. No charter average or functional modifier becomes a country fact here.\""
+          "\"Organization values and policies require field-by-field source and disposition. No charter average or functional modifier becomes a faction fact here.\""
         ],
         [
           "운용 — 절차·점수·수치 정책 미결",
@@ -2173,7 +2173,7 @@
         [
           "운용 — 절차·점수·수치 정책 미결",
           "d09.b11.approvalBoundary​",
-          "\"Sealed D09 Option A approves a separate explicit procedure record for each of the sixteen states. It does not approve one universal elector list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or state-specific payload. Missing payloads remain proposals and block appointment atomically.\""
+          "\"Sealed D09 Option A approves a separate explicit procedure record for each of the three factions. It does not approve one universal voter list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or faction-specific payload. Missing payloads remain proposals and block appointment atomically.\""
         ],
         [
           "역사 참조 — 운용 경로 제외",
@@ -2318,7 +2318,7 @@
         [
           "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[4].​limit",
-          "\"No Norland rank probability, politics threshold, lord generation or turn/day conversion imported.\""
+          "\"No Norland rank probability, politics threshold, leader generation or turn/day conversion imported.\""
         ],
         [
           "역사 참조 — 운용 경로 제외",
@@ -2461,74 +2461,74 @@
           "\"One event changes only its target office. Other offices held by the same person are not inferred lost.\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[0]",
           "\"stateId\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[1]",
           "\"officeId\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[2]",
           "\"selector\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[3]",
           "\"candidateRule\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[4]",
           "\"voterRule\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[5]",
           "\"quorum\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[6]",
           "\"tieRule\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[7]",
           "\"examRule\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[8]",
           "\"appointmentRule\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[9]",
           "\"actingRule\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[10]",
           "\"revision\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[11]",
           "\"approvalStatus\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.recordTypes.proc​edure.owner",
           "\"D09\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.recordTypes.proc​edure.invariant",
-          "\"Exactly one state/office payload and revision governs one attempt; payload absence or proposal status cannot appoint.\""
+          "\"Exactly one faction/office payload and revision governs one attempt; payload absence or proposal status cannot appoint.\""
         ],
         [
           "운용 — 직위·범주 적법성 후보",
@@ -2566,9 +2566,9 @@
           "\"holderId=null, effective=false, vacant=true. Institution, treasury, liabilities, lineage and unrelated offices remain unchanged.\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.stateSheet.selec​tionPending",
-          "\"A vacancy exists but no approved, complete, matching per-state payload has completed. No person is generated or silently inherited.\""
+          "\"A vacancy exists but no approved, complete, matching per-faction payload has completed. No person is generated or silently inherited.\""
         ],
         [
           "운용 — 동률 미결 공석",
@@ -2626,7 +2626,7 @@
           "\"Office is not body control\""
         ],
         [
-          "운용 — 같은 국가·직위·판본",
+          "운용 — 같은 세력·직위·판본",
           "d09.b11.exceptions[1]",
           "\"Office tier is not title rank\""
         ],
@@ -2646,7 +2646,7 @@
           "\"Treasury custody is not personal property\""
         ],
         [
-          "운용 — 승인된 국가·직위 절차",
+          "운용 — 승인된 세력·직위 절차",
           "d09.b11.exceptions[5]",
           "\"Registered resolver is not a universal chair\""
         ],
@@ -2678,7 +2678,7 @@
         [
           "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[0].scope",
-          "\"The sixteen state/office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions\""
+          "\"The three factions' office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions\""
         ],
         [
           "미결 — 운용 경로 제외",
@@ -2828,7 +2828,7 @@
         [
           "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[5].scope",
-          "\"Any GURPS-like success roll, quick contest, critical result or reaction modifier in government procedure\""
+          "\"Any GURPS-like success roll, quick contest, critical result or reaction modifier in polity procedure\""
         ],
         [
           "미결 — 운용 경로 제외",

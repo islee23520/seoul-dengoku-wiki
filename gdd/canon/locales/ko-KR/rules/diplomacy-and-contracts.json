@@ -18,10 +18,13 @@
       "ch.sp",
       "ch.s0",
       "ch.p0",
+      "v3.t21.reckoning",
       "ch.s1",
       "ch.p1",
+      "v3.t21.water",
       "ch.s2",
       "ch.p2",
+      "v3.t21.factions",
       "ch.decisions",
       "ch.terms"
     ],
@@ -102,6 +105,16 @@
       ]
     },
     {
+      "id": "v3.t21.reckoning",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "v3 세계 기준: 서울 전체가 쓰는 돈이 없으므로 거래는 양쪽의 셈을 맞추는 일이다. 정부는 끼와 근무일, 자유도시들은 킬로와 손시간, 아크는 하루 충전과 정비 차례로 센다(03장 11절). 정부의 끼 증표는 장부 안에서만 쓰고, 장부 밖 사람에게 넘기는 것은 법으로 금한다."
+        }
+      ]
+    },
+    {
       "id": "ch.s1",
       "kind": "heading",
       "level": 2,
@@ -123,6 +136,16 @@
       ]
     },
     {
+      "id": "v3.t21.water",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "v3 세계 기준: 세 세력 사이의 큰 약속은 급수계약이다. 30년 주기로 1차 2066년, 2차 2096년이었고 3차는 개막인 2126년이며 3차에 아크가 처음 앉는다(01-core 11절 5항). 자유도시들에는 묶는 이름이 없으므로 급수계약도 정부와 각 도시 사이의 따로 된 계약 묶음이고, 한 계약회에서 함께 도장을 찍는다(01-core 5.2절). 평화 조건은 계약의 조항이 된다. 정부는 부속서, 자유도시들은 계약서 장과 맡김, 아크는 교주의 말로 맺는다. 휴전 기본값은 60턴(5년)이다(09장 3.7절, 잠정 T29-14)."
+        }
+      ]
+    },
+    {
       "id": "ch.s2",
       "kind": "heading",
       "level": 2,
@@ -140,6 +163,16 @@
         {
           "kind": "text",
           "text": "서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Core/CampaignTurnDomain.cs#L224-L226 의 EnemyControl은 파벌 불평등이며 동맹·조약 의미를 소비하지 않는다. https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Core/SettlementDomain.cs#L448 은 POC 통제 그래프를 변경하지 않는다. 이 구현 경계를 세계의 외교 법칙이나 정복 불가 정책으로 확대하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "v3.t21.factions",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "v3 대응(09장 5절): 세력 안의 파벌은 정부의 OMO당과 클로당, 자유도시들의 도시 하나하나, 아크의 피와 쇠(핏줄의 이름값과 부위 수)다. 자유도시 도시들 위에는 아무도 없고, 함께 정할 일이 생기면 그때마다 계약회를 연다. 계약회에서 맺은 것은 도장 찍은 도시만 묶는다(01-core 7.2절)."
         }
       ]
     },
