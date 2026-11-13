@@ -1,6 +1,6 @@
 # v3 세계 생태계 바이블 (World Ecosystem Bible v3)
 
-상태: 01~09장 통합(과제 9, 2026-11-13). 10장은 설계 적용 프로필. 계획 `.omo/plans/wiki-lore-rebuild-v3.md`.
+상태: 01~09장 통합(과제 9, 2026-11-13). 10장은 설계 적용 프로필. 11장은 과학 기반 설정(붕괴 이전 시대, 겨울의 기제, 2046~2126년 인과, 과제 33), 12a는 용어 표 씨앗(제안). 계획 `.omo/plans/wiki-lore-rebuild-v3.md`.
 
 소유자 목표(2026-11-12, 원문): "...must re think from very beggining all of eco system ecept the name of the poeple and the potirait face and the sex of it". 추가 답: "바이블 골격 유지, 나머지 재설계", 고정 "서울 실제 지리·역 이름, 인물 나이·가족 관계".
 
