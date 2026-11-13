@@ -96,7 +96,7 @@ const RANK_MIN_AGE = {
   '하사': 18, '중사': 22, '상사': 28, '소위': 20, '중위': 22, '대위': 24, '소령': 30, '중령': 33, '대령': 35, '후계': 16, '등재민': 0,
   '공작': 25, '나루지기': 25, '장주': 25, '공장장': 25, '경계장': 25, '기지장': 25, '바람지기': 25, '구간장': 25, '역반장': 20, '대주': 20,
   '작업조장': 20, '건널목장': 25, '교대장': 20, '밭장': 20, '손': 16, '일손': 16, '견습': 12,
-  '교주': 25, '곁집장': 0, '곁집 어른': 40, '대피소장': 28, '정비장': 25, '호위장': 30, '말지기': 25, '정비공': 18, '세례자': 16, '곁집원': 0, '미세례자': 0,
+  '교주': 25, '곁집장': 0, '곁집 어른': 40, '대피소장': 28, '정비장': 25, '호위장': 30, '말지기': 22, '정비공': 18, '세례자': 16, '곁집원': 0, '미세례자': 0,
   '미등록': 0,
 };
 // 07장 5.1절의 직업 최소 나이는 06장 12.4절 갈래의 역할 낱말에 붙는다. 그 낱말이 닿는 직업 문구는 07장 8.7절 06 줄이다.
@@ -670,7 +670,7 @@ function crossCheck(lines, base, ctx, P) {
     for (const [oid, ov] of V) if (oid !== id && ov.o.faction_id === v.o.faction_id && ['district', 'head'].includes(ov.o.seat?.layer) && base.clanOf.get(oid) === clan) return oid;
     return null;
   };
-  // 07장 6.2절(잠정 T30-gov-14): 자유도시의 이을 자식·우두머리 집안의 어른은 같은 씨족의 우두머리가 없으면 그 줄 도시의 우두머리를 주군으로 둔다.
+  // 07장 6.2절(잠정 T30-gov-24): 자유도시의 이을 자식·우두머리 집안의 어른은 같은 씨족의 우두머리가 없으면 그 줄 도시의 우두머리를 주군으로 둔다.
   const freeCityHouseFallback = (v) => v.o.faction_id === 'free-city' && (v.o.tier === 'T2' ? /후계|이을 자식/.test(v.o.role) : /우두머리 집안/.test(v.o.role) && /어른/.test(v.o.role));
   const houseLiege = (id, v) => houseHolder(id, v) ?? (freeCityHouseFallback(v) ? holder.district[districtOf(v)] ?? null : null);
   // 07장 6.2절 의원 집안 칸(과제 30 결정): 정부 줄의 후계·배우자·친족·아이 네 칸. 주군은 그 줄 의석의 국회의원이다.
@@ -711,7 +711,7 @@ function crossCheck(lines, base, ctx, P) {
     }
   }
   // 의원 집안 칸의 핏줄(07장 6.2절): 후계와 아이는 국회의원과 같은 씨족, 아이는 국회의원보다 어리다. 배우자·친족 칸은 다른 씨족을 허용한다.
-  // 씨족이 없는 국회의원(비한국계 가족)은 그 비한국계 가족(100 nonkorean_family)을 집안으로 본다(잠정 T30-gov-14).
+  // 씨족이 없는 국회의원(비한국계 가족)은 그 비한국계 가족(100 nonkorean_family)을 집안으로 본다(07장 6.2절).
   const ageOf = (pid) => base.frozenAge.get(pid) ?? V.get(pid)?.o.age;
   const nkFamilyOf = (pid) => base.nonKorean.find((f) => f.members.includes(pid))?.id ?? null;
   const houseOf = (pid) => base.clanOf.get(pid) ?? (nkFamilyOf(pid) ? `nonkorean_family:${nkFamilyOf(pid)}` : null);
@@ -724,12 +724,15 @@ function crossCheck(lines, base, ctx, P) {
     if (!isAssemblyHouse(v) || !/후계|아이/.test(v.o.role)) continue;
     const m = rowMember(v); if (!m) continue;
     const mc = houseOf(m); const c = base.clanOf.get(m) ? base.clanOf.get(id) ?? null : houseOf(id);
-    // 잠정 T30-gov-15: 집안 사람이 국회의원 한 사람뿐이면 후계·아이 칸에 다른 집안에서 들인 사람(양자·피후견인)을 둘 수 있다.
+    // 잠정 T30-gov-25: 집안 사람이 국회의원 한 사람뿐이거나 세력 안에 그 칸의 단계(후계 S1, 아이 S4)를 가진 같은 집안 사람이 없으면
+    // 후계·아이 칸에 다른 집안에서 들인 사람(양자·피후견인)을 둘 수 있다.
     // 이 사람은 국회의원보다 어리고, 약력(ko·en)에 들인 사실을 적는다.
-    if (c !== mc && mc && houseSize(mc) === 1) {
+    const slotStage = /후계/.test(v.o.role) ? 'S1' : 'S4';
+    const stageKin = [...V].some(([oid, ov]) => oid !== m && ov.o.faction_id === v.o.faction_id && ov.o.stage === slotStage && houseOf(oid) === mc);
+    if (c !== mc && mc && (houseSize(mc) === 1 || !stageKin)) {
       const a = ageOf(id); const ma = ageOf(m);
-      if (Number.isInteger(a) && Number.isInteger(ma) && a >= ma) P.add('alloc', 'assembly-house-age', v.file, id, `taken-in ${v.o.role} age ${a} is not younger than the Member ${m} (${ma}) of row ${v.o.row} (07 6.2, T30-gov-15)`);
-      if (!TAKEN_IN_KO.test(v.o.biography_ko ?? '') || !TAKEN_IN_EN.test(v.o.biography_en ?? '')) P.add('alloc', 'assembly-house-adoption', v.file, id, `${v.o.role} of the one-person house ${mc} (Member ${m}) is from another house; the ko and en biographies must state the adoption or wardship (07 6.2, T30-gov-15)`);
+      if (Number.isInteger(a) && Number.isInteger(ma) && a >= ma) P.add('alloc', 'assembly-house-age', v.file, id, `taken-in ${v.o.role} age ${a} is not younger than the Member ${m} (${ma}) of row ${v.o.row} (07 6.2, T30-gov-25)`);
+      if (!TAKEN_IN_KO.test(v.o.biography_ko ?? '') || !TAKEN_IN_EN.test(v.o.biography_en ?? '')) P.add('alloc', 'assembly-house-adoption', v.file, id, `${v.o.role} of house ${mc} (Member ${m}) is taken in from another house; the ko and en biographies must state the adoption or wardship (07 6.2, T30-gov-25)`);
       continue;
     }
     if (c !== mc) P.add('alloc', 'assembly-house-clan', v.file, id, `${v.o.role} has clan ${c ?? '(no clan)'}, the Member ${m} of row ${v.o.row} has ${mc ?? '(no clan)'}; heir and child slots are the Member's own clan (07 6.2)`);
