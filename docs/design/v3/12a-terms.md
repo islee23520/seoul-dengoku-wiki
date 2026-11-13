@@ -1,113 +1,364 @@
-# v3 바이블 12a. 용어 표 씨앗
+# v3 바이블 12a. 용어 표
 
-상태: 씨앗(제안). 계획 `.omo/plans/wiki-lore-rebuild-v3.md` 과제 33이 만들고 과제 38이 넓혀 적용한다. **이 표의 "바꿀 말"은 제안이다. 이 과제에서는 어떤 장에도 적용하지 않았다.** 영어 열을 함께 두므로 따로 영어 미러를 두지 않는다.
+상태: 확정안(과제 38 1부). 과제 33이 씨앗(72행)을 놓았고, 과제 38 1부가 판정을 마치고 넓혔다. **이 표의 "바꿀 말"은 아직 어떤 장, 원고, 인물 자료, 병종 자료에도 적용하지 않았다.** 적용은 과제 38 3부가 모든 면에 한 번에 한다. 영어 열을 함께 두므로 따로 영어 미러를 두지 않는다.
 
-근거: 소유자 지시(2026-11-13, 바이블 9.4절 원문): "세계관에서 사용하는 용어는 현재에도 쓰이는 텀으로 해야 하며 invention 어색한 표현은 안됨 국어국립표준어 기준으로 단어와 언어 기술 언급과 표현을 해야합니다." 11장 8절.
+근거: 소유자 지시(2026-11-13, 바이블 9.4절 원문): "세계관에서 사용하는 용어는 현재에도 쓰이는 텀으로 해야 하며 invention 어색한 표현은 안됨 국어국립표준어 기준으로 단어와 언어 기술 언급과 표현을 해야합니다." 11장 8절. 권위 순서: 바이블 1~3절(ea06d2e12 정정본), 11장, 01~10장.
 
-## 읽는 법
+## 0. 읽는 법
 
-- **확인 방법.** 각 낱말을 국립국어원 표준국어대사전(stdict.korean.go.kr)에서 2026-11-13에 검색했다. "표제어"는 검색에서 나온 것이고, 뜻까지 맞는지 함께 적었다.
-- **상태** 다섯 가지. 소유자가 말한 세 가지(사전 표제어, 전문어, 조어)를 쓰되, 판정을 정직하게 하려고 둘을 나눴다.
+- **확인 방법.** 각 낱말을 국립국어원 『표준국어대사전』(stdict.korean.go.kr)에서 2026-11-13에 검색했다. 근거 칸의 `#숫자`는 그 사전의 표제어 번호(word_no)다. `https://stdict.korean.go.kr/search/searchView.do?word_no=숫자`로 열면 같은 뜻풀이가 나온다. 검색 결과가 0건이면 "표제어 없음"이라 적었다.
+- **상태** 다섯 가지.
   - **표제어**: 사전에 있고 이 세계가 쓰는 뜻과 맞다. 그대로 쓴다.
-  - **표제어(뜻 어긋남)**: 사전에 있지만 다른 뜻이다(예: "곁집"은 사전에서 "이웃하여 붙어 있는 집"). 읽는 사람이 오해하므로 바꾼다.
-  - **전문어**: 사전의 전문 분야 표시가 붙었거나, 해당 분야에서 자리 잡은 기술어다.
-  - **결합어**: 표제어 둘 이상을 뜻이 그대로 드러나게 붙인 말이거나, 표제어에 접미사(-장, -자 등)를 붙인 파생어다. 지금 한국어로 자연스러우면 그대로 두고, 이름처럼 굳힌 어색한 결합이면 바꾼다.
+  - **뜻 어긋남**: 사전에 있지만 다른 뜻이다. 바꾸거나, 이 세계의 뜻을 정해 두고 쓴다(3절).
+  - **전문어**: 사전에 『전기·전자』, 『군사』 같은 분야 표시가 붙은 말이거나, 사전에는 없어도 그 분야와 법령에서 자리 잡은 지금의 기술어다. 분야 문헌에서 실제로 쓰는 것을 확인하지 못한 말은 전문어라 하지 않고 결합어로 둔다.
+  - **결합어**: 표제어 둘 이상을 뜻이 그대로 드러나게 붙였거나, 표제어에 사전에 오른 접미사(-장, -공, -꾼, -원, -대, -조, -자)나 한자 접두사(비-, 재- 등)를 붙인 말이다. 지금 한국어로 자연스러우면 그대로 두고, 이름처럼 굳힌 어색한 결합이면 바꾼다.
   - **조어**: 사전에도 기술 분야에도 없는, 이 바이블이 지은 말이다. 바꾼다.
-- **승인 용어**(대정전, 최초의 AI, 국회의원, 공작령, 관악 공작, 교주, 메시아, 세례, 귀환망 등 바이블 골격과 5절 승인 용어)는 사전 여부와 상관없이 소유자 승인이므로 바꾸지 않는다. 표 끝에 따로 적었다.
+- **바꿀 말의 기준.** 바꿀 말은 사전 표제어이거나, 표제어끼리 뜻이 드러나게 붙인 말이거나, 지금 쓰는 기술어다. 새 말을 짓지 않는다. 영어는 지금 쓰는 영어 직업어와 기술어로 옮긴다(01-core 2.3절 6항). Lord, Baron 같은 역사 칭호와 다른 작품의 고유어를 쓰지 않는다.
+- **쓰인 곳 약호.** 01~11은 `docs/design/v3`의 장, D는 `docs/drafts/*.md`, P는 `docs/drafts/people/*.jsonl`(Pa 아크, Pf 자유도시, Pg 정부), U는 `data/sql/130~132`(U0 정부, U1 자유도시, U2 아크)다. S는 그 밖의 `data/sql`(030 문서, 050 인물, 090 인물 상세, 110 가계도, 120 지도)이다.
+- **접미사 규칙.** -지기는 사전 표제어(나루지기 #57660, 산지기 #441888)만 남기고, 기술 낱말에 붙인 -지기(취수구지기, 열 펌프지기 등)는 "관리인", "정비공", "경비원"으로 바꾼다. -꾼은 사전 표제어(짐꾼, 일꾼, 낚시꾼, 수레꾼, 벌목꾼, 망꾼, 위조꾼, 나무꾼, 심부름꾼, 밀수꾼, 장사꾼, 살림꾼)만 남긴다. -밭과 -틀도 같다. 표제어(솔밭, 눈밭, 문틀)만 남기고 지은 말(빛밭, 바람밭, 바람틀)은 바꾼다. "갈라지기", "던지기"처럼 동사에 -기를 붙인 명사형은 낱말이 아니라 문법 꼴이므로 검사에서 뺀다. 이틀, 통틀어, 맞바꾼, 비틀거리다 같은 다른 낱말과 활용형, 타이틀, 배틀 같은 외래어도 뺀다. -장(長)은 "반장", "역장"처럼 지금도 널리 쓰는 꼴이므로 그 자리가 실제로 하는 일과 맞으면 둔다.
 
-## 표
+## 1. 승인 용어(고정, 바꾸지 않는다)
 
-| # | 용어 | 쓰인 곳 | 상태 | 바꿀 말(제안) | English (now → proposed) | 근거 |
+소유자 승인 또는 바이블 골격의 말이다. 사전 여부와 상관없이 그대로 쓴다.
+
+| 용어 | English | 승인 근거 | 사전 |
+|---|---|---|---|
+| 대정전 | the Great Blackout | 바이블 1절 [승인] | 표제어 없음. 정본 용어 |
+| 최초의 AI | the First AI | 바이블 1절 [승인] | 결합어 |
+| 영원한 겨울 | the eternal winter | 바이블 1절 | 결합어 |
+| 국회의원 | Member of the National Assembly (Assembly Member) | 소유자 2026-11-13, 바이블 2.1절 | 표제어 #399994 |
+| 국회 | the National Assembly | 바이블 2.1절(단원제) | 표제어 |
+| 종신 대통령 | President for Life | 바이블 2.1절 | 대통령·종신 표제어 |
+| 공작령 | duchy | 바이블 2.4절(25공작령) | 표제어 없음. 정본 용어 |
+| 관악 공작, 공작 | Duke of Gwanak, Duke | 바이블 2.2절 [승인] | 결합어 |
+| 교주 | Hierophant | 바이블 2.3절 [승인] | 표제어 #35971(敎主) |
+| 메시아 | Messiah | 1장 정본 | 표제어 #115143 |
+| 세례 | baptism | 1장 정본 | 표제어 #442782(『기독교』 표시가 있으나 1장 정본이 아크의 몸 바꿈에 쓴다) |
+| 신 | God | 바이블 5절(고예진의 부름말) | 표제어 |
+| 정부, 대한민국 정부 | the Government | 바이블 2.1절 | 표제어 |
+| 자유도시, 자유도시들 | Free City, the Free Cities | 바이블 1절 13행. 묶어 부르는 이름 없음 | 결합어 |
+| 아크 | the Arc | 바이블 2.3절 | 고유 이름 |
+| 사이버웨어 | cyberware | 바이블 1절 14행 | 표제어 없음. 정본 용어 |
+| 귀환망 | the return network | 바이블 6절 직함 [승인] | 결합어 |
+| 급수계약 | the water supply contract | 바이블 1절 11행 | 결합어(급수 #399454 給水 + 계약 #390929) |
+| OMO당, 클로당 | OMO Party, Claw Party | 04장, 당 이름 확정 | 고유 이름 |
+| 대한민국 기관 이름(행정안전부, 국방부, 수도방위사령부, 국가정보원, 한국은행, 구청, 동주민센터, 주민등록 등) | the real Republic of Korea names | 소유자 2026-11-13("대한민국이랑 연결이 되어야지") | 실제 기관 이름 |
+
+## 2. 바꾸는 말
+
+모두 **바꿀 말 수: 207**(이 절의 행 수). 같은 행 안에서 여러 꼴이 함께 바뀌어도 한 행으로 센다. 과제 38 1부 2차 검토(2026-11-13)에서 더한 행은 번호를 다시 매기지 않고 이웃 행 번호에 a, b를 붙였다(10a, 49a, 49b, 195a, 195b). 행끼리 번호로 서로를 가리키므로 기존 번호는 그대로 둔다.
+
+### 2.1 셈, 돈, 식량, 에너지
+
+| # | 용어 | 쓰인 곳 | 상태 | 바꿀 말 | English (now → new) | 사전 근거 |
 |---|---|---|---|---|---|---|
-| 1 | 섬유당 | 01 5.3, 03, 04~06 | 조어 | 섬유소 당화액(줄여 당화액). 효모와 함께 말할 때 "당화액과 효모" | fibre-sugar → cellulose hydrolysate (sugar from cellulose) | 섬유소·효모 표제어. 당화(糖化)는 화학 전문어 |
-| 2 | 빛밭 | 01 2.3·5.3, 02~06 | 조어 | 온실 | light-field → greenhouse | 온실 표제어 |
-| 3 | 곁집 | 01 2.4·7.3·8.3, 06, 07 | 표제어(뜻 어긋남: 이웃하여 붙어 있는 집) | 측근 가문 | Near House → close house (house close to the Hierophant) | 측근(側近), 가문 표제어 |
-| 4 | 곁집장 | 01 8.3, 06, 07 | 결합어(3번에 기댐) | 가문 수장(바이블 Q23·Q25 기본값 "아크 가문 수장"과 같다) | Head of the Near House → house head | 가문, 수장 표제어 |
-| 5 | 네 곁집 자리 | 01 8.3 | 조어 | 가문 수장 회의 | Seat of the Four Near Houses → council of house heads | 결합 |
-| 6 | 계약회 | 01 2.4·7.2, 05 4절 | 조어 | 협의회(정례가 아니면 회담) | contract meeting → council / talks | 협의회, 회담 표제어 |
-| 7 | 자리주인 | 01 8.2, 05 | 조어 | 주최자 | Host → host (그대로) | 주최자 표제어 |
-| 8 | 대주 | 01 7.2, 05 2.1 | 표제어(뜻 어긋남: 무속의 집주인 등) | 대표 | head of a bench house → representative | 대표 표제어 |
-| 9 | 대주회 | 05 2.1, 바이블 9.4 | 조어 | 대표 회의 | masters' meeting → meeting of representatives | 결합 |
-| 10 | 도장 집안 | 05 2.1~2.2, 바이블 9.4 | 결합어(이름으로 굳힌 어색한 결합) | 지분 가문 | seal house → shareholding house | 지분(持分), 가문 표제어 |
-| 11 | 이름값 | 05 2.1, 바이블 9.4 | 표제어(뜻 어긋남: 명성에 걸맞은 행동) | 공적 점수 | name-worth → merit score | 공적(功績) 표제어 |
-| 12 | 화덕 킬로 | 05 2.1, 바이블 9.4 | 조어 | 난방 기여 전력량(킬로와트시) | hearth kilos → heating contribution (kWh) | 결합. 킬로와트시는 단위 |
-| 13 | 킬로(값 단위) | 03 11.2, 05 6절 | 표제어(뜻 어긋남: 사전의 "킬로"는 킬로그램·킬로미터의 준말) | 킬로와트시 | kilo → kilowatt-hour (kWh) | 단위 |
-| 14 | 손시간 | 03 11.2 | 조어 | 작업 시간(1인 1시간분) | hand-hour → labour hour | 작업, 시간 표제어 |
-| 15 | 사람날 | 03 11.4 | 조어(설계 단위) | 1인 1일분. 합계는 연인원 | person-day → person-day (그대로) | 연인원(延人員) 표제어 |
-| 16 | 끼 | 03 11.1, 04 | 표제어 | 그대로 | meal ration → meal (그대로) | 끼 표제어 |
-| 17 | 찬 꾸러미 | 05 6.3, 03 11.2 | 결합어(이름으로 굳힌 결합) | 충전된 전지 꾸러미 | full pack → charged battery pack | 꾸러미, 전지 표제어 |
-| 18 | 보증표 | 05 6.3, 03 11.2 | 조어 | 전력 어음 | guarantee slip → power note | 어음 표제어(경제) |
-| 19 | 셈판 | 05 4.2·6.2 | 표제어(뜻 어긋남: 어떤 일의 원인이나 형편) | 거래 장부 | tally board → trade ledger | 거래, 장부 표제어 |
-| 20 | 바꿈터 | 06 8.6 | 조어 | 교환소 | exchange post → exchange (그대로 뜻) | 교환소 표제어 |
-| 21 | 말줄 | 03 6.3 | 조어 | 유선 통신 선로 | talk-line → wired communication line | 결합 |
-| 22 | 동력 덩이 | 01 5.1, 02 6.3, 03 | 조어 | 동력원. 실물을 가릴 때 원자력 전지(동위원소 열원) 또는 전지 팩 | power core → power source; radioisotope battery; battery pack | 동력원(動力源) 표제어, 원자력전지 표제어 |
-| 23 | 녹은 주머니 | 01 3.1, 02 2절 | 조어 | 녹은 땅(설계어로는 비동결 구역) | thaw pocket → unfrozen ground (design term: talik) | 결합. 영구 동토의 비동결층은 지질학 용어(talik) |
-| 24 | 동결선 | 01 3.1 | 표제어(『지구』 겨울철에 어는 땅의 최대 깊이) | 그대로 | frost line (그대로) | 표제어 |
-| 25 | 긴 낮 철 / 긴 밤 철 | 01 3.2, 07 13절 | 결합어(이름으로 굳힌 결합) | 하절기 / 동절기 | long-day season / long-night season → summer half / winter half | 하절기, 동절기 표제어 |
-| 26 | 겨울의 톱니 | 01 3.7, 07 13절, 11 2.4 | 조어(설계어) | 래칫(설계 문서 안에서만). 세계 본문에는 쓰지 않는다 | ratchet of winter → winter ratchet | 래칫 표제어(『기계』) |
-| 27 | 열네 도장 | 01 2.4, 04 3절 | 조어 | 열네 명의 날인 | fourteen seals → fourteen signatures | 날인 표제어 |
-| 28 | 대물림 의석 | 01 2.4, 04 | 결합어 | 세습 의석 | inherited seat → hereditary seat | 세습 표제어 |
-| 29 | 등재민 | 01 2.4, 04, 07 | 조어 | 등록 주민 | registered person → registered resident | 주민등록 제도어 |
-| 30 | 장부 밖 | 01 2.2, 04 | 결합어 | 공문에서는 미등록 지역·미등록자. 입말 "장부 밖"은 뜻이 투명하므로 둔다 | off the ledger → unregistered | 결합 |
-| 31 | 말소 | 01 2.4, 04 | 표제어 | 그대로 | struck off (그대로) | 말소(抹消) |
-| 32 | 앞마당 | 02 1절 | 표제어(뜻 어긋남: 집채 앞의 뜰) | 완충 지대 | forecourt → buffer zone | 완충지대 표제어 |
-| 33 | 테두리 | 01 6.3, 02 6.6·7절 | 표제어(비유로 넓힌 뜻) | 봉쇄선(띠 전체는 봉쇄 지대) | the rim → blockade line / blockade zone | 봉쇄선 표제어 |
-| 34 | 테두리꾼 | 02 G10 | 조어 | 월경자 | rim-runner → border crosser | 월경자 표제어 |
-| 35 | 막이둑 | 02 G26 | 조어 | 방벽 | barrier bank → barrier wall | 방벽 표제어 |
-| 36 | 바람틀 | 01 5.1, 03, 05 | 조어 | 풍력 발전기(입말 풍차) | wind frame → wind turbine | 풍력발전기, 풍차 표제어 |
-| 37 | 땅속 열 펌프 | 01 5.1, 03 | 결합어 | 지열 열펌프 | ground heat pump → ground-source heat pump | 열펌프 표제어(『화학』) |
-| 38 | 얼음 밑 물살 수차 | 01 5.1 | 결합어 | 소수력 발전기 | under-ice water wheel → small hydro turbine | 에너지 분야 기술어 |
-| 39 | 메탄 통 | 01 5.5 | 결합어 | 메탄 소화조 | methane vat → anaerobic digester | 소화조 표제어(『건설』) |
-| 40 | 깨끗한 방 | 03 9절 | 결합어 | 클린룸 | clean room (그대로) | 클린룸 표제어 |
-| 41 | 낱칸 | 03 1절 | 조어 | 셀(전지 셀) | cell (그대로) | 셀 표제어 |
-| 42 | 회로판 | 03 1절 | 조어 | 회로 기판 | circuit board (그대로) | 전자 분야 기술어 |
-| 43 | 검은약 탄 | 03 5.2 | 조어 | 흑색 화약 탄 | black-powder round (그대로) | 흑색화약 표제어 |
-| 44 | 다시 채운 탄 | 03 5.2 | 결합어 | 재조립 탄 | reloaded round (그대로) | 탄약 분야 기술어(리로딩) |
-| 45 | 판공 | 03 10.1 | 조어 | 회로 기판 수리공 | board-smith → circuit board repairer | 결합 |
-| 46 | 맞춤이 | 03 10.1 | 조어 | 이식 정비사 | fitter → implant technician | 결합 |
-| 47 | 작업대(조직) | 05 5절, 01 7.2 | 표제어(뜻 어긋남: 일하는 대) | 공방 | bench → workshop | 공방(工房) 표제어 |
-| 48 | 작업조 | 03, 05 5.3 | 결합어 | 작업반 | work crew → work team | 작업반 표제어 |
-| 49 | 지킴 몫 | 05 11.1, 07 12.2 | 조어 | 경비 분담 | guard share → guard duty quota | 결합 |
-| 50 | 역반장 | 01 8.2 | 결합어 | 역 반장(띄어 씀) | Station Foreman (그대로) | 반장 표제어 |
-| 51 | 구간장 | 01 8.2 | 결합어(접미사 -장) | 그대로 | Section Chief (그대로) | 파생 |
-| 52 | 정비장 | 01 8.3, 06 | 결합어 | 정비 반장 | Bench Keeper → maintenance foreman | 정비, 반장 표제어 |
-| 53 | 대피소장 | 01 8.3, 06 | 결합어 | 그대로 | Shelter Head (그대로) | 파생 |
-| 54 | 나루지기 | 01 8.2, 05 3.6 | 표제어(나루터를 지키는 사람) | 그대로 | Ferry Keeper (그대로) | 표제어 |
-| 55 | 바람지기 | 01 8.2, 05 3.1 | 조어 | 풍력 단지장 | Wind Keeper → wind farm chief | 결합 |
-| 56 | 경계장 | 01 8.2, 05 3.5 | 결합어(뜻이 모호하다) | 경비대장 | Edge Warden → guard commander | 결합 |
-| 57 | 기지장 | 01 8.2, 05 3.2 | 결합어 | 차량 기지장 | Depot Master (그대로) | 파생 |
-| 58 | 장주 | 01 8.2, 05 3.3 | 표제어(뜻 어긋남: 사전의 장주는 匠主, 帳主 등) | 상인회장 | Market Master → head of the traders' association | 상인, 회장 표제어 |
-| 59 | 공장장 | 01 8.2, 05 3.4 | 표제어 | 그대로 | Works Master → plant manager | 표제어 |
-| 60 | 하루 충전 | 03 11.3, 06 8.2 | 결합어 | 하루 충전량 | daily charge (그대로) | 결합 |
-| 61 | 정비 차례 | 03 11.3, 06 8.2 | 결합어 | 정비 순번 | maintenance turn (그대로) | 순번 표제어 |
-| 62 | 꺼진 사람 | 06 5.5, 02 G11 | 조어 | 이탈자 | gone-dark → defector / dropout | 이탈자 표제어 |
-| 63 | 정비 틈 | 06 9.1 | 조어 | 트임 | fitting slit → slit (그대로 뜻) | 트임 표제어 |
-| 64 | 정비 밥 | 06 10.3 | 조어 | 풍습을 이름 없이 풀어 쓴다("세례 뒤 앓는 사람에게 정비공 집안이 먼저 떠 먹이는 밥") | maintenance meal → described, not named | 결합 |
-| 65 | 눈 묘역 | 04 13.4 | 결합어 | 공동묘지 | snow cemetery → common cemetery | 공동묘지 표제어 |
-| 66 | 세례록 | 바이블 Q13, 06 5.4 | 조어(제안 단계) | 세례 명부 | Baptismal Roll → baptism register | 명부 표제어 |
-| 67 | 말지기 | 06 2.2·12.4, 07 | 표제어(뜻 어긋남: "마지기"의 잘못) | 대변인 | Word Keeper → spokesperson | 대변인 표제어 |
-| 68 | 들버섯 | 02 2절 | 표제어 | 그대로 | wild mushroom (그대로) | 표제어 |
-| 69 | 수용력 | 01 4절 | 표제어 | 그대로 | capacity (그대로) | 표제어 |
-| 70 | 되뇌미 | 02 G24 | 조어 | 확성기(경고 방송 장치) | Repeater → loudspeaker | 확성기 표제어. 과제 34(11장 5.2절 15번) |
-| 71 | 바깥 기계와 서울 안 기계의 입말 이름(외눈탑, 굴막이, 그르렁이, 땅두드리기, 철공룡, 집게팔, 돌봄바퀴, 철골거미, 등불개미) | 02 6절 | 조어 | 11장 5.2절의 지금 쓰는 이름(귀환 무인 차량, 무인 경계 초소, 봉쇄 감시망, 군집 드론, 공장 사람 꼴 로봇, 선로 점검 로봇, 서비스 로봇 등) | folk names → plain machine names | 과제 34 |
-| 72 | 불가사리, 도깨비불, 빈수레, 우두커니 | 02 6절 | 표제어(비유) | 도깨비불은 군집 드론의 입말로 써도 된다. 나머지는 과제 34의 판단 | as is / task 34 | 표제어 |
+| 1 | 섬유당 | 01 5.3, 03~07, D, Pa | 조어 | 당화액. 효모와 함께 말할 때 "당화액과 효모" | fibre sugar → cellulosic sugar (hydrolysate) | 당화(糖化) #408763 『생명』, 셀룰로스 #181573. 당화액은 양조·바이오 공정의 기술어 |
+| 2 | 섬유당 통 | 05, D, Pa | 조어 | 당화 탱크 | fibre-sugar vat → saccharification tank | 탱크 #492541 |
+| 3 | 빛밭 | 01 2.3·5.3, 02~07, 11, D, Pa | 조어 | 온실 | light-field → greenhouse | 온실 #462232 |
+| 4 | 빛밭 경작 | Pa | 조어 | 온실 경작 | light-field farming → greenhouse farming | 온실 #462232 |
+| 5 | 화덕 킬로 | 05 2.1, 09, D | 조어 | 난방 기여분(킬로와트시로 센다) | hearth kilos → heating contribution (in kWh) | 킬로와트시 #346373. "기여분"은 기여 + -분 결합 |
+| 6 | 킬로(값 단위) | 03 11.2, 05 6절, D | 뜻 어긋남(사전의 킬로는 킬로그램·킬로미터의 준말) | 킬로와트시 | kilo → kilowatt-hour (kWh) | 킬로 #345251, 킬로와트시 #346373 |
+| 7 | 손시간 | 03 11.2, 05, D | 조어 | 노동 시간(1인 1시간분) | hand-hour → labour hour | 노동 시간 표제어 |
+| 8 | 사람날 | 03 11.4, 05, D | 조어 | 1인 1일분. 합계는 연인원 | person-day → person-day | 연인원 #462700 |
+| 9 | 찬 꾸러미 | 03 11.2, 05 6.3, D | 결합어(이름으로 굳힘) | 충전된 전지 팩 | full pack → charged battery pack | 전지(電池) #478972. 전지 팩은 전기 분야 기술어 |
+| 10 | 꾸러미 맞바꿈 | 05 6절 | 결합어 | 전지 팩 교환 | pack swap → battery pack exchange | 전지 #478972 |
+| 10a | 전지 꾸러미, 되살린 꾸러미, 되살린 전지 꾸러미, 꾸러미(전지를 가리킬 때. "새 꾸러미로 묶는다" 등) | 03 1절 표·2.3·4.3 표·11절 표, 05 6.3·14절, D, Pa, Pf, Pg, S(030, 090, 110) | 결합어(꾸러미 #404344는 "꾸리어 싼 물건"이라 전지 묶음의 기술어가 아니다) | 전지 팩, 재생 전지 팩. 9·10번과 같은 말로 맞춘다 | battery bundle, revived bundle → battery pack, reconditioned battery pack | 전지 #478972, 재생(再生) #473876. 전지 팩은 전기 분야 기술어 |
+| 11 | 보증표 | 03 11.2, 05 6.3, D | 조어 | 교환권(작업장이 찍어 내는 쇠붙이 교환권) | surety tag → voucher | 교환권 #35136 『경제』(무기명 유가 증권) |
+| 12 | 보증표 끈 | 05 | 조어 | 교환권 끈 | surety-tag string → voucher string | 교환권 #35136 |
+| 13 | 보증판(의 수) | 05 2.2, D | 조어 | 보증 건수 | surety boards → number of guarantees | 보증 표제어 |
+| 14 | 셈판 | 05 4.2·6.2, 07, D, Pf | 뜻 어긋남(#518568 "원인이나 형편", #190243 수판) | 시세표(장터가 날마다 붙이는 값 표) | rate board → price board | 시세표 #205145 『경제』 |
+| 15 | 셈판 기록 | Pa, Pf | 뜻 어긋남 | 아크: 회계 장부 기록. 자유도시: 시세표 기록 | tally keeping → bookkeeping / price-board keeping | 회계원 #380042, 시세표 #205145 |
+| 16 | 바꿈터 | 06 8.6, Pa | 조어 | 교환소 | exchange post → exchange | 교환소 #35766 |
+| 17 | 빈 통 | 05 10.2, D | 결합어(이름으로 굳힘) | 구호 통 | empty vat → relief pot | 구호(救護) #37857 |
+| 18 | 바침 | 06 8.4, 07, 09 | 조어(동사의 명사형을 이름으로) | 헌납 | offering → contribution | 헌납 #505120 |
+| 19 | 하루 충전 | 03 11.3, 06 8.2, D | 결합어 | 하루 충전량 | day charge → daily charge allowance | 결합 |
+| 20 | 정비 차례 | 03 11.3, 06 8.2, D, Pa | 결합어 | 정비 순번 | maintenance turn → maintenance queue place | 순번 #189785 |
+| 21 | 동력 덩이 | 01 5.1, 02 6.3, 03, 11, D, Pa, Pf | 조어 | 동력원. 실물을 가리면 원자력 전지(동위원소 열원) 또는 전지 팩 | power core → power source; radioisotope battery; battery pack | 동력원 #88352, 원자력 전지 #465418 |
+| 22 | 동력 덩이 채집, 동력 덩이 캐는 사람 | Pa, Pf | 조어 | 동력원 회수, 동력원 회수 일꾼 | power-core gathering → power-source salvage; salvager | 동력원 #88352, 일꾼 #473591 |
+| 23 | 섬유 캐기, 섬유 캐는 사람, 섬유 채집꾼 | 01, 04, 07, D, Pa, Pg, S | 결합어 / 채집꾼은 표제어 없음 | 섬유 채집, 섬유 채집 일꾼 | fibre digging → fibre salvage; fibre salvager | 섬유 #448773, 채집 표제어 |
+| 24 | 바람틀 | 01 5.1, 03, 05, 07, D, U1 | 조어 | 풍력 발전기(입말 풍차) | wind frame → wind turbine | 풍력 발전기 #357944, 풍차 #360733 |
+| 25 | 바람틀 밭, 바람밭 | 01 8.2, 05, 07, D(Free-City-Society, Offices-and-Ranks, Oral-Stories, World-Expansion-Index), Pf, S(030, 090, 110, 120) | 조어(바람밭은 표제어 없음) | 풍력 발전 단지 | wind-frame field, wind field → wind farm | 풍력 발전 #357943 『전기·전자』, 단지(團地) #413639 |
+| 26 | 땅속 열 펌프, 열 펌프 | 01 5.1, 03, Pa | 결합어(띄어쓰기 틀림) | 지열 열펌프, 열펌프 | ground heat pump → ground-source heat pump | 열펌프 #237470 『화학』, 지열 #485898 |
+| 27 | 얼음 밑 물살 수차 | 01 5.1 | 결합어 | 소수력 발전기(입말 수차) | under-ice water wheel → small hydro turbine | 소수력 발전 #447611, 수차 #200128 |
+| 28 | 메탄 통 | 01 5.5 | 결합어 | 혐기성 소화조 | methane vat → anaerobic digester | 소화조 #194077 『건설』, 메탄 #115827 |
 
-## 승인 용어(바꾸지 않는다)
+### 2.2 땅, 겨울, 경계
 
-| 용어 | 상태 | 비고 |
-|---|---|---|
-| 대정전, 최초의 AI | 바이블 1절 [승인] | 대정전은 사전에 없지만 1장 정본 용어다 |
-| 국회의원, 대통령(종신), 국회 | [승인], 대한민국 제도어 | |
-| 공작령, 관악 공작 | [승인] | 공작령은 사전에 없다(검색 0건). 승인 용어이므로 둔다 |
-| 교주, 메시아, 세례 | [승인] 1장 정본 용어 | 세례는 사전에서 『기독교』 표시가 있으나 1장 정본이 아크의 몸 바꿈에 쓴다 |
-| 사이버웨어 | 바이블 1절 14행 | |
-| 귀환망 | 바이블 6절 직함 [승인] | |
-| 급수계약 | 바이블 1절 11행 | 결합어. 뜻이 투명하다 |
+| # | 용어 | 쓰인 곳 | 상태 | 바꿀 말 | English (now → new) | 사전 근거 |
+|---|---|---|---|---|---|---|
+| 29 | 녹은 주머니 | 01 3.1, 02 2절, D | 조어 | 녹은 땅(설계 문서에서는 "비동결층") | thaw pocket → unfrozen ground (design: talik) | 영구 동토 #236910, 활동층 #386146 『지구』. 비동결층은 결합어(비(非)- + 동결 #414712 + 층 #490427)이며 표제어도, 확인된 기술어도 아니다. 영구 동토 문헌의 외래어 탈릭(탈리크)은 사전에 없으므로 설계 문서에서만 괄호로 덧붙인다 |
+| 30 | 긴 낮 철 / 긴 밤 철, 해가 긴 철 / 해가 짧은 철, 낮이 긴 철 / 낮이 짧은 철, 철(시기 이름으로 쓴 홑낱말. 07 12.6절 "철.", 08 "철(긴 낮 철, 긴 밤 철)로 말한다") | 01 3.1(82행)·3.2, 05, 07 12.6·13절, 08, 11(132·398행), D, Pf, S | 결합어(이름으로 굳힘. "철"(#324862)은 "일 년을 구분한 것", 곧 계절을 뜻한다) | 낮이 긴 때 / 밤이 긴 때. 홑낱말 "철"은 "때"로 쓴다. 권위 기준인 11장의 "낮이 긴 철 / 낮이 짧은 철"도 3부에서 같은 말로 바꾼다 | long-light half / long-dark half (and the other 철 forms) → long-daylight half / short-daylight half; bare 철 → the half | 낮, 밤, 때 #98401 표제어, 철 #324862. 바이블 Q16과 11장 B안(8월 약 -4°C)은 여름 없는 영원한 겨울이므로 계절 이름(하절기 #515336 "여름철 기간", 동절기 #515334)을 쓰지 않는다 |
+| 31 | 겨울의 톱니 | 01 3.7, 07 13절, 11 2.4, D | 조어(설계어) | 설계 문서: 래칫. 세계 본문: "겨울이 한 칸 조인다"처럼 풀어 쓰고 이름을 붙이지 않는다 | the winter ratchet → (design) ratchet; (world) described | 래칫 #100792 『기계』, 톱니 #349651 |
+| 32 | 출입구 굴, 눈 굴 | 01, 06, D, Pa | 조어 | 출입구 수직갱 | entrance shaft (keep English) | 수직갱 #198942 『광업』 |
+| 33 | 눈 굴 지기(직업) | Pa | 조어 | 출입구 경비 | snow-shaft keeping → entrance guard duty | 경비원 #392476 |
+| 34 | 배기 굴 | 02, D | 조어 | 배기구 | exhaust shaft → exhaust vent | 배기구 #134564 |
+| 35 | 강 밑 터널 | D(용어 사전) | 결합어 | 하저 터널 | under-river tunnel → under-river tunnel | 하저(河底) #500610. 하저 터널은 토목 기술어 |
+| 36 | 앞마당 | 02 1절·7절, D | 뜻 어긋남(#453830 집채 앞의 뜰) | 완충 지대 | forecourt → buffer zone | 완충 지대 #242895 |
+| 37 | 테두리 | 01 6.3, 02 6.6·7절, 05, 07, D, U0 | 뜻 어긋남(#496805 둘러 친 줄이나 장식) | 봉쇄선(띠 전체는 봉쇄 지대) | the rim → blockade line / blockade zone | 봉쇄선 #151596, 봉쇄 #432394 |
+| 38 | 띠, 띠 너머 | 02, D | 뜻 어긋남(비유) | 봉쇄 지대, 봉쇄 지대 너머 | the belt, beyond the belt → blockade zone, beyond the blockade | 봉쇄 #432394 |
+| 39 | 테두리 정찰, 테두리 망꾼 | Pa, Pf | 뜻 어긋남(37번) | 봉쇄선 정찰, 봉쇄선 망꾼 | rim scouting / rim watcher → blockade scouting / blockade lookout | 봉쇄선 #151596, 망꾼 #109427 |
+| 40 | 테두리꾼 | 02 G10, 08, D | 조어 | 월경자 | rim-runner → border crosser | 월경자 #259251 |
+| 41 | 막이둑 | 02 G26, D | 조어 | 방벽 | barrier bank → barrier wall | 방벽 #135176 |
+| 42 | 장부 밖(공문) | 01 2.2·2.4, 04, D | 결합어 | 공문: 미등록 지역, 미등록자. 입말 "장부 밖", "강 건너"는 뜻이 투명하므로 둔다 | off the ledger → unregistered (area / person) | 미등록 #535054 |
+| 43 | 본역 | 06 2절, 07, D | 조어 | 거점 역 | home station → seat station | 거점 #13629 |
+| 44 | 눈 묘역 | 04 13.4, D | 결합어 | 공동묘지 | snow cemetery → common cemetery | 공동묘지 #394728 |
 
-## 과제 38에 넘길 것
+### 2.3 기술, 무기, 기계
 
-1. 01~10장, 위키 원고와 030, 인물 입력과 데이터, 병종 130~132, GDD, 쇼케이스에서 낱말을 모두 뽑아 이 표를 넓힌다.
-2. 소유자 검토 뒤 한 번에 적용한다. 칭호(3, 4, 50~59번)는 칭호 사다리(01-core 8절)와 인물 데이터를 함께 바꾼다.
-3. 영어 열은 지금 쓰는 영어 직업어와 기술어로 맞춘다(01-core 2.3절 6항).
+| # | 용어 | 쓰인 곳 | 상태 | 바꿀 말 | English (now → new) | 사전 근거 |
+|---|---|---|---|---|---|---|
+| 45 | 말줄 | 03 6.3, U0 | 조어 | 유선 통신선 | talk-line → wired communication line | 통신선 #349667 『정보·통신』, 유선 #251369 |
+| 46 | 깨끗한 방 | 03 9절 | 결합어 | 클린 룸 | clean room (keep) | 클린 룸 #497597 『기계』 |
+| 47 | 낱칸 | 03 1절 | 조어 | 셀(전지 셀) | cell (keep) | 전지 셀은 전기 분야 기술어 |
+| 48 | 회로판 | 03 1절 | 조어(표제어 없음) | 기판(회로 기판) | circuit board (keep) | 기판(基板) #51294 『전기·전자』 |
+| 49 | 검은약 탄 | 03 5.2 | 조어 | 흑색 화약 탄 | black-powder round (keep) | 흑색 화약 #508120 |
+| 49a | 검은 화약(홑으로 쓴 꼴) | 03(4곳), 05, D(5곳), S(030, 131) | 결합어(표제어 "흑색 화약"이 따로 있다) | 흑색 화약 | black powder (keep) | 흑색 화약 #508120 |
+| 49b | 줄 드론 | 03(굵은 제목 "줄 드론." 포함 2곳), D(2곳), S(030) | 결합어("줄"이 유선을 뜻하는지 드러나지 않는다) | 유선 드론 | wire drone → tethered drone (wire-guided drone when it carries a strike charge) | 유선(有線) #251369, 광섬유 #396227. 드론은 법령 용어 |
+| 50 | 사람 꼴 로봇, 공장 사람 꼴 로봇 | 11 5.2~5.3 | 결합어(어색) | 휴머노이드 로봇(공장 휴머노이드 로봇) | humanoid robot (keep) | 사전 표제어 없음. 산업계·정부 사업명에서 쓰는 현행 기술어 |
+| 51 | 외눈탑 | 02 6절, D(G17) | 조어 | 감시탑(봉쇄 감시망의 한 부분. 붙여 쓴다) | One-Eye Tower → watchtower | 감시탑 #391235(監視塔). 11장 5.3절 표(397행)의 띄어 쓴 "감시 탑"은 과제 38 1부 검토에서 "감시탑"으로 고쳤다 |
+| 52 | 땅두드리기 | 02 6절, D(G21) | 조어 | 땅속 진동 감지기(봉쇄 감시망의 한 부분) | Ground Knocker → buried seismic sensor | 진동(振動) #485462, 감지기 #8680 『물리』 |
+| 53 | 되뇌미 | 02 G24, D | 조어 | 확성기(경고 방송 장치, 봉쇄 감시망의 한 부분) | Repeater → loudspeaker | 확성기 #380153 |
+| 54 | 그르렁이 | 02 6절, D(G19) | 조어 | 귀환 무인 차량 | Growler → returning unmanned ground vehicle | 무인기 #123272 『군사』, 무인 차량은 군사 기술어 |
+| 55 | 우두커니 | 02 6절, D(G23) | 표제어(#461669, 부사)를 이름으로 씀 | 무인 경계 초소 | Stander → unmanned sentry post | 우두커니 #461669 |
+| 56 | 도깨비불(기계) | 02 6절, D(G22) | 표제어(비유) | 군집 드론. 입말 "도깨비불"은 11장 5.2절대로 써도 된다 | Will-o'-the-wisp → drone swarm | 도깨비불 #411547, 군집 #401912. 드론은 법령 용어(「드론 활용의 촉진 및 기반조성에 관한 법률」) |
+| 57 | 굴막이, 불다리열차 | 02 6절, 03, 08, D(G18) | 조어 | 선로 무장 차량(11장 5.2절에 따라 도감에서 지운다) | Tunnel Plug → armed rail vehicle (retired) | 궤도차 #42933 |
+| 58 | 불가사리(기계) | 02 6절, D(G20) | 표제어(#152251 전설의 쇠 먹는 짐승)를 이름으로 씀 | 수리 기계(오페라로만 남기거나 지운다) | Bulgasari → repair machine (retired) | 불가사리 #152251 |
+| 59 | 철공룡 | 02 6절, D(G26) | 조어 | 자율 건설 기계(도감 밖, 03장) | Iron Dinosaur → autonomous construction machine | 결합 |
+| 60 | 집게팔 | 02 6절, D(G13) | 조어 | 물류 로봇 팔(공장 휴머노이드 로봇 항목의 장소 변형) | Pincer Arm → logistics robot arm | 결합 |
+| 61 | 빈수레 | 02 6절, D(G14) | 조어(속담 "빈 수레가 요란하다"의 말을 이름으로) | 선로 점검 로봇 | Empty Cart → track inspection robot | 선로 #444996 『교통』 |
+| 62 | 돌봄바퀴 | 02 6절, D(G15) | 조어 | 서비스 로봇 | Care Wheel → service robot | 결합 |
+| 63 | 철골거미 | 02 6절, D(G16) | 조어 | 공사 로봇(공장 휴머노이드 로봇 항목에 합침) | Girder Spider → construction robot | 결합 |
+| 64 | 등불개미 | 02 6절, D(G25) | 조어 | 케이블 점검 로봇(선로 점검 로봇에 합침) | Lantern Ant → cable inspection robot | 공동구 #397325 『건설』 |
+| 65 | 잠든 기계 | 02, D | 결합어 | 휴면 기계 | sleeping machine → dormant machine | 휴면 #507340 |
+| 66 | 증표꾼 | 02, 08, D | 조어 | 증표 위조꾼 | token-forger → coupon forger | 위조꾼 #257922 |
 
-(잠정 T33-36)
+### 2.4 정부의 칭호와 직업
+
+| # | 용어 | 쓰인 곳 | 상태 | 바꿀 말 | English (now → new) | 사전 근거 |
+|---|---|---|---|---|---|---|
+| 67 | 등재민 | 01 2.4, 04, 07, D, Pg(193명) | 조어 | 등록 주민 | the registered → registered resident | 주민 #482652, 등재(登載) #95244 |
+| 68 | 말소자, 지워진 사람 | 02, 04, D | 결합어 / 비유 | 말소자로 통일(말소 + -자) | the struck-off → struck-off person | 말소 #112210 |
+| 69 | 열네 도장 | 01 2.4, 04 3절, D | 조어 | 열네 명의 날인 | the fourteen seals → the fourteen seal impressions | 날인 #409574(도장을 찍음). 01-core 2.4절 "국회의원 열넷이 후보의 이름 아래 도장을 찍는다"와 맞춘다 |
+| 70 | 대물림 의석 | 01 2.4, 04, D | 결합어 | 세습 의석 | inherited seat → hereditary seat | 세습 #194342, 의석 #267918 |
+| 71 | 의석을 물린다 | 01, 04, 09, D | 결합어 | 의석을 세습한다 | hand down the seat → pass the seat by inheritance | 세습 #194342 |
+| 72 | 등재 증표 | 04, D, U0 | 결합어 | 주민등록증 | registry token → resident registration card | 주민등록증 #482654 『법률』 |
+| 73 | 배급 증표 | 04, D | 결합어 | 배급표 | ration token → ration coupon | 배급표 #137838 |
+| 74 | 초청 증표 | D(용어 사전) | 결합어 | 초청장 | invitation coupon → letter of invitation | 초청장 #486403 |
+| 75 | 취수구지기 | 06, 07, Pa, Pf, Pg | 조어(-지기) | 취수구 관리인 | intake keeper → water intake keeper | 관리인 #32496 |
+| 76 | 고물 채집꾼, 고물꾼 | 04, 06, 07, D, Pa, Pg, S | 조어(표제어 없음) | 넝마주이 | scrap gatherer → scavenger | 넝마주이 #63907 |
+| 77 | 행정안전부 주민등록 원부 필사관 | Pg | 조어(필사관) | 행정안전부 주민등록 원부 필경사 | registry ledger copyist (keep) | 필경사 #363096, 원부 #254295 |
+| 78 | 공동 위임 교섭자 | Pg | 결합어(교섭자 표제어 없음) | 공동 위임 교섭 담당자 | joint mandated negotiator (keep) | 교섭 #398901, 담당자 #76513 |
+| 79 | 보건 일꾼 | Pg(역할) | 결합어 | 보건 요원 | health worker (keep) | 요원 #459904 |
+| 80 | 국회의원 근위청 | U0 | 결합어(근위대는 『역사』 임금의 호위) | 국회의원 호위대 본부 | Assembly Member's Guard Hall → Assembly Member's Guard Headquarters | 근위대 #398825, 호위대 #507983 『군사』, 본부 #433945 |
+| 81 | 국회의원 근위 수행대 | U0 | 결합어 | 국회의원 호위 수행대 | Sworn Retinue → Assembly Member's Escort Detail | 호위대 #507983, 수행원 #450275 |
+| 82 | 근위청 방패열 | U0 | 결합어 | 호위대 방패 대열 | Guard Hall Shield Line → Guard Shield Line | 대열 #408593, 방패 #429499 |
+| 83 | 징발 장부소 | U0 | 조어 | 병무 사무소 | Levy Register Office → Military Manpower Office | 병무 #147813 |
+| 84 | 장부 연병장 | U0 | 결합어 | 연병장 | Ledger Drill Yard → drill ground | 연병장 #458086 『군사』 |
+| 85 | 예비군 몽둥이줄 | U0 | 조어 | 예비군 곤봉 대열 | Reserve Club Lines (keep) | 곤봉 #395399, 대열 #408593 |
+| 86 | 검문소 방패열 | U0 | 결합어 | 검문소 방패 대열 | Checkpoint Shield Line (keep) | 대열 #408593 |
+| 87 | 구 부대 총검열 | U0 | 결합어(열병의 "총검열"과 헷갈림) | 구 부대 총검 대열 | District Bayonet Line (keep) | 총검 #331088, 대열 #408593 |
+| 88 | 출입구 따기조 | U0 | 조어 | 출입구 돌파조 | Exit-Breaking Squad → Entrance Breaching Squad | 돌파 표제어 |
+| 89 | 테두리 스키 정찰대 | U0 | 뜻 어긋남(37번) | 봉쇄선 스키 정찰대 | Rim Ski Scouts → Blockade Ski Scouts | 봉쇄선 #151596 |
+| 90 | 국가 포창 | U0 | 뜻 어긋남(#357385 포창 = 찬양) | 국가 병기창 | National Gun Works → National Arsenal | 병기창 #432657 『군사』 |
+| 91 | 국가 비행반 | U0 | 결합어 | 국가 비행대 | National Flight Section → National Flying Unit | 비행대 #160826 『군사』 |
+| 92 | 국가 차량고 | U0 | 결합어 | 국가 차고 | National Vehicle Depot (keep) | 차고 #483938 |
+| 93 | 차량고 복원 전차 | U0 | 결합어 | 차고에서 복원한 전차 | Depot-Revived Tank → Depot-Restored Tank | 차고 #483938 |
+| 94 | 장부 의무소 | U0 | 결합어 | 의무소 | Ledger Aid Post → aid station | 의무소 #266981 |
+
+### 2.5 자유도시들의 칭호, 직업, 제도
+
+| # | 용어 | 쓰인 곳 | 상태 | 바꿀 말 | English (now → new) | 사전 근거 |
+|---|---|---|---|---|---|---|
+| 95 | 계약회 | 01 2.4·7.2·8.2, 05 4절, D | 조어 | 협의회(정례가 아니면 회담) | contract meeting → council / talks | 협의회 #371457, 회담 #507612 |
+| 96 | 자리주인 | 01 8.2, 05, D | 조어 | 주최자 | Host → host | 주최자 #307793 |
+| 97 | 대주 | 01 7.2, 05 2.1, D, Pf(17명) | 뜻 어긋남(#81979 『민속』 굿하는 집의 바깥주인) | 대표 | bench-house head → representative | 대표 #409168 |
+| 98 | 대주회 | 05 2.1, 09, D | 조어 | 대표 회의 | masters' meeting → meeting of representatives | 대표 #409168 |
+| 99 | 도장 집안 | 05 2.1~2.2, 11, D | 결합어(이름으로 굳힘) | 지분 가문 | seal house → shareholding house | 지분(持分) #483659, 가문 #1767 |
+| 100 | 이름값 | 05 2.1, 09, 11, D | 뜻 어긋남(#264593 명성에 걸맞은 행동) | 평판(수치로 센다) | name-worth → reputation (score) | 평판(評判) #498403 |
+| 101 | 바깥 자리 | 05 2.1, 09, D | 결합어 | 외부 직책 | outside post → external office | 결합 |
+| 102 | 도장 묶기, 도장을 묶는다 | 05 2.1, 09, D | 조어 | 세습 결의, 우두머리 자리를 세습하기로 결의한다 | binding the seal → hereditary resolution | 세습 #194342, 결의(決議) #18200 |
+| 103 | 바람 몫 | 05 2.1, 09 | 조어 | 동점 결정(첫 바람 시간에 화덕 앞에 선 후보가 선다) | wind share → tie-break | 동점 #414489 |
+| 104 | 작업대(조직) | 01 2.2·7.2, 03 10절, 05 5절, 07, 09, D, U1 | 뜻 어긋남(#273686 일하기 편하게 만든 대) | 작업장. 씨앗의 "공방"은 사전의 뜻이 "공예품 따위를 만드는 곳"(#30457 「4」)이라 쓰지 않는다 | bench → workshop | 작업장 #278167(=일터 #265834) |
+| 105 | 모터대, 부품대, 바람대, 펌프대, 통신대, 사본대, 굴착틀대, 굴착대, 굴착 틀 대, 바퀴대, 부품을 깎는 대 | 05(굴착대 3곳, 바퀴대, 굴착 틀 대·부품을 깎는 대는 표), 07, D, Pf(굴착대 13곳, 바퀴대 4곳), U1, S(030, 050, 090, 110, 131; 굴착대 33곳, 바퀴대 5곳) | 결합어(-대를 작업장 이름으로) | 모터 작업장, 부품 작업장, 풍력 작업장, 펌프 작업장, 통신 작업장, 복사 작업장, 굴착기 작업장(굴착틀대·굴착대·굴착 틀 대 모두), 바퀴 작업장(바퀴대), 부품 작업장(부품을 깎는 대) | motor bench etc. → motor workshop, parts workshop, wind workshop, pump workshop, radio workshop, copy workshop, drill-rig workshop (all three drill forms), wheel workshop, parts workshop | 작업장 #278167, 굴착기 #40858, 바퀴 #426591 |
+| 106 | 곳간대, 어로대, 취수구대 | Pf | 결합어 | 창고반, 어로반, 취수 관리반 | storehouse bench, fishing bench, intake bench → storage team, fishing team, intake team | 작업반 #278152 |
+| 107 | 작업조 | 03, 05 5.3, 07, D, U1 | 결합어(표제어 없음) | 작업반 | work crew → work team | 작업반 #278152 |
+| 108 | 작업조장 | 07, Pf(18명) | 결합어 | 작업반장 | Crew Chief → work team leader | 작업반장 #278155 |
+| 109 | 손(신분) | 01 2.2, 05, 07, Pf(67명) | 표제어(손의 '일손' 뜻)를 신분 이름으로 씀 | 숙련공 | hand → skilled worker | 숙련공 #197778 |
+| 110 | 일손(신분) | 05, Pf(20명) | 표제어(#476458 "일하는 손")를 신분 이름으로 씀 | 일꾼 | labourer (keep) | 일꾼 #473591 |
+| 111 | 이름난 손 | 07, Pf | 결합어 | 이름난 숙련공 | renowned hand → renowned skilled worker | 숙련공 #197778 |
+| 112 | 보증 잃은 손 | 02, 05, D | 결합어 | 보증을 잃은 사람 | hand without surety → person without a guarantor | 보증 표제어 |
+| 113 | 손 계약 | 03 10.2, 05, D | 조어 | 도제 계약 | hand contract → apprenticeship contract | 도제(徒弟) #85974 |
+| 114 | 견습 | 05, Pf(9명) | 표제어이나 사전이 "→ 수습"으로 돌린다(#17443) | 수습(수습공) | apprentice (keep) | 수습 #198600, 수습공 #450023 |
+| 115 | 지킴 몫 | 05 11.1, 07 12.2, 09, D, Pf, U1 | 조어 | 경비 분담 | guard share → guard duty quota | 경비(警備) #392694 |
+| 116 | 지킴 손 | Pf(10명) | 조어 | 경비원 | guard hand → guard | 경비원 #392476 |
+| 117 | 지킴 몫의 분대장 | Pf | 조어 | 경비 분대장 | guard-share squad leader → guard squad leader | 분대장 표제어 |
+| 118 | 경계조원, 경계조 | 05, Pf | 결합어 | 경비대원, 경비대 | edge crew → guard unit member, guard unit | 경비대 #19021, 대원 #411757 |
+| 119 | 역반장 | 01 8.2, 05, 07, D, Pf(26명) | 결합어("역반" 표제어 없음) | 역 반장 | Station Foreman (keep) | 반장 #430889 |
+| 120 | 역반 운영 | Pf | 결합어 | 역 운영 | station-crew running → station operations | 결합 |
+| 121 | 바람지기 | 01 8.2, 05 3.1, D, Pf | 조어(-지기) | 발전소장 | Wind Keeper → Power Station Director | 결합(발전소 + -장) |
+| 122 | 경계장 | 01 8.2, 05 3.5, D, Pf | 결합어(뜻이 모호하다) | 경비대장 | Edge Warden → guard commander | 경비대 #19021, 대장(隊長) #80386 |
+| 123 | 장주 | 01 8.2, 05 3.3, D, Pf | 뜻 어긋남(#275790 匠主 등) | 상인회장 | Market Master → head of the merchants' association | 상인(商人) #442920, 회장 표제어 |
+| 124 | 교대장 | 05, Pf | 결합어(표제어 없음) | 교대 조장 | shift chief → shift leader | 조장(組長) #304933 |
+| 125 | 장터 집안 (사람) | 05, 07, Pf | 결합어 | 상인 가문 (사람) | market house → merchant house | 상인 #442920, 가문 #1767 |
+| 126 | 셈판 서기 | Pf | 뜻 어긋남(14번) | 시세표 서기 | tally clerk → price-board clerk | 시세표 #205145, 서기(書記) #170797 |
+| 127 | 부품 가공공 | Pf | 결합어(어색) | 부품 가공 기능공 | parts machinist (keep) | 기능공 #47722 |
+| 128 | 이을 자식 | 07, Pf | 결합어 | 후계자 | heir child → heir | 후계자 #381983 |
+| 129 | 급수 배분인 | Pf | 결합어(배분인 표제어 없음) | 급수 관리인 | water distributor → water allocation keeper | 관리인 #32496 |
+| 130 | 짐꾼 무리의 우두머리 | Pf | 결합어 | 짐꾼 반장 | head porter (keep) | 짐꾼 #309092, 반장 #430889 |
+| 131 | 환전꾼 | 05, Pf | 결합어(표제어 없음) | 환전상 | money changer (keep) | 환전상 #381092 |
+| 132 | 바람틀 정비공 | 05, Pf | 조어(24번) | 풍력 발전기 정비공 | wind-frame mechanic → wind turbine technician | 정비공 #292655 |
+| 133 | 바람틀공, 열펌프공, 수차공, 판공 | D(용어 사전) | 조어 / 판공은 뜻 어긋남(#352925 『가톨릭』 고해 성사) | 풍력 발전기 정비공, 열펌프 정비공, 수차 정비공, 기판 수리공 | wind-machine wright etc. → wind turbine technician, heat-pump technician, turbine mechanic, circuit board repairer | 정비공 #292655, 수리공 #188659 |
+| 134 | 우물공, 망공, 그물공 | D(용어 사전) | 결합어(표제어 없음) | 우물 기술자, 선로공, 그물 제작공 | well driller, lineworker, net maker (keep) | 선로공 #186389 |
+| 135 | 나무조, 나무조원, 나무조장 | 05(나무조장 2곳), D, Pf, S(030) | 결합어 | 벌목조, 벌목꾼, 벌목 반장 | wood crew, wood-crew chief → logging crew, logger, logging foreman | 벌목(伐木) #140530, 벌목꾼 #431541, 반장 #430889 |
+| 136 | 우두머리 도장방 | U1 | 뜻 어긋남(#84910 규방, #84911 도장포) | 우두머리 집무실 | City Head's Seal Room → City Head's office | 집무실 #309113 |
+| 137 | 계약 셈판(건물) | U1 | 뜻 어긋남(14번) | 계약 사무소 | Contract Tally Board → contract office | 결합 |
+| 138 | 지킴 몫 회관 | U1 | 조어(115번) | 경비대 회관 | Watch-Share Hall → guard hall | 경비대 #19021, 회관 #506232 |
+| 139 | 지킴 몫 장대조, 우두머리 직속 지킴대, 역 공기총 지킴조 | U1 | 조어(115번) | 경비대 장대조, 우두머리 직속 경비대, 역 공기총 경비조 | Watch-Share Pole Crews, Head's Own Watch, Station Air-Rifle Guards → Guard Pole Crews, Head's Own Guard, Station Air-Rifle Guards | 경비대 #19021 |
+| 140 | 궤도 수레 (습격대) | U1 | 결합어 | 궤도차 (습격대) | rail trolley (keep) | 궤도차 #42933 |
+| 141 | 궤도 정비고 | U1 | 결합어 | 궤도차 차고 | rail depot → rail vehicle shed | 차고 #483938 |
+| 142 | 관성 수레 돌격조 | U1 | 결합어 | 관성 바퀴 궤도차 돌격조 | Flywheel Trolley Shock Crews (keep) | 관성 바퀴 #32359 『물리』 |
+| 143 | 줄 정찰 드론조 | U1 | 결합어(49b번과 같은 "줄") | 유선 정찰 드론조 | Fibre Scout Drones → Tethered Scout Drones | 유선 #251369, 광섬유 #396227 |
+| 144 | 줄 레일 타격조 | U1 | 결합어 | 유선 유도 레일 타격조 | Wire-Guided Rail Strikers (keep) | 유선 #251369 |
+| 145 | 작업대 박격포조, 작업대 투하 드론조, 작업대 조립장 | U1 | 뜻 어긋남(104번) | 작업장 박격포조, 작업장 투하 드론조, 작업장 조립실 | Bench Mortar Crews etc. → Workshop Mortar Crews, Workshop Drop Drones, workshop assembly room | 작업장 #278167 |
+| 146 | 기체 작업대, 전파 작업대 | U1 | 뜻 어긋남(104번) | 드론 작업장, 무선 작업장 | Airframe Bench, Radio Bench → drone workshop, radio workshop | 무선 #121617 |
+| 147 | 장갑 전지 수레, 포 실은 장갑 수레, 장갑 수레 차고 | U1 | 결합어 | 장갑 전지 궤도차, 포 실은 장갑 궤도차, 장갑 궤도차 차고 | Armoured Battery Trolley etc. (keep) | 궤도차 #42933, 장갑차 #475334 |
+| 148 | 작업조 모임방 | U1 | 결합어 | 작업반 대기실 | Crew Room → work team ready room | 대기실 #78711 |
+| 149 | 작업조 그물반, 출입구 여는 작업조, 현장 수리 작업조 | U1 | 결합어(107번) | 작업반 그물조, 출입구 여는 작업반, 현장 수리 작업반 | Crew Net Teams etc. (keep) | 작업반 #278152 |
+| 150 | 대주 작업장 | U1 | 뜻 어긋남(97번) | 대표 작업장 | Master's Workshop → representatives' workshop | 대표 #409168 |
+| 151 | 구로 모터대 김씨네 둘째 | 05, D | 결합어(105번) | 구로 모터 작업장 김씨네 둘째 | (examples follow 105) | 작업장 #278167 |
+
+### 2.6 아크의 칭호, 직업, 제도
+
+| # | 용어 | 쓰인 곳 | 상태 | 바꿀 말 | English (now → new) | 사전 근거 |
+|---|---|---|---|---|---|---|
+| 152 | 곁집 | 01 2.4·7.3·8.3, 06, 07, 11, D, Pa, U2 | 뜻 어긋남(#20629 이웃하여 붙어 있는 집) | 측근 가문 | Near House → inner-circle house | 측근(側近) #493122, 가문 #1767 |
+| 153 | 곁집장 | 01 8.3, 06, 07, D, Pa | 결합어(152번에 기댐) | 가문 수장 | Head of the Near House → house head | 가문 #1767, 수장(首長) #452829 |
+| 154 | 네 곁집 자리 | 01 8.3, 09, D | 조어 | 가문 수장 회의 | Seat of the Four Near Houses → council of house heads | 협의회 #371457 |
+| 155 | 곁집 어른 | 06, 07, Pa | 결합어 | 가문 원로 | Near House elder → house elder | 원로(元老) #465433 |
+| 156 | 곁집원 | 06, Pa | 결합어 | 가문 구성원 | Near House member → house member | 구성원 #37355 |
+| 157 | 곁 섬김 | 01 7.3, 06, D | 조어 | 오랜 보좌 | near service → long service as aides | 보좌(補佐) #144573 |
+| 158 | 곁집 띠 | 06 9절, D | 결합어 | 가문 완장 | Near House band → house armband | 완장(腕章) #248148 |
+| 159 | 정비장 | 01 8.3, 06, 07, D, Pa(27명) | 결합어 | 정비 반장 | Bench Keeper → maintenance foreman | 반장 #430889, 정비공 #292655 |
+| 160 | 세례자 | 06, 07, D, Pa(61명) | 뜻 어긋남(#442783 『기독교』 "세례를 주는 사람") | 세례 신도 | the baptised → baptised believer | 신도(信徒) #209276, 세례 #442782. 맨 "신도"는 두 무리를 아우르는 말로 남긴다(161번) |
+| 161 | 미세례자 | 06, 07, D, Pa(137명) | 뜻 어긋남(160번에 기댐). "예비 신자"(#237360)는 『가톨릭』이라 쓰지 않는다 | 세례 전 신도. 맨 "신도"는 세례 신도와 세례 전 신도를 아우르는 말이고 어느 한쪽만 가리키지 않는다 | the unbaptised → unbaptised believer | 세례 #442782, 전(前) #477812, 신도 #209276 |
+| 162 | 세례록 | 바이블 Q13, 06 5.4, D | 조어 | 세례 명부 | Baptismal Roll → baptism register | 명부(名簿) #115410 |
+| 163 | 세례록 기록꾼 | 06, 07, Pa(12명) | 조어 | 세례 명부 기록원 | roll keeper → register clerk | 기록원 #49502 |
+| 164 | 말지기 | 06 2.2·12.4, 07, D, Pa | 뜻 어긋남(#110900 "→ 마지기") | 대변인 | Word Keeper → spokesperson | 대변인 #411795 |
+| 165 | 셈꾼 | 06, 07, D, Pa(15명) | 결합어(표제어 없음) | 회계원 | tally keeper → accountant | 회계원 #380042 |
+| 166 | 섬유당 통지기 | 06, 07, Pa(12명) | 뜻 어긋남(#348016 통지기 = 옛 부엌 종) | 당화 탱크 관리인 | fibre-sugar vat keeper → saccharification tank keeper | 관리인 #32496, 탱크 #492541 |
+| 167 | 열 펌프지기 | 06, 07, Pa(11명) | 조어(-지기) | 열펌프 정비공 | heat-pump keeper → heat-pump technician | 열펌프 #237470, 정비공 #292655 |
+| 168 | 출입구지기 | 06, 07, Pa(11명) | 조어(-지기) | 출입구 경비원 | entrance keeper → entrance guard | 경비원 #392476 |
+| 169 | 수차지기 | 06, 07, Pa | 조어(-지기) | 수차 정비공 | water-wheel keeper → turbine mechanic | 수차 #200128, 정비공 #292655 |
+| 170 | 빛밭지기 | 06, 07, Pa | 조어(-지기) | 온실 관리인 | light-field keeper → greenhouse keeper | 온실 #462232, 관리인 #32496 |
+| 171 | 버섯 굴지기, 굴지기(줄인 꼴) | 06, 07, Pa, S(050, 090) | 조어(-지기, 굴지기 표제어 없음) | 버섯 재배 일꾼 | mushroom-tunnel keeper → mushroom grower | 일꾼 #473591 |
+| 172 | 돌봄이 | 06, 07, Pa(10명) | 조어(표제어 없음) | 간병인 | carer → caregiver | 간병인 #5375 |
+| 173 | 교섭인 | 06, 07, Pa(11명) | 결합어(표제어 없음) | 교섭 담당자 | negotiator (keep) | 교섭 #398901, 담당자 #76513 |
+| 174 | 호위장 | 06, 07, Pa | 결합어(표제어 없음) | 호위대장 | guard captain (keep) | 호위대 #507983, 대장 #80386 |
+| 175 | 맞춤이 | 03 10.1, D | 조어 | 이식 정비사 | body fitter → implant technician | 정비사 #482582, 이식(移植) 표제어 |
+| 176 | 다시 맞춤 | 06 5.7, 07, D | 결합어 | 재이식 | refitting → re-implantation | 이식 표제어 |
+| 177 | 부위 수 땀 | 06 9절 | 결합어 | 부위 표시 땀 | part-count stitches → part-marking stitches | 땀 #418091(바느질 한 번 뜬 자국) |
+| 178 | 정비 틈 | 06 9.1, D | 조어 | 트임 | fitting slit → slit | 트임 #536105 |
+| 179 | 정비 밥 | 06 10.3, 07, D | 조어 | 이름 없이 풀어 쓴다("세례 뒤 앓는 사람에게 정비공 집안이 먼저 떠 먹이는 밥") | maintenance meal → described, not named | 결합 |
+| 180 | 한 솥 | 06 10.3, 07, D | 결합어 | 한솥밥 (식구) | one pot → one-pot kin | 한솥밥 #365338 |
+| 181 | 꺼진 사람 | 02 G11, 06 5.5, D | 조어 | 이탈자 | the gone-dark → defector / dropout | 이탈자 #470230 |
+| 182 | 곁집 본청 | U2 | 결합어 | 가문 본가 | Near House Hall → house seat (family seat) | 본가 #149885 |
+| 183 | 곁집장 호위대 | U2 | 결합어 | 가문 수장 호위대 | Near House Head's Guard → House Head's Guard | 호위대 #507983 |
+| 184 | 교주 호위청, 세례 호위청 | U2 | 결합어 | 교주 경호실, 세례 경호실 | Hierophant's Guard Hall → Hierophant's security office | 경호실 #516043 |
+| 185 | 세례 곁집 호위병 | U2 | 결합어(152번) | 세례 가문 호위병 | Baptised Near House Guard → Baptised House Guard | 가문 #1767 |
+| 186 | 세례 팔힘대 | U2 | 결합어(어색) | 세례 완력대 | Baptised Strong-Arm Squad (keep) | 완력(腕力) #243641 |
+| 187 | 세례 쇠뚫이대 | U2 | 조어 | 세례 철갑 파괴대 | Baptised Plate-Breakers (keep) | 철갑 #490467, 파괴 #498143 |
+| 188 | 세례 수련장 | U2 | 결합어(수련장은 #190791 『역사』 首鍊匠뿐) | 세례 훈련장 | Baptised Training Yard → Baptised training ground | 훈련장 #381069 |
+| 189 | 가문 호위 마당 | U2 | 결합어 | 가문 호위 훈련장 | House Guard Yard → house guard training ground | 훈련장 #381069 |
+| 190 | 몸 정비청 | U2 | 결합어 | 신체 정비소 | Body Maintenance Hall → body maintenance shop | 정비소 #292947 |
+| 191 | 정비대 작업방 | U2 | 결합어 | 정비대 작업실 | maintenance bench workroom (keep) | 결합 |
+
+### 2.7 설계 문서의 말(세계 본문 밖)
+
+| # | 용어 | 쓰인 곳 | 상태 | 바꿀 말 | English (now → new) | 사전 근거 |
+|---|---|---|---|---|---|---|
+| 192 | 품계 | 07 12절, 08, 09, P(설계 칸) | 뜻 어긋남(#358239 『역사』 벼슬자리 등급) | 직급 | grade (keep) | 직급 #488627 |
+| 193 | 살림 위협 | 02, D | 결합어(뜻이 모호하다) | 생활 위협 | household threat → threat to daily life | 결합 |
+| 194 | 녹은 주머니 생태 | 02, D | 조어(29번) | 비동결층 생태(결합어, 29번) | thaw-pocket ecology → talik ecology | 영구 동토 #236910 |
+| 195 | 봉인지기(옛 설계의 직책 이름) | 01 10절, 06 | 조어(-지기, 표제어 없음) | 옛 설계를 가리킬 때 "옛 설계의 봉인 관리 직책"으로 풀어 쓴다 | Seal Keeper → (old design) seal-custody post | 봉인 #434083, 관리 표제어 |
+| 195a | 직속 주군, 주군(관계 이름) | 07(22곳, +.en), S(090 ownerTerm "직속 주군 / Direct liege" 약 308곳, 080) | 뜻 어긋남(#301579 主君 = 임금. 임금을 섬기던 시대의 말이라 소유자가 막은 옛 신분 말투다. 192번 품계와 같은 처리) | 직속 상관. 화면에 보이는 관계 이름도 이것으로 쓴다 | direct liege → direct superior | 상관(上官) #169991 "직책상 자기보다 더 높은 자리에 있는 사람", 직속 #480048 |
+| 195b | 영주(옛 계급 이름. "관악구 영주" 등) | 01, 05, 07(+.en), 08, 09(합쳐 27곳), S(080, 약 20곳) | 뜻 어긋남(#233638 領主 「1」 토지의 소유자. 소유자가 막은 옛 신분 말투) | 바꿀 말을 두지 않는다. 은퇴한 옛 계급 이름이므로 세계 본문에 나오지 않게 지운다. 처리는 07장의 옛 칭호 처분을 따르고, 설계 문서에서 옛 설계를 가리킬 때만 "옛 설계의 영주 계급"으로 쓴다 | lord (old rank) → retired; not used in world text | 영주 #233638. 영주(永住 #462754)와 지명 영주(榮州 #462902)는 다른 낱말이라 검사에서 뺀다 |
+
+### 2.8 검토에서 더한 직업 이름(과제 38 1부 검토, 2026-11-13)
+
+`[가-힣]+(지기|꾼|밭|틀)`로 `docs/design/v3`, `docs/drafts`, `docs/drafts/people`, `data/sql`을 다시 훑어 표에 없던 지은 말을 더했다. 아래 낱말은 모두 표준국어대사전 검색 결과가 0건이다.
+
+| # | 용어 | 쓰인 곳 | 상태 | 바꿀 말 | English (now → new) | 사전 근거 |
+|---|---|---|---|---|---|---|
+| 196 | 제설꾼 | 07 병종 표(+.en) | 조어(-꾼, 표제어 없음) | 제설 인부 | snow clearer → snow-clearing labourer | 제설(除雪) #291088, 인부(人夫) #269893 |
+| 197 | 대서꾼 | Pg, S(090) | 조어(-꾼, 표제어 없음) | 대서인 | scribe → scrivener (public-document writer) | 대서인(代書人) #79269 "남을 대신하여 공문서를 작성하는 사람" |
+| 198 | 살림지기 | Pg, S(090, 110) | 조어(-지기, 표제어 없음) | 살림꾼(집안과 피로 잇지 않은 사람이 국회의원 집안의 창고와 땔감을 맡는 자리) | household keeper → household steward | 살림꾼 #176229 "살림을 도맡아서 하는 사람" |
+| 199 | 노역꾼 | Pg, S(090) | 조어(-꾼, 표제어 없음) | 노역자 | labour-gang worker → forced labourer | 노역자(勞役者) #65758 |
+| 200 | 도장지기(인물 특성 이름) | Pg, S(090) | 조어(-지기, 표제어 없음) | 관인 관리인 | Keeper of the seal → keeper of the official seal | 관인(官印) #399012, 관리인 #32496 |
+| 201 | 화덕지기 | Pa, S(090) | 조어(-지기, 표제어 없음) | 화덕 관리인 | hearth keeper → hearth attendant | 화덕 #376751, 관리인 #32496 |
+| 202 | 화물문지기 | D(Sindorim-Junction-Cargo-Gate), S(030) | 조어(-지기, 표제어 없음) | 화물 출입구 경비원 | cargo-gate keeper → cargo entrance guard | 화물 #502490, 출입구 #494143, 경비원 #392476 |
+
+## 3. 뜻을 정해 두고 그대로 쓰는 말
+
+사전에 있지만 이 세계가 좁히거나 넓혀 쓰는 말이다. 바꾸지 않고, 위키 용어 사전에 이 세계의 뜻을 적는다.
+
+| 용어 | 쓰인 곳 | 사전의 뜻 | 이 세계의 뜻 | English | 사전 근거 |
+|---|---|---|---|---|---|
+| 구간 | 01 8.2, 05, Pf | 어떤 지점과 다른 지점과의 사이 | 자유도시들의 동 층. 역 몇 곳과 그 사이 터널 | section | #399559 |
+| 구간장 | 01 8.2, 05, Pf | (표제어 없음, 구간 + -장) | 구간의 우두머리 | Section Chief | 구간 #399559 |
+| 부위 | 01, 06, Pa | 전체에 대하여 어떤 특정한 부분이 차지하는 위치 | 아크에서 기계로 바꾼 몸의 한 부분. 부위 수로 사람을 센다 | part | #152340 |
+| 증표 | 01 2.2, 04, Pg | 증명이나 증거가 될 만한 표 | 정부가 찍어 주는 표의 통칭(주민등록증, 배급표 등) | token | #485786 |
+| 장부 | 01, 04, D | 물건의 출납이나 돈의 수지 계산을 적어 두는 책 | 정부의 주민등록 원부를 포함한 모든 기재 | the ledger | #283563 |
+| 대피소 | 01 8.3, 06, Pa | 비상시에 대피할 수 있도록 만들어 놓은 곳 | 아크의 동 층. 아크로 묶이기 전의 대피소 하나하나 | shelter | #81488 |
+| 대피소장 | 01 8.3, 06, Pa | (대피소 + -장) | 대피소의 우두머리 | Shelter Head | 대피소 #81488 |
+| 정비대 | 03, 06, Pa, U2 | (정비 + -대) | 아크 역의 몸 정비 조직 | maintenance unit | 정비 표제어 |
+| 기지장 | 01 8.2, 05, Pf | (기지 + -장, 실제로 쓰는 직함) | 양천의 우두머리 | Depot Master → Depot Chief | 결합 |
+| 건널목, 건널목장 | 05, Pf | 「2」 강, 길, 내 따위에서 건너다니게 된 일정한 곳 | 동작의 강 건널목을 맡는 사람 | crossing, Crossing Chief | 건널목 #391730 |
+| 나루지기 | 01 8.2, 05, Pf | 나루터를 지키는 사람 | 동작의 우두머리 | Ferry Keeper | #57660 |
+| 공장장 | 01 8.2, 05, Pf | 공장의 우두머리 | 구로의 우두머리 | Works Master → Plant Manager | #28770 |
+| 기계 몸 | 03, 04, 06, D | (기계 + 몸, 뜻 투명) | 사이버웨어를 단 몸. "의체"는 사전에서 다른 뜻(#262113)이라 쓰지 않는다 | machine body | 결합 |
+| 엷은 막 | 01 6.4, 11, D | (엷다 #459144 + 막, 뜻 투명) | 하늘 높이 끼어 햇빛을 줄이는 것. 세계 사람은 정체를 모른다 | the thin veil | 엷다 #459144 |
+| 다시 채운 탄 | 03 5.2 | (뜻 투명) | 탄피에 화약과 탄두를 다시 넣은 탄 | reloaded round | 탄두·탄약 표제어 |
+| 형세 | 08, 09, D | 「2」 일이 되어 가는 형편 | 싸움이 기운 쪽. 정부 공문은 "전황"(#478952) | the standing of a war | #508699 |
+| 망꾼 | Pa | 망을 보는 사람 | 봉쇄선을 지켜보는 사람 | lookout | #109427 |
+| 세례 집도자, 세례 전투원 | 06, Pa, U2 | (집도 #316610 + -자, 전투원 표제어) | 부위를 맞추는 사람, 부위를 단 전투원 | baptism surgeon, baptised fighter | 집도 #316610 |
+| 정비 용역 부속서 | 04 15절, D | 용역: 『경제』 노무 제공. 부속서: 외교 교섭에서 협정을 보충하는 문서 | 정부 부처가 자유도시와 맺는 정비 계약의 부속 문서. 정부 공문 말투와 맞는다 | maintenance service annex | 용역 #247981, 부속서 #534606 |
+| 세 세력, 세 정체 | 01, D | 정체(政體): 국가의 통치 형태 | 세계 본문은 "세 세력", 설계 문서는 "세 정체"도 쓴다 | the three powers / the three polities | 정체 #300257 |
+
+## 4. 확인한 표제어(그대로 쓴다)
+
+뽑은 낱말 가운데 사전 표제어이고 뜻도 맞는 것이다. 바꾸지 않는다.
+
+- **땅과 역:** 역장 #459620(驛長), 동장 #416974(洞長), 승강장 #200179, 대합실 #81787, 환승역 #378483, 선로 #444996, 급전선 #46429, 공동구 #397325, 동결선 #89230, 영구 동토 #236910, 들개 #417123, 시궁쥐 #198731, 큰부리까마귀 #496731, 들버섯 #94373, 수용력 #199980.
+- **정부 말:** 기재 #401096(記載), 등재 #95244, 말소 #112210, 도장 #415878(圖章), 배급 #134562, 정원 #476842(定員), 결재 #17721, 민원 #131560, 고시 #22708(告示), 주민 #482652, 미등록 #535054, 징병 #487352, 연병장 #458086, 망대 #420177, 의무소 #266981, 병기창 #432657, 정비창 #292956, 경호실 #516043, 저격수 #283158.
+- **자유도시 말:** 솔밭 #192234, 눈밭 #410271, 밀수꾼 #125796, 장사꾼 #276831, 창고지기 #326415, 나무꾼 #57763, 심부름꾼 #455514, 계약 #390929, 보증, 몫 #119927, 짐꾼 #309092, 수레꾼 #444942, 벌목꾼 #431541, 산지기 #441888, 낚시꾼 #404808, 얼음낚시 #221119, 안내인 #217674(나루 안내인), 편대 #351355(중계 타격 편대), 전파 방해 #290422(전파 방해반), 철정 #325504(철정 투척조), 쪽지 #483009(계약 쪽지).
+- **아크 말:** 봉인 #434083, 곁 #395730, 신도 #209276(세례 신도와 세례 전 신도를 아우르는 말. 2절 160·161번), 정비공 #292655, 일꾼 #473591(부엌 일꾼), 전령, 토시 #496461(단열 토시), 갈고리 #387595, 집결소 #314965(가문 집결소), 돌격대 #87842, 기관차 #405073, 들것 #415776.
+- **기술과 기계:** 원자력 전지 #465418, 축전지 #497009, 열펌프 #237470, 소화조 #194077, 클린 룸 #497597, 흑색 화약 #508120, 탄두, 불발탄 #149308, 광섬유 #396227, 감지기 #8680, 감시망 #388202, 확성기 #380153, 무인기 #123272, 관성 바퀴 #32359, 궤도차 #42933, 장갑차 #475334.
+- **전문어(사전 표제어는 아니나 지금 쓰는 기술어):** 드론(법령 용어), 휴머노이드 로봇, 전지 팩, 셀, 하저 터널, 지열 열펌프, 사족 보행 로봇, 귀환 무인 차량, 무인 경계 초소, 유선 드론.
+- **결합어(설계 문서 전용):** 비동결층(비(非)- + 동결 #414712 + 층 #490427). 표제어도 확인된 기술어도 아니어서 전문어로 두지 않는다. 영구 동토 문헌의 외래어 탈릭은 괄호로만 덧붙인다(2절 29번).
+
+## 5. 생태 도감 12 항목의 이름(소유자 결정 2026-11-13, 11장 5.3절)
+
+| # | 항목 | 상태 | English |
+|---|---|---|---|
+| 1 | 시궁쥐 | 표제어 #198731 | brown rat |
+| 2 | 큰부리까마귀 | 표제어 #496731 | large-billed crow |
+| 3 | 들개 | 표제어 #417123 | feral dog |
+| 4 | 서비스 로봇 | 전문어 | service robot |
+| 5 | 사족 보행 점검 로봇 | 전문어 | quadruped inspection robot |
+| 6 | 공장 휴머노이드 로봇(11장의 "공장 사람 꼴 로봇"을 2절 50번으로 바꾼다) | 전문어 | factory humanoid robot |
+| 7 | 선로 점검 로봇 | 결합어(선로 #444996) | track inspection robot |
+| 8 | 귀환 무인 차량 | 전문어 | returning unmanned ground vehicle |
+| 9 | 무인 경계 초소 | 전문어 | unmanned sentry post |
+| 10 | 봉쇄 감시망 | 결합어(봉쇄 #432394, 감시망 #388202) | blockade surveillance network |
+| 11 | 군집 드론 | 전문어 | drone swarm |
+| 12 | 불발 탄두와 광섬유 | 결합어(불발탄 #149308, 광섬유 #396227) | unexploded warheads and optical fibre |
+
+## 6. 과제 38 3부에 넘길 것
+
+1. **한 번에 적용한다.** 2절 207행을 01~12장, `docs/drafts/*.md`, `docs/drafts/people/*.jsonl`(그리고 인물 적용기를 다시 돌린 데이터), `data/sql/130~132`, GDD, 쇼케이스에 같은 커밋 묶음으로 넣는다. 칭호(97, 119, 121~124, 152~159번)는 칭호 사다리(01-core 8절)와 인물 데이터를 함께 바꾼다.
+2. **영어도 함께 바꾼다.** `.en.md`, `*_en` 칸, 병종의 `name`과 `recruit_building`은 2절 English 열의 오른쪽을 쓴다.
+3. **3절의 말은 위키 용어 사전(`Glossary`)에 이 세계의 뜻을 적는다.** 1절 승인 용어는 "확정"으로 둔다.
+4. **관문.** `docs/canon-terms.json` 또는 새 검사 목록에 2절 왼쪽 열(조어와 뜻 어긋남)을 넣어, 적용 뒤 남은 것을 0건으로 확인한다. 승인 용어와 실제 지명은 검사에서 뺀다.
+5. **판정을 바꿔야 할 때.** 소유자가 다른 말을 고르면 이 표의 행을 고치고 같은 방법(표준국어대사전 번호)으로 근거를 단다.
+
+(잠정 T33-36. 과제 38 1부가 이어 확정안으로 고쳤다.)
