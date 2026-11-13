@@ -508,7 +508,15 @@ Basis: Bible 1, row 13 [Approved], 2.2 [Approved], 01-core 7.2 and 8.2, chapter 
 
 | CK3 system | Verdict | In the Free Cities | Source |
 |---|---|---|---|
-| Government variants | Adapt | Each city chooses its holder differently. This takes the place of CK3's government and succession variants: **choosing** (Gangseo Wind Keeper, Geumcheon Edge Warden, Dongjak Ferry Keeper), **inheritance** (Yangcheon Depot Master, Duke of Gwanak), **turns** (Yeongdeungpo Market Master, three years each), **guarantees kept** (Guro Works Master) | Chapter 05 section 2 (provisional T06-1) |
+| Government variants | Adapt | The seven cities use **one skeleton** (CK2's merchant-city head selection `patrician elective` and the city assembly of CK3 Silk & Silver), and each city has different **knob values**: the number of seal houses (1-5), what counts as a kept surety, whether hearth kilos count, an added condition for stepping down, whether the seal is bound. There are no turns (the old Yeongdeungpo rule). Yangcheon is the city with only one seal house (in CK3 S&S a county-tier city holds one house); Gwanak is the city that bound the seal | Chapter 05 sections 2.1-2.2 (provisional T31-1, T31-18), the task 31 research record, sections 3-4 (path in Bible 9.4) |
+| Succession of the head | Adapt | **Name-worth at the masters' meeting.** No votes. The candidate with the highest name-worth = kept sureties × 2 + age (up to fifty) + hearth kilos ÷ 10 stands. This carries over CK2's Respect (age² + 2 × prestige + 5 × campaign fund, no vote, B-). The age cap of fifty comes from the age cap of 50 in CK3's city succession pool (A, `GAME/common/pool_character_selectors/00_city.txt`). The term is **for life** (CK2; CK3 1.20 republic description "for life", A) | Chapter 05 section 2.1 items 3, 4, 7 (provisional T31-5, T31-6, T31-9) |
+| Campaign fund | Adapt | **Hearth kilos.** Electricity given to the heat and meals of the masters' meeting. It can be taken back while the holder lives, and burns win or lose once the meeting opens (CK2 campaign fund, B-) | Chapter 05 section 2.1 item 5 (provisional T31-7) |
+| Candidacy | Adapt | One per seal house; no one under sixteen or with a broken seal. Taking a post in another city or another faction drops a candidate. The move of handing a rival an outside post (CK2: an heir holding land cannot inherit, B-) | Chapter 05 section 2.1 item 6 (provisional T31-8) |
+| Family palace | Adapt | **Losing houses keep their bench and seal.** They cannot be seized or taken back. If a house dies out, the remaining houses share its outside posts and the other workbench with the most kept sureties becomes a new seal house (CK2 family palace, house replacement, B-) | Chapter 05 section 2.1 item 9 (provisional T31-11) |
+| Trade posts | Adapt | **Outside posts.** A workbench's foothold in another city's station. One per station; one for every five hands of the house (four at most). Seal houses of the same city quarrel over them but cannot quarrel with the holder. If the station's city closes one, it becomes a broken sheet (CK2 trade post limit, B-; CK3 S&S one per county, B) | Chapter 05 section 2.1 items 10, 11 (provisional T31-12, T31-13) |
+| Despot succession | Adapt | **Binding the seal (Gwanak).** The masters' meeting changes the law so that the seat passes within one house. The title changes (Duke) and the other seal houses hold a grievance. The meeting remains and can send back Gwanak's sheet of the water supply contract (CK3 S&S despot succession and title change, B, unreleased design) | Chapter 05 section 2.1 item 14, section 3.7 (provisional T31-16, T31-25, T31-26) |
+| Hidden random | Adapt | **The wind share.** Within 5 name-worth, the candidate standing before the hearth at the first wind hour stands. In the game, a small hidden bonus on one candidate (CK2 hidden Respect 500, B-) | Chapter 05 section 2.1 item 15 (provisional T31-17) |
+| Trade leagues | Drop | There is no way for a league of cities to become one title (CK3 S&S, B) | Bible 2.2 [Approved] |
 | The player's passing of the turn | Adapt | A workbench house's bench master seat is inherited, but **an eldest who has not shown a hand cannot inherit.** The passing has a hand threshold: the next person must show they can do the bench's work alone. Without one, the house brings in someone who has shown a hand by marriage or contract | Chapter 05 section 5.2 (provisional T06-27) (provisional T29-21) |
 | Realm hierarchy and head | Drop | No one stands above the cities. There is no collective name | Bible 1, row 13 [Approved], 2.2 [Approved] |
 | Vassal contract | Adapt | **Contract sheets** between cities. A sheet binds only the cities that stamped it. No vote | Chapter 05 section 4.2 (provisional T06-21) |
@@ -516,7 +524,7 @@ Basis: Bible 1, row 13 [Approved], 2.2 [Approved], 01-core 7.2 and 8.2, chapter 
 | Prestige | Adapt | **Surety.** Fewer cities will make sheets at the next contract meeting with a city that withdrew its seal. Guarantees kept are its name | Chapter 05 sections 4.3 (provisional T06-23) and 6.3 (provisional T29-21) |
 | Gold | Adapt | Kilos and hand-hours | Chapter 03 section 11.2 (provisional T04-51) |
 | Piety | Drop | No organised faith | Chapter 05 section 10.5, Bible 1, row 9 |
-| Council | Adapt | No council. Inside a city, the bench masters; between cities, the contract meeting called each time and its Host | Chapter 05 sections 4 and 5, 01-core 8.2 (provisional T02-70) |
+| Council | Adapt | Inside a city there is the **masters' meeting** (the bench masters of the seal houses), which sets the city's law and large sheets and seats the holder (CK3 S&S assembly, B). Between cities there is no council, only the contract meeting called each time and its Host | Chapter 05 section 2.1 item 2 (provisional T31-4), section 4, 01-core 8.2 (provisional T02-70) |
 | Marriage | Take | Marriage between workbench houses is also a trade of skills | Chapter 05 section 5.2 |
 | Hooks | Adapt | A broken contract, a broken surety, a pledge not returned | Chapter 05 sections 4 and 6 (provisional T29-21) |
 | Levies | Adapt | **Watch share.** Every workbench gives some of its hands each year for a set number of days of watch. About 1,100 hands can be called at once. A skilled levy type | Chapter 05 section 11.1 (provisional T06-59), chapter 07 section 12.2 (provisional T08-79) |
@@ -557,12 +565,12 @@ Basis: Bible 2.3 [Approved], 1 rows 9 and 14, 01-core 7.3 and 8.3, chapter 06 se
 | CK3 | Government | Free Cities | Arc |
 |---|---|---|---|
 | Passing of the turn | The named heir (handing down the seat) | The child who has shown a hand | By blood, but two parts or more |
-| Succession of the head | Acclamation by fourteen seals | None | The name the Hierophant spoke; failing that, the Seat of the Four Near Houses |
+| Succession of the head | Acclamation by fourteen seals | Name-worth at the masters' meeting (Gwanak: the bound seal) | The name the Hierophant spoke; failing that, the Seat of the Four Near Houses |
 | Contract | Steps of ration share and levy quota | Contract sheets and pledges | Maintenance order and charging shares |
 | Prestige | The household's name | Surety | Blood and iron |
 | Gold | Meals, workdays | Kilos, hand-hours | Day charges, maintenance turns |
 | Piety | None | None | The giving |
-| Council | Ministers | Bench masters, contract meetings | The Seat of the Four Near Houses |
+| Council | Ministers | Masters' meeting (inside a city), contract meetings (between cities) | The Seat of the Four Near Houses |
 | Factions | OMO Party and Claw Party | The cities | Blood and iron |
 | Hooks | Ledger flaws | Broken contracts | Skipped fitting days, short giving |
 | Levy type | Conscript infantry, reserves | Watch share | House levies |
@@ -612,6 +620,7 @@ Basis: analysis section 5, section 1.3.
 - Figures for battlefield width and squads engaging at once (section 3.4.1), holdout value and cutting actions (section 3.8), and the automatic battle formula (section 3.10): the battle design task.
 - Hyeongse factors per casus belli (section 3.7): the task that writes the casus belli table.
 - How each faction treats captives (section 3.5.3): the law and punishment sections of chapters 04 to 06.
+- Details of the Free Cities' masters' meeting (section 4.3, task 31): CK3 Silk & Silver is due on 2026-11-17 and is not in the installed 1.20.1.2. After release, read `GAME/common/governments`, `GAME/common/laws` and `GAME/common/succession_election` to check whether candidacy and vote weighting depart from this chapter's skeleton. The weights of the name-worth formula (surety 2, age 1, 1 per 10 kilos) are provisional.
 
 ## 7. Changes handed to other chapters
 

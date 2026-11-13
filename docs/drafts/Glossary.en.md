@@ -72,6 +72,9 @@ The names the Government inherited from the Republic of Korea (the National Asse
 | Stationmaster, Dong Chief | The Government seats over a station and a dong | Proposed |
 | Station Foreman, Section Chief | The Free City seats over a station and a section. A section groups a few stations and the tunnels between them | Proposed |
 | Wind Keeper, Depot Master, Market Master, Works Master, Edge Warden, Ferry Keeper | The heads of Gangseo, Yangcheon, Yeongdeungpo, Guro, Geumcheon and Dongjak. Each title comes from the work that city lives by | Proposed |
+| seal house, masters' meeting | The workbench houses that share a Free City's seal, and the gathering of their bench masters. The masters' meeting sets the city's law and seats its head for life | Proposed |
+| name-worth, hearth kilos | A candidate's reckoning (kept sureties, age, hearth kilos), and the electricity a candidate gives to the meeting's heat and meals. Hearth kilos burn, win or lose | Proposed |
+| outside post, binding the seal | A workbench's foothold in another city's station; the masters' meeting tying the head's seat to one house (Gwanak) | Proposed |
 | Bench Keeper, Shelter Head, Head of the Near House | The Arc seats over a station, a shelter and a district | Proposed |
 | the Seat of the Four Near Houses | The gathering of the four Heads of the Near Houses before the Hierophant | Proposed |
 

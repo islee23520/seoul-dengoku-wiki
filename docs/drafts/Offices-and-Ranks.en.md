@@ -79,15 +79,15 @@ The Free Cities are not one power. They are cities independent of one another, a
 
 | City | Title | How chosen |
 |---|---|---|
-| Gwanak | Duke | Handed down in I Ilseop's household. When the Government across the river called its districts duchies and gave them to its Members, Gwanak's leading household took the same word and declared that it sat at the same height as the Government |
-| Dongjak | Ferry Keeper | Chosen by the Crossing Chiefs of the five crossings from among themselves. A Ferry Keeper is Ferry Keeper only while holding a crossing |
-| Yeongdeungpo | Market Master | Market households take it in turn, three years each, in a fixed order |
-| Guro | Works Master | The workbench owner who has kept the most sureties |
-| Geumcheon | Edge Warden | Chosen by the rim crew from among those who have crossed the rim and come back. For life |
-| Yangcheon | Depot Master | Handed down in the household that first revived the Sinjeong depot |
-| Gangseo | Wind Keeper | Chosen by the workbench owners of the wind fields. For life, but steps down if the wind fields fail to deliver the watts written in the contract for two long-dark halves running |
+| Gwanak | Duke | The masters' meeting bound the seal, so it is handed down in I Ilseop's household. When the Government across the river called its districts duchies and gave them to its Members, Gwanak's leading household took the same word and declared that it sat at the same height as the Government |
+| Dongjak | Ferry Keeper | Set by name-worth at the masters' meeting of the seal houses that hold the five crossings. A Ferry Keeper is Ferry Keeper only while holding a crossing |
+| Yeongdeungpo | Market Master | Set by name-worth at the masters' meeting of five market seal houses. For life |
+| Guro | Works Master | The bench owner of the four seal houses with the most carvings on the surety board. Steps down on breaking a surety |
+| Geumcheon | Edge Warden | Set by name-worth from among those of the two seal houses who have crossed the rim and come back. For life |
+| Yangcheon | Depot Master | The household that first revived the Sinjeong depot is the only seal house, so it is set by name-worth within that household |
+| Gangseo | Wind Keeper | Set by name-worth at the masters' meeting of five wind-field seal houses. For life, but steps down if the wind fields fail to deliver the watts written in the contract for two long-dark halves running |
 
-There is a reason each city chooses its head differently. With no way to judge whose skill is higher, the seven cities as a whole could not choose a leader. So each city found something its own work could measure. Gangseo measures watts, Guro the number of sureties kept, Geumcheon coming back alive from the rim, Dongjak the crossings held. Yangcheon and Gwanak, which found nothing to measure, hand the post down in a household. Yeongdeungpo measures nothing and rotates.
+The seven cities set their heads on the same skeleton. The bench owners of the seal houses, the houses that share the city's seal, gather at the masters' meeting and, without votes, reckon each candidate's name-worth (kept sureties, age, and hearth kilos given to the meeting) and seat the highest. The head serves for life, and losing houses keep their workbench and seal. With no way to judge whose skill is higher, the seven cities as a whole could not choose a leader. So each city found something its own work could count and made it the yardstick of name-worth. Gangseo counts seasons that met their watts, Yangcheon motors brought back to life, Yeongdeungpo market place contracts never broken and hearth kilos, Guro the carvings on the surety board, Geumcheon the times a person came back alive from the rim, Dongjak freight carried across without loss, Gwanak the depth of wells dug. More is in [Free City Society](/wiki/Free-City-Society/#choosing-heads).
 
 ### Section Chief and Station Foreman
 

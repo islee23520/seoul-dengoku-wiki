@@ -72,6 +72,9 @@ section_checkpoint: v3 task 10 complete
 | 역장, 동장 | Stationmaster, Dong Chief | 정부의 역과 동을 맡은 자리 | 제안 |
 | 역반장, 구간장 | Station Foreman, Section Chief | 자유도시의 역과 구간을 맡은 자리. 구간은 역 몇 곳과 그 사이 터널을 묶은 단위다 | 제안 |
 | 바람지기, 기지장, 장주, 공장장, 경계장, 나루지기 | Wind Keeper, Depot Master, Market Master, Works Master, Edge Warden, Ferry Keeper | 강서, 양천, 영등포, 구로, 금천, 동작의 우두머리. 칭호는 그 도시가 먹고사는 일에서 나왔다 | 제안 |
+| 도장 집안, 대주회 | seal house, masters' meeting | 자유도시의 도장을 나눠 쥔 작업대 집안과 그 대주들의 모임. 대주회가 도시의 법을 정하고 종신 우두머리를 세운다 | 제안 |
+| 이름값, 화덕 킬로 | name-worth, hearth kilos | 우두머리 후보의 셈(지킨 보증, 나이, 화덕 킬로)과 후보가 대주회의 열과 끼니에 대는 전기. 화덕 킬로는 이기든 지든 탄다 | 제안 |
+| 바깥 자리, 도장 묶기 | outside post, binding the seal | 작업대가 다른 도시의 역에 둔 거점, 대주회가 우두머리 자리를 한 집안에 묶는 일(관악) | 제안 |
 | 정비장, 대피소장, 곁집장 | Bench Keeper, Shelter Head, Head of the Near House | 아크의 역, 대피소, 구를 맡은 자리 | 제안 |
 | 네 곁집 자리 | the Seat of the Four Near Houses | 곁집장 넷이 교주 앞에 모이는 자리 | 제안 |
 
