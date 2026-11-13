@@ -1,5 +1,7 @@
 # lore/bestiary — 생태·변이 생성 도감
 
+> **v3 권위(2026-11-13):** 이 폴더의 세계관 정본은 `docs/CANON-BIBLE.md`, `docs/design/v3/`(01~10장)과 `data/sql`이다. 아래 옛 지침과 표에 적힌 파일·국가·조직·직위가 v3와 어긋나면 v3를 따른다. v3와 어긋나는 옛 Markdown 로어 파일은 과제 27에서 정리했다(`docs/drafts/reports/v3-legacy-disposition.md`).
+
 ## OVERVIEW
 Atlas의 생태 레지스트리를 집단별 읽기 전용 JSON으로 나누는 생성 도메인이다.
 
