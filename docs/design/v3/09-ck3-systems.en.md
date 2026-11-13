@@ -123,7 +123,7 @@ The long-term goals are to raise a good heir (education), make good marriages (g
 | Legacy | Next perk cost = 250 + perks already taken × 500. Blood legacy level 4 adds one good genetic trait at birth with a base 5% (+5%) chance | Cost B (`DEF` lines 1123-1124), blood A (`FA/혈통-전승-출생.html`, `child_birth_on_actions.txt` lines 1157-1319) |
 | Partition | confederate partition, partition, high partition. All go by children, by age, and divide titles. High partition gives the eldest at least half. **Partition is CK3's basic pressure** | A, `DOM/06` section 4, `FA/승계-법.html`. The real division algorithm is unconfirmed |
 | Law change cost | Prestige base 500, clan government adds 4 times, a partition-forcing contract ×1.25 | A, `00_law_values.txt` lines 411-464 |
-| Elective succession (feudal_elective) | Base vote 1, empire tier +3, kingdom tier +2, duchy tier +1, a vassal stronger than the liege +1 (+1 more with greater military), co-ruler +1 | A, `00_feudal_elective.txt` lines 9-164, `VC/representative-reconcile.md`. Internal candidate scores unconfirmed |
+| Elective succession (feudal_elective) | Base vote 1, empire tier +3, kingdom tier +2, duchy tier +1, a vassal stronger than the superior +1 (+1 more with greater military), co-ruler +1 | A, `00_feudal_elective.txt` lines 9-164, `VC/representative-reconcile.md`. Internal candidate scores unconfirmed |
 | Regency | Temporary regent power steps 0/33/66/100 (dismiss at once / imprison / meddle in law / entrenchment and free contract changes). Entrenched regent 0/20/40/60/80/95 (80 and above cannot be dismissed, 95 and above may try to depose the ruler) | A, `DOM/06` section 3, `00_regencies.txt` lines 8-205 |
 
 ### 2.4 Relations
@@ -144,7 +144,7 @@ The long-term goals are to raise a good heir (education), make good marriages (g
 | Title tiers | Seven slots: landless, barony, county, duchy, kingdom, empire, hegemony. Creation gold cost duchy 250, kingdom 500, empire 1000, hegemony 2000, prestige 300 to 600; usurpation the same | B, `DEF` lines 936-968 |
 | De jure | Actual rule and lawful belonging differ, and lawful belonging drifts slowly (+1 a month, decay 0.5, limit 1200). De jure claims ground casus belli | B, `DEF` lines 950-956 |
 | Governments | The nineteen types of section 1.3. Each government has its own main holding type, contract group and flags | A, `DOM/05` "Government variants". File list B, re-checked |
-| Vassal contract | Five tax/levy steps: exempt 0/0 (opinion +10), low 0.025/0.1 (+5), normal 0.1/0.25, high 0.15/0.35 (−15), extortionate 0.25/0.5 (−25). A liege-side interaction, impossible in war, adds tyranny, and needs a hook if unfavourable to the vassal | A, `FA/통치-계약.html`, `subject_contracts/contracts/feudal.txt` lines 1-189, `00_modifiy_vassal_contract.txt` lines 1-305. Final payment unconfirmed |
+| Vassal contract | Five tax/levy steps: exempt 0/0 (opinion +10), low 0.025/0.1 (+5), normal 0.1/0.25, high 0.15/0.35 (−15), extortionate 0.25/0.5 (−25). A superior-side interaction, impossible in war, adds tyranny, and needs a hook if unfavourable to the vassal | A, `FA/통치-계약.html`, `subject_contracts/contracts/feudal.txt` lines 1-189, `00_modifiy_vassal_contract.txt` lines 1-305. Final payment unconfirmed |
 | Clan tax collectors | Base 12 slots, aptitude steps 20/45/75/110 | A, `DOM/07` section 3 |
 | Domain limit | Each holding over the limit −20% levies and tax. 365-day grace for new holdings. At control 0, levies 50%, tax 0%. At development 100, +50% | B, `DEF` lines 1153-1170 |
 | Legitimacy | 1 to 6 levels by tier (some 8, 9). Each level adjusts faction and scheme joining | A, `DOM/06` sections 3-4 |
@@ -260,7 +260,7 @@ A v3 campaign turn is one month (chapter 07 section 13, provisional T08-86). CK3
 | Reinforcement 3% a month (levies), 10% a month (men-at-arms) | `DEF` lines 636-637 (B) | The same ratios per turn (section 3.5.2) |
 | Truce 1,825 days | A, `FA/독립-파벌-요구.html` | 60 turns (section 3.7) |
 | Defender ticking score from day 365 | `DEF` line 730 (B) | From turn 12 (section 3.6) |
-| Event pulses (yearly, quarterly, three-year, five-year) | `DOM/01` (A) | 12, 3, 36 and 60 turns. A season event is added on the first turn of the long-light season (April to September turns) and of the long-dark season (October to March turns) (chapter 07 section 13) |
+| Event pulses (yearly, quarterly, three-year, five-year) | `DOM/01` (A) | 12, 3, 36 and 60 turns. An event for that half is added on the first turn of the long-daylight half (April to September turns) and of the short-daylight half (October to March turns) (chapter 07 section 13) |
 
 ### 3.3 What the battle layer replaces
 
@@ -288,7 +288,7 @@ When a battle opens, the campaign layer builds the packet below for each army. A
 | **Squad list** | Levy and men-at-arms regiments, 100 men a regiment (B) | Unit id (`data/sql/130` to `132`), each squad's current strength and full strength, grade. Squad cap 20 slots (`roster-framework.md` 10.3 [Pending]) | The squads to deploy. Unit figures are read only from SQL |
 | **Unit types and counters** | Men-at-arms types and counters (B) | The seven categories, the category counter table and the `counters` column (`roster-framework.md` 2.1, 8) | The engagement as is. The same shape as CK3's nine types plus counter factors |
 | **Levy-type and standing-type** | Levies (attack and toughness 10, reinforcement 3% a month) and men-at-arms (reinforcement 10% a month) (B) | Per faction, the mapping of sections 4.2 to 4.4 (Government conscript infantry and reserves and career soldiers; Free Cities watch share and contract forces; Arc house levies and baptised fighters) | Levy-type squads may carry an expendable tag such as `ledger-levy` (`roster-framework.md` 10.4) |
-| **The ground** | Terrain, river and strait advantage, combat width (A, B) | Where the armies met: station name and depth band (surface, concourse, platform, deep tunnel, 01-core 3.1), crossing type (bridge, under-river tunnel, land border, the thirteen of 01-core 7.4), the station's exit and line data (`120-map-core.sql`, `123-map-holdings.sql`), the season (long-light season, long-dark season, blizzard, chapter 07 section 12.6) | Builds the battle map (section 3.4.1) |
+| **The ground** | Terrain, river and strait advantage, combat width (A, B) | Where the armies met: station name and depth band (surface, concourse, platform, deep tunnel, 01-core 3.1), crossing type (bridge, under-river tunnel, land border, the thirteen of 01-core 7.4), the station's exit and line data (`120-map-core.sql`, `123-map-holdings.sql`), the half of the year (long-daylight half, short-daylight half, blizzard, chapter 07 section 12.6) | Builds the battle map (section 3.4.1) |
 | **Supply state** | Supply 60/10/0, advantage −10/−25 (B) | The supply state set by the heat, air and water limits of the stations on the route (01-core 4.1): ample, short, starving | Starting morale (section 3.9) |
 | **Scarce inputs** | None (CK3 has only gold upkeep) | Faction stocks (`ammo`, `cells`, `implants`, `fuel`, `parts`, `medicine`, `roster-framework.md` 6) | Starting ammunition, whether drones can deploy, weakening of implant squads (`roster-framework.md` 6.3 table) |
 | **Advantage modifiers** | Just disembarked −30, gathering −5, debt (A, B) | An army that has just crossed a bridge or under-river tunnel this turn; an army not yet fully gathered | Deployment limits (section 3.4.1) |
@@ -351,13 +351,13 @@ In a manual battle, what happened on the field is the result. An automatic battl
 - **Standing-type squads** (Government career soldier squads, Free Cities contract forces, Arc baptised fighters) refill 10% of full strength per turn. This is CK3's men-at-arms at 10% a month.
 - The returning wounded come back separately from this ratio, all at once on the next turn.
 - If the `medicine` stock is 0, human squads replenish at half rate (`roster-framework.md` 6.3). If the `implants` stock is 0, `baptised` and `wired-body` squads stop replenishing (same table).
-- Replacements come from the faction's population. For the Government, people registered in the ledger; for the Free Cities, the hands and labourers of the workbenches; for the Arc, the households of the Near Houses and the baptismal roll. No replenishment beyond the faction population (about 160,000, 75,000 and 65,000, 01-core 4.3) or the force size (chapter 07 section 12.2).
+- Replacements come from the faction's population. For the Government, people registered in the ledger; for the Free Cities, the hands and labourers of the workshops; for the Arc, the households of the inner-circle houses and the baptism register. No replenishment beyond the faction population (about 160,000, 75,000 and 65,000, 01-core 4.3) or the force size (chapter 07 section 12.2).
 
 #### 3.5.3 Captured characters
 
 - A named character of the losing side (commander, attached hero) who at the end of the battle had left it wounded, or whose escort squad was shattered or destroyed, is captured. In a manual battle, it is whoever did not actually get off the field.
-- Captives are released or exchanged in the peace terms (section 3.7). The ransom is paid in the captor's reckoning: meals for the Government, kilos for the Free Cities, day charges for the Arc (chapter 03 section 11, provisional T04-49 to T04-52).
-- Capturing an heir gives hyeongse. This is the place of CK3's captured heirs 50/25/10. The v3 "heir" differs by faction: the heir of a Member of the National Assembly's house (chapter 04 section 3.1), the eldest of a city holder's house or a workbench house (chapter 05 section 5.2), the next person named by a Head of the Near House (chapter 06 section 3.3).
+- Captives are released or exchanged in the peace terms (section 3.7). The ransom is paid in the captor's reckoning: meals for the Government, kWh for the Free Cities, daily charge allowances for the Arc (chapter 03 section 11, provisional T04-49 to T04-52).
+- Capturing an heir gives hyeongse. This is the place of CK3's captured heirs 50/25/10. The v3 "heir" differs by faction: the heir of a Member of the National Assembly's house (chapter 04 section 3.1), the eldest of a city holder's house or a workshop house (chapter 05 section 5.2), the next person named by a House Head (chapter 06 section 3.3).
 - How each faction treats captives is set by the law and punishment sections of chapters 04 to 06. This chapter does not set it.
 
 ### 3.6 Hyeongse: the place of war score
@@ -382,7 +382,7 @@ CK3's war score is called **hyeongse** in v3: the plain word all three polities 
 
 - **Casus belli** differ by faction (sections 4.2 to 4.4). The CK3 structure in which a casus belli overrides hyeongse factors (conquest 150, 0.8, A) is used as is. The factors are set by the task that writes the casus belli table.
 - **Peace terms become contract clauses.** The Government makes them as annexes (chapter 04 section 15), the Free Cities as contract sheets with pledges (chapter 05 section 4.2), the Arc as the Hierophant's word (chapter 06 section 2.2). The kinds of term are: change of holder of a station or crossing, handing over maintenance of a facility, release of captives, and a price paid in a reckoning.
-- **A truce** is the term written in the peace terms. Default 60 turns (5 years), carried over from CK3's 1,825 days. Breaking a truce costs the Government a line in the ledger's disposition column, the Free Cities fewer counterparts at the next contract meeting (chapter 05 section 4.3), and the Arc a breach of the Hierophant's word.
+- **A truce** is the term written in the peace terms. Default 60 turns (5 years), carried over from CK3's 1,825 days. Breaking a truce costs the Government a line in the ledger's disposition column, the Free Cities fewer counterparts at the next council (chapter 05 section 4.3), and the Arc a breach of the Hierophant's word.
 
 ### 3.8 Sieges and assaults
 
@@ -424,7 +424,7 @@ In CK3, allied armies fight together in one place. D3 is one commander per army.
 
 - The player commands only their own army. Other armies of the same side are allies commanded by their own commanders (AI).
 - Squads of Free Cities that have signed a **command sheet** (chapter 05 section 11.3) form one army. Squads of a city that has not signed are a separate army, and an AI ally on the same field.
-- The same holds for the Arc's five Near House armies (chapter 06 section 11.1) and the Government's district units and Capital Defense Command direct units (chapter 04 section 14.1). One commander per army.
+- The same holds for the Arc's five inner-circle house armies (chapter 06 section 11.1) and the Government's district units and Capital Defense Command direct units (chapter 04 section 14.1). One commander per army.
 
 ### 3.12 When the player character dies in the field
 
@@ -435,7 +435,7 @@ In CK3, an heir dying in battle was an event chance (section 2.10). In the combi
 Casus belli and their costs, hyeongse and peace terms, truces, sieges and cutting actions, occupation, raiding, supply and attrition, movement (along the line links `map_edge`) and retreat destinations, raising and disbanding levies, recruiting, upkeep and replenishment of standing-type squads, armies fighting together, AI war stances. And everything outside war: characters, houses, inheritance, marriage, schemes, contracts, economy, faith (C, analysis 3.5).
 
 - **Supply and attrition.** The place of CK3's supply limit (minimum 1000, loss of 0.001 per soldier over it) is the heat, air and water limits of the stations on the route (01-core 4.1). Surface marches wear by cold, deep tunnel marches by air. Arc armies do not stay long more than a day from their seat station (chapter 06 section 11.4) (provisional T29-15).
-- **Raiding.** The place of raiding is stripping another's stations of scrap, fibre and parts. Going over the outer perimeter to dig out power cores (01-core 9, chapter 03 section 2.1) is not war but an expedition.
+- **Raiding.** The place of raiding is stripping another's stations of scrap, fibre and parts. Going over the outer blockade line to dig out power sources (01-core 9, chapter 03 section 2.1) is not war but an expedition.
 - **Enemies outside the factions.** The hostile groups G01 to G26 of chapter 02 have no CK3 equivalent. On the battle layer they are fought as non-faction opponents. Only threat grades 4 to 5 (chapter 02 section 3.1) become a battle; grades 1 to 3 are resolved as campaign events (provisional T29-24).
 
 ## 4. CK3 -> v3 mapping, by faction
@@ -451,20 +451,20 @@ Basis: 01-core 7-8, chapters 04 to 07, Bible 1 rows 7-14, 2.1 to 2.5, 8. The ver
 | Skill level boundaries 4/8/12/16 | Adapt | Four boundaries make five bands. On v3 values 1 to 20 the same boundaries give five screen words: 1-3 very poor, 4-7 poor, 8-11 average, 12-15 good, 16 and above excellent | `DEF` line 210 onward (B). Chapter 07 section 12.7's "9 or more" starts inside the "average" band (provisional T29-23) |
 | Traits | Adapt | Personality traits are used. Their effects are empty for now, as chapter 07 section 8.1 says. The place of genetic traits is split between the winter body (cold endurance, lungs) and the Arc's part count | Chapter 07 section 8.1 item 3, chapter 06 section 3.5 (provisional T29-23) |
 | Age thresholds | Take | CK3's adolescent 12 and adult 16 are already in v3: Free City apprentices at twelve (chapter 05 section 5.2), Government inherited-trade registration at sixteen (chapter 04 section 14.3), the Arc's first baptism after sixteen (chapter 06 section 5.2, provisional T07-18). Government conscription at nineteen (chapter 04 section 14.3) | `DEF` lines 180-186 (B) |
-| Education | Adapt | The structure of assignment at 6 and result at 16. The guardian is someone of the same station. Government: school; Free Cities: workbench apprenticeship; Arc: the maintenance bench | `childhood_on_actions.txt` (A) (provisional T29-23) |
+| Education | Adapt | The structure of assignment at 6 and result at 16. The guardian is someone of the same station. Government: school; Free Cities: workshop apprenticeship; Arc: the maintenance unit | `childhood_on_actions.txt` (A) (provisional T29-23) |
 | Health and death | Adapt | The same structure with winter modifiers: shallow stations, starvation and lack of air wear health. A machine body loses health when it cannot reach maintenance and charging | Bible 1, row 14 [Approved], 01-core 4.1 (provisional T29-23) |
 | Fertility and child caps | Adapt | Instead of caps by title tier, station capacity and the winter ratchet are the cap | 01-core 11 item 3, chapter 07 section 13 (provisional T08-86) (provisional T29-23) |
-| Stress and mental breaks | Take | The same structure. Causes add the long-dark season, strike-off, maintenance failure and refusal of baptism | `stress_on_actions.txt` (A) (provisional T29-23) |
-| Lifestyles and perks | Adapt | The six branches are rebuilt as the work of the three polities (for example, ledger work, workbench work, maintenance bench work). The shape "**a perk opens a new action**" is kept | Section 1.3, `00_perk_interactions.txt` (A) (provisional T29-23) |
+| Stress and mental breaks | Take | The same structure. Causes add the short-daylight half, strike-off, maintenance failure and refusal of baptism | `stress_on_actions.txt` (A) (provisional T29-23) |
+| Lifestyles and perks | Adapt | The six branches are rebuilt as the work of the three polities (for example, ledger work, workshop work, maintenance unit work). The shape "**a perk opens a new action**" is kept | Section 1.3, `00_perk_interactions.txt` (A) (provisional T29-23) |
 | Marriage | Take | Marriage between households carries the weight of a contract. Marriage across the river: chapter 07 section 11.4 | Chapter 07 section 11.4 |
 | Friends, rivals, hooks, secrets, blackmail | Take | Structure as is. The content of hooks differs by faction, sections 4.2 to 4.4 | `_hooks.info` (A, C) |
 | Schemes | Take | Structure as is. A discovery check each turn (section 3.2) | `murder_scheme.txt` (A) |
 | Regency | Take | A stand-in beside a young heir or a sick holder. As the scale rises, the stand-in eyes the seat | `00_regencies.txt` (A) |
 | Five to six title layers | Adapt | Five layers: station, dong, district (duchy), whole faction, head | 01-core 8 (provisional T02-60 to T02-80) |
 | De jure and drift | Drop | The geographic titles (dong cells, 25 districts) are a fixed land frame. There is no drift. 25 duchies = 14 + 7 + 4 [Approved] | 01-core 8, Bible 1, row 8 |
-| Seasons | Drop | There are no seasons. Inside the eternal winter [Approved] there are the long-light and long-dark seasons and blizzards. CK3 men-at-arms `winter_bonus` is every unit's base condition | Bible 1, row 4, chapter 07 sections 12.6 and 13 |
-| Three currencies (gold, prestige, piety) | Adapt | Gold's place is each polity's own reckoning (meals, kilos, day charges). Prestige's place is a household's name. Piety only in the Arc | Chapter 03 section 11 (provisional T04-49 to T04-54) |
-| Holdings and buildings | Adapt | Holding = station. Building = station facility (heat pump, well, fan, fibre sugar vat, light field, wind machine, water wheel, maintenance bench). Building costs include parts and engineers' hands | 01-core 4-5, chapter 03 section 3 |
+| Seasons | Drop | There are no seasons. Inside the eternal winter [Approved] there are the long-daylight and short-daylight halves and blizzards. CK3 men-at-arms `winter_bonus` is every unit's base condition | Bible 1, row 4, chapter 07 sections 12.6 and 13 |
+| Three currencies (gold, prestige, piety) | Adapt | Gold's place is each polity's own reckoning (meals, kWh, daily charge allowances). Prestige's place is a household's name. Piety only in the Arc | Chapter 03 section 11 (provisional T04-49 to T04-54) |
+| Holdings and buildings | Adapt | Holding = station. Building = station facility (heat pump, well, fan, cellulosic sugar vat, light field, wind turbine, water wheel, maintenance unit). Building costs include parts and engineers' hands | 01-core 4-5, chapter 03 section 3 |
 | Development and control | Adapt | Development = how far the station's four limits have been eased; control = how firmly the station is held | 01-core 4.1, 11 item 2 |
 | Events, decisions, situations | Take | Structure as is. The first big situation is the third water supply contract of 2126 | 01-core 11 item 5 |
 | Epidemics | Take | Stale air and short medicine speed the spread | `roster-framework.md` 6.1 `medicine` |
@@ -508,32 +508,32 @@ Basis: Bible 1, row 13 [Approved], 2.2 [Approved], 01-core 7.2 and 8.2, chapter 
 
 | CK3 system | Verdict | In the Free Cities | Source |
 |---|---|---|---|
-| Government variants | Adapt | The seven cities use **one skeleton** (CK2's merchant-city head selection `patrician elective` and the city assembly of CK3 Silk & Silver), and each city has different **knob values**: the number of seal houses (1-5), what counts as a kept surety, whether hearth kilos count, an added condition for stepping down, whether the seal is bound. There are no turns (the old Yeongdeungpo rule). Yangcheon is the city with only one seal house (in CK3 S&S a county-tier city holds one house); Gwanak is the city that bound the seal | Chapter 05 sections 2.1-2.2 (provisional T31-1, T31-18), the task 31 research record, sections 3-4 (path in Bible 9.4) |
-| Succession of the head | Adapt | **Name-worth at the masters' meeting.** No votes. The candidate with the highest name-worth = kept sureties × 2 + age (up to fifty) + hearth kilos ÷ 10 stands. This carries over CK2's Respect (age² + 2 × prestige + 5 × campaign fund, no vote, B-). The age cap of fifty comes from the age cap of 50 in CK3's city succession pool (A, `GAME/common/pool_character_selectors/00_city.txt`). The term is **for life** (CK2; CK3 1.20 republic description "for life", A) | Chapter 05 section 2.1 items 3, 4, 7 (provisional T31-5, T31-6, T31-9) |
-| Campaign fund | Adapt | **Hearth kilos.** Electricity given to the heat and meals of the masters' meeting. It can be taken back while the holder lives, and burns win or lose once the meeting opens (CK2 campaign fund, B-) | Chapter 05 section 2.1 item 5 (provisional T31-7) |
-| Candidacy | Adapt | One per seal house; no one under sixteen or with a broken seal. Taking a post in another city or another faction drops a candidate. The move of handing a rival an outside post (CK2: an heir holding land cannot inherit, B-) | Chapter 05 section 2.1 item 6 (provisional T31-8) |
-| Family palace | Adapt | **Losing houses keep their bench and seal.** They cannot be seized or taken back. If a house dies out, the remaining houses share its outside posts and the other workbench with the most kept sureties becomes a new seal house (CK2 family palace, house replacement, B-) | Chapter 05 section 2.1 item 9 (provisional T31-11) |
-| Trade posts | Adapt | **Outside posts.** A workbench's foothold in another city's station. One per station; one for every five hands of the house (four at most). Seal houses of the same city quarrel over them but cannot quarrel with the holder. If the station's city closes one, it becomes a broken sheet (CK2 trade post limit, B-; CK3 S&S one per county, B) | Chapter 05 section 2.1 items 10, 11 (provisional T31-12, T31-13) |
-| Despot succession | Adapt | **Binding the seal (Gwanak).** The masters' meeting changes the law so that the seat passes within one house. The title changes (Duke) and the other seal houses hold a grievance. The meeting remains and can send back Gwanak's sheet of the water supply contract (CK3 S&S despot succession and title change, B, unreleased design) | Chapter 05 section 2.1 item 14, section 3.7 (provisional T31-16, T31-25, T31-26) |
-| Hidden random | Adapt | **The wind share.** Within 5 name-worth, the candidate standing before the hearth at the first wind hour stands. In the game, a small hidden bonus on one candidate (CK2 hidden Respect 500, B-) | Chapter 05 section 2.1 item 15 (provisional T31-17) |
+| Government variants | Adapt | The seven cities use **one skeleton** (CK2's merchant-city head selection `patrician elective` and the city assembly of CK3 Silk & Silver), and each city has different **knob values**: the number of shareholding houses (1-5), what counts as a kept surety, whether heating contribution count, an added condition for stepping down, whether the seat is made hereditary. There are no turns (the old Yeongdeungpo rule). Yangcheon is the city with only one shareholding house (in CK3 S&S a county-tier city holds one house); Gwanak is the city that resolved to make the seat hereditary | Chapter 05 sections 2.1-2.2 (provisional T31-1, T31-18), the task 31 research record, sections 3-4 (path in Bible 9.4) |
+| Succession of the head | Adapt | **Reputation at the meeting of representatives.** No votes. The candidate with the highest reputation = kept sureties × 2 + age (up to fifty) + heating contribution ÷ 10 stands. This carries over CK2's Respect (age² + 2 × prestige + 5 × campaign fund, no vote, B-). The age cap of fifty comes from the age cap of 50 in CK3's city succession pool (A, `GAME/common/pool_character_selectors/00_city.txt`). The term is **for life** (CK2; CK3 1.20 republic description "for life", A) | Chapter 05 section 2.1 items 3, 4, 7 (provisional T31-5, T31-6, T31-9) |
+| Campaign fund | Adapt | **Heating contribution.** Electricity given to the heat and meals of the meeting of representatives. It can be taken back while the holder lives, and burns win or lose once the meeting opens (CK2 campaign fund, B-) | Chapter 05 section 2.1 item 5 (provisional T31-7) |
+| Candidacy | Adapt | One per shareholding house; no one under sixteen or with a broken seal. Taking a post in another city or another faction drops a candidate. The move of handing a rival an external office (CK2: an heir holding land cannot inherit, B-) | Chapter 05 section 2.1 item 6 (provisional T31-8) |
+| Family palace | Adapt | **Losing houses keep their workshop and seal.** They cannot be seized or taken back. If a house dies out, the remaining houses share its external offices and the other workshop with the most kept sureties becomes a new shareholding house (CK2 family palace, house replacement, B-) | Chapter 05 section 2.1 item 9 (provisional T31-11) |
+| Trade posts | Adapt | **Outside posts.** A workshop's foothold in another city's station. One per station; one for every five hands of the house (four at most). Shareholding houses of the same city quarrel over them but cannot quarrel with the holder. If the station's city closes one, it becomes a broken sheet (CK2 trade post limit, B-; CK3 S&S one per county, B) | Chapter 05 section 2.1 items 10, 11 (provisional T31-12, T31-13) |
+| Despot succession | Adapt | **The hereditary resolution (Gwanak).** The meeting of representatives changes the law so that the seat passes within one house. The title changes (Duke) and the other shareholding houses hold a grievance. The meeting remains and can send back Gwanak's sheet of the water supply contract (CK3 S&S despot succession and title change, B, unreleased design) | Chapter 05 section 2.1 item 14, section 3.7 (provisional T31-16, T31-25, T31-26) |
+| Hidden random | Adapt | **The tie-break.** Within 5 reputation, the candidate standing before the hearth at the first wind hour stands. In the game, a small hidden bonus on one candidate (CK2 hidden Respect 500, B-) | Chapter 05 section 2.1 item 15 (provisional T31-17) |
 | Trade leagues | Drop | There is no way for a league of cities to become one title (CK3 S&S, B) | Bible 2.2 [Approved] |
-| The player's passing of the turn | Adapt | A workbench house's bench master seat is inherited, but **an eldest who has not shown a hand cannot inherit.** The passing has a hand threshold: the next person must show they can do the bench's work alone. Without one, the house brings in someone who has shown a hand by marriage or contract | Chapter 05 section 5.2 (provisional T06-27) (provisional T29-21) |
+| The player's passing of the turn | Adapt | A workshop house's representative seat is inherited, but **an eldest who has not shown a hand cannot inherit.** The passing has a hand threshold: the next person must show they can do the workshop's work alone. Without one, the house brings in someone who has shown a hand by marriage or contract | Chapter 05 section 5.2 (provisional T06-27) (provisional T29-21) |
 | Realm hierarchy and head | Drop | No one stands above the cities. There is no collective name | Bible 1, row 13 [Approved], 2.2 [Approved] |
 | Vassal contract | Adapt | **Contract sheets** between cities. A sheet binds only the cities that stamped it. No vote | Chapter 05 section 4.2 (provisional T06-21) |
 | The place of truces and hostages | Adapt | **The pledge.** Until a sheet is paid off, something is left with the counterpart city; if the sheet is broken, the counterpart keeps it | Chapter 05 section 4.2 item 6 (provisional T06-22) (provisional T29-21) |
-| Prestige | Adapt | **Surety.** Fewer cities will make sheets at the next contract meeting with a city that withdrew its seal. Guarantees kept are its name | Chapter 05 sections 4.3 (provisional T06-23) and 6.3 (provisional T29-21) |
-| Gold | Adapt | Kilos and hand-hours | Chapter 03 section 11.2 (provisional T04-51) |
+| Prestige | Adapt | **Surety.** Fewer cities will make sheets at the next council with a city that withdrew its seal. Guarantees kept are its name | Chapter 05 sections 4.3 (provisional T06-23) and 6.3 (provisional T29-21) |
+| Gold | Adapt | Kilos and labour hours | Chapter 03 section 11.2 (provisional T04-51) |
 | Piety | Drop | No organised faith | Chapter 05 section 10.5, Bible 1, row 9 |
-| Council | Adapt | Inside a city there is the **masters' meeting** (the bench masters of the seal houses), which sets the city's law and large sheets and seats the holder (CK3 S&S assembly, B). Between cities there is no council, only the contract meeting called each time and its Host | Chapter 05 section 2.1 item 2 (provisional T31-4), section 4, 01-core 8.2 (provisional T02-70) |
-| Marriage | Take | Marriage between workbench houses is also a trade of skills | Chapter 05 section 5.2 |
+| Council | Adapt | Inside a city there is the **meeting of representatives** (the representatives of the shareholding houses), which sets the city's law and large sheets and seats the holder (CK3 S&S assembly, B). Between cities there is no council, only the council called each time and its host | Chapter 05 section 2.1 item 2 (provisional T31-4), section 4, 01-core 8.2 (provisional T02-70) |
+| Marriage | Take | Marriage between workshop houses is also a trade of skills | Chapter 05 section 5.2 |
 | Hooks | Adapt | A broken contract, a broken surety, a pledge not returned | Chapter 05 sections 4 and 6 (provisional T29-21) |
-| Levies | Adapt | **Watch share.** Every workbench gives some of its hands each year for a set number of days of watch. About 1,100 hands can be called at once. A skilled levy type | Chapter 05 section 11.1 (provisional T06-59), chapter 07 section 12.2 (provisional T08-79) |
+| Levies | Adapt | **Watch share.** Every workshop gives some of its hands each year for a set number of days of watch. About 1,100 hands can be called at once. A skilled levy type | Chapter 05 section 11.1 (provisional T06-59), chapter 07 section 12.2 (provisional T08-79) |
 | Men-at-arms | Drop | No standing army | Chapter 05 section 11.1 |
 | Mercenaries | Take | **Contract forces.** Hands bought by contract. About 600 more can be bought. The place of CK3's `mercenary_government` | Chapter 05 section 11.1, chapter 07 section 12.2, section 1.3 |
 | knights | Adapt | The holder of the city that raised the army, or the person to whom they handed command by contract | Chapter 05 section 11.2 (provisional T06-60) |
 | Allies fighting together | Adapt | Only by signing a **command sheet** do the squads of several cities become one army. That signing takes time is the weakness | Chapter 05 section 11.3 (provisional T06-61), section 3.11 |
 | Sieges | Adapt | Strong at cutting actions: they stop the fans of a station the enemy holds and block its exits | Chapter 05 section 11.4, section 3.8 |
-| Casus belli | Adapt | Collecting on a broken contract sheet, recovering engineers taken by the Arc, collecting on a water supply contract annex the Government broke. The cost of a casus belli is a contract meeting and a command sheet | 01-core 7.4, chapter 05 section 4.5 (provisional T29-19) |
+| Casus belli | Adapt | Collecting on a broken contract sheet, recovering engineers taken by the Arc, collecting on a water supply contract annex the Government broke. The cost of a casus belli is a council and a command sheet | 01-core 7.4, chapter 05 section 4.5 (provisional T29-19) |
 
 ### 4.4 The Arc
 
@@ -541,22 +541,22 @@ Basis: Bible 2.3 [Approved], 1 rows 9 and 14, 01-core 7.3 and 8.3, chapter 06 se
 
 | CK3 system | Verdict | In the Arc | Source |
 |---|---|---|---|
-| The player's passing of the turn | Adapt | The Head of the Near House seat passes by blood within the Near House. The person the Head named comes first; failing that, the Near House's household chooses. **The next Head of the Near House must have two parts or more** | Chapter 06 section 3.3 (provisional T07-8), 3.5 (provisional T07-10) |
-| Succession of the head | Adapt | A name the Hierophant spoke in life comes first; failing that, the Seat of the Four Near Houses chooses from the four Heads and their blood. If a bloodline arises, the bloodline comes first. A default and an owner question | Chapter 06 section 3.4 (provisional T07-9) |
-| Title revocation | Take | The Hierophant names and removes Near Houses. A removed household gives up its district | 01-core 7.3, chapter 06 section 3.2 |
-| House renown | Adapt | The two axes of **blood and iron**. The name of blood and side service (house axis) and the part count (person axis) stand apart. In the maintenance order a fitter with many parts can come before a Near House cousin | 01-core 7.3 (provisional T02-57), chapter 06 section 3.5 (provisional T29-22) |
-| Part count | Adapt | CK3 has no equivalent. The nearest is a trait with levels. A count per person starting from 0, and the threshold for titles (Head of the Near House 2, Shelter Head 1, Bench Keeper 3). The Hierophant is not counted | Chapter 06 section 3.5 (provisional T07-10), chapter 07 section 8.6 (provisional T08-58) (provisional T29-22) |
-| Faith (doctrines, conversion) | Adapt | The Arc is the one organised faith. Conversion's place is baptism, costing implant parts, maintenance turns and power. Doctrine's place is the Hierophant's word (not written down; repeated until it becomes law) | Bible 1, row 9 [Approved], chapter 06 sections 2.2 and 5 |
+| The player's passing of the turn | Adapt | The House Head seat passes by blood within the inner-circle house. The person the Head named comes first; failing that, the inner-circle house's household chooses. **The next House Head must have two parts or more** | Chapter 06 section 3.3 (provisional T07-8), 3.5 (provisional T07-10) |
+| Succession of the head | Adapt | A name the Hierophant spoke in life comes first; failing that, the Council of House Heads chooses from the four Heads and their blood. If a bloodline arises, the bloodline comes first. A default and an owner question | Chapter 06 section 3.4 (provisional T07-9) |
+| Title revocation | Take | The Hierophant names and removes inner-circle houses. A removed household gives up its district | 01-core 7.3, chapter 06 section 3.2 |
+| House renown | Adapt | The two axes of **blood and iron**. The name of blood and side service (house axis) and the part count (person axis) stand apart. In the maintenance order a fitter with many parts can come before an inner-circle house cousin | 01-core 7.3 (provisional T02-57), chapter 06 section 3.5 (provisional T29-22) |
+| Part count | Adapt | CK3 has no equivalent. The nearest is a trait with levels. A count per person starting from 0, and the threshold for titles (House Head 2, Shelter Head 1, Maintenance Foreman 3). The Hierophant is not counted | Chapter 06 section 3.5 (provisional T07-10), chapter 07 section 8.6 (provisional T08-58) (provisional T29-22) |
+| Faith (doctrines, conversion) | Adapt | The Arc is the one organised faith. Conversion's place is baptism, costing implant parts, maintenance queue places and power. Doctrine's place is the Hierophant's word (not written down; repeated until it becomes law) | Bible 1, row 9 [Approved], chapter 06 sections 2.2 and 5 |
 | Holy sites | Drop | No equivalent in the public setting | Chapter 06 section 15 is private, and this chapter does not deal with it |
 | Piety | Adapt | **The giving.** People of households that give generously move up the maintenance order sooner | Chapter 06 section 8.4 (provisional T07-38) (provisional T29-22) |
-| Gold | Adapt | Day charges and maintenance turns | Chapter 03 section 11.3 (provisional T04-52), chapter 06 section 8.2 (provisional T07-36) |
-| Council | Adapt | **The Seat of the Four Near Houses.** It hears disputes, divides power and parts shares, and settles agreements with other polities. No votes. Decisions end with the Hierophant's word | Chapter 06 section 3.6 (provisional T07-11) |
-| Cultural divergence | Take (as setting) | The Arc's split from the Free Cities is the real case. Free City workshop speech remains at the maintenance benches | 01-core 7.3 (provisional T02-101) |
-| Marriage | Take | Marriage with the Hierophant's bloodline is one of the ways to become a Near House. None in 2126 | Chapter 06 section 3.2 (provisional T07-7) |
+| Gold | Adapt | Day charges and maintenance queue places | Chapter 03 section 11.3 (provisional T04-52), chapter 06 section 8.2 (provisional T07-36) |
+| Council | Adapt | **The Council of House Heads.** It hears disputes, divides power and parts shares, and settles agreements with other polities. No votes. Decisions end with the Hierophant's word | Chapter 06 section 3.6 (provisional T07-11) |
+| Cultural divergence | Take (as setting) | The Arc's split from the Free Cities is the real case. Free City workshop speech remains at the maintenance units | 01-core 7.3 (provisional T02-101) |
+| Marriage | Take | Marriage with the Hierophant's bloodline is one of the ways to become an inner-circle house. None in 2126 | Chapter 06 section 3.2 (provisional T07-7) |
 | Hooks | Adapt | A skipped fitting day, a short giving, a part fitted outside | Chapter 06 sections 5.2, 5.7, 8.4 (provisional T29-22) |
-| Levies | Take | **House levies.** Each Near House sets a head count for each household. Many are unbaptised | Chapter 06 sections 11.1 and 11.5 (provisional T07-53) |
-| Men-at-arms | Adapt | **Baptised fighters** (two parts or more, aged twenty or more, about 1,300) and the five Near House armies. Old machines revived at the old Godeok depot (parts from the Suseo store, chapter 03 section 7.3) | Chapter 06 section 11.1 (provisional T07-49), chapter 07 section 12.2 (provisional T08-79) |
-| knights | Adapt | Heads of the Near Houses, Guard Captains, the Hierophant. The hero's part count goes into the handoff packet | Chapter 06 section 11.1, chapter 07 section 12.5 |
+| Levies | Take | **House levies.** Each inner-circle house sets a head count for each household. Many are unbaptised | Chapter 06 sections 11.1 and 11.5 (provisional T07-53) |
+| Men-at-arms | Adapt | **Baptised fighters** (two parts or more, aged twenty or more, about 1,300) and the five inner-circle house armies. Old machines revived at the old Godeok depot (parts from the Suseo store, chapter 03 section 7.3) | Chapter 06 section 11.1 (provisional T07-49), chapter 07 section 12.2 (provisional T08-79) |
+| knights | Adapt | House Heads, Guard Captains, the Hierophant. The hero's part count goes into the handoff packet | Chapter 06 section 11.1, chapter 07 section 12.5 |
 | Supply and attrition | Adapt | **Back before the parts run dry.** Arc armies do not stay long more than a day from their seat station. An army that loses its field fitters stops fighting and withdraws | Chapter 06 section 11.4 (provisional T07-52), section 7 item 7 |
 | Casus belli | Adapt | Holding the south mouths of the under-river tunnels and the weir's south end, disputes over land border stations, recovering the parts of the dead. The cost of a casus belli is the Hierophant's word | Chapter 06 section 11.3, chapter 03 section 4.7 (provisional T29-19) |
 
@@ -565,17 +565,17 @@ Basis: Bible 2.3 [Approved], 1 rows 9 and 14, 01-core 7.3 and 8.3, chapter 06 se
 | CK3 | Government | Free Cities | Arc |
 |---|---|---|---|
 | Passing of the turn | The named heir (handing down the seat) | The child who has shown a hand | By blood, but two parts or more |
-| Succession of the head | Acclamation by fourteen seals | Name-worth at the masters' meeting (Gwanak: the bound seal) | The name the Hierophant spoke; failing that, the Seat of the Four Near Houses |
+| Succession of the head | Acclamation by fourteen seal impressions | Reputation at the meeting of representatives (Gwanak: the bound seal) | The name the Hierophant spoke; failing that, the Council of House Heads |
 | Contract | Steps of ration share and levy quota | Contract sheets and pledges | Maintenance order and charging shares |
 | Prestige | The household's name | Surety | Blood and iron |
-| Gold | Meals, workdays | Kilos, hand-hours | Day charges, maintenance turns |
+| Gold | Meals, workdays | Kilos, labour hours | Day charges, maintenance queue places |
 | Piety | None | None | The giving |
-| Council | Ministers | Masters' meeting (inside a city), contract meetings (between cities) | The Seat of the Four Near Houses |
+| Council | Ministers | Meeting of representatives (inside a city), councils (between cities) | The Council of House Heads |
 | Factions | OMO Party and Claw Party | The cities | Blood and iron |
 | Hooks | Ledger flaws | Broken contracts | Skipped fitting days, short giving |
 | Levy type | Conscript infantry, reserves | Watch share | House levies |
 | Standing type | Career soldiers | Contract forces | Baptised fighters |
-| Command | Signed command | Command sheet | The Near House's army |
+| Command | Signed command | Command sheet | The inner-circle house's army |
 | What runs short | `ammo`, `fuel` | `cells`, `parts` | `implants`, `medicine` |
 
 Source: sections 4.2 to 4.4, `roster-framework.md` 9.3, chapter 07 section 12.
@@ -603,7 +603,7 @@ Basis: analysis section 5, section 1.3.
 - **Domains 02 (characters), 03 (relations) and 04 (schemes) have no domain document.** There are only fragments in `RUN/fragments/` and HTML samples. So there is **no full trait table, no table of options that raise stress, and no full lifestyle perk tree.** This is why the trait, stress and lifestyle mappings of section 4.1 stay at the level of structure.
 - **Crown authority and realm laws**: names only. The steps of the Government's "weight of the signature" (section 4.2) cannot be set.
 - **Full council tasks**: one of 4,133 definitions was seen. No per-seat skill effects either.
-- **How prestige and piety are gained**: no table of what raises and lowers them. This blocks setting figures for surety (Free Cities) and the giving (Arc).
+- **How prestige and piety are gained**: no table of what raises and lowers them. This blocks setting figures for surety (Free Cities) and the contribution (Arc).
 - **Knight count rules** (cap per ruler) and knight event chances: the attached-hero cap (section 3.4, provisional T29-7) has no basis.
 - **Levy size formula** (combining holdings, buildings, control, development), the full list of men-at-arms terrain and winter bonuses.
 - **Activities (beyond hunting and pilgrimage), landless adventurers, founding faiths, innovation progress, the full legacy tracks, the map movement cost formula, the save structure** (`DOM/09`, `DOM/10`, `DOM/11`, `DOM/12`, `DOM/14`, `DOM/16`).
@@ -620,7 +620,7 @@ Basis: analysis section 5, section 1.3.
 - Figures for battlefield width and squads engaging at once (section 3.4.1), holdout value and cutting actions (section 3.8), and the automatic battle formula (section 3.10): the battle design task.
 - Hyeongse factors per casus belli (section 3.7): the task that writes the casus belli table.
 - How each faction treats captives (section 3.5.3): the law and punishment sections of chapters 04 to 06.
-- Details of the Free Cities' masters' meeting (section 4.3, task 31): CK3 Silk & Silver is due on 2026-11-17 and is not in the installed 1.20.1.2. After release, read `GAME/common/governments`, `GAME/common/laws` and `GAME/common/succession_election` to check whether candidacy and vote weighting depart from this chapter's skeleton. The weights of the name-worth formula (surety 2, age 1, 1 per 10 kilos) are provisional.
+- Details of the Free Cities' meeting of representatives (section 4.3, task 31): CK3 Silk & Silver is due on 2026-11-17 and is not in the installed 1.20.1.2. After release, read `GAME/common/governments`, `GAME/common/laws` and `GAME/common/succession_election` to check whether candidacy and vote weighting depart from this chapter's skeleton. The weights of the reputation formula (surety 2, age 1, 1 per 10 kWh) are provisional.
 
 ## 7. Changes handed to other chapters
 
