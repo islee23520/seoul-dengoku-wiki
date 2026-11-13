@@ -1,5 +1,7 @@
 # lore/factions — 정치 주체와 연결 원천
 
+> **v3 권위(2026-11-13):** 이 폴더의 세계관 정본은 `docs/CANON-BIBLE.md`, `docs/design/v3/`(01~10장)과 `data/sql`이다. 아래 옛 지침과 표에 적힌 파일·국가·조직·직위가 v3와 어긋나면 v3를 따른다. v3와 어긋나는 옛 Markdown 로어 파일은 과제 27에서 정리했다(`docs/drafts/reports/v3-legacy-disposition.md`).
+
 ## OVERVIEW
 안정 정치 ID, 지도자·가문·회랑 서사를 관리하며 지리 작위와 구분한다.
 

@@ -1,5 +1,7 @@
 # lore/name-pools — 이름·신원·가계·가치 데이터
 
+> **v3 권위(2026-11-13):** 이 폴더의 세계관 정본은 `docs/CANON-BIBLE.md`, `docs/design/v3/`(01~10장)과 `data/sql`이다. 아래 옛 지침과 표에 적힌 파일·국가·조직·직위가 v3와 어긋나면 v3를 따른다. v3와 어긋나는 옛 Markdown 로어 파일은 과제 27에서 정리했다(`docs/drafts/reports/v3-legacy-disposition.md`).
+
 ## OVERVIEW
 인물의 영구 ID, 명명 출처, 생일·가계와 가치관 수치를 보관하는 구조화 데이터 도메인이다.
 

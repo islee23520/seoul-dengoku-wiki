@@ -1,5 +1,7 @@
 # lore/places — 지도·역·건물 원천
 
+> **v3 권위(2026-11-13):** 이 폴더의 세계관 정본은 `docs/CANON-BIBLE.md`, `docs/design/v3/`(01~10장)과 `data/sql`이다. 아래 옛 지침과 표에 적힌 파일·국가·조직·직위가 v3와 어긋나면 v3를 따른다. v3와 어긋나는 옛 Markdown 로어 파일은 과제 27에서 정리했다(`docs/drafts/reports/v3-legacy-disposition.md`).
+
 ## OVERVIEW
 서울 지도 기사, 역 식별·연결·별칭과 건물 재사용 계약을 관리한다.
 
