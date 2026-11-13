@@ -337,32 +337,49 @@
 - **전문어(사전 표제어는 아니나 지금 쓰는 기술어):** 드론(법령 용어), 휴머노이드 로봇, 전지 팩, 셀, 하저 터널, 지열 열펌프, 사족 보행 로봇, 귀환 무인 차량, 무인 경계 초소, 유선 드론.
 - **결합어(설계 문서 전용):** 비동결층(비(非)- + 동결 #414712 + 층 #490427). 표제어도 확인된 기술어도 아니어서 전문어로 두지 않는다. 영구 동토 문헌의 외래어 탈릭은 괄호로만 덧붙인다(2절 29번).
 
-## 5. 생태 도감 18 항목의 이름(과제 40, 2026-11-13. 옛 12 항목은 소유자 결정 2026-11-13, 11장 5.3절)
+## 5. 생태 도감 항목의 이름
 
-과제 40이 02장을 다시 쓰며 12 항목을 18 항목으로 바꿨다(02장 1.4절, 15절의 판정 표). 18 항목은 소유자 확인 전의 잠정이다(잠정 T40-1). 옛 12 항목의 처분은 02장 13절에 있다. 사전 번호가 없는 칸은 02장 15절과 `docs/research/v3-ecology-physical-ai.md` 8절의 2026-11-13 검색 결과를 따른다.
+### 5.1 소유자 결정(2026-11-13): 12 항목(11장 5.3절)
 
-| # | 항목 | 상태 | English | 옛 12 항목 |
+| # | 항목 | 상태 | English |
+|---|---|---|---|
+| 1 | 시궁쥐 | 표제어 #198731 | brown rat |
+| 2 | 큰부리까마귀 | 표제어 #496731 | large-billed crow |
+| 3 | 들개 | 표제어 #417123 | feral dog |
+| 4 | 서비스 로봇 | 전문어 | service robot |
+| 5 | 사족 보행 점검 로봇 | 전문어 | quadruped inspection robot |
+| 6 | 공장 휴머노이드 로봇(11장의 "공장 사람 꼴 로봇"을 2절 50번으로 바꾼다) | 전문어 | factory humanoid robot |
+| 7 | 선로 점검 로봇 | 결합어(선로 #444996) | track inspection robot |
+| 8 | 귀환 무인 차량 | 전문어 | returning unmanned ground vehicle |
+| 9 | 무인 경계 초소 | 전문어 | unmanned sentry post |
+| 10 | 봉쇄 감시망 | 결합어(봉쇄 #432394, 감시망 #388202) | blockade surveillance network |
+| 11 | 군집 드론 | 전문어 | drone swarm |
+| 12 | 불발 탄두와 광섬유 | 결합어(불발탄 #149308, 광섬유 #396227) | unexploded warheads and optical fibre |
+
+### 5.2 잠정 제안(과제 40): 18 항목
+
+과제 40이 02장을 다시 쓰며 낸 제안이다(02장 1.4절, 15절). 소유자가 답하기 전에는 5.1절이 결정이다(잠정 T40-1, 02장 16.3절 1번).
+
+| # | 항목 | 상태 | English | 5.1절과의 관계 |
 |---|---|---|---|---|
-| 1 | 시궁쥐와 생쥐 | 표제어(시궁쥐 #198731, 생쥐) | brown rat and house mouse | 1 시궁쥐 |
-| 2 | 바퀴(국가생물종목록: 독일바퀴. 독일바퀴는 표제어 없음) | 표제어 | cockroach | 없음 |
-| 3 | 빨간집모기(국가생물종목록: 지하집모기. 지하집모기는 표제어 없음) | 표제어 | northern house mosquito (underground form) | 없음 |
-| 4 | 들개 | 표제어 #417123 | feral dog | 3 들개 |
-| 5 | 꼽등이 | 표제어 | cave cricket | 없음 |
-| 6 | 팽이버섯과 곰팡이 | 표제어 | enoki mushroom and moulds | 없음 |
-| 7 | 붕어와 빙어 | 표제어 | crucian carp and pond smelt | 없음 |
-| 8 | 큰부리까마귀 | 표제어 #496731 | large-billed crow | 2 큰부리까마귀 |
-| 9 | 지의류 | 표제어 | lichens | 없음 |
-| 10 | 서비스 로봇 | 전문어 | service robot | 4 서비스 로봇 |
-| 11 | 점검 로봇 | 결합어(사족 보행 점검 로봇은 전문어, 선로 #444996) | inspection robot | 5 사족 보행 점검 로봇, 7 선로 점검 로봇 |
-| 12 | 돌봄 로봇 | 결합어 | care robot | 없음(11장의 도감 밖 유물 "돌봄 인형") |
-| 13 | 물류 로봇 무리 | 결합어 | logistics robot fleet | 6 공장 휴머노이드 로봇 |
-| 14 | 봉쇄 감시망 | 결합어(봉쇄 #432394, 감시망 #388202) | blockade surveillance network | 10 봉쇄 감시망, 9 무인 경계 초소 |
-| 15 | 귀환 무인 차량 | 전문어 | returning unmanned ground vehicle | 8 귀환 무인 차량 |
-| 16 | 군집 무인기 | 결합어(군집 #401912, 무인기 #123272). "드론"은 표제어가 아니다 | UAV swarm | 11 군집 드론 |
-| 17 | 불발 탄두와 광섬유 | 결합어(불발탄 #149308, 광섬유 #396227) | unexploded warheads and optical fibre | 12 불발 탄두와 광섬유 |
-| 18 | 원격 조종 곤충 | 결합어 | remote-controlled insect | 없음 |
-
-2.3절 56번의 바꿀 말 "군집 드론"은 02장에서 "군집 무인기"로 쓴다. 다른 장의 "드론"(4절 전문어)을 바꿀지는 소유자 질문이다(02장 16.3절 2번).
+| 1 | 시궁쥐와 생쥐 | 표제어(시궁쥐 #198731, 생쥐) | brown rat and house mouse | 1을 넓힘 |
+| 2 | 바퀴(국가생물종목록: 독일바퀴, 표제어 없음) | 표제어 | cockroach | 새 항목 |
+| 3 | 빨간집모기(국가생물종목록: 지하집모기, 표제어 없음) | 표제어 | northern house mosquito (underground form) | 새 항목 |
+| 4 | 들개 | 표제어 #417123 | feral dog | 3 |
+| 5 | 꼽등이 | 표제어 | cave cricket | 새 항목 |
+| 6 | 팽이버섯과 곰팡이 | 표제어 | enoki mushroom and moulds | 새 항목 |
+| 7 | 붕어와 빙어 | 표제어 | crucian carp and pond smelt | 새 항목 |
+| 8 | 큰부리까마귀 | 표제어 #496731 | large-billed crow | 2 |
+| 9 | 지의류 | 표제어 | lichens | 새 항목 |
+| 10 | 서비스 로봇 | 전문어 | service robot | 4 |
+| 11 | 점검 로봇 | 결합어(사족 보행 점검 로봇은 전문어) | inspection robot | 5와 7을 합침 |
+| 12 | 돌봄 로봇 | 결합어 | care robot | 새 항목(11장의 도감 밖 유물 "돌봄 인형") |
+| 13 | 물류 로봇 무리 | 결합어 | logistics robot fleet | 6을 바꿈 |
+| 14 | 봉쇄 감시망 | 결합어(봉쇄 #432394, 감시망 #388202) | blockade surveillance network | 10에 9를 합침 |
+| 15 | 귀환 무인 차량 | 전문어 | returning unmanned ground vehicle | 8 |
+| 16 | 군집 드론 | 전문어 | drone swarm | 11 |
+| 17 | 불발 탄두와 광섬유 | 결합어(불발탄 #149308, 광섬유 #396227) | unexploded warheads and optical fibre | 12 |
+| 18 | 원격 조종 곤충 | 결합어 | remote-controlled insect | 새 항목 |
 
 ## 6. 과제 38 3부에 넘길 것
 
