@@ -44,6 +44,7 @@ node scripts/pages/v3-fixed-facts.mjs --check   # 고정 사실이 스냅샷과 
 | `08-document-map.md` | 61개 slug의 v3 주제, 새 제목, 근거 절, 문서 과제 10~15 묶음. 새 slug 없음 | 9 |
 | `09-ck3-systems.md` | CK3 역공학 근거: 캠페인 층과 전장 층의 결합 계약, 세력별 CK3 대응 | 29 |
 | `10-design-profile.md` | 설계 지침(`.agents/skills/game-design-practice/SKILL.md`)을 이 프로젝트에 적용하는 값(한국어만) | 오케스트레이터(4ee82a33c) |
+| `13-life.md` | 2126년 서울의 삶: 토양(물려받은 2026년 서울의 실물), 결핍의 사다리, 공포, 갈등의 구조, 다섯 시대의 인과, 세 정체의 삶, 드라마의 엔진. 한국어만(영어 미러는 검토 뒤) | 39 |
 
 통합 기록: `docs/drafts/reports/v3-integration-log.md`(과제 9가 찾고 고친 장 사이의 어긋남, 이긴 쪽과 까닭). 정본 바이블 `docs/CANON-BIBLE.md` 0절이 이 디렉터리를 골격 아래의 권위로 가리킨다.
 
