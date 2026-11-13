@@ -3,27 +3,27 @@
   "personId": "person-0054",
   "characterId": "K054",
   "name": "엄누리",
-  "stateId": "S02",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "후계시험 부품 감정 직공"
+    "role": "낙성대역 역반장 · 자유도시들"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, youthful smooth skin",
     "hair": "medium-length hair swept back",
-    "upper": "forest green short wool jacket with a stand collar",
-    "outfit": "forest green short wool jacket with a stand collar",
+    "upper": "깃에 파란 끈을 두른 연기 냄새가 밴 짙은 남색 합성 섬유 겹 작업복, 솜 조끼",
+    "outfit": "깃에 파란 끈을 두른 연기 냄새가 밴 짙은 남색 합성 섬유 겹 작업복, 솜 조끼",
     "palette": [
-      "forest green",
-      "khaki",
-      "oxblood"
+      "deep navy",
+      "blue",
+      "smoke grey"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "khaki straight wool trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "duty whistle on a cord lanyard"
+    "lower": "dark synthetic trousers",
+    "footwear": "felt-lined boots",
+    "accessories": "pencil and a bound notebook of oiled synthetic sheets"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "knitted blue cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "forest green short wool jacket with a stand collar",
+        "value": "깃에 파란 끈을 두른 연기 냄새가 밴 짙은 남색 합성 섬유 겹 작업복, 솜 조끼",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "khaki straight wool trousers",
+        "value": "dark synthetic trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt-lined boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "quilted collar with a blue cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "duty whistle on a cord lanyard",
+        "value": "pencil and a bound notebook of oiled synthetic sheets",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull brass",
+        "value": "grey cover",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, cord",
+        "value": "synthetic sheets, graphite",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "lanyard around the neck",
+        "value": "notebook in the breast pocket",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small bound book",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 엄누리, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: medium warm beige. upper garment: forest green short wool jacket with a stand collar; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: forest green, khaki, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 엄누리, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: medium warm beige. headwear: knitted blue cap; upper garment: 깃에 파란 끈을 두른 연기 냄새가 밴 짙은 남색 합성 섬유 겹 작업복, 솜 조끼; neckline: quilted collar with a blue cord. accessories: pencil and a bound notebook of oiled synthetic sheets; worn as notebook in the breast pocket. color palette: deep navy, blue, smoke grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 엄누리, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: forest green short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: khaki straight wool trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: forest green, khaki, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 엄누리, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. headwear: knitted blue cap; upper garment: 깃에 파란 끈을 두른 연기 냄새가 밴 짙은 남색 합성 섬유 겹 작업복, 솜 조끼; neckline: quilted collar with a blue cord; lower garment: dark synthetic trousers; footwear: felt-lined boots. accessories: pencil and a bound notebook of oiled synthetic sheets; worn as notebook in the breast pocket. color palette: deep navy, blue, smoke grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 엄누리, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: forest green short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: khaki straight wool trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: forest green, khaki, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 엄누리, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. headwear: knitted blue cap; upper garment: 깃에 파란 끈을 두른 연기 냄새가 밴 짙은 남색 합성 섬유 겹 작업복, 솜 조끼; neckline: quilted collar with a blue cord; lower garment: dark synthetic trousers; footwear: felt-lined boots. accessories: pencil and a bound notebook of oiled synthetic sheets; worn as notebook in the breast pocket. color palette: deep navy, blue, smoke grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 엄누리, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: forest green short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: khaki straight wool trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: forest green, khaki, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 엄누리, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. headwear: knitted blue cap; upper garment: 깃에 파란 끈을 두른 연기 냄새가 밴 짙은 남색 합성 섬유 겹 작업복, 솜 조끼; neckline: quilted collar with a blue cord; lower garment: dark synthetic trousers; footwear: felt-lined boots. accessories: pencil and a bound notebook of oiled synthetic sheets; worn as notebook in the breast pocket. color palette: deep navy, blue, smoke grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 엄누리, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: forest green short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: khaki straight wool trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: forest green, khaki, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 엄누리, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; dark brown hair; medium length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. headwear: knitted blue cap; upper garment: 깃에 파란 끈을 두른 연기 냄새가 밴 짙은 남색 합성 섬유 겹 작업복, 솜 조끼; neckline: quilted collar with a blue cord; lower garment: dark synthetic trousers; footwear: felt-lined boots. accessories: pencil and a bound notebook of oiled synthetic sheets; worn as notebook in the breast pocket. color palette: deep navy, blue, smoke grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

@@ -1,397 +1,139 @@
 {
   "id": "person-0144",
   "name": "남휘강",
-  "title": "수문 교량 봉쇄 지휘관",
-  "position": "수문 교량 봉쇄 지휘관",
+  "title": "암사2동 대피소장",
+  "position": "암사2동 대피소장 · 아크",
   "characterId": "K143",
-  "rank": "병장",
-  "commonTier": "T5",
-  "occupation": "교량 레버·개방 연서 관리",
+  "rank": "대피소장",
+  "commonTier": "T3",
+  "occupation": "대피소 통솔",
   "gender": "여성",
   "stage": "S2",
-  "state": "S05",
-  "stateName": "동방사",
-  "sourceRoute": "/world/Cast-State-05#인물-남휘강",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0144",
   "birthDate": "2082-07-09",
   "birthday": "07-09",
   "age": 44,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-05.json#/content/698"
-  ],
-  "familyTree": {
-    "personId": "K143",
-    "nodes": [
-      {
-        "id": "K143",
-        "personId": "K143",
-        "kind": "person",
-        "name": "남휘강",
-        "birthDate": "2082-07-09",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K143"
-          },
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-남휘강-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 수문 교량 봉쇄 지휘관 자리는 야간 무단 도하 적발로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-남휘강-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0144"
-      },
-      {
-        "id": "FH-K143-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "남승석",
-        "lineage": {
-          "surname": "남",
-          "bongwan": "의령",
-          "clan": "b0a8-c758-b839"
-        },
-        "birthDate": "2052-07-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-남휘강-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2090,
-            "summary": "남승석은 암사 경비 초소에서 교량 레버·개방 연서 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-남휘강-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K143-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "남승준",
-        "lineage": {
-          "surname": "남",
-          "bongwan": "의령",
-          "clan": "b0a8-c758-b839"
-        },
-        "birthDate": "2022-07-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-남휘강-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "남승준은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-남휘강-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K143-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김현현",
-        "birthDate": "2052-07-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-남휘강-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2090,
-            "summary": "김현현은 암사 경비 초소에서 교량 레버·개방 연서 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-남휘강-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K143-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박현진",
-        "birthDate": "2022-07-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-남휘강-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박현진은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-남휘강-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K143-P-01:K143:biological",
-        "from": "FH-K143-P-01",
-        "to": "K143",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-남휘강-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K143-P-02:FH-K143-P-01:biological",
-        "from": "FH-K143-P-02",
-        "to": "FH-K143-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-남휘강-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K143-M-01:K143:biological",
-        "from": "FH-K143-M-01",
-        "to": "K143",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-남휘강-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K143-M-02:FH-K143-M-01:biological",
-        "from": "FH-K143-M-02",
-        "to": "FH-K143-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-남휘강-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b0a8-c758-b839",
+    "name": "의령 남씨",
+    "crest": "clan-crests/b0a8-c758-b839.svg"
   },
-  "proseContacts": [
-    {
-      "recipientId": "K115",
-      "recipientName": "배우진",
-      "basis": "배우진의 호위망과 겹치지만, 교량 레버는 나누어 쥔다.",
-      "sourceRef": {
-        "path": "lore/characters/Cast-State-05.json",
-        "anchor": "인물-남휘강-p5"
-      }
-    }
-  ],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "남휘강의 대피소 사람들은 대부분 암사 취수구와 강가 얼음 구멍에서 일하는 미세례자 집안이다. 암사2동 대피소장인 그는 마흔넷에 부위가 하나뿐이고, 첫 교대 부르기 때면 세례록보다 대피소 명부를 부르는 시간이 훨씬 길다. 강물이 얼음 알갱이로 막히는 날에는 취수구에서 돌아온 사람들에게 끼니를 한 몫씩 더 내고, 그 셈을 암사역 정비장 나효원과 맞춘다. 그의 명부에는 얼음 구멍 집안마다 그 집 사람이 마지막으로 얼음 위에 나간 날이 적혀 있고, 그 칸이 사흘 넘게 비면 그는 그 집 잠자리로 직접 내려간다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "암사2동 대피소장",
+    "품계": "대피소장",
+    "생업": "대피소 통솔",
+    "일하는 역": "암사역",
+    "잠자는 역": "암사역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "남휘강의 대피소 사람들은 대부분 암사 취수구와 강가 얼음 구멍에서 일하는 미세례자 집안이다. 암사2동 대피소장인 그는 마흔넷에 부위가 하나뿐이고, 첫 교대 부르기 때면 세례록보다 대피소 명부를 부르는 시간이 훨씬 길다. 강물이 얼음 알갱이로 막히는 날에는 취수구에서 돌아온 사람들에게 끼니를 한 몫씩 더 내고, 그 셈을 암사역 정비장 나효원과 맞춘다. 그의 명부에는 얼음 구멍 집안마다 그 집 사람이 마지막으로 얼음 위에 나간 날이 적혀 있고, 그 칸이 사흘 넘게 비면 그는 그 집 잠자리로 직접 내려간다.",
+    "관직": "직함 암사2동 대피소장. 직위 암사2동 대피소장 · 아크. 품계 대피소장. 일하는 역 암사역."
+  },
+  "values": {
+    "권위": 80,
+    "개방": -50,
+    "무력": 80,
+    "물질": -30,
+    "공동": 50,
+    "원칙": -40,
+    "공개": -90,
+    "자격": -55,
+    "분산": -80,
+    "변혁": 10
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": -30,
+    "위험": -25,
+    "과시": 10,
+    "지속": 15,
+    "지향": "동성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0144",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "남휘강",
+        "type": "지휘",
+        "to": "배우진",
+        "basis": "강동 곁집장 배우진의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "나효원",
+        "type": "지휘",
+        "to": "남휘강",
+        "basis": "암사2동 대피소장 남휘강의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K115",
+    "name": "배우진",
+    "courtId": "court:K115",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K143",
+    "members": [
+      {
+        "personId": "K131",
+        "name": "나효원"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "learning": {
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
       "prowess": {
-        "base": 5,
-        "effective": 5
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k143-bridge-countersign",
-        "name": {
-          "ko": "교량 개방 연서 확인",
-          "en": "Bridge opening countersign checking"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k143-choice",
-        "name": {
-          "ko": "단독 개방 거부",
-          "en": "Rejects unilateral opening"
-        },
-        "description": {
-          "ko": "교량 위에서는 짧게 말하고, 봉쇄 레버를 누구 손으로 내리는지만 확인한다. 칭찬보다 봉인 시각을 남긴다.",
-          "en": "He spoke briefly on the bridge and confirmed only whose hand lowered the blockade lever. He left sealing hours over praise."
-        },
-        "behavior": {
-          "ko": "일화. 배우진의 호위망에서 온 전령이 구두 지시와 명령서 한 장만으로 수문 교량 개방을 청한다. 남휘강은 명령서를 돌려보내고, 두 번째 당직의 연서가 올 때까지 봉쇄 레버를 쥔 채 교량 위 봉인 시각을 적는다.",
-          "en": "Anecdote. A runner from Bae Woojin's escort net asks for the sluice bridge to be opened on a spoken order and a single written command. Nam Hwigang sends the command back and, keeping hold of the blockade lever until a second duty officer's joint signature comes, writes down the seal time on the bridge."
-        },
-        "stress": {
-          "ko": "공포. 봉쇄 키가 한 손에 모이면 교량이 약소국 볼모가 되는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That when the blockade keys gathered in one hand, the bridge would become the lesser states' hostage. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 배우진의 호위망과 겹치지만, 교량 레버는 나누어 쥔다.",
-          "en": "Relations. Overlapping Bae Woojin's escort network, but holding the bridge lever divided."
-        },
-        "effects": []
-      },
-      {
-        "id": "k143-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 병장. 직함은 수문 교량 봉쇄 지휘관. 개방 요청은 두 명의 당직 연서가 있어야 받고, 한 장의 명령서는 돌려보낸다.",
-          "en": "Office. Rank: sergeant. Title: water gate bridge blockade commander. He took opening requests only with two duty hands' joint signature and sent back a single order sheet."
-        },
-        "behavior": {
-          "ko": "관직. 품계 병장. 직함은 수문 교량 봉쇄 지휘관. 개방 요청은 두 명의 당직 연서가 있어야 받고, 한 장의 명령서는 돌려보낸다.",
-          "en": "Office. Rank: sergeant. Title: water gate bridge blockade commander. He took opening requests only with two duty hands' joint signature and sent back a single order sheet."
-        },
-        "stress": {
-          "ko": "공포. 봉쇄 키가 한 손에 모이면 교량이 약소국 볼모가 되는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That when the blockade keys gathered in one hand, the bridge would become the lesser states' hostage. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 배우진의 호위망과 겹치지만, 교량 레버는 나누어 쥔다.",
-          "en": "Relations. Overlapping Bae Woojin's escort network, but holding the bridge lever divided."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "일화. 배우진의 호위망에서 온 전령이 구두 지시와 명령서 한 장만으로 수문 교량 개방을 청한다. 남휘강은 명령서를 돌려보내고, 두 번째 당직의 연서가 올 때까지 봉쇄 레버를 쥔 채 교량 위 봉인 시각을 적는다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Anecdote. A runner from Bae Woojin's escort net asks for the sluice bridge to be opened on a spoken order and a single written command. Nam Hwigang sends the command back and, keeping hold of the blockade lever until a second duty officer's joint signature comes, writes down the seal time on the bridge. Titles and ambitions are not treated as accomplished authority or results."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -401,7 +143,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -427,57 +169,52 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b0a8-c758-b839",
-    "name": "의령 남씨",
-    "crest": "clan-crests/b0a8-c758-b839.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 55,
-    "개방": -35,
-    "무력": 70,
-    "물질": 20,
-    "공동": 30,
-    "원칙": -30,
-    "공개": -45,
-    "자격": -20,
-    "분산": -50,
-    "변혁": -35
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": -30,
-    "위험": -25,
-    "과시": 10,
-    "지속": 15,
-    "지향": "동성",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "동방사",
-    "생업": "교량 레버·개방 연서 관리",
-    "품계": "병장",
-    "직함": "수문 교량 봉쇄 지휘관",
-    "가치관": "권위 55 | 개방 −35 | 무력 70 | 물질 20 | 공동 30 | 원칙 −30 | 공개 −45 | 자격 −20 | 분산 −50 | 변혁 −35",
-    "욕망": "갈망 45 | 독점 −30 | 위험 −25 | 과시 10 | 지속 15 | 지향 동성 | 결합 없음"
-  },
-  "sections": {
-    "관직": "품계 병장. 직함은 수문 교량 봉쇄 지휘관. 개방 요청은 두 명의 당직 연서가 있어야 받고, 한 장의 명령서는 돌려보낸다.",
-    "일화": "배우진의 호위망에서 온 전령이 구두 지시와 명령서 한 장만으로 수문 교량 개방을 청한다. 남휘강은 명령서를 돌려보내고, 두 번째 당직의 연서가 올 때까지 봉쇄 레버를 쥔 채 교량 위 봉인 시각을 적는다.",
-    "관계": "배우진의 호위망과 겹치지만, 교량 레버는 나누어 쥔다.",
-    "야망": "수문 교량 봉쇄권을 동방사 사령의 구두 지시가 아니라 교량 장부에 단독 항목으로 올린다.\n\n공포. 남휘강은 봉쇄 키가 한 손에 모이면 교량이 약소국 볼모가 되는 일을 두려워한다.",
-    "개입": "봉쇄 연서에 이름을 올리거나, 열린 보행로를 숨길 수 있다."
-  },
-  "biography": "남휘강은 교량 위에서는 짧게 말하고, 봉쇄 레버를 누구 손으로 내리는지만 확인한다. 칭찬보다 봉인 시각을 남긴다.\n\n- 소속: 동방사\n- 생업: 교량 레버·개방 연서 관리\n- 품계: 병장\n- 직함: 수문 교량 봉쇄 지휘관\n생애. 남휘강은 3세대에 태어났다. 남휘강은 암사 경비 초소에서 자랐다. 남휘강의 수문 교량 봉쇄 지휘관 자리는 야간 무단 도하 적발로 열렸다.\n- 남휘강은 암사2동과 연결된 업무에서 교량 레버와 두 당직자의 연서를 확인하고 한 장짜리 명령서는 반려한다. 사령의 구두 지시만으로 봉쇄 키를 한 사람에게 모을 수 없다.\n\n**관직.** 품계 병장. 직함은 수문 교량 봉쇄 지휘관. 개방 요청은 두 명의 당직 연서가 있어야 받고, 한 장의 명령서는 돌려보낸다.\n\n**일화.** 배우진의 호위망에서 온 전령이 구두 지시와 명령서 한 장만으로 수문 교량 개방을 청한다. 남휘강은 명령서를 돌려보내고, 두 번째 당직의 연서가 올 때까지 봉쇄 레버를 쥔 채 교량 위 봉인 시각을 적는다.\n\n**관계.** 배우진의 호위망과 겹치지만, 교량 레버는 나누어 쥔다.\n\n**야망.** 수문 교량 봉쇄권을 동방사 사령의 구두 지시가 아니라 교량 장부에 단독 항목으로 올린다.\n\n공포. 남휘강은 봉쇄 키가 한 손에 모이면 교량이 약소국 볼모가 되는 일을 두려워한다.\n\n**개입.** 봉쇄 연서에 이름을 올리거나, 열린 보행로를 숨길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −35 | 무력 70 | 물질 20 | 공동 30 | 원칙 −30 | 공개 −45 | 자격 −20 | 분산 −50 | 변혁 −35\n- 욕망: 갈망 45 | 독점 −30 | 위험 −25 | 과시 10 | 지속 15 | 지향 동성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-05"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1174058000",
+      "name": {
+        "ko": "암사2동"
+      },
+      "holderPersonId": "K143",
+      "directLiegePersonId": "K115",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1174058000",
+          "name": "암사2동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
   ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:암사",
+      "name": {
+        "ko": "암사역"
+      },
+      "holderPersonId": "K131",
+      "directLiegePersonId": "K143",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "암사",
+        "stationName": "암사"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1174058000",
+          "name": "암사2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "나효원",
+      "holderRoute": "/people/person-0132"
+    }
+  ]
 }

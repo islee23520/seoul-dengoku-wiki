@@ -1,415 +1,108 @@
 {
   "id": "person-0337",
   "name": "천다올",
-  "title": "의무호송 기지 당직장, 남호성의 실무 담당자",
-  "position": "의무호송 기지 당직장, 남호성의 실무 담당자",
+  "title": "의사",
+  "position": "의사 · 연신내역",
   "characterId": "K336",
-  "rank": "수련의",
-  "commonTier": "T3",
-  "occupation": "의무호송증 환자·약재 중량 기록",
+  "rank": "등재민",
+  "commonTier": "T5",
+  "occupation": "진료",
   "gender": "여성",
   "stage": "S2",
-  "state": "S13",
-  "stateName": "흰십자단",
-  "sourceRoute": "/world/Cast-State-13#인물-천다올",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0337",
   "birthDate": "2095-06-03",
   "birthday": "06-03",
   "age": 31,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-13.json#/content/182",
-    "lore/characters/Cast-State-13.json#/content/184"
-  ],
-  "familyTree": {
-    "personId": "K336",
-    "nodes": [
-      {
-        "id": "K336",
-        "personId": "K336",
-        "kind": "person",
-        "name": "천다올",
-        "birthDate": "2095-06-03",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K336"
-          },
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-천다올-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 의무호송 당직 수련의 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-천다올-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0337"
-      },
-      {
-        "id": "FH-K336-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "천승호",
-        "lineage": {
-          "surname": "천",
-          "bongwan": "영양",
-          "clan": "cc9c-c601-c591-agreed-b2e4-first"
-        },
-        "birthDate": "2065-06-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-천다올-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2103,
-            "summary": "천승호는 신정 차량기지에서 의무호송증 환자·약재 중량 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-천다올-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K336-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "천승민",
-        "lineage": {
-          "surname": "천",
-          "bongwan": "영양",
-          "clan": "cc9c-c601-c591-agreed-b2e4-first"
-        },
-        "birthDate": "2035-06-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-천다올-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "천승민은 신정 차량기지에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-천다올-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K336-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "천승원",
-        "lineage": {
-          "surname": "천",
-          "bongwan": "영양",
-          "clan": "cc9c-c601-c591-agreed-b2e4-first"
-        },
-        "birthDate": "2005-06-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-천다올-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "천승원은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-천다올-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K336-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준수",
-        "birthDate": "2065-06-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-천다올-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2103,
-            "summary": "박준수는 신정 차량기지에서 의무호송증 환자·약재 중량 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-천다올-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K336-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준수",
-        "birthDate": "2035-06-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-천다올-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "이준수는 신정 차량기지에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-천다올-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K336-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준훈",
-        "birthDate": "2005-06-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-천다올-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최준훈은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-천다올-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K336-P-01:K336:biological",
-        "from": "FH-K336-P-01",
-        "to": "K336",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-천다올-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K336-P-02:FH-K336-P-01:biological",
-        "from": "FH-K336-P-02",
-        "to": "FH-K336-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-천다올-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K336-P-03:FH-K336-P-02:biological",
-        "from": "FH-K336-P-03",
-        "to": "FH-K336-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-천다올-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K336-M-01:K336:biological",
-        "from": "FH-K336-M-01",
-        "to": "K336",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-천다올-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K336-M-02:FH-K336-M-01:biological",
-        "from": "FH-K336-M-02",
-        "to": "FH-K336-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-천다올-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K336-M-03:FH-K336-M-02:biological",
-        "from": "FH-K336-M-03",
-        "to": "FH-K336-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-천다올-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cc9c-c601-c591",
+    "name": "영양 천씨",
+    "crest": "clan-crests/cc9c-c601-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "조하린 의원 집안 거처에 딸린 의사로, 은평구 갈현1동 연신내역에 기재돼 있다. 서른한 살 여성이고 영양 천씨다. 북한산에서 땔감을 지고 내려오다 다친 집안 하인들의 언 손발을 가장 먼저 보는 사람이 그녀다. 약재는 저울에 달아 내주고, 남은 무게를 저녁마다 집안 창고 장부에 적는다. 구청장 천나솔과는 본관이 같아 말을 편히 나누지만, 구의 보건 일에는 그녀가 먼저 나서지 않는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "의사",
+    "품계": "등재민",
+    "생업": "진료",
+    "일하는 역": "연신내역",
+    "잠자는 역": "연신내역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "조하린 의원 집안 거처에 딸린 의사로, 은평구 갈현1동 연신내역에 기재돼 있다. 서른한 살 여성이고 영양 천씨다. 북한산에서 땔감을 지고 내려오다 다친 집안 하인들의 언 손발을 가장 먼저 보는 사람이 그녀다. 약재는 저울에 달아 내주고, 남은 무게를 저녁마다 집안 창고 장부에 적는다. 구청장 천나솔과는 본관이 같아 말을 편히 나누지만, 구의 보건 일에는 그녀가 먼저 나서지 않는다.",
+    "관직": "직함 의사. 직위 의사 · 연신내역. 품계 등재민. 일하는 역 연신내역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": -25,
+    "무력": -45,
+    "물질": -15,
+    "공동": 35,
+    "원칙": 70,
+    "공개": -10,
+    "자격": 40,
+    "분산": -40,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": -15,
+    "위험": -20,
+    "과시": 15,
+    "지속": -15,
+    "지향": "양성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0337",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "천다올",
+        "type": "지휘",
+        "to": "조하린",
+        "basis": "은평구 국회의원 조하린의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K146",
+    "name": "조하린",
+    "courtId": "court:K146",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
+      },
+      "martial": {
+        "base": 3,
+        "effective": 3
+      },
+      "stewardship": {
+        "base": 6,
+        "effective": 6
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
-      },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
       },
       "learning": {
         "base": 10,
@@ -418,76 +111,10 @@
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
       }
     },
-    "skills": [
-      {
-        "id": "pump-shaft-replacement",
-        "name": {
-          "ko": "펌프 축 교체",
-          "en": "Pump shaft replacement"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "치료 칸과 무장을 분리",
-          "en": "Separates care from weapons"
-        },
-        "description": {
-          "ko": "마모 축 하나를 바꿔 펌프를 재가동했고 호송 출고를 확인한다. 확인된 수리를 의료호송 전투 경력으로 바꾸지 않는다.",
-          "en": "Replacing one worn shaft restarted a pump; dispatch checks accompany transport duty. The repair does not become medical escort combat experience."
-        },
-        "behavior": {
-          "ko": "호송 경로를 미리 말하지 않는 상관의 침묵을 현장에서 지킨다. 치료 칸에 무장 수비를 들이라는 쪽지를 태운다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.",
-          "en": "He kept in the field a superior's silence that never announced convoy routes. He burned any note that told him to bring armed guards into the care cars."
-        },
-        "stress": {
-          "ko": "공포. 기지에서 나간 호송이 구의 교량에서 막혀 환자 칸이 군수 칸으로 찍히는 것.",
-          "en": "Fear. That a convoy out of the base would be stopped on the Guui bridge and the patient cars stamped munitions cars."
-        },
-        "relationship": {
-          "ko": "관계. 남호성의 지휘로 출고 당직을 맡고, 고서준의 교량 통과 허가를 출고 전에 확인한다. 판한들의 대합실 정차와 시각을 맞춘다.",
-          "en": "Relations. Held the release duty under Nam Hoseong's command and confirmed Go Seojun's bridge passage permit before release. Matched hours with Pan Handeul's concourse stops."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 수련의. 직함은 의무호송 당직 수련의. 호송증에 환자 수와 약재 무게만 적고 목적지 국호는 출고 직전에 칠판에 쓴다. 무장 수비는 치료 칸 열쇠와 분리한다.",
-          "en": "Office. Rank: member. Title: medical convoy base duty chief, duty officer of Nam Hoseong. He wrote only patient counts and herb weights on the convoy pass and wrote the destination's state name on the chalkboard just before release. He kept armed guards separate from the care-car keys."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 수련의. 직함은 의무호송 당직 수련의. 호송증에 환자 수와 약재 무게만 적고 목적지 국호는 출고 직전에 칠판에 쓴다. 무장 수비는 치료 칸 열쇠와 분리한다.",
-          "en": "Recorded duty and limits: Office. Rank: member. Title: medical convoy base duty chief, duty officer of Nam Hoseong. He wrote only patient counts and herb weights on the convoy pass and wrote the destination's state name on the chalkboard just before release. He kept armed guards separate from the care-car keys."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 기지에서 나간 호송이 구의 교량에서 막혀 환자 칸이 군수 칸으로 찍히는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That a convoy out of the base would be stopped on the Guui bridge and the patient cars stamped munitions cars."
-        },
-        "relationship": {
-          "ko": "관계. 남호성의 지휘로 출고 당직을 맡고, 고서준의 교량 통과 허가를 출고 전에 확인한다. 판한들의 대합실 정차와 시각을 맞춘다.",
-          "en": "Relations. Held the release duty under Nam Hoseong's command and confirmed Go Seojun's bridge passage permit before release. Matched hours with Pan Handeul's concourse stops."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "마모 축 하나를 바꿔 펌프를 재가동했고 호송 출고를 확인한다. 확인된 수리를 의료호송 전투 경력으로 바꾸지 않는다.",
-      "en": "Replacing one worn shaft restarted a pump; dispatch checks accompany transport duty. The repair does not become medical escort combat experience."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -525,72 +152,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "cc9c-c601-c591",
-    "name": "영양 천씨",
-    "crest": "clan-crests/cc9c-c601-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -25,
-    "개방": 30,
-    "무력": -80,
-    "물질": -10,
-    "공동": 30,
-    "원칙": 50,
-    "공개": 15,
-    "자격": 25,
-    "분산": 10,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": -15,
-    "위험": -20,
-    "과시": 15,
-    "지속": -15,
-    "지향": "양성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "의무호송증 환자·약재 중량 기록",
-    "소속": "흰십자단",
-    "품계": "수련의",
-    "직함": "의무호송 기지 당직장, 남호성의 실무 담당자",
-    "가치관": "권위 −25 | 개방 30 | 무력 −80 | 물질 −10 | 공동 30 | 원칙 50 | 공개 15 | 자격 25 | 분산 10 | 변혁 −5",
-    "욕망": "갈망 45 | 독점 −15 | 위험 −20 | 과시 15 | 지속 −15 | 지향 양성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2095-06-03에 태어났다. 2126년 개막 현재 의무호송 기지 당직장, 남호성의 실무 담당자 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 탈선 직전 결함 보고로 열렸다.\n- 청량리동의 의무호송증 환자·약재 중량 기록 창구가 천다올의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 수련의. 직함은 의무호송 당직 수련의. 호송증에 환자 수와 약재 무게만 적고 목적지 국호는 출고 직전에 칠판에 쓴다. 무장 수비는 치료 칸 열쇠와 분리한다.",
-    "일화": "2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.",
-    "관계": "남호성의 지휘로 출고 당직을 맡고, 고서준의 교량 통과 허가를 출고 전에 확인한다. 판한들의 대합실 정차와 시각을 맞춘다.",
-    "야망": "신내·제기동·아차산 삼각 의무호송의 기지 출고를 공동호송조약의 첫 조항 실무로 남겨 군수 열차 오인을 끊는다.",
-    "공포": "기지에서 나간 호송이 구의 교량에서 막혀 환자 칸이 군수 칸으로 찍히는 일을 두려워한다.",
-    "개입": "오인 신호를 기지 칠판에서 바로잡거나, 호송을 우회시켜 관문국의 분열을 키울 수 있다."
-  },
-  "biography": "호송 경로를 미리 말하지 않는 상관의 침묵을 현장에서 지킨다. 치료 칸에 무장 수비를 들이라는 쪽지를 태운다.\n\n- 생업: 의무호송증 환자·약재 중량 기록\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 의무호송 기지 당직장, 남호성의 실무 담당자\n**생애.** 2095-06-03에 태어났다. 2126년 개막 현재 의무호송 기지 당직장, 남호성의 실무 담당자 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 탈선 직전 결함 보고로 열렸다.\n- 청량리동의 의무호송증 환자·약재 중량 기록 창구가 천다올의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 수련의. 직함은 의무호송 당직 수련의. 호송증에 환자 수와 약재 무게만 적고 목적지 국호는 출고 직전에 칠판에 쓴다. 무장 수비는 치료 칸 열쇠와 분리한다.\n\n**일화.** 2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.\n\n**관계.** 남호성의 지휘로 출고 당직을 맡고, 고서준의 교량 통과 허가를 출고 전에 확인한다. 판한들의 대합실 정차와 시각을 맞춘다.\n\n**야망.** 신내·제기동·아차산 삼각 의무호송의 기지 출고를 공동호송조약의 첫 조항 실무로 남겨 군수 열차 오인을 끊는다.\n\n**공포.** 기지에서 나간 호송이 구의 교량에서 막혀 환자 칸이 군수 칸으로 찍히는 일을 두려워한다.\n\n**개입.** 오인 신호를 기지 칠판에서 바로잡거나, 호송을 우회시켜 관문국의 분열을 키울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −80 | 물질 −10 | 공동 30 | 원칙 50 | 공개 15 | 자격 25 | 분산 10 | 변혁 −5\n- 욕망: 갈망 45 | 독점 −15 | 위험 −20 | 과시 15 | 지속 −15 | 지향 양성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-13"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "천다올",
-        "type": "지휘",
-        "to": "남호성",
-        "basis": "남호성의 지휘로 출고 당직을 맡고"
-      },
-      {
-        "from": "천다올",
-        "type": "계약",
-        "to": "판한들",
-        "basis": "판한들의 대합실 정차와 시각을 맞춘다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

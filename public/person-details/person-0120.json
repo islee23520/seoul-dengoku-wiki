@@ -1,495 +1,145 @@
 {
   "id": "person-0120",
   "name": "이윤서",
-  "title": "동부 교량봉쇄대장",
-  "position": "동부 교량봉쇄대장",
+  "title": "잠실6동 대피소장",
+  "position": "잠실6동 대피소장 · 아크",
   "characterId": "K119",
-  "rank": "병장",
-  "commonTier": "T5",
-  "occupation": "교량 통행·야간 봉쇄 관리",
+  "rank": "대피소장",
+  "commonTier": "T3",
+  "occupation": "대피소 통솔",
   "gender": "남성",
   "stage": "S1",
-  "state": "S05",
-  "stateName": "동방사",
-  "sourceRoute": "/world/Cast-State-05#인물-이윤서",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0120",
   "birthDate": "2089-07-17",
   "birthday": "07-17",
   "age": 37,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-05.json#/content/82",
-    "lore/characters/Cast-State-05.json#/content/84"
-  ],
-  "familyTree": {
-    "personId": "K119",
-    "nodes": [
-      {
-        "id": "K119",
-        "personId": "K119",
-        "kind": "person",
-        "name": "이윤서",
-        "birthDate": "2089-07-17",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K119"
-          },
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-이윤서-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 동부 교량봉쇄대장 자리는 야간 무단 도하 적발로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-이윤서-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0120"
-      },
-      {
-        "id": "FH-K119-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이승빈",
-        "lineage": {
-          "surname": "이",
-          "bongwan": "연안",
-          "clan": "c774-c5f0-c548-674e"
-        },
-        "birthDate": "2059-07-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-이윤서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "이승빈은 암사 경비 초소에서 교량 통행·야간 봉쇄 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-이윤서-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K119-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이승솔",
-        "lineage": {
-          "surname": "이",
-          "bongwan": "연안",
-          "clan": "c774-c5f0-c548-674e"
-        },
-        "birthDate": "2029-07-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-이윤서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "이승솔은 암사 경비 초소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-이윤서-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K119-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "이승미",
-        "lineage": {
-          "surname": "이",
-          "bongwan": "연안",
-          "clan": "c774-c5f0-c548-674e"
-        },
-        "birthDate": "1999-07-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-이윤서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이승미는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-이윤서-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K119-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김현석",
-        "birthDate": "2059-07-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-이윤서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "김현석은 암사 경비 초소에서 교량 통행·야간 봉쇄 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-이윤서-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K119-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박승도",
-        "birthDate": "2029-07-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-이윤서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "박승도는 암사 경비 초소에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-이윤서-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K119-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "이승도",
-        "birthDate": "1999-07-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-이윤서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이승도는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-이윤서-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K119-P-01:K119:biological",
-        "from": "FH-K119-P-01",
-        "to": "K119",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-이윤서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K119-P-02:FH-K119-P-01:biological",
-        "from": "FH-K119-P-02",
-        "to": "FH-K119-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-이윤서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K119-P-03:FH-K119-P-02:biological",
-        "from": "FH-K119-P-03",
-        "to": "FH-K119-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-이윤서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K119-M-01:K119:biological",
-        "from": "FH-K119-M-01",
-        "to": "K119",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-이윤서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K119-M-02:FH-K119-M-01:biological",
-        "from": "FH-K119-M-02",
-        "to": "FH-K119-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-이윤서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K119-M-03:FH-K119-M-02:biological",
-        "from": "FH-K119-M-03",
-        "to": "FH-K119-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-이윤서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c774-c5f0-c548-674e",
+    "name": "연안 이씨",
+    "crest": "clan-crests/c774-c5f0-c548-674e.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "이윤서는 교주의 집과 송파 곁집과 잠실 정비대가 한 역을 쓰는 잠실에서 잠실6동 대피소의 명부를 쥔다. 잠실은 역 사람의 열에 셋 가까이가 세례자인 역이라, 그의 명부에 남은 미세례자 이름은 다른 대피소보다 짧고 그만큼 하나하나가 눈에 띈다. 잠실역 정비장 장예린과는 정비 순번에 오른 사람의 집안 끼니를 대피소가 먼저 늘린다는 약속을 숫자로 적어 두었는데, 그 약속은 같은 연안 이씨인 앞선 정비장 이봄결과 처음 맺은 것이다. 부위는 하나뿐이라, 첫 교대 부르기 때 그는 정비장보다 한 걸음 뒤에 선다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "잠실6동 대피소장",
+    "품계": "대피소장",
+    "생업": "대피소 통솔",
+    "일하는 역": "잠실역",
+    "잠자는 역": "잠실역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "이윤서는 교주의 집과 송파 곁집과 잠실 정비대가 한 역을 쓰는 잠실에서 잠실6동 대피소의 명부를 쥔다. 잠실은 역 사람의 열에 셋 가까이가 세례자인 역이라, 그의 명부에 남은 미세례자 이름은 다른 대피소보다 짧고 그만큼 하나하나가 눈에 띈다. 잠실역 정비장 장예린과는 정비 순번에 오른 사람의 집안 끼니를 대피소가 먼저 늘린다는 약속을 숫자로 적어 두었는데, 그 약속은 같은 연안 이씨인 앞선 정비장 이봄결과 처음 맺은 것이다. 부위는 하나뿐이라, 첫 교대 부르기 때 그는 정비장보다 한 걸음 뒤에 선다.",
+    "관직": "직함 잠실6동 대피소장. 직위 잠실6동 대피소장 · 아크. 품계 대피소장. 일하는 역 잠실역."
+  },
+  "values": {
+    "권위": 90,
+    "개방": -45,
+    "무력": 65,
+    "물질": -40,
+    "공동": 50,
+    "원칙": -40,
+    "공개": -90,
+    "자격": -45,
+    "분산": -70,
+    "변혁": 25
+  },
+  "desire": {
+    "갈망": 5,
+    "독점": 20,
+    "위험": 5,
+    "과시": 15,
+    "지속": -10,
+    "지향": "동성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0120",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "이윤서",
+        "type": "지휘",
+        "to": "남윤경",
+        "basis": "송파 곁집장 남윤경의 직속"
+      },
+      {
+        "from": "이윤서",
+        "type": "계약",
+        "to": "장예린",
+        "basis": "잠실 정비 순번에 오른 사람의 집안 끼니를 잠실6동 대피소가 먼저 늘린다는 숫자로 적은 약속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "장예린",
+        "type": "지휘",
+        "to": "이윤서",
+        "basis": "잠실6동 대피소장 이윤서의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K373",
+    "name": "남윤경",
+    "courtId": "court:K373",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K119",
+    "members": [
+      {
+        "personId": "K064",
+        "name": "장예린"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 10,
-        "effective": 10
-      },
-      "strategy": {
-        "base": 10,
-        "effective": 10
-      },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "insight": {
-        "base": 13,
-        "effective": 13
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 8,
-        "effective": 8
-      },
-      "endurance": {
-        "base": 11,
-        "effective": 11
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k119-ridge-patrol",
-        "name": {
-          "ko": "능선 초계",
-          "en": "Ridge patrol"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k119-choice",
-        "name": {
-          "ko": "의료 예외 유지",
-          "en": "Keeps medical exceptions"
-        },
-        "description": {
-          "ko": "직선적이고 신의가 있으나 통행 허가의 예외를 정치 선물로 쓰는 상관을 싫어한다. 교량 아래 상수관 진동을 발소리보다 먼저 듣는다.",
-          "en": "Direct and faithful, she disliked superiors who used passage-permit exceptions as political gifts. She heard the water-main vibration under the bridge before footsteps."
-        },
-        "behavior": {
-          "ko": "일화. 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 동부 교량봉쇄대장 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In 2125, on a ridge patrol, he read the ambush traces first and prevented the harm. By this deed the signature of the eastern bridge blockade chief post rose into the ledger."
-        },
-        "stress": {
-          "ko": "공포. 상수관 파손을 적대행위로 오인해 아차산 수비대와 동시에 불을 내고, 교량과 급수권을 함께 잃는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That a water-main break would be mistaken for hostile action, fire would break out with the Achasan defense squad at once, and the bridges and the water right would be lost together. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 배우진의 교량 지휘를 집행하고, 고서준의 능선 정찰과 통행을 경쟁하며, 장세화의 의료열차 중립을 마지막 예외로 남겨 불신과 빚이 겹친다.",
-          "en": "Relations. Executed Bae Woojin's bridge command, competed with Go Seojun's ridge reconnaissance over passage, and left Jang Sehwa's medical train neutrality as the last exception, layering distrust and debt."
-        },
-        "effects": []
-      },
-      {
-        "id": "k119-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 병장. 직함은 동부 교량봉쇄대장. 주간 통행은 행정 관문세 전표로 열고, 야간 봉쇄는 동방사 암호패만 인정하며 의료열차만 예외로 남긴다.",
-          "en": "Office. Rank: sergeant. Title: eastern bridge blockade chief. He opened daytime passage with administrative gate-toll slips, recognized only escort code tags for the night blockade, and left the medical train the sole exception."
-        },
-        "behavior": {
-          "ko": "관직. 품계 병장. 직함은 동부 교량봉쇄대장. 주간 통행은 행정 관문세 전표로 열고, 야간 봉쇄는 동방사 암호패만 인정하며 의료열차만 예외로 남긴다.",
-          "en": "Office. Rank: sergeant. Title: eastern bridge blockade chief. He opened daytime passage with administrative gate-toll slips, recognized only escort code tags for the night blockade, and left the medical train the sole exception."
-        },
-        "stress": {
-          "ko": "공포. 상수관 파손을 적대행위로 오인해 아차산 수비대와 동시에 불을 내고, 교량과 급수권을 함께 잃는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That a water-main break would be mistaken for hostile action, fire would break out with the Achasan defense squad at once, and the bridges and the water right would be lost together. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 배우진의 교량 지휘를 집행하고, 고서준의 능선 정찰과 통행을 경쟁하며, 장세화의 의료열차 중립을 마지막 예외로 남겨 불신과 빚이 겹친다.",
-          "en": "Relations. Executed Bae Woojin's bridge command, competed with Go Seojun's ridge reconnaissance over passage, and left Jang Sehwa's medical train neutrality as the last exception, layering distrust and debt."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "일화. 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 동부 교량봉쇄대장 자리의 서명이 장부에 올랐다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Anecdote. In 2125, on a ridge patrol, he read the ambush traces first and prevented the harm. By this deed the signature of the eastern bridge blockade chief post rose into the ledger. Titles and ambitions are not treated as accomplished authority or results."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -499,7 +149,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -525,82 +175,52 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c774-c5f0-c548-674e",
-    "name": "연안 이씨",
-    "crest": "clan-crests/c774-c5f0-c548-674e.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 65,
-    "개방": -30,
-    "무력": 55,
-    "물질": 10,
-    "공동": 30,
-    "원칙": -30,
-    "공개": -45,
-    "자격": -10,
-    "분산": -40,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": 5,
-    "독점": 20,
-    "위험": 5,
-    "과시": 15,
-    "지속": -10,
-    "지향": "동성",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "동방사",
-    "생업": "교량 통행·야간 봉쇄 관리",
-    "품계": "병장",
-    "직함": "동부 교량봉쇄대장",
-    "가치관": "권위 65 | 개방 −30 | 무력 55 | 물질 10 | 공동 30 | 원칙 −30 | 공개 −45 | 자격 −10 | 분산 −40 | 변혁 −20",
-    "욕망": "갈망 5 | 독점 20 | 위험 5 | 과시 15 | 지속 −10 | 지향 동성 | 결합 없음"
-  },
-  "sections": {
-    "관직": "품계 병장. 직함은 동부 교량봉쇄대장. 주간 통행은 행정 관문세 전표로 열고, 야간 봉쇄는 동방사 암호패만 인정하며 의료열차만 예외로 남긴다.\n\n일화. 이윤서는 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다.",
-    "관계": "배우진의 교량 지휘를 집행하고, 고서준의 능선 정찰과 통행을 경쟁하며, 장세화의 의료열차 중립을 마지막 예외로 남겨 불신과 빚이 겹친다.",
-    "야망": "동부 한강 교량과 외곽 진입로를 봉쇄대 단일 시계로 묶어 보호권의 물리적 열쇠를 쥔다.\n\n공포. 이윤서는 상수관 파손을 적대행위로 오인해 아차산 수비대와 동시에 불을 내고, 교량과 급수권을 함께 잃는 일을 두려워한다.",
-    "개입": "파손 원인을 밝혀 봉쇄를 풀거나, 의료열차 무기 밀수 경로를 추적해 예외를 없앨 수 있다."
-  },
-  "biography": "이윤서는 직선적이고 신의가 있으나 통행 허가의 예외를 정치 선물로 쓰는 상관을 싫어한다. 교량 아래 상수관 진동을 발소리보다 먼저 듣는다.\n\n- 소속: 동방사\n- 생업: 교량 통행·야간 봉쇄 관리\n- 품계: 병장\n- 직함: 동부 교량봉쇄대장\n생애. 이윤서는 4세대에 태어났다. 이윤서는 암사 경비 초소에서 자랐다. 이윤서의 동부 교량봉쇄대장 자리는 야간 무단 도하 적발로 열렸다.\n- 이윤서는 암사2동과 연결된 교량 봉쇄 업무에서 주간 관문세 전표, 야간 암호패, 의료열차 예외를 구분해 인계한다.\n\n**관직.** 품계 병장. 직함은 동부 교량봉쇄대장. 주간 통행은 행정 관문세 전표로 열고, 야간 봉쇄는 동방사 암호패만 인정하며 의료열차만 예외로 남긴다.\n\n일화. 이윤서는 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다.\n\n**관계.** 배우진의 교량 지휘를 집행하고, 고서준의 능선 정찰과 통행을 경쟁하며, 장세화의 의료열차 중립을 마지막 예외로 남겨 불신과 빚이 겹친다.\n\n**야망.** 동부 한강 교량과 외곽 진입로를 봉쇄대 단일 시계로 묶어 보호권의 물리적 열쇠를 쥔다.\n\n공포. 이윤서는 상수관 파손을 적대행위로 오인해 아차산 수비대와 동시에 불을 내고, 교량과 급수권을 함께 잃는 일을 두려워한다.\n\n**개입.** 파손 원인을 밝혀 봉쇄를 풀거나, 의료열차 무기 밀수 경로를 추적해 예외를 없앨 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −30 | 무력 55 | 물질 10 | 공동 30 | 원칙 −30 | 공개 −45 | 자격 −10 | 분산 −40 | 변혁 −20\n- 욕망: 갈망 5 | 독점 20 | 위험 5 | 과시 15 | 지속 −10 | 지향 동성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-05"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1171071000",
+      "name": {
+        "ko": "잠실6동"
+      },
+      "holderPersonId": "K119",
+      "directLiegePersonId": "K373",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1171071000",
+          "name": "잠실6동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
   ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "이윤서",
-        "type": "지휘",
-        "to": "배우진",
-        "basis": "동부 교량 봉쇄 지휘를 집행"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:잠실",
+      "name": {
+        "ko": "잠실역"
       },
-      {
-        "from": "이윤서",
-        "type": "경쟁",
-        "to": "고서준",
-        "basis": "능선 정찰과 교량 통행을 겨룸"
+      "holderPersonId": "K064",
+      "directLiegePersonId": "K119",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "잠실",
+        "stationName": "잠실"
       },
-      {
-        "from": "이윤서",
-        "type": "빚",
-        "to": "장세화",
-        "basis": "의료열차 중립을 마지막 예외로 남긴 빚"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "마길상",
-        "type": "지휘",
-        "to": "이윤서",
-        "basis": "이윤서의 봉쇄 시계에 측량을 넘기는 지휘를 받고"
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1171071000",
+          "name": "잠실6동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "장예린",
+      "holderRoute": "/people/person-0064"
+    }
+  ]
 }

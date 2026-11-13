@@ -1,387 +1,105 @@
 {
   "id": "person-0395",
   "name": "창고운",
-  "title": "식량 공동구매 협약 서명 서기",
-  "position": "사제단 선거 서기 부제",
+  "title": "장터 상인 우두머리",
+  "position": "장터 상인 우두머리 · 회현역",
   "characterId": "K394",
-  "rank": "부제",
-  "commonTier": "T4",
-  "occupation": "사제단 선거 서기·보좌",
+  "rank": "등재민",
+  "commonTier": "T5",
+  "occupation": "장터 거래",
   "gender": "남성",
   "stage": "S3",
-  "state": "S15",
-  "stateName": "명동대교구",
-  "sourceRoute": "/world/Cast-State-15#인물-창고운",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0395",
   "birthDate": "2085-01-31",
   "birthday": "01-31",
   "age": 41,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-15.json#/content/225",
-    "lore/characters/Cast-State-15.json#/content/226",
-    "lore/characters/Cast-State-15.json#/content/227"
-  ],
-  "familyTree": {
-    "personId": "K394",
-    "nodes": [
-      {
-        "id": "K394",
-        "personId": "K394",
-        "kind": "person",
-        "name": "창고운",
-        "birthDate": "2085-01-31",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K394"
-          },
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-창고운-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 명동역 교구청에서 사제단 선거 서기 부제 일을 맡았다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-창고운-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0395"
-      },
-      {
-        "id": "FH-K394-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "창승우",
-        "lineage": {
-          "surname": "창",
-          "bongwan": "창녕",
-          "clan": "cc3d-cc3d-b155-660c"
-        },
-        "birthDate": "2055-01-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-창고운-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2093,
-            "summary": "창승우는 제기동 의무소에서 사제단 선거 서기·보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-창고운-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K394-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "창승경",
-        "lineage": {
-          "surname": "창",
-          "bongwan": "창녕",
-          "clan": "cc3d-cc3d-b155-660c"
-        },
-        "birthDate": "2025-01-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-창고운-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "창승경은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-창고운-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K394-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조준규",
-        "birthDate": "2055-01-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-창고운-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2093,
-            "summary": "조준규는 제기동 의무소에서 사제단 선거 서기·보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-창고운-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K394-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김준범",
-        "birthDate": "2025-01-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-창고운-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "김준범은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-창고운-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K394-P-01:K394:biological",
-        "from": "FH-K394-P-01",
-        "to": "K394",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-창고운-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K394-P-02:FH-K394-P-01:biological",
-        "from": "FH-K394-P-02",
-        "to": "FH-K394-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-창고운-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K394-M-01:K394:biological",
-        "from": "FH-K394-M-01",
-        "to": "K394",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-창고운-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K394-M-02:FH-K394-M-01:biological",
-        "from": "FH-K394-M-02",
-        "to": "FH-K394-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-창고운-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cc3d-cc3d-b155-660c",
+    "name": "창녕 창씨",
+    "crest": "clan-crests/cc3d-cc3d-b155-660c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "창고운은 명동역에 잠자리가, 회현역 장터에 상인 우두머리 자리가 기재돼 있다. 마흔한 살인 그가 장터에서 지키는 규칙은 하나다. 공문서 도장이 찍힌 종이는 섬유로 팔지 않는다. 고물꾼이 옛 사무실에서 캐 온 종이 묶음을 들고 오면, 그는 도장 찍힌 장을 골라내 동주민센터에 따로 내라고 돌려보낸다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "장터 상인 우두머리",
+    "품계": "등재민",
+    "생업": "장터 거래",
+    "일하는 역": "회현역",
+    "잠자는 역": "명동역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "창고운은 명동역에 잠자리가, 회현역 장터에 상인 우두머리 자리가 기재돼 있다. 마흔한 살인 그가 장터에서 지키는 규칙은 하나다. 공문서 도장이 찍힌 종이는 섬유로 팔지 않는다. 고물꾼이 옛 사무실에서 캐 온 종이 묶음을 들고 오면, 그는 도장 찍힌 장을 골라내 동주민센터에 따로 내라고 돌려보낸다.",
+    "관직": "직함 장터 상인 우두머리. 직위 장터 상인 우두머리 · 회현역. 품계 등재민. 일하는 역 회현역."
+  },
+  "values": {
+    "권위": 50,
+    "개방": -25,
+    "무력": 30,
+    "물질": 50,
+    "공동": -10,
+    "원칙": -25,
+    "공개": -50,
+    "자격": 20,
+    "분산": -45,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": 10,
+    "위험": -25,
+    "과시": -25,
+    "지속": 25,
+    "지향": "이성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0395",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
+      "diplomacy": {
+        "base": 8,
+        "effective": 8
       },
-      "strategy": {
+      "martial": {
+        "base": 4,
+        "effective": 4
+      },
+      "stewardship": {
+        "base": 9,
+        "effective": 9
+      },
+      "intrigue": {
         "base": 6,
         "effective": 6
       },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
       "learning": {
-        "base": 10,
-        "effective": 10
+        "base": 5,
+        "effective": 5
       },
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
       }
     },
-    "skills": [
-      {
-        "id": "clause-transcription",
-        "name": {
-          "ko": "조항 정서",
-          "en": "Clause transcription"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "번호를 맞춘 뒤 정서",
-          "en": "Transcribes after matching numbers"
-        },
-        "description": {
-          "ko": "서기 함을 열어 선거 봉인부터 확인하고 청과 조항 번호를 서명 원장에 맞췄다. 문서 정서와 교섭 권한은 별개다.",
-          "en": "Checks election seals before matching produce-clause numbers to the signature ledger. Transcription does not confer bargaining authority."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 번호를 맞춘 뒤 정서을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "겹친 업무 앞에서 봉인 확인을 먼저 할 수 있다.",
-          "en": "May check seals first when duties overlap."
-        },
-        "relationship": {
-          "ko": "근주하의 번호와 정유라의 조항을 맞춘다.",
-          "en": "Aligns Geun Juha’s numbers with Jeong Yura’s clauses."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "근주하의 번호와 정유라의 조항을 맞춘다.",
-          "en": "Aligns Geun Juha’s numbers with Jeong Yura’s clauses."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "서기 함을 열어 선거 봉인부터 확인하고 청과 조항 번호를 서명 원장에 맞췄다. 문서 정서와 교섭 권한은 별개다.",
-      "en": "Checks election seals before matching produce-clause numbers to the signature ledger. Transcription does not confer bargaining authority."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -419,72 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "cc3d-cc3d-b155-660c",
-    "name": "창녕 창씨",
-    "crest": "clan-crests/cc3d-cc3d-b155-660c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 5,
-    "개방": 30,
-    "무력": -5,
-    "물질": 55,
-    "공동": -15,
-    "원칙": -45,
-    "공개": -25,
-    "자격": 5,
-    "분산": 5,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": 10,
-    "위험": -25,
-    "과시": -25,
-    "지속": 25,
-    "지향": "이성",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "사제단 선거 서기·보좌",
-    "소속": "명동대교구 (명동역)",
-    "품계": "부제",
-    "직함": "사제단 선거 서기 부제",
-    "가치관": "권위 5 | 개방 30 | 무력 −5 | 물질 55 | 공동 −15 | 원칙 −45 | 공개 −25 | 자격 5 | 분산 5 | 변혁 5",
-    "욕망": "갈망 15 | 독점 10 | 위험 −25 | 과시 −25 | 지속 25 | 지향 이성 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2085-01-31에 태어난 창고운은 영구 겨울의 명동역 교구청에서 사제단 선거 서기 부제 일을 맡는다. 사제단 선거 서기·보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 창고운은 명동 행정동의 명동역 교구청에서 사제단 선거 서기 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 부제. 직함은 사제단 선거 서기 부제. 사제단 선거 서기·보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
-    "일화": "정유라의 공동교섭에 들어갈 청과 조항 정서와 대주교 비밀 선거의 서기 일이 같은 날 창고운에게 맡겨진다. 창고운은 남윤경의 공개 경매 날인으로 서기 함을 열어 선거 봉인부터 확인하고, 청과 조항은 근주하의 수서 서명 원장과 번호를 맞춰 정서한다.",
-    "관계": "정유라의 공동교섭에 청과 조항을 정서하고, 근주하의 수서 서명 원장과 번호를 맞춘다. 남윤경의 공개 경매 날인만 함의 열쇠로 둔다.",
-    "야망": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-    "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-    "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
-  },
-  "biography": "창고운은 사제단 선거 서기 부제 업무에서 사제단 선거 서기·보좌 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 사제단 선거 서기·보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 사제단 선거 서기 부제\n**생애.** 2085-01-31에 태어난 창고운은 영구 겨울의 명동역 교구청에서 사제단 선거 서기 부제 일을 맡는다. 사제단 선거 서기·보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 창고운은 명동 행정동의 명동역 교구청에서 사제단 선거 서기 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 부제. 직함은 사제단 선거 서기 부제. 사제단 선거 서기·보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 정유라의 공동교섭에 들어갈 청과 조항 정서와 대주교 비밀 선거의 서기 일이 같은 날 창고운에게 맡겨진다. 창고운은 남윤경의 공개 경매 날인으로 서기 함을 열어 선거 봉인부터 확인하고, 청과 조항은 근주하의 수서 서명 원장과 번호를 맞춰 정서한다.\n\n**관계.** 정유라의 공동교섭에 청과 조항을 정서하고, 근주하의 수서 서명 원장과 번호를 맞춘다. 남윤경의 공개 경매 날인만 함의 열쇠로 둔다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 30 | 무력 −5 | 물질 55 | 공동 −15 | 원칙 −45 | 공개 −25 | 자격 5 | 분산 5 | 변혁 5\n- 욕망: 갈망 15 | 독점 10 | 위험 −25 | 과시 −25 | 지속 25 | 지향 이성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-15"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "창고운",
-        "type": "계약",
-        "to": "정유라",
-        "basis": "정유라의 공동교섭에 청과 조항을 정서하고"
-      },
-      {
-        "from": "창고운",
-        "type": "계약",
-        "to": "근주하",
-        "basis": "근주하의 수서 서명 원장과 번호를 맞춘다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

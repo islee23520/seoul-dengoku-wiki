@@ -3,27 +3,27 @@
   "personId": "person-0329",
   "characterId": "K328",
   "name": "천다움",
-  "stateId": "S13",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "약재 건조기 정비사, 심달호의 실무 담당자"
+    "role": "보문동 동장 · 정부"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "short cropped hair",
-    "upper": "oxblood heavy canvas work coverall with rolled sleeves",
-    "outfit": "oxblood heavy canvas work coverall with rolled sleeves",
+    "upper": "남색 띠를 두른 누빔 외투",
+    "outfit": "남색 띠를 두른 누빔 외투",
     "palette": [
+      "navy",
       "oxblood",
-      "dove grey",
-      "cream"
+      "dove grey"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
     "lower": "dove grey canvas work trousers tucked into boots",
     "footwear": "steel-toe leather work boots",
-    "accessories": "rolled leather tool roll and work gloves tucked into the belt"
+    "accessories": "civil-servant ID and a leather seal pouch"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "flat cloth cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "oxblood heavy canvas work coverall with rolled sleeves",
+        "value": "남색 띠를 두른 누빔 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
         "value": "dove grey canvas work trousers tucked into boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
         "value": "steel-toe leather work boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -206,39 +206,39 @@
       "neckline": {
         "value": "open work collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "rolled leather tool roll and work gloves tucked into the belt",
+        "value": "civil-servant ID and a leather seal pouch",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "rolled bundle and gloves",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "oiled brown leather",
+        "value": "navy cord and dark brown leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, steel",
+        "value": "card, leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "tucked into the belt",
+        "value": "ID round the neck, pouch at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat card and a small square pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 천다움, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; salt-and-pepper hair; short length. build: stocky; skin: light olive. headwear: flat cloth cap; upper garment: oxblood heavy canvas work coverall with rolled sleeves; neckline: open work collar. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: oxblood, dove grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 천다움, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; salt-and-pepper hair; short length. build: stocky; skin: light olive. headwear: flat cloth cap; upper garment: 남색 띠를 두른 누빔 외투; neckline: open work collar. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 천다움, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; salt-and-pepper hair; short length. build: stocky; skin: light olive; average adult male height. headwear: flat cloth cap; upper garment: oxblood heavy canvas work coverall with rolled sleeves; neckline: open work collar; lower garment: dove grey canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: oxblood, dove grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 천다움, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; salt-and-pepper hair; short length. build: stocky; skin: light olive; average adult male height. headwear: flat cloth cap; upper garment: 남색 띠를 두른 누빔 외투; neckline: open work collar; lower garment: dove grey canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 천다움, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; salt-and-pepper hair; short length. build: stocky; skin: light olive; average adult male height. headwear: flat cloth cap; upper garment: oxblood heavy canvas work coverall with rolled sleeves; neckline: open work collar; lower garment: dove grey canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: oxblood, dove grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 천다움, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; salt-and-pepper hair; short length. build: stocky; skin: light olive; average adult male height. headwear: flat cloth cap; upper garment: 남색 띠를 두른 누빔 외투; neckline: open work collar; lower garment: dove grey canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 천다움, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; salt-and-pepper hair; short length. build: stocky; skin: light olive; average adult male height. headwear: flat cloth cap; upper garment: oxblood heavy canvas work coverall with rolled sleeves; neckline: open work collar; lower garment: dove grey canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: oxblood, dove grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 천다움, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; salt-and-pepper hair; short length. build: stocky; skin: light olive; average adult male height. headwear: flat cloth cap; upper garment: 남색 띠를 두른 누빔 외투; neckline: open work collar; lower garment: dove grey canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 천다움, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; salt-and-pepper hair; short length. build: stocky; skin: light olive; average adult male height. headwear: flat cloth cap; upper garment: oxblood heavy canvas work coverall with rolled sleeves; neckline: open work collar; lower garment: dove grey canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: oxblood, dove grey, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 천다움, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; salt-and-pepper hair; short length. build: stocky; skin: light olive; average adult male height. headwear: flat cloth cap; upper garment: 남색 띠를 두른 누빔 외투; neckline: open work collar; lower garment: dove grey canvas work trousers tucked into boots; footwear: steel-toe leather work boots. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

@@ -3,26 +3,27 @@
   "personId": "person-0222",
   "characterId": "K221",
   "name": "황은설",
-  "stateId": "S09",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "화폐 감정 기록원"
+    "role": "노들 황씨네 어로대 대주 · 노들역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, youthful smooth skin",
     "hair": "very short buzz-cut hair",
-    "upper": "forest green plain single-breasted clerk's jacket with cotton oversleeves, with a light knitted scarf",
-    "outfit": "forest green plain single-breasted clerk's jacket with cotton oversleeves, with a light knitted scarf",
+    "upper": "깃에 하늘색 끈을 두른 흰 눈 덧옷, 그 안에 물 먹은 회색 합성 섬유 겹 작업복",
+    "outfit": "깃에 하늘색 끈을 두른 흰 눈 덧옷, 그 안에 물 먹은 회색 합성 섬유 겹 작업복",
     "palette": [
-      "forest green",
-      "clay brown"
+      "ice white",
+      "sky blue",
+      "river grey"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "clay brown high-waisted pleated trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "waterproofed synthetic trousers",
+    "footwear": "insulated overshoes with ice cleats",
+    "accessories": "hand ice auger and the bench guarantee token on a chain"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -173,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "white synthetic hood",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "forest green plain single-breasted clerk's jacket with cotton oversleeves, with a light knitted scarf",
+        "value": "깃에 하늘색 끈을 두른 흰 눈 덧옷, 그 안에 물 먹은 회색 합성 섬유 겹 작업복",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "clay brown high-waisted pleated trousers",
+        "value": "waterproofed synthetic trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "insulated overshoes with ice cleats",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "face cover pulled down under the chin",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "hand ice auger and the bench guarantee token on a chain",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "dull steel and dark iron",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "steel, iron",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "auger over the shoulder, token around the neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "long spiral auger and small disc",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 황은설, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: soft rounded; skin: tan warm beige. upper garment: forest green plain single-breasted clerk's jacket with cotton oversleeves, with a light knitted scarf; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: forest green, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 황은설, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: soft rounded; skin: tan warm beige. headwear: white synthetic hood; upper garment: 깃에 하늘색 끈을 두른 흰 눈 덧옷, 그 안에 물 먹은 회색 합성 섬유 겹 작업복; neckline: face cover pulled down under the chin. accessories: hand ice auger and the bench guarantee token on a chain; worn as auger over the shoulder, token around the neck. color palette: ice white, sky blue, river grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 황은설, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: soft rounded; skin: tan warm beige; average adult male height. upper garment: forest green plain single-breasted clerk's jacket with cotton oversleeves, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: clay brown high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: forest green, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 황은설, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: soft rounded; skin: tan warm beige; average adult male height. headwear: white synthetic hood; upper garment: 깃에 하늘색 끈을 두른 흰 눈 덧옷, 그 안에 물 먹은 회색 합성 섬유 겹 작업복; neckline: face cover pulled down under the chin; lower garment: waterproofed synthetic trousers; footwear: insulated overshoes with ice cleats. accessories: hand ice auger and the bench guarantee token on a chain; worn as auger over the shoulder, token around the neck. color palette: ice white, sky blue, river grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 황은설, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: soft rounded; skin: tan warm beige; average adult male height. upper garment: forest green plain single-breasted clerk's jacket with cotton oversleeves, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: clay brown high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: forest green, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 황은설, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: soft rounded; skin: tan warm beige; average adult male height. headwear: white synthetic hood; upper garment: 깃에 하늘색 끈을 두른 흰 눈 덧옷, 그 안에 물 먹은 회색 합성 섬유 겹 작업복; neckline: face cover pulled down under the chin; lower garment: waterproofed synthetic trousers; footwear: insulated overshoes with ice cleats. accessories: hand ice auger and the bench guarantee token on a chain; worn as auger over the shoulder, token around the neck. color palette: ice white, sky blue, river grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 황은설, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: soft rounded; skin: tan warm beige; average adult male height. upper garment: forest green plain single-breasted clerk's jacket with cotton oversleeves, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: clay brown high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: forest green, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 황은설, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: soft rounded; skin: tan warm beige; average adult male height. headwear: white synthetic hood; upper garment: 깃에 하늘색 끈을 두른 흰 눈 덧옷, 그 안에 물 먹은 회색 합성 섬유 겹 작업복; neckline: face cover pulled down under the chin; lower garment: waterproofed synthetic trousers; footwear: insulated overshoes with ice cleats. accessories: hand ice auger and the bench guarantee token on a chain; worn as auger over the shoulder, token around the neck. color palette: ice white, sky blue, river grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 황은설, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: soft rounded; skin: tan warm beige; average adult male height. upper garment: forest green plain single-breasted clerk's jacket with cotton oversleeves, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: clay brown high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: forest green, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 황은설, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; upturned almond dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: soft rounded; skin: tan warm beige; average adult male height. headwear: white synthetic hood; upper garment: 깃에 하늘색 끈을 두른 흰 눈 덧옷, 그 안에 물 먹은 회색 합성 섬유 겹 작업복; neckline: face cover pulled down under the chin; lower garment: waterproofed synthetic trousers; footwear: insulated overshoes with ice cleats. accessories: hand ice auger and the bench guarantee token on a chain; worn as auger over the shoulder, token around the neck. color palette: ice white, sky blue, river grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

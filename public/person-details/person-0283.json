@@ -1,494 +1,108 @@
 {
   "id": "person-0283",
   "name": "복두",
-  "title": "북부 선로 탐사원",
-  "position": "북부 선로 탐사원",
+  "title": "교섭인",
+  "position": "교섭인 · 수서역",
   "characterId": "K282",
-  "rank": "사원",
+  "rank": "세례자",
   "commonTier": "T5",
-  "occupation": "서울 북부 선로 실측·목격 대조",
+  "occupation": "계약 교섭",
   "gender": "남성",
   "stage": "S2",
-  "state": "S11",
-  "stateName": "성하그룹",
-  "sourceRoute": "/world/Cast-State-11#인물-복두",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0283",
   "birthDate": "2090-05-22",
   "birthday": "05-22",
   "age": 36,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-11.json#/content/138"
-  ],
-  "familyTree": {
-    "personId": "K282",
-    "nodes": [
-      {
-        "id": "K282",
-        "personId": "K282",
-        "kind": "person",
-        "name": "복두",
-        "birthDate": "2090-05-22",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K282"
-          },
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-복두-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 바깥 작업장 선로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-복두-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0283"
-      },
-      {
-        "id": "FH-K282-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "복승현",
-        "lineage": {
-          "surname": "복",
-          "bongwan": "면천",
-          "clan": "bcf5-ba74-cc9c"
-        },
-        "birthDate": "2060-05-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-복두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2098,
-            "summary": "복승현은 대합실 당직에서 바깥 선로 실측·목격 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-복두-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K282-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "복승영",
-        "lineage": {
-          "surname": "복",
-          "bongwan": "면천",
-          "clan": "bcf5-ba74-cc9c"
-        },
-        "birthDate": "2030-05-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-복두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "복승영은 대합실 당직에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-복두-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K282-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "복승윤",
-        "lineage": {
-          "surname": "복",
-          "bongwan": "면천",
-          "clan": "bcf5-ba74-cc9c"
-        },
-        "birthDate": "2000-05-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-복두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "복승윤은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-복두-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K282-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현빈",
-        "birthDate": "2060-05-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-복두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2098,
-            "summary": "강현빈은 대합실 당직에서 바깥 선로 실측·목격 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-복두-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K282-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현솔",
-        "birthDate": "2030-05-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-복두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "임현솔은 대합실 당직에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-복두-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K282-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현나",
-        "birthDate": "2000-05-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-복두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오현나는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-복두-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K282-P-01:K282:biological",
-        "from": "FH-K282-P-01",
-        "to": "K282",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-복두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K282-P-02:FH-K282-P-01:biological",
-        "from": "FH-K282-P-02",
-        "to": "FH-K282-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-복두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K282-P-03:FH-K282-P-02:biological",
-        "from": "FH-K282-P-03",
-        "to": "FH-K282-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-복두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K282-M-01:K282:biological",
-        "from": "FH-K282-M-01",
-        "to": "K282",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-복두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K282-M-02:FH-K282-M-01:biological",
-        "from": "FH-K282-M-02",
-        "to": "FH-K282-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-복두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K282-M-03:FH-K282-M-02:biological",
-        "from": "FH-K282-M-03",
-        "to": "FH-K282-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-복두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bcf5-ba74-cc9c",
+    "name": "면천 복씨",
+    "crest": "clan-crests/bcf5-ba74-cc9c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "언 이음매를 맨손으로 녹이다 첫째 부위를 받은 해가, 복두가 바깥 선로를 재러 다닌 마지막 해였다. 그 뒤로 수서 쇠 바꿈터의 교섭인이 되어, 테두리를 넘어온 사람에게 어느 출입구로 들어왔는지부터 묻고 길이 맞지 않으면 그 동력 덩이 값을 낮춰 부른다. 서른여섯인 그는 바깥 선로의 굽이를 다 외고 있어 거짓 길을 대는 사람을 금세 가려낸다. 쉬는 교대에는 정부 검문소가 있는 북쪽 경계 이야기를 젊은 정비공들에게 들려준다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "교섭인",
+    "품계": "세례자",
+    "생업": "계약 교섭",
+    "일하는 역": "수서역",
+    "잠자는 역": "수서역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "언 이음매를 맨손으로 녹이다 첫째 부위를 받은 해가, 복두가 바깥 선로를 재러 다닌 마지막 해였다. 그 뒤로 수서 쇠 바꿈터의 교섭인이 되어, 테두리를 넘어온 사람에게 어느 출입구로 들어왔는지부터 묻고 길이 맞지 않으면 그 동력 덩이 값을 낮춰 부른다. 서른여섯인 그는 바깥 선로의 굽이를 다 외고 있어 거짓 길을 대는 사람을 금세 가려낸다. 쉬는 교대에는 정부 검문소가 있는 북쪽 경계 이야기를 젊은 정비공들에게 들려준다.",
+    "관직": "직함 교섭인. 직위 교섭인 · 수서역. 품계 세례자. 일하는 역 수서역."
+  },
+  "values": {
+    "권위": 35,
+    "개방": -30,
+    "무력": -10,
+    "물질": -20,
+    "공동": 40,
+    "원칙": 5,
+    "공개": -40,
+    "자격": 25,
+    "분산": -15,
+    "변혁": 45
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -30,
+    "위험": -10,
+    "과시": 15,
+    "지속": 5,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0283",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 8,
         "effective": 8
       },
-      "negotiation": {
+      "martial": {
         "base": 4,
         "effective": 4
       },
-      "management": {
-        "base": 7,
-        "effective": 7
+      "stewardship": {
+        "base": 9,
+        "effective": 9
       },
-      "insight": {
-        "base": 10,
-        "effective": 10
+      "intrigue": {
+        "base": 6,
+        "effective": 6
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 5,
+        "effective": 5
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
       }
     },
-    "skills": [
-      {
-        "id": "k282-track-surveying",
-        "name": {
-          "ko": "선로 실측",
-          "en": "Track surveying"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k282-priority",
-        "name": {
-          "ko": "직접 확인",
-          "en": "Direct verification"
-        },
-        "description": {
-          "ko": "복두는 실측 선과 미확인 점선을 구분해 북문 우회 정보를 넘긴다. 공백 선로의 발견은 우회 성공과 다르다.",
-          "en": "Bokdu separates surveyed tracks from unverified dotted lines and passes gate detour information. A blank track section is not proof of a successful detour."
-        },
-        "behavior": {
-          "ko": "실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다.",
-          "en": "Office. Rank: assistant manager. Title: northern line surveyor. He left unsurveyed lines only as dotted lines and raised nothing onto the master plate with fewer than two independent sightings."
-        },
-        "stress": {
-          "ko": "위조 선로도가 시험 차륜 호송로로 쓰여 결함 열차가 강남역 사택 아래로 들어가는 것.",
-          "en": "Fear. That a forged track map would be used as a defect train's convoy route and the train would enter under the residential shells."
-        },
-        "relationship": {
-          "ko": "권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다. 장세화의 강남역 호송 시각과 선로 상태를 맞춘다.",
-          "en": "Relations. Handed the north gate bypasses to Gwon Doha and moved field measurements onto Du Guk's north gate chalkboard. Matched the track state to Jang Sehwa's joint convoy hours."
-        },
-        "effects": []
-      },
-      {
-        "id": "k282-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 사원. 직함은 바깥 작업장 선로 탐사원. 실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다.",
-          "en": "Office. Rank: assistant manager. Title: northern line surveyor. He left unsurveyed lines only as dotted lines and raised nothing onto the master plate with fewer than two independent sightings."
-        },
-        "stress": {
-          "ko": "공포. 위조 선로도가 시험 차륜 호송로로 쓰여 결함 열차가 강남역 사택 아래로 들어가는 것.",
-          "en": "Fear. That a forged track map would be used as a defect train's convoy route and the train would enter under the residential shells."
-        },
-        "relationship": {
-          "ko": "관계. 권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다. 장세화의 강남역 호송 시각과 선로 상태를 맞춘다.",
-          "en": "Relations. Handed the north gate bypasses to Gwon Doha and moved field measurements onto Du Guk's north gate chalkboard. Matched the track state to Jang Sehwa's joint convoy hours."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "복두는 실측 선과 미확인 점선을 구분해 북문 우회 정보를 넘긴다. 공백 선로의 발견은 우회 성공과 다르다.",
-      "en": "Bokdu separates surveyed tracks from unverified dotted lines and passes gate detour information. A blank track section is not proof of a successful detour."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -498,7 +112,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -524,59 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bcf5-ba74-cc9c",
-    "name": "면천 복씨",
-    "crest": "clan-crests/bcf5-ba74-cc9c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 10,
-    "개방": -15,
-    "무력": -20,
-    "물질": 30,
-    "공동": 20,
-    "원칙": 15,
-    "공개": 5,
-    "자격": 60,
-    "분산": 15,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -30,
-    "위험": -10,
-    "과시": 15,
-    "지속": 5,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "서울 북부 선로 실측·목격 대조",
-    "소속": "성하그룹",
-    "품계": "사원",
-    "직함": "북부 선로 탐사원",
-    "가치관": "권위 10 | 개방 −15 | 무력 −20 | 물질 30 | 공동 20 | 원칙 15 | 공개 5 | 자격 60 | 분산 15 | 변혁 0",
-    "욕망": "갈망 0 | 독점 −30 | 위험 −10 | 과시 15 | 지속 5 | 지향 이성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "대합실 당직에서 자랐다. 북부 선로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 복두는 역삼1동에서 서울 북부 선로 실측·목격 대조 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다. 장세화의 강남역 호송 시각과 선로 상태를 맞춘다",
-    "관직": "품계 사원. 직함은 북부 선로 탐사원. 실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다.",
-    "일화": "제동 불량 정차 구간의 선로도가 한 칸 공백으로 남아 있었다.",
-    "관계": "권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다. 장세화의 강남역 호송 시각과 선로 상태를 맞춘다.",
-    "야망": "북부 철도의 우회로를 공개 원판에 묶어 사택 점거나 급수 불안이 기지 출고를 막지 못하게 한다.",
-    "공포": "위조 선로도가 시험 차륜 호송로로 쓰여 결함 열차가 강남역 사택 아래로 들어가는 것.",
-    "개입": "공백 구간을 함께 실측하거나, 위조 원판을 회장실에서 폐기할 수 있다."
-  },
-  "biography": "닫힌 터널을 보면 발부터 향하고, 소문만으로 우회로를 그리는 일을 경멸한다. 침수 자국이 하루만 낡아도 지도를 다시 그린다.\n\n- 생업: 서울 북부 선로 실측·목격 대조\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 북부 선로 탐사원\n**생애.** 대합실 당직에서 자랐다. 북부 선로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 복두는 역삼1동에서 서울 북부 선로 실측·목격 대조 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다. 장세화의 강남역 호송 시각과 선로 상태를 맞춘다\n\n**관직.** 품계 사원. 직함은 북부 선로 탐사원. 실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다.\n\n**일화.** 제동 불량 정차 구간의 선로도가 한 칸 공백으로 남아 있었다.\n\n**관계.** 권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다. 장세화의 강남역 호송 시각과 선로 상태를 맞춘다.\n\n**야망.** 북부 철도의 우회로를 공개 원판에 묶어 사택 점거나 급수 불안이 기지 출고를 막지 못하게 한다.\n\n**공포.** 위조 선로도가 시험 차륜 호송로로 쓰여 결함 열차가 강남역 사택 아래로 들어가는 것.\n\n**개입.** 공백 구간을 함께 실측하거나, 위조 원판을 회장실에서 폐기할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −15 | 무력 −20 | 물질 30 | 공동 20 | 원칙 15 | 공개 5 | 자격 60 | 분산 15 | 변혁 0\n- 욕망: 갈망 0 | 독점 −30 | 위험 −10 | 과시 15 | 지속 5 | 지향 이성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-11"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

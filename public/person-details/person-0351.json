@@ -1,493 +1,149 @@
 {
   "id": "person-0351",
   "name": "안기준",
-  "title": "교량 감독",
-  "position": "아관사 교량 감독",
+  "title": "의원 집안 후계",
+  "position": "의원 집안 후계 · 건대입구역",
   "characterId": "K350",
-  "rank": "중대장",
-  "commonTier": "T4",
-  "occupation": "교각 균열·통행 무게 공개·이중 날인 확인",
+  "rank": "후계",
+  "commonTier": "T2",
+  "occupation": "구 행정",
   "gender": "여성",
   "stage": "S1",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-안기준",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0351",
   "birthDate": "2100-05-17",
   "birthday": "05-17",
   "age": 26,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/6",
-    "lore/characters/Cast-State-14.json#/content/8"
-  ],
-  "familyTree": {
-    "personId": "K350",
-    "nodes": [
-      {
-        "id": "K350",
-        "personId": "K350",
-        "kind": "person",
-        "name": "안기준",
-        "birthDate": "2100-05-17",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K350"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-안기준-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 아관사 교량 감독 자리는 야간 무단 도하 적발로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-안기준-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0351"
-      },
-      {
-        "id": "FH-K350-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "안승호",
-        "lineage": {
-          "surname": "안",
-          "bongwan": "순흥",
-          "clan": "c548-c21c-d765"
-        },
-        "birthDate": "2070-05-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-안기준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2108,
-            "summary": "안승호는 암사 경비 초소에서 교각 균열·통행 무게 공개·이중 날인 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-안기준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K350-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "안승민",
-        "lineage": {
-          "surname": "안",
-          "bongwan": "순흥",
-          "clan": "c548-c21c-d765"
-        },
-        "birthDate": "2040-05-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-안기준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2078,
-            "summary": "안승민은 암사 경비 초소에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-안기준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K350-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "안승원",
-        "lineage": {
-          "surname": "안",
-          "bongwan": "순흥",
-          "clan": "c548-c21c-d765"
-        },
-        "birthDate": "2010-05-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-안기준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "안승원은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-안기준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K350-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준문",
-        "birthDate": "2070-05-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-안기준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2108,
-            "summary": "최준문은 암사 경비 초소에서 교각 균열·통행 무게 공개·이중 날인 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-안기준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K350-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준우",
-        "birthDate": "2040-05-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-안기준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2078,
-            "summary": "정준우는 암사 경비 초소에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-안기준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K350-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤준수",
-        "birthDate": "2010-05-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-안기준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤준수는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-안기준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K350-P-01:K350:biological",
-        "from": "FH-K350-P-01",
-        "to": "K350",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-안기준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K350-P-02:FH-K350-P-01:biological",
-        "from": "FH-K350-P-02",
-        "to": "FH-K350-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-안기준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K350-P-03:FH-K350-P-02:biological",
-        "from": "FH-K350-P-03",
-        "to": "FH-K350-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-안기준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K350-M-01:K350:biological",
-        "from": "FH-K350-M-01",
-        "to": "K350",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-안기준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K350-M-02:FH-K350-M-01:biological",
-        "from": "FH-K350-M-02",
-        "to": "FH-K350-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-안기준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K350-M-03:FH-K350-M-02:biological",
-        "from": "FH-K350-M-03",
-        "to": "FH-K350-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-안기준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c548-c21c-d765",
+    "name": "순흥 안씨",
+    "crest": "clan-crests/c548-c21c-d765.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "광진구 화양동 건대입구역의 의원 집안 거처에서 맨 안쪽 잠자리는 고서준 의원 집안의 후계 안기준이 쓴다. 순흥 안씨인 스물여섯 살 여성으로, 한양 고씨 가운데 정부 쪽에는 후계로 세울 사람이 없어 고서준이 다른 집안에서 들인 사람이다. 의원과 한 살 차이라 사람들은 그녀를 다음 의석보다 지금의 오른손으로 본다. 다리 끝 검문소의 통행 장부를 의원에게 올리기 전에 하나하나 읽고, 강변과 자양 두 다리의 북쪽 끝을 이레에 한 번씩 걸어서 돌아본다. 후계로 기재되던 날 그녀는 고서준의 도장 옆에 자기 이름을 쓰고 의석을 지키겠다고 맹세했다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "의원 집안 후계",
+    "품계": "후계",
+    "생업": "구 행정",
+    "일하는 역": "건대입구역",
+    "잠자는 역": "건대입구역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "광진구 화양동 건대입구역의 의원 집안 거처에서 맨 안쪽 잠자리는 고서준 의원 집안의 후계 안기준이 쓴다. 순흥 안씨인 스물여섯 살 여성으로, 한양 고씨 가운데 정부 쪽에는 후계로 세울 사람이 없어 고서준이 다른 집안에서 들인 사람이다. 의원과 한 살 차이라 사람들은 그녀를 다음 의석보다 지금의 오른손으로 본다. 다리 끝 검문소의 통행 장부를 의원에게 올리기 전에 하나하나 읽고, 강변과 자양 두 다리의 북쪽 끝을 이레에 한 번씩 걸어서 돌아본다. 후계로 기재되던 날 그녀는 고서준의 도장 옆에 자기 이름을 쓰고 의석을 지키겠다고 맹세했다.",
+    "관직": "직함 의원 집안 후계. 직위 의원 집안 후계 · 건대입구역. 품계 후계. 일하는 역 건대입구역."
+  },
+  "values": {
+    "권위": 90,
+    "개방": -80,
+    "무력": 70,
+    "물질": 10,
+    "공동": 35,
+    "원칙": 20,
+    "공개": -40,
+    "자격": 5,
+    "분산": -75,
+    "변혁": -35
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": -35,
+    "위험": 30,
+    "과시": -10,
+    "지속": 30,
+    "지향": "유동",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0351",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "안기준",
+        "type": "지휘",
+        "to": "고서준",
+        "basis": "광진구 국회의원 고서준의 직속"
+      },
+      {
+        "from": "안기준",
+        "type": "맹세",
+        "to": "고서준",
+        "basis": "후계로 기재되던 날 의석을 지키겠다고 맹세했다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "안도한",
+        "type": "경쟁",
+        "to": "안기준",
+        "basis": "같은 순흥 안씨로 이웃 광진구 의원 집안 후계가 된 사람과 견주어지는 사이"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K348",
+    "name": "고서준",
+    "courtId": "court:K348",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 10,
         "effective": 10
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 10,
-        "effective": 10
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 9,
-        "effective": 9
-      },
-      "endurance": {
-        "base": 10,
-        "effective": 10
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "bridge-inspection",
-        "name": {
-          "ko": "교량 점검",
-          "en": "Bridge inspection"
-        },
-        "rating": 65
+        "id": "p0351-bridge",
+        "name": "다리 끝 통행 장부",
+        "rating": 58
       }
     ],
     "traits": [
       {
-        "id": "stated-priority",
-        "name": {
-          "ko": "근거 없는 봉쇄를 싫어한다",
-          "en": "Rejects unsupported closure"
-        },
-        "description": {
-          "ko": "균열과 무게를 공개하며 무장 난입자를 붙들어 명부를 재점검했다. 교량 검증과 제한된 현장 제압은 보이나 대규모 전투는 없다.",
-          "en": "Cracks and weights are published; an armed intruder was restrained for roster review. Bridge verification and limited restraint are supported, not large-scale battle."
-        },
-        "behavior": {
-          "ko": "점검 해머를 계약서보다 믿지만, 근거 없는 봉쇄는 병력 낭비라고 본다. 교각 균열을 사람 이름처럼 기억한다.",
-          "en": "He trusted an inspection hammer more than a contract, but saw a baseless blockade as a waste of troops. He remembered pier cracks the way he remembered people's names."
-        },
-        "stress": {
-          "ko": "공포. 교량이 일방의 군령으로 상수호위단에 넘어가는 것.",
-          "en": "Fear. That the bridges would pass to the water-supply escort under a protection-government pretext."
-        },
-        "relationship": {
-          "ko": "관계. 고서준과 장세화의 통행 협약을 교량에서 집행하고, 심가은의 척후 보고를 검증하며, 남호성의 의무호송을 우선 통과시킨다.",
-          "en": "Relations. Executed the passage treaty of Go Seojun and Jang Sehwa at the bridge, verified Sim Gaeun's reconnaissance reports, and passed Nam Hoseong's medical convoy through first."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 중대장. 직함은 아관사 교량 감독. 교각 균열과 통행 무게를 매일 공개하고, 군 통행은 아관사와 구의수비대의 이중 날인을 요구한다.",
-          "en": "Office. Rank: company commander. Title: bridge supervisor. He published the pier cracks and passage weights daily and demanded the double stamp of Go Seojun and the water engineers' council for military passage."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 중대장. 직함은 아관사 교량 감독. 교각 균열과 통행 무게를 매일 공개하고, 군 통행은 아관사와 구의수비대의 이중 날인을 요구한다.",
-          "en": "Recorded duty and limits: Office. Rank: company commander. Title: bridge supervisor. He published the pier cracks and passage weights daily and demanded the double stamp of Go Seojun and the water engineers' council for military passage."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 교량이 일방의 군령으로 상수호위단에 넘어가는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That the bridges would pass to the water-supply escort under a protection-government pretext."
-        },
-        "relationship": {
-          "ko": "관계. 고서준과 장세화의 통행 협약을 교량에서 집행하고, 심가은의 척후 보고를 검증하며, 남호성의 의무호송을 우선 통과시킨다.",
-          "en": "Relations. Executed the passage treaty of Go Seojun and Jang Sehwa at the bridge, verified Sim Gaeun's reconnaissance reports, and passed Nam Hoseong's medical convoy through first."
-        },
+        "id": "p0351-trait-1",
+        "name": "걸어서 확인",
+        "description": "장부로 본 것을 제 발로 가서 다시 본다.",
+        "behavior": "다리 끝 초소의 숫자를 직접 세어 장부와 맞춘다.",
+        "stress": "바람에 다리가 닫혀 나가지 못하는 날에는 말이 짧아진다.",
+        "relationship": "고서준은 그녀의 확인이 끝나야 서류를 펼친다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "균열과 무게를 공개하며 무장 난입자를 붙들어 명부를 재점검했다. 교량 검증과 제한된 현장 제압은 보이나 대규모 전투는 없다.",
-      "en": "Cracks and weights are published; an armed intruder was restrained for roster review. Bridge verification and limited restraint are supported, not large-scale battle."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -525,85 +181,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c548-c21c-d765",
-    "name": "순흥 안씨",
-    "crest": "clan-crests/c548-c21c-d765.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 45,
-    "개방": -25,
-    "무력": 35,
-    "물질": 15,
-    "공동": 30,
-    "원칙": 0,
-    "공개": -15,
-    "자격": -10,
-    "분산": -25,
-    "변혁": -15
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": -35,
-    "위험": 30,
-    "과시": -10,
-    "지속": 30,
-    "지향": "유동",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "교각 균열·통행 무게 공개·이중 날인 확인",
-    "소속": "아관사",
-    "품계": "중대장",
-    "직함": "아관사 교량 감독",
-    "가치관": "권위 45 | 개방 −25 | 무력 35 | 물질 15 | 공동 30 | 원칙 0 | 공개 −15 | 자격 −10 | 분산 −25 | 변혁 −15",
-    "욕망": "갈망 10 | 독점 −35 | 위험 30 | 과시 −10 | 지속 30 | 지향 유동 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2100-05-17에 태어났다. 2126년 개막 현재 아관사 교량 감독 직무를 맡아 교각 균열·통행 무게 공개·이중 날인 확인 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 교각 균열·통행 무게 공개·이중 날인 확인 창구가 안기준의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 중대장. 직함은 아관사 교량 감독. 교각 균열·통행 무게 공개·이중 날인 확인 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
-    "일화": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
-    "관계": "고서준과 장세화의 통행 협약을 교량에서 집행하고, 심가은의 척후 보고를 검증하며, 남호성의 의무호송을 우선 통과시킨다.",
-    "야망": "안기준은 아관사 교량 감독 직무에서 교각 균열·통행 무게 공개·이중 날인 확인 기록을 공개 인계표와 맞물리게 하려 한다.",
-    "공포": "아관사 교량 감독 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
-    "개입": "파손 원인을 교각 쪽에서 증명하거나, 교량 열쇠를 양군의 공동 승인 없이는 넘기지 않는다. 안기준의 교각 균열·통행 무게 공개·이중 날인 확인 원장을 대조해 다음 인계의 증거를 세울 수 있다."
-  },
-  "biography": "안기준은 교각 균열·통행 무게 공개·이중 날인 확인 기록을 손에 익힌 아관사 인물이다. 점검 해머를 계약서보다 믿지만, 근거 없는 봉쇄는 병력 낭비라고 본다. 교각 균열을 사람 이름처럼 기억한다.\n\n- 생업: 교각 균열·통행 무게 공개·이중 날인 확인\n- 소속: 아관사\n- 품계: 중대장\n- 직함: 아관사 교량 감독\n**생애.** 2100-05-17에 태어났다. 2126년 개막 현재 아관사 교량 감독 직무를 맡아 교각 균열·통행 무게 공개·이중 날인 확인 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 교각 균열·통행 무게 공개·이중 날인 확인 창구가 안기준의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 중대장. 직함은 아관사 교량 감독. 교각 균열·통행 무게 공개·이중 날인 확인 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 고서준과 장세화의 통행 협약을 교량에서 집행하고, 심가은의 척후 보고를 검증하며, 남호성의 의무호송을 우선 통과시킨다.\n\n**야망.** 안기준은 아관사 교량 감독 직무에서 교각 균열·통행 무게 공개·이중 날인 확인 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 아관사 교량 감독 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 파손 원인을 교각 쪽에서 증명하거나, 교량 열쇠를 양군의 공동 승인 없이는 넘기지 않는다. 안기준의 교각 균열·통행 무게 공개·이중 날인 확인 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 45 | 개방 −25 | 무력 35 | 물질 15 | 공동 30 | 원칙 0 | 공개 −15 | 자격 −10 | 분산 −25 | 변혁 −15\n- 욕망: 갈망 10 | 독점 −35 | 위험 30 | 과시 −10 | 지속 30 | 지향 유동 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-14"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "안기준",
-        "type": "지휘",
-        "to": "고서준",
-        "basis": "통행 협약을 교량에서 집행"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "원예나",
-        "type": "지휘",
-        "to": "안기준",
-        "basis": "안기준의 교량 일정을 화물 순서로 집행하는 계약이고"
-      },
-      {
-        "from": "동새봄",
-        "type": "사제",
-        "to": "안기준",
-        "basis": "안기준의 교각 균열 이름을 원판 여백에 적는다"
-      },
-      {
-        "from": "수지완",
-        "type": "계약",
-        "to": "안기준",
-        "basis": "안기준의 교량 일정을 승강장 칠판에 옮기고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

@@ -1,492 +1,120 @@
 {
   "id": "person-0235",
   "name": "모국",
-  "title": "환전 기록 담당 서기 · 서대문구 영주",
-  "position": "환전 기록 담당 서기 · 서대문구 영주",
+  "title": "의원 집안 친족",
+  "position": "의원 집안 친족 · 충정로역",
   "characterId": "K234",
-  "rank": "영주",
-  "commonTier": "T3",
-  "occupation": "영등포동 생활 화물 인계의 환전 로그·통행 명부 기록",
+  "rank": "등재민",
+  "commonTier": "T5",
+  "occupation": "구 행정",
   "gender": "여성",
   "stage": "S2",
-  "state": "S09",
-  "stateName": "여의도출자연합회",
-  "sourceRoute": "/world/Cast-State-09#인물-모국",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0235",
   "birthDate": "2094-04-01",
   "birthday": "04-01",
   "age": 32,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-09.json#/content/160"
-  ],
-  "familyTree": {
-    "personId": "K234",
-    "nodes": [
-      {
-        "id": "K234",
-        "personId": "K234",
-        "kind": "person",
-        "name": "모국",
-        "birthDate": "2094-04-01",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K234"
-          },
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모국-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 여의도 금고 당직에서 자랐다. 환전 기록 담당 서기 자리는 정전 사흘 금고 유지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-모국-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0235"
-      },
-      {
-        "id": "FH-K234-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "모승민",
-        "lineage": {
-          "surname": "모",
-          "bongwan": "함평",
-          "clan": "baa8-d568-d3c9"
-        },
-        "birthDate": "2064-04-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2102,
-            "summary": "모승민은 여의도 금고 당직에서 영등포동 생활 화물 인계의 환전 로그·통행 명부 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-모국-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K234-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "모승원",
-        "lineage": {
-          "surname": "모",
-          "bongwan": "함평",
-          "clan": "baa8-d568-d3c9"
-        },
-        "birthDate": "2034-04-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "모승원은 여의도 금고 당직에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-모국-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K234-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "모승진",
-        "lineage": {
-          "surname": "모",
-          "bongwan": "함평",
-          "clan": "baa8-d568-d3c9"
-        },
-        "birthDate": "2004-04-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "모승진은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-모국-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K234-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현재",
-        "birthDate": "2064-04-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2102,
-            "summary": "강현재는 여의도 금고 당직에서 영등포동 생활 화물 인계의 환전 로그·통행 명부 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-모국-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K234-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현문",
-        "birthDate": "2034-04-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "임현문은 여의도 금고 당직에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-모국-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K234-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현규",
-        "birthDate": "2004-04-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오현규는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-모국-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K234-P-01:K234:biological",
-        "from": "FH-K234-P-01",
-        "to": "K234",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K234-P-02:FH-K234-P-01:biological",
-        "from": "FH-K234-P-02",
-        "to": "FH-K234-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K234-P-03:FH-K234-P-02:biological",
-        "from": "FH-K234-P-03",
-        "to": "FH-K234-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K234-M-01:K234:biological",
-        "from": "FH-K234-M-01",
-        "to": "K234",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K234-M-02:FH-K234-M-01:biological",
-        "from": "FH-K234-M-02",
-        "to": "FH-K234-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K234-M-03:FH-K234-M-02:biological",
-        "from": "FH-K234-M-03",
-        "to": "FH-K234-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모국-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "baa8-d568-d3c9",
+    "name": "함평 모씨",
+    "crest": "clan-crests/baa8-d568-d3c9.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "밀러 집안 창고 열쇠에는 살림지기 모국의 이름 꼬리표가 달려 있다. 알렉산더 밀러 국회의원 집안의 살림지기로, 집안과 피로 이어지지는 않았지만 집안의 도장을 새긴 단추를 단 외투를 입는다. 공덕 장터에서 들어오는 강 건너 물자의 반입표가 그녀의 책상을 거쳐 구청과 집안 창고로 나뉘어 간다. 반입표의 숫자가 창고에 들어온 짐과 어긋나는 날이면, 그녀는 공덕 장터까지 직접 걸어가 짐을 넘긴 상인의 증표 번호를 받아 온다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "의원 집안 친족",
+    "품계": "등재민",
+    "생업": "구 행정",
+    "일하는 역": "충정로역",
+    "잠자는 역": "충정로역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "밀러 집안 창고 열쇠에는 살림지기 모국의 이름 꼬리표가 달려 있다. 알렉산더 밀러 국회의원 집안의 살림지기로, 집안과 피로 이어지지는 않았지만 집안의 도장을 새긴 단추를 단 외투를 입는다. 공덕 장터에서 들어오는 강 건너 물자의 반입표가 그녀의 책상을 거쳐 구청과 집안 창고로 나뉘어 간다. 반입표의 숫자가 창고에 들어온 짐과 어긋나는 날이면, 그녀는 공덕 장터까지 직접 걸어가 짐을 넘긴 상인의 증표 번호를 받아 온다.",
+    "관직": "직함 의원 집안 친족. 직위 의원 집안 친족 · 충정로역. 품계 등재민. 일하는 역 충정로역."
+  },
+  "values": {
+    "권위": 50,
+    "개방": -35,
+    "무력": 5,
+    "물질": -25,
+    "공동": 15,
+    "원칙": 40,
+    "공개": 30,
+    "자격": 25,
+    "분산": -30,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": 25,
+    "독점": 0,
+    "위험": 5,
+    "과시": -20,
+    "지속": 35,
+    "지향": "이성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0235",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "모국",
+        "type": "지휘",
+        "to": "알렉산더 밀러",
+        "basis": "서대문구 국회의원 알렉산더 밀러의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K170",
+    "name": "알렉산더 밀러",
+    "courtId": "court:K170",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "management": {
-        "base": 11,
-        "effective": 11
+      "stewardship": {
+        "base": 9,
+        "effective": 9
       },
-      "insight": {
-        "base": 10,
-        "effective": 10
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "exchange-record",
-        "name": {
-          "ko": "환전 로그·명부 대조",
-          "en": "Exchange log and roster comparison"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "exchange-record-disposition",
-        "name": {
-          "ko": "빈칸을 붙잡는 운영",
-          "en": "Blank-intolerant operation"
-        },
-        "description": {
-          "ko": "빈 환전 칸을 참지 못해 통과 상인을 오래 붙잡아 둔다.",
-          "en": "Keeps passing merchants waiting over blank exchange entries."
-        },
-        "behavior": {
-          "ko": "빈 환전 칸을 참지 못해 통과 상인을 오래 붙잡아 둔다.",
-          "en": "Keeps passing merchants waiting over blank exchange entries."
-        },
-        "stress": {
-          "ko": "영등포동 인계 창구가 검열 초소가 될 것을 두려워한다.",
-          "en": "Fears the Yeongdeungpo-dong handover counter becoming a censorship checkpoint."
-        },
-        "relationship": {
-          "ko": "복두모의 실측 좌표를 받고, 소감의 전령로를 영등포동 생활 화물 인계 창구에서 잇는다. 장세화의 의료 우선 인계와 환전 협약을 우선으로 남긴다.",
-          "en": "Received Bok Dumo's field coordinates and linked So Gam's courier route at the Yeongdeungpo-dong everyday-cargo handover counter. Left Jang Sehwa's medical handovers and exchange agreement as priorities."
-        },
-        "effects": []
-      },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "의료 환전 우선",
-          "en": "Medical exchange priority"
-        },
-        "description": {
-          "ko": "의료 우선 인계와 환전 협약을 영등포동 인계 창구 기록에 우선 남긴다.",
-          "en": "Gives medical handovers and exchange agreements priority in the Yeongdeungpo-dong handover counter records."
-        },
-        "behavior": {
-          "ko": "의료 우선 인계와 환전 협약을 영등포동 인계 창구 기록에 우선 남긴다.",
-          "en": "Gives medical handovers and exchange agreements priority in the Yeongdeungpo-dong handover counter records."
-        },
-        "stress": {
-          "ko": "영등포동 인계 창구가 검열 초소로 바뀌어 공동 환전이 막히는 것.",
-          "en": "That the Yeongdeungpo-dong handover counter would become a censorship post and joint exchange would be blocked."
-        },
-        "relationship": {
-          "ko": "복두모의 실측 좌표를 받고, 소감의 전령로를 영등포동 생활 화물 인계 창구에서 잇는다. 장세화의 의료 우선 인계와 환전 협약을 우선으로 남긴다.",
-          "en": "Received Bok Dumo's field coordinates and linked So Gam's courier route at the Yeongdeungpo-dong everyday-cargo handover counter. Left Jang Sehwa's medical handovers and exchange agreement as priorities."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "환전 로그와 통행 명부를 함께 게시하고 의료 환전 협약을 우선한다. 위조 각인 유출은 통제의 성공으로 바꾸어 쓰지 않는다.",
-      "en": "Posts exchange logs with passage rosters and prioritizes medical exchange. Leakage of a forged mark is not rewritten as successful control."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,149 +152,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-gu-11410-S09",
-      "name": {
-        "ko": "서대문구 여의도출자연합회 공작령 직영지"
-      },
-      "holderPersonId": "K234",
-      "directLiegePersonId": "K029",
-      "stateId": "S09",
-      "adminRefs": [
-        {
-          "id": "region:1141058500",
-          "name": "신촌동"
-        },
-        {
-          "id": "region:1141061500",
-          "name": "연희동"
-        },
-        {
-          "id": "region:1141062000",
-          "name": "홍제1동"
-        },
-        {
-          "id": "region:1141064000",
-          "name": "홍제3동"
-        },
-        {
-          "id": "region:1141069000",
-          "name": "남가좌1동"
-        },
-        {
-          "id": "region:1141070000",
-          "name": "남가좌2동"
-        },
-        {
-          "id": "region:1141071000",
-          "name": "북가좌1동"
-        },
-        {
-          "id": "region:1141072000",
-          "name": "북가좌2동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11410-S09",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
-    {
-      "id": "title:duchy-gu-11410-S09",
-      "name": "서대문구 여의도출자연합회 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K234",
-      "basis": "개막 행정 규모 그룹 gu:11410(duchy) 배분 · 결정적 후보 선정",
-      "stateId": "S09",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "region:1141058500",
-        "region:1141061500",
-        "region:1141062000",
-        "region:1141064000",
-        "region:1141069000",
-        "region:1141070000",
-        "region:1141071000",
-        "region:1141072000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
-    }
-  ],
-  "clan": {
-    "id": "baa8-d568-d3c9",
-    "name": "함평 모씨",
-    "crest": "clan-crests/baa8-d568-d3c9.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 5,
-    "개방": 20,
-    "무력": -30,
-    "물질": -20,
-    "공동": 10,
-    "원칙": 20,
-    "공개": 55,
-    "자격": 10,
-    "분산": 20,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 25,
-    "독점": 0,
-    "위험": 5,
-    "과시": -20,
-    "지속": 35,
-    "지향": "이성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "영등포동 생활 화물 인계의 환전 로그·통행 명부 기록",
-    "소속": "여의도출자연합회",
-    "품계": "영주",
-    "직함": "환전 기록 담당 서기 · 서대문구 영주",
-    "가치관": "권위 5 | 개방 20 | 무력 −30 | 물질 −20 | 공동 10 | 원칙 20 | 공개 55 | 자격 10 | 분산 20 | 변혁 −5",
-    "욕망": "갈망 25 | 독점 0 | 위험 5 | 과시 −20 | 지속 35 | 지향 이성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2094-04-01 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 여의도 금고 당직에서 자랐다. 환전 기록 담당 서기 자리는 정전 사흘 금고 유지로 열렸다.\n- 모국은 영등포동의 생활 화물 인계 창구에서 환전 기록과 통행 명부를 대조하고 장세화의 의료 우선 인계를 챙긴다. 서대문구 영주로서의 관할과 K029에게 지는 봉속은 이 업무와 별개다.\n- 모국은 여의동에서 환전 장부를 확인하고 영등포동 생활 화물 인계 창구의 기록과 맞춘다. 서대문구 영주로서의 관할과 K029에게 지는 봉속은 이 업무와 별개다.",
-    "관직": "품계 영주. 직함은 환전 기록 담당 서기 · 서대문구 영주. 환전 로그와 통행 명부를 같은 벽에 붙이고, 단독 정정 시세는 다음 날 같은 길이에 반대 의견을 붙인다. 서대문구 여의도출자연합회 공작령 직영지 보유와 이 서기 업무는 별개다.",
-    "일화": "위조 화폐와 같은 각인이 영등포동 인계 창구의 환전에서 한 차례 새어 나갔다.",
-    "관계": "실측 좌표를 받고, 소감의 전령로를 영등포동 생활 화물 인계 창구에서 잇는다. 장세화의 의료 우선 인계와 환전 협약을 우선으로 남긴다.",
-    "야망": "영등포동 생활 화물 인계 창구를 서울 내부 대금 환전의 입구로 만들어 강국이 전원을 내려도 우회 환전이 남게 한다.",
-    "공포": "영등포동 인계 창구가 검열 초소로 바뀌어 공동 환전이 막히는 것.",
-    "개입": "새어 나간 위조 화폐의 원점을 막거나, 의료 환전 우선 조항을 지점 원장에 고정할 수 있다."
-  },
-  "biography": "환전 장부의 빈칸을 참지 못하고, 통과만 하는 상인을 환전 원장에 오래 붙잡아 둔다. 좌표 없는 소문은 지점 밖으로 내보내지 않는다.\n\n- 생업: 영등포동 생활 화물 인계의 환전 로그·통행 명부 기록\n- 소속: 여의도출자연합회\n- 품계: 영주\n- 직함: 환전 기록 담당 서기 · 서대문구 영주\n**생애.** 2094-04-01 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 여의도 금고 당직에서 자랐다. 환전 기록 담당 서기 자리는 정전 사흘 금고 유지로 열렸다.\n- 모국은 영등포동의 생활 화물 인계 창구에서 환전 기록과 통행 명부를 대조하고 장세화의 의료 우선 인계를 챙긴다. 서대문구 영주로서의 관할과 K029에게 지는 봉속은 이 업무와 별개다.\n- 모국은 여의동에서 환전 장부를 확인하고 영등포동 생활 화물 인계 창구의 기록과 맞춘다. 서대문구 영주로서의 관할과 K029에게 지는 봉속은 이 업무와 별개다.\n\n**관직.** 품계 영주. 직함은 환전 기록 담당 서기 · 서대문구 영주. 환전 로그와 통행 명부를 같은 벽에 붙이고, 단독 정정 시세는 다음 날 같은 길이에 반대 의견을 붙인다. 서대문구 여의도출자연합회 공작령 직영지 보유와 이 서기 업무는 별개다.\n\n**일화.** 위조 화폐와 같은 각인이 영등포동 인계 창구의 환전에서 한 차례 새어 나갔다.\n\n**관계.** 실측 좌표를 받고, 소감의 전령로를 영등포동 생활 화물 인계 창구에서 잇는다. 장세화의 의료 우선 인계와 환전 협약을 우선으로 남긴다.\n\n**야망.** 영등포동 생활 화물 인계 창구를 서울 내부 대금 환전의 입구로 만들어 강국이 전원을 내려도 우회 환전이 남게 한다.\n\n**공포.** 영등포동 인계 창구가 검열 초소로 바뀌어 공동 환전이 막히는 것.\n\n**개입.** 새어 나간 위조 화폐의 원점을 막거나, 의료 환전 우선 조항을 지점 원장에 고정할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 20 | 무력 −30 | 물질 −20 | 공동 10 | 원칙 20 | 공개 55 | 자격 10 | 분산 20 | 변혁 −5\n- 욕망: 갈망 25 | 독점 0 | 위험 5 | 과시 −20 | 지속 35 | 지향 이성 | 결합 비독점",
-  "sources": [
-    "Cast-State-09"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "모국",
-        "type": "계약",
-        "to": "장세화",
-        "basis": "장세화의 의료속보 협약을 중계 우선으로 남긴다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "순한결",
-        "type": "맹세",
-        "to": "모국",
-        "basis": "모국의 서북 관문 중계에서 증언하고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

@@ -1,514 +1,118 @@
 {
   "id": "person-0859",
   "name": "최바아",
-  "title": "유치선 순찰대",
-  "position": "유치선 순찰대",
+  "title": "세례 전투원",
+  "position": "세례 전투원 · 암사역",
   "characterId": "K859",
-  "rank": "교사",
+  "rank": "세례자",
   "commonTier": "T5",
-  "occupation": "경비·순찰",
+  "occupation": "세례 전투",
   "gender": "여성",
   "stage": "S4",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-최바아",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0859",
   "birthDate": "2093-04-25",
   "birthday": "04-25",
   "age": 33,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/599",
-    "lore/characters/Cast-State-04.json#/content/601",
-    "lore/characters/Cast-State-04.json#/content/602"
-  ],
-  "familyTree": {
-    "personId": "K859",
-    "nodes": [
-      {
-        "id": "K859",
-        "personId": "K859",
-        "kind": "person",
-        "name": "최바아",
-        "birthDate": "2093-04-25",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K859"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-최바아-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-최바아-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0859"
-      },
-      {
-        "id": "FH-K859-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최민윤",
-        "lineage": {
-          "surname": "최",
-          "bongwan": "경주",
-          "clan": "cd5c-acbd-c8fc-agreed-c544-second"
-        },
-        "birthDate": "2063-04-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-최바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2101,
-            "summary": "최민윤은 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-최바아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K859-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최민우",
-        "lineage": {
-          "surname": "최",
-          "bongwan": "경주",
-          "clan": "cd5c-acbd-c8fc-agreed-c544-second"
-        },
-        "birthDate": "2033-04-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-최바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2071,
-            "summary": "최민우는 암사 경비 초소에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-최바아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K859-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최민경",
-        "lineage": {
-          "surname": "최",
-          "bongwan": "경주",
-          "clan": "cd5c-acbd-c8fc-agreed-c544-second"
-        },
-        "birthDate": "2003-04-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-최바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최민경은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-최바아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K859-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임도란",
-        "birthDate": "2063-04-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-최바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2101,
-            "summary": "임도란은 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-최바아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K859-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오도온",
-        "birthDate": "2033-04-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-최바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2071,
-            "summary": "오도온은 암사 경비 초소에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-최바아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K859-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "송도재",
-        "birthDate": "2003-04-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-최바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "송도재는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-최바아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K859-P-01:K859:biological",
-        "from": "FH-K859-P-01",
-        "to": "K859",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-최바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K859-P-02:FH-K859-P-01:biological",
-        "from": "FH-K859-P-02",
-        "to": "FH-K859-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-최바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K859-P-03:FH-K859-P-02:biological",
-        "from": "FH-K859-P-03",
-        "to": "FH-K859-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-최바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K859-M-01:K859:biological",
-        "from": "FH-K859-M-01",
-        "to": "K859",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-최바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K859-M-02:FH-K859-M-01:biological",
-        "from": "FH-K859-M-02",
-        "to": "FH-K859-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-최바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K859-M-03:FH-K859-M-02:biological",
-        "from": "FH-K859-M-03",
-        "to": "FH-K859-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-최바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cd5c-acbd-c8fc",
+    "name": "경주 최씨",
+    "crest": "clan-crests/cd5c-acbd-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "셋째 부위를 받은 뒤로 최바아는 깃과 철모에 새 부위 수를 칠했고, 그 수가 눈에 묻혀 흐려지면 다시 칠하러 내려온다. 서른세 살 그녀가 든 세례 전투원 조는 암사 취수구 위 초소를 지킨다. 강동 곁집 사람들 앞에서 그녀는 늘 한 번 더 보여 주려는 듯 순찰을 하나 더 맡는다. 순찰을 마치면 부위마다 감은 토시를 풀어, 자투리 섬유로 뜬 코가 해진 곳은 없는지 손끝으로 더듬어 본다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "세례 전투원",
+    "품계": "세례자",
+    "생업": "세례 전투",
+    "일하는 역": "암사역",
+    "잠자는 역": "암사역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 3
+  },
+  "sections": {
+    "생애": "셋째 부위를 받은 뒤로 최바아는 깃과 철모에 새 부위 수를 칠했고, 그 수가 눈에 묻혀 흐려지면 다시 칠하러 내려온다. 서른세 살 그녀가 든 세례 전투원 조는 암사 취수구 위 초소를 지킨다. 강동 곁집 사람들 앞에서 그녀는 늘 한 번 더 보여 주려는 듯 순찰을 하나 더 맡는다. 순찰을 마치면 부위마다 감은 토시를 풀어, 자투리 섬유로 뜬 코가 해진 곳은 없는지 손끝으로 더듬어 본다.",
+    "관직": "직함 세례 전투원. 직위 세례 전투원 · 암사역. 품계 세례자. 일하는 역 암사역."
+  },
+  "values": {
+    "권위": 50,
+    "개방": -15,
+    "무력": 5,
+    "물질": -30,
+    "공동": 45,
+    "원칙": -10,
+    "공개": -60,
+    "자격": 5,
+    "분산": -5,
+    "변혁": 50
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": 25,
+    "위험": 5,
+    "과시": 10,
+    "지속": 5,
+    "지향": "양성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0859",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 4,
         "effective": 4
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
+      "martial": {
+        "base": 9,
+        "effective": 9
       },
-      "negotiation": {
+      "stewardship": {
         "base": 4,
         "effective": 4
       },
-      "management": {
-        "base": 7,
-        "effective": 7
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
-      "learning": {
-        "base": 7,
-        "effective": 7
-      },
-      "prowess": {
+      "intrigue": {
         "base": 5,
         "effective": 5
       },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+      "learning": {
+        "base": 4,
+        "effective": 4
+      },
+      "prowess": {
+        "base": 11,
+        "effective": 11
       }
     },
-    "skills": [
-      {
-        "id": "scout",
-        "name": {
-          "ko": "매복 징후 관찰",
-          "en": "Ambush-sign observation"
-        },
-        "rating": 50
-      },
-      {
-        "id": "guard",
-        "name": {
-          "ko": "출입 저지·암호패 교체",
-          "en": "Entry control and pass replacement"
-        },
-        "rating": 45
-      }
-    ],
-    "traits": [
-      {
-        "id": "patrol-signs-first",
-        "name": {
-          "ko": "초계 징후 먼저",
-          "en": "Patrol Signs First"
-        },
-        "description": {
-          "ko": "최바아는 초계에서 위험의 흔적을 먼저 읽는 데 주의를 두는 성향을 보인다.",
-          "en": "Choe Baa shows a disposition to attend first to traces of danger during patrol."
-        },
-        "behavior": {
-          "ko": "능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다.",
-          "en": "During a ridge patrol, he read ambush traces early and prevented harm."
-        },
-        "stress": {
-          "ko": "당직 단절로 통행이 위협받을까 우려되면 눈앞의 초계 징후를 더 신중히 살필 수 있다.",
-          "en": "If he fears interrupted duty will threaten passage, he may examine immediate patrol signs more carefully."
-        },
-        "relationship": {
-          "ko": "선배 당직과 인계할 때 직접 읽은 매복 흔적을 공유하는 데 무게를 둘 수 있다.",
-          "en": "In handovers with senior duty staff, he may emphasize sharing the ambush traces he personally recognized."
-        },
-        "effects": []
-      },
-      {
-        "id": "avoid-verified-hazards",
-        "name": {
-          "ko": "확인된 위험 회피",
-          "en": "Avoid Verified Hazards"
-        },
-        "description": {
-          "ko": "최바아는 읽어 낸 매복 징후를 근거로 피해를 피하는 판단을 중시하는 성향을 보인다.",
-          "en": "Choe Baa shows a disposition to base harm avoidance on the ambush signs he has recognized."
-        },
-        "behavior": {
-          "ko": "능선의 매복 흔적을 알아챈 뒤 그 위험으로 인한 피해를 막았다.",
-          "en": "After recognizing ambush traces on the ridge, he prevented harm from that danger."
-        },
-        "stress": {
-          "ko": "초계를 이어 가는 일과 매복 위험이 충돌하면 확인한 징후에 근거해 피해 회피를 우선할 수 있다.",
-          "en": "If continuing patrol conflicts with ambush danger, he may prioritize avoiding harm on the basis of observed signs."
-        },
-        "relationship": {
-          "ko": "선배 당직에게는 위험 판단의 근거가 된 흔적을 함께 전달하려 할 수 있다.",
-          "en": "He may seek to pass senior duty staff the traces that supported his risk judgment."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "능선의 매복 흔적으로 피해를 막았다. 관찰 강점은 있으나 정보망 소유나 전투 승전은 없다.",
-      "en": "He prevented harm through ridge ambush signs. Observation is a strength, not ownership of an intelligence network or combat victories."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -518,7 +122,7 @@
         {
           "id": "right-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "head",
@@ -534,66 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "cd5c-acbd-c8fc",
-    "name": "경주 최씨",
-    "crest": "clan-crests/cd5c-acbd-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 25,
-    "개방": 0,
-    "무력": -5,
-    "물질": 20,
-    "공동": 25,
-    "원칙": 0,
-    "공개": -15,
-    "자격": 40,
-    "분산": 25,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": 25,
-    "위험": 5,
-    "과시": 10,
-    "지속": 5,
-    "지향": "양성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "경비·순찰",
-    "품계": "교사",
-    "직함": "유치선 순찰대",
-    "가치관": "권위 25 | 개방 0 | 무력 −5 | 물질 20 | 공동 25 | 원칙 0 | 공개 −15 | 자격 40 | 분산 25 | 변혁 5",
-    "욕망": "갈망 0 | 독점 25 | 위험 5 | 과시 10 | 지속 5 | 지향 양성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2126년 세대. 최바아는 암사 경비 초소에서 자랐다. 최바아는 야간 무단 도하 적발로 유치선 순찰대 자리를 맡았다.\n- 최바아의 유치선 순찰대 업무는 용답동과 연결된다.",
-    "관직": "최바아는 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.",
-    "일화": "2125년 최바아는 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.",
-    "관계": "최바아는 같은 생활권 선배 당직자와 인수인계로 묶인다.",
-    "야망": "최바아는 유치선 순찰대 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.",
-    "공포": "최바아는 유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.",
-    "개입": "최바아는 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "최바아는 당직을 끊지 않는 쪽을 먼저 고른다. 최바아는 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 경비·순찰\n- 품계: 교사\n- 직함: 유치선 순찰대\n**생애.** 2126년 세대. 최바아는 암사 경비 초소에서 자랐다. 최바아는 야간 무단 도하 적발로 유치선 순찰대 자리를 맡았다.\n- 최바아의 유치선 순찰대 업무는 용답동과 연결된다.\n\n**관직.** 최바아는 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 최바아는 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 최바아는 같은 생활권 선배 당직자와 인수인계로 묶인다.\n\n**야망.** 최바아는 유치선 순찰대 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.\n\n**공포.** 최바아는 유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.\n\n**개입.** 최바아는 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 0 | 무력 −5 | 물질 20 | 공동 25 | 원칙 0 | 공개 −15 | 자격 40 | 분산 25 | 변혁 5\n- 욕망: 갈망 0 | 독점 25 | 위험 5 | 과시 10 | 지속 5 | 지향 양성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "최바아",
-        "type": "계약",
-        "to": "채구름",
-        "basis": "최바아는 순찰에서 읽은 매복 흔적을 채구름에게 알린다. 채구름은 교량 수위와 출입 기록을 살펴 그 관찰이 실제 접근 흔적과 이어지는지 확인한다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

@@ -1,395 +1,210 @@
 {
   "id": "person-0150",
   "name": "서라온",
-  "title": "지도 복구 사서",
-  "position": "지도 복구 사서",
+  "title": "성북구 국회의원",
+  "position": "성북구 국회의원 · 정부",
   "characterId": "K149",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "현장 측량·급수지도 복구",
+  "rank": "국회의원",
+  "commonTier": "T1",
+  "occupation": "구 행정",
   "gender": "남성",
   "stage": "S1",
-  "state": "S06",
-  "stateName": "대한민국정부",
-  "sourceRoute": "/world/Cast-State-06#인물-서라온",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0150",
   "birthDate": "2080-06-20",
   "birthday": "06-20",
   "age": 46,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-06.json#/content/82",
-    "lore/characters/Cast-State-06.json#/content/83",
-    "lore/characters/Cast-State-06.json#/content/87"
-  ],
-  "familyTree": {
-    "personId": "K149",
-    "nodes": [
-      {
-        "id": "K149",
-        "personId": "K149",
-        "kind": "person",
-        "name": "서라온",
-        "birthDate": "2080-06-20",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K149"
-          },
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-서라온-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 지도 복구 사서 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-서라온-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0150"
-      },
-      {
-        "id": "FH-K149-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "서승석",
-        "lineage": {
-          "surname": "서",
-          "bongwan": "달성",
-          "clan": "c11c-b2ec-c131"
-        },
-        "birthDate": "2050-06-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-서라온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2088,
-            "summary": "서승석은 대합실 당직에서 현장 측량·급수지도 복구 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-서라온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K149-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "서승준",
-        "lineage": {
-          "surname": "서",
-          "bongwan": "달성",
-          "clan": "c11c-b2ec-c131"
-        },
-        "birthDate": "2020-06-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-서라온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "서승준은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-서라온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K149-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한현준",
-        "birthDate": "2050-06-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-서라온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2088,
-            "summary": "한현준은 대합실 당직에서 현장 측량·급수지도 복구 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-서라온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K149-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강승미",
-        "birthDate": "2020-06-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-서라온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강승미는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-서라온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K149-P-01:K149:biological",
-        "from": "FH-K149-P-01",
-        "to": "K149",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-서라온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K149-P-02:FH-K149-P-01:biological",
-        "from": "FH-K149-P-02",
-        "to": "FH-K149-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-서라온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K149-M-01:K149:biological",
-        "from": "FH-K149-M-01",
-        "to": "K149",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-서라온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K149-M-02:FH-K149-M-01:biological",
-        "from": "FH-K149-M-02",
-        "to": "FH-K149-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-서라온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c11c-b2ec-c131",
+    "name": "달성 서씨",
+    "crest": "clan-crests/c11c-b2ec-c131.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "보문역 구청의 한 책상에는 북한산 쪽 테두리 망대의 근무표와 옛 대학 터 학교의 정원 서류가 함께 올라오고, 성북구 국회의원인 달성 서씨 세대주가 둘을 같이 결재한다. 구 부대가 올린 망대 보고는 지도가 붙어 있어야 읽고, 지도 없는 보고는 그날 밤 집안 후계 서나연 편에 망대로 돌려보낸다. 학교의 겨울 연료는 동대문구 국회의원 오서율과 맺은 약정으로 청량리에서 받는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "성북구 국회의원",
+    "품계": "국회의원",
+    "생업": "구 행정",
+    "일하는 역": "보문역",
+    "잠자는 역": "보문역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "보문역 구청의 한 책상에는 북한산 쪽 테두리 망대의 근무표와 옛 대학 터 학교의 정원 서류가 함께 올라오고, 성북구 국회의원인 달성 서씨 세대주가 둘을 같이 결재한다. 구 부대가 올린 망대 보고는 지도가 붙어 있어야 읽고, 지도 없는 보고는 그날 밤 집안 후계 서나연 편에 망대로 돌려보낸다. 학교의 겨울 연료는 동대문구 국회의원 오서율과 맺은 약정으로 청량리에서 받는다.",
+    "관직": "직함 성북구 국회의원. 직위 성북구 국회의원 · 정부. 품계 국회의원. 일하는 역 보문역."
+  },
+  "values": {
+    "권위": 65,
+    "개방": -65,
+    "무력": 0,
+    "물질": -45,
+    "공동": 10,
+    "원칙": 75,
+    "공개": -35,
+    "자격": 35,
+    "분산": -90,
+    "변혁": -70
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -20,
+    "위험": -35,
+    "과시": 30,
+    "지속": -15,
+    "지향": "양성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0150",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "서라온",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "서라온",
+        "type": "계약",
+        "to": "오서율",
+        "basis": "학교의 겨울 연료를 청량리에서 받는 약정"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "서나연",
+        "type": "지휘",
+        "to": "서라온",
+        "basis": "성북구 국회의원 서라온의 직속"
+      },
+      {
+        "from": "천다움",
+        "type": "지휘",
+        "to": "서라온",
+        "basis": "성북구 국회의원 서라온의 직속"
+      },
+      {
+        "from": "선나휘",
+        "type": "지휘",
+        "to": "서라온",
+        "basis": "성북구 국회의원 서라온의 직속"
+      },
+      {
+        "from": "방석담",
+        "type": "지휘",
+        "to": "서라온",
+        "basis": "성북구 국회의원 서라온의 직속"
+      },
+      {
+        "from": "서금서",
+        "type": "지휘",
+        "to": "서라온",
+        "basis": "성북구 국회의원 서라온의 직속"
+      },
+      {
+        "from": "오서율",
+        "type": "계약",
+        "to": "서라온",
+        "basis": "청량리의 숯과 메탄을 성북의 학교에 대는 약정"
+      },
+      {
+        "from": "서나연",
+        "type": "맹세",
+        "to": "서라온",
+        "basis": "서라온 앞에서 집안 도장을 지키겠다고 맹세하고 후계 기재를 받았다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K149",
+    "members": [
+      {
+        "personId": "K198",
+        "name": "서나연"
+      },
+      {
+        "personId": "K328",
+        "name": "천다움"
+      },
+      {
+        "personId": "K332",
+        "name": "선나휘"
+      },
+      {
+        "personId": "K389",
+        "name": "방석담"
+      },
+      {
+        "personId": "person-0981",
+        "name": "서금서"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 10,
+        "effective": 10
+      },
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "negotiation": {
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
         "base": 6,
         "effective": 6
       },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 13,
-        "effective": 13
-      },
-      "learning": {
-        "base": 12,
-        "effective": 12
-      },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "k149-field-survey",
-        "name": {
-          "ko": "현장 측량",
-          "en": "Field surveying"
-        },
-        "rating": 65
-      },
-      {
-        "id": "k149-map-crosscheck",
-        "name": {
-          "ko": "지도 대조",
-          "en": "Map cross-checking"
-        },
-        "rating": 60
+        "id": "s17-0150-survey",
+        "name": "터널 지도 그리기",
+        "rating": 75
       }
     ],
     "traits": [
       {
-        "id": "k149-choice",
-        "name": {
-          "ko": "불확실성을 표시",
-          "en": "Marks uncertainty"
-        },
-        "description": {
-          "ko": "호기심이 많고 길을 잃는 사람을 참지 못한다. 틀린 지도를 배포하는 일을 살인에 가깝다고 여긴다.",
-          "en": "Curious, she could not stand people losing their way. She saw distributing a wrong map as close to murder."
-        },
-        "behavior": {
-          "ko": "일화. 도심 북부 급수 인계가 끊긴 뒤에도 옛 급수구역이 인쇄된 지도가 상암 전파로 퍼졌다.",
-          "en": "Anecdote. After water-supply handovers in the northern city center were interrupted, maps still printed with the old water-supply districts spread over the Sangam airwaves."
-        },
-        "stress": {
-          "ko": "공포. 강국이 지도 원판을 사들여 급수 분쟁 구간을 자기 영토로 인쇄하는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That great powers would buy up the master plates and print the water-dispute zones as their own territory. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 최지우과 지도 갱신 시각을 맞추고 권미래에게 송신탑 좌표를 받는다. 윤서린은 그의 원판을 인준 첨부물로 쓴다.",
-          "en": "Relations. Matched map-renewal times with Choi Jiwoo and received transmission tower coordinates from Gwon Mirae. Yun Seorin used his master plate as a ratification annex."
-        },
-        "effects": []
-      },
-      {
-        "id": "k149-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 주사. 직함은 지도 복구 사서. 현장 측량과 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 도로는 점선으로만 남긴다.",
-          "en": "Office. Rank: registrar. Title: map-restoration librarian. He drew field surveys overlaid with transmission bulletins and left roads with a single source only as dotted lines."
-        },
-        "behavior": {
-          "ko": "관직. 품계 주사. 직함은 지도 복구 사서. 현장 측량과 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 도로는 점선으로만 남긴다.",
-          "en": "Office. Rank: registrar. Title: map-restoration librarian. He drew field surveys overlaid with transmission bulletins and left roads with a single source only as dotted lines."
-        },
-        "stress": {
-          "ko": "공포. 강국이 지도 원판을 사들여 급수 분쟁 구간을 자기 영토로 인쇄하는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That great powers would buy up the master plates and print the water-dispute zones as their own territory. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 최지우과 지도 갱신 시각을 맞추고 권미래에게 송신탑 좌표를 받는다. 윤서린은 그의 원판을 인준 첨부물로 쓴다.",
-          "en": "Relations. Matched map-renewal times with Choi Jiwoo and received transmission tower coordinates from Gwon Mirae. Yun Seorin used his master plate as a ratification annex."
-        },
+        "id": "t17-0150-map",
+        "name": "지도부터 본다",
+        "description": "말보다 그림으로 된 보고를 믿는다.",
+        "behavior": "지도가 없는 보고는 돌려보낸다.",
+        "stress": "지도가 맞지 않는 터널 보고를 받으면 직접 걸어 확인하려 한다.",
+        "relationship": "약정을 지키는 상대에게는 숨김이 없다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "현장 측량과 속보를 대조하고 단일 출처 도로를 점선으로 남긴다. 낡은 지도를 회수한 결말이나 영토 결정권은 없다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Cross-checks surveys with reports and marks single-source roads as dotted lines. No recovery of obsolete maps or territorial authority is established. Titles and ambitions are not treated as accomplished authority or results."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -427,108 +242,145 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
+  "confirmedHoldings": [
     {
-      "id": "title:duchy-51150-S06",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
+      "id": "holding:v3:duchy:11290",
+      "name": {
+        "ko": "성북구 공작령"
+      },
       "holderPersonId": "K149",
-      "stateId": "S06",
-      "politicalParentTitleId": "title:kingdom-s06",
-      "personalLieges": [
+      "directLiegePersonId": "K144",
+      "stateId": "government",
+      "adminRefs": [
         {
-          "holdingId": "holding:opening-duchy-51150-S06",
-          "directLiegePersonId": "K144"
+          "id": "region:1129052500",
+          "name": "성북동"
+        },
+        {
+          "id": "region:1129055500",
+          "name": "삼선동"
+        },
+        {
+          "id": "region:1129057500",
+          "name": "동선동"
+        },
+        {
+          "id": "region:1129058000",
+          "name": "돈암1동"
+        },
+        {
+          "id": "region:1129059000",
+          "name": "돈암2동"
+        },
+        {
+          "id": "region:1129060000",
+          "name": "안암동"
+        },
+        {
+          "id": "region:1129061000",
+          "name": "보문동"
+        },
+        {
+          "id": "region:1129062000",
+          "name": "정릉1동"
+        },
+        {
+          "id": "region:1129063000",
+          "name": "정릉2동"
+        },
+        {
+          "id": "region:1129064000",
+          "name": "정릉3동"
+        },
+        {
+          "id": "region:1129065000",
+          "name": "정릉4동"
+        },
+        {
+          "id": "region:1129066000",
+          "name": "길음1동"
+        },
+        {
+          "id": "region:1129068500",
+          "name": "길음2동"
+        },
+        {
+          "id": "region:1129070500",
+          "name": "종암동"
+        },
+        {
+          "id": "region:1129071500",
+          "name": "월곡1동"
+        },
+        {
+          "id": "region:1129072500",
+          "name": "월곡2동"
+        },
+        {
+          "id": "region:1129076000",
+          "name": "장위1동"
+        },
+        {
+          "id": "region:1129077000",
+          "name": "장위2동"
+        },
+        {
+          "id": "region:1129078000",
+          "name": "장위3동"
+        },
+        {
+          "id": "region:1129081000",
+          "name": "석관동"
         }
       ],
-      "directOwnership": false
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11290",
+      "geometrySource": null,
+      "formalTitleRank": null
     }
   ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c11c-b2ec-c131",
-    "name": "달성 서씨",
-    "crest": "clan-crests/c11c-b2ec-c131.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 20,
-    "개방": -10,
-    "무력": -35,
-    "물질": -40,
-    "공동": 5,
-    "원칙": 55,
-    "공개": -10,
-    "자격": 20,
-    "분산": -40,
-    "변혁": -50
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -20,
-    "위험": -35,
-    "과시": 30,
-    "지속": -15,
-    "지향": "양성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "현장 측량·급수지도 복구",
-    "소속": "서울특별시 지방공무원 조직",
-    "직위·직급": "지방기록연구사 또는 지방행정주사·지방행정주사보 중 서울특별시 기록관리 보직에 맞는 직급",
-    "담당 업무": "지도 복구 사서",
-    "가치관": "권위 20 | 개방 −10 | 무력 −35 | 물질 −40 | 공동 5 | 원칙 55 | 공개 −10 | 자격 20 | 분산 −40 | 변혁 −50",
-    "욕망": "갈망 0 | 독점 −20 | 위험 −35 | 과시 30 | 지속 −15 | 지향 양성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "대합실 당직에서 자랐다. 지도 복구 사서 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 서라온의 현장 측량을 급수지도에 맞추는 일은 회현동의 업무와 이어진다.",
-    "공무원 직위·직급": "지방기록연구사 또는 지방행정주사·지방행정주사보 중 서울특별시 기록관리 보직에 맞는 직급. 담당 업무: 지도 복구 사서.",
-    "일화": "도심 북부 급수 인계가 끊긴 뒤에도 옛 급수구역이 인쇄된 지도가 상암 전파로 퍼졌다.",
-    "관계": "최지우와 지도 갱신 시각을 맞추고 권미래에게 송신탑 좌표를 받는다. 윤서린은 그의 원판을 인준 첨부물로 쓴다.",
-    "야망": "끊긴 북부 정수와 살아있는 배관을 한 장의 공개 지도로 모아 공동기술원장의 검증 자료로 바친다.",
-    "공포": "강국이 지도 원판을 사들여 급수 분쟁 구간을 자기 영토로 인쇄하는 것.",
-    "개입": "실제 배관 측량을 가져오거나, 위조 지도 원판의 인쇄소를 찾아낼 수 있다."
-  },
-  "biography": "호기심이 많고 길을 잃는 사람을 참지 못한다. 틀린 지도를 배포하는 일을 살인에 가깝다고 여긴다.\n\n- 생업: 현장 측량·급수지도 복구\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방기록연구사 또는 지방행정주사·지방행정주사보 중 서울특별시 기록관리 보직에 맞는 직급\n- 담당 업무: 지도 복구 사서\n**생애.** 대합실 당직에서 자랐다. 지도 복구 사서 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 서라온의 현장 측량을 급수지도에 맞추는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 지방기록연구사 또는 지방행정주사·지방행정주사보 중 서울특별시 기록관리 보직에 맞는 직급. 담당 업무: 지도 복구 사서.\n\n**일화.** 도심 북부 급수 인계가 끊긴 뒤에도 옛 급수구역이 인쇄된 지도가 상암 전파로 퍼졌다.\n\n**관계.** 최지우와 지도 갱신 시각을 맞추고 권미래에게 송신탑 좌표를 받는다. 윤서린은 그의 원판을 인준 첨부물로 쓴다.\n\n**야망.** 끊긴 북부 정수와 살아있는 배관을 한 장의 공개 지도로 모아 공동기술원장의 검증 자료로 바친다.\n\n**공포.** 강국이 지도 원판을 사들여 급수 분쟁 구간을 자기 영토로 인쇄하는 것.\n\n**개입.** 실제 배관 측량을 가져오거나, 위조 지도 원판의 인쇄소를 찾아낼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −10 | 무력 −35 | 물질 −40 | 공동 5 | 원칙 55 | 공개 −10 | 자격 20 | 분산 −40 | 변혁 −50\n- 욕망: 갈망 0 | 독점 −20 | 위험 −35 | 과시 30 | 지속 −15 | 지향 양성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-06"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "서라온",
-        "type": "계약",
-        "to": "최지우",
-        "basis": "지도 갱신 시각을 송신과 맞춤"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:dong:1129061000",
+      "name": {
+        "ko": "보문동"
       },
-      {
-        "from": "서라온",
-        "type": "계약",
-        "to": "권미래",
-        "basis": "송신탑 좌표를 받아 원판에 붙임"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "권미래",
-        "type": "계약",
-        "to": "서라온",
-        "basis": "송신탑 좌표를 지도 원판에 넘김"
+      "holderPersonId": "K328",
+      "directLiegePersonId": "K149",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1129061000",
+          "name": "보문동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "천다움",
+      "holderRoute": "/people/person-0329"
+    },
+    {
+      "id": "holding:v3:dong:1129057500",
+      "name": {
+        "ko": "동선동"
       },
-      {
-        "from": "조서원",
-        "type": "계약",
-        "to": "서라온",
-        "basis": "조서원은 침수 붕괴 구간의 폐쇄 소식을 서라온에게 전달한다. 서라온은 현장 측량과 속보를 함께 확인해 지도를 갱신하고, 확인되지 않은 우회 도로는 점선으로 남긴다."
-      },
-      {
-        "from": "주리안",
-        "type": "사제",
-        "to": "서라온",
-        "basis": "서라온의 원판에 현장 좌표를 넘기는 사제이고"
-      }
-    ]
-  }
+      "holderPersonId": "K332",
+      "directLiegePersonId": "K149",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1129057500",
+          "name": "동선동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "선나휘",
+      "holderRoute": "/people/person-0333"
+    }
+  ]
 }

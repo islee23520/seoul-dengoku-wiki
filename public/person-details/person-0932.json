@@ -1,493 +1,105 @@
 {
   "id": "person-0932",
   "name": "김사연",
-  "title": "방역 기록관",
-  "position": "방역 기록관",
+  "title": "옷 짓는 이",
+  "position": "옷 짓는 이 · 제기동역",
   "characterId": "K932",
-  "rank": "수련의",
-  "commonTier": "T3",
-  "occupation": "방역 기록·당직 열쇠 인계",
+  "rank": "등재민",
+  "commonTier": "T5",
+  "occupation": "옷 짓기",
   "gender": "남성",
   "stage": "S4",
-  "state": "S13",
-  "stateName": "흰십자단",
-  "sourceRoute": "/world/Cast-State-13#인물-김사연",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0932",
   "birthDate": "2087-08-06",
   "birthday": "08-06",
   "age": 39,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-13.json#/content/611",
-    "lore/characters/Cast-State-13.json#/content/614"
-  ],
-  "familyTree": {
-    "personId": "K932",
-    "nodes": [
-      {
-        "id": "K932",
-        "personId": "K932",
-        "kind": "person",
-        "name": "김사연",
-        "birthDate": "2087-08-06",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K932"
-          },
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-김사연-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "생업: 방역 기록·당직 열쇠 인계",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-김사연-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0932"
-      },
-      {
-        "id": "FH-K932-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김민수",
-        "lineage": {
-          "surname": "김",
-          "bongwan": "상락",
-          "clan": "ae40-c0c1-b77d-91d1"
-        },
-        "birthDate": "2057-08-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-김사연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2095,
-            "summary": "김민수는 서울역 등기소에서 방역 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-김사연-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K932-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김민은",
-        "lineage": {
-          "surname": "김",
-          "bongwan": "상락",
-          "clan": "ae40-c0c1-b77d-91d1"
-        },
-        "birthDate": "2027-08-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-김사연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2065,
-            "summary": "김민은은 서울역 등기소에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-김사연-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K932-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "김민연",
-        "lineage": {
-          "surname": "김",
-          "bongwan": "상락",
-          "clan": "ae40-c0c1-b77d-91d1"
-        },
-        "birthDate": "1997-08-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-김사연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "김민연은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-김사연-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K932-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오민은",
-        "birthDate": "2057-08-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-김사연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2095,
-            "summary": "오민은은 서울역 등기소에서 방역 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-김사연-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K932-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "송민원",
-        "birthDate": "2027-08-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-김사연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2065,
-            "summary": "송민원은 서울역 등기소에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-김사연-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K932-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "조민연",
-        "birthDate": "1997-08-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-김사연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조민연은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-김사연-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K932-P-01:K932:biological",
-        "from": "FH-K932-P-01",
-        "to": "K932",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-김사연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K932-P-02:FH-K932-P-01:biological",
-        "from": "FH-K932-P-02",
-        "to": "FH-K932-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-김사연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K932-P-03:FH-K932-P-02:biological",
-        "from": "FH-K932-P-03",
-        "to": "FH-K932-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-김사연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K932-M-01:K932:biological",
-        "from": "FH-K932-M-01",
-        "to": "K932",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-김사연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K932-M-02:FH-K932-M-01:biological",
-        "from": "FH-K932-M-02",
-        "to": "FH-K932-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-김사연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K932-M-03:FH-K932-M-02:biological",
-        "from": "FH-K932-M-03",
-        "to": "FH-K932-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-김사연-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ae40-c0c1-b77d-91d1",
+    "name": "상락 김씨",
+    "crest": "clan-crests/ae40-c0c1-b77d-91d1.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "같은 세대 사람들이 물려 입는 누빔 조끼는 모두 제기동역 세대의 한 잠자리에서 나온다. 그 잠자리에 앉아 해진 합성 섬유 외투를 뜯어 조끼로 다시 짓는 서른아홉 살 상락 김씨는, 몇 해 전 출입구 굴이 무너질 때 다리를 다쳐 일하지 못하는 사람으로 기재가 바뀌었다. 그 뒤로 그는 세대의 부양으로 기재되어 배급도 부양 등급으로 받는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "옷 짓는 이",
+    "품계": "등재민",
+    "생업": "옷 짓기",
+    "일하는 역": "제기동역",
+    "잠자는 역": "제기동역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "같은 세대 사람들이 물려 입는 누빔 조끼는 모두 제기동역 세대의 한 잠자리에서 나온다. 그 잠자리에 앉아 해진 합성 섬유 외투를 뜯어 조끼로 다시 짓는 서른아홉 살 상락 김씨는, 몇 해 전 출입구 굴이 무너질 때 다리를 다쳐 일하지 못하는 사람으로 기재가 바뀌었다. 그 뒤로 그는 세대의 부양으로 기재되어 배급도 부양 등급으로 받는다.",
+    "관직": "직함 옷 짓는 이. 직위 옷 짓는 이 · 제기동역. 품계 등재민. 일하는 역 제기동역."
+  },
+  "values": {
+    "권위": 35,
+    "개방": -15,
+    "무력": -45,
+    "물질": -25,
+    "공동": 15,
+    "원칙": 85,
+    "공개": -10,
+    "자격": 40,
+    "분산": -30,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": -40,
+    "위험": -25,
+    "과시": 0,
+    "지속": 0,
+    "지향": "동성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0932",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 6,
         "effective": 6
       },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 9,
-        "effective": 9
+      "intrigue": {
+        "base": 4,
+        "effective": 4
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       },
       "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
+        "base": 8,
+        "effective": 8
       }
     },
-    "skills": [
-      {
-        "id": "triage-documentation",
-        "name": {
-          "ko": "중증도 기록",
-          "en": "Triage documentation"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "재산 칸을 비운다",
-          "en": "Leaves wealth fields blank"
-        },
-        "description": {
-          "ko": "가짜 약으로 환자가 몰리자 중증도와 소견을 한 줄에 적고 소속·재산 칸은 비웠다. 담당 전문의 곁의 배정 기록 수행이 근거다.",
-          "en": "A counterfeit medicine surge prompted paired severity and clinical notes, with affiliation and wealth blank. Supervised allocation documentation is the evidence."
-        },
-        "behavior": {
-          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.",
-          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
-        },
-        "stress": {
-          "ko": "공포. 방역 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.",
-          "en": "Fear. That the quarantine registrar duty post would stand empty and the League's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 수련의. 직함은 방역 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-          "en": "Office. Rank: member. Title: quarantine registrar. He handed over only the keys and records of his own post, and never made authority he did not hold."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 수련의. 직함은 방역 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-          "en": "Recorded duty and limits: Office. Rank: member. Title: quarantine registrar. He handed over only the keys and records of his own post, and never made authority he did not hold."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 방역 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That the quarantine registrar duty post would stand empty and the League's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "가짜 약으로 환자가 몰리자 중증도와 소견을 한 줄에 적고 소속·재산 칸은 비웠다. 담당 전문의 곁의 배정 기록 수행이 근거다.",
-      "en": "A counterfeit medicine surge prompted paired severity and clinical notes, with affiliation and wealth blank. Supervised allocation documentation is the evidence."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -525,66 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ae40-c0c1-b77d-91d1",
-    "name": "상락 김씨",
-    "crest": "clan-crests/ae40-c0c1-b77d-91d1.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -10,
-    "개방": 40,
-    "무력": -80,
-    "물질": -20,
-    "공동": 10,
-    "원칙": 65,
-    "공개": 15,
-    "자격": 25,
-    "분산": 20,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": -40,
-    "위험": -25,
-    "과시": 0,
-    "지속": 0,
-    "지향": "동성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "방역 기록·당직 열쇠 인계",
-    "소속": "흰십자단",
-    "품계": "수련의",
-    "직함": "방역 기록관",
-    "가치관": "권위 −10 | 개방 40 | 무력 −80 | 물질 −20 | 공동 10 | 원칙 65 | 공개 15 | 자격 25 | 분산 20 | 변혁 −5",
-    "욕망": "갈망 10 | 독점 −40 | 위험 −25 | 과시 0 | 지속 0 | 지향 동성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2087-08-06에 태어났다. 2126년 개막 현재 방역 기록관 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 이중 장부 한 줄 삭제로 열렸다.\n- 제기동의 방역 기록·당직 열쇠 인계 창구를 김사연의 업무 기준점으로 한다. 이 배치는 거주지·정확한 시설 경계·작위·영지·점유권을 확정하지 않는다.",
-    "관직": "품계 수련의. 직함은 방역 수련의. 자기 직위의 열쇠와 기록만 넘기고, 인계한 열쇠와 기록의 수령 시각을 장부에 적는다.",
-    "일화": "제기동에 가짜 약이 돌아 류은비가 약 거래를 끊은 날, 방역 기록에 새 환자 줄이 몰린다. 김사연은 담당 전문의 곁에서 환자마다 중증도와 진료 소견을 한 줄에 함께 적고, 소속과 재산 칸은 비운 채 병상 배정 순서대로 류은비에게 올린다.",
-    "관계": "김사연은 담당 전문의 곁에서 적은 중증도·진료 소견을 류은비에게 올린다. 류은비는 병상 배정 순서를 확인해 환자의 소속이나 재산 대신 임상 근거로 치료를 잇는다.",
-    "야망": "방역 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.",
-    "공포": "방역 수련의 당직이 비면 흰십자단의 통행이 서울 내부 후원 세력 볼모가 되는 일을 두려워한다.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 방역 기록·당직 열쇠 인계\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 방역 기록관\n**생애.** 2087-08-06에 태어났다. 2126년 개막 현재 방역 기록관 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 이중 장부 한 줄 삭제로 열렸다.\n- 제기동의 방역 기록·당직 열쇠 인계 창구를 김사연의 업무 기준점으로 한다. 이 배치는 거주지·정확한 시설 경계·작위·영지·점유권을 확정하지 않는다.\n\n**관직.** 품계 수련의. 직함은 방역 수련의. 자기 직위의 열쇠와 기록만 넘기고, 인계한 열쇠와 기록의 수령 시각을 장부에 적는다.\n\n**일화.** 제기동에 가짜 약이 돌아 류은비가 약 거래를 끊은 날, 방역 기록에 새 환자 줄이 몰린다. 김사연은 담당 전문의 곁에서 환자마다 중증도와 진료 소견을 한 줄에 함께 적고, 소속과 재산 칸은 비운 채 병상 배정 순서대로 류은비에게 올린다.\n\n**관계.** 김사연은 담당 전문의 곁에서 적은 중증도·진료 소견을 류은비에게 올린다. 류은비는 병상 배정 순서를 확인해 환자의 소속이나 재산 대신 임상 근거로 치료를 잇는다.\n\n**야망.** 방역 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.\n\n**공포.** 방역 수련의 당직이 비면 흰십자단의 통행이 서울 내부 후원 세력 볼모가 되는 일을 두려워한다.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 40 | 무력 −80 | 물질 −20 | 공동 10 | 원칙 65 | 공개 15 | 자격 25 | 분산 20 | 변혁 −5\n- 욕망: 갈망 10 | 독점 −40 | 위험 −25 | 과시 0 | 지속 0 | 지향 동성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-13"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "김사연",
-        "type": "계약",
-        "to": "류은비",
-        "basis": "김사연은 담당 전문의 곁에서 적은 중증도·진료 소견을 류은비에게 올린다. 류은비는 병상 배정 순서를 확인해 환자의 소속이나 재산 대신 임상 근거로 치료를 잇는다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

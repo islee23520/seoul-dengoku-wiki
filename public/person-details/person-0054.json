@@ -1,503 +1,120 @@
 {
   "id": "person-0054",
   "name": "엄누리",
-  "title": "후계시험 부품 감정 직공",
-  "position": "후계시험 부품 감정 직공",
+  "title": "낙성대역 역반장",
+  "position": "낙성대역 역반장 · 자유도시들",
   "characterId": "K054",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "부품 감정",
+  "rank": "역반장",
+  "commonTier": "T4",
+  "occupation": "역반 운영",
   "gender": "남성",
   "stage": "S3",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-엄누리",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0054",
   "birthDate": "2100-05-11",
   "birthday": "05-11",
   "age": 26,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/269",
-    "lore/characters/Cast-State-02.json#/content/271",
-    "lore/characters/Cast-State-02.json#/content/272",
-    "lore/characters/Cast-State-02.json#/content/273"
-  ],
-  "familyTree": {
-    "personId": "K054",
-    "nodes": [
-      {
-        "id": "K054",
-        "personId": "K054",
-        "kind": "person",
-        "name": "엄누리",
-        "birthDate": "2100-05-11",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K054"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-엄누리-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 후계시험 부품 감정 직공 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-엄누리-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0054"
-      },
-      {
-        "id": "FH-K054-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "엄승민",
-        "lineage": {
-          "surname": "엄",
-          "bongwan": "영월",
-          "clan": "c5c4-c601-c6d4"
-        },
-        "birthDate": "2070-05-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-엄누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2108,
-            "summary": "엄승민은 신정 차량기지에서 부품 감정 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-엄누리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K054-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "엄승원",
-        "lineage": {
-          "surname": "엄",
-          "bongwan": "영월",
-          "clan": "c5c4-c601-c6d4"
-        },
-        "birthDate": "2040-05-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-엄누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2078,
-            "summary": "엄승원은 신정 차량기지에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-엄누리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K054-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "엄승진",
-        "lineage": {
-          "surname": "엄",
-          "bongwan": "영월",
-          "clan": "c5c4-c601-c6d4"
-        },
-        "birthDate": "2010-05-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-엄누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "엄승진은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-엄누리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K054-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강승연",
-        "birthDate": "2070-05-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-엄누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2108,
-            "summary": "강승연은 신정 차량기지에서 부품 감정 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-엄누리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K054-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승규",
-        "birthDate": "2040-05-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-엄누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2078,
-            "summary": "임승규는 신정 차량기지에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-엄누리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K054-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "오승윤",
-        "birthDate": "2010-05-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-엄누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오승윤은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-엄누리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K054-P-01:K054:biological",
-        "from": "FH-K054-P-01",
-        "to": "K054",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-엄누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K054-P-02:FH-K054-P-01:biological",
-        "from": "FH-K054-P-02",
-        "to": "FH-K054-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-엄누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K054-P-03:FH-K054-P-02:biological",
-        "from": "FH-K054-P-03",
-        "to": "FH-K054-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-엄누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K054-M-01:K054:biological",
-        "from": "FH-K054-M-01",
-        "to": "K054",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-엄누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K054-M-02:FH-K054-M-01:biological",
-        "from": "FH-K054-M-02",
-        "to": "FH-K054-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-엄누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K054-M-03:FH-K054-M-02:biological",
-        "from": "FH-K054-M-03",
-        "to": "FH-K054-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-엄누리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c5c4-c601-c6d4",
+    "name": "영월 엄씨",
+    "crest": "clan-crests/c5c4-c601-c6d4.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "낙성대 동쪽 지상은 서초와 맞닿아 있고 노선이 닿지 않는 땅이지만, 관악 산지기조는 그 너머에서 아크 사람이 넘어오는지 지켜본다. 엄누리는 산지기들이 역에 들러 몸을 녹일 자리를 따로 비워 두고, 그들이 본 것을 받아 적어 공작 이일섭에게 올린다. 스물여섯 살 역반장이 나무 불 한 번 피우는 데에도 수치를 따진다고 산지기들은 놀린다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "낙성대역 역반장",
+    "품계": "역반장",
+    "생업": "역반 운영",
+    "일하는 역": "낙성대역",
+    "잠자는 역": "낙성대역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "낙성대 동쪽 지상은 서초와 맞닿아 있고 노선이 닿지 않는 땅이지만, 관악 산지기조는 그 너머에서 아크 사람이 넘어오는지 지켜본다. 엄누리는 산지기들이 역에 들러 몸을 녹일 자리를 따로 비워 두고, 그들이 본 것을 받아 적어 공작 이일섭에게 올린다. 스물여섯 살 역반장이 나무 불 한 번 피우는 데에도 수치를 따진다고 산지기들은 놀린다.",
+    "관직": "직함 낙성대역 역반장. 직위 낙성대역 역반장 · 자유도시들. 품계 역반장. 일하는 역 낙성대역."
+  },
+  "values": {
+    "권위": -70,
+    "개방": 30,
+    "무력": -20,
+    "물질": 70,
+    "공동": 15,
+    "원칙": 0,
+    "공개": 35,
+    "자격": 85,
+    "분산": 70,
+    "변혁": 40
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": 10,
+    "위험": -30,
+    "과시": -30,
+    "지속": 20,
+    "지향": "동성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0054",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "엄누리",
+        "type": "지휘",
+        "to": "제윤",
+        "basis": "봉천 구간장 제윤의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "person-0016",
+    "name": "제윤",
+    "courtId": "court:person-0016",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 13,
-        "effective": 13
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 11,
-        "effective": 11
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k054-wheel-crack-inspection",
-        "name": {
-          "ko": "차륜 균열 확인",
-          "en": "Wheel-crack inspection"
-        },
-        "rating": 65
-      },
-      {
-        "id": "k054-defect-rejection",
-        "name": {
-          "ko": "불량품 반환",
-          "en": "Defect rejection"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k054-paired-assessment",
-        "name": {
-          "ko": "둘이 하는 감정",
-          "en": "Paired assessment"
-        },
-        "description": {
-          "ko": "두 직공의 교차 감정을 고수한다.",
-          "en": "Maintains cross-assessment by two workers."
-        },
-        "behavior": {
-          "ko": "두 직공의 교차 감정을 고수한다.",
-          "en": "Maintains cross-assessment by two workers."
-        },
-        "stress": {
-          "ko": "조작된 부품이 창동 시험에 들어가 원로 자리가 바뀌고, 그 결과가 용산 배차표의 검은 칸과 하나로 묶이는 것.",
-          "en": "That rigged parts would enter the Changdong trial, the elder's seat would change, and that result would be bundled with the Yongsan dispatch sheet's black columns."
-        },
-        "relationship": {
-          "ko": "허다온의 차륜 정비 일지에 균열을 옮기고, 이홍원의 공개 기술시험을 지키려 하며, 박태겸의 양자 승계안이 시험 조작과 겹치는지 의심한다.",
-          "en": "Moving cracks into Heo Daon's wheel maintenance logs, seeking to keep I Hongwon's public technology trial safe, and suspecting whether Park Taegyeom's adopted-child succession plan overlapped with trial rigging."
-        },
-        "effects": []
-      },
-      {
-        "id": "k054-reject-night-approval",
-        "name": {
-          "ko": "밤의 합격 거절",
-          "en": "Reject night approval"
-        },
-        "description": {
-          "ko": "단독 야간 출고와 밤 합격 도장 요구를 거절한다.",
-          "en": "Rejects lone night dispatch and whispered night approval."
-        },
-        "behavior": {
-          "ko": "단독 야간 출고와 밤 합격 도장 요구를 거절한다.",
-          "en": "Rejects lone night dispatch and whispered night approval."
-        },
-        "stress": {
-          "ko": "조작된 부품이 창동 시험에 들어가 원로 자리가 바뀌고, 그 결과가 용산 배차표의 검은 칸과 하나로 묶이는 것.",
-          "en": "That rigged parts would enter the Changdong trial, the elder's seat would change, and that result would be bundled with the Yongsan dispatch sheet's black columns."
-        },
-        "relationship": {
-          "ko": "허다온의 차륜 정비 일지에 균열을 옮기고, 이홍원의 공개 기술시험을 지키려 하며, 박태겸의 양자 승계안이 시험 조작과 겹치는지 의심한다.",
-          "en": "Moving cracks into Heo Daon's wheel maintenance logs, seeking to keep I Hongwon's public technology trial safe, and suspecting whether Park Taegyeom's adopted-child succession plan overlapped with trial rigging."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "균열 관찰과 불량품 반환이 근거다. 후계시험 조작 의심은 확정 수사 성과로 바꾸지 않았다.",
-      "en": "Crack observation and defect returns support the profile. Suspicion about succession-test manipulation is not a completed investigation."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -535,90 +152,29 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
+  "confirmedHoldings": [
     {
-      "id": "title:duchy-44760-S02",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
+      "id": "holding:v3:station:낙성대",
+      "name": {
+        "ko": "낙성대역"
+      },
       "holderPersonId": "K054",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:kingdom-s02",
-      "personalLieges": [
+      "directLiegePersonId": "person-0016",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "낙성대",
+        "stationName": "낙성대"
+      },
+      "adminRefs": [
         {
-          "holdingId": "holding:opening-duchy-44760-S02",
-          "directLiegePersonId": "K029"
+          "id": "region:1162057500",
+          "name": "행운동"
         }
       ],
-      "directOwnership": false
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
     }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c5c4-c601-c6d4",
-    "name": "영월 엄씨",
-    "crest": "clan-crests/c5c4-c601-c6d4.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -35,
-    "개방": 15,
-    "무력": -10,
-    "물질": 55,
-    "공동": 40,
-    "원칙": 10,
-    "공개": 35,
-    "자격": 65,
-    "분산": 15,
-    "변혁": 30
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": 10,
-    "위험": -30,
-    "과시": -30,
-    "지속": 20,
-    "지향": "동성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "규격맹",
-    "생업": "부품 감정",
-    "품계": "조합원",
-    "직함": "후계시험 부품 감정 직공",
-    "업무 위치": "오류2동. 엄누리는 오류2동 천왕기지에서 허다온의 차륜 일지에 적힌 균열 부위를 실측한다. 창동의 이홍원 공개 시험 자료와 맞지 않는 부품은 감정 표에 남겨 박태겸의 승계안이 시험을 건드렸는지 확인을 요청한다.",
-    "가치관": "권위 −35 | 개방 15 | 무력 −10 | 물질 55 | 공동 40 | 원칙 10 | 공개 35 | 자격 65 | 분산 15 | 변혁 30",
-    "욕망": "갈망 40 | 독점 10 | 위험 −30 | 과시 −30 | 지속 20 | 지향 동성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 후계시험 부품 감정 직공 자리는 탈선 직전 결함 보고로 열렸다.\n- 업무 위치: 오류2동. 엄누리는 오류2동 천왕기지에서 허다온의 차륜 일지에 적힌 균열 부위를 실측한다. 창동의 이홍원 공개 시험 자료와 맞지 않는 부품은 감정 표에 남겨 박태겸의 승계안이 시험을 건드렸는지 확인을 요청한다.",
-    "관직": "품계 조합원. 직함은 후계시험 부품 감정 직공. 감정은 두 직공이 교차로 하고, 야간 단독 출고는 유치선 감독의 요청이어도 거부한다.",
-    "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 후계시험 부품 감정 직공 자리의 서명이 장부에 올랐다.",
-    "관계": "허다온의 차륜 정비 일지에 균열을 옮기고, 이홍원의 공개 기술시험을 지키려 하며, 박태겸의 양자 승계안이 시험 조작과 겹치는지 의심한다.",
-    "야망": "북부 후계시험 부품의 조작 흔적을 규격 원장에 공개해, 숙련 승계가 비밀 장교망의 손에서 벗어나게 한다.",
-    "공포": "조작된 부품이 창동 시험에 들어가 원로 자리가 바뀌고, 그 결과가 용산 배차표의 검은 칸과 하나로 묶이는 것.",
-    "개입": "균열 부품을 창동까지 호송해 그의 감정을 확정하거나, 야간 출고 일지를 위조한 자를 찾아 직공을 고립시킬 수 있다."
-  },
-  "biography": "시험 차륜의 미세 균열을 눈으로 먼저 찾고, 합격 도장을 밤에 찍으라는 속삭임을 배신으로 본다. 침묵하되 불량품은 작업대 위에 남겨 둔다.\n\n- 소속: 규격맹\n- 생업: 부품 감정\n- 품계: 조합원\n- 직함: 후계시험 부품 감정 직공\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 후계시험 부품 감정 직공 자리는 탈선 직전 결함 보고로 열렸다.\n- 업무 위치: 오류2동. 엄누리는 오류2동 천왕기지에서 허다온의 차륜 일지에 적힌 균열 부위를 실측한다. 창동의 이홍원 공개 시험 자료와 맞지 않는 부품은 감정 표에 남겨 박태겸의 승계안이 시험을 건드렸는지 확인을 요청한다.\n\n**관직.** 품계 조합원. 직함은 후계시험 부품 감정 직공. 감정은 두 직공이 교차로 하고, 야간 단독 출고는 유치선 감독의 요청이어도 거부한다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 후계시험 부품 감정 직공 자리의 서명이 장부에 올랐다.\n\n**관계.** 허다온의 차륜 정비 일지에 균열을 옮기고, 이홍원의 공개 기술시험을 지키려 하며, 박태겸의 양자 승계안이 시험 조작과 겹치는지 의심한다.\n\n**야망.** 북부 후계시험 부품의 조작 흔적을 규격 원장에 공개해, 숙련 승계가 비밀 장교망의 손에서 벗어나게 한다.\n\n**공포.** 조작된 부품이 창동 시험에 들어가 원로 자리가 바뀌고, 그 결과가 용산 배차표의 검은 칸과 하나로 묶이는 것.\n\n**개입.** 균열 부품을 창동까지 호송해 그의 감정을 확정하거나, 야간 출고 일지를 위조한 자를 찾아 직공을 고립시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 15 | 무력 −10 | 물질 55 | 공동 40 | 원칙 10 | 공개 35 | 자격 65 | 분산 15 | 변혁 30\n- 욕망: 갈망 40 | 독점 10 | 위험 −30 | 과시 −30 | 지속 20 | 지향 동성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-02"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "엄누리",
-        "type": "계약",
-        "to": "허다온",
-        "basis": "허다온의 차륜 정비 일지에 균열을 옮기고"
-      },
-      {
-        "from": "엄누리",
-        "type": "계약",
-        "to": "이홍원",
-        "basis": "이홍원의 공개 기술시험을 지키려 하며"
-      }
-    ],
-    "incoming": []
-  }
+  ]
 }

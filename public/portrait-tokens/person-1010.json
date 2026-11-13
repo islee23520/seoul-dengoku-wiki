@@ -3,7 +3,7 @@
   "personId": "person-1010",
   "characterId": "K1010",
   "name": "신준",
-  "stateId": "S14",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
@@ -13,17 +13,17 @@
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, youthful smooth skin",
     "hair": "medium-length hair swept back",
-    "upper": "oxblood knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer",
-    "outfit": "oxblood knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer",
+    "upper": "세대에서 물려 입은 합성 섬유 누빔 조끼, 소매를 덧대어 늘림",
+    "outfit": "세대에서 물려 입은 합성 섬유 누빔 조끼, 소매를 덧대어 늘림",
     "palette": [
-      "oxblood",
-      "mustard ochre",
-      "sand beige"
+      "slate blue",
+      "cream",
+      "rust brown"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "mustard ochre high-waisted pleated trousers",
-    "footwear": "leather ankle boots",
-    "accessories": "duty whistle on a cord lanyard"
+    "lower": "hand-me-down quilted trousers rolled at the cuff",
+    "footwear": "felt boots a size too large",
+    "accessories": "name tag cut from old synthetic cloth with his name and the household head's number, sewn to a cord"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "knitted wool cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "oxblood knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer",
+        "value": "세대에서 물려 입은 합성 섬유 누빔 조끼, 소매를 덧대어 늘림",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "mustard ochre high-waisted pleated trousers",
+        "value": "hand-me-down quilted trousers rolled at the cuff",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "leather ankle boots",
+        "value": "felt boots a size too large",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "high quilted collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "duty whistle on a cord lanyard",
+        "value": "name tag cut from old synthetic cloth with his name and the household head's number, sewn to a cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull brass",
+        "value": "faded cream synthetic cloth and dark thread",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, cord",
+        "value": "old synthetic cloth, synthetic thread",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "lanyard around the neck",
+        "value": "worn around the neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small rectangular tag",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 신준, an East Asian man, in his teens. Adult man with a calm, restrained expression, youthful smooth skin; face shape: diamond-shaped with high cheekbones; narrow almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: slim; skin: light warm beige. upper garment: oxblood knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: oxblood, mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 신준, an East Asian man, in his teens. Adult man with a calm, restrained expression, youthful smooth skin; face shape: diamond-shaped with high cheekbones; narrow almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: slim; skin: light warm beige. headwear: knitted wool cap; upper garment: 세대에서 물려 입은 합성 섬유 누빔 조끼, 소매를 덧대어 늘림; neckline: high quilted collar. accessories: name tag cut from old synthetic cloth with his name and the household head's number, sewn to a cord; worn as worn around the neck. color palette: slate blue, cream, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 신준, an East Asian man, in his teens. Adult man with a calm, restrained expression, youthful smooth skin; face shape: diamond-shaped with high cheekbones; narrow almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: slim; skin: light warm beige; average adult male height. upper garment: oxblood knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: mustard ochre high-waisted pleated trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: oxblood, mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 신준, an East Asian man, in his teens. Adult man with a calm, restrained expression, youthful smooth skin; face shape: diamond-shaped with high cheekbones; narrow almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: slim; skin: light warm beige; average adult male height. headwear: knitted wool cap; upper garment: 세대에서 물려 입은 합성 섬유 누빔 조끼, 소매를 덧대어 늘림; neckline: high quilted collar; lower garment: hand-me-down quilted trousers rolled at the cuff; footwear: felt boots a size too large. accessories: name tag cut from old synthetic cloth with his name and the household head's number, sewn to a cord; worn as worn around the neck. color palette: slate blue, cream, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 신준, an East Asian man, in his teens. Adult man with a calm, restrained expression, youthful smooth skin; face shape: diamond-shaped with high cheekbones; narrow almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: slim; skin: light warm beige; average adult male height. upper garment: oxblood knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: mustard ochre high-waisted pleated trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: oxblood, mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 신준, an East Asian man, in his teens. Adult man with a calm, restrained expression, youthful smooth skin; face shape: diamond-shaped with high cheekbones; narrow almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: slim; skin: light warm beige; average adult male height. headwear: knitted wool cap; upper garment: 세대에서 물려 입은 합성 섬유 누빔 조끼, 소매를 덧대어 늘림; neckline: high quilted collar; lower garment: hand-me-down quilted trousers rolled at the cuff; footwear: felt boots a size too large. accessories: name tag cut from old synthetic cloth with his name and the household head's number, sewn to a cord; worn as worn around the neck. color palette: slate blue, cream, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 신준, an East Asian man, in his teens. Adult man with a calm, restrained expression, youthful smooth skin; face shape: diamond-shaped with high cheekbones; narrow almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: slim; skin: light warm beige; average adult male height. upper garment: oxblood knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: mustard ochre high-waisted pleated trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: oxblood, mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 신준, an East Asian man, in his teens. Adult man with a calm, restrained expression, youthful smooth skin; face shape: diamond-shaped with high cheekbones; narrow almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: slim; skin: light warm beige; average adult male height. headwear: knitted wool cap; upper garment: 세대에서 물려 입은 합성 섬유 누빔 조끼, 소매를 덧대어 늘림; neckline: high quilted collar; lower garment: hand-me-down quilted trousers rolled at the cuff; footwear: felt boots a size too large. accessories: name tag cut from old synthetic cloth with his name and the household head's number, sewn to a cord; worn as worn around the neck. color palette: slate blue, cream, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 신준, an East Asian man, in his teens. Adult man with a calm, restrained expression, youthful smooth skin; face shape: diamond-shaped with high cheekbones; narrow almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: slim; skin: light warm beige; average adult male height. upper garment: oxblood knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: mustard ochre high-waisted pleated trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: oxblood, mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 신준, an East Asian man, in his teens. Adult man with a calm, restrained expression, youthful smooth skin; face shape: diamond-shaped with high cheekbones; narrow almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: slim; skin: light warm beige; average adult male height. headwear: knitted wool cap; upper garment: 세대에서 물려 입은 합성 섬유 누빔 조끼, 소매를 덧대어 늘림; neckline: high quilted collar; lower garment: hand-me-down quilted trousers rolled at the cuff; footwear: felt boots a size too large. accessories: name tag cut from old synthetic cloth with his name and the household head's number, sewn to a cord; worn as worn around the neck. color palette: slate blue, cream, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

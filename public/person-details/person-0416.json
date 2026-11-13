@@ -1,494 +1,108 @@
 {
   "id": "person-0416",
   "name": "근주하",
-  "title": "약소국 공동교섭 서명 서기",
-  "position": "약소국 공동교섭 서명 서기",
+  "title": "야전 정비공",
+  "position": "야전 정비공 · 마천역",
   "characterId": "K415",
-  "rank": "미등록",
+  "rank": "정비공",
   "commonTier": "T5",
-  "occupation": "공동교섭 서명·투표 출석 기록",
+  "occupation": "이식 정비",
   "gender": "남성",
   "stage": "S3",
-  "state": "S16",
-  "stateName": "정동노총",
-  "sourceRoute": "/world/Cast-State-16#인물-근주하",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0416",
   "birthDate": "2099-07-01",
   "birthday": "07-01",
   "age": 27,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-16.json#/content/182"
-  ],
-  "familyTree": {
-    "personId": "K415",
-    "nodes": [
-      {
-        "id": "K415",
-        "personId": "K415",
-        "kind": "person",
-        "name": "근주하",
-        "birthDate": "2099-07-01",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K415"
-          },
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-근주하-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 정동노총 공동교섭 서명 서기 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-근주하-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0416"
-      },
-      {
-        "id": "FH-K415-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "근승현",
-        "lineage": {
-          "surname": "근",
-          "bongwan": "청주",
-          "clan": "adfc-ccad-c8fc"
-        },
-        "birthDate": "2069-07-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-근주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2107,
-            "summary": "근승현은 제기동 의무소에서 공동교섭 서명·투표 출석 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-근주하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K415-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "근승영",
-        "lineage": {
-          "surname": "근",
-          "bongwan": "청주",
-          "clan": "adfc-ccad-c8fc"
-        },
-        "birthDate": "2039-07-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-근주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "근승영은 제기동 의무소에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-근주하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K415-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "근승윤",
-        "lineage": {
-          "surname": "근",
-          "bongwan": "청주",
-          "clan": "adfc-ccad-c8fc"
-        },
-        "birthDate": "2009-07-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-근주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "근승윤은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-근주하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K415-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임준문",
-        "birthDate": "2069-07-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-근주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2107,
-            "summary": "임준문은 제기동 의무소에서 공동교섭 서명·투표 출석 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-근주하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K415-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오준범",
-        "birthDate": "2039-07-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-근주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "오준범은 제기동 의무소에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-근주하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K415-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "송준아",
-        "birthDate": "2009-07-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-근주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "송준아는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-근주하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K415-P-01:K415:biological",
-        "from": "FH-K415-P-01",
-        "to": "K415",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-근주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K415-P-02:FH-K415-P-01:biological",
-        "from": "FH-K415-P-02",
-        "to": "FH-K415-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-근주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K415-P-03:FH-K415-P-02:biological",
-        "from": "FH-K415-P-03",
-        "to": "FH-K415-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-근주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K415-M-01:K415:biological",
-        "from": "FH-K415-M-01",
-        "to": "K415",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-근주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K415-M-02:FH-K415-M-01:biological",
-        "from": "FH-K415-M-02",
-        "to": "FH-K415-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-근주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K415-M-03:FH-K415-M-02:biological",
-        "from": "FH-K415-M-03",
-        "to": "FH-K415-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-근주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "adfc-ccad-c8fc",
+    "name": "청주 근씨",
+    "crest": "clan-crests/adfc-ccad-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "마천역 출입구 안쪽 벽에 기대 놓은 연장 꾸러미는 근주하가 지상에 오를 때마다 메고 나가는 것이다. 송파의 남쪽 끝에서 바깥을 보고 돌아온 사람의 부위를, 이 스물일곱 살 야전 정비공은 출입구 안쪽에서 바로 열어 언 것을 녹인다. 부위 하나를 지녔고, 무엇이 깨졌는지와 누가 몇 교대에 들어왔는지를 함께 적어 가까운 정비대로 보낸다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "야전 정비공",
+    "품계": "정비공",
+    "생업": "이식 정비",
+    "일하는 역": "마천역",
+    "잠자는 역": "마천역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "마천역 출입구 안쪽 벽에 기대 놓은 연장 꾸러미는 근주하가 지상에 오를 때마다 메고 나가는 것이다. 송파의 남쪽 끝에서 바깥을 보고 돌아온 사람의 부위를, 이 스물일곱 살 야전 정비공은 출입구 안쪽에서 바로 열어 언 것을 녹인다. 부위 하나를 지녔고, 무엇이 깨졌는지와 누가 몇 교대에 들어왔는지를 함께 적어 가까운 정비대로 보낸다.",
+    "관직": "직함 야전 정비공. 직위 야전 정비공 · 마천역. 품계 정비공. 일하는 역 마천역."
+  },
+  "values": {
+    "권위": 0,
+    "개방": 15,
+    "무력": -10,
+    "물질": -45,
+    "공동": 30,
+    "원칙": 10,
+    "공개": -10,
+    "자격": -15,
+    "분산": 5,
+    "변혁": 60
+  },
+  "desire": {
+    "갈망": -10,
+    "독점": 25,
+    "위험": 5,
+    "과시": 10,
+    "지속": 15,
+    "지향": "유동",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0416",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
-      "learning": {
-        "base": 10,
-        "effective": 10
-      },
-      "prowess": {
+      "martial": {
         "base": 3,
         "effective": 3
       },
-      "endurance": {
+      "stewardship": {
+        "base": 7,
+        "effective": 7
+      },
+      "intrigue": {
         "base": 6,
         "effective": 6
-      }
-    },
-    "skills": [
-      {
-        "id": "signature-clause-recording",
-        "name": {
-          "ko": "서명 조항 정서",
-          "en": "Signature and clause transcription"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "조항과 증인 분리 기록",
-          "en": "Records clauses and witnesses distinctly"
-        },
-        "description": {
-          "ko": "투표 인장이 마를 때까지 함을 잠그고 식량과 호송 조항을 따로 모았다. 하나의 서명으로 여러 초안을 묶으라는 요구를 거절한다.",
-          "en": "Keeps the box locked until voting stamps dry and records food and escort clauses separately. Rejects combining several drafts under one signature."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 조항과 증인 분리 기록을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "번호가 비거나 성급한 통합 요구가 오면 붓을 놓을 수 있다.",
-          "en": "May stop writing over missing numbers or rushed consolidation."
-        },
-        "relationship": {
-          "ko": "초나루와 창고운의 조항을 모으고 안태경의 출석을 증인으로 둔다.",
-          "en": "Collects Cho Naru’s and Chang Goun’s clauses and uses An Taegyeong’s attendance as witness evidence."
-        },
-        "effects": []
       },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "공동교섭 문안을 시청역 서기 원장에만 유효하게 남겨 강국이 서로 다른 대외 초안으로 도장을 쪼개지 못하게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "위조 정서본 한 장이 먼저 나가 자신이 분할 복속의 들러리가 되는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "초나루와 창고운의 조항을 모으고 안태경의 출석을 증인으로 둔다.",
-          "en": "Collects Cho Naru’s and Chang Goun’s clauses and uses An Taegyeong’s attendance as witness evidence."
-        },
-        "effects": []
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "투표 인장이 마를 때까지 함을 잠그고 식량과 호송 조항을 따로 모았다. 하나의 서명으로 여러 초안을 묶으라는 요구를 거절한다.",
-      "en": "Keeps the box locked until voting stamps dry and records food and escort clauses separately. Rejects combining several drafts under one signature."
     },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -498,7 +112,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -524,91 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "adfc-ccad-c8fc",
-    "name": "청주 근씨",
-    "crest": "clan-crests/adfc-ccad-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -25,
-    "개방": 30,
-    "무력": -20,
-    "물질": 5,
-    "공동": 10,
-    "원칙": 20,
-    "공개": 35,
-    "자격": 20,
-    "분산": 35,
-    "변혁": 15
-  },
-  "desire": {
-    "갈망": -10,
-    "독점": 25,
-    "위험": 5,
-    "과시": 10,
-    "지속": 15,
-    "지향": "유동",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "공동교섭 서명·투표 출석 기록",
-    "소속": "정동노총",
-    "공동체 역할": "조합원",
-    "직무": "정동노총 공동교섭 서명 서기",
-    "가치관": "권위 −25 | 개방 30 | 무력 −20 | 물질 5 | 공동 10 | 원칙 20 | 공개 35 | 자격 20 | 분산 35 | 변혁 15",
-    "욕망": "갈망 −10 | 독점 25 | 위험 5 | 과시 10 | 지속 15 | 지향 유동 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2099-07-01에 태어난 근주하는 영구 겨울의 시청역 조합 작업장에서 정동노총 공동교섭 서명 서기 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 근주하는 소공동의 시청역 조합 작업장에서 정동노총 공동교섭 서명 서기 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "직무": "공동체 역할은 조합원이며 직무는 정동노총 공동교섭 서명 서기이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.",
-    "일화": "대외 교섭안 세 건을 서명 한 장으로 묶자는 사신이 시청역 서기실에 온다. 근주하는 먹지 번짐부터 읽고, 작업장별 투표 기록의 인장이 마를 때까지 함을 잠근 채 초나루의 호송 조항과 창고운의 식량 조항을 한 원장에 따로 모은다. 서명 증인 자리에는 안태경의 추첨 출석을 둔다.",
-    "관계": "근주하의 기존 관계 기록은 다음과 같다. 정유라의 공동교섭 문안을 정서하고, 초나루의 호송 조항과 창고운의 식량 조항을 한 원장에 모은다. 안태경의 추첨 출석을 서명 증인으로 둔다.",
-    "목표": "근주하는 정동노총 공동교섭 서명 서기 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.",
-    "공포": "정동노총 공동교섭 서명 서기 업무의 서명이나 인계 기록이 바뀌어 근주하의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.",
-    "개입": "근주하는 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다."
-  },
-  "biography": "근주하는 영구 겨울의 시청역 조합 작업장에서 정동노총 공동교섭 서명 서기 업무 기록과 공개 표결 서명을 먼저 대조한다. 급수·통행·계약 일정이 겹치는 날에는 접수 시각과 인계 순서를 같은 장부에 남긴다.\n\n- 생업: 공동교섭 서명·투표 출석 기록\n- 소속: 정동노총\n- 공동체 역할: 조합원\n- 직무: 정동노총 공동교섭 서명 서기\n**생애.** 2099-07-01에 태어난 근주하는 영구 겨울의 시청역 조합 작업장에서 정동노총 공동교섭 서명 서기 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 근주하는 소공동의 시청역 조합 작업장에서 정동노총 공동교섭 서명 서기 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**직무.** 공동체 역할은 조합원이며 직무는 정동노총 공동교섭 서명 서기이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.\n\n**일화.** 대외 교섭안 세 건을 서명 한 장으로 묶자는 사신이 시청역 서기실에 온다. 근주하는 먹지 번짐부터 읽고, 작업장별 투표 기록의 인장이 마를 때까지 함을 잠근 채 초나루의 호송 조항과 창고운의 식량 조항을 한 원장에 따로 모은다. 서명 증인 자리에는 안태경의 추첨 출석을 둔다.\n\n**관계.** 근주하의 기존 관계 기록은 다음과 같다. 정유라의 공동교섭 문안을 정서하고, 초나루의 호송 조항과 창고운의 식량 조항을 한 원장에 모은다. 안태경의 추첨 출석을 서명 증인으로 둔다.\n\n**목표.** 근주하는 정동노총 공동교섭 서명 서기 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.\n\n**공포.** 정동노총 공동교섭 서명 서기 업무의 서명이나 인계 기록이 바뀌어 근주하의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.\n\n**개입.** 근주하는 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −20 | 물질 5 | 공동 10 | 원칙 20 | 공개 35 | 자격 20 | 분산 35 | 변혁 15\n- 욕망: 갈망 −10 | 독점 25 | 위험 5 | 과시 10 | 지속 15 | 지향 유동 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-16"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "근주하",
-        "type": "계약",
-        "to": "정유라",
-        "basis": "정유라의 공동교섭 문안을 정서하고"
-      },
-      {
-        "from": "근주하",
-        "type": "계약",
-        "to": "초나루",
-        "basis": "초나루의 호송 조항과 창고운의 식량 조항을 한 원장에 모은다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "초나루",
-        "type": "계약",
-        "to": "근주하",
-        "basis": "근주하의 수서 서명 원장과 조항을 맞춘다"
-      },
-      {
-        "from": "초태온",
-        "type": "맹세",
-        "to": "근주하",
-        "basis": "근주하의 서명 원장과 시각을 맞춘다"
-      },
-      {
-        "from": "창고운",
-        "type": "계약",
-        "to": "근주하",
-        "basis": "근주하의 수서 서명 원장과 번호를 맞춘다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

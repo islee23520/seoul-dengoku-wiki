@@ -2,350 +2,147 @@
   "id": "person-1021",
   "name": "차유선",
   "title": "공동 위임 교섭자",
-  "position": "공동 위임 교섭자",
+  "position": "공동 위임 교섭자 · 영등포역",
   "characterId": "K1021",
   "rank": "미등록",
   "commonTier": "T5",
-  "occupation": "주 기록관 / 부 물류상",
+  "occupation": "계약 교섭",
   "gender": "여성",
   "stage": "S1",
-  "state": "S00",
+  "state": "independent",
   "stateName": "무소속",
-  "sourceRoute": "/world/Cast-Unaffiliated#인물-차유선",
   "detailRoute": "/people/person-1021",
   "birthDate": "2076-08-03",
   "birthday": "08-03",
   "age": 50,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-Unaffiliated.json#/content/60"
-  ],
-  "familyTree": {
-    "personId": "K1021",
-    "nodes": [
-      {
-        "id": "K1021",
-        "personId": "K1021",
-        "kind": "person",
-        "name": "차유선",
-        "birthDate": "2076-08-03",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K1021"
-          },
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-차유선-fields"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "성명: 차유선 (Cha Yuseon)",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-차유선-fields"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-1021"
-      },
-      {
-        "id": "FH-K1021-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "차현은",
-        "birthDate": "2046-08-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-차유선-fields"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2084,
-            "summary": "차현은은 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-차유선-fields"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1021-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "차현연",
-        "birthDate": "2016-08-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-차유선-fields"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "차현연은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-차유선-fields"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1021-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이서정",
-        "birthDate": "2046-08-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-차유선-fields"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2084,
-            "summary": "이서정은 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-차유선-fields"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1021-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최서규",
-        "birthDate": "2016-08-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-차유선-fields"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최서규는 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-차유선-fields"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K1021-P-01:K1021:biological",
-        "from": "FH-K1021-P-01",
-        "to": "K1021",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-차유선-fields"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1021-P-02:FH-K1021-P-01:biological",
-        "from": "FH-K1021-P-02",
-        "to": "FH-K1021-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-차유선-fields"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1021-M-01:K1021:biological",
-        "from": "FH-K1021-M-01",
-        "to": "K1021",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-차유선-fields"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1021-M-02:FH-K1021-M-01:biological",
-        "from": "FH-K1021-M-02",
-        "to": "FH-K1021-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-차유선-fields"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": null,
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "여러 도시와 역의 상인들이 함께 위임장을 맡긴 교섭자다. 세 번째 급수계약의 계약회가 영등포에서 열리면, 그는 어느 도시의 자리도 아닌 상인들의 몫을 들고 앉는다. 위임장에 적힌 범위를 넘는 약속은 하지 않고, 조건을 하나씩 리터와 시간으로 되물어 적는다. 어느 한 정체의 장부에 오르는 순간 위임이 깨진다는 것을 쉰 살의 그는 잘 안다. 자리주인인 영등포 장주 한재목과는 계약회에서 상인 몫이 말할 차례를 두고 계약을 맺었다.",
+  "fields": {
+    "소속": "무소속",
+    "직함": "공동 위임 교섭자",
+    "품계": "미등록",
+    "생업": "계약 교섭",
+    "일하는 역": "영등포역",
+    "잠자는 역": "영등포역",
+    "가구": "혼자 사는 가구"
   },
-  "proseContacts": [],
+  "sections": {
+    "생애": "여러 도시와 역의 상인들이 함께 위임장을 맡긴 교섭자다. 세 번째 급수계약의 계약회가 영등포에서 열리면, 그는 어느 도시의 자리도 아닌 상인들의 몫을 들고 앉는다. 위임장에 적힌 범위를 넘는 약속은 하지 않고, 조건을 하나씩 리터와 시간으로 되물어 적는다. 어느 한 정체의 장부에 오르는 순간 위임이 깨진다는 것을 쉰 살의 그는 잘 안다. 자리주인인 영등포 장주 한재목과는 계약회에서 상인 몫이 말할 차례를 두고 계약을 맺었다.",
+    "관직": "직함 공동 위임 교섭자. 직위 공동 위임 교섭자 · 영등포역. 품계 미등록. 일하는 역 영등포역."
+  },
+  "values": {
+    "권위": 0,
+    "개방": 15,
+    "무력": -35,
+    "물질": -10,
+    "공동": 10,
+    "원칙": 40,
+    "공개": 40,
+    "자격": -5,
+    "분산": 10,
+    "변혁": -5
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": -20,
+    "위험": -10,
+    "과시": -20,
+    "지속": 50,
+    "지향": null,
+    "결합": null
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-1021",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "차유선",
+        "type": "계약",
+        "to": "한재목",
+        "basis": "계약회의 자리주인과 상인 몫이 말할 차례를 계약으로 정했다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "전나경",
+        "type": "계약",
+        "to": "차유선",
+        "basis": "허가 상인 대기소에 들일 강 건너 상인의 수를 철마다 맞추는 약정"
+      },
+      {
+        "from": "한재목",
+        "type": "계약",
+        "to": "차유선",
+        "basis": "세 번째 급수계약 계약회의 자리 배치와 상인 몫의 자리를 계약서로 맺었다"
+      },
+      {
+        "from": "정서온",
+        "type": "계약",
+        "to": "차유선",
+        "basis": "여러 도시 상인의 몫을 대신 든 차유선에게 잠실에서 채운 전지를 하루 충전의 수로 판다"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 8,
         "effective": 8
       },
-      "strategy": {
-        "base": 10,
-        "effective": 10
+      "martial": {
+        "base": 4,
+        "effective": 4
       },
-      "negotiation": {
-        "base": 13,
-        "effective": 13
+      "stewardship": {
+        "base": 9,
+        "effective": 9
       },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
-      "learning": {
-        "base": 11,
-        "effective": 11
-      },
-      "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
+      "intrigue": {
         "base": 6,
         "effective": 6
+      },
+      "learning": {
+        "base": 5,
+        "effective": 5
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
       }
     },
     "skills": [
       {
-        "id": "k1021-delegated-negotiation",
-        "name": {
-          "ko": "위임 교섭",
-          "en": "Delegated negotiation"
-        },
+        "id": "v3-1021-terms-collation",
+        "name": "계약 조건 대조",
+        "rating": 75
+      },
+      {
+        "id": "v3-1021-mandate-keeping",
+        "name": "위임 범위 관리",
         "rating": 65
       }
     ],
     "traits": [
       {
-        "id": "k1021-trait-1",
-        "name": {
-          "ko": "집요하되 조정 가능",
-          "en": "Persistent yet adjustable"
-        },
-        "description": {
-          "ko": "조건을 끝까지 묻되 합의 가능한 요구는 조정한다.",
-          "en": "Questions terms persistently but adjusts demands within an agreement’s reach."
-        },
-        "behavior": {
-          "ko": "조건을 끝까지 묻되 합의 가능한 요구는 조정한다.",
-          "en": "Questions terms persistently but adjusts demands within an agreement’s reach."
-        },
-        "stress": {
-          "ko": "위기에서의 공포는 미정이며 확인된 조건 검토 범위만 반영한다.",
-          "en": "Her fear under crisis is unresolved; only established term review is reflected."
-        },
-        "relationship": {
-          "ko": "고예진을 인정하면서도 공개·책임 조건에는 이견을 유지한다.",
-          "en": "Respects Goh Yejin while keeping disagreements over disclosure and responsibility."
-        },
+        "id": "v3-1021-trait-1",
+        "name": "위임장 밖은 없다",
+        "description": "위임받은 범위 밖에서는 말을 아낀다.",
+        "behavior": "조건을 리터와 시간으로 되물어 적고 나서야 고개를 끄덕인다.",
+        "stress": "어느 한쪽이 그를 자기 사람으로 부르면 자리에서 일어선다.",
+        "relationship": "한재목과는 순서를 두고 다투되 계약은 지킨다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "상인들이 맡긴 범위 안에서 공통 계약 조건을 끝까지 묻고 합의 가능한 요구는 조정한다. 고예진의 능력을 인정하나 정보 공개와 책임 조건에서는 다툰다. 공적 감사권과 판결권은 없다.",
-      "en": "She questions common contract terms persistently within merchants’ delegation and adjusts demands where agreement is possible. She respects Goh Yejin’s ability but disputes disclosure and responsibility terms. She has no public audit or judicial authority."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -383,76 +180,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": null,
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": false,
-  "values": {
-    "권위": -20,
-    "개방": 40,
-    "무력": -50,
-    "물질": 10,
-    "공동": 40,
-    "원칙": 50,
-    "공개": 50,
-    "자격": 30,
-    "분산": 40,
-    "변혁": 20
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": -20,
-    "위험": -10,
-    "과시": -20,
-    "지속": 50,
-    "지향": null,
-    "결합": null
-  },
-  "fields": {
-    "성명": "차유선 (Cha Yuseon)",
-    "캐릭터 ID": "K1021",
-    "출신 공동체": "출생지·성장지·거주지는 미정이다.",
-    "생년월일": "2076-08-03",
-    "언어": "미정",
-    "생업": "주 기록관 / 부 물류상",
-    "소속": "무소속 민간 교섭자",
-    "봉건 품계": "없음. 대한민국 정부가 수여한 관직도 없다.",
-    "민간·공동체 직무": "공동 위임 교섭자 대한민국 정부 관직이나 봉건 품계가 아니다.",
-    "징집 이력": "미정",
-    "무장 접근": "미정",
-    "성격": "차분하고 집요하다. 확인할 조건을 끝까지 묻되 합의 가능한 범위에서는 요구를 조정한다.",
-    "개인 야망": "자신에게 위임한 상인들의 계약상 이해를 대변하려 한다.",
-    "공포": "미정",
-    "통치 방식": "상인들의 위임 범위 안에서 교섭한다. 공적 감사권이나 판결권은 없다.",
-    "관계": "고예진의 능력을 인정하지만 정보 공개와 책임 조건을 두고 의견을 달리한다.",
-    "촉발 사건": "여러 상인이 공통 계약 조건을 교섭하려 한다.",
-    "플레이어 개입": "위임된 요구를 전달하거나 초안의 조건을 대조할 수 있다.",
-    "거주지": "수서동 역 밖 개별 거처(제안); 세 인물의 동거·임차권·소유권을 가정하지 않는다.",
-    "업무 위치": "수서동 역 밖 별도 교섭 공간에서 상인들의 공동 위임 요구를 대조한다. 고예진의 부하나 국가 관직자로 전환하지 않는다. 수서역 대합실의 생활 화물 인계·배급과 예약 화물 창고는 업무 수요 근거다. 역 시설 사용권·감사권·배차권·결제권·선로 보행권은 부여하지 않는다."
-  },
-  "sections": {},
-  "biography": "- 성명: 차유선 (Cha Yuseon)\n- 캐릭터 ID: K1021\n- 출신 공동체: 출생지·성장지·거주지는 미정이다.\n- 생년월일: 2076-08-03\n- 언어: 미정\n- 생업: 주 기록관 / 부 물류상\n- 소속: 무소속 민간 교섭자\n- 봉건 품계: 없음. 대한민국 정부가 수여한 관직도 없다.\n- 민간·공동체 직무: 공동 위임 교섭자 대한민국 정부 관직이나 봉건 품계가 아니다.\n- 징집 이력: 미정\n- 무장 접근: 미정\n- 성격: 차분하고 집요하다. 확인할 조건을 끝까지 묻되 합의 가능한 범위에서는 요구를 조정한다.\n- 개인 야망: 자신에게 위임한 상인들의 계약상 이해를 대변하려 한다.\n- 공포: 미정\n- 통치 방식: 상인들의 위임 범위 안에서 교섭한다. 공적 감사권이나 판결권은 없다.\n- 관계: 고예진의 능력을 인정하지만 정보 공개와 책임 조건을 두고 의견을 달리한다.\n- 촉발 사건: 여러 상인이 공통 계약 조건을 교섭하려 한다.\n- 플레이어 개입: 위임된 요구를 전달하거나 초안의 조건을 대조할 수 있다.\n- 거주지: 수서동 역 밖 개별 거처(제안); 세 인물의 동거·임차권·소유권을 가정하지 않는다.\n- 업무 위치: 수서동 역 밖 별도 교섭 공간에서 상인들의 공동 위임 요구를 대조한다. 고예진의 부하나 국가 관직자로 전환하지 않는다. 수서역 대합실의 생활 화물 인계·배급과 예약 화물 창고는 업무 수요 근거다. 역 시설 사용권·감사권·배차권·결제권·선로 보행권은 부여하지 않는다.\n- 차유선은 수서동의 역 밖 별도 거처에 머물며 같은 업무·생활권의 교섭 자리에서 상인들이 공동 위임한 계약 조건을 대변한다. 고예진의 능력을 인정하되 정보 공개와 책임 조건에 이의를 제기한다. 공적 감사권이나 판결권은 없으며 출생지·성장지와 공포는 미정으로 둔다.",
-  "sources": [
-    "Cast-Unaffiliated"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "차유선",
-        "type": "경쟁",
-        "to": "고예진",
-        "basis": "상인들의 위임에 따라 계약 조건을 교섭한다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "고예진",
-        "type": "경쟁",
-        "to": "차유선",
-        "basis": "계약의 정보 공개·책임 조건을 둘러싼 이견"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

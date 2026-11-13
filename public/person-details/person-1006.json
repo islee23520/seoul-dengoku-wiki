@@ -1,470 +1,172 @@
 {
   "id": "person-1006",
   "name": "탁서윤",
-  "title": "아관사 구의수비대장",
-  "position": "아관사 구의수비대장",
+  "title": "수도방위사령관",
+  "position": "수도방위사령관 · 삼각지역",
   "characterId": "K1006",
-  "rank": "수비대장",
-  "commonTier": "T4",
-  "occupation": "구의 수변 경비·이원 합의",
+  "rank": "대령",
+  "commonTier": "T2",
+  "occupation": "군 지휘",
   "gender": "남성",
   "stage": "주요",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Core-Characters#탁서윤",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-1006",
   "birthDate": "2091-12-11",
   "birthday": "12-11",
   "age": 35,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Core-Characters.json#/content/131",
-    "lore/chronology/Century-Annals.json#/content/434",
-    "lore/chronology/Century-Annals.json#/content/500"
-  ],
-  "familyTree": {
-    "personId": "K1006",
-    "nodes": [
-      {
-        "id": "K1006",
-        "personId": "K1006",
-        "kind": "person",
-        "name": "탁서윤",
-        "birthDate": "2091-12-11",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K1006"
-          },
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "탁서윤-p2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "생애. 2126년 세대. 구의 물 쪽 수비다. 관문사령관과 따로 뽑힌다. 전쟁과 급수는 고서준과 합의한 뒤에 정해진다. 대치 때 처음으로 같은 명령서에 함께 서명하였다. 그 전에는 따로 움직였다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "탁서윤-p2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-1006"
-      },
-      {
-        "id": "FH-K1006-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "탁승은",
-        "lineage": {
-          "surname": "탁",
-          "bongwan": "광산",
-          "clan": "d0c1-ad11-c0b0"
-        },
-        "birthDate": "2061-12-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "탁서윤-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2099,
-            "summary": "탁승은은 생활권의 공동 거처에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "탁서윤-p2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1006-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "탁승연",
-        "lineage": {
-          "surname": "탁",
-          "bongwan": "광산",
-          "clan": "d0c1-ad11-c0b0"
-        },
-        "birthDate": "2031-12-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "탁서윤-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2069,
-            "summary": "탁승연은 생활권의 공동 거처에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "탁서윤-p2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1006-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "탁승정",
-        "lineage": {
-          "surname": "탁",
-          "bongwan": "광산",
-          "clan": "d0c1-ad11-c0b0"
-        },
-        "birthDate": "2001-12-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "탁서윤-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "탁승정은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "탁서윤-p2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1006-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조서석",
-        "birthDate": "2061-12-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "탁서윤-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2099,
-            "summary": "조서석은 생활권의 공동 거처에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "탁서윤-p2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1006-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김민빈",
-        "birthDate": "2031-12-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "탁서윤-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2069,
-            "summary": "김민빈은 생활권의 공동 거처에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "탁서윤-p2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1006-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "박서진",
-        "birthDate": "2001-12-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "탁서윤-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박서진은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "탁서윤-p2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K1006-P-01:K1006:biological",
-        "from": "FH-K1006-P-01",
-        "to": "K1006",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "탁서윤-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1006-P-02:FH-K1006-P-01:biological",
-        "from": "FH-K1006-P-02",
-        "to": "FH-K1006-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "탁서윤-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1006-P-03:FH-K1006-P-02:biological",
-        "from": "FH-K1006-P-03",
-        "to": "FH-K1006-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "탁서윤-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1006-M-01:K1006:biological",
-        "from": "FH-K1006-M-01",
-        "to": "K1006",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "탁서윤-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1006-M-02:FH-K1006-M-01:biological",
-        "from": "FH-K1006-M-02",
-        "to": "FH-K1006-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "탁서윤-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1006-M-03:FH-K1006-M-02:biological",
-        "from": "FH-K1006-M-03",
-        "to": "FH-K1006-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "탁서윤-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d0c1-ad11-c0b0",
+    "name": "광산 탁씨",
+    "crest": "clan-crests/d0c1-ad11-c0b0.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "수도방위사령관이다. 서른다섯 살에 대령 계급으로 대통령의 임명장을 받았다. 국군이 줄어든 뒤로 이 자리는 대령이 맡는다. 삼각지 국방부 청사 지하에서 강 밑 터널 세 곳의 검문소와 다리 북쪽 끝의 직할대를 결재로 쥐고, 싸움에 띄우는 드론도 그의 도장 하나로만 뜬다. 광나루 터널 검문소에 들일 초청 증표의 수는 광진구 국회의원 고서준과 같은 명령서에 맞춰 적는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "수도방위사령관",
+    "품계": "대령",
+    "생업": "군 지휘",
+    "일하는 역": "삼각지역",
+    "잠자는 역": "삼각지역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "수도방위사령관이다. 서른다섯 살에 대령 계급으로 대통령의 임명장을 받았다. 국군이 줄어든 뒤로 이 자리는 대령이 맡는다. 삼각지 국방부 청사 지하에서 강 밑 터널 세 곳의 검문소와 다리 북쪽 끝의 직할대를 결재로 쥐고, 싸움에 띄우는 드론도 그의 도장 하나로만 뜬다. 광나루 터널 검문소에 들일 초청 증표의 수는 광진구 국회의원 고서준과 같은 명령서에 맞춰 적는다.",
+    "관직": "직함 수도방위사령관. 직위 수도방위사령관 · 삼각지역. 품계 대령. 일하는 역 삼각지역."
+  },
+  "values": {
+    "권위": 85,
+    "개방": -75,
+    "무력": 75,
+    "물질": 5,
+    "공동": 25,
+    "원칙": 20,
+    "공개": -35,
+    "자격": 5,
+    "분산": -70,
+    "변혁": -30
+  },
+  "desire": {
+    "갈망": 20,
+    "독점": -30,
+    "위험": 10,
+    "과시": -10,
+    "지속": 30,
+    "지향": "유동",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-1006",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "탁서윤",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "탁서윤",
+        "type": "맹세",
+        "to": "윤서린",
+        "basis": "대통령의 임명장을 받으며 국군의 명령서에 도장 하나만 찍겠다고 맹세했다"
+      },
+      {
+        "from": "탁서윤",
+        "type": "계약",
+        "to": "고서준",
+        "basis": "광나루 터널 검문소의 초청 증표 수를 광진구 국회의원과 같은 명령서에 맞춰 적는다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "박태겸",
+        "type": "계약",
+        "to": "탁서윤",
+        "basis": "구청이 다리 끝 초소의 배급을 대고, 수도방위사령부는 다리 끝 병력을 줄이지 않는다"
+      },
+      {
+        "from": "루카스 슈나이더",
+        "type": "경쟁",
+        "to": "탁서윤",
+        "basis": "드론을 띄우는 결재마다 같은 탄약 장부를 두고 다툰다"
+      },
+      {
+        "from": "심달호",
+        "type": "경쟁",
+        "to": "탁서윤",
+        "basis": "병사의 기계 몸 정비 허가를 두고 수도방위사령관과 서류로 맞선다."
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 12,
-        "effective": 12
+      "diplomacy": {
+        "base": 4,
+        "effective": 4
       },
-      "strategy": {
+      "martial": {
         "base": 11,
         "effective": 11
       },
-      "negotiation": {
-        "base": 11,
-        "effective": 11
+      "stewardship": {
+        "base": 4,
+        "effective": 4
       },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 5,
+        "effective": 5
       },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 4,
+        "effective": 4
       },
       "prowess": {
-        "base": 8,
-        "effective": 8
-      },
-      "endurance": {
         "base": 10,
         "effective": 10
       }
     },
     "skills": [
       {
-        "id": "k1006-joint-order",
-        "name": {
-          "ko": "공동 명령 합의",
-          "en": "Joint-order agreement"
-        },
+        "id": "v3-1006-checkpoint-command",
+        "name": "검문소 결재 지휘",
+        "rating": 70
+      },
+      {
+        "id": "v3-1006-ammunition-ledger",
+        "name": "탄약 기재",
         "rating": 60
       }
     ],
     "traits": [
       {
-        "id": "k1006-trait-1",
-        "name": {
-          "ko": "별도 지휘의 공동 서명",
-          "en": "Joint signatures across separate commands"
-        },
-        "description": {
-          "ko": "자기 지휘권을 유지하며 공동 명령에 합의한다.",
-          "en": "Agrees to a shared order while keeping a separate command."
-        },
-        "behavior": {
-          "ko": "자기 지휘권을 유지하며 공동 명령에 합의한다.",
-          "en": "Agrees to a shared order while keeping a separate command."
-        },
-        "stress": {
-          "ko": "대치 때 고서준과 함께 명령서에 서명한다.",
-          "en": "Signs an order with Go Seojun during a standoff."
-        },
-        "relationship": {
-          "ko": "공동 결재는 동료 지휘부와의 합의이며 가문 키를 얻지는 않는다.",
-          "en": "Shared approval is agreement with another command, not acquisition of house keys."
-        },
+        "id": "v3-1006-trait-1",
+        "name": "한 장의 명령서",
+        "description": "명령은 도장 하나가 찍힌 한 장으로만 내린다.",
+        "behavior": "말로 들어온 요청도 명령서로 다시 써서 도장을 찍은 뒤에야 직할대에 보낸다.",
+        "stress": "명령서 없이 움직인 분대가 나오면 그날 안에 처분 칸을 연다.",
+        "relationship": "고서준과는 검문소 명령서의 문구를 한 줄씩 맞춘다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "구의 수비 지휘는 고서준과 별도로 선출된다. 대치 때 처음으로 같은 명령서에 서명했으나 전쟁과 급수의 공동 승인이 지휘 통합을 뜻하지는 않는다.",
-      "en": "Her Guui defense command is elected separately from Go Seojun’s. They first signed one order during a standoff, but joint approval of war and water does not merge their commands."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -502,64 +204,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d0c1-ad11-c0b0",
-    "name": "광산 탁씨",
-    "crest": "clan-crests/d0c1-ad11-c0b0.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": false,
-  "values": {
-    "권위": 40,
-    "개방": -20,
-    "무력": 40,
-    "물질": 10,
-    "공동": 20,
-    "원칙": 0,
-    "공개": -10,
-    "자격": -10,
-    "분산": -20,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 20,
-    "독점": -30,
-    "위험": 10,
-    "과시": -10,
-    "지속": 30,
-    "지향": "유동",
-    "결합": "다자"
-  },
-  "fields": {},
-  "sections": {
-    "생애": "2091-12-11에 태어났다. 2126년 개막 현재 구의수비대장으로서 관문사령관과 별도로 선출된 지휘권을 맡고, 전쟁과 급수는 고서준과 합의한 뒤 결정한다.",
-    "관직": "품계 수비대장. 직함은 아관사 구의수비대장. 생업 별명은 구의 수변 경비·이원 합의.",
-    "일화": "대치가 열린 날 탁서윤은 고서준과 같은 명령서에 서명했다. 그 원본은 다음 급수 당직이 공동 결재 순서를 확인하는 인계 근거로 남았다.",
-    "가문": "한강진교량공회(HP07)의 관리 권리는 다른 원장에 속하며, 수비대 자리는 선출직으로 기록된다.",
-    "관계": "고서준과 이원 지휘를 맡고, 한재목의 수문 기록과 구의 물 원장을 나누어 대조한다."
-  },
-  "biography": "아관사 구의수비대장 탁서윤의 구의3동 수변 경비·이원 합의 창구가 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다. 고서준과 전쟁·급수 명령을 공동 결재하고 구의 물과 한재목의 수문 기록을 대조한다.\n\n**생애.** 2091-12-11에 태어났다. 2126년 개막 현재 구의수비대장으로서 관문사령관과 별도로 선출된 지휘권을 맡고, 전쟁과 급수는 고서준과 합의한 뒤 결정한다.\n\n**관직.** 품계 수비대장. 직함은 아관사 구의수비대장. 생업 별명은 구의 수변 경비·이원 합의.\n\n**일화.** 대치가 열린 날 탁서윤은 고서준과 같은 명령서에 서명했다. 그 원본은 다음 급수 당직이 공동 결재 순서를 확인하는 인계 근거로 남았다.\n\n**가문.** 한강진교량공회(HP07)의 관리 권리는 다른 원장에 속하며, 수비대 자리는 선출직으로 기록된다.\n\n**관계.** 고서준과 이원 지휘를 맡고, 한재목의 수문 기록과 구의 물 원장을 나누어 대조한다.",
-  "sources": [
-    "Core-Characters"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "탁서윤",
-        "type": "계약",
-        "to": "한재목",
-        "basis": "구의 물과 서부 수문을 합의 뒤에 나눔"
-      },
-      {
-        "from": "탁서윤",
-        "type": "지휘",
-        "to": "고서준",
-        "basis": "구의수비대장과 관문사령관의 이원 합의"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

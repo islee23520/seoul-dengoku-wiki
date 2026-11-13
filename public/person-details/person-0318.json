@@ -1,307 +1,93 @@
 {
   "id": "person-0318",
   "name": "초나루",
-  "title": "공동호송조약 서명 서기",
-  "position": "공동호송조약 서명 서기",
+  "title": "구청 서기",
+  "position": "구청 서기 · 봉화산역",
   "characterId": "K317",
-  "rank": "호송원",
+  "rank": "사무관",
   "commonTier": "T5",
-  "occupation": "중립 호송 서명·증인 대조",
+  "occupation": "장부 기재",
   "gender": "남성",
   "stage": "S3",
-  "state": "S12",
-  "stateName": "신내운수",
-  "sourceRoute": "/world/Cast-State-12#인물-초나루",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0318",
   "birthDate": "2072-11-03",
   "birthday": "11-03",
   "age": 54,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-12.json#/content/237"
-  ],
-  "familyTree": {
-    "personId": "K317",
-    "nodes": [
-      {
-        "id": "K317",
-        "personId": "K317",
-        "kind": "person",
-        "name": "초나루",
-        "birthDate": "2072-11-03",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K317"
-          },
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-초나루-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 중립 호송 약정 서명 서기 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-초나루-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0318"
-      },
-      {
-        "id": "FH-K317-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "초승석",
-        "lineage": {
-          "surname": "초",
-          "bongwan": "성주",
-          "clan": "cd08-c131-c8fc"
-        },
-        "birthDate": "2042-11-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-초나루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "초승석은 제기동 의무소에서 중립 호송 서명·증인 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-초나루-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K317-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "초승준",
-        "lineage": {
-          "surname": "초",
-          "bongwan": "성주",
-          "clan": "cd08-c131-c8fc"
-        },
-        "birthDate": "2012-11-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-초나루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "초승준은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-초나루-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K317-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한준석",
-        "birthDate": "2042-11-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-초나루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "한준석은 제기동 의무소에서 중립 호송 서명·증인 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-초나루-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K317-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강준호",
-        "birthDate": "2012-11-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-초나루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강준호는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-초나루-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K317-P-01:K317:biological",
-        "from": "FH-K317-P-01",
-        "to": "K317",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-초나루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K317-P-02:FH-K317-P-01:biological",
-        "from": "FH-K317-P-02",
-        "to": "FH-K317-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-초나루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K317-M-01:K317:biological",
-        "from": "FH-K317-M-01",
-        "to": "K317",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-초나루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K317-M-02:FH-K317-M-01:biological",
-        "from": "FH-K317-M-02",
-        "to": "FH-K317-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-초나루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cd08-c131-c8fc",
+    "name": "성주 초씨",
+    "crest": "clan-crests/cd08-c131-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "초나루의 기재는 노원구청 서기, 사무관, 쉰네 살, 봉화산역이다. 구청 민원 심리에서 기재 사항을 다투는 서류를 받아 심리 순서를 정하고, 다툼마다 어느 서기의 도장이 걸려 있는지 먼저 찾는다. 그는 서기들 사이에서 도장 하나로 사람을 찾아내는 사람으로 통한다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "구청 서기",
+    "품계": "사무관",
+    "생업": "장부 기재",
+    "일하는 역": "봉화산역",
+    "잠자는 역": "봉화산역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "초나루의 기재는 노원구청 서기, 사무관, 쉰네 살, 봉화산역이다. 구청 민원 심리에서 기재 사항을 다투는 서류를 받아 심리 순서를 정하고, 다툼마다 어느 서기의 도장이 걸려 있는지 먼저 찾는다. 그는 서기들 사이에서 도장 하나로 사람을 찾아내는 사람으로 통한다.",
+    "관직": "직함 구청 서기. 직위 구청 서기 · 봉화산역. 품계 사무관. 일하는 역 봉화산역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": -25,
+    "무력": 5,
+    "물질": -10,
+    "공동": 35,
+    "원칙": 20,
+    "공개": 0,
+    "자격": 35,
+    "분산": -20,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": 25,
+    "독점": 10,
+    "위험": -30,
+    "과시": -15,
+    "지속": -20,
+    "지향": "이성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0318",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "management": {
-        "base": 10,
-        "effective": 10
+      "stewardship": {
+        "base": 11,
+        "effective": 11
       },
-      "insight": {
-        "base": 9,
-        "effective": 9
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
         "base": 8,
@@ -310,76 +96,10 @@
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 5,
-        "effective": 5
       }
     },
-    "skills": [
-      {
-        "id": "k317-agreement-transcription-review",
-        "name": {
-          "ko": "약정 정서 대조",
-          "en": "Agreement transcription review"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k317-priority",
-        "name": {
-          "ko": "빈 조항에 멈춤",
-          "en": "Stops at missing clauses"
-        },
-        "description": {
-          "ko": "초나루는 인장 하나와 빈 조항 번호를 보고 함을 잠근 뒤 다른 서명 원장과 대조했다. 성립하지 않은 초안의 효력을 만들지 않는다.",
-          "en": "Cho Naru locked a draft with one seal and a blank clause, then compared another signature ledger. No validity is granted to the incomplete draft."
-        },
-        "behavior": {
-          "ko": "서명 시각과 증인 이름을 같은 줄에 적고, 인장이 둘 미만이면 함을 잠근다.",
-          "en": "Office. Rank: convoy hand. Title: joint convoy treaty signing clerk. He wrote the signing hour and the witness names on one line and locked the box with fewer than two stamps."
-        },
-        "stress": {
-          "ko": "위조 정서본 한 장이 먼저 나가 자신이 노선 분할의 들러리가 되는 것.",
-          "en": "Fear. That one forged fair copy would go out first and he would become the procession of partition."
-        },
-        "relationship": {
-          "ko": "장세화의 중립 호송 초안을 정서하고, 근주하의 수서 서명 원장과 조항을 맞춘다. 정유라의 회의 통지를 봉인 상태로만 펼친다.",
-          "en": "Relations. Drafted Jang Sehwa's joint convoy plan and matched the articles with Geun Juha's Suseo signature ledger. Unfolded Jung Yura's Lesser States Council notice only under seal."
-        },
-        "effects": []
-      },
-      {
-        "id": "k317-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 호송원. 직함은 중립 호송 약정 서명 서기. 서명 시각과 증인 이름을 같은 줄에 적고, 인장이 둘 미만이면 함을 잠근다.",
-          "en": "Office. Rank: convoy hand. Title: joint convoy treaty signing clerk. He wrote the signing hour and the witness names on one line and locked the box with fewer than two stamps."
-        },
-        "stress": {
-          "ko": "공포. 위조 정서본 한 장이 먼저 나가 자신이 노선 분할의 들러리가 되는 것.",
-          "en": "Fear. That one forged fair copy would go out first and he would become the procession of partition."
-        },
-        "relationship": {
-          "ko": "관계. 장세화의 중립 호송 초안을 정서하고, 근주하의 수서 서명 원장과 조항을 맞춘다. 정유라의 회의 통지를 봉인 상태로만 펼친다.",
-          "en": "Relations. Drafted Jang Sehwa's joint convoy plan and matched the articles with Geun Juha's Suseo signature ledger. Unfolded Jung Yura's Lesser States Council notice only under seal."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "초나루는 인장 하나와 빈 조항 번호를 보고 함을 잠근 뒤 다른 서명 원장과 대조했다. 성립하지 않은 초안의 효력을 만들지 않는다.",
-      "en": "Cho Naru locked a draft with one seal and a blank clause, then compared another signature ledger. No validity is granted to the incomplete draft."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,91 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "cd08-c131-c8fc",
-    "name": "성주 초씨",
-    "crest": "clan-crests/cd08-c131-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -25,
-    "개방": 30,
-    "무력": -30,
-    "물질": -5,
-    "공동": 30,
-    "원칙": 0,
-    "공개": 25,
-    "자격": 20,
-    "분산": 30,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 25,
-    "독점": 10,
-    "위험": -30,
-    "과시": -15,
-    "지속": -20,
-    "지향": "이성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "중립 호송 서명·증인 대조",
-    "소속": "신내운수",
-    "품계": "호송원",
-    "직함": "공동호송조약 서명 서기",
-    "가치관": "권위 −25 | 개방 30 | 무력 −30 | 물질 −5 | 공동 30 | 원칙 0 | 공개 25 | 자격 20 | 분산 30 | 변혁 5",
-    "욕망": "갈망 25 | 독점 10 | 위험 −30 | 과시 −15 | 지속 −20 | 지향 이성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2072-11-03에 태어났다. 제기동 의무소에서 자랐다. 2126년 개막에는 공동호송조약 서명 서기 당직을 맡으며, 직위 인수 기록에는 가짜 약 봉인으로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 초나루의 중립 호송 서명·증인 대조 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
-    "관직": "품계 호송원. 직함은 중립 호송 약정 서명 서기. 서명 시각과 증인 이름을 같은 줄에 적고, 인장이 둘 미만이면 함을 잠근다.",
-    "일화": "장세화의 중립 호송 초안 정서본이 인장 하나만 받고 조항 번호 한 칸을 공란으로 남긴 채 돌아온다. 초나루는 붓을 내려놓고 함을 잠근 뒤, 근주하의 수서 서명 원장을 가져와 빈 번호를 대조한다.",
-    "관계": "장세화의 중립 호송 초안을 정서하고, 근주하의 수서 서명 원장과 조항을 맞춘다. 정유라의 회의 통지를 봉인 상태로만 펼친다.",
-    "야망": "중립 호송 문안을 신내 서기 원장에만 유효하게 남겨 노선 면허 밖의 호송료가 서명란을 사지 못하게 하려 한다.",
-    "공포": "위조 정서본 한 장이 먼저 나가 자신이 노선 분할의 들러리가 되는 것.",
-    "개입": "잠긴 쪽지를 폭로하거나, 서명 증인을 호송해 서기 원장을 지킬 수 있다."
-  },
-  "biography": "2072-11-03생인 초나루는 먹물이 마르기 전의 구두 합의를 서기로 치지 않는다. 조용하나 조항 번호가 비면 붓을 내려놓는다.\n\n- 생업: 중립 호송 서명·증인 대조\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 공동호송조약 서명 서기\n**생애.** 2072-11-03에 태어났다. 제기동 의무소에서 자랐다. 2126년 개막에는 공동호송조약 서명 서기 당직을 맡으며, 직위 인수 기록에는 가짜 약 봉인으로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 초나루의 중립 호송 서명·증인 대조 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 호송원. 직함은 중립 호송 약정 서명 서기. 서명 시각과 증인 이름을 같은 줄에 적고, 인장이 둘 미만이면 함을 잠근다.\n\n**일화.** 장세화의 중립 호송 초안 정서본이 인장 하나만 받고 조항 번호 한 칸을 공란으로 남긴 채 돌아온다. 초나루는 붓을 내려놓고 함을 잠근 뒤, 근주하의 수서 서명 원장을 가져와 빈 번호를 대조한다.\n\n**관계.** 장세화의 중립 호송 초안을 정서하고, 근주하의 수서 서명 원장과 조항을 맞춘다. 정유라의 회의 통지를 봉인 상태로만 펼친다.\n\n**야망.** 중립 호송 문안을 신내 서기 원장에만 유효하게 남겨 노선 면허 밖의 호송료가 서명란을 사지 못하게 하려 한다.\n\n**공포.** 위조 정서본 한 장이 먼저 나가 자신이 노선 분할의 들러리가 되는 것.\n\n**개입.** 잠긴 쪽지를 폭로하거나, 서명 증인을 호송해 서기 원장을 지킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −30 | 물질 −5 | 공동 30 | 원칙 0 | 공개 25 | 자격 20 | 분산 30 | 변혁 5\n- 욕망: 갈망 25 | 독점 10 | 위험 −30 | 과시 −15 | 지속 −20 | 지향 이성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-12"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "초나루",
-        "type": "계약",
-        "to": "장세화",
-        "basis": "장세화의 공동호송 초안을 정서하고"
-      },
-      {
-        "from": "초나루",
-        "type": "계약",
-        "to": "근주하",
-        "basis": "근주하의 수서 서명 원장과 조항을 맞춘다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "창해온",
-        "type": "계약",
-        "to": "초나루",
-        "basis": "초나루의 호송 조항과 번호를 맞춘다"
-      },
-      {
-        "from": "근바름",
-        "type": "계약",
-        "to": "초나루",
-        "basis": "초나루의 신내 서기 원장과 조항 번호를 맞추고"
-      },
-      {
-        "from": "근주하",
-        "type": "계약",
-        "to": "초나루",
-        "basis": "초나루의 호송 조항과 창고운의 식량 조항을 한 원장에 모은다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

@@ -1,499 +1,116 @@
 {
   "id": "person-0178",
   "name": "가브리엘 존슨",
-  "title": "용산창 의무원",
-  "position": "용산창 의무원",
+  "title": "용산역 역장",
+  "position": "용산역 역장 · 정부",
   "characterId": "K177",
-  "rank": "주사",
-  "commonTier": "T5",
-  "occupation": "환자 명부·시약 관리와 처방 배분",
+  "rank": "역장",
+  "commonTier": "T4",
+  "occupation": "역 행정",
   "gender": "남성",
   "stage": "S2",
-  "state": "S07",
-  "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-가브리엘 존슨",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0178",
   "birthDate": "2089-04-17",
   "birthday": "04-17",
   "age": 37,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-07.json#/content/105",
-    "lore/characters/Cast-State-07.json#/content/107"
-  ],
-  "familyTree": {
-    "personId": "K177",
-    "nodes": [
-      {
-        "id": "K177",
-        "personId": "K177",
-        "kind": "person",
-        "name": "가브리엘 존슨",
-        "birthDate": "2089-04-17",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K177"
-          },
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-가브리엘-존슨-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 용산창 의무원 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-가브리엘-존슨-list2"
-              }
-            ]
-          }
-        ],
-        "nameEn": "Gabriel Johnson",
-        "detailRoute": "/people/person-0178"
-      },
-      {
-        "id": "FH-K177-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "마이클 존슨",
-        "birthDate": "2059-04-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-가브리엘-존슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "마이클 존슨은 2059년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2077년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-가브리엘-존슨-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Michael Johnson was born in 2059 and grew up reading family and work records. From 2077, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Michael Johnson",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K177-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "토머스 존슨",
-        "birthDate": "2029-04-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-가브리엘-존슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "토머스 존슨은 2029년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2047년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-가브리엘-존슨-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Thomas Johnson was born in 2029 and grew up reading family and work records. From 2047, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Thomas Johnson",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K177-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "새뮤얼 존슨",
-        "birthDate": "1999-04-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-가브리엘-존슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "새뮤얼 존슨은 2030년 대정전 당시 용산·이태원 생활권에서 이태원 숙박업과 민간 통역 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-가브리엘-존슨-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Samuel Johnson was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
-          }
-        ],
-        "nameEn": "Samuel Johnson",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K177-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "도로시 카터",
-        "birthDate": "2059-04-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-가브리엘-존슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "도로시 카터는 2059년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2077년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-가브리엘-존슨-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Dorothy Carter was born in 2059 and grew up reading family and work records. From 2077, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Dorothy Carter",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K177-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "셀리아 카터",
-        "birthDate": "2029-04-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-가브리엘-존슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "셀리아 카터는 2029년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2047년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-가브리엘-존슨-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Celia Carter was born in 2029 and grew up reading family and work records. From 2047, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Celia Carter",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K177-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "모린 카터",
-        "birthDate": "1999-04-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-가브리엘-존슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "모린 카터는 2030년 대정전 당시 용산·이태원 생활권에서 이태원 숙박업과 민간 통역 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-가브리엘-존슨-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Maureen Carter was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
-          }
-        ],
-        "nameEn": "Maureen Carter",
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K177-P-01:K177:biological",
-        "from": "FH-K177-P-01",
-        "to": "K177",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-가브리엘-존슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K177-P-02:FH-K177-P-01:biological",
-        "from": "FH-K177-P-02",
-        "to": "FH-K177-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-가브리엘-존슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K177-P-03:FH-K177-P-02:biological",
-        "from": "FH-K177-P-03",
-        "to": "FH-K177-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-가브리엘-존슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K177-M-01:K177:biological",
-        "from": "FH-K177-M-01",
-        "to": "K177",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-가브리엘-존슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K177-M-02:FH-K177-M-01:biological",
-        "from": "FH-K177-M-02",
-        "to": "FH-K177-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-가브리엘-존슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K177-M-03:FH-K177-M-02:biological",
-        "from": "FH-K177-M-03",
-        "to": "FH-K177-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-가브리엘-존슨-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": null,
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "한강로동 동장 자리가 비어 있어서, 용산역의 일은 동주민센터를 거치지 않고 곧바로 국회의원 박태겸의 구청으로 올라간다. 저녁 소등 전이면 그는 그날의 출입 일지와 정원 장부를 한 꾸러미로 묶어, 삼각지로 가는 전령에게 직접 넘긴다. 용산역은 노량진으로 건너는 다리의 북쪽 끝이라, 다리 끝 초소에서 넘어온 통행 기재 사본도 같은 꾸러미에 들어간다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "용산역 역장",
+    "품계": "역장",
+    "생업": "역 행정",
+    "일하는 역": "용산역",
+    "잠자는 역": "용산역",
+    "가구": "혼자 사는 가구"
   },
-  "proseContacts": [],
+  "sections": {
+    "생애": "한강로동 동장 자리가 비어 있어서, 용산역의 일은 동주민센터를 거치지 않고 곧바로 국회의원 박태겸의 구청으로 올라간다. 저녁 소등 전이면 그는 그날의 출입 일지와 정원 장부를 한 꾸러미로 묶어, 삼각지로 가는 전령에게 직접 넘긴다. 용산역은 노량진으로 건너는 다리의 북쪽 끝이라, 다리 끝 초소에서 넘어온 통행 기재 사본도 같은 꾸러미에 들어간다.",
+    "관직": "직함 용산역 역장. 직위 용산역 역장 · 정부. 품계 역장. 일하는 역 용산역."
+  },
+  "values": {
+    "권위": 65,
+    "개방": -35,
+    "무력": 15,
+    "물질": 10,
+    "공동": -15,
+    "원칙": 30,
+    "공개": -45,
+    "자격": 45,
+    "분산": -45,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": 35,
+    "위험": -10,
+    "과시": 5,
+    "지속": 15,
+    "지향": "양성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0178",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "가브리엘 존슨",
+        "type": "지휘",
+        "to": "박태겸",
+        "basis": "용산구 국회의원 박태겸의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K169",
+    "name": "박태겸",
+    "courtId": "court:K169",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
-      },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
       },
       "learning": {
-        "base": 11,
-        "effective": 11
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "medicine-allocation",
-        "name": {
-          "ko": "약재 배분",
-          "en": "Medicine allocation"
-        },
-        "rating": 65
-      },
-      {
-        "id": "patient-triage",
-        "name": {
-          "ko": "환자 순서 조정",
-          "en": "Patient prioritization"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k177-disposition",
-        "name": {
-          "ko": "배급과 치료를 분리함",
-          "en": "Separating rations from treatment"
-        },
-        "description": {
-          "ko": "선로 화상보다 냉동 칸 동상을 먼저 맡고, 도제 숙소 배급을 치료 순서로 바꾸라는 쪽지를 찢는다. 온화하나 소독수가 비면 창 진료를 닫는다.",
-          "en": "He smelled freezer frostbite before track burns and tore up any note telling him to turn care order into apprentice-ration order. Mild in manner, he closed the warehouse care whenever the disinfectant ran out."
-        },
-        "behavior": {
-          "ko": "관직. 품계 주사. 직함은 용산창 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 가문 칸 환자는 공공 칸과 분리해 받는다.",
-          "en": "Office. Rank: registrar. Title: Yongsan warehouse medic. He posted the patient roster and the medicine bundles at once and took house-column patients separately from the public columns."
-        },
-        "stress": {
-          "ko": "공포. 억류 열차의 부상자가 인질 명부로만 남아 의무실이 가문 감옥이 되는 것.",
-          "en": "Fear. That the detained train's wounded would remain on a hostage roster alone and the infirmary would become a house prison."
-        },
-        "relationship": {
-          "ko": "관계. 아이작 워커의 도제 숙소를 진료로 받치고, 류은비에게 창 약재를 빚지며, 임초원의 억류 열차 탑승자 진료를 우선한다.",
-          "en": "Relations. Backed Isaac Walker's apprentice lodge with care, owed Ryu Eunbi warehouse herbs, and gave the detained train's passengers care first."
-        },
-        "effects": []
-      },
-      {
-        "id": "k177-choice",
-        "name": {
-          "ko": "소독 최저선",
-          "en": "Disinfection minimum"
-        },
-        "description": {
-          "ko": "일화. 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 용산창 의무원 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In 2125, short of herbs, he halved the prescriptions and divided them among everyone. By this deed the signature of the Yongsan warehouse medic post rose into the ledger."
-        },
-        "behavior": {
-          "ko": "관계. 아이작 워커의 도제 숙소를 진료로 받치고, 류은비에게 창 약재를 빚지며, 임초원의 억류 열차 탑승자 진료를 우선한다.",
-          "en": "Relations. Backed Isaac Walker's apprentice lodge with care, owed Ryu Eunbi warehouse herbs, and gave the detained train's passengers care first."
-        },
-        "stress": {
-          "ko": "공포. 억류 열차의 부상자가 인질 명부로만 남아 의무실이 가문 감옥이 되는 것.",
-          "en": "Fear. That the detained train's wounded would remain on a hostage roster alone and the infirmary would become a house prison."
-        },
-        "relationship": {
-          "ko": "관계. 아이작 워커의 도제 숙소를 진료로 받치고, 류은비에게 창 약재를 빚지며, 임초원의 억류 열차 탑승자 진료를 우선한다.",
-          "en": "Relations. Backed Isaac Walker's apprentice lodge with care, owed Ryu Eunbi warehouse herbs, and gave the detained train's passengers care first."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "약 부족에도 모두에게 나누고 숙소 배급을 치료 순서로 바꾸라는 압박을 거절한다. 소독수 없이는 닫는 선택에 보호와 접근 제한의 긴장이 있다.",
-      "en": "He shares scarce medicine and rejects ration-based treatment priority. Closing without disinfectant creates tension between safety and access."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -531,87 +148,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": null,
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 20,
-    "개방": 20,
-    "무력": -20,
-    "물질": 15,
-    "공동": -20,
-    "원칙": 10,
-    "공개": -20,
-    "자격": 30,
-    "분산": 5,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": 35,
-    "위험": -10,
-    "과시": 5,
-    "지속": 15,
-    "지향": "양성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "환적국",
-    "품계": "주사",
-    "생업": "환자 명부·시약 관리와 처방 배분",
-    "직함": "용산창 의무원",
-    "가치관": "권위 20 | 개방 20 | 무력 −20 | 물질 15 | 공동 −20 | 원칙 10 | 공개 −20 | 자격 30 | 분산 5 | 변혁 0",
-    "욕망": "갈망 10 | 독점 35 | 위험 −10 | 과시 5 | 지속 15 | 지향 양성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2089년생인 가브리엘 존슨은 2126년 개막기에 용산창 의무원 업무를 맡는다. 제기동 의무소에서 자랐다. 용산창 의무원 업무는 가짜 약 봉인을 계기로 시작됐다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 새뮤얼 존슨은 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 가브리엘 존슨의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 가브리엘 존슨의 환자 명부·시약 관리와 처방 배분 업무는 한강로동과 연결된다.",
-    "관직": "품계 주사. 직함은 용산창 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 가문 칸 환자는 공공 칸과 분리해 받는다.",
-    "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 행동을 계기로 용산창 의무원 자리의 서명이 장부에 올랐다.",
-    "관계": "아이작 워커의 도제 숙소를 진료로 받치고, 류은비에게 창 약재를 빚지며, 임초원의 억류 열차 탑승자 진료를 우선한다.",
-    "야망": "선로 가문과 도제 노동자의 방역 주기를 후국회의 부칙으로 올려 배급 압박에도 의무 최저선을 남긴다.",
-    "공포": "억류 열차의 부상자가 인질 명부로만 남아 의무실이 가문 감옥이 되는 것.",
-    "개입": "대체 시약을 호송해 진료를 유지하거나, 인질 명단을 가문에 넘겨 의무원을 위태롭게 할 수 있다."
-  },
-  "biography": "선로 화상보다 냉동 칸 동상을 먼저 맡고, 도제 숙소 배급을 치료 순서로 바꾸라는 쪽지를 찢는다. 온화하나 소독수가 비면 창 진료를 닫는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환자 명부·시약 관리와 처방 배분\n- 직함: 용산창 의무원\n**생애.** 2089년생인 가브리엘 존슨은 2126년 개막기에 용산창 의무원 업무를 맡는다. 제기동 의무소에서 자랐다. 용산창 의무원 업무는 가짜 약 봉인을 계기로 시작됐다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 새뮤얼 존슨은 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 가브리엘 존슨의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 가브리엘 존슨의 환자 명부·시약 관리와 처방 배분 업무는 한강로동과 연결된다.\n\n**관직.** 품계 주사. 직함은 용산창 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 가문 칸 환자는 공공 칸과 분리해 받는다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 행동을 계기로 용산창 의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 아이작 워커의 도제 숙소를 진료로 받치고, 류은비에게 창 약재를 빚지며, 임초원의 억류 열차 탑승자 진료를 우선한다.\n\n**야망.** 선로 가문과 도제 노동자의 방역 주기를 후국회의 부칙으로 올려 배급 압박에도 의무 최저선을 남긴다.\n\n**공포.** 억류 열차의 부상자가 인질 명부로만 남아 의무실이 가문 감옥이 되는 것.\n\n**개입.** 대체 시약을 호송해 진료를 유지하거나, 인질 명단을 가문에 넘겨 의무원을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 20 | 무력 −20 | 물질 15 | 공동 −20 | 원칙 10 | 공개 −20 | 자격 30 | 분산 5 | 변혁 0\n- 욕망: 갈망 10 | 독점 35 | 위험 −10 | 과시 5 | 지속 15 | 지향 양성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-07"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "가브리엘 존슨",
-        "type": "사제",
-        "to": "아이작 워커",
-        "basis": "아이작 워커의 도제 숙소를 진료로 받치고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:용산",
+      "name": {
+        "ko": "용산역"
       },
-      {
-        "from": "가브리엘 존슨",
-        "type": "빚",
-        "to": "류은비",
-        "basis": "류은비에게 창 약재를 빚지며"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "마테우시 코발스키",
-        "type": "계약",
-        "to": "가브리엘 존슨",
-        "basis": "가브리엘 존슨의 창 진료 봉쇄를 방송으로 알리는 동맹이고"
+      "holderPersonId": "K177",
+      "directLiegePersonId": "K169",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "용산",
+        "stationName": "용산"
       },
-      {
-        "from": "노아 데이비스",
-        "type": "계약",
-        "to": "가브리엘 존슨",
-        "basis": "가브리엘 존슨의 창 진료가 봉쇄되면 환자를 숙소로 받고"
-      },
-      {
-        "from": "스테판 페트로프",
-        "type": "맹세",
-        "to": "가브리엘 존슨",
-        "basis": "가브리엘 존슨의 창 진료 봉쇄 시각과 발견을 맞추며"
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1117062500",
+          "name": "한강로동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

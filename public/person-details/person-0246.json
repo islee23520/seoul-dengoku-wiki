@@ -1,489 +1,160 @@
 {
   "id": "person-0246",
   "name": "백온",
-  "title": "방장",
-  "position": "안국총림 방장",
+  "title": "행정안전부 주민등록 원부 필사관",
+  "position": "명부 필사관 · 광화문역",
   "characterId": "K245",
-  "rank": "방장",
-  "commonTier": "T1",
+  "rank": "서기",
+  "commonTier": "T2",
   "occupation": "명부 필사",
   "gender": "남성",
   "stage": "주요",
-  "state": "S10",
-  "stateName": "안국총림",
-  "sourceRoute": "/world/Cast-State-10#인물-백온",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0246",
   "birthDate": "2102-10-04",
   "birthday": "10-04",
   "age": 24,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-10.json#/content/1",
-    "lore/characters/Core-Characters.json#/content/91",
-    "lore/chronology/Century-Annals.json#/content/518"
-  ],
-  "familyTree": {
-    "personId": "K245",
-    "nodes": [
-      {
-        "id": "K245",
-        "personId": "K245",
-        "kind": "person",
-        "name": "백온",
-        "birthDate": "2102-10-04",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K245"
-          },
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-백온-p1"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 피난 명부의 손. 안국총림은 장경종(이하 '장경종'이라 한다)의 본산이고 수도는 안국역이다. 조계사·총무원 종로구 우정국로 55가 대정전 뒤에 위패와 사원 대장을 지켰다. 백온이 방장이 된 것은 산중총회가 그를 추대한 뒤였다. 추대의 근거는 북한산보국문귀환회의 명부함을 끊기지 않게 지킨 일이었다. 문중은 스승 계보별 파벌이고, 문중들의 표 대결이 산중총회의 정치다. 안국총림은 속국이 없고 독자 병력이 없다. 북한산 피난은 호가 아니라 공백이다. 한재목의 집단 단수는 명부의 줄을 거래 카드로 만든다. 강민서가 시민권을 규격과 같이 올리려는 까닭과 만난다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-백온-p1"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0246"
-      },
-      {
-        "id": "FH-K245-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "백승석",
-        "lineage": {
-          "surname": "백",
-          "bongwan": "수원",
-          "clan": "bc31-c218-c6d0"
-        },
-        "birthDate": "2072-10-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-백온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2110,
-            "summary": "백승석은 생활권의 공동 거처에서 명부 필사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-백온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K245-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "백승준",
-        "lineage": {
-          "surname": "백",
-          "bongwan": "수원",
-          "clan": "bc31-c218-c6d0"
-        },
-        "birthDate": "2042-10-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-백온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "백승준은 생활권의 공동 거처에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-백온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K245-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "백승호",
-        "lineage": {
-          "surname": "백",
-          "bongwan": "수원",
-          "clan": "bc31-c218-c6d0"
-        },
-        "birthDate": "2012-10-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-백온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "백승호는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-백온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K245-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한현재",
-        "birthDate": "2072-10-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-백온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2110,
-            "summary": "한현재는 생활권의 공동 거처에서 명부 필사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-백온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K245-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현찬",
-        "birthDate": "2042-10-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-백온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "강현찬은 생활권의 공동 거처에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-백온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K245-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현성",
-        "birthDate": "2012-10-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-백온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임현성은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-백온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K245-P-01:K245:biological",
-        "from": "FH-K245-P-01",
-        "to": "K245",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-백온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K245-P-02:FH-K245-P-01:biological",
-        "from": "FH-K245-P-02",
-        "to": "FH-K245-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-백온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K245-P-03:FH-K245-P-02:biological",
-        "from": "FH-K245-P-03",
-        "to": "FH-K245-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-백온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K245-M-01:K245:biological",
-        "from": "FH-K245-M-01",
-        "to": "K245",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-백온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K245-M-02:FH-K245-M-01:biological",
-        "from": "FH-K245-M-02",
-        "to": "FH-K245-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-백온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K245-M-03:FH-K245-M-02:biological",
-        "from": "FH-K245-M-03",
-        "to": "FH-K245-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-백온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bc31-c218-c6d0",
+    "name": "수원 백씨",
+    "crest": "clan-crests/bc31-c218-c6d0.svg"
   },
-  "proseContacts": [
-    {
-      "recipientId": "K270",
-      "recipientName": "윤산호",
-      "basis": "백온의 난민대표 명부와 맞물리되, 이정표 열쇠는 반장이 쥔다.",
-      "sourceRef": {
-        "path": "lore/characters/Cast-State-10.json",
-        "anchor": "인물-윤산호-p5"
-      }
-    },
-    {
-      "recipientId": "K1015",
-      "recipientName": "나르기즈 유수포바",
-      "basis": "주요 관계: 안국총림 방장 백온과 협력. 뚝섬 기동 정비조와 숙소 계약",
-      "sourceRef": {
-        "path": "lore/factions/Diaspora-Corridors.json",
-        "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1"
-      }
-    }
-  ],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "정부서울청사 깊은 층의 출입 명부에서 백온의 줄은 하루에 두 번, 원부실로 내려갈 때와 올라올 때 적힌다. 행정안전부의 주민등록 원부 필사관으로, 정부서울청사 깊은 층의 원부가 닳기 전에 새 종이에 옮겨 적는 일을 맡는다. 원부와 동주민센터 사본이 다르면 원부가 이기므로, 그의 펜 끝 한 획이 한 세대의 등재와 말소를 가른다. 스물넷에 이 자리를 받은 것은 그의 글씨가 백 년 전 원부의 서체와 가장 가깝기 때문이라고 청사 사람들은 말한다. 황세린 장관 앞에서 원부를 지키겠다고 선서한 뒤로, 국가정보원이 사본을 청해 와도 장관의 도장이 찍힌 청구서가 없으면 한 장도 내주지 않는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "행정안전부 주민등록 원부 필사관",
+    "품계": "서기",
+    "생업": "명부 필사",
+    "일하는 역": "광화문역",
+    "잠자는 역": "광화문역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "정부서울청사 깊은 층의 출입 명부에서 백온의 줄은 하루에 두 번, 원부실로 내려갈 때와 올라올 때 적힌다. 행정안전부의 주민등록 원부 필사관으로, 정부서울청사 깊은 층의 원부가 닳기 전에 새 종이에 옮겨 적는 일을 맡는다. 원부와 동주민센터 사본이 다르면 원부가 이기므로, 그의 펜 끝 한 획이 한 세대의 등재와 말소를 가른다. 스물넷에 이 자리를 받은 것은 그의 글씨가 백 년 전 원부의 서체와 가장 가깝기 때문이라고 청사 사람들은 말한다. 황세린 장관 앞에서 원부를 지키겠다고 선서한 뒤로, 국가정보원이 사본을 청해 와도 장관의 도장이 찍힌 청구서가 없으면 한 장도 내주지 않는다.",
+    "관직": "직함 행정안전부 주민등록 원부 필사관. 직위 명부 필사관 · 광화문역. 품계 서기. 일하는 역 광화문역."
+  },
+  "values": {
+    "권위": -15,
+    "개방": -5,
+    "무력": -15,
+    "물질": -25,
+    "공동": 55,
+    "원칙": 60,
+    "공개": 15,
+    "자격": 55,
+    "분산": 0,
+    "변혁": -30
+  },
+  "desire": {
+    "갈망": 20,
+    "독점": -50,
+    "위험": -30,
+    "과시": -40,
+    "지속": 50,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0246",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "백온",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "백온",
+        "type": "맹세",
+        "to": "황세린",
+        "basis": "황세린 장관 앞에서 원부를 지키겠다고 선서했다."
+      },
+      {
+        "from": "백온",
+        "type": "경쟁",
+        "to": "오해린",
+        "basis": "국가정보원이 원부 사본을 청할 때마다 장관의 도장 없이는 내주지 않아 원장과 부딪친다."
+      }
+    ],
+    "incoming": [
+      {
+        "from": "황세린",
+        "type": "맹세",
+        "to": "백온",
+        "basis": "원부 필사관 백온의 선서를 받은 장관이다."
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 12,
-        "effective": 12
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
       },
-      "strategy": {
+      "martial": {
+        "base": 3,
+        "effective": 3
+      },
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "negotiation": {
-        "base": 12,
-        "effective": 12
-      },
-      "management": {
-        "base": 13,
-        "effective": 13
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 13,
-        "effective": 13
+        "base": 9,
+        "effective": 9
       },
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
       }
     },
     "skills": [
       {
-        "id": "k245-refugee-roster",
-        "name": {
-          "ko": "피난 명부 필사",
-          "en": "Refugee-roster copying"
-        },
-        "rating": 65
+        "id": "person-0246-v3-registry-script",
+        "name": "원부 서체 필사",
+        "rating": 85
+      },
+      {
+        "id": "person-0246-v3-entry-check",
+        "name": "기재 대조",
+        "rating": 70
       }
     ],
     "traits": [
       {
-        "id": "k245-trait-1",
-        "name": {
-          "ko": "빈 칸도 사람의 자리",
-          "en": "Blank fields still belong to people"
-        },
-        "description": {
-          "ko": "명부의 빈 칸을 버리지 않고 포함하려 한다.",
-          "en": "Seeks to include rather than discard blank roster entries."
-        },
-        "behavior": {
-          "ko": "명부의 빈 칸을 버리지 않고 포함하려 한다.",
-          "en": "Seeks to include rather than discard blank roster entries."
-        },
-        "stress": {
-          "ko": "집단 단수가 명부의 사람들을 거래 카드로 만드는 데 원한을 품는다.",
-          "en": "Resents collective water cuts turning rostered people into bargaining chips."
-        },
-        "relationship": {
-          "ko": "강민서와 시민권을 지지하지만 명부 편입의 법적 효과는 미확정이다.",
-          "en": "Supports citizenship with Gang Minseo, though inclusion’s legal effect is unresolved."
-        },
+        "id": "person-0246-v3-weight-of-a-stroke",
+        "name": "획 하나의 무게",
+        "description": "원부의 한 획이 한 세대의 등재와 말소를 가른다는 것을 하루도 잊지 않는다.",
+        "behavior": "도장 없는 청구에는 상대가 누구든 한 장도 내주지 않는다.",
+        "stress": "원부와 사본이 어긋난 곳을 찾았는데 그 까닭을 밝힐 서류가 없을 때.",
+        "relationship": "선서를 받은 장관에게는 깍듯하고, 원부를 넘보는 사람에게는 차갑다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "이름 없는 사람을 명부에 포함하고 명부함을 지켜 공동체의 지지를 얻었다. 집단 단수에 대한 원한과 강민서의 시민권 지지가 이어진다. 시민권 줄과 신도 명부 줄의 원문 차이 때문에 법적 지위 취득은 확정하지 않는다.",
-      "en": "He includes unnamed people in the roster and earned community support by preserving it. Resentment over collective water cuts connects him to Gang Minseo’s citizenship efforts. Conflicting references to citizenship and membership do not establish legal citizenship."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -521,184 +192,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:capital-s10",
-      "name": {
-        "ko": "안국역 직영지"
-      },
-      "holderPersonId": "K245",
-      "directLiegePersonId": null,
-      "stateId": "S10",
-      "stationRef": {
-        "stationId": "안국",
-        "stationName": "안국"
-      },
-      "adminRefs": [],
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": null
-    }
-  ],
-  "openingTitles": [
-    {
-      "id": "title:kingdom-geography:seoul:03",
-      "name": "북서 왕국",
-      "rank": "kingdom",
-      "holderPersonId": "K245",
-      "stateId": "S10",
-      "geographicTitleId": "geography:kingdom:seoul:03",
-      "basis": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 안국총림 방장. 북서 왕국 세 자치구 가운데 은평·서대문 공작령 보유 근거.",
-      "parentTitle": null
-    }
-  ],
-  "clan": {
-    "id": "bc31-c218-c6d0",
-    "name": "수원 백씨",
-    "crest": "clan-crests/bc31-c218-c6d0.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": true,
-  "values": {
-    "권위": -60,
-    "개방": 50,
-    "무력": -50,
-    "물질": -20,
-    "공동": 50,
-    "원칙": 40,
-    "공개": 40,
-    "자격": 40,
-    "분산": 50,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 20,
-    "독점": -50,
-    "위험": -30,
-    "과시": -40,
-    "지속": 50,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "명부 필사",
-    "소속": "안국총림",
-    "품계": "방장",
-    "직함": "안국총림 방장"
-  },
-  "sections": {
-    "생애": "2102-10-04 출생, 2126년 개막에 활동했다. 피난 명부의 손. 안국총림은 장경종(이하 '장경종'이라 한다)의 본산이고 수도는 안국역이다. 조계사·총무원 종로구 우정국로 55가 대정전 뒤에 위패와 사원 대장을 지켰다. 백온이 방장이 된 것은 산중총회가 그를 추대한 뒤였다. 추대의 근거는 북한산보국문귀환회의 명부함을 끊기지 않게 지킨 일이었다. 문중은 스승 계보별 파벌이고, 문중들의 표 대결이 산중총회의 정치다. 안국총림은 속국이 없고 독자 병력이 없다. 북한산 피난은 공동체가 비어 가는 공백이다. 한재목의 집단 단수는 명부의 줄을 거래 카드로 만든다. 강민서가 시민권을 규격과 같이 올리려는 까닭과 만난다.",
-    "관직": "품계 방장. 직함은 안국총림 방장. 생업 별명은 명부 필사.",
-    "일화": "행렬이 보국문에 닿기 전, 백온은 명부함을 열어 빈 칸을 신도 명부 줄로 옮겼다. 그 줄이 강민서의 봉인 상자와 같은 철의 일이다.",
-    "가문": "북한산보국문귀환회(HP05). 관리인. 명부함이 이 가문의 키다.",
-    "관계": "강민서와 시민권. 한재목의 집단 단수에 원한.\n\n- 생업: 명부 필사\n- 소속: 안국총림\n- 품계: 방장\n- 직함: 안국총림 방장\n- 백온의 명부 필사 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n명부 필사 백온을 둘러싼 주지와 배급·회랑 당직이다. 장경종은 경전과 장부를 함께 필사하고 보존한다."
-  },
-  "biography": "**생애.** 2102-10-04 출생, 2126년 개막에 활동했다. 피난 명부의 손. 안국총림은 장경종(이하 '장경종'이라 한다)의 본산이고 수도는 안국역이다. 조계사·총무원 종로구 우정국로 55가 대정전 뒤에 위패와 사원 대장을 지켰다. 백온이 방장이 된 것은 산중총회가 그를 추대한 뒤였다. 추대의 근거는 북한산보국문귀환회의 명부함을 끊기지 않게 지킨 일이었다. 문중은 스승 계보별 파벌이고, 문중들의 표 대결이 산중총회의 정치다. 안국총림은 속국이 없고 독자 병력이 없다. 북한산 피난은 공동체가 비어 가는 공백이다. 한재목의 집단 단수는 명부의 줄을 거래 카드로 만든다. 강민서가 시민권을 규격과 같이 올리려는 까닭과 만난다.\n**관직.** 품계 방장. 직함은 안국총림 방장. 생업 별명은 명부 필사.\n**일화.** 행렬이 보국문에 닿기 전, 백온은 명부함을 열어 빈 칸을 신도 명부 줄로 옮겼다. 그 줄이 강민서의 봉인 상자와 같은 철의 일이다.\n**가문.** 북한산보국문귀환회(HP05). 관리인. 명부함이 이 가문의 키다.\n**관계.** 강민서와 시민권. 한재목의 집단 단수에 원한.\n\n- 생업: 명부 필사\n- 소속: 안국총림\n- 품계: 방장\n- 직함: 안국총림 방장\n- 백온의 명부 필사 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n명부 필사 백온을 둘러싼 주지와 배급·회랑 당직이다. 장경종은 경전과 장부를 함께 필사하고 보존한다.",
-  "sources": [
-    "Cast-State-10",
-    "Core-Characters"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": [
-      {
-        "from": "임바다",
-        "type": "계약",
-        "to": "백온",
-        "basis": "이동 급수권 동맹"
-      },
-      {
-        "from": "신보람",
-        "type": "맹세",
-        "to": "백온",
-        "basis": "가족 회의에서 방장 맹세를 대변"
-      },
-      {
-        "from": "황세린",
-        "type": "지휘",
-        "to": "백온",
-        "basis": "공개 배급표를 집행"
-      },
-      {
-        "from": "강태산",
-        "type": "지휘",
-        "to": "백온",
-        "basis": "회랑 정찰을 방장 지휘로 지킴"
-      },
-      {
-        "from": "윤초아",
-        "type": "지휘",
-        "to": "백온",
-        "basis": "가족과 피난 명부를 한 원장으로 합침"
-      },
-      {
-        "from": "김나율",
-        "type": "계약",
-        "to": "백온",
-        "basis": "난민 시민권을 조합 표로 지지"
-      },
-      {
-        "from": "한지온",
-        "type": "계약",
-        "to": "백온",
-        "basis": "남하 행렬을 원수 수용으로 맞음"
-      },
-      {
-        "from": "장석윤",
-        "type": "원한",
-        "to": "백온",
-        "basis": "가족 명부를 강제복무와 묶어 산 원한"
-      },
-      {
-        "from": "최도윤",
-        "type": "계약",
-        "to": "백온",
-        "basis": "독립 시민권 요구에 동맹"
-      },
-      {
-        "from": "봉두",
-        "type": "맹세",
-        "to": "백온",
-        "basis": "백온의 피난처 맹세를 고지 칠판에 적는다"
-      },
-      {
-        "from": "고모래",
-        "type": "계약",
-        "to": "백온",
-        "basis": "백온의 가족 투표를 지지하며"
-      },
-      {
-        "from": "류겨레",
-        "type": "계약",
-        "to": "백온",
-        "basis": "백온의 남하를 금천 쪽에서 맞으며"
-      },
-      {
-        "from": "란민준",
-        "type": "계약",
-        "to": "백온",
-        "basis": "백온의 강제복무 반대를 가족 회의에서 대변하고"
-      },
-      {
-        "from": "단유진",
-        "type": "계약",
-        "to": "백온",
-        "basis": "백온의 회의 발언을 수행으로 뒷받침하고"
-      },
-      {
-        "from": "범온결",
-        "type": "맹세",
-        "to": "백온",
-        "basis": "백온의 남하 가족 명부를 대조한다"
-      },
-      {
-        "from": "탁필호",
-        "type": "계약",
-        "to": "백온",
-        "basis": "백온의 남하 가족에게 임시표를 건넨다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

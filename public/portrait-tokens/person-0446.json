@@ -3,26 +3,27 @@
   "personId": "person-0446",
   "characterId": "K446",
   "name": "앙투안 르페브르",
-  "stateId": "S07",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "중계 당직"
+    "role": "장터 상인 · 동대문역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "medium-length hair swept back",
-    "upper": "oxblood patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer",
-    "outfit": "oxblood patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer",
+    "upper": "솜을 넣은 누비 저고리",
+    "outfit": "솜을 넣은 누비 저고리",
     "palette": [
-      "oxblood",
-      "navy"
+      "brown",
+      "grey",
+      "dark green"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "navy wool trousers bloused over boots",
-    "footwear": "steel-toe leather work boots",
-    "accessories": "rolled leather tool roll and work gloves tucked into the belt"
+    "lower": "wadded quilted trousers",
+    "footwear": "felt boots",
+    "accessories": "trader's entry tag and a small hand scale"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +175,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "flat cloth cap",
+        "value": "cap with ear flaps",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "oxblood patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer",
+        "value": "솜을 넣은 누비 저고리",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "navy wool trousers bloused over boots",
+        "value": "wadded quilted trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "steel-toe leather work boots",
+        "value": "felt boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +205,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "open work collar",
+        "value": "wrapped wool scarf",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "rolled leather tool roll and work gloves tucked into the belt",
+        "value": "trader's entry tag and a small hand scale",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "rolled bundle and gloves",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "oiled brown leather",
+        "value": "iron grey and brown",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, steel",
+        "value": "iron, cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "tucked into the belt",
+        "value": "tag on a cord; scale hanging from the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat tag; hook-and-pan scale",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +260,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 앙투안 르페브르, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round green eyes; low and heavy eyebrows; nose: slightly aquiline; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; light brown hair; medium length. build: lean and wiry; skin: light beige. headwear: flat cloth cap; upper garment: oxblood patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer; neckline: open work collar. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: oxblood, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 앙투안 르페브르, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round green eyes; low and heavy eyebrows; nose: slightly aquiline; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; light brown hair; medium length. build: lean and wiry; skin: light beige. headwear: cap with ear flaps; upper garment: 솜을 넣은 누비 저고리; neckline: wrapped wool scarf. accessories: trader's entry tag and a small hand scale; worn as tag on a cord; scale hanging from the belt. color palette: brown, grey, dark green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 앙투안 르페브르, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round green eyes; low and heavy eyebrows; nose: slightly aquiline; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; light brown hair; medium length. build: lean and wiry; skin: light beige; average adult male height. headwear: flat cloth cap; upper garment: oxblood patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: navy wool trousers bloused over boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: oxblood, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 앙투안 르페브르, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round green eyes; low and heavy eyebrows; nose: slightly aquiline; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; light brown hair; medium length. build: lean and wiry; skin: light beige; average adult male height. headwear: cap with ear flaps; upper garment: 솜을 넣은 누비 저고리; neckline: wrapped wool scarf; lower garment: wadded quilted trousers; footwear: felt boots. accessories: trader's entry tag and a small hand scale; worn as tag on a cord; scale hanging from the belt. color palette: brown, grey, dark green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 앙투안 르페브르, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round green eyes; low and heavy eyebrows; nose: slightly aquiline; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; light brown hair; medium length. build: lean and wiry; skin: light beige; average adult male height. headwear: flat cloth cap; upper garment: oxblood patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: navy wool trousers bloused over boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: oxblood, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 앙투안 르페브르, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round green eyes; low and heavy eyebrows; nose: slightly aquiline; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; light brown hair; medium length. build: lean and wiry; skin: light beige; average adult male height. headwear: cap with ear flaps; upper garment: 솜을 넣은 누비 저고리; neckline: wrapped wool scarf; lower garment: wadded quilted trousers; footwear: felt boots. accessories: trader's entry tag and a small hand scale; worn as tag on a cord; scale hanging from the belt. color palette: brown, grey, dark green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 앙투안 르페브르, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round green eyes; low and heavy eyebrows; nose: slightly aquiline; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; light brown hair; medium length. build: lean and wiry; skin: light beige; average adult male height. headwear: flat cloth cap; upper garment: oxblood patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: navy wool trousers bloused over boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: oxblood, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 앙투안 르페브르, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round green eyes; low and heavy eyebrows; nose: slightly aquiline; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; light brown hair; medium length. build: lean and wiry; skin: light beige; average adult male height. headwear: cap with ear flaps; upper garment: 솜을 넣은 누비 저고리; neckline: wrapped wool scarf; lower garment: wadded quilted trousers; footwear: felt boots. accessories: trader's entry tag and a small hand scale; worn as tag on a cord; scale hanging from the belt. color palette: brown, grey, dark green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 앙투안 르페브르, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round green eyes; low and heavy eyebrows; nose: slightly aquiline; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; light brown hair; medium length. build: lean and wiry; skin: light beige; average adult male height. headwear: flat cloth cap; upper garment: oxblood patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: navy wool trousers bloused over boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: oxblood, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 앙투안 르페브르, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round green eyes; low and heavy eyebrows; nose: slightly aquiline; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. medium-length hair swept back; light brown hair; medium length. build: lean and wiry; skin: light beige; average adult male height. headwear: cap with ear flaps; upper garment: 솜을 넣은 누비 저고리; neckline: wrapped wool scarf; lower garment: wadded quilted trousers; footwear: felt boots. accessories: trader's entry tag and a small hand scale; worn as tag on a cord; scale hanging from the belt. color palette: brown, grey, dark green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

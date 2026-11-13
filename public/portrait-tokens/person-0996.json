@@ -3,26 +3,27 @@
   "personId": "person-0996",
   "characterId": "K996",
   "name": "남빛원",
-  "stateId": "S13",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "약재 물류상"
+    "role": "펌프 정비공 · 제기동역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "hair pinned in a low chignon bun",
-    "upper": "cream buttoned wool vest over a long-sleeved collared shirt",
-    "outfit": "cream buttoned wool vest over a long-sleeved collared shirt",
+    "upper": "왼쪽 가슴에 직종 표를 꿰맨 회색 작업 누빔옷, 앞섶에 기름 얼룩",
+    "outfit": "왼쪽 가슴에 직종 표를 꿰맨 회색 작업 누빔옷, 앞섶에 기름 얼룩",
     "palette": [
-      "cream",
-      "burgundy"
+      "ash grey",
+      "copper",
+      "navy"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "burgundy straight wool trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "grey quilted work trousers tucked into felt boots",
+    "footwear": "felt-lined synthetic rubber boots",
+    "accessories": "small oil can and a spool of copper wire on a nylon webbing belt"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -173,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "quilted ear-flap cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "cream buttoned wool vest over a long-sleeved collared shirt",
+        "value": "왼쪽 가슴에 직종 표를 꿰맨 회색 작업 누빔옷, 앞섶에 기름 얼룩",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "burgundy straight wool trousers",
+        "value": "grey quilted work trousers tucked into felt boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt-lined synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "high quilted collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "small oil can and a spool of copper wire on a nylon webbing belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "dull tin and copper",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "tin, copper, nylon webbing",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "hung at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "squat can and small spool",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 남빛원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: average; skin: tan warm beige. upper garment: cream buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 남빛원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: average; skin: tan warm beige. headwear: quilted ear-flap cap; upper garment: 왼쪽 가슴에 직종 표를 꿰맨 회색 작업 누빔옷, 앞섶에 기름 얼룩; neckline: high quilted collar. accessories: small oil can and a spool of copper wire on a nylon webbing belt; worn as hung at the belt. color palette: ash grey, copper, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 남빛원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: average; skin: tan warm beige; average adult female height. upper garment: cream buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: burgundy straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 남빛원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: average; skin: tan warm beige; average adult female height. headwear: quilted ear-flap cap; upper garment: 왼쪽 가슴에 직종 표를 꿰맨 회색 작업 누빔옷, 앞섶에 기름 얼룩; neckline: high quilted collar; lower garment: grey quilted work trousers tucked into felt boots; footwear: felt-lined synthetic rubber boots. accessories: small oil can and a spool of copper wire on a nylon webbing belt; worn as hung at the belt. color palette: ash grey, copper, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 남빛원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: average; skin: tan warm beige; average adult female height. upper garment: cream buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: burgundy straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 남빛원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: average; skin: tan warm beige; average adult female height. headwear: quilted ear-flap cap; upper garment: 왼쪽 가슴에 직종 표를 꿰맨 회색 작업 누빔옷, 앞섶에 기름 얼룩; neckline: high quilted collar; lower garment: grey quilted work trousers tucked into felt boots; footwear: felt-lined synthetic rubber boots. accessories: small oil can and a spool of copper wire on a nylon webbing belt; worn as hung at the belt. color palette: ash grey, copper, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 남빛원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: average; skin: tan warm beige; average adult female height. upper garment: cream buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: burgundy straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 남빛원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: average; skin: tan warm beige; average adult female height. headwear: quilted ear-flap cap; upper garment: 왼쪽 가슴에 직종 표를 꿰맨 회색 작업 누빔옷, 앞섶에 기름 얼룩; neckline: high quilted collar; lower garment: grey quilted work trousers tucked into felt boots; footwear: felt-lined synthetic rubber boots. accessories: small oil can and a spool of copper wire on a nylon webbing belt; worn as hung at the belt. color palette: ash grey, copper, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 남빛원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: average; skin: tan warm beige; average adult female height. upper garment: cream buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: burgundy straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 남빛원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: average; skin: tan warm beige; average adult female height. headwear: quilted ear-flap cap; upper garment: 왼쪽 가슴에 직종 표를 꿰맨 회색 작업 누빔옷, 앞섶에 기름 얼룩; neckline: high quilted collar; lower garment: grey quilted work trousers tucked into felt boots; footwear: felt-lined synthetic rubber boots. accessories: small oil can and a spool of copper wire on a nylon webbing belt; worn as hung at the belt. color palette: ash grey, copper, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

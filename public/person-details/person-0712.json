@@ -1,493 +1,105 @@
 {
   "id": "person-0712",
   "name": "한북우",
-  "title": "배급구역 서기",
-  "position": "배급구역 서기",
+  "title": "짐꾼 무리의 우두머리",
+  "position": "짐꾼 무리의 우두머리 · 영등포역",
   "characterId": "K712",
-  "rank": "주사",
+  "rank": "손",
   "commonTier": "T5",
-  "occupation": "급수 배분 당직",
+  "occupation": "짐꾼",
   "gender": "여성",
   "stage": "S4",
-  "state": "S01",
-  "stateName": "수문국",
-  "sourceRoute": "/world/Cast-State-01#인물-한북우",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0712",
   "birthDate": "2093-04-21",
   "birthday": "04-21",
   "age": 33,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-01.json#/content/500",
-    "lore/characters/Cast-State-01.json#/content/502"
-  ],
-  "familyTree": {
-    "personId": "K712",
-    "nodes": [
-      {
-        "id": "K712",
-        "personId": "K712",
-        "kind": "person",
-        "name": "한북우",
-        "birthDate": "2093-04-21",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K712"
-          },
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-한북우-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-한북우-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0712"
-      },
-      {
-        "id": "FH-K712-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한재문",
-        "lineage": {
-          "surname": "한",
-          "bongwan": "청주",
-          "clan": "d55c-ccad-c8fc-agreed-c6b0-second"
-        },
-        "birthDate": "2063-04-21",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-한북우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2101,
-            "summary": "한재문은 영등포 정수 당직에서 급수 배분 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-한북우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K712-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한재섭",
-        "lineage": {
-          "surname": "한",
-          "bongwan": "청주",
-          "clan": "d55c-ccad-c8fc-agreed-c6b0-second"
-        },
-        "birthDate": "2033-04-21",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-한북우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2071,
-            "summary": "한재섭은 영등포 정수 당직에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-한북우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K712-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "한재성",
-        "lineage": {
-          "surname": "한",
-          "bongwan": "청주",
-          "clan": "d55c-ccad-c8fc-agreed-c6b0-second"
-        },
-        "birthDate": "2003-04-21",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-한북우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한재성은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-한북우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K712-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤재리",
-        "birthDate": "2063-04-21",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-한북우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2101,
-            "summary": "윤재리는 영등포 정수 당직에서 급수 배분 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-한북우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K712-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한재욱",
-        "birthDate": "2033-04-21",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-한북우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2071,
-            "summary": "한재욱은 영등포 정수 당직에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-한북우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K712-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "강재문",
-        "birthDate": "2003-04-21",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-한북우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강재문은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-한북우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K712-P-01:K712:biological",
-        "from": "FH-K712-P-01",
-        "to": "K712",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-한북우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K712-P-02:FH-K712-P-01:biological",
-        "from": "FH-K712-P-02",
-        "to": "FH-K712-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-한북우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K712-P-03:FH-K712-P-02:biological",
-        "from": "FH-K712-P-03",
-        "to": "FH-K712-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-한북우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K712-M-01:K712:biological",
-        "from": "FH-K712-M-01",
-        "to": "K712",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-한북우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K712-M-02:FH-K712-M-01:biological",
-        "from": "FH-K712-M-02",
-        "to": "FH-K712-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-한북우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K712-M-03:FH-K712-M-02:biological",
-        "from": "FH-K712-M-03",
-        "to": "FH-K712-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-한북우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d55c-ccad-c8fc",
+    "name": "청주 한씨",
+    "crest": "clan-crests/d55c-ccad-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "한북우는 서른세 살로, 영등포역에서 짐꾼 여덟을 부리는 무리의 우두머리다. 그의 무리는 장터 승강장이 아니라 1호선 승강장을 맡아, 노량진 쪽에서 들어오는 물고기 짐과 금천에서 올라오는 굴착 틀 부품을 장터까지 올린다. 장주 한재목과 같은 청주 한씨라는 것을 아는 수레꾼들이 그에게 짐을 먼저 넘기려 하지만, 그는 차례판에 적힌 순서대로만 짐을 받는다. 무리 사람이 다치면 그 사람 몫의 품삯을 나머지가 제 몫에서 조금씩 떼어 채우는 것이 그의 무리의 셈이다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "짐꾼 무리의 우두머리",
+    "품계": "손",
+    "생업": "짐꾼",
+    "일하는 역": "영등포역",
+    "잠자는 역": "영등포역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "한북우는 서른세 살로, 영등포역에서 짐꾼 여덟을 부리는 무리의 우두머리다. 그의 무리는 장터 승강장이 아니라 1호선 승강장을 맡아, 노량진 쪽에서 들어오는 물고기 짐과 금천에서 올라오는 굴착 틀 부품을 장터까지 올린다. 장주 한재목과 같은 청주 한씨라는 것을 아는 수레꾼들이 그에게 짐을 먼저 넘기려 하지만, 그는 차례판에 적힌 순서대로만 짐을 받는다. 무리 사람이 다치면 그 사람 몫의 품삯을 나머지가 제 몫에서 조금씩 떼어 채우는 것이 그의 무리의 셈이다.",
+    "관직": "직함 짐꾼 무리의 우두머리. 직위 짐꾼 무리의 우두머리 · 영등포역. 품계 손. 일하는 역 영등포역."
+  },
+  "values": {
+    "권위": 10,
+    "개방": 0,
+    "무력": -5,
+    "물질": 70,
+    "공동": -15,
+    "원칙": 0,
+    "공개": 0,
+    "자격": 25,
+    "분산": 5,
+    "변혁": -5
+  },
+  "desire": {
+    "갈망": 50,
+    "독점": 10,
+    "위험": 5,
+    "과시": 10,
+    "지속": 35,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0712",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 6,
         "effective": 6
       },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
-      },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 8,
-        "effective": 8
+      "intrigue": {
+        "base": 4,
+        "effective": 4
       },
       "learning": {
-        "base": 7,
-        "effective": 7
+        "base": 5,
+        "effective": 5
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
         "base": 8,
         "effective": 8
       }
     },
-    "skills": [
-      {
-        "id": "k712-release-discussion",
-        "name": {
-          "ko": "방류량 협의",
-          "en": "Release discussion"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "k712-action-priority",
-        "name": {
-          "ko": "가뭄의 논의",
-          "en": "Discussion during drought"
-        },
-        "description": {
-          "ko": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다.",
-          "en": "In the 2125 drought he shared the upstream reservoir release volume with the ration representative through the night. By this deed the signature of the ration district clerk post rose into the ledger."
-        },
-        "behavior": {
-          "ko": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다.",
-          "en": "In the 2125 drought he shared the upstream reservoir release volume with the ration representative through the night. By this deed the signature of the ration district clerk post rose into the ledger."
-        },
-        "stress": {
-          "ko": "배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
-          "en": "That the ration district clerk duty post would stand empty and the Compact's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.",
-          "en": "Serves as a ration clerk under I Seodam and manages the water allocation shift."
-        },
-        "effects": []
-      },
-      {
-        "id": "k712-bounded-handover",
-        "name": {
-          "ko": "기록으로 잇는 당직",
-          "en": "Duty linked by records"
-        },
-        "description": {
-          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
-          "en": "Passes keys and records to the next shift without enlarging authority."
-        },
-        "behavior": {
-          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
-          "en": "Passes keys and records to the next shift without enlarging authority."
-        },
-        "stress": {
-          "ko": "배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
-          "en": "That the ration district clerk duty post would stand empty and the Compact's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.",
-          "en": "Serves as a ration clerk under I Seodam and manages the water allocation shift."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다. 짧은 행위와 인수인계가 근거여서 다른 분야의 숙련이나 보정은 발급하지 않았다.",
-      "en": "In the 2125 drought he shared the upstream reservoir release volume with the ration representative through the night. By this deed the signature of the ration district clerk post rose into the ledger. The brief action and handover support only limited strengths; no unrelated proficiency or numeric trait bonus is issued."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -525,73 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d55c-ccad-c8fc",
-    "name": "청주 한씨",
-    "crest": "clan-crests/d55c-ccad-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 45,
-    "개방": -15,
-    "무력": 5,
-    "물질": 55,
-    "공동": 10,
-    "원칙": 10,
-    "공개": 0,
-    "자격": 5,
-    "분산": -50,
-    "변혁": -15
-  },
-  "desire": {
-    "갈망": 50,
-    "독점": 10,
-    "위험": 5,
-    "과시": 10,
-    "지속": 35,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "수문국",
-    "생업": "급수 배분 당직",
-    "품계": "주사",
-    "직함": "배급구역 서기",
-    "업무 위치": "신정2동. 한북우는 2125년 가뭄에 서울의 저수조 수위와 배급 대표의 방류 요청을 밤새 대조한 뒤 신정2동 이서담의 급수 당직에 넘긴다.",
-    "가치관": "권위 45 | 개방 −15 | 무력 5 | 물질 55 | 공동 10 | 원칙 10 | 공개 0 | 자격 5 | 분산 −50 | 변혁 −15",
-    "욕망": "갈망 50 | 독점 10 | 위험 5 | 과시 10 | 지속 35 | 지향 이성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 신정2동. 한북우는 2125년 가뭄에 서울의 저수조 수위와 배급 대표의 방류 요청을 밤새 대조한 뒤 신정2동 이서담의 급수 당직에 넘긴다.",
-    "관직": "품계 주사. 직함은 배급구역 서기이다. 한북우는 2125년 가뭄에 서울의 저수조 수위와 배급 대표의 방류 요청을 밤새 대조한 뒤 신정2동 이서담의 급수 당직에 넘긴다.",
-    "일화": "2125년 가뭄에 한북우는 서울 배급 저수조 수위와 대표의 방류 요청을 맞대어 다음 당직이 읽을 기록을 남겼다.",
-    "관계": "이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.",
-    "야망": "배급구역 서기 자리에서 수문국의 장부를 끊기지 않게 잇는다.",
-    "공포": "배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 수문국\n- 생업: 급수 배분 당직\n- 품계: 주사\n- 직함: 배급구역 서기\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 신정2동. 한북우는 2125년 가뭄에 서울의 저수조 수위와 배급 대표의 방류 요청을 밤새 대조한 뒤 신정2동 이서담의 급수 당직에 넘긴다.\n\n**관직.** 품계 주사. 직함은 배급구역 서기이다. 한북우는 2125년 가뭄에 서울의 저수조 수위와 배급 대표의 방류 요청을 밤새 대조한 뒤 신정2동 이서담의 급수 당직에 넘긴다.\n\n**일화.** 2125년 가뭄에 한북우는 서울 배급 저수조 수위와 대표의 방류 요청을 맞대어 다음 당직이 읽을 기록을 남겼다.\n\n**관계.** 이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.\n\n**야망.** 배급구역 서기 자리에서 수문국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 45 | 개방 −15 | 무력 5 | 물질 55 | 공동 10 | 원칙 10 | 공개 0 | 자격 5 | 분산 −50 | 변혁 −15\n- 욕망: 갈망 50 | 독점 10 | 위험 5 | 과시 10 | 지속 35 | 지향 이성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-01"
-  ],
-  "directLiege": {
-    "personId": "K002",
-    "name": "이서담",
-    "courtId": "court:K002",
-    "effectiveYear": 2126
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "한북우",
-        "type": "지휘",
-        "to": "이서담",
-        "basis": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

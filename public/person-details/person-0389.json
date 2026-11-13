@@ -1,390 +1,136 @@
 {
   "id": "person-0389",
   "name": "동예솔",
-  "title": "청과동 시장 거점장, 남시윤의 실무 담당자",
-  "position": "교구 선거 봉인 수사",
+  "title": "종로1·2·3·4가동 동장",
+  "position": "종로1·2·3·4가동 동장 · 정부",
   "characterId": "K388",
-  "rank": "수사",
+  "rank": "동장",
   "commonTier": "T3",
-  "occupation": "선거함 봉인·선거 보좌",
+  "occupation": "동 행정",
   "gender": "남성",
   "stage": "S2",
-  "state": "S15",
-  "stateName": "명동대교구",
-  "sourceRoute": "/world/Cast-State-15#인물-동예솔",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0389",
   "birthDate": "2086-03-12",
   "birthday": "03-12",
   "age": 40,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-15.json#/content/38",
-    "lore/characters/Cast-State-15.json#/content/39",
-    "lore/characters/Cast-State-15.json#/content/40",
-    "lore/characters/Cast-State-15.json#/content/43",
-    "lore/characters/Cast-State-15.json#/content/44",
-    "lore/characters/Cast-State-15.json#/content/45"
-  ],
-  "familyTree": {
-    "personId": "K388",
-    "nodes": [
-      {
-        "id": "K388",
-        "personId": "K388",
-        "kind": "person",
-        "name": "동예솔",
-        "birthDate": "2086-03-12",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K388"
-          },
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-동예솔-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 교구 선거 봉인 수사 일을 맡았다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-동예솔-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0389"
-      },
-      {
-        "id": "FH-K388-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "동승수",
-        "lineage": {
-          "surname": "동",
-          "bongwan": "광천",
-          "clan": "b3d9-ad11-cc9c-agreed-c194-second"
-        },
-        "birthDate": "2056-03-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-동예솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2094,
-            "summary": "동승수는 노량진 선창에서 선거함 봉인·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-동예솔-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K388-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "동승은",
-        "lineage": {
-          "surname": "동",
-          "bongwan": "광천",
-          "clan": "b3d9-ad11-cc9c-agreed-c194-second"
-        },
-        "birthDate": "2026-03-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-동예솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "동승은은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-동예솔-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K388-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤준범",
-        "birthDate": "2056-03-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-동예솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2094,
-            "summary": "윤준범은 노량진 선창에서 선거함 봉인·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-동예솔-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K388-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한준아",
-        "birthDate": "2026-03-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-동예솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한준아는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-동예솔-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K388-P-01:K388:biological",
-        "from": "FH-K388-P-01",
-        "to": "K388",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-동예솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K388-P-02:FH-K388-P-01:biological",
-        "from": "FH-K388-P-02",
-        "to": "FH-K388-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-동예솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K388-M-01:K388:biological",
-        "from": "FH-K388-M-01",
-        "to": "K388",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-동예솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K388-M-02:FH-K388-M-01:biological",
-        "from": "FH-K388-M-02",
-        "to": "FH-K388-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-동예솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b3d9-ad11-cc9c",
+    "name": "광천 동씨",
+    "crest": "clan-crests/b3d9-ad11-cc9c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "종로1·2·3·4가동 동장 동예솔은 윤초아 의원이 앉힌 사람이다. 안국·종각·종로3가 세 역의 기재민이 종로3가역 동주민센터 한 곳의 창구에 줄을 서므로, 마흔 살의 그는 오후 다섯 시에 창구를 닫은 뒤에야 전입신고 서류에 도장을 찍는다. 해가 바뀌는 밤 종각역 대합실에서 대통령이 종을 칠 때 그 자리에 설 세대의 명단을 짜는 것도 그의 일이다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "종로1·2·3·4가동 동장",
+    "품계": "동장",
+    "생업": "동 행정",
+    "일하는 역": "종로3가역",
+    "잠자는 역": "종로3가역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "종로1·2·3·4가동 동장 동예솔은 윤초아 의원이 앉힌 사람이다. 안국·종각·종로3가 세 역의 기재민이 종로3가역 동주민센터 한 곳의 창구에 줄을 서므로, 마흔 살의 그는 오후 다섯 시에 창구를 닫은 뒤에야 전입신고 서류에 도장을 찍는다. 해가 바뀌는 밤 종각역 대합실에서 대통령이 종을 칠 때 그 자리에 설 세대의 명단을 짜는 것도 그의 일이다.",
+    "관직": "직함 종로1·2·3·4가동 동장. 직위 종로1·2·3·4가동 동장 · 정부. 품계 동장. 일하는 역 종로3가역."
+  },
+  "values": {
+    "권위": 60,
+    "개방": -25,
+    "무력": 25,
+    "물질": 45,
+    "공동": -5,
+    "원칙": -15,
+    "공개": -35,
+    "자격": 15,
+    "분산": -55,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": -5,
+    "독점": 20,
+    "위험": 20,
+    "과시": 25,
+    "지속": 0,
+    "지향": "양성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0389",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "동예솔",
+        "type": "지휘",
+        "to": "윤초아",
+        "basis": "종로구 국회의원 윤초아의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "천솔빛",
+        "type": "지휘",
+        "to": "동예솔",
+        "basis": "종로1·2·3·4가동 동장 동예솔의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K249",
+    "name": "윤초아",
+    "courtId": "court:K249",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K388",
+    "members": [
+      {
+        "personId": "K387",
+        "name": "천솔빛"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "management": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 8,
-        "effective": 8
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
         "base": 6,
         "effective": 6
-      }
-    },
-    "skills": [
-      {
-        "id": "seal-management",
-        "name": {
-          "ko": "봉인 관리",
-          "en": "Seal management"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "표결 집행 중시",
-          "en": "Enforces collective votes"
-        },
-        "description": {
-          "ko": "봉쇄 표결 뒤 청과 저울을 사흘 잠갔다. 품목을 맞추고 교섭 조항을 찾지만 봉쇄가 구휼에 미친 결과는 기록되지 않았다.",
-          "en": "Locks the produce scales for three days after the blockade vote. Coordinates goods and seeks bargaining clauses; consequences for relief remain undocumented."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 표결 집행 중시을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "흉작 소문 앞에서 거래를 잠그는 쪽으로 기울 수 있다.",
-          "en": "May lean toward suspending trade amid harvest rumors."
-        },
-        "relationship": {
-          "ko": "남시윤의 표결을 집행하며 천나솔과 저울을 맞춘다.",
-          "en": "Enforces Nam Siyun’s vote and coordinates scales with Cheon Nasol."
-        },
-        "effects": []
       },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "사제단 소집 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "사제단 소집 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "남시윤의 표결을 집행하며 천나솔과 저울을 맞춘다.",
-          "en": "Enforces Nam Siyun’s vote and coordinates scales with Cheon Nasol."
-        },
-        "effects": []
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "봉쇄 표결 뒤 청과 저울을 사흘 잠갔다. 품목을 맞추고 교섭 조항을 찾지만 봉쇄가 구휼에 미친 결과는 기록되지 않았다.",
-      "en": "Locks the produce scales for three days after the blockade vote. Coordinates goods and seeks bargaining clauses; consequences for relief remain undocumented."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -424,248 +170,50 @@
   },
   "confirmedHoldings": [
     {
-      "id": "holding:opening-duchy-gu-11710-S15",
+      "id": "holding:v3:dong:1111061500",
       "name": {
-        "ko": "송파구 공작령 직영지"
+        "ko": "종로1·2·3·4가동"
       },
       "holderPersonId": "K388",
-      "directLiegePersonId": "K423",
-      "stateId": "S15",
+      "directLiegePersonId": "K249",
+      "stateId": "government",
       "adminRefs": [
         {
-          "id": "region:1171051000",
-          "name": "풍납1동"
-        },
-        {
-          "id": "region:1171052000",
-          "name": "풍납2동"
-        },
-        {
-          "id": "region:1171053100",
-          "name": "거여1동"
-        },
-        {
-          "id": "region:1171053200",
-          "name": "거여2동"
-        },
-        {
-          "id": "region:1171054000",
-          "name": "마천1동"
-        },
-        {
-          "id": "region:1171055000",
-          "name": "마천2동"
-        },
-        {
-          "id": "region:1171056100",
-          "name": "방이1동"
-        },
-        {
-          "id": "region:1171056200",
-          "name": "방이2동"
-        },
-        {
-          "id": "region:1171056600",
-          "name": "오륜동"
-        },
-        {
-          "id": "region:1171057000",
-          "name": "오금동"
-        },
-        {
-          "id": "region:1171058000",
-          "name": "송파1동"
-        },
-        {
-          "id": "region:1171059000",
-          "name": "송파2동"
-        },
-        {
-          "id": "region:1171060000",
-          "name": "석촌동"
-        },
-        {
-          "id": "region:1171061000",
-          "name": "삼전동"
-        },
-        {
-          "id": "region:1171062000",
-          "name": "가락본동"
-        },
-        {
-          "id": "region:1171063100",
-          "name": "가락1동"
-        },
-        {
-          "id": "region:1171063200",
-          "name": "가락2동"
-        },
-        {
-          "id": "region:1171064100",
-          "name": "문정1동"
-        },
-        {
-          "id": "region:1171064200",
-          "name": "문정2동"
-        },
-        {
-          "id": "region:1171064600",
-          "name": "장지동"
-        },
-        {
-          "id": "region:1171064700",
-          "name": "위례동"
-        },
-        {
-          "id": "region:1171065000",
-          "name": "잠실본동"
-        },
-        {
-          "id": "region:1171067000",
-          "name": "잠실2동"
-        },
-        {
-          "id": "region:1171068000",
-          "name": "잠실3동"
-        },
-        {
-          "id": "region:1171069000",
-          "name": "잠실4동"
-        },
-        {
-          "id": "region:1171071000",
-          "name": "잠실6동"
-        },
-        {
-          "id": "region:1171072000",
-          "name": "잠실7동"
+          "id": "region:1111061500",
+          "name": "종로1·2·3·4가동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11710-S15",
+      "territorialScale": "dong",
+      "titleId": null,
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
+      "formalTitleRank": null
     }
   ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "subordinateHoldings": [
     {
-      "id": "title:duchy-gu-11710-S15",
-      "name": "송파구 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K388",
-      "basis": "개막 행정 규모 그룹 gu:11710(duchy) 배분 · 결정적 후보 선정",
-      "stateId": "S15",
-      "parentTitleId": "title:kingdom-s04",
-      "jurisdictionRefs": [
-        "region:1171051000",
-        "region:1171052000",
-        "region:1171053100",
-        "region:1171053200",
-        "region:1171054000",
-        "region:1171055000",
-        "region:1171056100",
-        "region:1171056200",
-        "region:1171056600",
-        "region:1171057000",
-        "region:1171058000",
-        "region:1171059000",
-        "region:1171060000",
-        "region:1171061000",
-        "region:1171062000",
-        "region:1171063100",
-        "region:1171063200",
-        "region:1171064100",
-        "region:1171064200",
-        "region:1171064600",
-        "region:1171064700",
-        "region:1171065000",
-        "region:1171067000",
-        "region:1171068000",
-        "region:1171069000",
-        "region:1171071000",
-        "region:1171072000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s04",
-        "name": "종교 연합 왕국",
-        "holderPersonId": "K423"
-      }
-    }
-  ],
-  "clan": {
-    "id": "b3d9-ad11-cc9c",
-    "name": "광천 동씨",
-    "crest": "clan-crests/b3d9-ad11-cc9c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": 30,
-    "무력": -10,
-    "물질": 50,
-    "공동": -10,
-    "원칙": -35,
-    "공개": -10,
-    "자격": 0,
-    "분산": -5,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": -5,
-    "독점": 20,
-    "위험": 20,
-    "과시": 25,
-    "지속": 0,
-    "지향": "양성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "선거함 봉인·선거 보좌",
-    "소속": "명동대교구 (명동역)",
-    "품계": "수사",
-    "직함": "교구 선거 봉인 수사",
-    "가치관": "권위 15 | 개방 30 | 무력 −10 | 물질 50 | 공동 −10 | 원칙 −35 | 공개 −10 | 자격 0 | 분산 −5 | 변혁 −5",
-    "욕망": "갈망 −5 | 독점 20 | 위험 20 | 과시 25 | 지속 0 | 지향 양성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2086-03-12에 태어난 동예솔은 영구 겨울의 명동역 교구청에서 교구 선거 봉인 수사 일을 맡는다. 선거함 봉인·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 동예솔은 명동 행정동의 명동역 교구청에서 교구 선거 봉인 수사 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 수사. 직함은 교구 선거 봉인 수사. 선거함 봉인·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
-    "일화": "흉작 소문이 퍼지자 상인회의가 창고 봉쇄에 찬성 표를 던졌고 동예솔은 청과동 저울을 사흘 잠갔다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.",
-    "관계": "남시윤의 상인회의 표를 시장에서 집행하고, 천나솔의 저울과 품목을 맞춘다. 정유라의 공동교섭에 청과 조항을 넣으려 한다.",
-    "야망": "사제단 소집 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-    "공포": "사제단 소집 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-    "개입": "사제단 소집 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
-  },
-  "biography": "동예솔은 교구 선거 봉인 수사 업무에서 선거함 봉인·선거 보좌 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 선거함 봉인·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 수사\n- 직함: 교구 선거 봉인 수사\n**생애.** 2086-03-12에 태어난 동예솔은 영구 겨울의 명동역 교구청에서 교구 선거 봉인 수사 일을 맡는다. 선거함 봉인·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 동예솔은 명동 행정동의 명동역 교구청에서 교구 선거 봉인 수사 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 수사. 직함은 교구 선거 봉인 수사. 선거함 봉인·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 흉작 소문이 퍼지자 상인회의가 창고 봉쇄에 찬성 표를 던졌고 동예솔은 청과동 저울을 사흘 잠갔다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.\n\n**관계.** 남시윤의 상인회의 표를 시장에서 집행하고, 천나솔의 저울과 품목을 맞춘다. 정유라의 공동교섭에 청과 조항을 넣으려 한다.\n\n**야망.** 사제단 소집 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 사제단 소집 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 사제단 소집 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 30 | 무력 −10 | 물질 50 | 공동 −10 | 원칙 −35 | 공개 −10 | 자격 0 | 분산 −5 | 변혁 −5\n- 욕망: 갈망 −5 | 독점 20 | 위험 20 | 과시 25 | 지속 0 | 지향 양성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-15"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "동예솔",
-        "type": "지휘",
-        "to": "남시윤",
-        "basis": "남시윤의 상인회의 표를 시장에서 집행하고"
+      "id": "holding:v3:station:종로3가",
+      "name": {
+        "ko": "종로3가역"
       },
-      {
-        "from": "동예솔",
-        "type": "지휘",
-        "to": "천나솔",
-        "basis": "천나솔의 저울과 품목을 맞춘다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "매리울",
-        "type": "계약",
-        "to": "동예솔",
-        "basis": "동예솔의 청과 저울과 냉동 칸을 나누고"
-      }
-    ]
-  }
+      "holderPersonId": "K387",
+      "directLiegePersonId": "K388",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "종로3가",
+        "stationName": "종로3가"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1111061500",
+          "name": "종로1·2·3·4가동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "천솔빛",
+      "holderRoute": "/people/person-0388"
+    }
+  ]
 }

@@ -3,27 +3,27 @@
   "personId": "person-1018",
   "characterId": "K1018",
   "name": "고예진",
-  "stateId": "S16",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": true,
-    "role": "권역 간 계약 자문가"
+    "role": "교주 · 아크"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "braids pinned up into a crown",
-    "upper": "olive drab buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer",
-    "outfit": "olive drab buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer",
+    "upper": "몸에 맞춰 얇게 지은 짙은 국방색 모직 정비공 작업 외투, 겹쳐 입지 않았다",
+    "outfit": "몸에 맞춰 얇게 지은 짙은 국방색 모직 정비공 작업 외투, 겹쳐 입지 않았다",
     "palette": [
       "olive drab",
       "forest green",
       "oxblood"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "forest green high-waisted wide-leg wool trousers",
+    "lower": "forest green fitted wool trousers",
     "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "accessories": "small rolled tool wrap at the belt"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "olive drab buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer",
+        "value": "몸에 맞춰 얇게 지은 짙은 국방색 모직 정비공 작업 외투, 겹쳐 입지 않았다",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "forest green high-waisted wide-leg wool trousers",
+        "value": "forest green fitted wool trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
         "value": "laced leather walking shoes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "plain buttoned collar without stitched lines",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "small rolled tool wrap at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "dark brown leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "leather, steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "tied at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "rolled wrap",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 고예진, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; monolid almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; dark brown with grey at the temples hair; long length. build: soft rounded; skin: light warm beige. upper garment: olive drab buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: olive drab, forest green, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 고예진, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; monolid almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; dark brown with grey at the temples hair; long length. build: soft rounded; skin: light warm beige. upper garment: 몸에 맞춰 얇게 지은 짙은 국방색 모직 정비공 작업 외투, 겹쳐 입지 않았다; neckline: plain buttoned collar without stitched lines. accessories: small rolled tool wrap at the belt; worn as tied at the belt. color palette: olive drab, forest green, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 고예진, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; monolid almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; dark brown with grey at the temples hair; long length. build: soft rounded; skin: light warm beige; average adult female height. upper garment: olive drab buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: forest green high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: olive drab, forest green, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 고예진, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; monolid almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; dark brown with grey at the temples hair; long length. build: soft rounded; skin: light warm beige; average adult female height. upper garment: 몸에 맞춰 얇게 지은 짙은 국방색 모직 정비공 작업 외투, 겹쳐 입지 않았다; neckline: plain buttoned collar without stitched lines; lower garment: forest green fitted wool trousers; footwear: laced leather walking shoes. accessories: small rolled tool wrap at the belt; worn as tied at the belt. color palette: olive drab, forest green, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 고예진, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; monolid almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; dark brown with grey at the temples hair; long length. build: soft rounded; skin: light warm beige; average adult female height. upper garment: olive drab buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: forest green high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: olive drab, forest green, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 고예진, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; monolid almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; dark brown with grey at the temples hair; long length. build: soft rounded; skin: light warm beige; average adult female height. upper garment: 몸에 맞춰 얇게 지은 짙은 국방색 모직 정비공 작업 외투, 겹쳐 입지 않았다; neckline: plain buttoned collar without stitched lines; lower garment: forest green fitted wool trousers; footwear: laced leather walking shoes. accessories: small rolled tool wrap at the belt; worn as tied at the belt. color palette: olive drab, forest green, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 고예진, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; monolid almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; dark brown with grey at the temples hair; long length. build: soft rounded; skin: light warm beige; average adult female height. upper garment: olive drab buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: forest green high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: olive drab, forest green, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 고예진, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; monolid almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; dark brown with grey at the temples hair; long length. build: soft rounded; skin: light warm beige; average adult female height. upper garment: 몸에 맞춰 얇게 지은 짙은 국방색 모직 정비공 작업 외투, 겹쳐 입지 않았다; neckline: plain buttoned collar without stitched lines; lower garment: forest green fitted wool trousers; footwear: laced leather walking shoes. accessories: small rolled tool wrap at the belt; worn as tied at the belt. color palette: olive drab, forest green, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 고예진, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; monolid almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; dark brown with grey at the temples hair; long length. build: soft rounded; skin: light warm beige; average adult female height. upper garment: olive drab buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: forest green high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: olive drab, forest green, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 고예진, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; monolid almond dark brown eyes; straight and thin eyebrows; nose: straight narrow bridge; mouth: wide closed mouth; muted red lips. braids pinned up into a crown; dark brown with grey at the temples hair; long length. build: soft rounded; skin: light warm beige; average adult female height. upper garment: 몸에 맞춰 얇게 지은 짙은 국방색 모직 정비공 작업 외투, 겹쳐 입지 않았다; neckline: plain buttoned collar without stitched lines; lower garment: forest green fitted wool trousers; footwear: laced leather walking shoes. accessories: small rolled tool wrap at the belt; worn as tied at the belt. color palette: olive drab, forest green, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

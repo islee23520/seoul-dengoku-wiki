@@ -3,26 +3,26 @@
   "personId": "person-0926",
   "characterId": "K926",
   "name": "에티엔 모로",
-  "stateId": "S07",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "중계 당직"
+    "role": "수도방위사령부 직할대 병사 · 삼각지역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "very short buzz-cut hair",
-    "upper": "olive drab plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer",
-    "outfit": "olive drab plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer",
+    "upper": "camouflage winter field coat with master sergeant insignia and a navy armband",
+    "outfit": "camouflage winter field coat with master sergeant insignia and a navy armband",
     "palette": [
       "olive drab",
       "navy",
       "slate blue"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "navy straight wool trousers",
-    "footwear": "leather ankle boots",
+    "lower": "quilted camouflage trousers",
+    "footwear": "leather ankle boots with felt liners",
     "accessories": "duty whistle on a cord lanyard"
   },
   "style": {
@@ -175,27 +175,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "fur-lined ear-flap cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "olive drab plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer",
+        "value": "camouflage winter field coat with master sergeant insignia and a navy armband",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "navy straight wool trousers",
+        "value": "quilted camouflage trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "leather ankle boots",
+        "value": "leather ankle boots with felt liners",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -207,7 +207,7 @@
       "neckline": {
         "value": "buttoned shirt collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
@@ -215,31 +215,31 @@
       "description": {
         "value": "duty whistle on a cord lanyard",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
         "value": "dull brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
         "value": "brass, cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
         "value": "lanyard around the neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small cylindrical whistle",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -260,27 +260,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 에티엔 모로, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; deep-set brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black hair; very short length. build: lean; skin: fair with pink undertone. upper garment: olive drab plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 에티엔 모로, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; deep-set brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black hair; very short length. build: lean; skin: fair with pink undertone. headwear: fur-lined ear-flap cap; upper garment: camouflage winter field coat with master sergeant insignia and a navy armband; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 에티엔 모로, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; deep-set brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black hair; very short length. build: lean; skin: fair with pink undertone; average adult male height. upper garment: olive drab plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy straight wool trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 에티엔 모로, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; deep-set brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black hair; very short length. build: lean; skin: fair with pink undertone; average adult male height. headwear: fur-lined ear-flap cap; upper garment: camouflage winter field coat with master sergeant insignia and a navy armband; neckline: buttoned shirt collar; lower garment: quilted camouflage trousers; footwear: leather ankle boots with felt liners. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 에티엔 모로, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; deep-set brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black hair; very short length. build: lean; skin: fair with pink undertone; average adult male height. upper garment: olive drab plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy straight wool trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 에티엔 모로, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; deep-set brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black hair; very short length. build: lean; skin: fair with pink undertone; average adult male height. headwear: fur-lined ear-flap cap; upper garment: camouflage winter field coat with master sergeant insignia and a navy armband; neckline: buttoned shirt collar; lower garment: quilted camouflage trousers; footwear: leather ankle boots with felt liners. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 에티엔 모로, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; deep-set brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black hair; very short length. build: lean; skin: fair with pink undertone; average adult male height. upper garment: olive drab plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy straight wool trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 에티엔 모로, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; deep-set brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black hair; very short length. build: lean; skin: fair with pink undertone; average adult male height. headwear: fur-lined ear-flap cap; upper garment: camouflage winter field coat with master sergeant insignia and a navy armband; neckline: buttoned shirt collar; lower garment: quilted camouflage trousers; footwear: leather ankle boots with felt liners. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 에티엔 모로, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; deep-set brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black hair; very short length. build: lean; skin: fair with pink undertone; average adult male height. upper garment: olive drab plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy straight wool trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 에티엔 모로, an European heritage man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; deep-set brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. very short buzz-cut hair; black hair; very short length. build: lean; skin: fair with pink undertone; average adult male height. headwear: fur-lined ear-flap cap; upper garment: camouflage winter field coat with master sergeant insignia and a navy armband; neckline: buttoned shirt collar; lower garment: quilted camouflage trousers; footwear: leather ankle boots with felt liners. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: olive drab, navy, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

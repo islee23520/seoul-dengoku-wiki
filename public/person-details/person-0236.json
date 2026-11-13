@@ -1,385 +1,120 @@
 {
   "id": "person-0236",
   "name": "봉용",
-  "title": "출자 평의회 서기실 거점 실무 담당자, 오하늘의 실무 담당자 · 마포구 영주",
-  "position": "출자 평의회 서기실 거점 실무 담당자, 오하늘의 실무 담당자 · 마포구 영주",
+  "title": "의원 집안 친족",
+  "position": "의원 집안 친족 · 공덕역",
   "characterId": "K235",
-  "rank": "영주",
-  "commonTier": "T3",
-  "occupation": "평의회 발언 시간 칠판·순번 관리",
+  "rank": "등재민",
+  "commonTier": "T5",
+  "occupation": "구 행정",
   "gender": "남성",
   "stage": "S2",
-  "state": "S09",
-  "stateName": "여의도출자연합회",
-  "sourceRoute": "/world/Cast-State-09#인물-봉용",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0236",
   "birthDate": "2083-06-02",
   "birthday": "06-02",
   "age": 43,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-09.json#/content/171"
-  ],
-  "familyTree": {
-    "personId": "K235",
-    "nodes": [
-      {
-        "id": "K235",
-        "personId": "K235",
-        "kind": "person",
-        "name": "봉용",
-        "birthDate": "2083-06-02",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K235"
-          },
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉용-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 출자 평의회 서기실 거점 실무 담당자, 오하늘의 실무 담당자 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-봉용-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0236"
-      },
-      {
-        "id": "FH-K235-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "봉승민",
-        "lineage": {
-          "surname": "봉",
-          "bongwan": "하음",
-          "clan": "bd09-d558-c74c"
-        },
-        "birthDate": "2053-06-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2091,
-            "summary": "봉승민은 대합실 당직에서 평의회 발언 시간 칠판·순번 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-봉용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K235-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "봉승원",
-        "lineage": {
-          "surname": "봉",
-          "bongwan": "하음",
-          "clan": "bd09-d558-c74c"
-        },
-        "birthDate": "2023-06-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "봉승원은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-봉용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K235-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현섭",
-        "birthDate": "2053-06-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2091,
-            "summary": "임현섭은 대합실 당직에서 평의회 발언 시간 칠판·순번 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-봉용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K235-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현완",
-        "birthDate": "2023-06-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오현완은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-봉용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K235-P-01:K235:biological",
-        "from": "FH-K235-P-01",
-        "to": "K235",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K235-P-02:FH-K235-P-01:biological",
-        "from": "FH-K235-P-02",
-        "to": "FH-K235-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K235-M-01:K235:biological",
-        "from": "FH-K235-M-01",
-        "to": "K235",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K235-M-02:FH-K235-M-01:biological",
-        "from": "FH-K235-M-02",
-        "to": "FH-K235-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bd09-d558-c74c",
+    "name": "하음 봉씨",
+    "crest": "clan-crests/bd09-d558-c74c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "마포구 의원 집안의 창고 열쇠는 공덕역에 기재된 등재민 봉용의 허리춤에 달려 있다. 김연규 국회의원 집안의 창고와 나무 불을 맡은 살림지기이고, 집안과 피로 이어진 사람은 아니다. 마포 터널로 들어온 강 건너 부품이 공덕 장터에 풀리는 날이면 그는 집안 몫을 먼저 고르고 값을 증표로 치른다. 하음 봉씨 사람이며, 같은 씨족의 봉감이 공덕동 동장이라 구청 사람들은 공덕의 일이 봉씨 둘을 거쳐야 의원에게 닿는다고 말한다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "의원 집안 친족",
+    "품계": "등재민",
+    "생업": "구 행정",
+    "일하는 역": "공덕역",
+    "잠자는 역": "공덕역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "마포구 의원 집안의 창고 열쇠는 공덕역에 기재된 등재민 봉용의 허리춤에 달려 있다. 김연규 국회의원 집안의 창고와 나무 불을 맡은 살림지기이고, 집안과 피로 이어진 사람은 아니다. 마포 터널로 들어온 강 건너 부품이 공덕 장터에 풀리는 날이면 그는 집안 몫을 먼저 고르고 값을 증표로 치른다. 하음 봉씨 사람이며, 같은 씨족의 봉감이 공덕동 동장이라 구청 사람들은 공덕의 일이 봉씨 둘을 거쳐야 의원에게 닿는다고 말한다.",
+    "관직": "직함 의원 집안 친족. 직위 의원 집안 친족 · 공덕역. 품계 등재민. 일하는 역 공덕역."
+  },
+  "values": {
+    "권위": 40,
+    "개방": -45,
+    "무력": 5,
+    "물질": -5,
+    "공동": 0,
+    "원칙": 30,
+    "공개": 25,
+    "자격": 30,
+    "분산": -20,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": 25,
+    "독점": 20,
+    "위험": 15,
+    "과시": -25,
+    "지속": 35,
+    "지향": "유동",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0236",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "봉용",
+        "type": "지휘",
+        "to": "김연규",
+        "basis": "마포구 국회의원 김연규의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K1007",
+    "name": "김연규",
+    "courtId": "court:K1007",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
-      },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "learning": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "prowess": {
-        "base": 3,
-        "effective": 3
+      "stewardship": {
+        "base": 9,
+        "effective": 9
       },
-      "endurance": {
+      "intrigue": {
         "base": 7,
         "effective": 7
-      }
-    },
-    "skills": [
-      {
-        "id": "turn-board",
-        "name": {
-          "ko": "발언 칠판 관리",
-          "en": "Speaking-turn board management"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "turn-board-disposition",
-        "name": {
-          "ko": "분필로 끊는 발언",
-          "en": "Cuts speeches with chalk"
-        },
-        "description": {
-          "ko": "가문이 오래 말하면 분필을 꺾어 끊고 매수 흔적을 지운 대신 가로지른다.",
-          "en": "Breaks chalk to cut overruns and crosses bribery traces rather than erasing them."
-        },
-        "behavior": {
-          "ko": "가문이 오래 말하면 분필을 꺾어 끊고 매수 흔적을 지운 대신 가로지른다.",
-          "en": "Breaks chalk to cut overruns and crosses bribery traces rather than erasing them."
-        },
-        "stress": {
-          "ko": "칠판이 광고 시세로 팔릴 것을 두려워한다.",
-          "en": "Fears the board being sold as advertising space."
-        },
-        "relationship": {
-          "ko": "오하늘의 지휘로 칠판을 맡고, 소감의 전령 원장과 시각을 맞춘다. 오해린의 시세를 평의회 시간에만 넣는다.",
-          "en": "Maintains the board under O Haneul, matches Sogam’s times and includes O Haerin’s prices only during council time."
-        },
-        "effects": []
       },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "시각 대조",
-          "en": "Time comparison"
-        },
-        "description": {
-          "ko": "칠판과 전령 원장의 시각을 맞춘다.",
-          "en": "Matches board times with messenger records."
-        },
-        "behavior": {
-          "ko": "칠판과 전령 원장의 시각을 맞춘다.",
-          "en": "Matches board times with messenger records."
-        },
-        "stress": {
-          "ko": "서기실 칠판이 광고 시세로 팔려 오하늘의 거부권이 빈 칸이 되는 것.",
-          "en": "Fears the board being sold as advertising space."
-        },
-        "relationship": {
-          "ko": "오하늘의 지휘로 칠판을 맡고, 소감의 전령 원장과 시각을 맞춘다. 오해린의 시세를 평의회 시간에만 넣는다.",
-          "en": "Maintains the board under O Haneul, matches Sogam’s times and includes O Haerin’s prices only during council time."
-        },
-        "effects": []
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "가문 발언 시간을 배분하며 매수 순번을 칠판에서 가로지른다. 거부권의 현장 기록을 지키는 실무자다.",
-      "en": "Allocates house speaking times and crosses out purchased turns, preserving the field record of veto arrangements."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,195 +152,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-gu-11440-S09",
-      "name": {
-        "ko": "마포구 공작령 직영지"
-      },
-      "holderPersonId": "K235",
-      "directLiegePersonId": "K029",
-      "stateId": "S09",
-      "adminRefs": [
-        {
-          "id": "region:1144055500",
-          "name": "아현동"
-        },
-        {
-          "id": "region:1144056500",
-          "name": "공덕동"
-        },
-        {
-          "id": "region:1144058500",
-          "name": "도화동"
-        },
-        {
-          "id": "region:1144059000",
-          "name": "용강동"
-        },
-        {
-          "id": "region:1144060000",
-          "name": "대흥동"
-        },
-        {
-          "id": "region:1144061000",
-          "name": "염리동"
-        },
-        {
-          "id": "region:1144063000",
-          "name": "신수동"
-        },
-        {
-          "id": "region:1144065500",
-          "name": "서강동"
-        },
-        {
-          "id": "region:1144066000",
-          "name": "서교동"
-        },
-        {
-          "id": "region:1144068000",
-          "name": "합정동"
-        },
-        {
-          "id": "region:1144069000",
-          "name": "망원1동"
-        },
-        {
-          "id": "region:1144070000",
-          "name": "망원2동"
-        },
-        {
-          "id": "region:1144071000",
-          "name": "연남동"
-        },
-        {
-          "id": "region:1144072000",
-          "name": "성산1동"
-        },
-        {
-          "id": "region:1144073000",
-          "name": "성산2동"
-        },
-        {
-          "id": "region:1144074000",
-          "name": "상암동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11440-S09",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
-    {
-      "id": "title:duchy-gu-11440-S09",
-      "name": "마포구 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K235",
-      "basis": "개막 행정 규모 그룹 gu:11440(duchy) 배분 · 결정적 후보 선정",
-      "stateId": "S09",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "region:1144055500",
-        "region:1144056500",
-        "region:1144058500",
-        "region:1144059000",
-        "region:1144060000",
-        "region:1144061000",
-        "region:1144063000",
-        "region:1144065500",
-        "region:1144066000",
-        "region:1144068000",
-        "region:1144069000",
-        "region:1144070000",
-        "region:1144071000",
-        "region:1144072000",
-        "region:1144073000",
-        "region:1144074000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
-    }
-  ],
-  "clan": {
-    "id": "bd09-d558-c74c",
-    "name": "하음 봉씨",
-    "crest": "clan-crests/bd09-d558-c74c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -5,
-    "개방": 10,
-    "무력": -30,
-    "물질": 0,
-    "공동": -5,
-    "원칙": 10,
-    "공개": 50,
-    "자격": 15,
-    "분산": 30,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 25,
-    "독점": 20,
-    "위험": 15,
-    "과시": -25,
-    "지속": 35,
-    "지향": "유동",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "평의회 발언 시간 칠판·순번 관리",
-    "소속": "여의도출자연합회",
-    "품계": "영주",
-    "직함": "출자 평의회 서기실 거점 실무 담당자, 오하늘의 실무 담당자 · 마포구 영주",
-    "가치관": "권위 −5 | 개방 10 | 무력 −30 | 물질 0 | 공동 −5 | 원칙 10 | 공개 50 | 자격 15 | 분산 30 | 변혁 −5",
-    "욕망": "갈망 25 | 독점 20 | 위험 15 | 과시 −25 | 지속 35 | 지향 유동 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2083-06-02 출생으로 승인된 출생군은 3군이다. 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 출자 평의회 서기실 거점 실무 담당자, 오하늘의 실무 담당자 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 봉용은 여의동을 업무동으로 삼아 평의회 발언 시간 칠판·순번 관리 업무를 맡는다.",
-    "관직": "품계 영주. 직함은 출자 평의회 서기실 거점 실무 담당자, 오하늘의 실무 담당자 · 마포구 영주. 가문별 발언 시간을 추첨과 감정 점수로 나누고, 매수 흔적이 있는 순번은 분필로 가로지른다. 마포구 공작령 직영지 보유와 이 서기 업무는 별개다.",
-    "일화": "암사가 보호 발표 시간을 두 배로 사려 하자 칠판 한 칸이 수수료 숫자로 덮였다.",
-    "관계": "오하늘의 지휘로 칠판을 맡고, 소감의 전령 원장과 시각을 맞춘다. 오해린의 시세를 평의회 시간에만 넣는다.",
-    "야망": "서기실을 강국 발표의 관문으로 남겨 교차 감정 시간을 평의회 권리로 박는다.",
-    "공포": "서기실 칠판이 광고 시세로 팔려 오하늘의 거부권이 빈 칸이 되는 것.",
-    "개입": "덮인 칸을 공개하거나, 공동 시간을 칠판 맨 위에 고정할 수 있다."
-  },
-  "biography": "사교적이나 칠판의 빈칸을 보면 가혹해진다. 한 출자 가문이 너무 오래 말하면 분필을 꺾어 발언을 끊는다.\n\n- 생업: 평의회 발언 시간 칠판·순번 관리\n- 소속: 여의도출자연합회\n- 품계: 영주\n- 직함: 출자 평의회 서기실 거점 실무 담당자, 오하늘의 실무 담당자 · 마포구 영주\n**생애.** 2083-06-02 출생으로 승인된 출생군은 3군이다. 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 출자 평의회 서기실 거점 실무 담당자, 오하늘의 실무 담당자 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 봉용은 여의동을 업무동으로 삼아 평의회 발언 시간 칠판·순번 관리 업무를 맡는다.\n\n**관직.** 품계 영주. 직함은 출자 평의회 서기실 거점 실무 담당자, 오하늘의 실무 담당자 · 마포구 영주. 가문별 발언 시간을 추첨과 감정 점수로 나누고, 매수 흔적이 있는 순번은 분필로 가로지른다. 마포구 공작령 직영지 보유와 이 서기 업무는 별개다.\n\n**일화.** 암사가 보호 발표 시간을 두 배로 사려 하자 칠판 한 칸이 수수료 숫자로 덮였다.\n\n**관계.** 오하늘의 지휘로 칠판을 맡고, 소감의 전령 원장과 시각을 맞춘다. 오해린의 시세를 평의회 시간에만 넣는다.\n\n**야망.** 서기실을 강국 발표의 관문으로 남겨 교차 감정 시간을 평의회 권리로 박는다.\n\n**공포.** 서기실 칠판이 광고 시세로 팔려 오하늘의 거부권이 빈 칸이 되는 것.\n\n**개입.** 덮인 칸을 공개하거나, 공동 시간을 칠판 맨 위에 고정할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 10 | 무력 −30 | 물질 0 | 공동 −5 | 원칙 10 | 공개 50 | 자격 15 | 분산 30 | 변혁 −5\n- 욕망: 갈망 25 | 독점 20 | 위험 15 | 과시 −25 | 지속 35 | 지향 유동 | 결합 비독점",
-  "sources": [
-    "Cast-State-09"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "봉용",
-        "type": "지휘",
-        "to": "오하늘",
-        "basis": "오하늘의 지휘로 칠판을 맡고"
-      },
-      {
-        "from": "봉용",
-        "type": "계약",
-        "to": "소감",
-        "basis": "소감의 전령 원장과 시각을 맞춘다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "소감",
-        "type": "계약",
-        "to": "봉용",
-        "basis": "봉용의 편성실 칠판을 맞춘다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

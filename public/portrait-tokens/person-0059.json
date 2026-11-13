@@ -3,27 +3,27 @@
   "personId": "person-0059",
   "characterId": "K059",
   "name": "최은재",
-  "stateId": "S03",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "기술인증 평의원"
+    "role": "가락본동 대피소장 · 아크"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, youthful smooth skin",
     "hair": "short pin-curled hair",
-    "upper": "khaki patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer",
-    "outfit": "khaki patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer",
+    "upper": "정비 틈을 낸 카키색 누빔 저고리, 위팔에 붉은 바탕 곁집 띠(물결 무늬), 오른쪽 깃에 부위 수 땀 2줄",
+    "outfit": "정비 틈을 낸 카키색 누빔 저고리, 위팔에 붉은 바탕 곁집 띠(물결 무늬), 오른쪽 깃에 부위 수 땀 2줄",
     "palette": [
       "khaki",
       "olive drab",
       "cream"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "olive drab heavy twill trousers with knee patches",
-    "footwear": "steel-toe leather work boots",
-    "accessories": "rolled leather tool roll and work gloves tucked into the belt"
+    "lower": "olive drab padded wool trousers",
+    "footwear": "felt-lined boots",
+    "accessories": "shelter register book in an oilcloth wrap"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "flat cloth cap",
+        "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "khaki patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer",
+        "value": "정비 틈을 낸 카키색 누빔 저고리, 위팔에 붉은 바탕 곁집 띠(물결 무늬), 오른쪽 깃에 부위 수 땀 2줄",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "olive drab heavy twill trousers with knee patches",
+        "value": "olive drab padded wool trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "steel-toe leather work boots",
+        "value": "felt-lined boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "open work collar",
+        "value": "wrapped knitted scarf",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "rolled leather tool roll and work gloves tucked into the belt",
+        "value": "shelter register book in an oilcloth wrap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "rolled bundle and gloves",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "oiled brown leather",
+        "value": "faded olive",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, steel",
+        "value": "paper, oilcloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "tucked into the belt",
+        "value": "held in a strap across the chest",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "thick rectangular book",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 최은재, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black hair; short length. build: lean and wiry; skin: tan warm beige. headwear: flat cloth cap; upper garment: khaki patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer; neckline: open work collar. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: khaki, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 최은재, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black hair; short length. build: lean and wiry; skin: tan warm beige. upper garment: 정비 틈을 낸 카키색 누빔 저고리, 위팔에 붉은 바탕 곁집 띠(물결 무늬), 오른쪽 깃에 부위 수 땀 2줄; neckline: wrapped knitted scarf. accessories: shelter register book in an oilcloth wrap; worn as held in a strap across the chest. color palette: khaki, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 최은재, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black hair; short length. build: lean and wiry; skin: tan warm beige; average adult female height. headwear: flat cloth cap; upper garment: khaki patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: olive drab heavy twill trousers with knee patches; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: khaki, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 최은재, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black hair; short length. build: lean and wiry; skin: tan warm beige; average adult female height. upper garment: 정비 틈을 낸 카키색 누빔 저고리, 위팔에 붉은 바탕 곁집 띠(물결 무늬), 오른쪽 깃에 부위 수 땀 2줄; neckline: wrapped knitted scarf; lower garment: olive drab padded wool trousers; footwear: felt-lined boots. accessories: shelter register book in an oilcloth wrap; worn as held in a strap across the chest. color palette: khaki, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 최은재, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black hair; short length. build: lean and wiry; skin: tan warm beige; average adult female height. headwear: flat cloth cap; upper garment: khaki patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: olive drab heavy twill trousers with knee patches; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: khaki, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 최은재, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black hair; short length. build: lean and wiry; skin: tan warm beige; average adult female height. upper garment: 정비 틈을 낸 카키색 누빔 저고리, 위팔에 붉은 바탕 곁집 띠(물결 무늬), 오른쪽 깃에 부위 수 땀 2줄; neckline: wrapped knitted scarf; lower garment: olive drab padded wool trousers; footwear: felt-lined boots. accessories: shelter register book in an oilcloth wrap; worn as held in a strap across the chest. color palette: khaki, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 최은재, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black hair; short length. build: lean and wiry; skin: tan warm beige; average adult female height. headwear: flat cloth cap; upper garment: khaki patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: olive drab heavy twill trousers with knee patches; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: khaki, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 최은재, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black hair; short length. build: lean and wiry; skin: tan warm beige; average adult female height. upper garment: 정비 틈을 낸 카키색 누빔 저고리, 위팔에 붉은 바탕 곁집 띠(물결 무늬), 오른쪽 깃에 부위 수 땀 2줄; neckline: wrapped knitted scarf; lower garment: olive drab padded wool trousers; footwear: felt-lined boots. accessories: shelter register book in an oilcloth wrap; worn as held in a strap across the chest. color palette: khaki, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 최은재, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black hair; short length. build: lean and wiry; skin: tan warm beige; average adult female height. headwear: flat cloth cap; upper garment: khaki patched twill work jacket with reinforced elbows, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: olive drab heavy twill trousers with knee patches; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: khaki, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 최은재, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: heart-shaped; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black hair; short length. build: lean and wiry; skin: tan warm beige; average adult female height. upper garment: 정비 틈을 낸 카키색 누빔 저고리, 위팔에 붉은 바탕 곁집 띠(물결 무늬), 오른쪽 깃에 부위 수 땀 2줄; neckline: wrapped knitted scarf; lower garment: olive drab padded wool trousers; footwear: felt-lined boots. accessories: shelter register book in an oilcloth wrap; worn as held in a strap across the chest. color palette: khaki, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

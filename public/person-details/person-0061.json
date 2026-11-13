@@ -1,521 +1,161 @@
 {
   "id": "person-0061",
   "name": "김도하",
-  "title": "마곡·방화 주민대표",
-  "position": "마곡·방화 주민대표",
+  "title": "오륜동 대피소장",
+  "position": "오륜동 대피소장 · 아크",
   "characterId": "K061",
-  "rank": "전무",
+  "rank": "대피소장",
   "commonTier": "T3",
-  "occupation": "대합실 당직",
+  "occupation": "대피소 통솔",
   "gender": "여성",
   "stage": "S1",
-  "state": "S03",
-  "stateName": "태욱그룹",
-  "sourceRoute": "/world/Cast-State-03#인물-김도하",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0061",
   "birthDate": "2097-04-07",
   "birthday": "04-07",
   "age": 29,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-03.json#/content/5",
-    "lore/characters/Cast-State-03.json#/content/7"
-  ],
-  "familyTree": {
-    "personId": "K061",
-    "nodes": [
-      {
-        "id": "K061",
-        "personId": "K061",
-        "kind": "person",
-        "name": "김도하",
-        "birthDate": "2097-04-07",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K061"
-          },
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-김도하-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 마곡·방화 주민대표 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-김도하-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0061"
-      },
-      {
-        "id": "FH-K061-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김승훈",
-        "lineage": {
-          "surname": "김",
-          "bongwan": "강릉",
-          "clan": "ae40-ac15-b989-91d1"
-        },
-        "birthDate": "2067-04-07",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-김도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "김승훈은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-김도하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K061-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김승범",
-        "lineage": {
-          "surname": "김",
-          "bongwan": "강릉",
-          "clan": "ae40-ac15-b989-91d1"
-        },
-        "birthDate": "2037-04-07",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-김도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "김승범은 대합실 당직에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-김도하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K061-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "김승재",
-        "lineage": {
-          "surname": "김",
-          "bongwan": "강릉",
-          "clan": "ae40-ac15-b989-91d1"
-        },
-        "birthDate": "2007-04-07",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-김도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "김승재는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-김도하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K061-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이승훈",
-        "birthDate": "2067-04-07",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-김도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "이승훈은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-김도하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K061-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승문",
-        "birthDate": "2037-04-07",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-김도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "최승문은 대합실 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-김도하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K061-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "정승혁",
-        "birthDate": "2007-04-07",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-김도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정승혁은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-김도하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K061-P-01:K061:biological",
-        "from": "FH-K061-P-01",
-        "to": "K061",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-김도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K061-P-02:FH-K061-P-01:biological",
-        "from": "FH-K061-P-02",
-        "to": "FH-K061-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-김도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K061-P-03:FH-K061-P-02:biological",
-        "from": "FH-K061-P-03",
-        "to": "FH-K061-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-김도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K061-M-01:K061:biological",
-        "from": "FH-K061-M-01",
-        "to": "K061",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-김도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K061-M-02:FH-K061-M-01:biological",
-        "from": "FH-K061-M-02",
-        "to": "FH-K061-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-김도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K061-M-03:FH-K061-M-02:biological",
-        "from": "FH-K061-M-03",
-        "to": "FH-K061-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-김도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ae40-ac15-b989-91d1",
+    "name": "강릉 김씨",
+    "crest": "clan-crests/ae40-ac15-b989-91d1.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "김도하는 오륜동 대피소의 대피소장이고 올림픽공원역에서 일한다. 스물아홉 살로, 교주의 집에서 말지기로 판정을 옮기다가 송파 곁집장 남윤경에게서 이 대피소를 받으며 대피소의 물과 명부를 지키겠다고 맹세했다. 그래서 첫 교대마다 대피소 우물물을 떠서 맑기를 보고, 말지기 시절 판정을 옮기던 그대로 한 낱말도 줄이지 않고 명부 옆에 적는다. 둘째 부위를 받은 뒤로 오른쪽 깃의 땀이 두 줄이다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "오륜동 대피소장",
+    "품계": "대피소장",
+    "생업": "대피소 통솔",
+    "일하는 역": "올림픽공원역",
+    "잠자는 역": "올림픽공원역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "김도하는 오륜동 대피소의 대피소장이고 올림픽공원역에서 일한다. 스물아홉 살로, 교주의 집에서 말지기로 판정을 옮기다가 송파 곁집장 남윤경에게서 이 대피소를 받으며 대피소의 물과 명부를 지키겠다고 맹세했다. 그래서 첫 교대마다 대피소 우물물을 떠서 맑기를 보고, 말지기 시절 판정을 옮기던 그대로 한 낱말도 줄이지 않고 명부 옆에 적는다. 둘째 부위를 받은 뒤로 오른쪽 깃의 땀이 두 줄이다.",
+    "관직": "직함 오륜동 대피소장. 직위 오륜동 대피소장 · 아크. 품계 대피소장. 일하는 역 올림픽공원역."
+  },
+  "values": {
+    "권위": 5,
+    "개방": 0,
+    "무력": -15,
+    "물질": -50,
+    "공동": 20,
+    "원칙": 50,
+    "공개": -5,
+    "자격": 5,
+    "분산": -5,
+    "변혁": 45
+  },
+  "desire": {
+    "갈망": 5,
+    "독점": 10,
+    "위험": 20,
+    "과시": 30,
+    "지속": -10,
+    "지향": "동성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0061",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "김도하",
+        "type": "지휘",
+        "to": "남윤경",
+        "basis": "송파 곁집장 남윤경의 직속"
+      },
+      {
+        "from": "김도하",
+        "type": "맹세",
+        "to": "남윤경",
+        "basis": "송파 곁집장 남윤경에게서 오륜동 대피소를 받으며 대피소의 물과 명부를 지키겠다고 한 맹세"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "채봄",
+        "type": "지휘",
+        "to": "김도하",
+        "basis": "오륜동 대피소장 김도하의 직속"
+      },
+      {
+        "from": "유민호",
+        "type": "스승과 제자",
+        "to": "김도하",
+        "basis": "판정을 외고 같은 낱말로 옮기는 법을 김도하에게서 배웠다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K373",
+    "name": "남윤경",
+    "courtId": "court:K373",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K061",
+    "members": [
+      {
+        "personId": "K069",
+        "name": "채봄"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 11,
-        "effective": 11
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
-        "base": 11,
-        "effective": 11
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "management": {
-        "base": 12,
-        "effective": 12
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "insight": {
-        "base": 9,
-        "effective": 9
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
         "base": 6,
         "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "water-board",
-        "name": {
-          "ko": "급수 게시판 운영",
-          "en": "Water-supply notice management"
-        },
-        "rating": 60
-      },
-      {
-        "id": "trade",
-        "name": {
-          "ko": "공개 조건 물류 거래",
-          "en": "Logistics under disclosed terms"
-        },
-        "rating": 55
-      },
-      {
-        "id": "referral",
-        "name": {
-          "ko": "공개 창구 안내",
-          "en": "Public-channel referral"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "minimum-living-standards",
-        "name": {
-          "ko": "생활 최저선",
-          "en": "Minimum Living Standards"
-        },
-        "description": {
-          "ko": "김도하는 연구 성과보다 주민의 원수와 식량 최저선을 우선한다.",
-          "en": "Kim Doha puts residents’ minimum raw-water and food supplies ahead of research output."
-        },
-        "behavior": {
-          "ko": "배급표가 비면 회의를 멈추고 연구 파견 인원보다 배급 솥 숫자를 먼저 표결에 올린다.",
-          "en": "He stops meetings when ration sheets are empty and puts ration-pot counts to a vote before research deployment numbers."
-        },
-        "stress": {
-          "ko": "외부 급수계약이 주민 명부를 넘길 위험이 있다면 원수·식량 최저선에 주민 거부권을 고정하려 할 수 있다.",
-          "en": "If an external water contract threatens to surrender the resident register, he may seek to anchor residents’ veto rights to minimum water and food supplies."
-        },
-        "relationship": {
-          "ko": "통행세가 민가 배급을 줄인다면 유민호와 대립하고 원수·식량 교환에서는 한지온과 협력할 수 있다.",
-          "en": "He may oppose Yu Minho when transit fees reduce household rations while cooperating with Han Jion on water-for-food exchanges."
-        },
-        "effects": []
-      },
-      {
-        "id": "public-channels-first",
-        "name": {
-          "ko": "공개 창구 우선",
-          "en": "Public Channels First"
-        },
-        "description": {
-          "ko": "김도하는 사적 청탁보다 주민이 확인할 수 있는 공개 절차를 중시한다.",
-          "en": "Kim Doha favors publicly reviewable procedures over private requests."
-        },
-        "behavior": {
-          "ko": "사적 청탁을 공개 창구로 돌리고 대피 경로와 우물 수위를 공개 게시한다.",
-          "en": "He redirects private requests to public channels and posts evacuation routes and well levels openly."
-        },
-        "stress": {
-          "ko": "급수계약이 주민 명부를 넘기는 통로가 될 우려가 있다면 공개 게시와 주민 표결을 더 중시할 수 있다.",
-          "en": "If a water contract could become a means of surrendering the resident register, he may place greater weight on public notices and resident votes."
-        },
-        "relationship": {
-          "ko": "주민 쪽 심의를 공개적으로 완성할 수 있다면 정호준과의 동맹을 강화할 수 있다.",
-          "en": "He may strengthen his alliance with Jeong Hojun when residents’ part of the deliberation can be completed openly."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "배급표가 비면 회의를 멈추고 식량 교환을 한다. 주민 표결과 급수 공개 운영이 강점이며 군사·전투 경력은 없다.",
-      "en": "He stops meetings over empty allocations and exchanges food. Resident votes and water notices support management, not military or combat expertise."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -543,236 +183,50 @@
   },
   "confirmedHoldings": [
     {
-      "id": "holding:opening-duchy-gu-11500-S03",
+      "id": "holding:v3:dong:1171056600",
       "name": {
-        "ko": "강서구 공작령 직영지"
+        "ko": "오륜동"
       },
       "holderPersonId": "K061",
-      "directLiegePersonId": "K029",
-      "stateId": "S03",
+      "directLiegePersonId": "K373",
+      "stateId": "arc",
       "adminRefs": [
         {
-          "id": "region:1150051000",
-          "name": "염창동"
-        },
-        {
-          "id": "region:1150052000",
-          "name": "등촌1동"
-        },
-        {
-          "id": "region:1150053000",
-          "name": "등촌2동"
-        },
-        {
-          "id": "region:1150053500",
-          "name": "등촌3동"
-        },
-        {
-          "id": "region:1150054000",
-          "name": "화곡1동"
-        },
-        {
-          "id": "region:1150055000",
-          "name": "화곡2동"
-        },
-        {
-          "id": "region:1150056000",
-          "name": "화곡3동"
-        },
-        {
-          "id": "region:1150057000",
-          "name": "화곡4동"
-        },
-        {
-          "id": "region:1150059000",
-          "name": "화곡본동"
-        },
-        {
-          "id": "region:1150059100",
-          "name": "화곡6동"
-        },
-        {
-          "id": "region:1150059300",
-          "name": "화곡8동"
-        },
-        {
-          "id": "region:1150060300",
-          "name": "가양1동"
-        },
-        {
-          "id": "region:1150060400",
-          "name": "가양2동"
-        },
-        {
-          "id": "region:1150060500",
-          "name": "가양3동"
-        },
-        {
-          "id": "region:1150061100",
-          "name": "발산1동"
-        },
-        {
-          "id": "region:1150061500",
-          "name": "우장산동"
-        },
-        {
-          "id": "region:1150062000",
-          "name": "공항동"
-        },
-        {
-          "id": "region:1150063000",
-          "name": "방화1동"
-        },
-        {
-          "id": "region:1150064000",
-          "name": "방화2동"
-        },
-        {
-          "id": "region:1150064100",
-          "name": "방화3동"
+          "id": "region:1171056600",
+          "name": "오륜동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11500-S03",
+      "territorialScale": "dong",
+      "titleId": null,
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
+      "formalTitleRank": null
     }
   ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "subordinateHoldings": [
     {
-      "id": "title:duchy-gu-11500-S03",
-      "name": "강서구 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K061",
-      "basis": "개막 행정 규모 그룹 gu:11500(duchy) 배분 · 결정적 후보 선정",
-      "stateId": "S03",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "region:1150051000",
-        "region:1150052000",
-        "region:1150053000",
-        "region:1150053500",
-        "region:1150054000",
-        "region:1150055000",
-        "region:1150056000",
-        "region:1150057000",
-        "region:1150059000",
-        "region:1150059100",
-        "region:1150059300",
-        "region:1150060300",
-        "region:1150060400",
-        "region:1150060500",
-        "region:1150061100",
-        "region:1150061500",
-        "region:1150062000",
-        "region:1150063000",
-        "region:1150064000",
-        "region:1150064100"
+      "id": "holding:v3:station:올림픽공원",
+      "name": {
+        "ko": "올림픽공원역"
+      },
+      "holderPersonId": "K069",
+      "directLiegePersonId": "K061",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "올림픽공원",
+        "stationName": "올림픽공원"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1171056600",
+          "name": "오륜동"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "채봄",
+      "holderRoute": "/people/person-0069"
     }
-  ],
-  "clan": {
-    "id": "ae40-ac15-b989-91d1",
-    "name": "강릉 김씨",
-    "crest": "clan-crests/ae40-ac15-b989-91d1.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -20,
-    "개방": 15,
-    "무력": -25,
-    "물질": 0,
-    "공동": 0,
-    "원칙": 60,
-    "공개": 40,
-    "자격": 40,
-    "분산": 25,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 5,
-    "독점": 10,
-    "위험": 20,
-    "과시": 30,
-    "지속": -10,
-    "지향": "동성",
-    "결합": "다자"
-  },
-  "fields": {
-    "소속": "태욱그룹",
-    "생업": "대합실 당직",
-    "품계": "전무",
-    "직함": "마곡·방화 주민대표",
-    "업무": "방화3동. 김도하는 방화 관문 대피 경로를 채봄의 순찰 깃발과 맞추고 주민이 돌아올 때까지 개방 결정을 미룬다.",
-    "가치관": "권위 −20 | 개방 15 | 무력 −25 | 물질 0 | 공동 0 | 원칙 60 | 공개 40 | 자격 40 | 분산 25 | 변혁 0",
-    "욕망": "갈망 5 | 독점 10 | 위험 20 | 과시 30 | 지속 −10 | 지향 동성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 김도하는 마곡 대합실에 우물 수위와 배급 솥 숫자를 게시하고 주민 표결에 앞서 한지온의 원수 공급 내역을 묻는다.\n- 업무: 가양1동. 김도하는 마곡 대합실에 우물 수위와 배급 솥 숫자를 게시하고 주민 표결에 앞서 한지온의 원수 공급 내역을 묻는다.\n- 업무: 방화3동. 김도하는 방화 관문 대피 경로를 채봄의 순찰 깃발과 맞추고 주민이 돌아올 때까지 개방 결정을 미룬다.",
-    "관직": "품계 전무. 직함은 마곡·방화 주민대표. 대피 경로와 우물 수위를 공개 게시하고, 연구 파견 인원수보다 배급 솥 숫자를 먼저 표결에 올린다.",
-    "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다.",
-    "관계": "정호준의 삼원 심의를 주민 쪽에서 완성하는 동맹이고, 한지온이 맡은 서울 내부 원수 공급과 배급을 조정하며, 유민호의 기지 통행세가 민가 배급을 깎을 때 경쟁한다.",
-    "야망": "삼원 심의에서 주민 거부권을 원수·식량 최저선에 고정해, 연구시설이 생산을 못 해도 관문 마을이 볼모가 되지 않게 한다.",
-    "공포": "서울 안의 식량과 원수 공급이 막히자 급수계약 한 줄에 주민 명부가 통째로 넘어가는 것.",
-    "개입": "대체 식량 호송을 성사시켜 파견 동결을 풀거나, 명부 양도 밀약을 찾아 주민 거부권을 강화할 수 있다."
-  },
-  "biography": "실리를 말하되 실험동 소음보다 부엌 수돗물을 먼저 묻는다. 지식을 자랑하는 날에도 원수 배급표가 비면 회의를 중단시킨다.\n\n- 소속: 태욱그룹\n- 생업: 대합실 당직\n- 품계: 전무\n- 직함: 마곡·방화 주민대표\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 김도하는 마곡 대합실에 우물 수위와 배급 솥 숫자를 게시하고 주민 표결에 앞서 한지온의 원수 공급 내역을 묻는다.\n- 업무: 가양1동. 김도하는 마곡 대합실에 우물 수위와 배급 솥 숫자를 게시하고 주민 표결에 앞서 한지온의 원수 공급 내역을 묻는다.\n- 업무: 방화3동. 김도하는 방화 관문 대피 경로를 채봄의 순찰 깃발과 맞추고 주민이 돌아올 때까지 개방 결정을 미룬다.\n\n**관직.** 품계 전무. 직함은 마곡·방화 주민대표. 대피 경로와 우물 수위를 공개 게시하고, 연구 파견 인원수보다 배급 솥 숫자를 먼저 표결에 올린다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다.\n\n**관계.** 정호준의 삼원 심의를 주민 쪽에서 완성하는 동맹이고, 한지온이 맡은 서울 내부 원수 공급과 배급을 조정하며, 유민호의 기지 통행세가 민가 배급을 깎을 때 경쟁한다.\n\n**야망.** 삼원 심의에서 주민 거부권을 원수·식량 최저선에 고정해, 연구시설이 생산을 못 해도 관문 마을이 볼모가 되지 않게 한다.\n\n**공포.** 서울 안의 식량과 원수 공급이 막히자 급수계약 한 줄에 주민 명부가 통째로 넘어가는 것.\n\n**개입.** 대체 식량 호송을 성사시켜 파견 동결을 풀거나, 명부 양도 밀약을 찾아 주민 거부권을 강화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 15 | 무력 −25 | 물질 0 | 공동 0 | 원칙 60 | 공개 40 | 자격 40 | 분산 25 | 변혁 0\n- 욕망: 갈망 5 | 독점 10 | 위험 20 | 과시 30 | 지속 −10 | 지향 동성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-03"
-  ],
-  "directLiege": {
-    "personId": "K1005",
-    "name": "정서온",
-    "relationKind": "direct-vassal",
-    "ownerTerm": "직속 가신",
-    "effectiveYear": 2126
-  },
-  "court": {
-    "id": "court:K061",
-    "members": [
-      {
-        "personId": "K073",
-        "name": "변태온"
-      }
-    ]
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "김도하",
-        "type": "계약",
-        "to": "정호준",
-        "basis": "삼원 심의를 주민 쪽에서 완성"
-      },
-      {
-        "from": "김도하",
-        "type": "계약",
-        "to": "한지온",
-        "basis": "원수 조달 행렬과 식량을 교환"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "채봄",
-        "type": "맹세",
-        "to": "김도하",
-        "basis": "김도하의 깃발이 골목에서 돌아올 때까지 호각을 참기로 맹세한다"
-      },
-      {
-        "from": "변태온",
-        "type": "지휘",
-        "to": "김도하",
-        "basis": "김도하의 주민 거부권을 대합실에서 집행하고"
-      }
-    ]
-  }
+  ]
 }

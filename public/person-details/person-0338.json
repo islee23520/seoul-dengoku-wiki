@@ -1,492 +1,120 @@
 {
   "id": "person-0338",
   "name": "동주하",
-  "title": "제기동시장 저울 거점장",
-  "position": "제기동시장 저울 거점장",
+  "title": "제기동 동장",
+  "position": "제기동 동장 · 정부",
   "characterId": "K337",
-  "rank": "전문의",
-  "commonTier": "T2",
-  "occupation": "약재 원산지·건조 일자 검수",
+  "rank": "동장",
+  "commonTier": "T3",
+  "occupation": "동 행정",
   "gender": "남성",
   "stage": "S2",
-  "state": "S13",
-  "stateName": "흰십자단",
-  "sourceRoute": "/world/Cast-State-13#인물-동주하",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0338",
   "birthDate": "2089-01-31",
   "birthday": "01-31",
   "age": 37,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-13.json#/content/39"
-  ],
-  "familyTree": {
-    "personId": "K337",
-    "nodes": [
-      {
-        "id": "K337",
-        "personId": "K337",
-        "kind": "person",
-        "name": "동주하",
-        "birthDate": "2089-01-31",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K337"
-          },
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동주하-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 노량진 선창에서 자랐다. 제기동 약재 검수 전문의 자리는 저울 재점검 공개로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-동주하-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0338"
-      },
-      {
-        "id": "FH-K337-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "동승호",
-        "lineage": {
-          "surname": "동",
-          "bongwan": "광천",
-          "clan": "b3d9-ad11-cc9c"
-        },
-        "birthDate": "2059-01-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "동승호는 노량진 선창에서 약재 원산지·건조 일자 검수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-동주하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K337-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "동승민",
-        "lineage": {
-          "surname": "동",
-          "bongwan": "광천",
-          "clan": "b3d9-ad11-cc9c"
-        },
-        "birthDate": "2029-01-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "동승민은 노량진 선창에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-동주하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K337-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "동승원",
-        "lineage": {
-          "surname": "동",
-          "bongwan": "광천",
-          "clan": "b3d9-ad11-cc9c"
-        },
-        "birthDate": "1999-01-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "동승원은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-동주하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K337-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준은",
-        "birthDate": "2059-01-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "이준은은 노량진 선창에서 약재 원산지·건조 일자 검수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-동주하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K337-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준범",
-        "birthDate": "2029-01-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "최준범은 노량진 선창에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-동주하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K337-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준진",
-        "birthDate": "1999-01-31",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정준진은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-동주하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K337-P-01:K337:biological",
-        "from": "FH-K337-P-01",
-        "to": "K337",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K337-P-02:FH-K337-P-01:biological",
-        "from": "FH-K337-P-02",
-        "to": "FH-K337-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K337-P-03:FH-K337-P-02:biological",
-        "from": "FH-K337-P-03",
-        "to": "FH-K337-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K337-M-01:K337:biological",
-        "from": "FH-K337-M-01",
-        "to": "K337",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K337-M-02:FH-K337-M-01:biological",
-        "from": "FH-K337-M-02",
-        "to": "FH-K337-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K337-M-03:FH-K337-M-02:biological",
-        "from": "FH-K337-M-03",
-        "to": "FH-K337-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-동주하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b3d9-ad11-cc9c",
+    "name": "광천 동씨",
+    "crest": "clan-crests/b3d9-ad11-cc9c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "동대문구 제기동 동장으로 제기동역에 기재돼 있다. 서른일곱 살 남성, 광천 동씨다. 동주민센터의 배급·기재·민원 세 창구를 이끌고, 버섯과 말린 약초가 오가는 제기동 장터의 자릿세 장부도 그의 도장을 거친다. 약초 좌판이 증표 대신 소금을 받는다는 민원이 들어오면 그는 장터에 직접 내려가 그 좌판의 저울에 제 손으로 추를 올려 본다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "제기동 동장",
+    "품계": "동장",
+    "생업": "동 행정",
+    "일하는 역": "제기동역",
+    "잠자는 역": "제기동역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "동대문구 제기동 동장으로 제기동역에 기재돼 있다. 서른일곱 살 남성, 광천 동씨다. 동주민센터의 배급·기재·민원 세 창구를 이끌고, 버섯과 말린 약초가 오가는 제기동 장터의 자릿세 장부도 그의 도장을 거친다. 약초 좌판이 증표 대신 소금을 받는다는 민원이 들어오면 그는 장터에 직접 내려가 그 좌판의 저울에 제 손으로 추를 올려 본다.",
+    "관직": "직함 제기동 동장. 직위 제기동 동장 · 정부. 품계 동장. 일하는 역 제기동역."
+  },
+  "values": {
+    "권위": 35,
+    "개방": -25,
+    "무력": -10,
+    "물질": -30,
+    "공동": 45,
+    "원칙": 55,
+    "공개": 0,
+    "자격": 25,
+    "분산": -35,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -10,
+    "위험": -10,
+    "과시": -25,
+    "지속": 20,
+    "지향": "유동",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0338",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "동주하",
+        "type": "지휘",
+        "to": "오서율",
+        "basis": "동대문구 국회의원 오서율의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K148",
+    "name": "오서율",
+    "courtId": "court:K148",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 11,
-        "effective": 11
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 11,
-        "effective": 11
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
       }
     },
-    "skills": [
-      {
-        "id": "herbal-cargo-inspection",
-        "name": {
-          "ko": "약재 검수",
-          "en": "Herbal cargo inspection"
-        },
-        "rating": 70
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "저울 앞의 거절",
-          "en": "Refusal at the scales"
-        },
-        "description": {
-          "ko": "출처와 중량을 읽고 진료 배정 날인 전 출고를 막는다. 봉쇄 중 사라진 장부를 되찾았다는 근거는 없다.",
-          "en": "Reading provenance and weight supports withholding shipments pending clinical seals. Recovery of ledgers lost during closure is not established."
-        },
-        "behavior": {
-          "ko": "원산지 말목과 상자 무게를 한눈에 읽고, 선매를 권하는 사신을 저울 앞에서 돌려보낸다. 외상 장부를 사람 얼굴보다 오래 기억한다. 제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다.",
-          "en": "He read origin inspection posts and box weights at a glance and sent away from the scales any envoy who recommended pre-buying. He remembered credit ledgers longer than faces."
-        },
-        "stress": {
-          "ko": "공포. 가짜 약이 저울 눈금과 함께 북한산보국문으로 흘러 시장이 한 계절에 봉쇄되는 것.",
-          "en": "Fear. That counterfeit drugs would flow, together with the scale marks, toward Bukhansan Bogukmun and the market would be sealed for a season."
-        },
-        "relationship": {
-          "ko": "관계. 심달호의 경매 규칙을 저울에서 집행하고, 동늘솔의 운송 무게를 같은 눈금에 맞춘다. 전솔의 환자 할당을 출하 순서로 붙인다.",
-          "en": "Relations. Executed Sim Dalho's auction rules at the scales and matched Dong Neulsol's transport weights on the same graduation. Pasted Jeon Sol's patient allocation onto the release order."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 전문의. 직함은 제기동 약재 검수 전문의. 원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의와 단장의 진료 배정 날인이 있어야 저울을 연다.",
-          "en": "Office. Rank: supervisor. Title: Jegi-dong market scales outpost chief. She hung origin and drying dates on the inspection posts and opened the scales for bulk pre-buying only with the stamps of Ryu Eunbi and Jeon Sol."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 전문의. 직함은 제기동 약재 검수 전문의. 원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의와 단장의 진료 배정 날인이 있어야 저울을 연다.",
-          "en": "Recorded duty and limits: Office. Rank: supervisor. Title: Jegi-dong market scales outpost chief. She hung origin and drying dates on the inspection posts and opened the scales for bulk pre-buying only with the stamps of Ryu Eunbi and Jeon Sol."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 가짜 약이 저울 눈금과 함께 북한산보국문으로 흘러 시장이 한 계절에 봉쇄되는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That counterfeit drugs would flow, together with the scale marks, toward Bukhansan Bogukmun and the market would be sealed for a season."
-        },
-        "relationship": {
-          "ko": "관계. 심달호의 경매 규칙을 저울에서 집행하고, 동늘솔의 운송 무게를 같은 눈금에 맞춘다. 전솔의 환자 할당을 출하 순서로 붙인다.",
-          "en": "Relations. Executed Sim Dalho's auction rules at the scales and matched Dong Neulsol's transport weights on the same graduation. Pasted Jeon Sol's patient allocation onto the release order."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "출처와 중량을 읽고 진료 배정 날인 전 출고를 막는다. 봉쇄 중 사라진 장부를 되찾았다는 근거는 없다.",
-      "en": "Reading provenance and weight supports withholding shipments pending clinical seals. Recovery of ledgers lost during closure is not established."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -526,230 +154,23 @@
   },
   "confirmedHoldings": [
     {
-      "id": "holding:opening-duchy-gu-11230-S13",
+      "id": "holding:v3:dong:1123054500",
       "name": {
-        "ko": "동대문구 공작령 직영지"
+        "ko": "제기동"
       },
       "holderPersonId": "K337",
-      "directLiegePersonId": "K144",
-      "stateId": "S13",
+      "directLiegePersonId": "K148",
+      "stateId": "government",
       "adminRefs": [
-        {
-          "id": "region:1123051500",
-          "name": "신설동"
-        },
-        {
-          "id": "region:1123053300",
-          "name": "용두동"
-        },
         {
           "id": "region:1123054500",
           "name": "제기동"
-        },
-        {
-          "id": "region:1123056000",
-          "name": "전농1동"
-        },
-        {
-          "id": "region:1123057000",
-          "name": "전농2동"
-        },
-        {
-          "id": "region:1123060000",
-          "name": "답십리1동"
-        },
-        {
-          "id": "region:1123061000",
-          "name": "답십리2동"
-        },
-        {
-          "id": "region:1123065000",
-          "name": "장안1동"
-        },
-        {
-          "id": "region:1123066000",
-          "name": "장안2동"
-        },
-        {
-          "id": "region:1123070500",
-          "name": "청량리동"
-        },
-        {
-          "id": "region:1123071000",
-          "name": "회기동"
-        },
-        {
-          "id": "region:1123072000",
-          "name": "휘경1동"
-        },
-        {
-          "id": "region:1123073000",
-          "name": "휘경2동"
-        },
-        {
-          "id": "region:1123074000",
-          "name": "이문1동"
-        },
-        {
-          "id": "region:1123075000",
-          "name": "이문2동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11230-S13",
+      "territorialScale": "dong",
+      "titleId": null,
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
+      "formalTitleRank": null
     }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
-    {
-      "id": "title:duchy-gu-11230-S13",
-      "name": "동대문구 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K337",
-      "basis": "개막 행정 규모 그룹 gu:11230(duchy) 배분 · 결정적 후보 선정",
-      "stateId": "S13",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "region:1123051500",
-        "region:1123053300",
-        "region:1123054500",
-        "region:1123056000",
-        "region:1123057000",
-        "region:1123060000",
-        "region:1123061000",
-        "region:1123065000",
-        "region:1123066000",
-        "region:1123070500",
-        "region:1123071000",
-        "region:1123072000",
-        "region:1123073000",
-        "region:1123074000",
-        "region:1123075000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
-    }
-  ],
-  "clan": {
-    "id": "b3d9-ad11-cc9c",
-    "name": "광천 동씨",
-    "crest": "clan-crests/b3d9-ad11-cc9c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -10,
-    "개방": 30,
-    "무력": -45,
-    "물질": -25,
-    "공동": 40,
-    "원칙": 35,
-    "공개": 25,
-    "자격": 10,
-    "분산": 15,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -10,
-    "위험": -10,
-    "과시": -25,
-    "지속": 20,
-    "지향": "유동",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "약재 원산지·건조 일자 검수",
-    "소속": "흰십자단",
-    "품계": "전문의",
-    "직함": "제기동시장 저울 거점장",
-    "가치관": "권위 −10 | 개방 30 | 무력 −45 | 물질 −25 | 공동 40 | 원칙 35 | 공개 25 | 자격 10 | 분산 15 | 변혁 −5",
-    "욕망": "갈망 0 | 독점 −10 | 위험 −10 | 과시 −25 | 지속 20 | 지향 유동 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2089-01-31에 태어났다. 2126년 개막 현재 제기동시장 저울 거점장 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 저울 재점검 공개로 열렸다.\n- 제기동의 약재 원산지·건조 일자 검수 창구가 동주하의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 전문의. 직함은 제기동 약재 검수 전문의. 원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의와 단장의 진료 배정 날인이 있어야 저울을 연다.",
-    "일화": "여름 가짜 약이 북한산보국문으로 흘러가자 약재동이 자체 봉쇄되고 선매 장부와 저울 봉인이 함께 사라졌다.",
-    "관계": "심달호의 경매 규칙을 저울에서 집행하고, 동늘솔의 운송 무게를 같은 눈금에 맞춘다. 전솔의 환자 할당을 출하 순서로 붙인다.",
-    "야망": "제기동시장 경매 저울을 의료 지휘부 중증도 배정의 얼굴로 남겨 비공개 독점 입찰이 바닥 시세를 사지 못하게 하려 한다.",
-    "공포": "가짜 약이 저울 눈금과 함께 북한산보국문으로 흘러 시장이 한 계절에 봉쇄되는 일을 두려워한다.",
-    "개입": "저울 봉인을 되찾거나, 비공개 선매 대리인을 경매장에서 공개할 수 있다."
-  },
-  "biography": "원산지 말목과 상자 무게를 한눈에 읽고, 선매를 권하는 사신을 저울 앞에서 돌려보낸다. 외상 장부를 사람 얼굴보다 오래 기억한다.\n\n- 생업: 약재 원산지·건조 일자 검수\n- 소속: 흰십자단\n- 품계: 전문의\n- 직함: 제기동시장 저울 거점장\n**생애.** 2089-01-31에 태어났다. 2126년 개막 현재 제기동시장 저울 거점장 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 저울 재점검 공개로 열렸다.\n- 제기동의 약재 원산지·건조 일자 검수 창구가 동주하의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 전문의. 직함은 제기동 약재 검수 전문의. 원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의와 단장의 진료 배정 날인이 있어야 저울을 연다.\n\n**일화.** 여름 가짜 약이 북한산보국문으로 흘러가자 약재동이 자체 봉쇄되고 선매 장부와 저울 봉인이 함께 사라졌다.\n\n**관계.** 심달호의 경매 규칙을 저울에서 집행하고, 동늘솔의 운송 무게를 같은 눈금에 맞춘다. 전솔의 환자 할당을 출하 순서로 붙인다.\n\n**야망.** 제기동시장 경매 저울을 의료 지휘부 중증도 배정의 얼굴로 남겨 비공개 독점 입찰이 바닥 시세를 사지 못하게 하려 한다.\n\n**공포.** 가짜 약이 저울 눈금과 함께 북한산보국문으로 흘러 시장이 한 계절에 봉쇄되는 일을 두려워한다.\n\n**개입.** 저울 봉인을 되찾거나, 비공개 선매 대리인을 경매장에서 공개할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 30 | 무력 −45 | 물질 −25 | 공동 40 | 원칙 35 | 공개 25 | 자격 10 | 분산 15 | 변혁 −5\n- 욕망: 갈망 0 | 독점 −10 | 위험 −10 | 과시 −25 | 지속 20 | 지향 유동 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-13"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "동주하",
-        "type": "지휘",
-        "to": "심달호",
-        "basis": "심달호의 경매 규칙을 저울에서 집행하고"
-      },
-      {
-        "from": "동주하",
-        "type": "지휘",
-        "to": "동늘솔",
-        "basis": "동늘솔의 운송 무게를 같은 눈금에 맞춘다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "강달유",
-        "type": "계약",
-        "to": "동주하",
-        "basis": "강달유는 관리하는 약재의 출처와 건조 일자를 동주하에게 가져가 검수받는다. 동주하는 말목의 날짜와 원산지를 살피고 진료 배정 날인을 확인해, 격리 환자에게 쓸 약재가 확인되지 않은 대량 출고에 섞이지 않게 한다."
-      },
-      {
-        "from": "신하빈",
-        "type": "계약",
-        "to": "동주하",
-        "basis": "신하빈은 수술에 쓴 약재의 관리 기록을 동주하에게 넘겨 다음 공급을 검수받는다. 동주하는 원산지와 건조 일자를 확인하고 진료 배정 날인에 맞춰 출하 순서를 잡아 정전 뒤의 진료가 약재 공백으로 다시 끊기지 않게 한다."
-      },
-      {
-        "from": "안차민",
-        "type": "계약",
-        "to": "동주하",
-        "basis": "안차민은 약재 사용량과 남은 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 부족한 물자를 다음 출하에서 확인된 공급으로 잇는다."
-      },
-      {
-        "from": "허타우",
-        "type": "계약",
-        "to": "동주하",
-        "basis": "허타우는 격리 환자에게 쓸 약재의 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 왕진에 필요한 공급을 검수한다."
-      },
-      {
-        "from": "안서민",
-        "type": "계약",
-        "to": "동주하",
-        "basis": "안서민은 약재 사용량과 남은 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 다음 공급을 검수한다."
-      },
-      {
-        "from": "동늘솔",
-        "type": "계약",
-        "to": "동주하",
-        "basis": "동주하의 시장 저울에 무게를 맞춘다"
-      },
-      {
-        "from": "판한들",
-        "type": "계약",
-        "to": "동주하",
-        "basis": "동주하의 시장 하역과 줄을 나눈다"
-      },
-      {
-        "from": "탁은솔",
-        "type": "맹세",
-        "to": "동주하",
-        "basis": "동주하의 저울 봉인과 증언을 겹치고"
-      }
-    ]
-  }
+  ]
 }

@@ -4,16 +4,19 @@
 //   050 wiki_person 열, 090 person_detail json/json_ko(Kinship basis 포함), 110 산 사람·선대 노드의 timeline/affiliation/sourceRefs,
 //   115 retainer_graph 한 행(주군 칸에서 다시 만듦), 123 map_holding, 100 nonkorean_family basis와 clan 분파 이름·상태,
 //   public/portrait-tokens/*.json의 stateId·facts.role·옷과 장신구 문구(07장 9.2절 portrait 표)와 textToImage.
+//   public/person-details/*.json(초상 토큰 생성기 scripts/generate-portrait-tokens.mjs의 입력)은 이미 있는 파일만
+//   새 090 json_ko 기록 그대로 다시 쓴다. 옛 파일에만 있던 familyTree·sourceRefs·sources(옛 로어 경로와 옛 연대기 글)는
+//   090에 없으므로 함께 지워진다(계획 과제 27 메모, 07장 10절 처분 그대로).
 // 고정 사실(README, scripts/pages/v3-fixed-facts.mjs)은 쓰지 않는다. 입력 줄에 고정 키가 있으면 그 줄을 거부하고,
 // 쓰기 직전에 고정 칸이 바뀌었는지 다시 대조해 바뀌었으면 아무것도 쓰지 않는다(E_FIXED_WRITE).
 // 090·초상 토큰의 키 가운데 07장 10절 처분표(FIXED/REDESIGN/DROP)에 없는 것이 있으면 실패한다(E_UNDISPOSED_KEY).
 //
 // 사용법:
-//   node scripts/pages/v3-apply-people.mjs --check-only      [--input-dir docs/drafts/people] [--sql-dir data/sql] [--tokens-dir public/portrait-tokens]
+//   node scripts/pages/v3-apply-people.mjs --check-only      [--input-dir docs/drafts/people] [--sql-dir data/sql] [--tokens-dir public/portrait-tokens] [--details-dir public/person-details]
 //   node scripts/pages/v3-apply-people.mjs --dry-run         [... --recompute-stats]
 //   node scripts/pages/v3-apply-people.mjs [--recompute-stats] [--force-allocation] [--report <json>]
 //   --input-dir   입력 폴더. <faction>.jsonl이 없으면 <faction>/batch-*.jsonl을 이어 붙여 id 순으로 읽는다.
-//   --sql-dir     SQL 폴더(기본 SITE_SQL_DIR 또는 data/sql). --tokens-dir 초상 토큰 폴더.
+//   --sql-dir     SQL 폴더(기본 SITE_SQL_DIR 또는 data/sql). --tokens-dir 초상 토큰 폴더. --details-dir 인물 상세 사본 폴더.
 //   --recompute-stats  1,022명의 여섯 능력치를 deriveTableStats(v3 직업, 품계)로 다시 쓰고 sourceStatus를 ck3-table-derived로 둔다.
 //   --force-allocation 배치 오류(정원·자리 겹침·주군·나이·거점처럼 과제 30이 맞출 것)가 있어도 쓴다. 스키마·고정 사실 오류는 늘 막는다.
 //   --report      오류와 바뀐 수를 JSON으로 쓴다(저장소 밖 경로 권장).
@@ -844,7 +847,8 @@ function build(base, ctx, opts) {
   // 신앙
   const personFaith = (v) => {
     const pc = v.o.partCount;
-    if (v.o.faction_id === 'arc') return pc === null ? 'none' : pc >= 1 ? 'baptised' : 'unbaptised';
+    // 교주는 부위 수를 세지 않는다(07장 8.6절 partCount null). 세례를 여는 사람이지 '없음'이 아니다.
+    if (v.o.faction_id === 'arc') return pc === null ? 'hierophant' : pc >= 1 ? 'baptised' : 'unbaptised';
     return pc >= 1 ? 'fitted' : 'none';
   };
   // 보유지(07장 9.4절)
@@ -1167,6 +1171,20 @@ export function run(opts) {
     }
     changes['portrait tokens'] = n;
   }
+  // 인물 상세 사본(public/person-details): 이미 있는 파일만 새 090 json_ko로 다시 쓴다.
+  const detailOut = new Map();
+  if (opts.detailsDir && fs.existsSync(opts.detailsDir)) {
+    let n = 0;
+    for (const file of fs.readdirSync(opts.detailsDir).filter((x) => /^person-[0-9]{4}.json$/.test(x)).sort()) {
+      const nd = B.details090.get(file.replace(/.json$/, '')); if (!nd) continue;
+      const old = fs.readFileSync(path.join(opts.detailsDir, file), 'utf8');
+      const text = `${JSON.stringify(nd.ko, null, 2)}
+`;
+      if (text !== old) n++;
+      detailOut.set(file, text);
+    }
+    changes['person-details'] = n;
+  }
   if (fixedErrs.length) { const e = new Error(`E_FIXED_WRITE (${fixedErrs.length}): refused to write a FIXED field:\n${fixedErrs.slice(0, 30).join('\n')}`); e.code = 4; throw e; }
   const byteChanges = {}; const texts = {};
   for (const [name, f] of Object.entries(files)) { const t = sqlText(f); texts[name] = t; byteChanges[name] = t === f.text ? 'unchanged' : `${Buffer.byteLength(f.text)} -> ${Buffer.byteLength(t)} bytes`; }
@@ -1179,6 +1197,7 @@ export function run(opts) {
   }
   if (!opts.dryRun) for (const [name, f] of Object.entries(files)) fs.writeFileSync(f.file, texts[name]);
   if (!opts.dryRun) for (const [file, text] of tokenOut) fs.writeFileSync(path.join(opts.tokensDir, file), text);
+  if (!opts.dryRun) for (const [file, text] of detailOut) fs.writeFileSync(path.join(opts.detailsDir, file), text);
   return { mode: opts.dryRun ? 'dry-run' : 'apply', summary, changes, byteChanges, recompute: !!opts.recompute };
 }
 
@@ -1195,13 +1214,14 @@ function main() {
   const args = process.argv.slice(2);
   const flag = (n) => args.includes(n);
   const opt = (n, d) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : d; };
-  if (flag('--help') || flag('-h')) { process.stdout.write(fs.readFileSync(fileURLToPath(import.meta.url), 'utf8').split('\n').slice(1, 22).join('\n') + '\n'); process.exit(0); }
-  const known = ['--check-only', '--dry-run', '--recompute-stats', '--force-allocation', '--input-dir', '--sql-dir', '--tokens-dir', '--report', '--max'];
-  for (let i = 0; i < args.length; i++) { if (!known.includes(args[i])) { process.stderr.write(`unknown argument ${args[i]}\n`); process.exit(2); } if (['--input-dir', '--sql-dir', '--tokens-dir', '--report', '--max'].includes(args[i])) i++; }
+  if (flag('--help') || flag('-h')) { process.stdout.write(fs.readFileSync(fileURLToPath(import.meta.url), 'utf8').split('\n').slice(1, 23).join('\n') + '\n'); process.exit(0); }
+  const known = ['--check-only', '--dry-run', '--recompute-stats', '--force-allocation', '--input-dir', '--sql-dir', '--tokens-dir', '--details-dir', '--report', '--max'];
+  for (let i = 0; i < args.length; i++) { if (!known.includes(args[i])) { process.stderr.write(`unknown argument ${args[i]}\n`); process.exit(2); } if (['--input-dir', '--sql-dir', '--tokens-dir', '--details-dir', '--report', '--max'].includes(args[i])) i++; }
   const opts = {
     inputDir: path.resolve(opt('--input-dir', path.join(REPO, 'docs/drafts/people'))),
     sqlDir: path.resolve(opt('--sql-dir', process.env.SITE_SQL_DIR ?? path.join(REPO, 'data/sql'))),
     tokensDir: path.resolve(opt('--tokens-dir', path.join(REPO, 'public/portrait-tokens'))),
+    detailsDir: path.resolve(opt('--details-dir', path.join(REPO, 'public/person-details'))),
     checkOnly: flag('--check-only'), dryRun: flag('--dry-run'), recompute: flag('--recompute-stats'), forceAllocation: flag('--force-allocation'),
   };
   let res;

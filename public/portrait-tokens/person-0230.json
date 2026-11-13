@@ -3,26 +3,27 @@
   "personId": "person-0230",
   "characterId": "K229",
   "name": "소감",
-  "stateId": "S09",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "출자 전령, 오하늘의 실무 담당자"
+    "role": "화곡 구간장 · 자유도시들"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "very short buzz-cut hair",
-    "upper": "forest green short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "forest green short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "깃에 보랏빛 끈을 두른 짙은 녹갈색 합성 섬유 짧은 겉옷, 무릎과 팔꿈치에 덧댄 천",
+    "outfit": "깃에 보랏빛 끈을 두른 짙은 녹갈색 합성 섬유 짧은 겉옷, 무릎과 팔꿈치에 덧댄 천",
     "palette": [
-      "forest green",
-      "dove grey"
+      "olive brown",
+      "purple",
+      "leaf green"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "dove grey heavy twill trousers with knee patches",
-    "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "leather dispatch satchel"
+    "lower": "olive brown synthetic work trousers",
+    "footwear": "laced rubber boots",
+    "accessories": "canvas-grey seed pouch and a slate"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -173,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "knitted wool watch cap",
+        "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "forest green short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "깃에 보랏빛 끈을 두른 짙은 녹갈색 합성 섬유 짧은 겉옷, 무릎과 팔꿈치에 덧댄 천",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "dove grey heavy twill trousers with knee patches",
+        "value": "olive brown synthetic work trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "thick-soled leather winter boots with wool socks",
+        "value": "laced rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "turned-up jacket collar",
+        "value": "stand collar with a purple cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "leather dispatch satchel",
+        "value": "canvas-grey seed pouch and a slate",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat flap satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "worn brown leather",
+        "value": "grey and slate",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, brass buckle",
+        "value": "synthetic, slate",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the chest",
+        "value": "pouch and slate at the hip",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small pouch and flat slate",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 소감, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; black streaked with grey hair; very short length. build: soft rounded; skin: light olive. headwear: knitted wool watch cap; upper garment: forest green short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar. accessories: leather dispatch satchel; worn as strap across the chest. color palette: forest green, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 소감, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; black streaked with grey hair; very short length. build: soft rounded; skin: light olive. upper garment: 깃에 보랏빛 끈을 두른 짙은 녹갈색 합성 섬유 짧은 겉옷, 무릎과 팔꿈치에 덧댄 천; neckline: stand collar with a purple cord. accessories: canvas-grey seed pouch and a slate; worn as pouch and slate at the hip. color palette: olive brown, purple, leaf green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 소감, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; black streaked with grey hair; very short length. build: soft rounded; skin: light olive; average adult male height. headwear: knitted wool watch cap; upper garment: forest green short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: dove grey heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: forest green, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 소감, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; black streaked with grey hair; very short length. build: soft rounded; skin: light olive; average adult male height. upper garment: 깃에 보랏빛 끈을 두른 짙은 녹갈색 합성 섬유 짧은 겉옷, 무릎과 팔꿈치에 덧댄 천; neckline: stand collar with a purple cord; lower garment: olive brown synthetic work trousers; footwear: laced rubber boots. accessories: canvas-grey seed pouch and a slate; worn as pouch and slate at the hip. color palette: olive brown, purple, leaf green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 소감, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; black streaked with grey hair; very short length. build: soft rounded; skin: light olive; average adult male height. headwear: knitted wool watch cap; upper garment: forest green short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: dove grey heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: forest green, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 소감, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; black streaked with grey hair; very short length. build: soft rounded; skin: light olive; average adult male height. upper garment: 깃에 보랏빛 끈을 두른 짙은 녹갈색 합성 섬유 짧은 겉옷, 무릎과 팔꿈치에 덧댄 천; neckline: stand collar with a purple cord; lower garment: olive brown synthetic work trousers; footwear: laced rubber boots. accessories: canvas-grey seed pouch and a slate; worn as pouch and slate at the hip. color palette: olive brown, purple, leaf green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 소감, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; black streaked with grey hair; very short length. build: soft rounded; skin: light olive; average adult male height. headwear: knitted wool watch cap; upper garment: forest green short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: dove grey heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: forest green, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 소감, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; black streaked with grey hair; very short length. build: soft rounded; skin: light olive; average adult male height. upper garment: 깃에 보랏빛 끈을 두른 짙은 녹갈색 합성 섬유 짧은 겉옷, 무릎과 팔꿈치에 덧댄 천; neckline: stand collar with a purple cord; lower garment: olive brown synthetic work trousers; footwear: laced rubber boots. accessories: canvas-grey seed pouch and a slate; worn as pouch and slate at the hip. color palette: olive brown, purple, leaf green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 소감, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; black streaked with grey hair; very short length. build: soft rounded; skin: light olive; average adult male height. headwear: knitted wool watch cap; upper garment: forest green short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: dove grey heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: forest green, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 소감, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. very short buzz-cut hair; black streaked with grey hair; very short length. build: soft rounded; skin: light olive; average adult male height. upper garment: 깃에 보랏빛 끈을 두른 짙은 녹갈색 합성 섬유 짧은 겉옷, 무릎과 팔꿈치에 덧댄 천; neckline: stand collar with a purple cord; lower garment: olive brown synthetic work trousers; footwear: laced rubber boots. accessories: canvas-grey seed pouch and a slate; worn as pouch and slate at the hip. color palette: olive brown, purple, leaf green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

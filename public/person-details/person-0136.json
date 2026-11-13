@@ -1,398 +1,133 @@
 {
   "id": "person-0136",
   "name": "설봄이",
-  "title": "고덕기지 비상발전 운전장",
-  "position": "고덕기지 비상발전 운전장",
+  "title": "강동역 정비장",
+  "position": "강동역 정비장 · 아크",
   "characterId": "K135",
-  "rank": "중대장",
+  "rank": "정비장",
   "commonTier": "T4",
-  "occupation": "비상발전 연료·출력 운전",
+  "occupation": "정비대 통솔",
   "gender": "남성",
   "stage": "S2",
-  "state": "S05",
-  "stateName": "동방사",
-  "sourceRoute": "/world/Cast-State-05#인물-설봄이",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0136",
   "birthDate": "2082-11-14",
   "birthday": "11-14",
   "age": 44,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-05.json#/content/49",
-    "lore/characters/Cast-State-05.json#/content/51"
-  ],
-  "familyTree": {
-    "personId": "K135",
-    "nodes": [
-      {
-        "id": "K135",
-        "personId": "K135",
-        "kind": "person",
-        "name": "설봄이",
-        "birthDate": "2082-11-14",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K135"
-          },
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-설봄이-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 고덕기지 비상발전 운전장 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-설봄이-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0136"
-      },
-      {
-        "id": "FH-K135-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "설승호",
-        "lineage": {
-          "surname": "설",
-          "bongwan": "순창",
-          "clan": "c124-c21c-cc3d"
-        },
-        "birthDate": "2052-11-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-설봄이-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2090,
-            "summary": "설승호는 신정 차량기지에서 비상발전 연료·출력 운전 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-설봄이-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K135-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "설승민",
-        "lineage": {
-          "surname": "설",
-          "bongwan": "순창",
-          "clan": "c124-c21c-cc3d"
-        },
-        "birthDate": "2022-11-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-설봄이-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "설승민은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-설봄이-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K135-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정현진",
-        "birthDate": "2052-11-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-설봄이-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2090,
-            "summary": "정현진은 신정 차량기지에서 비상발전 연료·출력 운전 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-설봄이-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K135-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승섭",
-        "birthDate": "2022-11-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-설봄이-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤승섭은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-설봄이-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K135-P-01:K135:biological",
-        "from": "FH-K135-P-01",
-        "to": "K135",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-설봄이-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K135-P-02:FH-K135-P-01:biological",
-        "from": "FH-K135-P-02",
-        "to": "FH-K135-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-설봄이-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K135-M-01:K135:biological",
-        "from": "FH-K135-M-01",
-        "to": "K135",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-설봄이-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K135-M-02:FH-K135-M-01:biological",
-        "from": "FH-K135-M-02",
-        "to": "FH-K135-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-설봄이-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c124-c21c-cc3d",
+    "name": "순창 설씨",
+    "crest": "clan-crests/c124-c21c-cc3d.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "설봄이의 강동역 정비대는 셋째 교대가 되면 지상 출입구 당번을 마치고 내려온 미세례자들을 정비대 곁 따뜻한 칸에 먼저 눕힌다. 마흔넷의 정비장인 그는 정비대의 열을 세례자만의 것으로 여기지 않는다. 암사의 정비공 설강우가 천호를 거쳐 강동역에 들르면, 순창 설씨 두 사람은 서로의 연장 주머니부터 바꾸어 들여다본다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "강동역 정비장",
+    "품계": "정비장",
+    "생업": "정비대 통솔",
+    "일하는 역": "강동역",
+    "잠자는 역": "강동역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 3
+  },
+  "sections": {
+    "생애": "설봄이의 강동역 정비대는 셋째 교대가 되면 지상 출입구 당번을 마치고 내려온 미세례자들을 정비대 곁 따뜻한 칸에 먼저 눕힌다. 마흔넷의 정비장인 그는 정비대의 열을 세례자만의 것으로 여기지 않는다. 암사의 정비공 설강우가 천호를 거쳐 강동역에 들르면, 순창 설씨 두 사람은 서로의 연장 주머니부터 바꾸어 들여다본다.",
+    "관직": "직함 강동역 정비장. 직위 강동역 정비장 · 아크. 품계 정비장. 일하는 역 강동역."
+  },
+  "values": {
+    "권위": 85,
+    "개방": -50,
+    "무력": 60,
+    "물질": -30,
+    "공동": 55,
+    "원칙": -30,
+    "공개": -85,
+    "자격": -65,
+    "분산": -70,
+    "변혁": 20
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": -30,
+    "위험": -25,
+    "과시": 10,
+    "지속": 5,
+    "지향": "동성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0136",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "설봄이",
+        "type": "지휘",
+        "to": "양필호",
+        "basis": "성내2동 대피소장 양필호의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "person-0125",
+    "name": "양필호",
+    "courtId": "court:person-0125",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "management": {
-        "base": 11,
-        "effective": 11
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 11,
-        "effective": 11
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k135-generator-output",
-        "name": {
-          "ko": "발전 출력 운전",
-          "en": "Generator output operation"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k135-choice",
-        "name": {
-          "ko": "은폐 배전 거부",
-          "en": "Rejects concealed allocation"
-        },
-        "description": {
-          "ko": "연료 냄새에 예민하고 구두 배전을 싫어한다. 정수 전동기보다 훈련장 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.",
-          "en": "Sensitive to the smell of fuel, she hated verbal power routing. She took the political pressure to divert power from the purification motors to the training-ground lighting as an insult."
-        },
-        "behavior": {
-          "ko": "일화. 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 고덕기지 비상발전 운전장 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In 2125 he felt out a wheel defect just short of a siding derailment and stopped the train. By this deed the signature of the Godeok depot emergency generator operator post rose into the ledger."
-        },
-        "stress": {
-          "ko": "공포. 연료가 바닥난 밤에 수문이 수동으로만 돌아가고, 그 공백을 보호군 파견이 메우는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That on a night when the fuel ran dry the water gates would turn by hand alone, and the protection force's dispatch would fill the gap. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 양기석의 유치선 전력 배분을 발전 쪽에서 받치고, 양필호의 시운전에 출력을 맞추며, 배우진의 복구 실적 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
-          "en": "Relations. Backed Yang Giseok's siding power distribution from the generation side, matched output to Yang Pilho's trials, and had obeyed Bae Woojin's restoration-record disclosure but refused concealed power routing."
-        },
-        "effects": []
-      },
-      {
-        "id": "k135-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 중대장. 직함은 고덕기지 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 양기석에게 보내고, 최저 출력 이하면 사령의 독촉이 있어도 군수 배전을 끊는다.",
-          "en": "Office. Rank: company commander. Title: Godeok depot emergency generator operator. Every shift she sealed the fuel remainder and output logs and sent them to Yang Giseok, and below minimum output she cut the munitions power even under the commander's urging."
-        },
-        "behavior": {
-          "ko": "관직. 품계 중대장. 직함은 고덕기지 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 양기석에게 보내고, 최저 출력 이하면 사령의 독촉이 있어도 군수 배전을 끊는다.",
-          "en": "Office. Rank: company commander. Title: Godeok depot emergency generator operator. Every shift she sealed the fuel remainder and output logs and sent them to Yang Giseok, and below minimum output she cut the munitions power even under the commander's urging."
-        },
-        "stress": {
-          "ko": "공포. 연료가 바닥난 밤에 수문이 수동으로만 돌아가고, 그 공백을 보호군 파견이 메우는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That on a night when the fuel ran dry the water gates would turn by hand alone, and the protection force's dispatch would fill the gap. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 양기석의 유치선 전력 배분을 발전 쪽에서 받치고, 양필호의 시운전에 출력을 맞추며, 배우진의 복구 실적 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
-          "en": "Relations. Backed Yang Giseok's siding power distribution from the generation side, matched output to Yang Pilho's trials, and had obeyed Bae Woojin's restoration-record disclosure but refused concealed power routing."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "일화. 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 고덕기지 비상발전 운전장 자리의 서명이 장부에 올랐다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Anecdote. In 2125 he felt out a wheel defect just short of a siding derailment and stopped the train. By this deed the signature of the Godeok depot emergency generator operator post rose into the ledger. Titles and ambitions are not treated as accomplished authority or results."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -402,7 +137,7 @@
         {
           "id": "right-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "head",
@@ -418,69 +153,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c124-c21c-cc3d",
-    "name": "순창 설씨",
-    "crest": "clan-crests/c124-c21c-cc3d.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 60,
-    "개방": -35,
-    "무력": 50,
-    "물질": 20,
-    "공동": 35,
-    "원칙": -20,
-    "공개": -40,
-    "자격": -30,
-    "분산": -40,
-    "변혁": -25
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": -30,
-    "위험": -25,
-    "과시": 10,
-    "지속": 5,
-    "지향": "동성",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "동방사",
-    "생업": "비상발전 연료·출력 운전",
-    "품계": "중대장",
-    "직함": "고덕기지 비상발전 운전장",
-    "가치관": "권위 60 | 개방 −35 | 무력 50 | 물질 20 | 공동 35 | 원칙 −20 | 공개 −40 | 자격 −30 | 분산 −40 | 변혁 −25",
-    "욕망": "갈망 30 | 독점 −30 | 위험 −25 | 과시 10 | 지속 5 | 지향 동성 | 결합 없음"
-  },
-  "sections": {
-    "관직": "품계 중대장. 직함은 고덕기지 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 양기석에게 보내고, 최저 출력 이하면 사령의 독촉이 있어도 군수 배전을 끊는다.\n\n일화. 설봄이는 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다.",
-    "관계": "양기석의 유치선 전력 배분을 발전 쪽에서 받치고, 시운전에 출력을 맞추며, 배우진의 복구 실적 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
-    "야망": "고덕 비상 발전과 암사 펌프 전력을 하나의 공개 배전망으로 묶어 동부 원수의 품질 주권을 지킨다.\n\n공포. 설봄이는 연료가 바닥난 밤에 수문이 수동으로만 돌아가고, 그 공백을 보호군 파견이 메우는 일을 두려워한다.",
-    "개입": "대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다."
-  },
-  "biography": "설봄이는 연료 냄새에 예민하고 구두 배전을 싫어한다. 정수 전동기보다 훈련장 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.\n\n- 소속: 동방사\n- 생업: 비상발전 연료·출력 운전\n- 품계: 중대장\n- 직함: 고덕기지 비상발전 운전장\n생애. 설봄이는 3세대에 태어났다. 설봄이는 신정 차량기지에서 자랐다. 설봄이의 고덕기지 비상발전 운전장 자리는 탈선 직전 결함 보고로 열렸다.\n- 설봄이는 고덕2동과 연결된 업무에서 비상발전 연료·출력 봉인을 관리하고 최저 출력에 못 미치면 군수 배전을 차단한다.\n\n**관직.** 품계 중대장. 직함은 고덕기지 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 양기석에게 보내고, 최저 출력 이하면 사령의 독촉이 있어도 군수 배전을 끊는다.\n\n일화. 설봄이는 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다.\n\n**관계.** 양기석의 유치선 전력 배분을 발전 쪽에서 받치고, 시운전에 출력을 맞추며, 배우진의 복구 실적 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 고덕 비상 발전과 암사 펌프 전력을 하나의 공개 배전망으로 묶어 동부 원수의 품질 주권을 지킨다.\n\n공포. 설봄이는 연료가 바닥난 밤에 수문이 수동으로만 돌아가고, 그 공백을 보호군 파견이 메우는 일을 두려워한다.\n\n**개입.** 대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 60 | 개방 −35 | 무력 50 | 물질 20 | 공동 35 | 원칙 −20 | 공개 −40 | 자격 −30 | 분산 −40 | 변혁 −25\n- 욕망: 갈망 30 | 독점 −30 | 위험 −25 | 과시 10 | 지속 5 | 지향 동성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-05"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "설봄이",
-        "type": "계약",
-        "to": "배우진",
-        "basis": "배우진의 복구 실적 공개에는 복종하되 은폐 배전은 거부한다"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:강동",
+      "name": {
+        "ko": "강동역"
       },
-      {
-        "from": "설봄이",
-        "type": "계약",
-        "to": "양기석",
-        "basis": "양기석의 유치선 전력 배분을 발전 쪽에서 받치고"
-      }
-    ],
-    "incoming": []
-  }
+      "holderPersonId": "K135",
+      "directLiegePersonId": "person-0125",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "강동",
+        "stationName": "강동"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1174065000",
+          "name": "성내2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

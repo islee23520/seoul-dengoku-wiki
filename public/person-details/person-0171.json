@@ -1,387 +1,190 @@
 {
   "id": "person-0171",
   "name": "알렉산더 밀러",
-  "title": "선로 가문 원로",
-  "position": "선로 가문 원로",
+  "title": "서대문구 국회의원",
+  "position": "서대문구 국회의원 · 정부",
   "characterId": "K170",
-  "rank": "본부장",
-  "commonTier": "T2",
-  "occupation": "선로 봉쇄 승인·전환기 통제",
+  "rank": "국회의원",
+  "commonTier": "T1",
+  "occupation": "구 행정",
   "gender": "남성",
   "stage": "S1",
-  "state": "S07",
-  "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-알렉산더 밀러",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0171",
   "birthDate": "2059-03-06",
   "birthday": "03-06",
   "age": 67,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-07.json#/content/5",
-    "lore/characters/Cast-State-07.json#/content/6",
-    "lore/characters/Cast-State-07.json#/content/10",
-    "lore/characters/Cast-State-07.json#/content/12"
-  ],
-  "familyTree": {
-    "personId": "K170",
-    "nodes": [
-      {
-        "id": "K170",
-        "personId": "K170",
-        "kind": "person",
-        "name": "알렉산더 밀러",
-        "birthDate": "2059-03-06",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K170"
-          },
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-알렉산더-밀러-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 선로 가문 원로 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-알렉산더-밀러-list2"
-              }
-            ]
-          }
-        ],
-        "nameEn": "Alexander Miller",
-        "detailRoute": "/people/person-0171"
-      },
-      {
-        "id": "FH-K170-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "로버트 밀러",
-        "birthDate": "2029-03-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-알렉산더-밀러-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "로버트 밀러는 2029년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2047년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-알렉산더-밀러-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Robert Miller was born in 2029 and grew up reading family and work records. From 2047, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Robert Miller",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K170-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "제임스 밀러",
-        "birthDate": "1999-03-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-알렉산더-밀러-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "제임스 밀러는 2030년 대정전 당시 용산·이태원 생활권에서 미 육군 보급 업무를 맡고 있었다. 연락이 끊긴 뒤 남은 물자와 인계받은 사람을 종이에 적었다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-알렉산더-밀러-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "James Miller was in the family's local community when communications failed in 2030. Serving in US Army logistics, he recorded remaining supplies and their recipients."
-          }
-        ],
-        "nameEn": "James Miller",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K170-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "헬렌 테일러",
-        "birthDate": "2029-03-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-알렉산더-밀러-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "헬렌 테일러는 2029년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2047년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-알렉산더-밀러-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Helen Taylor was born in 2029 and grew up reading family and work records. From 2047, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Helen Taylor",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K170-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "앨리스 테일러",
-        "birthDate": "1999-03-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-알렉산더-밀러-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "앨리스 테일러는 2030년 대정전 당시 용산·이태원 생활권에서 용산의 민간 창고 관리와 이태원 숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-알렉산더-밀러-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Alice Taylor was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
-          }
-        ],
-        "nameEn": "Alice Taylor",
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K170-P-01:K170:biological",
-        "from": "FH-K170-P-01",
-        "to": "K170",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-알렉산더-밀러-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K170-P-02:FH-K170-P-01:biological",
-        "from": "FH-K170-P-02",
-        "to": "FH-K170-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-알렉산더-밀러-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K170-M-01:K170:biological",
-        "from": "FH-K170-M-01",
-        "to": "K170",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-알렉산더-밀러-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K170-M-02:FH-K170-M-01:biological",
-        "from": "FH-K170-M-02",
-        "to": "FH-K170-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-알렉산더-밀러-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": null,
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "서대문구 국회의원이자 밀러 집안의 세대주다. 충정로역 구청에서 마포 공덕 장터로 들어오는 강 건너 물자의 몫이 끊기지 않게 하는 것이 그의 일이다. 국회의원 가운데 나이가 가장 많아, 다음 추대가 열리면 그날의 회의를 주재하고 권한대행으로 결재하게 된다. 집안 후계로 지명한 아이작 워커에게 구 고시 쓰는 법과 선로 위 손수레를 부리는 법을 손수 가르친다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "서대문구 국회의원",
+    "품계": "국회의원",
+    "생업": "구 행정",
+    "일하는 역": "충정로역",
+    "잠자는 역": "충정로역",
+    "가구": "혼자 사는 가구"
   },
-  "proseContacts": [],
+  "sections": {
+    "생애": "서대문구 국회의원이자 밀러 집안의 세대주다. 충정로역 구청에서 마포 공덕 장터로 들어오는 강 건너 물자의 몫이 끊기지 않게 하는 것이 그의 일이다. 국회의원 가운데 나이가 가장 많아, 다음 추대가 열리면 그날의 회의를 주재하고 권한대행으로 결재하게 된다. 집안 후계로 지명한 아이작 워커에게 구 고시 쓰는 법과 선로 위 손수레를 부리는 법을 손수 가르친다.",
+    "관직": "직함 서대문구 국회의원. 직위 서대문구 국회의원 · 정부. 품계 국회의원. 일하는 역 충정로역."
+  },
+  "values": {
+    "권위": 55,
+    "개방": -30,
+    "무력": 25,
+    "물질": 15,
+    "공동": 5,
+    "원칙": 20,
+    "공개": -40,
+    "자격": 50,
+    "분산": -45,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": -15,
+    "위험": -25,
+    "과시": -15,
+    "지속": 30,
+    "지향": "무성향",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0171",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "알렉산더 밀러",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "알렉산더 밀러",
+        "type": "스승과 제자",
+        "to": "아이작 워커",
+        "basis": "집안 후계에게 구 고시 쓰는 법과 선로 위 손수레 부리는 법을 가르친다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "아이작 워커",
+        "type": "지휘",
+        "to": "알렉산더 밀러",
+        "basis": "서대문구 국회의원 알렉산더 밀러의 직속"
+      },
+      {
+        "from": "모국",
+        "type": "지휘",
+        "to": "알렉산더 밀러",
+        "basis": "서대문구 국회의원 알렉산더 밀러의 직속"
+      },
+      {
+        "from": "수효은",
+        "type": "지휘",
+        "to": "알렉산더 밀러",
+        "basis": "서대문구 국회의원 알렉산더 밀러의 직속"
+      },
+      {
+        "from": "손강연",
+        "type": "지휘",
+        "to": "알렉산더 밀러",
+        "basis": "서대문구 국회의원 알렉산더 밀러의 직속"
+      },
+      {
+        "from": "아이작 워커",
+        "type": "스승과 제자",
+        "to": "알렉산더 밀러",
+        "basis": "국회의원 알렉산더 밀러에게서 구 고시와 선로 운행을 배운다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K170",
+    "members": [
+      {
+        "personId": "K172",
+        "name": "아이작 워커"
+      },
+      {
+        "personId": "K234",
+        "name": "모국"
+      },
+      {
+        "personId": "K339",
+        "name": "수효은"
+      },
+      {
+        "personId": "person-0915",
+        "name": "손강연"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 11,
-        "effective": 11
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 10,
         "effective": 10
       },
-      "negotiation": {
-        "base": 12,
-        "effective": 12
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "learning": {
+      "intrigue": {
         "base": 7,
         "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 5,
-        "effective": 5
       }
     },
     "skills": [
       {
-        "id": "switch-control",
-        "name": {
-          "ko": "전환기 통제",
-          "en": "Switch control"
-        },
-        "rating": 60
+        "id": "s17-0171-chair",
+        "name": "회의 주재",
+        "rating": 77
       }
     ],
     "traits": [
       {
-        "id": "k170-disposition",
-        "name": {
-          "ko": "혈통 거부권",
-          "en": "Hereditary veto"
-        },
-        "description": {
-          "ko": "가문의 궤도를 혈통으로 보고 양자를 손님으로 대한다. 겉으로는 예의를 지키지만 배차 거부권만은 절대 놓지 않는다.",
-          "en": "He saw the house's rails as bloodline and treated the adopted child as a guest. Outwardly he kept his manners, but he never let go of the dispatch veto."
-        },
-        "behavior": {
-          "ko": "관직. 품계 본부장. 직함은 선로 가문 원로. 가문 회의에서만 선로 봉쇄를 승인하고, 도제 숙소의 배급을 끊는 방식으로 조정관을 압박한다.",
-          "en": "Office. Rank: bureau chief. Title: track house elder. He allowed track blockades only in the house council and pressed the Coordinator by cutting the apprentice lodge's rations."
-        },
-        "stress": {
-          "ko": "공포. 사방 강국이 용산을 전쟁터로 쓰면서 가문 창고의 환적 독점까지 빼앗기는 것.",
-          "en": "Fear. That the surrounding great powers would use Yongsan as a battlefield and strip even the house warehouse's transshipment monopoly."
-        },
-        "relationship": {
-          "ko": "관계. 박태겸과 후계를 놓고 경쟁하며 임초원의 귀환 열차를 억류했다. 클라라 베넷을 가문 측 배차로 부리고, 황노을에게는 창동 차륜 공급을 조건으로 건다.",
-          "en": "Relations. Contested the succession with Park Taegyeom and detained Im Chowon's return train. Used Clara Bennett as the house-side dispatcher and set the Changdong wheel supply as a condition for Hwang Noeul."
-        },
-        "effects": []
-      },
-      {
-        "id": "k170-choice",
-        "name": {
-          "ko": "배급을 지렛대로",
-          "en": "Ration leverage"
-        },
-        "description": {
-          "ko": "일화. 임초원을 태운 열차가 용산 창에 들어오자 선로 전환기를 잠그고 후국회의를 소집했다.",
-          "en": "Anecdote. When the train carrying Im Chowon entered the Yongsan warehouse, he locked the track switch and convened the Post-State Council."
-        },
-        "behavior": {
-          "ko": "관계. 박태겸과 후계를 놓고 경쟁하며 임초원의 귀환 열차를 억류했다. 클라라 베넷을 가문 측 배차로 부리고, 황노을에게는 창동 차륜 공급을 조건으로 건다.",
-          "en": "Relations. Contested the succession with Park Taegyeom and detained Im Chowon's return train. Used Clara Bennett as the house-side dispatcher and set the Changdong wheel supply as a condition for Hwang Noeul."
-        },
-        "stress": {
-          "ko": "공포. 사방 강국이 용산을 전쟁터로 쓰면서 가문 창고의 환적 독점까지 빼앗기는 것.",
-          "en": "Fear. That the surrounding great powers would use Yongsan as a battlefield and strip even the house warehouse's transshipment monopoly."
-        },
-        "relationship": {
-          "ko": "관계. 박태겸과 후계를 놓고 경쟁하며 임초원의 귀환 열차를 억류했다. 클라라 베넷을 가문 측 배차로 부리고, 황노을에게는 창동 차륜 공급을 조건으로 건다.",
-          "en": "Relations. Contested the succession with Park Taegyeom and detained Im Chowon's return train. Used Clara Bennett as the house-side dispatcher and set the Changdong wheel supply as a condition for Hwang Noeul."
-        },
+        "id": "t17-0171-senior",
+        "name": "나이 많은 주재자",
+        "description": "자기가 다음 추대를 주재하게 된다는 것을 늘 의식한다.",
+        "behavior": "의원들의 다툼에 끼지 않고 끝까지 듣는다.",
+        "stress": "대통령의 건강에 관한 소문이 돌면 말을 아낀다.",
+        "relationship": "후계를 제자처럼 가르친다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "전환기를 잠그고 회의를 소집했다. 후계 경쟁에서 배급과 부품 공급을 압박 수단으로 쓰지만 전장 지휘의 근거는 없다.",
-      "en": "He locked the switch and summoned the council. He uses rations and parts in the succession dispute; battlefield command is not established."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -419,81 +222,100 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": null,
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 10,
-    "개방": 25,
-    "무력": -10,
-    "물질": 20,
-    "공동": 0,
-    "원칙": 0,
-    "공개": -15,
-    "자격": 35,
-    "분산": 5,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": -15,
-    "위험": -25,
-    "과시": -15,
-    "지속": 30,
-    "지향": "무성향",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "환적국",
-    "품계": "본부장",
-    "생업": "선로 봉쇄 승인·전환기 통제",
-    "직함": "선로 가문 원로",
-    "가치관": "권위 10 | 개방 25 | 무력 −10 | 물질 20 | 공동 0 | 원칙 0 | 공개 −15 | 자격 35 | 분산 5 | 변혁 0",
-    "욕망": "갈망 30 | 독점 −15 | 위험 −25 | 과시 −15 | 지속 30 | 지향 무성향 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2059년생인 알렉산더 밀러는 2126년 개막기에 선로 가문 원로 업무를 맡는다. 대합실 당직에서 자랐다. 선로 가문 원로 업무는 교대 무단 결근 대체 당직을 계기로 시작됐다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 제임스 밀러는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 알렉산더 밀러의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 알렉산더 밀러의 선로 봉쇄 승인·전환기 통제 업무는 한강로동과 연결된다.",
-    "관직": "품계 본부장. 직함은 선로 가문 원로. 가문 회의에서만 선로 봉쇄를 승인하고, 도제 숙소의 배급을 끊는 방식으로 조정관을 압박한다.",
-    "일화": "임초원을 태운 열차가 용산 창에 들어오자 선로 전환기를 잠그고 후국회의를 소집했다.",
-    "관계": "박태겸과 후계를 놓고 경쟁하며 임초원의 귀환 열차를 억류했다. 클라라 베넷을 가문 측 배차로 부리고, 황노을에게는 창동 차륜 공급을 조건으로 건다.",
-    "야망": "박태겸의 도제 승계를 무효로 돌리고 선로 가문이 후국회의의 최종 거부권을 세습하게 한다.",
-    "공포": "사방 강국이 용산을 전쟁터로 쓰면서 가문 창고의 환적 독점까지 빼앗기는 것.",
-    "개입": "전환기 열쇠를 훔치거나, 가문회의에서 양자 승계를 공개 지지할 수 있다."
-  },
-  "biography": "가문의 궤도를 혈통으로 보고 양자를 손님으로 대한다. 겉으로는 예의를 지키지만 배차 거부권만은 절대 놓지 않는다.\n\n- 소속: 환적국\n- 품계: 본부장\n- 생업: 선로 봉쇄 승인·전환기 통제\n- 직함: 선로 가문 원로\n**생애.** 2059년생인 알렉산더 밀러는 2126년 개막기에 선로 가문 원로 업무를 맡는다. 대합실 당직에서 자랐다. 선로 가문 원로 업무는 교대 무단 결근 대체 당직을 계기로 시작됐다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 제임스 밀러는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 알렉산더 밀러의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 알렉산더 밀러의 선로 봉쇄 승인·전환기 통제 업무는 한강로동과 연결된다.\n\n**관직.** 품계 본부장. 직함은 선로 가문 원로. 가문 회의에서만 선로 봉쇄를 승인하고, 도제 숙소의 배급을 끊는 방식으로 조정관을 압박한다.\n\n**일화.** 임초원을 태운 열차가 용산 창에 들어오자 선로 전환기를 잠그고 후국회의를 소집했다.\n\n**관계.** 박태겸과 후계를 놓고 경쟁하며 임초원의 귀환 열차를 억류했다. 클라라 베넷을 가문 측 배차로 부리고, 황노을에게는 창동 차륜 공급을 조건으로 건다.\n\n**야망.** 박태겸의 도제 승계를 무효로 돌리고 선로 가문이 후국회의의 최종 거부권을 세습하게 한다.\n\n**공포.** 사방 강국이 용산을 전쟁터로 쓰면서 가문 창고의 환적 독점까지 빼앗기는 것.\n\n**개입.** 전환기 열쇠를 훔치거나, 가문회의에서 양자 승계를 공개 지지할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 25 | 무력 −10 | 물질 20 | 공동 0 | 원칙 0 | 공개 −15 | 자격 35 | 분산 5 | 변혁 0\n- 욕망: 갈망 30 | 독점 −15 | 위험 −25 | 과시 −15 | 지속 30 | 지향 무성향 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-07"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:duchy:11410",
+      "name": {
+        "ko": "서대문구 공작령"
+      },
+      "holderPersonId": "K170",
+      "directLiegePersonId": "K144",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1141052000",
+          "name": "천연동"
+        },
+        {
+          "id": "region:1141055500",
+          "name": "북아현동"
+        },
+        {
+          "id": "region:1141056500",
+          "name": "충현동"
+        },
+        {
+          "id": "region:1141058500",
+          "name": "신촌동"
+        },
+        {
+          "id": "region:1141061500",
+          "name": "연희동"
+        },
+        {
+          "id": "region:1141062000",
+          "name": "홍제1동"
+        },
+        {
+          "id": "region:1141064000",
+          "name": "홍제3동"
+        },
+        {
+          "id": "region:1141065500",
+          "name": "홍제2동"
+        },
+        {
+          "id": "region:1141066000",
+          "name": "홍은1동"
+        },
+        {
+          "id": "region:1141068500",
+          "name": "홍은2동"
+        },
+        {
+          "id": "region:1141069000",
+          "name": "남가좌1동"
+        },
+        {
+          "id": "region:1141070000",
+          "name": "남가좌2동"
+        },
+        {
+          "id": "region:1141071000",
+          "name": "북가좌1동"
+        },
+        {
+          "id": "region:1141072000",
+          "name": "북가좌2동"
+        }
+      ],
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11410",
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
   ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "알렉산더 밀러",
-        "type": "경쟁",
-        "to": "박태겸",
-        "basis": "선로 가문 후계를 역장과 겨룸"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:dong:1141056500",
+      "name": {
+        "ko": "충현동"
       },
-      {
-        "from": "알렉산더 밀러",
-        "type": "원한",
-        "to": "임초원",
-        "basis": "귀환 열차를 억류한 원한"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "클라라 베넷",
-        "type": "지휘",
-        "to": "알렉산더 밀러",
-        "basis": "가문 배차 지휘를 받음"
-      },
-      {
-        "from": "황노을",
-        "type": "계약",
-        "to": "알렉산더 밀러",
-        "basis": "차륜 공급 조건을 선로 가문과 거래"
-      }
-    ]
-  }
+      "holderPersonId": "K339",
+      "directLiegePersonId": "K170",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1141056500",
+          "name": "충현동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "수효은",
+      "holderRoute": "/people/person-0340"
+    }
+  ]
 }

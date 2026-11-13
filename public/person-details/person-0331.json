@@ -1,494 +1,105 @@
 {
   "id": "person-0331",
   "name": "방한울",
-  "title": "중증도 진료 의무원, 은채윤의 실무 담당자",
-  "position": "중증도 진료 의무원, 은채윤의 실무 담당자",
+  "title": "구 부대 지휘관",
+  "position": "구 부대 지휘관 · 북한산보국문역",
   "characterId": "K330",
-  "rank": "수련의",
-  "commonTier": "T3",
-  "occupation": "중증도 표·진료 소견 게시",
+  "rank": "대위",
+  "commonTier": "T5",
+  "occupation": "군 지휘",
   "gender": "남성",
   "stage": "S2",
-  "state": "S13",
-  "stateName": "흰십자단",
-  "sourceRoute": "/world/Cast-State-13#인물-방한울",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0331",
   "birthDate": "2093-01-06",
   "birthday": "01-06",
   "age": 33,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-13.json#/content/127",
-    "lore/characters/Cast-State-13.json#/content/129",
-    "lore/characters/Cast-State-13.json#/content/130"
-  ],
-  "familyTree": {
-    "personId": "K330",
-    "nodes": [
-      {
-        "id": "K330",
-        "personId": "K330",
-        "kind": "person",
-        "name": "방한울",
-        "birthDate": "2093-01-06",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K330"
-          },
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방한울-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 중증도 진료 수련의 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-방한울-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0331"
-      },
-      {
-        "id": "FH-K330-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "방승석",
-        "lineage": {
-          "surname": "방",
-          "bongwan": "온양",
-          "clan": "bc29-c628-c591"
-        },
-        "birthDate": "2063-01-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방한울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2101,
-            "summary": "방승석은 제기동 의무소에서 중증도 표·진료 소견 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-방한울-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K330-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "방승준",
-        "lineage": {
-          "surname": "방",
-          "bongwan": "온양",
-          "clan": "bc29-c628-c591"
-        },
-        "birthDate": "2033-01-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방한울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2071,
-            "summary": "방승준은 제기동 의무소에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-방한울-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K330-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "방승호",
-        "lineage": {
-          "surname": "방",
-          "bongwan": "온양",
-          "clan": "bc29-c628-c591"
-        },
-        "birthDate": "2003-01-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방한울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "방승호는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-방한울-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K330-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강준진",
-        "birthDate": "2063-01-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방한울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2101,
-            "summary": "강준진은 제기동 의무소에서 중증도 표·진료 소견 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-방한울-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K330-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임준진",
-        "birthDate": "2033-01-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방한울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2071,
-            "summary": "임준진은 제기동 의무소에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-방한울-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K330-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "오준민",
-        "birthDate": "2003-01-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방한울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오준민은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-방한울-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K330-P-01:K330:biological",
-        "from": "FH-K330-P-01",
-        "to": "K330",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방한울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K330-P-02:FH-K330-P-01:biological",
-        "from": "FH-K330-P-02",
-        "to": "FH-K330-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방한울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K330-P-03:FH-K330-P-02:biological",
-        "from": "FH-K330-P-03",
-        "to": "FH-K330-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방한울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K330-M-01:K330:biological",
-        "from": "FH-K330-M-01",
-        "to": "K330",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방한울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K330-M-02:FH-K330-M-01:biological",
-        "from": "FH-K330-M-02",
-        "to": "FH-K330-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방한울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K330-M-03:FH-K330-M-02:biological",
-        "from": "FH-K330-M-03",
-        "to": "FH-K330-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-방한울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bc29-c628-c591",
+    "name": "온양 방씨",
+    "crest": "clan-crests/bc29-c628-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "방한울은 서른세 살에 성북구 부대 지휘관을 맡은 대위다. 북한산보국문역에서 북한산 테두리 쪽 감시초소 여섯 곳을 맡고, 북서풍이 부는 날이면 초소마다 교대 시간을 반으로 줄여, 망원경 앞에서 언 채로 서 있는 병사가 없게 한다. 그는 초소 망원경으로 본 테두리 기계의 움직임을 날마다 같은 시각에 적어, 한 해 치를 겹쳐 보면 기계가 어느 철에 가까이 오는지 알 수 있게 해 두었다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "구 부대 지휘관",
+    "품계": "대위",
+    "생업": "군 지휘",
+    "일하는 역": "북한산보국문역",
+    "잠자는 역": "북한산보국문역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "방한울은 서른세 살에 성북구 부대 지휘관을 맡은 대위다. 북한산보국문역에서 북한산 테두리 쪽 감시초소 여섯 곳을 맡고, 북서풍이 부는 날이면 초소마다 교대 시간을 반으로 줄여, 망원경 앞에서 언 채로 서 있는 병사가 없게 한다. 그는 초소 망원경으로 본 테두리 기계의 움직임을 날마다 같은 시각에 적어, 한 해 치를 겹쳐 보면 기계가 어느 철에 가까이 오는지 알 수 있게 해 두었다.",
+    "관직": "직함 구 부대 지휘관. 직위 구 부대 지휘관 · 북한산보국문역. 품계 대위. 일하는 역 북한산보국문역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": -15,
+    "무력": -25,
+    "물질": -20,
+    "공동": 20,
+    "원칙": 80,
+    "공개": 5,
+    "자격": 45,
+    "분산": -35,
+    "변혁": -35
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -40,
+    "위험": -10,
+    "과시": 5,
+    "지속": 40,
+    "지향": "양성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0331",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
+      "diplomacy": {
+        "base": 4,
+        "effective": 4
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
+      "martial": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 10,
-        "effective": 10
+      "stewardship": {
+        "base": 4,
+        "effective": 4
+      },
+      "intrigue": {
+        "base": 5,
+        "effective": 5
       },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 4,
+        "effective": 4
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 11,
+        "effective": 11
       }
     },
-    "skills": [
-      {
-        "id": "bed-order-administration",
-        "name": {
-          "ko": "병상 순서 집행",
-          "en": "Bed order administration"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "우선 치료 압박을 멈춘다",
-          "en": "Stops priority pressure"
-        },
-        "description": {
-          "ko": "담당 전문의의 승인 전 우선 요청을 막고 침상 순서를 집행한다. 선반 약의 발견이 감별 성공을 뜻하지 않는다.",
-          "en": "Priority requests wait for the supervising clinician and bed order is enforced. Discovery of medicine on a shelf does not establish successful identification."
-        },
-        "behavior": {
-          "ko": "손놀림은 조용하나 치료 순서를 바꾸라는 쪽지를 받으면 침상을 잠근다. 적의 부상도 중증도 표 앞에서는 같은 줄로 본다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.",
-          "en": "Quiet of hand, he locked the sickbeds whenever he received a note to change the care order. An enemy's wound stood in the same line before the severity table."
-        },
-        "stress": {
-          "ko": "공포. 진료실이 전리품 분류장이 되어 자신이 찍은 중증도 표가 한 계절에 휴지가 되는 것.",
-          "en": "Fear. That the care room would become a war-booty sorting hall and the severity table he stamped would become scrap paper in a season."
-        },
-        "relationship": {
-          "ko": "관계. 은채윤의 도제로서 침상 순서를 집행하는 사제이고, 방미산의 진료소 병상을 나눈다. 류은비의 치료 원칙을 당직 원장 맨 위에 둔다.",
-          "en": "Relations. An apprentice executing the sickbed order as Eun Chaeyun's apprentice, he shared sickbeds with Bang Misan's clinic. Put Ryu Eunbi's care principles at the top of the duty ledger."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 수련의. 직함은 중증도 진료 수련의. 중증도 표와 진료 소견을 나란히 붙이고, 강국 장교의 우선 치료 쪽지는 담당 전문의의 승인 전까지 받지 않는다.",
-          "en": "Office. Rank: member. Title: severity ward medic, duty officer of Eun Chaeyun. He pasted the severity table and contribution labor side by side and accepted no great-power officer's priority care note before the guild posted it."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 수련의. 직함은 중증도 진료 수련의. 중증도 표와 진료 소견을 나란히 붙이고, 강국 장교의 우선 치료 쪽지는 담당 전문의의 승인 전까지 받지 않는다.",
-          "en": "Recorded duty and limits: Office. Rank: member. Title: severity ward medic, duty officer of Eun Chaeyun. He pasted the severity table and contribution labor side by side and accepted no great-power officer's priority care note before the guild posted it."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 진료실이 전리품 분류장이 되어 자신이 찍은 중증도 표가 한 계절에 휴지가 되는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That the care room would become a war-booty sorting hall and the severity table he stamped would become scrap paper in a season."
-        },
-        "relationship": {
-          "ko": "관계. 은채윤의 도제로서 침상 순서를 집행하는 사제이고, 방미산의 진료소 병상을 나눈다. 류은비의 치료 원칙을 당직 원장 맨 위에 둔다.",
-          "en": "Relations. An apprentice executing the sickbed order as Eun Chaeyun's apprentice, he shared sickbeds with Bang Misan's clinic. Put Ryu Eunbi's care principles at the top of the duty ledger."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "담당 전문의의 승인 전 우선 요청을 막고 침상 순서를 집행한다. 선반 약의 발견이 감별 성공을 뜻하지 않는다.",
-      "en": "Priority requests wait for the supervising clinician and bed order is enforced. Discovery of medicine on a shelf does not establish successful identification."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -526,79 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bc29-c628-c591",
-    "name": "온양 방씨",
-    "crest": "clan-crests/bc29-c628-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -25,
-    "개방": 40,
-    "무력": -60,
-    "물질": -15,
-    "공동": 15,
-    "원칙": 60,
-    "공개": 30,
-    "자격": 30,
-    "분산": 15,
-    "변혁": -15
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -40,
-    "위험": -10,
-    "과시": 5,
-    "지속": 40,
-    "지향": "양성",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "중증도 표·진료 소견 게시",
-    "소속": "흰십자단",
-    "품계": "수련의",
-    "직함": "중증도 진료 의무원, 은채윤의 실무 담당자",
-    "가치관": "권위 −25 | 개방 40 | 무력 −60 | 물질 −15 | 공동 15 | 원칙 60 | 공개 30 | 자격 30 | 분산 15 | 변혁 −15",
-    "욕망": "갈망 0 | 독점 −40 | 위험 −10 | 과시 5 | 지속 40 | 지향 양성 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2093-01-06에 태어났다. 2126년 개막 현재 중증도 진료 의무원, 은채윤의 실무 담당자 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 중증도 표·진료 소견 게시 창구가 방한울의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 수련의. 직함은 중증도 진료 수련의. 중증도 표와 진료 소견을 나란히 붙이고, 무장 당직 책임자의 우선 치료 쪽지는 담당 전문의의 승인 전까지 받지 않는다.",
-    "일화": "가짜 해열제가 북한산보국문 어린이에게 쓰인 뒤, 같은 캡슐 모양의 약이 진료소 선반에서 한 통 더 나왔다.",
-    "관계": "은채윤의 도제로서 침상 순서를 집행하는 사제이고, 방미산의 진료소 병상을 나눈다. 류은비의 치료 원칙을 당직 원장 맨 위에 둔다.",
-    "야망": "적군 부상자도 중증도만으로 받는 진료 기록을 의료 지휘부 헌장 부칙의 현장 원본으로 남긴다.",
-    "공포": "진료실이 전리품 분류장이 되어 자신이 찍은 중증도 표가 한 계절에 휴지가 되는 일을 두려워한다.",
-    "개입": "선반 약을 대조하거나, 적군 부상자를 숨겨 헌장 위반 누명을 씌울 수 있다."
-  },
-  "biography": "손놀림은 조용하나 치료 순서를 바꾸라는 쪽지를 받으면 침상을 잠근다. 적의 부상도 중증도 표 앞에서는 같은 줄로 본다.\n\n- 생업: 중증도 표·진료 소견 게시\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 중증도 진료 의무원, 은채윤의 실무 담당자\n**생애.** 2093-01-06에 태어났다. 2126년 개막 현재 중증도 진료 의무원, 은채윤의 실무 담당자 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 중증도 표·진료 소견 게시 창구가 방한울의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 수련의. 직함은 중증도 진료 수련의. 중증도 표와 진료 소견을 나란히 붙이고, 무장 당직 책임자의 우선 치료 쪽지는 담당 전문의의 승인 전까지 받지 않는다.\n\n**일화.** 가짜 해열제가 북한산보국문 어린이에게 쓰인 뒤, 같은 캡슐 모양의 약이 진료소 선반에서 한 통 더 나왔다.\n\n**관계.** 은채윤의 도제로서 침상 순서를 집행하는 사제이고, 방미산의 진료소 병상을 나눈다. 류은비의 치료 원칙을 당직 원장 맨 위에 둔다.\n\n**야망.** 적군 부상자도 중증도만으로 받는 진료 기록을 의료 지휘부 헌장 부칙의 현장 원본으로 남긴다.\n\n**공포.** 진료실이 전리품 분류장이 되어 자신이 찍은 중증도 표가 한 계절에 휴지가 되는 일을 두려워한다.\n\n**개입.** 선반 약을 대조하거나, 적군 부상자를 숨겨 헌장 위반 누명을 씌울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 40 | 무력 −60 | 물질 −15 | 공동 15 | 원칙 60 | 공개 30 | 자격 30 | 분산 15 | 변혁 −15\n- 욕망: 갈망 0 | 독점 −40 | 위험 −10 | 과시 5 | 지속 40 | 지향 양성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-13"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "방한울",
-        "type": "사제",
-        "to": "은채윤",
-        "basis": "은채윤의 도제로서 침상 순서를 집행하는 사제이고"
-      },
-      {
-        "from": "방한울",
-        "type": "사제",
-        "to": "방미산",
-        "basis": "방미산의 진료소 병상을 나눈다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "방미산",
-        "type": "계약",
-        "to": "방한울",
-        "basis": "방한울의 당직 원장을 문에 붙인다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

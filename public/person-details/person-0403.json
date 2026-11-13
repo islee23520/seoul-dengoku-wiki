@@ -1,398 +1,146 @@
 {
   "id": "person-0403",
   "name": "은보람",
-  "title": "기술기업 추천위원 서기",
-  "position": "기술기업 추천위원 서기",
+  "title": "호위장",
+  "position": "호위장 · 수서역",
   "characterId": "K402",
-  "rank": "미등록",
-  "commonTier": "T5",
-  "occupation": "추천 사유·시험 점수 게시·파견 추인 확인",
+  "rank": "호위장",
+  "commonTier": "T2",
+  "occupation": "군 지휘",
   "gender": "여성",
   "stage": "S1",
-  "state": "S16",
-  "stateName": "정동노총",
-  "sourceRoute": "/world/Cast-State-16#인물-은보람",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0403",
   "birthDate": "2066-03-28",
   "birthday": "03-28",
   "age": 60,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-16.json#/content/72",
-    "lore/characters/Cast-State-16.json#/content/74"
-  ],
-  "familyTree": {
-    "personId": "K402",
-    "nodes": [
-      {
-        "id": "K402",
-        "personId": "K402",
-        "kind": "person",
-        "name": "은보람",
-        "birthDate": "2066-03-28",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K402"
-          },
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-은보람-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 조합 숙련심사위원 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-은보람-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0403"
-      },
-      {
-        "id": "FH-K402-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "은승진",
-        "lineage": {
-          "surname": "은",
-          "bongwan": "행주",
-          "clan": "c740-d589-c8fc"
-        },
-        "birthDate": "2036-03-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-은보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "은승진은 대합실 당직에서 추천 사유·시험 점수 게시·파견 추인 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-은보람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K402-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "은승현",
-        "lineage": {
-          "surname": "은",
-          "bongwan": "행주",
-          "clan": "c740-d589-c8fc"
-        },
-        "birthDate": "2006-03-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-은보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "은승현은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-은보람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K402-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강준완",
-        "birthDate": "2036-03-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-은보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "강준완은 대합실 당직에서 추천 사유·시험 점수 게시·파견 추인 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-은보람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K402-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임준범",
-        "birthDate": "2006-03-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-은보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임준범은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-은보람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K402-P-01:K402:biological",
-        "from": "FH-K402-P-01",
-        "to": "K402",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-은보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K402-P-02:FH-K402-P-01:biological",
-        "from": "FH-K402-P-02",
-        "to": "FH-K402-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-은보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K402-M-01:K402:biological",
-        "from": "FH-K402-M-01",
-        "to": "K402",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-은보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K402-M-02:FH-K402-M-01:biological",
-        "from": "FH-K402-M-02",
-        "to": "FH-K402-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-은보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c740-d589-c8fc",
+    "name": "행주 은씨",
+    "crest": "clan-crests/c740-d589-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "은보람은 강남 곁집이 고른 호위장으로, 서울숲에서 내려오는 강 밑 터널의 남쪽 입구를 지키는 세례 전투원들을 이끈다. 예순 해 가운데 서른 해를 수서역 정비대에서 보냈기에, 전투원의 부위가 어디서 먼저 식는지를 그만큼 아는 지휘관은 없다. 정비대는 그가 세 부위를 맞춰 주었던 황노을에게 물려주었다. 터널 저편 장부 검문소의 불빛이 바뀌면, 그는 전투원을 깨우기 전에 자기 세 부위의 토시부터 조인다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "호위장",
+    "품계": "호위장",
+    "생업": "군 지휘",
+    "일하는 역": "수서역",
+    "잠자는 역": "수서역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 3
+  },
+  "sections": {
+    "생애": "은보람은 강남 곁집이 고른 호위장으로, 서울숲에서 내려오는 강 밑 터널의 남쪽 입구를 지키는 세례 전투원들을 이끈다. 예순 해 가운데 서른 해를 수서역 정비대에서 보냈기에, 전투원의 부위가 어디서 먼저 식는지를 그만큼 아는 지휘관은 없다. 정비대는 그가 세 부위를 맞춰 주었던 황노을에게 물려주었다. 터널 저편 장부 검문소의 불빛이 바뀌면, 그는 전투원을 깨우기 전에 자기 세 부위의 토시부터 조인다.",
+    "관직": "직함 호위장. 직위 호위장 · 수서역. 품계 호위장. 일하는 역 수서역."
+  },
+  "values": {
+    "권위": -10,
+    "개방": 15,
+    "무력": -20,
+    "물질": -55,
+    "공동": 40,
+    "원칙": 25,
+    "공개": -10,
+    "자격": 15,
+    "분산": 15,
+    "변혁": 55
+  },
+  "desire": {
+    "갈망": 35,
+    "독점": -35,
+    "위험": -25,
+    "과시": 0,
+    "지속": 20,
+    "지향": "이성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0403",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "은보람",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "은보람",
+        "type": "스승과 제자",
+        "to": "황노을",
+        "basis": "수서 정비대를 물려주기 전에 황노을에게 정비대의 연장을 가르쳤다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "황노을",
+        "type": "빚",
+        "to": "은보람",
+        "basis": "은보람이 맞춰 준 세 부위의 정비 차례를 아직 다 갚지 못했다고 여긴다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K1018",
+    "name": "고예진",
+    "courtId": "court:K1018",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
+      "diplomacy": {
+        "base": 4,
+        "effective": 4
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
-      "learning": {
+      "martial": {
         "base": 10,
         "effective": 10
       },
+      "stewardship": {
+        "base": 4,
+        "effective": 4
+      },
+      "intrigue": {
+        "base": 5,
+        "effective": 5
+      },
+      "learning": {
+        "base": 4,
+        "effective": 4
+      },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
+        "base": 11,
+        "effective": 11
       }
     },
-    "skills": [
-      {
-        "id": "recommendation-posting",
-        "name": {
-          "ko": "추천 근거 게시",
-          "en": "Recommendation evidence posting"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "혈연 청탁 거절",
-          "en": "Rejects kinship lobbying"
-        },
-        "description": {
-          "ko": "추천 사유와 점수를 함께 게시하고 사적 청탁을 공개 창구로 보냈다. 시험과 추인으로 파견 독점을 막으려 한다.",
-          "en": "Posts recommendation reasons with scores and directs private requests to the public window. Seeks to prevent dispatch monopolies through tests and ratification."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 혈연 청탁 거절을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "비공개 추천 앞에서 공개 추인을 요구할 수 있다.",
-          "en": "May demand public ratification for private recommendations."
-        },
-        "relationship": {
-          "ko": "임초원을 파견 후보가 아니라 공동 심사관으로 부르려 한다.",
-          "en": "Seeks to recognize Im Chowon as a joint examiner rather than a dispatch candidate."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "시청역 조합 차량정비소 전문 인력 추천을 공개 숙련 시험으로 바꿔 조합원 총회에서 파벌의 독점 추천을 깨뜨린다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "숙련심사위원이 강국에 기술자를 넘기는 인질 창구가 되는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "임초원을 파견 후보가 아니라 공동 심사관으로 부르려 한다.",
-          "en": "Seeks to recognize Im Chowon as a joint examiner rather than a dispatch candidate."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "추천 사유와 점수를 함께 게시하고 사적 청탁을 공개 창구로 보냈다. 시험과 추인으로 파견 독점을 막으려 한다.",
-      "en": "Posts recommendation reasons with scores and directs private requests to the public window. Seeks to prevent dispatch monopolies through tests and ratification."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -402,7 +150,7 @@
         {
           "id": "right-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "head",
@@ -418,72 +166,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c740-d589-c8fc",
-    "name": "행주 은씨",
-    "crest": "clan-crests/c740-d589-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -35,
-    "개방": 30,
-    "무력": -30,
-    "물질": -5,
-    "공동": 20,
-    "원칙": 35,
-    "공개": 35,
-    "자격": 50,
-    "분산": 45,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 35,
-    "독점": -35,
-    "위험": -25,
-    "과시": 0,
-    "지속": 20,
-    "지향": "이성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "추천 사유·시험 점수 게시·파견 추인 확인",
-    "소속": "정동노총",
-    "공동체 역할": "조합원",
-    "직무": "조합 숙련심사위원 서기",
-    "가치관": "권위 −35 | 개방 30 | 무력 −30 | 물질 −5 | 공동 20 | 원칙 35 | 공개 35 | 자격 50 | 분산 45 | 변혁 10",
-    "욕망": "갈망 35 | 독점 −35 | 위험 −25 | 과시 0 | 지속 20 | 지향 이성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2066-03-28에 태어난 은보람은 영구 겨울의 시청역 조합 작업장에서 조합 숙련심사위원 서기 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 은보람은 소공동의 시청역 조합 작업장에서 조합 숙련심사위원 서기 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "직무": "공동체 역할은 조합원이며 직무는 조합 숙련심사위원 서기이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.",
-    "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 그날의 조치와 증언은 같은 업무 장부에 남아 있다.",
-    "관계": "은보람의 기존 관계 기록은 다음과 같다. 정호준의 공동기술원장 구상을 추천 규칙에 반영하고, 정유라의 공개 계약을 인력 조항에 넣으며, 임초원을 파견 후보가 아닌 공동 심사관으로 부르려 한다.",
-    "목표": "은보람은 조합 숙련심사위원 서기 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.",
-    "공포": "조합 숙련심사위원 서기 업무의 서명이나 인계 기록이 바뀌어 은보람의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.",
-    "개입": "은보람은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다."
-  },
-  "biography": "은보람은 영구 겨울의 시청역 조합 작업장에서 조합 숙련심사위원 서기 업무 기록과 공개 표결 서명을 먼저 대조한다. 급수·통행·계약 일정이 겹치는 날에는 접수 시각과 인계 순서를 같은 장부에 남긴다.\n\n- 생업: 추천 사유·시험 점수 게시·파견 추인 확인\n- 소속: 정동노총\n- 공동체 역할: 조합원\n- 직무: 조합 숙련심사위원 서기\n**생애.** 2066-03-28에 태어난 은보람은 영구 겨울의 시청역 조합 작업장에서 조합 숙련심사위원 서기 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 은보람은 소공동의 시청역 조합 작업장에서 조합 숙련심사위원 서기 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**직무.** 공동체 역할은 조합원이며 직무는 조합 숙련심사위원 서기이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 그날의 조치와 증언은 같은 업무 장부에 남아 있다.\n\n**관계.** 은보람의 기존 관계 기록은 다음과 같다. 정호준의 공동기술원장 구상을 추천 규칙에 반영하고, 정유라의 공개 계약을 인력 조항에 넣으며, 임초원을 파견 후보가 아닌 공동 심사관으로 부르려 한다.\n\n**목표.** 은보람은 조합 숙련심사위원 서기 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.\n\n**공포.** 조합 숙련심사위원 서기 업무의 서명이나 인계 기록이 바뀌어 은보람의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.\n\n**개입.** 은보람은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 30 | 무력 −30 | 물질 −5 | 공동 20 | 원칙 35 | 공개 35 | 자격 50 | 분산 45 | 변혁 10\n- 욕망: 갈망 35 | 독점 −35 | 위험 −25 | 과시 0 | 지속 20 | 지향 이성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-16"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": [
-      {
-        "from": "수늘결",
-        "type": "사제",
-        "to": "은보람",
-        "basis": "은보람의 추천 규칙을 현장에서 받치는 사제이고"
-      },
-      {
-        "from": "원초온",
-        "type": "계약",
-        "to": "은보람",
-        "basis": "은보람의 추천 게시판을 칠판 맨 위에 둔다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

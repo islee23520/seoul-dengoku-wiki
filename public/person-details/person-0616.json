@@ -1,385 +1,105 @@
 {
   "id": "person-0616",
   "name": "성달현",
-  "title": "배급구역 서기",
-  "position": "배급구역 서기",
+  "title": "취수구지기",
+  "position": "취수구지기 · 영등포역",
   "characterId": "K616",
-  "rank": "주사",
+  "rank": "견습",
   "commonTier": "T5",
-  "occupation": "급수 배분 당직",
+  "occupation": "취수구 정비",
   "gender": "여성",
   "stage": "S4",
-  "state": "S01",
-  "stateName": "수문국",
-  "sourceRoute": "/world/Cast-State-01#인물-성달현",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0616",
   "birthDate": "2073-04-06",
   "birthday": "04-06",
   "age": 53,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-01.json#/content/434"
-  ],
-  "familyTree": {
-    "personId": "K616",
-    "nodes": [
-      {
-        "id": "K616",
-        "personId": "K616",
-        "kind": "person",
-        "name": "성달현",
-        "birthDate": "2073-04-06",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K616"
-          },
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-성달현-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-성달현-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0616"
-      },
-      {
-        "id": "FH-K616-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "성승원",
-        "lineage": {
-          "surname": "성",
-          "bongwan": "창녕",
-          "clan": "cangnyeong-seong-yeolcha-agreed-d604-second"
-        },
-        "birthDate": "2043-04-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-성달현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2081,
-            "summary": "성승원은 영등포 정수 당직에서 급수 배분 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-성달현-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K616-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "성승진",
-        "lineage": {
-          "surname": "성",
-          "bongwan": "창녕",
-          "clan": "cangnyeong-seong-yeolcha-agreed-d604-second"
-        },
-        "birthDate": "2013-04-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-성달현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "성승진은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-성달현-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K616-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤재민",
-        "birthDate": "2043-04-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-성달현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2081,
-            "summary": "윤재민은 영등포 정수 당직에서 급수 배분 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-성달현-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K616-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한재호",
-        "birthDate": "2013-04-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-성달현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한재호는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-성달현-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K616-P-01:K616:biological",
-        "from": "FH-K616-P-01",
-        "to": "K616",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-성달현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K616-P-02:FH-K616-P-01:biological",
-        "from": "FH-K616-P-02",
-        "to": "FH-K616-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-성달현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K616-M-01:K616:biological",
-        "from": "FH-K616-M-01",
-        "to": "K616",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-성달현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K616-M-02:FH-K616-M-01:biological",
-        "from": "FH-K616-M-02",
-        "to": "FH-K616-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-성달현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cangnyeong-seong-yeolcha",
+    "name": "창녕 성씨",
+    "crest": "clan-crests/cangnyeong-seong-yeolcha.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "성달현은 영등포역 취수구대의 견습이다. 구로의 한 펌프대에서 스물여덟 해 동안 펌프 축을 맞추던 손이었으나, 그 대가 보증을 깨 도장을 잃으면서 일손으로 내려앉았다. 세 번째 급수계약을 앞두고 일손이 모자란 취수구대 대주가 그를 쉰셋 나이에 견습으로 들였다. 그는 양평동 취수구의 펌프 소리만 듣고도 축이 몇 밀리 어긋났는지를 대주보다 먼저 짚는다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "취수구지기",
+    "품계": "견습",
+    "생업": "취수구 정비",
+    "일하는 역": "영등포역",
+    "잠자는 역": "영등포역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "성달현은 영등포역 취수구대의 견습이다. 구로의 한 펌프대에서 스물여덟 해 동안 펌프 축을 맞추던 손이었으나, 그 대가 보증을 깨 도장을 잃으면서 일손으로 내려앉았다. 세 번째 급수계약을 앞두고 일손이 모자란 취수구대 대주가 그를 쉰셋 나이에 견습으로 들였다. 그는 양평동 취수구의 펌프 소리만 듣고도 축이 몇 밀리 어긋났는지를 대주보다 먼저 짚는다.",
+    "관직": "직함 취수구지기. 직위 취수구지기 · 영등포역. 품계 견습. 일하는 역 영등포역."
+  },
+  "values": {
+    "권위": 15,
+    "개방": 0,
+    "무력": -5,
+    "물질": 60,
+    "공동": -5,
+    "원칙": 5,
+    "공개": 20,
+    "자격": 30,
+    "분산": 10,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -10,
+    "위험": -5,
+    "과시": -5,
+    "지속": -20,
+    "지향": "유동",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0616",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k616-pressure-total-crosscheck",
-        "name": {
-          "ko": "압력·합계 대조",
-          "en": "Pressure-total crosscheck"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k616-action-priority",
-        "name": {
-          "ko": "합계 옆의 압력",
-          "en": "Pressure beside totals"
-        },
-        "description": {
-          "ko": "배급 합계는 맞는데 골목마다 물줄기가 가늘다는 말이 당직에 들어온다. 성달현은 급수 배분 당직을 돌며 수도꼭지마다 나오는 압력을 합계 옆 칸에 적고, 합계와 압력이 어긋나는 골목에 표시를 달아 이서담에게 먼저 보인다.",
-          "en": "Word reaches the duty desk that the ration totals balance yet the water runs thin in alley after alley. Seong Dalhyeon walks the water-distribution duty round, writes the pressure at each tap beside the totals, marks the alleys where totals and pressure disagree, and shows them to I Seodam first."
-        },
-        "behavior": {
-          "ko": "배급 합계는 맞는데 골목마다 물줄기가 가늘다는 말이 당직에 들어온다. 성달현은 급수 배분 당직을 돌며 수도꼭지마다 나오는 압력을 합계 옆 칸에 적고, 합계와 압력이 어긋나는 골목에 표시를 달아 이서담에게 먼저 보인다.",
-          "en": "Word reaches the duty desk that the ration totals balance yet the water runs thin in alley after alley. Seong Dalhyeon walks the water-distribution duty round, writes the pressure at each tap beside the totals, marks the alleys where totals and pressure disagree, and shows them to I Seodam first."
-        },
-        "stress": {
-          "ko": "배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
-          "en": "That the ration district clerk duty post would stand empty and the Compact's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.",
-          "en": "Serves as a ration clerk under I Seodam and manages the water allocation shift."
-        },
-        "effects": []
-      },
-      {
-        "id": "k616-bounded-handover",
-        "name": {
-          "ko": "기록으로 잇는 당직",
-          "en": "Duty linked by records"
-        },
-        "description": {
-          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
-          "en": "Passes keys and records to the next shift without enlarging authority."
-        },
-        "behavior": {
-          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
-          "en": "Passes keys and records to the next shift without enlarging authority."
-        },
-        "stress": {
-          "ko": "배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
-          "en": "That the ration district clerk duty post would stand empty and the Compact's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.",
-          "en": "Serves as a ration clerk under I Seodam and manages the water allocation shift."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "배급 합계는 맞는데 골목마다 물줄기가 가늘다는 말이 당직에 들어온다. 성달현은 급수 배분 당직을 돌며 수도꼭지마다 나오는 압력을 합계 옆 칸에 적고, 합계와 압력이 어긋나는 골목에 표시를 달아 이서담에게 먼저 보인다. 짧은 행위와 인수인계가 근거여서 다른 분야의 숙련이나 보정은 발급하지 않았다.",
-      "en": "Word reaches the duty desk that the ration totals balance yet the water runs thin in alley after alley. Seong Dalhyeon walks the water-distribution duty round, writes the pressure at each tap beside the totals, marks the alleys where totals and pressure disagree, and shows them to I Seodam first. The brief action and handover support only limited strengths; no unrelated proficiency or numeric trait bonus is issued."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,73 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "cangnyeong-seong-yeolcha",
-    "name": "창녕 성씨",
-    "crest": "clan-crests/cangnyeong-seong-yeolcha.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 50,
-    "개방": -15,
-    "무력": 5,
-    "물질": 45,
-    "공동": 20,
-    "원칙": 15,
-    "공개": 20,
-    "자격": 10,
-    "분산": -45,
-    "변혁": -30
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -10,
-    "위험": -5,
-    "과시": -5,
-    "지속": -20,
-    "지향": "유동",
-    "결합": "비독점"
-  },
-  "fields": {
-    "소속": "수문국",
-    "생업": "급수 배분 당직",
-    "품계": "주사",
-    "직함": "배급구역 서기",
-    "업무 위치": "신정2동. 성달현은 배급 합계와 수도꼭지 압력이 다른 골목을 표시해 이서담에게 보여 주고 신정2동 급수 인계에 올린다.",
-    "가치관": "권위 50 | 개방 −15 | 무력 5 | 물질 45 | 공동 20 | 원칙 15 | 공개 20 | 자격 10 | 분산 −45 | 변혁 −30",
-    "욕망": "갈망 0 | 독점 −10 | 위험 −5 | 과시 −5 | 지속 −20 | 지향 유동 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 신정2동. 성달현은 배급 합계와 수도꼭지 압력이 다른 골목을 표시해 이서담에게 보여 주고 신정2동 급수 인계에 올린다.",
-    "관직": "품계 주사. 직함은 배급구역 서기이다. 성달현은 배급 합계와 수도꼭지 압력이 다른 골목을 표시해 이서담에게 보여 주고 신정2동 급수 인계에 올린다.",
-    "일화": "배급 합계는 맞는데 골목마다 물줄기가 가늘다는 말이 당직에 들어온다. 성달현은 급수 배분 당직을 돌며 수도꼭지마다 나오는 압력을 합계 옆 칸에 적고, 합계와 압력이 어긋나는 골목에 표시를 달아 이서담에게 먼저 보인다.",
-    "관계": "이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.",
-    "야망": "배급구역 서기 자리에서 수문국의 장부를 끊기지 않게 잇는다.",
-    "공포": "배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 수문국\n- 생업: 급수 배분 당직\n- 품계: 주사\n- 직함: 배급구역 서기\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 신정2동. 성달현은 배급 합계와 수도꼭지 압력이 다른 골목을 표시해 이서담에게 보여 주고 신정2동 급수 인계에 올린다.\n\n**관직.** 품계 주사. 직함은 배급구역 서기이다. 성달현은 배급 합계와 수도꼭지 압력이 다른 골목을 표시해 이서담에게 보여 주고 신정2동 급수 인계에 올린다.\n\n**일화.** 배급 합계는 맞는데 골목마다 물줄기가 가늘다는 말이 당직에 들어온다. 성달현은 급수 배분 당직을 돌며 수도꼭지마다 나오는 압력을 합계 옆 칸에 적고, 합계와 압력이 어긋나는 골목에 표시를 달아 이서담에게 먼저 보인다.\n\n**관계.** 이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.\n\n**야망.** 배급구역 서기 자리에서 수문국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −15 | 무력 5 | 물질 45 | 공동 20 | 원칙 15 | 공개 20 | 자격 10 | 분산 −45 | 변혁 −30\n- 욕망: 갈망 0 | 독점 −10 | 위험 −5 | 과시 −5 | 지속 −20 | 지향 유동 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-01"
-  ],
-  "directLiege": {
-    "personId": "K002",
-    "name": "이서담",
-    "courtId": "court:K002",
-    "effectiveYear": 2126
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "성달현",
-        "type": "지휘",
-        "to": "이서담",
-        "basis": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

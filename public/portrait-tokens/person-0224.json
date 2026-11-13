@@ -3,27 +3,27 @@
   "personId": "person-0224",
   "characterId": "K223",
   "name": "오하늘",
-  "stateId": "S09",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "출자 평의회 서기"
+    "role": "공항시장 오씨네 바람대 대주 · 공항시장역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short side-parted hair combed neatly",
-    "upper": "sand beige plain single-breasted clerk's jacket with cotton oversleeves, with a light knitted scarf",
-    "outfit": "sand beige plain single-breasted clerk's jacket with cotton oversleeves, with a light knitted scarf",
+    "upper": "깃에 보랏빛 끈을 두른 금속판 조각을 덧댄 짙은 회색 합성 섬유 겹 겉옷",
+    "outfit": "깃에 보랏빛 끈을 두른 금속판 조각을 덧댄 짙은 회색 합성 섬유 겹 겉옷",
     "palette": [
-      "sand beige",
-      "khaki",
-      "navy"
+      "charcoal",
+      "purple",
+      "aluminium"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "khaki high-waisted pleated trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "grey synthetic work trousers",
+    "footwear": "resoled boots",
+    "accessories": "bench guarantee token on a chain and tin snips"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "purple knitted cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "sand beige plain single-breasted clerk's jacket with cotton oversleeves, with a light knitted scarf",
+        "value": "깃에 보랏빛 끈을 두른 금속판 조각을 덧댄 짙은 회색 합성 섬유 겹 겉옷",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "khaki high-waisted pleated trousers",
+        "value": "grey synthetic work trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "resoled boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "open collar with a purple cord and bench token",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "bench guarantee token on a chain and tin snips",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "dark iron and bright steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "iron, steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "token around the neck, snips on the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "disc and short shears",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 오하늘, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; black hair; short length. build: average with narrow shoulders; skin: medium warm beige. upper garment: sand beige plain single-breasted clerk's jacket with cotton oversleeves, with a light knitted scarf; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: sand beige, khaki, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 오하늘, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; black hair; short length. build: average with narrow shoulders; skin: medium warm beige. headwear: purple knitted cap; upper garment: 깃에 보랏빛 끈을 두른 금속판 조각을 덧댄 짙은 회색 합성 섬유 겹 겉옷; neckline: open collar with a purple cord and bench token. accessories: bench guarantee token on a chain and tin snips; worn as token around the neck, snips on the belt. color palette: charcoal, purple, aluminium. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 오하늘, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: sand beige plain single-breasted clerk's jacket with cotton oversleeves, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: khaki high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: sand beige, khaki, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 오하늘, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. headwear: purple knitted cap; upper garment: 깃에 보랏빛 끈을 두른 금속판 조각을 덧댄 짙은 회색 합성 섬유 겹 겉옷; neckline: open collar with a purple cord and bench token; lower garment: grey synthetic work trousers; footwear: resoled boots. accessories: bench guarantee token on a chain and tin snips; worn as token around the neck, snips on the belt. color palette: charcoal, purple, aluminium. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 오하늘, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: sand beige plain single-breasted clerk's jacket with cotton oversleeves, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: khaki high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: sand beige, khaki, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 오하늘, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. headwear: purple knitted cap; upper garment: 깃에 보랏빛 끈을 두른 금속판 조각을 덧댄 짙은 회색 합성 섬유 겹 겉옷; neckline: open collar with a purple cord and bench token; lower garment: grey synthetic work trousers; footwear: resoled boots. accessories: bench guarantee token on a chain and tin snips; worn as token around the neck, snips on the belt. color palette: charcoal, purple, aluminium. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 오하늘, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: sand beige plain single-breasted clerk's jacket with cotton oversleeves, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: khaki high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: sand beige, khaki, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 오하늘, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. headwear: purple knitted cap; upper garment: 깃에 보랏빛 끈을 두른 금속판 조각을 덧댄 짙은 회색 합성 섬유 겹 겉옷; neckline: open collar with a purple cord and bench token; lower garment: grey synthetic work trousers; footwear: resoled boots. accessories: bench guarantee token on a chain and tin snips; worn as token around the neck, snips on the belt. color palette: charcoal, purple, aluminium. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 오하늘, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: sand beige plain single-breasted clerk's jacket with cotton oversleeves, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: khaki high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: sand beige, khaki, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 오하늘, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. headwear: purple knitted cap; upper garment: 깃에 보랏빛 끈을 두른 금속판 조각을 덧댄 짙은 회색 합성 섬유 겹 겉옷; neckline: open collar with a purple cord and bench token; lower garment: grey synthetic work trousers; footwear: resoled boots. accessories: bench guarantee token on a chain and tin snips; worn as token around the neck, snips on the belt. color palette: charcoal, purple, aluminium. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

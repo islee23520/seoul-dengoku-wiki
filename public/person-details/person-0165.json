@@ -1,385 +1,105 @@
 {
   "id": "person-0165",
   "name": "어태산",
-  "title": "각국 인준 보관인",
-  "position": "각국 인준 보관인",
+  "title": "서울역 역장 사무소 선임 서기",
+  "position": "서울역 역장 사무소 선임 서기 · 서울역",
   "characterId": "K164",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "각국 인준일·사후 추인 증인 관리",
+  "rank": "주사",
+  "commonTier": "T5",
+  "occupation": "장부 기재",
   "gender": "여성",
   "stage": "S3",
-  "state": "S06",
-  "stateName": "대한민국정부",
-  "sourceRoute": "/world/Cast-State-06#인물-어태산",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0165",
   "birthDate": "2084-08-24",
   "birthday": "08-24",
   "age": 42,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-06.json#/content/215"
-  ],
-  "familyTree": {
-    "personId": "K164",
-    "nodes": [
-      {
-        "id": "K164",
-        "personId": "K164",
-        "kind": "person",
-        "name": "어태산",
-        "birthDate": "2084-08-24",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K164"
-          },
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-어태산-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 각국 인준 보관인 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-어태산-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0165"
-      },
-      {
-        "id": "FH-K164-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "어승석",
-        "lineage": {
-          "surname": "어",
-          "bongwan": "함종",
-          "clan": "c5b4-d568-c885"
-        },
-        "birthDate": "2054-08-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-어태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2092,
-            "summary": "어승석은 서울역 등기소에서 각국 인준일·사후 추인 증인 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-어태산-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K164-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "어승준",
-        "lineage": {
-          "surname": "어",
-          "bongwan": "함종",
-          "clan": "c5b4-d568-c885"
-        },
-        "birthDate": "2024-08-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-어태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "어승준은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-어태산-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K164-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오승솔",
-        "birthDate": "2054-08-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-어태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2092,
-            "summary": "오승솔은 서울역 등기소에서 각국 인준일·사후 추인 증인 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-어태산-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K164-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "송승솔",
-        "birthDate": "2024-08-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-어태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "송승솔은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-어태산-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K164-P-01:K164:biological",
-        "from": "FH-K164-P-01",
-        "to": "K164",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-어태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K164-P-02:FH-K164-P-01:biological",
-        "from": "FH-K164-P-02",
-        "to": "FH-K164-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-어태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K164-M-01:K164:biological",
-        "from": "FH-K164-M-01",
-        "to": "K164",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-어태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K164-M-02:FH-K164-M-01:biological",
-        "from": "FH-K164-M-02",
-        "to": "FH-K164-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-어태산-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c5b4-d568-c885",
+    "name": "함종 어씨",
+    "crest": "clan-crests/c5b4-d568-c885.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "서울역이 정원을 넘는 날이면, 함종 어씨 선임 서기는 역장 전나경에게 올릴 전입 명령 초안부터 써 둔다. 서울역 역장 사무소에서 정원 장부를 맡아, 승강장 자리 번호마다 누가 자는지를 날마다 고쳐 적는 사람이다. 대합실에서 들려오는 다툼은 대개 그 초안에 이름이 오른 세대의 것이다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "서울역 역장 사무소 선임 서기",
+    "품계": "주사",
+    "생업": "장부 기재",
+    "일하는 역": "서울역",
+    "잠자는 역": "서울역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "서울역이 정원을 넘는 날이면, 함종 어씨 선임 서기는 역장 전나경에게 올릴 전입 명령 초안부터 써 둔다. 서울역 역장 사무소에서 정원 장부를 맡아, 승강장 자리 번호마다 누가 자는지를 날마다 고쳐 적는 사람이다. 대합실에서 들려오는 다툼은 대개 그 초안에 이름이 오른 세대의 것이다.",
+    "관직": "직함 서울역 역장 사무소 선임 서기. 직위 서울역 역장 사무소 선임 서기 · 서울역. 품계 주사. 일하는 역 서울역."
+  },
+  "values": {
+    "권위": 65,
+    "개방": -70,
+    "무력": -5,
+    "물질": -30,
+    "공동": 5,
+    "원칙": 85,
+    "공개": -45,
+    "자격": 25,
+    "분산": -80,
+    "변혁": -55
+  },
+  "desire": {
+    "갈망": 25,
+    "독점": -30,
+    "위험": -40,
+    "과시": 20,
+    "지속": 0,
+    "지향": "무성향",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0165",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "management": {
+      "martial": {
+        "base": 3,
+        "effective": 3
+      },
+      "stewardship": {
         "base": 11,
         "effective": 11
       },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 8,
+        "effective": 8
       },
       "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
-        "base": 5,
-        "effective": 5
+        "base": 3,
+        "effective": 3
       }
     },
-    "skills": [
-      {
-        "id": "k164-approval-date-check",
-        "name": {
-          "ko": "인준일 확인",
-          "en": "Approval date checking"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k164-choice",
-        "name": {
-          "ko": "소급 날인을 막음",
-          "en": "Blocks backdated certification"
-        },
-        "description": {
-          "ko": "헌장 사본의 접힌 자국까지 기억하고, 늦게 온 인준을 소급하자고 하면 함을 잠근다. 예의는 지키되 날짜를 고치는 손은 용서하지 않는다.",
-          "en": "He remembered even the fold marks on charter copies and locked the box whenever someone proposed back-dating a late ratification. He kept his manners but never forgave a hand that changed a date."
-        },
-        "behavior": {
-          "ko": "일화. 정유라 쪽에서 늦게 도착한 공동교섭 인준을 소급해 달라는 청구가 들어온다. 어태산은 윤서린이 맡긴 인준 함을 잠그고, 벽에 적힌 깃발별 인준일 옆에 당시 증인 두 명의 이름을 불러 다시 설 날을 잡는다.",
-          "en": "Anecdote. A request comes from Jeong Yura's joint-bargaining side to backdate a late ratification. Eo Taesan locks the ratification case Yun Seorin entrusted and, beside the per-flag ratification dates on the wall, calls the names of the two original witnesses and sets a day for them to stand again."
-        },
-        "stress": {
-          "ko": "공포. 인준 함이 강국의 보호 문장으로 덧칠되어 대한민국정부 헌장이 하청 문서가 되는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That the ratification box would be painted over with a great power's protection clause and the lesser states' charter would become a subcontract. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 윤서린이 맡긴 건국 인준 함을 지키고, 조하린의 철제 함 습도와 보관 주기를 맞추며, 정유라의 공동교섭 인준은 날짜를 속이지 않는 한에서만 꺼낸다.",
-          "en": "Relations. Kept the founding ratification box entrusted by Yun Seorin, matched the humidity and custody cycles with Jo Harin's iron box, and drew out Jeong Yura's joint-negotiation ratification only so long as it did not cheat the dates."
-        },
-        "effects": []
-      },
-      {
-        "id": "k164-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 주사. 직함은 각국 인준 보관인. 깃발별 인준일을 벽에 적고, 사후 추인 청구는 당시 증인 두 명이 다시 서지 않으면 받지 않는다.",
-          "en": "Office. Rank: registrar. Title: states ratification custodian. He wrote each banner's ratification day on the wall and accepted no after-the-fact countersignature unless the two witnesses of the day signed again."
-        },
-        "behavior": {
-          "ko": "관직. 품계 주사. 직함은 각국 인준 보관인. 깃발별 인준일을 벽에 적고, 사후 추인 청구는 당시 증인 두 명이 다시 서지 않으면 받지 않는다.",
-          "en": "Office. Rank: registrar. Title: states ratification custodian. He wrote each banner's ratification day on the wall and accepted no after-the-fact countersignature unless the two witnesses of the day signed again."
-        },
-        "stress": {
-          "ko": "공포. 인준 함이 강국의 보호 문장으로 덧칠되어 대한민국정부 헌장이 하청 문서가 되는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That the ratification box would be painted over with a great power's protection clause and the lesser states' charter would become a subcontract. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 윤서린이 맡긴 건국 인준 함을 지키고, 조하린의 철제 함 습도와 보관 주기를 맞추며, 정유라의 공동교섭 인준은 날짜를 속이지 않는 한에서만 꺼낸다.",
-          "en": "Relations. Kept the founding ratification box entrusted by Yun Seorin, matched the humidity and custody cycles with Jo Harin's iron box, and drew out Jeong Yura's joint-negotiation ratification only so long as it did not cheat the dates."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "늦은 인준의 소급 요구에 함을 잠그고 당시 증인 둘을 다시 부른다. 원본과 날짜를 지키되 국제 정치 경력은 부여하지 않는다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Locked the case against backdating and recalled two original witnesses. Protecting dates and originals establishes no international political career. Titles and ambitions are not treated as accomplished authority or results."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,102 +137,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-51800-S06",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K164",
-      "stateId": "S06",
-      "politicalParentTitleId": "title:kingdom-s06",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-51800-S06",
-          "directLiegePersonId": "K144"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c5b4-d568-c885",
-    "name": "함종 어씨",
-    "crest": "clan-crests/c5b4-d568-c885.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 20,
-    "개방": -15,
-    "무력": -40,
-    "물질": -25,
-    "공동": 0,
-    "원칙": 65,
-    "공개": -20,
-    "자격": 10,
-    "분산": -30,
-    "변혁": -35
-  },
-  "desire": {
-    "갈망": 25,
-    "독점": -30,
-    "위험": -40,
-    "과시": 20,
-    "지속": 0,
-    "지향": "무성향",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "각국 인준일·사후 추인 증인 관리",
-    "소속": "서울특별시 지방공무원 조직",
-    "직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급",
-    "담당 업무": "각국 인준 보관인",
-    "가치관": "권위 20 | 개방 −15 | 무력 −40 | 물질 −25 | 공동 0 | 원칙 65 | 공개 −20 | 자격 10 | 분산 −30 | 변혁 −35",
-    "욕망": "갈망 25 | 독점 −30 | 위험 −40 | 과시 20 | 지속 0 | 지향 무성향 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "서울역 등기소에서 자랐다. 각국 인준 보관인 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 어태산의 인준일과 사후 추인 증인을 관리하는 일은 회현동의 업무와 이어진다.",
-    "공무원 직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 각국 인준 보관인.",
-    "일화": "정유라 쪽에서 늦게 도착한 공동교섭 인준을 소급해 달라는 청구가 들어온다. 어태산은 윤서린이 맡긴 인준 함을 잠그고, 벽에 적힌 깃발별 인준일 옆에 당시 증인 두 명의 이름을 불러 다시 설 날을 잡는다.",
-    "관계": "윤서린이 맡긴 건국 인준 함을 지키고, 조하린의 철제 함 습도와 보관 주기를 맞추며, 정유라의 공동교섭 인준은 날짜를 속이지 않는 한에서만 꺼낸다.",
-    "야망": "각국의 인준 원본을 서울역 함에만 유효하게 남겨 정부의 인준이 사후 날인으로 팔리지 않게 한다.",
-    "공포": "인준 함이 강국의 보호 문장으로 덧칠되어 서울특별시 지방공무원 조직 헌장이 하청 문서가 되는 것.",
-    "개입": "접힌 목록을 공개해 빚을 드러내거나, 함이 덧칠되기 전에 원본을 호송할 수 있다."
-  },
-  "biography": "헌장 사본의 접힌 자국까지 기억하고, 늦게 온 인준을 소급하자고 하면 함을 잠근다. 예의는 지키되 날짜를 고치는 손은 용서하지 않는다.\n\n- 생업: 각국 인준일·사후 추인 증인 관리\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급\n- 담당 업무: 각국 인준 보관인\n**생애.** 서울역 등기소에서 자랐다. 각국 인준 보관인 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 어태산의 인준일과 사후 추인 증인을 관리하는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 각국 인준 보관인.\n\n**일화.** 정유라 쪽에서 늦게 도착한 공동교섭 인준을 소급해 달라는 청구가 들어온다. 어태산은 윤서린이 맡긴 인준 함을 잠그고, 벽에 적힌 깃발별 인준일 옆에 당시 증인 두 명의 이름을 불러 다시 설 날을 잡는다.\n\n**관계.** 윤서린이 맡긴 건국 인준 함을 지키고, 조하린의 철제 함 습도와 보관 주기를 맞추며, 정유라의 공동교섭 인준은 날짜를 속이지 않는 한에서만 꺼낸다.\n\n**야망.** 각국의 인준 원본을 서울역 함에만 유효하게 남겨 정부의 인준이 사후 날인으로 팔리지 않게 한다.\n\n**공포.** 인준 함이 강국의 보호 문장으로 덧칠되어 서울특별시 지방공무원 조직 헌장이 하청 문서가 되는 것.\n\n**개입.** 접힌 목록을 공개해 빚을 드러내거나, 함이 덧칠되기 전에 원본을 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −15 | 무력 −40 | 물질 −25 | 공동 0 | 원칙 65 | 공개 −20 | 자격 10 | 분산 −30 | 변혁 −35\n- 욕망: 갈망 25 | 독점 −30 | 위험 −40 | 과시 20 | 지속 0 | 지향 무성향 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-06"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "어태산",
-        "type": "계약",
-        "to": "조하린",
-        "basis": "조하린의 철제 함 습도와 보관 주기를 맞추며"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "민시현",
-        "type": "계약",
-        "to": "어태산",
-        "basis": "민시현은 이중 지급을 고친 장부의 서명과 관련 인준 기록을 어태산에게 가져간다. 어태산은 벽에 적힌 인준일과 보관 원본을 찾아 날짜를 확인하고, 사후 추인이 필요하면 당시 증인 두 명을 다시 불러 소급 날인으로 빈칸을 덮지 않게 한다."
-      },
-      {
-        "from": "조새준",
-        "type": "계약",
-        "to": "어태산",
-        "basis": "조새준은 젖은 인준 문서의 필사본을 원본과 함께 어태산에게 가져간다. 어태산은 보관한 인준일을 찾아 지워진 날짜를 확인하되 늦게 온 사본의 날짜를 소급해 고치지 않는다."
-      },
-      {
-        "from": "권숲윤",
-        "type": "계약",
-        "to": "어태산",
-        "basis": "권숲윤은 이중 지급을 바로잡은 서명과 관련 인준 기록을 어태산에게 가져간다. 어태산은 보관 원본의 날짜와 증인을 확인해 같은 인준이 다른 날짜로 다시 지급 근거가 된 곳을 찾는다."
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

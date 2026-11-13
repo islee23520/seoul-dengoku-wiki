@@ -1,387 +1,105 @@
 {
   "id": "person-0391",
   "name": "흥예나",
-  "title": "경매 유찰 사건 관계자",
-  "position": "선거 이의 접수 부제",
+  "title": "기능조 조장",
+  "position": "기능조 조장 · 독립문역",
   "characterId": "K390",
-  "rank": "부제",
-  "commonTier": "T4",
-  "occupation": "선거 이의 접수·보좌",
+  "rank": "등재민",
+  "commonTier": "T5",
+  "occupation": "펌프 정비",
   "gender": "남성",
   "stage": "S3",
-  "state": "S15",
-  "stateName": "명동대교구",
-  "sourceRoute": "/world/Cast-State-15#인물-흥예나",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0391",
   "birthDate": "2077-02-07",
   "birthday": "02-07",
   "age": 49,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-15.json#/content/192",
-    "lore/characters/Cast-State-15.json#/content/193",
-    "lore/characters/Cast-State-15.json#/content/194"
-  ],
-  "familyTree": {
-    "personId": "K390",
-    "nodes": [
-      {
-        "id": "K390",
-        "personId": "K390",
-        "kind": "person",
-        "name": "흥예나",
-        "birthDate": "2077-02-07",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K390"
-          },
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-흥예나-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 선거 이의 접수 부제 일을 맡았다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-흥예나-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0391"
-      },
-      {
-        "id": "FH-K390-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "흥승진",
-        "lineage": {
-          "surname": "흥",
-          "bongwan": "수색",
-          "clan": "creative-d765-c218-c0c9"
-        },
-        "birthDate": "2047-02-07",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-흥예나-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2085,
-            "summary": "흥승진은 노량진 선창에서 선거 이의 접수·보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-흥예나-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K390-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "흥승현",
-        "lineage": {
-          "surname": "흥",
-          "bongwan": "수색",
-          "clan": "creative-d765-c218-c0c9"
-        },
-        "birthDate": "2017-02-07",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-흥예나-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "흥승현은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-흥예나-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K390-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강준아",
-        "birthDate": "2047-02-07",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-흥예나-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2085,
-            "summary": "강준아는 노량진 선창에서 선거 이의 접수·보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-흥예나-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K390-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임준규",
-        "birthDate": "2017-02-07",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-흥예나-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임준규는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-흥예나-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K390-P-01:K390:biological",
-        "from": "FH-K390-P-01",
-        "to": "K390",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-흥예나-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K390-P-02:FH-K390-P-01:biological",
-        "from": "FH-K390-P-02",
-        "to": "FH-K390-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-흥예나-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K390-M-01:K390:biological",
-        "from": "FH-K390-M-01",
-        "to": "K390",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-흥예나-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K390-M-02:FH-K390-M-01:biological",
-        "from": "FH-K390-M-02",
-        "to": "FH-K390-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-흥예나-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "creative-d765-c218-c0c9",
+    "name": "수색 흥씨",
+    "crest": "clan-crests/creative-d765-c218-c0c9.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "종로구 독립문역, 기능 가구, 직종 펌프 정비. 흥예나는 독립문역 아래 배수 펌프를 돌리는 조의 조장으로, 마흔아홉 해의 대부분을 펌프 소리 옆에서 잤다. 그는 조원마다 맡은 밸브에 매듭 수가 다른 헝겊을 묶어 두어, 불빛이 닿지 않는 깊은 배수로에서도 손끝으로 자기 밸브를 찾게 한다. 정전이 오면 조원 넷이 손으로 크랭크를 돌리는 순서를 그가 정한다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "기능조 조장",
+    "품계": "등재민",
+    "생업": "펌프 정비",
+    "일하는 역": "독립문역",
+    "잠자는 역": "독립문역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "종로구 독립문역, 기능 가구, 직종 펌프 정비. 흥예나는 독립문역 아래 배수 펌프를 돌리는 조의 조장으로, 마흔아홉 해의 대부분을 펌프 소리 옆에서 잤다. 그는 조원마다 맡은 밸브에 매듭 수가 다른 헝겊을 묶어 두어, 불빛이 닿지 않는 깊은 배수로에서도 손끝으로 자기 밸브를 찾게 한다. 정전이 오면 조원 넷이 손으로 크랭크를 돌리는 순서를 그가 정한다.",
+    "관직": "직함 기능조 조장. 직위 기능조 조장 · 독립문역. 품계 등재민. 일하는 역 독립문역."
+  },
+  "values": {
+    "권위": 60,
+    "개방": -15,
+    "무력": 20,
+    "물질": 60,
+    "공동": -25,
+    "원칙": -30,
+    "공개": -50,
+    "자격": 25,
+    "분산": -45,
+    "변혁": -10
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -40,
+    "위험": 20,
+    "과시": 10,
+    "지속": 20,
+    "지향": "양성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0391",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 5,
+        "effective": 5
       },
-      "strategy": {
-        "base": 6,
-        "effective": 6
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "objection-registration",
-        "name": {
-          "ko": "이의서 접수 대조",
-          "en": "Objection registration"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "이의를 기록에 묶음",
-          "en": "Ties objections to records"
-        },
-        "description": {
-          "ko": "쌓인 이의서마다 명부 줄을 붙여 접수하고 선거 전에 봉인 목록을 정리했다. 가격 압박에 대한 원한도 있다.",
-          "en": "Registers objections with their corresponding roster lines and orders the seal list before voting. Also carries resentment about price pressure."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 이의를 기록에 묶음을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "압박이 오면 이의를 목록으로 고정하려 할 수 있다.",
-          "en": "May insist on listing objections under pressure."
-        },
-        "relationship": {
-          "ko": "근솔이와 유찰 품목을 비교하고 한재목의 압박을 거부한다.",
-          "en": "Compares failed-auction goods with Geun Soli and rejects Han Jaemok’s pressure."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "근솔이와 유찰 품목을 비교하고 한재목의 압박을 거부한다.",
-          "en": "Compares failed-auction goods with Geun Soli and rejects Han Jaemok’s pressure."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "쌓인 이의서마다 명부 줄을 붙여 접수하고 선거 전에 봉인 목록을 정리했다. 가격 압박에 대한 원한도 있다.",
-      "en": "Registers objections with their corresponding roster lines and orders the seal list before voting. Also carries resentment about price pressure."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -419,79 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "creative-d765-c218-c0c9",
-    "name": "수색 흥씨",
-    "crest": "clan-crests/creative-d765-c218-c0c9.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": 40,
-    "무력": -15,
-    "물질": 65,
-    "공동": -30,
-    "원칙": -50,
-    "공개": -25,
-    "자격": 10,
-    "분산": 5,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -40,
-    "위험": 20,
-    "과시": 10,
-    "지속": 20,
-    "지향": "양성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "선거 이의 접수·보좌",
-    "소속": "명동대교구 (명동역)",
-    "품계": "부제",
-    "직함": "선거 이의 접수 부제",
-    "가치관": "권위 15 | 개방 40 | 무력 −15 | 물질 65 | 공동 −30 | 원칙 −50 | 공개 −25 | 자격 10 | 분산 5 | 변혁 10",
-    "욕망": "갈망 0 | 독점 −40 | 위험 20 | 과시 10 | 지속 20 | 지향 양성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2077-02-07에 태어난 흥예나는 영구 겨울의 명동역 교구청에서 선거 이의 접수 부제 일을 맡는다. 선거 이의 접수·보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 흥예나는 명동 행정동의 명동역 교구청에서 선거 이의 접수 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 부제. 직함은 선거 이의 접수 부제. 선거 이의 접수·보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
-    "일화": "한재목의 배급 가격 압박이 명동역에 닿은 주에, 선거 봉인에 관한 이의서가 교구청 접수대에 쌓인다. 흥예나는 이의서마다 교구 명부의 해당 줄을 붙여 받고, 투표권을 가진 신부들의 비밀 선거 전에 봉인 목록을 정리한다.",
-    "관계": "남윤경의 공개 경매에 유찰 종을 맞추고, 근솔이의 신내 유찰 원장과 품목을 비교한다. 한재목의 배급 가격 압박을 원한으로 돌려보낸다.",
-    "야망": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-    "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-    "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
-  },
-  "biography": "흥예나는 선거 이의 접수 부제 업무에서 선거 이의 접수·보좌 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 선거 이의 접수·보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 선거 이의 접수 부제\n**생애.** 2077-02-07에 태어난 흥예나는 영구 겨울의 명동역 교구청에서 선거 이의 접수 부제 일을 맡는다. 선거 이의 접수·보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 흥예나는 명동 행정동의 명동역 교구청에서 선거 이의 접수 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 부제. 직함은 선거 이의 접수 부제. 선거 이의 접수·보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 한재목의 배급 가격 압박이 명동역에 닿은 주에, 선거 봉인에 관한 이의서가 교구청 접수대에 쌓인다. 흥예나는 이의서마다 교구 명부의 해당 줄을 붙여 받고, 투표권을 가진 신부들의 비밀 선거 전에 봉인 목록을 정리한다.\n\n**관계.** 남윤경의 공개 경매에 유찰 종을 맞추고, 근솔이의 신내 유찰 원장과 품목을 비교한다. 한재목의 배급 가격 압박을 원한으로 돌려보낸다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 40 | 무력 −15 | 물질 65 | 공동 −30 | 원칙 −50 | 공개 −25 | 자격 10 | 분산 5 | 변혁 10\n- 욕망: 갈망 0 | 독점 −40 | 위험 20 | 과시 10 | 지속 20 | 지향 양성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-15"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "흥예나",
-        "type": "계약",
-        "to": "남윤경",
-        "basis": "남윤경의 공개 경매에 유찰 종을 맞추고"
-      },
-      {
-        "from": "흥예나",
-        "type": "계약",
-        "to": "근솔이",
-        "basis": "근솔이의 신내 유찰 원장과 품목을 비교한다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "근솔이",
-        "type": "계약",
-        "to": "흥예나",
-        "basis": "흥예나의 가락 유찰 원장과 품목을 비교한다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

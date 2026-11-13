@@ -1,394 +1,120 @@
 {
   "id": "person-0018",
   "name": "허은찬",
-  "title": "신정기지 유치선 전력감독",
-  "position": "신정기지 유치선 전력감독",
+  "title": "신정 구간장",
+  "position": "신정 구간장 · 자유도시들",
   "characterId": "K018",
-  "rank": "당직장",
-  "commonTier": "T4",
-  "occupation": "전력 설비 운전",
+  "rank": "구간장",
+  "commonTier": "T3",
+  "occupation": "구간 운영",
   "gender": "남성",
   "stage": "S2",
-  "state": "S01",
-  "stateName": "수문국",
-  "sourceRoute": "/world/Cast-State-01#인물-허은찬",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0018",
   "birthDate": "2076-04-13",
   "birthday": "04-13",
   "age": 50,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-01.json#/content/60",
-    "lore/characters/Cast-State-01.json#/content/62"
-  ],
-  "familyTree": {
-    "personId": "K018",
-    "nodes": [
-      {
-        "id": "K018",
-        "personId": "K018",
-        "kind": "person",
-        "name": "허은찬",
-        "birthDate": "2076-04-13",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K018"
-          },
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허은찬-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 신정기지 유치선 전력감독 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-허은찬-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0018"
-      },
-      {
-        "id": "FH-K018-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "허승민",
-        "lineage": {
-          "surname": "허",
-          "bongwan": "태인",
-          "clan": "d5c8-d0dc-c778-8a31"
-        },
-        "birthDate": "2046-04-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허은찬-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2084,
-            "summary": "허승민은 신정 차량기지에서 전력 설비 운전 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-허은찬-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K018-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "허승원",
-        "lineage": {
-          "surname": "허",
-          "bongwan": "태인",
-          "clan": "d5c8-d0dc-c778-8a31"
-        },
-        "birthDate": "2016-04-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허은찬-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "허승원은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-허은찬-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K018-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강승진",
-        "birthDate": "2046-04-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허은찬-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2084,
-            "summary": "강승진은 신정 차량기지에서 전력 설비 운전 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-허은찬-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K018-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승영",
-        "birthDate": "2016-04-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허은찬-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임승영은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-허은찬-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K018-P-01:K018:biological",
-        "from": "FH-K018-P-01",
-        "to": "K018",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허은찬-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K018-P-02:FH-K018-P-01:biological",
-        "from": "FH-K018-P-02",
-        "to": "FH-K018-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허은찬-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K018-M-01:K018:biological",
-        "from": "FH-K018-M-01",
-        "to": "K018",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허은찬-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K018-M-02:FH-K018-M-01:biological",
-        "from": "FH-K018-M-02",
-        "to": "FH-K018-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-허은찬-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d5c8-d0dc-c778-8a31",
+    "name": "태인 허씨",
+    "crest": "clan-crests/d5c8-d0dc-c778-8a31.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "구간 변압기들의 떨림을 허은찬은 하나하나 따로 기억해서, 떨림이 달라지면 과부하가 오기 전에 먼저 안다. 신정 차량기지로 들어가는 케이블과 유치선의 전기가 신정, 신정네거리, 양천구청 세 역의 그의 신정 구간을 지나기 때문이다. 기지 펌프에 전기가 먼저 간다는 배전 순서는 그의 변압기 일지 첫 줄에 적혀 있고, 다른 순서를 바라는 사람에게 그는 말없이 그 줄을 펴 보인다. 겨울이 오기 전마다 그는 변압기 기름을 갈고, 갈아 낸 기름의 빛깔을 같은 일지에 적어 둔다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "신정 구간장",
+    "품계": "구간장",
+    "생업": "구간 운영",
+    "일하는 역": "신정역",
+    "잠자는 역": "신정역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "구간 변압기들의 떨림을 허은찬은 하나하나 따로 기억해서, 떨림이 달라지면 과부하가 오기 전에 먼저 안다. 신정 차량기지로 들어가는 케이블과 유치선의 전기가 신정, 신정네거리, 양천구청 세 역의 그의 신정 구간을 지나기 때문이다. 기지 펌프에 전기가 먼저 간다는 배전 순서는 그의 변압기 일지 첫 줄에 적혀 있고, 다른 순서를 바라는 사람에게 그는 말없이 그 줄을 펴 보인다. 겨울이 오기 전마다 그는 변압기 기름을 갈고, 갈아 낸 기름의 빛깔을 같은 일지에 적어 둔다.",
+    "관직": "직함 신정 구간장. 직위 신정 구간장 · 자유도시들. 품계 구간장. 일하는 역 신정역."
+  },
+  "values": {
+    "권위": 15,
+    "개방": 10,
+    "무력": -10,
+    "물질": 50,
+    "공동": -15,
+    "원칙": 15,
+    "공개": 5,
+    "자격": 15,
+    "분산": 0,
+    "변혁": -10
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": -20,
+    "위험": 30,
+    "과시": -20,
+    "지속": 30,
+    "지향": "무성향",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0018",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "허은찬",
+        "type": "지휘",
+        "to": "이서담",
+        "basis": "양천 기지장 이서담의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K002",
+    "name": "이서담",
+    "courtId": "court:K002",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "negotiation": {
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
-      "management": {
-        "base": 13,
-        "effective": 13
-      },
-      "insight": {
-        "base": 13,
-        "effective": 13
-      },
       "learning": {
-        "base": 10,
-        "effective": 10
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k018-power-allocation",
-        "name": {
-          "ko": "전력 배분",
-          "en": "Power allocation"
-        },
-        "rating": 65
-      },
-      {
-        "id": "k018-component-rejection",
-        "name": {
-          "ko": "불량 부품 확인",
-          "en": "Rejecting defective parts"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k018-pump-load-first",
-        "name": {
-          "ko": "펌프 부하 먼저",
-          "en": "Pump load first"
-        },
-        "description": {
-          "ko": "급수펌프보다 군수 충전을 앞세우지 않는다.",
-          "en": "Does not prioritize military charging over water pumps."
-        },
-        "behavior": {
-          "ko": "급수펌프보다 군수 충전을 앞세우지 않는다.",
-          "en": "Does not prioritize military charging over water pumps."
-        },
-        "stress": {
-          "ko": "과방전으로 수문 전동기가 멈출 것을 경계한다.",
-          "en": "Guards against overdischarge stopping gate motors."
-        },
-        "relationship": {
-          "ko": "오해린의 냉동 충전 청을 거절한 빚을 안고 있다.",
-          "en": "Carries a debt from rejecting O Haerin’s refrigeration charging request."
-        },
-        "effects": []
-      },
-      {
-        "id": "k018-unaltered-shift-log",
-        "name": {
-          "ko": "교대 일지 보존",
-          "en": "Preserve shift logs"
-        },
-        "description": {
-          "ko": "전력 배분과 교대 일지를 공개 기록으로 남긴다.",
-          "en": "Keeps public power allocations and shift logs."
-        },
-        "behavior": {
-          "ko": "전력 배분과 교대 일지를 공개 기록으로 남긴다.",
-          "en": "Keeps public power allocations and shift logs."
-        },
-        "stress": {
-          "ko": "우선순위를 바꾸라는 쪽지를 태운다.",
-          "en": "Burns notes demanding the wrong priority."
-        },
-        "relationship": {
-          "ko": "제윤의 원장에 전력 사용량을 붙인다.",
-          "en": "Adds power consumption to Je Yun’s ledger."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "과부하 징후를 읽고 공개 배분과 충전 제한을 수행한다. 불량품 반환은 확인되지만 발전 설비 발명이나 무장 수행은 근거가 없다.",
-      "en": "Reads overload signs and enforces public power allocation and charging limits. Returning defective parts is recorded; invention and armed performance are not."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -426,74 +152,37 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d5c8-d0dc-c778-8a31",
-    "name": "태인 허씨",
-    "crest": "clan-crests/d5c8-d0dc-c778-8a31.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 50,
-    "개방": -5,
-    "무력": 0,
-    "물질": 35,
-    "공동": 10,
-    "원칙": 25,
-    "공개": 5,
-    "자격": -5,
-    "분산": -55,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": -20,
-    "위험": 30,
-    "과시": -20,
-    "지속": 30,
-    "지향": "무성향",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "수문국",
-    "생업": "전력 설비 운전",
-    "품계": "당직장",
-    "직함": "신정기지 유치선 전력감독",
-    "업무 위치": "신정3동. 신정3동 유치선에서 허은찬은 저수조 수위와 전력 계기판을 대조하고 오해린의 냉동 충전 요청보다 급수펌프를 먼저 배전한다.",
-    "가치관": "권위 50 | 개방 −5 | 무력 0 | 물질 35 | 공동 10 | 원칙 25 | 공개 5 | 자격 −5 | 분산 −55 | 변혁 −20",
-    "욕망": "갈망 10 | 독점 −20 | 위험 30 | 과시 −20 | 지속 30 | 지향 무성향 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 신정기지 유치선 전력감독 자리는 탈선 직전 결함 보고로 열렸다.\n- 업무 위치: 신정3동. 신정3동 유치선에서 허은찬은 저수조 수위와 전력 계기판을 대조하고 오해린의 냉동 충전 요청보다 급수펌프를 먼저 배전한다.",
-    "관직": "품계 당직장. 직함은 신정기지 유치선 전력감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 저수조 수위가 최저선을 넘을 때만 허용한다.",
-    "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 신정기지 유치선 전력감독 자리의 서명이 장부에 올랐다.",
-    "관계": "최한결의 보수열차 출고에 전력을 대는 지휘를 받고, 통행 원장에 전력 사용량을 계약으로 붙이며, 오해린의 냉동 충전 요청을 거절한 빚이 있다.",
-    "야망": "신정 유치선의 비상 전력을 급수·보수 열차 전용으로 고정해 물 계약의 심야 동맥이 된다.",
-    "공포": "한 번의 과방전으로 수문 전동기가 죽고, 그 정전을 냉동 상회가 결제권 압박으로 쓰는 것.",
-    "개입": "대체 축전지를 구해 이중 공급을 열거나, 계기판 조작을 폭로해 감독을 교체할 수 있다."
-  },
-  "biography": "변압기 진동으로 과부하를 읽고, 급수펌프보다 군수 충전을 앞세우라는 쪽지를 태운다. 과묵하고 교대 일지를 깎지 않는다.\n\n- 소속: 수문국\n- 생업: 전력 설비 운전\n- 품계: 당직장\n- 직함: 신정기지 유치선 전력감독\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 신정기지 유치선 전력감독 자리는 탈선 직전 결함 보고로 열렸다.\n- 업무 위치: 신정3동. 신정3동 유치선에서 허은찬은 저수조 수위와 전력 계기판을 대조하고 오해린의 냉동 충전 요청보다 급수펌프를 먼저 배전한다.\n\n**관직.** 품계 당직장. 직함은 신정기지 유치선 전력감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 저수조 수위가 최저선을 넘을 때만 허용한다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 신정기지 유치선 전력감독 자리의 서명이 장부에 올랐다.\n\n**관계.** 최한결의 보수열차 출고에 전력을 대는 지휘를 받고, 통행 원장에 전력 사용량을 계약으로 붙이며, 오해린의 냉동 충전 요청을 거절한 빚이 있다.\n\n**야망.** 신정 유치선의 비상 전력을 급수·보수 열차 전용으로 고정해 물 계약의 심야 동맥이 된다.\n\n**공포.** 한 번의 과방전으로 수문 전동기가 죽고, 그 정전을 냉동 상회가 결제권 압박으로 쓰는 것.\n\n**개입.** 대체 축전지를 구해 이중 공급을 열거나, 계기판 조작을 폭로해 감독을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −5 | 무력 0 | 물질 35 | 공동 10 | 원칙 25 | 공개 5 | 자격 −5 | 분산 −55 | 변혁 −20\n- 욕망: 갈망 10 | 독점 −20 | 위험 30 | 과시 −20 | 지속 30 | 지향 무성향 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-01"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "허은찬",
-        "type": "지휘",
-        "to": "최한결",
-        "basis": "최한결의 보수열차 출고에 전력을 대는 지휘를 받고"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "채한솔",
-        "type": "계약",
-        "to": "허은찬",
-        "basis": "허은찬의 유치선 전력 배분을 발전 쪽에서 받치고"
-      }
-    ]
-  }
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:section:양천구:신정",
+      "name": {
+        "ko": "신정 구간"
+      },
+      "holderPersonId": "K018",
+      "directLiegePersonId": "K002",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "신정",
+        "stationName": "신정"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1147065000",
+          "name": "신정4동"
+        },
+        {
+          "id": "region:1147062000",
+          "name": "신정1동"
+        },
+        {
+          "id": "region:1147068000",
+          "name": "신정7동"
+        }
+      ],
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

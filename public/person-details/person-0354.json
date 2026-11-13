@@ -1,386 +1,149 @@
 {
   "id": "person-0354",
   "name": "심가은",
-  "title": "교량 척후대장",
-  "position": "아관사 교량 척후대장",
+  "title": "마포구 구청장",
+  "position": "마포구 구청장 · 공덕역",
   "characterId": "K353",
-  "rank": "병장",
-  "commonTier": "T5",
-  "occupation": "목격·추정 구분 기록·위시 목격 보고",
+  "rank": "구청장",
+  "commonTier": "T2",
+  "occupation": "구 행정",
   "gender": "여성",
   "stage": "S1",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-심가은",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0354",
   "birthDate": "2081-09-16",
   "birthday": "09-16",
   "age": 45,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/94",
-    "lore/characters/Cast-State-14.json#/content/96"
-  ],
-  "familyTree": {
-    "personId": "K353",
-    "nodes": [
-      {
-        "id": "K353",
-        "personId": "K353",
-        "kind": "person",
-        "name": "심가은",
-        "birthDate": "2081-09-16",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K353"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-심가은-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 아관사 교량 척후대장 자리는 야간 무단 도하 적발로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-심가은-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0354"
-      },
-      {
-        "id": "FH-K353-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "심승호",
-        "lineage": {
-          "surname": "심",
-          "bongwan": "청송",
-          "clan": "c2ec-ccad-c1a1"
-        },
-        "birthDate": "2051-09-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-심가은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2089,
-            "summary": "심승호는 암사 경비 초소에서 목격·추정 구분 기록·위시 목격 보고 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-심가은-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K353-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "심승민",
-        "lineage": {
-          "surname": "심",
-          "bongwan": "청송",
-          "clan": "c2ec-ccad-c1a1"
-        },
-        "birthDate": "2021-09-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-심가은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "심승민은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-심가은-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K353-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한준우",
-        "birthDate": "2051-09-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-심가은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2089,
-            "summary": "한준우는 암사 경비 초소에서 목격·추정 구분 기록·위시 목격 보고 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-심가은-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K353-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강준윤",
-        "birthDate": "2021-09-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-심가은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강준윤은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-심가은-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K353-P-01:K353:biological",
-        "from": "FH-K353-P-01",
-        "to": "K353",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-심가은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K353-P-02:FH-K353-P-01:biological",
-        "from": "FH-K353-P-02",
-        "to": "FH-K353-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-심가은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K353-M-01:K353:biological",
-        "from": "FH-K353-M-01",
-        "to": "K353",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-심가은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K353-M-02:FH-K353-M-01:biological",
-        "from": "FH-K353-M-02",
-        "to": "FH-K353-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-심가은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c2ec-ccad-c1a1",
+    "name": "청송 심씨",
+    "crest": "clan-crests/c2ec-ccad-c1a1.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "심가은은 마포구 공덕동 공덕역에 기재된 마포구 구청장이며, 청송 심씨인 마흔다섯 살 여성이다. 마포 터널로 들어온 강 건너 부품과 공구가 공덕 장터에 깔리기 전에, 구청 몫을 떼는 셈이 그녀의 책상에서 끝난다. 터널 남쪽 입구를 쥔 영등포의 한재목 쪽과 통행 몫과 자릿세를 맞춘 약정이 있고, 장부에는 그것이 용역을 맡은 작업조와의 정비 약정으로 적힌다. 김연규 의원이 국회에 있는 동안 OMO당이 지키는 장의 질서를 맡는 사람이 그녀다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "마포구 구청장",
+    "품계": "구청장",
+    "생업": "구 행정",
+    "일하는 역": "공덕역",
+    "잠자는 역": "공덕역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "심가은은 마포구 공덕동 공덕역에 기재된 마포구 구청장이며, 청송 심씨인 마흔다섯 살 여성이다. 마포 터널로 들어온 강 건너 부품과 공구가 공덕 장터에 깔리기 전에, 구청 몫을 떼는 셈이 그녀의 책상에서 끝난다. 터널 남쪽 입구를 쥔 영등포의 한재목 쪽과 통행 몫과 자릿세를 맞춘 약정이 있고, 장부에는 그것이 용역을 맡은 작업조와의 정비 약정으로 적힌다. 김연규 의원이 국회에 있는 동안 OMO당이 지키는 장의 질서를 맡는 사람이 그녀다.",
+    "관직": "직함 마포구 구청장. 직위 마포구 구청장 · 공덕역. 품계 구청장. 일하는 역 공덕역."
+  },
+  "values": {
+    "권위": 75,
+    "개방": -60,
+    "무력": 65,
+    "물질": -5,
+    "공동": 20,
+    "원칙": 20,
+    "공개": -40,
+    "자격": 0,
+    "분산": -75,
+    "변혁": -30
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": -15,
+    "위험": 20,
+    "과시": -15,
+    "지속": 20,
+    "지향": "유동",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0354",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "심가은",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "심가은",
+        "type": "계약",
+        "to": "한재목",
+        "basis": "마포 터널 남쪽 입구를 쥔 영등포 쪽과 통행 몫과 자릿세를 맞춘 약정. 장부에는 작업조와의 정비 약정으로 적는다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "심달호",
+        "type": "경쟁",
+        "to": "심가은",
+        "basis": "같은 청송 심씨로 OMO당 마포구의 구청장이 된 사람과 견주어지는 사이"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 9,
-        "effective": 9
-      },
-      "strategy": {
-        "base": 9,
-        "effective": 9
-      },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
-      "learning": {
-        "base": 9,
-        "effective": 9
-      },
-      "prowess": {
-        "base": 8,
-        "effective": 8
-      },
-      "endurance": {
+      "diplomacy": {
         "base": 10,
         "effective": 10
+      },
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "scout-reporting",
-        "name": {
-          "ko": "척후 보고",
-          "en": "Scout reporting"
-        },
-        "rating": 60
+        "id": "p0354-levy",
+        "name": "장터 몫 셈",
+        "rating": 64
       }
     ],
     "traits": [
       {
-        "id": "stated-priority",
-        "name": {
-          "ko": "빠른 보고와 해석의 긴장",
-          "en": "Fast reports and interpretive tension"
-        },
-        "description": {
-          "ko": "도꾼을 붙잡아 암호패를 갈았고 목격·추정 구분을 지시한다. 해석을 보태는 버릇과 오인 보고 공포를 함께 남긴다.",
-          "en": "A poacher was caught and passwords changed; reports separate observation and inference. A habit of adding interpretation coexists with fear of mistaken reporting."
-        },
-        "behavior": {
-          "ko": "보고를 빨리 쓰지만 해석을 보태는 버릇이 있다. 고서준의 신의에 보답하려 한다.",
-          "en": "He wrote reports fast but had a habit of adding interpretation. He sought to repay Go Seojun's trust."
-        },
-        "stress": {
-          "ko": "공포. 오인 보고 한 장이 동부 교량 전쟁으로 번져 자신이 원한의 대상이 되는 것.",
-          "en": "Fear. That one mistaken report would spread into an eastern-bridge war and he would become its object of grudges."
-        },
-        "relationship": {
-          "ko": "관계. 고서준에게 직보하고, 안기준의 교량 일정을 방해하며, 장세화의 환승 정보를 맞교환한다.",
-          "en": "Relations. Reported directly to Go Seojun, obstructed An Giun's bridge schedule, and exchanged transfer information with Jang Sehwa."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 병장. 직함은 아관사 교량 척후대장. 목격과 추정을 다른 색 먹으로 적게 하지만, 위기 때는 추정 칸을 지우고 목격만 올린다.",
-          "en": "Office. Rank: sergeant. Title: bridge reconnaissance chief. He had sightings and conjectures written in different inks, but in a crisis he erased the conjecture column and raised sightings only."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 병장. 직함은 아관사 교량 척후대장. 목격과 추정을 다른 색 먹으로 적게 하지만, 위기 때는 추정 칸을 지우고 목격만 올린다.",
-          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: bridge reconnaissance chief. He had sightings and conjectures written in different inks, but in a crisis he erased the conjecture column and raised sightings only."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 오인 보고 한 장이 동부 교량 전쟁으로 번져 자신이 원한의 대상이 되는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That one mistaken report would spread into an eastern-bridge war and he would become its object of grudges."
-        },
-        "relationship": {
-          "ko": "관계. 고서준에게 직보하고, 안기준의 교량 일정을 방해하며, 장세화의 환승 정보를 맞교환한다.",
-          "en": "Relations. Reported directly to Go Seojun, obstructed An Giun's bridge schedule, and exchanged transfer information with Jang Sehwa."
-        },
+        "id": "p0354-trait-1",
+        "name": "두 장부",
+        "description": "장부에 적는 말과 장터에서 하는 말을 가린다.",
+        "behavior": "강 건너 사람과의 약속은 늘 정부의 낱말로 옮겨 적는다.",
+        "stress": "두 말이 어긋날 위험이 보이면 장을 하루 닫는다.",
+        "relationship": "클로당 사람들은 그녀를 강 건너와 너무 가깝다고 본다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "도꾼을 붙잡아 암호패를 갈았고 목격·추정 구분을 지시한다. 해석을 보태는 버릇과 오인 보고 공포를 함께 남긴다.",
-      "en": "A poacher was caught and passwords changed; reports separate observation and inference. A habit of adding interpretation coexists with fear of mistaken reporting."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -418,73 +181,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c2ec-ccad-c1a1",
-    "name": "청송 심씨",
-    "crest": "clan-crests/c2ec-ccad-c1a1.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 30,
-    "개방": -5,
-    "무력": 30,
-    "물질": 0,
-    "공동": 15,
-    "원칙": 0,
-    "공개": -15,
-    "자격": -15,
-    "분산": -25,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": -15,
-    "위험": 20,
-    "과시": -15,
-    "지속": 20,
-    "지향": "유동",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "목격·추정 구분 기록·위시 목격 보고",
-    "소속": "아관사",
-    "품계": "병장",
-    "직함": "아관사 교량 척후대장",
-    "가치관": "권위 30 | 개방 −5 | 무력 30 | 물질 0 | 공동 15 | 원칙 0 | 공개 −15 | 자격 −15 | 분산 −25 | 변혁 −10",
-    "욕망": "갈망 40 | 독점 −15 | 위험 20 | 과시 −15 | 지속 20 | 지향 유동 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2081-09-16에 태어났다. 2126년 개막 현재 아관사 교량 척후대장 직무를 맡아 목격·추정 구분 기록·위시 목격 보고 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 목격·추정 구분 기록·위시 목격 보고 창구가 심가은의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 병장. 직함은 아관사 교량 척후대장. 목격·추정 구분 기록·위시 목격 보고 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
-    "일화": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
-    "관계": "고서준에게 직보하고, 안기준의 교량 일정을 방해하며, 장세화의 환승 정보를 맞교환한다.",
-    "야망": "심가은은 아관사 교량 척후대장 직무에서 목격·추정 구분 기록·위시 목격 보고 기록을 공개 인계표와 맞물리게 하려 한다.",
-    "공포": "아관사 교량 척후대장 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
-    "개입": "추정 칸의 원본을 공개하거나, 오인 보고를 덮어 일방의 지휘권 확대를 가속할 수 있다. 심가은의 목격·추정 구분 기록·위시 목격 보고 원장을 대조해 다음 인계의 증거를 세울 수 있다."
-  },
-  "biography": "심가은은 목격·추정 구분 기록·위시 목격 보고 기록을 손에 익힌 아관사 인물이다. 보고를 빨리 쓰지만 해석을 보태는 버릇이 있다. 고서준의 신의에 보답하려 한다.\n\n- 생업: 목격·추정 구분 기록·위시 목격 보고\n- 소속: 아관사\n- 품계: 병장\n- 직함: 아관사 교량 척후대장\n**생애.** 2081-09-16에 태어났다. 2126년 개막 현재 아관사 교량 척후대장 직무를 맡아 목격·추정 구분 기록·위시 목격 보고 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 목격·추정 구분 기록·위시 목격 보고 창구가 심가은의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 병장. 직함은 아관사 교량 척후대장. 목격·추정 구분 기록·위시 목격 보고 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 고서준에게 직보하고, 안기준의 교량 일정을 방해하며, 장세화의 환승 정보를 맞교환한다.\n\n**야망.** 심가은은 아관사 교량 척후대장 직무에서 목격·추정 구분 기록·위시 목격 보고 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 아관사 교량 척후대장 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 추정 칸의 원본을 공개하거나, 오인 보고를 덮어 일방의 지휘권 확대를 가속할 수 있다. 심가은의 목격·추정 구분 기록·위시 목격 보고 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 −5 | 무력 30 | 물질 0 | 공동 15 | 원칙 0 | 공개 −15 | 자격 −15 | 분산 −25 | 변혁 −10\n- 욕망: 갈망 40 | 독점 −15 | 위험 20 | 과시 −15 | 지속 20 | 지향 유동 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-14"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "심가은",
-        "type": "지휘",
-        "to": "고서준",
-        "basis": "교량 척후를 대장에게 직보"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "동새봄",
-        "type": "사제",
-        "to": "심가은",
-        "basis": "심가은의 척후 보고를 좌표로 번역하는 사제이고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

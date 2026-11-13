@@ -3,26 +3,27 @@
   "personId": "person-0129",
   "characterId": "K128",
   "name": "지목현",
-  "stateId": "S05",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "동방사 전령"
+    "role": "삼성1동 대피소장 · 아크"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "medium-length hair swept back",
-    "upper": "mustard ochre wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "mustard ochre wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 가로줄 둘 무늬의 강남 곁집 띠",
+    "outfit": "몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 가로줄 둘 무늬의 강남 곁집 띠",
     "palette": [
-      "mustard ochre",
-      "sand beige"
+      "charcoal",
+      "rust red",
+      "oiled brown"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "sand beige heavy twill trousers with knee patches",
-    "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "leather dispatch satchel"
+    "lower": "dark straight wool trousers",
+    "footwear": "leather ankle boots",
+    "accessories": "cloth-bound shelter register on a cord"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -173,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "knitted wool watch cap",
+        "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "mustard ochre wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 가로줄 둘 무늬의 강남 곁집 띠",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "sand beige heavy twill trousers with knee patches",
+        "value": "dark straight wool trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "thick-soled leather winter boots with wool socks",
+        "value": "leather ankle boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "turned-up jacket collar",
+        "value": "buttoned stand collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "leather dispatch satchel",
+        "value": "cloth-bound shelter register on a cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat flap satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "worn brown leather",
+        "value": "faded brown cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, brass buckle",
+        "value": "cloth, paper, cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the chest",
+        "value": "cord over the shoulder",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small flat book",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 지목현, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: soft rounded; skin: light warm beige. headwear: knitted wool watch cap; upper garment: mustard ochre wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar. accessories: leather dispatch satchel; worn as strap across the chest. color palette: mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 지목현, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: soft rounded; skin: light warm beige. upper garment: 몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 가로줄 둘 무늬의 강남 곁집 띠; neckline: buttoned stand collar. accessories: cloth-bound shelter register on a cord; worn as cord over the shoulder. color palette: charcoal, rust red, oiled brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 지목현, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: soft rounded; skin: light warm beige; average adult male height. headwear: knitted wool watch cap; upper garment: mustard ochre wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: sand beige heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 지목현, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: 몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 가로줄 둘 무늬의 강남 곁집 띠; neckline: buttoned stand collar; lower garment: dark straight wool trousers; footwear: leather ankle boots. accessories: cloth-bound shelter register on a cord; worn as cord over the shoulder. color palette: charcoal, rust red, oiled brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 지목현, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: soft rounded; skin: light warm beige; average adult male height. headwear: knitted wool watch cap; upper garment: mustard ochre wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: sand beige heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 지목현, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: 몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 가로줄 둘 무늬의 강남 곁집 띠; neckline: buttoned stand collar; lower garment: dark straight wool trousers; footwear: leather ankle boots. accessories: cloth-bound shelter register on a cord; worn as cord over the shoulder. color palette: charcoal, rust red, oiled brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 지목현, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: soft rounded; skin: light warm beige; average adult male height. headwear: knitted wool watch cap; upper garment: mustard ochre wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: sand beige heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 지목현, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: 몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 가로줄 둘 무늬의 강남 곁집 띠; neckline: buttoned stand collar; lower garment: dark straight wool trousers; footwear: leather ankle boots. accessories: cloth-bound shelter register on a cord; worn as cord over the shoulder. color palette: charcoal, rust red, oiled brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 지목현, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: soft rounded; skin: light warm beige; average adult male height. headwear: knitted wool watch cap; upper garment: mustard ochre wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: sand beige heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 지목현, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. medium-length hair swept back; black hair; medium length. build: soft rounded; skin: light warm beige; average adult male height. upper garment: 몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 가로줄 둘 무늬의 강남 곁집 띠; neckline: buttoned stand collar; lower garment: dark straight wool trousers; footwear: leather ankle boots. accessories: cloth-bound shelter register on a cord; worn as cord over the shoulder. color palette: charcoal, rust red, oiled brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

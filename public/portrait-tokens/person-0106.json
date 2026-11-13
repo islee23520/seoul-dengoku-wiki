@@ -3,26 +3,27 @@
   "personId": "person-0106",
   "characterId": "K105",
   "name": "명우솔",
-  "stateId": "S04",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "성수 공방시장 경매사"
+    "role": "교섭인 · 강남역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "medium-length hair swept back",
-    "upper": "charcoal cardigan-style knit jacket over a collared shirt",
-    "outfit": "charcoal cardigan-style knit jacket over a collared shirt",
+    "upper": "정비 틈을 낸 누빔 저고리, 오른쪽 깃에 부위 수 땀",
+    "outfit": "정비 틈을 낸 누빔 저고리, 오른쪽 깃에 부위 수 땀",
     "palette": [
-      "charcoal",
-      "burgundy"
+      "navy",
+      "oxblood",
+      "dove grey"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "burgundy straight wool trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "small leather coin purse and a folded ledger"
+    "lower": "quilted trousers",
+    "footwear": "felt-lined rubber boots",
+    "accessories": "Arc-red Near House arm band stitched with diagonal stripes and padded insulating sleeves over the parts"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -173,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "knitted cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "charcoal cardigan-style knit jacket over a collared shirt",
+        "value": "정비 틈을 낸 누빔 저고리, 오른쪽 깃에 부위 수 땀",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "burgundy straight wool trousers",
+        "value": "quilted trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt-lined rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "shirt collar under a knit vest",
+        "value": "collar stitched on the right with one thread per part",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "small leather coin purse and a folded ledger",
+        "value": "Arc-red Near House arm band stitched with diagonal stripes and padded insulating sleeves over the parts",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
-        "derived": true
-      },
-      "shape": {
-        "value": "pouch and narrow ledger",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "brown leather and paper",
+        "value": "Arc red, undyed cotton",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, paper",
+        "value": "felted wool, cotton batting",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "purse at the belt, ledger in the coat pocket",
+        "value": "band on the upper arm, sleeves slipped over the parts",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "narrow band and tube sleeves",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 명우솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: light olive. upper garment: charcoal cardigan-style knit jacket over a collared shirt; neckline: shirt collar under a knit vest. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: charcoal, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 명우솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: light olive. headwear: knitted cap; upper garment: 정비 틈을 낸 누빔 저고리, 오른쪽 깃에 부위 수 땀; neckline: collar stitched on the right with one thread per part. accessories: Arc-red Near House arm band stitched with diagonal stripes and padded insulating sleeves over the parts; worn as band on the upper arm, sleeves slipped over the parts. color palette: navy, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 명우솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: light olive; average adult male height. upper garment: charcoal cardigan-style knit jacket over a collared shirt; neckline: shirt collar under a knit vest; lower garment: burgundy straight wool trousers; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: charcoal, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 명우솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: light olive; average adult male height. headwear: knitted cap; upper garment: 정비 틈을 낸 누빔 저고리, 오른쪽 깃에 부위 수 땀; neckline: collar stitched on the right with one thread per part; lower garment: quilted trousers; footwear: felt-lined rubber boots. accessories: Arc-red Near House arm band stitched with diagonal stripes and padded insulating sleeves over the parts; worn as band on the upper arm, sleeves slipped over the parts. color palette: navy, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 명우솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: light olive; average adult male height. upper garment: charcoal cardigan-style knit jacket over a collared shirt; neckline: shirt collar under a knit vest; lower garment: burgundy straight wool trousers; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: charcoal, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 명우솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: light olive; average adult male height. headwear: knitted cap; upper garment: 정비 틈을 낸 누빔 저고리, 오른쪽 깃에 부위 수 땀; neckline: collar stitched on the right with one thread per part; lower garment: quilted trousers; footwear: felt-lined rubber boots. accessories: Arc-red Near House arm band stitched with diagonal stripes and padded insulating sleeves over the parts; worn as band on the upper arm, sleeves slipped over the parts. color palette: navy, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 명우솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: light olive; average adult male height. upper garment: charcoal cardigan-style knit jacket over a collared shirt; neckline: shirt collar under a knit vest; lower garment: burgundy straight wool trousers; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: charcoal, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 명우솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: light olive; average adult male height. headwear: knitted cap; upper garment: 정비 틈을 낸 누빔 저고리, 오른쪽 깃에 부위 수 땀; neckline: collar stitched on the right with one thread per part; lower garment: quilted trousers; footwear: felt-lined rubber boots. accessories: Arc-red Near House arm band stitched with diagonal stripes and padded insulating sleeves over the parts; worn as band on the upper arm, sleeves slipped over the parts. color palette: navy, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 명우솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: light olive; average adult male height. upper garment: charcoal cardigan-style knit jacket over a collared shirt; neckline: shirt collar under a knit vest; lower garment: burgundy straight wool trousers; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: charcoal, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 명우솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; narrow almond dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: average with narrow shoulders; skin: light olive; average adult male height. headwear: knitted cap; upper garment: 정비 틈을 낸 누빔 저고리, 오른쪽 깃에 부위 수 땀; neckline: collar stitched on the right with one thread per part; lower garment: quilted trousers; footwear: felt-lined rubber boots. accessories: Arc-red Near House arm band stitched with diagonal stripes and padded insulating sleeves over the parts; worn as band on the upper arm, sleeves slipped over the parts. color palette: navy, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

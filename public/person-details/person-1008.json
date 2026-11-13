@@ -1,398 +1,30 @@
 {
   "id": "person-1008",
   "name": "민웅기",
-  "title": "규격맹 봉신 · 통신 정비·배분 담당(전 대전선 군주, 왕격 보존)",
-  "position": "규격맹 봉신 · 통신 정비·배분 담당(전 대전선 군주, 왕격 보존)",
+  "title": "천왕 통신대 대주",
+  "position": "천왕 통신대 대주 · 천왕역",
   "characterId": "K1008",
-  "rank": "",
-  "commonTier": "T1",
-  "occupation": "주 통신 정비사 / 부 고물·철물 수리",
+  "rank": "대주",
+  "commonTier": "T2",
+  "occupation": "통신 정비",
   "gender": "남성",
   "stage": "S1",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-Unaffiliated#인물-민웅기",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-1008",
   "birthDate": "2094-10-08",
   "birthday": "10-08",
   "age": 32,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-Unaffiliated.json#/content/31",
-    "lore/chronology/Scenario-Timeline.json#/content/18",
-    "lore/chronology/Scenario-Timeline.json#/content/20",
-    "lore/chronology/Scenario-Timeline.json#/content/23",
-    "lore/chronology/Scenario-Timeline.json#/content/27",
-    "lore/chronology/Scenario-Timeline.json#/content/28"
-  ],
-  "familyTree": {
-    "personId": "K1008",
-    "nodes": [
-      {
-        "id": "K1008",
-        "personId": "K1008",
-        "kind": "person",
-        "name": "민웅기",
-        "birthDate": "2094-10-08",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K1008"
-          },
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-민웅기-list1"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "성명: 민웅기",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-민웅기-list1"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-1008"
-      },
-      {
-        "id": "FH-K1008-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "민승온",
-        "lineage": {
-          "surname": "민",
-          "bongwan": "여흥",
-          "clan": "bbfc-c5ec-d765-9594"
-        },
-        "birthDate": "2064-10-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-민웅기-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2102,
-            "summary": "민승온은 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-민웅기-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1008-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "민승빈",
-        "lineage": {
-          "surname": "민",
-          "bongwan": "여흥",
-          "clan": "bbfc-c5ec-d765-9594"
-        },
-        "birthDate": "2034-10-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-민웅기-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "민승빈은 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-민웅기-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1008-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "민승솔",
-        "lineage": {
-          "surname": "민",
-          "bongwan": "여흥",
-          "clan": "bbfc-c5ec-d765-9594"
-        },
-        "birthDate": "2004-10-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-민웅기-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "민승솔은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-민웅기-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1008-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박서영",
-        "birthDate": "2064-10-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-민웅기-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2102,
-            "summary": "박서영은 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-민웅기-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1008-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이서경",
-        "birthDate": "2034-10-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-민웅기-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "이서경은 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-민웅기-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1008-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최서정",
-        "birthDate": "2004-10-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-민웅기-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최서정은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-민웅기-list1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K1008-P-01:K1008:biological",
-        "from": "FH-K1008-P-01",
-        "to": "K1008",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-민웅기-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1008-P-02:FH-K1008-P-01:biological",
-        "from": "FH-K1008-P-02",
-        "to": "FH-K1008-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-민웅기-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1008-P-03:FH-K1008-P-02:biological",
-        "from": "FH-K1008-P-03",
-        "to": "FH-K1008-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-민웅기-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1008-M-01:K1008:biological",
-        "from": "FH-K1008-M-01",
-        "to": "K1008",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-민웅기-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1008-M-02:FH-K1008-M-01:biological",
-        "from": "FH-K1008-M-02",
-        "to": "FH-K1008-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-민웅기-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1008-M-03:FH-K1008-M-02:biological",
-        "from": "FH-K1008-M-03",
-        "to": "FH-K1008-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-민웅기-list1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bbfc-c5ec-d765-9594",
+    "name": "여흥 민씨",
+    "crest": "clan-crests/bbfc-c5ec-d765-9594.svg"
   },
-  "proseContacts": [],
-  "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
-  },
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
   "rightsPermissions": {
     "applicability": "real-person",
     "identityBasisRef": "owner-confirmed-identity-20260925",
@@ -410,126 +42,177 @@
       "evidenceRef": "owner-current-subject-permissions-20261003"
     }
   },
+  "biography": "천왕역 통신대는 끊긴 무전기와 중계기를 되살리는 대이고, 휴머노이드 여섯 기가 중계와 짐 나르기와 정비를 거든다. 그 대를 쥔 서른두 살 대주 민웅기의 규칙은 끊긴 연락을 서둘러 닫지 않는 것이어서, 응답이 없는 줄도 시각과 쓴 와트를 적어 두고 한 철을 더 열어 둔다. 정부의 귀환망 현장 계약자 신종목과 맺은 장에 따라 선정릉과 수서 사이 중계에 쓰는 무전기를 고치고, 같은 천왕 차량기지에서 바퀴 일을 하는 허다온의 조와는 기지 자리와 전기를 나눠 쓴다.",
+  "fields": {
+    "기여자": "[minpeter](https://github.com/minpeter)",
+    "소속": "자유도시들",
+    "직함": "천왕 통신대 대주",
+    "품계": "대주",
+    "생업": "통신 정비",
+    "일하는 역": "천왕역",
+    "잠자는 역": "천왕역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "천왕역 통신대는 끊긴 무전기와 중계기를 되살리는 대이고, 휴머노이드 여섯 기가 중계와 짐 나르기와 정비를 거든다. 그 대를 쥔 서른두 살 대주 민웅기의 규칙은 끊긴 연락을 서둘러 닫지 않는 것이어서, 응답이 없는 줄도 시각과 쓴 와트를 적어 두고 한 철을 더 열어 둔다. 정부의 귀환망 현장 계약자 신종목과 맺은 장에 따라 선정릉과 수서 사이 중계에 쓰는 무전기를 고치고, 같은 천왕 차량기지에서 바퀴 일을 하는 허다온의 조와는 기지 자리와 전기를 나눠 쓴다.",
+    "관직": "직함 천왕 통신대 대주. 직위 천왕 통신대 대주 · 천왕역. 품계 대주. 일하는 역 천왕역."
+  },
+  "values": {
+    "권위": -30,
+    "개방": 20,
+    "무력": -35,
+    "물질": 30,
+    "공동": 0,
+    "원칙": 20,
+    "공개": 10,
+    "자격": 25,
+    "분산": 65,
+    "변혁": 0
+  },
+  "desire": {
+    "갈망": 20,
+    "독점": -30,
+    "위험": 10,
+    "과시": -20,
+    "지속": 35,
+    "지향": "이성",
+    "결합": "단혼"
+  },
+  "household": {
+    "id": "hh:person-1008",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "admitted"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "민웅기",
+        "type": "지휘",
+        "to": "강민서",
+        "basis": "구로 공장장 강민서의 직속"
+      },
+      {
+        "from": "민웅기",
+        "type": "계약",
+        "to": "신종목",
+        "basis": "정부의 귀환망 현장 계약자. 선정릉과 수서 사이 중계에 쓰는 무전기의 수리를 맡는 장"
+      },
+      {
+        "from": "민웅기",
+        "type": "계약",
+        "to": "강민서",
+        "basis": "구로 공장장. 신도림에 새 팬을 다는 일에 쓸 무전과 부품을 장으로 맺었다"
+      },
+      {
+        "from": "민웅기",
+        "type": "계약",
+        "to": "허다온",
+        "basis": "천왕 차량기지에서 바퀴 일을 하는 작업조장. 기지 자리와 전기를 나눠 쓰는 장"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "신종목",
+        "type": "계약",
+        "to": "민웅기",
+        "basis": "귀환망의 무전기를 천왕 통신대가 고치고, 그 값은 귀환망 계약에서 치른다"
+      },
+      {
+        "from": "강민서",
+        "type": "계약",
+        "to": "민웅기",
+        "basis": "신도림 팬을 다는 일의 무전과 부품을 장으로 맺었다"
+      },
+      {
+        "from": "장우석",
+        "type": "계약",
+        "to": "민웅기",
+        "basis": "천왕 통신대의 일을 판에 올리는 장을 오래전부터 맺어 왔다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K029",
+    "name": "강민서",
+    "courtId": "court:K029",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "retinueGroups": [
+    {
+      "id": "retinue:K1008:humanoids",
+      "name": "민웅기의 휴머노이드 수행단",
+      "courtId": "court:K1008",
+      "liegePersonId": "K1008",
+      "count": 6,
+      "duties": [
+        "통신 중계",
+        "짐 운반",
+        "정비"
+      ],
+      "personhoodReview": "individual",
+      "technicalLimits": [
+        "지역 통신망",
+        "전지",
+        "부품"
+      ],
+      "holdingIds": [],
+      "formalTitle": null
+    }
+  ],
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 16,
-        "effective": 16
+      "diplomacy": {
+        "base": 5,
+        "effective": 5
       },
-      "strategy": {
-        "base": 16,
-        "effective": 16
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 19,
-        "effective": 23
+      "stewardship": {
+        "base": 11,
+        "effective": 11
       },
-      "management": {
-        "base": 19,
-        "effective": 19
-      },
-      "insight": {
-        "base": 18,
-        "effective": 18
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 20,
-        "effective": 20
+        "base": 8,
+        "effective": 8
       },
       "prowess": {
-        "base": 13,
-        "effective": 13
-      },
-      "endurance": {
-        "base": 12,
-        "effective": 12
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
         "id": "k1008-skill-1",
-        "name": {
-          "ko": "통신 정비",
-          "en": "Communication maintenance"
-        },
-        "rating": 90
-      },
-      {
-        "id": "k1008-skill-2",
-        "name": {
-          "ko": "주민 교섭",
-          "en": "Resident negotiation"
-        },
+        "name": "무전기 수리",
         "rating": 85
       },
       {
-        "id": "k1008-skill-3",
-        "name": {
-          "ko": "유도",
-          "en": "Judo"
-        },
-        "rating": 65
+        "id": "k1008-skill-2",
+        "name": "휴머노이드 관리",
+        "rating": 70
       }
     ],
     "traits": [
       {
         "id": "k1008-trait-1",
-        "name": {
-          "ko": "현장 조정가",
-          "en": "Field coordinator"
-        },
-        "description": {
-          "ko": "연결 비용과 물자 배분 조건을 주민에게 설명한다.",
-          "en": "Explains connection costs and distribution terms to residents."
-        },
-        "behavior": {
-          "ko": "연결 비용과 물자 배분 조건을 주민에게 설명한다.",
-          "en": "Explains connection costs and distribution terms to residents."
-        },
-        "stress": {
-          "ko": "생활 전력·경작 도구 수리에 남길 부품과 중계기에 쓸 부품의 순서가 충돌하면 주민과 배분 순서를 협의한다.",
-          "en": "Discusses allocation order with residents when parts for household power and cultivation-tool repairs compete with parts for the relay."
-        },
-        "relationship": {
-          "ko": "김연규와 선후배 관계이며 신종목과 현장 운용을 나누었다.",
-          "en": "Is Kim Yeonggyu’s junior and shared field operation with Shin Jongmok."
-        },
-        "effects": [
-          {
-            "ability": "negotiation",
-            "delta": 4
-          }
-        ]
-      },
-      {
-        "id": "k1008-trait-2",
-        "name": {
-          "ko": "생존자 기록 중시",
-          "en": "Survivor records matter"
-        },
-        "description": {
-          "ko": "연락 종료를 생존자의 부재와 같게 보지 않는다.",
-          "en": "Does not treat closed contact as absence of a survivor."
-        },
-        "behavior": {
-          "ko": "연락 종료를 생존자의 부재와 같게 보지 않는다.",
-          "en": "Does not treat closed contact as absence of a survivor."
-        },
-        "stress": {
-          "ko": "침묵만으로 자동 종료를 서두르지 않는다.",
-          "en": "Does not rush automatic closure on silence alone."
-        },
-        "relationship": {
-          "ko": "돌아온 응답의 시각·전력을 남겨 주민의 연락을 이어 간다.",
-          "en": "Records returning responses’ time and power use to keep resident contacts alive."
-        },
+        "name": "끊긴 줄을 닫지 않는다",
+        "description": "응답이 없는 연락을 서둘러 끝내지 않는다.",
+        "behavior": "끊긴 무전도 시각과 쓴 와트를 적어 두고 한 철 더 열어 둔다.",
+        "stress": "저절로 닫히는 규칙이 침묵하는 사람을 장부에서 지울까 두려워한다.",
+        "relationship": "연결에 드는 값을 상대에게 숫자로 먼저 설명한다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "끊긴 연락처에서 응답이 돌아오자 시각과 전력 사용량을 기록했고 이동식 민간 중계기를 더했다. 수서 생활권에서 공동 경작과 배분을 주민과 협의하며 물자를 두고 다투지 않아도 되는 길을 찾는다. 경작지·경작권·수확량은 확정하지 않는다. 유도 훈련은 군사 지휘 이력과 별개다.",
-      "en": "He recorded time and power use when a closed contact responded again and added a mobile civilian relay. In the Suseo living area he discusses communal cultivation and distribution with residents, seeking a way to avoid fighting over supplies. No plot, cultivation right or harvest quantity is confirmed. Judo training is separate from military command history."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -567,122 +250,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "retinueGroups": [
-    {
-      "id": "retinue:K1008:humanoids",
-      "name": {
-        "ko": "민웅기의 휴머노이드 가신단",
-        "en": "Min Woonggi’s humanoid retinue"
-      },
-      "courtId": "court:K1008",
-      "liegePersonId": "K1008",
-      "count": 24,
-      "duties": [
-        "농업",
-        "지역 통신",
-        "보급",
-        "정비"
-      ],
-      "personhoodReview": "individual",
-      "technicalLimits": [
-        "지역망",
-        "배터리",
-        "부품"
-      ],
-      "holdingIds": [],
-      "formalTitle": null
-    }
-  ],
-  "clan": {
-    "id": "bbfc-c5ec-d765-9594",
-    "name": "여흥 민씨",
-    "crest": "clan-crests/bbfc-c5ec-d765-9594.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": false,
-  "values": {
-    "권위": -20,
-    "개방": 25,
-    "무력": -30,
-    "물질": 10,
-    "공동": 30,
-    "원칙": 20,
-    "공개": -10,
-    "자격": 20,
-    "분산": 45,
-    "변혁": 15
-  },
-  "desire": {
-    "갈망": 20,
-    "독점": -30,
-    "위험": 10,
-    "과시": -20,
-    "지속": 35,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "성명": "민웅기",
-    "캐릭터 ID": "K1008",
-    "기여자": "[minpeter](https://github.com/minpeter)",
-    "출신 공동체": "서울 내부 강남구청·수서 생활권",
-    "생년월일": "2094-10-08",
-    "언어": "한국어",
-    "생업": "주 통신 정비사 / 부 고물·철물 수리",
-    "소속": "규격맹 봉신(전 중립 대전; 2026-10-22 세력 이동)",
-    "민간·공동체 직무": "통신 정비·배분 담당. 전직 대전 군주(대전선·왕격)는 2026-10-22 세력 이동으로 해소되었고 왕격은 규격맹 봉신의 개인 정치 등급으로 보존된다. 대한민국 정부 관직이나 봉건 작위가 아니다.",
-    "성격": "끊긴 연락의 종료 판정을 서두르지 않고 주민에게 연결 비용을 설명한다",
-    "개인 야망": "수서 생활권에서 공동 경작과 배분을 주민과 협의해 물자를 두고 다투지 않아도 되는 길을 만든다. 경작지·경작권·수확량은 확정하지 않는다.",
-    "공포": "자동 종료 규칙이 침묵 중인 생존자를 장부에서 지우는 일",
-    "통치 방식": "농업과 물자 배분을 주민과 협의한다",
-    "관계": "김연규는 민웅기의 선배다",
-    "촉발 사건": "수서의 주민 배분 협의에서 생활 전력·경작 도구 수리에 남길 부품과 중계기에 쓸 부품의 순서가 충돌한다.",
-    "플레이어 개입": "주민과 배분 순서를 협의하도록 돕거나 서울 내부 부품 인계를 돕는다. 한쪽 수리가 늦어지고 민웅기는 추가 당직을 거절할 수 있다.",
-    "거주·업무 위치": "수서동 행정동 범위 거주, 수서역 대합실의 생활 화물 인계·배급 창구 업무. 주택·침상 권리와 독점 점유를 부여하지 않으며 서울 작위·영지 수여나 무토지 확정이 아니다."
-  },
-  "sections": {
-    "훈련": "유도. 통신 장비 정비와는 별도로 익혔다."
-  },
-  "biography": "- 성명: 민웅기\n- 캐릭터 ID: K1008\n- 기여자: [minpeter](https://github.com/minpeter)\n- 출신 공동체: 서울 내부 강남구청·수서 생활권\n- 생년월일: 2094-10-08\n- 언어: 한국어\n- 생업: 주 통신 정비사 / 부 고물·철물 수리\n- 소속: 규격맹 봉신(전 중립 대전; 2026-10-22 세력 이동)\n- 민간·공동체 직무: 통신 정비·배분 담당. 전직 대전 군주(대전선·왕격)는 2026-10-22 세력 이동으로 해소되었고 왕격은 규격맹 봉신의 개인 정치 등급으로 보존된다. 대한민국 정부 관직이나 봉건 작위가 아니다.\n- 성격: 끊긴 연락의 종료 판정을 서두르지 않고 주민에게 연결 비용을 설명한다\n- 개인 야망: 수서 생활권에서 공동 경작과 배분을 주민과 협의해 물자를 두고 다투지 않아도 되는 길을 만든다. 경작지·경작권·수확량은 확정하지 않는다.\n- 공포: 자동 종료 규칙이 침묵 중인 생존자를 장부에서 지우는 일\n- 통치 방식: 농업과 물자 배분을 주민과 협의한다\n- 관계: 김연규는 민웅기의 선배다\n- 촉발 사건: 수서의 주민 배분 협의에서 생활 전력·경작 도구 수리에 남길 부품과 중계기에 쓸 부품의 순서가 충돌한다.\n- 플레이어 개입: 주민과 배분 순서를 협의하도록 돕거나 서울 내부 부품 인계를 돕는다. 한쪽 수리가 늦어지고 민웅기는 추가 당직을 거절할 수 있다.\n- 거주·업무 위치: 수서동 행정동 범위 거주, 수서역 대합실의 생활 화물 인계·배급 창구 업무. 주택·침상 권리와 독점 점유를 부여하지 않으며 서울 작위·영지 수여나 무토지 확정이 아니다.\n\n민웅기는 처음부터 서울 내부에서 통신 정비와 주민 배분을 맡아 왔다. 강남구청 생활권의 귀환망 정비와 수서 생활권의 수리·공동 경작 배분을 병행하며, 연결 비용과 식량 순서를 주민과 협의한다. 종료 처리한 연락처에서 다시 응답이 왔을 때 시각과 전력 사용량을 기록한 행동을 보존한다. 개막에 관직을 버리고 대전으로 옮겼다는 사건과 서울 복귀 요구는 삭제한다. 대전 군주·대전선은 2026-10-22 규격맹 세력 이동으로 해소하고, 왕격은 규격맹 봉신의 개인 정치 등급으로 보존한다. 세 직속 관계(장우석·허다온·구찬솔)는 규격맹 조합 안에서 보존하며 서울 영지 범위로 확정하지 않는다. 가신단 24기의 제한된 농업·지역 통신·보급·정비 기능과 개별 인격 심사는 보존하되 서울 내부 업무로 개정한다.\n\n훈련. 유도. 통신 장비 정비와는 별도로 익혔다.",
-  "sources": [
-    "Cast-Unaffiliated"
-  ],
-  "court": {
-    "id": "court:K1008",
-    "members": [
-      {
-        "personId": "K035",
-        "name": "장우석"
-      },
-      {
-        "personId": "K039",
-        "name": "구찬솔"
-      },
-      {
-        "personId": "K038",
-        "name": "허다온"
-      }
-    ]
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "민웅기",
-        "type": "계약",
-        "to": "신종목",
-        "basis": "민웅기와 신종목은 서울 내부에서 귀환합성국의 정비 기록·대체 경로와 현장 회수·주민 동의를 나눈다. 떠남·낙향을 분업의 원인으로 삼지 않는다."
-      }
-    ],
-    "incoming": [
-      {
-        "from": "신종목",
-        "type": "계약",
-        "to": "민웅기",
-        "basis": "민웅기와 신종목은 서울 내부에서 귀환합성국의 정비 기록·대체 경로와 현장 회수·주민 동의를 나눈다. 떠남·낙향을 분업의 원인으로 삼지 않는다."
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

@@ -1,505 +1,155 @@
 {
   "id": "person-0119",
   "name": "장석윤",
-  "title": "고덕 장교단 교관",
-  "position": "고덕 장교단 교관",
+  "title": "명일2동 대피소장",
+  "position": "명일2동 대피소장 · 아크",
   "characterId": "K118",
-  "rank": "병장",
-  "commonTier": "T5",
-  "occupation": "장교단 훈련·교관 수첩 관리",
+  "rank": "대피소장",
+  "commonTier": "T3",
+  "occupation": "대피소 통솔",
   "gender": "남성",
   "stage": "S1",
-  "state": "S05",
-  "stateName": "동방사",
-  "sourceRoute": "/world/Cast-State-05#인물-장석윤",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0119",
   "birthDate": "2095-09-18",
   "birthday": "09-18",
   "age": 31,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-05.json#/content/71",
-    "lore/characters/Cast-State-05.json#/content/73"
-  ],
-  "familyTree": {
-    "personId": "K118",
-    "nodes": [
-      {
-        "id": "K118",
-        "personId": "K118",
-        "kind": "person",
-        "name": "장석윤",
-        "birthDate": "2095-09-18",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K118"
-          },
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-장석윤-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 고덕 장교단 교관 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-장석윤-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0119"
-      },
-      {
-        "id": "FH-K118-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "장승경",
-        "lineage": {
-          "surname": "장",
-          "bongwan": "흥덕",
-          "clan": "c7a5-d765-b355"
-        },
-        "birthDate": "2065-09-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-장석윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2103,
-            "summary": "장승경은 대합실 당직에서 장교단 훈련·교관 수첩 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-장석윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K118-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "장승수",
-        "lineage": {
-          "surname": "장",
-          "bongwan": "흥덕",
-          "clan": "c7a5-d765-b355"
-        },
-        "birthDate": "2035-09-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-장석윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "장승수는 대합실 당직에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-장석윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K118-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "장승은",
-        "lineage": {
-          "surname": "장",
-          "bongwan": "흥덕",
-          "clan": "c7a5-d765-b355"
-        },
-        "birthDate": "2005-09-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-장석윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "장승은은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-장석윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K118-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조승혁",
-        "birthDate": "2065-09-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-장석윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2103,
-            "summary": "조승혁은 대합실 당직에서 장교단 훈련·교관 수첩 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-장석윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K118-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김승도",
-        "birthDate": "2035-09-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-장석윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "김승도는 대합실 당직에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-장석윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K118-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "박승미",
-        "birthDate": "2005-09-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-장석윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박승미는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-장석윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K118-P-01:K118:biological",
-        "from": "FH-K118-P-01",
-        "to": "K118",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-장석윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K118-P-02:FH-K118-P-01:biological",
-        "from": "FH-K118-P-02",
-        "to": "FH-K118-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-장석윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K118-P-03:FH-K118-P-02:biological",
-        "from": "FH-K118-P-03",
-        "to": "FH-K118-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-장석윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K118-M-01:K118:biological",
-        "from": "FH-K118-M-01",
-        "to": "K118",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-장석윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K118-M-02:FH-K118-M-01:biological",
-        "from": "FH-K118-M-02",
-        "to": "FH-K118-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-장석윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K118-M-03:FH-K118-M-02:biological",
-        "from": "FH-K118-M-03",
-        "to": "FH-K118-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-장석윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c7a5-d765-b355",
+    "name": "흥덕 장씨",
+    "crest": "clan-crests/c7a5-d765-b355.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "장석윤의 대피소 명부에는 고덕 옛 차량기지에서 일하는 집안이 절반을 넘는다. 서른한 살에 명일2동 대피소장이 된 그는, 기지에서 되살린 옛 기계가 한 번 멈출 때마다 몇 집의 끼니가 줄어드는지를 먼저 셈한다. 고덕은 상일동과 강일로 가는 길목이라, 동쪽 테두리를 지켜보러 나가는 망꾼들도 그의 대피소에서 마지막 끼니를 먹는다. 곁집장 배우진에게 맹세하고 받은 자리여서, 기지의 옛 기계를 돌릴 날을 바꾸자는 말이 나오면 반드시 천호에 먼저 묻는다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "명일2동 대피소장",
+    "품계": "대피소장",
+    "생업": "대피소 통솔",
+    "일하는 역": "고덕역",
+    "잠자는 역": "고덕역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "장석윤의 대피소 명부에는 고덕 옛 차량기지에서 일하는 집안이 절반을 넘는다. 서른한 살에 명일2동 대피소장이 된 그는, 기지에서 되살린 옛 기계가 한 번 멈출 때마다 몇 집의 끼니가 줄어드는지를 먼저 셈한다. 고덕은 상일동과 강일로 가는 길목이라, 동쪽 테두리를 지켜보러 나가는 망꾼들도 그의 대피소에서 마지막 끼니를 먹는다. 곁집장 배우진에게 맹세하고 받은 자리여서, 기지의 옛 기계를 돌릴 날을 바꾸자는 말이 나오면 반드시 천호에 먼저 묻는다.",
+    "관직": "직함 명일2동 대피소장. 직위 명일2동 대피소장 · 아크. 품계 대피소장. 일하는 역 고덕역."
+  },
+  "values": {
+    "권위": 90,
+    "개방": -65,
+    "무력": 80,
+    "물질": -25,
+    "공동": 55,
+    "원칙": -30,
+    "공개": -80,
+    "자격": -60,
+    "분산": -90,
+    "변혁": 20
+  },
+  "desire": {
+    "갈망": -5,
+    "독점": -15,
+    "위험": -10,
+    "과시": 25,
+    "지속": -5,
+    "지향": "동성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0119",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "장석윤",
+        "type": "지휘",
+        "to": "배우진",
+        "basis": "강동 곁집장 배우진의 직속"
+      },
+      {
+        "from": "장석윤",
+        "type": "맹세",
+        "to": "배우진",
+        "basis": "강동 곁집장 배우진에게 맹세한 뒤 고덕의 명일2동 대피소를 맡았다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "양기석",
+        "type": "지휘",
+        "to": "장석윤",
+        "basis": "명일2동 대피소장 장석윤의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K115",
+    "name": "배우진",
+    "courtId": "court:K115",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K118",
+    "members": [
+      {
+        "personId": "K132",
+        "name": "양기석"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 11,
-        "effective": 11
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 8,
-        "effective": 8
-      },
-      "learning": {
-        "base": 9,
-        "effective": 9
-      },
-      "prowess": {
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
-      "endurance": {
-        "base": 9,
-        "effective": 9
-      }
-    },
-    "skills": [
-      {
-        "id": "k118-officer-training",
-        "name": {
-          "ko": "장교단 훈련",
-          "en": "Officer corps training"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k118-choice",
-        "name": {
-          "ko": "보호와 강제를 함께",
-          "en": "Protection mixed with coercion"
-        },
-        "description": {
-          "ko": "부하를 가족처럼 책임지되 훈련 중 이탈은 용서하지 않는다. 부품 대신 복무 등록을 표준 교범에 넣고 싶어 한다.",
-          "en": "He took responsibility for his men like family but never forgave desertion during training. He wanted to put service registration in place of parts into the standard manual."
-        },
-        "behavior": {
-          "ko": "일화. 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 고덕 장교단 교관 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In the 2125 station fire he carried out the roster of lives first. By this deed the signature of the Godeok officer corps instructor post rose into the ledger."
-        },
-        "stress": {
-          "ko": "공포. 규격맹의 시민권 규격이 고덕 훈련장을 뚫고 들어와 장교 호적이 빈 명부가 되는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That the The Gauge's citizenship standard would pierce the Godeok training ground and the officer registry would become an empty roster. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 김우찬의 작전표를 훈련으로 번역하는 지휘 관계이고, 서남 경비대장 이강묵과 차단문 전술을 거래하며, 백온의 가족 명부를 강제복무와 묶어 원한을 산다.",
-          "en": "Relations. A command relation translating Kim Woochan's operations table into training, trading barrier-gate tactics with Lee Gangmuk, the southwest guard captain, and earning grudges by binding Baek On's family roster to forced service."
-        },
-        "effects": []
+      "learning": {
+        "base": 6,
+        "effective": 6
       },
-      {
-        "id": "k118-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 병장. 직함은 고덕 장교단 교관. 훈련 실적과 가족 배급을 함께 공개하지만, 비밀 결사 암호는 교관 수첩에만 남겨 공식 명령망을 우회한다.",
-          "en": "Office. Rank: sergeant. Title: Godeok officer corps instructor. He published training records and family rations together but kept the secret society's codes only in the instructor's notebook, bypassing the official order network."
-        },
-        "behavior": {
-          "ko": "관직. 품계 병장. 직함은 고덕 장교단 교관. 훈련 실적과 가족 배급을 함께 공개하지만, 비밀 결사 암호는 교관 수첩에만 남겨 공식 명령망을 우회한다.",
-          "en": "Office. Rank: sergeant. Title: Godeok officer corps instructor. He published training records and family rations together but kept the secret society's codes only in the instructor's notebook, bypassing the official order network."
-        },
-        "stress": {
-          "ko": "공포. 규격맹의 시민권 규격이 고덕 훈련장을 뚫고 들어와 장교 호적이 빈 명부가 되는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That the The Gauge's citizenship standard would pierce the Godeok training ground and the officer registry would become an empty roster. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 김우찬의 작전표를 훈련으로 번역하는 지휘 관계이고, 서남 경비대장 이강묵과 차단문 전술을 거래하며, 백온의 가족 명부를 강제복무와 묶어 원한을 산다.",
-          "en": "Relations. A command relation translating Kim Woochan's operations table into training, trading barrier-gate tactics with Lee Gangmuk, the southwest guard captain, and earning grudges by binding Baek On's family roster to forced service."
-        },
-        "effects": []
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "일화. 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 고덕 장교단 교관 자리의 서명이 장부에 올랐다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Anecdote. In the 2125 station fire he carried out the roster of lives first. By this deed the signature of the Godeok officer corps instructor post rose into the ledger. Titles and ambitions are not treated as accomplished authority or results."
     },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -525,82 +175,52 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c7a5-d765-b355",
-    "name": "흥덕 장씨",
-    "crest": "clan-crests/c7a5-d765-b355.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 65,
-    "개방": -50,
-    "무력": 70,
-    "물질": 25,
-    "공동": 35,
-    "원칙": -20,
-    "공개": -35,
-    "자격": -25,
-    "분산": -60,
-    "변혁": -25
-  },
-  "desire": {
-    "갈망": -5,
-    "독점": -15,
-    "위험": -10,
-    "과시": 25,
-    "지속": -5,
-    "지향": "동성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "동방사",
-    "생업": "장교단 훈련·교관 수첩 관리",
-    "품계": "병장",
-    "직함": "고덕 장교단 교관",
-    "가치관": "권위 65 | 개방 −50 | 무력 70 | 물질 25 | 공동 35 | 원칙 −20 | 공개 −35 | 자격 −25 | 분산 −60 | 변혁 −25",
-    "욕망": "갈망 −5 | 독점 −15 | 위험 −10 | 과시 25 | 지속 −5 | 지향 동성 | 결합 계약동거"
-  },
-  "sections": {
-    "관직": "품계 병장. 직함은 고덕 장교단 교관. 훈련 실적과 가족 배급을 함께 공개하지만, 비밀 결사 암호는 교관 수첩에만 남겨 공식 명령망을 우회한다.\n\n일화. 장석윤은 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다.",
-    "관계": "김우찬의 작전표를 훈련으로 번역하는 지휘 관계이고, 서남 경비대장 이강묵과 차단문 전술을 거래하며, 백온의 가족 명부를 강제복무와 묶어 원한을 산다.",
-    "야망": "복구복무자를 장교단 호적에 올려 동부 약소국까지 동방사의 병력 풀로 만든다.\n\n공포. 장석윤은 규격맹의 시민권 규격이 고덕 훈련장을 뚫고 들어와 장교 호적이 빈 명부가 되는 일을 두려워한다.",
-    "개입": "교관 수첩의 결사 명단을 폭로하거나, 자발 복무 헌장 초안을 훈련장에 들여 호적 확대를 막을 수 있다."
-  },
-  "biography": "장석윤은 부하를 가족처럼 책임지되 훈련 중 이탈은 용서하지 않는다. 부품 대신 복무 등록을 표준 교범에 넣고 싶어 한다.\n\n- 소속: 동방사\n- 생업: 장교단 훈련·교관 수첩 관리\n- 품계: 병장\n- 직함: 고덕 장교단 교관\n생애. 장석윤은 4세대에 태어났다. 장석윤은 대합실 당직에서 자랐다. 장석윤의 고덕 장교단 교관 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 장석윤은 고덕2동과 연결된 업무에서 장교단 훈련과 가족 배급을 다루되 비밀 교관 수첩은 따로 둔다.\n\n**관직.** 품계 병장. 직함은 고덕 장교단 교관. 훈련 실적과 가족 배급을 함께 공개하지만, 비밀 결사 암호는 교관 수첩에만 남겨 공식 명령망을 우회한다.\n\n일화. 장석윤은 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다.\n\n**관계.** 김우찬의 작전표를 훈련으로 번역하는 지휘 관계이고, 서남 경비대장 이강묵과 차단문 전술을 거래하며, 백온의 가족 명부를 강제복무와 묶어 원한을 산다.\n\n**야망.** 복구복무자를 장교단 호적에 올려 동부 약소국까지 동방사의 병력 풀로 만든다.\n\n공포. 장석윤은 규격맹의 시민권 규격이 고덕 훈련장을 뚫고 들어와 장교 호적이 빈 명부가 되는 일을 두려워한다.\n\n**개입.** 교관 수첩의 결사 명단을 폭로하거나, 자발 복무 헌장 초안을 훈련장에 들여 호적 확대를 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −50 | 무력 70 | 물질 25 | 공동 35 | 원칙 −20 | 공개 −35 | 자격 −25 | 분산 −60 | 변혁 −25\n- 욕망: 갈망 −5 | 독점 −15 | 위험 −10 | 과시 25 | 지속 −5 | 지향 동성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-05"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1174054000",
+      "name": {
+        "ko": "명일2동"
+      },
+      "holderPersonId": "K118",
+      "directLiegePersonId": "K115",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1174054000",
+          "name": "명일2동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
   ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "장석윤",
-        "type": "지휘",
-        "to": "김우찬",
-        "basis": "작전표를 장교 훈련으로 번역"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:고덕",
+      "name": {
+        "ko": "고덕역"
       },
-      {
-        "from": "장석윤",
-        "type": "계약",
-        "to": "이강묵",
-        "basis": "차단문 전술을 서남 경비와 거래"
+      "holderPersonId": "K132",
+      "directLiegePersonId": "K118",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "고덕",
+        "stationName": "고덕"
       },
-      {
-        "from": "장석윤",
-        "type": "원한",
-        "to": "백온",
-        "basis": "가족 명부를 강제복무와 묶어 산 원한"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "이강묵",
-        "type": "계약",
-        "to": "장석윤",
-        "basis": "차단문 전술을 고덕 장교와 거래"
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1174054000",
+          "name": "명일2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "양기석",
+      "holderRoute": "/people/person-0133"
+    }
+  ]
 }

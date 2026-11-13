@@ -1,388 +1,149 @@
 {
   "id": "person-0375",
   "name": "은태호",
-  "title": "경매사",
-  "position": "선거 개표 증인 부제",
+  "title": "의원 집안 후계",
+  "position": "의원 집안 후계 · 노원역",
   "characterId": "K374",
-  "rank": "부제",
-  "commonTier": "T4",
-  "occupation": "개표 증언·선거 보좌",
+  "rank": "후계",
+  "commonTier": "T2",
+  "occupation": "구 행정",
   "gender": "남성",
   "stage": "S1",
-  "state": "S15",
-  "stateName": "명동대교구",
-  "sourceRoute": "/world/Cast-State-15#인물-은태호",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0375",
   "birthDate": "2086-08-22",
   "birthday": "08-22",
   "age": 40,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-15.json#/content/60",
-    "lore/characters/Cast-State-15.json#/content/61",
-    "lore/characters/Cast-State-15.json#/content/62",
-    "lore/characters/Cast-State-15.json#/content/63"
-  ],
-  "familyTree": {
-    "personId": "K374",
-    "nodes": [
-      {
-        "id": "K374",
-        "personId": "K374",
-        "kind": "person",
-        "name": "은태호",
-        "birthDate": "2086-08-22",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K374"
-          },
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-은태호-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 선거 개표 증인 부제 일을 맡았다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-은태호-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0375"
-      },
-      {
-        "id": "FH-K374-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "은승민",
-        "lineage": {
-          "surname": "은",
-          "bongwan": "행주",
-          "clan": "c740-d589-c8fc"
-        },
-        "birthDate": "2056-08-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-은태호-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2094,
-            "summary": "은승민은 노량진 선창에서 개표 증언·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-은태호-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K374-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "은승원",
-        "lineage": {
-          "surname": "은",
-          "bongwan": "행주",
-          "clan": "c740-d589-c8fc"
-        },
-        "birthDate": "2026-08-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-은태호-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "은승원은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-은태호-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K374-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준리",
-        "birthDate": "2056-08-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-은태호-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2094,
-            "summary": "최준리는 노량진 선창에서 개표 증언·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-은태호-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K374-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준정",
-        "birthDate": "2026-08-22",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-은태호-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정준정은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-은태호-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K374-P-01:K374:biological",
-        "from": "FH-K374-P-01",
-        "to": "K374",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-은태호-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K374-P-02:FH-K374-P-01:biological",
-        "from": "FH-K374-P-02",
-        "to": "FH-K374-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-은태호-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K374-M-01:K374:biological",
-        "from": "FH-K374-M-01",
-        "to": "K374",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-은태호-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K374-M-02:FH-K374-M-01:biological",
-        "from": "FH-K374-M-02",
-        "to": "FH-K374-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-은태호-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c740-d589-c8fc",
+    "name": "행주 은씨",
+    "crest": "clan-crests/c740-d589-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "은채윤 의원 집안의 후계 은태호는 노원구 상계6·7동 노원역에 기재된 마흔 살 남성이며, 행주 은씨다. 집안 씨앗 창고의 열쇠를 넘겨받던 날, 그는 창고 문 앞에서 의석이 자기에게 오기 전까지 자루 하나 축내지 않겠다고 말하고 그 말을 창고 장부 첫 장에 적었다. 빛밭 자리 배정을 두고 동장들이 올린 보고를 의원 대신 먼저 읽고, 노원 장터의 씨앗 값이 흔들리면 집안 창고의 씨앗을 풀지 말지 의원에게 묻는다. 클로당의 집안이라 강 건너 씨앗은 들이지 않는다는 것이 그의 원칙이다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "의원 집안 후계",
+    "품계": "후계",
+    "생업": "구 행정",
+    "일하는 역": "노원역",
+    "잠자는 역": "노원역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "은채윤 의원 집안의 후계 은태호는 노원구 상계6·7동 노원역에 기재된 마흔 살 남성이며, 행주 은씨다. 집안 씨앗 창고의 열쇠를 넘겨받던 날, 그는 창고 문 앞에서 의석이 자기에게 오기 전까지 자루 하나 축내지 않겠다고 말하고 그 말을 창고 장부 첫 장에 적었다. 빛밭 자리 배정을 두고 동장들이 올린 보고를 의원 대신 먼저 읽고, 노원 장터의 씨앗 값이 흔들리면 집안 창고의 씨앗을 풀지 말지 의원에게 묻는다. 클로당의 집안이라 강 건너 씨앗은 들이지 않는다는 것이 그의 원칙이다.",
+    "관직": "직함 의원 집안 후계. 직위 의원 집안 후계 · 노원역. 품계 후계. 일하는 역 노원역."
+  },
+  "values": {
+    "권위": 55,
+    "개방": -25,
+    "무력": 15,
+    "물질": 70,
+    "공동": -25,
+    "원칙": -20,
+    "공개": -45,
+    "자격": 15,
+    "분산": -50,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": 5,
+    "독점": -30,
+    "위험": 30,
+    "과시": 5,
+    "지속": -10,
+    "지향": "양성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0375",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "은태호",
+        "type": "지휘",
+        "to": "은채윤",
+        "basis": "노원구 국회의원 은채윤의 직속"
+      },
+      {
+        "from": "은태호",
+        "type": "맹세",
+        "to": "은채윤",
+        "basis": "씨앗 창고 열쇠를 넘겨받던 날 의석이 오기 전까지 창고를 지키겠다고 맹세했다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "은채윤",
+        "type": "맹세",
+        "to": "은태호",
+        "basis": "의원 집안 후계에게 빛밭 배정 장부를 맡긴 사이"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K324",
+    "name": "은채윤",
+    "courtId": "court:K324",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 11,
-        "effective": 11
-      },
-      "management": {
+      "diplomacy": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 9,
+        "effective": 9
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
         "base": 6,
         "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "auction-intermediation",
-        "name": {
-          "ko": "경매 대행",
-          "en": "Auction intermediation"
-        },
-        "rating": 60
+        "id": "p0375-seed",
+        "name": "씨앗 창고 셈",
+        "rating": 57
       }
     ],
     "traits": [
       {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "공급 재개 선택",
-          "en": "Chooses renewed supply"
-        },
-        "description": {
-          "ko": "흉작 소문에도 창고 봉쇄를 풀고 비상배급표를 공개했다. 경매 대행과 약재 교환이 있으나 물질적 이해와 공개 행동을 함께 봐야 한다.",
-          "en": "Opens the blocked warehouse and publishes emergency ration tickets amid harvest rumors. Auction work and medicine exchange coexist with material interests."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 공급 재개 선택을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "흉작 소문 앞에서 봉쇄보다 거래 재개를 택할 수 있다.",
-          "en": "May favor renewed exchange over closure amid harvest rumors."
-        },
-        "relationship": {
-          "ko": "남윤경의 경매를 대행하며 오해린과 시세를 겨룬다.",
-          "en": "Handles auctions for Nam Yungyeong and competes with O Haerin over prices."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "남윤경의 경매를 대행하며 오해린과 시세를 겨룬다.",
-          "en": "Handles auctions for Nam Yungyeong and competes with O Haerin over prices."
-        },
+        "id": "p0375-trait-1",
+        "name": "창고지기의 셈",
+        "description": "모자랄 해를 먼저 셈한다.",
+        "behavior": "씨앗 자루를 셀 때 다음 해 몫부터 따로 묶는다.",
+        "stress": "창고를 풀자는 말이 나오면 말수가 줄고 숫자만 말한다.",
+        "relationship": "은채윤은 그의 셈을 믿고, 동장들은 그의 인색함을 원망한다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "흉작 소문에도 창고 봉쇄를 풀고 비상배급표를 공개했다. 경매 대행과 약재 교환이 있으나 물질적 이해와 공개 행동을 함께 봐야 한다.",
-      "en": "Opens the blocked warehouse and publishes emergency ration tickets amid harvest rumors. Auction work and medicine exchange coexist with material interests."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -420,78 +181,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c740-d589-c8fc",
-    "name": "행주 은씨",
-    "crest": "clan-crests/c740-d589-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 10,
-    "개방": 30,
-    "무력": -20,
-    "물질": 75,
-    "공동": -30,
-    "원칙": -40,
-    "공개": -20,
-    "자격": 0,
-    "분산": 0,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 5,
-    "독점": -30,
-    "위험": 30,
-    "과시": 5,
-    "지속": -10,
-    "지향": "양성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "개표 증언·선거 보좌",
-    "소속": "명동대교구 (명동역)",
-    "품계": "부제",
-    "직함": "선거 개표 증인 부제",
-    "가치관": "권위 10 | 개방 30 | 무력 −20 | 물질 75 | 공동 −30 | 원칙 −40 | 공개 −20 | 자격 0 | 분산 0 | 변혁 0",
-    "욕망": "갈망 5 | 독점 −30 | 위험 30 | 과시 5 | 지속 −10 | 지향 양성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2086-08-22에 태어난 은태호는 영구 겨울의 명동역 교구청에서 선거 개표 증인 부제 일을 맡는다. 개표 증언·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 은태호는 명동 행정동의 명동역 교구청에서 선거 개표 증인 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 부제. 직함은 선거 개표 증인 부제. 개표 증언·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
-    "일화": "2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.",
-    "관계": "남윤경의 경매를 대행하고, 오해린과 노량진 시세를 겨루며, 심달호의 약재를 식량과 교환한다.",
-    "야망": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-    "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-    "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
-  },
-  "biography": "은태호는 선거 개표 증인 부제 업무에서 개표 증언·선거 보좌 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 개표 증언·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 선거 개표 증인 부제\n**생애.** 2086-08-22에 태어난 은태호는 영구 겨울의 명동역 교구청에서 선거 개표 증인 부제 일을 맡는다. 개표 증언·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 은태호는 명동 행정동의 명동역 교구청에서 선거 개표 증인 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 부제. 직함은 선거 개표 증인 부제. 개표 증언·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.\n\n**관계.** 남윤경의 경매를 대행하고, 오해린과 노량진 시세를 겨루며, 심달호의 약재를 식량과 교환한다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 30 | 무력 −20 | 물질 75 | 공동 −30 | 원칙 −40 | 공개 −20 | 자격 0 | 분산 0 | 변혁 0\n- 욕망: 갈망 5 | 독점 −30 | 위험 30 | 과시 5 | 지속 −10 | 지향 양성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-15"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": [
-      {
-        "from": "천나솔",
-        "type": "사제",
-        "to": "은태호",
-        "basis": "은태호의 경매를 현장에서 받치는 사제이고"
-      },
-      {
-        "from": "영미결",
-        "type": "사제",
-        "to": "은태호",
-        "basis": "은태호의 호가를 원장으로 옮기는 사제이고"
-      },
-      {
-        "from": "초시람",
-        "type": "계약",
-        "to": "은태호",
-        "basis": "은태호의 조정 호가에 패들로 이의를 올리고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

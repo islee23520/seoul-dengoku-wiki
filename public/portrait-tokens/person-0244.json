@@ -3,27 +3,27 @@
   "personId": "person-0244",
   "characterId": "K243",
   "name": "추우찬",
-  "stateId": "S09",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "출자 평의회 중계 기록원"
+    "role": "작업조장 · 등촌역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short wavy hair",
-    "upper": "rust brown plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
-    "outfit": "rust brown plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+    "upper": "보라 깃끈을 두른 녹슨 갈색 짧은 합성 섬유 작업 겉옷, 소매를 걷어 올리고 팔꿈치에 천을 덧댐",
+    "outfit": "보라 깃끈을 두른 녹슨 갈색 짧은 합성 섬유 작업 겉옷, 소매를 걷어 올리고 팔꿈치에 천을 덧댐",
     "palette": [
       "rust brown",
-      "navy",
-      "mustard ochre"
+      "slate grey",
+      "faded purple"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "navy high-waisted pleated trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "slate grey synthetic work trousers with patched knees",
+    "footwear": "laced synthetic-lined work boots",
+    "accessories": "tool-loop belt with a rope harness hook"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "rust brown plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+        "value": "보라 깃끈을 두른 녹슨 갈색 짧은 합성 섬유 작업 겉옷, 소매를 걷어 올리고 팔꿈치에 천을 덧댐",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "navy high-waisted pleated trousers",
+        "value": "slate grey synthetic work trousers with patched knees",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "laced synthetic-lined work boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "short collar edged with a purple city cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "tool-loop belt with a rope harness hook",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "dull steel and faded purple",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "steel, synthetic webbing",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "worn at the waist",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "belt with a hooked clip",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 추우찬, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: lean; skin: light olive. upper garment: rust brown plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: rust brown, navy, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 추우찬, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: lean; skin: light olive. upper garment: 보라 깃끈을 두른 녹슨 갈색 짧은 합성 섬유 작업 겉옷, 소매를 걷어 올리고 팔꿈치에 천을 덧댐; neckline: short collar edged with a purple city cord. accessories: tool-loop belt with a rope harness hook; worn as worn at the waist. color palette: rust brown, slate grey, faded purple. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 추우찬, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: lean; skin: light olive; average adult male height. upper garment: rust brown plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: rust brown, navy, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 추우찬, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: lean; skin: light olive; average adult male height. upper garment: 보라 깃끈을 두른 녹슨 갈색 짧은 합성 섬유 작업 겉옷, 소매를 걷어 올리고 팔꿈치에 천을 덧댐; neckline: short collar edged with a purple city cord; lower garment: slate grey synthetic work trousers with patched knees; footwear: laced synthetic-lined work boots. accessories: tool-loop belt with a rope harness hook; worn as worn at the waist. color palette: rust brown, slate grey, faded purple. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 추우찬, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: lean; skin: light olive; average adult male height. upper garment: rust brown plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: rust brown, navy, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 추우찬, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: lean; skin: light olive; average adult male height. upper garment: 보라 깃끈을 두른 녹슨 갈색 짧은 합성 섬유 작업 겉옷, 소매를 걷어 올리고 팔꿈치에 천을 덧댐; neckline: short collar edged with a purple city cord; lower garment: slate grey synthetic work trousers with patched knees; footwear: laced synthetic-lined work boots. accessories: tool-loop belt with a rope harness hook; worn as worn at the waist. color palette: rust brown, slate grey, faded purple. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 추우찬, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: lean; skin: light olive; average adult male height. upper garment: rust brown plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: rust brown, navy, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 추우찬, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: lean; skin: light olive; average adult male height. upper garment: 보라 깃끈을 두른 녹슨 갈색 짧은 합성 섬유 작업 겉옷, 소매를 걷어 올리고 팔꿈치에 천을 덧댐; neckline: short collar edged with a purple city cord; lower garment: slate grey synthetic work trousers with patched knees; footwear: laced synthetic-lined work boots. accessories: tool-loop belt with a rope harness hook; worn as worn at the waist. color palette: rust brown, slate grey, faded purple. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 추우찬, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: lean; skin: light olive; average adult male height. upper garment: rust brown plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: rust brown, navy, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 추우찬, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; straight and thin eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; dark brown hair; short length. build: lean; skin: light olive; average adult male height. upper garment: 보라 깃끈을 두른 녹슨 갈색 짧은 합성 섬유 작업 겉옷, 소매를 걷어 올리고 팔꿈치에 천을 덧댐; neckline: short collar edged with a purple city cord; lower garment: slate grey synthetic work trousers with patched knees; footwear: laced synthetic-lined work boots. accessories: tool-loop belt with a rope harness hook; worn as worn at the waist. color palette: rust brown, slate grey, faded purple. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

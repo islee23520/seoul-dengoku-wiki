@@ -1,492 +1,120 @@
 {
   "id": "person-0227",
   "name": "모봉용",
-  "title": "전선·전지 물류상",
-  "position": "보증 부품 물류상",
+  "title": "김포공항역 역반장",
+  "position": "김포공항역 역반장 · 자유도시들",
   "characterId": "K226",
-  "rank": "서기",
-  "commonTier": "T5",
-  "occupation": "보증 부품 입고 중량·출고 검증",
+  "rank": "역반장",
+  "commonTier": "T4",
+  "occupation": "역반 운영",
   "gender": "여성",
   "stage": "S2",
-  "state": "S09",
-  "stateName": "여의도출자연합회",
-  "sourceRoute": "/world/Cast-State-09#인물-모봉용",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0227",
   "birthDate": "2088-07-05",
   "birthday": "07-05",
   "age": 38,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-09.json#/content/72"
-  ],
-  "familyTree": {
-    "personId": "K226",
-    "nodes": [
-      {
-        "id": "K226",
-        "personId": "K226",
-        "kind": "person",
-        "name": "모봉용",
-        "birthDate": "2088-07-05",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K226"
-          },
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모봉용-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 노량진 선창에서 자랐다. 보증 부품 물류상 자리는 저울 재점검 공개로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-모봉용-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0227"
-      },
-      {
-        "id": "FH-K226-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "모승석",
-        "lineage": {
-          "surname": "모",
-          "bongwan": "함평",
-          "clan": "baa8-d568-d3c9"
-        },
-        "birthDate": "2058-07-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2096,
-            "summary": "모승석은 노량진 선창에서 보증 부품 입고 중량·출고 검증 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-모봉용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K226-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "모승준",
-        "lineage": {
-          "surname": "모",
-          "bongwan": "함평",
-          "clan": "baa8-d568-d3c9"
-        },
-        "birthDate": "2028-07-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2066,
-            "summary": "모승준은 노량진 선창에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-모봉용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K226-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "모승호",
-        "lineage": {
-          "surname": "모",
-          "bongwan": "함평",
-          "clan": "baa8-d568-d3c9"
-        },
-        "birthDate": "1998-07-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "모승호는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-모봉용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K226-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조현규",
-        "birthDate": "2058-07-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2096,
-            "summary": "조현규는 노량진 선창에서 보증 부품 입고 중량·출고 검증 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-모봉용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K226-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김현혁",
-        "birthDate": "2028-07-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2066,
-            "summary": "김현혁은 노량진 선창에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-모봉용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K226-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "박현혁",
-        "birthDate": "1998-07-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박현혁은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-모봉용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K226-P-01:K226:biological",
-        "from": "FH-K226-P-01",
-        "to": "K226",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K226-P-02:FH-K226-P-01:biological",
-        "from": "FH-K226-P-02",
-        "to": "FH-K226-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K226-P-03:FH-K226-P-02:biological",
-        "from": "FH-K226-P-03",
-        "to": "FH-K226-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K226-M-01:K226:biological",
-        "from": "FH-K226-M-01",
-        "to": "K226",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K226-M-02:FH-K226-M-01:biological",
-        "from": "FH-K226-M-02",
-        "to": "FH-K226-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K226-M-03:FH-K226-M-02:biological",
-        "from": "FH-K226-M-03",
-        "to": "FH-K226-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-모봉용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "baa8-d568-d3c9",
+    "name": "함평 모씨",
+    "crest": "clan-crests/baa8-d568-d3c9.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "다섯 노선이 지나는 김포공항은 강서의 자리 역이자 일곱 도시에서 가장 큰 환승 단지이고, 옛 격납고의 고물 터를 드나드는 출입구만 여럿이다. 모봉용은 출입구마다 여는 시간을 정해 두고, 격납고로 나간 고물 조가 그 시간 안에 돌아오지 않으면 줄을 내려 찾게 한다. 바람지기 최다인은 서른여덟 살 역반장의 출입구 표를 보고 그날 일할 바람밭을 정한다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "김포공항역 역반장",
+    "품계": "역반장",
+    "생업": "역반 운영",
+    "일하는 역": "김포공항역",
+    "잠자는 역": "김포공항역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "다섯 노선이 지나는 김포공항은 강서의 자리 역이자 일곱 도시에서 가장 큰 환승 단지이고, 옛 격납고의 고물 터를 드나드는 출입구만 여럿이다. 모봉용은 출입구마다 여는 시간을 정해 두고, 격납고로 나간 고물 조가 그 시간 안에 돌아오지 않으면 줄을 내려 찾게 한다. 바람지기 최다인은 서른여덟 살 역반장의 출입구 표를 보고 그날 일할 바람밭을 정한다.",
+    "관직": "직함 김포공항역 역반장. 직위 김포공항역 역반장 · 자유도시들. 품계 역반장. 일하는 역 김포공항역."
+  },
+  "values": {
+    "권위": -35,
+    "개방": 25,
+    "무력": -45,
+    "물질": 20,
+    "공동": -15,
+    "원칙": 5,
+    "공개": 55,
+    "자격": 35,
+    "분산": 85,
+    "변혁": 5
+  },
+  "desire": {
+    "갈망": -5,
+    "독점": 30,
+    "위험": 15,
+    "과시": 30,
+    "지속": 30,
+    "지향": "유동",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0227",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "모봉용",
+        "type": "지휘",
+        "to": "류해담",
+        "basis": "김포공항 구간장 류해담의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K244",
+    "name": "류해담",
+    "courtId": "court:K244",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
-      },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "management": {
-        "base": 11,
-        "effective": 11
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "incoming-weight",
-        "name": {
-          "ko": "입고 중량 검증",
-          "en": "Incoming weight verification"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "incoming-weight-disposition",
-        "name": {
-          "ko": "송장과 납기 우선",
-          "en": "Invoices and deadlines first"
-        },
-        "description": {
-          "ko": "소문보다 송장을 믿고 전선이 늦으면 계약을 찢는다.",
-          "en": "Trusts invoices over rumor and tears up contracts over late wire."
-        },
-        "behavior": {
-          "ko": "소문보다 송장을 믿고 전선이 늦으면 계약을 찢는다.",
-          "en": "Trusts invoices over rumor and tears up contracts over late wire."
-        },
-        "stress": {
-          "ko": "부품의 군수 전용을 두려워한다.",
-          "en": "Fears diversion of parts to military use."
-        },
-        "relationship": {
-          "ko": "두봉에게 정비용 부품을 대고, 모봉의 산악 운송과 짐을 맞춘다. 오해린의 시세를 평의회 시간에 참고한다.",
-          "en": "Supplies Dubong, coordinates cargo with Mobong and consults O Haerin’s prices."
-        },
-        "effects": []
-      },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "게시 전 출고 보류",
-          "en": "Holds dispatch before posting"
-        },
-        "description": {
-          "ko": "군수 주문은 평의회 게시 전 출고하지 않는다.",
-          "en": "Holds military orders until council posting."
-        },
-        "behavior": {
-          "ko": "군수 주문은 평의회 게시 전 출고하지 않는다.",
-          "en": "Holds military orders until council posting."
-        },
-        "stress": {
-          "ko": "부품 한 상자가 군수 칸으로 빠져 여의동 금고와 영등포동 인계 창구 사이의 환전이 멈추는 것.",
-          "en": "That one box of parts would leave into a munitions column and exchange between the Yeouido-dong vault and the Yeongdeungpo-dong handover counter would stop."
-        },
-        "relationship": {
-          "ko": "두봉에게 정비용 부품을 대고, 모봉의 산악 운송과 짐을 맞춘다. 오해린의 시세를 평의회 시간에 참고한다.",
-          "en": "Supplies Dubong, coordinates cargo with Mobong and consults O Haerin’s prices."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "증인 둘 앞에서 중량을 확인하고 군수 주문 출고를 막는다. 납기 위반에 강경하다.",
-      "en": "Checks weights before two witnesses and holds military orders, taking a hard line on missed deadlines."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,79 +152,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "baa8-d568-d3c9",
-    "name": "함평 모씨",
-    "crest": "clan-crests/baa8-d568-d3c9.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 0,
-    "개방": 10,
-    "무력": -35,
-    "물질": 5,
-    "공동": 10,
-    "원칙": 15,
-    "공개": 55,
-    "자격": 15,
-    "분산": 30,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": -5,
-    "독점": 30,
-    "위험": 15,
-    "과시": 30,
-    "지속": 30,
-    "지향": "유동",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "보증 부품 입고 중량·출고 검증",
-    "소속": "여의도출자연합회",
-    "품계": "서기",
-    "직함": "보증 부품 물류상",
-    "가치관": "권위 0 | 개방 10 | 무력 −35 | 물질 5 | 공동 10 | 원칙 15 | 공개 55 | 자격 15 | 분산 30 | 변혁 −5",
-    "욕망": "갈망 −5 | 독점 30 | 위험 15 | 과시 30 | 지속 30 | 지향 유동 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2088-07-05 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 노량진 선창에서 자랐다. 보증 부품 물류상 자리는 저울 재점검 공개로 열렸다.\n- 모봉용은 여의동을 업무동으로 삼아 보증 부품 입고 중량·출고 검증 업무를 맡는다.",
-    "관직": "품계 서기. 직함은 보증 부품 물류상. 입고 중량을 두 증인이 보고, 군수 문장이 찍힌 주문서는 출자 평의회의 게시 전까지 출고를 막는다.",
-    "일화": "암사가 보호 발표 시간을 사려 하자 부품 대금이 수수료 장부에 섞여 들어왔다.",
-    "관계": "두봉에게 정비용 부품을 대고, 모봉의 산악 운송과 짐을 맞춘다. 오해린의 시세를 평의회 시간에 참고한다.",
-    "야망": "보증 부품과 예비전지를 여의도 공개 시세로 고정해, 금고 키 중계와 환전로 갱신이 강국 보호비에 묶이지 않게 한다.",
-    "공포": "부품 한 상자가 군수 칸으로 빠져 여의동 금고와 영등포동 인계 창구 사이의 환전이 멈추는 것.",
-    "개입": "섞인 대금을 공개하거나, 예비전지 한 짐을 여의동 금고에서 영등포동 인계 창구까지 호송할 수 있다."
-  },
-  "biography": "무게를 속이는 장부를 보면 웃음을 거두고, 약속한 시각에 전선이 안 오면 계약을 그 자리에서 찢는다. 소문보다 송장 숫자를 믿는다.\n\n- 생업: 보증 부품 입고 중량·출고 검증\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 보증 부품 물류상\n**생애.** 2088-07-05 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 노량진 선창에서 자랐다. 보증 부품 물류상 자리는 저울 재점검 공개로 열렸다.\n- 모봉용은 여의동을 업무동으로 삼아 보증 부품 입고 중량·출고 검증 업무를 맡는다.\n\n**관직.** 품계 서기. 직함은 보증 부품 물류상. 입고 중량을 두 증인이 보고, 군수 문장이 찍힌 주문서는 출자 평의회의 게시 전까지 출고를 막는다.\n\n**일화.** 암사가 보호 발표 시간을 사려 하자 부품 대금이 수수료 장부에 섞여 들어왔다.\n\n**관계.** 두봉에게 정비용 부품을 대고, 모봉의 산악 운송과 짐을 맞춘다. 오해린의 시세를 평의회 시간에 참고한다.\n\n**야망.** 보증 부품과 예비전지를 여의도 공개 시세로 고정해, 금고 키 중계와 환전로 갱신이 강국 보호비에 묶이지 않게 한다.\n\n**공포.** 부품 한 상자가 군수 칸으로 빠져 여의동 금고와 영등포동 인계 창구 사이의 환전이 멈추는 것.\n\n**개입.** 섞인 대금을 공개하거나, 예비전지 한 짐을 여의동 금고에서 영등포동 인계 창구까지 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 10 | 무력 −35 | 물질 5 | 공동 10 | 원칙 15 | 공개 55 | 자격 15 | 분산 30 | 변혁 −5\n- 욕망: 갈망 −5 | 독점 30 | 위험 15 | 과시 30 | 지속 30 | 지향 유동 | 결합 다자",
-  "sources": [
-    "Cast-State-09"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "모봉용",
-        "type": "계약",
-        "to": "오해린",
-        "basis": "오해린의 시세 방송을 길드 시간에 참고한다"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:김포공항",
+      "name": {
+        "ko": "김포공항역"
       },
-      {
-        "from": "모봉용",
-        "type": "계약",
-        "to": "두봉",
-        "basis": "두봉에게 정비용 전선을 대고"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "모봉",
-        "type": "계약",
-        "to": "모봉용",
-        "basis": "모봉용의 절연재 짐을 회랑에서 인수한다"
-      }
-    ]
-  }
+      "holderPersonId": "K226",
+      "directLiegePersonId": "K244",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "김포공항",
+        "stationName": "김포공항"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1150062000",
+          "name": "공항동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

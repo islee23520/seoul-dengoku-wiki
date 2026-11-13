@@ -1,503 +1,120 @@
 {
   "id": "person-0348",
   "name": "백여울",
-  "title": "의약 중개 감정인",
-  "position": "의약 중개 감정인",
+  "title": "연신내역 역장",
+  "position": "연신내역 역장 · 정부",
   "characterId": "K347",
-  "rank": "수련의",
-  "commonTier": "T3",
-  "occupation": "약재 감정 대조·출고 보류",
+  "rank": "역장",
+  "commonTier": "T4",
+  "occupation": "역 행정",
   "gender": "여성",
   "stage": "S2",
-  "state": "S13",
-  "stateName": "흰십자단",
-  "sourceRoute": "/world/Cast-State-13#인물-백여울",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0348",
   "birthDate": "2098-03-17",
   "birthday": "03-17",
   "age": 28,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-13.json#/content/666",
-    "lore/characters/Cast-State-13.json#/content/668"
-  ],
-  "familyTree": {
-    "personId": "K347",
-    "nodes": [
-      {
-        "id": "K347",
-        "personId": "K347",
-        "kind": "person",
-        "name": "백여울",
-        "birthDate": "2098-03-17",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K347"
-          },
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-백여울-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 약재 감별 수련의 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-백여울-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0348"
-      },
-      {
-        "id": "FH-K347-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "백승민",
-        "lineage": {
-          "surname": "백",
-          "bongwan": "수원",
-          "clan": "bc31-c218-c6d0"
-        },
-        "birthDate": "2068-03-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-백여울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2106,
-            "summary": "백승민은 제기동 의무소에서 약재 감정 대조·출고 보류 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-백여울-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K347-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "백승원",
-        "lineage": {
-          "surname": "백",
-          "bongwan": "수원",
-          "clan": "bc31-c218-c6d0"
-        },
-        "birthDate": "2038-03-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-백여울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "백승원은 제기동 의무소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-백여울-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K347-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "백승진",
-        "lineage": {
-          "surname": "백",
-          "bongwan": "수원",
-          "clan": "bc31-c218-c6d0"
-        },
-        "birthDate": "2008-03-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-백여울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "백승진은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-백여울-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K347-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김준수",
-        "birthDate": "2068-03-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-백여울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2106,
-            "summary": "김준수는 제기동 의무소에서 약재 감정 대조·출고 보류 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-백여울-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K347-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준은",
-        "birthDate": "2038-03-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-백여울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "박준은은 제기동 의무소에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-백여울-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K347-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준연",
-        "birthDate": "2008-03-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-백여울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이준연은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-백여울-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K347-P-01:K347:biological",
-        "from": "FH-K347-P-01",
-        "to": "K347",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-백여울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K347-P-02:FH-K347-P-01:biological",
-        "from": "FH-K347-P-02",
-        "to": "FH-K347-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-백여울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K347-P-03:FH-K347-P-02:biological",
-        "from": "FH-K347-P-03",
-        "to": "FH-K347-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-백여울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K347-M-01:K347:biological",
-        "from": "FH-K347-M-01",
-        "to": "K347",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-백여울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K347-M-02:FH-K347-M-01:biological",
-        "from": "FH-K347-M-02",
-        "to": "FH-K347-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-백여울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K347-M-03:FH-K347-M-02:biological",
-        "from": "FH-K347-M-03",
-        "to": "FH-K347-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-백여울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bc31-c218-c6d0",
+    "name": "수원 백씨",
+    "crest": "clan-crests/bc31-c218-c6d0.svg"
   },
-  "proseContacts": [
-    {
-      "recipientId": "K322",
-      "recipientName": "류은비",
-      "basis": "류은비의 치료 길드와 협력하되, 중개 수수료 장부는 공개하지 않는다.",
-      "sourceRef": {
-        "path": "lore/characters/Cast-State-13.json",
-        "anchor": "인물-백여울-p5"
-      }
-    }
-  ],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "연신내역 역장 백여울은 은평구 갈현1동에 기재된 스물여덟 살 여성이고, 수원 백씨다. 깊은 노선이 지나는 연신내역은 은평에서 가장 따뜻한 역이라 정원 다툼이 가장 잦고, 어느 세대를 깊은 층에 재울지 정하는 것이 그녀의 가장 무거운 일이다. 북한산 땔감 장이 대합실에 서는 날에는 출입구 굴을 평소보다 일찍 열어 썰매를 들인다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "연신내역 역장",
+    "품계": "역장",
+    "생업": "역 행정",
+    "일하는 역": "연신내역",
+    "잠자는 역": "연신내역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "연신내역 역장 백여울은 은평구 갈현1동에 기재된 스물여덟 살 여성이고, 수원 백씨다. 깊은 노선이 지나는 연신내역은 은평에서 가장 따뜻한 역이라 정원 다툼이 가장 잦고, 어느 세대를 깊은 층에 재울지 정하는 것이 그녀의 가장 무거운 일이다. 북한산 땔감 장이 대합실에 서는 날에는 출입구 굴을 평소보다 일찍 열어 썰매를 들인다.",
+    "관직": "직함 연신내역 역장. 직위 연신내역 역장 · 정부. 품계 역장. 일하는 역 연신내역."
+  },
+  "values": {
+    "권위": 35,
+    "개방": -25,
+    "무력": -10,
+    "물질": -30,
+    "공동": 35,
+    "원칙": 70,
+    "공개": 0,
+    "자격": 30,
+    "분산": -35,
+    "변혁": -35
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": 0,
+    "위험": -35,
+    "과시": 0,
+    "지속": 30,
+    "지향": "이성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0348",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "백여울",
+        "type": "지휘",
+        "to": "연은재",
+        "basis": "갈현1동 동장 연은재의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K210",
+    "name": "연은재",
+    "courtId": "court:K210",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
       "learning": {
-        "base": 10,
-        "effective": 10
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "surgical-procedure",
-        "name": {
-          "ko": "수술 수행",
-          "en": "Surgical procedure"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "두 저울을 맞춘다",
-          "en": "Requires two matching scales"
-        },
-        "description": {
-          "ko": "두 저울이 어긋나면 출고를 멈추고 정전 중 수술을 이어간 기록이 있다. 중개 수수료 비공개는 감정서 중시와 함께 남긴다.",
-          "en": "They halt shipment when two scales disagree and continued surgery during an outage. Private commission ledgers coexist with an emphasis on appraisal papers."
-        },
-        "behavior": {
-          "ko": "약재 무게를 두 저울로 재고, 한 저울만 맞는 거래는 거절한다. 큰소리 흥정보다 감정서를 남긴다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.",
-          "en": "She weighed herb weights on two scales and refused any trade that balanced on only one. She left appraisal papers over loud bargaining."
-        },
-        "stress": {
-          "ko": "공포. 가짜 약재가 최저선 급수와 묶여 환자 명부에 들어가는 것.",
-          "en": "Fear. That counterfeit herbs would bind to the minimum-line water supply and enter the patient roster."
-        },
-        "relationship": {
-          "ko": "관계. 류은비의 치료 길드와 협력하되, 중개 수수료 장부는 공개하지 않는다.",
-          "en": "Relations. Cooperated with Ryu Eunbi's healing guild, but kept the brokerage fee ledger private."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 수련의. 직함은 약재 감별 수련의. 감정 불일치는 처방 이중확인이 끝날 때까지 출고를 멈춘다.",
-          "en": "Office. Rank: member. Title: medicine brokerage appraiser. An appraisal mismatch stopped the release until the prescription was double-checked."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 수련의. 직함은 약재 감별 수련의. 감정 불일치는 처방 이중확인이 끝날 때까지 출고를 멈춘다.",
-          "en": "Recorded duty and limits: Office. Rank: member. Title: medicine brokerage appraiser. An appraisal mismatch stopped the release until the prescription was double-checked."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 가짜 약재가 최저선 급수와 묶여 환자 명부에 들어가는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That counterfeit herbs would bind to the minimum-line water supply and enter the patient roster."
-        },
-        "relationship": {
-          "ko": "관계. 류은비의 치료 길드와 협력하되, 중개 수수료 장부는 공개하지 않는다.",
-          "en": "Relations. Cooperated with Ryu Eunbi's healing guild, but kept the brokerage fee ledger private."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "두 저울이 어긋나면 출고를 멈추고 정전 중 수술을 이어간 기록이 있다. 중개 수수료 비공개는 감정서 중시와 함께 남긴다.",
-      "en": "They halt shipment when two scales disagree and continued surgery during an outage. Private commission ledgers coexist with an emphasis on appraisal papers."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -535,59 +152,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bc31-c218-c6d0",
-    "name": "수원 백씨",
-    "crest": "clan-crests/bc31-c218-c6d0.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -10,
-    "개방": 30,
-    "무력": -45,
-    "물질": -25,
-    "공동": 30,
-    "원칙": 50,
-    "공개": 25,
-    "자격": 15,
-    "분산": 15,
-    "변혁": -15
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": 0,
-    "위험": -35,
-    "과시": 0,
-    "지속": 30,
-    "지향": "이성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "약재 감정 대조·출고 보류",
-    "소속": "흰십자단",
-    "품계": "수련의",
-    "직함": "의약 중개 감정인",
-    "가치관": "권위 −10 | 개방 30 | 무력 −45 | 물질 −25 | 공동 30 | 원칙 50 | 공개 25 | 자격 15 | 분산 15 | 변혁 −15",
-    "욕망": "갈망 0 | 독점 0 | 위험 −35 | 과시 0 | 지속 30 | 지향 이성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2098-03-17에 태어났다. 2126년 개막 현재 의약 중개 감정인 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 감정 대조·출고 보류 창구가 백여울의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 수련의. 직함은 약재 감별 수련의. 감정 불일치는 처방 이중확인이 끝날 때까지 출고를 멈춘다.",
-    "일화": "2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.",
-    "관계": "류은비의 치료 길드와 협력하되, 중개 수수료 장부는 공개하지 않는다.",
-    "야망": "약재 감별 결과를 진료 우선순위와 분리해 의료단 장부에만 올린다.",
-    "공포": "가짜 약재가 최저선 급수와 묶여 환자 명부에 들어가는 일을 두려워한다.",
-    "개입": "감정 불일치의 원본을 열거나, 출고 중지를 풀 수 있다."
-  },
-  "biography": "약재 무게를 두 저울로 재고, 한 저울만 맞는 거래는 거절한다. 큰소리 흥정보다 감정서를 남긴다.\n\n- 생업: 약재 감정 대조·출고 보류\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 의약 중개 감정인\n**생애.** 2098-03-17에 태어났다. 2126년 개막 현재 의약 중개 감정인 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 감정 대조·출고 보류 창구가 백여울의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 수련의. 직함은 약재 감별 수련의. 감정 불일치는 처방 이중확인이 끝날 때까지 출고를 멈춘다.\n\n**일화.** 2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.\n\n**관계.** 류은비의 치료 길드와 협력하되, 중개 수수료 장부는 공개하지 않는다.\n\n**야망.** 약재 감별 결과를 진료 우선순위와 분리해 의료단 장부에만 올린다.\n\n**공포.** 가짜 약재가 최저선 급수와 묶여 환자 명부에 들어가는 일을 두려워한다.\n\n**개입.** 감정 불일치의 원본을 열거나, 출고 중지를 풀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 30 | 무력 −45 | 물질 −25 | 공동 30 | 원칙 50 | 공개 25 | 자격 15 | 분산 15 | 변혁 −15\n- 욕망: 갈망 0 | 독점 0 | 위험 −35 | 과시 0 | 지속 30 | 지향 이성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-13"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:연신내",
+      "name": {
+        "ko": "연신내역"
+      },
+      "holderPersonId": "K347",
+      "directLiegePersonId": "K210",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "연신내",
+        "stationName": "연신내"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1138055100",
+          "name": "갈현1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

@@ -3,27 +3,27 @@
   "personId": "person-0377",
   "characterId": "K376",
   "name": "전나경",
-  "stateId": "S15",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "명동역 구휼 부제"
+    "role": "서울역 역장 · 정부"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "short side-parted hair combed neatly",
-    "upper": "sand beige knit wool sweater over a collared shirt, with a light knitted scarf",
-    "outfit": "sand beige knit wool sweater over a collared shirt, with a light knitted scarf",
+    "upper": "navy quilted long coat",
+    "outfit": "navy quilted long coat",
     "palette": [
-      "sand beige",
-      "oxblood",
-      "navy"
+      "navy",
+      "black",
+      "dove grey"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "oxblood wool breeches with buttoned cuffs",
-    "footwear": "leather ankle boots",
-    "accessories": "duty whistle on a cord lanyard"
+    "lower": "quilted synthetic trousers",
+    "footwear": "felt boots with synthetic rubber soles",
+    "accessories": "civil servant card on a cord beside the metal registration tag, with a cloth seal pouch"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "old subway staff peaked cap with a station-name band",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "sand beige knit wool sweater over a collared shirt, with a light knitted scarf",
+        "value": "navy quilted long coat",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "oxblood wool breeches with buttoned cuffs",
+        "value": "quilted synthetic trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "leather ankle boots",
+        "value": "felt boots with synthetic rubber soles",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "high quilted collar with a cloth face covering",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "duty whistle on a cord lanyard",
+        "value": "civil servant card on a cord beside the metal registration tag, with a cloth seal pouch",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull brass",
+        "value": "dull steel and navy cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, cord",
+        "value": "steel, cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "lanyard around the neck",
+        "value": "hung at the neck and tied at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat rectangular card and small drawstring pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 전나경, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; dark brown with grey at the temples hair; short length. build: soft rounded; skin: tan warm beige. upper garment: sand beige knit wool sweater over a collared shirt, with a light knitted scarf; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: sand beige, oxblood, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 전나경, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; dark brown with grey at the temples hair; short length. build: soft rounded; skin: tan warm beige. headwear: old subway staff peaked cap with a station-name band; upper garment: navy quilted long coat; neckline: high quilted collar with a cloth face covering. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, black, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 전나경, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; dark brown with grey at the temples hair; short length. build: soft rounded; skin: tan warm beige; average adult male height. upper garment: sand beige knit wool sweater over a collared shirt, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: oxblood wool breeches with buttoned cuffs; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: sand beige, oxblood, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 전나경, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; dark brown with grey at the temples hair; short length. build: soft rounded; skin: tan warm beige; average adult male height. headwear: old subway staff peaked cap with a station-name band; upper garment: navy quilted long coat; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt boots with synthetic rubber soles. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, black, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 전나경, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; dark brown with grey at the temples hair; short length. build: soft rounded; skin: tan warm beige; average adult male height. upper garment: sand beige knit wool sweater over a collared shirt, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: oxblood wool breeches with buttoned cuffs; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: sand beige, oxblood, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 전나경, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; dark brown with grey at the temples hair; short length. build: soft rounded; skin: tan warm beige; average adult male height. headwear: old subway staff peaked cap with a station-name band; upper garment: navy quilted long coat; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt boots with synthetic rubber soles. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, black, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 전나경, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; dark brown with grey at the temples hair; short length. build: soft rounded; skin: tan warm beige; average adult male height. upper garment: sand beige knit wool sweater over a collared shirt, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: oxblood wool breeches with buttoned cuffs; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: sand beige, oxblood, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 전나경, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; dark brown with grey at the temples hair; short length. build: soft rounded; skin: tan warm beige; average adult male height. headwear: old subway staff peaked cap with a station-name band; upper garment: navy quilted long coat; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt boots with synthetic rubber soles. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, black, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 전나경, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; dark brown with grey at the temples hair; short length. build: soft rounded; skin: tan warm beige; average adult male height. upper garment: sand beige knit wool sweater over a collared shirt, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: oxblood wool breeches with buttoned cuffs; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: sand beige, oxblood, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 전나경, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short side-parted hair combed neatly; dark brown with grey at the temples hair; short length. build: soft rounded; skin: tan warm beige; average adult male height. headwear: old subway staff peaked cap with a station-name band; upper garment: navy quilted long coat; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt boots with synthetic rubber soles. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, black, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

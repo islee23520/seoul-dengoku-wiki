@@ -1,512 +1,133 @@
 {
   "id": "person-0074",
   "name": "허미리",
-  "title": "방화기지 유치 실무장",
-  "position": "방화기지 유치 실무장",
+  "title": "강남역 정비장",
+  "position": "강남역 정비장 · 아크",
   "characterId": "K074",
-  "rank": "부장",
+  "rank": "정비장",
   "commonTier": "T4",
-  "occupation": "유치선 화물 구분·배차",
+  "occupation": "정비대 통솔",
   "gender": "여성",
   "stage": "S2",
-  "state": "S03",
-  "stateName": "태욱그룹",
-  "sourceRoute": "/world/Cast-State-03#인물-허미리",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0074",
   "birthDate": "2101-04-04",
   "birthday": "04-04",
   "age": 25,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-03.json#/content/38"
-  ],
-  "familyTree": {
-    "personId": "K074",
-    "nodes": [
-      {
-        "id": "K074",
-        "personId": "K074",
-        "kind": "person",
-        "name": "허미리",
-        "birthDate": "2101-04-04",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K074"
-          },
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-허미리-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 방화기지 유치 실무장 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-허미리-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0074"
-      },
-      {
-        "id": "FH-K074-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "허승우",
-        "lineage": {
-          "surname": "허",
-          "bongwan": "양천",
-          "clan": "d5c8-c591-cc9c"
-        },
-        "birthDate": "2071-04-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-허미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2109,
-            "summary": "허승우는 신정 차량기지에서 유치선 화물 구분·배차 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-허미리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K074-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "허승경",
-        "lineage": {
-          "surname": "허",
-          "bongwan": "양천",
-          "clan": "d5c8-c591-cc9c"
-        },
-        "birthDate": "2041-04-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-허미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2079,
-            "summary": "허승경은 신정 차량기지에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-허미리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K074-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "허승수",
-        "lineage": {
-          "surname": "허",
-          "bongwan": "양천",
-          "clan": "d5c8-c591-cc9c"
-        },
-        "birthDate": "2011-04-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-허미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "허승수는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-허미리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K074-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승란",
-        "birthDate": "2071-04-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-허미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2109,
-            "summary": "최승란은 신정 차량기지에서 유치선 화물 구분·배차 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-허미리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K074-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정승욱",
-        "birthDate": "2041-04-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-허미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2079,
-            "summary": "정승욱은 신정 차량기지에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-허미리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K074-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승정",
-        "birthDate": "2011-04-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-허미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤승정은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-허미리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K074-P-01:K074:biological",
-        "from": "FH-K074-P-01",
-        "to": "K074",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-허미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K074-P-02:FH-K074-P-01:biological",
-        "from": "FH-K074-P-02",
-        "to": "FH-K074-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-허미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K074-P-03:FH-K074-P-02:biological",
-        "from": "FH-K074-P-03",
-        "to": "FH-K074-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-허미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K074-M-01:K074:biological",
-        "from": "FH-K074-M-01",
-        "to": "K074",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-허미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K074-M-02:FH-K074-M-01:biological",
-        "from": "FH-K074-M-02",
-        "to": "FH-K074-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-허미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K074-M-03:FH-K074-M-02:biological",
-        "from": "FH-K074-M-03",
-        "to": "FH-K074-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-허미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d5c8-c591-cc9c",
+    "name": "양천 허씨",
+    "crest": "clan-crests/d5c8-c591-cc9c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "셋째 부위를 받은 허미리는 올해 긴 밤 철부터 강남역 정비대를 맡고 있다. 정비공들과는 자유도시 작업장 말투로 반말을 섞어 쓰는데, 서초 곁집 사람들은 그것을 서초다운 일로 여긴다. 서초4동 대피소장 서진아에게 순번표를 올릴 때만은 말끝을 높인다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "강남역 정비장",
+    "품계": "정비장",
+    "생업": "정비대 통솔",
+    "일하는 역": "강남역",
+    "잠자는 역": "강남역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 3
+  },
+  "sections": {
+    "생애": "셋째 부위를 받은 허미리는 올해 긴 밤 철부터 강남역 정비대를 맡고 있다. 정비공들과는 자유도시 작업장 말투로 반말을 섞어 쓰는데, 서초 곁집 사람들은 그것을 서초다운 일로 여긴다. 서초4동 대피소장 서진아에게 순번표를 올릴 때만은 말끝을 높인다.",
+    "관직": "직함 강남역 정비장. 직위 강남역 정비장 · 아크. 품계 정비장. 일하는 역 강남역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": -5,
+    "무력": -25,
+    "물질": -45,
+    "공동": 20,
+    "원칙": 30,
+    "공개": 5,
+    "자격": 0,
+    "분산": -20,
+    "변혁": 60
+  },
+  "desire": {
+    "갈망": -5,
+    "독점": 0,
+    "위험": -20,
+    "과시": 25,
+    "지속": 5,
+    "지향": "동성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0074",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "허미리",
+        "type": "지휘",
+        "to": "서진아",
+        "basis": "서초4동 대피소장 서진아의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K274",
+    "name": "서진아",
+    "courtId": "court:K274",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "dispatch",
-        "name": {
-          "ko": "화차 순서 조정",
-          "en": "Freight-car sequencing"
-        },
-        "rating": 60
-      },
-      {
-        "id": "seal",
-        "name": {
-          "ko": "봉인·사본 대조",
-          "en": "Seal and copy comparison"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "stop-on-conflicting-markings",
-        "name": {
-          "ko": "표시 충돌에 정지",
-          "en": "Stop on Conflicting Markings"
-        },
-        "description": {
-          "ko": "허미리는 화물의 표시와 봉인이 맞지 않으면 출발보다 확인을 우선한다.",
-          "en": "Heo Miri prioritizes verification over departure when cargo markings and seals conflict."
-        },
-        "behavior": {
-          "ko": "시료 칸의 봉인끈이 의료 표시와 겹치자 동부행 출발 호각을 끊었다.",
-          "en": "She stopped the eastbound departure whistle when a sample wagon’s sealing cord overlapped its medical marking."
-        },
-        "stress": {
-          "ko": "유치선이 군사 보호권의 창구로 변할 우려가 있다면 충돌하는 표시를 그대로 통과시키지 않으려 할 수 있다.",
-          "en": "If the sidings risk becoming a channel for military protection claims, she may resist letting conflicting markings pass unchecked."
-        },
-        "relationship": {
-          "ko": "화물 표시의 재확인이 필요하다면 허서겸의 재검색을 칸 앞에서 지원할 수 있다.",
-          "en": "She may support Heo Seogyeom’s reinspection at the wagon when cargo markings require verification."
-        },
-        "effects": []
-      },
-      {
-        "id": "fields-over-words",
-        "name": {
-          "ko": "말보다 칸 구분",
-          "en": "Fields Over Words"
-        },
-        "description": {
-          "ko": "허미리는 화물을 부르는 말보다 칸 번호와 분필 색의 용도 구분을 중시한다.",
-          "en": "Heo Miri trusts wagon numbers and chalk-coded uses more than verbal cargo labels."
-        },
-        "behavior": {
-          "ko": "칸 번호를 밤마다 다시 쓰고 병기를 연구 시료로 부르라는 전갈을 분필 옆에 붙이지 않는다.",
-          "en": "She rewrites wagon numbers nightly and refuses to place messages relabeling weapons as research samples beside the chalk markings."
-        },
-        "stress": {
-          "ko": "유치 분필이 보호권 매표 번호로 바뀔 위험이 있다면 인증 없는 화물을 유치 자갈에만 세우려 할 수 있다.",
-          "en": "If siding chalk risks becoming protection-ticket numbering, she may insist that uncertified cargo remain only on the gravel sidings."
-        },
-        "relationship": {
-          "ko": "김도하가 민가 칸을 앞세우라고 압박한다면 분필 색과 배차 집행을 둘러싸고 마찰이 생길 수 있다.",
-          "en": "Kim Doha’s pressure to advance household wagons may cause friction over chalk coding and dispatch enforcement."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "의료 표시와 봉인끈이 충돌한 칸의 출발을 멈췄다. 칸 구분과 이상 판단은 확인되지만 사법권이나 전투 경력은 없다.",
-      "en": "She halted a car with conflicting medical marks and seals. Classification and anomaly judgment are documented, not judicial authority or combat experience."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -516,7 +137,7 @@
         {
           "id": "right-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "head",
@@ -532,79 +153,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d5c8-c591-cc9c",
-    "name": "양천 허씨",
-    "crest": "clan-crests/d5c8-c591-cc9c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -5,
-    "개방": 10,
-    "무력": -35,
-    "물질": 5,
-    "공동": 0,
-    "원칙": 40,
-    "공개": 50,
-    "자격": 35,
-    "분산": 10,
-    "변혁": 15
-  },
-  "desire": {
-    "갈망": -5,
-    "독점": 0,
-    "위험": -20,
-    "과시": 25,
-    "지속": 5,
-    "지향": "동성",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "태욱그룹",
-    "생업": "유치선 화물 구분·배차",
-    "품계": "부장",
-    "직함": "방화기지 유치 실무장",
-    "업무": "방화3동. 허미리는 방화기지 유치선에서 의심 화차의 분필 표시를 남기고 허서겸의 재검색이 끝날 때까지 출고 호각을 끊는다.",
-    "가치관": "권위 −5 | 개방 10 | 무력 −35 | 물질 5 | 공동 0 | 원칙 40 | 공개 50 | 자격 35 | 분산 10 | 변혁 15",
-    "욕망": "갈망 −5 | 독점 0 | 위험 −20 | 과시 25 | 지속 5 | 지향 동성 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 허미리는 방화기지 유치선에서 의심 화차의 분필 표시를 남기고 허서겸의 재검색이 끝날 때까지 출고 호각을 끊는다.\n- 업무: 방화3동. 허미리는 방화기지 유치선에서 의심 화차의 분필 표시를 남기고 허서겸의 재검색이 끝날 때까지 출고 호각을 끊는다.",
-    "관직": "품계 부장. 직함은 방화기지 유치 실무장. 분필 색으로 칸 용도를 나누고, 병기 냄새가 나는 칸은 꼬리표를 떼기 전에 유치선 자갈 쪽으로 민다.",
-    "일화": "방화기지 유치선에 선 시료 칸의 봉인끈이 의료 표시와 겹치자 허미리는 서울 안의 반출 호각을 끊고 재검색 칸 분필만 남겼다.",
-    "관계": "유민호의 배차 순서를 유치 분필로 집행하는 지휘를 받고, 허서겸의 재검색을 칸 앞에서 받친다. 김도하의 민가 칸을 앞세우라는 압력과 분필 색을 다툰다.",
-    "야망": "인증 꼬리표가 없는 화물은 유치 자갈에만 세우게 해, 공동기술원장이 군수 줄에 목을 맡기지 않게 한다.",
-    "공포": "활주로 터가 숙영 깃발로 덮이면 유치 분필이 보호권 매표 창구의 번호가 되는 것.",
-    "개입": "꼬리표가 없는 칸의 발주 쪽지를 유치 분필 옆에 붙이거나, 인증 없는 출고를 막은 손을 삼원 심의에 넘길 수 있다."
-  },
-  "biography": "화물 칸의 기름 냄새로 위장 물자를 가리고, 병기를 연구 시료로 부르라는 전갈을 유치 분필 옆에 붙이지 않는다. 칸 번호를 밤마다 다시 쓰느라 말을 아낀다.\n\n- 소속: 태욱그룹\n- 생업: 유치선 화물 구분·배차\n- 품계: 부장\n- 직함: 방화기지 유치 실무장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 허미리는 방화기지 유치선에서 의심 화차의 분필 표시를 남기고 허서겸의 재검색이 끝날 때까지 출고 호각을 끊는다.\n- 업무: 방화3동. 허미리는 방화기지 유치선에서 의심 화차의 분필 표시를 남기고 허서겸의 재검색이 끝날 때까지 출고 호각을 끊는다.\n\n**관직.** 품계 부장. 직함은 방화기지 유치 실무장. 분필 색으로 칸 용도를 나누고, 병기 냄새가 나는 칸은 꼬리표를 떼기 전에 유치선 자갈 쪽으로 민다.\n\n**일화.** 방화기지 유치선에 선 시료 칸의 봉인끈이 의료 표시와 겹치자 허미리는 서울 안의 반출 호각을 끊고 재검색 칸 분필만 남겼다.\n\n**관계.** 유민호의 배차 순서를 유치 분필로 집행하는 지휘를 받고, 허서겸의 재검색을 칸 앞에서 받친다. 김도하의 민가 칸을 앞세우라는 압력과 분필 색을 다툰다.\n\n**야망.** 인증 꼬리표가 없는 화물은 유치 자갈에만 세우게 해, 공동기술원장이 군수 줄에 목을 맡기지 않게 한다.\n\n**공포.** 활주로 터가 숙영 깃발로 덮이면 유치 분필이 보호권 매표 창구의 번호가 되는 것.\n\n**개입.** 꼬리표가 없는 칸의 발주 쪽지를 유치 분필 옆에 붙이거나, 인증 없는 출고를 막은 손을 삼원 심의에 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 10 | 무력 −35 | 물질 5 | 공동 0 | 원칙 40 | 공개 50 | 자격 35 | 분산 10 | 변혁 15\n- 욕망: 갈망 −5 | 독점 0 | 위험 −20 | 과시 25 | 지속 5 | 지향 동성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-03"
-  ],
-  "directLiege": {
-    "personId": "K062",
-    "name": "유민호",
-    "courtId": "court:K062",
-    "effectiveYear": 2126
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "허미리",
-        "type": "지휘",
-        "to": "유민호",
-        "basis": "유민호의 배차 순서를 유치 분필로 집행하는 지휘를 받고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:강남",
+      "name": {
+        "ko": "강남역"
       },
-      {
-        "from": "허미리",
-        "type": "지휘",
-        "to": "허서겸",
-        "basis": "허서겸의 재검색을 칸 앞에서 받친다"
-      }
-    ],
-    "incoming": []
-  }
+      "holderPersonId": "K074",
+      "directLiegePersonId": "K274",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "강남",
+        "stationName": "강남"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1165053100",
+          "name": "서초4동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

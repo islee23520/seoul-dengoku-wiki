@@ -3,27 +3,27 @@
   "personId": "person-0404",
   "characterId": "K403",
   "name": "안태경",
-  "stateId": "S16",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "시민추첨회의 서기"
+    "role": "송파 곁집 어른 · 잠실역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "medium-length hair swept back",
-    "upper": "burgundy buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer",
-    "outfit": "burgundy buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer",
+    "upper": "몸에 맞춘 짙은 외투, 부위마다 정비 틈, 왼쪽 깃에 곁집 무늬",
+    "outfit": "몸에 맞춘 짙은 외투, 부위마다 정비 틈, 왼쪽 깃에 곁집 무늬",
     "palette": [
-      "burgundy",
-      "khaki",
-      "navy"
+      "deep maroon",
+      "Arc red",
+      "charcoal"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "khaki high-waisted pleated trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "dark fitted wool trousers",
+    "footwear": "felt-lined leather boots",
+    "accessories": "Arc-red Near House arm band stitched with wave line"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "bare head indoors, fur cap carried",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "burgundy buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer",
+        "value": "몸에 맞춘 짙은 외투, 부위마다 정비 틈, 왼쪽 깃에 곁집 무늬",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "khaki high-waisted pleated trousers",
+        "value": "dark fitted wool trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt-lined leather boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "left collar embroidered with the Near House pattern",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "Arc-red Near House arm band stitched with wave line",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "Arc red",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "felted wool",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "worn on the upper arm",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "narrow band",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 안태경, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige. upper garment: burgundy buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, khaki, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 안태경, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige. headwear: bare head indoors, fur cap carried; upper garment: 몸에 맞춘 짙은 외투, 부위마다 정비 틈, 왼쪽 깃에 곁집 무늬; neckline: left collar embroidered with the Near House pattern. accessories: Arc-red Near House arm band stitched with wave line; worn as worn on the upper arm. color palette: deep maroon, Arc red, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 안태경, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige; average adult male height. upper garment: burgundy buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: khaki high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, khaki, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 안태경, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige; average adult male height. headwear: bare head indoors, fur cap carried; upper garment: 몸에 맞춘 짙은 외투, 부위마다 정비 틈, 왼쪽 깃에 곁집 무늬; neckline: left collar embroidered with the Near House pattern; lower garment: dark fitted wool trousers; footwear: felt-lined leather boots. accessories: Arc-red Near House arm band stitched with wave line; worn as worn on the upper arm. color palette: deep maroon, Arc red, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 안태경, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige; average adult male height. upper garment: burgundy buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: khaki high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, khaki, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 안태경, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige; average adult male height. headwear: bare head indoors, fur cap carried; upper garment: 몸에 맞춘 짙은 외투, 부위마다 정비 틈, 왼쪽 깃에 곁집 무늬; neckline: left collar embroidered with the Near House pattern; lower garment: dark fitted wool trousers; footwear: felt-lined leather boots. accessories: Arc-red Near House arm band stitched with wave line; worn as worn on the upper arm. color palette: deep maroon, Arc red, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 안태경, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige; average adult male height. upper garment: burgundy buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: khaki high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, khaki, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 안태경, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige; average adult male height. headwear: bare head indoors, fur cap carried; upper garment: 몸에 맞춘 짙은 외투, 부위마다 정비 틈, 왼쪽 깃에 곁집 무늬; neckline: left collar embroidered with the Near House pattern; lower garment: dark fitted wool trousers; footwear: felt-lined leather boots. accessories: Arc-red Near House arm band stitched with wave line; worn as worn on the upper arm. color palette: deep maroon, Arc red, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 안태경, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige; average adult male height. upper garment: burgundy buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: khaki high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, khaki, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 안태경, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; black hair; medium length. build: lean; skin: light warm beige; average adult male height. headwear: bare head indoors, fur cap carried; upper garment: 몸에 맞춘 짙은 외투, 부위마다 정비 틈, 왼쪽 깃에 곁집 무늬; neckline: left collar embroidered with the Near House pattern; lower garment: dark fitted wool trousers; footwear: felt-lined leather boots. accessories: Arc-red Near House arm band stitched with wave line; worn as worn on the upper arm. color palette: deep maroon, Arc red, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

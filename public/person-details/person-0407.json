@@ -1,514 +1,143 @@
 {
   "id": "person-0407",
   "name": "원새울",
-  "title": "협약 회의 의무소 거점 의무원 · 서초구 영주",
-  "position": "협약 회의 의무소 거점 의무원 · 서초구 영주",
+  "title": "신논현역 정비장",
+  "position": "신논현역 정비장 · 아크",
   "characterId": "K406",
-  "rank": "영주",
-  "commonTier": "T3",
-  "occupation": "중증도 표 게시·회의 진료 조정",
+  "rank": "정비장",
+  "commonTier": "T4",
+  "occupation": "정비대 통솔",
   "gender": "남성",
   "stage": "S2",
-  "state": "S16",
-  "stateName": "정동노총",
-  "sourceRoute": "/world/Cast-State-16#인물-원새울",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0407",
   "birthDate": "2097-01-20",
   "birthday": "01-20",
   "age": 29,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-16.json#/content/116"
-  ],
-  "familyTree": {
-    "personId": "K406",
-    "nodes": [
-      {
-        "id": "K406",
-        "personId": "K406",
-        "kind": "person",
-        "name": "원새울",
-        "birthDate": "2097-01-20",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K406"
-          },
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원새울-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 협약 회의 의무소 거점 의무원 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-원새울-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0407"
-      },
-      {
-        "id": "FH-K406-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "원승윤",
-        "lineage": {
-          "surname": "원",
-          "bongwan": "원주",
-          "clan": "c6d0-c6d0-c8fc"
-        },
-        "birthDate": "2067-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원새울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "원승윤은 제기동 의무소에서 중증도 표 게시·회의 진료 조정 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-원새울-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K406-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "원승우",
-        "lineage": {
-          "surname": "원",
-          "bongwan": "원주",
-          "clan": "c6d0-c6d0-c8fc"
-        },
-        "birthDate": "2037-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원새울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "원승우는 제기동 의무소에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-원새울-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K406-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "원승경",
-        "lineage": {
-          "surname": "원",
-          "bongwan": "원주",
-          "clan": "c6d0-c6d0-c8fc"
-        },
-        "birthDate": "2007-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원새울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "원승경은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-원새울-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K406-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조준범",
-        "birthDate": "2067-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원새울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "조준범은 제기동 의무소에서 중증도 표 게시·회의 진료 조정 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-원새울-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K406-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김준혁",
-        "birthDate": "2037-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원새울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "김준혁은 제기동 의무소에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-원새울-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K406-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준문",
-        "birthDate": "2007-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원새울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박준문은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-원새울-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K406-P-01:K406:biological",
-        "from": "FH-K406-P-01",
-        "to": "K406",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원새울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K406-P-02:FH-K406-P-01:biological",
-        "from": "FH-K406-P-02",
-        "to": "FH-K406-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원새울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K406-P-03:FH-K406-P-02:biological",
-        "from": "FH-K406-P-03",
-        "to": "FH-K406-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원새울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K406-M-01:K406:biological",
-        "from": "FH-K406-M-01",
-        "to": "K406",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원새울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K406-M-02:FH-K406-M-01:biological",
-        "from": "FH-K406-M-02",
-        "to": "FH-K406-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원새울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K406-M-03:FH-K406-M-02:biological",
-        "from": "FH-K406-M-03",
-        "to": "FH-K406-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원새울-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c6d0-c6d0-c8fc",
+    "name": "원주 원씨",
+    "crest": "clan-crests/c6d0-c6d0-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "신논현은 강남역과 붙은 작은 역이라, 강남역 정비대에서 밀려난 맞춤 날 사람들이 원새울의 정비대로 내려온다. 스물아홉 살인 그는 이 역의 정비장이 되기 전에 이미 부위가 넷이었고, 남의 몸을 열기 전에 제 몸이 먼저 열려 본 사람이어야 한다는 말을 몸으로 보여 왔다. 몫이 모자라는 날이면 그는 서초4동 대피소장 서진아 앞에 밀려온 사람의 수부터 내민다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "신논현역 정비장",
+    "품계": "정비장",
+    "생업": "정비대 통솔",
+    "일하는 역": "신논현역",
+    "잠자는 역": "신논현역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 4
+  },
+  "sections": {
+    "생애": "신논현은 강남역과 붙은 작은 역이라, 강남역 정비대에서 밀려난 맞춤 날 사람들이 원새울의 정비대로 내려온다. 스물아홉 살인 그는 이 역의 정비장이 되기 전에 이미 부위가 넷이었고, 남의 몸을 열기 전에 제 몸이 먼저 열려 본 사람이어야 한다는 말을 몸으로 보여 왔다. 몫이 모자라는 날이면 그는 서초4동 대피소장 서진아 앞에 밀려온 사람의 수부터 내민다.",
+    "관직": "직함 신논현역 정비장. 직위 신논현역 정비장 · 아크. 품계 정비장. 일하는 역 신논현역."
+  },
+  "values": {
+    "권위": -10,
+    "개방": 15,
+    "무력": -40,
+    "물질": -50,
+    "공동": 30,
+    "원칙": 25,
+    "공개": -20,
+    "자격": -5,
+    "분산": 15,
+    "변혁": 65
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": -10,
+    "위험": 5,
+    "과시": 15,
+    "지속": 0,
+    "지향": "동성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0407",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "원새울",
+        "type": "지휘",
+        "to": "서진아",
+        "basis": "서초4동 대피소장 서진아의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K274",
+    "name": "서진아",
+    "courtId": "court:K274",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
-      "learning": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "care-queue-coordination",
-        "name": {
-          "ko": "진료 대기 조정",
-          "en": "Care queue coordination"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "전용 침상 거부",
-          "en": "Rejects exclusive beds"
-        },
-        "description": {
-          "ko": "중증도 표와 대기열을 맞추고 서로 다른 군사·급수안을 든 사절에게 전용 침상을 열지 않았다. 임상 성과는 기록되지 않았다.",
-          "en": "Coordinates severity boards and queues and refuses exclusive beds to envoys with competing military-water packages. Clinical outcomes are unrecorded."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 전용 침상 거부을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "특혜 요구 때 진료 창구를 보류할 수 있다.",
-          "en": "May withhold access when special treatment is demanded."
-        },
-        "relationship": {
-          "ko": "심유리의 중재실과 방마빛의 대기열을 연결한다.",
-          "en": "Links Sim Yuri’s mediation room with Bang Mabit’s waiting queue."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "시청역 조합원 총회 기간의 현장 진료를 공동교섭의 최저선으로 남겨 강국별 분할 복속이 병상을 사지 못하게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "의무소가 배우진의 군사 개입안과 한재목의 수문헌장 사이에서 들러리 창구가 되는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "심유리의 중재실과 방마빛의 대기열을 연결한다.",
-          "en": "Links Sim Yuri’s mediation room with Bang Mabit’s waiting queue."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "중증도 표와 대기열을 맞추고 서로 다른 군사·급수안을 든 사절에게 전용 침상을 열지 않았다. 임상 성과는 기록되지 않았다.",
-      "en": "Coordinates severity boards and queues and refuses exclusive beds to envoys with competing military-water packages. Clinical outcomes are unrecorded."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "head",
@@ -526,171 +155,27 @@
   },
   "confirmedHoldings": [
     {
-      "id": "holding:opening-duchy-gu-11650-S16",
+      "id": "holding:v3:station:신논현",
       "name": {
-        "ko": "서초구 정동노총 공작령 직영지"
+        "ko": "신논현역"
       },
       "holderPersonId": "K406",
-      "directLiegePersonId": "K423",
-      "stateId": "S16",
+      "directLiegePersonId": "K274",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "신논현",
+        "stationName": "신논현"
+      },
       "adminRefs": [
         {
-          "id": "region:1165054000",
-          "name": "잠원동"
-        },
-        {
-          "id": "region:1165055000",
-          "name": "반포본동"
-        },
-        {
-          "id": "region:1165056000",
-          "name": "반포1동"
-        },
-        {
-          "id": "region:1165057000",
-          "name": "반포2동"
-        },
-        {
-          "id": "region:1165058000",
-          "name": "반포3동"
-        },
-        {
-          "id": "region:1165058100",
-          "name": "반포4동"
-        },
-        {
-          "id": "region:1165059000",
-          "name": "방배본동"
-        },
-        {
-          "id": "region:1165060000",
-          "name": "방배1동"
-        },
-        {
-          "id": "region:1165061000",
-          "name": "방배2동"
-        },
-        {
-          "id": "region:1165062000",
-          "name": "방배3동"
-        },
-        {
-          "id": "region:1165062100",
-          "name": "방배4동"
-        },
-        {
-          "id": "region:1165065200",
-          "name": "양재2동"
-        },
-        {
-          "id": "region:1165066000",
-          "name": "내곡동"
+          "id": "region:1165053100",
+          "name": "서초4동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11650-S16",
+      "territorialScale": "station",
+      "titleId": null,
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
+      "formalTitleRank": null
     }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
-    {
-      "id": "title:duchy-gu-11650-S16",
-      "name": "서초구 정동노총 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K406",
-      "basis": "개막 행정 규모 그룹 gu:11650(duchy) 배분 · 결정적 후보 선정",
-      "stateId": "S16",
-      "parentTitleId": "title:kingdom-s04",
-      "jurisdictionRefs": [
-        "region:1165054000",
-        "region:1165055000",
-        "region:1165056000",
-        "region:1165057000",
-        "region:1165058000",
-        "region:1165058100",
-        "region:1165059000",
-        "region:1165060000",
-        "region:1165061000",
-        "region:1165062000",
-        "region:1165062100",
-        "region:1165065200",
-        "region:1165066000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s04",
-        "name": "종교 연합 왕국",
-        "holderPersonId": "K423"
-      }
-    }
-  ],
-  "clan": {
-    "id": "c6d0-c6d0-c8fc",
-    "name": "원주 원씨",
-    "crest": "clan-crests/c6d0-c6d0-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -35,
-    "개방": 30,
-    "무력": -50,
-    "물질": 0,
-    "공동": 10,
-    "원칙": 35,
-    "공개": 25,
-    "자격": 30,
-    "분산": 45,
-    "변혁": 20
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": -10,
-    "위험": 5,
-    "과시": 15,
-    "지속": 0,
-    "지향": "동성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "중증도 표 게시·회의 진료 조정",
-    "소속": "정동노총",
-    "공동체 역할": "조합원",
-    "직무": "협약 회의 의무소 거점 의무원",
-    "가치관": "권위 −35 | 개방 30 | 무력 −50 | 물질 0 | 공동 10 | 원칙 35 | 공개 25 | 자격 30 | 분산 45 | 변혁 20",
-    "욕망": "갈망 40 | 독점 −10 | 위험 5 | 과시 15 | 지속 0 | 지향 동성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2097-01-20에 태어난 원새울은 영구 겨울의 시청역 조합 작업장에서 협약 회의 의무소 거점 의무원 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 원새울은 소공동의 시청역 조합 작업장에서 협약 회의 의무소 거점 의무원 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "직무": "공동체 역할은 조합원이며 직무는 협약 회의 의무소 거점 의무원이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.",
-    "일화": "시청역 조합원 총회 직전에 세 대외 세력 사절이 각각 다른 군사·급수 패키지를 들고 들어오자 원새울은 사절 전용 침상을 열지 않았다.",
-    "관계": "원새울의 기존 관계 기록은 다음과 같다. 심유리의 중재실 옆 침상을 맡고, 방마빛의 대합실 대기와 줄을 나눈다. 류은비의 의료헌장 조항을 당직 원장에 올린다.",
-    "목표": "원새울은 협약 회의 의무소 거점 의무원 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.",
-    "공포": "협약 회의 의무소 거점 의무원 업무의 서명이나 인계 기록이 바뀌어 원새울의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.",
-    "개입": "원새울은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다."
-  },
-  "biography": "원새울은 영구 겨울의 시청역 조합 작업장에서 협약 회의 의무소 거점 의무원 업무 기록과 공개 표결 서명을 먼저 대조한다. 급수·통행·계약 일정이 겹치는 날에는 접수 시각과 인계 순서를 같은 장부에 남긴다.\n\n- 생업: 중증도 표 게시·회의 진료 조정\n- 소속: 정동노총\n- 공동체 역할: 조합원\n- 직무: 협약 회의 의무소 거점 의무원\n**생애.** 2097-01-20에 태어난 원새울은 영구 겨울의 시청역 조합 작업장에서 협약 회의 의무소 거점 의무원 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 원새울은 소공동의 시청역 조합 작업장에서 협약 회의 의무소 거점 의무원 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**직무.** 공동체 역할은 조합원이며 직무는 협약 회의 의무소 거점 의무원이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.\n\n**일화.** 시청역 조합원 총회 직전에 세 대외 세력 사절이 각각 다른 군사·급수 패키지를 들고 들어오자 원새울은 사절 전용 침상을 열지 않았다.\n\n**관계.** 원새울의 기존 관계 기록은 다음과 같다. 심유리의 중재실 옆 침상을 맡고, 방마빛의 대합실 대기와 줄을 나눈다. 류은비의 의료헌장 조항을 당직 원장에 올린다.\n\n**목표.** 원새울은 협약 회의 의무소 거점 의무원 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.\n\n**공포.** 협약 회의 의무소 거점 의무원 업무의 서명이나 인계 기록이 바뀌어 원새울의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.\n\n**개입.** 원새울은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 30 | 무력 −50 | 물질 0 | 공동 10 | 원칙 35 | 공개 25 | 자격 30 | 분산 45 | 변혁 20\n- 욕망: 갈망 40 | 독점 −10 | 위험 5 | 과시 15 | 지속 0 | 지향 동성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-16"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "원새울",
-        "type": "계약",
-        "to": "심유리",
-        "basis": "심유리의 중재실 옆 침상을 맡고"
-      },
-      {
-        "from": "원새울",
-        "type": "계약",
-        "to": "방마빛",
-        "basis": "방마빛의 대합실 대기와 줄을 나눈다"
-      }
-    ],
-    "incoming": []
-  }
+  ]
 }

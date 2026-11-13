@@ -3,27 +3,27 @@
   "personId": "person-0014",
   "characterId": "K014",
   "name": "대니얼 브룩스",
-  "stateId": "S01",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "계약 회의 전령"
+    "role": "마곡나루역 역반장 · 자유도시들"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short wavy hair",
-    "upper": "olive drab wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "olive drab wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "보라 도시 끈을 깃에 두른 짙은 올리브색 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷과 얼굴 가리개",
+    "outfit": "보라 도시 끈을 깃에 두른 짙은 올리브색 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷과 얼굴 가리개",
     "palette": [
       "olive drab",
       "forest green",
       "slate blue"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "forest green heavy twill trousers with knee patches",
-    "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "leather dispatch satchel"
+    "lower": "forest green synthetic twill trousers with knee patches",
+    "footwear": "thick-soled insulated boots with rubber overshoes",
+    "accessories": "rope harness hook and a coil of seal cord at the waist"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -175,27 +175,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "knitted wool watch cap",
+        "value": "knitted synthetic watch cap with snow goggles",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "olive drab wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "보라 도시 끈을 깃에 두른 짙은 올리브색 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷과 얼굴 가리개",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "forest green heavy twill trousers with knee patches",
+        "value": "forest green synthetic twill trousers with knee patches",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "thick-soled leather winter boots with wool socks",
+        "value": "thick-soled insulated boots with rubber overshoes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -205,41 +205,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "turned-up jacket collar",
+        "value": "turned-up collar with a purple city cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "leather dispatch satchel",
+        "value": "rope harness hook and a coil of seal cord at the waist",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat flap satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "worn brown leather",
+        "value": "dull steel and purple cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, brass buckle",
+        "value": "steel, synthetic rope",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the chest",
+        "value": "clipped at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "snap hook and small coil",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -260,27 +260,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 대니얼 브룩스, an African-American heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: soft rounded; skin: medium brown. headwear: knitted wool watch cap; upper garment: olive drab wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar. accessories: leather dispatch satchel; worn as strap across the chest. color palette: olive drab, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 대니얼 브룩스, an African-American heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: soft rounded; skin: medium brown. headwear: knitted synthetic watch cap with snow goggles; upper garment: 보라 도시 끈을 깃에 두른 짙은 올리브색 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷과 얼굴 가리개; neckline: turned-up collar with a purple city cord. accessories: rope harness hook and a coil of seal cord at the waist; worn as clipped at the belt. color palette: olive drab, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 대니얼 브룩스, an African-American heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: soft rounded; skin: medium brown; average adult male height. headwear: knitted wool watch cap; upper garment: olive drab wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: forest green heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: olive drab, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 대니얼 브룩스, an African-American heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: soft rounded; skin: medium brown; average adult male height. headwear: knitted synthetic watch cap with snow goggles; upper garment: 보라 도시 끈을 깃에 두른 짙은 올리브색 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷과 얼굴 가리개; neckline: turned-up collar with a purple city cord; lower garment: forest green synthetic twill trousers with knee patches; footwear: thick-soled insulated boots with rubber overshoes. accessories: rope harness hook and a coil of seal cord at the waist; worn as clipped at the belt. color palette: olive drab, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 대니얼 브룩스, an African-American heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: soft rounded; skin: medium brown; average adult male height. headwear: knitted wool watch cap; upper garment: olive drab wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: forest green heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: olive drab, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 대니얼 브룩스, an African-American heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: soft rounded; skin: medium brown; average adult male height. headwear: knitted synthetic watch cap with snow goggles; upper garment: 보라 도시 끈을 깃에 두른 짙은 올리브색 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷과 얼굴 가리개; neckline: turned-up collar with a purple city cord; lower garment: forest green synthetic twill trousers with knee patches; footwear: thick-soled insulated boots with rubber overshoes. accessories: rope harness hook and a coil of seal cord at the waist; worn as clipped at the belt. color palette: olive drab, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 대니얼 브룩스, an African-American heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: soft rounded; skin: medium brown; average adult male height. headwear: knitted wool watch cap; upper garment: olive drab wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: forest green heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: olive drab, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 대니얼 브룩스, an African-American heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: soft rounded; skin: medium brown; average adult male height. headwear: knitted synthetic watch cap with snow goggles; upper garment: 보라 도시 끈을 깃에 두른 짙은 올리브색 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷과 얼굴 가리개; neckline: turned-up collar with a purple city cord; lower garment: forest green synthetic twill trousers with knee patches; footwear: thick-soled insulated boots with rubber overshoes. accessories: rope harness hook and a coil of seal cord at the waist; worn as clipped at the belt. color palette: olive drab, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 대니얼 브룩스, an African-American heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: soft rounded; skin: medium brown; average adult male height. headwear: knitted wool watch cap; upper garment: olive drab wool pea jacket with a turned-up collar, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: forest green heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: olive drab, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 대니얼 브룩스, an African-American heritage man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; round dark brown eyes; low and heavy eyebrows; nose: straight bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: soft rounded; skin: medium brown; average adult male height. headwear: knitted synthetic watch cap with snow goggles; upper garment: 보라 도시 끈을 깃에 두른 짙은 올리브색 합성 섬유 겉옷, 그 위에 지상용 바람막이 긴 겉옷과 얼굴 가리개; neckline: turned-up collar with a purple city cord; lower garment: forest green synthetic twill trousers with knee patches; footwear: thick-soled insulated boots with rubber overshoes. accessories: rope harness hook and a coil of seal cord at the waist; worn as clipped at the belt. color palette: olive drab, forest green, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

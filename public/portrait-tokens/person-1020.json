@@ -3,27 +3,27 @@
   "personId": "person-1020",
   "characterId": "K1020",
   "name": "한서경",
-  "stateId": "S16",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": true,
-    "role": "계약 검토 담당"
+    "role": "대치1동 대피소장 · 아크"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "long hair tied in a low ponytail",
-    "upper": "sand beige wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
-    "outfit": "sand beige wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
+    "upper": "정비 틈을 낸 모래색 누빔 저고리 위에 짙은 외투, 오른쪽 깃에 부위 수 땀 한 줄",
+    "outfit": "정비 틈을 낸 모래색 누빔 저고리 위에 짙은 외투, 오른쪽 깃에 부위 수 땀 한 줄",
     "palette": [
       "sand beige",
       "charcoal",
-      "olive drab"
+      "faded red"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
     "lower": "charcoal pleated knee-length wool skirt over thick stockings",
     "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "accessories": "red armband with two horizontal stripes and a small register satchel"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "sand beige wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
+        "value": "정비 틈을 낸 모래색 누빔 저고리 위에 짙은 외투, 오른쪽 깃에 부위 수 땀 한 줄",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
         "value": "charcoal pleated knee-length wool skirt over thick stockings",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
         "value": "laced leather walking shoes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "buttoned collar with one stitched line on the right side",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "red armband with two horizontal stripes and a small register satchel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "faded red and brown leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "wool felt, leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "armband tied around the left upper arm, satchel across the shoulder",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "narrow band and flat satchel",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 한서경, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: thin straight lips; muted red lips. long hair tied in a low ponytail; black hair; long length. build: average; skin: light olive. upper garment: sand beige wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: sand beige, charcoal, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 한서경, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: thin straight lips; muted red lips. long hair tied in a low ponytail; black hair; long length. build: average; skin: light olive. upper garment: 정비 틈을 낸 모래색 누빔 저고리 위에 짙은 외투, 오른쪽 깃에 부위 수 땀 한 줄; neckline: buttoned collar with one stitched line on the right side. accessories: red armband with two horizontal stripes and a small register satchel; worn as armband tied around the left upper arm, satchel across the shoulder. color palette: sand beige, charcoal, faded red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 한서경, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: thin straight lips; muted red lips. long hair tied in a low ponytail; black hair; long length. build: average; skin: light olive; average adult female height. upper garment: sand beige wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: charcoal pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: sand beige, charcoal, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 한서경, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: thin straight lips; muted red lips. long hair tied in a low ponytail; black hair; long length. build: average; skin: light olive; average adult female height. upper garment: 정비 틈을 낸 모래색 누빔 저고리 위에 짙은 외투, 오른쪽 깃에 부위 수 땀 한 줄; neckline: buttoned collar with one stitched line on the right side; lower garment: charcoal pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: red armband with two horizontal stripes and a small register satchel; worn as armband tied around the left upper arm, satchel across the shoulder. color palette: sand beige, charcoal, faded red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 한서경, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: thin straight lips; muted red lips. long hair tied in a low ponytail; black hair; long length. build: average; skin: light olive; average adult female height. upper garment: sand beige wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: charcoal pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: sand beige, charcoal, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 한서경, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: thin straight lips; muted red lips. long hair tied in a low ponytail; black hair; long length. build: average; skin: light olive; average adult female height. upper garment: 정비 틈을 낸 모래색 누빔 저고리 위에 짙은 외투, 오른쪽 깃에 부위 수 땀 한 줄; neckline: buttoned collar with one stitched line on the right side; lower garment: charcoal pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: red armband with two horizontal stripes and a small register satchel; worn as armband tied around the left upper arm, satchel across the shoulder. color palette: sand beige, charcoal, faded red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 한서경, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: thin straight lips; muted red lips. long hair tied in a low ponytail; black hair; long length. build: average; skin: light olive; average adult female height. upper garment: sand beige wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: charcoal pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: sand beige, charcoal, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 한서경, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: thin straight lips; muted red lips. long hair tied in a low ponytail; black hair; long length. build: average; skin: light olive; average adult female height. upper garment: 정비 틈을 낸 모래색 누빔 저고리 위에 짙은 외투, 오른쪽 깃에 부위 수 땀 한 줄; neckline: buttoned collar with one stitched line on the right side; lower garment: charcoal pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: red armband with two horizontal stripes and a small register satchel; worn as armband tied around the left upper arm, satchel across the shoulder. color palette: sand beige, charcoal, faded red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 한서경, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: thin straight lips; muted red lips. long hair tied in a low ponytail; black hair; long length. build: average; skin: light olive; average adult female height. upper garment: sand beige wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: charcoal pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: sand beige, charcoal, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 한서경, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: thin straight lips; muted red lips. long hair tied in a low ponytail; black hair; long length. build: average; skin: light olive; average adult female height. upper garment: 정비 틈을 낸 모래색 누빔 저고리 위에 짙은 외투, 오른쪽 깃에 부위 수 땀 한 줄; neckline: buttoned collar with one stitched line on the right side; lower garment: charcoal pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: red armband with two horizontal stripes and a small register satchel; worn as armband tied around the left upper arm, satchel across the shoulder. color palette: sand beige, charcoal, faded red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

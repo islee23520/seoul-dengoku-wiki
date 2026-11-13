@@ -1,385 +1,133 @@
 {
   "id": "person-0247",
   "name": "신보람",
-  "title": "피난 가족 대표",
-  "position": "신도 명부 주지",
+  "title": "국토교통부 장관",
+  "position": "국토교통부 장관 · 광화문역",
   "characterId": "K246",
-  "rank": "주지",
-  "commonTier": "T3",
-  "occupation": "신도 명부 대조·배급 확인",
+  "rank": "장관",
+  "commonTier": "T2",
+  "occupation": "부처 행정",
   "gender": "여성",
   "stage": "S1",
-  "state": "S10",
-  "stateName": "안국총림",
-  "sourceRoute": "/world/Cast-State-10#인물-신보람",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0247",
   "birthDate": "2078-08-14",
   "birthday": "08-14",
   "age": 48,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-10.json#/content/50"
-  ],
-  "familyTree": {
-    "personId": "K246",
-    "nodes": [
-      {
-        "id": "K246",
-        "personId": "K246",
-        "kind": "person",
-        "name": "신보람",
-        "birthDate": "2078-08-14",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K246"
-          },
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-신보람-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 보국문 피난 막사에서 자랐다. 신도 명부 주지 자리는 고아 명부 줄로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-신보람-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0247"
-      },
-      {
-        "id": "FH-K246-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "신승진",
-        "lineage": {
-          "surname": "신",
-          "bongwan": "영산",
-          "clan": "c2e0-c601-c0b0-8f9b"
-        },
-        "birthDate": "2048-08-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-신보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2086,
-            "summary": "신승진은 보국문 피난 막사에서 신도 명부 대조·배급 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-신보람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K246-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "신승현",
-        "lineage": {
-          "surname": "신",
-          "bongwan": "영산",
-          "clan": "c2e0-c601-c0b0-8f9b"
-        },
-        "birthDate": "2018-08-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-신보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "신승현은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-신보람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K246-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현혁",
-        "birthDate": "2048-08-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-신보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2086,
-            "summary": "강현혁은 보국문 피난 막사에서 신도 명부 대조·배급 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-신보람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K246-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현욱",
-        "birthDate": "2018-08-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-신보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임현욱은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-신보람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K246-P-01:K246:biological",
-        "from": "FH-K246-P-01",
-        "to": "K246",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-신보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K246-P-02:FH-K246-P-01:biological",
-        "from": "FH-K246-P-02",
-        "to": "FH-K246-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-신보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K246-M-01:K246:biological",
-        "from": "FH-K246-M-01",
-        "to": "K246",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-신보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K246-M-02:FH-K246-M-01:biological",
-        "from": "FH-K246-M-02",
-        "to": "FH-K246-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-신보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c2e0-c601-c0b0-8f9b",
+    "name": "영산 신씨",
+    "crest": "clan-crests/c2e0-c601-c0b0-8f9b.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "정부서울청사 깊은 층의 장관 숙소가 잠자리이고, 장부에는 종로구 사직동 광화문역으로 기재되어 있다. 국토교통부 장관으로, 역장 직제와 출입구 관리, 선로 위 손수레 운행, 역마다의 정원 산정을 맡는다. 역의 정원을 정하는 고시는 그녀가 쓰고 대통령이 결재하지만, 역장 자리는 역장 집안 안에서 물리므로 그 고시가 역 안까지 들어가려면 역장의 도장이 한 번 더 들어야 한다. 서울역 역장 전나경과는 서울역 정원을 두고 세 해째 같은 서류를 주고받고 있다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "국토교통부 장관",
+    "품계": "장관",
+    "생업": "부처 행정",
+    "일하는 역": "광화문역",
+    "잠자는 역": "광화문역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "정부서울청사 깊은 층의 장관 숙소가 잠자리이고, 장부에는 종로구 사직동 광화문역으로 기재되어 있다. 국토교통부 장관으로, 역장 직제와 출입구 관리, 선로 위 손수레 운행, 역마다의 정원 산정을 맡는다. 역의 정원을 정하는 고시는 그녀가 쓰고 대통령이 결재하지만, 역장 자리는 역장 집안 안에서 물리므로 그 고시가 역 안까지 들어가려면 역장의 도장이 한 번 더 들어야 한다. 서울역 역장 전나경과는 서울역 정원을 두고 세 해째 같은 서류를 주고받고 있다.",
+    "관직": "직함 국토교통부 장관. 직위 국토교통부 장관 · 광화문역. 품계 장관. 일하는 역 광화문역."
+  },
+  "values": {
+    "권위": -45,
+    "개방": 10,
+    "무력": 5,
+    "물질": -25,
+    "공동": 95,
+    "원칙": 40,
+    "공개": 0,
+    "자격": 50,
+    "분산": 10,
+    "변혁": -30
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": 20,
+    "위험": 35,
+    "과시": -20,
+    "지속": 35,
+    "지향": "양성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0247",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "신보람",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "신보람",
+        "type": "경쟁",
+        "to": "전나경",
+        "basis": "서울역 정원 고시를 두고 세 해째 서류로 맞서고 있다."
+      }
+    ],
+    "incoming": [
+      {
+        "from": "은채윤",
+        "type": "빚",
+        "to": "신보람",
+        "basis": "국토교통부 장관에게 역 정원 조정을 부탁해 진 빚"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 10,
-        "effective": 10
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "management": {
+      "stewardship": {
         "base": 11,
         "effective": 11
       },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "member-roster",
-        "name": {
-          "ko": "신도 명부·배급 확인",
-          "en": "Member-roster and distribution checking"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "member-roster-disposition",
-        "name": {
-          "ko": "아이 이름을 지킴",
-          "en": "Protects children’s names"
-        },
-        "description": {
-          "ko": "이름 누락을 숫자로 메우지 않고 배급을 멈춘다.",
-          "en": "Stops distribution rather than filling omitted names with numbers."
-        },
-        "behavior": {
-          "ko": "이름 누락을 숫자로 메우지 않고 배급을 멈춘다.",
-          "en": "Stops distribution rather than filling omitted names with numbers."
-        },
-        "stress": {
-          "ko": "아이들이 복무 숫자로 끌려갈 것을 두려워한다.",
-          "en": "Fears children taken away as service numbers."
-        },
-        "relationship": {
-          "ko": "백온의 맹세를 가족 회의에서 대변하고 강민서의 시민권 연대를 지지한다. 윤지율에게 이송 우선 기록을 부탁했다.",
-          "en": "Represents Baek On’s pledge in family meetings, supports Kang Minseo’s citizenship solidarity and requests Yun Jiyul’s transfer-priority records."
-        },
-        "effects": []
-      },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "이름 뒤 배급",
-          "en": "Rations after names"
-        },
-        "description": {
-          "ko": "이름을 읽고 누락이 있으면 배급을 멈춘다.",
-          "en": "Reads names and stops rations when one is missing."
-        },
-        "behavior": {
-          "ko": "이름을 읽고 누락이 있으면 배급을 멈춘다.",
-          "en": "Reads names and stops rations when one is missing."
-        },
-        "stress": {
-          "ko": "아이들이 복구복무 숫자로만 기록되어 회랑 밖으로 끌려가는 것.",
-          "en": "Fears children taken away as service numbers."
-        },
-        "relationship": {
-          "ko": "백온의 맹세를 가족 회의에서 대변하고 강민서의 시민권 연대를 지지한다. 윤지율에게 이송 우선 기록을 부탁했다.",
-          "en": "Represents Baek On’s pledge in family meetings, supports Kang Minseo’s citizenship solidarity and requests Yun Jiyul’s transfer-priority records."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "배급 전에 이름을 읽고 누락 시 배급을 멈춘다. 아이 이름을 빠뜨린 장부를 찢은 행동과 가족회의 대변이 보호 성향의 근거다.",
-      "en": "Reads names before distribution and stops it over omissions. Tearing a ledger missing a child’s name and speaking at family meetings ground a protective disposition."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,103 +165,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c2e0-c601-c0b0-8f9b",
-    "name": "영산 신씨",
-    "crest": "clan-crests/c2e0-c601-c0b0-8f9b.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -90,
-    "개방": 65,
-    "무력": -30,
-    "물질": -20,
-    "공동": 90,
-    "원칙": 20,
-    "공개": 25,
-    "자격": 35,
-    "분산": 60,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": 20,
-    "위험": 35,
-    "과시": -20,
-    "지속": 35,
-    "지향": "양성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "신도 명부 대조·배급 확인",
-    "소속": "안국총림",
-    "품계": "주지",
-    "직함": "신도 명부 주지",
-    "가치관": "권위 −90 | 개방 65 | 무력 −30 | 물질 −20 | 공동 90 | 원칙 20 | 공개 25 | 자격 35 | 분산 60 | 변혁 −10",
-    "욕망": "갈망 10 | 독점 20 | 위험 35 | 과시 −20 | 지속 35 | 지향 양성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2078-08-14 출생, 2126년 개막에 활동했다. 보국문 피난 막사에서 자랐다. 신도 명부 주지 당직 기록에는 고아 명부 줄 일이 남아 있다.\n- 신보람의 신도 명부 대조·배급 확인 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
-    "관직": "품계 주지. 직함은 신도 명부 주지. 저녁 배급 전에 신도 명부를 소리 내어 읽고, 빠진 이름이 있으면 배급을 멈춘다.",
-    "일화": "암사 순찰대가 북한산보국문 가족 급수권을 복무계약과 묶는 철표를 숙영지에 붙였다.",
-    "관계": "백온의 맹세를 가족 회의에서 대변하고 강민서의 시민권 연대를 지지한다. 윤지율에게 이송 우선 기록을 부탁했다.",
-    "야망": "군사호적에서 신도를 통째로 지우고 산중총회의 신도 명부를 문중 표로 먼저 시행한다.",
-    "공포": "아이들이 복구복무 숫자로만 기록되어 회랑 밖으로 끌려가는 것.",
-    "개입": "신도 명부를 되찾거나, 자발 복무 헌장의 서명 증인이 되어 줄 수 있다."
-  },
-  "biography": "자비롭지만 명부를 고치는 관리에게는 목소리가 날카로워진다. 아이 이름을 빼먹은 장부를 찢어본 적이 있다.\n\n- 생업: 신도 명부 대조·배급 확인\n- 소속: 안국총림\n- 품계: 주지\n- 직함: 신도 명부 주지\n**생애.** 2078-08-14 출생, 2126년 개막에 활동했다. 보국문 피난 막사에서 자랐다. 신도 명부 주지 당직 기록에는 고아 명부 줄 일이 남아 있다.\n- 신보람의 신도 명부 대조·배급 확인 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n**관직.** 품계 주지. 직함은 신도 명부 주지. 저녁 배급 전에 신도 명부를 소리 내어 읽고, 빠진 이름이 있으면 배급을 멈춘다.\n\n**일화.** 암사 순찰대가 북한산보국문 가족 급수권을 복무계약과 묶는 철표를 숙영지에 붙였다.\n\n**관계.** 백온의 맹세를 가족 회의에서 대변하고 강민서의 시민권 연대를 지지한다. 윤지율에게 이송 우선 기록을 부탁했다.\n\n**야망.** 군사호적에서 신도를 통째로 지우고 산중총회의 신도 명부를 문중 표로 먼저 시행한다.\n\n**공포.** 아이들이 복구복무 숫자로만 기록되어 회랑 밖으로 끌려가는 것.\n\n**개입.** 신도 명부를 되찾거나, 자발 복무 헌장의 서명 증인이 되어 줄 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −90 | 개방 65 | 무력 −30 | 물질 −20 | 공동 90 | 원칙 20 | 공개 25 | 자격 35 | 분산 60 | 변혁 −10\n- 욕망: 갈망 10 | 독점 20 | 위험 35 | 과시 −20 | 지속 35 | 지향 양성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-10"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "신보람",
-        "type": "맹세",
-        "to": "백온",
-        "basis": "가족 회의에서 방장 맹세를 대변"
-      },
-      {
-        "from": "신보람",
-        "type": "계약",
-        "to": "강민서",
-        "basis": "시민권 연대를 가족 회의에서 지지"
-      },
-      {
-        "from": "신보람",
-        "type": "계약",
-        "to": "윤지율",
-        "basis": "이송 우선 기록을 부탁"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "윤지율",
-        "type": "계약",
-        "to": "신보람",
-        "basis": "북한산보국문 가족 이송을 우선 기록으로 남김"
-      },
-      {
-        "from": "소두",
-        "type": "계약",
-        "to": "신보람",
-        "basis": "신보람의 가족 회의 통지를 나르고"
-      },
-      {
-        "from": "감용",
-        "type": "계약",
-        "to": "신보람",
-        "basis": "신보람의 가족 회의를 숙영 중앙에서 열고"
-      },
-      {
-        "from": "어하은",
-        "type": "계약",
-        "to": "신보람",
-        "basis": "신보람의 가족 회의에서 사고 당사자로 서고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

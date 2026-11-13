@@ -1,492 +1,105 @@
 {
   "id": "person-0367",
   "name": "매서담",
-  "title": "관문 통행 증인",
-  "position": "양군 관문 통행 증인",
+  "title": "기능조 조장",
+  "position": "기능조 조장 · 양원역",
   "characterId": "K366",
-  "rank": "공동실무원",
+  "rank": "등재민",
   "commonTier": "T5",
-  "occupation": "통과 시각·봉화 색 기록·면제 증언 봉인",
+  "occupation": "펌프 정비",
   "gender": "남성",
   "stage": "S3",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-매서담",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0367",
   "birthDate": "2093-02-01",
   "birthday": "02-01",
   "age": 33,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/193"
-  ],
-  "familyTree": {
-    "personId": "K366",
-    "nodes": [
-      {
-        "id": "K366",
-        "personId": "K366",
-        "kind": "person",
-        "name": "매서담",
-        "birthDate": "2093-02-01",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K366"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-매서담-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 양군 관문 통행 증인 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-매서담-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0367"
-      },
-      {
-        "id": "FH-K366-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "매승호",
-        "lineage": {
-          "surname": "매",
-          "bongwan": "충주",
-          "clan": "b9e4-cda9-c8fc"
-        },
-        "birthDate": "2063-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-매서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2101,
-            "summary": "매승호는 대합실 당직에서 통과 시각·봉화 색 기록·면제 증언 봉인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-매서담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K366-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "매승민",
-        "lineage": {
-          "surname": "매",
-          "bongwan": "충주",
-          "clan": "b9e4-cda9-c8fc"
-        },
-        "birthDate": "2033-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-매서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2071,
-            "summary": "매승민은 대합실 당직에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-매서담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K366-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "매승원",
-        "lineage": {
-          "surname": "매",
-          "bongwan": "충주",
-          "clan": "b9e4-cda9-c8fc"
-        },
-        "birthDate": "2003-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-매서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "매승원은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-매서담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K366-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강준수",
-        "birthDate": "2063-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-매서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2101,
-            "summary": "강준수는 대합실 당직에서 통과 시각·봉화 색 기록·면제 증언 봉인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-매서담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K366-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임준연",
-        "birthDate": "2033-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-매서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2071,
-            "summary": "임준연은 대합실 당직에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-매서담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K366-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "오준경",
-        "birthDate": "2003-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-매서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오준경은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-매서담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K366-P-01:K366:biological",
-        "from": "FH-K366-P-01",
-        "to": "K366",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-매서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K366-P-02:FH-K366-P-01:biological",
-        "from": "FH-K366-P-02",
-        "to": "FH-K366-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-매서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K366-P-03:FH-K366-P-02:biological",
-        "from": "FH-K366-P-03",
-        "to": "FH-K366-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-매서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K366-M-01:K366:biological",
-        "from": "FH-K366-M-01",
-        "to": "K366",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-매서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K366-M-02:FH-K366-M-01:biological",
-        "from": "FH-K366-M-02",
-        "to": "FH-K366-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-매서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K366-M-03:FH-K366-M-02:biological",
-        "from": "FH-K366-M-03",
-        "to": "FH-K366-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-매서담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b9e4-cda9-c8fc",
+    "name": "충주 매씨",
+    "crest": "clan-crests/b9e4-cda9-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "양원역은 노선의 지상 구간에 걸려 있어 배수 펌프가 쉬는 날이 드물고, 그 펌프를 지키는 조의 조장이 매서담이다. 중랑구 양원역의 기능 가구로 올라 있는 서른세 살 남성이며, 충주 매씨다. 긴 낮 철이면 지상의 눈이 조금씩 녹아 선로 쪽 굴로 스며드는 물이 늘어, 그는 조원들의 교대를 둘에서 셋으로 나누는 표를 구청에 미리 올려 둔다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "기능조 조장",
+    "품계": "등재민",
+    "생업": "펌프 정비",
+    "일하는 역": "양원역",
+    "잠자는 역": "양원역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "양원역은 노선의 지상 구간에 걸려 있어 배수 펌프가 쉬는 날이 드물고, 그 펌프를 지키는 조의 조장이 매서담이다. 중랑구 양원역의 기능 가구로 올라 있는 서른세 살 남성이며, 충주 매씨다. 긴 낮 철이면 지상의 눈이 조금씩 녹아 선로 쪽 굴로 스며드는 물이 늘어, 그는 조원들의 교대를 둘에서 셋으로 나누는 표를 구청에 미리 올려 둔다.",
+    "관직": "직함 기능조 조장. 직위 기능조 조장 · 양원역. 품계 등재민. 일하는 역 양원역."
+  },
+  "values": {
+    "권위": 85,
+    "개방": -65,
+    "무력": 65,
+    "물질": 0,
+    "공동": 25,
+    "원칙": 10,
+    "공개": -35,
+    "자격": 5,
+    "분산": -65,
+    "변혁": -35
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": 10,
+    "위험": -10,
+    "과시": 15,
+    "지속": -15,
+    "지향": "유동",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0367",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 5,
+        "effective": 5
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "beacon-testimony-recording",
-        "name": {
-          "ko": "봉화 증언 기록",
-          "en": "Beacon testimony recording"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "짧은 증언으로 시간을 남긴다",
-          "en": "Brief testimony preserves time"
-        },
-        "description": {
-          "ko": "오인 호송의 밤 봉화 색을 증인으로 남기고 당사자 진술과 시간을 맞춘다. 증언의 보존은 전투 해결을 뜻하지 않는다.",
-          "en": "Beacon colors from the misidentified transport night are retained and aligned with participant accounts. Preserving testimony is not resolving combat."
-        },
-        "behavior": {
-          "ko": "교량 통과증의 접힌 자국까지 기억하고, 군사 면제 칸을 증언으로 포장하는 사신을 내려보낸다. 침묵이 길수록 증언은 짧다.",
-          "en": "He remembered even the fold marks on bridge passage permits and sent down any envoy who dressed a military exemption column up as testimony. The longer the silence, the shorter the testimony."
-        },
-        "stress": {
-          "ko": "공포. 자신의 증언이 봉쇄대의 면죄부가 되어 양군의 합의가 한쪽 군령만 남는 것.",
-          "en": "Fear. That his testimony would become the blockade's indulgence and Go Seojun's joint rule would be left with one blade only."
-        },
-        "relationship": {
-          "ko": "관계. 고서준의 교량 허가와 증언을 겹치고, 범초이의 호송 사고 진술과 시각을 맞춘다. 하윤목의 통과 원장을 증인석의 뼈대로 둔다.",
-          "en": "Relations. Overlaid testimony with Go Seojun's bridge permit and matched the hours with Beom Choi's convoy accident statement. Made Ha Yunmok's passage ledger the frame of the witness stand."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 공동실무원. 직함은 양군 관문 통행 증인. 통과 시각과 봉화 색을 같은 칠판에 적고, 면제 문장이 찍힌 증언은 하윤목의 원장 게시 전까지 봉한다.",
-          "en": "Office. Rank: sergeant. Title: gate passage witness. He wrote the passage hours and the beacon colors on one chalkboard and sealed any testimony stamped with an exemption clause until Ha Yunmok's ledger was posted."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 공동실무원. 직함은 양군 관문 통행 증인. 통과 시각과 봉화 색을 같은 칠판에 적고, 면제 문장이 찍힌 증언은 하윤목의 원장 게시 전까지 봉한다.",
-          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: gate passage witness. He wrote the passage hours and the beacon colors on one chalkboard and sealed any testimony stamped with an exemption clause until Ha Yunmok's ledger was posted."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 자신의 증언이 봉쇄대의 면죄부가 되어 양군의 합의가 한쪽 군령만 남는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That his testimony would become the blockade's indulgence and Go Seojun's joint rule would be left with one blade only."
-        },
-        "relationship": {
-          "ko": "관계. 고서준의 교량 허가와 증언을 겹치고, 범초이의 호송 사고 진술과 시각을 맞춘다. 하윤목의 통과 원장을 증인석의 뼈대로 둔다.",
-          "en": "Relations. Overlaid testimony with Go Seojun's bridge permit and matched the hours with Beom Choi's convoy accident statement. Made Ha Yunmok's passage ledger the frame of the witness stand."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "오인 호송의 밤 봉화 색을 증인으로 남기고 당사자 진술과 시간을 맞춘다. 증언의 보존은 전투 해결을 뜻하지 않는다.",
-      "en": "Beacon colors from the misidentified transport night are retained and aligned with participant accounts. Preserving testimony is not resolving combat."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,79 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b9e4-cda9-c8fc",
-    "name": "충주 매씨",
-    "crest": "clan-crests/b9e4-cda9-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 40,
-    "개방": -10,
-    "무력": 30,
-    "물질": 5,
-    "공동": 20,
-    "원칙": -10,
-    "공개": -10,
-    "자격": -10,
-    "분산": -15,
-    "변혁": -15
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": 10,
-    "위험": -10,
-    "과시": 15,
-    "지속": -15,
-    "지향": "유동",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "통과 시각·봉화 색 기록·면제 증언 봉인",
-    "소속": "아관사 양군 공동실무",
-    "품계": "공동실무원",
-    "직함": "양군 관문 통행 증인",
-    "가치관": "권위 40 | 개방 −10 | 무력 30 | 물질 5 | 공동 20 | 원칙 −10 | 공개 −10 | 자격 −10 | 분산 −15 | 변혁 −15",
-    "욕망": "갈망 0 | 독점 10 | 위험 −10 | 과시 15 | 지속 −15 | 지향 유동 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2093-02-01에 태어났다. 2126년 개막 현재 양군 관문 통행 증인 직무를 맡아 통과 시각·봉화 색 기록·면제 증언 봉인 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의1동의 통과 시각·봉화 색 기록·면제 증언 봉인 창구가 매서담의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 공동실무원. 직함은 양군 관문 통행 증인. 통과 시각·봉화 색 기록·면제 증언 봉인 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
-    "일화": "겨울의 검은 배차표가 열리자 아차산 척후가 의무호송을 적대 이동으로 오인했고 매서담은 그 밤의 봉화 색을 증인으로 남겼다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
-    "관계": "고서준의 교량 허가와 증언을 겹치고, 범초이의 호송 사고 진술과 시각을 맞춘다. 하윤목의 통과 원장을 증인석의 뼈대로 둔다.",
-    "야망": "매서담은 양군 관문 통행 증인 직무에서 통과 시각·봉화 색 기록·면제 증언 봉인 기록을 공개 인계표와 맞물리게 하려 한다.",
-    "공포": "양군 관문 통행 증인 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
-    "개입": "봉화 일지를 공개해 오인을 풀거나, 증언을 봉쇄 구실로 넘길 수 있다. 매서담의 통과 시각·봉화 색 기록·면제 증언 봉인 원장을 대조해 다음 인계의 증거를 세울 수 있다."
-  },
-  "biography": "매서담은 통과 시각·봉화 색 기록·면제 증언 봉인 기록을 손에 익힌 아관사 양군 공동실무 인물이다. 교량 통과증의 접힌 자국까지 기억하고, 군사 면제 칸을 증언으로 포장하는 사신을 내려보낸다. 침묵이 길수록 증언은 짧다.\n\n- 생업: 통과 시각·봉화 색 기록·면제 증언 봉인\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 관문 통행 증인\n**생애.** 2093-02-01에 태어났다. 2126년 개막 현재 양군 관문 통행 증인 직무를 맡아 통과 시각·봉화 색 기록·면제 증언 봉인 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의1동의 통과 시각·봉화 색 기록·면제 증언 봉인 창구가 매서담의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 공동실무원. 직함은 양군 관문 통행 증인. 통과 시각·봉화 색 기록·면제 증언 봉인 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 겨울의 검은 배차표가 열리자 아차산 척후가 의무호송을 적대 이동으로 오인했고 매서담은 그 밤의 봉화 색을 증인으로 남겼다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 고서준의 교량 허가와 증언을 겹치고, 범초이의 호송 사고 진술과 시각을 맞춘다. 하윤목의 통과 원장을 증인석의 뼈대로 둔다.\n\n**야망.** 매서담은 양군 관문 통행 증인 직무에서 통과 시각·봉화 색 기록·면제 증언 봉인 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 양군 관문 통행 증인 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 봉화 일지를 공개해 오인을 풀거나, 증언을 봉쇄 구실로 넘길 수 있다. 매서담의 통과 시각·봉화 색 기록·면제 증언 봉인 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 40 | 개방 −10 | 무력 30 | 물질 5 | 공동 20 | 원칙 −10 | 공개 −10 | 자격 −10 | 분산 −15 | 변혁 −15\n- 욕망: 갈망 0 | 독점 10 | 위험 −10 | 과시 15 | 지속 −15 | 지향 유동 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-14"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "매서담",
-        "type": "맹세",
-        "to": "고서준",
-        "basis": "고서준의 교량 허가와 증언을 겹치고"
-      },
-      {
-        "from": "매서담",
-        "type": "맹세",
-        "to": "범초이",
-        "basis": "범초이의 호송 사고 진술과 시각을 맞춘다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "범초이",
-        "type": "계약",
-        "to": "매서담",
-        "basis": "매서담의 관문 증언과 시각을 맞춘다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

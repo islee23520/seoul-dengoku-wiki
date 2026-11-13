@@ -1,502 +1,105 @@
 {
   "id": "person-0201",
   "name": "지윤재",
-  "title": "노량진 제빙기 정비사",
-  "position": "노량진 제빙기 정비사",
+  "title": "구 부대 지휘관",
+  "position": "구 부대 지휘관 · 충정로역",
   "characterId": "K200",
-  "rank": "교도",
+  "rank": "소령",
   "commonTier": "T5",
-  "occupation": "제빙기 압축 온도·부품 점검",
+  "occupation": "군 지휘",
   "gender": "여성",
   "stage": "S2",
-  "state": "S08",
-  "stateName": "중앙정보부",
-  "sourceRoute": "/world/Cast-State-08#인물-지윤재",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0201",
   "birthDate": "2091-09-11",
   "birthday": "09-11",
   "age": 35,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-08.json#/content/94",
-    "lore/characters/Cast-State-08.json#/content/96",
-    "lore/characters/Cast-State-08.json#/content/97"
-  ],
-  "familyTree": {
-    "personId": "K200",
-    "nodes": [
-      {
-        "id": "K200",
-        "personId": "K200",
-        "kind": "person",
-        "name": "지윤재",
-        "birthDate": "2091-09-11",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K200"
-          },
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지윤재-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 노량진 제빙기 정비사 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-지윤재-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0201"
-      },
-      {
-        "id": "FH-K200-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "지승수",
-        "lineage": {
-          "surname": "지",
-          "bongwan": "충주",
-          "clan": "c9c0-cda9-c8fc"
-        },
-        "birthDate": "2061-09-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2099,
-            "summary": "지승수는 신정 차량기지에서 제빙기 압축 온도·부품 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-지윤재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K200-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "지승은",
-        "lineage": {
-          "surname": "지",
-          "bongwan": "충주",
-          "clan": "c9c0-cda9-c8fc"
-        },
-        "birthDate": "2031-09-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2069,
-            "summary": "지승은은 신정 차량기지에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-지윤재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K200-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "지승연",
-        "lineage": {
-          "surname": "지",
-          "bongwan": "충주",
-          "clan": "c9c0-cda9-c8fc"
-        },
-        "birthDate": "2001-09-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "지승연은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-지윤재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K200-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현우",
-        "birthDate": "2061-09-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2099,
-            "summary": "오현우는 신정 차량기지에서 제빙기 압축 온도·부품 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-지윤재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K200-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "송현현",
-        "birthDate": "2031-09-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2069,
-            "summary": "송현현은 신정 차량기지에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-지윤재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K200-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "조현우",
-        "birthDate": "2001-09-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조현우는 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-지윤재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K200-P-01:K200:biological",
-        "from": "FH-K200-P-01",
-        "to": "K200",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K200-P-02:FH-K200-P-01:biological",
-        "from": "FH-K200-P-02",
-        "to": "FH-K200-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K200-P-03:FH-K200-P-02:biological",
-        "from": "FH-K200-P-03",
-        "to": "FH-K200-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K200-M-01:K200:biological",
-        "from": "FH-K200-M-01",
-        "to": "K200",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K200-M-02:FH-K200-M-01:biological",
-        "from": "FH-K200-M-02",
-        "to": "FH-K200-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K200-M-03:FH-K200-M-02:biological",
-        "from": "FH-K200-M-03",
-        "to": "FH-K200-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-지윤재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c9c0-cda9-c8fc",
+    "name": "충주 지씨",
+    "crest": "clan-crests/c9c0-cda9-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "소령 지윤재는 군 가구에서 났고, 서대문구 충현동 충정로역에 기재돼 있다. 서대문구 부대의 지휘관으로, 알렉산더 밀러 국회의원이 추천하고 국방부가 임명장을 썼다. 마포와 종로 사이 길목인 충정로와 신촌의 출입구를 지키는 것이 부대의 일이고, 작전 명령서에 찍히는 도장은 그녀의 것 하나뿐이다. 징집병 가운데 기능 가구 아이들이 대체 복무로 빠지는 날이 많아, 그녀는 출입구 당번표를 이레마다 새로 짠다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "구 부대 지휘관",
+    "품계": "소령",
+    "생업": "군 지휘",
+    "일하는 역": "충정로역",
+    "잠자는 역": "충정로역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "소령 지윤재는 군 가구에서 났고, 서대문구 충현동 충정로역에 기재돼 있다. 서대문구 부대의 지휘관으로, 알렉산더 밀러 국회의원이 추천하고 국방부가 임명장을 썼다. 마포와 종로 사이 길목인 충정로와 신촌의 출입구를 지키는 것이 부대의 일이고, 작전 명령서에 찍히는 도장은 그녀의 것 하나뿐이다. 징집병 가운데 기능 가구 아이들이 대체 복무로 빠지는 날이 많아, 그녀는 출입구 당번표를 이레마다 새로 짠다.",
+    "관직": "직함 구 부대 지휘관. 직위 구 부대 지휘관 · 충정로역. 품계 소령. 일하는 역 충정로역."
+  },
+  "values": {
+    "권위": 45,
+    "개방": -10,
+    "무력": 10,
+    "물질": 70,
+    "공동": -15,
+    "원칙": -10,
+    "공개": -10,
+    "자격": 40,
+    "분산": -25,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": 5,
+    "독점": 35,
+    "위험": -10,
+    "과시": 20,
+    "지속": 20,
+    "지향": "동성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0201",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
+      "diplomacy": {
+        "base": 4,
+        "effective": 4
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
+      "martial": {
         "base": 11,
         "effective": 11
       },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "stewardship": {
+        "base": 4,
+        "effective": 4
+      },
+      "intrigue": {
+        "base": 5,
+        "effective": 5
       },
       "learning": {
-        "base": 12,
-        "effective": 12
+        "base": 4,
+        "effective": 4
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 10,
+        "effective": 10
       }
     },
-    "skills": [
-      {
-        "id": "ice-machine-inspection",
-        "name": {
-          "ko": "제빙기 점검",
-          "en": "Ice machine inspection"
-        },
-        "rating": 70
-      },
-      {
-        "id": "seal-standard-review",
-        "name": {
-          "ko": "밀봉 규격 검수",
-          "en": "Seal standard review"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k200-disposition",
-        "name": {
-          "ko": "도장 없는 부품 거부",
-          "en": "Rejecting unmarked parts"
-        },
-        "description": {
-          "ko": "압축기 진동으로 제빙 주기를 읽고, 공구를 얼음 위에 두는 조수를 교대에서 뺀다. 말수는 적고 시운전 소음으로 대답한다.",
-          "en": "He read ice-making cycles from the compressor's vibration and struck from the rotation any assistant who left tools on the ice. Few of words, he answered with trial-run noise."
-        },
-        "behavior": {
-          "ko": "관직. 품계 교도. 직함은 노량진 제빙기 정비사. 교대마다 압축 온도와 벽돌 무게를 칠판에 쓰고, 상회 도장 없는 부품은 달지 않는다.",
-          "en": "Office. Rank: lay instructor. Title: Noryangjin ice-machine mechanic. Each rotation he wrote compression temperature and brick weight on the chalkboard and fitted no part without the merchants' council stamp."
-        },
-        "stress": {
-          "ko": "공포. 한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.",
-          "en": "Fear. That Han River intake and ice-making power would cut at once and the ice ledger would become scrap paper."
-        },
-        "relationship": {
-          "ko": "관계. 서나연의 벽돌 각인을 현장에서 받치는 사제이고, 나루희의 발전에 제빙 전력을 맞추며, 강민서의 밀봉 규격을 검수한다.",
-          "en": "Relations. An apprentice backing Seo Nayeon's brick engravings in the field, he matched ice-making power to Na Ruhui's generation and inspected Gang Minseo's sealing standards."
-        },
-        "effects": []
-      },
-      {
-        "id": "k200-choice",
-        "name": {
-          "ko": "공구 보관 규율",
-          "en": "Tool storage discipline"
-        },
-        "description": {
-          "ko": "일화. 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 노량진 제빙기 정비사 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In 2125 he turned back a box of defective parts just before release. By this deed the signature of the Noryangjin ice-machine mechanic post rose into the ledger."
-        },
-        "behavior": {
-          "ko": "관계. 서나연의 벽돌 각인을 현장에서 받치는 사제이고, 나루희의 발전에 제빙 전력을 맞추며, 강민서의 밀봉 규격을 검수한다.",
-          "en": "Relations. An apprentice backing Seo Nayeon's brick engravings in the field, he matched ice-making power to Na Ruhui's generation and inspected Gang Minseo's sealing standards."
-        },
-        "stress": {
-          "ko": "공포. 한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.",
-          "en": "Fear. That Han River intake and ice-making power would cut at once and the ice ledger would become scrap paper."
-        },
-        "relationship": {
-          "ko": "관계. 서나연의 벽돌 각인을 현장에서 받치는 사제이고, 나루희의 발전에 제빙 전력을 맞추며, 강민서의 밀봉 규격을 검수한다.",
-          "en": "Relations. An apprentice backing Seo Nayeon's brick engravings in the field, he matched ice-making power to Na Ruhui's generation and inspected Gang Minseo's sealing standards."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "압축 진동과 온도를 확인하고 불량 부품을 돌려보낸다. 밀봉·출력을 맞추는 반복 실무가 근거이며 제빙기 발명 경력은 없다.",
-      "en": "Checks compression vibration and temperature and returns faulty parts. Repeated seal and output coordination is supported, not ice-machine invention."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -534,85 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c9c0-cda9-c8fc",
-    "name": "충주 지씨",
-    "crest": "clan-crests/c9c0-cda9-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 0,
-    "개방": 45,
-    "무력": -25,
-    "물질": 75,
-    "공동": -20,
-    "원칙": -30,
-    "공개": 15,
-    "자격": 25,
-    "분산": 25,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 5,
-    "독점": 35,
-    "위험": -10,
-    "과시": 20,
-    "지속": 20,
-    "지향": "동성",
-    "결합": "다자"
-  },
-  "fields": {
-    "소속": "중앙정보부",
-    "품계": "교도",
-    "생업": "제빙기 압축 온도·부품 점검",
-    "직함": "노량진 제빙기 정비사",
-    "가치관": "권위 0 | 개방 45 | 무력 −25 | 물질 75 | 공동 −20 | 원칙 −30 | 공개 15 | 자격 25 | 분산 25 | 변혁 5",
-    "욕망": "갈망 5 | 독점 35 | 위험 −10 | 과시 20 | 지속 20 | 지향 동성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 노량진 제빙기 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n- 지윤재는 노량진1동에서 제빙기 압축 온도·부품 점검 업무를 맡는다.",
-    "관직": "품계 교도. 직함은 노량진 제빙기 정비사. 교대마다 압축 온도와 벽돌 무게를 칠판에 쓰고, 상회 도장 없는 부품은 달지 않는다.",
-    "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 노량진 제빙기 정비사 자리의 서명이 장부에 올랐다.",
-    "관계": "서나연의 벽돌 각인을 현장에서 받치는 사제이고, 나루희의 발전에 제빙 전력을 맞추며, 강민서의 밀봉 규격을 검수한다.",
-    "야망": "제빙기와 냉동 압축 주기를 공개 정비표로 묶어 전력이 흔들려도 하루치 얼음이 남게 한다.",
-    "공포": "한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.",
-    "개입": "수동 제빙 도구를 들여오거나, 도장 없는 개조의 발주자를 밝혀 정비사를 흔들 수 있다."
-  },
-  "biography": "압축기 진동으로 제빙 주기를 읽고, 공구를 얼음 위에 두는 조수를 교대에서 뺀다. 말수는 적고 시운전 소음으로 대답한다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 제빙기 압축 온도·부품 점검\n- 직함: 노량진 제빙기 정비사\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 노량진 제빙기 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n- 지윤재는 노량진1동에서 제빙기 압축 온도·부품 점검 업무를 맡는다.\n\n**관직.** 품계 교도. 직함은 노량진 제빙기 정비사. 교대마다 압축 온도와 벽돌 무게를 칠판에 쓰고, 상회 도장 없는 부품은 달지 않는다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 노량진 제빙기 정비사 자리의 서명이 장부에 올랐다.\n\n**관계.** 서나연의 벽돌 각인을 현장에서 받치는 사제이고, 나루희의 발전에 제빙 전력을 맞추며, 강민서의 밀봉 규격을 검수한다.\n\n**야망.** 제빙기와 냉동 압축 주기를 공개 정비표로 묶어 전력이 흔들려도 하루치 얼음이 남게 한다.\n\n**공포.** 한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.\n\n**개입.** 수동 제빙 도구를 들여오거나, 도장 없는 개조의 발주자를 밝혀 정비사를 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 45 | 무력 −25 | 물질 75 | 공동 −20 | 원칙 −30 | 공개 15 | 자격 25 | 분산 25 | 변혁 5\n- 욕망: 갈망 5 | 독점 35 | 위험 −10 | 과시 20 | 지속 20 | 지향 동성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-08"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "지윤재",
-        "type": "사제",
-        "to": "서나연",
-        "basis": "서나연의 벽돌 각인을 현장에서 받치는 사제이고"
-      },
-      {
-        "from": "지윤재",
-        "type": "사제",
-        "to": "나루희",
-        "basis": "나루희의 발전에 제빙 전력을 맞추며"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "송도현",
-        "type": "계약",
-        "to": "지윤재",
-        "basis": "송도현은 접수한 호스의 관로 사용 위치를 지윤재에게 알린다. 지윤재는 제빙 설비의 연결과 부품 도장을 확인해 그 호스가 점검 없이 제빙기에 달리지 않게 한다."
-      },
-      {
-        "from": "지마루",
-        "type": "지휘",
-        "to": "지윤재",
-        "basis": "지윤재의 제빙 시운전에 출력을 맞추며"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

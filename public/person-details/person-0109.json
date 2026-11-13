@@ -1,397 +1,121 @@
 {
   "id": "person-0109",
   "name": "종나솔",
-  "title": "뚝섬-신정 급수호송 열차 승무원",
-  "position": "뚝섬-신정 급수호송 열차 승무원",
+  "title": "돌봄이",
+  "position": "돌봄이 · 잠실역",
   "characterId": "K108",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "급수호송 승무·봉인 확인",
+  "rank": "미세례자",
+  "commonTier": "T5",
+  "occupation": "세례자 돌봄",
   "gender": "여성",
   "stage": "S3",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-종나솔",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0109",
   "birthDate": "2080-06-06",
   "birthday": "06-06",
   "age": 46,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/224",
-    "lore/characters/Cast-State-04.json#/content/225",
-    "lore/characters/Cast-State-04.json#/content/227",
-    "lore/characters/Cast-State-04.json#/content/229",
-    "lore/characters/Cast-State-04.json#/content/231"
-  ],
-  "familyTree": {
-    "personId": "K108",
-    "nodes": [
-      {
-        "id": "K108",
-        "personId": "K108",
-        "kind": "person",
-        "name": "종나솔",
-        "birthDate": "2080-06-06",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K108"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-종나솔-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 뚝섬-신정 급수호송 열차 승무원 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-종나솔-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0109"
-      },
-      {
-        "id": "FH-K108-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "종승호",
-        "lineage": {
-          "surname": "종",
-          "bongwan": "영암",
-          "clan": "c885-c601-c554"
-        },
-        "birthDate": "2050-06-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-종나솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2088,
-            "summary": "종승호는 영등포 정수 당직에서 급수호송 승무·봉인 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-종나솔-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K108-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "종승민",
-        "lineage": {
-          "surname": "종",
-          "bongwan": "영암",
-          "clan": "c885-c601-c554"
-        },
-        "birthDate": "2020-06-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-종나솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "종승민은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-종나솔-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K108-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박승솔",
-        "birthDate": "2050-06-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-종나솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2088,
-            "summary": "박승솔은 영등포 정수 당직에서 급수호송 승무·봉인 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-종나솔-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K108-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이승나",
-        "birthDate": "2020-06-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-종나솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이승나는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-종나솔-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K108-P-01:K108:biological",
-        "from": "FH-K108-P-01",
-        "to": "K108",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-종나솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K108-P-02:FH-K108-P-01:biological",
-        "from": "FH-K108-P-02",
-        "to": "FH-K108-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-종나솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K108-M-01:K108:biological",
-        "from": "FH-K108-M-01",
-        "to": "K108",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-종나솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K108-M-02:FH-K108-M-01:biological",
-        "from": "FH-K108-M-02",
-        "to": "FH-K108-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-종나솔-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c885-c601-c554",
+    "name": "영암 종씨",
+    "crest": "clan-crests/c885-c601-c554.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "종나솔은 잠실 교주의 집에서 앓는 세례자를 돌보는 돌봄이다. 마흔여섯이 되도록 세례를 받지 않아, 부위 자리를 꿰매 둔 얇은 모직 옷을 입고 교주의 집 정비대 곁의 잠자리를 지킨다. 세례 날을 지난 사람이 열에 들뜨면, 정비공의 집안이 정비 밥을 떠 먹인 뒤에도 그는 밤새 곁에 남아 이마의 열을 짚고 그 수를 적어 둔다. 열이 내린 사람이 일어나 앉으면, 그는 적어 둔 수를 그 사람의 정비공에게 넘기고 다음 잠자리로 간다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "돌봄이",
+    "품계": "미세례자",
+    "생업": "세례자 돌봄",
+    "일하는 역": "잠실역",
+    "잠자는 역": "잠실역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 0
+  },
+  "sections": {
+    "생애": "종나솔은 잠실 교주의 집에서 앓는 세례자를 돌보는 돌봄이다. 마흔여섯이 되도록 세례를 받지 않아, 부위 자리를 꿰매 둔 얇은 모직 옷을 입고 교주의 집 정비대 곁의 잠자리를 지킨다. 세례 날을 지난 사람이 열에 들뜨면, 정비공의 집안이 정비 밥을 떠 먹인 뒤에도 그는 밤새 곁에 남아 이마의 열을 짚고 그 수를 적어 둔다. 열이 내린 사람이 일어나 앉으면, 그는 적어 둔 수를 그 사람의 정비공에게 넘기고 다음 잠자리로 간다.",
+    "관직": "직함 돌봄이. 직위 돌봄이 · 잠실역. 품계 미세례자. 일하는 역 잠실역."
+  },
+  "values": {
+    "권위": 15,
+    "개방": -10,
+    "무력": -15,
+    "물질": -25,
+    "공동": 55,
+    "원칙": 0,
+    "공개": -60,
+    "자격": 5,
+    "분산": -5,
+    "변혁": 40
+  },
+  "desire": {
+    "갈망": 35,
+    "독점": -25,
+    "위험": 10,
+    "과시": 5,
+    "지속": 35,
+    "지향": "동성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0109",
+    "role": "single",
+    "personFaith": "unbaptised",
+    "houseFaith": "unbaptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "종나솔",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K1018",
+    "name": "고예진",
+    "courtId": "court:K1018",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
       },
-      "strategy": {
+      "martial": {
+        "base": 3,
+        "effective": 3
+      },
+      "stewardship": {
+        "base": 6,
+        "effective": 6
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 10,
+        "effective": 10
       },
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
       }
     },
-    "skills": [
-      {
-        "id": "leak",
-        "name": {
-          "ko": "수압 시험 누수 점검",
-          "en": "Pressure-test leak inspection"
-        },
-        "rating": 55
-      },
-      {
-        "id": "seal",
-        "name": {
-          "ko": "봉인·사본 대조",
-          "en": "Seal and copy comparison"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "no-verbal-unloading-orders",
-        "name": {
-          "ko": "구두 하차 거부",
-          "en": "No Verbal Unloading Orders"
-        },
-        "description": {
-          "ko": "종나솔은 장교의 동행이나 암호패가 있어도 구두 하차 명령만으로 절차를 바꾸지 않는다.",
-          "en": "Jong Nasol does not alter unloading procedures on verbal orders alone, even with an accompanying officer or code token."
-        },
-        "behavior": {
-          "ko": "출입 명부와 펌프 점검 봉인을 같은 시각에 찍고 출입문 진동이 바뀌면 하차 벨을 울리지 않는다.",
-          "en": "They timestamp access registers and pump-inspection seals together and withhold the unloading bell when door vibration changes."
-        },
-        "stress": {
-          "ko": "잠근 문이 납치 증거로 해석될 우려가 생기면 구두 설명보다 명부와 봉인 시각을 더 의지할 수 있다.",
-          "en": "If a locked door risks being construed as kidnapping evidence, they may rely more on registers and seal times than verbal explanations."
-        },
-        "relationship": {
-          "ko": "장교의 요구에도 하차 조건을 지키고 변석훈과는 전력 일지의 시각을 맞추는 확인 관계를 중시할 수 있다.",
-          "en": "They may uphold unloading conditions despite officers' demands and value timestamp verification with Byeon Seokhun's power log."
-        },
-        "effects": []
-      },
-      {
-        "id": "read-blank-fields-aloud",
-        "name": {
-          "ko": "빈칸 소리 내어 읽기",
-          "en": "Read Blank Fields Aloud"
-        },
-        "description": {
-          "ko": "종나솔은 과묵하지만 명부의 빈칸을 조용히 넘기지 않는 확인 성향을 보인다.",
-          "en": "Jong Nasol is taciturn but does not silently pass over blank register entries."
-        },
-        "behavior": {
-          "ko": "명부 빈칸을 소리 내어 읽고 자신이 본 야간 점검 동선을 다른 일지의 시각과 맞춘다.",
-          "en": "They read blank register fields aloud and compare the night-inspection route they witnessed with other log times."
-        },
-        "stress": {
-          "ko": "실종 구간의 빈 좌석이 보호군의 구원 이야기로 채워질 우려가 있으면 관찰한 사실과 미확인 부분을 더 분명히 나눌 수 있다.",
-          "en": "If an empty seat in the disappearance section risks being filled by a protection-force rescue story, they may distinguish observations from unknowns more explicitly."
-        },
-        "relationship": {
-          "ko": "고늘결의 반대편 목격과 변석훈의 일지를 대조하되 협력자에게 빈칸을 추측으로 메우지 않길 요구할 수 있다.",
-          "en": "They may compare Go Neulgyeol's opposite-door observations with Byeon Seokhun's log while asking collaborators not to fill gaps with speculation."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "누수 이음매 세 곳을 찾고 출입 명부와 봉인 시각을 맞춘다. 목격과 확인이 중심이며 실종의 원인을 알고 있었다고 단정하지 않는다.",
-      "en": "He found three leaking joints and synchronizes manifests and seals. Observation and checks are central; knowledge of the disappearance’s cause is not assumed."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -429,78 +153,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-43110-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K108",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:kingdom-s04",
-      "personalLieges": [],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c885-c601-c554",
-    "name": "영암 종씨",
-    "crest": "clan-crests/c885-c601-c554.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -10,
-    "개방": 5,
-    "무력": -25,
-    "물질": 25,
-    "공동": 35,
-    "원칙": 10,
-    "공개": -15,
-    "자격": 40,
-    "분산": 25,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 35,
-    "독점": -25,
-    "위험": 10,
-    "과시": 5,
-    "지속": 35,
-    "지향": "동성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "급수호송 승무·봉인 확인",
-    "품계": "교사",
-    "직함": "뚝섬-신정 급수호송 열차 승무원",
-    "가치관": "권위 −10 | 개방 5 | 무력 −25 | 물질 25 | 공동 35 | 원칙 10 | 공개 −15 | 자격 40 | 분산 25 | 변혁 −5",
-    "욕망": "갈망 35 | 독점 −25 | 위험 10 | 과시 5 | 지속 35 | 지향 동성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 종나솔은 영등포 정수 당직에서 자랐다. 종나솔은 탁수 밤의 밸브 서명으로 뚝섬-신정 급수호송 열차 승무원 자리를 맡았다.\n- 종나솔의 뚝섬-신정 급수호송 열차 승무원 업무는 성수1가2동과 연결된다.\n- 종나솔의 신정·뚝섬 급수호송 기록 대조 업무는 신정3동과 연결된다.",
-    "관직": "품계 교사. 직함은 뚝섬-신정 급수호송 열차 승무원. 출입 명부와 펌프 점검 봉인을 같은 시각에 찍고, 장교 동행의 구두 하차는 수비대 암호패가 있어도 거부한다.",
-    "일화": "2125년 종나솔은 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 뚝섬-신정 급수호송 열차 승무원 자리의 서명이 장부에 올랐다.",
-    "관계": "여의도의 같은 열차에서 반대편 문을 지켰고, 임하준의 야간 점검 동선을 마지막까지 봤으며, 변석훈의 펌프실 전력 일지와 시각을 맞춘다.",
-    "야망": "총관 실종 구간의 반대편 목격을 당회 원장에 올려, 보호군이 구원 서사로 빈 좌석을 채우지 못하게 한다.",
-    "공포": "종나솔은 자신이 잠근 문이 납치의 증거로 읽히고, 군자 유치선이 암사 대기선으로 바뀌는 상황을 두려워한다.",
-    "개입": "반대편 승무 일지를 맞춰 실종 구간을 좁히거나, 문 잠금이 안에서 열린 증거를 찾아 그의 증언을 흔들 수 있다."
-  },
-  "biography": "펌프실 쪽 출입문의 진동이 바뀌면 하차 벨을 울리지 않고, 빈 공구 자리는 사람 실종으로 본다. 과묵하되 명부 빈칸은 소리 내어 읽는다.\n\n- 소속: 명부교회\n- 생업: 급수호송 승무·봉인 확인\n- 품계: 교사\n- 직함: 뚝섬-신정 급수호송 열차 승무원\n**생애.** 2126년 세대. 종나솔은 영등포 정수 당직에서 자랐다. 종나솔은 탁수 밤의 밸브 서명으로 뚝섬-신정 급수호송 열차 승무원 자리를 맡았다.\n- 종나솔의 뚝섬-신정 급수호송 열차 승무원 업무는 성수1가2동과 연결된다.\n- 종나솔의 신정·뚝섬 급수호송 기록 대조 업무는 신정3동과 연결된다.\n\n**관직.** 품계 교사. 직함은 뚝섬-신정 급수호송 열차 승무원. 출입 명부와 펌프 점검 봉인을 같은 시각에 찍고, 장교 동행의 구두 하차는 수비대 암호패가 있어도 거부한다.\n\n**일화.** 2125년 종나솔은 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 뚝섬-신정 급수호송 열차 승무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 여의도의 같은 열차에서 반대편 문을 지켰고, 임하준의 야간 점검 동선을 마지막까지 봤으며, 변석훈의 펌프실 전력 일지와 시각을 맞춘다.\n\n**야망.** 총관 실종 구간의 반대편 목격을 당회 원장에 올려, 보호군이 구원 서사로 빈 좌석을 채우지 못하게 한다.\n\n**공포.** 종나솔은 자신이 잠근 문이 납치의 증거로 읽히고, 군자 유치선이 암사 대기선으로 바뀌는 상황을 두려워한다.\n\n**개입.** 반대편 승무 일지를 맞춰 실종 구간을 좁히거나, 문 잠금이 안에서 열린 증거를 찾아 그의 증언을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 5 | 무력 −25 | 물질 25 | 공동 35 | 원칙 10 | 공개 −15 | 자격 40 | 분산 25 | 변혁 −5\n- 욕망: 갈망 35 | 독점 −25 | 위험 10 | 과시 5 | 지속 35 | 지향 동성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "종나솔",
-        "type": "계약",
-        "to": "임하준",
-        "basis": "임하준의 야간 점검 동선을 마지막까지 봤으며"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

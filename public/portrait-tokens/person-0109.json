@@ -3,26 +3,27 @@
   "personId": "person-0109",
   "characterId": "K108",
   "name": "종나솔",
-  "stateId": "S04",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "뚝섬-신정 급수호송 열차 승무원"
+    "role": "돌봄이 · 잠실역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "long hair tied in a low ponytail",
-    "upper": "mustard ochre short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "mustard ochre short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "몸에 붙게 재단한 얇은 모직 겉옷, 겹쳐 입지 않음, 부위 자리의 정비 틈을 꿰매어 둠, 깃에 땀 없음, 곁집 띠 없음",
+    "outfit": "몸에 붙게 재단한 얇은 모직 겉옷, 겹쳐 입지 않음, 부위 자리의 정비 틈을 꿰매어 둠, 깃에 땀 없음, 곁집 띠 없음",
     "palette": [
-      "mustard ochre",
-      "dove grey"
+      "dove grey",
+      "charcoal",
+      "cream"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "dove grey heavy twill trousers with knee patches",
-    "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "small hand lamp clipped to a leather belt"
+    "lower": "close-cut thin wool trousers",
+    "footwear": "soft leather indoor shoes",
+    "accessories": "wrapped bundle of clean cloth strips"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -173,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "fur-lined ear-flap cap",
+        "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "mustard ochre short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "몸에 붙게 재단한 얇은 모직 겉옷, 겹쳐 입지 않음, 부위 자리의 정비 틈을 꿰매어 둠, 깃에 땀 없음, 곁집 띠 없음",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "dove grey heavy twill trousers with knee patches",
+        "value": "close-cut thin wool trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "thick-soled leather winter boots with wool socks",
+        "value": "soft leather indoor shoes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "closed turn-down collar",
+        "value": "plain buttoned collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "small hand lamp clipped to a leather belt",
+        "value": "wrapped bundle of clean cloth strips",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
-        "derived": true
-      },
-      "shape": {
-        "value": "compact cylindrical lamp",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull steel and dark brown leather",
+        "value": "off-white",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "steel, leather",
+        "value": "cotton cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "clipped at the belt",
+        "value": "tucked into a waist sash",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "soft rolled bundle",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 종나솔, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: small closed mouth; muted red lips. long hair tied in a low ponytail; black hair; long length. build: broad-shouldered; skin: medium warm beige. headwear: fur-lined ear-flap cap; upper garment: mustard ochre short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: mustard ochre, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 종나솔, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: small closed mouth; muted red lips. long hair tied in a low ponytail; black hair; long length. build: broad-shouldered; skin: medium warm beige. upper garment: 몸에 붙게 재단한 얇은 모직 겉옷, 겹쳐 입지 않음, 부위 자리의 정비 틈을 꿰매어 둠, 깃에 땀 없음, 곁집 띠 없음; neckline: plain buttoned collar. accessories: wrapped bundle of clean cloth strips; worn as tucked into a waist sash. color palette: dove grey, charcoal, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 종나솔, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: small closed mouth; muted red lips. long hair tied in a low ponytail; black hair; long length. build: broad-shouldered; skin: medium warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: mustard ochre short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: dove grey heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: mustard ochre, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 종나솔, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: small closed mouth; muted red lips. long hair tied in a low ponytail; black hair; long length. build: broad-shouldered; skin: medium warm beige; average adult female height. upper garment: 몸에 붙게 재단한 얇은 모직 겉옷, 겹쳐 입지 않음, 부위 자리의 정비 틈을 꿰매어 둠, 깃에 땀 없음, 곁집 띠 없음; neckline: plain buttoned collar; lower garment: close-cut thin wool trousers; footwear: soft leather indoor shoes. accessories: wrapped bundle of clean cloth strips; worn as tucked into a waist sash. color palette: dove grey, charcoal, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 종나솔, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: small closed mouth; muted red lips. long hair tied in a low ponytail; black hair; long length. build: broad-shouldered; skin: medium warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: mustard ochre short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: dove grey heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: mustard ochre, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 종나솔, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: small closed mouth; muted red lips. long hair tied in a low ponytail; black hair; long length. build: broad-shouldered; skin: medium warm beige; average adult female height. upper garment: 몸에 붙게 재단한 얇은 모직 겉옷, 겹쳐 입지 않음, 부위 자리의 정비 틈을 꿰매어 둠, 깃에 땀 없음, 곁집 띠 없음; neckline: plain buttoned collar; lower garment: close-cut thin wool trousers; footwear: soft leather indoor shoes. accessories: wrapped bundle of clean cloth strips; worn as tucked into a waist sash. color palette: dove grey, charcoal, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 종나솔, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: small closed mouth; muted red lips. long hair tied in a low ponytail; black hair; long length. build: broad-shouldered; skin: medium warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: mustard ochre short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: dove grey heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: mustard ochre, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 종나솔, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: small closed mouth; muted red lips. long hair tied in a low ponytail; black hair; long length. build: broad-shouldered; skin: medium warm beige; average adult female height. upper garment: 몸에 붙게 재단한 얇은 모직 겉옷, 겹쳐 입지 않음, 부위 자리의 정비 틈을 꿰매어 둠, 깃에 땀 없음, 곁집 띠 없음; neckline: plain buttoned collar; lower garment: close-cut thin wool trousers; footwear: soft leather indoor shoes. accessories: wrapped bundle of clean cloth strips; worn as tucked into a waist sash. color palette: dove grey, charcoal, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 종나솔, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: small closed mouth; muted red lips. long hair tied in a low ponytail; black hair; long length. build: broad-shouldered; skin: medium warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: mustard ochre short wool battle-dress style jacket with buttoned cuffs, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: dove grey heavy twill trousers with knee patches; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: mustard ochre, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 종나솔, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: small closed mouth; muted red lips. long hair tied in a low ponytail; black hair; long length. build: broad-shouldered; skin: medium warm beige; average adult female height. upper garment: 몸에 붙게 재단한 얇은 모직 겉옷, 겹쳐 입지 않음, 부위 자리의 정비 틈을 꿰매어 둠, 깃에 땀 없음, 곁집 띠 없음; neckline: plain buttoned collar; lower garment: close-cut thin wool trousers; footwear: soft leather indoor shoes. accessories: wrapped bundle of clean cloth strips; worn as tucked into a waist sash. color palette: dove grey, charcoal, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

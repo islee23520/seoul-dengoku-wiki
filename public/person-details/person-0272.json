@@ -1,379 +1,205 @@
 {
   "id": "person-0272",
   "name": "이홍원",
-  "title": "회장",
-  "position": "성하그룹 회장, 이씨 가문 세습",
+  "title": "강남 곁집 어른",
+  "position": "강남 곁집 어른 · 수서역",
   "characterId": "K271",
-  "rank": "회장",
-  "commonTier": "T1",
-  "occupation": "성하전자 원로",
+  "rank": "곁집 어른",
+  "commonTier": "T2",
+  "occupation": "곁집 통솔",
   "gender": "남성",
   "stage": "주요",
-  "state": "S11",
-  "stateName": "성하그룹",
-  "sourceRoute": "/world/Cast-State-11#인물-이홍원",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0272",
   "birthDate": "2067-05-03",
   "birthday": "05-03",
   "age": 59,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-11.json#/content/1",
-    "lore/characters/Cast-State-11.json#/content/2",
-    "lore/characters/Core-Characters.json#/content/99",
-    "lore/characters/Core-Characters.json#/content/100",
-    "lore/characters/Core-Characters.json#/content/101",
-    "lore/characters/Core-Characters.json#/content/102",
-    "lore/chronology/Century-Annals.json#/content/425"
-  ],
-  "familyTree": {
-    "personId": "K271",
-    "nodes": [
-      {
-        "id": "K271",
-        "personId": "K271",
-        "kind": "person",
-        "name": "이홍원",
-        "birthDate": "2067-05-03",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K271"
-          },
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-이홍원-p1"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 강남역 성하전자 전산실. 신정차륜가의 시험 차륜은 유세진의 것이다. 이홍원이 회장이 된 것은 강남역 차단문과 강남역 당직함을 끊기지 않게 지킨 뒤였다. 성하그룹의 수도는 강남역이고 회장직은 이씨 가문이 세습한다. 승계 시험이 열리면 강남역 사택이 표를 던진다. 성전총회를 국가 신앙으로 후원한다. 성하전자의 부품·노동·기록 연결은 서초4동 본사와 역삼1동 작업 생활권의 서울 내부 계약·당직 업무로 잇는다. 배우진의 호위는 이 차단문을 빌리지만 차단문은 이홍원의 것이다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-이홍원-p1"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0272"
-      },
-      {
-        "id": "FH-K271-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이현빈",
-        "lineage": {
-          "surname": "이",
-          "bongwan": "경주",
-          "clan": "c774-acbd-c8fc-674e"
-        },
-        "birthDate": "2037-05-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-이홍원-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "이현빈은 생활권의 공동 거처에서 성하전자 원로 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-이홍원-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K271-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이현솔",
-        "lineage": {
-          "surname": "이",
-          "bongwan": "경주",
-          "clan": "c774-acbd-c8fc-674e"
-        },
-        "birthDate": "2007-05-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-이홍원-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이현솔은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-이홍원-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K271-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현빈",
-        "birthDate": "2037-05-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-이홍원-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "임현빈은 생활권의 공동 거처에서 성하전자 원로 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-이홍원-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K271-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현란",
-        "birthDate": "2007-05-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-이홍원-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오현란은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-이홍원-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K271-P-01:K271:biological",
-        "from": "FH-K271-P-01",
-        "to": "K271",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-이홍원-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K271-P-02:FH-K271-P-01:biological",
-        "from": "FH-K271-P-02",
-        "to": "FH-K271-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-이홍원-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K271-M-01:K271:biological",
-        "from": "FH-K271-M-01",
-        "to": "K271",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-이홍원-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K271-M-02:FH-K271-M-01:biological",
-        "from": "FH-K271-M-02",
-        "to": "FH-K271-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-이홍원-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c774-acbd-c8fc-674e",
+    "name": "경주 이씨",
+    "crest": "clan-crests/c774-acbd-c8fc-674e.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "이홍원은 강남 곁집의 어른이자, 스물두 살 곁집장 오경재를 마주 보는 맞수다. 고예진이 매뉴얼을 읽던 다섯 해 동안 수서 옛 차량기지 둘레의 대피소들이 그 정비대에 먹을 것과 고물을 댔는데, 그는 그때 고물을 지고 나르던 사람 가운데 하나였다. 부위는 둘로 곁집장과 같지만, 수서 창고의 쇠가 어디에 몇 개 있는지는 곁집장보다 그가 더 잘 안다. 강남 사람들은 두 사람의 다툼을 스물두 살의 핏줄과 쉰아홉 살의 쇠라고 부른다. 같은 곁집 어른인 최도윤과는 강남의 깊은 층을 남에게 내주지 않기로 맹세한 사이다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "강남 곁집 어른",
+    "품계": "곁집 어른",
+    "생업": "곁집 통솔",
+    "일하는 역": "수서역",
+    "잠자는 역": "수서역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "이홍원은 강남 곁집의 어른이자, 스물두 살 곁집장 오경재를 마주 보는 맞수다. 고예진이 매뉴얼을 읽던 다섯 해 동안 수서 옛 차량기지 둘레의 대피소들이 그 정비대에 먹을 것과 고물을 댔는데, 그는 그때 고물을 지고 나르던 사람 가운데 하나였다. 부위는 둘로 곁집장과 같지만, 수서 창고의 쇠가 어디에 몇 개 있는지는 곁집장보다 그가 더 잘 안다. 강남 사람들은 두 사람의 다툼을 스물두 살의 핏줄과 쉰아홉 살의 쇠라고 부른다. 같은 곁집 어른인 최도윤과는 강남의 깊은 층을 남에게 내주지 않기로 맹세한 사이다.",
+    "관직": "직함 강남 곁집 어른. 직위 강남 곁집 어른 · 수서역. 품계 곁집 어른. 일하는 역 수서역."
+  },
+  "values": {
+    "권위": 35,
+    "개방": -35,
+    "무력": 0,
+    "물질": -20,
+    "공동": 40,
+    "원칙": 0,
+    "공개": -55,
+    "자격": 45,
+    "분산": -20,
+    "변혁": 15
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": 20,
+    "위험": -20,
+    "과시": -30,
+    "지속": 60,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0272",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "이홍원",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "이홍원",
+        "type": "경쟁",
+        "to": "오경재",
+        "basis": "강남 곁집장 자리를 두고 맞선다. 오경재는 핏줄로, 이홍원은 수서 창고의 쇠와 오랜 섬김으로 선다"
+      },
+      {
+        "from": "이홍원",
+        "type": "맹세",
+        "to": "최도윤",
+        "basis": "강남의 깊은 층을 남에게 내주지 않기로 최도윤과 함께 맹세했다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "박진솔",
+        "type": "빚",
+        "to": "이홍원",
+        "basis": "2122년 겨울 이홍원이 수서 대피소에 열어 준 비상 몫을 아직 갚지 못한 빚"
+      },
+      {
+        "from": "오경재",
+        "type": "경쟁",
+        "to": "이홍원",
+        "basis": "강남 곁집장 자리를 두고 이홍원과 맞선다. 스물두 살의 핏줄과 쉰아홉 살의 쇠의 다툼이다"
+      },
+      {
+        "from": "정가온",
+        "type": "원한",
+        "to": "이홍원",
+        "basis": "쇠가 피보다 앞서야 한다는 이홍원의 말에 맞춤 순번이 뒤로 밀린 원한"
+      },
+      {
+        "from": "최도윤",
+        "type": "맹세",
+        "to": "이홍원",
+        "basis": "강남의 깊은 층을 남에게 내주지 않기로 이홍원과 함께 맹세했다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K1018",
+    "name": "고예진",
+    "courtId": "court:K1018",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 11,
-        "effective": 11
+      "diplomacy": {
+        "base": 10,
+        "effective": 10
       },
-      "strategy": {
-        "base": 11,
-        "effective": 11
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 11,
-        "effective": 11
+      "stewardship": {
+        "base": 9,
+        "effective": 9
       },
-      "management": {
-        "base": 14,
-        "effective": 14
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 8,
+        "effective": 8
       },
       "learning": {
-        "base": 12,
-        "effective": 12
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "k271-succession-records",
-        "name": {
-          "ko": "승계 자료 분리",
-          "en": "Succession-record separation"
-        },
-        "rating": 65
+        "id": "parts-store",
+        "name": "부품 창고 관리",
+        "rating": 82
+      },
+      {
+        "id": "house-disputes",
+        "name": "곁집 다툼",
+        "rating": 70
+      },
+      {
+        "id": "judging-scrap",
+        "name": "고물 감정",
+        "rating": 66
       }
     ],
     "traits": [
       {
-        "id": "k271-trait-1",
-        "name": {
-          "ko": "표와 연공을 따로",
-          "en": "Votes apart from seniority"
-        },
-        "description": {
-          "ko": "서로 다른 승계 근거를 한 함에 섞지 않는다.",
-          "en": "Keeps different succession grounds out of one box."
-        },
-        "behavior": {
-          "ko": "서로 다른 승계 근거를 한 함에 섞지 않는다.",
-          "en": "Keeps different succession grounds out of one box."
-        },
-        "stress": {
-          "ko": "승계 시험 전날에도 표를 시험장 밖으로 옮긴다.",
-          "en": "Moves votes out even on the eve of the succession test."
-        },
-        "relationship": {
-          "ko": "배우진에게 문을 빌려 주되 문 관리와 호위 지휘를 나눈다.",
-          "en": "Lends Bae Woojin the gate without merging gate custody with escort command."
-        },
+        "id": "knows-the-store",
+        "name": "창고를 외는 사람",
+        "description": "수서 창고의 부품과 쇠붙이가 어디에 몇 개 있는지 적지 않고도 안다.",
+        "behavior": "곁집의 일을 정할 때 창고에 무엇이 남았는지부터 말한다.",
+        "stress": "창고 열쇠가 다른 사람 손에 넘어가면 잠을 이루지 못하고 직접 세러 내려간다.",
+        "relationship": "쇠를 아는 정비공과 고물꾼을 아끼고, 핏줄만 내세우는 사람을 가볍게 본다.",
+        "effects": []
+      },
+      {
+        "id": "outlasts",
+        "name": "오래 버티는 사람",
+        "description": "깊은 층의 집안답게 말이 적고, 서두르지 않으며, 끝까지 남는다.",
+        "behavior": "다툼에서 먼저 말하지 않고 상대가 지칠 때까지 기다린다.",
+        "stress": "오래 기다린 일이 한꺼번에 뒤집히면 크게 화를 낸다.",
+        "relationship": "함께 오래 버틴 사람과는 맹세로 묶이고, 새로 온 사람은 몇 해를 두고 본다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "승계 시험 전날 공동체의 표를 시험장 밖으로 내보내 연공 함과 섞이지 않게 했다. 차단문과 당직을 지켜 왔지만 그 절차 분리가 세습 폐지나 공정한 승계의 완성을 뜻하지는 않는다.",
-      "en": "Before the succession test, he moved community votes outside the test venue to keep them apart from seniority records. He preserved gates and duties, but separating the procedures does not establish abolished heredity or fully fair succession."
-    },
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -399,118 +225,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:capital-s11",
-      "name": {
-        "ko": "강남역 직영지"
-      },
-      "holderPersonId": "K271",
-      "directLiegePersonId": null,
-      "stateId": "S11",
-      "stationRef": {
-        "stationId": "강남",
-        "stationName": "강남"
-      },
-      "adminRefs": [],
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": null
-    }
-  ],
-  "clan": {
-    "id": "c774-acbd-c8fc-674e",
-    "name": "경주 이씨",
-    "crest": "clan-crests/c774-acbd-c8fc-674e.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": true,
-  "values": {
-    "권위": 10,
-    "개방": -20,
-    "무력": -10,
-    "물질": 30,
-    "공동": 20,
-    "원칙": 10,
-    "공개": -10,
-    "자격": 80,
-    "분산": 10,
-    "변혁": -30
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": 20,
-    "위험": -20,
-    "과시": -30,
-    "지속": 60,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "성하전자 원로",
-    "소속": "성하그룹",
-    "품계": "회장",
-    "직함": "성하그룹 회장, 이씨 가문 세습"
-  },
-  "sections": {
-    "생애": "강남역 성하전자 전산실. 신정차륜가의 시험 차륜은 유세진의 것이다. 이홍원이 회장이 된 것은 강남역 차단문과 강남역 당직함을 끊기지 않게 지킨 뒤였다. 성하그룹의 수도는 강남역이고 회장직은 이씨 가문이 세습한다. 승계 시험이 열리면 강남역 사택이 표를 던진다. 성전총회를 국가 신앙으로 후원한다. 성하전자의 부품·노동·기록 연결은 서초4동 본사와 역삼1동 작업 생활권의 서울 내부 계약·당직 업무로 잇는다. 배우진의 호위는 이 차단문을 빌리지만 차단문은 이홍원의 것이다.",
-    "관직": "품계 회장. 직함은 성하그룹 회장, 이씨 가문 세습. 생업 별명은 성하전자 원로.",
-    "일화": "승계 시험 전날, 이홍원은 강남역 사택의 표를 시험장 밖으로 내보냈다. 표가 연공 함과 섞이지 않았다.",
-    "가문": "이씨 가문. 관리인. 신정차륜가(HC02) 관리인은 유세진이다.",
-    "관계": "박태겸과 차륜. 강민서와 규격. 배우진과 차단문.\n\n- 생업: 성하전자 원로\n- 소속: 성하그룹\n- 품계: 회장\n- 직함: 성하그룹 회장, 이씨 가문 세습\n- 이홍원은 서초4동에서 성하전자 원로 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다\n\n성하전자 원로 이홍원 곁의 정비 도제와 성하전자 작업 반장들이다."
-  },
-  "biography": "**생애.** 강남역 성하전자 전산실. 신정차륜가의 시험 차륜은 유세진의 것이다. 이홍원이 회장이 된 것은 강남역 차단문과 강남역 당직함을 끊기지 않게 지킨 뒤였다. 성하그룹의 수도는 강남역이고 회장직은 이씨 가문이 세습한다. 승계 시험이 열리면 강남역 사택이 표를 던진다. 성전총회를 국가 신앙으로 후원한다. 성하전자의 부품·노동·기록 연결은 서초4동 본사와 역삼1동 작업 생활권의 서울 내부 계약·당직 업무로 잇는다. 배우진의 호위는 이 차단문을 빌리지만 차단문은 이홍원의 것이다.\n**관직.** 품계 회장. 직함은 성하그룹 회장, 이씨 가문 세습. 생업 별명은 성하전자 원로.\n**일화.** 승계 시험 전날, 이홍원은 강남역 사택의 표를 시험장 밖으로 내보냈다. 표가 연공 함과 섞이지 않았다.\n**가문.** 이씨 가문. 관리인. 신정차륜가(HC02) 관리인은 유세진이다.\n**관계.** 박태겸과 차륜. 강민서와 규격. 배우진과 차단문.\n\n- 생업: 성하전자 원로\n- 소속: 성하그룹\n- 품계: 회장\n- 직함: 성하그룹 회장, 이씨 가문 세습\n- 이홍원은 서초4동에서 성하전자 원로 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다\n\n성하전자 원로 이홍원 곁의 정비 도제와 성하전자 작업 반장들이다.",
-  "sources": [
-    "Cast-State-11",
-    "Core-Characters"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": [
-      {
-        "from": "송하율",
-        "type": "사제",
-        "to": "이홍원",
-        "basis": "차량 정비 도제로 회장 밑에서 수련"
-      },
-      {
-        "from": "조우찬",
-        "type": "지휘",
-        "to": "이홍원",
-        "basis": "차륜 공정을 회장 지휘로 나눔"
-      },
-      {
-        "from": "서진아",
-        "type": "경쟁",
-        "to": "이홍원",
-        "basis": "주거·기술 혼합 통치를 다툼"
-      },
-      {
-        "from": "황노을",
-        "type": "지휘",
-        "to": "이홍원",
-        "basis": "철재 재고를 회장에게 보고"
-      },
-      {
-        "from": "안도한",
-        "type": "계약",
-        "to": "이홍원",
-        "basis": "북부 차륜 교환 시각을 의존"
-      },
-      {
-        "from": "엄누리",
-        "type": "계약",
-        "to": "이홍원",
-        "basis": "이홍원의 공개 기술시험을 지키려 하며"
-      },
-      {
-        "from": "단건우",
-        "type": "계약",
-        "to": "이홍원",
-        "basis": "이홍원의 기술시험 일정을 회의 사절의 근거로 들고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

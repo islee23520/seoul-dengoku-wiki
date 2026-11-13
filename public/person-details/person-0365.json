@@ -1,385 +1,120 @@
 {
   "id": "person-0365",
   "name": "영한뫼",
-  "title": "교량 의무소 거점장",
-  "position": "구의수비대 교량 의무소 거점장",
+  "title": "장부 서기",
+  "position": "장부 서기 · 건대입구역",
   "characterId": "K364",
-  "rank": "현장책임자",
-  "commonTier": "T4",
-  "occupation": "중증도 표·급수 시간 게시",
+  "rank": "등재민",
+  "commonTier": "T5",
+  "occupation": "장부 기재",
   "gender": "여성",
   "stage": "S2",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-영한뫼",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0365",
   "birthDate": "2079-07-19",
   "birthday": "07-19",
   "age": 47,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/39"
-  ],
-  "familyTree": {
-    "personId": "K364",
-    "nodes": [
-      {
-        "id": "K364",
-        "personId": "K364",
-        "kind": "person",
-        "name": "영한뫼",
-        "birthDate": "2079-07-19",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K364"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-영한뫼-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 구의수비대 교량 의무소 거점장 자리는 야간 무단 도하 적발로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-영한뫼-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0365"
-      },
-      {
-        "id": "FH-K364-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "영승원",
-        "lineage": {
-          "surname": "영",
-          "bongwan": "선천",
-          "clan": "c601-c120-cc9c-5f71"
-        },
-        "birthDate": "2049-07-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-영한뫼-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2087,
-            "summary": "영승원은 암사 경비 초소에서 중증도 표·급수 시간 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-영한뫼-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K364-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "영승진",
-        "lineage": {
-          "surname": "영",
-          "bongwan": "선천",
-          "clan": "c601-c120-cc9c-5f71"
-        },
-        "birthDate": "2019-07-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-영한뫼-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "영승진은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-영한뫼-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K364-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤준희",
-        "birthDate": "2049-07-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-영한뫼-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2087,
-            "summary": "윤준희는 암사 경비 초소에서 중증도 표·급수 시간 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-영한뫼-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K364-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한준경",
-        "birthDate": "2019-07-19",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-영한뫼-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한준경은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-영한뫼-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K364-P-01:K364:biological",
-        "from": "FH-K364-P-01",
-        "to": "K364",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-영한뫼-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K364-P-02:FH-K364-P-01:biological",
-        "from": "FH-K364-P-02",
-        "to": "FH-K364-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-영한뫼-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K364-M-01:K364:biological",
-        "from": "FH-K364-M-01",
-        "to": "K364",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-영한뫼-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K364-M-02:FH-K364-M-01:biological",
-        "from": "FH-K364-M-02",
-        "to": "FH-K364-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-영한뫼-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c601-c120-cc9c-5f71",
+    "name": "선천 영씨",
+    "crest": "clan-crests/c601-c120-cc9c-5f71.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "고서준 의원 집안의 곳간 장부를 맡은 장부 서기로, 광진구 화양동 건대입구역에 기재돼 있다. 마흔일곱 살 여성이고 선천 영씨다. 강 얼음 구멍에서 잡은 물고기가 건대입구 장터를 거쳐 집안 부엌에 들어올 때 그녀는 마릿수와 무게를 따로 적는다. 다리 끝 초소에 보내는 집안 몫의 땔감과 숯도 그녀의 장부에서 나가고, 한 해 치 장부를 덮는 날이면 남은 땔감 자루를 의원과 함께 창고에서 하나하나 세어 본다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "장부 서기",
+    "품계": "등재민",
+    "생업": "장부 기재",
+    "일하는 역": "건대입구역",
+    "잠자는 역": "건대입구역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "고서준 의원 집안의 곳간 장부를 맡은 장부 서기로, 광진구 화양동 건대입구역에 기재돼 있다. 마흔일곱 살 여성이고 선천 영씨다. 강 얼음 구멍에서 잡은 물고기가 건대입구 장터를 거쳐 집안 부엌에 들어올 때 그녀는 마릿수와 무게를 따로 적는다. 다리 끝 초소에 보내는 집안 몫의 땔감과 숯도 그녀의 장부에서 나가고, 한 해 치 장부를 덮는 날이면 남은 땔감 자루를 의원과 함께 창고에서 하나하나 세어 본다.",
+    "관직": "직함 장부 서기. 직위 장부 서기 · 건대입구역. 품계 등재민. 일하는 역 건대입구역."
+  },
+  "values": {
+    "권위": 95,
+    "개방": -65,
+    "무력": 65,
+    "물질": 5,
+    "공동": 30,
+    "원칙": 40,
+    "공개": -45,
+    "자격": 0,
+    "분산": -65,
+    "변혁": -40
+  },
+  "desire": {
+    "갈망": 5,
+    "독점": -40,
+    "위험": -25,
+    "과시": 0,
+    "지속": 15,
+    "지향": "이성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0365",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "영한뫼",
+        "type": "지휘",
+        "to": "고서준",
+        "basis": "광진구 국회의원 고서준의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K348",
+    "name": "고서준",
+    "courtId": "court:K348",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 9,
-        "effective": 9
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
-      "learning": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "prowess": {
-        "base": 4,
-        "effective": 4
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
-      "endurance": {
+      "learning": {
         "base": 8,
         "effective": 8
-      }
-    },
-    "skills": [
-      {
-        "id": "aid-station-bed-coordination",
-        "name": {
-          "ko": "의무소 병상 조정",
-          "en": "Aid station bed coordination"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "무장 대기를 병상 밖으로",
-          "en": "Armed waiting outside beds"
-        },
-        "description": {
-          "ko": "들것 순서를 국적보다 앞에 놓고 무장 대기를 침상에 들이지 않는다. 빠진 당직자 문제를 수습한 결과는 없다.",
-          "en": "Stretcher order precedes nationality and armed queues stay out of bedside space. Resolution of the absent duty entry is not recorded."
-        },
-        "behavior": {
-          "ko": "들것 순서를 국적보다 앞에 두고, 봉쇄대의 무장 대기를 침상 앞으로 들이라는 쪽지를 찢는다. 온화하나 상수관 파손 소문이 뜨면 문을 직접 잠근다.",
-          "en": "He put stretcher order ahead of nationality and tore up any note that told him to bring the blockade's armed wait up to the sickbeds. Mild in manner, he locked the door himself whenever a water-main break rumor rose."
-        },
-        "stress": {
-          "ko": "공포. 의무소가 적대 이동의 대기실로 오인되어 호송 전체가 무장 해제를 당하는 것.",
-          "en": "Fear. That the clinic would be mistaken for a waiting room of hostile movement and the whole convoy would be disarmed."
-        },
-        "relationship": {
-          "ko": "관계. 영석온의 당직 침상과 병상을 나누고, 수지완의 대합실 대기와 줄을 맞춘다. 남호성의 의무호송을 도착 확인에 쓴다.",
-          "en": "Relations. Shared sickbeds with Yeong Seokon's duty line and matched the queue with Su Jiwan's concourse wait. Used Nam Hoseong's medical convoy for arrival confirmation."
-        },
-        "effects": []
       },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 현장책임자. 직함은 구의수비대 교량 의무소 거점장. 중증도 표와 급수 시간을 문에 붙이고, 무기함 봉인은 통행 심사 입회 없이 열지 않는다.",
-          "en": "Office. Rank: company commander. Title: bridge clinic outpost chief. He posted the severity table and the water-supply hours on the door and opened the weapons-box seal only under passage-inspection attendance."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 현장책임자. 직함은 구의수비대 교량 의무소 거점장. 중증도 표와 급수 시간을 문에 붙이고, 무기함 봉인은 통행 심사 입회 없이 열지 않는다.",
-          "en": "Recorded duty and limits: Office. Rank: company commander. Title: bridge clinic outpost chief. He posted the severity table and the water-supply hours on the door and opened the weapons-box seal only under passage-inspection attendance."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 의무소가 적대 이동의 대기실로 오인되어 호송 전체가 무장 해제를 당하는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That the clinic would be mistaken for a waiting room of hostile movement and the whole convoy would be disarmed."
-        },
-        "relationship": {
-          "ko": "관계. 영석온의 당직 침상과 병상을 나누고, 수지완의 대합실 대기와 줄을 맞춘다. 남호성의 의무호송을 도착 확인에 쓴다.",
-          "en": "Relations. Shared sickbeds with Yeong Seokon's duty line and matched the queue with Su Jiwan's concourse wait. Used Nam Hoseong's medical convoy for arrival confirmation."
-        },
-        "effects": []
+      "prowess": {
+        "base": 3,
+        "effective": 3
       }
-    ],
-    "narrative": {
-      "ko": "들것 순서를 국적보다 앞에 놓고 무장 대기를 침상에 들이지 않는다. 빠진 당직자 문제를 수습한 결과는 없다.",
-      "en": "Stretcher order precedes nationality and armed queues stay out of bedside space. Resolution of the absent duty entry is not recorded."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,97 +152,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c601-c120-cc9c-5f71",
-    "name": "선천 영씨",
-    "crest": "clan-crests/c601-c120-cc9c-5f71.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 50,
-    "개방": -10,
-    "무력": 30,
-    "물질": 10,
-    "공동": 25,
-    "원칙": 20,
-    "공개": -20,
-    "자격": -15,
-    "분산": -15,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": 5,
-    "독점": -40,
-    "위험": -25,
-    "과시": 0,
-    "지속": 15,
-    "지향": "이성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "중증도 표·급수 시간 게시",
-    "소속": "구의수비대",
-    "품계": "현장책임자",
-    "직함": "구의수비대 교량 의무소 거점장",
-    "가치관": "권위 50 | 개방 −10 | 무력 30 | 물질 10 | 공동 25 | 원칙 20 | 공개 −20 | 자격 −15 | 분산 −15 | 변혁 −20",
-    "욕망": "갈망 5 | 독점 −40 | 위험 −25 | 과시 0 | 지속 15 | 지향 이성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2079-07-19에 태어났다. 2126년 개막 현재 구의수비대 교량 의무소 거점장 직무를 맡아 중증도 표·급수 시간 게시 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 중증도 표·급수 시간 게시 창구가 영한뫼의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 현장책임자. 직함은 구의수비대 교량 의무소 거점장. 중증도 표·급수 시간 게시 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
-    "일화": "상수관 파손을 적대행위로 적은 보고가 퍼진 밤, 의무소 당직 명단이 한 줄 빠져 있었다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
-    "관계": "영석온의 당직 침상과 병상을 나누고, 수지완의 대합실 대기와 줄을 맞춘다. 남호성의 의무호송을 도착 확인에 쓴다.",
-    "야망": "영한뫼는 구의수비대 교량 의무소 거점장 직무에서 중증도 표·급수 시간 게시 기록을 공개 인계표와 맞물리게 하려 한다.",
-    "공포": "구의수비대 교량 의무소 거점장 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
-    "개입": "빠진 당직자를 찾거나, 의무소를 개방 진료로 되돌려 봉쇄를 흔들 수 있다. 영한뫼의 중증도 표·급수 시간 게시 원장을 대조해 다음 인계의 증거를 세울 수 있다."
-  },
-  "biography": "영한뫼는 중증도 표·급수 시간 게시 기록을 손에 익힌 구의수비대 인물이다. 들것 순서를 국적보다 앞에 두고, 봉쇄대의 무장 대기를 침상 앞으로 들이라는 쪽지를 찢는다. 온화하나 상수관 파손 소문이 뜨면 문을 직접 잠근다.\n\n- 생업: 중증도 표·급수 시간 게시\n- 소속: 구의수비대\n- 품계: 현장책임자\n- 직함: 구의수비대 교량 의무소 거점장\n**생애.** 2079-07-19에 태어났다. 2126년 개막 현재 구의수비대 교량 의무소 거점장 직무를 맡아 중증도 표·급수 시간 게시 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 중증도 표·급수 시간 게시 창구가 영한뫼의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 현장책임자. 직함은 구의수비대 교량 의무소 거점장. 중증도 표·급수 시간 게시 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 상수관 파손을 적대행위로 적은 보고가 퍼진 밤, 의무소 당직 명단이 한 줄 빠져 있었다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 영석온의 당직 침상과 병상을 나누고, 수지완의 대합실 대기와 줄을 맞춘다. 남호성의 의무호송을 도착 확인에 쓴다.\n\n**야망.** 영한뫼는 구의수비대 교량 의무소 거점장 직무에서 중증도 표·급수 시간 게시 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 구의수비대 교량 의무소 거점장 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 빠진 당직자를 찾거나, 의무소를 개방 진료로 되돌려 봉쇄를 흔들 수 있다. 영한뫼의 중증도 표·급수 시간 게시 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −10 | 무력 30 | 물질 10 | 공동 25 | 원칙 20 | 공개 −20 | 자격 −15 | 분산 −15 | 변혁 −20\n- 욕망: 갈망 5 | 독점 −40 | 위험 −25 | 과시 0 | 지속 15 | 지향 이성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-14"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "영한뫼",
-        "type": "계약",
-        "to": "남호성",
-        "basis": "남호성의 의무호송을 도착 확인에 쓴다"
-      },
-      {
-        "from": "영한뫼",
-        "type": "계약",
-        "to": "영석온",
-        "basis": "영석온의 당직 침상과 병상을 나누고"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "영석온",
-        "type": "계약",
-        "to": "영한뫼",
-        "basis": "영한뫼의 교량 의무소와 병상을 나누고"
-      },
-      {
-        "from": "천초윤",
-        "type": "지휘",
-        "to": "영한뫼",
-        "basis": "영한뫼의 통과 원장과 순번을 나눈다"
-      },
-      {
-        "from": "수지완",
-        "type": "계약",
-        "to": "영한뫼",
-        "basis": "영한뫼의 의무 대기와 줄을 나눈다"
-      },
-      {
-        "from": "탁윤재",
-        "type": "계약",
-        "to": "영한뫼",
-        "basis": "영한뫼의 의무소 들것과 사고 줄을 나눈다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

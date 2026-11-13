@@ -1,386 +1,120 @@
 {
   "id": "person-0355",
   "name": "선솔우",
-  "title": "구의 펌프실 정비사, 곽민재의 실무 담당자",
-  "position": "구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자",
+  "title": "기후에너지환경부 차관",
+  "position": "기후에너지환경부 차관 · 광화문역",
   "characterId": "K354",
-  "rank": "수비대원",
-  "commonTier": "T5",
-  "occupation": "펌프실 마모표·정비 키 관리",
+  "rank": "차관",
+  "commonTier": "T2",
+  "occupation": "부처 행정",
   "gender": "남성",
   "stage": "S2",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-선솔우",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0355",
   "birthDate": "2078-04-11",
   "birthday": "04-11",
   "age": 48,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/105",
-    "lore/characters/Cast-State-14.json#/content/108"
-  ],
-  "familyTree": {
-    "personId": "K354",
-    "nodes": [
-      {
-        "id": "K354",
-        "personId": "K354",
-        "kind": "person",
-        "name": "선솔우",
-        "birthDate": "2078-04-11",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K354"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선솔우-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-선솔우-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0355"
-      },
-      {
-        "id": "FH-K354-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "선승호",
-        "lineage": {
-          "surname": "선",
-          "bongwan": "보성",
-          "clan": "c120-bcf4-c131"
-        },
-        "birthDate": "2048-04-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선솔우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2086,
-            "summary": "선승호는 신정 차량기지에서 펌프실 마모표·정비 키 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-선솔우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K354-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "선승민",
-        "lineage": {
-          "surname": "선",
-          "bongwan": "보성",
-          "clan": "c120-bcf4-c131"
-        },
-        "birthDate": "2018-04-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선솔우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "선승민은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-선솔우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K354-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강준우",
-        "birthDate": "2048-04-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선솔우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2086,
-            "summary": "강준우는 신정 차량기지에서 펌프실 마모표·정비 키 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-선솔우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K354-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임준경",
-        "birthDate": "2018-04-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선솔우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임준경은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-선솔우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K354-P-01:K354:biological",
-        "from": "FH-K354-P-01",
-        "to": "K354",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선솔우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K354-P-02:FH-K354-P-01:biological",
-        "from": "FH-K354-P-02",
-        "to": "FH-K354-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선솔우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K354-M-01:K354:biological",
-        "from": "FH-K354-M-01",
-        "to": "K354",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선솔우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K354-M-02:FH-K354-M-01:biological",
-        "from": "FH-K354-M-02",
-        "to": "FH-K354-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선솔우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c120-bcf4-c131",
+    "name": "보성 선씨",
+    "crest": "clan-crests/c120-bcf4-c131.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "기후에너지환경부 차관 선솔우, 마흔여덟, 보성 선씨. 등재 주소는 종로구 동묘앞역이다. 아침마다 광화문의 정부서울청사로 나가 열 펌프와 취수구 정비 고시의 초안을 받아 보고, 부품 배정표의 숫자를 역마다 올라온 마모표 날짜와 한 줄씩 맞춘 뒤에야 결재란으로 넘긴다. 급수계약 부속서의 열 몫이 바뀌는 날이면 그는 그 숫자를 수첩에 옮겨 적어 동묘앞역 깊은 층까지 가지고 내려간다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "기후에너지환경부 차관",
+    "품계": "차관",
+    "생업": "부처 행정",
+    "일하는 역": "광화문역",
+    "잠자는 역": "동묘앞역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "기후에너지환경부 차관 선솔우, 마흔여덟, 보성 선씨. 등재 주소는 종로구 동묘앞역이다. 아침마다 광화문의 정부서울청사로 나가 열 펌프와 취수구 정비 고시의 초안을 받아 보고, 부품 배정표의 숫자를 역마다 올라온 마모표 날짜와 한 줄씩 맞춘 뒤에야 결재란으로 넘긴다. 급수계약 부속서의 열 몫이 바뀌는 날이면 그는 그 숫자를 수첩에 옮겨 적어 동묘앞역 깊은 층까지 가지고 내려간다.",
+    "관직": "직함 기후에너지환경부 차관. 직위 기후에너지환경부 차관 · 광화문역. 품계 차관. 일하는 역 광화문역."
+  },
+  "values": {
+    "권위": 90,
+    "개방": -75,
+    "무력": 80,
+    "물질": 5,
+    "공동": 20,
+    "원칙": 20,
+    "공개": -30,
+    "자격": 25,
+    "분산": -65,
+    "변혁": -30
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": -30,
+    "위험": 25,
+    "과시": -20,
+    "지속": 25,
+    "지향": "동성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0355",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "선솔우",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 10,
+        "effective": 10
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 11,
-        "effective": 11
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "pump-wear-inspection",
-        "name": {
-          "ko": "펌프 마모 점검",
-          "en": "Pump wear inspection"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "승인 전에는 키를 남긴다",
-          "en": "Keeps keys until approval"
-        },
-        "description": {
-          "ko": "마모와 패킹을 읽고 파손 직후 키 요구에도 시각만 기록했다. 정비 관찰은 확인되지만 광범위한 기계 발명은 없다.",
-          "en": "They read wear and packing conditions and recorded the failure time without releasing a demanded key. Maintenance observation does not imply invention."
-        },
-        "behavior": {
-          "ko": "임펠러 이빨의 마모를 손가락으로 읽고, 구두 개폐는 키 걸이못에 걸지 않는다. 교각 금속음을 패킹 교체 순서로 외운다.",
-          "en": "He read impeller-tooth wear with his fingers and hung no verbal open-close on the key hook. He knew the pier's metal sound by heart as a packing-replacement order."
-        },
-        "stress": {
-          "ko": "공포. 능선 초병이 걸이못을 호각으로 비워 정수 일지가 한 밤에 공백이 되는 것.",
-          "en": "Fear. That a ridge sentry would empty the hook with a whistle and the purification log would become blank for a night."
-        },
-        "relationship": {
-          "ko": "관계. 곽민재의 잔압 식을 임펠러 이빨에 맞추는 사제이고, 문하율의 능선 감시가 배관을 얼리기 전에 개폐 시각을 맞춘다. 고서준의 관문 수리가 펌프실 키를 빌려 가면 마모표에 빈칸을 남긴다.",
-          "en": "Relations. An apprentice fitting Gwak Minjae's residual-pressure formula to the impeller teeth, he matched the open-close hours before Mun Hayul's ridge watch froze the pipes. When Go Seojun's gate repairs borrowed the pump-room key, he left a blank in the wear table."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 수비대원. 직함은 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자. 마모표와 패킹 날을 벽에 걸고, 아관사의 단독 개폐를 막고 정비 키는 양군 승인 때만 걸이못에서 꺼낸다.",
-          "en": "Office. Rank: sergeant. Title: Guui pump-room mechanic, duty officer of Gwak Minjae. He hung the wear table and the packing schedule on the wall, and the defense squad's solitary open-close was possible only while the maintenance key stayed on the hook."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 수비대원. 직함은 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자. 마모표와 패킹 날을 벽에 걸고, 아관사의 단독 개폐를 막고 정비 키는 양군 승인 때만 걸이못에서 꺼낸다.",
-          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: Guui pump-room mechanic, duty officer of Gwak Minjae. He hung the wear table and the packing schedule on the wall, and the defense squad's solitary open-close was possible only while the maintenance key stayed on the hook."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 능선 초병이 걸이못을 호각으로 비워 정수 일지가 한 밤에 공백이 되는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That a ridge sentry would empty the hook with a whistle and the purification log would become blank for a night."
-        },
-        "relationship": {
-          "ko": "관계. 곽민재의 잔압 식을 임펠러 이빨에 맞추는 사제이고, 문하율의 능선 감시가 배관을 얼리기 전에 개폐 시각을 맞춘다. 고서준의 관문 수리가 펌프실 키를 빌려 가면 마모표에 빈칸을 남긴다.",
-          "en": "Relations. An apprentice fitting Gwak Minjae's residual-pressure formula to the impeller teeth, he matched the open-close hours before Mun Hayul's ridge watch froze the pipes. When Go Seojun's gate repairs borrowed the pump-room key, he left a blank in the wear table."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "마모와 패킹을 읽고 파손 직후 키 요구에도 시각만 기록했다. 정비 관찰은 확인되지만 광범위한 기계 발명은 없다.",
-      "en": "They read wear and packing conditions and recorded the failure time without releasing a demanded key. Maintenance observation does not imply invention."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -418,85 +152,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c120-bcf4-c131",
-    "name": "보성 선씨",
-    "crest": "clan-crests/c120-bcf4-c131.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 45,
-    "개방": -20,
-    "무력": 45,
-    "물질": 10,
-    "공동": 15,
-    "원칙": 0,
-    "공개": -5,
-    "자격": 10,
-    "분산": -15,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": -30,
-    "위험": 25,
-    "과시": -20,
-    "지속": 25,
-    "지향": "동성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "펌프실 마모표·정비 키 관리",
-    "소속": "구의수비대",
-    "품계": "수비대원",
-    "직함": "구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자",
-    "가치관": "권위 45 | 개방 −20 | 무력 45 | 물질 10 | 공동 15 | 원칙 0 | 공개 −5 | 자격 10 | 분산 −15 | 변혁 −10",
-    "욕망": "갈망 30 | 독점 −30 | 위험 25 | 과시 −20 | 지속 25 | 지향 동성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2078-04-11에 태어났다. 2126년 개막 현재 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자 직무를 맡아 펌프실 마모표·정비 키 관리 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 펌프실 마모표·정비 키 관리 창구가 선솔우의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 수비대원. 직함은 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자. 펌프실 마모표·정비 키 관리 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
-    "일화": "상수관이 터진 직후 수비대가 키를 요구하자 선솔우는 걸이못을 비우지 않고 마모표에 파손 시각만 적었다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
-    "관계": "곽민재의 잔압 식을 임펠러 이빨에 맞추는 사제이고, 문하율의 능선 감시가 배관을 얼리기 전에 개폐 시각을 맞춘다. 고서준의 관문 수리가 펌프실 키를 빌려 가면 마모표에 빈칸을 남긴다.",
-    "야망": "선솔우는 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자 직무에서 펌프실 마모표·정비 키 관리 기록을 공개 인계표와 맞물리게 하려 한다.",
-    "공포": "구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
-    "개입": "이빨 마모표를 파손 시각과 겹쳐 읽거나, 걸이못의 키를 양군이 함께 정한 걸이못에 걸지 정할 수 있다. 선솔우의 펌프실 마모표·정비 키 관리 원장을 대조해 다음 인계의 증거를 세울 수 있다."
-  },
-  "biography": "선솔우는 펌프실 마모표·정비 키 관리 기록을 손에 익힌 구의수비대 인물이다. 임펠러 이빨의 마모를 손가락으로 읽고, 구두 개폐는 키 걸이못에 걸지 않는다. 교각 금속음을 패킹 교체 순서로 외운다.\n\n- 생업: 펌프실 마모표·정비 키 관리\n- 소속: 구의수비대\n- 품계: 수비대원\n- 직함: 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자\n**생애.** 2078-04-11에 태어났다. 2126년 개막 현재 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자 직무를 맡아 펌프실 마모표·정비 키 관리 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 펌프실 마모표·정비 키 관리 창구가 선솔우의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 수비대원. 직함은 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자. 펌프실 마모표·정비 키 관리 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 상수관이 터진 직후 수비대가 키를 요구하자 선솔우는 걸이못을 비우지 않고 마모표에 파손 시각만 적었다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 곽민재의 잔압 식을 임펠러 이빨에 맞추는 사제이고, 문하율의 능선 감시가 배관을 얼리기 전에 개폐 시각을 맞춘다. 고서준의 관문 수리가 펌프실 키를 빌려 가면 마모표에 빈칸을 남긴다.\n\n**야망.** 선솔우는 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자 직무에서 펌프실 마모표·정비 키 관리 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 이빨 마모표를 파손 시각과 겹쳐 읽거나, 걸이못의 키를 양군이 함께 정한 걸이못에 걸지 정할 수 있다. 선솔우의 펌프실 마모표·정비 키 관리 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 45 | 개방 −20 | 무력 45 | 물질 10 | 공동 15 | 원칙 0 | 공개 −5 | 자격 10 | 분산 −15 | 변혁 −10\n- 욕망: 갈망 30 | 독점 −30 | 위험 25 | 과시 −20 | 지속 25 | 지향 동성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-14"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "선솔우",
-        "type": "사제",
-        "to": "곽민재",
-        "basis": "곽민재의 잔압 식을 임펠러 이빨에 맞추는 사제이고"
-      },
-      {
-        "from": "선솔우",
-        "type": "계약",
-        "to": "문하율",
-        "basis": "문하율의 능선 감시 일정에 맞춰 개폐 시각을 조정한다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "판초담",
-        "type": "계약",
-        "to": "선솔우",
-        "basis": "선솔우의 펌프에 출력을 맞추고"
-      },
-      {
-        "from": "탁윤재",
-        "type": "계약",
-        "to": "선솔우",
-        "basis": "선솔우의 펌프 일지와 잔압을 맞추고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

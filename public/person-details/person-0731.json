@@ -1,502 +1,106 @@
 {
   "id": "person-0731",
   "name": "노바아",
-  "title": "공방 전령",
-  "position": "공방 전령",
+  "title": "열 펌프지기",
+  "position": "열 펌프지기 · 양재시민의숲역",
   "characterId": "K731",
-  "rank": "교사",
+  "rank": "미세례자",
   "commonTier": "T5",
-  "occupation": "배차표·출발 확인",
+  "occupation": "열 펌프 정비",
   "gender": "여성",
   "stage": "S4",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-노바아",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0731",
   "birthDate": "2097-07-25",
   "birthday": "07-25",
   "age": 29,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/511",
-    "lore/characters/Cast-State-04.json#/content/513",
-    "lore/characters/Cast-State-04.json#/content/514"
-  ],
-  "familyTree": {
-    "personId": "K731",
-    "nodes": [
-      {
-        "id": "K731",
-        "personId": "K731",
-        "kind": "person",
-        "name": "노바아",
-        "birthDate": "2097-07-25",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K731"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-노바아-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 공방 전령 자리는 무표 출발 열차 저지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-노바아-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0731"
-      },
-      {
-        "id": "FH-K731-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "노승규",
-        "lineage": {
-          "surname": "노",
-          "bongwan": "장연",
-          "clan": "b178-c7a5-c5f0-76e7"
-        },
-        "birthDate": "2067-07-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-노바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "노승규는 신내 환승 당직에서 배차표·출발 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-노바아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K731-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "노승완",
-        "lineage": {
-          "surname": "노",
-          "bongwan": "장연",
-          "clan": "b178-c7a5-c5f0-76e7"
-        },
-        "birthDate": "2037-07-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-노바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "노승완은 신내 환승 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-노바아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K731-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "노승훈",
-        "lineage": {
-          "surname": "노",
-          "bongwan": "장연",
-          "clan": "b178-c7a5-c5f0-76e7"
-        },
-        "birthDate": "2007-07-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-노바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "노승훈은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-노바아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K731-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김재란",
-        "birthDate": "2067-07-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-노바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "김재란은 신내 환승 당직에서 배차표·출발 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-노바아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K731-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박도민",
-        "birthDate": "2037-07-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-노바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "박도민은 신내 환승 당직에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-노바아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K731-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "이도호",
-        "birthDate": "2007-07-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-노바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이도호는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-노바아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K731-P-01:K731:biological",
-        "from": "FH-K731-P-01",
-        "to": "K731",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-노바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K731-P-02:FH-K731-P-01:biological",
-        "from": "FH-K731-P-02",
-        "to": "FH-K731-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-노바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K731-P-03:FH-K731-P-02:biological",
-        "from": "FH-K731-P-03",
-        "to": "FH-K731-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-노바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K731-M-01:K731:biological",
-        "from": "FH-K731-M-01",
-        "to": "K731",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-노바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K731-M-02:FH-K731-M-01:biological",
-        "from": "FH-K731-M-02",
-        "to": "FH-K731-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-노바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K731-M-03:FH-K731-M-02:biological",
-        "from": "FH-K731-M-03",
-        "to": "FH-K731-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-노바아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b178-c7a5-c5f0-76e7",
+    "name": "장연 노씨",
+    "crest": "clan-crests/b178-c7a5-c5f0-76e7.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "양재시민의숲역의 열 펌프는 서초 남쪽 끝에서 가장 오래된 것이라, 스물아홉 살 노바아는 하루의 절반을 그 밑에 엎드려 보낸다. 자유도시에서 넘어온 수리공이 남긴 낡은 그림 한 장을 펌프 덮개 안쪽에 붙여 두고, 바꿀 부속이 오지 않는 달에는 그 그림을 보며 있는 것으로 맞춘다. 서초 사람답게 그녀도 동료에게 반말을 하고 약속은 숫자로 한다. 겉옷에 꿰매 둔 정비 틈 자리를 뜯는 날이 오면 펌프 앞에서 뜯겠다고 그녀는 말한다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "열 펌프지기",
+    "품계": "미세례자",
+    "생업": "열 펌프 정비",
+    "일하는 역": "양재시민의숲역",
+    "잠자는 역": "양재시민의숲역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 0
+  },
+  "sections": {
+    "생애": "양재시민의숲역의 열 펌프는 서초 남쪽 끝에서 가장 오래된 것이라, 스물아홉 살 노바아는 하루의 절반을 그 밑에 엎드려 보낸다. 자유도시에서 넘어온 수리공이 남긴 낡은 그림 한 장을 펌프 덮개 안쪽에 붙여 두고, 바꿀 부속이 오지 않는 달에는 그 그림을 보며 있는 것으로 맞춘다. 서초 사람답게 그녀도 동료에게 반말을 하고 약속은 숫자로 한다. 겉옷에 꿰매 둔 정비 틈 자리를 뜯는 날이 오면 펌프 앞에서 뜯겠다고 그녀는 말한다.",
+    "관직": "직함 열 펌프지기. 직위 열 펌프지기 · 양재시민의숲역. 품계 미세례자. 일하는 역 양재시민의숲역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": 5,
+    "무력": -10,
+    "물질": -40,
+    "공동": 60,
+    "원칙": 10,
+    "공개": -60,
+    "자격": -15,
+    "분산": 0,
+    "변혁": 45
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": 40,
+    "위험": 5,
+    "과시": 5,
+    "지속": 5,
+    "지향": "유동",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0731",
+    "role": "single",
+    "personFaith": "unbaptised",
+    "houseFaith": "unbaptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 5,
         "effective": 5
       },
-      "negotiation": {
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "management": {
-        "base": 8,
-        "effective": 8
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "insight": {
-        "base": 8,
-        "effective": 8
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 6,
-        "effective": 6
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "departure",
-        "name": {
-          "ko": "배차표·출발 확인",
-          "en": "Departure and dispatch checks"
-        },
-        "rating": 50
-      },
-      {
-        "id": "handover",
-        "name": {
-          "ko": "기록·열쇠 인수인계",
-          "en": "Record and key handover"
-        },
-        "rating": 40
-      }
-    ],
-    "traits": [
-      {
-        "id": "stop-unmarked-trains",
-        "name": {
-          "ko": "무표 열차 세우기",
-          "en": "Stop Unmarked Trains"
-        },
-        "description": {
-          "ko": "노바아는 배차표가 없는 열차의 출발을 허용하지 않는 확인 중심 성향을 보인다.",
-          "en": "No Baa shows a verification-centered reluctance to permit a train to depart without a dispatch sheet."
-        },
-        "behavior": {
-          "ko": "배차표 없는 열차를 세워 서명 없는 출발을 막았다.",
-          "en": "He stopped a train without a dispatch sheet and prevented an unsigned departure."
-        },
-        "stress": {
-          "ko": "당직 공백이 통행을 강국의 볼모로 만들까 우려되면 출발 확인 자료의 누락에 더 주의할 수 있다.",
-          "en": "If a duty gap could make passage hostage to a powerful state, he may pay closer attention to missing departure documentation."
-        },
-        "relationship": {
-          "ko": "선배 당직에게는 배차표와 서명이 없어 출발을 세운 사실을 분명히 넘기려 할 수 있다.",
-          "en": "He may clearly tell the senior duty holder that departure was stopped because the dispatch sheet and signature were missing."
-        },
-        "effects": []
-      },
-      {
-        "id": "respect-explicit-authority",
-        "name": {
-          "ko": "명시 권한 준수",
-          "en": "Respect Explicit Authority"
-        },
-        "description": {
-          "ko": "노바아는 자기 직위에 명시된 열쇠와 기록의 범위를 지키고 없는 권한을 만들지 않는다.",
-          "en": "No Baa respects the scope of his post's keys and records and does not invent authority."
-        },
-        "behavior": {
-          "ko": "배차표와 서명의 확인 조건을 집행하면서 인계는 자기 직위의 열쇠와 기록에 한정한다.",
-          "en": "He enforces dispatch-sheet and signature checks while limiting handover to his post's keys and records."
-        },
-        "stress": {
-          "ko": "당직 공백으로 통행이 위태로워져도 확인 조건과 명시된 직위 범위에 기대려 할 수 있다.",
-          "en": "Even if a duty gap threatens passage, he may rely on verification requirements and his explicitly defined post scope."
-        },
-        "relationship": {
-          "ko": "선배 당직과는 넘길 기록과 열쇠를 명확히 하며 권한의 경계를 유지하려 할 수 있다.",
-          "en": "He may keep authority boundaries clear with the senior duty holder by specifying the records and keys being transferred."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "배차표가 없는 열차의 출발을 세웠다. 확인 조건 집행만 근거이며 전령의 전투 기량은 미확인이다.",
-      "en": "He halted a train departing without a dispatch sheet. Conditional enforcement is supported; messenger combat ability is unconfirmed."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -534,59 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b178-c7a5-c5f0-76e7",
-    "name": "장연 노씨",
-    "crest": "clan-crests/b178-c7a5-c5f0-76e7.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -5,
-    "개방": 20,
-    "무력": -20,
-    "물질": 10,
-    "공동": 40,
-    "원칙": 20,
-    "공개": -15,
-    "자격": 20,
-    "분산": 30,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": 40,
-    "위험": 5,
-    "과시": 5,
-    "지속": 5,
-    "지향": "유동",
-    "결합": "비독점"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "배차표·출발 확인",
-    "품계": "교사",
-    "직함": "공방 전령",
-    "가치관": "권위 −5 | 개방 20 | 무력 −20 | 물질 10 | 공동 40 | 원칙 20 | 공개 −15 | 자격 20 | 분산 30 | 변혁 0",
-    "욕망": "갈망 45 | 독점 40 | 위험 5 | 과시 5 | 지속 5 | 지향 유동 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2126년 세대. 노바아는 신내 환승 당직에서 자랐다. 노바아는 무표 출발 열차 저지로 공방 전령 자리를 맡았다.\n- 노바아의 공방 전령 업무는 성수2가3동과 연결된다.",
-    "관직": "노바아는 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.",
-    "일화": "2125년 노바아는 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "노바아는 같은 생활권 선배 당직자와 인수인계로 묶인다.",
-    "야망": "노바아는 공방 전령 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.",
-    "공포": "노바아는 공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.",
-    "개입": "노바아는 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "노바아는 당직을 끊지 않는 쪽을 먼저 고른다. 노바아는 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 배차표·출발 확인\n- 품계: 교사\n- 직함: 공방 전령\n**생애.** 2126년 세대. 노바아는 신내 환승 당직에서 자랐다. 노바아는 무표 출발 열차 저지로 공방 전령 자리를 맡았다.\n- 노바아의 공방 전령 업무는 성수2가3동과 연결된다.\n\n**관직.** 노바아는 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 노바아는 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 노바아는 같은 생활권 선배 당직자와 인수인계로 묶인다.\n\n**야망.** 노바아는 공방 전령 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.\n\n**공포.** 노바아는 공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.\n\n**개입.** 노바아는 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −20 | 물질 10 | 공동 40 | 원칙 20 | 공개 −15 | 자격 20 | 분산 30 | 변혁 0\n- 욕망: 갈망 45 | 독점 40 | 위험 5 | 과시 5 | 지속 5 | 지향 유동 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

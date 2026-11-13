@@ -1,492 +1,120 @@
 {
   "id": "person-0359",
   "name": "천초윤",
-  "title": "관문 공동승인 전령, 하윤목의 실무 담당자",
-  "position": "양군 승인 전령, 하윤목의 실무 담당자",
+  "title": "불광역 역장",
+  "position": "불광역 역장 · 정부",
   "characterId": "K358",
-  "rank": "공동실무원",
-  "commonTier": "T5",
-  "occupation": "통과 전갈·면제 통행증 배달",
+  "rank": "역장",
+  "commonTier": "T4",
+  "occupation": "역 행정",
   "gender": "남성",
   "stage": "S2",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-천초윤",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0359",
   "birthDate": "2092-09-15",
   "birthday": "09-15",
   "age": 34,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/149"
-  ],
-  "familyTree": {
-    "personId": "K358",
-    "nodes": [
-      {
-        "id": "K358",
-        "personId": "K358",
-        "kind": "person",
-        "name": "천초윤",
-        "birthDate": "2092-09-15",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K358"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-천초윤-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 양군 승인 전령, 하윤목의 실무 담당자 자리는 무표 출발 열차 저지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-천초윤-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0359"
-      },
-      {
-        "id": "FH-K358-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "천승진",
-        "lineage": {
-          "surname": "천",
-          "bongwan": "영양",
-          "clan": "cc9c-c601-c591"
-        },
-        "birthDate": "2062-09-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-천초윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2100,
-            "summary": "천승진은 신내 환승 당직에서 통과 전갈·면제 통행증 배달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-천초윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K358-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "천승현",
-        "lineage": {
-          "surname": "천",
-          "bongwan": "영양",
-          "clan": "cc9c-c601-c591"
-        },
-        "birthDate": "2032-09-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-천초윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2070,
-            "summary": "천승현은 신내 환승 당직에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-천초윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K358-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "천승영",
-        "lineage": {
-          "surname": "천",
-          "bongwan": "영양",
-          "clan": "cc9c-c601-c591"
-        },
-        "birthDate": "2002-09-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-천초윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "천승영은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-천초윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K358-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조준우",
-        "birthDate": "2062-09-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-천초윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2100,
-            "summary": "조준우는 신내 환승 당직에서 통과 전갈·면제 통행증 배달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-천초윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K358-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김준은",
-        "birthDate": "2032-09-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-천초윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2070,
-            "summary": "김준은은 신내 환승 당직에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-천초윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K358-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준정",
-        "birthDate": "2002-09-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-천초윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박준정은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-천초윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K358-P-01:K358:biological",
-        "from": "FH-K358-P-01",
-        "to": "K358",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-천초윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K358-P-02:FH-K358-P-01:biological",
-        "from": "FH-K358-P-02",
-        "to": "FH-K358-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-천초윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K358-P-03:FH-K358-P-02:biological",
-        "from": "FH-K358-P-03",
-        "to": "FH-K358-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-천초윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K358-M-01:K358:biological",
-        "from": "FH-K358-M-01",
-        "to": "K358",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-천초윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K358-M-02:FH-K358-M-01:biological",
-        "from": "FH-K358-M-02",
-        "to": "FH-K358-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-천초윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K358-M-03:FH-K358-M-02:biological",
-        "from": "FH-K358-M-03",
-        "to": "FH-K358-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-천초윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cc9c-c601-c591",
+    "name": "영양 천씨",
+    "crest": "clan-crests/cc9c-c601-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "두 노선이 만나는 은평구 불광역의 열과 공기가 역장 천초윤의 몫이다. 장부에는 서른네 살 남성, 영양 천씨로 올라 있다. 소등 사이렌 뒤 3교대가 펌프와 열과 출입구 경계만 돌리는 시간에 그는 승강장을 한 바퀴 돌고서야 하루를 끝낸다. 불광1동에는 동장이 없어 역 정원이 넘쳤다는 보고는 곧장 조하린 의원에게 올라가는데, 그는 그 보고에 숫자 대신 세대주의 이름을 적어 동주민센터 서기들을 번거롭게 한다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "불광역 역장",
+    "품계": "역장",
+    "생업": "역 행정",
+    "일하는 역": "불광역",
+    "잠자는 역": "불광역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "두 노선이 만나는 은평구 불광역의 열과 공기가 역장 천초윤의 몫이다. 장부에는 서른네 살 남성, 영양 천씨로 올라 있다. 소등 사이렌 뒤 3교대가 펌프와 열과 출입구 경계만 돌리는 시간에 그는 승강장을 한 바퀴 돌고서야 하루를 끝낸다. 불광1동에는 동장이 없어 역 정원이 넘쳤다는 보고는 곧장 조하린 의원에게 올라가는데, 그는 그 보고에 숫자 대신 세대주의 이름을 적어 동주민센터 서기들을 번거롭게 한다.",
+    "관직": "직함 불광역 역장. 직위 불광역 역장 · 정부. 품계 역장. 일하는 역 불광역."
+  },
+  "values": {
+    "권위": 80,
+    "개방": -65,
+    "무력": 70,
+    "물질": 5,
+    "공동": 15,
+    "원칙": 30,
+    "공개": -15,
+    "자격": 10,
+    "분산": -65,
+    "변혁": -35
+  },
+  "desire": {
+    "갈망": 25,
+    "독점": 35,
+    "위험": -15,
+    "과시": -20,
+    "지속": -15,
+    "지향": "이성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0359",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "천초윤",
+        "type": "지휘",
+        "to": "조하린",
+        "basis": "은평구 국회의원 조하린의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K146",
+    "name": "조하린",
+    "courtId": "court:K146",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
-      "learning": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "approval-notice-delivery",
-        "name": {
-          "ko": "승인 전갈 전달",
-          "en": "Approval notice delivery"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "진본 전갈만 나른다",
-          "en": "Carries verified notices"
-        },
-        "description": {
-          "ko": "서로 다른 면제 전갈을 잠그고 진본 대조를 요구했다. 봉인 운송과 문서 분별은 확인되지만 최종 진위 판정은 없다.",
-          "en": "Conflicting exemption notices were locked away pending authenticity comparison. Sealed delivery and scrutiny are supported, not a final authenticity finding."
-        },
-        "behavior": {
-          "ko": "봉인 끈이 느슨하면 출발을 거부하고, 빈 면제 칸이 찍힌 전갈을 사고 원인으로 본다. 숫자와 인장을 사람 말보다 믿는다.",
-          "en": "She refused departure whenever a seal cord sat loose and read a dispatch stamped with an empty exemption column as a cause of accidents. She trusted numbers and stamps over people's words."
-        },
-        "stress": {
-          "ko": "공포. 세 강국의 서로 다른 면제 전갈이 같은 주에 붙어 세리가 일방의 군사 비용 징수원으로 찍히는 것.",
-          "en": "Fear. That three great powers' different exemption dispatches, pasted in the same week, would stamp the customs officer a protection-money collector."
-        },
-        "relationship": {
-          "ko": "관계. 하윤목의 관문 원장을 봉인 상태로만 나르는 지휘를 받고, 영한뫼의 통과 원장과 순번을 나눈다. 정유라의 손실보상 조항을 전갈 말미에 옮기려 한다.",
-          "en": "Relations. Under command to carry Ha Yunmok's gate ledger only under seal, he shared order with Yeong Hanmoe's passage ledger. Sought to move Jeong Yura's loss-compensation clause into the tail of the dispatches."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 공동실무원. 직함은 양군 승인 전령, 하윤목의 실무 담당자. 통과 품목과 급수 시간을 같은 전갈에 적고, 군사 면제는 양군 결재와 계약감사 문구가 있는 통행증만 배달한다.",
-          "en": "Office. Rank: sergeant. Title: gate joint-approval courier, duty officer of Ha Yunmok. He wrote the passage items and the water-supply hours on the same dispatch and delivered military exemptions only on passage permits bearing an audit clause."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 공동실무원. 직함은 양군 승인 전령, 하윤목의 실무 담당자. 통과 품목과 급수 시간을 같은 전갈에 적고, 군사 면제는 양군 결재와 계약감사 문구가 있는 통행증만 배달한다.",
-          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: gate joint-approval courier, duty officer of Ha Yunmok. He wrote the passage items and the water-supply hours on the same dispatch and delivered military exemptions only on passage permits bearing an audit clause."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 세 강국의 서로 다른 면제 전갈이 같은 주에 붙어 세리가 일방의 군사 비용 징수원으로 찍히는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That three great powers' different exemption dispatches, pasted in the same week, would stamp the customs officer a protection-money collector."
-        },
-        "relationship": {
-          "ko": "관계. 하윤목의 관문 원장을 봉인 상태로만 나르는 지휘를 받고, 영한뫼의 통과 원장과 순번을 나눈다. 정유라의 손실보상 조항을 전갈 말미에 옮기려 한다.",
-          "en": "Relations. Under command to carry Ha Yunmok's gate ledger only under seal, he shared order with Yeong Hanmoe's passage ledger. Sought to move Jeong Yura's loss-compensation clause into the tail of the dispatches."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "서로 다른 면제 전갈을 잠그고 진본 대조를 요구했다. 봉인 운송과 문서 분별은 확인되지만 최종 진위 판정은 없다.",
-      "en": "Conflicting exemption notices were locked away pending authenticity comparison. Sealed delivery and scrutiny are supported, not a final authenticity finding."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,79 +152,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "cc9c-c601-c591",
-    "name": "영양 천씨",
-    "crest": "clan-crests/cc9c-c601-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 35,
-    "개방": -10,
-    "무력": 35,
-    "물질": 10,
-    "공동": 10,
-    "원칙": 10,
-    "공개": 10,
-    "자격": -5,
-    "분산": -15,
-    "변혁": -15
-  },
-  "desire": {
-    "갈망": 25,
-    "독점": 35,
-    "위험": -15,
-    "과시": -20,
-    "지속": -15,
-    "지향": "이성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "통과 전갈·면제 통행증 배달",
-    "소속": "아관사 양군 공동실무",
-    "품계": "공동실무원",
-    "직함": "양군 승인 전령, 하윤목의 실무 담당자",
-    "가치관": "권위 35 | 개방 −10 | 무력 35 | 물질 10 | 공동 10 | 원칙 10 | 공개 10 | 자격 −5 | 분산 −15 | 변혁 −15",
-    "욕망": "갈망 25 | 독점 35 | 위험 −15 | 과시 −20 | 지속 −15 | 지향 이성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2092-09-15에 태어났다. 2126년 개막 현재 양군 승인 전령, 하윤목의 실무 담당자 직무를 맡아 통과 전갈·면제 통행증 배달 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의1동의 통과 전갈·면제 통행증 배달 창구가 천초윤의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 공동실무원. 직함은 양군 승인 전령, 하윤목의 실무 담당자. 통과 전갈·면제 통행증 배달 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
-    "일화": "세 후원 문장이 붙은 지휘부가 서로 다른 급수·통과 면제 문서를 같은 주에 들이밀자 천초윤은 면제 전갈을 가방에 잠그고 진본 대조를 요구했다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
-    "관계": "하윤목의 관문 원장을 봉인 상태로만 나르는 지휘를 받고, 영한뫼의 통과 원장과 순번을 나눈다. 정유라의 손실보상 조항을 전갈 말미에 옮기려 한다.",
-    "야망": "천초윤은 양군 승인 전령, 하윤목의 실무 담당자 직무에서 통과 전갈·면제 통행증 배달 기록을 공개 인계표와 맞물리게 하려 한다.",
-    "공포": "양군 승인 전령, 하윤목의 실무 담당자 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
-    "개입": "면제 문서의 진본을 가리거나, 관문 원장을 수서 협약 초안에 실어 나를 수 있다. 천초윤의 통과 전갈·면제 통행증 배달 원장을 대조해 다음 인계의 증거를 세울 수 있다."
-  },
-  "biography": "천초윤은 통과 전갈·면제 통행증 배달 기록을 손에 익힌 아관사 양군 공동실무 인물이다. 봉인 끈이 느슨하면 출발을 거부하고, 빈 면제 칸이 찍힌 전갈을 사고 원인으로 본다. 숫자와 인장을 사람 말보다 믿는다.\n\n- 생업: 통과 전갈·면제 통행증 배달\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 승인 전령, 하윤목의 실무 담당자\n**생애.** 2092-09-15에 태어났다. 2126년 개막 현재 양군 승인 전령, 하윤목의 실무 담당자 직무를 맡아 통과 전갈·면제 통행증 배달 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의1동의 통과 전갈·면제 통행증 배달 창구가 천초윤의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 공동실무원. 직함은 양군 승인 전령, 하윤목의 실무 담당자. 통과 전갈·면제 통행증 배달 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 세 후원 문장이 붙은 지휘부가 서로 다른 급수·통과 면제 문서를 같은 주에 들이밀자 천초윤은 면제 전갈을 가방에 잠그고 진본 대조를 요구했다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 하윤목의 관문 원장을 봉인 상태로만 나르는 지휘를 받고, 영한뫼의 통과 원장과 순번을 나눈다. 정유라의 손실보상 조항을 전갈 말미에 옮기려 한다.\n\n**야망.** 천초윤은 양군 승인 전령, 하윤목의 실무 담당자 직무에서 통과 전갈·면제 통행증 배달 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 양군 승인 전령, 하윤목의 실무 담당자 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 면제 문서의 진본을 가리거나, 관문 원장을 수서 협약 초안에 실어 나를 수 있다. 천초윤의 통과 전갈·면제 통행증 배달 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −10 | 무력 35 | 물질 10 | 공동 10 | 원칙 10 | 공개 10 | 자격 −5 | 분산 −15 | 변혁 −15\n- 욕망: 갈망 25 | 독점 35 | 위험 −15 | 과시 −20 | 지속 −15 | 지향 이성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-14"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "천초윤",
-        "type": "지휘",
-        "to": "하윤목",
-        "basis": "하윤목의 관문 원장을 봉인 상태로만 나르는 지휘를 받고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:불광",
+      "name": {
+        "ko": "불광역"
       },
-      {
-        "from": "천초윤",
-        "type": "지휘",
-        "to": "영한뫼",
-        "basis": "영한뫼의 통과 원장과 순번을 나눈다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "방마름",
-        "type": "사제",
-        "to": "천초윤",
-        "basis": "천초윤의 전갈 사본을 같은 줄에 남긴다"
-      }
-    ]
-  }
+      "holderPersonId": "K358",
+      "directLiegePersonId": "K146",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "불광",
+        "stationName": "불광"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1138052000",
+          "name": "불광1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

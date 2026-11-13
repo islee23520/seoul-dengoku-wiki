@@ -1,496 +1,295 @@
 {
   "id": "person-0374",
   "name": "남윤경",
-  "title": "대주교",
-  "position": "명동대교구 대주교",
+  "title": "송파 곁집장",
+  "position": "송파 곁집장 · 아크 수석 신도 · 아크",
   "characterId": "K373",
-  "rank": "대주교",
+  "rank": "곁집장",
   "commonTier": "T1",
-  "occupation": "경매조정인",
+  "occupation": "곁집 통솔",
   "gender": "남성",
   "stage": "주요",
-  "state": "S15",
-  "stateName": "명동대교구",
-  "sourceRoute": "/world/Cast-State-15#인물-남윤경",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0374",
   "birthDate": "2091-05-02",
   "birthday": "05-02",
   "age": 35,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-15.json#/content/1",
-    "lore/characters/Cast-State-15.json#/content/3",
-    "lore/characters/Core-Characters.json#/content/139",
-    "lore/characters/Core-Characters.json#/content/140",
-    "lore/chronology/Century-Annals.json#/content/416",
-    "lore/chronology/Century-Annals.json#/content/572",
-    "lore/chronology/Scenario-Timeline.json#/content/10"
-  ],
-  "familyTree": {
-    "personId": "K373",
-    "nodes": [
-      {
-        "id": "K373",
-        "personId": "K373",
-        "kind": "person",
-        "name": "남윤경",
-        "birthDate": "2091-05-02",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K373"
-          },
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-남윤경-p1"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 명동성당 중구 명동길 74 제대의 손. 명동 제대와 교구 명부가 종이로 옮겨졌고, 명동대교구는 명동역에서 혼인과 위령을 인준한다. 서울역재고가의 경매 저울을 끊기지 않게 지킨 경력이 있다. 명동역 사제단의 비밀 선거에서 남윤경이 대주교로 선출되었으나 교황 없이 치른 선거의 정당성은 계속 다투어진다. 교구의 관할은 명동역과 명동성당 제대·교구 명부에 머문다. 주교회의 청사 광진 면목로는 바깥 창고로만 남긴다. 혼인·양자·위령 인준은 선거 뒤에도 이어지지만, 교황 인준이 없다는 이의가 봉인마다 따른다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-남윤경-p1"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0374"
-      },
-      {
-        "id": "FH-K373-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "남승진",
-        "lineage": {
-          "surname": "남",
-          "bongwan": "의령",
-          "clan": "b0a8-c758-b839"
-        },
-        "birthDate": "2061-05-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-남윤경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2099,
-            "summary": "남승진은 생활권의 공동 거처에서 경매조정인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-남윤경-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K373-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "남승현",
-        "lineage": {
-          "surname": "남",
-          "bongwan": "의령",
-          "clan": "b0a8-c758-b839"
-        },
-        "birthDate": "2031-05-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-남윤경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2069,
-            "summary": "남승현은 생활권의 공동 거처에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-남윤경-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K373-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "남승영",
-        "lineage": {
-          "surname": "남",
-          "bongwan": "의령",
-          "clan": "b0a8-c758-b839"
-        },
-        "birthDate": "2001-05-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-남윤경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "남승영은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-남윤경-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K373-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준재",
-        "birthDate": "2061-05-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-남윤경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2099,
-            "summary": "이준재는 생활권의 공동 거처에서 경매조정인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-남윤경-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K373-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준란",
-        "birthDate": "2031-05-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-남윤경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2069,
-            "summary": "최준란은 생활권의 공동 거처에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-남윤경-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K373-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준연",
-        "birthDate": "2001-05-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-남윤경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정준연은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-남윤경-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K373-P-01:K373:biological",
-        "from": "FH-K373-P-01",
-        "to": "K373",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-남윤경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K373-P-02:FH-K373-P-01:biological",
-        "from": "FH-K373-P-02",
-        "to": "FH-K373-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-남윤경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K373-P-03:FH-K373-P-02:biological",
-        "from": "FH-K373-P-03",
-        "to": "FH-K373-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-남윤경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K373-M-01:K373:biological",
-        "from": "FH-K373-M-01",
-        "to": "K373",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-남윤경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K373-M-02:FH-K373-M-01:biological",
-        "from": "FH-K373-M-02",
-        "to": "FH-K373-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-남윤경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K373-M-03:FH-K373-M-02:biological",
-        "from": "FH-K373-M-03",
-        "to": "FH-K373-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-남윤경-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b0a8-c758-b839",
+    "name": "의령 남씨",
+    "crest": "clan-crests/b0a8-c758-b839.svg"
   },
-  "proseContacts": [
-    {
-      "recipientId": "K397",
-      "recipientName": "함도겸",
-      "basis": "남윤경의 경매조정과 맞물리되, 보조 서명란은 조정인 도장과 겹치지 않게 둔다.",
-      "sourceRef": {
-        "path": "lore/characters/Cast-State-15.json",
-        "anchor": "인물-함도겸-p5"
-      }
-    }
-  ],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "물살이 얼음 알갱이로 막히는 날, 송파 곁집장 남윤경은 송파 곁집 몫의 불부터 끄고 교주의 집으로 가는 수차 전기는 가장 늦게까지 남긴다. 그의 집안은 잠실수중보 수차를 쉰 해 넘게 돌려 왔고, 서른다섯 살인 그가 물려받은 것은 보의 북쪽 끝을 정부가 쥔 반쪽짜리 수차다. 2120년 그 집안이 수차의 전기를 교주의 정비대에 대기로 한 약속을 그는 지금도 맹세로 지키며, 부위 둘을 지닌 몸으로 얼음 깨는 교대에 직접 선다. 같은 잠실에서 교섭을 맡은 맞수 정서온이 곁집장 자리를 넘보는 것을 알면서도, 네 곁집 자리에 들어갈 때마다 그를 곁에 세운다. 다른 곁집은 송파가 교주의 말을 가장 먼저 듣는다고 의심한다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "송파 곁집장",
+    "품계": "곁집장",
+    "생업": "곁집 통솔",
+    "일하는 역": "잠실역",
+    "잠자는 역": "잠실역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "물살이 얼음 알갱이로 막히는 날, 송파 곁집장 남윤경은 송파 곁집 몫의 불부터 끄고 교주의 집으로 가는 수차 전기는 가장 늦게까지 남긴다. 그의 집안은 잠실수중보 수차를 쉰 해 넘게 돌려 왔고, 서른다섯 살인 그가 물려받은 것은 보의 북쪽 끝을 정부가 쥔 반쪽짜리 수차다. 2120년 그 집안이 수차의 전기를 교주의 정비대에 대기로 한 약속을 그는 지금도 맹세로 지키며, 부위 둘을 지닌 몸으로 얼음 깨는 교대에 직접 선다. 같은 잠실에서 교섭을 맡은 맞수 정서온이 곁집장 자리를 넘보는 것을 알면서도, 네 곁집 자리에 들어갈 때마다 그를 곁에 세운다. 다른 곁집은 송파가 교주의 말을 가장 먼저 듣는다고 의심한다.",
+    "관직": "직함 송파 곁집장. 직위 송파 곁집장 · 아크 수석 신도 · 아크. 품계 곁집장. 일하는 역 잠실역."
+  },
+  "values": {
+    "권위": 35,
+    "개방": 15,
+    "무력": 0,
+    "물질": 10,
+    "공동": -10,
+    "원칙": -70,
+    "공개": -85,
+    "자격": -45,
+    "분산": -50,
+    "변혁": 45
+  },
+  "desire": {
+    "갈망": 50,
+    "독점": -10,
+    "위험": 10,
+    "과시": 40,
+    "지속": -20,
+    "지향": "양성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "christian",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0374",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "남윤경",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "남윤경",
+        "type": "경쟁",
+        "to": "정서온",
+        "basis": "잠실에서 교섭을 맡은 정서온이 송파 곁집장 자리를 넘본다"
+      },
+      {
+        "from": "남윤경",
+        "type": "맹세",
+        "to": "고예진",
+        "basis": "2120년 송파 집안이 수차의 전기를 교주의 정비대에 대기로 한 약속을 맹세로 지킨다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "최은재",
+        "type": "지휘",
+        "to": "남윤경",
+        "basis": "송파 곁집장 남윤경의 직속"
+      },
+      {
+        "from": "김도하",
+        "type": "지휘",
+        "to": "남윤경",
+        "basis": "송파 곁집장 남윤경의 직속"
+      },
+      {
+        "from": "명해솔",
+        "type": "지휘",
+        "to": "남윤경",
+        "basis": "송파 곁집장 남윤경의 직속"
+      },
+      {
+        "from": "구선율",
+        "type": "지휘",
+        "to": "남윤경",
+        "basis": "송파 곁집장 남윤경의 직속"
+      },
+      {
+        "from": "진마루",
+        "type": "지휘",
+        "to": "남윤경",
+        "basis": "송파 곁집장 남윤경의 직속"
+      },
+      {
+        "from": "이윤서",
+        "type": "지휘",
+        "to": "남윤경",
+        "basis": "송파 곁집장 남윤경의 직속"
+      },
+      {
+        "from": "한보라",
+        "type": "지휘",
+        "to": "남윤경",
+        "basis": "송파 곁집장 남윤경의 직속"
+      },
+      {
+        "from": "판지솔",
+        "type": "지휘",
+        "to": "남윤경",
+        "basis": "송파 곁집장 남윤경의 직속"
+      },
+      {
+        "from": "고서준",
+        "type": "계약",
+        "to": "남윤경",
+        "basis": "잠실수중보의 남북 끝을 나눠 쥔 송파 곁집 쪽과 보 북쪽 끝 부속서의 초안을 주고받는 약정 상대"
+      },
+      {
+        "from": "이봄결",
+        "type": "맹세",
+        "to": "남윤경",
+        "basis": "남윤경이 호위장으로 고른 날 곁집장의 수차를 지키겠다고 맹세했다"
+      },
+      {
+        "from": "김도하",
+        "type": "맹세",
+        "to": "남윤경",
+        "basis": "송파 곁집장 남윤경에게서 오륜동 대피소를 받으며 대피소의 물과 명부를 지키겠다고 한 맹세"
+      },
+      {
+        "from": "장예린",
+        "type": "맹세",
+        "to": "남윤경",
+        "basis": "잠실 정비대를 받으며 수차가 멎는 날에도 앓는 사람 몫의 충전을 먼저 떼어 두겠다고 남윤경에게 한 맹세"
+      },
+      {
+        "from": "김우찬",
+        "type": "맹세",
+        "to": "남윤경",
+        "basis": "송파 곁집장 남윤경에게 맹세하고 수차 교대를 맡았다"
+      },
+      {
+        "from": "하서진",
+        "type": "맹세",
+        "to": "남윤경",
+        "basis": "젊어서부터 수차 교대를 서 온 곁집 어른으로 젊은 곁집장을 받친다"
+      },
+      {
+        "from": "정서온",
+        "type": "경쟁",
+        "to": "남윤경",
+        "basis": "송파 곁집장 자리를 두고 맞선다. 남윤경은 핏줄로 이었고, 정서온은 부위와 셈으로 그 다음을 넘본다"
+      },
+      {
+        "from": "고예진",
+        "type": "계약",
+        "to": "남윤경",
+        "basis": "송파 곁집이 2120년에 약속한 잠실수중보 수차의 전기가 교주의 집 정비대로 들어온다. 남윤경이 지금 그 약속을 쥔다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K1018",
+    "name": "고예진",
+    "courtId": "court:K1018",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K373",
+    "members": [
+      {
+        "personId": "K059",
+        "name": "최은재"
+      },
+      {
+        "personId": "K061",
+        "name": "김도하"
+      },
+      {
+        "personId": "person-0071",
+        "name": "명해솔"
+      },
+      {
+        "personId": "person-0075",
+        "name": "구선율"
+      },
+      {
+        "personId": "person-0076",
+        "name": "진마루"
+      },
+      {
+        "personId": "K119",
+        "name": "이윤서"
+      },
+      {
+        "personId": "K123",
+        "name": "한보라"
+      },
+      {
+        "personId": "K408",
+        "name": "판지솔"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 11,
-        "effective": 11
+      "diplomacy": {
+        "base": 10,
+        "effective": 10
       },
-      "strategy": {
-        "base": 12,
-        "effective": 12
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 14,
-        "effective": 14
+      "stewardship": {
+        "base": 9,
+        "effective": 9
       },
-      "management": {
-        "base": 14,
-        "effective": 14
-      },
-      "insight": {
-        "base": 14,
-        "effective": 14
+      "intrigue": {
+        "base": 8,
+        "effective": 8
       },
       "learning": {
-        "base": 11,
-        "effective": 11
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "k373-emergency-rations",
-        "name": {
-          "ko": "비상배급 조정",
-          "en": "Emergency-ration coordination"
-        },
-        "rating": 70
+        "id": "v3-person-0374-wheel-share",
+        "name": "수차 전기 나누기",
+        "rating": 68
       }
     ],
     "traits": [
       {
-        "id": "k373-trait-1",
-        "name": {
-          "ko": "경매를 늦추는 배급",
-          "en": "Rations that delay the auction"
-        },
-        "description": {
-          "ko": "시세만 따르지 않고 비상배급을 병행한다.",
-          "en": "Uses emergency distribution rather than following prices alone."
-        },
-        "behavior": {
-          "ko": "시세만 따르지 않고 비상배급을 병행한다.",
-          "en": "Uses emergency distribution rather than following prices alone."
-        },
-        "stress": {
-          "ko": "흉작 소문이 닿기 전 경매를 하루 미룬다.",
-          "en": "Delays the auction before crop-failure rumors reach the scales."
-        },
-        "relationship": {
-          "ko": "오해린과 경쟁하며 윤서린과 배급 원장을 교환한다.",
-          "en": "Competes with O Haerin and exchanges ration ledgers with Yun Seorin."
-        },
+        "id": "v3-person-0374-trait-1",
+        "name": "마지막에 끄는 손",
+        "description": "수차가 멎는 날 교주의 집으로 가는 전기를 가장 늦게 끊는다.",
+        "behavior": "전기가 모자라면 송파 곁집의 몫부터 줄인다.",
+        "stress": "물살이 얼음 알갱이로 막힌 날이 사흘을 넘기면 잠을 자지 않는다.",
+        "relationship": "정서온을 곁에 세워 두고 그 셈을 늘 먼저 듣는다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "흉작 소문에 비상배급 칸을 열고 공개 경매를 하루 미뤘다. 공개 거래와 비공개 배급을 함께 쓰는 조정이 강점이지만 교황 없는 선출의 정당성은 계속 다투어진다.",
-      "en": "She opened emergency-ration fields and delayed the public auction by a day in response to crop-failure rumors. Coordinating public trade and private emergency distribution is a strength, while the legitimacy of election without papal ratification remains disputed."
-    },
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -518,114 +317,301 @@
   },
   "confirmedHoldings": [
     {
-      "id": "holding:capital-s15",
+      "id": "holding:v3:duchy:11710",
       "name": {
-        "ko": "명동역 직영지"
+        "ko": "송파구 공작령"
       },
       "holderPersonId": "K373",
-      "directLiegePersonId": null,
-      "stateId": "S15",
-      "stationRef": {
-        "stationId": "명동",
-        "stationName": "명동"
-      },
-      "adminRefs": [],
+      "directLiegePersonId": "K1018",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1171051000",
+          "name": "풍납1동"
+        },
+        {
+          "id": "region:1171052000",
+          "name": "풍납2동"
+        },
+        {
+          "id": "region:1171053100",
+          "name": "거여1동"
+        },
+        {
+          "id": "region:1171053200",
+          "name": "거여2동"
+        },
+        {
+          "id": "region:1171054000",
+          "name": "마천1동"
+        },
+        {
+          "id": "region:1171055000",
+          "name": "마천2동"
+        },
+        {
+          "id": "region:1171056100",
+          "name": "방이1동"
+        },
+        {
+          "id": "region:1171056200",
+          "name": "방이2동"
+        },
+        {
+          "id": "region:1171056600",
+          "name": "오륜동"
+        },
+        {
+          "id": "region:1171057000",
+          "name": "오금동"
+        },
+        {
+          "id": "region:1171058000",
+          "name": "송파1동"
+        },
+        {
+          "id": "region:1171059000",
+          "name": "송파2동"
+        },
+        {
+          "id": "region:1171060000",
+          "name": "석촌동"
+        },
+        {
+          "id": "region:1171061000",
+          "name": "삼전동"
+        },
+        {
+          "id": "region:1171062000",
+          "name": "가락본동"
+        },
+        {
+          "id": "region:1171063100",
+          "name": "가락1동"
+        },
+        {
+          "id": "region:1171063200",
+          "name": "가락2동"
+        },
+        {
+          "id": "region:1171064100",
+          "name": "문정1동"
+        },
+        {
+          "id": "region:1171064200",
+          "name": "문정2동"
+        },
+        {
+          "id": "region:1171064600",
+          "name": "장지동"
+        },
+        {
+          "id": "region:1171064700",
+          "name": "위례동"
+        },
+        {
+          "id": "region:1171065000",
+          "name": "잠실본동"
+        },
+        {
+          "id": "region:1171067000",
+          "name": "잠실2동"
+        },
+        {
+          "id": "region:1171068000",
+          "name": "잠실3동"
+        },
+        {
+          "id": "region:1171069000",
+          "name": "잠실4동"
+        },
+        {
+          "id": "region:1171071000",
+          "name": "잠실6동"
+        },
+        {
+          "id": "region:1171072000",
+          "name": "잠실7동"
+        }
+      ],
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11710",
       "geometrySource": null,
-      "territorialScale": null,
       "formalTitleRank": null
     }
   ],
-  "clan": {
-    "id": "b0a8-c758-b839",
-    "name": "의령 남씨",
-    "crest": "clan-crests/b0a8-c758-b839.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": true,
-  "values": {
-    "권위": 10,
-    "개방": 30,
-    "무력": -10,
-    "물질": 60,
-    "공동": -30,
-    "원칙": -60,
-    "공개": -40,
-    "자격": -10,
-    "분산": -20,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 50,
-    "독점": -10,
-    "위험": 10,
-    "과시": 40,
-    "지속": -20,
-    "지향": "양성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "경매조정인",
-    "소속": "명동대교구",
-    "품계": "대주교",
-    "직함": "명동대교구 대주교",
-    "업무 위치": "명동 행정동 범위. 명동역의 인준과 명동성당의 예식·행정 업무를 명동 슬롯에 결속한다. 대주교 선출·교황 인준 부재와 관할 제약을 보존한다. 거주지나 정확한 시설 경계를 확정하지 않으며 새 작위·영지·점유권을 부여하지 않는다.",
-    "거주 위치": "잠실6동 행정동 범위. 현행 롯데월드타워 거주와 타워·몰 지하 사용, 잠실역 연결 통로를 보존한다. 중구 수도 mapping으로 거주를 이전하지 않는다. 정확한 시설 경계를 확정하지 않으며 새 작위·영지·점유권을 부여하지 않는다."
-  },
-  "sections": {
-    "생애": "2126년 세대. 남윤경은 중구 명동길 74 명동성당 제대와 교구 명부에서 일했다. 명동역 사제단이 비밀 선거로 대주교를 선출했으며 교황 인준이 없는 선거의 정당성은 계속 다투어진다. 명동역과 명동성당의 명부를 따라 혼인·양자·위령 인준을 맡는다. 남윤경은 잠실6동 롯데월드타워에 거주하며 타워와 몰 지하, 잠실역 연결 통로를 이용한다. 서울역재고가의 경매 저울을 지킨 경력이 있어 오해린의 가격 기록과 겨루고 윤서린과 배급 원장을 교환한다. 영구 겨울의 저장 식량 출고가 줄어 가격표가 오르자 공개 경매를 하루 미루고 비상배급 칸을 열었다. 배우진의 동부 군량 출고도 저울 기록과 대조된다.\n관직. 품계 대주교. 직함은 명동대교구 대주교. 생업 별명은 경매조정인. 사제단 비밀 선거로 뽑혔으며 교황 인준 없이 직무를 맡는다.\n일화. 저장 식량 출고량이 줄어 가격표가 오른 날, 남윤경은 공개 경매를 하루 미루고 비상배급 칸을 열었다. 윤서린에게 넘긴 배급 원장 사본에 출고량을 적고 오해린의 가격 봉인 전에 저울을 확인했다.\n가문. 서울역재고가(HC09)와 경매 저울의 인연이 있다. 노량진배달가(HC06) 관리인은 오해린이다.\n관계. 오해린과 시장 경쟁. 배우진에게 군량. 윤서린과 배급 원장.\n\n- 생업: 경매조정인\n- 소속: 명동대교구\n- 품계: 대주교\n- 직함: 명동대교구 대주교\n- 업무 위치: 명동 행정동 범위. 명동역의 인준과 명동성당의 예식·행정 업무를 명동 슬롯에 결속한다. 대주교 선출·교황 인준 부재와 관할 제약을 보존한다. 거주지나 정확한 시설 경계를 확정하지 않으며 새 작위·영지·점유권을 부여하지 않는다.\n- 거주 위치: 잠실6동 행정동 범위. 현행 롯데월드타워 거주와 타워·몰 지하 사용, 잠실역 연결 통로를 보존한다. 중구 수도 mapping으로 거주를 이전하지 않는다. 정확한 시설 경계를 확정하지 않으며 새 작위·영지·점유권을 부여하지 않는다.\n\n명동역 교구청의 사제단은 비밀 선거로 대주교를 뽑고, 교황 없는 선출의 정당성을 둘러싼 이의를 계속 받는다."
-  },
-  "biography": "**생애.** 2126년 세대. 남윤경은 중구 명동길 74 명동성당 제대와 교구 명부에서 일했다. 명동역 사제단이 비밀 선거로 대주교를 선출했으며 교황 인준이 없는 선거의 정당성은 계속 다투어진다. 명동역과 명동성당의 명부를 따라 혼인·양자·위령 인준을 맡는다. 남윤경은 잠실6동 롯데월드타워에 거주하며 타워와 몰 지하, 잠실역 연결 통로를 이용한다. 서울역재고가의 경매 저울을 지킨 경력이 있어 오해린의 가격 기록과 겨루고 윤서린과 배급 원장을 교환한다. 영구 겨울의 저장 식량 출고가 줄어 가격표가 오르자 공개 경매를 하루 미루고 비상배급 칸을 열었다. 배우진의 동부 군량 출고도 저울 기록과 대조된다.\n관직. 품계 대주교. 직함은 명동대교구 대주교. 생업 별명은 경매조정인. 사제단 비밀 선거로 뽑혔으며 교황 인준 없이 직무를 맡는다.\n일화. 저장 식량 출고량이 줄어 가격표가 오른 날, 남윤경은 공개 경매를 하루 미루고 비상배급 칸을 열었다. 윤서린에게 넘긴 배급 원장 사본에 출고량을 적고 오해린의 가격 봉인 전에 저울을 확인했다.\n가문. 서울역재고가(HC09)와 경매 저울의 인연이 있다. 노량진배달가(HC06) 관리인은 오해린이다.\n관계. 오해린과 시장 경쟁. 배우진에게 군량. 윤서린과 배급 원장.\n\n- 생업: 경매조정인\n- 소속: 명동대교구\n- 품계: 대주교\n- 직함: 명동대교구 대주교\n- 업무 위치: 명동 행정동 범위. 명동역의 인준과 명동성당의 예식·행정 업무를 명동 슬롯에 결속한다. 대주교 선출·교황 인준 부재와 관할 제약을 보존한다. 거주지나 정확한 시설 경계를 확정하지 않으며 새 작위·영지·점유권을 부여하지 않는다.\n- 거주 위치: 잠실6동 행정동 범위. 현행 롯데월드타워 거주와 타워·몰 지하 사용, 잠실역 연결 통로를 보존한다. 중구 수도 mapping으로 거주를 이전하지 않는다. 정확한 시설 경계를 확정하지 않으며 새 작위·영지·점유권을 부여하지 않는다.\n\n명동역 교구청의 사제단은 비밀 선거로 대주교를 뽑고, 교황 없는 선출의 정당성을 둘러싼 이의를 계속 받는다.",
-  "sources": [
-    "Cast-State-15",
-    "Core-Characters"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": [
-      {
-        "from": "라진우",
-        "type": "지휘",
-        "to": "남윤경",
-        "basis": "비공개 비상배급 창고를 지킴"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:dong:1171062000",
+      "name": {
+        "ko": "가락본동"
       },
-      {
-        "from": "남시윤",
-        "type": "계약",
-        "to": "남윤경",
-        "basis": "청과 품목 회의를 공유"
+      "holderPersonId": "K059",
+      "directLiegePersonId": "K373",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1171062000",
+          "name": "가락본동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "최은재",
+      "holderRoute": "/people/person-0059"
+    },
+    {
+      "id": "holding:v3:dong:1171056600",
+      "name": {
+        "ko": "오륜동"
       },
-      {
-        "from": "박진솔",
-        "type": "원한",
-        "to": "남윤경",
-        "basis": "종자 시세를 가격 원장에 매기는 원한"
+      "holderPersonId": "K061",
+      "directLiegePersonId": "K373",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1171056600",
+          "name": "오륜동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "김도하",
+      "holderRoute": "/people/person-0061"
+    },
+    {
+      "id": "holding:v3:dong:1171072000",
+      "name": {
+        "ko": "잠실7동"
       },
-      {
-        "from": "조민재",
-        "type": "경쟁",
-        "to": "남윤경",
-        "basis": "시세 발표 시각을 가락과 다툼"
+      "holderPersonId": "person-0071",
+      "directLiegePersonId": "K373",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1171072000",
+          "name": "잠실7동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "명해솔",
+      "holderRoute": "/people/person-0071"
+    },
+    {
+      "id": "holding:v3:dong:1171063200",
+      "name": {
+        "ko": "가락2동"
       },
-      {
-        "from": "원다결",
-        "type": "원한",
-        "to": "남윤경",
-        "basis": "남윤경의 비상 시세 제의를 원한으로 돌려보낸다"
+      "holderPersonId": "person-0075",
+      "directLiegePersonId": "K373",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1171063200",
+          "name": "가락2동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "구선율",
+      "holderRoute": "/people/person-0075"
+    },
+    {
+      "id": "holding:v3:dong:1171057000",
+      "name": {
+        "ko": "오금동"
       },
-      {
-        "from": "방석담",
-        "type": "계약",
-        "to": "남윤경",
-        "basis": "남윤경의 공개 경매에는 복종하되 은폐 배전은 거부한다"
+      "holderPersonId": "person-0076",
+      "directLiegePersonId": "K373",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1171057000",
+          "name": "오금동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "진마루",
+      "holderRoute": "/people/person-0076"
+    },
+    {
+      "id": "holding:v3:dong:1171071000",
+      "name": {
+        "ko": "잠실6동"
       },
-      {
-        "from": "흥예나",
-        "type": "계약",
-        "to": "남윤경",
-        "basis": "남윤경의 공개 경매에 유찰 종을 맞추고"
-      }
-    ]
-  }
+      "holderPersonId": "K119",
+      "directLiegePersonId": "K373",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1171071000",
+          "name": "잠실6동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "이윤서",
+      "holderRoute": "/people/person-0120"
+    },
+    {
+      "id": "holding:v3:dong:1171058000",
+      "name": {
+        "ko": "송파1동"
+      },
+      "holderPersonId": "K123",
+      "directLiegePersonId": "K373",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1171058000",
+          "name": "송파1동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "한보라",
+      "holderRoute": "/people/person-0124"
+    },
+    {
+      "id": "holding:v3:station:강동구청",
+      "name": {
+        "ko": "강동구청역"
+      },
+      "holderPersonId": "K408",
+      "directLiegePersonId": "K373",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "강동구청",
+        "stationName": "강동구청"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1174064000",
+          "name": "성내1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "판지솔",
+      "holderRoute": "/people/person-0409"
+    }
+  ]
 }

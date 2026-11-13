@@ -3,27 +3,27 @@
   "personId": "person-0346",
   "characterId": "K345",
   "name": "근우람",
-  "stateId": "S13",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "군사호적 치료 거부 증인"
+    "role": "기능조 조장 · 광흥창역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "short pin-curled hair",
-    "upper": "rust brown medical smock with rolled sleeves over a knit vest",
-    "outfit": "rust brown medical smock with rolled sleeves over a knit vest",
+    "upper": "grey quilted work suit with a trade tag sewn on the left chest",
+    "outfit": "grey quilted work suit with a trade tag sewn on the left chest",
     "palette": [
-      "rust brown",
-      "slate blue",
-      "burgundy"
+      "slate grey",
+      "charcoal",
+      "rust"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "slate blue high-waisted wide-leg wool trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "canvas medical satchel without markings"
+    "lower": "quilted synthetic trousers",
+    "footwear": "felt-lined synthetic rubber boots",
+    "accessories": "sewn trade tag and a pump wrench hanging from a belt loop"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "flat cloth cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "rust brown medical smock with rolled sleeves over a knit vest",
+        "value": "grey quilted work suit with a trade tag sewn on the left chest",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "slate blue high-waisted wide-leg wool trousers",
+        "value": "quilted synthetic trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt-lined synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "open coat collar over a rolled sweater neck",
+        "value": "high quilted collar with a cloth face covering",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "canvas medical satchel without markings",
+        "value": "sewn trade tag and a pump wrench hanging from a belt loop",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat rectangular satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "undyed canvas and brown leather",
+        "value": "grey cloth and dull steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "canvas, leather",
+        "value": "cloth, steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the shoulder",
+        "value": "sewn on the chest and hung at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "rectangular tag and long open-ended wrench",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 근우람, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average with narrow shoulders; skin: medium warm beige. upper garment: rust brown medical smock with rolled sleeves over a knit vest; neckline: open coat collar over a rolled sweater neck. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: rust brown, slate blue, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 근우람, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average with narrow shoulders; skin: medium warm beige. headwear: flat cloth cap; upper garment: grey quilted work suit with a trade tag sewn on the left chest; neckline: high quilted collar with a cloth face covering. accessories: sewn trade tag and a pump wrench hanging from a belt loop; worn as sewn on the chest and hung at the belt. color palette: slate grey, charcoal, rust. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 근우람, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. upper garment: rust brown medical smock with rolled sleeves over a knit vest; neckline: open coat collar over a rolled sweater neck; lower garment: slate blue high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: rust brown, slate blue, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 근우람, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. headwear: flat cloth cap; upper garment: grey quilted work suit with a trade tag sewn on the left chest; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: sewn trade tag and a pump wrench hanging from a belt loop; worn as sewn on the chest and hung at the belt. color palette: slate grey, charcoal, rust. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 근우람, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. upper garment: rust brown medical smock with rolled sleeves over a knit vest; neckline: open coat collar over a rolled sweater neck; lower garment: slate blue high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: rust brown, slate blue, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 근우람, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. headwear: flat cloth cap; upper garment: grey quilted work suit with a trade tag sewn on the left chest; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: sewn trade tag and a pump wrench hanging from a belt loop; worn as sewn on the chest and hung at the belt. color palette: slate grey, charcoal, rust. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 근우람, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. upper garment: rust brown medical smock with rolled sleeves over a knit vest; neckline: open coat collar over a rolled sweater neck; lower garment: slate blue high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: rust brown, slate blue, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 근우람, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. headwear: flat cloth cap; upper garment: grey quilted work suit with a trade tag sewn on the left chest; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: sewn trade tag and a pump wrench hanging from a belt loop; worn as sewn on the chest and hung at the belt. color palette: slate grey, charcoal, rust. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 근우람, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. upper garment: rust brown medical smock with rolled sleeves over a knit vest; neckline: open coat collar over a rolled sweater neck; lower garment: slate blue high-waisted wide-leg wool trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: rust brown, slate blue, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 근우람, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: round; monolid almond dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. headwear: flat cloth cap; upper garment: grey quilted work suit with a trade tag sewn on the left chest; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: sewn trade tag and a pump wrench hanging from a belt loop; worn as sewn on the chest and hung at the belt. color palette: slate grey, charcoal, rust. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

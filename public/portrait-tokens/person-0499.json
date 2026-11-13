@@ -3,27 +3,27 @@
   "personId": "person-0499",
   "characterId": "K499",
   "name": "우하진",
-  "stateId": "S12",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "의무호송 기록관"
+    "role": "국가정보원 정보원 · 서울역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "short wavy hair",
-    "upper": "cream medical smock with rolled sleeves over a knit vest, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "cream medical smock with rolled sleeves over a knit vest, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "회색 작업 누빔옷, 왼쪽 가슴에 직종 표를 꿰맨 차림",
+    "outfit": "회색 작업 누빔옷, 왼쪽 가슴에 직종 표를 꿰맨 차림",
     "palette": [
-      "cream",
+      "grey",
       "navy",
-      "sand beige"
+      "black"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "navy wool breeches with buttoned cuffs",
-    "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "canvas medical satchel without markings"
+    "lower": "navy padded work trousers",
+    "footwear": "felt boots with rubber soles",
+    "accessories": "occupation tag sewn on the left chest and ink-stained cotton oversleeves"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "fur-lined ear-flap cap",
+        "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "cream medical smock with rolled sleeves over a knit vest, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "회색 작업 누빔옷, 왼쪽 가슴에 직종 표를 꿰맨 차림",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "navy wool breeches with buttoned cuffs",
+        "value": "navy padded work trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "thick-soled leather winter boots with wool socks",
+        "value": "felt boots with rubber soles",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "open coat collar over a rolled sweater neck",
+        "value": "buttoned quilted collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "canvas medical satchel without markings",
+        "value": "occupation tag sewn on the left chest and ink-stained cotton oversleeves",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat rectangular satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "undyed canvas and brown leather",
+        "value": "off-white tag, grey cotton stained black",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "canvas, leather",
+        "value": "cotton cloth, thread",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the shoulder",
+        "value": "sewn to the chest; oversleeves tied above the elbows",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small rectangular tag and tubular sleeves",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 우하진, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short wavy hair; black streaked with grey hair; short length. build: average; skin: fair with a neutral undertone. headwear: fur-lined ear-flap cap; upper garment: cream medical smock with rolled sleeves over a knit vest, under a heavy wool greatcoat with a raised collar for surface cold; neckline: open coat collar over a rolled sweater neck. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, navy, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 우하진, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short wavy hair; black streaked with grey hair; short length. build: average; skin: fair with a neutral undertone. upper garment: 회색 작업 누빔옷, 왼쪽 가슴에 직종 표를 꿰맨 차림; neckline: buttoned quilted collar. accessories: occupation tag sewn on the left chest and ink-stained cotton oversleeves; worn as sewn to the chest; oversleeves tied above the elbows. color palette: grey, navy, black. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 우하진, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short wavy hair; black streaked with grey hair; short length. build: average; skin: fair with a neutral undertone; average adult male height. headwear: fur-lined ear-flap cap; upper garment: cream medical smock with rolled sleeves over a knit vest, under a heavy wool greatcoat with a raised collar for surface cold; neckline: open coat collar over a rolled sweater neck; lower garment: navy wool breeches with buttoned cuffs; footwear: thick-soled leather winter boots with wool socks. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, navy, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 우하진, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short wavy hair; black streaked with grey hair; short length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: 회색 작업 누빔옷, 왼쪽 가슴에 직종 표를 꿰맨 차림; neckline: buttoned quilted collar; lower garment: navy padded work trousers; footwear: felt boots with rubber soles. accessories: occupation tag sewn on the left chest and ink-stained cotton oversleeves; worn as sewn to the chest; oversleeves tied above the elbows. color palette: grey, navy, black. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 우하진, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short wavy hair; black streaked with grey hair; short length. build: average; skin: fair with a neutral undertone; average adult male height. headwear: fur-lined ear-flap cap; upper garment: cream medical smock with rolled sleeves over a knit vest, under a heavy wool greatcoat with a raised collar for surface cold; neckline: open coat collar over a rolled sweater neck; lower garment: navy wool breeches with buttoned cuffs; footwear: thick-soled leather winter boots with wool socks. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, navy, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 우하진, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short wavy hair; black streaked with grey hair; short length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: 회색 작업 누빔옷, 왼쪽 가슴에 직종 표를 꿰맨 차림; neckline: buttoned quilted collar; lower garment: navy padded work trousers; footwear: felt boots with rubber soles. accessories: occupation tag sewn on the left chest and ink-stained cotton oversleeves; worn as sewn to the chest; oversleeves tied above the elbows. color palette: grey, navy, black. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 우하진, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short wavy hair; black streaked with grey hair; short length. build: average; skin: fair with a neutral undertone; average adult male height. headwear: fur-lined ear-flap cap; upper garment: cream medical smock with rolled sleeves over a knit vest, under a heavy wool greatcoat with a raised collar for surface cold; neckline: open coat collar over a rolled sweater neck; lower garment: navy wool breeches with buttoned cuffs; footwear: thick-soled leather winter boots with wool socks. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, navy, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 우하진, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short wavy hair; black streaked with grey hair; short length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: 회색 작업 누빔옷, 왼쪽 가슴에 직종 표를 꿰맨 차림; neckline: buttoned quilted collar; lower garment: navy padded work trousers; footwear: felt boots with rubber soles. accessories: occupation tag sewn on the left chest and ink-stained cotton oversleeves; worn as sewn to the chest; oversleeves tied above the elbows. color palette: grey, navy, black. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 우하진, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short wavy hair; black streaked with grey hair; short length. build: average; skin: fair with a neutral undertone; average adult male height. headwear: fur-lined ear-flap cap; upper garment: cream medical smock with rolled sleeves over a knit vest, under a heavy wool greatcoat with a raised collar for surface cold; neckline: open coat collar over a rolled sweater neck; lower garment: navy wool breeches with buttoned cuffs; footwear: thick-soled leather winter boots with wool socks. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, navy, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 우하진, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short wavy hair; black streaked with grey hair; short length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: 회색 작업 누빔옷, 왼쪽 가슴에 직종 표를 꿰맨 차림; neckline: buttoned quilted collar; lower garment: navy padded work trousers; footwear: felt boots with rubber soles. accessories: occupation tag sewn on the left chest and ink-stained cotton oversleeves; worn as sewn to the chest; oversleeves tied above the elbows. color palette: grey, navy, black. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

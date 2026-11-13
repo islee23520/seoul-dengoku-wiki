@@ -4,7 +4,8 @@ import path from 'node:path';
 
 export function relationsPage({ graph, ko, g, P, states, people, details, body, REPO }) {
   const personIdOf = new Map();
-  for (const [pid, row] of details) { const d = JSON.parse(row.json); if (d.characterId) personIdOf.set(d.characterId, pid); }
+  // graph node ids are the characterId when there is one, otherwise the person id (v3 07 9.4)
+  for (const [pid, row] of details) { personIdOf.set(pid, pid); const d = JSON.parse(row.json); if (d.characterId) personIdOf.set(d.characterId, pid); }
   const nodeName = (cid) => graph.nodes.find((n) => n.id === cid)?.name ?? cid;
   const personName = (cid) => {
     const pid = personIdOf.get(cid);

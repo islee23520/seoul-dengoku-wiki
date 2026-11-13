@@ -1,398 +1,146 @@
 {
   "id": "person-0122",
   "name": "최도윤",
-  "title": "동부 급수구역 시민대표",
-  "position": "동부 급수구역 시민대표",
+  "title": "강남 곁집 어른",
+  "position": "강남 곁집 어른 · 수서역",
   "characterId": "K121",
-  "rank": "대대장",
-  "commonTier": "T3",
-  "occupation": "골목 배급표·시민 명부 관리",
+  "rank": "곁집 어른",
+  "commonTier": "T2",
+  "occupation": "곁집 통솔",
   "gender": "남성",
   "stage": "S1",
-  "state": "S05",
-  "stateName": "동방사",
-  "sourceRoute": "/world/Cast-State-05#인물-최도윤",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0122",
   "birthDate": "2066-04-12",
   "birthday": "04-12",
   "age": 60,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-05.json#/content/16",
-    "lore/characters/Cast-State-05.json#/content/21"
-  ],
-  "familyTree": {
-    "personId": "K121",
-    "nodes": [
-      {
-        "id": "K121",
-        "personId": "K121",
-        "kind": "person",
-        "name": "최도윤",
-        "birthDate": "2066-04-12",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K121"
-          },
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-최도윤-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 동부 급수구역 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-최도윤-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0122"
-      },
-      {
-        "id": "FH-K121-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최현민",
-        "lineage": {
-          "surname": "최",
-          "bongwan": "해주",
-          "clan": "cd5c-d574-c8fc-5d14"
-        },
-        "birthDate": "2036-04-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-최도윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "최현민은 영등포 정수 당직에서 골목 배급표·시민 명부 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-최도윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K121-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최현원",
-        "lineage": {
-          "surname": "최",
-          "bongwan": "해주",
-          "clan": "cd5c-d574-c8fc-5d14"
-        },
-        "birthDate": "2006-04-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-최도윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최현원은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-최도윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K121-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이현준",
-        "birthDate": "2036-04-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-최도윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "이현준은 영등포 정수 당직에서 골목 배급표·시민 명부 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-최도윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K121-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최현진",
-        "birthDate": "2006-04-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-최도윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최현진은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-최도윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K121-P-01:K121:biological",
-        "from": "FH-K121-P-01",
-        "to": "K121",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-최도윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K121-P-02:FH-K121-P-01:biological",
-        "from": "FH-K121-P-02",
-        "to": "FH-K121-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-최도윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K121-M-01:K121:biological",
-        "from": "FH-K121-M-01",
-        "to": "K121",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-최도윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K121-M-02:FH-K121-M-01:biological",
-        "from": "FH-K121-M-02",
-        "to": "FH-K121-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-최도윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cd5c-d574-c8fc-5d14",
+    "name": "해주 최씨",
+    "crest": "clan-crests/cd5c-d574-c8fc-5d14.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "최도윤은 예순 살의 강남 곁집 어른이고, 수서역 깊은 노선 층에 잠자리를 둔다. 대피소들이 고예진의 정비대에 먹을 것을 대던 시절, 그는 수서 둘레 대피소의 끼니 몫을 셈하던 사람이었다. 지금은 강남 곁집 창고가 나누는 끼니가 갓 세례받아 앓는 사람과 정비공에게 먼저 가는지를 살핀다. 이홍원과는 강남의 깊은 층을 남에게 내주지 않기로 맹세했지만, 곁집장 오경재 앞에서는 늘 말을 아낀다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "강남 곁집 어른",
+    "품계": "곁집 어른",
+    "생업": "곁집 통솔",
+    "일하는 역": "수서역",
+    "잠자는 역": "수서역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "최도윤은 예순 살의 강남 곁집 어른이고, 수서역 깊은 노선 층에 잠자리를 둔다. 대피소들이 고예진의 정비대에 먹을 것을 대던 시절, 그는 수서 둘레 대피소의 끼니 몫을 셈하던 사람이었다. 지금은 강남 곁집 창고가 나누는 끼니가 갓 세례받아 앓는 사람과 정비공에게 먼저 가는지를 살핀다. 이홍원과는 강남의 깊은 층을 남에게 내주지 않기로 맹세했지만, 곁집장 오경재 앞에서는 늘 말을 아낀다.",
+    "관직": "직함 강남 곁집 어른. 직위 강남 곁집 어른 · 수서역. 품계 곁집 어른. 일하는 역 수서역."
+  },
+  "values": {
+    "권위": 75,
+    "개방": -60,
+    "무력": 75,
+    "물질": -30,
+    "공동": 45,
+    "원칙": -35,
+    "공개": -95,
+    "자격": -65,
+    "분산": -70,
+    "변혁": 20
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -10,
+    "위험": -30,
+    "과시": -5,
+    "지속": 30,
+    "지향": "유동",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0122",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "최도윤",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "최도윤",
+        "type": "맹세",
+        "to": "이홍원",
+        "basis": "강남의 깊은 층을 남에게 내주지 않기로 이홍원과 함께 맹세했다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "이홍원",
+        "type": "맹세",
+        "to": "최도윤",
+        "basis": "강남의 깊은 층을 남에게 내주지 않기로 최도윤과 함께 맹세했다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K1018",
+    "name": "고예진",
+    "courtId": "court:K1018",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 10,
+        "effective": 10
+      },
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 9,
+        "effective": 9
+      },
+      "intrigue": {
         "base": 8,
         "effective": 8
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 10,
-        "effective": 10
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k121-ration-record",
-        "name": {
-          "ko": "골목 배급표 관리",
-          "en": "Alley ration record management"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k121-choice",
-        "name": {
-          "ko": "가족과 병력을 분리",
-          "en": "Separates families from troops"
-        },
-        "description": {
-          "ko": "자비롭지만 가족 단위 배급이 복무 명부와 묶이는 순간 타협을 끊는다. 치안을 이유로 아이를 훈련장에 보내는 효율론을 거부한다.",
-          "en": "Merciful, he broke off compromise the moment family-unit rations were tied to service rosters. He refused efficiency talk that sent children to training grounds for the sake of order."
-        },
-        "behavior": {
-          "ko": "일화. 장석윤의 등록소가 동부 골목 배급표와 복무 명부를 한 묶음으로 넘기라고 요구한다. 최도윤은 배급표를 골목에 공개하고, 가족 단위 등록 거부 명단은 정소율의 행정청으로만 보내 동방사 수첩과 갈라 둔다.",
-          "en": "Anecdote. Jang Seokyun's registry demands the eastern alley ration tables and the service roll handed over as one bundle. Choi Doyun posts the ration tables in the alleys and sends the family-unit registration refusal list only to Jeong Soyul's administration office, keeping it apart from the Eastern Command notebooks."
-        },
-        "stress": {
-          "ko": "공포. 순찰대가 급수권을 복무계약과 묶어 북한산보국문으로 도망친 친척의 자리가 빈 배급표로 남는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That the patrol would tie the water right to a service contract, and the seat of a relative who fled to Bukhansan Bogukmun would remain an empty ration table. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 정소율에게 명부를 맡기는 보호체류에 가깝고, 백온의 독립 시민권 요구에 동맹이며, 장석윤의 등록소에는 깊은 원한이 있다.",
-          "en": "Relations. Near protective custody in entrusting his roster to Jeong Soyul, allied with Baek On's independent citizenship demand, and carrying a deep grudge against Jang Seokyun's registry."
-        },
-        "effects": []
-      },
-      {
-        "id": "k121-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 대대장. 직함은 동부 급수구역 시민대표. 골목 배급표를 공개하고, 가족 단위 등록 거부 명단을 행정청에만 넘겨 동방사 수첩과 분리한다.",
-          "en": "Office. Rank: battalion commander. Title: eastern water district citizens' representative. He published the alley ration tables and passed the family-unit registration refusal list only to the administration bureau, keeping it separate from the escort's notebooks."
-        },
-        "behavior": {
-          "ko": "관직. 품계 대대장. 직함은 동부 급수구역 시민대표. 골목 배급표를 공개하고, 가족 단위 등록 거부 명단을 행정청에만 넘겨 동방사 수첩과 분리한다.",
-          "en": "Office. Rank: battalion commander. Title: eastern water district citizens' representative. He published the alley ration tables and passed the family-unit registration refusal list only to the administration bureau, keeping it separate from the escort's notebooks."
-        },
-        "stress": {
-          "ko": "공포. 순찰대가 급수권을 복무계약과 묶어 북한산보국문으로 도망친 친척의 자리가 빈 배급표로 남는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That the patrol would tie the water right to a service contract, and the seat of a relative who fled to Bukhansan Bogukmun would remain an empty ration table. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 정소율에게 명부를 맡기는 보호체류에 가깝고, 백온의 독립 시민권 요구에 동맹이며, 장석윤의 등록소에는 깊은 원한이 있다.",
-          "en": "Relations. Near protective custody in entrusting his roster to Jeong Soyul, allied with Baek On's independent citizenship demand, and carrying a deep grudge against Jang Seokyun's registry."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "일화. 장석윤의 등록소가 동부 골목 배급표와 복무 명부를 한 묶음으로 넘기라고 요구한다. 최도윤은 배급표를 골목에 공개하고, 가족 단위 등록 거부 명단은 정소율의 행정청으로만 보내 동방사 수첩과 갈라 둔다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Anecdote. Jang Seokyun's registry demands the eastern alley ration tables and the service roll handed over as one bundle. Choi Doyun posts the ration tables in the alleys and sends the family-unit registration refusal list only to Jeong Soyul's administration office, keeping it apart from the Eastern Command notebooks. Titles and ambitions are not treated as accomplished authority or results."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -418,70 +166,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "cd5c-d574-c8fc-5d14",
-    "name": "해주 최씨",
-    "crest": "clan-crests/cd5c-d574-c8fc-5d14.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 50,
-    "개방": -45,
-    "무력": 65,
-    "물질": 20,
-    "공동": 25,
-    "원칙": -25,
-    "공개": -50,
-    "자격": -30,
-    "분산": -40,
-    "변혁": -25
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -10,
-    "위험": -30,
-    "과시": -5,
-    "지속": 30,
-    "지향": "유동",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "동방사",
-    "생업": "골목 배급표·시민 명부 관리",
-    "품계": "대대장",
-    "직함": "동부 급수구역 시민대표",
-    "가치관": "권위 50 | 개방 −45 | 무력 65 | 물질 20 | 공동 25 | 원칙 −25 | 공개 −50 | 자격 −30 | 분산 −40 | 변혁 −25",
-    "욕망": "갈망 0 | 독점 −10 | 위험 −30 | 과시 −5 | 지속 30 | 지향 유동 | 결합 단혼"
-  },
-  "sections": {
-    "관직": "품계 대대장. 직함은 동부 급수구역 시민대표. 골목 배급표를 공개하고, 가족 단위 등록 거부 명단을 행정청에만 넘겨 동방사 수첩과 분리한다.",
-    "일화": "장석윤의 등록소가 동부 골목 배급표와 복무 명부를 한 묶음으로 넘기라고 요구한다. 최도윤은 배급표를 골목에 공개하고, 가족 단위 등록 거부 명단은 정소율의 행정청으로만 보내 동방사 수첩과 갈라 둔다.",
-    "관계": "정소율에게 명부를 맡기는 보호체류에 가깝고, 백온의 독립 시민권 요구에 동맹이며, 장석윤의 등록소에는 깊은 원한이 있다.",
-    "야망": "보호계약 안에서도 급수 최저선과 가족 동반 이주를 행정 원장에 남겨, 동부 주민이 장교 호적의 숫자가 되지 않게 한다.\n\n공포. 최도윤은 순찰대가 급수권을 복무계약과 묶어 북한산보국문으로 도망친 친척의 자리가 빈 배급표로 남는 일을 두려워한다.",
-    "개입": "가족 명부를 행정 서고에서 되찾거나, 거부 명단을 장교에게 넘겨 대표를 숙청 위기로 몰 수 있다."
-  },
-  "biography": "최도윤은 자비롭지만 가족 단위 배급이 복무 명부와 묶이는 순간 타협을 끊는다. 치안을 이유로 아이를 훈련장에 보내는 효율론을 거부한다.\n\n- 소속: 동방사\n- 생업: 골목 배급표·시민 명부 관리\n- 품계: 대대장\n- 직함: 동부 급수구역 시민대표\n생애. 최도윤은 3세대에 태어났다. 최도윤은 영등포 정수 당직에서 자랐다. 최도윤의 동부 급수구역 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 최도윤은 암사1동과 연결된 업무에서 골목 배급표를 공개하고 가족 등록 거부 명단을 행정 쪽에만 보관한다.\n\n**관직.** 품계 대대장. 직함은 동부 급수구역 시민대표. 골목 배급표를 공개하고, 가족 단위 등록 거부 명단을 행정청에만 넘겨 동방사 수첩과 분리한다.\n\n**일화.** 장석윤의 등록소가 동부 골목 배급표와 복무 명부를 한 묶음으로 넘기라고 요구한다. 최도윤은 배급표를 골목에 공개하고, 가족 단위 등록 거부 명단은 정소율의 행정청으로만 보내 동방사 수첩과 갈라 둔다.\n\n**관계.** 정소율에게 명부를 맡기는 보호체류에 가깝고, 백온의 독립 시민권 요구에 동맹이며, 장석윤의 등록소에는 깊은 원한이 있다.\n\n**야망.** 보호계약 안에서도 급수 최저선과 가족 동반 이주를 행정 원장에 남겨, 동부 주민이 장교 호적의 숫자가 되지 않게 한다.\n\n공포. 최도윤은 순찰대가 급수권을 복무계약과 묶어 북한산보국문으로 도망친 친척의 자리가 빈 배급표로 남는 일을 두려워한다.\n\n**개입.** 가족 명부를 행정 서고에서 되찾거나, 거부 명단을 장교에게 넘겨 대표를 숙청 위기로 몰 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −45 | 무력 65 | 물질 20 | 공동 25 | 원칙 −25 | 공개 −50 | 자격 −30 | 분산 −40 | 변혁 −25\n- 욕망: 갈망 0 | 독점 −10 | 위험 −30 | 과시 −5 | 지속 30 | 지향 유동 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-05"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "최도윤",
-        "type": "보호체류",
-        "to": "정소율",
-        "basis": "시민 명부를 행정청에 맡기는 보호체류"
-      },
-      {
-        "from": "최도윤",
-        "type": "계약",
-        "to": "백온",
-        "basis": "독립 시민권 요구에 동맹"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

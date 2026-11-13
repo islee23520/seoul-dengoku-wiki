@@ -1,463 +1,105 @@
 {
   "id": "person-1016",
   "name": "최일석",
-  "title": "동원 명부 서기",
-  "position": "동원 명부 서기",
+  "title": "부처 서기",
+  "position": "부처 서기 · 광화문역",
   "characterId": "K1016",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "순찰대 (주). 기록관 (부, 명부)",
+  "rank": "주사",
+  "commonTier": "T5",
+  "occupation": "공문 필사",
   "gender": "남성",
   "stage": "S4",
-  "state": "S06",
-  "stateName": "대한민국정부",
-  "sourceRoute": "/world/Diaspora-Corridors#인물-최일석",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-1016",
   "birthDate": "2087-09-03",
   "birthday": "09-03",
   "age": 39,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/name-pools/diaspora-family-lineages.json",
-    "lore/factions/Diaspora-Corridors.json"
-  ],
-  "familyTree": {
-    "personId": "K1016",
-    "nodes": [
-      {
-        "id": "FH-K1016-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김명자",
-        "nameEn": "Kim Myeongja",
-        "birthDate": "2057-09-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K1016-M-01"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "김명자은 2057년에 태어났다. 구로·금천의 가족 기록과 작업 사본을 읽으며 자랐고, 2075년부터 이웃과 물품 인계 내역을 대조했다.",
-            "summaryEn": "Kim Myeongja was born in 2057 and grew up reading family and work records. From 2075, this ancestor compared goods-transfer records with neighbors.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/cast-family-trees.json",
-                "anchor": "FH-K1016-M-01"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1016-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이정희",
-        "nameEn": "Lee Jeonghui",
-        "birthDate": "2027-09-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K1016-M-02"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2045,
-            "summary": "이정희는 2027년에 태어났다. 구로·금천의 가족 기록과 작업 사본을 읽으며 자랐고, 2045년부터 이웃과 물품 인계 내역을 대조했다.",
-            "summaryEn": "Lee Jeonghui was born in 2027 and grew up reading family and work records. From 2045, this ancestor compared goods-transfer records with neighbors.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/cast-family-trees.json",
-                "anchor": "FH-K1016-M-02"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1016-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "박미영",
-        "nameEn": "Park Miyeong",
-        "birthDate": "1997-09-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K1016-M-03"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박미영은 2030년 대정전 당시 구로·금천 생활권에서 구로 지역 피난·예비군 명부 관리 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "summaryEn": "Park Miyeong was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/cast-family-trees.json",
-                "anchor": "FH-K1016-M-03"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "DF-CHOI-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최경섭",
-        "birthDate": "1997-09-03",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/diaspora-family-lineages.json",
-            "anchor": "guro-choi-family/DF-CHOI-01"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "date": "2030-10-14",
-            "summary": "2030년 10월 14일 예비군 중대 명부를 들고 나오고, 2044년부터 아들 최문재에게 원본과 사본 대조를 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/diaspora-family-lineages.json",
-                "anchor": "guro-choi-family/DF-CHOI-01"
-              }
-            ]
-          },
-          {
-            "year": 2044,
-            "summary": "2030년 10월 14일 예비군 중대 명부를 들고 나오고, 2044년부터 아들 최문재에게 원본과 사본 대조를 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/diaspora-family-lineages.json",
-                "anchor": "guro-choi-family/DF-CHOI-01"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "DF-CHOI-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최문재",
-        "birthDate": "2027-09-03",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/diaspora-family-lineages.json",
-            "anchor": "guro-choi-family/DF-CHOI-02"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2044,
-            "summary": "2044년부터 옛 피난 명단과 현재 당번표를 나누어 기록하고, 2074년부터 아들 최태윤에게 대조 업무를 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/diaspora-family-lineages.json",
-                "anchor": "guro-choi-family/DF-CHOI-02"
-              }
-            ]
-          },
-          {
-            "year": 2074,
-            "summary": "2044년부터 옛 피난 명단과 현재 당번표를 나누어 기록하고, 2074년부터 아들 최태윤에게 대조 업무를 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/diaspora-family-lineages.json",
-                "anchor": "guro-choi-family/DF-CHOI-02"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "DF-CHOI-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최태윤",
-        "birthDate": "2057-09-03",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/diaspora-family-lineages.json",
-            "anchor": "guro-choi-family/DF-CHOI-03"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "2074년부터 공동체 교대 명부를 대조하고, 복무를 마친 아들 최일석과 2110년부터 실제 복무·반납 기록을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/diaspora-family-lineages.json",
-                "anchor": "guro-choi-family/DF-CHOI-03"
-              }
-            ]
-          },
-          {
-            "year": 2110,
-            "summary": "2074년부터 공동체 교대 명부를 대조하고, 복무를 마친 아들 최일석과 2110년부터 실제 복무·반납 기록을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/diaspora-family-lineages.json",
-                "anchor": "guro-choi-family/DF-CHOI-03"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "K1016",
-        "personId": "K1016",
-        "kind": "person",
-        "name": "최일석",
-        "birthDate": "2087-09-03",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/diaspora-family-lineages.json",
-            "anchor": "guro-choi-family/K1016"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2109,
-            "summary": "구로에서 태어난 최일석은 당대 동원잔존에서 병으로 복무하고 2109년 만기로 돌아온다. 이후 기록 담당자들과 명부를 대조하는 일을 거쳐 구로·금천 축 동원 명부 서기를 맡는다. 2126년 팜반득과 하청을 교섭하고 린샤오메이의 통행을 검사하며, 탈영 소대가 명부를 사병 조직의 근거로 삼는 것을 경계한다. 열쇠와 명부를 따로 보관하는 것은 자신이 맡은 일을 지키기 위한 선택이다. 최일석은 2087년 구로에서 태어났다. 당대 동원잔존에서 병으로 복무하고 2109년 만기로 돌아온 뒤 아버지 최태윤과 교대 명부를 대조했다. 구로·금천 축의 동원 명부 서기로 실제 복무와 반납 기록을 확인하며, 명부가 사병 조직의 근거로 쓰이는 일을 경계한다. 1997년생 증조부 최경섭은 2030년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다. 아들 최문재는 옛 피난 명단과 현재 당번표를 나누었고, 손자 최태윤은 교대 명부를 대조했다. 최일석은 2109년 복무를 마친 뒤 아버지와 실제 복무·반납 기록을 함께 확인했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/diaspora-family-lineages.json",
-                "anchor": "guro-choi-family/K1016"
-              }
-            ]
-          },
-          {
-            "year": 2110,
-            "summary": "구로에서 태어난 최일석은 당대 동원잔존에서 병으로 복무하고 2109년 만기로 돌아온다. 이후 기록 담당자들과 명부를 대조하는 일을 거쳐 구로·금천 축 동원 명부 서기를 맡는다. 2126년 팜반득과 하청을 교섭하고 린샤오메이의 통행을 검사하며, 탈영 소대가 명부를 사병 조직의 근거로 삼는 것을 경계한다. 열쇠와 명부를 따로 보관하는 것은 자신이 맡은 일을 지키기 위한 선택이다. 최일석은 2087년 구로에서 태어났다. 당대 동원잔존에서 병으로 복무하고 2109년 만기로 돌아온 뒤 아버지 최태윤과 교대 명부를 대조했다. 구로·금천 축의 동원 명부 서기로 실제 복무와 반납 기록을 확인하며, 명부가 사병 조직의 근거로 쓰이는 일을 경계한다. 1997년생 증조부 최경섭은 2030년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다. 아들 최문재는 옛 피난 명단과 현재 당번표를 나누었고, 손자 최태윤은 교대 명부를 대조했다. 최일석은 2109년 복무를 마친 뒤 아버지와 실제 복무·반납 기록을 함께 확인했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/diaspora-family-lineages.json",
-                "anchor": "guro-choi-family/K1016"
-              }
-            ]
-          },
-          {
-            "year": 2126,
-            "summary": "구로에서 태어난 최일석은 당대 동원잔존에서 병으로 복무하고 2109년 만기로 돌아온다. 이후 기록 담당자들과 명부를 대조하는 일을 거쳐 구로·금천 축 동원 명부 서기를 맡는다. 2126년 팜반득과 하청을 교섭하고 린샤오메이의 통행을 검사하며, 탈영 소대가 명부를 사병 조직의 근거로 삼는 것을 경계한다. 열쇠와 명부를 따로 보관하는 것은 자신이 맡은 일을 지키기 위한 선택이다. 최일석은 2087년 구로에서 태어났다. 당대 동원잔존에서 병으로 복무하고 2109년 만기로 돌아온 뒤 아버지 최태윤과 교대 명부를 대조했다. 구로·금천 축의 동원 명부 서기로 실제 복무와 반납 기록을 확인하며, 명부가 사병 조직의 근거로 쓰이는 일을 경계한다. 1997년생 증조부 최경섭은 2030년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다. 아들 최문재는 옛 피난 명단과 현재 당번표를 나누었고, 손자 최태윤은 교대 명부를 대조했다. 최일석은 2109년 복무를 마친 뒤 아버지와 실제 복무·반납 기록을 함께 확인했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/diaspora-family-lineages.json",
-                "anchor": "guro-choi-family/K1016"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-1016"
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K1016-M-02:FH-K1016-M-01:biological",
-        "from": "FH-K1016-M-02",
-        "to": "FH-K1016-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K1016-M-02"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1016-M-03:FH-K1016-M-02:biological",
-        "from": "FH-K1016-M-03",
-        "to": "FH-K1016-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K1016-M-03"
-          }
-        ]
-      },
-      {
-        "id": "DF-CHOI-01:DF-CHOI-02:biological",
-        "from": "DF-CHOI-01",
-        "to": "DF-CHOI-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/diaspora-family-lineages.json",
-            "anchor": "guro-choi-family/DF-CHOI-02"
-          }
-        ]
-      },
-      {
-        "id": "DF-CHOI-02:DF-CHOI-03:biological",
-        "from": "DF-CHOI-02",
-        "to": "DF-CHOI-03",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/diaspora-family-lineages.json",
-            "anchor": "guro-choi-family/DF-CHOI-03"
-          }
-        ]
-      },
-      {
-        "id": "DF-CHOI-03:K1016:biological",
-        "from": "DF-CHOI-03",
-        "to": "K1016",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/diaspora-family-lineages.json",
-            "anchor": "guro-choi-family/K1016"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1016-M-01:K1016:biological",
-        "from": "FH-K1016-M-01",
-        "to": "K1016",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/diaspora-family-lineages.json",
-            "anchor": "guro-choi-family/K1016"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cd5c-acbd-c8fc",
+    "name": "경주 최씨",
+    "crest": "clan-crests/cd5c-acbd-c8fc.svg"
   },
-  "proseContacts": [
-    {
-      "recipientId": "K1012",
-      "recipientName": "팜반득",
-      "basis": "주요 관계: 팜반득과 하청 긴장. 탈영 소대와는 원한. 린샤오메이와는 통행 검사",
-      "sourceRef": {
-        "path": "lore/factions/Diaspora-Corridors.json",
-        "anchor": "인물-최일석-list1"
-      }
-    }
-  ],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "장관의 결재를 받은 공문 한 장은 최일석의 손을 거쳐 구청 수만큼의 사본이 된다. 서른아홉 살 주사인 부처 서기로, 광화문 정부서울청사에서 일하고 잠은 서대문역에서 잔다. 사본 끝마다 자기 도장과 필사를 마친 시각을 적고, 원본은 그날 안에 문서고 열쇠를 가진 선임 서기에게 넘긴다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "부처 서기",
+    "품계": "주사",
+    "생업": "공문 필사",
+    "일하는 역": "광화문역",
+    "잠자는 역": "서대문역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "장관의 결재를 받은 공문 한 장은 최일석의 손을 거쳐 구청 수만큼의 사본이 된다. 서른아홉 살 주사인 부처 서기로, 광화문 정부서울청사에서 일하고 잠은 서대문역에서 잔다. 사본 끝마다 자기 도장과 필사를 마친 시각을 적고, 원본은 그날 안에 문서고 열쇠를 가진 선임 서기에게 넘긴다.",
+    "관직": "직함 부처 서기. 직위 부처 서기 · 광화문역. 품계 주사. 일하는 역 광화문역."
+  },
+  "values": {
+    "권위": 75,
+    "개방": -65,
+    "무력": 45,
+    "물질": -15,
+    "공동": 25,
+    "원칙": 70,
+    "공개": -55,
+    "자격": 35,
+    "분산": -40,
+    "변혁": -40
+  },
+  "desire": {
+    "갈망": 20,
+    "독점": 10,
+    "위험": -40,
+    "과시": -30,
+    "지속": 50,
+    "지향": "이성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-1016",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 9,
-        "effective": 9
-      },
-      "strategy": {
-        "base": 10,
-        "effective": 10
-      },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
-      },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 13,
-        "effective": 13
-      },
-      "learning": {
-        "base": 12,
-        "effective": 12
-      },
-      "prowess": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "endurance": {
-        "base": 9,
-        "effective": 9
+      "martial": {
+        "base": 3,
+        "effective": 3
+      },
+      "stewardship": {
+        "base": 11,
+        "effective": 11
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
       }
     },
-    "skills": [
-      {
-        "id": "k1016-service-record-check",
-        "name": {
-          "ko": "복무 기록 대조",
-          "en": "Service-record comparison"
-        },
-        "rating": 70
-      }
-    ],
-    "traits": [
-      {
-        "id": "k1016-trait-1",
-        "name": {
-          "ko": "명부와 열쇠를 따로",
-          "en": "Rosters apart from keys"
-        },
-        "description": {
-          "ko": "명부와 열쇠를 같은 자리에 두지 않는다.",
-          "en": "Does not keep the roster and key in the same place."
-        },
-        "behavior": {
-          "ko": "명부와 열쇠를 같은 자리에 두지 않는다.",
-          "en": "Does not keep the roster and key in the same place."
-        },
-        "stress": {
-          "ko": "탈영 소대의 사병화 시도에 명부를 지키려 한다.",
-          "en": "Seeks to protect the roster against deserters’ private-army claims."
-        },
-        "relationship": {
-          "ko": "팜반득과 하청을 교섭하고 린샤오메이의 통행을 검사한다.",
-          "en": "Negotiates subcontracting with Pham Van Duc and checks Lin Xiaomei’s passage."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "복무를 마친 뒤 실제 복무·반납과 현재 교대 명부를 대조했다. 열쇠와 명부를 따로 보관하며 명부가 사병 조직의 근거로 쓰이는 것을 경계한다. 선조의 피난 행동은 본인의 경력으로 옮기지 않는다.",
-      "en": "After completing service, he checked actual service and return records against current shifts. He stores keys apart from rosters and guards against the roster becoming a private army’s charter. His ancestors’ evacuation actions are not his career."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -495,85 +137,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-41630-S06",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K1016",
-      "stateId": "S06",
-      "politicalParentTitleId": "title:kingdom-s06",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-41630-S06",
-          "directLiegePersonId": "K144"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "cd5c-acbd-c8fc",
-    "name": "경주 최씨",
-    "crest": "clan-crests/cd5c-acbd-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": false,
-  "values": {
-    "권위": 30,
-    "개방": -10,
-    "무력": 10,
-    "물질": -10,
-    "공동": 20,
-    "원칙": 50,
-    "공개": -30,
-    "자격": 20,
-    "분산": 10,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": 20,
-    "독점": 10,
-    "위험": -40,
-    "과시": -30,
-    "지속": 50,
-    "지향": "이성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "성명": "최일석",
-    "캐릭터 ID": "K1016",
-    "생년월일": "2087-09-03. 나이: 2126년 12월 31일 기준 만 39세",
-    "출생지": "구로",
-    "성별": "남성",
-    "직위·직급": "지방행정서기(8급)",
-    "가치관": "권위 30 | 개방 −10 | 무력 10 | 물질 −10 | 공동 20 | 원칙 50 | 공개 −30 | 자격 20 | 분산 10 | 변혁 −20",
-    "욕망": "갈망 20 | 독점 10 | 위험 −40 | 과시 −30 | 지속 50 | 지향 이성 | 결합 계약동거",
-    "출신 공동체": "구로 향토 동원잔존. 한국 국적. 최일석은 2087년 구로에서 태어났다. 당대 동원잔존에서 병으로 복무하고 2109년 만기로 돌아온 뒤 아버지 최태윤과 교대 명부를 대조했다. 구로·금천 축의 동원 명부 서기로 실제 복무와 반납 기록을 확인하며, 명부가 사병 조직의 근거로 쓰이는 일을 경계한다. 1997년생 증조부 최경섭은 2030년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다. 아들 최문재는 옛 피난 명단과 현재 당번표를 나누었고, 손자 최태윤은 교대 명부를 대조했다. 최일석은 2109년 복무를 마친 뒤 아버지와 실제 복무·반납 기록을 함께 확인했다.",
-    "언어": "한국어",
-    "생업": "순찰대 (주). 기록관 (부, 명부)",
-    "소속": "서울특별시 지방공무원 조직. 구로·금천 축 동원잔존 서기. 규격맹 장부에는 「외부 무장」",
-    "담당 업무": "동원 명부 서기",
-    "징집 이력": "당대 동원잔존에서 병으로 복무하고 2109년 만기. 2030년 10월 14일 명부를 들고 나온 예비군 중대 서기는 증조부 최경섭",
-    "무장 접근": "무기고 열쇠의 부키. 제식 소화기는 봉인. 본인은 제식 봉",
-    "성격": "군번이 없는 사람에게 탄약 이야기를 하지 않는다",
-    "개인 야망": "명부를 규격맹 평의회가 아니라 동원 장부로 유지해 사병화를 막는다",
-    "공포": "탈영 소대가 명부를 찢어 「구로 군벌」도장이 되는 것",
-    "통치·교섭 방식": "열쇠 한 개와 명부 한 권을 같은 자리에 두지 않는다",
-    "주요 관계": "팜반득과 하청 긴장. 탈영 소대와는 원한. 린샤오메이와는 통행 검사",
-    "촉발 사건": "명부가 사병화되면 서남 차단문과 탄약고가 동시에 잠긴다",
-    "업무 위치": "가산동 행정동 범위. 기존 구로·금천 축의 금천 쪽 명부 인계 기준점 제안; 탄약고·차단문 필지 확정 아님. 거주지나 정확한 시설 경계를 확정하지 않으며 새 작위·영지·점유권을 부여하지 않는다."
-  },
-  "sections": {},
-  "biography": "- 성명: 최일석\n- 캐릭터 ID: K1016\n- 생년월일: 2087-09-03. 나이: 2126년 12월 31일 기준 만 39세\n- 출생지: 구로\n- 성별: 남성\n- 직위·직급: 지방행정서기(8급)\n- 가치관: 권위 30 | 개방 −10 | 무력 10 | 물질 −10 | 공동 20 | 원칙 50 | 공개 −30 | 자격 20 | 분산 10 | 변혁 −20\n- 욕망: 갈망 20 | 독점 10 | 위험 −40 | 과시 −30 | 지속 50 | 지향 이성 | 결합 계약동거\n- 출신 공동체: 구로 향토 동원잔존. 한국 국적. 최일석은 2087년 구로에서 태어났다. 당대 동원잔존에서 병으로 복무하고 2109년 만기로 돌아온 뒤 아버지 최태윤과 교대 명부를 대조했다. 구로·금천 축의 동원 명부 서기로 실제 복무와 반납 기록을 확인하며, 명부가 사병 조직의 근거로 쓰이는 일을 경계한다. 1997년생 증조부 최경섭은 2030년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다. 아들 최문재는 옛 피난 명단과 현재 당번표를 나누었고, 손자 최태윤은 교대 명부를 대조했다. 최일석은 2109년 복무를 마친 뒤 아버지와 실제 복무·반납 기록을 함께 확인했다.\n- 언어: 한국어\n- 생업: 순찰대 (주). 기록관 (부, 명부)\n- 소속: 서울특별시 지방공무원 조직. 구로·금천 축 동원잔존 서기. 규격맹 장부에는 「외부 무장」\n- 담당 업무: 동원 명부 서기\n- 징집 이력: 당대 동원잔존에서 병으로 복무하고 2109년 만기. 2030년 10월 14일 명부를 들고 나온 예비군 중대 서기는 증조부 최경섭\n- 무장 접근: 무기고 열쇠의 부키. 제식 소화기는 봉인. 본인은 제식 봉\n- 성격: 군번이 없는 사람에게 탄약 이야기를 하지 않는다\n- 개인 야망: 명부를 규격맹 평의회가 아니라 동원 장부로 유지해 사병화를 막는다\n- 공포: 탈영 소대가 명부를 찢어 「구로 군벌」도장이 되는 것\n- 통치·교섭 방식: 열쇠 한 개와 명부 한 권을 같은 자리에 두지 않는다\n- 주요 관계: 팜반득과 하청 긴장. 탈영 소대와는 원한. 린샤오메이와는 통행 검사\n- 촉발 사건: 명부가 사병화되면 서남 차단문과 탄약고가 동시에 잠긴다\n- 업무 위치: 구로3동 행정동 범위. 구로·금천 동원잔존 명부·복무 반납 대조·부키와 명부 분리·팜반득 하청 긴장 보존; 구로 쪽 업무 인계 기준점 제안. 거주지나 정확한 시설 경계를 확정하지 않으며 새 작위·영지·점유권을 부여하지 않는다.\n- 업무 위치: 가산동 행정동 범위. 기존 구로·금천 축의 금천 쪽 명부 인계 기준점 제안; 탄약고·차단문 필지 확정 아님. 거주지나 정확한 시설 경계를 확정하지 않으며 새 작위·영지·점유권을 부여하지 않는다.\n\n1997년 9월 3일 태어난 최경섭은 병역을 마친 뒤 예비군 중대에서 명부를 정리한다. 2030년 10월 14일 통신이 끊기자 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분해 적는다. 2027년 9월 3일 태어난 아들 최문재는 2044년부터 아버지와 사본을 대조한다. 피난 명단을 그대로 쓰면 사망하거나 떠난 사람이 당번으로 남기에 옛 명단과 현재 당번표를 나누고, 수정 날짜와 확인한 사람을 적는다.\n\n최문재의 아들 최태윤은 2057년 9월 3일 태어나 2074년부터 공동체 기록 담당자들과 교대 명부를 대조한다. 아들 최일석은 2087년 9월 3일 구로에서 태어나 당대 동원잔존에서 복무하고 2109년 만기로 돌아온다. 최태윤은 돌아온 아들과 2110년부터 명부를 확인하며 실제 복무와 반납 기록을 함께 읽힌다. 최일석은 다른 담당자들 앞에서 기록의 정확성을 인정받아 구로·금천 축 동원 명부 서기를 맡는다. 2126년 팜반득과 하청을 교섭하고 린샤오메이의 통행을 검사하며, 탈영 소대가 명부를 사병 조직의 근거로 삼는 것을 경계한다. 열쇠와 명부를 따로 보관하며 자신이 맡은 일을 지킨다.",
-  "sources": [
-    "Diaspora-Corridors"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

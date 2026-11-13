@@ -1,494 +1,105 @@
 {
   "id": "person-0240",
   "name": "평지우",
-  "title": "실종 전 송신 기록 목격자",
-  "position": "실종 전 장부 기록 목격자",
+  "title": "신정 평씨네 모터대 대주",
+  "position": "신정 평씨네 모터대 대주 · 신정역",
   "characterId": "K239",
-  "rank": "서기",
+  "rank": "대주",
   "commonTier": "T5",
-  "occupation": "금고 당직 명부·기록 시각 대조",
+  "occupation": "차량 정비",
   "gender": "남성",
   "stage": "S3",
-  "state": "S09",
-  "stateName": "여의도출자연합회",
-  "sourceRoute": "/world/Cast-State-09#인물-평지우",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0240",
   "birthDate": "2092-07-30",
   "birthday": "07-30",
   "age": 34,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-09.json#/content/215",
-    "lore/characters/Cast-State-09.json#/content/216",
-    "lore/characters/Cast-State-09.json#/content/219"
-  ],
-  "familyTree": {
-    "personId": "K239",
-    "nodes": [
-      {
-        "id": "K239",
-        "personId": "K239",
-        "kind": "person",
-        "name": "평지우",
-        "birthDate": "2092-07-30",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K239"
-          },
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-평지우-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 실종 전 장부 기록 목격자 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-평지우-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0240"
-      },
-      {
-        "id": "FH-K239-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "평승진",
-        "lineage": {
-          "surname": "평",
-          "bongwan": "충주",
-          "clan": "d3c9-cda9-c8fc-agreed-c6b0-second"
-        },
-        "birthDate": "2062-07-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-평지우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2100,
-            "summary": "평승진은 서울역 등기소에서 금고 당직 명부·기록 시각 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-평지우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K239-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "평승현",
-        "lineage": {
-          "surname": "평",
-          "bongwan": "충주",
-          "clan": "d3c9-cda9-c8fc-agreed-c6b0-second"
-        },
-        "birthDate": "2032-07-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-평지우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2070,
-            "summary": "평승현은 서울역 등기소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-평지우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K239-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "평승영",
-        "lineage": {
-          "surname": "평",
-          "bongwan": "충주",
-          "clan": "d3c9-cda9-c8fc-agreed-c6b0-second"
-        },
-        "birthDate": "2002-07-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-평지우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "평승영은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-평지우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K239-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김현성",
-        "birthDate": "2062-07-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-평지우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2100,
-            "summary": "김현성은 서울역 등기소에서 금고 당직 명부·기록 시각 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-평지우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K239-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박현욱",
-        "birthDate": "2032-07-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-평지우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2070,
-            "summary": "박현욱은 서울역 등기소에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-평지우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K239-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "이현문",
-        "birthDate": "2002-07-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-평지우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이현문은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-평지우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K239-P-01:K239:biological",
-        "from": "FH-K239-P-01",
-        "to": "K239",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-평지우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K239-P-02:FH-K239-P-01:biological",
-        "from": "FH-K239-P-02",
-        "to": "FH-K239-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-평지우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K239-P-03:FH-K239-P-02:biological",
-        "from": "FH-K239-P-03",
-        "to": "FH-K239-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-평지우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K239-M-01:K239:biological",
-        "from": "FH-K239-M-01",
-        "to": "K239",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-평지우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K239-M-02:FH-K239-M-01:biological",
-        "from": "FH-K239-M-02",
-        "to": "FH-K239-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-평지우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K239-M-03:FH-K239-M-02:biological",
-        "from": "FH-K239-M-03",
-        "to": "FH-K239-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-평지우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d3c9-cda9-c8fc",
+    "name": "충주 평씨",
+    "crest": "clan-crests/d3c9-cda9-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "신정 기지에 남은 전동차에서 모터를 떼어 다시 감는 평씨네 모터대를 평지우가 쥐고 있고, 계약 하나가 들어오면 그는 바퀴대의 손까지 불러 조를 짠다. 그는 감은 모터마다 돌린 시간을 적어 두고, 그 시간이 계약서의 수치에 닿아야 조를 흩는다. 그는 서른넷이고, '우' 항렬을 함께 쓰는 친척 평은우의 이름은 강 북쪽 장부에 올라 있다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "신정 평씨네 모터대 대주",
+    "품계": "대주",
+    "생업": "차량 정비",
+    "일하는 역": "신정역",
+    "잠자는 역": "신정역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "신정 기지에 남은 전동차에서 모터를 떼어 다시 감는 평씨네 모터대를 평지우가 쥐고 있고, 계약 하나가 들어오면 그는 바퀴대의 손까지 불러 조를 짠다. 그는 감은 모터마다 돌린 시간을 적어 두고, 그 시간이 계약서의 수치에 닿아야 조를 흩는다. 그는 서른넷이고, '우' 항렬을 함께 쓰는 친척 평은우의 이름은 강 북쪽 장부에 올라 있다.",
+    "관직": "직함 신정 평씨네 모터대 대주. 직위 신정 평씨네 모터대 대주 · 신정역. 품계 대주. 일하는 역 신정역."
+  },
+  "values": {
+    "권위": -45,
+    "개방": 25,
+    "무력": -45,
+    "물질": -5,
+    "공동": -30,
+    "원칙": 30,
+    "공개": 70,
+    "자격": 20,
+    "분산": 70,
+    "변혁": 10
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -35,
+    "위험": -35,
+    "과시": -40,
+    "지속": 0,
+    "지향": "유동",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0240",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 11,
+        "effective": 11
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
-      },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
       },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 8,
+        "effective": 8
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "record-gap",
-        "name": {
-          "ko": "당직·시각 공백 대조",
-          "en": "Duty and timestamp gap comparison"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "record-gap-disposition",
-        "name": {
-          "ko": "빈칸을 숨기지 않음",
-          "en": "Leaves blanks visible"
-        },
-        "description": {
-          "ko": "장부를 믿으면서도 빈칸은 믿지 않고 공백 위치를 원본 탐색에 넘긴다.",
-          "en": "Trusts ledgers but not blank entries and passes gap locations to the original search."
-        },
-        "behavior": {
-          "ko": "장부를 믿으면서도 빈칸은 믿지 않고 공백 위치를 원본 탐색에 넘긴다.",
-          "en": "Trusts ledgers but not blank entries and passes gap locations to the original search."
-        },
-        "stress": {
-          "ko": "진술이 보호군 파견 증거로 잘릴 것을 두려워한다.",
-          "en": "Fears testimony being cut into evidence for protection troops."
-        },
-        "relationship": {
-          "ko": "권미래의 금고 기록을 목격으로 받치고, 최지우의 원본 탐색에 빈 칸을 넘기며, 임하준이 마지막으로 남긴 장부의 끊김을 증언한다.",
-          "en": "Supports Gwon Mirae’s records with observation and passes gap locations to Choi Jiwoo’s original search."
-        },
-        "effects": []
-      },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "공백 보존",
-          "en": "Preserves gaps"
-        },
-        "description": {
-          "ko": "누락 칸을 발표 시간으로 메우지 않고 위치를 넘긴다.",
-          "en": "Passes gap locations rather than filling them with announcement time."
-        },
-        "behavior": {
-          "ko": "누락 칸을 발표 시간으로 메우지 않고 위치를 넘긴다.",
-          "en": "Passes gap locations rather than filling them with announcement time."
-        },
-        "stress": {
-          "ko": "목격 진술이 보호군 파견안의 장부 증거로 잘리는 것.",
-          "en": "Fears testimony being cut into evidence for protection troops."
-        },
-        "relationship": {
-          "ko": "권미래의 금고 기록을 목격으로 받치고, 최지우의 원본 탐색에 빈 칸을 넘기며, 임하준이 마지막으로 남긴 장부의 끊김을 증언한다.",
-          "en": "Supports Gwon Mirae’s records with observation and passes gap locations to Choi Jiwoo’s original search."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "기록 공백을 보호 발표로 메우는 대신 당직명과 시각을 나란히 붙였다. 결손 자체를 증거로 보존한다.",
-      "en": "Posted names and times side by side instead of filling missing records with protection announcements, preserving absence as evidence."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -526,72 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d3c9-cda9-c8fc",
-    "name": "충주 평씨",
-    "crest": "clan-crests/d3c9-cda9-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -10,
-    "개방": 10,
-    "무력": -35,
-    "물질": -20,
-    "공동": -5,
-    "원칙": 40,
-    "공개": 70,
-    "자격": 0,
-    "분산": 15,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -35,
-    "위험": -35,
-    "과시": -40,
-    "지속": 0,
-    "지향": "유동",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "금고 당직 명부·기록 시각 대조",
-    "소속": "여의도출자연합회",
-    "품계": "서기",
-    "직함": "실종 전 장부 기록 목격자",
-    "가치관": "권위 −10 | 개방 10 | 무력 −35 | 물질 −20 | 공동 −5 | 원칙 40 | 공개 70 | 자격 0 | 분산 15 | 변혁 0",
-    "욕망": "갈망 0 | 독점 −35 | 위험 −35 | 과시 −40 | 지속 0 | 지향 유동 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2092-07-30 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 서울역 등기소에서 자랐다. 실종 전 장부 기록 목격자 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 평지우는 여의동을 업무동으로 삼아 금고 당직 명부·기록 시각 대조 업무를 맡는다.",
-    "관직": "품계 서기. 직함은 실종 전 장부 기록 목격자. 당직 명과 기록 시각을 같은 칠판에 붙이고, 단독 개함은 출자 평의회의 승인 없이 하지 않는다.",
-    "일화": "임하준이 마지막으로 남긴 금고 기록의 끊긴 칸을 보호 발표 시간으로 메우자는 제안이 여의도 금고 당직실에 돈다. 평지우는 당직 명과 기록 시각을 칠판에 나란히 붙여 그 칸의 공백을 드러내고, 최지우의 원본 탐색에 빈 칸의 위치를 넘긴다.",
-    "관계": "권미래의 금고 기록을 목격으로 받치고, 최지우의 원본 탐색에 빈 칸을 넘기며, 임하준이 마지막으로 남긴 장부의 끊김을 증언한다.",
-    "야망": "총관 실종 직전 장부의 빈 칸을 공개 목격으로 남겨 실종이 통치 실패 광고로만 소비되지 않게 한다.",
-    "공포": "목격 진술이 보호군 파견안의 장부 증거로 잘리는 것.",
-    "개입": "장부 원본을 회수하거나, 빈 칸을 보호 발표 시간으로 메우려는 거래를 막을 수 있다."
-  },
-  "biography": "밤샘 당직의 잡음을 빈 칸으로 듣고, 기록 두 칸이 비면 사람을 먼저 세운다. 장부를 정직하다고 말하면서도 빈칸은 믿지 않는다.\n\n- 생업: 금고 당직 명부·기록 시각 대조\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 실종 전 장부 기록 목격자\n**생애.** 2092-07-30 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 서울역 등기소에서 자랐다. 실종 전 장부 기록 목격자 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 평지우는 여의동을 업무동으로 삼아 금고 당직 명부·기록 시각 대조 업무를 맡는다.\n\n**관직.** 품계 서기. 직함은 실종 전 장부 기록 목격자. 당직 명과 기록 시각을 같은 칠판에 붙이고, 단독 개함은 출자 평의회의 승인 없이 하지 않는다.\n\n**일화.** 임하준이 마지막으로 남긴 금고 기록의 끊긴 칸을 보호 발표 시간으로 메우자는 제안이 여의도 금고 당직실에 돈다. 평지우는 당직 명과 기록 시각을 칠판에 나란히 붙여 그 칸의 공백을 드러내고, 최지우의 원본 탐색에 빈 칸의 위치를 넘긴다.\n\n**관계.** 권미래의 금고 기록을 목격으로 받치고, 최지우의 원본 탐색에 빈 칸을 넘기며, 임하준이 마지막으로 남긴 장부의 끊김을 증언한다.\n\n**야망.** 총관 실종 직전 장부의 빈 칸을 공개 목격으로 남겨 실종이 통치 실패 광고로만 소비되지 않게 한다.\n\n**공포.** 목격 진술이 보호군 파견안의 장부 증거로 잘리는 것.\n\n**개입.** 장부 원본을 회수하거나, 빈 칸을 보호 발표 시간으로 메우려는 거래를 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 10 | 무력 −35 | 물질 −20 | 공동 −5 | 원칙 40 | 공개 70 | 자격 0 | 분산 15 | 변혁 0\n- 욕망: 갈망 0 | 독점 −35 | 위험 −35 | 과시 −40 | 지속 0 | 지향 유동 | 결합 단혼",
-  "sources": [
-    "Cast-State-09"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "평지우",
-        "type": "맹세",
-        "to": "권미래",
-        "basis": "권미래의 송신 기록을 목격으로 받치고"
-      },
-      {
-        "from": "평지우",
-        "type": "맹세",
-        "to": "최지우",
-        "basis": "최지우의 원본 탐색에 공백 칸을 넘기며"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

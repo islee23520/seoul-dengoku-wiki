@@ -1,501 +1,146 @@
 {
   "id": "person-0012",
   "name": "진하겸",
-  "title": "여의도 수문의무원",
-  "position": "여의도 수문의무원",
+  "title": "영등포 구간장",
+  "position": "영등포 구간장 · 자유도시들",
   "characterId": "K012",
-  "rank": "주사",
-  "commonTier": "T5",
-  "occupation": "진료",
+  "rank": "구간장",
+  "commonTier": "T3",
+  "occupation": "구간 운영",
   "gender": "남성",
   "stage": "S2",
-  "state": "S01",
-  "stateName": "수문국",
-  "sourceRoute": "/world/Cast-State-01#인물-진하겸",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0012",
   "birthDate": "2088-10-10",
   "birthday": "10-10",
   "age": 38,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-01.json#/content/159",
-    "lore/characters/Cast-State-01.json#/content/161"
-  ],
-  "familyTree": {
-    "personId": "K012",
-    "nodes": [
-      {
-        "id": "K012",
-        "personId": "K012",
-        "kind": "person",
-        "name": "진하겸",
-        "birthDate": "2088-10-10",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K012"
-          },
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-진하겸-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 여의도 수문의무원 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-진하겸-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0012"
-      },
-      {
-        "id": "FH-K012-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "진승석",
-        "lineage": {
-          "surname": "진",
-          "bongwan": "풍기",
-          "clan": "c9c4-d48d-ae30"
-        },
-        "birthDate": "2058-10-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-진하겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2096,
-            "summary": "진승석은 영등포 정수 당직에서 진료 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-진하겸-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K012-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "진승준",
-        "lineage": {
-          "surname": "진",
-          "bongwan": "풍기",
-          "clan": "c9c4-d48d-ae30"
-        },
-        "birthDate": "2028-10-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-진하겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2066,
-            "summary": "진승준은 영등포 정수 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-진하겸-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K012-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "진승호",
-        "lineage": {
-          "surname": "진",
-          "bongwan": "풍기",
-          "clan": "c9c4-d48d-ae30"
-        },
-        "birthDate": "1998-10-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-진하겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "진승호는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-진하겸-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K012-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박승진",
-        "birthDate": "2058-10-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-진하겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2096,
-            "summary": "박승진은 영등포 정수 당직에서 진료 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-진하겸-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K012-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이승민",
-        "birthDate": "2028-10-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-진하겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2066,
-            "summary": "이승민은 영등포 정수 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-진하겸-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K012-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승진",
-        "birthDate": "1998-10-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-진하겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최승진은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-진하겸-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K012-P-01:K012:biological",
-        "from": "FH-K012-P-01",
-        "to": "K012",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-진하겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K012-P-02:FH-K012-P-01:biological",
-        "from": "FH-K012-P-02",
-        "to": "FH-K012-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-진하겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K012-P-03:FH-K012-P-02:biological",
-        "from": "FH-K012-P-03",
-        "to": "FH-K012-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-진하겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K012-M-01:K012:biological",
-        "from": "FH-K012-M-01",
-        "to": "K012",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-진하겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K012-M-02:FH-K012-M-01:biological",
-        "from": "FH-K012-M-02",
-        "to": "FH-K012-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-진하겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K012-M-03:FH-K012-M-02:biological",
-        "from": "FH-K012-M-03",
-        "to": "FH-K012-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-진하겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c9c4-d48d-ae30",
+    "name": "풍기 진씨",
+    "crest": "clan-crests/c9c4-d48d-ae30.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "진하겸은 영등포, 영등포시장, 신길, 대방 네 역을 묶은 영등포 구간장이고, 일곱 도시에서 가장 큰 장터가 그의 구간 안에 있다. 장터 승강장의 공기와 열은 사람 수를 따라 오르내려서, 장이 서는 날마다 그는 팬 셋의 회전을 직접 맞춘다. 장터에서 배앓이가 돌면 장을 반나절 닫는 것도 그의 몫이다. 소독수가 떨어진 날에는 장주의 부름도 미룬다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "영등포 구간장",
+    "품계": "구간장",
+    "생업": "구간 운영",
+    "일하는 역": "영등포역",
+    "잠자는 역": "영등포역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "진하겸은 영등포, 영등포시장, 신길, 대방 네 역을 묶은 영등포 구간장이고, 일곱 도시에서 가장 큰 장터가 그의 구간 안에 있다. 장터 승강장의 공기와 열은 사람 수를 따라 오르내려서, 장이 서는 날마다 그는 팬 셋의 회전을 직접 맞춘다. 장터에서 배앓이가 돌면 장을 반나절 닫는 것도 그의 몫이다. 소독수가 떨어진 날에는 장주의 부름도 미룬다.",
+    "관직": "직함 영등포 구간장. 직위 영등포 구간장 · 자유도시들. 품계 구간장. 일하는 역 영등포역."
+  },
+  "values": {
+    "권위": 15,
+    "개방": 5,
+    "무력": -30,
+    "물질": 40,
+    "공동": -5,
+    "원칙": 15,
+    "공개": 20,
+    "자격": 20,
+    "분산": -5,
+    "변혁": -5
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -15,
+    "위험": 20,
+    "과시": -5,
+    "지속": 5,
+    "지향": "이성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0012",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "진하겸",
+        "type": "지휘",
+        "to": "한재목",
+        "basis": "영등포 장주 한재목의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "명우재",
+        "type": "지휘",
+        "to": "진하겸",
+        "basis": "영등포 구간장 진하겸의 직속"
+      },
+      {
+        "from": "두용",
+        "type": "지휘",
+        "to": "진하겸",
+        "basis": "영등포 구간장 진하겸의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K001",
+    "name": "한재목",
+    "courtId": "court:K001",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K012",
+    "members": [
+      {
+        "personId": "person-0015",
+        "name": "명우재"
+      },
+      {
+        "personId": "K233",
+        "name": "두용"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 10,
-        "effective": 10
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k012-patient-register",
-        "name": {
-          "ko": "환자 명부 관리",
-          "en": "Patient-register management"
-        },
-        "rating": 60
-      },
-      {
-        "id": "k012-release-negotiation",
-        "name": {
-          "ko": "방류량 협의",
-          "en": "Release negotiation"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "k012-treatment-not-ration",
-        "name": {
-          "ko": "치료와 배급표 분리",
-          "en": "Separate treatment from ration rank"
-        },
-        "description": {
-          "ko": "급수표를 치료 순서로 바꾸라는 쪽지를 찢는다.",
-          "en": "Tears up orders to rank treatment by ration tickets."
-        },
-        "behavior": {
-          "ko": "급수표를 치료 순서로 바꾸라는 쪽지를 찢는다.",
-          "en": "Tears up orders to rank treatment by ration tickets."
-        },
-        "stress": {
-          "ko": "탁수가 골목에 퍼진 뒤에야 약이 도착해, 의무소가 단수 제재의 면죄부로 쓰이는 것.",
-          "en": "That medicine would arrive only after the turbid water spread through the alleys, and the clinic would be used as the cutoff sanction's indulgence."
-        },
-        "relationship": {
-          "ko": "박누리의 수질 표본이 기준을 넘기면 즉시 진료를 잠그는 계약이고, 임바다의 시민 급수권 맹세를 환자 명부로 받치며, 류은비에게 약재 호송을 빚지고 있다.",
-          "en": "Holding a contract to lock care at once whenever Park Nuri's water-quality specimen crossed the standard, backing Im Bada's civil water-right oath with the patient roster, and owing Ryu Eunbi the herb convoy."
-        },
-        "effects": []
-      },
-      {
-        "id": "k012-clinic-safety",
-        "name": {
-          "ko": "진료소 안전",
-          "en": "Clinic safety"
-        },
-        "description": {
-          "ko": "기준 미달 원수 때 진료를 닫고 소독수가 비면 회의를 멈춘다.",
-          "en": "Closes care for unsafe water and stops meetings when disinfectant runs out."
-        },
-        "behavior": {
-          "ko": "기준 미달 원수 때 진료를 닫고 소독수가 비면 회의를 멈춘다.",
-          "en": "Closes care for unsafe water and stops meetings when disinfectant runs out."
-        },
-        "stress": {
-          "ko": "탁수가 골목에 퍼진 뒤에야 약이 도착해, 의무소가 단수 제재의 면죄부로 쓰이는 것.",
-          "en": "That medicine would arrive only after the turbid water spread through the alleys, and the clinic would be used as the cutoff sanction's indulgence."
-        },
-        "relationship": {
-          "ko": "박누리의 수질 표본이 기준을 넘기면 즉시 진료를 잠그는 계약이고, 임바다의 시민 급수권 맹세를 환자 명부로 받치며, 류은비에게 약재 호송을 빚지고 있다.",
-          "en": "Holding a contract to lock care at once whenever Park Nuri's water-quality specimen crossed the standard, backing Im Bada's civil water-right oath with the patient roster, and owing Ryu Eunbi the herb convoy."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "환자 기록과 방류 협의가 근거다. 안전 봉쇄는 환자 접근을 막는 긴장도 남기며 직함만으로 수술 숙련을 주지 않는다.",
-      "en": "Patient records and release discussions support the profile. Safety closures also restrict access; a medical title does not grant surgical skill."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -533,80 +178,93 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c9c4-d48d-ae30",
-    "name": "풍기 진씨",
-    "crest": "clan-crests/c9c4-d48d-ae30.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 50,
-    "개방": -10,
-    "무력": -20,
-    "물질": 25,
-    "공동": 20,
-    "원칙": 25,
-    "공개": 20,
-    "자격": 0,
-    "분산": -60,
-    "변혁": -15
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -15,
-    "위험": 20,
-    "과시": -5,
-    "지속": 5,
-    "지향": "이성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "수문국",
-    "생업": "진료",
-    "품계": "주사",
-    "직함": "여의도 수문의무원",
-    "업무 위치": "여의동. 여의동 선창에서 진하겸은 환자 명부와 시약 재고를 붙이고 박누리의 표본이 기준에 못 미치면 진료 문을 닫아 오염된 물을 진료에 들이지 않는다.",
-    "가치관": "권위 50 | 개방 −10 | 무력 −20 | 물질 25 | 공동 20 | 원칙 25 | 공개 20 | 자격 0 | 분산 −60 | 변혁 −15",
-    "욕망": "갈망 0 | 독점 −15 | 위험 20 | 과시 −5 | 지속 5 | 지향 이성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 여의도 수문의무원 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 여의동. 여의동 선창에서 진하겸은 환자 명부와 시약 재고를 붙이고 박누리의 표본이 기준에 못 미치면 진료 문을 닫아 오염된 물을 진료에 들이지 않는다.",
-    "관직": "품계 주사. 직함은 여의도 수문의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 기준 미달 원수가 들어온 날에는 선출 군주의 독촉이 있어도 선창 진료를 닫는다.",
-    "일화": "2125년 가뭄에 진하겸은 여의도 선창의 환자 명부와 서울 배급 저수조 방류 기록을 맞대어 배급 대표와 진료용 물의 순서를 정했다.",
-    "관계": "박누리의 수질 표본이 기준을 넘기면 즉시 진료를 잠그는 계약이고, 임바다의 시민 급수권 맹세를 환자 명부로 받치며, 류은비에게 약재 호송을 빚지고 있다.",
-    "야망": "수문 경비와 선창 노동자의 방역 주기를 물 계약 부칙으로 올려 집단 단수 구역에도 의무 최저선을 남긴다.",
-    "공포": "탁수가 골목에 퍼진 뒤에야 약이 도착해, 의무소가 단수 제재의 면죄부로 쓰이는 것.",
-    "개입": "대체 시약을 호송해 봉쇄를 풀거나, 치료 순서를 급수표로 바꾼 쪽지를 폭로할 수 있다."
-  },
-  "biography": "상처보다 탁수 설사 냄새를 먼저 맡고, 급수표를 치료 순서로 바꾸라는 쪽지를 찢는다. 온화하나 소독수 재고가 비면 회의를 중단시킨다.\n\n- 소속: 수문국\n- 생업: 진료\n- 품계: 주사\n- 직함: 여의도 수문의무원\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 여의도 수문의무원 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 여의동. 여의동 선창에서 진하겸은 환자 명부와 시약 재고를 붙이고 박누리의 표본이 기준에 못 미치면 진료 문을 닫아 오염된 물을 진료에 들이지 않는다.\n\n**관직.** 품계 주사. 직함은 여의도 수문의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 기준 미달 원수가 들어온 날에는 선출 군주의 독촉이 있어도 선창 진료를 닫는다.\n\n**일화.** 2125년 가뭄에 진하겸은 여의도 선창의 환자 명부와 서울 배급 저수조 방류 기록을 맞대어 배급 대표와 진료용 물의 순서를 정했다.\n\n**관계.** 박누리의 수질 표본이 기준을 넘기면 즉시 진료를 잠그는 계약이고, 임바다의 시민 급수권 맹세를 환자 명부로 받치며, 류은비에게 약재 호송을 빚지고 있다.\n\n**야망.** 수문 경비와 선창 노동자의 방역 주기를 물 계약 부칙으로 올려 집단 단수 구역에도 의무 최저선을 남긴다.\n\n**공포.** 탁수가 골목에 퍼진 뒤에야 약이 도착해, 의무소가 단수 제재의 면죄부로 쓰이는 것.\n\n**개입.** 대체 시약을 호송해 봉쇄를 풀거나, 치료 순서를 급수표로 바꾼 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −10 | 무력 −20 | 물질 25 | 공동 20 | 원칙 25 | 공개 20 | 자격 0 | 분산 −60 | 변혁 −15\n- 욕망: 갈망 0 | 독점 −15 | 위험 20 | 과시 −5 | 지속 5 | 지향 이성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-01"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "진하겸",
-        "type": "계약",
-        "to": "박누리",
-        "basis": "박누리의 수질 표본이 기준을 넘기면 즉시 진료를 잠그는 계약이고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:section:영등포구:영등포",
+      "name": {
+        "ko": "영등포 구간"
       },
-      {
-        "from": "진하겸",
-        "type": "맹세",
-        "to": "임바다",
-        "basis": "임바다의 시민 급수권 맹세를 환자 명부로 받치며"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "변고운",
-        "type": "계약",
-        "to": "진하겸",
-        "basis": "진하겸의 의무소 봉쇄를 대합실 방송으로 알리는 동맹이고"
-      }
-    ]
-  }
+      "holderPersonId": "K012",
+      "directLiegePersonId": "K001",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "Yeongdeungpo",
+        "stationName": "영등포"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1156051500",
+          "name": "영등포본동"
+        },
+        {
+          "id": "region:1156053500",
+          "name": "영등포동"
+        },
+        {
+          "id": "region:1156063000",
+          "name": "신길1동"
+        },
+        {
+          "id": "region:1156069000",
+          "name": "신길7동"
+        }
+      ],
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ],
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:신길",
+      "name": {
+        "ko": "신길역"
+      },
+      "holderPersonId": "person-0015",
+      "directLiegePersonId": "K012",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "신길",
+        "stationName": "신길"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1156063000",
+          "name": "신길1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "명우재",
+      "holderRoute": "/people/person-0015"
+    },
+    {
+      "id": "holding:v3:station:대방",
+      "name": {
+        "ko": "대방역"
+      },
+      "holderPersonId": "K233",
+      "directLiegePersonId": "K012",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "대방",
+        "stationName": "대방"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1156069000",
+          "name": "신길7동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "두용",
+      "holderRoute": "/people/person-0234"
+    }
+  ]
 }

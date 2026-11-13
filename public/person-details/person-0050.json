@@ -1,394 +1,120 @@
 {
   "id": "person-0050",
   "name": "종마루",
-  "title": "가짜 펌프 부품 피해자 대표",
-  "position": "가짜 펌프 부품 피해자 대표",
+  "title": "대림역 역반장",
+  "position": "대림역 역반장 · 자유도시들",
   "characterId": "K050",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "펌프 정비",
+  "rank": "역반장",
+  "commonTier": "T4",
+  "occupation": "역반 운영",
   "gender": "남성",
   "stage": "S3",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-종마루",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0050",
   "birthDate": "2072-11-25",
   "birthday": "11-25",
   "age": 54,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/225",
-    "lore/characters/Cast-State-02.json#/content/227"
-  ],
-  "familyTree": {
-    "personId": "K050",
-    "nodes": [
-      {
-        "id": "K050",
-        "personId": "K050",
-        "kind": "person",
-        "name": "종마루",
-        "birthDate": "2072-11-25",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K050"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-종마루-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 가짜 펌프 부품 피해자 대표 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-종마루-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0050"
-      },
-      {
-        "id": "FH-K050-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "종승석",
-        "lineage": {
-          "surname": "종",
-          "bongwan": "영암",
-          "clan": "c885-c601-c554"
-        },
-        "birthDate": "2042-11-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-종마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "종승석은 신정 차량기지에서 펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-종마루-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K050-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "종승준",
-        "lineage": {
-          "surname": "종",
-          "bongwan": "영암",
-          "clan": "c885-c601-c554"
-        },
-        "birthDate": "2012-11-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-종마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "종승준은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-종마루-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K050-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승훈",
-        "birthDate": "2042-11-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-종마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "최승훈은 신정 차량기지에서 펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-종마루-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K050-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정승희",
-        "birthDate": "2012-11-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-종마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정승희는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-종마루-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K050-P-01:K050:biological",
-        "from": "FH-K050-P-01",
-        "to": "K050",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-종마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K050-P-02:FH-K050-P-01:biological",
-        "from": "FH-K050-P-02",
-        "to": "FH-K050-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-종마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K050-M-01:K050:biological",
-        "from": "FH-K050-M-01",
-        "to": "K050",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-종마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K050-M-02:FH-K050-M-01:biological",
-        "from": "FH-K050-M-02",
-        "to": "FH-K050-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-종마루-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c885-c601-c554",
+    "name": "영암 종씨",
+    "crest": "clan-crests/c885-c601-c554.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "2호선과 7호선이 만나는 대림은 열과 공기를 맞추기가 구로의 다른 역보다 까다롭다. 종마루는 빛 시간을 정해 두고 그 시간이 지나면 승강장 등을 하나씩 꺼 나가는데, 마지막까지 남기는 등은 늘 7호선 쪽 계단 위의 것이다. 그는 남의 역에 묵는 짐꾼 무리에게서 열 몫을 받되 계약서를 지닌 작업조에게는 받지 않고, 역반장을 맡은 뒤로 그 원칙을 한 번도 어기지 않았다. 그는 지금 쉰넷이다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "대림역 역반장",
+    "품계": "역반장",
+    "생업": "역반 운영",
+    "일하는 역": "대림역",
+    "잠자는 역": "대림역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "2호선과 7호선이 만나는 대림은 열과 공기를 맞추기가 구로의 다른 역보다 까다롭다. 종마루는 빛 시간을 정해 두고 그 시간이 지나면 승강장 등을 하나씩 꺼 나가는데, 마지막까지 남기는 등은 늘 7호선 쪽 계단 위의 것이다. 그는 남의 역에 묵는 짐꾼 무리에게서 열 몫을 받되 계약서를 지닌 작업조에게는 받지 않고, 역반장을 맡은 뒤로 그 원칙을 한 번도 어기지 않았다. 그는 지금 쉰넷이다.",
+    "관직": "직함 대림역 역반장. 직위 대림역 역반장 · 자유도시들. 품계 역반장. 일하는 역 대림역."
+  },
+  "values": {
+    "권위": -80,
+    "개방": 35,
+    "무력": -15,
+    "물질": 50,
+    "공동": 10,
+    "원칙": -5,
+    "공개": 40,
+    "자격": 100,
+    "분산": 80,
+    "변혁": 35
+  },
+  "desire": {
+    "갈망": 25,
+    "독점": -5,
+    "위험": -20,
+    "과시": -10,
+    "지속": 25,
+    "지향": "무성향",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0050",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "종마루",
+        "type": "지휘",
+        "to": "변시람",
+        "basis": "신도림 구간장 변시람의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K045",
+    "name": "변시람",
+    "courtId": "court:K045",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 13,
-        "effective": 13
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 11,
-        "effective": 11
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k050-pump-shaft-repair",
-        "name": {
-          "ko": "펌프 축 수리",
-          "en": "Pump-shaft repair"
-        },
-        "rating": 65
-      },
-      {
-        "id": "k050-defect-register",
-        "name": {
-          "ko": "불량 목록 기록",
-          "en": "Defect-list recording"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k050-joint-assessment",
-        "name": {
-          "ko": "함께 여는 감정",
-          "en": "Joint assessment"
-        },
-        "description": {
-          "ko": "노동조합과 감사관이 함께 볼 때 감정을 연다.",
-          "en": "Opens assessment only before both union and auditor."
-        },
-        "behavior": {
-          "ko": "노동조합과 감사관이 함께 볼 때 감정을 연다.",
-          "en": "Opens assessment only before both union and auditor."
-        },
-        "stress": {
-          "ko": "탁수 구간에 넣은 가짜 패킹이 터져 구로 저수조가 비고, 그 사고가 군수 작업반의 강제 동원 명분이 되는 것.",
-          "en": "That a counterfeit packing burst in a turbid-water section, the Guro reservoir emptied, and that accident became a munitions squad's forced-mobilization pretext."
-        },
-        "relationship": {
-          "ko": "장우석의 수리규격 원장에 불량 목록을 올리고, 강민서의 규격 통일안을 피해 쪽에서 압박하며, 뚝섬의 류다인과 같은 가짜 부품의 양쪽 끝을 증언한다.",
-          "en": "Raising the defect list onto Jang Wooseok's repair-standards ledger, pressing Gang Minseo's standards-unification plan from the harm side, and testifying to the two ends of the same counterfeit parts with Ryu Dain of Ttukseom."
-        },
-        "effects": []
-      },
-      {
-        "id": "k050-seal-not-price",
-        "name": {
-          "ko": "도장은 가격이 아니다",
-          "en": "A seal is not a price"
-        },
-        "description": {
-          "ko": "규격 도장을 산 가격으로 부르는 상인을 용서하지 않는다.",
-          "en": "Does not forgive traders pricing a standards seal as a purchase."
-        },
-        "behavior": {
-          "ko": "규격 도장을 산 가격으로 부르는 상인을 용서하지 않는다.",
-          "en": "Does not forgive traders pricing a standards seal as a purchase."
-        },
-        "stress": {
-          "ko": "탁수 구간에 넣은 가짜 패킹이 터져 구로 저수조가 비고, 그 사고가 군수 작업반의 강제 동원 명분이 되는 것.",
-          "en": "That a counterfeit packing burst in a turbid-water section, the Guro reservoir emptied, and that accident became a munitions squad's forced-mobilization pretext."
-        },
-        "relationship": {
-          "ko": "장우석의 수리규격 원장에 불량 목록을 올리고, 강민서의 규격 통일안을 피해 쪽에서 압박하며, 뚝섬의 류다인과 같은 가짜 부품의 양쪽 끝을 증언한다.",
-          "en": "Raising the defect list onto Jang Wooseok's repair-standards ledger, pressing Gang Minseo's standards-unification plan from the harm side, and testifying to the two ends of the same counterfeit parts with Ryu Dain of Ttukseom."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "축 교체와 피해·부품 기록의 공동 보관이 근거다. 손가락 손상을 암시하는 문장을 실제 신체 손상 판정으로 바꾸지 않는다.",
-      "en": "Shaft replacement and shared custody of victim and component records are evidence. References to workers’ fingers do not establish a personal injury assessment."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -426,97 +152,29 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
+  "confirmedHoldings": [
     {
-      "id": "title:duchy-41220-S02",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
+      "id": "holding:v3:station:대림",
+      "name": {
+        "ko": "대림역"
+      },
       "holderPersonId": "K050",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:kingdom-s02",
-      "personalLieges": [
+      "directLiegePersonId": "K045",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "대림",
+        "stationName": "대림"
+      },
+      "adminRefs": [
         {
-          "holdingId": "holding:opening-duchy-41220-S02",
-          "directLiegePersonId": "K029"
+          "id": "region:1156072000",
+          "name": "대림3동"
         }
       ],
-      "directOwnership": false
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
     }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c885-c601-c554",
-    "name": "영암 종씨",
-    "crest": "clan-crests/c885-c601-c554.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -45,
-    "개방": 20,
-    "무력": -5,
-    "물질": 35,
-    "공동": 35,
-    "원칙": 5,
-    "공개": 40,
-    "자격": 80,
-    "분산": 25,
-    "변혁": 25
-  },
-  "desire": {
-    "갈망": 25,
-    "독점": -5,
-    "위험": -20,
-    "과시": -10,
-    "지속": 25,
-    "지향": "무성향",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "규격맹",
-    "생업": "펌프 정비",
-    "품계": "조합원",
-    "직함": "가짜 펌프 부품 피해자 대표",
-    "업무 위치": "구로2동. 종마루는 구로2동 저수조에서 회수한 가짜 펌프 축의 마모 면을 장우석의 수리규격 원장에 맞춰 기록한다. 강민서에게 피해자 목록과 봉인함 열람 결과를 넘기고 뚝섬의 류다인이 확인한 같은 부품 번호를 기다린다.",
-    "가치관": "권위 −45 | 개방 20 | 무력 −5 | 물질 35 | 공동 35 | 원칙 5 | 공개 40 | 자격 80 | 분산 25 | 변혁 25",
-    "욕망": "갈망 25 | 독점 −5 | 위험 −20 | 과시 −10 | 지속 25 | 지향 무성향 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 가짜 펌프 부품 피해자 대표 자리는 탈선 직전 결함 보고로 열렸다.\n- 업무 위치: 구로2동. 종마루는 구로2동 저수조에서 회수한 가짜 펌프 축의 마모 면을 장우석의 수리규격 원장에 맞춰 기록한다. 강민서에게 피해자 목록과 봉인함 열람 결과를 넘기고 뚝섬의 류다인이 확인한 같은 부품 번호를 기다린다.",
-    "관직": "품계 조합원. 직함은 가짜 펌프 부품 피해자 대표. 피해 명부와 회수 부품을 같은 봉인함에 넣고, 감정은 노동조합과 규격 감사관이 동시에 볼 때만 연다.",
-    "일화": "2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다. 이 일로 가짜 펌프 부품 피해자 대표 자리의 서명이 장부에 올랐다.",
-    "관계": "장우석의 수리규격 원장에 불량 목록을 올리고, 강민서의 규격 통일안을 피해 쪽에서 압박하며, 뚝섬의 류다인과 같은 가짜 부품의 양쪽 끝을 증언한다.",
-    "야망": "불량 펌프 부품의 제조 공방과 유통 경로를 공개 원장에 올려, 수리 규격이 가짜 도장의 방패가 되지 않게 한다.",
-    "공포": "탁수 구간에 넣은 가짜 패킹이 터져 구로 저수조가 비고, 그 사고가 군수 작업반의 강제 동원 명분이 되는 것.",
-    "개입": "가짜 도장 원판을 찾아 그의 출고 중지를 뒷받침하거나, 명부에 없는 공방을 끼워 넣은 증거를 폭로할 수 있다."
-  },
-  "biography": "불량 차륜의 진동을 손끝으로 읽고, 규격 도장을 산 가격으로 부르는 상인을 용서하지 않는다. 숙련공의 손가락보다 창고 봉인을 먼저 확인한다.\n\n- 소속: 규격맹\n- 생업: 펌프 정비\n- 품계: 조합원\n- 직함: 가짜 펌프 부품 피해자 대표\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 가짜 펌프 부품 피해자 대표 자리는 탈선 직전 결함 보고로 열렸다.\n- 업무 위치: 구로2동. 종마루는 구로2동 저수조에서 회수한 가짜 펌프 축의 마모 면을 장우석의 수리규격 원장에 맞춰 기록한다. 강민서에게 피해자 목록과 봉인함 열람 결과를 넘기고 뚝섬의 류다인이 확인한 같은 부품 번호를 기다린다.\n\n**관직.** 품계 조합원. 직함은 가짜 펌프 부품 피해자 대표. 피해 명부와 회수 부품을 같은 봉인함에 넣고, 감정은 노동조합과 규격 감사관이 동시에 볼 때만 연다.\n\n**일화.** 2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다. 이 일로 가짜 펌프 부품 피해자 대표 자리의 서명이 장부에 올랐다.\n\n**관계.** 장우석의 수리규격 원장에 불량 목록을 올리고, 강민서의 규격 통일안을 피해 쪽에서 압박하며, 뚝섬의 류다인과 같은 가짜 부품의 양쪽 끝을 증언한다.\n\n**야망.** 불량 펌프 부품의 제조 공방과 유통 경로를 공개 원장에 올려, 수리 규격이 가짜 도장의 방패가 되지 않게 한다.\n\n**공포.** 탁수 구간에 넣은 가짜 패킹이 터져 구로 저수조가 비고, 그 사고가 군수 작업반의 강제 동원 명분이 되는 것.\n\n**개입.** 가짜 도장 원판을 찾아 그의 출고 중지를 뒷받침하거나, 명부에 없는 공방을 끼워 넣은 증거를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 20 | 무력 −5 | 물질 35 | 공동 35 | 원칙 5 | 공개 40 | 자격 80 | 분산 25 | 변혁 25\n- 욕망: 갈망 25 | 독점 −5 | 위험 −20 | 과시 −10 | 지속 25 | 지향 무성향 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-02"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "종마루",
-        "type": "계약",
-        "to": "장우석",
-        "basis": "장우석의 수리규격 원장에 불량 목록을 올리고"
-      },
-      {
-        "from": "종마루",
-        "type": "계약",
-        "to": "류다인",
-        "basis": "뚝섬의 류다인과 같은 가짜 부품의 양쪽 끝을 증언한다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "류다인",
-        "type": "계약",
-        "to": "종마루",
-        "basis": "구로의 종마루와 같은 가짜 부품의 양쪽 끝을 증언하고"
-      }
-    ]
-  }
+  ]
 }

@@ -2,469 +2,159 @@
   "id": "person-0195",
   "name": "오해린",
   "title": "원장",
-  "position": "중앙정보부 원장",
+  "position": "국가정보원장 · 명동역",
   "characterId": "K194",
   "rank": "원장",
-  "commonTier": "T1",
-  "occupation": "냉동 창고 열쇠·경매 가격 관리",
+  "commonTier": "T2",
+  "occupation": "정보 수집",
   "gender": "여성",
   "stage": "주요",
-  "state": "S08",
-  "stateName": "중앙정보부",
-  "sourceRoute": "/world/Cast-State-08#인물-오해린",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0195",
   "birthDate": "2078-11-27",
   "birthday": "11-27",
   "age": 48,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-08.json#/content/1",
-    "lore/characters/Core-Characters.json#/content/75",
-    "lore/chronology/Century-Annals.json#/content/457"
-  ],
-  "familyTree": {
-    "personId": "K194",
-    "nodes": [
-      {
-        "id": "K194",
-        "personId": "K194",
-        "kind": "person",
-        "name": "오해린",
-        "birthDate": "2078-11-27",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K194"
-          },
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-오해린-p1"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "오해린은 중앙정보부의 현재 AI 아바타이며 남산타워를 거점으로 삼는다. 중앙정보부는 2030년부터 독립된 중립 조직으로 활동하였다. 중앙정보부 AI가 계속 조직을 이끌었으며 아바타만 교체하였다. 현재 아바타는 오해린이다. 본래 첩보 조직이었던 중앙정보부는 남산타워에 남은 서울 내부 기록을 보존하고 복구 여부를 판단한다. 중앙정보부는 이 기록을 바탕으로 정통성 있는 조직을 복원하려 한다. 2126년 세대. 동작구 흑석동 보존원 문서고에서 일하였다. 생업만 있다. 오해린은 서울타워를 직접 보유한다. 냉동상단의 냉고 열쇠는 구하온의 것이다. 얼음 신용은 이웃 빚으로 남는다. 한재목이 가격을 열면 창고가 드러나고, 닫으면 양천의 수도꼭지가 먼저 마른다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-오해린-p1"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0195"
-      },
-      {
-        "id": "FH-K194-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현민",
-        "lineage": {
-          "surname": "오",
-          "bongwan": "해주",
-          "clan": "c624-d574-c8fc"
-        },
-        "birthDate": "2054-11-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-오해린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2096,
-            "summary": "오현민은 생활권의 공동 거처에서 냉동상인 대표 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-오해린-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K194-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현원",
-        "lineage": {
-          "surname": "오",
-          "bongwan": "해주",
-          "clan": "c624-d574-c8fc"
-        },
-        "birthDate": "2028-11-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-오해린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2066,
-            "summary": "오현원은 생활권의 공동 거처에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-오해린-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K194-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현진",
-        "lineage": {
-          "surname": "오",
-          "bongwan": "해주",
-          "clan": "c624-d574-c8fc"
-        },
-        "birthDate": "1998-11-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-오해린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오현진은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-오해린-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K194-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최현재",
-        "birthDate": "2055-11-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-오해린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2096,
-            "summary": "최현재는 생활권의 공동 거처에서 냉동상인 대표 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-오해린-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K194-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정현정",
-        "birthDate": "2028-11-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-오해린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2066,
-            "summary": "정현정은 생활권의 공동 거처에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-오해린-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K194-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤현현",
-        "birthDate": "1998-11-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-오해린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤현현은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-오해린-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K194-P-01:K194:biological",
-        "from": "FH-K194-P-01",
-        "to": "K194",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-오해린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K194-P-02:FH-K194-P-01:biological",
-        "from": "FH-K194-P-02",
-        "to": "FH-K194-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-오해린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K194-P-03:FH-K194-P-02:biological",
-        "from": "FH-K194-P-03",
-        "to": "FH-K194-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-오해린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K194-M-01:K194:biological",
-        "from": "FH-K194-M-01",
-        "to": "K194",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-오해린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K194-M-02:FH-K194-M-01:biological",
-        "from": "FH-K194-M-02",
-        "to": "FH-K194-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-오해린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K194-M-03:FH-K194-M-02:biological",
-        "from": "FH-K194-M-03",
-        "to": "FH-K194-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-오해린-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c624-d574-c8fc",
+    "name": "해주 오씨",
+    "crest": "clan-crests/c624-d574-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "중구 명동의 명동역에서 잠을 깨면 원장 오해린은 남산 쪽 계단을 오르기 전에 밤새 들어온 쪽지부터 센다. 대통령이 임명장을 쓴 원장이지만, 남산 자락의 국가정보원이 누구의 결재를 받는지는 정부 안에서도 분명하지 않다. 강 건너 장터의 값과 귀환망으로 돌아온 사람들의 말을 모아 한 장짜리 보고서로 줄이는 것이 그녀의 일이다. 대통령 비서실장 윤지율은 모든 보고를 자기 책상을 거쳐 올리라고 하고, 오해린은 보고서를 봉투째 대통령실 금고에 넣는다. 그녀는 보고서마다 출처 칸을 비워 두고, 그 칸을 채우라는 결재선의 요구에는 날짜만 적어 돌려보낸다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "원장",
+    "품계": "원장",
+    "생업": "정보 수집",
+    "일하는 역": "명동역",
+    "잠자는 역": "명동역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "중구 명동의 명동역에서 잠을 깨면 원장 오해린은 남산 쪽 계단을 오르기 전에 밤새 들어온 쪽지부터 센다. 대통령이 임명장을 쓴 원장이지만, 남산 자락의 국가정보원이 누구의 결재를 받는지는 정부 안에서도 분명하지 않다. 강 건너 장터의 값과 귀환망으로 돌아온 사람들의 말을 모아 한 장짜리 보고서로 줄이는 것이 그녀의 일이다. 대통령 비서실장 윤지율은 모든 보고를 자기 책상을 거쳐 올리라고 하고, 오해린은 보고서를 봉투째 대통령실 금고에 넣는다. 그녀는 보고서마다 출처 칸을 비워 두고, 그 칸을 채우라는 결재선의 요구에는 날짜만 적어 돌려보낸다.",
+    "관직": "직함 원장. 직위 국가정보원장 · 명동역. 품계 원장. 일하는 역 명동역."
+  },
+  "values": {
+    "권위": 45,
+    "개방": -15,
+    "무력": 15,
+    "물질": 65,
+    "공동": -35,
+    "원칙": -30,
+    "공개": 5,
+    "자격": 15,
+    "분산": -30,
+    "변혁": -10
+  },
+  "desire": {
+    "갈망": 60,
+    "독점": -20,
+    "위험": 30,
+    "과시": 50,
+    "지속": -30,
+    "지향": "유동",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0195",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "오해린",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "오해린",
+        "type": "계약",
+        "to": "신종목",
+        "basis": "귀환망으로 돌아온 사람들의 말을 받아 보는 계약을 맺고 있다."
+      },
+      {
+        "from": "오해린",
+        "type": "경쟁",
+        "to": "윤지율",
+        "basis": "보고를 비서실장의 책상을 거치지 않고 봉투째 올려 비서실장과 맞선다."
+      }
+    ],
+    "incoming": [
+      {
+        "from": "백온",
+        "type": "경쟁",
+        "to": "오해린",
+        "basis": "국가정보원이 원부 사본을 청할 때마다 장관의 도장 없이는 내주지 않아 원장과 부딪친다."
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 5,
+        "effective": 5
+      },
+      "martial": {
+        "base": 7,
+        "effective": 7
+      },
+      "stewardship": {
+        "base": 5,
+        "effective": 5
+      },
+      "intrigue": {
         "base": 11,
         "effective": 11
       },
-      "strategy": {
-        "base": 13,
-        "effective": 13
-      },
-      "negotiation": {
-        "base": 12,
-        "effective": 12
-      },
-      "management": {
-        "base": 13,
-        "effective": 13
-      },
-      "insight": {
-        "base": 14,
-        "effective": 14
-      },
       "learning": {
-        "base": 13,
-        "effective": 13
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
         "base": 6,
         "effective": 6
       }
     },
     "skills": [
       {
-        "id": "k194-sealed-auction",
-        "name": {
-          "ko": "봉인 경매 처리",
-          "en": "Sealed-auction handling"
-        },
-        "rating": 60
+        "id": "person-0195-v3-offledger-reading",
+        "name": "장부 밖 소식 맞추기",
+        "rating": 80
+      },
+      {
+        "id": "person-0195-v3-one-page-report",
+        "name": "한 장 보고서",
+        "rating": 75
       }
     ],
     "traits": [
       {
-        "id": "k194-trait-1",
-        "name": {
-          "ko": "봉인 안의 가격",
-          "en": "Price within the seal"
-        },
-        "description": {
-          "ko": "거래를 끊는 대신 봉인과 가격을 함께 사용한다.",
-          "en": "Uses a seal and price instead of ending trade."
-        },
-        "behavior": {
-          "ko": "거래를 끊는 대신 봉인과 가격을 함께 사용한다.",
-          "en": "Uses a seal and price instead of ending trade."
-        },
-        "stress": {
-          "ko": "가짜 약이 나와도 봉한 상자의 값을 올린다.",
-          "en": "Raises the price even when the sealed box contains suspect drugs."
-        },
-        "relationship": {
-          "ko": "류은비의 거래 거부와 달리 움직이며 남윤경과 시장에서 경쟁한다.",
-          "en": "Acts differently from Ryu Eunbi’s refusal and competes with Nam Yungyeong in the market."
-        },
+        "id": "person-0195-v3-sealed-envelope",
+        "name": "봉투째 올리는 보고",
+        "description": "보고서를 한 장으로 줄이고 봉투째 올려, 누가 먼저 읽었는지 남지 않게 한다.",
+        "behavior": "결재선을 거치지 않는 길을 먼저 찾고, 그 길을 쓴 기록은 남기지 않는다.",
+        "stress": "자기 보고서의 사본이 다른 사람의 책상에서 나올 때 가장 흔들린다.",
+        "relationship": "믿는 사람에게도 보고서의 출처는 말하지 않는다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "남산타워에 남은 서울 내부 기록을 보존하고 복구 여부를 판단하며 정통성 있는 조직 복원을 추구하는 AI 아바타다. 가짜 약 상자를 봉한 채 값을 올려 의료 거래 중단과 다른 선택을 했다. 두 카드의 이전 생업은 합치지 않았으며 장기 연속성이 전지적 정보나 시설 통제권을 뜻하지 않는다.",
-      "en": "She is an AI avatar whose organization preserves records from within Seoul at Namsan Tower, judges whether they can be recovered, and seeks to restore a legitimate organization. She raised the price of a sealed suspect-drug box rather than stopping medical trade. Conflicting prior livelihoods are not merged, and organizational continuity grants neither omniscience nor unrestricted facility control."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -502,145 +192,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:capital-s08",
-      "name": {
-        "ko": "서울타워 직영지",
-        "en": "Seoul Tower holding"
-      },
-      "holderPersonId": "K194",
-      "directLiegePersonId": null,
-      "stateId": "S08",
-      "adminRefs": [],
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": null,
-      "landmarkRef": {
-        "landmarkId": "n-seoul-tower",
-        "sourcePath": "lore/places/landmark-roles.json"
-      }
-    }
-  ],
-  "clan": {
-    "id": "c624-d574-c8fc",
-    "name": "해주 오씨",
-    "crest": "clan-crests/c624-d574-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": true,
-  "values": {
-    "권위": 0,
-    "개방": 40,
-    "무력": -20,
-    "물질": 70,
-    "공동": -40,
-    "원칙": -50,
-    "공개": 30,
-    "자격": 0,
-    "분산": 20,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 60,
-    "독점": -20,
-    "위험": 30,
-    "과시": 50,
-    "지속": -30,
-    "지향": "유동",
-    "결합": "다자"
-  },
-  "fields": {
-    "소속": "중앙정보부",
-    "품계": "원장",
-    "생업": "냉동 창고 열쇠·경매 가격 관리",
-    "직함": "중앙정보부 원장"
-  },
-  "sections": {
-    "생애": "오해린은 중앙정보부의 현재 AI 아바타이며 남산타워를 거점으로 삼는다. 중앙정보부는 2030년부터 독립된 중립 조직으로 활동했고 AI가 아바타를 바꾸며 계속 조직을 이끌었다. 첩보 조직이었던 중앙정보부만이 진정한 대한민국과 청와대 시설 안의 지하 동면소에 잠든 실제 대한민국정부 인사들의 존재를 안다. 중앙정보부는 이들을 되살려 정통성 있는 조직을 복원하려 한다. 오해린은 중앙정보부 원장으로 남산타워의 서울 내부 기록과 복구 여부를 대조한다. 서울타워는 오해린이 직접 보유한다. 노량진배달가의 창고 열쇠와 경매 가격 기록을 관리하고, 냉동상단의 냉고 열쇠는 구하온이 맡는다. 얼음 신용은 이웃 빚으로 남는다.\n관직. 품계 원장. 직함은 중앙정보부 원장. 생업 별명은 냉동상인 대표.\n일화. 가짜 약이 경매에 올랐을 때 상자를 봉한 채 값을 올렸고, 류은비는 그날 거래를 끊었다.\n가문. 노량진배달가(HC06). 관리인. 노량진냉동상단(HP08) 관리인은 구하온이다.\n관계. 한재목과 가격 공개 다툼. 남윤경과 시장 경쟁.\n\n- 소속: 중앙정보부\n- 품계: 원장\n- 생업: 냉동 창고 열쇠·경매 가격 관리\n- 직함: 중앙정보부 원장\n- 오해린은 용산2가동에서 남산타워의 관측 기록을 확인하고 수동 신호를 중계한다. 노량진 냉동 창고 열쇠·경매 가격 관리와 서울타워 직접 보유는 이 업무와 별개다.\n\n냉동상인 대표 오해린 곁의 경매·호송·얼음 실세다."
-  },
-  "biography": "**생애.** 오해린은 중앙정보부의 현재 AI 아바타이며 남산타워를 거점으로 삼는다. 중앙정보부는 2030년부터 독립된 중립 조직으로 활동했고 AI가 아바타를 바꾸며 계속 조직을 이끌었다. 첩보 조직이었던 중앙정보부만이 진정한 대한민국과 청와대 시설 안의 지하 동면소에 잠든 실제 대한민국정부 인사들의 존재를 안다. 중앙정보부는 이들을 되살려 정통성 있는 조직을 복원하려 한다. 오해린은 중앙정보부 원장으로 남산타워의 서울 내부 기록과 복구 여부를 대조한다. 서울타워는 오해린이 직접 보유한다. 노량진배달가의 창고 열쇠와 경매 가격 기록을 관리하고, 냉동상단의 냉고 열쇠는 구하온이 맡는다. 얼음 신용은 이웃 빚으로 남는다.\n관직. 품계 원장. 직함은 중앙정보부 원장. 생업 별명은 냉동상인 대표.\n일화. 가짜 약이 경매에 올랐을 때 상자를 봉한 채 값을 올렸고, 류은비는 그날 거래를 끊었다.\n가문. 노량진배달가(HC06). 관리인. 노량진냉동상단(HP08) 관리인은 구하온이다.\n관계. 한재목과 가격 공개 다툼. 남윤경과 시장 경쟁.\n\n- 소속: 중앙정보부\n- 품계: 원장\n- 생업: 냉동 창고 열쇠·경매 가격 관리\n- 직함: 중앙정보부 원장\n- 오해린은 용산2가동에서 남산타워의 관측 기록을 확인하고 수동 신호를 중계한다. 노량진 냉동 창고 열쇠·경매 가격 관리와 서울타워 직접 보유는 이 업무와 별개다.\n\n냉동상인 대표 오해린 곁의 경매·호송·얼음 실세다.",
-  "sources": [
-    "Cast-State-08",
-    "Core-Characters"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": [
-      {
-        "from": "정모란",
-        "type": "경쟁",
-        "to": "오해린",
-        "basis": "수상 운임과 냉동 호송 주도권 경쟁"
-      },
-      {
-        "from": "조민재",
-        "type": "지휘",
-        "to": "오해린",
-        "basis": "전력·물 계약을 냉동 실무로 돌림"
-      },
-      {
-        "from": "윤서하",
-        "type": "지휘",
-        "to": "오해린",
-        "basis": "호송권 비공개 경매를 위임받음"
-      },
-      {
-        "from": "신태산",
-        "type": "계약",
-        "to": "오해린",
-        "basis": "상회 호송 계약을 현장에서 집행"
-      },
-      {
-        "from": "서나연",
-        "type": "지휘",
-        "to": "오해린",
-        "basis": "담보 창고를 얼음으로 채움"
-      },
-      {
-        "from": "피터 얀센",
-        "type": "계약",
-        "to": "오해린",
-        "basis": "상회정 표를 운송선주 평의와 거래"
-      },
-      {
-        "from": "오하늘",
-        "type": "계약",
-        "to": "오해린",
-        "basis": "시세 방송을 길드 시간에 넣음"
-      },
-      {
-        "from": "나루희",
-        "type": "계약",
-        "to": "오해린",
-        "basis": "오해린의 재고 공개에는 복종하되 은폐 배전은 거부한다"
-      },
-      {
-        "from": "모봉용",
-        "type": "계약",
-        "to": "오해린",
-        "basis": "오해린의 시세 방송을 길드 시간에 참고한다"
-      },
-      {
-        "from": "복용",
-        "type": "계약",
-        "to": "오해린",
-        "basis": "오해린의 시세 방송을 시장 시간에만 참고한다"
-      },
-      {
-        "from": "섭다은",
-        "type": "맹세",
-        "to": "오해린",
-        "basis": "오해린의 재고 공개에 증언을 보태고"
-      },
-      {
-        "from": "어도윤",
-        "type": "맹세",
-        "to": "오해린",
-        "basis": "오해린의 중립시장 정통성에 첫해 증언을 보태고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

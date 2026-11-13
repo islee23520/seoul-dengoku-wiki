@@ -3,27 +3,27 @@
   "personId": "person-0121",
   "characterId": "K120",
   "name": "박하율",
-  "stateId": "S05",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "고덕기지 열차정비장"
+    "role": "강동 곁집 어른 · 천호역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "chin-length bob with soft waves",
-    "upper": "sand beige heavy canvas work coverall with rolled sleeves, with a thick knitted scarf and an extra padded layer",
-    "outfit": "sand beige heavy canvas work coverall with rolled sleeves, with a thick knitted scarf and an extra padded layer",
+    "upper": "몸에 맞춘 짙은 외투, 부위마다 정비 틈, 왼쪽 깃에 강동 곁집 무늬, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 세로줄 무늬의 강동 곁집 띠",
+    "outfit": "몸에 맞춘 짙은 외투, 부위마다 정비 틈, 왼쪽 깃에 강동 곁집 무늬, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 세로줄 무늬의 강동 곁집 띠",
     "palette": [
-      "sand beige",
+      "charcoal",
       "oxblood",
-      "dove grey"
+      "heather grey"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "oxblood wool trousers bloused over boots",
-    "footwear": "steel-toe leather work boots",
-    "accessories": "rolled leather tool roll and work gloves tucked into the belt"
+    "lower": "dark wool trousers with a pressed crease",
+    "footwear": "polished leather ankle boots",
+    "accessories": "plain brass pocket watch on a short chain"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "flat cloth cap",
+        "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "sand beige heavy canvas work coverall with rolled sleeves, with a thick knitted scarf and an extra padded layer",
+        "value": "몸에 맞춘 짙은 외투, 부위마다 정비 틈, 왼쪽 깃에 강동 곁집 무늬, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 세로줄 무늬의 강동 곁집 띠",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "oxblood wool trousers bloused over boots",
+        "value": "dark wool trousers with a pressed crease",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "steel-toe leather work boots",
+        "value": "polished leather ankle boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "open work collar",
+        "value": "high buttoned collar under a knitted scarf",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "rolled leather tool roll and work gloves tucked into the belt",
+        "value": "plain brass pocket watch on a short chain",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "rolled bundle and gloves",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "oiled brown leather",
+        "value": "aged brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, steel",
+        "value": "brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "tucked into the belt",
+        "value": "chain from the waistcoat pocket",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(mechanic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "round watch with a fine chain",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 박하율, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. chin-length bob with soft waves; salt-and-pepper hair; short length. build: broad-shouldered; skin: light warm beige. headwear: flat cloth cap; upper garment: sand beige heavy canvas work coverall with rolled sleeves, with a thick knitted scarf and an extra padded layer; neckline: open work collar. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: sand beige, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 박하율, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. chin-length bob with soft waves; salt-and-pepper hair; short length. build: broad-shouldered; skin: light warm beige. upper garment: 몸에 맞춘 짙은 외투, 부위마다 정비 틈, 왼쪽 깃에 강동 곁집 무늬, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 세로줄 무늬의 강동 곁집 띠; neckline: high buttoned collar under a knitted scarf. accessories: plain brass pocket watch on a short chain; worn as chain from the waistcoat pocket. color palette: charcoal, oxblood, heather grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 박하율, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. chin-length bob with soft waves; salt-and-pepper hair; short length. build: broad-shouldered; skin: light warm beige; average adult female height. headwear: flat cloth cap; upper garment: sand beige heavy canvas work coverall with rolled sleeves, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: oxblood wool trousers bloused over boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: sand beige, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 박하율, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. chin-length bob with soft waves; salt-and-pepper hair; short length. build: broad-shouldered; skin: light warm beige; average adult female height. upper garment: 몸에 맞춘 짙은 외투, 부위마다 정비 틈, 왼쪽 깃에 강동 곁집 무늬, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 세로줄 무늬의 강동 곁집 띠; neckline: high buttoned collar under a knitted scarf; lower garment: dark wool trousers with a pressed crease; footwear: polished leather ankle boots. accessories: plain brass pocket watch on a short chain; worn as chain from the waistcoat pocket. color palette: charcoal, oxblood, heather grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 박하율, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. chin-length bob with soft waves; salt-and-pepper hair; short length. build: broad-shouldered; skin: light warm beige; average adult female height. headwear: flat cloth cap; upper garment: sand beige heavy canvas work coverall with rolled sleeves, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: oxblood wool trousers bloused over boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: sand beige, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 박하율, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. chin-length bob with soft waves; salt-and-pepper hair; short length. build: broad-shouldered; skin: light warm beige; average adult female height. upper garment: 몸에 맞춘 짙은 외투, 부위마다 정비 틈, 왼쪽 깃에 강동 곁집 무늬, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 세로줄 무늬의 강동 곁집 띠; neckline: high buttoned collar under a knitted scarf; lower garment: dark wool trousers with a pressed crease; footwear: polished leather ankle boots. accessories: plain brass pocket watch on a short chain; worn as chain from the waistcoat pocket. color palette: charcoal, oxblood, heather grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 박하율, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. chin-length bob with soft waves; salt-and-pepper hair; short length. build: broad-shouldered; skin: light warm beige; average adult female height. headwear: flat cloth cap; upper garment: sand beige heavy canvas work coverall with rolled sleeves, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: oxblood wool trousers bloused over boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: sand beige, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 박하율, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. chin-length bob with soft waves; salt-and-pepper hair; short length. build: broad-shouldered; skin: light warm beige; average adult female height. upper garment: 몸에 맞춘 짙은 외투, 부위마다 정비 틈, 왼쪽 깃에 강동 곁집 무늬, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 세로줄 무늬의 강동 곁집 띠; neckline: high buttoned collar under a knitted scarf; lower garment: dark wool trousers with a pressed crease; footwear: polished leather ankle boots. accessories: plain brass pocket watch on a short chain; worn as chain from the waistcoat pocket. color palette: charcoal, oxblood, heather grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 박하율, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. chin-length bob with soft waves; salt-and-pepper hair; short length. build: broad-shouldered; skin: light warm beige; average adult female height. headwear: flat cloth cap; upper garment: sand beige heavy canvas work coverall with rolled sleeves, with a thick knitted scarf and an extra padded layer; neckline: open work collar; lower garment: oxblood wool trousers bloused over boots; footwear: steel-toe leather work boots. accessories: rolled leather tool roll and work gloves tucked into the belt; worn as tucked into the belt. color palette: sand beige, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 박하율, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; round dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. chin-length bob with soft waves; salt-and-pepper hair; short length. build: broad-shouldered; skin: light warm beige; average adult female height. upper garment: 몸에 맞춘 짙은 외투, 부위마다 정비 틈, 왼쪽 깃에 강동 곁집 무늬, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 세로줄 무늬의 강동 곁집 띠; neckline: high buttoned collar under a knitted scarf; lower garment: dark wool trousers with a pressed crease; footwear: polished leather ankle boots. accessories: plain brass pocket watch on a short chain; worn as chain from the waistcoat pocket. color palette: charcoal, oxblood, heather grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

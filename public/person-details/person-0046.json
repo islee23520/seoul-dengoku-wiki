@@ -1,395 +1,120 @@
 {
   "id": "person-0046",
   "name": "표예담",
-  "title": "천왕기지 유치배차 실무장",
-  "position": "천왕기지 유치배차 실무장",
+  "title": "온수 구간장",
+  "position": "온수 구간장 · 자유도시들",
   "characterId": "K046",
-  "rank": "감사",
-  "commonTier": "T4",
-  "occupation": "유치선 배차",
+  "rank": "구간장",
+  "commonTier": "T3",
+  "occupation": "구간 운영",
   "gender": "여성",
   "stage": "S2",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-표예담",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0046",
   "birthDate": "2083-02-13",
   "birthday": "02-13",
   "age": 43,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/60",
-    "lore/characters/Cast-State-02.json#/content/62",
-    "lore/characters/Cast-State-02.json#/content/66"
-  ],
-  "familyTree": {
-    "personId": "K046",
-    "nodes": [
-      {
-        "id": "K046",
-        "personId": "K046",
-        "kind": "person",
-        "name": "표예담",
-        "birthDate": "2083-02-13",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K046"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-표예담-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 천왕기지 유치배차 실무장 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-표예담-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0046"
-      },
-      {
-        "id": "FH-K046-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "표승진",
-        "lineage": {
-          "surname": "표",
-          "bongwan": "신창",
-          "clan": "d45c-c2e0-cc3d"
-        },
-        "birthDate": "2053-02-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-표예담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2091,
-            "summary": "표승진은 신정 차량기지에서 유치선 배차 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-표예담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K046-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "표승현",
-        "lineage": {
-          "surname": "표",
-          "bongwan": "신창",
-          "clan": "d45c-c2e0-cc3d"
-        },
-        "birthDate": "2023-02-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-표예담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "표승현은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-표예담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K046-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조승경",
-        "birthDate": "2053-02-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-표예담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2091,
-            "summary": "조승경은 신정 차량기지에서 유치선 배차 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-표예담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K046-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김승정",
-        "birthDate": "2023-02-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-표예담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "김승정은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-표예담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K046-P-01:K046:biological",
-        "from": "FH-K046-P-01",
-        "to": "K046",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-표예담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K046-P-02:FH-K046-P-01:biological",
-        "from": "FH-K046-P-02",
-        "to": "FH-K046-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-표예담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K046-M-01:K046:biological",
-        "from": "FH-K046-M-01",
-        "to": "K046",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-표예담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K046-M-02:FH-K046-M-01:biological",
-        "from": "FH-K046-M-02",
-        "to": "FH-K046-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-표예담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d45c-c2e0-cc3d",
+    "name": "신창 표씨",
+    "crest": "clan-crests/d45c-c2e0-cc3d.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "구일에서 온수, 천왕까지 다섯 역 가운데 넷이 서울 서남쪽 끝이라 바깥 기계의 테두리를 마주하고, 그 다섯 역이 표예담의 구간이다. 그는 구일 출입구에서 하루를 시작해 온수 쪽 지상의 망보는 자리까지 오르내리며, 테두리 쪽에 움직임이 있으면 구간의 출입구를 몇 개 닫을지 정한다. 온수와 천왕 사이 7호선 짧은 토막도 그의 몫이다. 온수 지상의 망보는 자리에는 넷이 한 조로 서는데, 눈보라 철이면 그는 교대 시각을 두 시간씩 당겨 언 손이 오래 서 있지 않게 한다. 마흔셋인 지금까지 그가 이 규칙을 거른 적은 없다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "온수 구간장",
+    "품계": "구간장",
+    "생업": "구간 운영",
+    "일하는 역": "구일역",
+    "잠자는 역": "구일역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "구일에서 온수, 천왕까지 다섯 역 가운데 넷이 서울 서남쪽 끝이라 바깥 기계의 테두리를 마주하고, 그 다섯 역이 표예담의 구간이다. 그는 구일 출입구에서 하루를 시작해 온수 쪽 지상의 망보는 자리까지 오르내리며, 테두리 쪽에 움직임이 있으면 구간의 출입구를 몇 개 닫을지 정한다. 온수와 천왕 사이 7호선 짧은 토막도 그의 몫이다. 온수 지상의 망보는 자리에는 넷이 한 조로 서는데, 눈보라 철이면 그는 교대 시각을 두 시간씩 당겨 언 손이 오래 서 있지 않게 한다. 마흔셋인 지금까지 그가 이 규칙을 거른 적은 없다.",
+    "관직": "직함 온수 구간장. 직위 온수 구간장 · 자유도시들. 품계 구간장. 일하는 역 구일역."
+  },
+  "values": {
+    "권위": -70,
+    "개방": 30,
+    "무력": -15,
+    "물질": 50,
+    "공동": 10,
+    "원칙": 5,
+    "공개": 40,
+    "자격": 70,
+    "분산": 85,
+    "변혁": 35
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -10,
+    "위험": -25,
+    "과시": -25,
+    "지속": 35,
+    "지향": "무성향",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0046",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "표예담",
+        "type": "지휘",
+        "to": "강민서",
+        "basis": "구로 공장장 강민서의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K029",
+    "name": "강민서",
+    "courtId": "court:K029",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
       }
     },
-    "skills": [
-      {
-        "id": "k046-siding-dispatch",
-        "name": {
-          "ko": "유치선 배차",
-          "en": "Siding dispatch"
-        },
-        "rating": 65
-      },
-      {
-        "id": "k046-defective-parts-return",
-        "name": {
-          "ko": "불량품 반환",
-          "en": "Defective-parts return"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k046-measured-cargo-only",
-        "name": {
-          "ko": "도장 화물만",
-          "en": "Measured cargo only"
-        },
-        "description": {
-          "ko": "계측 없는 군수 개조를 유치선 밖으로 밀어낸다.",
-          "en": "Keeps unmeasured military modifications outside the sidings."
-        },
-        "behavior": {
-          "ko": "계측 없는 군수 개조를 유치선 밖으로 밀어낸다.",
-          "en": "Keeps unmeasured military modifications outside the sidings."
-        },
-        "stress": {
-          "ko": "용산 중계가 막히면 천왕 유치선이 가득 차 공병열차와 급수열차가 동시에 갇히는 것.",
-          "en": "That when the Yongsan relay clogged, the Cheonwang siding would fill, and engineering cars and water trains would be trapped at once."
-        },
-        "relationship": {
-          "ko": "허다온의 차륜 출고를 배차판에서 보증하고, 정시우의 계측 도장에 배차를 묶으며, 박태겸의 중계 창구와 외곽 열차를 나눈다.",
-          "en": "Guaranteeing Heo Daon's wheel releases on the dispatch board, binding dispatches to Jeong Siwoo's gauging seals, and splitting the relay window and outer trains with Park Taegyeom."
-        },
-        "effects": []
-      },
-      {
-        "id": "k046-no-disguised-freight",
-        "name": {
-          "ko": "위장 화물 거절",
-          "en": "Reject disguised freight"
-        },
-        "description": {
-          "ko": "수리 물자를 군수 화차로 위장하지 않는다.",
-          "en": "Refuses to disguise repair materials as military freight."
-        },
-        "behavior": {
-          "ko": "수리 물자를 군수 화차로 위장하지 않는다.",
-          "en": "Refuses to disguise repair materials as military freight."
-        },
-        "stress": {
-          "ko": "용산 중계가 막히면 천왕 유치선이 가득 차 공병열차와 급수열차가 동시에 갇히는 것.",
-          "en": "That when the Yongsan relay clogged, the Cheonwang siding would fill, and engineering cars and water trains would be trapped at once."
-        },
-        "relationship": {
-          "ko": "허다온의 차륜 출고를 배차판에서 보증하고, 정시우의 계측 도장에 배차를 묶으며, 박태겸의 중계 창구와 외곽 열차를 나눈다.",
-          "en": "Guaranteeing Heo Daon's wheel releases on the dispatch board, binding dispatches to Jeong Siwoo's gauging seals, and splitting the relay window and outer trains with Park Taegyeom."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "출고 직전 불량품을 반환하고 계측 도장에 배차를 묶는다. 운행 기술은 인정하지만 철도 건설 경력은 없다.",
-      "en": "Returns faulty parts before dispatch and ties scheduling to measurement seals. Operations are supported, not railway construction."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -427,97 +152,45 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
+  "confirmedHoldings": [
     {
-      "id": "title:duchy-44210-S02",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
+      "id": "holding:v3:section:구로구:온수",
+      "name": {
+        "ko": "온수 구간"
+      },
       "holderPersonId": "K046",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:kingdom-s02",
-      "personalLieges": [
+      "directLiegePersonId": "K029",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "구일",
+        "stationName": "구일"
+      },
+      "adminRefs": [
         {
-          "holdingId": "holding:opening-duchy-44210-S02",
-          "directLiegePersonId": "K029"
+          "id": "region:1153052000",
+          "name": "구로1동"
+        },
+        {
+          "id": "region:1153074000",
+          "name": "개봉1동"
+        },
+        {
+          "id": "region:1153077000",
+          "name": "오류1동"
+        },
+        {
+          "id": "region:1153079000",
+          "name": "수궁동"
+        },
+        {
+          "id": "region:1153078000",
+          "name": "오류2동"
         }
       ],
-      "directOwnership": false
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
     }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d45c-c2e0-cc3d",
-    "name": "신창 표씨",
-    "crest": "clan-crests/d45c-c2e0-cc3d.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -35,
-    "개방": 15,
-    "무력": -5,
-    "물질": 35,
-    "공동": 35,
-    "원칙": 15,
-    "공개": 40,
-    "자격": 50,
-    "분산": 30,
-    "변혁": 25
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -10,
-    "위험": -25,
-    "과시": -25,
-    "지속": 35,
-    "지향": "무성향",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "규격맹",
-    "생업": "유치선 배차",
-    "품계": "감사",
-    "직함": "천왕기지 유치배차 실무장",
-    "업무 위치": "오류2동. 표예담은 오류2동 천왕기지 유치선 배차판에 허다온의 차륜 출고와 결빙 선로 점검 시각을 함께 적는다. 정시우의 계측 도장이 빠진 상자는 출고 직전에 되돌리고 박태겸의 중계 창구에 수정된 배차표를 보낸다.",
-    "가치관": "권위 −35 | 개방 15 | 무력 −5 | 물질 35 | 공동 35 | 원칙 15 | 공개 40 | 자격 50 | 분산 30 | 변혁 25",
-    "욕망": "갈망 0 | 독점 −10 | 위험 −25 | 과시 −25 | 지속 35 | 지향 무성향 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 천왕기지 유치배차 실무장 자리는 탈선 직전 결함 보고로 열렸다.\n- 업무 위치: 오류2동. 표예담은 오류2동 천왕기지 유치선 배차판에 허다온의 차륜 출고와 결빙 선로 점검 시각을 함께 적는다. 정시우의 계측 도장이 빠진 상자는 출고 직전에 되돌리고 박태겸의 중계 창구에 수정된 배차표를 보낸다.",
-    "관직": "품계 감사. 직함은 천왕기지 유치배차 실무장. 정비·공병·배급 순서를 매일 공개하고, 도장 없는 군수 개조는 유치선 바깥으로 밀어낸다.",
-    "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 천왕기지 유치배차 실무장 자리의 서명이 장부에 올랐다.",
-    "관계": "허다온의 차륜 출고를 배차판에서 보증하고, 정시우의 계측 도장에 배차를 묶으며, 박태겸의 중계 창구와 외곽 열차를 나눈다.",
-    "야망": "천왕 유치선을 규격 도장 화물만 오가는 순환 배차망으로 만들어 규격맹의 동맥이 된다.",
-    "공포": "용산 중계가 막히면 천왕 유치선이 가득 차 공병열차와 급수열차가 동시에 갇히는 것.",
-    "개입": "대체 차륜을 구해 순환 배차를 살리거나, 봉쇄 유치선의 밀반출 장부를 폭로할 수 있다."
-  },
-  "biography": "선로 진동으로 열차의 거짓을 읽고, 수리 물자를 군수 화차로 위장하는 명령을 모욕으로 듣는다. 과묵하고 출고 시각을 어기는 조합을 오래 기억한다.\n\n- 소속: 규격맹\n- 생업: 유치선 배차\n- 품계: 감사\n- 직함: 천왕기지 유치배차 실무장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 천왕기지 유치배차 실무장 자리는 탈선 직전 결함 보고로 열렸다.\n- 업무 위치: 오류2동. 표예담은 오류2동 천왕기지 유치선 배차판에 허다온의 차륜 출고와 결빙 선로 점검 시각을 함께 적는다. 정시우의 계측 도장이 빠진 상자는 출고 직전에 되돌리고 박태겸의 중계 창구에 수정된 배차표를 보낸다.\n\n**관직.** 품계 감사. 직함은 천왕기지 유치배차 실무장. 정비·공병·배급 순서를 매일 공개하고, 도장 없는 군수 개조는 유치선 바깥으로 밀어낸다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 천왕기지 유치배차 실무장 자리의 서명이 장부에 올랐다.\n\n**관계.** 허다온의 차륜 출고를 배차판에서 보증하고, 정시우의 계측 도장에 배차를 묶으며, 박태겸의 중계 창구와 외곽 열차를 나눈다.\n\n**야망.** 천왕 유치선을 규격 도장 화물만 오가는 순환 배차망으로 만들어 규격맹의 동맥이 된다.\n\n**공포.** 용산 중계가 막히면 천왕 유치선이 가득 차 공병열차와 급수열차가 동시에 갇히는 것.\n\n**개입.** 대체 차륜을 구해 순환 배차를 살리거나, 봉쇄 유치선의 밀반출 장부를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 15 | 무력 −5 | 물질 35 | 공동 35 | 원칙 15 | 공개 40 | 자격 50 | 분산 30 | 변혁 25\n- 욕망: 갈망 0 | 독점 −10 | 위험 −25 | 과시 −25 | 지속 35 | 지향 무성향 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-02"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "표예담",
-        "type": "계약",
-        "to": "정시우",
-        "basis": "정시우의 계측 도장에 배차를 묶으며"
-      },
-      {
-        "from": "표예담",
-        "type": "계약",
-        "to": "허다온",
-        "basis": "허다온의 차륜 출고를 배차판에서 보증하고"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "한현우",
-        "type": "계약",
-        "to": "표예담",
-        "basis": "한현우는 작업반의 환승 전갈을 표예담의 유치선 배차판까지 전달한다. 배차표 없는 출발을 발견하면 서명이 빠진 내용을 알려, 표예담이 공개한 정비·공병·배급 순서에 확인되지 않은 열차가 끼어들지 않게 한다."
-      }
-    ]
-  }
+  ]
 }

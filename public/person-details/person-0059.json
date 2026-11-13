@@ -1,514 +1,155 @@
 {
   "id": "person-0059",
   "name": "최은재",
-  "title": "기술인증 평의원",
-  "position": "기술인증 평의원",
+  "title": "가락본동 대피소장",
+  "position": "가락본동 대피소장 · 아크",
   "characterId": "K059",
-  "rank": "대리",
-  "commonTier": "T5",
-  "occupation": "기술 인증·검증",
+  "rank": "대피소장",
+  "commonTier": "T3",
+  "occupation": "대피소 통솔",
   "gender": "여성",
   "stage": "S1",
-  "state": "S03",
-  "stateName": "태욱그룹",
-  "sourceRoute": "/world/Cast-State-03#인물-최은재",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0059",
   "birthDate": "2097-03-18",
   "birthday": "03-18",
   "age": 29,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-03.json#/content/60",
-    "lore/characters/Cast-State-03.json#/content/62",
-    "lore/characters/Cast-State-03.json#/content/63"
-  ],
-  "familyTree": {
-    "personId": "K059",
-    "nodes": [
-      {
-        "id": "K059",
-        "personId": "K059",
-        "kind": "person",
-        "name": "최은재",
-        "birthDate": "2097-03-18",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K059"
-          },
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-최은재-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 기술인증 평의원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-최은재-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0059"
-      },
-      {
-        "id": "FH-K059-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승범",
-        "lineage": {
-          "surname": "최",
-          "bongwan": "해주",
-          "clan": "cd5c-d574-c8fc-5d14"
-        },
-        "birthDate": "2067-03-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-최은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "최승범은 대합실 당직에서 기술 인증·검증 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-최은재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K059-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승재",
-        "lineage": {
-          "surname": "최",
-          "bongwan": "해주",
-          "clan": "cd5c-d574-c8fc-5d14"
-        },
-        "birthDate": "2037-03-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-최은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "최승재는 대합실 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-최은재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K059-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승찬",
-        "lineage": {
-          "surname": "최",
-          "bongwan": "해주",
-          "clan": "cd5c-d574-c8fc-5d14"
-        },
-        "birthDate": "2007-03-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-최은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최승찬은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-최은재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K059-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김승완",
-        "birthDate": "2067-03-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-최은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "김승완은 대합실 당직에서 기술 인증·검증 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-최은재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K059-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박승규",
-        "birthDate": "2037-03-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-최은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "박승규는 대합실 당직에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-최은재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K059-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "이승정",
-        "birthDate": "2007-03-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-최은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이승정은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-최은재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K059-P-01:K059:biological",
-        "from": "FH-K059-P-01",
-        "to": "K059",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-최은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K059-P-02:FH-K059-P-01:biological",
-        "from": "FH-K059-P-02",
-        "to": "FH-K059-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-최은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K059-P-03:FH-K059-P-02:biological",
-        "from": "FH-K059-P-03",
-        "to": "FH-K059-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-최은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K059-M-01:K059:biological",
-        "from": "FH-K059-M-01",
-        "to": "K059",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-최은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K059-M-02:FH-K059-M-01:biological",
-        "from": "FH-K059-M-02",
-        "to": "FH-K059-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-최은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K059-M-03:FH-K059-M-02:biological",
-        "from": "FH-K059-M-03",
-        "to": "FH-K059-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-최은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cd5c-d574-c8fc-5d14",
+    "name": "해주 최씨",
+    "crest": "clan-crests/cd5c-d574-c8fc-5d14.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "최은재는 스물여덟에 가락본동 대피소를 맡은 대피소장이다. 대피소가 가락시장 먹거리 바꿈터와 맞붙어 있어서, 말린 벌레와 절인 물고기 상자가 몇 개 남았는지가 그의 하루 첫 셈이다. 영등포 장주 한재목과 맺은 약속으로 바꿈터에서 내는 저장 먹거리의 몫을 철마다 맞춘다. 장부를 들고 오는 자유도시 상인에게도 먼저 자기 부위 수를 말하는데, 둘째 부위를 받은 뒤로 그 버릇을 버린 적이 없다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "가락본동 대피소장",
+    "품계": "대피소장",
+    "생업": "대피소 통솔",
+    "일하는 역": "가락시장역",
+    "잠자는 역": "가락시장역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "최은재는 스물여덟에 가락본동 대피소를 맡은 대피소장이다. 대피소가 가락시장 먹거리 바꿈터와 맞붙어 있어서, 말린 벌레와 절인 물고기 상자가 몇 개 남았는지가 그의 하루 첫 셈이다. 영등포 장주 한재목과 맺은 약속으로 바꿈터에서 내는 저장 먹거리의 몫을 철마다 맞춘다. 장부를 들고 오는 자유도시 상인에게도 먼저 자기 부위 수를 말하는데, 둘째 부위를 받은 뒤로 그 버릇을 버린 적이 없다.",
+    "관직": "직함 가락본동 대피소장. 직위 가락본동 대피소장 · 아크. 품계 대피소장. 일하는 역 가락시장역."
+  },
+  "values": {
+    "권위": 10,
+    "개방": 15,
+    "무력": -30,
+    "물질": -40,
+    "공동": 25,
+    "원칙": 40,
+    "공개": 5,
+    "자격": 20,
+    "분산": -20,
+    "변혁": 60
+  },
+  "desire": {
+    "갈망": 35,
+    "독점": -15,
+    "위험": 0,
+    "과시": -5,
+    "지속": -15,
+    "지향": "무성향",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0059",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "최은재",
+        "type": "지휘",
+        "to": "남윤경",
+        "basis": "송파 곁집장 남윤경의 직속"
+      },
+      {
+        "from": "최은재",
+        "type": "계약",
+        "to": "한재목",
+        "basis": "가락시장 바꿈터에서 내는 말린 벌레와 절인 물고기의 몫을 철마다 영등포 장터와 맞추는 약속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "영마온",
+        "type": "지휘",
+        "to": "최은재",
+        "basis": "가락본동 대피소장 최은재의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K373",
+    "name": "남윤경",
+    "courtId": "court:K373",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K059",
+    "members": [
+      {
+        "personId": "K407",
+        "name": "영마온"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 12,
-        "effective": 12
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
         "base": 6,
         "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "certify",
-        "name": {
-          "ko": "인증 조항 검토",
-          "en": "Certification-clause review"
-        },
-        "rating": 65
-      },
-      {
-        "id": "referral",
-        "name": {
-          "ko": "공개 창구 안내",
-          "en": "Public-channel referral"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "no-secret-clauses",
-        "name": {
-          "ko": "비공개 조항 거부",
-          "en": "No Secret Clauses"
-        },
-        "description": {
-          "ko": "최은재는 인증을 흥정 수단이 아니라 공개 조건에 묶인 절차로 본다.",
-          "en": "Choi Eunjae treats certification as a process bound to open terms rather than a bargaining asset."
-        },
-        "behavior": {
-          "ko": "인증 사본을 신청국과 마곡 서고에 함께 남기고 비공개 성능 조항이 있으면 날인을 거부한다.",
-          "en": "She leaves certification copies with both the applicant country and Magok archive and refuses to stamp secret performance clauses."
-        },
-        "stress": {
-          "ko": "폐쇄 연구파가 인증을 보호비로 팔 우려가 있다면 공개 원장과 조건 공개를 더 엄격히 지킬 수 있다.",
-          "en": "If a closed research faction might sell certification as protection payments, she may enforce open ledgers and disclosed terms more strictly."
-        },
-        "relationship": {
-          "ko": "계약의 공개 범위를 넓힐 수 있다면 정호준과 협력하고 정유라의 기술공유 문장을 인증 조항에 반영할 수 있다.",
-          "en": "She may cooperate with Jeong Hojun and incorporate Jeong Yura’s technology-sharing language when this broadens contract transparency."
-        },
-        "effects": []
-      },
-      {
-        "id": "attention-to-on-site-faults",
-        "name": {
-          "ko": "현장 고장 관심",
-          "en": "Attention to On-Site Faults"
-        },
-        "description": {
-          "ko": "최은재의 호기심은 성능표의 빈칸보다 현장에서 고장 난 펌프에 더 오래 머문다.",
-          "en": "Choi Eunjae’s curiosity lingers longer on a broken on-site pump than on gaps in a performance sheet."
-        },
-        "behavior": {
-          "ko": "고장 난 펌프를 오래 살피고 임채원의 필터 검증을 맡는다.",
-          "en": "She spends time examining broken pumps and undertakes filter verification for Im Chaewon."
-        },
-        "stress": {
-          "ko": "인증이 보호비 거래로 변할 우려가 있다면 현장 상태를 외면하는 인증에 더 경계할 수 있다.",
-          "en": "If certification risks becoming a protection-payment trade, she may be more wary of certification that ignores actual site conditions."
-        },
-        "relationship": {
-          "ko": "필터의 실제 성능을 확인해야 한다면 임채원과의 검증 동맹을 활용할 수 있다.",
-          "en": "She may rely on her verification alliance with Im Chaewon when a filter’s actual performance needs checking."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "공개 계약 범위를 설계하고 인증 사본을 양쪽에 남긴다. 고장 펌프를 살피는 호기심은 반영하나 수리 숙련은 부여하지 않는다.",
-      "en": "He designs disclosure boundaries and retains certification copies on both sides. Interest in broken pumps supports curiosity, not repair skill."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -534,104 +175,52 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "cd5c-d574-c8fc-5d14",
-    "name": "해주 최씨",
-    "crest": "clan-crests/cd5c-d574-c8fc-5d14.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -15,
-    "개방": 30,
-    "무력": -40,
-    "물질": 10,
-    "공동": 5,
-    "원칙": 50,
-    "공개": 50,
-    "자격": 55,
-    "분산": 10,
-    "변혁": 15
-  },
-  "desire": {
-    "갈망": 35,
-    "독점": -15,
-    "위험": 0,
-    "과시": -5,
-    "지속": -15,
-    "지향": "무성향",
-    "결합": "비독점"
-  },
-  "fields": {
-    "소속": "태욱그룹",
-    "생업": "기술 인증·검증",
-    "품계": "대리",
-    "직함": "기술인증 평의원",
-    "업무": "가양1동. 최은재는 마곡 서고에 같은 사본이 도착했는지 제라온의 인수 기록으로 확인한다.",
-    "가치관": "권위 −15 | 개방 30 | 무력 −40 | 물질 10 | 공동 5 | 원칙 50 | 공개 50 | 자격 55 | 분산 10 | 변혁 15",
-    "욕망": "갈망 35 | 독점 −15 | 위험 0 | 과시 −5 | 지속 −15 | 지향 무성향 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 최은재는 신청국으로 보낼 인증 사본과 공개 시험 기록을 맞추고 비공개 조항이 남은 도장은 보류한다.\n- 업무: 양재1동. 최은재는 신청국으로 보낼 인증 사본과 공개 시험 기록을 맞추고 비공개 조항이 남은 도장은 보류한다.\n- 업무: 가양1동. 최은재는 마곡 서고에 같은 사본이 도착했는지 제라온의 인수 기록으로 확인한다.",
-    "관직": "품계 대리. 직함은 기술인증 평의원. 인증 사본을 신청국과 마곡 서고에 동시에 남기고, 비공개 성능 조항이 있으면 도장을 찍지 않는다.",
-    "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다.",
-    "관계": "정호준과 공개 계약 범위를 설계하는 사제에 가깝고, 서울 방호 대표 임채원의 필터 검증을 동맹으로 맡으며, 정유라의 기술공유 문장을 인증 조항에 끌어들인다.",
-    "야망": "의약·통신·펌프 인증을 태욱그룹의 공개 원장으로 옮겨 공동기술원장의 실무 창구가 된다.",
-    "공포": "인증을 보호비로 파는 폐쇄 연구파가 평의회를 장악해 기술자가 다시 인질 시세표에 오르는 것.",
-    "개입": "재현 실험의 원본 기록을 가져와 인증을 복구하거나, 비공개 조항을 숨긴 평의원을 설득·폭로할 수 있다."
-  },
-  "biography": "호기심이 많으나 인증 도장을 흥정 밑천으로 쓰는 사람을 경멸한다. 성능표의 빈칸보다 현장의 고장난 펌프를 더 오래 본다.\n\n- 소속: 태욱그룹\n- 생업: 기술 인증·검증\n- 품계: 대리\n- 직함: 기술인증 평의원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 최은재는 신청국으로 보낼 인증 사본과 공개 시험 기록을 맞추고 비공개 조항이 남은 도장은 보류한다.\n- 업무: 양재1동. 최은재는 신청국으로 보낼 인증 사본과 공개 시험 기록을 맞추고 비공개 조항이 남은 도장은 보류한다.\n- 업무: 가양1동. 최은재는 마곡 서고에 같은 사본이 도착했는지 제라온의 인수 기록으로 확인한다.\n\n**관직.** 품계 대리. 직함은 기술인증 평의원. 인증 사본을 신청국과 마곡 서고에 동시에 남기고, 비공개 성능 조항이 있으면 도장을 찍지 않는다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다.\n\n**관계.** 정호준과 공개 계약 범위를 설계하는 사제에 가깝고, 서울 방호 대표 임채원의 필터 검증을 동맹으로 맡으며, 정유라의 기술공유 문장을 인증 조항에 끌어들인다.\n\n**야망.** 의약·통신·펌프 인증을 태욱그룹의 공개 원장으로 옮겨 공동기술원장의 실무 창구가 된다.\n\n**공포.** 인증을 보호비로 파는 폐쇄 연구파가 평의회를 장악해 기술자가 다시 인질 시세표에 오르는 것.\n\n**개입.** 재현 실험의 원본 기록을 가져와 인증을 복구하거나, 비공개 조항을 숨긴 평의원을 설득·폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 30 | 무력 −40 | 물질 10 | 공동 5 | 원칙 50 | 공개 50 | 자격 55 | 분산 10 | 변혁 15\n- 욕망: 갈망 35 | 독점 −15 | 위험 0 | 과시 −5 | 지속 −15 | 지향 무성향 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-03"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1171062000",
+      "name": {
+        "ko": "가락본동"
+      },
+      "holderPersonId": "K059",
+      "directLiegePersonId": "K373",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1171062000",
+          "name": "가락본동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
   ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "최은재",
-        "type": "사제",
-        "to": "정호준",
-        "basis": "공개 계약 범위를 함께 설계"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:가락시장",
+      "name": {
+        "ko": "가락시장역"
       },
-      {
-        "from": "최은재",
-        "type": "계약",
-        "to": "임채원",
-        "basis": "필터 검증을 방호 직능에 맡음"
+      "holderPersonId": "K407",
+      "directLiegePersonId": "K059",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "가락시장",
+        "stationName": "가락시장"
       },
-      {
-        "from": "최은재",
-        "type": "계약",
-        "to": "정유라",
-        "basis": "기술공유 문장을 인증 조항에 끌어들임"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "임채원",
-        "type": "계약",
-        "to": "최은재",
-        "basis": "방호 필터 성능 검증을 나눔"
-      },
-      {
-        "from": "유민호",
-        "type": "계약",
-        "to": "최은재",
-        "basis": "인증 도장에 외곽 배차를 묶음"
-      },
-      {
-        "from": "허서겸",
-        "type": "계약",
-        "to": "최은재",
-        "basis": "최은재의 인증 도장이 떨어지면 출고를 잠그며"
-      },
-      {
-        "from": "제라온",
-        "type": "사제",
-        "to": "최은재",
-        "basis": "최은재의 인증 범위를 원장으로 옮기는 사제에 가깝고"
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1171062000",
+          "name": "가락본동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "영마온",
+      "holderRoute": "/people/person-0408"
+    }
+  ]
 }

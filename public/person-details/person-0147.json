@@ -1,492 +1,210 @@
 {
   "id": "person-0147",
   "name": "조하린",
-  "title": "문서고 사서",
-  "position": "문서고 사서",
+  "title": "은평구 국회의원",
+  "position": "은평구 국회의원 · 정부",
   "characterId": "K146",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "문서고 열쇠·열람 기록 관리",
+  "rank": "국회의원",
+  "commonTier": "T1",
+  "occupation": "구 행정",
   "gender": "여성",
   "stage": "S1",
-  "state": "S06",
-  "stateName": "대한민국정부",
-  "sourceRoute": "/world/Cast-State-06#인물-조하린",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0147",
   "birthDate": "2095-01-20",
   "birthday": "01-20",
   "age": 31,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-06.json#/content/50"
-  ],
-  "familyTree": {
-    "personId": "K146",
-    "nodes": [
-      {
-        "id": "K146",
-        "personId": "K146",
-        "kind": "person",
-        "name": "조하린",
-        "birthDate": "2095-01-20",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K146"
-          },
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조하린-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 문서고 사서 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-조하린-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0147"
-      },
-      {
-        "id": "FH-K146-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조승란",
-        "lineage": {
-          "surname": "조",
-          "bongwan": "배천",
-          "clan": "c870-bc30-cc9c-8d99"
-        },
-        "birthDate": "2065-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2103,
-            "summary": "조승란은 서울역 등기소에서 문서고 열쇠·열람 기록 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-조하린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K146-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "조승리",
-        "lineage": {
-          "surname": "조",
-          "bongwan": "배천",
-          "clan": "c870-bc30-cc9c-8d99"
-        },
-        "birthDate": "2035-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "조승리는 서울역 등기소에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-조하린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K146-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "조승나",
-        "lineage": {
-          "surname": "조",
-          "bongwan": "배천",
-          "clan": "c870-bc30-cc9c-8d99"
-        },
-        "birthDate": "2005-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조승나는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-조하린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K146-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최현수",
-        "birthDate": "2065-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2103,
-            "summary": "최현수는 서울역 등기소에서 문서고 열쇠·열람 기록 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-조하린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K146-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정현현",
-        "birthDate": "2035-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "정현현은 서울역 등기소에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-조하린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K146-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승나",
-        "birthDate": "2005-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤승나는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-조하린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K146-P-01:K146:biological",
-        "from": "FH-K146-P-01",
-        "to": "K146",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K146-P-02:FH-K146-P-01:biological",
-        "from": "FH-K146-P-02",
-        "to": "FH-K146-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K146-P-03:FH-K146-P-02:biological",
-        "from": "FH-K146-P-03",
-        "to": "FH-K146-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K146-M-01:K146:biological",
-        "from": "FH-K146-M-01",
-        "to": "K146",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K146-M-02:FH-K146-M-01:biological",
-        "from": "FH-K146-M-02",
-        "to": "FH-K146-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K146-M-03:FH-K146-M-02:biological",
-        "from": "FH-K146-M-03",
-        "to": "FH-K146-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-조하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c870-bc30-cc9c-8d99",
+    "name": "배천 조씨",
+    "crest": "clan-crests/c870-bc30-cc9c-8d99.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "은평구 국회의원으로 기재된 배천 조씨 세대주다. 연신내역에서 북한산 벌목 허가서를 받아 땔감 몫을 세대마다 나누는 일이 하루의 절반이다. 의석을 받은 지 오래되지 않았지만, 원부 사본의 열쇠를 두 사람이 함께 열게 하는 옛 문서고의 규칙을 구청에 들였다. 산림청장 클라라 베넷과는 눈보라 철에 벌목 허가가 늦어져도 은평의 땔감 몫을 깎지 않는다는 약정을 맺었다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "은평구 국회의원",
+    "품계": "국회의원",
+    "생업": "구 행정",
+    "일하는 역": "연신내역",
+    "잠자는 역": "연신내역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "은평구 국회의원으로 기재된 배천 조씨 세대주다. 연신내역에서 북한산 벌목 허가서를 받아 땔감 몫을 세대마다 나누는 일이 하루의 절반이다. 의석을 받은 지 오래되지 않았지만, 원부 사본의 열쇠를 두 사람이 함께 열게 하는 옛 문서고의 규칙을 구청에 들였다. 산림청장 클라라 베넷과는 눈보라 철에 벌목 허가가 늦어져도 은평의 땔감 몫을 깎지 않는다는 약정을 맺었다.",
+    "관직": "직함 은평구 국회의원. 직위 은평구 국회의원 · 정부. 품계 국회의원. 일하는 역 연신내역."
+  },
+  "values": {
+    "권위": 60,
+    "개방": -75,
+    "무력": 10,
+    "물질": -45,
+    "공동": 5,
+    "원칙": 70,
+    "공개": -35,
+    "자격": 25,
+    "분산": -75,
+    "변혁": -65
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": -35,
+    "위험": 10,
+    "과시": 20,
+    "지속": 35,
+    "지향": "유동",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0147",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "조하린",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "조하린",
+        "type": "계약",
+        "to": "클라라 베넷",
+        "basis": "눈보라 철에 벌목 허가가 늦어져도 은평의 땔감 몫을 깎지 않는다는 약정"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "조민재",
+        "type": "지휘",
+        "to": "조하린",
+        "basis": "은평구 국회의원 조하린의 직속"
+      },
+      {
+        "from": "연은재",
+        "type": "지휘",
+        "to": "조하린",
+        "basis": "은평구 국회의원 조하린의 직속"
+      },
+      {
+        "from": "천다올",
+        "type": "지휘",
+        "to": "조하린",
+        "basis": "은평구 국회의원 조하린의 직속"
+      },
+      {
+        "from": "천초윤",
+        "type": "지휘",
+        "to": "조하린",
+        "basis": "은평구 국회의원 조하린의 직속"
+      },
+      {
+        "from": "조구준",
+        "type": "지휘",
+        "to": "조하린",
+        "basis": "은평구 국회의원 조하린의 직속"
+      },
+      {
+        "from": "클라라 베넷",
+        "type": "계약",
+        "to": "조하린",
+        "basis": "은평구 북한산 땔감 몫을 해마다 산림청 고시로 정하는 계약을 맺고 있다."
+      },
+      {
+        "from": "조민재",
+        "type": "맹세",
+        "to": "조하린",
+        "basis": "후계로 지명받으며 조하린 의원 앞에서 은평구 의석을 지키겠다고 선서했다."
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K146",
+    "members": [
+      {
+        "personId": "K195",
+        "name": "조민재"
+      },
+      {
+        "personId": "K210",
+        "name": "연은재"
+      },
+      {
+        "personId": "K336",
+        "name": "천다올"
+      },
+      {
+        "personId": "K358",
+        "name": "천초윤"
+      },
+      {
+        "personId": "person-0629",
+        "name": "조구준"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 10,
+        "effective": 10
+      },
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
-        "base": 6,
-        "effective": 6
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "negotiation": {
-        "base": 4,
-        "effective": 4
-      },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 9,
-        "effective": 9
-      },
-      "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
         "base": 6,
         "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "k146-access-log",
-        "name": {
-          "ko": "열람 시각 기록",
-          "en": "Access time logging"
-        },
-        "rating": 65
+        "id": "s17-0147-firewood",
+        "name": "땔감 몫 배분",
+        "rating": 58
       }
     ],
     "traits": [
       {
-        "id": "k146-choice",
-        "name": {
-          "ko": "원본을 놓지 않음",
-          "en": "Keeps hold of originals"
-        },
-        "description": {
-          "ko": "조용하고 집요하며 습도에 민감하다. 장부를 빌려 간 사람의 손때까지 기억한다.",
-          "en": "Quiet, persistent, sensitive to humidity. She remembered even the finger marks of whoever borrowed a ledger."
-        },
-        "behavior": {
-          "ko": "일화. 세 유언장 접수 직후 문서고 제습기가 멈춰 먹지가 서로 들러붙기 시작했다.",
-          "en": "Anecdote. Right after the three testaments were received, the archive's dehumidifier stopped and the pages began sticking together."
-        },
-        "stress": {
-          "ko": "공포. 전력 배급이 끊긴 밤에 촛불이 문서고 한지를 태워 연속성이 재로 남는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That on a night of cut power a candle would catch the archive's paper and leave continuity as ash. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 윤서린이 맡긴 임하준 유언 삼본을 직접 지킨다. 송재민에게 암호문 원본 보관 빚이 있고, 강예준의 심야 열람을 꺼린다.",
-          "en": "Relations. Kept, with her own hands, the three testament copies of Im Hajun that Yun Seorin had entrusted. Owed Song Jaemin the keeping of the cipher original and disliked Gang Yejun's midnight reading."
-        },
-        "effects": []
-      },
-      {
-        "id": "k146-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 주사. 직함은 문서고 사서. 열람은 두 사서의 열쇠가 동시에 있어야 열고, 반출 시각을 분 단위로 벽에 적는다.",
-          "en": "Office. Rank: registrar. Title: archive librarian. Reading opened only with two librarians' keys together, and she wrote the removal hour to the minute on the wall."
-        },
-        "behavior": {
-          "ko": "관직. 품계 주사. 직함은 문서고 사서. 열람은 두 사서의 열쇠가 동시에 있어야 열고, 반출 시각을 분 단위로 벽에 적는다.",
-          "en": "Office. Rank: registrar. Title: archive librarian. Reading opened only with two librarians' keys together, and she wrote the removal hour to the minute on the wall."
-        },
-        "stress": {
-          "ko": "공포. 전력 배급이 끊긴 밤에 촛불이 문서고 한지를 태워 연속성이 재로 남는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That on a night of cut power a candle would catch the archive's paper and leave continuity as ash. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 윤서린이 맡긴 임하준 유언 삼본을 직접 지킨다. 송재민에게 암호문 원본 보관 빚이 있고, 강예준의 심야 열람을 꺼린다.",
-          "en": "Relations. Kept, with her own hands, the three testament copies of Im Hajun that Yun Seorin had entrusted. Owed Song Jaemin the keeping of the cipher original and disliked Gang Yejun's midnight reading."
-        },
+        "id": "t17-0147-twokeys",
+        "name": "두 열쇠",
+        "description": "중요한 것은 혼자 열지 않는다.",
+        "behavior": "원부 사본 서고를 열 때 반드시 서기 한 사람을 곁에 둔다.",
+        "stress": "혼자 결정해야 하는 날에는 말이 줄어든다.",
+        "relationship": "약속을 문서로 남기는 사람을 믿는다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "두 열쇠와 분 단위 기록으로 삼본을 지킨다. 제습기 정지는 위기 기록이며 수리나 복구 성공의 증거는 아니다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Protects three originals with two keys and minute-level logs. A failed dehumidifier records a crisis, not a successful repair. Titles and ambitions are not treated as accomplished authority or results."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,138 +242,133 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
+  "confirmedHoldings": [
     {
-      "id": "title:duchy-41820-S06",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
+      "id": "holding:v3:duchy:11380",
+      "name": {
+        "ko": "은평구 공작령"
+      },
       "holderPersonId": "K146",
-      "stateId": "S06",
-      "politicalParentTitleId": "title:kingdom-s06",
-      "personalLieges": [
+      "directLiegePersonId": "K144",
+      "stateId": "government",
+      "adminRefs": [
         {
-          "holdingId": "holding:opening-duchy-41820-S06",
-          "directLiegePersonId": "K144"
+          "id": "region:1138051000",
+          "name": "녹번동"
+        },
+        {
+          "id": "region:1138052000",
+          "name": "불광1동"
+        },
+        {
+          "id": "region:1138053000",
+          "name": "불광2동"
+        },
+        {
+          "id": "region:1138055100",
+          "name": "갈현1동"
+        },
+        {
+          "id": "region:1138055200",
+          "name": "갈현2동"
+        },
+        {
+          "id": "region:1138056000",
+          "name": "구산동"
+        },
+        {
+          "id": "region:1138057000",
+          "name": "대조동"
+        },
+        {
+          "id": "region:1138058000",
+          "name": "응암1동"
+        },
+        {
+          "id": "region:1138059000",
+          "name": "응암2동"
+        },
+        {
+          "id": "region:1138060000",
+          "name": "응암3동"
+        },
+        {
+          "id": "region:1138062500",
+          "name": "역촌동"
+        },
+        {
+          "id": "region:1138063100",
+          "name": "신사1동"
+        },
+        {
+          "id": "region:1138063200",
+          "name": "신사2동"
+        },
+        {
+          "id": "region:1138064000",
+          "name": "증산동"
+        },
+        {
+          "id": "region:1138065000",
+          "name": "수색동"
+        },
+        {
+          "id": "region:1138069000",
+          "name": "진관동"
         }
       ],
-      "directOwnership": false
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11380",
+      "geometrySource": null,
+      "formalTitleRank": null
     }
   ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c870-bc30-cc9c-8d99",
-    "name": "배천 조씨",
-    "crest": "clan-crests/c870-bc30-cc9c-8d99.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": -20,
-    "무력": -25,
-    "물질": -40,
-    "공동": 0,
-    "원칙": 50,
-    "공개": -10,
-    "자격": 10,
-    "분산": -25,
-    "변혁": -45
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": -35,
-    "위험": 10,
-    "과시": 20,
-    "지속": 35,
-    "지향": "유동",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "문서고 열쇠·열람 기록 관리",
-    "소속": "서울특별시 지방공무원 조직",
-    "직위·직급": "지방기록연구사 또는 지방행정주사·지방행정주사보 중 서울특별시 기록관리 보직에 맞는 직급",
-    "담당 업무": "문서고 사서",
-    "가치관": "권위 15 | 개방 −20 | 무력 −25 | 물질 −40 | 공동 0 | 원칙 50 | 공개 −10 | 자격 10 | 분산 −25 | 변혁 −45",
-    "욕망": "갈망 10 | 독점 −35 | 위험 10 | 과시 20 | 지속 35 | 지향 유동 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "서울역 등기소에서 자랐다. 문서고 사서 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 조하린의 문서고 열쇠와 열람 기록을 돌보는 일은 회현동의 업무와 이어진다.",
-    "공무원 직위·직급": "지방기록연구사 또는 지방행정주사·지방행정주사보 중 서울특별시 기록관리 보직에 맞는 직급. 담당 업무: 문서고 사서.",
-    "일화": "세 유언장 접수 직후 문서고 제습기가 멈춰 먹지가 서로 들러붙기 시작했다.",
-    "관계": "윤서린이 맡긴 임하준 유언 삼본을 직접 지킨다. 송재민에게 암호문 원본 보관 빚이 있고, 강예준의 심야 열람을 꺼린다.",
-    "야망": "총관 유언과 수문헌장 초안을 같은 철제 함에 넣어 서울역을 서울 기록의 최종 보관소로 만든다.",
-    "공포": "전력 배급이 끊긴 밤에 촛불이 문서고 한지를 태워 연속성이 재로 남는 것.",
-    "개입": "제습 부품을 구하거나, 열람 장부에 없는 야간 출입을 폭로할 수 있다."
-  },
-  "biography": "조용하고 집요하며 습도에 민감하다. 장부를 빌려 간 사람의 손때까지 기억한다.\n\n- 생업: 문서고 열쇠·열람 기록 관리\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방기록연구사 또는 지방행정주사·지방행정주사보 중 서울특별시 기록관리 보직에 맞는 직급\n- 담당 업무: 문서고 사서\n**생애.** 서울역 등기소에서 자랐다. 문서고 사서 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 조하린의 문서고 열쇠와 열람 기록을 돌보는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 지방기록연구사 또는 지방행정주사·지방행정주사보 중 서울특별시 기록관리 보직에 맞는 직급. 담당 업무: 문서고 사서.\n\n**일화.** 세 유언장 접수 직후 문서고 제습기가 멈춰 먹지가 서로 들러붙기 시작했다.\n\n**관계.** 윤서린이 맡긴 임하준 유언 삼본을 직접 지킨다. 송재민에게 암호문 원본 보관 빚이 있고, 강예준의 심야 열람을 꺼린다.\n\n**야망.** 총관 유언과 수문헌장 초안을 같은 철제 함에 넣어 서울역을 서울 기록의 최종 보관소로 만든다.\n\n**공포.** 전력 배급이 끊긴 밤에 촛불이 문서고 한지를 태워 연속성이 재로 남는 것.\n\n**개입.** 제습 부품을 구하거나, 열람 장부에 없는 야간 출입을 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −20 | 무력 −25 | 물질 −40 | 공동 0 | 원칙 50 | 공개 −10 | 자격 10 | 분산 −25 | 변혁 −45\n- 욕망: 갈망 10 | 독점 −35 | 위험 10 | 과시 20 | 지속 35 | 지향 유동 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-06"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "조하린",
-        "type": "지휘",
-        "to": "윤서린",
-        "basis": "임하준 유언 삼본을 문서고에서 지킴"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:dong:1138055100",
+      "name": {
+        "ko": "갈현1동"
       },
-      {
-        "from": "조하린",
-        "type": "빚",
-        "to": "송재민",
-        "basis": "암호문 원본 보관 빚"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "황은설",
-        "type": "빚",
-        "to": "조하린",
-        "basis": "암호문 원본 보관 빚"
+      "holderPersonId": "K210",
+      "directLiegePersonId": "K146",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1138055100",
+          "name": "갈현1동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "연은재",
+      "holderRoute": "/people/person-0211"
+    },
+    {
+      "id": "holding:v3:station:불광",
+      "name": {
+        "ko": "불광역"
       },
-      {
-        "from": "송재민",
-        "type": "계약",
-        "to": "조하린",
-        "basis": "암호 원본 함을 문서고에 맡김"
+      "holderPersonId": "K358",
+      "directLiegePersonId": "K146",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "불광",
+        "stationName": "불광"
       },
-      {
-        "from": "양산태",
-        "type": "계약",
-        "to": "조하린",
-        "basis": "양산태는 위조 사본을 가린 뒤 보관한 원본과 인수 기록을 조하린에게 넘긴다. 조하린은 두 사서의 열쇠로 열람을 열고 반출 시각을 남겨, 원본이 사본 폐기와 함께 사라지지 않게 한다."
-      },
-      {
-        "from": "지서윤",
-        "type": "사제",
-        "to": "조하린",
-        "basis": "조하린의 이중 열쇠 규칙을 현장에서 받치는 사제이고"
-      },
-      {
-        "from": "나선재",
-        "type": "지휘",
-        "to": "조하린",
-        "basis": "조하린의 반출 시각표를 순찰로 집행하고"
-      },
-      {
-        "from": "차세온",
-        "type": "사제",
-        "to": "조하린",
-        "basis": "조하린의 철제 함에서 삼본을 꺼내 받으며"
-      },
-      {
-        "from": "지한솔",
-        "type": "지휘",
-        "to": "조하린",
-        "basis": "조하린의 삼본 함을 기지에서 지키는 지휘를 받고"
-      },
-      {
-        "from": "어태산",
-        "type": "계약",
-        "to": "조하린",
-        "basis": "조하린의 철제 함 습도와 보관 주기를 맞추며"
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1138052000",
+          "name": "불광1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "천초윤",
+      "holderRoute": "/people/person-0359"
+    }
+  ]
 }

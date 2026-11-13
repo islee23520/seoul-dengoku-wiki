@@ -1,408 +1,143 @@
 {
   "id": "person-0133",
   "name": "양기석",
-  "title": "고덕기지 유치선 감독",
-  "position": "고덕기지 유치선 감독",
+  "title": "고덕역 정비장",
+  "position": "고덕역 정비장 · 아크",
   "characterId": "K132",
-  "rank": "중대장",
+  "rank": "정비장",
   "commonTier": "T4",
-  "occupation": "유치선 전력·쇄정 점검",
+  "occupation": "정비대 통솔",
   "gender": "남성",
   "stage": "S2",
-  "state": "S05",
-  "stateName": "동방사",
-  "sourceRoute": "/world/Cast-State-05#인물-양기석",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0133",
   "birthDate": "2070-02-14",
   "birthday": "02-14",
   "age": 56,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-05.json#/content/38",
-    "lore/characters/Cast-State-05.json#/content/44"
-  ],
-  "familyTree": {
-    "personId": "K132",
-    "nodes": [
-      {
-        "id": "K132",
-        "personId": "K132",
-        "kind": "person",
-        "name": "양기석",
-        "birthDate": "2070-02-14",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K132"
-          },
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-양기석-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 고덕기지 유치선 감독 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-양기석-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0133"
-      },
-      {
-        "id": "FH-K132-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "양승민",
-        "lineage": {
-          "surname": "양",
-          "bongwan": "청주",
-          "clan": "c591-ccad-c8fc"
-        },
-        "birthDate": "2040-02-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-양기석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2078,
-            "summary": "양승민은 신정 차량기지에서 유치선 전력·쇄정 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-양기석-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K132-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "양승원",
-        "lineage": {
-          "surname": "양",
-          "bongwan": "청주",
-          "clan": "c591-ccad-c8fc"
-        },
-        "birthDate": "2010-02-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-양기석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "양승원은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-양기석-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K132-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박현원",
-        "birthDate": "2040-02-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-양기석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2078,
-            "summary": "박현원은 신정 차량기지에서 유치선 전력·쇄정 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-양기석-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K132-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이현민",
-        "birthDate": "2010-02-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-양기석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이현민은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-양기석-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K132-P-01:K132:biological",
-        "from": "FH-K132-P-01",
-        "to": "K132",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-양기석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K132-P-02:FH-K132-P-01:biological",
-        "from": "FH-K132-P-02",
-        "to": "FH-K132-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-양기석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K132-M-01:K132:biological",
-        "from": "FH-K132-M-01",
-        "to": "K132",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-양기석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K132-M-02:FH-K132-M-01:biological",
-        "from": "FH-K132-M-02",
-        "to": "FH-K132-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-양기석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c591-ccad-c8fc",
+    "name": "청주 양씨",
+    "crest": "clan-crests/c591-ccad-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "양기석은 강동에서 정비 밥으로 맺은 \"한 솥\"이 가장 많은 정비장이다. 쉰여섯에 부위가 넷이고, 고덕역 정비대에서 옛 차량기지의 되살린 기계를 다루는 사람들의 몸을 손본다. 순번을 바꿔 달라는 부탁을 받으면 그 사람의 집안이 정비대에 무엇을 바쳤는지를 먼저 묻는다. 차량기지 일꾼들은 기계를 받치느라 어깨 이음매가 먼저 닳아서, 그는 맞춤 날마다 어깨부터 열고 닳은 정도를 일꾼 이름 옆에 적어 둔다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "고덕역 정비장",
+    "품계": "정비장",
+    "생업": "정비대 통솔",
+    "일하는 역": "고덕역",
+    "잠자는 역": "고덕역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 4
+  },
+  "sections": {
+    "생애": "양기석은 강동에서 정비 밥으로 맺은 \"한 솥\"이 가장 많은 정비장이다. 쉰여섯에 부위가 넷이고, 고덕역 정비대에서 옛 차량기지의 되살린 기계를 다루는 사람들의 몸을 손본다. 순번을 바꿔 달라는 부탁을 받으면 그 사람의 집안이 정비대에 무엇을 바쳤는지를 먼저 묻는다. 차량기지 일꾼들은 기계를 받치느라 어깨 이음매가 먼저 닳아서, 그는 맞춤 날마다 어깨부터 열고 닳은 정도를 일꾼 이름 옆에 적어 둔다.",
+    "관직": "직함 고덕역 정비장. 직위 고덕역 정비장 · 아크. 품계 정비장. 일하는 역 고덕역."
+  },
+  "values": {
+    "권위": 85,
+    "개방": -50,
+    "무력": 75,
+    "물질": -35,
+    "공동": 60,
+    "원칙": -30,
+    "공개": -95,
+    "자격": -60,
+    "분산": -80,
+    "변혁": 5
+  },
+  "desire": {
+    "갈망": 5,
+    "독점": -25,
+    "위험": -15,
+    "과시": -5,
+    "지속": 20,
+    "지향": "유동",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0133",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "양기석",
+        "type": "지휘",
+        "to": "장석윤",
+        "basis": "명일2동 대피소장 장석윤의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K118",
+    "name": "장석윤",
+    "courtId": "court:K118",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
-      "learning": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k132-siding-interlock",
-        "name": {
-          "ko": "유치선 쇄정 점검",
-          "en": "Siding interlock checking"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k132-choice",
-        "name": {
-          "ko": "정수 쇄정 보전",
-          "en": "Protects waterworks interlock"
-        },
-        "description": {
-          "ko": "유치 램프가 두 칸 연속 깜빡이면 말을 멈추고, 군수 충전 쪽지는 축전지 함 겉에 붙이지 않는다. 교대 램프 횟수를 일지에서 지우지 않는다.",
-          "en": "When the siding lamps blinked twice in a row he stopped talking, and he pasted no munitions-charging notes on the battery box. He erased no lamp counts from the rotation log."
-        },
-        "behavior": {
-          "ko": "일화. 고덕 램프가 심야에 한꺼번에 꺼지자 양기석은 정수 전동기 쇄정만 남기고 상회 충전 줄을 뽑았다.",
-          "en": "Anecdote. When the Godeok lamps went out all at once at midnight, Yang Giseok pulled the merchants' charging lines and left only the purification motor's lockout alive."
-        },
-        "stress": {
-          "ko": "공포. 함이 빈 밤에 정수 전동기 쇄정이 열리지 않고, 상회가 그 공백을 보호 연장의 값으로 부르는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That on an empty-box night the purification motor's lockout would not open, and the merchants' council would call that gap the price of a protection extension. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 박하율의 출고 호각에 램프 횟수를 맞추는 지휘를 받고, 양필호의 시운전에 바늘만 빌려 준다. 함이 빈 밤의 거절은 상회 쪽 빚으로 남긴다.",
-          "en": "Relations. Under command to match lamp counts to Park Hayul's release whistle, he lent only the needle to Yang Pilho's trials. The refusals on empty-box nights remained as debts to the merchants' council."
-        },
-        "effects": []
-      },
-      {
-        "id": "k132-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 중대장. 직함은 고덕기지 유치선 감독. 램프가 두 칸 연속 깜빡이면 군수 줄을 뽑고, 급수열차 쇄정이 열린 뒤에만 충전 함의 빗장을 연다.",
-          "en": "Office. Rank: company commander. Title: Godeok depot siding supervisor. When the lamps blinked twice in a row he pulled the munitions line, and opened the charging box's bolt only after the water train's lockout."
-        },
-        "behavior": {
-          "ko": "관직. 품계 중대장. 직함은 고덕기지 유치선 감독. 램프가 두 칸 연속 깜빡이면 군수 줄을 뽑고, 급수열차 쇄정이 열린 뒤에만 충전 함의 빗장을 연다.",
-          "en": "Office. Rank: company commander. Title: Godeok depot siding supervisor. When the lamps blinked twice in a row he pulled the munitions line, and opened the charging box's bolt only after the water train's lockout."
-        },
-        "stress": {
-          "ko": "공포. 함이 빈 밤에 정수 전동기 쇄정이 열리지 않고, 상회가 그 공백을 보호 연장의 값으로 부르는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That on an empty-box night the purification motor's lockout would not open, and the merchants' council would call that gap the price of a protection extension. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 박하율의 출고 호각에 램프 횟수를 맞추는 지휘를 받고, 양필호의 시운전에 바늘만 빌려 준다. 함이 빈 밤의 거절은 상회 쪽 빚으로 남긴다.",
-          "en": "Relations. Under command to match lamp counts to Park Hayul's release whistle, he lent only the needle to Yang Pilho's trials. The refusals on empty-box nights remained as debts to the merchants' council."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "일화. 고덕 램프가 심야에 한꺼번에 꺼지자 양기석은 정수 전동기 쇄정만 남기고 상회 충전 줄을 뽑았다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Anecdote. When the Godeok lamps went out all at once at midnight, Yang Giseok pulled the merchants' charging lines and left only the purification motor's lockout alive. Titles and ambitions are not treated as accomplished authority or results."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "head",
@@ -418,71 +153,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c591-ccad-c8fc",
-    "name": "청주 양씨",
-    "crest": "clan-crests/c591-ccad-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 60,
-    "개방": -35,
-    "무력": 65,
-    "물질": 15,
-    "공동": 40,
-    "원칙": -20,
-    "공개": -50,
-    "자격": -25,
-    "분산": -50,
-    "변혁": -40
-  },
-  "desire": {
-    "갈망": 5,
-    "독점": -25,
-    "위험": -15,
-    "과시": -5,
-    "지속": 20,
-    "지향": "유동",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "동방사",
-    "생업": "유치선 전력·쇄정 점검",
-    "품계": "중대장",
-    "직함": "고덕기지 유치선 감독",
-    "가치관": "권위 60 | 개방 −35 | 무력 65 | 물질 15 | 공동 40 | 원칙 −20 | 공개 −50 | 자격 −25 | 분산 −50 | 변혁 −40",
-    "욕망": "갈망 5 | 독점 −25 | 위험 −15 | 과시 −5 | 지속 20 | 지향 유동 | 결합 단혼"
-  },
-  "sections": {
-    "관직": "품계 중대장. 직함은 고덕기지 유치선 감독. 램프가 두 칸 연속 깜빡이면 군수 줄을 뽑고, 급수열차 쇄정이 열린 뒤에만 충전 함의 빗장을 연다.",
-    "일화": "고덕 램프가 심야에 한꺼번에 꺼지자 양기석은 정수 전동기 쇄정만 남기고 상회 충전 줄을 뽑았다.",
-    "관계": "박하율의 출고 호각에 램프 횟수를 맞추는 지휘를 받고, 시운전에 바늘만 빌려 준다. 함이 빈 밤의 거절은 상회 쪽 빚으로 남긴다.",
-    "야망": "유치 램프를 급수·순찰 전용 쇄정으로 묶어 심야 출고가 정수 전동기를 거치게 한다.\n\n공포. 양기석은 함이 빈 밤에 정수 전동기 쇄정이 열리지 않고, 상회가 그 공백을 보호 연장의 값으로 부르는 일을 두려워한다.",
-    "개입": "함이 빈 밤에 급수열차 쇄정만 살리는 쪽을 고르거나, 램프 횟수를 지운 손을 유치 칠판에서 가릴 수 있다."
-  },
-  "biography": "양기석은 유치 램프가 두 칸 연속 깜빡이면 말을 멈추고, 군수 충전 쪽지는 축전지 함 겉에 붙이지 않는다. 교대 램프 횟수를 일지에서 지우지 않는다.\n\n- 소속: 동방사\n- 생업: 유치선 전력·쇄정 점검\n- 품계: 중대장\n- 직함: 고덕기지 유치선 감독\n생애. 양기석은 3세대에 태어났다. 양기석은 신정 차량기지에서 자랐다. 양기석의 고덕기지 유치선 감독 자리는 탈선 직전 결함 보고로 열렸다.\n- 양기석은 고덕2동과 연결된 업무에서 유치 램프와 정수 전동기 잠금 상태를 살피고 군수 충전 줄을 차단한다.\n\n**관직.** 품계 중대장. 직함은 고덕기지 유치선 감독. 램프가 두 칸 연속 깜빡이면 군수 줄을 뽑고, 급수열차 쇄정이 열린 뒤에만 충전 함의 빗장을 연다.\n\n**일화.** 고덕 램프가 심야에 한꺼번에 꺼지자 양기석은 정수 전동기 쇄정만 남기고 상회 충전 줄을 뽑았다.\n\n**관계.** 박하율의 출고 호각에 램프 횟수를 맞추는 지휘를 받고, 시운전에 바늘만 빌려 준다. 함이 빈 밤의 거절은 상회 쪽 빚으로 남긴다.\n\n**야망.** 유치 램프를 급수·순찰 전용 쇄정으로 묶어 심야 출고가 정수 전동기를 거치게 한다.\n\n공포. 양기석은 함이 빈 밤에 정수 전동기 쇄정이 열리지 않고, 상회가 그 공백을 보호 연장의 값으로 부르는 일을 두려워한다.\n\n**개입.** 함이 빈 밤에 급수열차 쇄정만 살리는 쪽을 고르거나, 램프 횟수를 지운 손을 유치 칠판에서 가릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 60 | 개방 −35 | 무력 65 | 물질 15 | 공동 40 | 원칙 −20 | 공개 −50 | 자격 −25 | 분산 −50 | 변혁 −40\n- 욕망: 갈망 5 | 독점 −25 | 위험 −15 | 과시 −5 | 지속 20 | 지향 유동 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-05"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "양기석",
-        "type": "지휘",
-        "to": "박하율",
-        "basis": "박하율의 출고 호각에 램프 횟수를 맞추는 지휘를 받고"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "설봄이",
-        "type": "계약",
-        "to": "양기석",
-        "basis": "양기석의 유치선 전력 배분을 발전 쪽에서 받치고"
-      }
-    ]
-  }
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:고덕",
+      "name": {
+        "ko": "고덕역"
+      },
+      "holderPersonId": "K132",
+      "directLiegePersonId": "K118",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "고덕",
+        "stationName": "고덕"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1174054000",
+          "name": "명일2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

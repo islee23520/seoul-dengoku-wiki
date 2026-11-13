@@ -3,27 +3,27 @@
   "personId": "person-0236",
   "characterId": "K235",
   "name": "봉용",
-  "stateId": "S09",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "출자 평의회 서기실 거점 실무 담당자, 오하늘의 실무 담당자 · 마포구 영주"
+    "role": "의원 집안 친족 · 공덕역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short wavy hair",
-    "upper": "slate blue buttoned wool vest over a long-sleeved collared shirt",
-    "outfit": "slate blue buttoned wool vest over a long-sleeved collared shirt",
+    "upper": "cotton-lined quilted coat in sand beige with a fur collar and buttons carved with the house seal",
+    "outfit": "cotton-lined quilted coat in sand beige with a fur collar and buttons carved with the house seal",
     "palette": [
-      "slate blue",
       "sand beige",
-      "mustard ochre"
+      "fur brown",
+      "navy"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "sand beige high-waisted pleated trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "padded wool trousers",
+    "footwear": "leather boots",
+    "accessories": "buttons carved with the house seal and a stamped metal registration token on a cord"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "fur-lined ear-flap cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "slate blue buttoned wool vest over a long-sleeved collared shirt",
+        "value": "cotton-lined quilted coat in sand beige with a fur collar and buttons carved with the house seal",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "sand beige high-waisted pleated trousers",
+        "value": "padded wool trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "leather boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -206,39 +206,39 @@
       "neckline": {
         "value": "buttoned shirt collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "buttons carved with the house seal and a stamped metal registration token on a cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "dark horn and dull steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "horn, steel, cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "sewn on the coat and hung from the neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "round buttons and a small plate",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 봉용, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: light warm beige. upper garment: slate blue buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: slate blue, sand beige, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 봉용, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: light warm beige. headwear: fur-lined ear-flap cap; upper garment: cotton-lined quilted coat in sand beige with a fur collar and buttons carved with the house seal; neckline: buttoned shirt collar. accessories: buttons carved with the house seal and a stamped metal registration token on a cord; worn as sewn on the coat and hung from the neck. color palette: sand beige, fur brown, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 봉용, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: light warm beige; average adult male height. upper garment: slate blue buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: sand beige high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: slate blue, sand beige, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 봉용, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: light warm beige; average adult male height. headwear: fur-lined ear-flap cap; upper garment: cotton-lined quilted coat in sand beige with a fur collar and buttons carved with the house seal; neckline: buttoned shirt collar; lower garment: padded wool trousers; footwear: leather boots. accessories: buttons carved with the house seal and a stamped metal registration token on a cord; worn as sewn on the coat and hung from the neck. color palette: sand beige, fur brown, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 봉용, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: light warm beige; average adult male height. upper garment: slate blue buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: sand beige high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: slate blue, sand beige, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 봉용, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: light warm beige; average adult male height. headwear: fur-lined ear-flap cap; upper garment: cotton-lined quilted coat in sand beige with a fur collar and buttons carved with the house seal; neckline: buttoned shirt collar; lower garment: padded wool trousers; footwear: leather boots. accessories: buttons carved with the house seal and a stamped metal registration token on a cord; worn as sewn on the coat and hung from the neck. color palette: sand beige, fur brown, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 봉용, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: light warm beige; average adult male height. upper garment: slate blue buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: sand beige high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: slate blue, sand beige, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 봉용, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: light warm beige; average adult male height. headwear: fur-lined ear-flap cap; upper garment: cotton-lined quilted coat in sand beige with a fur collar and buttons carved with the house seal; neckline: buttoned shirt collar; lower garment: padded wool trousers; footwear: leather boots. accessories: buttons carved with the house seal and a stamped metal registration token on a cord; worn as sewn on the coat and hung from the neck. color palette: sand beige, fur brown, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 봉용, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: light warm beige; average adult male height. upper garment: slate blue buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: sand beige high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: slate blue, sand beige, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 봉용, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; monolid almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: light warm beige; average adult male height. headwear: fur-lined ear-flap cap; upper garment: cotton-lined quilted coat in sand beige with a fur collar and buttons carved with the house seal; neckline: buttoned shirt collar; lower garment: padded wool trousers; footwear: leather boots. accessories: buttons carved with the house seal and a stamped metal registration token on a cord; worn as sewn on the coat and hung from the neck. color palette: sand beige, fur brown, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

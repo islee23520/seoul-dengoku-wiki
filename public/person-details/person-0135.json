@@ -1,387 +1,123 @@
 {
   "id": "person-0135",
   "name": "차윤목",
-  "title": "동부 이동의무차 반장",
-  "position": "동부 이동의무차 반장",
+  "title": "교섭인",
+  "position": "교섭인 · 잠실역",
   "characterId": "K134",
-  "rank": "병장",
+  "rank": "세례자",
   "commonTier": "T5",
-  "occupation": "이동의무차 골목 진료",
+  "occupation": "계약 교섭",
   "gender": "여성",
   "stage": "S2",
-  "state": "S05",
-  "stateName": "동방사",
-  "sourceRoute": "/world/Cast-State-05#인물-차윤목",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0135",
   "birthDate": "2084-07-01",
   "birthday": "07-01",
   "age": 42,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-05.json#/content/214"
-  ],
-  "familyTree": {
-    "personId": "K134",
-    "nodes": [
-      {
-        "id": "K134",
-        "personId": "K134",
-        "kind": "person",
-        "name": "차윤목",
-        "birthDate": "2084-07-01",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K134"
-          },
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-차윤목-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 동부 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-차윤목-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0135"
-      },
-      {
-        "id": "FH-K134-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "차승호",
-        "lineage": {
-          "surname": "차",
-          "bongwan": "연안",
-          "clan": "cc28-c5f0-c548"
-        },
-        "birthDate": "2054-07-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-차윤목-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2092,
-            "summary": "차승호는 제기동 의무소에서 이동의무차 골목 진료 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-차윤목-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K134-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "차승민",
-        "lineage": {
-          "surname": "차",
-          "bongwan": "연안",
-          "clan": "cc28-c5f0-c548"
-        },
-        "birthDate": "2024-07-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-차윤목-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "차승민은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-차윤목-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K134-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최현윤",
-        "birthDate": "2054-07-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-차윤목-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2092,
-            "summary": "최현윤은 제기동 의무소에서 이동의무차 골목 진료 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-차윤목-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K134-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정현원",
-        "birthDate": "2024-07-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-차윤목-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정현원은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-차윤목-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K134-P-01:K134:biological",
-        "from": "FH-K134-P-01",
-        "to": "K134",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-차윤목-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K134-P-02:FH-K134-P-01:biological",
-        "from": "FH-K134-P-02",
-        "to": "FH-K134-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-차윤목-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K134-M-01:K134:biological",
-        "from": "FH-K134-M-01",
-        "to": "K134",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-차윤목-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K134-M-02:FH-K134-M-01:biological",
-        "from": "FH-K134-M-02",
-        "to": "FH-K134-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-차윤목-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "cc28-c5f0-c548",
+    "name": "연안 차씨",
+    "crest": "clan-crests/cc28-c5f0-c548.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "세 번째 급수계약을 앞두고 아크 몫의 셈을 잠실 전기 바꿈터에서 맞출 때, 차윤목은 수차 전기를 하루 충전의 수로 바꾸는 셈표를 쥐고 선다. 삼성중앙역 정비대에서 다친 사람의 이름을 정비장보다 먼저 외던 사람이라, 마흔둘에 교주의 집 교섭인이 된 뒤로는 도장을 찍으러 앉은 바깥 사람의 이름을 먼저 외운다. 자유도시 도시들과 따로 도장을 찍는 자리에서는 곁집장이 도장을 들고 그가 셈을 든다. 부위는 하나다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "교섭인",
+    "품계": "세례자",
+    "생업": "계약 교섭",
+    "일하는 역": "잠실역",
+    "잠자는 역": "잠실역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "세 번째 급수계약을 앞두고 아크 몫의 셈을 잠실 전기 바꿈터에서 맞출 때, 차윤목은 수차 전기를 하루 충전의 수로 바꾸는 셈표를 쥐고 선다. 삼성중앙역 정비대에서 다친 사람의 이름을 정비장보다 먼저 외던 사람이라, 마흔둘에 교주의 집 교섭인이 된 뒤로는 도장을 찍으러 앉은 바깥 사람의 이름을 먼저 외운다. 자유도시 도시들과 따로 도장을 찍는 자리에서는 곁집장이 도장을 들고 그가 셈을 든다. 부위는 하나다.",
+    "관직": "직함 교섭인. 직위 교섭인 · 잠실역. 품계 세례자. 일하는 역 잠실역."
+  },
+  "values": {
+    "권위": 85,
+    "개방": -35,
+    "무력": 45,
+    "물질": -40,
+    "공동": 45,
+    "원칙": -30,
+    "공개": -85,
+    "자격": -65,
+    "분산": -75,
+    "변혁": 20
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": -10,
+    "위험": 35,
+    "과시": 5,
+    "지속": 30,
+    "지향": "양성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0135",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "차윤목",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K1018",
+    "name": "고예진",
+    "courtId": "court:K1018",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
+      "diplomacy": {
+        "base": 8,
+        "effective": 8
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
+      "martial": {
+        "base": 4,
+        "effective": 4
       },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
+      "stewardship": {
         "base": 9,
         "effective": 9
       },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 6,
+        "effective": 6
       },
       "learning": {
-        "base": 10,
-        "effective": 10
+        "base": 5,
+        "effective": 5
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k134-mobile-care",
-        "name": {
-          "ko": "골목 이동 진료",
-          "en": "Mobile alley care"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k134-choice",
-        "name": {
-          "ko": "진료 경로 중립",
-          "en": "Neutral care routes"
-        },
-        "description": {
-          "ko": "들것 끈의 물기로 탈수 정도를 가늠하고, 한 골목을 통계로 건너뛰라는 쪽지를 차 옆 명찰에 꽂지 않는다. 시약 상자의 끓인 물 표시는 직접 그린다.",
-          "en": "He gauged dehydration from the moisture on the stretcher straps and pinned no note telling him to skip one alley for statistics onto the van's nameplate. He drew the boiled-water marks on the medicine boxes himself."
-        },
-        "behavior": {
-          "ko": "일화. 동부 순찰열차가 의무차 경로를 무기 수색선으로 겹치자 차윤목은 북한산보국문 쪽 골목 그늘에서만 연대 진료를 열고 호위 탑승을 거절했다.",
-          "en": "Anecdote. When the eastern patrol train overlaid the clinic van's route with a weapons-search line, Cha Yunmok opened solidarity care only in the shaded alleys toward Bukhansan Bogukmun and refused escort boarding."
-        },
-        "stress": {
-          "ko": "공포. 들것 명찰이 난민 쪽지로 바뀌어 차가 북한산보국문행 호송으로만 불리는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That the stretcher nameplates would turn into refugee notes and the van would be called only as a convoy to Bukhansan Bogukmun. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 장세화의 중립 칸을 피하지 않으려 빚을 지고, 차나루의 정수 창구가 닫히면 들것을 골목으로 돌린다. 백온과 명찰만 바꿔 든다.",
-          "en": "Relations. Owing a debt to avoid dodging Jang Sehwa's neutral cars, turning stretchers into the alleys whenever Cha Naru's purification window closed. Exchanged only nameplates with Baek On."
-        },
-        "effects": []
-      },
-      {
-        "id": "k134-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 병장. 직함은 동부 이동의무차 반장. 차 옆 판에 골목 물기를 그리고, 복무 쪽지가 붙으면 최도윤의 연서로 그늘 진료를 연다.",
-          "en": "Office. Rank: sergeant. Title: eastern mobile clinic van chief. He drew the alleys' water state on the van's side board, and when a service note was pasted he opened shaded care with Choi Doyun's joint signature."
-        },
-        "behavior": {
-          "ko": "관직. 품계 병장. 직함은 동부 이동의무차 반장. 차 옆 판에 골목 물기를 그리고, 복무 쪽지가 붙으면 최도윤의 연서로 그늘 진료를 연다.",
-          "en": "Office. Rank: sergeant. Title: eastern mobile clinic van chief. He drew the alleys' water state on the van's side board, and when a service note was pasted he opened shaded care with Choi Doyun's joint signature."
-        },
-        "stress": {
-          "ko": "공포. 들것 명찰이 난민 쪽지로 바뀌어 차가 북한산보국문행 호송으로만 불리는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That the stretcher nameplates would turn into refugee notes and the van would be called only as a convoy to Bukhansan Bogukmun. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 장세화의 중립 칸을 피하지 않으려 빚을 지고, 차나루의 정수 창구가 닫히면 들것을 골목으로 돌린다. 백온과 명찰만 바꿔 든다.",
-          "en": "Relations. Owing a debt to avoid dodging Jang Sehwa's neutral cars, turning stretchers into the alleys whenever Cha Naru's purification window closed. Exchanged only nameplates with Baek On."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "일화. 동부 순찰열차가 의무차 경로를 무기 수색선으로 겹치자 차윤목은 북한산보국문 쪽 골목 그늘에서만 연대 진료를 열고 호위 탑승을 거절했다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Anecdote. When the eastern patrol train overlaid the clinic van's route with a weapons-search line, Cha Yunmok opened solidarity care only in the shaded alleys toward Bukhansan Bogukmun and refused escort boarding. Titles and ambitions are not treated as accomplished authority or results."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -391,7 +127,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -417,64 +153,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "cc28-c5f0-c548",
-    "name": "연안 차씨",
-    "crest": "clan-crests/cc28-c5f0-c548.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 60,
-    "개방": -20,
-    "무력": 35,
-    "물질": 10,
-    "공동": 25,
-    "원칙": -20,
-    "공개": -40,
-    "자격": -30,
-    "분산": -45,
-    "변혁": -25
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": -10,
-    "위험": 35,
-    "과시": 5,
-    "지속": 30,
-    "지향": "양성",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "동방사",
-    "생업": "이동의무차 골목 진료",
-    "품계": "병장",
-    "직함": "동부 이동의무차 반장",
-    "가치관": "권위 60 | 개방 −20 | 무력 35 | 물질 10 | 공동 25 | 원칙 −20 | 공개 −40 | 자격 −30 | 분산 −45 | 변혁 −25",
-    "욕망": "갈망 45 | 독점 −10 | 위험 35 | 과시 5 | 지속 30 | 지향 양성 | 결합 없음"
-  },
-  "sections": {
-    "관직": "품계 병장. 직함은 동부 이동의무차 반장. 차 옆 판에 골목 물기를 그리고, 복무 쪽지가 붙으면 최도윤의 연서로 그늘 진료를 연다.",
-    "일화": "동부 순찰열차가 의무차 경로를 무기 수색선으로 겹치자 차윤목은 북한산보국문 쪽 골목 그늘에서만 연대 진료를 열고 호위 탑승을 거절했다.",
-    "관계": "장세화의 중립 칸을 피하지 않으려 빚을 지고, 정수 창구가 닫히면 들것을 골목으로 돌린다. 백온과 명찰만 바꿔 든다.",
-    "야망": "복무 쪽지가 붙은 골목에도 의무차가 서게 해, 최저선이 차 옆 명찰에만 남게 한다.\n\n공포. 차윤목은 들것 명찰이 난민 쪽지로 바뀌어 차가 북한산보국문행 호송으로만 불리는 일을 두려워한다.",
-    "개입": "끓인 물 표시가 지워진 상자를 차 그늘로 되돌리거나, 들것 명찰이 난민 쪽으로 넘어간 경로를 폭로할 수 있다."
-  },
-  "biography": "차윤목은 들것 끈의 물기로 탈수 정도를 가늠하고, 한 골목을 통계로 건너뛰라는 쪽지를 차 옆 명찰에 꽂지 않는다. 시약 상자의 끓인 물 표시는 직접 그린다.\n\n- 소속: 동방사\n- 생업: 이동의무차 골목 진료\n- 품계: 병장\n- 직함: 동부 이동의무차 반장\n생애. 차윤목은 3세대에 태어났다. 차윤목은 제기동 의무소에서 자랐다. 차윤목의 동부 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다.\n- 차윤목은 암사1동과 연결된 동부 이동의무차 골목 진료 업무를 정수 창구 업무와 인계로 잇는다.\n- 차윤목은 정릉4동과 연결된 업무에서 북한산보국문 쪽 골목 그늘 연대 진료와 호위 탑승 거부를 다룬다. 역과 진료소는 다른 시설이다.\n\n**관직.** 품계 병장. 직함은 동부 이동의무차 반장. 차 옆 판에 골목 물기를 그리고, 복무 쪽지가 붙으면 최도윤의 연서로 그늘 진료를 연다.\n\n**일화.** 동부 순찰열차가 의무차 경로를 무기 수색선으로 겹치자 차윤목은 북한산보국문 쪽 골목 그늘에서만 연대 진료를 열고 호위 탑승을 거절했다.\n\n**관계.** 장세화의 중립 칸을 피하지 않으려 빚을 지고, 정수 창구가 닫히면 들것을 골목으로 돌린다. 백온과 명찰만 바꿔 든다.\n\n**야망.** 복무 쪽지가 붙은 골목에도 의무차가 서게 해, 최저선이 차 옆 명찰에만 남게 한다.\n\n공포. 차윤목은 들것 명찰이 난민 쪽지로 바뀌어 차가 북한산보국문행 호송으로만 불리는 일을 두려워한다.\n\n**개입.** 끓인 물 표시가 지워진 상자를 차 그늘로 되돌리거나, 들것 명찰이 난민 쪽으로 넘어간 경로를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 60 | 개방 −20 | 무력 35 | 물질 10 | 공동 25 | 원칙 −20 | 공개 −40 | 자격 −30 | 분산 −45 | 변혁 −25\n- 욕망: 갈망 45 | 독점 −10 | 위험 35 | 과시 5 | 지속 30 | 지향 양성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-05"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "차윤목",
-        "type": "빚",
-        "to": "장세화",
-        "basis": "장세화의 중립 칸을 피하지 않으려 빚을 지고"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

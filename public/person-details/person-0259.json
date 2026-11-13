@@ -1,492 +1,105 @@
 {
   "id": "person-0259",
   "name": "감용",
-  "title": "피난 숙영 거점장",
-  "position": "숙영 당직 주지",
+  "title": "수도방위사령부 직할대 초소장",
+  "position": "수도방위사령부 직할대 초소장 · 디지털미디어시티역",
   "characterId": "K258",
-  "rank": "주지",
-  "commonTier": "T3",
-  "occupation": "숙영 명부·출입 확인",
+  "rank": "소령",
+  "commonTier": "T5",
+  "occupation": "군 지휘",
   "gender": "여성",
   "stage": "S2",
-  "state": "S10",
-  "stateName": "안국총림",
-  "sourceRoute": "/world/Cast-State-10#인물-감용",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0259",
   "birthDate": "2091-01-12",
   "birthday": "01-12",
   "age": 35,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-10.json#/content/182"
-  ],
-  "familyTree": {
-    "personId": "K258",
-    "nodes": [
-      {
-        "id": "K258",
-        "personId": "K258",
-        "kind": "person",
-        "name": "감용",
-        "birthDate": "2091-01-12",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K258"
-          },
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-감용-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 보국문 피난 막사에서 자랐다. 숙영 당직 주지 자리는 고아 명부 줄로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-감용-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0259"
-      },
-      {
-        "id": "FH-K258-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "감승민",
-        "lineage": {
-          "surname": "감",
-          "bongwan": "창원",
-          "clan": "ac10-cc3d-c6d0"
-        },
-        "birthDate": "2061-01-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-감용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2099,
-            "summary": "감승민은 보국문 피난 막사에서 숙영 명부·출입 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-감용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K258-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "감승원",
-        "lineage": {
-          "surname": "감",
-          "bongwan": "창원",
-          "clan": "ac10-cc3d-c6d0"
-        },
-        "birthDate": "2031-01-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-감용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2069,
-            "summary": "감승원은 보국문 피난 막사에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-감용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K258-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "감승진",
-        "lineage": {
-          "surname": "감",
-          "bongwan": "창원",
-          "clan": "ac10-cc3d-c6d0"
-        },
-        "birthDate": "2001-01-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-감용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "감승진은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-감용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K258-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현란",
-        "birthDate": "2061-01-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-감용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2099,
-            "summary": "강현란은 보국문 피난 막사에서 숙영 명부·출입 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-감용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K258-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현리",
-        "birthDate": "2031-01-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-감용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2069,
-            "summary": "임현리는 보국문 피난 막사에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-감용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K258-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현섭",
-        "birthDate": "2001-01-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-감용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오현섭은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-감용-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K258-P-01:K258:biological",
-        "from": "FH-K258-P-01",
-        "to": "K258",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-감용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K258-P-02:FH-K258-P-01:biological",
-        "from": "FH-K258-P-02",
-        "to": "FH-K258-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-감용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K258-P-03:FH-K258-P-02:biological",
-        "from": "FH-K258-P-03",
-        "to": "FH-K258-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-감용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K258-M-01:K258:biological",
-        "from": "FH-K258-M-01",
-        "to": "K258",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-감용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K258-M-02:FH-K258-M-01:biological",
-        "from": "FH-K258-M-02",
-        "to": "FH-K258-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-감용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K258-M-03:FH-K258-M-02:biological",
-        "from": "FH-K258-M-03",
-        "to": "FH-K258-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-감용-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ac10-cc3d-c6d0",
+    "name": "창원 감씨",
+    "crest": "clan-crests/ac10-cc3d-c6d0.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "디지털미디어시티역 마당에 꽂아 둔 풍향 깃대가 그녀의 하루를 연다. 서른다섯 살 소령으로, 디지털미디어시티–마곡나루 다리의 북쪽 끝을 지키는 수도방위사령부 직할대 초소장이고, 다리 건너 마곡나루 쪽은 강서의 자유도시가 지킨다. 긴 낮 철의 낮에만 열리는 다리라, 그녀는 매일 아침 깃발이 기운 각도를 보고 다리를 열지 정한 뒤 그 결정을 모봉 동장에게 쪽지로 보낸다. 썰매에 실려 건너는 짐은 땔감과 고물과 섬유 묶음뿐이어야 하고, 그 밖의 것이 실리면 그녀는 썰매째 돌려보낸다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "수도방위사령부 직할대 초소장",
+    "품계": "소령",
+    "생업": "군 지휘",
+    "일하는 역": "디지털미디어시티역",
+    "잠자는 역": "디지털미디어시티역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "디지털미디어시티역 마당에 꽂아 둔 풍향 깃대가 그녀의 하루를 연다. 서른다섯 살 소령으로, 디지털미디어시티–마곡나루 다리의 북쪽 끝을 지키는 수도방위사령부 직할대 초소장이고, 다리 건너 마곡나루 쪽은 강서의 자유도시가 지킨다. 긴 낮 철의 낮에만 열리는 다리라, 그녀는 매일 아침 깃발이 기운 각도를 보고 다리를 열지 정한 뒤 그 결정을 모봉 동장에게 쪽지로 보낸다. 썰매에 실려 건너는 짐은 땔감과 고물과 섬유 묶음뿐이어야 하고, 그 밖의 것이 실리면 그녀는 썰매째 돌려보낸다.",
+    "관직": "직함 수도방위사령부 직할대 초소장. 직위 수도방위사령부 직할대 초소장 · 디지털미디어시티역. 품계 소령. 일하는 역 디지털미디어시티역."
+  },
+  "values": {
+    "권위": -10,
+    "개방": 15,
+    "무력": -5,
+    "물질": -25,
+    "공동": 90,
+    "원칙": 45,
+    "공개": 10,
+    "자격": 50,
+    "분산": 5,
+    "변혁": -30
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -50,
+    "위험": -25,
+    "과시": -5,
+    "지속": 0,
+    "지향": "유동",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0259",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
+      "diplomacy": {
+        "base": 4,
+        "effective": 4
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
+      "martial": {
+        "base": 11,
+        "effective": 11
       },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
+      "stewardship": {
+        "base": 4,
+        "effective": 4
       },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
+      "intrigue": {
+        "base": 5,
+        "effective": 5
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
+        "base": 10,
+        "effective": 10
       }
     },
-    "skills": [
-      {
-        "id": "camp-duty",
-        "name": {
-          "ko": "숙영 명부·출입 확인",
-          "en": "Camp-roster and access checking"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "camp-duty-disposition",
-        "name": {
-          "ko": "잠든 아이의 불빛",
-          "en": "Light for sleeping children"
-        },
-        "description": {
-          "ko": "아이들이 잠든 뒤 불빛을 줄이고 빈 자리를 효율로 메우지 않는다.",
-          "en": "Dims light after children sleep and does not fill vacancies for efficiency."
-        },
-        "behavior": {
-          "ko": "아이들이 잠든 뒤 불빛을 줄이고 빈 자리를 효율로 메우지 않는다.",
-          "en": "Dims light after children sleep and does not fill vacancies for efficiency."
-        },
-        "stress": {
-          "ko": "숙영이 당직 승려의 병영이 될 것을 두려워한다.",
-          "en": "Fears the camp becoming barracks for duty monks."
-        },
-        "relationship": {
-          "ko": "신보람의 가족 회의를 숙영 중앙에서 열고, 두감의 난로 점검표를 기둥에 붙인다. 백온의 공개 배급표를 천막마다 사본으로 남긴다.",
-          "en": "Hosts Sin Boram’s family meeting, posts Dugam’s checks and leaves Baek On’s ration copies at tents."
-        },
-        "effects": []
-      },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "누락에 출입 중지",
-          "en": "Stops access over omissions"
-        },
-        "description": {
-          "ko": "이름이 빠지면 배급과 출입을 함께 멈춘다.",
-          "en": "Stops both rations and access over a missing name."
-        },
-        "behavior": {
-          "ko": "이름이 빠지면 배급과 출입을 함께 멈춘다.",
-          "en": "Stops both rations and access over a missing name."
-        },
-        "stress": {
-          "ko": "난방이 떨어진 밤에 숙영이 당직 승려의 병영으로 바뀌는 것.",
-          "en": "Fears the camp becoming barracks for duty monks."
-        },
-        "relationship": {
-          "ko": "신보람의 가족 회의를 숙영 중앙에서 열고, 두감의 난로 점검표를 기둥에 붙인다. 백온의 공개 배급표를 천막마다 사본으로 남긴다.",
-          "en": "Hosts Sin Boram’s family meeting, posts Dugam’s checks and leaves Baek On’s ration copies at tents."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "천막 줄을 고치고 저녁 명부를 읽으며 누락 때 배급과 출입을 멈춘다. 자진 철수 압력 앞에서 숙영의 가족회의를 잇는다.",
-      "en": "Repairs tent lines, reads evening rosters and stops rations and access over omissions, maintaining family meetings amid voluntary departures."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,208 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-gu-11290-S10",
-      "name": {
-        "ko": "성북구 공작령 직영지"
-      },
-      "holderPersonId": "K258",
-      "directLiegePersonId": "K144",
-      "stateId": "S10",
-      "adminRefs": [
-        {
-          "id": "region:1129052500",
-          "name": "성북동"
-        },
-        {
-          "id": "region:1129055500",
-          "name": "삼선동"
-        },
-        {
-          "id": "region:1129057500",
-          "name": "동선동"
-        },
-        {
-          "id": "region:1129058000",
-          "name": "돈암1동"
-        },
-        {
-          "id": "region:1129059000",
-          "name": "돈암2동"
-        },
-        {
-          "id": "region:1129060000",
-          "name": "안암동"
-        },
-        {
-          "id": "region:1129061000",
-          "name": "보문동"
-        },
-        {
-          "id": "region:1129062000",
-          "name": "정릉1동"
-        },
-        {
-          "id": "region:1129063000",
-          "name": "정릉2동"
-        },
-        {
-          "id": "region:1129064000",
-          "name": "정릉3동"
-        },
-        {
-          "id": "region:1129065000",
-          "name": "정릉4동"
-        },
-        {
-          "id": "region:1129066000",
-          "name": "길음1동"
-        },
-        {
-          "id": "region:1129068500",
-          "name": "길음2동"
-        },
-        {
-          "id": "region:1129070500",
-          "name": "종암동"
-        },
-        {
-          "id": "region:1129071500",
-          "name": "월곡1동"
-        },
-        {
-          "id": "region:1129072500",
-          "name": "월곡2동"
-        },
-        {
-          "id": "region:1129076000",
-          "name": "장위1동"
-        },
-        {
-          "id": "region:1129077000",
-          "name": "장위2동"
-        },
-        {
-          "id": "region:1129078000",
-          "name": "장위3동"
-        },
-        {
-          "id": "region:1129081000",
-          "name": "석관동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11290-S10",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
-    {
-      "id": "title:duchy-gu-11290-S10",
-      "name": "성북구 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K258",
-      "basis": "개막 행정 규모 그룹 gu:11290(duchy) 배분 · 결정적 후보 선정",
-      "stateId": "S10",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "region:1129052500",
-        "region:1129055500",
-        "region:1129057500",
-        "region:1129058000",
-        "region:1129059000",
-        "region:1129060000",
-        "region:1129061000",
-        "region:1129062000",
-        "region:1129063000",
-        "region:1129064000",
-        "region:1129065000",
-        "region:1129066000",
-        "region:1129068500",
-        "region:1129070500",
-        "region:1129071500",
-        "region:1129072500",
-        "region:1129076000",
-        "region:1129077000",
-        "region:1129078000",
-        "region:1129081000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
-    }
-  ],
-  "clan": {
-    "id": "ac10-cc3d-c6d0",
-    "name": "창원 감씨",
-    "crest": "clan-crests/ac10-cc3d-c6d0.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -55,
-    "개방": 70,
-    "무력": -40,
-    "물질": -20,
-    "공동": 85,
-    "원칙": 25,
-    "공개": 35,
-    "자격": 35,
-    "분산": 55,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -50,
-    "위험": -25,
-    "과시": -5,
-    "지속": 0,
-    "지향": "유동",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "숙영 명부·출입 확인",
-    "소속": "안국총림",
-    "품계": "주지",
-    "직함": "숙영 당직 주지",
-    "가치관": "권위 −55 | 개방 70 | 무력 −40 | 물질 −20 | 공동 85 | 원칙 25 | 공개 35 | 자격 35 | 분산 55 | 변혁 −10",
-    "욕망": "갈망 0 | 독점 −50 | 위험 −25 | 과시 −5 | 지속 0 | 지향 유동 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2091-01-12 출생, 2126년 개막에 활동했다. 보국문 피난 막사에서 자랐다. 숙영 당직 주지 당직 기록에는 고아 명부 줄 일이 남아 있다.\n- 감용의 숙영 명부·출입 확인 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
-    "관직": "품계 주지. 직함은 숙영 당직 주지. 저녁 명부를 소리 내어 읽고, 빠진 이름이 있으면 배급과 출입을 함께 멈춘다.",
-    "일화": "급수권 철표가 숙영 게시판에 붙자 일부 천막이 자진 철수를 준비하기 시작했다.",
-    "관계": "신보람의 가족 회의를 숙영 중앙에서 열고, 두감의 난로 점검표를 기둥에 붙인다. 백온의 공개 배급표를 천막마다 사본으로 남긴다.",
-    "야망": "숙영지를 문중 표의 현장으로 남겨 군사호적 사본이 천막 기둥에 못 박히지 않게 한다.",
-    "공포": "난방이 떨어진 밤에 숙영이 당직 승려의 병영으로 바뀌는 것.",
-    "개입": "철수 행렬을 하루 붙잡거나, 철표를 떼고 신도 명부를 다시 읽게 할 수 있다."
-  },
-  "biography": "텐트 줄을 고치는 손과 명부를 읽는 입이 같고, 빈 자리를 임의의 이름으로 메우라는 말을 거부한다. 아이들이 잠든 뒤에는 불빛부터 줄인다.\n\n- 생업: 숙영 명부·출입 확인\n- 소속: 안국총림\n- 품계: 주지\n- 직함: 숙영 당직 주지\n**생애.** 2091-01-12 출생, 2126년 개막에 활동했다. 보국문 피난 막사에서 자랐다. 숙영 당직 주지 당직 기록에는 고아 명부 줄 일이 남아 있다.\n- 감용의 숙영 명부·출입 확인 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n**관직.** 품계 주지. 직함은 숙영 당직 주지. 저녁 명부를 소리 내어 읽고, 빠진 이름이 있으면 배급과 출입을 함께 멈춘다.\n\n**일화.** 급수권 철표가 숙영 게시판에 붙자 일부 천막이 자진 철수를 준비하기 시작했다.\n\n**관계.** 신보람의 가족 회의를 숙영 중앙에서 열고, 두감의 난로 점검표를 기둥에 붙인다. 백온의 공개 배급표를 천막마다 사본으로 남긴다.\n\n**야망.** 숙영지를 문중 표의 현장으로 남겨 군사호적 사본이 천막 기둥에 못 박히지 않게 한다.\n\n**공포.** 난방이 떨어진 밤에 숙영이 당직 승려의 병영으로 바뀌는 것.\n\n**개입.** 철수 행렬을 하루 붙잡거나, 철표를 떼고 신도 명부를 다시 읽게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −55 | 개방 70 | 무력 −40 | 물질 −20 | 공동 85 | 원칙 25 | 공개 35 | 자격 35 | 분산 55 | 변혁 −10\n- 욕망: 갈망 0 | 독점 −50 | 위험 −25 | 과시 −5 | 지속 0 | 지향 유동 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-10"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "감용",
-        "type": "계약",
-        "to": "신보람",
-        "basis": "신보람의 가족 회의를 숙영 중앙에서 열고"
-      },
-      {
-        "from": "감용",
-        "type": "계약",
-        "to": "두감",
-        "basis": "두감의 난로 점검표를 기둥에 붙인다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

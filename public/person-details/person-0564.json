@@ -1,494 +1,105 @@
 {
   "id": "person-0564",
   "name": "문동은",
-  "title": "약재 물류상",
-  "position": "약재 물류상",
+  "title": "장터 상인",
+  "position": "장터 상인 · 창동역",
   "characterId": "K564",
-  "rank": "수련의",
-  "commonTier": "T3",
-  "occupation": "약재 관리 기록·당직 열쇠 인계",
+  "rank": "등재민",
+  "commonTier": "T5",
+  "occupation": "장터 거래",
   "gender": "여성",
   "stage": "S4",
-  "state": "S13",
-  "stateName": "흰십자단",
-  "sourceRoute": "/world/Cast-State-13#인물-문동은",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0564",
   "birthDate": "2100-02-01",
   "birthday": "02-01",
   "age": 26,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-13.json#/content/358",
-    "lore/characters/Cast-State-13.json#/content/360",
-    "lore/characters/Cast-State-13.json#/content/361"
-  ],
-  "familyTree": {
-    "personId": "K564",
-    "nodes": [
-      {
-        "id": "K564",
-        "personId": "K564",
-        "kind": "person",
-        "name": "문동은",
-        "birthDate": "2100-02-01",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K564"
-          },
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-문동은-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 약재 관리 수련의 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-문동은-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0564"
-      },
-      {
-        "id": "FH-K564-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "문승연",
-        "lineage": {
-          "surname": "문",
-          "bongwan": "남평",
-          "clan": "bb38-b0a8-d3c9-6587-agreed-c740-second"
-        },
-        "birthDate": "2070-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-문동은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2108,
-            "summary": "문승연은 제기동 의무소에서 약재 관리 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-문동은-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K564-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "문승정",
-        "lineage": {
-          "surname": "문",
-          "bongwan": "남평",
-          "clan": "bb38-b0a8-d3c9-6587-agreed-c740-second"
-        },
-        "birthDate": "2040-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-문동은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2078,
-            "summary": "문승정은 제기동 의무소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-문동은-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K564-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "문승아",
-        "lineage": {
-          "surname": "문",
-          "bongwan": "남평",
-          "clan": "bb38-b0a8-d3c9-6587-agreed-c740-second"
-        },
-        "birthDate": "2010-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-문동은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "문승아는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-문동은-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K564-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박태미",
-        "birthDate": "2070-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-문동은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2108,
-            "summary": "박태미는 제기동 의무소에서 약재 관리 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-문동은-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K564-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이태솔",
-        "birthDate": "2040-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-문동은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2078,
-            "summary": "이태솔은 제기동 의무소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-문동은-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K564-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최재민",
-        "birthDate": "2010-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-문동은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최재민은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-문동은-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K564-P-01:K564:biological",
-        "from": "FH-K564-P-01",
-        "to": "K564",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-문동은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K564-P-02:FH-K564-P-01:biological",
-        "from": "FH-K564-P-02",
-        "to": "FH-K564-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-문동은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K564-P-03:FH-K564-P-02:biological",
-        "from": "FH-K564-P-03",
-        "to": "FH-K564-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-문동은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K564-M-01:K564:biological",
-        "from": "FH-K564-M-01",
-        "to": "K564",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-문동은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K564-M-02:FH-K564-M-01:biological",
-        "from": "FH-K564-M-02",
-        "to": "FH-K564-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-문동은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K564-M-03:FH-K564-M-02:biological",
-        "from": "FH-K564-M-03",
-        "to": "FH-K564-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-문동은-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bb38-b0a8-d3c9-6587",
+    "name": "남평 문씨",
+    "crest": "clan-crests/bb38-b0a8-d3c9-6587.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "스물여섯 살 장터 상인 문동은의 세대는 도봉구 녹천역에 기재돼 있다. 창동 장터에서 차량기지에서 뜯은 기계 부품을 판다. 동대문구에서 나고 자랐고, 상인 기재를 받으면서 도봉구로 전입했다. 부품마다 붙은 기재표를 손님 앞에서 한 번 더 읽어 주는데, 기재표 없는 부품은 아무리 좋아도 받지 않는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "장터 상인",
+    "품계": "등재민",
+    "생업": "장터 거래",
+    "일하는 역": "창동역",
+    "잠자는 역": "녹천역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "스물여섯 살 장터 상인 문동은의 세대는 도봉구 녹천역에 기재돼 있다. 창동 장터에서 차량기지에서 뜯은 기계 부품을 판다. 동대문구에서 나고 자랐고, 상인 기재를 받으면서 도봉구로 전입했다. 부품마다 붙은 기재표를 손님 앞에서 한 번 더 읽어 주는데, 기재표 없는 부품은 아무리 좋아도 받지 않는다.",
+    "관직": "직함 장터 상인. 직위 장터 상인 · 창동역. 품계 등재민. 일하는 역 창동역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": -15,
+    "무력": -25,
+    "물질": 5,
+    "공동": 30,
+    "원칙": 45,
+    "공개": -5,
+    "자격": 40,
+    "분산": -35,
+    "변혁": -30
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -30,
+    "위험": -30,
+    "과시": -25,
+    "지속": 25,
+    "지향": "유동",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0564",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 8,
+        "effective": 8
+      },
+      "martial": {
         "base": 4,
         "effective": 4
       },
-      "strategy": {
-        "base": 6,
-        "effective": 6
-      },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 8,
-        "effective": 8
-      },
-      "learning": {
+      "stewardship": {
         "base": 9,
         "effective": 9
       },
+      "intrigue": {
+        "base": 6,
+        "effective": 6
+      },
+      "learning": {
+        "base": 5,
+        "effective": 5
+      },
       "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 3,
+        "effective": 3
       }
     },
-    "skills": [
-      {
-        "id": "surgical-procedure",
-        "name": {
-          "ko": "수술 수행",
-          "en": "Surgical procedure"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "어두워져도 치료를 잇는다",
-          "en": "Continues care in darkness"
-        },
-        "description": {
-          "ko": "수술 중 정전에도 휴대전화 불빛으로 작업을 계속했다. 수련의의 실제 수행은 인정하되 독립 전문의 수준으로 확대하지 않는다.",
-          "en": "A surgical procedure continued with phone lighting after power failed. Actual apprentice performance is recognized without granting independent specialist status."
-        },
-        "behavior": {
-          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.",
-          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
-        },
-        "stress": {
-          "ko": "공포. 약재 관리 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.",
-          "en": "Fear. That the herb logistics merchant duty post would stand empty and the League's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-          "en": "Office. Rank: member. Title: herb logistics merchant. He handed over only the keys and records of his own post, and never made authority he did not hold."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-          "en": "Recorded duty and limits: Office. Rank: member. Title: herb logistics merchant. He handed over only the keys and records of his own post, and never made authority he did not hold."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 약재 관리 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That the herb logistics merchant duty post would stand empty and the League's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "수술 중 정전에도 휴대전화 불빛으로 작업을 계속했다. 수련의의 실제 수행은 인정하되 독립 전문의 수준으로 확대하지 않는다.",
-      "en": "A surgical procedure continued with phone lighting after power failed. Actual apprentice performance is recognized without granting independent specialist status."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -526,66 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bb38-b0a8-d3c9-6587",
-    "name": "남평 문씨",
-    "crest": "clan-crests/bb38-b0a8-d3c9-6587.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -25,
-    "개방": 40,
-    "무력": -60,
-    "물질": 10,
-    "공동": 25,
-    "원칙": 25,
-    "공개": 20,
-    "자격": 25,
-    "분산": 15,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -30,
-    "위험": -30,
-    "과시": -25,
-    "지속": 25,
-    "지향": "유동",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "약재 관리 기록·당직 열쇠 인계",
-    "소속": "흰십자단",
-    "품계": "수련의",
-    "직함": "약재 물류상",
-    "가치관": "권위 −25 | 개방 40 | 무력 −60 | 물질 10 | 공동 25 | 원칙 25 | 공개 20 | 자격 25 | 분산 15 | 변혁 −10",
-    "욕망": "갈망 0 | 독점 −30 | 위험 −30 | 과시 −25 | 지속 25 | 지향 유동 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2100-02-01에 태어났다. 2126년 개막 현재 약재 물류상 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 관리 기록·당직 열쇠 인계 창구가 문동은의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 확정하지 않는다.",
-    "관직": "품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 인계한 열쇠와 기록의 수령 시각을 장부에 적는다.",
-    "일화": "2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.",
-    "관계": "문동은은 수술 때 쓴 약재와 정전 뒤의 보관 상태를 수효은에게 알린다. 수효은은 연료 잔량과 출력 일지를 확인해 건조실·진료소 공급을 살피고, 문동은은 손상된 약재가 다음 진료에 섞이지 않도록 관리 기록에 남긴다.",
-    "야망": "약재 관리 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.",
-    "공포": "약재 관리 수련의 당직이 비면 흰십자단의 통행이 서울 내부 후원 세력 볼모가 되는 일을 두려워한다.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 약재 관리 기록·당직 열쇠 인계\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재 물류상\n**생애.** 2100-02-01에 태어났다. 2126년 개막 현재 약재 물류상 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 관리 기록·당직 열쇠 인계 창구가 문동은의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 확정하지 않는다.\n\n**관직.** 품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 인계한 열쇠와 기록의 수령 시각을 장부에 적는다.\n\n**일화.** 2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.\n\n**관계.** 문동은은 수술 때 쓴 약재와 정전 뒤의 보관 상태를 수효은에게 알린다. 수효은은 연료 잔량과 출력 일지를 확인해 건조실·진료소 공급을 살피고, 문동은은 손상된 약재가 다음 진료에 섞이지 않도록 관리 기록에 남긴다.\n\n**야망.** 약재 관리 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.\n\n**공포.** 약재 관리 수련의 당직이 비면 흰십자단의 통행이 서울 내부 후원 세력 볼모가 되는 일을 두려워한다.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 40 | 무력 −60 | 물질 10 | 공동 25 | 원칙 25 | 공개 20 | 자격 25 | 분산 15 | 변혁 −10\n- 욕망: 갈망 0 | 독점 −30 | 위험 −30 | 과시 −25 | 지속 25 | 지향 유동 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-13"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "문동은",
-        "type": "계약",
-        "to": "수효은",
-        "basis": "문동은은 수술 때 쓴 약재와 정전 뒤의 보관 상태를 수효은에게 알린다. 수효은은 연료 잔량과 출력 일지를 확인해 건조실·진료소 공급을 살피고, 문동은은 손상된 약재가 다음 진료에 섞이지 않도록 관리 기록에 남긴다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

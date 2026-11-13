@@ -1,388 +1,108 @@
 {
   "id": "person-0278",
   "name": "두모",
-  "title": "차륜 정비사, 송하율의 실무 담당자",
-  "position": "성하전자 차륜 정비사, 송하율의 실무 담당자",
+  "title": "교섭인",
+  "position": "교섭인 · 강남역",
   "characterId": "K277",
-  "rank": "사원",
+  "rank": "세례자",
   "commonTier": "T5",
-  "occupation": "차륜 정비 일지·불량 부품 표본 관리",
+  "occupation": "계약 교섭",
   "gender": "여성",
   "stage": "S2",
-  "state": "S11",
-  "stateName": "성하그룹",
-  "sourceRoute": "/world/Cast-State-11#인물-두모",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0278",
   "birthDate": "2079-12-17",
   "birthday": "12-17",
   "age": 47,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-11.json#/content/83",
-    "lore/characters/Cast-State-11.json#/content/87"
-  ],
-  "familyTree": {
-    "personId": "K277",
-    "nodes": [
-      {
-        "id": "K277",
-        "personId": "K277",
-        "kind": "person",
-        "name": "두모",
-        "birthDate": "2079-12-17",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K277"
-          },
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-두모-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 강남역 차량기지에서 자랐다. 성하전자 차륜 정비사, 송하율의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-두모-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0278"
-      },
-      {
-        "id": "FH-K277-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "두승수",
-        "lineage": {
-          "surname": "두",
-          "bongwan": "두릉",
-          "clan": "b450-b450-b989"
-        },
-        "birthDate": "2049-12-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-두모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2087,
-            "summary": "두승수는 강남역 차량기지에서 차륜 정비 일지·불량 부품 표본 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-두모-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K277-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "두승은",
-        "lineage": {
-          "surname": "두",
-          "bongwan": "두릉",
-          "clan": "b450-b450-b989"
-        },
-        "birthDate": "2019-12-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-두모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "두승은은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-두모-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K277-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준석",
-        "birthDate": "2049-12-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-두모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2087,
-            "summary": "이준석은 강남역 차량기지에서 차륜 정비 일지·불량 부품 표본 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-두모-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K277-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준진",
-        "birthDate": "2019-12-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-두모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최준진은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-두모-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K277-P-01:K277:biological",
-        "from": "FH-K277-P-01",
-        "to": "K277",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-두모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K277-P-02:FH-K277-P-01:biological",
-        "from": "FH-K277-P-02",
-        "to": "FH-K277-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-두모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K277-M-01:K277:biological",
-        "from": "FH-K277-M-01",
-        "to": "K277",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-두모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K277-M-02:FH-K277-M-01:biological",
-        "from": "FH-K277-M-02",
-        "to": "FH-K277-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-두모-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b450-b450-b989",
+    "name": "두릉 두씨",
+    "crest": "clan-crests/b450-b450-b989.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "고속터미널 부품 바꿈터가 열리는 날이면, 서초 곁집의 교섭인 두모는 첫 교대 부르기가 끝나자마자 강남역에서 그리로 걸어간다. 오래 강남역 정비대에서 연장을 잡았던 사람이라, 바깥 기술자가 내놓는 부품이 몇 번째 이음매에 맞는지를 숫자로 따진 뒤에야 값을 부른다. 마흔일곱이 되도록 부위는 하나뿐이고, 더 받기를 청한 적이 없다. 바꿈터 사람들은 부위 하나짜리 교섭인이 남의 정비 차례를 가장 아껴 셈한다고 말한다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "교섭인",
+    "품계": "세례자",
+    "생업": "계약 교섭",
+    "일하는 역": "강남역",
+    "잠자는 역": "강남역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "고속터미널 부품 바꿈터가 열리는 날이면, 서초 곁집의 교섭인 두모는 첫 교대 부르기가 끝나자마자 강남역에서 그리로 걸어간다. 오래 강남역 정비대에서 연장을 잡았던 사람이라, 바깥 기술자가 내놓는 부품이 몇 번째 이음매에 맞는지를 숫자로 따진 뒤에야 값을 부른다. 마흔일곱이 되도록 부위는 하나뿐이고, 더 받기를 청한 적이 없다. 바꿈터 사람들은 부위 하나짜리 교섭인이 남의 정비 차례를 가장 아껴 셈한다고 말한다.",
+    "관직": "직함 교섭인. 직위 교섭인 · 강남역. 품계 세례자. 일하는 역 강남역."
+  },
+  "values": {
+    "권위": 35,
+    "개방": -35,
+    "무력": -10,
+    "물질": -20,
+    "공동": 30,
+    "원칙": 0,
+    "공개": -45,
+    "자격": 55,
+    "분산": -30,
+    "변혁": 20
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": -10,
+    "위험": -10,
+    "과시": 10,
+    "지속": -15,
+    "지향": "동성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0278",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
-      },
-      "strategy": {
-        "base": 6,
-        "effective": 6
-      },
-      "negotiation": {
-        "base": 4,
-        "effective": 4
-      },
-      "management": {
+      "diplomacy": {
         "base": 8,
         "effective": 8
       },
-      "insight": {
+      "martial": {
+        "base": 4,
+        "effective": 4
+      },
+      "stewardship": {
         "base": 9,
         "effective": 9
+      },
+      "intrigue": {
+        "base": 6,
+        "effective": 6
       },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 5,
+        "effective": 5
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k277-defect-sample-cutting",
-        "name": {
-          "ko": "불량 표본 절단",
-          "en": "Defect sample cutting"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k277-priority",
-        "name": {
-          "ko": "공구 흔적의 책임",
-          "en": "Responsibility for tool marks"
-        },
-        "description": {
-          "ko": "두모는 깎인 베어링이 나오자 공구함을 봉인했다. 표본과 일지로 자신의 작업 책임을 드러내되 시험 성공은 미확인이다.",
-          "en": "Dumo sealed his toolbox after a shaved bearing appeared, exposing his work accountability through samples and logs without a documented trial success."
-        },
-        "behavior": {
-          "ko": "정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.",
-          "en": "Office. Rank: assistant manager. Title: wheel mechanic, duty officer of Song Hayul. He pasted the maintenance logs directly on the Elder's board and cut defective parts out as specimens."
-        },
-        "stress": {
-          "ko": "시험 차륜의 숨은 결함이 자기 공구 자국으로 남아 사택 대표에게 기지를 내주는 명분이 되는 것.",
-          "en": "Fear. That a hidden defect in a trial wheel would remain as his own tool marks and become the pretext for handing the base to the residents' representatives."
-        },
-        "relationship": {
-          "ko": "송하율의 도제 일과를 현장에서 받고, 조우찬의 작업 조에 순환 배치된다. 이홍원의 시험 차륜만 우선 손본다.",
-          "en": "Relations. Took Song Hayul's apprentice routine in the field and stood in rotation in Jo Woochan's work squads. Tended I Hongwon's trial wheels first only."
-        },
-        "effects": []
-      },
-      {
-        "id": "k277-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 사원. 직함은 성하전자 차륜 정비사, 송하율의 실무 담당자. 정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.",
-          "en": "Office. Rank: assistant manager. Title: wheel mechanic, duty officer of Song Hayul. He pasted the maintenance logs directly on the Elder's board and cut defective parts out as specimens."
-        },
-        "stress": {
-          "ko": "공포. 시험 차륜의 숨은 결함이 자기 공구 자국으로 남아 사택 대표에게 기지를 내주는 명분이 되는 것.",
-          "en": "Fear. That a hidden defect in a trial wheel would remain as his own tool marks and become the pretext for handing the base to the residents' representatives."
-        },
-        "relationship": {
-          "ko": "관계. 송하율의 도제 일과를 현장에서 받고, 조우찬의 작업 조에 순환 배치된다. 이홍원의 시험 차륜만 우선 손본다.",
-          "en": "Relations. Took Song Hayul's apprentice routine in the field and stood in rotation in Jo Woochan's work squads. Tended I Hongwon's trial wheels first only."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "두모는 깎인 베어링이 나오자 공구함을 봉인했다. 표본과 일지로 자신의 작업 책임을 드러내되 시험 성공은 미확인이다.",
-      "en": "Dumo sealed his toolbox after a shaved bearing appeared, exposing his work accountability through samples and logs without a documented trial success."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -392,7 +112,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -418,91 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b450-b450-b989",
-    "name": "두릉 두씨",
-    "crest": "clan-crests/b450-b450-b989.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 10,
-    "개방": -20,
-    "무력": -20,
-    "물질": 30,
-    "공동": 10,
-    "원칙": 10,
-    "공개": 0,
-    "자격": 90,
-    "분산": 0,
-    "변혁": -25
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": -10,
-    "위험": -10,
-    "과시": 10,
-    "지속": -15,
-    "지향": "동성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "차륜 정비 일지·불량 부품 표본 관리",
-    "소속": "성하그룹",
-    "품계": "사원",
-    "직함": "성하전자 차륜 정비사, 송하율의 실무 담당자",
-    "가치관": "권위 10 | 개방 −20 | 무력 −20 | 물질 30 | 공동 10 | 원칙 10 | 공개 0 | 자격 90 | 분산 0 | 변혁 −25",
-    "욕망": "갈망 40 | 독점 −10 | 위험 −10 | 과시 10 | 지속 −15 | 지향 동성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "강남역 차량기지에서 자랐다. 성하전자 차륜 정비사, 송하율의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.\n- 두모는 역삼1동에서 차륜 정비 일지·불량 부품 표본 관리 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 송하율의 도제 일과를 현장에서 받고, 조우찬의 작업 조에 순환 배치된다. 이홍원의 시험 차륜만 우선 손본다",
-    "관직": "품계 사원. 직함은 성하전자 차륜 정비사, 송하율의 실무 담당자. 정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.",
-    "일화": "유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 자기 공구함을 봉인했다.",
-    "관계": "송하율의 도제 일과를 현장에서 받고, 조우찬의 작업 조에 순환 배치된다. 이홍원의 시험 차륜만 우선 손본다.",
-    "야망": "공개 승계 시험의 차륜을 자기 서명으로 완성해 이씨 가문 승계를 끊는 이홍원의 길을 현장 정비로 증명한다.",
-    "공포": "시험 차륜의 숨은 결함이 자기 공구 자국으로 남아 사택 대표에게 기지를 내주는 명분이 되는 것.",
-    "개입": "봉인된 공구함을 함께 열거나, 결함 부품의 출처 자국을 추적할 수 있다."
-  },
-  "biography": "손이 빠르고 말이 적으며, 남의 공구를 빼돌리는 일을 시험 부정과 같은 죄로 본다. 결함 표본을 자르지 않고 넘기는 반장을 참지 못한다.\n\n- 생업: 차륜 정비 일지·불량 부품 표본 관리\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 차륜 정비사, 송하율의 실무 담당자\n**생애.** 강남역 차량기지에서 자랐다. 성하전자 차륜 정비사, 송하율의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.\n- 두모는 역삼1동에서 차륜 정비 일지·불량 부품 표본 관리 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 송하율의 도제 일과를 현장에서 받고, 조우찬의 작업 조에 순환 배치된다. 이홍원의 시험 차륜만 우선 손본다\n\n**관직.** 품계 사원. 직함은 성하전자 차륜 정비사, 송하율의 실무 담당자. 정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.\n\n**일화.** 유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 자기 공구함을 봉인했다.\n\n**관계.** 송하율의 도제 일과를 현장에서 받고, 조우찬의 작업 조에 순환 배치된다. 이홍원의 시험 차륜만 우선 손본다.\n\n**야망.** 공개 승계 시험의 차륜을 자기 서명으로 완성해 이씨 가문 승계를 끊는 이홍원의 길을 현장 정비로 증명한다.\n\n**공포.** 시험 차륜의 숨은 결함이 자기 공구 자국으로 남아 사택 대표에게 기지를 내주는 명분이 되는 것.\n\n**개입.** 봉인된 공구함을 함께 열거나, 결함 부품의 출처 자국을 추적할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −20 | 무력 −20 | 물질 30 | 공동 10 | 원칙 10 | 공개 0 | 자격 90 | 분산 0 | 변혁 −25\n- 욕망: 갈망 40 | 독점 −10 | 위험 −10 | 과시 10 | 지속 −15 | 지향 동성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-11"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "두모",
-        "type": "사제",
-        "to": "송하율",
-        "basis": "송하율의 도제 일과를 현장에서 받고"
-      },
-      {
-        "from": "두모",
-        "type": "계약",
-        "to": "조우찬",
-        "basis": "조우찬의 작업 조에 순환 배치된다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "국두",
-        "type": "계약",
-        "to": "두모",
-        "basis": "두모의 정비 표본 번호를 원장에 붙인다"
-      },
-      {
-        "from": "용두봉",
-        "type": "계약",
-        "to": "두모",
-        "basis": "두모의 차륜 표본을 기병 칸에 쓴다"
-      },
-      {
-        "from": "어예린",
-        "type": "맹세",
-        "to": "두모",
-        "basis": "두모의 봉인된 공구함을 함께 지키며"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

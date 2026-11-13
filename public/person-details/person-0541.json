@@ -1,387 +1,105 @@
 {
   "id": "person-0541",
   "name": "민연우",
-  "title": "사본 전령",
-  "position": "사본 전령",
+  "title": "경찰관",
+  "position": "경찰관 · 신내역",
   "characterId": "K541",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "호송 인명 장부 보호",
+  "rank": "경찰관",
+  "commonTier": "T5",
+  "occupation": "치안",
   "gender": "여성",
   "stage": "S4",
-  "state": "S06",
-  "stateName": "대한민국정부",
-  "sourceRoute": "/world/Cast-State-06#인물-민연우",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0541",
   "birthDate": "2085-09-25",
   "birthday": "09-25",
   "age": 41,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-06.json#/content/336",
-    "lore/characters/Cast-State-06.json#/content/338",
-    "lore/characters/Cast-State-06.json#/content/339"
-  ],
-  "familyTree": {
-    "personId": "K541",
-    "nodes": [
-      {
-        "id": "K541",
-        "personId": "K541",
-        "kind": "person",
-        "name": "민연우",
-        "birthDate": "2085-09-25",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K541"
-          },
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-민연우-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 사본 전령 자리는 무표 출발 열차 저지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-민연우-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0541"
-      },
-      {
-        "id": "FH-K541-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "민승원",
-        "lineage": {
-          "surname": "민",
-          "bongwan": "여흥",
-          "clan": "bbfc-c5ec-d765-9594-agreed-c6b0-second"
-        },
-        "birthDate": "2055-09-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-민연우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2093,
-            "summary": "민승원은 신내 환승 당직에서 호송 인명 장부 보호 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-민연우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K541-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "민승진",
-        "lineage": {
-          "surname": "민",
-          "bongwan": "여흥",
-          "clan": "bbfc-c5ec-d765-9594-agreed-c6b0-second"
-        },
-        "birthDate": "2025-09-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-민연우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "민승진은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-민연우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K541-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이태욱",
-        "birthDate": "2055-09-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-민연우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2093,
-            "summary": "이태욱은 신내 환승 당직에서 호송 인명 장부 보호 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-민연우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K541-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최태빈",
-        "birthDate": "2025-09-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-민연우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최태빈은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-민연우-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K541-P-01:K541:biological",
-        "from": "FH-K541-P-01",
-        "to": "K541",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-민연우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K541-P-02:FH-K541-P-01:biological",
-        "from": "FH-K541-P-02",
-        "to": "FH-K541-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-민연우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K541-M-01:K541:biological",
-        "from": "FH-K541-M-01",
-        "to": "K541",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-민연우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K541-M-02:FH-K541-M-01:biological",
-        "from": "FH-K541-M-02",
-        "to": "FH-K541-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-민연우-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bbfc-c5ec-d765-9594",
+    "name": "여흥 민씨",
+    "crest": "clan-crests/bbfc-c5ec-d765-9594.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "신내역 대합실 순찰 일지의 서명란에는 마흔한 살 경찰관 민연우의 이름이 이어진다. 신내역 대합실에서 망우 묘역으로 가는 출입구까지를 순찰한다. 장례조의 썰매가 오가는 날이면 시신에서 옷을 벗겨 가는 사람이 없는지 끝까지 따라 오른다. 그 옷이 섬유당 통에 들어가면 안 된다는 금기를 어긴 사람을 두 번 잡아 구청 민원 심리에 넘겼다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "경찰관",
+    "품계": "경찰관",
+    "생업": "치안",
+    "일하는 역": "신내역",
+    "잠자는 역": "신내역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "신내역 대합실 순찰 일지의 서명란에는 마흔한 살 경찰관 민연우의 이름이 이어진다. 신내역 대합실에서 망우 묘역으로 가는 출입구까지를 순찰한다. 장례조의 썰매가 오가는 날이면 시신에서 옷을 벗겨 가는 사람이 없는지 끝까지 따라 오른다. 그 옷이 섬유당 통에 들어가면 안 된다는 금기를 어긴 사람을 두 번 잡아 구청 민원 심리에 넘겼다.",
+    "관직": "직함 경찰관. 직위 경찰관 · 신내역. 품계 경찰관. 일하는 역 신내역."
+  },
+  "values": {
+    "권위": 70,
+    "개방": -60,
+    "무력": 0,
+    "물질": -35,
+    "공동": 20,
+    "원칙": 60,
+    "공개": -30,
+    "자격": 35,
+    "분산": -90,
+    "변혁": -60
+  },
+  "desire": {
+    "갈망": 20,
+    "독점": 10,
+    "위험": 30,
+    "과시": 25,
+    "지속": -10,
+    "지향": "이성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0541",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 3,
-        "effective": 3
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 5,
         "effective": 5
       },
-      "negotiation": {
-        "base": 3,
-        "effective": 3
+      "martial": {
+        "base": 9,
+        "effective": 9
       },
-      "management": {
-        "base": 5,
-        "effective": 5
+      "stewardship": {
+        "base": 6,
+        "effective": 6
       },
-      "insight": {
-        "base": 7,
-        "effective": 7
+      "intrigue": {
+        "base": 6,
+        "effective": 6
       },
       "learning": {
         "base": 5,
         "effective": 5
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
         "base": 8,
         "effective": 8
       }
     },
-    "skills": [
-      {
-        "id": "k541-escort-roster",
-        "name": {
-          "ko": "호송 장부 보전",
-          "en": "Escort roster preservation"
-        },
-        "rating": 45
-      }
-    ],
-    "traits": [
-      {
-        "id": "k541-choice",
-        "name": {
-          "ko": "화물보다 인명 장부",
-          "en": "Rosters before cargo"
-        },
-        "description": {
-          "ko": "일화. 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 사본 전령 자리의 서명이 장부에 올랐다. 이 선택을 넘어선 지속 성향은 미확인이다.",
-          "en": "Anecdote. In 2125, meeting a raid mid-convoy, he secured the roster of lives before the freight. By this deed the signature of the copy courier post rose into the ledger. A lasting disposition beyond this choice is unconfirmed."
-        },
-        "behavior": {
-          "ko": "일화. 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 사본 전령 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In 2125, meeting a raid mid-convoy, he secured the roster of lives before the freight. By this deed the signature of the copy courier post rose into the ledger."
-        },
-        "stress": {
-          "ko": "공포. 사본 전령 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That the copy courier duty post would stand empty and the Government's passage would become a break in the eight states' recognition. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      },
-      {
-        "id": "k541-boundary",
-        "name": {
-          "ko": "당직 연속성을 중시",
-          "en": "Values duty continuity"
-        },
-        "description": {
-          "ko": "당직 공백을 피하고 기록을 믿는 원문 성향이다. 반복 문구이므로 개인의 특별한 장점으로 확대하지 않는다.",
-          "en": "The source favors unbroken shifts and written records. Repeated wording does not establish a distinctive exceptional virtue."
-        },
-        "behavior": {
-          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.",
-          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
-        },
-        "stress": {
-          "ko": "공포. 사본 전령 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That the copy courier duty post would stand empty and the Government's passage would become a break in the eight states' recognition. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "일화. 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 사본 전령 자리의 서명이 장부에 올랐다. 단일 일화와 반복 당직 문구만 있어 장기 성향·광범위 경력·후속 결과는 미확인이다.",
-      "en": "Anecdote. In 2125, meeting a raid mid-convoy, he secured the roster of lives before the freight. By this deed the signature of the copy courier post rose into the ledger. Only one anecdote and repeated duty wording are available; enduring disposition, broader experience, and later results remain unconfirmed."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -419,83 +137,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-41480-S06",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K541",
-      "stateId": "S06",
-      "politicalParentTitleId": "title:kingdom-s06",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-41480-S06",
-          "directLiegePersonId": "K144"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bbfc-c5ec-d765-9594",
-    "name": "여흥 민씨",
-    "crest": "clan-crests/bbfc-c5ec-d765-9594.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 25,
-    "개방": -5,
-    "무력": -35,
-    "물질": -30,
-    "공동": 15,
-    "원칙": 40,
-    "공개": -5,
-    "자격": 20,
-    "분산": -40,
-    "변혁": -40
-  },
-  "desire": {
-    "갈망": 20,
-    "독점": 10,
-    "위험": 30,
-    "과시": 25,
-    "지속": -10,
-    "지향": "이성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "호송 인명 장부 보호",
-    "소속": "서울특별시 지방공무원 조직",
-    "직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급",
-    "담당 업무": "사본 전령",
-    "가치관": "권위 25 | 개방 −5 | 무력 −35 | 물질 −30 | 공동 15 | 원칙 40 | 공개 −5 | 자격 20 | 분산 −40 | 변혁 −40",
-    "욕망": "갈망 20 | 독점 10 | 위험 30 | 과시 25 | 지속 −10 | 지향 이성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "신내 환승 당직에서 자랐다. 사본 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 민연우의 호송 인명 장부 보호 업무는 종로1·2·3·4가동과 이어진다.",
-    "공무원 직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 사본 전령.",
-    "일화": "2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 사본 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "호송 인명 장부 보호 업무의 인수인계를 통해 같은 생활권의 선배 당직과 이어진다.",
-    "야망": "사본 전령 자리에서 호송 인명 장부 보호 기록을 이어 서울특별시 지방공무원 조직의 장부가 당직 사이에 끊기지 않게 한다.",
-    "공포": "사본 전령 당직이 비어 호송 인명 장부 보호 업무와 연결된 도심 통행의 도장·명부가 끊기고, 그 기록에 기대는 서울특별시 지방공무원 조직 구성 세력의 인준까지 멈추는 것.",
-    "개입": "호송 인명 장부 보호 업무의 당직 인수 증인을 세우거나, 그 직위의 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "호송이 흔들려도 인명 장부를 잇는 쪽을 고른다. 습격 때 화물보다 먼저 챙긴 이름들을 믿는다.\n\n- 생업: 호송 인명 장부 보호\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급\n- 담당 업무: 사본 전령\n**생애.** 신내 환승 당직에서 자랐다. 사본 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 민연우의 호송 인명 장부 보호 업무는 종로1·2·3·4가동과 이어진다.\n\n**공무원 직위·직급.** 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 사본 전령.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 사본 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 호송 인명 장부 보호 업무의 인수인계를 통해 같은 생활권의 선배 당직과 이어진다.\n\n**야망.** 사본 전령 자리에서 호송 인명 장부 보호 기록을 이어 서울특별시 지방공무원 조직의 장부가 당직 사이에 끊기지 않게 한다.\n\n**공포.** 사본 전령 당직이 비어 호송 인명 장부 보호 업무와 연결된 도심 통행의 도장·명부가 끊기고, 그 기록에 기대는 서울특별시 지방공무원 조직 구성 세력의 인준까지 멈추는 것.\n\n**개입.** 호송 인명 장부 보호 업무의 당직 인수 증인을 세우거나, 그 직위의 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 −5 | 무력 −35 | 물질 −30 | 공동 15 | 원칙 40 | 공개 −5 | 자격 20 | 분산 −40 | 변혁 −40\n- 욕망: 갈망 20 | 독점 10 | 위험 30 | 과시 25 | 지속 −10 | 지향 이성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-06"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "민연우",
-        "type": "계약",
-        "to": "섭도윤",
-        "basis": "민연우는 습격에서 챙긴 호송 인명 장부와 사본을 섭도윤에게 전달한다. 섭도윤은 인원 누락을 확인할 증언과 함께 기록청과 회의장에 소식을 보내, 호송 손실이 화물 숫자로만 전해지지 않게 한다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

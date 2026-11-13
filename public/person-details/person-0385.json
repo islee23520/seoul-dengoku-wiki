@@ -1,387 +1,105 @@
 {
   "id": "person-0385",
   "name": "원주온",
-  "title": "동남 우회 저장고 탐사원",
-  "position": "교구 보관함 조사 부제",
+  "title": "구 부대 지휘관",
+  "position": "구 부대 지휘관 · 경복궁역",
   "characterId": "K384",
-  "rank": "부제",
-  "commonTier": "T4",
-  "occupation": "교구 보관함 조사·보좌",
+  "rank": "소령",
+  "commonTier": "T5",
+  "occupation": "군 지휘",
   "gender": "남성",
   "stage": "S2",
-  "state": "S15",
-  "stateName": "명동대교구",
-  "sourceRoute": "/world/Cast-State-15#인물-원주온",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0385",
   "birthDate": "2078-12-05",
   "birthday": "12-05",
   "age": 48,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-15.json#/content/159",
-    "lore/characters/Cast-State-15.json#/content/160",
-    "lore/characters/Cast-State-15.json#/content/161"
-  ],
-  "familyTree": {
-    "personId": "K384",
-    "nodes": [
-      {
-        "id": "K384",
-        "personId": "K384",
-        "kind": "person",
-        "name": "원주온",
-        "birthDate": "2078-12-05",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K384"
-          },
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-원주온-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 교구 보관함 조사 부제 일을 맡았다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-원주온-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0385"
-      },
-      {
-        "id": "FH-K384-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "원승현",
-        "lineage": {
-          "surname": "원",
-          "bongwan": "원주",
-          "clan": "c6d0-c6d0-c8fc-agreed-c628-second"
-        },
-        "birthDate": "2048-12-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-원주온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2086,
-            "summary": "원승현은 대합실 당직에서 교구 보관함 조사·보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-원주온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K384-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "원승영",
-        "lineage": {
-          "surname": "원",
-          "bongwan": "원주",
-          "clan": "c6d0-c6d0-c8fc-agreed-c628-second"
-        },
-        "birthDate": "2018-12-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-원주온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "원승영은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-원주온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K384-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준재",
-        "birthDate": "2048-12-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-원주온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2086,
-            "summary": "박준재는 대합실 당직에서 교구 보관함 조사·보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-원주온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K384-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준찬",
-        "birthDate": "2018-12-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-원주온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이준찬은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-원주온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K384-P-01:K384:biological",
-        "from": "FH-K384-P-01",
-        "to": "K384",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-원주온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K384-P-02:FH-K384-P-01:biological",
-        "from": "FH-K384-P-02",
-        "to": "FH-K384-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-원주온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K384-M-01:K384:biological",
-        "from": "FH-K384-M-01",
-        "to": "K384",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-원주온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K384-M-02:FH-K384-M-01:biological",
-        "from": "FH-K384-M-02",
-        "to": "FH-K384-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-원주온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c6d0-c6d0-c8fc",
+    "name": "원주 원씨",
+    "crest": "clan-crests/c6d0-c6d0-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "국군 장부에 소령, 종로구 부대 지휘관으로 올라 있다. 마흔여덟의 원주온은 경복궁역 막사에서 광화문 청사 터널 입구와 종로 일대 출입구 초소들의 교대표를 짜고, 예비군 소집 명부를 철마다 한 줄씩 대조한다. 탄약 상자는 그가 직접 센 뒤에야 초소로 올라간다. 탄약이 장부에 적힌 만큼 있지 않다는 것을 아는 사람이 구 안에 몇 없다는 것이 그의 걱정이다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "구 부대 지휘관",
+    "품계": "소령",
+    "생업": "군 지휘",
+    "일하는 역": "경복궁역",
+    "잠자는 역": "경복궁역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "국군 장부에 소령, 종로구 부대 지휘관으로 올라 있다. 마흔여덟의 원주온은 경복궁역 막사에서 광화문 청사 터널 입구와 종로 일대 출입구 초소들의 교대표를 짜고, 예비군 소집 명부를 철마다 한 줄씩 대조한다. 탄약 상자는 그가 직접 센 뒤에야 초소로 올라간다. 탄약이 장부에 적힌 만큼 있지 않다는 것을 아는 사람이 구 안에 몇 없다는 것이 그의 걱정이다.",
+    "관직": "직함 구 부대 지휘관. 직위 구 부대 지휘관 · 경복궁역. 품계 소령. 일하는 역 경복궁역."
+  },
+  "values": {
+    "권위": 60,
+    "개방": -30,
+    "무력": 30,
+    "물질": 45,
+    "공동": -15,
+    "원칙": -30,
+    "공개": -50,
+    "자격": 10,
+    "분산": -45,
+    "변혁": -5
+  },
+  "desire": {
+    "갈망": 5,
+    "독점": 30,
+    "위험": -10,
+    "과시": 0,
+    "지속": -15,
+    "지향": "양성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0385",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
+      "diplomacy": {
+        "base": 4,
+        "effective": 4
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
+      "martial": {
         "base": 11,
         "effective": 11
       },
+      "stewardship": {
+        "base": 4,
+        "effective": 4
+      },
+      "intrigue": {
+        "base": 5,
+        "effective": 5
+      },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 4,
+        "effective": 4
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 10,
+        "effective": 10
       }
     },
-    "skills": [
-      {
-        "id": "field-measurement",
-        "name": {
-          "ko": "우회 실측",
-          "en": "Alternate route measurement"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "기록 노출을 가림",
-          "en": "Selects what records expose"
-        },
-        "description": {
-          "ko": "개봉 흔적과 지도 빈칸의 겹침을 증언하고 우회 실측을 넘긴다. 비공개 배급을 원판 제목에 남기지 않는 선택도 보존한다.",
-          "en": "Testifies about overlapping opening marks and map gaps and submits alternate-route measurements. Also avoids naming hidden rations in the master title."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 기록 노출을 가림을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "민감한 공급 기록 앞에서 표제를 줄일 수 있다.",
-          "en": "May limit titles when supply records are sensitive."
-        },
-        "relationship": {
-          "ko": "라진우에게 실측을 넘기고 판효담의 칠판에 좌표를 붙인다.",
-          "en": "Sends measurements to Ra Jinwoo and posts coordinates on Pan Hyodam’s board."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "라진우에게 실측을 넘기고 판효담의 칠판에 좌표를 붙인다.",
-          "en": "Sends measurements to Ra Jinwoo and posts coordinates on Pan Hyodam’s board."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "개봉 흔적과 지도 빈칸의 겹침을 증언하고 우회 실측을 넘긴다. 비공개 배급을 원판 제목에 남기지 않는 선택도 보존한다.",
-      "en": "Testifies about overlapping opening marks and map gaps and submits alternate-route measurements. Also avoids naming hidden rations in the master title."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -419,79 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c6d0-c6d0-c8fc",
-    "name": "원주 원씨",
-    "crest": "clan-crests/c6d0-c6d0-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": 25,
-    "무력": -5,
-    "물질": 50,
-    "공동": -20,
-    "원칙": -50,
-    "공개": -25,
-    "자격": -5,
-    "분산": 5,
-    "변혁": 15
-  },
-  "desire": {
-    "갈망": 5,
-    "독점": 30,
-    "위험": -10,
-    "과시": 0,
-    "지속": -15,
-    "지향": "양성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "교구 보관함 조사·보좌",
-    "소속": "명동대교구 (명동역)",
-    "품계": "부제",
-    "직함": "교구 보관함 조사 부제",
-    "가치관": "권위 15 | 개방 25 | 무력 −5 | 물질 50 | 공동 −20 | 원칙 −50 | 공개 −25 | 자격 −5 | 분산 5 | 변혁 15",
-    "욕망": "갈망 5 | 독점 30 | 위험 −10 | 과시 0 | 지속 −15 | 지향 양성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2078-12-05에 태어난 원주온은 영구 겨울의 명동역 교구청에서 교구 보관함 조사 부제 일을 맡는다. 교구 보관함 조사·보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 원주온은 명동 행정동의 명동역 교구청에서 교구 보관함 조사 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 부제. 직함은 교구 보관함 조사 부제. 교구 보관함 조사·보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
-    "일화": "창고 봉쇄 밤, 안쪽 개봉 흔적과 우회 저장고 지도에서 같은 칸이 동시에 비었다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.",
-    "관계": "라진우에게 우회 실측을 넘기고, 판효담의 창고 기지 칠판에 좌표를 붙인다. 남윤경의 비공개 비상배급을 원판 제목으로 남기지 않는다.",
-    "야망": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-    "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-    "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
-  },
-  "biography": "원주온은 교구 보관함 조사 부제 업무에서 교구 보관함 조사·보좌 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 교구 보관함 조사·보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 교구 보관함 조사 부제\n**생애.** 2078-12-05에 태어난 원주온은 영구 겨울의 명동역 교구청에서 교구 보관함 조사 부제 일을 맡는다. 교구 보관함 조사·보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 원주온은 명동 행정동의 명동역 교구청에서 교구 보관함 조사 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 부제. 직함은 교구 보관함 조사 부제. 교구 보관함 조사·보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 창고 봉쇄 밤, 안쪽 개봉 흔적과 우회 저장고 지도에서 같은 칸이 동시에 비었다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.\n\n**관계.** 라진우에게 우회 실측을 넘기고, 판효담의 창고 기지 칠판에 좌표를 붙인다. 남윤경의 비공개 비상배급을 원판 제목으로 남기지 않는다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 25 | 무력 −5 | 물질 50 | 공동 −20 | 원칙 −50 | 공개 −25 | 자격 −5 | 분산 5 | 변혁 15\n- 욕망: 갈망 5 | 독점 30 | 위험 −10 | 과시 0 | 지속 −15 | 지향 양성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-15"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "원주온",
-        "type": "계약",
-        "to": "라진우",
-        "basis": "라진우에게 우회 실측을 넘기고"
-      },
-      {
-        "from": "원주온",
-        "type": "계약",
-        "to": "판효담",
-        "basis": "판효담의 창고 기지 칠판에 좌표를 붙인다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "수한별",
-        "type": "계약",
-        "to": "원주온",
-        "basis": "원주온의 기지 당직과 매듭 방향을 나눈다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

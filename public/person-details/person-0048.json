@@ -1,501 +1,156 @@
 {
   "id": "person-0048",
   "name": "제문석",
-  "title": "구로 분진진료소 의무장",
-  "position": "구로 분진진료소 의무장",
+  "title": "사당 구간장",
+  "position": "사당 구간장 · 자유도시들",
   "characterId": "K048",
-  "rank": "",
+  "rank": "구간장",
   "commonTier": "T3",
-  "occupation": "분진 진료",
+  "occupation": "구간 운영",
   "gender": "남성",
   "stage": "S2",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-제문석",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0048",
   "birthDate": "2097-05-13",
   "birthday": "05-13",
   "age": 29,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/214",
-    "lore/characters/Cast-State-02.json#/content/216"
-  ],
-  "familyTree": {
-    "personId": "K048",
-    "nodes": [
-      {
-        "id": "K048",
-        "personId": "K048",
-        "kind": "person",
-        "name": "제문석",
-        "birthDate": "2097-05-13",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K048"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제문석-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 구로 분진진료소 의무장 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-제문석-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0048"
-      },
-      {
-        "id": "FH-K048-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "제승현",
-        "lineage": {
-          "surname": "제",
-          "bongwan": "칠원",
-          "clan": "c81c-ce60-c6d0"
-        },
-        "birthDate": "2067-05-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제문석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "제승현은 제기동 의무소에서 분진 진료 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-제문석-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K048-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "제승영",
-        "lineage": {
-          "surname": "제",
-          "bongwan": "칠원",
-          "clan": "c81c-ce60-c6d0"
-        },
-        "birthDate": "2037-05-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제문석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "제승영은 제기동 의무소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-제문석-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K048-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "제승윤",
-        "lineage": {
-          "surname": "제",
-          "bongwan": "칠원",
-          "clan": "c81c-ce60-c6d0"
-        },
-        "birthDate": "2007-05-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제문석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "제승윤은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-제문석-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K048-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박승희",
-        "birthDate": "2067-05-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제문석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "박승희는 제기동 의무소에서 분진 진료 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-제문석-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K048-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이승은",
-        "birthDate": "2037-05-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제문석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "이승은은 제기동 의무소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-제문석-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K048-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승규",
-        "birthDate": "2007-05-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제문석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최승규는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-제문석-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K048-P-01:K048:biological",
-        "from": "FH-K048-P-01",
-        "to": "K048",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제문석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K048-P-02:FH-K048-P-01:biological",
-        "from": "FH-K048-P-02",
-        "to": "FH-K048-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제문석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K048-P-03:FH-K048-P-02:biological",
-        "from": "FH-K048-P-03",
-        "to": "FH-K048-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제문석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K048-M-01:K048:biological",
-        "from": "FH-K048-M-01",
-        "to": "K048",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제문석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K048-M-02:FH-K048-M-01:biological",
-        "from": "FH-K048-M-02",
-        "to": "FH-K048-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제문석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K048-M-03:FH-K048-M-02:biological",
-        "from": "FH-K048-M-03",
-        "to": "FH-K048-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-제문석-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c81c-ce60-c6d0",
+    "name": "칠원 제씨",
+    "crest": "clan-crests/c81c-ce60-c6d0.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "잠실의 전력을 2호선으로 사당까지 끌어올 케이블 자리를 제문석은 미리 비워 두고, 그 터널 토막의 열을 날마다 잰다. 그의 구간은 사당, 총신대입구(이수), 남성인데, 사당과 이수 두 곳이 아크와 땅으로 맞닿은 건널목이라 동작에서 가장 다툼이 잦다. 스물아홉의 나이에 그는 날마다 사당과 이수 두 건널목의 통행 수를 한 판에 맞춰 적고, 해가 지기 전에 그 판을 나루지기에게 올린다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "사당 구간장",
+    "품계": "구간장",
+    "생업": "구간 운영",
+    "일하는 역": "사당역",
+    "잠자는 역": "사당역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "잠실의 전력을 2호선으로 사당까지 끌어올 케이블 자리를 제문석은 미리 비워 두고, 그 터널 토막의 열을 날마다 잰다. 그의 구간은 사당, 총신대입구(이수), 남성인데, 사당과 이수 두 곳이 아크와 땅으로 맞닿은 건널목이라 동작에서 가장 다툼이 잦다. 스물아홉의 나이에 그는 날마다 사당과 이수 두 건널목의 통행 수를 한 판에 맞춰 적고, 해가 지기 전에 그 판을 나루지기에게 올린다.",
+    "관직": "직함 사당 구간장. 직위 사당 구간장 · 자유도시들. 품계 구간장. 일하는 역 사당역."
+  },
+  "values": {
+    "권위": -70,
+    "개방": 25,
+    "무력": -35,
+    "물질": 55,
+    "공동": 15,
+    "원칙": 15,
+    "공개": 25,
+    "자격": 80,
+    "분산": 65,
+    "변혁": 30
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": 40,
+    "위험": 5,
+    "과시": 25,
+    "지속": 20,
+    "지향": "무성향",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0048",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "제문석",
+        "type": "지휘",
+        "to": "최지우",
+        "basis": "동작 나루지기 최지우의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "배초담",
+        "type": "지휘",
+        "to": "제문석",
+        "basis": "사당 구간장 제문석의 직속"
+      },
+      {
+        "from": "조바원",
+        "type": "지휘",
+        "to": "제문석",
+        "basis": "사당 구간장 제문석의 직속"
+      },
+      {
+        "from": "백구래",
+        "type": "지휘",
+        "to": "제문석",
+        "basis": "사당 구간장 제문석의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K219",
+    "name": "최지우",
+    "courtId": "court:K219",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K048",
+    "members": [
+      {
+        "personId": "person-0023",
+        "name": "배초담"
+      },
+      {
+        "personId": "person-0824",
+        "name": "조바원"
+      },
+      {
+        "personId": "person-0880",
+        "name": "백구래"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 13,
-        "effective": 13
-      },
-      "learning": {
-        "base": 12,
-        "effective": 12
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "stewardship": {
         "base": 10,
         "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k048-surgery",
-        "name": {
-          "ko": "수술",
-          "en": "Surgery"
-        },
-        "rating": 70
-      },
-      {
-        "id": "k048-patient-filter-schedule",
-        "name": {
-          "ko": "환자·필터 일정",
-          "en": "Patient and filter scheduling"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k048-continue-in-blackout",
-        "name": {
-          "ko": "정전 중 수술 지속",
-          "en": "Continue surgery in blackout"
-        },
-        "description": {
-          "ko": "정전에도 손전화 불빛 아래 수술을 계속했다.",
-          "en": "Continued surgery by handset light during a blackout."
-        },
-        "behavior": {
-          "ko": "정전에도 손전화 불빛 아래 수술을 계속했다.",
-          "en": "Continued surgery by handset light during a blackout."
-        },
-        "stress": {
-          "ko": "가짜 약품이 공방 골목에 퍼져 진료소가 강국 보호를 받는 제조망의 창구가 되는 것.",
-          "en": "That counterfeit drugs would spread through workshop alleys, and the clinic would become a maker network's window under great-power protection."
-        },
-        "relationship": {
-          "ko": "진우람의 금천 의무와 환자 이송을 나누고, 임채원의 방호 출고를 진료 수량에 맞추며, 류은비의 약효 검증을 구로 표본으로 돕는다.",
-          "en": "Splitting patient transfers with Jin Uram's Geumcheon care, matching Im Chaewon's protective releases to care volumes, and helping Ryu Eunbi's drug-efficacy verification with Guro specimens."
-        },
-        "effects": []
-      },
-      {
-        "id": "k048-medical-record-boundary",
-        "name": {
-          "ko": "진료 기록의 경계",
-          "en": "Boundary of medical records"
-        },
-        "description": {
-          "ko": "진료 기록을 군수 명부로 달라는 요구를 거절한다.",
-          "en": "Rejects demands to turn medical records into military registers."
-        },
-        "behavior": {
-          "ko": "진료 기록을 군수 명부로 달라는 요구를 거절한다.",
-          "en": "Rejects demands to turn medical records into military registers."
-        },
-        "stress": {
-          "ko": "가짜 약품이 공방 골목에 퍼져 진료소가 강국 보호를 받는 제조망의 창구가 되는 것.",
-          "en": "That counterfeit drugs would spread through workshop alleys, and the clinic would become a maker network's window under great-power protection."
-        },
-        "relationship": {
-          "ko": "진우람의 금천 의무와 환자 이송을 나누고, 임채원의 방호 출고를 진료 수량에 맞추며, 류은비의 약효 검증을 구로 표본으로 돕는다.",
-          "en": "Splitting patient transfers with Jin Uram's Geumcheon care, matching Im Chaewon's protective releases to care volumes, and helping Ryu Eunbi's drug-efficacy verification with Guro specimens."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "정전 중 수술 수행은 명시된 기술 근거다. 환자 이송과 필터 일정도 운영하나 수술 결과나 모든 의학 분야의 숙련은 미확인이다.",
-      "en": "Surgery during a blackout explicitly supports a learned skill. Also coordinates transfers and filter schedules, without assuming outcomes or mastery of all medicine."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -533,90 +188,114 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
+  "confirmedHoldings": [
     {
-      "id": "title:duchy-44230-S02",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
+      "id": "holding:v3:section:동작구:사당",
+      "name": {
+        "ko": "사당 구간"
+      },
       "holderPersonId": "K048",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:kingdom-s02",
-      "personalLieges": [
+      "directLiegePersonId": "K219",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "사당",
+        "stationName": "사당"
+      },
+      "adminRefs": [
         {
-          "holdingId": "holding:opening-duchy-44230-S02",
-          "directLiegePersonId": "K029"
+          "id": "region:1159062000",
+          "name": "사당1동"
+        },
+        {
+          "id": "region:1159063000",
+          "name": "사당2동"
+        },
+        {
+          "id": "region:1159064000",
+          "name": "사당3동"
         }
       ],
-      "directOwnership": false
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
     }
   ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c81c-ce60-c6d0",
-    "name": "칠원 제씨",
-    "crest": "clan-crests/c81c-ce60-c6d0.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -35,
-    "개방": 10,
-    "무력": -25,
-    "물질": 40,
-    "공동": 40,
-    "원칙": 25,
-    "공개": 25,
-    "자격": 60,
-    "분산": 10,
-    "변혁": 20
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": 40,
-    "위험": 5,
-    "과시": 25,
-    "지속": 20,
-    "지향": "무성향",
-    "결합": "비독점"
-  },
-  "fields": {
-    "소속": "규격맹",
-    "생업": "분진 진료",
-    "품계": "조합원",
-    "직함": "구로 분진진료소 의무장",
-    "업무 위치": "구로3동. 제문석은 구로3동 분진진료소에서 겨울 정전 중 환자에게 쓴 약과 손전화 사용 시각을 기록한다. 진우람에게 금천 이송표를 돌리고 임채원의 방호복 출고 수와 류은비의 구로 표본을 대조한다.",
-    "가치관": "권위 −35 | 개방 10 | 무력 −25 | 물질 40 | 공동 40 | 원칙 25 | 공개 25 | 자격 60 | 분산 10 | 변혁 20",
-    "욕망": "갈망 45 | 독점 40 | 위험 5 | 과시 25 | 지속 20 | 지향 무성향 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 구로 분진진료소 의무장 자리는 가짜 약 봉인으로 열렸다.\n- 업무 위치: 구로3동. 제문석은 구로3동 분진진료소에서 겨울 정전 중 환자에게 쓴 약과 손전화 사용 시각을 기록한다. 진우람에게 금천 이송표를 돌리고 임채원의 방호복 출고 수와 류은비의 구로 표본을 대조한다.",
-    "관직": "품계 조합원. 직함은 구로 분진진료소 의무장. 환자 중증도와 필터 교체 주기를 함께 게시하고, 인증 도장 없는 약은 약장에 들이지 않는다.",
-    "일화": "2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 이 일로 구로 분진진료소 의무장 자리의 서명이 장부에 올랐다.",
-    "관계": "진우람의 금천 의무와 환자 이송을 나누고, 임채원의 방호 출고를 진료 수량에 맞추며, 류은비의 약효 검증을 구로 표본으로 돕는다.",
-    "야망": "분진 진료와 필터 교환을 의료·정수 작업반까지 열어 복구복무자가 군복이 아니어도 시민으로 숨 쉬게 한다.",
-    "공포": "가짜 약품이 공방 골목에 퍼져 진료소가 강국 보호를 받는 제조망의 창구가 되는 것.",
-    "개입": "재현 실험의 원본 기록을 가져와 약장을 열거나, 비공개 구매 조항을 숨긴 공방을 폭로할 수 있다."
-  },
-  "biography": "바느질 간격으로 방호복의 위험을 가늠하고, 진료 기록을 군수 명부로 달라는 장교를 문으로 밀어낸다. 실용적이고 손이 빠르다.\n\n- 소속: 규격맹\n- 생업: 분진 진료\n- 품계: 조합원\n- 직함: 구로 분진진료소 의무장\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 구로 분진진료소 의무장 자리는 가짜 약 봉인으로 열렸다.\n- 업무 위치: 구로3동. 제문석은 구로3동 분진진료소에서 겨울 정전 중 환자에게 쓴 약과 손전화 사용 시각을 기록한다. 진우람에게 금천 이송표를 돌리고 임채원의 방호복 출고 수와 류은비의 구로 표본을 대조한다.\n\n**관직.** 품계 조합원. 직함은 구로 분진진료소 의무장. 환자 중증도와 필터 교체 주기를 함께 게시하고, 인증 도장 없는 약은 약장에 들이지 않는다.\n\n**일화.** 2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 이 일로 구로 분진진료소 의무장 자리의 서명이 장부에 올랐다.\n\n**관계.** 진우람의 금천 의무와 환자 이송을 나누고, 임채원의 방호 출고를 진료 수량에 맞추며, 류은비의 약효 검증을 구로 표본으로 돕는다.\n\n**야망.** 분진 진료와 필터 교환을 의료·정수 작업반까지 열어 복구복무자가 군복이 아니어도 시민으로 숨 쉬게 한다.\n\n**공포.** 가짜 약품이 공방 골목에 퍼져 진료소가 강국 보호를 받는 제조망의 창구가 되는 것.\n\n**개입.** 재현 실험의 원본 기록을 가져와 약장을 열거나, 비공개 구매 조항을 숨긴 공방을 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 10 | 무력 −25 | 물질 40 | 공동 40 | 원칙 25 | 공개 25 | 자격 60 | 분산 10 | 변혁 20\n- 욕망: 갈망 45 | 독점 40 | 위험 5 | 과시 25 | 지속 20 | 지향 무성향 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-02"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "제문석",
-        "type": "계약",
-        "to": "임채원",
-        "basis": "임채원의 방호 출고를 진료 수량에 맞추며"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:사당",
+      "name": {
+        "ko": "사당역"
       },
-      {
-        "from": "제문석",
-        "type": "계약",
-        "to": "진우람",
-        "basis": "진우람의 금천 의무와 환자 이송을 나누고"
-      }
-    ],
-    "incoming": []
-  }
+      "holderPersonId": "person-0023",
+      "directLiegePersonId": "K048",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "사당",
+        "stationName": "사당"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1159062000",
+          "name": "사당1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "배초담",
+      "holderRoute": "/people/person-0023"
+    },
+    {
+      "id": "holding:v3:station:총신대입구(이수)",
+      "name": {
+        "ko": "총신대입구(이수)역"
+      },
+      "holderPersonId": "person-0824",
+      "directLiegePersonId": "K048",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "총신대입구(이수)",
+        "stationName": "총신대입구(이수)"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1159063000",
+          "name": "사당2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "조바원",
+      "holderRoute": "/people/person-0824"
+    },
+    {
+      "id": "holding:v3:station:남성",
+      "name": {
+        "ko": "남성역"
+      },
+      "holderPersonId": "person-0880",
+      "directLiegePersonId": "K048",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "남성",
+        "stationName": "남성"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1159064000",
+          "name": "사당3동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "백구래",
+      "holderRoute": "/people/person-0880"
+    }
+  ]
 }

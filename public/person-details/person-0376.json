@@ -1,388 +1,149 @@
 {
   "id": "person-0376",
   "name": "라진우",
-  "title": "창고지기",
-  "position": "교구 명부 보관 부제",
+  "title": "의원 집안 후계",
+  "position": "의원 집안 후계 · 4.19민주묘지역",
   "characterId": "K375",
-  "rank": "부제",
-  "commonTier": "T4",
-  "occupation": "교구 명부 보관·선거 보좌",
+  "rank": "후계",
+  "commonTier": "T2",
+  "occupation": "구 행정",
   "gender": "여성",
   "stage": "S1",
-  "state": "S15",
-  "stateName": "명동대교구",
-  "sourceRoute": "/world/Cast-State-15#인물-라진우",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0376",
   "birthDate": "2066-04-24",
   "birthday": "04-24",
   "age": 60,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-15.json#/content/71",
-    "lore/characters/Cast-State-15.json#/content/72",
-    "lore/characters/Cast-State-15.json#/content/73",
-    "lore/characters/Cast-State-15.json#/content/74"
-  ],
-  "familyTree": {
-    "personId": "K375",
-    "nodes": [
-      {
-        "id": "K375",
-        "personId": "K375",
-        "kind": "person",
-        "name": "라진우",
-        "birthDate": "2066-04-24",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K375"
-          },
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-라진우-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 교구 명부 보관 부제 일을 맡았다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-라진우-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0376"
-      },
-      {
-        "id": "FH-K375-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "라승호",
-        "lineage": {
-          "surname": "라",
-          "bongwan": "금성",
-          "clan": "b77c-ae08-c131-7f85"
-        },
-        "birthDate": "2036-04-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-라진우-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "라승호는 대합실 당직에서 교구 명부 보관·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-라진우-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K375-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "라승민",
-        "lineage": {
-          "surname": "라",
-          "bongwan": "금성",
-          "clan": "b77c-ae08-c131-7f85"
-        },
-        "birthDate": "2006-04-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-라진우-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "라승민은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-라진우-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K375-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준아",
-        "birthDate": "2036-04-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-라진우-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "정준아는 대합실 당직에서 교구 명부 보관·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-라진우-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K375-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤준규",
-        "birthDate": "2006-04-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-라진우-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤준규는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-라진우-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K375-P-01:K375:biological",
-        "from": "FH-K375-P-01",
-        "to": "K375",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-라진우-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K375-P-02:FH-K375-P-01:biological",
-        "from": "FH-K375-P-02",
-        "to": "FH-K375-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-라진우-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K375-M-01:K375:biological",
-        "from": "FH-K375-M-01",
-        "to": "K375",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-라진우-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K375-M-02:FH-K375-M-01:biological",
-        "from": "FH-K375-M-02",
-        "to": "FH-K375-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-라진우-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b77c-ae08-c131-7f85",
+    "name": "금성 라씨",
+    "crest": "clan-crests/b77c-ae08-c131-7f85.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "라세영 의원 집안이 지명한 후계는 강북구 우이동 4.19민주묘지역에 기재된 라진우다. 금성 라씨인 예순 살 여성이다. 4·19민주묘지 터 묘역 장부의 맨 앞장에는 라세영의 의석을 지키겠다는 한 줄이 그녀의 손글씨로 적혀 있고, 그 아래에 집안 세대주의 도장이 찍혀 있다. 의원 집안 사람이 4·19민주묘지 터에 묻힐 때 묘역의 자리 번호를 장부에 적는 일을 직접 지켜본다. 북한산 쪽 망대에서 내려온 보고는 의원에게 가기 전에 그녀의 손을 거친다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "의원 집안 후계",
+    "품계": "후계",
+    "생업": "구 행정",
+    "일하는 역": "4.19민주묘지역",
+    "잠자는 역": "4.19민주묘지역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "라세영 의원 집안이 지명한 후계는 강북구 우이동 4.19민주묘지역에 기재된 라진우다. 금성 라씨인 예순 살 여성이다. 4·19민주묘지 터 묘역 장부의 맨 앞장에는 라세영의 의석을 지키겠다는 한 줄이 그녀의 손글씨로 적혀 있고, 그 아래에 집안 세대주의 도장이 찍혀 있다. 의원 집안 사람이 4·19민주묘지 터에 묻힐 때 묘역의 자리 번호를 장부에 적는 일을 직접 지켜본다. 북한산 쪽 망대에서 내려온 보고는 의원에게 가기 전에 그녀의 손을 거친다.",
+    "관직": "직함 의원 집안 후계. 직위 의원 집안 후계 · 4.19민주묘지역. 품계 후계. 일하는 역 4.19민주묘지역."
+  },
+  "values": {
+    "권위": 60,
+    "개방": -20,
+    "무력": 15,
+    "물질": 35,
+    "공동": -20,
+    "원칙": -25,
+    "공개": -55,
+    "자격": 15,
+    "분산": -50,
+    "변혁": -10
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": 10,
+    "위험": -10,
+    "과시": -30,
+    "지속": 0,
+    "지향": "무성향",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0376",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "라진우",
+        "type": "지휘",
+        "to": "라세영",
+        "basis": "강북구 국회의원 라세영의 직속"
+      },
+      {
+        "from": "라진우",
+        "type": "맹세",
+        "to": "라세영",
+        "basis": "묘역 장부 맨 앞장에 라세영의 의석을 지키겠다는 맹세를 손수 적었다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "라세영",
+        "type": "맹세",
+        "to": "라진우",
+        "basis": "의원 집안 후계와 사망 신고 장부를 함께 확인하는 사이"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K325",
+    "name": "라세영",
+    "courtId": "court:K325",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
-      },
-      "strategy": {
-        "base": 6,
-        "effective": 6
-      },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
+      "diplomacy": {
         "base": 10,
         "effective": 10
       },
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 9,
+        "effective": 9
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
       "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
         "base": 6,
         "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "stock-recording",
-        "name": {
-          "ko": "출고 기록",
-          "en": "Dispatch recording"
-        },
-        "rating": 60
+        "id": "p0376-plots",
+        "name": "묘역 자리 기재",
+        "rating": 61
       }
     ],
     "traits": [
       {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "흔적 보존",
-          "en": "Preserves traces"
-        },
-        "description": {
-          "ko": "화재에서 인명 장부를 구조하고 동부 군량 출고를 기록한다. 비공개 배급을 의심하지만 공개를 일반 원칙으로 삼았다는 근거는 없다.",
-          "en": "Rescues the register of people and records eastern military dispatches. Questions hidden rations without evidence of universal disclosure principles."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 흔적 보존을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "기록 소실 때 출고 흔적 확인에 매달릴 수 있다.",
-          "en": "May concentrate on dispatch traces when records disappear."
-        },
-        "relationship": {
-          "ko": "전나경과 열쇠를 나누며 남윤경의 비공개 배급을 의심한다.",
-          "en": "Shares keys with Jeon Nagyeong and questions Nam Yungyeong’s hidden rations."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "전나경과 열쇠를 나누며 남윤경의 비공개 배급을 의심한다.",
-          "en": "Shares keys with Jeon Nagyeong and questions Nam Yungyeong’s hidden rations."
-        },
+        "id": "p0376-trait-1",
+        "name": "묘역의 장부",
+        "description": "죽은 사람의 자리를 산 사람의 자리만큼 엄격히 따진다.",
+        "behavior": "묘역 자리 번호와 사망 말소 칸을 손수 맞춘다.",
+        "stress": "자리 번호가 틀린 묘를 알게 되면 잠을 이루지 못한다.",
+        "relationship": "라세영은 그녀를 집안의 기억이라 부른다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "화재에서 인명 장부를 구조하고 동부 군량 출고를 기록한다. 비공개 배급을 의심하지만 공개를 일반 원칙으로 삼았다는 근거는 없다.",
-      "en": "Rescues the register of people and records eastern military dispatches. Questions hidden rations without evidence of universal disclosure principles."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -420,97 +181,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b77c-ae08-c131-7f85",
-    "name": "금성 라씨",
-    "crest": "clan-crests/b77c-ae08-c131-7f85.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": 35,
-    "무력": -20,
-    "물질": 40,
-    "공동": -25,
-    "원칙": -45,
-    "공개": -30,
-    "자격": 0,
-    "분산": 0,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": 10,
-    "위험": -10,
-    "과시": -30,
-    "지속": 0,
-    "지향": "무성향",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "교구 명부 보관·선거 보좌",
-    "소속": "명동대교구 (명동역)",
-    "품계": "부제",
-    "직함": "교구 명부 보관 부제",
-    "가치관": "권위 15 | 개방 35 | 무력 −20 | 물질 40 | 공동 −25 | 원칙 −45 | 공개 −30 | 자격 0 | 분산 0 | 변혁 10",
-    "욕망": "갈망 15 | 독점 10 | 위험 −10 | 과시 −30 | 지속 0 | 지향 무성향 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2066-04-24에 태어난 라진우는 영구 겨울의 명동역 교구청에서 교구 명부 보관 부제 일을 맡는다. 교구 명부 보관·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 라진우는 명동 행정동의 명동역 교구청에서 교구 명부 보관 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 부제. 직함은 교구 명부 보관 부제. 교구 명부 보관·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
-    "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.",
-    "관계": "남윤경의 비공개 비상배급을 의심하고, 배우진의 동부 군량 출고를 기록하며, 전나경과 열쇠를 나눈다.",
-    "야망": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
-    "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
-    "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
-  },
-  "biography": "라진우는 교구 명부 보관 부제 업무에서 교구 명부 보관·선거 보좌 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 교구 명부 보관·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 교구 명부 보관 부제\n**생애.** 2066-04-24에 태어난 라진우는 영구 겨울의 명동역 교구청에서 교구 명부 보관 부제 일을 맡는다. 교구 명부 보관·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 라진우는 명동 행정동의 명동역 교구청에서 교구 명부 보관 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 부제. 직함은 교구 명부 보관 부제. 교구 명부 보관·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.\n\n**관계.** 남윤경의 비공개 비상배급을 의심하고, 배우진의 동부 군량 출고를 기록하며, 전나경과 열쇠를 나눈다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 35 | 무력 −20 | 물질 40 | 공동 −25 | 원칙 −45 | 공개 −30 | 자격 0 | 분산 0 | 변혁 10\n- 욕망: 갈망 15 | 독점 10 | 위험 −10 | 과시 −30 | 지속 0 | 지향 무성향 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-15"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "라진우",
-        "type": "지휘",
-        "to": "남윤경",
-        "basis": "비공개 비상배급 창고를 지킴"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "동미온",
-        "type": "계약",
-        "to": "라진우",
-        "basis": "라진우의 재고 칸에 파렛트 번호를 맞추는 계약이고"
-      },
-      {
-        "from": "수한별",
-        "type": "지휘",
-        "to": "라진우",
-        "basis": "라진우의 창고 순번을 막대로 돌리는 지휘를 받고"
-      },
-      {
-        "from": "원주온",
-        "type": "계약",
-        "to": "라진우",
-        "basis": "라진우에게 우회 실측을 넘기고"
-      },
-      {
-        "from": "판효담",
-        "type": "지휘",
-        "to": "라진우",
-        "basis": "라진우의 재고 원장을 기지에서 집행하고"
-      },
-      {
-        "from": "범채온",
-        "type": "계약",
-        "to": "라진우",
-        "basis": "라진우의 재고 원장과 인파 줄을 나누고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

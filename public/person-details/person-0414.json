@@ -1,494 +1,108 @@
 {
   "id": "person-0414",
   "name": "원초온",
-  "title": "수서 차량기지 당직장",
-  "position": "수서 차량기지 당직장",
+  "title": "정비공",
+  "position": "정비공 · 수서역",
   "characterId": "K413",
-  "rank": "미등록",
+  "rank": "정비공",
   "commonTier": "T5",
-  "occupation": "차량정비소 당직 명부·출고 시각 게시",
+  "occupation": "이식 정비",
   "gender": "여성",
   "stage": "S2",
-  "state": "S16",
-  "stateName": "정동노총",
-  "sourceRoute": "/world/Cast-State-16#인물-원초온",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0414",
   "birthDate": "2088-04-18",
   "birthday": "04-18",
   "age": 38,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-16.json#/content/171"
-  ],
-  "familyTree": {
-    "personId": "K413",
-    "nodes": [
-      {
-        "id": "K413",
-        "personId": "K413",
-        "kind": "person",
-        "name": "원초온",
-        "birthDate": "2088-04-18",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K413"
-          },
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원초온-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 시청역 조합 차량정비소 당직장 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-원초온-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0414"
-      },
-      {
-        "id": "FH-K413-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "원승수",
-        "lineage": {
-          "surname": "원",
-          "bongwan": "원주",
-          "clan": "c6d0-c6d0-c8fc-agreed-c628-second"
-        },
-        "birthDate": "2058-04-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원초온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2096,
-            "summary": "원승수는 신정 차량기지에서 차량정비소 당직 명부·출고 시각 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-원초온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K413-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "원승은",
-        "lineage": {
-          "surname": "원",
-          "bongwan": "원주",
-          "clan": "c6d0-c6d0-c8fc-agreed-c628-second"
-        },
-        "birthDate": "2028-04-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원초온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2066,
-            "summary": "원승은은 신정 차량기지에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-원초온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K413-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "원승연",
-        "lineage": {
-          "surname": "원",
-          "bongwan": "원주",
-          "clan": "c6d0-c6d0-c8fc-agreed-c628-second"
-        },
-        "birthDate": "1998-04-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원초온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "원승연은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-원초온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K413-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한준범",
-        "birthDate": "2058-04-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원초온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2096,
-            "summary": "한준범은 신정 차량기지에서 차량정비소 당직 명부·출고 시각 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-원초온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K413-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강준범",
-        "birthDate": "2028-04-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원초온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2066,
-            "summary": "강준범은 신정 차량기지에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-원초온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K413-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "임준찬",
-        "birthDate": "1998-04-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원초온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임준찬은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-원초온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K413-P-01:K413:biological",
-        "from": "FH-K413-P-01",
-        "to": "K413",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원초온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K413-P-02:FH-K413-P-01:biological",
-        "from": "FH-K413-P-02",
-        "to": "FH-K413-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원초온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K413-P-03:FH-K413-P-02:biological",
-        "from": "FH-K413-P-03",
-        "to": "FH-K413-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원초온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K413-M-01:K413:biological",
-        "from": "FH-K413-M-01",
-        "to": "K413",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원초온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K413-M-02:FH-K413-M-01:biological",
-        "from": "FH-K413-M-02",
-        "to": "FH-K413-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원초온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K413-M-03:FH-K413-M-02:biological",
-        "from": "FH-K413-M-03",
-        "to": "FH-K413-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-원초온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c6d0-c6d0-c8fc",
+    "name": "원주 원씨",
+    "crest": "clan-crests/c6d0-c6d0-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "옛 차량기지의 당직 명부를 넘겨받던 일을 그만두고 원초온이 수서역 정비대에 든 것은 세 해 전, 서른다섯 살 때였다. 깊은 층에서 식은 부위를 다시 데우는 손을 처음에는 정비장 은보람에게서 배웠고, 은보람이 호위장으로 간 뒤로는 새 정비장 황노을 곁에서 마저 익힌다. 명부 쓰던 버릇대로 그날 연 이음매를 같은 장에 차례로 적는다. 하나뿐인 첫째 부위를 받은 것도 정비대에 든 그해였다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "정비공",
+    "품계": "정비공",
+    "생업": "이식 정비",
+    "일하는 역": "수서역",
+    "잠자는 역": "수서역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "옛 차량기지의 당직 명부를 넘겨받던 일을 그만두고 원초온이 수서역 정비대에 든 것은 세 해 전, 서른다섯 살 때였다. 깊은 층에서 식은 부위를 다시 데우는 손을 처음에는 정비장 은보람에게서 배웠고, 은보람이 호위장으로 간 뒤로는 새 정비장 황노을 곁에서 마저 익힌다. 명부 쓰던 버릇대로 그날 연 이음매를 같은 장에 차례로 적는다. 하나뿐인 첫째 부위를 받은 것도 정비대에 든 그해였다.",
+    "관직": "직함 정비공. 직위 정비공 · 수서역. 품계 정비공. 일하는 역 수서역."
+  },
+  "values": {
+    "권위": 0,
+    "개방": 25,
+    "무력": -15,
+    "물질": -40,
+    "공동": 40,
+    "원칙": 10,
+    "공개": -15,
+    "자격": -20,
+    "분산": 10,
+    "변혁": 60
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": -10,
+    "위험": 15,
+    "과시": 20,
+    "지속": 30,
+    "지향": "이성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0414",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 9,
-        "effective": 9
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "management": {
-        "base": 11,
-        "effective": 11
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "insight": {
-        "base": 10,
-        "effective": 10
+      "stewardship": {
+        "base": 7,
+        "effective": 7
+      },
+      "intrigue": {
+        "base": 6,
+        "effective": 6
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 11,
+        "effective": 11
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
       }
     },
-    "skills": [
-      {
-        "id": "duty-dispatch-posting",
-        "name": {
-          "ko": "당직 출고 시각 게시",
-          "en": "Duty and dispatch posting"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "교대 시각 중시",
-          "en": "Prioritizes shift times"
-        },
-        "description": {
-          "ko": "당직 명과 출고 시각을 함께 게시하고 시험 서명 없는 무장 접근을 막는다. 비공개 파견 줄의 존재를 기록하지만 해결은 미확인이다.",
-          "en": "Posts duty names and dispatch times together and blocks armed access without test signatures. Records a private dispatch line without a documented resolution."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 교대 시각 중시을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "비공개 파견 앞에서 출고를 보류할 수 있다.",
-          "en": "May withhold dispatch over private deployments."
-        },
-        "relationship": {
-          "ko": "수늘결과 당직을 나누고 은보람의 게시판을 우선 둔다.",
-          "en": "Shares duty with Su Neulgyeol and gives Eun Boram’s postings priority."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "시청역 조합 차량정비소를 독립 조합국 고유 거점으로 남겨 강국 호위병이 유치선에 서는 관행을 끊는다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "기지 당직이 인질 파견의 발판이 되어 은보람의 공개 시험이 내부에서 깨지는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "수늘결과 당직을 나누고 은보람의 게시판을 우선 둔다.",
-          "en": "Shares duty with Su Neulgyeol and gives Eun Boram’s postings priority."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "당직 명과 출고 시각을 함께 게시하고 시험 서명 없는 무장 접근을 막는다. 비공개 파견 줄의 존재를 기록하지만 해결은 미확인이다.",
-      "en": "Posts duty names and dispatch times together and blocks armed access without test signatures. Records a private dispatch line without a documented resolution."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -498,7 +112,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -524,85 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c6d0-c6d0-c8fc",
-    "name": "원주 원씨",
-    "crest": "clan-crests/c6d0-c6d0-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -25,
-    "개방": 40,
-    "무력": -25,
-    "물질": 10,
-    "공동": 20,
-    "원칙": 20,
-    "공개": 30,
-    "자격": 15,
-    "분산": 40,
-    "변혁": 15
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": -10,
-    "위험": 15,
-    "과시": 20,
-    "지속": 30,
-    "지향": "이성",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "차량정비소 당직 명부·출고 시각 게시",
-    "소속": "정동노총",
-    "공동체 역할": "조합원",
-    "직무": "시청역 조합 차량정비소 당직장",
-    "가치관": "권위 −25 | 개방 40 | 무력 −25 | 물질 10 | 공동 20 | 원칙 20 | 공개 30 | 자격 15 | 분산 40 | 변혁 15",
-    "욕망": "갈망 10 | 독점 −10 | 위험 15 | 과시 20 | 지속 30 | 지향 이성 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2088-04-18에 태어난 원초온은 영구 겨울의 시청역 조합 작업장에서 시청역 조합 차량정비소 당직장 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 원초온은 소공동의 시청역 조합 작업장에서 시청역 조합 차량정비소 당직장 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "직무": "공동체 역할은 조합원이며 직무는 시청역 조합 차량정비소 당직장이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.",
-    "일화": "마곡이 수질 검사 인력을 요청하자 비공개 파견 명단이 기지 출고 칠판에 한 줄 먼저 적혀 있었다.",
-    "관계": "원초온의 기존 관계 기록은 다음과 같다. 수늘결의 정비 창과 당직을 나누고, 은보람의 추천 게시판을 칠판 맨 위에 둔다. 임초원을 파견 후보가 아닌 공동 심사관으로 부르려 한다.",
-    "목표": "원초온은 시청역 조합 차량정비소 당직장 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.",
-    "공포": "시청역 조합 차량정비소 당직장 업무의 서명이나 인계 기록이 바뀌어 원초온의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.",
-    "개입": "원초온은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다."
-  },
-  "biography": "원초온은 영구 겨울의 시청역 조합 작업장에서 시청역 조합 차량정비소 당직장 업무 기록과 공개 표결 서명을 먼저 대조한다. 급수·통행·계약 일정이 겹치는 날에는 접수 시각과 인계 순서를 같은 장부에 남긴다.\n\n- 생업: 차량정비소 당직 명부·출고 시각 게시\n- 소속: 정동노총\n- 공동체 역할: 조합원\n- 직무: 시청역 조합 차량정비소 당직장\n**생애.** 2088-04-18에 태어난 원초온은 영구 겨울의 시청역 조합 작업장에서 시청역 조합 차량정비소 당직장 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 원초온은 소공동의 시청역 조합 작업장에서 시청역 조합 차량정비소 당직장 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**직무.** 공동체 역할은 조합원이며 직무는 시청역 조합 차량정비소 당직장이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.\n\n**일화.** 마곡이 수질 검사 인력을 요청하자 비공개 파견 명단이 기지 출고 칠판에 한 줄 먼저 적혀 있었다.\n\n**관계.** 원초온의 기존 관계 기록은 다음과 같다. 수늘결의 정비 창과 당직을 나누고, 은보람의 추천 게시판을 칠판 맨 위에 둔다. 임초원을 파견 후보가 아닌 공동 심사관으로 부르려 한다.\n\n**목표.** 원초온은 시청역 조합 차량정비소 당직장 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.\n\n**공포.** 시청역 조합 차량정비소 당직장 업무의 서명이나 인계 기록이 바뀌어 원초온의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.\n\n**개입.** 원초온은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 40 | 무력 −25 | 물질 10 | 공동 20 | 원칙 20 | 공개 30 | 자격 15 | 분산 40 | 변혁 15\n- 욕망: 갈망 10 | 독점 −10 | 위험 15 | 과시 20 | 지속 30 | 지향 이성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-16"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "원초온",
-        "type": "계약",
-        "to": "은보람",
-        "basis": "은보람의 추천 게시판을 칠판 맨 위에 둔다"
-      },
-      {
-        "from": "원초온",
-        "type": "계약",
-        "to": "수늘결",
-        "basis": "수늘결의 정비 창과 당직을 나누고"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "수늘결",
-        "type": "사제",
-        "to": "원초온",
-        "basis": "원초온의 기지 당직과 공구를 나눈다"
-      },
-      {
-        "from": "초진솔",
-        "type": "맹세",
-        "to": "원초온",
-        "basis": "원초온의 기지 당직 칠판과 증언을 겹치고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

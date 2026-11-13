@@ -3,27 +3,27 @@
   "personId": "person-0275",
   "characterId": "K274",
   "name": "서진아",
-  "stateId": "S11",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "강남역 사택 감사"
+    "role": "서초4동 대피소장 · 아크"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short side-parted hair combed neatly",
-    "upper": "dove grey plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer",
-    "outfit": "dove grey plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer",
+    "upper": "몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 사선 무늬의 서초 곁집 띠",
+    "outfit": "몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 사선 무늬의 서초 곁집 띠",
     "palette": [
-      "dove grey",
-      "olive drab",
-      "sand beige"
+      "dark brown",
+      "oxblood",
+      "dove grey"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "olive drab straight wool trousers",
+    "lower": "dark straight wool trousers",
     "footwear": "leather ankle boots",
-    "accessories": "duty whistle on a cord lanyard"
+    "accessories": "cloth-bound shelter register on a cord"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "dove grey plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer",
+        "value": "몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 사선 무늬의 서초 곁집 띠",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "olive drab straight wool trousers",
+        "value": "dark straight wool trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
         "value": "leather ankle boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "buttoned stand collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "duty whistle on a cord lanyard",
+        "value": "cloth-bound shelter register on a cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull brass",
+        "value": "faded brown cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, cord",
+        "value": "cloth, paper, cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "lanyard around the neck",
+        "value": "cord over the shoulder",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small flat book",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 서진아, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; upturned almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: fair with a neutral undertone. upper garment: dove grey plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: dove grey, olive drab, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 서진아, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; upturned almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: fair with a neutral undertone. upper garment: 몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 사선 무늬의 서초 곁집 띠; neckline: buttoned stand collar. accessories: cloth-bound shelter register on a cord; worn as cord over the shoulder. color palette: dark brown, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 서진아, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; upturned almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: dove grey plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: olive drab straight wool trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: dove grey, olive drab, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 서진아, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; upturned almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: 몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 사선 무늬의 서초 곁집 띠; neckline: buttoned stand collar; lower garment: dark straight wool trousers; footwear: leather ankle boots. accessories: cloth-bound shelter register on a cord; worn as cord over the shoulder. color palette: dark brown, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 서진아, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; upturned almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: dove grey plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: olive drab straight wool trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: dove grey, olive drab, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 서진아, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; upturned almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: 몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 사선 무늬의 서초 곁집 띠; neckline: buttoned stand collar; lower garment: dark straight wool trousers; footwear: leather ankle boots. accessories: cloth-bound shelter register on a cord; worn as cord over the shoulder. color palette: dark brown, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 서진아, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; upturned almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: dove grey plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: olive drab straight wool trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: dove grey, olive drab, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 서진아, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; upturned almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: 몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 사선 무늬의 서초 곁집 띠; neckline: buttoned stand collar; lower garment: dark straight wool trousers; footwear: leather ankle boots. accessories: cloth-bound shelter register on a cord; worn as cord over the shoulder. color palette: dark brown, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 서진아, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; upturned almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: dove grey plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: olive drab straight wool trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: dove grey, olive drab, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 서진아, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; upturned almond dark brown eyes; softly arched eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; black hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: 몸에 맞춘 짙은 모직 외투, 부위 자리에 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄, 위팔에 붉은 바탕 사선 무늬의 서초 곁집 띠; neckline: buttoned stand collar; lower garment: dark straight wool trousers; footwear: leather ankle boots. accessories: cloth-bound shelter register on a cord; worn as cord over the shoulder. color palette: dark brown, oxblood, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

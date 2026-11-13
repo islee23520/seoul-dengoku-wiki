@@ -3,27 +3,27 @@
   "personId": "person-0820",
   "characterId": "K820",
   "name": "박별윤",
-  "stateId": "S13",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "처방 서기"
+    "role": "경찰관 · 미아사거리역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short wavy hair",
-    "upper": "cream cotton coat over a knitted wool sweater",
-    "outfit": "cream cotton coat over a knitted wool sweater",
+    "upper": "반사 띠를 꿰맨 남색 누빔 외투, 대합실 순찰 때는 앞섶을 풀어 안의 누빔 조끼가 보이게 입은 것",
+    "outfit": "반사 띠를 꿰맨 남색 누빔 외투, 대합실 순찰 때는 앞섶을 풀어 안의 누빔 조끼가 보이게 입은 것",
     "palette": [
-      "cream",
-      "burgundy",
-      "charcoal"
+      "navy",
+      "reflective silver",
+      "grey"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "burgundy wool breeches with buttoned cuffs",
-    "footwear": "laced leather walking shoes",
-    "accessories": "canvas medical satchel without markings"
+    "lower": "navy quilted trousers",
+    "footwear": "synthetic rubber boots",
+    "accessories": "police rank insignia on the shoulder and a whistle on a cord"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "knitted ear-flap cap under a hood",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "cream cotton coat over a knitted wool sweater",
+        "value": "반사 띠를 꿰맨 남색 누빔 외투, 대합실 순찰 때는 앞섶을 풀어 안의 누빔 조끼가 보이게 입은 것",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "burgundy wool breeches with buttoned cuffs",
+        "value": "navy quilted trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "open coat collar over a rolled sweater neck",
+        "value": "stand-up quilted collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "canvas medical satchel without markings",
+        "value": "police rank insignia on the shoulder and a whistle on a cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat rectangular satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "undyed canvas and brown leather",
+        "value": "silver-grey insignia and dull steel whistle",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "canvas, leather",
+        "value": "metal, cloth, cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the shoulder",
+        "value": "insignia sewn on the shoulder; whistle hung from the neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small shoulder badge and a short tube whistle",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 박별윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: medium warm beige. upper garment: cream cotton coat over a knitted wool sweater; neckline: open coat collar over a rolled sweater neck. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, burgundy, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 박별윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: medium warm beige. headwear: knitted ear-flap cap under a hood; upper garment: 반사 띠를 꿰맨 남색 누빔 외투, 대합실 순찰 때는 앞섶을 풀어 안의 누빔 조끼가 보이게 입은 것; neckline: stand-up quilted collar. accessories: police rank insignia on the shoulder and a whistle on a cord; worn as insignia sewn on the shoulder; whistle hung from the neck. color palette: navy, reflective silver, grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 박별윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: medium warm beige; average adult male height. upper garment: cream cotton coat over a knitted wool sweater; neckline: open coat collar over a rolled sweater neck; lower garment: burgundy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, burgundy, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 박별윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: medium warm beige; average adult male height. headwear: knitted ear-flap cap under a hood; upper garment: 반사 띠를 꿰맨 남색 누빔 외투, 대합실 순찰 때는 앞섶을 풀어 안의 누빔 조끼가 보이게 입은 것; neckline: stand-up quilted collar; lower garment: navy quilted trousers; footwear: synthetic rubber boots. accessories: police rank insignia on the shoulder and a whistle on a cord; worn as insignia sewn on the shoulder; whistle hung from the neck. color palette: navy, reflective silver, grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 박별윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: medium warm beige; average adult male height. upper garment: cream cotton coat over a knitted wool sweater; neckline: open coat collar over a rolled sweater neck; lower garment: burgundy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, burgundy, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 박별윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: medium warm beige; average adult male height. headwear: knitted ear-flap cap under a hood; upper garment: 반사 띠를 꿰맨 남색 누빔 외투, 대합실 순찰 때는 앞섶을 풀어 안의 누빔 조끼가 보이게 입은 것; neckline: stand-up quilted collar; lower garment: navy quilted trousers; footwear: synthetic rubber boots. accessories: police rank insignia on the shoulder and a whistle on a cord; worn as insignia sewn on the shoulder; whistle hung from the neck. color palette: navy, reflective silver, grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 박별윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: medium warm beige; average adult male height. upper garment: cream cotton coat over a knitted wool sweater; neckline: open coat collar over a rolled sweater neck; lower garment: burgundy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, burgundy, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 박별윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: medium warm beige; average adult male height. headwear: knitted ear-flap cap under a hood; upper garment: 반사 띠를 꿰맨 남색 누빔 외투, 대합실 순찰 때는 앞섶을 풀어 안의 누빔 조끼가 보이게 입은 것; neckline: stand-up quilted collar; lower garment: navy quilted trousers; footwear: synthetic rubber boots. accessories: police rank insignia on the shoulder and a whistle on a cord; worn as insignia sewn on the shoulder; whistle hung from the neck. color palette: navy, reflective silver, grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 박별윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: medium warm beige; average adult male height. upper garment: cream cotton coat over a knitted wool sweater; neckline: open coat collar over a rolled sweater neck; lower garment: burgundy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, burgundy, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 박별윤, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short wavy hair; black hair; short length. build: average; skin: medium warm beige; average adult male height. headwear: knitted ear-flap cap under a hood; upper garment: 반사 띠를 꿰맨 남색 누빔 외투, 대합실 순찰 때는 앞섶을 풀어 안의 누빔 조끼가 보이게 입은 것; neckline: stand-up quilted collar; lower garment: navy quilted trousers; footwear: synthetic rubber boots. accessories: police rank insignia on the shoulder and a whistle on a cord; worn as insignia sewn on the shoulder; whistle hung from the neck. color palette: navy, reflective silver, grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

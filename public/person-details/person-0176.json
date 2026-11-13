@@ -1,588 +1,116 @@
 {
   "id": "person-0176",
   "name": "미콜라 본다렌코",
-  "title": "용산창 제동 정비사 · 용산구 영주",
-  "position": "용산창 제동 정비사 · 용산구 영주",
+  "title": "펌프 정비공",
+  "position": "펌프 정비공 · 용산역",
   "characterId": "K175",
-  "rank": "영주",
-  "commonTier": "T3",
-  "occupation": "출고 전 제동 두께 점검·부품 검수",
+  "rank": "등재민",
+  "commonTier": "T5",
+  "occupation": "펌프 정비",
   "gender": "남성",
   "stage": "S2",
-  "state": "S07",
-  "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-미콜라 본다렌코",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0176",
   "birthDate": "2099-08-02",
   "birthday": "08-02",
   "age": 27,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-07.json#/content/83",
-    "lore/characters/Cast-State-07.json#/content/85",
-    "lore/characters/Cast-State-07.json#/content/86"
-  ],
-  "familyTree": {
-    "personId": "K175",
-    "nodes": [
-      {
-        "id": "K175",
-        "personId": "K175",
-        "kind": "person",
-        "name": "미콜라 본다렌코",
-        "birthDate": "2099-08-02",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K175"
-          },
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-미콜라-본다렌코-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 용산창 제동 정비사 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-미콜라-본다렌코-list2"
-              }
-            ]
-          }
-        ],
-        "nameEn": "Mykola Bondarenko",
-        "detailRoute": "/people/person-0176"
-      },
-      {
-        "id": "FH-K175-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "페트로 본다렌코",
-        "birthDate": "2069-08-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-미콜라-본다렌코-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2107,
-            "summary": "페트로 본다렌코는 2069년에 태어났다. 동대문·용산 민간 운송 생활권의 가족 기록과 작업 사본을 읽으며 자랐고, 2087년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-미콜라-본다렌코-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Petro Bondarenko was born in 2069 and grew up reading family and work records. From 2087, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Petro Bondarenko",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K175-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이반 본다렌코",
-        "birthDate": "2039-08-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-미콜라-본다렌코-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "이반 본다렌코는 2039년에 태어났다. 동대문·용산 민간 운송 생활권의 가족 기록과 작업 사본을 읽으며 자랐고, 2057년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-미콜라-본다렌코-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Ivan Bondarenko was born in 2039 and grew up reading family and work records. From 2057, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Ivan Bondarenko",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K175-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "보흐단 본다렌코",
-        "birthDate": "2009-08-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-미콜라-본다렌코-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2027,
-            "summary": "보흐단 본다렌코는 2009년에 태어났다. 동대문·용산 민간 운송 생활권의 가족 기록과 작업 사본을 읽으며 자랐고, 2027년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-미콜라-본다렌코-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Bohdan Bondarenko was born in 2009 and grew up reading family and work records. From 2027, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Bohdan Bondarenko",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K175-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "옥사나 트카첸코",
-        "birthDate": "2069-08-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-미콜라-본다렌코-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2107,
-            "summary": "옥사나 트카첸코는 2069년에 태어났다. 동대문·용산 민간 운송 생활권의 가족 기록과 작업 사본을 읽으며 자랐고, 2087년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-미콜라-본다렌코-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Oksana Tkachenko was born in 2069 and grew up reading family and work records. From 2087, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Oksana Tkachenko",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K175-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "카테리나 트카첸코",
-        "birthDate": "2039-08-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-미콜라-본다렌코-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "카테리나 트카첸코는 2039년에 태어났다. 동대문·용산 민간 운송 생활권의 가족 기록과 작업 사본을 읽으며 자랐고, 2057년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-미콜라-본다렌코-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Kateryna Tkachenko was born in 2039 and grew up reading family and work records. From 2057, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Kateryna Tkachenko",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K175-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "할리나 트카첸코",
-        "birthDate": "2009-08-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-미콜라-본다렌코-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2027,
-            "summary": "할리나 트카첸코는 2009년에 태어났다. 동대문·용산 민간 운송 생활권의 가족 기록과 작업 사본을 읽으며 자랐고, 2027년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-미콜라-본다렌코-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Halyna Tkachenko was born in 2009 and grew up reading family and work records. From 2027, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Halyna Tkachenko",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K175-P-04",
-        "personId": null,
-        "kind": "historical",
-        "name": "바실 본다렌코",
-        "nameEn": "Vasyl Bondarenko",
-        "birthDate": "1979-08-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K175-P-04"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "바실 본다렌코는 2030년 대정전 당시 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "summaryEn": "Vasyl Bondarenko was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/cast-family-trees.json",
-                "anchor": "FH-K175-P-04"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K175-M-04",
-        "personId": null,
-        "kind": "historical",
-        "name": "올레나 트카첸코",
-        "nameEn": "Olena Tkachenko",
-        "birthDate": "1979-08-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K175-M-04"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "올레나 트카첸코는 2030년 대정전 당시 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "summaryEn": "Olena Tkachenko was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/cast-family-trees.json",
-                "anchor": "FH-K175-M-04"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K175-P-01:K175:biological",
-        "from": "FH-K175-P-01",
-        "to": "K175",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-미콜라-본다렌코-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K175-P-02:FH-K175-P-01:biological",
-        "from": "FH-K175-P-02",
-        "to": "FH-K175-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-미콜라-본다렌코-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K175-P-03:FH-K175-P-02:biological",
-        "from": "FH-K175-P-03",
-        "to": "FH-K175-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-미콜라-본다렌코-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K175-M-01:K175:biological",
-        "from": "FH-K175-M-01",
-        "to": "K175",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-미콜라-본다렌코-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K175-M-02:FH-K175-M-01:biological",
-        "from": "FH-K175-M-02",
-        "to": "FH-K175-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-미콜라-본다렌코-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K175-M-03:FH-K175-M-02:biological",
-        "from": "FH-K175-M-03",
-        "to": "FH-K175-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-미콜라-본다렌코-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K175-P-04:FH-K175-P-03:biological",
-        "from": "FH-K175-P-04",
-        "to": "FH-K175-P-03",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K175-P-04"
-          }
-        ]
-      },
-      {
-        "id": "FH-K175-M-04:FH-K175-M-03:biological",
-        "from": "FH-K175-M-04",
-        "to": "FH-K175-M-03",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K175-M-04"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": null,
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "용산구 의원 집안 계층에 기재돼 용산역 깊은 층에서 자며, 의원 집안 창고를 데우는 열 배관과 배수 펌프를 손본다. 새 부품 상자를 받으면 쓰기 전에 한 번 더 뜯어 살펴보는 버릇이 있다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "펌프 정비공",
+    "품계": "등재민",
+    "생업": "펌프 정비",
+    "일하는 역": "용산역",
+    "잠자는 역": "용산역",
+    "가구": "혼자 사는 가구"
   },
-  "proseContacts": [],
+  "sections": {
+    "생애": "용산구 의원 집안 계층에 기재돼 용산역 깊은 층에서 자며, 의원 집안 창고를 데우는 열 배관과 배수 펌프를 손본다. 새 부품 상자를 받으면 쓰기 전에 한 번 더 뜯어 살펴보는 버릇이 있다.",
+    "관직": "직함 펌프 정비공. 직위 펌프 정비공 · 용산역. 품계 등재민. 일하는 역 용산역."
+  },
+  "values": {
+    "권위": 60,
+    "개방": -25,
+    "무력": 20,
+    "물질": 15,
+    "공동": -10,
+    "원칙": 15,
+    "공개": -50,
+    "자격": 70,
+    "분산": -60,
+    "변혁": -10
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": -10,
+    "위험": -30,
+    "과시": 20,
+    "지속": -20,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0176",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "미콜라 본다렌코",
+        "type": "지휘",
+        "to": "박태겸",
+        "basis": "용산구 국회의원 박태겸의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K169",
+    "name": "박태겸",
+    "courtId": "court:K169",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
+      "diplomacy": {
+        "base": 5,
+        "effective": 5
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
       "learning": {
-        "base": 12,
-        "effective": 12
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
       }
     },
-    "skills": [
-      {
-        "id": "brake-inspection",
-        "name": {
-          "ko": "제동 점검",
-          "en": "Brake inspection"
-        },
-        "rating": 75
-      },
-      {
-        "id": "pump-repair",
-        "name": {
-          "ko": "펌프 수리",
-          "en": "Pump repair"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k175-disposition",
-        "name": {
-          "ko": "검수 없는 부품 거부",
-          "en": "Rejecting untested parts"
-        },
-        "description": {
-          "ko": "제동 마모로 야간 운행 거리를 읽고, 공구함 뚜껑을 열어 두는 도제를 교대에서 뺀다. 말수는 적고 시운전 소음으로 대답한다.",
-          "en": "He read night-run distance from brake wear and struck from the rotation any apprentice who left the tool box open. Few of words, he answered with trial-run noise."
-        },
-        "behavior": {
-          "ko": "관직. 품계 주사. 직함은 용산창 제동 정비사. 출고 전 제동 두께를 칠판에 쓰고, 창동 시험 도장 없는 부품은 달지 않는다.",
-          "en": "Office. Rank: registrar. Title: Yongsan warehouse brake mechanic. He wrote the brake thickness on the chalkboard before release and fitted no part without the Changdong trial stamp."
-        },
-        "stress": {
-          "ko": "공포. 가문 창고의 환적 독점이 제동 부품까지 잠가 억류 열차가 창에 박히는 것.",
-          "en": "Fear. That the house warehouse's transshipment monopoly would lock even the brake parts and the detained train would be nailed into the warehouse."
-        },
-        "relationship": {
-          "ko": "관계. 아이작 워커의 정비 일지를 현장에서 집행하는 사제이고, 박태겸의 도제 경로를 창에서 받치며, 이홍원의 교환 수련 규격을 검수한다.",
-          "en": "Relations. An apprentice executing Isaac Walker's maintenance logs in the field, he backed Park Taegyeom's apprentice route at the warehouse and inspected I Hongwon's exchange-training standards."
-        },
-        "effects": []
-      },
-      {
-        "id": "k175-choice",
-        "name": {
-          "ko": "공구 규율",
-          "en": "Tool discipline"
-        },
-        "description": {
-          "ko": "일화. 2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다. 이 일로 용산창 제동 정비사 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In 2125 he dismantled a stopped pump, replaced a single worn shaft, and ran it again. By this deed the signature of the Yongsan warehouse brake mechanic post rose into the ledger."
-        },
-        "behavior": {
-          "ko": "관계. 아이작 워커의 정비 일지를 현장에서 집행하는 사제이고, 박태겸의 도제 경로를 창에서 받치며, 이홍원의 교환 수련 규격을 검수한다.",
-          "en": "Relations. An apprentice executing Isaac Walker's maintenance logs in the field, he backed Park Taegyeom's apprentice route at the warehouse and inspected I Hongwon's exchange-training standards."
-        },
-        "stress": {
-          "ko": "공포. 가문 창고의 환적 독점이 제동 부품까지 잠가 억류 열차가 창에 박히는 것.",
-          "en": "Fear. That the house warehouse's transshipment monopoly would lock even the brake parts and the detained train would be nailed into the warehouse."
-        },
-        "relationship": {
-          "ko": "관계. 아이작 워커의 정비 일지를 현장에서 집행하는 사제이고, 박태겸의 도제 경로를 창에서 받치며, 이홍원의 교환 수련 규격을 검수한다.",
-          "en": "Relations. An apprentice executing Isaac Walker's maintenance logs in the field, he backed Park Taegyeom's apprentice route at the warehouse and inspected I Hongwon's exchange-training standards."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "마모 축 하나를 교체해 펌프를 복구했고 제동 두께와 교환 수련 규격을 점검한다. 개별 수리와 반복 검수의 근거를 전투 기량으로 옮기지 않았다.",
-      "en": "He restored a pump by replacing one worn shaft and checks brake thickness and exchange standards. Repair and inspection evidence does not become combat prowess."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -620,176 +148,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-gu-11170-S07",
-      "name": {
-        "ko": "용산구 공작령 직영지"
-      },
-      "holderPersonId": "K175",
-      "directLiegePersonId": "K144",
-      "stateId": "S07",
-      "adminRefs": [
-        {
-          "id": "region:1117053000",
-          "name": "남영동"
-        },
-        {
-          "id": "region:1117055500",
-          "name": "청파동"
-        },
-        {
-          "id": "region:1117056000",
-          "name": "원효로1동"
-        },
-        {
-          "id": "region:1117057000",
-          "name": "원효로2동"
-        },
-        {
-          "id": "region:1117058000",
-          "name": "효창동"
-        },
-        {
-          "id": "region:1117059000",
-          "name": "용문동"
-        },
-        {
-          "id": "region:1117062500",
-          "name": "한강로동"
-        },
-        {
-          "id": "region:1117063000",
-          "name": "이촌1동"
-        },
-        {
-          "id": "region:1117064000",
-          "name": "이촌2동"
-        },
-        {
-          "id": "region:1117065000",
-          "name": "이태원1동"
-        },
-        {
-          "id": "region:1117068500",
-          "name": "한남동"
-        },
-        {
-          "id": "region:1117069000",
-          "name": "서빙고동"
-        },
-        {
-          "id": "region:1117070000",
-          "name": "보광동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11170-S07",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
-    {
-      "id": "title:duchy-gu-11170-S07",
-      "name": "용산구 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K175",
-      "basis": "개막 행정 규모 그룹 gu:11170(duchy) 배분 · 결정적 후보 선정",
-      "stateId": "S07",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "region:1117053000",
-        "region:1117055500",
-        "region:1117056000",
-        "region:1117057000",
-        "region:1117058000",
-        "region:1117059000",
-        "region:1117062500",
-        "region:1117063000",
-        "region:1117064000",
-        "region:1117065000",
-        "region:1117068500",
-        "region:1117069000",
-        "region:1117070000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
-    }
-  ],
-  "clan": null,
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": 30,
-    "무력": -15,
-    "물질": 20,
-    "공동": -15,
-    "원칙": -5,
-    "공개": -25,
-    "자격": 55,
-    "분산": -10,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": -10,
-    "위험": -30,
-    "과시": 20,
-    "지속": -20,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "환적국",
-    "품계": "영주",
-    "생업": "출고 전 제동 두께 점검·부품 검수",
-    "직함": "용산창 제동 정비사·용산구 영주",
-    "가치관": "권위 15 | 개방 30 | 무력 −15 | 물질 20 | 공동 −15 | 원칙 −5 | 공개 −25 | 자격 55 | 분산 −10 | 변혁 10",
-    "욕망": "갈망 10 | 독점 −10 | 위험 −30 | 과시 20 | 지속 −20 | 지향 이성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2099년생인 미콜라 본다렌코는 2126년 개막기에 용산창 제동 정비사·용산구 영주 직함을 지닌다. 신정 차량기지에서 자랐다. 용산창 제동 정비사 업무는 탈선 직전 결함 보고를 계기로 시작됐다. 우크라이나계 가계는 동대문·용산 민간 운송 생활권에 뿌리를 두고 있다. 바실 본다렌코는 2030년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 미콜라 본다렌코의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 우크라이나어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 미콜라 본다렌코의 출고 전 제동 두께 점검·부품 검수 업무는 한강로동과 연결된다.",
-    "관직": "품계 영주. 직함은 용산창 제동 정비사·용산구 영주. 출고 전 제동 두께를 칠판에 쓰고, 창동 시험 도장 없는 부품은 달지 않는다.",
-    "일화": "2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다. 이 행동을 계기로 용산창 제동 정비사 자리의 서명이 장부에 올랐다.",
-    "관계": "아이작 워커의 정비 일지를 현장에서 집행하는 사제이고, 박태겸의 도제 경로를 창에서 받치며, 이홍원의 교환 수련 규격을 검수한다.",
-    "야망": "용산 창의 제동 주기를 공개 정비표로 묶어 혈연 가문의 구두 지시가 출고를 막지 못하게 한다.",
-    "공포": "가문 창고의 환적 독점이 제동 부품까지 잠가 억류 열차가 창에 박히는 것.",
-    "개입": "도제의 정비 권한을 증언하거나, 도장 없는 부품의 발주자를 밝혀 정비사를 흔들 수 있다."
-  },
-  "biography": "제동 마모로 야간 운행 거리를 읽고, 공구함 뚜껑을 열어 두는 도제를 교대에서 뺀다. 말수는 적고 시운전 소음으로 대답한다.\n\n- 소속: 환적국\n- 품계: 영주\n- 생업: 출고 전 제동 두께 점검·부품 검수\n- 직함: 용산창 제동 정비사·용산구 영주\n**생애.** 2099년생인 미콜라 본다렌코는 2126년 개막기에 용산창 제동 정비사·용산구 영주 직함을 지닌다. 신정 차량기지에서 자랐다. 용산창 제동 정비사 업무는 탈선 직전 결함 보고를 계기로 시작됐다. 우크라이나계 가계는 동대문·용산 민간 운송 생활권에 뿌리를 두고 있다. 바실 본다렌코는 2030년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 미콜라 본다렌코의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 우크라이나어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 미콜라 본다렌코의 출고 전 제동 두께 점검·부품 검수 업무는 한강로동과 연결된다.\n\n**관직.** 품계 영주. 직함은 용산창 제동 정비사·용산구 영주. 출고 전 제동 두께를 칠판에 쓰고, 창동 시험 도장 없는 부품은 달지 않는다.\n\n**일화.** 2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다. 이 행동을 계기로 용산창 제동 정비사 자리의 서명이 장부에 올랐다.\n\n**관계.** 아이작 워커의 정비 일지를 현장에서 집행하는 사제이고, 박태겸의 도제 경로를 창에서 받치며, 이홍원의 교환 수련 규격을 검수한다.\n\n**야망.** 용산 창의 제동 주기를 공개 정비표로 묶어 혈연 가문의 구두 지시가 출고를 막지 못하게 한다.\n\n**공포.** 가문 창고의 환적 독점이 제동 부품까지 잠가 억류 열차가 창에 박히는 것.\n\n**개입.** 도제의 정비 권한을 증언하거나, 도장 없는 부품의 발주자를 밝혀 정비사를 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 30 | 무력 −15 | 물질 20 | 공동 −15 | 원칙 −5 | 공개 −25 | 자격 55 | 분산 −10 | 변혁 10\n- 욕망: 갈망 10 | 독점 −10 | 위험 −30 | 과시 20 | 지속 −20 | 지향 이성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-07"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "미콜라 본다렌코",
-        "type": "사제",
-        "to": "아이작 워커",
-        "basis": "아이작 워커의 정비 일지를 현장에서 집행하는 사제이고"
-      },
-      {
-        "from": "미콜라 본다렌코",
-        "type": "사제",
-        "to": "박태겸",
-        "basis": "박태겸의 도제 경로를 창에서 받치며"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "앙드레 뒤부아",
-        "type": "지휘",
-        "to": "미콜라 본다렌코",
-        "basis": "미콜라 본다렌코의 제동 시운전에 출력을 맞추며"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

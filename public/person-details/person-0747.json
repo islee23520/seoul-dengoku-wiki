@@ -1,395 +1,106 @@
 {
   "id": "person-0747",
   "name": "윤북율",
-  "title": "부품 물류상",
-  "position": "부품 물류상",
+  "title": "돌봄이",
+  "position": "돌봄이 · 강남역",
   "characterId": "K747",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "부품 출고 검사",
+  "rank": "미세례자",
+  "commonTier": "T5",
+  "occupation": "세례자 돌봄",
   "gender": "남성",
   "stage": "S4",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-윤북율",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0747",
   "birthDate": "2073-04-29",
   "birthday": "04-29",
   "age": 53,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/522",
-    "lore/characters/Cast-State-04.json#/content/524",
-    "lore/characters/Cast-State-04.json#/content/525"
-  ],
-  "familyTree": {
-    "personId": "K747",
-    "nodes": [
-      {
-        "id": "K747",
-        "personId": "K747",
-        "kind": "person",
-        "name": "윤북율",
-        "birthDate": "2073-04-29",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K747"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-윤북율-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-윤북율-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0747"
-      },
-      {
-        "id": "FH-K747-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤재도",
-        "lineage": {
-          "surname": "윤",
-          "bongwan": "파평",
-          "clan": "c724-d30c-d3c9-agreed-c728-second"
-        },
-        "birthDate": "2043-04-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-윤북율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2081,
-            "summary": "윤재도는 신정 차량기지에서 부품 출고 검사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-윤북율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K747-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤도석",
-        "lineage": {
-          "surname": "윤",
-          "bongwan": "파평",
-          "clan": "c724-d30c-d3c9-agreed-c728-second"
-        },
-        "birthDate": "2013-04-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-윤북율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤도석은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-윤북율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K747-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정도현",
-        "birthDate": "2043-04-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-윤북율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2081,
-            "summary": "정도현은 신정 차량기지에서 부품 출고 검사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-윤북율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K747-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤도준",
-        "birthDate": "2013-04-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-윤북율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤도준은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-윤북율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K747-P-01:K747:biological",
-        "from": "FH-K747-P-01",
-        "to": "K747",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-윤북율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K747-P-02:FH-K747-P-01:biological",
-        "from": "FH-K747-P-02",
-        "to": "FH-K747-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-윤북율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K747-M-01:K747:biological",
-        "from": "FH-K747-M-01",
-        "to": "K747",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-윤북율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K747-M-02:FH-K747-M-01:biological",
-        "from": "FH-K747-M-02",
-        "to": "FH-K747-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-윤북율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c724-d30c-d3c9",
+    "name": "파평 윤씨",
+    "crest": "clan-crests/c724-d30c-d3c9.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "윤북율은 부위가 하나도 없지만, 몸이 기계를 받아들이는 동안 사람이 어떻게 떨고 언제 먹어야 하는지를 강남역 정비공들보다 먼저 알아챈다. 쉰세 살인 그가 일하는 곳은 정비대 곁의 앓는 칸이다. 정비 밥 솥이 늦게 오는 날이면 제 몫의 섬유당 죽을 먼저 떠 먹이고 자기는 나중에 받는다. 그가 돌본 사람이 부르기에서 새 부위 수를 말하는 아침, 그는 대합실 맨 뒤에 서서 듣는다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "돌봄이",
+    "품계": "미세례자",
+    "생업": "세례자 돌봄",
+    "일하는 역": "강남역",
+    "잠자는 역": "강남역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 0
+  },
+  "sections": {
+    "생애": "윤북율은 부위가 하나도 없지만, 몸이 기계를 받아들이는 동안 사람이 어떻게 떨고 언제 먹어야 하는지를 강남역 정비공들보다 먼저 알아챈다. 쉰세 살인 그가 일하는 곳은 정비대 곁의 앓는 칸이다. 정비 밥 솥이 늦게 오는 날이면 제 몫의 섬유당 죽을 먼저 떠 먹이고 자기는 나중에 받는다. 그가 돌본 사람이 부르기에서 새 부위 수를 말하는 아침, 그는 대합실 맨 뒤에 서서 듣는다.",
+    "관직": "직함 돌봄이. 직위 돌봄이 · 강남역. 품계 미세례자. 일하는 역 강남역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": -10,
+    "무력": -15,
+    "물질": -5,
+    "공동": 40,
+    "원칙": -10,
+    "공개": -70,
+    "자격": -5,
+    "분산": -5,
+    "변혁": 35
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": 0,
+    "위험": 40,
+    "과시": 20,
+    "지속": -5,
+    "지향": "무성향",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0747",
+    "role": "single",
+    "personFaith": "unbaptised",
+    "houseFaith": "unbaptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
       },
-      "strategy": {
-        "base": 5,
-        "effective": 5
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "negotiation": {
-        "base": 4,
-        "effective": 4
+      "stewardship": {
+        "base": 6,
+        "effective": 6
       },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 9,
-        "effective": 9
-      },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
+      "intrigue": {
         "base": 7,
         "effective": 7
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
       }
     },
-    "skills": [
-      {
-        "id": "parts",
-        "name": {
-          "ko": "불량 부품 출고 검사",
-          "en": "Defective-parts dispatch inspection"
-        },
-        "rating": 50
-      },
-      {
-        "id": "wheel",
-        "name": {
-          "ko": "차륜 결함 점검",
-          "en": "Wheel-defect inspection"
-        },
-        "rating": 40
-      }
-    ],
-    "traits": [
-      {
-        "id": "no-defective-shipments",
-        "name": {
-          "ko": "불량 출고 거부",
-          "en": "No Defective Shipments"
-        },
-        "description": {
-          "ko": "윤북율은 출고 직전에도 불량 부품을 넘기지 않는 품질 확인 성향을 보인다.",
-          "en": "Yun Bugyul shows a quality-checking disposition by refusing to pass on defective parts even just before shipment."
-        },
-        "behavior": {
-          "ko": "불량 부품 상자를 출고 직전에 되돌려 보냈다.",
-          "en": "He returned a box of defective parts immediately before shipment."
-        },
-        "stress": {
-          "ko": "당직 공백과 통행 종속을 우려하더라도 확인된 불량을 그대로 출고하는 데 신중할 수 있다.",
-          "en": "Even when concerned about duty gaps and dependent passage, he may be cautious about shipping confirmed defects."
-        },
-        "relationship": {
-          "ko": "선배 당직에게는 반송한 부품 상자와 불량 판단을 분명히 인계하려 할 수 있다.",
-          "en": "He may clearly hand over the returned parts box and the defect judgment to the senior duty holder."
-        },
-        "effects": []
-      },
-      {
-        "id": "maintain-record-continuity",
-        "name": {
-          "ko": "기록 잇기",
-          "en": "Maintain Record Continuity"
-        },
-        "description": {
-          "ko": "윤북율은 자기 직위의 기록을 이어 장부와 당직의 중단을 피하는 데 무게를 둔다.",
-          "en": "Yun Bugyul values carrying his post's records forward to avoid breaks in the ledger and duty."
-        },
-        "behavior": {
-          "ko": "불량 부품을 반송하고 자기 직위의 열쇠와 기록을 넘겨 장부의 연속성을 지향한다.",
-          "en": "He returns defective parts and passes on his post's keys and records to support ledger continuity."
-        },
-        "stress": {
-          "ko": "당직이 비어 통행이 강국의 볼모가 될까 우려되면 반송 조치와 인계 기록이 끊기지 않도록 더 신경 쓸 수 있다.",
-          "en": "If vacant duty could make passage hostage to a powerful state, he may take greater care to connect the return action with handover records."
-        },
-        "relationship": {
-          "ko": "선배 당직과는 출고하지 않은 이유를 기록으로 이어 주는 인계를 중시할 수 있다.",
-          "en": "He may value handover that gives the senior duty holder a recorded reason why the parts were not shipped."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "불량 부품 상자를 되돌려 보냈다. 출고 검사와 생애의 차륜 보고만 평가하며 물류망 전체 운영 권한은 없다.",
-      "en": "She returned a defective-parts box. Release checks and wheel reporting are supported, not authority over an entire logistics network."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -427,83 +138,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-43770-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K747",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:kingdom-s04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-43770-S04",
-          "directLiegePersonId": "K423"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c724-d30c-d3c9",
-    "name": "파평 윤씨",
-    "crest": "clan-crests/c724-d30c-d3c9.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -5,
-    "개방": 5,
-    "무력": -25,
-    "물질": 45,
-    "공동": 20,
-    "원칙": 0,
-    "공개": -25,
-    "자격": 30,
-    "분산": 25,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": 0,
-    "위험": 40,
-    "과시": 20,
-    "지속": -5,
-    "지향": "무성향",
-    "결합": "다자"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "부품 출고 검사",
-    "품계": "교사",
-    "직함": "부품 물류상",
-    "가치관": "권위 −5 | 개방 5 | 무력 −25 | 물질 45 | 공동 20 | 원칙 0 | 공개 −25 | 자격 30 | 분산 25 | 변혁 −10",
-    "욕망": "갈망 10 | 독점 0 | 위험 40 | 과시 20 | 지속 −5 | 지향 무성향 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2126년 세대. 윤북율은 신정 차량기지에서 자랐다. 윤북율은 탈선 직전 결함 보고로 부품 물류상 자리를 맡았다.\n- 윤북율의 부품 물류상 업무는 성수2가1동과 연결된다.",
-    "관직": "윤북율은 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.",
-    "일화": "2125년 윤북율은 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.",
-    "관계": "윤북율은 같은 생활권 선배 당직자와 인수인계로 묶인다.",
-    "야망": "윤북율은 부품 물류상 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.",
-    "공포": "윤북율은 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.",
-    "개입": "윤북율은 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "윤북율은 당직을 끊지 않는 쪽을 먼저 고른다. 윤북율은 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 부품 출고 검사\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 윤북율은 신정 차량기지에서 자랐다. 윤북율은 탈선 직전 결함 보고로 부품 물류상 자리를 맡았다.\n- 윤북율의 부품 물류상 업무는 성수2가1동과 연결된다.\n\n**관직.** 윤북율은 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 윤북율은 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 윤북율은 같은 생활권 선배 당직자와 인수인계로 묶인다.\n\n**야망.** 윤북율은 부품 물류상 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.\n\n**공포.** 윤북율은 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.\n\n**개입.** 윤북율은 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 5 | 무력 −25 | 물질 45 | 공동 20 | 원칙 0 | 공개 −25 | 자격 30 | 분산 25 | 변혁 −10\n- 욕망: 갈망 10 | 독점 0 | 위험 40 | 과시 20 | 지속 −5 | 지향 무성향 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "윤북율",
-        "type": "계약",
-        "to": "박세린",
-        "basis": "윤북율은 출고 검사에서 가려낸 불량 펌프 부품을 박세린에게 돌려보낸다. 박세린은 창고 부품과 원로 날인을 확인해 불량품이 정상 출고 목록에 섞인 지점을 찾는다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

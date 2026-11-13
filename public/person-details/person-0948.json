@@ -1,494 +1,105 @@
 {
   "id": "person-0948",
   "name": "안서민",
-  "title": "약재 물류상",
-  "position": "약재 물류상",
+  "title": "국군 병사",
+  "position": "국군 병사 · 노원역",
   "characterId": "K948",
-  "rank": "수련의",
-  "commonTier": "T3",
-  "occupation": "약재 관리 기록·당직 열쇠 인계",
+  "rank": "중사",
+  "commonTier": "T5",
+  "occupation": "징집 보병",
   "gender": "여성",
   "stage": "S4",
-  "state": "S13",
-  "stateName": "흰십자단",
-  "sourceRoute": "/world/Cast-State-13#인물-안서민",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0948",
   "birthDate": "2096-11-04",
   "birthday": "11-04",
   "age": 30,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-13.json#/content/622",
-    "lore/characters/Cast-State-13.json#/content/624",
-    "lore/characters/Cast-State-13.json#/content/625"
-  ],
-  "familyTree": {
-    "personId": "K948",
-    "nodes": [
-      {
-        "id": "K948",
-        "personId": "K948",
-        "kind": "person",
-        "name": "안서민",
-        "birthDate": "2096-11-04",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K948"
-          },
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안서민-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "생업: 약재 관리 기록·당직 열쇠 인계",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-안서민-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0948"
-      },
-      {
-        "id": "FH-K948-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "안현원",
-        "lineage": {
-          "surname": "안",
-          "bongwan": "순흥",
-          "clan": "c548-c21c-d765-agreed-bbfc-second"
-        },
-        "birthDate": "2066-11-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안서민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2104,
-            "summary": "안현원은 제기동 의무소에서 약재 관리 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-안서민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K948-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "안현진",
-        "lineage": {
-          "surname": "안",
-          "bongwan": "순흥",
-          "clan": "c548-c21c-d765-agreed-bbfc-second"
-        },
-        "birthDate": "2036-11-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안서민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "안현진은 제기동 의무소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-안서민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K948-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "안현현",
-        "lineage": {
-          "surname": "안",
-          "bongwan": "순흥",
-          "clan": "c548-c21c-d765-agreed-bbfc-second"
-        },
-        "birthDate": "2006-11-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안서민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "안현현은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-안서민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K948-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박민리",
-        "birthDate": "2066-11-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안서민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2104,
-            "summary": "박민리는 제기동 의무소에서 약재 관리 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-안서민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K948-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이민성",
-        "birthDate": "2036-11-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안서민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "이민성은 제기동 의무소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-안서민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K948-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최민도",
-        "birthDate": "2006-11-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안서민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최민도는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-안서민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K948-P-01:K948:biological",
-        "from": "FH-K948-P-01",
-        "to": "K948",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안서민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K948-P-02:FH-K948-P-01:biological",
-        "from": "FH-K948-P-02",
-        "to": "FH-K948-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안서민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K948-P-03:FH-K948-P-02:biological",
-        "from": "FH-K948-P-03",
-        "to": "FH-K948-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안서민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K948-M-01:K948:biological",
-        "from": "FH-K948-M-01",
-        "to": "K948",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안서민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K948-M-02:FH-K948-M-01:biological",
-        "from": "FH-K948-M-02",
-        "to": "FH-K948-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안서민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K948-M-03:FH-K948-M-02:biological",
-        "from": "FH-K948-M-03",
-        "to": "FH-K948-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안서민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c548-c21c-d765",
+    "name": "순흥 안씨",
+    "crest": "clan-crests/c548-c21c-d765.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "얼굴 가리개 하나가 해지면 동상 하나가 생긴다는 것이 노원역 막사 중사인 그의 말이다. 노원구 부대는 수락산과 불암산 쪽 테두리 망대를 맡고, 그는 망대 교대를 나가는 분대의 방한복과 얼굴 가리개를 출입구에서 하나씩 검사해 해진 것은 그 자리에서 바늘로 꿰맨다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "국군 병사",
+    "품계": "중사",
+    "생업": "징집 보병",
+    "일하는 역": "노원역",
+    "잠자는 역": "노원역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "얼굴 가리개 하나가 해지면 동상 하나가 생긴다는 것이 노원역 막사 중사인 그의 말이다. 노원구 부대는 수락산과 불암산 쪽 테두리 망대를 맡고, 그는 망대 교대를 나가는 분대의 방한복과 얼굴 가리개를 출입구에서 하나씩 검사해 해진 것은 그 자리에서 바늘로 꿰맨다.",
+    "관직": "직함 국군 병사. 직위 국군 병사 · 노원역. 품계 중사. 일하는 역 노원역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": -25,
+    "무력": -15,
+    "물질": -5,
+    "공동": 20,
+    "원칙": 50,
+    "공개": -15,
+    "자격": 35,
+    "분산": -35,
+    "변혁": -35
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": -30,
+    "위험": -30,
+    "과시": 20,
+    "지속": 5,
+    "지향": "이성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0948",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 4,
+        "effective": 4
+      },
+      "martial": {
+        "base": 10,
+        "effective": 10
+      },
+      "stewardship": {
+        "base": 4,
+        "effective": 4
+      },
+      "intrigue": {
         "base": 5,
         "effective": 5
-      },
-      "strategy": {
-        "base": 6,
-        "effective": 6
-      },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 8,
-        "effective": 8
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       },
       "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
+        "base": 11,
+        "effective": 11
       }
     },
-    "skills": [
-      {
-        "id": "prescription-quantity-allocation",
-        "name": {
-          "ko": "처방량 배분",
-          "en": "Prescription quantity allocation"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "모두에게 반씩",
-          "en": "Half portions for everyone"
-        },
-        "description": {
-          "ko": "약재 부족 때 처방량을 반으로 나눠 모두에게 줬다. 배분 판단의 근거는 있으나 지속적인 조달 성과까지는 없다.",
-          "en": "Scarcity led to halved prescriptions for everyone. Allocation judgment has evidence; sustained procurement outcomes do not."
-        },
-        "behavior": {
-          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.",
-          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
-        },
-        "stress": {
-          "ko": "공포. 약재 관리 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.",
-          "en": "Fear. That the herb logistics merchant duty post would stand empty and the League's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-          "en": "Office. Rank: member. Title: herb logistics merchant. He handed over only the keys and records of his own post, and never made authority he did not hold."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-          "en": "Recorded duty and limits: Office. Rank: member. Title: herb logistics merchant. He handed over only the keys and records of his own post, and never made authority he did not hold."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 약재 관리 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That the herb logistics merchant duty post would stand empty and the League's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "약재 부족 때 처방량을 반으로 나눠 모두에게 줬다. 배분 판단의 근거는 있으나 지속적인 조달 성과까지는 없다.",
-      "en": "Scarcity led to halved prescriptions for everyone. Allocation judgment has evidence; sustained procurement outcomes do not."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -526,66 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c548-c21c-d765",
-    "name": "순흥 안씨",
-    "crest": "clan-crests/c548-c21c-d765.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -25,
-    "개방": 30,
-    "무력": -50,
-    "물질": 0,
-    "공동": 15,
-    "원칙": 30,
-    "공개": 10,
-    "자격": 20,
-    "분산": 15,
-    "변혁": -15
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": -30,
-    "위험": -30,
-    "과시": 20,
-    "지속": 5,
-    "지향": "이성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "약재 관리 기록·당직 열쇠 인계",
-    "소속": "흰십자단",
-    "품계": "수련의",
-    "직함": "약재 물류상",
-    "가치관": "권위 −25 | 개방 30 | 무력 −50 | 물질 0 | 공동 15 | 원칙 30 | 공개 10 | 자격 20 | 분산 15 | 변혁 −15",
-    "욕망": "갈망 15 | 독점 −30 | 위험 −30 | 과시 20 | 지속 5 | 지향 이성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2096-11-04에 태어났다. 2126년 개막 현재 약재 물류상 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 관리 기록·당직 열쇠 인계 창구를 안서민의 업무 기준점으로 한다. 이 배치는 거주지·정확한 시설 경계·작위·영지·점유권을 확정하지 않는다.",
-    "관직": "품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 인계한 열쇠와 기록의 수령 시각을 장부에 적는다.",
-    "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.",
-    "관계": "안서민은 약재 사용량과 남은 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 다음 공급을 검수한다.",
-    "야망": "약재 관리 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.",
-    "공포": "약재 관리 수련의 당직이 비면 흰십자단의 통행이 서울 내부 후원 세력 볼모가 되는 일을 두려워한다.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 약재 관리 기록·당직 열쇠 인계\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재 물류상\n**생애.** 2096-11-04에 태어났다. 2126년 개막 현재 약재 물류상 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 관리 기록·당직 열쇠 인계 창구를 안서민의 업무 기준점으로 한다. 이 배치는 거주지·정확한 시설 경계·작위·영지·점유권을 확정하지 않는다.\n\n**관직.** 품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 인계한 열쇠와 기록의 수령 시각을 장부에 적는다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.\n\n**관계.** 안서민은 약재 사용량과 남은 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 다음 공급을 검수한다.\n\n**야망.** 약재 관리 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.\n\n**공포.** 약재 관리 수련의 당직이 비면 흰십자단의 통행이 서울 내부 후원 세력 볼모가 되는 일을 두려워한다.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −50 | 물질 0 | 공동 15 | 원칙 30 | 공개 10 | 자격 20 | 분산 15 | 변혁 −15\n- 욕망: 갈망 15 | 독점 −30 | 위험 −30 | 과시 20 | 지속 5 | 지향 이성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-13"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "안서민",
-        "type": "계약",
-        "to": "동주하",
-        "basis": "안서민은 약재 사용량과 남은 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 다음 공급을 검수한다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

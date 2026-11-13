@@ -1,386 +1,155 @@
 {
   "id": "person-0298",
   "name": "안도한",
-  "title": "환승 배차조장",
-  "position": "환승 배차조장",
+  "title": "성동구 구청장",
+  "position": "성동구 구청장 · 마장역",
   "characterId": "K297",
-  "rank": "호송원",
-  "commonTier": "T5",
-  "occupation": "배차표·호송 인원 게시",
+  "rank": "구청장",
+  "commonTier": "T2",
+  "occupation": "구 행정",
   "gender": "남성",
   "stage": "S1",
-  "state": "S12",
-  "stateName": "신내운수",
-  "sourceRoute": "/world/Cast-State-12#인물-안도한",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0298",
   "birthDate": "2082-02-01",
   "birthday": "02-01",
   "age": 44,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-12.json#/content/50",
-    "lore/characters/Cast-State-12.json#/content/52"
-  ],
-  "familyTree": {
-    "personId": "K297",
-    "nodes": [
-      {
-        "id": "K297",
-        "personId": "K297",
-        "kind": "person",
-        "name": "안도한",
-        "birthDate": "2082-02-01",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K297"
-          },
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-안도한-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 환승 배차조장 자리는 무표 출발 열차 저지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-안도한-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0298"
-      },
-      {
-        "id": "FH-K297-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "안승석",
-        "lineage": {
-          "surname": "안",
-          "bongwan": "순흥",
-          "clan": "c548-c21c-d765"
-        },
-        "birthDate": "2052-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-안도한-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2090,
-            "summary": "안승석은 신내 환승 당직에서 배차표·호송 인원 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-안도한-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K297-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "안승준",
-        "lineage": {
-          "surname": "안",
-          "bongwan": "순흥",
-          "clan": "c548-c21c-d765"
-        },
-        "birthDate": "2022-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-안도한-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "안승준은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-안도한-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K297-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "송현리",
-        "birthDate": "2052-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-안도한-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2090,
-            "summary": "송현리는 신내 환승 당직에서 배차표·호송 인원 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-안도한-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K297-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "조현빈",
-        "birthDate": "2022-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-안도한-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조현빈은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-안도한-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K297-P-01:K297:biological",
-        "from": "FH-K297-P-01",
-        "to": "K297",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-안도한-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K297-P-02:FH-K297-P-01:biological",
-        "from": "FH-K297-P-02",
-        "to": "FH-K297-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-안도한-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K297-M-01:K297:biological",
-        "from": "FH-K297-M-01",
-        "to": "K297",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-안도한-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K297-M-02:FH-K297-M-01:biological",
-        "from": "FH-K297-M-02",
-        "to": "FH-K297-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-안도한-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c548-c21c-d765",
+    "name": "순흥 안씨",
+    "crest": "clan-crests/c548-c21c-d765.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "성동구 구청장 안도한은 마흔네 살이고, 장세화 의원의 이름으로 의원 도장을 대신 찍는다. 그는 마장역에 구청 민원 심리를 열어 기재 사항을 두고 다투는 가구들에게 증인이 아니라 서기의 도장을 가져오라고 이른다. 뚝도 취수구 펌프조의 대체 복무 명단도 그의 책상을 거쳐 국방부로 가는데, 그는 그 명단을 한 사람씩 불러 확인한다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "성동구 구청장",
+    "품계": "구청장",
+    "생업": "구 행정",
+    "일하는 역": "마장역",
+    "잠자는 역": "마장역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "성동구 구청장 안도한은 마흔네 살이고, 장세화 의원의 이름으로 의원 도장을 대신 찍는다. 그는 마장역에 구청 민원 심리를 열어 기재 사항을 두고 다투는 가구들에게 증인이 아니라 서기의 도장을 가져오라고 이른다. 뚝도 취수구 펌프조의 대체 복무 명단도 그의 책상을 거쳐 국방부로 가는데, 그는 그 명단을 한 사람씩 불러 확인한다.",
+    "관직": "직함 성동구 구청장. 직위 성동구 구청장 · 마장역. 품계 구청장. 일하는 역 마장역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": -10,
+    "무력": 10,
+    "물질": 5,
+    "공동": 30,
+    "원칙": 20,
+    "공개": -10,
+    "자격": 35,
+    "분산": -10,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": 35,
+    "위험": -20,
+    "과시": 25,
+    "지속": 0,
+    "지향": "유동",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0298",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "안도한",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "안도한",
+        "type": "맹세",
+        "to": "장세화",
+        "basis": "자신을 구청장으로 임명한 의원에게 도장을 맡아 지키겠다고 한 사이"
+      },
+      {
+        "from": "안도한",
+        "type": "경쟁",
+        "to": "안기준",
+        "basis": "같은 순흥 안씨로 이웃 광진구 의원 집안 후계가 된 사람과 견주어지는 사이"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "장세화",
+        "type": "맹세",
+        "to": "안도한",
+        "basis": "성동구 구청장으로 임명하고 구청 도장을 맡긴 사이"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 11,
-        "effective": 11
+      "diplomacy": {
+        "base": 10,
+        "effective": 10
       },
-      "strategy": {
-        "base": 9,
-        "effective": 9
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
         "base": 6,
         "effective": 6
       },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 8,
-        "effective": 8
-      },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "k297-dispatch-personnel-allocation",
-        "name": {
-          "ko": "배차 인원 배치",
-          "en": "Dispatch personnel allocation"
-        },
-        "rating": 60
+        "id": "skill-0298-hearing",
+        "name": "민원 심리",
+        "rating": 48
       }
     ],
     "traits": [
       {
-        "id": "k297-priority",
-        "name": {
-          "ko": "빈 시각표를 메움",
-          "en": "Fills timetable gaps"
-        },
-        "description": {
-          "ko": "안도한은 시각표와 호송 인원을 공개하고 폭설 통로에서 부상자를 옮겼다. 배차조 단독 승인 야망은 의료조 견제와 충돌한다.",
-          "en": "An Dohan publishes timetables and escort numbers and moved casualties through snow. His sole dispatch approval ambition conflicts with medical oversight."
-        },
-        "behavior": {
-          "ko": "배차표와 호송 인원을 같은 칠판에 공개하되, 의료열차 우선권은 장세화의 부서 날인이 있을 때만 인정한다.",
-          "en": "Office. Rank: convoy hand. Title: transfer dispatch crew leader. He published the dispatch sheet and convoy personnel on one chalkboard, but honored the medical train's priority only when Jang Sehwa's departmental stamp stood on it."
-        },
-        "stress": {
-          "ko": "동북 말단이 막혀 신내운수가 창동과 암사 사이를 통과만 하는 하역장이 되는 것.",
-          "en": "Fear. That the northeast branch would be cut and the transfer city would fall into a freight yard that only passed between Changdong and Amsa."
-        },
-        "relationship": {
-          "ko": "장세화의 배차 실무를 맡았고, 전미리와는 계절 교대마다 승인 순서를 다투며, 이홍원에게 북부 차륜 교환 시각을 의존한다.",
-          "en": "Relations. Held Jang Sehwa's dispatch work, contested the approval order with Jeon Miri at every seasonal rotation, and depended on I Hongwon for the northern wheel-exchange hours."
-        },
-        "effects": []
-      },
-      {
-        "id": "k297-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 호송원. 직함은 환승 배차조장. 배차표와 호송 인원을 같은 칠판에 공개하되, 의료열차 우선권은 장세화의 부서 날인이 있을 때만 인정한다.",
-          "en": "Office. Rank: convoy hand. Title: transfer dispatch crew leader. He published the dispatch sheet and convoy personnel on one chalkboard, but honored the medical train's priority only when Jang Sehwa's departmental stamp stood on it."
-        },
-        "stress": {
-          "ko": "공포. 동북 말단이 막혀 신내운수가 창동과 암사 사이를 통과만 하는 하역장이 되는 것.",
-          "en": "Fear. That the northeast branch would be cut and the transfer city would fall into a freight yard that only passed between Changdong and Amsa."
-        },
-        "relationship": {
-          "ko": "관계. 장세화의 배차 실무를 맡았고, 전미리와는 계절 교대마다 승인 순서를 다투며, 이홍원에게 북부 차륜 교환 시각을 의존한다.",
-          "en": "Relations. Held Jang Sehwa's dispatch work, contested the approval order with Jeon Miri at every seasonal rotation, and depended on I Hongwon for the northern wheel-exchange hours."
-        },
+        "id": "trait-0298-seal-keeper",
+        "name": "도장지기",
+        "description": "도장이 제 손에 있을 때 가장 말이 적다.",
+        "behavior": "서류를 두 번 읽고 한 번 찍는다.",
+        "stress": "도장을 잃을까 밤에 상자를 열어 본다.",
+        "relationship": "의원에게는 충직하고 민원인에게는 엄하다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "안도한은 시각표와 호송 인원을 공개하고 폭설 통로에서 부상자를 옮겼다. 배차조 단독 승인 야망은 의료조 견제와 충돌한다.",
-      "en": "An Dohan publishes timetables and escort numbers and moved casualties through snow. His sole dispatch approval ambition conflicts with medical oversight."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -418,97 +187,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c548-c21c-d765",
-    "name": "순흥 안씨",
-    "crest": "clan-crests/c548-c21c-d765.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -25,
-    "개방": 45,
-    "무력": -25,
-    "물질": 10,
-    "공동": 25,
-    "원칙": 0,
-    "공개": 15,
-    "자격": 20,
-    "분산": 40,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": 35,
-    "위험": -20,
-    "과시": 25,
-    "지속": 0,
-    "지향": "유동",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "배차표·호송 인원 게시",
-    "소속": "신내운수",
-    "품계": "호송원",
-    "직함": "환승 배차조장",
-    "가치관": "권위 −25 | 개방 45 | 무력 −25 | 물질 10 | 공동 25 | 원칙 0 | 공개 15 | 자격 20 | 분산 40 | 변혁 5",
-    "욕망": "갈망 0 | 독점 35 | 위험 −20 | 과시 25 | 지속 0 | 지향 유동 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2082-02-01에 태어났다. 신내 환승 당직에서 자랐다. 2126년 개막에는 환승 배차조장 당직을 맡으며, 직위 인수 기록에는 무표 출발 열차 저지로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 안도한의 배차표·호송 인원 게시 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
-    "관직": "품계 호송원. 직함은 환승 배차조장. 배차표와 호송 인원을 같은 칠판에 공개하되, 의료열차 우선권은 장세화의 부서 날인이 있을 때만 인정한다.",
-    "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 그 기록은 다음 당직의 대조 근거로 남았다.",
-    "관계": "장세화의 배차 실무를 맡았고, 전미리와는 계절 교대마다 승인 순서를 다투며, 이홍원에게 북부 차륜 교환 시각을 의존한다.",
-    "야망": "신내 기지 배차권을 배차조 단독 승인으로 고정해 중립 호송 약정의 실제 시각표를 자신이 쥐려 하려 한다.",
-    "공포": "동북 말단이 막혀 신내운수가 창동과 암사 사이를 통과만 하는 하역장이 되는 것.",
-    "개입": "봉쇄된 유치선의 실제 화물을 확인하거나, 배차조 단독 승인안을 의료조 앞에서 폭로할 수 있다."
-  },
-  "biography": "2082-02-01생인 안도한은 시각표의 빈칸을 참지 못하고, 계절 교대 결재가 오기 전에 이미 칠판을 고쳐 둔다. 말단 노선의 지연을 모욕처럼 기억한다.\n\n- 생업: 배차표·호송 인원 게시\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 환승 배차조장\n**생애.** 2082-02-01에 태어났다. 신내 환승 당직에서 자랐다. 2126년 개막에는 환승 배차조장 당직을 맡으며, 직위 인수 기록에는 무표 출발 열차 저지로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 안도한의 배차표·호송 인원 게시 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 호송원. 직함은 환승 배차조장. 배차표와 호송 인원을 같은 칠판에 공개하되, 의료열차 우선권은 장세화의 부서 날인이 있을 때만 인정한다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 그 기록은 다음 당직의 대조 근거로 남았다.\n\n**관계.** 장세화의 배차 실무를 맡았고, 전미리와는 계절 교대마다 승인 순서를 다투며, 이홍원에게 북부 차륜 교환 시각을 의존한다.\n\n**야망.** 신내 기지 배차권을 배차조 단독 승인으로 고정해 중립 호송 약정의 실제 시각표를 자신이 쥐려 하려 한다.\n\n**공포.** 동북 말단이 막혀 신내운수가 창동과 암사 사이를 통과만 하는 하역장이 되는 것.\n\n**개입.** 봉쇄된 유치선의 실제 화물을 확인하거나, 배차조 단독 승인안을 의료조 앞에서 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 45 | 무력 −25 | 물질 10 | 공동 25 | 원칙 0 | 공개 15 | 자격 20 | 분산 40 | 변혁 5\n- 욕망: 갈망 0 | 독점 35 | 위험 −20 | 과시 25 | 지속 0 | 지향 유동 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-12"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "안도한",
-        "type": "지휘",
-        "to": "장세화",
-        "basis": "환승 배차 실무를 사장 지휘로 맡음"
-      },
-      {
-        "from": "안도한",
-        "type": "계약",
-        "to": "이홍원",
-        "basis": "북부 차륜 교환 시각을 의존"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "소두감",
-        "type": "계약",
-        "to": "안도한",
-        "basis": "안도한의 배차 실무를 유치선에서 받고"
-      },
-      {
-        "from": "복봉",
-        "type": "계약",
-        "to": "안도한",
-        "basis": "안도한의 배차 칠판과 하역 순서를 맞추고"
-      },
-      {
-        "from": "두복",
-        "type": "계약",
-        "to": "안도한",
-        "basis": "전미리와 안도한의 승인 순서 다툼을 쪽지로 나르고"
-      },
-      {
-        "from": "국소",
-        "type": "계약",
-        "to": "안도한",
-        "basis": "안도한의 배차표를 칠판 맨 위에 둔다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

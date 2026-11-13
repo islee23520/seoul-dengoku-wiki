@@ -1,492 +1,120 @@
 {
   "id": "person-0363",
   "name": "선늘봄",
-  "title": "능선 초소 기지 당직장, 문하율의 실무 담당자",
-  "position": "아관사 능선 초소 기지 당직장, 문하율의 실무 담당자",
+  "title": "효창동 동장",
+  "position": "효창동 동장 · 정부",
   "characterId": "K362",
-  "rank": "병장",
-  "commonTier": "T5",
-  "occupation": "능선 초소 당직 명부·봉화 시각 게시",
+  "rank": "동장",
+  "commonTier": "T3",
+  "occupation": "동 행정",
   "gender": "여성",
   "stage": "S2",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-선늘봄",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0363",
   "birthDate": "2089-10-11",
   "birthday": "10-11",
   "age": 37,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/182"
-  ],
-  "familyTree": {
-    "personId": "K362",
-    "nodes": [
-      {
-        "id": "K362",
-        "personId": "K362",
-        "kind": "person",
-        "name": "선늘봄",
-        "birthDate": "2089-10-11",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K362"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선늘봄-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 아관사 능선 초소 기지 당직장, 문하율의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-선늘봄-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0363"
-      },
-      {
-        "id": "FH-K362-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "선승원",
-        "lineage": {
-          "surname": "선",
-          "bongwan": "보성",
-          "clan": "c120-bcf4-c131"
-        },
-        "birthDate": "2059-10-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선늘봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "선승원은 신정 차량기지에서 능선 초소 당직 명부·봉화 시각 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-선늘봄-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K362-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "선승진",
-        "lineage": {
-          "surname": "선",
-          "bongwan": "보성",
-          "clan": "c120-bcf4-c131"
-        },
-        "birthDate": "2029-10-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선늘봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "선승진은 신정 차량기지에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-선늘봄-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K362-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "선승현",
-        "lineage": {
-          "surname": "선",
-          "bongwan": "보성",
-          "clan": "c120-bcf4-c131"
-        },
-        "birthDate": "1999-10-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선늘봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "선승현은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-선늘봄-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K362-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준욱",
-        "birthDate": "2059-10-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선늘봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "최준욱은 신정 차량기지에서 능선 초소 당직 명부·봉화 시각 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-선늘봄-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K362-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준수",
-        "birthDate": "2029-10-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선늘봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "정준수는 신정 차량기지에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-선늘봄-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K362-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤준정",
-        "birthDate": "1999-10-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선늘봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤준정은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-선늘봄-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K362-P-01:K362:biological",
-        "from": "FH-K362-P-01",
-        "to": "K362",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선늘봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K362-P-02:FH-K362-P-01:biological",
-        "from": "FH-K362-P-02",
-        "to": "FH-K362-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선늘봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K362-P-03:FH-K362-P-02:biological",
-        "from": "FH-K362-P-03",
-        "to": "FH-K362-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선늘봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K362-M-01:K362:biological",
-        "from": "FH-K362-M-01",
-        "to": "K362",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선늘봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K362-M-02:FH-K362-M-01:biological",
-        "from": "FH-K362-M-02",
-        "to": "FH-K362-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선늘봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K362-M-03:FH-K362-M-02:biological",
-        "from": "FH-K362-M-03",
-        "to": "FH-K362-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-선늘봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c120-bcf4-c131",
+    "name": "보성 선씨",
+    "crest": "clan-crests/c120-bcf4-c131.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "효창동 동장 선늘봄. 용산구 효창공원앞역에 기재된 서른일곱 살 여성이고, 보성 선씨다. 국방부 청사가 있는 삼각지와 한 정거장 떨어진 동이라, 군 가구의 전입 신고와 막사 잠자리 배정이 그녀의 창구에서 가장 많이 다투어진다. 박태겸 의원이 앉힌 동장인 그녀는 달마다 막사 잠자리 명부를 국방부 쪽 장부와 맞춰, 한 군인이 두 곳에 잠자리를 갖는 일을 막는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "효창동 동장",
+    "품계": "동장",
+    "생업": "동 행정",
+    "일하는 역": "효창공원앞역",
+    "잠자는 역": "효창공원앞역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "효창동 동장 선늘봄. 용산구 효창공원앞역에 기재된 서른일곱 살 여성이고, 보성 선씨다. 국방부 청사가 있는 삼각지와 한 정거장 떨어진 동이라, 군 가구의 전입 신고와 막사 잠자리 배정이 그녀의 창구에서 가장 많이 다투어진다. 박태겸 의원이 앉힌 동장인 그녀는 달마다 막사 잠자리 명부를 국방부 쪽 장부와 맞춰, 한 군인이 두 곳에 잠자리를 갖는 일을 막는다.",
+    "관직": "직함 효창동 동장. 직위 효창동 동장 · 정부. 품계 동장. 일하는 역 효창공원앞역."
+  },
+  "values": {
+    "권위": 95,
+    "개방": -80,
+    "무력": 85,
+    "물질": 15,
+    "공동": 30,
+    "원칙": 30,
+    "공개": -25,
+    "자격": 15,
+    "분산": -70,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": 30,
+    "위험": -35,
+    "과시": -20,
+    "지속": -10,
+    "지향": "유동",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0363",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "선늘봄",
+        "type": "지휘",
+        "to": "박태겸",
+        "basis": "용산구 국회의원 박태겸의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K169",
+    "name": "박태겸",
+    "courtId": "court:K169",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "endurance": {
-        "base": 9,
-        "effective": 9
-      }
-    },
-    "skills": [
-      {
-        "id": "outpost-duty-handover",
-        "name": {
-          "ko": "초소 당직 인계",
-          "en": "Outpost duty handover"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "초소를 집처럼 여긴다",
-          "en": "Treats the outpost as home"
-        },
-        "description": {
-          "ko": "당직과 봉화 시각을 함께 게시하나 공동승인 문서를 두라는 쪽지를 태운다. 공동 승인 준수 문장과 독자 거점 욕구의 충돌을 남긴다.",
-          "en": "Duty and beacon times are posted together, yet a note requiring joint approval papers was burned. Stated joint checks conflict with a desire for a distinct outpost."
-        },
-        "behavior": {
-          "ko": "초소 당직을 집처럼 여기고, 공동승인 문서를 초소에 두라는 쪽지를 태운다. 한 번 본 불빛을 교대 일지에 먼저 적는다.",
-          "en": "He treated the outpost duty post as home and burned any note that told him to keep joint-approval papers at the outpost. A light he had seen once he wrote into the rotation log first."
-        },
-        "stress": {
-          "ko": "공포. 초소 당직이 오인 봉화의 발판이 되어 고지와 교량이 같은 밤에 열리는 것.",
-          "en": "Fear. That outpost duty would become the footstool of a mistaken beacon and the hill and the bridges would open on the same night."
-        },
-        "relationship": {
-          "ko": "관계. 문하율의 초병 명령을 기지에서 집행하고, 판늘샘의 순찰 호각을 당직과 나눈다. 곽민재의 급수 점검을 감시 공백으로 여기지 않으려 일지를 겹친다.",
-          "en": "Relations. Executed Mun Hayul's sentry orders at the base and shared the whistle with Pan Neulsaem's patrol. He overlapped the logs so Gwak Minjae's water inspections would not read as a watch gap."
-        },
-        "effects": []
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 병장. 직함은 아관사 능선 초소 기지 당직장, 문하율의 실무 담당자. 당직 명과 봉화 시각을 같은 칠판에 붙이고, 외부 무장 접근은 양군의 공동 승인 없이 막는다.",
-          "en": "Office. Rank: sergeant. Title: ridge outpost base duty chief, duty officer of Mun Hayul. He posted the duty roster and the beacon hours on one chalkboard and blocked armed outside approach without Go Seojun's escort."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 병장. 직함은 아관사 능선 초소 기지 당직장, 문하율의 실무 담당자. 당직 명과 봉화 시각을 같은 칠판에 붙이고, 외부 무장 접근은 양군의 공동 승인 없이 막는다.",
-          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: ridge outpost base duty chief, duty officer of Mun Hayul. He posted the duty roster and the beacon hours on one chalkboard and blocked armed outside approach without Go Seojun's escort."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 초소 당직이 오인 봉화의 발판이 되어 고지와 교량이 같은 밤에 열리는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That outpost duty would become the footstool of a mistaken beacon and the hill and the bridges would open on the same night."
-        },
-        "relationship": {
-          "ko": "관계. 문하율의 초병 명령을 기지에서 집행하고, 판늘샘의 순찰 호각을 당직과 나눈다. 곽민재의 급수 점검을 감시 공백으로 여기지 않으려 일지를 겹친다.",
-          "en": "Relations. Executed Mun Hayul's sentry orders at the base and shared the whistle with Pan Neulsaem's patrol. He overlapped the logs so Gwak Minjae's water inspections would not read as a watch gap."
-        },
-        "effects": []
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "당직과 봉화 시각을 함께 게시하나 공동승인 문서를 두라는 쪽지를 태운다. 공동 승인 준수 문장과 독자 거점 욕구의 충돌을 남긴다.",
-      "en": "Duty and beacon times are posted together, yet a note requiring joint approval papers was burned. Stated joint checks conflict with a desire for a distinct outpost."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,79 +152,25 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c120-bcf4-c131",
-    "name": "보성 선씨",
-    "crest": "clan-crests/c120-bcf4-c131.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 50,
-    "개방": -25,
-    "무력": 50,
-    "물질": 20,
-    "공동": 25,
-    "원칙": 10,
-    "공개": 0,
-    "자격": 0,
-    "분산": -20,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": 30,
-    "위험": -35,
-    "과시": -20,
-    "지속": -10,
-    "지향": "유동",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "능선 초소 당직 명부·봉화 시각 게시",
-    "소속": "아관사",
-    "품계": "병장",
-    "직함": "아관사 능선 초소 기지 당직장, 문하율의 실무 담당자",
-    "가치관": "권위 50 | 개방 −25 | 무력 50 | 물질 20 | 공동 25 | 원칙 10 | 공개 0 | 자격 0 | 분산 −20 | 변혁 0",
-    "욕망": "갈망 40 | 독점 30 | 위험 −35 | 과시 −20 | 지속 −10 | 지향 유동 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2089-10-11에 태어났다. 2126년 개막 현재 아관사 능선 초소 기지 당직장, 문하율의 실무 담당자 직무를 맡아 능선 초소 당직 명부·봉화 시각 게시 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의2동의 능선 초소 당직 명부·봉화 시각 게시 창구가 선늘봄의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 병장. 직함은 아관사 능선 초소 기지 당직장, 문하율의 실무 담당자. 능선 초소 당직 명부·봉화 시각 게시 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
-    "일화": "상수관 파손 연기를 적대 봉화로 오인한 밤, 초소 당직 명단이 한 줄 빠져 있었다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
-    "관계": "문하율의 초병 명령을 기지에서 집행하고, 판늘샘의 순찰 호각을 당직과 나눈다. 곽민재의 급수 점검을 감시 공백으로 여기지 않으려 일지를 겹친다.",
-    "야망": "선늘봄은 아관사 능선 초소 기지 당직장, 문하율의 실무 담당자 직무에서 능선 초소 당직 명부·봉화 시각 게시 기록을 공개 인계표와 맞물리게 하려 한다.",
-    "공포": "아관사 능선 초소 기지 당직장, 문하율의 실무 담당자 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
-    "개입": "빠진 당직자를 찾거나, 초소 봉화를 이중 열쇠로 바꿀 수 있다. 선늘봄의 능선 초소 당직 명부·봉화 시각 게시 원장을 대조해 다음 인계의 증거를 세울 수 있다."
-  },
-  "biography": "선늘봄은 능선 초소 당직 명부·봉화 시각 게시 기록을 손에 익힌 아관사 인물이다. 초소 당직을 집처럼 여기고, 공동승인 문서를 초소에 두라는 쪽지를 태운다. 한 번 본 불빛을 교대 일지에 먼저 적는다.\n\n- 생업: 능선 초소 당직 명부·봉화 시각 게시\n- 소속: 아관사\n- 품계: 병장\n- 직함: 아관사 능선 초소 기지 당직장, 문하율의 실무 담당자\n**생애.** 2089-10-11에 태어났다. 2126년 개막 현재 아관사 능선 초소 기지 당직장, 문하율의 실무 담당자 직무를 맡아 능선 초소 당직 명부·봉화 시각 게시 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의2동의 능선 초소 당직 명부·봉화 시각 게시 창구가 선늘봄의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 병장. 직함은 아관사 능선 초소 기지 당직장, 문하율의 실무 담당자. 능선 초소 당직 명부·봉화 시각 게시 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 상수관 파손 연기를 적대 봉화로 오인한 밤, 초소 당직 명단이 한 줄 빠져 있었다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 문하율의 초병 명령을 기지에서 집행하고, 판늘샘의 순찰 호각을 당직과 나눈다. 곽민재의 급수 점검을 감시 공백으로 여기지 않으려 일지를 겹친다.\n\n**야망.** 선늘봄은 아관사 능선 초소 기지 당직장, 문하율의 실무 담당자 직무에서 능선 초소 당직 명부·봉화 시각 게시 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 아관사 능선 초소 기지 당직장, 문하율의 실무 담당자 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 빠진 당직자를 찾거나, 초소 봉화를 이중 열쇠로 바꿀 수 있다. 선늘봄의 능선 초소 당직 명부·봉화 시각 게시 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −25 | 무력 50 | 물질 20 | 공동 25 | 원칙 10 | 공개 0 | 자격 0 | 분산 −20 | 변혁 0\n- 욕망: 갈망 40 | 독점 30 | 위험 −35 | 과시 −20 | 지속 −10 | 지향 유동 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-14"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "선늘봄",
-        "type": "지휘",
-        "to": "문하율",
-        "basis": "문하율의 초병 명령을 기지에서 집행하고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1117058000",
+      "name": {
+        "ko": "효창동"
       },
-      {
-        "from": "선늘봄",
-        "type": "지휘",
-        "to": "판늘샘",
-        "basis": "판늘샘의 순찰 호각을 당직과 나눈다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "판늘샘",
-        "type": "계약",
-        "to": "선늘봄",
-        "basis": "선늘봄의 초소 당직과 호각을 나눈다"
-      }
-    ]
-  }
+      "holderPersonId": "K362",
+      "directLiegePersonId": "K169",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1117058000",
+          "name": "효창동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

@@ -1,493 +1,120 @@
 {
   "id": "person-0232",
   "name": "국두봉",
-  "title": "검증 기록관, 황은설의 실무 담당자",
-  "position": "화폐 감정 기록관, 황은설의 실무 담당자",
+  "title": "보라매역 역반장",
+  "position": "보라매역 역반장 · 자유도시들",
   "characterId": "K231",
-  "rank": "서기",
-  "commonTier": "T5",
-  "occupation": "화폐 감정 증언 대조·필사",
+  "rank": "역반장",
+  "commonTier": "T4",
+  "occupation": "역반 운영",
   "gender": "남성",
   "stage": "S2",
-  "state": "S09",
-  "stateName": "여의도출자연합회",
-  "sourceRoute": "/world/Cast-State-09#인물-국두봉",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0232",
   "birthDate": "2101-08-08",
   "birthday": "08-08",
   "age": 25,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-09.json#/content/126",
-    "lore/characters/Cast-State-09.json#/content/127"
-  ],
-  "familyTree": {
-    "personId": "K231",
-    "nodes": [
-      {
-        "id": "K231",
-        "personId": "K231",
-        "kind": "person",
-        "name": "국두봉",
-        "birthDate": "2101-08-08",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K231"
-          },
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-국두봉-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 화폐 감정 기록관, 황은설의 실무 담당자 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-국두봉-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0232"
-      },
-      {
-        "id": "FH-K231-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "국승석",
-        "lineage": {
-          "surname": "국",
-          "bongwan": "담양",
-          "clan": "ad6d-b2f4-c591"
-        },
-        "birthDate": "2071-08-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-국두봉-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2109,
-            "summary": "국승석은 서울역 등기소에서 화폐 감정 증언 대조·필사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-국두봉-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K231-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "국승준",
-        "lineage": {
-          "surname": "국",
-          "bongwan": "담양",
-          "clan": "ad6d-b2f4-c591"
-        },
-        "birthDate": "2041-08-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-국두봉-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2079,
-            "summary": "국승준은 서울역 등기소에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-국두봉-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K231-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "국승호",
-        "lineage": {
-          "surname": "국",
-          "bongwan": "담양",
-          "clan": "ad6d-b2f4-c591"
-        },
-        "birthDate": "2011-08-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-국두봉-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "국승호는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-국두봉-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K231-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정현찬",
-        "birthDate": "2071-08-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-국두봉-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2109,
-            "summary": "정현찬은 서울역 등기소에서 화폐 감정 증언 대조·필사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-국두봉-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K231-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤현완",
-        "birthDate": "2041-08-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-국두봉-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2079,
-            "summary": "윤현완은 서울역 등기소에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-국두봉-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K231-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "한현규",
-        "birthDate": "2011-08-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-국두봉-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한현규는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-국두봉-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K231-P-01:K231:biological",
-        "from": "FH-K231-P-01",
-        "to": "K231",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-국두봉-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K231-P-02:FH-K231-P-01:biological",
-        "from": "FH-K231-P-02",
-        "to": "FH-K231-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-국두봉-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K231-P-03:FH-K231-P-02:biological",
-        "from": "FH-K231-P-03",
-        "to": "FH-K231-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-국두봉-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K231-M-01:K231:biological",
-        "from": "FH-K231-M-01",
-        "to": "K231",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-국두봉-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K231-M-02:FH-K231-M-01:biological",
-        "from": "FH-K231-M-02",
-        "to": "FH-K231-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-국두봉-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K231-M-03:FH-K231-M-02:biological",
-        "from": "FH-K231-M-03",
-        "to": "FH-K231-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-국두봉-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ad6d-b2f4-c591",
+    "name": "담양 국씨",
+    "crest": "clan-crests/ad6d-b2f4-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "7호선과 신림선이 만나는 보라매는 관악의 나무와 구로의 부품이 엇갈려 지나는 역이다. 국두봉은 지나가는 수레가 승강장에 머무는 시간을 재고, 정해진 시간을 넘긴 수레에게는 열 몫을 매긴다. 스물다섯의 젊은 역반장은 모래시계 하나를 승강장 끝 기둥에 매달아 두고, 시간을 두고 다투는 수레꾼 앞에서 그것을 뒤집어 보인다. 밤에 바람 시간이 오면 출입구 셋 가운데 둘을 닫아 승강장의 열을 지킨다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "보라매역 역반장",
+    "품계": "역반장",
+    "생업": "역반 운영",
+    "일하는 역": "보라매역",
+    "잠자는 역": "보라매역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "7호선과 신림선이 만나는 보라매는 관악의 나무와 구로의 부품이 엇갈려 지나는 역이다. 국두봉은 지나가는 수레가 승강장에 머무는 시간을 재고, 정해진 시간을 넘긴 수레에게는 열 몫을 매긴다. 스물다섯의 젊은 역반장은 모래시계 하나를 승강장 끝 기둥에 매달아 두고, 시간을 두고 다투는 수레꾼 앞에서 그것을 뒤집어 보인다. 밤에 바람 시간이 오면 출입구 셋 가운데 둘을 닫아 승강장의 열을 지킨다.",
+    "관직": "직함 보라매역 역반장. 직위 보라매역 역반장 · 자유도시들. 품계 역반장. 일하는 역 보라매역."
+  },
+  "values": {
+    "권위": -35,
+    "개방": 30,
+    "무력": -35,
+    "물질": 0,
+    "공동": -30,
+    "원칙": 20,
+    "공개": 65,
+    "자격": 20,
+    "분산": 70,
+    "변혁": 15
+  },
+  "desire": {
+    "갈망": 20,
+    "독점": -30,
+    "위험": -30,
+    "과시": 0,
+    "지속": 30,
+    "지향": "무성향",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0232",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "국두봉",
+        "type": "지휘",
+        "to": "채온결",
+        "basis": "보라매 구간장 채온결의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K013",
+    "name": "채온결",
+    "courtId": "court:K013",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
+      },
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
-      "negotiation": {
+      "learning": {
         "base": 6,
         "effective": 6
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
-      "learning": {
-        "base": 10,
-        "effective": 10
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "ledger-copy",
-        "name": {
-          "ko": "증언 대조·필사",
-          "en": "Testimony comparison and transcription"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "ledger-copy-disposition",
-        "name": {
-          "ko": "도장 앞의 주저",
-          "en": "Hesitation before stamping"
-        },
-        "description": {
-          "ko": "두 번 읽고 세 번째에야 도장을 들며 증언 부족 때 필사를 멈춘다.",
-          "en": "Reads twice before stamping and stops copying without enough testimony."
-        },
-        "behavior": {
-          "ko": "두 번 읽고 세 번째에야 도장을 들며 증언 부족 때 필사를 멈춘다.",
-          "en": "Reads twice before stamping and stops copying without enough testimony."
-        },
-        "stress": {
-          "ko": "보호와 기록 의무가 충돌하면 원장을 덮는다.",
-          "en": "Closes the ledger when protection conflicts with recording duty."
-        },
-        "relationship": {
-          "ko": "황은설의 지휘로 원장을 옮기고, 두용의 저장소 열쇠와 봉인을 나눈다. 윤서린과 화폐·문서를 교차한다.",
-          "en": "Copies under Hwang Eunseol, shares seals with Duyong and cross-checks documents with Yun Seorin."
-        },
-        "effects": []
-      },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "보류 사유 공개",
-          "en": "Publishes deferral reasons"
-        },
-        "description": {
-          "ko": "필사를 멈춘 사유도 같은 날 붙인다.",
-          "en": "Posts reasons for stopped transcription the same day."
-        },
-        "behavior": {
-          "ko": "필사를 멈춘 사유도 같은 날 붙인다.",
-          "en": "Posts reasons for stopped transcription the same day."
-        },
-        "stress": {
-          "ko": "위조 화폐 한 장이 기록관 필적으로 남아 공용 화폐의 신용이 선전 도구로 바뀌는 것.",
-          "en": "Closes the ledger when protection conflicts with recording duty."
-        },
-        "relationship": {
-          "ko": "황은설의 지휘로 원장을 옮기고, 두용의 저장소 열쇠와 봉인을 나눈다. 윤서린과 화폐·문서를 교차한다.",
-          "en": "Copies under Hwang Eunseol, shares seals with Duyong and cross-checks documents with Yun Seorin."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "각인과 필적이 어긋나자 필사 원장을 잠갔다. 자기 필적이 위조 신용의 보증이 되는 일을 막는다.",
-      "en": "Locked the transcription ledger over mismatched marks and handwriting, resisting use of personal handwriting to certify forgery."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -525,85 +152,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ad6d-b2f4-c591",
-    "name": "담양 국씨",
-    "crest": "clan-crests/ad6d-b2f4-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 0,
-    "개방": 15,
-    "무력": -25,
-    "물질": -15,
-    "공동": -5,
-    "원칙": 30,
-    "공개": 65,
-    "자격": 0,
-    "분산": 15,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 20,
-    "독점": -30,
-    "위험": -30,
-    "과시": 0,
-    "지속": 30,
-    "지향": "무성향",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "화폐 감정 증언 대조·필사",
-    "소속": "여의도출자연합회",
-    "품계": "서기",
-    "직함": "화폐 감정 기록관, 황은설의 실무 담당자",
-    "가치관": "권위 0 | 개방 15 | 무력 −25 | 물질 −15 | 공동 −5 | 원칙 30 | 공개 65 | 자격 0 | 분산 15 | 변혁 5",
-    "욕망": "갈망 20 | 독점 −30 | 위험 −30 | 과시 0 | 지속 30 | 지향 무성향 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2101-08-08 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 서울역 등기소에서 자랐다. 화폐 감정 기록관, 황은설의 실무 담당자 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 국두봉은 여의동을 업무동으로 삼아 화폐 감정 증언 대조·필사 업무를 맡는다.",
-    "관직": "품계 서기. 직함은 화폐 감정 기록관, 황은설의 실무 담당자. 독립 증언이 둘 미만이면 필사를 보류하고, 보류 사유도 같은 날 저장소 문에 붙인다.",
-    "일화": "위조 화폐의 각인과 필적이 한 구간에서만 어긋나자 필사 원장을 잠갔다.",
-    "관계": "황은설의 지휘로 원장을 옮기고, 두용의 저장소 열쇠와 봉인을 나눈다. 윤서린과 화폐·문서를 교차한다.",
-    "야망": "모든 국가의 공용 화폐를 두 증언 이상으로 맞추는 공개 원장을 서울역 인준과 함께 돌린다.",
-    "공포": "위조 화폐 한 장이 기록관 필적으로 남아 공용 화폐의 신용이 선전 도구로 바뀌는 것.",
-    "개입": "두 번째 증언을 데려오거나, 공개를 하루 늦춰 폭동을 막을 수 있다."
-  },
-  "biography": "문장을 두 번 읽고 세 번째에야 도장을 든다. 사람을 살릴 때의 침묵과 사실을 남길 의무가 충돌하면 손을 멈춘 채 원장을 덮는다.\n\n- 생업: 화폐 감정 증언 대조·필사\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 화폐 감정 기록관, 황은설의 실무 담당자\n**생애.** 2101-08-08 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 서울역 등기소에서 자랐다. 화폐 감정 기록관, 황은설의 실무 담당자 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 국두봉은 여의동을 업무동으로 삼아 화폐 감정 증언 대조·필사 업무를 맡는다.\n\n**관직.** 품계 서기. 직함은 화폐 감정 기록관, 황은설의 실무 담당자. 독립 증언이 둘 미만이면 필사를 보류하고, 보류 사유도 같은 날 저장소 문에 붙인다.\n\n**일화.** 위조 화폐의 각인과 필적이 한 구간에서만 어긋나자 필사 원장을 잠갔다.\n\n**관계.** 황은설의 지휘로 원장을 옮기고, 두용의 저장소 열쇠와 봉인을 나눈다. 윤서린과 화폐·문서를 교차한다.\n\n**야망.** 모든 국가의 공용 화폐를 두 증언 이상으로 맞추는 공개 원장을 서울역 인준과 함께 돌린다.\n\n**공포.** 위조 화폐 한 장이 기록관 필적으로 남아 공용 화폐의 신용이 선전 도구로 바뀌는 것.\n\n**개입.** 두 번째 증언을 데려오거나, 공개를 하루 늦춰 폭동을 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 15 | 무력 −25 | 물질 −15 | 공동 −5 | 원칙 30 | 공개 65 | 자격 0 | 분산 15 | 변혁 5\n- 욕망: 갈망 20 | 독점 −30 | 위험 −30 | 과시 0 | 지속 30 | 지향 무성향 | 결합 다자",
-  "sources": [
-    "Cast-State-09"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "국두봉",
-        "type": "지휘",
-        "to": "황은설",
-        "basis": "황은설의 지휘로 원장을 옮기고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:보라매",
+      "name": {
+        "ko": "보라매역"
       },
-      {
-        "from": "국두봉",
-        "type": "계약",
-        "to": "두용",
-        "basis": "두용의 저장소 열쇠와 봉인을 나눈다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "두용",
-        "type": "계약",
-        "to": "국두봉",
-        "basis": "국두봉의 필사 원장을 잠근다"
+      "holderPersonId": "K231",
+      "directLiegePersonId": "K013",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "보라매",
+        "stationName": "보라매"
       },
-      {
-        "from": "추우찬",
-        "type": "계약",
-        "to": "국두봉",
-        "basis": "국두봉의 검증 원장에 회의 필사를 옮기고"
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1156068000",
+          "name": "신길6동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

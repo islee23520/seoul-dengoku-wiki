@@ -1,501 +1,136 @@
 {
   "id": "person-0211",
   "name": "연은재",
-  "title": "남부 의료접근 이동의무차 반장",
-  "position": "남부 의료접근 이동의무차 반장",
+  "title": "갈현1동 동장",
+  "position": "갈현1동 동장 · 정부",
   "characterId": "K210",
-  "rank": "교도",
-  "commonTier": "T5",
-  "occupation": "식중독 게시·이동 진료 운영",
+  "rank": "동장",
+  "commonTier": "T3",
+  "occupation": "동 행정",
   "gender": "여성",
   "stage": "S2",
-  "state": "S08",
-  "stateName": "중앙정보부",
-  "sourceRoute": "/world/Cast-State-08#인물-연은재",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0211",
   "birthDate": "2094-05-24",
   "birthday": "05-24",
   "age": 32,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-08.json#/content/182",
-    "lore/characters/Cast-State-08.json#/content/184"
-  ],
-  "familyTree": {
-    "personId": "K210",
-    "nodes": [
-      {
-        "id": "K210",
-        "personId": "K210",
-        "kind": "person",
-        "name": "연은재",
-        "birthDate": "2094-05-24",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K210"
-          },
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-연은재-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 남부 의료접근 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-연은재-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0211"
-      },
-      {
-        "id": "FH-K210-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "연승수",
-        "lineage": {
-          "surname": "연",
-          "bongwan": "곡산",
-          "clan": "c5f0-ace1-c0b0"
-        },
-        "birthDate": "2064-05-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-연은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2102,
-            "summary": "연승수는 제기동 의무소에서 식중독 게시·이동 진료 운영 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-연은재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K210-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "연승은",
-        "lineage": {
-          "surname": "연",
-          "bongwan": "곡산",
-          "clan": "c5f0-ace1-c0b0"
-        },
-        "birthDate": "2034-05-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-연은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "연승은은 제기동 의무소에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-연은재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K210-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "연승연",
-        "lineage": {
-          "surname": "연",
-          "bongwan": "곡산",
-          "clan": "c5f0-ace1-c0b0"
-        },
-        "birthDate": "2004-05-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-연은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "연승연은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-연은재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K210-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현희",
-        "birthDate": "2064-05-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-연은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2102,
-            "summary": "강현희는 제기동 의무소에서 식중독 게시·이동 진료 운영 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-연은재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K210-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현완",
-        "birthDate": "2034-05-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-연은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "임현완은 제기동 의무소에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-연은재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K210-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현경",
-        "birthDate": "2004-05-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-연은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오현경은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-연은재-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K210-P-01:K210:biological",
-        "from": "FH-K210-P-01",
-        "to": "K210",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-연은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K210-P-02:FH-K210-P-01:biological",
-        "from": "FH-K210-P-02",
-        "to": "FH-K210-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-연은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K210-P-03:FH-K210-P-02:biological",
-        "from": "FH-K210-P-03",
-        "to": "FH-K210-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-연은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K210-M-01:K210:biological",
-        "from": "FH-K210-M-01",
-        "to": "K210",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-연은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K210-M-02:FH-K210-M-01:biological",
-        "from": "FH-K210-M-02",
-        "to": "FH-K210-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-연은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K210-M-03:FH-K210-M-02:biological",
-        "from": "FH-K210-M-03",
-        "to": "FH-K210-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-연은재-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c5f0-ace1-c0b0",
+    "name": "곡산 연씨",
+    "crest": "clan-crests/c5f0-ace1-c0b0.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "갈현1동 동주민센터 사본의 첫 장에는 그녀 자신의 기재가 있다. 은평구 갈현1동 연신내역, 공무원 가구, 동장. 조하린 국회의원의 임명으로 3호선과 6호선이 지나는 깊은 역 연신내의 동주민센터를 맡았다. 연신내 장터에서 의원 집안의 하인들이 북한산 땔감을 사 가는 날이면 그녀의 배급 창구 앞 줄이 땔감 증표 값을 두고 술렁인다. 보건소가 먼 동이라, 그녀는 창구 옆에 이동 진료 순번표를 붙여 두고 그 순번까지 직접 쥔다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "갈현1동 동장",
+    "품계": "동장",
+    "생업": "동 행정",
+    "일하는 역": "연신내역",
+    "잠자는 역": "연신내역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "갈현1동 동주민센터 사본의 첫 장에는 그녀 자신의 기재가 있다. 은평구 갈현1동 연신내역, 공무원 가구, 동장. 조하린 국회의원의 임명으로 3호선과 6호선이 지나는 깊은 역 연신내의 동주민센터를 맡았다. 연신내 장터에서 의원 집안의 하인들이 북한산 땔감을 사 가는 날이면 그녀의 배급 창구 앞 줄이 땔감 증표 값을 두고 술렁인다. 보건소가 먼 동이라, 그녀는 창구 옆에 이동 진료 순번표를 붙여 두고 그 순번까지 직접 쥔다.",
+    "관직": "직함 갈현1동 동장. 직위 갈현1동 동장 · 정부. 품계 동장. 일하는 역 연신내역."
+  },
+  "values": {
+    "권위": 55,
+    "개방": -15,
+    "무력": -15,
+    "물질": 60,
+    "공동": -5,
+    "원칙": 5,
+    "공개": 0,
+    "자격": 10,
+    "분산": -35,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": -10,
+    "위험": -30,
+    "과시": 5,
+    "지속": -10,
+    "지향": "유동",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0211",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "연은재",
+        "type": "지휘",
+        "to": "조하린",
+        "basis": "은평구 국회의원 조하린의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "백여울",
+        "type": "지휘",
+        "to": "연은재",
+        "basis": "갈현1동 동장 연은재의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K146",
+    "name": "조하린",
+    "courtId": "court:K146",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K210",
+    "members": [
+      {
+        "personId": "K347",
+        "name": "백여울"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
       "learning": {
-        "base": 11,
-        "effective": 11
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "mobile-patient-care",
-        "name": {
-          "ko": "이동 환자 진료",
-          "en": "Mobile patient care"
-        },
-        "rating": 65
-      },
-      {
-        "id": "medicine-allocation",
-        "name": {
-          "ko": "약재 배분",
-          "en": "Medicine allocation"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k210-disposition",
-        "name": {
-          "ko": "가족 단위 진료",
-          "en": "Family-based care"
-        },
-        "description": {
-          "ko": "부두 수도꼭지가 마르면 진료 순서를 가족 단위로 바꾸고, 효율을 이유로 선주 칸만 건너뛰라는 말을 모욕으로 듣는다. 온화하나 약품 상자의 봉인 끈은 직접 묶는다.",
-          "en": "When the quay taps ran dry he changed care order to family units and heard as an insult any word telling him to skip shipowner columns for efficiency. Mild in manner, he tied the medicine boxes' seal cords himself."
-        },
-        "behavior": {
-          "ko": "관직. 품계 교도. 직함은 남부 의료접근 이동의무차 반장. 골목별 식중독 게시판을 운영하고, 정전 예고가 뜨면 서나연의 얼음 우선 배정 연서로 부두 옆 진료를 연다.",
-          "en": "Office. Rank: lay instructor. Title: southern medical-access mobile clinic van chief. He ran the alley-by-alley food-poisoning boards and, whenever a blackout warning rose, opened the care beside the quay with Seo Nayeon's ice-priority joint signature."
-        },
-        "stress": {
-          "ko": "공포. 상한 재고 환자가 난민 명부로만 남아 북한산보국문으로 떠밀리고 의무차가 호송 감옥이 되는 것.",
-          "en": "Fear. That patients of spoiled inventory would remain on refugee rosters alone, be pushed toward Bukhansan Bogukmun, and the clinic vans would become convoy prisons."
-        },
-        "relationship": {
-          "ko": "관계. 연가온의 시장 진료가 봉쇄되면 환자를 골목으로 받고, 장세화의 의료호송을 노량진에서 피하지 않으려 빚을 지며, 백온의 가족 명부와 이동 진료 명단을 교환한다.",
-          "en": "Relations. Received patients into the alleys whenever Yeon Gaon's market care locked down, owed a debt to avoid dodging Jang Sehwa's medical convoy at Noryangjin, and exchanged Baek On's family roster with the mobile care list."
-        },
-        "effects": []
-      },
-      {
-        "id": "k210-choice",
-        "name": {
-          "ko": "봉쇄 밖 접근 유지",
-          "en": "Maintaining access outside closure"
-        },
-        "description": {
-          "ko": "일화. 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 남부 의료접근 이동의무차 반장 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In 2125, short of herbs, he halved the prescriptions and divided them among everyone. By this deed the signature of the southern medical-access mobile clinic van chief post rose into the ledger."
-        },
-        "behavior": {
-          "ko": "관계. 연가온의 시장 진료가 봉쇄되면 환자를 골목으로 받고, 장세화의 의료호송을 노량진에서 피하지 않으려 빚을 지며, 백온의 가족 명부와 이동 진료 명단을 교환한다.",
-          "en": "Relations. Received patients into the alleys whenever Yeon Gaon's market care locked down, owed a debt to avoid dodging Jang Sehwa's medical convoy at Noryangjin, and exchanged Baek On's family roster with the mobile care list."
-        },
-        "stress": {
-          "ko": "공포. 상한 재고 환자가 난민 명부로만 남아 북한산보국문으로 떠밀리고 의무차가 호송 감옥이 되는 것.",
-          "en": "Fear. That patients of spoiled inventory would remain on refugee rosters alone, be pushed toward Bukhansan Bogukmun, and the clinic vans would become convoy prisons."
-        },
-        "relationship": {
-          "ko": "관계. 연가온의 시장 진료가 봉쇄되면 환자를 골목으로 받고, 장세화의 의료호송을 노량진에서 피하지 않으려 빚을 지며, 백온의 가족 명부와 이동 진료 명단을 교환한다.",
-          "en": "Relations. Received patients into the alleys whenever Yeon Gaon's market care locked down, owed a debt to avoid dodging Jang Sehwa's medical convoy at Noryangjin, and exchanged Baek On's family roster with the mobile care list."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "약을 모두에게 나누고 봉쇄 때 골목에서 환자를 받으며 가족 명부와 연결한다. 의료 최저선 제도화는 야망으로 남긴다.",
-      "en": "Shares medicine, receives patients in alleys during closure and links family lists to care. Institutionalizing minimum access remains an ambition."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -533,66 +168,52 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c5f0-ace1-c0b0",
-    "name": "곡산 연씨",
-    "crest": "clan-crests/c5f0-ace1-c0b0.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 10,
-    "개방": 40,
-    "무력": -50,
-    "물질": 65,
-    "공동": -10,
-    "원칙": -15,
-    "공개": 25,
-    "자격": -5,
-    "분산": 15,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": -10,
-    "위험": -30,
-    "과시": 5,
-    "지속": -10,
-    "지향": "유동",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "중앙정보부",
-    "품계": "교도",
-    "생업": "식중독 게시·이동 진료 운영",
-    "직함": "남부 의료접근 이동의무차 반장",
-    "가치관": "권위 10 | 개방 40 | 무력 −50 | 물질 65 | 공동 −10 | 원칙 −15 | 공개 25 | 자격 −5 | 분산 15 | 변혁 5",
-    "욕망": "갈망 45 | 독점 −10 | 위험 −30 | 과시 5 | 지속 −10 | 지향 유동 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 남부 의료접근 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다.\n- 연은재는 노량진1동에서 식중독 게시·이동 진료 운영 업무를 맡는다.",
-    "관직": "품계 교도. 직함은 남부 의료접근 이동의무차 반장. 골목별 식중독 게시판을 운영하고, 정전 예고가 뜨면 서나연의 얼음 우선 배정 연서로 부두 옆 진료를 연다.",
-    "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 남부 의료접근 이동의무차 반장 자리의 서명이 장부에 올랐다.",
-    "관계": "시장 진료가 봉쇄되면 환자를 골목으로 받고, 장세화의 의료호송을 노량진에서 피하지 않으려 빚을 지며, 백온의 가족 명부와 이동 진료 명단을 교환한다.",
-    "야망": "정전 골목에도 이동 의무차가 들어가게 해 중립시장의 의료 최저선을 상회정에 못 박는다.",
-    "공포": "상한 재고 환자가 난민 명부로만 남아 북한산보국문으로 떠밀리고 의무차가 호송 감옥이 되는 것.",
-    "개입": "시약 상자를 호송해 부두 진료를 유지하거나, 명부 양도 밀약을 찾아 반장을 위태롭게 할 수 있다."
-  },
-  "biography": "부두 수도꼭지가 마르면 진료 순서를 가족 단위로 바꾸고, 효율을 이유로 선주 칸만 건너뛰라는 말을 모욕으로 듣는다. 온화하나 약품 상자의 봉인 끈은 직접 묶는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 식중독 게시·이동 진료 운영\n- 직함: 남부 의료접근 이동의무차 반장\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 남부 의료접근 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다.\n- 연은재는 노량진1동에서 식중독 게시·이동 진료 운영 업무를 맡는다.\n\n**관직.** 품계 교도. 직함은 남부 의료접근 이동의무차 반장. 골목별 식중독 게시판을 운영하고, 정전 예고가 뜨면 서나연의 얼음 우선 배정 연서로 부두 옆 진료를 연다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 남부 의료접근 이동의무차 반장 자리의 서명이 장부에 올랐다.\n\n**관계.** 시장 진료가 봉쇄되면 환자를 골목으로 받고, 장세화의 의료호송을 노량진에서 피하지 않으려 빚을 지며, 백온의 가족 명부와 이동 진료 명단을 교환한다.\n\n**야망.** 정전 골목에도 이동 의무차가 들어가게 해 중립시장의 의료 최저선을 상회정에 못 박는다.\n\n**공포.** 상한 재고 환자가 난민 명부로만 남아 북한산보국문으로 떠밀리고 의무차가 호송 감옥이 되는 것.\n\n**개입.** 시약 상자를 호송해 부두 진료를 유지하거나, 명부 양도 밀약을 찾아 반장을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 40 | 무력 −50 | 물질 65 | 공동 −10 | 원칙 −15 | 공개 25 | 자격 −5 | 분산 15 | 변혁 5\n- 욕망: 갈망 45 | 독점 −10 | 위험 −30 | 과시 5 | 지속 −10 | 지향 유동 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-08"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1138055100",
+      "name": {
+        "ko": "갈현1동"
+      },
+      "holderPersonId": "K210",
+      "directLiegePersonId": "K146",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1138055100",
+          "name": "갈현1동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
   ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "연은재",
-        "type": "빚",
-        "to": "장세화",
-        "basis": "장세화의 의료호송을 노량진에서 피하지 않으려 빚을 지며"
-      }
-    ],
-    "incoming": []
-  }
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:연신내",
+      "name": {
+        "ko": "연신내역"
+      },
+      "holderPersonId": "K347",
+      "directLiegePersonId": "K210",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "연신내",
+        "stationName": "연신내"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1138055100",
+          "name": "갈현1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "백여울",
+      "holderRoute": "/people/person-0348"
+    }
+  ]
 }

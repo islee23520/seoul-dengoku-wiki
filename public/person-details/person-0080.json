@@ -1,394 +1,106 @@
 {
   "id": "person-0080",
   "name": "배서율",
-  "title": "가짜 약품 표본 피해자 대표",
-  "position": "가짜 약품 표본 피해자 대표",
+  "title": "돌봄이",
+  "position": "돌봄이 · 선릉역",
   "characterId": "K080",
-  "rank": "대리",
+  "rank": "미세례자",
   "commonTier": "T5",
-  "occupation": "약품 피해 증거·명부 관리",
+  "occupation": "세례자 돌봄",
   "gender": "남성",
   "stage": "S3",
-  "state": "S03",
-  "stateName": "태욱그룹",
-  "sourceRoute": "/world/Cast-State-03#인물-배서율",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0080",
   "birthDate": "2085-07-18",
   "birthday": "07-18",
   "age": 41,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-03.json#/content/247",
-    "lore/characters/Cast-State-03.json#/content/249"
-  ],
-  "familyTree": {
-    "personId": "K080",
-    "nodes": [
-      {
-        "id": "K080",
-        "personId": "K080",
-        "kind": "person",
-        "name": "배서율",
-        "birthDate": "2085-07-18",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K080"
-          },
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-배서율-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 가짜 약품 표본 피해자 대표 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-배서율-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0080"
-      },
-      {
-        "id": "FH-K080-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "배승원",
-        "lineage": {
-          "surname": "배",
-          "bongwan": "분성",
-          "clan": "bc30-bd84-c131-88f5"
-        },
-        "birthDate": "2055-07-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-배서율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2093,
-            "summary": "배승원은 제기동 의무소에서 약품 피해 증거·명부 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-배서율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K080-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "배승진",
-        "lineage": {
-          "surname": "배",
-          "bongwan": "분성",
-          "clan": "bc30-bd84-c131-88f5"
-        },
-        "birthDate": "2025-07-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-배서율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "배승진은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-배서율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K080-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오승정",
-        "birthDate": "2055-07-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-배서율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2093,
-            "summary": "오승정은 제기동 의무소에서 약품 피해 증거·명부 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-배서율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K080-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "송승아",
-        "birthDate": "2025-07-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-배서율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "송승아는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-배서율-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K080-P-01:K080:biological",
-        "from": "FH-K080-P-01",
-        "to": "K080",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-배서율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K080-P-02:FH-K080-P-01:biological",
-        "from": "FH-K080-P-02",
-        "to": "FH-K080-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-배서율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K080-M-01:K080:biological",
-        "from": "FH-K080-M-01",
-        "to": "K080",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-배서율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K080-M-02:FH-K080-M-01:biological",
-        "from": "FH-K080-M-02",
-        "to": "FH-K080-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-배서율-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "bc30-bd84-c131-88f5",
+    "name": "분성 배씨",
+    "crest": "clan-crests/bc30-bd84-c131-88f5.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "선릉역 정비대 곁에서 갓 세례를 받고 앓는 사람을 돌보는 배서율은 마흔한 살이 되도록 아직 세례를 받지 않았다. 부르기 때는 이름과 집안으로 답하고, 앓는 사람의 이름과 끼니를 적은 쪽지를 정비공에게 넘기는 것으로 셋째 교대를 끝낸다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "돌봄이",
+    "품계": "미세례자",
+    "생업": "세례자 돌봄",
+    "일하는 역": "선릉역",
+    "잠자는 역": "선릉역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 0
+  },
+  "sections": {
+    "생애": "선릉역 정비대 곁에서 갓 세례를 받고 앓는 사람을 돌보는 배서율은 마흔한 살이 되도록 아직 세례를 받지 않았다. 부르기 때는 이름과 집안으로 답하고, 앓는 사람의 이름과 끼니를 적은 쪽지를 정비공에게 넘기는 것으로 셋째 교대를 끝낸다.",
+    "관직": "직함 돌봄이. 직위 돌봄이 · 선릉역. 품계 미세례자. 일하는 역 선릉역."
+  },
+  "values": {
+    "권위": -5,
+    "개방": -5,
+    "무력": -25,
+    "물질": -30,
+    "공동": 25,
+    "원칙": 40,
+    "공개": -5,
+    "자격": 10,
+    "분산": -5,
+    "변혁": 60
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": 20,
+    "위험": -20,
+    "과시": -20,
+    "지속": 0,
+    "지향": "동성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0080",
+    "role": "single",
+    "personFaith": "unbaptised",
+    "houseFaith": "unbaptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
+      },
+      "martial": {
+        "base": 3,
+        "effective": 3
+      },
+      "stewardship": {
+        "base": 6,
+        "effective": 6
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 10,
+        "effective": 10
       },
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
       }
     },
-    "skills": [
-      {
-        "id": "evidence",
-        "name": {
-          "ko": "피해 표본·명부 보존",
-          "en": "Preserving victim samples and registers"
-        },
-        "rating": 60
-      },
-      {
-        "id": "dose",
-        "name": {
-          "ko": "부족 약재 배분",
-          "en": "Scarce-medicine allocation"
-        },
-        "rating": 45
-      }
-    ],
-    "traits": [
-      {
-        "id": "keep-samples-sealed",
-        "name": {
-          "ko": "표본 봉인 고수",
-          "en": "Keep Samples Sealed"
-        },
-        "description": {
-          "ko": "배서율은 분노를 드러내는 일보다 피해 증거의 봉인을 지키는 일을 우선한다.",
-          "en": "Bae Seoyul prioritizes keeping evidence sealed over expressing anger."
-        },
-        "behavior": {
-          "ko": "피해자 명부와 잔여 약봉지를 이중 봉인하고 치료길드와 안전심사가 함께 있을 때만 감정을 연다.",
-          "en": "Bae Seoyul double-seals the victim register and remaining medicine packets, opening appraisal only with the treatment guild and safety review present together."
-        },
-        "stress": {
-          "ko": "가짜 약이 인증 도장을 위조해 쓸 우려가 커지면 표본 봉인을 더욱 양보하지 않을 수 있다.",
-          "en": "If counterfeit medicine risks using forged certification stamps, Bae Seoyul may become still less willing to compromise sample seals."
-        },
-        "relationship": {
-          "ko": "류은비에게 표본을 맡길 때 치료 중립과 봉인 보존이 함께 지켜지는지를 중시할 수 있다.",
-          "en": "When entrusting samples to Ryu Eunbi, Bae Seoyul may look for both treatment neutrality and intact seals."
-        },
-        "effects": []
-      },
-      {
-        "id": "open-channels-for-anger",
-        "name": {
-          "ko": "분노의 공개 경로",
-          "en": "Open Channels for Anger"
-        },
-        "description": {
-          "ko": "배서율은 가짜 약에 대한 분노를 공개 검증과 제조 경로 기록의 요구로 향하게 한다.",
-          "en": "Bae Seoyul channels anger over counterfeit medicine into demands for public verification and manufacturing-route records."
-        },
-        "behavior": {
-          "ko": "정호준에게 약효 검증을 요구하고 가짜 약의 제조 경로와 보호국 창고를 공개 원장에 올리려 한다.",
-          "en": "Bae Seoyul demands efficacy verification from Jeong Hojun and seeks public-ledger entries for counterfeit production routes and protectorate warehouses."
-        },
-        "stress": {
-          "ko": "기술 인증이 독의 포장이 될 우려가 커지면 숨긴 분노를 공개 검증 요구로 표현할 수 있다.",
-          "en": "If technical certification risks becoming a wrapper for poison, Bae Seoyul may express restrained anger through demands for open verification."
-        },
-        "relationship": {
-          "ko": "정호준과의 관계에서는 위로보다 약효 검증을 요구하는 태도가 두드러질 수 있다.",
-          "en": "With Jeong Hojun, Bae Seoyul may emphasize demands for efficacy verification rather than reassurance."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "피해 명부와 약봉지를 이중 봉인하며 부족 약재를 나눴다. 피해 증거 보존이 중심이며 피해 경험을 특정 질병으로 단정하지 않는다.",
-      "en": "She double-seals victim registers and medicine bags and shared scarce supplies. Evidence preservation is central; victim status does not establish a disease."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -426,73 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "bc30-bd84-c131-88f5",
-    "name": "분성 배씨",
-    "crest": "clan-crests/bc30-bd84-c131-88f5.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -30,
-    "개방": 10,
-    "무력": -35,
-    "물질": 20,
-    "공동": 5,
-    "원칙": 50,
-    "공개": 40,
-    "자격": 45,
-    "분산": 25,
-    "변혁": 15
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": 20,
-    "위험": -20,
-    "과시": -20,
-    "지속": 0,
-    "지향": "동성",
-    "결합": "다자"
-  },
-  "fields": {
-    "소속": "태욱그룹",
-    "생업": "약품 피해 증거·명부 관리",
-    "품계": "대리",
-    "직함": "가짜 약품 표본 피해자 대표",
-    "업무": "가양1동. 배서율은 마곡의 인증 도장 사본과 피해 약봉지를 맞춰 위조 흔적을 찾고 봉인 전에는 표본을 내놓지 않는다.",
-    "가치관": "권위 −30 | 개방 10 | 무력 −35 | 물질 20 | 공동 5 | 원칙 50 | 공개 40 | 자격 45 | 분산 25 | 변혁 15",
-    "욕망": "갈망 40 | 독점 20 | 위험 −20 | 과시 −20 | 지속 0 | 지향 동성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 배서율은 진채온과 약봉지의 잔여 표본을 감정할 때 피해자 명부의 봉인을 함께 확인한다.\n- 업무: 양재2동. 배서율은 진채온과 약봉지의 잔여 표본을 감정할 때 피해자 명부의 봉인을 함께 확인한다.\n- 업무: 가양1동. 배서율은 마곡의 인증 도장 사본과 피해 약봉지를 맞춰 위조 흔적을 찾고 봉인 전에는 표본을 내놓지 않는다.",
-    "관직": "품계 대리. 직함은 가짜 약품 표본 피해자 대표. 피해자 명부와 잔여 약봉지를 이중 봉인하고, 감정은 치료길드와 안전심사가 한자리에 있을 때만 연다.",
-    "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다.",
-    "관계": "류은비의 치료 중립에 표본을 맡기고, 정호준의 약효 검증을 요구하며, 진채온의 실험동 안전을 감정 장소로 빌린다.",
-    "야망": "가짜 약품의 제조 경로와 보호국 창고를 공개 원장에 올려, 의약품이 전리품 시세에서 내려오게 한다.",
-    "공포": "피난민에게 퍼진 가짜 약이 마곡 인증 도장을 위조해 쓰이고, 기술 인증 자체가 독의 포장이 되는 것.",
-    "개입": "배서율의 피해자 명부와 회수한 약봉지의 봉인을 대조하고 위조 도장이 찍힌 사본을 확인할 수 있다."
-  },
-  "biography": "약봉지의 인쇄 흐림을 병세보다 먼저 보고, 효능을 보호비로 부르는 중개인을 도둑으로 본다. 분노를 숨기되 표본 봉인은 양보하지 않는다.\n\n- 소속: 태욱그룹\n- 생업: 약품 피해 증거·명부 관리\n- 품계: 대리\n- 직함: 가짜 약품 표본 피해자 대표\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 배서율은 진채온과 약봉지의 잔여 표본을 감정할 때 피해자 명부의 봉인을 함께 확인한다.\n- 업무: 양재2동. 배서율은 진채온과 약봉지의 잔여 표본을 감정할 때 피해자 명부의 봉인을 함께 확인한다.\n- 업무: 가양1동. 배서율은 마곡의 인증 도장 사본과 피해 약봉지를 맞춰 위조 흔적을 찾고 봉인 전에는 표본을 내놓지 않는다.\n\n**관직.** 품계 대리. 직함은 가짜 약품 표본 피해자 대표. 피해자 명부와 잔여 약봉지를 이중 봉인하고, 감정은 치료길드와 안전심사가 한자리에 있을 때만 연다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다.\n\n**관계.** 류은비의 치료 중립에 표본을 맡기고, 정호준의 약효 검증을 요구하며, 진채온의 실험동 안전을 감정 장소로 빌린다.\n\n**야망.** 가짜 약품의 제조 경로와 보호국 창고를 공개 원장에 올려, 의약품이 전리품 시세에서 내려오게 한다.\n\n**공포.** 피난민에게 퍼진 가짜 약이 마곡 인증 도장을 위조해 쓰이고, 기술 인증 자체가 독의 포장이 되는 것.\n\n**개입.** 배서율의 피해자 명부와 회수한 약봉지의 봉인을 대조하고 위조 도장이 찍힌 사본을 확인할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 10 | 무력 −35 | 물질 20 | 공동 5 | 원칙 50 | 공개 40 | 자격 45 | 분산 25 | 변혁 15\n- 욕망: 갈망 40 | 독점 20 | 위험 −20 | 과시 −20 | 지속 0 | 지향 동성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-03"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "배서율",
-        "type": "계약",
-        "to": "류은비",
-        "basis": "류은비의 치료 중립에 표본을 맡기고"
-      },
-      {
-        "from": "배서율",
-        "type": "계약",
-        "to": "정호준",
-        "basis": "정호준의 약효 검증을 요구하며"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

@@ -1,394 +1,120 @@
 {
   "id": "person-0055",
   "name": "여시온",
-  "title": "제작헌장 전령",
-  "position": "제작헌장 전령",
+  "title": "구로역 역반장",
+  "position": "구로역 역반장 · 자유도시들",
   "characterId": "K055",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "헌장 사본 전달",
+  "rank": "역반장",
+  "commonTier": "T4",
+  "occupation": "역반 운영",
   "gender": "여성",
   "stage": "S3",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-여시온",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0055",
   "birthDate": "2079-06-17",
   "birthday": "06-17",
   "age": 47,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/280",
-    "lore/characters/Cast-State-02.json#/content/282"
-  ],
-  "familyTree": {
-    "personId": "K055",
-    "nodes": [
-      {
-        "id": "K055",
-        "personId": "K055",
-        "kind": "person",
-        "name": "여시온",
-        "birthDate": "2079-06-17",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K055"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-여시온-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 제작헌장 전령 자리는 무표 출발 열차 저지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-여시온-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0055"
-      },
-      {
-        "id": "FH-K055-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "여승호",
-        "lineage": {
-          "surname": "여",
-          "bongwan": "함양",
-          "clan": "c5ec-d568-c591"
-        },
-        "birthDate": "2049-06-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-여시온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2087,
-            "summary": "여승호는 신내 환승 당직에서 헌장 사본 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-여시온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K055-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "여승민",
-        "lineage": {
-          "surname": "여",
-          "bongwan": "함양",
-          "clan": "c5ec-d568-c591"
-        },
-        "birthDate": "2019-06-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-여시온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "여승민은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-여시온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K055-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승완",
-        "birthDate": "2049-06-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-여시온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2087,
-            "summary": "임승완은 신내 환승 당직에서 헌장 사본 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-여시온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K055-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오승우",
-        "birthDate": "2019-06-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-여시온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오승우는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-여시온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K055-P-01:K055:biological",
-        "from": "FH-K055-P-01",
-        "to": "K055",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-여시온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K055-P-02:FH-K055-P-01:biological",
-        "from": "FH-K055-P-02",
-        "to": "FH-K055-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-여시온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K055-M-01:K055:biological",
-        "from": "FH-K055-M-01",
-        "to": "K055",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-여시온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K055-M-02:FH-K055-M-01:biological",
-        "from": "FH-K055-M-02",
-        "to": "FH-K055-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-여시온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c5ec-d568-c591",
+    "name": "함양 여씨",
+    "crest": "clan-crests/c5ec-d568-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "공장장 강민서가 일하는 구로는 승강장마다 부품대의 작업대가 들어차 있어 열이 가장 많이 나고 가장 많이 새는 역이다. 바람 시간이 오면 여시온이 어느 대에 먼저 불을 넣을지 차례를 부르고, 바람이 자면 그 순서를 거꾸로 해서 끈다. 그는 그 차례를 승강장 기둥에 분필로 적어 두고, 차례에서 밀린 대주가 따지러 오면 기둥부터 가리킨다. 따지러 온 대주가 마흔일곱 해를 산 그보다 나이가 많아도 마찬가지다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "구로역 역반장",
+    "품계": "역반장",
+    "생업": "역반 운영",
+    "일하는 역": "구로역",
+    "잠자는 역": "구로역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "공장장 강민서가 일하는 구로는 승강장마다 부품대의 작업대가 들어차 있어 열이 가장 많이 나고 가장 많이 새는 역이다. 바람 시간이 오면 여시온이 어느 대에 먼저 불을 넣을지 차례를 부르고, 바람이 자면 그 순서를 거꾸로 해서 끈다. 그는 그 차례를 승강장 기둥에 분필로 적어 두고, 차례에서 밀린 대주가 따지러 오면 기둥부터 가리킨다. 따지러 온 대주가 마흔일곱 해를 산 그보다 나이가 많아도 마찬가지다.",
+    "관직": "직함 구로역 역반장. 직위 구로역 역반장 · 자유도시들. 품계 역반장. 일하는 역 구로역."
+  },
+  "values": {
+    "권위": -70,
+    "개방": 35,
+    "무력": -20,
+    "물질": 50,
+    "공동": 10,
+    "원칙": 0,
+    "공개": 55,
+    "자격": 65,
+    "분산": 80,
+    "변혁": 25
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": -40,
+    "위험": 10,
+    "과시": -5,
+    "지속": 0,
+    "지향": "동성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0055",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "여시온",
+        "type": "지휘",
+        "to": "변시람",
+        "basis": "신도림 구간장 변시람의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K045",
+    "name": "변시람",
+    "courtId": "court:K045",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 11,
-        "effective": 11
       }
     },
-    "skills": [
-      {
-        "id": "k055-charter-delivery",
-        "name": {
-          "ko": "헌장 사본 전달",
-          "en": "Charter-copy delivery"
-        },
-        "rating": 60
-      },
-      {
-        "id": "k055-snow-passage-clearing",
-        "name": {
-          "ko": "폭설 통로 개방",
-          "en": "Snow-blocked passage clearing"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k055-three-copies",
-        "name": {
-          "ko": "세 장의 사본",
-          "en": "Three copies"
-        },
-        "description": {
-          "ko": "한 장만 남은 전달은 출발하지 않는다.",
-          "en": "Does not start delivery with only one copy."
-        },
-        "behavior": {
-          "ko": "한 장만 남은 전달은 출발하지 않는다.",
-          "en": "Does not start delivery with only one copy."
-        },
-        "stress": {
-          "ko": "인준을 미끼로 헌장 사본이 회수되고, 길드 평의회가 서울역 정치의 하위 작업반으로 떨어지는 것.",
-          "en": "That the charter copies would be withdrawn with ratification as bait, and the council would fall to Seoul Station politics' subordinate work squad."
-        },
-        "relationship": {
-          "ko": "표강호의 규격 전령로와 경로를 나누고, 강민서의 길드 평의회 선언을 구로 골목에 붙이며, 윤서린의 인준 요구를 게시 이후에만 받는다.",
-          "en": "Splitting routes with Pyo Gangho's standards courier line, pasting Gang Minseo's Fabrication Council declaration in the Guro alleys, and taking Yun Seorin's ratification demands only after posting."
-        },
-        "effects": []
-      },
-      {
-        "id": "k055-practice-before-declaration",
-        "name": {
-          "ko": "규칙과 맞는 선언",
-          "en": "Declarations matching practice"
-        },
-        "description": {
-          "ko": "선언이 작업장 규칙과 다르면 전달을 미룬다.",
-          "en": "Delays delivery when declarations contradict workshop rules."
-        },
-        "behavior": {
-          "ko": "선언이 작업장 규칙과 다르면 전달을 미룬다.",
-          "en": "Delays delivery when declarations contradict workshop rules."
-        },
-        "stress": {
-          "ko": "인준을 미끼로 헌장 사본이 회수되고, 길드 평의회가 서울역 정치의 하위 작업반으로 떨어지는 것.",
-          "en": "That the charter copies would be withdrawn with ratification as bait, and the council would fall to Seoul Station politics' subordinate work squad."
-        },
-        "relationship": {
-          "ko": "표강호의 규격 전령로와 경로를 나누고, 강민서의 길드 평의회 선언을 구로 골목에 붙이며, 윤서린의 인준 요구를 게시 이후에만 받는다.",
-          "en": "Splitting routes with Pyo Gangho's standards courier line, pasting Gang Minseo's Fabrication Council declaration in the Guro alleys, and taking Yun Seorin's ratification demands only after posting."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "폭설 통로를 뚫어 부상자를 먼저 옮기고 헌장 사본을 배달했다. 인준 전 게시의 목표와 실제 전달을 구분했다.",
-      "en": "Cleared a snow-blocked passage to move injured people first and delivered charter copies. Distinguishes the goal of publication before ratification from performed deliveries."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -426,90 +152,29 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
+  "confirmedHoldings": [
     {
-      "id": "title:duchy-44770-S02",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
+      "id": "holding:v3:station:Guro",
+      "name": {
+        "ko": "구로역"
+      },
       "holderPersonId": "K055",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:kingdom-s02",
-      "personalLieges": [
+      "directLiegePersonId": "K045",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "Guro",
+        "stationName": "구로"
+      },
+      "adminRefs": [
         {
-          "holdingId": "holding:opening-duchy-44770-S02",
-          "directLiegePersonId": "K029"
+          "id": "region:1153056000",
+          "name": "구로5동"
         }
       ],
-      "directOwnership": false
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
     }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c5ec-d568-c591",
-    "name": "함양 여씨",
-    "crest": "clan-crests/c5ec-d568-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -35,
-    "개방": 20,
-    "무력": -10,
-    "물질": 35,
-    "공동": 35,
-    "원칙": 10,
-    "공개": 55,
-    "자격": 45,
-    "분산": 25,
-    "변혁": 15
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": -40,
-    "위험": 10,
-    "과시": -5,
-    "지속": 0,
-    "지향": "동성",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "규격맹",
-    "생업": "헌장 사본 전달",
-    "품계": "조합원",
-    "직함": "제작헌장 전령",
-    "업무 위치": "구로5동. 여시온은 구로5동 골목에 붙일 제작헌장 세 사본의 봉인과 날짜를 먼저 확인한다. 표강호의 규격 전령로와 길을 나누고 강민서의 평의회 선언을 게시한 뒤에야 윤서린에게 인준 요구 사본을 넘긴다.",
-    "가치관": "권위 −35 | 개방 20 | 무력 −10 | 물질 35 | 공동 35 | 원칙 10 | 공개 55 | 자격 45 | 분산 25 | 변혁 15",
-    "욕망": "갈망 30 | 독점 −40 | 위험 10 | 과시 −5 | 지속 0 | 지향 동성 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 제작헌장 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 구로5동. 여시온은 구로5동 골목에 붙일 제작헌장 세 사본의 봉인과 날짜를 먼저 확인한다. 표강호의 규격 전령로와 길을 나누고 강민서의 평의회 선언을 게시한 뒤에야 윤서린에게 인준 요구 사본을 넘긴다.",
-    "관직": "품계 조합원. 직함은 제작헌장 전령. 사본은 노동조합·건물조합·경비대가 각각 한 장씩 받고, 한 장만 남은 전달은 출발하지 않는다.",
-    "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 제작헌장 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "표강호의 규격 전령로와 경로를 나누고, 강민서의 길드 평의회 선언을 구로 골목에 붙이며, 윤서린의 인준 요구를 게시 이후에만 받는다.",
-    "야망": "독자 헌장의 수리 규격과 복구 노동 시민권을 기록청 인준 이전에 조합 게시판에 붙여, 법통 빚이 생산 규칙을 삼키지 못하게 한다.",
-    "공포": "인준을 미끼로 헌장 사본이 회수되고, 길드 평의회가 서울역 정치의 하위 작업반으로 떨어지는 것.",
-    "개입": "회수된 사본을 되찾아 게시를 끝내거나, 세 장의 문구가 서로 다름을 밝혀 전령을 교체할 수 있다."
-  },
-  "biography": "깃발보다 헌장 사본을 믿고, 선언 문구가 작업장 규칙과 어긋나면 전달을 하루 미룬다. 경로는 공개하고 가방 속 순서는 숨기지 않는다.\n\n- 소속: 규격맹\n- 생업: 헌장 사본 전달\n- 품계: 조합원\n- 직함: 제작헌장 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 제작헌장 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 구로5동. 여시온은 구로5동 골목에 붙일 제작헌장 세 사본의 봉인과 날짜를 먼저 확인한다. 표강호의 규격 전령로와 길을 나누고 강민서의 평의회 선언을 게시한 뒤에야 윤서린에게 인준 요구 사본을 넘긴다.\n\n**관직.** 품계 조합원. 직함은 제작헌장 전령. 사본은 노동조합·건물조합·경비대가 각각 한 장씩 받고, 한 장만 남은 전달은 출발하지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 제작헌장 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 표강호의 규격 전령로와 경로를 나누고, 강민서의 길드 평의회 선언을 구로 골목에 붙이며, 윤서린의 인준 요구를 게시 이후에만 받는다.\n\n**야망.** 독자 헌장의 수리 규격과 복구 노동 시민권을 기록청 인준 이전에 조합 게시판에 붙여, 법통 빚이 생산 규칙을 삼키지 못하게 한다.\n\n**공포.** 인준을 미끼로 헌장 사본이 회수되고, 길드 평의회가 서울역 정치의 하위 작업반으로 떨어지는 것.\n\n**개입.** 회수된 사본을 되찾아 게시를 끝내거나, 세 장의 문구가 서로 다름을 밝혀 전령을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 20 | 무력 −10 | 물질 35 | 공동 35 | 원칙 10 | 공개 55 | 자격 45 | 분산 25 | 변혁 15\n- 욕망: 갈망 30 | 독점 −40 | 위험 10 | 과시 −5 | 지속 0 | 지향 동성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-02"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "여시온",
-        "type": "계약",
-        "to": "표강호",
-        "basis": "표강호의 규격 전령로와 경로를 나누고"
-      },
-      {
-        "from": "여시온",
-        "type": "계약",
-        "to": "강민서",
-        "basis": "강민서의 규격맹 평의회 선언을 구로 골목에 붙이며"
-      }
-    ],
-    "incoming": []
-  }
+  ]
 }

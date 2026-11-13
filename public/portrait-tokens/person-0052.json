@@ -3,27 +3,27 @@
   "personId": "person-0052",
   "characterId": "K052",
   "name": "배온결",
-  "stateId": "S02",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "공신 보상 원장 서기"
+    "role": "신도림역 역반장 · 자유도시들"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "short cropped hair",
-    "upper": "burgundy buttoned wool vest over a long-sleeved collared shirt",
-    "outfit": "burgundy buttoned wool vest over a long-sleeved collared shirt",
+    "upper": "깃에 남색 끈을 두른 닳은 갈색 합성 섬유 짧은 겉옷, 솜을 둔 조끼",
+    "outfit": "깃에 남색 끈을 두른 닳은 갈색 합성 섬유 짧은 겉옷, 솜을 둔 조끼",
     "palette": [
-      "burgundy",
-      "olive drab",
-      "cream"
+      "earth brown",
+      "navy",
+      "candle yellow"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "olive drab straight wool trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "brown synthetic trousers with patched knees",
+    "footwear": "resoled boots",
+    "accessories": "tin candle lantern and a key ring"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "burgundy buttoned wool vest over a long-sleeved collared shirt",
+        "value": "깃에 남색 끈을 두른 닳은 갈색 합성 섬유 짧은 겉옷, 솜을 둔 조끼",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "olive drab straight wool trousers",
+        "value": "brown synthetic trousers with patched knees",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "resoled boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "quilted vest collar with a navy cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "tin candle lantern and a key ring",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "tin and blackened brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "tin, brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "lantern in hand, keys on the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small cylindrical lantern",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 배온결, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; dark brown with grey at the temples hair; short length. build: soft rounded; skin: fair with a neutral undertone. upper garment: burgundy buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 배온결, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; dark brown with grey at the temples hair; short length. build: soft rounded; skin: fair with a neutral undertone. upper garment: 깃에 남색 끈을 두른 닳은 갈색 합성 섬유 짧은 겉옷, 솜을 둔 조끼; neckline: quilted vest collar with a navy cord. accessories: tin candle lantern and a key ring; worn as lantern in hand, keys on the belt. color palette: earth brown, navy, candle yellow. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 배온결, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; dark brown with grey at the temples hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: burgundy buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: olive drab straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 배온결, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; dark brown with grey at the temples hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: 깃에 남색 끈을 두른 닳은 갈색 합성 섬유 짧은 겉옷, 솜을 둔 조끼; neckline: quilted vest collar with a navy cord; lower garment: brown synthetic trousers with patched knees; footwear: resoled boots. accessories: tin candle lantern and a key ring; worn as lantern in hand, keys on the belt. color palette: earth brown, navy, candle yellow. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 배온결, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; dark brown with grey at the temples hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: burgundy buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: olive drab straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 배온결, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; dark brown with grey at the temples hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: 깃에 남색 끈을 두른 닳은 갈색 합성 섬유 짧은 겉옷, 솜을 둔 조끼; neckline: quilted vest collar with a navy cord; lower garment: brown synthetic trousers with patched knees; footwear: resoled boots. accessories: tin candle lantern and a key ring; worn as lantern in hand, keys on the belt. color palette: earth brown, navy, candle yellow. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 배온결, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; dark brown with grey at the temples hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: burgundy buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: olive drab straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 배온결, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; dark brown with grey at the temples hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: 깃에 남색 끈을 두른 닳은 갈색 합성 섬유 짧은 겉옷, 솜을 둔 조끼; neckline: quilted vest collar with a navy cord; lower garment: brown synthetic trousers with patched knees; footwear: resoled boots. accessories: tin candle lantern and a key ring; worn as lantern in hand, keys on the belt. color palette: earth brown, navy, candle yellow. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 배온결, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; dark brown with grey at the temples hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: burgundy buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: olive drab straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: burgundy, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 배온결, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; dark brown with grey at the temples hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult male height. upper garment: 깃에 남색 끈을 두른 닳은 갈색 합성 섬유 짧은 겉옷, 솜을 둔 조끼; neckline: quilted vest collar with a navy cord; lower garment: brown synthetic trousers with patched knees; footwear: resoled boots. accessories: tin candle lantern and a key ring; worn as lantern in hand, keys on the belt. color palette: earth brown, navy, candle yellow. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

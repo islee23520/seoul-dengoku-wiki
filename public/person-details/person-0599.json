@@ -1,386 +1,106 @@
 {
   "id": "person-0599",
   "name": "안카민",
-  "title": "감사 기록관",
-  "position": "감사 기록관",
+  "title": "가문 징집병",
+  "position": "가문 징집병 · 신반포역",
   "characterId": "K599",
-  "rank": "미등록",
+  "rank": "미세례자",
   "commonTier": "T5",
-  "occupation": "감사 기록·당직 열쇠 인계",
+  "occupation": "가문 징집",
   "gender": "남성",
   "stage": "S4",
-  "state": "S16",
-  "stateName": "정동노총",
-  "sourceRoute": "/world/Cast-State-16#인물-안카민",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0599",
   "birthDate": "2073-09-21",
   "birthday": "09-21",
   "age": 53,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-16.json#/content/369",
-    "lore/characters/Cast-State-16.json#/content/372"
-  ],
-  "familyTree": {
-    "personId": "K599",
-    "nodes": [
-      {
-        "id": "K599",
-        "personId": "K599",
-        "kind": "person",
-        "name": "안카민",
-        "birthDate": "2073-09-21",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K599"
-          },
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-안카민-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 감사 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-안카민-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0599"
-      },
-      {
-        "id": "FH-K599-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "안승완",
-        "lineage": {
-          "surname": "안",
-          "bongwan": "순흥",
-          "clan": "c548-c21c-d765-agreed-bbfc-second"
-        },
-        "birthDate": "2043-09-21",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-안카민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2081,
-            "summary": "안승완은 서울역 등기소에서 감사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-안카민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K599-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "안승훈",
-        "lineage": {
-          "surname": "안",
-          "bongwan": "순흥",
-          "clan": "c548-c21c-d765-agreed-bbfc-second"
-        },
-        "birthDate": "2013-09-21",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-안카민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "안승훈은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-안카민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K599-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김태도",
-        "birthDate": "2043-09-21",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-안카민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2081,
-            "summary": "김태도는 서울역 등기소에서 감사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-안카민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K599-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박재현",
-        "birthDate": "2013-09-21",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-안카민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박재현은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-안카민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K599-P-01:K599:biological",
-        "from": "FH-K599-P-01",
-        "to": "K599",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-안카민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K599-P-02:FH-K599-P-01:biological",
-        "from": "FH-K599-P-02",
-        "to": "FH-K599-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-안카민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K599-M-01:K599:biological",
-        "from": "FH-K599-M-01",
-        "to": "K599",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-안카민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K599-M-02:FH-K599-M-01:biological",
-        "from": "FH-K599-M-02",
-        "to": "FH-K599-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-안카민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c548-c21c-d765",
+    "name": "순흥 안씨",
+    "crest": "clan-crests/c548-c21c-d765.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "서초 곁집이 집안마다 사람 수를 정해 모을 때, 안카민은 젊은 사람을 정비대 일에 남기려고 스스로 이름을 올렸다. 순흥 안씨 집안의 몫으로 나선 쉰세 살의 가문 징집병이다. 평소에는 신반포 대피소의 출입구 당번을 서고, 부름이 오면 고속터미널 쪽으로 이어진 터널을 따라 모이는 줄에 선다. 부위는 없고, 정비대 앞에 선 날보다 출입구 앞에 선 날이 훨씬 많다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "가문 징집병",
+    "품계": "미세례자",
+    "생업": "가문 징집",
+    "일하는 역": "신반포역",
+    "잠자는 역": "신반포역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 0
+  },
+  "sections": {
+    "생애": "서초 곁집이 집안마다 사람 수를 정해 모을 때, 안카민은 젊은 사람을 정비대 일에 남기려고 스스로 이름을 올렸다. 순흥 안씨 집안의 몫으로 나선 쉰세 살의 가문 징집병이다. 평소에는 신반포 대피소의 출입구 당번을 서고, 부름이 오면 고속터미널 쪽으로 이어진 터널을 따라 모이는 줄에 선다. 부위는 없고, 정비대 앞에 선 날보다 출입구 앞에 선 날이 훨씬 많다.",
+    "관직": "직함 가문 징집병. 직위 가문 징집병 · 신반포역. 품계 미세례자. 일하는 역 신반포역."
+  },
+  "values": {
+    "권위": 0,
+    "개방": 5,
+    "무력": -25,
+    "물질": -50,
+    "공동": 35,
+    "원칙": 30,
+    "공개": -15,
+    "자격": -20,
+    "분산": 15,
+    "변혁": 50
+  },
+  "desire": {
+    "갈망": 20,
+    "독점": 30,
+    "위험": 30,
+    "과시": -30,
+    "지속": -20,
+    "지향": "무성향",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0599",
+    "role": "single",
+    "personFaith": "unbaptised",
+    "houseFaith": "unbaptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
+      "diplomacy": {
+        "base": 4,
+        "effective": 4
       },
-      "strategy": {
-        "base": 6,
-        "effective": 6
-      },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
-      "learning": {
+      "martial": {
         "base": 9,
         "effective": 9
       },
+      "stewardship": {
+        "base": 4,
+        "effective": 4
+      },
+      "intrigue": {
+        "base": 5,
+        "effective": 5
+      },
+      "learning": {
+        "base": 4,
+        "effective": 4
+      },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
+        "base": 10,
+        "effective": 10
       }
     },
-    "skills": [
-      {
-        "id": "membership-comparison",
-        "name": {
-          "ko": "조합원 명부 대조",
-          "en": "Membership register comparison"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "원본 기준으로 대조",
-          "en": "Compares against originals"
-        },
-        "description": {
-          "ko": "파벌 명단을 원본과 이름마다 맞춰 중복과 누락을 나누고 대조표를 인계했다. 확인된 행동 범위를 넘는 권한과 성과는 부여하지 않는다.",
-          "en": "Matched faction lists name by name to the original, separated duplicates and omissions, and handed over the comparison. No authority or achievement beyond these actions is granted."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 원본 기준으로 대조을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "교대가 막히거나 기록이 사라지면 원본과 인계를 재확인할 수 있다.",
-          "en": "May recheck originals and handovers when shifts are blocked or records disappear."
-        },
-        "relationship": {
-          "ko": "다음 당직에게 열쇠와 기록을 넘기며 파벌의 인계 방해를 경계한다.",
-          "en": "Hands keys and records to the next duty worker and watches for factional obstruction."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "감사 기록관 자리에서 시청역 조합 장부를 끊기지 않게 잇고, 작업장 파벌이 갈려도 조합원 전원의 위원장 직접선거 결과를 지킨다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "감사 기록관 당직이 비고 선거 파벌이 인수인계를 가로막아 정동노총의 통행이 강국 볼모가 되는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "다음 당직에게 열쇠와 기록을 넘기며 파벌의 인계 방해를 경계한다.",
-          "en": "Hands keys and records to the next duty worker and watches for factional obstruction."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "파벌 명단을 원본과 이름마다 맞춰 중복과 누락을 나누고 대조표를 인계했다. 확인된 행동 범위를 넘는 권한과 성과는 부여하지 않는다.",
-      "en": "Matched faction lists name by name to the original, separated duplicates and omissions, and handed over the comparison. No authority or achievement beyond these actions is granted."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -418,66 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c548-c21c-d765",
-    "name": "순흥 안씨",
-    "crest": "clan-crests/c548-c21c-d765.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -25,
-    "개방": 20,
-    "무력": -35,
-    "물질": 0,
-    "공동": 15,
-    "원칙": 40,
-    "공개": 30,
-    "자격": 15,
-    "분산": 45,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 20,
-    "독점": 30,
-    "위험": 30,
-    "과시": -30,
-    "지속": -20,
-    "지향": "무성향",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "감사 기록·당직 열쇠 인계",
-    "소속": "정동노총",
-    "공동체 역할": "조합원",
-    "직무": "감사 기록관",
-    "가치관": "권위 −25 | 개방 20 | 무력 −35 | 물질 0 | 공동 15 | 원칙 40 | 공개 30 | 자격 15 | 분산 45 | 변혁 5",
-    "욕망": "갈망 20 | 독점 30 | 위험 30 | 과시 −30 | 지속 −20 | 지향 무성향 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2073-09-21에 태어난 안카민은 영구 겨울의 시청역 조합 작업장에서 감사 기록관 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 안카민은 소공동의 시청역 조합 작업장에서 감사 기록관 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "직무": "공동체 역할은 조합원이며 직무는 감사 기록관이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.",
-    "일화": "위원장 직접선거를 앞두고 작업장 파벌과 노선 파벌이 서로 다른 조합원 명단을 감사 당직에 낸다. 안카민은 두 명단을 조합원 명부 원본과 이름마다 대조해 겹친 이름과 빠진 이름을 나누어 적고, 그 대조표와 당직 열쇠를 다음 감사 당직에게 건넨다.",
-    "관계": "안카민의 기존 관계 기록은 다음과 같다. 같은 업무·생활권 선배 당직과 인수인계로 묶인다.",
-    "목표": "안카민은 감사 기록관 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.",
-    "공포": "감사 기록관 업무의 서명이나 인계 기록이 바뀌어 안카민의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.",
-    "개입": "안카민은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다."
-  },
-  "biography": "안카민은 영구 겨울의 시청역 조합 작업장에서 감사 기록관 업무 기록과 공개 표결 서명을 먼저 대조한다. 급수·통행·계약 일정이 겹치는 날에는 접수 시각과 인계 순서를 같은 장부에 남긴다.\n\n- 생업: 감사 기록·당직 열쇠 인계\n- 소속: 정동노총\n- 공동체 역할: 조합원\n- 직무: 감사 기록관\n**생애.** 2073-09-21에 태어난 안카민은 영구 겨울의 시청역 조합 작업장에서 감사 기록관 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 안카민은 소공동의 시청역 조합 작업장에서 감사 기록관 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**직무.** 공동체 역할은 조합원이며 직무는 감사 기록관이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.\n\n**일화.** 위원장 직접선거를 앞두고 작업장 파벌과 노선 파벌이 서로 다른 조합원 명단을 감사 당직에 낸다. 안카민은 두 명단을 조합원 명부 원본과 이름마다 대조해 겹친 이름과 빠진 이름을 나누어 적고, 그 대조표와 당직 열쇠를 다음 감사 당직에게 건넨다.\n\n**관계.** 안카민의 기존 관계 기록은 다음과 같다. 같은 업무·생활권 선배 당직과 인수인계로 묶인다.\n\n**목표.** 안카민은 감사 기록관 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.\n\n**공포.** 감사 기록관 업무의 서명이나 인계 기록이 바뀌어 안카민의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.\n\n**개입.** 안카민은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 20 | 무력 −35 | 물질 0 | 공동 15 | 원칙 40 | 공개 30 | 자격 15 | 분산 45 | 변혁 5\n- 욕망: 갈망 20 | 독점 30 | 위험 30 | 과시 −30 | 지속 −20 | 지향 무성향 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-16"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "안카민",
-        "type": "계약",
-        "to": "안태경",
-        "basis": "안카민은 파벌별 조합원 명단을 원본과 대조한 중복·누락표를 안태경에게 넘긴다. 안태경은 투표 명부와 출석을 공개할 때 그 차이를 확인해, 파벌 명단이 조합원 전체의 투표 기록을 대신하지 않게 한다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

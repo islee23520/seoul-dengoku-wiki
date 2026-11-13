@@ -1,387 +1,108 @@
 {
   "id": "person-0296",
   "name": "순하준",
-  "title": "둘째 급수협약 차륜 교환 증인",
-  "position": "성하전자 차륜 교환 증인",
+  "title": "정비공",
+  "position": "정비공 · 방배역",
   "characterId": "K295",
-  "rank": "사원",
+  "rank": "정비공",
   "commonTier": "T5",
-  "occupation": "차륜 입고 중량·출고 증언",
+  "occupation": "이식 정비",
   "gender": "여성",
   "stage": "S3",
-  "state": "S11",
-  "stateName": "성하그룹",
-  "sourceRoute": "/world/Cast-State-11#인물-순하준",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0296",
   "birthDate": "2064-03-06",
   "birthday": "03-06",
   "age": 62,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-11.json#/content/259"
-  ],
-  "familyTree": {
-    "personId": "K295",
-    "nodes": [
-      {
-        "id": "K295",
-        "personId": "K295",
-        "kind": "person",
-        "name": "순하준",
-        "birthDate": "2064-03-06",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K295"
-          },
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-순하준-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 성하전자 차륜 교환 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-순하준-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0296"
-      },
-      {
-        "id": "FH-K295-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "순승윤",
-        "lineage": {
-          "surname": "순",
-          "bongwan": "홍산",
-          "clan": "c21c-d64d-c0b0"
-        },
-        "birthDate": "2034-03-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-순하준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "순승윤은 영등포 정수 당직에서 차륜 입고 중량·출고 증언 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-순하준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K295-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "순승우",
-        "lineage": {
-          "surname": "순",
-          "bongwan": "홍산",
-          "clan": "c21c-d64d-c0b0"
-        },
-        "birthDate": "2004-03-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-순하준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "순승우는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-순하준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K295-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임준석",
-        "birthDate": "2034-03-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-순하준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "임준석은 영등포 정수 당직에서 차륜 입고 중량·출고 증언 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-순하준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K295-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현솔",
-        "birthDate": "2004-03-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-순하준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오현솔은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-순하준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K295-P-01:K295:biological",
-        "from": "FH-K295-P-01",
-        "to": "K295",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-순하준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K295-P-02:FH-K295-P-01:biological",
-        "from": "FH-K295-P-02",
-        "to": "FH-K295-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-순하준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K295-M-01:K295:biological",
-        "from": "FH-K295-M-01",
-        "to": "K295",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-순하준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K295-M-02:FH-K295-M-01:biological",
-        "from": "FH-K295-M-02",
-        "to": "FH-K295-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-순하준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c21c-d64d-c0b0",
+    "name": "홍산 순씨",
+    "crest": "clan-crests/c21c-d64d-c0b0.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "2096년 두 번째 급수계약 때, 서른두 살의 순하준은 서초 쪽 대피소가 도장을 찍는 자리에 물을 나르러 들어갔다가 그 자리를 보았다. 지금도 방배역 정비대에서 젊은 정비공이 그 일을 물으면, 도장이 몇 개였고 누가 먼저 찍었는지를 차례대로 말한다. 예순둘인 지금 그의 일은 경계에서 넘어온 부품을 정비대에 들이기 전에 닦고 가려 두는 것이다. 하나뿐인 부위를 받은 날도 그는 도장 찍던 날만큼 또렷이 기억한다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "정비공",
+    "품계": "정비공",
+    "생업": "이식 정비",
+    "일하는 역": "방배역",
+    "잠자는 역": "방배역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "2096년 두 번째 급수계약 때, 서른두 살의 순하준은 서초 쪽 대피소가 도장을 찍는 자리에 물을 나르러 들어갔다가 그 자리를 보았다. 지금도 방배역 정비대에서 젊은 정비공이 그 일을 물으면, 도장이 몇 개였고 누가 먼저 찍었는지를 차례대로 말한다. 예순둘인 지금 그의 일은 경계에서 넘어온 부품을 정비대에 들이기 전에 닦고 가려 두는 것이다. 하나뿐인 부위를 받은 날도 그는 도장 찍던 날만큼 또렷이 기억한다.",
+    "관직": "직함 정비공. 직위 정비공 · 방배역. 품계 정비공. 일하는 역 방배역."
+  },
+  "values": {
+    "권위": 35,
+    "개방": -15,
+    "무력": 0,
+    "물질": -15,
+    "공동": 30,
+    "원칙": 0,
+    "공개": -50,
+    "자격": 20,
+    "분산": -20,
+    "변혁": 25
+  },
+  "desire": {
+    "갈망": -10,
+    "독점": 10,
+    "위험": 30,
+    "과시": 20,
+    "지속": 5,
+    "지향": "양성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0296",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 9,
-        "effective": 9
-      },
-      "learning": {
-        "base": 7,
-        "effective": 7
-      },
-      "prowess": {
+      "martial": {
         "base": 3,
         "effective": 3
       },
-      "endurance": {
+      "stewardship": {
+        "base": 7,
+        "effective": 7
+      },
+      "intrigue": {
         "base": 6,
         "effective": 6
-      }
-    },
-    "skills": [
-      {
-        "id": "k295-specification-and-weight-verification",
-        "name": {
-          "ko": "규격·중량 확인",
-          "en": "Specification and weight verification"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "k295-priority",
-        "name": {
-          "ko": "교환의 증인",
-          "en": "Witness to exchange"
-        },
-        "description": {
-          "ko": "순하준은 수명이 다한 부품 상자를 저울에 올리고 규격 도장을 확인했다. 보증인 실종 뒤 증언이 군수 출고 근거로 바뀌는 것을 두려워한다.",
-          "en": "Sun Hajun weighed exhausted parts and checked specification seals. He fears his testimony will justify military shipments after the guarantor disappears."
-        },
-        "behavior": {
-          "ko": "입고 중량을 두 증인이 보고, 가문 문장이 찍힌 주문서는 회장실 인준 전 출고를 막는다.",
-          "en": "Office. Rank: assistant manager. Title: water contract wheel exchange witness. Two witnesses reported intake weights, and he blocked the release of any order stamped with a house seal before the seniority council's ratification."
-        },
-        "stress": {
-          "ko": "보증인이 사라진 뒤 교환 증언이 군수 전용 출고의 근거로만 인용되는 것.",
-          "en": "Fear. That after the guarantor vanished, the exchange testimony would be cited only as grounds for munitions-only releases."
-        },
-        "relationship": {
-          "ko": "황노을의 회수 저울에 협약 중량을 겹치고, 추한결의 용산 환적 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸의 성하전자 쪽 출고를 증언한다.",
-          "en": "Relations. Overlaid the treaty tonnage on Hwang Noeul's salvage scales, pointed to the same box as Choo Hangyeol's Yongsan transshipment testimony, and witnessed the Changdong-side release of the parts column Im Hajun had guaranteed."
-        },
-        "effects": []
       },
-      {
-        "id": "k295-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 사원. 직함은 성하전자 차륜 교환 증인. 입고 중량을 두 증인이 보고, 가문 문장이 찍힌 주문서는 회장실 인준 전 출고를 막는다.",
-          "en": "Office. Rank: assistant manager. Title: water contract wheel exchange witness. Two witnesses reported intake weights, and he blocked the release of any order stamped with a house seal before the seniority council's ratification."
-        },
-        "stress": {
-          "ko": "공포. 보증인이 사라진 뒤 교환 증언이 군수 전용 출고의 근거로만 인용되는 것.",
-          "en": "Fear. That after the guarantor vanished, the exchange testimony would be cited only as grounds for munitions-only releases."
-        },
-        "relationship": {
-          "ko": "관계. 황노을의 회수 저울에 협약 중량을 겹치고, 추한결의 용산 환적 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸의 성하전자 쪽 출고를 증언한다.",
-          "en": "Relations. Overlaid the treaty tonnage on Hwang Noeul's salvage scales, pointed to the same box as Choo Hangyeol's Yongsan transshipment testimony, and witnessed the Changdong-side release of the parts column Im Hajun had guaranteed."
-        },
-        "effects": []
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "순하준은 수명이 다한 부품 상자를 저울에 올리고 규격 도장을 확인했다. 보증인 실종 뒤 증언이 군수 출고 근거로 바뀌는 것을 두려워한다.",
-      "en": "Sun Hajun weighed exhausted parts and checked specification seals. He fears his testimony will justify military shipments after the guarantor disappears."
     },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -391,7 +112,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -417,72 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c21c-d64d-c0b0",
-    "name": "홍산 순씨",
-    "crest": "clan-crests/c21c-d64d-c0b0.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 10,
-    "개방": 0,
-    "무력": -10,
-    "물질": 35,
-    "공동": 10,
-    "원칙": 10,
-    "공개": -5,
-    "자격": 55,
-    "분산": 10,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": -10,
-    "독점": 10,
-    "위험": 30,
-    "과시": 20,
-    "지속": 5,
-    "지향": "양성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "차륜 입고 중량·출고 증언",
-    "소속": "성하그룹",
-    "품계": "사원",
-    "직함": "성하전자 차륜 교환 증인",
-    "가치관": "권위 10 | 개방 0 | 무력 −10 | 물질 35 | 공동 10 | 원칙 10 | 공개 −5 | 자격 55 | 분산 10 | 변혁 −20",
-    "욕망": "갈망 −10 | 독점 10 | 위험 30 | 과시 20 | 지속 5 | 지향 양성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "영등포 정수 당직에서 자랐다. 성하전자 차륜 교환 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 순하준은 역삼1동에서 차륜 입고 중량·출고 증언 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 황노을의 회수 저울에 협약 중량을 겹치고, 추한결의 용산 환적 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸의 성하전자 쪽 출고를 증언한다",
-    "관직": "품계 사원. 직함은 성하전자 차륜 교환 증인. 입고 중량을 두 증인이 보고, 가문 문장이 찍힌 주문서는 회장실 인준 전 출고를 막는다.",
-    "일화": "급수 계약이 맺어질 때 순하준은 수명이 다한 차륜과 제동 상자를 성하전자 저울에 올리고 규격 도장을 확인했다.",
-    "관계": "황노을의 회수 저울에 협약 중량을 겹치고, 추한결의 용산 환적 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸의 성하전자 쪽 출고를 증언한다.",
-    "야망": "급수 계약의 열차 부품 교환을 성하전자 표준 재고 원장에 남겨 특정 작업 조가 부품을 볼모로 후계를 흔들지 못하게 한다.",
-    "공포": "보증인이 사라진 뒤 교환 증언이 군수 전용 출고의 근거로만 인용되는 것.",
-    "개입": "철재 로트를 회수하거나, 가문 쪽 출고를 회장실에서 정지시킬 수 있다."
-  },
-  "biography": "무게를 속이는 출고를 선로를 깎는 일과 같다고 보고, 이씨 가문 전용 칸으로 빠지는 짐을 가혹하게 세운다. 시세보다 공개 저울을 믿는다.\n\n- 생업: 차륜 입고 중량·출고 증언\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 차륜 교환 증인\n**생애.** 영등포 정수 당직에서 자랐다. 성하전자 차륜 교환 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 순하준은 역삼1동에서 차륜 입고 중량·출고 증언 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 황노을의 회수 저울에 협약 중량을 겹치고, 추한결의 용산 환적 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸의 성하전자 쪽 출고를 증언한다\n\n**관직.** 품계 사원. 직함은 성하전자 차륜 교환 증인. 입고 중량을 두 증인이 보고, 가문 문장이 찍힌 주문서는 회장실 인준 전 출고를 막는다.\n\n**일화.** 급수 계약이 맺어질 때 순하준은 수명이 다한 차륜과 제동 상자를 성하전자 저울에 올리고 규격 도장을 확인했다.\n\n**관계.** 황노을의 회수 저울에 협약 중량을 겹치고, 추한결의 용산 환적 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸의 성하전자 쪽 출고를 증언한다.\n\n**야망.** 급수 계약의 열차 부품 교환을 성하전자 표준 재고 원장에 남겨 특정 작업 조가 부품을 볼모로 후계를 흔들지 못하게 한다.\n\n**공포.** 보증인이 사라진 뒤 교환 증언이 군수 전용 출고의 근거로만 인용되는 것.\n\n**개입.** 철재 로트를 회수하거나, 가문 쪽 출고를 회장실에서 정지시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 0 | 무력 −10 | 물질 35 | 공동 10 | 원칙 10 | 공개 −5 | 자격 55 | 분산 10 | 변혁 −20\n- 욕망: 갈망 −10 | 독점 10 | 위험 30 | 과시 20 | 지속 5 | 지향 양성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-11"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "순하준",
-        "type": "맹세",
-        "to": "황노을",
-        "basis": "황노을의 회수 저울에 협약 중량을 겹치고"
-      },
-      {
-        "from": "순하준",
-        "type": "맹세",
-        "to": "필리프 뮐러",
-        "basis": "필리프 뮐러의 용산 환적 증언과 같은 상자를 가리키며"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

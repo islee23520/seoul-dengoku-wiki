@@ -1,494 +1,105 @@
 {
   "id": "person-0532",
   "name": "심태양",
-  "title": "처방 서기",
-  "position": "처방 서기",
+  "title": "옷 짓는 이",
+  "position": "옷 짓는 이 · 상월곡역",
   "characterId": "K532",
-  "rank": "수련의",
-  "commonTier": "T3",
-  "occupation": "처방 기록·당직 열쇠 인계",
+  "rank": "등재민",
+  "commonTier": "T5",
+  "occupation": "옷 짓기",
   "gender": "여성",
   "stage": "S4",
-  "state": "S13",
-  "stateName": "흰십자단",
-  "sourceRoute": "/world/Cast-State-13#인물-심태양",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0532",
   "birthDate": "2089-05-01",
   "birthday": "05-01",
   "age": 37,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-13.json#/content/336",
-    "lore/characters/Cast-State-13.json#/content/338",
-    "lore/characters/Cast-State-13.json#/content/339"
-  ],
-  "familyTree": {
-    "personId": "K532",
-    "nodes": [
-      {
-        "id": "K532",
-        "personId": "K532",
-        "kind": "person",
-        "name": "심태양",
-        "birthDate": "2089-05-01",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K532"
-          },
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심태양-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 처방 수련의 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-심태양-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0532"
-      },
-      {
-        "id": "FH-K532-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "심승은",
-        "lineage": {
-          "surname": "심",
-          "bongwan": "청송",
-          "clan": "c2ec-ccad-c1a1-agreed-c591-second"
-        },
-        "birthDate": "2059-05-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심태양-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "심승은은 대합실 당직에서 처방 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-심태양-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K532-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "심승연",
-        "lineage": {
-          "surname": "심",
-          "bongwan": "청송",
-          "clan": "c2ec-ccad-c1a1-agreed-c591-second"
-        },
-        "birthDate": "2029-05-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심태양-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "심승연은 대합실 당직에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-심태양-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K532-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "심승정",
-        "lineage": {
-          "surname": "심",
-          "bongwan": "청송",
-          "clan": "c2ec-ccad-c1a1-agreed-c591-second"
-        },
-        "birthDate": "1999-05-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심태양-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "심승정은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-심태양-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K532-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤태완",
-        "birthDate": "2059-05-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심태양-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "윤태완은 대합실 당직에서 처방 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-심태양-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K532-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한태규",
-        "birthDate": "2029-05-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심태양-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "한태규는 대합실 당직에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-심태양-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K532-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "강태은",
-        "birthDate": "1999-05-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심태양-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강태은은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-심태양-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K532-P-01:K532:biological",
-        "from": "FH-K532-P-01",
-        "to": "K532",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심태양-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K532-P-02:FH-K532-P-01:biological",
-        "from": "FH-K532-P-02",
-        "to": "FH-K532-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심태양-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K532-P-03:FH-K532-P-02:biological",
-        "from": "FH-K532-P-03",
-        "to": "FH-K532-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심태양-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K532-M-01:K532:biological",
-        "from": "FH-K532-M-01",
-        "to": "K532",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심태양-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K532-M-02:FH-K532-M-01:biological",
-        "from": "FH-K532-M-02",
-        "to": "FH-K532-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심태양-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K532-M-03:FH-K532-M-02:biological",
-        "from": "FH-K532-M-03",
-        "to": "FH-K532-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심태양-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c2ec-ccad-c1a1",
+    "name": "청송 심씨",
+    "crest": "clan-crests/c2ec-ccad-c1a1.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "서른일곱 살 심태양의 세대원 칸에는 성북구 상월곡역과 부양 표시가 함께 적혀 있다. 연료 장터에서 일하다 메탄 통 불길에 두 손을 다친 뒤로 노역에서 빠지고 부양 등급으로 배급을 받는다. 지금은 세대의 합성 섬유 옷을 뜯어 누빔옷 솜으로 다시 짓는다. 바늘을 오래 쥐지 못해 한 땀씩 쉬어 가며 꿰매지만, 세대 사람들의 외투는 모두 그의 손을 거쳤다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "옷 짓는 이",
+    "품계": "등재민",
+    "생업": "옷 짓기",
+    "일하는 역": "상월곡역",
+    "잠자는 역": "상월곡역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "서른일곱 살 심태양의 세대원 칸에는 성북구 상월곡역과 부양 표시가 함께 적혀 있다. 연료 장터에서 일하다 메탄 통 불길에 두 손을 다친 뒤로 노역에서 빠지고 부양 등급으로 배급을 받는다. 지금은 세대의 합성 섬유 옷을 뜯어 누빔옷 솜으로 다시 짓는다. 바늘을 오래 쥐지 못해 한 땀씩 쉬어 가며 꿰매지만, 세대 사람들의 외투는 모두 그의 손을 거쳤다.",
+    "관직": "직함 옷 짓는 이. 직위 옷 짓는 이 · 상월곡역. 품계 등재민. 일하는 역 상월곡역."
+  },
+  "values": {
+    "권위": 25,
+    "개방": -20,
+    "무력": -10,
+    "물질": -20,
+    "공동": 25,
+    "원칙": 60,
+    "공개": -10,
+    "자격": 35,
+    "분산": -30,
+    "변혁": -30
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": -15,
+    "위험": -5,
+    "과시": -5,
+    "지속": 20,
+    "지향": "동성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0532",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 5,
+        "effective": 5
+      },
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 6,
+        "effective": 6
+      },
+      "intrigue": {
         "base": 4,
         "effective": 4
       },
-      "strategy": {
-        "base": 5,
-        "effective": 5
-      },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 7,
-        "effective": 7
-      },
       "learning": {
-        "base": 7,
-        "effective": 7
+        "base": 4,
+        "effective": 4
       },
       "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 8,
+        "effective": 8
       }
     },
-    "skills": [
-      {
-        "id": "ledger-preservation",
-        "name": {
-          "ko": "장부 보존",
-          "en": "Ledger preservation"
-        },
-        "rating": 40
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "인명 기록을 먼저 구한다",
-          "en": "Rescues records of people first"
-        },
-        "description": {
-          "ko": "화재 때 인명 장부를 우선 반출했다. 장부 연속성을 원하는 태도와 연결되지만 처방 전문성의 증거는 부족하다.",
-          "en": "They removed the people ledger first in a fire. This fits a concern for continuity but offers little evidence of prescribing expertise."
-        },
-        "behavior": {
-          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.",
-          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
-        },
-        "stress": {
-          "ko": "공포. 처방 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.",
-          "en": "Fear. That the prescription clerk duty post would stand empty and the League's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 수련의. 직함은 처방 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-          "en": "Office. Rank: member. Title: prescription clerk. He handed over only the keys and records of his own post, and never made authority he did not hold."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 수련의. 직함은 처방 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-          "en": "Recorded duty and limits: Office. Rank: member. Title: prescription clerk. He handed over only the keys and records of his own post, and never made authority he did not hold."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 처방 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That the prescription clerk duty post would stand empty and the League's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "화재 때 인명 장부를 우선 반출했다. 장부 연속성을 원하는 태도와 연결되지만 처방 전문성의 증거는 부족하다.",
-      "en": "They removed the people ledger first in a fire. This fits a concern for continuity but offers little evidence of prescribing expertise."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -526,66 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c2ec-ccad-c1a1",
-    "name": "청송 심씨",
-    "crest": "clan-crests/c2ec-ccad-c1a1.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -20,
-    "개방": 35,
-    "무력": -45,
-    "물질": -15,
-    "공동": 20,
-    "원칙": 40,
-    "공개": 15,
-    "자격": 20,
-    "분산": 20,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": -15,
-    "위험": -5,
-    "과시": -5,
-    "지속": 20,
-    "지향": "동성",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "처방 기록·당직 열쇠 인계",
-    "소속": "흰십자단",
-    "품계": "수련의",
-    "직함": "처방 서기",
-    "가치관": "권위 −20 | 개방 35 | 무력 −45 | 물질 −15 | 공동 20 | 원칙 40 | 공개 15 | 자격 20 | 분산 20 | 변혁 −10",
-    "욕망": "갈망 30 | 독점 −15 | 위험 −5 | 과시 −5 | 지속 20 | 지향 동성 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2089-05-01에 태어났다. 2126년 개막 현재 처방 서기 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 교대 무단 결근 대체 당직으로 열렸다.\n- 제기동의 처방 기록·당직 열쇠 인계 창구가 심태양의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 확정하지 않는다.",
-    "관직": "품계 수련의. 직함은 처방 수련의. 자기 직위의 열쇠와 기록만 넘기고, 인계한 열쇠와 기록의 수령 시각을 장부에 적는다.",
-    "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.",
-    "관계": "심태양은 화재에서 구한 인명 장부와 처방 기록을 전솔에게 인계한다. 전솔은 병상 대기 명부에서 빠진 환자를 확인하고 중증도에 따라 진료 순서를 잡아, 기록 손실이 치료 누락으로 이어지지 않게 한다.",
-    "야망": "처방 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.",
-    "공포": "처방 수련의 당직이 비면 흰십자단의 통행이 서울 내부 후원 세력 볼모가 되는 일을 두려워한다.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 처방 기록·당직 열쇠 인계\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 처방 서기\n**생애.** 2089-05-01에 태어났다. 2126년 개막 현재 처방 서기 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 교대 무단 결근 대체 당직으로 열렸다.\n- 제기동의 처방 기록·당직 열쇠 인계 창구가 심태양의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 확정하지 않는다.\n\n**관직.** 품계 수련의. 직함은 처방 수련의. 자기 직위의 열쇠와 기록만 넘기고, 인계한 열쇠와 기록의 수령 시각을 장부에 적는다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.\n\n**관계.** 심태양은 화재에서 구한 인명 장부와 처방 기록을 전솔에게 인계한다. 전솔은 병상 대기 명부에서 빠진 환자를 확인하고 중증도에 따라 진료 순서를 잡아, 기록 손실이 치료 누락으로 이어지지 않게 한다.\n\n**야망.** 처방 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.\n\n**공포.** 처방 수련의 당직이 비면 흰십자단의 통행이 서울 내부 후원 세력 볼모가 되는 일을 두려워한다.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 35 | 무력 −45 | 물질 −15 | 공동 20 | 원칙 40 | 공개 15 | 자격 20 | 분산 20 | 변혁 −10\n- 욕망: 갈망 30 | 독점 −15 | 위험 −5 | 과시 −5 | 지속 20 | 지향 동성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-13"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "심태양",
-        "type": "계약",
-        "to": "전솔",
-        "basis": "심태양은 화재에서 구한 인명 장부와 처방 기록을 전솔에게 인계한다. 전솔은 병상 대기 명부에서 빠진 환자를 확인하고 중증도에 따라 진료 순서를 잡아, 기록 손실이 치료 누락으로 이어지지 않게 한다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

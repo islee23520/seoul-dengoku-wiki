@@ -1,514 +1,118 @@
 {
   "id": "person-0795",
   "name": "안남늘",
-  "title": "부품 물류상",
-  "position": "부품 물류상",
+  "title": "세례 전투원",
+  "position": "세례 전투원 · 논현역",
   "characterId": "K795",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "차륜·펌프 정비",
+  "rank": "세례자",
+  "commonTier": "T5",
+  "occupation": "세례 전투",
   "gender": "여성",
   "stage": "S4",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-안남늘",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0795",
   "birthDate": "2096-09-23",
   "birthday": "09-23",
   "age": 30,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/555",
-    "lore/characters/Cast-State-04.json#/content/557",
-    "lore/characters/Cast-State-04.json#/content/558"
-  ],
-  "familyTree": {
-    "personId": "K795",
-    "nodes": [
-      {
-        "id": "K795",
-        "personId": "K795",
-        "kind": "person",
-        "name": "안남늘",
-        "birthDate": "2096-09-23",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K795"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-안남늘-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-안남늘-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0795"
-      },
-      {
-        "id": "FH-K795-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "안승리",
-        "lineage": {
-          "surname": "안",
-          "bongwan": "순흥",
-          "clan": "c548-c21c-d765-agreed-b298-second"
-        },
-        "birthDate": "2066-09-23",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-안남늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2104,
-            "summary": "안승리는 신정 차량기지에서 차륜·펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-안남늘-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K795-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "안승나",
-        "lineage": {
-          "surname": "안",
-          "bongwan": "순흥",
-          "clan": "c548-c21c-d765-agreed-b298-second"
-        },
-        "birthDate": "2036-09-23",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-안남늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "안승나는 신정 차량기지에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-안남늘-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K795-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "안승온",
-        "lineage": {
-          "surname": "안",
-          "bongwan": "순흥",
-          "clan": "c548-c21c-d765-agreed-b298-second"
-        },
-        "birthDate": "2006-09-23",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-안남늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "안승온은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-안남늘-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K795-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정도훈",
-        "birthDate": "2066-09-23",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-안남늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2104,
-            "summary": "정도훈은 신정 차량기지에서 차륜·펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-안남늘-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K795-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤도연",
-        "birthDate": "2036-09-23",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-안남늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "윤도연은 신정 차량기지에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-안남늘-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K795-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "한도정",
-        "birthDate": "2006-09-23",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-안남늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한도정은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-안남늘-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K795-P-01:K795:biological",
-        "from": "FH-K795-P-01",
-        "to": "K795",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-안남늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K795-P-02:FH-K795-P-01:biological",
-        "from": "FH-K795-P-02",
-        "to": "FH-K795-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-안남늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K795-P-03:FH-K795-P-02:biological",
-        "from": "FH-K795-P-03",
-        "to": "FH-K795-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-안남늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K795-M-01:K795:biological",
-        "from": "FH-K795-M-01",
-        "to": "K795",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-안남늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K795-M-02:FH-K795-M-01:biological",
-        "from": "FH-K795-M-02",
-        "to": "FH-K795-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-안남늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K795-M-03:FH-K795-M-02:biological",
-        "from": "FH-K795-M-03",
-        "to": "FH-K795-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-안남늘-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c548-c21c-d765",
+    "name": "순흥 안씨",
+    "crest": "clan-crests/c548-c21c-d765.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "부위 둘을 지닌 세례 전투원 안남늘은 논현역 터널 어귀를 맡은 조의 맨 앞에 선다. 서른 살인 그녀는 사고로 몸 한 곳을 잃고 고치면서 첫째 부위를 받았고, 둘째 부위는 정비장 앞에서 자기 일에 그것이 왜 필요한지 말하고 받았다. 지상에 오를 때 토시를 끝까지 감지 않는 버릇 때문에 정비공들에게 꾸중을 듣는데, 그녀는 그것이 전투원의 버릇이지 어리석음은 아니라고 우긴다. 순흥 안씨 집안 사람이 맞춤 날 정비대에 오르면 그녀는 근무를 바꿔서라도 곁에 앉는다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "세례 전투원",
+    "품계": "세례자",
+    "생업": "세례 전투",
+    "일하는 역": "논현역",
+    "잠자는 역": "논현역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "부위 둘을 지닌 세례 전투원 안남늘은 논현역 터널 어귀를 맡은 조의 맨 앞에 선다. 서른 살인 그녀는 사고로 몸 한 곳을 잃고 고치면서 첫째 부위를 받았고, 둘째 부위는 정비장 앞에서 자기 일에 그것이 왜 필요한지 말하고 받았다. 지상에 오를 때 토시를 끝까지 감지 않는 버릇 때문에 정비공들에게 꾸중을 듣는데, 그녀는 그것이 전투원의 버릇이지 어리석음은 아니라고 우긴다. 순흥 안씨 집안 사람이 맞춤 날 정비대에 오르면 그녀는 근무를 바꿔서라도 곁에 앉는다.",
+    "관직": "직함 세례 전투원. 직위 세례 전투원 · 논현역. 품계 세례자. 일하는 역 논현역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": 5,
+    "무력": -15,
+    "물질": -15,
+    "공동": 60,
+    "원칙": -10,
+    "공개": -55,
+    "자격": 5,
+    "분산": -5,
+    "변혁": 35
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -40,
+    "위험": -30,
+    "과시": 25,
+    "지속": 5,
+    "지향": "유동",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0795",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 4,
         "effective": 4
       },
-      "strategy": {
+      "martial": {
+        "base": 9,
+        "effective": 9
+      },
+      "stewardship": {
+        "base": 4,
+        "effective": 4
+      },
+      "intrigue": {
         "base": 5,
         "effective": 5
       },
-      "negotiation": {
+      "learning": {
         "base": 4,
         "effective": 4
       },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
       "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 11,
+        "effective": 11
       }
     },
-    "skills": [
-      {
-        "id": "wheel",
-        "name": {
-          "ko": "차륜 결함 점검",
-          "en": "Wheel-defect inspection"
-        },
-        "rating": 50
-      },
-      {
-        "id": "handover",
-        "name": {
-          "ko": "기록·열쇠 인수인계",
-          "en": "Record and key handover"
-        },
-        "rating": 40
-      }
-    ],
-    "traits": [
-      {
-        "id": "stop-for-wheel-defects",
-        "name": {
-          "ko": "바퀴 결함에 정지",
-          "en": "Stop for Wheel Defects"
-        },
-        "description": {
-          "ko": "안남늘은 바퀴의 실제 결함을 확인하면 운행보다 정지를 우선하는 성향을 보인다.",
-          "en": "An Namneul shows a disposition to prioritize stopping over continued movement when a wheel defect is detected."
-        },
-        "behavior": {
-          "ko": "탈선 직전 바퀴 결함을 손으로 감지해 열차를 세웠다.",
-          "en": "He detected a wheel defect by touch and stopped the train just before derailment."
-        },
-        "stress": {
-          "ko": "운행 지속과 결함 대응이 충돌하면 통행을 지키기 위해 먼저 멈추는 선택을 할 수 있다.",
-          "en": "If continued operation conflicts with addressing a defect, he may choose to stop first to protect passage."
-        },
-        "relationship": {
-          "ko": "선배 당직에게 인계할 때 자신이 확인한 바퀴 결함과 정지 사실을 중요하게 전달할 수 있다.",
-          "en": "During handover to senior duty staff, he may emphasize the wheel defect he detected and the resulting stop."
-        },
-        "effects": []
-      },
-      {
-        "id": "no-invented-authority",
-        "name": {
-          "ko": "없는 권한 만들지 않기",
-          "en": "No Invented Authority"
-        },
-        "description": {
-          "ko": "안남늘은 결함에 대응하더라도 자기 직위에 없는 권한을 내세우지 않는 태도를 지닌다.",
-          "en": "An Namneul maintains a boundary against claiming powers his position does not grant, even when addressing defects."
-        },
-        "behavior": {
-          "ko": "자기 직위의 열쇠와 기록만 넘기며 결함 발견을 근거로 별도의 권한을 만들어 내지 않는다.",
-          "en": "He transfers only his position’s keys and records without treating defect detection as a source of additional authority."
-        },
-        "stress": {
-          "ko": "당직 공백이 두려워도 대응 범위를 넓히기보다 맡은 권한 안에서 연속성을 지키려 할 수 있다.",
-          "en": "Even if he fears a duty gap, he may seek continuity within his remit rather than expand his authority."
-        },
-        "relationship": {
-          "ko": "선배 당직과는 넘길 수 있는 열쇠와 기록의 범위를 분명히 하는 관계를 선호할 수 있다.",
-          "en": "With senior duty staff, he may favor clear boundaries around which keys and records he can transfer."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 점검의 좁은 강점이며 부품 상인의 거래 이력은 원문에 없다.",
-      "en": "He detected a wheel defect by touch and stopped a train. Narrow inspection is supported; a parts trader’s transaction history is absent."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -534,211 +138,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:barony-gu-41131-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K795",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:duchy-41130-S04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-barony-gu-41131-S04",
-          "directLiegePersonId": "K090"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-gu-41133-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K795",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:duchy-41130-S04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-barony-gu-41133-S04",
-          "directLiegePersonId": "K090"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-gu-41135-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K795",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:duchy-41130-S04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-barony-gu-41135-S04",
-          "directLiegePersonId": "K090"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-gu-41461-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K795",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:duchy-41460-S04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-barony-gu-41461-S04",
-          "directLiegePersonId": "K086"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-gu-41463-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K795",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:duchy-41460-S04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-barony-gu-41463-S04",
-          "directLiegePersonId": "K086"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-gu-41465-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K795",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:duchy-41460-S04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-barony-gu-41465-S04",
-          "directLiegePersonId": "K086"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-gu-43111-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K795",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:duchy-43110-S04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-barony-gu-43111-S04",
-          "directLiegePersonId": "K108"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-gu-43112-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K795",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:duchy-43110-S04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-barony-gu-43112-S04",
-          "directLiegePersonId": "K108"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-gu-43113-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K795",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:duchy-43110-S04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-barony-gu-43113-S04",
-          "directLiegePersonId": "K108"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-gu-43114-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K795",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:duchy-43110-S04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-barony-gu-43114-S04",
-          "directLiegePersonId": "K108"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c548-c21c-d765",
-    "name": "순흥 안씨",
-    "crest": "clan-crests/c548-c21c-d765.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -5,
-    "개방": 20,
-    "무력": -25,
-    "물질": 35,
-    "공동": 40,
-    "원칙": 0,
-    "공개": -10,
-    "자격": 40,
-    "분산": 25,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -40,
-    "위험": -30,
-    "과시": 25,
-    "지속": 5,
-    "지향": "유동",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "차륜·펌프 정비",
-    "품계": "교사",
-    "직함": "부품 물류상",
-    "가치관": "권위 −5 | 개방 20 | 무력 −25 | 물질 35 | 공동 40 | 원칙 0 | 공개 −10 | 자격 40 | 분산 25 | 변혁 −10",
-    "욕망": "갈망 0 | 독점 −40 | 위험 −30 | 과시 25 | 지속 5 | 지향 유동 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2126년 세대. 안남늘은 신정 차량기지에서 자랐다. 안남늘은 탈선 직전 결함 보고로 부품 물류상 자리를 맡았다.\n- 안남늘의 부품 물류상 업무는 성수2가1동과 연결된다.",
-    "관직": "안남늘은 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.",
-    "일화": "2125년 안남늘은 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.",
-    "관계": "안남늘은 같은 생활권 선배 당직자와 인수인계로 묶인다.",
-    "야망": "안남늘은 부품 물류상 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.",
-    "공포": "안남늘은 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.",
-    "개입": "안남늘은 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "안남늘은 당직을 끊지 않는 쪽을 먼저 고른다. 안남늘은 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 차륜·펌프 정비\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 안남늘은 신정 차량기지에서 자랐다. 안남늘은 탈선 직전 결함 보고로 부품 물류상 자리를 맡았다.\n- 안남늘의 부품 물류상 업무는 성수2가1동과 연결된다.\n\n**관직.** 안남늘은 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 안남늘은 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 안남늘은 같은 생활권 선배 당직자와 인수인계로 묶인다.\n\n**야망.** 안남늘은 부품 물류상 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.\n\n**공포.** 안남늘은 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.\n\n**개입.** 안남늘은 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −25 | 물질 35 | 공동 40 | 원칙 0 | 공개 −10 | 자격 40 | 분산 25 | 변혁 −10\n- 욕망: 갈망 0 | 독점 −40 | 위험 −30 | 과시 25 | 지속 5 | 지향 유동 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

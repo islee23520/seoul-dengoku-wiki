@@ -3,26 +3,27 @@
   "personId": "person-0316",
   "characterId": "K315",
   "name": "범온결",
-  "stateId": "S12",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "북동 외곽 관문 통행 증인"
+    "role": "구청 서기 · 월드컵경기장역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "hair pinned in a low chignon bun",
-    "upper": "sand beige plain single-breasted clerk's jacket with cotton oversleeves, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "sand beige plain single-breasted clerk's jacket with cotton oversleeves, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "남색 띠를 두른 누빔 외투",
+    "outfit": "남색 띠를 두른 누빔 외투",
     "palette": [
+      "navy",
       "sand beige",
       "clay brown"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
     "lower": "clay brown high-waisted wide-leg wool trousers",
     "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "brass key ring and a small ledger satchel"
+    "accessories": "civil-servant ID and a leather seal pouch"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -175,25 +176,25 @@
       "headwear": {
         "value": "knitted wool watch cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "sand beige plain single-breasted clerk's jacket with cotton oversleeves, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "남색 띠를 두른 누빔 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
         "value": "clay brown high-waisted wide-leg wool trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
         "value": "thick-soled leather winter boots with wool socks",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -205,39 +206,39 @@
       "neckline": {
         "value": "buttoned shirt collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "civil-servant ID and a leather seal pouch",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "navy cord and dark brown leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "card, leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "ID round the neck, pouch at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat card and a small square pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 범온결, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; black streaked with grey hair; long length. build: slim; skin: light warm beige. headwear: knitted wool watch cap; upper garment: sand beige plain single-breasted clerk's jacket with cotton oversleeves, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: sand beige, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 범온결, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; black streaked with grey hair; long length. build: slim; skin: light warm beige. headwear: knitted wool watch cap; upper garment: 남색 띠를 두른 누빔 외투; neckline: buttoned shirt collar. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, sand beige, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 범온결, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; black streaked with grey hair; long length. build: slim; skin: light warm beige; average adult female height. headwear: knitted wool watch cap; upper garment: sand beige plain single-breasted clerk's jacket with cotton oversleeves, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned shirt collar; lower garment: clay brown high-waisted wide-leg wool trousers; footwear: thick-soled leather winter boots with wool socks. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: sand beige, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 범온결, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; black streaked with grey hair; long length. build: slim; skin: light warm beige; average adult female height. headwear: knitted wool watch cap; upper garment: 남색 띠를 두른 누빔 외투; neckline: buttoned shirt collar; lower garment: clay brown high-waisted wide-leg wool trousers; footwear: thick-soled leather winter boots with wool socks. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, sand beige, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 범온결, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; black streaked with grey hair; long length. build: slim; skin: light warm beige; average adult female height. headwear: knitted wool watch cap; upper garment: sand beige plain single-breasted clerk's jacket with cotton oversleeves, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned shirt collar; lower garment: clay brown high-waisted wide-leg wool trousers; footwear: thick-soled leather winter boots with wool socks. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: sand beige, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 범온결, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; black streaked with grey hair; long length. build: slim; skin: light warm beige; average adult female height. headwear: knitted wool watch cap; upper garment: 남색 띠를 두른 누빔 외투; neckline: buttoned shirt collar; lower garment: clay brown high-waisted wide-leg wool trousers; footwear: thick-soled leather winter boots with wool socks. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, sand beige, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 범온결, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; black streaked with grey hair; long length. build: slim; skin: light warm beige; average adult female height. headwear: knitted wool watch cap; upper garment: sand beige plain single-breasted clerk's jacket with cotton oversleeves, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned shirt collar; lower garment: clay brown high-waisted wide-leg wool trousers; footwear: thick-soled leather winter boots with wool socks. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: sand beige, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 범온결, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; black streaked with grey hair; long length. build: slim; skin: light warm beige; average adult female height. headwear: knitted wool watch cap; upper garment: 남색 띠를 두른 누빔 외투; neckline: buttoned shirt collar; lower garment: clay brown high-waisted wide-leg wool trousers; footwear: thick-soled leather winter boots with wool socks. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, sand beige, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 범온결, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; black streaked with grey hair; long length. build: slim; skin: light warm beige; average adult female height. headwear: knitted wool watch cap; upper garment: sand beige plain single-breasted clerk's jacket with cotton oversleeves, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned shirt collar; lower garment: clay brown high-waisted wide-leg wool trousers; footwear: thick-soled leather winter boots with wool socks. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: sand beige, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 범온결, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted red lips. hair pinned in a low chignon bun; black streaked with grey hair; long length. build: slim; skin: light warm beige; average adult female height. headwear: knitted wool watch cap; upper garment: 남색 띠를 두른 누빔 외투; neckline: buttoned shirt collar; lower garment: clay brown high-waisted wide-leg wool trousers; footwear: thick-soled leather winter boots with wool socks. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, sand beige, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

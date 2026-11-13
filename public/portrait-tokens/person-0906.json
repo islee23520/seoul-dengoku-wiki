@@ -3,27 +3,27 @@
   "personId": "person-0906",
   "characterId": "K906",
   "name": "서돌서",
-  "stateId": "S03",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "종자 기록관"
+    "role": "가문 징집병 · 사평역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "short wavy hair",
-    "upper": "cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
-    "outfit": "cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+    "upper": "틈을 꿰매 둔 크림색 모직·펠트 겹옷, 오른쪽 깃에 땀 없음",
+    "outfit": "틈을 꿰매 둔 크림색 모직·펠트 겹옷, 오른쪽 깃에 땀 없음",
     "palette": [
       "cream",
       "sand beige",
-      "burgundy"
+      "faded red"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "sand beige high-waisted pleated trousers",
+    "lower": "sand beige quilted trousers with sewn-shut gaps at the knees",
     "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "accessories": "red armband with diagonal stripes on the upper arm"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+        "value": "틈을 꿰매 둔 크림색 모직·펠트 겹옷, 오른쪽 깃에 땀 없음",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "sand beige high-waisted pleated trousers",
+        "value": "sand beige quilted trousers with sewn-shut gaps at the knees",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
         "value": "laced leather walking shoes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "high quilted collar without stitched lines",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "red armband with diagonal stripes on the upper arm",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "faded red with dark diagonal stripes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "wool felt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "tied around the left upper arm",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "narrow band",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 서돌서, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black streaked with grey hair; short length. build: lean; skin: medium warm beige. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, sand beige, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 서돌서, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black streaked with grey hair; short length. build: lean; skin: medium warm beige. upper garment: 틈을 꿰매 둔 크림색 모직·펠트 겹옷, 오른쪽 깃에 땀 없음; neckline: high quilted collar without stitched lines. accessories: red armband with diagonal stripes on the upper arm; worn as tied around the left upper arm. color palette: cream, sand beige, faded red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 서돌서, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black streaked with grey hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, sand beige, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 서돌서, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black streaked with grey hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: 틈을 꿰매 둔 크림색 모직·펠트 겹옷, 오른쪽 깃에 땀 없음; neckline: high quilted collar without stitched lines; lower garment: sand beige quilted trousers with sewn-shut gaps at the knees; footwear: laced leather walking shoes. accessories: red armband with diagonal stripes on the upper arm; worn as tied around the left upper arm. color palette: cream, sand beige, faded red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 서돌서, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black streaked with grey hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, sand beige, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 서돌서, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black streaked with grey hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: 틈을 꿰매 둔 크림색 모직·펠트 겹옷, 오른쪽 깃에 땀 없음; neckline: high quilted collar without stitched lines; lower garment: sand beige quilted trousers with sewn-shut gaps at the knees; footwear: laced leather walking shoes. accessories: red armband with diagonal stripes on the upper arm; worn as tied around the left upper arm. color palette: cream, sand beige, faded red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 서돌서, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black streaked with grey hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, sand beige, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 서돌서, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black streaked with grey hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: 틈을 꿰매 둔 크림색 모직·펠트 겹옷, 오른쪽 깃에 땀 없음; neckline: high quilted collar without stitched lines; lower garment: sand beige quilted trousers with sewn-shut gaps at the knees; footwear: laced leather walking shoes. accessories: red armband with diagonal stripes on the upper arm; worn as tied around the left upper arm. color palette: cream, sand beige, faded red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 서돌서, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black streaked with grey hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, sand beige, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 서돌서, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black streaked with grey hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: 틈을 꿰매 둔 크림색 모직·펠트 겹옷, 오른쪽 깃에 땀 없음; neckline: high quilted collar without stitched lines; lower garment: sand beige quilted trousers with sewn-shut gaps at the knees; footwear: laced leather walking shoes. accessories: red armband with diagonal stripes on the upper arm; worn as tied around the left upper arm. color palette: cream, sand beige, faded red. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

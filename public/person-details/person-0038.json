@@ -1,395 +1,125 @@
 {
   "id": "person-0038",
   "name": "허다온",
-  "title": "천왕기지 차륜 정비사(규격맹 조합원)",
-  "position": "천왕기지 차륜 정비사(규격맹 조합원)",
+  "title": "작업조장",
+  "position": "작업조장 · 천왕역",
   "characterId": "K038",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "차륜 정비",
+  "rank": "작업조장",
+  "commonTier": "T5",
+  "occupation": "차량 정비",
   "gender": "남성",
   "stage": "S2",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-허다온",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0038",
   "birthDate": "2076-10-24",
   "birthday": "10-24",
   "age": 50,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/126",
-    "lore/characters/Cast-State-02.json#/content/128",
-    "lore/characters/Cast-State-02.json#/content/129"
-  ],
-  "familyTree": {
-    "personId": "K038",
-    "nodes": [
-      {
-        "id": "K038",
-        "personId": "K038",
-        "kind": "person",
-        "name": "허다온",
-        "birthDate": "2076-10-24",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K038"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-허다온-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 천왕기지 차륜 정비사 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-허다온-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0038"
-      },
-      {
-        "id": "FH-K038-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "허승진",
-        "lineage": {
-          "surname": "허",
-          "bongwan": "태인",
-          "clan": "d5c8-d0dc-c778-8a31-agreed-b2e4-first"
-        },
-        "birthDate": "2046-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-허다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2084,
-            "summary": "허승진은 신정 차량기지에서 차륜 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-허다온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K038-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "허승현",
-        "lineage": {
-          "surname": "허",
-          "bongwan": "태인",
-          "clan": "d5c8-d0dc-c778-8a31-agreed-b2e4-first"
-        },
-        "birthDate": "2016-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-허다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "허승현은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-허다온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K038-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승희",
-        "birthDate": "2046-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-허다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2084,
-            "summary": "최승희는 신정 차량기지에서 차륜 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-허다온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K038-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정승연",
-        "birthDate": "2016-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-허다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정승연은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-허다온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K038-P-01:K038:biological",
-        "from": "FH-K038-P-01",
-        "to": "K038",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-허다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K038-P-02:FH-K038-P-01:biological",
-        "from": "FH-K038-P-02",
-        "to": "FH-K038-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-허다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K038-M-01:K038:biological",
-        "from": "FH-K038-M-01",
-        "to": "K038",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-허다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K038-M-02:FH-K038-M-01:biological",
-        "from": "FH-K038-M-02",
-        "to": "FH-K038-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-허다온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d5c8-d0dc-c778-8a31",
+    "name": "태인 허씨",
+    "crest": "clan-crests/d5c8-d0dc-c778-8a31.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "천왕 차량기지에서 궤도 수레와 정비 기관차의 바퀴를 되살리는 장이 맺어지면, 허다온이 그 장에 맞춰 손을 새로 모아 바퀴 깎는 조를 짠다. 계측 없이는 깎지 않는 법을 정시우에게서 배웠고, 깎은 바퀴마다 안쪽 면에 지름을 분필로 적어 둔다. 바퀴를 다 깎으면 온수–천왕 짧은 토막 끝까지 직접 몰고 나갔다 와서, 바퀴 테의 닳은 자리를 손가락으로 쓸어 본다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "작업조장",
+    "품계": "작업조장",
+    "생업": "차량 정비",
+    "일하는 역": "천왕역",
+    "잠자는 역": "천왕역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "천왕 차량기지에서 궤도 수레와 정비 기관차의 바퀴를 되살리는 장이 맺어지면, 허다온이 그 장에 맞춰 손을 새로 모아 바퀴 깎는 조를 짠다. 계측 없이는 깎지 않는 법을 정시우에게서 배웠고, 깎은 바퀴마다 안쪽 면에 지름을 분필로 적어 둔다. 바퀴를 다 깎으면 온수–천왕 짧은 토막 끝까지 직접 몰고 나갔다 와서, 바퀴 테의 닳은 자리를 손가락으로 쓸어 본다.",
+    "관직": "직함 작업조장. 직위 작업조장 · 천왕역. 품계 작업조장. 일하는 역 천왕역."
+  },
+  "values": {
+    "권위": -45,
+    "개방": 5,
+    "무력": -20,
+    "물질": 65,
+    "공동": 15,
+    "원칙": 10,
+    "공개": 60,
+    "자격": 65,
+    "분산": 50,
+    "변혁": 15
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": 20,
+    "위험": 30,
+    "과시": -25,
+    "지속": 5,
+    "지향": "유동",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0038",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "허다온",
+        "type": "스승과 제자",
+        "to": "정시우",
+        "basis": "정시우에게서 계측 없이는 깎지 않는 법을 배웠다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "정시우",
+        "type": "스승과 제자",
+        "to": "허다온",
+        "basis": "허다온에게 계측 없이는 깎지 않는 법을 가르쳤다"
+      },
+      {
+        "from": "민웅기",
+        "type": "계약",
+        "to": "허다온",
+        "basis": "천왕 차량기지에서 바퀴 일을 하는 작업조장. 기지 자리와 전기를 나눠 쓰는 장"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 5,
+        "effective": 5
+      },
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 11,
+        "effective": 11
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
-      },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 13,
-        "effective": 13
       },
       "learning": {
-        "base": 12,
-        "effective": 12
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k038-wheel-measuring",
-        "name": {
-          "ko": "차륜 계측",
-          "en": "Wheel measurement"
-        },
-        "rating": 65
-      },
-      {
-        "id": "k038-defect-rejection",
-        "name": {
-          "ko": "불량품 반환",
-          "en": "Defect rejection"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k038-test-not-talk",
-        "name": {
-          "ko": "말보다 제동 시험",
-          "en": "Brake tests before words"
-        },
-        "description": {
-          "ko": "임시 깎기보다 규격과 제동 시험을 확인한다.",
-          "en": "Checks standards and brake tests rather than improvised shaving."
-        },
-        "behavior": {
-          "ko": "임시 깎기보다 규격과 제동 시험을 확인한다.",
-          "en": "Checks standards and brake tests rather than improvised shaving."
-        },
-        "stress": {
-          "ko": "경비대가 군수 전용 나사를 따로 깎아 민간 수리망이 하루아침에 호환 불능이 되는 것.",
-          "en": "That the guards would carve separate munitions-only screws, and the civil repair network would lose compatibility overnight."
-        },
-        "relationship": {
-          "ko": "정시우에게 공차 사제로 묶여 있고, 최다인의 공병 작업반에 차륜을 대며, 최한결의 신정 보수열차와 밀봉·차륜을 계약으로 나눈다.",
-          "en": "Bound to Jeong Siwoo as a tolerance apprentice, supplying wheels to Choi Dain's engineering squads, and splitting sealing and wheels by contract with Choi Hangyeol's Sinjeong repair trains."
-        },
-        "effects": []
-      },
-      {
-        "id": "k038-shared-components",
-        "name": {
-          "ko": "호환 부품 책임",
-          "en": "Compatible-component responsibility"
-        },
-        "description": {
-          "ko": "도장 없는 개조품은 유치선에 들이지 않는다.",
-          "en": "Keeps unsealed modifications out of the sidings."
-        },
-        "behavior": {
-          "ko": "도장 없는 개조품은 유치선에 들이지 않는다.",
-          "en": "Keeps unsealed modifications out of the sidings."
-        },
-        "stress": {
-          "ko": "경비대가 군수 전용 나사를 따로 깎아 민간 수리망이 하루아침에 호환 불능이 되는 것.",
-          "en": "That the guards would carve separate munitions-only screws, and the civil repair network would lose compatibility overnight."
-        },
-        "relationship": {
-          "ko": "정시우에게 공차 사제로 묶여 있고, 최다인의 공병 작업반에 차륜을 대며, 최한결의 신정 보수열차와 밀봉·차륜을 계약으로 나눈다.",
-          "en": "Bound to Jeong Siwoo as a tolerance apprentice, supplying wheels to Choi Dain's engineering squads, and splitting sealing and wheels by contract with Choi Hangyeol's Sinjeong repair trains."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "공차 학습과 차륜 계측, 불량품 반환이 근거다. 모든 펌프 수리를 숙달했다거나 발명했다는 경력은 없다.",
-      "en": "Tolerance learning, wheel measurement, and defect returns support the profile, without mastery of every pump repair or invention."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -427,118 +157,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d5c8-d0dc-c778-8a31",
-    "name": "태인 허씨",
-    "crest": "clan-crests/d5c8-d0dc-c778-8a31.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -35,
-    "개방": 10,
-    "무력": -15,
-    "물질": 45,
-    "공동": 45,
-    "원칙": 10,
-    "공개": 40,
-    "자격": 60,
-    "분산": 30,
-    "변혁": 30
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": 20,
-    "위험": 30,
-    "과시": -25,
-    "지속": 5,
-    "지향": "유동",
-    "결합": "다자"
-  },
-  "fields": {
-    "소속": "규격맹(전 대전계; 2026-10-22 세력 이동)",
-    "생업": "차륜 정비",
-    "품계": "조합원",
-    "직함": "천왕기지 차륜 정비사",
-    "거주·업무 위치": "오류2동 행정동 범위 거주, 천왕역 대합실의 생활 화물 인계·배급 창구 업무. 주택·침상 권리와 독점 점유를 부여하지 않으며 서울 작위·영지 수여나 무토지 확정이 아니다.",
-    "가치관": "권위 −35 | 개방 10 | 무력 −15 | 물질 45 | 공동 45 | 원칙 10 | 공개 40 | 자격 60 | 분산 30 | 변혁 30",
-    "욕망": "갈망 0 | 독점 20 | 위험 30 | 과시 −25 | 지속 5 | 지향 유동 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 천왕기지 차륜 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n- 신정 차량기지에서 자란 허다온은 천왕 생활권의 차륜 정비사다. 2125년 출고 직전 불량 부품을 돌려보낸 일과 계측 도장 없는 개조품을 거부하는 원칙을 보존한다. 서울 내부 정비표·최다인·최한결과의 계약을 이어 간다. 대덕구 영지 서술은 2026-10-22 세력 이동으로 해소하고 민웅기 직속 관계는 유지한다.\n- 거주·업무 위치: 오류2동 행정동 범위 거주, 천왕역 대합실의 생활 화물 인계·배급 창구 업무. 주택·침상 권리와 독점 점유를 부여하지 않으며 서울 작위·영지 수여나 무토지 확정이 아니다.",
-    "관직": "품계 조합원. 직함은 천왕기지 차륜 정비사. 출고 차륜마다 계측 도장을 찍고, 도장 없는 개조품은 유치선에 들이지 않는다.",
-    "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 천왕기지 차륜 정비사 자리의 서명이 장부에 올랐다.",
-    "관계": "정시우에게 공차 사제로 묶여 있고, 최다인의 공병 작업반에 차륜을 대며, 최한결의 신정 보수열차와 밀봉·차륜을 계약으로 나눈다.",
-    "야망": "서울 전역 차륜 나사의 호환 실측을 천왕 정비표로 고정해 규격맹의 손끝이 된다.",
-    "공포": "경비대가 군수 전용 나사를 따로 깎아 민간 수리망이 하루아침에 호환 불능이 되는 것.",
-    "개입": "봉인 나사의 실측 공차를 가져와 봉인을 풀거나, 군수 전용 나사의 숨은 도면을 찾아 규격 분열을 폭로할 수 있다."
-  },
-  "biography": "공차로 사람을 기억하고, 규격서에 없는 임시 깎기를 사고의 씨앗으로 본다. 말수는 적고 제동 시험으로 대답한다.\n\n- 소속: 규격맹(전 대전계; 2026-10-22 세력 이동)\n- 생업: 차륜 정비\n- 품계: 조합원\n- 직함: 천왕기지 차륜 정비사\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 천왕기지 차륜 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n- 신정 차량기지에서 자란 허다온은 천왕 생활권의 차륜 정비사다. 2125년 출고 직전 불량 부품을 돌려보낸 일과 계측 도장 없는 개조품을 거부하는 원칙을 보존한다. 서울 내부 정비표·최다인·최한결과의 계약을 이어 간다. 대덕구 영지 서술은 2026-10-22 세력 이동으로 해소하고 민웅기 직속 관계는 유지한다.\n- 거주·업무 위치: 오류2동 행정동 범위 거주, 천왕역 대합실의 생활 화물 인계·배급 창구 업무. 주택·침상 권리와 독점 점유를 부여하지 않으며 서울 작위·영지 수여나 무토지 확정이 아니다.\n\n**관직.** 품계 조합원. 직함은 천왕기지 차륜 정비사. 출고 차륜마다 계측 도장을 찍고, 도장 없는 개조품은 유치선에 들이지 않는다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 천왕기지 차륜 정비사 자리의 서명이 장부에 올랐다.\n\n**관계.** 정시우에게 공차 사제로 묶여 있고, 최다인의 공병 작업반에 차륜을 대며, 최한결의 신정 보수열차와 밀봉·차륜을 계약으로 나눈다.\n\n**야망.** 서울 전역 차륜 나사의 호환 실측을 천왕 정비표로 고정해 규격맹의 손끝이 된다.\n\n**공포.** 경비대가 군수 전용 나사를 따로 깎아 민간 수리망이 하루아침에 호환 불능이 되는 것.\n\n**개입.** 봉인 나사의 실측 공차를 가져와 봉인을 풀거나, 군수 전용 나사의 숨은 도면을 찾아 규격 분열을 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 10 | 무력 −15 | 물질 45 | 공동 45 | 원칙 10 | 공개 40 | 자격 60 | 분산 30 | 변혁 30\n- 욕망: 갈망 0 | 독점 20 | 위험 30 | 과시 −25 | 지속 5 | 지향 유동 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-02"
-  ],
-  "directLiege": {
-    "personId": "K1008",
-    "name": "민웅기",
-    "relationKind": "direct-vassal",
-    "ownerTerm": "직속 가신",
-    "courtId": "court:K1008",
-    "effectiveYear": 2126
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "허다온",
-        "type": "계약",
-        "to": "이일섭",
-        "basis": "출고 부품을 함께 확인하도록 차륜 검사 기록을 보낸다"
-      },
-      {
-        "from": "허다온",
-        "type": "사제",
-        "to": "정시우",
-        "basis": "정시우에게 공차 사제로 묶여 있고"
-      },
-      {
-        "from": "허다온",
-        "type": "계약",
-        "to": "최다인",
-        "basis": "최다인의 공병 작업반에 차륜을 대며"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "이일섭",
-        "type": "계약",
-        "to": "허다온",
-        "basis": "차륜 검사 기록으로 분공방 출고 부품의 계측값을 대조한다"
-      },
-      {
-        "from": "명소이",
-        "type": "계약",
-        "to": "허다온",
-        "basis": "허다온의 차륜 시운전에 맞춰 침목을 갈아 끼우며"
-      },
-      {
-        "from": "표예담",
-        "type": "계약",
-        "to": "허다온",
-        "basis": "허다온의 차륜 출고를 배차판에서 보증하고"
-      },
-      {
-        "from": "변주아",
-        "type": "지휘",
-        "to": "허다온",
-        "basis": "허다온의 시운전에 심야 주파수만 빌려 준다"
-      },
-      {
-        "from": "엄누리",
-        "type": "계약",
-        "to": "허다온",
-        "basis": "허다온의 차륜 정비 일지에 균열을 옮기고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

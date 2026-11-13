@@ -1,397 +1,165 @@
 {
   "id": "person-0058",
   "name": "정하린",
-  "title": "생명안전 심사관",
-  "position": "생명안전 심사관",
+  "title": "삼성2동 대피소장",
+  "position": "삼성2동 대피소장 · 아크",
   "characterId": "K058",
-  "rank": "대리",
-  "commonTier": "T5",
-  "occupation": "안전 표본 심사",
+  "rank": "대피소장",
+  "commonTier": "T3",
+  "occupation": "대피소 통솔",
   "gender": "남성",
   "stage": "S1",
-  "state": "S03",
-  "stateName": "태욱그룹",
-  "sourceRoute": "/world/Cast-State-03#인물-정하린",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0058",
   "birthDate": "2072-11-16",
   "birthday": "11-16",
   "age": 54,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-03.json#/content/49",
-    "lore/characters/Cast-State-03.json#/content/51",
-    "lore/characters/Cast-State-03.json#/content/54"
-  ],
-  "familyTree": {
-    "personId": "K058",
-    "nodes": [
-      {
-        "id": "K058",
-        "personId": "K058",
-        "kind": "person",
-        "name": "정하린",
-        "birthDate": "2072-11-16",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K058"
-          },
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-정하린-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 생명안전 심사관 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-정하린-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0058"
-      },
-      {
-        "id": "FH-K058-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정승재",
-        "lineage": {
-          "surname": "정",
-          "bongwan": "경주",
-          "clan": "c815-acbd-c8fc-912d"
-        },
-        "birthDate": "2042-11-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-정하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "정승재는 대합실 당직에서 안전 표본 심사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-정하린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K058-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정승찬",
-        "lineage": {
-          "surname": "정",
-          "bongwan": "경주",
-          "clan": "c815-acbd-c8fc-912d"
-        },
-        "birthDate": "2012-11-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-정하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정승찬은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-정하린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K058-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조승연",
-        "birthDate": "2042-11-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-정하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "조승연은 대합실 당직에서 안전 표본 심사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-정하린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K058-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김승규",
-        "birthDate": "2012-11-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-정하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "김승규는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-정하린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K058-P-01:K058:biological",
-        "from": "FH-K058-P-01",
-        "to": "K058",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-정하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K058-P-02:FH-K058-P-01:biological",
-        "from": "FH-K058-P-02",
-        "to": "FH-K058-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-정하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K058-M-01:K058:biological",
-        "from": "FH-K058-M-01",
-        "to": "K058",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-정하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K058-M-02:FH-K058-M-01:biological",
-        "from": "FH-K058-M-02",
-        "to": "FH-K058-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-정하린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c815-acbd-c8fc-912d",
+    "name": "경주 정씨",
+    "crest": "clan-crests/c815-acbd-c8fc-912d.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "삼성2동 대피소의 대피소장으로, 강남구청역 승강장 칸에서 대피소 명부를 쥔다. 부위가 하나뿐이라 부르기 때는 늘 짧게 답하지만, 명부에 오른 미세례자의 집안과 끼니 차례를 모두 외는 사람으로 통한다. 쉰네 살로, 2122년 대피소들이 아크로 묶이기 전부터 이 대피소의 문을 지켰다. 스물두 살 곁집장 오경재에게 명부를 바치며 맹세했고, 강남 곁집 자리에서 오경재 쪽에 앉는 사람으로 꼽힌다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "삼성2동 대피소장",
+    "품계": "대피소장",
+    "생업": "대피소 통솔",
+    "일하는 역": "강남구청역",
+    "잠자는 역": "강남구청역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "삼성2동 대피소의 대피소장으로, 강남구청역 승강장 칸에서 대피소 명부를 쥔다. 부위가 하나뿐이라 부르기 때는 늘 짧게 답하지만, 명부에 오른 미세례자의 집안과 끼니 차례를 모두 외는 사람으로 통한다. 쉰네 살로, 2122년 대피소들이 아크로 묶이기 전부터 이 대피소의 문을 지켰다. 스물두 살 곁집장 오경재에게 명부를 바치며 맹세했고, 강남 곁집 자리에서 오경재 쪽에 앉는 사람으로 꼽힌다.",
+    "관직": "직함 삼성2동 대피소장. 직위 삼성2동 대피소장 · 아크. 품계 대피소장. 일하는 역 강남구청역."
+  },
+  "values": {
+    "권위": 25,
+    "개방": 5,
+    "무력": -30,
+    "물질": -40,
+    "공동": 15,
+    "원칙": 45,
+    "공개": -15,
+    "자격": 5,
+    "분산": -20,
+    "변혁": 60
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": 35,
+    "위험": -35,
+    "과시": -10,
+    "지속": 35,
+    "지향": "유동",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0058",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "정하린",
+        "type": "지휘",
+        "to": "오경재",
+        "basis": "강남 곁집장 오경재의 직속"
+      },
+      {
+        "from": "정하린",
+        "type": "맹세",
+        "to": "오경재",
+        "basis": "대피소 명부를 강남 곁집장 오경재에게 바치며, 곁집장의 말이 교주의 말과 어긋나지 않는 한 따르겠다고 한 맹세"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "표누리",
+        "type": "지휘",
+        "to": "정하린",
+        "basis": "삼성2동 대피소장 정하린의 직속"
+      },
+      {
+        "from": "변석훈",
+        "type": "지휘",
+        "to": "정하린",
+        "basis": "삼성2동 대피소장 정하린의 직속"
+      },
+      {
+        "from": "방마빛",
+        "type": "지휘",
+        "to": "정하린",
+        "basis": "삼성2동 대피소장 정하린의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K423",
+    "name": "오경재",
+    "courtId": "court:K423",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K058",
+    "members": [
+      {
+        "personId": "K104",
+        "name": "표누리"
+      },
+      {
+        "personId": "K107",
+        "name": "변석훈"
+      },
+      {
+        "personId": "K411",
+        "name": "방마빛"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
-      "learning": {
-        "base": 11,
-        "effective": 11
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "intrigue": {
         "base": 7,
         "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "sample",
-        "name": {
-          "ko": "표본 기록 심사",
-          "en": "Sample-record review"
-        },
-        "rating": 65
-      },
-      {
-        "id": "save-register",
-        "name": {
-          "ko": "위기 인명 장부 보존",
-          "en": "Emergency preservation of personnel registers"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "reproducible-records-first",
-        "name": {
-          "ko": "재현 기록 우선",
-          "en": "Reproducible Records First"
-        },
-        "description": {
-          "ko": "정하린은 권위보다 재현 가능한 실험 기록을 안전 판단의 근거로 삼는다.",
-          "en": "Jeong Harin bases safety judgments on reproducible experimental records rather than authority."
-        },
-        "behavior": {
-          "ko": "모든 파견과 기술 인증에 재현 기록을 요구하고 긴급 회의에서도 표본 봉인을 먼저 확인한다.",
-          "en": "She requires reproducible records for every deployment and technical certification and checks sample seals even during urgent meetings."
-        },
-        "stress": {
-          "ko": "심사 기록이 군사 감독 문서로 바뀔 우려가 있다면 검증 기록과 안전심사의 독립성을 더 중시할 수 있다.",
-          "en": "If review records risk becoming military oversight documents, she may place greater weight on verifiable records and independent safety review."
-        },
-        "relationship": {
-          "ko": "수질 표본의 검증이 필요하다면 박누리와의 표본 교환을 활용할 수 있다.",
-          "en": "She may draw on her sample-exchange arrangement with Park Nuri when water samples need verification."
-        },
-        "effects": []
-      },
-      {
-        "id": "lock-down-removal-under-pressure",
-        "name": {
-          "ko": "독촉에 반출 잠금",
-          "en": "Lock Down Removal Under Pressure"
-        },
-        "description": {
-          "ko": "정하린은 책임자의 독촉보다 안전 기준과 반출 거부권을 우선한다.",
-          "en": "Jeong Harin places safety standards and removal vetoes above pressure from the research lead."
-        },
-        "behavior": {
-          "ko": "기준 미달이면 생명안전 연구책임자가 독촉해도 반출을 잠근다.",
-          "en": "She locks down removal when standards are unmet, even if the life-safety research lead presses her."
-        },
-        "stress": {
-          "ko": "보호를 명분으로 연구자를 인질화할 위험이 있다면 안전심사 거부권을 양보하지 않으려 할 수 있다.",
-          "en": "If protection is used to justify holding researchers hostage, she may resist surrendering the safety-review veto."
-        },
-        "relationship": {
-          "ko": "배우진이 군사감독을 요구한다면 정호준과의 거부권 집행 동맹을 바탕으로 반대할 수 있다.",
-          "en": "If Bae Ujin demands military oversight, she may oppose it through her veto-enforcement alliance with Jeong Hojun."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "재현 기록을 요구하고 화재 때 인명 장부를 보존했다. 반복 안전 판단을 반영하되 구조 전투나 연구 면허를 만들지 않는다.",
-      "en": "She requires reproducible records and preserved personnel registers during a fire. Safety judgment is supported, not combat rescue or an invented research license."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -401,7 +169,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -427,114 +195,102 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c815-acbd-c8fc-912d",
-    "name": "경주 정씨",
-    "crest": "clan-crests/c815-acbd-c8fc-912d.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 0,
-    "개방": 20,
-    "무력": -40,
-    "물질": 10,
-    "공동": -5,
-    "원칙": 55,
-    "공개": 30,
-    "자격": 40,
-    "분산": 10,
-    "변혁": 15
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": 35,
-    "위험": -35,
-    "과시": -10,
-    "지속": 35,
-    "지향": "유동",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "태욱그룹",
-    "생업": "안전 표본 심사",
-    "품계": "대리",
-    "직함": "생명안전 심사관",
-    "업무": "가양1동. 정하린은 마곡 표본 호송 기록을 확인하고 검증 자료가 빠지면 반출을 멈춘다.",
-    "가치관": "권위 0 | 개방 20 | 무력 −40 | 물질 10 | 공동 −5 | 원칙 55 | 공개 30 | 자격 40 | 분산 10 | 변혁 15",
-    "욕망": "갈망 0 | 독점 35 | 위험 −35 | 과시 −10 | 지속 35 | 지향 유동 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 정하린은 안전심사 기록과 반출 잠금 내역을 대조해 정호준에게 재현 근거를 제시한다.\n- 업무: 양재1동. 정하린은 안전심사 기록과 반출 잠금 내역을 대조해 정호준에게 재현 근거를 제시한다.\n- 업무: 가양1동. 정하린은 마곡 표본 호송 기록을 확인하고 검증 자료가 빠지면 반출을 멈춘다.",
-    "관직": "품계 대리. 직함은 생명안전 심사관. 모든 파견과 기술 인증에 재현 가능한 실험 기록을 요구하고, 기준 미달이면 생명안전 연구책임자의 독촉이 있어도 반출을 잠근다.",
-    "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다.",
-    "관계": "정호준의 거부권을 현장에서 집행하는 동맹이고, 영등포 감독 박누리와 수질 표본을 교환하는 계약이며, 배우진의 군사감독 요구에는 원한을 품는다.",
-    "야망": "안전심사관의 거부권을 서울 공동기술원장의 첫 조항으로 올려 연구자를 인질로 쓰는 거래를 무효로 만든다.",
-    "공포": "보호를 명분으로 심사 기록이 군사 감독 문서로 바뀌고, 연구자가 세습 직능 인질이 되는 것.",
-    "개입": "오염 표본을 마곡 실험실까지 호송해 거부를 뒷받침하거나, 심사 기록 누락을 찾아 파견 거래를 성사시킬 수 있다."
-  },
-  "biography": "원칙이 뼈보다 단단하고, 재현되지 않은 권위를 실험보다 위험하게 본다. 긴급 회의에서도 표본 봉인 스티커를 먼저 확인한다.\n\n- 소속: 태욱그룹\n- 생업: 안전 표본 심사\n- 품계: 대리\n- 직함: 생명안전 심사관\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 정하린은 안전심사 기록과 반출 잠금 내역을 대조해 정호준에게 재현 근거를 제시한다.\n- 업무: 양재1동. 정하린은 안전심사 기록과 반출 잠금 내역을 대조해 정호준에게 재현 근거를 제시한다.\n- 업무: 가양1동. 정하린은 마곡 표본 호송 기록을 확인하고 검증 자료가 빠지면 반출을 멈춘다.\n\n**관직.** 품계 대리. 직함은 생명안전 심사관. 모든 파견과 기술 인증에 재현 가능한 실험 기록을 요구하고, 기준 미달이면 생명안전 연구책임자의 독촉이 있어도 반출을 잠근다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다.\n\n**관계.** 정호준의 거부권을 현장에서 집행하는 동맹이고, 영등포 감독 박누리와 수질 표본을 교환하는 계약이며, 배우진의 군사감독 요구에는 원한을 품는다.\n\n**야망.** 안전심사관의 거부권을 서울 공동기술원장의 첫 조항으로 올려 연구자를 인질로 쓰는 거래를 무효로 만든다.\n\n**공포.** 보호를 명분으로 심사 기록이 군사 감독 문서로 바뀌고, 연구자가 세습 직능 인질이 되는 것.\n\n**개입.** 오염 표본을 마곡 실험실까지 호송해 거부를 뒷받침하거나, 심사 기록 누락을 찾아 파견 거래를 성사시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 20 | 무력 −40 | 물질 10 | 공동 −5 | 원칙 55 | 공개 30 | 자격 40 | 분산 10 | 변혁 15\n- 욕망: 갈망 0 | 독점 35 | 위험 −35 | 과시 −10 | 지속 35 | 지향 유동 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-03"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1168059000",
+      "name": {
+        "ko": "삼성2동"
+      },
+      "holderPersonId": "K058",
+      "directLiegePersonId": "K423",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1168059000",
+          "name": "삼성2동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
   ],
-  "directLiege": {
-    "personId": "K1005",
-    "name": "정서온",
-    "relationKind": "direct-vassal",
-    "ownerTerm": "직속 가신",
-    "effectiveYear": 2126
-  },
-  "court": {
-    "id": "court:K058",
-    "members": [
-      {
-        "personId": "K068",
-        "name": "진채온"
-      }
-    ]
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "정하린",
-        "type": "지휘",
-        "to": "정호준",
-        "basis": "생명안전 거부권을 현장에서 집행"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:선정릉",
+      "name": {
+        "ko": "선정릉역"
       },
-      {
-        "from": "정하린",
-        "type": "계약",
-        "to": "박누리",
-        "basis": "수질 표본을 영등포와 교환"
+      "holderPersonId": "K104",
+      "directLiegePersonId": "K058",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "선정릉",
+        "stationName": "선정릉"
       },
-      {
-        "from": "정하린",
-        "type": "원한",
-        "to": "배우진",
-        "basis": "군사감독 요구에 대한 원한"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "이봄결",
-        "type": "지휘",
-        "to": "정하린",
-        "basis": "심사관 거부권을 무력으로 받침"
+      "adminRefs": [
+        {
+          "id": "region:1168059000",
+          "name": "삼성2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "표누리",
+      "holderRoute": "/people/person-0105"
+    },
+    {
+      "id": "holding:v3:station:선릉",
+      "name": {
+        "ko": "선릉역"
       },
-      {
-        "from": "유바영",
-        "type": "계약",
-        "to": "정하린",
-        "basis": "유바영은 종자 출고 요청서의 빈 안전심사 날인 칸을 정하린에게 알리고 해당 기록을 넘긴다. 정하린은 재현 가능한 심사 근거를 확인해, 주민대표 날인만 있는 요청이 반출 근거로 처리되지 않게 한다."
+      "holderPersonId": "K107",
+      "directLiegePersonId": "K058",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "선릉",
+        "stationName": "선릉"
       },
-      {
-        "from": "진채온",
-        "type": "지휘",
-        "to": "정하린",
-        "basis": "정하린의 거부권을 진료 쪽에서 집행하는 동맹이고"
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1168059000",
+          "name": "삼성2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "변석훈",
+      "holderRoute": "/people/person-0108"
+    },
+    {
+      "id": "holding:v3:station:강남구청",
+      "name": {
+        "ko": "강남구청역"
+      },
+      "holderPersonId": "K411",
+      "directLiegePersonId": "K058",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "강남구청",
+        "stationName": "강남구청"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1168059000",
+          "name": "삼성2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "방마빛",
+      "holderRoute": "/people/person-0412"
+    }
+  ]
 }

@@ -1,397 +1,123 @@
 {
   "id": "person-0555",
   "name": "서구서",
-  "title": "부품 물류상",
-  "position": "부품 물류상",
+  "title": "교주 호위",
+  "position": "교주 호위 · 잠실역",
   "characterId": "K555",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "차륜·펌프 정비",
+  "rank": "세례자",
+  "commonTier": "T5",
+  "occupation": "경호",
   "gender": "남성",
   "stage": "S4",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-서구서",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0555",
   "birthDate": "2069-08-11",
   "birthday": "08-11",
   "age": 57,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/390",
-    "lore/characters/Cast-State-04.json#/content/392",
-    "lore/characters/Cast-State-04.json#/content/393"
-  ],
-  "familyTree": {
-    "personId": "K555",
-    "nodes": [
-      {
-        "id": "K555",
-        "personId": "K555",
-        "kind": "person",
-        "name": "서구서",
-        "birthDate": "2069-08-11",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K555"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-서구서-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-서구서-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0555"
-      },
-      {
-        "id": "FH-K555-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "서승규",
-        "lineage": {
-          "surname": "서",
-          "bongwan": "달성",
-          "clan": "c11c-b2ec-c131-agreed-c11c-second"
-        },
-        "birthDate": "2039-08-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-서구서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "서승규는 신정 차량기지에서 차륜·펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-서구서-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K555-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "서승완",
-        "lineage": {
-          "surname": "서",
-          "bongwan": "달성",
-          "clan": "c11c-b2ec-c131-agreed-c11c-second"
-        },
-        "birthDate": "2009-08-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-서구서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "서승완은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-서구서-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K555-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정태욱",
-        "birthDate": "2039-08-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-서구서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "정태욱은 신정 차량기지에서 차륜·펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-서구서-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K555-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤태혁",
-        "birthDate": "2009-08-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-서구서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤태혁은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-서구서-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K555-P-01:K555:biological",
-        "from": "FH-K555-P-01",
-        "to": "K555",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-서구서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K555-P-02:FH-K555-P-01:biological",
-        "from": "FH-K555-P-02",
-        "to": "FH-K555-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-서구서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K555-M-01:K555:biological",
-        "from": "FH-K555-M-01",
-        "to": "K555",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-서구서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K555-M-02:FH-K555-M-01:biological",
-        "from": "FH-K555-M-02",
-        "to": "FH-K555-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-서구서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c11c-b2ec-c131",
+    "name": "달성 서씨",
+    "crest": "clan-crests/c11c-b2ec-c131.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "교주의 집 승강장 칸으로 내려오는 계단 아래 문간에서, 교주를 찾아온 곁집 심부름꾼의 토시와 짐을 먼저 살피는 사람이 이 교주의 집 호위다. 부위 하나를 단 쉰일곱 살로, 네 곁집이 저마다 보낸 호위 가운데 한 사람이지만 이제는 어느 곁집의 이름으로도 불리지 않고 교주의 말만 따른다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "교주 호위",
+    "품계": "세례자",
+    "생업": "경호",
+    "일하는 역": "잠실역",
+    "잠자는 역": "잠실역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "교주의 집 승강장 칸으로 내려오는 계단 아래 문간에서, 교주를 찾아온 곁집 심부름꾼의 토시와 짐을 먼저 살피는 사람이 이 교주의 집 호위다. 부위 하나를 단 쉰일곱 살로, 네 곁집이 저마다 보낸 호위 가운데 한 사람이지만 이제는 어느 곁집의 이름으로도 불리지 않고 교주의 말만 따른다.",
+    "관직": "직함 교주 호위. 직위 교주 호위 · 잠실역. 품계 세례자. 일하는 역 잠실역."
+  },
+  "values": {
+    "권위": 35,
+    "개방": 5,
+    "무력": -10,
+    "물질": -10,
+    "공동": 50,
+    "원칙": -5,
+    "공개": -65,
+    "자격": -10,
+    "분산": -5,
+    "변혁": 55
+  },
+  "desire": {
+    "갈망": -5,
+    "독점": 10,
+    "위험": 30,
+    "과시": -20,
+    "지속": 25,
+    "지향": "양성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0555",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "서구서",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K1018",
+    "name": "고예진",
+    "courtId": "court:K1018",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 5,
         "effective": 5
       },
-      "negotiation": {
-        "base": 4,
-        "effective": 4
-      },
-      "management": {
+      "martial": {
         "base": 8,
         "effective": 8
       },
-      "insight": {
-        "base": 9,
-        "effective": 9
+      "stewardship": {
+        "base": 6,
+        "effective": 6
+      },
+      "intrigue": {
+        "base": 6,
+        "effective": 6
       },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 5,
+        "effective": 5
       },
       "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
         "base": 9,
         "effective": 9
       }
     },
-    "skills": [
-      {
-        "id": "brake",
-        "name": {
-          "ko": "제동 정비",
-          "en": "Brake repair"
-        },
-        "rating": 55
-      },
-      {
-        "id": "wheel",
-        "name": {
-          "ko": "차륜 결함 점검",
-          "en": "Wheel-defect inspection"
-        },
-        "rating": 40
-      }
-    ],
-    "traits": [
-      {
-        "id": "overnight-brake-restoration",
-        "name": {
-          "ko": "밤새 제동 복구",
-          "en": "Overnight Brake Restoration"
-        },
-        "description": {
-          "ko": "서구서는 다음 교대에 필요한 제동 복구를 밤새 이어 가는 끈기를 보였다.",
-          "en": "Seo Guseo demonstrated persistence by working through the night to restore braking needed for the next shift."
-        },
-        "behavior": {
-          "ko": "고장 난 제동을 밤새 고쳐 다음 교대의 배차를 지켰다.",
-          "en": "He repaired the faulty braking overnight and preserved the next shift's dispatch."
-        },
-        "stress": {
-          "ko": "당직 공백이 통행 종속으로 이어질까 우려되면 필요한 복구를 마치는 데 힘을 집중할 수 있다.",
-          "en": "If a duty gap could leave passage dependent on a powerful state, he may concentrate on completing the needed restoration."
-        },
-        "relationship": {
-          "ko": "선배 당직과는 다음 교대에 쓸 제동의 복구 상태를 중심으로 인계하려 할 수 있다.",
-          "en": "He may center handover with the senior duty holder on the braking condition needed for the next shift."
-        },
-        "effects": []
-      },
-      {
-        "id": "protect-the-next-dispatch",
-        "name": {
-          "ko": "다음 배차 지키기",
-          "en": "Protect the Next Dispatch"
-        },
-        "description": {
-          "ko": "서구서는 자기 작업을 다음 교대의 배차 연속성과 연결해 보는 성향을 보인다.",
-          "en": "Seo Guseo shows a tendency to connect his work with dispatch continuity for the next shift."
-        },
-        "behavior": {
-          "ko": "제동 고장을 복구해 다음 교대가 예정된 배차를 이어 갈 수 있게 했다.",
-          "en": "He restored faulty braking so the next shift could continue its scheduled dispatch."
-        },
-        "stress": {
-          "ko": "당직이 비어 통행이 강국의 볼모가 될 위험을 느끼면 다음 교대의 중단을 줄이는 일을 우선할 수 있다.",
-          "en": "If vacant duty risks making passage hostage to a powerful state, he may prioritize reducing disruption to the next shift."
-        },
-        "relationship": {
-          "ko": "선배 당직과는 다음 배차에 필요한 복구 결과와 기록을 이어 주며 협력하려 할 수 있다.",
-          "en": "He may cooperate with the senior duty holder by passing along restoration results and records needed for the next dispatch."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "고장 제동을 밤새 고쳐 다음 교대를 지켰다. 정비와 지속력은 확인되며 교섭·전투는 근거가 약하다.",
-      "en": "She repaired brakes overnight to preserve the next shift. Repair and persistence are supported; bargaining and combat evidence is weak."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -401,7 +127,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -427,76 +153,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-43740-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K555",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:kingdom-s04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-43740-S04",
-          "directLiegePersonId": "K423"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c11c-b2ec-c131",
-    "name": "달성 서씨",
-    "crest": "clan-crests/c11c-b2ec-c131.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 10,
-    "개방": 20,
-    "무력": -20,
-    "물질": 40,
-    "공동": 30,
-    "원칙": 5,
-    "공개": -20,
-    "자격": 25,
-    "분산": 25,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": -5,
-    "독점": 10,
-    "위험": 30,
-    "과시": -20,
-    "지속": 25,
-    "지향": "양성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "차륜·펌프 정비",
-    "품계": "교사",
-    "직함": "부품 물류상",
-    "가치관": "권위 10 | 개방 20 | 무력 −20 | 물질 40 | 공동 30 | 원칙 5 | 공개 −20 | 자격 25 | 분산 25 | 변혁 10",
-    "욕망": "갈망 −5 | 독점 10 | 위험 30 | 과시 −20 | 지속 25 | 지향 양성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 서구서는 신정 차량기지에서 자랐다. 서구서는 탈선 직전 결함 보고로 부품 물류상 자리를 맡았다.\n- 서구서의 부품 물류상 업무는 성수2가1동과 연결된다.",
-    "관직": "서구서는 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.",
-    "일화": "2125년 서구서는 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.",
-    "관계": "서구서는 같은 생활권 선배 당직자와 인수인계로 묶인다.",
-    "야망": "서구서는 부품 물류상 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.",
-    "공포": "서구서는 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.",
-    "개입": "서구서는 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "서구서는 당직을 끊지 않는 쪽을 먼저 고른다. 서구서는 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 차륜·펌프 정비\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 서구서는 신정 차량기지에서 자랐다. 서구서는 탈선 직전 결함 보고로 부품 물류상 자리를 맡았다.\n- 서구서의 부품 물류상 업무는 성수2가1동과 연결된다.\n\n**관직.** 서구서는 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 서구서는 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 서구서는 같은 생활권 선배 당직자와 인수인계로 묶인다.\n\n**야망.** 서구서는 부품 물류상 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.\n\n**공포.** 서구서는 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.\n\n**개입.** 서구서는 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 −20 | 물질 40 | 공동 30 | 원칙 5 | 공개 −20 | 자격 25 | 분산 25 | 변혁 10\n- 욕망: 갈망 −5 | 독점 10 | 위험 30 | 과시 −20 | 지속 25 | 지향 양성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

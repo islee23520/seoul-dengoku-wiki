@@ -1,505 +1,171 @@
 {
   "id": "person-0275",
   "name": "서진아",
-  "title": "주거공동체 감사",
-  "position": "강남역 사택 감사",
+  "title": "서초4동 대피소장",
+  "position": "서초4동 대피소장 · 아크",
   "characterId": "K274",
-  "rank": "사원",
-  "commonTier": "T5",
-  "occupation": "사택 청원·급수 잔량 감사",
+  "rank": "대피소장",
+  "commonTier": "T3",
+  "occupation": "대피소 통솔",
   "gender": "남성",
   "stage": "S1",
-  "state": "S11",
-  "stateName": "성하그룹",
-  "sourceRoute": "/world/Cast-State-11#인물-서진아",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0275",
   "birthDate": "2092-02-08",
   "birthday": "02-08",
   "age": 34,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-11.json#/content/50",
-    "lore/characters/Cast-State-11.json#/content/52"
-  ],
-  "familyTree": {
-    "personId": "K274",
-    "nodes": [
-      {
-        "id": "K274",
-        "personId": "K274",
-        "kind": "person",
-        "name": "서진아",
-        "birthDate": "2092-02-08",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K274"
-          },
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-서진아-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 강남역 사택 감사 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-서진아-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0275"
-      },
-      {
-        "id": "FH-K274-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "서승원",
-        "lineage": {
-          "surname": "서",
-          "bongwan": "달성",
-          "clan": "c11c-b2ec-c131"
-        },
-        "birthDate": "2062-02-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-서진아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2100,
-            "summary": "서승원은 서울역 등기소에서 사택 청원·급수 잔량 감사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-서진아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K274-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "서승진",
-        "lineage": {
-          "surname": "서",
-          "bongwan": "달성",
-          "clan": "c11c-b2ec-c131"
-        },
-        "birthDate": "2032-02-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-서진아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2070,
-            "summary": "서승진은 서울역 등기소에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-서진아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K274-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "서승현",
-        "lineage": {
-          "surname": "서",
-          "bongwan": "달성",
-          "clan": "c11c-b2ec-c131"
-        },
-        "birthDate": "2002-02-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-서진아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "서승현은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-서진아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K274-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조현욱",
-        "birthDate": "2062-02-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-서진아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2100,
-            "summary": "조현욱은 서울역 등기소에서 사택 청원·급수 잔량 감사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-서진아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K274-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김현온",
-        "birthDate": "2032-02-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-서진아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2070,
-            "summary": "김현온은 서울역 등기소에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-서진아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K274-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "박현미",
-        "birthDate": "2002-02-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-서진아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박현미는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-서진아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K274-P-01:K274:biological",
-        "from": "FH-K274-P-01",
-        "to": "K274",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-서진아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K274-P-02:FH-K274-P-01:biological",
-        "from": "FH-K274-P-02",
-        "to": "FH-K274-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-서진아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K274-P-03:FH-K274-P-02:biological",
-        "from": "FH-K274-P-03",
-        "to": "FH-K274-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-서진아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K274-M-01:K274:biological",
-        "from": "FH-K274-M-01",
-        "to": "K274",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-서진아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K274-M-02:FH-K274-M-01:biological",
-        "from": "FH-K274-M-02",
-        "to": "FH-K274-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-서진아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K274-M-03:FH-K274-M-02:biological",
-        "from": "FH-K274-M-03",
-        "to": "FH-K274-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-서진아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c11c-b2ec-c131",
+    "name": "달성 서씨",
+    "crest": "clan-crests/c11c-b2ec-c131.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "서른넷의 서초4동 대피소장 서진아는 강남역 대합실 층에서 첫 교대 부르기에 나온 이름 수를 세는 것으로 하루를 시작한다. 부위 둘 가운데 첫째는 조우찬이 고속터미널 정비대에서 맞춰 준 것이고, 그때 받은 정비 차례 하나를 그는 아직 갚지 못한 빚으로 셈한다. 그의 대피소는 서초 본역의 대피소보다 사람이 많아, 비상 몫을 나눌 때마다 본역 대피소장 송하율과 사람 수를 두고 맞선다. 서초 정비대 사람들은 동료끼리 반말을 섞지만, 그는 대피소 명부의 이름을 부를 때만은 그 말투를 쓰지 않는다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "서초4동 대피소장",
+    "품계": "대피소장",
+    "생업": "대피소 통솔",
+    "일하는 역": "강남역",
+    "잠자는 역": "강남역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "서른넷의 서초4동 대피소장 서진아는 강남역 대합실 층에서 첫 교대 부르기에 나온 이름 수를 세는 것으로 하루를 시작한다. 부위 둘 가운데 첫째는 조우찬이 고속터미널 정비대에서 맞춰 준 것이고, 그때 받은 정비 차례 하나를 그는 아직 갚지 못한 빚으로 셈한다. 그의 대피소는 서초 본역의 대피소보다 사람이 많아, 비상 몫을 나눌 때마다 본역 대피소장 송하율과 사람 수를 두고 맞선다. 서초 정비대 사람들은 동료끼리 반말을 섞지만, 그는 대피소 명부의 이름을 부를 때만은 그 말투를 쓰지 않는다.",
+    "관직": "직함 서초4동 대피소장. 직위 서초4동 대피소장 · 아크. 품계 대피소장. 일하는 역 강남역."
+  },
+  "values": {
+    "권위": 35,
+    "개방": -35,
+    "무력": 5,
+    "물질": -30,
+    "공동": 40,
+    "원칙": 20,
+    "공개": -40,
+    "자격": 15,
+    "분산": -15,
+    "변혁": 25
+  },
+  "desire": {
+    "갈망": -15,
+    "독점": -10,
+    "위험": 5,
+    "과시": -25,
+    "지속": 15,
+    "지향": "동성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0275",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "서진아",
+        "type": "지휘",
+        "to": "정유라",
+        "basis": "서초 곁집장 정유라의 직속"
+      },
+      {
+        "from": "서진아",
+        "type": "경쟁",
+        "to": "송하율",
+        "basis": "비상 몫을 나눌 때마다 서초4동과 본역 반포4동의 사람 수를 두고 맞선다"
+      },
+      {
+        "from": "서진아",
+        "type": "빚",
+        "to": "조우찬",
+        "basis": "첫째 부위를 맞춰 준 조우찬에게 갚지 않은 정비 차례 하나를 빚으로 진다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "허미리",
+        "type": "지휘",
+        "to": "서진아",
+        "basis": "서초4동 대피소장 서진아의 직속"
+      },
+      {
+        "from": "원새울",
+        "type": "지휘",
+        "to": "서진아",
+        "basis": "서초4동 대피소장 서진아의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K398",
+    "name": "정유라",
+    "courtId": "court:K398",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K274",
+    "members": [
+      {
+        "personId": "K074",
+        "name": "허미리"
+      },
+      {
+        "personId": "K406",
+        "name": "원새울"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
-      },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 10,
-        "effective": 10
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "martial": {
         "base": 5,
         "effective": 5
-      }
-    },
-    "skills": [
-      {
-        "id": "k274-petition-and-water-record-review",
-        "name": {
-          "ko": "청원·급수 기록 대조",
-          "en": "Petition and water record review"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k274-priority",
-        "name": {
-          "ko": "생활 피해의 책임",
-          "en": "Responsibility for deprivation"
-        },
-        "description": {
-          "ko": "서진아는 청원과 잔량을 함께 공개하며 야간 단수에 입회를 요구한다. 이중 승인은 아직 야망이며 완성된 통치 제도가 아니다.",
-          "en": "Seo Jina publishes petitions beside remaining water and requires attendance at nighttime cutoffs. Dual approval remains an ambition, not an established government."
-        },
-        "behavior": {
-          "ko": "사택 청원 결과와 급수 잔량을 같은 게시판에 붙이고, 야간 단수는 감사 입회 없이 금지한다.",
-          "en": "Office. Rank: assistant manager. Title: residential community auditor. She pasted the residential election results and the water-residue levels on one board and forbade night cutoffs without audit attendance."
-        },
-        "stress": {
-          "ko": "한재목의 집단 단수 조항이 강남역 사택 인구를 하룻밤에 흩어 놓는 것.",
-          "en": "Fear. That Han Jaemok's collective cutoff clause would scatter the Changdong housing population in one night."
-        },
-        "relationship": {
-          "ko": "이홍원과 사택·기술 혼합 통치를 다투며 한재목의 물 공급 협상을 사택 측에서 감시한다. 윤초아의 시민권 원장에 강남역 이주민을 올리려 한다.",
-          "en": "Relations. Contested the mixed housing-technology rule with I Hongwon and watched Han Jaemok's water-supply talks from the housing side. Sought to raise the Changdong migrants onto Yun Choa's citizenship ledger."
-        },
-        "effects": []
       },
-      {
-        "id": "k274-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 사원. 직함은 강남역 사택 감사. 사택 청원 결과와 급수 잔량을 같은 게시판에 붙이고, 야간 단수는 감사 입회 없이 금지한다.",
-          "en": "Office. Rank: assistant manager. Title: residential community auditor. She pasted the residential election results and the water-residue levels on one board and forbade night cutoffs without audit attendance."
-        },
-        "stress": {
-          "ko": "공포. 한재목의 집단 단수 조항이 강남역 사택 인구를 하룻밤에 흩어 놓는 것.",
-          "en": "Fear. That Han Jaemok's collective cutoff clause would scatter the Changdong housing population in one night."
-        },
-        "relationship": {
-          "ko": "관계. 이홍원과 사택·기술 혼합 통치를 다투며 한재목의 물 공급 협상을 사택 측에서 감시한다. 윤초아의 시민권 원장에 강남역 이주민을 올리려 한다.",
-          "en": "Relations. Contested the mixed housing-technology rule with I Hongwon and watched Han Jaemok's water-supply talks from the housing side. Sought to raise the Changdong migrants onto Yun Choa's citizenship ledger."
-        },
-        "effects": []
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "서진아는 청원과 잔량을 함께 공개하며 야간 단수에 입회를 요구한다. 이중 승인은 아직 야망이며 완성된 통치 제도가 아니다.",
-      "en": "Seo Jina publishes petitions beside remaining water and requires attendance at nighttime cutoffs. Dual approval remains an ambition, not an established government."
     },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -525,91 +191,77 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c11c-b2ec-c131",
-    "name": "달성 서씨",
-    "crest": "clan-crests/c11c-b2ec-c131.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 10,
-    "개방": -20,
-    "무력": -5,
-    "물질": 20,
-    "공동": 20,
-    "원칙": 30,
-    "공개": 5,
-    "자격": 50,
-    "분산": 15,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": -15,
-    "독점": -10,
-    "위험": 5,
-    "과시": -25,
-    "지속": 15,
-    "지향": "동성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "사택 청원·급수 잔량 감사",
-    "소속": "성하그룹",
-    "품계": "사원",
-    "직함": "강남역 사택 감사",
-    "가치관": "권위 10 | 개방 −20 | 무력 −5 | 물질 20 | 공동 20 | 원칙 30 | 공개 5 | 자격 50 | 분산 15 | 변혁 −20",
-    "욕망": "갈망 −15 | 독점 −10 | 위험 5 | 과시 −25 | 지속 15 | 지향 동성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "서울역 등기소에서 자랐다. 강남역 사택 감사 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 서진아는 서초2동에서 사택 청원·급수 잔량 감사 업무를 맡는다. 강남역 사택의 청원·급수 잔량·수위·사고 기록 업무를 서초2동 생활권 근무 참조로 제안한다. 기존 감사·반장·도제 서명 조건을 보존하고 개인 거주·숙소 소유는 추정하지 않는다. 이홍원과 사택·기술 혼합 통치를 다투며 한재목의 물 공급 협상을 사택 측에서 감시한다. 윤초아의 시민권 원장에 강남역 사택 주민의 등록을 대조한다",
-    "관직": "품계 사원. 직함은 강남역 사택 감사. 사택 청원 결과와 급수 잔량을 같은 게시판에 붙이고, 야간 단수는 감사 입회 없이 금지한다.",
-    "일화": "북부 급수 배관 압력 저하가 공지되자 사택 대표들이 승계 시험을 연기하라고 회장실를 압박했다.",
-    "관계": "이홍원과 사택·기술 혼합 통치를 다투며 한재목의 물 공급 협상을 사택 측에서 감시한다. 윤초아의 시민권 원장과 강남역 사택 주민 등록을 대조한다.",
-    "야망": "물 계약이 흔들려도 강남역 사택이 비지 않도록 급수 감사권을 회장실와 공유하는 이중 승인을 만든다.",
-    "공포": "한재목의 집단 단수 조항이 강남역 사택 인구를 하룻밤에 흩어 놓는 것.",
-    "개입": "비상 급수 계약을 사택 조항과 함께 가져오거나, 단수 위협을 빌미로 한 기지 점거를 막을 수 있다."
-  },
-  "biography": "논리적이고 표를 세는 데 능하다. 기술 탓에 사람이 굶는 순간을 개인적 패배로 여긴다.\n\n- 생업: 사택 청원·급수 잔량 감사\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 사택 감사\n**생애.** 서울역 등기소에서 자랐다. 강남역 사택 감사 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 서진아는 서초2동에서 사택 청원·급수 잔량 감사 업무를 맡는다. 강남역 사택의 청원·급수 잔량·수위·사고 기록 업무를 서초2동 생활권 근무 참조로 제안한다. 기존 감사·반장·도제 서명 조건을 보존하고 개인 거주·숙소 소유는 추정하지 않는다. 이홍원과 사택·기술 혼합 통치를 다투며 한재목의 물 공급 협상을 사택 측에서 감시한다. 윤초아의 시민권 원장에 강남역 사택 주민의 등록을 대조한다\n\n**관직.** 품계 사원. 직함은 강남역 사택 감사. 사택 청원 결과와 급수 잔량을 같은 게시판에 붙이고, 야간 단수는 감사 입회 없이 금지한다.\n\n**일화.** 북부 급수 배관 압력 저하가 공지되자 사택 대표들이 승계 시험을 연기하라고 회장실를 압박했다.\n\n**관계.** 이홍원과 사택·기술 혼합 통치를 다투며 한재목의 물 공급 협상을 사택 측에서 감시한다. 윤초아의 시민권 원장과 강남역 사택 주민 등록을 대조한다.\n\n**야망.** 물 계약이 흔들려도 강남역 사택이 비지 않도록 급수 감사권을 회장실와 공유하는 이중 승인을 만든다.\n\n**공포.** 한재목의 집단 단수 조항이 강남역 사택 인구를 하룻밤에 흩어 놓는 것.\n\n**개입.** 비상 급수 계약을 사택 조항과 함께 가져오거나, 단수 위협을 빌미로 한 기지 점거를 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −20 | 무력 −5 | 물질 20 | 공동 20 | 원칙 30 | 공개 5 | 자격 50 | 분산 15 | 변혁 −20\n- 욕망: 갈망 −15 | 독점 −10 | 위험 5 | 과시 −25 | 지속 15 | 지향 동성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-11"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1165053100",
+      "name": {
+        "ko": "서초4동"
+      },
+      "holderPersonId": "K274",
+      "directLiegePersonId": "K398",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1165053100",
+          "name": "서초4동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
   ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "서진아",
-        "type": "경쟁",
-        "to": "이홍원",
-        "basis": "주거·기술 혼합 통치를 다툼"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:강남",
+      "name": {
+        "ko": "강남역"
       },
-      {
-        "from": "서진아",
-        "type": "계약",
-        "to": "한재목",
-        "basis": "물 공급 협상을 주거 쪽에서 감시"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "소봉",
-        "type": "계약",
-        "to": "서진아",
-        "basis": "서진아의 급수 잔량 공지를 같은 벽에 나란히 붙인다"
+      "holderPersonId": "K074",
+      "directLiegePersonId": "K274",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "강남",
+        "stationName": "강남"
       },
-      {
-        "from": "모복",
-        "type": "지휘",
-        "to": "서진아",
-        "basis": "서진아의 주거 감사를 거점 핸들에서 집행하는 지휘를 받고"
+      "adminRefs": [
+        {
+          "id": "region:1165053100",
+          "name": "서초4동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "허미리",
+      "holderRoute": "/people/person-0074"
+    },
+    {
+      "id": "holding:v3:station:신논현",
+      "name": {
+        "ko": "신논현역"
       },
-      {
-        "from": "평채원",
-        "type": "계약",
-        "to": "서진아",
-        "basis": "서진아의 주거 감사 함에 당사자 손도장을 보태고"
-      }
-    ]
-  }
+      "holderPersonId": "K406",
+      "directLiegePersonId": "K274",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "신논현",
+        "stationName": "신논현"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1165053100",
+          "name": "서초4동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "원새울",
+      "holderRoute": "/people/person-0407"
+    }
+  ]
 }

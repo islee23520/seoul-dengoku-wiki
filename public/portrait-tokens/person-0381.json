@@ -3,26 +3,27 @@
   "personId": "person-0381",
   "characterId": "K380",
   "name": "동미온",
-  "stateId": "S15",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "교구 물자 접수 부제"
+    "role": "왕십리역 역장 · 정부"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short wavy hair",
-    "upper": "khaki short wool jacket with a stand collar, with a light knitted scarf",
-    "outfit": "khaki short wool jacket with a stand collar, with a light knitted scarf",
+    "upper": "남색 누비 긴 외투, 안에 누빈 조끼",
+    "outfit": "남색 누비 긴 외투, 안에 누빈 조끼",
     "palette": [
-      "khaki",
-      "dove grey"
+      "navy",
+      "charcoal grey",
+      "dull brass"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "dove grey straight wool trousers",
-    "footwear": "leather ankle boots",
-    "accessories": "duty whistle on a cord lanyard"
+    "lower": "dark grey wadded trousers",
+    "footwear": "felt-lined synthetic rubber boots",
+    "accessories": "station-name band on the cap and a ring of entrance keys"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -173,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "old subway station staff cap with a station-name band",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "khaki short wool jacket with a stand collar, with a light knitted scarf",
+        "value": "남색 누비 긴 외투, 안에 누빈 조끼",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "dove grey straight wool trousers",
+        "value": "dark grey wadded trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "leather ankle boots",
+        "value": "felt-lined synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "high quilted collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "duty whistle on a cord lanyard",
+        "value": "station-name band on the cap and a ring of entrance keys",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull brass",
+        "value": "navy and dull brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, cord",
+        "value": "cloth, iron",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "lanyard around the neck",
+        "value": "band on the cap; keys on a belt ring",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "narrow band; ring of keys",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동미온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; black hair; short length. build: slim; skin: light olive. upper garment: khaki short wool jacket with a stand collar, with a light knitted scarf; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: khaki, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동미온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; black hair; short length. build: slim; skin: light olive. headwear: old subway station staff cap with a station-name band; upper garment: 남색 누비 긴 외투, 안에 누빈 조끼; neckline: high quilted collar. accessories: station-name band on the cap and a ring of entrance keys; worn as band on the cap; keys on a belt ring. color palette: navy, charcoal grey, dull brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동미온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; black hair; short length. build: slim; skin: light olive; average adult male height. upper garment: khaki short wool jacket with a stand collar, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: dove grey straight wool trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: khaki, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동미온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; black hair; short length. build: slim; skin: light olive; average adult male height. headwear: old subway station staff cap with a station-name band; upper garment: 남색 누비 긴 외투, 안에 누빈 조끼; neckline: high quilted collar; lower garment: dark grey wadded trousers; footwear: felt-lined synthetic rubber boots. accessories: station-name band on the cap and a ring of entrance keys; worn as band on the cap; keys on a belt ring. color palette: navy, charcoal grey, dull brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동미온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; black hair; short length. build: slim; skin: light olive; average adult male height. upper garment: khaki short wool jacket with a stand collar, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: dove grey straight wool trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: khaki, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동미온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; black hair; short length. build: slim; skin: light olive; average adult male height. headwear: old subway station staff cap with a station-name band; upper garment: 남색 누비 긴 외투, 안에 누빈 조끼; neckline: high quilted collar; lower garment: dark grey wadded trousers; footwear: felt-lined synthetic rubber boots. accessories: station-name band on the cap and a ring of entrance keys; worn as band on the cap; keys on a belt ring. color palette: navy, charcoal grey, dull brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동미온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; black hair; short length. build: slim; skin: light olive; average adult male height. upper garment: khaki short wool jacket with a stand collar, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: dove grey straight wool trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: khaki, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동미온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; black hair; short length. build: slim; skin: light olive; average adult male height. headwear: old subway station staff cap with a station-name band; upper garment: 남색 누비 긴 외투, 안에 누빈 조끼; neckline: high quilted collar; lower garment: dark grey wadded trousers; footwear: felt-lined synthetic rubber boots. accessories: station-name band on the cap and a ring of entrance keys; worn as band on the cap; keys on a belt ring. color palette: navy, charcoal grey, dull brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동미온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; black hair; short length. build: slim; skin: light olive; average adult male height. upper garment: khaki short wool jacket with a stand collar, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: dove grey straight wool trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: khaki, dove grey. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동미온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: neatly trimmed mustache. short wavy hair; black hair; short length. build: slim; skin: light olive; average adult male height. headwear: old subway station staff cap with a station-name band; upper garment: 남색 누비 긴 외투, 안에 누빈 조끼; neckline: high quilted collar; lower garment: dark grey wadded trousers; footwear: felt-lined synthetic rubber boots. accessories: station-name band on the cap and a ring of entrance keys; worn as band on the cap; keys on a belt ring. color palette: navy, charcoal grey, dull brass. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

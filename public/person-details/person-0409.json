@@ -1,514 +1,143 @@
 {
   "id": "person-0409",
   "name": "판지솔",
-  "title": "이중 의회 전령, 안태경의 실무 담당자",
-  "position": "이중 의회 전령, 안태경의 실무 담당자",
+  "title": "강동구청역 정비장",
+  "position": "강동구청역 정비장 · 아크",
   "characterId": "K408",
-  "rank": "미등록",
-  "commonTier": "T5",
-  "occupation": "투표 명부·비준 투표 전갈 배달",
+  "rank": "정비장",
+  "commonTier": "T4",
+  "occupation": "정비대 통솔",
   "gender": "남성",
   "stage": "S2",
-  "state": "S16",
-  "stateName": "정동노총",
-  "sourceRoute": "/world/Cast-State-16#인물-판지솔",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0409",
   "birthDate": "2097-10-08",
   "birthday": "10-08",
   "age": 29,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-16.json#/content/138"
-  ],
-  "familyTree": {
-    "personId": "K408",
-    "nodes": [
-      {
-        "id": "K408",
-        "personId": "K408",
-        "kind": "person",
-        "name": "판지솔",
-        "birthDate": "2097-10-08",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K408"
-          },
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-판지솔-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 조합원 총회 전령, 안태경의 실무 담당자 자리는 무표 출발 열차 저지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-판지솔-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0409"
-      },
-      {
-        "id": "FH-K408-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "판승경",
-        "lineage": {
-          "surname": "판",
-          "bongwan": "해주",
-          "clan": "d310-d574-c8fc"
-        },
-        "birthDate": "2067-10-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-판지솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "판승경은 신내 환승 당직에서 투표 명부·비준 투표 전갈 배달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-판지솔-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K408-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "판승수",
-        "lineage": {
-          "surname": "판",
-          "bongwan": "해주",
-          "clan": "d310-d574-c8fc"
-        },
-        "birthDate": "2037-10-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-판지솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "판승수는 신내 환승 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-판지솔-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K408-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "판승은",
-        "lineage": {
-          "surname": "판",
-          "bongwan": "해주",
-          "clan": "d310-d574-c8fc"
-        },
-        "birthDate": "2007-10-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-판지솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "판승은은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-판지솔-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K408-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준성",
-        "birthDate": "2067-10-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-판지솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "박준성은 신내 환승 당직에서 투표 명부·비준 투표 전갈 배달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-판지솔-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K408-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준성",
-        "birthDate": "2037-10-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-판지솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "이준성은 신내 환승 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-판지솔-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K408-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준미",
-        "birthDate": "2007-10-08",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-판지솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최준미는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-판지솔-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K408-P-01:K408:biological",
-        "from": "FH-K408-P-01",
-        "to": "K408",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-판지솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K408-P-02:FH-K408-P-01:biological",
-        "from": "FH-K408-P-02",
-        "to": "FH-K408-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-판지솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K408-P-03:FH-K408-P-02:biological",
-        "from": "FH-K408-P-03",
-        "to": "FH-K408-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-판지솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K408-M-01:K408:biological",
-        "from": "FH-K408-M-01",
-        "to": "K408",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-판지솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K408-M-02:FH-K408-M-01:biological",
-        "from": "FH-K408-M-02",
-        "to": "FH-K408-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-판지솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K408-M-03:FH-K408-M-02:biological",
-        "from": "FH-K408-M-03",
-        "to": "FH-K408-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-판지솔-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d310-d574-c8fc",
+    "name": "해주 판씨",
+    "crest": "clan-crests/d310-d574-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "판지솔은 지금도 몫이 늦으면 강동구청역에서 잠실까지 뛰어서 간다. 젊어서 전갈을 나르던 다리가 남아서다. 강동구청역은 송파 곁집 땅의 동쪽 끝이라, 그와 곁집장 남윤경 사이에는 대피소장이 없다. 스물아홉에 부위가 넷인 이 정비장은, 동쪽에서 넘어온 사람이 정비 차례를 청하면 어느 곁집 세례록에 이름이 있는지부터 묻는다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "강동구청역 정비장",
+    "품계": "정비장",
+    "생업": "정비대 통솔",
+    "일하는 역": "강동구청역",
+    "잠자는 역": "강동구청역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 4
+  },
+  "sections": {
+    "생애": "판지솔은 지금도 몫이 늦으면 강동구청역에서 잠실까지 뛰어서 간다. 젊어서 전갈을 나르던 다리가 남아서다. 강동구청역은 송파 곁집 땅의 동쪽 끝이라, 그와 곁집장 남윤경 사이에는 대피소장이 없다. 스물아홉에 부위가 넷인 이 정비장은, 동쪽에서 넘어온 사람이 정비 차례를 청하면 어느 곁집 세례록에 이름이 있는지부터 묻는다.",
+    "관직": "직함 강동구청역 정비장. 직위 강동구청역 정비장 · 아크. 품계 정비장. 일하는 역 강동구청역."
+  },
+  "values": {
+    "권위": -5,
+    "개방": 35,
+    "무력": -15,
+    "물질": -40,
+    "공동": 40,
+    "원칙": 20,
+    "공개": 5,
+    "자격": -10,
+    "분산": 10,
+    "변혁": 65
+  },
+  "desire": {
+    "갈망": 5,
+    "독점": -5,
+    "위험": 15,
+    "과시": -20,
+    "지속": 35,
+    "지향": "이성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0409",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "판지솔",
+        "type": "지휘",
+        "to": "남윤경",
+        "basis": "송파 곁집장 남윤경의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K373",
+    "name": "남윤경",
+    "courtId": "court:K373",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
+      },
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
-        "base": 6,
-        "effective": 6
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "negotiation": {
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 10,
-        "effective": 10
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "ratification-messages",
-        "name": {
-          "ko": "비준 전갈 운송",
-          "en": "Ratification message delivery"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "전달 전에 자격 확인",
-          "en": "Checks eligibility before delivery"
-        },
-        "description": {
-          "ko": "출석을 두 장소에 붙이고 군사호적이 섞이자 비준 전갈을 잠갔다. 숨이 차도 사본 두 장을 함께 운반한다.",
-          "en": "Posts attendance in two places and locks ratification messages after military numbers appear. Carries both copies despite breathlessness."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 전달 전에 자격 확인을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "명부 혼입 때 전갈 전달을 멈출 수 있다.",
-          "en": "May halt delivery when registers mix."
-        },
-        "relationship": {
-          "ko": "안태경의 쪽지를 봉인 상태로 나르고 천늘우와 순번을 맞춘다.",
-          "en": "Carries An Taegyeong’s notes sealed and matches order with Cheon Neulwoo."
-        },
-        "effects": []
-      },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "조합원 직접투표가 대외 교섭안 비준의 필수 날인이 되게 해 조합원 투표 없는 서명을 전령로에서 무효로 만든다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "투표 명부가 군사호적과 섞인 전갈 한 장으로 정동노총이 암사의 대리 투표장이 되는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "안태경의 쪽지를 봉인 상태로 나르고 천늘우와 순번을 맞춘다.",
-          "en": "Carries An Taegyeong’s notes sealed and matches order with Cheon Neulwoo."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "출석을 두 장소에 붙이고 군사호적이 섞이자 비준 전갈을 잠갔다. 숨이 차도 사본 두 장을 함께 운반한다.",
-      "en": "Posts attendance in two places and locks ratification messages after military numbers appear. Carries both copies despite breathlessness."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "head",
@@ -524,79 +153,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d310-d574-c8fc",
-    "name": "해주 판씨",
-    "crest": "clan-crests/d310-d574-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -30,
-    "개방": 50,
-    "무력": -25,
-    "물질": 10,
-    "공동": 20,
-    "원칙": 30,
-    "공개": 50,
-    "자격": 25,
-    "분산": 40,
-    "변혁": 20
-  },
-  "desire": {
-    "갈망": 5,
-    "독점": -5,
-    "위험": 15,
-    "과시": -20,
-    "지속": 35,
-    "지향": "이성",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "투표 명부·비준 투표 전갈 배달",
-    "소속": "정동노총",
-    "공동체 역할": "조합원",
-    "직무": "조합원 총회 전령, 안태경의 실무 담당자",
-    "가치관": "권위 −30 | 개방 50 | 무력 −25 | 물질 10 | 공동 20 | 원칙 30 | 공개 50 | 자격 25 | 분산 40 | 변혁 20",
-    "욕망": "갈망 5 | 독점 −5 | 위험 15 | 과시 −20 | 지속 35 | 지향 이성 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2097-10-08에 태어난 판지솔은 영구 겨울의 시청역 조합 작업장에서 조합원 총회 전령, 안태경의 실무 담당자 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 판지솔은 소공동의 시청역 조합 작업장에서 조합원 총회 전령, 안태경의 실무 담당자 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "직무": "공동체 역할은 조합원이며 직무는 조합원 총회 전령, 안태경의 실무 담당자이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.",
-    "일화": "대외 교섭안 세 건이 동시에 비준 안건으로 올라오고 투표 명부에 대외 세력 호적 번호가 섞이자 판지솔은 비준 전갈을 가방에 잠갔다.",
-    "관계": "판지솔의 기존 관계 기록은 다음과 같다. 안태경의 추첨 쪽지를 봉인 상태로만 나르는 지휘를 받고, 천늘우의 추첨 원장과 순번을 나눈다. 백온의 독립 시민권 명부를 자격 전갈에 참고한다.",
-    "목표": "판지솔은 조합원 총회 전령, 안태경의 실무 담당자 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.",
-    "공포": "조합원 총회 전령, 안태경의 실무 담당자 업무의 서명이나 인계 기록이 바뀌어 판지솔의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.",
-    "개입": "판지솔은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다."
-  },
-  "biography": "판지솔은 영구 겨울의 시청역 조합 작업장에서 조합원 총회 전령, 안태경의 실무 담당자 업무 기록과 공개 표결 서명을 먼저 대조한다. 급수·통행·계약 일정이 겹치는 날에는 접수 시각과 인계 순서를 같은 장부에 남긴다.\n\n- 생업: 투표 명부·비준 투표 전갈 배달\n- 소속: 정동노총\n- 공동체 역할: 조합원\n- 직무: 조합원 총회 전령, 안태경의 실무 담당자\n**생애.** 2097-10-08에 태어난 판지솔은 영구 겨울의 시청역 조합 작업장에서 조합원 총회 전령, 안태경의 실무 담당자 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 판지솔은 소공동의 시청역 조합 작업장에서 조합원 총회 전령, 안태경의 실무 담당자 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**직무.** 공동체 역할은 조합원이며 직무는 조합원 총회 전령, 안태경의 실무 담당자이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.\n\n**일화.** 대외 교섭안 세 건이 동시에 비준 안건으로 올라오고 투표 명부에 대외 세력 호적 번호가 섞이자 판지솔은 비준 전갈을 가방에 잠갔다.\n\n**관계.** 판지솔의 기존 관계 기록은 다음과 같다. 안태경의 추첨 쪽지를 봉인 상태로만 나르는 지휘를 받고, 천늘우의 추첨 원장과 순번을 나눈다. 백온의 독립 시민권 명부를 자격 전갈에 참고한다.\n\n**목표.** 판지솔은 조합원 총회 전령, 안태경의 실무 담당자 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.\n\n**공포.** 조합원 총회 전령, 안태경의 실무 담당자 업무의 서명이나 인계 기록이 바뀌어 판지솔의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.\n\n**개입.** 판지솔은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 50 | 무력 −25 | 물질 10 | 공동 20 | 원칙 30 | 공개 50 | 자격 25 | 분산 40 | 변혁 20\n- 욕망: 갈망 5 | 독점 −5 | 위험 15 | 과시 −20 | 지속 35 | 지향 이성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-16"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "판지솔",
-        "type": "지휘",
-        "to": "안태경",
-        "basis": "안태경의 추첨 쪽지를 봉인 상태로만 나르는 지휘를 받고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:강동구청",
+      "name": {
+        "ko": "강동구청역"
       },
-      {
-        "from": "판지솔",
-        "type": "지휘",
-        "to": "천늘우",
-        "basis": "천늘우의 추첨 원장과 순번을 나눈다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "방마빛",
-        "type": "지휘",
-        "to": "판지솔",
-        "basis": "판지솔의 전갈을 대합실 봉인 칸에 둔다"
-      }
-    ]
-  }
+      "holderPersonId": "K408",
+      "directLiegePersonId": "K373",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "강동구청",
+        "stationName": "강동구청"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1174064000",
+          "name": "성내1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

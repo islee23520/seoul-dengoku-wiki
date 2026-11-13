@@ -1,493 +1,216 @@
 {
   "id": "person-0325",
   "name": "은채윤",
-  "title": "치료사",
-  "position": "치료사",
+  "title": "노원구 국회의원",
+  "position": "노원구 국회의원 · 정부",
   "characterId": "K324",
-  "rank": "전문의",
-  "commonTier": "T2",
-  "occupation": "중증도 배정·우선 치료 요청 보고",
+  "rank": "국회의원",
+  "commonTier": "T1",
+  "occupation": "구 행정",
   "gender": "남성",
   "stage": "S1",
-  "state": "S13",
-  "stateName": "흰십자단",
-  "sourceRoute": "/world/Cast-State-13#인물-은채윤",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0325",
   "birthDate": "2094-02-23",
   "birthday": "02-23",
   "age": 32,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-13.json#/content/72",
-    "lore/characters/Cast-State-13.json#/content/74"
-  ],
-  "familyTree": {
-    "personId": "K324",
-    "nodes": [
-      {
-        "id": "K324",
-        "personId": "K324",
-        "kind": "person",
-        "name": "은채윤",
-        "birthDate": "2094-02-23",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K324"
-          },
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-은채윤-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 중증도 진료 전문의 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-은채윤-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0325"
-      },
-      {
-        "id": "FH-K324-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "은승석",
-        "lineage": {
-          "surname": "은",
-          "bongwan": "행주",
-          "clan": "c740-d589-c8fc"
-        },
-        "birthDate": "2064-02-23",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-은채윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2102,
-            "summary": "은승석은 제기동 의무소에서 중증도 배정·우선 치료 요청 보고 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-은채윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K324-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "은승준",
-        "lineage": {
-          "surname": "은",
-          "bongwan": "행주",
-          "clan": "c740-d589-c8fc"
-        },
-        "birthDate": "2034-02-23",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-은채윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "은승준은 제기동 의무소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-은채윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K324-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "은승호",
-        "lineage": {
-          "surname": "은",
-          "bongwan": "행주",
-          "clan": "c740-d589-c8fc"
-        },
-        "birthDate": "2004-02-23",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-은채윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "은승호는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-은채윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K324-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준우",
-        "birthDate": "2064-02-23",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-은채윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2102,
-            "summary": "박준우는 제기동 의무소에서 중증도 배정·우선 치료 요청 보고 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-은채윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K324-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준윤",
-        "birthDate": "2034-02-23",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-은채윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "이준윤은 제기동 의무소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-은채윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K324-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준희",
-        "birthDate": "2004-02-23",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-은채윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최준희는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-은채윤-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K324-P-01:K324:biological",
-        "from": "FH-K324-P-01",
-        "to": "K324",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-은채윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K324-P-02:FH-K324-P-01:biological",
-        "from": "FH-K324-P-02",
-        "to": "FH-K324-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-은채윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K324-P-03:FH-K324-P-02:biological",
-        "from": "FH-K324-P-03",
-        "to": "FH-K324-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-은채윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K324-M-01:K324:biological",
-        "from": "FH-K324-M-01",
-        "to": "K324",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-은채윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K324-M-02:FH-K324-M-01:biological",
-        "from": "FH-K324-M-02",
-        "to": "FH-K324-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-은채윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K324-M-03:FH-K324-M-02:biological",
-        "from": "FH-K324-M-03",
-        "to": "FH-K324-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-은채윤-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c740-d589-c8fc",
+    "name": "행주 은씨",
+    "crest": "clan-crests/c740-d589-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "노원구 국회의원 은채윤, 서른두 살, 행주 은씨, 클로당. 빛밭이 가장 많은 구와 화랑대 육군사관학교와 수락산·불암산 쪽 테두리를 쥔 그는, 강 북쪽 땅과 일손으로 먹고살아야 한다는 클로당의 말을 빛밭 둑 길이로 증명하려 한다. 노원역 의원 집무실에서 그는 빛밭 배정 장부를 집안 후계 은태호에게 맡기고, 국토교통부 장관 신보람에게는 역 정원 조정을 따로 부탁해 둔 빚이 있다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "노원구 국회의원",
+    "품계": "국회의원",
+    "생업": "구 행정",
+    "일하는 역": "노원역",
+    "잠자는 역": "노원역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "노원구 국회의원 은채윤, 서른두 살, 행주 은씨, 클로당. 빛밭이 가장 많은 구와 화랑대 육군사관학교와 수락산·불암산 쪽 테두리를 쥔 그는, 강 북쪽 땅과 일손으로 먹고살아야 한다는 클로당의 말을 빛밭 둑 길이로 증명하려 한다. 노원역 의원 집무실에서 그는 빛밭 배정 장부를 집안 후계 은태호에게 맡기고, 국토교통부 장관 신보람에게는 역 정원 조정을 따로 부탁해 둔 빚이 있다.",
+    "관직": "직함 노원구 국회의원. 직위 노원구 국회의원 · 정부. 품계 국회의원. 일하는 역 노원역."
+  },
+  "values": {
+    "권위": 15,
+    "개방": -20,
+    "무력": -30,
+    "물질": -25,
+    "공동": 15,
+    "원칙": 80,
+    "공개": 0,
+    "자격": 30,
+    "분산": -25,
+    "변혁": -30
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -10,
+    "위험": 25,
+    "과시": -5,
+    "지속": 35,
+    "지향": "무성향",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0325",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "은채윤",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "은채윤",
+        "type": "맹세",
+        "to": "은태호",
+        "basis": "의원 집안 후계에게 빛밭 배정 장부를 맡긴 사이"
+      },
+      {
+        "from": "은채윤",
+        "type": "빚",
+        "to": "신보람",
+        "basis": "국토교통부 장관에게 역 정원 조정을 부탁해 진 빚"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "두복",
+        "type": "지휘",
+        "to": "은채윤",
+        "basis": "노원구 국회의원 은채윤의 직속"
+      },
+      {
+        "from": "복감",
+        "type": "지휘",
+        "to": "은채윤",
+        "basis": "노원구 국회의원 은채윤의 직속"
+      },
+      {
+        "from": "국감",
+        "type": "지휘",
+        "to": "은채윤",
+        "basis": "노원구 국회의원 은채윤의 직속"
+      },
+      {
+        "from": "은태호",
+        "type": "지휘",
+        "to": "은채윤",
+        "basis": "노원구 국회의원 은채윤의 직속"
+      },
+      {
+        "from": "권바린",
+        "type": "지휘",
+        "to": "은채윤",
+        "basis": "노원구 국회의원 은채윤의 직속"
+      },
+      {
+        "from": "고서준",
+        "type": "경쟁",
+        "to": "은채윤",
+        "basis": "아크와 부속서를 맺자는 OMO당 의원과 막자는 클로당 의원으로 국회에서 맞선다"
+      },
+      {
+        "from": "은태호",
+        "type": "맹세",
+        "to": "은채윤",
+        "basis": "씨앗 창고 열쇠를 넘겨받던 날 의석이 오기 전까지 창고를 지키겠다고 맹세했다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K324",
+    "members": [
+      {
+        "personId": "K306",
+        "name": "두복"
+      },
+      {
+        "personId": "K307",
+        "name": "복감"
+      },
+      {
+        "personId": "K312",
+        "name": "국감"
+      },
+      {
+        "personId": "K374",
+        "name": "은태호"
+      },
+      {
+        "personId": "person-0870",
+        "name": "권바린"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 11,
-        "effective": 11
+      "diplomacy": {
+        "base": 10,
+        "effective": 10
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 12,
-        "effective": 12
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
       }
     },
     "skills": [
       {
-        "id": "care-under-isolation",
-        "name": {
-          "ko": "격리 진료",
-          "en": "Care under isolation"
-        },
-        "rating": 70
+        "id": "skill-0325-fields",
+        "name": "빛밭 운영",
+        "rating": 57
       }
     ],
     "traits": [
       {
-        "id": "stated-priority",
-        "name": {
-          "ko": "치료 순서를 굽히지 않는다",
-          "en": "Unbending treatment order"
-        },
-        "description": {
-          "ko": "의심 환자를 격리하면서 왕진을 이어갔고 장교의 우선 요청을 거절한다. 치료 지속과 중증도 판단이 강점이다.",
-          "en": "Isolation of a suspected infectious patient did not end home visits, and officer priority requests are refused. Continuity of care and severity judgment are supported strengths."
-        },
-        "behavior": {
-          "ko": "손놀림은 부드러우나 치료 순서를 바꾸라는 압력에는 차갑다. 적의 부상도 중증도 표 앞에서는 같은 줄로 본다. 제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다.",
-          "en": "Her hands moved gently, but she turned cold to any pressure to change the care order. An enemy's wound stood in the same line before the severity table."
-        },
-        "stress": {
-          "ko": "공포. 진료실이 전리품 분류장이 되어 제기동의 정통성이 한 계절에 무너지는 것.",
-          "en": "Fear. That the care room would become a war-booty sorting hall and Jegi-dong's legitimacy would fall in a season."
-        },
-        "relationship": {
-          "ko": "관계. 류은비의 도제로 일하며, 백온의 피난민을 받고, 전미리와 신내 이송 병상을 맞춘다.",
-          "en": "Relations. Worked as Ryu Eunbi's apprentice, received Baek On's refugees, and matched sickbeds with Jeon Miri's Sinnae transfers."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 전문의. 직함은 중증도 진료 전문의. 중증도 표와 진료 소견을 나란히 적어 배정하고, 강국 장교의 우선 치료 요청은 단장에게 보고하고 중증도 원칙에 따라 거절한다.",
-          "en": "Office. Rank: member. Title: healer. She assigned beds with the severity table and contribution labor written side by side and raised a great power's officer's priority care request to the guild council."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 전문의. 직함은 중증도 진료 전문의. 중증도 표와 진료 소견을 나란히 적어 배정하고, 강국 장교의 우선 치료 요청은 단장에게 보고하고 중증도 원칙에 따라 거절한다.",
-          "en": "Recorded duty and limits: Office. Rank: member. Title: healer. She assigned beds with the severity table and contribution labor written side by side and raised a great power's officer's priority care request to the guild council."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 진료실이 전리품 분류장이 되어 제기동의 정통성이 한 계절에 무너지는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That the care room would become a war-booty sorting hall and Jegi-dong's legitimacy would fall in a season."
-        },
-        "relationship": {
-          "ko": "관계. 류은비의 도제로 일하며, 백온의 피난민을 받고, 전미리와 신내 이송 병상을 맞춘다.",
-          "en": "Relations. Worked as Ryu Eunbi's apprentice, received Baek On's refugees, and matched sickbeds with Jeon Miri's Sinnae transfers."
-        },
+        "id": "trait-0325-banks",
+        "name": "둑으로 증명하는 사람",
+        "description": "말보다 쌓은 둑의 길이를 내민다.",
+        "behavior": "노역 날에는 빛밭에 나가 함께 흙을 나른다.",
+        "stress": "빛밭 몫이 줄면 고시를 새로 쓰려 한다.",
+        "relationship": "노원 사람들은 그를 젊지만 제 땅 사람이라 부른다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "의심 환자를 격리하면서 왕진을 이어갔고 장교의 우선 요청을 거절한다. 치료 지속과 중증도 판단이 강점이다.",
-      "en": "Isolation of a suspected infectious patient did not end home visits, and officer priority requests are refused. Continuity of care and severity judgment are supported strengths."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -525,121 +248,145 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c740-d589-c8fc",
-    "name": "행주 은씨",
-    "crest": "clan-crests/c740-d589-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -30,
-    "개방": 35,
-    "무력": -65,
-    "물질": -20,
-    "공동": 10,
-    "원칙": 60,
-    "공개": 25,
-    "자격": 15,
-    "분산": 25,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -10,
-    "위험": 25,
-    "과시": -5,
-    "지속": 35,
-    "지향": "무성향",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "중증도 배정·우선 치료 요청 보고",
-    "소속": "흰십자단",
-    "품계": "전문의",
-    "직함": "치료사",
-    "가치관": "권위 −30 | 개방 35 | 무력 −65 | 물질 −20 | 공동 10 | 원칙 60 | 공개 25 | 자격 15 | 분산 25 | 변혁 −10",
-    "욕망": "갈망 0 | 독점 −10 | 위험 25 | 과시 −5 | 지속 35 | 지향 무성향 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2094-02-23에 태어났다. 2126년 개막 현재 치료사 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 중증도 배정·우선 치료 요청 보고 창구가 은채윤의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 전문의. 직함은 중증도 진료 전문의. 중증도 표와 진료 소견을 나란히 적어 배정하고, 무장 당직 책임자의 우선 치료 요청은 단장에게 보고하고 중증도 원칙에 따라 거절한다.",
-    "일화": "2125년 전염 의심 환자를 격리 칸에 두고 왕진을 멈추지 않았다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.",
-    "관계": "류은비의 도제로 일하며, 백온의 피난민을 받고, 전미리와 신내 이송 병상을 맞춘다.",
-    "야망": "적군 부상자도 중증도만으로 받는 진료 기록을 서울 의료헌장의 본문으로 남긴다.",
-    "공포": "진료실이 전리품 분류장이 되어 제기동의 정통성이 한 계절에 무너지는 일을 두려워한다.",
-    "개입": "캡슐 인장을 대조하거나, 적군 부상자를 숨겨 헌장 위반 누명을 씌울 수 있다."
-  },
-  "biography": "손놀림은 부드러우나 치료 순서를 바꾸라는 압력에는 차갑다. 적의 부상도 중증도 표 앞에서는 같은 줄로 본다.\n\n- 생업: 중증도 배정·우선 치료 요청 보고\n- 소속: 흰십자단\n- 품계: 전문의\n- 직함: 치료사\n**생애.** 2094-02-23에 태어났다. 2126년 개막 현재 치료사 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 중증도 배정·우선 치료 요청 보고 창구가 은채윤의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 전문의. 직함은 중증도 진료 전문의. 중증도 표와 진료 소견을 나란히 적어 배정하고, 무장 당직 책임자의 우선 치료 요청은 단장에게 보고하고 중증도 원칙에 따라 거절한다.\n\n**일화.** 2125년 전염 의심 환자를 격리 칸에 두고 왕진을 멈추지 않았다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.\n\n**관계.** 류은비의 도제로 일하며, 백온의 피난민을 받고, 전미리와 신내 이송 병상을 맞춘다.\n\n**야망.** 적군 부상자도 중증도만으로 받는 진료 기록을 서울 의료헌장의 본문으로 남긴다.\n\n**공포.** 진료실이 전리품 분류장이 되어 제기동의 정통성이 한 계절에 무너지는 일을 두려워한다.\n\n**개입.** 캡슐 인장을 대조하거나, 적군 부상자를 숨겨 헌장 위반 누명을 씌울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 35 | 무력 −65 | 물질 −20 | 공동 10 | 원칙 60 | 공개 25 | 자격 15 | 분산 25 | 변혁 −10\n- 욕망: 갈망 0 | 독점 −10 | 위험 25 | 과시 −5 | 지속 35 | 지향 무성향 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-13"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:duchy:11350",
+      "name": {
+        "ko": "노원구 공작령"
+      },
+      "holderPersonId": "K324",
+      "directLiegePersonId": "K144",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1135056000",
+          "name": "월계1동"
+        },
+        {
+          "id": "region:1135057000",
+          "name": "월계2동"
+        },
+        {
+          "id": "region:1135058000",
+          "name": "월계3동"
+        },
+        {
+          "id": "region:1135059500",
+          "name": "공릉1동"
+        },
+        {
+          "id": "region:1135060000",
+          "name": "공릉2동"
+        },
+        {
+          "id": "region:1135061100",
+          "name": "하계1동"
+        },
+        {
+          "id": "region:1135061200",
+          "name": "하계2동"
+        },
+        {
+          "id": "region:1135061900",
+          "name": "중계본동"
+        },
+        {
+          "id": "region:1135062100",
+          "name": "중계1동"
+        },
+        {
+          "id": "region:1135062400",
+          "name": "중계4동"
+        },
+        {
+          "id": "region:1135062500",
+          "name": "중계2·3동"
+        },
+        {
+          "id": "region:1135063000",
+          "name": "상계1동"
+        },
+        {
+          "id": "region:1135064000",
+          "name": "상계2동"
+        },
+        {
+          "id": "region:1135066500",
+          "name": "상계3·4동"
+        },
+        {
+          "id": "region:1135067000",
+          "name": "상계5동"
+        },
+        {
+          "id": "region:1135069500",
+          "name": "상계6·7동"
+        },
+        {
+          "id": "region:1135070000",
+          "name": "상계8동"
+        },
+        {
+          "id": "region:1135071000",
+          "name": "상계9동"
+        },
+        {
+          "id": "region:1135072000",
+          "name": "상계10동"
+        }
+      ],
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11350",
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
   ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "은채윤",
-        "type": "사제",
-        "to": "류은비",
-        "basis": "치료사 도제로 길드에서 일함"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "구름결",
-        "type": "계약",
-        "to": "은채윤",
-        "basis": "구름결은 치료 순서를 바꿔 달라는 청탁을 공개 창구로 돌리고 은채윤에게 처방 기록과 요청 내용을 전한다. 은채윤은 진료 소견과 중증도 표로 배정해, 청탁이 더 위중한 환자의 순서를 밀어내지 않게 한다."
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:dong:1135069500",
+      "name": {
+        "ko": "상계6·7동"
       },
-      {
-        "from": "강솔준",
-        "type": "계약",
-        "to": "은채윤",
-        "basis": "강솔준은 치료 순서를 바꾸라는 청탁을 공개 창구로 돌리고 은채윤에게 처방 기록을 전한다. 은채윤은 중증도와 진료 소견으로 배정해 청탁이 위중한 환자를 밀어내지 않게 한다."
+      "holderPersonId": "K306",
+      "directLiegePersonId": "K324",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1135069500",
+          "name": "상계6·7동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "두복",
+      "holderRoute": "/people/person-0307"
+    },
+    {
+      "id": "holding:v3:station:석계",
+      "name": {
+        "ko": "석계역"
       },
-      {
-        "from": "성솔현",
-        "type": "계약",
-        "to": "은채윤",
-        "basis": "성솔현은 다시 열린 처방 당직의 기록을 은채윤에게 넘긴다. 은채윤은 중증도와 진료 소견을 확인해 교대 공백 중 빠진 환자의 치료를 잇는다."
+      "holderPersonId": "K307",
+      "directLiegePersonId": "K324",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "석계",
+        "stationName": "석계"
       },
-      {
-        "from": "박별윤",
-        "type": "계약",
-        "to": "은채윤",
-        "basis": "박별윤은 치료 순서를 바꾸라는 청탁을 공개 창구로 돌리고 은채윤에게 처방 기록을 전한다. 은채윤은 중증도와 진료 소견에 따라 배정해 사적 요청이 환자 순서를 앞지르지 않게 한다."
-      },
-      {
-        "from": "차바환",
-        "type": "계약",
-        "to": "은채윤",
-        "basis": "차바환은 치료 순서 청탁을 공개 창구로 돌리고 은채윤에게 처방 기록을 전한다. 은채윤은 중증도·진료 소견으로 배정해 위중한 환자가 청탁에 밀리지 않게 한다."
-      },
-      {
-        "from": "방한울",
-        "type": "사제",
-        "to": "은채윤",
-        "basis": "은채윤의 도제로서 침상 순서를 집행하는 사제이고"
-      },
-      {
-        "from": "원미루",
-        "type": "계약",
-        "to": "은채윤",
-        "basis": "은채윤의 선반 약을 대조 표본으로 받는다"
-      },
-      {
-        "from": "방미산",
-        "type": "지휘",
-        "to": "은채윤",
-        "basis": "은채윤의 지휘로 병상을 나누고"
-      },
-      {
-        "from": "석라온",
-        "type": "계약",
-        "to": "은채윤",
-        "basis": "은채윤의 병상을 피난 줄에 열고"
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1135056000",
+          "name": "월계1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "복감",
+      "holderRoute": "/people/person-0308"
+    }
+  ]
 }

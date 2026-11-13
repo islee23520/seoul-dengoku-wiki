@@ -1,387 +1,105 @@
 {
   "id": "person-0441",
   "name": "류동현",
-  "title": "전력장치 순찰대 · 동작구 영주",
-  "position": "전력장치 순찰대 · 동작구 영주",
+  "title": "작업조장",
+  "position": "작업조장 · 천왕역",
   "characterId": "K441",
-  "rank": "영주",
-  "commonTier": "T3",
-  "occupation": "경비·순찰",
+  "rank": "작업조장",
+  "commonTier": "T5",
+  "occupation": "부품 가공",
   "gender": "여성",
   "stage": "S4",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-류동현",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0441",
   "birthDate": "2083-12-17",
   "birthday": "12-17",
   "age": 43,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/313",
-    "lore/characters/Cast-State-02.json#/content/315",
-    "lore/characters/Cast-State-02.json#/content/316"
-  ],
-  "familyTree": {
-    "personId": "K441",
-    "nodes": [
-      {
-        "id": "K441",
-        "personId": "K441",
-        "kind": "person",
-        "name": "류동현",
-        "birthDate": "2083-12-17",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K441"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류동현-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-류동현-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0441"
-      },
-      {
-        "id": "FH-K441-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "류승희",
-        "lineage": {
-          "surname": "류",
-          "bongwan": "문화",
-          "clan": "b958-bb38-d654-67f3-agreed-d604-second"
-        },
-        "birthDate": "2053-12-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류동현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2091,
-            "summary": "류승희는 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-류동현-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K441-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "류승규",
-        "lineage": {
-          "surname": "류",
-          "bongwan": "문화",
-          "clan": "b958-bb38-d654-67f3-agreed-d604-second"
-        },
-        "birthDate": "2023-12-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류동현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "류승규는 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-류동현-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K441-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "송준섭",
-        "birthDate": "2053-12-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류동현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2091,
-            "summary": "송준섭은 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-류동현-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K441-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "조준란",
-        "birthDate": "2023-12-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류동현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "조준란은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-류동현-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K441-P-01:K441:biological",
-        "from": "FH-K441-P-01",
-        "to": "K441",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류동현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K441-P-02:FH-K441-P-01:biological",
-        "from": "FH-K441-P-02",
-        "to": "FH-K441-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류동현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K441-M-01:K441:biological",
-        "from": "FH-K441-M-01",
-        "to": "K441",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류동현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K441-M-02:FH-K441-M-01:biological",
-        "from": "FH-K441-M-02",
-        "to": "FH-K441-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-류동현-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b958-bb38-d654-67f3",
+    "name": "문화 류씨",
+    "crest": "clan-crests/b958-bb38-d654-67f3.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "류동현은 천왕역에서 일하는 부품대 작업조장이다. 7호선 차량기지 작업장에서 열 펌프 압축기 부품을 깎는 장을 주로 맡고, 장 하나가 끝날 때마다 조원들의 손시간을 작은 쇠판에 새겨 나눠 준다. 그는 보증판에 제 이름이 오르는 대주가 되기를 스무 해째 바라 왔고, 이제 마흔셋이다. 그러나 대주 자리는 대물림이라, 그는 계약마다 손으로 보여 줄 기회를 찾는다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "작업조장",
+    "품계": "작업조장",
+    "생업": "부품 가공",
+    "일하는 역": "천왕역",
+    "잠자는 역": "천왕역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "류동현은 천왕역에서 일하는 부품대 작업조장이다. 7호선 차량기지 작업장에서 열 펌프 압축기 부품을 깎는 장을 주로 맡고, 장 하나가 끝날 때마다 조원들의 손시간을 작은 쇠판에 새겨 나눠 준다. 그는 보증판에 제 이름이 오르는 대주가 되기를 스무 해째 바라 왔고, 이제 마흔셋이다. 그러나 대주 자리는 대물림이라, 그는 계약마다 손으로 보여 줄 기회를 찾는다.",
+    "관직": "직함 작업조장. 직위 작업조장 · 천왕역. 품계 작업조장. 일하는 역 천왕역."
+  },
+  "values": {
+    "권위": -45,
+    "개방": 5,
+    "무력": -5,
+    "물질": 50,
+    "공동": 25,
+    "원칙": -5,
+    "공개": 20,
+    "자격": 60,
+    "분산": 80,
+    "변혁": 20
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": -30,
+    "위험": -25,
+    "과시": -20,
+    "지속": -5,
+    "지향": "이성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0441",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 11,
+        "effective": 11
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
       }
     },
-    "skills": [
-      {
-        "id": "k441-training-report-review",
-        "name": {
-          "ko": "훈련 보고 재검토",
-          "en": "Training-report review"
-        },
-        "rating": 45
-      }
-    ],
-    "traits": [
-      {
-        "id": "k441-action-priority",
-        "name": {
-          "ko": "오보를 다시 연다",
-          "en": "Reopen a wrong report"
-        },
-        "description": {
-          "ko": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다.",
-          "en": "In 2125, when the first report of a bridge-raid exercise proved wrong, he reopened the observation column. By this deed the signature of the power installation patrol post rose into the ledger."
-        },
-        "behavior": {
-          "ko": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다.",
-          "en": "In 2125, when the first report of a bridge-raid exercise proved wrong, he reopened the observation column. By this deed the signature of the power installation patrol post rose into the ledger."
-        },
-        "stress": {
-          "ko": "전력장치 순찰대 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
-          "en": "That the power installation patrol duty post would stand empty and the Alliance's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      },
-      {
-        "id": "k441-bounded-handover",
-        "name": {
-          "ko": "기록으로 잇는 당직",
-          "en": "Duty linked by records"
-        },
-        "description": {
-          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
-          "en": "Passes keys and records to the next shift without enlarging authority."
-        },
-        "behavior": {
-          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
-          "en": "Passes keys and records to the next shift without enlarging authority."
-        },
-        "stress": {
-          "ko": "전력장치 순찰대 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
-          "en": "That the power installation patrol duty post would stand empty and the Alliance's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다. 짧은 행위와 인수인계가 근거여서 다른 분야의 숙련이나 보정은 발급하지 않았다.",
-      "en": "In 2125, when the first report of a bridge-raid exercise proved wrong, he reopened the observation column. By this deed the signature of the power installation patrol post rose into the ledger. The brief action and handover support only limited strengths; no unrelated proficiency or numeric trait bonus is issued."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -419,426 +137,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:barony-chungcheong-4420025000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-4420025000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-4420025300",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-4420025300",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-4420031000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-4420031000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-4420035000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-4420035000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-4420036000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-4420036000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-4420037000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-4420037000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-4420038000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-4420038000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-4420039000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-4420039000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-4420040000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-4420040000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-4420041000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-4420041000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-4420057000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-4420057000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-4420058000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-4420058000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-4420059000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-4420059000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-4420060000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-4420060000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-4420061000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-4420061000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-4420062000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-4420062000",
-          "directLiegePersonId": "K998"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-gu-11590-S02",
-      "name": {
-        "ko": "동작구 공작령 직영지"
-      },
-      "holderPersonId": "K441",
-      "directLiegePersonId": "K029",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "region:1159051000",
-          "name": "노량진1동"
-        },
-        {
-          "id": "region:1159052000",
-          "name": "노량진2동"
-        },
-        {
-          "id": "region:1159053000",
-          "name": "상도1동"
-        },
-        {
-          "id": "region:1159054000",
-          "name": "상도2동"
-        },
-        {
-          "id": "region:1159055000",
-          "name": "상도3동"
-        },
-        {
-          "id": "region:1159056000",
-          "name": "상도4동"
-        },
-        {
-          "id": "region:1159060500",
-          "name": "흑석동"
-        },
-        {
-          "id": "region:1159062000",
-          "name": "사당1동"
-        },
-        {
-          "id": "region:1159063000",
-          "name": "사당2동"
-        },
-        {
-          "id": "region:1159064000",
-          "name": "사당3동"
-        },
-        {
-          "id": "region:1159065000",
-          "name": "사당4동"
-        },
-        {
-          "id": "region:1159065100",
-          "name": "사당5동"
-        },
-        {
-          "id": "region:1159066000",
-          "name": "대방동"
-        },
-        {
-          "id": "region:1159067000",
-          "name": "신대방1동"
-        },
-        {
-          "id": "region:1159068000",
-          "name": "신대방2동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11590-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
-    {
-      "id": "title:duchy-gu-11590-S02",
-      "name": "동작구 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K441",
-      "basis": "개막 행정 규모 그룹 gu:11590(duchy) 배분 · 결정적 후보 선정",
-      "stateId": "S02",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "region:1159051000",
-        "region:1159052000",
-        "region:1159053000",
-        "region:1159054000",
-        "region:1159055000",
-        "region:1159056000",
-        "region:1159060500",
-        "region:1159062000",
-        "region:1159063000",
-        "region:1159064000",
-        "region:1159065000",
-        "region:1159065100",
-        "region:1159066000",
-        "region:1159067000",
-        "region:1159068000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
-    }
-  ],
-  "clan": {
-    "id": "b958-bb38-d654-67f3",
-    "name": "문화 류씨",
-    "crest": "clan-crests/b958-bb38-d654-67f3.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -10,
-    "개방": -10,
-    "무력": 5,
-    "물질": 35,
-    "공동": 50,
-    "원칙": 5,
-    "공개": 20,
-    "자격": 40,
-    "분산": 25,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": -30,
-    "위험": -25,
-    "과시": -20,
-    "지속": -5,
-    "지향": "이성",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "규격맹",
-    "생업": "경비·순찰",
-    "품계": "조합원",
-    "직함": "전력장치 순찰대",
-    "업무 위치": "오류2동. 류동현은 오류2동 제1분공방 전력장치의 순찰 기록을 이일섭에게 돌린다. 얼음에 막힌 인계 문 앞에서 전력 이상을 발견하면 경비 암호패와 발생 시각을 적되 곡물 재고와 배급 결정은 후계에게 남긴다.",
-    "가치관": "권위 −10 | 개방 −10 | 무력 5 | 물질 35 | 공동 50 | 원칙 5 | 공개 20 | 자격 40 | 분산 25 | 변혁 10",
-    "욕망": "갈망 45 | 독점 −30 | 위험 −25 | 과시 −20 | 지속 −5 | 지향 이성 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n- 업무 위치: 오류2동. 류동현은 오류2동 제1분공방 전력장치의 순찰 기록을 이일섭에게 돌린다. 얼음에 막힌 인계 문 앞에서 전력 이상을 발견하면 경비 암호패와 발생 시각을 적되 곡물 재고와 배급 결정은 후계에게 남긴다.",
-    "관직": "품계 조합원. 직함은 전력장치 순찰대. 얼음에 막힌 인계 문 앞에서 전력 이상을 발견하면 경비 암호패와 발생 시각을 적되 곡물 재고와 배급 결정은 후계에게 남긴다.",
-    "일화": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다. 이 일로 전력장치 순찰대 자리의 서명이 장부에 올랐다.",
-    "관계": "류동현은 이일섭의 직속 경비로 전력장치 순찰과 이상 보고를 맡음.",
-    "야망": "류동현은 제1분공방의 전력 이상을 발생 시각과 경비 기록으로 남겨 이일섭에게 제때 보고하려 한다.",
-    "공포": "전력 이상을 제때 보고하지 못해 제1분공방의 경비 기록과 작업 구역 상태가 어긋나는 것.",
-    "개입": "플레이어는 류동현과 얼어붙은 인계 문 앞의 전력 이상 시각을 적어 이일섭에게 보고하거나 경비 암호패 기록을 대조할 수 있다."
-  },
-  "biography": "류동현은 전력 이상을 보고하되 곡물 재고와 배급 판단은 이일섭의 몫으로 남긴다.\n\n- 소속: 규격맹\n- 생업: 경비·순찰\n- 품계: 조합원\n- 직함: 전력장치 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n- 업무 위치: 오류2동. 류동현은 오류2동 제1분공방 전력장치의 순찰 기록을 이일섭에게 돌린다. 얼음에 막힌 인계 문 앞에서 전력 이상을 발견하면 경비 암호패와 발생 시각을 적되 곡물 재고와 배급 결정은 후계에게 남긴다.\n\n**관직.** 품계 조합원. 직함은 전력장치 순찰대. 얼음에 막힌 인계 문 앞에서 전력 이상을 발견하면 경비 암호패와 발생 시각을 적되 곡물 재고와 배급 결정은 후계에게 남긴다.\n\n**일화.** 2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다. 이 일로 전력장치 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 류동현은 이일섭의 직속 경비로 전력장치 순찰과 이상 보고를 맡음.\n\n**야망.** 류동현은 제1분공방의 전력 이상을 발생 시각과 경비 기록으로 남겨 이일섭에게 제때 보고하려 한다.\n\n**공포.** 전력 이상을 제때 보고하지 못해 제1분공방의 경비 기록과 작업 구역 상태가 어긋나는 것.\n\n**개입.** 플레이어는 류동현과 얼어붙은 인계 문 앞의 전력 이상 시각을 적어 이일섭에게 보고하거나 경비 암호패 기록을 대조할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 −10 | 무력 5 | 물질 35 | 공동 50 | 원칙 5 | 공개 20 | 자격 40 | 분산 25 | 변혁 10\n- 욕망: 갈망 45 | 독점 −30 | 위험 −25 | 과시 −20 | 지속 −5 | 지향 이성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-02"
-  ],
-  "directLiege": {
-    "personId": "K998",
-    "name": "이일섭",
-    "courtId": "court:K998",
-    "effectiveYear": 2126
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "류동현",
-        "type": "지휘",
-        "to": "이일섭",
-        "basis": "이일섭의 직속 경비로 전력장치 순찰과 이상 보고를 맡음"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

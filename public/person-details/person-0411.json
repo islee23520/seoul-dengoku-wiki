@@ -1,399 +1,133 @@
 {
   "id": "person-0411",
   "name": "동새결",
-  "title": "손실보상 감사 기록관, 곽은재의 실무 담당자",
-  "position": "손실보상 감사 기록관, 곽은재의 실무 담당자",
+  "title": "도곡2동 대피소장",
+  "position": "도곡2동 대피소장 · 아크",
   "characterId": "K410",
-  "rank": "미등록",
-  "commonTier": "T5",
-  "occupation": "개폐 시각·도착 도장·감사 철 기록",
+  "rank": "대피소장",
+  "commonTier": "T3",
+  "occupation": "대피소 통솔",
   "gender": "남성",
   "stage": "S2",
-  "state": "S16",
-  "stateName": "정동노총",
-  "sourceRoute": "/world/Cast-State-16#인물-동새결",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0411",
   "birthDate": "2075-09-09",
   "birthday": "09-09",
   "age": 51,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-16.json#/content/160",
-    "lore/characters/Cast-State-16.json#/content/163",
-    "lore/characters/Cast-State-16.json#/content/165"
-  ],
-  "familyTree": {
-    "personId": "K410",
-    "nodes": [
-      {
-        "id": "K410",
-        "personId": "K410",
-        "kind": "person",
-        "name": "동새결",
-        "birthDate": "2075-09-09",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K410"
-          },
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-동새결-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 손실보상 감사 기록관, 곽은재의 실무 담당자 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-동새결-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0411"
-      },
-      {
-        "id": "FH-K410-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "동승연",
-        "lineage": {
-          "surname": "동",
-          "bongwan": "광천",
-          "clan": "b3d9-ad11-cc9c-agreed-c0c8-first"
-        },
-        "birthDate": "2045-09-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-동새결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2083,
-            "summary": "동승연은 서울역 등기소에서 개폐 시각·도착 도장·감사 철 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-동새결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K410-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "동승정",
-        "lineage": {
-          "surname": "동",
-          "bongwan": "광천",
-          "clan": "b3d9-ad11-cc9c-agreed-c0c8-first"
-        },
-        "birthDate": "2015-09-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-동새결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "동승정은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-동새결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K410-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최태석",
-        "birthDate": "2045-09-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-동새결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2083,
-            "summary": "최태석은 서울역 등기소에서 개폐 시각·도착 도장·감사 철 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-동새결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K410-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준문",
-        "birthDate": "2015-09-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-동새결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정준문은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-동새결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K410-P-01:K410:biological",
-        "from": "FH-K410-P-01",
-        "to": "K410",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-동새결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K410-P-02:FH-K410-P-01:biological",
-        "from": "FH-K410-P-02",
-        "to": "FH-K410-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-동새결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K410-M-01:K410:biological",
-        "from": "FH-K410-M-01",
-        "to": "K410",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-동새결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K410-M-02:FH-K410-M-01:biological",
-        "from": "FH-K410-M-02",
-        "to": "FH-K410-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-동새결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b3d9-ad11-cc9c",
+    "name": "광천 동씨",
+    "crest": "clan-crests/b3d9-ad11-cc9c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "도곡 쪽 출입구 하나가 눈에 묻힌 겨울, 누가 바깥에 남았는지를 가려낸 것은 동새결이 대피소 명부 옆에 적어 둔 출입구 여닫은 시각이었다. 그 뒤로 도곡2동 대피소장인 그는 매봉역 대합실에서 명부를 적을 때 시각을 빼놓지 않는다. 그 겨울 눈 굴을 파 들어가다 잃은 자리에는 둘째 부위가 들었고, 쉰한 살인 그는 지금도 그 출입구 앞을 지날 때 걸음을 늦춘다. 강남 곁집장 오경재가 너무 젊다고 걱정하는 사람들 앞에서, 그는 명부가 바르면 나이는 문제가 아니라고 말한다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "도곡2동 대피소장",
+    "품계": "대피소장",
+    "생업": "대피소 통솔",
+    "일하는 역": "매봉역",
+    "잠자는 역": "매봉역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "도곡 쪽 출입구 하나가 눈에 묻힌 겨울, 누가 바깥에 남았는지를 가려낸 것은 동새결이 대피소 명부 옆에 적어 둔 출입구 여닫은 시각이었다. 그 뒤로 도곡2동 대피소장인 그는 매봉역 대합실에서 명부를 적을 때 시각을 빼놓지 않는다. 그 겨울 눈 굴을 파 들어가다 잃은 자리에는 둘째 부위가 들었고, 쉰한 살인 그는 지금도 그 출입구 앞을 지날 때 걸음을 늦춘다. 강남 곁집장 오경재가 너무 젊다고 걱정하는 사람들 앞에서, 그는 명부가 바르면 나이는 문제가 아니라고 말한다.",
+    "관직": "직함 도곡2동 대피소장. 직위 도곡2동 대피소장 · 아크. 품계 대피소장. 일하는 역 매봉역."
+  },
+  "values": {
+    "권위": -10,
+    "개방": 25,
+    "무력": -15,
+    "물질": -50,
+    "공동": 35,
+    "원칙": 40,
+    "공개": -20,
+    "자격": -10,
+    "분산": 5,
+    "변혁": 50
+  },
+  "desire": {
+    "갈망": 20,
+    "독점": -40,
+    "위험": -30,
+    "과시": 0,
+    "지속": 30,
+    "지향": "양성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0411",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "동새결",
+        "type": "지휘",
+        "to": "오경재",
+        "basis": "강남 곁집장 오경재의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K423",
+    "name": "오경재",
+    "courtId": "court:K423",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
+      },
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
-      "learning": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "prowess": {
-        "base": 3,
-        "effective": 3
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
-      "endurance": {
+      "learning": {
         "base": 6,
         "effective": 6
-      }
-    },
-    "skills": [
-      {
-        "id": "time-unit-reconciliation",
-        "name": {
-          "ko": "시각 단위 대조",
-          "en": "Time and unit reconciliation"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "단위를 섞지 않음",
-          "en": "Keeps units distinct"
-        },
-        "description": {
-          "ko": "개폐 시각과 도장과 방청 끈을 함께 철하고 서로 다른 단위를 갈라 적는다. 같은 밤 단수가 다른 단위로 오자 철끈을 풀지 않았다.",
-          "en": "Files operation times, stamps, and witness cords together and separates incompatible units. Keeps files bound when one outage arrives in different measures."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 단위를 섞지 않음을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "시각 불일치 때 문장보다 시계를 먼저 맞출 수 있다.",
-          "en": "May synchronize clocks before rewriting inconsistent reports."
-        },
-        "relationship": {
-          "ko": "곽은재의 직인을 이어받고 정호준의 이행 시간을 옮긴다.",
-          "en": "Receives Gwak Eunjae’s auxiliary stamp and records Jeong Hojun’s delivery times."
-        },
-        "effects": []
       },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "조합원이 같은 시각표로 손실을 주장하게 해, 암사 단수와 여의신 호송 지연이 서로 다른 단위로 계산되지 않게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "공동교섭 원장이 시청역 함에서 빠져 강국 배상표만 살아남는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "곽은재의 직인을 이어받고 정호준의 이행 시간을 옮긴다.",
-          "en": "Receives Gwak Eunjae’s auxiliary stamp and records Jeong Hojun’s delivery times."
-        },
-        "effects": []
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "개폐 시각과 도장과 방청 끈을 함께 철하고 서로 다른 단위를 갈라 적는다. 같은 밤 단수가 다른 단위로 오자 철끈을 풀지 않았다.",
-      "en": "Files operation times, stamps, and witness cords together and separates incompatible units. Keeps files bound when one outage arrives in different measures."
     },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -419,72 +153,25 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b3d9-ad11-cc9c",
-    "name": "광천 동씨",
-    "crest": "clan-crests/b3d9-ad11-cc9c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -35,
-    "개방": 40,
-    "무력": -25,
-    "물질": 0,
-    "공동": 15,
-    "원칙": 50,
-    "공개": 25,
-    "자격": 25,
-    "분산": 35,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 20,
-    "독점": -40,
-    "위험": -30,
-    "과시": 0,
-    "지속": 30,
-    "지향": "양성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "개폐 시각·도착 도장·감사 철 기록",
-    "소속": "정동노총",
-    "공동체 역할": "조합원",
-    "직무": "손실보상 감사 기록관, 곽은재의 실무 담당자",
-    "가치관": "권위 −35 | 개방 40 | 무력 −25 | 물질 0 | 공동 15 | 원칙 50 | 공개 25 | 자격 25 | 분산 35 | 변혁 5",
-    "욕망": "갈망 20 | 독점 −40 | 위험 −30 | 과시 0 | 지속 30 | 지향 양성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2075-09-09에 태어난 동새결은 영구 겨울의 시청역 조합 작업장에서 손실보상 감사 기록관, 곽은재의 실무 담당자 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 동새결은 소공동의 시청역 조합 작업장에서 손실보상 감사 기록관, 곽은재의 실무 담당자 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "직무": "공동체 역할은 조합원이며 직무는 손실보상 감사 기록관, 곽은재의 실무 담당자이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.",
-    "일화": "뚝섬 급수 연장이 끊긴 주, 아차산·창동·수서가 같은 밤의 단수를 각각 시·홉·인원으로 적어 내자 동새결은 철끈을 풀지 않았다.",
-    "관계": "동새결의 기존 관계 기록은 다음과 같다. 곽은재의 보조 직인을 철끈으로 이어 받는 사제이고, 정호준의 이행 시간을 손실표 옆칸에 옮긴다. 라진우의 가락 무게가 배상 단위로 쓰이면 단위를 갈라 적는다.",
-    "목표": "동새결은 손실보상 감사 기록관, 곽은재의 실무 담당자 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.",
-    "공포": "손실보상 감사 기록관, 곽은재의 실무 담당자 업무의 서명이나 인계 기록이 바뀌어 동새결의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.",
-    "개입": "동새결은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다."
-  },
-  "biography": "동새결은 영구 겨울의 시청역 조합 작업장에서 손실보상 감사 기록관, 곽은재의 실무 담당자 업무 기록과 공개 표결 서명을 먼저 대조한다. 급수·통행·계약 일정이 겹치는 날에는 접수 시각과 인계 순서를 같은 장부에 남긴다.\n\n- 생업: 개폐 시각·도착 도장·감사 철 기록\n- 소속: 정동노총\n- 공동체 역할: 조합원\n- 직무: 손실보상 감사 기록관, 곽은재의 실무 담당자\n**생애.** 2075-09-09에 태어난 동새결은 영구 겨울의 시청역 조합 작업장에서 손실보상 감사 기록관, 곽은재의 실무 담당자 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 동새결은 소공동의 시청역 조합 작업장에서 손실보상 감사 기록관, 곽은재의 실무 담당자 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**직무.** 공동체 역할은 조합원이며 직무는 손실보상 감사 기록관, 곽은재의 실무 담당자이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.\n\n**일화.** 뚝섬 급수 연장이 끊긴 주, 아차산·창동·수서가 같은 밤의 단수를 각각 시·홉·인원으로 적어 내자 동새결은 철끈을 풀지 않았다.\n\n**관계.** 동새결의 기존 관계 기록은 다음과 같다. 곽은재의 보조 직인을 철끈으로 이어 받는 사제이고, 정호준의 이행 시간을 손실표 옆칸에 옮긴다. 라진우의 가락 무게가 배상 단위로 쓰이면 단위를 갈라 적는다.\n\n**목표.** 동새결은 손실보상 감사 기록관, 곽은재의 실무 담당자 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.\n\n**공포.** 손실보상 감사 기록관, 곽은재의 실무 담당자 업무의 서명이나 인계 기록이 바뀌어 동새결의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.\n\n**개입.** 동새결은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 40 | 무력 −25 | 물질 0 | 공동 15 | 원칙 50 | 공개 25 | 자격 25 | 분산 35 | 변혁 5\n- 욕망: 갈망 20 | 독점 −40 | 위험 −30 | 과시 0 | 지속 30 | 지향 양성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-16"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "동새결",
-        "type": "사제",
-        "to": "곽은재",
-        "basis": "곽은재의 보조 직인을 철끈으로 이어 받는 사제이고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1168065600",
+      "name": {
+        "ko": "도곡2동"
       },
-      {
-        "from": "동새결",
-        "type": "계약",
-        "to": "정호준",
-        "basis": "정호준의 이행 시간을 손실표 옆칸에 옮긴다"
-      }
-    ],
-    "incoming": []
-  }
+      "holderPersonId": "K410",
+      "directLiegePersonId": "K423",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1168065600",
+          "name": "도곡2동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

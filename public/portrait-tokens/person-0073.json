@@ -3,27 +3,27 @@
   "personId": "person-0073",
   "characterId": "K073",
   "name": "변태온",
-  "stateId": "S03",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "마곡 대합실 역장"
+    "role": "정비공 · 잠실역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, youthful smooth skin",
     "hair": "short cropped hair",
-    "upper": "khaki plain wool work jacket over a collared shirt, with a light knitted scarf",
-    "outfit": "khaki plain wool work jacket over a collared shirt, with a light knitted scarf",
+    "upper": "몸에 붙게 재단한 얇은 카키색 모직 웃옷, 겹쳐 입지 않고 부위 자리마다 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄",
+    "outfit": "몸에 붙게 재단한 얇은 카키색 모직 웃옷, 겹쳐 입지 않고 부위 자리마다 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄",
     "palette": [
       "khaki",
       "mustard ochre",
       "navy"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "mustard ochre high-waisted pleated trousers",
-    "footwear": "leather ankle boots",
-    "accessories": "duty whistle on a cord lanyard"
+    "lower": "slim mustard ochre fine wool trousers",
+    "footwear": "soft leather indoor shoes",
+    "accessories": "flat leather case of stamped tally slips"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "khaki plain wool work jacket over a collared shirt, with a light knitted scarf",
+        "value": "몸에 붙게 재단한 얇은 카키색 모직 웃옷, 겹쳐 입지 않고 부위 자리마다 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "mustard ochre high-waisted pleated trousers",
+        "value": "slim mustard ochre fine wool trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "leather ankle boots",
+        "value": "soft leather indoor shoes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "narrow stand collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "duty whistle on a cord lanyard",
+        "value": "flat leather case of stamped tally slips",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull brass",
+        "value": "dark brown",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, cord",
+        "value": "leather, paper",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "lanyard around the neck",
+        "value": "carried on a strap across the chest",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat rectangular case",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 변태온, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: soft rounded; skin: tan warm beige. upper garment: khaki plain wool work jacket over a collared shirt, with a light knitted scarf; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: khaki, mustard ochre, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 변태온, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: soft rounded; skin: tan warm beige. upper garment: 몸에 붙게 재단한 얇은 카키색 모직 웃옷, 겹쳐 입지 않고 부위 자리마다 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄; neckline: narrow stand collar. accessories: flat leather case of stamped tally slips; worn as carried on a strap across the chest. color palette: khaki, mustard ochre, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 변태온, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: soft rounded; skin: tan warm beige; average adult male height. upper garment: khaki plain wool work jacket over a collared shirt, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: mustard ochre high-waisted pleated trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: khaki, mustard ochre, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 변태온, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: soft rounded; skin: tan warm beige; average adult male height. upper garment: 몸에 붙게 재단한 얇은 카키색 모직 웃옷, 겹쳐 입지 않고 부위 자리마다 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄; neckline: narrow stand collar; lower garment: slim mustard ochre fine wool trousers; footwear: soft leather indoor shoes. accessories: flat leather case of stamped tally slips; worn as carried on a strap across the chest. color palette: khaki, mustard ochre, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 변태온, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: soft rounded; skin: tan warm beige; average adult male height. upper garment: khaki plain wool work jacket over a collared shirt, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: mustard ochre high-waisted pleated trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: khaki, mustard ochre, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 변태온, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: soft rounded; skin: tan warm beige; average adult male height. upper garment: 몸에 붙게 재단한 얇은 카키색 모직 웃옷, 겹쳐 입지 않고 부위 자리마다 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄; neckline: narrow stand collar; lower garment: slim mustard ochre fine wool trousers; footwear: soft leather indoor shoes. accessories: flat leather case of stamped tally slips; worn as carried on a strap across the chest. color palette: khaki, mustard ochre, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 변태온, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: soft rounded; skin: tan warm beige; average adult male height. upper garment: khaki plain wool work jacket over a collared shirt, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: mustard ochre high-waisted pleated trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: khaki, mustard ochre, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 변태온, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: soft rounded; skin: tan warm beige; average adult male height. upper garment: 몸에 붙게 재단한 얇은 카키색 모직 웃옷, 겹쳐 입지 않고 부위 자리마다 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄; neckline: narrow stand collar; lower garment: slim mustard ochre fine wool trousers; footwear: soft leather indoor shoes. accessories: flat leather case of stamped tally slips; worn as carried on a strap across the chest. color palette: khaki, mustard ochre, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 변태온, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: soft rounded; skin: tan warm beige; average adult male height. upper garment: khaki plain wool work jacket over a collared shirt, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: mustard ochre high-waisted pleated trousers; footwear: leather ankle boots. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: khaki, mustard ochre, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 변태온, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: thin straight lips; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: soft rounded; skin: tan warm beige; average adult male height. upper garment: 몸에 붙게 재단한 얇은 카키색 모직 웃옷, 겹쳐 입지 않고 부위 자리마다 단추 덮개로 여민 정비 틈, 오른쪽 깃에 부위 수 땀 2줄; neckline: narrow stand collar; lower garment: slim mustard ochre fine wool trousers; footwear: soft leather indoor shoes. accessories: flat leather case of stamped tally slips; worn as carried on a strap across the chest. color palette: khaki, mustard ochre, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

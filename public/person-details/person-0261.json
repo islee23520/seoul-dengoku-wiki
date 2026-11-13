@@ -1,386 +1,105 @@
 {
   "id": "person-0261",
   "name": "모감",
-  "title": "약초 건조장 거점장",
-  "position": "약초 건조장 수좌",
+  "title": "수도방위사령부 참모",
+  "position": "수도방위사령부 참모 · 삼각지역",
   "characterId": "K260",
-  "rank": "수좌",
-  "commonTier": "T3",
-  "occupation": "약초 건조 중량·봉인 검사",
+  "rank": "소령",
+  "commonTier": "T5",
+  "occupation": "지휘 참모",
   "gender": "여성",
   "stage": "S2",
-  "state": "S10",
-  "stateName": "안국총림",
-  "sourceRoute": "/world/Cast-State-10#인물-모감",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0261",
   "birthDate": "2074-06-05",
   "birthday": "06-05",
   "age": 52,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-10.json#/content/17",
-    "lore/characters/Cast-State-10.json#/content/19"
-  ],
-  "familyTree": {
-    "personId": "K260",
-    "nodes": [
-      {
-        "id": "K260",
-        "personId": "K260",
-        "kind": "person",
-        "name": "모감",
-        "birthDate": "2074-06-05",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K260"
-          },
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-모감-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 약초 건조장 수좌 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-모감-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0261"
-      },
-      {
-        "id": "FH-K260-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "모승윤",
-        "lineage": {
-          "surname": "모",
-          "bongwan": "함평",
-          "clan": "baa8-d568-d3c9"
-        },
-        "birthDate": "2044-06-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-모감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2082,
-            "summary": "모승윤은 제기동 의무소에서 약초 건조 중량·봉인 검사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-모감-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K260-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "모승우",
-        "lineage": {
-          "surname": "모",
-          "bongwan": "함평",
-          "clan": "baa8-d568-d3c9"
-        },
-        "birthDate": "2014-06-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-모감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "모승우는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-모감-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K260-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현욱",
-        "birthDate": "2044-06-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-모감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2082,
-            "summary": "오현욱은 제기동 의무소에서 약초 건조 중량·봉인 검사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-모감-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K260-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "송현범",
-        "birthDate": "2014-06-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-모감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "송현범은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-모감-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K260-P-01:K260:biological",
-        "from": "FH-K260-P-01",
-        "to": "K260",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-모감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K260-P-02:FH-K260-P-01:biological",
-        "from": "FH-K260-P-02",
-        "to": "FH-K260-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-모감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K260-M-01:K260:biological",
-        "from": "FH-K260-M-01",
-        "to": "K260",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-모감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K260-M-02:FH-K260-M-01:biological",
-        "from": "FH-K260-M-02",
-        "to": "FH-K260-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-모감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "baa8-d568-d3c9",
+    "name": "함평 모씨",
+    "crest": "clan-crests/baa8-d568-d3c9.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "삼각지 청사의 출입 명부에는 수도방위사령부 소령으로, 주민등록에는 용산구 한강로동 삼각지역 기재로 올라 있다. 수도방위사령부의 참모로, 국방부와 같은 삼각지 청사에서 탄약 기재와 직할대의 교대표를 짠다. 사령관이 도장을 찍기 전의 명령서 초안은 모두 그녀의 손을 거치고, 그녀는 초안마다 쏠 수 있는 탄의 수를 맨 윗줄에 적는다. 강 밑 터널 검문소 세 곳의 탄피 반납 장부도 한 달에 한 번 그녀가 직접 맞춰 본다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "수도방위사령부 참모",
+    "품계": "소령",
+    "생업": "지휘 참모",
+    "일하는 역": "삼각지역",
+    "잠자는 역": "삼각지역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "삼각지 청사의 출입 명부에는 수도방위사령부 소령으로, 주민등록에는 용산구 한강로동 삼각지역 기재로 올라 있다. 수도방위사령부의 참모로, 국방부와 같은 삼각지 청사에서 탄약 기재와 직할대의 교대표를 짠다. 사령관이 도장을 찍기 전의 명령서 초안은 모두 그녀의 손을 거치고, 그녀는 초안마다 쏠 수 있는 탄의 수를 맨 윗줄에 적는다. 강 밑 터널 검문소 세 곳의 탄피 반납 장부도 한 달에 한 번 그녀가 직접 맞춰 본다.",
+    "관직": "직함 수도방위사령부 참모. 직위 수도방위사령부 참모 · 삼각지역. 품계 소령. 일하는 역 삼각지역."
+  },
+  "values": {
+    "권위": 0,
+    "개방": -5,
+    "무력": 0,
+    "물질": -35,
+    "공동": 80,
+    "원칙": 55,
+    "공개": 15,
+    "자격": 50,
+    "분산": 0,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": 5,
+    "위험": 35,
+    "과시": 20,
+    "지속": 20,
+    "지향": "양성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0261",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 4,
+        "effective": 4
+      },
+      "martial": {
+        "base": 11,
+        "effective": 11
+      },
+      "stewardship": {
+        "base": 4,
+        "effective": 4
+      },
+      "intrigue": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
       "learning": {
-        "base": 10,
-        "effective": 10
+        "base": 4,
+        "effective": 4
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 10,
+        "effective": 10
       }
     },
-    "skills": [
-      {
-        "id": "herb-drying",
-        "name": {
-          "ko": "약초 건조·봉인 검사",
-          "en": "Herb drying and seal inspection"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "herb-drying-disposition",
-        "name": {
-          "ko": "습기와 봉인 경계",
-          "en": "Wary of moisture and seals"
-        },
-        "description": {
-          "ko": "덜 마른 뿌리를 숨기는 손을 제지하고 무봉인 상자를 격리한다.",
-          "en": "Checks concealed damp roots and isolates unsealed boxes."
-        },
-        "behavior": {
-          "ko": "덜 마른 뿌리를 숨기는 손을 제지하고 무봉인 상자를 격리한다.",
-          "en": "Checks concealed damp roots and isolates unsealed boxes."
-        },
-        "stress": {
-          "ko": "가짜 봉인이 아이 투약 명부를 오염시킬 것을 두려워한다.",
-          "en": "Fears false seals contaminating children’s medication records."
-        },
-        "relationship": {
-          "ko": "봉감의 투약 명부와 건조 로트를 맞추고, 황세린의 배급 저울에 약초 몫을 올린다. 류은비의 약효 검증을 건조 표본으로 돕는다.",
-          "en": "Matches Bonggam’s medication roster to dry batches and supports Hwang Serin’s ration scale and Ryu Eunbi’s verification."
-        },
-        "effects": []
-      },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "부족분 나눔",
-          "en": "Shares shortage"
-        },
-        "description": {
-          "ko": "약재 부족에 처방량을 반으로 나눠 모두에게 배분했다.",
-          "en": "Halved doses to share scarce medicine among everyone."
-        },
-        "behavior": {
-          "ko": "약재 부족에 처방량을 반으로 나눠 모두에게 배분했다.",
-          "en": "Halved doses to share scarce medicine among everyone."
-        },
-        "stress": {
-          "ko": "가짜 봉인 상자가 건조 선반에 섞여 아이 투약 명부가 오염되는 것.",
-          "en": "Fears false seals contaminating children’s medication records."
-        },
-        "relationship": {
-          "ko": "봉감의 투약 명부와 건조 로트를 맞추고, 황세린의 배급 저울에 약초 몫을 올린다. 류은비의 약효 검증을 건조 표본으로 돕는다.",
-          "en": "Matches Bonggam’s medication roster to dry batches and supports Hwang Serin’s ration scale and Ryu Eunbi’s verification."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "건조 중량과 봉인을 매일 확인하고 부족한 약재를 나누었다. 약초 취급은 확인되나 치료 전반의 권능은 부여하지 않는다.",
-      "en": "Checks dry weights and seals daily and shared scarce medicine; herb handling does not establish broad medical powers."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -418,195 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-gu-11380-S10",
-      "name": {
-        "ko": "은평구 공작령 직영지"
-      },
-      "holderPersonId": "K260",
-      "directLiegePersonId": "K144",
-      "stateId": "S10",
-      "adminRefs": [
-        {
-          "id": "region:1138051000",
-          "name": "녹번동"
-        },
-        {
-          "id": "region:1138052000",
-          "name": "불광1동"
-        },
-        {
-          "id": "region:1138053000",
-          "name": "불광2동"
-        },
-        {
-          "id": "region:1138055100",
-          "name": "갈현1동"
-        },
-        {
-          "id": "region:1138055200",
-          "name": "갈현2동"
-        },
-        {
-          "id": "region:1138056000",
-          "name": "구산동"
-        },
-        {
-          "id": "region:1138057000",
-          "name": "대조동"
-        },
-        {
-          "id": "region:1138058000",
-          "name": "응암1동"
-        },
-        {
-          "id": "region:1138059000",
-          "name": "응암2동"
-        },
-        {
-          "id": "region:1138060000",
-          "name": "응암3동"
-        },
-        {
-          "id": "region:1138062500",
-          "name": "역촌동"
-        },
-        {
-          "id": "region:1138063100",
-          "name": "신사1동"
-        },
-        {
-          "id": "region:1138063200",
-          "name": "신사2동"
-        },
-        {
-          "id": "region:1138064000",
-          "name": "증산동"
-        },
-        {
-          "id": "region:1138065000",
-          "name": "수색동"
-        },
-        {
-          "id": "region:1138069000",
-          "name": "진관동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11380-S10",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
-    {
-      "id": "title:duchy-gu-11380-S10",
-      "name": "은평구 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K260",
-      "basis": "개막 행정 규모 그룹 gu:11380(duchy) 배분 · 결정적 후보 선정",
-      "stateId": "S10",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "region:1138051000",
-        "region:1138052000",
-        "region:1138053000",
-        "region:1138055100",
-        "region:1138055200",
-        "region:1138056000",
-        "region:1138057000",
-        "region:1138058000",
-        "region:1138059000",
-        "region:1138060000",
-        "region:1138062500",
-        "region:1138063100",
-        "region:1138063200",
-        "region:1138064000",
-        "region:1138065000",
-        "region:1138069000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
-    }
-  ],
-  "clan": {
-    "id": "baa8-d568-d3c9",
-    "name": "함평 모씨",
-    "crest": "clan-crests/baa8-d568-d3c9.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -45,
-    "개방": 50,
-    "무력": -35,
-    "물질": -30,
-    "공동": 75,
-    "원칙": 35,
-    "공개": 40,
-    "자격": 35,
-    "분산": 50,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": 5,
-    "위험": 35,
-    "과시": 20,
-    "지속": 20,
-    "지향": "양성",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "약초 건조 중량·봉인 검사",
-    "소속": "안국총림",
-    "품계": "수좌",
-    "직함": "약초 건조장 수좌",
-    "가치관": "권위 −45 | 개방 50 | 무력 −35 | 물질 −30 | 공동 75 | 원칙 35 | 공개 40 | 자격 35 | 분산 50 | 변혁 0",
-    "욕망": "갈망 15 | 독점 5 | 위험 35 | 과시 20 | 지속 20 | 지향 양성 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2074-06-05 출생, 2126년 개막에 활동했다. 제기동 의무소에서 자랐다. 약초 건조장 수좌 당직 기록에는 가짜 약 봉인으 일이 남아 있다.\n- 모감의 약초 건조 중량·봉인 검사 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
-    "관직": "품계 수좌. 직함은 약초 건조장 수좌. 건조 중량을 매일 벽에 적고, 봉인 없는 상자는 격리 칸으로 옮긴다.",
-    "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다.",
-    "관계": "봉감의 투약 명부와 건조 로트를 맞추고, 황세린의 배급 저울에 약초 몫을 올린다. 류은비의 약효 검증을 건조 표본으로 돕는다.",
-    "야망": "산악 약초 건조를 총림 공개 재고로 묶어 서울 구호 창구 상자가 건조장 열쇠를 삼지 못하게 한다.",
-    "공포": "가짜 봉인 상자가 건조 선반에 섞여 아이 투약 명부가 오염되는 것.",
-    "개입": "로트를 격리하거나, 건조장 열쇠를 장경 필사 당직과 나눠 쥐게 할 수 있다."
-  },
-  "biography": "습기를 사람 열보다 예민하게 읽고, 말리지 않은 뿌리를 상자 깊숙이 숨기는 손을 가혹하게 다룬다. 약 냄새와 가짜 봉인을 같은 코로 가른다.\n\n- 생업: 약초 건조 중량·봉인 검사\n- 소속: 안국총림\n- 품계: 수좌\n- 직함: 약초 건조장 수좌\n**생애.** 2074-06-05 출생, 2126년 개막에 활동했다. 제기동 의무소에서 자랐다. 약초 건조장 수좌 당직 기록에는 가짜 약 봉인으 일이 남아 있다.\n- 모감의 약초 건조 중량·봉인 검사 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n**관직.** 품계 수좌. 직함은 약초 건조장 수좌. 건조 중량을 매일 벽에 적고, 봉인 없는 상자는 격리 칸으로 옮긴다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다.\n\n**관계.** 봉감의 투약 명부와 건조 로트를 맞추고, 황세린의 배급 저울에 약초 몫을 올린다. 류은비의 약효 검증을 건조 표본으로 돕는다.\n\n**야망.** 산악 약초 건조를 총림 공개 재고로 묶어 서울 구호 창구 상자가 건조장 열쇠를 삼지 못하게 한다.\n\n**공포.** 가짜 봉인 상자가 건조 선반에 섞여 아이 투약 명부가 오염되는 것.\n\n**개입.** 로트를 격리하거나, 건조장 열쇠를 장경 필사 당직과 나눠 쥐게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 50 | 무력 −35 | 물질 −30 | 공동 75 | 원칙 35 | 공개 40 | 자격 35 | 분산 50 | 변혁 0\n- 욕망: 갈망 15 | 독점 5 | 위험 35 | 과시 20 | 지속 20 | 지향 양성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-10"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "모감",
-        "type": "계약",
-        "to": "황세린",
-        "basis": "황세린의 배급 저울에 약초 몫을 올린다"
-      },
-      {
-        "from": "모감",
-        "type": "계약",
-        "to": "봉감",
-        "basis": "봉감의 투약 명부와 건조 로트를 맞추고"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "봉감",
-        "type": "계약",
-        "to": "모감",
-        "basis": "모감의 건조장을 검수하고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

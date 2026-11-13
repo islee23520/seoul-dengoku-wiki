@@ -3,27 +3,27 @@
   "personId": "person-0577",
   "characterId": "K577",
   "name": "차남원",
-  "stateId": "S10",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "장경 필사 행자"
+    "role": "펌프 정비공 · 종각역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "short pin-curled hair",
-    "upper": "oxblood loose wool robe-like overcoat with wide sleeves, with a thick knitted scarf and an extra padded layer",
-    "outfit": "oxblood loose wool robe-like overcoat with wide sleeves, with a thick knitted scarf and an extra padded layer",
+    "upper": "회색 합성 섬유 작업 누빔옷, 왼쪽 가슴에 꿰맨 직종 표",
+    "outfit": "회색 합성 섬유 작업 누빔옷, 왼쪽 가슴에 꿰맨 직종 표",
     "palette": [
-      "oxblood",
-      "olive drab",
+      "slate grey",
+      "charcoal",
       "cream"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "olive drab straight wool trousers",
-    "footwear": "soft leather slip-on shoes",
-    "accessories": "simple wooden prayer beads"
+    "lower": "grey quilted synthetic work trousers",
+    "footwear": "felt-lined synthetic rubber boots",
+    "accessories": "occupation tag sewn on the left chest beside the registration token on a cord"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "knitted synthetic ear-flap cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "oxblood loose wool robe-like overcoat with wide sleeves, with a thick knitted scarf and an extra padded layer",
+        "value": "회색 합성 섬유 작업 누빔옷, 왼쪽 가슴에 꿰맨 직종 표",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "olive drab straight wool trousers",
+        "value": "grey quilted synthetic work trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "soft leather slip-on shoes",
+        "value": "felt-lined synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "standing collar",
+        "value": "raised quilted collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "simple wooden prayer beads",
+        "value": "occupation tag sewn on the left chest beside the registration token on a cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(religious)",
-        "derived": true
-      },
-      "shape": {
-        "value": "loop of round beads",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(religious)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dark polished wood",
+        "value": "grey cloth tag, dull steel token",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(religious)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "wood, cord",
+        "value": "stitched cloth, thin steel plate",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(religious)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "wrapped around the wrist",
+        "value": "tag sewn on the chest, token hung from the neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(religious)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small rectangular tag and flat plate",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 차남원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black streaked with grey hair; short length. build: average; skin: light warm beige. upper garment: oxblood loose wool robe-like overcoat with wide sleeves, with a thick knitted scarf and an extra padded layer; neckline: standing collar. accessories: simple wooden prayer beads; worn as wrapped around the wrist. color palette: oxblood, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 차남원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black streaked with grey hair; short length. build: average; skin: light warm beige. headwear: knitted synthetic ear-flap cap; upper garment: 회색 합성 섬유 작업 누빔옷, 왼쪽 가슴에 꿰맨 직종 표; neckline: raised quilted collar. accessories: occupation tag sewn on the left chest beside the registration token on a cord; worn as tag sewn on the chest, token hung from the neck. color palette: slate grey, charcoal, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 차남원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black streaked with grey hair; short length. build: average; skin: light warm beige; average adult female height. upper garment: oxblood loose wool robe-like overcoat with wide sleeves, with a thick knitted scarf and an extra padded layer; neckline: standing collar; lower garment: olive drab straight wool trousers; footwear: soft leather slip-on shoes. accessories: simple wooden prayer beads; worn as wrapped around the wrist. color palette: oxblood, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 차남원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black streaked with grey hair; short length. build: average; skin: light warm beige; average adult female height. headwear: knitted synthetic ear-flap cap; upper garment: 회색 합성 섬유 작업 누빔옷, 왼쪽 가슴에 꿰맨 직종 표; neckline: raised quilted collar; lower garment: grey quilted synthetic work trousers; footwear: felt-lined synthetic rubber boots. accessories: occupation tag sewn on the left chest beside the registration token on a cord; worn as tag sewn on the chest, token hung from the neck. color palette: slate grey, charcoal, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 차남원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black streaked with grey hair; short length. build: average; skin: light warm beige; average adult female height. upper garment: oxblood loose wool robe-like overcoat with wide sleeves, with a thick knitted scarf and an extra padded layer; neckline: standing collar; lower garment: olive drab straight wool trousers; footwear: soft leather slip-on shoes. accessories: simple wooden prayer beads; worn as wrapped around the wrist. color palette: oxblood, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 차남원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black streaked with grey hair; short length. build: average; skin: light warm beige; average adult female height. headwear: knitted synthetic ear-flap cap; upper garment: 회색 합성 섬유 작업 누빔옷, 왼쪽 가슴에 꿰맨 직종 표; neckline: raised quilted collar; lower garment: grey quilted synthetic work trousers; footwear: felt-lined synthetic rubber boots. accessories: occupation tag sewn on the left chest beside the registration token on a cord; worn as tag sewn on the chest, token hung from the neck. color palette: slate grey, charcoal, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 차남원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black streaked with grey hair; short length. build: average; skin: light warm beige; average adult female height. upper garment: oxblood loose wool robe-like overcoat with wide sleeves, with a thick knitted scarf and an extra padded layer; neckline: standing collar; lower garment: olive drab straight wool trousers; footwear: soft leather slip-on shoes. accessories: simple wooden prayer beads; worn as wrapped around the wrist. color palette: oxblood, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 차남원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black streaked with grey hair; short length. build: average; skin: light warm beige; average adult female height. headwear: knitted synthetic ear-flap cap; upper garment: 회색 합성 섬유 작업 누빔옷, 왼쪽 가슴에 꿰맨 직종 표; neckline: raised quilted collar; lower garment: grey quilted synthetic work trousers; footwear: felt-lined synthetic rubber boots. accessories: occupation tag sewn on the left chest beside the registration token on a cord; worn as tag sewn on the chest, token hung from the neck. color palette: slate grey, charcoal, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 차남원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black streaked with grey hair; short length. build: average; skin: light warm beige; average adult female height. upper garment: oxblood loose wool robe-like overcoat with wide sleeves, with a thick knitted scarf and an extra padded layer; neckline: standing collar; lower garment: olive drab straight wool trousers; footwear: soft leather slip-on shoes. accessories: simple wooden prayer beads; worn as wrapped around the wrist. color palette: oxblood, olive drab, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 차남원, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: heart-shaped; round dark brown eyes; softly arched eyebrows; nose: straight narrow bridge; mouth: small closed mouth; dusty rose lips. short pin-curled hair; black streaked with grey hair; short length. build: average; skin: light warm beige; average adult female height. headwear: knitted synthetic ear-flap cap; upper garment: 회색 합성 섬유 작업 누빔옷, 왼쪽 가슴에 꿰맨 직종 표; neckline: raised quilted collar; lower garment: grey quilted synthetic work trousers; footwear: felt-lined synthetic rubber boots. accessories: occupation tag sewn on the left chest beside the registration token on a cord; worn as tag sewn on the chest, token hung from the neck. color palette: slate grey, charcoal, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

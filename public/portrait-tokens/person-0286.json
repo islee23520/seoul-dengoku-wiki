@@ -3,27 +3,27 @@
   "personId": "person-0286",
   "characterId": "K285",
   "name": "두국",
-  "stateId": "S11",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "강남역 북문 호송 거점장 · 노원구 영주"
+    "role": "대통령 비서관 · 광화문역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "hair pinned in a low chignon bun",
-    "upper": "mustard ochre belted canvas field jacket with flap chest pockets, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "mustard ochre belted canvas field jacket with flap chest pockets, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "남색 누빔 외투",
+    "outfit": "남색 누빔 외투",
     "palette": [
+      "navy",
       "mustard ochre",
-      "cream",
-      "forest green"
+      "cream"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
     "lower": "cream wool trousers bloused over boots",
     "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "small hand lamp clipped to a leather belt"
+    "accessories": "civil-servant ID card on a neck cord beside the registration token"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "fur-lined ear-flap cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "mustard ochre belted canvas field jacket with flap chest pockets, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "남색 누빔 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
         "value": "cream wool trousers bloused over boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
         "value": "thick-soled leather winter boots with wool socks",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -206,39 +206,39 @@
       "neckline": {
         "value": "closed turn-down collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "small hand lamp clipped to a leather belt",
+        "value": "civil-servant ID card on a neck cord beside the registration token",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
-        "derived": true
-      },
-      "shape": {
-        "value": "compact cylindrical lamp",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull steel and dark brown leather",
+        "value": "navy cord and pale card",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "steel, leather",
+        "value": "card, cord, steel plate",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "clipped at the belt",
+        "value": "worn round the neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat card and a thin metal plate",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 두국, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: stocky; skin: tan warm beige. headwear: fur-lined ear-flap cap; upper garment: mustard ochre belted canvas field jacket with flap chest pockets, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: mustard ochre, cream, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 두국, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: stocky; skin: tan warm beige. headwear: fur-lined ear-flap cap; upper garment: 남색 누빔 외투; neckline: closed turn-down collar. accessories: civil-servant ID card on a neck cord beside the registration token; worn as worn round the neck. color palette: navy, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 두국, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: stocky; skin: tan warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: mustard ochre belted canvas field jacket with flap chest pockets, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: cream wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: mustard ochre, cream, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 두국, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: stocky; skin: tan warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: 남색 누빔 외투; neckline: closed turn-down collar; lower garment: cream wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: civil-servant ID card on a neck cord beside the registration token; worn as worn round the neck. color palette: navy, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 두국, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: stocky; skin: tan warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: mustard ochre belted canvas field jacket with flap chest pockets, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: cream wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: mustard ochre, cream, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 두국, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: stocky; skin: tan warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: 남색 누빔 외투; neckline: closed turn-down collar; lower garment: cream wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: civil-servant ID card on a neck cord beside the registration token; worn as worn round the neck. color palette: navy, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 두국, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: stocky; skin: tan warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: mustard ochre belted canvas field jacket with flap chest pockets, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: cream wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: mustard ochre, cream, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 두국, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: stocky; skin: tan warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: 남색 누빔 외투; neckline: closed turn-down collar; lower garment: cream wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: civil-servant ID card on a neck cord beside the registration token; worn as worn round the neck. color palette: navy, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 두국, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: stocky; skin: tan warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: mustard ochre belted canvas field jacket with flap chest pockets, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: cream wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: mustard ochre, cream, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 두국, an East Asian woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; black hair; long length. build: stocky; skin: tan warm beige; average adult female height. headwear: fur-lined ear-flap cap; upper garment: 남색 누빔 외투; neckline: closed turn-down collar; lower garment: cream wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: civil-servant ID card on a neck cord beside the registration token; worn as worn round the neck. color palette: navy, mustard ochre, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

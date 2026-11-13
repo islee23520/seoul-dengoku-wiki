@@ -1,389 +1,108 @@
 {
   "id": "person-0294",
   "name": "평채원",
-  "title": "급수 압력 저하 주거 당사자",
-  "position": "강남역 사택 급수 당사자",
+  "title": "정비공",
+  "position": "정비공 · 강남역",
   "characterId": "K293",
-  "rank": "사원",
+  "rank": "정비공",
   "commonTier": "T5",
-  "occupation": "사택 급수 압력 기록·연서 확인",
+  "occupation": "이식 정비",
   "gender": "여성",
   "stage": "S3",
-  "state": "S11",
-  "stateName": "성하그룹",
-  "sourceRoute": "/world/Cast-State-11#인물-평채원",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0294",
   "birthDate": "2080-10-12",
   "birthday": "10-12",
   "age": 46,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-11.json#/content/237",
-    "lore/characters/Cast-State-11.json#/content/239",
-    "lore/characters/Cast-State-11.json#/content/241"
-  ],
-  "familyTree": {
-    "personId": "K293",
-    "nodes": [
-      {
-        "id": "K293",
-        "personId": "K293",
-        "kind": "person",
-        "name": "평채원",
-        "birthDate": "2080-10-12",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K293"
-          },
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-평채원-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 강남역 사택 급수 당사자 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-평채원-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0294"
-      },
-      {
-        "id": "FH-K293-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "평승수",
-        "lineage": {
-          "surname": "평",
-          "bongwan": "충주",
-          "clan": "d3c9-cda9-c8fc"
-        },
-        "birthDate": "2050-10-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-평채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2088,
-            "summary": "평승수는 영등포 정수 당직에서 사택 급수 압력 기록·연서 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-평채원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K293-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "평승은",
-        "lineage": {
-          "surname": "평",
-          "bongwan": "충주",
-          "clan": "d3c9-cda9-c8fc"
-        },
-        "birthDate": "2020-10-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-평채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "평승은은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-평채원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K293-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한현빈",
-        "birthDate": "2050-10-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-평채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2088,
-            "summary": "한현빈은 영등포 정수 당직에서 사택 급수 압력 기록·연서 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-평채원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K293-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현솔",
-        "birthDate": "2020-10-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-평채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강현솔은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-평채원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K293-P-01:K293:biological",
-        "from": "FH-K293-P-01",
-        "to": "K293",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-평채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K293-P-02:FH-K293-P-01:biological",
-        "from": "FH-K293-P-02",
-        "to": "FH-K293-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-평채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K293-M-01:K293:biological",
-        "from": "FH-K293-M-01",
-        "to": "K293",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-평채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K293-M-02:FH-K293-M-01:biological",
-        "from": "FH-K293-M-02",
-        "to": "FH-K293-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-평채원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d3c9-cda9-c8fc",
+    "name": "충주 평씨",
+    "crest": "clan-crests/d3c9-cda9-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "강남역 앓는 사람들의 잠자리를 정비대 벽 쪽으로 옮기는 일은 셋째 교대마다 평채원의 몫이다. 맞춤 날에는 이음매를 닦고, 밤에는 어느 벽이 따뜻하고 어느 벽이 식었는지 손바닥으로 가린다. 몇 해 전 물이 약하게 나오던 겨울, 그는 잠자리 칸마다 물 양을 적어 곁집 창고에 올렸고, 그 셈표 덕에 그 겨울 앓는 사람이 물을 먼저 받았다. 그 이듬해, 마흔을 갓 넘긴 평채원은 첫째 부위를 받았고 마흔여섯인 지금도 그 하나를 지닌다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "정비공",
+    "품계": "정비공",
+    "생업": "이식 정비",
+    "일하는 역": "강남역",
+    "잠자는 역": "강남역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "강남역 앓는 사람들의 잠자리를 정비대 벽 쪽으로 옮기는 일은 셋째 교대마다 평채원의 몫이다. 맞춤 날에는 이음매를 닦고, 밤에는 어느 벽이 따뜻하고 어느 벽이 식었는지 손바닥으로 가린다. 몇 해 전 물이 약하게 나오던 겨울, 그는 잠자리 칸마다 물 양을 적어 곁집 창고에 올렸고, 그 셈표 덕에 그 겨울 앓는 사람이 물을 먼저 받았다. 그 이듬해, 마흔을 갓 넘긴 평채원은 첫째 부위를 받았고 마흔여섯인 지금도 그 하나를 지닌다.",
+    "관직": "직함 정비공. 직위 정비공 · 강남역. 품계 정비공. 일하는 역 강남역."
+  },
+  "values": {
+    "권위": 40,
+    "개방": -25,
+    "무력": 5,
+    "물질": -30,
+    "공동": 50,
+    "원칙": 10,
+    "공개": -50,
+    "자격": 25,
+    "분산": -20,
+    "변혁": 25
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": -5,
+    "위험": 10,
+    "과시": 20,
+    "지속": -15,
+    "지향": "유동",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0294",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
-      },
-      "strategy": {
-        "base": 5,
-        "effective": 5
-      },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 7,
-        "effective": 7
-      },
-      "insight": {
-        "base": 9,
-        "effective": 9
-      },
-      "learning": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "prowess": {
+      "martial": {
         "base": 3,
         "effective": 3
       },
-      "endurance": {
-        "base": 5,
-        "effective": 5
-      }
-    },
-    "skills": [
-      {
-        "id": "k293-water-timing-testimony",
-        "name": {
-          "ko": "급수 시각 증언",
-          "en": "Water timing testimony"
-        },
-        "rating": 45
-      }
-    ],
-    "traits": [
-      {
-        "id": "k293-priority",
-        "name": {
-          "ko": "본인 증언 고수",
-          "en": "Own testimony only"
-        },
-        "description": {
-          "ko": "평채원은 식은 주전자로 갈증을 증언하고 본인 손도장만 받는다. 압력 관찰은 전문 배관 정비 이력이 아니다.",
-          "en": "Pyeong Chaewon testifies to thirst with a cold kettle and accepts only personal handprints. Pressure observation is not professional pipe maintenance."
-        },
-        "behavior": {
-          "ko": "압력계 바늘이 멈춘 시각을 주전자 옆 종이에 적고, 연서에는 본인 손도장만 받아 서진아의 감사 함에 넣는다.",
-          "en": "Office. Rank: assistant manager. Title: water pressure drop residential party. She wrote the hour the pressure needle stopped on the paper beside the kettle and put only her own handprint into the joint signature for Seo Jina's audit box."
-        },
-        "stress": {
-          "ko": "당사자 증언이 보호 급수의 들러리 명부로 바뀌어 자신이 없는 단수의 보증인이 되는 것.",
-          "en": "Fear. That the party testimony would turn into a procession roster of protected water supply and she would become the guarantor of a cutoff that never happened."
-        },
-        "relationship": {
-          "ko": "서진아의 사택 감사 함에 당사자 손도장을 보태고, 모복의 수위 막대를 주전자 시간과 겹쳐 읽는다. 한재목의 물 협상이 쉘 이름을 빌려 쓰면 증언을 거둔다.",
-          "en": "Relations. Added the party handprint to Seo Jina's housing audit box and read Mo Bok's water-level rod overlaid with the kettle hours. Withdrew her testimony whenever Han Jaemok's water talks borrowed the shell's name."
-        },
-        "effects": []
+      "stewardship": {
+        "base": 7,
+        "effective": 7
       },
-      {
-        "id": "k293-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 사원. 직함은 강남역 사택 급수 당사자. 압력계 바늘이 멈춘 시각을 주전자 옆 종이에 적고, 연서에는 본인 손도장만 받아 서진아의 감사 함에 넣는다.",
-          "en": "Office. Rank: assistant manager. Title: water pressure drop residential party. She wrote the hour the pressure needle stopped on the paper beside the kettle and put only her own handprint into the joint signature for Seo Jina's audit box."
-        },
-        "stress": {
-          "ko": "공포. 당사자 증언이 보호 급수의 들러리 명부로 바뀌어 자신이 없는 단수의 보증인이 되는 것.",
-          "en": "Fear. That the party testimony would turn into a procession roster of protected water supply and she would become the guarantor of a cutoff that never happened."
-        },
-        "relationship": {
-          "ko": "관계. 서진아의 사택 감사 함에 당사자 손도장을 보태고, 모복의 수위 막대를 주전자 시간과 겹쳐 읽는다. 한재목의 물 협상이 쉘 이름을 빌려 쓰면 증언을 거둔다.",
-          "en": "Relations. Added the party handprint to Seo Jina's housing audit box and read Mo Bok's water-level rod overlaid with the kettle hours. Withdrew her testimony whenever Han Jaemok's water talks borrowed the shell's name."
-        },
-        "effects": []
+      "intrigue": {
+        "base": 6,
+        "effective": 6
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "평채원은 식은 주전자로 갈증을 증언하고 본인 손도장만 받는다. 압력 관찰은 전문 배관 정비 이력이 아니다.",
-      "en": "Pyeong Chaewon testifies to thirst with a cold kettle and accepts only personal handprints. Pressure observation is not professional pipe maintenance."
     },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -393,7 +112,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -419,72 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d3c9-cda9-c8fc",
-    "name": "충주 평씨",
-    "crest": "clan-crests/d3c9-cda9-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": -10,
-    "무력": -5,
-    "물질": 20,
-    "공동": 30,
-    "원칙": 20,
-    "공개": -5,
-    "자격": 60,
-    "분산": 10,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": -5,
-    "위험": 10,
-    "과시": 20,
-    "지속": -15,
-    "지향": "유동",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "사택 급수 압력 기록·연서 확인",
-    "소속": "성하그룹",
-    "품계": "사원",
-    "직함": "강남역 사택 급수 당사자",
-    "가치관": "권위 15 | 개방 −10 | 무력 −5 | 물질 20 | 공동 30 | 원칙 20 | 공개 −5 | 자격 60 | 분산 10 | 변혁 −20",
-    "욕망": "갈망 10 | 독점 −5 | 위험 10 | 과시 20 | 지속 −15 | 지향 유동 | 결합 없음"
-  },
-  "sections": {
-    "생애": "영등포 정수 당직에서 자랐다. 강남역 사택 급수 당사자 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 평채원은 서초2동에서 사택 급수 압력 기록·연서 확인 업무를 맡는다. 강남역 사택의 청원·급수 잔량·수위·사고 기록 업무를 서초2동 생활권 근무 참조로 제안한다. 기존 감사·반장·도제 서명 조건을 보존하고 개인 거주·숙소 소유는 추정하지 않는다. 서진아의 사택 감사 함에 당사자 손도장을 보태고, 모복의 수위 막대를 주전자 시간과 겹쳐 읽는다. 한재목의 물 협상이 쉘 이름을 빌려 쓰면 증언을 거둔다",
-    "관직": "품계 사원. 직함은 강남역 사택 급수 당사자. 압력계 바늘이 멈춘 시각을 주전자 옆 종이에 적고, 연서에는 본인 손도장만 받아 서진아의 감사 함에 넣는다.",
-    "일화": "세 번째 급수계약이 만료되며 북부 압력계가 떨리자 평채원은 승계 시험 이야기 대신 식은 주전자를 회장실 탁자에 올렸다.",
-    "관계": "서진아의 사택 감사 함에 당사자 손도장을 보태고, 모복의 수위 막대를 주전자 시간과 겹쳐 읽는다. 한재목의 물 협상이 쉘 이름을 빌려 쓰면 증언을 거둔다.",
-    "야망": "급수계약이 끝난 쉘의 갈증을 회장실 방청 증언으로 남겨, 승계 시험 날짜가 주전자보다 앞서지 않게 한다.",
-    "공포": "당사자 증언이 보호 급수의 들러리 명부로 바뀌어 자신이 없는 단수의 보증인이 되는 것.",
-    "개입": "주전자 시각을 공개 증언으로 남기거나, 손도장을 위조해 당사자를 협상 들러리로 묶을 수 있다."
-  },
-  "biography": "주전자가 식는 속도를 증언의 단위로 쓰고, 압력계 바늘이 떨리면 회의 말보다 먼저 일어선다. 남이 대신 눌러 준 손도장을 자신의 갈증으로 인정하지 않는다.\n\n- 생업: 사택 급수 압력 기록·연서 확인\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 사택 급수 당사자\n**생애.** 영등포 정수 당직에서 자랐다. 강남역 사택 급수 당사자 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 평채원은 서초2동에서 사택 급수 압력 기록·연서 확인 업무를 맡는다. 강남역 사택의 청원·급수 잔량·수위·사고 기록 업무를 서초2동 생활권 근무 참조로 제안한다. 기존 감사·반장·도제 서명 조건을 보존하고 개인 거주·숙소 소유는 추정하지 않는다. 서진아의 사택 감사 함에 당사자 손도장을 보태고, 모복의 수위 막대를 주전자 시간과 겹쳐 읽는다. 한재목의 물 협상이 쉘 이름을 빌려 쓰면 증언을 거둔다\n\n**관직.** 품계 사원. 직함은 강남역 사택 급수 당사자. 압력계 바늘이 멈춘 시각을 주전자 옆 종이에 적고, 연서에는 본인 손도장만 받아 서진아의 감사 함에 넣는다.\n\n**일화.** 세 번째 급수계약이 만료되며 북부 압력계가 떨리자 평채원은 승계 시험 이야기 대신 식은 주전자를 회장실 탁자에 올렸다.\n\n**관계.** 서진아의 사택 감사 함에 당사자 손도장을 보태고, 모복의 수위 막대를 주전자 시간과 겹쳐 읽는다. 한재목의 물 협상이 쉘 이름을 빌려 쓰면 증언을 거둔다.\n\n**야망.** 급수계약이 끝난 쉘의 갈증을 회장실 방청 증언으로 남겨, 승계 시험 날짜가 주전자보다 앞서지 않게 한다.\n\n**공포.** 당사자 증언이 보호 급수의 들러리 명부로 바뀌어 자신이 없는 단수의 보증인이 되는 것.\n\n**개입.** 주전자 시각을 공개 증언으로 남기거나, 손도장을 위조해 당사자를 협상 들러리로 묶을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −10 | 무력 −5 | 물질 20 | 공동 30 | 원칙 20 | 공개 −5 | 자격 60 | 분산 10 | 변혁 −20\n- 욕망: 갈망 10 | 독점 −5 | 위험 10 | 과시 20 | 지속 −15 | 지향 유동 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-11"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "평채원",
-        "type": "계약",
-        "to": "서진아",
-        "basis": "서진아의 주거 감사 함에 당사자 손도장을 보태고"
-      },
-      {
-        "from": "평채원",
-        "type": "계약",
-        "to": "모복",
-        "basis": "모복의 수위 막대를 주전자 시간과 겹쳐 읽는다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

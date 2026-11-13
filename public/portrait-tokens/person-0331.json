@@ -3,27 +3,27 @@
   "personId": "person-0331",
   "characterId": "K330",
   "name": "방한울",
-  "stateId": "S13",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "중증도 진료 의무원, 은채윤의 실무 담당자"
+    "role": "구 부대 지휘관 · 북한산보국문역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short side-parted hair combed neatly",
-    "upper": "dove grey buttoned linen work coat over a turtleneck",
-    "outfit": "dove grey buttoned linen work coat over a turtleneck",
+    "upper": "대정전 전 위장 무늬 동계 군복을 고쳐 지은 옷",
+    "outfit": "대정전 전 위장 무늬 동계 군복을 고쳐 지은 옷",
     "palette": [
-      "dove grey",
       "olive drab",
+      "dove grey",
       "navy"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
     "lower": "olive drab wool breeches with buttoned cuffs",
     "footwear": "laced leather walking shoes",
-    "accessories": "canvas medical satchel without markings"
+    "accessories": "army rank insignia and a service-number token"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "dove grey buttoned linen work coat over a turtleneck",
+        "value": "대정전 전 위장 무늬 동계 군복을 고쳐 지은 옷",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
         "value": "olive drab wool breeches with buttoned cuffs",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
         "value": "laced leather walking shoes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -206,39 +206,39 @@
       "neckline": {
         "value": "open coat collar over a rolled sweater neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "canvas medical satchel without markings",
+        "value": "army rank insignia and a service-number token",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat rectangular satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "undyed canvas and brown leather",
+        "value": "dull brass and grey steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "canvas, leather",
+        "value": "brass, steel plate",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the shoulder",
+        "value": "rank on the collar, token on a neck chain",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small insignia and an oval plate",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 방한울, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: average with narrow shoulders; skin: medium warm beige. upper garment: dove grey buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: dove grey, olive drab, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 방한울, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: average with narrow shoulders; skin: medium warm beige. upper garment: 대정전 전 위장 무늬 동계 군복을 고쳐 지은 옷; neckline: open coat collar over a rolled sweater neck. accessories: army rank insignia and a service-number token; worn as rank on the collar, token on a neck chain. color palette: olive drab, dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 방한울, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: dove grey buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: olive drab wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: dove grey, olive drab, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 방한울, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: 대정전 전 위장 무늬 동계 군복을 고쳐 지은 옷; neckline: open coat collar over a rolled sweater neck; lower garment: olive drab wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: army rank insignia and a service-number token; worn as rank on the collar, token on a neck chain. color palette: olive drab, dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 방한울, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: dove grey buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: olive drab wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: dove grey, olive drab, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 방한울, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: 대정전 전 위장 무늬 동계 군복을 고쳐 지은 옷; neckline: open coat collar over a rolled sweater neck; lower garment: olive drab wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: army rank insignia and a service-number token; worn as rank on the collar, token on a neck chain. color palette: olive drab, dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 방한울, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: dove grey buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: olive drab wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: dove grey, olive drab, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 방한울, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: 대정전 전 위장 무늬 동계 군복을 고쳐 지은 옷; neckline: open coat collar over a rolled sweater neck; lower garment: olive drab wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: army rank insignia and a service-number token; worn as rank on the collar, token on a neck chain. color palette: olive drab, dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 방한울, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: dove grey buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: olive drab wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: dove grey, olive drab, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 방한울, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: rectangular; upturned almond dark brown eyes; straight and thin eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short side-parted hair combed neatly; dark brown hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: 대정전 전 위장 무늬 동계 군복을 고쳐 지은 옷; neckline: open coat collar over a rolled sweater neck; lower garment: olive drab wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: army rank insignia and a service-number token; worn as rank on the collar, token on a neck chain. color palette: olive drab, dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

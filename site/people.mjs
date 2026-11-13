@@ -28,16 +28,17 @@ const ABILITY = { diplomacy: ['Diplomacy', '외교'], martial: ['Martial', '군�
 const BODY = { 'left-arm': ['Left arm', '왼팔'], 'right-arm': ['Right arm', '오른팔'], 'left-leg': ['Left leg', '왼다리'], 'right-leg': ['Right leg', '오른다리'], head: ['Head', '머리'], torso: ['Torso', '몸통'] };
 const SECTION_ORDER_KO = ['생애', '관직', '훈련', '호위 대열', '일화', '가문', '관계', '야망', '공포', '개입'];
 const SECTION_EN = { '생애': 'Life', '관직': 'Offices', '훈련': 'Training', '호위 대열': 'Guard Formation', '일화': 'Anecdote', '가문': 'Houses', '관계': 'Relationships', '야망': 'Ambition', '공포': 'Fear', '개입': 'Intervention' };
-const FAITH = { unknown: ['Unknown', '미확인'], christian: ['Christian', '기독교'], 'non-christian': ['Non-Christian', '비기독교'] };
+// v3 faith values (docs/design/v3/07-people-and-war.md 9.4, 10.2): Arc members with parts are baptised, without parts unbaptised; fitted = parts outside the Arc.
+const FAITH = { baptised: ['Baptised', '세례받음'], unbaptised: ['Unbaptised', '미세례자'], fitted: ['Fitted (outside the Arc)', '이식(아크 밖)'], hierophant: ['The one who opens baptism (Hierophant)', '세례를 여는 사람(교주)'], none: ['None', '없음'] };
 
 const STR = {
   en: {
     profile: 'Abilities and Traits', ability: 'Ability', base: 'Base', final: 'Final', skills: 'Skills', skill: 'Skill', level: 'Level', traits: 'Traits', behavior: 'Behavior', stress: 'Stress', relationship: 'Relationship', health: 'Physical condition', unassessed: 'Physical condition has not been assessed yet.', part: 'Part', severity: 'Severity',
     abilityNote: 'A base ability of 10 is a trained practitioner. The base cap is 20 and the final cap, with every effect applied, is 100.',
     basics: 'Basic Information', name: 'Name', state: 'Polity', stateId: 'Polity ID', faction: 'Faction', birth: 'Date of birth', age: 'Age', ageAsOf: 'Age as of', position: 'Position', tier: 'Tier', rank: 'Rank', occupation: 'Occupation', gender: 'Gender', stage: 'Stage', generation: 'Generation',
-    relations: 'Relationships and Ties', liege: 'Direct liege', contact: 'Work contact', courtVassal: 'Court vassal', canon: 'Canonical Detail', fullCard: 'Full canonical card text',
-    values: 'Values', desire: 'Desire', orientation: 'Orientation', union: 'Partnership', household: 'Household and Faith', personFaith: 'Personal faith', houseFaith: 'House faith', humanoid: 'Humanoid admission to the household', humanoidExcluded: 'Excluded by the person\'s polity', humanoidReview: 'Reviewed individually',
-    titles: 'Seats Held in Winter 2126 and the Jurisdiction Above', holdings: 'Directly Held Land and Facilities', subHoldings: 'Holdings of Retainers in this Duchy', retinue: 'Retainers',
+    relations: 'Relationships and Ties', liege: 'Direct liege', contact: 'Work contact', courtVassal: 'Directly under this person', canon: 'Canonical Detail', fullCard: 'Full canonical card text',
+    values: 'Values', desire: 'Desire', orientation: 'Orientation', union: 'Partnership', household: 'Household and Faith', personFaith: 'Personal faith', houseFaith: 'Faith of the head of household', humanoid: 'Humanoids in the household', humanoidAdmitted: 'Yes, in the retinue', humanoidNone: 'None',
+    titles: 'Seats Held in Winter 2126 and the Jurisdiction Above', holdings: 'Directly Held Land and Facilities', subHoldings: 'Holdings of Those Directly Under This Seat', retinue: 'Retainers',
     clanLine: (n) => `${n} family tree`, noClan: 'No bongwan (clan seat)', family: 'Family tree', crest: 'crest',
     permissions: 'Name and Likeness Permission', nameUse: 'Name use', likenessUse: 'Likeness use', granted: 'Granted', recorded: 'Recorded on', yes: 'yes', none: 'none',
     clanIndex: 'Clan Index', clanLead: (c, n) => `${c} bongwan clans with ${n} recorded members. Each clan page lists its members and family tree.`, nonKorean: 'Families Without a Bongwan', nonKoreanLead: 'These families do not use a Korean clan seat or generation names.',
@@ -50,9 +51,9 @@ const STR = {
     profile: '역량과 특성', ability: '역량', base: '기본', final: '최종', skills: '행동 숙련', skill: '숙련', level: '수준', traits: '특성', behavior: '행동', stress: '스트레스', relationship: '관계', health: '신체 상태', unassessed: '신체 상태는 아직 평가되지 않았습니다.', part: '부위', severity: '손상 정도',
     abilityNote: '기본 역량 10은 해당 분야 숙련자 수준입니다. 기본 상한은 20, 모든 효과를 반영한 최종 상한은 100입니다.',
     basics: '기본 정보', name: '이름', state: '소속 정체', stateId: '정체 ID', faction: '세력', birth: '생년월일', age: '만 나이', ageAsOf: '나이 기준일', position: '직위', tier: '등급', rank: '품계', occupation: '직업', gender: '성별', stage: '단계', generation: '세대',
-    relations: '관계와 접점', liege: '직속 주군', contact: '업무 접점', courtVassal: '궁정 가신', canon: '정본 상세', fullCard: '정본 카드 원문 전체',
-    values: '가치관', desire: '욕망', orientation: '지향', union: '결합', household: '가정과 신앙', personFaith: '개인 신앙', houseFaith: '가문 신앙', humanoid: '휴머노이드 가정 반입', humanoidExcluded: '소속 정체가 반입을 막음', humanoidReview: '개별 심사',
-    titles: '2126년 겨울의 자리와 위 관할', holdings: '직접 보유한 땅과 시설', subHoldings: '이 공작령 안 가신의 보유지', retinue: '가신',
+    relations: '관계와 접점', liege: '직속 주군', contact: '업무 접점', courtVassal: '직속 아랫사람', canon: '정본 상세', fullCard: '정본 카드 원문 전체',
+    values: '가치관', desire: '욕망', orientation: '지향', union: '결합', household: '가정과 신앙', personFaith: '개인 신앙', houseFaith: '가구주 신앙', humanoid: '가구의 휴머노이드', humanoidAdmitted: '있음(가신 무리)', humanoidNone: '없음',
+    titles: '2126년 겨울의 자리와 위 관할', holdings: '직접 보유한 땅과 시설', subHoldings: '직속 아랫사람의 보유지', retinue: '가신',
     clanLine: (n) => `${n} 가계도`, noClan: '본관 없음', family: '가계도', crest: '문장',
     permissions: '이름·초상 사용 허가', nameUse: '이름 사용', likenessUse: '초상 사용', granted: '허가됨', recorded: '기록일', yes: '예', none: '없음',
     clanIndex: '본관 가문 색인', clanLead: (c, n) => `본관 가문 ${c}개, 등록 인물 ${n}명. 각 가문 페이지에서 구성원과 가계도를 볼 수 있습니다.`, nonKorean: '본관을 적용하지 않는 가계', nonKoreanLead: '한국 문중의 본관이나 항렬을 적용하지 않는 가계입니다.',
@@ -90,7 +91,7 @@ export function personPage({ p, d, dKo, ko, g, P, stateRow, factionName, clan })
     ...(d?.birthDate ? [[S.birth, d.birthDate], [S.age, d.age], [S.ageAsOf, d.ageAsOf]] : []),
     [S.position, L('position')], [S.tier, p.tier], [S.rank, L('rank')], [S.occupation, L('occupation')], [S.gender, L('gender')], [S.stage, L('stage')],
     ...(d?.generation ? [[S.generation, d.generation]] : []),
-    ...Object.entries(d?.fields ?? {}).filter(([k]) => !['가치관', '욕망', '직위', '소속', 'Values', 'Desire', 'Position', 'Affiliation'].includes(k)).map(([k, v]) => [k, v]),
+    ...Object.entries(d?.fields ?? {}).filter(([k]) => !['가치관', '욕망', '직위', '소속', '품계', '생업', 'Values', 'Desire', 'Position', 'Affiliation', 'Rank', 'Livelihood'].includes(k)).map(([k, v]) => [k, v]),
   ].filter(([, v]) => hasText(v));
   out.push(`## ${S.basics}\n\n| ${ko ? '항목' : 'Field'} | ${ko ? '값' : 'Value'} |\n| --- | --- |\n${rows.map(([k, v]) => `| ${cell(k)} | ${/^\[.*\]\(.*\)$/.test(String(v)) ? v : cell(v)} |`).join('\n')}\n`);
   if (!d) return out.join('\n');
@@ -108,7 +109,7 @@ export function personPage({ p, d, dKo, ko, g, P, stateRow, factionName, clan })
   const rel = [];
   if (d.directLiege) rel.push([`${S.liege} · ${d.directLiege.name}`, `2126 · ${d.directLiege.ownerTerm ?? d.directLiege.courtId ?? ''}`]);
   for (const c of d.proseContacts ?? []) rel.push([`${S.contact} · ${c.recipientName}`, c.basis]);
-  for (const m of d.court?.members ?? []) rel.push([`${S.courtVassal} · ${m.name}`, `2126 · ${d.court.id}`]);
+  for (const m of d.court?.members ?? []) rel.push([`${S.courtVassal} · ${m.name}`, '2126']);
   for (const r of d.relations?.outgoing ?? []) rel.push([`→ ${r.to} · ${r.type}`, r.basis]);
   for (const r of d.relations?.incoming ?? []) rel.push([`← ${r.from} · ${r.type}`, r.basis]);
   if (rel.length) out.push(`## ${S.relations}\n\n| ${ko ? '항목' : 'Field'} | ${ko ? '내용' : 'Detail'} |\n| --- | --- |\n${rel.map(([k, v]) => `| ${cell(k)} | ${cell(v)} |`).join('\n')}\n`);
@@ -117,11 +118,12 @@ export function personPage({ p, d, dKo, ko, g, P, stateRow, factionName, clan })
   const sections = d.sections ?? {};
   const present = order.filter((k) => sections[k]);
   if (present.length) out.push(`## ${S.canon}\n\n${present.map((k) => `### ${k}\n\n${sections[k]}\n`).join('\n')}`);
-  if (d.biography) out.push(`<details><summary>${S.fullCard}</summary>\n\n${d.biography}\n\n</details>\n`);
+  // v3 records also carry the biography as the 생애/Life section (07 10.2); show that text once
+  if (d.biography && d.biography !== (sections['생애'] ?? sections.Life)) out.push(`<details><summary>${S.fullCard}</summary>\n\n${d.biography}\n\n</details>\n`);
 
   if (d.household) {
     const f = (v) => (FAITH[v] ?? [v, v])[ko ? 1 : 0];
-    out.push(`## ${S.household}\n\n| ${ko ? '항목' : 'Field'} | ${ko ? '값' : 'Value'} |\n| --- | --- |\n| ${S.personFaith} | ${f(d.household.personFaith)} |\n| ${S.houseFaith} | ${f(d.household.houseFaith)} |\n| ${S.humanoid} | ${d.household.humanoidAdmission === 'excluded' ? S.humanoidExcluded : S.humanoidReview} |\n`);
+    out.push(`## ${S.household}\n\n| ${ko ? '항목' : 'Field'} | ${ko ? '값' : 'Value'} |\n| --- | --- |\n| ${S.personFaith} | ${f(d.household.personFaith)} |\n| ${S.houseFaith} | ${f(d.household.houseFaith)} |\n| ${S.humanoid} | ${d.household.humanoidAdmission === 'admitted' ? S.humanoidAdmitted : S.humanoidNone} |\n`);
   }
   if (d.openingTitles?.length) out.push(`## ${S.titles}\n\n${d.openingTitles.map((t) => `- **${cell(t.name)}** (${cell(t.rank)})${t.basis ? ` — ${cell(t.basis)}` : ''}`).join('\n')}\n`);
   for (const grp of d.retinueGroups ?? []) out.push(`## ${cell(grp.name)}\n\n${grp.count} · ${(grp.duties ?? []).map(cell).join(' · ')}\n`);

@@ -3,27 +3,27 @@
   "personId": "person-0058",
   "characterId": "K058",
   "name": "정하린",
-  "stateId": "S03",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "생명안전 심사관"
+    "role": "삼성2동 대피소장 · 아크"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "short cropped hair",
-    "upper": "mustard ochre knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer",
-    "outfit": "mustard ochre knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer",
+    "upper": "정비 틈을 낸 겨자빛 황토색 누빔 저고리, 위팔에 붉은 바탕 곁집 띠(가로줄 둘 무늬), 오른쪽 깃에 부위 수 땀 1줄",
+    "outfit": "정비 틈을 낸 겨자빛 황토색 누빔 저고리, 위팔에 붉은 바탕 곁집 띠(가로줄 둘 무늬), 오른쪽 깃에 부위 수 땀 1줄",
     "palette": [
       "mustard ochre",
       "sand beige",
       "forest green"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "sand beige straight wool trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "duty whistle on a cord lanyard"
+    "lower": "sand beige padded wool trousers",
+    "footwear": "felt-lined boots",
+    "accessories": "shelter register book in an oilcloth wrap"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "mustard ochre knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer",
+        "value": "정비 틈을 낸 겨자빛 황토색 누빔 저고리, 위팔에 붉은 바탕 곁집 띠(가로줄 둘 무늬), 오른쪽 깃에 부위 수 땀 1줄",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "sand beige straight wool trousers",
+        "value": "sand beige padded wool trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt-lined boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "wrapped knitted scarf",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "duty whistle on a cord lanyard",
+        "value": "shelter register book in an oilcloth wrap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull brass",
+        "value": "faded olive",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, cord",
+        "value": "paper, oilcloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "lanyard around the neck",
+        "value": "held in a strap across the chest",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "thick rectangular book",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 정하린, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; black streaked with grey hair; short length. build: average; skin: light warm beige. upper garment: mustard ochre knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: mustard ochre, sand beige, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 정하린, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; black streaked with grey hair; short length. build: average; skin: light warm beige. upper garment: 정비 틈을 낸 겨자빛 황토색 누빔 저고리, 위팔에 붉은 바탕 곁집 띠(가로줄 둘 무늬), 오른쪽 깃에 부위 수 땀 1줄; neckline: wrapped knitted scarf. accessories: shelter register book in an oilcloth wrap; worn as held in a strap across the chest. color palette: mustard ochre, sand beige, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 정하린, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; black streaked with grey hair; short length. build: average; skin: light warm beige; average adult male height. upper garment: mustard ochre knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige straight wool trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: mustard ochre, sand beige, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 정하린, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; black streaked with grey hair; short length. build: average; skin: light warm beige; average adult male height. upper garment: 정비 틈을 낸 겨자빛 황토색 누빔 저고리, 위팔에 붉은 바탕 곁집 띠(가로줄 둘 무늬), 오른쪽 깃에 부위 수 땀 1줄; neckline: wrapped knitted scarf; lower garment: sand beige padded wool trousers; footwear: felt-lined boots. accessories: shelter register book in an oilcloth wrap; worn as held in a strap across the chest. color palette: mustard ochre, sand beige, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 정하린, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; black streaked with grey hair; short length. build: average; skin: light warm beige; average adult male height. upper garment: mustard ochre knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige straight wool trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: mustard ochre, sand beige, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 정하린, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; black streaked with grey hair; short length. build: average; skin: light warm beige; average adult male height. upper garment: 정비 틈을 낸 겨자빛 황토색 누빔 저고리, 위팔에 붉은 바탕 곁집 띠(가로줄 둘 무늬), 오른쪽 깃에 부위 수 땀 1줄; neckline: wrapped knitted scarf; lower garment: sand beige padded wool trousers; footwear: felt-lined boots. accessories: shelter register book in an oilcloth wrap; worn as held in a strap across the chest. color palette: mustard ochre, sand beige, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 정하린, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; black streaked with grey hair; short length. build: average; skin: light warm beige; average adult male height. upper garment: mustard ochre knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige straight wool trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: mustard ochre, sand beige, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 정하린, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; black streaked with grey hair; short length. build: average; skin: light warm beige; average adult male height. upper garment: 정비 틈을 낸 겨자빛 황토색 누빔 저고리, 위팔에 붉은 바탕 곁집 띠(가로줄 둘 무늬), 오른쪽 깃에 부위 수 땀 1줄; neckline: wrapped knitted scarf; lower garment: sand beige padded wool trousers; footwear: felt-lined boots. accessories: shelter register book in an oilcloth wrap; worn as held in a strap across the chest. color palette: mustard ochre, sand beige, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 정하린, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; black streaked with grey hair; short length. build: average; skin: light warm beige; average adult male height. upper garment: mustard ochre knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige straight wool trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: mustard ochre, sand beige, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 정하린, an East Asian man, in his fifties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; upturned almond dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: short trimmed grey-flecked beard. short cropped hair; black streaked with grey hair; short length. build: average; skin: light warm beige; average adult male height. upper garment: 정비 틈을 낸 겨자빛 황토색 누빔 저고리, 위팔에 붉은 바탕 곁집 띠(가로줄 둘 무늬), 오른쪽 깃에 부위 수 땀 1줄; neckline: wrapped knitted scarf; lower garment: sand beige padded wool trousers; footwear: felt-lined boots. accessories: shelter register book in an oilcloth wrap; worn as held in a strap across the chest. color palette: mustard ochre, sand beige, forest green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

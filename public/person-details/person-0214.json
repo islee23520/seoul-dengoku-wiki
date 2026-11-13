@@ -1,500 +1,105 @@
 {
   "id": "person-0214",
   "name": "평서아",
-  "title": "가짜 약품 경매 피해자",
-  "position": "가짜 약품 경매 피해자",
+  "title": "분대장",
+  "position": "분대장 · 쌍문역",
   "characterId": "K213",
-  "rank": "교도",
+  "rank": "하사",
   "commonTier": "T5",
-  "occupation": "약품 낙찰 사본·투약 사고 기록",
+  "occupation": "징집 보병",
   "gender": "남성",
   "stage": "S3",
-  "state": "S08",
-  "stateName": "중앙정보부",
-  "sourceRoute": "/world/Cast-State-08#인물-평서아",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0214",
   "birthDate": "2102-11-10",
   "birthday": "11-10",
   "age": 24,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-08.json#/content/204"
-  ],
-  "familyTree": {
-    "personId": "K213",
-    "nodes": [
-      {
-        "id": "K213",
-        "personId": "K213",
-        "kind": "person",
-        "name": "평서아",
-        "birthDate": "2102-11-10",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K213"
-          },
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-평서아-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 가짜 약품 경매 피해자 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-평서아-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0214"
-      },
-      {
-        "id": "FH-K213-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "평승호",
-        "lineage": {
-          "surname": "평",
-          "bongwan": "충주",
-          "clan": "d3c9-cda9-c8fc"
-        },
-        "birthDate": "2072-11-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-평서아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2110,
-            "summary": "평승호는 제기동 의무소에서 약품 낙찰 사본·투약 사고 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-평서아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K213-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "평승민",
-        "lineage": {
-          "surname": "평",
-          "bongwan": "충주",
-          "clan": "d3c9-cda9-c8fc"
-        },
-        "birthDate": "2042-11-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-평서아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "평승민은 제기동 의무소에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-평서아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K213-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "평승원",
-        "lineage": {
-          "surname": "평",
-          "bongwan": "충주",
-          "clan": "d3c9-cda9-c8fc"
-        },
-        "birthDate": "2012-11-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-평서아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "평승원은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-평서아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K213-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "송현경",
-        "birthDate": "2072-11-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-평서아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2110,
-            "summary": "송현경은 제기동 의무소에서 약품 낙찰 사본·투약 사고 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-평서아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K213-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "조현은",
-        "birthDate": "2042-11-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-평서아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "조현은은 제기동 의무소에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-평서아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K213-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "김현범",
-        "birthDate": "2012-11-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-평서아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "김현범은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-평서아-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K213-P-01:K213:biological",
-        "from": "FH-K213-P-01",
-        "to": "K213",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-평서아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K213-P-02:FH-K213-P-01:biological",
-        "from": "FH-K213-P-02",
-        "to": "FH-K213-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-평서아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K213-P-03:FH-K213-P-02:biological",
-        "from": "FH-K213-P-03",
-        "to": "FH-K213-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-평서아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K213-M-01:K213:biological",
-        "from": "FH-K213-M-01",
-        "to": "K213",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-평서아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K213-M-02:FH-K213-M-01:biological",
-        "from": "FH-K213-M-02",
-        "to": "FH-K213-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-평서아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K213-M-03:FH-K213-M-02:biological",
-        "from": "FH-K213-M-03",
-        "to": "FH-K213-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-평서아-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d3c9-cda9-c8fc",
+    "name": "충주 평씨",
+    "crest": "clan-crests/d3c9-cda9-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "분대 점호부의 첫 줄에서 불리는 이름은 도봉구 쌍문역에 기재된 하사 평서아다. 도봉구 부대의 분대장으로, 4호선 쌍문역 출입구와 창동 쪽 선로를 지킨다. 징집 복무를 마치고 하사로 남은 지 세 해째이고, 분대원 대부분이 그보다 나이가 많다. 그는 지휘관의 명령서를 분대에 읽어 줄 때 한 글자도 보태지 않는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "분대장",
+    "품계": "하사",
+    "생업": "징집 보병",
+    "일하는 역": "쌍문역",
+    "잠자는 역": "쌍문역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "분대 점호부의 첫 줄에서 불리는 이름은 도봉구 쌍문역에 기재된 하사 평서아다. 도봉구 부대의 분대장으로, 4호선 쌍문역 출입구와 창동 쪽 선로를 지킨다. 징집 복무를 마치고 하사로 남은 지 세 해째이고, 분대원 대부분이 그보다 나이가 많다. 그는 지휘관의 명령서를 분대에 읽어 줄 때 한 글자도 보태지 않는다.",
+    "관직": "직함 분대장. 직위 분대장 · 쌍문역. 품계 하사. 일하는 역 쌍문역."
+  },
+  "values": {
+    "권위": 40,
+    "개방": -5,
+    "무력": 20,
+    "물질": 70,
+    "공동": -10,
+    "원칙": -25,
+    "공개": -15,
+    "자격": 25,
+    "분산": -20,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": -30,
+    "위험": 20,
+    "과시": 35,
+    "지속": 5,
+    "지향": "유동",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0214",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 4,
         "effective": 4
       },
-      "strategy": {
-        "base": 6,
-        "effective": 6
-      },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
-      },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
+      "martial": {
         "base": 10,
         "effective": 10
       },
-      "learning": {
-        "base": 8,
-        "effective": 8
+      "stewardship": {
+        "base": 4,
+        "effective": 4
       },
-      "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
+      "intrigue": {
         "base": 5,
         "effective": 5
+      },
+      "learning": {
+        "base": 4,
+        "effective": 4
+      },
+      "prowess": {
+        "base": 10,
+        "effective": 10
       }
     },
-    "skills": [
-      {
-        "id": "auction-claim-documentation",
-        "name": {
-          "ko": "낙찰 피해 기록",
-          "en": "Auction harm documentation"
-        },
-        "rating": 55
-      },
-      {
-        "id": "invalid-award-claim",
-        "name": {
-          "ko": "낙찰 무효 요구",
-          "en": "Invalid award claim"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "k213-disposition",
-        "name": {
-          "ko": "봉인보다 출처",
-          "en": "Provenance before seals"
-        },
-        "description": {
-          "ko": "낙찰 봉투를 열기 전에 약 냄새를 맡고, 봉인만 번지르르한 상자를 고가에 받은 아침을 잊지 못한다. 목소리가 갈라져도 시작가는 다시 묻는다.",
-          "en": "She smelled the medicine before opening the award envelope and could not forget the morning she took a box with a glossy seal alone at a high price. Even with her voice cracking, she asked the opening bid again."
-        },
-        "behavior": {
-          "ko": "관직. 품계 교도. 직함은 가짜 약품 경매 피해자. 낙찰 사본과 투약 사고를 같은 벽에 붙이고, 봉인 출처가 없는 약은 재경매에 올리지 못하게 막는다.",
-          "en": "Office. Rank: lay instructor. Title: counterfeit drug auction victim. She pasted the award copies and the dosing accidents on one wall and blocked any drug without a seal origin from rising to re-auction."
-        },
-        "stress": {
-          "ko": "공포. 피해 진술이 시세 안정 명분으로 묻혀 다음 회로 같은 상자가 나가는 것.",
-          "en": "Fear. That the harm statement would be buried under price-stability pretexts and the same box would go out in the next session."
-        },
-        "relationship": {
-          "ko": "관계. 연가온의 시장 의무소에서 피해를 기록하고, 류은비에게 약효 검증을 청구하며, 오해린의 공통 결제권이 가짜 약 대금까지 삼키지 않기를 요구해 온 빚이 있다.",
-          "en": "Relations. Recorded the harm at Yeon Gaon's market clinic, claimed drug-efficacy verification from Ryu Eunbi, and carried a debt demanding that O Haerin's common settlement right never swallow the counterfeit drug payments."
-        },
-        "effects": []
-      },
-      {
-        "id": "k213-choice",
-        "name": {
-          "ko": "피해 침묵 거부",
-          "en": "Refusing silence about harm"
-        },
-        "description": {
-          "ko": "일화. 여름의 탁수와 가짜 약이 유통되자 평서아는 노량진 경매판에서 산 상자 하나를 깨 보이고 낙찰 무효를 외쳤다.",
-          "en": "Anecdote. When the summer's turbid water and counterfeit drugs circulated, Pyeong Seoa broke open one box bought on the Noryangjin auction floor and cried the award void."
-        },
-        "behavior": {
-          "ko": "관계. 연가온의 시장 의무소에서 피해를 기록하고, 류은비에게 약효 검증을 청구하며, 오해린의 공통 결제권이 가짜 약 대금까지 삼키지 않기를 요구해 온 빚이 있다.",
-          "en": "Relations. Recorded the harm at Yeon Gaon's market clinic, claimed drug-efficacy verification from Ryu Eunbi, and carried a debt demanding that O Haerin's common settlement right never swallow the counterfeit drug payments."
-        },
-        "stress": {
-          "ko": "공포. 피해 진술이 시세 안정 명분으로 묻혀 다음 회로 같은 상자가 나가는 것.",
-          "en": "Fear. That the harm statement would be buried under price-stability pretexts and the same box would go out in the next session."
-        },
-        "relationship": {
-          "ko": "관계. 연가온의 시장 의무소에서 피해를 기록하고, 류은비에게 약효 검증을 청구하며, 오해린의 공통 결제권이 가짜 약 대금까지 삼키지 않기를 요구해 온 빚이 있다.",
-          "en": "Relations. Recorded the harm at Yeon Gaon's market clinic, claimed drug-efficacy verification from Ryu Eunbi, and carried a debt demanding that O Haerin's common settlement right never swallow the counterfeit drug payments."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "가짜 약 상자를 깨고 낙찰 무효와 약효 검증을 요구했다. 피해 기록·주장은 확인되지만 약효 판정과 의술은 부여하지 않는다.",
-      "en": "Breaks the counterfeit medicine box and demands award cancellation and efficacy checks. Harm documentation is supported; pharmacological judgment and medicine are not granted."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -532,73 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d3c9-cda9-c8fc",
-    "name": "충주 평씨",
-    "crest": "clan-crests/d3c9-cda9-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -5,
-    "개방": 50,
-    "무력": -15,
-    "물질": 75,
-    "공동": -15,
-    "원칙": -45,
-    "공개": 10,
-    "자격": 10,
-    "분산": 30,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": -30,
-    "위험": 20,
-    "과시": 35,
-    "지속": 5,
-    "지향": "유동",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "중앙정보부",
-    "품계": "교도",
-    "생업": "약품 낙찰 사본·투약 사고 기록",
-    "직함": "가짜 약품 경매 피해자",
-    "가치관": "권위 −5 | 개방 50 | 무력 −15 | 물질 75 | 공동 −15 | 원칙 −45 | 공개 10 | 자격 10 | 분산 30 | 변혁 5",
-    "욕망": "갈망 40 | 독점 −30 | 위험 20 | 과시 35 | 지속 5 | 지향 유동 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 가짜 약품 경매 피해자 자리는 가짜 약 봉인으로 열렸다.\n- 평서아는 노량진1동에서 약품 낙찰 사본·투약 사고 기록 업무를 맡는다.",
-    "관직": "품계 교도. 직함은 가짜 약품 경매 피해자. 낙찰 사본과 투약 사고를 같은 벽에 붙이고, 봉인 출처가 없는 약은 재경매에 올리지 못하게 막는다.",
-    "일화": "탁수와 가짜 약이 유통되자 평서아는 노량진 경매판에서 산 상자 하나를 깨 보이고 낙찰 무효를 외쳤다.",
-    "관계": "시장 의무소에서 피해를 기록하고, 류은비에게 약효 검증을 청구하며, 오해린의 공통 결제권이 가짜 약 대금까지 삼키지 않기를 요구해 온 빚이 있다.",
-    "야망": "가짜 약이 섞인 낙찰을 무효로 돌려 노량진 경매가 의료 신뢰의 하청 시장이 되지 않게 한다.",
-    "공포": "피해 진술이 시세 안정 명분으로 묻혀 다음 회로 같은 상자가 나가는 것.",
-    "개입": "깨진 표본을 마곡까지 호송하거나, 시세 안정 명분의 은폐 쪽지를 폭로할 수 있다."
-  },
-  "biography": "낙찰 봉투를 열기 전에 약 냄새를 맡고, 봉인만 번지르르한 상자를 고가에 받은 아침을 잊지 못한다. 목소리가 갈라져도 시작가는 다시 묻는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 약품 낙찰 사본·투약 사고 기록\n- 직함: 가짜 약품 경매 피해자\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 가짜 약품 경매 피해자 자리는 가짜 약 봉인으로 열렸다.\n- 평서아는 노량진1동에서 약품 낙찰 사본·투약 사고 기록 업무를 맡는다.\n\n**관직.** 품계 교도. 직함은 가짜 약품 경매 피해자. 낙찰 사본과 투약 사고를 같은 벽에 붙이고, 봉인 출처가 없는 약은 재경매에 올리지 못하게 막는다.\n\n**일화.** 탁수와 가짜 약이 유통되자 평서아는 노량진 경매판에서 산 상자 하나를 깨 보이고 낙찰 무효를 외쳤다.\n\n**관계.** 시장 의무소에서 피해를 기록하고, 류은비에게 약효 검증을 청구하며, 오해린의 공통 결제권이 가짜 약 대금까지 삼키지 않기를 요구해 온 빚이 있다.\n\n**야망.** 가짜 약이 섞인 낙찰을 무효로 돌려 노량진 경매가 의료 신뢰의 하청 시장이 되지 않게 한다.\n\n**공포.** 피해 진술이 시세 안정 명분으로 묻혀 다음 회로 같은 상자가 나가는 것.\n\n**개입.** 깨진 표본을 마곡까지 호송하거나, 시세 안정 명분의 은폐 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 50 | 무력 −15 | 물질 75 | 공동 −15 | 원칙 −45 | 공개 10 | 자격 10 | 분산 30 | 변혁 5\n- 욕망: 갈망 40 | 독점 −30 | 위험 20 | 과시 35 | 지속 5 | 지향 유동 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-08"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "평서아",
-        "type": "계약",
-        "to": "류은비",
-        "basis": "류은비에게 약효 검증을 청구하며"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "섭다은",
-        "type": "맹세",
-        "to": "평서아",
-        "basis": "평서아가 삼킨 가짜 약의 보관 칸을 같은 사고로 가리킨다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

@@ -1,393 +1,101 @@
 {
   "id": "person-0181",
   "name": "패트릭 오코너",
-  "title": "한강 북안 폐선 탐사원",
-  "position": "한강 북안 폐선 탐사원",
+  "title": "수도방위사령부 참모",
+  "position": "수도방위사령부 참모 · 삼각지역",
   "characterId": "K180",
-  "rank": "주사",
+  "rank": "소령",
   "commonTier": "T5",
-  "occupation": "폐선 채수·레일 상태 조사",
+  "occupation": "지휘 참모",
   "gender": "남성",
   "stage": "S2",
-  "state": "S07",
-  "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-패트릭 오코너",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0181",
   "birthDate": "2065-06-02",
   "birthday": "06-02",
   "age": 61,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-07.json#/content/138",
-    "lore/characters/Cast-State-07.json#/content/140"
-  ],
-  "familyTree": {
-    "personId": "K180",
-    "nodes": [
-      {
-        "id": "K180",
-        "personId": "K180",
-        "kind": "person",
-        "name": "패트릭 오코너",
-        "birthDate": "2065-06-02",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K180"
-          },
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-패트릭-오코너-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 한강 북안 폐선 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-패트릭-오코너-list2"
-              }
-            ]
-          }
-        ],
-        "nameEn": "Patrick O'Connor",
-        "detailRoute": "/people/person-0181"
-      },
-      {
-        "id": "FH-K180-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "리엄 오코너",
-        "birthDate": "2035-06-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-패트릭-오코너-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "리엄 오코너는 2035년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2053년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-패트릭-오코너-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Liam O'Connor was born in 2035 and grew up reading family and work records. From 2053, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Liam O'Connor",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K180-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "숀 오코너",
-        "birthDate": "2005-06-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-패트릭-오코너-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "숀 오코너는 2030년 대정전 당시 용산·이태원 생활권에서 이태원 민간 숙박과 용산 화물 기록 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-패트릭-오코너-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Sean O'Connor was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
-          }
-        ],
-        "nameEn": "Sean O'Connor",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K180-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "노린 월시",
-        "birthDate": "2035-06-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-패트릭-오코너-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "노린 월시는 2035년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2053년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-패트릭-오코너-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Noreen Walsh was born in 2035 and grew up reading family and work records. From 2053, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Noreen Walsh",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K180-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "아이린 월시",
-        "birthDate": "2005-06-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-패트릭-오코너-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "아이린 월시는 2030년 대정전 당시 용산·이태원 생활권에서 이태원 민간 숙박과 용산 화물 기록 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-패트릭-오코너-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Irene Walsh was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
-          }
-        ],
-        "nameEn": "Irene Walsh",
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K180-P-01:K180:biological",
-        "from": "FH-K180-P-01",
-        "to": "K180",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-패트릭-오코너-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K180-P-02:FH-K180-P-01:biological",
-        "from": "FH-K180-P-02",
-        "to": "FH-K180-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-패트릭-오코너-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K180-M-01:K180:biological",
-        "from": "FH-K180-M-01",
-        "to": "K180",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-패트릭-오코너-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K180-M-02:FH-K180-M-01:biological",
-        "from": "FH-K180-M-02",
-        "to": "FH-K180-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-패트릭-오코너-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": null,
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "삼각지 청사의 수도방위사령부 참모들 가운데 가장 나이 많은 소령이라, 지휘관이 쓰러졌을 때 분대들이 받을 \"그 자리 지키기\" 명령의 문안을 그가 쓴다. 강 밑 터널 검문소 세 곳의 병력 배치도도 그가 그린다. 아침에 이태원역을 나서 삼각지까지 걷는 동안 그날 배치도의 숫자를 머릿속으로 맞춰 보고, 청사에 닿으면 맞춘 그대로 도면에 옮긴다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "수도방위사령부 참모",
+    "품계": "소령",
+    "생업": "지휘 참모",
+    "일하는 역": "삼각지역",
+    "잠자는 역": "이태원역",
+    "가구": "혼자 사는 가구"
   },
-  "proseContacts": [],
+  "sections": {
+    "생애": "삼각지 청사의 수도방위사령부 참모들 가운데 가장 나이 많은 소령이라, 지휘관이 쓰러졌을 때 분대들이 받을 \"그 자리 지키기\" 명령의 문안을 그가 쓴다. 강 밑 터널 검문소 세 곳의 병력 배치도도 그가 그린다. 아침에 이태원역을 나서 삼각지까지 걷는 동안 그날 배치도의 숫자를 머릿속으로 맞춰 보고, 청사에 닿으면 맞춘 그대로 도면에 옮긴다.",
+    "관직": "직함 수도방위사령부 참모. 직위 수도방위사령부 참모 · 삼각지역. 품계 소령. 일하는 역 삼각지역."
+  },
+  "values": {
+    "권위": 50,
+    "개방": -35,
+    "무력": 25,
+    "물질": 20,
+    "공동": -15,
+    "원칙": 20,
+    "공개": -35,
+    "자격": 35,
+    "분산": -40,
+    "변혁": -10
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": 25,
+    "위험": 30,
+    "과시": 25,
+    "지속": -10,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0181",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 4,
+        "effective": 4
       },
-      "strategy": {
-        "base": 9,
-        "effective": 9
+      "martial": {
+        "base": 11,
+        "effective": 11
       },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
+      "stewardship": {
+        "base": 4,
+        "effective": 4
       },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 5,
+        "effective": 5
       },
       "learning": {
-        "base": 10,
-        "effective": 10
+        "base": 4,
+        "effective": 4
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 10,
+        "effective": 10
       }
     },
-    "skills": [
-      {
-        "id": "rail-route-survey",
-        "name": {
-          "ko": "폐선 경로 조사",
-          "en": "Disused rail surveying"
-        },
-        "rating": 65
-      },
-      {
-        "id": "water-sampling",
-        "name": {
-          "ko": "채수",
-          "en": "Water sampling"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k180-disposition",
-        "name": {
-          "ko": "늦은 보고 거부",
-          "en": "Rejecting late reports"
-        },
-        "description": {
-          "ko": "강변 폐선의 수온으로 시간을 읽고, 지도에 없는 측선을 자랑으로 여기지 않는다. 늦은 보고를 죄로 본다.",
-          "en": "He read time from the riverside dead line's water temperature and took no pride in a survey line missing from the map. He counted a late report a fault."
-        },
-        "behavior": {
-          "ko": "관직. 품계 주사. 직함은 한강 북안 폐선 탐사원. 채수와 레일 상태를 같은 원장에 남기고, 붕괴 구간은 조정관과 가문 원로가 동시에 서명해야 표시한다.",
-          "en": "Office. Rank: registrar. Title: Han River north bank dead line surveyor. He left intake and rail state in the same ledger and marked a collapsed section only when the Coordinator and the house elder signed together."
-        },
-        "stress": {
-          "ko": "공포. 탐사 경로가 군사 비밀로 봉인되어 측선이 강국의 침투로로 팔리는 것.",
-          "en": "Fear. That the survey routes would be sealed as military secrets and the survey lines would be sold as great powers' infiltration routes."
-        },
-        "relationship": {
-          "ko": "관계. 박태겸에게 우회 좌표를 넘기는 동맹이고, 주리안의 북부 배관 점선과 강변을 맞추며, 마커스 윌슨의 봉쇄 순찰과 맨홀 출입을 나눈다.",
-          "en": "Relations. An alliance handing bypass coordinates to Park Taegyeom, he matched Ju Ri-an's northern pipeline dotted lines with the riverside and split manhole access with Seol Minu's blockade patrol."
-        },
-        "effects": []
-      },
-      {
-        "id": "k180-choice",
-        "name": {
-          "ko": "우회를 공개함",
-          "en": "Making bypasses public"
-        },
-        "description": {
-          "ko": "일화. 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 한강 북안 폐선 탐사원 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In the 2125 station fire he carried out the roster of lives first. By this deed the signature of the Han River north bank dead line surveyor post rose into the ledger."
-        },
-        "behavior": {
-          "ko": "관계. 박태겸에게 우회 좌표를 넘기는 동맹이고, 주리안의 북부 배관 점선과 강변을 맞추며, 마커스 윌슨의 봉쇄 순찰과 맨홀 출입을 나눈다.",
-          "en": "Relations. An alliance handing bypass coordinates to Park Taegyeom, he matched Ju Ri-an's northern pipeline dotted lines with the riverside and split manhole access with Seol Minu's blockade patrol."
-        },
-        "stress": {
-          "ko": "공포. 탐사 경로가 군사 비밀로 봉인되어 측선이 강국의 침투로로 팔리는 것.",
-          "en": "Fear. That the survey routes would be sealed as military secrets and the survey lines would be sold as great powers' infiltration routes."
-        },
-        "relationship": {
-          "ko": "관계. 박태겸에게 우회 좌표를 넘기는 동맹이고, 주리안의 북부 배관 점선과 강변을 맞추며, 마커스 윌슨의 봉쇄 순찰과 맨홀 출입을 나눈다.",
-          "en": "Relations. An alliance handing bypass coordinates to Park Taegyeom, he matched Ju Ri-an's northern pipeline dotted lines with the riverside and split manhole access with Seol Minu's blockade patrol."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "채수와 레일 상태를 함께 기록하고 우회 좌표를 나눈다. 화재 때 인명 장부를 구한 행동은 책임의 근거이지 철도 건설 실적이 아니다.",
-      "en": "He records samples alongside rail condition and shares bypass coordinates. Saving a people ledger in a fire supports responsibility, not railway construction experience."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -425,75 +133,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": null,
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 5,
-    "개방": 20,
-    "무력": -10,
-    "물질": 25,
-    "공동": -20,
-    "원칙": 0,
-    "공개": -10,
-    "자격": 20,
-    "분산": 10,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": 25,
-    "위험": 30,
-    "과시": 25,
-    "지속": -10,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "환적국",
-    "품계": "주사",
-    "생업": "폐선 채수·레일 상태 조사",
-    "직함": "한강 북안 폐선 탐사원",
-    "가치관": "권위 5 | 개방 20 | 무력 −10 | 물질 25 | 공동 −20 | 원칙 0 | 공개 −10 | 자격 20 | 분산 10 | 변혁 10",
-    "욕망": "갈망 15 | 독점 25 | 위험 30 | 과시 25 | 지속 −10 | 지향 이성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2065년생인 패트릭 오코너는 2126년 개막기에 한강 북안 폐선 탐사원 업무를 맡는다. 대합실 당직에서 자랐다. 한강 북안 폐선 탐사원 업무는 교대 무단 결근 대체 당직을 계기로 시작됐다. 아일랜드계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 숀 오코너는 2030년 용산·이태원에서 이태원 민간 숙박과 용산 화물 기록 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 패트릭 오코너의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 패트릭 오코너의 폐선 채수·레일 상태 조사 업무는 이촌2동과 연결된다.",
-    "관직": "품계 주사. 직함은 한강 북안 폐선 탐사원. 채수와 레일 상태를 같은 원장에 남기고, 붕괴 구간은 조정관과 가문 원로가 동시에 서명해야 표시한다.",
-    "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 행동을 계기로 한강 북안 폐선 탐사원 자리의 서명이 장부에 올랐다.",
-    "관계": "박태겸에게 우회 좌표를 넘기는 동맹이고, 주리안의 북부 배관 점선과 강변을 맞추며, 봉쇄 순찰과 맨홀 출입을 나눈다.",
-    "야망": "용산 접속과 강변 우회 측선을 한 장의 공개 해도로 그려 중계국이 전쟁 없이 우회 배차하게 한다.",
-    "공포": "탐사 경로가 군사 비밀로 봉인되어 측선이 강국의 침투로로 팔리는 것.",
-    "개입": "측선 호위를 맡아 우회 배차를 성사시키거나, 비밀 침투로 표시를 폭로할 수 있다."
-  },
-  "biography": "강변 폐선의 수온으로 시간을 읽고, 지도에 없는 측선을 자랑으로 여기지 않는다. 늦은 보고를 죄로 본다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 폐선 채수·레일 상태 조사\n- 직함: 한강 북안 폐선 탐사원\n**생애.** 2065년생인 패트릭 오코너는 2126년 개막기에 한강 북안 폐선 탐사원 업무를 맡는다. 대합실 당직에서 자랐다. 한강 북안 폐선 탐사원 업무는 교대 무단 결근 대체 당직을 계기로 시작됐다. 아일랜드계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 숀 오코너는 2030년 용산·이태원에서 이태원 민간 숙박과 용산 화물 기록 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 패트릭 오코너의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 패트릭 오코너의 폐선 채수·레일 상태 조사 업무는 이촌2동과 연결된다.\n\n**관직.** 품계 주사. 직함은 한강 북안 폐선 탐사원. 채수와 레일 상태를 같은 원장에 남기고, 붕괴 구간은 조정관과 가문 원로가 동시에 서명해야 표시한다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 행동을 계기로 한강 북안 폐선 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 박태겸에게 우회 좌표를 넘기는 동맹이고, 주리안의 북부 배관 점선과 강변을 맞추며, 봉쇄 순찰과 맨홀 출입을 나눈다.\n\n**야망.** 용산 접속과 강변 우회 측선을 한 장의 공개 해도로 그려 중계국이 전쟁 없이 우회 배차하게 한다.\n\n**공포.** 탐사 경로가 군사 비밀로 봉인되어 측선이 강국의 침투로로 팔리는 것.\n\n**개입.** 측선 호위를 맡아 우회 배차를 성사시키거나, 비밀 침투로 표시를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 20 | 무력 −10 | 물질 25 | 공동 −20 | 원칙 0 | 공개 −10 | 자격 20 | 분산 10 | 변혁 10\n- 욕망: 갈망 15 | 독점 25 | 위험 30 | 과시 25 | 지속 −10 | 지향 이성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-07"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "패트릭 오코너",
-        "type": "계약",
-        "to": "박태겸",
-        "basis": "박태겸에게 우회 좌표를 넘기는 동맹이고"
-      },
-      {
-        "from": "패트릭 오코너",
-        "type": "계약",
-        "to": "주리안",
-        "basis": "주리안의 북부 배관 점선과 강변을 맞추며"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "바르보라 프로하스코바",
-        "type": "계약",
-        "to": "패트릭 오코너",
-        "basis": "바르보라 프로하스코바는 침수 폐쇄 위치와 배차 지연을 패트릭 오코너에게 전한다. 패트릭 오코너는 레일·채수 조사로 확인된 위험과 아직 확인되지 않은 우회 경로를 구분한다."
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

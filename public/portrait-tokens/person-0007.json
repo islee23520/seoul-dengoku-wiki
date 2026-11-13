@@ -3,27 +3,27 @@
   "personId": "person-0007",
   "characterId": "K007",
   "name": "장필규",
-  "stateId": "S01",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "급수계약 감사관"
+    "role": "셈판 서기 · 영등포역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "short pin-curled hair",
-    "upper": "khaki plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
-    "outfit": "khaki plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+    "upper": "금빛 도시 끈을 깃에 두른 카키색 합성 섬유 서기 재킷, 분필 가루를 막는 덧소매",
+    "outfit": "금빛 도시 끈을 깃에 두른 카키색 합성 섬유 서기 재킷, 분필 가루를 막는 덧소매",
     "palette": [
       "khaki",
       "navy",
       "rust brown"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "navy pleated knee-length wool skirt over thick stockings",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "navy synthetic knee-length skirt over thick synthetic leggings",
+    "footwear": "laced rubber-soled walking shoes",
+    "accessories": "small tally slate and a stub of chalk at the waist"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "khaki plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+        "value": "금빛 도시 끈을 깃에 두른 카키색 합성 섬유 서기 재킷, 분필 가루를 막는 덧소매",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "navy pleated knee-length wool skirt over thick stockings",
+        "value": "navy synthetic knee-length skirt over thick synthetic leggings",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "laced rubber-soled walking shoes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "buttoned shirt collar with a gold city cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "small tally slate and a stub of chalk at the waist",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "slate grey and white chalk",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "slate, synthetic strap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "hung from the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small flat rectangular slate",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 장필규, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; muted pink lips. short pin-curled hair; black hair; short length. build: lean; skin: medium warm beige. upper garment: khaki plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: khaki, navy, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 장필규, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; muted pink lips. short pin-curled hair; black hair; short length. build: lean; skin: medium warm beige. upper garment: 금빛 도시 끈을 깃에 두른 카키색 합성 섬유 서기 재킷, 분필 가루를 막는 덧소매; neckline: buttoned shirt collar with a gold city cord. accessories: small tally slate and a stub of chalk at the waist; worn as hung from the belt. color palette: khaki, navy, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 장필규, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; muted pink lips. short pin-curled hair; black hair; short length. build: lean; skin: medium warm beige; average adult female height. upper garment: khaki plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: khaki, navy, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 장필규, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; muted pink lips. short pin-curled hair; black hair; short length. build: lean; skin: medium warm beige; average adult female height. upper garment: 금빛 도시 끈을 깃에 두른 카키색 합성 섬유 서기 재킷, 분필 가루를 막는 덧소매; neckline: buttoned shirt collar with a gold city cord; lower garment: navy synthetic knee-length skirt over thick synthetic leggings; footwear: laced rubber-soled walking shoes. accessories: small tally slate and a stub of chalk at the waist; worn as hung from the belt. color palette: khaki, navy, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 장필규, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; muted pink lips. short pin-curled hair; black hair; short length. build: lean; skin: medium warm beige; average adult female height. upper garment: khaki plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: khaki, navy, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 장필규, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; muted pink lips. short pin-curled hair; black hair; short length. build: lean; skin: medium warm beige; average adult female height. upper garment: 금빛 도시 끈을 깃에 두른 카키색 합성 섬유 서기 재킷, 분필 가루를 막는 덧소매; neckline: buttoned shirt collar with a gold city cord; lower garment: navy synthetic knee-length skirt over thick synthetic leggings; footwear: laced rubber-soled walking shoes. accessories: small tally slate and a stub of chalk at the waist; worn as hung from the belt. color palette: khaki, navy, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 장필규, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; muted pink lips. short pin-curled hair; black hair; short length. build: lean; skin: medium warm beige; average adult female height. upper garment: khaki plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: khaki, navy, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 장필규, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; muted pink lips. short pin-curled hair; black hair; short length. build: lean; skin: medium warm beige; average adult female height. upper garment: 금빛 도시 끈을 깃에 두른 카키색 합성 섬유 서기 재킷, 분필 가루를 막는 덧소매; neckline: buttoned shirt collar with a gold city cord; lower garment: navy synthetic knee-length skirt over thick synthetic leggings; footwear: laced rubber-soled walking shoes. accessories: small tally slate and a stub of chalk at the waist; worn as hung from the belt. color palette: khaki, navy, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 장필규, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; muted pink lips. short pin-curled hair; black hair; short length. build: lean; skin: medium warm beige; average adult female height. upper garment: khaki plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: khaki, navy, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 장필규, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: long oval; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: thin straight lips; muted pink lips. short pin-curled hair; black hair; short length. build: lean; skin: medium warm beige; average adult female height. upper garment: 금빛 도시 끈을 깃에 두른 카키색 합성 섬유 서기 재킷, 분필 가루를 막는 덧소매; neckline: buttoned shirt collar with a gold city cord; lower garment: navy synthetic knee-length skirt over thick synthetic leggings; footwear: laced rubber-soled walking shoes. accessories: small tally slate and a stub of chalk at the waist; worn as hung from the belt. color palette: khaki, navy, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

@@ -3,27 +3,27 @@
   "personId": "person-0392",
   "characterId": "K391",
   "name": "매리울",
-  "stateId": "S15",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "교구 물자 검수 부제"
+    "role": "장터 상인 우두머리 · 동대문역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, youthful smooth skin",
     "hair": "braids pinned up into a crown",
-    "upper": "navy wool cardigan over a collared shirt with sleeve garters, with a light knitted scarf",
-    "outfit": "navy wool cardigan over a collared shirt with sleeve garters, with a light knitted scarf",
+    "upper": "솜을 넣은 누비 저고리",
+    "outfit": "솜을 넣은 누비 저고리",
     "palette": [
-      "navy",
-      "cream",
-      "slate blue"
+      "brown",
+      "grey",
+      "dark green"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "cream A-line mid-calf wool skirt over thick stockings",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "wadded quilted trousers",
+    "footwear": "felt boots",
+    "accessories": "trader's entry tag and a small hand scale"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "cap with ear flaps",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "navy wool cardigan over a collared shirt with sleeve garters, with a light knitted scarf",
+        "value": "솜을 넣은 누비 저고리",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "cream A-line mid-calf wool skirt over thick stockings",
+        "value": "wadded quilted trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "wrapped wool scarf",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "trader's entry tag and a small hand scale",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "iron grey and brown",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "iron, cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "tag on a cord; scale hanging from the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat tag; hook-and-pan scale",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 매리울, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; dusty rose lips. braids pinned up into a crown; black hair; long length. build: average; skin: medium warm beige. upper garment: navy wool cardigan over a collared shirt with sleeve garters, with a light knitted scarf; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: navy, cream, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 매리울, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; dusty rose lips. braids pinned up into a crown; black hair; long length. build: average; skin: medium warm beige. headwear: cap with ear flaps; upper garment: 솜을 넣은 누비 저고리; neckline: wrapped wool scarf. accessories: trader's entry tag and a small hand scale; worn as tag on a cord; scale hanging from the belt. color palette: brown, grey, dark green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 매리울, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; dusty rose lips. braids pinned up into a crown; black hair; long length. build: average; skin: medium warm beige; average adult female height. upper garment: navy wool cardigan over a collared shirt with sleeve garters, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: cream A-line mid-calf wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: navy, cream, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 매리울, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; dusty rose lips. braids pinned up into a crown; black hair; long length. build: average; skin: medium warm beige; average adult female height. headwear: cap with ear flaps; upper garment: 솜을 넣은 누비 저고리; neckline: wrapped wool scarf; lower garment: wadded quilted trousers; footwear: felt boots. accessories: trader's entry tag and a small hand scale; worn as tag on a cord; scale hanging from the belt. color palette: brown, grey, dark green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 매리울, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; dusty rose lips. braids pinned up into a crown; black hair; long length. build: average; skin: medium warm beige; average adult female height. upper garment: navy wool cardigan over a collared shirt with sleeve garters, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: cream A-line mid-calf wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: navy, cream, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 매리울, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; dusty rose lips. braids pinned up into a crown; black hair; long length. build: average; skin: medium warm beige; average adult female height. headwear: cap with ear flaps; upper garment: 솜을 넣은 누비 저고리; neckline: wrapped wool scarf; lower garment: wadded quilted trousers; footwear: felt boots. accessories: trader's entry tag and a small hand scale; worn as tag on a cord; scale hanging from the belt. color palette: brown, grey, dark green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 매리울, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; dusty rose lips. braids pinned up into a crown; black hair; long length. build: average; skin: medium warm beige; average adult female height. upper garment: navy wool cardigan over a collared shirt with sleeve garters, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: cream A-line mid-calf wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: navy, cream, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 매리울, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; dusty rose lips. braids pinned up into a crown; black hair; long length. build: average; skin: medium warm beige; average adult female height. headwear: cap with ear flaps; upper garment: 솜을 넣은 누비 저고리; neckline: wrapped wool scarf; lower garment: wadded quilted trousers; footwear: felt boots. accessories: trader's entry tag and a small hand scale; worn as tag on a cord; scale hanging from the belt. color palette: brown, grey, dark green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 매리울, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; dusty rose lips. braids pinned up into a crown; black hair; long length. build: average; skin: medium warm beige; average adult female height. upper garment: navy wool cardigan over a collared shirt with sleeve garters, with a light knitted scarf; neckline: buttoned shirt collar; lower garment: cream A-line mid-calf wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: navy, cream, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 매리울, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: oval; round dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: thin straight lips; dusty rose lips. braids pinned up into a crown; black hair; long length. build: average; skin: medium warm beige; average adult female height. headwear: cap with ear flaps; upper garment: 솜을 넣은 누비 저고리; neckline: wrapped wool scarf; lower garment: wadded quilted trousers; footwear: felt boots. accessories: trader's entry tag and a small hand scale; worn as tag on a cord; scale hanging from the belt. color palette: brown, grey, dark green. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

@@ -1,395 +1,156 @@
 {
   "id": "person-0245",
   "name": "류해담",
-  "title": "소문 검증 필진",
-  "position": "시세 소문 검증 필진",
+  "title": "김포공항 구간장",
+  "position": "김포공항 구간장 · 자유도시들",
   "characterId": "K244",
-  "rank": "서기",
-  "commonTier": "T5",
-  "occupation": "시세 소문 출처 확인·교차 검증 원고",
+  "rank": "구간장",
+  "commonTier": "T3",
+  "occupation": "구간 운영",
   "gender": "여성",
   "stage": "S2",
-  "state": "S09",
-  "stateName": "여의도출자연합회",
-  "sourceRoute": "/world/Cast-State-09#인물-류해담",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0245",
   "birthDate": "2065-09-15",
   "birthday": "09-15",
   "age": 61,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-09.json#/content/666"
-  ],
-  "familyTree": {
-    "personId": "K244",
-    "nodes": [
-      {
-        "id": "K244",
-        "personId": "K244",
-        "kind": "person",
-        "name": "류해담",
-        "birthDate": "2065-09-15",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K244"
-          },
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-류해담-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 시세 소문 검증 필진 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-류해담-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0245"
-      },
-      {
-        "id": "FH-K244-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "류승은",
-        "lineage": {
-          "surname": "류",
-          "bongwan": "문화",
-          "clan": "b958-bb38-d654-67f3"
-        },
-        "birthDate": "2035-09-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-류해담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "류승은은 대합실 당직에서 시세 소문 출처 확인·교차 검증 원고 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-류해담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K244-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "류승연",
-        "lineage": {
-          "surname": "류",
-          "bongwan": "문화",
-          "clan": "b958-bb38-d654-67f3"
-        },
-        "birthDate": "2005-09-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-류해담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "류승연은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-류해담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K244-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤현재",
-        "birthDate": "2035-09-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-류해담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2073,
-            "summary": "윤현재는 대합실 당직에서 시세 소문 출처 확인·교차 검증 원고 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-류해담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K244-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한현범",
-        "birthDate": "2005-09-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-류해담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한현범은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-류해담-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K244-P-01:K244:biological",
-        "from": "FH-K244-P-01",
-        "to": "K244",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-류해담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K244-P-02:FH-K244-P-01:biological",
-        "from": "FH-K244-P-02",
-        "to": "FH-K244-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-류해담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K244-M-01:K244:biological",
-        "from": "FH-K244-M-01",
-        "to": "K244",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-류해담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K244-M-02:FH-K244-M-01:biological",
-        "from": "FH-K244-M-02",
-        "to": "FH-K244-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-류해담-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b958-bb38-d654-67f3",
+    "name": "문화 류씨",
+    "crest": "clan-crests/b958-bb38-d654-67f3.svg"
   },
-  "proseContacts": [
-    {
-      "recipientId": "K219",
-      "recipientName": "최지우",
-      "basis": "최지우의 공개 성향과 맞물리지만, 필진의 서명란은 따로 지킨다.",
-      "sourceRef": {
-        "path": "lore/characters/Cast-State-09.json",
-        "anchor": "인물-류해담-p5"
-      }
-    }
-  ],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "류해담은 바람지기 최다인이 정한 김포공항 구간장이다. 김포공항에서 방화, 개화산, 개화, 송정, 공항시장을 지나 신방화까지 일곱 역 사이의 터널과 케이블, 빛밭 자리, 고물 터를 맡는다. 바람밭의 전기가 그의 구간 케이블을 타고 김포공항역으로 모이므로, 그는 아침마다 구간 터널의 케이블 온도를 적은 쪽지를 받아 보고, 한 곳이라도 수치가 비면 예순한 해 묵은 무릎으로 직접 걸어가 본다. 세 번째 급수계약을 앞두고 바람지기가 구간마다 내놓을 일손 수를 묻자, 그는 김포공항 구간의 몫을 손시간으로 적어 올렸다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "김포공항 구간장",
+    "품계": "구간장",
+    "생업": "구간 운영",
+    "일하는 역": "김포공항역",
+    "잠자는 역": "김포공항역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "류해담은 바람지기 최다인이 정한 김포공항 구간장이다. 김포공항에서 방화, 개화산, 개화, 송정, 공항시장을 지나 신방화까지 일곱 역 사이의 터널과 케이블, 빛밭 자리, 고물 터를 맡는다. 바람밭의 전기가 그의 구간 케이블을 타고 김포공항역으로 모이므로, 그는 아침마다 구간 터널의 케이블 온도를 적은 쪽지를 받아 보고, 한 곳이라도 수치가 비면 예순한 해 묵은 무릎으로 직접 걸어가 본다. 세 번째 급수계약을 앞두고 바람지기가 구간마다 내놓을 일손 수를 묻자, 그는 김포공항 구간의 몫을 손시간으로 적어 올렸다.",
+    "관직": "직함 김포공항 구간장. 직위 김포공항 구간장 · 자유도시들. 품계 구간장. 일하는 역 김포공항역."
+  },
+  "values": {
+    "권위": -40,
+    "개방": 15,
+    "무력": -30,
+    "물질": 10,
+    "공동": -20,
+    "원칙": 5,
+    "공개": 55,
+    "자격": 35,
+    "분산": 75,
+    "변혁": 10
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": 10,
+    "위험": -20,
+    "과시": 10,
+    "지속": 35,
+    "지향": "동성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0245",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "류해담",
+        "type": "지휘",
+        "to": "최다인",
+        "basis": "강서 바람지기 최다인의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "모봉용",
+        "type": "지휘",
+        "to": "류해담",
+        "basis": "김포공항 구간장 류해담의 직속"
+      },
+      {
+        "from": "박하은",
+        "type": "지휘",
+        "to": "류해담",
+        "basis": "김포공항 구간장 류해담의 직속"
+      },
+      {
+        "from": "성라현",
+        "type": "지휘",
+        "to": "류해담",
+        "basis": "김포공항 구간장 류해담의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K034",
+    "name": "최다인",
+    "courtId": "court:K034",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K244",
+    "members": [
+      {
+        "personId": "K226",
+        "name": "모봉용"
+      },
+      {
+        "personId": "K505",
+        "name": "박하은"
+      },
+      {
+        "personId": "K1002",
+        "name": "성라현"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
-      },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "learning": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "intrigue": {
         "base": 7,
         "effective": 7
-      }
-    },
-    "skills": [
-      {
-        "id": "rumor-verification",
-        "name": {
-          "ko": "소문 출처 검증",
-          "en": "Rumor-source verification"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "rumor-verification-disposition",
-        "name": {
-          "ko": "출처 없는 줄 분리",
-          "en": "Separates unsourced lines"
-        },
-        "description": {
-          "ko": "제보를 문장 단위로 자르고 검증 전 금고 키를 넘기지 않는다.",
-          "en": "Separates claims sentence by sentence and withholds keys before verification."
-        },
-        "behavior": {
-          "ko": "제보를 문장 단위로 자르고 검증 전 금고 키를 넘기지 않는다.",
-          "en": "Separates claims sentence by sentence and withholds keys before verification."
-        },
-        "stress": {
-          "ko": "미확인 소문이 공식 파기 시세가 될 것을 두려워한다.",
-          "en": "Fears unverified rumor becoming an official cancellation price."
-        },
-        "relationship": {
-          "ko": "최지우의 공개 성향과 맞물리지만, 필진의 서명란은 따로 지킨다.",
-          "en": "Works alongside Choi Jiwoo’s disclosure preference but keeps the writers’ signature field separate."
-        },
-        "effects": []
       },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "독립 서명",
-          "en": "Independent signature"
-        },
-        "description": {
-          "ko": "의장의 공개 성향과 별도로 필진 서명란을 지킨다.",
-          "en": "Protects the writers’ signature field independently of the chair."
-        },
-        "behavior": {
-          "ko": "의장의 공개 성향과 별도로 필진 서명란을 지킨다.",
-          "en": "Protects the writers’ signature field independently of the chair."
-        },
-        "stress": {
-          "ko": "확인되지 않은 소문이 급수 계약 파기 시세로 나가는 것.",
-          "en": "Fears unverified rumor becoming an official cancellation price."
-        },
-        "relationship": {
-          "ko": "최지우의 공개 성향과 맞물리지만, 필진의 서명란은 따로 지킨다.",
-          "en": "Works alongside Choi Jiwoo’s disclosure preference but keeps the writers’ signature field separate."
-        },
-        "effects": []
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "익명 급수 계약 파기 제보에서 출처 없는 두 줄을 난외로 옮기고 시세 연기를 청했다. 의장 공개 성향과 별도로 필진 서명 경계를 지킨다.",
-      "en": "Moved two unsourced lines of an anonymous contract-break report to the margin and requested a price delay, maintaining a signature boundary independent of the chair."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -427,59 +188,118 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b958-bb38-d654-67f3",
-    "name": "문화 류씨",
-    "crest": "clan-crests/b958-bb38-d654-67f3.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -5,
-    "개방": 0,
-    "무력": -20,
-    "물질": -5,
-    "공동": 5,
-    "원칙": 15,
-    "공개": 55,
-    "자격": 15,
-    "분산": 20,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": 10,
-    "위험": -20,
-    "과시": 10,
-    "지속": 35,
-    "지향": "동성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "시세 소문 출처 확인·교차 검증 원고",
-    "소속": "여의도출자연합회",
-    "품계": "서기",
-    "직함": "시세 소문 검증 필진",
-    "가치관": "권위 −5 | 개방 0 | 무력 −20 | 물질 −5 | 공동 5 | 원칙 15 | 공개 55 | 자격 15 | 분산 20 | 변혁 0",
-    "욕망": "갈망 15 | 독점 10 | 위험 −20 | 과시 10 | 지속 35 | 지향 동성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2065-09-15 출생으로 승인된 출생군은 3군이다. 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 시세 소문 검증 필진 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 류해담은 여의동을 업무동으로 삼아 시세 소문 출처 확인·교차 검증 원고 업무를 맡는다.",
-    "관직": "품계 서기. 직함은 시세 소문 검증 필진. 익명 제보는 받되, 금고 키는 검증이 끝나기 전에 넘기지 않는다.",
-    "일화": "급수 계약 파기를 알리는 익명 제보가 여의도 금고의 시세 게시 직전에 들어온다. 류해담은 제보를 문장 단위로 잘라 출처가 없는 두 줄을 난외로 옮기고, 교차 확인이 끝날 때까지 금고 키를 쥔 채 시세 연기를 청한다.",
-    "관계": "최지우의 공개 성향과 맞물리지만, 필진의 서명란은 따로 지킨다.",
-    "야망": "여의도 금고의 시세 검증 필진을 의장 지시가 아니라 교차 확인 두 명으로 고정한다.",
-    "공포": "확인되지 않은 소문이 급수 계약 파기 시세로 나가는 것.",
-    "개입": "빠진 두 줄의 출처를 열거나, 시세 연기를 요청할 수 있다."
-  },
-  "biography": "소문을 문장 단위로 자르고, 출처가 없는 문장은 난외에만 남긴다. 시세를 올리기 전에 한 번 더 읽는다.\n\n- 생업: 시세 소문 출처 확인·교차 검증 원고\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 시세 소문 검증 필진\n**생애.** 2065-09-15 출생으로 승인된 출생군은 3군이다. 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 시세 소문 검증 필진 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 류해담은 여의동을 업무동으로 삼아 시세 소문 출처 확인·교차 검증 원고 업무를 맡는다.\n\n**관직.** 품계 서기. 직함은 시세 소문 검증 필진. 익명 제보는 받되, 금고 키는 검증이 끝나기 전에 넘기지 않는다.\n\n**일화.** 급수 계약 파기를 알리는 익명 제보가 여의도 금고의 시세 게시 직전에 들어온다. 류해담은 제보를 문장 단위로 잘라 출처가 없는 두 줄을 난외로 옮기고, 교차 확인이 끝날 때까지 금고 키를 쥔 채 시세 연기를 청한다.\n\n**관계.** 최지우의 공개 성향과 맞물리지만, 필진의 서명란은 따로 지킨다.\n\n**야망.** 여의도 금고의 시세 검증 필진을 의장 지시가 아니라 교차 확인 두 명으로 고정한다.\n\n**공포.** 확인되지 않은 소문이 급수 계약 파기 시세로 나가는 것.\n\n**개입.** 빠진 두 줄의 출처를 열거나, 시세 연기를 요청할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 0 | 무력 −20 | 물질 −5 | 공동 5 | 원칙 15 | 공개 55 | 자격 15 | 분산 20 | 변혁 0\n- 욕망: 갈망 15 | 독점 10 | 위험 −20 | 과시 10 | 지속 35 | 지향 동성 | 결합 다자",
-  "sources": [
-    "Cast-State-09"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:section:강서구:김포공항",
+      "name": {
+        "ko": "김포공항 구간"
+      },
+      "holderPersonId": "K244",
+      "directLiegePersonId": "K034",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "김포공항",
+        "stationName": "김포공항"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1150062000",
+          "name": "공항동"
+        },
+        {
+          "id": "region:1150064100",
+          "name": "방화3동"
+        },
+        {
+          "id": "region:1150064000",
+          "name": "방화2동"
+        },
+        {
+          "id": "region:1150063000",
+          "name": "방화1동"
+        }
+      ],
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
   ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:김포공항",
+      "name": {
+        "ko": "김포공항역"
+      },
+      "holderPersonId": "K226",
+      "directLiegePersonId": "K244",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "김포공항",
+        "stationName": "김포공항"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1150062000",
+          "name": "공항동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "모봉용",
+      "holderRoute": "/people/person-0227"
+    },
+    {
+      "id": "holding:v3:station:공항시장",
+      "name": {
+        "ko": "공항시장역"
+      },
+      "holderPersonId": "K505",
+      "directLiegePersonId": "K244",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "공항시장",
+        "stationName": "공항시장"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1150062000",
+          "name": "공항동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "박하은",
+      "holderRoute": "/people/person-0505"
+    },
+    {
+      "id": "holding:v3:station:개화산",
+      "name": {
+        "ko": "개화산역"
+      },
+      "holderPersonId": "K1002",
+      "directLiegePersonId": "K244",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "개화산",
+        "stationName": "개화산"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1150064000",
+          "name": "방화2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "성라현",
+      "holderRoute": "/people/person-1002"
+    }
+  ]
 }

@@ -1,365 +1,196 @@
 {
   "id": "person-0029",
   "name": "강민서",
-  "title": "위원장",
-  "position": "규격맹 위원장",
+  "title": "구로 공장장",
+  "position": "구로 공장장 · 자유도시들",
   "characterId": "K029",
-  "rank": "위원장",
+  "rank": "공장장",
   "commonTier": "T1",
-  "occupation": "공방 제작 조정",
+  "occupation": "도시 운영",
   "gender": "남성",
-  "stage": "주요",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-강민서",
+  "stage": "S1",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0029",
   "birthDate": "2066-10-03",
   "birthday": "10-03",
   "age": 60,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/1",
-    "lore/characters/Core-Characters.json#/content/11",
-    "lore/chronology/Century-Annals.json#/content/477",
-    "lore/chronology/Century-Annals.json#/content/540",
-    "lore/chronology/Century-Annals.json#/content/555"
-  ],
-  "familyTree": {
-    "personId": "K029",
-    "nodes": [
-      {
-        "id": "K029",
-        "personId": "K029",
-        "kind": "person",
-        "name": "강민서",
-        "birthDate": "2066-10-03",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K029"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-강민서-p1"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 구로·금천 공단 조합에서 자랐다. 공방의 원로는 규격 없는 개조를 내쳤다. 동방사가 부품 대가로 복구복무자 등록을 요구한 겨울, 강민서는 등록을 거부한 손을 시민권 줄에 올렸다. 공방 장인 우두머리들이 구로역 길드 평의회에서 그 줄을 위원장 자리의 근거로 삼았다. 경비대가 공방을 제압하면 규격맹은 군수 공장이 된다. 대림 기숙은 이 나라 안의 호다. 강민서가 백온의 명부를 지지하는 까닭이 거기 있다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-강민서-p1"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0029"
-      },
-      {
-        "id": "FH-K029-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강승현",
-        "lineage": {
-          "surname": "강",
-          "bongwan": "진주",
-          "clan": "ac15-c9c4-c8fc"
-        },
-        "birthDate": "2036-10-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-강민서-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "강승현은 구로·금천 공단 조합에서 제작평의회 중재자 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-강민서-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K029-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강승영",
-        "lineage": {
-          "surname": "강",
-          "bongwan": "진주",
-          "clan": "ac15-c9c4-c8fc"
-        },
-        "birthDate": "2006-10-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-강민서-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강승영은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-강민서-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K029-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한승영",
-        "birthDate": "2036-10-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-강민서-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "한승영은 구로·금천 공단 조합에서 제작평의회 중재자 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-강민서-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K029-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "강승윤",
-        "birthDate": "2006-10-03",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-강민서-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강승윤은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-강민서-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K029-P-01:K029:biological",
-        "from": "FH-K029-P-01",
-        "to": "K029",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-강민서-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K029-P-02:FH-K029-P-01:biological",
-        "from": "FH-K029-P-02",
-        "to": "FH-K029-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-강민서-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K029-M-01:K029:biological",
-        "from": "FH-K029-M-01",
-        "to": "K029",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-강민서-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K029-M-02:FH-K029-M-01:biological",
-        "from": "FH-K029-M-02",
-        "to": "FH-K029-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-강민서-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ac15-c9c4-c8fc",
+    "name": "진주 강씨",
+    "crest": "clan-crests/ac15-c9c4-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "강민서는 구로의 공장장이다. 앞 공장장이 죽은 2111년 네 도장 집안의 대주가 구로역 대주회에 모여 보증판을 읽었고, 그의 대가 새긴 지킨 장의 수가 가장 많아 마흔다섯의 그가 섰다. 구로는 화덕 킬로를 세지 않으니 그날 대주회는 반나절 만에 끝났고, 그의 대가 보증을 한 번이라도 깨면 그는 물러나고 대주회가 다시 열린다. 그는 구로역 작업대에서 펌프 날개와 축이 나가는 날마다 판의 수를 직접 센다. 천왕 통신대 대주 민웅기와는 신도림 팬을 다는 일의 무전과 부품을 장으로 맺었다. 예순이 된 지금도 규격 없는 개조품은 손수 돌려보낸다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "구로 공장장",
+    "품계": "공장장",
+    "생업": "도시 운영",
+    "일하는 역": "구로역",
+    "잠자는 역": "구로역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "강민서는 구로의 공장장이다. 앞 공장장이 죽은 2111년 네 도장 집안의 대주가 구로역 대주회에 모여 보증판을 읽었고, 그의 대가 새긴 지킨 장의 수가 가장 많아 마흔다섯의 그가 섰다. 구로는 화덕 킬로를 세지 않으니 그날 대주회는 반나절 만에 끝났고, 그의 대가 보증을 한 번이라도 깨면 그는 물러나고 대주회가 다시 열린다. 그는 구로역 작업대에서 펌프 날개와 축이 나가는 날마다 판의 수를 직접 센다. 천왕 통신대 대주 민웅기와는 신도림 팬을 다는 일의 무전과 부품을 장으로 맺었다. 예순이 된 지금도 규격 없는 개조품은 손수 돌려보낸다.",
+    "관직": "직함 구로 공장장. 직위 구로 공장장 · 자유도시들. 품계 공장장. 일하는 역 구로역."
+  },
+  "values": {
+    "권위": -75,
+    "개방": 35,
+    "무력": -30,
+    "물질": 55,
+    "공동": 15,
+    "원칙": 0,
+    "공개": 40,
+    "자격": 90,
+    "분산": 85,
+    "변혁": 30
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": -30,
+    "위험": 10,
+    "과시": -20,
+    "지속": 40,
+    "지향": "양성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0029",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "강민서",
+        "type": "계약",
+        "to": "민웅기",
+        "basis": "신도림 팬을 다는 일의 무전과 부품을 장으로 맺었다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "정시우",
+        "type": "지휘",
+        "to": "강민서",
+        "basis": "구로 공장장 강민서의 직속"
+      },
+      {
+        "from": "임채원",
+        "type": "지휘",
+        "to": "강민서",
+        "basis": "구로 공장장 강민서의 직속"
+      },
+      {
+        "from": "변시람",
+        "type": "지휘",
+        "to": "강민서",
+        "basis": "구로 공장장 강민서의 직속"
+      },
+      {
+        "from": "표예담",
+        "type": "지휘",
+        "to": "강민서",
+        "basis": "구로 공장장 강민서의 직속"
+      },
+      {
+        "from": "강늘유",
+        "type": "지휘",
+        "to": "강민서",
+        "basis": "구로 공장장 강민서의 직속"
+      },
+      {
+        "from": "민웅기",
+        "type": "지휘",
+        "to": "강민서",
+        "basis": "구로 공장장 강민서의 직속"
+      },
+      {
+        "from": "임채원",
+        "type": "계약",
+        "to": "강민서",
+        "basis": "보증판에 올릴 장으로, 펌프 축받이를 철마다 마흔 개씩 대는 장을 맺었다"
+      },
+      {
+        "from": "민웅기",
+        "type": "계약",
+        "to": "강민서",
+        "basis": "구로 공장장. 신도림에 새 팬을 다는 일에 쓸 무전과 부품을 장으로 맺었다"
+      }
+    ]
+  },
+  "court": {
+    "id": "court:K029",
+    "members": [
+      {
+        "personId": "K030",
+        "name": "정시우"
+      },
+      {
+        "personId": "K036",
+        "name": "임채원"
+      },
+      {
+        "personId": "K045",
+        "name": "변시람"
+      },
+      {
+        "personId": "K046",
+        "name": "표예담"
+      },
+      {
+        "personId": "person-0937",
+        "name": "강늘유"
+      },
+      {
+        "personId": "K1008",
+        "name": "민웅기"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 14,
-        "effective": 14
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 12,
-        "effective": 12
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 14,
-        "effective": 14
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "management": {
-        "base": 14,
-        "effective": 14
-      },
-      "insight": {
-        "base": 13,
-        "effective": 13
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 13,
-        "effective": 13
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
       }
     },
     "skills": [
       {
-        "id": "k029-parts-terms",
-        "name": {
-          "ko": "부품 조건 검토",
-          "en": "Parts-terms review"
-        },
-        "rating": 65
+        "id": "fc-0029-guarantee-board",
+        "name": "보증판 셈",
+        "rating": 74
       }
     ],
-    "traits": [
-      {
-        "id": "k029-trait-1",
-        "name": {
-          "ko": "등록보다 시민권",
-          "en": "Citizenship before registration"
-        },
-        "description": {
-          "ko": "수리하는 손을 복무 조건에 종속시키지 않으려 한다.",
-          "en": "Resists subordinating repairing hands to service terms."
-        },
-        "behavior": {
-          "ko": "수리하는 손을 복무 조건에 종속시키지 않으려 한다.",
-          "en": "Resists subordinating repairing hands to service terms."
-        },
-        "stress": {
-          "ko": "부품이 막혀도 등록 조건의 상자를 되돌린다.",
-          "en": "Returns the box even when parts access is at stake."
-        },
-        "relationship": {
-          "ko": "한재목과 공급 동맹을 유지하면서 배우진의 조건에 맞선다.",
-          "en": "Maintains supply ties with Han Jaemok while opposing Bae Woojin’s terms."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "복구복무자 등록을 거부한 사람을 시민권 줄에 올렸고 등록 명부가 부품의 대가로 제시되자 상자를 봉해 돌려보냈다. 공방의 자율성을 지키는 선택은 서부 급수에 남긴 빚과 분리되지 않는다.",
-      "en": "She placed people refusing restoration-service registration on the citizenship line and returned a sealed parts box when registration was demanded as its price. Protecting workshop autonomy also left a debt to western water supply."
-    },
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -399,30 +230,13 @@
   },
   "confirmedHoldings": [
     {
-      "id": "holding:capital-s02",
+      "id": "holding:v3:duchy:11530",
       "name": {
-        "ko": "구로역 직영지"
+        "ko": "구로구 공작령"
       },
       "holderPersonId": "K029",
       "directLiegePersonId": null,
-      "stateId": "S02",
-      "stationRef": {
-        "stationId": "Guro",
-        "stationName": "구로"
-      },
-      "adminRefs": [],
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": null
-    },
-    {
-      "id": "holding:opening-duchy-gu-11530-S02",
-      "name": {
-        "ko": "구로구 공작령 직영지"
-      },
-      "holderPersonId": "K029",
-      "directLiegePersonId": null,
-      "stateId": "S02",
+      "stateId": "free-city",
       "adminRefs": [
         {
           "id": "region:1153051000",
@@ -489,1040 +303,90 @@
           "name": "항동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11530-S02",
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11530",
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
+      "formalTitleRank": null
     }
   ],
   "subordinateHoldings": [
     {
-      "id": "holding:yangcheon",
+      "id": "holding:v3:section:구로구:신도림",
       "name": {
-        "ko": "양천구 영지",
-        "en": "Yangcheon District Holding"
+        "ko": "신도림 구간"
       },
-      "holderPersonId": "K002",
-      "directLiegePersonId": "K001",
-      "stateId": "S01",
-      "designation": {
-        "ko": "양천구 영주",
-        "en": "Lord of Yangcheon District"
-      },
-      "territorialScale": "duchy",
-      "formalTitleRank": null,
-      "adminRefs": [
-        {
-          "id": "region:1147051000",
-          "name": "목1동"
-        },
-        {
-          "id": "region:1147052000",
-          "name": "목2동"
-        },
-        {
-          "id": "region:1147053000",
-          "name": "목3동"
-        },
-        {
-          "id": "region:1147054000",
-          "name": "목4동"
-        },
-        {
-          "id": "region:1147055000",
-          "name": "목5동"
-        },
-        {
-          "id": "region:1147056000",
-          "name": "신월1동"
-        },
-        {
-          "id": "region:1147057000",
-          "name": "신월2동"
-        },
-        {
-          "id": "region:1147058000",
-          "name": "신월3동"
-        },
-        {
-          "id": "region:1147059000",
-          "name": "신월4동"
-        },
-        {
-          "id": "region:1147060000",
-          "name": "신월5동"
-        },
-        {
-          "id": "region:1147061000",
-          "name": "신월6동"
-        },
-        {
-          "id": "region:1147061100",
-          "name": "신월7동"
-        },
-        {
-          "id": "region:1147062000",
-          "name": "신정1동"
-        },
-        {
-          "id": "region:1147063000",
-          "name": "신정2동"
-        },
-        {
-          "id": "region:1147064000",
-          "name": "신정3동"
-        },
-        {
-          "id": "region:1147065000",
-          "name": "신정4동"
-        },
-        {
-          "id": "region:1147067000",
-          "name": "신정6동"
-        },
-        {
-          "id": "region:1147068000",
-          "name": "신정7동"
-        }
-      ],
-      "geometrySource": "opening-territories.regions",
-      "parentGeography": "서울특별시",
-      "wholeSeoulControl": false,
-      "titleId": "title:duchy-gu-11470-S01",
-      "liegeRelationshipKind": "preserved-personal-service",
-      "holderName": "이서담",
-      "holderRoute": "/people/person-0002"
-    },
-    {
-      "id": "holding:opening-duchy-gu-11410-S09",
-      "name": {
-        "ko": "서대문구 여의도출자연합회 공작령 직영지"
-      },
-      "holderPersonId": "K234",
+      "holderPersonId": "K045",
       "directLiegePersonId": "K029",
-      "stateId": "S09",
-      "adminRefs": [
-        {
-          "id": "region:1141058500",
-          "name": "신촌동"
-        },
-        {
-          "id": "region:1141061500",
-          "name": "연희동"
-        },
-        {
-          "id": "region:1141062000",
-          "name": "홍제1동"
-        },
-        {
-          "id": "region:1141064000",
-          "name": "홍제3동"
-        },
-        {
-          "id": "region:1141069000",
-          "name": "남가좌1동"
-        },
-        {
-          "id": "region:1141070000",
-          "name": "남가좌2동"
-        },
-        {
-          "id": "region:1141071000",
-          "name": "북가좌1동"
-        },
-        {
-          "id": "region:1141072000",
-          "name": "북가좌2동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11410-S09",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "모국",
-      "holderRoute": "/people/person-0235"
-    },
-    {
-      "id": "holding:opening-duchy-gu-11440-S09",
-      "name": {
-        "ko": "마포구 공작령 직영지"
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "Sindorim",
+        "stationName": "신도림"
       },
-      "holderPersonId": "K235",
-      "directLiegePersonId": "K029",
-      "stateId": "S09",
       "adminRefs": [
         {
-          "id": "region:1144055500",
-          "name": "아현동"
+          "id": "region:1153051000",
+          "name": "신도림동"
         },
         {
-          "id": "region:1144056500",
-          "name": "공덕동"
-        },
-        {
-          "id": "region:1144058500",
-          "name": "도화동"
-        },
-        {
-          "id": "region:1144059000",
-          "name": "용강동"
-        },
-        {
-          "id": "region:1144060000",
-          "name": "대흥동"
-        },
-        {
-          "id": "region:1144061000",
-          "name": "염리동"
-        },
-        {
-          "id": "region:1144063000",
-          "name": "신수동"
-        },
-        {
-          "id": "region:1144065500",
-          "name": "서강동"
-        },
-        {
-          "id": "region:1144066000",
-          "name": "서교동"
-        },
-        {
-          "id": "region:1144068000",
-          "name": "합정동"
-        },
-        {
-          "id": "region:1144069000",
-          "name": "망원1동"
-        },
-        {
-          "id": "region:1144070000",
-          "name": "망원2동"
-        },
-        {
-          "id": "region:1144071000",
-          "name": "연남동"
-        },
-        {
-          "id": "region:1144072000",
-          "name": "성산1동"
-        },
-        {
-          "id": "region:1144073000",
-          "name": "성산2동"
-        },
-        {
-          "id": "region:1144074000",
-          "name": "상암동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11440-S09",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "봉용",
-      "holderRoute": "/people/person-0236"
-    },
-    {
-      "id": "holding:opening-duchy-gu-11500-S03",
-      "name": {
-        "ko": "강서구 공작령 직영지"
-      },
-      "holderPersonId": "K061",
-      "directLiegePersonId": "K029",
-      "stateId": "S03",
-      "adminRefs": [
-        {
-          "id": "region:1150051000",
-          "name": "염창동"
-        },
-        {
-          "id": "region:1150052000",
-          "name": "등촌1동"
-        },
-        {
-          "id": "region:1150053000",
-          "name": "등촌2동"
-        },
-        {
-          "id": "region:1150053500",
-          "name": "등촌3동"
-        },
-        {
-          "id": "region:1150054000",
-          "name": "화곡1동"
-        },
-        {
-          "id": "region:1150055000",
-          "name": "화곡2동"
-        },
-        {
-          "id": "region:1150056000",
-          "name": "화곡3동"
-        },
-        {
-          "id": "region:1150057000",
-          "name": "화곡4동"
-        },
-        {
-          "id": "region:1150059000",
-          "name": "화곡본동"
-        },
-        {
-          "id": "region:1150059100",
-          "name": "화곡6동"
-        },
-        {
-          "id": "region:1150059300",
-          "name": "화곡8동"
-        },
-        {
-          "id": "region:1150060300",
-          "name": "가양1동"
-        },
-        {
-          "id": "region:1150060400",
-          "name": "가양2동"
-        },
-        {
-          "id": "region:1150060500",
-          "name": "가양3동"
-        },
-        {
-          "id": "region:1150061100",
-          "name": "발산1동"
-        },
-        {
-          "id": "region:1150061500",
-          "name": "우장산동"
-        },
-        {
-          "id": "region:1150062000",
-          "name": "공항동"
-        },
-        {
-          "id": "region:1150063000",
-          "name": "방화1동"
-        },
-        {
-          "id": "region:1150064000",
-          "name": "방화2동"
-        },
-        {
-          "id": "region:1150064100",
-          "name": "방화3동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11500-S03",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "김도하",
-      "holderRoute": "/people/person-0061"
-    },
-    {
-      "id": "holding:opening-duchy-gu-11545-S02",
-      "name": {
-        "ko": "금천구 공작령 직영지"
-      },
-      "holderPersonId": "K037",
-      "directLiegePersonId": "K029",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "region:1154551000",
-          "name": "가산동"
-        },
-        {
-          "id": "region:1154561000",
-          "name": "독산1동"
-        },
-        {
-          "id": "region:1154562000",
-          "name": "독산2동"
-        },
-        {
-          "id": "region:1154563000",
-          "name": "독산3동"
-        },
-        {
-          "id": "region:1154564000",
-          "name": "독산4동"
-        },
-        {
-          "id": "region:1154567000",
-          "name": "시흥1동"
-        },
-        {
-          "id": "region:1154568000",
-          "name": "시흥2동"
-        },
-        {
-          "id": "region:1154569000",
-          "name": "시흥3동"
-        },
-        {
-          "id": "region:1154570000",
-          "name": "시흥4동"
-        },
-        {
-          "id": "region:1154571000",
-          "name": "시흥5동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11545-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "한지온",
-      "holderRoute": "/people/person-0037"
-    },
-    {
-      "id": "holding:opening-duchy-gu-11560-S01",
-      "name": {
-        "ko": "영등포구 수문국 공작령 직영지"
-      },
-      "holderPersonId": "K001",
-      "directLiegePersonId": "K029",
-      "stateId": "S01",
-      "adminRefs": [
-        {
-          "id": "region:1156051500",
-          "name": "영등포본동"
-        },
-        {
-          "id": "region:1156055000",
-          "name": "당산1동"
-        },
-        {
-          "id": "region:1156056000",
-          "name": "당산2동"
-        },
-        {
-          "id": "region:1156058500",
-          "name": "도림동"
-        },
-        {
-          "id": "region:1156060500",
-          "name": "문래동"
-        },
-        {
-          "id": "region:1156061000",
-          "name": "양평1동"
-        },
-        {
-          "id": "region:1156063000",
-          "name": "신길1동"
-        },
-        {
-          "id": "region:1156065000",
-          "name": "신길3동"
-        },
-        {
-          "id": "region:1156066000",
-          "name": "신길4동"
-        },
-        {
-          "id": "region:1156067000",
-          "name": "신길5동"
-        },
-        {
-          "id": "region:1156068000",
-          "name": "신길6동"
-        },
-        {
-          "id": "region:1156069000",
-          "name": "신길7동"
-        },
-        {
-          "id": "region:1156070000",
-          "name": "대림1동"
-        },
-        {
-          "id": "region:1156071000",
-          "name": "대림2동"
+          "id": "region:1153056000",
+          "name": "구로5동"
         },
         {
           "id": "region:1156072000",
           "name": "대림3동"
+        },
+        {
+          "id": "region:1153054000",
+          "name": "구로3동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11560-S01",
+      "territorialScale": "section",
+      "titleId": null,
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "한재목",
-      "holderRoute": "/people/person-0001"
+      "formalTitleRank": null,
+      "holderName": "변시람",
+      "holderRoute": "/people/person-0045"
     },
     {
-      "id": "holding:opening-duchy-gu-11560-S09",
+      "id": "holding:v3:section:구로구:온수",
       "name": {
-        "ko": "영등포구 여의도출자연합회 공작령 직영지"
+        "ko": "온수 구간"
       },
-      "holderPersonId": "K219",
+      "holderPersonId": "K046",
       "directLiegePersonId": "K029",
-      "stateId": "S09",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "구일",
+        "stationName": "구일"
+      },
       "adminRefs": [
         {
-          "id": "region:1156053500",
-          "name": "영등포동"
+          "id": "region:1153052000",
+          "name": "구로1동"
         },
         {
-          "id": "region:1156054000",
-          "name": "여의동"
+          "id": "region:1153074000",
+          "name": "개봉1동"
+        },
+        {
+          "id": "region:1153077000",
+          "name": "오류1동"
+        },
+        {
+          "id": "region:1153079000",
+          "name": "수궁동"
+        },
+        {
+          "id": "region:1153078000",
+          "name": "오류2동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11560-S09",
+      "territorialScale": "section",
+      "titleId": null,
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "최지우",
-      "holderRoute": "/people/person-0220"
-    },
-    {
-      "id": "holding:opening-duchy-gu-11590-S02",
-      "name": {
-        "ko": "동작구 공작령 직영지"
-      },
-      "holderPersonId": "K441",
-      "directLiegePersonId": "K029",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "region:1159051000",
-          "name": "노량진1동"
-        },
-        {
-          "id": "region:1159052000",
-          "name": "노량진2동"
-        },
-        {
-          "id": "region:1159053000",
-          "name": "상도1동"
-        },
-        {
-          "id": "region:1159054000",
-          "name": "상도2동"
-        },
-        {
-          "id": "region:1159055000",
-          "name": "상도3동"
-        },
-        {
-          "id": "region:1159056000",
-          "name": "상도4동"
-        },
-        {
-          "id": "region:1159060500",
-          "name": "흑석동"
-        },
-        {
-          "id": "region:1159062000",
-          "name": "사당1동"
-        },
-        {
-          "id": "region:1159063000",
-          "name": "사당2동"
-        },
-        {
-          "id": "region:1159064000",
-          "name": "사당3동"
-        },
-        {
-          "id": "region:1159065000",
-          "name": "사당4동"
-        },
-        {
-          "id": "region:1159065100",
-          "name": "사당5동"
-        },
-        {
-          "id": "region:1159066000",
-          "name": "대방동"
-        },
-        {
-          "id": "region:1159067000",
-          "name": "신대방1동"
-        },
-        {
-          "id": "region:1159068000",
-          "name": "신대방2동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11590-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "류동현",
-      "holderRoute": "/people/person-0441"
-    },
-    {
-      "id": "holding:opening-duchy-gu-11620-S02",
-      "name": {
-        "ko": "관악구 공작령 직영지"
-      },
-      "holderPersonId": "K457",
-      "directLiegePersonId": "K029",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "region:1162052500",
-          "name": "보라매동"
-        },
-        {
-          "id": "region:1162054500",
-          "name": "청림동"
-        },
-        {
-          "id": "region:1162056500",
-          "name": "성현동"
-        },
-        {
-          "id": "region:1162057500",
-          "name": "행운동"
-        },
-        {
-          "id": "region:1162058500",
-          "name": "낙성대동"
-        },
-        {
-          "id": "region:1162059500",
-          "name": "청룡동"
-        },
-        {
-          "id": "region:1162060500",
-          "name": "은천동"
-        },
-        {
-          "id": "region:1162061500",
-          "name": "중앙동"
-        },
-        {
-          "id": "region:1162062500",
-          "name": "인헌동"
-        },
-        {
-          "id": "region:1162063000",
-          "name": "남현동"
-        },
-        {
-          "id": "region:1162064500",
-          "name": "서원동"
-        },
-        {
-          "id": "region:1162065500",
-          "name": "신원동"
-        },
-        {
-          "id": "region:1162066500",
-          "name": "서림동"
-        },
-        {
-          "id": "region:1162068500",
-          "name": "신사동"
-        },
-        {
-          "id": "region:1162069500",
-          "name": "신림동"
-        },
-        {
-          "id": "region:1162071500",
-          "name": "난향동"
-        },
-        {
-          "id": "region:1162072500",
-          "name": "조원동"
-        },
-        {
-          "id": "region:1162073500",
-          "name": "대학동"
-        },
-        {
-          "id": "region:1162074500",
-          "name": "삼성동"
-        },
-        {
-          "id": "region:1162076500",
-          "name": "미성동"
-        },
-        {
-          "id": "region:1162077500",
-          "name": "난곡동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11620-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "차예원",
-      "holderRoute": "/people/person-0457"
-    },
-    {
-      "id": "holding:opening-duchy-gu-11650-S03",
-      "name": {
-        "ko": "서초구 태욱그룹 공작령 직영지"
-      },
-      "holderPersonId": "K070",
-      "directLiegePersonId": "K029",
-      "stateId": "S03",
-      "adminRefs": [
-        {
-          "id": "region:1165052000",
-          "name": "서초2동"
-        },
-        {
-          "id": "region:1165065100",
-          "name": "양재1동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11650-S03",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "표지안",
-      "holderRoute": "/people/person-0070"
+      "formalTitleRank": null,
+      "holderName": "표예담",
+      "holderRoute": "/people/person-0046"
     }
-  ],
-  "openingTitles": [
-    {
-      "id": "title:duchy-gu-11530-S02",
-      "name": "구로구 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K029",
-      "basis": "개막 수도 직할 공작 결정(왕급 직속 최대 둘 중 하나)",
-      "stateId": "S02",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "region:1153051000",
-        "region:1153052000",
-        "region:1153053000",
-        "region:1153054000",
-        "region:1153055000",
-        "region:1153056000",
-        "region:1153059500",
-        "region:1153072000",
-        "region:1153073000",
-        "region:1153074000",
-        "region:1153075000",
-        "region:1153076000",
-        "region:1153077000",
-        "region:1153078000",
-        "region:1153079000",
-        "region:1153080000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
-    },
-    {
-      "id": "title:kingdom-s02",
-      "name": "규격맹 왕국",
-      "rank": "kingdom",
-      "holderPersonId": "K029",
-      "stateId": "S02",
-      "parentTitleId": null,
-      "jurisdictionRefs": [
-        "region:1141058500",
-        "region:1141061500",
-        "region:1141062000",
-        "region:1141064000",
-        "region:1141069000",
-        "region:1141070000",
-        "region:1141071000",
-        "region:1141072000",
-        "region:1144055500",
-        "region:1144056500",
-        "region:1144058500",
-        "region:1144059000",
-        "region:1144060000",
-        "region:1144061000",
-        "region:1144063000",
-        "region:1144065500",
-        "region:1144066000",
-        "region:1144068000",
-        "region:1144069000",
-        "region:1144070000",
-        "region:1144071000",
-        "region:1144072000",
-        "region:1144073000",
-        "region:1144074000",
-        "region:1147051000",
-        "region:1147052000",
-        "region:1147053000",
-        "region:1147054000",
-        "region:1147055000",
-        "region:1147056000",
-        "region:1147057000",
-        "region:1147058000",
-        "region:1147059000",
-        "region:1147060000",
-        "region:1147061000",
-        "region:1147061100",
-        "region:1147062000",
-        "region:1147063000",
-        "region:1147064000",
-        "region:1147065000",
-        "region:1147067000",
-        "region:1147068000",
-        "region:1150051000",
-        "region:1150052000",
-        "region:1150053000",
-        "region:1150053500",
-        "region:1150054000",
-        "region:1150055000",
-        "region:1150056000",
-        "region:1150057000",
-        "region:1150059000",
-        "region:1150059100",
-        "region:1150059300",
-        "region:1150060300",
-        "region:1150060400",
-        "region:1150060500",
-        "region:1150061100",
-        "region:1150061500",
-        "region:1150062000",
-        "region:1150063000",
-        "region:1150064000",
-        "region:1150064100",
-        "region:1153051000",
-        "region:1153052000",
-        "region:1153053000",
-        "region:1153054000",
-        "region:1153055000",
-        "region:1153056000",
-        "region:1153059500",
-        "region:1153072000",
-        "region:1153073000",
-        "region:1153074000",
-        "region:1153075000",
-        "region:1153076000",
-        "region:1153077000",
-        "region:1153078000",
-        "region:1153079000",
-        "region:1153080000",
-        "region:1154551000",
-        "region:1154561000",
-        "region:1154562000",
-        "region:1154563000",
-        "region:1154564000",
-        "region:1154567000",
-        "region:1154568000",
-        "region:1154569000",
-        "region:1154570000",
-        "region:1154571000",
-        "region:1156051500",
-        "region:1156053500",
-        "region:1156054000",
-        "region:1156055000",
-        "region:1156056000",
-        "region:1156058500",
-        "region:1156060500",
-        "region:1156061000",
-        "region:1156062000",
-        "region:1156063000",
-        "region:1156065000",
-        "region:1156066000",
-        "region:1156067000",
-        "region:1156068000",
-        "region:1156069000",
-        "region:1156070000",
-        "region:1156071000",
-        "region:1156072000",
-        "region:1159051000",
-        "region:1159052000",
-        "region:1159053000",
-        "region:1159054000",
-        "region:1159055000",
-        "region:1159056000",
-        "region:1159060500",
-        "region:1159062000",
-        "region:1159063000",
-        "region:1159064000",
-        "region:1159065000",
-        "region:1159065100",
-        "region:1159066000",
-        "region:1159067000",
-        "region:1159068000",
-        "region:1162052500",
-        "region:1162054500",
-        "region:1162056500",
-        "region:1162057500",
-        "region:1162058500",
-        "region:1162059500",
-        "region:1162060500",
-        "region:1162061500",
-        "region:1162062500",
-        "region:1162063000",
-        "region:1162064500",
-        "region:1162065500",
-        "region:1162066500",
-        "region:1162068500",
-        "region:1162069500",
-        "region:1162071500",
-        "region:1162072500",
-        "region:1162073500",
-        "region:1162074500",
-        "region:1162076500",
-        "region:1162077500",
-        "region:1165052000",
-        "region:1165065100"
-      ],
-      "basis": "개막 왕국 루트 결정(2026-10-11 사용자 승인)",
-      "parentTitle": null
-    },
-    {
-      "id": "title:kingdom-geography:seoul:05",
-      "name": "남서 왕국",
-      "rank": "kingdom",
-      "holderPersonId": "K029",
-      "stateId": "S02",
-      "geographicTitleId": "geography:kingdom:seoul:05",
-      "basis": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 규격맹 위원장. 남서 왕국 네 자치구 전체에 걸친 규격맹 공작령과 왕국 s02 보유 근거.",
-      "parentTitle": null
-    }
-  ],
-  "clan": {
-    "id": "ac15-c9c4-c8fc",
-    "name": "진주 강씨",
-    "crest": "clan-crests/ac15-c9c4-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": true,
-  "values": {
-    "권위": -40,
-    "개방": 20,
-    "무력": -20,
-    "물질": 40,
-    "공동": 40,
-    "원칙": 10,
-    "공개": 40,
-    "자격": 70,
-    "분산": 30,
-    "변혁": 20
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": -30,
-    "위험": 10,
-    "과시": -20,
-    "지속": 40,
-    "지향": "양성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "규격맹",
-    "생업": "공방 제작 조정",
-    "품계": "위원장",
-    "직함": "규격맹 위원장",
-    "업무 위치": "구로5동. 강민서는 구로5동 길드 평의회에 봉한 펌프 부품 상자와 시민권 명부를 나란히 올린다. 복구복무 등록을 대가로 요구하는 거래를 돌려보낸 뒤 김나율에게 거부한 공방의 교대 명단을 넘겨 표결 근거로 남긴다."
-  },
-  "sections": {
-    "생애": "2126년 세대. 구로·금천 공단 조합에서 자랐다. 공방 원로들은 규격 없는 개조를 내치며 가르쳤다. 동방사가 부품 대가로 복구복무자 등록을 요구한 겨울, 강민서는 등록을 거부한 손을 시민권 줄에 올렸다. 공방 장인 우두머리들이 구로역 길드 평의회에서 그 줄을 위원장 자리의 근거로 삼았다. 경비대가 공방을 제압하면 규격맹은 군수 공장이 된다. 대림 기숙은 이 나라 안의 호다. 강민서가 백온의 명부를 지지하는 까닭이 거기 있다.",
-    "관직": "품계 위원장. 직함은 규격맹 위원장. 생업 별명은 제작평의회 중재자.",
-    "일화": "동방사가 펌프 부품 상자 대신 복구복무자 명부를 내밀었을 때, 강민서는 상자를 봉한 채 돌려보냈다. 그 봉인이 한재목의 서부 급수와 배우진의 병조 사이에 빚으로 남았다.",
-    "가문": "구로합금가(HC07). 관리인. 규격 도면함이 이 가문의 키다.",
-    "관계": "한재목에게 펌프 부품을 댄다. 정호준과 기술 공개 범위를 다툰다. 백온의 난민 시민권을 지지한다.\n\n- 소속: 규격맹\n- 생업: 공방 제작 조정\n- 품계: 위원장\n- 직함: 규격맹 위원장\n- 업무 위치: 구로5동. 강민서는 구로5동 길드 평의회에 봉한 펌프 부품 상자와 시민권 명부를 나란히 올린다. 복구복무 등록을 대가로 요구하는 거래를 돌려보낸 뒤 김나율에게 거부한 공방의 교대 명단을 넘겨 표결 근거로 남긴다."
-  },
-  "biography": "**생애.** 2126년 세대. 구로·금천 공단 조합에서 자랐다. 공방 원로들은 규격 없는 개조를 내치며 가르쳤다. 동방사가 부품 대가로 복구복무자 등록을 요구한 겨울, 강민서는 등록을 거부한 손을 시민권 줄에 올렸다. 공방 장인 우두머리들이 구로역 길드 평의회에서 그 줄을 위원장 자리의 근거로 삼았다. 경비대가 공방을 제압하면 규격맹은 군수 공장이 된다. 대림 기숙은 이 나라 안의 호다. 강민서가 백온의 명부를 지지하는 까닭이 거기 있다.\n**관직.** 품계 위원장. 직함은 규격맹 위원장. 생업 별명은 제작평의회 중재자.\n**일화.** 동방사가 펌프 부품 상자 대신 복구복무자 명부를 내밀었을 때, 강민서는 상자를 봉한 채 돌려보냈다. 그 봉인이 한재목의 서부 급수와 배우진의 병조 사이에 빚으로 남았다.\n**가문.** 구로합금가(HC07). 관리인. 규격 도면함이 이 가문의 키다.\n**관계.** 한재목에게 펌프 부품을 댄다. 정호준과 기술 공개 범위를 다툰다. 백온의 난민 시민권을 지지한다.\n\n- 소속: 규격맹\n- 생업: 공방 제작 조정\n- 품계: 위원장\n- 직함: 규격맹 위원장\n- 업무 위치: 구로5동. 강민서는 구로5동 길드 평의회에 봉한 펌프 부품 상자와 시민권 명부를 나란히 올린다. 복구복무 등록을 대가로 요구하는 거래를 돌려보낸 뒤 김나율에게 거부한 공방의 교대 명단을 넘겨 표결 근거로 남긴다.",
-  "sources": [
-    "Cast-State-02",
-    "Core-Characters"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": [
-      {
-        "from": "최한결",
-        "type": "계약",
-        "to": "강민서",
-        "basis": "펌프·차륜 부품 공급 계약"
-      },
-      {
-        "from": "정시우",
-        "type": "사제",
-        "to": "강민서",
-        "basis": "제작 규격을 중재자에게 사제로 배움"
-      },
-      {
-        "from": "김나율",
-        "type": "계약",
-        "to": "강민서",
-        "basis": "교환 설계를 조합 현장에서 집행"
-      },
-      {
-        "from": "이강묵",
-        "type": "경쟁",
-        "to": "강민서",
-        "basis": "군수 독점과 중재 권한을 겨룸"
-      },
-      {
-        "from": "박소언",
-        "type": "계약",
-        "to": "강민서",
-        "basis": "공정 분할을 건물조합에서 받침"
-      },
-      {
-        "from": "박하율",
-        "type": "계약",
-        "to": "강민서",
-        "basis": "필요 부품을 서남 규격으로 공급받음"
-      },
-      {
-        "from": "신보람",
-        "type": "계약",
-        "to": "강민서",
-        "basis": "시민권 연대를 가족 회의에서 지지"
-      },
-      {
-        "from": "윤초아",
-        "type": "계약",
-        "to": "강민서",
-        "basis": "복구복무 시민권 문안을 참고"
-      },
-      {
-        "from": "조우찬",
-        "type": "계약",
-        "to": "강민서",
-        "basis": "수리 규격을 작업반에 적용"
-      },
-      {
-        "from": "여시온",
-        "type": "계약",
-        "to": "강민서",
-        "basis": "강민서의 규격맹 평의회 선언을 구로 골목에 붙이며"
-      },
-      {
-        "from": "란민준",
-        "type": "계약",
-        "to": "강민서",
-        "basis": "강민서의 자발적 성인 복구복무 문안을 참고하며"
-      },
-      {
-        "from": "단건우",
-        "type": "계약",
-        "to": "강민서",
-        "basis": "강민서의 수리 규격을 문안에 옮기며"
-      },
-      {
-        "from": "근우람",
-        "type": "맹세",
-        "to": "강민서",
-        "basis": "강민서의 복구복무 시민권 연대를 증언의 바탕으로 삼고"
-      }
-    ]
-  }
+  ]
 }

@@ -1,385 +1,105 @@
 {
   "id": "person-0320",
   "name": "근솔이",
-  "title": "중립시장 경매 유찰 관계자",
-  "position": "중립시장 경매 유찰 관계자",
+  "title": "분대장",
+  "position": "분대장 · 망우역",
   "characterId": "K319",
-  "rank": "호송원",
+  "rank": "중사",
   "commonTier": "T5",
-  "occupation": "시장 유찰 시각·최고가 게시",
+  "occupation": "징집 보병",
   "gender": "남성",
   "stage": "S3",
-  "state": "S12",
-  "stateName": "신내운수",
-  "sourceRoute": "/world/Cast-State-12#인물-근솔이",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0320",
   "birthDate": "2085-02-01",
   "birthday": "02-01",
   "age": 41,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-12.json#/content/248"
-  ],
-  "familyTree": {
-    "personId": "K319",
-    "nodes": [
-      {
-        "id": "K319",
-        "personId": "K319",
-        "kind": "person",
-        "name": "근솔이",
-        "birthDate": "2085-02-01",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K319"
-          },
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-근솔이-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 노량진 선창에서 자랐다. 중립시장 경매 유찰 관계자 자리는 저울 재점검 공개로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-근솔이-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0320"
-      },
-      {
-        "id": "FH-K319-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "근승석",
-        "lineage": {
-          "surname": "근",
-          "bongwan": "청주",
-          "clan": "adfc-ccad-c8fc"
-        },
-        "birthDate": "2055-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-근솔이-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2093,
-            "summary": "근승석은 노량진 선창에서 시장 유찰 시각·최고가 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-근솔이-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K319-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "근승준",
-        "lineage": {
-          "surname": "근",
-          "bongwan": "청주",
-          "clan": "adfc-ccad-c8fc"
-        },
-        "birthDate": "2025-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-근솔이-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "근승준은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-근솔이-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K319-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임준원",
-        "birthDate": "2055-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-근솔이-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2093,
-            "summary": "임준원은 노량진 선창에서 시장 유찰 시각·최고가 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-근솔이-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K319-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오준준",
-        "birthDate": "2025-02-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-근솔이-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오준준은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-근솔이-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K319-P-01:K319:biological",
-        "from": "FH-K319-P-01",
-        "to": "K319",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-근솔이-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K319-P-02:FH-K319-P-01:biological",
-        "from": "FH-K319-P-02",
-        "to": "FH-K319-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-근솔이-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K319-M-01:K319:biological",
-        "from": "FH-K319-M-01",
-        "to": "K319",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-근솔이-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K319-M-02:FH-K319-M-01:biological",
-        "from": "FH-K319-M-02",
-        "to": "FH-K319-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-근솔이-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "adfc-ccad-c8fc",
+    "name": "청주 근씨",
+    "crest": "clan-crests/adfc-ccad-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "근솔이의 기재 사항 군복무 칸에는 중랑구 부대 분대장, 중사라고 적혀 있고, 나이는 마흔한 살이다. 그의 분대는 망우역 출입구 경비와 망우 매장지로 가는 썰매 행렬 호위를 맡는다. 그는 행렬이 지상에 머무는 시간을 손목에 묶은 끈 매듭으로 세고, 매듭이 다 풀리기 전에 행렬을 돌려세운다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "분대장",
+    "품계": "중사",
+    "생업": "징집 보병",
+    "일하는 역": "망우역",
+    "잠자는 역": "망우역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "근솔이의 기재 사항 군복무 칸에는 중랑구 부대 분대장, 중사라고 적혀 있고, 나이는 마흔한 살이다. 그의 분대는 망우역 출입구 경비와 망우 매장지로 가는 썰매 행렬 호위를 맡는다. 그는 행렬이 지상에 머무는 시간을 손목에 묶은 끈 매듭으로 세고, 매듭이 다 풀리기 전에 행렬을 돌려세운다.",
+    "관직": "직함 분대장. 직위 분대장 · 망우역. 품계 중사. 일하는 역 망우역."
+  },
+  "values": {
+    "권위": 35,
+    "개방": -25,
+    "무력": 5,
+    "물질": 5,
+    "공동": 25,
+    "원칙": 20,
+    "공개": -10,
+    "자격": 30,
+    "분산": -15,
+    "변혁": -30
+  },
+  "desire": {
+    "갈망": 25,
+    "독점": -20,
+    "위험": -25,
+    "과시": 30,
+    "지속": -10,
+    "지향": "유동",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0320",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 4,
         "effective": 4
       },
-      "strategy": {
-        "base": 6,
-        "effective": 6
+      "martial": {
+        "base": 10,
+        "effective": 10
       },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
+      "stewardship": {
+        "base": 4,
+        "effective": 4
       },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 9,
-        "effective": 9
-      },
-      "learning": {
-        "base": 7,
-        "effective": 7
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "intrigue": {
         "base": 5,
         "effective": 5
-      }
-    },
-    "skills": [
-      {
-        "id": "k319-failed-auction-item-review",
-        "name": {
-          "ko": "유찰 품목 대조",
-          "en": "Failed auction item review"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "k319-priority",
-        "name": {
-          "ko": "선매보다 공개 재경매",
-          "en": "Public reauction before preemption"
-        },
-        "description": {
-          "ko": "근솔이는 군수 입찰을 봉하고 유찰 시각과 최고가를 공개했다. 외부 유찰 원장과 품목을 비교하되 낙찰 결과는 미확인이다.",
-          "en": "Geun Sori sealed military bids and published failed auction times and top offers, comparing external items without a confirmed sale."
-        },
-        "behavior": {
-          "ko": "유찰 시각과 최고가를 벽에 적고, 무기 문장이 찍힌 입찰서는 복용의 시장 게시 전까지 봉한다.",
-          "en": "Office. Rank: convoy hand. Title: neutral market auction failed-bid party. She wrote the failed-bid hours and top bids on the wall and sealed any bid sheet stamped with a weapons clause until Bok Yong's market posting."
-        },
-        "stress": {
-          "ko": "유찰 기록이 지워진 뒤 자신이 없는 낙찰의 보증인이 되는 것.",
-          "en": "Fear. That after the failed-bid records were erased she would become the guarantor of auctions she never saw."
-        },
-        "relationship": {
-          "ko": "복용의 중립시장 시세와 유찰 종을 맞추고, 흥예나의 가락 유찰 원장과 품목을 비교한다. 오해린의 시세 방송은 시장 시간에만 참고한다.",
-          "en": "Relations. Matched the failed-bid bell with Bok Yong's neutral market prices and compared items with Heung Yena's Garak failed-bid ledger. Consulted O Haerin's price broadcasts only at market hours."
-        },
-        "effects": []
       },
-      {
-        "id": "k319-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 호송원. 직함은 중립시장 경매 유찰 관계자. 유찰 시각과 최고가를 벽에 적고, 무기 문장이 찍힌 입찰서는 복용의 시장 게시 전까지 봉한다.",
-          "en": "Office. Rank: convoy hand. Title: neutral market auction failed-bid party. She wrote the failed-bid hours and top bids on the wall and sealed any bid sheet stamped with a weapons clause until Bok Yong's market posting."
-        },
-        "stress": {
-          "ko": "공포. 유찰 기록이 지워진 뒤 자신이 없는 낙찰의 보증인이 되는 것.",
-          "en": "Fear. That after the failed-bid records were erased she would become the guarantor of auctions she never saw."
-        },
-        "relationship": {
-          "ko": "관계. 복용의 중립시장 시세와 유찰 종을 맞추고, 흥예나의 가락 유찰 원장과 품목을 비교한다. 오해린의 시세 방송은 시장 시간에만 참고한다.",
-          "en": "Relations. Matched the failed-bid bell with Bok Yong's neutral market prices and compared items with Heung Yena's Garak failed-bid ledger. Consulted O Haerin's price broadcasts only at market hours."
-        },
-        "effects": []
+      "learning": {
+        "base": 4,
+        "effective": 4
+      },
+      "prowess": {
+        "base": 11,
+        "effective": 11
       }
-    ],
-    "narrative": {
-      "ko": "근솔이는 군수 입찰을 봉하고 유찰 시각과 최고가를 공개했다. 외부 유찰 원장과 품목을 비교하되 낙찰 결과는 미확인이다.",
-      "en": "Geun Sori sealed military bids and published failed auction times and top offers, comparing external items without a confirmed sale."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,79 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "adfc-ccad-c8fc",
-    "name": "청주 근씨",
-    "crest": "clan-crests/adfc-ccad-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -10,
-    "개방": 30,
-    "무력": -30,
-    "물질": 10,
-    "공동": 20,
-    "원칙": 0,
-    "공개": 15,
-    "자격": 15,
-    "분산": 35,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 25,
-    "독점": -20,
-    "위험": -25,
-    "과시": 30,
-    "지속": -10,
-    "지향": "유동",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "시장 유찰 시각·최고가 게시",
-    "소속": "신내운수",
-    "품계": "호송원",
-    "직함": "중립시장 경매 유찰 관계자",
-    "가치관": "권위 −10 | 개방 30 | 무력 −30 | 물질 10 | 공동 20 | 원칙 0 | 공개 15 | 자격 15 | 분산 35 | 변혁 −10",
-    "욕망": "갈망 25 | 독점 −20 | 위험 −25 | 과시 30 | 지속 −10 | 지향 유동 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2085-02-01에 태어났다. 노량진 선창에서 자랐다. 2126년 개막에는 중립시장 경매 유찰 관계자 당직을 맡으며, 직위 인수 기록에는 저울 재점검 공개로 열렸다이 남아 있다.\n- 상봉1동의 망우 환승 대기열·환자·화물 구분·중량·송장·시세·공개 증언 기록대가 근솔이의 시장 유찰 시각·최고가 게시 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
-    "관직": "품계 호송원. 직함은 중립시장 경매 유찰 관계자. 유찰 시각과 최고가를 벽에 적고, 무기 문장이 찍힌 입찰서는 복용의 시장 게시 전까지 봉한다.",
-    "일화": "무기 문장이 찍힌 입찰서가 유찰된 응급 물자 칸을 통째로 사겠다며 들어온다. 근솔이는 입찰서를 봉해 복용의 시장 게시를 기다리게 하고, 유찰 시각과 최고가를 벽에 적은 다음 흥예나의 가락 유찰 원장과 품목을 비교한다.",
-    "관계": "복용의 중립시장 시세와 유찰 종을 맞추고, 흥예나의 가락 유찰 원장과 품목을 비교한다. 오해린의 시세 방송은 시장 시간에만 참고한다.",
-    "야망": "유찰된 응급 물자 칸을 공개 재경매로만 풀어 외부 선매가 바닥 시세를 통째로 사지 못하게 하려 한다.",
-    "공포": "유찰 기록이 지워진 뒤 자신이 없는 낙찰의 보증인이 되는 것.",
-    "개입": "유찰 원장을 공개해 선매를 막거나, 빈 저울에 외부 입찰을 앉힐 수 있다."
-  },
-  "biography": "2085-02-01생인 근솔이는 유찰 종소리보다 빈 저울을 오래 보고, 군수 문장 입찰을 시세로 포장하는 중개인을 쫓아낸다. 외상 장부를 사람 얼굴보다 먼저 읽는다.\n\n- 생업: 시장 유찰 시각·최고가 게시\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 중립시장 경매 유찰 관계자\n**생애.** 2085-02-01에 태어났다. 노량진 선창에서 자랐다. 2126년 개막에는 중립시장 경매 유찰 관계자 당직을 맡으며, 직위 인수 기록에는 저울 재점검 공개로 열렸다이 남아 있다.\n- 상봉1동의 망우 환승 대기열·환자·화물 구분·중량·송장·시세·공개 증언 기록대가 근솔이의 시장 유찰 시각·최고가 게시 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 호송원. 직함은 중립시장 경매 유찰 관계자. 유찰 시각과 최고가를 벽에 적고, 무기 문장이 찍힌 입찰서는 복용의 시장 게시 전까지 봉한다.\n\n**일화.** 무기 문장이 찍힌 입찰서가 유찰된 응급 물자 칸을 통째로 사겠다며 들어온다. 근솔이는 입찰서를 봉해 복용의 시장 게시를 기다리게 하고, 유찰 시각과 최고가를 벽에 적은 다음 흥예나의 가락 유찰 원장과 품목을 비교한다.\n\n**관계.** 복용의 중립시장 시세와 유찰 종을 맞추고, 흥예나의 가락 유찰 원장과 품목을 비교한다. 오해린의 시세 방송은 시장 시간에만 참고한다.\n\n**야망.** 유찰된 응급 물자 칸을 공개 재경매로만 풀어 외부 선매가 바닥 시세를 통째로 사지 못하게 하려 한다.\n\n**공포.** 유찰 기록이 지워진 뒤 자신이 없는 낙찰의 보증인이 되는 것.\n\n**개입.** 유찰 원장을 공개해 선매를 막거나, 빈 저울에 외부 입찰을 앉힐 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 30 | 무력 −30 | 물질 10 | 공동 20 | 원칙 0 | 공개 15 | 자격 15 | 분산 35 | 변혁 −10\n- 욕망: 갈망 25 | 독점 −20 | 위험 −25 | 과시 30 | 지속 −10 | 지향 유동 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-12"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "근솔이",
-        "type": "계약",
-        "to": "복용",
-        "basis": "복용의 중립시장 시세와 유찰 종을 맞추고"
-      },
-      {
-        "from": "근솔이",
-        "type": "계약",
-        "to": "흥예나",
-        "basis": "흥예나의 가락 유찰 원장과 품목을 비교한다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "흥예나",
-        "type": "계약",
-        "to": "근솔이",
-        "basis": "근솔이의 신내 유찰 원장과 품목을 비교한다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

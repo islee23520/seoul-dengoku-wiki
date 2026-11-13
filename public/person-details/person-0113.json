@@ -1,406 +1,133 @@
 {
   "id": "person-0113",
   "name": "엄미래",
-  "title": "유언 증거 호송 전령",
-  "position": "유언 증거 호송 전령",
+  "title": "정비공",
+  "position": "정비공 · 잠실역",
   "characterId": "K112",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "유언 증거 봉함 호송",
+  "rank": "정비공",
+  "commonTier": "T5",
+  "occupation": "이식 정비",
   "gender": "여성",
   "stage": "S3",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-엄미래",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0113",
   "birthDate": "2078-08-21",
   "birthday": "08-21",
   "age": 48,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/269",
-    "lore/characters/Cast-State-04.json#/content/271"
-  ],
-  "familyTree": {
-    "personId": "K112",
-    "nodes": [
-      {
-        "id": "K112",
-        "personId": "K112",
-        "kind": "person",
-        "name": "엄미래",
-        "birthDate": "2078-08-21",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K112"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-엄미래-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 유언 증거 호송 전령 자리는 무표 출발 열차 저지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-엄미래-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0113"
-      },
-      {
-        "id": "FH-K112-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "엄승윤",
-        "lineage": {
-          "surname": "엄",
-          "bongwan": "영월",
-          "clan": "c5c4-c601-c6d4"
-        },
-        "birthDate": "2048-08-21",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-엄미래-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2086,
-            "summary": "엄승윤은 신내 환승 당직에서 유언 증거 봉함 호송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-엄미래-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K112-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "엄승우",
-        "lineage": {
-          "surname": "엄",
-          "bongwan": "영월",
-          "clan": "c5c4-c601-c6d4"
-        },
-        "birthDate": "2018-08-21",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-엄미래-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "엄승우는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-엄미래-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K112-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승찬",
-        "birthDate": "2048-08-21",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-엄미래-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2086,
-            "summary": "윤승찬은 신내 환승 당직에서 유언 증거 봉함 호송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-엄미래-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K112-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한승성",
-        "birthDate": "2018-08-21",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-엄미래-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한승성은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-엄미래-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K112-P-01:K112:biological",
-        "from": "FH-K112-P-01",
-        "to": "K112",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-엄미래-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K112-P-02:FH-K112-P-01:biological",
-        "from": "FH-K112-P-02",
-        "to": "FH-K112-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-엄미래-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K112-M-01:K112:biological",
-        "from": "FH-K112-M-01",
-        "to": "K112",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-엄미래-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K112-M-02:FH-K112-M-01:biological",
-        "from": "FH-K112-M-02",
-        "to": "FH-K112-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-엄미래-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c5c4-c601-c6d4",
+    "name": "영월 엄씨",
+    "crest": "clan-crests/c5c4-c601-c6d4.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "엄미래는 교주의 집 정비대에서 일하는 정비공이다. 그 정비대는 송파 곁집이 아니라 교주가 직접 쥐는 곳이라, 그는 잠실에 살면서도 송파의 순번에 이름이 없다. 부위는 둘이고, 소매를 늘 팔꿈치까지 묶어 올린다. 무엇을 손보느냐고 묻는 사람에게는 \"고쳐 쓰자\"고만 답한다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "정비공",
+    "품계": "정비공",
+    "생업": "이식 정비",
+    "일하는 역": "잠실역",
+    "잠자는 역": "잠실역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "엄미래는 교주의 집 정비대에서 일하는 정비공이다. 그 정비대는 송파 곁집이 아니라 교주가 직접 쥐는 곳이라, 그는 잠실에 살면서도 송파의 순번에 이름이 없다. 부위는 둘이고, 소매를 늘 팔꿈치까지 묶어 올린다. 무엇을 손보느냐고 묻는 사람에게는 \"고쳐 쓰자\"고만 답한다.",
+    "관직": "직함 정비공. 직위 정비공 · 잠실역. 품계 정비공. 일하는 역 잠실역."
+  },
+  "values": {
+    "권위": 25,
+    "개방": 0,
+    "무력": 0,
+    "물질": -30,
+    "공동": 45,
+    "원칙": -5,
+    "공개": -40,
+    "자격": -15,
+    "분산": -15,
+    "변혁": 50
+  },
+  "desire": {
+    "갈망": 50,
+    "독점": -20,
+    "위험": -15,
+    "과시": -25,
+    "지속": 0,
+    "지향": "유동",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0113",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "엄미래",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K1018",
+    "name": "고예진",
+    "courtId": "court:K1018",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
+      "martial": {
         "base": 3,
         "effective": 3
       },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+      "stewardship": {
+        "base": 7,
+        "effective": 7
+      },
+      "intrigue": {
+        "base": 6,
+        "effective": 6
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "message",
-        "name": {
-          "ko": "봉함 전갈 전달·대조",
-          "en": "Sealed-message delivery and checks"
-        },
-        "rating": 60
-      },
-      {
-        "id": "closure",
-        "name": {
-          "ko": "위험 구간 폐쇄",
-          "en": "Hazardous-route closure"
-        },
-        "rating": 45
-      }
-    ],
-    "traits": [
-      {
-        "id": "keep-sealed-until-arrival-is-confirmed",
-        "name": {
-          "ko": "도착 확인 전 봉함 유지",
-          "en": "Keep Sealed Until Arrival Is Confirmed"
-        },
-        "description": {
-          "ko": "엄미래는 증거 봉함을 도착 확인 전까지 유지해야 하는 전달 책임으로 여긴다.",
-          "en": "Eom Mirae treats keeping evidence sealed until arrival confirmation as a delivery responsibility."
-        },
-        "behavior": {
-          "ko": "봉함 매듭이 느슨하면 출발하지 않고 송신 검증의 도착 확인이 오기 전에는 봉함을 풀지 않는다.",
-          "en": "They do not depart with loose seal knots or unseal evidence before arrival confirmation from transmission verification."
-        },
-        "stress": {
-          "ko": "환승 대합실에서 가방이 열려 사본 한 장만 남을 우려가 커지면 봉함 상태와 확인 절차를 더 엄격히 점검할 수 있다.",
-          "en": "If the bag risks being opened in a transfer concourse and leaving only one copy, they may check seals and confirmation procedures more strictly."
-        },
-        "relationship": {
-          "ko": "최지우의 원본 검증 시각에 맞추되 전달 상대가 도착 확인 없이 개봉을 요구하면 거절할 수 있다.",
-          "en": "They may coordinate with Choi Jiwoo's original-verification time but refuse a recipient's request to open evidence without arrival confirmation."
-        },
-        "effects": []
-      },
-      {
-        "id": "neutral-convoy-order",
-        "name": {
-          "ko": "호송 순서 중립",
-          "en": "Neutral Convoy Order"
-        },
-        "description": {
-          "ko": "엄미래는 증거의 호송 순서가 특정 유언의 진본 지위를 결정해서는 안 된다고 여긴다.",
-          "en": "Eom Mirae believes evidence convoy order must not determine which will is treated as authentic."
-        },
-        "behavior": {
-          "ko": "당회와 기록감사의 추첨 순번을 따르고 세 유언과 음성 원본이 같은 날 같은 심사석에 닿도록 하려 한다.",
-          "en": "They follow the assembly and record auditor's lottery order and seek same-day delivery of all three wills and the audio original to one review panel."
-        },
-        "stress": {
-          "ko": "한 사본만 남아 폭동의 불씨가 될 우려가 있으면 먼저 방송하라는 요구보다 증거의 동등한 도착을 우선할 수 있다.",
-          "en": "If a sole surviving copy could ignite unrest, they may prioritize equal evidence arrival over demands to broadcast one first."
-        },
-        "relationship": {
-          "ko": "표산하의 전령로를 빌리면서도 특정 진본의 선행 전달을 요구하는 상대에게는 추첨과 사실 전달의 원칙을 지킬 수 있다.",
-          "en": "They may borrow Pyo Sanha's messenger route while upholding lottery order and factual reporting against demands to deliver a favored original first."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "증거 호송의 도착 확인을 기다리고 위험 구간을 폐쇄했다. 봉함 전달과 경로 판단을 평가하며 전투 호위는 원문에 없다.",
-      "en": "He waits for arrival verification before opening evidence and closed a hazardous section. Sealed delivery and route judgment are supported, not combat escort."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -426,83 +153,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-43130-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K112",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:kingdom-s04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-43130-S04",
-          "directLiegePersonId": "K423"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c5c4-c601-c6d4",
-    "name": "영월 엄씨",
-    "crest": "clan-crests/c5c4-c601-c6d4.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 0,
-    "개방": 15,
-    "무력": -10,
-    "물질": 20,
-    "공동": 25,
-    "원칙": 5,
-    "공개": 5,
-    "자격": 20,
-    "분산": 15,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 50,
-    "독점": -20,
-    "위험": -15,
-    "과시": -25,
-    "지속": 0,
-    "지향": "유동",
-    "결합": "다자"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "유언 증거 봉함 호송",
-    "품계": "교사",
-    "직함": "유언 증거 호송 전령",
-    "가치관": "권위 0 | 개방 15 | 무력 −10 | 물질 20 | 공동 25 | 원칙 5 | 공개 5 | 자격 20 | 분산 15 | 변혁 5",
-    "욕망": "갈망 50 | 독점 −20 | 위험 −15 | 과시 −25 | 지속 0 | 지향 유동 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2126년 세대. 엄미래는 신내 환승 당직에서 자랐다. 엄미래는 무표 출발 열차 저지로 유언 증거 호송 전령 자리를 맡았다.\n- 엄미래의 유언 증거 호송 전령 업무는 성수2가3동과 연결된다.",
-    "관직": "품계 교사. 직함은 유언 증거 호송 전령. 호송 순번은 당회와 기록감사가 추첨하고, 송신 검증의 도착 확인이 오기 전에는 봉함을 풀지 않는다.",
-    "일화": "2125년 엄미래는 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 유언 증거 호송 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "평의회 전령로를 증거 호송에 빌리고, 최지우의 원본 검증 시각에 맞추며, 임초원이 읽을 수 있는 정비일지 조각을 같은 가방에 넣지 않기로 맹세한다.",
-    "야망": "세 장의 유언과 음성 원본이 같은 날 같은 심사석에 닿게 해, 어느 강국도 호송 순서로 진본을 고르지 못하게 한다.",
-    "공포": "엄미래는 전령 가방이 환승 대합실에서 열리고, 한 장만 남은 사본이 폭동의 불씨가 되는 상황을 두려워한다.",
-    "개입": "환승 구간을 열어 봉함 가방을 지키거나, 가방에서 빠진 한 장을 찾아 전령을 구하거나 실격시킬 수 있다."
-  },
-  "biography": "봉함 끈의 매듭이 느슨하면 출발하지 않고, 진본을 먼저 방송하라는 쪽지를 가방 밖에 두지 않는다. 경로는 짧게, 증언은 사실만 전한다.\n\n- 소속: 명부교회\n- 생업: 유언 증거 봉함 호송\n- 품계: 교사\n- 직함: 유언 증거 호송 전령\n**생애.** 2126년 세대. 엄미래는 신내 환승 당직에서 자랐다. 엄미래는 무표 출발 열차 저지로 유언 증거 호송 전령 자리를 맡았다.\n- 엄미래의 유언 증거 호송 전령 업무는 성수2가3동과 연결된다.\n\n**관직.** 품계 교사. 직함은 유언 증거 호송 전령. 호송 순번은 당회와 기록감사가 추첨하고, 송신 검증의 도착 확인이 오기 전에는 봉함을 풀지 않는다.\n\n**일화.** 2125년 엄미래는 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 유언 증거 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 평의회 전령로를 증거 호송에 빌리고, 최지우의 원본 검증 시각에 맞추며, 임초원이 읽을 수 있는 정비일지 조각을 같은 가방에 넣지 않기로 맹세한다.\n\n**야망.** 세 장의 유언과 음성 원본이 같은 날 같은 심사석에 닿게 해, 어느 강국도 호송 순서로 진본을 고르지 못하게 한다.\n\n**공포.** 엄미래는 전령 가방이 환승 대합실에서 열리고, 한 장만 남은 사본이 폭동의 불씨가 되는 상황을 두려워한다.\n\n**개입.** 환승 구간을 열어 봉함 가방을 지키거나, 가방에서 빠진 한 장을 찾아 전령을 구하거나 실격시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 15 | 무력 −10 | 물질 20 | 공동 25 | 원칙 5 | 공개 5 | 자격 20 | 분산 15 | 변혁 5\n- 욕망: 갈망 50 | 독점 −20 | 위험 −15 | 과시 −25 | 지속 0 | 지향 유동 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "엄미래",
-        "type": "계약",
-        "to": "최지우",
-        "basis": "최지우의 원본 검증 시각에 맞추며"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

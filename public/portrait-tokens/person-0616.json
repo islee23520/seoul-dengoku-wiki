@@ -3,26 +3,27 @@
   "personId": "person-0616",
   "characterId": "K616",
   "name": "성달현",
-  "stateId": "S01",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "배급구역 서기"
+    "role": "취수구지기 · 영등포역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "short pin-curled hair",
-    "upper": "mustard ochre plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
-    "outfit": "mustard ochre plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+    "upper": "금빛 깃끈을 두른 겨자색 짧은 합성 섬유 작업 겉옷, 표지 없이 대의 빛깔 끈만 닮",
+    "outfit": "금빛 깃끈을 두른 겨자색 짧은 합성 섬유 작업 겉옷, 표지 없이 대의 빛깔 끈만 닮",
     "palette": [
       "mustard ochre",
-      "sand beige"
+      "sand beige",
+      "dull gold"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "sand beige straight wool trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "sand beige synthetic work trousers with patched knees",
+    "footwear": "thick-soled waterproofed work boots",
+    "accessories": "pipe wrench on a tool-loop belt"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -173,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "knitted synthetic watch cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "mustard ochre plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+        "value": "금빛 깃끈을 두른 겨자색 짧은 합성 섬유 작업 겉옷, 표지 없이 대의 빛깔 끈만 닮",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "sand beige straight wool trousers",
+        "value": "sand beige synthetic work trousers with patched knees",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "thick-soled waterproofed work boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "collar edged with a gold city cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "pipe wrench on a tool-loop belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "dull steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "steel, synthetic webbing",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "worn at the waist",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "adjustable wrench",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 성달현, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average; skin: light olive. upper garment: mustard ochre plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 성달현, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average; skin: light olive. headwear: knitted synthetic watch cap; upper garment: 금빛 깃끈을 두른 겨자색 짧은 합성 섬유 작업 겉옷, 표지 없이 대의 빛깔 끈만 닮; neckline: collar edged with a gold city cord. accessories: pipe wrench on a tool-loop belt; worn as worn at the waist. color palette: mustard ochre, sand beige, dull gold. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 성달현, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average; skin: light olive; average adult female height. upper garment: mustard ochre plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 성달현, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average; skin: light olive; average adult female height. headwear: knitted synthetic watch cap; upper garment: 금빛 깃끈을 두른 겨자색 짧은 합성 섬유 작업 겉옷, 표지 없이 대의 빛깔 끈만 닮; neckline: collar edged with a gold city cord; lower garment: sand beige synthetic work trousers with patched knees; footwear: thick-soled waterproofed work boots. accessories: pipe wrench on a tool-loop belt; worn as worn at the waist. color palette: mustard ochre, sand beige, dull gold. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 성달현, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average; skin: light olive; average adult female height. upper garment: mustard ochre plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 성달현, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average; skin: light olive; average adult female height. headwear: knitted synthetic watch cap; upper garment: 금빛 깃끈을 두른 겨자색 짧은 합성 섬유 작업 겉옷, 표지 없이 대의 빛깔 끈만 닮; neckline: collar edged with a gold city cord; lower garment: sand beige synthetic work trousers with patched knees; footwear: thick-soled waterproofed work boots. accessories: pipe wrench on a tool-loop belt; worn as worn at the waist. color palette: mustard ochre, sand beige, dull gold. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 성달현, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average; skin: light olive; average adult female height. upper garment: mustard ochre plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 성달현, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average; skin: light olive; average adult female height. headwear: knitted synthetic watch cap; upper garment: 금빛 깃끈을 두른 겨자색 짧은 합성 섬유 작업 겉옷, 표지 없이 대의 빛깔 끈만 닮; neckline: collar edged with a gold city cord; lower garment: sand beige synthetic work trousers with patched knees; footwear: thick-soled waterproofed work boots. accessories: pipe wrench on a tool-loop belt; worn as worn at the waist. color palette: mustard ochre, sand beige, dull gold. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 성달현, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average; skin: light olive; average adult female height. upper garment: mustard ochre plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: mustard ochre, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 성달현, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: thin straight lips; dusty rose lips. short pin-curled hair; dark brown with grey at the temples hair; short length. build: average; skin: light olive; average adult female height. headwear: knitted synthetic watch cap; upper garment: 금빛 깃끈을 두른 겨자색 짧은 합성 섬유 작업 겉옷, 표지 없이 대의 빛깔 끈만 닮; neckline: collar edged with a gold city cord; lower garment: sand beige synthetic work trousers with patched knees; footwear: thick-soled waterproofed work boots. accessories: pipe wrench on a tool-loop belt; worn as worn at the waist. color palette: mustard ochre, sand beige, dull gold. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

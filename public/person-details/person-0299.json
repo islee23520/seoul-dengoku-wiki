@@ -1,386 +1,142 @@
 {
   "id": "person-0299",
   "name": "전미리",
-  "title": "의료 조원",
-  "position": "의료 조원",
+  "title": "법무부 장관",
+  "position": "법무부 장관 · 광화문역",
   "characterId": "K298",
-  "rank": "호송원",
-  "commonTier": "T5",
-  "occupation": "환자 중증도·이송 시각 기록",
+  "rank": "장관",
+  "commonTier": "T2",
+  "occupation": "부처 행정",
   "gender": "여성",
   "stage": "S1",
-  "state": "S12",
-  "stateName": "신내운수",
-  "sourceRoute": "/world/Cast-State-12#인물-전미리",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0299",
   "birthDate": "2080-03-07",
   "birthday": "03-07",
   "age": 46,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-12.json#/content/61",
-    "lore/characters/Cast-State-12.json#/content/63"
-  ],
-  "familyTree": {
-    "personId": "K298",
-    "nodes": [
-      {
-        "id": "K298",
-        "personId": "K298",
-        "kind": "person",
-        "name": "전미리",
-        "birthDate": "2080-03-07",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K298"
-          },
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-전미리-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 의료 조원 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-전미리-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0299"
-      },
-      {
-        "id": "FH-K298-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "전승석",
-        "lineage": {
-          "surname": "전",
-          "bongwan": "옥천",
-          "clan": "c804-c625-cc9c-5168"
-        },
-        "birthDate": "2050-03-07",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-전미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2088,
-            "summary": "전승석은 제기동 의무소에서 환자 중증도·이송 시각 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-전미리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K298-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "전승준",
-        "lineage": {
-          "surname": "전",
-          "bongwan": "옥천",
-          "clan": "c804-c625-cc9c-5168"
-        },
-        "birthDate": "2020-03-07",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-전미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "전승준은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-전미리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K298-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조현솔",
-        "birthDate": "2050-03-07",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-전미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2088,
-            "summary": "조현솔은 제기동 의무소에서 환자 중증도·이송 시각 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-전미리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K298-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김현도",
-        "birthDate": "2020-03-07",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-전미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "김현도는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-전미리-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K298-P-01:K298:biological",
-        "from": "FH-K298-P-01",
-        "to": "K298",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-전미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K298-P-02:FH-K298-P-01:biological",
-        "from": "FH-K298-P-02",
-        "to": "FH-K298-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-전미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K298-M-01:K298:biological",
-        "from": "FH-K298-M-01",
-        "to": "K298",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-전미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K298-M-02:FH-K298-M-01:biological",
-        "from": "FH-K298-M-02",
-        "to": "FH-K298-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-전미리-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c804-c625-cc9c-5168",
+    "name": "옥천 전씨",
+    "crest": "clan-crests/c804-c625-cc9c-5168.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "법무부 장관 전미리는 옥천 전씨이고 마흔여섯 살이며, 종신 대통령 윤서린이 결재한 임명장으로 그 자리에 올랐다. 정부서울청사에서 그녀는 말소 심의에 오른 사건마다 심의관 셋의 기록을 읽고, 대통령의 결재로 올릴지 노역 처분으로 낮출지 의견을 적는다. 의사로 일한 해가 길어서, 그녀는 노역 처분의 날수를 정하기 전에 그 사람의 몸이 출입구 굴 열기를 견딜 수 있는지 진료 기록부터 찾아보게 한다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "법무부 장관",
+    "품계": "장관",
+    "생업": "부처 행정",
+    "일하는 역": "광화문역",
+    "잠자는 역": "광화문역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "법무부 장관 전미리는 옥천 전씨이고 마흔여섯 살이며, 종신 대통령 윤서린이 결재한 임명장으로 그 자리에 올랐다. 정부서울청사에서 그녀는 말소 심의에 오른 사건마다 심의관 셋의 기록을 읽고, 대통령의 결재로 올릴지 노역 처분으로 낮출지 의견을 적는다. 의사로 일한 해가 길어서, 그녀는 노역 처분의 날수를 정하기 전에 그 사람의 몸이 출입구 굴 열기를 견딜 수 있는지 진료 기록부터 찾아보게 한다.",
+    "관직": "직함 법무부 장관. 직위 법무부 장관 · 광화문역. 품계 장관. 일하는 역 광화문역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": -5,
+    "무력": 5,
+    "물질": -5,
+    "공동": 30,
+    "원칙": 40,
+    "공개": -10,
+    "자격": 35,
+    "분산": -10,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": 25,
+    "독점": -20,
+    "위험": -10,
+    "과시": -15,
+    "지속": 10,
+    "지향": "유동",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0299",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "전미리",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "전미리",
+        "type": "맹세",
+        "to": "윤서린",
+        "basis": "자신을 법무부 장관으로 임명한 종신 대통령에게 말소 심의의 결재를 올리는 사이"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 7,
-        "effective": 7
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
-      "learning": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "prowess": {
-        "base": 3,
-        "effective": 3
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "endurance": {
+      "stewardship": {
+        "base": 11,
+        "effective": 11
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "k298-prescription-allocation",
-        "name": {
-          "ko": "처방량 배분",
-          "en": "Prescription allocation"
-        },
-        "rating": 60
+        "id": "skill-0299-frost",
+        "name": "동상 치료",
+        "rating": 58
       }
     ],
     "traits": [
       {
-        "id": "k298-priority",
-        "name": {
-          "ko": "중증도 우선",
-          "en": "Severity first"
-        },
-        "description": {
-          "ko": "전미리는 부족한 처방량을 나눠 모두에게 배분했다. 활력 안정 뒤에 배차 요구를 받으며 국적보다 들것 순서를 둔다.",
-          "en": "Jeon Miri divided scarce prescriptions among everyone. She accepts dispatch requests after vital stabilization and puts stretcher order before nationality."
-        },
-        "behavior": {
-          "ko": "중증도 표와 이송 시각을 의료조 당직실에 붙이고, 배차조의 빈 슬롯 요구는 환자 활력이 안정된 뒤에만 받는다.",
-          "en": "Office. Rank: convoy hand. Title: medical assistant. She pasted the severity table and transfer hours in the medical crew's duty room and took the dispatch crew's empty-slot demands only after the patients' vitals were stable."
-        },
-        "stress": {
-          "ko": "환자 칸이 군수 칸으로 오인되어 호송대 전체가 무장 해제를 당하는 것.",
-          "en": "Fear. That the patient cars would be mistaken for munitions cars and the whole convoy squad would be disarmed."
-        },
-        "relationship": {
-          "ko": "장세화와 류은비의 의료동맹을 현장에서 집행하고, 안도한의 배차 독주를 견제하며, 은채윤에게 제기동 수용 병상을 빌려 쓴다.",
-          "en": "Relations. Executed the medical alliance of Jang Sehwa and Ryu Eunbi in the field, checked An Dohan's dispatch solo runs, and borrowed sickbeds from Eun Chaeyun in Jegi-dong."
-        },
-        "effects": []
-      },
-      {
-        "id": "k298-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 호송원. 직함은 의료 조원. 중증도 표와 이송 시각을 의료조 당직실에 붙이고, 배차조의 빈 슬롯 요구는 환자 활력이 안정된 뒤에만 받는다.",
-          "en": "Office. Rank: convoy hand. Title: medical assistant. She pasted the severity table and transfer hours in the medical crew's duty room and took the dispatch crew's empty-slot demands only after the patients' vitals were stable."
-        },
-        "stress": {
-          "ko": "공포. 환자 칸이 군수 칸으로 오인되어 호송대 전체가 무장 해제를 당하는 것.",
-          "en": "Fear. That the patient cars would be mistaken for munitions cars and the whole convoy squad would be disarmed."
-        },
-        "relationship": {
-          "ko": "관계. 장세화와 류은비의 의료동맹을 현장에서 집행하고, 안도한의 배차 독주를 견제하며, 은채윤에게 제기동 수용 병상을 빌려 쓴다.",
-          "en": "Relations. Executed the medical alliance of Jang Sehwa and Ryu Eunbi in the field, checked An Dohan's dispatch solo runs, and borrowed sickbeds from Eun Chaeyun in Jegi-dong."
-        },
+        "id": "trait-0299-steady-hands",
+        "name": "차분한 손",
+        "description": "급할수록 손이 느려진다.",
+        "behavior": "사람의 몸을 먼저 묻고 조문은 나중에 편다.",
+        "stress": "서명이 밀리면 혼자 밤을 새운다.",
+        "relationship": "청사의 심의관들은 그녀가 장부보다 사람을 먼저 본다고 말한다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "전미리는 부족한 처방량을 나눠 모두에게 배분했다. 활력 안정 뒤에 배차 요구를 받으며 국적보다 들것 순서를 둔다.",
-      "en": "Jeon Miri divided scarce prescriptions among everyone. She accepts dispatch requests after vital stabilization and puts stretcher order before nationality."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -418,121 +174,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c804-c625-cc9c-5168",
-    "name": "옥천 전씨",
-    "crest": "clan-crests/c804-c625-cc9c-5168.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -25,
-    "개방": 50,
-    "무력": -30,
-    "물질": 0,
-    "공동": 25,
-    "원칙": 20,
-    "공개": 15,
-    "자격": 20,
-    "분산": 40,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 25,
-    "독점": -20,
-    "위험": -10,
-    "과시": -15,
-    "지속": 10,
-    "지향": "유동",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "환자 중증도·이송 시각 기록",
-    "소속": "신내운수",
-    "품계": "호송원",
-    "직함": "의료 조원",
-    "가치관": "권위 −25 | 개방 50 | 무력 −30 | 물질 0 | 공동 25 | 원칙 20 | 공개 15 | 자격 20 | 분산 40 | 변혁 −5",
-    "욕망": "갈망 25 | 독점 −20 | 위험 −10 | 과시 −15 | 지속 10 | 지향 유동 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2080-03-07에 태어났다. 제기동 의무소에서 자랐다. 2126년 개막에는 의료 조원 당직을 맡으며, 직위 인수 기록에는 가짜 약 봉인으로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 전미리의 환자 중증도·이송 시각 기록 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
-    "관직": "품계 호송원. 직함은 의료 조원. 중증도 표와 이송 시각을 의료조 당직실에 붙이고, 배차조의 빈 슬롯 요구는 환자 활력이 안정된 뒤에만 받는다.",
-    "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 그 기록은 다음 당직의 대조 근거로 남았다.",
-    "관계": "장세화와 류은비의 의료동맹을 현장에서 집행하고, 안도한의 배차 독주를 견제하며, 은채윤에게 제기동 수용 병상을 빌려 쓴다.",
-    "야망": "중랑·망우 응급 이송을 제기동 치료계약과 한 장의 호송증으로 묶어, 호송료 없는 의료 호송을 만든다.",
-    "공포": "환자 칸이 군수 칸으로 오인되어 호송대 전체가 무장 해제를 당하는 것.",
-    "개입": "환자 명부와 무기 적재 기록을 대조하거나, 의료 호송증 초안을 제기동까지 운반할 수 있다."
-  },
-  "biography": "2080-03-07생인 전미리는 부상 등급을 먼저 보고 국적을 나중에 본다. 중립 문구보다 들것 순서를 믿는다.\n\n- 생업: 환자 중증도·이송 시각 기록\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 의료 조원\n**생애.** 2080-03-07에 태어났다. 제기동 의무소에서 자랐다. 2126년 개막에는 의료 조원 당직을 맡으며, 직위 인수 기록에는 가짜 약 봉인으로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 전미리의 환자 중증도·이송 시각 기록 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 호송원. 직함은 의료 조원. 중증도 표와 이송 시각을 의료조 당직실에 붙이고, 배차조의 빈 슬롯 요구는 환자 활력이 안정된 뒤에만 받는다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 그 기록은 다음 당직의 대조 근거로 남았다.\n\n**관계.** 장세화와 류은비의 의료동맹을 현장에서 집행하고, 안도한의 배차 독주를 견제하며, 은채윤에게 제기동 수용 병상을 빌려 쓴다.\n\n**야망.** 중랑·망우 응급 이송을 제기동 치료계약과 한 장의 호송증으로 묶어, 호송료 없는 의료 호송을 만든다.\n\n**공포.** 환자 칸이 군수 칸으로 오인되어 호송대 전체가 무장 해제를 당하는 것.\n\n**개입.** 환자 명부와 무기 적재 기록을 대조하거나, 의료 호송증 초안을 제기동까지 운반할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 50 | 무력 −30 | 물질 0 | 공동 25 | 원칙 20 | 공개 15 | 자격 20 | 분산 40 | 변혁 −5\n- 욕망: 갈망 25 | 독점 −20 | 위험 −10 | 과시 −15 | 지속 10 | 지향 유동 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-12"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "전미리",
-        "type": "계약",
-        "to": "장세화",
-        "basis": "의료동맹을 현장에서 집행"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "우하진",
-        "type": "계약",
-        "to": "전미리",
-        "basis": "우하진은 계절 배차표에서 일반 열차 칸으로 밀려난 의무호송 편을 따로 적어 전미리에게 전한다. 전미리는 환자 중증도와 이송 시각을 확인하고 의료조 당직실에 반영해, 배차표가 바뀌었다고 들것 순서가 지워지지 않게 한다."
-      },
-      {
-        "from": "정다은",
-        "type": "계약",
-        "to": "전미리",
-        "basis": "정다은은 두 배차표에서 엇갈린 의무호송 편을 실제 호송원 서명으로 가려 전미리에게 넘긴다. 전미리는 환자 중증도와 이송 시각을 확인해, 떠나지 않은 편이 도착할 환자를 인계한 것으로 처리되지 않게 한다."
-      },
-      {
-        "from": "남름은",
-        "type": "계약",
-        "to": "전미리",
-        "basis": "남름은은 출발 직전 다시 센 의료열차 환자 명단을 전미리에게 넘긴다. 전미리는 중증도와 이송 시각을 확인해 일반 환승객과 실제 의료칸 환자를 구분하며 들것 순서를 잇는다."
-      },
-      {
-        "from": "국용",
-        "type": "지휘",
-        "to": "전미리",
-        "basis": "전미리의 지휘로 들것 순서를 집행하고"
-      },
-      {
-        "from": "두복",
-        "type": "계약",
-        "to": "전미리",
-        "basis": "전미리와 안도한의 승인 순서 다툼을 쪽지로 나르고"
-      },
-      {
-        "from": "용봉",
-        "type": "계약",
-        "to": "전미리",
-        "basis": "전미리의 들것 순서를 승강장에서 받고"
-      },
-      {
-        "from": "감모",
-        "type": "지휘",
-        "to": "전미리",
-        "basis": "전미리의 의료조 연장을 당직실에서 집행하고"
-      },
-      {
-        "from": "범온결",
-        "type": "맹세",
-        "to": "전미리",
-        "basis": "전미리의 환자 줄을 증인석에서 받치고"
-      },
-      {
-        "from": "창다흰",
-        "type": "계약",
-        "to": "전미리",
-        "basis": "전미리의 중증도 표에 피해자 줄을 올리고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

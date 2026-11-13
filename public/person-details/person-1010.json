@@ -4,521 +4,138 @@
   "title": "",
   "position": "",
   "characterId": "K1010",
-  "rank": "없음",
+  "rank": "등재민",
   "commonTier": "T5",
-  "occupation": "미등록",
+  "occupation": "교육",
   "gender": "남성",
   "stage": "S1",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Core-Characters#신준",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-1010",
   "birthDate": "2114-01-01",
   "birthday": "01-01",
   "age": 12,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Core-Characters.json#/content/160",
-    "lore/characters/Core-Characters.json#/content/161",
-    "lore/characters/Core-Characters.json#/content/164",
-    "lore/characters/Core-Characters.json#/content/165",
-    "lore/chronology/Century-Annals.json#/content/485",
-    "lore/chronology/Scenario-Timeline.json#/content/19",
-    "lore/chronology/Scenario-Timeline.json#/content/22",
-    "lore/chronology/Scenario-Timeline.json#/content/34"
-  ],
-  "familyTree": {
-    "personId": "K1010",
-    "nodes": [
-      {
-        "id": "K1009",
-        "personId": "K1009",
-        "kind": "person",
-        "name": "신종목",
-        "birthDate": "2087-09-18",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K1009"
-          },
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "신종목-p2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "생애. 2119년 11월 동방사 특수회수반 선임 공작원 신종목은 명부 밖 피난민을 데리고 귀환했다. 반의 보고서는 명령 불복종과 지급품 손실을 기록했고, 퇴로를 지킨 반원 일부를 실종으로 처리했다. 2120년 4월 신종목은 특수회수반에서 물러나 아들 신준과 강남구청 생활권으로 옮겼다. 그는 호위·탐사 계약을 맡고 수리한 무전기로 옛 호출부호를 송신했다. 2121년 1월 의무원·주민·보호자의 응답을 기록했다. 귀환망은 2124년 강남구청에서 선정릉과 수서까지 생활권 12곳을 이었다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "신종목-p2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-1009"
-      },
-      {
-        "id": "K1010",
-        "personId": "K1010",
-        "kind": "person",
-        "name": "신준",
-        "birthDate": "2114-01-01",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K1010"
-          },
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "신준-p2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "생애. 신준은 신종목의 아들이다. 2120년 4월 아버지와 강남구청 생활권으로 옮겼다. 폐역 방송과 무전 잡음, 차량 진동이 겹치면 낡은 호출 리듬과 경로의 단편을 떠올린다. 신종목은 그 반응을 현장 기록과 대조하고 신준의 동의와 휴식을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "신준-p2"
-              }
-            ]
-          }
-        ],
-        "generationException": {
-          "reason": "확정 생년월일과 기존 신종목→신준 관계를 보존한다. 30년 간격을 맞추기 위해 관계나 날짜를 바꾸지 않는다.",
-          "sourceRefs": [
-            {
-              "path": "lore/name-pools/cast-birthdays.json"
-            },
-            {
-              "path": "lore/characters/Core-Characters.json",
-              "anchor": "신준-p2"
-            }
-          ]
-        },
-        "detailRoute": "/people/person-1010"
-      },
-      {
-        "id": "FH-K1009-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "신현영",
-        "lineage": {
-          "surname": "신",
-          "bongwan": "고령",
-          "clan": "goryeong-shin"
-        },
-        "birthDate": "2057-09-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "신종목-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2095,
-            "summary": "신현영은 생활권의 공동 거처에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "신종목-p2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1009-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "신현윤",
-        "lineage": {
-          "surname": "신",
-          "bongwan": "고령",
-          "clan": "goryeong-shin"
-        },
-        "birthDate": "2027-09-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "신종목-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2065,
-            "summary": "신현윤은 생활권의 공동 거처에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "신종목-p2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1009-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "신현우",
-        "lineage": {
-          "surname": "신",
-          "bongwan": "고령",
-          "clan": "goryeong-shin"
-        },
-        "birthDate": "1997-09-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "신종목-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "신현우는 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "신종목-p2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1009-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이서수",
-        "birthDate": "2057-09-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "신종목-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2095,
-            "summary": "이서수는 생활권의 공동 거처에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "신종목-p2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1009-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최서희",
-        "birthDate": "2027-09-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "신종목-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2065,
-            "summary": "최서희는 생활권의 공동 거처에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "신종목-p2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1009-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "정서원",
-        "birthDate": "1997-09-18",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "신종목-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정서원은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "신종목-p2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "K1009:K1010:biological",
-        "from": "K1009",
-        "to": "K1010",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "신준-p2"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1009-P-01:K1009:biological",
-        "from": "FH-K1009-P-01",
-        "to": "K1009",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "신종목-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1009-P-02:FH-K1009-P-01:biological",
-        "from": "FH-K1009-P-02",
-        "to": "FH-K1009-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "신종목-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1009-P-03:FH-K1009-P-02:biological",
-        "from": "FH-K1009-P-03",
-        "to": "FH-K1009-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "신종목-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1009-M-01:K1009:biological",
-        "from": "FH-K1009-M-01",
-        "to": "K1009",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "신종목-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1009-M-02:FH-K1009-M-01:biological",
-        "from": "FH-K1009-M-02",
-        "to": "FH-K1009-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "신종목-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1009-M-03:FH-K1009-M-02:biological",
-        "from": "FH-K1009-M-03",
-        "to": "FH-K1009-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "신종목-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": "maternal-parent-unrecorded"
+  "generation": "opening",
+  "clan": {
+    "id": "goryeong-shin",
+    "name": "고령 신씨",
+    "crest": "clan-crests/goryeong-shin.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": true,
+  "biography": "신종목의 아들이다. 아버지와 함께 정부 장부에 파견 기재로 올라 있어, 강남 선정릉역에서 자라면서도 정부의 등재민이다. 열두 살인 그는 아버지의 무전기 옆에서 호출부호를 받아 적는 법을 익혔다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "",
+    "품계": "등재민",
+    "생업": "교육",
+    "일하는 역": "선정릉역",
+    "잠자는 역": "선정릉역",
+    "가구": "신종목 가구의 가구원"
+  },
+  "sections": {
+    "생애": "신종목의 아들이다. 아버지와 함께 정부 장부에 파견 기재로 올라 있어, 강남 선정릉역에서 자라면서도 정부의 등재민이다. 열두 살인 그는 아버지의 무전기 옆에서 호출부호를 받아 적는 법을 익혔다.",
+    "관직": "품계 등재민. 일하는 역 선정릉역."
+  },
+  "values": {
+    "권위": 25,
+    "개방": -35,
+    "무력": -5,
+    "물질": -15,
+    "공동": 25,
+    "원칙": 30,
+    "공개": -55,
+    "자격": 15,
+    "분산": -35,
+    "변혁": -10
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": -10,
+    "위험": -30,
+    "과시": -25,
+    "지속": 25,
+    "지향": null,
+    "결합": null
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-1009",
+    "role": "member",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "신준",
+        "type": "친족",
+        "to": "신종목",
+        "basis": "신종목의 아들"
+      },
+      {
+        "from": "신준",
+        "type": "스승과 제자",
+        "to": "신종목",
+        "basis": "아버지에게서 호출부호를 받아 적는 법을 배운다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "신종목",
+        "type": "친족",
+        "to": "신준",
+        "basis": "아들 신준을 한 세대에 둔 아버지"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 1,
-        "effective": 1
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
       },
-      "strategy": {
-        "base": 2,
-        "effective": 2
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "negotiation": {
-        "base": 2,
-        "effective": 2
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "management": {
-        "base": 2,
-        "effective": 2
-      },
-      "insight": {
-        "base": 5,
-        "effective": 5
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 5,
-        "effective": 5
+        "base": 8,
+        "effective": 8
       },
       "prowess": {
-        "base": 1,
-        "effective": 1
-      },
-      "endurance": {
-        "base": 4,
-        "effective": 4
+        "base": 3,
+        "effective": 3
       }
     },
-    "skills": [],
+    "skills": [
+      {
+        "id": "v3-1010-callsign-log",
+        "name": "호출부호 받아 적기",
+        "rating": 30
+      }
+    ],
     "traits": [
       {
-        "id": "k1010-trait-1",
-        "name": {
-          "ko": "겹친 소리의 기억",
-          "en": "Memory in overlapping sounds"
-        },
-        "description": {
-          "ko": "겹친 방송·잡음·진동에 리듬과 경로 단편을 떠올린다.",
-          "en": "Recalls rhythm and route fragments through overlapping broadcasts, noise, and vibration."
-        },
-        "behavior": {
-          "ko": "겹친 방송·잡음·진동에 리듬과 경로 단편을 떠올린다.",
-          "en": "Recalls rhythm and route fragments through overlapping broadcasts, noise, and vibration."
-        },
-        "stress": {
-          "ko": "이 반응의 부담과 스트레스 양상은 미확인이다.",
-          "en": "The strain and stress pattern of this response are unassessed."
-        },
-        "relationship": {
-          "ko": "신종목이 반응을 대조하고 보호자가 돌보지만 그것은 아이의 성향 근거가 아니다.",
-          "en": "Shin Jongmok checks the response and guardians provide care; their actions are not evidence of the child’s disposition."
-        },
+        "id": "v3-1010-trait-1",
+        "name": "밝은 귀",
+        "description": "잡음 속에서도 호출부호를 먼저 알아듣는다.",
+        "behavior": "아버지가 자리를 비우면 수신기 앞에 앉아 들은 것을 적는다.",
+        "stress": "응답이 끊기면 말이 없어진다.",
+        "relationship": "아버지를 따라 하지만 아직 무전을 보내지는 않는다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "열두 살 신준은 폐역 방송·무전 잡음·차량 진동이 겹치면 호출 리듬과 경로의 단편을 떠올린다. 기억 반응만 확인되며 그 정확성은 현장 기록과 대조가 필요하다. 아버지의 정찰·지휘·동의 확인 능력은 아이에게 이전하지 않는다.",
-      "en": "Twelve-year-old Shin Jun recalls fragments of call rhythms and routes when station broadcasts, radio noise, and vehicle vibration coincide. Only this response is established; its accuracy needs field comparison. His father’s reconnaissance, command, and consent practices are not transferred to him."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -556,65 +173,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "goryeong-shin",
-    "name": "고령 신씨",
-    "crest": "clan-crests/goryeong-shin.svg"
-  },
-  "generation": "opening",
-  "minors": true,
-  "sourceKind": "proposal",
-  "locked": false,
-  "values": {
-    "권위": -20,
-    "개방": 20,
-    "무력": -40,
-    "물질": -10,
-    "공동": 20,
-    "원칙": 10,
-    "공개": -30,
-    "자격": 0,
-    "분산": 15,
-    "변혁": 10
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": -10,
-    "위험": -30,
-    "과시": -25,
-    "지속": 25,
-    "지향": null,
-    "결합": null
-  },
-  "fields": {},
-  "sections": {
-    "생애": "신준은 폐역 방송·무전 잡음·차량 진동이 겹칠 때 낡은 호출 리듬과 경로의 단편을 떠올린다. 신종목과 보호자는 그 반응을 현장 기록과 대조하고 신준의 동의와 휴식을 먼저 확인한다.",
-    "관직": "품계 없음. 직함 없음. 논현2동의 돌봄·동의·휴식 생활 기준점이 신준의 거주 참고다. 이 거주 참고는 정확한 거주지·시설 경계·작위·영지·점유권을 정하지 않는다. 선정릉·수서 연락을 곁에서 접하지만 귀환망의 직무는 맡지 않는다.",
-    "일화": "신종목과 보호자는 신준의 동의와 휴식을 확인한 뒤 돌봄 시간을 교대하고, 그 확인 시각을 다음 보호자에게 인계한다.",
-    "가문": "신종목의 아들이다.",
-    "관계": "신종목의 아들이며 보호자들의 돌봄·동의·휴식 인계에 참여한다."
-  },
-  "biography": "소속은 아관사(S14)이며 신종목의 아들이다. 2114-01-01에 태어나 2126년 개막 현재 열두 살이다.\n\n**생애.** 신준은 폐역 방송·무전 잡음·차량 진동이 겹칠 때 낡은 호출 리듬과 경로의 단편을 떠올린다. 신종목과 보호자는 그 반응을 현장 기록과 대조하고 신준의 동의와 휴식을 먼저 확인한다.\n\n**관직.** 품계 없음. 직함 없음. 논현2동의 돌봄·동의·휴식 생활 기준점이 신준의 거주 참고다. 이 거주 참고는 정확한 거주지·시설 경계·작위·영지·점유권을 정하지 않는다. 선정릉·수서 연락을 곁에서 접하지만 귀환망의 직무는 맡지 않는다.\n\n**일화.** 신종목과 보호자는 신준의 동의와 휴식을 확인한 뒤 돌봄 시간을 교대하고, 그 확인 시각을 다음 보호자에게 인계한다.\n\n**가문.** 신종목의 아들이다.\n\n**관계.** 신종목의 아들이며 보호자들의 돌봄·동의·휴식 인계에 참여한다.",
-  "sources": [
-    "Core-Characters"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "신준",
-        "type": "친족",
-        "to": "신종목",
-        "basis": "신종목의 아들"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "신종목",
-        "type": "친족",
-        "to": "신준",
-        "basis": "귀환망이 아들 신준을 키움"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

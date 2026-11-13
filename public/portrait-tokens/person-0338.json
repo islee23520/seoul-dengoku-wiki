@@ -3,27 +3,27 @@
   "personId": "person-0338",
   "characterId": "K337",
   "name": "동주하",
-  "stateId": "S13",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "제기동시장 저울 거점장"
+    "role": "제기동 동장 · 정부"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short hair slicked back with a side part",
-    "upper": "slate blue double-breasted wool suit jacket with wide peaked lapels over a high-collared shirt, in thin fine-weave fabric",
-    "outfit": "slate blue double-breasted wool suit jacket with wide peaked lapels over a high-collared shirt, in thin fine-weave fabric",
+    "upper": "navy-banded quilted long coat",
+    "outfit": "navy-banded quilted long coat",
     "palette": [
-      "slate blue",
       "navy",
-      "olive drab"
+      "dove grey",
+      "charcoal"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "navy straight wool trousers",
-    "footwear": "polished leather knee boots",
-    "accessories": "plain brass pocket watch on a short chain"
+    "lower": "quilted synthetic trousers",
+    "footwear": "felt-lined synthetic rubber boots",
+    "accessories": "civil servant card on a cord beside the metal registration tag, with a cloth seal pouch"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "fur-lined ear-flap cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "slate blue double-breasted wool suit jacket with wide peaked lapels over a high-collared shirt, in thin fine-weave fabric",
+        "value": "navy-banded quilted long coat",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "navy straight wool trousers",
+        "value": "quilted synthetic trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "polished leather knee boots",
+        "value": "felt-lined synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned high shirt collar",
+        "value": "high quilted collar with a cloth face covering",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "plain brass pocket watch on a short chain",
+        "value": "civil servant card on a cord beside the metal registration tag, with a cloth seal pouch",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(leader)",
-        "derived": true
-      },
-      "shape": {
-        "value": "round watch with a fine chain",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(leader)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass",
+        "value": "dull steel and navy cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(leader)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass",
+        "value": "steel, cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(leader)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "chain clipped to the waistcoat or jacket buttonhole",
+        "value": "hung at the neck and tied at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(leader)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat rectangular card and small drawstring pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동주하, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; upturned almond dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: average with narrow shoulders; skin: medium warm beige. upper garment: slate blue double-breasted wool suit jacket with wide peaked lapels over a high-collared shirt, in thin fine-weave fabric; neckline: buttoned high shirt collar. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: slate blue, navy, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동주하, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; upturned almond dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: average with narrow shoulders; skin: medium warm beige. headwear: fur-lined ear-flap cap; upper garment: navy-banded quilted long coat; neckline: high quilted collar with a cloth face covering. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, dove grey, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동주하, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; upturned almond dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: slate blue double-breasted wool suit jacket with wide peaked lapels over a high-collared shirt, in thin fine-weave fabric; neckline: buttoned high shirt collar; lower garment: navy straight wool trousers; footwear: polished leather knee boots. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: slate blue, navy, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동주하, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; upturned almond dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. headwear: fur-lined ear-flap cap; upper garment: navy-banded quilted long coat; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, dove grey, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동주하, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; upturned almond dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: slate blue double-breasted wool suit jacket with wide peaked lapels over a high-collared shirt, in thin fine-weave fabric; neckline: buttoned high shirt collar; lower garment: navy straight wool trousers; footwear: polished leather knee boots. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: slate blue, navy, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동주하, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; upturned almond dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. headwear: fur-lined ear-flap cap; upper garment: navy-banded quilted long coat; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, dove grey, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동주하, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; upturned almond dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: slate blue double-breasted wool suit jacket with wide peaked lapels over a high-collared shirt, in thin fine-weave fabric; neckline: buttoned high shirt collar; lower garment: navy straight wool trousers; footwear: polished leather knee boots. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: slate blue, navy, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동주하, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; upturned almond dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. headwear: fur-lined ear-flap cap; upper garment: navy-banded quilted long coat; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, dove grey, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동주하, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; upturned almond dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. upper garment: slate blue double-breasted wool suit jacket with wide peaked lapels over a high-collared shirt, in thin fine-weave fabric; neckline: buttoned high shirt collar; lower garment: navy straight wool trousers; footwear: polished leather knee boots. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: slate blue, navy, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동주하, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; upturned almond dark brown eyes; softly arched eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: average with narrow shoulders; skin: medium warm beige; average adult male height. headwear: fur-lined ear-flap cap; upper garment: navy-banded quilted long coat; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant card on a cord beside the metal registration tag, with a cloth seal pouch; worn as hung at the neck and tied at the belt. color palette: navy, dove grey, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

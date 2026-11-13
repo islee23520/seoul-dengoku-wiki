@@ -1,492 +1,105 @@
 {
   "id": "person-0760",
   "name": "고늘진",
-  "title": "배급구역 서기",
-  "position": "배급구역 서기",
+  "title": "장터 집안 사람",
+  "position": "장터 집안 사람 · 영등포역",
   "characterId": "K760",
-  "rank": "주사",
+  "rank": "손",
   "commonTier": "T5",
-  "occupation": "급수 배분 당직",
+  "occupation": "장터 거래",
   "gender": "남성",
   "stage": "S4",
-  "state": "S01",
-  "stateName": "수문국",
-  "sourceRoute": "/world/Cast-State-01#인물-고늘진",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0760",
   "birthDate": "2096-05-25",
   "birthday": "05-25",
   "age": 30,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-01.json#/content/533"
-  ],
-  "familyTree": {
-    "personId": "K760",
-    "nodes": [
-      {
-        "id": "K760",
-        "personId": "K760",
-        "kind": "person",
-        "name": "고늘진",
-        "birthDate": "2096-05-25",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K760"
-          },
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-고늘진-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-고늘진-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0760"
-      },
-      {
-        "id": "FH-K760-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "고승솔",
-        "lineage": {
-          "surname": "고",
-          "bongwan": "한양",
-          "clan": "ace0-d55c-c591-agreed-c9c4-second"
-        },
-        "birthDate": "2066-05-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-고늘진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2104,
-            "summary": "고승솔은 영등포 정수 당직에서 급수 배분 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-고늘진-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K760-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "고승미",
-        "lineage": {
-          "surname": "고",
-          "bongwan": "한양",
-          "clan": "ace0-d55c-c591-agreed-c9c4-second"
-        },
-        "birthDate": "2036-05-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-고늘진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "고승미는 영등포 정수 당직에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-고늘진-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K760-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "고승도",
-        "lineage": {
-          "surname": "고",
-          "bongwan": "한양",
-          "clan": "ace0-d55c-c591-agreed-c9c4-second"
-        },
-        "birthDate": "2006-05-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-고늘진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "고승도는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-고늘진-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K760-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤도원",
-        "birthDate": "2066-05-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-고늘진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2104,
-            "summary": "윤도원은 영등포 정수 당직에서 급수 배분 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-고늘진-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K760-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한도원",
-        "birthDate": "2036-05-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-고늘진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "한도원은 영등포 정수 당직에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-고늘진-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K760-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "강재도",
-        "birthDate": "2006-05-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-고늘진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "강재도는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-01.json",
-                "anchor": "인물-고늘진-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K760-P-01:K760:biological",
-        "from": "FH-K760-P-01",
-        "to": "K760",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-고늘진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K760-P-02:FH-K760-P-01:biological",
-        "from": "FH-K760-P-02",
-        "to": "FH-K760-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-고늘진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K760-P-03:FH-K760-P-02:biological",
-        "from": "FH-K760-P-03",
-        "to": "FH-K760-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-고늘진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K760-M-01:K760:biological",
-        "from": "FH-K760-M-01",
-        "to": "K760",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-고늘진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K760-M-02:FH-K760-M-01:biological",
-        "from": "FH-K760-M-02",
-        "to": "FH-K760-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-고늘진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K760-M-03:FH-K760-M-02:biological",
-        "from": "FH-K760-M-03",
-        "to": "FH-K760-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-01.json",
-            "anchor": "인물-고늘진-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ace0-d55c-c591",
+    "name": "한양 고씨",
+    "crest": "clan-crests/ace0-d55c-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "고늘진은 영등포역 장터에 판 하나를 가진 집안의 서른 살 사람이다. 그의 집안은 구로에서 오는 부품과 관악의 땔감을 받아 강서와 양천의 작업대로 넘기는 판을 오래 지켜 왔다. 아침 셈판이 붙으면 그는 그날 값을 보기 전에 지난 열흘 값의 흐름부터 판 옆 벽에 옮겨 적는다. 값이 오르는 날에도 하루에 넘길 몫을 미리 정해 두고, 그 이상은 팔지 않는다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "장터 집안 사람",
+    "품계": "손",
+    "생업": "장터 거래",
+    "일하는 역": "영등포역",
+    "잠자는 역": "영등포역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "고늘진은 영등포역 장터에 판 하나를 가진 집안의 서른 살 사람이다. 그의 집안은 구로에서 오는 부품과 관악의 땔감을 받아 강서와 양천의 작업대로 넘기는 판을 오래 지켜 왔다. 아침 셈판이 붙으면 그는 그날 값을 보기 전에 지난 열흘 값의 흐름부터 판 옆 벽에 옮겨 적는다. 값이 오르는 날에도 하루에 넘길 몫을 미리 정해 두고, 그 이상은 팔지 않는다.",
+    "관직": "직함 장터 집안 사람. 직위 장터 집안 사람 · 영등포역. 품계 손. 일하는 역 영등포역."
+  },
+  "values": {
+    "권위": 5,
+    "개방": 10,
+    "무력": 10,
+    "물질": 75,
+    "공동": 5,
+    "원칙": 10,
+    "공개": 15,
+    "자격": 10,
+    "분산": 10,
+    "변혁": -5
+  },
+  "desire": {
+    "갈망": 25,
+    "독점": 40,
+    "위험": -10,
+    "과시": 25,
+    "지속": 35,
+    "지향": "양성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0760",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
+      "diplomacy": {
+        "base": 8,
+        "effective": 8
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
+      "martial": {
+        "base": 4,
+        "effective": 4
       },
-      "negotiation": {
+      "stewardship": {
+        "base": 9,
+        "effective": 9
+      },
+      "intrigue": {
         "base": 6,
         "effective": 6
       },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
       }
     },
-    "skills": [
-      {
-        "id": "k760-sealed-allocation-log",
-        "name": {
-          "ko": "봉인 배분 기록",
-          "en": "Sealed-allocation logging"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k760-action-priority",
-        "name": {
-          "ko": "봉인 전후의 대조",
-          "en": "Compare before and after sealing"
-        },
-        "description": {
-          "ko": "계약 회의 선거인의 연서가 빠진 선출 군주의 계약안이 내려오고, 이서담이 배급표와 교량 통행세를 함께 봉인한다. 고늘진은 봉인된 배급표의 목록을 당직 인수인계 기록에 옮겨, 봉인 전과 봉인 뒤의 배분량을 다음 당직이 한 쪽에서 맞춰 보게 한다.",
-          "en": "An elected-monarch contract draft comes down without the joint signature of the contract council's electors, and I Seodam seals the ration tables and the bridge tolls together. Go Neuljin copies the list of sealed ration tables into the duty handover record so the next shift can compare the allotments before and after the seal on a single page."
-        },
-        "behavior": {
-          "ko": "계약 회의 선거인의 연서가 빠진 선출 군주의 계약안이 내려오고, 이서담이 배급표와 교량 통행세를 함께 봉인한다. 고늘진은 봉인된 배급표의 목록을 당직 인수인계 기록에 옮겨, 봉인 전과 봉인 뒤의 배분량을 다음 당직이 한 쪽에서 맞춰 보게 한다.",
-          "en": "An elected-monarch contract draft comes down without the joint signature of the contract council's electors, and I Seodam seals the ration tables and the bridge tolls together. Go Neuljin copies the list of sealed ration tables into the duty handover record so the next shift can compare the allotments before and after the seal on a single page."
-        },
-        "stress": {
-          "ko": "배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
-          "en": "That the ration district clerk duty post would stand empty and the Compact's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.",
-          "en": "Serves as a ration clerk under I Seodam and manages the water allocation shift."
-        },
-        "effects": []
-      },
-      {
-        "id": "k760-bounded-handover",
-        "name": {
-          "ko": "기록으로 잇는 당직",
-          "en": "Duty linked by records"
-        },
-        "description": {
-          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
-          "en": "Passes keys and records to the next shift without enlarging authority."
-        },
-        "behavior": {
-          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
-          "en": "Passes keys and records to the next shift without enlarging authority."
-        },
-        "stress": {
-          "ko": "배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
-          "en": "That the ration district clerk duty post would stand empty and the Compact's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.",
-          "en": "Serves as a ration clerk under I Seodam and manages the water allocation shift."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "계약 회의 선거인의 연서가 빠진 선출 군주의 계약안이 내려오고, 이서담이 배급표와 교량 통행세를 함께 봉인한다. 고늘진은 봉인된 배급표의 목록을 당직 인수인계 기록에 옮겨, 봉인 전과 봉인 뒤의 배분량을 다음 당직이 한 쪽에서 맞춰 보게 한다. 짧은 행위와 인수인계가 근거여서 다른 분야의 숙련이나 보정은 발급하지 않았다.",
-      "en": "An elected-monarch contract draft comes down without the joint signature of the contract council's electors, and I Seodam seals the ration tables and the bridge tolls together. Go Neuljin copies the list of sealed ration tables into the duty handover record so the next shift can compare the allotments before and after the seal on a single page. The brief action and handover support only limited strengths; no unrelated proficiency or numeric trait bonus is issued."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,73 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ace0-d55c-c591",
-    "name": "한양 고씨",
-    "crest": "clan-crests/ace0-d55c-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 40,
-    "개방": -5,
-    "무력": 20,
-    "물질": 60,
-    "공동": 30,
-    "원칙": 20,
-    "공개": 15,
-    "자격": -10,
-    "분산": -45,
-    "변혁": -15
-  },
-  "desire": {
-    "갈망": 25,
-    "독점": 40,
-    "위험": -10,
-    "과시": 25,
-    "지속": 35,
-    "지향": "양성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "수문국",
-    "생업": "급수 배분 당직",
-    "품계": "주사",
-    "직함": "배급구역 서기",
-    "업무 위치": "신정2동. 고늘진은 이서담이 봉인한 배급표의 전후 배분량을 한 쪽에 옮겨 신정2동의 다음 당직이 직접 대조하도록 넘긴다.",
-    "가치관": "권위 40 | 개방 −5 | 무력 20 | 물질 60 | 공동 30 | 원칙 20 | 공개 15 | 자격 −10 | 분산 −45 | 변혁 −15",
-    "욕망": "갈망 25 | 독점 40 | 위험 −10 | 과시 25 | 지속 35 | 지향 양성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 신정2동. 고늘진은 이서담이 봉인한 배급표의 전후 배분량을 한 쪽에 옮겨 신정2동의 다음 당직이 직접 대조하도록 넘긴다.",
-    "관직": "품계 주사. 직함은 배급구역 서기이다. 고늘진은 이서담이 봉인한 배급표의 전후 배분량을 한 쪽에 옮겨 신정2동의 다음 당직이 직접 대조하도록 넘긴다.",
-    "일화": "계약 회의 선거인의 연서가 빠진 선출 군주의 계약안이 내려오고, 이서담이 배급표와 교량 통행세를 함께 봉인한다. 고늘진은 봉인된 배급표의 목록을 당직 인수인계 기록에 옮겨, 봉인 전과 봉인 뒤의 배분량을 다음 당직이 한 쪽에서 맞춰 보게 한다.",
-    "관계": "이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.",
-    "야망": "배급구역 서기 자리에서 수문국의 장부를 끊기지 않게 잇는다.",
-    "공포": "배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 수문국\n- 생업: 급수 배분 당직\n- 품계: 주사\n- 직함: 배급구역 서기\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 신정2동. 고늘진은 이서담이 봉인한 배급표의 전후 배분량을 한 쪽에 옮겨 신정2동의 다음 당직이 직접 대조하도록 넘긴다.\n\n**관직.** 품계 주사. 직함은 배급구역 서기이다. 고늘진은 이서담이 봉인한 배급표의 전후 배분량을 한 쪽에 옮겨 신정2동의 다음 당직이 직접 대조하도록 넘긴다.\n\n**일화.** 계약 회의 선거인의 연서가 빠진 선출 군주의 계약안이 내려오고, 이서담이 배급표와 교량 통행세를 함께 봉인한다. 고늘진은 봉인된 배급표의 목록을 당직 인수인계 기록에 옮겨, 봉인 전과 봉인 뒤의 배분량을 다음 당직이 한 쪽에서 맞춰 보게 한다.\n\n**관계.** 이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.\n\n**야망.** 배급구역 서기 자리에서 수문국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 40 | 개방 −5 | 무력 20 | 물질 60 | 공동 30 | 원칙 20 | 공개 15 | 자격 −10 | 분산 −45 | 변혁 −15\n- 욕망: 갈망 25 | 독점 40 | 위험 −10 | 과시 25 | 지속 35 | 지향 양성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-01"
-  ],
-  "directLiege": {
-    "personId": "K002",
-    "name": "이서담",
-    "courtId": "court:K002",
-    "effectiveYear": 2126
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "고늘진",
-        "type": "지휘",
-        "to": "이서담",
-        "basis": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

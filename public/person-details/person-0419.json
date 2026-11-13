@@ -1,504 +1,118 @@
 {
   "id": "person-0419",
   "name": "탁세온",
-  "title": "둘째 급수협약 서명 증인",
-  "position": "둘째 급수협약 서명 증인",
+  "title": "정비공",
+  "position": "정비공 · 경찰병원역",
   "characterId": "K418",
-  "rank": "미등록",
+  "rank": "정비공",
   "commonTier": "T5",
-  "occupation": "급수계약 서명 사본·증인 진술 대조",
+  "occupation": "이식 정비",
   "gender": "여성",
   "stage": "S3",
-  "state": "S16",
-  "stateName": "정동노총",
-  "sourceRoute": "/world/Cast-State-16#인물-탁세온",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0419",
   "birthDate": "2094-08-30",
   "birthday": "08-30",
   "age": 32,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-16.json#/content/215"
-  ],
-  "familyTree": {
-    "personId": "K418",
-    "nodes": [
-      {
-        "id": "K418",
-        "personId": "K418",
-        "kind": "person",
-        "name": "탁세온",
-        "birthDate": "2094-08-30",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K418"
-          },
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-탁세온-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수 계약 서명 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-탁세온-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0419"
-      },
-      {
-        "id": "FH-K418-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "탁승우",
-        "lineage": {
-          "surname": "탁",
-          "bongwan": "광산",
-          "clan": "d0c1-ad11-c0b0"
-        },
-        "birthDate": "2064-08-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-탁세온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2102,
-            "summary": "탁승우는 영등포 정수 당직에서 급수계약 서명 사본·증인 진술 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-탁세온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K418-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "탁승경",
-        "lineage": {
-          "surname": "탁",
-          "bongwan": "광산",
-          "clan": "d0c1-ad11-c0b0"
-        },
-        "birthDate": "2034-08-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-탁세온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "탁승경은 영등포 정수 당직에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-탁세온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K418-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "탁승수",
-        "lineage": {
-          "surname": "탁",
-          "bongwan": "광산",
-          "clan": "d0c1-ad11-c0b0"
-        },
-        "birthDate": "2004-08-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-탁세온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "탁승수는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-탁세온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K418-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조준찬",
-        "birthDate": "2064-08-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-탁세온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2102,
-            "summary": "조준찬은 영등포 정수 당직에서 급수계약 서명 사본·증인 진술 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-탁세온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K418-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김준성",
-        "birthDate": "2034-08-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-탁세온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "김준성은 영등포 정수 당직에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-탁세온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K418-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준욱",
-        "birthDate": "2004-08-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-탁세온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박준욱은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-16.json",
-                "anchor": "인물-탁세온-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K418-P-01:K418:biological",
-        "from": "FH-K418-P-01",
-        "to": "K418",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-탁세온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K418-P-02:FH-K418-P-01:biological",
-        "from": "FH-K418-P-02",
-        "to": "FH-K418-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-탁세온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K418-P-03:FH-K418-P-02:biological",
-        "from": "FH-K418-P-03",
-        "to": "FH-K418-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-탁세온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K418-M-01:K418:biological",
-        "from": "FH-K418-M-01",
-        "to": "K418",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-탁세온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K418-M-02:FH-K418-M-01:biological",
-        "from": "FH-K418-M-02",
-        "to": "FH-K418-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-탁세온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K418-M-03:FH-K418-M-02:biological",
-        "from": "FH-K418-M-03",
-        "to": "FH-K418-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-16.json",
-            "anchor": "인물-탁세온-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d0c1-ad11-c0b0",
+    "name": "광산 탁씨",
+    "crest": "clan-crests/d0c1-ad11-c0b0.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "들은 대로만 말한다는 평판 하나로, 탁세온은 경찰병원역에서 정비 차례 다툼이 날 때마다 불려 나간다. 올해 서른둘인 그가 한때 계약 자리에서 증인으로 선 적이 있어서다. 정비공으로서 그의 하루는 대부분 지상에서 일하다 부위가 언 사람을 맞는 데 들고, 그때마다 자기 두 부위에 감은 토시를 풀어 남의 이음매부터 덮는다. 증인으로 설 때도 그는 연장 꾸러미를 내려놓지 않는다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "정비공",
+    "품계": "정비공",
+    "생업": "이식 정비",
+    "일하는 역": "경찰병원역",
+    "잠자는 역": "경찰병원역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "들은 대로만 말한다는 평판 하나로, 탁세온은 경찰병원역에서 정비 차례 다툼이 날 때마다 불려 나간다. 올해 서른둘인 그가 한때 계약 자리에서 증인으로 선 적이 있어서다. 정비공으로서 그의 하루는 대부분 지상에서 일하다 부위가 언 사람을 맞는 데 들고, 그때마다 자기 두 부위에 감은 토시를 풀어 남의 이음매부터 덮는다. 증인으로 설 때도 그는 연장 꾸러미를 내려놓지 않는다.",
+    "관직": "직함 정비공. 직위 정비공 · 경찰병원역. 품계 정비공. 일하는 역 경찰병원역."
+  },
+  "values": {
+    "권위": 5,
+    "개방": 15,
+    "무력": -10,
+    "물질": -40,
+    "공동": 35,
+    "원칙": 10,
+    "공개": -25,
+    "자격": -10,
+    "분산": 5,
+    "변혁": 65
+  },
+  "desire": {
+    "갈망": -10,
+    "독점": 30,
+    "위험": 35,
+    "과시": 0,
+    "지속": 25,
+    "지향": "동성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0419",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
-      "learning": {
-        "base": 10,
-        "effective": 10
-      },
-      "prowess": {
+      "martial": {
         "base": 3,
         "effective": 3
       },
-      "endurance": {
+      "stewardship": {
+        "base": 7,
+        "effective": 7
+      },
+      "intrigue": {
         "base": 6,
         "effective": 6
-      }
-    },
-    "skills": [
-      {
-        "id": "contract-testimony",
-        "name": {
-          "ko": "계약 서명 증언",
-          "en": "Contract signature testimony"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "물 공급과 군사 근거 분리",
-          "en": "Separates water rights from military grounds"
-        },
-        "description": {
-          "ko": "군사 개입과 최소 급수권을 한 줄에 넣으라는 사신을 내려보냈다. 종료 조건과 감사표 날짜를 사본 증언에 맞췄다.",
-          "en": "Rejects an envoy seeking to combine military intervention with minimum water rights. Aligns expiry terms and audit dates with signature testimony."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 물 공급과 군사 근거 분리을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "증언을 잘라 쓰려 할 때 말을 좁힐 수 있다.",
-          "en": "May narrow testimony when others try to excerpt it."
-        },
-        "relationship": {
-          "ko": "임하준의 종료 조건과 흥미리의 날짜를 증언에 맞춘다.",
-          "en": "Aligns Im Hajun’s termination terms with Heung Miri’s dates in testimony."
-        },
-        "effects": []
       },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "물 공급 최저선과 계약 종료 조건을 공개 증언으로 남겨 조합원 지지와 군사 개입 근거가 한 장에서 섞이지 않게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "자신의 증언이 배우진의 군사 개입 근거로만 잘리는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "임하준의 종료 조건과 흥미리의 날짜를 증언에 맞춘다.",
-          "en": "Aligns Im Hajun’s termination terms with Heung Miri’s dates in testimony."
-        },
-        "effects": []
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "군사 개입과 최소 급수권을 한 줄에 넣으라는 사신을 내려보냈다. 종료 조건과 감사표 날짜를 사본 증언에 맞췄다.",
-      "en": "Rejects an envoy seeking to combine military intervention with minimum water rights. Aligns expiry terms and audit dates with signature testimony."
     },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -524,66 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d0c1-ad11-c0b0",
-    "name": "광산 탁씨",
-    "crest": "clan-crests/d0c1-ad11-c0b0.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -20,
-    "개방": 30,
-    "무력": -20,
-    "물질": 10,
-    "공동": 15,
-    "원칙": 20,
-    "공개": 20,
-    "자격": 25,
-    "분산": 35,
-    "변혁": 20
-  },
-  "desire": {
-    "갈망": -10,
-    "독점": 30,
-    "위험": 35,
-    "과시": 0,
-    "지속": 25,
-    "지향": "동성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "급수계약 서명 사본·증인 진술 대조",
-    "소속": "정동노총",
-    "공동체 역할": "조합원",
-    "직무": "급수 계약 서명 증인",
-    "가치관": "권위 −20 | 개방 30 | 무력 −20 | 물질 10 | 공동 15 | 원칙 20 | 공개 20 | 자격 25 | 분산 35 | 변혁 20",
-    "욕망": "갈망 −10 | 독점 30 | 위험 35 | 과시 0 | 지속 25 | 지향 동성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2094-08-30에 태어난 탁세온은 영구 겨울의 시청역 조합 작업장에서 급수 계약 서명 증인 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 탁세온은 소공동의 시청역 조합 작업장에서 급수 계약 서명 증인 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "직무": "공동체 역할은 조합원이며 직무는 급수 계약 서명 증인이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.",
-    "일화": "군사 개입 조항을 최소 급수권과 한 줄에 적어 달라는 사신이 증인석까지 올라온다. 탁세온은 사신을 내려보내고, 임하준이 보증한 둘째 협약의 종료 조건을 읽은 다음 흥미리의 감사표와 날짜를 맞춰 서명 사본 옆에 증인 진술을 붙인다.",
-    "관계": "탁세온의 기존 관계 기록은 다음과 같다. 임하준이 보증한 둘째 협약의 종료 조건을 증언의 뼈대로 삼고, 흥미리의 감사표와 날짜를 맞춘다. 강민서의 부품 규격 문안을 증인석에서 읽는다.",
-    "목표": "탁세온은 급수 계약 서명 증인 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.",
-    "공포": "급수 계약 서명 증인 업무의 서명이나 인계 기록이 바뀌어 탁세온의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.",
-    "개입": "탁세온은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다."
-  },
-  "biography": "탁세온은 영구 겨울의 시청역 조합 작업장에서 급수 계약 서명 증인 업무 기록과 공개 표결 서명을 먼저 대조한다. 급수·통행·계약 일정이 겹치는 날에는 접수 시각과 인계 순서를 같은 장부에 남긴다.\n\n- 생업: 급수계약 서명 사본·증인 진술 대조\n- 소속: 정동노총\n- 공동체 역할: 조합원\n- 직무: 급수 계약 서명 증인\n**생애.** 2094-08-30에 태어난 탁세온은 영구 겨울의 시청역 조합 작업장에서 급수 계약 서명 증인 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 탁세온은 소공동의 시청역 조합 작업장에서 급수 계약 서명 증인 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**직무.** 공동체 역할은 조합원이며 직무는 급수 계약 서명 증인이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.\n\n**일화.** 군사 개입 조항을 최소 급수권과 한 줄에 적어 달라는 사신이 증인석까지 올라온다. 탁세온은 사신을 내려보내고, 임하준이 보증한 둘째 협약의 종료 조건을 읽은 다음 흥미리의 감사표와 날짜를 맞춰 서명 사본 옆에 증인 진술을 붙인다.\n\n**관계.** 탁세온의 기존 관계 기록은 다음과 같다. 임하준이 보증한 둘째 협약의 종료 조건을 증언의 뼈대로 삼고, 흥미리의 감사표와 날짜를 맞춘다. 강민서의 부품 규격 문안을 증인석에서 읽는다.\n\n**목표.** 탁세온은 급수 계약 서명 증인 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.\n\n**공포.** 급수 계약 서명 증인 업무의 서명이나 인계 기록이 바뀌어 탁세온의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.\n\n**개입.** 탁세온은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 30 | 무력 −20 | 물질 10 | 공동 15 | 원칙 20 | 공개 20 | 자격 25 | 분산 35 | 변혁 20\n- 욕망: 갈망 −10 | 독점 30 | 위험 35 | 과시 0 | 지속 25 | 지향 동성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-16"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "탁세온",
-        "type": "맹세",
-        "to": "흥미리",
-        "basis": "흥미리의 감사표와 날짜를 맞춘다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

@@ -1,405 +1,133 @@
 {
   "id": "person-0098",
   "name": "구도영",
-  "title": "성수 패킹운송 물류상",
-  "position": "성수 패킹운송 물류상",
+  "title": "교대역 정비장",
+  "position": "교대역 정비장 · 아크",
   "characterId": "K097",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "패킹 수상 운송",
+  "rank": "정비장",
+  "commonTier": "T4",
+  "occupation": "정비대 통솔",
   "gender": "남성",
   "stage": "S2",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-구도영",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0098",
   "birthDate": "2067-05-02",
   "birthday": "05-02",
   "age": 59,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/137"
-  ],
-  "familyTree": {
-    "personId": "K097",
-    "nodes": [
-      {
-        "id": "K097",
-        "personId": "K097",
-        "kind": "person",
-        "name": "구도영",
-        "birthDate": "2067-05-02",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K097"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-구도영-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 노량진 선창에서 자랐다. 성수 패킹운송 물류상 자리는 저울 재점검 공개로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-구도영-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0098"
-      },
-      {
-        "id": "FH-K097-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "구승경",
-        "lineage": {
-          "surname": "구",
-          "bongwan": "능성",
-          "clan": "ad6c-b2a5-c131"
-        },
-        "birthDate": "2037-05-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-구도영-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "구승경은 노량진 선창에서 패킹 수상 운송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-구도영-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K097-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "구승수",
-        "lineage": {
-          "surname": "구",
-          "bongwan": "능성",
-          "clan": "ad6c-b2a5-c131"
-        },
-        "birthDate": "2007-05-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-구도영-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "구승수는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-구도영-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K097-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이승리",
-        "birthDate": "2037-05-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-구도영-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "이승리는 노량진 선창에서 패킹 수상 운송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-구도영-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K097-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최승도",
-        "birthDate": "2007-05-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-구도영-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최승도는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-구도영-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K097-P-01:K097:biological",
-        "from": "FH-K097-P-01",
-        "to": "K097",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-구도영-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K097-P-02:FH-K097-P-01:biological",
-        "from": "FH-K097-P-02",
-        "to": "FH-K097-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-구도영-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K097-M-01:K097:biological",
-        "from": "FH-K097-M-01",
-        "to": "K097",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-구도영-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K097-M-02:FH-K097-M-01:biological",
-        "from": "FH-K097-M-02",
-        "to": "FH-K097-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-구도영-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ad6c-b2a5-c131",
+    "name": "능성 구씨",
+    "crest": "clan-crests/ad6c-b2a5-c131.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "구도영은 고속터미널 바꿈터에서 깎은 부품의 값을 정비 차례로 맞추다가, 셋째 부위를 받은 뒤 교대역 정비대를 맡았다. 쉰아홉 살인 지금도 자유도시 상인들은 그가 값을 한 번 말하면 다시 말하지 않는다는 것을 기억한다. 정비대에 오르는 바깥 부품마다 그는 몸에 대기 전에 어디서 얼마에 들어왔는지를 먼저 묻는다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "교대역 정비장",
+    "품계": "정비장",
+    "생업": "정비대 통솔",
+    "일하는 역": "교대역",
+    "잠자는 역": "교대역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 3
+  },
+  "sections": {
+    "생애": "구도영은 고속터미널 바꿈터에서 깎은 부품의 값을 정비 차례로 맞추다가, 셋째 부위를 받은 뒤 교대역 정비대를 맡았다. 쉰아홉 살인 지금도 자유도시 상인들은 그가 값을 한 번 말하면 다시 말하지 않는다는 것을 기억한다. 정비대에 오르는 바깥 부품마다 그는 몸에 대기 전에 어디서 얼마에 들어왔는지를 먼저 묻는다.",
+    "관직": "직함 교대역 정비장. 직위 교대역 정비장 · 아크. 품계 정비장. 일하는 역 교대역."
+  },
+  "values": {
+    "권위": 30,
+    "개방": -5,
+    "무력": -20,
+    "물질": 0,
+    "공동": 50,
+    "원칙": -5,
+    "공개": -60,
+    "자격": 5,
+    "분산": -15,
+    "변혁": 35
+  },
+  "desire": {
+    "갈망": 25,
+    "독점": -5,
+    "위험": 35,
+    "과시": 10,
+    "지속": 20,
+    "지향": "유동",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0098",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "구도영",
+        "type": "지휘",
+        "to": "모복",
+        "basis": "서초3동 대피소장 모복의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K286",
+    "name": "모복",
+    "courtId": "court:K286",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "boat",
-        "name": {
-          "ko": "패킹 우회 수송",
-          "en": "Packing rerouting by boat"
-        },
-        "rating": 65
-      },
-      {
-        "id": "trade",
-        "name": {
-          "ko": "공개 조건 물류 거래",
-          "en": "Logistics under disclosed terms"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "civilian-boxes-first",
-        "name": {
-          "ko": "민수 상자 먼저",
-          "en": "Civilian Boxes First"
-        },
-        "description": {
-          "ko": "구도영은 군수 상자보다 민수용 패킹의 선적 자리를 먼저 확보한다.",
-          "en": "Gu Doyeong secures loading space for civilian packing before military boxes."
-        },
-        "behavior": {
-          "ko": "민수 패킹을 같은 배에 한 줄 실은 뒤에만 군수 상자를 태운다.",
-          "en": "Gu loads military boxes only after a row of civilian packing is aboard the same boat."
-        },
-        "stress": {
-          "ko": "군화만 배에 오르고 민수 패킹이 선창에서 썩을 우려가 커지면 민수 선적 조건을 더 엄격히 지킬 수 있다.",
-          "en": "If only boots risk being shipped while civilian packing rots at the wharf, Gu may enforce the civilian-loading condition more strictly."
-        },
-        "relationship": {
-          "ko": "임채원과 선창을 다투더라도 필터 패킹을 함께 실을 수 있다면 제한된 협력을 유지할 수 있다.",
-          "en": "Despite competing with Im Chaewon for wharf space, Gu may maintain limited cooperation when filter packing can travel together."
-        },
-        "effects": []
-      },
-      {
-        "id": "bypass-tolls",
-        "name": {
-          "ko": "통행세 우회",
-          "en": "Bypass Tolls"
-        },
-        "description": {
-          "ko": "구도영은 통행세가 패킹 운송을 막으면 민수 화물을 다른 수송 경로로 돌리려 한다.",
-          "en": "Gu Doyeong favors rerouting civilian cargo when tolls obstruct packing transport."
-        },
-        "behavior": {
-          "ko": "동부 교량 통행세가 붙자 패킹 끈을 구의 쪽 나룻배로 돌리고 군화는 성수 선창에 남겼다.",
-          "en": "When eastern bridge tolls were imposed, Gu rerouted packing straps to a Guui-side ferry and left boots at the Seongsu wharf."
-        },
-        "stress": {
-          "ko": "민수 패킹이 선창에 묶일 우려가 커지면 군수 화물과 분리한 우회 수송을 더 고려할 수 있다.",
-          "en": "If civilian packing risks being stranded at the wharf, Gu may give greater consideration to rerouting it separately from military cargo."
-        },
-        "relationship": {
-          "ko": "유하은의 가죽 마감 시각과 계약을 지키기 위해 경로가 바뀌면 선적 일정을 다시 맞출 수 있다.",
-          "en": "Gu may readjust loading schedules after route changes to honor Yu Haeun's leather-finishing times and contract."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "통행세 때 패킹을 다른 나룻배로 돌리고 군화는 선창에 남겼다. 수송 대안과 민수 우선이 근거이며 군사 동맹 체결 경력은 없다.",
-      "en": "He rerouted packing by boat under a toll while leaving boots at the wharf. Transport alternatives and civilian priorities are supported, not military alliance-making."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -409,7 +137,7 @@
         {
           "id": "right-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "head",
@@ -425,102 +153,29 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
+  "confirmedHoldings": [
     {
-      "id": "title:duchy-41830-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
+      "id": "holding:v3:station:교대",
+      "name": {
+        "ko": "교대역"
+      },
       "holderPersonId": "K097",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:kingdom-s04",
-      "personalLieges": [
+      "directLiegePersonId": "K286",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "교대",
+        "stationName": "교대"
+      },
+      "adminRefs": [
         {
-          "holdingId": "holding:opening-duchy-41830-S04",
-          "directLiegePersonId": "K423"
+          "id": "region:1165053000",
+          "name": "서초3동"
         }
       ],
-      "directOwnership": false
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
     }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ad6c-b2a5-c131",
-    "name": "능성 구씨",
-    "crest": "clan-crests/ad6c-b2a5-c131.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 5,
-    "개방": 10,
-    "무력": -30,
-    "물질": 50,
-    "공동": 30,
-    "원칙": 5,
-    "공개": -15,
-    "자격": 40,
-    "분산": 15,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 25,
-    "독점": -5,
-    "위험": 35,
-    "과시": 10,
-    "지속": 20,
-    "지향": "유동",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "패킹 수상 운송",
-    "품계": "교사",
-    "직함": "성수 패킹운송 물류상",
-    "가치관": "권위 5 | 개방 10 | 무력 −30 | 물질 50 | 공동 30 | 원칙 5 | 공개 −15 | 자격 40 | 분산 15 | 변혁 −10",
-    "욕망": "갈망 25 | 독점 −5 | 위험 35 | 과시 10 | 지속 20 | 지향 유동 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2126년 세대. 구도영은 노량진 선창에서 자랐다. 구도영은 저울 재점검 공개로 성수 패킹운송 물류상 자리를 맡았다.\n- 구도영의 성수 패킹운송 물류상 업무는 성수2가1동과 연결된다.",
-    "관직": "품계 교사. 직함은 성수 패킹운송 물류상. 끈 매듭과 나룻배 시각을 선창 칠판에 적고, 군수 상자는 민수 패킹이 같은 배에 한 줄 실린 뒤에만 태운다.",
-    "일화": "동부 교량 통행세가 가죽 상자에 붙자 구도영은 패킹 끈만 구의 쪽 나룻배로 돌리고 군화는 성수 선창에 쌓아 두었다.",
-    "관계": "유하은의 가죽 마감 시각에 맞춰 상자를 싣는 계약이고, 한소미의 공정 분할에서 패킹 끈 색을 나눈다. 임채원의 방호 원단 상자와 선창을 다투면서도 필터 패킹은 같은 배에 싣는다.",
-    "야망": "끈 색이 다른 상자를 한 배에 태워, 물과 나사가 선창을 서로 붙잡지 못하게 한다.",
-    "공포": "구도영은 군화 상자만 나룻배에 오르고 민수 패킹이 성수 선창에서 썩는 상황을 두려워한다.",
-    "개입": "통행세 없는 우회 배를 열거나, 선창에 쌓인 군화의 발주 쪽지를 칠판에 붙일 수 있다."
-  },
-  "biography": "상자 끈의 매듭이 공방마다 다르면 출처를 묻지 않고 되돌려 보낸다. 나룻배 시각을 속이는 운송을 재치로 포장해도 저울 앞에서는 웃지 않는다.\n\n- 소속: 명부교회\n- 생업: 패킹 수상 운송\n- 품계: 교사\n- 직함: 성수 패킹운송 물류상\n**생애.** 2126년 세대. 구도영은 노량진 선창에서 자랐다. 구도영은 저울 재점검 공개로 성수 패킹운송 물류상 자리를 맡았다.\n- 구도영의 성수 패킹운송 물류상 업무는 성수2가1동과 연결된다.\n\n**관직.** 품계 교사. 직함은 성수 패킹운송 물류상. 끈 매듭과 나룻배 시각을 선창 칠판에 적고, 군수 상자는 민수 패킹이 같은 배에 한 줄 실린 뒤에만 태운다.\n\n**일화.** 동부 교량 통행세가 가죽 상자에 붙자 구도영은 패킹 끈만 구의 쪽 나룻배로 돌리고 군화는 성수 선창에 쌓아 두었다.\n\n**관계.** 유하은의 가죽 마감 시각에 맞춰 상자를 싣는 계약이고, 한소미의 공정 분할에서 패킹 끈 색을 나눈다. 임채원의 방호 원단 상자와 선창을 다투면서도 필터 패킹은 같은 배에 싣는다.\n\n**야망.** 끈 색이 다른 상자를 한 배에 태워, 물과 나사가 선창을 서로 붙잡지 못하게 한다.\n\n**공포.** 구도영은 군화 상자만 나룻배에 오르고 민수 패킹이 성수 선창에서 썩는 상황을 두려워한다.\n\n**개입.** 통행세 없는 우회 배를 열거나, 선창에 쌓인 군화의 발주 쪽지를 칠판에 붙일 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 10 | 무력 −30 | 물질 50 | 공동 30 | 원칙 5 | 공개 −15 | 자격 40 | 분산 15 | 변혁 −10\n- 욕망: 갈망 25 | 독점 −5 | 위험 35 | 과시 10 | 지속 20 | 지향 유동 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "구도영",
-        "type": "지휘",
-        "to": "유하은",
-        "basis": "유하은의 가죽 마감 시각에 맞춰 상자를 싣는 계약이고"
-      },
-      {
-        "from": "구도영",
-        "type": "계약",
-        "to": "한소미",
-        "basis": "한소미의 공정 분할에서 패킹 끈 색을 나눈다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "고별호",
-        "type": "계약",
-        "to": "구도영",
-        "basis": "고별호는 펌프 정비에 쓸 패킹을 구도영의 수상 운송으로 받는다. 구도영은 선창에서 상자 끈과 나룻배 시각을 확인하고, 고별호는 받은 패킹을 펌프 정비용으로 구분해 인수 기록에 남긴다."
-      },
-      {
-        "from": "명우솔",
-        "type": "지휘",
-        "to": "구도영",
-        "basis": "구도영의 패킹 운송과 순번을 나누며"
-      }
-    ]
-  }
+  ]
 }

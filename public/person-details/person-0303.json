@@ -1,493 +1,105 @@
 {
   "id": "person-0303",
   "name": "소두감",
-  "title": "유치선 정비사, 안도한의 실무 담당자",
-  "position": "유치선 정비사, 안도한의 실무 담당자",
+  "title": "구 부대 지휘관",
+  "position": "구 부대 지휘관 · 도봉산역",
   "characterId": "K302",
-  "rank": "호송원",
+  "rank": "대위",
   "commonTier": "T5",
-  "occupation": "유치선 배차표·정비 일지 대조",
+  "occupation": "군 지휘",
   "gender": "남성",
   "stage": "S2",
-  "state": "S12",
-  "stateName": "신내운수",
-  "sourceRoute": "/world/Cast-State-12#인물-소두감",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0303",
   "birthDate": "2101-11-10",
   "birthday": "11-10",
   "age": 25,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-12.json#/content/105",
-    "lore/characters/Cast-State-12.json#/content/107"
-  ],
-  "familyTree": {
-    "personId": "K302",
-    "nodes": [
-      {
-        "id": "K302",
-        "personId": "K302",
-        "kind": "person",
-        "name": "소두감",
-        "birthDate": "2101-11-10",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K302"
-          },
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-소두감-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 유치선 정비사, 안도한의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-소두감-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0303"
-      },
-      {
-        "id": "FH-K302-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "소승영",
-        "lineage": {
-          "surname": "소",
-          "bongwan": "진주",
-          "clan": "c18c-c9c4-c8fc"
-        },
-        "birthDate": "2071-11-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-소두감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2109,
-            "summary": "소승영은 신정 차량기지에서 유치선 배차표·정비 일지 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-소두감-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K302-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "소승윤",
-        "lineage": {
-          "surname": "소",
-          "bongwan": "진주",
-          "clan": "c18c-c9c4-c8fc"
-        },
-        "birthDate": "2041-11-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-소두감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2079,
-            "summary": "소승윤은 신정 차량기지에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-소두감-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K302-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "소승우",
-        "lineage": {
-          "surname": "소",
-          "bongwan": "진주",
-          "clan": "c18c-c9c4-c8fc"
-        },
-        "birthDate": "2011-11-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-소두감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "소승우는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-소두감-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K302-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준은",
-        "birthDate": "2071-11-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-소두감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2109,
-            "summary": "최준은은 신정 차량기지에서 유치선 배차표·정비 일지 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-소두감-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K302-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정현도",
-        "birthDate": "2041-11-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-소두감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2079,
-            "summary": "정현도는 신정 차량기지에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-소두감-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K302-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤준준",
-        "birthDate": "2011-11-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-소두감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤준준은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-소두감-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K302-P-01:K302:biological",
-        "from": "FH-K302-P-01",
-        "to": "K302",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-소두감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K302-P-02:FH-K302-P-01:biological",
-        "from": "FH-K302-P-02",
-        "to": "FH-K302-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-소두감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K302-P-03:FH-K302-P-02:biological",
-        "from": "FH-K302-P-03",
-        "to": "FH-K302-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-소두감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K302-M-01:K302:biological",
-        "from": "FH-K302-M-01",
-        "to": "K302",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-소두감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K302-M-02:FH-K302-M-01:biological",
-        "from": "FH-K302-M-02",
-        "to": "FH-K302-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-소두감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K302-M-03:FH-K302-M-02:biological",
-        "from": "FH-K302-M-03",
-        "to": "FH-K302-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-소두감-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c18c-c9c4-c8fc",
+    "name": "진주 소씨",
+    "crest": "clan-crests/c18c-c9c4-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "스물다섯 살 소두감의 군 기재는 도봉구 부대 지휘관, 대위다. 도봉산역에서 도봉산 테두리 감시초소 다섯 곳의 교대를 짜고, 작전 명령마다 제 도장 하나만 찍는다. 국회의원의 추천과 국방부의 임명으로 받은 자리여서, 그는 초소에서 올라온 보고를 구청에 먼저 보낼지 국방부에 먼저 보낼지 매번 장부 순서대로 정한다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "구 부대 지휘관",
+    "품계": "대위",
+    "생업": "군 지휘",
+    "일하는 역": "도봉산역",
+    "잠자는 역": "도봉산역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "스물다섯 살 소두감의 군 기재는 도봉구 부대 지휘관, 대위다. 도봉산역에서 도봉산 테두리 감시초소 다섯 곳의 교대를 짜고, 작전 명령마다 제 도장 하나만 찍는다. 국회의원의 추천과 국방부의 임명으로 받은 자리여서, 그는 초소에서 올라온 보고를 구청에 먼저 보낼지 국방부에 먼저 보낼지 매번 장부 순서대로 정한다.",
+    "관직": "직함 구 부대 지휘관. 직위 구 부대 지휘관 · 도봉산역. 품계 대위. 일하는 역 도봉산역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": -25,
+    "무력": 10,
+    "물질": 10,
+    "공동": 25,
+    "원칙": 25,
+    "공개": 5,
+    "자격": 45,
+    "분산": -10,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": 30,
+    "위험": -35,
+    "과시": -25,
+    "지속": 20,
+    "지향": "동성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0303",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 4,
         "effective": 4
       },
-      "management": {
+      "martial": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 9,
-        "effective": 9
+      "stewardship": {
+        "base": 4,
+        "effective": 4
+      },
+      "intrigue": {
+        "base": 5,
+        "effective": 5
       },
       "learning": {
-        "base": 9,
-        "effective": 9
+        "base": 4,
+        "effective": 4
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 11,
+        "effective": 11
       }
     },
-    "skills": [
-      {
-        "id": "k302-coupler-maintenance",
-        "name": {
-          "ko": "연결기 정비",
-          "en": "Coupler maintenance"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k302-priority",
-        "name": {
-          "ko": "정비 서명 필요",
-          "en": "Requires maintenance signatures"
-        },
-        "description": {
-          "ko": "소두감은 무기 발견 뒤 출고 스위치를 잠그고 연결기를 손본다. 배차 승인만으로 정비를 건너뛰는 것을 거부한다.",
-          "en": "Sodugam locked the release switch after weapons were found and maintains couplers. Dispatch approval cannot replace maintenance."
-        },
-        "behavior": {
-          "ko": "배차표와 정비 일지를 같은 칠판에 붙이고, 의료열차 우선권은 장세화의 부서 날인과 정비 서명이 함께 있을 때만 인정한다.",
-          "en": "Office. Rank: convoy hand. Title: siding mechanic, duty officer of An Dohan. He pasted the dispatch sheet and the maintenance log on one chalkboard and honored the medical train's priority only when Jang Sehwa's departmental stamp and his maintenance signature stood together."
-        },
-        "stress": {
-          "ko": "정비 안 된 칸이 의료열차로 나가 신내운수가 창동과 암사 사이 하역장으로 떨어지는 것.",
-          "en": "Fear. That an unmaintained car would go out as a medical train and the transfer city would fall into a freight yard between Changdong and Amsa."
-        },
-        "relationship": {
-          "ko": "안도한의 배차 실무를 유치선에서 받고, 국소의 기지 당직과 공구를 나눈다. 이홍원의 북부 차륜 교환 시각에 맞춰 연결기를 손본다.",
-          "en": "Relations. Received An Dohan's dispatch work at the siding and shared the depot duty and tools with Guk So. Tuned the couplers to I Hongwon's northern wheel-exchange hours."
-        },
-        "effects": []
-      },
-      {
-        "id": "k302-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 호송원. 직함은 유치선 정비사, 안도한의 실무 담당자. 배차표와 정비 일지를 같은 칠판에 붙이고, 의료열차 우선권은 장세화의 부서 날인과 정비 서명이 함께 있을 때만 인정한다.",
-          "en": "Office. Rank: convoy hand. Title: siding mechanic, duty officer of An Dohan. He pasted the dispatch sheet and the maintenance log on one chalkboard and honored the medical train's priority only when Jang Sehwa's departmental stamp and his maintenance signature stood together."
-        },
-        "stress": {
-          "ko": "공포. 정비 안 된 칸이 의료열차로 나가 신내운수가 창동과 암사 사이 하역장으로 떨어지는 것.",
-          "en": "Fear. That an unmaintained car would go out as a medical train and the transfer city would fall into a freight yard between Changdong and Amsa."
-        },
-        "relationship": {
-          "ko": "관계. 안도한의 배차 실무를 유치선에서 받고, 국소의 기지 당직과 공구를 나눈다. 이홍원의 북부 차륜 교환 시각에 맞춰 연결기를 손본다.",
-          "en": "Relations. Received An Dohan's dispatch work at the siding and shared the depot duty and tools with Guk So. Tuned the couplers to I Hongwon's northern wheel-exchange hours."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "소두감은 무기 발견 뒤 출고 스위치를 잠그고 연결기를 손본다. 배차 승인만으로 정비를 건너뛰는 것을 거부한다.",
-      "en": "Sodugam locked the release switch after weapons were found and maintains couplers. Dispatch approval cannot replace maintenance."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -525,85 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c18c-c9c4-c8fc",
-    "name": "진주 소씨",
-    "crest": "clan-crests/c18c-c9c4-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -25,
-    "개방": 30,
-    "무력": -25,
-    "물질": 15,
-    "공동": 20,
-    "원칙": 5,
-    "공개": 30,
-    "자격": 30,
-    "분산": 40,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": 30,
-    "위험": -35,
-    "과시": -25,
-    "지속": 20,
-    "지향": "동성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "유치선 배차표·정비 일지 대조",
-    "소속": "신내운수",
-    "품계": "호송원",
-    "직함": "유치선 정비사, 안도한의 실무 담당자",
-    "가치관": "권위 −25 | 개방 30 | 무력 −25 | 물질 15 | 공동 20 | 원칙 5 | 공개 30 | 자격 30 | 분산 40 | 변혁 −5",
-    "욕망": "갈망 15 | 독점 30 | 위험 −35 | 과시 −25 | 지속 20 | 지향 동성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2101-11-10에 태어났다. 신정 차량기지에서 자랐다. 2126년 개막에는 유치선 정비사, 안도한의 실무 담당자 당직을 맡으며, 직위 인수 기록에는 탈선 직전 결함 보고로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 소두감의 유치선 배차표·정비 일지 대조 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
-    "관직": "품계 호송원. 직함은 유치선 정비사, 안도한의 실무 담당자. 배차표와 정비 일지를 같은 칠판에 붙이고, 의료열차 우선권은 장세화의 부서 날인과 정비 서명이 함께 있을 때만 인정한다.",
-    "일화": "의료열차에서 암사제 무기가 나오자 유치선 정비창을 봉쇄하고 출고 스위치를 잠갔다.",
-    "관계": "안도한의 배차 실무를 유치선에서 받고, 국소의 기지 당직과 공구를 나눈다. 이홍원의 북부 차륜 교환 시각에 맞춰 연결기를 손본다.",
-    "야망": "신내 기지 유치선의 정비를 배차조 단독이 아니라 정비 서명과 함께 열어, 중립 호송 약정의 실제 시각표를 현장 공구로 지탱하려 한다.",
-    "공포": "정비 안 된 칸이 의료열차로 나가 신내운수가 창동과 암사 사이 하역장으로 떨어지는 것.",
-    "개입": "봉쇄된 유치선의 실제 화물을 확인하거나, 정비 서명을 위조한 출고를 폭로할 수 있다."
-  },
-  "biography": "2101-11-10생인 소두감은 시각표의 빈칸을 참지 못하고, 제동과 연결기를 건너뛴 출고를 모욕처럼 기억한다. 말단 노선의 지연을 정치 순위로 포장하는 말을 거부한다.\n\n- 생업: 유치선 배차표·정비 일지 대조\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 유치선 정비사, 안도한의 실무 담당자\n**생애.** 2101-11-10에 태어났다. 신정 차량기지에서 자랐다. 2126년 개막에는 유치선 정비사, 안도한의 실무 담당자 당직을 맡으며, 직위 인수 기록에는 탈선 직전 결함 보고로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 소두감의 유치선 배차표·정비 일지 대조 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 호송원. 직함은 유치선 정비사, 안도한의 실무 담당자. 배차표와 정비 일지를 같은 칠판에 붙이고, 의료열차 우선권은 장세화의 부서 날인과 정비 서명이 함께 있을 때만 인정한다.\n\n**일화.** 의료열차에서 암사제 무기가 나오자 유치선 정비창을 봉쇄하고 출고 스위치를 잠갔다.\n\n**관계.** 안도한의 배차 실무를 유치선에서 받고, 국소의 기지 당직과 공구를 나눈다. 이홍원의 북부 차륜 교환 시각에 맞춰 연결기를 손본다.\n\n**야망.** 신내 기지 유치선의 정비를 배차조 단독이 아니라 정비 서명과 함께 열어, 중립 호송 약정의 실제 시각표를 현장 공구로 지탱하려 한다.\n\n**공포.** 정비 안 된 칸이 의료열차로 나가 신내운수가 창동과 암사 사이 하역장으로 떨어지는 것.\n\n**개입.** 봉쇄된 유치선의 실제 화물을 확인하거나, 정비 서명을 위조한 출고를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −25 | 물질 15 | 공동 20 | 원칙 5 | 공개 30 | 자격 30 | 분산 40 | 변혁 −5\n- 욕망: 갈망 15 | 독점 30 | 위험 −35 | 과시 −25 | 지속 20 | 지향 동성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-12"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "소두감",
-        "type": "계약",
-        "to": "안도한",
-        "basis": "안도한의 배차 실무를 유치선에서 받고"
-      },
-      {
-        "from": "소두감",
-        "type": "계약",
-        "to": "국소",
-        "basis": "국소의 기지 당직과 공구를 나눈다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "민강현",
-        "type": "계약",
-        "to": "소두감",
-        "basis": "민강현은 의무호송의 유치선 체류 시각을 소두감에게 전한다. 소두감은 배차표와 정비 일지를 확인해 정비로 머문 시간과 실제 출고 시간을 구분한다."
-      },
-      {
-        "from": "국소",
-        "type": "계약",
-        "to": "소두감",
-        "basis": "소두감의 정비 창과 당직을 나누고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

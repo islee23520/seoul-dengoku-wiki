@@ -1,385 +1,105 @@
 {
   "id": "person-0362",
   "name": "수지완",
-  "title": "구의역 대합실 거점장",
-  "position": "구의수비대 구의역 대합실 거점장",
+  "title": "구 부대 지휘관",
+  "position": "구 부대 지휘관 · 구의역",
   "characterId": "K361",
-  "rank": "현장책임자",
-  "commonTier": "T4",
-  "occupation": "대합실 급수 시간·통행 대기표 게시",
+  "rank": "소령",
+  "commonTier": "T5",
+  "occupation": "군 지휘",
   "gender": "남성",
   "stage": "S2",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-수지완",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0362",
   "birthDate": "2083-10-12",
   "birthday": "10-12",
   "age": 43,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/17"
-  ],
-  "familyTree": {
-    "personId": "K361",
-    "nodes": [
-      {
-        "id": "K361",
-        "personId": "K361",
-        "kind": "person",
-        "name": "수지완",
-        "birthDate": "2083-10-12",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K361"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-수지완-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 구의수비대 구의역 대합실 거점장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-수지완-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0362"
-      },
-      {
-        "id": "FH-K361-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "수승현",
-        "lineage": {
-          "surname": "수",
-          "bongwan": "한양",
-          "clan": "c218-d55c-c591"
-        },
-        "birthDate": "2053-10-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-수지완-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2091,
-            "summary": "수승현은 대합실 당직에서 대합실 급수 시간·통행 대기표 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-수지완-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K361-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "수승영",
-        "lineage": {
-          "surname": "수",
-          "bongwan": "한양",
-          "clan": "c218-d55c-c591"
-        },
-        "birthDate": "2023-10-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-수지완-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "수승영은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-수지완-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K361-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준완",
-        "birthDate": "2053-10-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-수지완-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2091,
-            "summary": "이준완은 대합실 당직에서 대합실 급수 시간·통행 대기표 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-수지완-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K361-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준성",
-        "birthDate": "2023-10-12",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-수지완-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최준성은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-수지완-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K361-P-01:K361:biological",
-        "from": "FH-K361-P-01",
-        "to": "K361",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-수지완-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K361-P-02:FH-K361-P-01:biological",
-        "from": "FH-K361-P-02",
-        "to": "FH-K361-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-수지완-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K361-M-01:K361:biological",
-        "from": "FH-K361-M-01",
-        "to": "K361",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-수지완-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K361-M-02:FH-K361-M-01:biological",
-        "from": "FH-K361-M-02",
-        "to": "FH-K361-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-수지완-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c218-d55c-c591",
+    "name": "한양 수씨",
+    "crest": "clan-crests/c218-d55c-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "장부에는 광진구 자양2동 구의역 기재, 국군 소령으로 적혀 있다. 한양 수씨인 마흔세 살 남성이다. 구의 취수구와 그 펌프실이 그의 부대 몫이어서, 경계 분대는 취수구조의 교대 시각에 맞춰 바뀐다. 취수구는 총보다 귀하다는 말을 그는 병사들에게 날마다 되풀이한다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "구 부대 지휘관",
+    "품계": "소령",
+    "생업": "군 지휘",
+    "일하는 역": "구의역",
+    "잠자는 역": "구의역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "장부에는 광진구 자양2동 구의역 기재, 국군 소령으로 적혀 있다. 한양 수씨인 마흔세 살 남성이다. 구의 취수구와 그 펌프실이 그의 부대 몫이어서, 경계 분대는 취수구조의 교대 시각에 맞춰 바뀐다. 취수구는 총보다 귀하다는 말을 그는 병사들에게 날마다 되풀이한다.",
+    "관직": "직함 구 부대 지휘관. 직위 구 부대 지휘관 · 구의역. 품계 소령. 일하는 역 구의역."
+  },
+  "values": {
+    "권위": 95,
+    "개방": -75,
+    "무력": 75,
+    "물질": 15,
+    "공동": 40,
+    "원칙": 15,
+    "공개": -40,
+    "자격": 10,
+    "분산": -65,
+    "변혁": -35
+  },
+  "desire": {
+    "갈망": 25,
+    "독점": -35,
+    "위험": -30,
+    "과시": -10,
+    "지속": 20,
+    "지향": "동성",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0362",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 10,
-        "effective": 10
-      },
-      "strategy": {
-        "base": 9,
-        "effective": 9
-      },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
-      },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
-      "learning": {
-        "base": 10,
-        "effective": 10
-      },
-      "prowess": {
+      "diplomacy": {
         "base": 4,
         "effective": 4
       },
-      "endurance": {
-        "base": 8,
-        "effective": 8
-      }
-    },
-    "skills": [
-      {
-        "id": "transit-queue-administration",
-        "name": {
-          "ko": "통행 대기표 운영",
-          "en": "Transit queue administration"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "의무호송 먼저",
-          "en": "Medical transport first"
-        },
-        "description": {
-          "ko": "급수와 통행 순서를 공개하고 군수 화차를 의무호송 뒤에 둔다. 혼입 상자의 해결 결과는 적혀 있지 않다.",
-          "en": "Water and transit order are published, with military freight behind medical transport. Resolution of the mixed-in crate is not recorded."
-        },
-        "behavior": {
-          "ko": "승강장 진동으로 교량 무게를 가늠하고, 군수 화차를 제한 급수 대기열 앞으로 끌어오라는 명령을 모욕으로 듣는다. 온화하나 봉화가 뜨면 방송을 직접 잡는다.",
-          "en": "She gauged a bridge's weight by the platform's vibration and heard the order to pull munitions cars ahead of the restricted-water waiting line as an insult. Mild in manner, she took the broadcast herself whenever the beacon rose."
-        },
-        "stress": {
-          "ko": "공포. 상수관 파손 소문만으로 대합실이 봉쇄되고 주민이 후문 밀차로 흩어지는 것.",
-          "en": "Fear. That rumor of a water-main break alone would blockade the concourse and scatter the residents into back-gate handcars."
-        },
-        "relationship": {
-          "ko": "관계. 안기준의 교량 일정을 승강장 칠판에 옮기고, 영한뫼의 의무 대기와 줄을 나눈다. 남호성의 호송 정차를 우선 칸에 둔다.",
-          "en": "Relations. Moved An Giun's bridge schedule onto the platform chalkboard and split the queue with Yeong Hanmoe's medical wait. Put Nam Hoseong's convoy stops in the priority column."
-        },
-        "effects": []
+      "martial": {
+        "base": 11,
+        "effective": 11
       },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 현장책임자. 직함은 구의수비대 구의역 대합실 거점장. 대합실 급수 시간과 통행 대기표를 매일 공개하고, 군수 화차는 의무호송이 떠난 뒤에만 승강장에 붙인다.",
-          "en": "Office. Rank: company commander. Title: Guui Station concourse outpost chief. She published the concourse water-supply hours and the passage waiting lists daily and coupled munitions cars to the platform only after the medical convoy had left."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 현장책임자. 직함은 구의수비대 구의역 대합실 거점장. 대합실 급수 시간과 통행 대기표를 매일 공개하고, 군수 화차는 의무호송이 떠난 뒤에만 승강장에 붙인다.",
-          "en": "Recorded duty and limits: Office. Rank: company commander. Title: Guui Station concourse outpost chief. She published the concourse water-supply hours and the passage waiting lists daily and coupled munitions cars to the platform only after the medical convoy had left."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 상수관 파손 소문만으로 대합실이 봉쇄되고 주민이 후문 밀차로 흩어지는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That rumor of a water-main break alone would blockade the concourse and scatter the residents into back-gate handcars."
-        },
-        "relationship": {
-          "ko": "관계. 안기준의 교량 일정을 승강장 칠판에 옮기고, 영한뫼의 의무 대기와 줄을 나눈다. 남호성의 호송 정차를 우선 칸에 둔다.",
-          "en": "Relations. Moved An Giun's bridge schedule onto the platform chalkboard and split the queue with Yeong Hanmoe's medical wait. Put Nam Hoseong's convoy stops in the priority column."
-        },
-        "effects": []
+      "stewardship": {
+        "base": 4,
+        "effective": 4
+      },
+      "intrigue": {
+        "base": 5,
+        "effective": 5
+      },
+      "learning": {
+        "base": 4,
+        "effective": 4
+      },
+      "prowess": {
+        "base": 10,
+        "effective": 10
       }
-    ],
-    "narrative": {
-      "ko": "급수와 통행 순서를 공개하고 군수 화차를 의무호송 뒤에 둔다. 혼입 상자의 해결 결과는 적혀 있지 않다.",
-      "en": "Water and transit order are published, with military freight behind medical transport. Resolution of the mixed-in crate is not recorded."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,72 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c218-d55c-c591",
-    "name": "한양 수씨",
-    "crest": "clan-crests/c218-d55c-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 50,
-    "개방": -20,
-    "무력": 40,
-    "물질": 20,
-    "공동": 35,
-    "원칙": -5,
-    "공개": -15,
-    "자격": -5,
-    "분산": -15,
-    "변혁": -15
-  },
-  "desire": {
-    "갈망": 25,
-    "독점": -35,
-    "위험": -30,
-    "과시": -10,
-    "지속": 20,
-    "지향": "동성",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "대합실 급수 시간·통행 대기표 게시",
-    "소속": "구의수비대",
-    "품계": "현장책임자",
-    "직함": "구의수비대 구의역 대합실 거점장",
-    "가치관": "권위 50 | 개방 −20 | 무력 40 | 물질 20 | 공동 35 | 원칙 −5 | 공개 −15 | 자격 −5 | 분산 −15 | 변혁 −15",
-    "욕망": "갈망 25 | 독점 −35 | 위험 −30 | 과시 −10 | 지속 20 | 지향 동성 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2083-10-12에 태어났다. 2126년 개막 현재 구의수비대 구의역 대합실 거점장 직무를 맡아 대합실 급수 시간·통행 대기표 게시 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의1동의 대합실 급수 시간·통행 대기표 게시 창구가 수지완의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 현장책임자. 직함은 구의수비대 구의역 대합실 거점장. 대합실 급수 시간·통행 대기표 게시 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
-    "일화": "척후 보고가 적대행위로 퍼진 날, 구의 대합실 대기표에 군수 문장 상자가 한 줄 끼어 있었다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
-    "관계": "안기준의 교량 일정을 승강장 칠판에 옮기고, 영한뫼의 의무 대기와 줄을 나눈다. 남호성의 호송 정차를 우선 칸에 둔다.",
-    "야망": "수지완은 구의수비대 구의역 대합실 거점장 직무에서 대합실 급수 시간·통행 대기표 게시 기록을 공개 인계표와 맞물리게 하려 한다.",
-    "공포": "구의수비대 구의역 대합실 거점장 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
-    "개입": "대합실 화물을 공개 검수하거나, 급수 줄을 군수 대기열과 분리할 수 있다. 수지완의 대합실 급수 시간·통행 대기표 게시 원장을 대조해 다음 인계의 증거를 세울 수 있다."
-  },
-  "biography": "수지완은 대합실 급수 시간·통행 대기표 게시 기록을 손에 익힌 구의수비대 인물이다. 승강장 진동으로 교량 무게를 가늠하고, 군수 화차를 제한 급수 대기열 앞으로 끌어오라는 명령을 모욕으로 듣는다. 온화하나 봉화가 뜨면 방송을 직접 잡는다.\n\n- 생업: 대합실 급수 시간·통행 대기표 게시\n- 소속: 구의수비대\n- 품계: 현장책임자\n- 직함: 구의수비대 구의역 대합실 거점장\n**생애.** 2083-10-12에 태어났다. 2126년 개막 현재 구의수비대 구의역 대합실 거점장 직무를 맡아 대합실 급수 시간·통행 대기표 게시 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의1동의 대합실 급수 시간·통행 대기표 게시 창구가 수지완의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 현장책임자. 직함은 구의수비대 구의역 대합실 거점장. 대합실 급수 시간·통행 대기표 게시 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 척후 보고가 적대행위로 퍼진 날, 구의 대합실 대기표에 군수 문장 상자가 한 줄 끼어 있었다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 안기준의 교량 일정을 승강장 칠판에 옮기고, 영한뫼의 의무 대기와 줄을 나눈다. 남호성의 호송 정차를 우선 칸에 둔다.\n\n**야망.** 수지완은 구의수비대 구의역 대합실 거점장 직무에서 대합실 급수 시간·통행 대기표 게시 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 구의수비대 구의역 대합실 거점장 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 대합실 화물을 공개 검수하거나, 급수 줄을 군수 대기열과 분리할 수 있다. 수지완의 대합실 급수 시간·통행 대기표 게시 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −20 | 무력 40 | 물질 20 | 공동 35 | 원칙 −5 | 공개 −15 | 자격 −5 | 분산 −15 | 변혁 −15\n- 욕망: 갈망 25 | 독점 −35 | 위험 −30 | 과시 −10 | 지속 20 | 지향 동성 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-14"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "수지완",
-        "type": "계약",
-        "to": "안기준",
-        "basis": "안기준의 교량 일정을 승강장 칠판에 옮기고"
-      },
-      {
-        "from": "수지완",
-        "type": "계약",
-        "to": "영한뫼",
-        "basis": "영한뫼의 의무 대기와 줄을 나눈다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

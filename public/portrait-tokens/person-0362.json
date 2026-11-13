@@ -3,26 +3,27 @@
   "personId": "person-0362",
   "characterId": "K361",
   "name": "수지완",
-  "stateId": "S14",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "구의수비대 구의역 대합실 거점장"
+    "role": "구 부대 지휘관 · 구의역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short cropped hair",
-    "upper": "charcoal short wool battle-dress style jacket with buttoned cuffs, with a light knitted scarf",
-    "outfit": "charcoal short wool battle-dress style jacket with buttoned cuffs, with a light knitted scarf",
+    "upper": "altered pre-blackout camouflage winter suit",
+    "outfit": "altered pre-blackout camouflage winter suit",
     "palette": [
-      "charcoal",
-      "olive drab"
+      "olive drab",
+      "khaki",
+      "charcoal"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "olive drab canvas work trousers tucked into boots",
+    "lower": "camouflage winter trousers tucked into boots",
     "footwear": "lace-up leather combat boots",
-    "accessories": "small hand lamp clipped to a leather belt"
+    "accessories": "rank insignia on the collar and a service-number tag on a chain"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -173,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "soft wool field cap without badge",
+        "value": "padded winter field cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "charcoal short wool battle-dress style jacket with buttoned cuffs, with a light knitted scarf",
+        "value": "altered pre-blackout camouflage winter suit",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "olive drab canvas work trousers tucked into boots",
+        "value": "camouflage winter trousers tucked into boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
         "value": "lace-up leather combat boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "closed turn-down collar",
+        "value": "closed padded collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "small hand lamp clipped to a leather belt",
+        "value": "rank insignia on the collar and a service-number tag on a chain",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
-        "derived": true
-      },
-      "shape": {
-        "value": "compact cylindrical lamp",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull steel and dark brown leather",
+        "value": "dull steel and black",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "steel, leather",
+        "value": "steel, embroidered cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "clipped at the belt",
+        "value": "sewn to the collar and hung at the neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(guard)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small insignia and an oval tag",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 수지완, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; dark brown hair; short length. build: sturdy; skin: light warm beige. headwear: soft wool field cap without badge; upper garment: charcoal short wool battle-dress style jacket with buttoned cuffs, with a light knitted scarf; neckline: closed turn-down collar. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: charcoal, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 수지완, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; dark brown hair; short length. build: sturdy; skin: light warm beige. headwear: padded winter field cap; upper garment: altered pre-blackout camouflage winter suit; neckline: closed padded collar. accessories: rank insignia on the collar and a service-number tag on a chain; worn as sewn to the collar and hung at the neck. color palette: olive drab, khaki, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 수지완, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; dark brown hair; short length. build: sturdy; skin: light warm beige; average adult male height. headwear: soft wool field cap without badge; upper garment: charcoal short wool battle-dress style jacket with buttoned cuffs, with a light knitted scarf; neckline: closed turn-down collar; lower garment: olive drab canvas work trousers tucked into boots; footwear: lace-up leather combat boots. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: charcoal, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 수지완, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; dark brown hair; short length. build: sturdy; skin: light warm beige; average adult male height. headwear: padded winter field cap; upper garment: altered pre-blackout camouflage winter suit; neckline: closed padded collar; lower garment: camouflage winter trousers tucked into boots; footwear: lace-up leather combat boots. accessories: rank insignia on the collar and a service-number tag on a chain; worn as sewn to the collar and hung at the neck. color palette: olive drab, khaki, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 수지완, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; dark brown hair; short length. build: sturdy; skin: light warm beige; average adult male height. headwear: soft wool field cap without badge; upper garment: charcoal short wool battle-dress style jacket with buttoned cuffs, with a light knitted scarf; neckline: closed turn-down collar; lower garment: olive drab canvas work trousers tucked into boots; footwear: lace-up leather combat boots. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: charcoal, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 수지완, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; dark brown hair; short length. build: sturdy; skin: light warm beige; average adult male height. headwear: padded winter field cap; upper garment: altered pre-blackout camouflage winter suit; neckline: closed padded collar; lower garment: camouflage winter trousers tucked into boots; footwear: lace-up leather combat boots. accessories: rank insignia on the collar and a service-number tag on a chain; worn as sewn to the collar and hung at the neck. color palette: olive drab, khaki, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 수지완, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; dark brown hair; short length. build: sturdy; skin: light warm beige; average adult male height. headwear: soft wool field cap without badge; upper garment: charcoal short wool battle-dress style jacket with buttoned cuffs, with a light knitted scarf; neckline: closed turn-down collar; lower garment: olive drab canvas work trousers tucked into boots; footwear: lace-up leather combat boots. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: charcoal, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 수지완, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; dark brown hair; short length. build: sturdy; skin: light warm beige; average adult male height. headwear: padded winter field cap; upper garment: altered pre-blackout camouflage winter suit; neckline: closed padded collar; lower garment: camouflage winter trousers tucked into boots; footwear: lace-up leather combat boots. accessories: rank insignia on the collar and a service-number tag on a chain; worn as sewn to the collar and hung at the neck. color palette: olive drab, khaki, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 수지완, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; dark brown hair; short length. build: sturdy; skin: light warm beige; average adult male height. headwear: soft wool field cap without badge; upper garment: charcoal short wool battle-dress style jacket with buttoned cuffs, with a light knitted scarf; neckline: closed turn-down collar; lower garment: olive drab canvas work trousers tucked into boots; footwear: lace-up leather combat boots. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: charcoal, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 수지완, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; dark brown hair; short length. build: sturdy; skin: light warm beige; average adult male height. headwear: padded winter field cap; upper garment: altered pre-blackout camouflage winter suit; neckline: closed padded collar; lower garment: camouflage winter trousers tucked into boots; footwear: lace-up leather combat boots. accessories: rank insignia on the collar and a service-number tag on a chain; worn as sewn to the collar and hung at the neck. color palette: olive drab, khaki, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

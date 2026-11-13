@@ -1,505 +1,140 @@
 {
   "id": "person-0132",
   "name": "나효원",
-  "title": "암사역 대합실 역장",
-  "position": "암사역 대합실 역장",
+  "title": "암사역 정비장",
+  "position": "암사역 정비장 · 아크",
   "characterId": "K131",
-  "rank": "중대장",
+  "rank": "정비장",
   "commonTier": "T4",
-  "occupation": "대합실 급수 창구·대기표 관리",
+  "occupation": "정비대 통솔",
   "gender": "여성",
   "stage": "S2",
-  "state": "S05",
-  "stateName": "동방사",
-  "sourceRoute": "/world/Cast-State-05#인물-나효원",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0132",
   "birthDate": "2094-06-11",
   "birthday": "06-11",
   "age": 32,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-05.json#/content/27",
-    "lore/characters/Cast-State-05.json#/content/29"
-  ],
-  "familyTree": {
-    "personId": "K131",
-    "nodes": [
-      {
-        "id": "K131",
-        "personId": "K131",
-        "kind": "person",
-        "name": "나효원",
-        "birthDate": "2094-06-11",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K131"
-          },
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-나효원-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 암사역 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-나효원-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0132"
-      },
-      {
-        "id": "FH-K131-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "나승석",
-        "lineage": {
-          "surname": "나",
-          "bongwan": "나주",
-          "clan": "b098-b098-c8fc-7f85"
-        },
-        "birthDate": "2064-06-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-나효원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2102,
-            "summary": "나승석은 대합실 당직에서 대합실 급수 창구·대기표 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-나효원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K131-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "나승준",
-        "lineage": {
-          "surname": "나",
-          "bongwan": "나주",
-          "clan": "b098-b098-c8fc-7f85"
-        },
-        "birthDate": "2034-06-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-나효원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "나승준은 대합실 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-나효원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K131-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "나승호",
-        "lineage": {
-          "surname": "나",
-          "bongwan": "나주",
-          "clan": "b098-b098-c8fc-7f85"
-        },
-        "birthDate": "2004-06-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-나효원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "나승호는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-나효원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K131-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김현민",
-        "birthDate": "2064-06-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-나효원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2102,
-            "summary": "김현민은 대합실 당직에서 대합실 급수 창구·대기표 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-나효원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K131-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박현민",
-        "birthDate": "2034-06-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-나효원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "박현민은 대합실 당직에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-나효원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K131-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "이현호",
-        "birthDate": "2004-06-11",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-나효원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이현호는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-나효원-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K131-P-01:K131:biological",
-        "from": "FH-K131-P-01",
-        "to": "K131",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-나효원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K131-P-02:FH-K131-P-01:biological",
-        "from": "FH-K131-P-02",
-        "to": "FH-K131-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-나효원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K131-P-03:FH-K131-P-02:biological",
-        "from": "FH-K131-P-03",
-        "to": "FH-K131-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-나효원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K131-M-01:K131:biological",
-        "from": "FH-K131-M-01",
-        "to": "K131",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-나효원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K131-M-02:FH-K131-M-01:biological",
-        "from": "FH-K131-M-02",
-        "to": "FH-K131-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-나효원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K131-M-03:FH-K131-M-02:biological",
-        "from": "FH-K131-M-03",
-        "to": "FH-K131-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-나효원-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b098-b098-c8fc-7f85",
+    "name": "나주 나씨",
+    "crest": "clan-crests/b098-b098-c8fc-7f85.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "나효원이 암사역 정비대를 맡고 처음 한 일은, 취수구 교대를 마친 사람들이 젖은 토시를 벗어 말릴 자리를 정비대 곁에 만든 것이다. 서른두 살이고, 셋째 부위의 땀은 아직 실이 새것이다. 강동 곁집 어른 박하율이 그에게 연장 이름부터 가르쳤고, 그는 지금도 맞춤 날 명부를 천호의 박하율에게 먼저 보인다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "암사역 정비장",
+    "품계": "정비장",
+    "생업": "정비대 통솔",
+    "일하는 역": "암사역",
+    "잠자는 역": "암사역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 3
+  },
+  "sections": {
+    "생애": "나효원이 암사역 정비대를 맡고 처음 한 일은, 취수구 교대를 마친 사람들이 젖은 토시를 벗어 말릴 자리를 정비대 곁에 만든 것이다. 서른두 살이고, 셋째 부위의 땀은 아직 실이 새것이다. 강동 곁집 어른 박하율이 그에게 연장 이름부터 가르쳤고, 그는 지금도 맞춤 날 명부를 천호의 박하율에게 먼저 보인다.",
+    "관직": "직함 암사역 정비장. 직위 암사역 정비장 · 아크. 품계 정비장. 일하는 역 암사역."
+  },
+  "values": {
+    "권위": 90,
+    "개방": -50,
+    "무력": 65,
+    "물질": -40,
+    "공동": 55,
+    "원칙": -25,
+    "공개": -85,
+    "자격": -50,
+    "분산": -85,
+    "변혁": 15
+  },
+  "desire": {
+    "갈망": -5,
+    "독점": 30,
+    "위험": -25,
+    "과시": 10,
+    "지속": -10,
+    "지향": "동성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0132",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "나효원",
+        "type": "지휘",
+        "to": "남휘강",
+        "basis": "암사2동 대피소장 남휘강의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "박하율",
+        "type": "스승과 제자",
+        "to": "나효원",
+        "basis": "암사역 정비장 나효원에게 연장 이름부터 가르친 스승"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K143",
+    "name": "남휘강",
+    "courtId": "court:K143",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 8,
-        "effective": 8
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "intrigue": {
         "base": 7,
         "effective": 7
-      }
-    },
-    "skills": [
-      {
-        "id": "k131-water-queue",
-        "name": {
-          "ko": "급수 대기표 관리",
-          "en": "Water queue management"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k131-choice",
-        "name": {
-          "ko": "급수 창구 우선",
-          "en": "Water access first"
-        },
-        "description": {
-          "ko": "창구 스탬프의 마른 자리로 대기 인원을 세고, 보호 동방사의 정차 방송을 급수 컵보다 앞에 두지 않는다. 분필이 짧아지면 방송을 줄인다.",
-          "en": "She counted the waiting crowd by dried stamp marks at the window and never put the protection escort's stop announcements ahead of the water cups. When the chalk ran short, she cut the broadcasts."
-        },
-        "behavior": {
-          "ko": "일화. 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 암사역 대합실 역장 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In 2125, when the accounts of two witnesses split, she opened a public confrontation. By this deed the signature of the Amsa Station concourse stationmaster post rose into the ledger."
-        },
-        "stress": {
-          "ko": "공포. 대합실 창구가 훈련장 정차 안내에 먹혀 급수 컵 줄이 교량 밑으로 스며 나가는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That the concourse window would be swallowed by training-ground stop notices and the water-cup line would seep out under the bridge. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 한보라의 출고 시각을 승강장 분필로 집행하며, 차나루의 의무소 봉쇄를 창구 스탬프로 알리는 동맹이다. 최도윤의 골목 대기 쪽지를 역 칠판 칸에 옮긴다.",
-          "en": "Relations. Executing Han Bora's release hours in platform chalk, allied with Cha Naru in announcing the clinic lockdown by window stamps. Moved Choi Doyun's alley waiting notes into the station chalkboard's column."
-        },
-        "effects": []
       },
-      {
-        "id": "k131-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 중대장. 직함은 암사역 대합실 역장. 급수 컵 줄이 창구를 한 바퀴 돌기 전에는 군수 칸 호각을 울리지 않고, 대기 쪽지는 스탬프가 찍힌 것만 칠판에 남긴다.",
-          "en": "Office. Rank: company commander. Title: Amsa Station concourse stationmaster. She did not sound the munitions-car whistle before the water-cup line circled the window once, and left only stamped waiting notes on the chalkboard."
-        },
-        "behavior": {
-          "ko": "관직. 품계 중대장. 직함은 암사역 대합실 역장. 급수 컵 줄이 창구를 한 바퀴 돌기 전에는 군수 칸 호각을 울리지 않고, 대기 쪽지는 스탬프가 찍힌 것만 칠판에 남긴다.",
-          "en": "Office. Rank: company commander. Title: Amsa Station concourse stationmaster. She did not sound the munitions-car whistle before the water-cup line circled the window once, and left only stamped waiting notes on the chalkboard."
-        },
-        "stress": {
-          "ko": "공포. 대합실 창구가 훈련장 정차 안내에 먹혀 급수 컵 줄이 교량 밑으로 스며 나가는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That the concourse window would be swallowed by training-ground stop notices and the water-cup line would seep out under the bridge. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 한보라의 출고 시각을 승강장 분필로 집행하며, 차나루의 의무소 봉쇄를 창구 스탬프로 알리는 동맹이다. 최도윤의 골목 대기 쪽지를 역 칠판 칸에 옮긴다.",
-          "en": "Relations. Executing Han Bora's release hours in platform chalk, allied with Cha Naru in announcing the clinic lockdown by window stamps. Moved Choi Doyun's alley waiting notes into the station chalkboard's column."
-        },
-        "effects": []
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "일화. 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 암사역 대합실 역장 자리의 서명이 장부에 올랐다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Anecdote. In 2125, when the accounts of two witnesses split, she opened a public confrontation. By this deed the signature of the Amsa Station concourse stationmaster post rose into the ledger. Titles and ambitions are not treated as accomplished authority or results."
     },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -509,7 +144,7 @@
         {
           "id": "right-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "head",
@@ -525,63 +160,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b098-b098-c8fc-7f85",
-    "name": "나주 나씨",
-    "crest": "clan-crests/b098-b098-c8fc-7f85.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 65,
-    "개방": -35,
-    "무력": 55,
-    "물질": 10,
-    "공동": 35,
-    "원칙": -15,
-    "공개": -40,
-    "자격": -15,
-    "분산": -55,
-    "변혁": -30
-  },
-  "desire": {
-    "갈망": -5,
-    "독점": 30,
-    "위험": -25,
-    "과시": 10,
-    "지속": -10,
-    "지향": "동성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "동방사",
-    "생업": "대합실 급수 창구·대기표 관리",
-    "품계": "중대장",
-    "직함": "암사역 대합실 역장",
-    "가치관": "권위 65 | 개방 −35 | 무력 55 | 물질 10 | 공동 35 | 원칙 −15 | 공개 −40 | 자격 −15 | 분산 −55 | 변혁 −30",
-    "욕망": "갈망 −5 | 독점 30 | 위험 −25 | 과시 10 | 지속 −10 | 지향 동성 | 결합 계약동거"
-  },
-  "sections": {
-    "관직": "품계 중대장. 직함은 암사역 대합실 역장. 급수 컵 줄이 창구를 한 바퀴 돌기 전에는 군수 칸 호각을 울리지 않고, 대기 쪽지는 스탬프가 찍힌 것만 칠판에 남긴다.\n\n일화. 나효원은 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다.",
-    "관계": "한보라의 출고 시각을 승강장 분필로 집행하며, 의무소 봉쇄를 창구 스탬프로 알리는 동맹이다. 최도윤의 골목 대기 쪽지를 역 칠판 칸에 옮긴다.",
-    "야망": "급수 컵과 진료 대기와 통행 스탬프가 한 창구에서 찍히게 해, 보호계약이 창구 밖에서 서명되지 않게 한다.\n\n공포. 나효원은 대합실 창구가 훈련장 정차 안내에 먹혀 급수 컵 줄이 교량 밑으로 스며 나가는 일을 두려워한다.",
-    "개입": "급수 컵 전용 창구를 등록소 안내보다 앞에 두거나, 마른 스탬프 자리를 조작한 손을 칠판에서 가릴 수 있다."
-  },
-  "biography": "나효원은 창구 스탬프의 마른 자리로 대기 인원을 세고, 보호 동방사의 정차 방송을 급수 컵보다 앞에 두지 않는다. 분필이 짧아지면 방송을 줄인다.\n\n- 소속: 동방사\n- 생업: 대합실 급수 창구·대기표 관리\n- 품계: 중대장\n- 직함: 암사역 대합실 역장\n생애. 나효원은 4세대에 태어났다. 나효원은 대합실 당직에서 자랐다. 나효원의 암사역 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 나효원은 암사2동과 연결된 업무에서 암사역 급수 컵과 진료 대기, 통행 스탬프 창구를 맡는다.\n\n**관직.** 품계 중대장. 직함은 암사역 대합실 역장. 급수 컵 줄이 창구를 한 바퀴 돌기 전에는 군수 칸 호각을 울리지 않고, 대기 쪽지는 스탬프가 찍힌 것만 칠판에 남긴다.\n\n일화. 나효원은 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다.\n\n**관계.** 한보라의 출고 시각을 승강장 분필로 집행하며, 의무소 봉쇄를 창구 스탬프로 알리는 동맹이다. 최도윤의 골목 대기 쪽지를 역 칠판 칸에 옮긴다.\n\n**야망.** 급수 컵과 진료 대기와 통행 스탬프가 한 창구에서 찍히게 해, 보호계약이 창구 밖에서 서명되지 않게 한다.\n\n공포. 나효원은 대합실 창구가 훈련장 정차 안내에 먹혀 급수 컵 줄이 교량 밑으로 스며 나가는 일을 두려워한다.\n\n**개입.** 급수 컵 전용 창구를 등록소 안내보다 앞에 두거나, 마른 스탬프 자리를 조작한 손을 칠판에서 가릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −35 | 무력 55 | 물질 10 | 공동 35 | 원칙 −15 | 공개 −40 | 자격 −15 | 분산 −55 | 변혁 −30\n- 욕망: 갈망 −5 | 독점 30 | 위험 −25 | 과시 10 | 지속 −10 | 지향 동성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-05"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "나효원",
-        "type": "지휘",
-        "to": "한보라",
-        "basis": "한보라의 출고 시각을 승강장 분필로 집행하며"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:암사",
+      "name": {
+        "ko": "암사역"
+      },
+      "holderPersonId": "K131",
+      "directLiegePersonId": "K143",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "암사",
+        "stationName": "암사"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1174058000",
+          "name": "암사2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

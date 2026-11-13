@@ -1,385 +1,105 @@
 {
   "id": "person-0269",
   "name": "순지민",
-  "title": "강제등록 행렬 이탈자",
-  "position": "강제등록 이탈 행자",
+  "title": "분대장",
+  "position": "분대장 · 미아역",
   "characterId": "K268",
-  "rank": "행자",
+  "rank": "중사",
   "commonTier": "T5",
-  "occupation": "강제등록 이탈 기록·교대 분리 증언",
+  "occupation": "징집 보병",
   "gender": "여성",
   "stage": "S3",
-  "state": "S10",
-  "stateName": "안국총림",
-  "sourceRoute": "/world/Cast-State-10#인물-순지민",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0269",
   "birthDate": "2074-05-13",
   "birthday": "05-13",
   "age": 52,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-10.json#/content/248"
-  ],
-  "familyTree": {
-    "personId": "K268",
-    "nodes": [
-      {
-        "id": "K268",
-        "personId": "K268",
-        "kind": "person",
-        "name": "순지민",
-        "birthDate": "2074-05-13",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K268"
-          },
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-순지민-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 강제등록 이탈 행자 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-순지민-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0269"
-      },
-      {
-        "id": "FH-K268-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "순승현",
-        "lineage": {
-          "surname": "순",
-          "bongwan": "홍산",
-          "clan": "c21c-d64d-c0b0-agreed-bbfc-second"
-        },
-        "birthDate": "2044-05-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-순지민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2082,
-            "summary": "순승현은 대합실 당직에서 강제등록 이탈 기록·교대 분리 증언 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-순지민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K268-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "순승영",
-        "lineage": {
-          "surname": "순",
-          "bongwan": "홍산",
-          "clan": "c21c-d64d-c0b0-agreed-bbfc-second"
-        },
-        "birthDate": "2014-05-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-순지민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "순승영은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-순지민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K268-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤현란",
-        "birthDate": "2044-05-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-순지민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2082,
-            "summary": "윤현란은 대합실 당직에서 강제등록 이탈 기록·교대 분리 증언 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-순지민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K268-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한현성",
-        "birthDate": "2014-05-13",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-순지민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한현성은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-10.json",
-                "anchor": "인물-순지민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K268-P-01:K268:biological",
-        "from": "FH-K268-P-01",
-        "to": "K268",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-순지민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K268-P-02:FH-K268-P-01:biological",
-        "from": "FH-K268-P-02",
-        "to": "FH-K268-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-순지민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K268-M-01:K268:biological",
-        "from": "FH-K268-M-01",
-        "to": "K268",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-순지민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K268-M-02:FH-K268-M-01:biological",
-        "from": "FH-K268-M-02",
-        "to": "FH-K268-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-10.json",
-            "anchor": "인물-순지민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c21c-d64d-c0b0",
+    "name": "홍산 순씨",
+    "crest": "clan-crests/c21c-d64d-c0b0.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "순지민은 쉰두 살이고, 강북구 부대에 중사 분대장으로 올라 있다. 미아역에서 북한산 테두리 쪽 감시초소까지 교대 인원을 데리고 오르내리며, 눈보라가 오면 출입구 안 대피 벽감에서 다음 교대를 기다린다. 그녀는 감시초소에서 본 것을 날짜와 시각과 방향 세 칸으로만 적고, 짐작은 적지 않는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "분대장",
+    "품계": "중사",
+    "생업": "징집 보병",
+    "일하는 역": "미아역",
+    "잠자는 역": "미아역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "순지민은 쉰두 살이고, 강북구 부대에 중사 분대장으로 올라 있다. 미아역에서 북한산 테두리 쪽 감시초소까지 교대 인원을 데리고 오르내리며, 눈보라가 오면 출입구 안 대피 벽감에서 다음 교대를 기다린다. 그녀는 감시초소에서 본 것을 날짜와 시각과 방향 세 칸으로만 적고, 짐작은 적지 않는다.",
+    "관직": "직함 분대장. 직위 분대장 · 미아역. 품계 중사. 일하는 역 미아역."
+  },
+  "values": {
+    "권위": 0,
+    "개방": -15,
+    "무력": -15,
+    "물질": -25,
+    "공동": 65,
+    "원칙": 55,
+    "공개": 10,
+    "자격": 50,
+    "분산": 0,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": 5,
+    "위험": 10,
+    "과시": 10,
+    "지속": 30,
+    "지향": "유동",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0269",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 4,
         "effective": 4
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 10,
+        "effective": 10
       },
-      "negotiation": {
+      "stewardship": {
+        "base": 4,
+        "effective": 4
+      },
+      "intrigue": {
         "base": 5,
         "effective": 5
       },
-      "management": {
-        "base": 8,
-        "effective": 8
-      },
-      "insight": {
-        "base": 9,
-        "effective": 9
-      },
       "learning": {
-        "base": 7,
-        "effective": 7
-      },
-      "prowess": {
         "base": 4,
         "effective": 4
       },
-      "endurance": {
-        "base": 10,
-        "effective": 10
+      "prowess": {
+        "base": 11,
+        "effective": 11
       }
     },
-    "skills": [
-      {
-        "id": "detour-return",
-        "name": {
-          "ko": "산길 우회 귀환",
-          "en": "Mountain detour return"
-        },
-        "rating": 45
-      }
-    ],
-    "traits": [
-      {
-        "id": "detour-return-disposition",
-        "name": {
-          "ko": "서약보다 가족의 선",
-          "en": "Family boundary within loyalty"
-        },
-        "description": {
-          "ko": "생존 갈등에 침묵하다 가족 분리 철표 앞에서 행렬을 벗어난다.",
-          "en": "Falls silent over survival but leaves the line before family-separation tags."
-        },
-        "behavior": {
-          "ko": "생존 갈등에 침묵하다 가족 분리 철표 앞에서 행렬을 벗어난다.",
-          "en": "Falls silent over survival but leaves the line before family-separation tags."
-        },
-        "stress": {
-          "ko": "이탈이 반란으로 기록돼 숙영이 수색될 것을 두려워한다.",
-          "en": "Fears departure labeled rebellion and triggering camp searches."
-        },
-        "relationship": {
-          "ko": "오한결의 민병 서약과 충돌하면서도 창고 옆문은 열지 않았고, 복모의 우회로로 숙영을 우회하며, 백온에게 이탈의 이유를 가족 회의에서 바친다.",
-          "en": "Conflicts with O Hangyeol’s oath without opening the store, returns through Bokmo’s detour and explains departure to Baek On’s family meeting."
-        },
-        "effects": []
-      },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "옆문을 열지 않음",
-          "en": "Leaves the side door closed"
-        },
-        "description": {
-          "ko": "서약과 충돌해 이탈했지만 창고 옆문은 열지 않았다.",
-          "en": "Left despite oath conflict but did not open the store side door."
-        },
-        "behavior": {
-          "ko": "서약과 충돌해 이탈했지만 창고 옆문은 열지 않았다.",
-          "en": "Left despite oath conflict but did not open the store side door."
-        },
-        "stress": {
-          "ko": "이탈이 반란으로만 기록되어 남은 숙영이 보복 수색을 받는 것.",
-          "en": "Fears departure labeled rebellion and triggering camp searches."
-        },
-        "relationship": {
-          "ko": "오한결의 민병 서약과 충돌하면서도 창고 옆문은 열지 않았고, 복모의 우회로로 숙영을 우회하며, 백온에게 이탈의 이유를 가족 회의에서 바친다.",
-          "en": "Conflicts with O Hangyeol’s oath without opening the store, returns through Bokmo’s detour and explains departure to Baek On’s family meeting."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "강제등록 줄에서 빠져 산길로 돌아갔으며 창고 옆문은 열지 않았다. 이탈은 호송 전투 승리나 새 권한을 뜻하지 않는다.",
-      "en": "Left the forced-registration line and returned by mountain paths without opening the store side door. Departure does not imply combat victory or new powers."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,72 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c21c-d64d-c0b0",
-    "name": "홍산 순씨",
-    "crest": "clan-crests/c21c-d64d-c0b0.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -45,
-    "개방": 40,
-    "무력": -50,
-    "물질": -20,
-    "공동": 60,
-    "원칙": 35,
-    "공개": 35,
-    "자격": 35,
-    "분산": 50,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": 5,
-    "위험": 10,
-    "과시": 10,
-    "지속": 30,
-    "지향": "유동",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "강제등록 이탈 기록·교대 분리 증언",
-    "소속": "안국총림",
-    "품계": "행자",
-    "직함": "강제등록 이탈 행자",
-    "가치관": "권위 −45 | 개방 40 | 무력 −50 | 물질 −20 | 공동 60 | 원칙 35 | 공개 35 | 자격 35 | 분산 50 | 변혁 5",
-    "욕망": "갈망 30 | 독점 5 | 위험 10 | 과시 10 | 지속 30 | 지향 유동 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2074-05-13 출생, 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 강제등록 이탈 행자 당직 기록에는 교대 무단 결근 뒤 대체 당직을 맡은 일이 남아 있다.\n- 순지민의 강제등록 이탈 기록·교대 분리 증언 업무 기준점으로 평창동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n- 순지민의 강제등록 이탈 기록·교대 분리 증언 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
-    "관직": "품계 행자. 직함은 강제등록 이탈 행자. 이탈 시각과 남은 신도 이름을 같은 쪽지에 적고, 무장 근무와 배급 근무를 같은 사람이 겸하지 못하게 증언한다.",
-    "일화": "가을의 북한산보국문 행렬에서 암사가 급수권과 복무 재등록을 묶자 순지민은 강제등록 줄에서 빠져나와 산길로 되돌아갔다.",
-    "관계": "오한결의 민병 서약과 충돌하면서도 창고 옆문은 열지 않았고, 복모의 우회로로 숙영을 우회하며, 백온에게 이탈의 이유를 가족 회의에서 바친다.",
-    "야망": "강제등록 행렬에서 빠져나온 경로를 구출 사건으로 남겨 총림이 용병이 되지 않게 한다.",
-    "공포": "이탈이 반란으로만 기록되어 남은 숙영이 보복 수색을 받는 것.",
-    "개입": "이탈자를 숨겨 구출 사건을 열거나, 보복 수색의 명단을 산중총회에 펼칠 수 있다."
-  },
-  "biography": "맹세와 생존이 충돌하면 오래 침묵한 뒤 행렬에서 한 걸음 빠진다. 충성스러우나 가족을 갈라놓는 철표 앞에서는 침묵을 깬다.\n\n- 생업: 강제등록 이탈 기록·교대 분리 증언\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 강제등록 이탈 행자\n**생애.** 2074-05-13 출생, 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 강제등록 이탈 행자 당직 기록에는 교대 무단 결근 뒤 대체 당직을 맡은 일이 남아 있다.\n- 순지민의 강제등록 이탈 기록·교대 분리 증언 업무 기준점으로 평창동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n- 순지민의 강제등록 이탈 기록·교대 분리 증언 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n**관직.** 품계 행자. 직함은 강제등록 이탈 행자. 이탈 시각과 남은 신도 이름을 같은 쪽지에 적고, 무장 근무와 배급 근무를 같은 사람이 겸하지 못하게 증언한다.\n\n**일화.** 가을의 북한산보국문 행렬에서 암사가 급수권과 복무 재등록을 묶자 순지민은 강제등록 줄에서 빠져나와 산길로 되돌아갔다.\n\n**관계.** 오한결의 민병 서약과 충돌하면서도 창고 옆문은 열지 않았고, 복모의 우회로로 숙영을 우회하며, 백온에게 이탈의 이유를 가족 회의에서 바친다.\n\n**야망.** 강제등록 행렬에서 빠져나온 경로를 구출 사건으로 남겨 총림이 용병이 되지 않게 한다.\n\n**공포.** 이탈이 반란으로만 기록되어 남은 숙영이 보복 수색을 받는 것.\n\n**개입.** 이탈자를 숨겨 구출 사건을 열거나, 보복 수색의 명단을 산중총회에 펼칠 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 40 | 무력 −50 | 물질 −20 | 공동 60 | 원칙 35 | 공개 35 | 자격 35 | 분산 50 | 변혁 5\n- 욕망: 갈망 30 | 독점 5 | 위험 10 | 과시 10 | 지속 30 | 지향 유동 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-10"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "순지민",
-        "type": "계약",
-        "to": "오한결",
-        "basis": "오한결의 민병 서약과 충돌하면서도 창고 옆문은 열지 않았고"
-      },
-      {
-        "from": "순지민",
-        "type": "계약",
-        "to": "복모",
-        "basis": "복모의 우회로로 숙영을 우회하며"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

@@ -1,397 +1,139 @@
 {
   "id": "person-0123",
   "name": "임겨레",
-  "title": "동부 관문세·보호계약 감사관",
-  "position": "동부 관문세·보호계약 감사관",
+  "title": "송파 곁집 어른",
+  "position": "송파 곁집 어른 · 잠실역",
   "characterId": "K122",
-  "rank": "병장",
-  "commonTier": "T5",
-  "occupation": "관문세·보호계약 전표 감사",
+  "rank": "곁집 어른",
+  "commonTier": "T2",
+  "occupation": "곁집 통솔",
   "gender": "남성",
   "stage": "S1",
-  "state": "S05",
-  "stateName": "동방사",
-  "sourceRoute": "/world/Cast-State-05#인물-임겨레",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0123",
   "birthDate": "2081-05-28",
   "birthday": "05-28",
   "age": 45,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-05.json#/content/104"
-  ],
-  "familyTree": {
-    "personId": "K122",
-    "nodes": [
-      {
-        "id": "K122",
-        "personId": "K122",
-        "kind": "person",
-        "name": "임겨레",
-        "birthDate": "2081-05-28",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K122"
-          },
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-임겨레-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 동부 관문세·보호계약 감사관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-임겨레-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0123"
-      },
-      {
-        "id": "FH-K122-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임승도",
-        "lineage": {
-          "surname": "임",
-          "bongwan": "나주",
-          "clan": "c784-b098-c8fc"
-        },
-        "birthDate": "2051-05-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-임겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2089,
-            "summary": "임승도는 서울역 등기소에서 관문세·보호계약 전표 감사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-임겨레-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K122-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현석",
-        "lineage": {
-          "surname": "임",
-          "bongwan": "나주",
-          "clan": "c784-b098-c8fc"
-        },
-        "birthDate": "2021-05-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-임겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임현석은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-임겨레-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K122-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최현현",
-        "birthDate": "2051-05-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-임겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2089,
-            "summary": "최현현은 서울역 등기소에서 관문세·보호계약 전표 감사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-임겨레-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K122-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정현호",
-        "birthDate": "2021-05-28",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-임겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정현호는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-임겨레-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K122-P-01:K122:biological",
-        "from": "FH-K122-P-01",
-        "to": "K122",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-임겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K122-P-02:FH-K122-P-01:biological",
-        "from": "FH-K122-P-02",
-        "to": "FH-K122-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-임겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K122-M-01:K122:biological",
-        "from": "FH-K122-M-01",
-        "to": "K122",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-임겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K122-M-02:FH-K122-M-01:biological",
-        "from": "FH-K122-M-02",
-        "to": "FH-K122-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-임겨레-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c784-b098-c8fc",
+    "name": "나주 임씨",
+    "crest": "clan-crests/c784-b098-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "임겨레의 하루는 가락시장 먹거리 바꿈터에서 돌아온 셈표를 잠실에서 다시 맞추는 것으로 끝난다. 말린 벌레와 절인 물고기를 얼마나 내고 섬유와 씨앗을 얼마나 받을지가 송파 곁집 어른인 그의 셈에서 나온다. 맞수 정서온이 같은 잠실역에서 교섭으로 이름을 얻을수록, 그는 바꿈터의 셈을 더 꼼꼼히 남들 앞에 펼쳐 보인다. 바꿈터에 갈 때면 두 부위의 정비 틈을 모두 열어 두는데, 바깥 사람에게 아크의 셈은 몸으로 한다는 것을 보이려는 것이다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "송파 곁집 어른",
+    "품계": "곁집 어른",
+    "생업": "곁집 통솔",
+    "일하는 역": "잠실역",
+    "잠자는 역": "잠실역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "임겨레의 하루는 가락시장 먹거리 바꿈터에서 돌아온 셈표를 잠실에서 다시 맞추는 것으로 끝난다. 말린 벌레와 절인 물고기를 얼마나 내고 섬유와 씨앗을 얼마나 받을지가 송파 곁집 어른인 그의 셈에서 나온다. 맞수 정서온이 같은 잠실역에서 교섭으로 이름을 얻을수록, 그는 바꿈터의 셈을 더 꼼꼼히 남들 앞에 펼쳐 보인다. 바꿈터에 갈 때면 두 부위의 정비 틈을 모두 열어 두는데, 바깥 사람에게 아크의 셈은 몸으로 한다는 것을 보이려는 것이다.",
+    "관직": "직함 송파 곁집 어른. 직위 송파 곁집 어른 · 잠실역. 품계 곁집 어른. 일하는 역 잠실역."
+  },
+  "values": {
+    "권위": 75,
+    "개방": -45,
+    "무력": 65,
+    "물질": -20,
+    "공동": 50,
+    "원칙": -20,
+    "공개": -75,
+    "자격": -45,
+    "분산": -90,
+    "변혁": 5
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": 30,
+    "위험": 5,
+    "과시": -45,
+    "지속": 20,
+    "지향": "동성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0123",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "임겨레",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "임겨레",
+        "type": "경쟁",
+        "to": "정서온",
+        "basis": "송파 곁집 안에서 교섭의 이름을 두고 정서온과 겨룬다"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K1018",
+    "name": "고예진",
+    "courtId": "court:K1018",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
-      },
-      "strategy": {
-        "base": 9,
-        "effective": 9
-      },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
-      "learning": {
+      "diplomacy": {
         "base": 10,
         "effective": 10
       },
-      "prowess": {
-        "base": 2,
-        "effective": 2
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "endurance": {
+      "stewardship": {
+        "base": 9,
+        "effective": 9
+      },
+      "intrigue": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
         "base": 6,
         "effective": 6
-      }
-    },
-    "skills": [
-      {
-        "id": "k122-protection-audit",
-        "name": {
-          "ko": "보호 조항 감사",
-          "en": "Protection clause audit"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k122-choice",
-        "name": {
-          "ko": "무기한 보호 거부",
-          "en": "Rejects indefinite protection"
-        },
-        "description": {
-          "ko": "냉정하고 종료 조건의 빈칸을 증오한다. 기간 없는 보호를 계약이 아니라 점령으로 부른다.",
-          "en": "Cold, he hated blanks in exit conditions. He called protection without a deadline occupation, not a contract."
-        },
-        "behavior": {
-          "ko": "일화. 김우찬의 작전표에 기간 칸이 빈 보호 조항이 붙어 관문으로 내려온다. 임겨레는 만료된 관문세 전표의 통행을 닫고, 같은 조항을 행정과 동방사에 동시에 보내 정소율의 재심 전표와 맞춰 본다.",
-          "en": "Anecdote. A protection clause with an empty term box comes down to the gate attached to Kim Woochan's operations sheet. Im Gyeore closes passage on the expired gate-toll slips and sends the same clause to the administration and Eastern Command at once, checking it against Jeong Soyul's review slip."
-        },
-        "stress": {
-          "ko": "공포. 위조 관문세 전표 한 장이 행정 원장 전체를 장교 비상도장으로 덮는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That one forged gate-toll slip would cover the whole administrative ledger with the officers' emergency stamp. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 정유라의 손실보상 문장을 동부 계약에 끌어들이려는 동맹이고, 정소율의 재심 전표를 검증하는 계약이며, 김우찬의 기간 없는 작전표와는 경쟁이다.",
-          "en": "Relations. An alliance drawing Jeong Yura's loss-compensation clause into the eastern contracts, a contract verifying Jeong Soyul's rehearing slips, and a rivalry with Kim Woochan's deadline-less operations table."
-        },
-        "effects": []
       },
-      {
-        "id": "k122-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 병장. 직함은 동부 관문세·보호계약 감사관. 관문세와 보호 조항을 행정·동방사에 동시에 보내되, 기한 만료 전표는 감사 날인 없이 통행을 닫는다.",
-          "en": "Office. Rank: sergeant. Title: eastern gate toll and protection contract auditor. He sent the gate tolls and protection clauses to the administration and the escort at once, and closed passage for pre-expiry slips without the audit stamp."
-        },
-        "behavior": {
-          "ko": "관직. 품계 병장. 직함은 동부 관문세·보호계약 감사관. 관문세와 보호 조항을 행정·동방사에 동시에 보내되, 기한 만료 전표는 감사 날인 없이 통행을 닫는다.",
-          "en": "Office. Rank: sergeant. Title: eastern gate toll and protection contract auditor. He sent the gate tolls and protection clauses to the administration and the escort at once, and closed passage for pre-expiry slips without the audit stamp."
-        },
-        "stress": {
-          "ko": "공포. 위조 관문세 전표 한 장이 행정 원장 전체를 장교 비상도장으로 덮는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That one forged gate-toll slip would cover the whole administrative ledger with the officers' emergency stamp. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 정유라의 손실보상 문장을 동부 계약에 끌어들이려는 동맹이고, 정소율의 재심 전표를 검증하는 계약이며, 김우찬의 기간 없는 작전표와는 경쟁이다.",
-          "en": "Relations. An alliance drawing Jeong Yura's loss-compensation clause into the eastern contracts, a contract verifying Jeong Soyul's rehearing slips, and a rivalry with Kim Woochan's deadline-less operations table."
-        },
-        "effects": []
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "일화. 김우찬의 작전표에 기간 칸이 빈 보호 조항이 붙어 관문으로 내려온다. 임겨레는 만료된 관문세 전표의 통행을 닫고, 같은 조항을 행정과 동방사에 동시에 보내 정소율의 재심 전표와 맞춰 본다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Anecdote. A protection clause with an empty term box comes down to the gate attached to Kim Woochan's operations sheet. Im Gyeore closes passage on the expired gate-toll slips and sends the same clause to the administration and Eastern Command at once, checking it against Jeong Soyul's review slip. Titles and ambitions are not treated as accomplished authority or results."
     },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -417,71 +159,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c784-b098-c8fc",
-    "name": "나주 임씨",
-    "crest": "clan-crests/c784-b098-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 50,
-    "개방": -30,
-    "무력": 55,
-    "물질": 30,
-    "공동": 30,
-    "원칙": -10,
-    "공개": -30,
-    "자격": -10,
-    "분산": -60,
-    "변혁": -40
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": 30,
-    "위험": 5,
-    "과시": -45,
-    "지속": 20,
-    "지향": "동성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "동방사",
-    "생업": "관문세·보호계약 전표 감사",
-    "품계": "병장",
-    "직함": "동부 관문세·보호계약 감사관",
-    "가치관": "권위 50 | 개방 −30 | 무력 55 | 물질 30 | 공동 30 | 원칙 −10 | 공개 −30 | 자격 −10 | 분산 −60 | 변혁 −40",
-    "욕망": "갈망 10 | 독점 30 | 위험 5 | 과시 −45 | 지속 20 | 지향 동성 | 결합 계약동거"
-  },
-  "sections": {
-    "관직": "품계 병장. 직함은 동부 관문세·보호계약 감사관. 관문세와 보호 조항을 행정·동방사에 동시에 보내되, 기한 만료 전표는 감사 날인 없이 통행을 닫는다.",
-    "일화": "김우찬의 작전표에 기간 칸이 빈 보호 조항이 붙어 관문으로 내려온다. 임겨레는 만료된 관문세 전표의 통행을 닫고, 같은 조항을 행정과 동방사에 동시에 보내 정소율의 재심 전표와 맞춰 본다.",
-    "관계": "정유라의 손실보상 문장을 동부 계약에 끌어들이려는 동맹이고, 정소율의 재심 전표를 검증하는 계약이며, 김우찬의 기간 없는 작전표와는 경쟁이다.",
-    "야망": "동부 약소국 보호계약에 감사권·기한·인질 대체 보증을 넣어, 상수보호권이 쿠데타의 다른 이름이 되지 않게 한다.\n\n공포. 임겨레는 위조 관문세 전표 한 장이 행정 원장 전체를 장교 비상도장으로 덮는 일을 두려워한다.",
-    "개입": "기한 조항 초안을 협의에 운반하거나, 위조 관문세 전표의 발급자를 밝혀 감사관을 실각시킬 수 있다."
-  },
-  "biography": "임겨레는 냉정하고 종료 조건의 빈칸을 증오한다. 기간 없는 보호를 계약이 아니라 점령으로 부른다.\n\n- 소속: 동방사\n- 생업: 관문세·보호계약 전표 감사\n- 품계: 병장\n- 직함: 동부 관문세·보호계약 감사관\n생애. 임겨레는 3세대에 태어났다. 임겨레는 서울역 등기소에서 자랐다. 임겨레의 동부 관문세·보호계약 감사관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 임겨레는 암사2동과 연결된 업무에서 기간 공란, 만료 관문세, 행정 재심 전표를 함께 감사한다.\n\n**관직.** 품계 병장. 직함은 동부 관문세·보호계약 감사관. 관문세와 보호 조항을 행정·동방사에 동시에 보내되, 기한 만료 전표는 감사 날인 없이 통행을 닫는다.\n\n**일화.** 김우찬의 작전표에 기간 칸이 빈 보호 조항이 붙어 관문으로 내려온다. 임겨레는 만료된 관문세 전표의 통행을 닫고, 같은 조항을 행정과 동방사에 동시에 보내 정소율의 재심 전표와 맞춰 본다.\n\n**관계.** 정유라의 손실보상 문장을 동부 계약에 끌어들이려는 동맹이고, 정소율의 재심 전표를 검증하는 계약이며, 김우찬의 기간 없는 작전표와는 경쟁이다.\n\n**야망.** 동부 약소국 보호계약에 감사권·기한·인질 대체 보증을 넣어, 상수보호권이 쿠데타의 다른 이름이 되지 않게 한다.\n\n공포. 임겨레는 위조 관문세 전표 한 장이 행정 원장 전체를 장교 비상도장으로 덮는 일을 두려워한다.\n\n**개입.** 기한 조항 초안을 협의에 운반하거나, 위조 관문세 전표의 발급자를 밝혀 감사관을 실각시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −30 | 무력 55 | 물질 30 | 공동 30 | 원칙 −10 | 공개 −30 | 자격 −10 | 분산 −60 | 변혁 −40\n- 욕망: 갈망 10 | 독점 30 | 위험 5 | 과시 −45 | 지속 20 | 지향 동성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-05"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "임겨레",
-        "type": "계약",
-        "to": "정유라",
-        "basis": "손실보상 문장을 동부 보호계약에 끌어들임"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "지목현",
-        "type": "계약",
-        "to": "임겨레",
-        "basis": "임겨레의 기한 조항을 약국에 배달하는 계약이며"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

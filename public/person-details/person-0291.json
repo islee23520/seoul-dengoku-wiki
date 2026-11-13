@@ -1,505 +1,118 @@
 {
   "id": "person-0291",
   "name": "어예린",
-  "title": "시험 차륜 결함 증인",
-  "position": "성하전자 시험 차륜 결함 증인",
+  "title": "야전 정비공",
+  "position": "야전 정비공 · 강남역",
   "characterId": "K290",
-  "rank": "사원",
+  "rank": "정비공",
   "commonTier": "T5",
-  "occupation": "시험 차륜 결함 표본·사고 서명 확인",
+  "occupation": "이식 정비",
   "gender": "남성",
   "stage": "S3",
-  "state": "S11",
-  "stateName": "성하그룹",
-  "sourceRoute": "/world/Cast-State-11#인물-어예린",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0291",
   "birthDate": "2094-05-06",
   "birthday": "05-06",
   "age": 32,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-11.json#/content/204",
-    "lore/characters/Cast-State-11.json#/content/208"
-  ],
-  "familyTree": {
-    "personId": "K290",
-    "nodes": [
-      {
-        "id": "K290",
-        "personId": "K290",
-        "kind": "person",
-        "name": "어예린",
-        "birthDate": "2094-05-06",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K290"
-          },
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-어예린-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 강남역 차량기지에서 자랐다. 성하전자 시험 차륜 결함 증인 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-어예린-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0291"
-      },
-      {
-        "id": "FH-K290-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "어승경",
-        "lineage": {
-          "surname": "어",
-          "bongwan": "함종",
-          "clan": "c5b4-d568-c885"
-        },
-        "birthDate": "2064-05-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-어예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2102,
-            "summary": "어승경은 강남역 차량기지에서 시험 차륜 결함 표본·사고 서명 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-어예린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K290-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "어승수",
-        "lineage": {
-          "surname": "어",
-          "bongwan": "함종",
-          "clan": "c5b4-d568-c885"
-        },
-        "birthDate": "2034-05-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-어예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "어승수는 강남역 차량기지에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-어예린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K290-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "어승은",
-        "lineage": {
-          "surname": "어",
-          "bongwan": "함종",
-          "clan": "c5b4-d568-c885"
-        },
-        "birthDate": "2004-05-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-어예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "어승은은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-어예린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K290-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준우",
-        "birthDate": "2064-05-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-어예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2102,
-            "summary": "최준우는 강남역 차량기지에서 시험 차륜 결함 표본·사고 서명 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-어예린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K290-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정현솔",
-        "birthDate": "2034-05-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-어예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "정현솔은 강남역 차량기지에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-어예린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K290-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤현미",
-        "birthDate": "2004-05-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-어예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤현미는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-어예린-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K290-P-01:K290:biological",
-        "from": "FH-K290-P-01",
-        "to": "K290",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-어예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K290-P-02:FH-K290-P-01:biological",
-        "from": "FH-K290-P-02",
-        "to": "FH-K290-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-어예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K290-P-03:FH-K290-P-02:biological",
-        "from": "FH-K290-P-03",
-        "to": "FH-K290-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-어예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K290-M-01:K290:biological",
-        "from": "FH-K290-M-01",
-        "to": "K290",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-어예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K290-M-02:FH-K290-M-01:biological",
-        "from": "FH-K290-M-02",
-        "to": "FH-K290-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-어예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K290-M-03:FH-K290-M-02:biological",
-        "from": "FH-K290-M-03",
-        "to": "FH-K290-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-어예린-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c5b4-d568-c885",
+    "name": "함종 어씨",
+    "crest": "clan-crests/c5b4-d568-c885.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "강남역 정비대 벽에는 깨진 이음매 조각 하나가 걸려 있다. 그대로 두라는 말을 듣고도 어예린이 떼어 와 정비장 앞에 내놓았던 조각이다. 정비대가 사람을 비울 수 없을 때, 서른두 살의 이 야전 정비공은 연장 꾸러미를 메고 경계 출입구나 바꿈터로 찾아가 언 부위를 그 자리에서 연다. 지상으로 오를 때는 자기 두 부위 위에 솜 토시를 겹쳐 끼운다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "야전 정비공",
+    "품계": "정비공",
+    "생업": "이식 정비",
+    "일하는 역": "강남역",
+    "잠자는 역": "강남역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "강남역 정비대 벽에는 깨진 이음매 조각 하나가 걸려 있다. 그대로 두라는 말을 듣고도 어예린이 떼어 와 정비장 앞에 내놓았던 조각이다. 정비대가 사람을 비울 수 없을 때, 서른두 살의 이 야전 정비공은 연장 꾸러미를 메고 경계 출입구나 바꿈터로 찾아가 언 부위를 그 자리에서 연다. 지상으로 오를 때는 자기 두 부위 위에 솜 토시를 겹쳐 끼운다.",
+    "관직": "직함 야전 정비공. 직위 야전 정비공 · 강남역. 품계 정비공. 일하는 역 강남역."
+  },
+  "values": {
+    "권위": 40,
+    "개방": -30,
+    "무력": 5,
+    "물질": -20,
+    "공동": 45,
+    "원칙": 5,
+    "공개": -50,
+    "자격": 45,
+    "분산": -25,
+    "변혁": 20
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": 30,
+    "위험": 5,
+    "과시": -10,
+    "지속": 30,
+    "지향": "무성향",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0291",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
-        "base": 9,
-        "effective": 9
-      },
-      "insight": {
-        "base": 9,
-        "effective": 9
-      },
-      "learning": {
-        "base": 7,
-        "effective": 7
-      },
-      "prowess": {
+      "martial": {
         "base": 3,
         "effective": 3
       },
-      "endurance": {
-        "base": 5,
-        "effective": 5
-      }
-    },
-    "skills": [
-      {
-        "id": "k290-defect-testimony-recording",
-        "name": {
-          "ko": "결함 증언 기록",
-          "en": "Defect testimony recording"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "k290-priority",
-        "name": {
-          "ko": "서명한 증언",
-          "en": "Signed testimony"
-        },
-        "description": {
-          "ko": "어예린은 결함의 증인란에 이름을 올리고 봉인 공구함을 함께 지킨다. 증언 책임이지 조작 범인의 확정은 아니다.",
-          "en": "Eo Yerin signed the defect witness field and helps guard the sealed toolbox. This establishes testimonial responsibility, not the culprit’s identity."
-        },
-        "behavior": {
-          "ko": "사고 한 건에 반장과 도제의 서명을 함께 요구하고, 불량 표본 번호를 같은 줄에 적는다.",
-          "en": "Office. Rank: assistant manager. Title: trial wheel defect witness. She demanded the squad leader's and the apprentice's signatures together for every accident and wrote the defective specimen numbers on the same line."
-        },
-        "stress": {
-          "ko": "증언이 사택 대표의 기지 점거 명분이 되어 자신이 인구 분쟁의 들러리가 되는 것.",
-          "en": "Fear. That the testimony would become the residents' representatives' pretext for seizing the base and she would become the procession of a population dispute."
-        },
-        "relationship": {
-          "ko": "조우찬의 작업 조에서 결함을 증언하고, 두모의 봉인된 공구함을 함께 지키며, 국두의 사고 원장에 어긋난 줄을 남긴다.",
-          "en": "Relations. Testified to the defect in Jo Woochan's work squad, kept Du Mo's sealed tool box with him, and left the mismatched line in Guk Du's accident ledger."
-        },
-        "effects": []
+      "stewardship": {
+        "base": 7,
+        "effective": 7
       },
-      {
-        "id": "k290-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 사원. 직함은 성하전자 시험 차륜 결함 증인. 사고 한 건에 반장과 도제의 서명을 함께 요구하고, 불량 표본 번호를 같은 줄에 적는다.",
-          "en": "Office. Rank: assistant manager. Title: trial wheel defect witness. She demanded the squad leader's and the apprentice's signatures together for every accident and wrote the defective specimen numbers on the same line."
-        },
-        "stress": {
-          "ko": "공포. 증언이 사택 대표의 기지 점거 명분이 되어 자신이 인구 분쟁의 들러리가 되는 것.",
-          "en": "Fear. That the testimony would become the residents' representatives' pretext for seizing the base and she would become the procession of a population dispute."
-        },
-        "relationship": {
-          "ko": "관계. 조우찬의 작업 조에서 결함을 증언하고, 두모의 봉인된 공구함을 함께 지키며, 국두의 사고 원장에 어긋난 줄을 남긴다.",
-          "en": "Relations. Testified to the defect in Jo Woochan's work squad, kept Du Mo's sealed tool box with him, and left the mismatched line in Guk Du's accident ledger."
-        },
-        "effects": []
+      "intrigue": {
+        "base": 6,
+        "effective": 6
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "어예린은 결함의 증인란에 이름을 올리고 봉인 공구함을 함께 지킨다. 증언 책임이지 조작 범인의 확정은 아니다.",
-      "en": "Eo Yerin signed the defect witness field and helps guard the sealed toolbox. This establishes testimonial responsibility, not the culprit’s identity."
     },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -525,72 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c5b4-d568-c885",
-    "name": "함종 어씨",
-    "crest": "clan-crests/c5b4-d568-c885.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": -15,
-    "무력": -5,
-    "물질": 30,
-    "공동": 25,
-    "원칙": 15,
-    "공개": -5,
-    "자격": 80,
-    "분산": 5,
-    "변혁": -25
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": 30,
-    "위험": 5,
-    "과시": -10,
-    "지속": 30,
-    "지향": "무성향",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "시험 차륜 결함 표본·사고 서명 확인",
-    "소속": "성하그룹",
-    "품계": "사원",
-    "직함": "성하전자 시험 차륜 결함 증인",
-    "가치관": "권위 15 | 개방 −15 | 무력 −5 | 물질 30 | 공동 25 | 원칙 15 | 공개 −5 | 자격 80 | 분산 5 | 변혁 −25",
-    "욕망": "갈망 30 | 독점 30 | 위험 5 | 과시 −10 | 지속 30 | 지향 무성향 | 결합 다자"
-  },
-  "sections": {
-    "생애": "강남역 차량기지에서 자랐다. 성하전자 시험 차륜 결함 증인 자리는 탈선 직전 결함 보고로 열렸다.\n- 어예린은 역삼1동에서 시험 차륜 결함 표본·사고 서명 확인 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 조우찬의 작업 조에서 결함을 증언하고, 두모의 봉인된 공구함을 함께 지키며, 국두의 사고 원장에 어긋난 줄을 남긴다",
-    "관직": "품계 사원. 직함은 성하전자 시험 차륜 결함 증인. 사고 한 건에 반장과 도제의 서명을 함께 요구하고, 불량 표본 번호를 같은 줄에 적는다.",
-    "일화": "겨울의 검은 배차표와 같은 주, 유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 어예린은 증인란에 이름을 올렸다.",
-    "관계": "조우찬의 작업 조에서 결함을 증언하고, 두모의 봉인된 공구함을 함께 지키며, 국두의 사고 원장에 어긋난 줄을 남긴다.",
-    "야망": "유력 후계자의 시험 차륜 결함을 증언으로 고정해 이씨 가문 승계가 승계 시험을 삼키지 못하게 한다.",
-    "공포": "증언이 사택 대표의 기지 점거 명분이 되어 자신이 인구 분쟁의 들러리가 되는 것.",
-    "개입": "어긋난 줄을 공개하거나, 시험 감독을 맡아 증인을 보호할 수 있다."
-  },
-  "biography": "사고 책임을 날짜까지 기억하고, 서명 없는 일지를 없던 일로 돌린다. 회의보다 차륜 아래의 필적을 믿는다.\n\n- 생업: 시험 차륜 결함 표본·사고 서명 확인\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 시험 차륜 결함 증인\n**생애.** 강남역 차량기지에서 자랐다. 성하전자 시험 차륜 결함 증인 자리는 탈선 직전 결함 보고로 열렸다.\n- 어예린은 역삼1동에서 시험 차륜 결함 표본·사고 서명 확인 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 조우찬의 작업 조에서 결함을 증언하고, 두모의 봉인된 공구함을 함께 지키며, 국두의 사고 원장에 어긋난 줄을 남긴다\n\n**관직.** 품계 사원. 직함은 성하전자 시험 차륜 결함 증인. 사고 한 건에 반장과 도제의 서명을 함께 요구하고, 불량 표본 번호를 같은 줄에 적는다.\n\n**일화.** 겨울의 검은 배차표와 같은 주, 유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 어예린은 증인란에 이름을 올렸다.\n\n**관계.** 조우찬의 작업 조에서 결함을 증언하고, 두모의 봉인된 공구함을 함께 지키며, 국두의 사고 원장에 어긋난 줄을 남긴다.\n\n**야망.** 유력 후계자의 시험 차륜 결함을 증언으로 고정해 이씨 가문 승계가 승계 시험을 삼키지 못하게 한다.\n\n**공포.** 증언이 사택 대표의 기지 점거 명분이 되어 자신이 인구 분쟁의 들러리가 되는 것.\n\n**개입.** 어긋난 줄을 공개하거나, 시험 감독을 맡아 증인을 보호할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −15 | 무력 −5 | 물질 30 | 공동 25 | 원칙 15 | 공개 −5 | 자격 80 | 분산 5 | 변혁 −25\n- 욕망: 갈망 30 | 독점 30 | 위험 5 | 과시 −10 | 지속 30 | 지향 무성향 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-11"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "어예린",
-        "type": "맹세",
-        "to": "조우찬",
-        "basis": "조우찬의 작업 조에서 결함을 증언하고"
-      },
-      {
-        "from": "어예린",
-        "type": "맹세",
-        "to": "두모",
-        "basis": "두모의 봉인된 공구함을 함께 지키며"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

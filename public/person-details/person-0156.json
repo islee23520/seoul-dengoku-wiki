@@ -1,397 +1,120 @@
 {
   "id": "person-0156",
   "name": "주리안",
-  "title": "북부 정수 배관 탐사원",
-  "position": "북부 정수 배관 탐사원",
+  "title": "행정안전부 국장",
+  "position": "행정안전부 국장 · 광화문역",
   "characterId": "K155",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "북부 정수 배관 채수·우회 급수",
+  "rank": "서기관",
+  "commonTier": "T2",
+  "occupation": "부처 행정",
   "gender": "남성",
   "stage": "S2",
-  "state": "S06",
-  "stateName": "대한민국정부",
-  "sourceRoute": "/world/Cast-State-06#인물-주리안",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0156",
   "birthDate": "2078-07-29",
   "birthday": "07-29",
   "age": 48,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-06.json#/content/148",
-    "lore/characters/Cast-State-06.json#/content/149",
-    "lore/characters/Cast-State-06.json#/content/151",
-    "lore/characters/Cast-State-06.json#/content/152",
-    "lore/characters/Cast-State-06.json#/content/153"
-  ],
-  "familyTree": {
-    "personId": "K155",
-    "nodes": [
-      {
-        "id": "K155",
-        "personId": "K155",
-        "kind": "person",
-        "name": "주리안",
-        "birthDate": "2078-07-29",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K155"
-          },
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-주리안-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 북부 정수 배관 탐사원 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-주리안-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0156"
-      },
-      {
-        "id": "FH-K155-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "주승원",
-        "lineage": {
-          "surname": "주",
-          "bongwan": "신안",
-          "clan": "c8fc-c2e0-c548"
-        },
-        "birthDate": "2048-07-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-주리안-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2086,
-            "summary": "주승원은 영등포 정수 당직에서 북부 정수 배관 채수·우회 급수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-주리안-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K155-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "주승진",
-        "lineage": {
-          "surname": "주",
-          "bongwan": "신안",
-          "clan": "c8fc-c2e0-c548"
-        },
-        "birthDate": "2018-07-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-주리안-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "주승진은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-주리안-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K155-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김현우",
-        "birthDate": "2048-07-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-주리안-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2086,
-            "summary": "김현우는 영등포 정수 당직에서 북부 정수 배관 채수·우회 급수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-주리안-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K155-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박현윤",
-        "birthDate": "2018-07-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-주리안-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박현윤은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-주리안-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K155-P-01:K155:biological",
-        "from": "FH-K155-P-01",
-        "to": "K155",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-주리안-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K155-P-02:FH-K155-P-01:biological",
-        "from": "FH-K155-P-02",
-        "to": "FH-K155-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-주리안-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K155-M-01:K155:biological",
-        "from": "FH-K155-M-01",
-        "to": "K155",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-주리안-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K155-M-02:FH-K155-M-01:biological",
-        "from": "FH-K155-M-02",
-        "to": "FH-K155-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-주리안-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c8fc-c2e0-c548",
+    "name": "신안 주씨",
+    "crest": "clan-crests/c8fc-c2e0-c548.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "공무원증의 직종 칸에 민방위가 적힌 행정안전부 국장이다. 눈보라가 오면 각 구청이 울릴 대피 사이렌의 순서를 고시로 내려보내고, 터널 전화가 끊기는 날을 위해 전령마다 어느 배관 길로 갈지 적은 순서표를 그 고시에 붙인다. 집이 있는 동대문역의 옷 수선 장에서 이레마다 헌 장갑을 고쳐 겨울을 넘긴다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "행정안전부 국장",
+    "품계": "서기관",
+    "생업": "부처 행정",
+    "일하는 역": "광화문역",
+    "잠자는 역": "동대문역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "공무원증의 직종 칸에 민방위가 적힌 행정안전부 국장이다. 눈보라가 오면 각 구청이 울릴 대피 사이렌의 순서를 고시로 내려보내고, 터널 전화가 끊기는 날을 위해 전령마다 어느 배관 길로 갈지 적은 순서표를 그 고시에 붙인다. 집이 있는 동대문역의 옷 수선 장에서 이레마다 헌 장갑을 고쳐 겨울을 넘긴다.",
+    "관직": "직함 행정안전부 국장. 직위 행정안전부 국장 · 광화문역. 품계 서기관. 일하는 역 광화문역."
+  },
+  "values": {
+    "권위": 60,
+    "개방": -55,
+    "무력": 10,
+    "물질": -35,
+    "공동": 5,
+    "원칙": 65,
+    "공개": -40,
+    "자격": 35,
+    "분산": -90,
+    "변혁": -50
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": 15,
+    "위험": 0,
+    "과시": -25,
+    "지속": 25,
+    "지향": "양성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0156",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "주리안",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "management": {
-        "base": 9,
-        "effective": 9
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 11,
-        "effective": 11
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 11,
-        "effective": 11
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k155-water-sampling",
-        "name": {
-          "ko": "배관 채수",
-          "en": "Pipe water sampling"
-        },
-        "rating": 60
-      },
-      {
-        "id": "k155-bypass-opening",
-        "name": {
-          "ko": "우회 급수 개통",
-          "en": "Water bypass opening"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k155-choice",
-        "name": {
-          "ko": "실선의 책임",
-          "en": "Responsibility for solid lines"
-        },
-        "description": {
-          "ko": "끊긴 배관의 수온으로 시간을 읽고, 출처가 하나뿐인 도로를 실선으로 그리는 사람을 살인에 가깝다고 여긴다. 늦은 측량을 죄로 본다.",
-          "en": "He read time from the cut pipes' water temperature and saw anyone who drew a single-source road as a solid line as close to murder. He counted a late survey a fault."
-        },
-        "behavior": {
-          "ko": "일화. 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 북부 정수 배관 탐사원 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In 2125, instead of thawing the frozen pipes, he opened a bypass waterway. By this deed the signature of the northern purification pipeline surveyor post rose into the ledger."
-        },
-        "stress": {
-          "ko": "공포. 탐사 원판이 강국에 사들여져 급수 분쟁 구간이 남의 영토로 인쇄되는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That the survey master plate would be bought up by great powers and the water-dispute zones printed as someone else's territory. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 서라온의 원판에 현장 좌표를 넘기는 사제이고, 최지우과 지도 갱신 시각을 맞추며, 마길상의 교량 하부 측량과 우회 점선을 계약으로 나눈다.",
-          "en": "Relations. An apprentice handing field coordinates to Seo Raon's master plate, he matched map-renewal times with Choi Jiwoo and split bridge underside surveys and bypass dotted lines with Ma Gilsang by contract."
-        },
-        "effects": []
-      },
-      {
-        "id": "k155-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 주사. 직함은 북부 정수 배관 탐사원. 채수와 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 구간은 점선으로만 남긴다.",
-          "en": "Office. Rank: registrar. Title: northern purification pipeline surveyor. He drew intake overlaid with transmission bulletins and left single-source sections only as dotted lines."
-        },
-        "behavior": {
-          "ko": "관직. 품계 주사. 직함은 북부 정수 배관 탐사원. 채수와 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 구간은 점선으로만 남긴다.",
-          "en": "Office. Rank: registrar. Title: northern purification pipeline surveyor. He drew intake overlaid with transmission bulletins and left single-source sections only as dotted lines."
-        },
-        "stress": {
-          "ko": "공포. 탐사 원판이 강국에 사들여져 급수 분쟁 구간이 남의 영토로 인쇄되는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That the survey master plate would be bought up by great powers and the water-dispute zones printed as someone else's territory. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 서라온의 원판에 현장 좌표를 넘기는 사제이고, 최지우과 지도 갱신 시각을 맞추며, 마길상의 교량 하부 측량과 우회 점선을 계약으로 나눈다.",
-          "en": "Relations. An apprentice handing field coordinates to Seo Raon's master plate, he matched map-renewal times with Choi Jiwoo and split bridge underside surveys and bypass dotted lines with Ma Gilsang by contract."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "동파 관로 대신 우회 급수를 열고 채수와 속보를 대조한다. 경로의 확실성을 표시하지만 철도 건설 경력은 없다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Opened bypass supply rather than thawing frozen pipes and cross-checks samples with reports. Route certainty does not imply railway construction experience. Titles and ambitions are not treated as accomplished authority or results."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -429,96 +152,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-51230-S06",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K155",
-      "stateId": "S06",
-      "politicalParentTitleId": "title:kingdom-s06",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-51230-S06",
-          "directLiegePersonId": "K144"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c8fc-c2e0-c548",
-    "name": "신안 주씨",
-    "crest": "clan-crests/c8fc-c2e0-c548.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": 0,
-    "무력": -25,
-    "물질": -30,
-    "공동": 0,
-    "원칙": 45,
-    "공개": -15,
-    "자격": 20,
-    "분산": -40,
-    "변혁": -30
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": 15,
-    "위험": 0,
-    "과시": -25,
-    "지속": 25,
-    "지향": "양성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "북부 정수 배관 채수·우회 급수",
-    "소속": "서울특별시 지방공무원 조직",
-    "직위·직급": "지방공업주사·지방공업주사보 또는 지방시설주사·지방시설주사보 중 서울아리수본부 상수도 사업소 보직에 맞는 직급",
-    "담당 업무": "북부 정수 배관 탐사원",
-    "가치관": "권위 15 | 개방 0 | 무력 −25 | 물질 −30 | 공동 0 | 원칙 45 | 공개 −15 | 자격 20 | 분산 −40 | 변혁 −30",
-    "욕망": "갈망 30 | 독점 15 | 위험 0 | 과시 −25 | 지속 25 | 지향 양성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "영등포 정수 당직에서 자랐다. 북부 정수 배관 탐사원 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 주리안의 배관 채수와 우회 급수 측량 기록을 인계하는 일은 회현동의 업무와 이어진다.",
-    "공무원 직위·직급": "지방공업주사·지방공업주사보 또는 지방시설주사·지방시설주사보 중 서울아리수본부 상수도 사업소 보직에 맞는 직급. 담당 업무: 북부 정수 배관 탐사원.",
-    "일화": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 북부 정수 배관 탐사원 자리의 서명이 장부에 올랐다.",
-    "관계": "서라온의 원판에 현장 좌표를 넘기는 사제이고, 최지우와 지도 갱신 시각을 맞추며, 마길상의 교량 하부 측량과 우회 점선을 계약으로 나눈다.",
-    "야망": "끊긴 북부 정수와 살아있는 배관을 현장 측량으로 모아 공동기술원장의 검증 자료가 되게 한다.",
-    "공포": "탐사 원판이 강국에 사들여져 급수 분쟁 구간이 남의 영토로 인쇄되는 것.",
-    "개입": "실제 배관 호위를 맡아 원판을 지키거나, 위조 실선 인쇄소를 찾아낼 수 있다."
-  },
-  "biography": "끊긴 배관의 수온으로 시간을 읽고, 출처가 하나뿐인 도로를 실선으로 그리는 사람을 살인에 가깝다고 여긴다. 늦은 측량을 죄로 본다.\n\n- 생업: 북부 정수 배관 채수·우회 급수\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방공업주사·지방공업주사보 또는 지방시설주사·지방시설주사보 중 서울아리수본부 상수도 사업소 보직에 맞는 직급\n- 담당 업무: 북부 정수 배관 탐사원\n**생애.** 영등포 정수 당직에서 자랐다. 북부 정수 배관 탐사원 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 주리안의 배관 채수와 우회 급수 측량 기록을 인계하는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 지방공업주사·지방공업주사보 또는 지방시설주사·지방시설주사보 중 서울아리수본부 상수도 사업소 보직에 맞는 직급. 담당 업무: 북부 정수 배관 탐사원.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 북부 정수 배관 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 서라온의 원판에 현장 좌표를 넘기는 사제이고, 최지우와 지도 갱신 시각을 맞추며, 마길상의 교량 하부 측량과 우회 점선을 계약으로 나눈다.\n\n**야망.** 끊긴 북부 정수와 살아있는 배관을 현장 측량으로 모아 공동기술원장의 검증 자료가 되게 한다.\n\n**공포.** 탐사 원판이 강국에 사들여져 급수 분쟁 구간이 남의 영토로 인쇄되는 것.\n\n**개입.** 실제 배관 호위를 맡아 원판을 지키거나, 위조 실선 인쇄소를 찾아낼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 0 | 무력 −25 | 물질 −30 | 공동 0 | 원칙 45 | 공개 −15 | 자격 20 | 분산 −40 | 변혁 −30\n- 욕망: 갈망 30 | 독점 15 | 위험 0 | 과시 −25 | 지속 25 | 지향 양성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-06"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "주리안",
-        "type": "사제",
-        "to": "서라온",
-        "basis": "서라온의 원판에 현장 좌표를 넘기는 사제이고"
-      },
-      {
-        "from": "주리안",
-        "type": "계약",
-        "to": "마길상",
-        "basis": "마길상의 교량 하부 측량과 우회 점선을 계약으로 나눈다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "패트릭 오코너",
-        "type": "계약",
-        "to": "주리안",
-        "basis": "주리안의 북부 배관 점선과 강변을 맞추며"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

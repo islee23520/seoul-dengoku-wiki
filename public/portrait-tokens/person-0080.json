@@ -3,27 +3,27 @@
   "personId": "person-0080",
   "characterId": "K080",
   "name": "배서율",
-  "stateId": "S03",
+  "stateId": "arc",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "가짜 약품 표본 피해자 대표"
+    "role": "돌봄이 · 선릉역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short cropped hair",
-    "upper": "oxblood wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
-    "outfit": "oxblood wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
+    "upper": "틈을 꿰매 둔 카키색 모직과 펠트 겹옷, 땀을 박지 않은 오른쪽 깃",
+    "outfit": "틈을 꿰매 둔 카키색 모직과 펠트 겹옷, 땀을 박지 않은 오른쪽 깃",
     "palette": [
-      "oxblood",
       "khaki",
-      "cream"
+      "cream",
+      "oxblood"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "khaki straight wool trousers",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "cream layered felt trousers",
+    "footwear": "felt boots",
+    "accessories": "wrapped bundle of clean cloth strips"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "oxblood wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
+        "value": "틈을 꿰매 둔 카키색 모직과 펠트 겹옷, 땀을 박지 않은 오른쪽 깃",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "khaki straight wool trousers",
+        "value": "cream layered felt trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "buttoned felt collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "wrapped bundle of clean cloth strips",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "off-white",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "cotton cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "tucked into a waist sash",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "soft rolled bundle",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 배서율, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: slim; skin: fair with a neutral undertone. upper garment: oxblood wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, khaki, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 배서율, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: slim; skin: fair with a neutral undertone. upper garment: 틈을 꿰매 둔 카키색 모직과 펠트 겹옷, 땀을 박지 않은 오른쪽 깃; neckline: buttoned felt collar. accessories: wrapped bundle of clean cloth strips; worn as tucked into a waist sash. color palette: khaki, cream, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 배서율, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: oxblood wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: khaki straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, khaki, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 배서율, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: 틈을 꿰매 둔 카키색 모직과 펠트 겹옷, 땀을 박지 않은 오른쪽 깃; neckline: buttoned felt collar; lower garment: cream layered felt trousers; footwear: felt boots. accessories: wrapped bundle of clean cloth strips; worn as tucked into a waist sash. color palette: khaki, cream, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 배서율, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: oxblood wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: khaki straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, khaki, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 배서율, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: 틈을 꿰매 둔 카키색 모직과 펠트 겹옷, 땀을 박지 않은 오른쪽 깃; neckline: buttoned felt collar; lower garment: cream layered felt trousers; footwear: felt boots. accessories: wrapped bundle of clean cloth strips; worn as tucked into a waist sash. color palette: khaki, cream, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 배서율, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: oxblood wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: khaki straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, khaki, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 배서율, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: 틈을 꿰매 둔 카키색 모직과 펠트 겹옷, 땀을 박지 않은 오른쪽 깃; neckline: buttoned felt collar; lower garment: cream layered felt trousers; footwear: felt boots. accessories: wrapped bundle of clean cloth strips; worn as tucked into a waist sash. color palette: khaki, cream, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 배서율, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: oxblood wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: khaki straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, khaki, cream. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 배서율, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short cropped hair; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: 틈을 꿰매 둔 카키색 모직과 펠트 겹옷, 땀을 박지 않은 오른쪽 깃; neckline: buttoned felt collar; lower garment: cream layered felt trousers; footwear: felt boots. accessories: wrapped bundle of clean cloth strips; worn as tucked into a waist sash. color palette: khaki, cream, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

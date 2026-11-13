@@ -1,506 +1,159 @@
 {
   "id": "person-0287",
   "name": "모복",
-  "title": "강남역 사택 급수 거점장, 서진아의 실무 담당자 · 서초구 영주",
-  "position": "강남역 사택 급수 거점장, 서진아의 실무 담당자 · 서초구 영주",
+  "title": "서초3동 대피소장",
+  "position": "서초3동 대피소장 · 아크",
   "characterId": "K286",
-  "rank": "영주",
+  "rank": "대피소장",
   "commonTier": "T3",
-  "occupation": "사택 급수 수위 확인·개폐 조정",
+  "occupation": "대피소 통솔",
   "gender": "남성",
   "stage": "S2",
-  "state": "S11",
-  "stateName": "성하그룹",
-  "sourceRoute": "/world/Cast-State-11#인물-모복",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0287",
   "birthDate": "2098-08-27",
   "birthday": "08-27",
   "age": 28,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-11.json#/content/182",
-    "lore/characters/Cast-State-11.json#/content/184",
-    "lore/characters/Cast-State-11.json#/content/187"
-  ],
-  "familyTree": {
-    "personId": "K286",
-    "nodes": [
-      {
-        "id": "K286",
-        "personId": "K286",
-        "kind": "person",
-        "name": "모복",
-        "birthDate": "2098-08-27",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K286"
-          },
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-모복-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 강남역 사택 급수 거점장, 서진아의 실무 담당자 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-모복-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0287"
-      },
-      {
-        "id": "FH-K286-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "모승연",
-        "lineage": {
-          "surname": "모",
-          "bongwan": "함평",
-          "clan": "baa8-d568-d3c9"
-        },
-        "birthDate": "2068-08-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-모복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2106,
-            "summary": "모승연은 영등포 정수 당직에서 사택 급수 수위 확인·개폐 조정 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-모복-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K286-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "모승정",
-        "lineage": {
-          "surname": "모",
-          "bongwan": "함평",
-          "clan": "baa8-d568-d3c9"
-        },
-        "birthDate": "2038-08-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-모복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "모승정은 영등포 정수 당직에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-모복-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K286-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "모승아",
-        "lineage": {
-          "surname": "모",
-          "bongwan": "함평",
-          "clan": "baa8-d568-d3c9"
-        },
-        "birthDate": "2008-08-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-모복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "모승아는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-모복-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K286-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조현나",
-        "birthDate": "2068-08-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-모복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2106,
-            "summary": "조현나는 영등포 정수 당직에서 사택 급수 수위 확인·개폐 조정 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-모복-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K286-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "김현솔",
-        "birthDate": "2038-08-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-모복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "김현솔은 영등포 정수 당직에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-모복-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K286-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준준",
-        "birthDate": "2008-08-27",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-모복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박준준은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-모복-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K286-P-01:K286:biological",
-        "from": "FH-K286-P-01",
-        "to": "K286",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-모복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K286-P-02:FH-K286-P-01:biological",
-        "from": "FH-K286-P-02",
-        "to": "FH-K286-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-모복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K286-P-03:FH-K286-P-02:biological",
-        "from": "FH-K286-P-03",
-        "to": "FH-K286-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-모복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K286-M-01:K286:biological",
-        "from": "FH-K286-M-01",
-        "to": "K286",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-모복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K286-M-02:FH-K286-M-01:biological",
-        "from": "FH-K286-M-02",
-        "to": "FH-K286-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-모복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K286-M-03:FH-K286-M-02:biological",
-        "from": "FH-K286-M-03",
-        "to": "FH-K286-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-모복-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "baa8-d568-d3c9",
+    "name": "함평 모씨",
+    "crest": "clan-crests/baa8-d568-d3c9.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "교대역 대피소의 잠자리 칸을 셋째 교대마다 한 바퀴 도는 것은, 스물여덟 살의 모복이 서초3동 대피소장이 된 뒤로 하루도 거르지 않은 일이다. 그는 누가 정비대 쪽 따뜻한 벽에 붙어 자는지 세고, 앓는 사람과 정비공 집안을 먼저 벽 쪽에 눕힌다. 그 셈은 날마다 숫자로 서초 곁집장 정유라에게 올라간다. 정비공 모소가 맞춤 날 순번을 두고 따지고 들면, 모소와는 한 씨족(함평 모씨)이라 그는 더 거리낌 없이 다투며 둘째 부위를 받던 해에 새로 묶은 명부를 펴 들고 사람 수부터 부른다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "서초3동 대피소장",
+    "품계": "대피소장",
+    "생업": "대피소 통솔",
+    "일하는 역": "교대역",
+    "잠자는 역": "교대역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 2
+  },
+  "sections": {
+    "생애": "교대역 대피소의 잠자리 칸을 셋째 교대마다 한 바퀴 도는 것은, 스물여덟 살의 모복이 서초3동 대피소장이 된 뒤로 하루도 거르지 않은 일이다. 그는 누가 정비대 쪽 따뜻한 벽에 붙어 자는지 세고, 앓는 사람과 정비공 집안을 먼저 벽 쪽에 눕힌다. 그 셈은 날마다 숫자로 서초 곁집장 정유라에게 올라간다. 정비공 모소가 맞춤 날 순번을 두고 따지고 들면, 모소와는 한 씨족(함평 모씨)이라 그는 더 거리낌 없이 다투며 둘째 부위를 받던 해에 새로 묶은 명부를 펴 들고 사람 수부터 부른다.",
+    "관직": "직함 서초3동 대피소장. 직위 서초3동 대피소장 · 아크. 품계 대피소장. 일하는 역 교대역."
+  },
+  "values": {
+    "권위": 35,
+    "개방": -25,
+    "무력": -5,
+    "물질": -25,
+    "공동": 40,
+    "원칙": -10,
+    "공개": -45,
+    "자격": 25,
+    "분산": -15,
+    "변혁": 15
+  },
+  "desire": {
+    "갈망": 30,
+    "독점": -10,
+    "위험": 30,
+    "과시": 20,
+    "지속": -20,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0287",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "모복",
+        "type": "지휘",
+        "to": "정유라",
+        "basis": "서초 곁집장 정유라의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "표지안",
+        "type": "지휘",
+        "to": "모복",
+        "basis": "서초3동 대피소장 모복의 직속"
+      },
+      {
+        "from": "구도영",
+        "type": "지휘",
+        "to": "모복",
+        "basis": "서초3동 대피소장 모복의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K398",
+    "name": "정유라",
+    "courtId": "court:K398",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K286",
+    "members": [
+      {
+        "personId": "K070",
+        "name": "표지안"
+      },
+      {
+        "personId": "K097",
+        "name": "구도영"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 6,
-        "effective": 6
-      },
-      "negotiation": {
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "management": {
-        "base": 9,
-        "effective": 9
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "insight": {
-        "base": 9,
-        "effective": 9
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 7,
-        "effective": 7
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k286-level-and-valve-recording",
-        "name": {
-          "ko": "수위·밸브 기록",
-          "en": "Level and valve recording"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "k286-priority",
-        "name": {
-          "ko": "실제 수위 우선",
-          "en": "Actual water level first"
-        },
-        "description": {
-          "ko": "모복은 압력 저하 통지에 줄을 둘로 나누되 시험 연기를 적지 않았다. 통지와 실제 수위를 함께 읽는 현장 판단이다.",
-          "en": "Mobok split the queue after a pressure notice without posting trial postponement, judging the notice alongside actual water levels."
-        },
-        "behavior": {
-          "ko": "수위 막대가 최저 눈금에 닿으면 양동 줄을 둘로 나누고, 핸들 페인트가 마른 뒤에만 다음 개폐를 허용한다.",
-          "en": "Office. Rank: assistant manager. Title: residential shell water-supply outpost chief, duty officer of Seo Jina. When the water-level rod touched the lowest graduation, he split the bucket queue in two and allowed the next open-close only after the handle's paint dried."
-        },
-        "stress": {
-          "ko": "거점 밸브가 승계 시험 일정에 묶여 사택 주전자가 식기 전에 핸들이 페인트째 빠지는 것.",
-          "en": "Fear. That the outpost valve would be bound to the technology-trial schedule and the handle would come off with the paint before the residential kettles cooled."
-        },
-        "relationship": {
-          "ko": "서진아의 사택 감사를 거점 핸들에서 집행하는 지휘를 받고, 소봉의 전령 종이와 수위 막대를 같은 못에 꽂는다. 한재목의 물 협상 시각을 쉘 쪽에서 막대에 옮긴다.",
-          "en": "Relations. Under command to execute Seo Jina's housing audit at the outpost handle, he hung So Bong's courier paper and the water-level rod on the same nail. Moved Han Jaemok's water-talk hours onto the rod from the shell side."
-        },
-        "effects": []
-      },
-      {
-        "id": "k286-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 사원. 직함은 강남역 사택 급수 거점장, 서진아의 실무 담당자. 수위 막대가 최저 눈금에 닿으면 양동 줄을 둘로 나누고, 핸들 페인트가 마른 뒤에만 다음 개폐를 허용한다.",
-          "en": "Office. Rank: assistant manager. Title: residential shell water-supply outpost chief, duty officer of Seo Jina. When the water-level rod touched the lowest graduation, he split the bucket queue in two and allowed the next open-close only after the handle's paint dried."
-        },
-        "stress": {
-          "ko": "공포. 거점 밸브가 승계 시험 일정에 묶여 사택 주전자가 식기 전에 핸들이 페인트째 빠지는 것.",
-          "en": "Fear. That the outpost valve would be bound to the technology-trial schedule and the handle would come off with the paint before the residential kettles cooled."
-        },
-        "relationship": {
-          "ko": "관계. 서진아의 사택 감사를 거점 핸들에서 집행하는 지휘를 받고, 소봉의 전령 종이와 수위 막대를 같은 못에 꽂는다. 한재목의 물 협상 시각을 쉘 쪽에서 막대에 옮긴다.",
-          "en": "Relations. Under command to execute Seo Jina's housing audit at the outpost handle, he hung So Bong's courier paper and the water-level rod on the same nail. Moved Han Jaemok's water-talk hours onto the rod from the shell side."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "모복은 압력 저하 통지에 줄을 둘로 나누되 시험 연기를 적지 않았다. 통지와 실제 수위를 함께 읽는 현장 판단이다.",
-      "en": "Mobok split the queue after a pressure notice without posting trial postponement, judging the notice alongside actual water levels."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -528,128 +181,75 @@
   },
   "confirmedHoldings": [
     {
-      "id": "holding:opening-duchy-gu-11650-S11",
+      "id": "holding:v3:dong:1165053000",
       "name": {
-        "ko": "서초구 성하그룹 공작령 직영지"
+        "ko": "서초3동"
       },
       "holderPersonId": "K286",
-      "directLiegePersonId": "K144",
-      "stateId": "S11",
+      "directLiegePersonId": "K398",
+      "stateId": "arc",
       "adminRefs": [
-        {
-          "id": "region:1165051000",
-          "name": "서초1동"
-        },
         {
           "id": "region:1165053000",
           "name": "서초3동"
-        },
-        {
-          "id": "region:1165053100",
-          "name": "서초4동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11650-S11",
+      "territorialScale": "dong",
+      "titleId": null,
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
+      "formalTitleRank": null
     }
   ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "subordinateHoldings": [
     {
-      "id": "title:duchy-gu-11650-S11",
-      "name": "서초구 성하그룹 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K286",
-      "basis": "개막 행정 규모 그룹 gu:11650(duchy) 배분 · 결정적 후보 선정",
-      "stateId": "S11",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "region:1165051000",
-        "region:1165053000",
-        "region:1165053100"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
-    }
-  ],
-  "clan": {
-    "id": "baa8-d568-d3c9",
-    "name": "함평 모씨",
-    "crest": "clan-crests/baa8-d568-d3c9.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 10,
-    "개방": -10,
-    "무력": -15,
-    "물질": 25,
-    "공동": 20,
-    "원칙": 0,
-    "공개": 0,
-    "자격": 60,
-    "분산": 15,
-    "변혁": -30
-  },
-  "desire": {
-    "갈망": 30,
-    "독점": -10,
-    "위험": 30,
-    "과시": 20,
-    "지속": -20,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "사택 급수 수위 확인·개폐 조정",
-    "소속": "성하그룹",
-    "품계": "사원",
-    "직함": "강남역 사택 급수 거점장, 서진아의 실무 담당자",
-    "가치관": "권위 10 | 개방 −10 | 무력 −15 | 물질 25 | 공동 20 | 원칙 0 | 공개 0 | 자격 60 | 분산 15 | 변혁 −30",
-    "욕망": "갈망 30 | 독점 −10 | 위험 30 | 과시 20 | 지속 −20 | 지향 이성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "영등포 정수 당직에서 자랐다. 강남역 사택 급수 거점장, 서진아의 실무 담당자 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 모복은 서초2동에서 사택 급수 수위 확인·개폐 조정 업무를 맡는다. 강남역 사택의 청원·급수 잔량·수위·사고 기록 업무를 서초2동 생활권 근무 참조로 제안한다. 기존 감사·반장·도제 서명 조건을 보존하고 개인 거주·숙소 소유는 추정하지 않는다. 서진아의 사택 감사를 거점 핸들에서 집행하는 지휘를 받고, 소봉의 전령 종이와 수위 막대를 같은 못에 꽂는다. 한재목의 물 협상 시각을 쉘 쪽에서 막대에 옮긴다",
-    "관직": "품계 사원. 직함은 강남역 사택 급수 거점장, 서진아의 실무 담당자. 수위 막대가 최저 눈금에 닿으면 양동 줄을 둘로 나누고, 핸들 페인트가 마른 뒤에만 다음 개폐를 허용한다.",
-    "일화": "북부 배관 압력이 떨어졌다는 종이만 먼저 도착하자 모복은 양동 줄을 둘로 나누고 승계 시험 연기를 거점 벽에는 적지 않았다.",
-    "관계": "서진아의 사택 감사를 거점 핸들에서 집행하는 지휘를 받고, 소봉의 전령 종이와 수위 막대를 같은 못에 꽂는다. 한재목의 물 협상 시각을 쉘 쪽에서 막대에 옮긴다.",
-    "야망": "양동 줄이 흩어지기 전에 거점 밸브를 회장실 게시와 같은 시각에만 돌린다.",
-    "공포": "거점 밸브가 승계 시험 일정에 묶여 사택 주전자가 식기 전에 핸들이 페인트째 빠지는 것.",
-    "개입": "대체 수위 막대를 구해 줄을 하나로 되돌리거나, 핸들 페인트를 지운 손을 밝혀 거점장을 교체할 수 있다."
-  },
-  "biography": "양동 줄의 길이로 밤 수위를 읽고, 기술 탓에 주전자가 비는 순간을 거점의 실패로 적는다. 구두로 밸브를 잠그라는 전갈은 핸들 페인트에 적지 않는다.\n\n- 생업: 사택 급수 수위 확인·개폐 조정\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 사택 급수 거점장, 서진아의 실무 담당자\n**생애.** 영등포 정수 당직에서 자랐다. 강남역 사택 급수 거점장, 서진아의 실무 담당자 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 모복은 서초2동에서 사택 급수 수위 확인·개폐 조정 업무를 맡는다. 강남역 사택의 청원·급수 잔량·수위·사고 기록 업무를 서초2동 생활권 근무 참조로 제안한다. 기존 감사·반장·도제 서명 조건을 보존하고 개인 거주·숙소 소유는 추정하지 않는다. 서진아의 사택 감사를 거점 핸들에서 집행하는 지휘를 받고, 소봉의 전령 종이와 수위 막대를 같은 못에 꽂는다. 한재목의 물 협상 시각을 쉘 쪽에서 막대에 옮긴다\n\n**관직.** 품계 사원. 직함은 강남역 사택 급수 거점장, 서진아의 실무 담당자. 수위 막대가 최저 눈금에 닿으면 양동 줄을 둘로 나누고, 핸들 페인트가 마른 뒤에만 다음 개폐를 허용한다.\n\n**일화.** 북부 배관 압력이 떨어졌다는 종이만 먼저 도착하자 모복은 양동 줄을 둘로 나누고 승계 시험 연기를 거점 벽에는 적지 않았다.\n\n**관계.** 서진아의 사택 감사를 거점 핸들에서 집행하는 지휘를 받고, 소봉의 전령 종이와 수위 막대를 같은 못에 꽂는다. 한재목의 물 협상 시각을 쉘 쪽에서 막대에 옮긴다.\n\n**야망.** 양동 줄이 흩어지기 전에 거점 밸브를 회장실 게시와 같은 시각에만 돌린다.\n\n**공포.** 거점 밸브가 승계 시험 일정에 묶여 사택 주전자가 식기 전에 핸들이 페인트째 빠지는 것.\n\n**개입.** 대체 수위 막대를 구해 줄을 하나로 되돌리거나, 핸들 페인트를 지운 손을 밝혀 거점장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −10 | 무력 −15 | 물질 25 | 공동 20 | 원칙 0 | 공개 0 | 자격 60 | 분산 15 | 변혁 −30\n- 욕망: 갈망 30 | 독점 −10 | 위험 30 | 과시 20 | 지속 −20 | 지향 이성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-11"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "모복",
-        "type": "지휘",
-        "to": "서진아",
-        "basis": "서진아의 주거 감사를 거점 핸들에서 집행하는 지휘를 받고"
+      "id": "holding:v3:station:서초",
+      "name": {
+        "ko": "서초역"
       },
-      {
-        "from": "모복",
-        "type": "계약",
-        "to": "소봉",
-        "basis": "소봉의 전령 종이와 수위 막대를 같은 못에 꽂는다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "평채원",
-        "type": "계약",
-        "to": "모복",
-        "basis": "모복의 수위 막대를 주전자 시간과 겹쳐 읽는다"
-      }
-    ]
-  }
+      "holderPersonId": "K070",
+      "directLiegePersonId": "K286",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "서초",
+        "stationName": "서초"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1165053000",
+          "name": "서초3동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "표지안",
+      "holderRoute": "/people/person-0070"
+    },
+    {
+      "id": "holding:v3:station:교대",
+      "name": {
+        "ko": "교대역"
+      },
+      "holderPersonId": "K097",
+      "directLiegePersonId": "K286",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "교대",
+        "stationName": "교대"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1165053000",
+          "name": "서초3동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "구도영",
+      "holderRoute": "/people/person-0098"
+    }
+  ]
 }

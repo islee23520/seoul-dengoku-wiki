@@ -1,387 +1,105 @@
 {
   "id": "person-0756",
   "name": "안차민",
-  "title": "약재 물류상",
-  "position": "약재 물류상",
+  "title": "동주민센터 서기",
+  "position": "동주민센터 서기 · 제기동역",
   "characterId": "K756",
-  "rank": "수련의",
-  "commonTier": "T3",
-  "occupation": "약재 관리 기록·당직 열쇠 인계",
+  "rank": "사무관",
+  "commonTier": "T5",
+  "occupation": "장부 기재",
   "gender": "남성",
   "stage": "S4",
-  "state": "S13",
-  "stateName": "흰십자단",
-  "sourceRoute": "/world/Cast-State-13#인물-안차민",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0756",
   "birthDate": "2066-09-05",
   "birthday": "09-05",
   "age": 60,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-13.json#/content/490",
-    "lore/characters/Cast-State-13.json#/content/492",
-    "lore/characters/Cast-State-13.json#/content/493"
-  ],
-  "familyTree": {
-    "personId": "K756",
-    "nodes": [
-      {
-        "id": "K756",
-        "personId": "K756",
-        "kind": "person",
-        "name": "안차민",
-        "birthDate": "2066-09-05",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K756"
-          },
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안차민-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 약재 관리 수련의 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-안차민-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0756"
-      },
-      {
-        "id": "FH-K756-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "안승욱",
-        "lineage": {
-          "surname": "안",
-          "bongwan": "순흥",
-          "clan": "c548-c21c-d765-agreed-bbfc-second"
-        },
-        "birthDate": "2036-09-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안차민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "안승욱은 제기동 의무소에서 약재 관리 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-안차민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K756-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "안승란",
-        "lineage": {
-          "surname": "안",
-          "bongwan": "순흥",
-          "clan": "c548-c21c-d765-agreed-bbfc-second"
-        },
-        "birthDate": "2006-09-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안차민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "안승란은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-안차민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K756-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박도은",
-        "birthDate": "2036-09-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안차민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "박도은은 제기동 의무소에서 약재 관리 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-안차민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K756-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이도경",
-        "birthDate": "2006-09-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안차민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이도경은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-안차민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K756-P-01:K756:biological",
-        "from": "FH-K756-P-01",
-        "to": "K756",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안차민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K756-P-02:FH-K756-P-01:biological",
-        "from": "FH-K756-P-02",
-        "to": "FH-K756-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안차민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K756-M-01:K756:biological",
-        "from": "FH-K756-M-01",
-        "to": "K756",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안차민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K756-M-02:FH-K756-M-01:biological",
-        "from": "FH-K756-M-02",
-        "to": "FH-K756-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-안차민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c548-c21c-d765",
+    "name": "순흥 안씨",
+    "crest": "clan-crests/c548-c21c-d765.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "제기동 동주민센터의 자릿세 수납 대장은 순흥 안씨 안차민의 글씨로 서른 해 넘게 이어진다. 예순 살 사무관인 그는 날마다 문 닫기 전 대합실 약초 장을 한 바퀴 돌며 좌판마다 그날의 자릿세 증표를 받고, 받은 자리에 분필로 작은 점을 찍는다. 점이 없는 좌판은 다음 날 아침 창구에 불려 오는데, 그는 사정을 다 들은 뒤에야 처분 칸을 펼친다. 노역 의무가 끝나는 나이가 되도록 창구를 물려줄 서기를 고르지 않은 것이 그의 유일한 미룸이다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "동주민센터 서기",
+    "품계": "사무관",
+    "생업": "장부 기재",
+    "일하는 역": "제기동역",
+    "잠자는 역": "제기동역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "제기동 동주민센터의 자릿세 수납 대장은 순흥 안씨 안차민의 글씨로 서른 해 넘게 이어진다. 예순 살 사무관인 그는 날마다 문 닫기 전 대합실 약초 장을 한 바퀴 돌며 좌판마다 그날의 자릿세 증표를 받고, 받은 자리에 분필로 작은 점을 찍는다. 점이 없는 좌판은 다음 날 아침 창구에 불려 오는데, 그는 사정을 다 들은 뒤에야 처분 칸을 펼친다. 노역 의무가 끝나는 나이가 되도록 창구를 물려줄 서기를 고르지 않은 것이 그의 유일한 미룸이다.",
+    "관직": "직함 동주민센터 서기. 직위 동주민센터 서기 · 제기동역. 품계 사무관. 일하는 역 제기동역."
+  },
+  "values": {
+    "권위": 30,
+    "개방": -35,
+    "무력": -15,
+    "물질": -10,
+    "공동": 25,
+    "원칙": 45,
+    "공개": 5,
+    "자격": 25,
+    "분산": -30,
+    "변혁": -30
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": -20,
+    "위험": 25,
+    "과시": 25,
+    "지속": 5,
+    "지향": "동성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0756",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 5,
-        "effective": 5
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "management": {
-        "base": 9,
-        "effective": 9
+      "stewardship": {
+        "base": 11,
+        "effective": 11
       },
-      "insight": {
-        "base": 8,
-        "effective": 8
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
         "base": 8,
         "effective": 8
       },
       "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
+        "base": 3,
+        "effective": 3
       }
     },
-    "skills": [
-      {
-        "id": "prescription-quantity-allocation",
-        "name": {
-          "ko": "처방량 배분",
-          "en": "Prescription quantity allocation"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "부족분을 모두 나눈다",
-          "en": "Shares scarcity among everyone"
-        },
-        "description": {
-          "ko": "약재가 모자라 처방량을 반씩 나눴다. 부족 자원의 배분 선택은 확인되지만 전체 약재 관리 체계를 세운 경력은 없다.",
-          "en": "Short supplies led to halved prescriptions shared among all. The allocation decision is supported, not a career of building a complete supply system."
-        },
-        "behavior": {
-          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.",
-          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
-        },
-        "stress": {
-          "ko": "공포. 약재 관리 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.",
-          "en": "Fear. That the herb logistics merchant duty post would stand empty and the League's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-          "en": "Office. Rank: member. Title: herb logistics merchant. He handed over only the keys and records of his own post, and never made authority he did not hold."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-          "en": "Recorded duty and limits: Office. Rank: member. Title: herb logistics merchant. He handed over only the keys and records of his own post, and never made authority he did not hold."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 약재 관리 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That the herb logistics merchant duty post would stand empty and the League's passage would become a hostage of the great powers."
-        },
-        "relationship": {
-          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
-          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "약재가 모자라 처방량을 반씩 나눴다. 부족 자원의 배분 선택은 확인되지만 전체 약재 관리 체계를 세운 경력은 없다.",
-      "en": "Short supplies led to halved prescriptions shared among all. The allocation decision is supported, not a career of building a complete supply system."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -419,66 +137,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c548-c21c-d765",
-    "name": "순흥 안씨",
-    "crest": "clan-crests/c548-c21c-d765.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -15,
-    "개방": 20,
-    "무력": -50,
-    "물질": -5,
-    "공동": 20,
-    "원칙": 25,
-    "공개": 30,
-    "자격": 10,
-    "분산": 20,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": -20,
-    "위험": 25,
-    "과시": 25,
-    "지속": 5,
-    "지향": "동성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "약재 관리 기록·당직 열쇠 인계",
-    "소속": "흰십자단",
-    "품계": "수련의",
-    "직함": "약재 물류상",
-    "가치관": "권위 −15 | 개방 20 | 무력 −50 | 물질 −5 | 공동 20 | 원칙 25 | 공개 30 | 자격 10 | 분산 20 | 변혁 −10",
-    "욕망": "갈망 15 | 독점 −20 | 위험 25 | 과시 25 | 지속 5 | 지향 동성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2066-09-05에 태어났다. 2126년 개막 현재 약재 물류상 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 관리 기록·당직 열쇠 인계 창구를 안차민의 업무 기준점으로 한다. 이 배치는 거주지·정확한 시설 경계·작위·영지·점유권을 확정하지 않는다.",
-    "관직": "품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 인계한 열쇠와 기록의 수령 시각을 장부에 적는다.",
-    "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.",
-    "관계": "안차민은 약재 사용량과 남은 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 부족한 물자를 다음 출하에서 확인된 공급으로 잇는다.",
-    "야망": "약재 관리 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.",
-    "공포": "약재 관리 수련의 당직이 비면 흰십자단의 통행이 서울 내부 후원 세력 볼모가 되는 일을 두려워한다.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 약재 관리 기록·당직 열쇠 인계\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재 물류상\n**생애.** 2066-09-05에 태어났다. 2126년 개막 현재 약재 물류상 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 관리 기록·당직 열쇠 인계 창구를 안차민의 업무 기준점으로 한다. 이 배치는 거주지·정확한 시설 경계·작위·영지·점유권을 확정하지 않는다.\n\n**관직.** 품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 인계한 열쇠와 기록의 수령 시각을 장부에 적는다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.\n\n**관계.** 안차민은 약재 사용량과 남은 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 부족한 물자를 다음 출하에서 확인된 공급으로 잇는다.\n\n**야망.** 약재 관리 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.\n\n**공포.** 약재 관리 수련의 당직이 비면 흰십자단의 통행이 서울 내부 후원 세력 볼모가 되는 일을 두려워한다.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 20 | 무력 −50 | 물질 −5 | 공동 20 | 원칙 25 | 공개 30 | 자격 10 | 분산 20 | 변혁 −10\n- 욕망: 갈망 15 | 독점 −20 | 위험 25 | 과시 25 | 지속 5 | 지향 동성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-13"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "안차민",
-        "type": "계약",
-        "to": "동주하",
-        "basis": "안차민은 약재 사용량과 남은 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 부족한 물자를 다음 출하에서 확인된 공급으로 잇는다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

@@ -1,389 +1,123 @@
 {
   "id": "person-0284",
   "name": "국두",
-  "title": "작업 사고 기록관, 조우찬의 실무 담당자",
-  "position": "성하전자 작업 사고 기록관, 조우찬의 실무 담당자",
+  "title": "개포3동 대피소장",
+  "position": "개포3동 대피소장 · 아크",
   "characterId": "K283",
-  "rank": "사원",
-  "commonTier": "T5",
-  "occupation": "작업 사고 서명·불량 표본 번호 기록",
+  "rank": "대피소장",
+  "commonTier": "T3",
+  "occupation": "대피소 통솔",
   "gender": "여성",
   "stage": "S2",
-  "state": "S11",
-  "stateName": "성하그룹",
-  "sourceRoute": "/world/Cast-State-11#인물-국두",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0284",
   "birthDate": "2074-09-01",
   "birthday": "09-01",
   "age": 52,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-11.json#/content/149",
-    "lore/characters/Cast-State-11.json#/content/152",
-    "lore/characters/Cast-State-11.json#/content/153"
-  ],
-  "familyTree": {
-    "personId": "K283",
-    "nodes": [
-      {
-        "id": "K283",
-        "personId": "K283",
-        "kind": "person",
-        "name": "국두",
-        "birthDate": "2074-09-01",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K283"
-          },
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-국두-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 성하전자 작업 사고 기록관, 조우찬의 실무 담당자 자리는 이중 장부 한 줄 삭제로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-국두-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0284"
-      },
-      {
-        "id": "FH-K283-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "국승진",
-        "lineage": {
-          "surname": "국",
-          "bongwan": "담양",
-          "clan": "ad6d-b2f4-c591"
-        },
-        "birthDate": "2044-09-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-국두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2082,
-            "summary": "국승진은 서울역 등기소에서 작업 사고 서명·불량 표본 번호 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-국두-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K283-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "국승현",
-        "lineage": {
-          "surname": "국",
-          "bongwan": "담양",
-          "clan": "ad6d-b2f4-c591"
-        },
-        "birthDate": "2014-09-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-국두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "국승현은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-국두-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K283-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현미",
-        "birthDate": "2044-09-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-국두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2082,
-            "summary": "임현미는 서울역 등기소에서 작업 사고 서명·불량 표본 번호 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-국두-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K283-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오현온",
-        "birthDate": "2014-09-01",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-국두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오현온은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-국두-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K283-P-01:K283:biological",
-        "from": "FH-K283-P-01",
-        "to": "K283",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-국두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K283-P-02:FH-K283-P-01:biological",
-        "from": "FH-K283-P-02",
-        "to": "FH-K283-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-국두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K283-M-01:K283:biological",
-        "from": "FH-K283-M-01",
-        "to": "K283",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-국두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K283-M-02:FH-K283-M-01:biological",
-        "from": "FH-K283-M-02",
-        "to": "FH-K283-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-국두-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ad6d-b2f4-c591",
+    "name": "담양 국씨",
+    "crest": "clan-crests/ad6d-b2f4-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "대모산입구 대피소 명부에는 이름마다 사고 날과 잃은 곳이 함께 적혀 있고, 그 칸을 처음 만든 것이 국두였다. 그 덕에 개포3동 대피소장인 그는 누가 다음 세례 순번에 들어야 하는지 가장 먼저 안다. 그 자신도 사고 칸에 이름이 한 번 오른 사람으로, 그때 받은 첫째 부위 하나를 쉰둘인 지금까지 지니고 있다. 작은 대피소라 강남 곁집 창고에서 몫이 늦게 내려오는 날이 많아, 그는 그런 날마다 곁집장 오경재의 본역 수서로 직접 걸어간다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "개포3동 대피소장",
+    "품계": "대피소장",
+    "생업": "대피소 통솔",
+    "일하는 역": "대모산입구역",
+    "잠자는 역": "대모산입구역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "대모산입구 대피소 명부에는 이름마다 사고 날과 잃은 곳이 함께 적혀 있고, 그 칸을 처음 만든 것이 국두였다. 그 덕에 개포3동 대피소장인 그는 누가 다음 세례 순번에 들어야 하는지 가장 먼저 안다. 그 자신도 사고 칸에 이름이 한 번 오른 사람으로, 그때 받은 첫째 부위 하나를 쉰둘인 지금까지 지니고 있다. 작은 대피소라 강남 곁집 창고에서 몫이 늦게 내려오는 날이 많아, 그는 그런 날마다 곁집장 오경재의 본역 수서로 직접 걸어간다.",
+    "관직": "직함 개포3동 대피소장. 직위 개포3동 대피소장 · 아크. 품계 대피소장. 일하는 역 대모산입구역."
+  },
+  "values": {
+    "권위": 30,
+    "개방": -25,
+    "무력": -5,
+    "물질": -15,
+    "공동": 45,
+    "원칙": 20,
+    "공개": -35,
+    "자격": 20,
+    "분산": -20,
+    "변혁": 15
+  },
+  "desire": {
+    "갈망": -20,
+    "독점": -5,
+    "위험": -40,
+    "과시": -45,
+    "지속": 30,
+    "지향": "양성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0284",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "국두",
+        "type": "지휘",
+        "to": "오경재",
+        "basis": "강남 곁집장 오경재의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K423",
+    "name": "오경재",
+    "courtId": "court:K423",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
         "base": 6,
         "effective": 6
       },
-      "negotiation": {
+      "prowess": {
         "base": 4,
         "effective": 4
-      },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 5,
-        "effective": 5
       }
     },
-    "skills": [
-      {
-        "id": "k283-accident-ledger-reconciliation",
-        "name": {
-          "ko": "사고 원장 대조",
-          "en": "Accident ledger reconciliation"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k283-priority",
-        "name": {
-          "ko": "서명의 책임",
-          "en": "Signature accountability"
-        },
-        "description": {
-          "ko": "국두는 로트와 일지의 어긋남에 원장을 잠갔다. 책임 추적은 강하지만 무서명 사건을 없던 일로 돌리는 경직성도 있다.",
-          "en": "Gukdu locked the ledger over a lot mismatch. Strong accountability tracking coexists with rigidity toward unsigned incidents."
-        },
-        "behavior": {
-          "ko": "사고 한 건에 반장과 도제의 서명을 함께 요구하고, 불량 표본 번호를 같은 줄에 적는다.",
-          "en": "Office. Rank: assistant manager. Title: work accident registrar, duty officer of Jo Woochan. He demanded the squad leader's and the apprentice's signatures together for every accident and wrote the defective specimen numbers on the same line."
-        },
-        "stress": {
-          "ko": "결함 일지가 사택 청원 벽보로 복사되어 기지가 인구 논리로 점거되는 것.",
-          "en": "Fear. That a defect log would be copied into residential election posters and the base would be seized by the logic of population."
-        },
-        "relationship": {
-          "ko": "조우찬의 지휘로 일지를 옮기고, 두모의 정비 표본 번호를 원장에 붙인다. 이홍원의 공개 승계 시험 기록을 잠그지 않는다.",
-          "en": "Relations. Moved the logs under Jo Woochan's command and pasted Du Mo's maintenance specimen numbers into the ledger. He did not lock I Hongwon's public technology trial records."
-        },
-        "effects": []
-      },
-      {
-        "id": "k283-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 사원. 직함은 성하전자 작업 사고 기록관, 조우찬의 실무 담당자. 사고 한 건에 반장과 도제의 서명을 함께 요구하고, 불량 표본 번호를 같은 줄에 적는다.",
-          "en": "Office. Rank: assistant manager. Title: work accident registrar, duty officer of Jo Woochan. He demanded the squad leader's and the apprentice's signatures together for every accident and wrote the defective specimen numbers on the same line."
-        },
-        "stress": {
-          "ko": "공포. 결함 일지가 사택 청원 벽보로 복사되어 기지가 인구 논리로 점거되는 것.",
-          "en": "Fear. That a defect log would be copied into residential election posters and the base would be seized by the logic of population."
-        },
-        "relationship": {
-          "ko": "관계. 조우찬의 지휘로 일지를 옮기고, 두모의 정비 표본 번호를 원장에 붙인다. 이홍원의 공개 승계 시험 기록을 잠그지 않는다.",
-          "en": "Relations. Moved the logs under Jo Woochan's command and pasted Du Mo's maintenance specimen numbers into the ledger. He did not lock I Hongwon's public technology trial records."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "국두는 로트와 일지의 어긋남에 원장을 잠갔다. 책임 추적은 강하지만 무서명 사건을 없던 일로 돌리는 경직성도 있다.",
-      "en": "Gukdu locked the ledger over a lot mismatch. Strong accountability tracking coexists with rigidity toward unsigned incidents."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -393,7 +127,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -419,72 +153,25 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ad6d-b2f4-c591",
-    "name": "담양 국씨",
-    "crest": "clan-crests/ad6d-b2f4-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 5,
-    "개방": -10,
-    "무력": -15,
-    "물질": 35,
-    "공동": 25,
-    "원칙": 30,
-    "공개": 10,
-    "자격": 55,
-    "분산": 10,
-    "변혁": -30
-  },
-  "desire": {
-    "갈망": -20,
-    "독점": -5,
-    "위험": -40,
-    "과시": -45,
-    "지속": 30,
-    "지향": "양성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "작업 사고 서명·불량 표본 번호 기록",
-    "소속": "성하그룹",
-    "품계": "사원",
-    "직함": "성하전자 작업 사고 기록관, 조우찬의 실무 담당자",
-    "가치관": "권위 5 | 개방 −10 | 무력 −15 | 물질 35 | 공동 25 | 원칙 30 | 공개 10 | 자격 55 | 분산 10 | 변혁 −30",
-    "욕망": "갈망 −20 | 독점 −5 | 위험 −40 | 과시 −45 | 지속 30 | 지향 양성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "서울역 등기소에서 자랐다. 성하전자 작업 사고 기록관, 조우찬의 실무 담당자 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 국두는 서초4동에서 작업 사고 서명·불량 표본 번호 기록 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다. 조우찬의 지휘로 일지를 옮기고, 두모의 정비 표본 번호를 원장에 붙인다. 이홍원의 공개 승계 시험 기록을 잠그지 않는다",
-    "관직": "품계 사원. 직함은 성하전자 작업 사고 기록관, 조우찬의 실무 담당자. 사고 한 건에 반장과 도제의 서명을 함께 요구하고, 불량 표본 번호를 같은 줄에 적는다.",
-    "일화": "깎인 베어링의 로트 번호가 일지와 한 구간에서만 어긋나자 원장을 잠갔다.",
-    "관계": "조우찬의 지휘로 일지를 옮기고, 두모의 정비 표본 번호를 원장에 붙인다. 이홍원의 공개 승계 시험 기록을 잠그지 않는다.",
-    "야망": "작업 기록과 사고 책임을 회장실 게시판의 유일한 가동 근거로 남겨 이씨 가문 승계 소문을 일지로 끊는다.",
-    "공포": "결함 일지가 사택 청원 벽보로 복사되어 기지가 인구 논리로 점거되는 것.",
-    "개입": "어긋난 줄을 공개하거나, 일지 잠금을 하루 늦춰 폭동을 막을 수 있다."
-  },
-  "biography": "사고 책임을 날짜까지 기억하고, 서명 없는 일지를 없던 일로 돌린다. 회의보다 차륜 아래의 필적을 믿는다.\n\n- 생업: 작업 사고 서명·불량 표본 번호 기록\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 작업 사고 기록관, 조우찬의 실무 담당자\n**생애.** 서울역 등기소에서 자랐다. 성하전자 작업 사고 기록관, 조우찬의 실무 담당자 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 국두는 서초4동에서 작업 사고 서명·불량 표본 번호 기록 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다. 조우찬의 지휘로 일지를 옮기고, 두모의 정비 표본 번호를 원장에 붙인다. 이홍원의 공개 승계 시험 기록을 잠그지 않는다\n\n**관직.** 품계 사원. 직함은 성하전자 작업 사고 기록관, 조우찬의 실무 담당자. 사고 한 건에 반장과 도제의 서명을 함께 요구하고, 불량 표본 번호를 같은 줄에 적는다.\n\n**일화.** 깎인 베어링의 로트 번호가 일지와 한 구간에서만 어긋나자 원장을 잠갔다.\n\n**관계.** 조우찬의 지휘로 일지를 옮기고, 두모의 정비 표본 번호를 원장에 붙인다. 이홍원의 공개 승계 시험 기록을 잠그지 않는다.\n\n**야망.** 작업 기록과 사고 책임을 회장실 게시판의 유일한 가동 근거로 남겨 이씨 가문 승계 소문을 일지로 끊는다.\n\n**공포.** 결함 일지가 사택 청원 벽보로 복사되어 기지가 인구 논리로 점거되는 것.\n\n**개입.** 어긋난 줄을 공개하거나, 일지 잠금을 하루 늦춰 폭동을 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 −10 | 무력 −15 | 물질 35 | 공동 25 | 원칙 30 | 공개 10 | 자격 55 | 분산 10 | 변혁 −30\n- 욕망: 갈망 −20 | 독점 −5 | 위험 −40 | 과시 −45 | 지속 30 | 지향 양성 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-11"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "국두",
-        "type": "지휘",
-        "to": "조우찬",
-        "basis": "조우찬의 지휘로 일지를 옮기고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1168067500",
+      "name": {
+        "ko": "개포3동"
       },
-      {
-        "from": "국두",
-        "type": "계약",
-        "to": "두모",
-        "basis": "두모의 정비 표본 번호를 원장에 붙인다"
-      }
-    ],
-    "incoming": []
-  }
+      "holderPersonId": "K283",
+      "directLiegePersonId": "K423",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1168067500",
+          "name": "개포3동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

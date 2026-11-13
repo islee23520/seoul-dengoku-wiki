@@ -1,493 +1,120 @@
 {
   "id": "person-0360",
   "name": "동새봄",
-  "title": "교량 하부 탐사원, 심가은의 실무 담당자",
-  "position": "아관사 교량 하부 탐사원, 심가은의 실무 담당자",
+  "title": "충정로역 역장",
+  "position": "충정로역 역장 · 정부",
   "characterId": "K359",
-  "rank": "병장",
-  "commonTier": "T5",
-  "occupation": "교량 하부 실측·적대 문장 대조",
+  "rank": "역장",
+  "commonTier": "T4",
+  "occupation": "역 행정",
   "gender": "여성",
   "stage": "S2",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-동새봄",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0360",
   "birthDate": "2090-08-02",
   "birthday": "08-02",
   "age": 36,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/160",
-    "lore/characters/Cast-State-14.json#/content/163"
-  ],
-  "familyTree": {
-    "personId": "K359",
-    "nodes": [
-      {
-        "id": "K359",
-        "personId": "K359",
-        "kind": "person",
-        "name": "동새봄",
-        "birthDate": "2090-08-02",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K359"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-동새봄-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 아관사 교량 하부 탐사원, 심가은의 실무 담당자 자리는 야간 무단 도하 적발로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-동새봄-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0360"
-      },
-      {
-        "id": "FH-K359-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "동승진",
-        "lineage": {
-          "surname": "동",
-          "bongwan": "광천",
-          "clan": "b3d9-ad11-cc9c-agreed-c0c8-first"
-        },
-        "birthDate": "2060-08-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-동새봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2098,
-            "summary": "동승진은 암사 경비 초소에서 교량 하부 실측·적대 문장 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-동새봄-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K359-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "동승현",
-        "lineage": {
-          "surname": "동",
-          "bongwan": "광천",
-          "clan": "b3d9-ad11-cc9c-agreed-c0c8-first"
-        },
-        "birthDate": "2030-08-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-동새봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "동승현은 암사 경비 초소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-동새봄-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K359-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "동승영",
-        "lineage": {
-          "surname": "동",
-          "bongwan": "광천",
-          "clan": "b3d9-ad11-cc9c-agreed-c0c8-first"
-        },
-        "birthDate": "2000-08-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-동새봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "동승영은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-동새봄-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K359-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김준연",
-        "birthDate": "2060-08-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-동새봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2098,
-            "summary": "김준연은 암사 경비 초소에서 교량 하부 실측·적대 문장 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-동새봄-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K359-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준아",
-        "birthDate": "2030-08-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-동새봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "박준아는 암사 경비 초소에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-동새봄-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K359-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준희",
-        "birthDate": "2000-08-02",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-동새봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이준희는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-동새봄-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K359-P-01:K359:biological",
-        "from": "FH-K359-P-01",
-        "to": "K359",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-동새봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K359-P-02:FH-K359-P-01:biological",
-        "from": "FH-K359-P-02",
-        "to": "FH-K359-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-동새봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K359-P-03:FH-K359-P-02:biological",
-        "from": "FH-K359-P-03",
-        "to": "FH-K359-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-동새봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K359-M-01:K359:biological",
-        "from": "FH-K359-M-01",
-        "to": "K359",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-동새봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K359-M-02:FH-K359-M-01:biological",
-        "from": "FH-K359-M-02",
-        "to": "FH-K359-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-동새봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K359-M-03:FH-K359-M-02:biological",
-        "from": "FH-K359-M-03",
-        "to": "FH-K359-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-동새봄-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b3d9-ad11-cc9c",
+    "name": "광천 동씨",
+    "crest": "clan-crests/b3d9-ad11-cc9c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "충정로역 출입구 굴의 대피칸은 날마다 다시 세어지고, 세는 사람은 역장 동새봄이다. 광천 동씨인 그녀는 서른여섯 살이고, 서대문구 충현동에 기재돼 있다. 공덕 장터로 오가는 짐 썰매가 그 굴을 쉬지 않고 드나들어, 썰매 하나가 대피칸 하나를 막는 날이면 그녀가 썰매 순서를 직접 끊는다. 결재는 동장 수효은을 거쳐 올라가지만, 알렉산더 밀러 의원의 사무소가 같은 역에 있어 그녀의 보고는 동장의 도장이 마르기도 전에 의원실에 닿는다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "충정로역 역장",
+    "품계": "역장",
+    "생업": "역 행정",
+    "일하는 역": "충정로역",
+    "잠자는 역": "충정로역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "충정로역 출입구 굴의 대피칸은 날마다 다시 세어지고, 세는 사람은 역장 동새봄이다. 광천 동씨인 그녀는 서른여섯 살이고, 서대문구 충현동에 기재돼 있다. 공덕 장터로 오가는 짐 썰매가 그 굴을 쉬지 않고 드나들어, 썰매 하나가 대피칸 하나를 막는 날이면 그녀가 썰매 순서를 직접 끊는다. 결재는 동장 수효은을 거쳐 올라가지만, 알렉산더 밀러 의원의 사무소가 같은 역에 있어 그녀의 보고는 동장의 도장이 마르기도 전에 의원실에 닿는다.",
+    "관직": "직함 충정로역 역장. 직위 충정로역 역장 · 정부. 품계 역장. 일하는 역 충정로역."
+  },
+  "values": {
+    "권위": 80,
+    "개방": -70,
+    "무력": 70,
+    "물질": -5,
+    "공동": 30,
+    "원칙": 25,
+    "공개": -45,
+    "자격": 15,
+    "분산": -60,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": 0,
+    "독점": -30,
+    "위험": -25,
+    "과시": -30,
+    "지속": -10,
+    "지향": "무성향",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0360",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "동새봄",
+        "type": "지휘",
+        "to": "수효은",
+        "basis": "충현동 동장 수효은의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K339",
+    "name": "수효은",
+    "courtId": "court:K339",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 6,
-        "effective": 6
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
-      },
       "learning": {
-        "base": 10,
-        "effective": 10
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 9,
-        "effective": 9
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "damage-coordinate-recording",
-        "name": {
-          "ko": "파손 좌표 기록",
-          "en": "Damage coordinate recording"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "목격만 공개한다",
-          "en": "Publishes observation only"
-        },
-        "description": {
-          "ko": "적대 보고가 퍼지자 추정 칸을 지우고 금 간 관만 공개했다. 정보 절제는 강점이며 실제 공격 원인을 확정한 것은 아니다.",
-          "en": "As hostile reports spread, inference was removed and only cracked pipes published. Information restraint is a strength, not proof of the cause."
-        },
-        "behavior": {
-          "ko": "목격과 추정을 다른 색 먹으로 적게 하지만, 위기 때는 추정 칸을 지우고 금이 간 관만 남긴다. 보고를 빨리 쓰되 해석을 보태는 상관의 버릇을 현장에서 깎는다.",
-          "en": "He had sightings and conjectures written in different inks, but in a crisis he erased the conjecture column and left only the cracked pipe. He pared down in the field a superior's habit of adding interpretation to fast reports."
-        },
-        "stress": {
-          "ko": "공포. 오인 실선 한 줄이 동부 교량 전쟁으로 번져 자신이 원한의 대상이 되는 것.",
-          "en": "Fear. That one mistaken solid line would spread into an eastern-bridge war and he would become its object of grudges."
-        },
-        "relationship": {
-          "ko": "관계. 심가은의 척후 보고를 좌표로 번역하는 사제이고, 안기준의 교각 균열 이름을 원판 여백에 적는다. 장세화의 환승 정보를 점선으로만 맞교환한다.",
-          "en": "Relations. An apprentice translating Sim Gaeun's reconnaissance reports into coordinates, he wrote An Giun's pier-crack names in the margin of the master plate. Exchanged transfer information with Jang Sehwa in dotted lines only."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 병장. 직함은 아관사 교량 하부 탐사원, 심가은의 실무 담당자. 실측하지 않은 파손은 점선으로만 남기고, 적대행위 문장은 양군의 확인 전에는 원판에 옮기지 않는다.",
-          "en": "Office. Rank: sergeant. Title: bridge underside surveyor, duty officer of Sim Gaeun. He left unsurveyed damage only as dotted lines and moved no hostile-action clause onto the master plate before Go Seojun's direct report."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 병장. 직함은 아관사 교량 하부 탐사원, 심가은의 실무 담당자. 실측하지 않은 파손은 점선으로만 남기고, 적대행위 문장은 양군의 확인 전에는 원판에 옮기지 않는다.",
-          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: bridge underside surveyor, duty officer of Sim Gaeun. He left unsurveyed damage only as dotted lines and moved no hostile-action clause onto the master plate before Go Seojun's direct report."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 오인 실선 한 줄이 동부 교량 전쟁으로 번져 자신이 원한의 대상이 되는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That one mistaken solid line would spread into an eastern-bridge war and he would become its object of grudges."
-        },
-        "relationship": {
-          "ko": "관계. 심가은의 척후 보고를 좌표로 번역하는 사제이고, 안기준의 교각 균열 이름을 원판 여백에 적는다. 장세화의 환승 정보를 점선으로만 맞교환한다.",
-          "en": "Relations. An apprentice translating Sim Gaeun's reconnaissance reports into coordinates, he wrote An Giun's pier-crack names in the margin of the master plate. Exchanged transfer information with Jang Sehwa in dotted lines only."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "적대 보고가 퍼지자 추정 칸을 지우고 금 간 관만 공개했다. 정보 절제는 강점이며 실제 공격 원인을 확정한 것은 아니다.",
-      "en": "As hostile reports spread, inference was removed and only cracked pipes published. Information restraint is a strength, not proof of the cause."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -525,72 +152,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b3d9-ad11-cc9c",
-    "name": "광천 동씨",
-    "crest": "clan-crests/b3d9-ad11-cc9c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 35,
-    "개방": -15,
-    "무력": 35,
-    "물질": 0,
-    "공동": 25,
-    "원칙": 5,
-    "공개": -20,
-    "자격": 0,
-    "분산": -10,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 0,
-    "독점": -30,
-    "위험": -25,
-    "과시": -30,
-    "지속": -10,
-    "지향": "무성향",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "교량 하부 실측·적대 문장 대조",
-    "소속": "아관사",
-    "품계": "병장",
-    "직함": "아관사 교량 하부 탐사원, 심가은의 실무 담당자",
-    "가치관": "권위 35 | 개방 −15 | 무력 35 | 물질 0 | 공동 25 | 원칙 5 | 공개 −20 | 자격 0 | 분산 −10 | 변혁 0",
-    "욕망": "갈망 0 | 독점 −30 | 위험 −25 | 과시 −30 | 지속 −10 | 지향 무성향 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2090-08-02에 태어났다. 2126년 개막 현재 아관사 교량 하부 탐사원, 심가은의 실무 담당자 직무를 맡아 교량 하부 실측·적대 문장 대조 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 교량 하부 실측·적대 문장 대조 창구가 동새봄의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 병장. 직함은 아관사 교량 하부 탐사원, 심가은의 실무 담당자. 교량 하부 실측·적대 문장 대조 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
-    "일화": "상수관 파손을 적대행위로 적은 척후 보고가 능선과 교량에 동시에 퍼지자 동새봄은 추정 칸을 지우고 금 간 관만 공개했다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
-    "관계": "심가은의 척후 보고를 좌표로 번역하는 사제이고, 안기준의 교각 균열 이름을 원판 여백에 적는다. 장세화의 환승 정보를 점선으로만 맞교환한다.",
-    "야망": "동새봄은 아관사 교량 하부 탐사원, 심가은의 실무 담당자 직무에서 교량 하부 실측·적대 문장 대조 기록을 공개 인계표와 맞물리게 하려 한다.",
-    "공포": "아관사 교량 하부 탐사원, 심가은의 실무 담당자 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
-    "개입": "추정 칸의 원본을 공개하거나, 오인 실선을 덮어 일방의 지휘권 확대를 가속할 수 있다. 동새봄의 교량 하부 실측·적대 문장 대조 원장을 대조해 다음 인계의 증거를 세울 수 있다."
-  },
-  "biography": "동새봄은 교량 하부 실측·적대 문장 대조 기록을 손에 익힌 아관사 인물이다. 목격과 추정을 다른 색 먹으로 적게 하지만, 위기 때는 추정 칸을 지우고 금이 간 관만 남긴다. 보고를 빨리 쓰되 해석을 보태는 상관의 버릇을 현장에서 깎는다.\n\n- 생업: 교량 하부 실측·적대 문장 대조\n- 소속: 아관사\n- 품계: 병장\n- 직함: 아관사 교량 하부 탐사원, 심가은의 실무 담당자\n**생애.** 2090-08-02에 태어났다. 2126년 개막 현재 아관사 교량 하부 탐사원, 심가은의 실무 담당자 직무를 맡아 교량 하부 실측·적대 문장 대조 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 교량 하부 실측·적대 문장 대조 창구가 동새봄의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 병장. 직함은 아관사 교량 하부 탐사원, 심가은의 실무 담당자. 교량 하부 실측·적대 문장 대조 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 상수관 파손을 적대행위로 적은 척후 보고가 능선과 교량에 동시에 퍼지자 동새봄은 추정 칸을 지우고 금 간 관만 공개했다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 심가은의 척후 보고를 좌표로 번역하는 사제이고, 안기준의 교각 균열 이름을 원판 여백에 적는다. 장세화의 환승 정보를 점선으로만 맞교환한다.\n\n**야망.** 동새봄은 아관사 교량 하부 탐사원, 심가은의 실무 담당자 직무에서 교량 하부 실측·적대 문장 대조 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 아관사 교량 하부 탐사원, 심가은의 실무 담당자 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 추정 칸의 원본을 공개하거나, 오인 실선을 덮어 일방의 지휘권 확대를 가속할 수 있다. 동새봄의 교량 하부 실측·적대 문장 대조 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −15 | 무력 35 | 물질 0 | 공동 25 | 원칙 5 | 공개 −20 | 자격 0 | 분산 −10 | 변혁 0\n- 욕망: 갈망 0 | 독점 −30 | 위험 −25 | 과시 −30 | 지속 −10 | 지향 무성향 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-14"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "동새봄",
-        "type": "사제",
-        "to": "심가은",
-        "basis": "심가은의 척후 보고를 좌표로 번역하는 사제이고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:충정로",
+      "name": {
+        "ko": "충정로역"
       },
-      {
-        "from": "동새봄",
-        "type": "사제",
-        "to": "안기준",
-        "basis": "안기준의 교각 균열 이름을 원판 여백에 적는다"
-      }
-    ],
-    "incoming": []
-  }
+      "holderPersonId": "K359",
+      "directLiegePersonId": "K339",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "충정로",
+        "stationName": "충정로"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1141056500",
+          "name": "충현동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

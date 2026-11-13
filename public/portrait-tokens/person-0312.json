@@ -3,27 +3,27 @@
   "personId": "person-0312",
   "characterId": "K311",
   "name": "복용",
-  "stateId": "S12",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "북동부 중립시장 거점장"
+    "role": "우이동 동장 · 정부"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short wavy hair",
-    "upper": "khaki long belted wool coat with deep patch pockets, with a light knitted scarf",
-    "outfit": "khaki long belted wool coat with deep patch pockets, with a light knitted scarf",
+    "upper": "남색 띠를 두른 누빔 외투",
+    "outfit": "남색 띠를 두른 누빔 외투",
     "palette": [
+      "navy",
       "khaki",
-      "mustard ochre",
-      "clay brown"
+      "mustard ochre"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
     "lower": "mustard ochre wool breeches with buttoned cuffs",
     "footwear": "laced leather walking shoes",
-    "accessories": "small leather coin purse and a folded ledger"
+    "accessories": "civil-servant ID and a leather seal pouch"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "khaki long belted wool coat with deep patch pockets, with a light knitted scarf",
+        "value": "남색 띠를 두른 누빔 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
         "value": "mustard ochre wool breeches with buttoned cuffs",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
         "value": "laced leather walking shoes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -206,39 +206,39 @@
       "neckline": {
         "value": "shirt collar under a knit vest",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "small leather coin purse and a folded ledger",
+        "value": "civil-servant ID and a leather seal pouch",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
-        "derived": true
-      },
-      "shape": {
-        "value": "pouch and narrow ledger",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "brown leather and paper",
+        "value": "navy cord and dark brown leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, paper",
+        "value": "card, leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "purse at the belt, ledger in the coat pocket",
+        "value": "ID round the neck, pouch at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat card and a small square pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 복용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average with narrow shoulders; skin: light warm beige. upper garment: khaki long belted wool coat with deep patch pockets, with a light knitted scarf; neckline: shirt collar under a knit vest. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: khaki, mustard ochre, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 복용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average with narrow shoulders; skin: light warm beige. upper garment: 남색 띠를 두른 누빔 외투; neckline: shirt collar under a knit vest. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, khaki, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 복용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average with narrow shoulders; skin: light warm beige; average adult male height. upper garment: khaki long belted wool coat with deep patch pockets, with a light knitted scarf; neckline: shirt collar under a knit vest; lower garment: mustard ochre wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: khaki, mustard ochre, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 복용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average with narrow shoulders; skin: light warm beige; average adult male height. upper garment: 남색 띠를 두른 누빔 외투; neckline: shirt collar under a knit vest; lower garment: mustard ochre wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, khaki, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 복용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average with narrow shoulders; skin: light warm beige; average adult male height. upper garment: khaki long belted wool coat with deep patch pockets, with a light knitted scarf; neckline: shirt collar under a knit vest; lower garment: mustard ochre wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: khaki, mustard ochre, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 복용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average with narrow shoulders; skin: light warm beige; average adult male height. upper garment: 남색 띠를 두른 누빔 외투; neckline: shirt collar under a knit vest; lower garment: mustard ochre wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, khaki, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 복용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average with narrow shoulders; skin: light warm beige; average adult male height. upper garment: khaki long belted wool coat with deep patch pockets, with a light knitted scarf; neckline: shirt collar under a knit vest; lower garment: mustard ochre wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: khaki, mustard ochre, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 복용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average with narrow shoulders; skin: light warm beige; average adult male height. upper garment: 남색 띠를 두른 누빔 외투; neckline: shirt collar under a knit vest; lower garment: mustard ochre wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, khaki, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 복용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average with narrow shoulders; skin: light warm beige; average adult male height. upper garment: khaki long belted wool coat with deep patch pockets, with a light knitted scarf; neckline: shirt collar under a knit vest; lower garment: mustard ochre wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: khaki, mustard ochre, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 복용, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: diamond-shaped with high cheekbones; gently hooded dark brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: closed mouth with a fuller lower lip; natural muted rose lips; facial hair: clean shaven. short wavy hair; dark brown hair; short length. build: average with narrow shoulders; skin: light warm beige; average adult male height. upper garment: 남색 띠를 두른 누빔 외투; neckline: shirt collar under a knit vest; lower garment: mustard ochre wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, khaki, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

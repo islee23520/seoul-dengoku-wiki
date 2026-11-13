@@ -3,26 +3,27 @@
   "personId": "person-0361",
   "characterId": "K360",
   "name": "방마름",
-  "stateId": "S14",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "양군 관문 통과 기록관, 하윤목의 실무 담당자"
+    "role": "구 부대 지휘관 · 금호역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, youthful smooth skin",
     "hair": "medium-length hair swept back",
-    "upper": "dove grey buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer",
-    "outfit": "dove grey buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer",
+    "upper": "altered pre-blackout camouflage winter suit",
+    "outfit": "altered pre-blackout camouflage winter suit",
     "palette": [
-      "dove grey",
-      "navy"
+      "olive drab",
+      "khaki",
+      "charcoal"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "navy wool breeches with buttoned cuffs",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "camouflage winter trousers tucked into boots",
+    "footwear": "lace-up leather combat boots",
+    "accessories": "rank insignia on the collar and a service-number tag on a chain"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -173,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "padded winter field cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "dove grey buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer",
+        "value": "altered pre-blackout camouflage winter suit",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "navy wool breeches with buttoned cuffs",
+        "value": "camouflage winter trousers tucked into boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "lace-up leather combat boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "closed padded collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "rank insignia on the collar and a service-number tag on a chain",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "dull steel and black",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "steel, embroidered cloth",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "sewn to the collar and hung at the neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small insignia and an oval tag",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 방마름, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: soft rounded; skin: medium warm beige. upper garment: dove grey buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 방마름, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: soft rounded; skin: medium warm beige. headwear: padded winter field cap; upper garment: altered pre-blackout camouflage winter suit; neckline: closed padded collar. accessories: rank insignia on the collar and a service-number tag on a chain; worn as sewn to the collar and hung at the neck. color palette: olive drab, khaki, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 방마름, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: soft rounded; skin: medium warm beige; average adult male height. upper garment: dove grey buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 방마름, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: soft rounded; skin: medium warm beige; average adult male height. headwear: padded winter field cap; upper garment: altered pre-blackout camouflage winter suit; neckline: closed padded collar; lower garment: camouflage winter trousers tucked into boots; footwear: lace-up leather combat boots. accessories: rank insignia on the collar and a service-number tag on a chain; worn as sewn to the collar and hung at the neck. color palette: olive drab, khaki, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 방마름, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: soft rounded; skin: medium warm beige; average adult male height. upper garment: dove grey buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 방마름, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: soft rounded; skin: medium warm beige; average adult male height. headwear: padded winter field cap; upper garment: altered pre-blackout camouflage winter suit; neckline: closed padded collar; lower garment: camouflage winter trousers tucked into boots; footwear: lace-up leather combat boots. accessories: rank insignia on the collar and a service-number tag on a chain; worn as sewn to the collar and hung at the neck. color palette: olive drab, khaki, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 방마름, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: soft rounded; skin: medium warm beige; average adult male height. upper garment: dove grey buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 방마름, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: soft rounded; skin: medium warm beige; average adult male height. headwear: padded winter field cap; upper garment: altered pre-blackout camouflage winter suit; neckline: closed padded collar; lower garment: camouflage winter trousers tucked into boots; footwear: lace-up leather combat boots. accessories: rank insignia on the collar and a service-number tag on a chain; worn as sewn to the collar and hung at the neck. color palette: olive drab, khaki, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 방마름, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: soft rounded; skin: medium warm beige; average adult male height. upper garment: dove grey buttoned wool vest over a long-sleeved collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: navy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 방마름, an East Asian man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. medium-length hair swept back; dark brown hair; medium length. build: soft rounded; skin: medium warm beige; average adult male height. headwear: padded winter field cap; upper garment: altered pre-blackout camouflage winter suit; neckline: closed padded collar; lower garment: camouflage winter trousers tucked into boots; footwear: lace-up leather combat boots. accessories: rank insignia on the collar and a service-number tag on a chain; worn as sewn to the collar and hung at the neck. color palette: olive drab, khaki, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

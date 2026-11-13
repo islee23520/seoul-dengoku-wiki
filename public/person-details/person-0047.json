@@ -1,500 +1,105 @@
 {
   "id": "person-0047",
   "name": "명다해",
-  "title": "금천 배급솥 시장 중개인",
-  "position": "금천 배급솥 시장 중개인",
+  "title": "금천구청 명씨네 굴착틀대 대주",
+  "position": "금천구청 명씨네 굴착틀대 대주 · 금천구청역",
   "characterId": "K047",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "배급솥 운영",
+  "rank": "대주",
+  "commonTier": "T5",
+  "occupation": "부품 가공",
   "gender": "남성",
   "stage": "S2",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-명다해",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0047",
   "birthDate": "2088-07-15",
   "birthday": "07-15",
   "age": 38,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/203"
-  ],
-  "familyTree": {
-    "personId": "K047",
-    "nodes": [
-      {
-        "id": "K047",
-        "personId": "K047",
-        "kind": "person",
-        "name": "명다해",
-        "birthDate": "2088-07-15",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K047"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-명다해-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 금천 배급솥 시장 중개인 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-명다해-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0047"
-      },
-      {
-        "id": "FH-K047-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "명승진",
-        "lineage": {
-          "surname": "명",
-          "bongwan": "연안",
-          "clan": "ba85-c5f0-c548"
-        },
-        "birthDate": "2058-07-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-명다해-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2096,
-            "summary": "명승진은 영등포 정수 당직에서 배급솥 운영 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-명다해-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K047-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "명승현",
-        "lineage": {
-          "surname": "명",
-          "bongwan": "연안",
-          "clan": "ba85-c5f0-c548"
-        },
-        "birthDate": "2028-07-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-명다해-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2066,
-            "summary": "명승현은 영등포 정수 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-명다해-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K047-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "명승영",
-        "lineage": {
-          "surname": "명",
-          "bongwan": "연안",
-          "clan": "ba85-c5f0-c548"
-        },
-        "birthDate": "1998-07-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-명다해-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "명승영은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-명다해-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K047-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김승아",
-        "birthDate": "2058-07-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-명다해-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2096,
-            "summary": "김승아는 영등포 정수 당직에서 배급솥 운영 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-명다해-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K047-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박승아",
-        "birthDate": "2028-07-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-명다해-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2066,
-            "summary": "박승아는 영등포 정수 당직에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-명다해-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K047-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "이승수",
-        "birthDate": "1998-07-15",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-명다해-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이승수는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-명다해-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K047-P-01:K047:biological",
-        "from": "FH-K047-P-01",
-        "to": "K047",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-명다해-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K047-P-02:FH-K047-P-01:biological",
-        "from": "FH-K047-P-02",
-        "to": "FH-K047-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-명다해-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K047-P-03:FH-K047-P-02:biological",
-        "from": "FH-K047-P-03",
-        "to": "FH-K047-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-명다해-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K047-M-01:K047:biological",
-        "from": "FH-K047-M-01",
-        "to": "K047",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-명다해-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K047-M-02:FH-K047-M-01:biological",
-        "from": "FH-K047-M-02",
-        "to": "FH-K047-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-명다해-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K047-M-03:FH-K047-M-02:biological",
-        "from": "FH-K047-M-03",
-        "to": "FH-K047-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-명다해-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ba85-c5f0-c548",
+    "name": "연안 명씨",
+    "crest": "clan-crests/ba85-c5f0-c548.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "관악의 굴착조는 명다해네 대의 틀이 없으면 바위를 뚫지 못한다. 금천구청 승강장의 이 명씨네 굴착틀대는 가산의 옛 공장 터에서 건진 큰 기계를 뜯어 우물 굴착 틀의 축과 날을 깎고, 새로 짠 틀은 내놓기 전에 역 아래 마른 암반에 한 길 깊이로 시험 삼아 뚫어 본다. 이번 세 번째 급수계약에서 굴착 틀 한 벌을 몇 킬로에 내놓을지 셈하느라, 서른여덟의 대주는 바람 시간에도 판 앞에 앉아 있다. 명씨네는 경계조를 내는 금천의 두 도장 집안 가운데 다른 하나인데, 대주 자신은 테두리를 넘은 적이 없어 경계장 자리가 비면 그 집안은 넘었다 돌아온 다른 손을 대주회에 낸다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "금천구청 명씨네 굴착틀대 대주",
+    "품계": "대주",
+    "생업": "부품 가공",
+    "일하는 역": "금천구청역",
+    "잠자는 역": "금천구청역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "관악의 굴착조는 명다해네 대의 틀이 없으면 바위를 뚫지 못한다. 금천구청 승강장의 이 명씨네 굴착틀대는 가산의 옛 공장 터에서 건진 큰 기계를 뜯어 우물 굴착 틀의 축과 날을 깎고, 새로 짠 틀은 내놓기 전에 역 아래 마른 암반에 한 길 깊이로 시험 삼아 뚫어 본다. 이번 세 번째 급수계약에서 굴착 틀 한 벌을 몇 킬로에 내놓을지 셈하느라, 서른여덟의 대주는 바람 시간에도 판 앞에 앉아 있다. 명씨네는 경계조를 내는 금천의 두 도장 집안 가운데 다른 하나인데, 대주 자신은 테두리를 넘은 적이 없어 경계장 자리가 비면 그 집안은 넘었다 돌아온 다른 손을 대주회에 낸다.",
+    "관직": "직함 금천구청 명씨네 굴착틀대 대주. 직위 금천구청 명씨네 굴착틀대 대주 · 금천구청역. 품계 대주. 일하는 역 금천구청역."
+  },
+  "values": {
+    "권위": -75,
+    "개방": 20,
+    "무력": -25,
+    "물질": 65,
+    "공동": 20,
+    "원칙": -20,
+    "공개": 40,
+    "자격": 80,
+    "분산": 80,
+    "변혁": 35
+  },
+  "desire": {
+    "갈망": -10,
+    "독점": -20,
+    "위험": -25,
+    "과시": 5,
+    "지속": 30,
+    "지향": "유동",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0047",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
+      "diplomacy": {
+        "base": 5,
+        "effective": 5
       },
-      "strategy": {
-        "base": 9,
-        "effective": 9
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 10,
-        "effective": 10
-      },
-      "management": {
+      "stewardship": {
         "base": 11,
         "effective": 11
       },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
         "base": 8,
         "effective": 8
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k047-pot-inventory",
-        "name": {
-          "ko": "배급 솥 재고 확인",
-          "en": "Ration-pot inventory"
-        },
-        "rating": 60
-      },
-      {
-        "id": "k047-supply-counter-demand",
-        "name": {
-          "ko": "배급 창구 요구",
-          "en": "Supply-counter demands"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k047-pots-before-exports",
-        "name": {
-          "ko": "수출보다 솥",
-          "en": "Pots before exports"
-        },
-        "description": {
-          "ko": "국자가 사라지면 수출 수레를 묶고 배급을 요구한다.",
-          "en": "Ties export wagons and demands rations when ladles disappear."
-        },
-        "behavior": {
-          "ko": "국자가 사라지면 수출 수레를 묶고 배급을 요구한다.",
-          "en": "Ties export wagons and demands rations when ladles disappear."
-        },
-        "stress": {
-          "ko": "빈 솥이 사흘을 넘기면 작업반이 시장 국자를 징발 막대로 바꾸는 것.",
-          "en": "That empty pots past three days would turn the work squads' market ladles into requisition batons."
-        },
-        "relationship": {
-          "ko": "한지온의 시민 최저선을 솥 수로 집행하는 계약이고, 박소언의 건물 저수 봉인을 시장 기둥에서 함께 본다. 한재목의 서부 급수계약에 국자 숫자를 요구해 온 빚이 있다.",
-          "en": "A contract executing Han Jion's citizens' minimum line by pot count, watching Park Soeon's building water-storage seals together at the market pillar. Carrying a debt for demanding ladle counts in Han Jaemok's western water contract."
-        },
-        "effects": []
-      },
-      {
-        "id": "k047-numbered-pots",
-        "name": {
-          "ko": "번호 있는 솥",
-          "en": "Numbered pots"
-        },
-        "description": {
-          "ko": "뚜껑 번호 없는 솥은 중개 테이블에서 뺀다.",
-          "en": "Removes pots without lid numbers from the brokerage table."
-        },
-        "behavior": {
-          "ko": "뚜껑 번호 없는 솥은 중개 테이블에서 뺀다.",
-          "en": "Removes pots without lid numbers from the brokerage table."
-        },
-        "stress": {
-          "ko": "빈 솥이 사흘을 넘기면 작업반이 시장 국자를 징발 막대로 바꾸는 것.",
-          "en": "That empty pots past three days would turn the work squads' market ladles into requisition batons."
-        },
-        "relationship": {
-          "ko": "한지온의 시민 최저선을 솥 수로 집행하는 계약이고, 박소언의 건물 저수 봉인을 시장 기둥에서 함께 본다. 한재목의 서부 급수계약에 국자 숫자를 요구해 온 빚이 있다.",
-          "en": "A contract executing Han Jion's citizens' minimum line by pot count, watching Park Soeon's building water-storage seals together at the market pillar. Carrying a debt for demanding ladle counts in Han Jaemok's western water contract."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "국자 세 개의 소실에 수출 수레를 묶고 바지선 배급을 요구했다. 실물 배급 확인은 강점이며 식량 생산을 새로 부여하지 않는다.",
-      "en": "Stopped export wagons and demanded barge rations after three ladles vanished. Physical supply checks are a strength, without granting food production."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -532,91 +137,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-41110-S02",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K047",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:kingdom-s02",
-      "personalLieges": [],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ba85-c5f0-c548",
-    "name": "연안 명씨",
-    "crest": "clan-crests/ba85-c5f0-c548.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -40,
-    "개방": 5,
-    "무력": -15,
-    "물질": 50,
-    "공동": 45,
-    "원칙": -10,
-    "공개": 40,
-    "자격": 60,
-    "분산": 25,
-    "변혁": 25
-  },
-  "desire": {
-    "갈망": -10,
-    "독점": -20,
-    "위험": -25,
-    "과시": 5,
-    "지속": 30,
-    "지향": "유동",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "규격맹",
-    "생업": "배급솥 운영",
-    "품계": "조합원",
-    "직함": "금천 배급솥 시장 중개인",
-    "업무 위치": "독산1동. 명다해는 독산1동 시장의 세 배급솥에서 사라진 국자를 세어 한지온의 시민 최저선 표와 맞춘다. 수리 수출 수레를 세워 겨울 배급 창구에 손실을 알리고 박소언과 함께 건물 저수 봉인표를 확인한다.",
-    "가치관": "권위 −40 | 개방 5 | 무력 −15 | 물질 50 | 공동 45 | 원칙 −10 | 공개 40 | 자격 60 | 분산 25 | 변혁 25",
-    "욕망": "갈망 −10 | 독점 −20 | 위험 −25 | 과시 5 | 지속 30 | 지향 유동 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 금천 배급솥 시장 중개인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 독산1동. 명다해는 독산1동 시장의 세 배급솥에서 사라진 국자를 세어 한지온의 시민 최저선 표와 맞춘다. 수리 수출 수레를 세워 겨울 배급 창구에 손실을 알리고 박소언과 함께 건물 저수 봉인표를 확인한다.",
-    "관직": "품계 조합원. 직함은 금천 배급솥 시장 중개인. 뚜껑 번호가 없는 솥은 불을 피우지 않고, 외곽 수레는 국자가 기둥에서 풀린 뒤에만 보낸다.",
-    "일화": "금천 솥 세 개의 국자가 같은 아침 사라지자 명다해는 수리 수출 수레의 바퀴를 시장에 묶고 바지선 배급을 창구에 요구했다.",
-    "관계": "한지온의 시민 최저선을 솥 수로 집행하는 계약이고, 박소언의 건물 저수 봉인을 시장 기둥에서 함께 본다. 한재목의 서부 급수계약에 국자 숫자를 요구해 온 빚이 있다.",
-    "야망": "뚜껑 번호가 찍힌 솥만 불을 받게 해, 수리 수출이 국자 수보다 앞서는 날을 시장에서 막는다.",
-    "공포": "빈 솥이 사흘을 넘기면 작업반이 시장 국자를 징발 막대로 바꾸는 것.",
-    "개입": "사라진 국자를 기둥에 다시 묶거나, 수출 수레 바퀴를 풀어 달라는 쪽지의 발주자를 시장에 세울 수 있다."
-  },
-  "biography": "국자 자국이 솥마다 다르면 장부 숫자를 접고, 뚜껑 번호가 지워진 솥은 중개 테이블에서 뺀다. 흉작 쪽지가 돌면 국자를 기둥에 묶어 둔다.\n\n- 소속: 규격맹\n- 생업: 배급솥 운영\n- 품계: 조합원\n- 직함: 금천 배급솥 시장 중개인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 금천 배급솥 시장 중개인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 독산1동. 명다해는 독산1동 시장의 세 배급솥에서 사라진 국자를 세어 한지온의 시민 최저선 표와 맞춘다. 수리 수출 수레를 세워 겨울 배급 창구에 손실을 알리고 박소언과 함께 건물 저수 봉인표를 확인한다.\n\n**관직.** 품계 조합원. 직함은 금천 배급솥 시장 중개인. 뚜껑 번호가 없는 솥은 불을 피우지 않고, 외곽 수레는 국자가 기둥에서 풀린 뒤에만 보낸다.\n\n**일화.** 금천 솥 세 개의 국자가 같은 아침 사라지자 명다해는 수리 수출 수레의 바퀴를 시장에 묶고 바지선 배급을 창구에 요구했다.\n\n**관계.** 한지온의 시민 최저선을 솥 수로 집행하는 계약이고, 박소언의 건물 저수 봉인을 시장 기둥에서 함께 본다. 한재목의 서부 급수계약에 국자 숫자를 요구해 온 빚이 있다.\n\n**야망.** 뚜껑 번호가 찍힌 솥만 불을 받게 해, 수리 수출이 국자 수보다 앞서는 날을 시장에서 막는다.\n\n**공포.** 빈 솥이 사흘을 넘기면 작업반이 시장 국자를 징발 막대로 바꾸는 것.\n\n**개입.** 사라진 국자를 기둥에 다시 묶거나, 수출 수레 바퀴를 풀어 달라는 쪽지의 발주자를 시장에 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −40 | 개방 5 | 무력 −15 | 물질 50 | 공동 45 | 원칙 −10 | 공개 40 | 자격 60 | 분산 25 | 변혁 25\n- 욕망: 갈망 −10 | 독점 −20 | 위험 −25 | 과시 5 | 지속 30 | 지향 유동 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-02"
-  ],
-  "directLiege": {
-    "personId": "K037",
-    "name": "한지온",
-    "courtId": "court:K037",
-    "effectiveYear": 2126
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "명다해",
-        "type": "지휘",
-        "to": "한지온",
-        "basis": "한지온의 시민 최저선을 솥 수로 집행하는 계약이고"
-      },
-      {
-        "from": "명다해",
-        "type": "계약",
-        "to": "박소언",
-        "basis": "박소언의 건물 저수 봉인을 시장 기둥에서 함께 본다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

@@ -3,27 +3,27 @@
   "personId": "person-0389",
   "characterId": "K388",
   "name": "동예솔",
-  "stateId": "S15",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "교구 선거 봉인 수사"
+    "role": "종로1·2·3·4가동 동장 · 정부"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short hair slicked back with a side part",
-    "upper": "khaki long belted wool coat with deep patch pockets",
-    "outfit": "khaki long belted wool coat with deep patch pockets",
+    "upper": "남색 띠를 두른 회색 누비 외투",
+    "outfit": "남색 띠를 두른 회색 누비 외투",
     "palette": [
-      "khaki",
+      "grey",
       "navy",
-      "clay brown"
+      "faded brown"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "navy wool breeches with buttoned cuffs",
-    "footwear": "laced leather walking shoes",
-    "accessories": "small leather coin purse and a folded ledger"
+    "lower": "grey wadded trousers",
+    "footwear": "felt boots",
+    "accessories": "civil-servant ID on a cord and a leather seal pouch"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "cap with ear flaps",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "khaki long belted wool coat with deep patch pockets",
+        "value": "남색 띠를 두른 회색 누비 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "navy wool breeches with buttoned cuffs",
+        "value": "grey wadded trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "shirt collar under a knit vest",
+        "value": "high quilted collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "small leather coin purse and a folded ledger",
+        "value": "civil-servant ID on a cord and a leather seal pouch",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
-        "derived": true
-      },
-      "shape": {
-        "value": "pouch and narrow ledger",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "brown leather and paper",
+        "value": "faded brown and off-white",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, paper",
+        "value": "leather, card, cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "purse at the belt, ledger in the coat pocket",
+        "value": "ID around the neck; pouch on the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(merchant)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat rectangular card; small square pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동예솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; dark brown hair; short length. build: average with narrow shoulders; skin: tan warm beige. upper garment: khaki long belted wool coat with deep patch pockets; neckline: shirt collar under a knit vest. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: khaki, navy, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동예솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; dark brown hair; short length. build: average with narrow shoulders; skin: tan warm beige. headwear: cap with ear flaps; upper garment: 남색 띠를 두른 회색 누비 외투; neckline: high quilted collar. accessories: civil-servant ID on a cord and a leather seal pouch; worn as ID around the neck; pouch on the belt. color palette: grey, navy, faded brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동예솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; dark brown hair; short length. build: average with narrow shoulders; skin: tan warm beige; average adult male height. upper garment: khaki long belted wool coat with deep patch pockets; neckline: shirt collar under a knit vest; lower garment: navy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: khaki, navy, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동예솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; dark brown hair; short length. build: average with narrow shoulders; skin: tan warm beige; average adult male height. headwear: cap with ear flaps; upper garment: 남색 띠를 두른 회색 누비 외투; neckline: high quilted collar; lower garment: grey wadded trousers; footwear: felt boots. accessories: civil-servant ID on a cord and a leather seal pouch; worn as ID around the neck; pouch on the belt. color palette: grey, navy, faded brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동예솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; dark brown hair; short length. build: average with narrow shoulders; skin: tan warm beige; average adult male height. upper garment: khaki long belted wool coat with deep patch pockets; neckline: shirt collar under a knit vest; lower garment: navy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: khaki, navy, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동예솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; dark brown hair; short length. build: average with narrow shoulders; skin: tan warm beige; average adult male height. headwear: cap with ear flaps; upper garment: 남색 띠를 두른 회색 누비 외투; neckline: high quilted collar; lower garment: grey wadded trousers; footwear: felt boots. accessories: civil-servant ID on a cord and a leather seal pouch; worn as ID around the neck; pouch on the belt. color palette: grey, navy, faded brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동예솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; dark brown hair; short length. build: average with narrow shoulders; skin: tan warm beige; average adult male height. upper garment: khaki long belted wool coat with deep patch pockets; neckline: shirt collar under a knit vest; lower garment: navy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: khaki, navy, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동예솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; dark brown hair; short length. build: average with narrow shoulders; skin: tan warm beige; average adult male height. headwear: cap with ear flaps; upper garment: 남색 띠를 두른 회색 누비 외투; neckline: high quilted collar; lower garment: grey wadded trousers; footwear: felt boots. accessories: civil-servant ID on a cord and a leather seal pouch; worn as ID around the neck; pouch on the belt. color palette: grey, navy, faded brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동예솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; dark brown hair; short length. build: average with narrow shoulders; skin: tan warm beige; average adult male height. upper garment: khaki long belted wool coat with deep patch pockets; neckline: shirt collar under a knit vest; lower garment: navy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: small leather coin purse and a folded ledger; worn as purse at the belt, ledger in the coat pocket. color palette: khaki, navy, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동예솔, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight narrow bridge; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; dark brown hair; short length. build: average with narrow shoulders; skin: tan warm beige; average adult male height. headwear: cap with ear flaps; upper garment: 남색 띠를 두른 회색 누비 외투; neckline: high quilted collar; lower garment: grey wadded trousers; footwear: felt boots. accessories: civil-servant ID on a cord and a leather seal pouch; worn as ID around the neck; pouch on the belt. color palette: grey, navy, faded brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

@@ -1,397 +1,123 @@
 {
   "id": "person-0443",
   "name": "고영호",
-  "title": "공방 전령",
-  "position": "공방 전령",
+  "title": "교주 호위",
+  "position": "교주 호위 · 잠실역",
   "characterId": "K443",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "호송·인명 장부 관리",
+  "rank": "세례자",
+  "commonTier": "T5",
+  "occupation": "경호",
   "gender": "여성",
   "stage": "S4",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-고영호",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0443",
   "birthDate": "2066-05-04",
   "birthday": "05-04",
   "age": 60,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/313",
-    "lore/characters/Cast-State-04.json#/content/315",
-    "lore/characters/Cast-State-04.json#/content/316"
-  ],
-  "familyTree": {
-    "personId": "K443",
-    "nodes": [
-      {
-        "id": "K443",
-        "personId": "K443",
-        "kind": "person",
-        "name": "고영호",
-        "birthDate": "2066-05-04",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K443"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-고영호-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 공방 전령 자리는 무표 출발 열차 저지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-고영호-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0443"
-      },
-      {
-        "id": "FH-K443-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "고승희",
-        "lineage": {
-          "surname": "고",
-          "bongwan": "한양",
-          "clan": "ace0-d55c-c591-agreed-d638-second"
-        },
-        "birthDate": "2036-05-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-고영호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "고승희는 신내 환승 당직에서 호송·인명 장부 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-고영호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K443-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "고승규",
-        "lineage": {
-          "surname": "고",
-          "bongwan": "한양",
-          "clan": "ace0-d55c-c591-agreed-d638-second"
-        },
-        "birthDate": "2006-05-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-고영호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "고승규는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-고영호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K443-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김준빈",
-        "birthDate": "2036-05-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-고영호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "김준빈은 신내 환승 당직에서 호송·인명 장부 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-고영호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K443-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준도",
-        "birthDate": "2006-05-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-고영호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박준도는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-고영호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K443-P-01:K443:biological",
-        "from": "FH-K443-P-01",
-        "to": "K443",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-고영호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K443-P-02:FH-K443-P-01:biological",
-        "from": "FH-K443-P-02",
-        "to": "FH-K443-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-고영호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K443-M-01:K443:biological",
-        "from": "FH-K443-M-01",
-        "to": "K443",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-고영호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K443-M-02:FH-K443-M-01:biological",
-        "from": "FH-K443-M-02",
-        "to": "FH-K443-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-고영호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ace0-d55c-c591",
+    "name": "한양 고씨",
+    "crest": "clan-crests/ace0-d55c-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "예순 살의 교주 호위 고영호는 부위가 하나다. 교주의 집 문간 바로 안쪽이 그의 자리라, 잠실 대피소 사람이 교주를 찾아오면 이름과 용건을 묻는 것은 그다. 젊은 호위들이 그를 따르는 까닭은 힘이 아니라, 교주의 집에서 들은 말을 한 번도 밖에 옮긴 적이 없다는 데 있다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "교주 호위",
+    "품계": "세례자",
+    "생업": "경호",
+    "일하는 역": "잠실역",
+    "잠자는 역": "잠실역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "예순 살의 교주 호위 고영호는 부위가 하나다. 교주의 집 문간 바로 안쪽이 그의 자리라, 잠실 대피소 사람이 교주를 찾아오면 이름과 용건을 묻는 것은 그다. 젊은 호위들이 그를 따르는 까닭은 힘이 아니라, 교주의 집에서 들은 말을 한 번도 밖에 옮긴 적이 없다는 데 있다.",
+    "관직": "직함 교주 호위. 직위 교주 호위 · 잠실역. 품계 세례자. 일하는 역 잠실역."
+  },
+  "values": {
+    "권위": 25,
+    "개방": -5,
+    "무력": -5,
+    "물질": -25,
+    "공동": 45,
+    "원칙": -5,
+    "공개": -55,
+    "자격": -10,
+    "분산": -20,
+    "변혁": 45
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": 0,
+    "위험": 10,
+    "과시": -10,
+    "지속": 20,
+    "지향": "무성향",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0443",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "고영호",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K1018",
+    "name": "고예진",
+    "courtId": "court:K1018",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 5,
         "effective": 5
       },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
+      "martial": {
+        "base": 8,
+        "effective": 8
       },
-      "management": {
-        "base": 7,
-        "effective": 7
-      },
-      "insight": {
-        "base": 7,
-        "effective": 7
-      },
-      "learning": {
+      "stewardship": {
         "base": 6,
         "effective": 6
       },
+      "intrigue": {
+        "base": 6,
+        "effective": 6
+      },
+      "learning": {
+        "base": 5,
+        "effective": 5
+      },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 9,
+        "effective": 9
       }
     },
-    "skills": [
-      {
-        "id": "save-register",
-        "name": {
-          "ko": "위기 인명 장부 보존",
-          "en": "Emergency preservation of personnel registers"
-        },
-        "rating": 45
-      },
-      {
-        "id": "departure",
-        "name": {
-          "ko": "배차표·출발 확인",
-          "en": "Departure and dispatch checks"
-        },
-        "rating": 40
-      }
-    ],
-    "traits": [
-      {
-        "id": "people-records-during-attacks",
-        "name": {
-          "ko": "습격 때 인명 기록",
-          "en": "People Records During Attacks"
-        },
-        "description": {
-          "ko": "고영호는 확인된 호송 습격에서 화물보다 인명 장부를 우선한 선택을 보였다.",
-          "en": "Go Yeongho chose people records over cargo in the documented convoy attack."
-        },
-        "behavior": {
-          "ko": "호송 도중 습격을 만났을 때 화물보다 인명 장부부터 챙겼다.",
-          "en": "When attacked during a convoy, they secured the people ledger before the cargo."
-        },
-        "stress": {
-          "ko": "당직 공백으로 통행이 외부 세력의 볼모가 될 우려가 있으면 물자보다 통행을 잇는 인명 기록을 우선할 수 있다.",
-          "en": "If a duty gap threatens to make passage hostage to outside powers, they may prioritize people records supporting passage over goods."
-        },
-        "relationship": {
-          "ko": "선배 당직에게는 화물 상태와 별개로 보존한 인명 장부를 빠짐없이 인계하려 할 수 있다.",
-          "en": "They may seek to hand the preserved people ledger fully to the senior duty holder regardless of cargo condition."
-        },
-        "effects": []
-      },
-      {
-        "id": "preserve-duty-records",
-        "name": {
-          "ko": "당직 기록 보존",
-          "en": "Preserve Duty Records"
-        },
-        "description": {
-          "ko": "고영호는 큰소리보다 장부를 신뢰하며 당직 기록의 연속성을 중시한다.",
-          "en": "Go Yeongho trusts ledger entries over loud claims and values continuity in duty records."
-        },
-        "behavior": {
-          "ko": "습격 때 장부를 챙긴 선택과 함께 자기 직위의 열쇠와 기록만 다음 당직에 넘기는 범위를 지킨다.",
-          "en": "Alongside saving the ledger during the attack, they keep handovers limited to their role's keys and records."
-        },
-        "stress": {
-          "ko": "전령 당직이 비어 통행이 외부 통제에 놓일 우려가 생기면 인계 기록의 누락을 더 신중히 살필 수 있다.",
-          "en": "If an empty messenger duty risks outside control of passage, they may check handover records more carefully for omissions."
-        },
-        "relationship": {
-          "ko": "선배 당직과는 구두 확약보다 이어받을 열쇠와 기록을 분명히 하는 협력을 선호할 수 있다.",
-          "en": "With the senior duty holder, they may prefer clear keys-and-records handovers over verbal assurances."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "습격 중 화물보다 인명 장부를 챙겼다. 호송 중 선택을 평가하며 전투 승리와 임상 치료는 없다.",
-      "en": "He chose personnel registers over cargo during an attack. The convoy choice is supported, not combat victory or clinical care."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -401,7 +127,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -427,76 +153,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-43150-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K443",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:kingdom-s04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-43150-S04",
-          "directLiegePersonId": "K423"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ace0-d55c-c591",
-    "name": "한양 고씨",
-    "crest": "clan-crests/ace0-d55c-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 0,
-    "개방": 10,
-    "무력": -15,
-    "물질": 25,
-    "공동": 25,
-    "원칙": 5,
-    "공개": -10,
-    "자격": 25,
-    "분산": 10,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": 0,
-    "위험": 10,
-    "과시": -10,
-    "지속": 20,
-    "지향": "무성향",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "호송·인명 장부 관리",
-    "품계": "교사",
-    "직함": "공방 전령",
-    "가치관": "권위 0 | 개방 10 | 무력 −15 | 물질 25 | 공동 25 | 원칙 5 | 공개 −10 | 자격 25 | 분산 10 | 변혁 0",
-    "욕망": "갈망 45 | 독점 0 | 위험 10 | 과시 −10 | 지속 20 | 지향 무성향 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 고영호는 신내 환승 당직에서 자랐다. 고영호는 무표 출발 열차 저지로 공방 전령 자리를 맡았다.\n- 고영호의 공방 전령 업무는 성수2가3동과 연결된다.",
-    "관직": "고영호는 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.",
-    "일화": "2125년 고영호는 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "고영호는 같은 생활권 선배 당직자와 인수인계로 묶인다.",
-    "야망": "고영호는 공방 전령 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.",
-    "공포": "고영호는 공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.",
-    "개입": "고영호는 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "고영호는 당직을 끊지 않는 쪽을 먼저 고른다. 고영호는 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 호송·인명 장부 관리\n- 품계: 교사\n- 직함: 공방 전령\n**생애.** 2126년 세대. 고영호는 신내 환승 당직에서 자랐다. 고영호는 무표 출발 열차 저지로 공방 전령 자리를 맡았다.\n- 고영호의 공방 전령 업무는 성수2가3동과 연결된다.\n\n**관직.** 고영호는 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 고영호는 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 고영호는 같은 생활권 선배 당직자와 인수인계로 묶인다.\n\n**야망.** 고영호는 공방 전령 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.\n\n**공포.** 고영호는 공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.\n\n**개입.** 고영호는 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 10 | 무력 −15 | 물질 25 | 공동 25 | 원칙 5 | 공개 −10 | 자격 25 | 분산 10 | 변혁 0\n- 욕망: 갈망 45 | 독점 0 | 위험 10 | 과시 −10 | 지속 20 | 지향 무성향 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

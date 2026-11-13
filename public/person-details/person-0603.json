@@ -1,395 +1,121 @@
 {
   "id": "person-0603",
   "name": "고별호",
-  "title": "부품 물류상",
-  "position": "부품 물류상",
+  "title": "부엌 일꾼",
+  "position": "부엌 일꾼 · 잠실역",
   "characterId": "K603",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "차륜·펌프 정비",
+  "rank": "미세례자",
+  "commonTier": "T5",
+  "occupation": "부엌 취사",
   "gender": "여성",
   "stage": "S4",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-고별호",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0603",
   "birthDate": "2072-05-05",
   "birthday": "05-05",
   "age": 54,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/423",
-    "lore/characters/Cast-State-04.json#/content/425",
-    "lore/characters/Cast-State-04.json#/content/426"
-  ],
-  "familyTree": {
-    "personId": "K603",
-    "nodes": [
-      {
-        "id": "K603",
-        "personId": "K603",
-        "kind": "person",
-        "name": "고별호",
-        "birthDate": "2072-05-05",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K603"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-고별호-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-고별호-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0603"
-      },
-      {
-        "id": "FH-K603-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "고승섭",
-        "lineage": {
-          "surname": "고",
-          "bongwan": "한양",
-          "clan": "ace0-d55c-c591-agreed-d638-second"
-        },
-        "birthDate": "2042-05-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-고별호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "고승섭은 신정 차량기지에서 차륜·펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-고별호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K603-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "고승성",
-        "lineage": {
-          "surname": "고",
-          "bongwan": "한양",
-          "clan": "ace0-d55c-c591-agreed-d638-second"
-        },
-        "birthDate": "2012-05-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-고별호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "고승성은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-고별호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K603-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정재민",
-        "birthDate": "2042-05-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-고별호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "정재민은 신정 차량기지에서 차륜·펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-고별호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K603-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤재석",
-        "birthDate": "2012-05-05",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-고별호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤재석은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-고별호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K603-P-01:K603:biological",
-        "from": "FH-K603-P-01",
-        "to": "K603",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-고별호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K603-P-02:FH-K603-P-01:biological",
-        "from": "FH-K603-P-02",
-        "to": "FH-K603-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-고별호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K603-M-01:K603:biological",
-        "from": "FH-K603-M-01",
-        "to": "K603",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-고별호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K603-M-02:FH-K603-M-01:biological",
-        "from": "FH-K603-M-02",
-        "to": "FH-K603-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-고별호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ace0-d55c-c591",
+    "name": "한양 고씨",
+    "crest": "clan-crests/ace0-d55c-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "잠실 교주의 집 열세 사람의 끼니는 고별호의 화덕에서 나온다. 교주의 집은 정비대를 따로 쥐어서, 그 화덕도 송파 곁집이 아니라 교주의 집 몫의 전기로 돈다. 한양 고씨 집안에서 나온 쉰네 살의 그는 아직 미세례자이고, 교주의 몸을 돌보는 정비공들에게 먹을 것을 맨 먼저 떠 준다. 네 곁집 자리가 열리는 날에는 곁집장 넷의 수행원까지 먹여야 해서 사흘 전부터 섬유당 통을 따로 젓는다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "부엌 일꾼",
+    "품계": "미세례자",
+    "생업": "부엌 취사",
+    "일하는 역": "잠실역",
+    "잠자는 역": "잠실역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 0
+  },
+  "sections": {
+    "생애": "잠실 교주의 집 열세 사람의 끼니는 고별호의 화덕에서 나온다. 교주의 집은 정비대를 따로 쥐어서, 그 화덕도 송파 곁집이 아니라 교주의 집 몫의 전기로 돈다. 한양 고씨 집안에서 나온 쉰네 살의 그는 아직 미세례자이고, 교주의 몸을 돌보는 정비공들에게 먹을 것을 맨 먼저 떠 준다. 네 곁집 자리가 열리는 날에는 곁집장 넷의 수행원까지 먹여야 해서 사흘 전부터 섬유당 통을 따로 젓는다.",
+    "관직": "직함 부엌 일꾼. 직위 부엌 일꾼 · 잠실역. 품계 미세례자. 일하는 역 잠실역."
+  },
+  "values": {
+    "권위": 30,
+    "개방": -10,
+    "무력": -20,
+    "물질": -15,
+    "공동": 45,
+    "원칙": -20,
+    "공개": -65,
+    "자격": 0,
+    "분산": -10,
+    "변혁": 50
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": -15,
+    "위험": 0,
+    "과시": -20,
+    "지속": 0,
+    "지향": "무성향",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0603",
+    "role": "single",
+    "personFaith": "unbaptised",
+    "houseFaith": "unbaptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "고별호",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K1018",
+    "name": "고예진",
+    "courtId": "court:K1018",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 5,
         "effective": 5
       },
-      "negotiation": {
-        "base": 4,
-        "effective": 4
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "management": {
-        "base": 8,
-        "effective": 8
+      "stewardship": {
+        "base": 9,
+        "effective": 9
       },
-      "insight": {
-        "base": 10,
-        "effective": 10
+      "intrigue": {
+        "base": 5,
+        "effective": 5
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
+        "base": 5,
+        "effective": 5
       }
     },
-    "skills": [
-      {
-        "id": "wheel",
-        "name": {
-          "ko": "차륜 결함 점검",
-          "en": "Wheel-defect inspection"
-        },
-        "rating": 50
-      },
-      {
-        "id": "handover",
-        "name": {
-          "ko": "기록·열쇠 인수인계",
-          "en": "Record and key handover"
-        },
-        "rating": 40
-      }
-    ],
-    "traits": [
-      {
-        "id": "check-defects-before-derailment",
-        "name": {
-          "ko": "탈선 전 결함 확인",
-          "en": "Check Defects Before Derailment"
-        },
-        "description": {
-          "ko": "고별호는 직접 확인한 차륜 결함을 열차 정지 판단에 반영하는 성향을 보인다.",
-          "en": "Go Byeolho shows a tendency to base a train-stop decision on a directly checked wheel defect."
-        },
-        "behavior": {
-          "ko": "탈선 직전 바퀴 결함을 손으로 확인하고 열차를 세웠다.",
-          "en": "He checked a wheel defect by touch immediately before derailment and stopped the train."
-        },
-        "stress": {
-          "ko": "당직 공백과 통행 종속을 우려하는 상황에서는 확인된 결함을 방치하지 않으려 할 수 있다.",
-          "en": "When concerned about a duty gap and dependent passage, he may be reluctant to leave a verified defect unaddressed."
-        },
-        "relationship": {
-          "ko": "선배 당직에게는 바퀴에서 확인한 결함과 열차를 멈춘 이유를 구체적으로 인계하려 할 수 있다.",
-          "en": "He may give the senior duty holder a concrete account of the wheel defect and the reason for stopping the train."
-        },
-        "effects": []
-      },
-      {
-        "id": "fact-based-handover",
-        "name": {
-          "ko": "사실로 인계",
-          "en": "Fact-Based Handover"
-        },
-        "description": {
-          "ko": "고별호는 큰소리보다 기록과 직접 확인한 사실에 인계의 무게를 두는 성향이다.",
-          "en": "Go Byeolho gives handover weight to records and directly verified facts rather than loud assertions."
-        },
-        "behavior": {
-          "ko": "직접 확인한 바퀴 결함으로 열차를 세우고 자기 직위의 열쇠와 기록을 넘긴다.",
-          "en": "He stops the train on a directly verified wheel defect and hands over his post's keys and records."
-        },
-        "stress": {
-          "ko": "당직 공백이 통행을 위태롭게 할까 우려되면 추정보다 확인된 결함과 조치 기록에 의지할 수 있다.",
-          "en": "If a duty gap threatens passage, he may rely on the verified defect and action record rather than speculation."
-        },
-        "relationship": {
-          "ko": "선배 당직과는 결함의 확인 내용과 정지 조치를 공유해 인계의 근거를 분명히 하려 할 수 있다.",
-          "en": "He may clarify handover grounds with the senior duty holder by sharing what was verified and why the train was stopped."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "차륜 결함을 확인해 탈선 직전 열차를 멈췄다. 검사 경험이며 공학 교육 경력이나 광역 물류망 운영은 없다.",
-      "en": "He identified a wheel defect and stopped a train before derailment. Inspection experience is supported, not an engineering education or regional logistics control."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -427,83 +153,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-43745-S04",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K603",
-      "stateId": "S04",
-      "politicalParentTitleId": "title:kingdom-s04",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-43745-S04",
-          "directLiegePersonId": "K423"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ace0-d55c-c591",
-    "name": "한양 고씨",
-    "crest": "clan-crests/ace0-d55c-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 5,
-    "개방": 5,
-    "무력": -30,
-    "물질": 35,
-    "공동": 25,
-    "원칙": -10,
-    "공개": -20,
-    "자격": 35,
-    "분산": 20,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": -15,
-    "위험": 0,
-    "과시": -20,
-    "지속": 0,
-    "지향": "무성향",
-    "결합": "단혼"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "차륜·펌프 정비",
-    "품계": "교사",
-    "직함": "부품 물류상",
-    "가치관": "권위 5 | 개방 5 | 무력 −30 | 물질 35 | 공동 25 | 원칙 −10 | 공개 −20 | 자격 35 | 분산 20 | 변혁 5",
-    "욕망": "갈망 40 | 독점 −15 | 위험 0 | 과시 −20 | 지속 0 | 지향 무성향 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2126년 세대. 고별호는 신정 차량기지에서 자랐다. 고별호는 탈선 직전 결함 보고로 부품 물류상 자리를 맡았다.\n- 고별호의 부품 물류상 업무는 성수2가1동과 연결된다.",
-    "관직": "고별호는 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.",
-    "일화": "2125년 고별호는 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.",
-    "관계": "고별호는 같은 생활권 선배 당직자와 인수인계로 묶인다.",
-    "야망": "고별호는 부품 물류상 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.",
-    "공포": "고별호는 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.",
-    "개입": "고별호는 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "고별호는 당직을 끊지 않는 쪽을 먼저 고른다. 고별호는 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 차륜·펌프 정비\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 고별호는 신정 차량기지에서 자랐다. 고별호는 탈선 직전 결함 보고로 부품 물류상 자리를 맡았다.\n- 고별호의 부품 물류상 업무는 성수2가1동과 연결된다.\n\n**관직.** 고별호는 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 고별호는 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 고별호는 같은 생활권 선배 당직자와 인수인계로 묶인다.\n\n**야망.** 고별호는 부품 물류상 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.\n\n**공포.** 고별호는 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.\n\n**개입.** 고별호는 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 5 | 무력 −30 | 물질 35 | 공동 25 | 원칙 −10 | 공개 −20 | 자격 35 | 분산 20 | 변혁 5\n- 욕망: 갈망 40 | 독점 −15 | 위험 0 | 과시 −20 | 지속 0 | 지향 무성향 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "고별호",
-        "type": "계약",
-        "to": "구도영",
-        "basis": "고별호는 펌프 정비에 쓸 패킹을 구도영의 수상 운송으로 받는다. 구도영은 선창에서 상자 끈과 나룻배 시각을 확인하고, 고별호는 받은 패킹을 펌프 정비용으로 구분해 인수 기록에 남긴다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

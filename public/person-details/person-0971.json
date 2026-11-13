@@ -1,502 +1,106 @@
 {
   "id": "person-0971",
   "name": "이남민",
-  "title": "공방 전령",
-  "position": "공방 전령",
+  "title": "열 펌프지기",
+  "position": "열 펌프지기 · 잠원역",
   "characterId": "K971",
-  "rank": "교사",
+  "rank": "미세례자",
   "commonTier": "T5",
-  "occupation": "호송·인명 장부 관리",
+  "occupation": "열 펌프 정비",
   "gender": "남성",
   "stage": "S4",
-  "state": "S04",
-  "stateName": "명부교회",
-  "sourceRoute": "/world/Cast-State-04#인물-이남민",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0971",
   "birthDate": "2102-01-16",
   "birthday": "01-16",
   "age": 24,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-04.json#/content/676",
-    "lore/characters/Cast-State-04.json#/content/678",
-    "lore/characters/Cast-State-04.json#/content/679"
-  ],
-  "familyTree": {
-    "personId": "K971",
-    "nodes": [
-      {
-        "id": "K971",
-        "personId": "K971",
-        "kind": "person",
-        "name": "이남민",
-        "birthDate": "2102-01-16",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K971"
-          },
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-이남민-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "소속: 명부교회",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-이남민-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0971"
-      },
-      {
-        "id": "FH-K971-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이민온",
-        "lineage": {
-          "surname": "이",
-          "bongwan": "성주",
-          "clan": "c774-c131-c8fc-674e-agreed-bbfc-second"
-        },
-        "birthDate": "2072-01-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-이남민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2110,
-            "summary": "이민온은 신내 환승 당직에서 호송·인명 장부 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-이남민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K971-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이민빈",
-        "lineage": {
-          "surname": "이",
-          "bongwan": "성주",
-          "clan": "c774-c131-c8fc-674e-agreed-bbfc-second"
-        },
-        "birthDate": "2042-01-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-이남민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "이민빈은 신내 환승 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-이남민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K971-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "이민솔",
-        "lineage": {
-          "surname": "이",
-          "bongwan": "성주",
-          "clan": "c774-c131-c8fc-674e-agreed-bbfc-second"
-        },
-        "birthDate": "2012-01-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-이남민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이민솔은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-이남민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K971-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김민성",
-        "birthDate": "2072-01-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-이남민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2110,
-            "summary": "김민성은 신내 환승 당직에서 호송·인명 장부 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-이남민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K971-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박민빈",
-        "birthDate": "2042-01-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-이남민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "박민빈은 신내 환승 당직에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-이남민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K971-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "이민미",
-        "birthDate": "2012-01-16",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-이남민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이민미는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-04.json",
-                "anchor": "인물-이남민-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K971-P-01:K971:biological",
-        "from": "FH-K971-P-01",
-        "to": "K971",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-이남민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K971-P-02:FH-K971-P-01:biological",
-        "from": "FH-K971-P-02",
-        "to": "FH-K971-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-이남민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K971-P-03:FH-K971-P-02:biological",
-        "from": "FH-K971-P-03",
-        "to": "FH-K971-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-이남민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K971-M-01:K971:biological",
-        "from": "FH-K971-M-01",
-        "to": "K971",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-이남민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K971-M-02:FH-K971-M-01:biological",
-        "from": "FH-K971-M-02",
-        "to": "FH-K971-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-이남민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K971-M-03:FH-K971-M-02:biological",
-        "from": "FH-K971-M-03",
-        "to": "FH-K971-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-04.json",
-            "anchor": "인물-이남민-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c774-c131-c8fc-674e",
+    "name": "성주 이씨",
+    "crest": "clan-crests/c774-c131-c8fc-674e.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "잠원역 깊은 칸의 열 펌프 곁에는 밤낮없이 스물네 살 이남민이 있다. 한강에 가까운 역이라 벽이 늘 차가워서, 펌프 하나가 멎으면 승강장 층의 잠자리가 하룻밤 사이에 얼기 시작한다. 성주 이씨 집안 사람인 그는 첫 세례를 기다리며 펌프의 이음매를 만지고, 그 손이 언젠가 정비공의 손이 되기를 바란다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "열 펌프지기",
+    "품계": "미세례자",
+    "생업": "열 펌프 정비",
+    "일하는 역": "잠원역",
+    "잠자는 역": "잠원역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 0
+  },
+  "sections": {
+    "생애": "잠원역 깊은 칸의 열 펌프 곁에는 밤낮없이 스물네 살 이남민이 있다. 한강에 가까운 역이라 벽이 늘 차가워서, 펌프 하나가 멎으면 승강장 층의 잠자리가 하룻밤 사이에 얼기 시작한다. 성주 이씨 집안 사람인 그는 첫 세례를 기다리며 펌프의 이음매를 만지고, 그 손이 언젠가 정비공의 손이 되기를 바란다.",
+    "관직": "직함 열 펌프지기. 직위 열 펌프지기 · 잠원역. 품계 미세례자. 일하는 역 잠원역."
+  },
+  "values": {
+    "권위": 25,
+    "개방": 5,
+    "무력": -5,
+    "물질": -30,
+    "공동": 50,
+    "원칙": 5,
+    "공개": -50,
+    "자격": -15,
+    "분산": 0,
+    "변혁": 45
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": -40,
+    "위험": -10,
+    "과시": 5,
+    "지속": 30,
+    "지향": "무성향",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0971",
+    "role": "single",
+    "personFaith": "unbaptised",
+    "houseFaith": "unbaptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 4,
-        "effective": 4
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 5,
         "effective": 5
       },
-      "negotiation": {
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "management": {
-        "base": 7,
-        "effective": 7
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "insight": {
+      "intrigue": {
         "base": 7,
         "effective": 7
       },
       "learning": {
-        "base": 6,
-        "effective": 6
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
         "base": 7,
         "effective": 7
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "save-register",
-        "name": {
-          "ko": "위기 인명 장부 보존",
-          "en": "Emergency preservation of personnel registers"
-        },
-        "rating": 45
-      },
-      {
-        "id": "departure",
-        "name": {
-          "ko": "배차표·출발 확인",
-          "en": "Departure and dispatch checks"
-        },
-        "rating": 40
-      }
-    ],
-    "traits": [
-      {
-        "id": "ledgers-first-amid-attacks",
-        "name": {
-          "ko": "습격 속 장부 우선",
-          "en": "Ledgers First Amid Attacks"
-        },
-        "description": {
-          "ko": "이남민은 습격의 압박 속에서도 화물보다 인명 기록을 우선하는 성향을 보인다.",
-          "en": "I Nammin shows a disposition to prioritize personal records over cargo even under attack pressure."
-        },
-        "behavior": {
-          "ko": "호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다.",
-          "en": "When attacked during a convoy, he secured the register of people before the cargo."
-        },
-        "stress": {
-          "ko": "습격과 기록 단절의 우려가 겹치면 인명 장부 보존에 더 무게를 둘 수 있다.",
-          "en": "If attack pressure coincides with the risk of broken record continuity, he may give greater weight to preserving the register."
-        },
-        "relationship": {
-          "ko": "선배 당직과는 습격 중 지켜낸 장부를 이어 넘기는 데 책임을 느낄 수 있다.",
-          "en": "With senior duty staff, he may feel responsible for passing onward the register preserved during the attack."
-        },
-        "effects": []
-      },
-      {
-        "id": "limited-record-responsibility",
-        "name": {
-          "ko": "기록 책임 한정",
-          "en": "Limited Record Responsibility"
-        },
-        "description": {
-          "ko": "이남민은 기록을 지키는 책임을 자기 직위의 열쇠와 기록 범위 안에 한정한다.",
-          "en": "I Nammin limits his responsibility for safeguarding records to his position’s keys and records."
-        },
-        "behavior": {
-          "ko": "자기 직위의 열쇠와 기록만 넘기고 장부 보존을 이유로 없는 권한을 만들지 않는다.",
-          "en": "He hands over only his position’s keys and records without using ledger preservation to claim additional powers."
-        },
-        "stress": {
-          "ko": "당직 공백이 두려워도 맡은 기록의 연속성을 지키는 범위에서 대응하려 할 수 있다.",
-          "en": "Even if he fears a duty gap, he may respond within the scope of preserving the records entrusted to him."
-        },
-        "relationship": {
-          "ko": "선배 당직과는 실제로 맡은 기록의 책임 범위를 분명히 하며 인계하려 할 수 있다.",
-          "en": "With senior duty staff, he may seek to make the actual scope of his record responsibility clear during handover."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "습격 때 화물보다 인명 장부를 보존했다. 실제 선택만 평가하며 호송 성공 전체나 적 제압을 단정하지 않는다.",
-      "en": "She preserved personnel registers over freight during an attack. The choice is reflected, not assumed overall convoy success or enemy restraint."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -534,59 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c774-c131-c8fc-674e",
-    "name": "성주 이씨",
-    "crest": "clan-crests/c774-c131-c8fc-674e.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 0,
-    "개방": 20,
-    "무력": -15,
-    "물질": 20,
-    "공동": 30,
-    "원칙": 15,
-    "공개": -5,
-    "자격": 20,
-    "분산": 30,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": -40,
-    "위험": -10,
-    "과시": 5,
-    "지속": 30,
-    "지향": "무성향",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "명부교회",
-    "생업": "호송·인명 장부 관리",
-    "품계": "교사",
-    "직함": "공방 전령",
-    "가치관": "권위 0 | 개방 20 | 무력 −15 | 물질 20 | 공동 30 | 원칙 15 | 공개 −5 | 자격 20 | 분산 30 | 변혁 0",
-    "욕망": "갈망 40 | 독점 −40 | 위험 −10 | 과시 5 | 지속 30 | 지향 무성향 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2126년 세대. 이남민은 신내 환승 당직에서 자랐다. 이남민은 무표 출발 열차 저지로 공방 전령 자리를 맡았다.\n- 이남민의 공방 전령 업무는 성수2가3동과 연결된다.",
-    "관직": "이남민은 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.",
-    "일화": "2125년 이남민은 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "이남민은 같은 생활권 선배 당직자와 인수인계로 묶인다.",
-    "야망": "이남민은 공방 전령 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.",
-    "공포": "이남민은 공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.",
-    "개입": "이남민은 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "이남민은 당직을 끊지 않는 쪽을 먼저 고른다. 이남민은 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 호송·인명 장부 관리\n- 품계: 교사\n- 직함: 공방 전령\n**생애.** 2126년 세대. 이남민은 신내 환승 당직에서 자랐다. 이남민은 무표 출발 열차 저지로 공방 전령 자리를 맡았다.\n- 이남민의 공방 전령 업무는 성수2가3동과 연결된다.\n\n**관직.** 이남민은 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 이남민은 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 이남민은 같은 생활권 선배 당직자와 인수인계로 묶인다.\n\n**야망.** 이남민은 공방 전령 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.\n\n**공포.** 이남민은 공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.\n\n**개입.** 이남민은 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 20 | 무력 −15 | 물질 20 | 공동 30 | 원칙 15 | 공개 −5 | 자격 20 | 분산 30 | 변혁 0\n- 욕망: 갈망 40 | 독점 −40 | 위험 −10 | 과시 5 | 지속 30 | 지향 무성향 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-04"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

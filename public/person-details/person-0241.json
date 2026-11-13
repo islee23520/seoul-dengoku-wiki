@@ -1,492 +1,120 @@
 {
   "id": "person-0241",
   "name": "단보람",
-  "title": "탁수 은폐 폭로 편성원",
-  "position": "탁수 은폐 폭로 서기",
+  "title": "노량진역 역반장",
+  "position": "노량진역 역반장 · 자유도시들",
   "characterId": "K240",
-  "rank": "서기",
-  "commonTier": "T5",
-  "occupation": "평의회 보류 사유 게시·공개 순번 관리",
+  "rank": "역반장",
+  "commonTier": "T4",
+  "occupation": "역반 운영",
   "gender": "여성",
   "stage": "S3",
-  "state": "S09",
-  "stateName": "여의도출자연합회",
-  "sourceRoute": "/world/Cast-State-09#인물-단보람",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0241",
   "birthDate": "2098-10-24",
   "birthday": "10-24",
   "age": 28,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-09.json#/content/226"
-  ],
-  "familyTree": {
-    "personId": "K240",
-    "nodes": [
-      {
-        "id": "K240",
-        "personId": "K240",
-        "kind": "person",
-        "name": "단보람",
-        "birthDate": "2098-10-24",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K240"
-          },
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-단보람-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 탁수 은폐 폭로 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-단보람-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0241"
-      },
-      {
-        "id": "FH-K240-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "단승원",
-        "lineage": {
-          "surname": "단",
-          "bongwan": "서촉",
-          "clan": "b2e8-c11c-cd09-6bb5"
-        },
-        "birthDate": "2068-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-단보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2106,
-            "summary": "단승원은 대합실 당직에서 평의회 보류 사유 게시·공개 순번 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-단보람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K240-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "단승진",
-        "lineage": {
-          "surname": "단",
-          "bongwan": "서촉",
-          "clan": "b2e8-c11c-cd09-6bb5"
-        },
-        "birthDate": "2038-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-단보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "단승진은 대합실 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-단보람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K240-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "단승현",
-        "lineage": {
-          "surname": "단",
-          "bongwan": "서촉",
-          "clan": "b2e8-c11c-cd09-6bb5"
-        },
-        "birthDate": "2008-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-단보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "단승현은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-단보람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K240-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박현란",
-        "birthDate": "2068-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-단보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2106,
-            "summary": "박현란은 대합실 당직에서 평의회 보류 사유 게시·공개 순번 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-단보람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K240-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이현섭",
-        "birthDate": "2038-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-단보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2076,
-            "summary": "이현섭은 대합실 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-단보람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K240-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최현빈",
-        "birthDate": "2008-10-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-단보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최현빈은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-단보람-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K240-P-01:K240:biological",
-        "from": "FH-K240-P-01",
-        "to": "K240",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-단보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K240-P-02:FH-K240-P-01:biological",
-        "from": "FH-K240-P-02",
-        "to": "FH-K240-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-단보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K240-P-03:FH-K240-P-02:biological",
-        "from": "FH-K240-P-03",
-        "to": "FH-K240-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-단보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K240-M-01:K240:biological",
-        "from": "FH-K240-M-01",
-        "to": "K240",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-단보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K240-M-02:FH-K240-M-01:biological",
-        "from": "FH-K240-M-02",
-        "to": "FH-K240-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-단보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K240-M-03:FH-K240-M-02:biological",
-        "from": "FH-K240-M-03",
-        "to": "FH-K240-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-단보람-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "b2e8-c11c-cd09-6bb5",
+    "name": "서촉 단씨",
+    "crest": "clan-crests/b2e8-c11c-cd09-6bb5.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "노량진 승강장 한쪽은 서울에서 물고기가 가장 많이 도는 얼음 구멍 장이고, 이 역은 나루지기 최지우가 일하는 동작의 자리 역이기도 하다. 장이 서는 날이면 단보람은 물고기 비린내와 사람의 열로 승강장 온도가 오르는 것을 재어, 출입구를 하나 더 열지 닫을지 정한다. 장터 사람들은 스물여덟 살 역반장이 출입구를 여는 시각에 맞춰 판을 편다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "노량진역 역반장",
+    "품계": "역반장",
+    "생업": "역반 운영",
+    "일하는 역": "노량진역",
+    "잠자는 역": "노량진역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "노량진 승강장 한쪽은 서울에서 물고기가 가장 많이 도는 얼음 구멍 장이고, 이 역은 나루지기 최지우가 일하는 동작의 자리 역이기도 하다. 장이 서는 날이면 단보람은 물고기 비린내와 사람의 열로 승강장 온도가 오르는 것을 재어, 출입구를 하나 더 열지 닫을지 정한다. 장터 사람들은 스물여덟 살 역반장이 출입구를 여는 시각에 맞춰 판을 편다.",
+    "관직": "직함 노량진역 역반장. 직위 노량진역 역반장 · 자유도시들. 품계 역반장. 일하는 역 노량진역."
+  },
+  "values": {
+    "권위": -40,
+    "개방": 20,
+    "무력": -40,
+    "물질": 10,
+    "공동": -35,
+    "원칙": 10,
+    "공개": 50,
+    "자격": 25,
+    "분산": 70,
+    "변혁": 15
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": -25,
+    "위험": -10,
+    "과시": 25,
+    "지속": 35,
+    "지향": "양성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0241",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "단보람",
+        "type": "지휘",
+        "to": "제하온",
+        "basis": "노량진 구간장 제하온의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K044",
+    "name": "제하온",
+    "courtId": "court:K044",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
-      },
-      "strategy": {
-        "base": 8,
-        "effective": 8
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "management": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "intrigue": {
         "base": 7,
         "effective": 7
-      }
-    },
-    "skills": [
-      {
-        "id": "disclosure-schedule",
-        "name": {
-          "ko": "공개 순번·보류 사유 게시",
-          "en": "Disclosure scheduling and deferral posting"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "disclosure-schedule-disposition",
-        "name": {
-          "ko": "안정 명목의 지연 거부",
-          "en": "Rejects delays framed as stability"
-        },
-        "description": {
-          "ko": "은폐 쪽지를 칠판에서 드러내고 공동 감정 시간을 요구한다.",
-          "en": "Exposes concealment notes and requests shared appraisal time."
-        },
-        "behavior": {
-          "ko": "은폐 쪽지를 칠판에서 드러내고 공동 감정 시간을 요구한다.",
-          "en": "Exposes concealment notes and requests shared appraisal time."
-        },
-        "stress": {
-          "ko": "폭로 순번이 승자의 정정 시세가 될 것을 경계한다.",
-          "en": "Fears disclosure turns becoming the victor’s corrected prices."
-        },
-        "relationship": {
-          "ko": "오하늘의 평의회 거부권을 현장에서 집행하고, 최지우의 폭로 시점을 평의회 시간과 맞추며, 정호준의 검사 공개 주장을 교차 감정 칸에 넣는다.",
-          "en": "Applies O Haneul’s council veto, coordinates Choi Jiwoo’s exposure and includes Jeong Hojun’s inspection-disclosure demands."
-        },
-        "effects": []
       },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "반대 의견 보전",
-          "en": "Preserves dissent"
-        },
-        "description": {
-          "ko": "정정 시세 뒤 같은 길이의 반론을 남긴다.",
-          "en": "Reserves equal-length dissent after corrected prices."
-        },
-        "behavior": {
-          "ko": "정정 시세 뒤 같은 길이의 반론을 남긴다.",
-          "en": "Reserves equal-length dissent after corrected prices."
-        },
-        "stress": {
-          "ko": "평의회가 보호비에 팔려 폭로 순번이 승자의 정정 시세로 바뀌는 것.",
-          "en": "Fears disclosure turns becoming the victor’s corrected prices."
-        },
-        "relationship": {
-          "ko": "오하늘의 평의회 거부권을 현장에서 집행하고, 최지우의 폭로 시점을 평의회 시간과 맞추며, 정호준의 검사 공개 주장을 교차 감정 칸에 넣는다.",
-          "en": "Applies O Haneul’s council veto, coordinates Choi Jiwoo’s exposure and includes Jeong Hojun’s inspection-disclosure demands."
-        },
-        "effects": []
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "지연 공개를 혼란 방지라 부르는 은폐 쪽지를 붙이고 공개 순번을 열었다. 정정 시세의 반론 자리도 남긴다.",
-      "en": "Posted a concealment note justified as stability and opened disclosure turns, also reserving dissent to corrected prices."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,72 +152,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "b2e8-c11c-cd09-6bb5",
-    "name": "서촉 단씨",
-    "crest": "clan-crests/b2e8-c11c-cd09-6bb5.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -5,
-    "개방": 5,
-    "무력": -30,
-    "물질": -5,
-    "공동": -10,
-    "원칙": 20,
-    "공개": 50,
-    "자격": 5,
-    "분산": 15,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": -25,
-    "위험": -10,
-    "과시": 25,
-    "지속": 35,
-    "지향": "양성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "평의회 보류 사유 게시·공개 순번 관리",
-    "소속": "여의도출자연합회",
-    "품계": "서기",
-    "직함": "탁수 은폐 폭로 서기",
-    "가치관": "권위 −5 | 개방 5 | 무력 −30 | 물질 −5 | 공동 −10 | 원칙 20 | 공개 50 | 자격 5 | 분산 15 | 변혁 5",
-    "욕망": "갈망 40 | 독점 −25 | 위험 −10 | 과시 25 | 지속 35 | 지향 양성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2098-10-24 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 탁수 은폐 폭로 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 단보람은 여의동을 업무동으로 삼아 평의회 보류 사유 게시·공개 순번 관리 업무를 맡는다.",
-    "관직": "품계 서기. 직함은 탁수 은폐 폭로 서기. 보류 사유도 같은 날 게시판에 붙이고, 단독 정정 시세는 다음 날 같은 길이에 반대 의견을 붙인다.",
-    "일화": "여름의 탁수와 가짜 약에서 급수총재 쪽이 혼란 방지를 위한 지연을 주장하자 단보람은 은폐 쪽지를 칠판에 붙이고 공개 순번을 열었다.",
-    "관계": "오하늘의 평의회 거부권을 현장에서 집행하고, 최지우의 폭로 시점을 평의회 시간과 맞추며, 정호준의 검사 공개 주장을 교차 감정 칸에 넣는다.",
-    "야망": "탁수와 가짜 약의 은폐 시도가 창구에 나가기 전에 교차 감정 시간을 고정 권리로 박아 공용 화폐의 신용이 선전 도구로 바뀌지 않게 한다.",
-    "공포": "평의회가 보호비에 팔려 폭로 순번이 승자의 정정 시세로 바뀌는 것.",
-    "개입": "매수된 순번을 공개하거나, 공동 시간을 폭로 순번에 고정할 수 있다."
-  },
-  "biography": "한 출자 가문이 너무 오래 침묵하면 발언을 그 자리에서 끊고, 지연 공개를 안정이라고 부르는 쪽지를 칠판에서 가로지른다. 사교적이나 시간에 가혹하다.\n\n- 생업: 평의회 보류 사유 게시·공개 순번 관리\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 탁수 은폐 폭로 서기\n**생애.** 2098-10-24 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 탁수 은폐 폭로 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 단보람은 여의동을 업무동으로 삼아 평의회 보류 사유 게시·공개 순번 관리 업무를 맡는다.\n\n**관직.** 품계 서기. 직함은 탁수 은폐 폭로 서기. 보류 사유도 같은 날 게시판에 붙이고, 단독 정정 시세는 다음 날 같은 길이에 반대 의견을 붙인다.\n\n**일화.** 여름의 탁수와 가짜 약에서 급수총재 쪽이 혼란 방지를 위한 지연을 주장하자 단보람은 은폐 쪽지를 칠판에 붙이고 공개 순번을 열었다.\n\n**관계.** 오하늘의 평의회 거부권을 현장에서 집행하고, 최지우의 폭로 시점을 평의회 시간과 맞추며, 정호준의 검사 공개 주장을 교차 감정 칸에 넣는다.\n\n**야망.** 탁수와 가짜 약의 은폐 시도가 창구에 나가기 전에 교차 감정 시간을 고정 권리로 박아 공용 화폐의 신용이 선전 도구로 바뀌지 않게 한다.\n\n**공포.** 평의회가 보호비에 팔려 폭로 순번이 승자의 정정 시세로 바뀌는 것.\n\n**개입.** 매수된 순번을 공개하거나, 공동 시간을 폭로 순번에 고정할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 5 | 무력 −30 | 물질 −5 | 공동 −10 | 원칙 20 | 공개 50 | 자격 5 | 분산 15 | 변혁 5\n- 욕망: 갈망 40 | 독점 −25 | 위험 −10 | 과시 25 | 지속 35 | 지향 양성 | 결합 단혼",
-  "sources": [
-    "Cast-State-09"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "단보람",
-        "type": "맹세",
-        "to": "오하늘",
-        "basis": "오하늘의 편성 거부권을 현장에서 집행하고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:노량진",
+      "name": {
+        "ko": "노량진역"
       },
-      {
-        "from": "단보람",
-        "type": "맹세",
-        "to": "최지우",
-        "basis": "최지우의 폭로 시점을 길드 시간과 맞추며"
-      }
-    ],
-    "incoming": []
-  }
+      "holderPersonId": "K240",
+      "directLiegePersonId": "K044",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "노량진",
+        "stationName": "노량진"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1159051000",
+          "name": "노량진1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

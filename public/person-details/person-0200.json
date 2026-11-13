@@ -1,480 +1,129 @@
 {
   "id": "person-0200",
   "name": "피터 얀센",
-  "title": "운송선주 평의",
-  "position": "운송선주 평의",
+  "title": "클로당 사무총장",
+  "position": "클로당 사무총장 · 광화문역",
   "characterId": "K199",
-  "rank": "수석기사",
-  "commonTier": "T3",
-  "occupation": "출항 연료·얼음 잔량 공개",
+  "rank": "서기관",
+  "commonTier": "T2",
+  "occupation": "비서 업무",
   "gender": "남성",
   "stage": "S1",
-  "state": "S08",
-  "stateName": "중앙정보부",
-  "sourceRoute": "/world/Cast-State-08#인물-피터 얀센",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0200",
   "birthDate": "2072-05-24",
   "birthday": "05-24",
   "age": 54,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-08.json#/content/6"
-  ],
-  "familyTree": {
-    "personId": "K199",
-    "nodes": [
-      {
-        "id": "K199",
-        "personId": "K199",
-        "kind": "person",
-        "name": "피터 얀센",
-        "birthDate": "2072-05-24",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K199"
-          },
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-피터-얀센-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 노량진 선창에서 자랐다. 운송선주 평의 자리는 저울 재점검 공개로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-피터-얀센-list2"
-              }
-            ]
-          }
-        ],
-        "nameEn": "Pieter Jansen",
-        "detailRoute": "/people/person-0200"
-      },
-      {
-        "id": "FH-K199-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "얀 얀센",
-        "birthDate": "2042-05-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-피터-얀센-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "얀 얀센은 2042년에 태어났다. 용산 북안의 가족 기록과 작업 사본을 읽으며 자랐고, 2060년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-피터-얀센-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Jan Jansen was born in 2042 and grew up reading family and work records. From 2060, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Jan Jansen",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K199-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "빌럼 얀센",
-        "birthDate": "2012-05-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-피터-얀센-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "빌럼 얀센은 2012년에 태어났다. 용산 북안의 가족 기록과 작업 사본을 읽으며 자랐고, 2030년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-피터-얀센-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Willem Jansen was born in 2012 and grew up reading family and work records. From 2030, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Willem Jansen",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K199-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "안나 더 프리스",
-        "birthDate": "2042-05-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-피터-얀센-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2080,
-            "summary": "안나 더 프리스는 2042년에 태어났다. 용산 북안의 가족 기록과 작업 사본을 읽으며 자랐고, 2060년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-피터-얀센-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Anna de Vries was born in 2042 and grew up reading family and work records. From 2060, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Anna de Vries",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K199-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "요하나 더 프리스",
-        "birthDate": "2012-05-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-피터-얀센-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "요하나 더 프리스는 2012년에 태어났다. 용산 북안의 가족 기록과 작업 사본을 읽으며 자랐고, 2030년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-08.json",
-                "anchor": "인물-피터-얀센-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Johanna de Vries was born in 2012 and grew up reading family and work records. From 2030, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Johanna de Vries",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K199-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "헨드릭 얀센",
-        "nameEn": "Hendrik Jansen",
-        "birthDate": "1982-05-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K199-P-03"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "헨드릭 얀센은 2030년 대정전 당시 용산 북안 생활권에서 용산 강변의 민간 하역·창고 업무 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "summaryEn": "Hendrik Jansen was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/cast-family-trees.json",
-                "anchor": "FH-K199-P-03"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K199-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "마리아 더 프리스",
-        "nameEn": "Maria de Vries",
-        "birthDate": "1982-05-24",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K199-M-03"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "마리아 더 프리스는 2030년 대정전 당시 용산 북안 생활권에서 용산 강변의 민간 하역·창고 업무 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "summaryEn": "Maria de Vries was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/cast-family-trees.json",
-                "anchor": "FH-K199-M-03"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K199-P-01:K199:biological",
-        "from": "FH-K199-P-01",
-        "to": "K199",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-피터-얀센-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K199-P-02:FH-K199-P-01:biological",
-        "from": "FH-K199-P-02",
-        "to": "FH-K199-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-피터-얀센-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K199-M-01:K199:biological",
-        "from": "FH-K199-M-01",
-        "to": "K199",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-피터-얀센-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K199-M-02:FH-K199-M-01:biological",
-        "from": "FH-K199-M-02",
-        "to": "FH-K199-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-08.json",
-            "anchor": "인물-피터-얀센-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K199-P-03:FH-K199-P-02:biological",
-        "from": "FH-K199-P-03",
-        "to": "FH-K199-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K199-P-03"
-          }
-        ]
-      },
-      {
-        "id": "FH-K199-M-03:FH-K199-M-02:biological",
-        "from": "FH-K199-M-03",
-        "to": "FH-K199-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K199-M-03"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": null,
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "증표 번호 옆에 적힌 기재지는 종로구 사직동 광화문역, 품계는 서기관이다. 클로당의 사무총장으로, 당 대표인 국회의원 대신 당원 명부와 내륙 여덟 구 의원 집안 사이의 연락을 맡는다. 장부 밖과 섞이면 장부가 무너진다는 당의 말을 그는 정당법 조문처럼 한 글자도 틀리지 않고 외워 말한다. OMO당 사무총장 에바 노바코바와는 정부서울청사 지하 회의실 앞 복도에서 하루 두 번 마주치고, 두 사람은 그때마다 서로의 당이 낸 의견서 사본을 맞바꾼다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "클로당 사무총장",
+    "품계": "서기관",
+    "생업": "비서 업무",
+    "일하는 역": "광화문역",
+    "잠자는 역": "광화문역",
+    "가구": "혼자 사는 가구"
   },
-  "proseContacts": [],
+  "sections": {
+    "생애": "증표 번호 옆에 적힌 기재지는 종로구 사직동 광화문역, 품계는 서기관이다. 클로당의 사무총장으로, 당 대표인 국회의원 대신 당원 명부와 내륙 여덟 구 의원 집안 사이의 연락을 맡는다. 장부 밖과 섞이면 장부가 무너진다는 당의 말을 그는 정당법 조문처럼 한 글자도 틀리지 않고 외워 말한다. OMO당 사무총장 에바 노바코바와는 정부서울청사 지하 회의실 앞 복도에서 하루 두 번 마주치고, 두 사람은 그때마다 서로의 당이 낸 의견서 사본을 맞바꾼다.",
+    "관직": "직함 클로당 사무총장. 직위 클로당 사무총장 · 광화문역. 품계 서기관. 일하는 역 광화문역."
+  },
+  "values": {
+    "권위": 35,
+    "개방": -25,
+    "무력": 5,
+    "물질": 65,
+    "공동": -15,
+    "원칙": -20,
+    "공개": -10,
+    "자격": 20,
+    "분산": -20,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": 15,
+    "독점": 10,
+    "위험": -30,
+    "과시": 10,
+    "지속": 40,
+    "지향": "유동",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0200",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "피터 얀센",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "피터 얀센",
+        "type": "경쟁",
+        "to": "에바 노바코바",
+        "basis": "두 당의 사무총장으로서 같은 회의실 앞에서 날마다 의견서를 맞바꾸는 맞수다."
+      }
+    ],
+    "incoming": [
+      {
+        "from": "에바 노바코바",
+        "type": "경쟁",
+        "to": "피터 얀센",
+        "basis": "클로당 사무총장과 대통령 서명을 두고 다투는 사이"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 9,
-        "effective": 9
+      "diplomacy": {
+        "base": 6,
+        "effective": 6
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "negotiation": {
-        "base": 12,
-        "effective": 12
-      },
-      "management": {
+      "stewardship": {
         "base": 11,
         "effective": 11
       },
-      "insight": {
-        "base": 10,
-        "effective": 10
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
+        "base": 9,
+        "effective": 9
       },
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 6,
-        "effective": 6
       }
     },
-    "skills": [
-      {
-        "id": "departure-reserve-check",
-        "name": {
-          "ko": "출항 잔량 확인",
-          "en": "Departure reserve checking"
-        },
-        "rating": 60
-      },
-      {
-        "id": "share-negotiation",
-        "name": {
-          "ko": "선주 표 교섭",
-          "en": "Shipowner vote negotiation"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k199-disposition",
-        "name": {
-          "ko": "손실 유예 경멸",
-          "en": "Contempt for deferred losses"
-        },
-        "description": {
-          "ko": "표정을 잘 숨기고 표를 물건처럼 옮긴다. 손실을 나중으로 미루는 사람을 가장 경멸한다.",
-          "en": "He hid his expression well and moved notes like goods. He most despised people who pushed losses off to later."
-        },
-        "behavior": {
-          "ko": "관직. 품계 수석기사. 직함은 운송선주 평의. 출항 전에 연료와 얼음 잔량을 공개하고, 미상환 표가 쌓인 선주의 부두 사용을 정지한다.",
-          "en": "Office. Rank: senior engineer. Title: shipping owners' council. Before departure he published fuel and ice remainder and suspended the quay use of shipowners whose unredeemed notes piled up."
-        },
-        "stress": {
-          "ko": "공포. 서울 안 한강 하역·식량 인계가 끊긴 뒤 허위 재고 표가 실제 잔량을 넘겨 선단과 결제 신용을 무너뜨리는 것.",
-          "en": "Fear. That after unloading and food handovers on the Han River within Seoul stop, false inventory notes would exceed actual stocks and destroy the fleet and settlement credit."
-        },
-        "relationship": {
-          "ko": "관계. 오해린과 상회정 표를 거래하고 한재목의 수상 운송 통행세를 꺼린다. 신태산의 호송 반을 선단에 태운다.",
-          "en": "Relations. Traded the merchants' council notes with O Haerin and disliked Han Jaemok's waterway transport toll. Carried Sin Taesan's convoy squad on the fleet."
-        },
-        "effects": []
-      },
-      {
-        "id": "k199-choice",
-        "name": {
-          "ko": "지분으로 발행을 묶음",
-          "en": "Tying issuance to stakes"
-        },
-        "description": {
-          "ko": "일화. 전력 단절과 함께 부두 잔여 어획이 하루치로 줄자 선주들이 결제권 발행을 앞당기라고 압박했다.",
-          "en": "Anecdote. When the power cut reduced the quay's remaining catch to a day's worth, the shipowners pressed to accelerate settlement-right issuance."
-        },
-        "behavior": {
-          "ko": "관계. 오해린과 상회정 표를 거래하고 한재목의 수상 운송 통행세를 꺼린다. 신태산의 호송 반을 선단에 태운다.",
-          "en": "Relations. Traded the merchants' council notes with O Haerin and disliked Han Jaemok's waterway transport toll. Carried Sin Taesan's convoy squad on the fleet."
-        },
-        "stress": {
-          "ko": "공포. 서울 안 한강 하역·식량 인계가 끊긴 뒤 허위 재고 표가 실제 잔량을 넘겨 선단과 결제 신용을 무너뜨리는 것.",
-          "en": "Fear. That after unloading and food handovers on the Han River within Seoul stop, false inventory notes would exceed actual stocks and destroy the fleet and settlement credit."
-        },
-        "relationship": {
-          "ko": "관계. 오해린과 상회정 표를 거래하고 한재목의 수상 운송 통행세를 꺼린다. 신태산의 호송 반을 선단에 태운다.",
-          "en": "Relations. Traded the merchants' council notes with O Haerin and disliked Han Jaemok's waterway transport toll. Carried Sin Taesan's convoy squad on the fleet."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "연료·얼음을 공개하고 미상환 표가 쌓인 선주의 부두를 정지한다. 발행 압박은 선주들의 행동으로 발행 성공을 계산하지 않았다.",
-      "en": "Publishes fuel and ice and suspends pier access for owners with unpaid tokens. Other owners’ pressure does not establish his issuance success."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -512,75 +161,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": null,
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -10,
-    "개방": 30,
-    "무력": -30,
-    "물질": 70,
-    "공동": -20,
-    "원칙": -40,
-    "공개": 15,
-    "자격": 5,
-    "분산": 30,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 15,
-    "독점": 10,
-    "위험": -30,
-    "과시": 10,
-    "지속": 40,
-    "지향": "유동",
-    "결합": "비독점"
-  },
-  "fields": {
-    "소속": "중앙정보부",
-    "품계": "수석기사",
-    "생업": "출항 연료·얼음 잔량 공개",
-    "직함": "운송선주 평의",
-    "가치관": "권위 −10 | 개방 30 | 무력 −30 | 물질 70 | 공동 −20 | 원칙 −40 | 공개 15 | 자격 5 | 분산 30 | 변혁 0",
-    "욕망": "갈망 15 | 독점 10 | 위험 −30 | 과시 10 | 지속 40 | 지향 유동 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2126년 세대. 노량진 선창에서 자랐다. 운송선주 평의 자리는 저울 재점검 공개로 열렸다.\n피터 얀센은 2072년에 태어났다. 네덜란드계 가계는 용산 북안 생활권에 뿌리를 두고 있다. 노량진 선창에서 자랐다. 2126년에는 운송선주 평의 업무를 맡는다. 헨드릭 얀센은 2030년 용산 북안에서 용산 강변의 민간 하역·창고 업무 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 피터 얀센의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 네덜란드어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 피터 얀센은 노량진1동에서 출항 연료·얼음 잔량 공개 업무를 맡는다.\n- 피터 얀센은 한강로동에서 출항 연료·얼음 잔량 공개 업무를 맡는다.",
-    "관직": "품계 수석기사. 직함은 운송선주 평의. 출항 전에 연료와 얼음 잔량을 공개하고, 미상환 표가 쌓인 선주의 부두 사용을 정지한다.",
-    "일화": "전력 단절과 함께 부두 잔여 어획이 하루치로 줄자 선주들이 결제권 발행을 앞당기라고 압박했다.",
-    "관계": "오해린과 상회정 표를 거래하고 한재목의 수상 운송 통행세를 꺼린다. 신태산의 호송 반을 선단에 태운다.",
-    "야망": "상회정의 표를 선주 쪽으로 모아 오해린의 결제권 발행을 선박·호송 지분으로 묶는다.",
-    "공포": "서울 안 한강 하역·식량 인계가 끊긴 뒤 허위 재고 표가 실제 잔량을 넘겨 선단과 결제 신용을 무너뜨리는 것.",
-    "개입": "선주 표를 모아 발행을 통과시키거나, 허위 재고로 산 표를 무효로 만들 수 있다."
-  },
-  "biography": "표정을 잘 숨기고 표를 물건처럼 옮긴다. 손실을 나중으로 미루는 사람을 가장 경멸한다.\n\n- 소속: 중앙정보부\n- 품계: 수석기사\n- 생업: 출항 연료·얼음 잔량 공개\n- 직함: 운송선주 평의\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 운송선주 평의 자리는 저울 재점검 공개로 열렸다.\n피터 얀센은 2072년에 태어났다. 네덜란드계 가계는 용산 북안 생활권에 뿌리를 두고 있다. 노량진 선창에서 자랐다. 2126년에는 운송선주 평의 업무를 맡는다. 헨드릭 얀센은 2030년 용산 북안에서 용산 강변의 민간 하역·창고 업무 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 피터 얀센의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 네덜란드어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 피터 얀센은 노량진1동에서 출항 연료·얼음 잔량 공개 업무를 맡는다.\n- 피터 얀센은 한강로동에서 출항 연료·얼음 잔량 공개 업무를 맡는다.\n\n**관직.** 품계 수석기사. 직함은 운송선주 평의. 출항 전에 연료와 얼음 잔량을 공개하고, 미상환 표가 쌓인 선주의 부두 사용을 정지한다.\n\n**일화.** 전력 단절과 함께 부두 잔여 어획이 하루치로 줄자 선주들이 결제권 발행을 앞당기라고 압박했다.\n\n**관계.** 오해린과 상회정 표를 거래하고 한재목의 수상 운송 통행세를 꺼린다. 신태산의 호송 반을 선단에 태운다.\n\n**야망.** 상회정의 표를 선주 쪽으로 모아 오해린의 결제권 발행을 선박·호송 지분으로 묶는다.\n\n**공포.** 서울 안 한강 하역·식량 인계가 끊긴 뒤 허위 재고 표가 실제 잔량을 넘겨 선단과 결제 신용을 무너뜨리는 것.\n\n**개입.** 선주 표를 모아 발행을 통과시키거나, 허위 재고로 산 표를 무효로 만들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 30 | 무력 −30 | 물질 70 | 공동 −20 | 원칙 −40 | 공개 15 | 자격 5 | 분산 30 | 변혁 0\n- 욕망: 갈망 15 | 독점 10 | 위험 −30 | 과시 10 | 지속 40 | 지향 유동 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-08"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "피터 얀센",
-        "type": "계약",
-        "to": "오해린",
-        "basis": "상회정 표를 운송선주 평의와 거래"
-      },
-      {
-        "from": "피터 얀센",
-        "type": "원한",
-        "to": "한재목",
-        "basis": "수상 운송 통행세를 꺼리는 원한"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "추보람",
-        "type": "계약",
-        "to": "피터 얀센",
-        "basis": "피터 얀센의 상회정 표를 회의 호송에서 거르고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

@@ -1,385 +1,136 @@
 {
   "id": "person-0356",
   "name": "원예나",
-  "title": "",
-  "position": "",
+  "title": "자양2동 동장",
+  "position": "자양2동 동장 · 정부",
   "characterId": "K355",
-  "rank": "",
+  "rank": "동장",
   "commonTier": "T3",
-  "occupation": "교각 균열·통행 송장 이중 날인 확인",
+  "occupation": "동 행정",
   "gender": "남성",
   "stage": "S2",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-원예나",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0356",
   "birthDate": "2074-04-29",
   "birthday": "04-29",
   "age": 52,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/116"
-  ],
-  "familyTree": {
-    "personId": "K355",
-    "nodes": [
-      {
-        "id": "K355",
-        "personId": "K355",
-        "kind": "person",
-        "name": "원예나",
-        "birthDate": "2074-04-29",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K355"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-원예나-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 양군 교량 통과 물류상 자리는 야간 무단 도하 적발로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-원예나-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0356"
-      },
-      {
-        "id": "FH-K355-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "원승호",
-        "lineage": {
-          "surname": "원",
-          "bongwan": "원주",
-          "clan": "c6d0-c6d0-c8fc"
-        },
-        "birthDate": "2044-04-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-원예나-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2082,
-            "summary": "원승호는 암사 경비 초소에서 교각 균열·통행 송장 이중 날인 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-원예나-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K355-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "원승민",
-        "lineage": {
-          "surname": "원",
-          "bongwan": "원주",
-          "clan": "c6d0-c6d0-c8fc"
-        },
-        "birthDate": "2014-04-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-원예나-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "원승민은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-원예나-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K355-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "임준수",
-        "birthDate": "2044-04-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-원예나-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2082,
-            "summary": "임준수는 암사 경비 초소에서 교각 균열·통행 송장 이중 날인 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-원예나-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K355-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "오준윤",
-        "birthDate": "2014-04-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-원예나-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오준윤은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-원예나-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K355-P-01:K355:biological",
-        "from": "FH-K355-P-01",
-        "to": "K355",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-원예나-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K355-P-02:FH-K355-P-01:biological",
-        "from": "FH-K355-P-02",
-        "to": "FH-K355-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-원예나-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K355-M-01:K355:biological",
-        "from": "FH-K355-M-01",
-        "to": "K355",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-원예나-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K355-M-02:FH-K355-M-01:biological",
-        "from": "FH-K355-M-02",
-        "to": "FH-K355-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-원예나-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c6d0-c6d0-c8fc",
+    "name": "원주 원씨",
+    "crest": "clan-crests/c6d0-c6d0-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "자양2동 동장 원예나는 구의역에 기재된 쉰두 살 남성이고 원주 원씨다. 고서준 의원이 그를 임명해 구의 취수구 둘레의 동을 맡겼고, 취수구 일꾼 세대의 배급표와 기재 사본은 그의 금고에 든다. 급수 시간이 바뀌는 날이면 동주민센터 앞 칠판에 새 시간을 적고, 글을 읽지 못하는 세대를 위해 그 시간을 소리 내어 두 번 읽는다. 같은 원주 원씨인 원다결이 구의역을 맡은 뒤로, 역의 잠자리 보고는 저녁마다 그의 책상에 먼저 놓인다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "자양2동 동장",
+    "품계": "동장",
+    "생업": "동 행정",
+    "일하는 역": "구의역",
+    "잠자는 역": "구의역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "자양2동 동장 원예나는 구의역에 기재된 쉰두 살 남성이고 원주 원씨다. 고서준 의원이 그를 임명해 구의 취수구 둘레의 동을 맡겼고, 취수구 일꾼 세대의 배급표와 기재 사본은 그의 금고에 든다. 급수 시간이 바뀌는 날이면 동주민센터 앞 칠판에 새 시간을 적고, 글을 읽지 못하는 세대를 위해 그 시간을 소리 내어 두 번 읽는다. 같은 원주 원씨인 원다결이 구의역을 맡은 뒤로, 역의 잠자리 보고는 저녁마다 그의 책상에 먼저 놓인다.",
+    "관직": "직함 자양2동 동장. 직위 자양2동 동장 · 정부. 품계 동장. 일하는 역 구의역."
+  },
+  "values": {
+    "권위": 95,
+    "개방": -80,
+    "무력": 75,
+    "물질": 30,
+    "공동": 25,
+    "원칙": 5,
+    "공개": -35,
+    "자격": -5,
+    "분산": -60,
+    "변혁": -35
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": 0,
+    "위험": 15,
+    "과시": 10,
+    "지속": 30,
+    "지향": "동성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0356",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "원예나",
+        "type": "지휘",
+        "to": "고서준",
+        "basis": "광진구 국회의원 고서준의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "원다결",
+        "type": "지휘",
+        "to": "원예나",
+        "basis": "자양2동 동장 원예나의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K348",
+    "name": "고서준",
+    "courtId": "court:K348",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K355",
+    "members": [
+      {
+        "personId": "K363",
+        "name": "원다결"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
-        "base": 9,
-        "effective": 9
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
-      "learning": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "bridge-freight-scheduling",
-        "name": {
-          "ko": "교량 화물 배치",
-          "en": "Bridge freight scheduling"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "이중 날인 전에는 싣지 않는다",
-          "en": "No loading before both seals"
-        },
-        "description": {
-          "ko": "파손이 적대행위로 보고되자 군 송장을 봉인하고 점검 무게만 남겼다. 화물 운영과 보고의 절제를 반영한다.",
-          "en": "A hostile interpretation of damage prompted sealing military invoices and keeping inspection weights. Cargo administration and restraint in reporting are supported."
-        },
-        "behavior": {
-          "ko": "통행 무게와 교각 균열을 같은 저울에 올리고, 근거 없는 봉쇄를 병력 낭비라고 본다. 빈 면제 칸이 찍힌 송장을 위험 신호로 본다.",
-          "en": "She put passage weight and pier cracks on the same scales and saw a baseless blockade as a waste of troops. She read an invoice stamped with an empty exemption column as a danger signal."
-        },
-        "stress": {
-          "ko": "공포. 교량 화물이 일방의 군령으로 상수호위단에 넘어가 세리 원장이 빈 종이가 되는 것.",
-          "en": "Fear. That the bridge freight would pass to the water-supply escort under a protection-government pretext and the customs ledger would become empty paper."
-        },
-        "relationship": {
-          "ko": "관계. 안기준의 교량 일정을 화물 순서로 집행하는 계약이고, 원다결의 관문 저울에 무게를 맞춘다. 남호성의 의무호송을 우선 통과시킨다.",
-          "en": "Relations. Held a contract executing An Giun's bridge schedule as freight order and matched weights on Won Dagyeol's gate scales. Passed Nam Hoseong's medical convoy through first."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 공동실무원. 직함은 양군 교량 통과 물류상. 교각 균열과 통행 무게를 매일 공개하고, 군 통행 송장은 아관사와 구의수비대의 이중 날인이 있기 전에는 싣지 않는다.",
-          "en": "Office. Rank: sergeant. Title: bridge passage logistics merchant. She published the pier cracks and passage weights daily and loaded no military invoice before the double stamp of Go Seojun and the water engineers' council."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 공동실무원. 직함은 양군 교량 통과 물류상. 교각 균열과 통행 무게를 매일 공개하고, 군 통행 송장은 아관사와 구의수비대의 이중 날인이 있기 전에는 싣지 않는다.",
-          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: bridge passage logistics merchant. She published the pier cracks and passage weights daily and loaded no military invoice before the double stamp of Go Seojun and the water engineers' council."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 교량 화물이 일방의 군령으로 상수호위단에 넘어가 세리 원장이 빈 종이가 되는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That the bridge freight would pass to the water-supply escort under a protection-government pretext and the customs ledger would become empty paper."
-        },
-        "relationship": {
-          "ko": "관계. 안기준의 교량 일정을 화물 순서로 집행하는 계약이고, 원다결의 관문 저울에 무게를 맞춘다. 남호성의 의무호송을 우선 통과시킨다.",
-          "en": "Relations. Held a contract executing An Giun's bridge schedule as freight order and matched weights on Won Dagyeol's gate scales. Passed Nam Hoseong's medical convoy through first."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "파손이 적대행위로 보고되자 군 송장을 봉인하고 점검 무게만 남겼다. 화물 운영과 보고의 절제를 반영한다.",
-      "en": "A hostile interpretation of damage prompted sealing military invoices and keeping inspection weights. Cargo administration and restraint in reporting are supported."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,96 +168,52 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
+  "confirmedHoldings": [
     {
-      "id": "title:barony-K355-sea",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
+      "id": "holding:v3:dong:1121583000",
+      "name": {
+        "ko": "자양2동"
+      },
       "holderPersonId": "K355",
-      "stateId": "S06",
-      "politicalParentTitleId": "title:kingdom-s06",
-      "personalLieges": [
+      "directLiegePersonId": "K348",
+      "stateId": "government",
+      "adminRefs": [
         {
-          "holdingId": "holding:sea-K355",
-          "directLiegePersonId": "K144"
+          "id": "region:1121583000",
+          "name": "자양2동"
         }
       ],
-      "directOwnership": false
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
     }
   ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c6d0-c6d0-c8fc",
-    "name": "원주 원씨",
-    "crest": "clan-crests/c6d0-c6d0-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 50,
-    "개방": -25,
-    "무력": 40,
-    "물질": 35,
-    "공동": 20,
-    "원칙": -15,
-    "공개": -10,
-    "자격": -20,
-    "분산": -10,
-    "변혁": -15
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": 0,
-    "위험": 15,
-    "과시": 10,
-    "지속": 30,
-    "지향": "동성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "교각 균열·통행 송장 이중 날인 확인",
-    "소속": "아관사 양군 공동실무",
-    "품계": "공동실무원",
-    "직함": "양군 교량 통과 물류상",
-    "가치관": "권위 50 | 개방 −25 | 무력 40 | 물질 35 | 공동 20 | 원칙 −15 | 공개 −10 | 자격 −20 | 분산 −10 | 변혁 −15",
-    "욕망": "갈망 10 | 독점 0 | 위험 15 | 과시 10 | 지속 30 | 지향 동성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2074-04-29에 태어났다. 2126년 개막 현재 양군 교량 통과 물류상 직무를 맡아 교각 균열·통행 송장 이중 날인 확인 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 교각 균열·통행 송장 이중 날인 확인 창구가 원예나의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 공동실무원. 직함은 양군 교량 통과 물류상. 교각 균열·통행 송장 이중 날인 확인 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
-    "일화": "척후대가 상수관 파손을 적대행위로 보고하자 원예나는 군 통행 송장을 봉인하고 점검 무게만 남겼다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
-    "관계": "안기준의 교량 일정을 화물 순서로 집행하는 계약이고, 원다결의 관문 저울에 무게를 맞춘다. 남호성의 의무호송을 우선 통과시킨다.",
-    "야망": "원예나는 양군 교량 통과 물류상 직무에서 교각 균열·통행 송장 이중 날인 확인 기록을 공개 인계표와 맞물리게 하려 한다.",
-    "공포": "양군 교량 통과 물류상 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
-    "개입": "파손 원인을 화물 무게로 증명하거나, 교량 열쇠를 양군의 공동 승인 없이는 넘기지 않는다. 원예나의 교각 균열·통행 송장 이중 날인 확인 원장을 대조해 다음 인계의 증거를 세울 수 있다."
-  },
-  "biography": "원예나는 교각 균열·통행 송장 이중 날인 확인 기록을 손에 익힌 아관사 양군 공동실무 인물이다. 통행 무게와 교각 균열을 같은 저울에 올리고, 근거 없는 봉쇄를 병력 낭비라고 본다. 빈 면제 칸이 찍힌 송장을 위험 신호로 본다.\n\n- 생업: 교각 균열·통행 송장 이중 날인 확인\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 교량 통과 물류상\n**생애.** 2074-04-29에 태어났다. 2126년 개막 현재 양군 교량 통과 물류상 직무를 맡아 교각 균열·통행 송장 이중 날인 확인 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 교각 균열·통행 송장 이중 날인 확인 창구가 원예나의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 공동실무원. 직함은 양군 교량 통과 물류상. 교각 균열·통행 송장 이중 날인 확인 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 척후대가 상수관 파손을 적대행위로 보고하자 원예나는 군 통행 송장을 봉인하고 점검 무게만 남겼다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 안기준의 교량 일정을 화물 순서로 집행하는 계약이고, 원다결의 관문 저울에 무게를 맞춘다. 남호성의 의무호송을 우선 통과시킨다.\n\n**야망.** 원예나는 양군 교량 통과 물류상 직무에서 교각 균열·통행 송장 이중 날인 확인 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 양군 교량 통과 물류상 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 파손 원인을 화물 무게로 증명하거나, 교량 열쇠를 양군의 공동 승인 없이는 넘기지 않는다. 원예나의 교각 균열·통행 송장 이중 날인 확인 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −25 | 무력 40 | 물질 35 | 공동 20 | 원칙 −15 | 공개 −10 | 자격 −20 | 분산 −10 | 변혁 −15\n- 욕망: 갈망 10 | 독점 0 | 위험 15 | 과시 10 | 지속 30 | 지향 동성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-14"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "원예나",
-        "type": "지휘",
-        "to": "안기준",
-        "basis": "안기준의 교량 일정을 화물 순서로 집행하는 계약이고"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:구의",
+      "name": {
+        "ko": "구의역"
       },
-      {
-        "from": "원예나",
-        "type": "계약",
-        "to": "원다결",
-        "basis": "원다결의 관문 저울에 무게를 맞춘다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "원다결",
-        "type": "계약",
-        "to": "원예나",
-        "basis": "원예나의 교량 송장과 시세를 맞추고"
-      }
-    ]
-  }
+      "holderPersonId": "K363",
+      "directLiegePersonId": "K355",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "구의",
+        "stationName": "구의"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1121583000",
+          "name": "자양2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "원다결",
+      "holderRoute": "/people/person-0364"
+    }
+  ]
 }

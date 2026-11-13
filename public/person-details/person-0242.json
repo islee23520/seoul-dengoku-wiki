@@ -1,385 +1,120 @@
 {
   "id": "person-0242",
   "name": "순한결",
-  "title": "북한산보국문 행렬 속보 증인",
-  "position": "북한산보국문 행렬 환전 증인",
+  "title": "까치산역 역반장",
+  "position": "까치산역 역반장 · 자유도시들",
   "characterId": "K241",
-  "rank": "서기",
-  "commonTier": "T5",
-  "occupation": "환전 기록·통행 명부 대조",
+  "rank": "역반장",
+  "commonTier": "T4",
+  "occupation": "역반 운영",
   "gender": "남성",
   "stage": "S3",
-  "state": "S09",
-  "stateName": "여의도출자연합회",
-  "sourceRoute": "/world/Cast-State-09#인물-순한결",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0242",
   "birthDate": "2066-02-20",
   "birthday": "02-20",
   "age": 60,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-09.json#/content/237"
-  ],
-  "familyTree": {
-    "personId": "K241",
-    "nodes": [
-      {
-        "id": "K241",
-        "personId": "K241",
-        "kind": "person",
-        "name": "순한결",
-        "birthDate": "2066-02-20",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K241"
-          },
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-순한결-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 북한산보국문 행렬 환전 증인 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-순한결-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0242"
-      },
-      {
-        "id": "FH-K241-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "순승원",
-        "lineage": {
-          "surname": "순",
-          "bongwan": "금구",
-          "clan": "c21c-ae08-ad6c-6df3"
-        },
-        "birthDate": "2036-02-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-순한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "순승원은 대합실 당직에서 환전 기록·통행 명부 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-순한결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K241-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "순승진",
-        "lineage": {
-          "surname": "순",
-          "bongwan": "금구",
-          "clan": "c21c-ae08-ad6c-6df3"
-        },
-        "birthDate": "2006-02-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-순한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "순승진은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-순한결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K241-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이현성",
-        "birthDate": "2036-02-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-순한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "이현성은 대합실 당직에서 환전 기록·통행 명부 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-순한결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K241-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최현솔",
-        "birthDate": "2006-02-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-순한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최현솔은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-09.json",
-                "anchor": "인물-순한결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K241-P-01:K241:biological",
-        "from": "FH-K241-P-01",
-        "to": "K241",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-순한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K241-P-02:FH-K241-P-01:biological",
-        "from": "FH-K241-P-02",
-        "to": "FH-K241-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-순한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K241-M-01:K241:biological",
-        "from": "FH-K241-M-01",
-        "to": "K241",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-순한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K241-M-02:FH-K241-M-01:biological",
-        "from": "FH-K241-M-02",
-        "to": "FH-K241-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-09.json",
-            "anchor": "인물-순한결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c21c-ae08-ad6c-6df3",
+    "name": "금구 순씨",
+    "crest": "clan-crests/c21c-ae08-ad6c-6df3.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "까치산은 2호선 서쪽 가지가 끝나고 5호선이 지나는 역이라, 양천에서 오는 궤도 수레가 강서에 들어서며 처음 서는 곳이다. 역반장 순한결은 수레가 설 때마다 실린 모터와 바퀴를 세어 화곡 구간장 소감에게 넘길 장부에 적고, 예순이 된 올해도 그 셈을 남에게 맡기지 않는다. 두 노선의 승강장을 함께 데우기에는 열이 모자라서, 눈보라가 오면 그는 2호선 쪽 승강장을 닫고 사람을 5호선 쪽으로 모은다. 수레꾼이 묵어 가는 밤이면 그는 그들이 다음 날 지날 터널의 언 자리부터 묻고 받아 적는다.",
+  "fields": {
+    "소속": "자유도시들",
+    "직함": "까치산역 역반장",
+    "품계": "역반장",
+    "생업": "역반 운영",
+    "일하는 역": "까치산역",
+    "잠자는 역": "까치산역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "까치산은 2호선 서쪽 가지가 끝나고 5호선이 지나는 역이라, 양천에서 오는 궤도 수레가 강서에 들어서며 처음 서는 곳이다. 역반장 순한결은 수레가 설 때마다 실린 모터와 바퀴를 세어 화곡 구간장 소감에게 넘길 장부에 적고, 예순이 된 올해도 그 셈을 남에게 맡기지 않는다. 두 노선의 승강장을 함께 데우기에는 열이 모자라서, 눈보라가 오면 그는 2호선 쪽 승강장을 닫고 사람을 5호선 쪽으로 모은다. 수레꾼이 묵어 가는 밤이면 그는 그들이 다음 날 지날 터널의 언 자리부터 묻고 받아 적는다.",
+    "관직": "직함 까치산역 역반장. 직위 까치산역 역반장 · 자유도시들. 품계 역반장. 일하는 역 까치산역."
+  },
+  "values": {
+    "권위": -50,
+    "개방": 20,
+    "무력": -50,
+    "물질": 0,
+    "공동": -35,
+    "원칙": 5,
+    "공개": 40,
+    "자격": 30,
+    "분산": 70,
+    "변혁": 10
+  },
+  "desire": {
+    "갈망": 45,
+    "독점": 15,
+    "위험": 10,
+    "과시": 25,
+    "지속": -10,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0242",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "순한결",
+        "type": "지휘",
+        "to": "소감",
+        "basis": "화곡 구간장 소감의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K229",
+    "name": "소감",
+    "courtId": "court:K229",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
+      },
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
-      },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "intrigue": {
         "base": 7,
         "effective": 7
-      }
-    },
-    "skills": [
-      {
-        "id": "civil-exchange",
-        "name": {
-          "ko": "가족 환전 기록",
-          "en": "Family exchange recording"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "civil-exchange-disposition",
-        "name": {
-          "ko": "가족과 병력 분리",
-          "en": "Separates families from troops"
-        },
-        "description": {
-          "ko": "가족 숫자를 병력으로 세는 시세를 내보내지 않는다.",
-          "en": "Refuses prices that count families as troops."
-        },
-        "behavior": {
-          "ko": "가족 숫자를 병력으로 세는 시세를 내보내지 않는다.",
-          "en": "Refuses prices that count families as troops."
-        },
-        "stress": {
-          "ko": "환전 기록이 호송 유도 장부로 잘릴 것을 두려워한다.",
-          "en": "Fears exchange records becoming escort-guidance ledgers."
-        },
-        "relationship": {
-          "ko": "모국의 영등포동 인계 창구 환전에서 증언하고, 백온의 피난 맹세를 환전 기록 여백에 적으며, 어하은의 명부 사고를 숫자 없이 전한다.",
-          "en": "Testified at Mo Guk's exchange at the Yeongdeungpo-dong handover counter, wrote Baek On's refuge oath in the exchange record's margin, and conveyed Eo Haeun's roster accident without numbers."
-        },
-        "effects": []
       },
-      {
-        "id": "recorded-boundary",
-        "name": {
-          "ko": "독립 목격 요구",
-          "en": "Requires independent observation"
-        },
-        "description": {
-          "ko": "독립 목격 둘 미만이면 시세를 올리지 않는다.",
-          "en": "Does not post prices with fewer than two independent observations."
-        },
-        "behavior": {
-          "ko": "독립 목격 둘 미만이면 시세를 올리지 않는다.",
-          "en": "Does not post prices with fewer than two independent observations."
-        },
-        "stress": {
-          "ko": "환전 기록이 군사 호송 유도 장부로 잘려 정착지가 노출되는 것.",
-          "en": "Fears exchange records becoming escort-guidance ledgers."
-        },
-        "relationship": {
-          "ko": "모국의 영등포동 인계 창구 환전에서 증언하고, 백온의 피난 맹세를 환전 기록 여백에 적으며, 어하은의 명부 사고를 숫자 없이 전한다.",
-          "en": "Testified at Mo Guk's exchange at the Yeongdeungpo-dong handover counter, wrote Baek On's refuge oath in the exchange record's margin, and conveyed Eo Haeun's roster accident without numbers."
-        },
-        "effects": []
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "급수권과 복무 재등록 발표를 보류하고 가족 남하만 환전 기록에 남겼다. 가족을 병력 숫자로 셈하지 않는다.",
-      "en": "Deferred the bundled water-right and service-registration announcement, recording only family movement rather than military numbers."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -417,72 +152,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c21c-ae08-ad6c-6df3",
-    "name": "금구 순씨",
-    "crest": "clan-crests/c21c-ae08-ad6c-6df3.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -15,
-    "개방": 5,
-    "무력": -40,
-    "물질": -15,
-    "공동": -10,
-    "원칙": 15,
-    "공개": 40,
-    "자격": 10,
-    "분산": 15,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 45,
-    "독점": 15,
-    "위험": 10,
-    "과시": 25,
-    "지속": -10,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "환전 기록·통행 명부 대조",
-    "소속": "여의도출자연합회",
-    "품계": "서기",
-    "직함": "북한산보국문 행렬 환전 증인",
-    "가치관": "권위 −15 | 개방 5 | 무력 −40 | 물질 −15 | 공동 −10 | 원칙 15 | 공개 40 | 자격 10 | 분산 15 | 변혁 0",
-    "욕망": "갈망 45 | 독점 15 | 위험 10 | 과시 25 | 지속 −10 | 지향 이성 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "2066-02-20 출생으로 승인된 출생군은 3군이다. 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 북한산보국문 행렬 환전 증인 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 순한결은 영등포동을 업무동으로 삼아 여의동 금고와 영등포동 인계 창구 사이의 환전 기록·통행 명부 대조를 맡는다.\n- 순한결은 여의동을 업무동으로 삼아 여의동 금고와 영등포동 인계 창구 사이의 환전 기록·통행 명부 대조를 맡는다.",
-    "관직": "품계 서기. 직함은 북한산보국문 행렬 환전 증인. 환전 기록과 통행 명부를 같은 벽에 붙이고, 독립 목격이 둘 미만이면 시세를 올리지 않는다.",
-    "일화": "가을의 북한산보국문 행렬이 시작되자 순한결은 급수권과 복무 재등록을 묶는 발표를 보류하고 가족 남하만 환전 기록으로 남겼다.",
-    "관계": "모국의 영등포동 인계 창구 환전에서 증언하고, 백온의 피난 맹세를 환전 기록 여백에 적으며, 어하은의 명부 사고를 숫자 없이 전한다.",
-    "야망": "북한산보국문 행렬의 남하를 시민권 환전 기록으로만 남겨 강제등록 발표가 공식 창구를 선점하지 못하게 한다.",
-    "공포": "환전 기록이 군사 호송 유도 장부로 잘려 정착지가 노출되는 것.",
-    "개입": "새어 나간 장부의 원점을 막거나, 시민권 환전 조항을 지점 원장에 고정할 수 있다."
-  },
-  "biography": "환전 장부의 빈칸을 참지 못하고, 가족 숫자를 병력으로 셈하는 시세를 지점 밖으로 내보내지 않는다. 좌표 없는 소문은 입에도 올리지 않는다.\n\n- 생업: 환전 기록·통행 명부 대조\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 북한산보국문 행렬 환전 증인\n**생애.** 2066-02-20 출생으로 승인된 출생군은 3군이다. 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 북한산보국문 행렬 환전 증인 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 순한결은 영등포동을 업무동으로 삼아 여의동 금고와 영등포동 인계 창구 사이의 환전 기록·통행 명부 대조를 맡는다.\n- 순한결은 여의동을 업무동으로 삼아 여의동 금고와 영등포동 인계 창구 사이의 환전 기록·통행 명부 대조를 맡는다.\n\n**관직.** 품계 서기. 직함은 북한산보국문 행렬 환전 증인. 환전 기록과 통행 명부를 같은 벽에 붙이고, 독립 목격이 둘 미만이면 시세를 올리지 않는다.\n\n**일화.** 가을의 북한산보국문 행렬이 시작되자 순한결은 급수권과 복무 재등록을 묶는 발표를 보류하고 가족 남하만 환전 기록으로 남겼다.\n\n**관계.** 모국의 영등포동 인계 창구 환전에서 증언하고, 백온의 피난 맹세를 환전 기록 여백에 적으며, 어하은의 명부 사고를 숫자 없이 전한다.\n\n**야망.** 북한산보국문 행렬의 남하를 시민권 환전 기록으로만 남겨 강제등록 발표가 공식 창구를 선점하지 못하게 한다.\n\n**공포.** 환전 기록이 군사 호송 유도 장부로 잘려 정착지가 노출되는 것.\n\n**개입.** 새어 나간 장부의 원점을 막거나, 시민권 환전 조항을 지점 원장에 고정할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 5 | 무력 −40 | 물질 −15 | 공동 −10 | 원칙 15 | 공개 40 | 자격 10 | 분산 15 | 변혁 0\n- 욕망: 갈망 45 | 독점 15 | 위험 10 | 과시 25 | 지속 −10 | 지향 이성 | 결합 단혼",
-  "sources": [
-    "Cast-State-09"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "순한결",
-        "type": "맹세",
-        "to": "모국",
-        "basis": "모국의 서북 관문 중계에서 증언하고"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:까치산",
+      "name": {
+        "ko": "까치산역"
       },
-      {
-        "from": "순한결",
-        "type": "맹세",
-        "to": "어하은",
-        "basis": "어하은의 명부 사고를 숫자 없이 전한다"
-      }
-    ],
-    "incoming": []
-  }
+      "holderPersonId": "K241",
+      "directLiegePersonId": "K229",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "까치산",
+        "stationName": "까치산"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1150054000",
+          "name": "화곡1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

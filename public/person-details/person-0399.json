@@ -1,858 +1,263 @@
 {
   "id": "person-0399",
   "name": "정유라",
-  "title": "위원장",
-  "position": "위원장",
+  "title": "서초 곁집장",
+  "position": "서초 곁집장 · 아크",
   "characterId": "K398",
-  "rank": "미등록",
+  "rank": "곁집장",
   "commonTier": "T1",
-  "occupation": "계약감사관",
+  "occupation": "곁집 통솔",
   "gender": "여성",
   "stage": "주요",
-  "state": "S16",
-  "stateName": "정동노총",
-  "sourceRoute": "/world/Cast-State-16#인물-정유라",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0399",
   "birthDate": "2090-01-26",
   "birthday": "01-26",
   "age": 36,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Core-Characters.json#/content/147",
-    "lore/characters/Core-Characters.json#/content/152",
-    "lore/characters/Cast-State-16.json#/content/1",
-    "lore/chronology/Century-Annals.json#/content/496",
-    "lore/chronology/Century-Annals.json#/content/561",
-    "lore/chronology/Century-Annals.json#/content/617",
-    "lore/chronology/Scenario-Timeline.json#/content/10"
-  ],
-  "familyTree": {
-    "personId": "K398",
-    "nodes": [
-      {
-        "id": "K398",
-        "personId": "K398",
-        "kind": "person",
-        "name": "정유라",
-        "birthDate": "2090-01-26",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K398"
-          },
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정유라-p2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 중구 정동길 3 경향신문사 자리의 계약 감사. 기록 위조는 금지된다. 정동 사무실의 조합원 명부가 비상 소집이 되었다. 공장이 멈추자 파업권이 통행권으로 바뀌었다. 정유라가 위원장이 된 것은 수서건설가의 보호 표준 도면을 끊기지 않게 지킨 뒤였다. 수서 기지는 임자 없는 무주지로 남는다. 시청역 총연맹이 나라 행세를 한다. 세 강국이 서로 다른 급수계약을 약소국에 동시에 내민 철, 정유라는 종료조건과 감사권을 한 장에 넣었다. 그 장이 협의의 뼈대가 되었다. 장세화의 호송이 그 장을 싣는다. 정씨 분가의 일원이다. 정서온과는 먼 친척이다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정유라-p2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0399"
-      },
-      {
-        "id": "K1005",
-        "personId": "K1005",
-        "kind": "person",
-        "name": "정서온",
-        "birthDate": "2090-06-17",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K1005"
-          },
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "생애. 2126년 세대. 정일환의 외동딸이다. 문중 족보에는 항렬자 없이 올라 있다. 분가의 남성 후계론이 이어졌다. 정통회는 후계 인준에 답을 하지 않았다. 그 무응답이 가문 안의 부담으로 남았다. 정유라는 정씨 분가의 일원이다. 정서온과는 먼 친척이다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정서온-p2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-1005"
-      },
-      {
-        "id": "FH-EX-JEONG-ILHWAN",
-        "personId": null,
-        "kind": "historical",
-        "name": "정일환",
-        "lineage": {
-          "surname": "정",
-          "bongwan": "진양",
-          "clan": "c815-c9c4-c591-912d"
-        },
-        "birthDate": "2060-06-17",
-        "deathDate": "2112-04-09",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/chronology/Century-Annals.json"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2112,
-            "summary": "정일환은 가문의 후계 인준 갈등 속에 외동딸 정서온을 남기고 사망한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정서온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K398-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준완",
-        "lineage": {
-          "surname": "정",
-          "bongwan": "진주",
-          "clan": "c815-c9c4-c8fc-912d"
-        },
-        "birthDate": "2060-01-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정유라-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2098,
-            "summary": "정준완은 생활권의 공동 거처에서 계약감사관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정유라-p2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K398-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준훈",
-        "lineage": {
-          "surname": "정",
-          "bongwan": "진주",
-          "clan": "c815-c9c4-c8fc-912d"
-        },
-        "birthDate": "2030-01-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정유라-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "정준훈은 생활권의 공동 거처에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정유라-p2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K398-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준범",
-        "lineage": {
-          "surname": "정",
-          "bongwan": "진주",
-          "clan": "c815-c9c4-c8fc-912d"
-        },
-        "birthDate": "2000-01-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정유라-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정준범은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정유라-p2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K398-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준솔",
-        "birthDate": "2060-01-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정유라-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2098,
-            "summary": "최준솔은 생활권의 공동 거처에서 계약감사관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정유라-p2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K398-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준재",
-        "birthDate": "2030-01-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정유라-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "정준재는 생활권의 공동 거처에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정유라-p2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K398-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤준재",
-        "birthDate": "2000-01-26",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정유라-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤준재는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정유라-p2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1005-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "송민재",
-        "birthDate": "2060-06-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2098,
-            "summary": "송민재는 생활권의 공동 거처에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정서온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1005-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "조민도",
-        "birthDate": "2030-06-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "조민도는 생활권의 공동 거처에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정서온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1005-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "김민온",
-        "birthDate": "2000-06-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "김민온은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정서온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1005-X정일환-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정서영",
-        "lineage": {
-          "surname": "정",
-          "bongwan": "진양",
-          "clan": "c815-c9c4-c591-912d"
-        },
-        "birthDate": "2030-06-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2068,
-            "summary": "정서영은 생활권의 공동 거처에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정서온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1005-X정일환-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정서윤",
-        "lineage": {
-          "surname": "정",
-          "bongwan": "진양",
-          "clan": "c815-c9c4-c591-912d"
-        },
-        "birthDate": "2000-06-17",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정서윤은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Core-Characters.json",
-                "anchor": "정서온-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-EX-JEONG-ILHWAN:K1005:biological",
-        "from": "FH-EX-JEONG-ILHWAN",
-        "to": "K1005",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/chronology/Century-Annals.json",
-            "anchor": "ch31-i1-p"
-          }
-        ]
-      },
-      {
-        "id": "FH-K398-P-01:K398:biological",
-        "from": "FH-K398-P-01",
-        "to": "K398",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정유라-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K398-P-02:FH-K398-P-01:biological",
-        "from": "FH-K398-P-02",
-        "to": "FH-K398-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정유라-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K398-P-03:FH-K398-P-02:biological",
-        "from": "FH-K398-P-03",
-        "to": "FH-K398-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정유라-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K398-M-01:K398:biological",
-        "from": "FH-K398-M-01",
-        "to": "K398",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정유라-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K398-M-02:FH-K398-M-01:biological",
-        "from": "FH-K398-M-02",
-        "to": "FH-K398-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정유라-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K398-M-03:FH-K398-M-02:biological",
-        "from": "FH-K398-M-03",
-        "to": "FH-K398-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정유라-p2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1005-M-01:K1005:biological",
-        "from": "FH-K1005-M-01",
-        "to": "K1005",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1005-M-02:FH-K1005-M-01:biological",
-        "from": "FH-K1005-M-02",
-        "to": "FH-K1005-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1005-M-03:FH-K1005-M-02:biological",
-        "from": "FH-K1005-M-03",
-        "to": "FH-K1005-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1005-X정일환-01:FH-EX-JEONG-ILHWAN:biological",
-        "from": "FH-K1005-X정일환-01",
-        "to": "FH-EX-JEONG-ILHWAN",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1005-X정일환-02:FH-K1005-X정일환-01:biological",
-        "from": "FH-K1005-X정일환-02",
-        "to": "FH-K1005-X정일환-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Core-Characters.json",
-            "anchor": "정서온-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "K1005:K398:household",
-        "from": "K1005",
-        "to": "K398",
-        "type": "household",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Relations.json",
-            "anchor": "관계-원장-table3"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c815-c9c4-c8fc-912d",
+    "name": "진주 정씨",
+    "crest": "clan-crests/c815-c9c4-c8fc-912d.svg"
   },
-  "proseContacts": [
-    {
-      "recipientId": "K422",
-      "recipientName": "노세람",
-      "basis": "노세람의 기존 관계 기록은 다음과 같다. 정유라의 감사 방향과 맞되, 서고 열쇠는 따로 둔다.",
-      "sourceRef": {
-        "path": "lore/characters/Cast-State-16.json",
-        "anchor": "인물-노세람-p5"
-      }
-    }
-  ],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "날마다 셋째 교대 전, 정유라는 그날 경계 너머 동작의 나루지기 최지우와 맞춘 건넘의 몫을 셈표에 숫자로 남긴다. 서초 곁집은 방배·내방 쪽 대피소에서 나와 첫 세례 무렵 몸을 먼저 내놓은 집안이라, 서른여섯 살 곁집장인 그는 고속터미널에서 자유도시 작업장 말투를 섞어 숫자로 약속한다. 부위는 셋이고, 같은 진주 정씨인 맞수 정호준이 세례 집도의 손으로 그 자리를 넘보고 있어 서초의 피와 쇠 다툼은 한 씨족 안에서 벌어진다. 정서온과는 한 가구로 기록되어 있지만, 그는 잠실이 아니라 고속터미널에서 잔다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "서초 곁집장",
+    "품계": "곁집장",
+    "생업": "곁집 통솔",
+    "일하는 역": "고속터미널역",
+    "잠자는 역": "고속터미널역",
+    "가구": "정서온 가구의 가구원",
+    "부위 수": 3
+  },
+  "sections": {
+    "생애": "날마다 셋째 교대 전, 정유라는 그날 경계 너머 동작의 나루지기 최지우와 맞춘 건넘의 몫을 셈표에 숫자로 남긴다. 서초 곁집은 방배·내방 쪽 대피소에서 나와 첫 세례 무렵 몸을 먼저 내놓은 집안이라, 서른여섯 살 곁집장인 그는 고속터미널에서 자유도시 작업장 말투를 섞어 숫자로 약속한다. 부위는 셋이고, 같은 진주 정씨인 맞수 정호준이 세례 집도의 손으로 그 자리를 넘보고 있어 서초의 피와 쇠 다툼은 한 씨족 안에서 벌어진다. 정서온과는 한 가구로 기록되어 있지만, 그는 잠실이 아니라 고속터미널에서 잔다.",
+    "관직": "직함 서초 곁집장. 직위 서초 곁집장 · 아크. 품계 곁집장. 일하는 역 고속터미널역."
+  },
+  "values": {
+    "권위": -15,
+    "개방": 15,
+    "무력": -30,
+    "물질": -50,
+    "공동": 30,
+    "원칙": 20,
+    "공개": -5,
+    "자격": -5,
+    "분산": 20,
+    "변혁": 35
+  },
+  "desire": {
+    "갈망": 20,
+    "독점": -20,
+    "위험": -10,
+    "과시": -20,
+    "지속": 30,
+    "지향": "유동",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-1005",
+    "role": "member",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "정유라",
+        "type": "지휘",
+        "to": "고예진",
+        "basis": "교주 고예진의 직속"
+      },
+      {
+        "from": "정유라",
+        "type": "경쟁",
+        "to": "정호준",
+        "basis": "같은 진주 정씨의 맞수 정호준이 세례 집도의 손으로 서초 곁집장 자리를 넘본다"
+      },
+      {
+        "from": "정유라",
+        "type": "계약",
+        "to": "최지우",
+        "basis": "동작의 나루지기 최지우와 날마다 경계 건넘의 몫을 숫자로 맞춘다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "정서온",
+        "type": "친족",
+        "to": "정유라",
+        "basis": "정씨 분가의 먼 친척으로 한 가구에 기록되어 있다. 정서온은 잠실에, 정유라는 고속터미널에 따로 잔다"
+      },
+      {
+        "from": "진채온",
+        "type": "지휘",
+        "to": "정유라",
+        "basis": "서초 곁집장 정유라의 직속"
+      },
+      {
+        "from": "송하율",
+        "type": "지휘",
+        "to": "정유라",
+        "basis": "서초 곁집장 정유라의 직속"
+      },
+      {
+        "from": "서진아",
+        "type": "지휘",
+        "to": "정유라",
+        "basis": "서초 곁집장 정유라의 직속"
+      },
+      {
+        "from": "용모",
+        "type": "지휘",
+        "to": "정유라",
+        "basis": "서초 곁집장 정유라의 직속"
+      },
+      {
+        "from": "모복",
+        "type": "지휘",
+        "to": "정유라",
+        "basis": "서초 곁집장 정유라의 직속"
+      },
+      {
+        "from": "용두봉",
+        "type": "지휘",
+        "to": "정유라",
+        "basis": "서초 곁집장 정유라의 직속"
+      },
+      {
+        "from": "최지우",
+        "type": "경쟁",
+        "to": "정유라",
+        "basis": "동작–서초 땅 경계의 세 건널목에 양쪽이 세울 지킴의 수를 두고 맞선다"
+      },
+      {
+        "from": "정호준",
+        "type": "경쟁",
+        "to": "정유라",
+        "basis": "같은 진주 정씨 안에서 서초 곁집장 자리를 두고 맞선다. 정유라는 핏줄의 차례를, 정호준은 자기 손으로 맞춘 세례의 수를 내세운다"
+      },
+      {
+        "from": "임시온",
+        "type": "맹세",
+        "to": "정유라",
+        "basis": "정유라가 그를 호위장으로 고르던 날 고속터미널 정비대 앞에서 그에게 맹세했다"
+      },
+      {
+        "from": "김보람",
+        "type": "맹세",
+        "to": "정유라",
+        "basis": "서초 곁집장 정유라의 곁에서 핏줄의 차례를 지키겠다는 맹세"
+      },
+      {
+        "from": "송하율",
+        "type": "맹세",
+        "to": "정유라",
+        "basis": "서초 곁집장 정유라에게 맹세하고 본역 고속터미널의 대피소를 받았다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K1018",
+    "name": "고예진",
+    "courtId": "court:K1018",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K398",
+    "members": [
+      {
+        "personId": "K068",
+        "name": "진채온"
+      },
+      {
+        "personId": "K272",
+        "name": "송하율"
+      },
+      {
+        "personId": "K274",
+        "name": "서진아"
+      },
+      {
+        "personId": "K280",
+        "name": "용모"
+      },
+      {
+        "personId": "K286",
+        "name": "모복"
+      },
+      {
+        "personId": "K288",
+        "name": "용두봉"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 13,
-        "effective": 13
+      "diplomacy": {
+        "base": 10,
+        "effective": 10
       },
-      "strategy": {
-        "base": 12,
-        "effective": 12
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 15,
-        "effective": 15
+      "stewardship": {
+        "base": 9,
+        "effective": 9
       },
-      "management": {
-        "base": 13,
-        "effective": 13
-      },
-      "insight": {
-        "base": 14,
-        "effective": 14
-      },
-      "learning": {
-        "base": 14,
-        "effective": 14
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "intrigue": {
         "base": 8,
         "effective": 8
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "k398-exit-audit",
-        "name": {
-          "ko": "종료조건 감사",
-          "en": "Exit-clause auditing"
-        },
-        "rating": 75
+        "id": "v3-person-0399-border-tally",
+        "name": "경계 건넘 셈",
+        "rating": 72
       }
     ],
     "traits": [
       {
-        "id": "k398-trait-1",
-        "name": {
-          "ko": "나갈 조건부터",
-          "en": "Exit conditions first"
-        },
-        "description": {
-          "ko": "계약의 종료조건과 감사권을 먼저 확보한다.",
-          "en": "Secures exit terms and audit rights first."
-        },
-        "behavior": {
-          "ko": "계약의 종료조건과 감사권을 먼저 확보한다.",
-          "en": "Secures exit terms and audit rights first."
-        },
-        "stress": {
-          "ko": "세 강국 계약이 겹쳐도 종료조건을 남기고 나머지를 봉한다.",
-          "en": "Keeps exit conditions and seals the rest when three powers’ contracts overlap."
-        },
-        "relationship": {
-          "ko": "장세화의 호송에 협의를 싣고 윤서린과 인준을 다툰다.",
-          "en": "Carries agreements through Jang Sehwa’s escort and disputes ratification with Yun Seorin."
-        },
+        "id": "v3-person-0399-trait-1",
+        "name": "숫자로 하는 약속",
+        "description": "경계의 약속을 말이 아니라 셈표의 숫자로 남긴다.",
+        "behavior": "맞춘 수를 그날 셋째 교대 전에 적어 둔다.",
+        "stress": "수가 맞지 않으면 다음 날 경계로 직접 나간다.",
+        "relationship": "정호준의 손은 인정하지만 그 손이 자리를 정한다고는 보지 않는다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "동시에 도착한 세 급수계약의 종료조건을 대조하고 감사권을 한 장에 남겼다. 조합원의 직접선거로 맡은 위원장직은 파벌 갈등을 없애지 않는다. 계약을 끝낼 조건을 지키는 힘과 국가 인준권은 구분된다.",
-      "en": "She compared exit terms across three simultaneous water contracts and retained audit rights in one sheet. Direct election by members does not erase factional conflict. Defending exit conditions is distinct from state ratification authority."
-    },
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -862,7 +267,7 @@
         {
           "id": "right-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "head",
@@ -880,184 +285,219 @@
   },
   "confirmedHoldings": [
     {
-      "id": "holding:capital-s16",
+      "id": "holding:v3:duchy:11650",
       "name": {
-        "ko": "수서역 직영지"
+        "ko": "서초구 공작령"
       },
       "holderPersonId": "K398",
-      "directLiegePersonId": null,
-      "stateId": "S16",
-      "stationRef": {
-        "stationId": "수서",
-        "stationName": "수서"
-      },
-      "adminRefs": [],
+      "directLiegePersonId": "K1018",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1165051000",
+          "name": "서초1동"
+        },
+        {
+          "id": "region:1165052000",
+          "name": "서초2동"
+        },
+        {
+          "id": "region:1165053000",
+          "name": "서초3동"
+        },
+        {
+          "id": "region:1165053100",
+          "name": "서초4동"
+        },
+        {
+          "id": "region:1165054000",
+          "name": "잠원동"
+        },
+        {
+          "id": "region:1165055000",
+          "name": "반포본동"
+        },
+        {
+          "id": "region:1165056000",
+          "name": "반포1동"
+        },
+        {
+          "id": "region:1165057000",
+          "name": "반포2동"
+        },
+        {
+          "id": "region:1165058000",
+          "name": "반포3동"
+        },
+        {
+          "id": "region:1165058100",
+          "name": "반포4동"
+        },
+        {
+          "id": "region:1165059000",
+          "name": "방배본동"
+        },
+        {
+          "id": "region:1165060000",
+          "name": "방배1동"
+        },
+        {
+          "id": "region:1165061000",
+          "name": "방배2동"
+        },
+        {
+          "id": "region:1165062000",
+          "name": "방배3동"
+        },
+        {
+          "id": "region:1165062100",
+          "name": "방배4동"
+        },
+        {
+          "id": "region:1165065100",
+          "name": "양재1동"
+        },
+        {
+          "id": "region:1165065200",
+          "name": "양재2동"
+        },
+        {
+          "id": "region:1165066000",
+          "name": "내곡동"
+        }
+      ],
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11650",
       "geometrySource": null,
-      "territorialScale": null,
       "formalTitleRank": null
     }
   ],
-  "clan": {
-    "id": "c815-c9c4-c8fc-912d",
-    "name": "진주 정씨",
-    "crest": "clan-crests/c815-c9c4-c8fc-912d.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": true,
-  "values": {
-    "권위": -40,
-    "개방": 30,
-    "무력": -40,
-    "물질": 0,
-    "공동": 10,
-    "원칙": 30,
-    "공개": 40,
-    "자격": 30,
-    "분산": 50,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 20,
-    "독점": -20,
-    "위험": -10,
-    "과시": -20,
-    "지속": 30,
-    "지향": "유동",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "계약감사관",
-    "소속": "정동노총",
-    "공동체 역할": "위원장",
-    "직무": "정동노총 위원장"
-  },
-  "sections": {
-    "생애": "2090-01-26에 태어난 정유라는 영구 겨울의 시청역 조합 작업장에서 정동노총 위원장 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 정유라는 소공동의 시청역 조합 작업장에서 정동노총 위원장 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n- 정유라는 수서동의 수서역 업무 기준점에서 정동노총 위원장 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n수서역 본부와 조합 작업장의 계약·감사·중재를 맡는 조합원들이다. 위원장은 전 조합원 직선으로 뽑고, 파벌 간 표결 갈등이 일상 업무에도 번진다."
-  },
-  "biography": "정유라는 영구 겨울의 시청역 조합 작업장에서 정동노총 위원장 업무 기록과 공개 표결 서명을 먼저 대조한다. 급수·통행·계약 일정이 겹치는 날에는 접수 시각과 인계 순서를 같은 장부에 남긴다.\n\n- 생업: 계약감사관\n- 소속: 정동노총\n- 공동체 역할: 위원장\n- 직무: 정동노총 위원장\n**생애.** 2090-01-26에 태어난 정유라는 영구 겨울의 시청역 조합 작업장에서 정동노총 위원장 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 정유라는 소공동의 시청역 조합 작업장에서 정동노총 위원장 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n- 정유라는 수서동의 수서역 업무 기준점에서 정동노총 위원장 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n수서역 본부와 조합 작업장의 계약·감사·중재를 맡는 조합원들이다. 위원장은 전 조합원 직선으로 뽑고, 파벌 간 표결 갈등이 일상 업무에도 번진다.",
-  "sources": [
-    "Cast-State-16",
-    "Core-Characters"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": [
-      {
-        "from": "정서온",
-        "type": "친족",
-        "to": "정유라",
-        "basis": "정씨 분가의 먼 친척"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:dong:1165055000",
+      "name": {
+        "ko": "반포본동"
       },
-      {
-        "from": "임겨레",
-        "type": "계약",
-        "to": "정유라",
-        "basis": "손실보상 문장을 동부 보호계약에 끌어들임"
+      "holderPersonId": "K068",
+      "directLiegePersonId": "K398",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1165055000",
+          "name": "반포본동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "진채온",
+      "holderRoute": "/people/person-0068"
+    },
+    {
+      "id": "holding:v3:dong:1165058100",
+      "name": {
+        "ko": "반포4동"
       },
-      {
-        "from": "하윤목",
-        "type": "계약",
-        "to": "정유라",
-        "basis": "손실보상 조항을 관문 세율에 넣으려 함"
+      "holderPersonId": "K272",
+      "directLiegePersonId": "K398",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1165058100",
+          "name": "반포4동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "송하율",
+      "holderRoute": "/people/person-0273"
+    },
+    {
+      "id": "holding:v3:dong:1165053100",
+      "name": {
+        "ko": "서초4동"
       },
-      {
-        "from": "하서진",
-        "type": "지휘",
-        "to": "정유라",
-        "basis": "표준 문장을 계약 서기로 정서"
+      "holderPersonId": "K274",
+      "directLiegePersonId": "K398",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1165053100",
+          "name": "서초4동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "서진아",
+      "holderRoute": "/people/person-0275"
+    },
+    {
+      "id": "holding:v3:dong:1165065100",
+      "name": {
+        "ko": "양재1동"
       },
-      {
-        "from": "곽은재",
-        "type": "지휘",
-        "to": "정유라",
-        "basis": "감사권을 실무로 집행"
+      "holderPersonId": "K280",
+      "directLiegePersonId": "K398",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1165065100",
+          "name": "양재1동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "용모",
+      "holderRoute": "/people/person-0281"
+    },
+    {
+      "id": "holding:v3:dong:1165053000",
+      "name": {
+        "ko": "서초3동"
       },
-      {
-        "from": "심유리",
-        "type": "지휘",
-        "to": "정유라",
-        "basis": "약국 회의를 사회"
+      "holderPersonId": "K286",
+      "directLiegePersonId": "K398",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1165053000",
+          "name": "서초3동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "모복",
+      "holderRoute": "/people/person-0287"
+    },
+    {
+      "id": "holding:v3:dong:1165056000",
+      "name": {
+        "ko": "반포1동"
       },
-      {
-        "from": "장필규",
-        "type": "경쟁",
-        "to": "정유라",
-        "basis": "종료 조건 문구를 공동교섭과 다툼"
-      },
-      {
-        "from": "장우석",
-        "type": "계약",
-        "to": "정유라",
-        "basis": "종료 조건 문장을 감사 원장에 참고"
-      },
-      {
-        "from": "최은재",
-        "type": "계약",
-        "to": "정유라",
-        "basis": "기술공유 문장을 인증 조항에 끌어들임"
-      },
-      {
-        "from": "강예준",
-        "type": "경쟁",
-        "to": "정유라",
-        "basis": "공동교섭 인준 청구를 고의로 늦춤"
-      },
-      {
-        "from": "천늘우",
-        "type": "계약",
-        "to": "정유라",
-        "basis": "정유라의 표준 서식을 원판 제목으로 남긴다"
-      },
-      {
-        "from": "천늘샘",
-        "type": "계약",
-        "to": "정유라",
-        "basis": "정유라의 교차검증에는 복종하되 은폐 배전은 거부한다"
-      },
-      {
-        "from": "섭도윤",
-        "type": "계약",
-        "to": "정유라",
-        "basis": "정유라의 공동교섭 통지를 봉인 상태로 나르고"
-      },
-      {
-        "from": "엘레나 모로조바",
-        "type": "계약",
-        "to": "정유라",
-        "basis": "정유라의 공동교섭 사절을 먼저 태우며"
-      },
-      {
-        "from": "추보람",
-        "type": "계약",
-        "to": "정유라",
-        "basis": "정유라의 공동교섭 사절에 식량 칸을 붙이며"
-      },
-      {
-        "from": "단유진",
-        "type": "계약",
-        "to": "정유라",
-        "basis": "정유라의 공동교섭 좌석에 시민권 문안을 올리며"
-      },
-      {
-        "from": "초태온",
-        "type": "맹세",
-        "to": "정유라",
-        "basis": "정유라의 공동교섭 호송을 관문에서 증언하고"
-      },
-      {
-        "from": "창고운",
-        "type": "계약",
-        "to": "정유라",
-        "basis": "정유라의 공동교섭에 청과 조항을 정서하고"
-      },
-      {
-        "from": "근주하",
-        "type": "계약",
-        "to": "정유라",
-        "basis": "정유라의 공동교섭 문안을 정서하고"
-      }
-    ]
-  }
+      "holderPersonId": "K288",
+      "directLiegePersonId": "K398",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1165056000",
+          "name": "반포1동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "용두봉",
+      "holderRoute": "/people/person-0289"
+    }
+  ]
 }

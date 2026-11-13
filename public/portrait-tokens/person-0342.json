@@ -3,27 +3,27 @@
   "personId": "person-0342",
   "characterId": "K341",
   "name": "탁은솔",
-  "stateId": "S13",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "가짜 약 유통 증인"
+    "role": "기능조 조장 · 돌곶이역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "very short buzz-cut hair",
-    "upper": "oxblood buttoned wool vest over a long-sleeved collared shirt",
-    "outfit": "oxblood buttoned wool vest over a long-sleeved collared shirt",
+    "upper": "grey quilted work suit with a trade tag sewn on the left chest",
+    "outfit": "grey quilted work suit with a trade tag sewn on the left chest",
     "palette": [
-      "oxblood",
-      "khaki",
-      "charcoal"
+      "slate grey",
+      "charcoal",
+      "rust"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "khaki wool breeches with buttoned cuffs",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "quilted synthetic trousers",
+    "footwear": "felt-lined synthetic rubber boots",
+    "accessories": "sewn trade tag and a pump wrench hanging from a belt loop"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "flat cloth cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "oxblood buttoned wool vest over a long-sleeved collared shirt",
+        "value": "grey quilted work suit with a trade tag sewn on the left chest",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "khaki wool breeches with buttoned cuffs",
+        "value": "quilted synthetic trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt-lined synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "high quilted collar with a cloth face covering",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "sewn trade tag and a pump wrench hanging from a belt loop",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "grey cloth and dull steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "cloth, steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "sewn on the chest and hung at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "rectangular tag and long open-ended wrench",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 탁은솔, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: light warm beige. upper garment: oxblood buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, khaki, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 탁은솔, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: light warm beige. headwear: flat cloth cap; upper garment: grey quilted work suit with a trade tag sewn on the left chest; neckline: high quilted collar with a cloth face covering. accessories: sewn trade tag and a pump wrench hanging from a belt loop; worn as sewn on the chest and hung at the belt. color palette: slate grey, charcoal, rust. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 탁은솔, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: light warm beige; average adult male height. upper garment: oxblood buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: khaki wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, khaki, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 탁은솔, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: light warm beige; average adult male height. headwear: flat cloth cap; upper garment: grey quilted work suit with a trade tag sewn on the left chest; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: sewn trade tag and a pump wrench hanging from a belt loop; worn as sewn on the chest and hung at the belt. color palette: slate grey, charcoal, rust. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 탁은솔, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: light warm beige; average adult male height. upper garment: oxblood buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: khaki wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, khaki, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 탁은솔, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: light warm beige; average adult male height. headwear: flat cloth cap; upper garment: grey quilted work suit with a trade tag sewn on the left chest; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: sewn trade tag and a pump wrench hanging from a belt loop; worn as sewn on the chest and hung at the belt. color palette: slate grey, charcoal, rust. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 탁은솔, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: light warm beige; average adult male height. upper garment: oxblood buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: khaki wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, khaki, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 탁은솔, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: light warm beige; average adult male height. headwear: flat cloth cap; upper garment: grey quilted work suit with a trade tag sewn on the left chest; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: sewn trade tag and a pump wrench hanging from a belt loop; worn as sewn on the chest and hung at the belt. color palette: slate grey, charcoal, rust. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 탁은솔, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: light warm beige; average adult male height. upper garment: oxblood buttoned wool vest over a long-sleeved collared shirt; neckline: buttoned shirt collar; lower garment: khaki wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: oxblood, khaki, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 탁은솔, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; round dark brown eyes; low and heavy eyebrows; nose: straight bridge with a soft tip; mouth: small closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: light warm beige; average adult male height. headwear: flat cloth cap; upper garment: grey quilted work suit with a trade tag sewn on the left chest; neckline: high quilted collar with a cloth face covering; lower garment: quilted synthetic trousers; footwear: felt-lined synthetic rubber boots. accessories: sewn trade tag and a pump wrench hanging from a belt loop; worn as sewn on the chest and hung at the belt. color palette: slate grey, charcoal, rust. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

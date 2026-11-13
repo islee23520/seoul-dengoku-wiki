@@ -1,492 +1,120 @@
 {
   "id": "person-0310",
   "name": "용봉",
-  "title": "망우 환승 승강장 거점장",
-  "position": "망우 환승 승강장 거점장",
+  "title": "장부 서기",
+  "position": "장부 서기 · 망우역",
   "characterId": "K309",
-  "rank": "서기",
-  "commonTier": "T4",
-  "occupation": "승강장 대기열·중증도 표 게시",
+  "rank": "등재민",
+  "commonTier": "T5",
+  "occupation": "장부 기재",
   "gender": "남성",
   "stage": "S2",
-  "state": "S12",
-  "stateName": "신내운수",
-  "sourceRoute": "/world/Cast-State-12#인물-용봉",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0310",
   "birthDate": "2096-10-09",
   "birthday": "10-09",
   "age": 30,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-12.json#/content/17"
-  ],
-  "familyTree": {
-    "personId": "K309",
-    "nodes": [
-      {
-        "id": "K309",
-        "personId": "K309",
-        "kind": "person",
-        "name": "용봉",
-        "birthDate": "2096-10-09",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K309"
-          },
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-용봉-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 망우 환승 승강장 거점장 자리는 무표 출발 열차 저지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-용봉-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0310"
-      },
-      {
-        "id": "FH-K309-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "용승연",
-        "lineage": {
-          "surname": "용",
-          "bongwan": "홍천",
-          "clan": "c6a9-d64d-cc9c"
-        },
-        "birthDate": "2066-10-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-용봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2104,
-            "summary": "용승연은 신내 환승 당직에서 승강장 대기열·중증도 표 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-용봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K309-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "용승정",
-        "lineage": {
-          "surname": "용",
-          "bongwan": "홍천",
-          "clan": "c6a9-d64d-cc9c"
-        },
-        "birthDate": "2036-10-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-용봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "용승정은 신내 환승 당직에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-용봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K309-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "용승아",
-        "lineage": {
-          "surname": "용",
-          "bongwan": "홍천",
-          "clan": "c6a9-d64d-cc9c"
-        },
-        "birthDate": "2006-10-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-용봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "용승아는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-용봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K309-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "송현온",
-        "birthDate": "2066-10-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-용봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2104,
-            "summary": "송현온은 신내 환승 당직에서 승강장 대기열·중증도 표 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-용봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K309-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "조현미",
-        "birthDate": "2036-10-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-용봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2074,
-            "summary": "조현미는 신내 환승 당직에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-용봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K309-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "김준준",
-        "birthDate": "2006-10-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-용봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "김준준은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-12.json",
-                "anchor": "인물-용봉-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K309-P-01:K309:biological",
-        "from": "FH-K309-P-01",
-        "to": "K309",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-용봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K309-P-02:FH-K309-P-01:biological",
-        "from": "FH-K309-P-02",
-        "to": "FH-K309-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-용봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K309-P-03:FH-K309-P-02:biological",
-        "from": "FH-K309-P-03",
-        "to": "FH-K309-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-용봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K309-M-01:K309:biological",
-        "from": "FH-K309-M-01",
-        "to": "K309",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-용봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K309-M-02:FH-K309-M-01:biological",
-        "from": "FH-K309-M-02",
-        "to": "FH-K309-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-용봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K309-M-03:FH-K309-M-02:biological",
-        "from": "FH-K309-M-03",
-        "to": "FH-K309-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-12.json",
-            "anchor": "인물-용봉-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c6a9-d64d-cc9c",
+    "name": "홍천 용씨",
+    "crest": "clan-crests/c6a9-d64d-cc9c.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "용봉은 중랑구 국회의원 집안의 장부 서기로 기재돼 있고, 서른 살이다. 망우역 깊은 층 집안 거처의 곳간에서 일하며, 상봉역 장터에서 집안 곳간으로 들어오는 짐승 고기와 가죽을 마리 수와 장 수로 한 줄씩 적는다. 망우 묘역으로 가는 매장조가 집안 썰매를 빌려 가는 날이면, 그는 내준 시각과 돌아온 시각을 같은 줄에 나란히 적어 그 장을 강예준 의원에게 따로 올린다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "장부 서기",
+    "품계": "등재민",
+    "생업": "장부 기재",
+    "일하는 역": "망우역",
+    "잠자는 역": "망우역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "용봉은 중랑구 국회의원 집안의 장부 서기로 기재돼 있고, 서른 살이다. 망우역 깊은 층 집안 거처의 곳간에서 일하며, 상봉역 장터에서 집안 곳간으로 들어오는 짐승 고기와 가죽을 마리 수와 장 수로 한 줄씩 적는다. 망우 묘역으로 가는 매장조가 집안 썰매를 빌려 가는 날이면, 그는 내준 시각과 돌아온 시각을 같은 줄에 나란히 적어 그 장을 강예준 의원에게 따로 올린다.",
+    "관직": "직함 장부 서기. 직위 장부 서기 · 망우역. 품계 등재민. 일하는 역 망우역."
+  },
+  "values": {
+    "권위": 25,
+    "개방": -20,
+    "무력": 10,
+    "물질": -10,
+    "공동": 30,
+    "원칙": 30,
+    "공개": -5,
+    "자격": 40,
+    "분산": -10,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": -10,
+    "위험": 10,
+    "과시": -15,
+    "지속": -10,
+    "지향": "유동",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0310",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "용봉",
+        "type": "지휘",
+        "to": "강예준",
+        "basis": "중랑구 국회의원 강예준의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K145",
+    "name": "강예준",
+    "courtId": "court:K145",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 8,
-        "effective": 8
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 6,
         "effective": 6
       },
-      "negotiation": {
-        "base": 6,
-        "effective": 6
+      "martial": {
+        "base": 3,
+        "effective": 3
       },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 9,
-        "effective": 9
-      },
-      "learning": {
+      "intrigue": {
         "base": 7,
         "effective": 7
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
       },
       "prowess": {
         "base": 3,
         "effective": 3
-      },
-      "endurance": {
-        "base": 7,
-        "effective": 7
       }
     },
-    "skills": [
-      {
-        "id": "k309-platform-queue-allocation",
-        "name": {
-          "ko": "승강장 줄 배치",
-          "en": "Platform queue allocation"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k309-priority",
-        "name": {
-          "ko": "사람 칸의 구분",
-          "en": "Distinguishes people queues"
-        },
-        "description": {
-          "ko": "용봉은 들것과 하역 순서를 승강장에서 나눈다. 무기 상자 소문은 실제 적재 확인으로 바꾸지 않는다.",
-          "en": "Yongbong separates stretcher and unloading order at the platform. Weapon-box rumors are not confirmed loading."
-        },
-        "behavior": {
-          "ko": "승강장 줄과 중증도 표를 같은 칠판에 붙이고, 무장 대기열은 심사관 입회 없이 세우지 않는다.",
-          "en": "Office. Rank: clerk. Title: Mangu transfer platform outpost chief. He pasted the platform queue and the severity table on one chalkboard and stood no armed waiting line without the examiner's attendance."
-        },
-        "stress": {
-          "ko": "북한산보국문 남하 행렬이 쌓인 승강장이 군수 하역으로 오인되는 것.",
-          "en": "Fear. That the platform piled with the southward column of Bukhansan Bogukmun would be mistaken for munitions unloading."
-        },
-        "relationship": {
-          "ko": "전미리의 들것 순서를 승강장에서 받고, 복봉의 하역 순서와 줄을 나눈다. 장세화의 중립 호송 지시를 승강장 벽에 붙인다.",
-          "en": "Relations. Received Jeon Miri's stretcher order at the platform and split the queue with Bok Bong's unloading order. Pasted Jang Sehwa's neutrality declaration on the platform wall."
-        },
-        "effects": []
-      },
-      {
-        "id": "k309-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 서기. 직함은 망우 환승 승강장 거점장. 승강장 줄과 중증도 표를 같은 칠판에 붙이고, 무장 대기열은 심사관 입회 없이 세우지 않는다.",
-          "en": "Office. Rank: clerk. Title: Mangu transfer platform outpost chief. He pasted the platform queue and the severity table on one chalkboard and stood no armed waiting line without the examiner's attendance."
-        },
-        "stress": {
-          "ko": "공포. 북한산보국문 남하 행렬이 쌓인 승강장이 군수 하역으로 오인되는 것.",
-          "en": "Fear. That the platform piled with the southward column of Bukhansan Bogukmun would be mistaken for munitions unloading."
-        },
-        "relationship": {
-          "ko": "관계. 전미리의 들것 순서를 승강장에서 받고, 복봉의 하역 순서와 줄을 나눈다. 장세화의 중립 호송 지시를 승강장 벽에 붙인다.",
-          "en": "Relations. Received Jeon Miri's stretcher order at the platform and split the queue with Bok Bong's unloading order. Pasted Jang Sehwa's neutrality declaration on the platform wall."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "용봉은 들것과 하역 순서를 승강장에서 나눈다. 무기 상자 소문은 실제 적재 확인으로 바꾸지 않는다.",
-      "en": "Yongbong separates stretcher and unloading order at the platform. Weapon-box rumors are not confirmed loading."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,72 +152,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c6a9-d64d-cc9c",
-    "name": "홍천 용씨",
-    "crest": "clan-crests/c6a9-d64d-cc9c.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -20,
-    "개방": 35,
-    "무력": -25,
-    "물질": -5,
-    "공동": 25,
-    "원칙": 10,
-    "공개": 20,
-    "자격": 25,
-    "분산": 40,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": -10,
-    "위험": 10,
-    "과시": -15,
-    "지속": -10,
-    "지향": "유동",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "승강장 대기열·중증도 표 게시",
-    "소속": "신내운수",
-    "품계": "서기",
-    "직함": "망우 환승 승강장 거점장",
-    "가치관": "권위 −20 | 개방 35 | 무력 −25 | 물질 −5 | 공동 25 | 원칙 10 | 공개 20 | 자격 25 | 분산 40 | 변혁 5",
-    "욕망": "갈망 10 | 독점 −10 | 위험 10 | 과시 −15 | 지속 −10 | 지향 유동 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2096-10-09에 태어났다. 신내 환승 당직에서 자랐다. 2126년 개막에는 망우 환승 승강장 거점장 당직을 맡으며, 직위 인수 기록에는 무표 출발 열차 저지로 열렸다이 남아 있다.\n- 상봉1동의 망우 환승 대기열·환자·화물 구분·중량·송장·시세·공개 증언 기록대가 용봉의 승강장 대기열·중증도 표 게시 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
-    "관직": "품계 서기. 직함은 망우 환승 승강장 거점장. 승강장 줄과 중증도 표를 같은 칠판에 붙이고, 무장 대기열은 심사관 입회 없이 세우지 않는다.",
-    "일화": "북한산보국문 남하 행렬이 신내 승강장에 쌓이자 망우 쪽 줄까지 무기가 든 상자처럼 소문이 퍼졌다.",
-    "관계": "전미리의 들것 순서를 승강장에서 받고, 복봉의 하역 순서와 줄을 나눈다. 장세화의 중립 호송 지시를 승강장 벽에 붙인다.",
-    "야망": "망우 승강장을 중립 환승의 얼굴로 남겨 노선 면허 밖의 호송료 창구를 승강장에 열지 못하게 하려 한다.",
-    "공포": "북한산보국문 남하 행렬이 쌓인 승강장이 군수 하역으로 오인되는 것.",
-    "개입": "승강장 화물을 공개 검수하거나, 환자 줄을 군수 대기열과 분리할 수 있다."
-  },
-  "biography": "2096-10-09생인 용봉은 말단 노선의 지연을 모욕처럼 기억하고, 승강장을 하역장으로 부르는 상인을 마이크 없이 내려보낸다. 환자 줄과 화물 줄을 한눈에 나눈다.\n\n- 생업: 승강장 대기열·중증도 표 게시\n- 소속: 신내운수\n- 품계: 서기\n- 직함: 망우 환승 승강장 거점장\n**생애.** 2096-10-09에 태어났다. 신내 환승 당직에서 자랐다. 2126년 개막에는 망우 환승 승강장 거점장 당직을 맡으며, 직위 인수 기록에는 무표 출발 열차 저지로 열렸다이 남아 있다.\n- 상봉1동의 망우 환승 대기열·환자·화물 구분·중량·송장·시세·공개 증언 기록대가 용봉의 승강장 대기열·중증도 표 게시 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 서기. 직함은 망우 환승 승강장 거점장. 승강장 줄과 중증도 표를 같은 칠판에 붙이고, 무장 대기열은 심사관 입회 없이 세우지 않는다.\n\n**일화.** 북한산보국문 남하 행렬이 신내 승강장에 쌓이자 망우 쪽 줄까지 무기가 든 상자처럼 소문이 퍼졌다.\n\n**관계.** 전미리의 들것 순서를 승강장에서 받고, 복봉의 하역 순서와 줄을 나눈다. 장세화의 중립 호송 지시를 승강장 벽에 붙인다.\n\n**야망.** 망우 승강장을 중립 환승의 얼굴로 남겨 노선 면허 밖의 호송료 창구를 승강장에 열지 못하게 하려 한다.\n\n**공포.** 북한산보국문 남하 행렬이 쌓인 승강장이 군수 하역으로 오인되는 것.\n\n**개입.** 승강장 화물을 공개 검수하거나, 환자 줄을 군수 대기열과 분리할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 35 | 무력 −25 | 물질 −5 | 공동 25 | 원칙 10 | 공개 20 | 자격 25 | 분산 40 | 변혁 5\n- 욕망: 갈망 10 | 독점 −10 | 위험 10 | 과시 −15 | 지속 −10 | 지향 유동 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-12"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "용봉",
-        "type": "계약",
-        "to": "전미리",
-        "basis": "전미리의 들것 순서를 승강장에서 받고"
-      },
-      {
-        "from": "용봉",
-        "type": "계약",
-        "to": "복봉",
-        "basis": "복봉의 하역 순서와 줄을 나눈다"
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

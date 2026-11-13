@@ -1,391 +1,30 @@
 {
   "id": "person-0998",
   "name": "이일섭",
-  "title": "제1분공방 이씨 가문 후계",
-  "position": "제1분공방 이씨 가문 후계",
+  "title": "관악 공작",
+  "position": "관악 공작 · 제1분공방 이씨 가문 후계",
   "characterId": "K998",
-  "rank": "",
-  "commonTier": "T2",
-  "occupation": "오류2동 제1분공방 업무에 쓰는 밭 경작·곡물 재고 관리",
+  "rank": "공작",
+  "commonTier": "T1",
+  "occupation": "도시 운영",
   "gender": "남성",
-  "stage": "S1",
-  "state": "S02",
-  "stateName": "규격맹",
-  "sourceRoute": "/world/Cast-State-02#인물-이일섭",
+  "stage": "주요",
+  "state": "free-city",
+  "stateName": "자유도시들",
   "detailRoute": "/people/person-0998",
   "birthDate": "2092-04-14",
   "birthday": "04-14",
   "age": 34,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-02.json#/content/710",
-    "lore/characters/Cast-State-02.json#/content/712",
-    "lore/chronology/Century-Annals.json#/content/378",
-    "lore/chronology/Century-Annals.json#/content/508",
-    "lore/chronology/Century-Annals.json#/content/553",
-    "lore/chronology/Century-Annals.json#/content/555",
-    "lore/chronology/Century-Annals.json#/content/580"
-  ],
-  "familyTree": {
-    "personId": "K998",
-    "nodes": [
-      {
-        "id": "K998",
-        "personId": "K998",
-        "kind": "person",
-        "name": "이일섭",
-        "birthDate": "2092-04-14",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K998"
-          },
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-이일섭-p3"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "생애. 제1분공방을 잇는 이씨 가문의 후계다. 2121년 오류2동 공방 업무에서 밭을 일구고 곡물 재고를 맡았다. 밭과 보관 공간은 이 업무에 사용했으며 가문의 영토나 독점 소유는 아니었다. 2123년에는 겨울 배급안을 올리기 전 곡물 재고를 세 차례 다시 세었고, 분공방 부품 대금 일부를 종자로 받자고 규격맹 평의회에 제안하였다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-이일섭-p3"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0998"
-      },
-      {
-        "id": "FH-EX-LEE-SANGGYE",
-        "personId": null,
-        "kind": "historical",
-        "name": "이상계",
-        "lineage": {
-          "surname": "이",
-          "bongwan": "전의",
-          "clan": "c774-c804-c758-674e"
-        },
-        "birthDate": "2062-04-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-hangnyeol.json"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2092,
-            "summary": "이상계는 자녀에게 생활 기록을 건네며 가계의 이름을 이어 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-이일섭-p3"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-EX-LEE-HOGYE",
-        "personId": null,
-        "kind": "historical",
-        "name": "이호계",
-        "lineage": {
-          "surname": "이",
-          "bongwan": "전의",
-          "clan": "c774-c804-c758-674e"
-        },
-        "birthDate": "2032-04-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-hangnyeol.json"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2062,
-            "summary": "이호계는 자녀에게 생활 기록을 건네며 가계의 이름을 이어 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-이일섭-p3"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K998-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최서연",
-        "birthDate": "2062-04-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-이일섭-p3"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2100,
-            "summary": "최서연은 생활권의 공동 거처에서 생활 물자 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-이일섭-p3"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K998-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정서호",
-        "birthDate": "2032-04-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-이일섭-p3"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2070,
-            "summary": "정서호는 생활권의 공동 거처에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-이일섭-p3"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K998-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤민성",
-        "birthDate": "2002-04-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-이일섭-p3"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤민성은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-이일섭-p3"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K998-X이호계-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이서아",
-        "lineage": {
-          "surname": "이",
-          "bongwan": "전의",
-          "clan": "c774-c804-c758-674e"
-        },
-        "birthDate": "2002-04-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-이일섭-p3"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이서아는 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-02.json",
-                "anchor": "인물-이일섭-p3"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-EX-LEE-SANGGYE:K998:biological",
-        "from": "FH-EX-LEE-SANGGYE",
-        "to": "K998",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-hangnyeol.json",
-            "anchor": "/lineage/parents/이일섭"
-          }
-        ]
-      },
-      {
-        "id": "FH-EX-LEE-HOGYE:FH-EX-LEE-SANGGYE:biological",
-        "from": "FH-EX-LEE-HOGYE",
-        "to": "FH-EX-LEE-SANGGYE",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-hangnyeol.json",
-            "anchor": "/lineage/parents/이상계"
-          }
-        ]
-      },
-      {
-        "id": "FH-K998-M-01:K998:biological",
-        "from": "FH-K998-M-01",
-        "to": "K998",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-이일섭-p3"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K998-M-02:FH-K998-M-01:biological",
-        "from": "FH-K998-M-02",
-        "to": "FH-K998-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-이일섭-p3"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K998-M-03:FH-K998-M-02:biological",
-        "from": "FH-K998-M-03",
-        "to": "FH-K998-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-이일섭-p3"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K998-X이호계-01:FH-EX-LEE-HOGYE:biological",
-        "from": "FH-K998-X이호계-01",
-        "to": "FH-EX-LEE-HOGYE",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-02.json",
-            "anchor": "인물-이일섭-p3"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c774-c804-c758-674e",
+    "name": "전의 이씨",
+    "crest": "clan-crests/c774-c804-c758-674e.svg"
   },
-  "proseContacts": [],
-  "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
-  },
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
   "rightsPermissions": {
     "applicability": "real-person",
     "identityBasisRef": "owner-confirmed-identity-20260925",
@@ -403,118 +42,210 @@
       "evidenceRef": "owner-current-subject-permissions-20261003"
     }
   },
+  "biography": "위험한 소식을 들은 이일섭이 맨 먼저 떠올리는 것은 숨을 곳이다. 관악은 대주회가 도장을 묶은 도시라, 앞 공작이 죽은 2121년 대주회는 공작 집안 사람들의 이름값만 판 우물의 깊이로 맞췄고 스물아홉의 이일섭이 집안 안에서 그 자리를 이었다. 관악을 쥔 이씨 집안의 서른네 살 공작인 그는 겁이 많고 결정이 느려서, 밤새 땔감과 섬유의 재고를 세 번 다시 센 뒤에야 이튿날 안을 내놓는다. 세 번째 급수계약을 앞두고 그는 관악 굴착대가 더 파야 할 우물의 미터 수와 그 손시간을 기록을 맡은 손 차예원과 한 줄씩 맞추고 있다. 관악은 이번에도 공작령 대 공작령으로 찍기를 요구하고, 자리주인인 영등포 장주 한재목 앞에 그 장을 처음 내미는 사람이 그다. 먹을 것이 남는 도시가 되면 세상이 조금 나아진다고 그는 믿고, 그 믿음 앞에서만은 물러서지 않는다.",
+  "fields": {
+    "기여자": "[islee23520](https://github.com/islee23520)",
+    "소속": "자유도시들",
+    "직함": "관악 공작",
+    "품계": "공작",
+    "생업": "도시 운영",
+    "일하는 역": "신림역",
+    "잠자는 역": "신림역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "위험한 소식을 들은 이일섭이 맨 먼저 떠올리는 것은 숨을 곳이다. 관악은 대주회가 도장을 묶은 도시라, 앞 공작이 죽은 2121년 대주회는 공작 집안 사람들의 이름값만 판 우물의 깊이로 맞췄고 스물아홉의 이일섭이 집안 안에서 그 자리를 이었다. 관악을 쥔 이씨 집안의 서른네 살 공작인 그는 겁이 많고 결정이 느려서, 밤새 땔감과 섬유의 재고를 세 번 다시 센 뒤에야 이튿날 안을 내놓는다. 세 번째 급수계약을 앞두고 그는 관악 굴착대가 더 파야 할 우물의 미터 수와 그 손시간을 기록을 맡은 손 차예원과 한 줄씩 맞추고 있다. 관악은 이번에도 공작령 대 공작령으로 찍기를 요구하고, 자리주인인 영등포 장주 한재목 앞에 그 장을 처음 내미는 사람이 그다. 먹을 것이 남는 도시가 되면 세상이 조금 나아진다고 그는 믿고, 그 믿음 앞에서만은 물러서지 않는다.",
+    "관직": "직함 관악 공작. 직위 관악 공작 · 제1분공방 이씨 가문 후계. 품계 공작. 일하는 역 신림역."
+  },
+  "values": {
+    "권위": -55,
+    "개방": 55,
+    "무력": -40,
+    "물질": 55,
+    "공동": 5,
+    "원칙": 40,
+    "공개": 50,
+    "자격": 65,
+    "분산": 85,
+    "변혁": 50
+  },
+  "desire": {
+    "갈망": 35,
+    "독점": -25,
+    "위험": -20,
+    "과시": -30,
+    "지속": 70,
+    "지향": "유동",
+    "결합": "계약동거"
+  },
+  "household": {
+    "id": "hh:person-0998",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "이일섭",
+        "type": "경쟁",
+        "to": "한재목",
+        "basis": "세 번째 급수계약의 자리주인. 관악의 공작령 대 공작령 요구와 도장 찍는 차례를 두고 맞선다"
+      },
+      {
+        "from": "이일섭",
+        "type": "계약",
+        "to": "차예원",
+        "basis": "관악의 계약 기록을 맡은 손. 우물을 더 팔 미터 수와 손시간을 함께 맞춘다"
+      },
+      {
+        "from": "이일섭",
+        "type": "계약",
+        "to": "구찬솔",
+        "basis": "구로에서 공구를 나르는 작업조장. 관악 굴착대가 쓸 쇠막대와 날을 구로에서 실어 온다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "최한결",
+        "type": "지휘",
+        "to": "이일섭",
+        "basis": "관악 공작 이일섭의 직속"
+      },
+      {
+        "from": "유세진",
+        "type": "지휘",
+        "to": "이일섭",
+        "basis": "관악 공작 이일섭의 직속"
+      },
+      {
+        "from": "허도담",
+        "type": "지휘",
+        "to": "이일섭",
+        "basis": "관악 공작 이일섭의 직속"
+      },
+      {
+        "from": "제윤",
+        "type": "지휘",
+        "to": "이일섭",
+        "basis": "관악 공작 이일섭의 직속"
+      },
+      {
+        "from": "김나율",
+        "type": "지휘",
+        "to": "이일섭",
+        "basis": "관악 공작 이일섭의 직속"
+      },
+      {
+        "from": "한재목",
+        "type": "경쟁",
+        "to": "이일섭",
+        "basis": "관악의 \"공작령 대 공작령\" 요구를 두고 도장 차례를 다툰다"
+      },
+      {
+        "from": "김나율",
+        "type": "계약",
+        "to": "이일섭",
+        "basis": "저녁마다 이일섭에게 나무조와 굴착대의 장을 소리 내어 읽어 준다"
+      },
+      {
+        "from": "강늘유",
+        "type": "계약",
+        "to": "이일섭",
+        "basis": "강민서가 공작 집안과 맺은 장으로 그 집 장부를 맡았다"
+      }
+    ]
+  },
+  "court": {
+    "id": "court:K998",
+    "members": [
+      {
+        "personId": "K005",
+        "name": "최한결"
+      },
+      {
+        "personId": "K009",
+        "name": "유세진"
+      },
+      {
+        "personId": "K010",
+        "name": "허도담"
+      },
+      {
+        "personId": "person-0016",
+        "name": "제윤"
+      },
+      {
+        "personId": "K031",
+        "name": "김나율"
+      }
+    ]
+  },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 13,
-        "effective": 13
+      "diplomacy": {
+        "base": 10,
+        "effective": 10
       },
-      "strategy": {
-        "base": 17,
-        "effective": 17
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 14,
-        "effective": 14
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "management": {
-        "base": 19,
-        "effective": 23
-      },
-      "insight": {
-        "base": 16,
-        "effective": 16
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 18,
-        "effective": 18
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 8,
-        "effective": 8
-      },
-      "endurance": {
-        "base": 12,
-        "effective": 12
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
         "id": "k998-skill-1",
-        "name": {
-          "ko": "재고 관리",
-          "en": "Inventory management"
-        },
+        "name": "재고 셈",
         "rating": 85
       },
       {
         "id": "k998-skill-2",
-        "name": {
-          "ko": "배급 계획",
-          "en": "Ration planning"
-        },
+        "name": "겨울 배분 계획",
         "rating": 80
+      },
+      {
+        "id": "k998-skill-3",
+        "name": "계약 수치 대조",
+        "rating": 70
       }
     ],
     "traits": [
       {
         "id": "k998-trait-1",
-        "name": {
-          "ko": "장기 준비",
-          "en": "Long preparation"
-        },
-        "description": {
-          "ko": "겨울 배급을 재고와 종자부터 준비한다.",
-          "en": "Prepares winter rations through stocks and seeds first."
-        },
-        "behavior": {
-          "ko": "겨울 배급을 재고와 종자부터 준비한다.",
-          "en": "Prepares winter rations through stocks and seeds first."
-        },
-        "stress": {
-          "ko": "위험 소식에는 재고를 반복 확인하며 결정을 늦춘다.",
-          "en": "Rechecks stocks and delays decisions after dangerous news."
-        },
-        "relationship": {
-          "ko": "평의회에 종자 대금을 제안하고 가신 보고를 직접 대조한다.",
-          "en": "Proposes seed payments to the council and checks retainers’ reports himself."
-        },
-        "effects": [
-          {
-            "ability": "management",
-            "delta": 4
-          }
-        ]
+        "name": "긴 준비",
+        "description": "결정하기 전에 재고와 수치를 먼저 갖춘다.",
+        "behavior": "계약을 앞두면 땔감과 섬유의 재고를 세 번 센다.",
+        "stress": "위험한 소식을 들으면 숨을 곳부터 생각하고 결정을 미룬다.",
+        "relationship": "아랫사람의 보고는 직접 대조해 본 뒤에야 믿는다.",
+        "effects": []
       },
       {
         "id": "k998-trait-2",
-        "name": {
-          "ko": "결정 지연",
-          "en": "Delayed decisions"
-        },
-        "description": {
-          "ko": "결정 전에 장부를 다시 세는 시간이 길다.",
-          "en": "Spends substantial time recounting before deciding."
-        },
-        "behavior": {
-          "ko": "결정 전에 장부를 다시 세는 시간이 길다.",
-          "en": "Spends substantial time recounting before deciding."
-        },
-        "stress": {
-          "ko": "위험 소식을 들으면 먼저 숨을 곳을 생각한다.",
-          "en": "Thinks first of a hiding place on hearing dangerous news."
-        },
-        "relationship": {
-          "ko": "믿는 일에는 물러서지 않으나 배급안의 지연이 협의를 늦춘다.",
-          "en": "Stands firm in his beliefs, though delayed ration plans slow coordination."
-        },
+        "name": "물러서지 않는 믿음",
+        "description": "믿는 일 앞에서는 느려도 물러서지 않는다.",
+        "behavior": "공작령 대 공작령의 도장을 양보하지 않는다.",
+        "stress": "믿음과 재고가 어긋나면 잠을 줄여 다시 센다.",
+        "relationship": "다른 도시 사람에게는 고집으로, 관악 사람에게는 버팀으로 보인다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "겨울 배급안을 올리기 전 곡물 재고를 세 차례 다시 세었고 부품 대금 일부를 종자로 받자고 제안했다. 위험에 대한 두려움과 느린 결정이 있지만 자신이 믿는 먹을거리의 지속에는 물러서지 않는다.",
-      "en": "He counted grain stocks three times before submitting a winter ration plan and proposed accepting seeds for part of the parts payment. Fear and slow decisions coexist with persistence in sustaining food supplies."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -552,170 +283,177 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
+  "confirmedHoldings": [
     {
-      "id": "title:duchy-chungcheong-k998",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
+      "id": "holding:v3:duchy:11620",
+      "name": {
+        "ko": "관악구 공작령"
+      },
       "holderPersonId": "K998",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:kingdom-s02",
-      "personalLieges": [],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-3611025000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K998",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
+      "directLiegePersonId": null,
+      "stateId": "free-city",
+      "adminRefs": [
         {
-          "holdingId": "holding:chungcheong-3611025000",
-          "directLiegePersonId": null
+          "id": "region:1162052500",
+          "name": "보라매동"
+        },
+        {
+          "id": "region:1162054500",
+          "name": "청림동"
+        },
+        {
+          "id": "region:1162056500",
+          "name": "성현동"
+        },
+        {
+          "id": "region:1162057500",
+          "name": "행운동"
+        },
+        {
+          "id": "region:1162058500",
+          "name": "낙성대동"
+        },
+        {
+          "id": "region:1162059500",
+          "name": "청룡동"
+        },
+        {
+          "id": "region:1162060500",
+          "name": "은천동"
+        },
+        {
+          "id": "region:1162061500",
+          "name": "중앙동"
+        },
+        {
+          "id": "region:1162062500",
+          "name": "인헌동"
+        },
+        {
+          "id": "region:1162063000",
+          "name": "남현동"
+        },
+        {
+          "id": "region:1162064500",
+          "name": "서원동"
+        },
+        {
+          "id": "region:1162065500",
+          "name": "신원동"
+        },
+        {
+          "id": "region:1162066500",
+          "name": "서림동"
+        },
+        {
+          "id": "region:1162068500",
+          "name": "신사동"
+        },
+        {
+          "id": "region:1162069500",
+          "name": "신림동"
+        },
+        {
+          "id": "region:1162071500",
+          "name": "난향동"
+        },
+        {
+          "id": "region:1162072500",
+          "name": "조원동"
+        },
+        {
+          "id": "region:1162073500",
+          "name": "대학동"
+        },
+        {
+          "id": "region:1162074500",
+          "name": "삼성동"
+        },
+        {
+          "id": "region:1162076500",
+          "name": "미성동"
+        },
+        {
+          "id": "region:1162077500",
+          "name": "난곡동"
         }
       ],
-      "directOwnership": false
-    },
-    {
-      "id": "title:barony-chungcheong-4420033000",
-      "kind": "nonterritorial-political-identity",
-      "rank": "barony",
-      "holderPersonId": "K998",
-      "stateId": "S02",
-      "politicalParentTitleId": "title:duchy-chungcheong-k998",
-      "personalLieges": [
-        {
-          "holdingId": "holding:chungcheong-4420033000",
-          "directLiegePersonId": null
-        }
-      ],
-      "directOwnership": false
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11620",
+      "geometrySource": null,
+      "formalTitleRank": null
     }
   ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c774-c804-c758-674e",
-    "name": "전의 이씨",
-    "crest": "clan-crests/c774-c804-c758-674e.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": false,
-  "values": {
-    "권위": -20,
-    "개방": 40,
-    "무력": -30,
-    "물질": 40,
-    "공동": 30,
-    "원칙": 50,
-    "공개": 50,
-    "자격": 45,
-    "분산": 30,
-    "변혁": 40
-  },
-  "desire": {
-    "갈망": 35,
-    "독점": -25,
-    "위험": -20,
-    "과시": -30,
-    "지속": 70,
-    "지향": "유동",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "소속": "규격맹 봉신 제1분공방 이씨 가문",
-    "품계": "이사",
-    "직함": "제1분공방 이씨 가문 후계",
-    "생업": "오류2동 제1분공방 업무에 쓰는 밭 경작·곡물 재고 관리",
-    "성명": "이일섭. 공개 예명 iz.",
-    "기여자": "[islee23520](https://github.com/islee23520)",
-    "출신 공동체": "제1분공방 이씨 가문. 본관 전의.",
-    "업무 위치": "오류2동. 이일섭은 오류2동 제1분공방에서 겨울 배급에 쓸 곡물 재고를 세 차례 세고 종자 대금 제안서를 규격맹 평의회로 올린다. 박도윤에게 제안서 수령 확인을 맡기고 류동현에게 작업 구역의 전력 이상만 보고받으며 밭과 보관 공간의 사용은 가문 영토로 넓히지 않는다.",
-    "가치관": "권위 −20 | 개방 40 | 무력 −30 | 물질 40 | 공동 30 | 원칙 50 | 공개 50 | 자격 45 | 분산 30 | 변혁 40",
-    "욕망": "갈망 35 | 독점 −25 | 위험 −20 | 과시 −30 | 지속 70 | 지향 유동 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "제1분공방을 잇는 이씨 가문의 후계다. 2121년 오류2동 공방 업무에서 밭을 일구고 곡물 재고를 맡았다. 밭과 보관 공간은 이 업무에 사용했으며 가문의 영토나 독점 소유는 아니었다. 2123년에는 겨울 배급안을 올리기 전 곡물 재고를 세 차례 다시 세었고, 분공방 부품 대금 일부를 종자로 받자고 규격맹 평의회에 제안하였다.",
-    "일화": "2123년 이일섭은 겨울 배급안을 올리기 전 곡물 재고를 세 차례 다시 세었고, 같은 해 분공방 부품 대금 일부를 종자로 받자고 규격맹 평의회에 제안하였다. 오류2동에서 밭의 경작과 보관 곡물 관리를 맡던 후계가 평의회에 가문의 안을 올린 일이다.",
-    "가문": "이씨 가문은 규격맹의 봉신이며, 이일섭은 제1분공방을 잇는 후계다.",
-    "신념": "농사를 지어 먹을 것이 남으면 세상이 좋아진다고 믿는다.",
-    "관계": "규격맹의 봉신인 이씨 가문의 후계로 제1분공방을 잇고, 오류2동의 공방 업무에서 분공방 부품 대금을 두고 규격맹 평의회에 제안을 올린다. 직속 전령 박도윤에게 전갈 전달과 수령 확인을, 직속 경비 류동현에게 전력장치 순찰과 이상 보고를 맡긴다. 곡물 수량과 배급안은 이일섭이 직접 대조한다. 구찬솔과는 곡물 손실 장부를 부품 운송 기록과 맞추고, 장우석에게는 평의회에 올릴 부품 규격 사본의 감사 결과를 받는다. 허다온의 차륜 검사 기록은 분공방에서 출고할 부품을 대조하는 데 쓴다.",
-    "야망": "오류2동 제1분공방 업무에서 맡아 경작하는 밭의 곡물로 겨울 배급안을 채워, 먹을 것이 남는 분공방을 만든다.",
-    "공포": "세 차례 다시 센 곡물 재고가 겨울 배급안에 모자라는 것.",
-    "개입": "함께 곡물 재고를 세어 겨울 배급안을 앞당기거나, 종자 대금 제안을 평의회에서 받치거나 흔들 수 있다."
-  },
-  "biography": "겁이 많고 결정이 느리다. 위험한 소식을 들으면 먼저 숨을 곳부터 생각하고, 밤새 장부를 다시 세어 다음 날에야 권안을 내놓는다. 그러나 믿는 일 앞에서는 물러서지 않는다.\n\n- 소속: 규격맹 봉신 제1분공방 이씨 가문\n- 품계: 이사\n- 직함: 제1분공방 이씨 가문 후계\n- 생업: 오류2동 제1분공방 업무에 쓰는 밭 경작·곡물 재고 관리\n- 성명: 이일섭. 공개 예명 iz.\n- 기여자: [islee23520](https://github.com/islee23520)\n- 출신 공동체: 제1분공방 이씨 가문. 본관 전의.\n- 업무 위치: 오류2동. 이일섭은 오류2동 제1분공방에서 겨울 배급에 쓸 곡물 재고를 세 차례 세고 종자 대금 제안서를 규격맹 평의회로 올린다. 박도윤에게 제안서 수령 확인을 맡기고 류동현에게 작업 구역의 전력 이상만 보고받으며 밭과 보관 공간의 사용은 가문 영토로 넓히지 않는다.\n\n**생애.** 제1분공방을 잇는 이씨 가문의 후계다. 2121년 오류2동 공방 업무에서 밭을 일구고 곡물 재고를 맡았다. 밭과 보관 공간은 이 업무에 사용했으며 가문의 영토나 독점 소유는 아니었다. 2123년에는 겨울 배급안을 올리기 전 곡물 재고를 세 차례 다시 세었고, 분공방 부품 대금 일부를 종자로 받자고 규격맹 평의회에 제안하였다.\n\n**일화.** 2123년 이일섭은 겨울 배급안을 올리기 전 곡물 재고를 세 차례 다시 세었고, 같은 해 분공방 부품 대금 일부를 종자로 받자고 규격맹 평의회에 제안하였다. 오류2동에서 밭의 경작과 보관 곡물 관리를 맡던 후계가 평의회에 가문의 안을 올린 일이다.\n\n**가문.** 이씨 가문은 규격맹의 봉신이며, 이일섭은 제1분공방을 잇는 후계다.\n\n**신념.** 농사를 지어 먹을 것이 남으면 세상이 좋아진다고 믿는다.\n\n**관계.** 규격맹의 봉신인 이씨 가문의 후계로 제1분공방을 잇고, 오류2동의 공방 업무에서 분공방 부품 대금을 두고 규격맹 평의회에 제안을 올린다. 직속 전령 박도윤에게 전갈 전달과 수령 확인을, 직속 경비 류동현에게 전력장치 순찰과 이상 보고를 맡긴다. 곡물 수량과 배급안은 이일섭이 직접 대조한다. 구찬솔과는 곡물 손실 장부를 부품 운송 기록과 맞추고, 장우석에게는 평의회에 올릴 부품 규격 사본의 감사 결과를 받는다. 허다온의 차륜 검사 기록은 분공방에서 출고할 부품을 대조하는 데 쓴다.\n\n**야망.** 오류2동 제1분공방 업무에서 맡아 경작하는 밭의 곡물로 겨울 배급안을 채워, 먹을 것이 남는 분공방을 만든다.\n\n**공포.** 세 차례 다시 센 곡물 재고가 겨울 배급안에 모자라는 것.\n\n**개입.** 함께 곡물 재고를 세어 겨울 배급안을 앞당기거나, 종자 대금 제안을 평의회에서 받치거나 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 40 | 무력 −30 | 물질 40 | 공동 30 | 원칙 50 | 공개 50 | 자격 45 | 분산 30 | 변혁 40\n- 욕망: 갈망 35 | 독점 −25 | 위험 −20 | 과시 −30 | 지속 70 | 지향 유동 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-02"
-  ],
-  "court": {
-    "id": "court:K998",
-    "members": [
-      {
-        "personId": "K425",
-        "name": "박도윤"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:section:관악구:신림",
+      "name": {
+        "ko": "신림 구간"
       },
-      {
-        "personId": "K441",
-        "name": "류동현"
-      }
-    ]
-  },
-  "relations": {
-    "outgoing": [
-      {
-        "from": "이일섭",
-        "type": "계약",
-        "to": "구찬솔",
-        "basis": "제1분공방의 곡물 손실 장부를 부품 운송 기록과 대조한다"
+      "holderPersonId": "K010",
+      "directLiegePersonId": "K998",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "신림",
+        "stationName": "신림"
       },
-      {
-        "from": "이일섭",
-        "type": "계약",
-        "to": "장우석",
-        "basis": "평의회에 제출할 분공방 부품 규격 사본의 감사를 의뢰한다"
+      "adminRefs": [
+        {
+          "id": "region:1162064500",
+          "name": "서원동"
+        },
+        {
+          "id": "region:1162074500",
+          "name": "삼성동"
+        },
+        {
+          "id": "region:1162073500",
+          "name": "대학동"
+        }
+      ],
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "허도담",
+      "holderRoute": "/people/person-0010"
+    },
+    {
+      "id": "holding:v3:section:관악구:봉천",
+      "name": {
+        "ko": "봉천 구간"
       },
-      {
-        "from": "이일섭",
-        "type": "계약",
-        "to": "허다온",
-        "basis": "차륜 검사 기록으로 분공방 출고 부품의 계측값을 대조한다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "구찬솔",
-        "type": "계약",
-        "to": "이일섭",
-        "basis": "분공방의 곡물 손실 장부와 맞출 부품 운송 기록을 돌려준다"
+      "holderPersonId": "person-0016",
+      "directLiegePersonId": "K998",
+      "stateId": "free-city",
+      "stationRef": {
+        "stationId": "봉천",
+        "stationName": "봉천"
       },
-      {
-        "from": "장우석",
-        "type": "계약",
-        "to": "이일섭",
-        "basis": "부품 규격 사본의 감사와 재측정 결과를 돌려준다"
-      },
-      {
-        "from": "허다온",
-        "type": "계약",
-        "to": "이일섭",
-        "basis": "출고 부품을 함께 확인하도록 차륜 검사 기록을 보낸다"
-      },
-      {
-        "from": "박도윤",
-        "type": "지휘",
-        "to": "이일섭",
-        "basis": "이일섭의 직속 전령으로 전갈 전달과 수령 확인을 맡음"
-      },
-      {
-        "from": "류동현",
-        "type": "지휘",
-        "to": "이일섭",
-        "basis": "이일섭의 직속 경비로 전력장치 순찰과 이상 보고를 맡음"
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1162059500",
+          "name": "청룡동"
+        },
+        {
+          "id": "region:1162058500",
+          "name": "낙성대동"
+        },
+        {
+          "id": "region:1162057500",
+          "name": "행운동"
+        },
+        {
+          "id": "region:1165061000",
+          "name": "방배2동"
+        }
+      ],
+      "territorialScale": "section",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "제윤",
+      "holderRoute": "/people/person-0016"
+    }
+  ]
 }

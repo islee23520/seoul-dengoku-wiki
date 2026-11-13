@@ -1,396 +1,136 @@
 {
   "id": "person-0398",
   "name": "함도겸",
-  "title": "공개 경매 조정 보조",
-  "position": "명동역 인준 명부 당직",
+  "title": "상봉2동 동장",
+  "position": "상봉2동 동장 · 정부",
   "characterId": "K397",
-  "rank": "교우",
-  "commonTier": "T5",
-  "occupation": "인준 명부 인수인계 기록",
+  "rank": "동장",
+  "commonTier": "T3",
+  "occupation": "동 행정",
   "gender": "여성",
   "stage": "S2",
-  "state": "S15",
-  "stateName": "명동대교구",
-  "sourceRoute": "/world/Cast-State-15#인물-함도겸",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0398",
   "birthDate": "2079-09-10",
   "birthday": "09-10",
   "age": 47,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-15.json#/content/655",
-    "lore/characters/Cast-State-15.json#/content/656"
-  ],
-  "familyTree": {
-    "personId": "K397",
-    "nodes": [
-      {
-        "id": "K397",
-        "personId": "K397",
-        "kind": "person",
-        "name": "함도겸",
-        "birthDate": "2079-09-10",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K397"
-          },
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-함도겸-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 인준 명부 당직 일을 맡았다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-함도겸-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0398"
-      },
-      {
-        "id": "FH-K397-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "함승석",
-        "lineage": {
-          "surname": "함",
-          "bongwan": "강릉",
-          "clan": "d568-ac15-b989"
-        },
-        "birthDate": "2049-09-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-함도겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2087,
-            "summary": "함승석은 노량진 선창에서 인준 명부 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-함도겸-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K397-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "함승준",
-        "lineage": {
-          "surname": "함",
-          "bongwan": "강릉",
-          "clan": "d568-ac15-b989"
-        },
-        "birthDate": "2019-09-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-함도겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "함승준은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-함도겸-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K397-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준섭",
-        "birthDate": "2049-09-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-함도겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2087,
-            "summary": "이준섭은 노량진 선창에서 인준 명부 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-함도겸-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K397-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준빈",
-        "birthDate": "2019-09-10",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-함도겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최준빈은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-15.json",
-                "anchor": "인물-함도겸-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K397-P-01:K397:biological",
-        "from": "FH-K397-P-01",
-        "to": "K397",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-함도겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K397-P-02:FH-K397-P-01:biological",
-        "from": "FH-K397-P-02",
-        "to": "FH-K397-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-함도겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K397-M-01:K397:biological",
-        "from": "FH-K397-M-01",
-        "to": "K397",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-함도겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K397-M-02:FH-K397-M-01:biological",
-        "from": "FH-K397-M-02",
-        "to": "FH-K397-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-15.json",
-            "anchor": "인물-함도겸-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d568-ac15-b989",
+    "name": "강릉 함씨",
+    "crest": "clan-crests/d568-ac15-b989.svg"
   },
-  "proseContacts": [
-    {
-      "recipientId": "K373",
-      "recipientName": "남윤경",
-      "basis": "남윤경의 경매조정과 맞물리되, 보조 서명란은 조정인 도장과 겹치지 않게 둔다.",
-      "sourceRef": {
-        "path": "lore/characters/Cast-State-15.json",
-        "anchor": "인물-함도겸-p5"
-      }
-    }
-  ],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "중랑구 상봉2동 동장 함도겸. 상봉역 대합실의 고기와 가죽 장터와 동주민센터 배급 창구가 같은 층에 있어, 마흔일곱의 그는 사냥해 온 짐승 고기 값이 끼니 증표 줄을 흔들지 않는지 늘 살핀다. 강예준 의원이 그를 동장에 앉힌 뒤로 배급 창구가 늦게 열린 날은 없었다고 동 사람들은 말한다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "상봉2동 동장",
+    "품계": "동장",
+    "생업": "동 행정",
+    "일하는 역": "상봉역",
+    "잠자는 역": "상봉역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "중랑구 상봉2동 동장 함도겸. 상봉역 대합실의 고기와 가죽 장터와 동주민센터 배급 창구가 같은 층에 있어, 마흔일곱의 그는 사냥해 온 짐승 고기 값이 끼니 증표 줄을 흔들지 않는지 늘 살핀다. 강예준 의원이 그를 동장에 앉힌 뒤로 배급 창구가 늦게 열린 날은 없었다고 동 사람들은 말한다.",
+    "관직": "직함 상봉2동 동장. 직위 상봉2동 동장 · 정부. 품계 동장. 일하는 역 상봉역."
+  },
+  "values": {
+    "권위": 60,
+    "개방": -15,
+    "무력": 25,
+    "물질": 60,
+    "공동": -20,
+    "원칙": -20,
+    "공개": -40,
+    "자격": 25,
+    "분산": -45,
+    "변혁": -15
+  },
+  "desire": {
+    "갈망": 50,
+    "독점": 0,
+    "위험": 30,
+    "과시": -5,
+    "지속": -20,
+    "지향": "유동",
+    "결합": "비독점"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0398",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "함도겸",
+        "type": "지휘",
+        "to": "강예준",
+        "basis": "중랑구 국회의원 강예준의 직속"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "양이든",
+        "type": "지휘",
+        "to": "함도겸",
+        "basis": "상봉2동 동장 함도겸의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K145",
+    "name": "강예준",
+    "courtId": "court:K145",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K397",
+    "members": [
+      {
+        "personId": "person-0205",
+        "name": "양이든"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
+        "base": 9,
+        "effective": 9
+      },
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
-        "base": 5,
-        "effective": 5
-      },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
         "base": 6,
         "effective": 6
-      }
-    },
-    "skills": [
-      {
-        "id": "handover-tracing",
-        "name": {
-          "ko": "교대 서명 추적",
-          "en": "Handover signature tracing"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "evidenced-choice",
-        "name": {
-          "ko": "서명 역할 분리",
-          "en": "Separates signature roles"
-        },
-        "description": {
-          "ko": "빈 교대 서명을 역순으로 찾아 당직을 확인하고 조정인 도장과 보조 서명을 분리했다.",
-          "en": "Traces missing shift signatures backward and separates auxiliary signatures from the mediator’s stamp."
-        },
-        "behavior": {
-          "ko": "확인된 선택에서는 서명 역할 분리을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
-          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
-        },
-        "stress": {
-          "ko": "누락이 나오면 교대 순서를 거꾸로 짚을 수 있다.",
-          "en": "May retrace shifts backward after a gap."
-        },
-        "relationship": {
-          "ko": "남윤경의 조정 도장과 보조 서명을 겹치지 않게 둔다.",
-          "en": "Keeps auxiliary signatures separate from Nam Yungyeong’s mediation stamp."
-        },
-        "effects": []
       },
-      {
-        "id": "handover-continuity",
-        "name": {
-          "ko": "기록 단절 경계",
-          "en": "Concern for record continuity"
-        },
-        "description": {
-          "ko": "교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.",
-          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
-        },
-        "behavior": {
-          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
-          "en": "Seeks to check the continuity of assigned records and signatures."
-        },
-        "stress": {
-          "ko": "다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 인준 명부 당직 장부의 서명이 사라지는 것.",
-          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
-        },
-        "relationship": {
-          "ko": "남윤경의 조정 도장과 보조 서명을 겹치지 않게 둔다.",
-          "en": "Keeps auxiliary signatures separate from Nam Yungyeong’s mediation stamp."
-        },
-        "effects": []
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "빈 교대 서명을 역순으로 찾아 당직을 확인하고 조정인 도장과 보조 서명을 분리했다.",
-      "en": "Traces missing shift signatures backward and separates auxiliary signatures from the mediator’s stamp."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -428,59 +168,52 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d568-ac15-b989",
-    "name": "강릉 함씨",
-    "crest": "clan-crests/d568-ac15-b989.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": 40,
-    "무력": -10,
-    "물질": 65,
-    "공동": -25,
-    "원칙": -40,
-    "공개": -15,
-    "자격": 10,
-    "분산": 5,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 50,
-    "독점": 0,
-    "위험": 30,
-    "과시": -5,
-    "지속": -20,
-    "지향": "유동",
-    "결합": "비독점"
-  },
-  "fields": {
-    "생업": "인준 명부 인수인계 기록",
-    "소속": "명동대교구 (명동역)",
-    "품계": "교우",
-    "직함": "명동역 인준 명부 당직",
-    "가치관": "권위 15 | 개방 40 | 무력 −10 | 물질 65 | 공동 −25 | 원칙 −40 | 공개 −15 | 자격 10 | 분산 5 | 변혁 5",
-    "욕망": "갈망 50 | 독점 0 | 위험 30 | 과시 −5 | 지속 −20 | 지향 유동 | 결합 비독점"
-  },
-  "sections": {
-    "생애": "2079-09-10에 태어난 함도겸은 영구 겨울의 명동역 교구청에서 명동역 인준 명부 당직 일을 맡는다. 인준 명부 인수인계 기록 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 함도겸은 명동 행정동의 명동역 교구청에서 명동역 인준 명부 당직 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 교우. 직함은 명동역 인준 명부 당직. 인준 명부 인수인계 기록 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
-    "일화": "대주교 선거를 앞두고 교대 인수인계 기록에 서명이 빠진 칸이 생긴다. 함도겸은 교대마다 받던 서명을 거꾸로 짚어 빈 칸의 당직을 찾고, 남윤경의 경매조정 도장과 겹치는 보조 서명란은 따로 떼어 적는다.",
-    "관계": "남윤경의 경매조정과 맞물리되, 보조 서명란은 조정인 도장과 겹치지 않게 둔다.",
-    "야망": "교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.",
-    "공포": "다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 인준 명부 당직 장부의 서명이 사라지는 것.",
-    "개입": "명동역 인준 명부 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다."
-  },
-  "biography": "함도겸은 명동역 인준 명부 당직 업무에서 인준 명부 인수인계 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 인준 명부 인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 인준 명부 당직\n**생애.** 2079-09-10에 태어난 함도겸은 영구 겨울의 명동역 교구청에서 명동역 인준 명부 당직 일을 맡는다. 인준 명부 인수인계 기록 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 함도겸은 명동 행정동의 명동역 교구청에서 명동역 인준 명부 당직 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 교우. 직함은 명동역 인준 명부 당직. 인준 명부 인수인계 기록 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 대주교 선거를 앞두고 교대 인수인계 기록에 서명이 빠진 칸이 생긴다. 함도겸은 교대마다 받던 서명을 거꾸로 짚어 빈 칸의 당직을 찾고, 남윤경의 경매조정 도장과 겹치는 보조 서명란은 따로 떼어 적는다.\n\n**관계.** 남윤경의 경매조정과 맞물리되, 보조 서명란은 조정인 도장과 겹치지 않게 둔다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 인준 명부 당직 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 인준 명부 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 40 | 무력 −10 | 물질 65 | 공동 −25 | 원칙 −40 | 공개 −15 | 자격 10 | 분산 5 | 변혁 5\n- 욕망: 갈망 50 | 독점 0 | 위험 30 | 과시 −5 | 지속 −20 | 지향 유동 | 결합 비독점\n:::",
-  "sources": [
-    "Cast-State-15"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1126059000",
+      "name": {
+        "ko": "상봉2동"
+      },
+      "holderPersonId": "K397",
+      "directLiegePersonId": "K145",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1126059000",
+          "name": "상봉2동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
   ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:상봉",
+      "name": {
+        "ko": "상봉역"
+      },
+      "holderPersonId": "person-0205",
+      "directLiegePersonId": "K397",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "상봉",
+        "stationName": "상봉"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1126059000",
+          "name": "상봉2동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "양이든",
+      "holderRoute": "/people/person-0205"
+    }
+  ]
 }

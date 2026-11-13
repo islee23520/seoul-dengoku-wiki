@@ -1,386 +1,155 @@
 {
   "id": "person-0324",
   "name": "심달호",
-  "title": "약재상",
-  "position": "약재상",
+  "title": "보건복지부 장관",
+  "position": "보건복지부 장관 · 광화문역",
   "characterId": "K323",
-  "rank": "수련의",
-  "commonTier": "T3",
-  "occupation": "약재 원산지·출고 날인 대조",
+  "rank": "장관",
+  "commonTier": "T2",
+  "occupation": "부처 행정",
   "gender": "여성",
   "stage": "S1",
-  "state": "S13",
-  "stateName": "흰십자단",
-  "sourceRoute": "/world/Cast-State-13#인물-심달호",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0324",
   "birthDate": "2085-09-30",
   "birthday": "09-30",
   "age": 41,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-13.json#/content/61",
-    "lore/characters/Cast-State-13.json#/content/63"
-  ],
-  "familyTree": {
-    "personId": "K323",
-    "nodes": [
-      {
-        "id": "K323",
-        "personId": "K323",
-        "kind": "person",
-        "name": "심달호",
-        "birthDate": "2085-09-30",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K323"
-          },
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심달호-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 약재 감별 수련의 자리는 가짜 약 봉인으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-심달호-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0324"
-      },
-      {
-        "id": "FH-K323-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "심승석",
-        "lineage": {
-          "surname": "심",
-          "bongwan": "청송",
-          "clan": "c2ec-ccad-c1a1"
-        },
-        "birthDate": "2055-09-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2093,
-            "summary": "심승석은 제기동 의무소에서 약재 원산지·출고 날인 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-심달호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K323-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "심승준",
-        "lineage": {
-          "surname": "심",
-          "bongwan": "청송",
-          "clan": "c2ec-ccad-c1a1"
-        },
-        "birthDate": "2025-09-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "심승준은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-심달호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K323-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김준영",
-        "birthDate": "2055-09-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2093,
-            "summary": "김준영은 제기동 의무소에서 약재 원산지·출고 날인 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-심달호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K323-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준윤",
-        "birthDate": "2025-09-30",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "박준윤은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-13.json",
-                "anchor": "인물-심달호-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K323-P-01:K323:biological",
-        "from": "FH-K323-P-01",
-        "to": "K323",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K323-P-02:FH-K323-P-01:biological",
-        "from": "FH-K323-P-02",
-        "to": "FH-K323-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K323-M-01:K323:biological",
-        "from": "FH-K323-M-01",
-        "to": "K323",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K323-M-02:FH-K323-M-01:biological",
-        "from": "FH-K323-M-02",
-        "to": "FH-K323-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-13.json",
-            "anchor": "인물-심달호-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c2ec-ccad-c1a1",
+    "name": "청송 심씨",
+    "crest": "clan-crests/c2ec-ccad-c1a1.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "보건복지부 장관 심달호는 청송 심씨이고 마흔한 살이며, 장관 임명장의 기재란에는 종로구 사직동 광화문역이 적혀 있다. 보건소와 의료단, 부양 식구의 배급, 그리고 기계 몸 기재와 아크 정비 허가를 맡는다. 제기동 약초 장터의 곳간 장부를 오래 맡았던 사람이라, 의료단이 올리는 약품 몫도 한 묶음씩 달아 본 숫자가 아니면 결재하지 않는다. 병사가 정비 허가를 받는 것을 국군이 가장 꺼리므로 수도방위사령관 탁서윤은 그녀의 허가서마다 이의서를 붙여 돌려보내고, 그녀는 그 이의서를 허가서 밑에 철해 둔 채 결재를 올린다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "보건복지부 장관",
+    "품계": "장관",
+    "생업": "부처 행정",
+    "일하는 역": "광화문역",
+    "잠자는 역": "광화문역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "보건복지부 장관 심달호는 청송 심씨이고 마흔한 살이며, 장관 임명장의 기재란에는 종로구 사직동 광화문역이 적혀 있다. 보건소와 의료단, 부양 식구의 배급, 그리고 기계 몸 기재와 아크 정비 허가를 맡는다. 제기동 약초 장터의 곳간 장부를 오래 맡았던 사람이라, 의료단이 올리는 약품 몫도 한 묶음씩 달아 본 숫자가 아니면 결재하지 않는다. 병사가 정비 허가를 받는 것을 국군이 가장 꺼리므로 수도방위사령관 탁서윤은 그녀의 허가서마다 이의서를 붙여 돌려보내고, 그녀는 그 이의서를 허가서 밑에 철해 둔 채 결재를 올린다.",
+    "관직": "직함 보건복지부 장관. 직위 보건복지부 장관 · 광화문역. 품계 장관. 일하는 역 광화문역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": -25,
+    "무력": -10,
+    "물질": -30,
+    "공동": 30,
+    "원칙": 60,
+    "공개": -5,
+    "자격": 35,
+    "분산": -20,
+    "변혁": -30
+  },
+  "desire": {
+    "갈망": 25,
+    "독점": -20,
+    "위험": -20,
+    "과시": -10,
+    "지속": 35,
+    "지향": "동성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0324",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "심달호",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "심달호",
+        "type": "경쟁",
+        "to": "탁서윤",
+        "basis": "병사의 기계 몸 정비 허가를 두고 수도방위사령관과 서류로 맞선다."
+      },
+      {
+        "from": "심달호",
+        "type": "경쟁",
+        "to": "심가은",
+        "basis": "같은 청송 심씨로 OMO당 마포구의 구청장이 된 사람과 견주어지는 사이"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "류은비",
+        "type": "계약",
+        "to": "심달호",
+        "basis": "보건복지부 장관과 매달 약품 몫을 나누는 결재로 묶인 사이"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
-      },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
-        "base": 10,
-        "effective": 10
-      },
-      "management": {
-        "base": 11,
-        "effective": 11
-      },
-      "insight": {
-        "base": 10,
-        "effective": 10
-      },
-      "learning": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "prowess": {
-        "base": 3,
-        "effective": 3
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "endurance": {
+      "stewardship": {
+        "base": 11,
+        "effective": 11
+      },
+      "intrigue": {
         "base": 7,
         "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "herbal-medicine-allocation",
-        "name": {
-          "ko": "약재 배분",
-          "en": "Herbal medicine allocation"
-        },
-        "rating": 55
+        "id": "skill-0324-store",
+        "name": "곳간 셈",
+        "rating": 54
       }
     ],
     "traits": [
       {
-        "id": "stated-priority",
-        "name": {
-          "ko": "선매보다 환자 할당",
-          "en": "Patient allocation before advance purchase"
-        },
-        "description": {
-          "ko": "부족한 처방량을 나눴고 환자 할당에 따라 물자를 댄다. 도제 학습은 보존하되 직함만으로 감별 숙련을 확대하지 않는다.",
-          "en": "They divided scarce prescriptions and supply according to patient allocation. Apprenticeship is retained without turning the title into broad appraisal expertise."
-        },
-        "behavior": {
-          "ko": "저울눈만큼 말을 아끼고, 외상 장부를 사람 얼굴보다 오래 기억한다. 선매를 권하는 사신을 손님으로 보지 않는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.",
-          "en": "He spared words as much as the scale's needle and remembered credit ledgers longer than faces. He did not count an envoy who recommended pre-buying as a guest."
-        },
-        "stress": {
-          "ko": "공포. 암사나 여의신이 항생제와 해열 생약을 선매해 시장 바닥이 드러나는 것.",
-          "en": "Fear. That Amsa or Yeouisin would pre-buy the antibiotics and febrifuge herbs and lay the market floor bare."
-        },
-        "relationship": {
-          "ko": "관계. 류은비의 치료 물자를 대고, 전솔의 환자 할당을 따르며, 은태호의 가락 가격과 약재 교환 비율을 거래한다.",
-          "en": "Relations. Staked care supplies for Ryu Eunbi, followed Jeon Sol's patient allocation, and traded exchange ratios between Eun Taeho's Garak prices and herbs."
-        },
-        "effects": []
-      },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 수련의. 직함은 약재 감별 수련의. 원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의 전솔과 단장의 진료 배정 날인이 있어야 성립시킨다.",
-          "en": "Office. Rank: member. Title: herb merchant. He hung origin and drying dates on the inspection posts and made bulk pre-buying stand only with the stamps of Ryu Eunbi and Jeon Sol, the patients' representative."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 수련의. 직함은 약재 감별 수련의. 원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의 전솔과 단장의 진료 배정 날인이 있어야 성립시킨다.",
-          "en": "Recorded duty and limits: Office. Rank: member. Title: herb merchant. He hung origin and drying dates on the inspection posts and made bulk pre-buying stand only with the stamps of Ryu Eunbi and Jeon Sol, the patients' representative."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 암사나 여의신이 항생제와 해열 생약을 선매해 시장 바닥이 드러나는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That Amsa or Yeouisin would pre-buy the antibiotics and febrifuge herbs and lay the market floor bare."
-        },
-        "relationship": {
-          "ko": "관계. 류은비의 치료 물자를 대고, 전솔의 환자 할당을 따르며, 은태호의 가락 가격과 약재 교환 비율을 거래한다.",
-          "en": "Relations. Staked care supplies for Ryu Eunbi, followed Jeon Sol's patient allocation, and traded exchange ratios between Eun Taeho's Garak prices and herbs."
-        },
+        "id": "trait-0324-ledger-talk",
+        "name": "장부로 말하는 사람",
+        "description": "속을 숫자 뒤에 둔다.",
+        "behavior": "말이 길어지면 장부를 펼친다.",
+        "stress": "숫자가 비면 장터를 몇 바퀴 돈다.",
+        "relationship": "의원은 그녀를 믿되 곁에 두지는 않는다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "부족한 처방량을 나눴고 환자 할당에 따라 물자를 댄다. 도제 학습은 보존하되 직함만으로 감별 숙련을 확대하지 않는다.",
-      "en": "They divided scarce prescriptions and supply according to patient allocation. Apprenticeship is retained without turning the title into broad appraisal expertise."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -418,85 +187,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c2ec-ccad-c1a1",
-    "name": "청송 심씨",
-    "crest": "clan-crests/c2ec-ccad-c1a1.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -25,
-    "개방": 30,
-    "무력": -45,
-    "물질": -25,
-    "공동": 25,
-    "원칙": 40,
-    "공개": 20,
-    "자격": 20,
-    "분산": 30,
-    "변혁": -10
-  },
-  "desire": {
-    "갈망": 25,
-    "독점": -20,
-    "위험": -20,
-    "과시": -10,
-    "지속": 35,
-    "지향": "동성",
-    "결합": "다자"
-  },
-  "fields": {
-    "생업": "약재 원산지·출고 날인 대조",
-    "소속": "흰십자단",
-    "품계": "수련의",
-    "직함": "약재상",
-    "가치관": "권위 −25 | 개방 30 | 무력 −45 | 물질 −25 | 공동 25 | 원칙 40 | 공개 20 | 자격 20 | 분산 30 | 변혁 −10",
-    "욕망": "갈망 25 | 독점 −20 | 위험 −20 | 과시 −10 | 지속 35 | 지향 동성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2085-09-30에 태어났다. 2126년 개막 현재 약재상 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 원산지·출고 날인 대조 창구가 심달호의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 수련의. 직함은 약재 감별 수련의. 원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의 전솔과 단장의 진료 배정 날인이 있어야 성립시킨다.",
-    "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.",
-    "관계": "류은비의 치료 물자를 대고, 전솔의 환자 할당을 따르며, 은태호의 가락 가격과 약재 교환 비율을 거래한다.",
-    "야망": "청량리 약재 경매를 비공개 독점 입찰에서 떼어내 의료 지휘부 중증도 배정으로 바꾼다.",
-    "공포": "암사나 여의신이 항생제와 해열 생약을 선매해 시장 바닥이 드러나는 일을 두려워한다.",
-    "개입": "선매 장부를 되찾거나, 비공개 선매 대리인을 경매장에서 공개할 수 있다."
-  },
-  "biography": "저울눈만큼 말을 아끼고, 외상 장부를 사람 얼굴보다 오래 기억한다. 선매를 권하는 사신을 손님으로 보지 않는다.\n\n- 생업: 약재 원산지·출고 날인 대조\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재상\n**생애.** 2085-09-30에 태어났다. 2126년 개막 현재 약재상 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 원산지·출고 날인 대조 창구가 심달호의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 수련의. 직함은 약재 감별 수련의. 원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의 전솔과 단장의 진료 배정 날인이 있어야 성립시킨다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.\n\n**관계.** 류은비의 치료 물자를 대고, 전솔의 환자 할당을 따르며, 은태호의 가락 가격과 약재 교환 비율을 거래한다.\n\n**야망.** 청량리 약재 경매를 비공개 독점 입찰에서 떼어내 의료 지휘부 중증도 배정으로 바꾼다.\n\n**공포.** 암사나 여의신이 항생제와 해열 생약을 선매해 시장 바닥이 드러나는 일을 두려워한다.\n\n**개입.** 선매 장부를 되찾거나, 비공개 선매 대리인을 경매장에서 공개할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −45 | 물질 −25 | 공동 25 | 원칙 40 | 공개 20 | 자격 20 | 분산 30 | 변혁 −10\n- 욕망: 갈망 25 | 독점 −20 | 위험 −20 | 과시 −10 | 지속 35 | 지향 동성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-13"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "심달호",
-        "type": "계약",
-        "to": "류은비",
-        "basis": "치료 물자를 약재로 댐"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "천다움",
-        "type": "사제",
-        "to": "심달호",
-        "basis": "심달호의 원산지 말목을 현장에서 받치는 사제이고"
-      },
-      {
-        "from": "동늘솔",
-        "type": "계약",
-        "to": "심달호",
-        "basis": "심달호와 운송 계약을 맺고"
-      },
-      {
-        "from": "동주하",
-        "type": "지휘",
-        "to": "심달호",
-        "basis": "심달호의 경매 규칙을 저울에서 집행하고"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

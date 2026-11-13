@@ -3,27 +3,27 @@
   "personId": "person-0330",
   "characterId": "K329",
   "name": "동늘솔",
-  "stateId": "S13",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "약재 운송 물류상"
+    "role": "종로구 구청장 · 종로3가역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "hair pinned in a low chignon bun",
-    "upper": "cream short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "cream short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "남색 누빔 외투",
+    "outfit": "남색 누빔 외투",
     "palette": [
+      "navy",
       "cream",
-      "sand beige",
-      "mustard ochre"
+      "sand beige"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
     "lower": "sand beige canvas work trousers tucked into boots",
     "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "leather dispatch satchel"
+    "accessories": "civil-servant ID and a leather seal pouch"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "fur-lined ear-flap cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "cream short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "남색 누빔 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
         "value": "sand beige canvas work trousers tucked into boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
         "value": "thick-soled leather winter boots with wool socks",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -206,39 +206,39 @@
       "neckline": {
         "value": "turned-up jacket collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "leather dispatch satchel",
+        "value": "civil-servant ID and a leather seal pouch",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat flap satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "worn brown leather",
+        "value": "navy cord and dark brown leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, brass buckle",
+        "value": "card, leather",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the chest",
+        "value": "ID round the neck, pouch at the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat card and a small square pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동늘솔, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone. headwear: fur-lined ear-flap cap; upper garment: cream short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar. accessories: leather dispatch satchel; worn as strap across the chest. color palette: cream, sand beige, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동늘솔, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone. headwear: fur-lined ear-flap cap; upper garment: 남색 누빔 외투; neckline: turned-up jacket collar. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, cream, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동늘솔, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: cream short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: sand beige canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: cream, sand beige, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동늘솔, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: 남색 누빔 외투; neckline: turned-up jacket collar; lower garment: sand beige canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, cream, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동늘솔, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: cream short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: sand beige canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: cream, sand beige, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동늘솔, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: 남색 누빔 외투; neckline: turned-up jacket collar; lower garment: sand beige canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, cream, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동늘솔, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: cream short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: sand beige canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: cream, sand beige, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동늘솔, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: 남색 누빔 외투; neckline: turned-up jacket collar; lower garment: sand beige canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, cream, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 동늘솔, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: cream short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: sand beige canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: cream, sand beige, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 동늘솔, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: small closed mouth; muted red lips. hair pinned in a low chignon bun; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone; average adult female height. headwear: fur-lined ear-flap cap; upper garment: 남색 누빔 외투; neckline: turned-up jacket collar; lower garment: sand beige canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: civil-servant ID and a leather seal pouch; worn as ID round the neck, pouch at the belt. color palette: navy, cream, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

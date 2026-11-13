@@ -1,351 +1,143 @@
 {
   "id": "person-1022",
   "name": "문도현",
-  "title": "환적·인계 상단주",
-  "position": "환적·인계 상단주",
+  "title": "용산구 구청장",
+  "position": "용산구 구청장 · 용산역",
   "characterId": "K1022",
-  "rank": "미등록",
-  "commonTier": "T5",
-  "occupation": "주 물류상 / 부 기록관",
+  "rank": "구청장",
+  "commonTier": "T2",
+  "occupation": "구 행정",
   "gender": "남성",
   "stage": "S1",
-  "state": "S07",
-  "stateName": "환적국",
-  "sourceRoute": "/world/Cast-Unaffiliated#인물-문도현",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-1022",
   "birthDate": "2080-12-20",
   "birthday": "12-20",
   "age": 46,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-Unaffiliated.json#/content/62"
-  ],
-  "familyTree": {
-    "personId": "K1022",
-    "nodes": [
-      {
-        "id": "K1022",
-        "personId": "K1022",
-        "kind": "person",
-        "name": "문도현",
-        "birthDate": "2080-12-20",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K1022"
-          },
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-문도현-fields"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "성명: 문도현 (Mun Dohyeon)",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-문도현-fields"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-1022"
-      },
-      {
-        "id": "FH-K1022-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "문현경",
-        "birthDate": "2050-12-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-문도현-fields"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2088,
-            "summary": "문현경은 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-문도현-fields"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1022-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "문현수",
-        "birthDate": "2020-12-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-문도현-fields"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "문현수는 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-문도현-fields"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1022-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "최서완",
-        "birthDate": "2050-12-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-문도현-fields"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2088,
-            "summary": "최서완은 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-문도현-fields"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K1022-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "정서현",
-        "birthDate": "2020-12-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-문도현-fields"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "정서현은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-Unaffiliated.json",
-                "anchor": "인물-문도현-fields"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K1022-P-01:K1022:biological",
-        "from": "FH-K1022-P-01",
-        "to": "K1022",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-문도현-fields"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1022-P-02:FH-K1022-P-01:biological",
-        "from": "FH-K1022-P-02",
-        "to": "FH-K1022-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-문도현-fields"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1022-M-01:K1022:biological",
-        "from": "FH-K1022-M-01",
-        "to": "K1022",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-문도현-fields"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K1022-M-02:FH-K1022-M-01:biological",
-        "from": "FH-K1022-M-02",
-        "to": "FH-K1022-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-Unaffiliated.json",
-            "anchor": "인물-문도현-fields"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": null,
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "용산구 구청장이다. 국회의원 박태겸이 자기 집안을 오래 섬긴 공무원 가구에서 그를 골라 앉혔고, 마흔여섯의 그는 박태겸의 도장을 대신 찍어 구 고시를 내고 민원 심리를 연다. 용산구는 국방부와 수도방위사령부의 청사를 품은 구라, 그가 내는 고시에는 징집 기재의 날짜가 따로 한 장 붙는다. 민원 심리에서 그는 증인의 말보다 서기의 도장을 먼저 본다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "용산구 구청장",
+    "품계": "구청장",
+    "생업": "구 행정",
+    "일하는 역": "용산역",
+    "잠자는 역": "용산역",
+    "가구": "혼자 사는 가구"
   },
-  "proseContacts": [],
+  "sections": {
+    "생애": "용산구 구청장이다. 국회의원 박태겸이 자기 집안을 오래 섬긴 공무원 가구에서 그를 골라 앉혔고, 마흔여섯의 그는 박태겸의 도장을 대신 찍어 구 고시를 내고 민원 심리를 연다. 용산구는 국방부와 수도방위사령부의 청사를 품은 구라, 그가 내는 고시에는 징집 기재의 날짜가 따로 한 장 붙는다. 민원 심리에서 그는 증인의 말보다 서기의 도장을 먼저 본다.",
+    "관직": "직함 용산구 구청장. 직위 용산구 구청장 · 용산역. 품계 구청장. 일하는 역 용산역."
+  },
+  "values": {
+    "권위": 25,
+    "개방": -35,
+    "무력": 5,
+    "물질": 25,
+    "공동": 35,
+    "원칙": 60,
+    "공개": 5,
+    "자격": 45,
+    "분산": 0,
+    "변혁": 0
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": 10,
+    "위험": -10,
+    "과시": -20,
+    "지속": 60,
+    "지향": null,
+    "결합": null
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-1022",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "문도현",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "문도현",
+        "type": "맹세",
+        "to": "박태겸",
+        "basis": "구청장 자리를 받으며 국회의원의 도장을 자기 뜻으로는 찍지 않겠다고 맹세했다"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 10,
         "effective": 10
       },
-      "strategy": {
-        "base": 11,
-        "effective": 11
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
-        "base": 11,
-        "effective": 11
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "management": {
-        "base": 14,
-        "effective": 14
-      },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 11,
-        "effective": 11
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "k1022-cargo-handoff",
-        "name": {
-          "ko": "화물 대조·인계",
-          "en": "Cargo comparison and handoff"
-        },
-        "rating": 70
+        "id": "v3-1022-complaint-hearing",
+        "name": "민원 심리",
+        "rating": 65
+      },
+      {
+        "id": "v3-1022-district-notice",
+        "name": "구 고시 작성",
+        "rating": 60
       }
     ],
     "traits": [
       {
-        "id": "k1022-trait-1",
-        "name": {
-          "ko": "연락까지 잇는 인계",
-          "en": "Handoffs that include contact"
-        },
-        "description": {
-          "ko": "화물과 다음 상대의 연락을 함께 잇는다.",
-          "en": "Connects cargo with the next recipient’s contact."
-        },
-        "behavior": {
-          "ko": "화물과 다음 상대의 연락을 함께 잇는다.",
-          "en": "Connects cargo with the next recipient’s contact."
-        },
-        "stress": {
-          "ko": "계약을 놓친 뒤 다른 물량과 후속 기회를 찾는다.",
-          "en": "Seeks other cargo and follow-up opportunities after losing a contract."
-        },
-        "relationship": {
-          "ko": "지연희에게 전달 내용을 맡기고 그 연락으로 운송 공백을 확인한다.",
-          "en": "Entrusts messages to Ji Yeonhee and uses her contacts to check transport gaps."
-        },
+        "id": "v3-1022-trait-1",
+        "name": "빌린 도장",
+        "description": "자기가 찍는 도장이 남의 것임을 잊지 않는다.",
+        "behavior": "박태겸의 도장을 대신 찍은 서류는 그날 저녁 목록으로 만들어 박태겸에게 올린다.",
+        "stress": "목록에 없는 도장 자국을 보면 그 서류의 서기를 그날 안에 부른다.",
+        "relationship": "박태겸에게는 결재를 미루지 않고, 동장들에게는 보고를 미루지 못하게 한다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "용산역 대합실에서 입고 화물을 대조·분류해 예약 화물 창고에 임시 보관하고, 대합실이 열리는 야간에 서울 안의 다음 운송 구간에 넘긴다. 용산 계약을 놓친 뒤 후속 물량을 찾으며 지연희의 연락으로 인계 공백을 확인한다. 임차 공간의 운영은 국가 배차권이나 토지 소유와 다르다.",
-      "en": "He compares and sorts incoming cargo in the Yongsan Station concourse, temporarily stores it in reserved-cargo storage, and hands it to the next transport segment within Seoul at night when the concourse is open. After losing a Yongsan contract, he seeks follow-up cargo and uses Ji Yeonhee’s contacts to identify handoff gaps. Operating rented space is distinct from state scheduling authority or land ownership."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -383,76 +175,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": null,
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": false,
-  "values": {
-    "권위": -20,
-    "개방": 20,
-    "무력": -30,
-    "물질": 30,
-    "공동": 30,
-    "원칙": 40,
-    "공개": 30,
-    "자격": 30,
-    "분산": 50,
-    "변혁": 20
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": 10,
-    "위험": -10,
-    "과시": -20,
-    "지속": 60,
-    "지향": null,
-    "결합": null
-  },
-  "fields": {
-    "성명": "문도현 (Mun Dohyeon)",
-    "캐릭터 ID": "K1022",
-    "출신 공동체": "한강로동의 용산역에 업무 거점을 두고, 한강로동의 임차 거처에서 산다. 출생지·성장지는 미정이다.",
-    "생년월일": "2080-12-20",
-    "언어": "미정",
-    "생업": "주 물류상 / 부 기록관",
-    "소속": "환적국(S07). 독립 상단",
-    "봉건 품계": "없음. 대한민국 정부가 수여한 관직도 없다.",
-    "민간·공동체 직무": "환적·인계 상단주 대한민국 정부 관직이나 봉건 품계가 아니다.",
-    "징집 이력": "미정",
-    "무장 접근": "미정",
-    "성격": "거래 구조를 이해하는 실무형이며 독립성을 중시한다.",
-    "개인 야망": "자기 통제 아래의 거래 기반을 마련하고 인력에게 안정적인 일을 제공하며 약속한 운송을 이행하려 한다.",
-    "공포": "미정",
-    "통치 방식": "용산역 대합실에서 입고 화물을 대조·분류하고 예약 화물 창고에 임시 보관한 뒤 서울 안의 다음 운송 구간에 인계한다. 공간은 임차하거나 계약에 따라 사용하며, 대합실이 열리는 야간에 인계한다.",
-    "관계": "화주들과 다음 운송 구간의 거래 상대를 연결한다. 문도현은 분류해 임시 보관한 화물의 다음 인계 상대와 전달 내용을 지연희에게 맡긴다. 지연희는 독립 전령으로 인수·전달 소식을 이어 문도현이 약속한 운송의 연락 공백을 확인하게 한다.",
-    "촉발 사건": "2125년 3월 용산 계약을 놓친 뒤 후속 운송 기회를 찾으며 조사를 의뢰한다.",
-    "플레이어 개입": "다른 상인의 물량을 모아 새 운송 계약을 연결할 수 있다.",
-    "거주지": "한강로동 임차 거처",
-    "업무 위치": "용산역 대합실과 예약 화물 창고의 계약 사용"
-  },
-  "sections": {},
-  "biography": "- 성명: 문도현 (Mun Dohyeon)\n- 캐릭터 ID: K1022\n- 출신 공동체: 한강로동의 용산역에 업무 거점을 두고, 한강로동의 임차 거처에서 산다. 출생지·성장지는 미정이다.\n- 생년월일: 2080-12-20\n- 언어: 미정\n- 생업: 주 물류상 / 부 기록관\n- 소속: 환적국(S07). 독립 상단\n- 봉건 품계: 없음. 대한민국 정부가 수여한 관직도 없다.\n- 민간·공동체 직무: 환적·인계 상단주 대한민국 정부 관직이나 봉건 품계가 아니다.\n- 징집 이력: 미정\n- 무장 접근: 미정\n- 성격: 거래 구조를 이해하는 실무형이며 독립성을 중시한다.\n- 개인 야망: 자기 통제 아래의 거래 기반을 마련하고 인력에게 안정적인 일을 제공하며 약속한 운송을 이행하려 한다.\n- 공포: 미정\n- 통치 방식: 용산역 대합실에서 입고 화물을 대조·분류하고 예약 화물 창고에 임시 보관한 뒤 서울 안의 다음 운송 구간에 인계한다. 공간은 임차하거나 계약에 따라 사용하며, 대합실이 열리는 야간에 인계한다.\n- 관계: 화주들과 다음 운송 구간의 거래 상대를 연결한다. 문도현은 분류해 임시 보관한 화물의 다음 인계 상대와 전달 내용을 지연희에게 맡긴다. 지연희는 독립 전령으로 인수·전달 소식을 이어 문도현이 약속한 운송의 연락 공백을 확인하게 한다.\n- 촉발 사건: 2125년 3월 용산 계약을 놓친 뒤 후속 운송 기회를 찾으며 조사를 의뢰한다.\n- 플레이어 개입: 다른 상인의 물량을 모아 새 운송 계약을 연결할 수 있다.\n- 거주지: 한강로동 임차 거처\n- 업무 위치: 용산역 대합실과 예약 화물 창고의 계약 사용\n\n<a id=\"연계-의뢰-지연희-도입\"></a>",
-  "sources": [
-    "Cast-Unaffiliated"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "문도현",
-        "type": "계약",
-        "to": "지연희",
-        "basis": "문도현은 분류해 임시 보관한 화물의 다음 인계 상대와 전달 내용을 지연희에게 맡긴다. 지연희는 독립 전령으로 인수·전달 소식을 이어 문도현이 약속한 운송의 연락 공백을 확인하게 한다."
-      }
-    ],
-    "incoming": [
-      {
-        "from": "지연희",
-        "type": "계약",
-        "to": "문도현",
-        "basis": "지연희는 전달물의 인수·인계 소식을 문도현에게 전하고 다음 운송 상대의 연락을 잇는다. 문도현은 화물의 대조·분류 기록과 전달 내용을 확인해 빠진 인계가 어느 구간에서 생겼는지 찾는다."
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

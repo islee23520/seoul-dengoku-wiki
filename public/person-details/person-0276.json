@@ -1,504 +1,139 @@
 {
   "id": "person-0276",
   "name": "권도하",
-  "title": "궤도기병 반장",
-  "position": "강남역 궤도기병 반장",
+  "title": "고속터미널역 정비장",
+  "position": "고속터미널역 정비장 · 아크",
   "characterId": "K275",
-  "rank": "사원",
-  "commonTier": "T5",
-  "occupation": "차륜 점검·무장 탑재 확인",
+  "rank": "정비장",
+  "commonTier": "T4",
+  "occupation": "정비대 통솔",
   "gender": "여성",
   "stage": "S1",
-  "state": "S11",
-  "stateName": "성하그룹",
-  "sourceRoute": "/world/Cast-State-11#인물-권도하",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0276",
   "birthDate": "2097-03-04",
   "birthday": "03-04",
   "age": 29,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-11.json#/content/61"
-  ],
-  "familyTree": {
-    "personId": "K275",
-    "nodes": [
-      {
-        "id": "K275",
-        "personId": "K275",
-        "kind": "person",
-        "name": "권도하",
-        "birthDate": "2097-03-04",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K275"
-          },
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-권도하-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 강남역 궤도기병 반장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-권도하-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0276"
-      },
-      {
-        "id": "FH-K275-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "권승현",
-        "lineage": {
-          "surname": "권",
-          "bongwan": "안동",
-          "clan": "ad8c-c548-b3d9"
-        },
-        "birthDate": "2067-03-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-권도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "권승현은 대합실 당직에서 차륜 점검·무장 탑재 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-권도하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K275-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "권승영",
-        "lineage": {
-          "surname": "권",
-          "bongwan": "안동",
-          "clan": "ad8c-c548-b3d9"
-        },
-        "birthDate": "2037-03-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-권도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "권승영은 대합실 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-권도하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K275-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "권승윤",
-        "lineage": {
-          "surname": "권",
-          "bongwan": "안동",
-          "clan": "ad8c-c548-b3d9"
-        },
-        "birthDate": "2007-03-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-권도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "권승윤은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-권도하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K275-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "김현빈",
-        "birthDate": "2067-03-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-권도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "김현빈은 대합실 당직에서 차륜 점검·무장 탑재 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-권도하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K275-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "박현도",
-        "birthDate": "2037-03-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-권도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "박현도는 대합실 당직에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-권도하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K275-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "이현미",
-        "birthDate": "2007-03-04",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-권도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "이현미는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-11.json",
-                "anchor": "인물-권도하-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K275-P-01:K275:biological",
-        "from": "FH-K275-P-01",
-        "to": "K275",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-권도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K275-P-02:FH-K275-P-01:biological",
-        "from": "FH-K275-P-02",
-        "to": "FH-K275-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-권도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K275-P-03:FH-K275-P-02:biological",
-        "from": "FH-K275-P-03",
-        "to": "FH-K275-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-권도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K275-M-01:K275:biological",
-        "from": "FH-K275-M-01",
-        "to": "K275",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-권도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K275-M-02:FH-K275-M-01:biological",
-        "from": "FH-K275-M-02",
-        "to": "FH-K275-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-권도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K275-M-03:FH-K275-M-02:biological",
-        "from": "FH-K275-M-03",
-        "to": "FH-K275-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-11.json",
-            "anchor": "인물-권도하-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ad8c-c548-b3d9",
+    "name": "안동 권씨",
+    "crest": "clan-crests/ad8c-c548-b3d9.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "권도하는 스물아홉에 서초 곁집의 본역인 고속터미널역 정비대를 맡았고, 부위가 셋이다. 정비대 곁에 부품 바꿈터가 있어, 동작 나루지기 최지우와 맺은 약속에 따라 경계를 넘어온 전선과 전지를 정해진 정비 차례로 갚는다. 동작 쪽 짐꾼이 넘어오는 날이면 그는 바깥 부품을 몸에 대기 전에 사흘 동안 따뜻한 벽에 두라는 앞선 정비장 임시온의 말을 젊은 정비공들에게 다시 일러 둔다. 갚을 몫이 밀리면 자기 맞춤 날부터 뒤로 미룬다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "고속터미널역 정비장",
+    "품계": "정비장",
+    "생업": "정비대 통솔",
+    "일하는 역": "고속터미널역",
+    "잠자는 역": "고속터미널역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 3
+  },
+  "sections": {
+    "생애": "권도하는 스물아홉에 서초 곁집의 본역인 고속터미널역 정비대를 맡았고, 부위가 셋이다. 정비대 곁에 부품 바꿈터가 있어, 동작 나루지기 최지우와 맺은 약속에 따라 경계를 넘어온 전선과 전지를 정해진 정비 차례로 갚는다. 동작 쪽 짐꾼이 넘어오는 날이면 그는 바깥 부품을 몸에 대기 전에 사흘 동안 따뜻한 벽에 두라는 앞선 정비장 임시온의 말을 젊은 정비공들에게 다시 일러 둔다. 갚을 몫이 밀리면 자기 맞춤 날부터 뒤로 미룬다.",
+    "관직": "직함 고속터미널역 정비장. 직위 고속터미널역 정비장 · 아크. 품계 정비장. 일하는 역 고속터미널역."
+  },
+  "values": {
+    "권위": 45,
+    "개방": -30,
+    "무력": 15,
+    "물질": -10,
+    "공동": 50,
+    "원칙": 5,
+    "공개": -50,
+    "자격": 35,
+    "분산": -10,
+    "변혁": 20
+  },
+  "desire": {
+    "갈망": 35,
+    "독점": 15,
+    "위험": 10,
+    "과시": 30,
+    "지속": 30,
+    "지향": "무성향",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0276",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "권도하",
+        "type": "지휘",
+        "to": "송하율",
+        "basis": "반포4동 대피소장 송하율의 직속"
+      },
+      {
+        "from": "권도하",
+        "type": "계약",
+        "to": "최지우",
+        "basis": "고속터미널 부품 바꿈터로 들어오는 전선과 전지를 정해진 정비 차례로 갚는다는 동작 나루지기와의 약속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K272",
+    "name": "송하율",
+    "courtId": "court:K272",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 10,
-        "effective": 10
-      },
-      "strategy": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "negotiation": {
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "management": {
-        "base": 9,
-        "effective": 9
+      "stewardship": {
+        "base": 10,
+        "effective": 10
       },
-      "insight": {
-        "base": 8,
-        "effective": 8
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
         "base": 7,
         "effective": 7
       },
       "prowess": {
-        "base": 7,
-        "effective": 7
-      },
-      "endurance": {
-        "base": 8,
-        "effective": 8
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k275-escort-timing-coordination",
-        "name": {
-          "ko": "호송 시각 조정",
-          "en": "Escort timing coordination"
-        },
-        "rating": 55
-      }
-    ],
-    "traits": [
-      {
-        "id": "k275-priority",
-        "name": {
-          "ko": "돌격보다 규율",
-          "en": "Discipline before charges"
-        },
-        "description": {
-          "ko": "권도하는 북문 순찰과 북부 호송의 시각·신호를 맞춘다. 돌격 규율은 강경하지만 전투 승리 근거는 없다.",
-          "en": "Gwon Doha coordinates northern gate patrol and escort timings and signals. His strict charge discipline does not establish battlefield victories."
-        },
-        "behavior": {
-          "ko": "출격 전에 차륜 점검을 의무화하고, 무장 탑재는 상무와 감사가 함께 서명해야 한다.",
-          "en": "Office. Rank: assistant manager. Title: rail cavalry squad leader. He made wheel checks mandatory before sorties and required the Elder's and the auditor's signatures together for arms loading."
-        },
-        "stress": {
-          "ko": "궤도기병이 사택 민병으로 흡수되어 기지가 병영이 되는 것.",
-          "en": "Fear. That the rail cavalry would be absorbed into a residential militia and the base would become a barracks."
-        },
-        "relationship": {
-          "ko": "이홍원의 북문 순찰을 맡고 장세화와 북부 호송을 맞춘다. 강태산과 회랑 신호를 공유한다.",
-          "en": "Relations. Held I Hongwon's north gate patrol and matched the northern convoys with Jang Sehwa. Shared the corridor signals with Kang Taesan."
-        },
-        "effects": []
-      },
-      {
-        "id": "k275-accountability",
-        "name": {
-          "ko": "절차를 통한 책임",
-          "en": "Procedural accountability"
-        },
-        "description": {
-          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
-          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
-        },
-        "behavior": {
-          "ko": "관직. 품계 사원. 직함은 강남역 궤도기병 반장. 출격 전에 차륜 점검을 의무화하고, 무장 탑재는 상무와 감사가 함께 서명해야 한다.",
-          "en": "Office. Rank: assistant manager. Title: rail cavalry squad leader. He made wheel checks mandatory before sorties and required the Elder's and the auditor's signatures together for arms loading."
-        },
-        "stress": {
-          "ko": "공포. 궤도기병이 사택 민병으로 흡수되어 기지가 병영이 되는 것.",
-          "en": "Fear. That the rail cavalry would be absorbed into a residential militia and the base would become a barracks."
-        },
-        "relationship": {
-          "ko": "관계. 이홍원의 북문 순찰을 맡고 장세화와 북부 호송을 맞춘다. 강태산과 회랑 신호를 공유한다.",
-          "en": "Relations. Held I Hongwon's north gate patrol and matched the northern convoys with Jang Sehwa. Shared the corridor signals with Kang Taesan."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "권도하는 북문 순찰과 북부 호송의 시각·신호를 맞춘다. 돌격 규율은 강경하지만 전투 승리 근거는 없다.",
-      "en": "Gwon Doha coordinates northern gate patrol and escort timings and signals. His strict charge discipline does not establish battlefield victories."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -508,7 +143,7 @@
         {
           "id": "right-leg",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "head",
@@ -524,79 +159,29 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "ad8c-c548-b3d9",
-    "name": "안동 권씨",
-    "crest": "clan-crests/ad8c-c548-b3d9.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 20,
-    "개방": -15,
-    "무력": 5,
-    "물질": 40,
-    "공동": 30,
-    "원칙": 15,
-    "공개": -5,
-    "자격": 70,
-    "분산": 20,
-    "변혁": -25
-  },
-  "desire": {
-    "갈망": 35,
-    "독점": 15,
-    "위험": 10,
-    "과시": 30,
-    "지속": 30,
-    "지향": "무성향",
-    "결합": "없음"
-  },
-  "fields": {
-    "생업": "차륜 점검·무장 탑재 확인",
-    "소속": "성하그룹",
-    "품계": "사원",
-    "직함": "강남역 궤도기병 반장",
-    "가치관": "권위 20 | 개방 −15 | 무력 5 | 물질 40 | 공동 30 | 원칙 15 | 공개 −5 | 자격 70 | 분산 20 | 변혁 −25",
-    "욕망": "갈망 35 | 독점 15 | 위험 10 | 과시 30 | 지속 30 | 지향 무성향 | 결합 없음"
-  },
-  "sections": {
-    "생애": "대합실 당직에서 자랐다. 강남역 궤도기병 반장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 권도하는 서초4동에서 차륜 점검·무장 탑재 확인 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다. 이홍원의 북문 순찰을 맡고 장세화와 북부 호송을 맞춘다. 강태산과 회랑 신호를 공유한다",
-    "관직": "품계 사원. 직함은 강남역 궤도기병 반장. 출격 전에 차륜 점검을 의무화하고, 무장 탑재는 상무와 감사가 함께 서명해야 한다.",
-    "일화": "시험 차륜 결함 직후 북문 순찰차가 제동 불량으로 정차해 호송 시각이 어긋났다.",
-    "관계": "이홍원의 북문 순찰을 맡고 장세화와 북부 호송을 맞춘다. 강태산과 회랑 신호를 공유한다.",
-    "야망": "북문 순찰을 강남역 호송의 북문로 묶어 서울 내부 계약과 당직표에 따라 성하전자 열차를 움직인다.",
-    "공포": "궤도기병이 사택 민병으로 흡수되어 기지가 병영이 되는 것.",
-    "개입": "제동 장치를 현장에서 교체하거나, 궤도기병의 무단 무장을 회장실에 보고할 수 있다."
-  },
-  "biography": "규율을 좋아하고 선로 위의 침묵을 전투의 일부로 본다. 숙련 없는 돌격은 배신에 가깝다고 말한다.\n\n- 생업: 차륜 점검·무장 탑재 확인\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 궤도기병 반장\n**생애.** 대합실 당직에서 자랐다. 강남역 궤도기병 반장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 권도하는 서초4동에서 차륜 점검·무장 탑재 확인 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다. 이홍원의 북문 순찰을 맡고 장세화와 북부 호송을 맞춘다. 강태산과 회랑 신호를 공유한다\n\n**관직.** 품계 사원. 직함은 강남역 궤도기병 반장. 출격 전에 차륜 점검을 의무화하고, 무장 탑재는 상무와 감사가 함께 서명해야 한다.\n\n**일화.** 시험 차륜 결함 직후 북문 순찰차가 제동 불량으로 정차해 호송 시각이 어긋났다.\n\n**관계.** 이홍원의 북문 순찰을 맡고 장세화와 북부 호송을 맞춘다. 강태산과 회랑 신호를 공유한다.\n\n**야망.** 북문 순찰을 강남역 호송의 북문로 묶어 서울 내부 계약과 당직표에 따라 성하전자 열차를 움직인다.\n\n**공포.** 궤도기병이 사택 민병으로 흡수되어 기지가 병영이 되는 것.\n\n**개입.** 제동 장치를 현장에서 교체하거나, 궤도기병의 무단 무장을 회장실에 보고할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −15 | 무력 5 | 물질 40 | 공동 30 | 원칙 15 | 공개 −5 | 자격 70 | 분산 20 | 변혁 −25\n- 욕망: 갈망 35 | 독점 15 | 위험 10 | 과시 30 | 지속 30 | 지향 무성향 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-11"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "권도하",
-        "type": "계약",
-        "to": "장세화",
-        "basis": "북부 호송 시각을 맞춤"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:station:고속터미널",
+      "name": {
+        "ko": "고속터미널역"
       },
-      {
-        "from": "권도하",
-        "type": "계약",
-        "to": "강태산",
-        "basis": "회랑 신호를 공유"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "용두봉",
-        "type": "계약",
-        "to": "권도하",
-        "basis": "권도하의 출격 목록을 정비창에서 받고"
-      }
-    ]
-  }
+      "holderPersonId": "K275",
+      "directLiegePersonId": "K272",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "고속터미널",
+        "stationName": "고속터미널"
+      },
+      "adminRefs": [
+        {
+          "id": "region:1165058100",
+          "name": "반포4동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
+  ]
 }

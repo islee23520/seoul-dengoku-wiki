@@ -3,26 +3,27 @@
   "personId": "person-0468",
   "characterId": "K468",
   "name": "강달유",
-  "stateId": "S13",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "약재 물류상"
+    "role": "의사 · 서대문역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "very short buzz-cut hair",
-    "upper": "dove grey plain single-breasted clerk's jacket with cotton oversleeves",
-    "outfit": "dove grey plain single-breasted clerk's jacket with cotton oversleeves",
+    "upper": "흰 소매 덮개를 댄 회색 누비 외투",
+    "outfit": "흰 소매 덮개를 댄 회색 누비 외투",
     "palette": [
-      "dove grey",
+      "grey",
+      "off-white",
       "navy"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "navy wool breeches with buttoned cuffs",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "grey wadded trousers",
+    "footwear": "felt boots",
+    "accessories": "cloth satchel of dressings and a civil-servant ID"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -173,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "cap with ear flaps",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "dove grey plain single-breasted clerk's jacket with cotton oversleeves",
+        "value": "흰 소매 덮개를 댄 회색 누비 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "navy wool breeches with buttoned cuffs",
+        "value": "grey wadded trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -203,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "high quilted collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "cloth satchel of dressings and a civil-servant ID",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "off-white and navy",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "canvas, card, cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "satchel across the body; ID around the neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "soft rectangular bag; flat card",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -258,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 강달유, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: fair with a neutral undertone. upper garment: dove grey plain single-breasted clerk's jacket with cotton oversleeves; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 강달유, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: fair with a neutral undertone. headwear: cap with ear flaps; upper garment: 흰 소매 덮개를 댄 회색 누비 외투; neckline: high quilted collar. accessories: cloth satchel of dressings and a civil-servant ID; worn as satchel across the body; ID around the neck. color palette: grey, off-white, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 강달유, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: dove grey plain single-breasted clerk's jacket with cotton oversleeves; neckline: buttoned shirt collar; lower garment: navy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 강달유, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: fair with a neutral undertone; average adult male height. headwear: cap with ear flaps; upper garment: 흰 소매 덮개를 댄 회색 누비 외투; neckline: high quilted collar; lower garment: grey wadded trousers; footwear: felt boots. accessories: cloth satchel of dressings and a civil-servant ID; worn as satchel across the body; ID around the neck. color palette: grey, off-white, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 강달유, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: dove grey plain single-breasted clerk's jacket with cotton oversleeves; neckline: buttoned shirt collar; lower garment: navy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 강달유, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: fair with a neutral undertone; average adult male height. headwear: cap with ear flaps; upper garment: 흰 소매 덮개를 댄 회색 누비 외투; neckline: high quilted collar; lower garment: grey wadded trousers; footwear: felt boots. accessories: cloth satchel of dressings and a civil-servant ID; worn as satchel across the body; ID around the neck. color palette: grey, off-white, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 강달유, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: dove grey plain single-breasted clerk's jacket with cotton oversleeves; neckline: buttoned shirt collar; lower garment: navy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 강달유, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: fair with a neutral undertone; average adult male height. headwear: cap with ear flaps; upper garment: 흰 소매 덮개를 댄 회색 누비 외투; neckline: high quilted collar; lower garment: grey wadded trousers; footwear: felt boots. accessories: cloth satchel of dressings and a civil-servant ID; worn as satchel across the body; ID around the neck. color palette: grey, off-white, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 강달유, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: fair with a neutral undertone; average adult male height. upper garment: dove grey plain single-breasted clerk's jacket with cotton oversleeves; neckline: buttoned shirt collar; lower garment: navy wool breeches with buttoned cuffs; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: dove grey, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 강달유, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; upturned almond dark brown eyes; angled eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: average; skin: fair with a neutral undertone; average adult male height. headwear: cap with ear flaps; upper garment: 흰 소매 덮개를 댄 회색 누비 외투; neckline: high quilted collar; lower garment: grey wadded trousers; footwear: felt boots. accessories: cloth satchel of dressings and a civil-servant ID; worn as satchel across the body; ID around the neck. color palette: grey, off-white, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

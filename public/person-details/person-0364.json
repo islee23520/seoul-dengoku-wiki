@@ -1,385 +1,120 @@
 {
   "id": "person-0364",
   "name": "원다결",
-  "title": "양군 관문 통과 시장 거점장 · 광진구 영주",
-  "position": "양군 관문 통과 시장 거점장 · 광진구 영주",
+  "title": "구의역 역장",
+  "position": "구의역 역장 · 정부",
   "characterId": "K363",
-  "rank": "영주",
-  "commonTier": "T3",
-  "occupation": "시장 시세·통과 품목 게시·출고 확인",
+  "rank": "역장",
+  "commonTier": "T4",
+  "occupation": "역 행정",
   "gender": "남성",
   "stage": "S2",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-원다결",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0364",
   "birthDate": "2079-09-29",
   "birthday": "09-29",
   "age": 47,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/28"
-  ],
-  "familyTree": {
-    "personId": "K363",
-    "nodes": [
-      {
-        "id": "K363",
-        "personId": "K363",
-        "kind": "person",
-        "name": "원다결",
-        "birthDate": "2079-09-29",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K363"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-원다결-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 노량진 선창에서 자랐다. 양군 관문 통과 시장 거점장 자리는 저울 재점검 공개로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-원다결-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0364"
-      },
-      {
-        "id": "FH-K363-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "원승원",
-        "lineage": {
-          "surname": "원",
-          "bongwan": "원주",
-          "clan": "c6d0-c6d0-c8fc"
-        },
-        "birthDate": "2049-09-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-원다결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2087,
-            "summary": "원승원은 노량진 선창에서 시장 시세·통과 품목 게시·출고 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-원다결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K363-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "원승진",
-        "lineage": {
-          "surname": "원",
-          "bongwan": "원주",
-          "clan": "c6d0-c6d0-c8fc"
-        },
-        "birthDate": "2019-09-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-원다결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "원승진은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-원다결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K363-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정준은",
-        "birthDate": "2049-09-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-원다결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2087,
-            "summary": "정준은은 노량진 선창에서 시장 시세·통과 품목 게시·출고 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-원다결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K363-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤준아",
-        "birthDate": "2019-09-29",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-원다결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "윤준아는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-원다결-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K363-P-01:K363:biological",
-        "from": "FH-K363-P-01",
-        "to": "K363",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-원다결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K363-P-02:FH-K363-P-01:biological",
-        "from": "FH-K363-P-02",
-        "to": "FH-K363-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-원다결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K363-M-01:K363:biological",
-        "from": "FH-K363-M-01",
-        "to": "K363",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-원다결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K363-M-02:FH-K363-M-01:biological",
-        "from": "FH-K363-M-02",
-        "to": "FH-K363-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-원다결-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c6d0-c6d0-c8fc",
+    "name": "원주 원씨",
+    "crest": "clan-crests/c6d0-c6d0-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "원다결이 역장 도장을 받은 구의역은 광진구 자양2동에 있고, 그는 그 동에 기재된 마흔일곱 살 원주 원씨 남성이다. 강가에 붙은 구의역은 취수구 일꾼과 경계 병사가 함께 자는 역이라, 그는 잠자리 번호를 교대 순서에 맞춰 짠다. 출입구를 닫는 시각을 국군 부대와 맞추느라 하루에 두 번 지휘관 수지완과 마주 앉고, 그날 정한 시각은 동장 원예나의 도장을 받아 역 게시판에 붙인다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "구의역 역장",
+    "품계": "역장",
+    "생업": "역 행정",
+    "일하는 역": "구의역",
+    "잠자는 역": "구의역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "원다결이 역장 도장을 받은 구의역은 광진구 자양2동에 있고, 그는 그 동에 기재된 마흔일곱 살 원주 원씨 남성이다. 강가에 붙은 구의역은 취수구 일꾼과 경계 병사가 함께 자는 역이라, 그는 잠자리 번호를 교대 순서에 맞춰 짠다. 출입구를 닫는 시각을 국군 부대와 맞추느라 하루에 두 번 지휘관 수지완과 마주 앉고, 그날 정한 시각은 동장 원예나의 도장을 받아 역 게시판에 붙인다.",
+    "관직": "직함 구의역 역장. 직위 구의역 역장 · 정부. 품계 역장. 일하는 역 구의역."
+  },
+  "values": {
+    "권위": 90,
+    "개방": -85,
+    "무력": 75,
+    "물질": 0,
+    "공동": 40,
+    "원칙": 15,
+    "공개": -25,
+    "자격": 0,
+    "분산": -70,
+    "변혁": -25
+  },
+  "desire": {
+    "갈망": -10,
+    "독점": 40,
+    "위험": -40,
+    "과시": 5,
+    "지속": 20,
+    "지향": "이성",
+    "결합": "계약동거"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0364",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "원다결",
+        "type": "지휘",
+        "to": "원예나",
+        "basis": "자양2동 동장 원예나의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K355",
+    "name": "원예나",
+    "courtId": "court:K355",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "strategy": {
-        "base": 8,
-        "effective": 8
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "negotiation": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "management": {
-        "base": 12,
-        "effective": 12
-      },
-      "insight": {
-        "base": 11,
-        "effective": 11
-      },
-      "learning": {
-        "base": 10,
-        "effective": 10
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
+      "intrigue": {
         "base": 7,
         "effective": 7
-      }
-    },
-    "skills": [
-      {
-        "id": "market-stock-inspection",
-        "name": {
-          "ko": "시장 재고 검수",
-          "en": "Market stock inspection"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "stated-priority",
-        "name": {
-          "ko": "실재고만 저울에",
-          "en": "Only real stock on the scales"
-        },
-        "description": {
-          "ko": "강국 면제 문서가 몰려도 군수 출고를 거부하고 실재고만 계량했다. 공개 시세와 주민 물자 보존이 판단의 축이다.",
-          "en": "Even a rush of great-power exemptions did not secure military shipment; only actual stock was weighed. Public prices and residents’ supplies shape judgment."
-        },
-        "behavior": {
-          "ko": "통과세를 숨기는 상인을 저울 앞에서 돌려보내고, 군사 면제 칸을 시세로 파는 말을 시장에서 쫓아낸다. 공개 저울을 신용으로 본다.",
-          "en": "She sent merchants who hid passage tolls away from the scales and drove out of the market any voice that sold military exemption columns for prices. She read the public scales as credit."
-        },
-        "stress": {
-          "ko": "공포. 시장 재고가 군수 전용으로 빠져 제한 급수 주민의 하루치가 빈 상자가 되는 것.",
-          "en": "Fear. That the market inventory would leave as munitions-only and the restricted-water residents' daily ration would become an empty box."
-        },
-        "relationship": {
-          "ko": "관계. 원예나의 교량 송장과 시세를 맞추고, 방마름의 세 칸을 시장 원장에 옮긴다. 남윤경의 비상 시세 제의를 원한으로 돌려보낸다.",
-          "en": "Relations. Matched the prices with Won Yena's bridge invoices and moved Bang Mareum's toll columns into the market ledger. Sent Nam Yungyeong's emergency price offer back as a grudge."
-        },
-        "effects": []
       },
-      {
-        "id": "bounded-duty",
-        "name": {
-          "ko": "자기 당직의 경계",
-          "en": "Boundaries of personal duty"
-        },
-        "description": {
-          "ko": "관직. 품계 공동실무원. 직함은 양군 관문 통과 시장 거점장. 시세와 통과 품목을 벽에 적고, 면제 문장이 찍힌 주문서는 하윤목의 원장 게시 전까지 출고를 막는다.",
-          "en": "Office. Rank: company commander. Title: gate passage market outpost chief. She wrote the prices and the passage items on the wall and blocked the release of any order stamped with an exemption clause until Ha Yunmok's ledger was posted."
-        },
-        "behavior": {
-          "ko": "확인된 당직 수행과 제한: 관직. 품계 공동실무원. 직함은 양군 관문 통과 시장 거점장. 시세와 통과 품목을 벽에 적고, 면제 문장이 찍힌 주문서는 하윤목의 원장 게시 전까지 출고를 막는다.",
-          "en": "Recorded duty and limits: Office. Rank: company commander. Title: gate passage market outpost chief. She wrote the prices and the passage items on the wall and blocked the release of any order stamped with an exemption clause until Ha Yunmok's ledger was posted."
-        },
-        "stress": {
-          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 시장 재고가 군수 전용으로 빠져 제한 급수 주민의 하루치가 빈 상자가 되는 것.",
-          "en": "The card states this concern when those boundaries fail: Fear. That the market inventory would leave as munitions-only and the restricted-water residents' daily ration would become an empty box."
-        },
-        "relationship": {
-          "ko": "관계. 원예나의 교량 송장과 시세를 맞추고, 방마름의 세 칸을 시장 원장에 옮긴다. 남윤경의 비상 시세 제의를 원한으로 돌려보낸다.",
-          "en": "Relations. Matched the prices with Won Yena's bridge invoices and moved Bang Mareum's toll columns into the market ledger. Sent Nam Yungyeong's emergency price offer back as a grudge."
-        },
-        "effects": []
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
-    ],
-    "narrative": {
-      "ko": "강국 면제 문서가 몰려도 군수 출고를 거부하고 실재고만 계량했다. 공개 시세와 주민 물자 보존이 판단의 축이다.",
-      "en": "Even a rush of great-power exemptions did not secure military shipment; only actual stock was weighed. Public prices and residents’ supplies shape judgment."
     },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -419,188 +154,27 @@
   },
   "confirmedHoldings": [
     {
-      "id": "holding:opening-duchy-gu-11215-S14",
+      "id": "holding:v3:station:구의",
       "name": {
-        "ko": "광진구 공작령 직영지"
+        "ko": "구의역"
       },
       "holderPersonId": "K363",
-      "directLiegePersonId": "K144",
-      "stateId": "S14",
+      "directLiegePersonId": "K355",
+      "stateId": "government",
+      "stationRef": {
+        "stationId": "구의",
+        "stationName": "구의"
+      },
       "adminRefs": [
-        {
-          "id": "region:1121571000",
-          "name": "화양동"
-        },
-        {
-          "id": "region:1121573000",
-          "name": "군자동"
-        },
-        {
-          "id": "region:1121574000",
-          "name": "중곡1동"
-        },
-        {
-          "id": "region:1121575000",
-          "name": "중곡2동"
-        },
-        {
-          "id": "region:1121576000",
-          "name": "중곡3동"
-        },
-        {
-          "id": "region:1121577000",
-          "name": "중곡4동"
-        },
-        {
-          "id": "region:1121578000",
-          "name": "능동"
-        },
-        {
-          "id": "region:1121581000",
-          "name": "광장동"
-        },
-        {
-          "id": "region:1121582000",
-          "name": "자양1동"
-        },
         {
           "id": "region:1121583000",
           "name": "자양2동"
-        },
-        {
-          "id": "region:1121584000",
-          "name": "자양3동"
-        },
-        {
-          "id": "region:1121584700",
-          "name": "자양4동"
-        },
-        {
-          "id": "region:1121585000",
-          "name": "구의1동"
-        },
-        {
-          "id": "region:1121586000",
-          "name": "구의2동"
-        },
-        {
-          "id": "region:1121587000",
-          "name": "구의3동"
         }
       ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-11215-S14",
+      "territorialScale": "station",
+      "titleId": null,
       "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
+      "formalTitleRank": null
     }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
-    {
-      "id": "title:duchy-gu-11215-S14",
-      "name": "광진구 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K363",
-      "basis": "개막 행정 규모 그룹 gu:11215(duchy) 배분 · 결정적 후보 선정",
-      "stateId": "S14",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "region:1121571000",
-        "region:1121573000",
-        "region:1121574000",
-        "region:1121575000",
-        "region:1121576000",
-        "region:1121577000",
-        "region:1121578000",
-        "region:1121581000",
-        "region:1121582000",
-        "region:1121583000",
-        "region:1121584000",
-        "region:1121584700",
-        "region:1121585000",
-        "region:1121586000",
-        "region:1121587000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
-    }
-  ],
-  "clan": {
-    "id": "c6d0-c6d0-c8fc",
-    "name": "원주 원씨",
-    "crest": "clan-crests/c6d0-c6d0-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 45,
-    "개방": -30,
-    "무력": 40,
-    "물질": 5,
-    "공동": 35,
-    "원칙": -5,
-    "공개": 0,
-    "자격": -15,
-    "분산": -20,
-    "변혁": -5
-  },
-  "desire": {
-    "갈망": -10,
-    "독점": 40,
-    "위험": -40,
-    "과시": 5,
-    "지속": 20,
-    "지향": "이성",
-    "결합": "계약동거"
-  },
-  "fields": {
-    "생업": "시장 시세·통과 품목 게시·출고 확인",
-    "소속": "아관사 양군 공동실무",
-    "품계": "공동실무원",
-    "직함": "양군 관문 통과 시장 거점장",
-    "가치관": "권위 45 | 개방 −30 | 무력 40 | 물질 5 | 공동 35 | 원칙 −5 | 공개 0 | 자격 −15 | 분산 −20 | 변혁 −5",
-    "욕망": "갈망 −10 | 독점 40 | 위험 −40 | 과시 5 | 지속 20 | 지향 이성 | 결합 계약동거"
-  },
-  "sections": {
-    "생애": "2079-09-29에 태어났다. 2126년 개막 현재 양군 관문 통과 시장 거점장 직무를 맡아 시장 시세·통과 품목 게시·출고 확인 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의1동의 시장 시세·통과 품목 게시·출고 확인 창구가 원다결의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
-    "관직": "품계 공동실무원. 직함은 양군 관문 통과 시장 거점장. 시장 시세·통과 품목 게시·출고 확인 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
-    "일화": "세 후원 문장이 붙은 지휘부 면제 문서가 같은 주에 들어오자 원다결은 군수 명목의 출고를 거부하고 실재고만 저울에 올렸다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
-    "관계": "원예나의 교량 송장과 시세를 맞추고, 방마름의 세 칸을 시장 원장에 옮긴다. 남윤경의 비상 시세 제의를 원한으로 돌려보낸다.",
-    "야망": "원다결은 양군 관문 통과 시장 거점장 직무에서 시장 시세·통과 품목 게시·출고 확인 기록을 공개 인계표와 맞물리게 하려 한다.",
-    "공포": "양군 관문 통과 시장 거점장 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
-    "개입": "면제 주문서를 공개하거나, 급수 물자 우선 칸을 시장 원장에 고정할 수 있다. 원다결의 시장 시세·통과 품목 게시·출고 확인 원장을 대조해 다음 인계의 증거를 세울 수 있다."
-  },
-  "biography": "원다결은 시장 시세·통과 품목 게시·출고 확인 기록을 손에 익힌 아관사 양군 공동실무 인물이다. 통과세를 숨기는 상인을 저울 앞에서 돌려보내고, 군사 면제 칸을 시세로 파는 말을 시장에서 쫓아낸다. 공개 저울을 신용으로 본다.\n\n- 생업: 시장 시세·통과 품목 게시·출고 확인\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 관문 통과 시장 거점장\n**생애.** 2079-09-29에 태어났다. 2126년 개막 현재 양군 관문 통과 시장 거점장 직무를 맡아 시장 시세·통과 품목 게시·출고 확인 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의1동의 시장 시세·통과 품목 게시·출고 확인 창구가 원다결의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 공동실무원. 직함은 양군 관문 통과 시장 거점장. 시장 시세·통과 품목 게시·출고 확인 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 세 후원 문장이 붙은 지휘부 면제 문서가 같은 주에 들어오자 원다결은 군수 명목의 출고를 거부하고 실재고만 저울에 올렸다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 원예나의 교량 송장과 시세를 맞추고, 방마름의 세 칸을 시장 원장에 옮긴다. 남윤경의 비상 시세 제의를 원한으로 돌려보낸다.\n\n**야망.** 원다결은 양군 관문 통과 시장 거점장 직무에서 시장 시세·통과 품목 게시·출고 확인 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 양군 관문 통과 시장 거점장 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 면제 주문서를 공개하거나, 급수 물자 우선 칸을 시장 원장에 고정할 수 있다. 원다결의 시장 시세·통과 품목 게시·출고 확인 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 45 | 개방 −30 | 무력 40 | 물질 5 | 공동 35 | 원칙 −5 | 공개 0 | 자격 −15 | 분산 −20 | 변혁 −5\n- 욕망: 갈망 −10 | 독점 40 | 위험 −40 | 과시 5 | 지속 20 | 지향 이성 | 결합 계약동거\n:::",
-  "sources": [
-    "Cast-State-14"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "원다결",
-        "type": "원한",
-        "to": "남윤경",
-        "basis": "남윤경의 비상 시세 제의를 원한으로 돌려보낸다"
-      },
-      {
-        "from": "원다결",
-        "type": "계약",
-        "to": "원예나",
-        "basis": "원예나의 교량 송장과 시세를 맞추고"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "원예나",
-        "type": "계약",
-        "to": "원다결",
-        "basis": "원다결의 관문 저울에 무게를 맞춘다"
-      }
-    ]
-  }
+  ]
 }

@@ -3,26 +3,27 @@
   "personId": "person-0190",
   "characterId": "K189",
   "name": "아나 포페스쿠",
-  "stateId": "S07",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "급수열차 창 점유 증인"
+    "role": "동주민센터 선임 서기 · 남영역"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, faint expression lines",
     "hair": "shoulder-length hair styled in 1940s victory rolls",
-    "upper": "dove grey knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer",
-    "outfit": "dove grey knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer",
+    "upper": "남색 띠를 두른 누빔 외투",
+    "outfit": "남색 띠를 두른 누빔 외투",
     "palette": [
-      "dove grey",
-      "mustard ochre"
+      "navy",
+      "ash grey",
+      "brown"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "mustard ochre pleated knee-length wool skirt over thick stockings",
-    "footwear": "laced leather walking shoes",
-    "accessories": "duty whistle on a cord lanyard"
+    "lower": "grey quilted trousers",
+    "footwear": "felt-lined synthetic rubber boots",
+    "accessories": "civil servant ID card on a cord and a cloth seal pouch at the hip"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +175,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "grey knitted cap with ear flaps",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "dove grey knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer",
+        "value": "남색 띠를 두른 누빔 외투",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "mustard ochre pleated knee-length wool skirt over thick stockings",
+        "value": "grey quilted trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "felt-lined synthetic rubber boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +205,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "quilted collar with a navy band",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "duty whistle on a cord lanyard",
+        "value": "civil servant ID card on a cord and a cloth seal pouch at the hip",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull brass",
+        "value": "navy cord, worn brown pouch",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, cord",
+        "value": "cloth cord, laminated card, cotton canvas",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "lanyard around the neck",
+        "value": "card hung from the neck, pouch tied to the belt",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat card and small drawstring pouch",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +260,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 아나 포페스쿠, an European heritage woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; almond grey-blue eyes; softly arched eyebrows; nose: straight bridge; mouth: wide closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average with narrow shoulders; skin: fair with pink undertone. upper garment: dove grey knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: dove grey, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 아나 포페스쿠, an European heritage woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; almond grey-blue eyes; softly arched eyebrows; nose: straight bridge; mouth: wide closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average with narrow shoulders; skin: fair with pink undertone. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band. accessories: civil servant ID card on a cord and a cloth seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: navy, ash grey, brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 아나 포페스쿠, an European heritage woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; almond grey-blue eyes; softly arched eyebrows; nose: straight bridge; mouth: wide closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average with narrow shoulders; skin: fair with pink undertone; average adult female height. upper garment: dove grey knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: mustard ochre pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: dove grey, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 아나 포페스쿠, an European heritage woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; almond grey-blue eyes; softly arched eyebrows; nose: straight bridge; mouth: wide closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average with narrow shoulders; skin: fair with pink undertone; average adult female height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a cord and a cloth seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: navy, ash grey, brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 아나 포페스쿠, an European heritage woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; almond grey-blue eyes; softly arched eyebrows; nose: straight bridge; mouth: wide closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average with narrow shoulders; skin: fair with pink undertone; average adult female height. upper garment: dove grey knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: mustard ochre pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: dove grey, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 아나 포페스쿠, an European heritage woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; almond grey-blue eyes; softly arched eyebrows; nose: straight bridge; mouth: wide closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average with narrow shoulders; skin: fair with pink undertone; average adult female height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a cord and a cloth seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: navy, ash grey, brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 아나 포페스쿠, an European heritage woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; almond grey-blue eyes; softly arched eyebrows; nose: straight bridge; mouth: wide closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average with narrow shoulders; skin: fair with pink undertone; average adult female height. upper garment: dove grey knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: mustard ochre pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: dove grey, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 아나 포페스쿠, an European heritage woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; almond grey-blue eyes; softly arched eyebrows; nose: straight bridge; mouth: wide closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average with narrow shoulders; skin: fair with pink undertone; average adult female height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a cord and a cloth seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: navy, ash grey, brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 아나 포페스쿠, an European heritage woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; almond grey-blue eyes; softly arched eyebrows; nose: straight bridge; mouth: wide closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average with narrow shoulders; skin: fair with pink undertone; average adult female height. upper garment: dove grey knit wool sweater over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: mustard ochre pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: dove grey, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 아나 포페스쿠, an European heritage woman, in her forties. Adult woman with a calm, restrained expression, faint expression lines; face shape: round; almond grey-blue eyes; softly arched eyebrows; nose: straight bridge; mouth: wide closed mouth; dusty rose lips. shoulder-length hair styled in 1940s victory rolls; black hair; shoulder-length length. build: average with narrow shoulders; skin: fair with pink undertone; average adult female height. headwear: grey knitted cap with ear flaps; upper garment: 남색 띠를 두른 누빔 외투; neckline: quilted collar with a navy band; lower garment: grey quilted trousers; footwear: felt-lined synthetic rubber boots. accessories: civil servant ID card on a cord and a cloth seal pouch at the hip; worn as card hung from the neck, pouch tied to the belt. color palette: navy, ash grey, brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

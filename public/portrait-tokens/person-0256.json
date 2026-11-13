@@ -3,27 +3,27 @@
   "personId": "person-0256",
   "characterId": "K255",
   "name": "소두",
-  "stateId": "S10",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "총회 전령 주지, 신보람의 실무 담당자"
+    "role": "수도방위사령부 직할대 초소장 · 마포역"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short cropped hair",
-    "upper": "navy short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold",
-    "outfit": "navy short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold",
+    "upper": "altered pre-Blackout camouflage cold-weather jacket with quilted lining",
+    "outfit": "altered pre-Blackout camouflage cold-weather jacket with quilted lining",
     "palette": [
-      "navy",
+      "olive camouflage",
       "rust brown",
-      "sand beige"
+      "navy"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "rust brown canvas work trousers tucked into boots",
-    "footwear": "thick-soled leather winter boots with wool socks",
-    "accessories": "leather dispatch satchel"
+    "lower": "camouflage cold-weather trousers",
+    "footwear": "felt-lined army boots",
+    "accessories": "army rank insignia on the chest and a service-number token on a cord"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "fur-lined ear-flap cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "navy short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold",
+        "value": "altered pre-Blackout camouflage cold-weather jacket with quilted lining",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "rust brown canvas work trousers tucked into boots",
+        "value": "camouflage cold-weather trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "thick-soled leather winter boots with wool socks",
+        "value": "felt-lined army boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -206,39 +206,39 @@
       "neckline": {
         "value": "turned-up jacket collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "leather dispatch satchel",
+        "value": "army rank insignia on the chest and a service-number token on a cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
-        "derived": true
-      },
-      "shape": {
-        "value": "flat flap satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "worn brown leather",
+        "value": "olive and dull steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "leather, brass buckle",
+        "value": "embroidered cloth, steel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the chest",
+        "value": "sewn on the chest, token on a cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(messenger)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small patch and tag",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 소두, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; black hair; short length. build: lean; skin: light olive. headwear: fur-lined ear-flap cap; upper garment: navy short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar. accessories: leather dispatch satchel; worn as strap across the chest. color palette: navy, rust brown, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 소두, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; black hair; short length. build: lean; skin: light olive. headwear: fur-lined ear-flap cap; upper garment: altered pre-Blackout camouflage cold-weather jacket with quilted lining; neckline: turned-up jacket collar. accessories: army rank insignia on the chest and a service-number token on a cord; worn as sewn on the chest, token on a cord. color palette: olive camouflage, rust brown, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 소두, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; black hair; short length. build: lean; skin: light olive; average adult male height. headwear: fur-lined ear-flap cap; upper garment: navy short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: rust brown canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: navy, rust brown, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 소두, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; black hair; short length. build: lean; skin: light olive; average adult male height. headwear: fur-lined ear-flap cap; upper garment: altered pre-Blackout camouflage cold-weather jacket with quilted lining; neckline: turned-up jacket collar; lower garment: camouflage cold-weather trousers; footwear: felt-lined army boots. accessories: army rank insignia on the chest and a service-number token on a cord; worn as sewn on the chest, token on a cord. color palette: olive camouflage, rust brown, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 소두, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; black hair; short length. build: lean; skin: light olive; average adult male height. headwear: fur-lined ear-flap cap; upper garment: navy short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: rust brown canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: navy, rust brown, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 소두, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; black hair; short length. build: lean; skin: light olive; average adult male height. headwear: fur-lined ear-flap cap; upper garment: altered pre-Blackout camouflage cold-weather jacket with quilted lining; neckline: turned-up jacket collar; lower garment: camouflage cold-weather trousers; footwear: felt-lined army boots. accessories: army rank insignia on the chest and a service-number token on a cord; worn as sewn on the chest, token on a cord. color palette: olive camouflage, rust brown, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 소두, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; black hair; short length. build: lean; skin: light olive; average adult male height. headwear: fur-lined ear-flap cap; upper garment: navy short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: rust brown canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: navy, rust brown, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 소두, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; black hair; short length. build: lean; skin: light olive; average adult male height. headwear: fur-lined ear-flap cap; upper garment: altered pre-Blackout camouflage cold-weather jacket with quilted lining; neckline: turned-up jacket collar; lower garment: camouflage cold-weather trousers; footwear: felt-lined army boots. accessories: army rank insignia on the chest and a service-number token on a cord; worn as sewn on the chest, token on a cord. color palette: olive camouflage, rust brown, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 소두, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; black hair; short length. build: lean; skin: light olive; average adult male height. headwear: fur-lined ear-flap cap; upper garment: navy short belted leather courier jacket, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: rust brown canvas work trousers tucked into boots; footwear: thick-soled leather winter boots with wool socks. accessories: leather dispatch satchel; worn as strap across the chest. color palette: navy, rust brown, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 소두, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: square with a firm jaw; narrow almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short cropped hair; black hair; short length. build: lean; skin: light olive; average adult male height. headwear: fur-lined ear-flap cap; upper garment: altered pre-Blackout camouflage cold-weather jacket with quilted lining; neckline: turned-up jacket collar; lower garment: camouflage cold-weather trousers; footwear: felt-lined army boots. accessories: army rank insignia on the chest and a service-number token on a cord; worn as sewn on the chest, token on a cord. color palette: olive camouflage, rust brown, navy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

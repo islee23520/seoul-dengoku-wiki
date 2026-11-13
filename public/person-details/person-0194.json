@@ -1,490 +1,116 @@
 {
   "id": "person-0194",
   "name": "케빈 화이트",
-  "title": "선로 배차 중재역",
-  "position": "선로 배차 중재역",
+  "title": "성북구 구청장",
+  "position": "성북구 구청장 · 보문역",
   "characterId": "K193",
-  "rank": "주사",
-  "commonTier": "T5",
-  "occupation": "선로 배차 이의 서면 접수·중재",
+  "rank": "구청장",
+  "commonTier": "T2",
+  "occupation": "구 행정",
   "gender": "남성",
   "stage": "S2",
-  "state": "S07",
-  "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-케빈 화이트",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0194",
   "birthDate": "2069-12-14",
   "birthday": "12-14",
   "age": 57,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-07.json#/content/655"
-  ],
-  "familyTree": {
-    "personId": "K193",
-    "nodes": [
-      {
-        "id": "K193",
-        "personId": "K193",
-        "kind": "person",
-        "name": "케빈 화이트",
-        "birthDate": "2069-12-14",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K193"
-          },
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-케빈-화이트-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 선로 배차 중재역 자리는 무표 출발 열차 저지로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-케빈-화이트-list2"
-              }
-            ]
-          }
-        ],
-        "nameEn": "Kevin White",
-        "detailRoute": "/people/person-0194"
-      },
-      {
-        "id": "FH-K193-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "마이클 화이트",
-        "birthDate": "2039-12-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-케빈-화이트-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "마이클 화이트는 2039년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2057년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-케빈-화이트-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Michael White was born in 2039 and grew up reading family and work records. From 2057, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Michael White",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K193-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "토머스 화이트",
-        "birthDate": "2009-12-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-케빈-화이트-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2027,
-            "summary": "토머스 화이트는 2009년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2027년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-케빈-화이트-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Thomas White was born in 2009 and grew up reading family and work records. From 2027, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Thomas White",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K193-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "조앤 카터",
-        "birthDate": "2039-12-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-케빈-화이트-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "조앤 카터는 2039년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2057년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-케빈-화이트-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Joan Carter was born in 2039 and grew up reading family and work records. From 2057, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Joan Carter",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K193-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "릴리언 카터",
-        "birthDate": "2009-12-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-케빈-화이트-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2027,
-            "summary": "릴리언 카터는 2009년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2027년부터 이웃과 물품 인계 내역을 대조했다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-07.json",
-                "anchor": "인물-케빈-화이트-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ],
-            "summaryEn": "Lillian Carter was born in 2009 and grew up reading family and work records. From 2027, this ancestor compared goods-transfer records with neighbors."
-          }
-        ],
-        "nameEn": "Lillian Carter",
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K193-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "새뮤얼 화이트",
-        "nameEn": "Samuel White",
-        "birthDate": "1979-12-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K193-P-03"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "새뮤얼 화이트는 2030년 대정전 당시 용산·이태원 생활권에서 이태원 숙박업과 민간 통역 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "summaryEn": "Samuel White was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/cast-family-trees.json",
-                "anchor": "FH-K193-P-03"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K193-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "앨리슨 카터",
-        "nameEn": "Alison Carter",
-        "birthDate": "1979-12-14",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K193-M-03"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "앨리슨 카터는 2030년 대정전 당시 용산·이태원 생활권에서 이태원 숙박업과 민간 통역 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
-            "summaryEn": "Alison Carter was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
-            "sourceRefs": [
-              {
-                "path": "lore/name-pools/cast-family-trees.json",
-                "anchor": "FH-K193-M-03"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K193-P-01:K193:biological",
-        "from": "FH-K193-P-01",
-        "to": "K193",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-케빈-화이트-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K193-P-02:FH-K193-P-01:biological",
-        "from": "FH-K193-P-02",
-        "to": "FH-K193-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-케빈-화이트-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K193-M-01:K193:biological",
-        "from": "FH-K193-M-01",
-        "to": "K193",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-케빈-화이트-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K193-M-02:FH-K193-M-01:biological",
-        "from": "FH-K193-M-02",
-        "to": "FH-K193-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-07.json",
-            "anchor": "인물-케빈-화이트-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K193-P-03:FH-K193-P-02:biological",
-        "from": "FH-K193-P-03",
-        "to": "FH-K193-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K193-P-03"
-          }
-        ]
-      },
-      {
-        "id": "FH-K193-M-03:FH-K193-M-02:biological",
-        "from": "FH-K193-M-03",
-        "to": "FH-K193-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-family-trees.json",
-            "anchor": "FH-K193-M-03"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": null,
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "장부에는 성북구 보문동 보문역에 기재된 공무원 가구 사람으로 올라 있다. 서라온 국회의원이 임명한 성북구 구청장으로, 국회의원의 도장을 대신 찍고 구 고시를 내고 민원 심리를 연다. 오래 구청 서기로 일하다 올라온 사람이라 결재선의 서류가 어디서 멈추는지 누구보다 잘 안다. 북한산 쪽 테두리 망대에 보낼 땔감 몫을 매달 구 고시로 정하면서, 옛 대학 터 학교의 등잔 기름을 늘 먼저 떼어 둔다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "성북구 구청장",
+    "품계": "구청장",
+    "생업": "구 행정",
+    "일하는 역": "보문역",
+    "잠자는 역": "보문역",
+    "가구": "혼자 사는 가구"
   },
-  "proseContacts": [
-    {
-      "recipientId": "K169",
-      "recipientName": "박태겸",
-      "basis": "박태겸의 조정안을 현장에 옮기되, 선로 열쇠는 넘기지 않는다.",
-      "sourceRef": {
-        "path": "lore/characters/Cast-State-07.json",
-        "anchor": "인물-케빈-화이트-p5"
-      }
-    }
-  ],
+  "sections": {
+    "생애": "장부에는 성북구 보문동 보문역에 기재된 공무원 가구 사람으로 올라 있다. 서라온 국회의원이 임명한 성북구 구청장으로, 국회의원의 도장을 대신 찍고 구 고시를 내고 민원 심리를 연다. 오래 구청 서기로 일하다 올라온 사람이라 결재선의 서류가 어디서 멈추는지 누구보다 잘 안다. 북한산 쪽 테두리 망대에 보낼 땔감 몫을 매달 구 고시로 정하면서, 옛 대학 터 학교의 등잔 기름을 늘 먼저 떼어 둔다.",
+    "관직": "직함 성북구 구청장. 직위 성북구 구청장 · 보문역. 품계 구청장. 일하는 역 보문역."
+  },
+  "values": {
+    "권위": 35,
+    "개방": -35,
+    "무력": 35,
+    "물질": 20,
+    "공동": 5,
+    "원칙": 15,
+    "공개": -35,
+    "자격": 35,
+    "분산": -45,
+    "변혁": -20
+  },
+  "desire": {
+    "갈망": 35,
+    "독점": 25,
+    "위험": -30,
+    "과시": 10,
+    "지속": 10,
+    "지향": "이성",
+    "결합": "없음"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0194",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "케빈 화이트",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      }
+    ],
+    "incoming": []
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 7,
-        "effective": 7
-      },
-      "strategy": {
-        "base": 9,
-        "effective": 9
-      },
-      "negotiation": {
-        "base": 12,
-        "effective": 12
-      },
-      "management": {
+      "diplomacy": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 11,
-        "effective": 11
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 9,
-        "effective": 9
-      },
-      "prowess": {
-        "base": 3,
-        "effective": 3
-      },
-      "endurance": {
         "base": 6,
         "effective": 6
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "dispatch-mediation",
-        "name": {
-          "ko": "배차 중재",
-          "en": "Dispatch mediation"
-        },
-        "rating": 70
-      },
-      {
-        "id": "written-objection-review",
-        "name": {
-          "ko": "서면 이의 확인",
-          "en": "Written objection review"
-        },
-        "rating": 60
-      }
-    ],
-    "traits": [
-      {
-        "id": "k193-disposition",
-        "name": {
-          "ko": "구두 압박을 미룸",
-          "en": "Deferring oral pressure"
-        },
-        "description": {
-          "ko": "배차표의 빈칸을 먼저 보고, 큰 열차보다 작은 호송이 제시간에 빠지는지를 따진다. 중재석에 앉아도 목소리는 낮게 둔다.",
-          "en": "He read a dispatch sheet's blanks first and asked whether the small convoys, more than the big trains, missed their hours. Even seated at the arbitration bench, he kept his voice low."
-        },
-        "behavior": {
-          "ko": "관직. 품계 주사. 직함은 선로 배차 중재역. 배차 이의는 서면만 받고, 구두 압박은 다음 창으로 미룬다.",
-          "en": "Office. Rank: registrar. Title: rail dispatch arbitrator. He took dispatch objections in writing only and pushed verbal pressure to the next window."
-        },
-        "stress": {
-          "ko": "공포. 중재 공백이 생기면 용산 회차선이 암사 호송의 대기열이 되는 것.",
-          "en": "Fear. That when an arbitration gap opened, the Yongsan turnaround line would become the Amsa convoy's waiting line."
-        },
-        "relationship": {
-          "ko": "관계. 박태겸의 조정안을 현장에 옮기되, 선로 열쇠는 넘기지 않는다.",
-          "en": "Relations. Moved Park Taegyeom's mediation plan into the field but passed over no rail key."
-        },
-        "effects": []
-      },
-      {
-        "id": "k193-choice",
-        "name": {
-          "ko": "작은 호송 우선 확인",
-          "en": "Checking small convoys first"
-        },
-        "description": {
-          "ko": "일화. 박태겸의 조정안을 앞세운 구두 압박이 중재석에 들어와 선로 열쇠를 청한다. 케빈 화이트는 압박을 다음 창으로 미루고 서면 이의만 배차표에 올리며, 작은 호송 열차가 제시간에 빠졌는지부터 확인한다.",
-          "en": "Anecdote. Spoken pressure invoking Park Taegyeom's settlement plan comes to the arbitration seat asking for the track keys. Kevin White defers the pressure to the next window, puts only written objections on the dispatch sheet, and first checks whether the small escort train cleared on time."
-        },
-        "behavior": {
-          "ko": "관계. 박태겸의 조정안을 현장에 옮기되, 선로 열쇠는 넘기지 않는다.",
-          "en": "Relations. Moved Park Taegyeom's mediation plan into the field but passed over no rail key."
-        },
-        "stress": {
-          "ko": "공포. 중재 공백이 생기면 용산 회차선이 암사 호송의 대기열이 되는 것.",
-          "en": "Fear. That when an arbitration gap opened, the Yongsan turnaround line would become the Amsa convoy's waiting line."
-        },
-        "relationship": {
-          "ko": "관계. 박태겸의 조정안을 현장에 옮기되, 선로 열쇠는 넘기지 않는다.",
-          "en": "Relations. Moved Park Taegyeom's mediation plan into the field but passed over no rail key."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "조정안을 앞세운 압박에도 열쇠를 내주지 않고 서면 이의와 작은 호송 출발을 확인했다. 권한 경계를 지키는 중재다.",
-      "en": "Keeps the keys despite pressure invoking the coordinator and checks written objections and small convoy departures. His mediation preserves authority boundaries."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -522,55 +148,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": null,
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -10,
-    "개방": 20,
-    "무력": 0,
-    "물질": 25,
-    "공동": 0,
-    "원칙": -5,
-    "공개": -10,
-    "자격": 20,
-    "분산": 5,
-    "변혁": 0
-  },
-  "desire": {
-    "갈망": 35,
-    "독점": 25,
-    "위험": -30,
-    "과시": 10,
-    "지속": 10,
-    "지향": "이성",
-    "결합": "없음"
-  },
-  "fields": {
-    "소속": "환적국",
-    "품계": "주사",
-    "생업": "선로 배차 이의 서면 접수·중재",
-    "직함": "선로 배차 중재역",
-    "가치관": "권위 −10 | 개방 20 | 무력 0 | 물질 25 | 공동 0 | 원칙 −5 | 공개 −10 | 자격 20 | 분산 5 | 변혁 0",
-    "욕망": "갈망 35 | 독점 25 | 위험 −30 | 과시 10 | 지속 10 | 지향 이성 | 결합 없음"
-  },
-  "sections": {
-    "생애": "2069년생인 케빈 화이트는 2126년 개막기에 선로 배차 중재역 업무를 맡는다. 신내 환승 당직에서 자랐다. 선로 배차 중재역 업무는 무표 출발 열차 저지를 계기로 시작됐다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 새뮤얼 화이트는 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 케빈 화이트의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 케빈 화이트의 선로 배차 이의 서면 접수·중재 업무는 한강로동과 연결된다.",
-    "관직": "품계 주사. 직함은 선로 배차 중재역. 배차 이의는 서면만 받고, 구두 압박은 다음 창으로 미룬다.",
-    "일화": "박태겸의 조정안을 앞세운 구두 압박이 중재석에 들어와 선로 열쇠를 청한다. 케빈 화이트는 압박을 다음 창으로 미루고 서면 이의만 배차표에 올리며, 작은 호송 열차가 제시간에 빠졌는지부터 확인한다.",
-    "관계": "박태겸의 조정안을 현장에 옮기되, 선로 열쇠는 넘기지 않는다.",
-    "야망": "선로 배차 중재를 강국 세 장의 합의서가 아니라 후국 단독 시간표로 고정한다.",
-    "공포": "중재 공백이 생기면 용산 회차선이 암사 호송의 대기열이 되는 것.",
-    "개입": "중재 증인을 세우거나, 숨긴 대기 열차를 폭로할 수 있다."
-  },
-  "biography": "배차표의 빈칸을 먼저 보고, 큰 열차보다 작은 호송이 제시간에 빠지는지를 따진다. 중재석에 앉아도 목소리는 낮게 둔다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 선로 배차 이의 서면 접수·중재\n- 직함: 선로 배차 중재역\n**생애.** 2069년생인 케빈 화이트는 2126년 개막기에 선로 배차 중재역 업무를 맡는다. 신내 환승 당직에서 자랐다. 선로 배차 중재역 업무는 무표 출발 열차 저지를 계기로 시작됐다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 새뮤얼 화이트는 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 케빈 화이트의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 케빈 화이트의 선로 배차 이의 서면 접수·중재 업무는 한강로동과 연결된다.\n\n**관직.** 품계 주사. 직함은 선로 배차 중재역. 배차 이의는 서면만 받고, 구두 압박은 다음 창으로 미룬다.\n\n**일화.** 박태겸의 조정안을 앞세운 구두 압박이 중재석에 들어와 선로 열쇠를 청한다. 케빈 화이트는 압박을 다음 창으로 미루고 서면 이의만 배차표에 올리며, 작은 호송 열차가 제시간에 빠졌는지부터 확인한다.\n\n**관계.** 박태겸의 조정안을 현장에 옮기되, 선로 열쇠는 넘기지 않는다.\n\n**야망.** 선로 배차 중재를 강국 세 장의 합의서가 아니라 후국 단독 시간표로 고정한다.\n\n**공포.** 중재 공백이 생기면 용산 회차선이 암사 호송의 대기열이 되는 것.\n\n**개입.** 중재 증인을 세우거나, 숨긴 대기 열차를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 20 | 무력 0 | 물질 25 | 공동 0 | 원칙 −5 | 공개 −10 | 자격 20 | 분산 5 | 변혁 0\n- 욕망: 갈망 35 | 독점 25 | 위험 −30 | 과시 10 | 지속 10 | 지향 이성 | 결합 없음\n:::",
-  "sources": [
-    "Cast-State-07"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }

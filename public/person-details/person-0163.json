@@ -1,492 +1,105 @@
 {
   "id": "person-0163",
   "name": "홍예준",
-  "title": "유언 검증 서기",
-  "position": "유언 검증 서기",
+  "title": "기능조 조장",
+  "position": "기능조 조장 · 회현역",
   "characterId": "K162",
-  "rank": "",
-  "commonTier": "T3",
-  "occupation": "유언 필적·파형 대조 검증",
+  "rank": "등재민",
+  "commonTier": "T5",
+  "occupation": "펌프 정비",
   "gender": "여성",
   "stage": "S3",
-  "state": "S06",
-  "stateName": "대한민국정부",
-  "sourceRoute": "/world/Cast-State-06#인물-홍예준",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0163",
   "birthDate": "2097-04-25",
   "birthday": "04-25",
   "age": 29,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-06.json#/content/193"
-  ],
-  "familyTree": {
-    "personId": "K162",
-    "nodes": [
-      {
-        "id": "K162",
-        "personId": "K162",
-        "kind": "person",
-        "name": "홍예준",
-        "birthDate": "2097-04-25",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K162"
-          },
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-홍예준-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 대합실 당직에서 자랐다. 유언 검증 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-홍예준-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0163"
-      },
-      {
-        "id": "FH-K162-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "홍승석",
-        "lineage": {
-          "surname": "홍",
-          "bongwan": "남양",
-          "clan": "d64d-b0a8-c591"
-        },
-        "birthDate": "2067-04-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-홍예준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "홍승석은 대합실 당직에서 유언 필적·파형 대조 검증 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-홍예준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K162-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "홍승준",
-        "lineage": {
-          "surname": "홍",
-          "bongwan": "남양",
-          "clan": "d64d-b0a8-c591"
-        },
-        "birthDate": "2037-04-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-홍예준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "홍승준은 대합실 당직에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-홍예준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K162-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "홍승호",
-        "lineage": {
-          "surname": "홍",
-          "bongwan": "남양",
-          "clan": "d64d-b0a8-c591"
-        },
-        "birthDate": "2007-04-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-홍예준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "홍승호는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-홍예준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K162-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강현호",
-        "birthDate": "2067-04-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-홍예준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2105,
-            "summary": "강현호는 대합실 당직에서 유언 필적·파형 대조 검증 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-홍예준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K162-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임현윤",
-        "birthDate": "2037-04-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-홍예준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2075,
-            "summary": "임현윤은 대합실 당직에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-홍예준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K162-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "오승온",
-        "birthDate": "2007-04-25",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-홍예준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "오승온은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-06.json",
-                "anchor": "인물-홍예준-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K162-P-01:K162:biological",
-        "from": "FH-K162-P-01",
-        "to": "K162",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-홍예준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K162-P-02:FH-K162-P-01:biological",
-        "from": "FH-K162-P-02",
-        "to": "FH-K162-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-홍예준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K162-P-03:FH-K162-P-02:biological",
-        "from": "FH-K162-P-03",
-        "to": "FH-K162-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-홍예준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K162-M-01:K162:biological",
-        "from": "FH-K162-M-01",
-        "to": "K162",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-홍예준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K162-M-02:FH-K162-M-01:biological",
-        "from": "FH-K162-M-02",
-        "to": "FH-K162-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-홍예준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K162-M-03:FH-K162-M-02:biological",
-        "from": "FH-K162-M-03",
-        "to": "FH-K162-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-06.json",
-            "anchor": "인물-홍예준-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d64d-b0a8-c591",
+    "name": "남양 홍씨",
+    "crest": "clan-crests/d64d-b0a8-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "회현역의 배수 펌프는 기능 가구의 펌프조가 돌리고, 남양 홍씨인 그가 그 조를 이끄는 조장이다. 세 교대 가운데 소등 뒤의 3교대를 맡아, 승강장 불이 꺼진 뒤에도 펌프 도는 소리를 들으며 잔다. 펌프조 사람들의 교대표를 서기처럼 반듯하게 써서 동주민센터에 낸다. 징병 열여덟 달을 대체 복무로 뚝도 취수구에서 보냈다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "기능조 조장",
+    "품계": "등재민",
+    "생업": "펌프 정비",
+    "일하는 역": "회현역",
+    "잠자는 역": "회현역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "회현역의 배수 펌프는 기능 가구의 펌프조가 돌리고, 남양 홍씨인 그가 그 조를 이끄는 조장이다. 세 교대 가운데 소등 뒤의 3교대를 맡아, 승강장 불이 꺼진 뒤에도 펌프 도는 소리를 들으며 잔다. 펌프조 사람들의 교대표를 서기처럼 반듯하게 써서 동주민센터에 낸다. 징병 열여덟 달을 대체 복무로 뚝도 취수구에서 보냈다.",
+    "관직": "직함 기능조 조장. 직위 기능조 조장 · 회현역. 품계 등재민. 일하는 역 회현역."
+  },
+  "values": {
+    "권위": 60,
+    "개방": -60,
+    "무력": 15,
+    "물질": -30,
+    "공동": 20,
+    "원칙": 75,
+    "공개": -40,
+    "자격": 35,
+    "분산": -75,
+    "변혁": -50
+  },
+  "desire": {
+    "갈망": 10,
+    "독점": -15,
+    "위험": 10,
+    "과시": -25,
+    "지속": 0,
+    "지향": "무성향",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0163",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 5,
         "effective": 5
       },
-      "strategy": {
-        "base": 7,
-        "effective": 7
-      },
-      "negotiation": {
+      "martial": {
         "base": 5,
         "effective": 5
       },
-      "management": {
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "insight": {
-        "base": 13,
-        "effective": 13
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 11,
-        "effective": 11
+        "base": 7,
+        "effective": 7
       },
       "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
-        "base": 5,
-        "effective": 5
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k162-will-crosscheck",
-        "name": {
-          "ko": "유언 교차검증",
-          "en": "Will cross-checking"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k162-choice",
-        "name": {
-          "ko": "진본 선언을 보류",
-          "en": "Withholds authenticity declarations"
-        },
-        "description": {
-          "ko": "먹지 번짐을 사람 말보다 먼저 읽고, 증인 한 명의 확신은 기록으로 치지 않는다. 조용하나 필적이 어긋나면 자리에서 일어나지 않는다.",
-          "en": "He read ink smears before human words and counted one witness's certainty as no record. Quiet, he did not rise from his seat for anything but a handwriting mismatch."
-        },
-        "behavior": {
-          "ko": "일화. 봄의 세 유언이 같은 날 접수되자 홍예준은 세 장을 나란히 펼치고 진본 선언을 보류했다.",
-          "en": "Anecdote. When the spring's three testaments were received on the same day, Hong Yejun spread the three sheets side by side and suspended the declaration of originals."
-        },
-        "stress": {
-          "ko": "공포. 편집된 음성 한 조각이 문서 인준보다 먼저 나가 서기가 위조의 들러리가 되는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That one edited fragment of voice would go out before the document ratification, and the clerk would become the procession of forgery. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 윤서린의 인준 심사에 서기 원장을 바치고, 차세온의 필적 난외를 낮에 옮기며, 란세온의 내부 폭로를 봉인 증언으로만 받는다.",
-          "en": "Relations. Offered the clerk's ledger to Yun Seorin's ratification examination, moved Cha Seon's handwriting margin by day, and took Ran Seon's inside exposure only as sealed testimony."
-        },
-        "effects": []
-      },
-      {
-        "id": "k162-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 주사. 직함은 유언 검증 서기. 필적과 파형을 같은 책에 겹쳐 두고, 독립 증언이 둘 미만이면 검증 도장을 덮는다.",
-          "en": "Office. Rank: registrar. Title: testament verification clerk. He laid handwriting and waveform overlaid in one book and covered the verification stamp with fewer than two independent testimonies."
-        },
-        "behavior": {
-          "ko": "관직. 품계 주사. 직함은 유언 검증 서기. 필적과 파형을 같은 책에 겹쳐 두고, 독립 증언이 둘 미만이면 검증 도장을 덮는다.",
-          "en": "Office. Rank: registrar. Title: testament verification clerk. He laid handwriting and waveform overlaid in one book and covered the verification stamp with fewer than two independent testimonies."
-        },
-        "stress": {
-          "ko": "공포. 편집된 음성 한 조각이 문서 인준보다 먼저 나가 서기가 위조의 들러리가 되는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That one edited fragment of voice would go out before the document ratification, and the clerk would become the procession of forgery. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 윤서린의 인준 심사에 서기 원장을 바치고, 차세온의 필적 난외를 낮에 옮기며, 란세온의 내부 폭로를 봉인 증언으로만 받는다.",
-          "en": "Relations. Offered the clerk's ledger to Yun Seorin's ratification examination, moved Cha Seon's handwriting margin by day, and took Ran Seon's inside exposure only as sealed testimony."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "세 유언을 나란히 놓고 독립 증언 둘을 요구한다. 진본 판단은 아직 미결이며 소문을 곧 사실로 받아들이지 않는다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Sets three wills side by side and requires two independent witnesses. Authenticity remains unresolved, and rumor is not accepted as fact. Titles and ambitions are not treated as accomplished authority or results."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -524,96 +137,5 @@
       "diseases": []
     }
   },
-  "politicalIdentities": [
-    {
-      "id": "title:duchy-51780-S06",
-      "kind": "nonterritorial-political-identity",
-      "rank": "duchy",
-      "holderPersonId": "K162",
-      "stateId": "S06",
-      "politicalParentTitleId": "title:kingdom-s06",
-      "personalLieges": [
-        {
-          "holdingId": "holding:opening-duchy-51780-S06",
-          "directLiegePersonId": "K144"
-        }
-      ],
-      "directOwnership": false
-    }
-  ],
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d64d-b0a8-c591",
-    "name": "남양 홍씨",
-    "crest": "clan-crests/d64d-b0a8-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 15,
-    "개방": -5,
-    "무력": -20,
-    "물질": -25,
-    "공동": 15,
-    "원칙": 55,
-    "공개": -15,
-    "자격": 20,
-    "분산": -25,
-    "변혁": -30
-  },
-  "desire": {
-    "갈망": 10,
-    "독점": -15,
-    "위험": 10,
-    "과시": -25,
-    "지속": 0,
-    "지향": "무성향",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "유언 필적·파형 대조 검증",
-    "소속": "서울특별시 지방공무원 조직",
-    "직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급",
-    "담당 업무": "유언 검증 서기",
-    "가치관": "권위 15 | 개방 −5 | 무력 −20 | 물질 −25 | 공동 15 | 원칙 55 | 공개 −15 | 자격 20 | 분산 −25 | 변혁 −30",
-    "욕망": "갈망 10 | 독점 −15 | 위험 10 | 과시 −25 | 지속 0 | 지향 무성향 | 결합 단혼"
-  },
-  "sections": {
-    "생애": "대합실 당직에서 자랐다. 유언 검증 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 홍예준이 맡는 유언의 필적과 파형을 대조하는 일은 회현동의 업무와 이어진다.",
-    "공무원 직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 유언 검증 서기.",
-    "일화": "세 유언이 같은 날 접수되자 홍예준은 세 장을 나란히 펼치고 진본 선언을 보류했다.",
-    "관계": "윤서린의 인준 심사에 서기 원장을 바치고, 차세온의 필적 난외를 낮에 옮기며, 란세온의 내부 폭로를 봉인 증언으로만 받는다.",
-    "야망": "세 장의 총관 유언을 한 장의 검증 원장으로 묶어 기록청이 진본을 가리키는 마지막 손이 된다.",
-    "공포": "편집된 음성 한 조각이 문서 인준보다 먼저 나가 서기가 위조의 들러리가 되는 것.",
-    "개입": "두 번째 증인을 문서고까지 호송하거나, 서기가 숨긴 네 번째 먹지를 찾아 인준을 흔들 수 있다."
-  },
-  "biography": "먹지 번짐을 사람 말보다 먼저 읽고, 증인 한 명의 확신은 기록으로 치지 않는다. 조용하나 필적이 어긋나면 자리에서 일어나지 않는다.\n\n- 생업: 유언 필적·파형 대조 검증\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급\n- 담당 업무: 유언 검증 서기\n**생애.** 대합실 당직에서 자랐다. 유언 검증 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 홍예준이 맡는 유언의 필적과 파형을 대조하는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 유언 검증 서기.\n\n**일화.** 세 유언이 같은 날 접수되자 홍예준은 세 장을 나란히 펼치고 진본 선언을 보류했다.\n\n**관계.** 윤서린의 인준 심사에 서기 원장을 바치고, 차세온의 필적 난외를 낮에 옮기며, 란세온의 내부 폭로를 봉인 증언으로만 받는다.\n\n**야망.** 세 장의 총관 유언을 한 장의 검증 원장으로 묶어 기록청이 진본을 가리키는 마지막 손이 된다.\n\n**공포.** 편집된 음성 한 조각이 문서 인준보다 먼저 나가 서기가 위조의 들러리가 되는 것.\n\n**개입.** 두 번째 증인을 문서고까지 호송하거나, 서기가 숨긴 네 번째 먹지를 찾아 인준을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −5 | 무력 −20 | 물질 −25 | 공동 15 | 원칙 55 | 공개 −15 | 자격 20 | 분산 −25 | 변혁 −30\n- 욕망: 갈망 10 | 독점 −15 | 위험 10 | 과시 −25 | 지속 0 | 지향 무성향 | 결합 단혼\n:::",
-  "sources": [
-    "Cast-State-06"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "홍예준",
-        "type": "계약",
-        "to": "윤서린",
-        "basis": "윤서린의 인준 심사에 서기 원장을 바치고"
-      },
-      {
-        "from": "홍예준",
-        "type": "계약",
-        "to": "란세온",
-        "basis": "란세온의 내부 폭로를 봉인 증언으로만 받는다"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "란세온",
-        "type": "맹세",
-        "to": "홍예준",
-        "basis": "홍예준의 유언 검증과 파형을 맞춘다"
-      }
-    ]
-  }
+  "confirmedHoldings": []
 }

@@ -1,495 +1,151 @@
 {
   "id": "person-0124",
   "name": "한보라",
-  "title": "동부 순찰열차장",
-  "position": "동부 순찰열차장",
+  "title": "송파1동 대피소장",
+  "position": "송파1동 대피소장 · 아크",
   "characterId": "K123",
-  "rank": "병장",
-  "commonTier": "T5",
-  "occupation": "순찰열차 출고·화차 확인",
+  "rank": "대피소장",
+  "commonTier": "T3",
+  "occupation": "대피소 통솔",
   "gender": "여성",
   "stage": "S1",
-  "state": "S05",
-  "stateName": "동방사",
-  "sourceRoute": "/world/Cast-State-05#인물-한보라",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0124",
   "birthDate": "2089-01-20",
   "birthday": "01-20",
   "age": 37,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-05.json#/content/115",
-    "lore/characters/Cast-State-05.json#/content/117"
-  ],
-  "familyTree": {
-    "personId": "K123",
-    "nodes": [
-      {
-        "id": "K123",
-        "personId": "K123",
-        "kind": "person",
-        "name": "한보라",
-        "birthDate": "2089-01-20",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K123"
-          },
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-한보라-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 동부 순찰열차장 자리는 야간 무단 도하 적발로 열렸다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-한보라-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0124"
-      },
-      {
-        "id": "FH-K123-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "한승란",
-        "lineage": {
-          "surname": "한",
-          "bongwan": "청주",
-          "clan": "d55c-ccad-c8fc"
-        },
-        "birthDate": "2059-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-한보라-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "한승란은 암사 경비 초소에서 순찰열차 출고·화차 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-한보라-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K123-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "한승리",
-        "lineage": {
-          "surname": "한",
-          "bongwan": "청주",
-          "clan": "d55c-ccad-c8fc"
-        },
-        "birthDate": "2029-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-한보라-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "한승리는 암사 경비 초소에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-한보라-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K123-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "한승나",
-        "lineage": {
-          "surname": "한",
-          "bongwan": "청주",
-          "clan": "d55c-ccad-c8fc"
-        },
-        "birthDate": "1999-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-한보라-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한승나는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-한보라-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K123-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "정현민",
-        "birthDate": "2059-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-한보라-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2097,
-            "summary": "정현민은 암사 경비 초소에서 순찰열차 출고·화차 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-한보라-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K123-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "윤승혁",
-        "birthDate": "2029-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-한보라-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2067,
-            "summary": "윤승혁은 암사 경비 초소에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-한보라-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K123-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "한승온",
-        "birthDate": "1999-01-20",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-한보라-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "한승온은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-05.json",
-                "anchor": "인물-한보라-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K123-P-01:K123:biological",
-        "from": "FH-K123-P-01",
-        "to": "K123",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-한보라-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K123-P-02:FH-K123-P-01:biological",
-        "from": "FH-K123-P-02",
-        "to": "FH-K123-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-한보라-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K123-P-03:FH-K123-P-02:biological",
-        "from": "FH-K123-P-03",
-        "to": "FH-K123-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-한보라-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K123-M-01:K123:biological",
-        "from": "FH-K123-M-01",
-        "to": "K123",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-한보라-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K123-M-02:FH-K123-M-01:biological",
-        "from": "FH-K123-M-02",
-        "to": "FH-K123-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-한보라-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K123-M-03:FH-K123-M-02:biological",
-        "from": "FH-K123-M-03",
-        "to": "FH-K123-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-05.json",
-            "anchor": "인물-한보라-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "d55c-ccad-c8fc",
+    "name": "청주 한씨",
+    "crest": "clan-crests/d55c-ccad-c8fc.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "한보라는 천호역 정비대를 쥐다가 서른일곱 살에 송파1동 대피소장이 되어 석촌역으로 왔다. 그래서 석촌 대피소의 명부는 정비대 셈표 꼴을 따라, 사람마다 이름 옆에 맞춤 날이 적혀 있다. 석촌 집안들이 건진 전선과 전지를 가락시장역 정비대에 앞당겨 바치는 대신 대피소 사람의 맞춤 날을 먼저 받기로, 그는 정비장 영마온과 셈표에 도장을 찍었다. 부위는 하나이고, 암사역 정비공 설강우는 그가 첫 연장을 쥐여 준 제자다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "송파1동 대피소장",
+    "품계": "대피소장",
+    "생업": "대피소 통솔",
+    "일하는 역": "석촌역",
+    "잠자는 역": "석촌역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 1
+  },
+  "sections": {
+    "생애": "한보라는 천호역 정비대를 쥐다가 서른일곱 살에 송파1동 대피소장이 되어 석촌역으로 왔다. 그래서 석촌 대피소의 명부는 정비대 셈표 꼴을 따라, 사람마다 이름 옆에 맞춤 날이 적혀 있다. 석촌 집안들이 건진 전선과 전지를 가락시장역 정비대에 앞당겨 바치는 대신 대피소 사람의 맞춤 날을 먼저 받기로, 그는 정비장 영마온과 셈표에 도장을 찍었다. 부위는 하나이고, 암사역 정비공 설강우는 그가 첫 연장을 쥐여 준 제자다.",
+    "관직": "직함 송파1동 대피소장. 직위 송파1동 대피소장 · 아크. 품계 대피소장. 일하는 역 석촌역."
+  },
+  "values": {
+    "권위": 90,
+    "개방": -70,
+    "무력": 85,
+    "물질": -30,
+    "공동": 55,
+    "원칙": -30,
+    "공개": -80,
+    "자격": -65,
+    "분산": -90,
+    "변혁": 20
+  },
+  "desire": {
+    "갈망": 50,
+    "독점": -25,
+    "위험": 10,
+    "과시": -15,
+    "지속": 0,
+    "지향": "유동",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0124",
+    "role": "single",
+    "personFaith": "baptised",
+    "houseFaith": "baptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "한보라",
+        "type": "지휘",
+        "to": "남윤경",
+        "basis": "송파 곁집장 남윤경의 직속"
+      },
+      {
+        "from": "한보라",
+        "type": "스승과 제자",
+        "to": "설강우",
+        "basis": "암사역 정비공 설강우에게 첫 연장을 쥐여 준 스승"
+      },
+      {
+        "from": "한보라",
+        "type": "계약",
+        "to": "영마온",
+        "basis": "석촌 집안들이 가락시장 정비대에 바침을 앞당겨 내는 대신 대피소 사람의 맞춤 날을 먼저 받기로 영마온과 셈표에 도장을 찍었다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "허겸",
+        "type": "지휘",
+        "to": "한보라",
+        "basis": "송파1동 대피소장 한보라의 직속"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K373",
+    "name": "남윤경",
+    "courtId": "court:K373",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K123",
+    "members": [
+      {
+        "personId": "K096",
+        "name": "허겸"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 9,
         "effective": 9
       },
-      "strategy": {
+      "martial": {
+        "base": 5,
+        "effective": 5
+      },
+      "stewardship": {
         "base": 10,
         "effective": 10
       },
-      "negotiation": {
+      "intrigue": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
         "base": 6,
         "effective": 6
       },
-      "management": {
-        "base": 10,
-        "effective": 10
-      },
-      "insight": {
-        "base": 13,
-        "effective": 13
-      },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
       "prowess": {
-        "base": 8,
-        "effective": 8
-      },
-      "endurance": {
-        "base": 12,
-        "effective": 12
+        "base": 4,
+        "effective": 4
       }
     },
-    "skills": [
-      {
-        "id": "k123-wagon-check",
-        "name": {
-          "ko": "순찰열차 화차 확인",
-          "en": "Patrol train wagon checking"
-        },
-        "rating": 65
-      }
-    ],
-    "traits": [
-      {
-        "id": "k123-choice",
-        "name": {
-          "ko": "중립 위반 배차 거부",
-          "en": "Rejects neutrality-breaking dispatch"
-        },
-        "description": {
-          "ko": "대담하고 야간 선로의 침묵을 사람보다 잘 견딘다. 의료열차로 위장한 군수 화차를 자기 열차에 붙이라는 쪽지를 찢어 버린다.",
-          "en": "Bold, she endured the night rails' silence better than people. She tore up any note telling her to couple munitions freight cars disguised as a medical train to her own train."
-        },
-        "behavior": {
-          "ko": "일화. 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 동부 순찰열차장 자리의 서명이 장부에 올랐다.",
-          "en": "Anecdote. In 2125, on a ridge patrol, she read the ambush traces first and prevented the harm. By this deed the signature of the eastern patrol train master post rose into the ledger."
-        },
-        "stress": {
-          "ko": "공포. 자기 열차가 검은 배차표의 운반자가 되어 의료중립을 깨고 보호전쟁을 첫 불씨로 지피는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That her train would become the carrier of the black dispatch sheet, break medical neutrality, and strike the first spark of a protection war. Changes in behavior or state effects are unconfirmed."
-        },
-        "relationship": {
-          "ko": "관계. 박하율의 출고 순서에 열차를 묶는 계약이고, 장세화의 의료호송을 선로에서 피하려는 빚이며, 김우찬의 비밀 배차 쪽지를 거부해 지휘 갈등이 있다.",
-          "en": "Relations. A contract binding her train to Park Hayul's release order, a debt trying not to dodge Jang Sehwa's medical convoy on the rails, and a command conflict refusing Kim Woochan's secret dispatch notes."
-        },
-        "effects": []
-      },
-      {
-        "id": "k123-boundary",
-        "name": {
-          "ko": "업무 경계를 지킴",
-          "en": "Maintains work boundaries"
-        },
-        "description": {
-          "ko": "관직. 품계 병장. 직함은 동부 순찰열차장. 출고 시각과 화차 목록을 고덕 게시판에 올리고, 무기 의심 화차는 정비장과 감사관의 이중 확인 없이 연결하지 않는다.",
-          "en": "Office. Rank: sergeant. Title: eastern patrol train master. She put the release hours and freight lists on the Godeok board and coupled no car suspected of arms without the maintenance chief's and the auditor's double check."
-        },
-        "behavior": {
-          "ko": "관직. 품계 병장. 직함은 동부 순찰열차장. 출고 시각과 화차 목록을 고덕 게시판에 올리고, 무기 의심 화차는 정비장과 감사관의 이중 확인 없이 연결하지 않는다.",
-          "en": "Office. Rank: sergeant. Title: eastern patrol train master. She put the release hours and freight lists on the Godeok board and coupled no car suspected of arms without the maintenance chief's and the auditor's double check."
-        },
-        "stress": {
-          "ko": "공포. 자기 열차가 검은 배차표의 운반자가 되어 의료중립을 깨고 보호전쟁을 첫 불씨로 지피는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That her train would become the carrier of the black dispatch sheet, break medical neutrality, and strike the first spark of a protection war. The actual response is not yet recorded."
-        },
-        "relationship": {
-          "ko": "관계. 박하율의 출고 순서에 열차를 묶는 계약이고, 장세화의 의료호송을 선로에서 피하려는 빚이며, 김우찬의 비밀 배차 쪽지를 거부해 지휘 갈등이 있다.",
-          "en": "Relations. A contract binding her train to Park Hayul's release order, a debt trying not to dodge Jang Sehwa's medical convoy on the rails, and a command conflict refusing Kim Woochan's secret dispatch notes."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "일화. 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 동부 순찰열차장 자리의 서명이 장부에 올랐다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
-      "en": "Anecdote. In 2125, on a ridge patrol, she read the ambush traces first and prevented the harm. By this deed the signature of the eastern patrol train master post rose into the ledger. Titles and ambitions are not treated as accomplished authority or results."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
-      "status": "unassessed",
+      "status": "fitted",
       "bodyParts": [
         {
           "id": "left-arm",
@@ -499,7 +155,7 @@
         {
           "id": "right-arm",
           "severity": null,
-          "function": null
+          "function": "machine"
         },
         {
           "id": "left-leg",
@@ -525,82 +181,52 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "d55c-ccad-c8fc",
-    "name": "청주 한씨",
-    "crest": "clan-crests/d55c-ccad-c8fc.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": 65,
-    "개방": -55,
-    "무력": 75,
-    "물질": 20,
-    "공동": 35,
-    "원칙": -20,
-    "공개": -35,
-    "자격": -30,
-    "분산": -60,
-    "변혁": -25
-  },
-  "desire": {
-    "갈망": 50,
-    "독점": -25,
-    "위험": 10,
-    "과시": -15,
-    "지속": 0,
-    "지향": "유동",
-    "결합": "다자"
-  },
-  "fields": {
-    "소속": "동방사",
-    "생업": "순찰열차 출고·화차 확인",
-    "품계": "병장",
-    "직함": "동부 순찰열차장",
-    "가치관": "권위 65 | 개방 −55 | 무력 75 | 물질 20 | 공동 35 | 원칙 −20 | 공개 −35 | 자격 −30 | 분산 −60 | 변혁 −25",
-    "욕망": "갈망 50 | 독점 −25 | 위험 10 | 과시 −15 | 지속 0 | 지향 유동 | 결합 다자"
-  },
-  "sections": {
-    "관직": "품계 병장. 직함은 동부 순찰열차장. 출고 시각과 화차 목록을 고덕 게시판에 올리고, 무기 의심 화차는 정비장과 감사관의 이중 확인 없이 연결하지 않는다.\n\n일화. 한보라는 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다.",
-    "관계": "박하율의 출고 순서에 열차를 묶는 계약이고, 장세화의 의료호송을 선로에서 피하려는 빚이며, 김우찬의 비밀 배차 쪽지를 거부해 지휘 갈등이 있다.",
-    "야망": "동부 순찰열차를 공식 명령망의 공개 배차로만 움직여, 비밀 장교망이 선로를 빼앗지 못하게 한다.\n\n공포. 한보라는 자기 열차가 검은 배차표의 운반자가 되어 의료중립을 깨고 보호전쟁을 첫 불씨로 지피는 일을 두려워한다.",
-    "개입": "밀수 화차의 실화주를 밝히거나, 검은 배차표를 열차장 몰래 연결해 중립 붕괴의 불씨를 만들 수 있다."
-  },
-  "biography": "한보라는 대담하고 야간 선로의 침묵을 사람보다 잘 견딘다. 의료열차로 위장한 군수 화차를 자기 열차에 붙이라는 쪽지를 찢어 버린다.\n\n- 소속: 동방사\n- 생업: 순찰열차 출고·화차 확인\n- 품계: 병장\n- 직함: 동부 순찰열차장\n생애. 한보라는 4세대에 태어났다. 한보라는 암사 경비 초소에서 자랐다. 한보라의 동부 순찰열차장 자리는 야간 무단 도하 적발로 열렸다.\n- 한보라는 고덕2동과 연결된 업무에서 출고 게시판을 맡고 무기 의심 화차를 이중 확인하며 비밀 배차를 거부한다.\n\n**관직.** 품계 병장. 직함은 동부 순찰열차장. 출고 시각과 화차 목록을 고덕 게시판에 올리고, 무기 의심 화차는 정비장과 감사관의 이중 확인 없이 연결하지 않는다.\n\n일화. 한보라는 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다.\n\n**관계.** 박하율의 출고 순서에 열차를 묶는 계약이고, 장세화의 의료호송을 선로에서 피하려는 빚이며, 김우찬의 비밀 배차 쪽지를 거부해 지휘 갈등이 있다.\n\n**야망.** 동부 순찰열차를 공식 명령망의 공개 배차로만 움직여, 비밀 장교망이 선로를 빼앗지 못하게 한다.\n\n공포. 한보라는 자기 열차가 검은 배차표의 운반자가 되어 의료중립을 깨고 보호전쟁을 첫 불씨로 지피는 일을 두려워한다.\n\n**개입.** 밀수 화차의 실화주를 밝히거나, 검은 배차표를 열차장 몰래 연결해 중립 붕괴의 불씨를 만들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −55 | 무력 75 | 물질 20 | 공동 35 | 원칙 −20 | 공개 −35 | 자격 −30 | 분산 −60 | 변혁 −25\n- 욕망: 갈망 50 | 독점 −25 | 위험 10 | 과시 −15 | 지속 0 | 지향 유동 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-05"
+  "confirmedHoldings": [
+    {
+      "id": "holding:v3:dong:1171058000",
+      "name": {
+        "ko": "송파1동"
+      },
+      "holderPersonId": "K123",
+      "directLiegePersonId": "K373",
+      "stateId": "arc",
+      "adminRefs": [
+        {
+          "id": "region:1171058000",
+          "name": "송파1동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null
+    }
   ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "한보라",
-        "type": "계약",
-        "to": "박하율",
-        "basis": "출고 순서에 순찰열차를 묶음"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:station:석촌",
+      "name": {
+        "ko": "석촌역"
       },
-      {
-        "from": "한보라",
-        "type": "빚",
-        "to": "장세화",
-        "basis": "의료호송을 선로에서 피하려는 빚"
-      }
-    ],
-    "incoming": [
-      {
-        "from": "나효원",
-        "type": "지휘",
-        "to": "한보라",
-        "basis": "한보라의 출고 시각을 승강장 분필로 집행하며"
+      "holderPersonId": "K096",
+      "directLiegePersonId": "K123",
+      "stateId": "arc",
+      "stationRef": {
+        "stationId": "석촌",
+        "stationName": "석촌"
       },
-      {
-        "from": "류가온",
-        "type": "계약",
-        "to": "한보라",
-        "basis": "한보라의 순찰열차 배차에 호송 칸을 붙이고"
-      }
-    ]
-  }
+      "adminRefs": [
+        {
+          "id": "region:1171058000",
+          "name": "송파1동"
+        }
+      ],
+      "territorialScale": "station",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "허겸",
+      "holderRoute": "/people/person-0097"
+    }
+  ]
 }

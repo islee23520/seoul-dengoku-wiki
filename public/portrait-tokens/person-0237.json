@@ -3,27 +3,27 @@
   "personId": "person-0237",
   "characterId": "K236",
   "name": "용소",
-  "stateId": "S09",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "금고 키 중계 부스 실무 담당자, 송재민의 실무 담당자"
+    "role": "마곡 구간장 · 자유도시들"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "long hair tied in a low ponytail",
-    "upper": "cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
-    "outfit": "cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+    "upper": "깃에 보랏빛 끈을 두른 바람막이 긴 겉옷, 그 안에 짙은 녹회색 합성 섬유 겹 작업복",
+    "outfit": "깃에 보랏빛 끈을 두른 바람막이 긴 겉옷, 그 안에 짙은 녹회색 합성 섬유 겹 작업복",
     "palette": [
-      "cream",
-      "oxblood",
-      "clay brown"
+      "moss grey",
+      "purple",
+      "snow white"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "oxblood pleated knee-length wool skirt over thick stockings",
-    "footwear": "laced leather walking shoes",
-    "accessories": "brass key ring and a small ledger satchel"
+    "lower": "grey synthetic windproof trousers",
+    "footwear": "insulated overshoes",
+    "accessories": "coil of cable and snow goggles"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "purple knitted cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+        "value": "깃에 보랏빛 끈을 두른 바람막이 긴 겉옷, 그 안에 짙은 녹회색 합성 섬유 겹 작업복",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "oxblood pleated knee-length wool skirt over thick stockings",
+        "value": "grey synthetic windproof trousers",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "insulated overshoes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "face cover around the neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "brass key ring and a small ledger satchel",
+        "value": "coil of cable and snow goggles",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
-        "derived": true
-      },
-      "shape": {
-        "value": "key ring and flat satchel",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "aged brass and brown leather",
+        "value": "black insulation and smoked glass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, leather",
+        "value": "synthetic, copper, glass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "key ring at the belt, satchel across the shoulder",
+        "value": "cable over the shoulder, goggles at the neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(records)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "coil and goggles",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 용소, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. long hair tied in a low ponytail; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, oxblood, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 용소, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. long hair tied in a low ponytail; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone. headwear: purple knitted cap; upper garment: 깃에 보랏빛 끈을 두른 바람막이 긴 겉옷, 그 안에 짙은 녹회색 합성 섬유 겹 작업복; neckline: face cover around the neck. accessories: coil of cable and snow goggles; worn as cable over the shoulder, goggles at the neck. color palette: moss grey, purple, snow white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 용소, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. long hair tied in a low ponytail; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone; average adult female height. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: oxblood pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, oxblood, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 용소, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. long hair tied in a low ponytail; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone; average adult female height. headwear: purple knitted cap; upper garment: 깃에 보랏빛 끈을 두른 바람막이 긴 겉옷, 그 안에 짙은 녹회색 합성 섬유 겹 작업복; neckline: face cover around the neck; lower garment: grey synthetic windproof trousers; footwear: insulated overshoes. accessories: coil of cable and snow goggles; worn as cable over the shoulder, goggles at the neck. color palette: moss grey, purple, snow white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 용소, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. long hair tied in a low ponytail; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone; average adult female height. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: oxblood pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, oxblood, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 용소, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. long hair tied in a low ponytail; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone; average adult female height. headwear: purple knitted cap; upper garment: 깃에 보랏빛 끈을 두른 바람막이 긴 겉옷, 그 안에 짙은 녹회색 합성 섬유 겹 작업복; neckline: face cover around the neck; lower garment: grey synthetic windproof trousers; footwear: insulated overshoes. accessories: coil of cable and snow goggles; worn as cable over the shoulder, goggles at the neck. color palette: moss grey, purple, snow white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 용소, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. long hair tied in a low ponytail; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone; average adult female height. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: oxblood pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, oxblood, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 용소, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. long hair tied in a low ponytail; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone; average adult female height. headwear: purple knitted cap; upper garment: 깃에 보랏빛 끈을 두른 바람막이 긴 겉옷, 그 안에 짙은 녹회색 합성 섬유 겹 작업복; neckline: face cover around the neck; lower garment: grey synthetic windproof trousers; footwear: insulated overshoes. accessories: coil of cable and snow goggles; worn as cable over the shoulder, goggles at the neck. color palette: moss grey, purple, snow white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 용소, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. long hair tied in a low ponytail; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone; average adult female height. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: oxblood pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, oxblood, clay brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 용소, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: long oval; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; muted red lips. long hair tied in a low ponytail; salt-and-pepper hair; long length. build: lean; skin: fair with a neutral undertone; average adult female height. headwear: purple knitted cap; upper garment: 깃에 보랏빛 끈을 두른 바람막이 긴 겉옷, 그 안에 짙은 녹회색 합성 섬유 겹 작업복; neckline: face cover around the neck; lower garment: grey synthetic windproof trousers; footwear: insulated overshoes. accessories: coil of cable and snow goggles; worn as cable over the shoulder, goggles at the neck. color palette: moss grey, purple, snow white. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

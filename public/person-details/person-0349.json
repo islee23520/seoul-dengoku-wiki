@@ -1,472 +1,235 @@
 {
   "id": "person-0349",
   "name": "고서준",
-  "title": "아관사 관문사령관",
-  "position": "아관사 사령관",
+  "title": "광진구 국회의원",
+  "position": "광진구 국회의원 · 정부",
   "characterId": "K348",
-  "rank": "사령관",
+  "rank": "국회의원",
   "commonTier": "T1",
-  "occupation": "능선수비대장",
+  "occupation": "구 행정",
   "gender": "남성",
   "stage": "주요",
-  "state": "S14",
-  "stateName": "아관사",
-  "sourceRoute": "/world/Cast-State-14#인물-고서준",
+  "state": "government",
+  "stateName": "정부",
   "detailRoute": "/people/person-0349",
   "birthDate": "2099-07-06",
   "birthday": "07-06",
   "age": 27,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-14.json#/content/1",
-    "lore/characters/Core-Characters.json#/content/123",
-    "lore/chronology/Century-Annals.json#/content/434",
-    "lore/chronology/Century-Annals.json#/content/500",
-    "lore/chronology/Century-Annals.json#/content/567"
-  ],
-  "familyTree": {
-    "personId": "K348",
-    "nodes": [
-      {
-        "id": "K348",
-        "personId": "K348",
-        "kind": "person",
-        "name": "고서준",
-        "birthDate": "2099-07-06",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K348"
-          },
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-고서준-p1"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "2126년 세대. 능선 수비. 아관사와 구의수비대는 각자 병력에서 지휘관을 뽑고 서로 다른 지휘권을 유지한다. 고서준이 아관사 사령관으로 선출된 것은 한강진교량공회의 능선 통행을 끊기지 않게 지킨 뒤였다. 구의수비대의 결재가 늦어도 전쟁과 급수는 단독으로 결정하지 못한다. 두 지휘부는 서로를 계속 감시한다. 가문 키는 교량이다. 건대 고려인 회랑이 이 나라 가장자리에 얹힌다. 한재목의 수문은 하구에서 이 교량과 만난다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-고서준-p1"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0349"
-      },
-      {
-        "id": "FH-K348-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "고승연",
-        "lineage": {
-          "surname": "고",
-          "bongwan": "한양",
-          "clan": "ace0-d55c-c591"
-        },
-        "birthDate": "2069-07-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-고서준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2107,
-            "summary": "고승연은 생활권의 공동 거처에서 능선수비대장 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-고서준-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K348-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "고승정",
-        "lineage": {
-          "surname": "고",
-          "bongwan": "한양",
-          "clan": "ace0-d55c-c591"
-        },
-        "birthDate": "2039-07-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-고서준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "고승정은 생활권의 공동 거처에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-고서준-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K348-P-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "고승아",
-        "lineage": {
-          "surname": "고",
-          "bongwan": "한양",
-          "clan": "ace0-d55c-c591"
-        },
-        "birthDate": "2009-07-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-고서준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "고승아는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-고서준-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K348-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "박준연",
-        "birthDate": "2069-07-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-고서준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2107,
-            "summary": "박준연은 생활권의 공동 거처에서 능선수비대장 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-고서준-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K348-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "이준정",
-        "birthDate": "2039-07-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-고서준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2077,
-            "summary": "이준정은 생활권의 공동 거처에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-고서준-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K348-M-03",
-        "personId": null,
-        "kind": "historical",
-        "name": "최준찬",
-        "birthDate": "2009-07-06",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-고서준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "최준찬은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-14.json",
-                "anchor": "인물-고서준-p1"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K348-P-01:K348:biological",
-        "from": "FH-K348-P-01",
-        "to": "K348",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-고서준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K348-P-02:FH-K348-P-01:biological",
-        "from": "FH-K348-P-02",
-        "to": "FH-K348-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-고서준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K348-P-03:FH-K348-P-02:biological",
-        "from": "FH-K348-P-03",
-        "to": "FH-K348-P-02",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-고서준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K348-M-01:K348:biological",
-        "from": "FH-K348-M-01",
-        "to": "K348",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-고서준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K348-M-02:FH-K348-M-01:biological",
-        "from": "FH-K348-M-02",
-        "to": "FH-K348-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-고서준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K348-M-03:FH-K348-M-02:biological",
-        "from": "FH-K348-M-03",
-        "to": "FH-K348-M-02",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-14.json",
-            "anchor": "인물-고서준-p1"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "ace0-d55c-c591",
+    "name": "한양 고씨",
+    "crest": "clan-crests/ace0-d55c-c591.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "고서준은 스물일곱 살에 광진구 의석을 쥔 OMO당 국회의원이고, 화양동 건대입구역에 기재돼 있다. 한양 고씨 남성이다. 구의 취수구와 잠실수중보 북쪽 끝, 광나루–천호 강 밑 터널이 모두 그의 공작령에 있어, 세 번째 급수계약의 부속서마다 그의 도장 자리가 비어 있다. 보의 북쪽 끝 부속서를 두고 송파 곁집의 남윤경 쪽과 초안을 주고받는데, 클로당의 은채윤 의원은 그것을 장부 밖 단체에 찍는 첫 도장이라 부른다. 그가 도장을 찍은 뒤 대통령이 결재하느냐가 올겨울 국회의 가장 큰 다툼이다.",
+  "fields": {
+    "소속": "정부",
+    "직함": "광진구 국회의원",
+    "품계": "국회의원",
+    "생업": "구 행정",
+    "일하는 역": "건대입구역",
+    "잠자는 역": "건대입구역",
+    "가구": "혼자 사는 가구"
+  },
+  "sections": {
+    "생애": "고서준은 스물일곱 살에 광진구 의석을 쥔 OMO당 국회의원이고, 화양동 건대입구역에 기재돼 있다. 한양 고씨 남성이다. 구의 취수구와 잠실수중보 북쪽 끝, 광나루–천호 강 밑 터널이 모두 그의 공작령에 있어, 세 번째 급수계약의 부속서마다 그의 도장 자리가 비어 있다. 보의 북쪽 끝 부속서를 두고 송파 곁집의 남윤경 쪽과 초안을 주고받는데, 클로당의 은채윤 의원은 그것을 장부 밖 단체에 찍는 첫 도장이라 부른다. 그가 도장을 찍은 뒤 대통령이 결재하느냐가 올겨울 국회의 가장 큰 다툼이다.",
+    "관직": "직함 광진구 국회의원. 직위 광진구 국회의원 · 정부. 품계 국회의원. 일하는 역 건대입구역."
+  },
+  "values": {
+    "권위": 85,
+    "개방": -75,
+    "무력": 85,
+    "물질": 5,
+    "공동": 35,
+    "원칙": 10,
+    "공개": -35,
+    "자격": 5,
+    "분산": -80,
+    "변혁": -40
+  },
+  "desire": {
+    "갈망": 40,
+    "독점": 30,
+    "위험": 20,
+    "과시": 10,
+    "지속": 20,
+    "지향": "이성",
+    "결합": "단혼"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "excluded"
+    "id": "hh:person-0349",
+    "role": "single",
+    "personFaith": "none",
+    "houseFaith": "none",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [
+      {
+        "from": "고서준",
+        "type": "지휘",
+        "to": "윤서린",
+        "basis": "종신 대통령 윤서린의 직속"
+      },
+      {
+        "from": "고서준",
+        "type": "계약",
+        "to": "남윤경",
+        "basis": "잠실수중보의 남북 끝을 나눠 쥔 송파 곁집 쪽과 보 북쪽 끝 부속서의 초안을 주고받는 약정 상대"
+      },
+      {
+        "from": "고서준",
+        "type": "경쟁",
+        "to": "은채윤",
+        "basis": "아크와 부속서를 맺자는 OMO당 의원과 막자는 클로당 의원으로 국회에서 맞선다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "안기준",
+        "type": "지휘",
+        "to": "고서준",
+        "basis": "광진구 국회의원 고서준의 직속"
+      },
+      {
+        "from": "원예나",
+        "type": "지휘",
+        "to": "고서준",
+        "basis": "광진구 국회의원 고서준의 직속"
+      },
+      {
+        "from": "영한뫼",
+        "type": "지휘",
+        "to": "고서준",
+        "basis": "광진구 국회의원 고서준의 직속"
+      },
+      {
+        "from": "고다진",
+        "type": "지휘",
+        "to": "고서준",
+        "basis": "광진구 국회의원 고서준의 직속"
+      },
+      {
+        "from": "장세화",
+        "type": "계약",
+        "to": "고서준",
+        "basis": "강가 네 구의 부속서 도장을 같은 날 찍기로 한 약속"
+      },
+      {
+        "from": "곽태산",
+        "type": "계약",
+        "to": "고서준",
+        "basis": "잠실수중보 북쪽 끝 부속서에 광진구 국회의원의 도장을 받아야 한다."
+      },
+      {
+        "from": "안기준",
+        "type": "맹세",
+        "to": "고서준",
+        "basis": "후계로 기재되던 날 의석을 지키겠다고 맹세했다"
+      },
+      {
+        "from": "곽민재",
+        "type": "스승과 제자",
+        "to": "고서준",
+        "basis": "젊은 의원에게 구 고시를 쓰는 법과 민원 심리의 순서를 가르쳤다"
+      },
+      {
+        "from": "탁서윤",
+        "type": "계약",
+        "to": "고서준",
+        "basis": "광나루 터널 검문소의 초청 증표 수를 광진구 국회의원과 같은 명령서에 맞춰 적는다"
+      },
+      {
+        "from": "최나래",
+        "type": "경쟁",
+        "to": "고서준",
+        "basis": "광나루–천호 터널 건너편의 광진구 국회의원 고서준 쪽과 터널 입구를 사이에 두고 서로의 병력을 세며 맞선다"
+      }
+    ]
+  },
+  "directLiege": {
+    "personId": "K144",
+    "name": "윤서린",
+    "courtId": "court:K144",
+    "effectiveYear": 2126,
+    "ownerTerm": "직속 주군",
+    "relationKind": "direct-liege"
+  },
+  "court": {
+    "id": "court:K348",
+    "members": [
+      {
+        "personId": "K350",
+        "name": "안기준"
+      },
+      {
+        "personId": "K355",
+        "name": "원예나"
+      },
+      {
+        "personId": "K364",
+        "name": "영한뫼"
+      },
+      {
+        "personId": "person-0643",
+        "name": "고다진"
+      }
+    ]
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
-        "base": 13,
-        "effective": 13
-      },
-      "strategy": {
-        "base": 13,
-        "effective": 13
-      },
-      "negotiation": {
+      "diplomacy": {
         "base": 10,
         "effective": 10
       },
-      "management": {
-        "base": 12,
-        "effective": 12
+      "martial": {
+        "base": 5,
+        "effective": 5
       },
-      "insight": {
-        "base": 12,
-        "effective": 12
+      "stewardship": {
+        "base": 10,
+        "effective": 10
+      },
+      "intrigue": {
+        "base": 7,
+        "effective": 7
       },
       "learning": {
-        "base": 10,
-        "effective": 10
+        "base": 6,
+        "effective": 6
       },
       "prowess": {
-        "base": 8,
-        "effective": 8
-      },
-      "endurance": {
-        "base": 10,
-        "effective": 10
+        "base": 4,
+        "effective": 4
       }
     },
     "skills": [
       {
-        "id": "k348-ridge-permits",
-        "name": {
-          "ko": "능선 통행 심사",
-          "en": "Ridge-access review"
-        },
-        "rating": 65
+        "id": "p0349-annex",
+        "name": "부속서 교섭",
+        "rating": 62
+      },
+      {
+        "id": "p0349-intake",
+        "name": "취수구 급수표 읽기",
+        "rating": 48
       }
     ],
     "traits": [
       {
-        "id": "k348-trait-1",
-        "name": {
-          "ko": "먼저 막고 함께 승인",
-          "en": "Early controls with joint approval"
-        },
-        "description": {
-          "ko": "위험 소문에 통행 조건을 먼저 강화한다.",
-          "en": "Tightens access conditions early in response to risk reports."
-        },
-        "behavior": {
-          "ko": "위험 소문에 통행 조건을 먼저 강화한다.",
-          "en": "Tightens access conditions early in response to risk reports."
-        },
-        "stress": {
-          "ko": "정수 중단 소문이 돌면 능선 통행을 허가제로 묶는다.",
-          "en": "Places ridge travel under permits when water interruption is rumored."
-        },
-        "relationship": {
-          "ko": "탁서윤의 결재를 건너뛰어 전쟁·급수를 결정할 수 없다.",
-          "en": "Cannot bypass Tak Seoyun’s approval on war or water."
-        },
+        "id": "p0349-trait-1",
+        "name": "끝까지 읽는 도장",
+        "description": "서류를 마지막 줄까지 읽기 전에는 도장을 찍지 않는다.",
+        "behavior": "부속서의 수치를 하나씩 소리 내어 읽게 하고, 고친 곳마다 날짜를 적는다.",
+        "stress": "도장을 재촉받으면 회의를 다음 날로 미룬다.",
+        "relationship": "나이 든 의원들은 그를 느리다고 하고, 구청 사람들은 그 느림을 믿는다.",
         "effects": []
       }
     ],
-    "narrative": {
-      "ko": "정수 중단 소문이 돌자 능선 통행을 허가제로 바꾸었다. 고서준과 탁서윤의 지휘부는 별도로 선출되어 서로를 감시하며 전쟁과 급수는 공동 승인을 거친다. 선제 대응이 단독 결정권을 뜻하지 않는다.",
-      "en": "He introduced ridge-access permits after rumors of interrupted water purification. His command and Tak Seoyun’s are independently elected and monitor each other; war and water require joint approval. Early action does not grant unilateral authority."
-    },
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -506,137 +269,102 @@
   },
   "confirmedHoldings": [
     {
-      "id": "holding:capital-s14",
+      "id": "holding:v3:duchy:11215",
       "name": {
-        "ko": "구의역 직영지"
+        "ko": "광진구 공작령"
       },
       "holderPersonId": "K348",
-      "directLiegePersonId": null,
-      "stateId": "S14",
-      "stationRef": {
-        "stationId": "구의",
-        "stationName": "구의"
-      },
-      "adminRefs": [],
+      "directLiegePersonId": "K144",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1121571000",
+          "name": "화양동"
+        },
+        {
+          "id": "region:1121573000",
+          "name": "군자동"
+        },
+        {
+          "id": "region:1121574000",
+          "name": "중곡1동"
+        },
+        {
+          "id": "region:1121575000",
+          "name": "중곡2동"
+        },
+        {
+          "id": "region:1121576000",
+          "name": "중곡3동"
+        },
+        {
+          "id": "region:1121577000",
+          "name": "중곡4동"
+        },
+        {
+          "id": "region:1121578000",
+          "name": "능동"
+        },
+        {
+          "id": "region:1121581000",
+          "name": "광장동"
+        },
+        {
+          "id": "region:1121582000",
+          "name": "자양1동"
+        },
+        {
+          "id": "region:1121583000",
+          "name": "자양2동"
+        },
+        {
+          "id": "region:1121584000",
+          "name": "자양3동"
+        },
+        {
+          "id": "region:1121584700",
+          "name": "자양4동"
+        },
+        {
+          "id": "region:1121585000",
+          "name": "구의1동"
+        },
+        {
+          "id": "region:1121586000",
+          "name": "구의2동"
+        },
+        {
+          "id": "region:1121587000",
+          "name": "구의3동"
+        }
+      ],
+      "territorialScale": "duchy",
+      "titleId": "geography:duchy:11215",
       "geometrySource": null,
-      "territorialScale": null,
       "formalTitleRank": null
     }
   ],
-  "clan": {
-    "id": "ace0-d55c-c591",
-    "name": "한양 고씨",
-    "crest": "clan-crests/ace0-d55c-c591.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "locked": true,
-  "values": {
-    "권위": 40,
-    "개방": -20,
-    "무력": 50,
-    "물질": 10,
-    "공동": 30,
-    "원칙": -10,
-    "공개": -10,
-    "자격": -10,
-    "분산": -30,
-    "변혁": -20
-  },
-  "desire": {
-    "갈망": 40,
-    "독점": 30,
-    "위험": 20,
-    "과시": 10,
-    "지속": 20,
-    "지향": "이성",
-    "결합": "단혼"
-  },
-  "fields": {
-    "생업": "능선수비대장",
-    "소속": "아관사",
-    "품계": "사령관",
-    "직함": "아관사 사령관",
-    "업무 위치": "구의1동 행정동 범위. 생업: 능선수비대장; 구의 대합실의 급수 게시·통행 대기·송장·면제 심사·증언·공동호송 서명의 근무 기준점이다. 역점·시설 실제 경계나 동 전체 소유를 확정하지 않는다. 관계. 배우진과 호위. 한재목과 수문 전술. 거주지나 정확한 시설 경계를 확정하지 않으며 새 작위·영지·점유권을 부여하지 않는다."
-  },
-  "sections": {
-    "생애": "2126년 세대. 아관사와 구의수비대는 각자의 병력에서 지휘관을 뽑고 지휘권을 나눈다. 고서준은 한강진교량공회의 능선 통행을 지킨 뒤 아관사 사령관으로 선출되었다. 구의수비대장 탁서윤과 전쟁·급수 명령에 함께 결재하고 서로의 결재를 감시한다. 건대 고려인 회랑은 이 나라의 가장자리에 있고 한재목의 수문 기록은 교량 통행 기록과 맞물린다.\n관직. 품계 사령관. 직함은 아관사 사령관. 생업 별명은 능선수비대장. 전쟁과 급수에는 양군 지휘관의 공동 승인이 필요하다.\n일화. 영구 겨울 추위에 구의 급수관 잔압 기록과 능선 통행 기록이 어긋나자 고서준은 교량 허가 명부를 대조하고 탁서윤과 급수 기록을 함께 확인하였다. 두 지휘관의 확인 뒤 허가 시각이 한재목의 수문 칠판에 옮겨졌다.\n가문. 한강진교량공회(HP07). 관리인. 능선 통행이 가문의 키다.\n관계. 탁서윤과 이원 지휘. 배우진과 호위. 한재목과 수문 전술.\n\n- 생업: 능선수비대장\n- 소속: 아관사\n- 품계: 사령관\n- 직함: 아관사 사령관\n- 업무 위치: 구의1동 행정동 범위. 생업: 능선수비대장; 구의 대합실의 급수 게시·통행 대기·송장·면제 심사·증언·공동호송 서명의 근무 기준점이다. 역점·시설 실제 경계나 동 전체 소유를 확정하지 않는다. 관계. 배우진과 호위. 한재목과 수문 전술. 거주지나 정확한 시설 경계를 확정하지 않으며 새 작위·영지·점유권을 부여하지 않는다.\n\n아관사는 아관사와 구의수비대가 각자 자기 병력에서 지휘관을 뽑는 약국이다. 전쟁과 급수는 두 지휘부가 함께 승인하고 서로를 상시 견제하며, 어느 한쪽도 단독으로 강국이 될 수 없다."
-  },
-  "biography": "**생애.** 2126년 세대. 아관사와 구의수비대는 각자의 병력에서 지휘관을 뽑고 지휘권을 나눈다. 고서준은 한강진교량공회의 능선 통행을 지킨 뒤 아관사 사령관으로 선출되었다. 구의수비대장 탁서윤과 전쟁·급수 명령에 함께 결재하고 서로의 결재를 감시한다. 건대 고려인 회랑은 이 나라의 가장자리에 있고 한재목의 수문 기록은 교량 통행 기록과 맞물린다.\n관직. 품계 사령관. 직함은 아관사 사령관. 생업 별명은 능선수비대장. 전쟁과 급수에는 양군 지휘관의 공동 승인이 필요하다.\n일화. 영구 겨울 추위에 구의 급수관 잔압 기록과 능선 통행 기록이 어긋나자 고서준은 교량 허가 명부를 대조하고 탁서윤과 급수 기록을 함께 확인하였다. 두 지휘관의 확인 뒤 허가 시각이 한재목의 수문 칠판에 옮겨졌다.\n가문. 한강진교량공회(HP07). 관리인. 능선 통행이 가문의 키다.\n관계. 탁서윤과 이원 지휘. 배우진과 호위. 한재목과 수문 전술.\n\n- 생업: 능선수비대장\n- 소속: 아관사\n- 품계: 사령관\n- 직함: 아관사 사령관\n- 업무 위치: 구의1동 행정동 범위. 생업: 능선수비대장; 구의 대합실의 급수 게시·통행 대기·송장·면제 심사·증언·공동호송 서명의 근무 기준점이다. 역점·시설 실제 경계나 동 전체 소유를 확정하지 않는다. 관계. 배우진과 호위. 한재목과 수문 전술. 거주지나 정확한 시설 경계를 확정하지 않으며 새 작위·영지·점유권을 부여하지 않는다.\n\n아관사는 아관사와 구의수비대가 각자 자기 병력에서 지휘관을 뽑는 약국이다. 전쟁과 급수는 두 지휘부가 함께 승인하고 서로를 상시 견제하며, 어느 한쪽도 단독으로 강국이 될 수 없다.",
-  "sources": [
-    "Cast-State-14",
-    "Core-Characters"
-  ],
-  "relations": {
-    "outgoing": [],
-    "incoming": [
-      {
-        "from": "탁서윤",
-        "type": "지휘",
-        "to": "고서준",
-        "basis": "구의수비대장과 관문사령관의 이원 합의"
+  "subordinateHoldings": [
+    {
+      "id": "holding:v3:dong:1121583000",
+      "name": {
+        "ko": "자양2동"
       },
-      {
-        "from": "문하율",
-        "type": "지휘",
-        "to": "고서준",
-        "basis": "능선 초병으로 수비 명령을 수행"
-      },
-      {
-        "from": "안기준",
-        "type": "지휘",
-        "to": "고서준",
-        "basis": "통행 협약을 교량에서 집행"
-      },
-      {
-        "from": "곽민재",
-        "type": "경쟁",
-        "to": "고서준",
-        "basis": "구의 제한급수 권한을 다툼"
-      },
-      {
-        "from": "심가은",
-        "type": "지휘",
-        "to": "고서준",
-        "basis": "교량 척후를 대장에게 직보"
-      },
-      {
-        "from": "이윤서",
-        "type": "경쟁",
-        "to": "고서준",
-        "basis": "능선 정찰과 교량 통행을 겨룸"
-      },
-      {
-        "from": "신종목",
-        "type": "지휘",
-        "to": "고서준",
-        "basis": "아관사 관문사령관 고서준의 산하"
-      },
-      {
-        "from": "마길상",
-        "type": "경쟁",
-        "to": "고서준",
-        "basis": "고서준의 능선 정찰과 통행 좌표를 경쟁하며"
-      },
-      {
-        "from": "판초담",
-        "type": "지휘",
-        "to": "고서준",
-        "basis": "고서준의 전시 지휘에는 복종하되 은폐 배전은 거부한다"
-      },
-      {
-        "from": "매서담",
-        "type": "맹세",
-        "to": "고서준",
-        "basis": "고서준의 교량 허가와 증언을 겹치고"
-      },
-      {
-        "from": "근바름",
-        "type": "계약",
-        "to": "고서준",
-        "basis": "고서준의 공동통치 날인만 보조 함의 열쇠로 둔다"
-      }
-    ]
-  }
+      "holderPersonId": "K355",
+      "directLiegePersonId": "K348",
+      "stateId": "government",
+      "adminRefs": [
+        {
+          "id": "region:1121583000",
+          "name": "자양2동"
+        }
+      ],
+      "territorialScale": "dong",
+      "titleId": null,
+      "geometrySource": null,
+      "formalTitleRank": null,
+      "holderName": "원예나",
+      "holderRoute": "/people/person-0356"
+    }
+  ]
 }

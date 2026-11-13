@@ -3,27 +3,27 @@
   "personId": "person-0250",
   "characterId": "K249",
   "name": "윤초아",
-  "stateId": "S10",
+  "stateId": "government",
   "approval": "art-proposal",
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "장경 필사 주지"
+    "role": "종로구 국회의원 · 정부"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short hair slicked back with a side part",
-    "upper": "mustard ochre long plain wool coat with a standing collar",
-    "outfit": "mustard ochre long plain wool coat with a standing collar",
+    "upper": "dark navy wool coat with an animal-fur collar and cotton lining, over a sand beige knit vest",
+    "outfit": "dark navy wool coat with an animal-fur collar and cotton lining, over a sand beige knit vest",
     "palette": [
-      "mustard ochre",
-      "sand beige",
-      "olive drab"
+      "dark navy",
+      "fur brown",
+      "gold"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "sand beige high-waisted pleated trousers",
-    "footwear": "soft leather slip-on shoes",
-    "accessories": "simple wooden prayer beads"
+    "lower": "dark wool trousers tucked into boots",
+    "footwear": "leather boots with felt liners",
+    "accessories": "gold Assembly Member badge on the left lapel"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -176,25 +176,25 @@
       "headwear": {
         "value": "none",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "mustard ochre long plain wool coat with a standing collar",
+        "value": "dark navy wool coat with an animal-fur collar and cotton lining, over a sand beige knit vest",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "sand beige high-waisted pleated trousers",
+        "value": "dark wool trousers tucked into boots",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "soft leather slip-on shoes",
+        "value": "leather boots with felt liners",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -206,39 +206,39 @@
       "neckline": {
         "value": "standing collar",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "simple wooden prayer beads",
+        "value": "gold Assembly Member badge on the left lapel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(religious)",
-        "derived": true
-      },
-      "shape": {
-        "value": "loop of round beads",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(religious)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dark polished wood",
+        "value": "gold",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(religious)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "wood, cord",
+        "value": "gilded metal",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(religious)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "wrapped around the wrist",
+        "value": "pinned to the left lapel",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(religious)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small round badge",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 윤초아, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: slim; skin: fair with a neutral undertone. upper garment: mustard ochre long plain wool coat with a standing collar; neckline: standing collar. accessories: simple wooden prayer beads; worn as wrapped around the wrist. color palette: mustard ochre, sand beige, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 윤초아, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: slim; skin: fair with a neutral undertone. upper garment: dark navy wool coat with an animal-fur collar and cotton lining, over a sand beige knit vest; neckline: standing collar. accessories: gold Assembly Member badge on the left lapel; worn as pinned to the left lapel. color palette: dark navy, fur brown, gold. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 윤초아, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: mustard ochre long plain wool coat with a standing collar; neckline: standing collar; lower garment: sand beige high-waisted pleated trousers; footwear: soft leather slip-on shoes. accessories: simple wooden prayer beads; worn as wrapped around the wrist. color palette: mustard ochre, sand beige, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 윤초아, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: dark navy wool coat with an animal-fur collar and cotton lining, over a sand beige knit vest; neckline: standing collar; lower garment: dark wool trousers tucked into boots; footwear: leather boots with felt liners. accessories: gold Assembly Member badge on the left lapel; worn as pinned to the left lapel. color palette: dark navy, fur brown, gold. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 윤초아, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: mustard ochre long plain wool coat with a standing collar; neckline: standing collar; lower garment: sand beige high-waisted pleated trousers; footwear: soft leather slip-on shoes. accessories: simple wooden prayer beads; worn as wrapped around the wrist. color palette: mustard ochre, sand beige, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 윤초아, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: dark navy wool coat with an animal-fur collar and cotton lining, over a sand beige knit vest; neckline: standing collar; lower garment: dark wool trousers tucked into boots; footwear: leather boots with felt liners. accessories: gold Assembly Member badge on the left lapel; worn as pinned to the left lapel. color palette: dark navy, fur brown, gold. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 윤초아, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: mustard ochre long plain wool coat with a standing collar; neckline: standing collar; lower garment: sand beige high-waisted pleated trousers; footwear: soft leather slip-on shoes. accessories: simple wooden prayer beads; worn as wrapped around the wrist. color palette: mustard ochre, sand beige, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 윤초아, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: dark navy wool coat with an animal-fur collar and cotton lining, over a sand beige knit vest; neckline: standing collar; lower garment: dark wool trousers tucked into boots; footwear: leather boots with felt liners. accessories: gold Assembly Member badge on the left lapel; worn as pinned to the left lapel. color palette: dark navy, fur brown, gold. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 윤초아, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: mustard ochre long plain wool coat with a standing collar; neckline: standing collar; lower garment: sand beige high-waisted pleated trousers; footwear: soft leather slip-on shoes. accessories: simple wooden prayer beads; worn as wrapped around the wrist. color palette: mustard ochre, sand beige, olive drab. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 윤초아, an East Asian man, in his forties. Adult man with a calm, restrained expression, faint expression lines; face shape: round; gently hooded dark brown eyes; softly arched eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; natural muted rose lips; facial hair: clean shaven. short hair slicked back with a side part; black hair; short length. build: slim; skin: fair with a neutral undertone; average adult male height. upper garment: dark navy wool coat with an animal-fur collar and cotton lining, over a sand beige knit vest; neckline: standing collar; lower garment: dark wool trousers tucked into boots; footwear: leather boots with felt liners. accessories: gold Assembly Member badge on the left lapel; worn as pinned to the left lapel. color palette: dark navy, fur brown, gold. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

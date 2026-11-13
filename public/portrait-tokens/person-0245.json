@@ -3,27 +3,27 @@
   "personId": "person-0245",
   "characterId": "K244",
   "name": "류해담",
-  "stateId": "S09",
+  "stateId": "free-city",
   "approval": "art-proposal",
   "facts": {
     "gender": "여성",
     "genderUserLocked": false,
-    "role": "시세 소문 검증 필진"
+    "role": "김포공항 구간장 · 자유도시들"
   },
   "artProposal": {
     "face": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
     "hair": "chin-length bob with soft waves",
-    "upper": "khaki plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer",
-    "outfit": "khaki plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer",
+    "upper": "보라 깃끈을 두른 카키색 합성 섬유 누비 조끼, 겹 작업복 위에 입음",
+    "outfit": "보라 깃끈을 두른 카키색 합성 섬유 누비 조끼, 겹 작업복 위에 입음",
     "palette": [
       "khaki",
       "burgundy",
-      "oxblood"
+      "faded purple"
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
-    "lower": "burgundy pleated knee-length wool skirt over thick stockings",
-    "footwear": "laced leather walking shoes",
-    "accessories": "duty whistle on a cord lanyard"
+    "lower": "burgundy synthetic trousers with padded knees",
+    "footwear": "walking boots under synthetic overshoes",
+    "accessories": "cord lanyard holding a small notebook of cable temperatures"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -174,27 +174,27 @@
     },
     "outfit": {
       "headwear": {
-        "value": "none",
+        "value": "knitted synthetic watch cap",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "upper": {
-        "value": "khaki plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer",
+        "value": "보라 깃끈을 두른 카키색 합성 섬유 누비 조끼, 겹 작업복 위에 입음",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "lower": {
-        "value": "burgundy pleated knee-length wool skirt over thick stockings",
+        "value": "burgundy synthetic trousers with padded knees",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "footwear": {
-        "value": "laced leather walking shoes",
+        "value": "walking boots under synthetic overshoes",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "marks": {
@@ -204,41 +204,41 @@
         "derived": true
       },
       "neckline": {
-        "value": "buttoned shirt collar",
+        "value": "collar edged with a purple city cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "source": "v3-07:clothing",
         "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": "duty whistle on a cord lanyard",
+        "value": "cord lanyard holding a small notebook of cable temperatures",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
-        "derived": true
-      },
-      "shape": {
-        "value": "small cylindrical whistle",
-        "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "color": {
-        "value": "dull brass",
+        "value": "faded purple and grey",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "material": {
-        "value": "brass, cord",
+        "value": "synthetic cord, waxed card",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
         "derived": true
       },
       "mounting": {
-        "value": "lanyard around the neck",
+        "value": "hung around the neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(duty)",
+        "source": "v3-07:clothing",
+        "derived": true
+      },
+      "shape": {
+        "value": "small flat notebook",
+        "status": "derived-proposal",
+        "source": "v3-07:clothing",
         "derived": true
       }
     }
@@ -259,27 +259,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 류해담, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: slim; skin: light olive. upper garment: khaki plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: khaki, burgundy, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 류해담, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: slim; skin: light olive. headwear: knitted synthetic watch cap; upper garment: 보라 깃끈을 두른 카키색 합성 섬유 누비 조끼, 겹 작업복 위에 입음; neckline: collar edged with a purple city cord. accessories: cord lanyard holding a small notebook of cable temperatures; worn as hung around the neck. color palette: khaki, burgundy, faded purple. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 류해담, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: slim; skin: light olive; average adult female height. upper garment: khaki plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: burgundy pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: khaki, burgundy, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 류해담, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: slim; skin: light olive; average adult female height. headwear: knitted synthetic watch cap; upper garment: 보라 깃끈을 두른 카키색 합성 섬유 누비 조끼, 겹 작업복 위에 입음; neckline: collar edged with a purple city cord; lower garment: burgundy synthetic trousers with padded knees; footwear: walking boots under synthetic overshoes. accessories: cord lanyard holding a small notebook of cable temperatures; worn as hung around the neck. color palette: khaki, burgundy, faded purple. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 류해담, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: slim; skin: light olive; average adult female height. upper garment: khaki plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: burgundy pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: khaki, burgundy, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 류해담, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: slim; skin: light olive; average adult female height. headwear: knitted synthetic watch cap; upper garment: 보라 깃끈을 두른 카키색 합성 섬유 누비 조끼, 겹 작업복 위에 입음; neckline: collar edged with a purple city cord; lower garment: burgundy synthetic trousers with padded knees; footwear: walking boots under synthetic overshoes. accessories: cord lanyard holding a small notebook of cable temperatures; worn as hung around the neck. color palette: khaki, burgundy, faded purple. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 류해담, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: slim; skin: light olive; average adult female height. upper garment: khaki plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: burgundy pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: khaki, burgundy, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 류해담, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: slim; skin: light olive; average adult female height. headwear: knitted synthetic watch cap; upper garment: 보라 깃끈을 두른 카키색 합성 섬유 누비 조끼, 겹 작업복 위에 입음; neckline: collar edged with a purple city cord; lower garment: burgundy synthetic trousers with padded knees; footwear: walking boots under synthetic overshoes. accessories: cord lanyard holding a small notebook of cable temperatures; worn as hung around the neck. color palette: khaki, burgundy, faded purple. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 류해담, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: slim; skin: light olive; average adult female height. upper garment: khaki plain wool work jacket over a collared shirt, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: burgundy pleated knee-length wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: khaki, burgundy, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 류해담, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: oval; gently hooded dark brown eyes; angled eyebrows; nose: low broad bridge; mouth: wide closed mouth; muted pink lips. chin-length bob with soft waves; dark brown with grey at the temples hair; short length. build: slim; skin: light olive; average adult female height. headwear: knitted synthetic watch cap; upper garment: 보라 깃끈을 두른 카키색 합성 섬유 누비 조끼, 겹 작업복 위에 입음; neckline: collar edged with a purple city cord; lower garment: burgundy synthetic trousers with padded knees; footwear: walking boots under synthetic overshoes. accessories: cord lanyard holding a small notebook of cable temperatures; worn as hung around the neck. color palette: khaki, burgundy, faded purple. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

@@ -1,394 +1,106 @@
 {
   "id": "person-0906",
   "name": "서돌서",
-  "title": "종자 기록관",
-  "position": "종자 기록관",
+  "title": "가문 징집병",
+  "position": "가문 징집병 · 사평역",
   "characterId": "K906",
-  "rank": "대리",
+  "rank": "미세례자",
   "commonTier": "T5",
-  "occupation": "기록·열쇠 인수인계",
+  "occupation": "가문 징집",
   "gender": "남성",
   "stage": "S4",
-  "state": "S03",
-  "stateName": "태욱그룹",
-  "sourceRoute": "/world/Cast-State-03#인물-서돌서",
+  "state": "arc",
+  "stateName": "아크",
   "detailRoute": "/people/person-0906",
   "birthDate": "2064-10-09",
   "birthday": "10-09",
   "age": 62,
   "ageAsOf": "2126-12-31",
-  "sourceStatus": "owner-authored",
-  "sourceRefs": [
-    "lore/characters/Cast-State-03.json#/content/632",
-    "lore/characters/Cast-State-03.json#/content/635"
-  ],
-  "familyTree": {
-    "personId": "K906",
-    "nodes": [
-      {
-        "id": "K906",
-        "personId": "K906",
-        "kind": "person",
-        "name": "서돌서",
-        "birthDate": "2064-10-09",
-        "deathDate": null,
-        "status": "preserved",
-        "sourceRefs": [
-          {
-            "path": "lore/name-pools/cast-birthdays.json",
-            "anchor": "K906"
-          },
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-서돌서-list2"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2126,
-            "summary": "소속: 태욱그룹",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-서돌서-list2"
-              }
-            ]
-          }
-        ],
-        "detailRoute": "/people/person-0906"
-      },
-      {
-        "id": "FH-K906-P-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "서현석",
-        "lineage": {
-          "surname": "서",
-          "bongwan": "달성",
-          "clan": "c11c-b2ec-c131-agreed-c11c-second"
-        },
-        "birthDate": "2034-10-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-서돌서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "서현석은 서울역 등기소에서 기록·열쇠 인수인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-서돌서-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K906-P-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "서현준",
-        "lineage": {
-          "surname": "서",
-          "bongwan": "달성",
-          "clan": "c11c-b2ec-c131-agreed-c11c-second"
-        },
-        "birthDate": "2004-10-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-서돌서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "서현준은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-서돌서-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K906-M-01",
-        "personId": null,
-        "kind": "historical",
-        "name": "강민진",
-        "birthDate": "2034-10-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-서돌서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2072,
-            "summary": "강민진은 서울역 등기소에서 기록·열쇠 인수인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-서돌서-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      },
-      {
-        "id": "FH-K906-M-02",
-        "personId": null,
-        "kind": "historical",
-        "name": "임민원",
-        "birthDate": "2004-10-09",
-        "deathDate": null,
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-서돌서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ],
-        "timeline": [
-          {
-            "year": 2030,
-            "summary": "임민원은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
-            "sourceRefs": [
-              {
-                "path": "lore/characters/Cast-State-03.json",
-                "anchor": "인물-서돌서-list2"
-              },
-              {
-                "path": "lore/name-pools/cast-family-trees.json"
-              }
-            ]
-          }
-        ],
-        "detailRoute": null
-      }
-    ],
-    "edges": [
-      {
-        "id": "FH-K906-P-01:K906:biological",
-        "from": "FH-K906-P-01",
-        "to": "K906",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-서돌서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K906-P-02:FH-K906-P-01:biological",
-        "from": "FH-K906-P-02",
-        "to": "FH-K906-P-01",
-        "type": "biological",
-        "parentRole": "father",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-서돌서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K906-M-01:K906:biological",
-        "from": "FH-K906-M-01",
-        "to": "K906",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-서돌서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      },
-      {
-        "id": "FH-K906-M-02:FH-K906-M-01:biological",
-        "from": "FH-K906-M-02",
-        "to": "FH-K906-M-01",
-        "type": "biological",
-        "parentRole": "mother",
-        "status": "authored",
-        "sourceRefs": [
-          {
-            "path": "lore/characters/Cast-State-03.json",
-            "anchor": "인물-서돌서-list2"
-          },
-          {
-            "path": "lore/name-pools/cast-family-trees.json"
-          }
-        ]
-      }
-    ],
-    "parentStatus": null
+  "generation": "opening",
+  "clan": {
+    "id": "c11c-b2ec-c131",
+    "name": "달성 서씨",
+    "crest": "clan-crests/c11c-b2ec-c131.svg"
   },
-  "proseContacts": [],
+  "sourceStatus": "ck3-table-derived",
+  "sourceKind": "proposal",
+  "minors": false,
+  "biography": "예순둘에 징집병 교대를 서는 서돌서는, 서초 곁집이 집안마다 사람을 모을 때 달성 서씨 집안의 젊은 사람 대신 스스로 나섰다. 사평역의 강가 쪽 출입구를 지키는 교대에 서며, 젊은 징집병들에게 눈 굴 벽에 귀를 대고 바깥 발소리를 듣는 법을 가르친다. 깃에 아직 땀 한 줄 없는 것을 그는 부끄러워하지 않고, 손자뻘 되는 아이들의 순번이 먼저라고 말한다.",
+  "fields": {
+    "소속": "아크",
+    "직함": "가문 징집병",
+    "품계": "미세례자",
+    "생업": "가문 징집",
+    "일하는 역": "사평역",
+    "잠자는 역": "사평역",
+    "가구": "혼자 사는 가구",
+    "부위 수": 0
+  },
+  "sections": {
+    "생애": "예순둘에 징집병 교대를 서는 서돌서는, 서초 곁집이 집안마다 사람을 모을 때 달성 서씨 집안의 젊은 사람 대신 스스로 나섰다. 사평역의 강가 쪽 출입구를 지키는 교대에 서며, 젊은 징집병들에게 눈 굴 벽에 귀를 대고 바깥 발소리를 듣는 법을 가르친다. 깃에 아직 땀 한 줄 없는 것을 그는 부끄러워하지 않고, 손자뻘 되는 아이들의 순번이 먼저라고 말한다.",
+    "관직": "직함 가문 징집병. 직위 가문 징집병 · 사평역. 품계 미세례자. 일하는 역 사평역."
+  },
+  "values": {
+    "권위": 20,
+    "개방": -5,
+    "무력": -20,
+    "물질": -50,
+    "공동": 10,
+    "원칙": 60,
+    "공개": 5,
+    "자격": 10,
+    "분산": -20,
+    "변혁": 50
+  },
+  "desire": {
+    "갈망": 35,
+    "독점": -10,
+    "위험": -10,
+    "과시": 0,
+    "지속": 15,
+    "지향": "양성",
+    "결합": "다자"
+  },
   "household": {
-    "personFaith": "unknown",
-    "houseFaith": "unknown",
-    "humanoidAdmission": "deferred"
+    "id": "hh:person-0906",
+    "role": "single",
+    "personFaith": "unbaptised",
+    "houseFaith": "unbaptised",
+    "humanoidAdmission": "none"
+  },
+  "relations": {
+    "outgoing": [],
+    "incoming": []
   },
   "characterProfile": {
     "abilities": {
-      "leadership": {
+      "diplomacy": {
         "base": 4,
         "effective": 4
       },
-      "strategy": {
-        "base": 6,
-        "effective": 6
-      },
-      "negotiation": {
-        "base": 5,
-        "effective": 5
-      },
-      "management": {
+      "martial": {
         "base": 9,
         "effective": 9
       },
-      "insight": {
-        "base": 10,
-        "effective": 10
+      "stewardship": {
+        "base": 4,
+        "effective": 4
       },
-      "learning": {
-        "base": 8,
-        "effective": 8
-      },
-      "prowess": {
-        "base": 2,
-        "effective": 2
-      },
-      "endurance": {
+      "intrigue": {
         "base": 5,
         "effective": 5
+      },
+      "learning": {
+        "base": 4,
+        "effective": 4
+      },
+      "prowess": {
+        "base": 10,
+        "effective": 10
       }
     },
-    "skills": [
-      {
-        "id": "log-gap",
-        "name": {
-          "ko": "온습도 기록 공백 대조",
-          "en": "Temperature-log gap reconciliation"
-        },
-        "rating": 55
-      },
-      {
-        "id": "seed",
-        "name": {
-          "ko": "온습도·종자 출고 확인",
-          "en": "Temperature and seed-release checks"
-        },
-        "rating": 50
-      }
-    ],
-    "traits": [
-      {
-        "id": "temperature-logs-over-requisition",
-        "name": {
-          "ko": "징발보다 온도 로그",
-          "en": "Temperature Logs Over Requisition"
-        },
-        "description": {
-          "ko": "서돌서는 징발 문서가 붙은 출고 요청에서도 해당 상자의 온도 기록부터 확인한다.",
-          "en": "Seo Dolseo checks a box's temperature records first even when its release request carries a requisition document."
-        },
-        "behavior": {
-          "ko": "징발 요청 상자의 온도 로그를 찾아 끊긴 구간을 표시한다.",
-          "en": "They locate the requested box's temperature log and mark its interrupted intervals."
-        },
-        "stress": {
-          "ko": "전시 징발의 압박이 커져도 기록 공백을 먼저 드러내려 할 수 있다.",
-          "en": "Even under mounting wartime requisition pressure, they may seek to expose record gaps first."
-        },
-        "relationship": {
-          "ko": "박진솔에게 출고 요청을 올릴 때 징발 문서만이 아니라 온도 공백을 함께 판단 근거로 제시할 수 있다.",
-          "en": "When reporting the release request to Park Jinsol, they may present temperature gaps alongside the requisition document."
-        },
-        "effects": []
-      },
-      {
-        "id": "mark-locked-boxes",
-        "name": {
-          "ko": "잠금 상자 표시",
-          "en": "Mark Locked Boxes"
-        },
-        "description": {
-          "ko": "서돌서는 반출 잠금이 걸린 상자를 번호로 특정해 보고하는 쪽이다.",
-          "en": "Seo Dolseo identifies boxes subject to release locks by number in reports."
-        },
-        "behavior": {
-          "ko": "정하린의 반출 잠금이 걸린 상자 번호를 온도 공백과 함께 적어 박진솔에게 올린다.",
-          "en": "They report the box numbers under Jeong Harin's release lock to Park Jinsol together with the temperature gaps."
-        },
-        "stress": {
-          "ko": "징발 요청과 반출 잠금이 맞물리면 잠금 대상 번호가 보고에서 빠지지 않도록 더 주의할 수 있다.",
-          "en": "When a requisition request intersects with a release lock, they may take extra care not to omit the locked box numbers."
-        },
-        "relationship": {
-          "ko": "정하린의 잠금과 박진솔의 확인을 연결할 때 잠금을 임의로 풀기보다 번호를 명시해 전달할 수 있다.",
-          "en": "When connecting Jeong Harin's lock with Park Jinsol's review, they may relay explicit numbers rather than remove the lock themselves."
-        },
-        "effects": []
-      }
-    ],
-    "narrative": {
-      "ko": "징발 요청 상자의 온도 공백과 반출 잠금 번호를 함께 기록했다. 이 사건의 조건 대조를 평가하며 군사 명령권은 없다.",
-      "en": "He recorded temperature gaps and locked-box numbers together despite a requisition request. Conditional checking is supported, not military command."
-    },
+    "skills": [],
+    "traits": [],
     "health": {
       "status": "unassessed",
       "bodyParts": [
@@ -426,67 +138,5 @@
       "diseases": []
     }
   },
-  "confirmedHoldings": [],
-  "clan": {
-    "id": "c11c-b2ec-c131",
-    "name": "달성 서씨",
-    "crest": "clan-crests/c11c-b2ec-c131.svg"
-  },
-  "generation": "opening",
-  "minors": false,
-  "sourceKind": "proposal",
-  "values": {
-    "권위": -5,
-    "개방": 10,
-    "무력": -30,
-    "물질": 0,
-    "공동": -10,
-    "원칙": 70,
-    "공개": 50,
-    "자격": 45,
-    "분산": 10,
-    "변혁": 5
-  },
-  "desire": {
-    "갈망": 35,
-    "독점": -10,
-    "위험": -10,
-    "과시": 0,
-    "지속": 15,
-    "지향": "양성",
-    "결합": "다자"
-  },
-  "fields": {
-    "소속": "태욱그룹",
-    "생업": "기록·열쇠 인수인계",
-    "품계": "대리",
-    "직함": "종자 기록관",
-    "업무": "가양1동. 서돌서는 가양1동에서 종자 기록과 인수 서명을 원본에 맞춰 다음 당직에 넘긴다. 온습도 기록이 끊긴 상자는 번호를 따로 적어 박진솔에게 알린다.",
-    "가치관": "권위 −5 | 개방 10 | 무력 −30 | 물질 0 | 공동 −10 | 원칙 70 | 공개 50 | 자격 45 | 분산 10 | 변혁 5",
-    "욕망": "갈망 35 | 독점 −10 | 위험 −10 | 과시 0 | 지속 15 | 지향 양성 | 결합 다자"
-  },
-  "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 서돌서는 종자 기록과 보존고 인수 기록을 맞추는 일을 맡는다.\n- 업무: 가양1동. 서돌서는 가양1동에서 종자 기록과 인수 서명을 원본에 맞춰 다음 당직에 넘긴다. 온습도 기록이 끊긴 상자는 번호를 따로 적어 박진솔에게 알린다.",
-    "관직": "품계 대리. 직함은 종자 기록관. 원본과 인수 서명을 대조하고, 기록이 끊긴 상자는 번호를 표시해 박진솔의 출고 판단에 올린다.",
-    "일화": "전시 징발 문서를 붙인 종자 상자 출고 요청이 올라온다. 서돌서는 해당 상자의 온도 로그부터 찾아 끊긴 구간에 표시하고, 정하린의 반출 잠금이 걸린 상자 번호를 함께 적어 박진솔에게 올린다.",
-    "관계": "서돌서는 온도 로그가 끊긴 상자와 반출 잠금 번호를 박진솔에게 올린다. 박진솔은 그 상자의 보존 기록을 확인해 전시 징발 문서가 있어도 미확인 상자를 출고하지 않는다.",
-    "야망": "서돌서는 전시 징발 문서가 붙은 상자도 끊긴 온도 로그와 정하린의 반출 잠금을 확인한 뒤 박진솔에게 올리려 한다.",
-    "공포": "징발 문서가 보존 기록의 공백과 잠금 번호를 덮어 미확인 상자가 출고되는 것.",
-    "개입": "플레이어는 서돌서가 적은 로그 공백과 잠금 번호를 대조해 해당 상자의 출고 판단을 보류할 수 있다."
-  },
-  "biography": "가양1동에서 서돌서는 종자 원본의 빠진 줄을 먼저 살핀다. 보존고 출고를 재촉받아도 인수 기록과 온습도 장부를 맞춘 뒤 박진솔에게 넘긴다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 종자 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 서돌서는 종자 기록과 보존고 인수 기록을 맞추는 일을 맡는다.\n- 업무: 가양1동. 서돌서는 가양1동에서 종자 기록과 인수 서명을 원본에 맞춰 다음 당직에 넘긴다. 온습도 기록이 끊긴 상자는 번호를 따로 적어 박진솔에게 알린다.\n\n**관직.** 품계 대리. 직함은 종자 기록관. 원본과 인수 서명을 대조하고, 기록이 끊긴 상자는 번호를 표시해 박진솔의 출고 판단에 올린다.\n\n**일화.** 전시 징발 문서를 붙인 종자 상자 출고 요청이 올라온다. 서돌서는 해당 상자의 온도 로그부터 찾아 끊긴 구간에 표시하고, 정하린의 반출 잠금이 걸린 상자 번호를 함께 적어 박진솔에게 올린다.\n\n**관계.** 서돌서는 온도 로그가 끊긴 상자와 반출 잠금 번호를 박진솔에게 올린다. 박진솔은 그 상자의 보존 기록을 확인해 전시 징발 문서가 있어도 미확인 상자를 출고하지 않는다.\n\n**야망.** 서돌서는 전시 징발 문서가 붙은 상자도 끊긴 온도 로그와 정하린의 반출 잠금을 확인한 뒤 박진솔에게 올리려 한다.\n\n**공포.** 징발 문서가 보존 기록의 공백과 잠금 번호를 덮어 미확인 상자가 출고되는 것.\n\n**개입.** 플레이어는 서돌서가 적은 로그 공백과 잠금 번호를 대조해 해당 상자의 출고 판단을 보류할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 10 | 무력 −30 | 물질 0 | 공동 −10 | 원칙 70 | 공개 50 | 자격 45 | 분산 10 | 변혁 5\n- 욕망: 갈망 35 | 독점 −10 | 위험 −10 | 과시 0 | 지속 15 | 지향 양성 | 결합 다자\n:::",
-  "sources": [
-    "Cast-State-03"
-  ],
-  "relations": {
-    "outgoing": [
-      {
-        "from": "서돌서",
-        "type": "계약",
-        "to": "박진솔",
-        "basis": "서돌서는 온도 로그가 끊긴 상자와 반출 잠금 번호를 박진솔에게 올린다. 박진솔은 그 상자의 보존 기록을 확인해 전시 징발 문서가 있어도 미확인 상자를 출고하지 않는다."
-      }
-    ],
-    "incoming": []
-  }
+  "confirmedHoldings": []
 }
