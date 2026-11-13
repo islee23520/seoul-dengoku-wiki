@@ -778,271 +778,6 @@ Seoul''s great events come round every thirty years. The cycle for tearing down 
 - 연표에 나온 무리들: [적대 생태 도감](/wiki/Hostile-Ecology-Index/)
 - 세 정체: [정부 사회](/wiki/Government-Society/), [자유도시들의 사회](/wiki/Free-City-Society/), [아크 사회](/wiki/Arc-Society/)
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Chaebol-Houses-and-Century-Factions', 'Houses and Inheritance', '집안과 대물림', 'factions', 0, '<a id="overview"></a>
-## Overview
-
-After the Great Blackout, scarcity made children take up their parents'' work in Seoul. The child of a house that ran pumps learned pumps; the child of a house that kept the ledger learned the ledger. There was nobody to teach another path, and no spare food to feed a child while it learned. The work handed on in this way piled up, and high and low set hard.
-
-So in the Seoul of 2126 the unit in which work and position pool is not the person but the **house**. People of the same clan within the same polity form one house, and one house usually does one kind of work, its **house trade**. What is handed down, and who receives it, differs among the three polities.
-
-| Polity | What is handed down | Who receives it |
-|---|---|---|
-| Government | The seat of a Member of the National Assembly, the Stationmaster''s post, the occupation written in the ledger | The heir named by the householder; for occupations, the child entered in the ledger at sixteen |
-| Free Cities | The workbench and its seal; in some cities, the head''s post | A child who has shown the hands; if none has, someone from another house who has |
-| Arc | The post of Head of the Near House and its district | A blood heir within the Near House, who must carry two parts or more |
-
-No company groups survive in Seoul. The names of the great companies of before the Blackout remain only as letters on salvage heaps. Work and position are held by Assembly Member houses, workbench houses and Near Houses.
-
-<a id="government-houses"></a>
-## The Government: houses that hand down seats
-
-<a id="inherited-seat"></a>
-### The handed-down seat
-
-Each of the Government''s fourteen districts has one seat, and one house is attached to each seat. Elections for the National Assembly are held every four years, and registered adults stamp their ballots at the dong community centre. Each of the two parties puts up a candidate, but everyone knows the winner before the vote: whoever the district''s Assembly Member house has backed.
-
-When a Member dies or steps down, the householder of that house names an heir. Until the next election the heir uses the district office''s seal as "acting Member", and then wins the election. Government people call this "handing down the seat". One house holds only one seat.
-
-When a Member is acclaimed President, that Member gives up the seat, and it goes to the heir of the same house. So the President''s house holds both the presidency and a seat. A new acclamation opens only when the President dies, so through the long years between acclamations the Assembly Member houses gather the seals for the next one in advance. The commonest way is marriage between Assembly Member houses. A marriage in an Assembly Member house needs the Member''s sign-off.
-
-<a id="government-trades"></a>
-### Occupations written in the ledger
-
-The Government did not create inherited work; it wrote it down. The ledger records an **occupation** for every person. From about twelve a child learns beside its parent''s occupation, and on its sixteenth birthday it is entered under the householder''s occupation. This is the **succession entry**. That day the child receives a new registration token, and its ration moves from the dependant''s share to that occupation''s share.
-
-Changing an occupation needs the Dong Chief''s sign-off and the seal of the Member''s office. So the Government''s hands pool in houses. Some houses have done plumbing for generations, others have climbed wind machines for generations. When the houses that know how to mend grow fewer, no other house can fill the gap, because the ledger binds the occupation.
-
-There is only one way up: the civil service examination, held every year in the first month of the long-dark half at the Government Complex Seoul. A household whose member passes rises to a civil-service household. A few dozen pass each year. Going down is easy: a clerk who gets the ledger wrong goes to a labour household.
-
-<a id="stationmaster-houses"></a>
-### Stationmaster houses
-
-The Stationmaster''s post is handed down within the Stationmaster''s house, not by the Member. It is the old subway station staff establishment, turned hereditary. The Stationmaster decides whether to close an entrance and which households sleep on the deep levels. So the Stationmaster''s post is where the Member''s hand reaches least in the Government. The Dong Chief''s post is not hereditary: the Member appoints it, usually from the householders of civil-service households.
-
-<a id="free-city-houses"></a>
-## The Free Cities: houses that hand down workbenches
-
-<a id="workbench"></a>
-### The workbench
-
-What one inherits in the Free Cities is not an occupation but a **workbench**. A workbench is a workshop held by one house through the generations, the house''s skill, and the bundle of contracts that workbench has made. One workbench does one kind of work: there are benches that wind motors, benches that mend pumps, benches that drill wells.
-
-| Position | Who | How one rises |
-|---|---|---|
-| Bench master | The one who holds the workbench and its seal | Inheritance; usually the eldest child takes it |
-| Hand | Someone who can do that bench''s work with their own hands | Do the bench''s work alone before the bench master, who then recognises them as a hand |
-| Apprentice | Someone learning to be a hand, usually the house''s children | Joins the bench at about twelve |
-
-The bench master''s post is inherited, but in the Free Cities an eldest child who cannot show the hands does not take the bench. If the heir has no hands, the bench master brings in someone from another house who has shown them, by marriage or by contract. So marriage between workbench houses is also a trade of skills. The best marriage is one that binds the skills of two benches.
-
-<a id="city-succession"></a>
-### Each city hands down its head differently
-
-The seven cities also choose their heads differently. There was no way to measure whose skill was greater, so each city found something in its own work that could be measured. Cities that found nothing to measure hand the post down within a house.
-
-| City | Head | How the head is chosen |
-|---|---|---|
-| Yangcheon | Depot Master | The house that first revived the Sinjeong depot has handed it down since the 2040s, and ties the shift-leader posts to itself by marriage |
-| Gwanak | Duke | I Ilseop''s house hands it down |
-| Gangseo | Wind Keeper | Chosen by the bench masters of the wind fields; for life, but steps down if the contracted watts are missed in two long-dark halves running |
-| Guro | Works Master | Held by the bench master with the most kept sureties carved on the surety board |
-| Geumcheon | Edge Warden | Chosen by the edge crew from among those who have crossed the rim and come back |
-| Dongjak | Ferry Keeper | Chosen by the five crossing chiefs from among themselves |
-| Yeongdeungpo | Market Master | The market houses take it in turn, three years each, in the order fixed when the market first opened |
-
-<a id="broken-seal"></a>
-### The one whose seal is broken
-
-The heaviest punishment in the Free Cities is breaking the seal. The seal of someone who broke a surety is smashed so that they can never again contract in their own name. A person with a broken seal cannot take up the house''s bench and becomes a labourer working another bench for wages. Other cities will not accept that seal either. This is the commonest way a house loses its bench.
-
-<a id="arc-houses"></a>
-## The Arc: houses at the Hierophant''s side
-
-<a id="near-houses"></a>
-### The Near Houses
-
-The Arc''s four districts are each held by one of four **Near Houses**, the houses that stand at the Hierophant''s side. There are three ways for a house to become a Near House: to be of the Hierophant''s blood, to marry into that blood, or to have worked at the Hierophant''s side before the Arc stood.
-
-| Near House | Seat station | How it came to the Hierophant''s side |
-|---|---|---|
-| Seocho Near House | Express Bus Terminal | A house from the Bangbae and Naebang shelters among the twelve first baptised |
-| Gangnam Near House | Suseo | The leading house of the Suseo shelters, which supplied food and salvage through the five years Go Ye-jin read the manuals |
-| Songpa Near House | Jamsil | The house that has run the Jamsil weir''s water wheel for more than fifty years; in 2120 it promised the wheel''s power to the Hierophant''s maintenance bench |
-| Gangdong Near House | Cheonho | The house of the eastern shelters that joined last, in 2122, bringing the Amsa intake with them |
-
-The Hierophant can name a Near House and can withdraw the name. A house that loses the name gives up its district and becomes an ordinary house. From 2122 to 2126 no Near House has been withdrawn.
-
-<a id="blood-and-iron"></a>
-### Blood and iron
-
-The post of Head of the Near House passes by blood within the Near House. The Head names the next one while alive; if nobody has been named, the house gathers and chooses. But the next Head must carry at least two parts on the body. One who does not show the faith in the body cannot hold a district.
-
-Beside the ladder of titles the Arc has a ladder of part counts. A Bench Keeper, who opens other people''s bodies, must carry three parts or more. So a Bench Keeper often has more parts than the Head of the Near House, and a maintenance hand with many parts may come before a Near House cousin in the maintenance queue. Arc people call this **blood and iron**: the quarrel between those who would let blood decide and those who would let the iron in the body decide is the Arc''s daily politics.
-
-<a id="one-person-bloodline"></a>
-### The Hierophant''s bloodline
-
-Rule in the Arc passes through the Hierophant''s bloodline and the houses close to it. But Go Ye-jin has no recorded family. So even within the Arc there is no single answer to who counts as the Hierophant''s bloodline today. Some say, "The Hierophant is a house all by herself." How the Hierophant after Go Ye-jin will be chosen, nobody yet knows.
-
-Maintenance work is handed down too. The children of maintenance hands grow up beside the tools and are baptised early. A maintenance house almost always stays a maintenance house. At a marriage the two houses exchange maintenance turns, and a marriage with a maintenance house is counted the best.
-
-<a id="split-kin"></a>
-## Kin divided by the river
-
-Seoul has one hundred and twenty-six lines of the same generation that share a generation syllable. Ninety-two of them are scattered across two polities or more. There are two reasons.
-
-- **When the ledger was bound together.** In 2036-2045 the stations north of the river bound their ledgers into one. Even within one house, those in stations the clerks reached became the registered, and those across the river were left off the ledger.
-- **When the Arc split away.** When the Gangnam shelters were bound into the Arc around 2122, the Free City houses living there simply became the Arc.
-
-So cousins of the same generation live on both banks of the river, and on both sides of the Dongjak–Seocho border. These lines of kin are the commonest road for quiet trading and for envoys ([Crossings and Smuggling](/wiki/Diaspora-Corridors/), [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/)). The clan and ancestral-seat records are in [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/).
-
-<a id="unsettled"></a>
-## What is not yet settled
-
-- Apart from Member of the National Assembly, Duke of Gwanak and Hierophant, the title names on this page are not yet settled and may change.
-- Which houses now hold the fourteen seats and the four Arc districts, and when I Ilseop took up the Duke''s post, are not settled.
-- How the Hierophant after Go Ye-jin is to be chosen is not settled.
-- Whether, with no recorded family, the Hierophant''s bloodline is read as Go Ye-jin alone, and so whether all four Near Houses stand by side service, is not settled.
-
-<a id="see-also"></a>
-## See also
-
-- [The Three Polities of Seoul](/wiki/Sixteen-States/)
-- [Government Society](/wiki/Government-Society/), [Free City Society](/wiki/Free-City-Society/), [Arc Society](/wiki/Arc-Society/)
-- [The Hands That Run a Station](/wiki/Operating-Houses/), [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/), [Titles and Offices](/wiki/Offices-and-Ranks/)
-', '<a id="overview"></a>
-## 개요
-
-대정전 뒤 서울에서는 결핍 때문에 자식이 부모의 일을 물려받게 됐다. 펌프를 돌리는 집의 아이는 펌프를 배웠고, 장부를 적는 집의 아이는 장부를 배웠다. 다른 길을 가르쳐 줄 사람도, 가르치는 동안 먹여 줄 여유도 없었다. 그렇게 이어진 일이 쌓여 위아래가 굳었다.
-
-그래서 2126년 서울에서 일과 자리가 고이는 단위는 사람이 아니라 **집안**이다. 같은 정체 안에서 같은 씨족에 속한 사람들이 한 집안이고, 한 집안은 대개 같은 일을 한다. 그 일을 **가업**이라 한다. 다만 무엇이 대물려지고 누가 그것을 받는지는 세 정체가 다르다.
-
-| 정체 | 대물려지는 것 | 받는 사람 |
-|---|---|---|
-| 정부 | 국회의원의 의석, 역장 자리, 장부에 적힌 직종 | 세대주가 지명한 후계. 직종은 열여섯 살에 장부에 오르는 아이 |
-| 자유도시들 | 작업대와 그 도장. 도시에 따라 우두머리 자리 | 손을 보인 자식. 손이 없으면 손을 보인 다른 집 사람 |
-| 아크 | 곁집장의 자리와 그 구 | 곁집 안의 핏줄. 다만 부위가 둘 이상이어야 한다 |
-
-서울에 회사 집단은 남지 않았다. 대정전 전 큰 회사의 이름은 고물 더미의 글자로만 남았다. 일과 자리를 쥐는 것은 의원 집안, 작업대 집안, 곁집이다.
-
-<a id="government-houses"></a>
-## 정부: 의석을 물리는 집안
-
-<a id="inherited-seat"></a>
-### 대물림 의석
-
-정부 열네 구에는 의석이 하나씩 있고, 의석 하나에 집안 하나가 붙어 있다. 국회의원 선거는 4년마다 치르고, 등재된 어른은 동주민센터에서 투표 용지에 도장을 찍는다. 후보는 두 당에서 하나씩 나오지만, 이길 사람은 투표 전에 모두가 안다. 그 구의 의원 집안이 민 사람이다.
-
-국회의원이 죽거나 물러나면 그 집안의 세대주가 후계를 지명한다. 후계는 다음 선거 때까지 "의원 직무대리"로 구청의 도장을 쓰고, 선거에서 이긴다. 정부 사람은 이것을 "의석을 물린다"고 말한다. 한 집안은 한 의석만 쥔다.
-
-국회의원 가운데 한 사람이 대통령으로 추대되면 그는 의석을 내놓고, 그 의석은 그의 집안 후계에게 간다. 그래서 대통령의 집안은 대통령과 국회의원을 한꺼번에 갖는다. 대통령이 죽어야 다음 추대가 열리므로, 추대 사이의 긴 해들 동안 의원 집안들은 다음 추대의 도장을 미리 모은다. 가장 흔한 길은 의원 집안끼리의 혼인이다. 의원 집안의 혼인에는 국회의원의 결재가 든다.
-
-<a id="government-trades"></a>
-### 장부에 적힌 직종
-
-정부는 일의 대물림을 만든 것이 아니라 받아 적었다. 장부는 사람마다 **직종**을 적는다. 아이는 열두 살 무렵부터 부모의 직종 곁에서 일을 배우고, 열여섯 살 생일에 세대주의 직종 아래 기재된다. 이것을 **전승 기재**라 한다. 그날 아이는 새 등재 증표를 받고, 배급이 부양 몫에서 그 직종의 몫으로 바뀐다.
-
-직종을 바꾸려면 동장의 결재와 국회의원 사무소의 도장이 든다. 그래서 정부의 손은 집안에 고인다. 몇 대째 배관을 하는 집안, 몇 대째 바람틀에 오르는 집안이 있다. 고칠 줄 아는 집안이 줄어도 다른 집안이 그 자리를 채우지 못한다. 장부가 직종을 묶기 때문이다.
-
-계층을 오르는 길은 하나뿐이다. 해마다 긴 밤 철 첫 달에 정부서울청사에서 치르는 공무원 시험이다. 붙은 사람의 세대는 공무원 가구로 오른다. 붙는 사람은 해마다 몇십 명이다. 내려가기는 쉽다. 장부를 틀린 서기는 노역 가구로 간다.
-
-<a id="stationmaster-houses"></a>
-### 역장 집안
-
-역장 자리는 국회의원이 아니라 역장 집안 안에서 물린다. 옛 지하철 역무원 직제가 대물림된 것이다. 역장은 출입구를 닫을지, 어느 세대를 깊은 층에 재울지를 정한다. 그래서 정부에서 국회의원의 손이 가장 덜 닿는 자리가 역장 자리다. 동장은 대물림이 아니다. 국회의원이 임명하고, 대개 공무원 가구의 세대주가 맡는다.
-
-<a id="free-city-houses"></a>
-## 자유도시들: 작업대를 물리는 집안
-
-<a id="workbench"></a>
-### 작업대
-
-자유도시에서 물려받는 것은 직종이 아니라 **작업대**다. 작업대는 한 집안이 대물려 쥐는 작업장이고, 그 집안의 기술이고, 그 작업대가 맺은 계약의 묶음이다. 한 작업대는 한 가지 일을 한다. 모터를 감는 대, 펌프를 고치는 대, 우물을 뚫는 대가 있다.
-
-| 자리 | 누구인가 | 어떻게 오르나 |
-|---|---|---|
-| 대주 | 작업대를 쥐고 그 대의 도장을 가진 사람 | 대물림. 대개 맏이가 잇는다 |
-| 손 | 그 대의 기술을 제 손으로 할 수 있는 사람 | 대주 앞에서 그 대의 일을 혼자 해내 보이면, 대주가 손으로 인정한다 |
-| 견습 | 손을 배우는 사람. 대개 그 집 아이들 | 열두 살 무렵 대에 붙는다 |
-
-대주 자리는 대물림이지만, 자유도시에서는 손을 보이지 못한 맏이가 대를 잇지 못한다. 이을 자식에게 손이 없으면, 대주는 손을 보인 다른 집 사람을 혼인이나 계약으로 들인다. 그래서 작업대 집안 사이의 혼인은 기술을 맞바꾸는 일이기도 하다. 두 대의 기술을 묶는 혼인이 가장 좋은 혼인이다.
-
-<a id="city-succession"></a>
-### 도시마다 다른 우두머리 대물림
-
-일곱 도시는 우두머리를 정하는 법도 다르다. 누구 기술이 더 높은지 잴 수 없었으므로, 도시마다 제 일에서 잴 수 있는 것을 찾았다. 잴 것을 찾지 못한 도시는 집안이 대물린다.
-
-| 도시 | 우두머리 | 정하는 법 |
-|---|---|---|
-| 양천 | 기지장 | 신정 차량기지를 처음 되살린 집안이 2040년대부터 대물린다. 교대장 자리를 혼인으로 묶어 둔다 |
-| 관악 | 공작 | 이일섭의 집안이 대물린다 |
-| 강서 | 바람지기 | 바람밭의 작업대주들이 뽑는다. 종신이지만, 계약한 와트를 긴 밤 철 두 번 잇달아 못 채우면 물러난다 |
-| 구로 | 공장장 | 보증판에 새긴 지킨 보증의 수가 가장 많은 작업대주가 맡는다 |
-| 금천 | 경계장 | 테두리를 넘었다 돌아온 사람 가운데서 경계조가 뽑는다 |
-| 동작 | 나루지기 | 건널목장 다섯이 저희 가운데서 뽑는다 |
-| 영등포 | 장주 | 장터 집안들이 세 해씩, 장터가 처음 선 때 정한 차례대로 돌아가며 맡는다 |
-
-<a id="broken-seal"></a>
-### 도장이 깨진 사람
-
-자유도시에서 가장 큰 벌은 도장을 깨는 것이다. 보증을 깬 사람의 도장을 깨뜨려 다시는 제 이름으로 계약하지 못하게 한다. 도장이 깨진 사람은 집안의 대를 이을 수 없고, 남의 대에 품삯을 받고 붙는 일손이 된다. 다른 도시도 그 사람의 도장을 받지 않는다. 집안이 대를 잃는 가장 흔한 길이 이것이다.
-
-<a id="arc-houses"></a>
-## 아크: 교주 곁에 선 집안
-
-<a id="near-houses"></a>
-### 곁집
-
-아크의 네 구는 **곁집** 넷이 하나씩 맡는다. 곁집은 교주 곁에 선 집안이다. 집안이 곁집이 되는 길은 셋이다. 교주의 핏줄이거나, 그 핏줄과 혼인했거나, 아크가 서기까지 교주 곁에서 일했거나다.
-
-| 곁집 | 본역 | 교주 곁에 선 내력 |
-|---|---|---|
-| 서초 곁집 | 고속터미널 | 첫 세례를 받은 열두 명 가운데 방배·내방 쪽 대피소의 집안 |
-| 강남 곁집 | 수서 | 고예진이 매뉴얼을 읽던 다섯 해 동안 먹을 것과 고물을 댄 수서 쪽 대피소들의 우두머리 집안 |
-| 송파 곁집 | 잠실 | 잠실수중보 수차를 쉰 해 넘게 돌려 온 집안. 2120년 수차의 전기를 교주의 정비대에 대기로 약속했다 |
-| 강동 곁집 | 천호 | 2122년 가장 늦게 든 동쪽 대피소들의 집안. 들면서 암사 취수구를 내놓았다 |
-
-교주가 곁집을 정하고 물릴 수 있다. 물린 곁집은 구를 내놓고 보통 집안이 된다. 2122년부터 2126년까지 물린 곁집은 없다.
-
-<a id="blood-and-iron"></a>
-### 피와 쇠
-
-곁집장의 자리는 곁집 안에서 핏줄을 따라 물린다. 곁집장이 살아 있을 때 다음 사람을 말해 두고, 말해 둔 사람이 없으면 곁집 집안이 모여 고른다. 다만 다음 곁집장은 몸에 단 부위가 둘 이상이어야 한다. 신앙을 몸으로 보이지 않는 사람은 구를 맡지 못한다.
-
-아크에는 칭호의 사다리 옆에 부위 수의 사다리가 있다. 남의 몸을 여는 정비장은 부위가 셋 이상이어야 한다. 그래서 정비장이 곁집장보다 부위가 많은 일이 흔하고, 부위가 많은 정비공이 정비 순번에서 곁집 사촌보다 앞서는 일도 있다. 아크 사람은 이것을 **피와 쇠**라 부른다. 핏줄이 정하자는 쪽과 몸에 든 쇠가 정하자는 쪽의 다툼이 아크의 일상 정치다.
-
-<a id="one-person-bloodline"></a>
-### 교주의 혈통
-
-아크의 통치는 교주의 혈통과 그에 가까운 집안들이 잇는다. 그런데 고예진에게는 기록된 가족이 없다. 그래서 지금 교주의 혈통을 누구까지로 볼지는 아크 안에서도 말이 하나로 모이지 않았다. 어떤 이는 "교주는 혼자서 집안이다"라고 말한다. 고예진 다음의 교주를 어떻게 정할지는 아직 아무도 모른다.
-
-정비 일도 대물려진다. 정비공의 아이는 연장 곁에서 자라고 첫 세례를 일찍 받는다. 정비공 집안은 거의 늘 정비공 집안으로 남는다. 혼인 때 두 집안은 정비 차례를 주고받고, 정비공 집안과 맺는 혼인을 가장 좋은 혼인으로 친다.
-
-<a id="split-kin"></a>
-## 강 건너로 갈린 친족
-
-같은 항렬자를 쓰는 같은 세대의 가계가 서울에 백스물여섯 줄 있다. 그 가운데 아흔두 줄은 두 정체 이상에 흩어져 산다. 까닭은 두 갈래다.
-
-- **장부가 묶일 때.** 2036~2045년 강 북쪽 역들이 장부를 하나로 묶었다. 한 집안이라도 서기가 닿은 역의 사람은 등재민이 되고, 강 건너의 사람은 장부 밖이 됐다.
-- **아크가 갈라질 때.** 2122년 무렵 강남 대피소들이 아크로 묶이자, 그곳에 살던 자유도시 집안은 그대로 아크가 됐다.
-
-그래서 같은 항렬의 사촌이 강 양쪽에, 그리고 동작과 서초의 경계 양쪽에 산다. 이 친족의 줄이 몰래 바꾸는 일과 사절이 오가는 일의 가장 흔한 길이다([건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/), [급수계약과 세 정체](/wiki/World-Relation-Ledger/)). 씨족과 본관의 기록은 [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/)에 있다.
-
-<a id="unsettled"></a>
-## 아직 정해지지 않은 것
-
-- 국회의원, 관악 공작, 교주 말고 이 문서에 나오는 칭호 이름은 아직 정해지지 않았고 바뀔 수 있다.
-- 열네 의석과 아크 네 구를 지금 어느 집안이 쥐고 있는지, 이일섭이 공작 자리를 언제 이었는지는 정해지지 않았다.
-- 고예진 다음의 교주를 정하는 법은 정해지지 않았다.
-- 고예진에게 기록된 가족이 없는 지금 교주의 혈통을 고예진 한 사람으로 읽을지, 그래서 네 곁집이 모두 곁 섬김으로 선 집안인지는 정해지지 않았다.
-
-<a id="see-also"></a>
-## 함께 읽기
-
-- [서울의 세 정체](/wiki/Sixteen-States/)
-- [정부 사회](/wiki/Government-Society/), [자유도시들의 사회](/wiki/Free-City-Society/), [아크 사회](/wiki/Arc-Society/)
-- [역을 돌리는 손](/wiki/Operating-Houses/), [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/), [칭호와 자리](/wiki/Offices-and-Ranks/)
-');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Characters-Factions-and-Professions', 'People, Factions and Trades', '인물·세력·생업', 'characters', 1, 'This wiki holds the records of 1,022 people of Seoul in 2126. This document explains where those people are placed: whose ledger they are on, which tier of seat they hold, what title they use, at which station they sleep and work, and what work they live by. In Seoul a person''s place is mostly settled at birth. Scarcity made children take over their parents'' work, and so the strata hardened.
 
 ## The People on Record
@@ -1177,8 +912,6 @@ Each kind of repair work has its own name: wind-machine hand, heat-pump hand, we
 - [Titles and Offices](/wiki/Offices-and-Ranks/)
 - [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/)
 - [Values and Policy Scales](/wiki/Values-and-Policy-Scales/)
-- [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/)
-- [The Hands That Run a Station](/wiki/Operating-Houses/)
 - [Government Society](/wiki/Government-Society/)
 - [Free City Society](/wiki/Free-City-Society/)
 - [Arc Society](/wiki/Arc-Society/)
@@ -1316,8 +1049,6 @@ T1 자리는 스물일곱이다. 정부 열다섯(국회의원 열넷과 종신 
 - [칭호와 자리](/wiki/Offices-and-Ranks/)
 - [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/)
 - [가치관과 정책 척도](/wiki/Values-and-Policy-Scales/)
-- [집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/)
-- [역을 돌리는 손](/wiki/Operating-Houses/)
 - [정부 사회](/wiki/Government-Society/)
 - [자유도시들의 사회](/wiki/Free-City-Society/)
 - [아크 사회](/wiki/Arc-Society/)
@@ -1405,7 +1136,7 @@ Passing the Government''s meal coupons to anyone off the ledger is also forbidde
 <a id="kin-lines"></a>
 ## Lines of kin
 
-The commonest road for quiet trading and for envoys is kin. Of the one hundred and twenty-six lines of the same generation that share a generation syllable, ninety-two are scattered across two polities or more. When the north bound its ledgers into one in 2036-2045, those in stations the clerks reached became the registered and those across the river were left off the ledger. When the Arc split away in 2122, the Free City houses living in the Gangnam shelters simply became the Arc. So cousins of the same generation live on both banks of the river and on both sides of the Dongjak–Seocho border ([Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/)).
+The commonest road for quiet trading and for envoys is kin. Of the one hundred and twenty-six lines of the same generation that share a generation syllable, ninety-two are scattered across two polities or more. When the north bound its ledgers into one in 2036-2045, those in stations the clerks reached became the registered and those across the river were left off the ledger. When the Arc split away in 2122, the Free City houses living in the Gangnam shelters simply became the Arc. So cousins of the same generation live on both banks of the river and on both sides of the Dongjak–Seocho border ([Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/)).
 
 <a id="living-across"></a>
 ## People who live on others'' land
@@ -1520,7 +1251,7 @@ Before the Blackout Seoul had several neighbourhoods of people who had come from
 <a id="kin-lines"></a>
 ## 친척의 줄
 
-몰래 바꾸는 일과 사절이 오가는 일의 가장 흔한 길은 친척이다. 같은 항렬을 쓰는 가계 백스물여섯 줄 가운데 아흔두 줄이 두 정체 이상에 흩어져 산다. 2036~2045년 강 북쪽이 장부를 하나로 묶을 때, 서기가 닿은 역의 사람은 등재민이 되고 강 건너의 사람은 장부 밖이 됐다. 2122년 아크가 갈라질 때는 강남 대피소에 살던 자유도시 집안이 그대로 아크가 됐다. 그래서 같은 항렬의 사촌이 강 양쪽과 동작–서초 경계 양쪽에 산다([집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/)).
+몰래 바꾸는 일과 사절이 오가는 일의 가장 흔한 길은 친척이다. 같은 항렬을 쓰는 가계 백스물여섯 줄 가운데 아흔두 줄이 두 정체 이상에 흩어져 산다. 2036~2045년 강 북쪽이 장부를 하나로 묶을 때, 서기가 닿은 역의 사람은 등재민이 되고 강 건너의 사람은 장부 밖이 됐다. 2122년 아크가 갈라질 때는 강남 대피소에 살던 자유도시 집안이 그대로 아크가 됐다. 그래서 같은 항렬의 사촌이 강 양쪽과 동작–서초 경계 양쪽에 산다([본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/)).
 
 <a id="living-across"></a>
 ## 남의 땅에 사는 사람
@@ -2864,7 +2595,9 @@ The general meaning of bon-gwan and hangnyeol follows these references.
 ## Related Documents
 
 - [People, Factions and Trades](/wiki/Characters-Factions-and-Professions/)
-- [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/)
+- [Government Society](/wiki/Government-Society/)
+- [Free City Society](/wiki/Free-City-Society/)
+- [Arc Society](/wiki/Arc-Society/)
 - [Crossings and Smuggling](/wiki/Diaspora-Corridors/)
 - [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/)
 ', '2126년 서울 사람도 대정전 전과 같이 성과 본관으로 집안을 가른다. 본관은 성씨의 계통을 가르는 땅 이름이고, 항렬은 같은 집안 안에서 같은 세대가 이름에 함께 쓰는 한 글자다. 백 년 동안 역이 갈리고 강이 얼어 집안이 흩어졌지만, 이름 속의 이 두 가지는 남았다. 그래서 강 양쪽에 사는 두 사람이 같은 본관과 같은 항렬자를 쓰면, 서로 한 번도 만난 적이 없어도 같은 세대의 친족이다.
@@ -2933,7 +2666,9 @@ The general meaning of bon-gwan and hangnyeol follows these references.
 ## 관련 문서
 
 - [인물·세력·생업](/wiki/Characters-Factions-and-Professions/)
-- [집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/)
+- [정부 사회](/wiki/Government-Society/)
+- [자유도시들의 사회](/wiki/Free-City-Society/)
+- [아크 사회](/wiki/Arc-Society/)
 - [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/)
 - [급수계약과 세 정체](/wiki/World-Relation-Ledger/)
 ');
@@ -7508,473 +7243,6 @@ Of the titles on this page, Member of the National Assembly, Duke of Gwanak and 
 - [아크 사회](/wiki/Arc-Society/)
 - [서울의 세 정체](/wiki/Sixteen-States/)
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Operating-Houses', 'The Hands That Run a Station', '역을 돌리는 손', 'factions', 3, '<a id="overview"></a>
-## Overview
-
-The people of Seoul live in stations, and a station does not stay alive by itself. Every day there must be hands to clear the snow from the entrances, run the pumps, keep the air moving, switch the lights on and off, and keep the number of people from rising above the quota. If one shift lets go, the platform cools and the deep level runs short of breath.
-
-The three polities organise this work differently. The Government runs its stations through the **Stationmaster''s office** and the **dong community centre**, by ledger and sign-off. The Free Cities run theirs through the **workbenches** that live in each station and the **Station Foreman** they elect, by contract and by figures. The Arc runs its stations through the **maintenance bench** in every station and the **Bench Keeper** who keeps it, caring for bodies and machines together.
-
-The hands that do the work are inherited too. In Seoul the way to mend things passes down by hand, through houses, workbenches and maintenance benches, not through books. So where a polity''s station hands have pooled is where its strength lies.
-
-<a id="four-limits"></a>
-## How many a station holds: the four limits
-
-The number of people a station can hold is the smallest of four limits. These four are what the people who run a station guard every day.
-
-| Limit | What one person needs | What limits it |
-|---|---|---|
-| Space | 4 m² of living area, counting sleeping places, passages and kitchens | The size of the platforms and the concourse |
-| Heat | Heat supplied from outside the body: concourse 60 W, platform 40 W, deep tunnel 10 W | Nearly all body heat leaves with the ventilation. The heat the walls lose to the ground must be made up by stoves, ground heat and electricity. The deeper, the less is needed |
-| Water | 10 L a day | From a well or the river, only the pumping power is needed. Melting snow adds another 45 W of heat per person |
-| Air | 3 L a second (3 m³ a second per 1,000 people) | In winter the difference between the warm station and the cold outside moves the air by itself, but only as far as entrances and vents are open. Deep levels need fans |
-
-Electricity is counted separately. Power put into a heat pump becomes three times as much heat, and the power used for light, fans and charging also ends up as heat inside the station. What the power is spent on decides how many people can be warmed.
-
-A shallow station has plenty of air but is cold. A deep station is warm but short of breath. A station that cannot pump water spends its heat twice, melting snow. So the best place to live is a large interchange with a deep level, a well and many open entrances.
-
-| Station | Polity | Holds | What limits it |
-|---|---|---|---|
-| Seoul Station | Government | about 4,200 | Heat and water. What the Government most wants here is one more well and one more deep-level fan; both need the hands of Free City engineers |
-| Sindorim | Free City (Guro) | about 2,000 | Air: it has only three exits. One fan would raise the air limit to 3,000, and then space would limit it |
-| Jamsil | Arc (Songpa) | about 3,100 | Heat. The power the 900 baptised use to charge the machines in their bodies reduces the number of people it could warm |
-
-The people who run a station know this reckoning in the body rather than the head. When the end of the platform cools, there are too many people; when the children yawn too often, there is not enough air.
-
-<a id="common-work"></a>
-## Work every station has
-
-The names of the trades either keep the job names of the Republic of Korea or are taken from what the work handles.
-
-| Trade | What it does | Where it is most common |
-|---|---|---|
-| Wind fitter | Raises wind machines, knocks the ice off the blades, changes the bearings | Free Cities (especially Gangseo), on the Government''s bridges |
-| Heat-pump fitter | Handles the compressors and coolant of ground heat pumps | Free Cities |
-| Well digger | Digs wells deeper and lowers the pumps | Free Cities; the core work of the water supply contract |
-| Wheel keeper | Guards the under-ice water wheel and its channel | Arc (Jamsil), Free City work crews |
-| Line hand | Joins wires and cables; the work Go Ye-jin used to do | All three polities |
-| Winder | Rewinds the coils of dead motors | Free Cities |
-| Lathe hand | Cuts metal into shafts and fittings | Free Cities (especially Guro) |
-| Cell hand | Picks the living cells out of dead batteries and binds them | Free Cities, Arc |
-| Board hand | Transplants circuit boards and brings them back to life; the most precious work | Free Cities, Arc |
-| Net hand | Weaves and mends the nets of entrances and light-fields | All three polities; the commonest work |
-| Body fitter | Fits machines to bodies and tends the joins | Arc (most of all), Free Cities |
-| Doctor | The medical worker who fits machines to bodies in a Government clinic | Government |
-
-There is far more work with no name: clearing snow from the entrance shafts, stirring the fibre-sugar vats, building light-field banks, guarding the methane tanks, and fetching salvage and fibre from the surface. In every polity, most people do this work.
-
-<a id="government"></a>
-## The Government: the Stationmaster''s office and the dong centre
-
-Government work begins at the station and ends at the district office. Sign-offs climb from the bottom up.
-
-<a id="stationmaster"></a>
-### The Stationmaster''s office
-
-The **Stationmaster** is responsible for the station''s entrances, heat, water, air and quota, and for order inside the station. The Stationmaster decides when to open and close the entrances, whether to stop surface work in a blizzard, and which households sleep on the deep levels. The Stationmaster''s office follows the establishment of the Ministry of Land, Infrastructure and Transport, but the post is handed down within the Stationmaster''s house: it is the old subway station staff establishment, turned hereditary. The Stationmaster wears the old station staff cap, with the station''s name on a band.
-
-The Stationmaster ranks below the Dong Chief and is more feared, because the Stationmaster holds the heat and the air. Of all posts in the Government, it is the one the Member of the National Assembly''s hand reaches least.
-
-<a id="dong-centre"></a>
-### The dong community centre
-
-The **dong community centre** is the Dong Chief''s ration office. The Member appoints the Dong Chief, usually from the householders of civil-service households. There are three counters.
-
-| Counter | What it does |
-|---|---|
-| Ration counter | Hands out the month''s meal, water, fuel and goods coupons, household by household |
-| Entry counter | Keeps the dong''s copy of the ledger: birth reports, death reports, moving-in reports, succession entries |
-| Petition counter | Takes quarrels and requests; open from nine to five |
-
-The official Government people meet most often is neither a Member nor a minister but the clerk at these counters. One ration clerk can decide a household''s meals for the month. Clerks who know the law are rare, so households hand over meal coupons to have them write their petitions.
-
-<a id="quota"></a>
-### Keeping the quota
-
-Every station has a **quota** set by the Ministry of Land, Infrastructure and Transport. When a child is born, a birth report enters it among the household members. When a station goes over its quota, the Dong Chief issues a moving-in order sending one household to a station with room to spare, usually a shallow, cold one. Government people believe that keeping the quota stops the winter from tightening.
-
-The line of sign-off runs "Stationmaster, Dong Chief, Head of the District Office, Member of the National Assembly". The Stationmaster''s report reaches the district office only through the Dong Chief. The only matters that go all the way to the Member are sentence strike-offs, marriages in the Member''s house, and the business of bridges and tunnels.
-
-<a id="government-day"></a>
-### A day divided by sirens
-
-The Government keeps Korea Standard Time. The reference clock at the Government Complex Seoul sends the time to the district offices twice a day by tunnel telephone, and each district office announces it to every station with the civil defence siren.
-
-| Time | What happens |
-|---|---|
-| 05:30 | First shift rises. The platform lights come on at half strength |
-| 06:00 | Lights-on siren (one long). National ceremony in front of the dong centre. First shift begins |
-| 07:00 | Morning ration |
-| 08:00 | In the long-dark half the entrances open now; in the long-light half, at 06:30 |
-| 14:00 | Second shift begins |
-| 16:00 | End of surface work in the long-dark half; the entrances close. In the long-light half, 19:00 |
-| 17:00 | Evening ration |
-| 22:00 | Lights-out siren (two long). Third shift begins. Only the pumps, the heat and the entrance watch keep going |
-
-Pumps, heat and watch never stop, so there are three shifts of eight hours. Members of one household often stand on different shifts and take turns with a single sleeping place. When a blizzard comes, the Stationmaster sounds three short blasts and surface work stops. Anyone outside when the entrances close waits out the next shift in the shelter bays inside the entrance shaft.
-
-<a id="government-hands"></a>
-### The Government''s hands
-
-The hands that run a station sit in two classes of the ledger. **Skilled households** are pump crews, heat-pump maintenance, fibre-sugar vat tenders, electricians and menders. **Labour households** are entrance workers, salvage and fibre gatherers, light-field workers, porters and woodcutters. Labour households hold about two in every three Government people.
-
-Every registered adult owes one day in seven as labour duty: opening entrance shafts, clearing snow, gathering fibre, building light-field banks. Each dong has a different duty day, so that no day empties every dong at once. Key skilled occupations such as pump crews and intake maintenance do not take up rifles at nineteen; they do eighteen months of alternative service at the intakes or the bridge wind machines. Government people say a pump is worth more than a rifle.
-
-The Government''s weakness is that its mending hands are thin. There are not enough hands to keep pumps and wind machines alive, so big repairs are borrowed from the Free Cities under the water supply contract.
-
-<a id="free-cities"></a>
-## The Free Cities: station crews and workbenches
-
-<a id="station-foreman"></a>
-### Station Foreman and Section Chief
-
-A Free City station is run by its **Station Foreman**, who is responsible for the station''s entrances, heat, light hours and air, and is elected by the bench masters who live in that station. A few stations and the tunnels between them make a **section**; the section''s tunnels, cables, light-field plots and salvage grounds are kept by a **Section Chief**, whom the city''s head appoints. The seven cities have nineteen sections.
-
-Anyone lodging in another city''s station pays that station''s heat share. A work crew carrying a surety tag or contract pays no heat share in the stations of the cities that signed the sheet.
-
-<a id="workbench-and-crew"></a>
-### Workbenches and work crews
-
-The base of Free City work is the **workbench**: a workshop one house holds through the generations, and that house''s skill. Benches doing the same work are grouped by name, "motor benches", "pump benches", "drilling benches". Benches doing the same work know each other across city lines and keep the same reckoning, but no organisation stands across the cities.
-
-A **work crew** is a group of hands gathered from several benches for one contract. To strip and rebuild a whole pump, hands from a pump bench, a motor bench and a wire bench must go together. The crew chief is the bench master of the bench that signed the sheet, or a hand that bench master has trusted with it. Once the sheet is paid off, the crew disperses.
-
-A workbench''s promises are written in figures. Not "we will fix the pump", but "two intake pumps, 20 m³ an hour against a 30 m lift, under surety for two long-dark halves". A promise without figures is no promise.
-
-<a id="wind-hours"></a>
-### Wind hours
-
-If the Government''s day is divided by the hours the lights go on and off, the Free City day is divided by the wind. More than half of Seoul''s electricity comes from wind machines, so when the wind is strong power is left over and when it drops power runs short. So the workbenches run when the wind blows and rest when it falls. The time of strong wind is called **wind hours**. When wind hours come, the benches light up and the hands get up even at night; when the wind dies, they put out the lights and sleep. A Free City person''s first greeting is "How''s the wind?"
-
-<a id="empty-pot"></a>
-### The empty vat
-
-The Free Cities do not ration. People buy their meals with wages or surety tags. Instead, in every station the Station Foreman keeps one fibre-sugar vat as the **empty vat**, from which a labourer who found no work that day can eat a bowl of porridge. Filling the empty vat is a share all the workbenches of that station carry together.
-
-<a id="free-city-hands"></a>
-### The Free Cities'' hands
-
-Free City people fall into three layers: the **workbench houses**, which are the bench masters and their families; the **hands**, engineers attached to a bench; and the **labourers**, who have not shown a skill. Many labourers are people who ran from the Government ledger, people who lost their seal by breaking a surety, and people come back from the Arc. A labourer can become a hand by doing a bench''s work alone before any bench master. But bench masters willing to take a labourer in and teach them are rare; a bench master teaches their own children first.
-
-The Government''s water and the Arc''s power both pass through Free City hands in the end. That is the Free Cities'' strength. Their weakness is that they have few people: they have the hands to mend a pump but not enough labour, land or firewood to keep one.
-
-<a id="arc"></a>
-## The Arc: maintenance benches and shelters
-
-<a id="bench-keeper"></a>
-### The Bench Keeper and the maintenance bench
-
-Every Arc station has a **maintenance bench**, the place where machines in the body are fitted, tended and charged; the station''s machines are mended here too. The one who keeps the bench is the **Bench Keeper**, who also holds the station''s list of the baptised. One must have had one''s own body opened before opening others'', so a Bench Keeper must carry three parts or more.
-
-A maintenance bench stands where power comes in. The largest is at Jamsil, closest to the power of the Jamsil weir''s water wheel. On days when ice crystals in the water choke the wheel, the lights of the whole Arc go out early.
-
-<a id="shelter-head"></a>
-### The Shelter Head
-
-The Arc calls a dong by its old name, a **shelter**. Each shelter as it was before the Arc bound them together is one of today''s dongs. The **Shelter Head** who keeps a shelter must carry at least one part, and holds the shelter roll that lists the names of those not baptised. Places are named by shelter too: "Jamsil shelter", "Suseo shelter", the station name with "shelter" added.
-
-<a id="arc-shifts"></a>
-### Three shifts set by the bench
-
-A station''s day is three shifts set by the maintenance bench. As long as power comes into the bench, someone is working at it.
-
-| Shift | What happens |
-|---|---|
-| First shift | Begins with the calling. The Bench Keeper calls the list of the baptised; the baptised answer with name and part count, those not baptised with name and house. The bench is busiest now. Those not baptised go to the entrances and the fibre-sugar vats |
-| Second shift | The Near House storehouse hands out the day''s shares. Stations with an exchange post receive outsiders. Children learn the names of tools and reckoning beside the bench |
-| Third shift | The lights are turned down. Only one bench stays lit, to tend the sick |
-
-The deeper the bed, the warmer. Near House people and maintenance houses take the deep bays, and the lower one''s standing, the closer to the concourse and the entrances. The Arc counts the heat from the benches and charging places as a gift, and puts its sleeping places around the bench. Gangnam children learn early that a warm wall means the machines are running and a cold wall means something has failed.
-
-<a id="sharing-and-giving"></a>
-### Sharing and the giving
-
-There are no markets inside the Arc. Food and sleeping places are shared out by the Near House and each station''s Bench Keeper, by need, not by standing. The newly baptised who are still ailing and the maintenance hands eat first: a body taking in a machine needs much heat and food, and if a maintenance hand stops, every machine body in the station stops.
-
-Every household gives the maintenance bench a share of whatever useful salvage it brings in: wire, batteries, scrap metal, and the parts of the dead. Government people call this a tax; Arc people call it **the giving**. People from households that give generously rise sooner in the maintenance queue.
-
-<a id="arc-hands"></a>
-### The Arc''s hands
-
-Scarcity passes work from parent to child, and in the Arc this is sharper still. Those not baptised take the heavy shifts: hauling batteries, clearing shafts, entrance duty, stirring the fibre-sugar vats. The baptised take the skilled work; whoever carries a useful part is expected to use it for the station. Near House people take on rule and fighting.
-
-The Arc''s weakness is maintenance turns. The hands of Bench Keepers and maintenance hands are the Arc''s most precious thing, and baptism can only grow as far as those hands reach. That is why in 2126 only one Arc person in six is baptised.
-
-<a id="passing-hands"></a>
-## How hands are handed down
-
-In all three polities the way to mend things runs down through houses. But the roads differ.
-
-| Polity | What is handed down | How |
-|---|---|---|
-| Government | The occupation written in the ledger | Children apprentice beside their parents from twelve and are entered under that occupation on their sixteenth birthday. Maintenance instructions from the Government archives go down to the houses as public notices, and the houses copy and keep them. Changing occupation needs the Dong Chief''s sign-off and the seal of the Member''s office |
-| Free Cities | The workbench | Usually to the house''s children, but to an apprentice if the children lack the hands. An apprentice works some years in return for the skill, and once fully taught is vouched for by the bench owner. Only vouched-for hands take work in their own name |
-| Arc | The craft of the maintenance bench | Bench children help tend joins from an early age and grow up to be body fitters and board hands. The root of that knowledge is the manuals Go Ye-jin read, passed down by mouth and hand only as far as needed |
-
-<a id="what-is-lost"></a>
-### What each generation loses
-
-Each time the hands cross a generation, something drops away. Seoul people say, "Grandfather brought this board back to life, father moved this board, and I keep this board going." With each generation some skills sink from "bring back" to "mend", and from "mend" to "keep going". In the Seoul of 2126 there are many machines nobody knows how to mend any more, only how to use. Even where the Government archives hold the drawings, there are no hands to read them. This slope binds the three polities to one another. The Government''s pumps call for Free City hands, the Free Cities'' machine bodies call for the Arc''s benches, and the Arc''s water wheel calls for Free City hands again.
-
-<a id="side-by-side"></a>
-## Side by side
-
-| | Government | Free Cities | Arc |
-|---|---|---|---|
-| Who runs the station | Stationmaster (handed down in the Stationmaster''s house) | Station Foreman (elected by the station''s bench masters) | Bench Keeper (three parts or more) |
-| Dong level | Dong Chief and dong community centre | Section Chief and section | Shelter Head and shelter |
-| What divides the day | Sirens | The wind | The bench''s shifts |
-| How food is shared | Ration by ledger coupon | Wages and market, and the empty vat | Shared by need by Near House and Bench Keeper |
-| What the station collects | Labour duty, fibre levy, a share of produce | Heat share, watch share | The giving |
-| Where the hands pool | Skilled households | Workbenches | Maintenance benches |
-| What it lacks | Hands to mend | Labour and land | Maintenance turns |
-
-<a id="unsettled"></a>
-## What is not yet settled
-
-- The title names on this page, such as Stationmaster, Dong Chief, Station Foreman, Section Chief, Bench Keeper and Shelter Head, are not yet settled and may change.
-- The Arc''s own name for its list of the baptised is not settled.
-
-<a id="see-also"></a>
-## See also
-
-- [The Three Polities of Seoul](/wiki/Sixteen-States/), [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/)
-- [Government Society](/wiki/Government-Society/), [Free City Society](/wiki/Free-City-Society/), [Arc Society](/wiki/Arc-Society/)
-- [Inside a Station](/wiki/Station-Interior-Construction/), [What Still Runs](/wiki/Lost-Technology-Lineage/), [Structures](/wiki/Structures/)
-', '<a id="overview"></a>
-## 개요
-
-서울 사람은 역에 산다. 역은 저절로 살아 있지 않다. 출입구의 눈을 치우고, 펌프를 돌리고, 공기가 돌게 하고, 불을 켜고 끄고, 정원보다 사람이 많지 않게 하는 손이 날마다 있어야 한다. 한 교대만 손을 놓아도 승강장은 식고, 깊은 층은 숨이 막힌다.
-
-세 정체는 이 일을 저마다 다르게 짠다. 정부는 **역장 사무소**와 **동주민센터**로, 장부와 결재로 역을 돌린다. 자유도시들은 역에 사는 **작업대**와 그들이 뽑은 **역반장**으로, 계약과 수치로 돌린다. 아크는 역마다 있는 **정비대**와 그것을 맡은 **정비장**으로, 몸과 기계를 함께 돌본다.
-
-일을 하는 손도 물려받는다. 서울에서 고치는 법은 책이 아니라 집안과 작업대와 정비대에서 손으로 내려간다. 그래서 역을 돌리는 손이 어디에 고여 있는지가 곧 그 정체의 힘이다.
-
-<a id="four-limits"></a>
-## 역이 품는 사람: 네 한도
-
-역 하나가 품을 수 있는 사람 수는 네 한도 가운데 가장 작은 값이다. 역을 돌리는 사람들이 날마다 지키는 것이 이 넷이다.
-
-| 한도 | 한 사람에게 드는 것 | 무엇이 막나 |
-|---|---|---|
-| 공간 | 생활 면적 4 m². 잠자리, 통로, 부엌을 모두 넣은 값이다 | 승강장과 대합실의 넓이 |
-| 열 | 바깥에서 넣어 주는 열. 대합실 60 W, 승강장 40 W, 깊은 터널 10 W | 사람 몸의 열은 거의 다 환기로 빠져나간다. 벽으로 땅에 빼앗기는 열을 화덕, 땅속 열, 전기가 메워야 한다. 깊을수록 덜 든다 |
-| 물 | 하루 10 L | 우물이나 강물이면 퍼 올리는 힘만 든다. 눈을 녹이면 한 사람마다 45 W의 열이 더 든다 |
-| 공기 | 초당 3 L(1,000명에 초당 3 m³) | 겨울에는 따뜻한 역과 찬 바깥의 온도 차로 공기가 저절로 돈다. 출입구와 환기구를 연 만큼만 돈다. 깊은 층은 팬을 돌려야 한다 |
-
-전기는 따로 센다. 열 펌프에 넣은 전기는 세 배의 열이 되고, 빛과 팬과 충전에 쓴 전기도 결국 역 안에서 열로 남는다. 무엇에 전기를 쓰느냐가 몇 사람을 데울 수 있느냐를 정한다.
-
-얕은 역은 공기가 넉넉하지만 춥다. 깊은 역은 따뜻하지만 숨이 막힌다. 물을 퍼 올리지 못하는 역은 눈을 녹이느라 열을 두 번 쓴다. 그래서 살기 가장 좋은 곳은 깊은 층과 우물과 열린 출입구가 많은 큰 환승역이다.
-
-| 역 | 정체 | 품는 사람 | 무엇이 막나 |
-|---|---|---|---|
-| 서울역 | 정부 | 약 4,200명 | 열과 물. 정부가 이 역에서 가장 원하는 것은 우물 하나 더와 깊은 층 팬 하나 더다. 둘 다 자유도시 기술자의 손이 든다 |
-| 신도림 | 자유도시(구로) | 약 2,000명 | 공기. 출구가 셋뿐이다. 팬 하나를 달면 공기 한도가 3,000명으로 오르고, 그다음에는 공간이 막는다 |
-| 잠실 | 아크(송파) | 약 3,100명 | 열. 세례자 900명이 몸의 기계를 충전하는 전기가 그만큼 데울 수 있는 사람 수를 줄인다 |
-
-역을 돌리는 사람은 이 셈을 머리로 하지 않고 몸으로 안다. 승강장 끝이 식으면 사람이 너무 많은 것이고, 아이가 하품을 자주 하면 공기가 모자란 것이다.
-
-<a id="common-work"></a>
-## 어느 역에나 있는 일
-
-일의 이름은 대한민국 시절의 직업 이름을 그대로 쓰거나, 그 일이 만지는 것에서 지었다.
-
-| 일 | 하는 것 | 어디에 많나 |
-|---|---|---|
-| 바람틀공 | 바람틀을 세우고, 날개의 얼음을 떼고, 베어링을 간다 | 자유도시들(특히 강서), 정부의 다리 위 |
-| 열펌프공 | 땅속 열 펌프의 압축기와 냉매를 다룬다 | 자유도시들 |
-| 우물공 | 우물을 더 깊이 파고 펌프를 내린다 | 자유도시들. 급수계약의 중심 일 |
-| 수차공 | 얼음 밑 수차와 그 물길을 지킨다 | 아크(잠실), 자유도시 작업조 |
-| 망공 | 전선과 케이블을 잇는다. 고예진이 하던 일이다 | 세 정체 모두 |
-| 권선공 | 죽은 모터의 코일을 다시 감는다 | 자유도시들 |
-| 선반공 | 쇠를 깎아 축과 이음쇠를 만든다 | 자유도시들(특히 구로) |
-| 전지공 | 죽은 전지에서 산 낱칸을 골라 묶는다 | 자유도시들, 아크 |
-| 판공 | 회로판을 옮겨 심고 살린다. 가장 귀한 일이다 | 자유도시들, 아크 |
-| 그물공 | 출입구와 빛밭의 그물을 짜고 깁는다 | 세 정체 모두. 가장 흔한 일 |
-| 맞춤이 | 몸에 기계를 맞추고 그 이음 자리를 돌본다 | 아크(가장 많다), 자유도시들 |
-| 의사 | 정부 시술소에서 몸에 기계를 다는 의료인 | 정부 |
-
-여기에 이름 없는 일이 더 많다. 출입구 굴의 눈을 치우는 일, 섬유당 통을 젓는 일, 빛밭 둑을 쌓는 일, 메탄 통을 지키는 일, 지상의 고물과 섬유를 캐 오는 일이다. 어느 정체든 사람 대부분은 이 일을 한다.
-
-<a id="government"></a>
-## 정부: 역장 사무소와 동주민센터
-
-정부의 일은 역에서 시작해 구청에서 끝난다. 결재는 아래에서 위로 올라간다.
-
-<a id="stationmaster"></a>
-### 역장 사무소
-
-**역장**은 역의 출입구, 열, 물, 공기, 정원, 그리고 역 안의 질서를 맡는다. 출입구를 언제 열고 닫을지, 눈보라에 지상 작업을 멈출지, 어느 세대를 깊은 층에 재울지 역장이 정한다. 역장 사무소는 국토교통부의 직제를 따르지만, 역장 자리는 역장 집안 안에서 물린다. 옛 지하철 역무원 직제가 대물림된 것이다. 역장은 옛 역무원 모자를 쓰고, 모자에는 역 이름 띠가 붙어 있다.
-
-역장은 동장보다 아래이면서 동장보다 무섭다. 열과 공기를 쥐었기 때문이다. 정부에서 국회의원의 손이 가장 덜 닿는 자리가 역장 자리다.
-
-<a id="dong-centre"></a>
-### 동주민센터
-
-**동주민센터**는 동장의 배급소다. 동장은 국회의원이 임명하고, 대개 공무원 가구의 세대주가 맡는다. 창구는 셋이다.
-
-| 창구 | 하는 일 |
-|---|---|
-| 배급 창구 | 달마다 세대 단위로 끼니, 물, 연료, 물품 증표를 내준다 |
-| 기재 창구 | 장부의 동 사본을 지킨다. 출생 신고, 사망 신고, 전입신고, 전승 기재 |
-| 민원 창구 | 다툼과 부탁을 받는다. 아홉 시부터 다섯 시까지 연다 |
-
-정부 사람이 가장 자주 마주치는 공무원은 국회의원도 장관도 아닌 이 창구의 서기다. 배급 서기 한 사람이 한 세대의 이번 달 끼니를 정할 수 있다. 법을 아는 서기는 귀해서, 세대들은 끼니 증표를 내고 그들에게 민원 서류를 쓰게 한다.
-
-<a id="quota"></a>
-### 정원을 지키는 일
-
-역마다 국토교통부가 정한 **정원**이 있다. 아이가 태어나면 출생 신고로 세대원에 올린다. 역이 정원을 넘으면 동장이 정원에 빈자리가 있는 역으로 세대 하나를 옮기라는 전입 명령을 낸다. 옮겨 가는 쪽은 대개 얕고 추운 역이다. 정부 사람은 정원을 지키는 일이 겨울을 더 조이지 않게 한다고 믿는다.
-
-결재선은 "역장, 동장, 구청장, 국회의원"이다. 역장의 보고는 동장을 거쳐야 구청에 닿는다. 국회의원 앞까지 가는 일은 말소 처분, 의원 집안의 혼인, 다리와 터널의 일뿐이다.
-
-<a id="government-day"></a>
-### 사이렌으로 나뉘는 하루
-
-정부는 대한민국 표준시를 지킨다. 정부서울청사의 기준 시계가 하루에 두 번 터널 전화로 구청에 시각을 보내고, 구청은 민방위 사이렌으로 역마다 알린다.
-
-| 시각 | 일 |
-|---|---|
-| 05:30 | 1교대 기상. 승강장의 불이 반만 켜진다 |
-| 06:00 | 점등 사이렌(길게 한 번). 동주민센터 앞에서 국민의례. 1교대 시작 |
-| 07:00 | 아침 배급 |
-| 08:00 | 긴 밤 철에는 이때 출입구를 연다. 긴 낮 철에는 06:30 |
-| 14:00 | 2교대 시작 |
-| 16:00 | 긴 밤 철 지상 작업 끝. 출입구를 닫는다. 긴 낮 철에는 19:00 |
-| 17:00 | 저녁 배급 |
-| 22:00 | 소등 사이렌(길게 두 번). 3교대 시작. 펌프, 열, 출입구 경계만 돈다 |
-
-펌프와 열과 경계는 멈추지 않으므로 교대는 여덟 시간씩 셋이다. 한 세대의 식구들이 서로 다른 교대에 서는 일이 많고, 잠자리 한 자리를 번갈아 쓴다. 눈보라가 오면 역장이 사이렌을 짧게 세 번 울려 지상 작업을 멈춘다. 출입구가 닫힐 때 밖에 있던 사람은 출입구 굴 안의 대피칸에서 다음 교대를 기다린다.
-
-<a id="government-hands"></a>
-### 정부의 손
-
-역을 돌리는 손은 장부의 두 계층에 있다. **기능 가구**는 펌프조, 열 펌프 정비, 섬유당 통지기, 전기공, 수선공이다. **노역 가구**는 출입구 일꾼, 고물과 섬유를 캐는 사람, 빛밭 일꾼, 짐꾼, 벌목꾼이다. 노역 가구가 정부 사람의 셋에 둘쯤이다.
-
-등재된 어른은 이레마다 하루를 노역 의무로 진다. 출입구 굴을 열고, 눈을 치우고, 섬유를 캐고, 빛밭 둑을 쌓는다. 동마다 의무일이 달라서 같은 날 모든 동이 비지 않는다. 펌프조와 취수구 정비 같은 기능 가구의 중요한 직종은 열아홉 살이 되면 총을 들지 않고 열여덟 달 동안 취수구나 다리의 바람틀에서 대체 복무를 한다. 정부 사람은 펌프가 총보다 귀하다고 말한다.
-
-정부의 약점은 고치는 손이 얇다는 것이다. 펌프와 바람틀을 살려 두는 손이 모자라서, 큰 수리는 급수계약으로 자유도시들에서 빌린다.
-
-<a id="free-cities"></a>
-## 자유도시들: 역반과 작업대
-
-<a id="station-foreman"></a>
-### 역반장과 구간장
-
-자유도시의 역은 **역반장**이 맡는다. 역반장은 그 역의 출입구, 열, 빛 시간, 공기를 맡고, 그 역에 사는 대주들이 뽑는다. 역 몇 곳과 그 사이 터널을 묶은 단위를 **구간**이라 하고, 구간의 터널, 케이블, 빛밭 자리, 고물 터를 **구간장**이 맡는다. 구간장은 그 도시의 우두머리가 정한다. 일곱 도시에 구간이 열아홉 있다.
-
-남의 역에 묵는 사람은 그 역의 열 몫을 낸다. 보증표나 계약서를 지닌 작업조는 그 장을 맺은 도시들의 역에서 열 몫을 내지 않는다.
-
-<a id="workbench-and-crew"></a>
-### 작업대와 작업조
-
-자유도시 일의 바탕은 **작업대**다. 한 집안이 대물려 쥐는 작업장이자 그 집안의 기술이다. 같은 일을 하는 대들을 묶어 "모터대", "펌프대", "굴착대"라 부른다. 같은 일을 하는 대들은 도시를 넘어 서로 알고 같은 셈을 하지만, 도시를 넘어 서는 조직은 없다.
-
-**작업조**는 계약 하나를 위해 여러 대에서 손을 모아 짠 무리다. 펌프 하나를 통째로 뜯어 고치려면 펌프대, 모터대, 전선대의 손이 함께 가야 한다. 작업조장은 그 장을 맺은 대의 대주나 그가 맡긴 손이다. 장을 다 갚으면 작업조는 흩어진다.
-
-작업대의 약속은 수치로 쓴다. "펌프를 고쳐 준다"가 아니라 "취수 펌프 2대, 물 높이 30 m에서 시간당 20 m³, 긴 밤 철 두 번 동안 보증"이라 쓴다. 수치가 없는 약속은 약속이 아니다.
-
-<a id="wind-hours"></a>
-### 바람 시간
-
-정부의 하루가 불을 켜고 끄는 시간으로 나뉜다면, 자유도시의 하루는 바람으로 나뉜다. 서울 전기의 절반이 넘게 바람틀에서 나오니, 바람이 셀 때 전기가 남고 바람이 잘 때 모자란다. 그래서 작업대는 바람이 셀 때 돌고, 바람이 잘 때 쉰다. 바람이 세게 부는 때를 **바람 시간**이라 한다. 바람 시간이 오면 밤이라도 작업대에 불이 들어오고 손들이 일어난다. 바람이 자면 빛을 끄고 잔다. 자유도시 사람의 첫인사는 "바람 어때?"다.
-
-<a id="empty-pot"></a>
-### 빈 통
-
-자유도시는 배급하지 않는다. 사람들은 품삯이나 보증표로 끼니를 산다. 그 대신 역마다 역반장이 섬유당 통 하나를 **빈 통**으로 남겨 둔다. 그날 일을 못 한 일손이 그 통에서 죽 한 그릇을 먹을 수 있다. 빈 통을 채우는 것은 그 역의 작업대들이 다 함께 지는 몫이다.
-
-<a id="free-city-hands"></a>
-### 자유도시의 손
-
-자유도시 사람은 세 층으로 나뉜다. 대주와 그 가족인 **작업대 집안**, 대에 붙은 기술자인 **손**, 그리고 기술을 보이지 못한 **일손**이다. 일손에는 정부 장부에서 달아나 온 사람, 보증을 깨 도장을 잃은 사람, 아크에서 돌아온 사람이 많다. 일손은 어느 대주 앞에서든 그 대의 일을 혼자 해내 보이면 손이 될 수 있다. 다만 일손을 받아 가르칠 대주는 드물다. 대주는 제 자식에게 먼저 가르친다.
-
-정부의 물도 아크의 전기도 결국 자유도시 사람의 손을 거친다. 이것이 자유도시들의 힘이다. 약점은 사람이 적다는 것이다. 펌프를 고칠 손은 있어도 펌프를 지킬 일손과 땅과 땔감이 모자란다.
-
-<a id="arc"></a>
-## 아크: 정비대와 대피소
-
-<a id="bench-keeper"></a>
-### 정비장과 정비대
-
-아크의 역마다 **정비대**가 있다. 정비대는 몸에 단 기계를 맞추고 손보고 충전하는 자리이고, 역의 기계도 여기서 고친다. 정비대를 맡는 사람이 **정비장**이다. 정비장은 역의 세례 명단도 쥔다. 남의 몸을 열기 전에 제 몸이 먼저 열려 본 사람이어야 하므로, 정비장은 몸에 단 부위가 셋 이상이어야 한다.
-
-정비대는 전기가 들어오는 곳에 선다. 잠실수중보 수차의 전기가 가장 가까이 닿는 잠실의 정비대가 가장 크다. 수차가 물속 얼음 알갱이로 막히는 날에는 아크 전체의 불이 일찍 꺼진다.
-
-<a id="shelter-head"></a>
-### 대피소장
-
-아크는 동을 옛 이름대로 **대피소**라 부른다. 아크로 묶이기 전의 대피소 하나하나가 지금의 동이다. 대피소를 맡는 **대피소장**은 부위가 하나 이상이어야 하고, 세례를 받지 않은 사람의 이름을 적은 대피소 명부를 쥔다. 장소도 대피소 이름으로 부른다. "잠실 대피소", "수서 대피소"처럼 역 이름에 대피소를 붙인다.
-
-<a id="arc-shifts"></a>
-### 정비대에 맞춘 세 교대
-
-역의 하루는 정비대에 맞춘 세 교대다. 정비대에 전기가 들어오는 동안은 누군가 그 앞에서 일한다.
-
-| 교대 | 하는 일 |
-|---|---|
-| 첫 교대 | 부르기로 시작한다. 정비장이 세례 명단을 부르고, 세례자는 이름과 부위 수로, 세례를 받지 않은 사람은 이름과 집안으로 답한다. 정비대가 가장 바쁜 때다. 세례를 받지 않은 사람은 출입구와 섬유당 통으로 간다 |
-| 둘째 교대 | 곁집 창고가 그날의 몫을 나눈다. 바꿈터가 있는 역에서는 바깥 사람을 맞는다. 아이들은 정비대 곁에서 연장 이름과 셈을 배운다 |
-| 셋째 교대 | 불을 줄인다. 정비대 하나만 켜 두고 앓는 사람을 돌본다 |
-
-잠자리는 깊을수록 따뜻하다. 곁집 사람과 정비공 집안이 깊은 칸을 쓰고, 서열이 낮을수록 대합실과 출입구에 가깝다. 정비대와 충전 자리에서 나오는 열을 아크는 선물로 여겨, 잠자리를 정비대 둘레에 붙인다. 강남 아이는 일찍 배운다. 따뜻한 벽은 기계가 돈다는 뜻이고, 차가운 벽은 탈이 났다는 뜻이다.
-
-<a id="sharing-and-giving"></a>
-### 나눔과 바침
-
-아크 안에는 장터가 없다. 먹을 것과 잠자리는 곁집과 각 역의 정비장이 나눈다. 나누는 기준은 서열이 아니라 필요다. 갓 세례를 받아 앓는 사람과 정비공이 먼저 먹는다. 몸이 기계를 받아들이는 데 열과 끼니가 많이 들고, 정비공의 손이 멈추면 역 전체의 기계 몸이 멈추기 때문이다.
-
-집마다 건져 온 고물 가운데 쓸 만한 것의 몫을 정비대에 바친다. 전선, 전지, 쇠붙이, 그리고 죽은 이의 부위다. 정부 사람은 이것을 세금이라 부르고, 아크 사람은 **바침**이라 부른다. 넉넉히 바치는 집안의 사람은 정비 순번에 더 일찍 오른다.
-
-<a id="arc-hands"></a>
-### 아크의 손
-
-결핍 때문에 일은 부모에게서 자식으로 넘어가는데, 아크에서는 이것이 더 날카롭다. 세례를 받지 않은 사람은 힘쓰는 교대를 진다. 전지 나르기, 굴 치우기, 출입구 당번, 섬유당 통 젓기다. 세례자는 숙련 일을 진다. 쓸 만한 부위를 단 사람은 역을 위해 그 부위를 쓸 것이라 여겨진다. 곁집 사람은 다스림과 싸움을 맡는다.
-
-아크의 약점은 정비 차례다. 정비장과 정비공의 손이 아크에서 가장 귀한 것이고, 그 손이 닿는 만큼만 세례가 늘어난다. 2126년 아크 사람 여섯 가운데 하나만 세례자인 까닭이 여기 있다.
-
-<a id="passing-hands"></a>
-## 손이 물려지는 길
-
-세 정체 모두 고치는 법은 집안을 따라 내려간다. 다만 그 길이 다르다.
-
-| 정체 | 물려지는 것 | 어떻게 |
-|---|---|---|
-| 정부 | 장부에 적힌 직종 | 아이는 열두 살부터 부모 곁에서 견습하고, 열여섯 살 생일에 그 직종 아래 기재된다. 정부 서고의 정비 지침은 고시로 집안에 내려가고, 집안은 그것을 베껴 지닌다. 직종을 바꾸려면 동장의 결재와 국회의원 사무소의 도장이 든다 |
-| 자유도시들 | 작업대 | 대개 집안의 자식에게 가지만, 자식의 손이 모자라면 견습에게 간다. 견습은 몇 해를 일하는 대신 기술을 배우고, 다 배우면 작업대 주인이 그 손을 보증한다. 보증받은 손만 제 이름으로 일을 받는다 |
-| 아크 | 정비대의 솜씨 | 정비대의 아이들이 어려서부터 이음 자리 돌봄을 돕고, 자라서 맞춤이와 판공이 된다. 그 지식의 뿌리는 고예진이 읽은 매뉴얼이고, 필요한 만큼만 입과 손으로 내려간다 |
-
-<a id="what-is-lost"></a>
-### 세대마다 잃는 것
-
-손이 한 세대를 건널 때마다 무언가가 떨어진다. 서울 사람은 "할아버지는 이 판을 살렸고, 아버지는 이 판을 옮겼고, 나는 이 판을 지킨다"고 말한다. 한 세대가 지날 때마다 "살린다"는 "고친다"로, "고친다"는 "지킨다"로 내려앉는다. 2126년 서울에는 아무도 고칠 줄 모르게 되어 쓰는 법만 남은 기계가 많다. 정부 서고에 도면이 있어도 읽을 손이 없다. 이 기울기가 세 정체를 서로에게 묶는다. 정부의 펌프는 자유도시의 손을, 자유도시의 기계 몸은 아크의 정비대를, 아크의 수차는 다시 자유도시의 손을 부른다.
-
-<a id="side-by-side"></a>
-## 한눈에 비교
-
-| | 정부 | 자유도시들 | 아크 |
-|---|---|---|---|
-| 역을 맡는 사람 | 역장(역장 집안이 물린다) | 역반장(역의 대주들이 뽑는다) | 정비장(부위 셋 이상) |
-| 동 층 | 동장과 동주민센터 | 구간장과 구간 | 대피소장과 대피소 |
-| 하루를 나누는 것 | 사이렌 | 바람 | 정비대의 교대 |
-| 먹을 것을 나누는 법 | 장부 증표로 배급 | 품삯과 장터, 그리고 빈 통 | 곁집과 정비장이 필요에 따라 나눔 |
-| 역이 거두는 것 | 노역 의무, 섬유 납부, 생산 몫 | 열 몫, 지킴 몫 | 바침 |
-| 손이 고이는 곳 | 기능 가구 | 작업대 | 정비대 |
-| 모자란 것 | 고치는 손 | 일손과 땅 | 정비 차례 |
-
-<a id="unsettled"></a>
-## 아직 정해지지 않은 것
-
-- 이 문서에 나오는 역장, 동장, 역반장, 구간장, 정비장, 대피소장 같은 칭호 이름은 아직 정해지지 않았고 바뀔 수 있다.
-- 아크의 세례 명단을 따로 부르는 이름은 정해지지 않았다.
-
-<a id="see-also"></a>
-## 함께 읽기
-
-- [서울의 세 정체](/wiki/Sixteen-States/), [집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/)
-- [정부 사회](/wiki/Government-Society/), [자유도시들의 사회](/wiki/Free-City-Society/), [아크 사회](/wiki/Arc-Society/)
-- [역 안으로](/wiki/Station-Interior-Construction/), [아직 도는 것](/wiki/Lost-Technology-Lineage/), [구조물](/wiki/Structures/)
-');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Oral-Stories', 'The Stories', '이야기', 'culture', 3, 'No one in Seoul in 2126 has seen the days before the Great Blackout. Those days came down as stories. Station people gave names to the machines outside and to the animals, and every one of those names gathered a story. This document collects the names and stories that pass between the stations of Seoul. The stories are not a record of fact. Some agree with the records, some have been reshaped in one polity''s way of speaking, and some are rumours nobody has confirmed. This document keeps them apart.
 
 ## Names Given to Machines
@@ -10498,7 +9766,7 @@ Inside the Government, the OMO Party and the Claw Party split over whether to se
 - **Other polities.** Seoul has only the three. The many named statelets of older records do not exist.
 - **Rule outside Seoul.** Outside Seoul is the rim of the war machines. Nobody rules there and there are no domains ([Beyond Seoul: the Rim](/wiki/External-Theaters/)).
 - **A name binding the Free Cities.** The seven cities are neither a league nor a country. No name binds them.
-- **Company groups.** The great companies of before the Blackout did not survive as houses. The units in which work and position pool are Assembly Member houses, workbench houses and Near Houses ([Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/)).
+- **Company groups.** The great companies of before the Blackout did not survive as houses. The units in which work and position pool are Assembly Member houses, workbench houses and Near Houses ([Government Society](/wiki/Government-Society/), [Free City Society](/wiki/Free-City-Society/), [Arc Society](/wiki/Arc-Society/)).
 - **Organised faith outside the Arc.** The Arc has replaced every religion before it.
 
 <a id="unsettled"></a>
@@ -10513,8 +9781,7 @@ Inside the Government, the OMO Party and the Claw Party split over whether to se
 ## See also
 
 - [Government Society](/wiki/Government-Society/), [Free City Society](/wiki/Free-City-Society/), [Arc Society](/wiki/Arc-Society/)
-- [The Hands That Run a Station](/wiki/Operating-Houses/): how each polity runs a station
-- [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/): why work and position pool in houses
+- [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/): how a house carries its name down the generations
 - [Crossings and Smuggling](/wiki/Diaspora-Corridors/), [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/)
 - [Titles and Offices](/wiki/Offices-and-Ranks/), [World Index: the Three Polities and the 25 Duchies](/wiki/World-Expansion-Index/), [Century Annals 2026-2126](/wiki/Century-Annals/)
 ', '<a id="overview"></a>
@@ -10636,7 +9903,7 @@ Inside the Government, the OMO Party and the Claw Party split over whether to se
 - **다른 정체.** 서울에는 세 정체뿐이다. 옛 기록에 남은 여러 나라 이름의 정치체는 없다.
 - **서울 밖의 다스림.** 서울 밖은 전쟁 기계의 테두리다. 그곳을 다스리는 사람도, 영지도 없다([서울 밖과 테두리](/wiki/External-Theaters/)).
 - **자유도시들을 묶는 이름.** 일곱 도시는 연맹도 나라도 아니다. 묶는 이름이 없다.
-- **회사 집단.** 대정전 전의 큰 회사들은 집안으로 남지 않았다. 일과 자리가 고이는 단위는 의원 집안, 작업대 집안, 곁집이다([집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/)).
+- **회사 집단.** 대정전 전의 큰 회사들은 집안으로 남지 않았다. 일과 자리가 고이는 단위는 의원 집안, 작업대 집안, 곁집이다([정부 사회](/wiki/Government-Society/), [자유도시들의 사회](/wiki/Free-City-Society/), [아크 사회](/wiki/Arc-Society/)).
 - **아크 밖의 조직된 신앙.** 아크가 이전의 모든 종교를 대신했다.
 
 <a id="unsettled"></a>
@@ -10651,8 +9918,7 @@ Inside the Government, the OMO Party and the Claw Party split over whether to se
 ## 함께 읽기
 
 - [정부 사회](/wiki/Government-Society/), [자유도시들의 사회](/wiki/Free-City-Society/), [아크 사회](/wiki/Arc-Society/)
-- [역을 돌리는 손](/wiki/Operating-Houses/): 세 정체가 역 하나를 어떻게 돌리나
-- [집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/): 일과 자리가 집안에 고이는 까닭
+- [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/): 집안이 이름으로 대를 잇는 법
 - [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/), [급수계약과 세 정체](/wiki/World-Relation-Ledger/)
 - [칭호와 자리](/wiki/Offices-and-Ranks/), [세계 색인: 세 정체와 25공작령](/wiki/World-Expansion-Index/), [백 년 연표 2026~2126](/wiki/Century-Annals/)
 ');
@@ -11545,7 +10811,7 @@ Member of the National Assembly, the life-long seat of the President, Duke of Gw
 | The roots of the world | [World Narrative Atlas](/wiki/World-Narrative-Atlas/), [The Great Blackout and the Eternal Winter](/wiki/World-Unbinding/), [The First AI and the Machines Outside](/wiki/Regional-Physical-AI-Arcs/), [Glossary](/wiki/Glossary/) |
 | Time | [Century Annals 2026-2126](/wiki/Century-Annals/), [The Opening: Winter 2126](/wiki/Scenario-Timeline/), [Sindorim Junction Cargo Gate](/wiki/Sindorim-Junction-Cargo-Gate/) |
 | The three polities | [The Three Polities of Seoul](/wiki/Sixteen-States/), [Government Society](/wiki/Government-Society/), [Free City Society](/wiki/Free-City-Society/), [Arc Society](/wiki/Arc-Society/) |
-| Between the polities | [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/), [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/), [The Hands That Run a Station](/wiki/Operating-Houses/) |
+| Between the polities | [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/) |
 | Land and stations | [Seoul under the Snow](/wiki/Building-Reuse-Geography/), [Beyond Seoul: the Rim](/wiki/External-Theaters/), [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/), [Inside a Station](/wiki/Station-Interior-Construction/), [How the World Map Is Built](/wiki/World-Map-Construction/), [The Surface and Underground](/wiki/World-and-Subway-Layers/), [Structures](/wiki/Structures/) |
 | People | [People, Factions and Trades](/wiki/Characters-Factions-and-Professions/), [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/), [Values and Policy Scales](/wiki/Values-and-Policy-Scales/), [Titles and Offices](/wiki/Offices-and-Ranks/) |
 | Life | [Faith and Rites](/wiki/Faith-Culture-Schism/), [Meals and Food](/wiki/Food-Culture/), [The Stories](/wiki/Oral-Stories/), [Ailments of the Cold](/wiki/Ailments/) |
@@ -11564,7 +10830,7 @@ Member of the National Assembly, the life-long seat of the President, Duke of Gw
 |---|---|
 | Jongno-gu, Jung-gu | [Government Society](/wiki/Government-Society/), [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) |
 | Yongsan-gu, Mapo-gu, Seongdong-gu, Gwangjin-gu | [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/) |
-| Seodaemun-gu, Dongdaemun-gu, Jungnang-gu | [Government Society](/wiki/Government-Society/), [The Hands That Run a Station](/wiki/Operating-Houses/) |
+| Seodaemun-gu, Dongdaemun-gu, Jungnang-gu | [Government Society](/wiki/Government-Society/) |
 | Seongbuk-gu, Eunpyeong-gu, Gangbuk-gu, Dobong-gu, Nowon-gu | [Beyond Seoul: the Rim](/wiki/External-Theaters/), [The First AI and the Machines Outside](/wiki/Regional-Physical-AI-Arcs/) |
 | Gangseo-gu, Yangcheon-gu | [Free City Society](/wiki/Free-City-Society/), [People and Machines](/wiki/People-and-Machines/) |
 | Yeongdeungpo-gu | [Free City Society](/wiki/Free-City-Society/), [The Opening: Winter 2126](/wiki/Scenario-Timeline/) |
@@ -11720,7 +10986,7 @@ Member of the National Assembly, the life-long seat of the President, Duke of Gw
 | 세계의 뿌리 | [세계 서사 총람](/wiki/World-Narrative-Atlas/), [대정전과 영원한 겨울](/wiki/World-Unbinding/), [최초의 AI와 바깥 기계](/wiki/Regional-Physical-AI-Arcs/), [용어 사전](/wiki/Glossary/) |
 | 때 | [백 년 연표](/wiki/Century-Annals/), [개막: 2126년 겨울](/wiki/Scenario-Timeline/), [신도림 연결부 화물문](/wiki/Sindorim-Junction-Cargo-Gate/) |
 | 세 정체 | [서울의 세 정체](/wiki/Sixteen-States/), [정부 사회](/wiki/Government-Society/), [자유도시들의 사회](/wiki/Free-City-Society/), [아크 사회](/wiki/Arc-Society/) |
-| 정체 사이 | [급수계약과 세 정체](/wiki/World-Relation-Ledger/), [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/), [집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/), [역을 돌리는 손](/wiki/Operating-Houses/) |
+| 정체 사이 | [급수계약과 세 정체](/wiki/World-Relation-Ledger/), [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/) |
 | 땅과 역 | [눈 밑의 서울](/wiki/Building-Reuse-Geography/), [서울 밖과 테두리](/wiki/External-Theaters/), [서울 역 목록](/wiki/Seoul-Station-Catalog/), [역 안으로](/wiki/Station-Interior-Construction/), [세계 지도의 짜임](/wiki/World-Map-Construction/), [지상과 땅 밑](/wiki/World-and-Subway-Layers/), [구조물](/wiki/Structures/) |
 | 사람 | [인물·세력·생업](/wiki/Characters-Factions-and-Professions/), [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/), [가치관과 정책 척도](/wiki/Values-and-Policy-Scales/), [칭호와 자리](/wiki/Offices-and-Ranks/) |
 | 삶 | [믿음과 의례](/wiki/Faith-Culture-Schism/), [끼니와 먹거리](/wiki/Food-Culture/), [이야기](/wiki/Oral-Stories/), [추위의 병](/wiki/Ailments/) |
@@ -11739,7 +11005,7 @@ Member of the National Assembly, the life-long seat of the President, Duke of Gw
 |---|---|
 | 종로구, 중구 | [정부 사회](/wiki/Government-Society/), [서울 역 목록](/wiki/Seoul-Station-Catalog/) |
 | 용산구, 마포구, 성동구, 광진구 | [급수계약과 세 정체](/wiki/World-Relation-Ledger/), [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/) |
-| 서대문구, 동대문구, 중랑구 | [정부 사회](/wiki/Government-Society/), [역을 돌리는 손](/wiki/Operating-Houses/) |
+| 서대문구, 동대문구, 중랑구 | [정부 사회](/wiki/Government-Society/) |
 | 성북구, 은평구, 강북구, 도봉구, 노원구 | [서울 밖과 테두리](/wiki/External-Theaters/), [최초의 AI와 바깥 기계](/wiki/Regional-Physical-AI-Arcs/) |
 | 강서구, 양천구 | [자유도시들의 사회](/wiki/Free-City-Society/), [사람과 기계](/wiki/People-and-Machines/) |
 | 영등포구 | [자유도시들의 사회](/wiki/Free-City-Society/), [개막: 2126년 겨울](/wiki/Scenario-Timeline/) |
@@ -13066,8 +12332,6 @@ Government work begins at the station and ends at the district office. The line 
 - The **dong community centre** is the **Dong Chief**''s ration office, with three counters: rations, entries and petitions. The official Government people meet most often is the clerk at these counters. One ration clerk can decide a household''s meals for the month.
 - The **Stationmaster** ranks below the Dong Chief but is more feared, because the Stationmaster holds the station''s heat and air. The post is handed down within the Stationmaster''s house.
 
-How a station turns through its day is in [The Hands That Run a Station](/wiki/Operating-Houses/).
-
 <a id="law"></a>
 ## Law and punishment
 
@@ -13272,7 +12536,7 @@ At the third contract the Arc sits down for the first time. The six OMO Party Me
 ## See also
 
 - [The Three Polities of Seoul](/wiki/Sixteen-States/), [Free City Society](/wiki/Free-City-Society/), [Arc Society](/wiki/Arc-Society/)
-- [The Hands That Run a Station](/wiki/Operating-Houses/), [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/)
+- [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/)
 - [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/), [Titles and Offices](/wiki/Offices-and-Ranks/), [Guns, Rounds and Drones](/wiki/Era-Arms-and-Tech-Level/)
 ', '<a id="overview"></a>
 ## 개요
@@ -13405,8 +12669,6 @@ At the third contract the Arc sits down for the first time. The six OMO Party Me
 - **구청**은 국회의원 집안의 사무소다. 구청의 우두머리인 **구청장**은 국회의원이 임명하는 직책이다. 국회의원의 도장을 대신 찍고, 구 고시를 내고, 민원 심리를 연다. 구청장은 땅을 쥐지 않는다.
 - **동주민센터**는 **동장**의 배급소다. 배급, 기재, 민원의 세 창구가 있다. 정부 사람이 가장 자주 마주치는 공무원은 이 창구의 서기다. 배급 서기 한 사람이 한 세대의 이번 달 끼니를 정할 수 있다.
 - **역장**은 역의 열과 공기를 쥔 사람이라 동장보다 아래이면서 동장보다 무섭다. 역장 자리는 역장 집안 안에서 물린다.
-
-역 하나가 하루를 어떻게 도는지는 [역을 돌리는 손](/wiki/Operating-Houses/)에 있다.
 
 <a id="law"></a>
 ## 법과 벌
@@ -13612,7 +12874,7 @@ At the third contract the Arc sits down for the first time. The six OMO Party Me
 ## 함께 읽기
 
 - [서울의 세 정체](/wiki/Sixteen-States/), [자유도시들의 사회](/wiki/Free-City-Society/), [아크 사회](/wiki/Arc-Society/)
-- [역을 돌리는 손](/wiki/Operating-Houses/), [집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/), [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/)
+- [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/), [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/)
 - [급수계약과 세 정체](/wiki/World-Relation-Ledger/), [칭호와 자리](/wiki/Offices-and-Ranks/), [총, 탄, 드론](/wiki/Era-Arms-and-Tech-Level/)
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Free-City-Society', 'Free City Society', '자유도시들의 사회', 'factions', 6, '<a id="overview"></a>
@@ -13711,7 +12973,7 @@ What the cities most often meet about among themselves: who maintains a cable or
 <a id="workbench"></a>
 ## Workbenches and the layers of people
 
-The base of Free City work is the **workbench**, a workshop one house holds through the generations, and that house''s skill. One workbench does one kind of work, and benches doing the same work are called "motor benches", "pump benches", "drilling benches" and so on. A workbench has its bench master, its hands and its apprentices. The bench master''s post is inherited, but an eldest child who cannot show the hands does not take the bench. A group of hands gathered from several benches for one contract is a **work crew**. A station is run by its **Station Foreman**, and a **section** of several stations by its **Section Chief**. More in [The Hands That Run a Station](/wiki/Operating-Houses/) and [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/).
+The base of Free City work is the **workbench**, a workshop one house holds through the generations, and that house''s skill. One workbench does one kind of work, and benches doing the same work are called "motor benches", "pump benches", "drilling benches" and so on. A workbench has its bench master, its hands and its apprentices. The bench master''s post is inherited, but an eldest child who cannot show the hands does not take the bench. A group of hands gathered from several benches for one contract is a **work crew**. A station is run by its **Station Foreman**, and a **section** of several stations by its **Section Chief**. How a house carries its name down the generations is in [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/).
 
 The Free Cities are not equal either.
 
@@ -13856,7 +13118,7 @@ What the Free Cities lack is infantry that wins by numbers, heavy infantry with 
 ## See also
 
 - [The Three Polities of Seoul](/wiki/Sixteen-States/), [Government Society](/wiki/Government-Society/), [Arc Society](/wiki/Arc-Society/)
-- [The Hands That Run a Station](/wiki/Operating-Houses/), [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/)
+- [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/)
 - [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/), [Sindorim Junction Cargo Gate](/wiki/Sindorim-Junction-Cargo-Gate/), [Beyond Seoul: the Rim](/wiki/External-Theaters/)
 ', '<a id="overview"></a>
 ## 개요
@@ -13954,7 +13216,7 @@ What the Free Cities lack is infantry that wins by numbers, heavy infantry with 
 <a id="workbench"></a>
 ## 작업대와 사람의 층
 
-자유도시 일의 바탕은 **작업대**다. 한 집안이 대물려 쥐는 작업장이자 그 집안의 기술이다. 한 작업대는 한 가지 일을 하고, 같은 일을 하는 대들을 "모터대", "펌프대", "굴착대"처럼 부른다. 작업대에는 대주, 손, 견습이 있다. 대주 자리는 대물림이지만 손을 보이지 못한 맏이는 대를 잇지 못한다. 계약 하나를 위해 여러 대에서 손을 모아 짠 무리가 **작업조**다. 역은 **역반장**이, 역 몇 곳을 묶은 **구간**은 **구간장**이 맡는다. 자세한 것은 [역을 돌리는 손](/wiki/Operating-Houses/)과 [집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/)에 있다.
+자유도시 일의 바탕은 **작업대**다. 한 집안이 대물려 쥐는 작업장이자 그 집안의 기술이다. 한 작업대는 한 가지 일을 하고, 같은 일을 하는 대들을 "모터대", "펌프대", "굴착대"처럼 부른다. 작업대에는 대주, 손, 견습이 있다. 대주 자리는 대물림이지만 손을 보이지 못한 맏이는 대를 잇지 못한다. 계약 하나를 위해 여러 대에서 손을 모아 짠 무리가 **작업조**다. 역은 **역반장**이, 역 몇 곳을 묶은 **구간**은 **구간장**이 맡는다. 집안이 이름으로 대를 잇는 법은 [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/)에 있다.
 
 자유도시도 평등하지 않다.
 
@@ -14099,7 +13361,7 @@ What the Free Cities lack is infantry that wins by numbers, heavy infantry with 
 ## 함께 읽기
 
 - [서울의 세 정체](/wiki/Sixteen-States/), [정부 사회](/wiki/Government-Society/), [아크 사회](/wiki/Arc-Society/)
-- [역을 돌리는 손](/wiki/Operating-Houses/), [집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/), [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/)
+- [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/), [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/)
 - [급수계약과 세 정체](/wiki/World-Relation-Ledger/), [신도림 연결부 화물문](/wiki/Sindorim-Junction-Cargo-Gate/), [서울 밖과 테두리](/wiki/External-Theaters/)
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Arc-Society', 'Arc Society', '아크 사회', 'factions', 7, '<a id="overview"></a>
@@ -14453,7 +13715,7 @@ Baptised fighters are strong, but when parts and medicine are cut off the whole 
 ## See also
 
 - [The Three Polities of Seoul](/wiki/Sixteen-States/), [Government Society](/wiki/Government-Society/), [Free City Society](/wiki/Free-City-Society/)
-- [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/), [The Hands That Run a Station](/wiki/Operating-Houses/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/)
+- [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/)
 - [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/), [Machine Bodies and Scarcity](/wiki/Cyberware-and-Scarcity/), [Faith and Rites](/wiki/Faith-Culture-Schism/)
 ', '<a id="overview"></a>
 ## 개요
@@ -14806,7 +14068,7 @@ Baptised fighters are strong, but when parts and medicine are cut off the whole 
 ## 함께 읽기
 
 - [서울의 세 정체](/wiki/Sixteen-States/), [정부 사회](/wiki/Government-Society/), [자유도시들의 사회](/wiki/Free-City-Society/)
-- [집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/), [역을 돌리는 손](/wiki/Operating-Houses/), [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/)
+- [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/), [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/)
 - [급수계약과 세 정체](/wiki/World-Relation-Ledger/), [기계 몸과 결핍](/wiki/Cyberware-and-Scarcity/), [믿음과 의례](/wiki/Faith-Culture-Schism/)
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Cyberware-and-Scarcity', 'Machine Bodies and Scarcity', '기계 몸과 결핍', 'technology', 1, '## A living but scarce technology

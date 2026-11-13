@@ -100,7 +100,7 @@ What the cities most often meet about among themselves: who maintains a cable or
 <a id="workbench"></a>
 ## Workbenches and the layers of people
 
-The base of Free City work is the **workbench**, a workshop one house holds through the generations, and that house's skill. One workbench does one kind of work, and benches doing the same work are called "motor benches", "pump benches", "drilling benches" and so on. A workbench has its bench master, its hands and its apprentices. The bench master's post is inherited, but an eldest child who cannot show the hands does not take the bench. A group of hands gathered from several benches for one contract is a **work crew**. A station is run by its **Station Foreman**, and a **section** of several stations by its **Section Chief**. More in [The Hands That Run a Station](/wiki/Operating-Houses/) and [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/).
+The base of Free City work is the **workbench**, a workshop one house holds through the generations, and that house's skill. One workbench does one kind of work, and benches doing the same work are called "motor benches", "pump benches", "drilling benches" and so on. A workbench has its bench master, its hands and its apprentices. The bench master's post is inherited, but an eldest child who cannot show the hands does not take the bench. A group of hands gathered from several benches for one contract is a **work crew**. A station is run by its **Station Foreman**, and a **section** of several stations by its **Section Chief**. How a house carries its name down the generations is in [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/).
 
 The Free Cities are not equal either.
 
@@ -245,5 +245,5 @@ What the Free Cities lack is infantry that wins by numbers, heavy infantry with 
 ## See also
 
 - [The Three Polities of Seoul](/wiki/Sixteen-States/), [Government Society](/wiki/Government-Society/), [Arc Society](/wiki/Arc-Society/)
-- [The Hands That Run a Station](/wiki/Operating-Houses/), [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/)
+- [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/)
 - [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/), [Sindorim Junction Cargo Gate](/wiki/Sindorim-Junction-Cargo-Gate/), [Beyond Seoul: the Rim](/wiki/External-Theaters/)
