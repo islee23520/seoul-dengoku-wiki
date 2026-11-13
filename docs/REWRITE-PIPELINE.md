@@ -50,7 +50,7 @@ node scripts/pages/scan-terms.mjs --terms docs/canon-terms.json --scope <slug>,<
 node scripts/pages/rewrite-doc.mjs --add-slug <slug> --category <id> [--title <en>] [--title-ko <ko>] [--dry-run] [--sql-dir <dir>]
 ```
 
-- 문서 slug의 정본 목록은 `docs/canon-slugs.json`(63개, `docs/CANON-BIBLE.md` 7.1)이다. 목록에 없는 slug와
+- 문서 slug의 정본 목록은 `docs/canon-slugs.json`(61개, `docs/CANON-BIBLE.md` 7.1)이다. 목록에 없는 slug와
   이미 030에 있는 slug는 exit 2로 거부한다. `--category`가 없으면 exit 1, `wiki_category`에 없는 분류도 exit 1이다.
 - 030 끝에 INSERT 1행을 기존 직렬화 그대로(같은 열 순서, 작은따옴표 2배 이스케이프) 붙인다. `sort`는 그 분류의
   최댓값 + 1이다. 본문은 H1 하나와 "작성 중" 문장 하나(ko/en)이며 명시 앵커가 없어 두 언어의 앵커 집합이 같다.

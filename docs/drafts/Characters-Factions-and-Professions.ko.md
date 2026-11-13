@@ -138,8 +138,6 @@ T1 자리는 스물일곱이다. 정부 열다섯(국회의원 열넷과 종신 
 - [칭호와 자리](/wiki/Offices-and-Ranks/)
 - [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/)
 - [가치관과 정책 척도](/wiki/Values-and-Policy-Scales/)
-- [집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/)
-- [역을 돌리는 손](/wiki/Operating-Houses/)
 - [정부 사회](/wiki/Government-Society/)
 - [자유도시들의 사회](/wiki/Free-City-Society/)
 - [아크 사회](/wiki/Arc-Society/)

@@ -151,7 +151,7 @@ section_checkpoint: v3 task 10 complete
 | 세계의 뿌리 | [세계 서사 총람](/wiki/World-Narrative-Atlas/), [대정전과 영원한 겨울](/wiki/World-Unbinding/), [최초의 AI와 바깥 기계](/wiki/Regional-Physical-AI-Arcs/), [용어 사전](/wiki/Glossary/) |
 | 때 | [백 년 연표](/wiki/Century-Annals/), [개막: 2126년 겨울](/wiki/Scenario-Timeline/), [신도림 연결부 화물문](/wiki/Sindorim-Junction-Cargo-Gate/) |
 | 세 정체 | [서울의 세 정체](/wiki/Sixteen-States/), [정부 사회](/wiki/Government-Society/), [자유도시들의 사회](/wiki/Free-City-Society/), [아크 사회](/wiki/Arc-Society/) |
-| 정체 사이 | [급수계약과 세 정체](/wiki/World-Relation-Ledger/), [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/), [집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/), [역을 돌리는 손](/wiki/Operating-Houses/) |
+| 정체 사이 | [급수계약과 세 정체](/wiki/World-Relation-Ledger/), [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/) |
 | 땅과 역 | [눈 밑의 서울](/wiki/Building-Reuse-Geography/), [서울 밖과 테두리](/wiki/External-Theaters/), [서울 역 목록](/wiki/Seoul-Station-Catalog/), [역 안으로](/wiki/Station-Interior-Construction/), [세계 지도의 짜임](/wiki/World-Map-Construction/), [지상과 땅 밑](/wiki/World-and-Subway-Layers/), [구조물](/wiki/Structures/) |
 | 사람 | [인물·세력·생업](/wiki/Characters-Factions-and-Professions/), [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/), [가치관과 정책 척도](/wiki/Values-and-Policy-Scales/), [칭호와 자리](/wiki/Offices-and-Ranks/) |
 | 삶 | [믿음과 의례](/wiki/Faith-Culture-Schism/), [끼니와 먹거리](/wiki/Food-Culture/), [이야기](/wiki/Oral-Stories/), [추위의 병](/wiki/Ailments/) |
@@ -170,7 +170,7 @@ section_checkpoint: v3 task 10 complete
 |---|---|
 | 종로구, 중구 | [정부 사회](/wiki/Government-Society/), [서울 역 목록](/wiki/Seoul-Station-Catalog/) |
 | 용산구, 마포구, 성동구, 광진구 | [급수계약과 세 정체](/wiki/World-Relation-Ledger/), [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/) |
-| 서대문구, 동대문구, 중랑구 | [정부 사회](/wiki/Government-Society/), [역을 돌리는 손](/wiki/Operating-Houses/) |
+| 서대문구, 동대문구, 중랑구 | [정부 사회](/wiki/Government-Society/) |
 | 성북구, 은평구, 강북구, 도봉구, 노원구 | [서울 밖과 테두리](/wiki/External-Theaters/), [최초의 AI와 바깥 기계](/wiki/Regional-Physical-AI-Arcs/) |
 | 강서구, 양천구 | [자유도시들의 사회](/wiki/Free-City-Society/), [사람과 기계](/wiki/People-and-Machines/) |
 | 영등포구 | [자유도시들의 사회](/wiki/Free-City-Society/), [개막: 2126년 겨울](/wiki/Scenario-Timeline/) |
