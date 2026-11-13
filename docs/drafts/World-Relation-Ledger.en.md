@@ -92,7 +92,7 @@ The Government counts in **meals**, the Free Cities in **kilos**. One meal is a 
 | Dongjak | Passage and escort for work crews and freight crossing the Noryangjin and Dongjak bridges | Takes its passage share in labour and fibre |
 | Yeongdeungpo | The meeting place, reconciling the sheets' reckonings, part of the water from the Yangpyeong-dong intake | Pitch fees, labour |
 
-The Host of this meeting is Yeongdeungpo's Market Master; the market houses' three-year rota has come round that way. The place is again the Assembly building at Yeouido. Government people come through the Mapo–Yeouinaru under-river tunnel; Arc people come from Gubanpo through Dongjak on Line 9. Also at stake:
+The Host of this meeting is Yeongdeungpo's Market Master, seated for life by name-worth at the masters' meeting of the five market seal houses. The place is again the Assembly building at Yeouido. Government people come through the Mapo–Yeouinaru under-river tunnel; Arc people come from Gubanpo through Dongjak on Line 9. Also at stake:
 
 - Over the next thirty years the wells will sink about another 9 metres. Wells of 60-80 metres must be re-dug to 70-90. Gwanak, with its drilling crews, and Geumcheon, with its drilling rigs, are the most expensive hands in this contract.
 - The Yangpyeong-dong intake gives less. Yeongdeungpo must push the intake further out toward the deep channel, and for that it needs Government labour.

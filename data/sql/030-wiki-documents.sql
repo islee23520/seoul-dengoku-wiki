@@ -385,7 +385,7 @@ In the table below, the seven rows marked **settled** are the fixed chronology. 
 
 **The cities of the southwest.** The Government''s clerks did not reach the southwest of the river. Instead there were the factory sites of Guro and Gasan, the warehouses of Yeongdeungpo and Yeouido, and the depot workshops of Sinjeong and Guro. A station with good water filters needed a station that could wind motors, and a station that wound motors needed a station with spare parts. No one could force anyone else, so they bargained, and the promises of their bargains built up into cities. Each district had its own factory sites, intakes and depots, so each district settled into one city.
 
-**No leader chosen.** The southwestern cities were not bound into one. There was no way to judge whose skill was higher, so they could not choose a leader. Each city found something in its own work that could be measured. Gangseo measured the watts its wind fields put out; Guro, the number of sureties kept. Yeongdeungpo measured nothing and passed the seat round the market families in turn.
+**No leader chosen.** The southwestern cities were not bound into one. There was no way to judge whose skill was higher, so they could not choose a leader. Each city found something in its own work that could be counted. The houses that stamped a city''s first contract became its seal houses, held a masters'' meeting, and seated a head for life by reckoning name-worth instead of votes. Gangseo counted seasons that met their watts; Guro, the number of sureties kept; Yeongdeungpo, market place contracts never broken and kilos put into the hearth.
 
 <a id="annals-2056"></a>
 
@@ -397,7 +397,7 @@ In the table below, the seven rows marked **settled** are the fixed chronology. 
 
 **Wind and ground heat.** People had to turn to ground heat pumps and wind machines. The southwestern cities, which had that skill, grew in power. The hands that raise and mend wind machines and the hands that handle heat-pump compressors became the most precious hands in Seoul.
 
-**The Duke of Gwanak.** Around this time the head family of Gwanak took the title of Duke. When the Government across the river called its districts duchies and handed them to Members of the National Assembly, Gwanak took the same word and declared it would sit in the same seat as the Government. The other cities kept the names that came from their own work.
+**The Duke of Gwanak.** Around this time the head family of Gwanak took the title of Duke. When the Government across the river called its districts duchies and handed them to Members of the National Assembly, Gwanak took the same word and declared it would sit in the same seat as the Government. At the same time Gwanak''s masters'' meeting changed the law so that the head''s seat passes within that family. This is called binding the seal. The other cities kept the names that came from their own work.
 
 **Frozen ground.** Around 2066 the edge of the frozen ground had come down to about 22 metres.
 
@@ -623,7 +623,7 @@ Seoul''s great events come round every thirty years. The cycle for tearing down 
 
 **남서쪽의 도시들.** 강 남서쪽에는 정부의 서기가 닿지 않았다. 대신 구로와 가산의 공장 터, 영등포와 여의도의 창고, 신정과 구로의 차량기지 작업장이 있었다. 정수기가 좋은 역은 모터를 감을 줄 아는 역이 필요했고, 모터를 감는 역은 여분 부품을 가진 역이 필요했다. 아무도 남을 억지로 부릴 수 없었으니 흥정을 했고, 흥정의 약속이 쌓여 도시가 됐다. 구마다 공장 터와 취수구와 차량기지가 따로 있어서 구 하나가 도시 하나로 굳었다.
 
-**지도자를 못 뽑다.** 남서쪽 도시들은 하나로 묶이지 않았다. 누구 기술이 더 높은지 따질 방법이 없으니 지도자도 못 뽑았다. 도시마다 제 일에서 잴 수 있는 것을 찾았다. 강서는 바람밭이 내는 와트를, 구로는 지켜 낸 보증의 수를 쟀다. 영등포는 아무도 재지 않고 장터 집안들의 차례를 돌렸다.
+**지도자를 못 뽑다.** 남서쪽 도시들은 하나로 묶이지 않았다. 누구 기술이 더 높은지 따질 방법이 없으니 지도자도 못 뽑았다. 도시마다 제 일에서 셀 수 있는 것을 찾았다. 도시의 첫 계약서에 도장을 찍은 집안들이 도장 집안이 되어 대주회를 열고, 표 대신 이름값을 맞춰 종신 우두머리를 세웠다. 강서는 와트를 채운 철을, 구로는 지켜 낸 보증의 수를, 영등포는 깨지 않은 장터 자리 계약과 화덕에 넣은 킬로를 셌다.
 
 <a id="annals-2056"></a>
 
@@ -635,7 +635,7 @@ Seoul''s great events come round every thirty years. The cycle for tearing down 
 
 **바람과 땅속 열.** 사람들은 땅속 열 펌프와 바람틀로 넘어가야 했다. 그 기술을 가진 남서쪽 도시들의 힘이 커졌다. 바람틀을 세우고 고치는 손, 열 펌프의 압축기를 다루는 손이 서울에서 가장 귀한 손이 됐다.
 
-**관악 공작.** 이 무렵 관악의 우두머리 집안이 공작을 칭했다. 강 건너 정부가 구를 공작령이라 부르며 국회의원에게 쥐여 주자, 관악은 같은 말을 가져와 정부와 같은 자리에 앉겠다고 선언했다. 다른 도시들은 제 일에서 나온 이름을 그대로 썼다.
+**관악 공작.** 이 무렵 관악의 우두머리 집안이 공작을 칭했다. 강 건너 정부가 구를 공작령이라 부르며 국회의원에게 쥐여 주자, 관악은 같은 말을 가져와 정부와 같은 자리에 앉겠다고 선언했다. 같은 때 관악의 대주회는 우두머리 자리를 그 집안 안에서 물리도록 법을 바꿨다. 이것을 도장을 묶었다고 한다. 다른 도시들은 제 일에서 나온 이름을 그대로 썼다.
 
 **언 땅.** 2066년 무렵 언 땅의 경계는 지하 22미터쯤까지 내려왔다.
 
@@ -846,7 +846,7 @@ People of the same clan within the same faction are called a **house**. The hous
 | Polity | What is inherited | Who receives it |
 |---|---|---|
 | Government | The seat of a Member of the National Assembly. Elections for the National Assembly remain, but the households that can gather the votes are fixed. A Stationmaster''s seat also passes within the Stationmaster''s house. Dong Chiefs are appointed by the Member of the National Assembly | The heir of the house. The President''s seat goes to the heir of the President''s house |
-| The Free Cities | It differs from city to city. In Yangcheon and Gwanak a house inherits; in Gangseo the workbench holders of the wind fields decide, in Guro the count of sureties kept, in Geumcheon the edge crews from among those who have crossed the rim and come back, in Dongjak the crossing chiefs, and in Yeongdeungpo the turn of the market houses. Workbenches are inherited within the holder''s house | A child who has shown the skill. An eldest child who cannot show the skill does not inherit the bench |
+| The Free Cities | The head''s seat is held for life, not inherited. When the head dies or steps down, the masters'' meeting of the seal houses that share the city''s seal reckons each candidate''s name-worth and seats the highest; what is counted differs from city to city. Yangcheon, with only one seal house, and Gwanak, which bound the seal, take their heads from one house. Losing houses keep their workbench and seal. Workbenches are inherited within the holder''s house | A child who has shown the skill. An eldest child who cannot show the skill does not inherit the bench |
 | Arc | The seat of the Head of a Near House. It follows blood, but the heir must have two or more parts. The Hierophant can appoint and remove a Near House | The heir within the Near House. Whether blood or steel comes first is the daily politics of Arc |
 
 Among the people on record, only three groups of living people are recorded as one household. Sin Jong-mok and his son Sin Jun are one of them. The records of clans and generation names are in [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/).
@@ -983,7 +983,7 @@ T1 자리는 스물일곱이다. 정부 열다섯(국회의원 열넷과 종신 
 | 정체 | 무엇이 대물림되나 | 누가 받나 |
 |---|---|---|
 | 정부 | 국회의원의 의석. 국회의원 선거는 남아 있지만 표를 모을 수 있는 집안은 정해져 있다. 역장 자리도 역장 집안 안에서 물린다. 동장은 국회의원이 임명한다 | 집안의 후계. 대통령의 의석은 대통령 집안의 후계에게 간다 |
-| 자유도시들 | 도시마다 다르다. 양천과 관악은 집안이 대물리고, 강서는 바람밭의 작업대주들이, 구로는 지킨 보증의 수가, 금천은 테두리를 넘었다 돌아온 사람 가운데서 경계조가, 동작은 건널목장들이 정하고, 영등포는 장터 집안의 차례가 정한다. 작업대는 대주 집안이 대물린다 | 손을 보인 자식. 손을 보이지 못한 맏이는 대를 잇지 못한다 |
+| 자유도시들 | 우두머리 자리는 대물림이 아니라 종신이다. 우두머리가 죽거나 물러나면 도시의 도장을 나눠 쥔 도장 집안들의 대주회가 후보마다 이름값을 맞춰 가장 높은 사람을 세우고, 무엇을 세느냐는 도시마다 다르다. 도장 집안이 하나뿐인 양천과 도장을 묶은 관악은 한 집안에서 우두머리가 나온다. 진 집안도 작업대와 도장을 지킨다. 작업대는 대주 집안이 대물린다 | 손을 보인 자식. 손을 보이지 못한 맏이는 대를 잇지 못한다 |
 | 아크 | 곁집장의 자리. 피를 따르되 부위가 둘 이상이어야 한다. 교주가 곁집을 정하고 물릴 수 있다 | 곁집 안의 후계. 피와 쇠 가운데 무엇이 앞서는지가 아크의 일상 정치다 |
 
 기록에 오른 사람 가운데 산 사람끼리 한 집으로 기록된 곳은 셋이다. 신종목과 그의 아들 신준이 그 하나다. 씨족과 항렬의 기록은 [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/)에 있다.
@@ -2212,6 +2212,9 @@ The names the Government inherited from the Republic of Korea (the National Asse
 | Stationmaster, Dong Chief | The Government seats over a station and a dong | Proposed |
 | Station Foreman, Section Chief | The Free City seats over a station and a section. A section groups a few stations and the tunnels between them | Proposed |
 | Wind Keeper, Depot Master, Market Master, Works Master, Edge Warden, Ferry Keeper | The heads of Gangseo, Yangcheon, Yeongdeungpo, Guro, Geumcheon and Dongjak. Each title comes from the work that city lives by | Proposed |
+| seal house, masters'' meeting | The workbench houses that share a Free City''s seal, and the gathering of their bench masters. The masters'' meeting sets the city''s law and seats its head for life | Proposed |
+| name-worth, hearth kilos | A candidate''s reckoning (kept sureties, age, hearth kilos), and the electricity a candidate gives to the meeting''s heat and meals. Hearth kilos burn, win or lose | Proposed |
+| outside post, binding the seal | A workbench''s foothold in another city''s station; the masters'' meeting tying the head''s seat to one house (Gwanak) | Proposed |
 | Bench Keeper, Shelter Head, Head of the Near House | The Arc seats over a station, a shelter and a district | Proposed |
 | the Seat of the Four Near Houses | The gathering of the four Heads of the Near Houses before the Hierophant | Proposed |
 
@@ -2404,6 +2407,9 @@ One district is one duchy. The district names are the real names, and what each 
 | 역장, 동장 | Stationmaster, Dong Chief | 정부의 역과 동을 맡은 자리 | 제안 |
 | 역반장, 구간장 | Station Foreman, Section Chief | 자유도시의 역과 구간을 맡은 자리. 구간은 역 몇 곳과 그 사이 터널을 묶은 단위다 | 제안 |
 | 바람지기, 기지장, 장주, 공장장, 경계장, 나루지기 | Wind Keeper, Depot Master, Market Master, Works Master, Edge Warden, Ferry Keeper | 강서, 양천, 영등포, 구로, 금천, 동작의 우두머리. 칭호는 그 도시가 먹고사는 일에서 나왔다 | 제안 |
+| 도장 집안, 대주회 | seal house, masters'' meeting | 자유도시의 도장을 나눠 쥔 작업대 집안과 그 대주들의 모임. 대주회가 도시의 법을 정하고 종신 우두머리를 세운다 | 제안 |
+| 이름값, 화덕 킬로 | name-worth, hearth kilos | 우두머리 후보의 셈(지킨 보증, 나이, 화덕 킬로)과 후보가 대주회의 열과 끼니에 대는 전기. 화덕 킬로는 이기든 지든 탄다 | 제안 |
+| 바깥 자리, 도장 묶기 | outside post, binding the seal | 작업대가 다른 도시의 역에 둔 거점, 대주회가 우두머리 자리를 한 집안에 묶는 일(관악) | 제안 |
 | 정비장, 대피소장, 곁집장 | Bench Keeper, Shelter Head, Head of the Near House | 아크의 역, 대피소, 구를 맡은 자리 | 제안 |
 | 네 곁집 자리 | the Seat of the Four Near Houses | 곁집장 넷이 교주 앞에 모이는 자리 | 제안 |
 
@@ -6997,15 +7003,15 @@ The Free Cities are not one power. They are cities independent of one another, a
 
 | City | Title | How chosen |
 |---|---|---|
-| Gwanak | Duke | Handed down in I Ilseop''s household. When the Government across the river called its districts duchies and gave them to its Members, Gwanak''s leading household took the same word and declared that it sat at the same height as the Government |
-| Dongjak | Ferry Keeper | Chosen by the Crossing Chiefs of the five crossings from among themselves. A Ferry Keeper is Ferry Keeper only while holding a crossing |
-| Yeongdeungpo | Market Master | Market households take it in turn, three years each, in a fixed order |
-| Guro | Works Master | The workbench owner who has kept the most sureties |
-| Geumcheon | Edge Warden | Chosen by the rim crew from among those who have crossed the rim and come back. For life |
-| Yangcheon | Depot Master | Handed down in the household that first revived the Sinjeong depot |
-| Gangseo | Wind Keeper | Chosen by the workbench owners of the wind fields. For life, but steps down if the wind fields fail to deliver the watts written in the contract for two long-dark halves running |
+| Gwanak | Duke | The masters'' meeting bound the seal, so it is handed down in I Ilseop''s household. When the Government across the river called its districts duchies and gave them to its Members, Gwanak''s leading household took the same word and declared that it sat at the same height as the Government |
+| Dongjak | Ferry Keeper | Set by name-worth at the masters'' meeting of the seal houses that hold the five crossings. A Ferry Keeper is Ferry Keeper only while holding a crossing |
+| Yeongdeungpo | Market Master | Set by name-worth at the masters'' meeting of five market seal houses. For life |
+| Guro | Works Master | The bench owner of the four seal houses with the most carvings on the surety board. Steps down on breaking a surety |
+| Geumcheon | Edge Warden | Set by name-worth from among those of the two seal houses who have crossed the rim and come back. For life |
+| Yangcheon | Depot Master | The household that first revived the Sinjeong depot is the only seal house, so it is set by name-worth within that household |
+| Gangseo | Wind Keeper | Set by name-worth at the masters'' meeting of five wind-field seal houses. For life, but steps down if the wind fields fail to deliver the watts written in the contract for two long-dark halves running |
 
-There is a reason each city chooses its head differently. With no way to judge whose skill is higher, the seven cities as a whole could not choose a leader. So each city found something its own work could measure. Gangseo measures watts, Guro the number of sureties kept, Geumcheon coming back alive from the rim, Dongjak the crossings held. Yangcheon and Gwanak, which found nothing to measure, hand the post down in a household. Yeongdeungpo measures nothing and rotates.
+The seven cities set their heads on the same skeleton. The bench owners of the seal houses, the houses that share the city''s seal, gather at the masters'' meeting and, without votes, reckon each candidate''s name-worth (kept sureties, age, and hearth kilos given to the meeting) and seat the highest. The head serves for life, and losing houses keep their workbench and seal. With no way to judge whose skill is higher, the seven cities as a whole could not choose a leader. So each city found something its own work could count and made it the yardstick of name-worth. Gangseo counts seasons that met their watts, Yangcheon motors brought back to life, Yeongdeungpo market place contracts never broken and hearth kilos, Guro the carvings on the surety board, Geumcheon the times a person came back alive from the rim, Dongjak freight carried across without loss, Gwanak the depth of wells dug. More is in [Free City Society](/wiki/Free-City-Society/#choosing-heads).
 
 ### Section Chief and Station Foreman
 
@@ -7157,15 +7163,15 @@ Of the titles on this page, Member of the National Assembly, Duke of Gwanak and 
 
 | 도시 | 칭호 | 정하는 법 |
 |---|---|---|
-| 관악 | 공작 | 이일섭의 집안이 대물린다. 강 건너 정부가 구를 공작령이라 부르며 국회의원에게 쥐여 주자, 관악의 우두머리 집안이 같은 말을 가져와 정부와 같은 자리에 앉겠다고 선언했다 |
-| 동작 | 나루지기 | 다섯 건널목의 건널목장이 저희 가운데서 뽑는다. 제 건널목을 쥐고 있는 동안만 나루지기다 |
-| 영등포 | 장주 | 장터 집안들이 세 해씩 정해진 차례로 돌아가며 맡는다 |
-| 구로 | 공장장 | 지킨 보증이 가장 많은 작업대주가 맡는다 |
-| 금천 | 경계장 | 테두리를 넘었다 돌아온 사람 가운데서 경계조가 뽑는다. 종신이다 |
-| 양천 | 기지장 | 신정 기지를 처음 되살린 집안이 대물린다 |
-| 강서 | 바람지기 | 바람밭의 작업대주들이 뽑는다. 종신이지만 계약서에 적은 와트를 긴 밤 철 두 번 잇달아 채우지 못하면 물러난다 |
+| 관악 | 공작 | 대주회가 도장을 묶어 이일섭의 집안이 대물린다. 강 건너 정부가 구를 공작령이라 부르며 국회의원에게 쥐여 주자, 관악의 우두머리 집안이 같은 말을 가져와 정부와 같은 자리에 앉겠다고 선언했다 |
+| 동작 | 나루지기 | 다섯 건널목을 쥔 도장 집안의 대주회가 이름값으로 세운다. 제 건널목을 쥐고 있는 동안만 나루지기다 |
+| 영등포 | 장주 | 장터 도장 집안 다섯의 대주회가 이름값으로 세운다. 종신이다 |
+| 구로 | 공장장 | 도장 집안 넷의 대주 가운데 보증판의 수가 가장 많은 사람이 선다. 보증을 깨면 물러난다 |
+| 금천 | 경계장 | 도장 집안 둘에서 테두리를 넘었다 돌아온 사람 가운데 이름값으로 세운다. 종신이다 |
+| 양천 | 기지장 | 신정 기지를 처음 되살린 집안이 하나뿐인 도장 집안이라, 그 집안 안에서 이름값으로 세운다 |
+| 강서 | 바람지기 | 바람밭 도장 집안 다섯의 대주회가 이름값으로 세운다. 종신이지만 계약서에 적은 와트를 긴 밤 철 두 번 잇달아 채우지 못하면 물러난다 |
 
-도시마다 우두머리를 정하는 법이 다른 데는 까닭이 있다. 누구 기술이 더 높은지 따질 방법이 없으니 일곱 도시 전체로는 지도자를 뽑지 못했다. 그래서 도시마다 제 일에서 잴 수 있는 것을 찾았다. 강서는 와트를, 구로는 지켜 낸 보증의 수를, 금천은 테두리에서 살아 돌아온 일을, 동작은 쥔 건널목을 잰다. 잴 것을 찾지 못한 양천과 관악은 집안이 대물린다. 영등포는 아무도 재지 않고 차례를 돌린다.
+일곱 도시는 우두머리를 같은 뼈대로 세운다. 도시의 도장을 나눠 쥔 도장 집안들의 대주가 대주회에 모여, 표를 던지지 않고 후보마다 이름값(지킨 보증, 나이, 대주회에 댄 화덕 킬로)을 맞춰 가장 높은 사람을 세운다. 우두머리는 종신이고, 진 집안도 작업대와 도장을 잃지 않는다. 누구 기술이 더 높은지 따질 방법이 없으니 일곱 도시 전체로는 지도자를 뽑지 못했다. 그래서 도시마다 제 일에서 셀 수 있는 것을 찾아 이름값의 잣대로 삼았다. 강서는 와트를 채운 철을, 양천은 되살린 모터를, 영등포는 깨지 않은 장터 자리 계약과 화덕 킬로를, 구로는 보증판의 수를, 금천은 테두리에서 살아 돌아온 횟수를, 동작은 잃지 않고 넘긴 짐을, 관악은 판 우물의 깊이를 센다. 자세한 것은 [자유도시들의 사회](/wiki/Free-City-Society/#choosing-heads)에 있다.
 
 ### 구간장과 역반장
 
@@ -7959,7 +7965,7 @@ Things that ran on for a hundred years all come due this winter at once. The gre
 
 The water supply contract trades what the Government puts in, sites, hands and goods, for what the Free Cities put in, the maintenance and parts of pumps and water wheels. The Free Cities have no collective name, so the contract is not one contract either. Many sheets, each made between the Government and one city, are sealed together at one contract meeting. The first contract was in 2066, the second in 2096. Their history is in [Century Annals 2026-2126](/wiki/Century-Annals/).
 
-- **The Host.** The city that calls the contract meeting is Yeongdeungpo. Yeongdeungpo''s head, the Market Master, is Host by turn. The market families hold that seat three years at a time in a fixed order, so the order decided who sits in this seat that comes once in thirty years.
+- **The Host.** The city that calls the contract meeting is Yeongdeungpo. Yeongdeungpo''s head, the Market Master, is Host. The Market Master is a head for life, seated by name-worth at the masters'' meeting of the five market seal houses, so the meeting''s reckoning decided who sits in this seat that comes once in thirty years.
 - **The place.** The empty National Assembly building on Yeouido. When the river froze, the Assembly moved to the Gwanghwamun government complex, and the Yeouido building became Yeongdeungpo ground. The rooms above ground are minus 18 and go unused; the snow-buried lower floors and the level of National Assembly station on Line 9 are heated instead. Government people enter, as guests, the building their forebears left, and stamp their seals.
 - **The way there.** Government people come through the Mapo-Yeouinaru under-river tunnel. Arc people come from Gubanpo past Dongjak along Line 9. The Arc''s way to the contract meeting passes Dongjak''s crossing.
 - **No vote.** What is made at the meeting is many contract sheets, and a sheet binds only those who stamped it. Before stamping, anyone may leave.
@@ -8107,7 +8113,7 @@ Where other named people stand is in [People, Factions and Trades](/wiki/Charact
 
 급수계약은 정부가 내는 자리와 일손과 물자를, 자유도시들이 내는 펌프와 수차의 정비와 부품과 맞바꾸는 약속이다. 자유도시들에는 묶는 이름이 없으니 계약도 하나가 아니다. 정부와 도시 하나하나가 맺는 계약 여러 장을 한 계약회에서 함께 도장 찍는다. 첫 계약은 2066년, 두 번째는 2096년이었다. 그 내력은 [백 년 연표](/wiki/Century-Annals/)에 있다.
 
-- **자리주인.** 계약회를 여는 도시는 영등포다. 영등포의 우두머리인 장주가 차례대로 자리주인을 맡는다. 장주 자리는 장터 집안들이 세 해씩 정해진 차례로 돌아가며 맡으므로, 서른 해에 한 번 오는 이 자리에 누가 앉느냐는 차례가 정했다.
+- **자리주인.** 계약회를 여는 도시는 영등포다. 영등포의 우두머리인 장주가 자리주인을 맡는다. 장주는 장터 도장 집안 다섯의 대주회가 이름값으로 세운 종신 우두머리이니, 서른 해에 한 번 오는 이 자리에 누가 앉느냐는 대주회의 셈이 정했다.
 - **자리.** 여의도의 빈 국회의사당이다. 강이 얼자 국회는 광화문 청사로 옮겼고, 여의도 의사당은 영등포 땅이 됐다. 지상의 방은 영하 18도라 쓰지 않고, 눈에 묻힌 아래층과 9호선 국회의사당역 층을 데워 쓴다. 정부 사람은 제 조상이 떠난 건물에 손님으로 들어와 도장을 찍는다.
 - **오는 길.** 정부 사람은 마포–여의나루 강 밑 터널로 온다. 아크 사람은 구반포에서 동작을 지나 9호선으로 온다. 아크가 계약회에 오는 길은 동작의 건널목을 지난다.
 - **표결이 없다.** 계약회에서 맺는 것은 계약서 여러 장이고, 장 하나는 거기에 도장을 찍은 쪽만 묶는다. 도장을 찍기 전이면 누구든 자리를 떠날 수 있다.
@@ -10725,13 +10731,13 @@ The Free Cities are not one power. Each city is its own power and holds its own 
 
 | City (district) | Head''s title | How the head is chosen | Seat station | Stations | Sections | People (2126) | Livelihood |
 |---|---|---|---|---|---|---|---|
-| Gangseo | Wind Keeper | Elected by the wind-field bench owners. For life, but steps down if the wind fields fail to deliver the contracted watts | Gimpo Int''l Airport | 18 | 4 | About 17,000 | Wind-machine electricity, wide light-fields |
-| Yangcheon | Depot Master | Handed down within one depot family | Sinjeongnegeori | 7 | 2 | About 4,200 | Rebuilding motors and wheels at the Sinjeong depot, track carts |
-| Yeongdeungpo | Market Master | The market families take turns three years at a time in a fixed order | Yeongdeungpo | 18 | 4 | About 20,600 | The great market, water from the Yangpyeong-dong intake, the contract meeting seat |
-| Guro | Works Master | The bench owner with the most sureties kept | Guro | 9 | 2 | About 9,600 | Parts and pumps from the old factory sites and the Line 1 depot |
-| Geumcheon | Edge Warden | Chosen by the border crews from among those who crossed the rim and came back | Gasan Digital Complex | 3 | 1 | About 3,200 | Power cores brought from outside, well-drilling machines |
-| Dongjak | Ferry Keeper | Chosen by the crossing chiefs from among themselves | Noryangjin | 14 | 4 | About 14,000 | Crossing tolls, fish from under the ice |
-| Gwanak | Duke | Handed down in I Ilseop''s family | Sillim | 8 | 2 | About 6,200 | Firewood and wood fibre from Gwanaksan, drilling the mountain rock |
+| Gangseo | Wind Keeper | Set by name-worth at the masters'' meeting of five wind-field seal houses. For life, but steps down if the wind fields fail to deliver the contracted watts | Gimpo Int''l Airport | 18 | 4 | About 17,000 | Wind-machine electricity, wide light-fields |
+| Yangcheon | Depot Master | The depot family is the only seal house, so it is set by name-worth within that family. For life | Sinjeongnegeori | 7 | 2 | About 4,200 | Rebuilding motors and wheels at the Sinjeong depot, track carts |
+| Yeongdeungpo | Market Master | Set by name-worth at the masters'' meeting of five market seal houses. For life | Yeongdeungpo | 18 | 4 | About 20,600 | The great market, water from the Yangpyeong-dong intake, the contract meeting seat |
+| Guro | Works Master | The bench owner of the four seal houses with the most carvings on the surety board. For life, but steps down on breaking a surety | Guro | 9 | 2 | About 9,600 | Parts and pumps from the old factory sites and the Line 1 depot |
+| Geumcheon | Edge Warden | Set by name-worth from among those of the two seal houses who crossed the rim and came back. For life | Gasan Digital Complex | 3 | 1 | About 3,200 | Power cores brought from outside, well-drilling machines |
+| Dongjak | Ferry Keeper | Set by name-worth at the masters'' meeting of five crossing seal houses. While holding their crossing | Noryangjin | 14 | 4 | About 14,000 | Crossing tolls, fish from under the ice |
+| Gwanak | Duke | The masters'' meeting bound the seal, so it is handed down in I Ilseop''s family | Sillim | 8 | 2 | About 6,200 | Firewood and wood fibre from Gwanaksan, drilling the mountain rock |
 
 - The title Duke of Gwanak, and that I Ilseop is the present Duke of Gwanak, are settled. The titles of the other six cities come from the work each lives by, and are not yet settled.
 - When the Government across the river called its districts duchies and handed them to Members of the National Assembly, Gwanak took the same word and declared it would sit in the same seat as the Government. So when Gwanak contracts with the Government, it insists on stamping "duchy to duchy".
@@ -10900,13 +10906,13 @@ Member of the National Assembly, the life-long seat of the President, Duke of Gw
 
 | 도시(구) | English | 우두머리 칭호 | 우두머리를 정하는 법 | 자리 역 | 역 수 | 구간 | 사람(2126) | 먹고사는 일 |
 |---|---|---|---|---|---|---|---|---|
-| 강서 | Gangseo-gu | 바람지기 | 바람밭 작업대주들이 뽑는다. 종신이지만 바람밭이 계약한 와트를 못 지키면 물러난다 | 김포공항 | 18 | 4 | 약 17,000 | 바람틀 전기, 넓은 빛밭 |
-| 양천 | Yangcheon-gu | 기지장 | 기지 집안 하나가 대물린다 | 신정네거리 | 7 | 2 | 약 4,200 | 신정 차량기지의 모터·바퀴 재생, 궤도 수레 |
-| 영등포 | Yeongdeungpo-gu | 장주 | 장터 집안들이 세 해씩 정해진 차례로 돌아가며 맡는다 | 영등포 | 18 | 4 | 약 20,600 | 큰 장터, 양평동 취수구의 물, 계약회 자리 |
-| 구로 | Guro-gu | 공장장 | 지킨 보증이 가장 많은 작업대주가 맡는다 | 구로 | 9 | 2 | 약 9,600 | 옛 공장 터와 1호선 차량기지의 부품, 펌프 |
-| 금천 | Geumcheon-gu | 경계장 | 테두리를 넘었다 돌아온 사람 가운데서 경계조가 뽑는다 | 가산디지털단지 | 3 | 1 | 약 3,200 | 바깥에서 캐 오는 동력 덩이, 우물 굴착 기계 |
-| 동작 | Dongjak-gu | 나루지기 | 건널목장들이 저희 가운데서 뽑는다 | 노량진 | 14 | 4 | 약 14,000 | 건널목 통행 몫, 얼음 밑 물고기 |
-| 관악 | Gwanak-gu | 공작 | 이일섭의 집안이 대물린다 | 신림 | 8 | 2 | 약 6,200 | 관악산의 땔감과 나무 섬유, 산 바위 굴착 |
+| 강서 | Gangseo-gu | 바람지기 | 바람밭 도장 집안 다섯의 대주회가 이름값으로 세운다. 종신이지만 바람밭이 계약한 와트를 못 지키면 물러난다 | 김포공항 | 18 | 4 | 약 17,000 | 바람틀 전기, 넓은 빛밭 |
+| 양천 | Yangcheon-gu | 기지장 | 도장 집안이 기지 집안 하나뿐이라 그 집안 안에서 이름값으로 세운다. 종신 | 신정네거리 | 7 | 2 | 약 4,200 | 신정 차량기지의 모터·바퀴 재생, 궤도 수레 |
+| 영등포 | Yeongdeungpo-gu | 장주 | 장터 도장 집안 다섯의 대주회가 이름값으로 세운다. 종신 | 영등포 | 18 | 4 | 약 20,600 | 큰 장터, 양평동 취수구의 물, 계약회 자리 |
+| 구로 | Guro-gu | 공장장 | 도장 집안 넷의 대주 가운데 보증판의 수가 가장 많은 사람이 선다. 종신이지만 보증을 깨면 물러난다 | 구로 | 9 | 2 | 약 9,600 | 옛 공장 터와 1호선 차량기지의 부품, 펌프 |
+| 금천 | Geumcheon-gu | 경계장 | 도장 집안 둘에서 테두리를 넘었다 돌아온 사람 가운데 이름값으로 세운다. 종신 | 가산디지털단지 | 3 | 1 | 약 3,200 | 바깥에서 캐 오는 동력 덩이, 우물 굴착 기계 |
+| 동작 | Dongjak-gu | 나루지기 | 건널목 도장 집안 다섯의 대주회가 이름값으로 세운다. 제 건널목을 쥐는 동안 | 노량진 | 14 | 4 | 약 14,000 | 건널목 통행 몫, 얼음 밑 물고기 |
+| 관악 | Gwanak-gu | 공작 | 대주회가 도장을 묶어 이일섭의 집안이 대물린다 | 신림 | 8 | 2 | 약 6,200 | 관악산의 땔감과 나무 섬유, 산 바위 굴착 |
 
 - 관악 공작이라는 칭호와 이일섭이 지금의 관악 공작이라는 것은 확정이다. 다른 여섯 도시의 칭호는 그 도시가 먹고사는 일에서 나왔고, 아직 확정되지 않았다.
 - 관악은 강 건너 정부가 구를 공작령이라 부르며 국회의원에게 쥐여 주자, 같은 말을 가져와 정부와 같은 자리에 앉겠다고 선언했다. 그래서 관악은 정부와 계약할 때 "공작령 대 공작령"으로 도장을 찍기를 고집한다.
@@ -11559,7 +11565,7 @@ The Government counts in **meals**, the Free Cities in **kilos**. One meal is a 
 | Dongjak | Passage and escort for work crews and freight crossing the Noryangjin and Dongjak bridges | Takes its passage share in labour and fibre |
 | Yeongdeungpo | The meeting place, reconciling the sheets'' reckonings, part of the water from the Yangpyeong-dong intake | Pitch fees, labour |
 
-The Host of this meeting is Yeongdeungpo''s Market Master; the market houses'' three-year rota has come round that way. The place is again the Assembly building at Yeouido. Government people come through the Mapo–Yeouinaru under-river tunnel; Arc people come from Gubanpo through Dongjak on Line 9. Also at stake:
+The Host of this meeting is Yeongdeungpo''s Market Master, seated for life by name-worth at the masters'' meeting of the five market seal houses. The place is again the Assembly building at Yeouido. Government people come through the Mapo–Yeouinaru under-river tunnel; Arc people come from Gubanpo through Dongjak on Line 9. Also at stake:
 
 - Over the next thirty years the wells will sink about another 9 metres. Wells of 60-80 metres must be re-dug to 70-90. Gwanak, with its drilling crews, and Geumcheon, with its drilling rigs, are the most expensive hands in this contract.
 - The Yangpyeong-dong intake gives less. Yeongdeungpo must push the intake further out toward the deep channel, and for that it needs Government labour.
@@ -11697,7 +11703,7 @@ Of the one hundred and twenty-six generation lines that share a generation sylla
 | 동작 | 작업조와 짐이 노량진·동작 다리로 오가는 통행과 호위 | 통행 몫을 일손과 섬유로 받는다 |
 | 영등포 | 계약회 자리, 장의 셈 맞추기, 양평동 취수구의 물 일부 | 자릿세, 일손 |
 
-이번 계약회의 자리주인은 영등포의 장주다. 장터 집안들이 세 해씩 돌아가며 맡는 차례가 그렇게 돌아왔다. 자리는 이번에도 여의도 의사당이다. 정부 사람은 마포–여의나루 강 밑 터널로 오고, 아크 사람은 구반포에서 동작을 지나 9호선으로 온다. 그 밖에 걸린 것은 이렇다.
+이번 계약회의 자리주인은 영등포의 장주다. 장터 도장 집안 다섯의 대주회가 이름값으로 세운 종신 장주다. 자리는 이번에도 여의도 의사당이다. 정부 사람은 마포–여의나루 강 밑 터널로 오고, 아크 사람은 구반포에서 동작을 지나 9호선으로 온다. 그 밖에 걸린 것은 이렇다.
 
 - 우물은 다음 서른 해 동안 9미터쯤 더 내려간다. 60~80미터 우물을 70~90미터로 다시 파야 한다. 굴착조를 가진 관악과 굴착 틀을 가진 금천이 이번 계약에서 가장 비싼 손이다.
 - 양평동 취수구의 물이 준다. 영등포는 취수구를 깊은 물길 쪽으로 더 내밀어야 하고, 그러려면 정부의 일손이 필요하다.
@@ -12882,7 +12888,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 The seven districts south-west of the Han, Gangseo, Yangcheon, Yeongdeungpo, Guro, Geumcheon, Dongjak and Gwanak, hold seven cities. The cities are independent of one another; each is its own power and holds its own duchy. No single person stands above the seven, and there is no name binding them. People say "the Free Cities" or "the south-western cities", and call one city by its district name: "Guro people", "the Gwanak side", "Dongjak people". In official papers and contracts a district name may take "City", as in "Guro City".
 
-Most of their people are engineers who trade goods and skill. There was no way to tell whose skill was greater, so no leader of all seven was ever chosen. Instead they bargained, and the promises of the bargaining piled up into cities. The Government''s clerks never reached the south-west. What was there instead were the factory sites of Guro and Gasan, the warehouses of Yeongdeungpo and Yeouido, and the depot workshops of Sinjeong and Guro. A station with good water filters needed a station that could wind motors, and a station that wound motors needed a station with spare parts.
+Most of their people are engineers who trade goods and skill. There was no way to tell whose skill was greater, so no leader of all seven was ever chosen. Instead they bargained, and the promises of the bargaining piled up into cities. The Government''s clerks never reached the south-west. What was there instead were the factory sites of Guro and Gasan, the warehouses of Yeongdeungpo and Yeouido, and the depot workshops of Sinjeong and Guro. A station with good water filters needed a station that could wind motors, and a station that wound motors needed a station with spare parts. Today, in each city the houses that share its seal hold a masters'' meeting and set the city''s head by what can be counted.
 
 What the Free Cities hold is skill and trade: the hands that build and mend wind machines, heat pumps, well pumps and water wheels, the workbenches that cut parts, and the markets and contracts that buy and sell them. The Government''s water and the Arc''s power both pass through Free City hands in the end. What they lack is people, land and firewood. About 75,000 people live in the seven cities.
 
@@ -12893,15 +12899,43 @@ Until the Arc split away in 2122, "Free City" meant any station south of the riv
 
 | City (district) | Head | How the head is chosen | Seat station | Stations | People (2126) | Lives by |
 |---|---|---|---|---|---|---|
-| Gangseo | Wind Keeper | Chosen by the bench masters of the wind fields; for life, but steps down if the figures are missed | Gimpo Int''l Airport | 18 | about 17,000 | Wind power, wide light-fields |
-| Yangcheon | Depot Master | Handed down in one depot house | Sinjeongnegeori | 7 | about 4,200 | Motor and wheel rebuilding at the Sinjeong depot, rail carts |
-| Yeongdeungpo | Market Master | The market houses take it in turn, three years each, in a fixed order | Yeongdeungpo | 18 | about 20,600 | The great market, water from the Yangpyeong-dong intake, the contract meeting place |
-| Guro | Works Master | Held by the bench master with the most kept sureties | Guro | 9 | about 9,600 | Parts from the old factory sites and the Line 1 depot, pumps |
-| Geumcheon | Edge Warden | Chosen by the edge crew from among those who have crossed the rim and come back | Gasan Digital Complex | 3 | about 3,200 | Power cores fetched from outside, well-drilling rigs |
-| Dongjak | Ferry Keeper | Chosen by the crossing chiefs from among themselves | Noryangjin | 14 | about 14,000 | Crossing shares, fish from under the ice |
-| Gwanak | Duke | Handed down in I Ilseop''s house | Sillim | 8 | about 6,200 | Firewood and wood fibre from Gwanaksan, drilling the mountain rock |
+| Gangseo | Wind Keeper | Set by name-worth at the masters'' meeting of five wind-field seal houses; for life, but steps down if the watts are missed | Gimpo Int''l Airport | 18 | about 17,000 | Wind power, wide light-fields |
+| Yangcheon | Depot Master | The depot house is the only seal house, so it is set by name-worth within that house; for life | Sinjeongnegeori | 7 | about 4,200 | Motor and wheel rebuilding at the Sinjeong depot, rail carts |
+| Yeongdeungpo | Market Master | Set by name-worth at the masters'' meeting of five market seal houses; for life | Yeongdeungpo | 18 | about 20,600 | The great market, water from the Yangpyeong-dong intake, the contract meeting place |
+| Guro | Works Master | The bench master of the four seal houses with the most carvings on the surety board; for life, but steps down on breaking a surety | Guro | 9 | about 9,600 | Parts from the old factory sites and the Line 1 depot, pumps |
+| Geumcheon | Edge Warden | Set by name-worth from among those of the two seal houses who have crossed the rim and come back; for life | Gasan Digital Complex | 3 | about 3,200 | Power cores fetched from outside, well-drilling rigs |
+| Dongjak | Ferry Keeper | Set by name-worth at the masters'' meeting of five crossing seal houses; while holding their crossing | Noryangjin | 14 | about 14,000 | Crossing shares, fish from under the ice |
+| Gwanak | Duke | The masters'' meeting bound the seal, so it is handed down in I Ilseop''s house | Sillim | 8 | about 6,200 | Firewood and wood fibre from Gwanaksan, drilling the mountain rock |
 
-There is a reason each city chooses its head by a different rule. Across all seven there was no answer to the question of whose skill was greater. So each city found something in its own work that could be measured. Gangseo measures the watts its wind fields produce; Guro the number of sureties kept; Geumcheon coming back alive from the rim; Dongjak the crossings held. Yangcheon and Gwanak, finding nothing to measure, hand the post down within a house. Yeongdeungpo measures nobody and turns the rota. These seven answers are the seven cities'' characters.
+The seven cities set their heads on the same skeleton; what differs from city to city is the yardstick. Across all seven there was no answer to the question of whose skill was greater. So each city found something in its own work that could be counted and made it the yardstick of name-worth. Gangseo counts seasons that met their watts; Yangcheon motors brought back to life; Yeongdeungpo market place contracts never broken and kilos put into the hearth; Guro the carvings on the surety board; Geumcheon the times a person came back alive from the rim; Dongjak freight carried across without loss; Gwanak the depth of wells dug. These seven yardsticks are the seven cities'' characters.
+
+<a id="choosing-heads"></a>
+## How a head is set
+
+The seven cities set their heads on the same skeleton. It is all a matter inside one city. There is no seat the seven cities fill together, and the contract meeting sets no city''s head.
+
+- **Seal houses.** The workbench houses that share the city''s seal: the houses that stamped the city''s first contract when it first stood. A city has one to five. The head stands only from among the people of the seal houses. A workbench that is not a seal house still contracts in its own name, but cannot put forward a head.
+- **The masters'' meeting.** The bench masters of the seal houses gathered at the seat station. It sets the city''s law and its large sheets, and when the head dies or steps down it sets the next head. It is not the contract meeting between cities.
+- **No votes.** The masters'' meeting reckons each candidate''s **name-worth** aloud and seats the highest. Name-worth is kept sureties, age and hearth kilos added together. The bench masters set their seals only to say the reckoning was right; they choose no one. A masters'' meeting opens with the words "Let''s reckon the name-worth".
+- **Hearth kilos.** The electricity a candidate gives to the meeting''s heat, meals and light. While the head lives, kilos staked as full packs can be taken back, but once the meeting opens they all go into the hearth and are not returned, win or lose. Free City people say, "Hearth kilos burn."
+- **Candidates.** Each seal house puts forward one person. No one under sixteen and no one whose seal is broken may stand. Anyone who has taken a post in another city or a Government or Arc title drops out too. So handing a rival bench master a good post in another city is an old move.
+- **For life.** The head serves until death. Some cities add one more condition for stepping down. The head receives the seat station, the city''s seal, the right to appoint Section Chiefs and the right to call a contract meeting. On stepping down, only those pass to the next head; the head''s own workbench stays in the house.
+- **Losing houses.** A losing house loses neither its workbench nor its seal. No one may seize another''s workbench. A losing bench master piles up sureties while waiting for the next meeting. If a seal house dies out, the other workbench house with the most kept sureties comes in as a new seal house.
+- **Outside posts.** A workshop and foothold a workbench keeps in a station of another city. Only one house''s outside post stands in one station, and how many a house may keep depends on how many hands it has. So marriage and children are the size of a house''s trade. The seal houses of one city quarrel over outside posts, but none may quarrel with the head. If the city that owns a station closes another''s outside post, the city that kept it presses this as a broken sheet. Most friction between cities starts here.
+- **Station grievance.** Even a head for life, if the grievances of station people pile up, meets Station Foremen who hold the entrances and light hours and dig in. It does not turn straight into a fight, but it grows.
+- **Binding the seal.** When the masters'' meeting changes the law so that the head''s seat passes within one house, it is called "binding the seal". A city that binds the seal changes its head''s title, and the masters'' meeting remains to set the city''s law. Today only Gwanak has bound the seal. People of other cities call Gwanak "the house that bound the seal".
+
+What differs from city to city is what counts as a kept surety, and whether hearth kilos count.
+
+| City | Seal houses | What counts as a kept surety | Hearth kilos |
+|---|---|---|---|
+| Gangseo | five wind-field houses | a long-dark half that met the watts written in the contract | counted |
+| Yangcheon | one, the depot house | a motor brought back to life that served out its surety term | not counted |
+| Yeongdeungpo | five market houses | a year without breaking a market place contract | counted double |
+| Guro | four | a carving on the surety board | not counted |
+| Geumcheon | two | a crossing of the rim and return | counted |
+| Dongjak | five crossing houses | a sheet of freight escorted across without loss | counted |
+| Gwanak | three, seal bound | the depth of wells dug | not counted |
 
 <a id="cities"></a>
 ## The cities
@@ -12911,21 +12945,21 @@ There is a reason each city chooses its head by a different rule. Across all sev
 
 Fields of wind machines stand on the open riverside plain to the west. The open riverbank catches strong wind, and the plains of Magok and Gayang have few buried buildings, so wind machines can stand there in rows. Gangseo makes the most power of any Free City and sells its surplus to Yangcheon and Yeongdeungpo through cables laid along Lines 5 and 9. The same plain suits wide light-fields, and Gangseo''s light-fields are the widest of the seven cities. The old hangars of Gimpo Int''l Airport are a salvage ground yielding light metal sheet and long girders.
 
-The bench masters of the wind fields gather to choose the Wind Keeper. Once chosen, the Wind Keeper serves for life, but steps down if the wind fields in their charge fall short of the watts written in the contracts for two long-dark halves running. Gangseo people call this "the wind changes the person". Magongnaru is joined by the Airport Railroad bridge to the Government''s Digital Media City, and Gimpo Int''l Airport, Gaehwa and Banghwa, at Seoul''s western edge, face the rim of the outside machines.
+Gangseo''s seal houses are the five houses that hold wind fields. When the Wind Keeper dies or steps down, the bench masters of the five houses gather at Gimpo Int''l Airport and reckon name-worth. When a wind field delivers the watts written in its contract each season, its house''s bench master gains name-worth. Once standing, the Wind Keeper serves for life, but steps down if the wind fields in their charge fall short of the watts written in the contracts for two long-dark halves running, and the meeting opens again. Gangseo people call this "the wind changes the person". Magongnaru is joined by the Airport Railroad bridge to the Government''s Digital Media City, and Gimpo Int''l Airport, Gaehwa and Banghwa, at Seoul''s western edge, face the rim of the outside machines.
 
 <a id="yangcheon"></a>
 ### Yangcheon: the Depot Master
 
 Yangcheon lives on the workshops and stores of the Line 2 Sinjeong depot. The wide space under the depot roof is itself a warm workshop, and the remaining trains are a store of motors, wheels, axles and steel plate. Yangcheon rewinds old motors and recuts wheels to bring them back. It also builds **rail carts**, pushed along the tunnel rails by hand or by a small motor. Almost all freight between the Free Cities moves on Yangcheon''s rail carts.
 
-It is the smallest of the seven cities. The house that first revived the depot has handed down the Depot Master''s post since the 2040s. The depot''s work is split into four shifts, and the Depot Master and four shift leaders are all of Yangcheon''s government. The Depot Master''s house ties the shift-leader posts to itself by marriage.
+It is the smallest of the seven cities. Yangcheon''s only seal house is the house that first revived the depot. So since the 2040s the Depot Master has always come from that house. It did not bind the seal; the house sharing the seal was one from the start. When the Depot Master dies, the hands of the depot house gather, with the four shift leaders sitting beside them, and reckon name-worth by the motors brought back to life that served out their surety term. The depot''s work is split into four shifts, and the Depot Master and four shift leaders are all of Yangcheon''s government. The Depot Master''s house ties the shift-leader posts to itself by marriage, which also keeps any shift leader''s house from standing as a second seal house.
 
 <a id="yeongdeungpo"></a>
 ### Yeongdeungpo: the Market Master
 
 Yeongdeungpo lives by three things. First, the largest market of the seven cities: the platforms and concourse between Yeongdeungpo and Yeongdeungpo Market are the market, and the old warehouses of Yeouido are its storehouse. Second, water: the south-western intake for river water under the ice is at Yangpyeong-dong, and Yeongdeungpo holds it. Third, the contract meeting place: the great contract meetings with the Government are almost always held by Yeongdeungpo.
 
-The market houses take the Market Master''s post in turn, three years each. The order is the one fixed when the market first opened, and nobody can change it. So who will be Host at the water supply contract, which comes once in thirty years, is decided by the rota.
+Yeongdeungpo''s seal houses are the five market houses that held places when the market first opened. When the Market Master dies or steps down, the bench masters of the five houses gather at the masters'' meeting and reckon name-worth. Yeongdeungpo counts years without breaking a market place contract, and counts hearth kilos double what other cities do. It is a market city; kilos do the talking. So Yeongdeungpo''s masters'' meeting is the hottest of the seven cities, and the five houses stake and withdraw kilos in the store the whole time a Market Master lives. The order of the five houses fixed when the market first opened still survives, but it is not the order of who becomes Market Master; it is the order of whose house hearth hosts the masters'' meeting. The Market Master serves for life, and at the water supply contract, which comes once in thirty years, whoever is Market Master at the time is Host.
 
 When the river froze, the National Assembly moved to Gwanghwamun and the Assembly building at Yeouido emptied. National Assembly station and the building above it are now Yeongdeungpo land. Yeongdeungpo holds its contract meetings with the Government in the Assembly building. It is custom, not law. The surface rooms are too cold to use; the snow-buried lower floors and the Line 9 National Assembly station level are heated and used instead. Government people come in as guests to set their seals in the building their forebears left. Mapo–Yeouinaru is the only under-river tunnel between the Government and the Free Cities, with a Government ledger checkpoint at its north mouth.
 
@@ -12934,28 +12968,28 @@ When the river froze, the National Assembly moved to Gwanghwamun and the Assembl
 
 Guro cuts parts. Guro''s workbenches make pump vanes and shafts, compressor parts for heat pumps, bearings for wind machines and blades for water wheels. Its base is the old factory sites and the Line 1 depot workshop, and the Line 7 depot at Cheonwang is its second workshop. Sindorim has only three exits, so air limits how many people it can hold, and the fan Guro means to fit next is Sindorim''s.
 
-The Works Master is the bench master with the most kept sureties. Every Guro workbench carves on a board the contracts it has made and whether it paid them off in full. This is the **surety board**. When the Works Master dies, or their bench breaks a surety even once, the bench master with the most carvings on the surety board becomes the next Works Master. Skill cannot be measured high or low, but the number of promises kept can be counted: that is Guro''s answer.
+Every Guro workbench carves on a board the contracts it has made and whether it paid them off in full. This is the **surety board**. Guro''s seal houses are four of its parts-cutting benches and pump benches. When the Works Master dies, or their bench breaks a surety even once, the bench masters of the four houses gather at Guro station and read the surety board. Guro does not count hearth kilos. As the saying "A surety is paid back by hand" goes, name-worth is only the carvings on the surety board and age, so Guro''s masters'' meeting is the shortest of the seven cities. Skill cannot be measured high or low, but the number of promises kept can be counted: that is Guro''s answer.
 
 <a id="geumcheon"></a>
 ### Geumcheon: the Edge Warden
 
 Geumcheon has the fewest stations of the seven: Gasan Digital Complex, Doksan and Geumcheon-gu Office. Pressed against the edge of Seoul, it watches the rim of the outside machines more closely than anyone and lives by that nearness. In the two or three days when a blizzard blinds the machines, its people cross the rim and strip power cores and parts from broken war machines. From the big machines salvaged at Gasan''s old factory sites it also builds well-drilling rigs. Without Geumcheon''s rigs, even Gwanak''s drilling crews cannot break the rock.
 
-The edge crew chooses the Edge Warden from among those who have crossed the rim and come back. Few have, so there are only ever two or three candidates. The Edge Warden serves for life, and the post falls vacant if the Edge Warden crosses again and does not return. The Edge Warden need not cross, but one who does not loses the edge crew''s ear. In the buried factory basements between Geumcheon''s three stations and in the abandoned stretch of Line 1 lives a band of people whose seals were broken ([G12 · Geumcheon Hands Without Surety](/wiki/Hostile-Group-G12/)). Freight and work crews on Line 1 buy the edge crew''s escort.
+Geumcheon''s seal houses are the two houses that send out the edge crews. Only someone of the two houses who has crossed the rim and come back can be Edge Warden. Senior hands of the edge crew sit in the masters'' meeting and count the stripes sewn on each candidate''s sleeve; one stripe is one kept surety. Few have crossed and come back, so there are always two candidates, and only one if one house has no one who crossed. The Edge Warden serves for life, and the post falls vacant if the Edge Warden crosses again and does not return. The Edge Warden need not cross, but one who does not loses the edge crew''s ear. In the buried factory basements between Geumcheon''s three stations and in the abandoned stretch of Line 1 lives a band of people whose seals were broken ([G12 · Geumcheon Hands Without Surety](/wiki/Hostile-Group-G12/)). Freight and work crews on Line 1 buy the edge crew''s escort.
 
 <a id="dongjak"></a>
 ### Dongjak: the Ferry Keeper
 
 Dongjak lives by its crossings. Of the thirteen joins where the polities meet, eight have an end in the Free Cities, and five of those are in Dongjak: Noryangjin (Line 1, to the Government''s Yongsan), Dongjak (Line 4, to the Government''s Ichon), Dongjak (Line 9, to the Arc''s Gubanpo), Sadang (Line 2, to the Arc''s Bangbae) and Chongshin Univ. (Isu) (Line 7, to the Arc''s Naebang). Almost everyone and everything going between the Government or the Arc and the Free Cities passes through Dongjak, and Dongjak takes a passage share from the freight. It also cuts holes in the river ice off Noryangjin and Heukseok to fish. The ice-hole market at Noryangjin is where the most fish change hands in Seoul.
 
-Each crossing has a crossing chief, and the five crossing chiefs choose the Ferry Keeper from among themselves. A Ferry Keeper is Ferry Keeper only while holding their own crossing. Dongjak''s Ferry Keeper faces the Government on the river side and the Arc on the land side. The land border with the Arc has no river, so quarrels there are most frequent, and Dongjak keeps more guard hands than any other city.
+Each crossing is held by a house, and that house''s bench master is the crossing chief. These five houses are Dongjak''s seal houses. When the Ferry Keeper dies or steps down, the five crossing chiefs gather at Noryangjin and reckon name-worth by the sheets of freight escorted across without loss. A Ferry Keeper is Ferry Keeper only while holding their own crossing. Dongjak''s Ferry Keeper faces the Government on the river side and the Arc on the land side. The land border with the Arc has no river, so quarrels there are most frequent, and Dongjak keeps more guard hands than any other city.
 
 <a id="gwanak"></a>
 ### Gwanak: the Duke
 
 Gwanak lives by Gwanaksan. The forest on the near slopes was all cut by the 2060s, and what remains is on the outer slopes toward the rim. Gwanak''s wood crews climb to those slopes and cut dead trees. As firewood, wood is a luxury; as fibre, it is the raw stuff of fibre sugar. Gwanak''s drilling crews bore through the mountain''s granite to dig deep wells.
 
-Gwanak is held by I Ilseop''s house as a duchy. Around 2056-2065 the leading house of Gwanak watched the Government across the river call its districts duchies and hand them to Members of the National Assembly, took the same word, and declared that it sat in the same seat as the Government. So Gwanak insists on sealing contracts with the Government "duchy to duchy". People of the other cities half laugh at this insistence and half envy it. The Duke''s post is handed down within that house; I Ilseop was born in 2092 and is thirty-four in 2126. Under the Duke are two Section Chiefs, the wood crew chiefs, and a mountain watch. Gwanak touches Seocho by land but has no rail link, and Namtaeryeong and Gwanaksan, at Seoul''s southern edge, face the rim.
+Gwanak is held by I Ilseop''s house as a duchy. Around 2056-2065 the leading house of Gwanak watched the Government across the river call its districts duchies and hand them to Members of the National Assembly, took the same word, and declared that it sat in the same seat as the Government. At the same time Gwanak''s masters'' meeting changed the law so that the head''s seat passes within that house. Gwanak is the city that bound the seal, and the custom that a city that binds the seal changes its head''s title began then. So Gwanak insists on sealing contracts with the Government "duchy to duchy". People of the other cities half laugh at this insistence and half envy it. Gwanak too has three seal houses: I Ilseop''s house, the house that sends out the wood crews, and the house that holds the drilling bench. The masters'' meeting remains and sets Gwanak''s law, and the other two houses do not forget the bound seal. When a Duke dies, the masters'' meeting reckons name-worth among the people of the ducal house by the depth of wells dug. I Ilseop was born in 2092 and is thirty-four in 2126. Under the Duke are two Section Chiefs, the wood crew chiefs, and a mountain watch. Gwanak touches Seocho by land but has no rail link, and Namtaeryeong and Gwanaksan, at Seoul''s southern edge, face the rim.
 
 <a id="contract-meeting"></a>
 ## The contract meeting
@@ -12982,6 +13016,8 @@ The Free Cities are not equal either.
 | Workbench houses | Bench masters and their families | The right to contract and issue surety tags in their own name; the bench''s seal |
 | Hands | Engineers attached to a bench | Wages and shares; the right to contract under their bench master''s surety |
 | Labourers | Those who have not shown a skill: people who ran from the Government ledger, people who lost their seal, people come back from the Arc | Wages. They cannot contract in their own name |
+
+Among the workbench houses, those that share the city''s seal are the seal houses. A seal house sits at the masters'' meeting and can put forward a head. It is not a separate layer: if a seal house dies out, another workbench house fills its place.
 
 <a id="reckoning"></a>
 ## Contracts, sureties and reckoning
@@ -13022,7 +13058,7 @@ The water supply contract is a thirty-year promise trading the north''s sites, l
 
 - **The first contract, 2066.** Held in the Assembly building at Yeouido; six cities sealed. Gwanak withdrew its seal, saying it could not set a Duke''s seal beneath a Member of the National Assembly''s.
 - **The second contract, 2096.** All seven cities sealed, because the Government agreed to write the name "Duchy of Gwanak" on Gwanak''s sheet. Several Gangnam shelters also sealed as Free Cities. It was the last time.
-- **The third contract, 2126.** By the rota, the Host is Yeongdeungpo''s Market Master, and the place is the Assembly building at Yeouido. The Arc sits down for the first time. The wells will sink about another 9 metres over the next thirty years, so Gwanak, with its drilling crews, and Geumcheon, with its rigs, are the most expensive hands. The cities disagree over whether to seal the Arc''s sheets at the same meeting as the Government''s.
+- **The third contract, 2126.** The Host is Yeongdeungpo''s Market Master, and the place is the Assembly building at Yeouido. The Arc sits down for the first time. The wells will sink about another 9 metres over the next thirty years, so Gwanak, with its drilling crews, and Geumcheon, with its rigs, are the most expensive hands. The cities disagree over whether to seal the Arc''s sheets at the same meeting as the Government''s.
 
 What each city gives and receives is in [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/).
 
@@ -13109,8 +13145,9 @@ What the Free Cities lack is infantry that wins by numbers, heavy infantry with 
 <a id="unsettled"></a>
 ## What is not yet settled
 
-- Apart from the Duke of Gwanak, title names such as Wind Keeper, Depot Master, Market Master, Works Master, Edge Warden, Ferry Keeper, Station Foreman and Section Chief are not yet settled and may change.
-- Who now heads the six cities other than Gwanak, and when I Ilseop took up the Duke''s post, are not settled.
+- Apart from the Duke of Gwanak, title names such as Wind Keeper, Depot Master, Market Master, Works Master, Edge Warden, Ferry Keeper, Station Foreman and Section Chief are not yet settled and may change. Words such as seal house, masters'' meeting, name-worth, hearth kilos, outside post and binding the seal are also the names this wiki uses for now.
+- Who now heads the six cities other than Gwanak, when each head stood at the masters'' meeting, and when I Ilseop took up the Duke''s post, are not settled.
+- How much each of kept sureties, age and hearth kilos counts when name-worth is reckoned is not settled.
 - Which old station each city uses as its frozen station, and whether there is any way to vouch for a broken seal again, are not settled.
 - In which of the seven cities Go Ye-jin grew up is not settled.
 
@@ -13125,7 +13162,7 @@ What the Free Cities lack is infantry that wins by numbers, heavy infantry with 
 
 한강 남서쪽 일곱 구, 강서·양천·영등포·구로·금천·동작·관악에는 도시가 일곱 있다. 도시는 서로 독립해 있고, 도시마다 제 권력이며 제 공작령을 쥔다. 일곱 도시 위에 서는 한 사람은 없고, 일곱을 묶어 부르는 이름도 없다. 사람들은 "자유도시들"이나 "남서쪽 도시들"이라 하고, 도시 하나는 구 이름으로 부른다. "구로 사람", "관악 쪽", "동작 사람" 같은 식이다. 공문이나 계약서에서는 "구로시"처럼 구 이름에 ''시''를 붙이기도 한다.
 
-주민 대부분은 물자와 기술을 주고받는 엔지니어다. 누구 기술이 더 높은지 따질 방법이 없으니 일곱 도시 전체의 지도자도 뽑지 못했다. 대신 그들은 흥정을 했고, 흥정의 약속이 쌓여 도시가 됐다. 강 남서쪽에는 정부의 서기가 닿지 않았다. 대신 구로와 가산의 공장 터, 영등포와 여의도의 창고, 신정과 구로의 차량기지 작업장이 있었다. 정수기가 좋은 역은 모터를 감을 줄 아는 역이 필요했고, 모터를 감는 역은 여분 부품을 가진 역이 필요했다.
+주민 대부분은 물자와 기술을 주고받는 엔지니어다. 누구 기술이 더 높은지 따질 방법이 없으니 일곱 도시 전체의 지도자도 뽑지 못했다. 대신 그들은 흥정을 했고, 흥정의 약속이 쌓여 도시가 됐다. 강 남서쪽에는 정부의 서기가 닿지 않았다. 대신 구로와 가산의 공장 터, 영등포와 여의도의 창고, 신정과 구로의 차량기지 작업장이 있었다. 정수기가 좋은 역은 모터를 감을 줄 아는 역이 필요했고, 모터를 감는 역은 여분 부품을 가진 역이 필요했다. 지금은 도시마다 도장을 나눠 쥔 집안들이 대주회를 열어, 셀 수 있는 것으로 제 도시의 우두머리를 세운다.
 
 자유도시들이 쥔 것은 기술과 거래다. 바람틀, 열 펌프, 우물 펌프, 수차를 만들고 고치는 손, 부품을 깎는 작업대, 그것을 사고파는 장터와 계약이다. 정부의 물도 아크의 전기도 결국 자유도시 사람의 손을 거친다. 모자란 것은 사람과 땅과 땔감이다. 일곱 도시에 사는 사람은 약 7만 5천 명이다.
 
@@ -13136,15 +13173,43 @@ What the Free Cities lack is infantry that wins by numbers, heavy infantry with 
 
 | 도시(구) | 우두머리 | 우두머리를 정하는 법 | 자리 역 | 역 | 사람(2126) | 먹고사는 일 |
 |---|---|---|---|---|---|---|
-| 강서 | 바람지기 | 바람밭 작업대주들이 뽑는다. 종신이지만 수치를 못 지키면 물러난다 | 김포공항 | 18 | 약 17,000 | 바람틀 전기, 넓은 빛밭 |
-| 양천 | 기지장 | 기지 집안 하나가 대물린다 | 신정네거리 | 7 | 약 4,200 | 신정 차량기지의 모터·바퀴 재생, 궤도 수레 |
-| 영등포 | 장주 | 장터 집안들이 세 해씩 정해진 차례로 돌아가며 맡는다 | 영등포 | 18 | 약 20,600 | 큰 장터, 양평동 취수구의 물, 계약회 자리 |
-| 구로 | 공장장 | 지킨 보증이 가장 많은 작업대주가 맡는다 | 구로 | 9 | 약 9,600 | 옛 공장 터와 1호선 차량기지의 부품, 펌프 |
-| 금천 | 경계장 | 테두리를 넘었다 돌아온 사람 가운데서 경계조가 뽑는다 | 가산디지털단지 | 3 | 약 3,200 | 바깥에서 캐 오는 동력 덩이, 우물 굴착 틀 |
-| 동작 | 나루지기 | 건널목장들이 저희 가운데서 뽑는다 | 노량진 | 14 | 약 14,000 | 건널목 통행 몫, 얼음 밑 물고기 |
-| 관악 | 공작 | 이일섭의 집안이 대물린다 | 신림 | 8 | 약 6,200 | 관악산의 땔감과 나무 섬유, 산 바위 굴착 |
+| 강서 | 바람지기 | 바람밭 도장 집안 다섯의 대주회가 이름값으로 세운다. 종신이지만 와트를 못 지키면 물러난다 | 김포공항 | 18 | 약 17,000 | 바람틀 전기, 넓은 빛밭 |
+| 양천 | 기지장 | 도장 집안이 기지 집안 하나뿐이라 그 집안 안에서 이름값으로 세운다. 종신 | 신정네거리 | 7 | 약 4,200 | 신정 차량기지의 모터·바퀴 재생, 궤도 수레 |
+| 영등포 | 장주 | 장터 도장 집안 다섯의 대주회가 이름값으로 세운다. 종신 | 영등포 | 18 | 약 20,600 | 큰 장터, 양평동 취수구의 물, 계약회 자리 |
+| 구로 | 공장장 | 도장 집안 넷의 대주 가운데 보증판의 수가 가장 많은 사람이 선다. 종신이지만 보증을 깨면 물러난다 | 구로 | 9 | 약 9,600 | 옛 공장 터와 1호선 차량기지의 부품, 펌프 |
+| 금천 | 경계장 | 도장 집안 둘에서 테두리를 넘었다 돌아온 사람 가운데 이름값으로 세운다. 종신 | 가산디지털단지 | 3 | 약 3,200 | 바깥에서 캐 오는 동력 덩이, 우물 굴착 틀 |
+| 동작 | 나루지기 | 건널목 도장 집안 다섯의 대주회가 이름값으로 세운다. 제 건널목을 쥐는 동안 | 노량진 | 14 | 약 14,000 | 건널목 통행 몫, 얼음 밑 물고기 |
+| 관악 | 공작 | 대주회가 도장을 묶어 이일섭의 집안이 대물린다 | 신림 | 8 | 약 6,200 | 관악산의 땔감과 나무 섬유, 산 바위 굴착 |
 
-도시가 저마다 다른 법으로 우두머리를 정하는 데는 까닭이 있다. 일곱 도시 전체로는 누구 기술이 더 높으냐는 물음에 답이 없었다. 그래서 도시마다 제 일에서 잴 수 있는 것을 찾았다. 강서는 바람밭이 내는 와트를, 구로는 지켜 낸 보증의 수를, 금천은 테두리에서 살아 돌아온 일을, 동작은 쥔 건널목을 잰다. 잴 것을 찾지 못한 양천과 관악은 집안이 대물린다. 영등포는 아무도 재지 않고 차례를 돌린다. 이 일곱 가지 답이 그대로 일곱 도시의 성격이다.
+일곱 도시는 우두머리를 같은 뼈대로 세우고, 도시마다 다른 것은 잣대다. 일곱 도시 전체로는 누구 기술이 더 높으냐는 물음에 답이 없었다. 그래서 도시마다 제 일에서 셀 수 있는 것을 찾아 이름값의 잣대로 삼았다. 강서는 와트를 채운 철을, 양천은 되살린 모터를, 영등포는 깨지 않은 장터 자리 계약과 화덕에 넣은 킬로를, 구로는 보증판의 수를, 금천은 테두리에서 살아 돌아온 횟수를, 동작은 잃지 않고 넘긴 짐을, 관악은 판 우물의 깊이를 센다. 이 일곱 잣대가 그대로 일곱 도시의 성격이다.
+
+<a id="choosing-heads"></a>
+## 우두머리를 세우는 법
+
+일곱 도시는 우두머리를 같은 뼈대로 세운다. 모두 도시 하나 안의 일이다. 일곱 도시가 함께 세우는 자리는 없고, 계약회는 어느 도시의 우두머리도 정하지 않는다.
+
+- **도장 집안.** 도시의 도장을 나눠 쥔 작업대 집안이다. 도시가 처음 설 때 그 도시의 첫 계약서에 도장을 찍은 집안들이다. 도시마다 하나에서 다섯이 있다. 우두머리는 도장 집안 사람 가운데서만 선다. 도장 집안이 아닌 작업대도 제 이름으로 계약하지만 우두머리를 내지 못한다.
+- **대주회.** 도장 집안의 대주들이 자리 역에 모이는 자리다. 도시의 법과 큰 장을 정하고, 우두머리가 죽거나 물러나면 다음 우두머리를 세운다. 도시들 사이의 계약회와는 다르다.
+- **표가 없다.** 대주회는 후보마다 **이름값**을 소리 내어 맞춰 보고, 가장 높은 사람을 세운다. 이름값은 지킨 보증과 나이와 화덕 킬로를 더한 것이다. 대주들은 셈이 맞았다는 뜻으로 도장을 찍을 뿐 누구를 고르지 않는다. 대주회는 "이름값 맞춰 보자"는 말로 시작한다.
+- **화덕 킬로.** 후보가 대주회의 열과 끼니와 빛에 대는 전기다. 우두머리가 살아 있는 동안에는 찬 꾸러미로 걸어 둔 킬로를 거둘 수 있지만, 대주회가 열리면 모두 화덕에 들어가고 이기든 지든 돌려받지 못한다. 자유도시 사람은 "화덕 킬로는 탄다"고 말한다.
+- **후보.** 도장 집안마다 한 사람이 나온다. 열여섯 살 아래와 도장이 깨진 사람은 나올 수 없다. 다른 도시의 자리나 정부·아크의 직함을 받은 사람도 빠진다. 그래서 맞수 대주에게 다른 도시의 좋은 자리를 쥐여 주는 것이 오래된 수다.
+- **종신.** 우두머리는 죽을 때까지 맡는다. 도시에 따라 물러나는 조건이 하나 더 붙는다. 우두머리가 되면 자리 역과 도시의 도장, 구간장을 정하는 권한, 계약회를 부르는 권한을 받는다. 물러나면 그것만 다음 사람에게 가고, 제 작업대는 제 집안에 남는다.
+- **진 집안.** 진 집안은 작업대도 도장도 잃지 않는다. 누구도 남의 작업대를 빼앗지 못한다. 진 대주는 다음 대주회를 기다리며 보증을 쌓는다. 도장 집안이 끊기면 지킨 보증이 가장 많은 다른 작업대 집안이 새 도장 집안으로 들어온다.
+- **바깥 자리.** 작업대가 다른 도시의 역에 둔 작업장 겸 거점이다. 한 역에는 한 집안의 바깥 자리만 서고, 한 집안이 둘 수 있는 수는 그 집안의 손 수가 정한다. 그래서 혼인과 아이가 곧 장사의 크기다. 같은 도시의 도장 집안끼리는 바깥 자리를 두고 다투지만, 우두머리와는 다투지 못한다. 역의 주인 도시가 남의 바깥 자리를 닫으면, 바깥 자리를 둔 도시는 그것을 어긴 장으로 따진다. 도시 사이의 마찰은 대개 여기서 난다.
+- **역의 원성.** 종신 우두머리라도 역 사람들의 원성이 쌓이면 역반장들이 출입구와 빛 시간을 쥐고 버틴다. 바로 싸움이 되지는 않지만 점점 커진다.
+- **도장 묶기.** 대주회가 법을 바꿔 우두머리 자리를 한 집안 안에서 물리게 하는 것을 "도장을 묶는다"고 한다. 묶은 도시는 우두머리의 칭호를 바꾸고, 대주회는 남아 도시의 법을 정한다. 지금 도장을 묶은 도시는 관악뿐이다. 다른 도시 사람은 관악을 "도장 묶은 집"이라 부른다.
+
+도시마다 다른 것은 무엇을 지킨 보증으로 세느냐와 화덕 킬로를 세느냐다.
+
+| 도시 | 도장 집안 | 지킨 보증으로 세는 것 | 화덕 킬로 |
+|---|---|---|---|
+| 강서 | 바람밭 집안 다섯 | 계약서에 적은 와트를 채운 긴 밤 철 | 센다 |
+| 양천 | 기지 집안 하나 | 되살려 보증 기간을 다 채운 모터 | 세지 않는다 |
+| 영등포 | 장터 집안 다섯 | 장터 자리 계약을 깨지 않은 해 | 두 배로 센다 |
+| 구로 | 넷 | 보증판에 새긴 수 | 세지 않는다 |
+| 금천 | 둘 | 테두리를 넘었다 돌아온 횟수 | 센다 |
+| 동작 | 건널목 집안 다섯 | 호위해 잃지 않고 넘긴 짐의 장 | 센다 |
+| 관악 | 셋, 도장을 묶음 | 판 우물의 깊이 | 세지 않는다 |
 
 <a id="cities"></a>
 ## 도시별
@@ -13154,21 +13219,21 @@ What the Free Cities lack is infantry that wins by numbers, heavy infantry with 
 
 서쪽 강변 벌판에 바람틀 밭이 선다. 탁 트인 강변은 바람이 세고, 마곡과 가양의 벌판은 묻힌 건물이 적어 바람틀을 줄지어 세울 수 있다. 강서는 자유도시들 가운데 전기를 가장 많이 만들고, 남는 전기를 5호선과 9호선을 따라 깐 케이블로 양천과 영등포에 판다. 같은 벌판에 빛밭도 넓게 펴서, 강서의 빛밭은 일곱 도시에서 가장 넓다. 김포공항의 옛 격납고들은 가벼운 금속판과 긴 들보를 내주는 고물 터다.
 
-바람지기는 바람밭의 작업대주들이 모여 뽑는다. 한 번 뽑히면 죽을 때까지 맡지만, 맡은 바람밭이 계약서에 적은 와트를 긴 밤 철 두 번 잇달아 채우지 못하면 물러난다. 강서 사람은 이것을 "바람이 사람을 바꾼다"고 말한다. 마곡나루는 공항철도 다리로 정부의 디지털미디어시티와 이어지고, 김포공항, 개화, 방화는 서울 서쪽 끝이라 바깥 기계의 테두리를 마주한다.
+강서의 도장 집안은 바람밭을 쥔 집안 다섯이다. 바람지기가 죽거나 물러나면 다섯 집안의 대주가 김포공항에 모여 이름값을 맞춘다. 바람밭이 철마다 계약서에 적은 와트를 내면 그 집안 대주의 이름값이 오른다. 한 번 서면 죽을 때까지 맡지만, 맡은 바람밭이 계약서에 적은 와트를 긴 밤 철 두 번 잇달아 채우지 못하면 물러나고 대주회가 다시 열린다. 강서 사람은 이것을 "바람이 사람을 바꾼다"고 말한다. 마곡나루는 공항철도 다리로 정부의 디지털미디어시티와 이어지고, 김포공항, 개화, 방화는 서울 서쪽 끝이라 바깥 기계의 테두리를 마주한다.
 
 <a id="yangcheon"></a>
 ### 양천: 기지장
 
 2호선 신정 차량기지의 작업장과 창고로 산다. 기지의 넓은 지붕 밑은 그 자체로 따뜻한 작업장이고, 남은 전동차는 모터, 바퀴, 차축, 쇠판의 창고다. 양천은 낡은 모터를 다시 감고 바퀴를 깎아 되살린다. 그리고 터널 레일 위를 사람 손이나 작은 모터로 미는 **궤도 수레**를 만든다. 자유도시들 사이의 짐은 거의 다 양천의 궤도 수레로 움직인다.
 
-일곱 도시 가운데 가장 작다. 기지를 처음 되살린 집안이 2040년대부터 기지장 자리를 대물린다. 기지의 일은 네 교대로 나뉘고, 기지장과 교대장 넷이 양천의 다스림 전부다. 기지장 집안은 교대장 자리를 혼인으로 묶어 둔다.
+일곱 도시 가운데 가장 작다. 양천의 도장 집안은 기지를 처음 되살린 집안 하나뿐이다. 그래서 2040년대부터 기지장은 늘 그 집안에서 나왔다. 도장을 묶은 것이 아니라 도장을 나눠 쥔 집안이 처음부터 하나였다. 기지장이 죽으면 기지 집안의 손들이 모이고 교대장 넷이 곁에 앉아, 되살려 보증 기간을 다 채운 모터의 수로 이름값을 맞춘다. 기지의 일은 네 교대로 나뉘고, 기지장과 교대장 넷이 양천의 다스림 전부다. 기지장 집안은 교대장 자리를 혼인으로 묶어 둔다. 교대장 집안이 둘째 도장 집안으로 서지 못하게 하는 길이기도 하다.
 
 <a id="yeongdeungpo"></a>
 ### 영등포: 장주
 
 영등포가 먹고사는 일은 셋이다. 첫째, 일곱 도시에서 가장 큰 장터다. 영등포와 영등포시장 사이의 승강장과 대합실이 장터이고, 여의도의 옛 창고가 그 곳간이다. 둘째, 물이다. 남서쪽의 얼음 밑 강물 취수구가 양평동에 있고 영등포가 쥔다. 셋째, 계약회 자리다. 정부와 맺는 큰 계약회는 거의 늘 영등포가 연다.
 
-장주는 장터에 자리를 가진 집안들이 세 해씩 돌아가며 맡는다. 차례는 장터가 처음 선 때 정한 순서 그대로이고, 아무도 그 순서를 바꾸지 못한다. 그래서 서른 해에 한 번 오는 급수계약의 자리주인이 누가 되느냐는 차례가 정한다.
+영등포의 도장 집안은 장터가 처음 섰을 때 자리를 가진 장터 집안 다섯이다. 장주가 죽거나 물러나면 다섯 집안의 대주가 대주회에 모여 이름값을 맞춘다. 영등포는 장터 자리 계약을 깨지 않은 해를 세고, 화덕 킬로를 다른 도시의 두 배로 센다. 장터 도시라 킬로가 말을 한다. 그래서 영등포의 대주회는 일곱 도시에서 가장 뜨겁고, 다섯 집안은 장주가 살아 있는 내내 곳간에 킬로를 걸었다 거뒀다 한다. 장터가 처음 선 때 정한 다섯 집안의 순서는 지금도 남아 있지만, 그것은 장주를 정하는 차례가 아니라 대주회를 어느 집안의 화덕에서 여는지의 차례다. 장주는 종신이고, 서른 해에 한 번 오는 급수계약에서는 그때의 장주가 자리주인이 된다.
 
 강이 얼자 국회는 광화문으로 옮겼고 여의도 국회의사당은 비었다. 국회의사당역과 그 위의 의사당 건물은 이제 영등포 땅이다. 영등포는 정부와 맺는 계약회를 의사당에서 연다. 법이 아니라 관습이다. 지상의 방은 너무 추워 쓰지 않고, 눈에 묻힌 아래층과 9호선 국회의사당역 층을 데워 자리로 쓴다. 정부 사람이 제 조상이 떠난 건물에 손님으로 들어와 도장을 찍는 것이다. 마포–여의나루는 정부와 자유도시들 사이의 유일한 강 밑 터널이고, 북쪽 입구에 정부의 장부 검문소가 있다.
 
@@ -13177,28 +13242,28 @@ What the Free Cities lack is infantry that wins by numbers, heavy infantry with 
 
 구로는 부품을 깎는다. 펌프의 날개와 축, 열 펌프의 압축기 부품, 바람틀의 베어링, 수차의 날을 구로의 작업대가 만든다. 옛 공장 터와 1호선 차량기지 작업장이 바탕이고, 천왕의 7호선 차량기지가 두 번째 작업장이다. 신도림은 출구가 셋뿐이라 공기가 사람 수를 막는 역이고, 구로가 다음에 달려는 팬이 바로 신도림의 팬이다.
 
-공장장은 지킨 보증이 가장 많은 작업대주가 맡는다. 구로의 모든 작업대는 맺은 계약과 그것을 다 갚았는지를 판에 새겨 둔다. 이것을 **보증판**이라 한다. 공장장이 죽거나 그의 대가 보증을 한 번 깨면, 보증판에 새긴 수가 가장 많은 대주가 다음 공장장이 된다. 기술의 높낮이는 잴 수 없지만 약속을 지킨 횟수는 셀 수 있다는 것이 구로의 답이다.
+구로의 모든 작업대는 맺은 계약과 그것을 다 갚았는지를 판에 새겨 둔다. 이것을 **보증판**이라 한다. 구로의 도장 집안은 부품을 깎는 대와 펌프대 가운데 넷이다. 공장장이 죽거나 그의 대가 보증을 한 번 깨면, 네 집안의 대주가 구로역에 모여 보증판을 읽는다. 구로는 화덕 킬로를 세지 않는다. "보증은 손으로 갚는다"는 말 그대로 이름값은 보증판의 수와 나이뿐이고, 그래서 구로의 대주회는 일곱 도시에서 가장 짧다. 기술의 높낮이는 잴 수 없지만 약속을 지킨 횟수는 셀 수 있다는 것이 구로의 답이다.
 
 <a id="geumcheon"></a>
 ### 금천: 경계장
 
 일곱 도시 가운데 역이 가장 적다. 가산디지털단지, 독산, 금천구청 세 역이다. 서울 경계에 붙어 바깥 기계의 테두리를 가장 가까이서 지켜보고, 그 가까움으로 먹고산다. 눈보라가 기계의 눈을 가리는 이삼 일 동안 테두리를 넘어 부서진 전쟁 기계에서 동력 덩이와 부품을 떼어 온다. 가산의 옛 공장 터에서 건진 큰 기계로 우물 굴착 틀도 만든다. 금천의 굴착 틀이 없으면 관악의 굴착조도 바위를 뚫지 못한다.
 
-경계장은 테두리를 넘었다 돌아온 사람 가운데서 경계조가 뽑는다. 넘었다 돌아온 사람이 드무니 후보는 늘 두셋뿐이다. 경계장은 종신이고, 다시 테두리를 넘다 돌아오지 못하면 그 자리가 빈다. 넘지 않아도 되지만, 넘지 않는 경계장은 경계조의 말을 잃는다. 금천의 세 역 사이 묻힌 공장 지하와 1호선 버려진 구간에는 도장이 깨진 사람들의 무리가 산다([G12 · 금천 보증 잃은 손](/wiki/Hostile-Group-G12/)). 1호선으로 오가는 짐과 작업조는 금천 경계조의 호위를 산다.
+금천의 도장 집안은 경계조를 내는 집안 둘이다. 경계장은 두 집안 사람 가운데 테두리를 넘었다 돌아온 사람만 될 수 있다. 대주회에는 경계조의 어른들이 앉아 후보의 소매에 꿰맨 줄을 센다. 줄 하나가 지킨 보증 하나다. 넘었다 돌아온 사람이 드무니 후보는 늘 둘이고, 한 집안에 넘은 사람이 없으면 하나뿐이다. 경계장은 종신이고, 다시 테두리를 넘다 돌아오지 못하면 그 자리가 빈다. 넘지 않아도 되지만, 넘지 않는 경계장은 경계조의 말을 잃는다. 금천의 세 역 사이 묻힌 공장 지하와 1호선 버려진 구간에는 도장이 깨진 사람들의 무리가 산다([G12 · 금천 보증 잃은 손](/wiki/Hostile-Group-G12/)). 1호선으로 오가는 짐과 작업조는 금천 경계조의 호위를 산다.
 
 <a id="dongjak"></a>
 ### 동작: 나루지기
 
 동작은 건널목으로 산다. 세 정체가 맞닿는 열세 이음목 가운데 자유도시 쪽 끝은 여덟 곳이고, 그 가운데 다섯 곳이 동작에 있다. 노량진(1호선, 정부 용산), 동작(4호선, 정부 이촌), 동작(9호선, 아크 구반포), 사당(2호선, 아크 방배), 총신대입구(이수)(7호선, 아크 내방)다. 정부와 아크의 사람과 짐이 자유도시들로 오가려면 거의 다 동작을 지난다. 동작은 지나는 짐에서 통행 몫을 받는다. 노량진과 흑석 앞 강 얼음에 구멍을 뚫어 물고기도 잡는다. 노량진의 얼음 구멍 장은 서울에서 물고기가 가장 많이 도는 곳이다.
 
-건널목마다 건널목장이 있고, 다섯 건널목장이 저희 가운데서 나루지기를 뽑는다. 나루지기는 제 건널목을 쥐고 있는 동안만 나루지기다. 동작의 나루지기는 강 쪽으로는 정부와, 땅 쪽으로는 아크와 마주한다. 아크와의 땅 경계는 강이 없어서 다툼이 가장 잦고, 그래서 동작은 일곱 도시 가운데 지킴 일손을 가장 많이 둔다.
+건널목마다 그것을 쥔 집안이 있고, 그 집안의 대주가 건널목장이다. 이 다섯 집안이 동작의 도장 집안이다. 나루지기가 죽거나 물러나면 다섯 건널목장이 노량진에 모여, 호위해 잃지 않고 넘긴 짐의 장으로 이름값을 맞춘다. 나루지기는 제 건널목을 쥐고 있는 동안만 나루지기다. 동작의 나루지기는 강 쪽으로는 정부와, 땅 쪽으로는 아크와 마주한다. 아크와의 땅 경계는 강이 없어서 다툼이 가장 잦고, 그래서 동작은 일곱 도시 가운데 지킴 일손을 가장 많이 둔다.
 
 <a id="gwanak"></a>
 ### 관악: 공작
 
 관악은 관악산으로 산다. 가까운 비탈의 숲은 2060년대에 다 베였고, 남은 숲은 테두리 쪽 바깥 비탈에 있다. 관악의 나무조는 그 비탈까지 올라가 죽은 나무를 베어 온다. 나무는 땔감으로는 사치품이고, 섬유로는 섬유당의 원료다. 관악의 굴착조는 산의 화강암을 뚫어 깊은 우물을 판다.
 
-관악은 이일섭의 집안이 공작으로서 쥔다. 2056~2065년 무렵 관악의 우두머리 집안은 강 건너 정부가 구를 공작령이라 부르며 국회의원에게 쥐여 주는 것을 보고, 같은 말을 가져와 정부와 같은 자리에 앉겠다고 선언했다. 그래서 관악은 정부와 계약할 때 "공작령 대 공작령"으로 도장을 찍기를 고집한다. 다른 도시 사람들은 이 고집을 반쯤 비웃고 반쯤 부러워한다. 공작 자리는 그 집안 안에서 대물리고, 이일섭은 2092년생으로 2126년에 서른넷이다. 공작 아래에는 구간장 둘, 나무조장들, 산을 지켜보는 산지기조가 있다. 관악은 서초와 땅으로 맞닿지만 노선 연결이 없고, 남태령과 관악산은 서울 남쪽 끝이라 테두리를 마주한다.
+관악은 이일섭의 집안이 공작으로서 쥔다. 2056~2065년 무렵 관악의 우두머리 집안은 강 건너 정부가 구를 공작령이라 부르며 국회의원에게 쥐여 주는 것을 보고, 같은 말을 가져와 정부와 같은 자리에 앉겠다고 선언했다. 같은 때 관악의 대주회는 법을 바꿔 우두머리 자리를 그 집안 안에서 물리게 했다. 관악은 도장을 묶은 도시이고, 도장을 묶은 도시가 우두머리의 칭호를 바꾸는 관습은 이때 생겼다. 그래서 관악은 정부와 계약할 때 "공작령 대 공작령"으로 도장을 찍기를 고집한다. 다른 도시 사람들은 이 고집을 반쯤 비웃고 반쯤 부러워한다. 관악에도 도장 집안이 셋 있다. 이일섭의 집안과 나무조를 내는 집안, 굴착대를 쥔 집안이다. 대주회는 남아 관악의 법을 정하고, 다른 두 집안은 묶인 도장을 잊지 않는다. 공작이 죽으면 대주회가 공작 집안 사람들 가운데서 판 우물의 깊이로 이름값을 맞춘다. 이일섭은 2092년생으로 2126년에 서른넷이다. 공작 아래에는 구간장 둘, 나무조장들, 산을 지켜보는 산지기조가 있다. 관악은 서초와 땅으로 맞닿지만 노선 연결이 없고, 남태령과 관악산은 서울 남쪽 끝이라 테두리를 마주한다.
 
 <a id="contract-meeting"></a>
 ## 계약회
@@ -13225,6 +13290,8 @@ What the Free Cities lack is infantry that wins by numbers, heavy infantry with 
 | 작업대 집안 | 대주와 그 가족 | 제 이름으로 계약하고 보증표를 낼 권리, 대의 도장 |
 | 손 | 대에 붙은 기술자 | 품삯과 몫, 제 대주의 보증 아래서 계약할 권리 |
 | 일손 | 기술을 보이지 못한 사람. 정부 장부에서 달아나 온 사람, 도장을 잃은 사람, 아크에서 돌아온 사람 | 품삯. 제 이름으로 계약하지 못한다 |
+
+작업대 집안 가운데 도시의 도장을 나눠 쥔 집안이 도장 집안이다. 도장 집안은 대주회에 앉고 우두머리를 낼 수 있다. 따로 선 층은 아니다. 도장 집안이 끊기면 다른 작업대 집안이 그 자리를 채운다.
 
 <a id="reckoning"></a>
 ## 계약, 보증, 셈
@@ -13265,7 +13332,7 @@ What the Free Cities lack is infantry that wins by numbers, heavy infantry with 
 
 - **2066년 첫 계약.** 여의도 의사당에서 열렸고, 여섯 도시가 도장을 찍었다. 관악은 국회의원의 도장 아래에 공작의 도장을 찍을 수 없다며 도장을 거뒀다.
 - **2096년 두 번째 계약.** 일곱 도시가 모두 찍었다. 정부가 관악의 장에 "관악 공작령"이라는 이름을 적는 데 동의했기 때문이다. 강남의 대피소 몇 곳도 자유도시로서 도장을 찍었다. 그것이 마지막이었다.
-- **2126년 세 번째 계약.** 자리주인은 차례대로 영등포의 장주이고, 자리는 여의도 의사당이다. 처음으로 아크가 앉는다. 우물이 다음 서른 해 동안 9미터쯤 더 내려가니, 굴착조를 가진 관악과 굴착 틀을 가진 금천이 가장 비싼 손이다. 아크의 장을 정부의 장과 같은 자리에서 찍을지를 두고 도시마다 말이 다르다.
+- **2126년 세 번째 계약.** 자리주인은 영등포의 장주이고, 자리는 여의도 의사당이다. 처음으로 아크가 앉는다. 우물이 다음 서른 해 동안 9미터쯤 더 내려가니, 굴착조를 가진 관악과 굴착 틀을 가진 금천이 가장 비싼 손이다. 아크의 장을 정부의 장과 같은 자리에서 찍을지를 두고 도시마다 말이 다르다.
 
 도시마다 내는 것과 받는 것은 [급수계약과 세 정체](/wiki/World-Relation-Ledger/)에 있다.
 
@@ -13352,8 +13419,9 @@ What the Free Cities lack is infantry that wins by numbers, heavy infantry with 
 <a id="unsettled"></a>
 ## 아직 정해지지 않은 것
 
-- 관악 공작 말고 바람지기, 기지장, 장주, 공장장, 경계장, 나루지기, 역반장, 구간장 같은 칭호 이름은 아직 정해지지 않았고 바뀔 수 있다.
-- 관악을 뺀 여섯 도시의 지금 우두머리가 누구인지, 이일섭이 공작 자리를 언제 이었는지는 정해지지 않았다.
+- 관악 공작 말고 바람지기, 기지장, 장주, 공장장, 경계장, 나루지기, 역반장, 구간장 같은 칭호 이름은 아직 정해지지 않았고 바뀔 수 있다. 도장 집안, 대주회, 이름값, 화덕 킬로, 바깥 자리, 도장 묶기 같은 말도 이 위키가 지금 쓰는 이름이다.
+- 관악을 뺀 여섯 도시의 지금 우두머리가 누구인지, 우두머리마다 언제 대주회에서 섰는지, 이일섭이 공작 자리를 언제 이었는지는 정해지지 않았다.
+- 이름값을 맞출 때 지킨 보증, 나이, 화덕 킬로를 각각 얼마로 쳐주는지는 정해지지 않았다.
 - 도시마다 어느 옛 역을 언 역으로 쓰는지, 깨진 도장에 다시 보증을 서 주는 법이 있는지는 정해지지 않았다.
 - 고예진이 일곱 도시 가운데 어디서 자랐는지는 정해지지 않았다.
 
