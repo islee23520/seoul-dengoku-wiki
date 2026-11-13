@@ -726,12 +726,13 @@ function crossCheck(lines, base, ctx, P) {
     const mc = houseOf(m); const c = base.clanOf.get(m) ? base.clanOf.get(id) ?? null : houseOf(id);
     // 잠정 T30-gov-25: 집안 사람이 국회의원 한 사람뿐이거나 세력 안에 그 칸의 단계(후계 S1, 아이 S4)를 가진 같은 집안 사람이 없으면
     // 후계·아이 칸에 다른 집안에서 들인 사람(양자·피후견인)을 둘 수 있다.
-    // 이 사람은 국회의원보다 어리고, 약력(ko·en)에 들인 사실을 적는다.
+    // 들인 아이는 국회의원보다 어리고, 들인 사람은 약력(ko·en)에 들인 사실을 적는다.
     const slotStage = /후계/.test(v.o.role) ? 'S1' : 'S4';
     const stageKin = [...V].some(([oid, ov]) => oid !== m && ov.o.faction_id === v.o.faction_id && ov.o.stage === slotStage && houseOf(oid) === mc);
     if (c !== mc && mc && (houseSize(mc) === 1 || !stageKin)) {
       const a = ageOf(id); const ma = ageOf(m);
-      if (Number.isInteger(a) && Number.isInteger(ma) && a >= ma) P.add('alloc', 'assembly-house-age', v.file, id, `taken-in ${v.o.role} age ${a} is not younger than the Member ${m} (${ma}) of row ${v.o.row} (07 6.2, T30-gov-25)`);
+      // 의원보다 어려야 하는 것은 아이 칸뿐이다. 들인 후계에는 나이 조건이 없다(잠정 T30-gov-25).
+      if (/아이/.test(v.o.role) && Number.isInteger(a) && Number.isInteger(ma) && a >= ma) P.add('alloc', 'assembly-house-age', v.file, id, `taken-in ${v.o.role} age ${a} is not younger than the Member ${m} (${ma}) of row ${v.o.row} (07 6.2, T30-gov-25)`);
       if (!TAKEN_IN_KO.test(v.o.biography_ko ?? '') || !TAKEN_IN_EN.test(v.o.biography_en ?? '')) P.add('alloc', 'assembly-house-adoption', v.file, id, `${v.o.role} of house ${mc} (Member ${m}) is taken in from another house; the ko and en biographies must state the adoption or wardship (07 6.2, T30-gov-25)`);
       continue;
     }
