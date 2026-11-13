@@ -2,6 +2,15 @@
 
 갱신: 2026-11-11 · W5 25.5행. 이 문서는 `data/sql/090-person-details.sql`의 인물 능력치를 CK3식 여섯 스탯으로 맞추는 **결정적 규칙**의 정본이다. 적용 도구는 `scripts/pages/ck3-stats.mjs`.
 
+## v3 규칙 (2026-11-13, 이 절이 아래 2~4절보다 앞선다)
+
+v3 바이블 7장(`docs/design/v3/07-people-and-war.md`) 8절이 이 규칙을 바꿨다. 아래 2~4절은 v3 이전(W5 25.5행)의 기록으로 남긴다.
+
+- **범위.** 1,022명 모두의 여섯 능력치를 v3 직업(`occupation_ko`)과 품계(`rank_ko`)에서 다시 계산한다. 옛 상세 기록의 값(2절의 1:1 이름 변경)은 옛 역할에 묶인 값이라 쓰지 않는다(07장 8.1절). 090의 `sourceStatus`는 1,022명 모두 `ck3-table-derived`가 되고, `node scripts/pages/ck3-stats.mjs --dry-run`이 1,022명 전원을 표로 다시 계산해 대조한다(`E_DERIVED_DRIFT`).
+- **계산.** `deriveTableStats(personId, occupation_ko, rank_ko)` 그대로다. 직업 문구에서 07장 8.3절 표(`OCCUPATION_CLASSES`, 열두 등급, 순서가 규칙의 일부)를 위에서부터 보고 처음 맞는 낱말의 등급을 쓰고, 8.4절 등급 기본값(`CLASS_BASE`, 옛 일곱 등급의 값은 그대로, governance·soldier·fitting·provision·labour를 더함)에 8.5절 품계 보정(`RANK_MODIFIER`, v3 품계 60종)을 더해 1~20으로 자른다. 특성 효과는 모두 빈 배열이라 `effective = base`다.
+- **목록 밖.** 직업 문구는 07장 8.2절 목록(89개), 품계는 8.5절 목록 밖의 것을 쓰지 않는다. 목록 밖이면 `E_UNKNOWN_OCCUPATION`, `E_UNKNOWN_RANK`로 실패한다. 옛 품계 56종(군주, 영주, 조합원, 교도 따위)과 옛 직업 키워드 표는 v3에서 쓰지 않는다.
+- **적용기.** 표의 정본은 `scripts/pages/ck3-stats.mjs`이고, 1,022명에게 쓰는 것은 `node scripts/pages/v3-apply-people.mjs --recompute-stats`다(ck3-stats는 이미 파생된 행을 다시 쓰지 않으므로 적용기가 `deriveTableStats`를 직접 부른다). 적용기는 시작할 때 8.2절 89개 문구가 모두 의도한 등급으로 첫 일치하는지, 8.5절 품계 목록과 `RANK_MODIFIER`가 같은지 스스로 확인한다.
+
 ## 0. 근거와 지위
 
 - 소유자 승인(바이블 1절 규칙 10 · 8절): 인물 1,022명 전원이 CK3식 능력치 여섯 개 — 외교(Diplomacy), 군사(Martial), 관리(Stewardship), 음모(Intrigue), 학식(Learning), 무용(Prowess) — 를 쓴다. 적용 범위 1,022명 전원도 승인됐다.
