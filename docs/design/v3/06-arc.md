@@ -581,7 +581,7 @@
 | 싸움 | 호위장 / Guard Captain. 세례 전투원 / baptised fighter. 가문 징집병 / house levy. 교주 호위 / Hierophant's guard | 호위장 S1, 나머지 S2~S4 | 호위장 30, 세례 전투원 20, 징집병 17 |
 | 물·전기·열 | 수차지기 / water-wheel keeper. 취수구지기 / intake keeper. 열 펌프지기 / heat-pump keeper. 출입구지기 / entrance keeper | S2~S4 | 16 |
 | 먹거리 | 섬유당 통지기 / fibre-sugar vat keeper. 빛밭지기 / light-field keeper. 버섯 굴지기 / mushroom-cellar keeper. 얼음 낚시꾼 / ice fisher. 부엌 일꾼 / cook | S3~S4 | 16 |
-| 바꿈터·교섭·기록 | 셈꾼(하루 충전·정비 차례 셈표를 다룬다) / tally keeper. 교섭인 / negotiator. 세례록 기록꾼 / roll keeper. 말지기(교주의 집만) / Word Keeper | 교섭인과 말지기 S1~S2, 나머지 S2~S4 | 교섭인 30, 말지기 25 |
+| 바꿈터·교섭·기록 | 셈꾼(하루 충전·정비 차례 셈표를 다룬다) / tally keeper. 교섭인 / negotiator. 세례록 기록꾼 / roll keeper. 말지기(교주의 집만) / Word Keeper | 교섭인과 말지기 S1~S2, 나머지 S2~S4 | 교섭인 30, 말지기 22(잠정 T30-arc-11) |
 | 바깥 일 | 고물꾼 / salvager. 섬유 캐는 사람 / fibre digger. 테두리 망꾼 / rim watcher. 동력 덩이 캐는 사람 / power-core runner. 전령 / runner | S3~S4 | 18 |
 
 (잠정 T07-56)

@@ -9,7 +9,7 @@ section_checkpoint: complete
 
 The seven districts south-west of the Han, Gangseo, Yangcheon, Yeongdeungpo, Guro, Geumcheon, Dongjak and Gwanak, hold seven cities. The cities are independent of one another; each is its own power and holds its own duchy. No single person stands above the seven, and there is no name binding them. People say "the Free Cities" or "the south-western cities", and call one city by its district name: "Guro people", "the Gwanak side", "Dongjak people". In official papers and contracts a district name may take "City", as in "Guro City".
 
-Most of their people are engineers who trade goods and skill. There was no way to tell whose skill was greater, so no leader of all seven was ever chosen. Instead they bargained, and the promises of the bargaining piled up into cities. The Government's clerks never reached the south-west. What was there instead were the factory sites of Guro and Gasan, the warehouses of Yeongdeungpo and Yeouido, and the depot workshops of Sinjeong and Guro. A station with good water filters needed a station that could wind motors, and a station that wound motors needed a station with spare parts.
+Most of their people are engineers who trade goods and skill. There was no way to tell whose skill was greater, so no leader of all seven was ever chosen. Instead they bargained, and the promises of the bargaining piled up into cities. The Government's clerks never reached the south-west. What was there instead were the factory sites of Guro and Gasan, the warehouses of Yeongdeungpo and Yeouido, and the depot workshops of Sinjeong and Guro. A station with good water filters needed a station that could wind motors, and a station that wound motors needed a station with spare parts. Today, in each city the houses that share its seal hold a masters' meeting and set the city's head by what can be counted.
 
 What the Free Cities hold is skill and trade: the hands that build and mend wind machines, heat pumps, well pumps and water wheels, the workbenches that cut parts, and the markets and contracts that buy and sell them. The Government's water and the Arc's power both pass through Free City hands in the end. What they lack is people, land and firewood. About 75,000 people live in the seven cities.
 
@@ -20,15 +20,43 @@ Until the Arc split away in 2122, "Free City" meant any station south of the riv
 
 | City (district) | Head | How the head is chosen | Seat station | Stations | People (2126) | Lives by |
 |---|---|---|---|---|---|---|
-| Gangseo | Wind Keeper | Chosen by the bench masters of the wind fields; for life, but steps down if the figures are missed | Gimpo Int'l Airport | 18 | about 17,000 | Wind power, wide light-fields |
-| Yangcheon | Depot Master | Handed down in one depot house | Sinjeongnegeori | 7 | about 4,200 | Motor and wheel rebuilding at the Sinjeong depot, rail carts |
-| Yeongdeungpo | Market Master | The market houses take it in turn, three years each, in a fixed order | Yeongdeungpo | 18 | about 20,600 | The great market, water from the Yangpyeong-dong intake, the contract meeting place |
-| Guro | Works Master | Held by the bench master with the most kept sureties | Guro | 9 | about 9,600 | Parts from the old factory sites and the Line 1 depot, pumps |
-| Geumcheon | Edge Warden | Chosen by the edge crew from among those who have crossed the rim and come back | Gasan Digital Complex | 3 | about 3,200 | Power cores fetched from outside, well-drilling rigs |
-| Dongjak | Ferry Keeper | Chosen by the crossing chiefs from among themselves | Noryangjin | 14 | about 14,000 | Crossing shares, fish from under the ice |
-| Gwanak | Duke | Handed down in I Ilseop's house | Sillim | 8 | about 6,200 | Firewood and wood fibre from Gwanaksan, drilling the mountain rock |
+| Gangseo | Wind Keeper | Set by name-worth at the masters' meeting of five wind-field seal houses; for life, but steps down if the watts are missed | Gimpo Int'l Airport | 18 | about 17,000 | Wind power, wide light-fields |
+| Yangcheon | Depot Master | The depot house is the only seal house, so it is set by name-worth within that house; for life | Sinjeongnegeori | 7 | about 4,200 | Motor and wheel rebuilding at the Sinjeong depot, rail carts |
+| Yeongdeungpo | Market Master | Set by name-worth at the masters' meeting of five market seal houses; for life | Yeongdeungpo | 18 | about 20,600 | The great market, water from the Yangpyeong-dong intake, the contract meeting place |
+| Guro | Works Master | The bench master of the four seal houses with the most carvings on the surety board; for life, but steps down on breaking a surety | Guro | 9 | about 9,600 | Parts from the old factory sites and the Line 1 depot, pumps |
+| Geumcheon | Edge Warden | Set by name-worth from among those of the two seal houses who have crossed the rim and come back; for life | Gasan Digital Complex | 3 | about 3,200 | Power cores fetched from outside, well-drilling rigs |
+| Dongjak | Ferry Keeper | Set by name-worth at the masters' meeting of five crossing seal houses; while holding their crossing | Noryangjin | 14 | about 14,000 | Crossing shares, fish from under the ice |
+| Gwanak | Duke | The masters' meeting bound the seal, so it is handed down in I Ilseop's house | Sillim | 8 | about 6,200 | Firewood and wood fibre from Gwanaksan, drilling the mountain rock |
 
-There is a reason each city chooses its head by a different rule. Across all seven there was no answer to the question of whose skill was greater. So each city found something in its own work that could be measured. Gangseo measures the watts its wind fields produce; Guro the number of sureties kept; Geumcheon coming back alive from the rim; Dongjak the crossings held. Yangcheon and Gwanak, finding nothing to measure, hand the post down within a house. Yeongdeungpo measures nobody and turns the rota. These seven answers are the seven cities' characters.
+The seven cities set their heads on the same skeleton; what differs from city to city is the yardstick. Across all seven there was no answer to the question of whose skill was greater. So each city found something in its own work that could be counted and made it the yardstick of name-worth. Gangseo counts seasons that met their watts; Yangcheon motors brought back to life; Yeongdeungpo market place contracts never broken and kilos put into the hearth; Guro the carvings on the surety board; Geumcheon the times a person came back alive from the rim; Dongjak freight carried across without loss; Gwanak the depth of wells dug. These seven yardsticks are the seven cities' characters.
+
+<a id="choosing-heads"></a>
+## How a head is set
+
+The seven cities set their heads on the same skeleton. It is all a matter inside one city. There is no seat the seven cities fill together, and the contract meeting sets no city's head.
+
+- **Seal houses.** The workbench houses that share the city's seal: the houses that stamped the city's first contract when it first stood. A city has one to five. The head stands only from among the people of the seal houses. A workbench that is not a seal house still contracts in its own name, but cannot put forward a head.
+- **The masters' meeting.** The bench masters of the seal houses gathered at the seat station. It sets the city's law and its large sheets, and when the head dies or steps down it sets the next head. It is not the contract meeting between cities.
+- **No votes.** The masters' meeting reckons each candidate's **name-worth** aloud and seats the highest. Name-worth is kept sureties, age and hearth kilos added together. The bench masters set their seals only to say the reckoning was right; they choose no one. A masters' meeting opens with the words "Let's reckon the name-worth".
+- **Hearth kilos.** The electricity a candidate gives to the meeting's heat, meals and light. While the head lives, kilos staked as full packs can be taken back, but once the meeting opens they all go into the hearth and are not returned, win or lose. Free City people say, "Hearth kilos burn."
+- **Candidates.** Each seal house puts forward one person. No one under sixteen and no one whose seal is broken may stand. Anyone who has taken a post in another city or a Government or Arc title drops out too. So handing a rival bench master a good post in another city is an old move.
+- **For life.** The head serves until death. Some cities add one more condition for stepping down. The head receives the seat station, the city's seal, the right to appoint Section Chiefs and the right to call a contract meeting. On stepping down, only those pass to the next head; the head's own workbench stays in the house.
+- **Losing houses.** A losing house loses neither its workbench nor its seal. No one may seize another's workbench. A losing bench master piles up sureties while waiting for the next meeting. If a seal house dies out, the other workbench house with the most kept sureties comes in as a new seal house.
+- **Outside posts.** A workshop and foothold a workbench keeps in a station of another city. Only one house's outside post stands in one station, and how many a house may keep depends on how many hands it has. So marriage and children are the size of a house's trade. The seal houses of one city quarrel over outside posts, but none may quarrel with the head. If the city that owns a station closes another's outside post, the city that kept it presses this as a broken sheet. Most friction between cities starts here.
+- **Station grievance.** Even a head for life, if the grievances of station people pile up, meets Station Foremen who hold the entrances and light hours and dig in. It does not turn straight into a fight, but it grows.
+- **Binding the seal.** When the masters' meeting changes the law so that the head's seat passes within one house, it is called "binding the seal". A city that binds the seal changes its head's title, and the masters' meeting remains to set the city's law. Today only Gwanak has bound the seal. People of other cities call Gwanak "the house that bound the seal".
+
+What differs from city to city is what counts as a kept surety, and whether hearth kilos count.
+
+| City | Seal houses | What counts as a kept surety | Hearth kilos |
+|---|---|---|---|
+| Gangseo | five wind-field houses | a long-dark half that met the watts written in the contract | counted |
+| Yangcheon | one, the depot house | a motor brought back to life that served out its surety term | not counted |
+| Yeongdeungpo | five market houses | a year without breaking a market place contract | counted double |
+| Guro | four | a carving on the surety board | not counted |
+| Geumcheon | two | a crossing of the rim and return | counted |
+| Dongjak | five crossing houses | a sheet of freight escorted across without loss | counted |
+| Gwanak | three, seal bound | the depth of wells dug | not counted |
 
 <a id="cities"></a>
 ## The cities
@@ -38,21 +66,21 @@ There is a reason each city chooses its head by a different rule. Across all sev
 
 Fields of wind machines stand on the open riverside plain to the west. The open riverbank catches strong wind, and the plains of Magok and Gayang have few buried buildings, so wind machines can stand there in rows. Gangseo makes the most power of any Free City and sells its surplus to Yangcheon and Yeongdeungpo through cables laid along Lines 5 and 9. The same plain suits wide light-fields, and Gangseo's light-fields are the widest of the seven cities. The old hangars of Gimpo Int'l Airport are a salvage ground yielding light metal sheet and long girders.
 
-The bench masters of the wind fields gather to choose the Wind Keeper. Once chosen, the Wind Keeper serves for life, but steps down if the wind fields in their charge fall short of the watts written in the contracts for two long-dark halves running. Gangseo people call this "the wind changes the person". Magongnaru is joined by the Airport Railroad bridge to the Government's Digital Media City, and Gimpo Int'l Airport, Gaehwa and Banghwa, at Seoul's western edge, face the rim of the outside machines.
+Gangseo's seal houses are the five houses that hold wind fields. When the Wind Keeper dies or steps down, the bench masters of the five houses gather at Gimpo Int'l Airport and reckon name-worth. When a wind field delivers the watts written in its contract each season, its house's bench master gains name-worth. Once standing, the Wind Keeper serves for life, but steps down if the wind fields in their charge fall short of the watts written in the contracts for two long-dark halves running, and the meeting opens again. Gangseo people call this "the wind changes the person". Magongnaru is joined by the Airport Railroad bridge to the Government's Digital Media City, and Gimpo Int'l Airport, Gaehwa and Banghwa, at Seoul's western edge, face the rim of the outside machines.
 
 <a id="yangcheon"></a>
 ### Yangcheon: the Depot Master
 
 Yangcheon lives on the workshops and stores of the Line 2 Sinjeong depot. The wide space under the depot roof is itself a warm workshop, and the remaining trains are a store of motors, wheels, axles and steel plate. Yangcheon rewinds old motors and recuts wheels to bring them back. It also builds **rail carts**, pushed along the tunnel rails by hand or by a small motor. Almost all freight between the Free Cities moves on Yangcheon's rail carts.
 
-It is the smallest of the seven cities. The house that first revived the depot has handed down the Depot Master's post since the 2040s. The depot's work is split into four shifts, and the Depot Master and four shift leaders are all of Yangcheon's government. The Depot Master's house ties the shift-leader posts to itself by marriage.
+It is the smallest of the seven cities. Yangcheon's only seal house is the house that first revived the depot. So since the 2040s the Depot Master has always come from that house. It did not bind the seal; the house sharing the seal was one from the start. When the Depot Master dies, the hands of the depot house gather, with the four shift leaders sitting beside them, and reckon name-worth by the motors brought back to life that served out their surety term. The depot's work is split into four shifts, and the Depot Master and four shift leaders are all of Yangcheon's government. The Depot Master's house ties the shift-leader posts to itself by marriage, which also keeps any shift leader's house from standing as a second seal house.
 
 <a id="yeongdeungpo"></a>
 ### Yeongdeungpo: the Market Master
 
 Yeongdeungpo lives by three things. First, the largest market of the seven cities: the platforms and concourse between Yeongdeungpo and Yeongdeungpo Market are the market, and the old warehouses of Yeouido are its storehouse. Second, water: the south-western intake for river water under the ice is at Yangpyeong-dong, and Yeongdeungpo holds it. Third, the contract meeting place: the great contract meetings with the Government are almost always held by Yeongdeungpo.
 
-The market houses take the Market Master's post in turn, three years each. The order is the one fixed when the market first opened, and nobody can change it. So who will be Host at the water supply contract, which comes once in thirty years, is decided by the rota.
+Yeongdeungpo's seal houses are the five market houses that held places when the market first opened. When the Market Master dies or steps down, the bench masters of the five houses gather at the masters' meeting and reckon name-worth. Yeongdeungpo counts years without breaking a market place contract, and counts hearth kilos double what other cities do. It is a market city; kilos do the talking. So Yeongdeungpo's masters' meeting is the hottest of the seven cities, and the five houses stake and withdraw kilos in the store the whole time a Market Master lives. The order of the five houses fixed when the market first opened still survives, but it is not the order of who becomes Market Master; it is the order of whose house hearth hosts the masters' meeting. The Market Master serves for life, and at the water supply contract, which comes once in thirty years, whoever is Market Master at the time is Host.
 
 When the river froze, the National Assembly moved to Gwanghwamun and the Assembly building at Yeouido emptied. National Assembly station and the building above it are now Yeongdeungpo land. Yeongdeungpo holds its contract meetings with the Government in the Assembly building. It is custom, not law. The surface rooms are too cold to use; the snow-buried lower floors and the Line 9 National Assembly station level are heated and used instead. Government people come in as guests to set their seals in the building their forebears left. Mapo–Yeouinaru is the only under-river tunnel between the Government and the Free Cities, with a Government ledger checkpoint at its north mouth.
 
@@ -61,28 +89,28 @@ When the river froze, the National Assembly moved to Gwanghwamun and the Assembl
 
 Guro cuts parts. Guro's workbenches make pump vanes and shafts, compressor parts for heat pumps, bearings for wind machines and blades for water wheels. Its base is the old factory sites and the Line 1 depot workshop, and the Line 7 depot at Cheonwang is its second workshop. Sindorim has only three exits, so air limits how many people it can hold, and the fan Guro means to fit next is Sindorim's.
 
-The Works Master is the bench master with the most kept sureties. Every Guro workbench carves on a board the contracts it has made and whether it paid them off in full. This is the **surety board**. When the Works Master dies, or their bench breaks a surety even once, the bench master with the most carvings on the surety board becomes the next Works Master. Skill cannot be measured high or low, but the number of promises kept can be counted: that is Guro's answer.
+Every Guro workbench carves on a board the contracts it has made and whether it paid them off in full. This is the **surety board**. Guro's seal houses are four of its parts-cutting benches and pump benches. When the Works Master dies, or their bench breaks a surety even once, the bench masters of the four houses gather at Guro station and read the surety board. Guro does not count hearth kilos. As the saying "A surety is paid back by hand" goes, name-worth is only the carvings on the surety board and age, so Guro's masters' meeting is the shortest of the seven cities. Skill cannot be measured high or low, but the number of promises kept can be counted: that is Guro's answer.
 
 <a id="geumcheon"></a>
 ### Geumcheon: the Edge Warden
 
 Geumcheon has the fewest stations of the seven: Gasan Digital Complex, Doksan and Geumcheon-gu Office. Pressed against the edge of Seoul, it watches the rim of the outside machines more closely than anyone and lives by that nearness. In the two or three days when a blizzard blinds the machines, its people cross the rim and strip power cores and parts from broken war machines. From the big machines salvaged at Gasan's old factory sites it also builds well-drilling rigs. Without Geumcheon's rigs, even Gwanak's drilling crews cannot break the rock.
 
-The edge crew chooses the Edge Warden from among those who have crossed the rim and come back. Few have, so there are only ever two or three candidates. The Edge Warden serves for life, and the post falls vacant if the Edge Warden crosses again and does not return. The Edge Warden need not cross, but one who does not loses the edge crew's ear. In the buried factory basements between Geumcheon's three stations and in the abandoned stretch of Line 1 lives a band of people whose seals were broken ([G12 · Geumcheon Hands Without Surety](/wiki/Hostile-Group-G12/)). Freight and work crews on Line 1 buy the edge crew's escort.
+Geumcheon's seal houses are the two houses that send out the edge crews. Only someone of the two houses who has crossed the rim and come back can be Edge Warden. Senior hands of the edge crew sit in the masters' meeting and count the stripes sewn on each candidate's sleeve; one stripe is one kept surety. Few have crossed and come back, so there are always two candidates, and only one if one house has no one who crossed. The Edge Warden serves for life, and the post falls vacant if the Edge Warden crosses again and does not return. The Edge Warden need not cross, but one who does not loses the edge crew's ear. In the buried factory basements between Geumcheon's three stations and in the abandoned stretch of Line 1 lives a band of people whose seals were broken ([G12 · Geumcheon Hands Without Surety](/wiki/Hostile-Group-G12/)). Freight and work crews on Line 1 buy the edge crew's escort.
 
 <a id="dongjak"></a>
 ### Dongjak: the Ferry Keeper
 
 Dongjak lives by its crossings. Of the thirteen joins where the polities meet, eight have an end in the Free Cities, and five of those are in Dongjak: Noryangjin (Line 1, to the Government's Yongsan), Dongjak (Line 4, to the Government's Ichon), Dongjak (Line 9, to the Arc's Gubanpo), Sadang (Line 2, to the Arc's Bangbae) and Chongshin Univ. (Isu) (Line 7, to the Arc's Naebang). Almost everyone and everything going between the Government or the Arc and the Free Cities passes through Dongjak, and Dongjak takes a passage share from the freight. It also cuts holes in the river ice off Noryangjin and Heukseok to fish. The ice-hole market at Noryangjin is where the most fish change hands in Seoul.
 
-Each crossing has a crossing chief, and the five crossing chiefs choose the Ferry Keeper from among themselves. A Ferry Keeper is Ferry Keeper only while holding their own crossing. Dongjak's Ferry Keeper faces the Government on the river side and the Arc on the land side. The land border with the Arc has no river, so quarrels there are most frequent, and Dongjak keeps more guard hands than any other city.
+Each crossing is held by a house, and that house's bench master is the crossing chief. These five houses are Dongjak's seal houses. When the Ferry Keeper dies or steps down, the five crossing chiefs gather at Noryangjin and reckon name-worth by the sheets of freight escorted across without loss. A Ferry Keeper is Ferry Keeper only while holding their own crossing. Dongjak's Ferry Keeper faces the Government on the river side and the Arc on the land side. The land border with the Arc has no river, so quarrels there are most frequent, and Dongjak keeps more guard hands than any other city.
 
 <a id="gwanak"></a>
 ### Gwanak: the Duke
 
 Gwanak lives by Gwanaksan. The forest on the near slopes was all cut by the 2060s, and what remains is on the outer slopes toward the rim. Gwanak's wood crews climb to those slopes and cut dead trees. As firewood, wood is a luxury; as fibre, it is the raw stuff of fibre sugar. Gwanak's drilling crews bore through the mountain's granite to dig deep wells.
 
-Gwanak is held by I Ilseop's house as a duchy. Around 2056-2065 the leading house of Gwanak watched the Government across the river call its districts duchies and hand them to Members of the National Assembly, took the same word, and declared that it sat in the same seat as the Government. So Gwanak insists on sealing contracts with the Government "duchy to duchy". People of the other cities half laugh at this insistence and half envy it. The Duke's post is handed down within that house; I Ilseop was born in 2092 and is thirty-four in 2126. Under the Duke are two Section Chiefs, the wood crew chiefs, and a mountain watch. Gwanak touches Seocho by land but has no rail link, and Namtaeryeong and Gwanaksan, at Seoul's southern edge, face the rim.
+Gwanak is held by I Ilseop's house as a duchy. Around 2056-2065 the leading house of Gwanak watched the Government across the river call its districts duchies and hand them to Members of the National Assembly, took the same word, and declared that it sat in the same seat as the Government. At the same time Gwanak's masters' meeting changed the law so that the head's seat passes within that house. Gwanak is the city that bound the seal, and the custom that a city that binds the seal changes its head's title began then. So Gwanak insists on sealing contracts with the Government "duchy to duchy". People of the other cities half laugh at this insistence and half envy it. Gwanak too has three seal houses: I Ilseop's house, the house that sends out the wood crews, and the house that holds the drilling bench. The masters' meeting remains and sets Gwanak's law, and the other two houses do not forget the bound seal. When a Duke dies, the masters' meeting reckons name-worth among the people of the ducal house by the depth of wells dug. I Ilseop was born in 2092 and is thirty-four in 2126. Under the Duke are two Section Chiefs, the wood crew chiefs, and a mountain watch. Gwanak touches Seocho by land but has no rail link, and Namtaeryeong and Gwanaksan, at Seoul's southern edge, face the rim.
 
 <a id="contract-meeting"></a>
 ## The contract meeting
@@ -109,6 +137,8 @@ The Free Cities are not equal either.
 | Workbench houses | Bench masters and their families | The right to contract and issue surety tags in their own name; the bench's seal |
 | Hands | Engineers attached to a bench | Wages and shares; the right to contract under their bench master's surety |
 | Labourers | Those who have not shown a skill: people who ran from the Government ledger, people who lost their seal, people come back from the Arc | Wages. They cannot contract in their own name |
+
+Among the workbench houses, those that share the city's seal are the seal houses. A seal house sits at the masters' meeting and can put forward a head. It is not a separate layer: if a seal house dies out, another workbench house fills its place.
 
 <a id="reckoning"></a>
 ## Contracts, sureties and reckoning
@@ -149,7 +179,7 @@ The water supply contract is a thirty-year promise trading the north's sites, la
 
 - **The first contract, 2066.** Held in the Assembly building at Yeouido; six cities sealed. Gwanak withdrew its seal, saying it could not set a Duke's seal beneath a Member of the National Assembly's.
 - **The second contract, 2096.** All seven cities sealed, because the Government agreed to write the name "Duchy of Gwanak" on Gwanak's sheet. Several Gangnam shelters also sealed as Free Cities. It was the last time.
-- **The third contract, 2126.** By the rota, the Host is Yeongdeungpo's Market Master, and the place is the Assembly building at Yeouido. The Arc sits down for the first time. The wells will sink about another 9 metres over the next thirty years, so Gwanak, with its drilling crews, and Geumcheon, with its rigs, are the most expensive hands. The cities disagree over whether to seal the Arc's sheets at the same meeting as the Government's.
+- **The third contract, 2126.** The Host is Yeongdeungpo's Market Master, and the place is the Assembly building at Yeouido. The Arc sits down for the first time. The wells will sink about another 9 metres over the next thirty years, so Gwanak, with its drilling crews, and Geumcheon, with its rigs, are the most expensive hands. The cities disagree over whether to seal the Arc's sheets at the same meeting as the Government's.
 
 What each city gives and receives is in [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/).
 
@@ -236,8 +266,9 @@ What the Free Cities lack is infantry that wins by numbers, heavy infantry with 
 <a id="unsettled"></a>
 ## What is not yet settled
 
-- Apart from the Duke of Gwanak, title names such as Wind Keeper, Depot Master, Market Master, Works Master, Edge Warden, Ferry Keeper, Station Foreman and Section Chief are not yet settled and may change.
-- Who now heads the six cities other than Gwanak, and when I Ilseop took up the Duke's post, are not settled.
+- Apart from the Duke of Gwanak, title names such as Wind Keeper, Depot Master, Market Master, Works Master, Edge Warden, Ferry Keeper, Station Foreman and Section Chief are not yet settled and may change. Words such as seal house, masters' meeting, name-worth, hearth kilos, outside post and binding the seal are also the names this wiki uses for now.
+- Who now heads the six cities other than Gwanak, when each head stood at the masters' meeting, and when I Ilseop took up the Duke's post, are not settled.
+- How much each of kept sureties, age and hearth kilos counts when name-worth is reckoned is not settled.
 - Which old station each city uses as its frozen station, and whether there is any way to vouch for a broken seal again, are not settled.
 - In which of the seven cities Go Ye-jin grew up is not settled.
 

@@ -88,7 +88,7 @@ In the table below, the seven rows marked **settled** are the fixed chronology. 
 
 **The cities of the southwest.** The Government's clerks did not reach the southwest of the river. Instead there were the factory sites of Guro and Gasan, the warehouses of Yeongdeungpo and Yeouido, and the depot workshops of Sinjeong and Guro. A station with good water filters needed a station that could wind motors, and a station that wound motors needed a station with spare parts. No one could force anyone else, so they bargained, and the promises of their bargains built up into cities. Each district had its own factory sites, intakes and depots, so each district settled into one city.
 
-**No leader chosen.** The southwestern cities were not bound into one. There was no way to judge whose skill was higher, so they could not choose a leader. Each city found something in its own work that could be measured. Gangseo measured the watts its wind fields put out; Guro, the number of sureties kept. Yeongdeungpo measured nothing and passed the seat round the market families in turn.
+**No leader chosen.** The southwestern cities were not bound into one. There was no way to judge whose skill was higher, so they could not choose a leader. Each city found something in its own work that could be counted. The houses that stamped a city's first contract became its seal houses, held a masters' meeting, and seated a head for life by reckoning name-worth instead of votes. Gangseo counted seasons that met their watts; Guro, the number of sureties kept; Yeongdeungpo, market place contracts never broken and kilos put into the hearth.
 
 <a id="annals-2056"></a>
 
@@ -100,7 +100,7 @@ In the table below, the seven rows marked **settled** are the fixed chronology. 
 
 **Wind and ground heat.** People had to turn to ground heat pumps and wind machines. The southwestern cities, which had that skill, grew in power. The hands that raise and mend wind machines and the hands that handle heat-pump compressors became the most precious hands in Seoul.
 
-**The Duke of Gwanak.** Around this time the head family of Gwanak took the title of Duke. When the Government across the river called its districts duchies and handed them to Members of the National Assembly, Gwanak took the same word and declared it would sit in the same seat as the Government. The other cities kept the names that came from their own work.
+**The Duke of Gwanak.** Around this time the head family of Gwanak took the title of Duke. When the Government across the river called its districts duchies and handed them to Members of the National Assembly, Gwanak took the same word and declared it would sit in the same seat as the Government. At the same time Gwanak's masters' meeting changed the law so that the head's seat passes within that family. This is called binding the seal. The other cities kept the names that came from their own work.
 
 **Frozen ground.** Around 2066 the edge of the frozen ground had come down to about 22 metres.
 

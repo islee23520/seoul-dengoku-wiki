@@ -214,7 +214,7 @@ The minimum age is the youngest age at which a person can hold the rank. The ski
 |---|---|
 | Government | 대통령 25, 국회의원 18 (hereditary, chapter 04 section 16.5), 장관 30, 차관 30, 청장 30, 총재 30, 원장 30, 구청장 30, 동장 25, 역장 25, 서기관 30, 사무관 25, 주사 20, 서기 16 (succession entry, chapter 04 section 8.2), 경찰관 19, 전문의 30, 수련의 24, 교사 22, 이병·일병·상병·병장 19 (conscription, chapter 04 section 14.3), 하사 18, 중사 22, 상사 28, 소위 20, 중위 22, 대위 24, 소령 30, 중령 33, 대령 35, 후계 16, 등재민 0 |
 | Free Cities | the seven heads 25 (chapter 05 section 12.4), 구간장 25, 역반장 20, 대주 20, 작업조장 20, 건널목장 25, 교대장 20, 밭장 20, 손 16, 일손 16, 견습 12, 후계 16 |
-| Arc | 교주 25, 곁집장 0 (no minimum age; 2 parts or more instead of age, hereditary, chapter 06 sections 3.3, 3.5 and 12.4), 곁집 어른 40, 대피소장 28, 정비장 25, 호위장 30, 말지기 25, 정비공 18, 세례자 16, 곁집원 0, 미세례자 0, 후계 16 |
+| Arc | 교주 25, 곁집장 0 (no minimum age; 2 parts or more instead of age, hereditary, chapter 06 sections 3.3, 3.5 and 12.4), 곁집 어른 40, 대피소장 28, 정비장 25, 호위장 30, 말지기 22 (task 30 decision 2026-11-13, provisional T30-arc-11), 정비공 18, 세례자 16, 곁집원 0, 미세례자 0, 후계 16 |
 | Unaffiliated | 미등록 0 |
 
 There are also minimum ages attached to occupations: chapter 06 section 12.4's negotiator 30, baptised fighter 20, house levy 17, water-power-heat and food 16, outside work 18. If a cell has both a rank and an occupation minimum, the larger is used.
@@ -283,7 +283,7 @@ The people of one clan within one faction are called a **house**. The house is t
 | Faction | What is handed down | Who receives it |
 |---|---|---|
 | Government | The Assembly Member's seat. The head of the household names the heir (chapter 04 section 3.1). The Stationmaster post passes within the stationmaster's house (chapter 04 section 6). Dong Chiefs are appointed by the Member | The house's heir (rank "후계"). The Assembly election is a ritual. The President's seat goes to the heir of the President's house (chapter 04 section 3.2) |
-| Free Cities | It differs from city to city (chapter 05 section 2). In Yangcheon and Gwanak a house hands it down; in Gangseo the wind-field bench owners choose; in Guro the guarantee board decides; in Geumcheon the edge crew chooses among those who crossed the rim and came back; in Dongjak the Crossing Chiefs choose; in Yeongdeungpo the turn of the market houses decides. Benches are handed down in the bench owner's house (chapter 05 section 5.2) | A bench owner's seat goes to a child who has shown the skill. Station Foremen are chosen by the station's bench owners, Section Chiefs by the head (chapter 05 section 5.4) |
+| Free Cities | The skeleton is the same in all seven cities and the yardstick differs by city (chapter 05 sections 2.1-2.2, task 31). The holder's seat is not inherited but held for life; when the holder dies or steps down, the masters' meeting of the seal houses reckons each candidate's name-worth (kept sureties, age, hearth kilos) and seats the highest. There are no votes. Yangcheon, with only one seal house, and Gwanak, which bound the seal, reckon name-worth within one house, so in effect that house hands it down. Benches are handed down in the bench owner's house (chapter 05 section 5.2). Losing houses keep their bench and seal | A bench owner's seat goes to a child who has shown the skill. Station Foremen are chosen by the station's bench owners, Section Chiefs by the head (chapter 05 section 5.4) |
 | Arc | The seat of the Head of the Near House. It follows blood, and the next head must have two parts or more (chapter 06 section 3.3). The Hierophant names and removes Near Houses | The heir within the Near House. The quarrel of blood and iron (chapter 06 section 3.5) |
 
 (provisional T08-22)
@@ -341,12 +341,12 @@ The tables below hold the seats chapters 04-06 fill by name, the people of Bible
 | id | Name (age) | Stage | Row | Role | Tier | Rank | Occupation | Work station | Basis | Provisional |
 |---|---|---|---|---|---|---|---|---|---|---|
 | person-0998 | I Ilseop (34) | Key | Gwanak | Duke of Gwanak | T1 | 공작 | 도시 운영 | Sillim | duke [Approved], position wording Q19, chapter 05 section 3.7 | T08-27 |
-| person-0001 | Han Jae-mok (57) | Key | Yeongdeungpo | Yeongdeungpo Market Master (the market-house person seated by turn, Host of the third water supply contract) | T1 | 장주 | 도시 운영 | Yeongdeungpo | Q29, chapter 05 sections 3.3 and 12.2 | T08-42 |
-| person-0220 | Choe Ji-u (27) | Key | Dongjak | Dongjak Ferry Keeper (chosen by the Crossing Chiefs) | T1 | 나루지기 | 도시 운영 | Noryangjin | Q29, chapter 05 sections 3.6 and 12.2 | T08-44 |
-| person-0029 | Gang Minseo (60) | S1 | Guro | Guro Works Master (the bench owner with the most marks on the guarantee board) | T1 | 공장장 | 도시 운영 | Guro | Q29, chapter 05 section 3.4 | T08-43 |
-| person-0002 | I Seo-dam (58) | S1 | Yangcheon | Yangcheon Depot Master (the depot house) | T1 | 기지장 | 도시 운영 | Sinjeongnegeori | chapter 05 section 3.2, old-record anchor Yangcheon | T08-49 |
-| person-0032 | I Gangmuk (42) | S1 | Geumcheon | Geumcheon Edge Warden (chosen by the edge crew among those who crossed the rim and came back) | T1 | 경계장 | 도시 운영 | Gasan Digital Complex | chapter 05 section 3.5, old-record anchor Geumcheon | T08-49 |
-| person-0034 | Choe Dain (35) | S1 | Gangseo | Gangseo Wind Keeper (chosen by the wind-field bench owners) | T1 | 바람지기 | 도시 운영 | Gimpo Int'l Airport | chapter 05 section 3.1, the rule of section 4.7 step 3 | T08-49 |
+| person-0001 | Han Jae-mok (57) | Key | Yeongdeungpo | Yeongdeungpo Market Master (Market Master for life, seated by name-worth at the masters' meeting of the five market seal houses; Host of the third water supply contract) | T1 | 장주 | 도시 운영 | Yeongdeungpo | Q29, chapter 05 sections 3.3 and 12.2 | T08-42 |
+| person-0220 | Choe Ji-u (27) | Key | Dongjak | Dongjak Ferry Keeper (bench owner of a crossing seal house, seated by name-worth at the masters' meeting) | T1 | 나루지기 | 도시 운영 | Noryangjin | Q29, chapter 05 sections 3.6 and 12.2 | T08-44 |
+| person-0029 | Gang Minseo (60) | S1 | Guro | Guro Works Master (the bench owner of the four seal houses with the most marks on the guarantee board) | T1 | 공장장 | 도시 운영 | Guro | Q29, chapter 05 section 3.4 | T08-43 |
+| person-0002 | I Seo-dam (58) | S1 | Yangcheon | Yangcheon Depot Master (the depot house, Yangcheon's only seal house) | T1 | 기지장 | 도시 운영 | Sinjeongnegeori | chapter 05 section 3.2, old-record anchor Yangcheon | T08-49 |
+| person-0032 | I Gangmuk (42) | S1 | Geumcheon | Geumcheon Edge Warden (of one of the two seal houses; earned name-worth by the times he crossed the rim and came back) | T1 | 경계장 | 도시 운영 | Gasan Digital Complex | chapter 05 section 3.5, old-record anchor Geumcheon | T08-49 |
+| person-0034 | Choe Dain (35) | S1 | Gangseo | Gangseo Wind Keeper (bench owner of a wind-field seal house, seated by name-worth at the masters' meeting) | T1 | 바람지기 | 도시 운영 | Gimpo Int'l Airport | chapter 05 section 3.1, the rule of section 4.7 step 3 | T08-49 |
 | person-1008 | Min Ung-gi (32) | S1 | Guro (added) | bench owner of the Cheonwang radio bench | T2 | 대주 | 통신 정비 | Cheonwang | Q29, section 3.2 | T08-2 |
 | person-0035 | Jang Useok (55) | S1 | Guro (added) | tally clerk | T5 | 손 | 셈판 기록 | Cheonwang | section 3.2 | T08-1 |
 | person-0038 | Heo Daon (50) | S2 | Guro (added) | crew chief (wheels) | T5 | 작업조장 | 차량 정비 | Cheonwang | section 3.2 | T08-1 |
@@ -354,8 +354,9 @@ The tables below hold the seats chapters 04-06 fill by name, the people of Bible
 | person-0457 | Cha Yewon (28) | S4 | Gwanak | hand (records) | T5 | 손 | 계약서 기록 | Sillim | Q21 wording "복구복무 기록관" | T08-31 |
 
 - Han Jae-mok and Choe Ji-u are both Key now, and they take chapter 05's two Key seats (Yeongdeungpo Market Master, Dongjak Ferry Keeper). Han Jae-mok goes to Yeongdeungpo, which holds the Yangpyeong-dong intake, because of the floodgate and water work of his old record; Choe Ji-u goes to Dongjak, the city of crossings, because of the investment ledgers and toll work of his.
-- I Gangmuk's biography carries that he crossed the rim and came back (the selection rule of chapter 05 section 3.5).
-- Choe Dain is chosen by the rule of section 4.7 step 3. The biography says he was chosen as a bench owner of the Gangseo wind fields.
+- I Gangmuk's biography carries that he crossed the rim and came back (chapter 05 section 3.5, the Geumcheon yardstick of section 2.2).
+- Choe Dain is chosen by the rule of section 4.7 step 3. The biography says he stood by name-worth at the masters' meeting as bench owner of a Gangseo wind-field seal house.
+- The biographies of the seven Free City holders say "stood by name-worth at the masters' meeting" instead of "was chosen" or "was seated by turn" (chapter 05 section 2.1, task 31). For Yangcheon and Gwanak they say "took it up by name-worth within the house". I Ilseop's row is read with the note "Gwanak is the city that bound the seal" (chapter 05 section 3.7). Choe Ji-u is twenty-seven and his age share is small, so his biography makes him someone who filled his name-worth with kept sureties or hearth kilos. The year each holder stood and the rival seal-house bench owners are set by the people input from the columns of chapter 05 section 12.3 (`docs/drafts/reports/v3-free-city-politics-impact.md`) (provisional T31-29).
 
 **Arc (chapter 06 sections 2.3 and 4.5)**
 
