@@ -100,7 +100,7 @@ section_checkpoint: complete
 <a id="workbench"></a>
 ## 작업대와 사람의 층
 
-자유도시 일의 바탕은 **작업대**다. 한 집안이 대물려 쥐는 작업장이자 그 집안의 기술이다. 한 작업대는 한 가지 일을 하고, 같은 일을 하는 대들을 "모터대", "펌프대", "굴착대"처럼 부른다. 작업대에는 대주, 손, 견습이 있다. 대주 자리는 대물림이지만 손을 보이지 못한 맏이는 대를 잇지 못한다. 계약 하나를 위해 여러 대에서 손을 모아 짠 무리가 **작업조**다. 역은 **역반장**이, 역 몇 곳을 묶은 **구간**은 **구간장**이 맡는다. 자세한 것은 [역을 돌리는 손](/wiki/Operating-Houses/)과 [집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/)에 있다.
+자유도시 일의 바탕은 **작업대**다. 한 집안이 대물려 쥐는 작업장이자 그 집안의 기술이다. 한 작업대는 한 가지 일을 하고, 같은 일을 하는 대들을 "모터대", "펌프대", "굴착대"처럼 부른다. 작업대에는 대주, 손, 견습이 있다. 대주 자리는 대물림이지만 손을 보이지 못한 맏이는 대를 잇지 못한다. 계약 하나를 위해 여러 대에서 손을 모아 짠 무리가 **작업조**다. 역은 **역반장**이, 역 몇 곳을 묶은 **구간**은 **구간장**이 맡는다. 집안이 이름으로 대를 잇는 법은 [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/)에 있다.
 
 자유도시도 평등하지 않다.
 
@@ -245,5 +245,5 @@ section_checkpoint: complete
 ## 함께 읽기
 
 - [서울의 세 정체](/wiki/Sixteen-States/), [정부 사회](/wiki/Government-Society/), [아크 사회](/wiki/Arc-Society/)
-- [역을 돌리는 손](/wiki/Operating-Houses/), [집안과 대물림](/wiki/Chaebol-Houses-and-Century-Factions/), [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/)
+- [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/), [건너는 곳과 몰래 바꾸기](/wiki/Diaspora-Corridors/)
 - [급수계약과 세 정체](/wiki/World-Relation-Ledger/), [신도림 연결부 화물문](/wiki/Sindorim-Junction-Cargo-Gate/), [서울 밖과 테두리](/wiki/External-Theaters/)

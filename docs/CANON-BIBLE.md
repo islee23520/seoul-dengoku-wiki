@@ -257,29 +257,29 @@
 
 ### 7.1 공통 규칙
 
-- v3 문서 지도(2026-11-13, 과제 9): 63개 slug마다의 v3 주제, 새 제목, 근거 절, 문서 과제(10~15)는 `docs/design/v3/08-document-map.md`가 정한다. 과제 9는 새 slug가 필요 없다고 판단했다(같은 문서 2절). 그래서 `docs/canon-slugs.json`과 이 절의 수는 63 그대로다.
-- 4.1절의 오탐 측정은 새 문서 4개를 더하기 전, 59문서일 때 했다. 지금 문서 수는 63이다.
-- 기존 slug는 하나도 바꾸지 않는다. 문서 수는 63이다. 기존 59문서에 새 문서 4개를 더했다(소유자 결정 D2, 2026-11-12: "새 문서 4개 추가 (추천)"). 새 slug: `Government-Society`, `Free-City-Society`, `Arc-Society`, `Cyberware-and-Scarcity`.
+- v3 문서 지도(2026-11-13, 과제 9): 각 slug의 v3 주제, 새 제목, 근거 절, 문서 과제(10~15)는 `docs/design/v3/08-document-map.md`가 정한다. 과제 9는 새 slug가 필요 없다고 판단했다(같은 문서 2절). 2026-11-13에 소유자가 `Operating-Houses`와 `Chaebol-Houses-and-Century-Factions` 두 문서를 지웠다(9.4절). 그래서 `docs/canon-slugs.json`과 이 절의 수는 61이다.
+- 4.1절의 오탐 측정은 새 문서 4개를 더하기 전, 59문서일 때 했다. 지금 문서 수는 61이다.
+- 기존 slug의 이름은 바꾸지 않는다. 문서 수는 61이다. 기존 59문서에 새 문서 4개를 더해 63이 됐고(소유자 결정 D2, 2026-11-12: "새 문서 4개 추가 (추천)", 새 slug: `Government-Society`, `Free-City-Society`, `Arc-Society`, `Cyberware-and-Scarcity`), 2026-11-13에 소유자 결정으로 `Operating-Houses`와 `Chaebol-Houses-and-Century-Factions`를 지웠다(9.4절). 역장 사무소, 작업대, 정비 같은 역 운영 개념과 집안·대물림은 세 세력 사회 문서와 `Hangnyeol-and-Bon-gwan`에 남는다.
 - ko와 en 초안은 **같은 앵커 id 집합**을 가져야 한다. 다르면 파이프라인이 exit 4로 거부한다.
-- 현재 18문서가 한국어에만 앵커를 갖고 있다(한국어 전용 150개, 영어 전용 0개). 그 가운데 11문서는 영어 본문에 앵커가 아예 없다. Chaebol-Houses-and-Century-Factions, Characters-Factions-and-Professions, Diaspora-Corridors, Era-Arms-and-Tech-Level, Lost-Technology-Lineage, Oral-Stories, Seoul-Station-Catalog, Sixteen-States, Values-and-Policy-Scales, World-Map-Construction, World-and-Subway-Layers가 그렇다. 이 문서들은 영어 초안에 한국어와 같은 앵커를 심는다.
+- (2026-11-10 측정 기록. 아래 목록의 Chaebol-Houses-and-Century-Factions는 2026-11-13에 지웠다.) 18문서가 한국어에만 앵커를 갖고 있었다(한국어 전용 150개, 영어 전용 0개). 그 가운데 11문서는 영어 본문에 앵커가 아예 없다. Chaebol-Houses-and-Century-Factions, Characters-Factions-and-Professions, Diaspora-Corridors, Era-Arms-and-Tech-Level, Lost-Technology-Lineage, Oral-Stories, Seoul-Station-Catalog, Sixteen-States, Values-and-Policy-Scales, World-Map-Construction, World-and-Subway-Layers가 그렇다. 이 문서들은 영어 초안에 한국어와 같은 앵커를 심는다.
 - 지리 이름과 장소는 그대로 둔다.
 - 제목 수(`#` 줄)도 두 언어가 같아야 한다.
 - 4절 금지 어휘가 0건이어야 제출할 수 있다.
 - 9절 제안은 소유자 답이 오기 전에 본문에 정본으로 쓰지 않는다.
 
-### 7.2 63문서 표 (v3 문서 지도)
+### 7.2 61문서 표 (v3 문서 지도)
 
-2026-11-13부터 문서별 지침은 `docs/design/v3/08-document-map.md`(영어 미러 `08-document-map.en.md`)다. 63개 문서 모두를 v3 바이블에서 다시 쓴다. 아래는 문서 과제별 묶음이고, 문서마다의 v3 주제·새 제목·근거 절은 그 장의 3절 표에 있다.
+2026-11-13부터 문서별 지침은 `docs/design/v3/08-document-map.md`(영어 미러 `08-document-map.en.md`)다. 61개 문서 모두를 v3 바이블에서 다시 쓴다. 아래는 문서 과제별 묶음이고, 문서마다의 v3 주제·새 제목·근거 절은 그 장의 3절 표에 있다.
 
 | 과제 | 문서 수 | slug |
 |---|---|---|
 | 10 개요·연표 | 8 | Glossary, World-Unbinding, World-Expansion-Index, World-Narrative-Atlas, Regional-Physical-AI-Arcs, Century-Annals, Scenario-Timeline, Sindorim-Junction-Cargo-Gate |
-| 11 세력 | 8 | `Sixteen-States`(v3: 서울의 세 정체), Chaebol-Houses-and-Century-Factions(집안과 대물림), Operating-Houses(역을 돌리는 손), Diaspora-Corridors(건너는 곳과 몰래 바꾸기), World-Relation-Ledger(급수계약과 세 정체), Government-Society, Free-City-Society, Arc-Society |
+| 11 세력 | 6 | `Sixteen-States`(v3: 서울의 세 정체), Diaspora-Corridors(건너는 곳과 몰래 바꾸기), World-Relation-Ledger(급수계약과 세 정체), Government-Society, Free-City-Society, Arc-Society |
 | 12 장소·인물 구성·문화 | 12 | Building-Reuse-Geography, External-Theaters, Seoul-Station-Catalog, Station-Interior-Construction, World-Map-Construction, World-and-Subway-Layers, Characters-Factions-and-Professions, Hangnyeol-and-Bon-gwan, Faith-Culture-Schism, Food-Culture, Oral-Stories, Values-and-Policy-Scales |
 | 13 기술·사람과 기계·기타 | 8 | Lost-Technology-Lineage, Cyberware-and-Scarcity, Era-Arms-and-Tech-Level, People-and-Machines, Synthetic-Actors(v3: 휴머노이드), Ailments, Offices-and-Ranks, Structures |
 | 14 적대 생태 색인과 G01~G13 | 14 | Hostile-Ecology-Index, Hostile-Group-G01~G13 |
 | 15 G14~G26 | 13 | Hostile-Group-G14~G26 (새 slug 없음) |
-| 합 | 63 | |
+| 합 | 61 | |
 
 아래 59문서 판정 표는 2026-11-10의 v3 이전 기록이다. 지우지 않고 남기지만, v3 문서 과제는 이 표가 아니라 08장 문서 지도를 따른다.
 
@@ -435,7 +435,7 @@
 | 날짜 | 항목 | 소유자 답(원문) | 반영 |
 |---|---|---|---|
 | 2026-11-12 | D1 겨울 | "영원한 겨울 확정 (추천)" | 1절 4행, Q16 |
-| 2026-11-12 | D2 새 문서 | "새 문서 4개 추가 (추천)" | 7.1절, 63문서 |
+| 2026-11-12 | D2 새 문서 | "새 문서 4개 추가 (추천)" | 7.1절, 63문서(2026-11-13 두 문서 삭제 뒤 61) |
 | 2026-11-12 | D3 전투 | "전투 방식은 토탈워랑 동일하게 지휘관이 모든 분대의 지휘권한을 갖음" | 2.5절 |
 | 2026-11-12 | D4 S-Map | "참고만, 레포 데이터 사용 (추천)" | 지도 서술은 레포 데이터로 쓰고 S-Map은 참고만 한다 |
 | 2026-11-12 | 쇼케이스·음성 | "쇼케이스 대본도 전부 수정하자음성은 안만들거임 음성은 드롭 한다" | 쇼케이스 대본 전면 수정, 음성 제작 중단 |
@@ -444,6 +444,8 @@
 | 2026-11-13 | 유니온 폐기 | "자유도시는 유니온이 아니야 그냥 자유 도시들이지 왕좌의 게임에서 에소스에 살고 있는 국가들을 유니온이라고 부르지 않자나 ??" | 1절 13행, 2.2절, 5절, 9.1절, Q9 |
 | 2026-11-13 | 비유 표현 | "장벽 너머의 존재 같은거라는 표현도 피규어 오브 스피치인데 이런 형태의 표현들을 그대로 인용해서 쓰지말고 너가 이 세계관에 맞게 톤앤매너를 설정해서 넣어 시아파라던가 왕이라던가 이런것도 이 세계관에 맞게 넣어 나는 그냥 피규어 오브 스피치로 그 구조에 대해서 설명 한거야" | 2.1~2.3절의 비유를 구조 문장으로 바꿨다. 세계 안의 표현은 v3 바이블 01-core가 정한다 |
 | 2026-11-13 | 국회의원 | "그리고 대한민국에는 양원이 없어 senator ?? 이런 표현이면 안됨 국회의원이 맞지 어쨌든 배경이 서울인데 대한민국이랑 연결이 되어야지" | 2.1절, 2.4절, 5절, 9.1절, Q28. 상원의원 칭호를 국회의원으로 바꾸고 정부 제도를 대한민국 제도의 연속으로 적었다 |
+| 2026-11-13 | 역을 돌리는 손 삭제 | "https://sss.linalab.io/ko/wiki/Operating-Houses/ 통째로 삭제 해야할 설정이야" | 7.1절, 7.2절. `Operating-Houses` 문서와 그 설정(운영 가문, 역을 돌리는 손이라는 별도 문서)을 지웠다. 이 문서로 가던 링크는 세력 사회 문서로 옮기거나 걷어 냈다 |
+| 2026-11-13 | 집안과 대물림 삭제 | "https://sss.linalab.io/ko/wiki/Chaebol-Houses-and-Century-Factions/ 이것도 삭제 할 페이지야" | 7.1절, 7.2절. `Chaebol-Houses-and-Century-Factions` 문서를 지웠다. 집안과 대물림은 세 세력 사회 문서와 `Hangnyeol-and-Bon-gwan`이 다룬다. 이 문서로 가던 링크는 그쪽으로 옮기거나 걷어 냈다 |
 
 ### 9.5 v3에서 다시 놓은 질문과 소유자 대기 결정 (2026-11-13, 과제 9)
 
@@ -486,7 +488,7 @@
 | V6 | 플레이어 인물이 지휘관으로 싸움터에서 죽을 때 보호 규칙을 둘까 | 막지 않는다. 그 자리에서 세력의 다음 사람으로 넘어간다 | 09 3.12절, roster 13절 P19 | T29-17 |
 | V7 | 자동 전투가 성격 특성(용감함·겁 많음의 자리)을 지휘관 부상 위험에 쓸까 | 쓰지 않는다. 쓰게 되면 능력치가 아닌 전투 전용 효과로 둔다 | 07 8.1절 3항, 09 3.4.2·7절 4번 | T09-8 |
 | V8 | 군대 하나의 분대 상한 20칸(GDD의 "고정 상한 없음"과 부딪친다) | 20칸, 지휘관 호위 포함, 배속 영웅 한 칸씩 | roster 10.3절 P10 | T09-31 |
-| V9 | 63문서의 새 제목 | 08장 3절 표의 [제안] 제목 | 08 3절 | T09-6 |
+| V9 | 61문서의 새 제목 | 08장 3절 표의 [제안] 제목 | 08 3절 | T09-6 |
 | V10 | 새 위키 slug를 더할까 | 더하지 않는다(63 그대로). CK3 기반 체계는 설계 문서에만 둔다 | 08 2절 | T09-7 |
 | V11 | v3 용어와 칭호(5.1절, 01-core 8절의 [제안] 칭호) | 5.1절과 01-core 8절 그대로 | 5.1절, 01 8절 | T02-60~T02-80, T09-25 |
 

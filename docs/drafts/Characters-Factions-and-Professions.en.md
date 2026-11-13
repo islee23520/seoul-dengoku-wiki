@@ -138,8 +138,6 @@ Each kind of repair work has its own name: wind-machine hand, heat-pump hand, we
 - [Titles and Offices](/wiki/Offices-and-Ranks/)
 - [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/)
 - [Values and Policy Scales](/wiki/Values-and-Policy-Scales/)
-- [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/)
-- [The Hands That Run a Station](/wiki/Operating-Houses/)
 - [Government Society](/wiki/Government-Society/)
 - [Free City Society](/wiki/Free-City-Society/)
 - [Arc Society](/wiki/Arc-Society/)

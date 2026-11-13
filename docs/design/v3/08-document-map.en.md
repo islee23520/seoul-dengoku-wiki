@@ -2,21 +2,21 @@
 
 Status: written by task 9. Plan `.omo/plans/wiki-lore-rebuild-v3.md` tasks 9-15. Korean primary `08-document-map.md`.
 
-Basis: bible 7.1 (slugs do not change, 63 documents), 9.4 D2 (four new documents, 2026-11-12), 01-core section 10 (slugs that covered old concepts get a new v3 topic in this chapter), `docs/canon-slugs.json`.
+Basis: bible 7.1 (slugs do not change, 61 documents), 9.4 D2 (four new documents, 2026-11-12), 9.4 row of 2026-11-13 (`Operating-Houses` and `Chaebol-Houses-and-Century-Factions` deleted), 01-core section 10 (slugs that covered old concepts get a new v3 topic in this chapter), `docs/canon-slugs.json`.
 
 ## 1. What this chapter decides
 
-- Each of the 63 wiki documents (`docs/canon-slugs.json`) gets a v3 topic, new English and Korean titles, the bible sections to draw on, and its draft files.
-- No slug changes. Slugs that covered old concepts (the sixteen polities, chaebol houses, operating houses, diaspora corridors, the synthetic persona ledger, lords outside Seoul) receive a v3 topic under the same slug. A reader arriving at an old address reads the v3 document in the same place.
-- The 63 are divided among tasks 10-15 exactly as the plan assigns them.
+- Each of the 61 wiki documents (`docs/canon-slugs.json`) gets a v3 topic, new English and Korean titles, the bible sections to draw on, and its draft files.
+- The remaining slugs keep their names. Slugs that covered old concepts (the sixteen polities, diaspora corridors, the synthetic persona ledger, lords outside Seoul) receive a v3 topic under the same slug. A reader arriving at an old address reads the v3 document in the same place. The two slugs that covered the chaebol houses and the operating houses were deleted by owner decision on 2026-11-13 (bible 9.4). Houses and inheritance, stationmaster offices, workbenches and maintenance benches are covered by the three faction society documents and `Hangnyeol-and-Bon-gwan`.
+- The 61 are divided among tasks 10-15 exactly as the plan assigns them.
 - This chapter does not change a document's category (`category_id`). Category names (`020-wiki-categories.sql`, for example the old "Infected person" category) are fixed by task 16.
 - The titles are [proposal]. If the owner changes them, the task concerned follows (provisional T09-6).
 
 ## 2. Why no new slug is added
 
-Every topic of the v3 bible was matched against the slugs. Each can be carried by one of the existing 63. In particular the five slugs whose old concept is gone (`Sixteen-States`, Chaebol-Houses-and-Century-Factions, Operating-Houses, Diaspora-Corridors, Synthetic-Actors) take the large topics that v3 newly has (the overview of the three polities, houses and inheritance, station offices and workbenches, crossings and smuggling, humanoids). The water contracts go to World-Relation-Ledger; the physics of the eternal winter go to World-Unbinding and Station-Interior-Construction.
+Every topic of the v3 bible was matched against the slugs. Each can be carried by one of the existing slugs. In particular the three slugs whose old concept is gone (`Sixteen-States`, Diaspora-Corridors, Synthetic-Actors) take the large topics that v3 newly has (the overview of the three polities, crossings and smuggling, humanoids). Houses and inheritance, station offices and workbenches are carried by the three faction society documents (after the two deletions of 2026-11-13). The water contracts go to World-Relation-Ledger; the physics of the eternal winter go to World-Unbinding and Station-Interior-Construction.
 
-The CK3-based systems of chapter 09 (the contract between the campaign layer and the battlefield layer, hyeongse, replenishment, captured persons) are design-side. The only thing a wiki reader needs from them to read the world is the word "형세", hyeongse (the standing of the war), and it goes into the Glossary. So no wiki slug is added. The count in `docs/canon-slugs.json` and bible 7.1 stays 63 (provisional T09-7).
+The CK3-based systems of chapter 09 (the contract between the campaign layer and the battlefield layer, hyeongse, replenishment, captured persons) are design-side. The only thing a wiki reader needs from them to read the world is the word "형세", hyeongse (the standing of the war), and it goes into the Glossary. So no wiki slug is added. The count in `docs/canon-slugs.json` and bible 7.1 is 61 (two documents deleted from the 63 by owner decision on 2026-11-13) (provisional T09-7).
 
 ## 3. Document map
 
@@ -35,13 +35,11 @@ Columns: **Task** is the plan's document task number. **Basis** is the bible sec
 | Scenario-Timeline | chronology | Scenario Timeline | The opening: winter 2126, the positions of the three polities before the third water contract and the course of the first year. It does not say that a game turn is a month; it speaks in halves of the year (the long-light half, the long-dark half) | 개막: 2126년 겨울 / The Opening: Winter 2126 | bible 1 row 11, 3, 01 5.2 and 9, 04 15, 05 7.3, 06 7.4, 07 13 |
 | Sindorim-Junction-Cargo-Gate | chronology | Sindorim Junction Cargo Gate | The line junction at Sindorim in Guro: moving loads on rails, Guro's tool market, the centre of the roads between the Free Cities | 신도림 연결부 화물문 / Sindorim Junction Cargo Gate | 03 7.2-7.3, 05 3.4 and 8.1, 07 11.2, 02 3.3 |
 
-### 3.2 Task 11: factions (8)
+### 3.2 Task 11: factions (6)
 
 | slug | Category | Current title | v3 topic | New title (ko / en) | Basis |
 |---|---|---|---|---|---|
 | `Sixteen-States` | factions | The Three Factions of Seoul | (retired: the sixteen polities) An overview of Seoul's three polities: what the Government, the Free Cities and the Arc hold and what they lack. A guide to the three society documents | 서울의 세 정체 / The Three Polities of Seoul | bible 2.1-2.4, 01 5.6, 7 and 8.4, 01 10 first row |
-| Chaebol-Houses-and-Century-Factions | factions | Families and the Three Factions | (retired: chaebol houses) Houses and inheritance: Assembly Member houses and the inherited seat, the Free Cities' workbench households, the Arc's Near Houses. Why work and seats pool in households | 집안과 대물림 / Houses and Inheritance | bible 1 row 12, 01 10, 04 3.4 and 8.2, 05 5.2, 06 3, 07 6 |
-| Operating-Houses | factions | Operating Organizations | (retired: operating houses) The hands that run a station: the Government stationmaster's office and dong centre, the Free City station crew, workbench and work crew, the Arc maintenance bench and shelter. Repair work and the hands that are handed down | 역을 돌리는 손 / The Hands That Run a Station | 01 10, 03 10, 04 6, 05 5, 06 8.5-8.6 |
 | Diaspora-Corridors | factions | Diaspora Corridors | (retired: diaspora corridors) Crossings and smuggling: bridges, under-river tunnels, the ice, the land border, passes and invitation passes, forbidden trade. It also records that the descendants of the pre-Blackout immigrant communities are ordinary households of each polity | 건너는 곳과 몰래 바꾸기 / Crossings and Smuggling | 01 7.4 and 10, 05 8, 06 7.3, 07 11.1-11.3 |
 | World-Relation-Ledger | factions | World Expansion Relation Ledger | The water contracts and the relations of the three polities: the first and second contracts, the scales of the third, the contract meeting, envoys and sureties, marriages and divided households | 급수계약과 세 정체 / The Water Contracts and the Three Polities | bible 1 row 11, 01 5.2 and 7.4, 03 11.6, 04 15, 05 4 and 7, 06 7, 07 11.4-11.6 |
 | Government-Society | factions | Government Society | The ledger state: the National Assembly and the life presidency, the two parties, the ministries, resident registration and striking off, law and punishment, the five strata, tokens and rations, markets, clothing, the day, the national rite, the Armed Forces | 정부 사회 / Government Society | 04 1-16 (not the private 17), 01 7.1 and 8.1, bible 2.1 |
@@ -117,7 +115,7 @@ Columns: **Task** is the plan's document task number. **Basis** is the bible sec
 
 There is no new slug (section 2). Task 15 writes only the thirteen documents G14-G26.
 
-Counts: task 10 eight, task 11 eight, task 12 twelve, task 13 eight, task 14 fourteen, task 15 thirteen. Total 63.
+Counts: task 10 eight, task 11 six, task 12 twelve, task 13 eight, task 14 fourteen, task 15 thirteen. Total 61.
 
 ## 4. Rules for every document task
 
