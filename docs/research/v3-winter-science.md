@@ -200,6 +200,10 @@ GLENS(1절)는 "목표 기온 ↔ 주입량"을 해마다 고치는 피드백 �
 — Journal of Vertebrate Biology 67 (2018), "Ecological factors influencing winter field sign abundance of Korean water deer", https://bioone.org/journals/journal-of-vertebrate-biology/volume-67/issue-3-4/fozo.v67.i3-4.a5.2018.full [B]
 → 영구 툰드라에서 고라니는 사라졌을 가능성이 크다. "할머니가 본 마지막 고라니" 같은 소재가 된다. [D]
 
+**개.** 그린란드의 이누이트 썰매개는 쉴 때 -25℃까지는 몸을 데우려고 대사를 더 올리지 않았다. 여름과 겨울의 기온 차이도 쉴 때의 대사율을 바꾸지 않았다.
+— Gerth, Redman, Speakman, Jackson & Starck (2010), "Energy metabolism of Inuit sled dogs", J. Comp. Physiol. B 180(4): 577–589, https://doi.org/10.1007/s00360-009-0432-7 [B]
+→ 1월 평균이 -25℃보다 따뜻하면 바깥의 개는 추위 때문에 먹이를 더 쓰지 않는다. 그보다 추운 눈보라 밤에는 바람을 피할 굴과 더 많은 먹이가 있어야 견딘다. 털이 짧은 집개 혈통이 여든 해 동안 썰매개만큼 추위에 맞춰졌다는 것은 외삽이다. [D]
+
 **남은 기계(규칙 5, 6).**
 - 리튬이온 전지는 0℃ 아래에서 성능이 크게 떨어진다. 가장 내한성 좋은 전지도 −40℃에서는 용량이 약 11%로 줄어든다.
 — Applied Energy (2025), "A review on challenges in low temperature Lithium-ion cells and future prospects", https://www.sciencedirect.com/science/article/abs/pii/S0306261925007172 [B]
