@@ -27,88 +27,30 @@ node scripts/pages/scan-terms.mjs --terms docs/canon-terms.json --all   # 금지
 
 작업트리·검증용 사본·빌드 출력은 E: 또는 F: 드라이브에만 만든다(소유자 지시 2026-11-13).
 
-## Repository layout
+## 저장소 구성
 
-| Path | Contents |
+| 경로 | 내용 |
 |---|---|
-| `lore/` | Domain guidance and logical document namespaces; historical `.json` paths identify database documents/provenance, not source files to recreate. |
-| `lore/authoring*.schema.json` (logical DB schema identifiers), `lore/AUTHORING-JSON.md` (guide) | Typed document/envelope contracts and editorial procedures. Schema identifiers do not imply physical JSON source files to restore. |
-| `lore/editorial/` | Editorial guidance; private source data is not published. |
-| `scripts/` | PG readers and authoring, generation, validators, and migration-only SQLite tooling. See `scripts/cast-sqlite/README.md`. |
-| `src/` | The React wiki application. `src/generated/` is build output. |
-| `docs/editorial/` | Dated editorial records (audits, studies). They are historical records, not rules. |
+| `data/sql/` | 공개 데이터 정본(SQL). 사이트 빌드의 유일한 입력 |
+| `site/` | GitHub Pages 사이트 빌드(`build.mjs`, VitePress 테마, 지도·인물 페이지 생성) |
+| `docs/CANON-BIBLE.md`, `docs/design/v3/` | 세계관 골격과 v3 바이블 |
+| `docs/drafts/` | 위키 문서 초안, 인물 배치 입력, 작업 보고서(`reports/`) |
+| `docs/research/` | 설계 근거 조사(CK3 역공학, 도시국가 정치 등) |
+| `artifacts/seoul-showcase/` | 위키에 함께 게시되는 쇼케이스(글 전용, 음성 없음) |
+| `gdd/` | 게임 설계 정본(JSON). 공개 GDD 페이지는 `data/sql/080`에서 만든다 |
+| `scripts/pages/` | 문서 반영(`rewrite-doc.mjs`), 인물 적용(`v3-apply-people.mjs`), 동결 검사, 금지어 검사, 릴리즈 노트 |
+| `lore/`, `src/`, `server/`, `scripts/cast-sqlite/` | 옛 React 위키·PostgreSQL 시절의 도구와 안내. 이관 기록과 도구로만 남아 있으며 지금 공개 빌드에는 쓰이지 않는다 |
+| `vendor/seoul-dengoku-inkos` | 소유자의 InkOS 포크(서브모듈). 위키 생성·검사·배포에 참여하지 않는다 |
 
-## Local build
+## 기여
 
-Requires Node.js 24.15.0 or newer for the retained SQLite migration tools; deployment uses Node 26. PostgreSQL connection secrets and private generation inputs must be supplied outside the repository.
+1. `docs/CANON-BIBLE.md` 1~3절과 `docs/design/v3/README.md`를 먼저 읽는다. 골격과 고정 사실은 바꾸지 않는다.
+2. 세계관 용어는 지금 실제로 쓰는 말을 국립국어원 표준국어대사전 기준으로 쓴다. 지어낸 말과 다른 작품·역사의 비유 낱말은 세계 안 문장에 쓰지 않는다.
+3. 지어낸 항목은 잠정으로 표시하고 원장에 올린다. 소유자가 답하기 전에는 확정으로 쓰지 않는다.
+4. 전용 브랜치에서 작업하고 위 검사를 통과한 뒤 main으로 PR을 연다. main 병합은 소유자만 한다.
+5. 실존 인물·회사·상표·다른 게임의 고유 명칭은 쓰지 않는다.
 
-```sh
-npm ci --ignore-scripts
-npm run dev          # local wiki with live reload
-node scripts/cast-sqlite/document-cli.mjs list --corpus current # WIKI_AUTHORING_PG required (or WIKI_DOCUMENT_PG)
-node server/wiki-document-api.mjs # WIKI_DOCUMENT_PG or secure WIKI_DOCUMENT_PG_FILE required
-# Protected integration environment: WIKI_DOCUMENT_PG_FILE and WIKI_GENERATION_PRIVATE_PG_FILE:
-node scripts/generate-release.mjs --verify-pg
-```
-
-`--verify-pg`는 임시 stage에서 worker를 검증하며 live output 변경·승격·빌드를 수행하지 않는다. 정식 생성·빌드 진입점인 `npm run generate` / `npm run build`의 일반 PG 실행은 이제 허용된다. 메타데이터 검증, 단일 PostgreSQL 스냅샷 및 비공개 입력의 스냅샷·출처 검증은 그대로 유지한다. 이 검증을 우회하거나 SQLite 폴백으로 전환 성공을 주장하지 않는다. 격리 환경의 빌드·검사 통과와 정확한 SHA 기준 운영 배포 확인은 별도 게이트다.
-
-`npm run generate` and `npm run build` require public and generation-private PostgreSQL connections. Protected builders pass `WIKI_DOCUMENT_PG_FILE` and `WIKI_GENERATION_PRIVATE_PG_FILE`; each names a runtime-user-owned regular file with mode 0600 containing its connection URL. Symlinks are rejected. Readers resolve files without copying URLs into child environment variables. Direct `WIKI_DOCUMENT_PG` and `WIKI_GENERATION_PRIVATE_PG` remain supported outside the protected builder; a scoped URL and file cannot both be configured. Neither mode loads a private SQLite bootstrap environment. For migration diagnostics only, when neither public PostgreSQL source is configured, set `WIKI_MIGRATION_SQLITE=1` and explicitly provide `WIKI_DOCUMENT_DB` plus any other required migration inputs. PostgreSQL takes precedence over the diagnostic flag. `--recover` remains database-independent; `--verify-pg` always requires both PostgreSQL connections. Invoke the catalog worker only through the authenticated release stage, not directly against live output.
-
-A few build inputs (for example the creative-name normalization ledger) live outside this repository. The generator looks for them in the directory named by `SEOUL_KENSHI_ROOT` or in the parent directories of this checkout.
-
-## Checks
-
-```sh
-# External SQLite migration diagnostics only; not a current PG-head validator:
-WIKI_DOCUMENT_DB=/absolute/external/snapshot.sqlite node scripts/lore-json-validate.mjs --strict
-node scripts/check-contract.mjs               # generated Korean-only publication contract
-# Migration-only reconciliation: consult scripts/postgres-migration/reconcile.mjs.
-# Its --pg argument can expose credentials in process arguments; use a protected environment.
-```
-
-The former `test:*` npm scripts/workflows were removed by owner decision (2026-10-26). Retained InkOS adapter tests are not the production publication gate and currently fail on a deleted hardcoded SQLite dependency; an external `WIKI_DOCUMENT_DB` alone cannot repair that reader ([regression boundary](CONTRIBUTING.md#testing-rules)). Data reconciliation, generated-output checks, semantic review and deployment verification are separate; none grants source approval.
-
-## Character creation tools
-
-### Owner's InkOS fork
-
-`vendor/seoul-dengoku-inkos` is a Git submodule of [the owner's fork](https://github.com/islee23520/seoul-dengoku-inkos), pinned to `3d64cb3b796f0d49c023069840c0b4be54ff97dd` on `master` (the merged Korean support). This keeps third-party code beside the existing vendored packages, outside wiki source and publication inputs. Installation always uses the committed pin, not the latest remote branch.
-
-Requires Node.js >=22.16.0, Git and npm. No global InkOS or pnpm installation is needed:
-
-```sh
-npm run inkos:install                     # initialize pin, pnpm 10 frozen install and build
-npm run inkos -- --help
-npm run inkos -- --version
-```
-
-Create InkOS projects outside the wiki checkout. The wrapper preserves the caller's working directory, including when npm selects this repository using `--prefix`:
-
-```sh
-cd /path/to/separate-writing-directory
-npm --prefix /path/to/seoul-dengoku-wiki run inkos -- init --lang ko
-```
-
-InkOS runs as a separate process. Do not give it PostgreSQL canonical/private credentials or SQLite migration databases to read or write. It does not participate in wiki generation, approval, publication or deployment. The existing [candidate-only, read-only database adapter](scripts/inkos-adapter/README.md) remains the boundary; this integration does not connect InkOS directly to it or change its approval rules. LLM configuration remains global at `~/.inkos/.env`; never commit credentials. Help, version and project initialization do not require model calls.
-
-Woodpecker explicitly disables recursive submodule cloning for CI and deployment; the runtime Dockerfile copies only the required `vendor/*.tgz` packages, never the InkOS source or build. The former GitHub Actions test workflows are not a current integration gate.
-
-Character creation sheets and portrait generation tools are maintained in [seoul-dengoku-tools](https://github.com/islee23520/seoul-dengoku-tools), not in a sibling checkout required by this wiki. Reference the [character sheet tool](https://github.com/islee23520/seoul-dengoku-tools/tree/main/TOOL/tools/sheet-local) and [portrait generation tools](https://github.com/islee23520/seoul-dengoku-tools/tree/main/TOOL/avatar-gen/portrait) through their remote GitHub URLs. The wiki owns the character canon and published sheets; the tools repository owns their authoring tools.
-
-## Contributing
-
-1. Read [WORLD_BUILDING_GUIDE.md](WORLD_BUILDING_GUIDE.md) in full, then the `AGENTS.md` of the area you are editing.
-2. Public narrative content is Korean-only; an English translation is not a publication prerequisite. Preserve historical multilingual evidence rather than rewriting it for the public locale policy.
-3. Edit supported typed PostgreSQL documents through `scripts/cast-sqlite/document-cli.mjs`, never generated pages or restored JSON source files. Edits create draft revisions and do not inherit approval. Atlas logical IDs likewise refer to database records, not JSON authoring files.
-4. Run the checks above and open a pull request from a dedicated branch. Only the owner merges into `main`.
-5. A card or story that uses a real person needs that person's recorded permission and a legal note before it is merged. Real companies, products, logos and current executives never appear in the fiction.
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution and verification boundaries and [deploy/README.md](deploy/README.md) for CI/deployment procedures and dated operational observations.
-
-## 한국어 안내
-
-서울전국 공식 위키의 세계관 원천과 위키 앱을 관리하는 저장소입니다. 공개 본문은 한국어로 제공하며 생성물은 손으로 고치지 않습니다. 편집 전에 [세계관 편집 지침](WORLD_BUILDING_GUIDE.md)을 끝까지 읽어 주세요.
+[CONTRIBUTING.md](CONTRIBUTING.md), [docs/RELEASING.md](docs/RELEASING.md)(버전과 갱신 이력)를 함께 본다.
 
 ## License
 
