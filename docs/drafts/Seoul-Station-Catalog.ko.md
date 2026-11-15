@@ -11,7 +11,23 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 
 강남구 선릉과 삼성, 종로구 경복궁, 중구 시청, 영등포구 여의나루, 구로구 신도림이 같은 목록에 나란히 오른다.
 
+## 역과 세력
+
+가. 역의 범위
+
+이 표의 역은 2126년에 지하철역과 그 위 지상 성채 영역을 함께 이르는 영토 단위다. 역 하나를 가진 사람이 역장이다. 역 위치와 노선은 2026년 그대로다.
+
+나. 역의 가치
+
+역의 가치는 환승 노선이 많을수록, 지하로 깊을수록 높다. 지상역과 고가역이 가장 낮고, 지상역 역장은 역장 가운데 최하급이다.
+
+다. 세력별 영토
+
+정부는 한강 북쪽 14구의 역 거점 153곳, 자유도시는 남서쪽 7구의 77곳, 아크는 강남 4구의 77곳을 쥔다. 아래 구별 표의 '역 거점' 수는 [역 거점](/wiki/strongholds/)에 실린 307곳을 구별로 센 것이며, 별칭 행과 거점으로 세지 않는 지도 항목 때문에 표의 행 수와 다르다.
+
 ## 강남구 (24)
+
+세력: 아크 · 역 거점 23곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -42,6 +58,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 
 ## 강동구 (14)
 
+세력: 아크 · 역 거점 13곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 강동 | Gangdong | 37.53580 | 127.13260 | 수도권 전철 |
@@ -61,6 +79,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 
 ## 강북구 (12)
 
+세력: 정부 · 역 거점 11곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 4.19민주묘지 | April 19th National Cemetery | 37.64934 | 127.01369 | 수도권 전철 |
@@ -77,6 +97,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 | 화계 | Hwagye | 37.63403 | 127.01749 | 수도권 전철 |
 
 ## 강서구 (18)
+
+세력: 자유도시 · 역 거점 18곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -101,6 +123,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 
 ## 관악구 (9)
 
+세력: 자유도시 · 역 거점 8곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 관악산 | Gwanaksan | 37.46874 | 126.94533 | 수도권 전철 |
@@ -114,6 +138,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 | 신림 | Sillim | 37.48423 | 126.92968 | 수도권 전철 |
 
 ## 광진구 (11)
+
+세력: 정부 · 역 거점 9곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -131,6 +157,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 
 ## 구로구 (11)
 
+세력: 자유도시 · 역 거점 9곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 개봉 | Gaebong | 37.49459 | 126.85875 | 수도권 전철 |
@@ -147,6 +175,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 
 ## 금천구 (4)
 
+세력: 자유도시 · 역 거점 3곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 가산디지털단지 | Gasan Digital Complex | 37.48159 | 126.88262 | 수도권 전철 |
@@ -155,6 +185,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 | 석수 | Seoksu | 37.43513 | 126.90231 | 한국철도공사 |
 
 ## 노원구 (14)
+
+세력: 정부 · 역 거점 14곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -175,6 +207,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 
 ## 도봉구 (6)
 
+세력: 정부 · 역 거점 6곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 녹천 | Nokcheon | 37.64463 | 127.05140 | 수도권 전철 |
@@ -185,6 +219,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 | 창동 | Chang-Dong | 37.65260 | 127.04798 | 수도권 전철 |
 
 ## 동대문구 (9)
+
+세력: 정부 · 역 거점 9곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -199,6 +235,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 | 회기 | Hoegi | 37.58950 | 127.05762 | 수도권 전철 |
 
 ## 동작구 (16)
+
+세력: 자유도시 · 역 거점 14곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -221,6 +259,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 
 ## 마포구 (13)
 
+세력: 정부 · 역 거점 13곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 공덕 | Gongdeok | 37.54365 | 126.95081 | 수도권 전철 |
@@ -239,6 +279,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 
 ## 서대문구 (10)
 
+세력: 정부 · 역 거점 7곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 가좌 | Gajwa | 37.56868 | 126.91506 | 수도권 전철 |
@@ -253,6 +295,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 | 홍제 | Hongje | 37.58869 | 126.94425 | 수도권 전철 |
 
 ## 서초구 (21)
+
+세력: 아크 · 역 거점 18곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -280,6 +324,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 
 ## 성동구 (12)
 
+세력: 정부 · 역 거점 11곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 뚝섬 | Ttukseom | 37.54724 | 127.04741 | 수도권 전철 |
@@ -296,6 +342,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 | 행당 | Haengdang | 37.55761 | 127.02999 | 수도권 전철 |
 
 ## 성북구 (14)
+
+세력: 정부 · 역 거점 13곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -315,6 +363,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 | 한성대입구(삼선교) | Hansung Univ. (Samseongyo) | 37.58820 | 127.00532 | 서울교통공사 |
 
 ## 송파구 (24)
+
+세력: 아크 · 역 거점 23곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -345,6 +395,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 
 ## 양천구 (7)
 
+세력: 자유도시 · 역 거점 7곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 목동 | Mok-dong | 37.52612 | 126.86452 | 수도권 전철 |
@@ -356,6 +408,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 | 오목교 | Omokgyo | 37.52456 | 126.87512 | 수도권 전철 |
 
 ## 영등포구 (18)
+
+세력: 자유도시 · 역 거점 18곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -380,6 +434,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 
 ## 용산구 (12)
 
+세력: 정부 · 역 거점 12곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 남영 | Namyeong | 37.54054 | 126.97132 | 수도권 전철 |
@@ -397,6 +453,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 
 ## 은평구 (11)
 
+세력: 정부 · 역 거점 11곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 구산 | Gusan | 37.61125 | 126.91722 | 수도권 전철 |
@@ -412,6 +470,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 | 증산 | Jeungsan | 37.58414 | 126.90991 | 수도권 전철 |
 
 ## 종로구 (15)
+
+세력: 정부 · 역 거점 13곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -432,6 +492,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 | 혜화(서울대학교병원) | Hyehwa | 37.58214 | 127.00193 |  |
 
 ## 중구 (19)
+
+세력: 정부 · 역 거점 14곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -456,6 +518,8 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 | 회현(남대문시장) | Hoehyeon (Namdaemun Market) | 37.55876 | 126.97844 | 서울교통공사 |
 
 ## 중랑구 (10)
+
+세력: 정부 · 역 거점 10곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|

@@ -98,7 +98,7 @@ mobilisable       = 0.20 (Government) / 0.30 (Free City) / 0.12 (Arc) x populati
 
 | | Government | Free City | Arc |
 |---|---|---|---|
-| Raising a stage | District orders and corvée labour, one standard plan | Each guild builds its own section with its own money | The steward''s order |
+| Raising a stage | District orders and corvée labour, one standard plan | Each guild builds its own section with its own money | Orders from the bishop or cardinal |
 | Stage 4 | Wide buffer; people outside the register live in the strip | Narrow perimeter, apartment strongholds, surface workshops and greenhouses | Deep-level seal, camouflaged surface entrances |
 | Stage 5 | Radial, spreading from the large interchanges; deep stations as shelters | A mesh of equal stations | One mass joining the deep lines |
 | Weakness | People outside the register are abandoned | Weak stations are holes in the mesh | Short of air and water; tuberculosis risk |
@@ -211,7 +211,7 @@ mobilisable       = 0.20 (Government) / 0.30 (Free City) / 0.12 (Arc) x populati
 
 | | 정부 | 자유도시 | 아크 |
 |---|---|---|---|
-| 단계 올림 | 권역 지시와 부역, 같은 도면 | 조합마다 자기 구간을 자기 돈으로 | 관리인 지시 |
+| 단계 올림 | 권역 지시와 부역, 같은 도면 | 조합마다 자기 구간을 자기 돈으로 | 주교·추기경의 지시 |
 | 4단계 | 넓은 완충 지대, 명부 밖 사람을 띠에 둠 | 좁은 외곽, 아파트 성채, 지상 작업장·온실 | 깊은 층 봉쇄, 지상 출입구 위장 |
 | 5단계 | 큰 환승역에서 퍼지는 방사형, 깊은 역을 대피소로 | 대등한 역끼리 그물형 | 깊은 노선을 잇는 한 덩어리 |
 | 약점 | 명부 밖 사람이 버려짐 | 약한 역이 그물의 틈 | 공기와 물이 모자라 결핵 위험 |

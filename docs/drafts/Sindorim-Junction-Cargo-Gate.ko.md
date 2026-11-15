@@ -2,7 +2,7 @@
 title: Sindorim Junction Cargo Gate
 title_ko: 신도림 연결부 화물문
 model: unchanged-ko-manual-anchor-alignment
-section_checkpoint: KEEP: anchors only
+section_checkpoint: KEEP anchors; v4 places overhaul 2026-11-16 added the stronghold section
 ---
 <a id="gate"></a>
 
@@ -17,6 +17,16 @@ section_checkpoint: KEEP: anchors only
 여과재 한 짐은 여러 사람의 등에 나누어 멜 수 있어서 정비 통로로도 옮길 수 있다.
 
 구리 부품 한 짐은 장비 없이는 분해하거나 운반할 수 없다. 이 짐은 주 화물문으로만 옮긴다.
+
+<a id="stronghold"></a>
+
+## 역 거점으로서의 신도림
+
+신도림은 구로구의 자유도시 역이다. 1호선과 2호선이 만나는 환승역이고 지하 깊은 층이 있어 역의 가치가 높다. '역'은 지하철역과 그 위 지상 성채 영역을 함께 이르며, 역 하나를 가진 사람이 역장이다.
+
+2126년 신도림은 4단계 지상 외곽 방어선에서 시작하는 큰 환승역 일곱 곳 가운데 하나다. 철도 성토가 성곽의 큰 몫을 맡는 철도성토형 거점이다. 단계 이름과 수치는 잠정이며 [역 거점](/wiki/strongholds/sindorim/)에 있다.
+
+사람은 지하에 산다. 깊은 층일수록 윗사람이 살고, 지상 역사의 높은 층은 감시와 숨긴 출입구로 쓴다.
 
 <a id="request"></a>
 

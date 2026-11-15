@@ -9,7 +9,7 @@ An administrative map lays out Seoul from Jongno-gu to Gangdong-gu. The rail net
 
 B. Post-collapse geography
 
-The geography that grounded the new age consisted of the 25 autonomous districts, the principal stations within them, the key facilities at their sides, and the 25 duchies of the three factions. How buildings and facilities found new uses after the collapse was an important key to understanding the survivors' lives.
+The geography that grounded the new age consisted of the 25 autonomous districts, the principal stations within them, the key facilities at their sides, and the station strongholds shared out among the three factions. How buildings and facilities found new uses after the collapse was an important key to understanding the survivors' lives.
 
 C. Related documents
 
@@ -25,7 +25,7 @@ Jongno-gu, Jung-gu, Yongsan-gu, Seongdong-gu, Gwangjin-gu, Dongdaemun-gu, Jungna
 
 B. Districts and spheres
 
-These twenty-five remained the world map's core sectors. Each district is one duchy, and a duchy is called by its district's name.
+These twenty-five remained the world map's core sectors. A district is a unit of place names and areas, not a unit of territory. Territory is counted by station.
 
 ## The Station List
 
@@ -53,11 +53,11 @@ C. Markets and support facilities
 
 The principal markets where bulk goods moved — Garak Market, Gangseo Market, Yanggok Market, and the Noryangjin Fisheries Market — formed the skeleton. Beyond them, hospitals, fire stations, police stations, substations, and rail marshaling yards remained beside the stations, backing each stronghold's role.
 
-## Laying the Duchies Over the Districts
+## Laying Faction Territory Over the Districts
 
-A. Basis of the duchies
+A. Basis of territory
 
-The duchies do not replace the districts. Place names, stations, and facilities remain as they were, and only political ownership is divided by district. The Government holds the 14 districts north of the Han River, the Free City the 7 southwestern districts, and the Arc the 4 Gangnam districts. A Government duchy is held by the Senator elected from that district. The Gwanak-gu duchy is held by I Ilseop, Duke of Gwanak.
+Faction territory does not replace the districts. Place names, stations, and facilities remain as they were. The smallest unit of territory is the station, and a "station" means the subway station together with the surface stronghold above it. Counted by the stations they hold, the Government has 153 station strongholds in the 14 districts north of the Han River, the Free City 77 in the 7 southwestern districts, and the Arc 77 in the 4 Gangnam districts.
 
 | District | Faction |
 |---|---|
@@ -89,17 +89,43 @@ The duchies do not replace the districts. Place names, stations, and facilities 
 
 B. Ownership and occupation
 
-The opening map derives surface control at 311 stations from the territory register. Gwangmyeong Sageori, Daechi, and Seoksu lie outside the mapped surface regions; each station's interior has its own control record.
+The faction and stage of each of the 307 station strongholds are in [Station Strongholds](/wiki/strongholds/). The opening map derives surface control at 311 stations from the territory register. Gwangmyeong Sageori, Daechi, and Seoksu lie outside the mapped surface regions; each station's interior has its own control record.
+
+C. People who change sides
+
+Whatever rank people held at home, those who move to another faction lose their property and territory and fall to the lowest class. The faction that takes them in uses their skills and does not raise their standing.
+
+## Stations and Rank
+
+A. The rank ladder
+
+Rank in all three factions is set by the number of stationmasters a person commands. A person who holds one station is a stationmaster.
+
+| Stationmasters commanded | Government | Arc | Free City |
+|---|---|---|---|
+| 1 (holds one station) | Stationmaster | Stationmaster | Stationmaster |
+| 2-4 | Headquarters Chief | Headquarters Chief | Headquarters Chief |
+| 5-9 | Bureau Director | Bishop | Guild Head |
+| 10 or more (all stationmasters below) | Commissioner | Cardinal | Director |
+| Top | President (Kim Yeongyu) | Hierophant (Go Yejin) | Chair of the Board (I Ilseop) |
+
+B. Appointment and precedence
+
+The ten-stationmaster rank is reached by appointment. The President appoints Government commissioners, the Hierophant ordains Arc cardinals, and the board appoints Free City directors. Some who qualify are never appointed. Unofficial precedence among headquarters chiefs follows the number of stationmasters they command and the value of their stations.
+
+C. The value of a station
+
+A station is worth more the more transfer lines meet in it and the deeper it goes. The stationmaster of a surface station ranks lowest among stationmasters. Everyone who holds no station is an ordinary citizen.
 
 ## Nodes and Layers
 
 A. Stronghold layers
 
-The single stronghold called a station divided into several vertical layers. Concourse, transfer corridors, deep tunnels — each layer carried its own role and its own lurking dangers.
+The single stronghold called a station divided into several vertical layers. Concourse, transfer corridors, deep tunnels — each layer carried its own role and its own lurking dangers. The deeper the level, the higher the people who live there: deep levels keep intruders out behind shutters, make the exits easy to control and watch, and are warmed by the ground.
 
 | Layer | Work | Risk |
 |---|---|---|
-| Surface ruins | Gathering, solar power, observation | Weather, collapse |
+| Surface stronghold | Gathering, solar power, observation, citizens' housing (the higher the floor, the lower the people) | Cold, strong wind, drone watching and attack, collapse |
 | Station concourse | Markets, habitation, administration | Crowding, fire |
 | Platform · tracks | Movement, defense, freight | Bottlenecks, ambush |
 | Transfer corridors | Politics and logistics between lines | Blockades, transit tolls |

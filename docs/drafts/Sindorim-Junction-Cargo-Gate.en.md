@@ -2,7 +2,7 @@
 title: Sindorim Junction Cargo Gate
 title_ko: 신도림 연결부 화물문
 model: unchanged-ko-manual-anchor-alignment
-section_checkpoint: KEEP: anchors only
+section_checkpoint: KEEP anchors; v4 places overhaul 2026-11-16 added the stronghold section
 ---
 <a id="gate"></a>
 
@@ -17,6 +17,16 @@ The junction runs from an outer waiting point through the main cargo gate to an 
 A load of filter media can be split across several backs, so it can go through the maintenance passage.
 
 A load of copper parts cannot be broken down or carried without equipment. It moves only through the main cargo gate.
+
+<a id="stronghold"></a>
+
+## Sindorim as a station stronghold
+
+Sindorim is a Free City station in Guro-gu. It is a transfer station where Line 1 and Line 2 meet, and it has deep underground levels, so it is a valuable station. A "station" means the subway station together with the surface stronghold above it, and a person who holds one station is a stationmaster.
+
+In 2126 Sindorim is one of the seven large interchanges that start at stage 4, the Surface Perimeter Line. It is a rail-embankment stronghold, where the railway embankment carries much of the perimeter. The stage names and figures are provisional and are in [Station Strongholds](/wiki/strongholds/sindorim/).
+
+People live underground. The deeper the level, the higher the people who live there, and the upper floors of the surface station building serve for watching and hidden entrances.
 
 <a id="request"></a>
 

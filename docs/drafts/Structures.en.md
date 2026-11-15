@@ -4,7 +4,7 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 
 **A. How stations and tunnels are laid out**
 
-The Seoul of the time was not a flat administrative map but a graph of stations, tunnels, and sluices. Even in 2026 people crossed gu by subway, and the treatment centers and depots sat as the heavy nodes of that graph. On the night of [The Great Blackout](/wiki/World-Unbinding/), when remote control died, stations became fortresses and faction strongholds, tunnels became licensed passage, and treatment plants and sluices became lock gates that opened only under signature. A century on, the three factions of 2126 read those points and lines as living spheres, and each duchy is called by its gu name.
+The Seoul of the time was not a flat administrative map but a graph of stations, tunnels, and sluices. Even in 2026 people crossed gu by subway, and the treatment centers and depots sat as the heavy nodes of that graph. On the night of [The Great Blackout](/wiki/World-Unbinding/), when remote control died, stations became fortresses and faction strongholds, tunnels became licensed passage, and treatment plants and sluices became lock gates that opened only under signature. A century on, the three factions of 2126 read those points and lines as living spheres, and territory is divided by station rather than by gu.
 
 The [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) records 334 observed-name rows for 315 stations. [The Structure of the World Map](/wiki/World-Map-Construction/) records 25 gu and their assembly order; [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/) records six layers. Building use is recorded in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
 
@@ -14,7 +14,17 @@ The [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) records 334 observed-n
 
 A station brought people, facilities, and connections back into use. In a dong with a subway station, the station building was the core facility; distribution, passage tolls, lodging, and refuge were handled there. Schools, community centers, and hospitals supported it. After the March 14, 2053 agreement, the Yeouido houses managed eleven water facilities around Yeongdeungpo Station. From 2106, passes for Jongno and Junggu carried the Government Seoul Complex stamp from Gwanghwamun. Amsa Station administered water and escort protection from its platform. Sindorim was the bottleneck between Yeongdeungpo and Guro, while Suseo held a southern depot and contract administration. The parties and signatures of the 2053 agreement were recorded in [the oral records](/wiki/Oral-Stories/#the-2053-yeongdeungpo-water-agreement).
 
-A station has six layers: surface ruins, the concourse, platforms and tracks, transfer corridors, deep tunnels, and depot adjacency. Markets, homes, and offices occupy the concourse; people and freight move through the platforms; toll collectors hold the transfer corridors. The facilities adjoining each station are recorded in [Entering the Station Interior](/wiki/Station-Interior-Construction/). The terms by which a stronghold holds its territory are recorded in Strongholds and Territory.
+A station has six layers: the surface stronghold, the concourse, platforms and tracks, transfer corridors, deep tunnels, and depot adjacency. Markets, homes, and offices occupy the concourse; people and freight move through the platforms; toll collectors hold the transfer corridors. The facilities adjoining each station are recorded in [Entering the Station Interior](/wiki/Station-Interior-Construction/). The terms by which a stronghold holds its territory are recorded in Strongholds and Territory.
+
+**B. What a station covers and what it is worth**
+
+A "station" means the subway station together with the surface stronghold above it. One station is the smallest unit of territory, and a person who holds one station is a stationmaster. A station is worth more the more transfer lines meet in it and the deeper it goes. Surface and elevated stations are worth the least, and the stationmaster of a surface station ranks lowest among stationmasters. The Government holds 153 station strongholds in the 14 districts north of the Han, the Free City 77 in the 7 southwestern districts, and the Arc 77 in the 4 Gangnam districts.
+
+Depth also divides standing. The deeper the level, the higher the people who live there. Deep levels keep intruders out behind shutters, make the exits easy to control and watch, and are warmed by the ground. Above ground, the higher the floor, the lower the people: high floors are cold and windy and lie open to watching and attack from the air, drones included.
+
+**C. Five stages**
+
+A station stronghold grows through five stages under shocks and the pressure of population. The stage names and figures are provisional: stage 1 Entrance Post, stage 2 Concourse Stronghold, stage 3 Station Precinct Defence, stage 4 Surface Perimeter Line (for the Arc, Deep-Level Seal), and stage 5 Inter-Station Defence Network. Of the 307 strongholds in 2126, 250 start at stage 3, 50 at stage 2, and seven large interchanges (Seoul Station, Cheongnyangni, Wangsimni, Dongdaemun History & Culture Park, Express Bus Terminal, Sadang, Sindorim) at stage 4. Surface and elevated stations and line ends start at stage 2. A stronghold that loses 30% of its people or runs out of reserves drops one stage. The figures for each station are in [Station Strongholds](/wiki/strongholds/).
 
 In 2106, Jongno and Junggu passes and commercial contracts received a Government Seoul Complex stamp. A counterfeit medicine box appeared at a Seoul Station auction in 2124.
 
@@ -32,9 +42,9 @@ Since 2026, machines have repeated their last search and guard routines on survi
 
 **A. The eight depots**
 
-Depot area reflects the rolling-stock storage and maintenance scale of 2026. Eight depots lie within Seoul: Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, and Suseo. Each depot belongs to the duchy of the gu it stands in. Jichuk, Dobong, Moran, and Gimpo lie outside the Seoul slots.
+Depot area reflects the rolling-stock storage and maintenance scale of 2026. Eight depots lie within Seoul: Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, and Suseo. Each depot belongs to the faction that holds the station strongholds beside it. Jichuk, Dobong, Moran, and Gimpo lie outside the Seoul slots.
 
-A depot was the seat of repair, bulk storage, and siege. Sinjeong's unloading and Godeok's train maintenance became a faction's arms of legitimacy because the hands that moved a stopped train again or sent a convoy were there; Changdong's wheels and brakes lost their owner and remained only as leases in neighboring heads' ledgers. The drainage ponds became the water surface where tank aquaculture and migratory birds overlapped, and in the deep bays of maintenance sheds looping chassis are sealed. The charging terminals and hydraulic hoses were the repair layer of [Lost Technology](/wiki/Lost-Technology-Lineage/).
+A depot was the seat of repair, bulk storage, and siege. Sinjeong's unloading and Godeok's train maintenance became a faction's arms of legitimacy because the hands that moved a stopped train again or sent a convoy were there; Changdong's wheels and brakes lost their owner and remained only as leases in neighbouring stationmasters' ledgers. The drainage ponds became the water surface where tank aquaculture and migratory birds overlapped, and in the deep bays of maintenance sheds looping chassis are sealed. The charging terminals and hydraulic hoses were the repair layer of [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
 The industrial blocks of Guro and Geumcheon clung to the depots and used schools for drying parts, and the residential shells of Dobong and Nowon could not hold water without Changdong.
 
@@ -60,7 +70,7 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 
 | Structure | 2026 starting point | Work at the opening | Details |
 |---|---|---|---|
-| Station | The 315 stations, concourses and platforms | Fortress, ration windows, faction strongholds | [the Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) |
+| Station | The 315 stations, concourses and platforms, and the surface stronghold above them | Fortress, ration windows, the faction's unit of territory held by a stationmaster | [the Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) |
 | Tunnel | Adjacent lines drawn from map points, transfers | Licensed passage, the states of flooding and blockade | [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/) |
 | Depot | Sinjeong·Cheonwang·Banghwa·Gunja·Godeok·Changdong·Sinnae·Suseo | Repair, rolling stock, wheels and convoys | [The Structure of the World Map](/wiki/World-Map-Construction/) |
 | Treatment plant · sluice | Yeongdeungpo·Ttukseom·Guui·Amsa Arisu | Water signatures, lock-gate watches | [the Three Factions of Seoul](/wiki/Sixteen-States/) |

@@ -11,7 +11,23 @@ b. Examples from the roster
 
 Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in Jung-gu, Yeouinaru in Yeongdeungpo-gu, and Sindorim in Guro-gu stand together on the roster.
 
+## Stations and Factions
+
+A. What a station covers
+
+A station in this table is the unit of territory that, in 2126, means the subway station together with the surface stronghold above it. A person who holds one station is a stationmaster. Station positions and lines are as they were in 2026.
+
+B. What a station is worth
+
+A station is worth more the more transfer lines meet in it and the deeper it goes. Surface and elevated stations are worth the least, and the stationmaster of a surface station ranks lowest among stationmasters.
+
+C. Territory by faction
+
+The Government holds 153 station strongholds in the 14 districts north of the Han, the Free City 77 in the 7 southwestern districts, and the Arc 77 in the 4 Gangnam districts. The stronghold count under each district below counts the 307 strongholds in [Station Strongholds](/wiki/strongholds/) by district; it differs from the number of table rows because of alias rows and map entries not counted as strongholds.
+
 ## Gangnam-gu (24)
+
+Faction: Arc · 23 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -42,6 +58,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Gangdong-gu (14)
 
+Faction: Arc · 13 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Gangdong | Gangdong | 37.53580 | 127.13260 | Seoul Metropolitan Subway |
@@ -61,6 +79,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Gangbuk-gu (12)
 
+Faction: Government · 11 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | 4.19 Minju Myoji | April 19th National Cemetery | 37.64934 | 127.01369 | Seoul Metropolitan Subway |
@@ -77,6 +97,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Hwagye | Hwagye | 37.63403 | 127.01749 | Seoul Metropolitan Subway |
 
 ## Gangseo-gu (18)
+
+Faction: Free City · 18 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -101,6 +123,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Gwanak-gu (9)
 
+Faction: Free City · 8 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Gwanaksan | Gwanaksan | 37.46874 | 126.94533 | Seoul Metropolitan Subway |
@@ -114,6 +138,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Sillim | Sillim | 37.48423 | 126.92968 | Seoul Metropolitan Subway |
 
 ## Gwangjin-gu (11)
+
+Faction: Government · 9 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -131,6 +157,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Guro-gu (11)
 
+Faction: Free City · 9 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Gaebong | Gaebong | 37.49459 | 126.85875 | Seoul Metropolitan Subway |
@@ -147,6 +175,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Geumcheon-gu (4)
 
+Faction: Free City · 3 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Gasan Digital Complex | Gasan Digital Complex | 37.48159 | 126.88262 | Seoul Metropolitan Subway |
@@ -155,6 +185,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Seoksu | Seoksu | 37.43513 | 126.90231 | Korail |
 
 ## Nowon-gu (14)
+
+Faction: Government · 14 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -175,6 +207,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Dobong-gu (6)
 
+Faction: Government · 6 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Nokcheon | Nokcheon | 37.64463 | 127.05140 | Seoul Metropolitan Subway |
@@ -185,6 +219,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Changdong | Chang-Dong | 37.65260 | 127.04798 | Seoul Metropolitan Subway |
 
 ## Dongdaemun-gu (9)
+
+Faction: Government · 9 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -199,6 +235,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Hoegi | Hoegi | 37.58950 | 127.05762 | Seoul Metropolitan Subway |
 
 ## Dongjak-gu (16)
+
+Faction: Free City · 14 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -221,6 +259,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Mapo-gu (13)
 
+Faction: Government · 13 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Gongdeok | Gongdeok | 37.54365 | 126.95081 | Seoul Metropolitan Subway |
@@ -239,6 +279,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Seodaemun-gu (10)
 
+Faction: Government · 7 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Gajwa | Gajwa | 37.56868 | 126.91506 | Seoul Metropolitan Subway |
@@ -253,6 +295,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Hongje | Hongje | 37.58869 | 126.94425 | Seoul Metropolitan Subway |
 
 ## Seocho-gu (21)
+
+Faction: Arc · 18 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -280,6 +324,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Seongdong-gu (12)
 
+Faction: Government · 11 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Ttukseom | Ttukseom | 37.54724 | 127.04741 | Seoul Metropolitan Subway |
@@ -296,6 +342,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Haengdang | Haengdang | 37.55761 | 127.02999 | Seoul Metropolitan Subway |
 
 ## Seongbuk-gu (14)
+
+Faction: Government · 13 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -315,6 +363,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Hanseong University (Samseongyo) | Hansung Univ. (Samseongyo) | 37.58820 | 127.00532 | Seoul Metro |
 
 ## Songpa-gu (24)
+
+Faction: Arc · 23 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -345,6 +395,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Yangcheon-gu (7)
 
+Faction: Free City · 7 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Mok-dong | Mok-dong | 37.52612 | 126.86452 | Seoul Metropolitan Subway |
@@ -356,6 +408,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Omokgyo | Omokgyo | 37.52456 | 126.87512 | Seoul Metropolitan Subway |
 
 ## Yeongdeungpo-gu (18)
+
+Faction: Free City · 18 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -380,6 +434,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Yongsan-gu (12)
 
+Faction: Government · 12 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Namyeong | Namyeong | 37.54054 | 126.97132 | Seoul Metropolitan Subway |
@@ -397,6 +453,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Eunpyeong-gu (11)
 
+Faction: Government · 11 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Gusan | Gusan | 37.61125 | 126.91722 | Seoul Metropolitan Subway |
@@ -412,6 +470,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Jeungsan | Jeungsan | 37.58414 | 126.90991 | Seoul Metropolitan Subway |
 
 ## Jongno-gu (15)
+
+Faction: Government · 13 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -432,6 +492,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Hyehwa (Seoul National University Hospital) | Hyehwa | 37.58214 | 127.00193 |  |
 
 ## Jung-gu (19)
+
+Faction: Government · 14 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -456,6 +518,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Hoehyeon (Namdaemun Market) | Hoehyeon (Namdaemun Market) | 37.55876 | 126.97844 | Seoul Metro |
 
 ## Jungnang-gu (10)
+
+Faction: Government · 10 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
