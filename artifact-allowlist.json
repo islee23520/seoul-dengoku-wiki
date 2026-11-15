@@ -18,7 +18,8 @@
     "portraits": "^person-[0-9]{4}\\.png$",
     "clan-crests": "^(?:[a-z0-9-]+\\.svg|index\\.json)$",
     "family-trees": "^[a-z0-9-]+\\.json$",
-    "state-flags": "^(?:S(?:0[1-9]|1[0-6])|concept-sheet)\\.webp$"
+    "state-flags": "^(?:S(?:0[1-9]|1[0-6])|concept-sheet)\\.webp$",
+    "strongholds": "^[a-z0-9]+(?:-[a-z0-9]+)*-(?:ground|underground)\\.webp$"
   },
   "assets": {
     "pattern": "^(.+)-[A-Za-z0-9_-]{8}\\.(?:js|css)$",

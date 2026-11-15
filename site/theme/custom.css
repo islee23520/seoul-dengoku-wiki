@@ -66,3 +66,4 @@
 .ft-name { fill: var(--vp-c-text-1); font: 600 14px var(--vp-font-family-base); } .ft-meta { fill: var(--vp-c-text-2); font: 12px var(--vp-font-family-base); } .ft-gen { fill: var(--vp-c-text-3); font: 12px var(--vp-font-family-base); }
 .ft-edge { fill: none; stroke: var(--vp-c-text-3); stroke-width: 1.5; } .ft-edge.adoptive, .ft-edge.household { stroke-dasharray: 5 4; }
 .ft-wrap a { text-decoration: none; }
+.stronghold-plan { margin: 16px 0; } .stronghold-plan img { display: block; max-width: 100%; height: auto; border-radius: 6px; }
