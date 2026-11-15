@@ -117,5 +117,5 @@ Values stood for the practice the current majority followed.
 | Faction | Salient axes | Practice at the opening |
 |---|---|---|
 | Government | Authority (command), qualification (heredity) | Recognizes as citizens only those entered in its registers. Trades pass from parents to children. The President serves for life. |
-| Free City | Decentralization (living-sphere partition) | Each city holds its own power; there is no king. Goods and skills are exchanged. |
+| Free City | Decentralization (living-sphere partition) | Each city holds its own power; there is no king. Goods and skills are exchanged, and doctors and food let it hold out. |
 | Arc | Authority (Hierophant and families) | Rule runs through families, and believers receive baptism. |

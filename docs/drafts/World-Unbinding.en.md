@@ -102,7 +102,7 @@ The Government rules the 14 districts north of the Han River. On paper it mainta
 
 **B. The Free City**
 
-The Free City consists of the 7 districts in the southwest. Rather than a single power, it is a collection of independent cities, each holding its own duchy, and it has no king. Most residents are technicians who trade goods and skills with one another. Because there was no way to judge whose skills were greater, they never managed to choose a leader. The Duke of Gwanak is I Ilseop. Today these cities are collectively called the Union, but when Go Ye-jin was growing up, it was simply the Free City.
+The Free City consists of the 7 districts in the southwest. Rather than a single power, it is a collection of independent cities, each holding its own duchy, and it has no king. Most residents are skilled hands who live by their work. Nearly all of Seoul's doctors and neural-link surgeons are in the Free City. The Free City's weapons are people and food, and its doctors let it hold out longest. Because there was no way to judge whose skills were greater, they never managed to choose a leader. The Duke of Gwanak is I Ilseop. Today these cities are collectively called the Union, but when Go Ye-jin was growing up, it was simply the Free City.
 
 **C. The Arc**
 
@@ -120,11 +120,11 @@ After the Great Blackout, the only organized faith in Seoul is the Arc. The Arc 
 
 **A. Origins**
 
-Go Ye-jin grew up in the Free City. In 2112, while repairing the Free City's power grid, she followed a dead cable and found a station that appeared on no map. She spent five years reading the manuals there, and around 2117 she performed the first baptism. Twelve people were baptized at that time. In 2120, Ji Yeon-hui stood beside Go Ye-jin at negotiations with the shelters near Tancheon, and around 2122 the Gangnam shelters were united under the name Arc.
+Go Ye-jin grew up in the Free City. In 2112, while repairing the Free City's power grid, she followed a dead cable and found a station that appeared on no map. She spent five years reading the manuals there, and around 2117 she opened the first baptism; the work of joining the machines to the nerves fell to a doctor who came from the Free City. Twelve people were baptized at that time. In 2120, Ji Yeon-hui stood beside Go Ye-jin at negotiations with the shelters near Tancheon, and around 2122 the Gangnam shelters were united under the name Arc.
 
 **B. Baptism**
 
-The Arc teaches that parts of the body should be replaced with machinery. This implantation is baptism. In the Arc, faith is counted by the number of implanted body parts.
+The Arc teaches that parts of the body should be replaced with machinery. This implantation is baptism. In the Arc, faith is counted by the number of implanted body parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor.
 
 | Item | Details |
 |---|---|

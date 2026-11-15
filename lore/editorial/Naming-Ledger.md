@@ -36,7 +36,7 @@
 | 대한민국정부 | 대통령 | 장관 | 차관 | 국장 | 주사·기록 당직자 | 관직（`../offices/Offices-and-Ranks.md#국가별-관직표`） |
 | 수문국 | 군주 | 본부장 | 구역장 | 당직장 | 주사 | 관직（`../offices/Offices-and-Ranks.md#국가별-관직표`） |
 | 환적국 | 역장 | 본부장 | 구역장 | 당직장 | 주사 | 관직（`../offices/Offices-and-Ranks.md#국가별-관직표`） |
-| 동방사 | 사령관 | 참모장 | 대대장 | 중대장 | 병장 | 관직（`../offices/Offices-and-Ranks.md#국가별-관직표`） |
+| 동방사(v4: 아크 소총 세습 경비 조직, 장교단 없음) | 경비 책임자(세습) | 부책임자 | 경비 책임자(구역) | 경비조장 | 경비대원 | 관직（`../offices/Offices-and-Ranks.md#국가별-관직표`） |
 | 아관사 | 사령관 | 참모장 | 대대장 | 중대장·수비대장·현장책임자 | 병장·공동실무원·수비대원 | 관직（`../offices/Offices-and-Ranks.md#국가별-관직표`） |
 | 명부교회 | 당회장 | 장로 | 권사 | 집사 | 교사 | 관직（`../offices/Offices-and-Ranks.md#국가별-관직표`） |
 | 명동대교구 | 대주교 | 신부 | 수사 | 부제 | 교우 | 관직（`../offices/Offices-and-Ranks.md#국가별-관직표`） |
@@ -48,7 +48,7 @@
 | 정동노총 | 위원장 | 부위원장 | 본부장 | 지부장 | 조합원 | 관직（`../offices/Offices-and-Ranks.md#국가별-관직표`） |
 | 규격맹 | 위원장 | 상임이사 | 이사 | 감사 | 조합원 | 관직（`../offices/Offices-and-Ranks.md#국가별-관직표`） |
 | 신내운수 | 사장 | 배차장 | 반장 | 서기 | 호송원 | 관직（`../offices/Offices-and-Ranks.md#국가별-관직표`） |
-| 흰십자단 | 단장 | 전문의 | 수련의 | 의무원 | 회원 | 관직（`../offices/Offices-and-Ranks.md#국가별-관직표`） |
+| 흰십자단(v4: 정부 응급 처치·이송 조직, 의사 없음) | 단장 | 응급처치원 | 이송원 | — | — | 관직（`../offices/Offices-and-Ranks.md#국가별-관직표`） |
 
 ## 작품명
 

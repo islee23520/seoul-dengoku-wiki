@@ -55,7 +55,7 @@ In June 2097 the Water Gate Bureau signed a contract with the waterway keepers o
 
 B. Reconstruction worker register
 
-In the winter of 2120 the Eastern Command demanded, in exchange for supplying pump parts, that the Standards League register its restoration service personnel. Gang Minseo of the Standards League entered the technicians who refused registration on the league's citizenship roll.
+In the winter of 2120 Go Ye-jin's following, later the Arc, demanded, in exchange for unlocking the pump control software, that the Standards League register its restoration service personnel. Gang Minseo of the Standards League entered the technicians who refused registration on the league's citizenship roll.
 
 C. Refugee register
 

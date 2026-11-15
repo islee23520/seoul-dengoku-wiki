@@ -2,6 +2,8 @@
 model: original drafts by cpa/claude-opus-5-5; rework by cpa/glm-5.3; 0 completion calls in both rounds; agent-authored text with scripted edits; not from a Gemini model
 section_checkpoint: complete
 ---
+합성 행위자의 기체와 모듈은 보관 가문이 쥐지만, 상위 기능을 여는 제어 소프트웨어는 아크가 독점한다. 아크가 서명한 소프트웨어가 없으면 아래 기체들은 켜고 끄는 기초 기능과 단순한 명령만 받는다. 각 항목의 "정비"는 하드웨어 정비를 뜻한다.
+
 <a id="Synthetic-Actors-heading-0001"></a>
 
 <a id="Synthetic-Actors-heading-0002"></a>
@@ -663,7 +665,7 @@ section_checkpoint: complete
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
 - 관계: K323 custodian, HP07 steward_house, K204 work_peer
 
-동대문 기계실에서 의료멸균(멸균)이 HP07 당직 로그에 출입을 남긴다.
+동대문 기계실의 의료멸균(멸균)은 아크가 서명한 소프트웨어가 없어 멈춰 있고, HP07 당직 로그에는 봉인 점검 출입만 남는다. 의료 기계를 돌릴 의사는 자유도시 쪽에 있다.
 
 심달호은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 

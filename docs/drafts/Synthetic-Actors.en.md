@@ -2,6 +2,8 @@
 model: original drafts by cpa/claude-opus-5-5; rework by cpa/glm-5.3; 0 completion calls in both rounds; agent-authored text with scripted edits; not from a Gemini model
 section_checkpoint: complete
 ---
+The custodian houses hold the synthetic actors' chassis and modules, but the control software that opens their higher functions is held exclusively by the Arc. Without Arc-signed software, the units below take only basic on-and-off functions and simple commands. "Maintenance" in each entry means hardware maintenance.
+
 <a id="Synthetic-Actors-heading-0001"></a>
 
 <a id="Synthetic-Actors-heading-0002"></a>
@@ -663,7 +665,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K323 custodian, HP07 steward_house, K204 work_peer
 
-In the machine room of Dongdaemun, Medical Sterilization (Myeolgun) logged its entry in the HP07 duty log.
+Medical Sterilization (Myeolgun) stands idle in the Dongdaemun machine room for lack of Arc-signed software, and the HP07 duty log records only seal-check entries. The doctors who could put medical machines to work are on the Free City side.
 
 Sim Dalho checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 

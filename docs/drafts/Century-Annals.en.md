@@ -702,7 +702,7 @@ In August 2058 the first forged certificates, seventeen of them, turned up in Gu
 
 ##### A. Taeuk Heavy Industries
 
-In September 2058 Jeong Mansu named his factory Taeuk Heavy Industries. That same year six workshops around the factory were incorporated into Taeuk Heavy Industries. The incorporation documents were signed by Jeong Mansu and the head of each workshop.
+In September 2058 Jeong Mansu named his factory Taeuk Heavy Industries. That same year six workshops around the factory were incorporated into Taeuk Heavy Industries. The incorporation documents were signed by Jeong Mansu and the head of each workshop. The Yangjae factory later stopped, and by 2126 it survives only as a repair workshop that can no longer build vehicle bodies.
 
 <a id="peninsula-2058-busan-sailings"></a>
 <a id="event-peninsula-2058-busan-sailings"></a>
@@ -800,7 +800,7 @@ In February 2066 Jeong Mansu died, and his eldest son Jeong Taehun succeeded him
 
 ##### A. The White Cross
 
-In March 2066 fourteen doctors at the Jegi-dong hospital put on a white cross emblem and treated surface workers and underground residents alike. Their ranks were set by length of training. The first head, Gang Hyerin, named her successor in writing.
+In March 2066 fourteen first-aid duty staff at the Jegi-dong hospital put on a white cross emblem and handled bleeding control and transport for surface workers and underground residents alike. The doctors who could operate had already left for the far side of the river; why they left is not recorded. Ranks among the duty staff were set by length of service. The first head, Gang Hyerin, named her successor in writing.
 
 <a id="2068년"></a>
 
@@ -1157,7 +1157,7 @@ In July 2100 the Transshipment Bureau designated the end-of-line strongholds at 
 
 #### A. Worksites
 
-In March 2101 Taeuk Group named its factory strongholds in Seongnam and Suwon the Taeuk Heavy Industries Seongnam Worksite and Suwon Worksite. Both worksites sent parts and workers to Yangjae along the Sinbundang Line. In the first year the Seongnam Worksite had some 1,400 workers.
+In March 2101 Taeuk Group named its factory strongholds in Seongnam and Suwon the Taeuk Heavy Industries Seongnam Worksite and Suwon Worksite. Both worksites sent parts and workers to Yangjae along the Sinbundang Line. In the first year the Seongnam Worksite had some 1,400 workers. Both worksites lay outside Seoul. Even after the Gangnam shelters were united as the Arc, the factory plant never became the Arc's; inside Seoul the Arc holds only repair workshops.
 
 <a id="2102년"></a>
 
@@ -1181,7 +1181,7 @@ In April 2102 the Standards League admitted the workshops of Cheonan-Asan and Si
 
 ##### A. The I Family
 
-The First Branch Workshop joined the Standards League in 2102. Thereafter the I family of Cheonan-Asan managed the First Branch Workshop under the Standards League. The family looked after the rail yard at the southern end of Line 1 and four workshops. I Ilseop was heir of the I family. As of 2126 I Ilseop is the Duke of Gwanak.
+The First Branch Workshop joined the Standards League in 2102. Thereafter the I family of Cheonan-Asan managed the First Branch Workshop under the Standards League. The family looked after the rail yard at the southern end of Line 1 and four workshops. I Ilseop was heir of the I family. The I family has handed down neural-link surgery for generations; the rail-yard field and the workshops are its side work. As of 2126 I Ilseop is the Duke of Gwanak.
 
 <a id="2104년"></a>
 
@@ -1227,7 +1227,7 @@ In June 2106 the Government ruled that passes in Jongno and Jung-gu must bear th
 
 #### A. The Guui Clash
 
-In August 2107 the Eastern Command and the Achasan Gate Command came to blows over the water supply at Guui. The clash lasted two days, with some 40 casualties on both sides. Six Sinnae Transport carts carried the wounded of both sides to Jegi-dong, where the White Cross Corps treated them.
+In August 2107 the Eastern Command and the Achasan Gate Command came to blows over the water supply at Guui. The clash lasted two days, with some 40 casualties on both sides. Six Sinnae Transport carts carried the wounded of both sides to Jegi-dong. The White Cross Corps stopped the bleeding and splinted limbs, but most of the badly wounded never returned to duty.
 
 <a id="2109년"></a>
 
@@ -1377,7 +1377,7 @@ In 2116 the head of the White Cross Corps designated Ryu Eunbi as successor.
 
 ### 2117 · A Marriage Proposal and the First Baptism
 
-Around this year Go Ye-jin finished her five years of reading the manuals, and twelve people received the first baptism, in which parts of the body were replaced with machines.
+Around this year Go Ye-jin finished her five years of reading the manuals, and twelve people received the first baptism, in which parts of the body were replaced with machines. Fitting the machines was done by Go Ye-jin's people, but joining them to the nerves was left to a doctor who came from the Free City.
 
 <a id="2117년-태욱그룹"></a>
 
@@ -1397,7 +1397,7 @@ In September 2117 a letter arrived in Yangjae proposing a marriage between Jeong
 
 ##### A. Commander Bae Ujin
 
-In 2117 the commander of the Eastern Command died. The chief of staff held emergency oversight for one year. In 2118 the commander's eldest son, Bae Ujin, took office as commander.
+In 2117 the guard chief of the Eastern Command died. The deputy chief held emergency oversight for one year. In 2118 the late chief's eldest son, Bae Ujin, took over as guard chief.
 
 <a id="2118년"></a>
 
@@ -1509,7 +1509,7 @@ In 2119 the expedition that had gone to Tsushima won its fight, but the shipowne
 
 ##### A. The Demand for Registration
 
-In the winter of 2120 the Eastern Command demanded, in exchange for supplying pump parts, that the Standards League register its restoration service personnel. Gang Minseo of the Standards League entered the technicians who refused registration on the league's citizenship roll. In 2121 the Standards League council elected Gang Minseo as its chair.
+In the winter of 2120 Go Ye-jin's following, later the Arc, demanded, in exchange for unlocking the pump control software, that the Standards League register its restoration service personnel. Gang Minseo of the Standards League entered the technicians who refused registration on the league's citizenship roll. In 2121 the Standards League council elected Gang Minseo as its chair.
 
 <a id="2120년-여의도출자연합회"></a>
 
@@ -1585,7 +1585,7 @@ In 2120 the City Hall Station workers held an election in which every member vot
 
 ##### A. The Standoff
 
-On March 2, 2121, some 400 Eastern Command troops halted before the Achasan gate. This was more than half the strength of the Third Guard District. On March 5, 2121, Go Seojun and Tak Seoyun jointly signed an order placing the personnel of the gate and the water purification center under a single command.
+On March 2, 2121, a few dozen Eastern Command guards, armed only with rifles, halted before the Achasan gate. On March 5, 2121, Go Seojun and Tak Seoyun jointly signed an order placing the personnel of the gate and the water purification center under a single command.
 
 <a id="2121년-대한민국정부"></a>
 
@@ -1763,7 +1763,7 @@ In October 2123, before submitting the winter ration plan, I Ilseop recounted th
 
 ##### B. Payment in Seed
 
-In November 2123 I Ilseop attended the Standards League council in Guro for the first time as representative of the First Branch Workshop. The council gave the workshop's representative a voice but no vote. I Ilseop proposed that part of the payment for the First Branch Workshop's parts be made in seed instead of certificates. Gang Minseo accepted a plan to pay one fifth of the amount in seed.
+In November 2123 I Ilseop attended the Standards League council in Guro for the first time as representative of the First Branch Workshop. The council gave the workshop's representative a voice but no vote. I Ilseop proposed that part of the payment for the First Branch Workshop's parts be made in seed instead of certificates. Gang Minseo accepted a plan to pay one fifth of the amount in seed. The seed the League paid out was allotment seed it had obtained by trade with the Government.
 
 <a id="2123년-조재표-일행"></a>
 
@@ -1813,7 +1813,7 @@ In 2124 Go Seojun, who held the gate at the Achasan Gate Command, placed passage
 
 ##### A. Counterfeit Medicine
 
-In 2124 crates of counterfeit medicine came up for sale at the Seoul Station auction. Ryu Eunbi cut off all trading at that auction. On the same day Jeong Hojun, who led life safety research at Taeuk Group, broke the seals on the counterfeit medicine samples that had arrived at the Yangjae archive.
+In 2124 crates of counterfeit medicine came up for sale at the Seoul Station auction. Ryu Eunbi cut off all trading at that auction. On the same day Jeong Hojun, who led life safety research at the Magok Life House, broke the seals on the counterfeit medicine samples that had arrived at the Yangjae archive.
 
 <a id="ch40-i5"></a>
 
@@ -1936,7 +1936,7 @@ In 2125, ahead of the escort for the pharmacy council, Jang Sehwa divided the ru
 
 ##### A. During the Strike
 
-In the autumn of 2125 the Second Branch Workshop stopped work together with the Seongnam Works. The First Branch Workshop kept working. During this period the First Branch Workshop received 40 sacks of seed in payment for parts, and these were sent to the field at the rail yard.
+In the autumn of 2125 the Second Branch Workshop stopped work together with the Seongnam Works. The First Branch Workshop kept working. During this period the First Branch Workshop received in payment for parts 40 sacks of allotment seed that had come by trade from the Government, and these were sent to the field at the rail yard.
 
 <a id="2125년-수서-차량기지"></a>
 

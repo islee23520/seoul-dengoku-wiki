@@ -30,7 +30,7 @@ Station tanks raised carp, crucian carp and catfish (hereafter "tank fish"). The
 
 **E. The first summer**
 
-In 2124, a box of counterfeit medicine appeared at a Seoul Station auction. Ryu Eunbi cut off all White Cross transactions at that auction. Jeong Hojun opened the seal of a sample in the Yangjae archive.
+In 2124, a box of counterfeit medicine appeared at a Seoul Station auction. Ryu Eunbi cut off all White Cross transactions at that auction. Jeong Hojun, life safety research lead of the Magok Life House, opened the seal of a sample in the Yangjae archive.
 
 **F. The Flood-Mold Breath Cluster**
 

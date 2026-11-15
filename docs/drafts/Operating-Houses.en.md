@@ -248,7 +248,7 @@ Even as stock dwindles, ration turn order is never sold.
 - Exclusive faction: None
 - Manager: Choe Ji-u
 
-At the Magok seed warehouse and the Sangam kitchen broadcast, the Magok Seed House guards the fermentation seed vault.
+At the Magok seed warehouse and the Sangam kitchen broadcast, the Magok Seed House multiplies seed allotted from the Government's original stock and guards the fermentation starter vault. The original stock is held by the Government.
 
 Choe Ji-u never slips stock locations into the broadcast recipes.
 
@@ -430,7 +430,7 @@ Emergency transfers are never ranked behind cargo.
 - Exclusive faction: None
 - Steward: Ryu Eunbi
 
-Along the Cheongnyangni transfer route and at the Seoul Station disaster medical desk, the Cheongnyangni Medical Center House guards the licensed duty roster.
+Along the Cheongnyangni transfer route and at the Seoul Station disaster medical desk, the Cheongnyangni Medical Center House guards the first-aid duty roster of a university hospital building its doctors have left. Medical licenses are issued by the Free City's doctors.
 
 Ryu Eunbi will not sell emergency priority, even when demands for experimental beds come in.
 
@@ -508,7 +508,7 @@ It never holds the register hostage and opens an entry only with the person's ow
 - Exclusive faction: None
 - Steward: Jeong Harin
 
-At the Jegi-dong dispensary and the Magok quarantine sample room, the Jegidong Chiyumun guards the prescription double-check.
+At the Jegi-dong dispensary and the Magok quarantine sample room, the Jegidong Chiyumun handles only sealing and issuing medicine. Prescriptions are written by doctors in Magok (Free City).
 
 Jeong Harin posts lot defects before any exclusive purchase order.
 

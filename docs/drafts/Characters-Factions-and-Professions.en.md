@@ -14,11 +14,11 @@ On paper the Government keeps the ministries of the three branches of the Republ
 
 **B. The Free City**
 
-The Free City is not a single power. Each city is its own power and holds its own duchy; there is no king. Most residents are engineers who trade goods and skills. Together they are now called the Union. The Duke of Gwanak is I Ilseop.
+The Free City is not a single power. Each city is its own power and holds its own duchy; there is no king. Most residents are skilled hands who live by their work. Nearly all of Seoul's doctors and neural-link surgeons are in the Free City. The Free City's weapons are people and food, and its doctors let it hold out longest. Together they are now called the Union. The Duke of Gwanak is I Ilseop.
 
 **C. Arc**
 
-Arc is a faith community that split from the Free City and settled in the four Gangnam districts. Its Hierophant is Go Ye-jin, and the believers call her the Messiah. Believers receive baptism, the replacement of body parts with machines. The culture of the faith is treated separately in [Faith and Culture](/wiki/Faith-Culture-Schism/).
+Arc is a faith community that split from the Free City and settled in the four Gangnam districts. Its Hierophant is Go Ye-jin, and the believers call her the Messiah. Believers receive baptism, the replacement of body parts with machines. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. The culture of the faith is treated separately in [Faith and Culture](/wiki/Faith-Culture-Schism/).
 
 <a id="세습-생업"></a>
 
@@ -26,7 +26,7 @@ Arc is a faith community that split from the Free City and settled in the four G
 
 Scarcity made people take up their parents' work. Without infrastructure the population did not grow, and parents handed their work down to their children. The vertical ranks that hardened this way became an institution in the Government's land. The Government still holds elections, and every election returns the same answer.
 
-The Free City is bound by the exchange of skills more than by inheritance. A person who does plumbing does not know power distribution; a person who does power distribution does not know the water purifiers. There was no way to judge whose skill ranked higher, so the cities chose no leader. They traded goods with one another and each lived its own life.
+The Free City is bound by the exchange of skills and medicine more than by inheritance. Nearly all of Seoul's doctors are in the Free City, and it also makes the most meals. There was no way to judge whose skill ranked higher, so the cities chose no leader. They trade treatment, meals, and goods with one another and each lives its own life.
 
 ## Trades
 

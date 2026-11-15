@@ -12,7 +12,7 @@ The setting is Seoul in the winter of 2126. About a hundred years ago, around 20
 Seoul has only three political powers. The details are in [The Three Factions of Seoul](/wiki/Sixteen-States/) and [Characters, Factions, and Trades](/wiki/Characters-Factions-and-Professions/).
 
 - **Government**: the 14 districts north of the Han River. On paper it keeps the ministries of the three branches and a multi-party system, but in practice there are only two parties, the OMO Party and the Claw Party. The Government recognizes as citizens only the people recorded in its own ledgers.
-- **Free City**: the 7 southwestern districts. Independent city-states with no king, now called the Union when taken together. Most residents are engineers who trade goods and skills.
+- **Free City**: the 7 southwestern districts. Independent city-states with no king, now called the Union when taken together. Most residents are skilled hands who live by their work. Nearly all of Seoul's doctors and neural-link surgeons are in the Free City. The Free City's weapons are people and food, and its doctors let it hold out longest.
 - **Arc**: the 4 Gangnam districts. It split off from the Free City and is ruled clan by clan around the Hierophant, Go Ye-jin.
 
 How families hold their places inside the three factions is covered in [Families and the Three Factions](/wiki/Chaebol-Houses-and-Century-Factions/). Scarcity made children take over their parents' work, and that is how a vertical class structure hardened.
@@ -48,7 +48,7 @@ The strands of the story are in [Regional and Physical AI Arcs](/wiki/Regional-P
 
 ## Culture and Faith
 
-According to [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/), the only organized religion in Seoul in 2126 is the Arc. The Arc replaced every earlier religion. Believers replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts. The Arc keeps a consecration chamber beneath the old Suseo rail depot.
+According to [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/), the only organized religion in Seoul in 2126 is the Arc. The Arc replaced every earlier religion. Believers replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. The Arc keeps a consecration chamber beneath the old Suseo rail depot.
 
 Daily life is covered in [Food Culture](/wiki/Food-Culture/). Residents receive rations at the station windows, and the habit of taking water first and rice after remains. Illness and medicine are in [Ailments and Symptoms](/wiki/Ailments/), and the five corridors of immigrant life inside Seoul are in [Diaspora Corridors](/wiki/Diaspora-Corridors/).
 

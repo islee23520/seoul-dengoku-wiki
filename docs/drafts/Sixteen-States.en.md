@@ -22,7 +22,7 @@ The third water supply contract is now approaching.
 
 The **Government** holds the 14 districts north of the Han River. In each district, the local National Assembly member rules that district's duchy as Senator, and the Senators choose a President for life from among themselves. The Government recognizes as citizens only those listed in its own registers. Gwanghwamun and the downtown core of Jongno-gu and Jung-gu form the center of administration.
 
-The **Free City** is a set of independent city-states scattered across the 7 southwestern districts. Like the poleis of ancient Greece, each city holds its own duchy, and no king reigns over them. Most residents are engineers who trade goods and skills. Taken together, they are now also called the Union.
+The **Free City** is a set of independent city-states scattered across the 7 southwestern districts. Like the poleis of ancient Greece, each city holds its own duchy, and no king reigns over them. Most residents are skilled hands who live by their work. Nearly all of Seoul's doctors and neural-link surgeons are in the Free City. The Free City's weapons are people and food, and its doctors let it hold out longest. Taken together, they are now also called the Union.
 
 The **Arc** holds the 4 districts of Gangnam. It split off from the Free City. Go Ye-jin leads it as Messiah and Hierophant, and the faithful show their devotion through baptism, the replacement of parts of the body with machinery.
 
@@ -65,7 +65,7 @@ On paper, the Government maintains ministries representing the three branches of
 - **Citizens on the ledger.** Since the Great Blackout, the Government recognizes as citizens only those recorded in its own ledgers. Anyone on the ledger is bound to land and duty, which makes them effectively serfs. Scarcity drove people to take up their parents' work, and so the vertical hierarchy hardened.
 - **How they see across the river.** The Government treats the entire area south of the Han River like the wildlings beyond the Wall in *Game of Thrones*. Government people think of the far bank as the place where barbarians live.
 
-The Government's power comes from the practical business of the city center.
+The Government's power comes from the practical business of the city center. The Government holds the officer corps, heavy weapons, and tanks, which makes it the strongest in a fight. But its badly wounded do not come back, and without Arc software its advanced weapons only partly work.
 
 - **Rations and registers.** The Government runs the resident registers and ration counters of downtown Jongno-gu and Jung-gu. Anyone not on the register cannot receive rations downtown.
 - **Seals and stamp duty.** Passage, trade, and contracts downtown are valid only with a Government seal, and stamp duty is paid at that point. An unsealed document is waste paper downtown.
@@ -77,7 +77,7 @@ Government Complex Seoul (209 Sejong-daero, Jongno-gu) is the base of downtown a
 
 The Free City is not a single power. The cities in the seven southwestern districts are each independent, like the poleis of ancient Greece, and each city holds its own duchy. There is no king reigning over them.
 
-Most residents are engineers who trade goods and skills. There was no way to tell whose skills were better, so they never chose a leader. Each city is its own power and holds its own duchy. I Ilseop is the Duke of Gwanak. The holders of the other cities' duchies are not recorded.
+Most residents are skilled hands who live by their work. Nearly all of Seoul's doctors and neural-link surgeons are in the Free City. The Free City's weapons are people and food, and its doctors let it hold out longest. There was no way to tell whose skills were better, so they never chose a leader. Each city is its own power and holds its own duchy. I Ilseop is the Duke of Gwanak. The holders of the other cities' duchies are not recorded.
 
 "Union" is the collective name for the Free City. Go Ye-jin grew up in the Free City. When she was a child, people did not say Union; it was simply the Free City.
 
@@ -89,7 +89,7 @@ The Arc holds the four Gangnam districts: Seocho-gu, Gangnam-gu, Songpa-gu, and 
 
 Go Ye-jin is the Messiah and the Hierophant. She grew up in the Free City and, as the prophet who founded the Arc, is compared to Muhammad. Rule is Shia-style dynastic rule. Go Ye-jin calls the First AI "God."
 
-Believers replace parts of their bodies with machines. This is baptism. In the Arc, faith is counted by the number of implanted parts.
+Believers replace parts of their bodies with machines. This is baptism. In the Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor.
 
 The Arc came into being as follows.
 
@@ -174,4 +174,4 @@ The locations and 2126 uses of the major facilities are as follows.
 
 ## The Balance of Power Is Not Fixed
 
-The strength of the three factions is not set. Water and power, skills and believers, and the number of people on the ledger change from year to year. The third water supply contract in the winter of 2126 is where that balance shifts once more.
+The strength of the three factions is not set. Water and power, officers and doctors, original seed stock, the Arc's software, and the number of people on the ledger change from year to year. The third water supply contract in the winter of 2126 is where that balance shifts once more.

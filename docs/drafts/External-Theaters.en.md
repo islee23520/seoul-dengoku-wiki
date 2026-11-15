@@ -132,7 +132,7 @@ Chronicle records: [2079 record](/wiki/Century-Annals/#2079년-xt02-한강-하�
 
 - Verified geography: the public market and plant positions of the West Sea coast, the Han estuary waterway, and the Gangseo-Yeongdeungpo belt.
 - Staging nodes: the Yeongdeungpo sluice and treatment watch → Guro's compressor and standards cross-check window → Yeouido's seal-hash ledger → the temporary wharf at the Han River estuary
-- Outbound boundary: Honam producers’ seed retention, West Sea coastal handoffs, and Chungcheong farming and repair trade are history beyond the records of Seoul. Individual port names, precise routes, and sailing times remain unrecorded.
+- Outbound boundary: Honam producers’ seed retention, West Sea coastal handoffs, and Chungcheong farming and repair trade are history beyond the records of Seoul. Individual port names, precise routes, and sailing times remain unrecorded. Inside Seoul, only the Government holds original seed stock.
 - Travel time: Not recorded. Tide, drainage, power, freezing state, and passage rights set the cost and waiting of freight movement.
 
 <a id="External-Theaters-heading-0038"></a>
@@ -203,7 +203,7 @@ Chronicle records: [2079 record](/wiki/Century-Annals/#2079년-xt02-한강-하�
 
 ### What is not recorded
 
-- Honam producers’ seed retention, West Sea coastal handoffs, and Chungcheong farming and repair trade are history beyond the records of Seoul. Individual port names, precise routes, and sailing times remain unrecorded.
+- Honam producers’ seed retention, West Sea coastal handoffs, and Chungcheong farming and repair trade are history beyond the records of Seoul. Individual port names, precise routes, and sailing times remain unrecorded. Inside Seoul, only the Government holds original seed stock.
 - Honam producers’ priority for seed and rejection of monopoly contracts are history beyond the records of Seoul, not common policy for every outside trader, sailor, or institution; groups that appear in no record receive no formal names.
 - Frozen and grain volumes, ship types, and counts are not recorded.
 - Outside languages are not designated independently of interpretation requests.
@@ -383,7 +383,7 @@ Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt04-암사-야�
 - Eastern Command: It kept the Amsa yard safe and the protection of the eastern water and depots. It seeks personnel at northern guard posts and conflicts with those who remain or leave, but commands no nationwide army. / leverage: the emergency superintendence of the Amsa waterworks and Godeok Depot / red line: It did not turn the weight log private on the grounds of yard safety.
 - Sinnae Transport: It kept the neutrality of the detour slots and of the medical and goods convoys. It escorts contracted journeys as far as outside handoff posts, without running a scheduled train across the peninsula. / leverage: the Sinnae transfer and the emergency-convoy ledger / red line: The fuel queue did not automatically erase a medical convoy's right of passage.
 - Seongha Group: It kept the winter fuel ration queue and the preparation of the convoys. It exchanges information and parts with repair workers in places such as Daejeon, without a nationwide communications monopoly or an obligation for Min Ung-gi to return. / leverage: the Gangnam cooling key and the fuel-order ledger / red line: It did not use a fuel drum's place in the order as the price of an origin judgment.
-- White Cross: It carried on the treatment of frostbite patients and returning workers without distinguishing enemies. It exchanges medicines through columns and merchant vessels, without automatically founding a branch in each trading region. / leverage: the Jegi-dong medicinal ledger and the treatment contract / red line: It did not turn the need for treatment into grounds for a freight-car search or a requisition.
+- White Cross: It gives first aid to frostbite patients and returning workers without distinguishing enemies. It exchanges medicines through columns and merchant vessels, without automatically founding a branch in each trading region. / leverage: the Jegi-dong medicinal ledger and the treatment contract / red line: It did not turn the need for treatment into grounds for a freight-car search or a requisition.
 - Achasan Gate: It kept the double seal on the mineral samples and the freight-car evidence. It prioritizes existing gate safety and passage and has no direct diplomatic relationship with Tsushima or Jeju. / leverage: the procedure of the Guui sluices and the Achasan gate / red line: It neither destroyed a mark of unknown origin nor let one side judge it alone.
 
 <a id="External-Theaters-heading-0100"></a>

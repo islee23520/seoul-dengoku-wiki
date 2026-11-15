@@ -66,7 +66,7 @@ The Government treats the entire south bank of the Han as barbarian land beyond 
 
 The Free City lies in the 7 districts southwest of the Han. It isn't a single power. Like the poleis of ancient Greece, it is a set of independent city-states. Each city is its own power and holds its own duchy. There is no king.
 
-Most residents are engineers who trade goods and skills with one another. There was no way to judge whose skills were greater, so they never chose a leader. In 2126 these cities are called the Union as a group.
+Most residents are skilled hands who live by their work. Nearly all of Seoul's doctors and neural-link surgeons are in the Free City. The Free City's weapons are people and food, and its doctors let it hold out longest. There was no way to judge whose skills were greater, so they never chose a leader. In 2126 these cities are called the Union as a group.
 
 ## The Free City: The Duke of Gwanak
 
@@ -76,7 +76,7 @@ I Ilseop is the Duke of Gwanak and holds the duchy of Gwanak-gu. Gwanak is one o
 
 The Arc lies in the 4 Gangnam districts: Seocho-gu, Gangnam-gu, Songpa-gu, and Gangdong-gu. It split off from the Free City. It is ruled by Shia-style clan government.
 
-Believers replace parts of their bodies with machines. This is baptism. In the Arc, faith is counted by the number of implanted body parts. The Arc replaced every earlier religion.
+Believers replace parts of their bodies with machines. This is baptism. In the Arc, faith is counted by the number of implanted body parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. The Arc replaced every earlier religion.
 
 ## The Arc: The Hierophant
 

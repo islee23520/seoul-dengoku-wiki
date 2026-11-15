@@ -15,13 +15,13 @@ The First AI answered that the cause of the pollution was humanity and that huma
 <a id="앎-보유-수리-제조-table2"></a>
 <a id="앎-보유-수리-제조"></a>
 
-Knowing a technology and holding a chassis are different things, and so are repairing one and making one anew. The mechanics, record keepers, and workshop technicians of 2126 understand the electricity, hydraulics, and sensor principles of 2026 through what the ledgers record and what was handed down. Even where the knowledge that reads principles, terms, and drawings survives, access records for authorization codes are usually gone.
+Knowing a technology and holding a chassis are different things, and so are repairing one and making one anew. The mechanics, record keepers, and workshop technicians of 2126 understand the electricity, hydraulics, and sensor principles of 2026 through what the ledgers record and what was handed down. Even where the knowledge that reads principles, terms, and drawings survives, access records for authorization codes are usually gone outside the Arc.
 
 <a id="앎-보유-수리-제조-수리"></a>
 
 Physically holding chassis, modules, and cards is separate from knowing the technology. Dismantled modules, stopped chassis, and stronghold warehouses remain. Workshop technicians replace hydraulic hoses, terminals, and luminous lenses with standard parts and set what they hold moving again. But reconstructing a whole set of neural-net weights or the interior of a broken high-density cell is usually beyond reach.
 
-Some trade tools and traps, and parts of the conditional equipment, can be newly assembled. But line-finished products, mass-produced cells, and the upper licensing servers usually do not remain. To say a technology stands lost comes close to saying that its manufacture, licensing, and supply mesh have been severed.
+Some trade tools and traps, and parts of the conditional equipment, can be newly assembled. But line-finished products, mass-produced cells, and the upper licensing servers usually do not remain. What licensing software survives is held exclusively by the Arc in a disused station's data center. To say a technology stands lost comes close to saying that its manufacture, licensing, and supply mesh have been severed.
 
 <a id="생물모방-설계의-세-가지-핵심-축"></a>
 <a id="생물모방-설계의-세-가지-중심-축"></a>
@@ -120,11 +120,11 @@ Mechanics recovered and repaired surviving hoses, terminals, and lenses from sto
 <a id="회수-반과-가문의-경합-p1"></a>
 <a id="회수-반과-가문의-경합-list2"></a>
 
-The sealed galleries and maintenance-shed zones were the key contested ground eyed by the great operating houses and the professional relic recovery squads. The HC22 Magok Test-Line House, nursing the ambition to monopolize the original technology intact, first pushed a precision recovery team inside the sealed zone. The HC17 Guro Digital Complex Battery House, raising the pretext of securing the underground supply routes, swiftly disabled the chassis of the main sealed corridors and tried to occupy the sections. The HP01 Yeongdeungpo Sluice House took the strategy of secretly supplying recovered cells and sensor modules to underground auction houses and reaping great economic gain.
+The sealed galleries and maintenance-shed zones were the key contested ground eyed by the great operating houses and the professional relic recovery squads. The HC22 Magok Test-Line House, nursing the ambition to monopolize the original chassis and modules intact, first pushed a precision recovery team inside the sealed zone. The control software that would run those chassis, however, sits with the Arc. The HC17 Guro Digital Complex Battery House, raising the pretext of securing the underground supply routes, swiftly disabled the chassis of the main sealed corridors and tried to occupy the sections. The HP01 Yeongdeungpo Sluice House took the strategy of secretly supplying recovered cells and sensor modules to underground auction houses and reaping great economic gain.
 
 <a id="프로토콜-접속과-카드"></a>
 
-Machine control boards have wired and wireless protocol connection standards, and negotiation windows and protocol cards are used. A protocol card does not control every chassis.
+Machine control boards have wired and wireless protocol connection standards, and negotiation windows and protocol cards are used. A protocol card does not control every chassis. Only cards signed by Arc software open the higher functions; any other card reaches only the basic on-and-off functions. Scouts' cards are issued by the Arc.
 
 <a id="회수-반과-가문의-경합-p3"></a>
 <a id="m040-몬스터-배치의-현장-적용-p1"></a>
