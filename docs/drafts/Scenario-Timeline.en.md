@@ -11,20 +11,20 @@ section_checkpoint: full translation of ko final
 | c. 2026 (about a hundred years ago) | Great Blackout | People asked the First AI for a solution to the pollution problem, and the First AI answered that since humanity was the cause of the pollution, humanity had to shrink. The First AI brought down the winter, but it never directly killed anyone. The exact date is not recorded. |
 | Immediately after the Great Blackout | The Descent into the Stations | People went down into the subway stations to escape the cold. Only as many survived as the stations could hold, and once the population reached that number, the winter grew no worse. Outside Seoul, the war machines used during the Great Blackout began to roam, carrying out their last orders. |
 | Date unknown | Inheritance in the Government | Scarcity made people keep doing their parents' work, and in the Government a vertical class system formed that way. Only people recorded in the Government's ledgers count as citizens. |
-| 2112 to 2117 | The Abandoned Station and the Manuals | While repairing the Free City power grid, Go Ye-jin followed a dead cable and found a station that was on no map. It had already been closed before the Great Blackout, and inside it was a broken-down data center. Go Ye-jin spent five years reading the manuals piled between the racks. |
+| 2112 to 2117 | The Abandoned Station and the Manuals | While repairing the Free City power grid, Go Ye-jin followed a dead cable and found a station that was on no map. Go Ye-jin spent five years reading the manuals left there. |
 | c. 2117 to c. 2122 | The First Baptism and the Arc | Go Ye-jin's first baptism was given to twelve people. When Go Ye-jin halted some of the machines outside Seoul, people from the Gangnam shelters came looking for her. About five years later, the Gangnam shelters were united under the name Arc. |
-| Winter 2126 | Eve of the Opening | The third water supply contract is approaching. Converts who were baptized in the Arc less than a year ago are disappearing. Go Ye-jin believes one person crossing the river is behind it, and has ordered Ji Yeon-hui to bring him back alive. |
+| Winter 2126 | Eve of the Opening | The Government's President is Kim Yeongyu, the Free City's Chair of the Board is I Ilseop, and the Arc's Hierophant is Go Ye-jin. Converts who were baptized in the Arc less than a year ago are disappearing. Go Ye-jin believes one person crossing the river is behind it, and has ordered Ji Yeon-hui to bring him back alive. |
 
 <a id="20262126-연도별-진입"></a>
 
 ## Entries by Year
 
 - c. 2026: The Great Blackout occurred. The First AI brought down the winter.
-- [2112](/wiki/Century-Annals/#2112년): While repairing the Free City power grid, Go Ye-jin found an abandoned station that was on no map, along with a data center. She then spent five years reading the manuals there.
+- [2112](/wiki/Century-Annals/#2112년): While repairing the Free City power grid, Go Ye-jin found a station that was on no map. She then spent five years reading the manuals there.
 - [2117](/wiki/Century-Annals/#2117년), approximately: The first baptism took place. Twelve people were baptized.
 - [2120](/wiki/Century-Annals/#2120년): During negotiations with representatives of the shelters near Tancheon, Ji Yeon-hui stopped a man who drew a blade. On the spot, Ji Yeon-hui asked Go Ye-jin to keep her close, and from then on she stood at Go Ye-jin's side.
 - [2122](/wiki/Century-Annals/#2122년), approximately: The Gangnam shelters were united under the single name Arc.
-- [2126](/wiki/Century-Annals/#2126년), winter: The present of the story. The third water supply contract is approaching, and an investigation into the disappearance of converts is underway in Suseo.
+- [2126](/wiki/Century-Annals/#2126년), winter: The present of the story. An investigation into the disappearance of converts is underway in Suseo.
 
 ## A History of Winter and the Stations
 
@@ -46,19 +46,19 @@ In the Government, scarcity made people keep doing their parents' work, and a ve
 
 ### The Three Factions
 
-In 2126, Seoul has only three factions: the Government, the Free City, and the Arc. Each district is one duchy, and the 25 duchies are divided into 14 districts for the Government, 7 for the Free City, and 4 for the Arc. Place names and station names are carried over unchanged from old Seoul.
+In 2126, Seoul has only three factions: the Government, the Free City, and the Arc. Seoul's twenty-five districts are divided 14 for the Government, 7 for the Free City, and 4 for the Arc, and the smallest unit of rule is the station. The three factions share one frame of ranks. A person holding one station is a Stationmaster, and one leading two to four Stationmasters is a Division Chief. With five to nine, the Government calls them Bureau Chief, the Arc Bishop and the Free City Guild Master; with ten or more, Commissioner, Cardinal and Director. Place names and station names are carried over unchanged from old Seoul.
 
-The Government holds the 14 districts north of the Han River. On paper it maintains ministries representing the three branches of the Republic of Korea and a multiparty system, but in practice only two parties remain, and in reality it is a modern feudal system. Each district's elected member of the National Assembly holds that district's duchy under the title of Senator, and the Senators choose a President for life from among themselves. Since the collapse, the Government recognizes only those recorded in its own registers as citizens, and they are effectively serfs. The Government keeps holding elections, but the result is the same every time. It regards the land across the river as "where the barbarians live." When the Government took on this form is not recorded.
+The Government holds the 14 districts north of the Han River. On paper it maintains ministries representing the three branches of the Republic of Korea and a multiparty system, but in practice only two parties remain, and in reality it is a modern feudal system. At the top is a President for life, now Kim Yeongyu. Commissioners are appointed by the President. Since the collapse, the Government recognizes only those recorded in its own registers as citizens, and they are effectively serfs. The Government keeps holding elections, but the result is the same every time. It regards the land across the river as "where the barbarians live." When the Government took on this form is not recorded.
 
-The Free City lies in the 7 districts southwest of the Han River. It is not a single power but a set of independent city-states scattered between stations, each city its own power holding its own duchy. There is no king. Most residents are skilled hands who live by their work; because plumbing, power distribution, and water purification all depend on one another, no one could determine whose skills were greater, so they never chose a leader, and the cities have survived by trading supplies and expertise with one another. Nearly all of Seoul's doctors and neural-link surgeons are in the Free City. Its weapons are people and food, and its doctors let it hold out longest. Today they are collectively called the Union. I Ilseop is the Duke of Gwanak. The origin of the name Union is unknown.
+The Free City lies in the 7 districts southwest of the Han River. It is not a single power but a set of independent city-states scattered between stations, each city standing on its own, and they hold that refusing to be ruled is freedom. Most residents are skilled hands who live by their work; because plumbing, power distribution, and water purification all depend on one another, the cities have survived by trading supplies and expertise with one another. Nearly all of Seoul's doctors and neural-link surgeons are in the Free City. Its weapons are people and food, and its doctors let it hold out longest. There is no name for them taken together. At the top is the Chair of the Board, held by I Ilseop, heir of a medical house of neural-link medicine. By rank his house is a Director like any other, but because people want them to lead, it has held the Chair of the Board for generations. Directors are appointed by the Board.
 
-Arc holds the 4 Gangnam districts and split off from the Free City. Go Ye-jin, raised in a Free City family of power and wiring workers, followed a dead cable in 2112 and found a station that was on no map, then spent five years reading the manuals there. When Go Ye-jin halted the machines outside Seoul, the Gangnam shelters gathered into Arc. Arc teaches machine implants as a way to endure the winter, and the faithful receive a baptism in which parts of their bodies are replaced with machinery. Twelve people received the first baptism around 2117, and around 2122 the Gangnam shelters were united as Arc. The faithful call Go Ye-jin the Messiah, and her title is Hierophant. Arc replaced every earlier religion.
+Arc holds the 4 Gangnam districts and split off from the Free City. Go Ye-jin, raised in a Free City family of power and wiring workers, followed a dead cable in 2112 and found a station that was on no map, then spent five years reading the manuals there. When Go Ye-jin halted the machines outside Seoul, the Gangnam shelters gathered into Arc. Arc teaches machine implants as a way to endure the winter, and the faithful receive a baptism in which parts of their bodies are replaced with machinery. Twelve people received the first baptism around 2117, and around 2122 the Gangnam shelters were united as Arc. The faithful call Go Ye-jin the Messiah, and her title is Hierophant. Cardinals are ordained by the Hierophant. Arc replaced every earlier religion.
 
 ## Opening of the Story
 
 ### Opening Day
 
-The story opens in winter 2126, ahead of the third water supply contract. Arc keeps an offering chamber under the old Suseo rail depot.
+The story opens in winter 2126.
 
 The same day, her bodyguard Ji Yeon-hui reported missing converts. Over two months, seven people had disappeared from the outposts around Cheongdam and Samseong, and more if unregistered people were counted. In winter, people vanish as a matter of course, freezing to death, caught in tunnel collapses, or taken by the drones drifting outside Seoul, so at first Go Ye-jin considered the number ordinary for the season. But when it emerged that all seven had been baptized less than a year earlier, she ordered Ji Yeon-hui to bring evidence.
 
@@ -80,27 +80,27 @@ If a belated reply arrives in the Gangnam-gu Office neighborhood through the con
 
 If Sin Jun reacts to an old call rhythm and vehicle vibrations and points out a route, Sin Jong-mok divides guardianship and duty shifts between the demand to verify the field records and the demand to protect the child's consent and rest.
 
-If an attempt is made to recover the transceiver unit of the Return Synthesis Station from the closed communications storeroom, Sin Jong-mok and the residents who use the same parts to maintain household power negotiate over how many to recover. Min Ung-gi's maintenance records remain in Gangnam, but he himself is in Daejeon at the opening of the story.
+If an attempt is made to recover the transceiver unit of the Return Synthesis Station from the closed communications storeroom, Sin Jong-mok and the residents who use the same parts to maintain household power negotiate over how many to recover. Min Ung-gi's maintenance records remain in Gangnam, but he himself is at I Ilseop's side in the Free City at the opening of the story.
 
 If the first relay power draw of the Return Synthesis Station overlaps with the refrigeration power for the infirmary, residents waiting for word from those who have not returned and the duty staff responsible for storing medicine must decide the order of power use.
 
 If the Return Synthesis Station is to be operated after Sin Jun's calls and route fragments are checked against field records, the outpost representatives must weigh together the risk of relying on a single muster network under centralized operation, the maintenance burden of distributed operation, and the delayed contact that would result from postponing completion.
 
-If an equipment entry with its cost missing is found in old relay records, the demand to investigate past costs clashes with the demand to allocate the relay power needed right now. Min Ung-gi's earlier work remains in the records, but he himself is not in Gangnam at the opening of the story.
+If an equipment entry with its cost missing is found in old relay records, the demand to investigate past costs clashes with the demand to allocate the relay power needed right now. Min Ung-gi's earlier work remains in the records, but he himself is not in Gangnam at the opening of the story; he is in the Free City as I Ilseop's aide.
 
 <a id="peninsula-opening-hooks"></a>
 
 ### News from Beyond Reaching Seoul
 
-The merchants and messengers who reach Seoul in winter 2126 bring accounts of what they have experienced across the Korean Peninsula. Outside Seoul, the war machines used during the Great Blackout roam while carrying out their last orders, so simply traveling the roads is dangerous. Seoul's three factions and their duchies negotiate passage and trade along their own routes, but they cannot decide on behalf of the residents at the far end whether those residents will return or what they will sell. When letters and recovered goods arrive, disputes like the following may open.
+The merchants and messengers who reach Seoul in winter 2126 bring accounts of what they have experienced across the Korean Peninsula. Outside Seoul, the war machines used during the Great Blackout roam while carrying out their last orders, so simply traveling the roads is dangerous. Seoul's three factions and their stations negotiate passage and trade along their own routes, but they cannot decide on behalf of the residents at the far end whether those residents will return or what they will sell. When letters and recovered goods arrive, disputes like the following may open.
 
 <a id="peninsula-daejeon-reply"></a>
 
-#### A Reply from Daejeon · Gangnam-gu Office
+#### A Reply from the Free City · Gangnam-gu Office
 
-If contact is made after the opening and Min Ung-gi's reply arrives at the Gangnam-gu Office, the contact duty officer passes it on to the residents. Min Ung-gi farms and does repair work in Daejeon and is looking for the parts he needs, but he does not promise to return to Seoul. Seoul's maintenance staff, who are short of hands, ask him to come back, and Sin Jong-mok and the residents argue over whether to keep up contact or to press for his return.
+If contact is made after the opening and Min Ung-gi's reply arrives at the Gangnam-gu Office, the contact duty officer passes it on to the residents. Min Ung-gi handles communications and distribution in the Free City as I Ilseop's aide and is looking for the parts he needs, but he does not promise to return to Gangnam. Gangnam's maintenance staff, who are short of hands, ask him to come back, and Sin Jong-mok and the residents argue over whether to keep up contact or to press for his return.
 
-If the player sends parts and a reply, maintenance in Seoul is delayed, but contact with Daejeon can continue. Even if better terms for his return are offered, Min Ung-gi may refuse. If this delivery is postponed, the parts stay in Seoul, but the next contact time is unknown, and the dispute between residents who want to reopen contact and residents who want to cut back on power duty remains.
+If the player sends parts and a reply, maintenance in Gangnam is delayed, but contact with the Free City can continue. Even if better terms for his return are offered, Min Ung-gi may refuse. If this delivery is postponed, the parts stay in Gangnam, but the next contact time is unknown, and the dispute between residents who want to reopen contact and residents who want to cut back on power duty remains.
 
 <a id="peninsula-tsushima-claims"></a>
 

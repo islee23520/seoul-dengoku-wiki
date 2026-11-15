@@ -88,25 +88,25 @@ Modern and future weapons, humanoids, and machines still exist, but they are sca
 
 ## The Three Factions of Seoul and the World Beyond
 
-In 2126, about a hundred years after the Great Blackout, three factions remain in Seoul: the Government, the Free City, and the Arc. Each district is one duchy, and the 25 duchies are divided as follows: 14 for the Government, 7 for the Free City, and 4 for the Arc. People live in the subway stations, and only as many survived as the stations could hold. The map structure of stations and lines is described in [Seoul and Subway Layers](/wiki/World-and-Subway-Layers/).
+In 2126, about a hundred years after the Great Blackout, three factions remain in Seoul: the Government, the Free City, and the Arc. Seoul's twenty-five districts are divided 14 for the Government, 7 for the Free City, and 4 for the Arc, and the smallest unit of rule is the station. People live in the subway stations, and only as many survived as the stations could hold. The map structure of stations and lines is described in [Seoul and Subway Layers](/wiki/World-and-Subway-Layers/).
 
-| Faction | Territory | Duchies | Rule |
+| Faction | Territory | Districts | Top office |
 |---|---|---|---|
-| Government | North of the Han River | 14 | Separation of powers and a multiparty system on paper; modern feudalism in practice |
-| Free City (Union) | Southwest | 7 | Independent cities without a king |
-| Arc | Gangnam | 4 | Shia-style clan government under the Messiah Go Ye-jin |
+| Government | North of the Han River | 14 | President Kim Yeongyu |
+| Free City | Southwest | 7 | Chair of the Board I Ilseop |
+| Arc | Gangnam | 4 | Hierophant Go Ye-jin |
 
 **A. The Government**
 
-The Government rules the 14 districts north of the Han River. On paper it maintains ministries representing the three branches of the Republic of Korea and a multiparty system, but in reality only two parties remain. The National Assembly member elected from each district holds that district's duchy under the title of Senator. The Senators gather candidates from among themselves to produce a President for Life. The Government recognizes as citizens only those recorded in its ledgers, and these people are effectively serfs. Scarcity made children inherit their parents' work, and the hierarchy hardened as a result. The Government regards the land across the river as a place inhabited by barbarians.
+The Government rules the 14 districts north of the Han River. On paper it maintains ministries representing the three branches of the Republic of Korea and a multiparty system, but in reality only two parties remain. At the top is a President for Life, now Kim Yeongyu. Below the President are the Stationmasters, Division Chiefs, Bureau Chiefs and Commissioners, and the Commissioners are appointed by the President. The Government recognizes as citizens only those recorded in its ledgers, and these people are effectively serfs. Scarcity made children inherit their parents' work, and the hierarchy hardened as a result. The Government regards the land across the river as a place inhabited by barbarians.
 
 **B. The Free City**
 
-The Free City consists of the 7 districts in the southwest. Rather than a single power, it is a collection of independent cities, each holding its own duchy, and it has no king. Most residents are skilled hands who live by their work. Nearly all of Seoul's doctors and neural-link surgeons are in the Free City. The Free City's weapons are people and food, and its doctors let it hold out longest. Because there was no way to judge whose skills were greater, they never managed to choose a leader. The Duke of Gwanak is I Ilseop. Today these cities are collectively called the Union, but when Go Ye-jin was growing up, it was simply the Free City.
+The Free City consists of the 7 districts in the southwest. Rather than a single power, it is a collection of independent cities standing on their own, and they hold that refusing to be ruled is freedom. Most residents are skilled hands who live by their work. Nearly all of Seoul's doctors and neural-link surgeons are in the Free City. The Free City's weapons are people and food, and its doctors let it hold out longest. Its ranks are Stationmaster, Division Chief, Guild Master and Director, and Directors are appointed by the Board. At the top is the Chair of the Board, I Ilseop. By rank his house is a Director like any other, but because people want them to lead and they do in fact act as leaders, the house has held the Chair of the Board for generations. Refusing to be ruled while leaning on one house is the contradiction of the Free City. There is no name for these cities taken together.
 
 **C. The Arc**
 
-The Arc consists of the 4 districts of Gangnam. It split off from the Free City, and the Gangnam shelters were united under the name Arc around 2122. Go Ye-jin is the Messiah and Hierophant, and the Arc is ruled by Shia-style clan government. The Arc has replaced all earlier religions. Believers receive baptism, in which parts of the body are replaced with machinery, and in the Arc faith is counted by the number of implanted body parts.
+The Arc consists of the 4 districts of Gangnam. It split off from the Free City, and the Gangnam shelters were united under the name Arc around 2122. Go Ye-jin, a former engineer, is the Messiah and Hierophant. Its ranks are Stationmaster, Division Chief, Bishop and Cardinal, and Cardinals are ordained by the Hierophant. The Arc has replaced all earlier religions. Believers receive baptism, in which parts of the body are replaced with machinery, and in the Arc faith is counted by the number of implanted body parts.
 
 **D. Beyond Seoul**
 
@@ -129,7 +129,7 @@ The Arc teaches that parts of the body should be replaced with machinery. This i
 | Item | Details |
 |---|---|
 | Hierophant | Go Ye-jin |
-| Rule | Family rule |
+| Ranks | Stationmaster, Division Chief, Bishop, Cardinal, Hierophant |
 | Initiation | Baptism (machine implantation) |
 | Measure of faith | Number of implanted body parts |
 

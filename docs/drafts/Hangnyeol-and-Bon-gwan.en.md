@@ -28,7 +28,7 @@ The bon-gwan in use in 2126 belong to 169 clans. Of these, 166 are old clans, an
 
 The clan register listed all 1,022 people on the person register; 1,017 of them had bon-gwan and clan IDs. No bon-gwan, clan, or hangnyeol was recorded for Go Ye-jin, Han Seo-gyeong, Cha Yu-seon, and Mun Do-hyeon.
 
-Bon-gwan and clans are recorded for **1,017 people**. The Ran and Heung belong to the new clans above. Im Somae, Beom Bandeuk, Amira Qasim, and Nargiz Yusupova opened new naturalized bon-gwan named after the places where they settled. I Yeon, a synthetic humanoid, has no paternal line and so no bon-gwan. Having a bon-gwan did not mean a hangnyeol was settled.
+Bon-gwan and clans are recorded for **1,017 people**. The Ran and Heung belong to the new clans above. Im Somae, Beom Bandeuk, Amira Qasim, and Nargiz Yusupova opened new naturalized bon-gwan named after the places where they settled. One person has no paternal line and so no bon-gwan. Having a bon-gwan did not mean a hangnyeol was settled.
 
 | Status | People | Meaning |
 |---|---|---|

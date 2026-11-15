@@ -1181,7 +1181,7 @@ In April 2102 the Standards League admitted the workshops of Cheonan-Asan and Si
 
 ##### A. The I Family
 
-The First Branch Workshop joined the Standards League in 2102. Thereafter the I family of Cheonan-Asan managed the First Branch Workshop under the Standards League. The family looked after the rail yard at the southern end of Line 1 and four workshops. I Ilseop was heir of the I family. The I family has handed down neural-link surgery for generations; the rail-yard field and the workshops are its side work. As of 2126 I Ilseop is the Duke of Gwanak.
+The First Branch Workshop joined the Standards League in 2102. Thereafter the I family managed the First Branch Workshop under the Standards League. The family looked after the rail yard at the southern end of Line 1 and four workshops. I Ilseop was heir of the I family. The I family is a medical house that has handed down neural-link medicine for generations; the rail-yard field and the workshops are its side work. As of 2126 I Ilseop is Chair of the Board of the Free City. By rank the I family is a Director like any other Director, but because the people of the Free City want them to lead, the family has held the Chair of the Board for generations.
 
 <a id="2104년"></a>
 
@@ -1397,7 +1397,7 @@ In September 2117 a letter arrived in Yangjae proposing a marriage between Jeong
 
 ##### A. Commander Bae Ujin
 
-In 2117 the guard chief of the Eastern Command died. The deputy chief held emergency oversight for one year. In 2118 the late chief's eldest son, Bae Ujin, took over as guard chief.
+In 2117 the Commander of the Eastern Command, its hereditary head, died. The deputy chief held emergency oversight for one year. In 2118 the late Commander's eldest son, Bae Ujin, took over as Commander. The Eastern Command is the Arc's hereditary rifle guard.
 
 <a id="2118년"></a>
 
@@ -1480,16 +1480,6 @@ In 2119 the leader of the City Hall Station workers died. Oh Gyeongjae, eldest s
 
 In November 2119 Sin Jong-mok, senior operative of the Eastern Command's Special Recovery Unit, returned from his last recovery operation with refugees who were not on the roster. His return report recorded insubordination and the loss of issued supplies. Some of the unit members who had held the line of retreat were listed as missing.
 
-<a id="2119년-지연희"></a>
-
-#### Ji Yeon-hui
-
-<a id="ch46-i1"></a>
-
-##### A. Refuge
-
-In the winter of 2119 Ji Yeon-hui arrived as a refugee from the outskirts of Seoul.
-
 <a id="peninsula-2119-tsushima-withdrawal"></a>
 <a id="event-peninsula-2119-tsushima-withdrawal"></a>
 
@@ -1545,23 +1535,25 @@ In April 2120 Sin Jong-mok left the Special Recovery Unit. He moved with the chi
 
 ##### A. Suseo
 
-From 2080 onward the Suseo depot belonged to no faction. In the early 2120s Go Ye-jin worked at the Suseo depot as an adviser who helped arrange contracts between territories.
+From 2080 onward the Suseo depot belonged to no faction.
 
 <a id="2120년-지연희"></a>
+<a id="2119년-지연희"></a>
 
 #### Ji Yeon-hui
 
+<a id="ch46-i1"></a>
 <a id="ch46-i2"></a>
 
-##### A. The Contract
+##### A. The Bodyguard
 
-In January 2120 Ji Yeon-hui signed a contract with an intelligence organization. The organization gave her shelter and a livelihood, and in return she took on a debt.
+In 2120, at shelter negotiations on the Tancheon side, Ji Yeon-hui stopped a man who drew a knife and took her place beside Go Ye-jin, and afterward she became Go Ye-jin's bodyguard. Her debt and the choices around it are undecided.
 
 <a id="ch46-i3"></a>
 
-##### B. Registration as a Courier
+##### B. The Aide
 
-In the same year Ji Yeon-hui registered as an independent courier at a transfer station on a faction border. That same year she stood beside Go Ye-jin at shelter negotiations on the Tancheon side, and afterward she became Go Ye-jin's bodyguard.
+As of 2126 Ji Yeon-hui is Go Ye-jin's aide, belonging to the Arc.
 
 <a id="2120년-시청역-노동자들"></a>
 
@@ -1763,7 +1755,7 @@ In October 2123, before submitting the winter ration plan, I Ilseop recounted th
 
 ##### B. Payment in Seed
 
-In November 2123 I Ilseop attended the Standards League council in Guro for the first time as representative of the First Branch Workshop. The council gave the workshop's representative a voice but no vote. I Ilseop proposed that part of the payment for the First Branch Workshop's parts be made in seed instead of certificates. Gang Minseo accepted a plan to pay one fifth of the amount in seed. The seed the League paid out was allotment seed it had obtained by trade with the Government.
+In November 2123 I Ilseop attended the Board in Guro for the first time as heir of his house. I Ilseop proposed that part of the payment for the First Branch Workshop's parts be made in seed instead of certificates. Gang Minseo accepted a plan to pay one fifth of the amount in seed. The seed the League paid out was allotment seed it had obtained by trade with the Government.
 
 <a id="2123년-조재표-일행"></a>
 
@@ -2005,4 +1997,4 @@ In 2125 people who had returned by different routes pointed to the items they ha
 
 In 2126 Oh Gyeongjae was ratified and took over Im Hajun's work. Oh Gyeongjae made the three-page will public in the council chamber and did not ratify Han Jaemok's plan to expand westward. Instead, he agreed to seal the box of originals of the pump maintenance procedure jointly with the Water Gate Bureau.
 
-The present is the winter of 2126, before the third water-supply contract. Reports reached Suseo that over two months seven baptized converts had gone missing from the Cheongdam and Samseong strongholds. The Suseo radio room picked up the call sign Baekya on an old military frequency moving between Seonjeongneung and Suseo.
+The present is the winter of 2126. The Government's President is Kim Yeongyu, the Free City's Chair of the Board is I Ilseop, and the Arc's Hierophant is Go Ye-jin. How the presidency passed from Yun Seorin to Kim Yeongyu is undecided. Reports reached Suseo that over two months seven baptized converts had gone missing from the Cheongdam and Samseong strongholds. The Suseo radio room picked up the call sign Baekya on an old military frequency moving between Seonjeongneung and Suseo.

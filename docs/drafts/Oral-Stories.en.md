@@ -49,25 +49,17 @@ From March 20, 2053, the Yeongdeungpo waterworks staff moved their base to Yangp
 
 ## Registers and Contracts
 
-A. Waterway contract
+A. Reconstruction worker register
 
-In June 2097 the Water Gate Bureau signed a contract with the waterway keepers of Yangpyeong and Chuncheon. In return for managing the Bureau's waterways, both were entered in the Yangpyeong Station ration register.
+In the winter of 2120 Go Ye-jin's following, later the Arc, demanded, in exchange for unlocking the pump control software, that the Free City register its restoration service personnel. Gang Minseo of the Free City entered the technicians who refused registration on the citizenship roll.
 
-B. Reconstruction worker register
-
-In the winter of 2120 Go Ye-jin's following, later the Arc, demanded, in exchange for unlocking the pump control software, that the Standards League register its restoration service personnel. Gang Minseo of the Standards League entered the technicians who refused registration on the league's citizenship roll.
-
-C. Refugee register
+B. Refugee register
 
 In 2123, a refugee procession from Bukhansan Bogukmun descended toward Anguk.
 
-D. Three contracts
+C. State ledger
 
-In 2123 the Water Gate Bureau, the Standards League, and the Transshipment Bureau sent separate contracts for water supply, parts, and passage to the pharmacies in the same week. Jeong Yura copied their end conditions into one document.
-
-E. State ledger
-
-In November 2125, the records office compiled a power-ranking ledger of the duchies of the three factions.
+In November 2125, the records office compiled a power-ranking ledger of the three factions, station by station.
 
 ## Sources
 

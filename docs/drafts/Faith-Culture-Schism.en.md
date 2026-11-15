@@ -4,7 +4,7 @@ section_checkpoint: W3-A final
 ---
 **A. The Era**
 
-The generation of 2126 places the Great Blackout at the start of events. The Great Blackout happened about a hundred years ago, around 2026. The First AI answered that because humanity was the cause of the pollution, humanity had to shrink, and it brought the winter. The AI killed no one directly. The present of the story is the winter of 2126, on the eve of the third water-supply compact. The record of the century is in the [Century Annals](/wiki/Century-Annals/).
+The generation of 2126 places the Great Blackout at the start of events. The Great Blackout happened about a hundred years ago, around 2026. The First AI answered that because humanity was the cause of the pollution, humanity had to shrink, and it brought the winter. The AI killed no one directly. The present of the story is the winter of 2126. The record of the century is in the [Century Annals](/wiki/Century-Annals/).
 
 **B. The Landscape of Faith**
 
@@ -14,19 +14,21 @@ In the Seoul of 2126, Arc is the one organised religion. Arc replaced every reli
 
 **A. Arc's Place**
 
-Arc is a faith community that split from the Free City and settled in the four Gangnam districts. Its rule runs through families. Its Hierophant is Go Ye-jin, and the believers call her the Messiah. Go Ye-jin comes from the Free City.
+Arc is a faith community that split from the Free City and settled in the four Gangnam districts. Its Hierophant is Go Ye-jin, and the believers call her the Messiah. Go Ye-jin is a former engineer who grew up in the Free City, and she claims no occupation other than Hierophant.
 
 **B. Baptism**
 
 Believers replace parts of their bodies with machines. This is baptism. In Arc, faith is counted by the number of implanted parts. Arc teaches machine implantation as the way to endure the winter. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. In winter flesh freezes and steel does not, and a machine arm does not get frostbite.
 
-**C. The offering chamber**
+**C. Ranks and Ordination**
 
-Arc keeps an offering chamber beneath the old Suseo depot.
+Arc's ranks are Stationmaster, Division Chief, Bishop and Cardinal, and the top is the Hierophant. A person holding one station is a Stationmaster, one leading two to four Stationmasters is a Division Chief, one leading five to nine is a Bishop, and one with ten or more Stationmasters under them in total is a Cardinal. Cardinals are ordained by the Hierophant. Those who qualify but are not ordained become a source of conflict inside Arc. Who will lead Arc's rites is undecided.
+
+Arc's arms are held by the Eastern Command, Arc's hereditary rifle guard. Its Commander is Bae Ujin.
 
 **D. The roll and the people beside it**
 
-Arc enters baptised believers in a roll. People outside the roll also work at Arc's side. Ji Yeon-hui has been Go Ye-jin's bodyguard since 2120 and carries no machines in her body. A bodyguard does not need to be devout.
+Arc enters baptised believers in a roll. People outside the roll also work at Arc's side. Ji Yeon-hui has been Go Ye-jin's bodyguard since 2120 and is now her aide. She carries no machines in her body. A bodyguard does not need to be devout.
 
 ## The Arc Timeline
 
@@ -35,7 +37,7 @@ Arc enters baptised believers in a roll. People outside the roll also work at Ar
 - Around 2117: the first baptisms. Those baptised numbered twelve.
 - 2120: Ji Yeon-hui took her place beside Go Ye-jin at a shelter negotiation near Tancheon.
 - Around 2122: the Gangnam shelters gathered under the single name Arc.
-- Winter 2126: the present, on the eve of the third water-supply compact.
+- Winter 2126: the present.
 
 ## Winter and Machines
 

@@ -6,19 +6,19 @@ section_checkpoint: W3-A final
 
 ## The Three Factions
 
-At the opening in 2126, Seoul is divided among three factions. The fourteen districts north of the Han River are the **Government**'s; the seven southwestern districts are the **Free City**'s; the four Gangnam districts are **Arc**'s. One district is one duchy, and Seoul holds twenty-five duchies in all.
+At the opening in 2126, Seoul is divided among three factions. The fourteen districts north of the Han River are the **Government**'s; the seven southwestern districts are the **Free City**'s; the four Gangnam districts are **Arc**'s. The smallest unit of rule is the station.
 
 **A. The Government**
 
-On paper the Government keeps the ministries of the three branches of the Republic of Korea and a multiparty system. In practice there are only two parties, the OMO Party and the Claw Party. The assembly member elected in each district holds that district's duchy and bears the title Senator. The Senators gather candidates from among themselves and produce the President, who serves for life. The Government recognizes as citizens only the people entered in its own registers. It regards the land across the river as where barbarians live.
+On paper the Government keeps the ministries of the three branches of the Republic of Korea and a multiparty system. In practice there are only two parties, the OMO Party and the Claw Party. At the top is the President, who serves for life. The current President is Kim Yeongyu. The Government recognizes as citizens only the people entered in its own registers. It regards the land across the river as where barbarians live.
 
 **B. The Free City**
 
-The Free City is not a single power. Each city is its own power and holds its own duchy; there is no king. Most residents are skilled hands who live by their work. Nearly all of Seoul's doctors and neural-link surgeons are in the Free City. The Free City's weapons are people and food, and its doctors let it hold out longest. Together they are now called the Union. The Duke of Gwanak is I Ilseop.
+The Free City is not a single power. Each city stands on its own, and they hold that refusing to be ruled is freedom. Most residents are skilled hands who live by their work. Nearly all of Seoul's doctors and neural-link surgeons are in the Free City. The Free City's weapons are people and food, and its doctors let it hold out longest. There is no name for them taken together. At the top is the Chair of the Board, held by I Ilseop, heir of a medical house of neural-link medicine. His aide is Min Ung-gi.
 
 **C. Arc**
 
-Arc is a faith community that split from the Free City and settled in the four Gangnam districts. Its Hierophant is Go Ye-jin, and the believers call her the Messiah. Believers receive baptism, the replacement of body parts with machines. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. The culture of the faith is treated separately in [Faith and Culture](/wiki/Faith-Culture-Schism/).
+Arc is a faith community that split from the Free City and settled in the four Gangnam districts. Its Hierophant is Go Ye-jin, a former engineer, and the believers call her the Messiah. Her aide is Ji Yeon-hui, and the Commander of the Eastern Command, the hereditary rifle guard, is Bae Ujin. Believers receive baptism, the replacement of body parts with machines. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. The culture of the faith is treated separately in [Faith and Culture](/wiki/Faith-Culture-Schism/).
 
 <a id="세습-생업"></a>
 
@@ -26,11 +26,31 @@ Arc is a faith community that split from the Free City and settled in the four G
 
 Scarcity made people take up their parents' work. Without infrastructure the population did not grow, and parents handed their work down to their children. The vertical ranks that hardened this way became an institution in the Government's land. The Government still holds elections, and every election returns the same answer.
 
-The Free City is bound by the exchange of skills and medicine more than by inheritance. Nearly all of Seoul's doctors are in the Free City, and it also makes the most meals. There was no way to judge whose skill ranked higher, so the cities chose no leader. They trade treatment, meals, and goods with one another and each lives its own life.
+The Free City is bound by the exchange of skills and medicine more than by inheritance. Nearly all of Seoul's doctors are in the Free City, and it also makes the most meals. The cities refuse to set a ruler over themselves, yet people want I Ilseop's house, which holds the medicine, to lead them. They trade treatment, meals, and goods with one another and each lives its own life.
 
 ## Trades
 
-Facilities such as water treatment plants, depots, hospitals, and workshops put people of different trades on duty together. Even within one trade, people differ in organization, titled domain, and personal taste, in clothing as in tools.
+Facilities such as water treatment plants, depots, hospitals, and workshops put people of different trades on duty together. Even within one trade, people differ in organization, station, and personal taste, in clothing as in tools.
+
+<a id="계층과-거주-층위"></a>
+
+## Ranks and Residence Layers
+
+The three factions share one frame of ranks. A person's step is set by the number of Stationmasters under them. A station means a subway station together with the fortified ground above it.
+
+| Stationmasters under them | Government | Arc | Free City |
+|---|---|---|---|
+| 1 | Stationmaster | Stationmaster | Stationmaster |
+| 2 to 4 | Division Chief | Division Chief | Division Chief |
+| 5 to 9 | Bureau Chief | Bishop | Guild Master |
+| 10 or more | Commissioner | Cardinal | Director |
+| Top | President | Hierophant | Chair of the Board |
+
+The step of ten or more is reached by appointment. Government Commissioners are appointed by the President, Arc Cardinals are ordained by the Hierophant, and Free City Directors are appointed by the Board. Those who qualify but are never appointed become seeds of conflict within. Among Division Chiefs, standing follows the number of Stationmasters they lead and the worth of their stations. A station is worth more the more transfer lines it has and the deeper it goes, and the Stationmaster of an above-ground station ranks lowest of all.
+
+Everyone who holds no station is an ordinary citizen. How deep a person lives shows their class. Underground, deeper means higher, so someone living on the third basement level stands above someone on the first. Above ground, higher means lower, and among citizens those on the ground floor stand highest. Each faction's founding retainers receive the right to live underground first.
+
+A person who moves to another faction loses their assets and territory and becomes one of the lowest class, whatever their rank at home. The faction that takes them uses their skills but does not raise their standing. So people move between factions mostly through abduction and capture, and work slowdowns, ransom talks, escapes and the envy of the native lower class become the conflicts. A technician who has been taken across is kept from slowing work or escaping by holding their family hostage.
 
 <a id="깊이와-생업에-따른-옷차림"></a>
 
@@ -40,7 +60,7 @@ Clothing follows the basic silhouettes of the 1940s, during the Second World War
 
 Clothing varies with life on the surface, at intermediate depth, or deep underground. A heated room and a draughty passage can call for different layers on the same floor; insulation follows the temperature of the space a person actually occupies. At the same temperature, activity, working conditions, and individual sensitivity to cold create further differences. Garment cuts, pockets, and equipment reflect trades, while thickness, fabric, and removable layers adapt to the surroundings. Regional temperature differences affect clothing more strongly on the surface than underground.
 
-People in the same trade dress differently according to their organization, titled domain, and personal taste. Couriers share a need for mobility and storage without sharing every jacket cut, colour, or pocket arrangement. The same garment may illustrate regional differences in insulation, but a shared trade does not give everyone an identical outfit.
+People in the same trade dress differently according to their organization, station, and personal taste. Couriers share a need for mobility and storage without sharing every jacket cut, colour, or pocket arrangement. The same garment may illustrate regional differences in insulation, but a shared trade does not give everyone an identical outfit.
 
 <a id="지상의-복장"></a>
 
@@ -86,13 +106,16 @@ The people known by name at the opening are listed below. English spellings foll
 
 | Name | What is known |
 |---|---|
-| Go Ye-jin | Hierophant of Arc. The believers call her the Messiah. She comes from the Free City. |
-| I Ilseop | Duke of Gwanak. |
-| Ji Yeon-hui | Go Ye-jin's bodyguard since 2120. |
+| Kim Yeongyu | President of the Government. |
+| Go Ye-jin | Hierophant of Arc, a former engineer. The believers call her the Messiah. She comes from the Free City. She has no cover occupation. |
+| I Ilseop | Heir of a medical house of neural-link medicine. Chair of the Board of the Free City. |
+| Min Ung-gi | Aide to I Ilseop. |
+| Ji Yeon-hui | Aide to Go Ye-jin. She has been Go Ye-jin's bodyguard since 2120. |
+| Bae Ujin | Commander of the Arc's Eastern Command, the Arc's hereditary rifle guard. |
 | Sin Jong-mok | Callsign Baekya, linking Seonjeongneung and Suseo. |
 | Sin Jun | Sin Jong-mok's son. |
-| Jo Jaepyo | Figure of the Yeouido grand council. |
-| Oh Hae-rin | Director. |
+| Jo Jaepyo | A figure on the Free City side. |
+| Oh Hae-rin | Head of an institute. |
 
 ## Sources
 
