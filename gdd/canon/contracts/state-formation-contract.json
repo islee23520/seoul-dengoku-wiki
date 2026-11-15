@@ -48,9 +48,18 @@
   },
   "sourceScope": {
     "openingStates": {
-      "count": 16,
-      "range": "S01-S16",
-      "approvalRef": "owner-confirmed opening states; GDD r2.rwarfare-37.body"
+      "count": 3,
+      "ids": [
+        "government",
+        "free-city",
+        "arc"
+      ],
+      "approvalRef": "owner v4 directive 07 (2026-11-16): three factions; GDD r2.rwarfare-37.body",
+      "retired": {
+        "count": 16,
+        "range": "S01-S16",
+        "reason": "pre-v4 opening states, replaced by the three v4 factions"
+      }
     },
     "wholeKingdomAtOpening": false,
     "approvalRef": "owner-confirmed opening condition"
