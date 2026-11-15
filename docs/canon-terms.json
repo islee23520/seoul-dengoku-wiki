@@ -2,7 +2,7 @@
   "forbidden": [
     {
       "id": "church-ko",
-      "pattern": "당회장|(?<![가-힣])장로(?:회|들)?(?![가-힣])|목사|주교|대교구|교황|추기경|(?<![가-힣])권사(?![가-힣])|(?<![가-힣])집사(?![가-힣])|교회|성당|예배당?",
+      "pattern": "당회장|(?<![가-힣])장로(?:회|들)?(?![가-힣])|목사|대교구|교황|(?<![가-힣])권사(?![가-힣])|(?<![가-힣])집사(?![가-힣])|교회|성당|예배당?",
       "flags": "",
       "lang": "ko",
       "allowedContext": [],
@@ -10,7 +10,7 @@
     },
     {
       "id": "church-en",
-      "pattern": "\\b(?:archbishops?|archdioces[ea]s?|popes?|priests?|deacons?|bishops?|pastors?|cardinals?|cathedrals?|church(?:es)?|moderators?)\\b",
+      "pattern": "\\b(?:archbishops?|archdioces[ea]s?|popes?|priests?|deacons?|pastors?|cathedrals?|church(?:es)?|moderators?)\\b",
       "flags": "i",
       "lang": "en",
       "allowedContext": [],

@@ -104,14 +104,14 @@ Rank in all three factions is set by the number of stationmasters a person comma
 | Stationmasters commanded | Government | Arc | Free City |
 |---|---|---|---|
 | 1 (holds one station) | Stationmaster | Stationmaster | Stationmaster |
-| 2-4 | Headquarters Chief | Headquarters Chief | Headquarters Chief |
-| 5-9 | Bureau Director | Bishop | Guild Head |
+| 2-4 | Division Chief | Division Chief | Division Chief |
+| 5-9 | Bureau Chief | Bishop | Guild Master |
 | 10 or more (all stationmasters below) | Commissioner | Cardinal | Director |
 | Top | President (Kim Yeongyu) | Hierophant (Go Yejin) | Chair of the Board (I Ilseop) |
 
 B. Appointment and precedence
 
-The ten-stationmaster rank is reached by appointment. The President appoints Government commissioners, the Hierophant ordains Arc cardinals, and the board appoints Free City directors. Some who qualify are never appointed. Unofficial precedence among headquarters chiefs follows the number of stationmasters they command and the value of their stations.
+The ten-stationmaster rank is reached by appointment. The President appoints Government commissioners, the Hierophant ordains Arc cardinals, and the board appoints Free City directors. Some who qualify are never appointed. Unofficial precedence among division chiefs follows the number of stationmasters they command and the value of their stations.
 
 C. The value of a station
 

@@ -15,9 +15,9 @@ const factionOfDistrict = new Map(Object.entries(DISTRICT_FACTION).flatMap(([f, 
 
 const LABELS = {
   en: {
-    title: 'Territory Map', lead: 'Counties are the smallest selectable unit. Geographic jurisdiction is separate from actual holdings and vassalage.', epoch: 'As of',
+    title: 'Territory Map', lead: 'Former constituencies are the smallest selectable unit. Geographic units are separate from the stations each faction actually holds.', epoch: 'As of',
     modeGroup: 'Map type', political: 'Political map', titles: 'Geographic titles', layerGroup: 'Layer', surface: 'Surface', underground: 'Underground',
-    rank: 'Title rank', ranks: { county: 'County', duchy: 'Duchy', kingdom: 'Kingdom', empire: 'Empire' }, line: 'Line filter', allLines: 'All lines',
+    rank: 'Geographic level', ranks: { county: 'Former constituency', duchy: 'District', kingdom: 'Planning area', empire: 'Seoul' }, line: 'Line filter', allLines: 'All lines',
     holding: 'Personal domain', noHolding: 'Select a domain', showRail: 'Show subway lines', markers: 'Map markers', stations: 'Stations', landmarks: 'Key sites',
     whole: 'Whole Seoul', zoomIn: 'Zoom in', zoomOut: 'Zoom out', left: 'Pan left', right: 'Pan right', up: 'Pan up', down: 'Pan down',
     mapLabel: 'Territory map. Use arrow keys to pan, plus and minus to zoom.', detail: 'Selection details', close: 'Close', openDetail: 'Show details', hideDetail: 'Hide details',
@@ -33,9 +33,9 @@ const LABELS = {
     count: (n) => `${n}`, attribution: 'Source',
   },
   ko: {
-    title: '서울 영토 지도', lead: '백작령을 최소 선택 단위로 표시합니다. 지리 관할과 실제 보유·봉속은 별개입니다.', epoch: '시점',
+    title: '서울 영토 지도', lead: '옛 선거구를 최소 선택 단위로 표시합니다. 지리 단위와 세력이 실제로 쥔 역은 별개입니다.', epoch: '시점',
     modeGroup: '지도 종류', political: '정치 지도', titles: '지리 작위', layerGroup: '영토 층', surface: '지상 영토', underground: '지하 영토',
-    rank: '지리 작위 등급', ranks: { county: '백작령', duchy: '공작령', kingdom: '왕국', empire: '제국' }, line: '노선 필터', allLines: '전체 노선',
+    rank: '지리 단위 등급', ranks: { county: '옛 선거구', duchy: '구', kingdom: '권역', empire: '서울' }, line: '노선 필터', allLines: '전체 노선',
     holding: '개인 영지', noHolding: '영지 선택', showRail: '지하철 노선 표시', markers: '지도 표시', stations: '역', landmarks: '주요 시설',
     whole: '서울 전체', zoomIn: '지도 확대', zoomOut: '지도 축소', left: '왼쪽 이동', right: '오른쪽 이동', up: '위쪽 이동', down: '아래쪽 이동',
     mapLabel: '영토 지도. 방향키로 이동하고 더하기·빼기 키로 확대·축소합니다.', detail: '선택 정보', close: '닫기', openDetail: '상세 보기', hideDetail: '상세 숨기기',
