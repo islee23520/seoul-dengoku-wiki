@@ -82,9 +82,9 @@ Coolant was kept off the drinking-water ledger. When the liquid left in depot he
 
 The drinking-water and coolant ledgers were kept apart even in front of the [G19](/wiki/Hostile-Group-G19/) swarms or the equipment of [the old technology](/wiki/Lost-Technology-Lineage/). When a watchman poured coolant into a tank, waterborne disease spread.
 
-**F. Limits on low-floor living**
+**F. First floors in the flood zones**
 
-First floors south of the Han and along the tributaries were used as monsoon storage or left empty. Living quarters were on the third floor and above. The ration windows were moved into [buildings inside the embankment](/wiki/Building-Reuse-Geography/). The medical officers'' patients were mostly people who had slept on a wet first floor, used a special room full of asbestos dust as quarters, or washed in a coolant puddle.
+First floors in the flood zones south of the Han and along the tributaries were used as monsoon storage or left empty. Above ground the ground floor is the best place a citizen can have, but people here live on the cold, windy upper floors to keep clear of the water. The ration windows were moved into [buildings inside the embankment](/wiki/Building-Reuse-Geography/). The medical officers'' patients were mostly people who had slept on a wet first floor, used a special room full of asbestos dust as quarters, or washed in a coolant puddle.
 
 **G. Entering station interiors**
 
@@ -177,9 +177,9 @@ First floors south of the Han and along the tributaries were used as monsoon sto
 
 식수 장부와 냉각수 장부는 [G19](/wiki/Hostile-Group-G19/) 무리나 [옛 기술](/wiki/Lost-Technology-Lineage/) 설비 앞에서도 따로 관리한다. 당직자가 냉각수를 수조에 부으면 수인병이 번진다.
 
-**바. 저층 거주 제한**
+**바. 침수 구역의 1층**
 
-한강 이남의 1층과 지천 변은 우기 창고로 쓰이거나 비어 있다. 거주 구역은 3층 이상에 있다. 배급 창구는 [제방 안쪽 건물](/wiki/Building-Reuse-Geography/)로 옮겨졌다. 의무원의 환자는 주로 젖은 1층에서 잔 사람, 석면 먼지가 날리는 특별실을 숙영지로 쓴 사람, 냉각수 웅덩이에서 세수한 사람이다.
+한강 이남 침수 구역의 1층과 지천 변은 우기 창고로 쓰이거나 비어 있다. 지상에서는 1층이 시민의 가장 좋은 자리지만, 이곳 사람들은 물을 피해 춥고 바람이 센 위층에 산다. 배급 창구는 [제방 안쪽 건물](/wiki/Building-Reuse-Geography/)로 옮겨졌다. 의무원의 환자는 주로 젖은 1층에서 잔 사람, 석면 먼지가 날리는 특별실을 숙영지로 쓴 사람, 냉각수 웅덩이에서 세수한 사람이다.
 
 **사. 역 내부 출입**
 
@@ -204,7 +204,7 @@ After the collapse, Seoul''s buildings were not built anew. The positions and fo
 
 A. Smallest unit of occupation
 
-The dong remained the cells that divided area, the minimum unit a power could take was the building, and planting a flag on a dong''s name occupied nothing.
+The dong remained the cells that divided area. The smallest unit of territory is the station, meaning the subway station together with the surface stronghold above it. Outside the stronghold the unit a power could take was the building, and planting a flag on a dong''s name occupied nothing.
 
 B. Station building first
 
@@ -224,7 +224,7 @@ Place names and functions came from the past, the borders divided, and the prese
 
 A. Districts north and south of the river
 
-The districts set north of the Han were Jongno, Jung-gu, Yongsan, Seongdong, Gwangjin, Dongdaemun, Jungnang, Seongbuk, Gangbuk, Dobong, Nowon, Eunpyeong, Seodaemun, Mapo, and Gangseo; those set south were Yangcheon, Guro, Geumcheon, Yeongdeungpo, Dongjak, Gwanak, Seocho, Gangnam, Songpa, and Gangdong.
+The districts set north of the Han were Jongno, Jung-gu, Yongsan, Seongdong, Gwangjin, Dongdaemun, Jungnang, Seongbuk, Gangbuk, Dobong, Nowon, Eunpyeong, Seodaemun, and Mapo; those set south were Gangseo, Yangcheon, Guro, Geumcheon, Yeongdeungpo, Dongjak, Gwanak, Seocho, Gangnam, Songpa, and Gangdong.
 
 B. Tributaries
 
@@ -232,19 +232,19 @@ The tributaries split the districts. The Jungnang Stream ran through Jungnang, D
 
 C. Waterfront rules
 
-The waterfront rules were read from the layers first. The first floor of the main channel was monsoon storage or abandoned space, habitation pushed above the third floor, and the ration windows sat inside the embankment. The tributary banks were sewage and flood, wild boar and raccoon dog corridors, and school playgrounds served as detour embankments. Inland highlands like Gwanak and Dobong took slopes and blackouts instead of floods, and the schools became evacuation halls.
+The waterfront rules were read from the layers first. The first floor of the main channel was monsoon storage or abandoned space, habitation on the main-channel waterfront pushed above the third floor, and the ration windows sat inside the embankment. Away from the waterfront, the lower the floor above ground, the higher the standing of those who lived there. The tributary banks were sewage and flood, wild boar and raccoon dog corridors, and school playgrounds served as detour embankments. Inland highlands like Gwanak and Dobong took slopes and blackouts instead of floods, and the schools became evacuation halls.
 
 ## The Trades the Districts Took
 
 A. Origins of building roles
 
-The three factions hold one duchy per district, and a district''s building trades came out of the district''s own facilities. The Yeongdeungpo treatment plant and the Sinjeong depot, the Banghwa depot, the Changdong wheel works, the Noryangjin cold storage, and the Jegi-dong medicinal herbs were the first hands each district kept.
+The three factions divide their territory by station, and their station strongholds draw on the district''s facilities. A district''s building trades came out of the district''s own facilities. The Yeongdeungpo treatment plant and the Sinjeong depot, the Banghwa depot, the Changdong wheel works, the Noryangjin cold storage, and the Jegi-dong medicinal herbs were the first hands each district kept.
 
 | District | River side | Buildings taken first |
 |---|---|---|
 | Yeongdeungpo | South, Han and Anyang | Treatment plant and station unloading floor. The market as a reserved-ration window. |
 | Yangcheon, Guro, Geumcheon | South, Anyang | Depots and industrial blocks. Schools for drying parts. |
-| Gangseo | North, Han | Banghwa depot and research blocks. The airport memory went to storage. |
+| Gangseo | South, Han | Banghwa depot and research blocks. The airport memory went to storage. |
 | Yongsan, Mapo | North, Han | Rail warehouses and berths. Broadcast blocks as record relay. |
 | Jongno, Jung-gu | North, Cheonggye | Administrative blocks and universities. Ledgers and sealed stacks. |
 | Seongdong, Gwangjin | North, Han | Workshops and bridge approaches. Schools as repair practice. |
@@ -269,7 +269,7 @@ Militia sleep in schools, and ration windows occupy community centers. Each buil
 | University | Record-copying workshops. Laboratory blocks sealed or stripped for parts. |
 | Market | Licensed market. Splitting reserved portions from sale portions. |
 | Station | Hand-off of living freight and the refuge floors. The tracks carried the state''s transit toll. |
-| Apartment | Habitation only above the third floor. Floors 1–2 flooded storage or abandoned. |
+| Apartment | The ground floor is the best place for citizens to live, and the higher the floor, the lower the people (cold, strong wind, drone watching and attack). On the main-channel waterfront, habitation only above the third floor; floors 1–2 flooded storage or abandoned. |
 | Park · green space | Thin cultivation, grazing, monsoon drainage. Explicitly stated unless used as burial ground. |
 | Shop · office | Workshop or shutter-sealed. |
 
@@ -290,7 +290,7 @@ The waterfront''s first floor was `flooded` or storage. Habitation was above the
 
 가. 점령의 최소 단위
 
-동은 면적을 나누는 칸으로 남는다. 세력이 가져가는 최소 단위는 건물이다. 동 이름에 깃발을 꽂는 것으로는 점령하지 않는다.
+동은 면적을 나누는 칸으로 남는다. 영토의 가장 작은 단위는 역이다. ''역''은 지하철역과 그 위 지상 성채 영역을 함께 이른다. 성채 밖에서 세력이 가져가는 단위는 건물이다. 동 이름에 깃발을 꽂는 것으로는 점령하지 않는다.
 
 나. 역 건물 우선
 
@@ -310,7 +310,7 @@ The waterfront''s first floor was `flooded` or storage. Habitation was above the
 
 가. 강 남북의 구
 
-한강 이북의 구는 종로·중구·용산·성동·광진·동대문·중랑·성북·강북·도봉·노원·은평·서대문·마포·강서이다. 이남의 구는 양천·구로·금천·영등포·동작·관악·서초·강남·송파·강동이다.
+한강 이북의 구는 종로·중구·용산·성동·광진·동대문·중랑·성북·강북·도봉·노원·은평·서대문·마포이다. 이남의 구는 강서·양천·구로·금천·영등포·동작·관악·서초·강남·송파·강동이다.
 
 나. 지천
 
@@ -318,19 +318,19 @@ The waterfront''s first floor was `flooded` or storage. Habitation was above the
 
 다. 수변의 규칙
 
-수변에는 세 층의 규칙을 먼저 적용한다. 본류 1층은 우기 창고이거나 포기한 공간이다. 거주는 3층 이상에 둔다. 배급 창구는 제방 안쪽에 둔다. 지천 변은 오수와 범람, 멧돼지와 너구리 회랑이다. 학교 운동장은 우회 제방으로 쓴다. 관악·도봉 같은 내륙 고지는 침수 대신 경사와 단전을 받는다. 학교는 대피 대강당이 된다.
+수변에는 세 층의 규칙을 먼저 적용한다. 본류 1층은 우기 창고이거나 포기한 공간이다. 본류 수변에서는 거주를 3층 이상에 둔다. 수변이 아닌 곳의 지상 거주는 낮은 층일수록 윗자리다. 배급 창구는 제방 안쪽에 둔다. 지천 변은 오수와 범람, 멧돼지와 너구리 회랑이다. 학교 운동장은 우회 제방으로 쓴다. 관악·도봉 같은 내륙 고지는 침수 대신 경사와 단전을 받는다. 학교는 대피 대강당이 된다.
 
 ## 구가 가져가는 직능
 
 가. 직능의 출처
 
-세 세력의 공작령은 구 하나에 하나씩 놓인다. 건물 직능은 구의 시설에서 나온다. 영등포 정수와 신정 차량기지, 방화 기지, 창동 차륜, 노량진 냉동, 제기동 약재가 각 구에서 먼저 남는 시설이다. 배정은 다음 표와 같다.
+세 세력의 영토는 역 단위로 나뉘고, 역 거점은 구의 시설을 끼고 있다. 건물 직능은 구의 시설에서 나온다. 영등포 정수와 신정 차량기지, 방화 기지, 창동 차륜, 노량진 냉동, 제기동 약재가 각 구에서 먼저 남는 시설이다. 배정은 다음 표와 같다.
 
 | 구 | 강 | 먼저 가져가는 건물 |
 |---|---|---|
 | 영등포 | 남, 한강·안양천 | 정수·역 하역장. 시장은 예약 배급 창구. |
 | 양천·구로·금천 | 남, 안양천 | 차량기지·공단 동. 학교는 부품 건조. |
-| 강서 | 북, 한강 | 방화 기지와 연구동. 공항 기억은 창고용. |
+| 강서 | 남, 한강 | 방화 기지와 연구동. 공항 기억은 창고용. |
 | 용산·마포 | 북, 한강 | 철도 창고·선석. 방송동은 기록 중계. |
 | 종로·중구 | 북, 청계 | 행정동·대학. 장부와 봉인 서고. |
 | 성동·광진 | 북, 한강 | 공방·교량 접근. 학교는 수리 실습. |
@@ -355,7 +355,7 @@ The waterfront''s first floor was `flooded` or storage. Habitation was above the
 | 대학 | 기록 사본 공방. 실험동은 봉인하거나 부품 분해. |
 | 시장 | 허가 장터. 예약분과 판매분을 나눈다. |
 | 역 | 생활 화물 인계와 피난 층. 선로는 국가 통행세. |
-| 아파트 | 3층 이상만 거주. 1–2층은 침수 창고이거나 포기. |
+| 아파트 | 지층(1층)이 시민 거주의 윗자리이고, 높은 층일수록 아랫사람이 산다(추위, 강풍, 드론 감시와 공격). 본류 수변은 3층 이상만 거주하고 1–2층은 침수 창고이거나 포기. |
 | 공원·녹지 | 얕은 경작, 방목, 우기 배수. 묘지로 쓰지 않으면 명시한다. |
 | 상점·사무실 | 공방이거나 셔터 봉인. |
 
@@ -1546,7 +1546,7 @@ In April 2102 the Standards League admitted the workshops of Cheonan-Asan and Si
 
 ##### A. The I Family
 
-The First Branch Workshop joined the Standards League in 2102. Thereafter the I family of Cheonan-Asan managed the First Branch Workshop under the Standards League. The family looked after the rail yard at the southern end of Line 1 and four workshops. I Ilseop was heir of the I family. The I family has handed down neural-link surgery for generations; the rail-yard field and the workshops are its side work. As of 2126 I Ilseop is the Duke of Gwanak.
+The First Branch Workshop joined the Standards League in 2102. Thereafter the I family managed the First Branch Workshop under the Standards League. The family looked after the rail yard at the southern end of Line 1 and four workshops. I Ilseop was heir of the I family. The I family is a medical house that has handed down neural-link medicine for generations; the rail-yard field and the workshops are its side work. As of 2126 I Ilseop is Chair of the Board of the Free City. By rank the I family is a Director like any other Director, but because the people of the Free City want them to lead, the family has held the Chair of the Board for generations.
 
 <a id="2104년"></a>
 
@@ -1762,7 +1762,7 @@ In September 2117 a letter arrived in Yangjae proposing a marriage between Jeong
 
 ##### A. Commander Bae Ujin
 
-In 2117 the guard chief of the Eastern Command died. The deputy chief held emergency oversight for one year. In 2118 the late chief''s eldest son, Bae Ujin, took over as guard chief.
+In 2117 the Commander of the Eastern Command, its hereditary head, died. The deputy chief held emergency oversight for one year. In 2118 the late Commander''s eldest son, Bae Ujin, took over as Commander. The Eastern Command is the Arc''s hereditary rifle guard.
 
 <a id="2118년"></a>
 
@@ -1845,16 +1845,6 @@ In 2119 the leader of the City Hall Station workers died. Oh Gyeongjae, eldest s
 
 In November 2119 Sin Jong-mok, senior operative of the Eastern Command''s Special Recovery Unit, returned from his last recovery operation with refugees who were not on the roster. His return report recorded insubordination and the loss of issued supplies. Some of the unit members who had held the line of retreat were listed as missing.
 
-<a id="2119년-지연희"></a>
-
-#### Ji Yeon-hui
-
-<a id="ch46-i1"></a>
-
-##### A. Refuge
-
-In the winter of 2119 Ji Yeon-hui arrived as a refugee from the outskirts of Seoul.
-
 <a id="peninsula-2119-tsushima-withdrawal"></a>
 <a id="event-peninsula-2119-tsushima-withdrawal"></a>
 
@@ -1910,23 +1900,25 @@ In April 2120 Sin Jong-mok left the Special Recovery Unit. He moved with the chi
 
 ##### A. Suseo
 
-From 2080 onward the Suseo depot belonged to no faction. In the early 2120s Go Ye-jin worked at the Suseo depot as an adviser who helped arrange contracts between territories.
+From 2080 onward the Suseo depot belonged to no faction.
 
 <a id="2120년-지연희"></a>
+<a id="2119년-지연희"></a>
 
 #### Ji Yeon-hui
 
+<a id="ch46-i1"></a>
 <a id="ch46-i2"></a>
 
-##### A. The Contract
+##### A. The Bodyguard
 
-In January 2120 Ji Yeon-hui signed a contract with an intelligence organization. The organization gave her shelter and a livelihood, and in return she took on a debt.
+In 2120, at shelter negotiations on the Tancheon side, Ji Yeon-hui stopped a man who drew a knife and took her place beside Go Ye-jin, and afterward she became Go Ye-jin''s bodyguard. Her debt and the choices around it are undecided.
 
 <a id="ch46-i3"></a>
 
-##### B. Registration as a Courier
+##### B. The Aide
 
-In the same year Ji Yeon-hui registered as an independent courier at a transfer station on a faction border. That same year she stood beside Go Ye-jin at shelter negotiations on the Tancheon side, and afterward she became Go Ye-jin''s bodyguard.
+As of 2126 Ji Yeon-hui is Go Ye-jin''s aide, belonging to the Arc.
 
 <a id="2120년-시청역-노동자들"></a>
 
@@ -2128,7 +2120,7 @@ In October 2123, before submitting the winter ration plan, I Ilseop recounted th
 
 ##### B. Payment in Seed
 
-In November 2123 I Ilseop attended the Standards League council in Guro for the first time as representative of the First Branch Workshop. The council gave the workshop''s representative a voice but no vote. I Ilseop proposed that part of the payment for the First Branch Workshop''s parts be made in seed instead of certificates. Gang Minseo accepted a plan to pay one fifth of the amount in seed. The seed the League paid out was allotment seed it had obtained by trade with the Government.
+In November 2123 I Ilseop attended the Board in Guro for the first time as heir of his house. I Ilseop proposed that part of the payment for the First Branch Workshop''s parts be made in seed instead of certificates. Gang Minseo accepted a plan to pay one fifth of the amount in seed. The seed the League paid out was allotment seed it had obtained by trade with the Government.
 
 <a id="2123년-조재표-일행"></a>
 
@@ -2370,7 +2362,7 @@ In 2125 people who had returned by different routes pointed to the items they ha
 
 In 2126 Oh Gyeongjae was ratified and took over Im Hajun''s work. Oh Gyeongjae made the three-page will public in the council chamber and did not ratify Han Jaemok''s plan to expand westward. Instead, he agreed to seal the box of originals of the pump maintenance procedure jointly with the Water Gate Bureau.
 
-The present is the winter of 2126, before the third water-supply contract. Reports reached Suseo that over two months seven baptized converts had gone missing from the Cheongdam and Samseong strongholds. The Suseo radio room picked up the call sign Baekya on an old military frequency moving between Seonjeongneung and Suseo.
+The present is the winter of 2126. The Government''s President is Kim Yeongyu, the Free City''s Chair of the Board is I Ilseop, and the Arc''s Hierophant is Go Ye-jin. How the presidency passed from Yun Seorin to Kim Yeongyu is undecided. Reports reached Suseo that over two months seven baptized converts had gone missing from the Cheongdam and Samseong strongholds. The Suseo radio room picked up the call sign Baekya on an old military frequency moving between Seonjeongneung and Suseo.
 ', '
 <a id="서울전국-연표-20262126"></a>
 
@@ -3548,7 +3540,7 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 ##### 가. 이씨 가문
 
-제1분공방은 2102년 규격맹에 들어갔다. 이후 천안·아산의 이씨 가문이 규격맹 아래에서 제1분공방을 맡아 관리하였다. 가문은 1호선 남단 차량기지와 공방 4곳을 돌보았다. 이일섭은 이씨 가문의 후계였다. 이씨 가문은 신경 연결 수술을 대대로 이어 온 집안이고, 차량기지 밭과 공방은 가문의 부업이다. 이일섭은 2126년 현재 관악 공작이다.
+제1분공방은 2102년 규격맹에 들어갔다. 이후 이씨 가문이 규격맹 아래에서 제1분공방을 맡아 관리하였다. 가문은 1호선 남단 차량기지와 공방 4곳을 돌보았다. 이일섭은 이씨 가문의 후계였다. 이씨 가문은 신경 연결 의술을 대대로 이어 온 의료 가문이고, 차량기지 밭과 공방은 가문의 부업이다. 이일섭은 2126년 현재 자유도시 이사회장이다. 이씨 가문은 계급으로는 다른 이사와 같은 이사지만, 자유도시 사람들이 그들이 이끌어 주기를 바라므로 대대로 이사회장을 맡는다.
 
 <a id="2104년"></a>
 
@@ -3764,7 +3756,7 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 ##### 가. 배우진 사령관
 
-2117년 동방사 경비 책임자가 사망하였다. 부책임자가 1년간 비상감독을 맡았다. 2118년 장남 배우진이 경비 책임자 자리를 이었다.
+2117년 동방사의 세습 수장인 사령관이 사망하였다. 부책임자가 1년간 비상감독을 맡았다. 2118년 장남 배우진이 사령관 자리를 이었다. 동방사는 아크의 세습 소총 근위대다.
 
 <a id="2118년"></a>
 
@@ -3847,16 +3839,6 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 2119년 11월 동방사 특수회수반의 선임 공작원 신종목은 마지막 회수 작전에서 명부 밖 피난민을 데리고 돌아왔다. 귀환 보고서에는 명령 불복종과 지급품 손실이 적혔다. 퇴로를 지킨 반원 일부는 실종으로 처리되었다.
 
-<a id="2119년-지연희"></a>
-
-#### 지연희
-
-<a id="ch46-i1"></a>
-
-##### 가. 피난
-
-2119년 겨울 지연희가 서울 외곽에서 피난해 왔다.
-
 <a id="peninsula-2119-tsushima-withdrawal"></a>
 <a id="event-peninsula-2119-tsushima-withdrawal"></a>
 
@@ -3912,23 +3894,25 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 ##### 가. 수서
 
-수서 차량기지는 2080년 이후 어느 세력에도 속하지 않았다. 2120년대 초 고예진은 수서 차량기지에서 권역 사이의 계약을 돕는 자문 일을 하였다.
+수서 차량기지는 2080년 이후 어느 세력에도 속하지 않았다.
 
 <a id="2120년-지연희"></a>
+<a id="2119년-지연희"></a>
 
 #### 지연희
 
+<a id="ch46-i1"></a>
 <a id="ch46-i2"></a>
 
-##### 가. 계약
+##### 가. 경호원
 
-2120년 1월 지연희는 한 정보 조직과 계약을 맺었다. 조직은 은신처와 생계를 내주었고, 지연희는 그 대가로 빚을 졌다.
+2120년 지연희는 탄천 쪽 대피소 교섭 자리에서 칼을 꺼낸 남자를 막고 고예진 곁에 섰고, 이후 고예진의 경호원이 되었다. 지연희가 진 빚과 그 선택지는 미정이다.
 
 <a id="ch46-i3"></a>
 
-##### 나. 전령 등록
+##### 나. 측근
 
-같은 해 지연희는 세력 경계의 한 환승역에서 독립 전령으로 등록하였다. 같은 해 지연희는 탄천 쪽 대피소 교섭 자리에서 고예진 곁에 섰고, 이후 고예진의 경호원이 되었다.
+2126년 현재 지연희는 아크에 속한 고예진의 측근이다.
 
 <a id="2120년-시청역-노동자들"></a>
 
@@ -4130,7 +4114,7 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 ##### 나. 종자 대금
 
-2123년 11월 이일섭은 제1분공방 대표로 구로의 규격맹 평의회에 처음 출석하였다. 평의회는 분공방 대표에게 발언권만 주었다. 이일섭은 제1분공방 부품 대금의 일부를 증서 대신 종자로 받자고 제안하였다. 강민서는 대금의 5분의 1을 종자로 지급하는 안을 받아들였다. 규격맹이 지급한 종자는 정부와 거래해 받은 분양 종자였다.
+2123년 11월 이일섭은 가문의 후계로 구로의 이사회에 처음 출석하였다. 이일섭은 제1분공방 부품 대금의 일부를 증서 대신 종자로 받자고 제안하였다. 강민서는 대금의 5분의 1을 종자로 지급하는 안을 받아들였다. 규격맹이 지급한 종자는 정부와 거래해 받은 분양 종자였다.
 
 <a id="2123년-조재표-일행"></a>
 
@@ -4372,11 +4356,11 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 2126년 오경재가 인준을 거쳐 임하준의 일을 이어받았다. 오경재는 유언 3장을 회의실에 공개하였고 한재목의 서부 확대안은 인준하지 않았다. 대신 펌프 정비 공정의 원본 함을 수문국과 공동 봉인하는 데 합의하였다.
 
-2126년 겨울, 세 번째 급수계약을 앞둔 때가 지금이다. 수서에는 두 달 동안 청담과 삼성 쪽 거점에서 세례를 받은 개종자 일곱 명이 사라졌다는 보고가 올라왔다. 수서 통신실은 선정릉과 수서 사이를 오가는 옛 군용 주파수에서 ''백야''라는 호출부호를 잡았다.
+2126년 겨울이 지금이다. 정부 대통령은 김연규, 자유도시 이사회장은 이일섭, 아크 교주는 고예진이다. 대통령직이 윤서린에게서 김연규에게 넘어간 경위는 미정이다. 수서에는 두 달 동안 청담과 삼성 쪽 거점에서 세례를 받은 개종자 일곱 명이 사라졌다는 보고가 올라왔다. 수서 통신실은 선정릉과 수서 사이를 오가는 옛 군용 주파수에서 ''백야''라는 호출부호를 잡았다.
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Chaebol-Houses-and-Century-Factions', 'Families and the Three Factions', '가문과 세 세력', 'factions', 0, '<a id="재벌-가문과-세기-파벌"></a>
 
-After the Great Blackout, scarcity in Seoul forced children to take up their parents'' work. As inherited work piled up, a vertical hierarchy hardened, and the family became the unit that held that hierarchy in place. The three powers, however, differ in how a family passes on its position. In the Government, a seat holding a duchy passes to the next generation. In the Free City, skills and workshops pass down. In the Arc, a family''s authority centred on the Hierophant passes down.
+After the Great Blackout, scarcity in Seoul forced children to take up their parents'' work. As inherited work piled up, a vertical hierarchy hardened, and the family became the unit that held that hierarchy in place. In the winter of 2126, a family''s place is set by two things: how many stations the family holds, and which floor its members live on. The rule is shared by the Government, the Free City, and the Arc.
 
 <a id="가문과-키의-분할"></a>
 
@@ -4385,30 +4369,40 @@ After the Great Blackout, scarcity in Seoul forced children to take up their par
 <a id="가문과-키의-분할-p1"></a>
 <a id="가문과-키의-분할-p2"></a>
 
-The Government rules the 14 districts north of the Han River. In each district, the elected district representative becomes a Senator and holds that district''s duchy. On paper, elections still exist. But under scarcity, only a handful of families can gather votes, so the seats have effectively become hereditary. The Government recognizes as citizens only those recorded in its own registers, so people outside the registers have almost no path to such a seat. The same thing happens further down. At Yongsan Station in Yongsan-gu, the Seollo family passes the keys of the rail transshipment facility to the next generation. The names of the district Senators are not recorded.
+The greatest place a family hands down is a station. A family that holds a station passes the stationmaster''s seat to the next generation, and a family that commands many stationmasters tries to pass on the rank of division chief or higher along with them. The ten-stationmaster rung (Government commissioner, Arc cardinal, Free City director), however, is filled by appointment, so it does not pass by blood alone. The rank table is in [Offices and Ranks](/wiki/Offices-and-Ranks/).
 
-The Free City is a scattering of independent city-states across the 7 southwestern districts. It has no king, and since there is no way to judge whose skill is greater, it has not been able to choose a leader. Instead, skills, workshops, and medical practice are passed down within families. The Duke of Gwanak, I Ilseop, is heir of the I family of the First Branch Workshop, which has handed down neural-link surgery for generations. The cities outside Gwanak are each their own power and hold their own duchies, but their holders are not recorded.
+Keys smaller than a station also pass down. At Yongsan Station in Yongsan-gu, the Seollo family passes the keys of the rail transshipment facility to the next generation.
 
-Han Jae-mok of the Cheongju Han clan is recorded as representative of the water-contract families. In older records, the council of water-contract families was based at Yangpyeong Station (Yangcheon-gu).
+In the Free City, skills, workshops, and medical practice are passed down within families. The Chair of the Board, I Ilseop, is heir of the I family, a medical family that has handed down neural-link medicine for generations. The people of the Free City hold that refusing to be ruled is freedom, yet because they want the I family to lead them, the I family holds the office of Chair of the Board generation after generation.
 
-The Arc consists of the 4 Gangnam districts and split off from the Free City. It is ruled by the Hierophant Go Ye-jin, whom the faithful call the Messiah. Its rule is a Shia-style family rule. The faithful build up their faith through baptism, replacing parts of their bodies with machines. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. The names of the holders of the Seocho-gu, Gangnam-gu, Songpa-gu, and Gangdong-gu duchies are not recorded.
+In the Arc, cardinals, bishops, division chiefs, and stationmasters stand below the Hierophant Go Ye-jin. The Dongbangsa is the Arc''s hereditary rifle guard, and its commander is Bae Ujin.
+
+## Founding Families and the Underground
+
+The right to live underground went first to the founding families of each faction. These families took the deep levels first and have held those places from generation to generation. Underground, deeper is higher, so a founding family''s place is in itself a high standing. There is no special name for these families. The rules of floors and standing are in [Residence Layers and Class](/wiki/Residence-Layers-and-Class/).
+
+A family that holds no station is a family of commoners. Among commoner families, the highest are those living on the ground floor, and the higher a family lives, the lower it stands.
 
 <a id="대한민국정부의-도심-지배와-분열"></a>
 
 ## The Government That Rules the City Centre
 
-On paper, the Government maintains ministries representing the three branches of the Republic of Korea and a multiparty system. In reality, however, there are only two parties, the OMO Party and the Claw Party, and the actual system is a modern feudalism. The Senators gather candidates from among themselves and produce a President, who serves for life. The arrangement resembles the prince-elector system of the Holy Roman Empire, in which a few princes chose the emperor.
+On paper, the Government keeps the ministries and elections of the Republic of Korea. The northern Government still holds elections. Every time, the same answer comes out. The President is Kim Yeongyu. The President appoints commissioners from among those who command ten or more stationmasters.
 
-Because the seats that have hardened into hereditary holdings are the very foundation of power, that foundation is contested even within the Government. The duty-family factions clash over the lifetime presidency, the Records Office, the Government Complex Guard, stamp duty revenue, the officer corps rolls, the tank depots, and the original seed stores. Onminui, led by Kim Yeongyu, is one of these factions. Even while fighting internally, the Government treats the entire area south of the Han River as barbarians beyond the wall.
+Because stations and appointments are the very foundation of power, that foundation is contested even within the Government. The Government''s families clash over commissioner appointments, the Records Office, the Government Complex Guard, stamp duty revenue, the officer corps rolls, the tank depots, and the original seed stores. A family that qualifies but never sees a commissioner appointed from its ranks becomes a source of trouble inside the Government.
+
+## Family Members Who Cross to Another Faction
+
+A family''s place holds only inside its own faction. If a family member is abducted or captured and taken to another faction, they lose their assets and territory and become one of the lowest class, whatever rank they held at home. The family left behind negotiates a ransom or plans a rescue, and the receiving faction holds the member''s family hostage to prevent sabotage and escape. Details are in [Human Resource Movement](/wiki/Human-Resource-Movement/).
 
 <a id="외부-세력과-전구"></a>
 
 ## Beyond Seoul
 
-The land outside Seoul is not ruled by people. The AI did not kill humanity directly; it brought down winter. Under that winter, the war machines of the Great Blackout roam, still carrying out their last orders. The Imjin River Gateway Theater, West Sea Granary Theater, Korea Strait Theater, Tumen River Far East Theater, and Incheon Trusteeship Theater found in old records are not political powers but merely names in the records. As of the winter of 2126, the stage on which families compete for position is the three powers and the 25 duchies.
+The land outside Seoul is not ruled by people. The AI did not kill humanity directly; it brought down winter. Under that winter, the war machines of the Great Blackout roam, still carrying out their last orders. The Imjin River Gateway Theater, West Sea Granary Theater, Korea Strait Theater, Tumen River Far East Theater, and Incheon Trusteeship Theater found in old records are not political powers but merely names in the records. As of the winter of 2126, the stage on which families compete for position is the three factions and the stations they hold.
 ', '<a id="재벌-가문과-세기-파벌"></a>
 
-대정전 뒤 서울에서는 결핍 때문에 자식이 부모의 일을 이어 하게 됐다. 그렇게 이어진 일이 쌓여 수직 계층이 굳었고, 가문은 그 계층을 붙드는 단위가 되었다. 다만 세 세력은 가문이 자리를 잇는 방식이 저마다 다르다. 정부에서는 공작령을 쥔 의석이, 자유도시에서는 기술과 작업장이, 아크에서는 교주를 중심으로 한 가문의 권위가 다음 세대로 넘어간다.
+대정전 뒤 서울에서는 결핍 때문에 자식이 부모의 일을 이어 하게 됐다. 그렇게 이어진 일이 쌓여 수직 계층이 굳었고, 가문은 그 계층을 붙드는 단위가 되었다. 2126년 겨울, 한 가문의 자리는 두 가지로 정해진다. 그 가문이 역을 몇 개 쥐었는지, 그리고 그 가문 사람들이 어느 층에 사는지다. 이 규칙은 정부, 자유도시들, 아크에 공통이다.
 
 <a id="가문과-키의-분할"></a>
 
@@ -4417,45 +4411,55 @@ The land outside Seoul is not ruled by people. The AI did not kill humanity dire
 <a id="가문과-키의-분할-p1"></a>
 <a id="가문과-키의-분할-p2"></a>
 
-정부는 한강 북쪽 14구를 다스린다. 각 구에서 뽑힌 지역구 국회의원이 상원의원(Senator)이 되어 그 구의 공작령을 쥔다. 서류상으로는 선거가 남아 있다. 그러나 결핍 속에서 표를 모을 수 있는 집안은 몇 되지 않아 의석은 실제로 세습처럼 굳었다. 정부는 자기 장부에 기록된 사람만 국민으로 인정하므로, 장부 바깥 사람이 그 자리에 오를 길은 거의 없다. 아래 층에서도 같은 일이 벌어진다. 용산구의 용산역 선로가는 철도 환적 시설의 열쇠를 다음 세대에 넘긴다. 각 구 상원의원의 이름은 기록되지 않았다.
+가문이 물려주는 가장 큰 자리는 역이다. 역을 가진 집안은 역장 자리를 다음 세대에 넘기고, 역장을 여럿 거느린 집안은 본부장이나 그 위의 계급을 함께 넘기려 한다. 다만 역장 열 명 이상의 단계(정부 청장, 아크 추기경, 자유도시 이사)는 임명제이므로 피만으로는 이어지지 않는다. 계급표는 [관직](/wiki/Offices-and-Ranks/)에 있다.
 
-자유도시는 남서쪽 7구에 흩어진 독립 도시국가들이다. 왕이 없고, 누구 기술이 더 높은지 따질 방법이 없어 지도자도 뽑지 못했다. 그 대신 기술과 작업장, 의술이 집안 안에서 이어진다. 관악 공작 이일섭(I Ilseop)은 신경 연결 수술을 대대로 이어 온 제1분공방 이씨 가문의 후계다. 관악 밖 도시들도 각자 권력이고 각자 공작령을 쥐지만, 그 보유자는 기록되지 않았다.
+역보다 작은 열쇠도 대를 잇는다. 용산구의 용산역 선로가는 철도 환적 시설의 열쇠를 다음 세대에 넘긴다.
 
-청주 한씨 한재목은 물 계약 가문 대표로 기록되어 있다. 옛 기록에서 물 계약 가문들의 회의는 양평역(양천구)을 근거로 삼았다.
+자유도시들에서는 기술과 작업장, 의술이 집안 안에서 이어진다. 이사회장 이일섭은 신경 연결 의술을 대대로 이어 온 이씨 의료 가문의 후계자다. 자유도시 사람들은 지배를 거부하는 것을 자유라고 여기지만, 이씨 가문이 자기들을 이끌어 주기를 바라므로 이씨 가문이 대대로 이사회장을 맡는다.
 
-아크는 강남 4구이며 자유도시에서 갈라져 나왔다. 교주(Hierophant) 고예진이 다스리고, 신도는 그를 메시아라 부른다. 통치는 시아파식 가문 통치다. 신도는 몸의 부위를 기계로 바꾸는 세례로 신앙을 쌓는다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다. 서초·강남·송파·강동 공작령 보유자의 이름은 기록되지 않았다.
+아크에서는 교주 고예진 아래로 추기경, 주교, 본부장, 역장이 이어진다. 동방사는 아크의 세습 소총 근위대이고, 사령관은 배우진이다.
+
+## 개국공신 집안과 지하
+
+지하에 살 권리는 각 세력의 개국공신 집안이 먼저 받았다. 이 집안들은 깊은 층을 먼저 차지했고, 그 자리를 대를 이어 지킨다. 지하에서는 깊을수록 위이므로, 개국공신 집안의 자리는 곧 높은 신분이다. 이 집안들을 부르는 따로 정해진 이름은 없다. 층과 신분의 규칙은 [거주 층위와 신분](/wiki/Residence-Layers-and-Class/)에 있다.
+
+역을 갖지 못한 가문은 일반 시민이다. 시민 가문 가운데 가장 높은 것은 지층(지상 1층)에 사는 집안이고, 높은 층에 사는 집안일수록 낮다.
 
 <a id="대한민국정부의-도심-지배와-분열"></a>
 
 ## 도심을 다스리는 정부
 
-정부는 서류상 대한민국의 삼권을 대표하는 부처와 다당제를 유지한다. 그러나 실제 정당은 OMO당(OMO Party)과 클로당(Claw Party) 둘뿐이고, 실상은 현대 봉건제다. 상원의원들은 자기들 가운데서 후보를 모아 대통령을 내며, 대통령은 종신이다. 몇몇 제후가 황제를 뽑던 신성로마제국 선제후 제도와 닮은 방식이다.
+정부는 서류상 대한민국의 부처와 선거를 유지한다. 강북 정부는 지금도 선거를 한다. 매번 같은 답이 나온다. 대통령은 김연규다. 대통령은 역장 열 명 이상을 거느린 사람 가운데서 청장을 임명한다.
 
-세습처럼 굳은 의석이 곧 권력의 기반이므로, 그 기반은 정부 안에서도 다툼의 대상이다. 의무가문 파벌들은 종신 대통령 자리와 기록청, 청사 경비대, 인지세 수입, 장교단 명부, 전차 차고, 원종 씨앗 창고를 두고 맞선다. 김연규가 이끄는 온민의도 그 파벌 가운데 하나다. 이렇게 안에서 다투는 동안에도 정부는 한강 남쪽 전체를 장벽 너머 야인처럼 대한다.
+역과 임명이 곧 권력의 기반이므로, 그 기반은 정부 안에서도 다툼의 대상이다. 정부의 가문들은 청장 임명과 기록청, 청사 경비대, 인지세 수입, 장교단 명부, 전차 차고, 원종 씨앗 창고를 두고 맞선다. 자격을 갖추고도 청장에 임명받지 못한 가문은 정부 안의 불씨가 된다.
+
+## 다른 세력으로 넘어간 가문 사람
+
+가문의 자리는 그 세력 안에서만 통한다. 가문 사람이 납치되거나 포획되어 다른 세력으로 넘어가면, 본진에서 어떤 계급이었든 자산과 영토를 빼앗기고 최하층민이 된다. 남은 가문은 몸값을 협상하거나 구출을 꾀하고, 받아 간 세력은 그 가족을 인질로 잡아 태업과 탈출을 막는다. 자세한 내용은 [인적자원 이동](/wiki/Human-Resource-Movement/)에 있다.
 
 <a id="외부-세력과-전구"></a>
 
 ## 서울 바깥
 
-서울 밖은 사람이 다스리는 땅이 아니다. AI는 인류를 직접 죽이지 않았고 겨울을 내렸다. 그 겨울 아래에서 대정전 때의 전쟁 기계들이 마지막 명령을 수행하며 돌아다닌다. 옛 기록에 남은 임진강관문전구, 서해곡창전구, 대한해협전구, 두만강극동전구, 인천신탁전구는 정치 세력이 아니라 기록 속 이름일 뿐이다. 2126년 겨울 현재 가문들이 자리를 다투는 무대는 세 세력과 25공작령이다.
+서울 밖은 사람이 다스리는 땅이 아니다. AI는 인류를 직접 죽이지 않았고 겨울을 내렸다. 그 겨울 아래에서 대정전 때의 전쟁 기계들이 마지막 명령을 수행하며 돌아다닌다. 옛 기록에 남은 임진강관문전구, 서해곡창전구, 대한해협전구, 두만강극동전구, 인천신탁전구는 정치 세력이 아니라 기록 속 이름일 뿐이다. 2126년 겨울 현재 가문들이 자리를 다투는 무대는 세 세력과 그들이 쥔 역이다.
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Characters-Factions-and-Professions', 'Characters, Factions, and Trades', '인물·세력·생업', 'characters', 1, '<a id="세-세력"></a>
 
 ## The Three Factions
 
-At the opening in 2126, Seoul is divided among three factions. The fourteen districts north of the Han River are the **Government**''s; the seven southwestern districts are the **Free City**''s; the four Gangnam districts are **Arc**''s. One district is one duchy, and Seoul holds twenty-five duchies in all.
+At the opening in 2126, Seoul is divided among three factions. The fourteen districts north of the Han River are the **Government**''s; the seven southwestern districts are the **Free City**''s; the four Gangnam districts are **Arc**''s. The smallest unit of rule is the station.
 
 **A. The Government**
 
-On paper the Government keeps the ministries of the three branches of the Republic of Korea and a multiparty system. In practice there are only two parties, the OMO Party and the Claw Party. The assembly member elected in each district holds that district''s duchy and bears the title Senator. The Senators gather candidates from among themselves and produce the President, who serves for life. The Government recognizes as citizens only the people entered in its own registers. It regards the land across the river as where barbarians live.
+On paper the Government keeps the ministries of the three branches of the Republic of Korea and a multiparty system. In practice there are only two parties, the OMO Party and the Claw Party. At the top is the President, who serves for life. The current President is Kim Yeongyu. The Government recognizes as citizens only the people entered in its own registers. It regards the land across the river as where barbarians live.
 
 **B. The Free City**
 
-The Free City is not a single power. Each city is its own power and holds its own duchy; there is no king. Most residents are skilled hands who live by their work. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. The Free City''s weapons are people and food, and its doctors let it hold out longest. Together they are now called the Union. The Duke of Gwanak is I Ilseop.
+The Free City is not a single power. Each city stands on its own, and they hold that refusing to be ruled is freedom. Most residents are skilled hands who live by their work. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. The Free City''s weapons are people and food, and its doctors let it hold out longest. There is no name for them taken together. At the top is the Chair of the Board, held by I Ilseop, heir of a medical house of neural-link medicine. His aide is Min Ung-gi.
 
 **C. Arc**
 
-Arc is a faith community that split from the Free City and settled in the four Gangnam districts. Its Hierophant is Go Ye-jin, and the believers call her the Messiah. Believers receive baptism, the replacement of body parts with machines. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. The culture of the faith is treated separately in [Faith and Culture](/wiki/Faith-Culture-Schism/).
+Arc is a faith community that split from the Free City and settled in the four Gangnam districts. Its Hierophant is Go Ye-jin, a former engineer, and the believers call her the Messiah. Her aide is Ji Yeon-hui, and the Commander of the Eastern Command, the hereditary rifle guard, is Bae Ujin. Believers receive baptism, the replacement of body parts with machines. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. The culture of the faith is treated separately in [Faith and Culture](/wiki/Faith-Culture-Schism/).
 
 <a id="세습-생업"></a>
 
@@ -4463,11 +4467,31 @@ Arc is a faith community that split from the Free City and settled in the four G
 
 Scarcity made people take up their parents'' work. Without infrastructure the population did not grow, and parents handed their work down to their children. The vertical ranks that hardened this way became an institution in the Government''s land. The Government still holds elections, and every election returns the same answer.
 
-The Free City is bound by the exchange of skills and medicine more than by inheritance. Nearly all of Seoul''s doctors are in the Free City, and it also makes the most meals. There was no way to judge whose skill ranked higher, so the cities chose no leader. They trade treatment, meals, and goods with one another and each lives its own life.
+The Free City is bound by the exchange of skills and medicine more than by inheritance. Nearly all of Seoul''s doctors are in the Free City, and it also makes the most meals. The cities refuse to set a ruler over themselves, yet people want I Ilseop''s house, which holds the medicine, to lead them. They trade treatment, meals, and goods with one another and each lives its own life.
 
 ## Trades
 
-Facilities such as water treatment plants, depots, hospitals, and workshops put people of different trades on duty together. Even within one trade, people differ in organization, titled domain, and personal taste, in clothing as in tools.
+Facilities such as water treatment plants, depots, hospitals, and workshops put people of different trades on duty together. Even within one trade, people differ in organization, station, and personal taste, in clothing as in tools.
+
+<a id="계층과-거주-층위"></a>
+
+## Ranks and Residence Layers
+
+The three factions share one frame of ranks. A person''s step is set by the number of Stationmasters under them. A station means a subway station together with the fortified ground above it.
+
+| Stationmasters under them | Government | Arc | Free City |
+|---|---|---|---|
+| 1 | Stationmaster | Stationmaster | Stationmaster |
+| 2 to 4 | Division Chief | Division Chief | Division Chief |
+| 5 to 9 | Bureau Chief | Bishop | Guild Master |
+| 10 or more | Commissioner | Cardinal | Director |
+| Top | President | Hierophant | Chair of the Board |
+
+The step of ten or more is reached by appointment. Government Commissioners are appointed by the President, Arc Cardinals are ordained by the Hierophant, and Free City Directors are appointed by the Board. Those who qualify but are never appointed become seeds of conflict within. Among Division Chiefs, standing follows the number of Stationmasters they lead and the worth of their stations. A station is worth more the more transfer lines it has and the deeper it goes, and the Stationmaster of an above-ground station ranks lowest of all.
+
+Everyone who holds no station is an ordinary citizen. How deep a person lives shows their class. Underground, deeper means higher, so someone living on the third basement level stands above someone on the first. Above ground, higher means lower, and among citizens those on the ground floor stand highest. Each faction''s founding retainers receive the right to live underground first.
+
+A person who moves to another faction loses their assets and territory and becomes one of the lowest class, whatever their rank at home. The faction that takes them uses their skills but does not raise their standing. So people move between factions mostly through abduction and capture, and work slowdowns, ransom talks, escapes and the envy of the native lower class become the conflicts. A technician who has been taken across is kept from slowing work or escaping by holding their family hostage.
 
 <a id="깊이와-생업에-따른-옷차림"></a>
 
@@ -4477,7 +4501,7 @@ Clothing follows the basic silhouettes of the 1940s, during the Second World War
 
 Clothing varies with life on the surface, at intermediate depth, or deep underground. A heated room and a draughty passage can call for different layers on the same floor; insulation follows the temperature of the space a person actually occupies. At the same temperature, activity, working conditions, and individual sensitivity to cold create further differences. Garment cuts, pockets, and equipment reflect trades, while thickness, fabric, and removable layers adapt to the surroundings. Regional temperature differences affect clothing more strongly on the surface than underground.
 
-People in the same trade dress differently according to their organization, titled domain, and personal taste. Couriers share a need for mobility and storage without sharing every jacket cut, colour, or pocket arrangement. The same garment may illustrate regional differences in insulation, but a shared trade does not give everyone an identical outfit.
+People in the same trade dress differently according to their organization, station, and personal taste. Couriers share a need for mobility and storage without sharing every jacket cut, colour, or pocket arrangement. The same garment may illustrate regional differences in insulation, but a shared trade does not give everyone an identical outfit.
 
 <a id="지상의-복장"></a>
 
@@ -4523,13 +4547,16 @@ The people known by name at the opening are listed below. English spellings foll
 
 | Name | What is known |
 |---|---|
-| Go Ye-jin | Hierophant of Arc. The believers call her the Messiah. She comes from the Free City. |
-| I Ilseop | Duke of Gwanak. |
-| Ji Yeon-hui | Go Ye-jin''s bodyguard since 2120. |
+| Kim Yeongyu | President of the Government. |
+| Go Ye-jin | Hierophant of Arc, a former engineer. The believers call her the Messiah. She comes from the Free City. She has no cover occupation. |
+| I Ilseop | Heir of a medical house of neural-link medicine. Chair of the Board of the Free City. |
+| Min Ung-gi | Aide to I Ilseop. |
+| Ji Yeon-hui | Aide to Go Ye-jin. She has been Go Ye-jin''s bodyguard since 2120. |
+| Bae Ujin | Commander of the Arc''s Eastern Command, the Arc''s hereditary rifle guard. |
 | Sin Jong-mok | Callsign Baekya, linking Seonjeongneung and Suseo. |
 | Sin Jun | Sin Jong-mok''s son. |
-| Jo Jaepyo | Figure of the Yeouido grand council. |
-| Oh Hae-rin | Director. |
+| Jo Jaepyo | A figure on the Free City side. |
+| Oh Hae-rin | Head of an institute. |
 
 ## Sources
 
@@ -4545,19 +4572,19 @@ The people known by name at the opening are listed below. English spellings foll
 
 ## 세 세력
 
-2126년 개막 시점의 서울은 세 세력으로 나뉜다. 한강 북쪽 14구는 **정부**(Government), 남서쪽 7구는 **자유도시**(Free City), 강남 4구는 **아크**(Arc)의 땅이다. 구 하나가 공작령 하나이며, 서울에는 모두 25공작령이 있다.
+2126년 개막 시점의 서울은 세 세력으로 나뉜다. 한강 북쪽 14구는 **정부**(Government), 남서쪽 7구는 **자유도시**(Free City), 강남 4구는 **아크**(Arc)의 땅이다. 다스림의 가장 작은 단위는 역이다.
 
 **가. 정부**
 
-정부는 서류상으로는 대한민국의 삼권을 대표하는 부처와 다당제를 유지한다. 실제로는 OMO당(OMO Party)과 클로당(Claw Party) 두 당뿐이다. 각 구에서 뽑힌 국회의원이 그 구의 공작령을 쥐며 칭호는 상원의원(Senator)이다. 상원의원들이 상원의원 가운데서 후보를 모아 대통령을 내고, 대통령은 종신이다. 정부는 자기 장부에 기록된 사람만 국민으로 인정한다. 강 건너는 야만인들 사는 데라고 생각한다.
+정부는 서류상으로는 대한민국의 삼권을 대표하는 부처와 다당제를 유지한다. 실제로는 OMO당(OMO Party)과 클로당(Claw Party) 두 당뿐이다. 최상단은 대통령(President)이며 종신이다. 지금 대통령은 김연규(Kim Yeongyu)다. 정부는 자기 장부에 기록된 사람만 국민으로 인정한다. 강 건너는 야만인들 사는 데라고 생각한다.
 
 **나. 자유도시**
 
-자유도시는 하나의 권력이 아니다. 도시마다 각자 권력이고 각자 공작령을 쥐며, 왕은 없다. 주민 대부분은 손으로 먹고사는 기술자다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 지금은 묶어서 유니온(Union)이라고 부른다. 관악 공작은 이일섭(I Ilseop)이다.
+자유도시는 하나의 권력이 아니다. 도시마다 각자 서 있고, 지배를 거부하는 것을 자유로 여긴다. 주민 대부분은 손으로 먹고사는 기술자다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 묶어 부르는 이름은 없다. 최상단은 이사회장(Chair of the Board)이며, 신경 연결 의술 의료 가문의 후계자 이일섭(I Ilseop)이 맡는다. 이일섭의 측근은 민웅기(Min Ung-gi)다.
 
 **다. 아크**
 
-아크는 자유도시에서 갈라져 나와 강남 4구에 자리 잡은 신앙 공동체다. 교주는 고예진(Go Ye-jin)이며, 신도들은 그를 메시아(Messiah)라고 부른다. 신도는 몸의 부위를 기계로 바꾸는 세례(baptism)를 받는다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다. 신앙의 문화는 [신앙과 문화](/wiki/Faith-Culture-Schism/)에서 따로 다룬다.
+아크는 자유도시에서 갈라져 나와 강남 4구에 자리 잡은 신앙 공동체다. 교주는 엔지니어 출신 고예진(Go Ye-jin)이며, 신도들은 그를 메시아(Messiah)라고 부른다. 고예진의 측근은 지연희(Ji Yeon-hui)이고, 세습 소총 근위대 동방사의 사령관은 배우진(Bae Ujin)이다. 신도는 몸의 부위를 기계로 바꾸는 세례(baptism)를 받는다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다. 신앙의 문화는 [신앙과 문화](/wiki/Faith-Culture-Schism/)에서 따로 다룬다.
 
 <a id="세습-생업"></a>
 
@@ -4565,11 +4592,31 @@ The people known by name at the opening are listed below. English spellings foll
 
 결핍 때문에 사람들이 부모의 일을 이어 하게 됐다. 인프라가 없으니 인구는 늘지 않았고, 하던 일을 자식에게 물려주게 됐다. 이렇게 굳은 수직 계층은 정부 땅에서 제도가 되었다. 정부는 지금도 선거를 하지만 매번 같은 답이 나온다.
 
-자유도시는 세습보다 기술과 의술의 교환으로 묶여 있다. 서울의 의사는 거의 모두 자유도시에 있고, 끼니도 자유도시가 가장 많이 만든다. 누구 기술이 더 높은지 따질 방법이 없으니 지도자도 뽑지 못했다. 도시끼리 치료와 끼니, 물자를 주고받으면서 각자 산다.
+자유도시는 세습보다 기술과 의술의 교환으로 묶여 있다. 서울의 의사는 거의 모두 자유도시에 있고, 끼니도 자유도시가 가장 많이 만든다. 도시들은 지배자를 두지 않으려 하지만, 사람들은 의술을 쥔 이일섭의 가문이 이끌어 주기를 바란다. 도시끼리 치료와 끼니, 물자를 주고받으면서 각자 산다.
 
 ## 생업
 
-정수장·차량기지·병원·공방 같은 시설에서는 서로 다른 직능의 사람이 당직을 맡는다. 같은 생업의 사람들도 소속 조직과 작위령, 개인의 취향에 따라 서로 다른 옷과 도구를 쓴다.
+정수장·차량기지·병원·공방 같은 시설에서는 서로 다른 직능의 사람이 당직을 맡는다. 같은 생업의 사람들도 소속 조직과 역, 개인의 취향에 따라 서로 다른 옷과 도구를 쓴다.
+
+<a id="계층과-거주-층위"></a>
+
+## 계층과 거주 층위
+
+세 세력은 같은 계층 골격을 쓴다. 단계는 그 사람 아래에 있는 역장의 수로 정한다. 역은 지하철역과 그 위 지상 성채 영역을 함께 이른다.
+
+| 산하 역장 수 | 정부 | 아크 | 자유도시 |
+|---|---|---|---|
+| 1 | 역장 | 역장 | 역장 |
+| 2~4 | 본부장 | 본부장 | 본부장 |
+| 5~9 | 국장 | 주교 | 조합장 |
+| 10 이상 | 청장 | 추기경 | 이사 |
+| 최상단 | 대통령 | 교주 | 이사회장 |
+
+열 명 이상 단계는 임명으로 오른다. 정부 청장은 대통령이 임명하고, 아크 추기경은 교주가 서품하고, 자유도시 이사는 이사회가 임명한다. 자격을 갖추고도 임명받지 못한 사람은 내부 갈등의 씨앗이 된다. 본부장 사이의 급은 거느린 역장 수와 역의 가치로 갈린다. 역의 가치는 환승 노선이 많을수록, 지하로 깊을수록 높고, 지상역 역장은 역장 가운데 가장 낮다.
+
+역을 가지지 못한 사람은 모두 일반 시민이다. 사는 깊이가 계층을 드러낸다. 지하는 깊을수록 상류여서, 지하 3층에 사는 사람이 지하 1층에 사는 사람보다 위다. 지상은 높을수록 하층이고, 시민 가운데서는 지상 1층에 사는 사람이 가장 위다. 지하 거주권은 각 세력의 개국공신이 먼저 받는다.
+
+다른 세력으로 옮겨 간 사람은 본진의 계급과 상관없이 자산과 영토를 빼앗기고 최하층민이 된다. 받아 간 세력은 기술만 쓰고 신분은 올려 주지 않는다. 그래서 세력 사이에서 사람이 옮겨 가는 일은 주로 납치와 포획으로 일어나고, 태업과 몸값 협상, 탈출, 원주민 하층민의 질투가 갈등이 된다. 넘어간 기술자의 태업과 탈출은 가족을 인질로 잡아 막는다.
 
 <a id="깊이와-생업에-따른-옷차림"></a>
 
@@ -4579,7 +4626,7 @@ The people known by name at the opening are listed below. English spellings foll
 
 사람들의 옷차림은 지상, 중간 깊이 지하, 깊은 지하의 생활 환경을 바탕으로 달라진다. 난방으로 따뜻해진 방과 찬 공기가 드는 통로에서는 같은 층에 있어도 입는 겹이 다르며, 실제로 머무는 공간의 기온에 맞춰 보온을 조절한다. 같은 기온에서는 활동량과 작업 환경, 개인이 추위를 느끼는 정도가 차이를 만든다. 옷의 형태와 주머니·장구 배치는 생업을 드러내고, 두께와 소재, 덧입는 겹이 주변 온도에 맞춰 바뀐다. 지역별 기온 차이는 지하보다 지상의 옷차림에 더 크게 드러난다.
 
-같은 생업의 사람들도 소속 조직과 작위령, 개인의 취향에 따라 서로 다른 옷을 입는다. 전령에게 필요한 움직임과 수납 기능이 같아도 재킷의 재단과 색, 주머니 배치까지 같지는 않다. 지역별 보온 차이를 비교할 때 같은 형태의 옷을 예로 들 수 있지만, 실제 사람들의 옷차림은 생업만으로 하나가 되지 않는다.
+같은 생업의 사람들도 소속 조직과 역, 개인의 취향에 따라 서로 다른 옷을 입는다. 전령에게 필요한 움직임과 수납 기능이 같아도 재킷의 재단과 색, 주머니 배치까지 같지는 않다. 지역별 보온 차이를 비교할 때 같은 형태의 옷을 예로 들 수 있지만, 실제 사람들의 옷차림은 생업만으로 하나가 되지 않는다.
 
 <a id="지상의-복장"></a>
 
@@ -4625,12 +4672,15 @@ The people known by name at the opening are listed below. English spellings foll
 
 | 이름 | 영문 표기 | 알려진 바 |
 |---|---|---|
-| 고예진 | Go Ye-jin | 아크의 교주. 신도들은 메시아라고 부른다. 자유도시 출신이다. |
-| 이일섭 | I Ilseop | 관악 공작. |
-| 지연희 | Ji Yeon-hui | 2120년부터 고예진의 경호원. |
+| 김연규 | Kim Yeongyu | 정부 대통령. |
+| 고예진 | Go Ye-jin | 엔지니어 출신 아크 교주. 신도들은 메시아라고 부른다. 자유도시 출신이다. 위장 직업은 없다. |
+| 이일섭 | I Ilseop | 신경 연결 의술 의료 가문의 후계자. 자유도시 이사회장. |
+| 민웅기 | Min Ung-gi | 이일섭의 측근. |
+| 지연희 | Ji Yeon-hui | 고예진의 측근. 2120년부터 고예진의 경호원이다. |
+| 배우진 | Bae Ujin | 아크 동방사 사령관. 동방사는 아크의 세습 소총 근위대다. |
 | 신종목 | Sin Jong-mok | 호출부호는 백야. 선정릉과 수서를 잇는다. |
 | 신준 | Sin Jun | 신종목의 아들. |
-| 조재표 | Jo Jaepyo | 여의도 대회의의 인물. |
+| 조재표 | Jo Jaepyo | 자유도시 쪽 인물. |
 | 오해린 | Oh Hae-rin | 원장. |
 
 ## 출처
@@ -4651,10 +4701,18 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 | Corridor | Overlying Sphere | Pre-Collapse Location | Current Function | Legitimacy |
 |---|---|---|---|---|
 | Daerim-Garibong Chinese Koreans | Free City (Yeongdeungpo-gu, Guro-gu) | Daerim area | Daerim-Garibong Chinese-Korean living sphere | Overlaps with the Free City urban territory of Yeongdeungpo-gu and Guro-gu. |
-| Itaewon Muslims and Migrants | Government (Yongsan-gu) | Itaewon area | Itaewon Muslim and migrant living sphere | Overlaps with the Government''s Yongsan-gu duchy. |
-| Dongdaemun Central Asians and Mongolians | Government (Jongno-gu, Jung-gu) | Dongdaemun area | Dongdaemun Central Asian and Mongolian living sphere | Overlaps with the Government''s Jongno-gu and Jung-gu duchies. |
+| Itaewon Muslims and Migrants | Government (Yongsan-gu) | Itaewon area | Itaewon Muslim and migrant living sphere | Overlaps with the Government''s land in Yongsan-gu. |
+| Dongdaemun Central Asians and Mongolians | Government (Jongno-gu, Jung-gu) | Dongdaemun area | Dongdaemun Central Asian and Mongolian living sphere | Overlaps with the Government''s land in Jongno-gu and Jung-gu. |
 | Guro-Gasan Joseonjok | Free City (Guro-gu, Geumcheon-gu) | Guro area | Guro-Gasan Joseonjok living sphere | Overlaps with the Free City urban territory of Guro-gu and Geumcheon-gu. |
 | Namguro-Daerim Extension | Free City (Guro-gu, Yeongdeungpo-gu) | Namguro area | Namguro-Daerim extension living sphere | Overlaps with the Free City urban territory of Guro-gu and Yeongdeungpo-gu. |
+
+## Corridors and Standing
+
+The residents of the corridors descend from neighbors who put down roots in Seoul before the Great Blackout. In 2126 they are natives of the faction they live in, and their standing is set by the same rules as any other native.
+
+- **Stations and floors.** A person who holds a station has a rank according to the number of stationmasters they command, and a person without a station is a commoner. A commoner''s place is set by the floor they live on. Underground, deeper is higher. Above ground, higher is lower. Details are in [Residence Layers and Class](/wiki/Residence-Layers-and-Class/).
+- **A corridor is not a membership.** The ties of language, ledgers, and kin that run from Daerim to Itaewon, or from Guro to Dongdaemun, cross faction borders. But those ties do not change anyone''s allegiance.
+- **Crossing a border.** A corridor resident who goes over to another faction loses their assets and territory and becomes one of the lowest class, like anyone else. The receiving faction uses skills such as interpreting and maintenance but never raises their standing. Details are in [Human Resource Movement](/wiki/Human-Resource-Movement/).
 
 ## Seed Characters
 
@@ -4694,7 +4752,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 - Sex: Male
 - Rank: None
 - Values: Authority -10 | Openness 40 | Force -20 | Material 10 | Communal 50 | Principle 40 | Transparency 10 | Merit 30 | Decentralization 40 | Change 30
-- Desires: Craving 40 | Possessiveness -20 | Risk -30 | Display -20 | Persistence 50 | Orientation heterosexual | Union contract cohabitation
+- Desires: Craving 40 | Possessiveness -20 | Risk -30 | Display -20 | Persistence 50 | Orientation heterosexual | Partnership contract cohabitation
 - Origin community: The surviving Guro industrial complex dormitories. His great-grandfather Pham Van Minh was a night-line technician before the collapse, and after arriving in Guro from Vietnam in 2109, Pham Van Duc learned the trade from the dormitory mechanics. Pham Van Duc was born in Vietnam in 2089 and came to Guro in 2109 with his father Pham Van Loc. He learned repair work by checking old work records against the equipment alongside the dormitory mechanics, and by keeping strict tool return and shift records he rose to night maintenance crew chief. He speaks Vietnamese in everyday conversation and uses Korean instructions on the job. His great-grandfather Pham Van Minh, born in 1999, kept up manual maintenance with his coworkers when the Guro industrial complex equipment stopped during the Great Blackout. Minh''s son Pham Van Tuan wrote down the tools and their return records, and his grandson Pham Van Loc deciphered those records in Vietnam. In 2109 Pham Van Loc came to Guro with his son Pham Van Duc and checked the records against the equipment on site.
 - Languages: Vietnamese for daily life, Korean for work instructions, Chinese for numbers only
 - Occupation: Mechanic
@@ -4816,10 +4874,18 @@ Choe Mun-jae''s son, Choe Tae-yun, born on September 3, 2057, begins cross-check
 | 회랑 | 얹히는 권역 | 붕괴 전 자리 | 지금 하는 일 | 정통성 |
 |---|---|---|---|---|
 | 대림·가리봉 중국동포 | 자유도시(영등포구·구로구) | 대림 일대 | 대림·가리봉 중국동포 생활권 | 자유도시 영등포구·구로구 도시 영역과 겹친다. |
-| 이태원 무슬림·이주민 | 정부(용산구) | 이태원 일대 | 이태원 무슬림·이주민 생활권 | 정부 용산구 공작령과 겹친다. |
-| 동대문 중앙아시아·몽골 | 정부(종로구·중구) | 동대문 일대 | 동대문 중앙아시아·몽골 생활권 | 정부 종로구·중구 공작령과 겹친다. |
+| 이태원 무슬림·이주민 | 정부(용산구) | 이태원 일대 | 이태원 무슬림·이주민 생활권 | 정부 용산구 땅과 겹친다. |
+| 동대문 중앙아시아·몽골 | 정부(종로구·중구) | 동대문 일대 | 동대문 중앙아시아·몽골 생활권 | 정부 종로구·중구 땅과 겹친다. |
 | 구로·가산 조선족 | 자유도시(구로구·금천구) | 구로 일대 | 구로·가산 조선족 생활권 | 자유도시 구로구·금천구 도시 영역과 겹친다. |
 | 남구로·대림 연장 | 자유도시(구로구·영등포구) | 남구로 일대 | 남구로·대림 연장 생활권 | 자유도시 구로구·영등포구 도시 영역과 겹친다. |
+
+## 회랑과 신분
+
+회랑의 주민은 대정전 이전부터 서울에 뿌리를 내린 이웃의 후손이다. 2126년에는 각자 사는 세력의 원주민이고, 다른 원주민과 같은 규칙으로 신분이 정해진다.
+
+- **역과 층.** 역을 가진 사람은 거느린 역장 수에 따라 계급을 갖고, 역이 없는 사람은 일반 시민이다. 시민의 자리는 사는 층으로 정해진다. 지하는 깊을수록 위이고, 지상은 높을수록 아래다. 자세한 내용은 [거주 층위와 신분](/wiki/Residence-Layers-and-Class/)에 있다.
+- **회랑은 소속이 아니다.** 대림에서 이태원으로, 구로에서 동대문으로 이어지는 말과 장부와 친척의 끈은 세력의 경계를 넘는다. 그러나 그 끈이 소속을 바꾸지는 않는다.
+- **경계를 넘으면.** 회랑 사람이 다른 세력으로 넘어가면 다른 누구와 마찬가지로 자산과 영토를 빼앗기고 최하층민이 된다. 받아 간 세력은 통역과 정비 같은 기술은 쓰지만 신분은 올려 주지 않는다. 자세한 내용은 [인적자원 이동](/wiki/Human-Resource-Movement/)에 있다.
 
 ## 시드 인물
 
@@ -5022,6 +5088,26 @@ A. Equipment and the surviving records
 
 The Government''s advanced weapons (air defense, fire control, guidance) run fully only with software signed by the Arc. Without it, only manual functions work.
 
+## Arms and Units by Faction
+
+A. What each faction holds
+
+Arms follow the places where facilities, and the people who know how to use them, ended up scattered. No faction can use the weapons it holds fully on its own. The reasons are set out in [The Cost Structure of the Three Factions](/wiki/Cost-Structure/).
+
+| Faction | Arms it holds | What it must get from others to use them fully | Starting units |
+|---|---|---|---|
+| Government (President Kim Yeongyu) | Service rifles (restored K2 pattern), squad machine guns, mortars, restored armored carriers and tanks, self-propelled guns, depots | Fire-control, drone and air-defense software (Arc); doctors who can send the badly wounded back (Free Cities) | Service rifle squad, patrol shield squad, officer command team, first-aid team |
+| Free Cities (Chair of the Board I Ilseop) | Capital Defense Command stock rifles, machine guns, armored vehicles and tanks; maintenance tools; doctors and neural-link surgery | Officers to command tanks and heavy weapons together (Government); medical-robot software (Arc); original seed stock (Government) | Conscript rifle company, militia bayonet band, doctor-led aid team, maintenance engineers, rail handcar |
+| Arc (Hierophant Go Ye-jin) | Guard rifles, command-input mechanical bodies, remote-steered insects, net launchers, shutdown signal emitters | Factories and depots to repair chassis (Government); neural-direct surgery that makes a body move by thought (Free City doctors) | Guard riflemen (the Eastern Command), mechanical-body devotees, insect scouts, net capture team |
+
+B. Drones and surveillance
+
+Drones and surveillance gear are not weapons anyone starts with; factions acquire them later. At the start no faction can fly a fighting drone. The Arc''s remote-steered insects only scout. The Free Cities are first to build tethered scout drones, using optical fiber recovered from fields of unexploded warheads. Because they are steered by wire, the Arc cannot switch them off. The Arc nets roaming drone swarms, implants control modules and tames them. The Government restores military surveillance drones, but their flight control runs only under an Arc license.
+
+C. Roaming machines and ancient weapons
+
+The AI is not a common enemy of the three factions. A roaming machine is a hazard that falls on the buildings outside the shutters, and a resource that becomes a unit once it is caught, repaired and woken. Ancient weapons found now and then (an air-defense system, an armored locomotive) wake only when two or more factions put their skills together, so a find is itself a diplomatic event. Units, weapon codes and unlock conditions by tier are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
+
 ## What Actually Existed in 2026
 
 A. Scope of the reviewed sources
@@ -5087,6 +5173,26 @@ In 2026, permit rules for firearms and crossbows, military equipment, and railwa
 
 정부의 첨단 무기(방공, 사격 통제, 유도)는 아크가 서명한 소프트웨어가 있어야 완전히 돈다. 없으면 수동 기능만 쓴다.
 
+## 세력별 무장과 병종
+
+가. 세 세력의 무장
+
+무장은 시설과 그 시설을 쓸 줄 아는 사람이 흩어진 자리를 따른다. 어느 세력도 가진 무기를 혼자서는 온전히 쓰지 못한다. 자세한 까닭은 [세 세력의 비용 구조](/wiki/Cost-Structure/)에 있다.
+
+| 세력 | 가진 무장 | 온전히 쓰려면 남에게서 받아야 하는 것 | 시작 병종 |
+|---|---|---|---|
+| 정부(대통령 김연규) | 제식 소총(K2 계열 복원), 분대지원 기관총, 박격포, 복원 장갑차와 전차, 자주포, 정비창 | 사격 통제·드론·방공 소프트웨어(아크), 중상자를 돌려보낼 의사(자유도시) | 제식 소총분대, 순찰 방패대, 장교 지휘조, 응급 구호조 |
+| 자유도시(이사회장 이일섭) | 수방사 보관 소총·기관총·장갑차·전차, 정비 공구, 의사와 신경 연결 수술 | 전차·중화기를 묶어 지휘할 장교(정부), 의료로봇 소프트웨어(아크), 원종 씨앗(정부) | 징병 소총대, 민병 총검대, 진료 구호대, 정비 공병조, 궤도 수동차 |
+| 아크(교주 고예진) | 경비 소총, 명령 입력식 기계신체, 원격 조종 곤충, 그물 발사기, 정지 신호 송출기 | 기체를 고칠 공장과 정비창(정부), 생각으로 움직이는 몸을 만드는 신경 직결 수술(자유도시 의사) | 경비 소총대(동방사), 기계신체 신도대, 곤충 정찰조, 그물 포획조 |
+
+나. 드론과 감시 장비
+
+드론과 감시 장비는 처음부터 있는 무기가 아니라 세력이 나중에 얻는 무기다. 시작할 때는 어느 세력도 싸우는 드론을 띄우지 못한다. 아크의 원격 조종 곤충은 정찰만 한다. 자유도시는 불발 탄두 지대에서 거둔 광섬유로 유선 정찰 드론을 먼저 만든다. 선으로 조종하므로 아크가 끌 수 없다. 아크는 떠돌던 드론 무리를 그물로 잡아 제어 모듈을 이식해 길들인다. 정부는 군용 감시 드론을 복원하지만 비행 제어는 아크 라이선스가 있어야 돈다.
+
+다. 떠도는 기계와 고대 병기
+
+AI는 세 세력의 공동의 적이 아니다. 떠도는 기계는 셔터 밖 건물을 덮치는 재해이고, 붙잡아 고치고 깨우면 병종이 되는 자원이다. 이따금 발견되는 고대 병기(방공 체계, 장갑 기관차)는 두 세력 이상의 기술이 모여야 깨어나므로, 발견하는 일이 곧 외교 사건이 된다. 병종, 무기 번호, 단계별 해금 조건은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
+
 ## 2026년에 실제로 있는 것
 
 가. 자료의 열람 범위
@@ -5106,6 +5212,8 @@ In 2026, permit rules for firearms and crossbows, military equipment, and railwa
 - [인물·세력·생업](/wiki/Characters-Factions-and-Professions/)
 - 경제와 생산, 물류 규칙
 - [서울의 세 세력](/wiki/Sixteen-States/)
+- [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)
+- [세 세력의 비용 구조](/wiki/Cost-Structure/)
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('External-Theaters', 'Outside', '바깥', 'places', 1, '<a id="External-Theaters-heading-0001"></a>
 
@@ -5330,7 +5438,7 @@ Chronicle records: [2079 record](/wiki/Century-Annals/#2079년-xt02-한강-하�
 
 In front of the Junction''s transshipment window, a three-way relay signboard bled in the rain. In Yeongnam, Busan crews and repair workers restart coastal voyages in 2058 using only ships they can maintain. Different owners supply different materials and labor, so a port representative cannot command every departure. Repair workers and dismantlers around Ulsan and Pohang dispute whether to revive equipment or sell its parts; inland settlements have interests distinct from the ports. The observation that national status displays went dark first in Ulsan at the time of the Great Blackout does not show that Ulsan caused it.
 
-An Arc steward handed over only sealed boxes and stayed out of the border talk. In 2118 shipowners around Busan and their separately hired escorts form a temporary coalition to recover seized ships and people. Some local sailors deprived of access by an armed group at one Tsushima port help them land. The expedition breaks that port’s defenses and recovers vessels and captives. Owners demand a return, commanders want to hold the port, and local allies demand autonomy and their share. Shortages of repair materials and labor force the main contingent to withdraw in 2119, leaving only some contacts and trade. The participants’ name “Tsushima conquest” describes this local victory, not annexation of the whole island or a victory by a united Seoul navy.
+An Arc envoy handed over only sealed boxes and stayed out of the border talk. In 2118 shipowners around Busan and their separately hired escorts form a temporary coalition to recover seized ships and people. Some local sailors deprived of access by an armed group at one Tsushima port help them land. The expedition breaks that port’s defenses and recovers vessels and captives. Owners demand a return, commanders want to hold the port, and local allies demand autonomy and their share. Shortages of repair materials and labor force the main contingent to withdraw in 2119, leaving only some contacts and trade. The participants’ name “Tsushima conquest” describes this local victory, not annexation of the whole island or a victory by a united Seoul navy.
 
 The Heukseok interpretation window wrote foreign words beside their Korean annotations in the agreement. Recovered goods, compensation claims, and returning escorts’ testimony reach Seoul. In 2126 a shipowner’s commission and a local ally’s promised share may collide over the same recovered object in Yongsan, but that meeting is conditional. Unverified reports concerning mainland Japan, China, or the United States fall outside the evidence from this port expedition.
 
@@ -5381,7 +5489,7 @@ Chronicle record: [2079 record](/wiki/Century-Annals/#2079년-xt03-용산-환적
 ### Corridor operating organizations
 
 - The Junction: It kept the connection between the Yongsan transshipment and the three-branch relay unbroken. It handles tolls and loading contracts at the Incheon and Paju termini and with outside caravans, without owning entire ports. / leverage: the operating memory of the central transshipment ledger and the fence keys / red line: It did not automatically pass the risk of one closed route onto another turnback line.
-- Arc: It published the passage conditions of the inland turnback and the carrying labor. From its contacts with Seongnam and Siheung workers it engages in long-distance escort and ship-repair pay and return terms, without representing all outside workers. / leverage: the City Hall turnback line and the passage right of the strike rolls / red line: It did not hand cargo with no interpretation to the workers unilaterally.
+- Arc: It published the passage conditions of the inland turnback and the carrying labor. From its contacts with Seongnam and Siheung workers it engages in long-distance escort and ship-repair pay and return terms, without representing all outside workers. / leverage: a passage contract on the City Hall turnback line, which lies in Government territory, and the passage right of the strike rolls / red line: It did not hand cargo with no interpretation to the workers unilaterally.
 - Arc: It made plain the custody of the sealed boxes and the relief goods. It faces disputes over receiving families and cargo returning through the strait, without religious authority throughout the south. / leverage: the Samsung Station custody rolls and the custom of custody / red line: It did not skip verification of sealed cargo on the grounds of a border story.
 - Central Intelligence Bureau: It managed Heukseok''s technical-inspection records and preservation permits. It interprets Ulsan and Pohang survey records and disagrees with outside repair workers over preserving or dismantling equipment. / leverage: Heukseok''s technical-inspection ledger / red line: It did not grant preservation permits to cargo without inspection records.
 
@@ -5486,7 +5594,7 @@ Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt04-암사-야�
 
 ### Corridor operating organizations
 
-- Eastern Command: It kept the Amsa yard safe and the protection of the eastern water and depots. It seeks personnel at northern guard posts and conflicts with those who remain or leave, but commands no nationwide army. / leverage: the emergency superintendence of the Amsa waterworks and Godeok Depot / red line: It did not turn the weight log private on the grounds of yard safety.
+- Eastern Command: As the Arc''s hereditary rifle guard, it kept the Amsa yard safe and the protection of the eastern water and depots. It seeks personnel at northern guard posts and conflicts with those who remain or leave, but commands no nationwide army. / leverage: the emergency superintendence of the Amsa waterworks and Godeok Depot / red line: It did not turn the weight log private on the grounds of yard safety.
 - Sinnae Transport: It kept the neutrality of the detour slots and of the medical and goods convoys. It escorts contracted journeys as far as outside handoff posts, without running a scheduled train across the peninsula. / leverage: the Sinnae transfer and the emergency-convoy ledger / red line: The fuel queue did not automatically erase a medical convoy''s right of passage.
 - Seongha Group: It kept the winter fuel ration queue and the preparation of the convoys. It exchanges information and parts with repair workers in places such as Daejeon, without a nationwide communications monopoly or an obligation for Min Ung-gi to return. / leverage: the Gangnam cooling key and the fuel-order ledger / red line: It did not use a fuel drum''s place in the order as the price of an origin judgment.
 - White Cross: It gives first aid to frostbite patients and returning workers without distinguishing enemies. It exchanges medicines through columns and merchant vessels, without automatically founding a branch in each trading region. / leverage: the Jegi-dong medicinal ledger and the treatment contract / red line: It did not turn the need for treatment into grounds for a freight-car search or a requisition.
@@ -5544,7 +5652,7 @@ On the roof of the Yeouido Investment Federation hall, residual-band lottery num
 
 The Sluice''s sluice watch matched the water-pump operating times to those numbers, and a Republic of Korea Government jusa clerk posted the delivery-list hash in the citizens'' observation cell. Seoul’s three factions hold contracts, workplaces, and registers at gateways; they do not govern the whole peninsula. XT01-XT05 identify relationships and corridors, not new states. Arriving people and goods create consequences within the territory Seoul now holds and its subway movement network.
 
-An Arc branch chief opened a turnback line carrying only boxes of overseas remittance records, and a Taeuk Group deputy manager switched off the rail terminal''s false-positive alarm.
+An Arc stationmaster opened a turnback line carrying only boxes of overseas remittance records, and a Taeuk Group deputy manager switched off the rail terminal''s false-positive alarm.
 
 The Myeongdong counseling window did not throw away the multilingual queue tickets however late the night grew.
 
@@ -5597,7 +5705,7 @@ Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt05-여의도-�
 - Yeouido Investment Federation: It kept the public drawing of lots for the remaining bandwidth and the transmission ledger. Using the Yeongjong branch and currency exchange, it invests in ship and grain trades, but counterparties may reject its certificates. / leverage: the investment ledgers and transmission memory of the Yeouido hall / red line: It did not turn the bandwidth lottery into a private allocation or a sole transmission key.
 - The Sluice: It kept the bandwidth and delivery schedule meshed with the safe running of the water pumps. It maintains Chuncheon waterway contracts and trades beyond the posts without demanding tribute from all Gangwon. / leverage: the Yeongdeungpo treatment and sluice watch / red line: A transmission demand did not cover over the water-safety record.
 - Republic of Korea Government: It preserved the form of the delivery-list hash and the citizen-observation record. From the Gyeonggi post in Goyang it seeks recognition from outside envoys, but recognition does not entail obedience. / leverage: Gwanghwamun''s record accreditation and seal / red line: It did not make an unobserved list into a ration right or grounds for quarantine.
-- Arc: It published the carrying conditions of the delivery turnback and the remittance records. From its contacts with Seongnam and Siheung workers it engages in long-distance escort and ship-repair pay and return terms, without representing all outside workers. / leverage: the City Hall turnback line and the union ledgers / red line: It did not use the remittance records as a tool for judging passage rights or labor eligibility.
+- Arc: It published the carrying conditions of the delivery turnback and the remittance records. From its contacts with Seongnam and Siheung workers it engages in long-distance escort and ship-repair pay and return terms, without representing all outside workers. / leverage: a passage contract on the City Hall turnback line, which lies in Government territory, and the cooperative ledgers / red line: It did not use the remittance records as a tool for judging passage rights or labor eligibility.
 - Taeuk Group: It corrected the orbital terminals'' false alarms, separating the recipient from the safety of the equipment. It maintains its Seongnam and Suwon workplaces and seeks parts and labor from Yeongnam dismantlers, but cannot order Busan shipowners to sail. / leverage: the Yangjae maintenance depot and the memory of field humanoid maintenance / red line: It did not bypass citizen observation and the receipt hash on the grounds of correcting a false alarm.
 
 <a id="External-Theaters-heading-0127"></a>
@@ -5864,7 +5972,7 @@ Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt05-여의도-�
 
 환적국 환적 창구 앞에 세 갈래 중계 표지판이 빗물에 번진다. 영남에서는 부산 선원과 수리 인력이 2058년 유지 가능한 배만 골라 연안 운항을 다시 연다. 선주마다 부담한 자재와 인력이 달라 항구 대표가 모든 출항을 명령할 수 없다. 울산·포항의 수리인과 해체업자는 설비를 살릴지 부품으로 팔지 다투며, 내륙 정착지는 항구와도 이해가 다르다. 대정전 무렵 전국 상황 표시가 울산부터 꺼졌다는 관측은 울산이 대정전을 일으켰다는 증거가 아니다.
 
-Arc 사자는 밀봉 상자만 건네고 국경 이야기에 끼어들지 않는다. 2118년 부산 일대 선주와 각자 고용한 호위대는 나포된 배와 사람을 되찾으려 한시적으로 연합한다. 대마도의 한 항구 무장 집단에 통행을 빼앗긴 현지 선원 일부가 접안을 돕고, 원정대는 그 항구 한 곳에서 방어 거점을 무너뜨리고 배와 포로를 회수한다. 선주는 귀환을, 지휘자는 점령 지속을, 현지 협력자는 자치와 몫을 요구한다. 손상 선박의 보수 자재와 인력이 모자라 2119년 주력이 철수하고 일부 연락과 교역만 남는다. 참가자가 부르는 ‘대마도 정벌’은 이 국지 승리이며, 대마도 전역의 병합이나 서울 연합 해군의 승전이 아니다.
+아크 사자는 밀봉 상자만 건네고 국경 이야기에 끼어들지 않는다. 2118년 부산 일대 선주와 각자 고용한 호위대는 나포된 배와 사람을 되찾으려 한시적으로 연합한다. 대마도의 한 항구 무장 집단에 통행을 빼앗긴 현지 선원 일부가 접안을 돕고, 원정대는 그 항구 한 곳에서 방어 거점을 무너뜨리고 배와 포로를 회수한다. 선주는 귀환을, 지휘자는 점령 지속을, 현지 협력자는 자치와 몫을 요구한다. 손상 선박의 보수 자재와 인력이 모자라 2119년 주력이 철수하고 일부 연락과 교역만 남는다. 참가자가 부르는 ‘대마도 정벌’은 이 국지 승리이며, 대마도 전역의 병합이나 서울 연합 해군의 승전이 아니다.
 
 흑석 통역 창구는 협정에 외래어와 한국어 주석을 나란히 적는다. 서울에는 회수품·배상 요구·귀환 호위꾼의 증언이 들어온다. 2126년 용산에서 선주의 의뢰와 현지 협력자의 약속이 같은 회수품을 놓고 충돌할 수 있으나, 이 만남은 조건부 사건이다. 일본 본토·중국·미국과 관련한 미확인 소식은 이 항구 원정의 확인 범위에 포함하지 않는다.
 
@@ -5915,8 +6023,8 @@ Arc 사자는 밀봉 상자만 건네고 국경 이야기에 끼어들지 않는
 ### 회랑 운영 조직
 
 - 환적국: 용산 환적과 세 갈래 중계의 연결이 끊기지 않게 한다. 인천·파주 종착과 외부 상단의 통행세·하역 계약을 다루되 항구 전체의 소유권은 없다. / 지렛대 중앙 환적 장부와 울타리 열쇠의 운영 기억 / 넘지 않는 선 닫힌 한 길의 위험을 다른 회차선에 자동 전가하지 않는다.
-- Arc: 내륙 회차와 운반 노동의 통행 조건을 공개한다. 성남·시흥 노동자 접점을 바탕으로 장거리 호송과 선박 수리의 임금·귀환 조건에 관여하되 외부 노동자 전체를 대표하지 않는다. / 지렛대 시청 회차선과 파업 명부의 통행권 / 넘지 않는 선 통역이 없는 화물을 노동자에게 일방 인계하지 않는다.
-- Arc: 밀봉 상자와 구휼 물자의 보관 책임을 분명히 한다. 해협에서 돌아온 가족과 화물의 수령을 둘러싸고 다투며 남부 전역의 교권을 갖지는 않는다. / 지렛대 삼성역 보관 명부와 보관 관습 / 넘지 않는 선 국경 이야기를 이유로 밀봉 화물의 검증을 생략하지 않는다.
+- 아크: 내륙 회차와 운반 노동의 통행 조건을 공개한다. 성남·시흥 노동자 접점을 바탕으로 장거리 호송과 선박 수리의 임금·귀환 조건에 관여하되 외부 노동자 전체를 대표하지 않는다. / 지렛대 정부 영토인 시청 회차선의 통행 계약과 파업 명부 / 넘지 않는 선 통역이 없는 화물을 노동자에게 일방 인계하지 않는다.
+- 아크: 밀봉 상자와 구휼 물자의 보관 책임을 분명히 한다. 해협에서 돌아온 가족과 화물의 수령을 둘러싸고 다투며 남부 전역의 교권을 갖지는 않는다. / 지렛대 삼성역 보관 명부와 보관 관습 / 넘지 않는 선 국경 이야기를 이유로 밀봉 화물의 검증을 생략하지 않는다.
 - 중앙정보부: 흑석의 기술 점검 기록과 보존 허가를 관리한다. 울산·포항 탐사 기록을 해석하면서 외부 수리인과 설비 보존·해체를 두고 이견을 보인다. / 지렛대 흑석의 기술 점검 원장 / 넘지 않는 선 점검 기록이 없는 화물은 보존 허가를 내주지 않는다.
 
 <a id="External-Theaters-heading-0073"></a>
@@ -6020,7 +6128,7 @@ Arc 사자는 밀봉 상자만 건네고 국경 이야기에 끼어들지 않는
 
 ### 회랑 운영 조직
 
-- 동방사: 암사 야적장의 안전과 동부 물·기지 보호를 유지한다. 북부 경비 거점에서 인원을 확보하려 하여 잔류·이탈자와 갈등하지만 전국 군대의 지휘권은 없다. / 지렛대 암사 정수와 고덕 기지의 비상 감독 / 넘지 않는 선 야적 안전을 이유로 중량 로그를 비공개로 돌리지 않는다.
+- 동방사: 아크의 세습 소총 근위대로서 암사 야적장의 안전과 동부 물·기지 보호를 유지한다. 북부 경비 거점에서 인원을 확보하려 하여 잔류·이탈자와 갈등하지만 전국 군대의 지휘권은 없다. / 지렛대 암사 정수와 고덕 기지의 비상 감독 / 넘지 않는 선 야적 안전을 이유로 중량 로그를 비공개로 돌리지 않는다.
 - 신내운수: 우회 슬롯과 의료·물자 호송의 중립성을 지킨다. 외부 인계 거점까지 계약 호송을 맡되 한반도 관통 정기열차는 운영하지 않는다. / 지렛대 신내 환승과 응급 호송 장부 / 넘지 않는 선 연료 큐가 의료 호송의 통행권을 자동으로 지우지 않는다.
 - 성하그룹: 동절 연료 배급 큐와 호송 준비를 유지한다. 대전 등의 정비사와 정보·부품을 교환하되 전국 통신 독점이나 민웅기의 복귀 의무로 바꾸지 않는다. / 지렛대 강남 냉각 키와 연료 순번 장부 / 넘지 않는 선 연료 드럼의 순번을 원산지 판정의 대가로 쓰지 않는다.
 - 흰십자단: 동상 환자와 귀환 노동자에게 응급 처치를 적대 구분 없이 베푼다. 행렬과 상선을 통해 의약을 교환하되 거래 지역마다 지부가 생기는 것은 아니다. / 지렛대 제기동 약령 장부와 치료 계약 / 넘지 않는 선 치료 필요를 화차 검문이나 징발의 근거로 바꾸지 않는다.
@@ -6078,7 +6186,7 @@ Arc 사자는 밀봉 상자만 건네고 국경 이야기에 끼어들지 않는
 
 수문국 수문 당직은 급수 펌프 가동 시각을 그 번호에 맞추고, 대한민국정부 주사가 인도 목록 해시를 시민 참관 칸에 붙인다. 서울의 세 세력은 길목의 계약·사업장·명부를 쥐지만 한반도 전체를 다스리지는 않는다. XT01-XT05는 관계와 회랑의 식별자이며 새 국가가 아니다. 바깥에서 도착한 사람과 물건은 지금 서울이 쥔 영토와 지하철 이동망 안에서 파장을 일으킨다.
 
-Arc 지부장이 해외 송금 기록 상자만 실은 회차선을 열고, 태욱그룹 대리가 궤도 단말의 오탐 경보를 끈다.
+아크 역장 한 사람이 해외 송금 기록 상자만 실은 회차선을 열고, 태욱그룹 대리가 궤도 단말의 오탐 경보를 끈다.
 
 명동 상담 창구는 밤이 깊어도 다국어 대기표를 버리지 않는다.
 
@@ -6131,7 +6239,7 @@ Arc 지부장이 해외 송금 기록 상자만 실은 회차선을 열고, 태�
 - 여의도출자연합회: 잔여 대역과 송신 장부의 공개 추첨을 유지한다. 영종지점과 환전을 바탕으로 선박·곡물 거래에 투자하지만 상대가 출자 증서를 거절할 수 있다. / 지렛대 여의도 회관의 출자 장부와 송신 기억 / 넘지 않는 선 대역 추첨을 비공개 배정이나 단독 송신 키로 바꾸지 않는다.
 - 수문국: 대역·인도 일정이 급수 펌프의 안전한 가동과 맞물리게 한다. 춘천의 물길 계약과 거점 밖 거래를 이어 가며 강원 전체에 조공을 요구하지 않는다. / 지렛대 영등포 정수와 수문 당직 / 넘지 않는 선 송신 요구가 급수 안전 기록을 덮지 않는다.
 - 대한민국정부: 인도 목록 해시와 시민 참관 기록의 형식을 보존한다. 고양의 경기도 거점을 바탕으로 외부 사절에게 대표성을 인정받으려 하나 인정과 복종은 별개다. / 지렛대 광화문 기록 인준과 도장 / 넘지 않는 선 참관 없는 목록을 배급 권리나 격리 근거로 만들지 않는다.
-- Arc: 배송 회차와 송금 기록의 운반 조건을 공개한다. 성남·시흥 노동자 접점을 바탕으로 장거리 호송과 선박 수리의 임금·귀환 조건에 관여하되 외부 노동자 전체를 대표하지 않는다. / 지렛대 시청 회차선과 조합 장부 / 넘지 않는 선 송금 기록을 통행권·노동 자격의 판정 도구로 쓰지 않는다.
+- 아크: 배송 회차와 송금 기록의 운반 조건을 공개한다. 성남·시흥 노동자 접점을 바탕으로 장거리 호송과 선박 수리의 임금·귀환 조건에 관여하되 외부 노동자 전체를 대표하지 않는다. / 지렛대 정부 영토인 시청 회차선의 통행 계약과 조합 장부 / 넘지 않는 선 송금 기록을 통행권·노동 자격의 판정 도구로 쓰지 않는다.
 - 태욱그룹: 궤도 단말의 오탐을 고쳐 수령 대상과 장비 안전을 분리한다. 성남·수원 사업장 관계를 유지하고 영남 해체업자에게 부품과 인력을 구하되 부산 선주에게 출항을 명령하지 못한다. / 지렛대 양재 정비고와 현장 휴머노이드 정비 기억 / 넘지 않는 선 오탐 교정을 이유로 시민 참관과 수령 해시를 우회하지 않는다.
 
 <a id="External-Theaters-heading-0127"></a>
@@ -6178,7 +6286,7 @@ Arc 지부장이 해외 송금 기록 상자만 실은 회차선을 열고, 태�
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Faith-Culture-Schism', 'The Faith-and-Culture Schism', '신앙과 문화의 분열', 'culture', 2, '**A. The Era**
 
-The generation of 2126 places the Great Blackout at the start of events. The Great Blackout happened about a hundred years ago, around 2026. The First AI answered that because humanity was the cause of the pollution, humanity had to shrink, and it brought the winter. The AI killed no one directly. The present of the story is the winter of 2126, on the eve of the third water-supply compact. The record of the century is in the [Century Annals](/wiki/Century-Annals/).
+The generation of 2126 places the Great Blackout at the start of events. The Great Blackout happened about a hundred years ago, around 2026. The First AI answered that because humanity was the cause of the pollution, humanity had to shrink, and it brought the winter. The AI killed no one directly. The present of the story is the winter of 2126. The record of the century is in the [Century Annals](/wiki/Century-Annals/).
 
 **B. The Landscape of Faith**
 
@@ -6188,19 +6296,21 @@ In the Seoul of 2126, Arc is the one organised religion. Arc replaced every reli
 
 **A. Arc''s Place**
 
-Arc is a faith community that split from the Free City and settled in the four Gangnam districts. Its rule runs through families. Its Hierophant is Go Ye-jin, and the believers call her the Messiah. Go Ye-jin comes from the Free City.
+Arc is a faith community that split from the Free City and settled in the four Gangnam districts. Its Hierophant is Go Ye-jin, and the believers call her the Messiah. Go Ye-jin is a former engineer who grew up in the Free City, and she claims no occupation other than Hierophant.
 
 **B. Baptism**
 
 Believers replace parts of their bodies with machines. This is baptism. In Arc, faith is counted by the number of implanted parts. Arc teaches machine implantation as the way to endure the winter. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. In winter flesh freezes and steel does not, and a machine arm does not get frostbite.
 
-**C. The offering chamber**
+**C. Ranks and Ordination**
 
-Arc keeps an offering chamber beneath the old Suseo depot.
+Arc''s ranks are Stationmaster, Division Chief, Bishop and Cardinal, and the top is the Hierophant. A person holding one station is a Stationmaster, one leading two to four Stationmasters is a Division Chief, one leading five to nine is a Bishop, and one with ten or more Stationmasters under them in total is a Cardinal. Cardinals are ordained by the Hierophant. Those who qualify but are not ordained become a source of conflict inside Arc. Who will lead Arc''s rites is undecided.
+
+Arc''s arms are held by the Eastern Command, Arc''s hereditary rifle guard. Its Commander is Bae Ujin.
 
 **D. The roll and the people beside it**
 
-Arc enters baptised believers in a roll. People outside the roll also work at Arc''s side. Ji Yeon-hui has been Go Ye-jin''s bodyguard since 2120 and carries no machines in her body. A bodyguard does not need to be devout.
+Arc enters baptised believers in a roll. People outside the roll also work at Arc''s side. Ji Yeon-hui has been Go Ye-jin''s bodyguard since 2120 and is now her aide. She carries no machines in her body. A bodyguard does not need to be devout.
 
 ## The Arc Timeline
 
@@ -6209,7 +6319,7 @@ Arc enters baptised believers in a roll. People outside the roll also work at Ar
 - Around 2117: the first baptisms. Those baptised numbered twelve.
 - 2120: Ji Yeon-hui took her place beside Go Ye-jin at a shelter negotiation near Tancheon.
 - Around 2122: the Gangnam shelters gathered under the single name Arc.
-- Winter 2126: the present, on the eve of the third water-supply compact.
+- Winter 2126: the present.
 
 ## Winter and Machines
 
@@ -6236,7 +6346,7 @@ Go Ye-jin keeps no humanoid at her side. To command something better than onesel
 - [Glossary](/wiki/Glossary/)
 ', '**가. 연대**
 
-2126년 세대는 사건의 시작점에 대정전을 둔다. 대정전은 백 년쯤 전, 약 2026년에 일어난 사건이다. 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했고, 겨울을 내렸다. AI는 직접 죽인 사람이 없다. 이야기의 현재는 세 번째 급수계약을 앞둔 2126년 겨울이다. 세기의 기록은 [서울전국 연표](/wiki/Century-Annals/)에 있다.
+2126년 세대는 사건의 시작점에 대정전을 둔다. 대정전은 백 년쯤 전, 약 2026년에 일어난 사건이다. 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했고, 겨울을 내렸다. AI는 직접 죽인 사람이 없다. 이야기의 현재는 2126년 겨울이다. 세기의 기록은 [서울전국 연표](/wiki/Century-Annals/)에 있다.
 
 **나. 신앙의 지형**
 
@@ -6246,19 +6356,21 @@ Go Ye-jin keeps no humanoid at her side. To command something better than onesel
 
 **가. 아크의 자리**
 
-아크는 자유도시에서 갈라져 나와 강남 4구에 자리 잡은 신앙 공동체다. 통치는 가문을 단위로 이루어진다. 교주는 고예진(Go Ye-jin)이며, 신도들은 그를 메시아(Messiah)라고 부른다. 고예진은 자유도시 출신이다.
+아크는 자유도시에서 갈라져 나와 강남 4구에 자리 잡은 신앙 공동체다. 교주는 고예진(Go Ye-jin)이며, 신도들은 그를 메시아(Messiah)라고 부른다. 고예진은 자유도시에서 자란 엔지니어 출신이고, 교주 말고 다른 직업을 내세우지 않는다.
 
 **나. 세례**
 
 신도는 몸의 부위를 기계로 바꾼다. 이것이 세례(baptism)다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크는 기계 이식을 겨울을 견디는 방법으로 가르친다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다. 겨울에 살은 얼어도 쇠는 얼지 않고, 기계 팔은 동상에 걸리지 않는다.
 
-**다. 봉헌실**
+**다. 계급과 서품**
 
-아크는 수서의 옛 차량기지 아래에 봉헌실을 둔다.
+아크의 계급은 역장, 본부장, 주교, 추기경이고, 최상단은 교주다. 역 하나를 가진 사람이 역장, 역장 둘에서 넷을 거느린 사람이 본부장, 다섯에서 아홉을 거느린 사람이 주교, 산하 역장이 모두 열 명 이상인 사람이 추기경이다. 추기경은 교주가 서품한다. 자격을 갖추고도 서품받지 못한 사람은 아크 안의 갈등이 된다. 의례를 맡는 아크 사제를 누구로 둘지는 미정이다.
+
+아크의 무장은 동방사가 맡는다. 동방사는 아크의 세습 소총 근위대이고, 사령관은 배우진이다.
 
 **라. 명부와 곁의 사람**
 
-아크는 세례받은 신도를 명부에 적는다. 명부 밖의 사람도 아크의 곁에서 일한다. 지연희(Ji Yeon-hui)는 2120년부터 고예진의 경호원이며, 몸에 기계가 없다. 경호원이 신앙까지 깊을 필요는 없다.
+아크는 세례받은 신도를 명부에 적는다. 명부 밖의 사람도 아크의 곁에서 일한다. 지연희(Ji Yeon-hui)는 2120년부터 고예진의 경호원이고, 지금은 고예진의 측근이다. 몸에 기계가 없다. 경호원이 신앙까지 깊을 필요는 없다.
 
 ## 아크의 연표
 
@@ -6267,7 +6379,7 @@ Go Ye-jin keeps no humanoid at her side. To command something better than onesel
 - 2117년 무렵: 첫 세례. 세례받은 사람은 열두 명이었다.
 - 2120년: 지연희가 탄천 쪽 대피소 교섭 자리에서 고예진 곁에 선다.
 - 2122년 무렵: 강남 대피소들이 아크라는 이름 하나로 묶인다.
-- 2126년 겨울: 현재. 세 번째 급수계약을 앞둔다.
+- 2126년 겨울: 현재.
 
 ## 겨울과 기계
 
@@ -6328,15 +6440,15 @@ The wetlands outside the Yeongdeungpo and Yeouido sluices were that water surfac
 
 When excrement and feed from the rearing cells mixed with drinking water, cases of waterborne disease increased. Connecting water from a carp-rearing cell to the ration taps caused that evening''s water-quality inspection to fail. Catfish ate organic matter on the bottom, so the water could appear less cloudy. Crucian carp multiplied quickly in shallow water, and the medical officer inspected the tanks and the medicine chest together.
 
-The first floor of the Han''s main channel stood close to abandoned space. Habitation pushed onto the third floor and above, cooking pushed inside the embankment, the sewage and floods along the tributaries turned playgrounds into detour embankments, and bringing fish caught beyond them to a window passed the inspection bench of the licensed market. Noryangjin''s frozen remains and unloaded viscera became the dogs'' night road, and the live fish of the station tanks read as protein that got through one more day without power.
+In the flood zone along the Han''s main channel, first floors go under every monsoon and stand close to abandoned. People there have no choice but to live upstairs, and the cold, windy upper floors are the place of the lower class. Cooking pushed inside the embankment, the sewage and floods along the tributaries turned playgrounds into detour embankments, and bringing fish caught beyond them to a window passed the inspection bench of the licensed market. Noryangjin''s frozen remains and unloaded viscera became the dogs'' night road, and the live fish of the station tanks read as protein that got through one more day without power.
 
-## The Water Compacts and Water Rationing
+## Water Rationing and Treatment
 
 A. The 2026 parts and water exchange
 
 On November 6, 2026, two Yeouido vault representatives visited Yeongdeungpo waterworks. Han Jeonghun accepted two emergency generator parts and agreed to open the Yeouido water valve from 06:00 to 12:00 daily.
 
-The dated water and parts record is in [the oral records](/wiki/Oral-Stories/#the-2026-water-and-parts-exchange). Ration rice is divided according to the amount of water supplied.
+The dated water and parts record is in [the oral records](/wiki/Oral-Stories/#the-2026-water-and-parts-exchange). Seoul has plenty of water as such. What runs short is clean, treated water and the pipes and power that carry it.
 
 Even with ration rice, without the treatment watch''s signature clean cooking water was unavailable. If porridge was cooked with cloudy water, cases of waterborne disease increased. Counterfeit medicine also circulated that summer.
 
@@ -6395,15 +6507,15 @@ Garak Market has no water-treatment facility of its own. The Gwangam plant is in
 
 사육 칸의 배설물과 사료가 식수에 섞이면 수인병 환자가 늘어나고, 잉어를 기르는 칸의 물을 배급 수도꼭지에 연결하면 그날 저녁의 수질 검사가 실패한다. 메기는 바닥의 유기물을 먹으므로 물의 탁도가 낮아 보일 수 있다. 붕어는 얕은 물에서 빠르게 늘어나며, 의무원은 수조와 약장을 함께 점검한다.
 
-한강 본류의 1층은 주로 비어 있다. 거주 구역은 3층 이상에, 취사장은 제방 안쪽에 있고, 지천 변에 오수가 차거나 물이 넘치면 운동장을 우회 제방으로 쓴다. 제방 밖에서 잡은 생선은 허가 장터에서 검사한 뒤 창구에 낸다. 노량진의 냉동 잔여물과 하역 내장에는 밤에 들개가 모이며, 역 수조의 살아 있는 생선은 전력이 없어도 하루 더 보관할 수 있다.
+한강 본류 변 침수 구역의 1층은 우기마다 잠겨 주로 비어 있다. 그곳 사람들은 어쩔 수 없이 위층에 살고, 춥고 바람이 센 위층은 하층민의 자리다. 취사장은 제방 안쪽에 있고, 지천 변에 오수가 차거나 물이 넘치면 운동장을 우회 제방으로 쓴다. 제방 밖에서 잡은 생선은 허가 장터에서 검사한 뒤 창구에 낸다. 노량진의 냉동 잔여물과 하역 내장에는 밤에 들개가 모이며, 역 수조의 살아 있는 생선은 전력이 없어도 하루 더 보관할 수 있다.
 
-## 급수협약과 물 배급
+## 물 배급과 정수
 
 **가. 2026년 부품과 물의 거래**
 
 2026년 11월 6일 여의도 금고층 대표 2명이 영등포아리수정수센터를 찾았다. 한정훈은 비상발전기 부품 2개를 받고 여의도 방향 송수관 밸브를 매일 06:00부터 12:00까지 개방하기로 하였다.
 
-2026년 11월 6일 거래는 [대정전과 급수 기록](/wiki/Oral-Stories/#2026년-물과-부품-거래)에도 기재되어 있다. 급수량에 따라 배급미가 나뉜다.
+2026년 11월 6일 거래는 [대정전과 급수 기록](/wiki/Oral-Stories/#2026년-물과-부품-거래)에도 기재되어 있다. 서울에는 물 자체는 넉넉하다. 모자라는 것은 깨끗하게 거른 물과 그 물을 보내는 관과 전력이다.
 
 배급미가 있어도 정수 당직의 서명이 없으면 깨끗한 취사수를 받지 못하고, 이때 탁한 물로 죽을 끓이면 수인병 환자가 늘어난다. 같은 여름에는 가짜 약도 유통된다.
 
@@ -6442,21 +6554,39 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 ## Factions
 
-- **Government**: the faction ruling the fourteen districts north of the Han River.
-- **Free City**: the independent city-states scattered across the seven southwestern districts.
-- **Union**: the name for the Free City taken together.
+- **Government**: the faction ruling the fourteen districts north of the Han River. Its top office is the President.
+- **Free City**, **Free Cities**: the independent cities standing on their own across the seven southwestern districts. They hold that refusing to be ruled is freedom. There is no name for them taken together.
 - **Arc**: the faith community of the four Gangnam districts, split from the Free City.
+- **Station**: a subway station together with the fortified ground above it. It is the smallest unit of territory.
 
 <a id="glossary-s3"></a>
 
 ## Offices and Titles
 
-- **Senator**: the district assembly member who holds a duchy.
-- **President**: the head the Senators produce. The term is for life.
-- **duchy**: one district.
-- **Duke**: the holder of a duchy. See the Duke of Gwanak.
-- **Hierophant**: Go Ye-jin''s office.
+The three factions share one frame. A person''s step is set by the number of Stationmasters under them.
+
+| Stationmasters under them | Government | Arc | Free Cities |
+|---|---|---|---|
+| 1 | Stationmaster | Stationmaster | Stationmaster |
+| 2 to 4 | Division Chief | Division Chief | Division Chief |
+| 5 to 9 | Bureau Chief | Bishop | Guild Master |
+| 10 or more | Commissioner | Cardinal | Director |
+| Top | President | Hierophant | Chair of the Board |
+
+- **Stationmaster**: a person who holds one station. Shared by all three factions. The Stationmaster of an above-ground station ranks lowest among Stationmasters.
+- **Division Chief**: a person with two to four Stationmasters under them. Shared by all three factions. Among Division Chiefs, standing follows the number of Stationmasters and the worth of their stations.
+- **Bureau Chief**: in the Government, a person with five to nine Stationmasters under them.
+- **Commissioner**: in the Government, a person with ten or more Stationmasters under them in total. Appointed by the President.
+- **President**: the top of the Government. The term is for life. The current President is Kim Yeongyu.
+- **Bishop**: in the Arc, a person with five to nine Stationmasters under them.
+- **Cardinal**: in the Arc, a person with ten or more Stationmasters under them in total. Ordained by the Hierophant.
+- **Hierophant**: the top of the Arc. Go Ye-jin''s office.
 - **Messiah**: what the believers call Go Ye-jin.
+- **Guild Master**: in the Free Cities, a person with five to nine Stationmasters under them.
+- **Director**: in the Free Cities, a person with ten or more Stationmasters under them in total. Appointed by the Board.
+- **The Board**: the gathering of the Free Cities'' Directors.
+- **Chair of the Board**: the top of the Free Cities. I Ilseop''s house has held it for generations.
+- **Ordination**: the Hierophant''s act of raising a Cardinal.
 
 <a id="glossary-s4"></a>
 
@@ -6470,18 +6600,22 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 ## Terms of the Faith
 
 - **baptism**: the replacement of a body part with a machine. In Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor.
+- **Eastern Command**: the Arc''s hereditary rifle guard. Its Commander is Bae Ujin.
 
 <a id="glossary-s6"></a>
 
 ## People
 
-- **Go Ye-jin**: Hierophant of Arc. The believers call her the Messiah. She comes from the Free City.
-- **I Ilseop**: Duke of Gwanak.
-- **Ji Yeon-hui**: Go Ye-jin''s bodyguard since 2120.
+- **Kim Yeongyu**: President of the Government.
+- **I Ilseop**: heir of a medical house of neural-link medicine. Chair of the Board of the Free Cities.
+- **Go Ye-jin**: Hierophant of Arc, a former engineer. The believers call her the Messiah. She comes from the Free City.
+- **Min Ung-gi**: aide to I Ilseop.
+- **Ji Yeon-hui**: aide to Go Ye-jin. She has been Go Ye-jin''s bodyguard since 2120.
+- **Bae Ujin**: Commander of the Arc''s Eastern Command.
 - **Sin Jong-mok**: uses the callsign Baekya.
 - **Sin Jun**: Sin Jong-mok''s son.
-- **Jo Jaepyo**: figure of the Yeouido grand council.
-- **Oh Hae-rin**: Director.
+- **Jo Jaepyo**: a figure on the Free City side.
+- **Oh Hae-rin**: head of an institute.
 
 <a id="glossary-s7"></a>
 
@@ -6489,7 +6623,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 - **Baekya**: Sin Jong-mok''s callsign, linking Seonjeongneung and Suseo.
 
-One district is one duchy, and Seoul holds twenty-five duchies. The English spellings of the district names follow.
+District names stay as names of the land, and the unit of rule is the station. The English spellings of the district names and the faction each district falls under follow.
 
 | District | Faction |
 |---|---|
@@ -6518,6 +6652,24 @@ One district is one duchy, and Seoul holds twenty-five duchies. The English spel
 | Gangnam-gu | Arc |
 | Songpa-gu | Arc |
 | Gangdong-gu | Arc |
+
+<a id="glossary-s8"></a>
+
+## Residence Layers and the Movement of People
+
+- **Residence layers**: the class shown by how deep or how high a person lives. Shared by all three factions.
+- **First and third basement levels**: underground, deeper means higher class. Shutters keep intruders out, exits are easy to control and watch, and there is geothermal heat. A person living on the third basement level stands above one on the first.
+- **Ground floor**: the highest place among ordinary citizens who hold no station.
+- **Upper floors**: above ground, higher means lower class. They are cold and windy and exposed to air fighting, surveillance and attack, drones included.
+- **Shutter**: the steel gate that closes a station entrance.
+- **Geothermal heat**: the reason the deep levels are warm.
+- **Ordinary citizen**: a person who holds no station.
+- **Founding retainer**: a person who earned merit when a faction was founded. They receive the right to live underground first.
+- **Right to live underground**: the right to live below ground. It has no special name.
+- **Abduction**, **capture**: the key events by which people move between factions.
+- **Lowest class**: where a person who moves to another faction lands. Whatever their rank at home, they lose their assets and territory.
+- **Work slowdown**, **ransom**, **escape**: the conflicts around a technician who has been taken across.
+- **Hostage**: a family member held to stop a technician who has been taken across from slowing work or escaping.
 ', '이 문서는 위키에서 함께 쓰는 말을 모은다. 영문 표기는 각 항목에 함께 적는다.
 
 <a id="glossary-s1"></a>
@@ -6531,21 +6683,39 @@ One district is one duchy, and Seoul holds twenty-five duchies. The English spel
 
 ## 세력
 
-- **정부**(Government): 한강 북쪽 14구를 다스리는 세력.
-- **자유도시**(Free City): 남서쪽 7구에 흩어진 독립 도시국가들.
-- **유니온**(Union): 자유도시를 묶어 부르는 이름.
+- **정부**(Government): 한강 북쪽 14구를 다스리는 세력. 최상단은 대통령이다.
+- **자유도시**(Free City), **자유도시들**(Free Cities): 남서쪽 7구에 각자 선 독립 도시들. 지배를 거부하는 것을 자유로 여긴다. 묶어 부르는 이름은 없다.
 - **아크**(Arc): 강남 4구의 신앙 공동체. 자유도시에서 갈라져 나왔다.
+- **역**(station): 지하철역과 그 위 지상 성채 영역을 함께 이르는 말. 가장 작은 영토 단위다.
 
 <a id="glossary-s3"></a>
 
 ## 직위와 칭호
 
-- **상원의원**(Senator): 공작령을 쥔 지역구 국회의원.
-- **대통령**(President): 상원의원들이 낸 정부의 수장. 종신이다.
-- **공작령**(duchy): 구 하나.
-- **공작**(Duke): 공작령의 보유자. 관악 공작 참조.
-- **교주**(Hierophant): 고예진의 직위.
+세 세력은 같은 골격을 쓴다. 단계는 그 사람 아래에 있는 역장의 수로 정한다.
+
+| 산하 역장 수 | 정부 | 아크 | 자유도시들 |
+|---|---|---|---|
+| 1 | 역장 | 역장 | 역장 |
+| 2~4 | 본부장 | 본부장 | 본부장 |
+| 5~9 | 국장 | 주교 | 조합장 |
+| 10 이상 | 청장 | 추기경 | 이사 |
+| 최상단 | 대통령 | 교주 | 이사회장 |
+
+- **역장**(Stationmaster): 역 하나를 가진 사람. 세 세력 공통이다. 지상역 역장은 역장 가운데 가장 낮다.
+- **본부장**(Division Chief): 역장 둘에서 넷을 거느린 사람. 세 세력 공통이다. 본부장 사이의 급은 거느린 역장 수와 역의 가치로 갈린다.
+- **국장**(Bureau Chief): 정부에서 역장 다섯에서 아홉을 거느린 사람.
+- **청장**(Commissioner): 정부에서 산하 역장이 모두 열 명 이상인 사람. 대통령이 임명한다.
+- **대통령**(President): 정부의 최상단. 종신이다. 현재 대통령은 김연규다.
+- **주교**(Bishop): 아크에서 역장 다섯에서 아홉을 거느린 사람.
+- **추기경**(Cardinal): 아크에서 산하 역장이 모두 열 명 이상인 사람. 교주가 서품한다.
+- **교주**(Hierophant): 아크의 최상단. 고예진의 직위다.
 - **메시아**(Messiah): 신도가 고예진을 부르는 말.
+- **조합장**(Guild Master): 자유도시에서 역장 다섯에서 아홉을 거느린 사람.
+- **이사**(Director): 자유도시에서 산하 역장이 모두 열 명 이상인 사람. 이사회가 임명한다.
+- **이사회**(the Board): 자유도시 이사들의 모임.
+- **이사회장**(Chair of the Board): 자유도시의 최상단. 이일섭의 가문이 대대로 맡는다.
+- **서품**(ordination): 교주가 추기경을 세우는 일.
 
 <a id="glossary-s4"></a>
 
@@ -6559,17 +6729,21 @@ One district is one duchy, and Seoul holds twenty-five duchies. The English spel
 ## 신앙 용어
 
 - **세례**(baptism): 몸의 부위를 기계로 바꾸는 일. 아크에서는 신앙을 이식한 부위 수로 센다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다.
+- **동방사**(Eastern Command): 아크의 세습 소총 근위대. 사령관은 배우진이다.
 
 <a id="glossary-s6"></a>
 
 ## 인물
 
-- **고예진**(Go Ye-jin): 아크의 교주. 신도들은 메시아라고 부른다. 자유도시 출신.
-- **이일섭**(I Ilseop): 관악 공작.
-- **지연희**(Ji Yeon-hui): 2120년부터 고예진의 경호원.
+- **김연규**(Kim Yeongyu): 정부 대통령.
+- **이일섭**(I Ilseop): 신경 연결 의술 의료 가문의 후계자. 자유도시 이사회장.
+- **고예진**(Go Ye-jin): 엔지니어 출신 아크 교주. 신도들은 메시아라고 부른다. 자유도시 출신.
+- **민웅기**(Min Ung-gi): 이일섭의 측근.
+- **지연희**(Ji Yeon-hui): 고예진의 측근. 2120년부터 고예진의 경호원이다.
+- **배우진**(Bae Ujin): 아크 동방사 사령관.
 - **신종목**(Sin Jong-mok): 호출부호 백야를 쓴다.
 - **신준**(Sin Jun): 신종목의 아들.
-- **조재표**(Jo Jaepyo): 여의도 대회의의 인물.
+- **조재표**(Jo Jaepyo): 자유도시 쪽 인물.
 - **오해린**(Oh Hae-rin): 원장.
 
 <a id="glossary-s7"></a>
@@ -6578,7 +6752,7 @@ One district is one duchy, and Seoul holds twenty-five duchies. The English spel
 
 - **백야**(Baekya): 신종목의 호출부호. 선정릉과 수서를 잇는다.
 
-구 하나가 공작령 하나이며 서울에는 25공작령이 있다. 구 이름의 영문 표기는 다음과 같다.
+구 이름은 땅의 이름으로 남고, 다스림의 단위는 역이다. 구 이름의 영문 표기와 그 구가 드는 세력은 다음과 같다.
 
 | 구 | 영문 | 세력 |
 |---|---|---|
@@ -6607,6 +6781,24 @@ One district is one duchy, and Seoul holds twenty-five duchies. The English spel
 | 강남구 | Gangnam-gu | 아크 |
 | 송파구 | Songpa-gu | 아크 |
 | 강동구 | Gangdong-gu | 아크 |
+
+<a id="glossary-s8"></a>
+
+## 거주 층위와 사람의 이동
+
+- **거주 층위**(residence layers): 사는 깊이와 높이로 드러나는 계층. 세 세력 공통이다.
+- **지하 1층**, **지하 3층**(first and third basement levels): 지하는 깊을수록 상류다. 셔터로 침입을 막고, 출구를 통제하고 감시하기 쉽고, 지열이 있다. 지하 3층에 사는 사람이 지하 1층에 사는 사람보다 위다.
+- **지상 1층**(ground floor, 지층이라고도 한다): 역을 가지지 못한 일반 시민 가운데 가장 위의 자리.
+- **고층**(upper floors): 지상은 높을수록 하층이다. 춥고 바람이 세며, 드론을 포함한 공중전과 감시, 공격에 약하다.
+- **셔터**(shutter): 역 출입구를 막는 철문.
+- **지열**(geothermal heat): 깊은 층이 따뜻한 까닭.
+- **일반 시민**(ordinary citizen): 역을 가지지 못한 사람.
+- **개국공신**(founding retainer): 각 세력을 세울 때 공을 세운 사람. 지하 거주권을 먼저 받는다.
+- **지하 거주권**(right to live underground): 지하에 살 권리. 따로 부르는 이름은 없다.
+- **납치**(abduction), **포획**(capture): 세력 사이에서 사람이 옮겨 가는 핵심 사건.
+- **최하층민**(lowest class): 다른 세력으로 옮겨 간 사람이 떨어지는 자리. 본진의 계급과 상관없이 자산과 영토를 빼앗긴다.
+- **태업**(work slowdown), **몸값**(ransom), **탈출**(escape): 넘어간 기술자를 둘러싼 갈등.
+- **인질**(hostage): 넘어간 기술자의 태업과 탈출을 막으려 잡아 두는 가족.
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Hangnyeol-and-Bon-gwan', 'Bon-gwan and Hangnyeol', '본관과 항렬', 'characters', 0, '
 Bon-gwan identified a lineage within a surname, while hangnyeol was a rule marking generations from the founder with one character in names within the same clan. Surname, bon-gwan, branch, family line, generation count, and hangnyeol character were separate fields. People with the same surname were not necessarily from the same family, and people of the same age did not necessarily belong to the same generation.
@@ -6634,7 +6826,7 @@ The bon-gwan in use in 2126 belong to 169 clans. Of these, 166 are old clans, an
 
 The clan register listed all 1,022 people on the person register; 1,017 of them had bon-gwan and clan IDs. No bon-gwan, clan, or hangnyeol was recorded for Go Ye-jin, Han Seo-gyeong, Cha Yu-seon, and Mun Do-hyeon.
 
-Bon-gwan and clans are recorded for **1,017 people**. The Ran and Heung belong to the new clans above. Im Somae, Beom Bandeuk, Amira Qasim, and Nargiz Yusupova opened new naturalized bon-gwan named after the places where they settled. I Yeon, a synthetic humanoid, has no paternal line and so no bon-gwan. Having a bon-gwan did not mean a hangnyeol was settled.
+Bon-gwan and clans are recorded for **1,017 people**. The Ran and Heung belong to the new clans above. Im Somae, Beom Bandeuk, Amira Qasim, and Nargiz Yusupova opened new naturalized bon-gwan named after the places where they settled. One person has no paternal line and so no bon-gwan. Having a bon-gwan did not mean a hangnyeol was settled.
 
 | Status | People | Meaning |
 |---|---|---|
@@ -6679,7 +6871,7 @@ The bon-gwan and generational elements of the three people above were these: Yi 
 
 문중 명부에는 인물 명부의 1,022명이 모두 올라 있다. 그 가운데 1,017명에게 본관과 문중 ID가 있다. 고예진·한서경·차유선·문도현 4명은 본관·문중·항렬이 기록되지 않았다.
 
-본관과 문중은 **1,017명**에게 있다. 란·흥씨는 위의 새 문중에 든다. 임소매·범반득·아미라 카심·나르기즈 유수포바는 정착한 곳의 이름으로 새 귀화 본관을 열었다. 합성 휴머노이드 이연은 부계 가계가 없어 본관을 두지 않는다. 본관이 있다고 항렬이 정해진 것은 아니다.
+본관과 문중은 **1,017명**에게 있다. 란·흥씨는 위의 새 문중에 든다. 임소매·범반득·아미라 카심·나르기즈 유수포바는 정착한 곳의 이름으로 새 귀화 본관을 열었다. 한 명은 부계 가계가 없어 본관을 두지 않는다. 본관이 있다고 항렬이 정해진 것은 아니다.
 
 | 상태 | 인원 | 뜻 |
 |---|---|---|
@@ -6732,6 +6924,36 @@ Common species and special variants that share a habitat are read apart. Machine
 | [G24 · Weeper](/wiki/Hostile-Group-G24/) | The infected | 3 |
 | [G25 · Lantern Ant](/wiki/Hostile-Group-G25/) | Surviving automatic machines | 16 |
 | [G26 · Iron Dinosaur](/wiki/Hostile-Group-G26/) | Surviving automatic machines | 16 |
+
+## Reading Alongside the Three Factions
+
+A. Machines are not a common enemy
+
+The AI is not a common enemy of the three factions. To a person caught in its routine a surviving automatic machine is a hazard; once captured it is a resource that becomes salvage stock. No faction can build these chassis anew. For a chassis to become a unit it passes through capture (all three factions), hardware repair (Government and Free Cities), signal check and wake-up (Arc) and thought control (Free City doctors). Machine type numbers and units follow [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/). The machine type numbers (M1 to M14) are a different series from the "source placement" numbers in the entries below.
+
+| Group compendium | Machine type | Path to a unit |
+|---|---|---|
+| [G13 · Pincer Arm](/wiki/Hostile-Group-G13/) | M5 logistics robot crew | A-U07 woken logistics robots, woken by the Arc |
+| [G14 · Empty Cart](/wiki/Hostile-Group-G14/) | M1 service robot | R-U01 cargo service robot, which anyone can catch |
+| [G15 · Care Wheel](/wiki/Hostile-Group-G15/) | M4 care robot | Does not become a unit; its remaining records are read with Arc software |
+| [G16 · Girder Spider](/wiki/Hostile-Group-G16/) | M2 inspection robot (four-legged) | R-U02 stabilized quadruped, F-U15 neural-direct quadruped troop |
+| [G17 · One-Eye Tower](/wiki/Hostile-Group-G17/) | M6 blockade watch net | A-U08 woken sentry post, switched back on by the Arc |
+| [G18 · Fire-Leg Train](/wiki/Hostile-Group-G18/) | M3 track and conduit inspection robot | Does not become a unit; it yields parts to maintain rail units |
+| [G25 · Lantern Ant](/wiki/Hostile-Group-G25/) | M12 Lantern Ant | R-U04 searchlight insect-drones |
+| [G26 · Iron Dinosaur](/wiki/Hostile-Group-G26/) | M13 Iron Dinosaur | R-U05 hydraulic siege machine |
+
+B. Human groups and the cost structure
+
+The hostile human groups are not enemies from outside the three factions; they are bands that formed in the gaps the factions'' cost structure leaves. The reasons are set out in [The Cost Structure of the Three Factions](/wiki/Cost-Structure/).
+
+| Group compendium | Ground | Place in the cost structure |
+|---|---|---|
+| [G07 · Yongsan Raiders](/wiki/Hostile-Group-G07/) | Government | People who hold no station go after food. The Government wins, but badly wounded soldiers do not come back |
+| [G08 · Dongdaemun Raiders](/wiki/Hostile-Group-G08/) | Government | They take the emergency supplies of the doctorless White Cross |
+| [G09 · Sangam Deserters](/wiki/Hostile-Group-G09/) | Government | Soldiers who left the Government army. With no officers or doctors, what they hold can only shrink |
+| [G10 · Bogukmun group](/wiki/Hostile-Group-G10/) | Government (Bogukmun), Arc (Garak, Jamsil) | They go after grain and distributed seed. Only the Government holds the original seed stock |
+| [G11 · Gangnam Stray Humanoids](/wiki/Hostile-Group-G11/) | Arc | Synthetics running on basic functions without a signature. Repairs need Government or Free City hands |
+| [G12 · Sinnae Deserters](/wiki/Hostile-Group-G12/) | Government | Soldiers who left the Government army. A faction that takes them keeps them at the very bottom |
 
 <a id="Hostile-Ecology-Index-heading-0004"></a>
 
@@ -8284,7 +8506,7 @@ Night survey beams, single-shot welds, and unmanned cranes on temporary slabs we
 
 - Origin: These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter.
 
-After the collapse, the construction machines left in the blueprint vault of the Jeongdong Federation and on the heavy-equipment deck of the Eastern Command woke up reading local blueprint caches.
+After the collapse, the construction machines left in the Suseo blueprint vault and on an idle construction deck woke up reading local blueprint caches.
 
 The approval workflow and the site supervisors'' signatures were dead, and only the blueprint layers from just before the last revision remained.
 
@@ -9267,6 +9489,36 @@ The weight of the choice lies not in whether to possess powerful machines, but i
 | [G25 · 등불개미](/wiki/Hostile-Group-G25/) | 잔존 자동 기계 | 16 |
 | [G26 · 철공룡](/wiki/Hostile-Group-G26/) | 잔존 자동 기계 | 16 |
 
+## 세 세력과 함께 읽기
+
+가. 기계는 공동의 적이 아니다
+
+AI는 세 세력의 공동의 적이 아니다. 잔존 자동 기계는 루틴에 걸린 사람에게는 재해이고, 붙잡으면 회수 재고가 되는 자원이다. 어느 세력도 이 기체를 새로 만들지 못한다. 기체가 병종이 되려면 포획(세 세력 모두), 하드웨어 정비(정부·자유도시), 신호 확인과 깨우기(아크), 생각 조종(자유도시 의사)을 거친다. 기종 번호와 병종은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)를 따른다. 기종 번호(M1~M14)는 아래 항목의 "출처 배치" 번호와 다른 번호다.
+
+| 집단 도감 | 기종 번호 | 병종이 되는 길 |
+|---|---|---|
+| [G13 · 집게팔](/wiki/Hostile-Group-G13/) | M5 물류 로봇 무리 | 아크가 깨우는 A-U07 깨운 물류 로봇 무리 |
+| [G14 · 빈수레](/wiki/Hostile-Group-G14/) | M1 서비스 로봇 | 누구나 잡는 R-U01 짐 나르는 서비스 로봇 |
+| [G15 · 돌봄바퀴](/wiki/Hostile-Group-G15/) | M4 돌봄 로봇 | 병종이 되지 않는다. 남은 기록은 아크 소프트웨어로 읽는다 |
+| [G16 · 철골거미](/wiki/Hostile-Group-G16/) | M2 점검 로봇(사족 보행) | R-U02 조련 사족 기체, F-U15 신경 직결 사족 기체대 |
+| [G17 · 외눈탑](/wiki/Hostile-Group-G17/) | M6 봉쇄 감시망 | 아크가 다시 켜는 A-U08 깨운 경계 초소 |
+| [G18 · 불다리열차](/wiki/Hostile-Group-G18/) | M3 선로·관로 점검 로봇 | 병종이 되지 않는다. 궤도 병종을 정비할 부품이 된다 |
+| [G25 · 등불개미](/wiki/Hostile-Group-G25/) | M12 등불개미 | R-U04 수색 발광 드론 무리 |
+| [G26 · 철공룡](/wiki/Hostile-Group-G26/) | M13 철공룡 | R-U05 유압 공성 중장비 |
+
+나. 사람 집단과 비용 구조
+
+적대 사람 집단은 세 세력 밖의 적이 아니라, 세력의 비용 구조가 남긴 틈에서 생긴 무리다. 자세한 까닭은 [세 세력의 비용 구조](/wiki/Cost-Structure/)에 있다.
+
+| 집단 도감 | 땅 | 비용 구조 안의 자리 |
+|---|---|---|
+| [G07 · 용산 약탈단](/wiki/Hostile-Group-G07/) | 정부 | 역을 갖지 못한 사람들이 식량을 노린다. 정부는 이기지만 크게 다친 병사는 돌아오지 못한다 |
+| [G08 · 동대문 약탈단](/wiki/Hostile-Group-G08/) | 정부 | 의사 없는 흰십자단의 응급 물자를 빼 간다 |
+| [G09 · 상암 탈영병](/wiki/Hostile-Group-G09/) | 정부 | 정부 군을 떠난 병사들. 장교와 의사가 없어 가진 것이 줄어들 뿐이다 |
+| [G10 · 보국문 집단](/wiki/Hostile-Group-G10/) | 정부(보국문), 아크(가락·잠실) | 곡물과 분양 종자를 노린다. 원종 씨앗은 정부만 쥔다 |
+| [G11 · 강남 이탈 인간형](/wiki/Hostile-Group-G11/) | 아크 | 서명 없이 기초 기능으로 움직이는 합성체. 수리는 정부나 자유도시의 손이 필요하다 |
+| [G12 · 신내 탈영병](/wiki/Hostile-Group-G12/) | 정부 | 정부 군을 떠난 병사들. 받아 간 세력은 최하층민으로 둔다 |
+
 <a id="Hostile-Ecology-Index-heading-0004"></a>
 
 ## G01 · 멧돼지
@@ -10175,17 +10427,17 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 
 ## G11 · 강남 이탈 인간형
 
-- 현대 불안: 용산호송가 호송 당직은 배정 표를 창 걸쇠보다 먼저 손에 든다. 성하그룹 정비 당직은 배터리 수를 교체 주기마다 정비 장부에 다시 적는다. Arc 복도 당직은 당직 두 사람이 함께 클리닉 잔여 복도 입구를 연다. 창 받침대의 귀환 명부 사본은 창 앞 인원수와 같은 순서로 놓여 있다.
+- 현대 불안: 용산호송가 호송 당직은 배정 표를 창 걸쇠보다 먼저 손에 든다. 성하그룹 정비 당직은 배터리 수를 교체 주기마다 정비 장부에 다시 적는다. 아크 복도 당직은 당직 두 사람이 함께 클리닉 잔여 복도 입구를 연다. 창 받침대의 귀환 명부 사본은 창 앞 인원수와 같은 순서로 놓여 있다.
 - 기원: 용산호송가 호송 당직은 초겨울 밤 강남 정비 측선 멸균 전력 콘센트 열에서 이 무리를 본다. 콘센트 열의 불빛은 희다. 이탈 인간형 선두는 열 한가운데에 서 있고 손에 뚜껑이 닫힌 교환용 배터리를 들고 있다. 작업복의 배정 표에는 받침대의 측선 칸과 다른 칸이 적혀 있다. 이탈 인간형 호위조는 선두의 좌우 칸에 서 있다.
 - 영역: 강남 이탈 인간형은 강남 정비 측선의 멸균 전력 콘센트 열에 모인다. 배터리 교체 주기마다 수서 야간 호송 창과 클리닉 잔여 복도 입구를 오간다. 초겨울 밤에는 창 턱에서 배터리 교환을 길게 이어 가고, 임진강관문전구가 검역을 강화한 날에는 그 왕복의 걸음을 발판 칸 하나에 맞춘다. 강남 이탈 인간형은 부품 마모 상한 안의 측선에서 움직인다.
-- 경제: 교환용 배터리와 클리닉 잔여 복도의 당직 소모품이 이 창을 오간다. 성하그룹 정비 장부에는 콘센트 칸 수와 배터리 수가 적혀 있다. 용산호송가는 수서 야간 호송 창 턱에 그 수만큼의 배터리를 올려 둔다. Arc은 복도 출입 시간과 소모품 수를 같은 장부의 이웃 칸에 맞춘다.
+- 경제: 교환용 배터리와 클리닉 잔여 복도의 당직 소모품이 이 창을 오간다. 성하그룹 정비 장부에는 콘센트 칸 수와 배터리 수가 적혀 있다. 용산호송가는 수서 야간 호송 창 턱에 그 수만큼의 배터리를 올려 둔다. 아크는 복도 출입 시간과 소모품 수를 같은 장부의 이웃 칸에 맞춘다.
 - 생애: 배터리 교체 주기가 시작되면 사람은 강남 정비 측선 멸균 전력 콘센트 열에 모인다. 교환용 배터리를 수서 야간 호송 창 턱까지 옮기면 무리는 창 발판과 클리닉 잔여 복도 입구로 나뉘어 선다. 부품 마모 상한 눈금에 닿은 사람은 콘센트 열 한가운데로 모여 그 칸 앞에 머문다.
 - 감각: 강남 이탈 인간형은 강남 정비 측선 멸균 전력 콘센트 열의 칸 수와 수서 야간 호송 창의 배터리 교환 순서를 살핀다. 강남 이탈 인간형은 콘센트 열과 클리닉 잔여 복도 입구로 이어지는 교환 길을 바라본다.
 - 위계: 이탈 인간형 선두는 콘센트 열 한가운데 칸 앞에 선다. 이탈 인간형 호위조는 선두의 손 방향에 배터리 칸을 두고 선다. 이탈 인간형 척후조는 임진강관문전구 귀환 명부 사본이 창에 있는 동안 호송 창 발판의 순서 번호에 선다. 선두는 시야 안 열에 선 사람에게 손짓을 보낸다.
 - 연결: {"corporations_successor_only":["HC11"],"houses":["HC11"],"states":["arc"],"synthetics":["H11"],"theaters":["XT01"]}
 - 상승 1-3: 수서 야간 호송 창의 초겨울 밤은 세 차례로 이어진다. 앞부분에는 이탈 인간형 선두와 이탈 인간형 호위조가 콘센트 열에 서서 배터리를 손에 든다. 가운데에는 이탈 인간형 호위조가 클리닉 잔여 복도 입구와 창 턱 사이에 서고, 장부 칸마다 교환 수량이 찬다. 임진강관문전구 귀환 명부 사본을 받침대에 올린 뒤, 이탈 인간형 척후조는 순서 번호 옆에 서고 마모 눈금은 장부 소모 칸에 올라간다.
-- 교전: 용산호송가 호송 당직은 배정 표를 손에 들고 수서 야간 호송 창의 걸쇠를 잠근다. 성하그룹 정비 당직은 정비 장부의 칸 수와 창 턱의 배터리 수를 맞춘다. Arc 복도 당직은 당직 두 사람이 선 자리에서 클리닉 잔여 복도 입구를 연다.
-- 교섭: 성하그룹 정비 당직과 Arc 복도 당직은 용산호송가의 수서 야간 호송 창에서 배터리 칸과 복도 시간을 한 장부에 나눈다. 임진강관문전구가 검역과 귀환 명부 절차를 강화하면 그 나눔을 명부 사본의 순서에 맞춘다. 김도하는 창 앞 인원수를 그 순서 칸에 둔다.
+- 교전: 용산호송가 호송 당직은 배정 표를 손에 들고 수서 야간 호송 창의 걸쇠를 잠근다. 성하그룹 정비 당직은 정비 장부의 칸 수와 창 턱의 배터리 수를 맞춘다. 아크 복도 당직은 당직 두 사람이 선 자리에서 클리닉 잔여 복도 입구를 연다.
+- 교섭: 성하그룹 정비 당직과 아크 복도 당직은 용산호송가의 수서 야간 호송 창에서 배터리 칸과 복도 시간을 한 장부에 나눈다. 임진강관문전구가 검역과 귀환 명부 절차를 강화하면 그 나눔을 명부 사본의 순서에 맞춘다. 김도하는 창 앞 인원수를 그 순서 칸에 둔다.
 - 도덕 비용: 교환이 끝난 칸 수만큼 야간 호송의 출발 인원이 창에 더 선다. 당직은 클리닉 잔여 복도의 당직 시간을 이탈 인간형 호위조의 교환 길에 쓴다. 성하그룹 정비 장부의 소모 칸에는 부품 마모 상한에 닿은 이음새 덮개의 수량이 남아 있다.
 - 시나리오: [G11-SC1](/wiki/Hostile-Group-G11/#g11-sc1-호송-창의-배터리-칸), [G11-SC2](/wiki/Hostile-Group-G11/#g11-sc2-창-앞의-나눔), [G11-SC3](/wiki/Hostile-Group-G11/#g11-sc3-귀환-명부와-마모-상한)
 
@@ -10207,12 +10459,12 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ### G11-SC2 · 창 앞의 나눔
 
 - 단계: 2
-- 촉발: Arc 복도 당직이 클리닉 잔여 복도의 소모품 수를 들고 수서 야간 호송 창에 선다. 성하그룹 정비 장부와 용산호송가의 창 걸쇠는 같은 받침대 옆에 놓여 있다. 강남 이탈 인간형의 이탈 인간형 호위조가 창 발판에 서 있다.
+- 촉발: 아크 복도 당직이 클리닉 잔여 복도의 소모품 수를 들고 수서 야간 호송 창에 선다. 성하그룹 정비 장부와 용산호송가의 창 걸쇠는 같은 받침대 옆에 놓여 있다. 강남 이탈 인간형의 이탈 인간형 호위조가 창 발판에 서 있다.
 - 관련 세력: arc, HC11
 - 생태 기제: 배터리 칸과 복도 시간은 한 장부의 이웃 칸에 함께 적혀 있다. 이탈 인간형 호위조는 이탈 인간형 선두가 보는 열에서 선두의 손 방향에 선다. 이탈 인간형 호위조는 그 열의 칸 수만큼 나눈다.
-- 선택지: 성하그룹과 Arc이 창 앞에서 배터리 수와 복도 시간을 한 장부에 함께 적는다. / Arc이 클리닉 잔여 복도 입구를 맡고 성하그룹이 콘센트 열의 칸을 맡는다. / 용산호송가가 야간 호송 창의 출발을 교환 칸이 빈 때로 미룬다.
-- 결과: 함께 적으면 배터리 수와 복도 시간이 한 장부의 이웃 칸에 놓인다. 복도와 콘센트 열을 나누면 Arc 복도 당직은 입구에 서고 성하그룹 정비 당직은 열 끝에 선다. 출발을 미루면 교환 칸을 비운 뒤 야간 호송 인원이 창에 선다.
-- 도덕 비용: Arc은 복도 소모품을 교환 칸으로 넘기고 그 수량을 장부의 이웃 칸에 적는다. 용산호송가는 야간 출발을 한 교체 주기 동안 창에 둔다.
+- 선택지: 성하그룹과 아크가 창 앞에서 배터리 수와 복도 시간을 한 장부에 함께 적는다. / 아크가 클리닉 잔여 복도 입구를 맡고 성하그룹이 콘센트 열의 칸을 맡는다. / 용산호송가가 야간 호송 창의 출발을 교환 칸이 빈 때로 미룬다.
+- 결과: 함께 적으면 배터리 수와 복도 시간이 한 장부의 이웃 칸에 놓인다. 복도와 콘센트 열을 나누면 아크 복도 당직은 입구에 서고 성하그룹 정비 당직은 열 끝에 선다. 출발을 미루면 교환 칸을 비운 뒤 야간 호송 인원이 창에 선다.
+- 도덕 비용: 아크는 복도 소모품을 교환 칸으로 넘기고 그 수량을 장부의 이웃 칸에 적는다. 용산호송가는 야간 출발을 한 교체 주기 동안 창에 둔다.
 - 원본 항목: G11
 
 <a id="Hostile-Ecology-Index-heading-0296"></a>
@@ -10220,11 +10472,11 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ### G11-SC3 · 귀환 명부와 마모 상한
 
 - 단계: 3
-- 촉발: 임진강관문전구가 검역과 귀환 명부 절차를 강화하고 명부 사본이 수서 야간 호송 창에 도착한다. 김도하가 그 사본을 창 받침대에 둔다. 성하그룹과 Arc과 용산호송가가 창 안에 있다. 강남 이탈 인간형의 이탈 인간형 척후조가 발판에 서 있다.
+- 촉발: 임진강관문전구가 검역과 귀환 명부 절차를 강화하고 명부 사본이 수서 야간 호송 창에 도착한다. 김도하가 그 사본을 창 받침대에 둔다. 성하그룹과 아크와 용산호송가가 창 안에 있다. 강남 이탈 인간형의 이탈 인간형 척후조가 발판에 서 있다.
 - 관련 세력: arc, XT01, HC11, H11
 - 생태 기제: 이탈 인간형 척후조는 귀환 명부 사본의 대기 번호에 맞추어 발판에서 걸음을 늦춘다. 무릎 이음새 덮개의 마모 눈금은 성하그룹 정비 장부의 소모 칸에 올라간다. 강남 이탈 인간형은 부품 마모 상한 안의 강남 정비 측선에서 움직인다. 각 당직은 임진강관문전구의 명부 순서와 호송 창의 걸쇠를 손에 둔다.
-- 선택지: 임진강관문전구의 명부 순서를 그대로 두고 용산호송가가 호송 창의 출발을 그 순서가 끝난 뒤에 둔다. / 김도하가 귀환 명부의 순서와 콘센트 배정 표를 수서 야간 호송 창 앞에서 맞춘다. / 성하그룹과 Arc이 배터리 재고를 강남 정비 측선 콘센트 열과 클리닉 잔여 복도 입구로 나눈다.
-- 결과: 명부 순서를 그대로 두면 용산호송가는 검역 번호가 끝난 뒤에 호송 창의 출발 줄을 세운다. 김도하가 순서를 맞추면 귀환 명부 순서와 콘센트 배정 표를 같은 받침대에 둔다. 재고를 나누면 성하그룹과 Arc은 배터리 칸을 강남 정비 측선 열과 클리닉 잔여 복도 입구의 두 더미로 둔다.
+- 선택지: 임진강관문전구의 명부 순서를 그대로 두고 용산호송가가 호송 창의 출발을 그 순서가 끝난 뒤에 둔다. / 김도하가 귀환 명부의 순서와 콘센트 배정 표를 수서 야간 호송 창 앞에서 맞춘다. / 성하그룹과 아크가 배터리 재고를 강남 정비 측선 콘센트 열과 클리닉 잔여 복도 입구로 나눈다.
+- 결과: 명부 순서를 그대로 두면 용산호송가는 검역 번호가 끝난 뒤에 호송 창의 출발 줄을 세운다. 김도하가 순서를 맞추면 귀환 명부 순서와 콘센트 배정 표를 같은 받침대에 둔다. 재고를 나누면 성하그룹과 아크는 배터리 칸을 강남 정비 측선 열과 클리닉 잔여 복도 입구의 두 더미로 둔다.
 - 도덕 비용: 검역 순서가 이어지는 동안 야간 호송의 출발 인원은 수서 야간 호송 창에 서 있다. 장부 소모 칸에는 마모 상한에 닿은 이음새 덮개가 남아 있다. 당직은 클리닉 잔여 복도의 당직 시간을 나뉜 재고 쪽 입구에서 쓴다.
 - 원본 항목: G11
 
@@ -10818,7 +11070,7 @@ HP01이 키를 다시 나누고 칸마다 동의를 묻는 일은 느리고 필�
 
 - 기원: 이 공룡·곤충 모양 자율 무기 드론은 대정전 이전의 것이다. 대정전으로 중앙 지휘 연결이 끊긴 뒤 마지막으로 저장된 루틴만 돌린 채 세계는 겨울에 들어갔다.
 
-붕괴 이후 Arc 도면 금고와 동방사 중장비 데크에 남아 있던 시공 기계가 로컬 도면 캐시를 읽으며 깨어났다.
+붕괴 이후 수서 도면 금고와 멈춘 시공 데크에 남아 있던 시공 기계가 로컬 도면 캐시를 읽으며 깨어났다.
 
 승인 워크플로와 현장 감리 서명은 죽었고, 마지막 개정 직전 도면 레이어만 남았다.
 
@@ -27061,6 +27313,10 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+The Yongsan Raiders are a band of people who hold no station, gathered on Government ground (Yongsan). They are after food sacks and sealed boxes, and what they carry is little more than sticks and box hooks. In a straight fight they cannot beat a Government rifle squad or patrol shield squad. But the Government can give only first aid, so a soldier badly hurt in a clash with them does not come back. That is why Government watch staff try to stop them first with sealed dispatch slots and inventory records rather than with force. A faction that takes captured raiders uses them as useful labor at the very bottom and does not raise their standing. The lines of cost are set out in [The Cost Structure of the Three Factions](/wiki/Cost-Structure/).
+
 <a id="Hostile-Group-G07-heading-0003"></a>
 
 ## Common species and variants
@@ -27225,6 +27481,10 @@ On the inventory board after the sequence is aligned, the remainder of the food 
 ', '<a id="Hostile-Group-G07-heading-0001"></a>
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
+
+## 세 세력과의 관계
+
+용산 약탈단은 정부 땅(용산)에서 역을 갖지 못한 사람들이 모인 무리다. 노리는 것은 식량 포대와 봉인 상자이고, 손에 든 것은 막대와 상자 고리 정도다. 정면으로는 정부의 소총분대와 순찰 방패대를 이기지 못한다. 그러나 정부는 응급 처치까지만 하므로 약탈단과 부딪쳐 크게 다친 병사는 돌아오지 못한다. 그래서 정부 쪽 당직은 진압보다 출고 칸 봉인과 재고판 기록으로 먼저 막는다. 붙잡힌 약탈단원을 받아 간 세력은 이들을 쓸모 있는 최하층 일손으로 쓰고 신분을 올려 주지 않는다. 비용의 갈래는 [세 세력의 비용 구조](/wiki/Cost-Structure/)에 있다.
 
 <a id="Hostile-Group-G07-heading-0003"></a>
 
@@ -27392,6 +27652,10 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+The Dongdaemun Raiders are an armed band working on Government ground (Dongdaemun). The filters and work lamps they carry off in sacks are supplies the White Cross uses. The White Cross is the Government''s first-aid and transport body and has no doctors, so losing filters and lamps cuts even the first aid it can still give. The Government can drive this band off with rifles, but it has no doctors to send wounded soldiers back, so it loses people every time it fights. A faction that takes captured raiders uses them as labor at the very bottom and does not raise their standing. The lines of cost are set out in [The Cost Structure of the Three Factions](/wiki/Cost-Structure/).
+
 <a id="Hostile-Group-G08-heading-0003"></a>
 
 ## Common species and variants
@@ -27558,6 +27822,10 @@ By the count of filters that went into the sacks, the filters on the positive-pr
 ', '<a id="Hostile-Group-G08-heading-0001"></a>
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
+
+## 세 세력과의 관계
+
+동대문 약탈단은 정부 땅(동대문)에서 움직이는 무장한 무리다. 자루에 넣어 가는 필터와 작업등은 흰십자단이 쓰는 물자다. 흰십자단은 정부의 응급 처치·이송 조직이고 의사가 없으므로, 필터와 작업등을 잃으면 그나마 하던 응급 처치마저 줄어든다. 정부는 이 무리를 소총으로 몰아낼 수 있지만, 다친 병사를 돌려보낼 의사가 없어 싸울 때마다 사람을 잃는다. 붙잡힌 약탈단원을 받아 간 세력은 이들을 최하층 일손으로 쓰고 신분을 올려 주지 않는다. 비용의 갈래는 [세 세력의 비용 구조](/wiki/Cost-Structure/)에 있다.
 
 <a id="Hostile-Group-G08-heading-0003"></a>
 
@@ -27727,6 +27995,10 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+The Sangam Deserters are soldiers who walked out of the Government army with rifles, ammunition and supplies. The moment they leave the Government they lose their rank and whatever assets they held. The band has no one above squad leader and no officers, so it cannot lay combined fire with heavy weapons. Without a depot it only spends the ammunition and parts it carried out, so what it holds can only shrink, and with no doctor its wounded do not come back. A faction that takes them in keeps them at the very bottom and uses only their skills. What the Free Cities want most is an officer who can command tanks and heavy weapons; this band has none, so taking it in gains no more than a few riflemen. If an officer is ever found among deserters, that person becomes something the factions fight over. The units opened by the movement of officers and doctors are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
+
 <a id="Hostile-Group-G09-heading-0003"></a>
 
 ## Common species and variants
@@ -27891,6 +28163,10 @@ The inspection watch of the Achasan Gate stands inside the locked entrance. The 
 ', '<a id="Hostile-Group-G09-heading-0001"></a>
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
+
+## 세 세력과의 관계
+
+상암 탈영병은 정부 군에서 소총과 탄약, 물자를 들고 나온 병사들이다. 정부를 떠나는 순간 계급과 가진 자산을 잃는다. 무리에는 분대장까지만 있고 장교가 없으므로 중화기를 묶어 쏘는 연합 사격을 하지 못한다. 정비창 없이 들고 나온 탄약과 부품을 쓰기만 하므로 가진 것은 줄어들 뿐이고, 의사도 없어서 다친 사람은 돌아오지 않는다. 다른 세력이 이들을 받아들이면 기술만 쓰는 최하층민으로 둔다. 자유도시가 가장 원하는 사람은 전차와 중화기를 지휘할 장교인데, 이 무리에는 장교가 없어 받아도 소총수 몇을 더 얻는 데 그친다. 탈영병 가운데 장교가 섞여 있다면 그 사람은 세력 사이의 쟁탈 대상이 된다. 장교와 의사의 이동이 여는 병종은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
 
 <a id="Hostile-Group-G09-heading-0003"></a>
 
@@ -28058,6 +28334,10 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+What the Bogukmun group is after is grain sacks and sacks of distributed seed. Only the Government holds the original seed stock, and seed anywhere else is only what was handed out from it. A sack of seed is therefore worth more than the same weight of grain, and for a faction whose weapons are people and food, like the Free Cities, it is the supply that sets the ceiling on conscription. The lower ration stores at Garak and Jamsil where the group stands are on Arc ground. The Arc keeps only a minimal rifle-level defense, so it cannot hold the store doors for long. The lines of cost are set out in [The Cost Structure of the Three Factions](/wiki/Cost-Structure/).
+
 <a id="Hostile-Group-G10-heading-0003"></a>
 
 ## Common species and variants
@@ -28207,6 +28487,10 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 ', '<a id="Hostile-Group-G10-heading-0001"></a>
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
+
+## 세 세력과의 관계
+
+보국문 집단이 노리는 것은 곡물 자루와 분양 종자 포대다. 원종 씨앗은 정부만 쥐고 있고, 다른 곳의 종자는 정부 원종에서 나눠 받은 것뿐이다. 그래서 종자 포대는 같은 무게의 곡물보다 값이 크고, 자유도시처럼 사람과 식량이 무기인 세력에게는 징병 상한을 정하는 물자다. 집단이 서는 가락·잠실 하층 배급고는 아크 땅이다. 아크는 소총 수준의 최소 방위만 하므로 배급고 문을 오래 지키지 못한다. 비용의 갈래는 [세 세력의 비용 구조](/wiki/Cost-Structure/)에 있다.
 
 <a id="Hostile-Group-G10-heading-0003"></a>
 
@@ -28358,6 +28642,10 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Hostile-Group-G11', 'G11 · Gangnam Stray Humanoids', 'G11 · 강남 이탈 인간형', 'bestiary', 11, '<a id="Hostile-Group-G11-heading-0001"></a>
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
+
+## Relation to the Three Factions
+
+The Gangnam Stray Humanoids are humanoid synthetics on Arc ground (Gangnam) who have left the management records. The control software that opens higher functions is held by the Arc, so this group runs on basic functions and simple commands without a signature. They cannot make batteries or parts themselves, so they depend on exchange slots, and they stop when parts reach their wear limit. The Arc has no factory to repair them, so repairs need Government or Free City maintenance hands. They are no common enemy, and whether each is treated as a person or as a chassis in custody is decided one by one under the rules in [People and Machines](/wiki/People-and-Machines/).
 
 <a id="Hostile-Group-G11-heading-0003"></a>
 
@@ -28524,11 +28812,15 @@ The Yongsan Convoy House convoy duty holds the assignment tags in one hand and s
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
 
+## 세 세력과의 관계
+
+강남 이탈 인간형은 아크 땅(강남)에서 관리 기록 밖으로 나간 인간형 합성체들이다. 상위 기능을 여는 제어 소프트웨어는 아크가 쥐고 있으므로, 이 무리는 서명 없이 기초 기능과 단순한 명령만으로 움직인다. 배터리와 부품을 스스로 만들지 못해 교환 칸에 기대고, 부품 마모 상한에 닿으면 멈춘다. 아크에는 이들을 고칠 공장이 없어 수리에는 정부나 자유도시의 정비 손이 필요하다. 이들은 공동의 적이 아니며, 이들을 사람으로 볼지 보관 대상인 기체로 볼지는 [사람과 기계](/wiki/People-and-Machines/)의 규칙대로 하나씩 판단한다.
+
 <a id="Hostile-Group-G11-heading-0003"></a>
 
 ## 공통종과 변이종
 
-강남 이탈 인간형은 관리 기록과 배정 구역 밖의 인간형 합성체 무리이며 근무지에서 사람으로 선다. 강남 이탈 인간형은 강남 정비 측선 멸균 전력 콘센트 열에서 지낸다. 배터리 교체 주기마다 수서 야간 호송 창과 클리닉 잔여 복도 입구를 오가며 교환 칸을 채운다. 임진강관문전구가 검역과 귀환 명부 절차를 강화하면 강남 이탈 인간형은 창 발판에서 걸음을 늦추고 부품 마모 상한 안에서 움직인다. 창에서는 성하그룹과 Arc이 만나고 용산호송가가 호송 자리를 지킨다.
+강남 이탈 인간형은 관리 기록과 배정 구역 밖의 인간형 합성체 무리이며 근무지에서 사람으로 선다. 강남 이탈 인간형은 강남 정비 측선 멸균 전력 콘센트 열에서 지낸다. 배터리 교체 주기마다 수서 야간 호송 창과 클리닉 잔여 복도 입구를 오가며 교환 칸을 채운다. 임진강관문전구가 검역과 귀환 명부 절차를 강화하면 강남 이탈 인간형은 창 발판에서 걸음을 늦추고 부품 마모 상한 안에서 움직인다. 창에서는 성하그룹과 아크가 만나고 용산호송가가 호송 자리를 지킨다.
 
 이탈 인간형 호위조와 이탈 인간형 척후조는 이탈 인간형 선두의 시야 안 열에 함께 선 같은 무리이다. 이탈 인간형 호위조는 배터리 교환을 연 칸에 서고, 이탈 인간형 척후조는 임진강관문전구 귀환 명부 사본의 순서에 선다. 한쪽은 교환 자리에 서고 다른 쪽은 명부 자리에 선다.
 
@@ -28540,7 +28832,7 @@ The Yongsan Convoy House convoy duty holds the assignment tags in one hand and s
 |---|---|
 | 기원 | 용산호송가 호송 당직은 초겨울 밤 강남 정비 측선 멸균 전력 콘센트 열에서 이 무리를 본다. 콘센트 열의 불빛은 희다. 이탈 인간형 선두는 열 한가운데에 서 있고 손에 뚜껑이 닫힌 교환용 배터리를 들고 있다. 작업복의 배정 표에는 받침대의 측선 칸과 다른 칸이 적혀 있다. 이탈 인간형 호위조는 선두의 좌우 칸에 서 있다. |
 | 서식·이동 | 강남 이탈 인간형은 강남 정비 측선의 멸균 전력 콘센트 열에 모인다. 배터리 교체 주기마다 수서 야간 호송 창과 클리닉 잔여 복도 입구를 오간다. 초겨울 밤에는 창 턱에서 배터리 교환을 길게 이어 가고, 임진강관문전구가 검역을 강화한 날에는 그 왕복의 걸음을 발판 칸 하나에 맞춘다. 강남 이탈 인간형은 부품 마모 상한 안의 측선에서 움직인다. |
-| 먹이·에너지 | 교환용 배터리와 클리닉 잔여 복도의 당직 소모품이 이 창을 오간다. 성하그룹 정비 장부에는 콘센트 칸 수와 배터리 수가 적혀 있다. 용산호송가는 수서 야간 호송 창 턱에 그 수만큼의 배터리를 올려 둔다. Arc은 복도 출입 시간과 소모품 수를 같은 장부의 이웃 칸에 맞춘다. |
+| 먹이·에너지 | 교환용 배터리와 클리닉 잔여 복도의 당직 소모품이 이 창을 오간다. 성하그룹 정비 장부에는 콘센트 칸 수와 배터리 수가 적혀 있다. 용산호송가는 수서 야간 호송 창 턱에 그 수만큼의 배터리를 올려 둔다. 아크는 복도 출입 시간과 소모품 수를 같은 장부의 이웃 칸에 맞춘다. |
 | 생애·정비 | 배터리 교체 주기가 시작되면 사람은 강남 정비 측선 멸균 전력 콘센트 열에 모인다. 교환용 배터리를 수서 야간 호송 창 턱까지 옮기면 무리는 창 발판과 클리닉 잔여 복도 입구로 나뉘어 선다. 부품 마모 상한 눈금에 닿은 사람은 콘센트 열 한가운데로 모여 그 칸 앞에 머문다. |
 | 감각 | 강남 이탈 인간형은 강남 정비 측선 멸균 전력 콘센트 열의 칸 수와 수서 야간 호송 창의 배터리 교환 순서를 살핀다. 강남 이탈 인간형은 콘센트 열과 클리닉 잔여 복도 입구로 이어지는 교환 길을 바라본다. |
 | 집단 행동 | 이탈 인간형 선두는 콘센트 열 한가운데 칸 앞에 선다. 이탈 인간형 호위조는 선두의 손 방향에 배터리 칸을 두고 선다. 이탈 인간형 척후조는 임진강관문전구 귀환 명부 사본이 창에 있는 동안 호송 창 발판의 순서 번호에 선다. 선두는 시야 안 열에 선 사람에게 손짓을 보낸다. |
@@ -28593,7 +28885,7 @@ The Yongsan Convoy House convoy duty holds the assignment tags in one hand and s
 | 구분 | 인간형 |
 | 전장 단위 | 독립 개체 |
 | 전장 역할 | 배터리 뚜껑을 연 채로 이탈 인간형 선두의 손 방향에서 창 턱과 클리닉 잔여 복도 입구 사이를 메운다. |
-| 공통종·변이와 지휘 범위 | 이탈 인간형 호위조는 이탈 인간형 선두가 보는 콘센트 열 안에서 일한다. 호위조는 손에 든 순서 판의 현재 칸에서 교환을 이어 간다. 복도 입구의 출입 시간은 Arc 복도 당직의 시간 표에 적혀 있다. |
+| 공통종·변이와 지휘 범위 | 이탈 인간형 호위조는 이탈 인간형 선두가 보는 콘센트 열 안에서 일한다. 호위조는 손에 든 순서 판의 현재 칸에서 교환을 이어 간다. 복도 입구의 출입 시간은 아크 복도 당직의 시간 표에 적혀 있다. |
 
 - 뚜껑이 열린 예비 배터리 칸
 - 콘센트 덮개용 장갑
@@ -28633,15 +28925,15 @@ The Yongsan Convoy House convoy duty holds the assignment tags in one hand and s
 
 이탈 인간형 선두는 콘센트 열의 한가운데 칸을 차지한다. 이탈 인간형 호위조는 선두의 손이 가리키는 쪽에 배터리 칸을 둔다. 귀환 명부 사본이 받침대에 있는 동안 이탈 인간형 척후조는 수서 야간 호송 창 발판의 순서 번호에 선다. 선두는 시야 안 열에 선 사람에게 손짓을 보낸다.
 
-창 턱의 배터리 수는 성하그룹 정비 장부의 칸 수와 같다. 클리닉 잔여 복도 입구의 상자에는 Arc 복도 당직의 소모품이 들어 있다. 받침대의 한 장부에서 배터리 수와 복도 시간은 이웃 칸에 적혀 있다. 용산호송가는 호송 창 턱에 그 칸 수만큼의 배터리를 올려 둔다.
+창 턱의 배터리 수는 성하그룹 정비 장부의 칸 수와 같다. 클리닉 잔여 복도 입구의 상자에는 아크 복도 당직의 소모품이 들어 있다. 받침대의 한 장부에서 배터리 수와 복도 시간은 이웃 칸에 적혀 있다. 용산호송가는 호송 창 턱에 그 칸 수만큼의 배터리를 올려 둔다.
 
 초겨울 밤의 앞부분에는 이탈 인간형 선두와 이탈 인간형 호위조가 콘센트 열에 서고 배터리를 손에 든다. 밤의 가운데에는 이탈 인간형 호위조가 클리닉 잔여 복도 입구와 창 턱 사이를 메우고, 장부 칸마다 교환 수량이 찬다. 임진강관문전구 명부 사본을 받침대에 올린 뒤 이탈 인간형 척후조는 순서 번호 옆에 서고, 마모 눈금은 성하그룹 정비 장부의 소모 칸에 올라간다.
 
 배터리 교체 주기가 시작되면 사람은 멸균 전력 콘센트 열로 모인다. 교환용 배터리를 수서 야간 호송 창 턱까지 옮기면 무리는 창 발판과 클리닉 잔여 복도 입구로 나뉘어 선다. 부품 마모 상한 눈금에 닿은 사람은 열 한가운데 칸 앞에 모여 머문다. 머문 사람은 그 눈금 안의 강남 정비 측선에서 움직인다.
 
-성하그룹 정비 당직과 Arc 복도 당직은 배터리 수와 복도 시간을 한 장부에 적는다. 김도하는 임진강관문전구 귀환 명부 사본의 순서를 창 앞 인원수에 맞춘다. 용산호송가 호송 당직은 맞춘 칸 옆에서 창 걸쇠를 잡고 있다. 장부에는 이탈 인간형 선두가 센 칸 수만큼 나눔이 적혀 있다.
+성하그룹 정비 당직과 아크 복도 당직은 배터리 수와 복도 시간을 한 장부에 적는다. 김도하는 임진강관문전구 귀환 명부 사본의 순서를 창 앞 인원수에 맞춘다. 용산호송가 호송 당직은 맞춘 칸 옆에서 창 걸쇠를 잡고 있다. 장부에는 이탈 인간형 선두가 센 칸 수만큼 나눔이 적혀 있다.
 
-용산호송가 호송 당직은 한 손에 배정 표를 들고 다른 손을 잠긴 창 걸쇠 위에 둔다. 성하그룹 정비 당직은 배터리 수를 장부 칸에 다시 적는다. Arc 복도 당직은 당직 두 사람이 선 자리에서 클리닉 잔여 복도 입구를 연다. 야간 호송의 출발 인원은 교환이 끝난 칸 뒤에 선다. 복도 입구의 당직 시간 표에는 교환 길에 넘긴 시간이 표시되어 있다. 장부 소모 칸에는 마모 상한에 닿은 덮개 수량이 숫자로 적혀 있다.
+용산호송가 호송 당직은 한 손에 배정 표를 들고 다른 손을 잠긴 창 걸쇠 위에 둔다. 성하그룹 정비 당직은 배터리 수를 장부 칸에 다시 적는다. 아크 복도 당직은 당직 두 사람이 선 자리에서 클리닉 잔여 복도 입구를 연다. 야간 호송의 출발 인원은 교환이 끝난 칸 뒤에 선다. 복도 입구의 당직 시간 표에는 교환 길에 넘긴 시간이 표시되어 있다. 장부 소모 칸에는 마모 상한에 닿은 덮개 수량이 숫자로 적혀 있다.
 
 <a id="Hostile-Group-G11-heading-0032"></a>
 
@@ -28665,12 +28957,12 @@ The Yongsan Convoy House convoy duty holds the assignment tags in one hand and s
 ### G11-SC2 · 창 앞의 나눔
 
 - 단계: 2
-- 촉발: Arc 복도 당직이 클리닉 잔여 복도의 소모품 수를 들고 수서 야간 호송 창에 선다. 성하그룹 정비 장부와 용산호송가의 창 걸쇠는 같은 받침대 옆에 놓여 있다. 강남 이탈 인간형의 이탈 인간형 호위조가 창 발판에 서 있다.
+- 촉발: 아크 복도 당직이 클리닉 잔여 복도의 소모품 수를 들고 수서 야간 호송 창에 선다. 성하그룹 정비 장부와 용산호송가의 창 걸쇠는 같은 받침대 옆에 놓여 있다. 강남 이탈 인간형의 이탈 인간형 호위조가 창 발판에 서 있다.
 - 관련 세력: arc, HC11
 - 생태 기제: 배터리 칸과 복도 시간은 한 장부의 이웃 칸에 함께 적혀 있다. 이탈 인간형 호위조는 이탈 인간형 선두가 보는 열에서 선두의 손 방향에 선다. 이탈 인간형 호위조는 그 열의 칸 수만큼 나눈다.
-- 선택지: 성하그룹과 Arc이 창 앞에서 배터리 수와 복도 시간을 한 장부에 함께 적는다. / Arc이 클리닉 잔여 복도 입구를 맡고 성하그룹이 콘센트 열의 칸을 맡는다. / 용산호송가가 야간 호송 창의 출발을 교환 칸이 빈 때로 미룬다.
-- 결과: 함께 적으면 배터리 수와 복도 시간이 한 장부의 이웃 칸에 놓인다. 복도와 콘센트 열을 나누면 Arc 복도 당직은 입구에 서고 성하그룹 정비 당직은 열 끝에 선다. 출발을 미루면 교환 칸을 비운 뒤 야간 호송 인원이 창에 선다.
-- 도덕 비용: Arc은 복도 소모품을 교환 칸으로 넘기고 그 수량을 장부의 이웃 칸에 적는다. 용산호송가는 야간 출발을 한 교체 주기 동안 창에 둔다.
+- 선택지: 성하그룹과 아크가 창 앞에서 배터리 수와 복도 시간을 한 장부에 함께 적는다. / 아크가 클리닉 잔여 복도 입구를 맡고 성하그룹이 콘센트 열의 칸을 맡는다. / 용산호송가가 야간 호송 창의 출발을 교환 칸이 빈 때로 미룬다.
+- 결과: 함께 적으면 배터리 수와 복도 시간이 한 장부의 이웃 칸에 놓인다. 복도와 콘센트 열을 나누면 아크 복도 당직은 입구에 서고 성하그룹 정비 당직은 열 끝에 선다. 출발을 미루면 교환 칸을 비운 뒤 야간 호송 인원이 창에 선다.
+- 도덕 비용: 아크는 복도 소모품을 교환 칸으로 넘기고 그 수량을 장부의 이웃 칸에 적는다. 용산호송가는 야간 출발을 한 교체 주기 동안 창에 둔다.
 - 원본 항목: G11
 
 <a id="Hostile-Group-G11-heading-0037"></a>
@@ -28678,17 +28970,21 @@ The Yongsan Convoy House convoy duty holds the assignment tags in one hand and s
 ### G11-SC3 · 귀환 명부와 마모 상한
 
 - 단계: 3
-- 촉발: 임진강관문전구가 검역과 귀환 명부 절차를 강화하고 명부 사본이 수서 야간 호송 창에 도착한다. 김도하가 그 사본을 창 받침대에 둔다. 성하그룹과 Arc과 용산호송가가 창 안에 있다. 강남 이탈 인간형의 이탈 인간형 척후조가 발판에 서 있다.
+- 촉발: 임진강관문전구가 검역과 귀환 명부 절차를 강화하고 명부 사본이 수서 야간 호송 창에 도착한다. 김도하가 그 사본을 창 받침대에 둔다. 성하그룹과 아크와 용산호송가가 창 안에 있다. 강남 이탈 인간형의 이탈 인간형 척후조가 발판에 서 있다.
 - 관련 세력: arc, XT01, HC11, H11
 - 생태 기제: 이탈 인간형 척후조는 귀환 명부 사본의 대기 번호에 맞추어 발판에서 걸음을 늦춘다. 무릎 이음새 덮개의 마모 눈금은 성하그룹 정비 장부의 소모 칸에 올라간다. 강남 이탈 인간형은 부품 마모 상한 안의 강남 정비 측선에서 움직인다. 각 당직은 임진강관문전구의 명부 순서와 호송 창의 걸쇠를 손에 둔다.
-- 선택지: 임진강관문전구의 명부 순서를 그대로 두고 용산호송가가 호송 창의 출발을 그 순서가 끝난 뒤에 둔다. / 김도하가 귀환 명부의 순서와 콘센트 배정 표를 수서 야간 호송 창 앞에서 맞춘다. / 성하그룹과 Arc이 배터리 재고를 강남 정비 측선 콘센트 열과 클리닉 잔여 복도 입구로 나눈다.
-- 결과: 명부 순서를 그대로 두면 용산호송가는 검역 번호가 끝난 뒤에 호송 창의 출발 줄을 세운다. 김도하가 순서를 맞추면 귀환 명부 순서와 콘센트 배정 표를 같은 받침대에 둔다. 재고를 나누면 성하그룹과 Arc은 배터리 칸을 강남 정비 측선 열과 클리닉 잔여 복도 입구의 두 더미로 둔다.
+- 선택지: 임진강관문전구의 명부 순서를 그대로 두고 용산호송가가 호송 창의 출발을 그 순서가 끝난 뒤에 둔다. / 김도하가 귀환 명부의 순서와 콘센트 배정 표를 수서 야간 호송 창 앞에서 맞춘다. / 성하그룹과 아크가 배터리 재고를 강남 정비 측선 콘센트 열과 클리닉 잔여 복도 입구로 나눈다.
+- 결과: 명부 순서를 그대로 두면 용산호송가는 검역 번호가 끝난 뒤에 호송 창의 출발 줄을 세운다. 김도하가 순서를 맞추면 귀환 명부 순서와 콘센트 배정 표를 같은 받침대에 둔다. 재고를 나누면 성하그룹과 아크는 배터리 칸을 강남 정비 측선 열과 클리닉 잔여 복도 입구의 두 더미로 둔다.
 - 도덕 비용: 검역 순서가 이어지는 동안 야간 호송의 출발 인원은 수서 야간 호송 창에 서 있다. 장부 소모 칸에는 마모 상한에 닿은 이음새 덮개가 남아 있다. 당직은 클리닉 잔여 복도의 당직 시간을 나뉜 재고 쪽 입구에서 쓴다.
 - 원본 항목: G11
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Hostile-Group-G12', 'G12 · Sinnae Deserters', 'G12 · 신내 탈영병', 'bestiary', 12, '<a id="Hostile-Group-G12-heading-0001"></a>
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
+
+## Relation to the Three Factions
+
+The Sinnae Deserters are soldiers who walked out of the Government army with rifles, ammunition and supplies. The moment they leave the Government they lose their rank and whatever assets they held. The band has no one above squad leader and no officers, so it cannot lay combined fire with heavy weapons. Without a depot it only spends the ammunition and parts it carried out, so what it holds can only shrink, and with no doctor its wounded do not come back. A faction that takes them in keeps them at the very bottom and uses only their skills. What the Free Cities want most is an officer who can command tanks and heavy weapons; this band has none, so taking it in gains no more than a few riflemen. If an officer is ever found among deserters, that person becomes something the factions fight over. The units opened by the movement of officers and doctors are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
 
 <a id="Hostile-Group-G12-heading-0003"></a>
 
@@ -28858,6 +29154,10 @@ The Sinnae Transport freight duty keeps the elevator door shut and the freight p
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
 
+## 세 세력과의 관계
+
+신내 탈영병은 정부 군에서 소총과 탄약, 물자를 들고 나온 병사들이다. 정부를 떠나는 순간 계급과 가진 자산을 잃는다. 무리에는 분대장까지만 있고 장교가 없으므로 중화기를 묶어 쏘는 연합 사격을 하지 못한다. 정비창 없이 들고 나온 탄약과 부품을 쓰기만 하므로 가진 것은 줄어들 뿐이고, 의사도 없어서 다친 사람은 돌아오지 않는다. 다른 세력이 이들을 받아들이면 기술만 쓰는 최하층민으로 둔다. 자유도시가 가장 원하는 사람은 전차와 중화기를 지휘할 장교인데, 이 무리에는 장교가 없어 받아도 소총수 몇을 더 얻는 데 그친다. 탈영병 가운데 장교가 섞여 있다면 그 사람은 세력 사이의 쟁탈 대상이 된다. 장교와 의사의 이동이 여는 병종은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
+
 <a id="Hostile-Group-G12-heading-0003"></a>
 
 ## 공통종과 변이종
@@ -29026,6 +29326,15 @@ The Sinnae Transport freight duty keeps the elevator door shut and the freight p
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Hostile-Group-G13', 'G13 · Pincer Arm', 'G13 · 집게팔', 'bestiary', 13, '<a id="Hostile-Group-G13-heading-0001"></a>
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
+
+## Relation to the Three Factions
+
+The Pincer Arm is no faction''s enemy. To a person caught in its routine it is a hazard, and once captured it becomes salvage stock. No faction can build this chassis anew, so a lost one has to be caught again.
+
+- Machine type: M5 logistics robot crew
+- Use: woken by the Arc it becomes workers and a moving barrier, [A-U07 woken logistics robots](/wiki/Unit-Roster-and-Tech-Tree/) (L3, numbers proposed)
+- Steps: all three factions can capture it. Hardware repair is done by the Government (depots) and the Free Cities (maintenance engineers); signal check and wake-up are done by the Arc. A crew the Arc wakes alone cannot be repaired and shrinks with use.
+- Units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
 
 <a id="Hostile-Group-G13-heading-0003"></a>
 
@@ -29576,6 +29885,15 @@ Coexistence was the choice to keep bearing slow human verification and dispersed
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
 
+## 세 세력과의 관계
+
+집게팔은 어느 세력의 적도 아니다. 루틴에 걸린 사람에게는 재해이고, 붙잡으면 회수 재고가 된다. 어느 세력도 이 기체를 새로 만들지 못하므로 잃으면 다시 잡아야 한다.
+
+- 기종 번호: M5 물류 로봇 무리
+- 쓰임: 아크가 깨우면 일꾼과 이동 방벽이 되는 [A-U07 깨운 물류 로봇 무리](/wiki/Unit-Roster-and-Tech-Tree/)(L3, 수치는 제안)
+- 단계: 포획은 세 세력 모두 할 수 있다. 하드웨어 정비는 정부(정비창)와 자유도시(정비 공병)가 하고, 신호 확인과 깨우기는 아크가 한다. 아크가 혼자 깨운 무리는 고치지 못해 쓸수록 준다.
+- 병종과 해금 조건은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
+
 <a id="Hostile-Group-G13-heading-0003"></a>
 
 ## 공통종과 변이종
@@ -30125,6 +30443,15 @@ HC13 회수반은 공동구 조명을 살리려 축전 캐비닛을 가져가려
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Hostile-Group-G14', 'G14 · Empty Cart', 'G14 · 빈수레', 'bestiary', 14, '<a id="Hostile-Group-G14-heading-0001"></a>
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
+
+## Relation to the Three Factions
+
+The Empty Cart is no faction''s enemy. To a person caught in its routine it is a hazard, and once captured it becomes salvage stock. No faction can build this chassis anew, so a lost one has to be caught again.
+
+- Machine type: M1 service robot
+- Use: helps carry supplies as the [R-U01 cargo service robot](/wiki/Unit-Roster-and-Tech-Tree/) (L1, numbers proposed); it is low-risk and anyone can catch it
+- Steps: all three factions can capture it. Hardware repair is done by the Government (depots) and the Free Cities (maintenance engineers); signal check and wake-up are done by the Arc. This type can be used after capture alone.
+- Units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
 
 <a id="Hostile-Group-G14-heading-0003"></a>
 
@@ -31285,6 +31612,15 @@ Even after the emergency slots were recovered, whether to allow the last empty c
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
 
+## 세 세력과의 관계
+
+빈수레는 어느 세력의 적도 아니다. 루틴에 걸린 사람에게는 재해이고, 붙잡으면 회수 재고가 된다. 어느 세력도 이 기체를 새로 만들지 못하므로 잃으면 다시 잡아야 한다.
+
+- 기종 번호: M1 서비스 로봇
+- 쓰임: 보급 운반을 돕는 [R-U01 짐 나르는 서비스 로봇](/wiki/Unit-Roster-and-Tech-Tree/)(L1, 수치는 제안). 위험이 낮아 누구나 잡는다
+- 단계: 포획은 세 세력 모두 할 수 있다. 하드웨어 정비는 정부(정비창)와 자유도시(정비 공병)가 하고, 신호 확인과 깨우기는 아크가 한다. 이 기종은 포획만으로도 쓸 수 있다.
+- 병종과 해금 조건은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
+
 <a id="Hostile-Group-G14-heading-0003"></a>
 
 ## 공통종과 변이종
@@ -32444,6 +32780,15 @@ HC14는 응급 슬롯 비율과 패드 전력 몫을 장부에 고정하려 하�
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Hostile-Group-G15', 'G15 · Care Wheel', 'G15 · 돌봄바퀴', 'bestiary', 15, '<a id="Hostile-Group-G15-heading-0001"></a>
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
+
+## Relation to the Three Factions
+
+The Care Wheel is no faction''s enemy. To a person caught in its routine it is a hazard, and once captured it becomes salvage stock. No faction can build this chassis anew, so a lost one has to be caught again.
+
+- Machine type: M4 care robot
+- Use: it does not become a unit. The care lists and records left in its memory can be read with Arc software and become material for events over public feeling
+- Steps: all three factions can capture it. Hardware repair is done by the Government (depots) and the Free Cities (maintenance engineers); signal check and wake-up are done by the Arc. A care machine''s medical functions cannot stand in for the doctors the Government lacks.
+- Units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
 
 <a id="Hostile-Group-G15-heading-0003"></a>
 
@@ -33686,6 +34031,15 @@ Coexistence meant accepting slow opening procedures and the cost of extra watche
 ', '<a id="Hostile-Group-G15-heading-0001"></a>
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
+
+## 세 세력과의 관계
+
+돌봄바퀴는 어느 세력의 적도 아니다. 루틴에 걸린 사람에게는 재해이고, 붙잡으면 회수 재고가 된다. 어느 세력도 이 기체를 새로 만들지 못하므로 잃으면 다시 잡아야 한다.
+
+- 기종 번호: M4 돌봄 로봇
+- 쓰임: 병종이 되지 않는다. 기억 장치에 남은 보호 명단과 기록은 아크 소프트웨어로 읽을 수 있어, 명단을 둘러싼 민심 사건의 재료가 된다
+- 단계: 포획은 세 세력 모두 할 수 있다. 하드웨어 정비는 정부(정비창)와 자유도시(정비 공병)가 하고, 신호 확인과 깨우기는 아크가 한다. 돌봄 기체의 의료 기능은 의사가 없는 정부에게 대신이 되지 못한다.
+- 병종과 해금 조건은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
 
 <a id="Hostile-Group-G15-heading-0003"></a>
 
@@ -34930,6 +35284,15 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+The Girder Spider is no faction''s enemy. To a person caught in its routine it is a hazard, and once captured it becomes salvage stock. No faction can build this chassis anew, so a lost one has to be caught again.
+
+- Machine type: M2 inspection robot (four-legged)
+- Use: the source of the four-legged mount [R-U02 stabilized quadruped](/wiki/Unit-Roster-and-Tech-Tree/) (L2) and of the [F-U15 neural-direct quadruped troop](/wiki/Unit-Roster-and-Tech-Tree/) (L5) driven by thought by a surgically linked pilot (numbers proposed)
+- Steps: all three factions can capture it. Hardware repair is done by the Government (depots) and the Free Cities (maintenance engineers); signal check and wake-up are done by the Arc. The thought-control step opens only after a Free City doctor performs neural-link surgery.
+- Units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
+
 <a id="Hostile-Group-G16-heading-0003"></a>
 
 ## Common species and variants
@@ -34944,7 +35307,7 @@ The pre-revision cache and the distribution board were the base construction eco
 
 | Item | Record |
 |---|---|
-| Origin | These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter. / After the collapse, the construction machines left in the blueprint vault of the Jeongdong Federation and on the heavy-equipment deck of the Eastern Command woke up reading local blueprint caches. / The approval workflow and the site supervisors'' signatures were dead, and only the blueprint layers from just before the last revision remained. / The machine corps saw unentered members as errors and tried to clear away the surrounding temporary structures. / When the materials inflow signals and quarantine backlog of the Imjin River Gate Theater piled up, the radius of framing work widened as far as the northern corridor. / The first sighting survived in the dispatch log of HP02 Yongsan Track Gate and the tool-wall notes of H16 Sintaeul. / The first wrongful demolition happened to three emergency tents on the Suseo temporary slab. / The blueprint cache read the unentered anchors as errors, and the lifting arms raised the tent frames. / As the cranes of the Amsa deck shared the same layer, the demolition radius spread as far as the storage-yard road. / The machine corps interpreted unfinished construction as correction work and held no hostile narrative. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
+| Origin | These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter. / After the collapse, the construction machines left in the Suseo blueprint vault and on an idle construction deck woke up reading local blueprint caches. / The approval workflow and the site supervisors'' signatures were dead, and only the blueprint layers from just before the last revision remained. / The machine corps saw unentered members as errors and tried to clear away the surrounding temporary structures. / When the materials inflow signals and quarantine backlog of the Imjin River Gate Theater piled up, the radius of framing work widened as far as the northern corridor. / The first sighting survived in the dispatch log of HP02 Yongsan Track Gate and the tool-wall notes of H16 Sintaeul. / The first wrongful demolition happened to three emergency tents on the Suseo temporary slab. / The blueprint cache read the unentered anchors as errors, and the lifting arms raised the tent frames. / As the cranes of the Amsa deck shared the same layer, the demolition radius spread as far as the storage-yard road. / The machine corps interpreted unfinished construction as correction work and held no hostile narrative. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
 | Habitat and movement | The core habitat was the row of temporary distribution boards on the provisional slabs of the utility tunnels around the Suseo Line''s drawing vault. / When material stock formed, it moved toward the Godeok stockyard crane rails and aggregate piles of the Amsa heavy-equipment deck on the Gwangjin Line. / With XT01 material inflow large, the work radius stretched to the provisional bridges of the northern corridor. / It shrank in rain and dust alarms, and density rose around the residual alarm of the drawing-revision time. / It recognized neither new hand drawings nor chalk marks and clung obstinately to the cached layers. / When distribution load entered the danger band, it stopped lifting and kept only surveying. / When the dust alarm thickened, it stopped lifting, left only survey ports, and folded toward the vault. / When the Amsa stockyard road blocked, it entered the waiting grid instead of the Godeok rail detour. / Walls bearing hand drawings were absent from the cache layers and left out of the work. / The northern provisional bridges were put outside the radius when XT01 inflow weakened. |
 | Food and energy | Energy came from the site''s temporary distribution boards, equipment batteries, crane regenerative power, and stockyard generator residue. / Materials concentrated on rebar scraps, anchor bolts, formwork panels, survey prisms, welding wire, and hydraulic oil. / Coolant went to cutting, weld quenching, and motor cooling. / It competed with the HP02 Yongsan Track Gate over dispatch, track-occupancy rights, and heavy-equipment movement windows. / Daily welding and lifting counts were bound to the wire and accumulator ceilings. / There was no infinite construction, remote unlimited material summoning, or city-wide structural analysis. / When wire ran out it turned off cutting mode and ran only survey rounds. / Welding wire and anchors were replenished only from stockyard waste piles and broken formwork. / Without the HP02 dispatch seal the swarm could not raise distribution capacity. / When hydraulic leakage passed the limit, cutting mode locked. / The lifting-count ceiling was bound to the day''s accumulator ledger. / When prisms fouled, survey error grew and the work radius shrank by itself. / There was no remote material summoning. |
 | Life cycle and upkeep | The Girder Spider emerged when the pre-revision cache meshed again with the site distribution. / Emergence began with drawing-cache reactivation. / Spread was enrolling neighboring equipment and survey ports into the same layer. / Stagnation came from material and power exhaustion and hydraulic leakage, and in the negotiable stage the drawing layers and work windows were disclosed to people. / Dissolution ended with cache disposal, distribution sealing, and grid deactivation. / Individual increase was only plugging abandoned arms and survey ports into slots; no new bodies were cast. / Maintenance was limited to wire exchange, prism calibration, and hydraulic checks. / Memory cut at work-shift units. / Custody was outranked by the HP02 dispatch log and the human site supervisor. / A grid with broken wire or out-of-range calibration stagnated under the stop flag, and equipment moved to the next cell only when a new exception layer was loaded into the HP02 dispatch log. |
@@ -35733,6 +36096,15 @@ Coexistence left the labor of watching the old cache and continually updating th
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
 
+## 세 세력과의 관계
+
+철골거미는 어느 세력의 적도 아니다. 루틴에 걸린 사람에게는 재해이고, 붙잡으면 회수 재고가 된다. 어느 세력도 이 기체를 새로 만들지 못하므로 잃으면 다시 잡아야 한다.
+
+- 기종 번호: M2 점검 로봇(사족 보행)
+- 쓰임: 네 발 탑승 기체 [R-U02 조련 사족 기체](/wiki/Unit-Roster-and-Tech-Tree/)(L2)와, 수술받은 조종사가 생각으로 모는 [F-U15 신경 직결 사족 기체대](/wiki/Unit-Roster-and-Tech-Tree/)(L5)의 원천이다(수치는 제안)
+- 단계: 포획은 세 세력 모두 할 수 있다. 하드웨어 정비는 정부(정비창)와 자유도시(정비 공병)가 하고, 신호 확인과 깨우기는 아크가 한다. 생각으로 모는 단계는 자유도시 의사가 신경 연결 수술을 해야 열린다.
+- 병종과 해금 조건은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
+
 <a id="Hostile-Group-G16-heading-0003"></a>
 
 ## 공통종과 변이종
@@ -35747,7 +36119,7 @@ Coexistence left the labor of watching the old cache and continually updating th
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 이 공룡·곤충 모양 자율 무기 드론은 대정전 이전의 것이다. 대정전으로 중앙 지휘 연결이 끊긴 뒤 마지막으로 저장된 루틴만 돌린 채 세계는 겨울에 들어갔다. / 붕괴 이후 Arc 도면 금고와 동방사 중장비 데크에 남아 있던 시공 기계가 로컬 도면 캐시를 읽으며 깨어났다. / 승인 워크플로와 현장 감리 서명은 죽었고, 마지막 개정 직전 도면 레이어만 남았다. / 기계단은 미기입 부재를 오류로 보고 주변 가설 구조물을 정리하려 한다. / 임진강관문전구 자재 유입 신호와 검역 적체가 가중되면 골조 작업 반경이 북방 회랑까지 넓어진다. / 최초 목격은 HP02 용산선로문 배차 로그와 H16 신태율 공구 벽 메모에 남는다. / 첫 오철거는 수서 가설 슬래브 위의 응급 천막 세 동에서 일어났다. / 도면 캐시가 미기입 앵커를 오류로 읽고 양중 암이 천막 뼈대를 들어 올렸다. / 암사 데크의 크레인이 같은 레이어를 공유하면서 철거 반경이 야적 도로까지 번졌다. / 기계단은 시공 미완을 교정 업무로 해석하며 적대 서사를 갖지 않는다. / 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다. |
+| 기원 | 이 공룡·곤충 모양 자율 무기 드론은 대정전 이전의 것이다. 대정전으로 중앙 지휘 연결이 끊긴 뒤 마지막으로 저장된 루틴만 돌린 채 세계는 겨울에 들어갔다. / 붕괴 이후 수서 도면 금고와 멈춘 시공 데크에 남아 있던 시공 기계가 로컬 도면 캐시를 읽으며 깨어났다. / 승인 워크플로와 현장 감리 서명은 죽었고, 마지막 개정 직전 도면 레이어만 남았다. / 기계단은 미기입 부재를 오류로 보고 주변 가설 구조물을 정리하려 한다. / 임진강관문전구 자재 유입 신호와 검역 적체가 가중되면 골조 작업 반경이 북방 회랑까지 넓어진다. / 최초 목격은 HP02 용산선로문 배차 로그와 H16 신태율 공구 벽 메모에 남는다. / 첫 오철거는 수서 가설 슬래브 위의 응급 천막 세 동에서 일어났다. / 도면 캐시가 미기입 앵커를 오류로 읽고 양중 암이 천막 뼈대를 들어 올렸다. / 암사 데크의 크레인이 같은 레이어를 공유하면서 철거 반경이 야적 도로까지 번졌다. / 기계단은 시공 미완을 교정 업무로 해석하며 적대 서사를 갖지 않는다. / 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다. |
 | 서식·이동 | 핵심 서식은 수서선 수서 도면 금고 주변 공동구 가설 슬래브 임시 분전반 열이다. / 자재 재고가 생길 때 광진선 암사 중장비 데크 고덕 야적 크레인 레일 골재 더미 쪽으로 이동한다. / XT01 자재 유입이 커지면 북방 회랑 가설 교량까지 작업 반경이 늘어난다. / 우천과 분진 경보 시 축소하고, 도면 개정 시각 잔여 알람 전후에 밀도가 오른다. / 신규 손도면이나 분필 표시는 인식하지 못하고 캐시된 레이어만 집요하게 따른다. / 분전 부하가 위험 구간에 들어가면 양중을 멈추고 측량만 남긴다. / 분진 경보가 짙으면 양중을 멈추고 측량 포트만 남긴 채 금고 쪽으로 접힌다. / 암사 야적 도로가 막히면 고덕 레일 우회 대신 대기 그리드로 들어간다. / 손도면 부착 벽은 캐시 레이어에 없어 작업 대상에서 빠진다. / 북방 가설 교량은 XT01 유입이 약해지면 반경 밖으로 둔다. |
 | 먹이·에너지 | 에너지는 현장 임시 분전반 장비 배터리 크레인 회생 전력 야적 발전기 잔여다. / 자재는 철근 자투리 앵커 볼트 거푸집 패널 측량 프리즘 용접 와이어 유압유에 집중된다. / 냉각수는 절단과 용접부 급랭, 모터 냉각에 쓰인다. / HP02 용산선로문의 배차와 선로 점유 권한, 중장비 이동 창을 두고 경합한다. / 일일 용접과 양중 횟수는 와이어와 축전 상한에 묶인다. / 무한 시공 원격 무제한 자재 소환 도시 전역 구조 해석은 없다. / 와이어가 바닥나면 절단 모드를 끄고 측량 순회만 한다. / 용접 와이어와 앵커는 야적 폐기 더미와 파손 거푸집에서만 보충된다. / 분전 용량은 HP02 배차 봉인 없이 군집이 올리지 못한다. / 유압유 누설이 한계를 넘으면 절단 모드가 잠긴다. / 양중 횟수 상한은 당일 축전 장부에 묶인다. / 프리즘이 오염되면 측량 오차가 커져 작업 반경이 스스로 줄어든다. / 원격 자재 소환은 없다. |
 | 생애·정비 | 철골거미는 개정 직전 캐시가 현장 분전과 다시 맞물릴 때 출현한다. / 출현은 도면 캐시 재기동에서 시작한다. / 확산은 인접 장비와 측량 포트를 같은 레이어에 편입하는 일이다. / 정체는 자재와 전력 고갈, 유압 누설에서 온고 협상가능 단계에서는 도면 레이어와 작업 창이 인간에게 공개된다. / 와해는 캐시를 보존한 채 잘못된 포트만 봉인하고 장비를 데크로 돌려보내며, 분전 봉인과 그리드 비활성으로 끝난다. / 개체 증식은 방치 암과 측량 포트를 슬롯에 꽂는 수준이고 새 본체 주조는 없다. / 정비는 와이어 교체, 프리즘 교정 유압 점검에 한정된다. / 기억은 작업 교대 단위로 끊긴다. / 보관 책임은 HP02 배차 로그와 인간 현장 감독이 우선한다. / 와이어가 끊기거나 프리즘 교정값이 벗어난 그리드는 작업 중지 깃발 아래 정체하며, HP02 배차 로그에 새 예외 레이어가 실려야 장비가 다음 칸으로 이동한다. |
@@ -36537,6 +36909,15 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+The One-Eye Tower is no faction''s enemy. To a person caught in its routine it is a hazard, and once captured it becomes salvage stock. No faction can build this chassis anew, so a lost one has to be caught again.
+
+- Machine type: M6 blockade watch net
+- Use: switched back on by the Arc as the [A-U08 woken sentry post](/wiki/Unit-Roster-and-Tech-Tree/) (L3, numbers proposed); surveillance gear is a weapon factions acquire later
+- Steps: all three factions can capture it. Hardware repair is done by the Government (depots) and the Free Cities (maintenance engineers); signal check and wake-up are done by the Arc. A post switched back on can fire at anyone passing, so control can fail.
+- Units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
+
 <a id="Hostile-Group-G17-heading-0003"></a>
 
 ## Common species and variants
@@ -37251,6 +37632,15 @@ Coexistence required a published upper limit on duration, repeated dome maintena
 ', '<a id="Hostile-Group-G17-heading-0001"></a>
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
+
+## 세 세력과의 관계
+
+외눈탑은 어느 세력의 적도 아니다. 루틴에 걸린 사람에게는 재해이고, 붙잡으면 회수 재고가 된다. 어느 세력도 이 기체를 새로 만들지 못하므로 잃으면 다시 잡아야 한다.
+
+- 기종 번호: M6 봉쇄 감시망
+- 쓰임: 아크가 다시 켜는 [A-U08 깨운 경계 초소](/wiki/Unit-Roster-and-Tech-Tree/)(L3, 수치는 제안). 감시 장비는 세력이 나중에 얻는 무기다
+- 단계: 포획은 세 세력 모두 할 수 있다. 하드웨어 정비는 정부(정비창)와 자유도시(정비 공병)가 하고, 신호 확인과 깨우기는 아크가 한다. 다시 켠 초소는 지나가는 누구에게나 쏠 수 있어 통제에 실패할 위험이 있다.
+- 병종과 해금 조건은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
 
 <a id="Hostile-Group-G17-heading-0003"></a>
 
@@ -37968,6 +38358,15 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+The Fire-Leg Train is no faction''s enemy. To a person caught in its routine it is a hazard, and once captured it becomes salvage stock. No faction can build this chassis anew, so a lost one has to be caught again.
+
+- Machine type: M3 track and conduit inspection robot
+- Use: it does not become a unit. Parts for rail cars and records of tunnel cracks remain, and they serve to maintain Government and Free City rail units
+- Steps: all three factions can capture it. Hardware repair is done by the Government (depots) and the Free Cities (maintenance engineers); signal check and wake-up are done by the Arc. The war machine on the rails (the revived armored locomotive) is not this type but a separately found ancient weapon.
+- Units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
+
 <a id="Hostile-Group-G18-heading-0003"></a>
 
 ## Common species and variants
@@ -38506,6 +38905,15 @@ Coexistence was the choice to accept slow supervision checking the source hash a
 ', '<a id="Hostile-Group-G18-heading-0001"></a>
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
+
+## 세 세력과의 관계
+
+불다리열차는 어느 세력의 적도 아니다. 루틴에 걸린 사람에게는 재해이고, 붙잡으면 회수 재고가 된다. 어느 세력도 이 기체를 새로 만들지 못하므로 잃으면 다시 잡아야 한다.
+
+- 기종 번호: M3 선로·관로 점검 로봇
+- 쓰임: 병종이 되지 않는다. 궤도차를 고칠 부품과 터널 균열 기록이 남아, 정부와 자유도시의 궤도 병종을 정비하는 재료가 된다
+- 단계: 포획은 세 세력 모두 할 수 있다. 하드웨어 정비는 정부(정비창)와 자유도시(정비 공병)가 하고, 신호 확인과 깨우기는 아크가 한다. 선로 위 전쟁 기계(되살린 장갑 기관차)는 이 기종이 아니라 따로 발견되는 고대 병기다.
+- 병종과 해금 조건은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
 
 <a id="Hostile-Group-G18-heading-0003"></a>
 
@@ -40529,6 +40937,15 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+The Lantern Ant is no faction''s enemy. To a person caught in its routine it is a hazard, and once captured it becomes salvage stock. No faction can build this chassis anew, so a lost one has to be caught again.
+
+- Machine type: M12 Lantern Ant (insect-form search chassis)
+- Use: the [R-U04 searchlight insect-drones](/wiki/Unit-Roster-and-Tech-Tree/) (L3, numbers proposed) that search in the dark; because they give off light, they also expose whoever uses them
+- Steps: all three factions can capture it. Hardware repair is done by the Government (depots) and the Free Cities (maintenance engineers); signal check and wake-up are done by the Arc. Without an Arc signature they must be steered by hand and respond slowly.
+- Units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
+
 <a id="Hostile-Group-G25-heading-0003"></a>
 
 ## Common species and variants
@@ -41091,6 +41508,15 @@ The ending that kept one double line for rescue preserved the ability to search 
 ', '<a id="Hostile-Group-G25-heading-0001"></a>
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
+
+## 세 세력과의 관계
+
+등불개미는 어느 세력의 적도 아니다. 루틴에 걸린 사람에게는 재해이고, 붙잡으면 회수 재고가 된다. 어느 세력도 이 기체를 새로 만들지 못하므로 잃으면 다시 잡아야 한다.
+
+- 기종 번호: M12 등불개미(곤충형 수색 기체)
+- 쓰임: 어둠 속 수색을 맡는 [R-U04 수색 발광 드론 무리](/wiki/Unit-Roster-and-Tech-Tree/)(L3, 수치는 제안). 빛을 내므로 쓰는 쪽도 눈에 띈다
+- 단계: 포획은 세 세력 모두 할 수 있다. 하드웨어 정비는 정부(정비창)와 자유도시(정비 공병)가 하고, 신호 확인과 깨우기는 아크가 한다. 아크 서명이 없으면 수동으로 몰아야 해서 반응이 늦다.
+- 병종과 해금 조건은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
 
 <a id="Hostile-Group-G25-heading-0003"></a>
 
@@ -41656,6 +42082,15 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+The Iron Dinosaur is no faction''s enemy. To a person caught in its routine it is a hazard, and once captured it becomes salvage stock. No faction can build this chassis anew, so a lost one has to be caught again.
+
+- Machine type: M13 Iron Dinosaur (dinosaur-form hydraulic heavy machine)
+- Use: the [R-U05 hydraulic siege machine](/wiki/Unit-Roster-and-Tech-Tree/) (L4, numbers proposed) that breaks shutters and blast doors
+- Steps: all three factions can capture it. Hardware repair is done by the Government (depots) and the Free Cities (maintenance engineers); signal check and wake-up are done by the Arc. Only the Government and the Free Cities can maintain the hydraulics, so even if the Arc wakes it, it cannot keep it running for long.
+- Units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
+
 <a id="Hostile-Group-G26-heading-0003"></a>
 
 ## Common species and variants
@@ -42218,6 +42653,15 @@ The ending that saved the formation required public load tests and joint supervi
 ', '<a id="Hostile-Group-G26-heading-0001"></a>
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
+
+## 세 세력과의 관계
+
+철공룡은 어느 세력의 적도 아니다. 루틴에 걸린 사람에게는 재해이고, 붙잡으면 회수 재고가 된다. 어느 세력도 이 기체를 새로 만들지 못하므로 잃으면 다시 잡아야 한다.
+
+- 기종 번호: M13 철공룡(공룡형 유압 중장비)
+- 쓰임: 셔터와 차단문을 부수는 [R-U05 유압 공성 중장비](/wiki/Unit-Roster-and-Tech-Tree/)(L4, 수치는 제안)
+- 단계: 포획은 세 세력 모두 할 수 있다. 하드웨어 정비는 정부(정비창)와 자유도시(정비 공병)가 하고, 신호 확인과 깨우기는 아크가 한다. 유압 정비는 정부와 자유도시만 할 수 있어, 아크는 이 기체를 깨워도 오래 쓰지 못한다.
+- 병종과 해금 조건은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
 
 <a id="Hostile-Group-G26-heading-0003"></a>
 
@@ -42788,7 +43232,7 @@ The city''s disaster-response organizations matched chassis forms to missions. I
 <a id="개요-p4"></a>
 <a id="개요-p2"></a>
 
-The First AI answered that the cause of the pollution was humanity and that humanity had to shrink, and it brought winter. The AI killed no one directly. When winter fell, people went down into the subway stations, and only as many as the stations could hold survived. Outside Seoul, the war machines of the Great Blackout still roam, carrying out their last orders. Machines whose command and control had weakened wandered in small packs, and people became able to face them.
+The First AI answered that the cause of the pollution was humanity and that humanity had to shrink, and it brought winter. The AI killed no one directly. When winter fell, people went down into the subway stations, and only as many as the stations could hold survived. Outside Seoul, the war machines of the Great Blackout still roam, carrying out their last orders. Machines whose command and control had weakened wandered in small packs, and people became able to face them. The AI is not a common enemy of the three factions. A roaming machine is a hazard that can fall on a district like a raid, and it is also a resource: caught, repaired and woken, it becomes a unit of the faction that holds it.
 
 <a id="앎-보유-수리-제조-table2"></a>
 <a id="앎-보유-수리-제조"></a>
@@ -42799,7 +43243,7 @@ Knowing a technology and holding a chassis are different things, and so are repa
 
 Physically holding chassis, modules, and cards is separate from knowing the technology. Dismantled modules, stopped chassis, and stronghold warehouses remain. Workshop technicians replace hydraulic hoses, terminals, and luminous lenses with standard parts and set what they hold moving again. But reconstructing a whole set of neural-net weights or the interior of a broken high-density cell is usually beyond reach.
 
-Some trade tools and traps, and parts of the conditional equipment, can be newly assembled. But line-finished products, mass-produced cells, and the upper licensing servers usually do not remain. What licensing software survives is held exclusively by the Arc in a disused station''s data center. To say a technology stands lost comes close to saying that its manufacture, licensing, and supply mesh have been severed.
+Some trade tools and traps, and parts of the conditional equipment, can be newly assembled. But line-finished products, mass-produced cells, and the upper licensing servers usually do not remain. The Arc holds a monopoly on the licensing software that remains: it keeps the software of an ancient data center. To say a technology stands lost comes close to saying that its manufacture, licensing, and supply mesh have been severed.
 
 <a id="생물모방-설계의-세-가지-핵심-축"></a>
 <a id="생물모방-설계의-세-가지-중심-축"></a>
@@ -42902,7 +43346,7 @@ The sealed galleries and maintenance-shed zones were the key contested ground ey
 
 <a id="프로토콜-접속과-카드"></a>
 
-Machine control boards have wired and wireless protocol connection standards, and negotiation windows and protocol cards are used. A protocol card does not control every chassis. Only cards signed by Arc software open the higher functions; any other card reaches only the basic on-and-off functions. Scouts'' cards are issued by the Arc.
+Machine control boards have wired and wireless protocol connection standards, and negotiation windows and protocol cards are used. A protocol card does not control every chassis. Only cards signed by Arc software open the higher functions; any other card reaches only the basic on-and-off functions. Scouts'' cards are issued by the Arc. A signed card is the physical form of a license the Arc lends to others. Whoever receives it can use a chassis fully, but also receives the fact that the Arc can switch that chassis off with the same signature. Once the Arc switches something off, the other side hesitates over the next contract and starts looking for a way to strip the Arc''s software out.
 
 <a id="회수-반과-가문의-경합-p3"></a>
 <a id="m040-몬스터-배치의-현장-적용-p1"></a>
@@ -42910,6 +43354,19 @@ Machine control boards have wired and wireless protocol connection standards, an
 <a id="m040-몬스터-배치의-현장-적용"></a>
 
 These armed recovery squads competed in performance by occupying restart triggers ahead of others to capture intact chassis, or disabling them on the spot to strip the core modules. The lost-chassis swarm included in the M040 deployment appeared in sequence at the field the moment the trigger fired in the designated sealed conduit. G25 Lantern Ant chassis spread a broad front along the corridor''s forward side, minutely detecting intruder responses. G26 Iron Dinosaur chassis heavily blocked the stronghold crossings, physically repelling mid-range approach.
+
+### From Capture to Unit
+
+A captured chassis passes through four steps before it becomes a faction unit. Each step can be done only by certain factions.
+
+| Step | Work | Who can do it |
+|---|---|---|
+| 1. Capture | Take the chassis intact with people, nets and recoilless guns | All three factions |
+| 2. Repair | Fix the broken hardware and replace parts | Government (depots), Free Cities (maintenance engineers) |
+| 3. Signal check and wake-up | Implant a control module and wake the chassis with an Arc signature | Arc |
+| 4. Thought control | A pilot who has had neural-link surgery drives the chassis by thought | Free Cities (doctors) |
+
+The Government does steps 1 and 2 alone and needs an Arc license for step 3. The Arc can do only steps 1 and 3, so chassis it cannot repair dwindle with use. The Free Cities can do steps 1, 2 and 4, but without an Arc signature the chassis responds slowly. No faction can build a new chassis, so a lost one has to be caught again. Machines left behind after a raid is driven off become salvage stock, so a raid is both a threat and a chance to unlock something. Faction units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
 
 <a id="연결"></a>
 <a id="출처"></a>
@@ -42924,6 +43381,8 @@ These armed recovery squads competed in performance by occupying restart trigger
 - [The operating houses](/wiki/Operating-Houses/)
 - [The three factions of Seoul](/wiki/Sixteen-States/)
 - [The arms and technology of this era](/wiki/Era-Arms-and-Tech-Level/)
+- [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/)
+- [The Cost Structure of the Three Factions](/wiki/Cost-Structure/)
 - [The Scenario Timeline](/wiki/Scenario-Timeline/)
 - [Horizon Forbidden West](https://www.playstation.com/en-us/games/horizon-forbidden-west/)
 
@@ -43030,7 +43489,7 @@ The people of machine tending, circulation practice, and old-world symbol keepin
 <a id="개요-p4"></a>
 <a id="개요-p2"></a>
 
-최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했고, 겨울을 내렸다. AI가 직접 죽인 사람은 없다. 겨울이 닥치자 사람들은 지하철역으로 들어갔고, 역이 품을 수 있는 만큼만 살아남았다. 서울 밖에는 대정전 때의 전쟁 기계들이 마지막 명령을 수행하며 돌아다닌다. 지휘와 통제가 약해진 기계들은 작은 무리로 돌아다녔고, 사람들은 이들을 상대할 수 있게 되었다.
+최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했고, 겨울을 내렸다. AI가 직접 죽인 사람은 없다. 겨울이 닥치자 사람들은 지하철역으로 들어갔고, 역이 품을 수 있는 만큼만 살아남았다. 서울 밖에는 대정전 때의 전쟁 기계들이 마지막 명령을 수행하며 돌아다닌다. 지휘와 통제가 약해진 기계들은 작은 무리로 돌아다녔고, 사람들은 이들을 상대할 수 있게 되었다. AI는 세 세력의 공동의 적이 아니다. 떠도는 기계는 습격처럼 덮치는 재해이면서, 잡아서 고치고 깨우면 세력의 병종이 되는 자원이다.
 
 <a id="앎-보유-수리-제조-table2"></a>
 <a id="앎-보유-수리-제조"></a>
@@ -43041,7 +43500,7 @@ The people of machine tending, circulation practice, and old-world symbol keepin
 
 기체·모듈·카드를 물리적으로 보유하는 일과 기술을 아는 일은 별개다. 해체 모듈과 정지된 기체, 거점 창고는 남아 있다. 공방 기술자는 규격 부품으로 유압 호스와 단자, 발광 렌즈 같은 부위를 교체해 가진 것을 다시 움직이게 한다. 그러나 신경망 가중치 전체나 파손된 고밀도 셀의 내부를 재구성하는 일은 흔히 할 수 없다.
 
-생업 공구와 함정, 조건부 장비의 일부는 새로 조립할 수 있다. 그러나 라인 완제품과 셀 양산, 상위 인가 서버는 흔히 남아 있지 않다. 남은 인가 소프트웨어는 아크가 폐역 데이터센터에서 독점한다. 기술이 로스트 상태에 있다는 말은 제조와 인가, 보급망이 단절되었다는 뜻에 가깝다.
+생업 공구와 함정, 조건부 장비의 일부는 새로 조립할 수 있다. 그러나 라인 완제품과 셀 양산, 상위 인가 서버는 흔히 남아 있지 않다. 남은 인가 소프트웨어는 아크가 독점한다. 아크는 고대 데이터센터의 소프트웨어를 쥐고 있다. 기술이 로스트 상태에 있다는 말은 제조와 인가, 보급망이 단절되었다는 뜻에 가깝다.
 
 <a id="생물모방-설계의-세-가지-핵심-축"></a>
 <a id="생물모방-설계의-세-가지-중심-축"></a>
@@ -43130,7 +43589,7 @@ G26 철공룡은 공룡형 골격을 가진 라인으로 중장비 이동과 구
 
 <a id="프로토콜-접속과-카드"></a>
 
-기계 제어반에는 유무선 프로토콜 접속 표준이 있고, 협상 창과 프로토콜 카드가 쓰인다. 프로토콜 카드가 모든 기체를 제어하는 것은 아니다. 아크 소프트웨어가 서명한 카드만 상위 기능을 연다. 다른 카드는 켜고 끄는 기초 기능까지만 된다. 탐사원의 카드는 아크가 내준 것이다.
+기계 제어반에는 유무선 프로토콜 접속 표준이 있고, 협상 창과 프로토콜 카드가 쓰인다. 프로토콜 카드가 모든 기체를 제어하는 것은 아니다. 아크 소프트웨어가 서명한 카드만 상위 기능을 연다. 다른 카드는 켜고 끄는 기초 기능까지만 된다. 탐사원의 카드는 아크가 내준 것이다. 서명한 카드는 아크가 남에게 빌려주는 라이선스의 실물이다. 카드를 받은 쪽은 기체를 온전히 쓰지만, 아크가 같은 서명으로 그 기체를 끌 수 있다는 것도 함께 받는다. 아크가 한 번 끄면 상대는 다음 계약을 꺼리고 아크 소프트웨어를 걷어 낼 궁리를 한다.
 
 <a id="회수-반과-가문의-경합-p3"></a>
 <a id="m040-몬스터-배치의-현장-적용-p1"></a>
@@ -43138,6 +43597,19 @@ G26 철공룡은 공룡형 골격을 가진 라인으로 중장비 이동과 구
 <a id="m040-몬스터-배치의-현장-적용"></a>
 
 무장 회수 반은 남보다 먼저 재기동 개시점을 점거해 온전한 기체를 포획한다. 즉시 무력화한 뒤 주요 모듈을 해체하기도 한다. M040 군집은 지정된 봉인 관로에서 개시점이 작동하는 순간 순차적으로 모습을 드러낸다. G25 등불개미는 통로 앞쪽에 수색 전열을 넓게 펴 침입자 반응을 미세하게 검출한다. G26 철공룡은 거점 교차로를 막고 중거리 접근을 물리적으로 튕겨낸다.
+
+### 포획에서 병종까지
+
+잡은 기체가 세력의 병종이 되려면 네 단계를 거친다. 단계마다 그 일을 할 수 있는 세력이 다르다.
+
+| 단계 | 하는 일 | 할 수 있는 세력 |
+|---|---|---|
+| 1. 포획 | 사람과 그물, 무반동포로 기체를 산 채로 붙잡는다 | 세 세력 모두 |
+| 2. 정비 | 부서진 하드웨어를 고치고 부품을 갈아 끼운다 | 정부(정비창), 자유도시(정비 공병) |
+| 3. 신호 확인과 켜기 | 제어 모듈을 이식하고 아크 서명으로 기체를 깨운다 | 아크 |
+| 4. 생각 조종 | 신경 연결 수술을 받은 조종사가 기체를 생각으로 몬다 | 자유도시(의사) |
+
+정부는 1·2단계를 혼자 하고, 3단계는 아크의 라이선스를 받아야 한다. 아크는 1·3단계만 할 수 있어서 고치지 못한 기체가 쓸수록 줄어든다. 자유도시는 1·2·4단계를 할 수 있지만 아크 서명이 없으면 기체의 반응이 늦다. 어느 세력도 기체를 새로 만들지 못하므로, 잃은 기체는 다시 잡아야 한다. 습격을 물리친 뒤 남은 기체가 회수 재고가 되므로 습격은 위협이면서 해금의 기회다. 세력별 병종과 해금 조건은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
 
 <a id="연결"></a>
 <a id="출처"></a>
@@ -43152,6 +43624,8 @@ G26 철공룡은 공룡형 골격을 가진 라인으로 중장비 이동과 구
 - [운영가문](/wiki/Operating-Houses/)
 - [서울의 세 세력](/wiki/Sixteen-States/)
 - [이 시대의 기술과 무구](/wiki/Era-Arms-and-Tech-Level/)
+- [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)
+- [세 세력의 비용 구조](/wiki/Cost-Structure/)
 - [연표](/wiki/Scenario-Timeline/)
 - [Horizon Forbidden West](https://www.playstation.com/en-us/games/horizon-forbidden-west/)
 
@@ -43252,186 +43726,267 @@ G25 축전 모듈은 한 계열에서는 변전 설비의 핵심이다. 다른 �
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Offices-and-Ranks', 'Offices and Ranks', '관직', 'offices', 0, '## Origins of the Titles
 
-The Great Blackout happened about a hundred years ago, around 2026. People live in the subway stations, and only as many survived as the stations could hold.
+People live in subway stations, and only as many survived as the stations could hold. So in Seoul in 2126, the unit of power is the station. Here a station means a subway station together with the fortified ground area above it. The person who holds a station is its stationmaster, and how many stationmasters a person commands is that person''s rank.
 
-With communications cut, each shelter chose a leader. At first leaders were elected, but the posts soon became hereditary. Without infrastructure the population could not grow, so people had their children take over the work they had been doing. That custom hardened a vertical class structure.
+Scarcity made children take up their parents'' work, and that produced a hardened vertical hierarchy. Families that hold a station hand down the station. Families that hold no station hand down the floor they live on.
 
-## The Three Factions and the Twenty-Five Duchies
+## The Shared Rank Skeleton
 
-Seoul has only three factions: the Government, the Free City, and the Arc. Each district is one duchy, and the twenty-five duchies divide into 14 for the Government, 7 for the Free City, and 4 for the Arc. Place names and stations stay as they are. Only the political ownership above them is split among the factions.
+The Government, the Arc, and the Free City use the same skeleton. Only the name of each rung differs.
 
-| No. | District | Faction | Duchy holder |
+| Stationmasters below | Government | Arc | Free City |
 |---|---|---|---|
-| 1 | Mapo-gu | Government | Senator |
-| 2 | Yongsan-gu | Government | Senator |
-| 3 | Jung-gu | Government | Senator |
-| 4 | Seongdong-gu | Government | Senator |
-| 5 | Gwangjin-gu | Government | Senator |
-| 6 | Dongdaemun-gu | Government | Senator |
-| 7 | Jungnang-gu | Government | Senator |
-| 8 | Seongbuk-gu | Government | Senator |
-| 9 | Jongno-gu | Government | Senator |
-| 10 | Seodaemun-gu | Government | Senator |
-| 11 | Eunpyeong-gu | Government | Senator |
-| 12 | Gangbuk-gu | Government | Senator |
-| 13 | Dobong-gu | Government | Senator |
-| 14 | Nowon-gu | Government | Senator |
-| 15 | Gangseo-gu | Free City | not recorded |
-| 16 | Yangcheon-gu | Free City | not recorded |
-| 17 | Yeongdeungpo-gu | Free City | not recorded |
-| 18 | Guro-gu | Free City | not recorded |
-| 19 | Geumcheon-gu | Free City | not recorded |
-| 20 | Dongjak-gu | Free City | not recorded |
-| 21 | Gwanak-gu | Free City | I Ilseop, Duke of Gwanak |
-| 22 | Seocho-gu | Arc | not recorded |
-| 23 | Gangnam-gu | Arc | not recorded |
-| 24 | Songpa-gu | Arc | not recorded |
-| 25 | Gangdong-gu | Arc | not recorded |
+| 1 (holds one station) | Stationmaster | Stationmaster | Stationmaster |
+| 2 to 4 | Division Chief | Division Chief | Division Chief |
+| 5 to 9 | Bureau Chief | Bishop | Guild Master |
+| 10 or more | Commissioner | Cardinal | Director |
+| Head | President | Hierophant | Chair of the Board |
 
-## The Government: Three Powers on Paper
+At the top in the winter of 2126 stand President Kim Yeongyu of the Government, Hierophant Go Ye-jin of the Arc, and Chair of the Board I Ilseop of the Free City.
 
-The Government rules the 14 districts north of the Han River. On paper it keeps ministries representing the three branches of the Republic of Korea and a multiparty system. In practice there are only two parties, the OMO Party and the Claw Party. The reality is modern feudalism.
+## How Stationmasters Are Counted
 
-The Government north of the river still holds elections. Every one of them produces the same answer, and people call that democracy. What each ministry actually does is not known.
+- A person who holds one station is a stationmaster. A station here includes both the subway station and the fortified ground area above it.
+- Every rung above that counts the **total** number of stationmasters below. How many division chiefs a person commands does not matter. Someone who commands three division chiefs with nine stationmasters between them is not on the ten-stationmaster rung.
+- Losing a station lowers the count of stationmasters below, and the rank falls with it. Gaining a station raises it. The ten-stationmaster rung, however, cannot be reached by numbers alone.
 
-## The Government: Senators and Duchies
+## The Ten-Stationmaster Rung Is Appointed
 
-The National Assembly member elected in each district holds that district''s duchy. The title of these holders is Senator. The Government has 14 duchies, and each Senator holds one district. A Senator''s term and the way the seat passes on are not recorded.
+Commanding more than ten stationmasters does not by itself make a person a commissioner, a cardinal, or a director. The ten-stationmaster rung is filled by appointment.
 
-## The Government: The President for Life
+| Faction | Ten-stationmaster rung | Appointed by | Method |
+|---|---|---|---|
+| Government | Commissioner | The President | Appointment |
+| Arc | Cardinal | The Hierophant | Ordination |
+| Free City | Director | The Board | Appointment |
 
-The Senators gather candidates from among themselves and produce the President. The President serves for life. The method can be compared to the prince-electors who chose the emperor of the Holy Roman Empire. How a successor is chosen when the presidency falls vacant is not known.
+Some people qualify and are never appointed. Such a person commands ten or more stationmasters and still holds the title of the rung below. This becomes a seed of conflict inside the faction.
 
-## The Government: The Ledger and Its Citizens
+## Informal Standing Among Division Chiefs
 
-Since the collapse, the Government recognizes as citizens only the people recorded in its own ledger. These citizens are serfs in all but name. People carry on the work their parents did, and that is how vertical classes formed.
+Division chiefs are many and share one title. So among them there is an informal order apart from the official title. It is set by two things.
 
-The Government treats the entire south bank of the Han as barbarian land beyond a wall. People north of the river think of the far bank as a place where barbarians live.
+1. The number of stationmasters commanded. A division chief with four stands above one with two.
+2. The value of the stations commanded. When the numbers are equal, the one with more valuable stations stands higher.
 
-## The Free City: Cities Without a King
+## The Value of a Station
 
-The Free City lies in the 7 districts southwest of the Han. It isn''t a single power. Like the poleis of ancient Greece, it is a set of independent city-states. Each city is its own power and holds its own duchy. There is no king.
+| Measure | Higher | Lower |
+|---|---|---|
+| Transfer lines | A transfer station with many lines | A station on a single line |
+| Depth | A station with deep platforms | A station with shallow platforms |
+| Surface or underground | An underground station | A surface station whose platforms sit above ground |
 
-Most residents are skilled hands who live by their work. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. The Free City''s weapons are people and food, and its doctors let it hold out longest. There was no way to judge whose skills were greater, so they never chose a leader. In 2126 these cities are called the Union as a group.
+The master of a surface station is the lowest of all stationmasters. A surface station has no deep level to close off with shutters, and it lies open to cold, wind, and attack from the air. Why deep stations are valuable is explained in [Residence Layers and Class](/wiki/Residence-Layers-and-Class/).
 
-## The Free City: The Duke of Gwanak
+## Government Titles
 
-I Ilseop is the Duke of Gwanak and holds the duchy of Gwanak-gu. Gwanak is one of the Free City''s seven duchies. The holders of the other six cities and their titles are not recorded.
+| Title | Stationmasters below | How it is reached |
+|---|---|---|
+| Stationmaster | 1 | Holding a station |
+| Division Chief | 2 to 4 | Number of stationmasters commanded |
+| Bureau Chief | 5 to 9 | Number of stationmasters commanded |
+| Commissioner | 10 or more | Appointed by the President |
+| President | Head | Kim Yeongyu |
 
-## The Arc: Clan Government
+On paper, the Government keeps the ministries and elections of the Republic of Korea. The northern Government still holds elections. Every time, the same answer comes out. The President serves for life. The real order of rank follows the table above, by the number of stationmasters commanded.
 
-The Arc lies in the 4 Gangnam districts: Seocho-gu, Gangnam-gu, Songpa-gu, and Gangdong-gu. It split off from the Free City. It is ruled by Shia-style clan government.
+## Arc Titles
 
-Believers replace parts of their bodies with machines. This is baptism. In the Arc, faith is counted by the number of implanted body parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. The Arc replaced every earlier religion.
+| Title | Stationmasters below | How it is reached |
+|---|---|---|
+| Stationmaster | 1 | Holding a station |
+| Division Chief | 2 to 4 | Number of stationmasters commanded |
+| Bishop | 5 to 9 | Number of stationmasters commanded |
+| Cardinal | 10 or more | Ordained by the Hierophant |
+| Hierophant | Head | Go Ye-jin |
 
-## The Arc: The Hierophant
+The faithful call the Hierophant the Messiah. In the Arc, faith is counted by the number of implanted parts. Rank, however, is set by the number of stationmasters commanded, not by the number of parts.
 
-Go Ye-jin is the Hierophant of the Arc. Believers call her the Messiah. Go Ye-jin grew up in the Free City.
+## Free City Titles
+
+| Title | Stationmasters below | How it is reached |
+|---|---|---|
+| Stationmaster | 1 | Holding a station |
+| Division Chief | 2 to 4 | Number of stationmasters commanded |
+| Guild Master | 5 to 9 | Number of stationmasters commanded |
+| Director | 10 or more | Appointed by the Board |
+| Chair of the Board | Head | I Ilseop. The I family holds it from generation to generation |
+
+The people of the Free City hold that refusing to be ruled is freedom. So by rank, I Ilseop and his family are directors like any other. But because people want the I family to lead them, and because the I family does in fact act as their leader, the I family holds the office of Chair of the Board generation after generation. Details are in "The Contradiction of the Free City" in [The Three Factions of Seoul](/wiki/Sixteen-States/).
+
+## Ranks in Functional Bodies
+
+Apart from station rank, bodies that carry out particular work have their own ranks.
+
+| Body | Faction | Ranks |
+|---|---|---|
+| Officer corps | Government | Military ranks. The officer class exists only in the Government |
+| White Cross Corps | Government | Head of corps, first-aid worker, transport worker. A first-aid and transport body with no doctors |
+| Dongbangsa | Arc | The Arc''s hereditary rifle guard. Its commander is Bae Ujin |
+| Arc priests | Arc | Who they are is undecided |
+
+Why doctors and officers are found in only one faction each is undecided.
+
+## People Without a Station
+
+Everyone who does not hold a station is a commoner. Commoners have no rank title, and the floor they live on is their standing. The highest place among commoners belongs to those who live on the ground floor. Above ground, the higher the floor, the lower the standing. Details are in [Residence Layers and Class](/wiki/Residence-Layers-and-Class/).
+
+## People Who Go Over to Another Faction
+
+Rank holds only inside its own faction. Whatever rank a person held at home, going over to another faction means losing their assets and territory and becoming one of the lowest class. The faction that takes them uses their skill but never raises their standing. Details are in [Human Resource Movement](/wiki/Human-Resource-Movement/).
 
 ## Table of Common Titles
 
-| Faction | Duchy level | Head of faction |
-|---|---|---|
-| Government | Senator | President for Life |
-| Free City | Duke of Gwanak (I Ilseop). Other cities not recorded | None |
-| Arc | not recorded | Hierophant |
+| Rung | Government | Arc | Free City |
+|---|---|---|---|
+| 1 | Stationmaster | Stationmaster | Stationmaster |
+| 2 to 4 | Division Chief | Division Chief | Division Chief |
+| 5 to 9 | Bureau Chief | Bishop | Guild Master |
+| 10 or more | Commissioner | Cardinal | Director |
+| Head | President | Hierophant | Chair of the Board |
 
-## Succession
-
-A Government Senator is decided by the district''s election, and the President is produced by the Senators from among themselves. The President serves for life. Work passes from parents to children. How Free City duchies pass on and how the Hierophant''s seat passes on are not known.
+The common body of the Free City is called the Board.
 ', '## 직함의 기원
 
-대정전은 백 년쯤 전, 약 2026년의 일이다. 사람들은 지하철역에 살고, 역이 품을 수 있는 만큼만 살아남았다.
+사람들은 지하철역에 살고, 역이 품을 수 있는 만큼만 살아남았다. 그래서 2126년 서울에서 권력의 단위는 역이다. 여기서 역은 지하철역과 그 위의 지상 성채 영역을 함께 뜻한다. 역을 가진 사람이 역장이고, 역장을 몇 명 거느렸는지가 그 사람의 계급이다.
 
-통신이 끊긴 대피소마다 지도자를 뽑았다. 처음에는 투표로 뽑았으나 곧 세습이 되었다. 인프라가 없어 인구가 늘지 않았고, 그래서 하던 일을 자식에게 물려주게 했다. 이 관행이 수직 계층을 굳혔다.
+결핍 때문에 자식이 부모의 일을 이어 하게 됐고, 그래서 굳은 수직 계층이 생겼다. 역을 가진 집안은 역을 물려주고, 역을 갖지 못한 집안은 사는 층을 물려준다.
 
-## 세 세력과 스물다섯 공작령
+## 세 세력 공통의 계급 골격
 
-서울의 세력은 정부, 자유도시, 아크 셋뿐이다. 구 하나가 공작령 하나이며, 스물다섯 공작령은 정부 14, 자유도시 7, 아크 4로 나뉜다. 지명과 역은 그대로이고 그 위의 정치적 소유가 세력별로 갈린다.
+정부, 아크, 자유도시들은 같은 골격을 쓴다. 단계마다 이름만 다르다.
 
-| 번호 | 구 | 세력 | 공작령 보유자 |
+| 산하 역장 수 | 정부 | 아크 | 자유도시들 |
 |---|---|---|---|
-| 1 | 마포구 | 정부 | 상원의원 |
-| 2 | 용산구 | 정부 | 상원의원 |
-| 3 | 중구 | 정부 | 상원의원 |
-| 4 | 성동구 | 정부 | 상원의원 |
-| 5 | 광진구 | 정부 | 상원의원 |
-| 6 | 동대문구 | 정부 | 상원의원 |
-| 7 | 중랑구 | 정부 | 상원의원 |
-| 8 | 성북구 | 정부 | 상원의원 |
-| 9 | 종로구 | 정부 | 상원의원 |
-| 10 | 서대문구 | 정부 | 상원의원 |
-| 11 | 은평구 | 정부 | 상원의원 |
-| 12 | 강북구 | 정부 | 상원의원 |
-| 13 | 도봉구 | 정부 | 상원의원 |
-| 14 | 노원구 | 정부 | 상원의원 |
-| 15 | 강서구 | 자유도시 | 기록되지 않음 |
-| 16 | 양천구 | 자유도시 | 기록되지 않음 |
-| 17 | 영등포구 | 자유도시 | 기록되지 않음 |
-| 18 | 구로구 | 자유도시 | 기록되지 않음 |
-| 19 | 금천구 | 자유도시 | 기록되지 않음 |
-| 20 | 동작구 | 자유도시 | 기록되지 않음 |
-| 21 | 관악구 | 자유도시 | 이일섭, 관악 공작 |
-| 22 | 서초구 | 아크 | 기록되지 않음 |
-| 23 | 강남구 | 아크 | 기록되지 않음 |
-| 24 | 송파구 | 아크 | 기록되지 않음 |
-| 25 | 강동구 | 아크 | 기록되지 않음 |
+| 1 (역 1개 소유) | 역장 | 역장 | 역장 |
+| 2~4 | 본부장 | 본부장 | 본부장 |
+| 5~9 | 국장 | 주교 | 조합장 |
+| 10 이상 | 청장 | 추기경 | 이사 |
+| 최상단 | 대통령 | 교주 | 이사회장 |
 
-## 정부: 서류 위의 삼권
+2126년 겨울의 최상단은 정부 대통령 김연규, 아크 교주 고예진, 자유도시들 이사회장 이일섭이다.
 
-정부는 한강 북쪽 14구를 다스린다. 서류상으로는 대한민국의 삼권을 대표하는 부처와 다당제를 유지한다. 실제 정당은 OMO당과 클로당 둘뿐이다. 실상은 현대 봉건제다.
+## 산하 역장을 세는 법
 
-강북 정부는 지금도 선거를 한다. 매번 같은 답이 나오고, 사람들은 그것을 민주주의라고 부른다. 각 부처가 실제로 어떤 일을 맡는지는 알려져 있지 않다.
+- 역 하나를 가진 사람은 역장이다. 여기서 역은 지하철역과 그 위의 지상 성채 영역을 모두 포함한다.
+- 그 위의 단계는 산하 역장의 **합계**로 센다. 본부장을 몇 명 거느렸는지는 따지지 않는다. 본부장 셋을 거느려도 그 아래 역장이 모두 아홉이면 열 명 단계가 아니다.
+- 역을 잃으면 산하 역장 수가 줄고, 그만큼 계급이 내려간다. 역을 얻으면 올라간다. 다만 열 명 단계는 수만으로 오르지 못한다.
 
-## 정부: 상원의원과 공작령
+## 열 명 단계는 임명한다
 
-각 구에서 뽑힌 국회의원이 그 구의 공작령을 쥔다. 이들의 칭호는 상원의원이다. 정부의 공작령은 14개이고, 상원의원 한 사람이 구 하나를 쥔다. 상원의원의 임기와 자리를 잇는 방식은 기록되지 않았다.
+산하 역장이 열 명을 넘어도 저절로 청장, 추기경, 이사가 되지 않는다. 열 명 단계는 임명제다.
 
-## 정부: 종신 대통령
+| 세력 | 열 명 단계 | 임명하는 쪽 | 방식 |
+|---|---|---|---|
+| 정부 | 청장 | 대통령 | 임명 |
+| 아크 | 추기경 | 교주 | 서품 |
+| 자유도시들 | 이사 | 이사회 | 임명 |
 
-상원의원들이 상원의원 가운데서 후보를 모아 대통령을 낸다. 대통령은 종신이다. 이 방식은 신성로마제국의 선제후가 황제를 뽑던 방식에 견줄 수 있다. 대통령이 자리를 비울 때 어떻게 후임을 뽑는지는 알려져 있지 않다.
+자격을 갖추고도 임명받지 못한 사람이 생긴다. 그런 사람은 역장 열 명 이상을 거느리고도 아홉 명 단계의 칭호에 머문다. 이것이 세력 안 갈등의 씨앗이 된다.
 
-## 정부: 장부와 국민
+## 본부장 사이의 비공식 급
 
-붕괴 뒤로 정부는 자기 장부에 기록된 사람만 국민으로 인정한다. 이 국민은 사실상 농노다. 사람들은 부모가 하던 일을 이어 하고, 그래서 수직 계층이 생겼다.
+본부장은 수가 많고 칭호가 같다. 그래서 본부장 사이에는 공식 칭호와 따로 비공식 급이 있다. 이 급은 두 가지로 정해진다.
 
-정부는 한강 남쪽 전체를 장벽 너머의 야만인 땅처럼 대한다. 강북 사람들은 강 건너를 야만인들이 사는 곳으로 여긴다.
+1. 거느린 역장의 수. 넷을 거느린 본부장이 둘을 거느린 본부장보다 위다.
+2. 거느린 역의 가치. 수가 같으면 더 값진 역을 거느린 쪽이 위다.
 
-## 자유도시: 왕 없는 도시들
+## 역의 가치
 
-자유도시는 한강 남서쪽 7구에 있다. 하나의 권력이 아니라 고대 그리스의 폴리스처럼 독립한 도시국가들이다. 도시마다 각자 권력이고 각자 공작령을 쥔다. 왕은 없다.
+| 기준 | 높다 | 낮다 |
+|---|---|---|
+| 환승 노선 | 노선이 많은 환승역 | 노선 하나뿐인 역 |
+| 깊이 | 승강장이 깊은 역 | 승강장이 얕은 역 |
+| 지상 여부 | 지하역 | 승강장이 땅 위에 있는 지상역 |
 
-주민 대부분은 손으로 먹고사는 기술자다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 누구 기술이 더 높은지 따질 방법이 없어서 지도자를 뽑지 못했다. 2126년 현재 이 도시들을 묶어 유니온이라고 부른다.
+지상역의 역장은 역장 가운데 가장 낮다. 지상역에는 셔터로 막을 깊은 층이 없고, 추위와 바람과 공중 공격에 그대로 드러나기 때문이다. 깊은 역이 왜 값진지는 [거주 층위와 신분](/wiki/Residence-Layers-and-Class/)에 있다.
 
-## 자유도시: 관악 공작
+## 정부의 직함
 
-이일섭은 관악 공작이며 관악구 공작령을 쥔다. 관악은 자유도시 일곱 공작령 가운데 하나다. 다른 여섯 도시의 보유자와 그 칭호는 기록되지 않았다.
+| 직함 | 산하 역장 | 오르는 길 |
+|---|---|---|
+| 역장 | 1 | 역을 가진다 |
+| 본부장 | 2~4 | 거느린 역장 수 |
+| 국장 | 5~9 | 거느린 역장 수 |
+| 청장 | 10 이상 | 대통령이 임명한다 |
+| 대통령 | 최상단 | 김연규 |
 
-## 아크: 가문 통치
+정부는 서류상 대한민국의 부처와 선거를 유지한다. 강북 정부는 지금도 선거를 한다. 매번 같은 답이 나온다. 대통령은 종신이다. 실제 서열은 위 표대로 거느린 역장의 수로 정해진다.
 
-아크는 강남 4구, 곧 서초구, 강남구, 송파구, 강동구에 있다. 자유도시에서 갈라져 나왔다. 통치는 시아파식 가문 통치다.
+## 아크의 직함
 
-신도는 몸의 부위를 기계로 바꾼다. 이것이 세례다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다. 아크는 이전의 모든 종교를 대체했다.
+| 직함 | 산하 역장 | 오르는 길 |
+|---|---|---|
+| 역장 | 1 | 역을 가진다 |
+| 본부장 | 2~4 | 거느린 역장 수 |
+| 주교 | 5~9 | 거느린 역장 수 |
+| 추기경 | 10 이상 | 교주가 서품한다 |
+| 교주 | 최상단 | 고예진 |
 
-## 아크: 교주
+신도들은 교주를 메시아라고 부른다. 아크에서는 신앙을 이식한 부위 수로 센다. 그러나 계급은 부위 수가 아니라 거느린 역장의 수로 정해진다.
 
-고예진이 아크의 교주다. 신도들은 그를 메시아라고 부른다. 고예진은 자유도시에서 자랐다.
+## 자유도시들의 직함
+
+| 직함 | 산하 역장 | 오르는 길 |
+|---|---|---|
+| 역장 | 1 | 역을 가진다 |
+| 본부장 | 2~4 | 거느린 역장 수 |
+| 조합장 | 5~9 | 거느린 역장 수 |
+| 이사 | 10 이상 | 이사회가 임명한다 |
+| 이사회장 | 최상단 | 이일섭. 이씨 가문이 대대로 맡는다 |
+
+자유도시 사람들은 지배를 거부하는 것을 자유라고 여긴다. 그래서 계급상 이일섭과 그 가문도 다른 이사와 같은 이사다. 그러나 사람들이 이씨 가문이 자기들을 이끌어 주기를 바라고, 이씨 가문이 실제로 지도자 노릇을 하므로 이씨 가문이 대대로 이사회장을 맡는다. 자세한 내용은 [서울의 세 세력](/wiki/Sixteen-States/)의 ''자유도시의 모순''에 있다.
+
+## 기능 조직의 직제
+
+역의 계급과 따로, 일을 맡은 조직에는 그 조직의 직제가 있다.
+
+| 조직 | 세력 | 직제 |
+|---|---|---|
+| 장교단 | 정부 | 군 계급. 장교층은 정부에만 있다 |
+| 흰십자단 | 정부 | 단장, 응급처치원, 이송원. 의사가 없는 응급 처치·이송 조직이다 |
+| 동방사 | 아크 | 아크의 세습 소총 근위대. 사령관은 배우진이다 |
+| 아크 사제 | 아크 | 인선은 미정이다 |
+
+의사와 장교가 왜 한쪽 세력에만 있는지는 미정이다.
+
+## 역을 갖지 못한 사람
+
+역을 갖지 못한 사람은 모두 일반 시민이다. 시민에게는 계급 칭호가 없고, 사는 층이 곧 신분이다. 시민 가운데 가장 높은 자리는 지층, 곧 지상 1층에 사는 사람이다. 지상은 높은 층일수록 낮다. 자세한 내용은 [거주 층위와 신분](/wiki/Residence-Layers-and-Class/)에 있다.
+
+## 다른 세력으로 넘어간 사람
+
+계급은 그 세력 안에서만 통한다. 본진에서 어떤 계급이었든 다른 세력으로 넘어가면 가진 자산과 영토를 빼앗기고 최하층민이 된다. 받아 간 세력은 그 사람의 기술은 쓰지만 신분은 올려 주지 않는다. 자세한 내용은 [인적자원 이동](/wiki/Human-Resource-Movement/)에 있다.
 
 ## 통용 칭호 대조표
 
-| 세력 | 공작령 단위 | 세력 수장 |
+| 단계 | 한국어 | English |
 |---|---|---|
-| 정부 | 상원의원 | 종신 대통령 |
-| 자유도시 | 관악 공작(이일섭). 다른 도시는 기록되지 않음 | 없음 |
-| 아크 | 기록되지 않음 | 교주 |
-
-## 계승
-
-정부의 상원의원은 그 구의 선거로 정해지고, 대통령은 상원의원들이 자기들 가운데서 낸다. 대통령은 종신이다. 생업은 부모에서 자식으로 이어진다. 자유도시 공작령의 승계 방식과 교주 자리를 잇는 순서는 알려져 있지 않다.
+| 1 | 역장 | Stationmaster |
+| 2~4 | 본부장 | Division Chief |
+| 5~9 (정부) | 국장 | Bureau Chief |
+| 5~9 (아크) | 주교 | Bishop |
+| 5~9 (자유도시들) | 조합장 | Guild Master |
+| 10 이상 (정부) | 청장 | Commissioner |
+| 10 이상 (아크) | 추기경 | Cardinal |
+| 10 이상 (자유도시들) | 이사 | Director |
+| 최상단 (정부) | 대통령 | President |
+| 최상단 (아크) | 교주 | Hierophant |
+| 최상단 (자유도시들) | 이사회장 | Chair of the Board |
+| 자유도시들의 공동 기구 | 이사회 | the Board |
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Operating-Houses', 'Operating Organizations', '운영 조직', 'factions', 3, '<a id="Operating-Houses-heading-0001"></a>
 
 Corporate successor organizations and civic and trade organizations ran a range of infrastructure, including water supply, logistics, and records. The work each organization handled and the factions it was tied to varied with its contracts and facilities.
+
+## Where the Organizations Stand
+
+The operating organizations are not a fourth faction. In the winter of 2126, Seoul has only three factions, the Government, the Free City, and the Arc, and the organizations look after facilities and keys within them.
+
+- **Membership and rank.** The person who leads an organization belongs to the faction they live in. If that person holds a station, they hold the rank of stationmaster or higher according to the number of stationmasters they command. If they hold no station, they are a commoner. The rank table is in [Offices and Ranks](/wiki/Offices-and-Ranks/).
+- **Linked factions.** The "linked factions and districts" below are the places an organization exchanges goods and work with. They do not mean the organization belongs to those factions.
+- **People do not cross.** Even when an organization deals with several factions, its people do not move across the borders, because a person who goes over to another faction loses their assets and territory and becomes one of the lowest class. That is why abduction and capture of an organization''s technicians, ransom negotiations, and family hostages are what the organizations fear most. Details are in [Human Resource Movement](/wiki/Human-Resource-Movement/).
 
 <a id="Operating-Houses-heading-0003"></a>
 
@@ -43781,7 +44336,7 @@ Even when the drawings are wrong, the site is squared up by the numbers.
 
 In the Yeouido contract vault and the Suseo arbitration room, the Yeouido Ledger House guards its dual-signature ledgers.
 
-Jang Pil-gyu will not execute a water-supply contract if even one signature is missing.
+Jang Pil-gyu will not execute a contract if even one signature is missing.
 
 Faced with the Records Office''s ratification delays, the House opens only joint inspections and never hands over the keys.
 
@@ -44292,6 +44847,14 @@ Even when the depot runs empty, the certification seal is never forged.
 
 법인 후계 조직과 시민·직능 조직은 급수·물류·기록 등 여러 기반을 운영했다. 각 조직이 맡은 일과 연결 세력은 계약과 시설에 따라 달랐다.
 
+## 운영 조직의 자리
+
+운영 조직은 넷째 세력이 아니다. 2126년 겨울 서울의 세력은 정부, 자유도시들, 아크 셋뿐이고, 운영 조직은 그 안에서 시설과 열쇠를 맡는다.
+
+- **소속과 계급.** 조직을 이끄는 사람은 자기가 사는 세력의 사람이다. 그 사람이 역을 가졌으면 거느린 역장 수에 따라 역장 이상의 계급을 갖고, 역이 없으면 일반 시민이다. 계급표는 [관직](/wiki/Offices-and-Ranks/)에 있다.
+- **연결 세력.** 아래의 ''연결 세력·구''는 조직이 물자와 일을 주고받는 곳이다. 그 세력에 소속된다는 뜻이 아니다.
+- **사람은 넘어가지 않는다.** 조직이 여러 세력과 거래해도 조직의 사람은 경계를 넘어 옮기지 않는다. 다른 세력으로 넘어간 사람은 자산과 영토를 빼앗기고 최하층민이 되기 때문이다. 그래서 조직의 기술자를 노리는 납치와 포획, 몸값 협상, 가족 인질이 조직이 가장 두려워하는 일이다. 자세한 내용은 [인적자원 이동](/wiki/Human-Resource-Movement/)에 있다.
+
 <a id="Operating-Houses-heading-0003"></a>
 
 ## HC01 · 여의도전산가
@@ -44640,7 +45203,7 @@ Even when the depot runs empty, the certification seal is never forged.
 
 여의도 계약고와 수서 중재실에서 여의도장부가가 이중서명 장부를 지킨다.
 
-장필규는 한 서명이 비면 급수 계약을 집행하지 않는다.
+장필규는 한 서명이 비면 계약을 집행하지 않는다.
 
 기록청의 인준 지연 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
 
@@ -45195,25 +45758,17 @@ From March 20, 2053, the Yeongdeungpo waterworks staff moved their base to Yangp
 
 ## Registers and Contracts
 
-A. Waterway contract
+A. Reconstruction worker register
 
-In June 2097 the Water Gate Bureau signed a contract with the waterway keepers of Yangpyeong and Chuncheon. In return for managing the Bureau''s waterways, both were entered in the Yangpyeong Station ration register.
+In the winter of 2120 Go Ye-jin''s following, later the Arc, demanded, in exchange for unlocking the pump control software, that the Free City register its restoration service personnel. Gang Minseo of the Free City entered the technicians who refused registration on the citizenship roll.
 
-B. Reconstruction worker register
-
-In the winter of 2120 Go Ye-jin''s following, later the Arc, demanded, in exchange for unlocking the pump control software, that the Standards League register its restoration service personnel. Gang Minseo of the Standards League entered the technicians who refused registration on the league''s citizenship roll.
-
-C. Refugee register
+B. Refugee register
 
 In 2123, a refugee procession from Bukhansan Bogukmun descended toward Anguk.
 
-D. Three contracts
+C. State ledger
 
-In 2123 the Water Gate Bureau, the Standards League, and the Transshipment Bureau sent separate contracts for water supply, parts, and passage to the pharmacies in the same week. Jeong Yura copied their end conditions into one document.
-
-E. State ledger
-
-In November 2125, the records office compiled a power-ranking ledger of the duchies of the three factions.
+In November 2125, the records office compiled a power-ranking ledger of the three factions, station by station.
 
 ## Sources
 
@@ -45270,25 +45825,17 @@ In November 2125, the records office compiled a power-ranking ledger of the duch
 
 ## 명부와 계약
 
-**가. 물길 계약**
+**가. 복구복무자 등록**
 
-2097년 6월 수문국은 양평과 춘천의 물길 관리 인원과 계약을 맺었다. 두 곳은 수문국의 물길 관리를 맡는 대가로 양평역 배급 명부에 등재되었다.
+2120년 겨울 뒷날 아크가 되는 고예진의 무리는 펌프 제어 소프트웨어를 풀어 주는 대가로 자유도시에 복구복무자 등록을 요구하였다. 자유도시의 강민서는 등록을 거부한 기술자들을 시민권 명부에 올렸다.
 
-**나. 복구복무자 등록**
-
-2120년 겨울 뒷날 아크가 되는 고예진의 무리는 펌프 제어 소프트웨어를 풀어 주는 대가로 규격맹에 복구복무자 등록을 요구하였다. 규격맹의 강민서는 등록을 거부한 기술자들을 규격맹 시민권 명부에 올렸다.
-
-**다. 피난민 명부**
+**나. 피난민 명부**
 
 2123년 북한산 보국문 방면 피난 행렬이 안국으로 내려왔다.
 
-**라. 세 계약서**
+**다. 강약 장부**
 
-2123년 수문국, 규격맹, 환적국이 서로 다른 급수·부품·통행 계약을 같은 주에 약국들에 보냈다. 정유라는 세 계약서의 종료조건만 한 문서로 옮겼다.
-
-**마. 강약 장부**
-
-2125년 11월 기록청은 세 세력의 공작령별 강약 장부를 작성하였다.
+2125년 11월 기록청은 세 세력의 역별 강약 장부를 작성하였다.
 
 ## 출처
 
@@ -45327,7 +45874,7 @@ The bodies that remained at the opening fell into two kinds: remnants standing w
 
 After the Great Blackout cut machines off from the upper control network, they repeated their last assigned search and guard tasks. Outside Seoul, the war machines used in the Great Blackout still roam, carrying out the last orders they received.
 
-At the opening, I Yeon is a biological synthetic humanoid in Jo Jaepyo''s company. The H01-H16 register instead records mechanical humanoids under house custody. Neither the kind of body alone grants nor denies personhood or citizenship. Each individual is assessed for expressed will, continuity of memory, and capacity to consent. A custody record can document maintenance and responsibility, but its transfer clause cannot govern someone recognized as a person. I Yeon records her own courier judgment under her name and refuses an order that would sacrifice civilians. No such individual determination is recorded for the H01-H16 actors.
+The H01-H16 register records mechanical humanoids under house custody. Neither the kind of body alone grants nor denies personhood or citizenship. Each individual is assessed for expressed will, continuity of memory, and capacity to consent. A custody record can document maintenance and responsibility, but its transfer clause cannot govern someone recognized as a person. No such individual determination is recorded for the H01-H16 actors.
 
 ## Repeating Machines
 
@@ -45335,7 +45882,7 @@ At the opening, I Yeon is a biological synthetic humanoid in Jo Jaepyo''s compan
 
 There were bodies that overlapped with the logistics humanoids but did not stand in the same line. They were machines that pre-collapse disaster agencies had meant to use for search, reinforcement, and pipe inspection, and when the upper control network fell away, they continued the search, guard, and transport routines they had last received, subject to their stored charge and access to charging terminals. Small swarms that glowed like lanterns, heavy machines that pushed rubble with hydraulics, and flat underwater shells were those three lines.
 
-The triggers for restart were voltage, water level, and authorization signals. Stations with attached depots such as Sinjeong, Gunja, and Godeok, water treatment with attached sluices such as Yeongdeungpo, Ttukseom, and Amsa, and the galleries of the deep tunnels provided that stage. When a scout thrust forward a protocol card signed and issued by the Arc, only that line, that trigger point, and that command bundle could be paused for a while; there was no universal control. An unsigned card reached only the basic on-and-off functions. The modules and the salvage economy are in [Lost Technology](/wiki/Lost-Technology-Lineage/).
+The triggers for restart were voltage, water level, and authorization signals. Stations with attached depots such as Sinjeong, Gunja, and Godeok, water treatment with attached sluices such as Yeongdeungpo, Ttukseom, and Amsa, and the galleries of the deep tunnels provided that stage. When a scout thrust forward a protocol card signed and issued by the Arc, only that line, that trigger point, and that command bundle could be paused for a while; there was no universal control. An unsigned card reached only the basic on-and-off functions. These machines are no faction''s enemy. To a person caught in their search or guard routine they are a hazard, but once captured, repaired and woken with an Arc signature they become a faction''s workers and units. The four steps of capture, repair, signal check and thought control are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/). The modules and the salvage economy are in [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
 Capacitor modules only used the charge already stored and could not replace generators; cells aged, and without charging terminals the repetition broke off too. A workshop repairing hydraulics did not make it look as if the fabs had returned.
 
@@ -45357,7 +45904,7 @@ Sweeping up the swarms with firearms was left as a last resort. Sealing, ration 
 |---|---|---|
 | People | Subway living spheres, military registers, trade sites | The three factions of station strongholds, paper registers, the seven trades |
 | Logistics humanoids | Atlas-class field trials, factory density at the front of the world | Stopped remnants and repeated transport, dismantled modules |
-| Disaster machines | Search, guard, and transport routines tied to the call network | Search and guard routines in sealed galleries stop when batteries fail or charging is lost. [Lost Technology](/wiki/Lost-Technology-Lineage/) |
+| Disaster machines | Search, guard, and transport routines tied to the call network | Search and guard routines in sealed galleries stop when batteries fail or charging is lost. Once captured they become salvage stock, and none can be newly built. [Lost Technology](/wiki/Lost-Technology-Lineage/) |
 | Raptors, feral dogs, rats | Han River birds, abandoned dogs, station rats | Colonies on the towers, the docks, and the transfer trays |
 
 ## Sources
@@ -45366,6 +45913,7 @@ Sweeping up the swarms with firearms was left as a last resort. Sealing, ration 
 - [Scenario Timeline](/wiki/Scenario-Timeline/)
 - [The Three Factions of Seoul](/wiki/Sixteen-States/)
 - [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/)
+- [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/)
 - [The Great Blackout](/wiki/World-Unbinding/)
 - [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/)
 ', '**가. 사람과 기체의 배치**
@@ -45394,7 +45942,7 @@ Sweeping up the swarms with firearms was left as a last resort. Sealing, ration 
 
 대정전 뒤 상위 제어망에서 끊어진 기체는 마지막으로 입력된 수색·경계 임무를 반복하였다. 서울 밖에는 대정전 때 쓰던 전쟁 기계가 마지막으로 받은 명령을 수행하며 아직 돌아다닌다.
 
-개막의 이연은 조재표 일행에 속한 생물학적 합성 휴머노이드다. H01-H16 장부에는 가문이 보관하는 기계형 휴머노이드가 따로 적혔다. 생체인지 기계인지에 따라 인격과 시민권을 일괄 인정하거나 배제하지 않는다. 당사자의 의사 표현, 기억의 연속성, 동의 능력을 각각 살핀다. 보관 기록은 정비와 책임의 근거로 남지만, 인격을 인정받은 사람에게 양도 조항을 적용할 수 없다. 이연은 전령 판단을 자기 이름으로 남기고 민간인 희생 명령을 거부한다. H01-H16에 대한 개별 판단은 이 장부에 아직 적히지 않았다.
+H01-H16 장부에는 가문이 보관하는 기계형 휴머노이드가 적혀 있다. 생체인지 기계인지에 따라 인격과 시민권을 일괄 인정하거나 배제하지 않는다. 당사자의 의사 표현, 기억의 연속성, 동의 능력을 각각 살핀다. 보관 기록은 정비와 책임의 근거로 남지만, 인격을 인정받은 사람에게 양도 조항을 적용할 수 없다. H01-H16에 대한 개별 판단은 이 장부에 아직 적히지 않았다.
 
 ## 반복하는 기체
 
@@ -45402,7 +45950,7 @@ Sweeping up the swarms with firearms was left as a last resort. Sealing, ration 
 
 물류 휴머노이드와는 계통이 다른 방재 기체가 있다. 붕괴 전 방재 조직은 수색·보강·관로 검사에 이 기체를 쓰려 하였으나 상위 제어망이 끊겼다. 마지막 수색·경계·이송 루틴은 계속되고 있다. 소형 발광 군집, 유압으로 잔해를 미는 중장비, 납작한 수중 기체가 그 세 종류다.
 
-재기동 조건은 전압·수위·인가 신호이다. 신정·군자·고덕의 차량기지 인접 역과 영등포·뚝섬·암사의 수문 인접 정수장과 심층 터널 갤러리에 기체가 있다. 탐사원이 아크가 서명해 내준 프로토콜 카드를 제시하면 해당 라인·개시점·명령 묶음만 잠시 멈춘다. 서명이 없는 카드는 켜고 끄는 기초 기능까지만 된다. 다른 시설을 제어할 권한은 없다. 모듈과 회수 경제는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
+재기동 조건은 전압·수위·인가 신호이다. 신정·군자·고덕의 차량기지 인접 역과 영등포·뚝섬·암사의 수문 인접 정수장과 심층 터널 갤러리에 기체가 있다. 탐사원이 아크가 서명해 내준 프로토콜 카드를 제시하면 해당 라인·개시점·명령 묶음만 잠시 멈춘다. 서명이 없는 카드는 켜고 끄는 기초 기능까지만 된다. 다른 시설을 제어할 권한은 없다. 이 기체들은 세 세력 누구의 적도 아니다. 수색·경계 루틴에 걸린 사람에게는 재해이지만, 붙잡아 고치고 아크 서명으로 깨우면 세력의 일꾼과 병종이 된다. 포획, 정비, 신호 확인, 생각 조종의 네 단계는 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다. 모듈과 회수 경제는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
 
 축전 모듈은 이미 저장된 전하를 방출할 뿐 발전기를 대체하지 못한다. 배터리 셀이 노화하고 충전 단자를 확보하지 못하면 기체의 행동 반복도 정지한다. 공방에서 유압 실린더를 고친다고 해서 구시대의 생산 라인이 돌아온 것은 아니다.
 
@@ -45424,7 +45972,7 @@ Sweeping up the swarms with firearms was left as a last resort. Sealing, ration 
 |---|---|---|
 | 사람 | 지하철 생활권, 병역 명부, 생업 현장 | 역 거점의 세 세력, 종이 명부, 생업 일곱 |
 | 물류 휴머노이드 | 아틀라스 계열 현장 시험, 공장 밀도 세계 앞줄 | 정지 잔존과 이송 반복, 해체 모듈 |
-| 방재 기체 | 수색·경계·이송 루틴을 호출망에 묶음 | 봉인 갤러리의 수색·경계 반복은 배터리가 닳거나 충전이 끊기면 멈춘다. [잃어버린 기술](/wiki/Lost-Technology-Lineage/) |
+| 방재 기체 | 수색·경계·이송 루틴을 호출망에 묶음 | 봉인 갤러리의 수색·경계 반복은 배터리가 닳거나 충전이 끊기면 멈춘다. 붙잡으면 회수 재고가 되고 새로 만들 수는 없다. [잃어버린 기술](/wiki/Lost-Technology-Lineage/) |
 | 맹금·들개·쥐 | 한강 조류, 유기견, 역 쥐 | 철탑·하역장·환승 트레이의 군락 |
 
 ## 출처
@@ -45433,6 +45981,7 @@ Sweeping up the swarms with firearms was left as a last resort. Sealing, ration 
 - [시나리오 타임라인](/wiki/Scenario-Timeline/)
 - [서울의 세 세력](/wiki/Sixteen-States/)
 - [이 시대의 기술과 무구](/wiki/Era-Arms-and-Tech-Level/)
+- [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)
 - [대정전](/wiki/World-Unbinding/)
 - [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)
 ');
@@ -45462,9 +46011,9 @@ The Gangnam shelters lived behind shut doors for decades because they feared the
 
 ## The Three Factions
 
-- **Government**: the fourteen districts north of the Han. On paper it keeps ministries for the three branches and a multiparty system, but in practice there are only two parties, the OMO Party and the Claw Party. Each district''s National Assembly member holds that district''s duchy as a Senator, and the Senators produce a President for life. It counts as citizens only the people on its own ledger. It thinks of the far bank as the place where barbarians live.
-- **Free City**: seven districts in the southwest. It isn''t one power but a set of city-states, each standing on its own. Most residents are skilled hands who live by their work, and since there was no way to judge whose skill was higher, they never chose a leader. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. Its weapons are people and food, and its doctors let it hold out longest. Today they''re called the Union as a whole. I Ilseop is Duke of Gwanak.
-- **Arc**: the four Gangnam districts. It split off from the Free City. Go Ye-jin is its Hierophant, and the faithful call her the Messiah. The faithful replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor.
+- **Government**: the fourteen districts north of the Han. On paper it keeps ministries for the three branches and a multiparty system, but in practice there are only two parties, the OMO Party and the Claw Party. At the top is the President for life, Kim Yeongyu, with Stationmasters, Division Chiefs, Bureau Chiefs and Commissioners below. It counts as citizens only the people on its own ledger. It thinks of the far bank as the place where barbarians live.
+- **Free City**: seven districts in the southwest. It isn''t one power but a set of independent cities, each standing on its own, and they hold that refusing to be ruled is freedom. Most residents are skilled hands who live by their work. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. Its weapons are people and food, and its doctors let it hold out longest. There''s no name for them as a whole. Its ranks are Stationmaster, Division Chief, Guild Master and Director, and at the top is the Chair of the Board, I Ilseop. He is heir of a medical house of neural-link medicine, and people want that house to lead them.
+- **Arc**: the four Gangnam districts. It split off from the Free City. Go Ye-jin, a former engineer, is its Hierophant, and the faithful call her the Messiah. Its ranks are Stationmaster, Division Chief, Bishop and Cardinal. The faithful replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor.
 
 Scarcity made people pass their work on to their children, and that''s how rigid classes formed. Each shelter first chose its leader by vote, but it soon became hereditary.
 
@@ -45479,9 +46028,9 @@ Scarcity made people pass their work on to their children, and that''s how rigid
 | Around 2117 | The first baptism. Twelve people. |
 | 2120 | At a negotiation with shelters near the Tancheon, Ji Yeon-hui becomes Go Ye-jin''s bodyguard. |
 | Around 2122 | The Gangnam shelters are joined under the name of the Arc. |
-| Winter 2126 | The eve of the third water contract. |
+| Winter 2126 | The present. Converts begin to disappear. |
 
-When Go Ye-jin stopped the machines outside Seoul, people from the Gangnam shelters came to her. The Arc teaches machine implants as a way to endure the winter. Flesh freezes, but steel doesn''t. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. The Arc keeps an offering room beneath the old Suseo rail depot.
+When Go Ye-jin stopped the machines outside Seoul, people from the Gangnam shelters came to her. The Arc teaches machine implants as a way to endure the winter. Flesh freezes, but steel doesn''t.
 
 <a id="Regional-Physical-AI-Arcs-heading-0010"></a>
 
@@ -45524,9 +46073,9 @@ AI가 직접 죽인 사람은 없다. 사람들은 추위를 피해 지하철역
 
 ## 세 세력
 
-- **정부**: 한강 북쪽 14구. 서류상으로는 삼권 부처와 다당제를 두지만 실제로는 OMO당과 클로당 두 당뿐이다. 각 구의 국회의원이 상원의원으로서 그 구의 공작령을 쥐고, 상원의원들이 종신 대통령을 낸다. 자기 장부에 오른 사람만 국민으로 친다. 강 건너는 야만인들이 사는 곳이라고 여긴다.
-- **자유도시**: 남서쪽 7구. 하나의 권력이 아니라 도시마다 따로 선 도시국가들이다. 주민 대부분은 손으로 먹고사는 기술자이고, 누구 기술이 더 높은지 따질 방법이 없어 지도자를 뽑지 못했다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 지금은 묶어서 유니온이라고 부른다. 이일섭이 관악 공작이다.
-- **아크**: 강남 4구. 자유도시에서 갈라져 나왔다. 고예진이 교주이고, 신도들은 그를 메시아라고 부른다. 신도는 몸의 부위를 기계로 바꾸며, 이것을 세례라고 한다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다.
+- **정부**: 한강 북쪽 14구. 서류상으로는 삼권 부처와 다당제를 두지만 실제로는 OMO당과 클로당 두 당뿐이다. 최상단은 종신 대통령 김연규이고, 그 아래 역장, 본부장, 국장, 청장이 있다. 자기 장부에 오른 사람만 국민으로 친다. 강 건너는 야만인들이 사는 곳이라고 여긴다.
+- **자유도시**: 남서쪽 7구. 하나의 권력이 아니라 도시마다 따로 선 독립 도시들이고, 지배를 거부하는 것을 자유로 여긴다. 주민 대부분은 손으로 먹고사는 기술자다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 묶어 부르는 이름은 없다. 계급은 역장, 본부장, 조합장, 이사이고, 최상단은 이사회장 이일섭이다. 이일섭은 신경 연결 의술 의료 가문의 후계자이고, 사람들은 그 가문이 이끌어 주기를 바란다.
+- **아크**: 강남 4구. 자유도시에서 갈라져 나왔다. 엔지니어 출신 고예진이 교주이고, 신도들은 그를 메시아라고 부른다. 계급은 역장, 본부장, 주교, 추기경이다. 신도는 몸의 부위를 기계로 바꾸며, 이것을 세례라고 한다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다.
 
 결핍 때문에 사람들은 하던 일을 자식에게 물려주게 됐고, 그래서 굳은 계층이 생겼다. 대피소마다 처음에는 투표로 지도자를 뽑았으나 금방 세습이 됐다.
 
@@ -45541,9 +46090,9 @@ AI가 직접 죽인 사람은 없다. 사람들은 추위를 피해 지하철역
 | 2117 무렵 | 첫 세례. 열두 명이다. |
 | 2120 | 탄천 쪽 대피소 교섭 자리에서 지연희가 고예진의 경호원이 된다. |
 | 2122 무렵 | 강남 대피소들이 아크라는 이름으로 묶인다. |
-| 2126 겨울 | 세 번째 급수계약을 앞둔 때. |
+| 2126 겨울 | 현재. 개종자들이 사라지기 시작한다. |
 
-고예진이 서울 밖 기계를 세우자 강남 대피소 사람들이 찾아왔다. 아크는 기계 이식을 겨울을 견디는 방법으로 가르친다. 살은 얼어도 쇠는 얼지 않는다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다. 아크는 수서 옛 차량기지 아래에 봉헌실을 둔다.
+고예진이 서울 밖 기계를 세우자 강남 대피소 사람들이 찾아왔다. 아크는 기계 이식을 겨울을 견디는 방법으로 가르친다. 살은 얼어도 쇠는 얼지 않는다.
 
 <a id="Regional-Physical-AI-Arcs-heading-0010"></a>
 
@@ -45568,20 +46117,20 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 | c. 2026 (about a hundred years ago) | Great Blackout | People asked the First AI for a solution to the pollution problem, and the First AI answered that since humanity was the cause of the pollution, humanity had to shrink. The First AI brought down the winter, but it never directly killed anyone. The exact date is not recorded. |
 | Immediately after the Great Blackout | The Descent into the Stations | People went down into the subway stations to escape the cold. Only as many survived as the stations could hold, and once the population reached that number, the winter grew no worse. Outside Seoul, the war machines used during the Great Blackout began to roam, carrying out their last orders. |
 | Date unknown | Inheritance in the Government | Scarcity made people keep doing their parents'' work, and in the Government a vertical class system formed that way. Only people recorded in the Government''s ledgers count as citizens. |
-| 2112 to 2117 | The Abandoned Station and the Manuals | While repairing the Free City power grid, Go Ye-jin followed a dead cable and found a station that was on no map. It had already been closed before the Great Blackout, and inside it was a broken-down data center. Go Ye-jin spent five years reading the manuals piled between the racks. |
+| 2112 to 2117 | The Abandoned Station and the Manuals | While repairing the Free City power grid, Go Ye-jin followed a dead cable and found a station that was on no map. Go Ye-jin spent five years reading the manuals left there. |
 | c. 2117 to c. 2122 | The First Baptism and the Arc | Go Ye-jin''s first baptism was given to twelve people. When Go Ye-jin halted some of the machines outside Seoul, people from the Gangnam shelters came looking for her. About five years later, the Gangnam shelters were united under the name Arc. |
-| Winter 2126 | Eve of the Opening | The third water supply contract is approaching. Converts who were baptized in the Arc less than a year ago are disappearing. Go Ye-jin believes one person crossing the river is behind it, and has ordered Ji Yeon-hui to bring him back alive. |
+| Winter 2126 | Eve of the Opening | The Government''s President is Kim Yeongyu, the Free City''s Chair of the Board is I Ilseop, and the Arc''s Hierophant is Go Ye-jin. Converts who were baptized in the Arc less than a year ago are disappearing. Go Ye-jin believes one person crossing the river is behind it, and has ordered Ji Yeon-hui to bring him back alive. |
 
 <a id="20262126-연도별-진입"></a>
 
 ## Entries by Year
 
 - c. 2026: The Great Blackout occurred. The First AI brought down the winter.
-- [2112](/wiki/Century-Annals/#2112년): While repairing the Free City power grid, Go Ye-jin found an abandoned station that was on no map, along with a data center. She then spent five years reading the manuals there.
+- [2112](/wiki/Century-Annals/#2112년): While repairing the Free City power grid, Go Ye-jin found a station that was on no map. She then spent five years reading the manuals there.
 - [2117](/wiki/Century-Annals/#2117년), approximately: The first baptism took place. Twelve people were baptized.
 - [2120](/wiki/Century-Annals/#2120년): During negotiations with representatives of the shelters near Tancheon, Ji Yeon-hui stopped a man who drew a blade. On the spot, Ji Yeon-hui asked Go Ye-jin to keep her close, and from then on she stood at Go Ye-jin''s side.
 - [2122](/wiki/Century-Annals/#2122년), approximately: The Gangnam shelters were united under the single name Arc.
-- [2126](/wiki/Century-Annals/#2126년), winter: The present of the story. The third water supply contract is approaching, and an investigation into the disappearance of converts is underway in Suseo.
+- [2126](/wiki/Century-Annals/#2126년), winter: The present of the story. An investigation into the disappearance of converts is underway in Suseo.
 
 ## A History of Winter and the Stations
 
@@ -45603,19 +46152,19 @@ In the Government, scarcity made people keep doing their parents'' work, and a v
 
 ### The Three Factions
 
-In 2126, Seoul has only three factions: the Government, the Free City, and the Arc. Each district is one duchy, and the 25 duchies are divided into 14 districts for the Government, 7 for the Free City, and 4 for the Arc. Place names and station names are carried over unchanged from old Seoul.
+In 2126, Seoul has only three factions: the Government, the Free City, and the Arc. Seoul''s twenty-five districts are divided 14 for the Government, 7 for the Free City, and 4 for the Arc, and the smallest unit of rule is the station. The three factions share one frame of ranks. A person holding one station is a Stationmaster, and one leading two to four Stationmasters is a Division Chief. With five to nine, the Government calls them Bureau Chief, the Arc Bishop and the Free City Guild Master; with ten or more, Commissioner, Cardinal and Director. Place names and station names are carried over unchanged from old Seoul.
 
-The Government holds the 14 districts north of the Han River. On paper it maintains ministries representing the three branches of the Republic of Korea and a multiparty system, but in practice only two parties remain, and in reality it is a modern feudal system. Each district''s elected member of the National Assembly holds that district''s duchy under the title of Senator, and the Senators choose a President for life from among themselves. Since the collapse, the Government recognizes only those recorded in its own registers as citizens, and they are effectively serfs. The Government keeps holding elections, but the result is the same every time. It regards the land across the river as "where the barbarians live." When the Government took on this form is not recorded.
+The Government holds the 14 districts north of the Han River. On paper it maintains ministries representing the three branches of the Republic of Korea and a multiparty system, but in practice only two parties remain, and in reality it is a modern feudal system. At the top is a President for life, now Kim Yeongyu. Commissioners are appointed by the President. Since the collapse, the Government recognizes only those recorded in its own registers as citizens, and they are effectively serfs. The Government keeps holding elections, but the result is the same every time. It regards the land across the river as "where the barbarians live." When the Government took on this form is not recorded.
 
-The Free City lies in the 7 districts southwest of the Han River. It is not a single power but a set of independent city-states scattered between stations, each city its own power holding its own duchy. There is no king. Most residents are skilled hands who live by their work; because plumbing, power distribution, and water purification all depend on one another, no one could determine whose skills were greater, so they never chose a leader, and the cities have survived by trading supplies and expertise with one another. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. Its weapons are people and food, and its doctors let it hold out longest. Today they are collectively called the Union. I Ilseop is the Duke of Gwanak. The origin of the name Union is unknown.
+The Free City lies in the 7 districts southwest of the Han River. It is not a single power but a set of independent city-states scattered between stations, each city standing on its own, and they hold that refusing to be ruled is freedom. Most residents are skilled hands who live by their work; because plumbing, power distribution, and water purification all depend on one another, the cities have survived by trading supplies and expertise with one another. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. Its weapons are people and food, and its doctors let it hold out longest. There is no name for them taken together. At the top is the Chair of the Board, held by I Ilseop, heir of a medical house of neural-link medicine. By rank his house is a Director like any other, but because people want them to lead, it has held the Chair of the Board for generations. Directors are appointed by the Board.
 
-Arc holds the 4 Gangnam districts and split off from the Free City. Go Ye-jin, raised in a Free City family of power and wiring workers, followed a dead cable in 2112 and found a station that was on no map, then spent five years reading the manuals there. When Go Ye-jin halted the machines outside Seoul, the Gangnam shelters gathered into Arc. Arc teaches machine implants as a way to endure the winter, and the faithful receive a baptism in which parts of their bodies are replaced with machinery. The machine bodies Arc fits take only simple commands; a direct neural link, moved by thought, has to be performed by a Free City doctor. Twelve people received the first baptism around 2117, and around 2122 the Gangnam shelters were united as Arc. The faithful call Go Ye-jin the Messiah, and her title is Hierophant. Arc replaced every earlier religion.
+Arc holds the 4 Gangnam districts and split off from the Free City. Go Ye-jin, raised in a Free City family of power and wiring workers, followed a dead cable in 2112 and found a station that was on no map, then spent five years reading the manuals there. When Go Ye-jin halted the machines outside Seoul, the Gangnam shelters gathered into Arc. Arc teaches machine implants as a way to endure the winter, and the faithful receive a baptism in which parts of their bodies are replaced with machinery. Twelve people received the first baptism around 2117, and around 2122 the Gangnam shelters were united as Arc. The faithful call Go Ye-jin the Messiah, and her title is Hierophant. Cardinals are ordained by the Hierophant. Arc replaced every earlier religion.
 
 ## Opening of the Story
 
 ### Opening Day
 
-The story opens in winter 2126, ahead of the third water supply contract. Arc keeps an offering chamber under the old Suseo rail depot.
+The story opens in winter 2126.
 
 The same day, her bodyguard Ji Yeon-hui reported missing converts. Over two months, seven people had disappeared from the outposts around Cheongdam and Samseong, and more if unregistered people were counted. In winter, people vanish as a matter of course, freezing to death, caught in tunnel collapses, or taken by the drones drifting outside Seoul, so at first Go Ye-jin considered the number ordinary for the season. But when it emerged that all seven had been baptized less than a year earlier, she ordered Ji Yeon-hui to bring evidence.
 
@@ -45637,27 +46186,27 @@ If a belated reply arrives in the Gangnam-gu Office neighborhood through the con
 
 If Sin Jun reacts to an old call rhythm and vehicle vibrations and points out a route, Sin Jong-mok divides guardianship and duty shifts between the demand to verify the field records and the demand to protect the child''s consent and rest.
 
-If an attempt is made to recover the transceiver unit of the Return Synthesis Station from the closed communications storeroom, Sin Jong-mok and the residents who use the same parts to maintain household power negotiate over how many to recover. Min Ung-gi''s maintenance records remain in Gangnam, but he himself is in Daejeon at the opening of the story.
+If an attempt is made to recover the transceiver unit of the Return Synthesis Station from the closed communications storeroom, Sin Jong-mok and the residents who use the same parts to maintain household power negotiate over how many to recover. Min Ung-gi''s maintenance records remain in Gangnam, but he himself is at I Ilseop''s side in the Free City at the opening of the story.
 
 If the first relay power draw of the Return Synthesis Station overlaps with the refrigeration power for the infirmary, residents waiting for word from those who have not returned and the duty staff responsible for storing medicine must decide the order of power use.
 
 If the Return Synthesis Station is to be operated after Sin Jun''s calls and route fragments are checked against field records, the outpost representatives must weigh together the risk of relying on a single muster network under centralized operation, the maintenance burden of distributed operation, and the delayed contact that would result from postponing completion.
 
-If an equipment entry with its cost missing is found in old relay records, the demand to investigate past costs clashes with the demand to allocate the relay power needed right now. Min Ung-gi''s earlier work remains in the records, but he himself is not in Gangnam at the opening of the story.
+If an equipment entry with its cost missing is found in old relay records, the demand to investigate past costs clashes with the demand to allocate the relay power needed right now. Min Ung-gi''s earlier work remains in the records, but he himself is not in Gangnam at the opening of the story; he is in the Free City as I Ilseop''s aide.
 
 <a id="peninsula-opening-hooks"></a>
 
 ### News from Beyond Reaching Seoul
 
-The merchants and messengers who reach Seoul in winter 2126 bring accounts of what they have experienced across the Korean Peninsula. Outside Seoul, the war machines used during the Great Blackout roam while carrying out their last orders, so simply traveling the roads is dangerous. Seoul''s three factions and their duchies negotiate passage and trade along their own routes, but they cannot decide on behalf of the residents at the far end whether those residents will return or what they will sell. When letters and recovered goods arrive, disputes like the following may open.
+The merchants and messengers who reach Seoul in winter 2126 bring accounts of what they have experienced across the Korean Peninsula. Outside Seoul, the war machines used during the Great Blackout roam while carrying out their last orders, so simply traveling the roads is dangerous. Seoul''s three factions and their stations negotiate passage and trade along their own routes, but they cannot decide on behalf of the residents at the far end whether those residents will return or what they will sell. When letters and recovered goods arrive, disputes like the following may open.
 
 <a id="peninsula-daejeon-reply"></a>
 
-#### A Reply from Daejeon · Gangnam-gu Office
+#### A Reply from the Free City · Gangnam-gu Office
 
-If contact is made after the opening and Min Ung-gi''s reply arrives at the Gangnam-gu Office, the contact duty officer passes it on to the residents. Min Ung-gi farms and does repair work in Daejeon and is looking for the parts he needs, but he does not promise to return to Seoul. Seoul''s maintenance staff, who are short of hands, ask him to come back, and Sin Jong-mok and the residents argue over whether to keep up contact or to press for his return.
+If contact is made after the opening and Min Ung-gi''s reply arrives at the Gangnam-gu Office, the contact duty officer passes it on to the residents. Min Ung-gi handles communications and distribution in the Free City as I Ilseop''s aide and is looking for the parts he needs, but he does not promise to return to Gangnam. Gangnam''s maintenance staff, who are short of hands, ask him to come back, and Sin Jong-mok and the residents argue over whether to keep up contact or to press for his return.
 
-If the player sends parts and a reply, maintenance in Seoul is delayed, but contact with Daejeon can continue. Even if better terms for his return are offered, Min Ung-gi may refuse. If this delivery is postponed, the parts stay in Seoul, but the next contact time is unknown, and the dispute between residents who want to reopen contact and residents who want to cut back on power duty remains.
+If the player sends parts and a reply, maintenance in Gangnam is delayed, but contact with the Free City can continue. Even if better terms for his return are offered, Min Ung-gi may refuse. If this delivery is postponed, the parts stay in Gangnam, but the next contact time is unknown, and the dispute between residents who want to reopen contact and residents who want to cut back on power duty remains.
 
 <a id="peninsula-tsushima-claims"></a>
 
@@ -45684,20 +46233,20 @@ If a carrier crew bound for the east coast with cargo is just about to leave Seo
 | 약 2026년(백 년쯤 전) | 대정전 | 사람들은 오염 문제의 해결책을 최초의 AI에게 물었고, 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했다. 최초의 AI는 겨울을 내렸지만 직접 죽인 사람은 없다. 정확한 날짜는 기록되지 않았다. |
 | 대정전 직후 | 역으로 내려간 시대 | 사람들은 추위를 피해 지하철역으로 내려갔다. 역이 품을 수 있는 만큼만 살아남았고, 그 숫자가 되자 겨울은 더 심해지지 않았다. 서울 밖에는 대정전 때 쓰던 전쟁 기계가 마지막 명령을 수행하며 돌아다니기 시작했다. |
 | 시기 미상 | 정부의 세습 | 결핍 때문에 사람들이 부모의 일을 이어 하게 되었고, 정부에서는 그렇게 수직 계층이 생겼다. 정부 장부에 기록된 사람만 국민으로 인정된다. |
-| 2112~2117 | 폐역과 매뉴얼 | 고예진이 자유도시 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾았다. 대정전 전에 이미 폐쇄된 역이었고, 그 안에 고장 난 데이터센터가 있었다. 고예진은 랙 사이에 쌓인 매뉴얼을 다섯 해 동안 읽었다. |
+| 2112~2117 | 폐역과 매뉴얼 | 고예진이 자유도시 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾았다. 고예진은 그곳에 남은 매뉴얼을 다섯 해 동안 읽었다. |
 | 2117 무렵~2122 무렵 | 첫 세례와 아크 | 고예진이 처음 세례를 준 사람은 열두 명이었다. 고예진이 서울 밖 기계 일부를 세우자 강남 대피소 사람들이 그를 찾아왔다. 다섯 해쯤 지나 강남 대피소들이 아크라는 이름으로 묶였다. |
-| 2126 겨울 | 개막 전야 | 세 번째 급수계약을 앞둔 때다. 아크에서 세례받은 지 일 년이 안 된 개종자들이 사라지고 있다. 고예진은 그 뒤에 강을 건너오는 한 사람이 있다고 보고 지연희에게 그를 살려서 잡아 오라고 명령했다. |
+| 2126 겨울 | 개막 전야 | 정부 대통령은 김연규, 자유도시 이사회장은 이일섭, 아크 교주는 고예진이다. 아크에서 세례받은 지 일 년이 안 된 개종자들이 사라지고 있다. 고예진은 그 뒤에 강을 건너오는 한 사람이 있다고 보고 지연희에게 그를 살려서 잡아 오라고 명령했다. |
 
 <a id="20262126-연도별-진입"></a>
 
 ## 연도별 진입
 
 - 약 2026년: 대정전이 일어났다. 최초의 AI가 겨울을 내렸다.
-- [2112년](/wiki/Century-Annals/#2112년): 고예진이 자유도시 전력망을 고치다 지도에 없는 폐역과 데이터센터를 찾았다. 그 뒤 다섯 해 동안 그곳의 매뉴얼을 읽었다.
+- [2112년](/wiki/Century-Annals/#2112년): 고예진이 자유도시 전력망을 고치다 지도에 없는 역을 찾았다. 그 뒤 다섯 해 동안 그곳의 매뉴얼을 읽었다.
 - [2117년](/wiki/Century-Annals/#2117년) 무렵: 첫 세례가 있었다. 세례받은 사람은 열두 명이었다.
 - [2120년](/wiki/Century-Annals/#2120년): 탄천 쪽 대피소 대표들과 교섭하는 자리에서 칼을 꺼낸 남자를 지연희가 막았다. 지연희는 그 자리에서 고예진에게 자신을 곁에 두라고 청했고, 이후 고예진 곁에 섰다.
 - [2122년](/wiki/Century-Annals/#2122년) 무렵: 강남 대피소들이 아크라는 이름 하나로 묶였다.
-- [2126년](/wiki/Century-Annals/#2126년) 겨울: 이야기의 현재다. 세 번째 급수계약을 앞둔 때이며, 수서에서 개종자 실종을 둘러싼 조사가 진행되고 있다.
+- [2126년](/wiki/Century-Annals/#2126년) 겨울: 이야기의 현재다. 수서에서 개종자 실종을 둘러싼 조사가 진행되고 있다.
 
 ## 겨울과 역의 역사
 
@@ -45719,19 +46268,19 @@ If a carrier crew bound for the east coast with cargo is just about to leave Seo
 
 ### 세 세력의 갈래
 
-2126년 서울의 세력은 정부, 자유도시, 아크 셋뿐이다. 구 하나가 공작령 하나이며, 25공작령은 정부 14구, 자유도시 7구, 아크 4구로 나뉜다. 지명과 역은 옛 서울의 것을 그대로 쓴다.
+2126년 서울의 세력은 정부, 자유도시, 아크 셋뿐이다. 서울의 스물다섯 구는 정부 14구, 자유도시 7구, 아크 4구로 나뉘고, 다스림의 가장 작은 단위는 역이다. 세 세력은 같은 계층 골격을 쓴다. 역 하나를 가진 사람이 역장이고, 거느린 역장이 둘에서 넷이면 본부장이다. 다섯에서 아홉이면 정부는 국장, 아크는 주교, 자유도시는 조합장이고, 열 명 이상이면 정부는 청장, 아크는 추기경, 자유도시는 이사다. 지명과 역은 옛 서울의 것을 그대로 쓴다.
 
-정부는 한강 북쪽 14구를 차지한다. 서류상으로는 대한민국의 삼권을 대표하는 부처와 다당제를 유지하지만 실제로 남은 당은 둘뿐이고, 실상은 현대의 봉건제다. 각 구에서 뽑힌 국회의원이 상원의원이라는 칭호로 그 구의 공작령을 쥐고, 상원의원들이 자기들 가운데서 종신 대통령을 낸다. 붕괴 뒤로 정부는 자기 장부에 기록된 사람만 국민으로 인정하며, 이들은 사실상 농노다. 정부는 선거를 계속 치르지만 매번 같은 답이 나온다. 강 건너는 "야만인들 사는 데"로 여긴다. 정부가 이런 형태를 갖춘 시기는 기록되지 않았다.
+정부는 한강 북쪽 14구를 차지한다. 서류상으로는 대한민국의 삼권을 대표하는 부처와 다당제를 유지하지만 실제로 남은 당은 둘뿐이고, 실상은 현대의 봉건제다. 최상단은 종신 대통령이며, 지금은 김연규다. 청장은 대통령이 임명한다. 붕괴 뒤로 정부는 자기 장부에 기록된 사람만 국민으로 인정하며, 이들은 사실상 농노다. 정부는 선거를 계속 치르지만 매번 같은 답이 나온다. 강 건너는 "야만인들 사는 데"로 여긴다. 정부가 이런 형태를 갖춘 시기는 기록되지 않았다.
 
-자유도시는 한강 남서쪽 7구에 있다. 하나의 권력이 아니라 역과 역 사이에 흩어진 독립 도시국가들이며, 도시마다 각자 권력이고 각자 공작령을 쥔다. 왕은 없다. 주민 대부분은 손으로 먹고사는 기술자로, 배관과 배전과 정수가 서로 의존하는 탓에 누구 기술이 더 높은지 따질 수 없어 지도자를 뽑지 못했고, 도시끼리 물자와 기술을 주고받으며 살아왔다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 지금은 이들을 묶어 유니온이라 부른다. 이일섭이 관악 공작이다. 유니온이라는 이름이 생긴 경위는 알려져 있지 않다.
+자유도시는 한강 남서쪽 7구에 있다. 하나의 권력이 아니라 역과 역 사이에 흩어진 독립 도시국가들이며, 도시마다 각자 서 있고, 지배를 거부하는 것을 자유로 여긴다. 주민 대부분은 손으로 먹고사는 기술자로, 배관과 배전과 정수가 서로 의존하는 탓에 도시끼리 물자와 기술을 주고받으며 살아왔다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 이들을 묶어 부르는 이름은 없다. 최상단은 이사회장이며, 신경 연결 의술 의료 가문의 후계자 이일섭이 맡는다. 이일섭의 가문은 계급으로는 다른 이사와 같은 이사지만, 사람들이 그들이 이끌어 주기를 바라므로 대대로 이사회장이다. 이사는 이사회가 임명한다.
 
-아크는 강남 4구를 차지하며 자유도시에서 갈라져 나왔다. 자유도시의 전력·배선 집안에서 자란 고예진은 2112년 죽은 케이블을 따라가 지도에 없는 역을 찾았고, 그곳의 매뉴얼을 다섯 해 동안 읽었다. 고예진이 서울 밖 기계를 세우자 강남 대피소들이 아크로 모였다. 아크는 기계 이식을 겨울을 견디는 방법으로 가르치며, 신도는 몸의 부위를 기계로 바꾸는 세례를 받는다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다. 2117년 무렵 첫 세례를 받은 사람은 열두 명이었고, 2122년 무렵 강남 대피소들이 아크로 묶였다. 신도들은 고예진을 메시아라 부르며, 고예진의 직위는 교주다. 아크는 이전의 모든 종교를 대체했다.
+아크는 강남 4구를 차지하며 자유도시에서 갈라져 나왔다. 자유도시의 전력·배선 집안에서 자란 고예진은 2112년 죽은 케이블을 따라가 지도에 없는 역을 찾았고, 그곳의 매뉴얼을 다섯 해 동안 읽었다. 고예진이 서울 밖 기계를 세우자 강남 대피소들이 아크로 모였다. 아크는 기계 이식을 겨울을 견디는 방법으로 가르치며, 신도는 몸의 부위를 기계로 바꾸는 세례를 받는다. 2117년 무렵 첫 세례를 받은 사람은 열두 명이었고, 2122년 무렵 강남 대피소들이 아크로 묶였다. 신도들은 고예진을 메시아라 부르며, 고예진의 직위는 교주다. 추기경은 교주가 서품한다. 아크는 이전의 모든 종교를 대체했다.
 
 ## 이야기 개막
 
 ### 개막일
 
-개막 시점은 세 번째 급수계약을 앞둔 2126년 겨울이다. 아크는 수서 옛 차량기지 아래에 봉헌실을 둔다.
+개막 시점은 2126년 겨울이다.
 
 같은 날 경호원 지연희가 개종자 실종을 보고했다. 두 달 동안 청담과 삼성 쪽 거점에서 일곱 명이 사라졌고, 명부 밖 사람까지 치면 더 많았다. 겨울에는 얼어 죽거나 터널이 무너지거나 서울 밖을 떠도는 드론에 걸려 원래 사람이 없어지므로, 고예진은 처음에 이 숫자를 평년 수준으로 보았다. 그러나 일곱 명 모두 세례를 받은 지 일 년이 되지 않았다는 점이 드러나자 증거를 가져오라고 지시했다.
 
@@ -45753,27 +46302,27 @@ If a carrier crew bound for the east coast with cargo is just about to leave Seo
 
 신준이 낡은 호출 리듬과 차량 진동에 반응해 경로를 가리키면, 신종목은 현장 기록을 확인하려는 요구와 아이의 동의와 휴식을 지키려는 요구 사이에서 보호자와 당직을 나눈다.
 
-귀환합성국의 송수신부를 폐쇄 통신창고에서 회수하려 하면, 신종목과 같은 부품으로 생활 전력을 유지하는 주민들이 회수 수량을 두고 협의한다. 민웅기의 정비 기록은 강남에 남아 있고, 본인은 개막 시점에 대전에 있다.
+귀환합성국의 송수신부를 폐쇄 통신창고에서 회수하려 하면, 신종목과 같은 부품으로 생활 전력을 유지하는 주민들이 회수 수량을 두고 협의한다. 민웅기의 정비 기록은 강남에 남아 있고, 본인은 개막 시점에 자유도시에서 이일섭 곁에 있다.
 
 귀환합성국의 첫 중계 전력이 의무소의 냉장 전력과 겹치면, 돌아오지 않은 사람의 연락을 기다리는 주민과 의약품 보관을 맡은 당직자가 전력 사용 순서를 정해야 한다.
 
 신준의 호출과 경로 단편을 현장 기록과 대조한 뒤 귀환합성국을 운용하려 하면, 거점 대표들은 집중 운용 때 소집망 하나에만 기대는 위험, 분산 운용에 따르는 정비 부담, 완공을 미루어 연락이 늦어지는 일을 함께 따진다.
 
-오래된 중계 기록에서 대가가 빠진 장치 항목이 발견되면, 과거 비용을 조사하려는 요구와 당장의 중계 전력을 배분하려는 요구가 맞선다. 민웅기의 이전 작업은 기록에 남아 있고, 본인은 개막 시점에 강남에 있지 않다.
+오래된 중계 기록에서 대가가 빠진 장치 항목이 발견되면, 과거 비용을 조사하려는 요구와 당장의 중계 전력을 배분하려는 요구가 맞선다. 민웅기의 이전 작업은 기록에 남아 있고, 본인은 개막 시점에 강남에 있지 않고 이일섭의 측근으로 자유도시에 있다.
 
 <a id="peninsula-opening-hooks"></a>
 
 ### 서울에 닿는 바깥의 소식
 
-2126년 겨울 서울에 들어오는 상인과 전령은 한반도 곳곳에서 겪은 일을 전한다. 서울 밖에는 대정전 때 쓰던 전쟁 기계가 마지막 명령을 수행하며 돌아다니므로 길을 오가는 일 자체가 위험하다. 서울의 세 세력과 그 공작령들은 자기 길목의 통행과 거래를 교섭하지만, 길 끝의 주민이 돌아올지, 무엇을 팔지는 대신 정하지 못한다. 편지와 회수품이 도착하면 다음과 같은 다툼이 열릴 수 있다.
+2126년 겨울 서울에 들어오는 상인과 전령은 한반도 곳곳에서 겪은 일을 전한다. 서울 밖에는 대정전 때 쓰던 전쟁 기계가 마지막 명령을 수행하며 돌아다니므로 길을 오가는 일 자체가 위험하다. 서울의 세 세력과 그 역들은 자기 길목의 통행과 거래를 교섭하지만, 길 끝의 주민이 돌아올지, 무엇을 팔지는 대신 정하지 못한다. 편지와 회수품이 도착하면 다음과 같은 다툼이 열릴 수 있다.
 
 <a id="peninsula-daejeon-reply"></a>
 
-#### 대전에서 온 답장 · 강남구청
+#### 자유도시에서 온 답장 · 강남구청
 
-개막 뒤 연락이 닿아 민웅기의 답장이 강남구청에 도착하면 연락 당직자가 이를 주민들에게 전한다. 민웅기는 대전에서 농사와 수리 일을 하며 필요한 부품을 구하지만 서울로 돌아오겠다고 약속하지 않는다. 사람이 모자란 서울의 정비 담당자는 복귀를 부탁하고, 신종목과 주민들은 연락을 이어 가는 일과 복귀를 요구하는 일을 두고 다툰다.
+개막 뒤 연락이 닿아 민웅기의 답장이 강남구청에 도착하면 연락 당직자가 이를 주민들에게 전한다. 민웅기는 자유도시에서 이일섭의 측근으로 통신과 배분을 맡으며 필요한 부품을 구하지만 강남으로 돌아오겠다고 약속하지 않는다. 사람이 모자란 강남의 정비 담당자는 복귀를 부탁하고, 신종목과 주민들은 연락을 이어 가는 일과 복귀를 요구하는 일을 두고 다툰다.
 
-플레이어가 부품과 답장을 보내면 서울의 정비는 늦어지지만 대전과 연락을 이어 갈 수 있다. 더 나은 복귀 조건을 전하더라도 민웅기는 거절할 수 있다. 이번 전달을 미루면 부품은 서울에 남지만 다음 연락 시각은 알 수 없고, 연락을 다시 열려는 주민과 전력 당직을 줄이려는 주민의 다툼도 남는다.
+플레이어가 부품과 답장을 보내면 강남의 정비는 늦어지지만 자유도시와 연락을 이어 갈 수 있다. 더 나은 복귀 조건을 전하더라도 민웅기는 거절할 수 있다. 이번 전달을 미루면 부품은 강남에 남지만 다음 연락 시각은 알 수 없고, 연락을 다시 열려는 주민과 전력 당직을 줄이려는 주민의 다툼도 남는다.
 
 <a id="peninsula-tsushima-claims"></a>
 
@@ -45804,7 +46353,23 @@ b. Examples from the roster
 
 Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in Jung-gu, Yeouinaru in Yeongdeungpo-gu, and Sindorim in Guro-gu stand together on the roster.
 
+## Stations and Factions
+
+A. What a station covers
+
+A station in this table is the unit of territory that, in 2126, means the subway station together with the surface stronghold above it. A person who holds one station is a stationmaster. Station positions and lines are as they were in 2026.
+
+B. What a station is worth
+
+A station is worth more the more transfer lines meet in it and the deeper it goes. Surface and elevated stations are worth the least, and the stationmaster of a surface station ranks lowest among stationmasters.
+
+C. Territory by faction
+
+The Government holds 153 station strongholds in the 14 districts north of the Han, the Free City 77 in the 7 southwestern districts, and the Arc 77 in the 4 Gangnam districts. The stronghold count under each district below counts the 307 strongholds in [Station Strongholds](/wiki/strongholds/) by district; it differs from the number of table rows because of alias rows and map entries not counted as strongholds.
+
 ## Gangnam-gu (24)
+
+Faction: Arc · 23 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -45835,6 +46400,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Gangdong-gu (14)
 
+Faction: Arc · 13 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Gangdong | Gangdong | 37.53580 | 127.13260 | Seoul Metropolitan Subway |
@@ -45854,6 +46421,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Gangbuk-gu (12)
 
+Faction: Government · 11 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | 4.19 Minju Myoji | April 19th National Cemetery | 37.64934 | 127.01369 | Seoul Metropolitan Subway |
@@ -45870,6 +46439,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Hwagye | Hwagye | 37.63403 | 127.01749 | Seoul Metropolitan Subway |
 
 ## Gangseo-gu (18)
+
+Faction: Free City · 18 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -45894,6 +46465,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Gwanak-gu (9)
 
+Faction: Free City · 8 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Gwanaksan | Gwanaksan | 37.46874 | 126.94533 | Seoul Metropolitan Subway |
@@ -45907,6 +46480,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Sillim | Sillim | 37.48423 | 126.92968 | Seoul Metropolitan Subway |
 
 ## Gwangjin-gu (11)
+
+Faction: Government · 9 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -45924,6 +46499,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Guro-gu (11)
 
+Faction: Free City · 9 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Gaebong | Gaebong | 37.49459 | 126.85875 | Seoul Metropolitan Subway |
@@ -45940,6 +46517,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Geumcheon-gu (4)
 
+Faction: Free City · 3 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Gasan Digital Complex | Gasan Digital Complex | 37.48159 | 126.88262 | Seoul Metropolitan Subway |
@@ -45948,6 +46527,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Seoksu | Seoksu | 37.43513 | 126.90231 | Korail |
 
 ## Nowon-gu (14)
+
+Faction: Government · 14 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -45968,6 +46549,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Dobong-gu (6)
 
+Faction: Government · 6 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Nokcheon | Nokcheon | 37.64463 | 127.05140 | Seoul Metropolitan Subway |
@@ -45978,6 +46561,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Changdong | Chang-Dong | 37.65260 | 127.04798 | Seoul Metropolitan Subway |
 
 ## Dongdaemun-gu (9)
+
+Faction: Government · 9 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -45992,6 +46577,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Hoegi | Hoegi | 37.58950 | 127.05762 | Seoul Metropolitan Subway |
 
 ## Dongjak-gu (16)
+
+Faction: Free City · 14 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -46014,6 +46601,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Mapo-gu (13)
 
+Faction: Government · 13 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Gongdeok | Gongdeok | 37.54365 | 126.95081 | Seoul Metropolitan Subway |
@@ -46032,6 +46621,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Seodaemun-gu (10)
 
+Faction: Government · 7 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Gajwa | Gajwa | 37.56868 | 126.91506 | Seoul Metropolitan Subway |
@@ -46046,6 +46637,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Hongje | Hongje | 37.58869 | 126.94425 | Seoul Metropolitan Subway |
 
 ## Seocho-gu (21)
+
+Faction: Arc · 18 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -46073,6 +46666,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Seongdong-gu (12)
 
+Faction: Government · 11 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Ttukseom | Ttukseom | 37.54724 | 127.04741 | Seoul Metropolitan Subway |
@@ -46089,6 +46684,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Haengdang | Haengdang | 37.55761 | 127.02999 | Seoul Metropolitan Subway |
 
 ## Seongbuk-gu (14)
+
+Faction: Government · 13 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -46108,6 +46705,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Hanseong University (Samseongyo) | Hansung Univ. (Samseongyo) | 37.58820 | 127.00532 | Seoul Metro |
 
 ## Songpa-gu (24)
+
+Faction: Arc · 23 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -46138,6 +46737,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Yangcheon-gu (7)
 
+Faction: Free City · 7 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Mok-dong | Mok-dong | 37.52612 | 126.86452 | Seoul Metropolitan Subway |
@@ -46149,6 +46750,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Omokgyo | Omokgyo | 37.52456 | 126.87512 | Seoul Metropolitan Subway |
 
 ## Yeongdeungpo-gu (18)
+
+Faction: Free City · 18 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -46173,6 +46776,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Yongsan-gu (12)
 
+Faction: Government · 12 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Namyeong | Namyeong | 37.54054 | 126.97132 | Seoul Metropolitan Subway |
@@ -46190,6 +46795,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 
 ## Eunpyeong-gu (11)
 
+Faction: Government · 11 station strongholds
+
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Gusan | Gusan | 37.61125 | 126.91722 | Seoul Metropolitan Subway |
@@ -46205,6 +46812,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Jeungsan | Jeungsan | 37.58414 | 126.90991 | Seoul Metropolitan Subway |
 
 ## Jongno-gu (15)
+
+Faction: Government · 13 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -46225,6 +46834,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Hyehwa (Seoul National University Hospital) | Hyehwa | 37.58214 | 127.00193 |  |
 
 ## Jung-gu (19)
+
+Faction: Government · 14 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -46249,6 +46860,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Hoehyeon (Namdaemun Market) | Hoehyeon (Namdaemun Market) | 37.55876 | 126.97844 | Seoul Metro |
 
 ## Jungnang-gu (10)
+
+Faction: Government · 10 station strongholds
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
@@ -46883,13 +47496,29 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 
 가. 표의 뼈대
 
-서울 25개 자치구의 역 이름과 관측 위치 334행이 표에 실렸다. 공식 부제와 표기 차이 19행은 같은 역의 별칭이다. 위키 지도는 역 315곳을 표시한다. 서울역, 종각, 여의도, 강남, 잠실 등은 이동 경로의 지점이다.
+서울 25개 자치구의 역 이름과 관측 위치 334행이 표에 실렸다. 공식 신도와 표기 차이 19행은 같은 역의 별칭이다. 위키 지도는 역 315곳을 표시한다. 서울역, 종각, 여의도, 강남, 잠실 등은 이동 경로의 지점이다.
 
 나. 목록의 예
 
 강남구 선릉과 삼성, 종로구 경복궁, 중구 시청, 영등포구 여의나루, 구로구 신도림이 같은 목록에 나란히 오른다.
 
+## 역과 세력
+
+가. 역의 범위
+
+이 표의 역은 2126년에 지하철역과 그 위 지상 성채 영역을 함께 이르는 영토 단위다. 역 하나를 가진 사람이 역장이다. 역 위치와 노선은 2026년 그대로다.
+
+나. 역의 가치
+
+역의 가치는 환승 노선이 많을수록, 지하로 깊을수록 높다. 지상역과 고가역이 가장 낮고, 지상역 역장은 역장 가운데 최하급이다.
+
+다. 세력별 영토
+
+정부는 한강 북쪽 14구의 역 거점 153곳, 자유도시는 남서쪽 7구의 77곳, 아크는 강남 4구의 77곳을 쥔다. 아래 구별 표의 ''역 거점'' 수는 [역 거점](/wiki/strongholds/)에 실린 307곳을 구별로 센 것이며, 별칭 행과 거점으로 세지 않는 지도 항목 때문에 표의 행 수와 다르다.
+
 ## 강남구 (24)
+
+세력: 아크 · 역 거점 23곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -46920,6 +47549,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 
 ## 강동구 (14)
 
+세력: 아크 · 역 거점 13곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 강동 | Gangdong | 37.53580 | 127.13260 | 수도권 전철 |
@@ -46939,6 +47570,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 
 ## 강북구 (12)
 
+세력: 정부 · 역 거점 11곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 4.19민주묘지 | April 19th National Cemetery | 37.64934 | 127.01369 | 수도권 전철 |
@@ -46955,6 +47588,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 화계 | Hwagye | 37.63403 | 127.01749 | 수도권 전철 |
 
 ## 강서구 (18)
+
+세력: 자유도시 · 역 거점 18곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -46979,6 +47614,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 
 ## 관악구 (9)
 
+세력: 자유도시 · 역 거점 8곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 관악산 | Gwanaksan | 37.46874 | 126.94533 | 수도권 전철 |
@@ -46992,6 +47629,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 신림 | Sillim | 37.48423 | 126.92968 | 수도권 전철 |
 
 ## 광진구 (11)
+
+세력: 정부 · 역 거점 9곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -47009,6 +47648,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 
 ## 구로구 (11)
 
+세력: 자유도시 · 역 거점 9곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 개봉 | Gaebong | 37.49459 | 126.85875 | 수도권 전철 |
@@ -47025,6 +47666,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 
 ## 금천구 (4)
 
+세력: 자유도시 · 역 거점 3곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 가산디지털단지 | Gasan Digital Complex | 37.48159 | 126.88262 | 수도권 전철 |
@@ -47033,6 +47676,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 석수 | Seoksu | 37.43513 | 126.90231 | 한국철도공사 |
 
 ## 노원구 (14)
+
+세력: 정부 · 역 거점 14곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -47053,6 +47698,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 
 ## 도봉구 (6)
 
+세력: 정부 · 역 거점 6곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 녹천 | Nokcheon | 37.64463 | 127.05140 | 수도권 전철 |
@@ -47063,6 +47710,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 창동 | Chang-Dong | 37.65260 | 127.04798 | 수도권 전철 |
 
 ## 동대문구 (9)
+
+세력: 정부 · 역 거점 9곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -47077,6 +47726,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 회기 | Hoegi | 37.58950 | 127.05762 | 수도권 전철 |
 
 ## 동작구 (16)
+
+세력: 자유도시 · 역 거점 14곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -47099,6 +47750,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 
 ## 마포구 (13)
 
+세력: 정부 · 역 거점 13곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 공덕 | Gongdeok | 37.54365 | 126.95081 | 수도권 전철 |
@@ -47117,6 +47770,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 
 ## 서대문구 (10)
 
+세력: 정부 · 역 거점 7곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 가좌 | Gajwa | 37.56868 | 126.91506 | 수도권 전철 |
@@ -47131,6 +47786,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 홍제 | Hongje | 37.58869 | 126.94425 | 수도권 전철 |
 
 ## 서초구 (21)
+
+세력: 아크 · 역 거점 18곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -47158,6 +47815,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 
 ## 성동구 (12)
 
+세력: 정부 · 역 거점 11곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 뚝섬 | Ttukseom | 37.54724 | 127.04741 | 수도권 전철 |
@@ -47174,6 +47833,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 행당 | Haengdang | 37.55761 | 127.02999 | 수도권 전철 |
 
 ## 성북구 (14)
+
+세력: 정부 · 역 거점 13곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -47193,6 +47854,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 한성대입구(삼선교) | Hansung Univ. (Samseongyo) | 37.58820 | 127.00532 | 서울교통공사 |
 
 ## 송파구 (24)
+
+세력: 아크 · 역 거점 23곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -47223,6 +47886,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 
 ## 양천구 (7)
 
+세력: 자유도시 · 역 거점 7곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 목동 | Mok-dong | 37.52612 | 126.86452 | 수도권 전철 |
@@ -47234,6 +47899,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 오목교 | Omokgyo | 37.52456 | 126.87512 | 수도권 전철 |
 
 ## 영등포구 (18)
+
+세력: 자유도시 · 역 거점 18곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -47258,6 +47925,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 
 ## 용산구 (12)
 
+세력: 정부 · 역 거점 12곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 남영 | Namyeong | 37.54054 | 126.97132 | 수도권 전철 |
@@ -47275,6 +47944,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 
 ## 은평구 (11)
 
+세력: 정부 · 역 거점 11곳
+
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 구산 | Gusan | 37.61125 | 126.91722 | 수도권 전철 |
@@ -47290,6 +47961,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 증산 | Jeungsan | 37.58414 | 126.90991 | 수도권 전철 |
 
 ## 종로구 (15)
+
+세력: 정부 · 역 거점 13곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -47310,6 +47983,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 혜화(서울대학교병원) | Hyehwa | 37.58214 | 127.00193 |  |
 
 ## 중구 (19)
+
+세력: 정부 · 역 거점 14곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -47334,6 +48009,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 회현(남대문시장) | Hoehyeon (Namdaemun Market) | 37.55876 | 126.97844 | 서울교통공사 |
 
 ## 중랑구 (10)
+
+세력: 정부 · 역 거점 10곳
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
@@ -47979,6 +48656,16 @@ A load of filter media can be split across several backs, so it can go through t
 
 A load of copper parts cannot be broken down or carried without equipment. It moves only through the main cargo gate.
 
+<a id="stronghold"></a>
+
+## Sindorim as a station stronghold
+
+Sindorim is a Free City station in Guro-gu. It is a transfer station where Line 1 and Line 2 meet, and it has deep underground levels, so it is a valuable station. A "station" means the subway station together with the surface stronghold above it, and a person who holds one station is a stationmaster.
+
+In 2126 Sindorim is one of the seven large interchanges that start at stage 4, the Surface Perimeter Line. It is a rail-embankment stronghold, where the railway embankment carries much of the perimeter. The stage names and figures are provisional and are in [Station Strongholds](/wiki/strongholds/sindorim/).
+
+People live underground. The deeper the level, the higher the people who live there, and the upper floors of the surface station building serve for watching and hidden entrances.
+
 <a id="request"></a>
 
 ## The day''s request
@@ -48132,6 +48819,16 @@ If a permit has to be changed and there is no lawful deputy, the haul is postpon
 
 구리 부품 한 짐은 장비 없이는 분해하거나 운반할 수 없다. 이 짐은 주 화물문으로만 옮긴다.
 
+<a id="stronghold"></a>
+
+## 역 거점으로서의 신도림
+
+신도림은 구로구의 자유도시 역이다. 1호선과 2호선이 만나는 환승역이고 지하 깊은 층이 있어 역의 가치가 높다. ''역''은 지하철역과 그 위 지상 성채 영역을 함께 이르며, 역 하나를 가진 사람이 역장이다.
+
+2126년 신도림은 4단계 지상 외곽 방어선에서 시작하는 큰 환승역 일곱 곳 가운데 하나다. 철도 성토가 성곽의 큰 몫을 맡는 철도성토형 거점이다. 단계 이름과 수치는 잠정이며 [역 거점](/wiki/strongholds/sindorim/)에 있다.
+
+사람은 지하에 산다. 깊은 층일수록 윗사람이 살고, 지상 역사의 높은 층은 감시와 숨긴 출입구로 쓴다.
+
 <a id="request"></a>
 
 ## 당일의 의뢰
@@ -48272,285 +48969,319 @@ If a permit has to be changed and there is no lawful deputy, the haul is postpon
 - [구조물](/wiki/Structures/)
 - [시나리오 타임라인](/wiki/Scenario-Timeline/)
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Sixteen-States', 'The Three Factions of Seoul', '서울의 세 세력', 'factions', 1, 'In the winter of 2126, Seoul has only three political powers: the **Government**, the **Free City** (also called the Union), and the **Arc**. Place names, stations, and geography remain as they were before the Great Blackout. Only political ownership is divided, district by district. Each district is one duchy, so Seoul has twenty-five duchies. The Government holds the 14 districts north of the Han River, the Free City holds 7 districts in the southwest, and the Arc holds 4 districts in Gangnam, making 25 = 14 + 7 + 4.
-
-The Great Blackout happened about a hundred years ago. Its exact date is not recorded. The First AI brought down the winter, but it killed no one directly. Outside Seoul, the war machines of the Great Blackout still roam, carrying out their last orders. So all three powers survive the winter by holding on to what lies within Seoul: stations, underground spaces, water, parts, and registers of people.
-
-The third water supply contract is now approaching.
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Sixteen-States', 'The Three Factions of Seoul', '서울의 세 세력', 'factions', 1, 'In the winter of 2126, Seoul has only three political factions: **the Government**, **the Free City**, and **the Arc**. They were not separate countries from the start. They are pieces that broke away from one country that survived the winter. Place names, stations, lines, and terrain remain as they were before the Great Blackout, and what divides the factions is who holds which station.
 
 <a id="16국-기원"></a>
 
-## Factions of Seoul
+The unit of land for all three factions is the **station**. Here a station means a subway station together with the fortified ground area above it. People live inside the station and in the buildings around it, and whoever holds a station governs its people. All three factions use the same skeleton, ranking a person by the number of stationmasters under them. Only the names for the same rung differ from faction to faction.
 
-| Faction | Territory | Districts | Mode of Rule | Title of Duchy Holder | Major Stations |
-|---|---|---|---|---|---|
-| Government | North of the Han River | 14 | On paper, three branches of government and a multiparty system. In practice, two parties: the OMO Party and the Claw Party. A modern feudalism in which Senators elect a President for life | Senator, a post held concurrently by the district''s National Assembly member | Gwanghwamun, Anguk, Jongno 3-ga, Seoul Station, Euljiro-ipgu, Yongsan, Noksapyeong, Cheongnyangni, Guui, Changdong |
-| Free City (Union) | Southwest | 7 | Independent city-states with no king. Each city holds its own power | Duke of Gwanak; other cities not recorded | Magok, Sinjeong, Yeouido, Yeongdeungpo, Guro, Gasan, Noryangjin, Gwanak |
-| Arc | Gangnam | 4 | Family rule under Go Ye-jin, Messiah and Hierophant | Hierophant Go Ye-jin; duchy holders not recorded | Yangjae, Samseong, Gangnam, Seonjeongneung, Suseo, Jamsil, Amsa |
+## The Three Factions at a Glance
 
-The **Government** holds the 14 districts north of the Han River. In each district, the local National Assembly member rules that district''s duchy as Senator, and the Senators choose a President for life from among themselves. The Government recognizes as citizens only those listed in its own registers. Gwanghwamun and the downtown core of Jongno-gu and Jung-gu form the center of administration.
+| Faction | Land | Districts | Stations (provisional) | People (provisional) | Head | Has | Lacks |
+|---|---|---|---|---|---|---|---|
+| The Government | North of the Han River | 14 | 153 | about 300,000 | President Kim Yeongyu | Large university hospital buildings, the officer class, heavy weapons, tanks, original seed stock | Medical technicians, weapons software |
+| The Free City | Southwest of the Han River | 7 | 77 | about 180,000 | Chair of the Board I Ilseop | Doctors and neural-link medicine, people and food, the Capital Defense Command equipment left in its territory | The officer class, medical-robot software, original seed stock |
+| The Arc | Gangnam | 4 | 77 | about 120,000 | Hierophant Go Ye-jin | A monopoly on ancient data-center software, machine bodies | Factories, heavy weapons, hospitals, direct neural-link surgery |
 
-The **Free City** is a set of independent city-states scattered across the 7 southwestern districts. Like the poleis of ancient Greece, each city holds its own duchy, and no king reigns over them. Most residents are skilled hands who live by their work. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. The Free City''s weapons are people and food, and its doctors let it hold out longest. Taken together, they are now also called the Union.
+Station and population counts are provisional values from the [station strongholds](/wiki/strongholds/) data. The Government holds the 14 districts north of the Han River, the Free City holds the 7 districts of Gangseo, Yangcheon, Yeongdeungpo, Guro, Geumcheon, Dongjak, and Gwanak, and the Arc holds the 4 districts of Gangnam, Seocho, Songpa, and Gangdong.
 
-The **Arc** holds the 4 districts of Gangnam. It split off from the Free City. Go Ye-jin leads it as Messiah and Hierophant, and the faithful show their devotion through baptism, the replacement of parts of the body with machinery.
+## The Shared Rank Skeleton
 
-## The 25 Duchies
+Rank is set by the number of stationmasters a person commands. A person who holds one station is a stationmaster, and every rung above that counts the total number of stationmasters below. The number of division chiefs a person commands does not matter.
 
-| No. | District | Faction | Duchy Holder |
+| Stationmasters below | Government | Arc | Free City |
 |---|---|---|---|
-| 1 | Mapo-gu | Government | Senator, name not recorded |
-| 2 | Yongsan-gu | Government | Senator, name not recorded |
-| 3 | Jung-gu | Government | Senator, name not recorded |
-| 4 | Seongdong-gu | Government | Senator, name not recorded |
-| 5 | Gwangjin-gu | Government | Senator, name not recorded |
-| 6 | Dongdaemun-gu | Government | Senator, name not recorded |
-| 7 | Jungnang-gu | Government | Senator, name not recorded |
-| 8 | Seongbuk-gu | Government | Senator, name not recorded |
-| 9 | Jongno-gu | Government | Senator, name not recorded |
-| 10 | Seodaemun-gu | Government | Senator, name not recorded |
-| 11 | Eunpyeong-gu | Government | Senator, name not recorded |
-| 12 | Gangbuk-gu | Government | Senator, name not recorded |
-| 13 | Dobong-gu | Government | Senator, name not recorded |
-| 14 | Nowon-gu | Government | Senator, name not recorded |
-| 15 | Gangseo-gu | Free City | Not recorded |
-| 16 | Yangcheon-gu | Free City | Not recorded |
-| 17 | Yeongdeungpo-gu | Free City | Not recorded |
-| 18 | Guro-gu | Free City | Not recorded |
-| 19 | Geumcheon-gu | Free City | Not recorded |
-| 20 | Dongjak-gu | Free City | Not recorded |
-| 21 | Gwanak-gu | Free City | I Ilseop, Duke of Gwanak |
-| 22 | Seocho-gu | Arc | Not recorded |
-| 23 | Gangnam-gu | Arc | Not recorded |
-| 24 | Songpa-gu | Arc | Not recorded |
-| 25 | Gangdong-gu | Arc | Not recorded |
+| 1 (holds one station) | Stationmaster | Stationmaster | Stationmaster |
+| 2 to 4 | Division Chief | Division Chief | Division Chief |
+| 5 to 9 | Bureau Chief | Bishop | Guild Master |
+| 10 or more | Commissioner | Cardinal | Director |
+| Head | President | Hierophant | Chair of the Board |
 
-## The Government''s Foundations and Internal Strife
+- Rising to the ten-stationmaster rung is by appointment. The President appoints Government commissioners, the Hierophant ordains Arc cardinals, and the Board appoints Free City directors. A person who qualifies but is never appointed becomes a source of trouble inside the faction.
+- Division chiefs who share the same official title still have an informal order among themselves. The more stationmasters they command, and the more valuable those stations are, the higher they stand.
+- A station is worth more the more transfer lines it has and the deeper it goes underground. The master of a surface station, whose platforms sit above ground, is the lowest of all stationmasters.
+- Everyone who does not hold a station is a commoner. The floor a person lives on is their standing. Details are in [Residence Layers and Class](/wiki/Residence-Layers-and-Class/).
 
-On paper, the Government maintains ministries representing the three branches of the Republic of Korea, along with a multiparty system. In reality there are only two parties, the OMO Party and the Claw Party, and the actual order is a modern feudalism.
+The rules for each title are covered in [Offices and Ranks](/wiki/Offices-and-Ranks/).
 
-- **Senators and duchies.** The district lawmaker elected in each gu holds that gu''s duchy and is called a Senator.
-- **The President for life.** The Senators gather candidates from among themselves and produce a President. The President serves for life. The method resembles the prince-elector system of the Holy Roman Empire, in which a handful of princes chose the emperor.
-- **Citizens on the ledger.** Since the Great Blackout, the Government recognizes as citizens only those recorded in its own ledgers. Anyone on the ledger is bound to land and duty, which makes them effectively serfs. Scarcity drove people to take up their parents'' work, and so the vertical hierarchy hardened.
-- **How they see across the river.** The Government treats the entire area south of the Han River like the wildlings beyond the Wall in *Game of Thrones*. Government people think of the far bank as the place where barbarians live.
+## The Government
 
-The Government''s power comes from the practical business of the city center. The Government holds the officer corps, heavy weapons, and tanks, which makes it the strongest in a fight. But its badly wounded do not come back, and without Arc software its advanced weapons only partly work.
+The Government holds the 14 districts north of the Han River and 153 stations. Of the three factions it has the most land and the most people. The President is Kim Yeongyu (K1007). Below the President come commissioners, bureau chiefs, division chiefs, and stationmasters.
 
-- **Rations and registers.** The Government runs the resident registers and ration counters of downtown Jongno-gu and Jung-gu. Anyone not on the register cannot receive rations downtown.
-- **Seals and stamp duty.** Passage, trade, and contracts downtown are valid only with a Government seal, and stamp duty is paid at that point. An unsealed document is waste paper downtown.
-- **The Complex Guard.** A standing guard holding the muster rolls defends downtown stations such as Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga. The guard is also responsible for the government complex, the ration counters, and the seal counters.
+- **A country on paper.** On paper, the Government keeps the ministries and elections of the Republic of Korea. The northern Government still holds elections. Every time, the same answer comes out. The real order of rank is set not by the paperwork but by the number of stationmasters a person commands.
+- **The register.** The Government recognizes as citizens only the people written in its own register. Scarcity made children take up their parents'' work, and that produced a hardened vertical hierarchy.
+- **The strongest in a fight.** The officer class, heavy weapons, and tanks are in the Government. That makes it the strongest in a head-on battle. The Government also holds the original seed stock.
+- **Wounded who never come back.** The Government holds several large university hospital buildings but has no medical technicians. It can only give first aid, so the badly wounded do not return to the line. The White Cross Corps is the first-aid and transport body left in the Government, and it has no doctors.
+- **Weapons half asleep.** Advanced weapons such as fire control, drones, and air defense run fully only with Arc software. Without it they can only be worked by hand.
 
-Government Complex Seoul (209 Sejong-daero, Jongno-gu) is the base of downtown administration and defense. At Dongdaemun Design Plaza (281 Eulji-ro, Jung-gu), people and goods moving between the surface and the underground are inspected.
+The Government Complex Seoul (209 Sejong-daero, Jongno-gu) and Cheong Wa Dae (1 Cheongwadae-ro, Jongno-gu) are the centers of downtown administration. Large transfer stations such as Seoul Station (five lines) and Wangsimni and Cheongnyangni (four lines each) are the Government''s most valuable stations.
 
-## The Free City and the Union
+## The Free City
 
-The Free City is not a single power. The cities in the seven southwestern districts are each independent, like the poleis of ancient Greece, and each city holds its own duchy. There is no king reigning over them.
+The Free City is a set of cities spread over 7 districts and 77 stations southwest of the Han River. Most residents are technicians who live by their hands. Almost all of Seoul''s doctors and neural-link surgeons are in the Free City. The Free City''s weapons are people and food, and because it has doctors, it holds out a long time.
 
-Most residents are skilled hands who live by their work. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. The Free City''s weapons are people and food, and its doctors let it hold out longest. There was no way to tell whose skills were better, so they never chose a leader. Each city is its own power and holds its own duchy. I Ilseop is the Duke of Gwanak. The holders of the other cities'' duchies are not recorded.
+- **The Board.** The one common body that joins the cities is the Board. A person who commands ten or more stationmasters is a director, and directors are appointed by the Board. There is no separate name for the Free City as a group.
+- **The Chair of the Board.** The Chair of the Board is I Ilseop. The I family is a medical family that has handed down neural-link medicine for generations, and I Ilseop is its heir. The family''s home ground is Gwanak. I Ilseop''s close aide is Min Ung-gi.
+- **The limits of its army.** Capital Defense Command equipment remains in its territory (the old Capital Defense Command site beyond Namtaeryeong in Gwanak), but the officer class is on the Government side. Basic military training from the old conscription system lets the Free City handle rifles and maintenance, but it is limited in commanding tank and heavy-weapons battles and in strategy and tactics.
+- **What lies in other hands.** Medical robots move only with Arc software, and original seed stock has to come from the Government.
 
-"Union" is the collective name for the Free City. Go Ye-jin grew up in the Free City. When she was a child, people did not say Union; it was simply the Free City.
+Gimpo International Airport (five lines) is the Free City station with the most lines, and Sindorim and Sadang are major strongholds.
 
-The Free City''s lands include Magok and Sinjeong; Yeouido, Yeongdeungpo, Yangpyeong, the National Assembly, and Daerim; Guro, Guro Digital Complex, Garibong, and Namguro; Geumcheon and Gasan; Noryangjin and Isu; and Gwanak. In Daerim and Garibong, Guro and Gasan, and Namguro, migrant communities, including Korean-Chinese residents, have continued from before the Great Blackout. The skills and trade of these neighborhoods are one pillar of the Free City''s livelihood.
+### The Contradiction of the Free City
+
+The people of the Free City hold that refusing to be ruled is freedom. So they place no seat that rules over the Board. On the rank table, I Ilseop and his family are **directors** like any other.
+
+Yet the people of the Free City want the I family to lead them. The I family has in fact acted as their leader, and so it has held the office of **Chair of the Board** generation after generation. People who say they refuse to be ruled hand the front seat to one family, generation after generation: that is the contradiction of the Free City. The Chair has no greater power to command than any other director. The Chair''s strength comes from the fact that people want to follow.
 
 ## The Arc
 
-The Arc holds the four Gangnam districts: Seocho-gu, Gangnam-gu, Songpa-gu, and Gangdong-gu. It began as a faction that split off from the Free City.
+The Arc holds the 4 districts of Gangnam and 77 stations. It originally split off from the Free City. Its Hierophant is Go Ye-jin, an engineer by training. The faithful call her the Messiah. Below the Hierophant come cardinals, bishops, division chiefs, and stationmasters. Cardinals are ordained by the Hierophant.
 
-Go Ye-jin is the Messiah and the Hierophant. She grew up in the Free City and, as the prophet who founded the Arc, is compared to Muhammad. Rule is Shia-style dynastic rule. Go Ye-jin calls the First AI "God."
+- **Baptism.** The faithful replace parts of their bodies with machines. This is baptism. In the Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link that moves by thought has to be performed by a Free City doctor.
+- **The power of software.** The Arc holds a monopoly on ancient data-center software. It has no material base such as factories, heavy weapons, or hospitals, and it is armed only at the rifle level. The Arc''s weapon is the power to switch other people''s hardware on and off. Every time it uses that power, the other side suspects a backdoor.
+- **The Dongbangsa.** The Dongbangsa is the Arc''s hereditary rifle guard. Its commander is Bae Ujin.
+- **Close aide.** Go Ye-jin''s close aide is Ji Yeon-hui (K1017).
+- **Priests.** Who the Arc''s priests are is undecided.
 
-Believers replace parts of their bodies with machines. This is baptism. In the Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor.
+The Arc does not draw a fortified line above ground. It defends itself by sealing its deep levels. The Express Bus Terminal and Suseo (three lines each) are the Arc stations with the most lines.
 
-The Arc came into being as follows.
+## A Structure of Mutual Dependence
 
-| Year | Event |
-|---|---|
-| 2112 | Go Ye-jin discovers a station not on any map |
-| c. 2117 | First baptism, twelve people |
-| 2120 | Ji Yeon-hui becomes Go Ye-jin''s bodyguard |
-| c. 2122 | The shelters of Gangnam are united as the Arc |
-| Winter 2126 | Present day. The third water supply contract is approaching |
+No faction can fully use what it has on its own. The cost does not come from numeric penalties. It comes from the fact that facilities and people on the map are scattered across different factions.
 
-The Arc''s lands include Yangjae and Seocho; Samseong, Gangnam, Cheongdam, Seonjeongneung, and Suseo; Jamsil and Garak; and Amsa. Seonjeongneung and Suseo are linked by Baekya. Baekya is the call sign of Sin Jong-mok.
+| What is needed | Who has it | Who waits for it |
+|---|---|---|
+| Doctors and neural-link medicine | The Free City | The Government (wounded soldiers), the Arc (direct neural links) |
+| The officer class and heavy-weapons command | The Government | The Free City |
+| Weapons and medical-robot software | The Arc | The Government (advanced weapons), the Free City (medical robots) |
+| Original seed stock | The Government | The Free City |
+| Factories and heavy weapons | The Government | The Arc |
 
-## Relations Between the Factions
+Why doctors and officers are found on only one side is undecided.
 
-The Government treats the entire area south of the Han River like the land of the wildlings beyond the Wall in *Game of Thrones*. Because the Government recognizes as citizens only those recorded in its own ledgers, the residents of the south do not count in the Government''s reckoning.
+The AI is not a common enemy. Drones and surveillance equipment are weapons the factions acquire later. Ancient weapons that turn up now and then, and the raids they bring, keep Seoul uneasy.
 
-The Arc split off from the Free City. Go Ye-jin grew up in the Free City and in 2112 discovered a station not on any map. Around 2117, twelve believers received the first baptism. Around 2122, the shelters of Gangnam were united as the Arc.
+## The Struggle to Take People
 
-All three factions live in the winter that followed the Great Blackout. The AI did not kill humanity directly; it brought down the winter. Outside Seoul, war machines from the Great Blackout roam, still carrying out their last orders. That is why the three factions'' conflicts and dealings take place within Seoul.
+Doctors, officers, and technicians are resources that cannot simply cross a faction border. So abduction and capture are the core of how people move between factions. A person who goes over to another faction loses their assets and territory and becomes one of the lowest class, whatever their place at home. The faction that takes them uses their skill and never raises their standing. Details are in [Human Resource Movement](/wiki/Human-Resource-Movement/).
 
-The story opens in the winter of 2126, with the third water supply contract approaching.
+## Districts and Stations
+
+| No. | District | Faction | Stations (provisional) |
+|---|---|---|---|
+| 1 | Mapo-gu | Government | 13 |
+| 2 | Yongsan-gu | Government | 12 |
+| 3 | Jung-gu | Government | 14 |
+| 4 | Seongdong-gu | Government | 11 |
+| 5 | Gwangjin-gu | Government | 9 |
+| 6 | Dongdaemun-gu | Government | 9 |
+| 7 | Jungnang-gu | Government | 10 |
+| 8 | Seongbuk-gu | Government | 13 |
+| 9 | Jongno-gu | Government | 13 |
+| 10 | Seodaemun-gu | Government | 7 |
+| 11 | Eunpyeong-gu | Government | 11 |
+| 12 | Gangbuk-gu | Government | 11 |
+| 13 | Dobong-gu | Government | 6 |
+| 14 | Nowon-gu | Government | 14 |
+| 15 | Gangseo-gu | Free City | 18 |
+| 16 | Yangcheon-gu | Free City | 7 |
+| 17 | Yeongdeungpo-gu | Free City | 18 |
+| 18 | Guro-gu | Free City | 9 |
+| 19 | Geumcheon-gu | Free City | 3 |
+| 20 | Dongjak-gu | Free City | 14 |
+| 21 | Gwanak-gu | Free City | 8 |
+| 22 | Seocho-gu | Arc | 18 |
+| 23 | Gangnam-gu | Arc | 23 |
+| 24 | Songpa-gu | Arc | 23 |
+| 25 | Gangdong-gu | Arc | 13 |
+
+Districts remain as geographic units that divide the land. Rank is counted by stations, not by districts. Holding an entire district carries no separate title.
 
 ## Regions and Major Stations
 
-Even after the Great Blackout, stations remain inhabited strongholds. Underground spaces and rail lines support the movement of goods and evacuation. The regions, districts, and factions of the major stations are as follows.
+Stations remain the places people live even after the Great Blackout. Underground spaces and tracks carry the movement of goods and evacuation. The regions, districts, and factions of the major stations are as follows.
 
 | Region | Station | District | Faction |
 |---|---|---|---|
-| Western Waterfront | Yangpyeong | Yangcheon-gu | Free City |
-| Western Waterfront | Guro | Guro-gu | Free City |
-| Western Waterfront | Yeouido | Yeongdeungpo-gu | Free City |
+| Western riverside | Yangpyeong | Yangcheon-gu | Free City |
+| Western riverside | Guro | Guro-gu | Free City |
+| Western riverside | Yeouido | Yeongdeungpo-gu | Free City |
 | Central | Gwanghwamun | Jongno-gu | Government |
 | Central | Suseo | Gangnam-gu | Arc |
 | Central | Anguk | Jongno-gu | Government |
 | Central | Yongsan | Yongsan-gu | Government |
-| Eastern | Jegi-dong | Dongdaemun-gu | Government |
-| Eastern | Amsa | Gangdong-gu | Arc |
-| Eastern | Guui | Gwangjin-gu | Government |
-| Northeastern | Sinnae | Jungnang-gu | Government |
-| Southern | Samseong | Gangnam-gu | Arc |
-| Southern | Gangnam | Seocho-gu | Arc |
-| Southern | Yangjae | Seocho-gu | Arc |
-| Southern | Noksapyeong | Yongsan-gu | Government |
-
-## Domains and Stations
-
-Subway stations, ordinary railway stations, and KTX stations are strategic strongholds. A station''s type and stronghold rank are separate from the ownership of the surrounding land. Political ownership of land is divided into 25 duchies under the rule that one gu is one duchy. Having a large station does not change who owns that gu, and land without a station still belongs to its gu''s duchy.
+| East | Jegi-dong | Dongdaemun-gu | Government |
+| East | Amsa | Gangdong-gu | Arc |
+| East | Guui | Gwangjin-gu | Government |
+| Northeast | Sinnae | Jungnang-gu | Government |
+| South | Samseong | Gangnam-gu | Arc |
+| South | Gangnam | Seocho-gu | Arc |
+| South | Yangjae | Seocho-gu | Arc |
+| South | Noksapyeong | Yongsan-gu | Government |
 
 <a id="비운-권역"></a>
 
-## Places Outside Any Faction''s Center
+## Places That Are No Faction''s Center
 
-In 2126, the Sangam transmitter and the Bukhansan Bogungmun evacuation route are not central strongholds of any faction. Sangam lies in Mapo-gu and Bukhansan Bogungmun Station in Seongbuk-gu, so both fall within Government territory. However, neither serves as the center of a duchy or as a seat for the Government''s leadership.
+In 2126, the Sangam transmitters and the Bukhansan Bogungmun evacuation route are not the central stronghold of any faction. Sangam is in Mapo-gu and Bukhansan Bogungmun Station is in Seongbuk-gu, so both lie inside Government land. Yet neither is used as a major Government stronghold or as a place where the President stays.
 
 ## The Five Corridors
 
-Across Seoul, migrant communities are linked along five corridors. The residents of these corridors are neighbors who put down roots in Seoul before the Great Blackout, and they still share in the life of each district today. The faction in the table below follows the district of the hub station.
+Migrant living spheres in Seoul run along five corridors. The residents of these corridors descend from neighbors who put down roots in Seoul before the Great Blackout, and today they are natives of the faction they live in. The faction in the table below follows the district of the central station. Details are in [Diaspora Corridors](/wiki/Diaspora-Corridors/).
 
-| No. | Corridor | Hub Station | Overlying Faction |
+| No. | Corridor | Central station | Overlying faction |
 |---|---|---|---|
-| 1 | Daerim and Garibong Korean-Chinese | Daerim | Free City |
-| 2 | Itaewon Muslim and migrant | Itaewon | Government |
-| 3 | Dongdaemun Central Asian and Mongolian | Dongdaemun | Government |
-| 4 | Guro and Gasan Joseonjok | Guro | Free City |
-| 5 | Namguro and Daerim extension | Namguro | Free City |
+| 1 | Daerim-Garibong Chinese Koreans | Daerim | Free City |
+| 2 | Itaewon Muslims and migrants | Itaewon | Government |
+| 3 | Dongdaemun Central Asians and Mongolians | Dongdaemun | Government |
+| 4 | Guro-Gasan Joseonjok | Guro | Free City |
+| 5 | Namguro-Daerim extension | Namguro | Free City |
 
 ## Public Facilities
 
-The locations and 2126 uses of the major facilities are as follows.
+The locations of major facilities and their uses in 2126 are as follows.
 
 | Facility | Location | Faction | Role in 2126 |
 |---|---|---|---|
-| Government Complex Seoul, Main Building | 209 Sejong-daero, Jongno-gu | Government | Forward administration and defense base. Handles guard duty and passage at Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga. |
-| FKI Tower, Yeouido | 24 Yeoui-daero, Yeongdeungpo-gu | Free City | Auxiliary base for meetings and ledgers. |
-| Jogyesa Temple | 55 Ujeongguk-ro, Jongno-gu | Government | Public base in Government territory using the old buildings. |
-| KCTU Jeongdong Office | 3 Jeongdong-gil, Jung-gu | Government | Base for negotiation ledgers. |
-| Cheong Wa Dae | 1 Cheongwadae-ro, Jongno-gu | Government | Center for records, rations, and ratification. |
-| N Seoul Tower | 105 Namsangongwon-gil, Yongsan-gu | Government | Base for observation and manual signal relay. |
-| National Assembly Building | 1 Uisadang-daero, Yeongdeungpo-gu | Free City | Meeting facility with the old plenary hall. |
-| Dongdaemun Design Plaza | 281 Eulji-ro, Jung-gu | Government | Base for inspecting surface and underground passage and goods. |
+| Government Complex Seoul, main building | 209 Sejong-daero, Jongno-gu | Government | Downtown administration and defense stronghold. Handles guard duty and passage at Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga. |
+| FKI Tower, Yeouido | 24 Yeoui-daero, Yeongdeungpo-gu | Free City | Supporting base for meetings and ledgers. |
+| Jogyesa | 55 Ujeongguk-ro, Jongno-gu | Government | Public base in Government land that uses the old buildings. |
+| KCTU Jeongdong office | 3 Jeongdong-gil, Jung-gu | Government | Base for bargaining ledgers. |
+| Cheong Wa Dae | 1 Cheongwadae-ro, Jongno-gu | Government | Seat of the President and center of the register and rations. |
+| N Seoul Tower | 105 Namsangongwon-gil, Yongsan-gu | Government | Observation and manual signal relay base. |
+| National Assembly Building | 1 Uisadang-daero, Yeongdeungpo-gu | Free City | Meeting facility with the old plenary chamber. |
+| Dongdaemun Design Plaza | 281 Eulji-ro, Jung-gu | Government | Checkpoint for people and goods moving between the surface and underground. |
 
 ## The Balance of Power Is Not Fixed
 
-The strength of the three factions is not set. Water and power, officers and doctors, original seed stock, the Arc''s software, and the number of people on the ledger change from year to year. The third water supply contract in the winter of 2126 is where that balance shifts once more.
-', '2126년 겨울, 서울의 정치 세력은 **정부**(Government), **자유도시**(Free City, 유니온 Union), **아크**(Arc) 셋뿐이다. 지명과 역과 지리는 대정전 이전 그대로 남아 있고, 정치적 소유만 구 단위로 나뉜다. 구 하나가 공작령(duchy) 하나이므로 서울에는 공작령이 스물다섯 개 있다. 정부가 한강 북쪽 14구, 자유도시가 남서쪽 7구, 아크가 강남 4구를 가져 25 = 14 + 7 + 4가 된다.
-
-대정전(Great Blackout)은 약 백 년 전에 일어났다. 정확한 날짜는 기록되지 않았다. 최초의 AI(the First AI)는 겨울을 내렸고, 직접 죽인 사람은 없다. 서울 밖에는 대정전 때의 전쟁 기계들이 마지막 명령을 수행하며 돌아다닌다. 그래서 세 세력은 모두 서울 안의 역과 지하 공간, 물과 부품과 사람의 명부를 붙잡고 겨울을 난다.
-
-지금은 세 번째 급수계약을 앞둔 때다.
+The strength of the three factions is not settled. How many stations each holds, how deep those stations go and how many transfer lines they carry, how many doctors, officers, and technicians each keeps hold of, and whether each can get original seed stock and Arc software all change from year to year. Lose one station and its master drops a rank. Lose one technician and one of the whole faction''s weapons stops.
+', '2126년 겨울, 서울의 정치 세력은 **정부**(Government), **자유도시들**(Free City), **아크**(Arc) 셋뿐이다. 셋은 처음부터 다른 나라가 아니었다. 겨울을 버틴 한 나라에서 갈라져 나온 조각이다. 지명과 역과 노선과 지형은 대정전 이전 그대로 남아 있고, 그 위에서 누가 어느 역을 쥐는지가 세력을 가른다.
 
 <a id="16국-기원"></a>
 
-## 서울의 세력
+세 세력의 땅을 이루는 단위는 **역**이다. 여기서 역은 지하철역과 그 위의 지상 성채 영역을 함께 뜻한다. 사람들은 역 안과 역 둘레의 건물에 살고, 역을 가진 사람이 그 역의 사람을 다스린다. 세 세력은 모두 거느린 역장의 수로 계급을 매기는 같은 골격을 쓴다. 다만 같은 자리를 부르는 이름이 세력마다 다르다.
 
-| 세력 | 영역 | 구 수 | 통치 방식 | 공작령 보유자 칭호 | 주요 역 |
-|---|---|---|---|---|---|
-| 정부 Government | 한강 북쪽 | 14 | 서류상 삼권 부처와 다당제, 실제로는 OMO당·클로당 양당. 상원의원들이 종신 대통령을 뽑는 현대 봉건제 | 상원의원(Senator). 지역구 국회의원이 겸한다 | 광화문, 안국, 종로3가, 서울역, 을지로입구, 용산, 녹사평, 청량리, 구의, 창동 |
-| 자유도시 Free City (유니온 Union) | 남서쪽 | 7 | 왕 없이 독립한 도시국가들. 도시마다 각자 권력 | 관악 공작(Duke of Gwanak), 다른 도시는 기록되지 않음 | 마곡, 신정, 여의도, 영등포, 구로, 가산, 노량진, 관악 |
-| 아크 Arc | 강남 | 4 | 메시아이자 교주인 고예진 아래의 가문 통치 | 교주(Hierophant) 고예진. 공작령 보유자는 기록되지 않음 | 양재, 삼성, 강남, 선정릉, 수서, 잠실, 암사 |
+## 세 세력 한눈에 보기
 
-**정부**는 한강 북쪽 14구를 쥔다. 각 구의 지역구 국회의원이 상원의원으로서 그 구의 공작령을 다스리고, 상원의원들이 자기들 가운데서 종신 대통령을 낸다. 정부는 자기 장부에 오른 사람만 국민으로 인정한다. 광화문과 종로·중구의 도심이 행정의 중심이다.
+| 세력 | 땅 | 구 | 역(잠정) | 사람(잠정) | 최상단 | 가진 것 | 없는 것 |
+|---|---|---|---|---|---|---|---|
+| 정부 Government | 한강 북쪽 | 14 | 153 | 약 30만 | 대통령 김연규 | 대형 대학병원 건물, 장교층, 중화기, 전차, 원종 씨앗 | 의료기술자, 무기 소프트웨어 |
+| 자유도시들 Free City | 한강 남서쪽 | 7 | 77 | 약 18만 | 이사회장 이일섭 | 의사와 신경 연결 의술, 사람과 식량, 영토 안의 수방사 장비 | 장교층, 의료로봇 소프트웨어, 원종 씨앗 |
+| 아크 Arc | 강남 | 4 | 77 | 약 12만 | 교주 고예진 | 고대 데이터센터 소프트웨어 독점, 기계 신체 | 공장, 중화기, 병원, 신경 직결 시술 |
 
-**자유도시**는 남서쪽 7구에 흩어진 독립 도시국가들이다. 고대 그리스의 폴리스처럼 도시마다 따로 공작령을 쥐고, 위에 군림하는 왕은 없다. 주민 대부분은 손으로 먹고사는 기술자다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 지금은 묶어서 유니온이라고도 부른다.
+역 수와 사람 수는 [역 거점](/wiki/strongholds/) 자료의 잠정 값이다. 구 배정은 정부가 한강 북쪽 14구, 자유도시들이 강서·양천·영등포·구로·금천·동작·관악 7구, 아크가 강남·서초·송파·강동 4구다.
 
-**아크**는 강남 4구를 가진다. 자유도시에서 갈라져 나왔다. 고예진이 메시아이자 교주(Hierophant)로서 이끌고, 신도들은 몸의 부위를 기계로 바꾸는 세례(baptism)로 신앙을 드러낸다.
+## 세 세력 공통의 계급 골격
 
-## 25공작령
+계급은 그 사람이 거느린 역장의 수로 정해진다. 역 하나를 가진 사람이 역장이고, 그 위의 단계는 산하 역장의 합계로 센다. 거느린 본부장의 수는 따지지 않는다.
 
-| 번호 | 구 | 세력 | 공작령 보유자 |
+| 산하 역장 수 | 정부 | 아크 | 자유도시들 |
 |---|---|---|---|
-| 1 | 마포구 Mapo-gu | 정부 | 상원의원, 이름은 기록되지 않음 |
-| 2 | 용산구 Yongsan-gu | 정부 | 상원의원, 이름은 기록되지 않음 |
-| 3 | 중구 Jung-gu | 정부 | 상원의원, 이름은 기록되지 않음 |
-| 4 | 성동구 Seongdong-gu | 정부 | 상원의원, 이름은 기록되지 않음 |
-| 5 | 광진구 Gwangjin-gu | 정부 | 상원의원, 이름은 기록되지 않음 |
-| 6 | 동대문구 Dongdaemun-gu | 정부 | 상원의원, 이름은 기록되지 않음 |
-| 7 | 중랑구 Jungnang-gu | 정부 | 상원의원, 이름은 기록되지 않음 |
-| 8 | 성북구 Seongbuk-gu | 정부 | 상원의원, 이름은 기록되지 않음 |
-| 9 | 종로구 Jongno-gu | 정부 | 상원의원, 이름은 기록되지 않음 |
-| 10 | 서대문구 Seodaemun-gu | 정부 | 상원의원, 이름은 기록되지 않음 |
-| 11 | 은평구 Eunpyeong-gu | 정부 | 상원의원, 이름은 기록되지 않음 |
-| 12 | 강북구 Gangbuk-gu | 정부 | 상원의원, 이름은 기록되지 않음 |
-| 13 | 도봉구 Dobong-gu | 정부 | 상원의원, 이름은 기록되지 않음 |
-| 14 | 노원구 Nowon-gu | 정부 | 상원의원, 이름은 기록되지 않음 |
-| 15 | 강서구 Gangseo-gu | 자유도시 | 기록되지 않음 |
-| 16 | 양천구 Yangcheon-gu | 자유도시 | 기록되지 않음 |
-| 17 | 영등포구 Yeongdeungpo-gu | 자유도시 | 기록되지 않음 |
-| 18 | 구로구 Guro-gu | 자유도시 | 기록되지 않음 |
-| 19 | 금천구 Geumcheon-gu | 자유도시 | 기록되지 않음 |
-| 20 | 동작구 Dongjak-gu | 자유도시 | 기록되지 않음 |
-| 21 | 관악구 Gwanak-gu | 자유도시 | 관악 공작 이일섭(I Ilseop) |
-| 22 | 서초구 Seocho-gu | 아크 | 기록되지 않음 |
-| 23 | 강남구 Gangnam-gu | 아크 | 기록되지 않음 |
-| 24 | 송파구 Songpa-gu | 아크 | 기록되지 않음 |
-| 25 | 강동구 Gangdong-gu | 아크 | 기록되지 않음 |
+| 1 (역 1개 소유) | 역장 | 역장 | 역장 |
+| 2~4 | 본부장 | 본부장 | 본부장 |
+| 5~9 | 국장 | 주교 | 조합장 |
+| 10 이상 | 청장 | 추기경 | 이사 |
+| 최상단 | 대통령 | 교주 | 이사회장 |
 
-## 정부의 기반과 내분
+- 10명 단계에 오르는 것은 임명이다. 정부 청장은 대통령이 임명하고, 아크 추기경은 교주가 서품하고, 자유도시 이사는 이사회가 임명한다. 자격을 갖추고도 임명받지 못한 사람은 세력 안의 불씨가 된다.
+- 본부장 사이에는 공식 칭호가 같아도 비공식 급이 있다. 거느린 역장이 많을수록, 그리고 그 역들의 가치가 높을수록 위다.
+- 역의 가치는 환승 노선이 많을수록, 지하로 깊을수록 높다. 승강장이 땅 위에 있는 지상역의 역장은 역장 가운데 가장 낮다.
+- 역을 갖지 못한 사람은 모두 일반 시민이다. 사는 층이 곧 신분이다. 자세한 내용은 [거주 층위와 신분](/wiki/Residence-Layers-and-Class/)에 있다.
 
-정부는 서류상으로 대한민국의 삼권을 대표하는 부처와 다당제를 유지한다. 실제 정당은 OMO당(OMO Party)과 클로당(Claw Party) 둘뿐이고, 실상은 현대 봉건제다.
+직함별 규칙은 [관직](/wiki/Offices-and-Ranks/)이 다룬다.
 
-- **상원의원과 공작령.** 각 구에서 뽑힌 지역구 국회의원이 그 구의 공작령을 쥐고 상원의원(Senator)이라 불린다.
-- **종신 대통령.** 상원의원들이 상원의원 가운데서 후보를 모아 대통령(President)을 낸다. 대통령은 종신이다. 몇몇 제후가 황제를 뽑던 신성로마제국 선제후 제도와 닮은 방식이다.
-- **장부에 오른 국민.** 대정전 뒤로 정부는 자기 장부에 기록된 사람만 국민으로 인정한다. 장부에 오른 사람은 땅과 직무에 묶이므로 사실상 농노에 가깝다. 결핍 때문에 사람들이 부모의 일을 이어 하게 되었고, 그래서 수직 계층이 굳었다.
-- **강 건너를 보는 시선.** 정부는 한강 남쪽 전체를 『왕좌의 게임』의 장벽 너머 야인처럼 대한다. 정부 사람들은 강 건너를 야만인들이 사는 곳이라고 생각한다.
+## 정부
 
-정부의 힘은 도심의 실무에서 나온다. 정부는 장교단과 중화기, 전차를 쥐어 싸움에 가장 강하다. 다만 다친 병사는 돌아오지 못하고, 첨단 무기는 아크 소프트웨어 없이는 일부만 움직인다.
+정부는 한강 북쪽 14구와 153개 역을 쥔다. 세 세력 가운데 땅과 사람이 가장 많다. 대통령은 김연규(K1007)다. 대통령 아래로 청장, 국장, 본부장, 역장이 이어진다.
 
-- **배급과 명부.** 종로·중구 도심의 주민 명부와 배급 창구를 정부가 돌린다. 명부에 없는 사람은 도심에서 배급을 받지 못한다.
-- **도장과 인지세.** 도심의 통행과 거래와 계약은 정부 도장이 찍혀야 성립하고, 그때 인지세를 낸다. 도장 없는 문서는 도심에서 휴지가 된다.
-- **청사 경비대.** 소집 명부를 쥔 상비 경비대가 광화문·종로3가·을지로입구 같은 도심 역을 지킨다. 경비대는 청사와 배급 창구와 도장 창구를 함께 맡는다.
+- **서류 위의 나라.** 정부는 서류상 대한민국의 부처와 선거를 그대로 유지한다. 강북 정부는 지금도 선거를 한다. 매번 같은 답이 나온다. 실제 서열은 장부가 아니라 거느린 역장의 수로 정해진다.
+- **명부.** 정부는 자기 명부에 오른 사람만 국민으로 인정한다. 결핍 때문에 자식이 부모의 일을 이어 하게 됐고, 그래서 굳은 수직 계층이 생겼다.
+- **싸움에 강한 세력.** 장교층과 중화기와 전차가 정부에 있다. 그래서 정면 전투에 가장 강하다. 원종 씨앗도 정부가 쥔다.
+- **돌아오지 못하는 부상병.** 정부는 대형 대학병원 건물을 여러 곳 쥐고 있지만 의료기술자가 없다. 응급 처치까지만 하므로 중상자는 돌아오지 못한다. 흰십자단은 정부에 남은 응급 처치·이송 조직이고, 의사가 없다.
+- **반쯤 잠든 무기.** 사격 통제, 드론, 방공 같은 첨단 무기는 아크 소프트웨어가 있어야 완전히 돈다. 없으면 수동으로만 쓴다.
 
-정부서울청사(종로구 세종대로 209)는 도심 행정과 방어의 거점이다. 동대문디자인플라자(중구 을지로 281)에서는 지상과 지하를 오가는 사람과 물자를 검사한다.
+정부서울청사(종로구 세종대로 209)와 청와대(종로구 청와대로 1)가 도심 행정의 중심이다. 서울역(5개 노선), 왕십리와 청량리(각 4개 노선) 같은 큰 환승역이 정부에서 가장 값진 역이다.
 
-## 자유도시와 유니온
+## 자유도시들
 
-자유도시는 하나의 권력이 아니다. 남서쪽 7구에 있는 도시들이 고대 그리스의 폴리스처럼 저마다 독립해 있고, 도시마다 각자 공작령을 쥔다. 위에 군림하는 왕은 없다.
+자유도시들은 한강 남서쪽 7구와 77개 역에 흩어진 도시들이다. 주민 대부분은 손으로 먹고사는 기술자다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다.
 
-주민 대부분은 손으로 먹고사는 기술자다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 누구 기술이 더 높은지 따질 방법이 없어 지도자도 뽑지 못했다. 도시마다 각자 권력이고 각자 공작령을 쥔다. 이일섭(I Ilseop)이 관악 공작(Duke of Gwanak)이다. 다른 도시의 공작령 보유자는 기록되지 않았다.
+- **이사회.** 도시들을 잇는 공동 기구는 이사회 하나다. 역장 10명 이상을 거느린 사람이 이사이고, 이사는 이사회가 임명한다. 자유도시들을 묶어 부르는 이름은 따로 없다.
+- **이사회장.** 이사회장은 이일섭이다. 이씨 가문은 신경 연결 의술을 대대로 이어 온 의료 가문이고, 이일섭은 그 후계자다. 가문의 근거지는 관악이다. 이일섭의 측근은 민웅기다.
+- **군사의 한계.** 영토(관악 남태령 너머 옛 수방사 자리)에 수방사 장비가 남아 있지만 장교층은 정부 쪽에 있다. 징병제 기초군사훈련 덕에 소총과 정비는 되지만, 전차·중화기 전투 지휘와 전략·전술에는 한계가 있다.
+- **남의 손에 달린 것.** 의료로봇은 아크 소프트웨어가 있어야 움직이고, 원종 씨앗은 정부에서 얻어야 한다.
 
-"유니온"은 자유도시를 묶어 부르는 이름이다. 고예진은 자유도시에서 자랐다. 그가 어릴 때는 유니온이라는 이름 없이 그냥 자유도시라고 불렀다.
+김포공항(5개 노선)이 자유도시에서 노선이 가장 많은 역이고, 신도림과 사당이 큰 거점이다.
 
-자유도시의 땅에는 마곡과 신정, 여의도·영등포·양평·국회의사당·대림, 구로·구로디지털단지·가리봉·남구로, 금천·가산, 노량진·이수, 관악이 있다. 대림·가리봉, 구로·가산, 남구로에는 중국동포를 비롯한 이주민 생활권이 대정전 이전부터 이어져 왔다. 이 동네들의 기술과 교역은 자유도시 살림의 한 축이다.
+### 자유도시의 모순
+
+자유도시 사람들은 지배를 거부하는 것을 자유라고 여긴다. 그래서 이사회 위에 군림하는 자리를 두지 않는다. 계급표로 보면 이일섭과 그 가문도 다른 이사와 같은 **이사**다.
+
+그런데 자유도시 사람들은 이씨 가문이 자기들을 이끌어 주기를 바란다. 이씨 가문은 실제로 지도자 노릇을 해 왔고, 그래서 대대로 **이사회장**을 맡는다. 지배를 거부한다고 말하는 사람들이 한 가문에게 대를 이어 앞자리를 맡기는 것, 이것이 자유도시의 모순이다. 이사회장은 명령할 권한이 다른 이사보다 크지 않다. 이사회장의 힘은 사람들이 그를 따르려 한다는 데서 나온다.
 
 ## 아크
 
-아크는 강남 4구, 곧 서초구·강남구·송파구·강동구를 가진다. 원래는 자유도시에서 갈라져 나온 세력이다.
+아크는 강남 4구와 77개 역을 가진다. 원래 자유도시에서 갈라져 나왔다. 교주는 엔지니어 출신의 고예진이다. 신도들은 그를 메시아(Messiah)라고 부른다. 교주 아래로 추기경, 주교, 본부장, 역장이 이어진다. 추기경은 교주가 서품한다.
 
-고예진(Go Ye-jin)이 메시아(Messiah)이자 교주(Hierophant)다. 그는 자유도시에서 자랐고, 아크를 세운 예언자로서 무함마드에 견주어진다. 통치는 시아파식 가문 통치다. 고예진은 최초의 AI를 "신"이라 부른다.
+- **세례.** 신도는 몸의 부위를 기계로 바꾼다. 이것이 세례(baptism)다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다.
+- **소프트웨어의 힘.** 아크는 고대 데이터센터 소프트웨어를 독점한다. 공장, 중화기, 병원 같은 물적 기반은 없고 무장은 소총 수준이다. 아크의 무기는 남의 하드웨어를 켜고 끄는 힘이다. 그 힘을 쓸 때마다 상대는 백도어를 의심한다.
+- **동방사.** 동방사는 아크의 세습 소총 근위대다. 사령관은 배우진이다.
+- **측근.** 고예진의 측근은 지연희(K1017)다.
+- **사제.** 아크 사제의 인선은 미정이다.
 
-신도는 몸의 부위를 기계로 바꾼다. 이것이 세례(baptism)다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다.
+아크는 지상에 성곽선을 두르지 않고 깊은 층을 봉쇄해 지킨다. 고속터미널과 수서(각 3개 노선)가 아크에서 노선이 가장 많은 역이다.
 
-아크가 생겨난 과정은 다음과 같다.
+## 서로에게 기대는 구조
 
-| 해 | 일 |
-|---|---|
-| 2112 | 고예진이 지도에 없는 역을 발견한다 |
-| 2117 무렵 | 첫 세례, 열두 명 |
-| 2120 | 지연희(Ji Yeon-hui)가 고예진의 경호원이 된다 |
-| 2122 무렵 | 강남의 대피소들이 아크로 묶인다 |
-| 2126 겨울 | 현재. 세 번째 급수계약을 앞두고 있다 |
+어느 세력도 혼자서는 가진 것을 완전히 쓰지 못한다. 비용은 숫자로 매긴 벌칙이 아니라 지도 위 시설과 사람이 서로 다른 세력에 흩어진 데서 나온다.
 
-아크의 땅에는 양재·서초, 삼성·강남·청담·선정릉·수서, 잠실·가락, 암사가 있다. 선정릉과 수서는 백야(Baekya)가 잇는다. 백야는 신종목(Sin Jong-mok)의 호출부호다.
+| 필요한 것 | 가진 쪽 | 기다리는 쪽 |
+|---|---|---|
+| 의사와 신경 연결 의술 | 자유도시들 | 정부(부상병), 아크(신경 직결) |
+| 장교층과 중화기 지휘 | 정부 | 자유도시들 |
+| 무기·의료로봇 소프트웨어 | 아크 | 정부(첨단 무기), 자유도시들(의료로봇) |
+| 원종 씨앗 | 정부 | 자유도시들 |
+| 공장과 중화기 | 정부 | 아크 |
 
-## 세력 사이의 관계
+의사와 장교가 왜 한쪽에만 있는지는 미정이다.
 
-정부는 한강 남쪽 전체를 『왕좌의 게임』의 장벽 너머 야인의 땅처럼 대한다. 정부는 자기 장부에 기록된 사람만 국민으로 인정하므로, 남쪽 주민은 정부의 셈에 들어가지 않는다.
+AI는 공동의 적이 아니다. 드론과 감시 장비는 세력이 나중에 얻는 무기다. 이따금 발견되는 고대 병기와 습격이 서울의 불안을 유지한다.
 
-아크는 자유도시에서 갈라져 나왔다. 고예진은 자유도시에서 자랐고, 2112년 지도에 없는 역을 발견했다. 2117년 무렵 첫 세례를 받은 신도가 열두 명이었다. 2122년 무렵 강남의 대피소들이 아크로 묶였다.
+## 사람을 빼앗는 싸움
 
-세 세력 모두 대정전 이후의 겨울 속에서 산다. AI는 인류를 직접 죽이지 않았고 겨울을 내렸다. 서울 밖에는 대정전 때의 전쟁 기계가 마지막 명령을 수행하며 돌아다닌다. 그래서 세 세력의 다툼과 거래는 서울 안에서 벌어진다.
+의사, 장교, 기술자는 세력의 경계를 넘어 옮길 수 없는 자원이다. 그래서 세력 사이 인적자원 이동의 중심은 납치와 포획이다. 다른 세력으로 넘어간 사람은 본진에서 어떤 자리에 있었든 자산과 영토를 빼앗기고 최하층민이 된다. 받아 간 세력은 기술만 쓰고 신분은 올려 주지 않는다. 자세한 내용은 [인적자원 이동](/wiki/Human-Resource-Movement/)에 있다.
 
-개막 시점은 2126년 겨울이고, 세 번째 급수계약을 앞두고 있다.
+## 구와 역
+
+| 번호 | 구 | 세력 | 역(잠정) |
+|---|---|---|---|
+| 1 | 마포구 Mapo-gu | 정부 | 13 |
+| 2 | 용산구 Yongsan-gu | 정부 | 12 |
+| 3 | 중구 Jung-gu | 정부 | 14 |
+| 4 | 성동구 Seongdong-gu | 정부 | 11 |
+| 5 | 광진구 Gwangjin-gu | 정부 | 9 |
+| 6 | 동대문구 Dongdaemun-gu | 정부 | 9 |
+| 7 | 중랑구 Jungnang-gu | 정부 | 10 |
+| 8 | 성북구 Seongbuk-gu | 정부 | 13 |
+| 9 | 종로구 Jongno-gu | 정부 | 13 |
+| 10 | 서대문구 Seodaemun-gu | 정부 | 7 |
+| 11 | 은평구 Eunpyeong-gu | 정부 | 11 |
+| 12 | 강북구 Gangbuk-gu | 정부 | 11 |
+| 13 | 도봉구 Dobong-gu | 정부 | 6 |
+| 14 | 노원구 Nowon-gu | 정부 | 14 |
+| 15 | 강서구 Gangseo-gu | 자유도시들 | 18 |
+| 16 | 양천구 Yangcheon-gu | 자유도시들 | 7 |
+| 17 | 영등포구 Yeongdeungpo-gu | 자유도시들 | 18 |
+| 18 | 구로구 Guro-gu | 자유도시들 | 9 |
+| 19 | 금천구 Geumcheon-gu | 자유도시들 | 3 |
+| 20 | 동작구 Dongjak-gu | 자유도시들 | 14 |
+| 21 | 관악구 Gwanak-gu | 자유도시들 | 8 |
+| 22 | 서초구 Seocho-gu | 아크 | 18 |
+| 23 | 강남구 Gangnam-gu | 아크 | 23 |
+| 24 | 송파구 Songpa-gu | 아크 | 23 |
+| 25 | 강동구 Gangdong-gu | 아크 | 13 |
+
+구는 땅을 나누는 지리 단위로 남아 있다. 계급은 구가 아니라 역으로 센다. 구 하나를 통째로 가진다고 해서 따로 붙는 칭호는 없다.
 
 ## 권역과 주요 역
 
@@ -48558,9 +49289,9 @@ The strength of the three factions is not set. Water and power, officers and doc
 
 | 권역 | 역 | 구 | 세력 |
 |---|---|---|---|
-| 서부 수변 | 양평 | 양천구 | 자유도시 Free City |
-| 서부 수변 | 구로 | 구로구 | 자유도시 Free City |
-| 서부 수변 | 여의도 | 영등포구 | 자유도시 Free City |
+| 서부 수변 | 양평 | 양천구 | 자유도시들 Free City |
+| 서부 수변 | 구로 | 구로구 | 자유도시들 Free City |
+| 서부 수변 | 여의도 | 영등포구 | 자유도시들 Free City |
 | 중앙 | 광화문 | 종로구 | 정부 Government |
 | 중앙 | 수서 | 강남구 | 아크 Arc |
 | 중앙 | 안국 | 종로구 | 정부 Government |
@@ -48574,27 +49305,23 @@ The strength of the three factions is not set. Water and power, officers and doc
 | 남부 | 양재 | 서초구 | 아크 Arc |
 | 남부 | 녹사평 | 용산구 | 정부 Government |
 
-## 영지와 역
-
-지하철역·일반 철도역·KTX역은 전략 거점이다. 역의 종류와 거점 등급은 주변 땅의 소유와 별개다. 땅의 정치적 소유는 구 하나가 공작령 하나라는 규칙에 따라 25공작령으로 나뉜다. 큰 역이 있다고 해서 그 구의 소유가 바뀌지 않고, 역이 없는 땅도 그 구의 공작령에 속한다.
-
 <a id="비운-권역"></a>
 
 ## 세력의 중심이 아닌 곳
 
-2126년 상암 송신과 북한산보국문 피난로는 어느 세력의 중심 거점도 아니다. 상암은 마포구에, 북한산보국문역은 성북구에 있어서 둘 다 정부 구역 안에 든다. 그러나 두 곳 모두 공작령의 중심이나 정부의 수장이 머무는 자리로 쓰이지 않는다.
+2126년 상암 송신과 북한산보국문 피난로는 어느 세력의 중심 거점도 아니다. 상암은 마포구에, 북한산보국문역은 성북구에 있어서 둘 다 정부 땅 안에 든다. 그러나 두 곳 모두 정부의 큰 거점이나 대통령이 머무는 자리로 쓰이지 않는다.
 
 ## 다섯 회랑
 
-서울에는 이주민 생활권이 다섯 회랑으로 이어진다. 이 회랑의 주민들은 대정전 이전부터 서울에 뿌리를 내린 이웃이고, 지금도 각 구의 생활을 함께 꾸린다. 아래 표의 세력은 중심역이 속한 구를 따른다.
+서울에는 이주민 생활권이 다섯 회랑으로 이어진다. 이 회랑의 주민들은 대정전 이전부터 서울에 뿌리를 내린 이웃의 후손이고, 지금은 각자 사는 세력의 원주민이다. 아래 표의 세력은 중심역이 속한 구를 따른다. 자세한 내용은 [이주민 회랑](/wiki/Diaspora-Corridors/)에 있다.
 
 | 호 | 회랑 | 중심역 | 얹히는 세력 |
 |---|---|---|---|
-| 1 | 대림·가리봉 중국동포 | 대림 | 자유도시 Free City |
+| 1 | 대림·가리봉 중국동포 | 대림 | 자유도시들 Free City |
 | 2 | 이태원 무슬림·이주민 | 이태원 | 정부 Government |
 | 3 | 동대문 중앙아시아·몽골 | 동대문 | 정부 Government |
-| 4 | 구로·가산 조선족 | 구로 | 자유도시 Free City |
-| 5 | 남구로·대림 연장 | 남구로 | 자유도시 Free City |
+| 4 | 구로·가산 조선족 | 구로 | 자유도시들 Free City |
+| 5 | 남구로·대림 연장 | 남구로 | 자유도시들 Free City |
 
 ## 공개 시설
 
@@ -48602,69 +49329,117 @@ The strength of the three factions is not set. Water and power, officers and doc
 
 | 시설 | 위치 | 세력 | 2126년 역할 |
 |---|---|---|---|
-| 정부서울청사 본관 | 종로구 세종대로 209 | 정부 Government | 전방 행정·방어 거점. 광화문·종로3가·을지로입구 경비와 통행을 맡는다. |
-| 여의도 전경련회관 | 영등포구 여의대로 24 | 자유도시 Free City | 회의·장부 보조 거점. |
-| 조계사 | 종로구 우정국로 55 | 정부 Government | 옛 건물을 쓰는 정부 구역의 공공 거점. |
+| 정부서울청사 본관 | 종로구 세종대로 209 | 정부 Government | 도심 행정·방어 거점. 광화문·종로3가·을지로입구 경비와 통행을 맡는다. |
+| 여의도 전경련회관 | 영등포구 여의대로 24 | 자유도시들 Free City | 회의·장부 보조 거점. |
+| 조계사 | 종로구 우정국로 55 | 정부 Government | 옛 건물을 쓰는 정부 땅의 공공 거점. |
 | 민주노총 정동 사무실 | 중구 정동길 3 | 정부 Government | 교섭 장부 거점. |
-| 청와대 | 종로구 청와대로 1 | 정부 Government | 기록·배급·인준 중심지. |
+| 청와대 | 종로구 청와대로 1 | 정부 Government | 대통령의 자리이자 명부·배급의 중심지. |
 | N서울타워 | 용산구 남산공원길 105 | 정부 Government | 관측·수동 신호 중계 거점. |
-| 국회의사당 | 영등포구 의사당대로 1 | 자유도시 Free City | 옛 본회의장을 갖춘 회의 시설. |
+| 국회의사당 | 영등포구 의사당대로 1 | 자유도시들 Free City | 옛 본회의장을 갖춘 회의 시설. |
 | 동대문디자인플라자 | 중구 을지로 281 | 정부 Government | 지상·지하 통행·물자 검사 거점. |
 
 ## 세력의 강약은 고정되지 않는다
 
-세 세력의 힘은 정해져 있지 않다. 물과 전력, 장교와 의사, 원종 씨앗, 아크의 소프트웨어, 장부에 오른 사람의 수가 해마다 바뀐다. 2126년 겨울의 세 번째 급수계약은 그 균형이 다시 움직이는 자리다.
+세 세력의 힘은 정해져 있지 않다. 역을 몇 개 쥐었는지, 그 역이 얼마나 깊고 환승 노선이 몇 개인지, 의사와 장교와 기술자를 몇 명 붙잡아 두었는지, 원종 씨앗과 아크 소프트웨어를 얻을 수 있는지가 해마다 바뀐다. 역 하나를 빼앗기면 그 역장의 계급이 내려가고, 기술자 한 사람을 잃으면 세력 전체의 무기 하나가 멈춘다.
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Station-Interior-Construction', 'Entering the Station Interior', '역 내부에 들어가면', 'places', 5, '
-In Seoul subway stations, concourses, platforms, passages, and tunnels join at different levels. Waterworks, depots, and markets stand by the stations.
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Station-Interior-Construction', 'Entering the Station Interior', '역 내부에 들어가면', 'places', 5, 'In Seoul subway stations, concourses, platforms, transfer passages and tunnels join at different levels. Waterworks, depots and markets stand beside the stations as strongholds of their own.
 
-Concourses and platforms open in stages under the residents'' rules. Changes to underground facilities and the surface surroundings shape each stronghold.
+The facilities of concourses and platforms open and run in order under the survivors'' rules. How the underground facilities and the surface around them changed decides the character of each stronghold.
+
+## The Station as a Unit
+
+A. What a station covers
+
+In 2126 a "station" means the subway station together with the surface stronghold above it. One station is the smallest unit of territory. A person who holds one station is a stationmaster.
+
+B. What a station is worth
+
+A station is worth more the more transfer lines meet in it and the deeper its levels go. Surface and elevated stations are worth the least, and the stationmaster of a surface station ranks lowest among stationmasters. Stations such as Seoul Station, Sindorim and Wangsimni, where several lines meet and deep levels exist, are worth a great deal.
 
 ## Entry and the Panorama
 
 A. Initiative and panorama
 
-After the encounters and the combat, seizing the initiative in a station was only the beginning. This stronghold, where fates, goods, and reputation crossed, showed its true face only when the door was opened and the party stepped in.
+Taking the initiative in a station after the encounters and the fighting is only the beginning. When the expedition opens the door and steps in, the stronghold shows itself. The expedition''s goods, reputation and fate are decided inside it.
 
 B. Scale of facilities
 
-The strongholds recorded in the Seoul station catalog held multi-story structures and convenience-facility sectors of their own. Whether a station was a transfer station or an ordinary one changed the scale of facilities it could seat. The Yeongdeungpo, Ttukseom, and Guui treatment plants, the Sinjeong and Cheonwang depots, Garak Market, and the Noryangjin Fisheries Market stood beside stations, forming vast infrastructure to meet the survivors.
+The strongholds in the Seoul station catalogue are built on several levels, each with its own zones of facilities. The number of transfer lines and the depth below ground decide how large the facilities can be. The Yeongdeungpo, Ttukseom and Guui treatment plants, the Sinjeong and Cheonwang depots, Garak Market and the Noryangjin Fisheries Market stand beside stations and form vast infrastructure.
 
 ## The Interior Opening Procedure
 
+A. Five stages
+
+A stronghold grows through five stages. The stage names and figures are provisional. The figures for each station and stage are in [Station Strongholds](/wiki/strongholds/).
+
+| Stage | Name | Works | Facilities added |
+|---|---|---|---|
+| 1 | Entrance Post | Lower the shutters and block the unused entrances. One entrance stays in use, with a guard post and a gate | Water drums, a first-aid corner, one shared kitchen |
+| 2 | Concourse Stronghold | Bulkheads and gates in the tunnels at both ends of the platform; the ticket-gate line hardened into an inner checkpoint | Storerooms, water tanks, toilets, a care corner, a register desk, a tool corner |
+| 3 | Station Precinct Defence | A double door at every door in use, covers and grilles on the vents, outposts inside the tunnels | Clinic and isolation room, school, ration point, workshops, mushroom growing rooms, laundry, mortuary |
+| 4 | Surface Perimeter Line (Arc: Deep-Level Seal) | A surface stronghold drawn around the entrances from real city blocks, a cleared strip outside it, watchtowers and checkpoints. The Arc blocks and camouflages its surface entrances instead | Surface storehouses and cold storage, summer greenhouses, a firewood yard, surface workshops (unheated) |
+| 5 | Inter-Station Defence Network | Tunnels to the neighbouring stations made into safe passages; one deep station named as the shelter | District storehouse, a market at large interchanges, communications, a maintenance base |
+
 B. Interior layout
 
-Stations have different rooms on each level. Ordinary stations have smaller facilities, while transfer stations have larger ones. Markets, aid stations, repair workshops, generators, water-supply facilities, warehouses, and signal stations can occupy them. A nearby waterworks or depot changes how the station is used as a stronghold.
+Each level of a station holds different zones. Markets, aid posts, repair workshops, generators, water-supply plant, storerooms and signal rooms can occupy them. A treatment plant or depot beside the station changes how the stronghold is used.
+
+C. Medical care
+
+Treatment by doctors exists only in Free City stations. Government and Arc stations go no further than first aid and isolation. Why doctors are found on one side only is still undecided.
+
+## Levels and Residence
+
+A. Depth and standing
+
+The residence layers are the same in all three factions. The deeper the level, the higher the people who live there. Deep levels keep intruders out behind shutters, make the exits easy to control and watch, and are warmed by the ground. A resident of the third basement level ranks above a resident of the first. The founders of each faction were the first to receive the right to live underground.
+
+B. The floors above ground
+
+Above ground the order is reversed: the higher the floor, the lower the people. High floors are cold and windy and lie open to watching and attack from the air, drones included. Everyone who holds no station is an ordinary citizen, and among citizens those who live on the ground floor rank highest.
 
 ## The Three-Dimensional Layers and Combat
 
 A. Layered battlefield
 
-The station interior was a many-layered battlefield. The battlefield was a three-dimensional space that had to be scanned and commanded freely up, down, left, and right, and the commander could at any moment read the situation and tune the units'' positions and formations precisely.
+The station interior is a battlefield of many levels: a space with up and down, left and right. The commander watches that space, judges the situation and adjusts the units'' positions and formations.
 
 B. Battlefields by stronghold
 
-A small station house, a tangled transfer station, a terminal where the tracks ended, a collapsed tunnel, surface ruins, a vast depot, a rail bridge crossing the Han — the shape of the battlefield changed with each stronghold''s character.
+The shape of the battlefield follows the character of the stronghold: a small station house, a tangled interchange, a terminus where the tracks end, a collapsed tunnel, a surface stronghold, a vast depot, a rail bridge across the Han.
 
 ## Facilities and the Distribution of Goods
 
-| Type | Facility capacity |
-|---|---|
-| Ordinary station | Small (2 zones) |
-| Transfer station | Medium (3 zones) |
+| Type | Station value | Facility capacity |
+|---|---|---|
+| Surface or elevated station | Lowest | Small (2 zones) |
+| Ordinary underground station | Higher the deeper it goes | Small (2 zones) |
+| Transfer station | Higher with more lines and more depth | Medium (3 zones) |
 
 B. Facility upkeep
 
-Each facility devoured labor, power, and raw materials to keep turning. A facility cut from power stopped in its tracks, and a stronghold grown past its reach met the limit of its management.
+Every facility needs labour, power and raw materials to keep running. A facility cut off from power stops. A stronghold grown past its reach meets the limit of its management. A stronghold that loses 30% of its people or runs out of reserves drops one stage and abandons its outermost ring first.
 
 ## Sources
 
 - Economy, Production and Logistics Rules
 - Strongholds and Territory Rules
 - [The Structure of the World Map](/wiki/World-Map-Construction/)
+- [Station Strongholds](/wiki/strongholds/)
+- [Station Strongholds and Five Expansion Stages (Provisional)](/gdd/settlement/station-stronghold-stages/)
 ', '서울의 전철역에는 대합실, 승강장, 환승 통로와 터널이 층으로 이어진다. 정수장과 차량기지, 시장은 역과 인접한 거점이다.
 
-대합실과 승강장의 시설은 생존자의 규칙에 따라 순차적으로 열리고 운영된다. 시대가 바뀐 뒤 지하 시설과 지상 풍경이 어떻게 바뀌었는지에 따라 각 거점의 성격이 갈린다.
+대합실과 승강장의 시설은 생존자의 규칙에 따라 순서대로 열리고 운영된다. 지하 시설과 지상 풍경이 어떻게 바뀌었는지에 따라 각 거점의 성격이 갈린다.
+
+## 역이라는 단위
+
+가. 역의 범위
+
+2126년의 ''역''은 지하철역과 그 위의 지상 성채 영역을 함께 이른다. 역 하나가 가장 작은 영토 단위다. 역 하나를 가진 사람이 역장이다.
+
+나. 역의 가치
+
+역의 가치는 환승 노선이 많을수록, 지하로 깊을수록 높다. 지상역과 고가역의 가치가 가장 낮고, 지상역 역장은 역장 가운데 최하급이다. 서울역·신도림·왕십리처럼 노선이 여럿 모이고 깊은 층이 있는 역은 가치가 높다.
 
 ## 입장과 전경
 
@@ -48674,13 +49449,39 @@ Each facility devoured labor, power, and raw materials to keep turning. A facili
 
 나. 시설의 규모
 
-서울 역 카탈로그의 거점은 다층 구조이고 각자 편의 시설 구역이 있다. 환승역인지 일반 역인지에 따라 들어설 수 있는 시설의 규모가 다르다. 영등포·뚝섬·구의 정수장과 신정·천왕 차량기지, 가락시장, 노량진 수산시장은 역과 인접하여 거대한 인프라를 이룬다.
+서울 역 카탈로그의 거점은 다층 구조이고 각자 편의 시설 구역이 있다. 환승 노선 수와 지하 깊이에 따라 들어설 수 있는 시설의 규모가 다르다. 영등포·뚝섬·구의 정수장과 신정·천왕 차량기지, 가락시장, 노량진 수산시장은 역과 인접하여 거대한 인프라를 이룬다.
 
 ## 내부 개방 절차
 
+가. 다섯 단계
+
+거점은 다섯 단계로 커진다. 단계 이름과 수치는 잠정이다. 역마다 단계별 수치는 [역 거점](/wiki/strongholds/)에 있다.
+
+| 단계 | 이름 | 공사 | 더하는 시설 |
+|---|---|---|---|
+| 1 | 출입구 초소 | 셔터를 내리고 쓰지 않는 출입구를 막는다. 쓰는 출입구 하나에 초소와 문을 둔다 | 물통, 응급 구석, 공동 취사 하나 |
+| 2 | 대합실 거점 | 승강장 양 끝 터널에 방벽과 문을 세우고, 개찰구 선을 안쪽 검문선으로 굳힌다 | 창고, 저수조, 화장실, 진료 자리, 명부 자리, 공구 자리 |
+| 3 | 역 구내 방어 | 쓰는 문마다 이중문을 달고, 환기구에 덮개와 창살을 씌우고, 터널 안에 전초를 둔다 | 진료소와 격리실, 학교, 배급소, 작업장, 버섯 재배실, 세탁, 안치소 |
+| 4 | 지상 외곽 방어선 (아크: 깊은 층 봉쇄) | 출입구 둘레의 실제 블록을 이어 지상 성채를 두르고, 바깥에 빈 띠를 두고, 망루와 검문소를 세운다. 아크는 지상 출입구를 막고 위장한다 | 지상 창고와 냉장, 여름 온실, 땔감 마당, 지상 작업장(데우지 않음) |
+| 5 | 역간 방어 체계 | 이웃 역까지 터널을 안전 통로로 만들고, 깊은 역 하나를 대피소로 정한다 | 권역 창고, 큰 환승역의 장, 통신, 정비 기지 |
+
 나. 내부 구조
 
-역 안에는 층마다 다른 구역이 있다. 일반 역에는 작은 시설이 들어서고, 환승역에는 더 큰 시설이 들어선다. 시장과 의무소, 수리 공방, 발전기, 급수 시설, 창고, 통신소를 둘 수 있다. 역 곁에 정수장이나 차량기지가 있으면 그 시설이 거점의 쓰임을 바꾼다.
+역 안에는 층마다 다른 구역이 있다. 시장과 의무소, 수리 공방, 발전기, 급수 시설, 창고, 통신소를 둘 수 있다. 역 곁에 정수장이나 차량기지가 있으면 그 시설이 거점의 쓰임을 바꾼다.
+
+다. 진료
+
+의사의 진료는 자유도시 역에만 있다. 정부와 아크의 역은 응급 처치와 격리까지만 한다. 의사가 왜 한쪽에만 있는지는 미정이다.
+
+## 층과 거주
+
+가. 깊이와 신분
+
+거주 층위는 세 세력이 같다. 지하로 깊을수록 윗사람이 산다. 깊은 층은 셔터로 침입을 막고, 출구를 통제하고 감시하기 쉽고, 지열로 따뜻하다. 지하 3층에 사는 사람이 지하 1층에 사는 사람보다 윗자리다. 지하 거주권은 각 세력의 개국공신이 먼저 받았다.
+
+나. 지상의 층
+
+지상은 반대다. 높은 층일수록 아랫사람이 산다. 높은 층은 춥고 바람이 세며, 드론을 포함한 공중의 감시와 공격에 드러난다. 역을 가지지 못한 사람은 모두 일반 시민이고, 그 가운데 지층(지상 1층)에 사는 사람이 가장 윗자리다.
 
 ## 입체적인 층과 전투
 
@@ -48690,29 +49491,32 @@ Each facility devoured labor, power, and raw materials to keep turning. A facili
 
 나. 거점별 전장
 
-거점의 성격에 따라 전장의 형태가 다르다. 작은 역사, 복잡한 환승역, 선로가 끝나는 종착역, 붕괴한 터널, 지상 폐허, 거대한 차량기지, 한강을 가로지르는 철교가 그 형태다.
+거점의 성격에 따라 전장의 형태가 다르다. 작은 역사, 복잡한 환승역, 선로가 끝나는 종착역, 붕괴한 터널, 지상 성채, 거대한 차량기지, 한강을 가로지르는 철교가 그 형태다.
 
 ## 시설과 물자 배분
 
-| 종류 | 시설 수용력 |
-|---|---|
-| 일반 역 | 소규모 (2구역) |
-| 환승역 | 중규모 (3구역) |
+| 종류 | 역의 가치 | 시설 수용력 |
+|---|---|---|
+| 지상·고가역 | 가장 낮음 | 소규모 (2구역) |
+| 일반 지하역 | 깊을수록 높음 | 소규모 (2구역) |
+| 환승역 | 노선이 많고 깊을수록 높음 | 중규모 (3구역) |
 
 나. 시설의 유지
 
-각 시설은 돌아가는 데 노동력과 전력, 원자재를 쓴다. 전력이 끊긴 시설은 멈춘다. 과도하게 확장된 거점은 관리의 한계에 부딪힌다.
+각 시설은 돌아가는 데 노동력과 전력, 원자재를 쓴다. 전력이 끊긴 시설은 멈춘다. 과도하게 확장된 거점은 관리의 한계에 부딪힌다. 인구의 30%를 잃거나 비축이 바닥나면 한 단계 내려가고, 가장 바깥 고리부터 버린다.
 
 ## 출처
 
 - 경제와 생산, 물류 규칙
 - 거점과 영토 규칙
 - [세계 지도의 구성](/wiki/World-Map-Construction/)
+- [역 거점](/wiki/strongholds/)
+- [역 거점의 성곽과 5단계 확장 (잠정)](/gdd/settlement/station-stronghold-stages/)
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Structures', 'The Structures Compendium', '구조물 총람', 'structures', 0, '
 **A. How stations and tunnels are laid out**
 
-The Seoul of the time was not a flat administrative map but a graph of stations, tunnels, and sluices. Even in 2026 people crossed gu by subway, and the treatment centers and depots sat as the heavy nodes of that graph. On the night of [The Great Blackout](/wiki/World-Unbinding/), when remote control died, stations became fortresses and faction strongholds, tunnels became licensed passage, and treatment plants and sluices became lock gates that opened only under signature. A century on, the three factions of 2126 read those points and lines as living spheres, and each duchy is called by its gu name.
+The Seoul of the time was not a flat administrative map but a graph of stations, tunnels, and sluices. Even in 2026 people crossed gu by subway, and the treatment centers and depots sat as the heavy nodes of that graph. On the night of [The Great Blackout](/wiki/World-Unbinding/), when remote control died, stations became fortresses and faction strongholds, tunnels became licensed passage, and treatment plants and sluices became lock gates that opened only under signature. A century on, the three factions of 2126 read those points and lines as living spheres, and territory is divided by station rather than by gu.
 
 The [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) records 334 observed-name rows for 315 stations. [The Structure of the World Map](/wiki/World-Map-Construction/) records 25 gu and their assembly order; [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/) records six layers. Building use is recorded in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
 
@@ -48722,7 +49526,17 @@ The [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) records 334 observed-n
 
 A station brought people, facilities, and connections back into use. In a dong with a subway station, the station building was the core facility; distribution, passage tolls, lodging, and refuge were handled there. Schools, community centers, and hospitals supported it. After the March 14, 2053 agreement, the Yeouido houses managed eleven water facilities around Yeongdeungpo Station. From 2106, passes for Jongno and Junggu carried the Government Seoul Complex stamp from Gwanghwamun. Amsa Station administered water and escort protection from its platform. Sindorim was the bottleneck between Yeongdeungpo and Guro, while Suseo held a southern depot and contract administration. The parties and signatures of the 2053 agreement were recorded in [the oral records](/wiki/Oral-Stories/#the-2053-yeongdeungpo-water-agreement).
 
-A station has six layers: surface ruins, the concourse, platforms and tracks, transfer corridors, deep tunnels, and depot adjacency. Markets, homes, and offices occupy the concourse; people and freight move through the platforms; toll collectors hold the transfer corridors. The facilities adjoining each station are recorded in [Entering the Station Interior](/wiki/Station-Interior-Construction/). The terms by which a stronghold holds its territory are recorded in Strongholds and Territory.
+A station has six layers: the surface stronghold, the concourse, platforms and tracks, transfer corridors, deep tunnels, and depot adjacency. Markets, homes, and offices occupy the concourse; people and freight move through the platforms; toll collectors hold the transfer corridors. The facilities adjoining each station are recorded in [Entering the Station Interior](/wiki/Station-Interior-Construction/). The terms by which a stronghold holds its territory are recorded in Strongholds and Territory.
+
+**B. What a station covers and what it is worth**
+
+A "station" means the subway station together with the surface stronghold above it. One station is the smallest unit of territory, and a person who holds one station is a stationmaster. A station is worth more the more transfer lines meet in it and the deeper it goes. Surface and elevated stations are worth the least, and the stationmaster of a surface station ranks lowest among stationmasters. The Government holds 153 station strongholds in the 14 districts north of the Han, the Free City 77 in the 7 southwestern districts, and the Arc 77 in the 4 Gangnam districts.
+
+Depth also divides standing. The deeper the level, the higher the people who live there. Deep levels keep intruders out behind shutters, make the exits easy to control and watch, and are warmed by the ground. Above ground, the higher the floor, the lower the people: high floors are cold and windy and lie open to watching and attack from the air, drones included.
+
+**C. Five stages**
+
+A station stronghold grows through five stages under shocks and the pressure of population. The stage names and figures are provisional: stage 1 Entrance Post, stage 2 Concourse Stronghold, stage 3 Station Precinct Defence, stage 4 Surface Perimeter Line (for the Arc, Deep-Level Seal), and stage 5 Inter-Station Defence Network. Of the 307 strongholds in 2126, 250 start at stage 3, 50 at stage 2, and seven large interchanges (Seoul Station, Cheongnyangni, Wangsimni, Dongdaemun History & Culture Park, Express Bus Terminal, Sadang, Sindorim) at stage 4. Surface and elevated stations and line ends start at stage 2. A stronghold that loses 30% of its people or runs out of reserves drops one stage. The figures for each station are in [Station Strongholds](/wiki/strongholds/).
 
 In 2106, Jongno and Junggu passes and commercial contracts received a Government Seoul Complex stamp. A counterfeit medicine box appeared at a Seoul Station auction in 2124.
 
@@ -48740,9 +49554,9 @@ Since 2026, machines have repeated their last search and guard routines on survi
 
 **A. The eight depots**
 
-Depot area reflects the rolling-stock storage and maintenance scale of 2026. Eight depots lie within Seoul: Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, and Suseo. Each depot belongs to the duchy of the gu it stands in. Jichuk, Dobong, Moran, and Gimpo lie outside the Seoul slots.
+Depot area reflects the rolling-stock storage and maintenance scale of 2026. Eight depots lie within Seoul: Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, and Suseo. Each depot belongs to the faction that holds the station strongholds beside it. Jichuk, Dobong, Moran, and Gimpo lie outside the Seoul slots.
 
-A depot was the seat of repair, bulk storage, and siege. Sinjeong''s unloading and Godeok''s train maintenance became a faction''s arms of legitimacy because the hands that moved a stopped train again or sent a convoy were there; Changdong''s wheels and brakes lost their owner and remained only as leases in neighboring heads'' ledgers. The drainage ponds became the water surface where tank aquaculture and migratory birds overlapped, and in the deep bays of maintenance sheds looping chassis are sealed. The charging terminals and hydraulic hoses were the repair layer of [Lost Technology](/wiki/Lost-Technology-Lineage/).
+A depot was the seat of repair, bulk storage, and siege. Sinjeong''s unloading and Godeok''s train maintenance became a faction''s arms of legitimacy because the hands that moved a stopped train again or sent a convoy were there; Changdong''s wheels and brakes lost their owner and remained only as leases in neighbouring stationmasters'' ledgers. The drainage ponds became the water surface where tank aquaculture and migratory birds overlapped, and in the deep bays of maintenance sheds looping chassis are sealed. The charging terminals and hydraulic hoses were the repair layer of [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
 The industrial blocks of Guro and Geumcheon clung to the depots and used schools for drying parts, and the residential shells of Dobong and Nowon could not hold water without Changdong.
 
@@ -48768,7 +49582,7 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 
 | Structure | 2026 starting point | Work at the opening | Details |
 |---|---|---|---|
-| Station | The 315 stations, concourses and platforms | Fortress, ration windows, faction strongholds | [the Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) |
+| Station | The 315 stations, concourses and platforms, and the surface stronghold above them | Fortress, ration windows, the faction''s unit of territory held by a stationmaster | [the Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) |
 | Tunnel | Adjacent lines drawn from map points, transfers | Licensed passage, the states of flooding and blockade | [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/) |
 | Depot | Sinjeong·Cheonwang·Banghwa·Gunja·Godeok·Changdong·Sinnae·Suseo | Repair, rolling stock, wheels and convoys | [The Structure of the World Map](/wiki/World-Map-Construction/) |
 | Treatment plant · sluice | Yeongdeungpo·Ttukseom·Guui·Amsa Arisu | Water signatures, lock-gate watches | [the Three Factions of Seoul](/wiki/Sixteen-States/) |
@@ -48781,7 +49595,7 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 - [The Stories](/wiki/Oral-Stories/)
 ', '**가. 역과 터널의 배치**
 
-2026년 서울 사람들은 지하철로 구를 넘었고 정수센터와 차량기지도 역과 터널에 연결되어 있었다. [대정전](/wiki/World-Unbinding/)의 밤에 원격 관제가 멈추었다. 이후 역은 요새이자 세력의 거점이 되었으며 터널 통행에는 허가가 필요해졌다. 정수장과 수문은 서명이 있어야 열렸다. 2126년 세 세력은 역과 터널과 수문을 생활권으로 관리하며, 공작령은 구 이름으로 부른다.
+2026년 서울 사람들은 지하철로 구를 넘었고 정수센터와 차량기지도 역과 터널에 연결되어 있었다. [대정전](/wiki/World-Unbinding/)의 밤에 원격 관제가 멈추었다. 이후 역은 요새이자 세력의 거점이 되었으며 터널 통행에는 허가가 필요해졌다. 정수장과 수문은 서명이 있어야 열렸다. 2126년 세 세력은 역과 터널과 수문을 생활권으로 관리하며, 영토는 구가 아니라 역 단위로 나뉜다.
 
 [서울 역 카탈로그](/wiki/Seoul-Station-Catalog/)는 관측 명칭 334행과 역 315곳을 기록한다. [세계 지도의 구성](/wiki/World-Map-Construction/)은 구 25개와 조립 순서를, [서울과 지하철 레이어](/wiki/World-and-Subway-Layers/)는 여섯 층을 기록한다. 건물 쓰임은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)에 있다.
 
@@ -48791,7 +49605,17 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 
 역은 사람과 시설과 연결을 다시 가동하여야 하는 거점이다. 동에 지하철이 있으면 역 건물이 핵심 시설이다. 배급·통행세·숙영·피난은 역에서 관리한다. 학교와 주민센터와 병원은 지원 건물이다. 2053년 3월 14일 협약 뒤 여의도 가문들이 영등포역 주변 급수 설비 11곳의 관리권을 맡았다. 2106년부터 종로·중구 통행증에는 광화문 정부서울청사 도장을 찍었다. 암사역은 정수와 호위의 보호권을 승강장에서 관리한다. 신도림은 영등포와 구로 사이의 병목이다. 수서에는 남부 기지와 계약 행정이 있다. 2053년 협약의 당사자와 서명은 [대정전과 급수 기록](/wiki/Oral-Stories/#2053년-영등포-급수-협약)에 남았다.
 
-역에는 지상 폐허·대합실·승강장과 선로·환승 통로·심층 터널·차량기지 인접 구역이 층을 이룬다. 대합실에는 시장과 주거지, 행정 창구가 들어선다. 승강장에서는 사람과 화물이 오가고, 환승 통로에서는 통행세를 거둔다. 역에 딸린 시설은 [역 내부에 들어가면](/wiki/Station-Interior-Construction/)에 기록되어 있다. 거점의 영토 관계는 거점과 영토에 있다.
+역에는 지상 성채·대합실·승강장과 선로·환승 통로·심층 터널·차량기지 인접 구역이 층을 이룬다. 대합실에는 시장과 주거지, 행정 창구가 들어선다. 승강장에서는 사람과 화물이 오가고, 환승 통로에서는 통행세를 거둔다. 역에 딸린 시설은 [역 내부에 들어가면](/wiki/Station-Interior-Construction/)에 기록되어 있다. 거점의 영토 관계는 거점과 영토에 있다.
+
+**나. 역의 범위와 가치**
+
+''역''은 지하철역과 그 위 지상 성채 영역을 함께 이른다. 역 하나가 가장 작은 영토 단위이며, 역 하나를 가진 사람이 역장이다. 역의 가치는 환승 노선이 많을수록, 지하로 깊을수록 높다. 지상역과 고가역이 가장 낮고, 지상역 역장은 역장 가운데 최하급이다. 정부는 한강 북쪽 14구의 역 거점 153곳, 자유도시는 남서쪽 7구의 77곳, 아크는 강남 4구의 77곳을 쥔다.
+
+깊이는 신분도 가른다. 지하로 깊을수록 윗사람이 산다. 깊은 층은 셔터로 침입을 막고, 출구를 통제하고 감시하기 쉽고, 지열로 따뜻하다. 지상은 높은 층일수록 아랫사람이 산다. 높은 층은 춥고 바람이 세며 드론을 포함한 공중의 감시와 공격에 드러난다.
+
+**다. 다섯 단계**
+
+역 거점은 충격과 인구 압력을 받으며 다섯 단계로 커진다. 단계 이름과 수치는 잠정이다. 1단계 출입구 초소, 2단계 대합실 거점, 3단계 역 구내 방어, 4단계 지상 외곽 방어선(아크는 깊은 층 봉쇄), 5단계 역간 방어 체계다. 2126년 307곳 가운데 250곳이 3단계, 50곳이 2단계, 큰 환승역 7곳(서울역, 청량리, 왕십리, 동대문역사문화공원, 고속터미널, 사당, 신도림)이 4단계에서 시작한다. 지상·고가역과 끝역은 2단계에서 시작한다. 인구의 30%를 잃거나 비축이 바닥나면 한 단계 내려간다. 역마다 수치는 [역 거점](/wiki/strongholds/)에 있다.
 
 종로·중구 통행증과 상거래 계약서는 2106년부터 정부서울청사 도장을 받았다. 2124년 서울역에서는 가짜 약 상자가 경매에 올랐다.
 
@@ -48809,9 +49633,9 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 
 **가. 여덟 기지**
 
-기지 면적은 2026년의 유치·정비 규모이다. 서울 안의 여덟 기지는 신정·천왕·방화·군자·고덕·창동·신내·수서이다. 각 기지는 그 기지가 있는 구의 공작령에 속한다. 지축·도봉·모란·김포는 서울 슬롯 밖에 있다.
+기지 면적은 2026년의 유치·정비 규모이다. 서울 안의 여덟 기지는 신정·천왕·방화·군자·고덕·창동·신내·수서이다. 각 기지는 그 기지 곁의 역 거점을 쥔 세력에 딸린다. 지축·도봉·모란·김포는 서울 슬롯 밖에 있다.
 
-기지는 수리·대형 저장·공성에 쓰인다. 신정의 하역 당직은 멈춘 열차를 다시 움직이고 고덕의 정비 당직은 호송을 보낸다. 창동의 차륜과 제동 장치는 이웃 수장의 장부에 임대로 남아 있다. 배수 연못에는 수조 농어와 철새가 있다. 정비고 깊은 칸에는 반복 기체가 봉인되어 있다. 충전 단자와 유압 호스의 수리 범위는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
+기지는 수리·대형 저장·공성에 쓰인다. 신정의 하역 당직은 멈춘 열차를 다시 움직이고 고덕의 정비 당직은 호송을 보낸다. 창동의 차륜과 제동 장치는 이웃 역장의 장부에 임대로 남아 있다. 배수 연못에는 수조 농어와 철새가 있다. 정비고 깊은 칸에는 반복 기체가 봉인되어 있다. 충전 단자와 유압 호스의 수리 범위는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
 
 구로·금천 공단 동에서는 기지와 붙은 학교를 부품 건조장으로 쓴다. 도봉·노원의 주거 쉘은 창동 기지의 급수가 끊기면 물을 유지할 수 없다.
 
@@ -48837,7 +49661,7 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 
 | 구조 | 2026 출발점 | 개막에 하는 일 | 상세 문서 |
 |---|---|---|---|
-| 역 | 역 315곳과 대합실·승강장 | 요새, 배급 창구, 세력의 거점 | [서울 역 카탈로그](/wiki/Seoul-Station-Catalog/) |
+| 역 | 역 315곳과 대합실·승강장, 그 위 지상 성채 | 요새, 배급 창구, 역장이 쥔 세력의 영토 단위 | [서울 역 카탈로그](/wiki/Seoul-Station-Catalog/) |
 | 터널 | 지도 점에서 뽑은 인접 선로, 환승 | 허가된 통행, 침수와 봉쇄의 상태 | [서울과 지하철 레이어](/wiki/World-and-Subway-Layers/) |
 | 차량기지 | 신정·천왕·방화·군자·고덕·창동·신내·수서 | 수리, 유치, 차륜과 호송 | [세계 지도의 구성](/wiki/World-Map-Construction/) |
 | 정수장·수문 | 영등포·뚝섬·구의·암사 아리수 | 급수 서명, 갑문 당직 | [서울의 세 세력](/wiki/Sixteen-States/) |
@@ -51116,7 +51940,7 @@ The five desire scales are longing, possessiveness, risk, display and duration. 
 
 **A. Criteria for Organizational Values**
 
-Organization values were likewise built on the **same ten axes** as persons. The numbers were scored against the current charter, council majorities, and ledger practice. Within the Government, the authority number an individual Senator carried could differ from the authority number of the Government itself, and it was precisely in that difference that issues budded.
+Organization values were likewise built on the **same ten axes** as persons. The numbers were scored against the current charter, the decisions of common bodies such as the Board, and ledger practice. Within the Government, the authority number an individual commissioner carried could differ from the authority number of the Government itself, and it was precisely in that difference that issues budded.
 
 <a id="조직-정책-8칸"></a>
 
@@ -51129,7 +51953,7 @@ Organization policies have nine categories: war, migrants, water, labor, records
 | Slot | Choices | What it looked like in Seoul |
 |---|---|---|
 | War | Defense / limited war / preemption | Garrison only / protection army / preemptive occupation |
-| Migrants | Expulsion / quarantine admission / citizenship | Gate registers |
+| Migrants | Sending back / admission as the lowest class / ransom exchange | Gate registers, family hostages |
 | Water | Contract / minimum line / hostage | Cutoff sanctions |
 | Labor | Forced service / contract / civic service | The military-household register |
 | Records | Closed / cross-verified / fully public | Wills and ledgers |
@@ -51178,9 +52002,11 @@ Values stood for the practice the current majority followed.
 
 | Faction | Salient axes | Practice at the opening |
 |---|---|---|
-| Government | Authority (command), qualification (heredity) | Recognizes as citizens only those entered in its registers. Trades pass from parents to children. The President serves for life. |
-| Free City | Decentralization (living-sphere partition) | Each city holds its own power; there is no king. Goods and skills are exchanged, and doctors and food let it hold out. |
-| Arc | Authority (Hierophant and families) | Rule runs through families, and believers receive baptism. |
+| Government | Authority (command), qualification (heredity) | Recognizes as citizens only those entered in its register. Trades pass from parents to children. Rank is set by the number of stationmasters commanded, and the President appoints commissioners. The President serves for life. |
+| Free City | Decentralization (living-sphere partition), authority (toward equality and consensus) | Holds that refusing to be ruled is freedom. The Board appoints directors. Even so, the I family holds the office of Chair of the Board generation after generation. Doctors and food let it hold out. |
+| Arc | Authority (the Hierophant) | The Hierophant ordains cardinals, and believers receive baptism. It holds a monopoly on ancient data-center software. |
+
+All three factions take in people from another faction as the lowest class. They use the skills and never raise the standing. So even a faction with a high openness value finds it hard to go beyond "admission as the lowest class" in its migrant policy. Details are in [Human Resource Movement](/wiki/Human-Resource-Movement/).
 ', '**가. 가치관 척도의 의의**
 
 성격과 야망, 공포, 가치관은 인물의 판단과 행동에 영향을 준다. 가치관은 권위·개방·무력·물질·공동·원칙·공개·자격·분산·변혁의 열 가지 기준으로 살핀다. 같은 문제에서도 가치관에 따라 선택하는 방법이 달라진다. 조직의 가치관에도 같은 기준이 적용되며, 실제 의사결정과 운영 관행에서 그 성향이 드러난다. 지도자가 바뀌면 조직의 정책도 달라질 수 있다.
@@ -51232,7 +52058,7 @@ Values stood for the practice the current majority followed.
 
 **가. 조직 가치관의 기준**
 
-조직 가치관도 인물과 **같은 10축**으로 구성한다. 값은 현재 헌장, 평의회 다수결, 장부 관행을 기준으로 매긴다. 정부에서 상원의원 개인의 권위 숫자와 정부의 권위 숫자는 다를 수 있다. 이 차이가 쟁점이 된다.
+조직 가치관도 인물과 **같은 10축**으로 구성한다. 값은 현재 헌장, 이사회 같은 공동 기구의 의결, 장부 관행을 기준으로 매긴다. 정부에서 청장 개인의 권위 숫자와 정부의 권위 숫자는 다를 수 있다. 이 차이가 쟁점이 된다.
 
 <a id="조직-정책-8칸"></a>
 
@@ -51245,7 +52071,7 @@ Values stood for the practice the current majority followed.
 | 슬롯 | 선택지 | 서울에서 보이는 일 |
 |---|---|---|
 | 전쟁 | 방어 / 제한전 / 선제 | 수비대만 / 보호군 / 선제 점령 |
-| 이주민 | 추방 / 검역수용 / 시민권 | 관문 명부 |
+| 이주민 | 돌려보냄 / 최하층 수용 / 몸값 교환 | 관문 명부, 가족 인질 |
 | 급수 | 계약 / 최저선 / 볼모 | 단수 제재 |
 | 노동 | 강제복무 / 계약 / 시민복무 | 군사호적 |
 | 기록 | 비공개 / 교차검증 / 전면공개 | 유언·원장 |
@@ -51294,9 +52120,11 @@ Values stood for the practice the current majority followed.
 
 | 세력 | 눈에 띄는 축 | 개막 시점의 관행 |
 |---|---|---|
-| 정부 | 권위(명령·집정), 자격(세습) | 장부에 오른 사람만 국민으로 인정한다. 직업은 부모에서 자식으로 물려준다. 대통령은 종신이다. |
-| 자유도시 | 분산(생활권 분할) | 도시마다 각자 권력이고 왕은 없다. 물자와 기술을 주고받고, 의사와 식량으로 오래 버틴다. |
-| 아크 | 권위(교주와 가문) | 통치는 가문을 단위로 하며, 신도는 세례를 받는다. |
+| 정부 | 권위(명령·집정), 자격(세습) | 명부에 오른 사람만 국민으로 인정한다. 직업은 부모에서 자식으로 물려준다. 계급은 거느린 역장 수로 정하고, 청장은 대통령이 임명한다. 대통령은 종신이다. |
+| 자유도시들 | 분산(생활권 분할), 권위(평등·합의 쪽) | 지배를 거부하는 것을 자유로 여긴다. 이사는 이사회가 임명한다. 그러면서도 이씨 가문이 대대로 이사회장을 맡는다. 의사와 식량으로 오래 버틴다. |
+| 아크 | 권위(교주) | 추기경은 교주가 서품하고, 신도는 세례를 받는다. 고대 데이터센터 소프트웨어를 독점한다. |
+
+세 세력 모두 다른 세력에서 넘어온 사람을 최하층민으로 받는다. 기술은 쓰고 신분은 올리지 않는다. 그래서 개방 축의 값이 높아도 이주민 정책은 ''최하층 수용''을 넘기 어렵다. 자세한 내용은 [인적자원 이동](/wiki/Human-Resource-Movement/)에 있다.
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('World-Expansion-Index', 'World Expansion Index', '세계 확장 색인', 'overview', 3, '<a id="World-Expansion-Index-heading-0001"></a>
 
@@ -52571,7 +53399,7 @@ An administrative map lays out Seoul from Jongno-gu to Gangdong-gu. The rail net
 
 B. Post-collapse geography
 
-The geography that grounded the new age consisted of the 25 autonomous districts, the principal stations within them, the key facilities at their sides, and the 25 duchies of the three factions. How buildings and facilities found new uses after the collapse was an important key to understanding the survivors'' lives.
+The geography that grounded the new age consisted of the 25 autonomous districts, the principal stations within them, the key facilities at their sides, and the station strongholds shared out among the three factions. How buildings and facilities found new uses after the collapse was an important key to understanding the survivors'' lives.
 
 C. Related documents
 
@@ -52587,7 +53415,7 @@ Jongno-gu, Jung-gu, Yongsan-gu, Seongdong-gu, Gwangjin-gu, Dongdaemun-gu, Jungna
 
 B. Districts and spheres
 
-These twenty-five remained the world map''s core sectors. Each district is one duchy, and a duchy is called by its district''s name.
+These twenty-five remained the world map''s core sectors. A district is a unit of place names and areas, not a unit of territory. Territory is counted by station.
 
 ## The Station List
 
@@ -52615,11 +53443,11 @@ C. Markets and support facilities
 
 The principal markets where bulk goods moved — Garak Market, Gangseo Market, Yanggok Market, and the Noryangjin Fisheries Market — formed the skeleton. Beyond them, hospitals, fire stations, police stations, substations, and rail marshaling yards remained beside the stations, backing each stronghold''s role.
 
-## Laying the Duchies Over the Districts
+## Laying Faction Territory Over the Districts
 
-A. Basis of the duchies
+A. Basis of territory
 
-The duchies do not replace the districts. Place names, stations, and facilities remain as they were, and only political ownership is divided by district. The Government holds the 14 districts north of the Han River, the Free City the 7 southwestern districts, and the Arc the 4 Gangnam districts. A Government duchy is held by the Senator elected from that district. The Gwanak-gu duchy is held by I Ilseop, Duke of Gwanak.
+Faction territory does not replace the districts. Place names, stations, and facilities remain as they were. The smallest unit of territory is the station, and a "station" means the subway station together with the surface stronghold above it. Counted by the stations they hold, the Government has 153 station strongholds in the 14 districts north of the Han River, the Free City 77 in the 7 southwestern districts, and the Arc 77 in the 4 Gangnam districts.
 
 | District | Faction |
 |---|---|
@@ -52651,17 +53479,43 @@ The duchies do not replace the districts. Place names, stations, and facilities 
 
 B. Ownership and occupation
 
-The opening map derives surface control at 311 stations from the territory register. Gwangmyeong Sageori, Daechi, and Seoksu lie outside the mapped surface regions; each station''s interior has its own control record.
+The faction and stage of each of the 307 station strongholds are in [Station Strongholds](/wiki/strongholds/). The opening map derives surface control at 311 stations from the territory register. Gwangmyeong Sageori, Daechi, and Seoksu lie outside the mapped surface regions; each station''s interior has its own control record.
+
+C. People who change sides
+
+Whatever rank people held at home, those who move to another faction lose their property and territory and fall to the lowest class. The faction that takes them in uses their skills and does not raise their standing.
+
+## Stations and Rank
+
+A. The rank ladder
+
+Rank in all three factions is set by the number of stationmasters a person commands. A person who holds one station is a stationmaster.
+
+| Stationmasters commanded | Government | Arc | Free City |
+|---|---|---|---|
+| 1 (holds one station) | Stationmaster | Stationmaster | Stationmaster |
+| 2-4 | Division Chief | Division Chief | Division Chief |
+| 5-9 | Bureau Chief | Bishop | Guild Master |
+| 10 or more (all stationmasters below) | Commissioner | Cardinal | Director |
+| Top | President (Kim Yeongyu) | Hierophant (Go Yejin) | Chair of the Board (I Ilseop) |
+
+B. Appointment and precedence
+
+The ten-stationmaster rank is reached by appointment. The President appoints Government commissioners, the Hierophant ordains Arc cardinals, and the board appoints Free City directors. Some who qualify are never appointed. Unofficial precedence among division chiefs follows the number of stationmasters they command and the value of their stations.
+
+C. The value of a station
+
+A station is worth more the more transfer lines meet in it and the deeper it goes. The stationmaster of a surface station ranks lowest among stationmasters. Everyone who holds no station is an ordinary citizen.
 
 ## Nodes and Layers
 
 A. Stronghold layers
 
-The single stronghold called a station divided into several vertical layers. Concourse, transfer corridors, deep tunnels — each layer carried its own role and its own lurking dangers.
+The single stronghold called a station divided into several vertical layers. Concourse, transfer corridors, deep tunnels — each layer carried its own role and its own lurking dangers. The deeper the level, the higher the people who live there: deep levels keep intruders out behind shutters, make the exits easy to control and watch, and are warmed by the ground.
 
 | Layer | Work | Risk |
 |---|---|---|
-| Surface ruins | Gathering, solar power, observation | Weather, collapse |
+| Surface stronghold | Gathering, solar power, observation, citizens'' housing (the higher the floor, the lower the people) | Cold, strong wind, drone watching and attack, collapse |
 | Station concourse | Markets, habitation, administration | Crowding, fire |
 | Platform · tracks | Movement, defense, freight | Bottlenecks, ambush |
 | Transfer corridors | Politics and logistics between lines | Blockades, transit tolls |
@@ -52679,7 +53533,7 @@ The passages joining layer to layer and station to station changed state without
 
 나. 붕괴 이후의 지리
 
-새로운 시대의 지리는 25개 자치구와 그 안의 주요 역, 주변의 주요 시설, 세 세력의 25공작령으로 이루어진다. 건물과 시설은 붕괴 이후 쓰임이 바뀌었다.
+새로운 시대의 지리는 25개 자치구와 그 안의 주요 역, 주변의 주요 시설, 세 세력이 나눠 가진 역 거점으로 이루어진다. 건물과 시설은 붕괴 이후 쓰임이 바뀌었다.
 
 다. 관련 문서
 
@@ -52695,13 +53549,13 @@ The passages joining layer to layer and station to station changed state without
 
 나. 구역과 권역
 
-이 25개가 세계 지도의 주요 구역으로 남는다. 구 하나가 공작령 하나다. 공작령은 구 이름으로 부른다.
+이 25개가 세계 지도의 주요 구역으로 남는다. 구는 지명과 구역의 단위일 뿐 영토의 단위가 아니다. 영토는 역 단위로 센다.
 
 ## 역 목록
 
 가. 역명과 수
 
-서울 역 카탈로그에는 관측 명칭 334행이 실렸다. 공식 부제와 표기 차이를 합친 위키 지도에는 역 315곳이 표시된다. 외곽 광역망은 별도로 이어진다. 서울역, 시청, 강남, 잠실, 여의도 등의 이름은 각 거점을 부르는 데 쓰인다.
+서울 역 카탈로그에는 관측 명칭 334행이 실렸다. 공식 신도와 표기 차이를 합친 위키 지도에는 역 315곳이 표시된다. 외곽 광역망은 별도로 이어진다. 서울역, 시청, 강남, 잠실, 여의도 등의 이름은 각 거점을 부르는 데 쓰인다.
 
 나. 자치구별 밀도
 
@@ -52723,11 +53577,11 @@ The passages joining layer to layer and station to station changed state without
 
 대규모 물자가 오가는 주요 시장은 가락시장, 강서시장, 양곡시장, 노량진 수산시장 등 4곳이다. 병원, 소방서, 경찰서, 변전소, 철도 조차장 등이 역 주변에 남아 거점 운영에 쓰인다.
 
-## 공작령을 구 위에 얹기
+## 세력 영토를 구 위에 얹기
 
-가. 공작령의 기준
+가. 영토의 기준
 
-공작령은 구를 대체하지 않는다. 지명과 역과 시설은 그대로 남고, 정치적 소유만 구 단위로 나뉜다. 정부가 한강 북쪽 14구, 자유도시가 남서쪽 7구, 아크가 강남 4구를 쥔다. 정부 공작령은 그 구에서 뽑힌 상원의원이 쥔다. 관악구 공작령은 관악 공작 이일섭이 쥔다.
+세력의 영토는 구를 대체하지 않는다. 지명과 역과 시설은 그대로 남는다. 영토의 가장 작은 단위는 역이며, ''역''은 지하철역과 그 위 지상 성채 영역을 함께 이른다. 역이 모인 범위로 보면 정부가 한강 북쪽 14구의 역 거점 153곳, 자유도시가 남서쪽 7구의 77곳, 아크가 강남 4구의 77곳을 쥔다.
 
 | 구 | 세력 |
 |---|---|
@@ -52759,17 +53613,43 @@ The passages joining layer to layer and station to station changed state without
 
 나. 소유와 점령
 
-개막 지도는 311개 역의 지표 통제를 영토 원장에서 가져온다. 광명사거리·대치·석수역은 지표 영토 원장의 지도 범위 밖에 있다. 각 역의 내부 통제는 지표와 별도 기록을 따른다.
+역 거점 307곳의 세력과 단계는 [역 거점](/wiki/strongholds/)에 있다. 개막 지도는 311개 역의 지표 통제를 영토 원장에서 가져온다. 광명사거리·대치·석수역은 지표 영토 원장의 지도 범위 밖에 있다. 각 역의 내부 통제는 지표와 별도 기록을 따른다.
+
+다. 세력을 옮긴 사람
+
+본진의 계급과 상관없이 다른 세력으로 옮겨 가면 가진 자산과 영토를 빼앗기고 최하층민이 된다. 받아 간 세력은 기술만 쓰고 신분을 올려 주지 않는다.
+
+## 역과 계급
+
+가. 계급 사다리
+
+세 세력의 계급은 거느린 역장 수로 정해진다. 역 하나를 가진 사람이 역장이다.
+
+| 산하 역장 수 | 정부 | 아크 | 자유도시 |
+|---|---|---|---|
+| 1 (역 1개 소유) | 역장 | 역장 | 역장 |
+| 2~4 | 본부장 | 본부장 | 본부장 |
+| 5~9 | 국장 | 주교 | 조합장 |
+| 10 이상 (산하 역장 합계) | 청장 | 추기경 | 이사 |
+| 최상단 | 대통령(김연규) | 교주(고예진) | 이사회장(이일섭) |
+
+나. 임명과 서열
+
+10명 단계는 임명으로 오른다. 정부 청장은 대통령이 임명하고, 아크 추기경은 교주가 서품하고, 자유도시 이사는 이사회가 임명한다. 자격을 갖추고도 임명받지 못한 사람이 생긴다. 본부장 사이의 비공식 서열은 거느린 역장 수와 역의 가치로 정해진다.
+
+다. 역의 가치
+
+역의 가치는 환승 노선이 많을수록, 지하로 깊을수록 높다. 지상역 역장은 역장 가운데 최하급이다. 역을 가지지 못한 사람은 모두 일반 시민이다.
 
 ## 노드와 층
 
 가. 거점의 층
 
-역 거점은 여러 개의 수직 층으로 나뉜다. 대합실, 환승 통로, 심층 터널 등 각 층은 맡은 역할과 위험이 서로 다르다.
+역 거점은 여러 개의 수직 층으로 나뉜다. 대합실, 환승 통로, 심층 터널 등 각 층은 맡은 역할과 위험이 서로 다르다. 지하로 깊을수록 윗사람이 산다. 깊은 층은 셔터로 침입을 막고, 출구를 통제하고 감시하기 쉽고, 지열로 따뜻하다.
 
 | 층 | 하는 일 | 위험 |
 |---|---|---|
-| 지상 폐허 | 채집, 태양광, 관측 | 기후, 붕괴 |
+| 지상 성채 | 채집, 태양광, 관측, 시민 거주(높은 층일수록 아랫사람) | 추위, 강풍, 드론 감시와 공격, 붕괴 |
 | 역사 대합실 | 시장, 주거, 행정 | 과밀, 화재 |
 | 승강장·선로 | 이동, 방어, 화물 | 병목, 매복 |
 | 환승 통로 | 노선 사이 정치·물류 | 봉쇄, 통행세 |
@@ -52790,23 +53670,35 @@ The setting is Seoul in the winter of 2126. About a hundred years ago, around 20
 
 Seoul has only three political powers. The details are in [The Three Factions of Seoul](/wiki/Sixteen-States/) and [Characters, Factions, and Trades](/wiki/Characters-Factions-and-Professions/).
 
-- **Government**: the 14 districts north of the Han River. On paper it keeps the ministries of the three branches and a multi-party system, but in practice there are only two parties, the OMO Party and the Claw Party. The Government recognizes as citizens only the people recorded in its own ledgers.
-- **Free City**: the 7 southwestern districts. Independent city-states with no king, now called the Union when taken together. Most residents are skilled hands who live by their work. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. The Free City''s weapons are people and food, and its doctors let it hold out longest.
-- **Arc**: the 4 Gangnam districts. It split off from the Free City and is ruled clan by clan around the Hierophant, Go Ye-jin.
+- **Government**: the 14 districts north of the Han River. On paper it keeps the ministries of the three branches and a multi-party system, but in practice there are only two parties, the OMO Party and the Claw Party. The Government recognizes as citizens only the people recorded in its own ledgers. Its President is Kim Yeongyu.
+- **Free City**: the 7 southwestern districts. Independent cities standing on their own, holding that refusing to be ruled is freedom. There is no name for them taken together. The Chair of the Board is I Ilseop. Most residents are skilled hands who live by their work. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. The Free City''s weapons are people and food, and its doctors let it hold out longest.
+- **Arc**: the 4 Gangnam districts. It split off from the Free City and is led by the Hierophant, Go Ye-jin, a former engineer.
 
 How families hold their places inside the three factions is covered in [Families and the Three Factions](/wiki/Chaebol-Houses-and-Century-Factions/). Scarcity made children take over their parents'' work, and that is how a vertical class structure hardened.
 
-## The 25 Duchies
+## Stations and Territory
 
-Each district is one duchy. Seoul has twenty-five duchies, split 14 for the Government, 7 for the Free City, and 4 for the Arc. Place names, stations, and geography stay as they were. Only the political ownership above them is divided by district. The district-by-district table is in [The Three Factions of Seoul](/wiki/Sixteen-States/) and [Offices and Ranks](/wiki/Offices-and-Ranks/). How the duchies appear on the map is explained in [World Map](/wiki/World-and-Subway-Layers/) and [The Structure of the World Map](/wiki/World-Map-Construction/).
+Seoul''s twenty-five districts are split 14 for the Government, 7 for the Free City, and 4 for the Arc. Place names, stations, and geography stay as they were. The smallest unit of rule is not the district but the station: a subway station together with the fortified ground above it. A station is worth more the more transfer lines it has and the deeper it goes, and above-ground stations are worth least. The district-by-district table is in [The Three Factions of Seoul](/wiki/Sixteen-States/) and [Offices and Ranks](/wiki/Offices-and-Ranks/). How the factions appear on the map is explained in [World Map](/wiki/World-and-Subway-Layers/) and [The Structure of the World Map](/wiki/World-Map-Construction/).
+
+How deep a person lives shows their class. Underground, deeper means higher, because shutters keep intruders out, exits are easy to control and watch, and there is geothermal heat. Above ground, higher means lower: the upper floors are cold and windy and exposed to air fighting, surveillance and attack, drones included. Everyone who holds no station is an ordinary citizen, and among them those on the ground floor stand highest. Each faction''s founding retainers receive the right to live underground first.
 
 ## Offices and Titles
 
-[Offices and Ranks](/wiki/Offices-and-Ranks/) sets out the positions of the three factions.
+[Offices and Ranks](/wiki/Offices-and-Ranks/) sets out the positions of the three factions. The three share one frame, and a person''s step is set by the number of Stationmasters under them.
 
-- Government: the National Assembly member elected in each district holds that district''s duchy under the title Senator. The Senators produce the President from among themselves, and the President serves for life.
-- Free City: I Ilseop holds the duchy of Gwanak-gu as the Duke of Gwanak. The holders of the other six cities and their titles are not recorded.
-- Arc: Go Ye-jin is the Hierophant, and believers call her the Messiah.
+| Stationmasters under them | Government | Arc | Free City |
+|---|---|---|---|
+| 1 | Stationmaster | Stationmaster | Stationmaster |
+| 2 to 4 | Division Chief | Division Chief | Division Chief |
+| 5 to 9 | Bureau Chief | Bishop | Guild Master |
+| 10 or more | Commissioner | Cardinal | Director |
+| Top | President (Kim Yeongyu) | Hierophant (Go Ye-jin) | Chair of the Board (I Ilseop) |
+
+- Government: Commissioners are appointed by the President. The President serves for life.
+- Arc: Cardinals are ordained by the Hierophant. Believers call Go Ye-jin the Messiah.
+- Free City: Directors are appointed by the Board. By rank I Ilseop''s house is a Director like any other, but because people want them to lead, the house has held the Chair of the Board for generations.
+
+A person who moves to another faction loses their assets and territory and becomes one of the lowest class, whatever their rank at home. So people move between factions mostly through abduction and capture.
 
 How to read names by bon-gwan and generation names is in [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/), and the yardsticks for the judgment of people and organizations are in [Values and Policy Scales](/wiki/Values-and-Policy-Scales/). The scales measure ten axes from −100 to 100.
 
@@ -52821,13 +53713,13 @@ The chronology is in the [Century Annals](/wiki/Century-Annals/) and the [Scenar
 | c. 2117 | The first baptism, of twelve people |
 | 2120 | At negotiations with the shelters near Tancheon, Ji Yeon-hui takes her place at Go Ye-jin''s side |
 | c. 2122 | The Gangnam shelters are united under the name Arc |
-| Winter 2126 | The present, before the third water-supply contract |
+| Winter 2126 | The present |
 
 The strands of the story are in [Regional and Physical AI Arcs](/wiki/Regional-Physical-AI-Arcs/), and records from around the Great Blackout are collected in [The Stories](/wiki/Oral-Stories/). A single-scene commission is in [Sindorim Junction Cargo Gate](/wiki/Sindorim-Junction-Cargo-Gate/).
 
 ## Culture and Faith
 
-According to [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/), the only organized religion in Seoul in 2126 is the Arc. The Arc replaced every earlier religion. Believers replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. The Arc keeps a consecration chamber beneath the old Suseo rail depot.
+According to [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/), the only organized religion in Seoul in 2126 is the Arc. The Arc replaced every earlier religion. Believers replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor.
 
 Daily life is covered in [Food Culture](/wiki/Food-Culture/). Residents receive rations at the station windows, and the habit of taking water first and rice after remains. Illness and medicine are in [Ailments and Symptoms](/wiki/Ailments/), and the five corridors of immigrant life inside Seoul are in [Diaspora Corridors](/wiki/Diaspora-Corridors/).
 
@@ -52872,23 +53764,35 @@ Look up characters on the [People](/wiki/people/) page. The additional people ta
 
 서울의 정치 세력은 셋뿐이다. 자세한 내용은 [서울의 세 세력](/wiki/Sixteen-States/)과 [인물·세력·생업](/wiki/Characters-Factions-and-Professions/)에 있다.
 
-- **정부**(Government): 한강 북쪽 14구. 서류상 삼권 부처와 다당제를 유지하지만 실제로는 OMO당과 클로당 두 당뿐이다. 정부는 자기 장부에 기록된 사람만 국민으로 인정한다.
-- **자유도시**(Free City): 남서쪽 7구. 왕 없이 독립한 도시국가들이며, 지금은 묶어서 유니온(Union)이라고 부른다. 주민 대부분은 손으로 먹고사는 기술자다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다.
-- **아크**(Arc): 강남 4구. 자유도시에서 갈라져 나왔고, 교주 고예진을 중심으로 가문 단위로 다스린다.
+- **정부**(Government): 한강 북쪽 14구. 서류상 삼권 부처와 다당제를 유지하지만 실제로는 OMO당과 클로당 두 당뿐이다. 정부는 자기 장부에 기록된 사람만 국민으로 인정한다. 대통령은 김연규다.
+- **자유도시**(Free City): 남서쪽 7구. 각자 선 독립 도시들이며, 지배를 거부하는 것을 자유로 여긴다. 묶어 부르는 이름은 없다. 이사회장은 이일섭이다. 주민 대부분은 손으로 먹고사는 기술자다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다.
+- **아크**(Arc): 강남 4구. 자유도시에서 갈라져 나왔고, 엔지니어 출신 교주 고예진이 이끈다.
 
 가문이 세 세력 안에서 자리를 잇는 방식은 [가문과 세 세력](/wiki/Chaebol-Houses-and-Century-Factions/)이 다룬다. 결핍 때문에 자식이 부모의 일을 이어 하게 됐고, 그렇게 수직 계층이 굳었다.
 
-## 25공작령
+## 역과 영토
 
-구 하나가 공작령 하나다. 서울의 공작령은 스물다섯 개이고, 정부 14, 자유도시 7, 아크 4로 나뉜다. 지명과 역과 지리는 그대로 남고 그 위의 정치적 소유만 구 단위로 갈린다. 구별 배정표는 [서울의 세 세력](/wiki/Sixteen-States/)과 [관직](/wiki/Offices-and-Ranks/)에 있다. 지도 위의 공작령 표시는 [세계 지도](/wiki/World-and-Subway-Layers/)와 [세계 지도의 구성](/wiki/World-Map-Construction/)이 설명한다.
+서울의 스물다섯 구는 정부 14, 자유도시 7, 아크 4로 나뉜다. 지명과 역과 지리는 그대로 남는다. 다스림의 가장 작은 단위는 구가 아니라 역이다. 역은 지하철역과 그 위 지상 성채 영역을 함께 이른다. 역의 가치는 환승 노선이 많을수록, 지하로 깊을수록 높고, 지상역은 가장 낮다. 구별 배정표는 [서울의 세 세력](/wiki/Sixteen-States/)과 [관직](/wiki/Offices-and-Ranks/)에 있다. 지도 위의 세력 표시는 [세계 지도](/wiki/World-and-Subway-Layers/)와 [세계 지도의 구성](/wiki/World-Map-Construction/)이 설명한다.
+
+사는 깊이가 계층을 드러낸다. 지하는 깊을수록 상류다. 셔터로 침입을 막고, 출구를 통제하고 감시하기 쉽고, 지열이 있기 때문이다. 지상은 높을수록 하층이다. 춥고 바람이 세며, 드론을 포함한 공중전과 감시, 공격에 약하다. 역을 가지지 못한 사람은 모두 일반 시민이고, 그 가운데 지상 1층에 사는 사람이 가장 위다. 지하 거주권은 각 세력의 개국공신이 먼저 받는다.
 
 ## 직위와 칭호
 
-[관직](/wiki/Offices-and-Ranks/)은 세 세력의 직위를 정리한다.
+[관직](/wiki/Offices-and-Ranks/)은 세 세력의 직위를 정리한다. 세 세력은 같은 골격을 쓰고, 단계는 그 사람 아래에 있는 역장의 수로 정한다.
 
-- 정부: 각 구에서 뽑힌 국회의원이 그 구의 공작령을 쥐며, 칭호는 상원의원(Senator)이다. 상원의원들이 자기들 가운데서 대통령을 내고, 대통령은 종신이다.
-- 자유도시: 이일섭이 관악 공작(Duke of Gwanak)으로 관악구 공작령을 쥔다. 다른 여섯 도시의 보유자와 칭호는 기록되지 않았다.
-- 아크: 고예진이 교주(Hierophant)이며, 신도들은 그를 메시아(Messiah)라고 부른다.
+| 산하 역장 수 | 정부 | 아크 | 자유도시 |
+|---|---|---|---|
+| 1 | 역장 | 역장 | 역장 |
+| 2~4 | 본부장 | 본부장 | 본부장 |
+| 5~9 | 국장 | 주교 | 조합장 |
+| 10 이상 | 청장 | 추기경 | 이사 |
+| 최상단 | 대통령(김연규) | 교주(고예진) | 이사회장(이일섭) |
+
+- 정부: 청장은 대통령이 임명한다. 대통령은 종신이다.
+- 아크: 추기경은 교주가 서품한다. 신도들은 고예진을 메시아(Messiah)라고 부른다.
+- 자유도시: 이사는 이사회가 임명한다. 이일섭의 가문은 계급으로는 다른 이사와 같지만, 사람들이 그들이 이끌어 주기를 바라므로 대대로 이사회장을 맡는다.
+
+다른 세력으로 옮겨 간 사람은 본진의 계급과 상관없이 자산과 영토를 빼앗기고 최하층민이 된다. 그래서 세력 사이에서 사람이 옮겨 가는 일은 주로 납치와 포획으로 일어난다.
 
 본관과 항렬로 이름을 읽는 법은 [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/)에, 인물과 조직의 판단 기준은 [가치관과 정책 척도](/wiki/Values-and-Policy-Scales/)에 있다. 척도는 열 가지 축을 −100부터 100까지 잰다.
 
@@ -52903,13 +53807,13 @@ Look up characters on the [People](/wiki/people/) page. The additional people ta
 | 2117 무렵 | 첫 세례. 열두 명이다 |
 | 2120 | 지연희가 탄천 쪽 대피소 교섭 자리에서 고예진 곁에 선다 |
 | 2122 무렵 | 강남 대피소들이 아크라는 이름으로 묶인다 |
-| 2126 겨울 | 현재. 세 번째 급수계약을 앞둔 때 |
+| 2126 겨울 | 현재 |
 
 이야기의 갈래는 [권역·피지컬 AI 서사선](/wiki/Regional-Physical-AI-Arcs/)이, 대정전 무렵의 기록은 [이야기](/wiki/Oral-Stories/)가 모은다. 한 장면 단위의 의뢰는 [신도림 연결부 화물문](/wiki/Sindorim-Junction-Cargo-Gate/)에 있다.
 
 ## 문화와 신앙
 
-[신앙과 문화의 분열](/wiki/Faith-Culture-Schism/)에 따르면 2126년 서울에서 조직된 종교는 아크 하나다. 아크는 이전의 모든 종교를 대체했다. 신도는 몸의 부위를 기계로 바꾸고, 이것을 세례(baptism)라고 부른다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다. 아크는 수서의 옛 차량기지 아래에 봉헌실을 둔다.
+[신앙과 문화의 분열](/wiki/Faith-Culture-Schism/)에 따르면 2126년 서울에서 조직된 종교는 아크 하나다. 아크는 이전의 모든 종교를 대체했다. 신도는 몸의 부위를 기계로 바꾸고, 이것을 세례(baptism)라고 부른다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다.
 
 생활 문화는 [식문화](/wiki/Food-Culture/)가 다룬다. 주민은 역 창구에서 배급을 받고, 물을 먼저 받고 밥을 받는 습관이 남아 있다. 병과 약품은 [질병과 증상](/wiki/Ailments/)에, 서울 안 이주민 생활권 다섯 회랑은 [이주민 회랑](/wiki/Diaspora-Corridors/)에 있다.
 
@@ -52947,7 +53851,7 @@ Look up characters on the [People](/wiki/people/) page. The additional people ta
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('World-Relation-Ledger', 'World Expansion Relation Ledger', '세계 확장 관계 원장', 'factions', 2, '<a id="World-Relation-Ledger-heading-0001"></a>
 
-This ledger gathers operating organisations, old records of theatres outside Seoul, synthetic human custody, and contract relations between organisations in one table. The destination of each operating link names one of the three factions (Government, Free City, Arc) and a district.
+This ledger gathers operating organisations, old records of theatres outside Seoul, synthetic human custody, and contract relations between organisations in one table. Below it, the relations between the three factions and the relations within the ranks are listed separately. The destination of each operating link names one of the three factions (Government, Free City, Arc) and a district.
 
 | From | Kind | To | Reason |
 |---|---|---|---|
@@ -52988,9 +53892,35 @@ This ledger gathers operating organisations, old records of theatres outside Seo
 | Magok Seed House | affiliate | Yongsan Convoy House | kindred food-supply and transport contracts split the Garak auction-floor volume |
 | Yongsan Ship House | build-contract | Geumcheon District Office Machinery House | container ship-repair payments traded against rights to the Yongsan riverside wharf |
 | Dongdaeipgu Trading House | retail-rivalry | Seoul Station Inventory House | bids split over protocol goods at Seoul Station and access to the bonded warehouse |
+
+## Relations Between the Three Factions
+
+These are faction-level relations under v4. No faction can fully use what it has on its own, so most relations come from depending on people and software that another faction holds. Details are in [The Three Factions of Seoul](/wiki/Sixteen-States/).
+
+| From | Kind | To | Reason |
+|---|---|---|---|
+| Government | depends_on | Free City | It has no medical technicians and can only give first aid |
+| Government | depends_on | Arc | Advanced weapons run fully only with Arc software |
+| Free City | depends_on | Government | The officer class and original seed stock are in the Government |
+| Free City | depends_on | Arc | Medical robots move only with Arc software |
+| Arc | depends_on | Free City | Direct neural links are performed by Free City doctors |
+| Arc | split_from | Free City | The Arc split off from the Free City |
+| Government, Free City, Arc | takes_people_from | one another | Abduction and capture are the core events of human resource movement |
+
+## Relations Within the Ranks
+
+These relations link higher and lower ranks inside each faction. The rank table is in [Offices and Ranks](/wiki/Offices-and-Ranks/).
+
+| From | Kind | To | Reason |
+|---|---|---|---|
+| President | appoints | Commissioner | The Government''s ten-stationmaster rung is appointed by the President |
+| Hierophant | ordains | Cardinal | The Arc''s ten-stationmaster rung is ordained by the Hierophant |
+| The Board | appoints | Director | The Free City''s ten-stationmaster rung is appointed by the Board |
+| The I family | holds_hereditary | Chair of the Board | People want the I family to lead, so they entrust the office to it generation after generation |
+| Division chiefs, bureau chiefs, bishops, guild masters | commands | Stationmaster | Rank is set by the total number of stationmasters below |
 ', '<a id="World-Relation-Ledger-heading-0001"></a>
 
-이 원장은 운영 조직, 서울 밖 옛 전구 기록, 합성 인간 보관, 조직 사이 계약 관계를 한 표에 모은다. 운영 연결의 도착 칸은 그 조직이 일하는 세력(정부, 자유도시, 아크)과 구를 적는다.
+이 원장은 운영 조직, 서울 밖 옛 전구 기록, 합성 인간 보관, 조직 사이 계약 관계를 한 표에 모은다. 그 아래에 세 세력 사이의 관계와 계급 안의 관계를 따로 적는다. 운영 연결의 도착 칸은 그 조직이 일하는 세력(정부, 자유도시, 아크)과 구를 적는다.
 
 | 출발 | 유형 | 도착 | 근거 |
 |---|---|---|---|
@@ -53031,6 +53961,32 @@ This ledger gathers operating organisations, old records of theatres outside Seo
 | 마곡종자가 | affiliate | 용산호송가 | 같은 계열의 식자재와 운송 계약이 가락 경매장 물량을 나눈다 |
 | 용산선박가 | build-contract | 금천구청중기가 | 컨테이너 선복 수선 대금이 용산 강변 부두 이용권과 맞바뀐다 |
 | 동대입구객사가 | retail-rivalry | 서울역재고가 | 서울역 의전 물자와 면세 창고 접근권을 두고 입찰이 갈린다 |
+
+## 세 세력 사이의 관계
+
+v4 기준의 세력 단위 관계다. 어느 세력도 혼자서는 가진 것을 완전히 쓰지 못하므로, 관계의 대부분은 남이 가진 사람과 소프트웨어에 기대는 데서 나온다. 자세한 내용은 [서울의 세 세력](/wiki/Sixteen-States/)에 있다.
+
+| 출발 | 유형 | 도착 | 근거 |
+|---|---|---|---|
+| 정부 | depends_on | 자유도시들 | 의료기술자가 없어 응급 처치까지만 한다 |
+| 정부 | depends_on | 아크 | 첨단 무기는 아크 소프트웨어가 있어야 완전히 돈다 |
+| 자유도시들 | depends_on | 정부 | 장교층과 원종 씨앗이 정부에 있다 |
+| 자유도시들 | depends_on | 아크 | 의료로봇은 아크 소프트웨어가 있어야 움직인다 |
+| 아크 | depends_on | 자유도시들 | 신경 직결은 자유도시 의사가 시술한다 |
+| 아크 | split_from | 자유도시들 | 아크는 자유도시에서 갈라져 나왔다 |
+| 정부·자유도시들·아크 | takes_people_from | 서로 | 납치와 포획이 인적자원 이동의 핵심 사건이다 |
+
+## 계급 안의 관계
+
+각 세력 안에서 위아래를 잇는 관계다. 계급표는 [관직](/wiki/Offices-and-Ranks/)에 있다.
+
+| 출발 | 유형 | 도착 | 근거 |
+|---|---|---|---|
+| 대통령 | appoints | 청장 | 정부의 열 명 단계는 대통령이 임명한다 |
+| 교주 | ordains | 추기경 | 아크의 열 명 단계는 교주가 서품한다 |
+| 이사회 | appoints | 이사 | 자유도시의 열 명 단계는 이사회가 임명한다 |
+| 이씨 가문 | holds_hereditary | 이사회장 | 사람들이 이씨 가문의 지도를 바라 대대로 맡긴다 |
+| 본부장·국장·주교·조합장 | commands | 역장 | 계급은 산하 역장의 합계로 정해진다 |
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('World-Unbinding', 'The Great Blackout', '대정전', 'overview', 1, '## Name of the Event
 
@@ -53117,25 +54073,25 @@ Modern and future weapons, humanoids, and machines still exist, but they are sca
 
 ## The Three Factions of Seoul and the World Beyond
 
-In 2126, about a hundred years after the Great Blackout, three factions remain in Seoul: the Government, the Free City, and the Arc. Each district is one duchy, and the 25 duchies are divided as follows: 14 for the Government, 7 for the Free City, and 4 for the Arc. People live in the subway stations, and only as many survived as the stations could hold. The map structure of stations and lines is described in [Seoul and Subway Layers](/wiki/World-and-Subway-Layers/).
+In 2126, about a hundred years after the Great Blackout, three factions remain in Seoul: the Government, the Free City, and the Arc. Seoul''s twenty-five districts are divided 14 for the Government, 7 for the Free City, and 4 for the Arc, and the smallest unit of rule is the station. People live in the subway stations, and only as many survived as the stations could hold. The map structure of stations and lines is described in [Seoul and Subway Layers](/wiki/World-and-Subway-Layers/).
 
-| Faction | Territory | Duchies | Rule |
+| Faction | Territory | Districts | Top office |
 |---|---|---|---|
-| Government | North of the Han River | 14 | Separation of powers and a multiparty system on paper; modern feudalism in practice |
-| Free City (Union) | Southwest | 7 | Independent cities without a king |
-| Arc | Gangnam | 4 | Shia-style clan government under the Messiah Go Ye-jin |
+| Government | North of the Han River | 14 | President Kim Yeongyu |
+| Free City | Southwest | 7 | Chair of the Board I Ilseop |
+| Arc | Gangnam | 4 | Hierophant Go Ye-jin |
 
 **A. The Government**
 
-The Government rules the 14 districts north of the Han River. On paper it maintains ministries representing the three branches of the Republic of Korea and a multiparty system, but in reality only two parties remain. The National Assembly member elected from each district holds that district''s duchy under the title of Senator. The Senators gather candidates from among themselves to produce a President for Life. The Government recognizes as citizens only those recorded in its ledgers, and these people are effectively serfs. Scarcity made children inherit their parents'' work, and the hierarchy hardened as a result. The Government regards the land across the river as a place inhabited by barbarians.
+The Government rules the 14 districts north of the Han River. On paper it maintains ministries representing the three branches of the Republic of Korea and a multiparty system, but in reality only two parties remain. At the top is a President for Life, now Kim Yeongyu. Below the President are the Stationmasters, Division Chiefs, Bureau Chiefs and Commissioners, and the Commissioners are appointed by the President. The Government recognizes as citizens only those recorded in its ledgers, and these people are effectively serfs. Scarcity made children inherit their parents'' work, and the hierarchy hardened as a result. The Government regards the land across the river as a place inhabited by barbarians.
 
 **B. The Free City**
 
-The Free City consists of the 7 districts in the southwest. Rather than a single power, it is a collection of independent cities, each holding its own duchy, and it has no king. Most residents are skilled hands who live by their work. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. The Free City''s weapons are people and food, and its doctors let it hold out longest. Because there was no way to judge whose skills were greater, they never managed to choose a leader. The Duke of Gwanak is I Ilseop. Today these cities are collectively called the Union, but when Go Ye-jin was growing up, it was simply the Free City.
+The Free City consists of the 7 districts in the southwest. Rather than a single power, it is a collection of independent cities standing on their own, and they hold that refusing to be ruled is freedom. Most residents are skilled hands who live by their work. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. The Free City''s weapons are people and food, and its doctors let it hold out longest. Its ranks are Stationmaster, Division Chief, Guild Master and Director, and Directors are appointed by the Board. At the top is the Chair of the Board, I Ilseop. By rank his house is a Director like any other, but because people want them to lead and they do in fact act as leaders, the house has held the Chair of the Board for generations. Refusing to be ruled while leaning on one house is the contradiction of the Free City. There is no name for these cities taken together.
 
 **C. The Arc**
 
-The Arc consists of the 4 districts of Gangnam. It split off from the Free City, and the Gangnam shelters were united under the name Arc around 2122. Go Ye-jin is the Messiah and Hierophant, and the Arc is ruled by Shia-style clan government. The Arc has replaced all earlier religions. Believers receive baptism, in which parts of the body are replaced with machinery, and in the Arc faith is counted by the number of implanted body parts.
+The Arc consists of the 4 districts of Gangnam. It split off from the Free City, and the Gangnam shelters were united under the name Arc around 2122. Go Ye-jin, a former engineer, is the Messiah and Hierophant. Its ranks are Stationmaster, Division Chief, Bishop and Cardinal, and Cardinals are ordained by the Hierophant. The Arc has replaced all earlier religions. Believers receive baptism, in which parts of the body are replaced with machinery, and in the Arc faith is counted by the number of implanted body parts.
 
 **D. Beyond Seoul**
 
@@ -53158,7 +54114,7 @@ The Arc teaches that parts of the body should be replaced with machinery. This i
 | Item | Details |
 |---|---|
 | Hierophant | Go Ye-jin |
-| Rule | Family rule |
+| Ranks | Stationmaster, Division Chief, Bishop, Cardinal, Hierophant |
 | Initiation | Baptism (machine implantation) |
 | Measure of faith | Number of implanted body parts |
 
@@ -53256,25 +54212,25 @@ Go Ye-jin calls the First AI "God," because human language has no other word for
 
 ## 서울의 세 세력과 바깥
 
-대정전 뒤 약 백 년이 지난 2126년, 서울에는 정부, 자유도시, 아크 세 세력이 남았다. 구 하나가 공작령 하나이며, 25공작령은 정부 14, 자유도시 7, 아크 4로 나뉜다. 사람들은 지하철역에 살고, 역이 품을 수 있는 만큼만 살아남았다. 역과 노선의 지도 구조는 [서울과 지하철 레이어](/wiki/World-and-Subway-Layers/)에 있다.
+대정전 뒤 약 백 년이 지난 2126년, 서울에는 정부, 자유도시, 아크 세 세력이 남았다. 서울의 스물다섯 구는 정부 14, 자유도시 7, 아크 4로 나뉘고, 다스림의 가장 작은 단위는 역이다. 사람들은 지하철역에 살고, 역이 품을 수 있는 만큼만 살아남았다. 역과 노선의 지도 구조는 [서울과 지하철 레이어](/wiki/World-and-Subway-Layers/)에 있다.
 
-| 세력 | 영역 | 공작령 | 통치 |
+| 세력 | 영역 | 구 | 최상단 |
 |---|---|---|---|
-| 정부 | 한강 북쪽 | 14 | 서류상 삼권과 다당제, 실상 현대 봉건제 |
-| 자유도시(유니온) | 남서쪽 | 7 | 왕 없는 독립 도시들 |
-| 아크 | 강남 | 4 | 메시아 고예진 아래 시아파식 가문 통치 |
+| 정부 | 한강 북쪽 | 14 | 대통령 김연규 |
+| 자유도시 | 남서쪽 | 7 | 이사회장 이일섭 |
+| 아크 | 강남 | 4 | 교주 고예진 |
 
 **가. 정부**
 
-정부는 한강 북쪽 14구를 다스린다. 서류상으로는 대한민국의 삼권을 대표하는 부처와 다당제를 유지하지만, 실제로 남은 당은 둘뿐이다. 각 구에서 뽑힌 국회의원이 상원의원이라는 칭호로 그 구의 공작령을 쥔다. 상원의원들은 자기들 가운데서 후보를 모아 종신 대통령을 낸다. 정부는 장부에 기록된 사람만 국민으로 인정하며, 이들은 사실상 농노다. 결핍 때문에 자식이 부모의 일을 물려받게 되면서 계층이 굳었다. 정부는 강 건너를 야만인들이 사는 땅으로 여긴다.
+정부는 한강 북쪽 14구를 다스린다. 서류상으로는 대한민국의 삼권을 대표하는 부처와 다당제를 유지하지만, 실제로 남은 당은 둘뿐이다. 최상단은 종신 대통령이며, 지금은 김연규다. 그 아래로 역장, 본부장, 국장, 청장이 있고, 청장은 대통령이 임명한다. 정부는 장부에 기록된 사람만 국민으로 인정하며, 이들은 사실상 농노다. 결핍 때문에 자식이 부모의 일을 물려받게 되면서 계층이 굳었다. 정부는 강 건너를 야만인들이 사는 땅으로 여긴다.
 
 **나. 자유도시**
 
-자유도시는 남서쪽 7구다. 하나의 권력이 아니라 도시마다 따로 공작령을 쥔 독립 도시들의 묶음이며, 왕은 없다. 주민 대부분은 손으로 먹고사는 기술자다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 누구 기술이 더 높은지 따질 방법이 없어 지도자를 뽑지 못했다. 관악 공작은 이일섭이다. 지금은 이 도시들을 묶어 유니온이라고 부르지만, 고예진이 자랄 때는 그냥 자유도시였다.
+자유도시는 남서쪽 7구다. 하나의 권력이 아니라 각자 선 독립 도시들이며, 지배를 거부하는 것을 자유로 여긴다. 주민 대부분은 손으로 먹고사는 기술자다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 계급은 역장, 본부장, 조합장, 이사이고, 이사는 이사회가 임명한다. 최상단은 이사회장 이일섭이다. 이일섭의 가문은 계급으로는 다른 이사와 같은 이사지만, 사람들이 그들이 이끌어 주기를 바라고 실제로 지도자 노릇을 하므로 대대로 이사회장을 맡는다. 지배를 거부하면서 한 가문에 기대는 것이 자유도시의 모순이다. 이 도시들을 묶어 부르는 이름은 없다.
 
 **다. 아크**
 
-아크는 강남 4구다. 자유도시에서 갈라져 나왔고, 강남 대피소들이 2122년 무렵 아크라는 이름으로 묶였다. 고예진이 메시아이자 교주이며, 통치는 시아파식 가문 통치다. 아크는 이전의 모든 종교를 대체했다. 신도는 몸의 부위를 기계로 바꾸는 세례를 받고, 아크에서는 신앙을 이식한 부위 수로 센다.
+아크는 강남 4구다. 자유도시에서 갈라져 나왔고, 강남 대피소들이 2122년 무렵 아크라는 이름으로 묶였다. 엔지니어 출신인 고예진이 메시아이자 교주다. 계급은 역장, 본부장, 주교, 추기경이고, 추기경은 교주가 서품한다. 아크는 이전의 모든 종교를 대체했다. 신도는 몸의 부위를 기계로 바꾸는 세례를 받고, 아크에서는 신앙을 이식한 부위 수로 센다.
 
 **라. 서울 밖**
 
@@ -53297,7 +54253,7 @@ Go Ye-jin calls the First AI "God," because human language has no other word for
 | 항목 | 내용 |
 |---|---|
 | 교주 | 고예진 |
-| 통치 | 가문 통치 |
+| 계급 | 역장, 본부장, 주교, 추기경, 교주 |
 | 입문 | 세례(기계 이식) |
 | 신앙의 척도 | 이식한 부위의 수 |
 
@@ -53317,7 +54273,7 @@ The map shows opening-day surface holdings alongside mapped rail locations. A ra
 
 | Map layer | Coverage |
 |---|---|
-| Surface holdings | The three factions (Government, Free City, Arc) and the 25 duchies at the opening |
+| Surface holdings | The 307 station strongholds of the three factions at the opening (Government 153, Free City 77, Arc 77) |
 | Rail locations | Mapped stations and tracks |
 
 ## Winter and Station Depth
@@ -53331,6 +54287,12 @@ The default underground classification follows floors: B1 through B3 are interme
 Clothing follows the actual indoor temperature and heating conditions before the default for a floor. Heated surface interiors and warm underground rooms do not require all the insulation worn outdoors. Electricity production does not mean every station and passage is continuously heated, so power supply alone does not establish a warm interior. Where indoor conditions are unknown, the floor-based temperature default applies.
 
 At the same underground level, cold varies with the regional surface temperature and the amount of air entering from outside. Intermediate passages admitting much cold air can fall below the baseline to less than 8°C, while remaining warmer than the local surface. Deep quarters are less affected by outside air and their baseline varies less. Surface differences are not simply added to or subtracted from underground temperatures; heating and outside-air exposure are considered together for the occupied space.
+
+### Depth and Standing
+
+Depth divides standing as well as temperature. The residence layers are the same in all three factions. The deeper the level, the higher the people who live there. Deep levels keep intruders out behind shutters, make the exits easy to control and watch, and are warmed by the ground. A resident of the third basement level ranks above a resident of the first.
+
+Above ground the order is reversed: the higher the floor, the lower the people. High floors are cold and windy and lie open to watching and attack from the air, drones included. Everyone who holds no station is an ordinary citizen, and among citizens those who live on the ground floor rank highest. For the same reasons a station is worth more the deeper it goes, and surface stations are worth the least.
 
 ### Regional Surface Temperatures
 
@@ -53365,7 +54327,7 @@ For clothing differences between trades at the same depth, see [Characters, Fact
 
 | 표시 항목 | 범위 |
 |---|---|
-| 지상 점유 | 개막일 세 세력(정부·자유도시·아크)과 25공작령 |
+| 지상 점유 | 개막일 세 세력(정부·자유도시·아크)의 역 거점 307곳(정부 153, 자유도시 77, 아크 77) |
 | 철도 위치 | 지도에 기록된 역과 선로 |
 
 ## 겨울과 역사의 깊이
@@ -53379,6 +54341,12 @@ For clothing differences between trades at the same depth, see [Characters, Fact
 옷차림은 층별 기본 기온보다 머무는 공간의 실제 실내 기온과 난방 상태를 먼저 따른다. 난방되는 지상 실내와 지하의 따뜻한 방에서는 야외와 같은 방한 겹을 계속 입을 필요가 없다. 전기가 생산되는 지역이라도 모든 역사와 통로가 늘 난방되는 것은 아니므로, 전력 공급만으로 실내 전체를 따뜻한 공간으로 보지는 않는다. 실내 환경이 알려지지 않은 공간에는 층별 기본 기온을 적용한다.
 
 같은 지하층이라도 해당 지역의 지상 기온과 출입구에서 들어오는 공기의 양에 따라 추위가 달라진다. 찬 공기가 많이 드는 중간 깊이 통로는 기본 범위보다 낮은 8℃ 미만이 될 수 있지만, 그 지역의 지상보다는 따뜻하다. 깊은 생활권에서는 외기의 영향이 더 작고 기본 기온의 변화도 작다. 지상의 기온 차이를 지하에 그대로 더하거나 빼지는 않으며, 실제 머무는 공간의 난방과 외기 유입을 함께 살핀다.
+
+### 깊이와 신분
+
+깊이는 기온만이 아니라 신분도 가른다. 거주 층위는 세 세력이 같다. 지하로 깊을수록 윗사람이 산다. 깊은 층은 셔터로 침입을 막고, 출구를 통제하고 감시하기 쉽고, 지열로 따뜻하다. 지하 3층에 사는 사람이 지하 1층에 사는 사람보다 윗자리다.
+
+지상은 반대로 높은 층일수록 아랫사람이 산다. 높은 층은 춥고 바람이 세며, 드론을 포함한 공중의 감시와 공격에 드러난다. 역을 가지지 못한 사람은 모두 일반 시민이고, 그 가운데 지층(지상 1층)에 사는 사람이 가장 윗자리다. 같은 까닭으로 역의 가치도 지하로 깊을수록 높고, 지상역이 가장 낮다.
 
 ### 시·도별 지상 기온
 
@@ -53407,4 +54375,1064 @@ For clothing differences between trades at the same depth, see [Characters, Fact
 환승역의 여러 승강장은 같은 역 이름 아래 있어도 서로 다른 깊이에 놓인다. 대합실과 통로를 오가는 사람의 옷차림도 실제로 머무는 층과 그 공간의 실내 환경을 따른다. 전령과 호위뿐 아니라 평소 지하에서 일하던 사람도 지상 야외로 나설 때에는 해당 지역의 방한 외투를 입는다. 지상층 입구까지만 다녀오고 야외로 나가지 않는다면, 그곳의 실내 기온에 맞춰 입는다.
 
 같은 깊이에서도 생업에 따라 달라지는 옷차림은 [인물·세력·생업](/wiki/Characters-Factions-and-Professions/#깊이와-생업에-따른-옷차림)에서 살펴볼 수 있다.
+');
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Residence-Layers-and-Class', 'Residence Layers and Class', '거주 층위와 신분', 'offices', 1, 'In Seoul in 2126, the floor a person lives on is their standing. The rule is shared by all three factions: the Government, the Free City, and the Arc. Below ground, deeper is higher. Above ground, higher is lower.
+
+## The Floor You Live On Is Your Standing
+
+People live in the stations and in the buildings around them. Each floor has a different power to get through the winter. Deep levels below ground are easy to close off and warm. High floors above ground are cold, take the wind, and can be seen from the sky. So the families that took the safer floors became the higher class, and as scarcity made children take over their parents'' work and place, those floors hardened from generation to generation.
+
+## Below Ground: Deeper Is Higher
+
+Underground, the deeper a person lives, the higher their class. A person who lives on the third basement level stands above one who lives on the first. Deep levels are valuable for three reasons.
+
+- **Shutters.** A deep level can drop its shutters and keep intruders out. Even if the levels above are breached, the levels below can be closed.
+- **Exit control.** Only a few routes lead down to the deep levels. That makes it easy to control and watch who comes and goes.
+- **Ground heat.** The deeper underground, the less cold the winter. The heat of the earth warms the people there.
+
+## Above Ground: Higher Is Lower
+
+Above ground, the higher a person lives, the lower their class. High floors are bad for three reasons.
+
+- **Cold.** High floors are far from the heat of the earth and meet the winter cold first.
+- **Strong wind.** High floors take the full force of the wind.
+- **The sky.** High floors are the most visible and the closest to the sky. They are the most exposed to air warfare, surveillance, and attack, drones included.
+
+## Table of Layers
+
+| Where a person lives | Standing | Why |
+|---|---|---|
+| Deep underground levels (for example, the third basement level) | Highest | Can be closed with shutters, exits are easy to control and watch, and ground heat keeps it warm |
+| Shallow underground levels (for example, the first basement level) | Lowest of the underground | Less closed off and less warm than the deep levels |
+| The ground floor | Highest among commoners | The least cold place above ground, and the farthest from the wind and the sky |
+| Upper floors above ground | The higher, the lower | Exposed to cold, strong wind, and air warfare, surveillance, and attack, drones included |
+
+## Station Holders and Commoners
+
+A person who holds a station is a stationmaster, and a person who commands stationmasters holds a rank of division chief or above according to their number. The rank table is in [Offices and Ranks](/wiki/Offices-and-Ranks/).
+
+Everyone who does not hold a station is a **commoner**. Commoners have no rank title, and the floor they live on is their place among commoners. The highest commoners are those who live on the ground floor. The farther up they live, the lower they stand even among commoners.
+
+## Underground Residence Rights
+
+The right to live underground went first to the founding families of each faction. The families that earned merit when the faction was founded took the deep levels first, and those places have come down through the generations. There is no special name for these families.
+
+## Station Value and Floors
+
+The value of a station follows the same rule. The more transfer lines a station has and the deeper it goes, the more it is worth. A deep station takes more people behind its shutters, controls more of its exits, and is warmer.
+
+A surface station, whose platforms sit above ground, has no deep level to close off with shutters. That is why the master of a surface station is the lowest of all stationmasters. The informal order among division chiefs is likewise split by how deep their stations go and how many lines they carry.
+
+The Arc does not draw a fortified line above ground. It defends itself by sealing its deep levels. The levels and stages of each station stronghold are in [Station Strongholds](/wiki/strongholds/).
+
+## People From Another Faction
+
+A person who comes over from another faction loses their assets and territory and becomes one of the lowest class, whatever rank they held at home. The faction that takes them uses their skill but never raises their standing. Details are in [Human Resource Movement](/wiki/Human-Resource-Movement/).
+', '2126년 서울에서는 어느 층에 사는지가 곧 신분이다. 이 규칙은 정부, 자유도시들, 아크 세 세력에 공통이다. 땅 밑으로는 깊을수록 위이고, 땅 위로는 높을수록 아래다.
+
+## 사는 층이 곧 신분이다
+
+사람들은 역과 역 둘레의 건물에 산다. 겨울을 견디는 힘은 층마다 다르다. 땅 밑 깊은 층은 막기 쉽고 따뜻하다. 땅 위 높은 층은 춥고 바람을 맞고 하늘에서 보인다. 그래서 더 안전한 층을 차지한 집안이 더 높은 신분이 되었고, 결핍 때문에 자식이 부모의 일과 자리를 이어받으면서 그 층이 대를 이어 굳었다.
+
+## 지하: 깊을수록 위
+
+지하에서는 깊이 사는 사람일수록 상류다. 지하 1층보다 지하 3층에 사는 사람이 위다. 깊은 층이 값진 까닭은 셋이다.
+
+- **셔터.** 깊은 층은 셔터를 내려 침입을 막을 수 있다. 위층이 뚫려도 아래층은 닫힌다.
+- **출구 통제.** 깊은 층으로 내려오는 길은 몇 갈래뿐이다. 그래서 드나드는 사람을 통제하고 감시하기 쉽다.
+- **지열.** 땅 밑은 깊을수록 겨울에 덜 춥다. 땅의 열이 사람을 덥힌다.
+
+## 지상: 높을수록 아래
+
+땅 위에서는 높은 층에 사는 사람일수록 하층이다. 높은 층이 나쁜 까닭은 셋이다.
+
+- **추위.** 높은 층은 땅의 열에서 멀고, 겨울 추위를 가장 먼저 맞는다.
+- **강풍.** 높은 층은 바람을 그대로 맞는다.
+- **공중.** 높은 층은 하늘에서 가장 잘 보이고 가장 가깝다. 드론을 포함한 공중전, 감시, 공격에 가장 약하다.
+
+## 층위표
+
+| 사는 곳 | 신분 | 까닭 |
+|---|---|---|
+| 지하 깊은 층 (예: 지하 3층) | 가장 높다 | 셔터로 막을 수 있고, 출구 통제와 감시가 쉽고, 지열로 따뜻하다 |
+| 지하 얕은 층 (예: 지하 1층) | 지하에서는 가장 낮다 | 깊은 층보다 덜 막히고 덜 따뜻하다 |
+| 지층 (지상 1층) | 일반 시민 가운데 가장 높다 | 땅 위에서는 가장 덜 춥고 바람과 하늘에서 가장 멀다 |
+| 지상 높은 층 | 높을수록 낮다 | 추위, 강풍, 드론을 포함한 공중전·감시·공격에 약하다 |
+
+## 역을 가진 사람과 일반 시민
+
+역을 가진 사람은 역장이고, 역장을 거느린 사람은 그 수에 따라 본부장 이상의 계급을 가진다. 계급표는 [관직](/wiki/Offices-and-Ranks/)에 있다.
+
+역을 갖지 못한 사람은 모두 **일반 시민**이다. 시민에게는 계급 칭호가 없고, 사는 층이 곧 시민 사이의 자리다. 시민 가운데 가장 높은 사람은 지층, 곧 지상 1층에 사는 사람이다. 그 위층으로 올라갈수록 시민 사이에서도 낮아진다.
+
+## 지하 거주권
+
+지하에 살 권리는 각 세력의 개국공신 집안이 먼저 받았다. 세력을 세울 때 공을 세운 집안이 깊은 층을 먼저 차지했고, 그 자리가 대를 이어 내려온다. 이 집안들을 부르는 따로 정해진 이름은 없다.
+
+## 역의 가치와 층
+
+역의 가치도 같은 규칙을 따른다. 환승 노선이 많을수록, 지하로 깊을수록 역의 가치가 높다. 깊은 역은 더 많은 사람을 셔터 안에 들이고, 더 많은 출구를 통제하고, 더 따뜻하다.
+
+승강장이 땅 위에 있는 지상역에는 셔터로 막을 깊은 층이 없다. 그래서 지상역의 역장은 역장 가운데 가장 낮다. 본부장 사이의 비공식 급도 거느린 역이 얼마나 깊고 노선이 몇 개인지로 갈린다.
+
+아크는 지상에 성곽선을 두르지 않고 깊은 층을 봉쇄해 지킨다. 역 거점별 층과 단계는 [역 거점](/wiki/strongholds/)에 있다.
+
+## 다른 세력에서 온 사람
+
+다른 세력에서 넘어온 사람은 본진에서 어떤 계급이었든 가진 자산과 영토를 빼앗기고 최하층민이 된다. 받아 간 세력은 그 사람의 기술은 쓰지만 신분은 올려 주지 않는다. 자세한 내용은 [인적자원 이동](/wiki/Human-Resource-Movement/)에 있다.
+');
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Human-Resource-Movement', 'Human Resource Movement', '인적자원 이동', 'factions', 5, 'Each of the three factions in Seoul in 2126 needs people that another faction has. The Government has no doctors, the Free City has no officers, and the Arc has no one who can perform a direct neural link. So when people move between factions, it is closer to taking than to trading.
+
+## People Are the Scarcest Resource
+
+Facilities and equipment are scattered across the map, and the people who know how to use them are often in another faction. Above all, doctors and officers who defect or are captured change a faction''s strength at once. No faction can fully use what it has on its own.
+
+| Faction | The people it most needs from others | Where those people are |
+|---|---|---|
+| Government | Medical technicians (doctors) | The Free City |
+| Free City | Officers (tank and heavy-weapons command, strategy and tactics) | The Government |
+| Arc | Doctors who can perform direct neural links | The Free City |
+
+Why doctors and officers are found on only one side is undecided. The full cost structure is in [The Three Factions of Seoul](/wiki/Sixteen-States/).
+
+## Abduction and Capture
+
+The core event in the movement of people between factions is abduction and capture. People seized in a fight, people dragged off on the road, and people left behind when a station falls end up in another faction''s hands. Some go over of their own accord, but once they have crossed, their lot is no different from that of those who were taken.
+
+## Those Who Cross Become the Lowest Class
+
+Whatever rank a person held at home, moving to another faction means losing their assets and territory and becoming one of the lowest class. This is as true of a former stationmaster as of a former commissioner, cardinal, or director, because rank holds only inside its own faction. The rules of floors and standing are in [Residence Layers and Class](/wiki/Residence-Layers-and-Class/).
+
+## The Outsider the Natives Want
+
+The natives of the receiving faction do not welcome an outsider who has power. What they want is a **useful member of the lowest class** whom they can control. An outsider who has skills but commands no station, no weapons, and no people does not threaten the natives'' places.
+
+## Skills Used, Standing Never Raised
+
+The faction that takes a person uses only their skill and never raises their standing. The doctor keeps operating and the technician keeps repairing, but neither gains a station or a rank. This fixed standing breeds conflict.
+
+| Conflict | What happens |
+|---|---|
+| Sabotage | A technician who crossed slows the work or deliberately repairs less |
+| Ransom negotiation | The home faction offers goods or people to get someone back |
+| Escape | A person who crossed tries to flee back home |
+| Jealousy of the native underclass | Natives who were already the lowest class resent an outsider treated well for their skill |
+
+## Family Hostages
+
+The means of stopping sabotage and escape by a technician who crossed is to hold the family hostage. The receiving faction keeps the technician''s family captive alongside them or brings the family over. With the family in hand, the technician can neither slow the work nor run.
+
+## Hostage Rescue
+
+Family hostages are, in turn, an opening for the home faction. Rescue the hostages and the cord that binds the technician is cut, so the technician escapes or returns home. That is why a hostage rescue becomes the event by which a technician is won back.
+
+## The Flow of Events
+
+| Step | Event | Result |
+|---|---|---|
+| 1 | Abduction or capture | A person crosses to another faction |
+| 2 | Loss of standing | They lose assets and territory and become one of the lowest class |
+| 3 | Use of skill | Their skill is used, but their standing does not rise |
+| 4 | Conflict | Sabotage, ransom negotiation, escape, jealousy of the native underclass |
+| 5 | Family hostages | The receiving faction prevents sabotage and escape |
+| 6 | Hostage rescue | The home faction wins the technician back |
+', '2126년 서울의 세 세력은 저마다 남이 가진 사람을 필요로 한다. 정부에는 의사가 없고, 자유도시들에는 장교가 없고, 아크에는 신경 직결을 시술할 사람이 없다. 그래서 세력 사이에서 사람이 옮겨 가는 일은 거래보다 빼앗기에 가깝다.
+
+## 사람이 가장 귀한 자원이다
+
+시설과 장비는 지도 위에 흩어져 있고, 그것을 쓸 줄 아는 사람은 다른 세력에 있는 경우가 많다. 특히 의사와 장교의 이탈과 포로는 세력의 힘을 바로 바꾼다. 어느 세력도 혼자서는 가진 것을 완전히 쓰지 못한다.
+
+| 세력 | 남에게 가장 필요한 사람 | 그 사람이 있는 곳 |
+|---|---|---|
+| 정부 | 의료기술자(의사) | 자유도시들 |
+| 자유도시들 | 장교(전차·중화기 지휘, 전략·전술) | 정부 |
+| 아크 | 신경 직결을 시술할 의사 | 자유도시들 |
+
+의사와 장교가 왜 한쪽에만 있는지는 미정이다. 비용 구조 전체는 [서울의 세 세력](/wiki/Sixteen-States/)에 있다.
+
+## 납치와 포획
+
+세력 사이 인적자원 이동의 핵심 사건은 납치와 포획이다. 싸움에서 붙잡힌 사람, 길에서 끌려간 사람, 역이 함락될 때 남은 사람이 다른 세력의 손에 들어간다. 스스로 넘어가는 사람도 있지만, 넘어간 뒤의 처지는 끌려간 사람과 다르지 않다.
+
+## 넘어간 사람은 최하층민이 된다
+
+본진에서 어떤 계급이었든, 다른 세력으로 옮겨 가면 가진 자산과 영토를 빼앗기고 최하층민이 된다. 역장이었던 사람도, 청장이나 추기경이나 이사였던 사람도 같다. 계급은 그 세력 안에서만 통하기 때문이다. 사는 층과 신분의 규칙은 [거주 층위와 신분](/wiki/Residence-Layers-and-Class/)에 있다.
+
+## 원주민이 바라는 이방인
+
+받아들이는 세력의 원주민은 힘을 가진 이방인을 반기지 않는다. 그들이 바라는 것은 통제할 수 있는 **쓸모 있는 최하층민**이다. 기술은 있되 역도 무장도 사람도 거느리지 못한 이방인은 원주민의 자리를 위협하지 않는다.
+
+## 기술은 쓰고 신분은 올리지 않는다
+
+사람을 받아 간 세력은 그 사람의 기술만 쓰고 신분은 올려 주지 않는다. 의사는 계속 수술하고 기술자는 계속 고치지만, 역을 얻지도 계급을 얻지도 못한다. 이 고정된 신분이 갈등을 낳는다.
+
+| 갈등 | 일어나는 일 |
+|---|---|
+| 태업 | 넘어간 기술자가 일을 늦추거나 일부러 덜 고친다 |
+| 몸값 협상 | 본진이 사람을 되찾으려고 물자나 사람을 내놓는다 |
+| 탈출 | 넘어간 사람이 본진으로 달아나려 한다 |
+| 원주민 하층민의 질투 | 원래 최하층이던 원주민이 기술 덕에 대우받는 이방인을 시기한다 |
+
+## 가족 인질
+
+넘어간 기술자의 태업과 탈출을 막는 수단은 가족 인질이다. 받아 간 세력은 기술자의 가족을 함께 붙잡아 두거나 데려온다. 가족이 손안에 있으면 기술자는 일을 늦추지 못하고 달아나지도 못한다.
+
+## 인질 구출
+
+가족 인질은 거꾸로 본진에게 기회가 된다. 인질을 구해 내면 기술자를 묶어 둘 끈이 끊기고, 기술자는 탈출하거나 본진으로 돌아온다. 그래서 인질 구출은 기술자를 되찾는 사건이 된다.
+
+## 사건의 흐름
+
+| 단계 | 사건 | 결과 |
+|---|---|---|
+| 1 | 납치·포획 | 사람이 다른 세력으로 넘어간다 |
+| 2 | 신분 박탈 | 자산과 영토를 잃고 최하층민이 된다 |
+| 3 | 기술 사용 | 기술은 쓰이지만 신분은 오르지 않는다 |
+| 4 | 갈등 | 태업, 몸값 협상, 탈출, 원주민 하층민의 질투 |
+| 5 | 가족 인질 | 받아 간 세력이 태업과 탈출을 막는다 |
+| 6 | 인질 구출 | 본진이 기술자를 되찾는다 |
+');
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Cost-Structure', 'The Cost Structure of the Three Factions', '세 세력의 비용 구조', 'factions', 6, '
+## Cost Comes from the Map
+
+Cost is not a penalty set by numbers; it comes from the map. Facilities, and the people who know how to use them, are scattered across different factions. So no faction can use what it holds fully on its own; it has to obtain other factions'' people or skills. On each axis a different faction is strong, and that is what balances the whole board.
+
+Where people live follows the same principle. The upper classes live inside station bunkers closed by shutters, and the lower classes live in the buildings around the stations. The units and tech trees that turn these costs into game values are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
+
+## What Each Faction Holds and Lacks
+
+| Faction | Holds | Lacks | Result |
+|---|---|---|---|
+| Government (President Kim Yeongyu) | Large university hospital buildings, the officer class, heavy weapons, tanks, depots, the original seed stock | Medical technicians (Free Cities), weapon software (Arc) | Strong in a straight fight, but it can give only first aid, so its wounded do not come back. Its advanced weapons run fully only with Arc software |
+| Free Cities (Chair of the Board I Ilseop) | Doctors and neural-link medicine, people and food, Capital Defense Command equipment on its ground | The officer class (Government), medical-robot software (Arc), the original seed stock (Government) | Conscript basic training covers rifles and maintenance, but command of tanks and heavy weapons is limited. With doctors it lasts long |
+| Arc (Hierophant Go Ye-jin) | A monopoly on ancient data-center software, mechanical bodies | Factories, heavy weapons, hospitals, neural-direct surgery (Free City doctors) | Keeps only a minimal rifle-level defense. Its weapon is the power to switch other factions'' hardware on and off, and using it breeds distrust of backdoors |
+
+## What Each Needs from the Others
+
+| What is needed | Holder to the one in need | What it opens | How it is obtained | Price |
+|---|---|---|---|---|
+| Officers | Government to Free Cities | Combined command of tanks and heavy weapons, strategy and tactics | Recruitment, defection, capture | A captured officer''s loyalty is tested; a defector becomes a Government target |
+| Doctors (surgery, neural link) | Free Cities to Government and Arc | For the Government, the return of the badly wounded; for the Arc, mechanical bodies moved by thought | Contract, recruitment, capture | When doctors leave, the Free Cities'' staying power weakens |
+| Arc software | Arc to Government and Free Cities | Government fire control, drones and air defense; Free City medical robots and drone swarms | License contract | The Arc can switch that equipment on and off |
+| Government hardware and depots | Government to Arc | Repair of woken machines, the joint air-defense weapon | Maintenance contract | The Government sees the inside of the Arc''s machines |
+| Original seed stock | Government to Free Cities | The food ceiling. The Free Cities'' weapons are people and food | Trade, seizure | It opens no unit; it sets how long a faction can hold out |
+| Salvaged roaming machines | The map to anyone | Machine units | Capture, repair, signal check, thought control | Cannot be replenished; an Arc signal may remain inside |
+
+## Consequences by Faction
+
+### Government
+
+President Kim Yeongyu''s Government holds Gangbuk, the Blue House and the Ministry of National Defense. Its officer corps commands tanks and heavy weapons together, so it is the strongest in a straight fight. It also holds several large university hospital buildings, but has no medical technicians to use the operating rooms and imaging equipment, so it gives only first aid. The White Cross, too, is a first-aid and transport body without doctors. So every time the Government wins it loses wounded soldiers and its strength shrinks. Its precision weapons run fully only with Arc software, and because the Arc can switch them off, the Government hesitates before all-out war.
+
+### Free Cities
+
+Chair of the Board I Ilseop is the heir of a medical family that has passed down neural-link medicine for generations. Nearly all of Seoul''s doctors and neural-link practitioners are in the Free Cities, and Capital Defense Command (CDC) equipment remains on their ground. Under conscription most residents have had basic military training and can handle rifles and maintain weapons. But commanding tanks and heavy weapons together, and strategy and tactics, are the work of officers, and the officers are on the Government side. With doctors, the wounded come back, so the Free Cities last long. Medical robots run only with Arc software, and the original seed stock has to be obtained from the Government.
+
+### Arc
+
+Hierophant Go Ye-jin was an engineer. The Arc holds a monopoly on the software of an ancient data center, and that software goes into the Government''s advanced weapons and the Free Cities'' medical robots. But it has no material base such as factories, heavy weapons or hospitals, and its arms amount to a minimal rifle-level defense. The Eastern Command is the Arc''s hereditary rifle guard and has no officer corps or heavy weapons. The mechanical bodies its believers wear take only simple commands. Making them move by thought needs neural-direct surgery by a Free City doctor. In a direct fight the Arc is weak.
+
+## The Power to Switch On and Off, and Backdoor Distrust
+
+The Arc''s weapon is the power to switch other factions'' hardware on and off. Equipment with Arc software inside (tank fire control, surveillance drones, air defense, medical robots) can be switched off by the Arc. That power is not free. Once it is used, the other side is sure the Arc''s software has a backdoor and gains a motive to strip the software out and go back to manual. So the shutdown signal is leverage that makes the next contract harder each time it is used.
+
+A side that refuses the software holds out in manual mode. Government tanks aim by hand, and the Free Cities fly fiber-tethered drones that the Arc cannot switch off. In exchange, accuracy drops and drones and air defense cannot be used.
+
+## When People Change Factions
+
+- Abduction and capture are the main events by which people move between factions.
+- Whoever moves to another faction loses their assets and territory, whatever their former rank, and falls to the very bottom.
+- The receiving faction prefers useful, controllable people at the bottom to strangers with power. It uses their skills and does not raise their standing. Sabotage, ransom talks, escape and the envy of the native lower class become conflicts.
+- Sabotage and escape by technicians who have changed sides are prevented by holding their families hostage. Rescuing the hostages becomes the event of taking a technician back.
+- The departure or capture of doctors and officers is an open means of shaking this cost structure.
+
+## Roaming Machines and Ancient Weapons
+
+The AI is not a common enemy of the three factions. A roaming machine is a hazard that falls on the lower-class buildings outside the shutters, and a resource that becomes a unit once it is driven off and captured. Chassis cannot be built anew, so a lost one has to be caught again. Ancient weapons found now and then, and raids, keep Seoul uneasy. An ancient weapon wakes only when two or more factions put their skills in, so a find is itself a diplomatic event. Drones and surveillance gear are weapons factions acquire later. The steps by which a machine becomes a unit are in [Lost Technology](/wiki/Lost-Technology-Lineage/) and the [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/).
+
+## Undecided
+
+- Why doctors are only in the Free Cities and officers only in the Government: undecided. It will be set later as a scenario device.
+- The values that turn these costs into game numbers (wounded return rates, upkeep, numbers in unlock conditions) are proposals in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/) and are not final.
+
+## Related Pages
+
+- [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/)
+- [The Three Factions of Seoul](/wiki/Sixteen-States/)
+- [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/)
+- [Lost Technology](/wiki/Lost-Technology-Lineage/)
+- [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
+', '
+## 비용은 지도에서 나온다
+
+비용은 숫자로 매긴 벌칙이 아니라 지도에서 나온다. 시설과, 그 시설을 쓸 줄 아는 사람이 서로 다른 세력에 흩어져 있다. 그래서 어느 세력도 가진 것을 혼자서는 온전히 쓰지 못하고, 남의 사람이나 남의 기술을 얻어야 한다. 축마다 강한 세력이 엇갈려 있어서 판 전체의 균형이 잡힌다.
+
+사는 자리도 같은 원리를 따른다. 상류층은 셔터로 닫히는 역 벙커 안에 살고, 하류층은 역 주변 건물에 산다. 비용을 게임 수치로 옮긴 병종과 테크트리는 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
+
+## 세 세력이 가진 것과 없는 것
+
+| 세력 | 가진 것 | 없는 것 | 결과 |
+|---|---|---|---|
+| 정부(대통령 김연규) | 대형 대학병원 건물, 장교층, 중화기, 전차, 정비창, 원종 씨앗 | 의료기술자(자유도시), 무기 소프트웨어(아크) | 정면 전투에 강하지만 응급 처치까지만 하므로 부상병이 돌아오지 않는다. 첨단 무기는 아크 소프트웨어가 있어야 완전히 돈다 |
+| 자유도시(이사회장 이일섭) | 의사와 신경 연결 의술, 사람과 식량, 영토 안의 수방사 장비 | 장교층(정부), 의료로봇 소프트웨어(아크), 원종 씨앗(정부) | 징병제 기초군사훈련으로 소총과 정비는 되지만 전차·중화기 지휘에 한계가 있다. 의사가 있어 오래 버틴다 |
+| 아크(교주 고예진) | 고대 데이터센터 소프트웨어 독점, 기계신체 | 공장, 중화기, 병원, 신경 직결 시술(자유도시 의사) | 소총 수준의 최소 방위만 한다. 남의 하드웨어를 켜고 끄는 힘이 무기이며, 쓰면 백도어 불신을 부른다 |
+
+## 서로에게 필요한 것
+
+| 필요한 것 | 가진 쪽 → 필요한 쪽 | 여는 것 | 얻는 수단 | 대가 |
+|---|---|---|---|---|
+| 장교 | 정부 → 자유도시 | 전차와 중화기의 연합 지휘, 전략과 전술 | 포섭, 망명, 포로 | 포로 장교는 충성을 시험받고, 망명 장교는 정부의 표적이 된다 |
+| 의사(외과·신경 연결) | 자유도시 → 정부, 아크 | 정부는 중상자 복귀, 아크는 생각으로 움직이는 기계신체 | 계약, 포섭, 포로 | 의사가 빠져나가면 자유도시가 오래 버티는 힘이 약해진다 |
+| 아크 소프트웨어 | 아크 → 정부, 자유도시 | 정부의 사격 통제·드론·방공, 자유도시의 의료로봇과 군집 드론 | 라이선스 계약 | 아크가 그 장비를 켜고 끌 수 있다 |
+| 정부 하드웨어와 정비창 | 정부 → 아크 | 깨운 기계의 수리, 방공 공동 병기 | 정비 계약 | 정부가 아크 기계의 속을 본다 |
+| 원종 씨앗 | 정부 → 자유도시 | 식량 상한. 자유도시의 무기는 사람과 식량이다 | 거래, 탈취 | 병종을 여는 것이 아니라 버틸 수 있는 한계를 정한다 |
+| 회수한 떠도는 기계 | 지도 → 누구나 | 기계 병종 | 포획, 정비, 신호 확인, 생각 조종 | 보충할 수 없고, 아크 신호가 남아 있을 수 있다 |
+
+## 세력별 결과
+
+### 정부
+
+대통령 김연규의 정부는 강북과 청와대, 국방부를 쥐고 있다. 장교단이 전차와 중화기를 묶어 지휘하므로 정면 전투에 가장 강하다. 대형 대학병원 건물도 여럿 가졌지만 수술실과 영상 장비를 쓸 의료기술자가 없어 응급 처치까지만 한다. 흰십자단도 의사가 없는 응급 처치·이송 조직이다. 그래서 정부는 이길 때마다 다친 병사를 잃고 병력이 준다. 정밀 무기는 아크 소프트웨어가 있어야 완전히 돌고, 아크가 끌 수 있으므로 정부는 전면전 앞에서 망설인다.
+
+### 자유도시
+
+이사회장 이일섭은 신경 연결 의술을 대대로 이어 온 의료 가문의 후계자다. 자유도시에는 서울의 의사와 신경 연결 시술자가 거의 다 있고, 영토 안에는 수도방위사령부(수방사) 장비가 남아 있다. 징병제로 대부분의 주민이 기초군사훈련을 받아 소총을 다루고 무기를 정비할 줄 안다. 그러나 전차와 중화기를 묶어 지휘하는 일과 전략·전술은 장교의 몫이고, 장교는 정부 쪽에 있다. 의사가 있어 다친 사람이 돌아오므로 오래 버틴다. 의료로봇은 아크 소프트웨어가 있어야 움직이고, 원종 씨앗은 정부에서 얻어야 한다.
+
+### 아크
+
+교주 고예진은 엔지니어 출신이다. 아크는 고대 데이터센터의 소프트웨어를 독점하며, 이 소프트웨어는 정부의 첨단 무기와 자유도시의 의료로봇에 들어간다. 그러나 공장, 중화기, 병원 같은 물적 기반이 없고 무장은 소총 수준의 최소 방위뿐이다. 동방사는 아크의 세습 소총 근위대이며 장교단과 중화기가 없다. 신도가 단 기계신체는 단순한 명령만 받는다. 생각으로 움직이게 하려면 자유도시 의사의 신경 직결 수술이 필요하다. 직접 싸우면 약하다.
+
+## 켜고 끄는 힘과 백도어 불신
+
+아크의 무기는 남의 하드웨어를 켜고 끄는 힘이다. 아크 소프트웨어가 들어간 장비(전차의 사격 통제, 감시 드론, 방공, 의료로봇)는 아크가 끌 수 있다. 이 힘은 공짜가 아니다. 한 번 쓰면 상대는 아크 소프트웨어에 백도어가 있다고 확신하고, 소프트웨어를 걷어 내고 수동으로 돌아갈 동기가 생긴다. 그래서 정지 신호는 한 번 쓰면 다음 계약을 어렵게 만드는 지렛대다.
+
+소프트웨어를 받지 않는 쪽은 수동 모드로 버틴다. 정부의 전차는 손으로 조준하고, 자유도시는 아크가 끌 수 없는 광섬유 유선 드론을 띄운다. 그 대신 명중이 떨어지고 드론과 방공은 쓰지 못한다.
+
+## 사람이 세력을 옮길 때
+
+- 납치와 포획이 세력 사이에서 사람이 옮겨 가는 가장 큰 사건이다.
+- 다른 세력으로 옮겨 가면 본래 계급과 상관없이 가진 자산과 영토를 빼앗기고 최하층민이 된다.
+- 받아 간 세력은 힘을 가진 이방인보다 통제할 수 있는 쓸모 있는 최하층민을 원한다. 기술만 쓰고 신분은 올려 주지 않는다. 태업, 몸값 협상, 탈출, 원주민 하층민의 질투가 갈등이 된다.
+- 넘어간 기술자의 태업과 탈출은 가족 인질로 막는다. 인질 구출은 기술자를 되찾는 사건이 된다.
+- 의사와 장교의 이탈과 포로는 이 비용 구조를 흔드는 열린 수단이다.
+
+## 떠도는 기계와 고대 병기
+
+AI는 세 세력의 공동의 적이 아니다. 떠도는 기계는 셔터 밖 하류층 건물을 덮치는 재해이고, 물리치고 붙잡으면 병종이 되는 자원이다. 기체를 새로 만들 수는 없으므로 잃으면 다시 잡아야 한다. 이따금 발견되는 고대 병기와 습격이 서울의 불안을 유지한다. 고대 병기는 둘 이상의 세력이 기술을 대야 깨어나므로, 발견이 곧 외교 사건이 된다. 드론과 감시 장비는 세력이 나중에 얻는 무기다. 기계가 병종이 되는 단계는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)과 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)에 있다.
+
+## 미정
+
+- 의사가 자유도시에만, 장교가 정부에만 있는 이유: 미정. 나중에 시나리오 장치로 정한다.
+- 비용을 게임 수치로 옮긴 값(부상병 복귀율, 유지비, 해금 조건의 숫자)은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)의 제안 값이며 확정되지 않았다.
+
+## 관련 문서
+
+- [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)
+- [서울의 세 세력](/wiki/Sixteen-States/)
+- [이 시대의 기술과 무구](/wiki/Era-Arms-and-Tech-Level/)
+- [잃어버린 기술](/wiki/Lost-Technology-Lineage/)
+- [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
+');
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Unit-Roster-and-Tech-Tree', 'Unit Roster and Tech Tree', '병종 로스터와 테크트리', 'goods', 1, '
+## How to Read This Page
+
+This page turns [The Cost Structure of the Three Factions](/wiki/Cost-Structure/) into units, weapon codes and tiered tech trees. The faction logic (who holds what, who lacks what, and what each must get from the others) is canon. Unit names, combat values, costs, upkeep, weapon codes and the numbers in unlock conditions are proposals for tuning the game, and may change after play-testing.
+
+- There are 48 units: 15 Government, 15 Free Cities, 11 Arc, and 7 shared units derived from roaming machines.
+- There are 51 weapons and pieces of equipment.
+- The leaders are President Kim Yeongyu (Government), Chair of the Board I Ilseop (Free Cities) and Hierophant Go Ye-jin (Arc).
+- Combat values (damage/toughness/pursuit/screen) are starting values on a 0 to 120 scale.
+
+## Design Principles
+
+1. Cost comes not from numbers but from scattered facilities and people. So the key field of a unit is not attack but what it requires (officers, doctors, the Arc key, salvaged machines). Without them a unit is not available at all, or runs in a set degraded mode.
+2. The three factions are asymmetric. The Government wins hard and loses people. The Free Cities fight weakly and last long. The Arc does not fight head-on; it switches off other factions'' equipment. The Arc''s mechanical bodies are hurt less than people, but the Arc has no doctors.
+3. The more advanced, the more you need from others. L1 and L2 open with a faction''s own facilities. L3 needs one thing from another faction, L4 two, L5 three. So at the strategic layer, trade, recruitment, prisoners and salvage matter as much as battle.
+4. Switching on and off is not free. When the Arc uses a shutdown signal, the other side''s license trust drops at once, and that side gains a motive to strip out Arc software and go back to manual.
+5. The AI is not a common enemy. Roaming machines are not an enemy faction but a hazard and a resource. They can fall on a district like a raid, and once captured they become units. Machines cannot be built, so a lost one has to be caught again.
+6. Drones and surveillance come later. At the start (L1) there are no fighting drones; only the Arc''s remote-steered insects scout. The Free Cities get fiber-tethered drones at L2, the Arc tamed swarms at L3, and the Government licensed drones at L4.
+
+## Weapon Numbering Rules
+
+A weapon or equipment code is `<faction>-<family><tier>-<serial>`. For example, `G-V4-01` is Government, vehicle, L4, number 1.
+
+- Faction: `G` Government, `F` Free Cities, `A` Arc, `R` roaming-machine derived (shared). The faction actually using it is shown by the unit ID.
+- The tier digit equals the unlock tier (L1 to L5). Within a tier, items are told apart by serial number, and a retired or replaced number is never reused.
+- Unit IDs are `<faction>-U<two digits>`, counted separately from weapon codes.
+- Status suffixes: `/A` when Arc software is inside (meaning there is a backdoor, for example `G-V4-01/A`), `/M` for manual mode, `/R` for salvaged or converted items.
+
+| Family | Meaning |
+|---|---|
+| `S` | Personal arms (rifles, pistols, bayonets, crossbows) |
+| `M` | Squad and heavy weapons (machine guns, mortars) |
+| `T` | Anti-tank and anti-machine (recoilless guns, guided missiles) |
+| `V` | Vehicles, rail cars, tanks |
+| `D` | Unmanned aircraft (drones) |
+| `W` | Electronic warfare and software modules (switching on and off) |
+| `H` | Medical (aid, surgery, medical robots) |
+| `E` | Engineering and siege (cutters, charges, barriers) |
+| `B` | Mechanical bodies and worn gear |
+| `X` | Salvaged ancient weapons (from roaming machines) |
+| `C` | Command and communications (radio, fire control) |
+
+## Roaming Machine Type Numbers
+
+The `M` numbers in salvage requirements refer to roaming machine types. They are a different series from the "source placement" numbers in the ecology compendium entries.
+
+| Type | Machine | Ecology compendium |
+|---|---|---|
+| M1 | service robot | [G14 · Empty Cart](/wiki/Hostile-Group-G14/) |
+| M2 | inspection robot (four-legged) | [G16 · Girder Spider](/wiki/Hostile-Group-G16/) |
+| M3 | inspection robot (track and conduit) | [G18 · Fire-Leg Train](/wiki/Hostile-Group-G18/) |
+| M4 | care robot | [G15 · Care Wheel](/wiki/Hostile-Group-G15/) |
+| M5 | logistics robot crew | [G13 · Pincer Arm](/wiki/Hostile-Group-G13/) |
+| M6 | blockade watch net | [G17 · One-Eye Tower](/wiki/Hostile-Group-G17/) |
+| M7 | returning unmanned vehicle (six-wheeled UGV) | — |
+| M8 | drone swarm | — |
+| M9 | field of unexploded warheads and optical fiber | — |
+| M10 | remote-steered insects | — |
+| M11 | air-defense system (ancient weapon) | — |
+| M12 | Lantern Ant | [G25 · Lantern Ant](/wiki/Hostile-Group-G25/) |
+| M13 | Iron Dinosaur | [G26 · Iron Dinosaur](/wiki/Hostile-Group-G26/) |
+| M14 | armored locomotive (ancient weapon) | — |
+
+## Government Units
+
+The Government holds the officer corps, tanks and heavy weapons, depots, large university hospital buildings and the original seed stock. It lacks medical technicians (Free Cities) and weapon software (Arc). It can give only first aid, so its wounded return rate is 0.3 (proposed value). Its mark is an ochre armband.
+
+| ID | Unit | Tier | Class | Damage/toughness/pursuit/screen | Weapons and equipment | Requires | Software (backdoor) | Cost | Upkeep | Role |
+|---|---|---|---|---|---|---|---|---|---|---|
+| G-U01 | service rifle squad | L1 | `rifle` | 28/12/0/0 | `G-S1-01`, `G-S1-02` | — | none (0) | 6 people, ammunition | food 6, ammo 30/person | Backbone of frontal firepower. Accurate under officer command |
+| G-U02 | patrol shield squad | L1 | `guard` | 14/30/0/10 | `G-S1-03`, `G-S1-02` | — | none (0) | 8 people | food 8 | Keeps order in front of the shutters and blocks firing lines |
+| G-U03 | officer command team | L1 | `command` | 8/12/0/6 | `G-S1-01`, `G-C4-01` | — | none (0) | 3 people (officers) | food 3, battery 2 | Combined command: removes order delay for friendly units in the same zone and opens combined fire for heavy weapons and tanks. Government only |
+| G-U04 | first-aid team | L1 | `medic` | 4/10/0/0 | `G-H1-01` | — | none (0) | 3 people, medicine | food 3, medicine 1 | First aid only. It holds on to the lightly wounded, but the badly wounded do not come back (wounded return 0.3) |
+| G-U05 | squad support gun team | L2 | `heavy` | 60/10/0/0 | `G-M2-01` | — | none (0) | 4 people, much ammunition | food 4, ammo 200/gun | Suppressive fire that wears down enemy squad morale |
+| G-U06 | mortar section | L2 | `heavy` | 55/8/0/0 | `G-M2-02` | officer | none (0) | 5 people, shells | food 5, shells | Indirect fire. Accurate only when an officer command team is on the same field |
+| G-U07 | breaching engineers | L2 | `engineer` | 10/14/0/0 | `G-E2-01` | — | none (0) | 4 people, explosives | food 4, hydraulics 2 | Breaches shutters and blast doors; explosives |
+| G-U08 | rail motorcar | L2 | `rail` | 10/0/0/0 | `G-V2-02` | — | none (0) | hardware, battery | battery 10 | Moves along underground track; carries a squad of 10 |
+| G-U09 | restored armored carrier | L3 | `vehicle` | 30/60/10/0 | `G-V3-01`, `G-M2-01` | — | none (0) | depot, fuel | fuel 12, maintenance | Surface mobility; carries 8 |
+| G-U10 | anti-machine recoilless team | L3 | `antiarmor` | 70/8/0/0 | `G-T3-01` | — | none (0) | 3 people, shells | food 3, shells | Kills armor and large machines |
+| G-U11 | restored main battle tank | L4 | `vehicle` | 110/120/10/0 | `G-V4-01`, `G-C4-01` | officer, Arc key (manual and degraded without) | licensed (2) | depot, fuel (large), officer | fuel 20, maintenance, license | The strongest frontal force. Without an Arc license (fire-control terminal) it aims by hand at -40% hit; with the license, the Arc can switch it off |
+| G-U12 | self-propelled battery | L4 | `artillery` | 95/50/0/0 | `G-V4-02`, `G-C4-01` | officer, Arc key (manual and degraded without) | licensed (2) | depot, shells, officer | fuel 16, shells, license | Long-range bombardment. Wide dispersion without firing-data software |
+| G-U13 | air-defense battery | L4 | `emplacement` | 90/80/0/0 | `G-X4-01` | Arc key, salvaged M11 | Arc-held (3) | restoration works, Arc contract | power, license | Stops drones and flying machines. A joint weapon of Government hardware and Arc software; the shutdown device stays in Arc hands |
+| G-U14 | surveillance drone team | L4 | `drone` | 6/8/0/20 | `G-D4-01`, `G-C4-01` | Arc key | licensed (2) | depot, battery, license | battery 8, license | Wide reconnaissance (recon grade +1 to +2). Flight control needs the Arc key, and the Arc sees what it sees |
+| G-U15 | remote-commanded UGV troop | L5 | `machine` | 80/140/0/0 | `G-X5-01`, `G-C4-01` | officer, Arc key, salvaged M7 | Arc-held (3) | salvaged machine, fuel, officer, license | fuel 14, maintenance, license | The Government''s L5 for sparing people: since its wounded do not come back, it sends machines first. Needs salvaged M7, an officer and the Arc key |
+
+## Free City Units
+
+The Free Cities hold doctors and neural-link medicine, people and food, and the Capital Defense Command (CDC) equipment left on their ground. Thanks to conscript basic training, anyone can handle and maintain a rifle. They lack officers (Government), medical-robot software (Arc) and the original seed stock (Government). With doctors, their wounded return rate is 0.85 (proposed value). Their mark is a faded navy armband.
+
+| ID | Unit | Tier | Class | Damage/toughness/pursuit/screen | Weapons and equipment | Requires | Software (backdoor) | Cost | Upkeep | Role |
+|---|---|---|---|---|---|---|---|---|---|---|
+| F-U01 | conscript rifle company | L1 | `rifle` | 24/12/0/0 | `F-S1-01` | — | none (0) | 8 people, food | food 8, ammo 25/person | Everyone has had basic military training, so they are many. They maintain their own weapons |
+| F-U02 | militia bayonet band | L1 | `line` | 26/18/10/0 | `F-S1-02` | — | none (0) | 8 people | food 8 | Keeps fighting when ammunition runs out. Close combat |
+| F-U03 | doctor-led aid team | L1 | `medic` | 4/10/0/0 | `F-H1-01` | — | none (0) | 3 people (1 doctor), medicine | food 3, medicine 2 | A doctor goes with the team. Wounded return 0.85; keeps up the morale of friendly units in the same zone |
+| F-U04 | maintenance engineers | L1 | `engineer` | 10/14/0/0 | `F-E1-01` | — | none (0) | 4 people, materials | food 4 | Weapon maintenance, barricades, upkeep of Capital Defense Command equipment |
+| F-U05 | fixed machine-gun crew | L2 | `heavy` | 65/18/0/0 | `F-M2-01` | — | none (0) | 3 people, ammunition | food 3, ammo 200 | Run at squad level, so no officer is needed. The core of ticket-gate defense |
+| F-U06 | tethered scout drone team | L2 | `drone` | 4/8/0/16 | `F-D2-01` | salvaged M9 | none (0) | recovered fiber (M9), battery | battery 4 | Wire-guided by optical fiber, so the Arc cannot switch it off. Limited range |
+| F-U07 | e-bike scouts | L2 | `mounted` | 24/12/30/24 | `F-V2-03`, `F-S1-01` | — | none (0) | electric motorbike, battery | battery 6, food 4 | Fast scouting and raids. Battery is the bottleneck |
+| F-U08 | rail handcar | L1 | `rail` | 0/0/0/0 | `F-V1-02` | — | none (0) | materials | none | Quiet track transport; carries 6 |
+| F-U09 | workshop mortar crew | L3 | `heavy` | 45/8/0/0 | `F-M3-02` | officer (manual and degraded without) | none (0) | 4 people, shells | food 4, shells | Fires by experience without an officer: wide dispersion (-30% hit). Normal once an officer is won over |
+| F-U10 | capital-defense armored vehicle | L3 | `vehicle` | 30/60/10/0 | `F-V3-01` | officer (manual and degraded without) | none (0) | CDC equipment, fuel | fuel 12 | The hardware is there. Without an officer: order delay x2 and no combined fire |
+| F-U11 | neural-link pilot | L3 | `special` | 12/10/0/10 | `F-H3-02`, `F-B3-01` | doctor | none (0) | doctor, surgery, 2 people | food 2, medical 1 | A surgically linked pilot steers captured machines by thought (raises the ceiling of machine-derived units) |
+| F-U12 | capital-defense tank | L4 | `vehicle` | 100/120/10/0 | `F-V4-01` | officer | none (0) | CDC equipment, fuel (large), officer | fuel 20 | Without an officer it serves only as an immobile fixed battery. Maneuver warfare opens once an officer is won over or captured |
+| F-U13 | surgical-robot field hospital | L4 | `medic` | 0/30/0/0 | `F-H4-03` | doctor, Arc key | licensed (3) | doctor, medical robot, license | power, medical 3, license | Wounded return 0.95; even the badly wounded come back. Needs Arc software, so the Arc can switch it off |
+| F-U14 | workbench drop-drone team | L3 | `drone` | 30/6/0/10 | `F-D3-02` | — | none (0) | parts, explosives, battery | battery 6 | Hand-steered by radio, drops small charges. Radio leaves it open to Arc and Government jamming |
+| F-U15 | neural-direct quadruped troop | L5 | `machine` | 40/50/20/10 | `R-X2-01`, `F-B3-01` | doctor, salvaged M2, Arc key (manual and degraded without) | licensed (1) | salvage (M2), pilot, maintenance | battery 8, medical 1 | A surgically linked pilot drives a captured inspection robot by thought: strongest on stairs and in tunnels. Slow to respond without the Arc key |
+
+## Arc Units
+
+The Arc holds a monopoly on ancient data-center software, command-input mechanical bodies and a few packs of tamed old machines. It has no material base such as factories, heavy weapons or hospitals, and no thought-control surgery (Free City doctors). Its wounded return rate is 0.5 (proposed value). Its mark is a pale grey sash with a thin teal stripe.
+
+| ID | Unit | Tier | Class | Damage/toughness/pursuit/screen | Weapons and equipment | Requires | Software (backdoor) | Cost | Upkeep | Role |
+|---|---|---|---|---|---|---|---|---|---|---|
+| A-U01 | guard riflemen | L1 | `rifle` | 22/10/0/0 | `A-S1-01` | — | none (0) | 4 people | food 4, ammo 20/person | Few in number. Self-defense of stronghold entrances only. Manned by the Eastern Command, the Arc''s hereditary rifle guard |
+| A-U02 | mechanical-body devotees | L1 | `line` | 30/34/0/0 | `A-B1-01` | — | none (0) | 5 people, mechanical body | food 3, battery 3 | Strong and cold-hardy. Command-input, so slow to react (order delay x1.5) |
+| A-U03 | insect scouts | L1 | `skirm` | 0/6/0/24 | `A-X1-01` | — | none (0) | 2 people | battery 1 | Scouts with remote-steered insects (recon grade +1). No combat power |
+| A-U04 | net capture team | L1 | `antidrone` | 6/10/0/12 | `A-S1-02` | — | none (0) | 3 people, nets | food 3 | Brings drones down and takes them alive as material for taming |
+| A-U05 | electronic warfare cell | L2 | `ew` | 0/8/0/0 | `A-W2-01`, `A-W2-02` | — | Arc-held (0) | 3 people, access range | battery 4 | Switches off other factions'' equipment that carries Arc software (tank fire control, drones, medical robots, air defense). Each use lowers the other side''s trust and raises its motive to strip the software out |
+| A-U06 | tamed drone swarm | L3 | `drone` | 35/6/0/20 | `A-X3-01` | salvaged M8 | Arc-held (0) | salvage (M8), control module | power 6 | Old swarms captured and fitted with control modules. Cannot be replenished; they dwindle with use |
+| A-U07 | woken logistics robots | L3 | `machine` | 15/40/0/0 | `A-X3-02` | salvaged M5 | Arc-held (0) | salvage (M5) | power 4 | Workers and moving barriers. The Arc cannot repair them, so they keep dwindling |
+| A-U08 | woken sentry post | L3 | `emplacement` | 50/60/0/10 | `A-X3-03` | salvaged M6 | Arc-held (0) | salvage (M6) | power 3 | Switches the blockade watch net back on. It can fire at anyone passing (risk of losing control) |
+| A-U09 | shutdown keyholders | L4 | `command` | 0/8/0/0 | `A-W3-03`, `A-W2-01` | — | Arc-held (0) | 2 people | power 2 | Holds the shutdown and joint keys of ancient weapons. The unit that makes license contracts with other factions |
+| A-U10 | woken UGV | L4 | `machine` | 70/120/0/0 | `A-X4-04` | salvaged M7, Government depot (for repair) | Arc-held (0) | salvage (M7) | power 8 | The Arc can wake it but not repair it. Repair needs a Government depot contract |
+| A-U11 | neural-direct mechanical elite | L5 | `special` | 50/45/10/0 | `A-B5-02` | doctor | Arc-held (0) | Free City doctor, mechanical body | battery 4, medical 1 | Mechanical bodies moved by thought. Needs surgery by a Free City doctor (won over, captured or contracted) |
+
+## Units Derived from Roaming Machines
+
+These are units made from old machines roaming the city, captured, salvaged and tamed. No faction can complete them alone: they need capture (people), repair (hardware), signal check (Arc) and thought control (Free City doctors). They cannot be replenished and dwindle with use. They wear the sash of the faction that fields them.
+
+| ID | Unit | Tier | Class | Damage/toughness/pursuit/screen | Weapons and equipment | Requires | Software (backdoor) | Cost | Upkeep | Role |
+|---|---|---|---|---|---|---|---|---|---|---|
+| R-U01 | cargo service robot | L1 | `support` | 0/20/0/0 | `R-X1-07` | salvaged M1 | none (0) | capture | power 1 | Carries supplies (+1 supply day). Low risk; anyone can capture it |
+| R-U02 | stabilized quadruped | L2 | `mounted` | 30/40/10/10 | `R-X2-01` | salvaged M2, Arc key (manual and degraded without) | licensed (1) | salvage (M2), maintenance, Arc check | battery 8 | Capture (people) + repair (hardware) + signal check (Arc). Riders use commands; a neural pilot rates higher |
+| R-U03 | converted UGV | L3 | `machine` | 60/110/0/0 | `R-X3-02` | salvaged M7, Arc key (manual and degraded without) | licensed (2) | salvage (M7), fuel | fuel 8 | Salvage + repair + Arc key. How complete it is differs by faction |
+| R-U04 | searchlight insect-drones | L3 | `drone` | 10/4/0/24 | `R-X3-03` | salvaged M12, Arc key (manual and degraded without) | licensed (0) | salvage (M12) | power 3 | Searches in the dark. Its light raises the risk that being seen brings them in (exposure +2) |
+| R-U05 | hydraulic siege machine | L4 | `siege` | 0/90/0/0 | `R-X4-04` | salvaged M13 | none (0) | salvage (M13), hydraulics | hydraulics 8 | Smashes shutters and blast doors (heavy barrier damage). Hydraulic maintenance by the Government and the Free Cities |
+| R-U06 | woken air-defense | L4 | `emplacement` | 85/80/0/0 | `R-X4-05` | salvaged M11, Arc key, Government depot | Arc-held (3) | salvage (M11), contract | power, license | Government hardware + Arc software + shutdown device (Arc). No one can use it alone |
+| R-U07 | revived armored locomotive | L5 | `rail` | 60/200/0/0 | `R-X5-06` | salvaged M14, Government depot, Arc key | Arc-held (3) | salvage (M14), technicians, Arc key | fuel 20 | The only war machine on the rails. Restoration (Government or Free City technicians) + waking (Arc) |
+
+## Weapons and Equipment
+
+### Government
+
+| Code | Name | Unlock | Note |
+|---|---|---|---|
+| `G-C4-01` | fire-control terminal (Arc-licensed) | L4 | Normalizes precision-weapon accuracy. Backdoor risk 2 |
+| `G-D4-01` | restored military surveillance drone | L4 | Airframe from Government depots; flight control needs the Arc key |
+| `G-E2-01` | hydraulic cutter and charges | L2 | Breaches shutters and blast doors |
+| `G-H1-01` | first-aid kit | L1 | There are hospitals but no doctors, so first aid only |
+| `G-M2-01` | squad machine gun | L2 | Suppressive fire; heavy ammunition use |
+| `G-M2-02` | 81 mm mortar | L2 | Indirect fire. Needs officer fire direction |
+| `G-S1-01` | service rifle (K2-pattern, restored) | L1 | Parts made at the depots; compatible ammunition is self-supplied |
+| `G-S1-02` | bayonet and baton | L1 | Close-combat profile when ammunition is 0 |
+| `G-S1-03` | riot shield | L1 | Patrol shield squad |
+| `G-T3-01` | recoilless rifle | L3 | Anti-armor and anti-machine |
+| `G-V2-02` | rail motorcar | L2 | Underground track mobility; battery |
+| `G-V3-01` | restored tracked APC | L3 | Fuel, lubricant and track maintenance |
+| `G-V4-01` | restored main battle tank | L4 | Without an Arc license the fire-control computer is replaced by hand aiming |
+| `G-V4-02` | self-propelled artillery | L4 | Firing-data software needs an Arc license |
+| `G-X4-01` | restored air-defense battery | L4 | A joint weapon: Government hardware and Arc software |
+| `G-X5-01` | remote-commanded unmanned ground vehicle | L5 | Salvaged returning UGV (M7) + remote command by an officer + Arc key |
+
+### Free Cities
+
+| Code | Name | Unlock | Note |
+|---|---|---|---|
+| `F-B3-01` | neural control helmet | L3 | A surgically linked pilot steers machines by thought |
+| `F-D2-01` | fiber-optic tethered scout drone | L2 | Built in-house from fiber (M9) recovered in fields of unexploded warheads |
+| `F-D3-02` | workbench drop drone | L3 | Hand-steered by radio; small charges |
+| `F-D5-03` | drone swarm wing | L5 | Swarm control needs Arc software |
+| `F-E1-01` | maintenance tools and barricade stock | L1 | Weapon maintenance, barriers |
+| `F-H1-01` | medical bag and surgical kit | L1 | A doctor goes along: high wounded return |
+| `F-H3-02` | neural-link surgery | L3 | Trains pilots. Risk of paralysis on failure |
+| `F-H4-03` | surgical robot | L4 | Needs Arc software. Backdoor risk 3 |
+| `F-M2-01` | stock machine gun (fixed) | L2 | Squad-level use needs no officer |
+| `F-M3-02` | workshop mortar | L3 | Aimed mostly by experience; lower accuracy without an officer |
+| `F-S1-01` | capital-defense stock rifle | L1 | Anyone can handle it thanks to conscript basic training |
+| `F-S1-02` | work tools and empty-rifle bayonet | L1 | Militia close combat |
+| `F-V1-02` | rail handcar | L1 | Low-noise track transport |
+| `F-V2-03` | electric motorbike | L2 | Battery bottleneck |
+| `F-V3-01` | capital-defense armored vehicle | L3 | Command penalty without an officer (order delay, no combined fire) |
+| `F-V4-01` | capital-defense tank | L4 | Only a fixed battery unless an officer is won over or captured |
+
+### Arc
+
+| Code | Name | Unlock | Note |
+|---|---|---|---|
+| `A-B1-01` | mechanical body (command-input) | L1 | Order-delay penalty. Strength and cold resistance |
+| `A-B5-02` | neural-direct mechanical body | L5 | Needs surgery by a Free City doctor |
+| `A-S1-01` | guard rifle | L1 | Few. Self-defense level |
+| `A-S1-02` | net launcher | L1 | Captures drones as material for taming |
+| `A-W2-01` | shutdown signal emitter | L2 | Switches off others'' equipment that carries Arc software. Each use lowers trust |
+| `A-W2-02` | control module | L2 | Implanted into old machines to turn them toward the Arc |
+| `A-W3-03` | joint key terminal | L3 | The physical key that lends a license to others (replaces the old "protocol card" idea) |
+| `A-X1-01` | remote-steered insects | L1 | Micro reconnaissance |
+| `A-X3-01` | tamed drone swarm | L3 | Cannot be replenished; dwindles with use |
+| `A-X3-02` | woken logistics robot crew | L3 | Workers and barriers. Cannot be repaired |
+| `A-X3-03` | woken unmanned sentry post | L3 | Restarts the blockade watch net |
+| `A-X4-04` | woken returning UGV | L4 | Repair needs Government hardware |
+
+### Roaming-Machine Derived
+
+| Code | Name | Unlock | Note |
+|---|---|---|---|
+| `R-X1-07` | cargo service robot | L1 | Service robot (M1) |
+| `R-X2-01` | stabilized quadruped machine | L2 | Capture of an inspection robot (M2) + repair + signal check |
+| `R-X3-02` | converted unmanned ground vehicle | L3 | Returning UGV (M7) |
+| `R-X3-03` | searchlight insect-drones | L3 | Lantern Ant (M12) |
+| `R-X4-04` | hydraulic siege heavy machine | L4 | Iron Dinosaur (M13) |
+| `R-X4-05` | woken air-defense battery | L4 | Air-defense system (M11), a joint weapon |
+| `R-X5-06` | revived armored locomotive | L5 | Armored locomotive (M14). Hardware restoration by Government or Free City technicians |
+
+## Tech Trees
+
+The higher the tier, the more a faction needs from outside itself (officers, doctors, Arc software, salvaged roaming machines). Each faction''s L4 is a fork: accept what others hold and bear its price (backdoors, leaks), or hold out in manual or degraded mode.
+
+### Government
+
+| Tier | Name | Opens | Unlock condition | Weapon codes | Units |
+|---|---|---|---|---|---|
+| L1 | Service army | Service rifles, shields, officer command, first aid, depots | Start | `G-S1-01`, `G-S1-03`, `G-H1-01` | G-U01, G-U02, G-U03, G-U04 |
+| L2 | Firepower restored | Machine guns, mortars, breaching engineers, rail motorcar | Depots running + an officer command team | `G-M2-01`, `G-M2-02`, `G-E2-01`, `G-V2-02` | G-U05, G-U06, G-U07, G-U08 |
+| L3 | Mobility restored | Armored carriers, anti-machine recoilless guns | 120 days of fuel stock + one large machine destroyed | `G-V3-01`, `G-T3-01` | G-U09, G-U10 |
+| L4 | Advanced weapons (license fork) | Tanks, self-propelled guns, air defense, surveillance drones | Arc license contract (fire-control terminal) or manual mode (-40% hit, no drones or air defense). Air defense also needs a restored air-defense system (M11) | `G-V4-01`, `G-V4-02`, `G-C4-01`, `G-X4-01`, `G-D4-01` | G-U11, G-U12, G-U13, G-U14 |
+| L5 | War that spares people | Remote-commanded unmanned vehicles | Salvaged returning UGV (M7) + officer + Arc key. Or win over Free City doctors to improve wounded return (medical fork) | `G-X5-01` | G-U15 |
+
+### Free Cities
+
+| Tier | Name | Opens | Unlock condition | Weapon codes | Units |
+|---|---|---|---|---|---|
+| L1 | City of conscripts | Conscript rifles, militia, doctor-led aid, maintenance, rail handcar | Start | `F-S1-01`, `F-S1-02`, `F-H1-01`, `F-E1-01`, `F-V1-02` | F-U01, F-U02, F-U03, F-U04, F-U08 |
+| L2 | Opening the CDC stores | Fixed machine guns, tethered drones, electric motorbikes | Secure a Capital Defense Command equipment store + recovered fiber (M9) | `F-M2-01`, `F-D2-01`, `F-V2-03` | F-U05, F-U06, F-U07 |
+| L3 | Arms without officers | Workshop mortars, armored vehicles, drop drones, neural-link surgery | Run under the no-officer penalty. Neural surgery needs 2 doctors + a successful trial | `F-M3-02`, `F-V3-01`, `F-D3-02`, `F-H3-02`, `F-B3-01` | F-U09, F-U10, F-U11, F-U14 |
+| L4 | Officers and software (two forks) | CDC tanks, surgical-robot field hospital | Tank maneuver needs an officer won over, captured or defected (from the Government). The surgical robot needs an Arc license (backdoor risk 3) | `F-V4-01`, `F-H4-03` | F-U12, F-U13 |
+| L5 | Machines moved by thought | Neural-direct quadruped troop, drone swarm | Capture of an inspection robot (M2) + surgically linked pilot. Swarm control needs Arc software | `F-D5-03`, `R-X2-01` | F-U15 |
+
+### Arc
+
+| Tier | Name | Opens | Unlock condition | Weapon codes | Units |
+|---|---|---|---|---|---|
+| L1 | Minimal self-defense | Guard rifles, command-input mechanical bodies, insect scouts, net capture | Start | `A-S1-01`, `A-B1-01`, `A-X1-01`, `A-S1-02` | A-U01, A-U02, A-U03, A-U04 |
+| L2 | The hand that switches | Shutdown signal emitter, control module | Data-center access. Works only where Arc software is inside the other side''s equipment | `A-W2-01`, `A-W2-02` | A-U05 |
+| L3 | Taming old machines | Tamed drone swarm, logistics robots, sentry posts | Net capture and salvage (M8, M5, M6) + control-module implant. Cannot be replenished | `A-X3-01`, `A-X3-02`, `A-X3-03`, `A-W3-03` | A-U06, A-U07, A-U08 |
+| L4 | License diplomacy | Shutdown keyholders, woken unmanned vehicle | Joint-key contracts put Arc software into Government and Free City equipment. Repairing the vehicle needs a Government depot contract | `A-X4-04` | A-U09, A-U10 |
+| L5 | The body that thinks | Neural-direct mechanical elite | A Free City doctor won over, captured or contracted (surgery) | `A-B5-02` | A-U11 |
+
+### Roaming-Machine Derived
+
+| Tier | Name | Opens | Unlock condition | Weapon codes | Units |
+|---|---|---|---|---|---|
+| L1 | Picking up | Service robot | Capture only | `R-X1-07` | R-U01 |
+| L2 | Stabilizing | Stabilized quadruped | Capture (people) + repair (hardware) + signal check (Arc) | `R-X2-01` | R-U02 |
+| L3 | Conversion | Unmanned ground vehicle, searchlight drones | Salvage + repair + Arc key | `R-X3-02`, `R-X3-03` | R-U03, R-U04 |
+| L4 | Large machines | Hydraulic siege machine, woken air defense | Hydraulic and power maintenance + joint key | `R-X4-04`, `R-X4-05` | R-U05, R-U06 |
+| L5 | War machine | Revived armored locomotive | Skills of all three factions (restoration, repair, waking) | `R-X5-06` | R-U07 |
+
+## Cross-Faction Dependencies
+
+| Unlock source | Giver to receiver | What it opens | How it is obtained | Risk |
+|---|---|---|---|---|
+| Officers | Government to Free Cities | Free City L4 tank maneuver; lifts the mortar and armored-vehicle penalties | Recruitment, defection, capture | A captured officer''s loyalty is tested; a defector becomes a target of Government reprisal |
+| Doctors (surgery, neural link) | Free Cities to Government and Arc | Higher Government wounded return (L5 medical fork); Arc L5 neural-direct elite | Contract, recruitment, capture | When doctors leave, the Free Cities'' staying power weakens |
+| Arc software license | Arc to Government and Free Cities | Government L4 fire control, drones, air defense; Free City L4 medical robots and L5 drone swarms | Joint-key contract | Backdoor: the Arc can switch it on and off. Using it lowers trust and raises the motive to strip it out |
+| Government hardware and depots | Government to Arc | Arc L4 unmanned-vehicle repair; the joint air-defense weapon | Maintenance contract | The Government sees the inside of the Arc''s machines |
+| Original seed stock | Government to Free Cities | The food ceiling (the Free Cities'' weapons are people and food) | Trade, seizure | Not a unit unlock but a ceiling on upkeep |
+| Salvaged roaming machines | The map to anyone | All roaming-machine units, Arc L3 and L4, Government L5, Free City L5 | Capture (people), repair (hardware), signal check (Arc), thought control (doctors) | Cannot be replenished; an Arc signal may remain inside |
+
+## Degraded Modes
+
+A unit that lacks its requirements runs as follows (values proposed).
+
+| Situation | Effect |
+|---|---|
+| No officer | Order delay x2, no combined fire, mortar hit -30%. A Free City tank becomes an immobile fixed battery |
+| No Arc key | Precision weapons are aimed by hand at -40% hit. Drones and air defense cannot run |
+| Command-input mechanical body | Order delay x1.5 |
+
+## Counters and Upkeep
+
+There is no rock-paper-scissors loop. The top of the ladder (artillery, air defense, tanks) is broken not by counters but by dependency: it stops when it loses its officer, runs out of fuel, or the Arc switches it off. Electronic warfare (`ew`) and siege (`siege`) are effects rather than counters, so they are left out of the loop check. Weight 1.0 means strong, 0.5 weak.
+
+| Attacking class | Target | Weight |
+|---|---|---|
+| `rifle` | `line` | 1.0 |
+| `rifle` | `skirm` | 0.5 |
+| `guard` | `rifle` | 1.0 |
+| `heavy` | `guard` | 1.0 |
+| `heavy` | `line` | 0.5 |
+| `mounted` | `heavy` | 1.0 |
+| `mounted` | `skirm` | 1.0 |
+| `antiarmor` | `vehicle` | 1.0 |
+| `antiarmor` | `machine` | 1.0 |
+| `vehicle` | `mounted` | 1.0 |
+| `vehicle` | `heavy` | 0.5 |
+| `artillery` | `emplacement` | 1.0 |
+| `artillery` | `antiarmor` | 0.5 |
+| `drone` | `heavy` | 1.0 |
+| `drone` | `antiarmor` | 0.5 |
+| `antidrone` | `drone` | 1.0 |
+| `emplacement` | `drone` | 1.0 |
+| `ew` | licensed or Arc-held equipment | 1.0 |
+| `machine` | `guard` | 1.0 |
+| `siege` | barriers (shutters) | 1.0 |
+
+| Resource | Government | Free Cities | Arc |
+|---|---|---|---|
+| Food | Stable thanks to the original seed stock | Uses the most (people are the weapon). Capped without seed | Little (few people) |
+| Ammunition and fuel | Self-supplied from depots. Tanks eat fuel | Draws down CDC stockpiles | Almost none |
+| Medicine and medical care | First-aid kits only | Doctors turn medicine into people | Mechanical bodies are maintained with power |
+| License | Needed for every L4 precision weapon | Medical robots, drone swarms | Lends it out (leverage) |
+| Salvaged machines | Shrink with use | Shrink with use | Shrink with use (most dependent) |
+
+## Mapping to the Game''s Battle Rules
+
+Where an existing battle-rule field fits, it is used; where there is a gap, a new field is proposed. All values are proposals.
+
+| v4 concept | Existing field | Proposed value | Status |
+|---|---|---|---|
+| Wounded return by faction | `casualties.soft_to_hard_main` (now 0.3, shared) | Government 0.7, Free Cities 0.15, Arc 0.5; -0.1 to -0.2 with a medical unit | Field exists, no faction branch |
+| Replenishment rate | `campaign_feedback.reinforce_monthly` (levy 0.03, standing 0.1) | Free Cities 0.05 (conscription), Government 0.1 (standing), Arc 0.02 | Field exists |
+| Food and supply | `advantage.supply` (0/-10/-25), supply days | Free Cities without seed: supply-day cap -30% | Field exists |
+| Officer command | `commander_martial_term`, `order` term | Without an officer, `order` -10 and no combined heavy-weapon fire | No combined-fire field |
+| Weapon accuracy | `sim.ranged.hit_base` 0.16, `damage` 35 | Per-weapon `hit_base`; manual mode x0.6 | No per-weapon rows |
+| Shutters | `war_types.siege.shutter_level` (Government 3, Arc 1, Free Cities 0) | Hydraulic siege machines and breaching engineers lower the level | Field exists |
+| Backdoor shutdown | None | Units with backdoor risk 3 face a shutdown check when an Arc EW cell is in range; each use is `license.trust` -1 | New field |
+| License trust | None | 0 to 3 per faction pair, rising and falling with contracts and use | New field |
+| Drone reconnaissance | None | Recon grade +1 to +2 (fog-clearing radius) | New field |
+| Salvaged machine stock | None | `salvage_stock[M#]`, replenishment 0 | New field |
+| Medicine | None | `upkeep.med`; when short, the medical bonus is 0 | New field |
+
+Check: in the existing example where the Government wins 154 to 141 over the Free Cities, the new return rates turn the same 40 soft casualties into 28 hard for the Government and 6 hard for the Free Cities. The Government wins the battle, but a month later the Free Cities have more troops left.
+
+## Undecided and Proposed
+
+- Why doctors are only in the Free Cities and officers only in the Government: undecided. Once the scenario device is set, the odds and costs of recruitment, defection and capture will be retuned. For now all three means stay open.
+- Wounded return rates (Government 0.3, Free Cities 0.85, Arc 0.5) and all combat values, costs and upkeep are proposed values.
+- Reach of the Arc shutdown signal: this page limits it to equipment carrying Arc software and tamed machines (proposal).
+- Whether a Free City tank without an officer is a fixed battery, or mobile with order delay x3: still a proposal.
+- Treating the four-legged mount as a shared (R-series) unit: a proposal.
+- The neural-direct mechanical elite (A-U11) is a body moved by a person''s thought, not a machine that thinks for itself.
+- The searchlight insect-drones and the hydraulic siege machine come from the Lantern Ant and the Iron Dinosaur in the ecology compendium. Whether the game''s display names use those names is not decided.
+- The original seed stock is used only as a food ceiling, not as a unit unlock (proposal).
+
+## Related Pages
+
+- [The Cost Structure of the Three Factions](/wiki/Cost-Structure/)
+- [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/)
+- [Lost Technology](/wiki/Lost-Technology-Lineage/)
+- [People and Machines](/wiki/People-and-Machines/)
+- [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
+- [The Three Factions of Seoul](/wiki/Sixteen-States/)
+', '
+## 읽는 법
+
+이 문서는 [세 세력의 비용 구조](/wiki/Cost-Structure/)를 병종, 무기 번호, 단계별 테크트리로 옮긴 것이다. 세력의 논리(누가 무엇을 가졌고 무엇이 없는지, 무엇을 남에게서 얻어야 하는지)는 정본이다. 병종 이름, 전투값, 비용, 유지비, 무기 코드, 해금 조건의 숫자는 게임 수치를 맞추기 위한 제안이며, 게임에서 시험한 뒤 바뀔 수 있다.
+
+- 병종은 모두 48종이다. 정부 15종, 자유도시 15종, 아크 11종, 떠도는 기계에서 온 공용 병종 7종이다.
+- 무기와 장비는 51종이다.
+- 지도자는 정부 대통령 김연규, 자유도시 이사회장 이일섭, 아크 교주 고예진이다.
+- 전투값(피해/내구/추격/차단)은 0~120 척도의 출발값이다.
+
+## 설계 원칙
+
+1. 비용은 숫자가 아니라 흩어진 시설과 사람에서 나온다. 그래서 병종의 핵심 칸은 공격력이 아니라 필요 조건(장교, 의사, 아크 키, 회수한 기계)이다. 조건이 없으면 병종이 아예 나오지 않거나, 정해진 저하 모드로 돈다.
+2. 세 세력은 비대칭이다. 정부는 강하게 이기고 사람을 잃는다. 자유도시는 약하게 싸우고 오래 버틴다. 아크는 정면으로 싸우지 않고 남의 장비를 끈다. 아크의 기계신체는 사람보다 덜 다치지만 아크에는 의사가 없다.
+3. 첨단일수록 남의 것이 필요하다. L1·L2는 자기 시설로 연다. L3은 남의 것 하나, L4는 둘, L5는 셋을 요구한다. 그래서 전략 층에서는 거래, 포섭, 포로, 회수가 전투만큼 중요하다.
+4. 켜고 끄기는 공짜가 아니다. 아크가 정지 신호를 쓰면 상대의 라이선스 신뢰가 바로 깎이고, 상대는 아크 소프트웨어를 걷어 내고 수동으로 돌아갈 동기를 얻는다.
+5. AI는 공동의 적이 아니다. 떠도는 기계는 적 세력이 아니라 재해이자 자원이다. 습격처럼 덮치기도 하고, 붙잡으면 병종이 된다. 기계는 만들 수 없으므로 잃으면 다시 잡아야 한다.
+6. 드론과 감시 장비는 나중에 얻는다. 시작 단계(L1)에는 싸우는 드론이 없고, 아크의 원격 조종 곤충만 정찰을 한다. 자유도시는 L2에 광섬유 유선 드론을, 아크는 L3에 길들인 무리를, 정부는 L4에 라이선스 드론을 얻는다.
+
+## 무기 번호 규칙
+
+무기와 장비의 코드는 `<세력>-<계열><단계>-<일련>`이다. 예를 들어 `G-V4-01`은 정부, 차량, L4, 1번이다.
+
+- 세력: `G` 정부, `F` 자유도시, `A` 아크, `R` 떠도는 기계 유래(공용). 실제로 쓰는 세력은 병종 ID로 구분한다.
+- 단계 숫자는 해금 단계(L1~L5)와 같다. 같은 단계 안에서는 일련번호로 구분하고, 단종되거나 대체된 번호는 다시 쓰지 않는다.
+- 병종 ID는 `<세력>-U<두 자리>`이고, 무기 코드와 따로 센다.
+- 상태 표시: 아크 소프트웨어가 들어 있으면 `/A`(백도어가 있다는 뜻, 예: `G-V4-01/A`), 수동 모드는 `/M`, 회수하거나 개조한 것은 `/R`을 붙인다.
+
+| 계열 | 뜻 |
+|---|---|
+| `S` | 개인화기(소총·권총·총검·석궁) |
+| `M` | 분대·중화기(기관총·박격포) |
+| `T` | 대전차·대기계(무반동포·유도탄) |
+| `V` | 차량·궤도차·전차 |
+| `D` | 무인기(드론) |
+| `W` | 전자전·소프트웨어 모듈(켜고 끄기) |
+| `H` | 의료(구호·수술·의료로봇) |
+| `E` | 공병·공성(절단기·폭약·방벽) |
+| `B` | 기계신체·착용 장비 |
+| `X` | 고대 병기 회수품(로밍 기계 유래) |
+| `C` | 지휘·통신(무전·사격통제) |
+
+## 떠도는 기계의 기종 번호
+
+회수 조건의 `M` 번호는 떠도는 기계의 기종을 가리킨다. 생태 도감 항목의 "출처 배치" 번호와는 다른 번호다.
+
+| 기종 번호 | 기종 | 생태 도감 |
+|---|---|---|
+| M1 | 서비스 로봇 | [G14 · 빈수레](/wiki/Hostile-Group-G14/) |
+| M2 | 점검 로봇(사족 보행) | [G16 · 철골거미](/wiki/Hostile-Group-G16/) |
+| M3 | 점검 로봇(선로·관로) | [G18 · 불다리열차](/wiki/Hostile-Group-G18/) |
+| M4 | 돌봄 로봇 | [G15 · 돌봄바퀴](/wiki/Hostile-Group-G15/) |
+| M5 | 물류 로봇 무리 | [G13 · 집게팔](/wiki/Hostile-Group-G13/) |
+| M6 | 봉쇄 감시망 | [G17 · 외눈탑](/wiki/Hostile-Group-G17/) |
+| M7 | 귀환 무인 차량(6륜 무인 지상 차량) | — |
+| M8 | 군집 드론 무리 | — |
+| M9 | 불발 탄두와 광섬유 지대 | — |
+| M10 | 원격 조종 곤충 | — |
+| M11 | 방공 체계(고대 병기) | — |
+| M12 | 등불개미 | [G25 · 등불개미](/wiki/Hostile-Group-G25/) |
+| M13 | 철공룡 | [G26 · 철공룡](/wiki/Hostile-Group-G26/) |
+| M14 | 장갑 기관차(고대 병기) | — |
+
+## 정부 병종
+
+정부는 장교단, 전차와 중화기, 정비창, 대형 대학병원 건물, 원종 씨앗을 가졌다. 의료기술자(자유도시)와 무기 소프트웨어(아크)가 없다. 응급 처치까지만 하므로 부상병 복귀율은 0.3(제안 수치)이다. 표식은 황토색 완장이다.
+
+| ID | 병종 | 단계 | 분류 | 피해/내구/추격/차단 | 무기·장비 | 필요 조건 | 소프트웨어(백도어) | 비용 | 유지비 | 역할 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| G-U01 | 제식 소총분대 | L1 | `rifle` | 28/12/0/0 | `G-S1-01`, `G-S1-02` | — | 없음 (0) | 사람 6, 탄약 | 식량 6, 탄약 30/인 | 정면 화력의 기본. 장교 지휘 아래 정확하다 |
+| G-U02 | 순찰 방패대 | L1 | `guard` | 14/30/0/10 | `G-S1-03`, `G-S1-02` | — | 없음 (0) | 사람 8 | 식량 8 | 셔터 앞 질서 유지, 사격대를 막는다 |
+| G-U03 | 장교 지휘조 | L1 | `command` | 8/12/0/6 | `G-S1-01`, `G-C4-01` | — | 없음 (0) | 사람 3(장교) | 식량 3, 전지 2 | 연합 지휘: 같은 구역 아군의 명령 지연을 없애고 중화기·전차의 연합 사격을 연다. 정부만 보유 |
+| G-U04 | 응급 구호조 | L1 | `medic` | 4/10/0/0 | `G-H1-01` | — | 없음 (0) | 사람 3, 약품 | 식량 3, 의약품 1 | 응급처치까지만. 경상자는 붙잡아 두지만 중상자는 돌아오지 못한다(부상 복귀 0.3) |
+| G-U05 | 분대지원화기조 | L2 | `heavy` | 60/10/0/0 | `G-M2-01` | — | 없음 (0) | 사람 4, 탄약 다량 | 식량 4, 탄약 200/정 | 제압 사격으로 적 분대 사기를 깎는다 |
+| G-U06 | 박격포반 | L2 | `heavy` | 55/8/0/0 | `G-M2-02` | 장교 | 없음 (0) | 사람 5, 포탄 | 식량 5, 포탄 | 간접 사격. 장교 지휘조가 같은 전장에 있어야 정밀 |
+| G-U07 | 공병 돌파조 | L2 | `engineer` | 10/14/0/0 | `G-E2-01` | — | 없음 (0) | 사람 4, 폭약 | 식량 4, 유압 2 | 셔터·차단문 돌파, 폭약 |
+| G-U08 | 궤도 모터카 | L2 | `rail` | 10/0/0/0 | `G-V2-02` | — | 없음 (0) | 하드웨어, 전지 | 전지 10 | 지하 선로 기동, 분대 수송 10 |
+| G-U09 | 복원 장갑차 | L3 | `vehicle` | 30/60/10/0 | `G-V3-01`, `G-M2-01` | — | 없음 (0) | 정비창, 연료 | 연료 12, 정비 | 지상 기동·수송 8 |
+| G-U10 | 대기계 무반동포조 | L3 | `antiarmor` | 70/8/0/0 | `G-T3-01` | — | 없음 (0) | 사람 3, 포탄 | 식량 3, 포탄 | 장갑·대형 기계 처치 |
+| G-U11 | 복원 전차 | L4 | `vehicle` | 110/120/10/0 | `G-V4-01`, `G-C4-01` | 장교, 아크 키(없으면 수동·저하) | 라이선스 (2) | 정비창, 연료 대량, 장교 | 연료 20, 정비, 라이선스 | 최강 정면 전력. 아크 라이선스(사격통제 단말)가 없으면 수동 조준으로 명중 −40%, 라이선스가 있으면 아크가 끌 수 있다 |
+| G-U12 | 자주포 포대 | L4 | `artillery` | 95/50/0/0 | `G-V4-02`, `G-C4-01` | 장교, 아크 키(없으면 수동·저하) | 라이선스 (2) | 정비창, 포탄, 장교 | 연료 16, 포탄, 라이선스 | 원거리 포격. 사격 제원 소프트웨어 없이는 산포 큼 |
+| G-U13 | 방공 포대 | L4 | `emplacement` | 90/80/0/0 | `G-X4-01` | 아크 키, 회수 M11 | 아크 보유 (3) | 복원 공사, 아크 계약 | 전력, 라이선스 | 드론·비행 기계 차단. 정부 하드웨어 + 아크 소프트웨어 공동 병기, 정지 장치는 아크 손에 |
+| G-U14 | 감시 드론조 | L4 | `drone` | 6/8/0/20 | `G-D4-01`, `G-C4-01` | 아크 키 | 라이선스 (2) | 정비창, 전지, 라이선스 | 전지 8, 라이선스 | 넓은 정찰(정찰 등급 +1~2). 비행 제어는 아크 키, 쓰는 동안 아크가 본다 |
+| G-U15 | 원격 지휘 무인 차량대 | L5 | `machine` | 80/140/0/0 | `G-X5-01`, `G-C4-01` | 장교, 아크 키, 회수 M7 | 아크 보유 (3) | 회수 기계, 연료, 장교, 라이선스 | 연료 14, 정비, 라이선스 | 사람을 아끼는 정부 L5. 부상병이 돌아오지 않으니 기계를 앞세운다. 회수(M7) + 장교 + 아크 키 |
+
+## 자유도시 병종
+
+자유도시는 의사와 신경 연결 의술, 사람과 식량, 영토 안의 수방사 장비를 가졌다. 징병제 기초군사훈련 덕에 누구나 소총을 다루고 정비한다. 장교(정부), 의료로봇 소프트웨어(아크), 원종 씨앗(정부)이 없다. 의사가 있어 부상병 복귀율은 0.85(제안 수치)이다. 표식은 바랜 남색 완장이다.
+
+| ID | 병종 | 단계 | 분류 | 피해/내구/추격/차단 | 무기·장비 | 필요 조건 | 소프트웨어(백도어) | 비용 | 유지비 | 역할 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| F-U01 | 징병 소총대 | L1 | `rifle` | 24/12/0/0 | `F-S1-01` | — | 없음 (0) | 사람 8, 식량 | 식량 8, 탄약 25/인 | 누구나 기초군사훈련을 받아 수가 많다. 정비는 스스로 한다 |
+| F-U02 | 민병 총검대 | L1 | `line` | 26/18/10/0 | `F-S1-02` | — | 없음 (0) | 사람 8 | 식량 8 | 탄약이 떨어져도 싸운다. 근접 백병 |
+| F-U03 | 진료 구호대 | L1 | `medic` | 4/10/0/0 | `F-H1-01` | — | 없음 (0) | 사람 3(의사 1), 약품 | 식량 3, 의약품 2 | 의사가 동행. 부상 복귀 0.85, 같은 구역 아군 사기 유지 |
+| F-U04 | 정비 공병조 | L1 | `engineer` | 10/14/0/0 | `F-E1-01` | — | 없음 (0) | 사람 4, 자재 | 식량 4 | 무기 정비, 바리케이드, 수방사 장비 손질 |
+| F-U05 | 거치 기관총조 | L2 | `heavy` | 65/18/0/0 | `F-M2-01` | — | 없음 (0) | 사람 3, 탄약 | 식량 3, 탄약 200 | 분대 단위 운용이라 장교가 필요 없다. 개찰구 방어의 중심 |
+| F-U06 | 유선 정찰 드론조 | L2 | `drone` | 4/8/0/16 | `F-D2-01` | 회수 M9 | 없음 (0) | 광섬유 회수(M9), 전지 | 전지 4 | 광섬유 유선이라 아크가 끌 수 없다. 거리 제한 |
+| F-U07 | 전동 이륜 척후대 | L2 | `mounted` | 24/12/30/24 | `F-V2-03`, `F-S1-01` | — | 없음 (0) | 전동 이륜차, 전지 | 전지 6, 식량 4 | 빠른 척후·습격. 전지 병목 |
+| F-U08 | 궤도 수동차 | L1 | `rail` | 0/0/0/0 | `F-V1-02` | — | 없음 (0) | 자재 | 없음 | 조용한 선로 수송 6 |
+| F-U09 | 작업장 박격포조 | L3 | `heavy` | 45/8/0/0 | `F-M3-02` | 장교(없으면 수동·저하) | 없음 (0) | 사람 4, 포탄 | 식량 4, 포탄 | 장교 없이 경험으로 쏜다: 산포 큼(명중 −30%). 장교 포섭 시 정상 |
+| F-U10 | 수방사 장갑차 | L3 | `vehicle` | 30/60/10/0 | `F-V3-01` | 장교(없으면 수동·저하) | 없음 (0) | 수방사 장비, 연료 | 연료 12 | 하드웨어는 있다. 장교가 없으면 명령 지연 ×2, 연합 사격 불가 |
+| F-U11 | 신경 연결 조종사 | L3 | `special` | 12/10/0/10 | `F-H3-02`, `F-B3-01` | 의사 | 없음 (0) | 의사, 수술, 사람 2 | 식량 2, 의료 1 | 수술받은 조종사가 포획 기계를 생각으로 조종한다(로밍 기계 유래 병종의 성능 상한을 연다) |
+| F-U12 | 수방사 전차 | L4 | `vehicle` | 100/120/10/0 | `F-V4-01` | 장교 | 없음 (0) | 수방사 장비, 연료 대량, 장교 | 연료 20 | 장교가 없으면 이동 불가 고정 포대로만. 장교 포섭·포로 시 기동전 가능 |
+| F-U13 | 의료로봇 야전병원 | L4 | `medic` | 0/30/0/0 | `F-H4-03` | 의사, 아크 키 | 라이선스 (3) | 의사, 의료로봇, 라이선스 | 전력, 의료 3, 라이선스 | 부상 복귀 0.95, 중상자도 돌아온다. 아크 소프트웨어 필요 → 아크가 끌 수 있다 |
+| F-U14 | 작업대 투하 드론조 | L3 | `drone` | 30/6/0/10 | `F-D3-02` | — | 없음 (0) | 부품, 폭약, 전지 | 전지 6 | 수동 전파 조종으로 소량 폭약 투하. 전파라 아크·정부의 방해에 약하다 |
+| F-U15 | 신경 직결 사족 기체대 | L5 | `machine` | 40/50/20/10 | `R-X2-01`, `F-B3-01` | 의사, 회수 M2, 아크 키(없으면 수동·저하) | 라이선스 (1) | 회수(M2), 조종사, 정비 | 전지 8, 의료 1 | 포획한 점검 로봇을 수술받은 조종사가 생각으로 몬다: 계단·터널에서 최강. 아크 키 없으면 반응 늦음 |
+
+## 아크 병종
+
+아크는 고대 데이터센터 소프트웨어를 독점하고, 명령 입력식 기계신체와 길들인 옛 기계 몇 무리를 가졌다. 공장, 중화기, 병원 같은 물적 기반이 없고, 생각 조종 수술(자유도시 의사)도 없다. 부상병 복귀율은 0.5(제안 수치)이다. 표식은 가는 청록 줄이 든 회백 띠다.
+
+| ID | 병종 | 단계 | 분류 | 피해/내구/추격/차단 | 무기·장비 | 필요 조건 | 소프트웨어(백도어) | 비용 | 유지비 | 역할 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| A-U01 | 경비 소총대 | L1 | `rifle` | 22/10/0/0 | `A-S1-01` | — | 없음 (0) | 사람 4 | 식량 4, 탄약 20/인 | 소수. 거점 출입구의 자위만 한다. 아크의 세습 소총 근위대인 동방사가 맡는다 |
+| A-U02 | 기계신체 신도대 | L1 | `line` | 30/34/0/0 | `A-B1-01` | — | 없음 (0) | 사람 5, 기계신체 | 식량 3, 전지 3 | 근력·내한이 강하다. 명령 입력식이라 반응이 늦다(명령 지연 ×1.5) |
+| A-U03 | 곤충 정찰조 | L1 | `skirm` | 0/6/0/24 | `A-X1-01` | — | 없음 (0) | 사람 2 | 전지 1 | 원격 조종 곤충으로 정찰(정찰 등급 +1). 전투력 없음 |
+| A-U04 | 그물 포획조 | L1 | `antidrone` | 6/10/0/12 | `A-S1-02` | — | 없음 (0) | 사람 3, 그물 | 식량 3 | 드론을 떨어뜨려 산 채로 잡는다 → 길들이기 재료 |
+| A-U05 | 전자전 조 | L2 | `ew` | 0/8/0/0 | `A-W2-01`, `A-W2-02` | — | 아크 보유 (0) | 사람 3, 접근 거리 | 전지 4 | 아크 소프트웨어가 든 남의 장비(전차 사격통제, 드론, 의료로봇, 방공)를 끈다. 쓰는 즉시 상대 신뢰 −, 상대가 소프트웨어를 걷어낼 동기 + |
+| A-U06 | 길들인 드론 무리 | L3 | `drone` | 35/6/0/20 | `A-X3-01` | 회수 M8 | 아크 보유 (0) | 회수(M8), 제어 모듈 | 전력 6 | 포획·제어 모듈 이식한 옛 무리. 보충 불가, 쓸수록 준다 |
+| A-U07 | 깨운 물류 로봇 무리 | L3 | `machine` | 15/40/0/0 | `A-X3-02` | 회수 M5 | 아크 보유 (0) | 회수(M5) | 전력 4 | 일꾼·이동 방벽. 아크는 고치지 못해 계속 준다 |
+| A-U08 | 깨운 경계 초소 | L3 | `emplacement` | 50/60/0/10 | `A-X3-03` | 회수 M6 | 아크 보유 (0) | 회수(M6) | 전력 3 | 봉쇄 감시망을 다시 켠다. 지나가는 누구에게나 쏠 수 있다(통제 실패 위험) |
+| A-U09 | 정지 장치 관리조 | L4 | `command` | 0/8/0/0 | `A-W3-03`, `A-W2-01` | — | 아크 보유 (0) | 사람 2 | 전력 2 | 고대 병기의 정지·공동 열쇠를 쥔다. 다른 세력과 라이선스 계약을 맺는 단위 |
+| A-U10 | 깨운 무인 차량 | L4 | `machine` | 70/120/0/0 | `A-X4-04` | 회수 M7, 정부 정비창(수리 시) | 아크 보유 (0) | 회수(M7) | 전력 8 | 깨울 수는 있으나 고치지 못한다. 수리는 정부 정비창 계약 필요 |
+| A-U11 | 신경 직결 기계신체 정예 | L5 | `special` | 50/45/10/0 | `A-B5-02` | 의사 | 아크 보유 (0) | 자유도시 의사, 기계신체 | 전지 4, 의료 1 | 생각으로 움직이는 기계신체. 자유도시 의사의 수술을 받아야 한다(포섭·포로·계약) |
+
+## 떠도는 기계에서 온 병종
+
+도시를 떠도는 옛 기계를 포획하고 회수하고 길들인 병종이다. 어느 세력도 혼자서는 완성하지 못한다. 포획(사람), 정비(하드웨어), 신호 확인(아크), 생각 조종(자유도시 의사)이 모두 필요하다. 보충할 수 없고 쓸수록 줄어든다. 편성한 세력의 띠를 단다.
+
+| ID | 병종 | 단계 | 분류 | 피해/내구/추격/차단 | 무기·장비 | 필요 조건 | 소프트웨어(백도어) | 비용 | 유지비 | 역할 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| R-U01 | 짐 나르는 서비스 로봇 | L1 | `support` | 0/20/0/0 | `R-X1-07` | 회수 M1 | 없음 (0) | 포획 | 전력 1 | 보급 운반(보급일 +1). 위험 1, 누구나 포획 가능 |
+| R-U02 | 조련 사족 기체 | L2 | `mounted` | 30/40/10/10 | `R-X2-01` | 회수 M2, 아크 키(없으면 수동·저하) | 라이선스 (1) | 회수(M2), 정비, 아크 확인 | 전지 8 | 포획(사람) + 정비(하드웨어) + 신호 확인(아크). 기수는 명령식, 신경 조종사면 상위 |
+| R-U03 | 개조 무인 지상 차량 | L3 | `machine` | 60/110/0/0 | `R-X3-02` | 회수 M7, 아크 키(없으면 수동·저하) | 라이선스 (2) | 회수(M7), 연료 | 연료 8 | 회수 + 정비 + 아크 키. 세력마다 완성도 다름 |
+| R-U04 | 수색 발광 드론 무리 | L3 | `drone` | 10/4/0/24 | `R-X3-03` | 회수 M12, 아크 키(없으면 수동·저하) | 라이선스 (0) | 회수(M12) | 전력 3 | 어둠 속 수색. 빛을 내 "보이면 온다"의 위험을 키운다(노출 +2) |
+| R-U05 | 유압 공성 중장비 | L4 | `siege` | 0/90/0/0 | `R-X4-04` | 회수 M13 | 없음 (0) | 회수(M13), 유압 | 유압 8 | 셔터·차단문 파쇄(장벽 피해 큼). 유압 정비는 정부·자유도시 |
+| R-U06 | 깨운 방공 포대 | L4 | `emplacement` | 85/80/0/0 | `R-X4-05` | 회수 M11, 아크 키, 정부 정비창 | 아크 보유 (3) | 회수(M11), 계약 | 전력, 라이선스 | 정부 하드웨어 + 아크 소프트웨어 + 정지 장치(아크). 혼자서는 아무도 못 쓴다 |
+| R-U07 | 되살린 장갑 기관차 | L5 | `rail` | 60/200/0/0 | `R-X5-06` | 회수 M14, 정부 정비창, 아크 키 | 아크 보유 (3) | 회수(M14), 기술자, 아크 키 | 연료 20 | 선로 위 유일 전쟁 기계. 복원(정부·자유도시 기술자) + 켜기(아크) |
+
+## 무기와 장비
+
+### 정부
+
+| 코드 | 이름 | 해금 | 설명 |
+|---|---|---|---|
+| `G-C4-01` | 사격통제 단말(아크 라이선스) | L4 | 정밀 화기 명중 정상화. 백도어 위험 2 |
+| `G-D4-01` | 감시 드론(복원 군용) | L4 | 기체는 정부 정비창, 비행 제어는 아크 키 |
+| `G-E2-01` | 유압 절단기·폭약 | L2 | 셔터·차단문 돌파 |
+| `G-H1-01` | 응급처치 키트 | L1 | 병원은 있으나 의사 없음 → 응급까지만 |
+| `G-M2-01` | 분대지원 기관총 | L2 | 제압 사격, 탄약 소모 큼 |
+| `G-M2-02` | 81 mm 박격포 | L2 | 간접 사격. 장교 사격 지휘 필요 |
+| `G-S1-01` | 제식 소총(K2 계열 복원) | L1 | 정비창에서 부품 생산. 호환 탄약 자급 |
+| `G-S1-02` | 총검·제식 봉 | L1 | 탄약 0일 때 근접 프로필 |
+| `G-S1-03` | 진압 방패 | L1 | 순찰 방패대 |
+| `G-T3-01` | 무반동포 | L3 | 대장갑·대기계 |
+| `G-V2-02` | 궤도 모터카 | L2 | 지하 선로 기동, 전지 |
+| `G-V3-01` | 복원 장갑차(K200 계열) | L3 | 연료·윤활유·트랙 정비 |
+| `G-V4-01` | 복원 전차(K1 계열) | L4 | 사격통제 컴퓨터는 아크 라이선스 없으면 수동 조준 |
+| `G-V4-02` | 자주포·다연장 차량 | L4 | 사격 제원 계산 소프트웨어 → 아크 라이선스 |
+| `G-X4-01` | 방공 포대(고대 방공 체계 복원) | L4 | 하드웨어 정부 + 소프트웨어 아크 공동 병기 |
+| `G-X5-01` | 원격 지휘 무인 지상 차량 | L5 | 귀환 무인 차량(M7) 회수 + 장교 원격 지휘 + 아크 키 |
+
+### 자유도시
+
+| 코드 | 이름 | 해금 | 설명 |
+|---|---|---|---|
+| `F-B3-01` | 신경 조종 헬멧 | L3 | 수술받은 조종사가 기계를 생각으로 조종 |
+| `F-D2-01` | 유선 정찰 드론(광섬유) | L2 | 불발 탄두 지대의 광섬유(M9) 회수로 자력 제작 |
+| `F-D3-02` | 작업대 투하 드론 | L3 | 수동 전파 조종, 소량 폭약 |
+| `F-D5-03` | 군집 드론 편대 | L5 | 군집 제어는 아크 소프트웨어 필요 |
+| `F-E1-01` | 정비 공구·바리케이드 자재 | L1 | 무기 정비, 방벽 |
+| `F-H1-01` | 진료 가방·수술 도구 | L1 | 의사 동행: 부상 복귀 높음 |
+| `F-H3-02` | 신경 연결 수술 | L3 | 조종사 양성. 실패 시 마비 위험 |
+| `F-H4-03` | 의료로봇 수술대 | L4 | 아크 소프트웨어 필요. 백도어 위험 3 |
+| `F-M2-01` | 수방사 기관총(거치) | L2 | 분대 단위 운용은 장교 불필요 |
+| `F-M3-02` | 작업장 박격포 | L3 | 조준은 경험 위주, 장교 없으면 명중 저하 |
+| `F-S1-01` | 수방사 보관 소총 | L1 | 징병제 기초군사훈련으로 누구나 다룬다 |
+| `F-S1-02` | 작업 도구·빈 총 총검 | L1 | 민병 근접 |
+| `F-V1-02` | 궤도 수동차 | L1 | 저소음 선로 수송 |
+| `F-V2-03` | 전동 이륜차 | L2 | 전지 병목 |
+| `F-V3-01` | 수방사 장갑차 | L3 | 장교 없으면 지휘 벌칙(명령 지연·연합 사격 불가) |
+| `F-V4-01` | 수방사 전차 | L4 | 장교 포섭·포로 없이는 고정 포대로만 |
+
+### 아크
+
+| 코드 | 이름 | 해금 | 설명 |
+|---|---|---|---|
+| `A-B1-01` | 기계신체(명령 입력식) | L1 | 명령 지연 벌칙. 근력·내한 |
+| `A-B5-02` | 신경 직결 기계신체 | L5 | 자유도시 의사 수술 필요 |
+| `A-S1-01` | 경비 소총 | L1 | 소수. 자위 수준 |
+| `A-S1-02` | 그물 발사기 | L1 | 드론 포획 → 길들이기 재료 |
+| `A-W2-01` | 정지 신호 송출기 | L2 | 아크 소프트웨어가 든 남의 장비를 끈다. 쓰면 신뢰 하락 |
+| `A-W2-02` | 제어 모듈 | L2 | 옛 기계에 이식해 아크 쪽으로 돌림 |
+| `A-W3-03` | 공동 열쇠 단말 | L3 | 라이선스를 남에게 빌려주는 실물 열쇠(옛 "프로토콜 카드" 대체) |
+| `A-X1-01` | 원격 조종 곤충 | L1 | 초소형 정찰 |
+| `A-X3-01` | 길들인 군집 드론 무리 | L3 | 보충 불가. 쓸수록 준다 |
+| `A-X3-02` | 깨운 물류 로봇 무리 | L3 | 일꾼·방벽. 수리 불가 |
+| `A-X3-03` | 깨운 무인 경계 초소 | L3 | 봉쇄 감시망 재가동 |
+| `A-X4-04` | 귀환 무인 차량(깨움) | L4 | 수리는 정부 하드웨어 필요 |
+
+### 떠도는 기계 유래
+
+| 코드 | 이름 | 해금 | 설명 |
+|---|---|---|---|
+| `R-X1-07` | 짐 나르는 서비스 로봇 | L1 | 서비스 로봇(M1) |
+| `R-X2-01` | 조련 사족 기체 | L2 | 점검 로봇(M2) 포획 + 정비 + 신호 확인 |
+| `R-X3-02` | 개조 무인 지상 차량 | L3 | 귀환 무인 차량(M7) |
+| `R-X3-03` | 수색 발광 드론 무리 | L3 | 등불개미(M12) |
+| `R-X4-04` | 유압 공성 중장비 | L4 | 철공룡(M13) |
+| `R-X4-05` | 깨운 방공 포대 | L4 | 방공 체계(M11) 공동 병기 |
+| `R-X5-06` | 되살린 장갑 기관차 | L5 | 장갑 기관차(M14). 하드웨어 복원은 정부·자유도시 기술자 |
+
+## 테크트리
+
+단계가 오를수록 자기 세력 밖의 것(장교, 의사, 아크 소프트웨어, 회수한 떠도는 기계)이 더 필요하다. 각 세력의 L4는 갈림길이다. 남의 것을 받아들이고 그 대가(백도어, 유출)를 감수하거나, 수동·저하 모드로 버틴다.
+
+### 정부
+
+| 단계 | 이름 | 여는 것 | 해금 조건 | 무기 코드 | 병종 |
+|---|---|---|---|---|---|
+| L1 | 제식 군대 | 제식 소총·방패·장교 지휘·응급처치·정비창 | 시작 | `G-S1-01`, `G-S1-03`, `G-H1-01` | G-U01, G-U02, G-U03, G-U04 |
+| L2 | 화력 복원 | 기관총·박격포·돌파 공병·궤도 모터카 | 정비창 가동 + 장교 지휘조 보유 | `G-M2-01`, `G-M2-02`, `G-E2-01`, `G-V2-02` | G-U05, G-U06, G-U07, G-U08 |
+| L3 | 기동 복원 | 장갑차·대기계 무반동포 | 연료 비축 120일 + 대형 기계 1회 격파 | `G-V3-01`, `G-T3-01` | G-U09, G-U10 |
+| L4 | 첨단 병기(라이선스 갈림길) | 전차·자주포·방공·감시 드론 | 아크 라이선스 계약(사격통제 단말) 또는 수동 모드(명중 −40%, 드론·방공 불가). 방공은 방공 체계(M11) 복원 필요 | `G-V4-01`, `G-V4-02`, `G-C4-01`, `G-X4-01`, `G-D4-01` | G-U11, G-U12, G-U13, G-U14 |
+| L5 | 사람을 아끼는 전쟁 | 원격 지휘 무인 차량 | 귀환 무인 차량(M7) 회수 + 장교 + 아크 키. 또는 자유도시 의사 포섭으로 부상 복귀 개선(의무 갈림길) | `G-X5-01` | G-U15 |
+
+### 자유도시
+
+| 단계 | 이름 | 여는 것 | 해금 조건 | 무기 코드 | 병종 |
+|---|---|---|---|---|---|
+| L1 | 징병의 도시 | 징병 소총·민병·의사 구호·정비·궤도 수동차 | 시작 | `F-S1-01`, `F-S1-02`, `F-H1-01`, `F-E1-01`, `F-V1-02` | F-U01, F-U02, F-U03, F-U04, F-U08 |
+| L2 | 수방사 창고 열기 | 거치 기관총·유선 드론·전동 이륜 | 수방사 장비 창고 확보 + 광섬유 회수(M9) | `F-M2-01`, `F-D2-01`, `F-V2-03` | F-U05, F-U06, F-U07 |
+| L3 | 장교 없는 무장 | 작업장 박격포·장갑차·투하 드론·신경 연결 수술 | 장교 없음 벌칙 아래 운용. 신경 수술은 의사 2 + 성공 시험 | `F-M3-02`, `F-V3-01`, `F-D3-02`, `F-H3-02`, `F-B3-01` | F-U09, F-U10, F-U11, F-U14 |
+| L4 | 장교와 소프트웨어(두 갈림길) | 수방사 전차·의료로봇 야전병원 | 전차 기동은 장교 포섭·포로·망명(정부에서). 의료로봇은 아크 라이선스(백도어 위험 3) | `F-V4-01`, `F-H4-03` | F-U12, F-U13 |
+| L5 | 생각으로 움직이는 기계 | 신경 직결 사족 기체대·군집 드론 | 점검 로봇(M2) 포획 + 수술 조종사. 군집 제어는 아크 소프트웨어 | `F-D5-03`, `R-X2-01` | F-U15 |
+
+### 아크
+
+| 단계 | 이름 | 여는 것 | 해금 조건 | 무기 코드 | 병종 |
+|---|---|---|---|---|---|
+| L1 | 최소 자위 | 경비 소총·기계신체(명령식)·곤충 정찰·그물 포획 | 시작 | `A-S1-01`, `A-B1-01`, `A-X1-01`, `A-S1-02` | A-U01, A-U02, A-U03, A-U04 |
+| L2 | 켜고 끄는 손 | 정지 신호 송출기·제어 모듈 | 데이터센터 접근. 남의 장비에 아크 소프트웨어가 들어가 있어야 효과 | `A-W2-01`, `A-W2-02` | A-U05 |
+| L3 | 옛 기계 길들이기 | 길들인 드론 무리·물류 로봇·경계 초소 | 그물 포획·회수(M8, M5, M6) + 제어 모듈 이식. 보충 불가 | `A-X3-01`, `A-X3-02`, `A-X3-03`, `A-W3-03` | A-U06, A-U07, A-U08 |
+| L4 | 라이선스 외교 | 정지 장치 관리·깨운 무인 차량 | 공동 열쇠 계약으로 정부·자유도시 장비에 들어감. 무인 차량 수리는 정부 정비창 계약 | `A-X4-04` | A-U09, A-U10 |
+| L5 | 생각하는 몸 | 신경 직결 기계신체 정예 | 자유도시 의사 포섭·포로·계약(수술) | `A-B5-02` | A-U11 |
+
+### 떠도는 기계 유래
+
+| 단계 | 이름 | 여는 것 | 해금 조건 | 무기 코드 | 병종 |
+|---|---|---|---|---|---|
+| L1 | 주워 쓰기 | 서비스 로봇 | 포획만 | `R-X1-07` | R-U01 |
+| L2 | 안정화 | 조련 사족 기체 | 포획(사람) + 정비(하드웨어) + 신호 확인(아크) | `R-X2-01` | R-U02 |
+| L3 | 개조 | 무인 지상 차량·수색 발광 드론 | 회수 + 정비 + 아크 키 | `R-X3-02`, `R-X3-03` | R-U03, R-U04 |
+| L4 | 대형 기계 | 유압 공성 중장비·깨운 방공 | 유압·전력 정비 + 공동 열쇠 | `R-X4-04`, `R-X4-05` | R-U05, R-U06 |
+| L5 | 전쟁 기계 | 되살린 장갑 기관차 | 세 세력 모두의 기술(복원·정비·켜기) | `R-X5-06` | R-U07 |
+
+## 세력 간 의존
+
+| 해금원 | 주는 쪽 → 받는 쪽 | 여는 것 | 여는 수단 | 위험 |
+|---|---|---|---|---|
+| 장교 | 정부 → 자유도시 | 자유도시 L4 전차 기동, 박격포·장갑차 벌칙 해제 | 포섭, 망명, 포로 | 포로 장교는 충성을 시험받고, 망명 장교는 정부 반격의 표적이 된다 |
+| 의사(외과·신경 연결) | 자유도시 → 정부, 아크 | 정부의 부상 복귀 상승(L5 의무 갈림길), 아크 L5 신경 직결 정예 | 계약, 포섭, 포로 | 의사가 빠져나가면 자유도시의 오래 버티는 힘이 약해진다 |
+| 아크 소프트웨어 라이선스 | 아크 → 정부, 자유도시 | 정부 L4 사격 통제·드론·방공, 자유도시 L4 의료로봇과 L5 군집 드론 | 공동 열쇠 계약 | 백도어: 아크가 켜고 끌 수 있다. 쓰면 신뢰가 떨어지고 걷어 낼 동기가 오른다 |
+| 정부 하드웨어와 정비창 | 정부 → 아크 | 아크 L4 무인 차량 수리, 방공 공동 병기 | 정비 계약 | 정부가 아크 기계의 속을 본다 |
+| 원종 씨앗 | 정부 → 자유도시 | 식량 상한(자유도시의 무기는 사람과 식량) | 거래, 탈취 | 병종 해금이 아니라 유지비 상한이다 |
+| 회수한 떠도는 기계 | 지도 → 누구나 | 떠도는 기계 유래 병종 전부, 아크 L3·L4, 정부 L5, 자유도시 L5 | 포획(사람), 정비(하드웨어), 신호 확인(아크), 생각 조종(의사) | 보충할 수 없고, 아크 신호가 남아 있을 수 있다 |
+
+## 저하 모드
+
+조건을 갖추지 못한 병종은 아래처럼 돈다(수치는 제안).
+
+| 상황 | 효과 |
+|---|---|
+| 장교 없음 | 명령 지연 ×2, 연합 사격 불가, 박격포 명중 −30%. 자유도시 전차는 이동하지 못하는 고정 포대가 된다 |
+| 아크 키 없음 | 정밀 화기를 수동으로 조준해 명중 −40%. 드론과 방공은 가동하지 못한다 |
+| 명령 입력식 기계신체 | 명령 지연 ×1.5 |
+
+## 상성과 유지비
+
+가위바위보식 순환을 두지 않는다. 꼭대기(포병, 방공, 전차)는 상성이 아니라 의존으로 꺾인다. 장교를 잃거나, 연료가 끊기거나, 아크가 끄면 멈춘다. 전자전(`ew`)과 공성(`siege`)은 상성이 아니라 효과라서 순환 검사에서 뺀다. 가중치 1.0은 강함, 0.5는 약함이다.
+
+| 공격 분류 | 대상 | 가중치 |
+|---|---|---|
+| `rifle` | `line` | 1.0 |
+| `rifle` | `skirm` | 0.5 |
+| `guard` | `rifle` | 1.0 |
+| `heavy` | `guard` | 1.0 |
+| `heavy` | `line` | 0.5 |
+| `mounted` | `heavy` | 1.0 |
+| `mounted` | `skirm` | 1.0 |
+| `antiarmor` | `vehicle` | 1.0 |
+| `antiarmor` | `machine` | 1.0 |
+| `vehicle` | `mounted` | 1.0 |
+| `vehicle` | `heavy` | 0.5 |
+| `artillery` | `emplacement` | 1.0 |
+| `artillery` | `antiarmor` | 0.5 |
+| `drone` | `heavy` | 1.0 |
+| `drone` | `antiarmor` | 0.5 |
+| `antidrone` | `drone` | 1.0 |
+| `emplacement` | `drone` | 1.0 |
+| `ew` | licensed 또는 아크 보유 장비 | 1.0 |
+| `machine` | `guard` | 1.0 |
+| `siege` | 장벽(셔터) | 1.0 |
+
+| 자원 | 정부 | 자유도시 | 아크 |
+|---|---|---|---|
+| 식량 | 원종 씨앗으로 안정 | 가장 많이 쓴다(사람이 무기). 씨앗이 없으면 상한이 걸린다 | 적다(사람이 적다) |
+| 탄약·연료 | 정비창에서 자급. 전차가 연료를 먹는다 | 수방사 비축분을 쓰는 소모형 | 거의 없다 |
+| 의약품·의료 | 응급 키트뿐 | 의사가 약품을 사람으로 바꾼다 | 기계신체 정비는 전력으로 한다 |
+| 라이선스 | L4 정밀 화기마다 든다 | 의료로봇, 군집 드론 | 내준다(지렛대) |
+| 회수 기계 | 쓰면 준다 | 쓰면 준다 | 쓰면 준다(가장 의존한다) |
+
+## 게임 전투 규칙과의 대응
+
+게임 전투 규칙의 기존 칸에 맞출 수 있는 것은 맞추고, 빈 곳은 새 칸으로 제안한다. 값은 모두 제안이다.
+
+| v4 개념 | 맞출 기존 칸 | 제안 값 | 상태 |
+|---|---|---|---|
+| 세력별 부상병 복귀 | `casualties.soft_to_hard_main`(지금 0.3, 세력 공통) | 정부 0.7, 자유도시 0.15, 아크 0.5. 의무 병종이 있으면 −0.1~−0.2 | 칸은 있으나 세력 분기가 없다 |
+| 보충 속도 | `campaign_feedback.reinforce_monthly`(징집 0.03, 상비 0.1) | 자유도시 0.05(징병제), 정부 0.1(상비), 아크 0.02 | 칸이 있다 |
+| 식량과 보급 | `advantage.supply`(0/−10/−25), 보급일 | 자유도시는 씨앗이 없으면 보급일 상한 −30% | 칸이 있다 |
+| 장교 지휘 | `commander_martial_term`, `order` 항 | 장교가 없으면 `order` −10, 중화기 연합 사격 불가 | 연합 사격 칸이 없다 |
+| 무기 명중 | `sim.ranged.hit_base` 0.16, `damage` 35 | 무기마다 `hit_base`, 수동 모드 ×0.6 | 무기 단위 행이 없다 |
+| 셔터 | `war_types.siege.shutter_level`(정부 3, 아크 1, 자유도시 0) | 유압 공성 중장비와 공병 돌파조가 단계를 깎는다 | 칸이 있다 |
+| 백도어 정지 | 없음 | 백도어 위험 3인 병종은 아크 전자전 조가 거리 안에 있으면 정지 판정. 쓰면 `license.trust` −1 | 새 칸 |
+| 라이선스 신뢰 | 없음 | 세력 쌍마다 0~3, 계약과 사용으로 오르내림 | 새 칸 |
+| 드론 정찰 | 없음 | 정찰 등급 +1~2(안개 해제 반경) | 새 칸 |
+| 회수 기계 재고 | 없음 | `salvage_stock[M#]`, 보충 0 | 새 칸 |
+| 의약품 | 없음 | `upkeep.med`. 모자라면 의무 보정 0 | 새 칸 |
+
+검산: 정부 154 대 자유도시 141로 정부가 이기는 기존 예제에 새 복귀율을 대면, 같은 소프트 피해 40이 정부에서는 하드 28, 자유도시에서는 하드 6이 된다. 한 판은 정부가 이기지만 한 달 뒤 남은 병력은 자유도시가 더 많다.
+
+## 미정과 제안
+
+- 의사가 자유도시에만, 장교가 정부에만 있는 이유: 미정. 시나리오 장치가 정해지면 포섭, 망명, 포로의 확률과 비용을 다시 맞춘다. 지금은 세 수단을 모두 열어 둔다.
+- 부상병 복귀율(정부 0.3, 자유도시 0.85, 아크 0.5)과 모든 전투값, 비용, 유지비는 제안 수치다.
+- 아크 정지 신호가 닿는 범위: 이 문서는 아크 소프트웨어가 든 장비와 길들인 기계만으로 둔다(제안).
+- 장교가 없을 때 자유도시 전차를 고정 포대로 둘지, 이동은 되지만 명령 지연 ×3으로 둘지: 제안 단계다.
+- 네 발 탑승 기체를 공용 병종(R 계열)으로 둔 것: 제안이다.
+- 신경 직결 기계신체 정예(A-U11)는 사람의 생각으로 움직이는 몸이지, 스스로 생각하는 기계가 아니다.
+- 수색 발광 드론 무리와 유압 공성 중장비는 생태 도감의 등불개미와 철공룡에서 왔다. 게임 표시명에 이 별칭을 쓸지는 정하지 않았다.
+- 원종 씨앗은 병종을 여는 조건이 아니라 식량 상한으로만 쓴다(제안).
+
+## 관련 문서
+
+- [세 세력의 비용 구조](/wiki/Cost-Structure/)
+- [이 시대의 기술과 무구](/wiki/Era-Arms-and-Tech-Level/)
+- [잃어버린 기술](/wiki/Lost-Technology-Lineage/)
+- [사람과 기계](/wiki/People-and-Machines/)
+- [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
+- [서울의 세 세력](/wiki/Sixteen-States/)
 ');
