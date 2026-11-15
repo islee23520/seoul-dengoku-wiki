@@ -46,11 +46,13 @@ The top two tags of each station add terrain sentences to stages 3-5. Across the
 
 1. **Core:** only the entrances in use and the air intakes. Hidden entrances are deliberately left outside.
 2. **Blocks:** real city blocks, i.e. the topographic map minus road surfaces, rail land and rivers. Blocks over 2,000 m² are split on a 60 m grid.
-3. **Growth:** blocks are added in order of "value added ÷ extra watch cost". Growth stops at the watch budget (mobilisable people minus the underground posts), an area cap set by population, or a 280 m radius. The line must stay one piece.
-4. **Classification:** the line is sampled every 2 m. Building faces and walls weigh 0.5, natural barriers (river, railway, levee, embankment, bridge) 0.25, gaps to fill and street barricades 1.0.
-5. **Buffer:** a 40 m strip outside the line is kept clear.
-6. **Watchtowers:** `ceil(weighted length ÷ 200)`, placed on the buildings with the highest measured roofs inside the line.
-7. **Arc:** no surface line. Stage 4 is a deep-level seal.
+3. **Growth:** blocks are added in order of "value added ÷ extra watch cost". Growth stops at the watch budget (mobilisable people minus the underground posts), an area cap set by population, or a 280 m radius. The line should be one piece.
+4. **Separated exit outposts:** when entrances in use lie too far apart for the blocks between them to be joined, the generator first tries to close the gap across the street (a 30 m closing). If the line still falls into pieces, the largest piece is the main line and every other piece over 50 m² becomes a separated exit outpost: a small held patch around one entrance, linked to the main line only underground. 202 of the 307 stations have at least one.
+5. **Classification:** the line is sampled every 2 m. Building faces and walls weigh 0.5, natural barriers (river, railway, levee, embankment, bridge) 0.25, gaps to fill and street barricades 1.0.
+6. **Buffer:** a 40 m strip outside the line is kept clear.
+7. **Watchtowers:** `ceil(weighted length ÷ 200)`, placed on the buildings with the highest measured roofs inside the line.
+8. **Real and weighted length:** the station pages show both. The real perimeter is the measured length of the line; the weighted length applies the weights of step 5 and is what the watch and the works are counted on.
+9. **Arc:** no surface line. Stage 4 is a deep-level seal.
 
 ## 5. The five stages
 
@@ -62,16 +64,28 @@ The top two tags of each station add terrain sentences to stages 3-5. Across the
 | 4 | Surface Perimeter Line (Arc: Deep-Level Seal) | 8 / 25 / 20 | 180, 30 | 3 to 10 years |
 | 5 | Inter-Station Defence Network | 10 / 25 / 25 | 365, 60 | 10 to 30 years |
 
+Each stage has two capacities.
+
+- **Maximum holding** is how many people the stage can keep alive when crowded: 3.5 m² of floor, 6 m³/h of shelter air and 7.5 L of survival water per person, the same in every stage. It counts the whole floor the stage holds, the full air supply and all the water.
+- **Living-standard capacity** is how many people the stage can house at its own living standard, the per-person figures in the table above, applied to the share of the floor that is living space (25% in stage 1, 55% in stage 2, 85% from stage 3).
+
+Maximum holding grows as the stages add capacity: more floor (basements of the buildings inside the line from stage 4, tunnel floor in stage 5), fans that push more air through the same shafts (from stage 3) and new shafts inside the line, and from stage 4 rain and snow caught on the roofs inside the line. Where the limiting resource gains nothing (for example a line with no basements inside it), it stays flat for that stage. One exception is left in the model for now: a station with no water source has no daily water to count, so water does not limit it until roof catchment begins at stage 4, and its maximum holding can drop at that stage (32 stations). The living standard rises faster than these additions, so the living-standard capacity can be lower than at the stage before. That is intended: a higher stage is a better life for fewer people, and a station whose population is above its living-standard capacity but within its maximum holding lives crowded. Only a population above the maximum holding cannot be kept alive at that stage. The station pages mark both cases.
+
 ```
-capacity          = min(floor / floor per person, air supply / air per person, water / water per person)
-overcrowd limit   = total floor / 3.5 m2
-air supply        = vents x 4 m2 x 1 m/s x 3600   [estimated shaft area and draught]
+maximum holding           = min(total floor / 3.5 m2, air supply / 6 m3/h, daily water / 7.5 L)
+living-standard capacity  = min(living floor / floor per person, air supply / air per person, daily water / water per person)
+overcrowd limit           = total floor / 3.5 m2
+air supply                = vents x 4 m2 x air speed x 3600   [estimated shaft area]
+air speed                 = 1 m/s natural draught in stages 1-2; fans 2, 2.5, 3 m/s in stages 3, 4, 5   [estimated]
+daily water               = population x water source per person + roof catchment (from stage 4)
+roof catchment            = roof area inside the line x 1.4 m a year x 80% collected / 365   [estimated]
 standing watch    = shift factor (Government 4.5, Free City and Arc 4) x posts + patrols of sealed entrances
 emergency watch   = 4 x (used and hidden entrances + tunnel cut points) + arms factor x weighted surface line + 0.02 x population
 mobilisable       = 0.20 (Government) / 0.27 (Free City) / 0.30 (Arc) x population
 ```
 
-- Floor: the station's measured underground floor (S-Map). From stage 4, basements of buildings inside the line (basement floors x footprint x 0.7); in stage 5, 300 m x 9 m of tunnel toward each neighbour [estimated].
+- Floor: the station's measured underground floor (S-Map indoor models, floors deeper than 1.5 m). Surface and elevated stations have no such floor, so they use the measured S-Map station-hall floors instead; one station with no S-Map model uses the Seoul Metro gross floor area. Each station page names its floor source. From stage 4, basements of buildings inside the line (basement floors x footprint x 0.7); in stage 5, 300 m x 9 m of tunnel toward each neighbour [estimated].
+- Water: a station with no water source has no daily water to count; it lives by melting snow, which costs extra fuel, and its pages say so (37 stations).
 - When the emergency watch exceeds the mobilisable force, the stage is "not defensible".
 - Starting stage in 2126: stage 3 by default; large interchanges start at 4 when stage 4 is defensible; surface, elevated and terminal stations start at 2; under 40 people start at 1. Across the 307 stations: stage 3 250, stage 2 50, stage 4 7.
 - Growth and decline: stages rise with shocks and population pressure. Losing 30% of the population or running out of reserves drops one stage, abandoning the outermost ring first. A ring that was abandoned costs half the work to rebuild.

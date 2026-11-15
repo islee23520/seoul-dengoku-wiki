@@ -49,11 +49,13 @@ The top two tags of each station add terrain sentences to stages 3-5. Across the
 
 1. **Core:** only the entrances in use and the air intakes. Hidden entrances are deliberately left outside.
 2. **Blocks:** real city blocks, i.e. the topographic map minus road surfaces, rail land and rivers. Blocks over 2,000 m² are split on a 60 m grid.
-3. **Growth:** blocks are added in order of "value added ÷ extra watch cost". Growth stops at the watch budget (mobilisable people minus the underground posts), an area cap set by population, or a 280 m radius. The line must stay one piece.
-4. **Classification:** the line is sampled every 2 m. Building faces and walls weigh 0.5, natural barriers (river, railway, levee, embankment, bridge) 0.25, gaps to fill and street barricades 1.0.
-5. **Buffer:** a 40 m strip outside the line is kept clear.
-6. **Watchtowers:** `ceil(weighted length ÷ 200)`, placed on the buildings with the highest measured roofs inside the line.
-7. **Arc:** no surface line. Stage 4 is a deep-level seal.
+3. **Growth:** blocks are added in order of "value added ÷ extra watch cost". Growth stops at the watch budget (mobilisable people minus the underground posts), an area cap set by population, or a 280 m radius. The line should be one piece.
+4. **Separated exit outposts:** when entrances in use lie too far apart for the blocks between them to be joined, the generator first tries to close the gap across the street (a 30 m closing). If the line still falls into pieces, the largest piece is the main line and every other piece over 50 m² becomes a separated exit outpost: a small held patch around one entrance, linked to the main line only underground. 202 of the 307 stations have at least one.
+5. **Classification:** the line is sampled every 2 m. Building faces and walls weigh 0.5, natural barriers (river, railway, levee, embankment, bridge) 0.25, gaps to fill and street barricades 1.0.
+6. **Buffer:** a 40 m strip outside the line is kept clear.
+7. **Watchtowers:** `ceil(weighted length ÷ 200)`, placed on the buildings with the highest measured roofs inside the line.
+8. **Real and weighted length:** the station pages show both. The real perimeter is the measured length of the line; the weighted length applies the weights of step 5 and is what the watch and the works are counted on.
+9. **Arc:** no surface line. Stage 4 is a deep-level seal.
 
 ## 5. The five stages
 
@@ -65,16 +67,28 @@ The top two tags of each station add terrain sentences to stages 3-5. Across the
 | 4 | Surface Perimeter Line (Arc: Deep-Level Seal) | 8 / 25 / 20 | 180, 30 | 3 to 10 years |
 | 5 | Inter-Station Defence Network | 10 / 25 / 25 | 365, 60 | 10 to 30 years |
 
+Each stage has two capacities.
+
+- **Maximum holding** is how many people the stage can keep alive when crowded: 3.5 m² of floor, 6 m³/h of shelter air and 7.5 L of survival water per person, the same in every stage. It counts the whole floor the stage holds, the full air supply and all the water.
+- **Living-standard capacity** is how many people the stage can house at its own living standard, the per-person figures in the table above, applied to the share of the floor that is living space (25% in stage 1, 55% in stage 2, 85% from stage 3).
+
+Maximum holding grows as the stages add capacity: more floor (basements of the buildings inside the line from stage 4, tunnel floor in stage 5), fans that push more air through the same shafts (from stage 3) and new shafts inside the line, and from stage 4 rain and snow caught on the roofs inside the line. Where the limiting resource gains nothing (for example a line with no basements inside it), it stays flat for that stage. One exception is left in the model for now: a station with no water source has no daily water to count, so water does not limit it until roof catchment begins at stage 4, and its maximum holding can drop at that stage (32 stations). The living standard rises faster than these additions, so the living-standard capacity can be lower than at the stage before. That is intended: a higher stage is a better life for fewer people, and a station whose population is above its living-standard capacity but within its maximum holding lives crowded. Only a population above the maximum holding cannot be kept alive at that stage. The station pages mark both cases.
+
 ```
-capacity          = min(floor / floor per person, air supply / air per person, water / water per person)
-overcrowd limit   = total floor / 3.5 m2
-air supply        = vents x 4 m2 x 1 m/s x 3600   [estimated shaft area and draught]
+maximum holding           = min(total floor / 3.5 m2, air supply / 6 m3/h, daily water / 7.5 L)
+living-standard capacity  = min(living floor / floor per person, air supply / air per person, daily water / water per person)
+overcrowd limit           = total floor / 3.5 m2
+air supply                = vents x 4 m2 x air speed x 3600   [estimated shaft area]
+air speed                 = 1 m/s natural draught in stages 1-2; fans 2, 2.5, 3 m/s in stages 3, 4, 5   [estimated]
+daily water               = population x water source per person + roof catchment (from stage 4)
+roof catchment            = roof area inside the line x 1.4 m a year x 80% collected / 365   [estimated]
 standing watch    = shift factor (Government 4.5, Free City and Arc 4) x posts + patrols of sealed entrances
 emergency watch   = 4 x (used and hidden entrances + tunnel cut points) + arms factor x weighted surface line + 0.02 x population
 mobilisable       = 0.20 (Government) / 0.27 (Free City) / 0.30 (Arc) x population
 ```
 
-- Floor: the station''s measured underground floor (S-Map). From stage 4, basements of buildings inside the line (basement floors x footprint x 0.7); in stage 5, 300 m x 9 m of tunnel toward each neighbour [estimated].
+- Floor: the station''s measured underground floor (S-Map indoor models, floors deeper than 1.5 m). Surface and elevated stations have no such floor, so they use the measured S-Map station-hall floors instead; one station with no S-Map model uses the Seoul Metro gross floor area. Each station page names its floor source. From stage 4, basements of buildings inside the line (basement floors x footprint x 0.7); in stage 5, 300 m x 9 m of tunnel toward each neighbour [estimated].
+- Water: a station with no water source has no daily water to count; it lives by melting snow, which costs extra fuel, and its pages say so (37 stations).
 - When the emergency watch exceeds the mobilisable force, the stage is "not defensible".
 - Starting stage in 2126: stage 3 by default; large interchanges start at 4 when stage 4 is defensible; surface, elevated and terminal stations start at 2; under 40 people start at 1. Across the 307 stations: stage 3 250, stage 2 50, stage 4 7.
 - Growth and decline: stages rise with shocks and population pressure. Losing 30% of the population or running out of reserves drops one stage, abandoning the outermost ring first. A ring that was abandoned costs half the work to rebuild.
@@ -147,11 +161,13 @@ mobilisable       = 0.20 (Government) / 0.27 (Free City) / 0.30 (Arc) x populati
 
 1. **핵심:** 쓰는 출입구와 급기구만 넣는다. 숨긴 출입구는 일부러 밖에 둔다.
 2. **블록:** 수치지형도의 도로면·철도 부지·하천을 뺀 실제 블록을 쓴다. 2,000 m²가 넘는 블록은 60 m 격자로 쪼갠다.
-3. **성장:** 블록마다 "더해지는 가치 ÷ 늘어나는 경계 비용"이 가장 큰 것부터 붙인다. 경계 예산(동원 가능 인원 − 지하 초소 몫), 인구 기준 면적 상한, 반경 280 m 가운데 하나에 걸리면 멈춘다. 성곽은 한 덩어리만 허용한다.
-4. **분류:** 성곽 선을 2 m 간격으로 판정한다. 건물 외벽·담장은 가중 0.5, 자연 방어선(하천·철도·제방·성토·교량)은 0.25, 메울 틈과 길목 바리케이드는 1.0이다.
-5. **완충 지대:** 성곽 밖 40 m 띠를 비워 둔다.
-6. **망루:** `ceil(가중 길이 ÷ 200)`개. 성곽 안에서 실제 지붕 표고가 가장 높은 건물에 둔다.
-7. **아크:** 지상선을 두지 않는다. 4단계는 깊은 층 봉쇄다.
+3. **성장:** 블록마다 "더해지는 가치 ÷ 늘어나는 경계 비용"이 가장 큰 것부터 붙인다. 경계 예산(동원 가능 인원 − 지하 초소 몫), 인구 기준 면적 상한, 반경 280 m 가운데 하나에 걸리면 멈춘다. 성곽은 한 덩어리를 원칙으로 한다.
+4. **떨어진 출입구 초소:** 쓰는 출입구끼리 너무 멀어 사이 블록으로 이을 수 없으면 먼저 길 건너 틈을 메워 본다(30 m 닫기). 그래도 성곽이 여러 조각으로 나뉘면 가장 큰 조각을 본 성곽으로 두고, 50 m²가 넘는 나머지 조각은 떨어진 출입구 초소로 둔다. 출입구 하나를 둘러싼 작은 거점이며 본 성곽과는 지하로만 이어진다. 307개 역 가운데 202곳에 하나 이상 있다.
+5. **분류:** 성곽 선을 2 m 간격으로 판정한다. 건물 외벽·담장은 가중 0.5, 자연 방어선(하천·철도·제방·성토·교량)은 0.25, 메울 틈과 길목 바리케이드는 1.0이다.
+6. **완충 지대:** 성곽 밖 40 m 띠를 비워 둔다.
+7. **망루:** `ceil(가중 길이 ÷ 200)`개. 성곽 안에서 실제 지붕 표고가 가장 높은 건물에 둔다.
+8. **실제 길이와 가중 길이:** 역별 문서에는 둘 다 싣는다. 실제 성곽선은 선의 실측 길이이고, 가중 성곽선은 5번의 가중을 곱한 길이로 경계 인원과 공사량을 이것으로 센다.
+9. **아크:** 지상선을 두지 않는다. 4단계는 깊은 층 봉쇄다.
 
 ## 5. 다섯 단계
 
@@ -163,16 +179,28 @@ mobilisable       = 0.20 (Government) / 0.27 (Free City) / 0.30 (Arc) x populati
 | 4 | 지상 외곽 방어선 (아크: 깊은 층 봉쇄) | 8 / 25 / 20 | 180일, 30일 | 3~10년 |
 | 5 | 역간 방어 체계 | 10 / 25 / 25 | 365일, 60일 | 10~30년 |
 
+단계마다 수용력을 두 가지로 센다.
+
+- **최대 수용**은 비좁게 지내며 목숨을 지킬 수 있는 인원이다. 1인당 바닥 3.5 m², 대피 환기 6 m³/h, 생존 물 7.5 L로 모든 단계에 같은 기준을 쓴다. 그 단계가 가진 바닥 전체, 급기 전체, 물 전체로 센다.
+- **생활 기준 정원**은 그 단계의 생활 기준, 곧 위 표의 1인 기준으로 살 수 있는 인원이다. 바닥은 생활 공간 몫(1단계 25%, 2단계 55%, 3단계부터 85%)만 센다.
+
+최대 수용은 단계마다 더해지는 만큼 늘어난다. 바닥이 늘고(4단계부터 성곽 안 건물 지하층, 5단계는 터널 바닥), 3단계부터 송풍기가 같은 환기구로 공기를 더 많이 밀어 넣고 성곽 안에 새 환기구가 생기며, 4단계부터 성곽 안 지붕에 받은 비와 눈이 물에 더해진다. 한계를 정하는 자원이 늘지 않으면(예: 성곽 안에 지하층이 없는 경우) 그 단계에서는 그대로다. 모형에 아직 남은 예외가 하나 있다. 물원이 없는 역은 셀 하루 물이 없어 4단계에서 지붕 빗물받이가 시작될 때까지 물이 한계가 되지 않으므로, 그 단계에서 최대 수용이 줄 수 있다(32곳). 생활 기준은 이 증가보다 빨리 오르므로 생활 기준 정원은 앞 단계보다 낮을 수 있다. 이것은 의도한 결과다. 높은 단계는 더 적은 사람이 더 나은 삶을 사는 단계이며, 인구가 생활 기준 정원을 넘지만 최대 수용 안이면 비좁게 산다. 최대 수용을 넘는 인구만 그 단계에서 살릴 수 없다. 역별 문서의 표에 두 경우를 모두 표시한다.
+
 ```
-정원       = min(바닥 ÷ 1인 바닥, 급기 ÷ 1인 환기, 물 ÷ 1인 물)
-과밀 한계  = 바닥 전체 ÷ 3.5 m²
-급기       = 환기구 수 × 4 m² × 1 m/s × 3600   [추정 단면·풍속]
+최대 수용        = min(바닥 전체 ÷ 3.5 m², 급기 ÷ 6 m³/h, 하루 물 ÷ 7.5 L)
+생활 기준 정원   = min(생활 바닥 ÷ 1인 바닥, 급기 ÷ 1인 환기, 하루 물 ÷ 1인 물)
+과밀 한계        = 바닥 전체 ÷ 3.5 m²
+급기             = 환기구 수 × 4 m² × 풍속 × 3600   [추정 단면]
+풍속             = 1·2단계 자연 통풍 1 m/s, 3·4·5단계 송풍기 2, 2.5, 3 m/s   [추정]
+하루 물          = 인구 × 1인 물원 + 지붕 빗물받이(4단계부터)
+지붕 빗물받이    = 성곽 안 지붕 면적 × 연 1.4 m × 모으는 비율 80% ÷ 365   [추정]
 상시 경계  = 교대(정부 4.5, 자유도시·아크 4) × 초소 수 + 막은 출입구 순찰
 비상 경계  = 4 × (쓰는·숨긴 출입구 + 터널 차단점) + 무장 계수 × 가중 지상선 + 0.02 × 인구
 동원 가능  = 0.20(정부) / 0.27(자유도시) / 0.30(아크) × 인구
 ```
 
-- 바닥: 역 지하 바닥(S-Map 실측). 4단계부터 성곽 안 건물 지하층(지하 층수 × 바닥 면적 × 0.7), 5단계는 이웃 역마다 터널 300 m × 9 m [추정].
+- 바닥: 역 지하 바닥(S-Map 실내 모형에서 깊이 1.5 m를 넘는 층의 실측). 지상역과 고가역은 그런 바닥이 없으므로 S-Map 역사 층 실측 바닥을 쓴다. S-Map 모형이 없는 역 한 곳은 서울교통공사 역사 연면적을 쓴다. 역별 문서마다 바닥 출처를 밝힌다. 4단계부터 성곽 안 건물 지하층(지하 층수 × 바닥 면적 × 0.7), 5단계는 이웃 역마다 터널 300 m × 9 m [추정].
+- 물: 물원이 없는 역은 하루 물을 셀 수 없고 눈을 녹여 지내며 연료가 더 든다. 해당 역 문서에 이를 적는다(37곳).
 - 비상 경계가 동원 가능 인원을 넘으면 그 단계는 "지킬 수 없음"이다.
 - 2126 시작 단계: 기본 3단계. 큰 환승역은 4단계를 지킬 수 있으면 4단계. 지상·고가역과 끝역은 2단계, 인구 40명 미만은 1단계. 307개 역은 3단계 250, 2단계 50, 4단계 7이다.
 - 확장과 퇴행: 충격과 인구 압력으로 오른다. 인구 30%를 잃거나 비축이 바닥나면 한 단계 내려가고 가장 바깥 고리부터 버린다. 버린 고리는 다시 오를 때 공사량이 절반이다.
