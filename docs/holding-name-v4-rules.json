@@ -1,0 +1,608 @@
+{
+ "purpose": "v4 todo 2 D1: 개인 영지 표시 이름 공작령/Duchy/Ducal → 구/District",
+ "rules": [
+  {
+   "id": "hn-001",
+   "from": "Jongno-gu Ducal Directly Managed Land",
+   "to": "Jongno-gu District Directly Managed Land",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-002",
+   "from": "종로구 공작령 직영지",
+   "to": "종로구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-003",
+   "from": "Jung-gu Ducal Directly Managed Land",
+   "to": "Jung-gu District Directly Managed Land",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-004",
+   "from": "중구 공작령 직영지",
+   "to": "중구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-005",
+   "from": "Yongsan-gu Duchy Directly Administered Land",
+   "to": "Yongsan-gu District Directly Administered Land",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-006",
+   "from": "용산구 공작령 직영지",
+   "to": "용산구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-007",
+   "from": "Seongdong-gu Ducal Domain Direct Holdings",
+   "to": "Seongdong-gu District Domain Direct Holdings",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-008",
+   "from": "성동구 공작령 직영지",
+   "to": "성동구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-009",
+   "from": "Gwangjin-gu Duchy Directly Administered Land",
+   "to": "Gwangjin-gu District Directly Administered Land",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-010",
+   "from": "광진구 공작령 직영지",
+   "to": "광진구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-011",
+   "from": "Dongdaemun-gu Duchy Directly Administered Land",
+   "to": "Dongdaemun-gu District Directly Administered Land",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-012",
+   "from": "동대문구 공작령 직영지",
+   "to": "동대문구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-013",
+   "from": "Jungnang-gu Duchy Directly Administered Land",
+   "to": "Jungnang-gu District Directly Administered Land",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-014",
+   "from": "중랑구 공작령 직영지",
+   "to": "중랑구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-015",
+   "from": "Seongbuk-gu Ducal Direct Holdings",
+   "to": "Seongbuk-gu District Direct Holdings",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-016",
+   "from": "성북구 공작령 직영지",
+   "to": "성북구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-017",
+   "from": "Gangbuk-gu Ducal Direct Holdings",
+   "to": "Gangbuk-gu District Direct Holdings",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-018",
+   "from": "강북구 공작령 직영지",
+   "to": "강북구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-019",
+   "from": "Dobong-gu Ducal Direct Holdings",
+   "to": "Dobong-gu District Direct Holdings",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-020",
+   "from": "도봉구 공작령 직영지",
+   "to": "도봉구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-021",
+   "from": "Nowon-gu Ducal Direct Holdings",
+   "to": "Nowon-gu District Direct Holdings",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-022",
+   "from": "노원구 공작령 직영지",
+   "to": "노원구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-023",
+   "from": "Eunpyeong-gu Ducal Demesne",
+   "to": "Eunpyeong-gu District Demesne",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-024",
+   "from": "은평구 공작령 직영지",
+   "to": "은평구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-025",
+   "from": "Seodaemun-gu Ducal Demesne",
+   "to": "Seodaemun-gu District Demesne",
+   "expect": {
+    "123": 4,
+    "090": 0
+   }
+  },
+  {
+   "id": "hn-026",
+   "from": "서대문구 공작령 직영지",
+   "to": "서대문구 직영지",
+   "expect": {
+    "123": 6,
+    "090": 0
+   }
+  },
+  {
+   "id": "hn-027",
+   "from": "마포구 공작령 직영지",
+   "to": "마포구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-028",
+   "from": "Gangseo-gu Ducal Directly Held Territory",
+   "to": "Gangseo-gu District Directly Held Territory",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-029",
+   "from": "강서구 공작령 직영지",
+   "to": "강서구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-030",
+   "from": "구로구 공작령 직영지",
+   "to": "구로구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-031",
+   "from": "Geumcheon-gu Ducal Directly Held Territory",
+   "to": "Geumcheon-gu District Directly Held Territory",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-032",
+   "from": "금천구 공작령 직영지",
+   "to": "금천구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-033",
+   "from": "Yeongdeungpo District Duchy Directly Held Domain",
+   "to": "Yeongdeungpo District Directly Held Domain",
+   "expect": {
+    "123": 2,
+    "090": 0
+   }
+  },
+  {
+   "id": "hn-034",
+   "from": "영등포구 공작령 직영지",
+   "to": "영등포구 직영지",
+   "expect": {
+    "123": 4,
+    "090": 0
+   }
+  },
+  {
+   "id": "hn-035",
+   "from": "Yeongdeungpo-gu Ducal Directly Held Territory",
+   "to": "Yeongdeungpo-gu District Directly Held Territory",
+   "expect": {
+    "123": 2,
+    "090": 0
+   }
+  },
+  {
+   "id": "hn-036",
+   "from": "Dongjak-gu Ducal Directly Held Territory",
+   "to": "Dongjak-gu District Directly Held Territory",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-037",
+   "from": "동작구 공작령 직영지",
+   "to": "동작구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-038",
+   "from": "Gwanak-gu Ducal Directly Held Territory",
+   "to": "Gwanak-gu District Directly Held Territory",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-039",
+   "from": "관악구 공작령 직영지",
+   "to": "관악구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-040",
+   "from": "Seocho-gu Duchy Directly Held Land",
+   "to": "Seocho-gu District Directly Held Land",
+   "expect": {
+    "123": 2,
+    "090": 0
+   }
+  },
+  {
+   "id": "hn-041",
+   "from": "서초구 공작령 직영지",
+   "to": "서초구 직영지",
+   "expect": {
+    "123": 6,
+    "090": 0
+   }
+  },
+  {
+   "id": "hn-042",
+   "from": "Seocho-gu Ducal Demesne",
+   "to": "Seocho-gu District Demesne",
+   "expect": {
+    "123": 2,
+    "090": 0
+   }
+  },
+  {
+   "id": "hn-043",
+   "from": "Seocho-gu Ducal Domain Direct Holdings",
+   "to": "Seocho-gu District Domain Direct Holdings",
+   "expect": {
+    "123": 2,
+    "090": 0
+   }
+  },
+  {
+   "id": "hn-044",
+   "from": "Duchy Directly Managed Land, Gangnam-gu",
+   "to": "District Directly Managed Land, Gangnam-gu",
+   "expect": {
+    "123": 2,
+    "090": 0
+   }
+  },
+  {
+   "id": "hn-045",
+   "from": "강남구 공작령 직영지",
+   "to": "강남구 직영지",
+   "expect": {
+    "123": 4,
+    "090": 0
+   }
+  },
+  {
+   "id": "hn-046",
+   "from": "Gangnam-gu Ducal Domain Direct Holdings",
+   "to": "Gangnam-gu District Domain Direct Holdings",
+   "expect": {
+    "123": 2,
+    "090": 0
+   }
+  },
+  {
+   "id": "hn-047",
+   "from": "Songpa-gu Ducal Domain Direct Holdings",
+   "to": "Songpa-gu District Domain Direct Holdings",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-048",
+   "from": "송파구 공작령 직영지",
+   "to": "송파구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-049",
+   "from": "Gangdong-gu Duchy Demesne",
+   "to": "Gangdong-gu District Demesne",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-050",
+   "from": "강동구 공작령 직영지",
+   "to": "강동구 직영지",
+   "expect": {
+    "123": 2,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-051",
+   "from": "Yeongdeungpo District Sluice Bureau Duchy Directly Held Domain",
+   "to": "Yeongdeungpo District Sluice Bureau Directly Held Domain",
+   "expect": {
+    "123": 0,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-052",
+   "from": "영등포구 수문국 공작령 직영지",
+   "to": "영등포구 수문국 직영지",
+   "expect": {
+    "123": 0,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-053",
+   "from": "Seocho-gu Taeuk Group Duchy Directly Held Land",
+   "to": "Seocho-gu Taeuk Group District Directly Held Land",
+   "expect": {
+    "123": 0,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-054",
+   "from": "서초구 태욱그룹 공작령 직영지",
+   "to": "서초구 태욱그룹 직영지",
+   "expect": {
+    "123": 0,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-055",
+   "from": "Gangnam-gu Arc Duchy Directly Managed Land",
+   "to": "Gangnam-gu Arc District Directly Managed Land",
+   "expect": {
+    "123": 0,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-056",
+   "from": "강남구 Arc 공작령 직영지",
+   "to": "강남구 Arc 직영지",
+   "expect": {
+    "123": 0,
+    "090": 2
+   }
+  },
+  {
+   "id": "hn-057",
+   "from": "Yeongdeungpo-gu Yeouido Investment Alliance Ducal Directly Held Territory",
+   "to": "Yeongdeungpo-gu Yeouido Investment Alliance District Directly Held Territory",
+   "expect": {
+    "123": 0,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-058",
+   "from": "영등포구 여의도출자연합회 공작령 직영지",
+   "to": "영등포구 여의도출자연합회 직영지",
+   "expect": {
+    "123": 0,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-059",
+   "from": "서대문구 여의도출자연합회 공작령 직영지",
+   "to": "서대문구 여의도출자연합회 직영지",
+   "expect": {
+    "123": 0,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-060",
+   "from": "Seodaemun-gu Anguk Monastic Assembly Ducal Demesne",
+   "to": "Seodaemun-gu Anguk Monastic Assembly District Demesne",
+   "expect": {
+    "123": 0,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-061",
+   "from": "서대문구 정부 공작령 직영지",
+   "to": "서대문구 정부 직영지",
+   "expect": {
+    "123": 0,
+    "090": 2
+   }
+  },
+  {
+   "id": "hn-062",
+   "from": "Seocho-gu Seongha Group Ducal Demesne",
+   "to": "Seocho-gu Seongha Group District Demesne",
+   "expect": {
+    "123": 0,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-063",
+   "from": "서초구 성하그룹 공작령 직영지",
+   "to": "서초구 성하그룹 직영지",
+   "expect": {
+    "123": 0,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-064",
+   "from": "Gangnam-gu Arc Ducal Domain Direct Holdings",
+   "to": "Gangnam-gu Arc District Domain Direct Holdings",
+   "expect": {
+    "123": 0,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-065",
+   "from": "Seocho-gu Arc Ducal Domain Direct Holdings",
+   "to": "Seocho-gu Arc District Domain Direct Holdings",
+   "expect": {
+    "123": 0,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-066",
+   "from": "서초구 Arc 공작령 직영지",
+   "to": "서초구 Arc 직영지",
+   "expect": {
+    "123": 0,
+    "090": 1
+   }
+  },
+  {
+   "id": "hn-067",
+   "from": "Seodaemun-gu The Government Ducal Demesne",
+   "to": "Seodaemun-gu The Government District Demesne",
+   "expect": {
+    "123": 0,
+    "090": 1
+   }
+  }
+ ]
+}
