@@ -5,6 +5,10 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+The Dongdaemun Raiders are an armed band working on Government ground (Dongdaemun). The filters and work lamps they carry off in sacks are supplies the White Cross uses. The White Cross is the Government's first-aid and transport body and has no doctors, so losing filters and lamps cuts even the first aid it can still give. The Government can drive this band off with rifles, but it has no doctors to send wounded soldiers back, so it loses people every time it fights. A faction that takes captured raiders uses them as labor at the very bottom and does not raise their standing. The lines of cost are set out in [The Cost Structure of the Three Factions](/wiki/Cost-Structure/).
+
 <a id="Hostile-Group-G08-heading-0003"></a>
 
 ## Common species and variants

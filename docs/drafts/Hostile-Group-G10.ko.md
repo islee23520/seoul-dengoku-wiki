@@ -6,6 +6,10 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
 
+## 세 세력과의 관계
+
+보국문 집단이 노리는 것은 곡물 자루와 분양 종자 포대다. 원종 씨앗은 정부만 쥐고 있고, 다른 곳의 종자는 정부 원종에서 나눠 받은 것뿐이다. 그래서 종자 포대는 같은 무게의 곡물보다 값이 크고, 자유도시처럼 사람과 식량이 무기인 세력에게는 징병 상한을 정하는 물자다. 집단이 서는 가락·잠실 하층 배급고는 아크 땅이다. 아크는 소총 수준의 최소 방위만 하므로 배급고 문을 오래 지키지 못한다. 비용의 갈래는 [세 세력의 비용 구조](/wiki/Cost-Structure/)에 있다.
+
 <a id="Hostile-Group-G10-heading-0003"></a>
 
 ## 공통종과 변이종

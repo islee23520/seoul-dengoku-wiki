@@ -5,6 +5,15 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
 
+## 세 세력과의 관계
+
+철공룡은 어느 세력의 적도 아니다. 루틴에 걸린 사람에게는 재해이고, 붙잡으면 회수 재고가 된다. 어느 세력도 이 기체를 새로 만들지 못하므로 잃으면 다시 잡아야 한다.
+
+- 기종 번호: M13 철공룡(공룡형 유압 중장비)
+- 쓰임: 셔터와 차단문을 부수는 [R-U05 유압 공성 중장비](/wiki/Unit-Roster-and-Tech-Tree/)(L4, 수치는 제안)
+- 단계: 포획은 세 세력 모두 할 수 있다. 하드웨어 정비는 정부(정비창)와 자유도시(정비 공병)가 하고, 신호 확인과 깨우기는 아크가 한다. 유압 정비는 정부와 자유도시만 할 수 있어, 아크는 이 기체를 깨워도 오래 쓰지 못한다.
+- 병종과 해금 조건은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
+
 <a id="Hostile-Group-G26-heading-0003"></a>
 
 ## 공통종과 변이종

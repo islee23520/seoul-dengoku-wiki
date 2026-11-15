@@ -5,6 +5,15 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
 
+## 세 세력과의 관계
+
+빈수레는 어느 세력의 적도 아니다. 루틴에 걸린 사람에게는 재해이고, 붙잡으면 회수 재고가 된다. 어느 세력도 이 기체를 새로 만들지 못하므로 잃으면 다시 잡아야 한다.
+
+- 기종 번호: M1 서비스 로봇
+- 쓰임: 보급 운반을 돕는 [R-U01 짐 나르는 서비스 로봇](/wiki/Unit-Roster-and-Tech-Tree/)(L1, 수치는 제안). 위험이 낮아 누구나 잡는다
+- 단계: 포획은 세 세력 모두 할 수 있다. 하드웨어 정비는 정부(정비창)와 자유도시(정비 공병)가 하고, 신호 확인과 깨우기는 아크가 한다. 이 기종은 포획만으로도 쓸 수 있다.
+- 병종과 해금 조건은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
+
 <a id="Hostile-Group-G14-heading-0003"></a>
 
 ## 공통종과 변이종

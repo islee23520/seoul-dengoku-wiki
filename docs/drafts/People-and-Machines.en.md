@@ -29,7 +29,7 @@ The bodies that remained at the opening fell into two kinds: remnants standing w
 
 After the Great Blackout cut machines off from the upper control network, they repeated their last assigned search and guard tasks. Outside Seoul, the war machines used in the Great Blackout still roam, carrying out the last orders they received.
 
-At the opening, I Yeon is a biological synthetic humanoid in Jo Jaepyo's company. The H01-H16 register instead records mechanical humanoids under house custody. Neither the kind of body alone grants nor denies personhood or citizenship. Each individual is assessed for expressed will, continuity of memory, and capacity to consent. A custody record can document maintenance and responsibility, but its transfer clause cannot govern someone recognized as a person. I Yeon records her own courier judgment under her name and refuses an order that would sacrifice civilians. No such individual determination is recorded for the H01-H16 actors.
+The H01-H16 register records mechanical humanoids under house custody. Neither the kind of body alone grants nor denies personhood or citizenship. Each individual is assessed for expressed will, continuity of memory, and capacity to consent. A custody record can document maintenance and responsibility, but its transfer clause cannot govern someone recognized as a person. No such individual determination is recorded for the H01-H16 actors.
 
 ## Repeating Machines
 
@@ -37,7 +37,7 @@ At the opening, I Yeon is a biological synthetic humanoid in Jo Jaepyo's company
 
 There were bodies that overlapped with the logistics humanoids but did not stand in the same line. They were machines that pre-collapse disaster agencies had meant to use for search, reinforcement, and pipe inspection, and when the upper control network fell away, they continued the search, guard, and transport routines they had last received, subject to their stored charge and access to charging terminals. Small swarms that glowed like lanterns, heavy machines that pushed rubble with hydraulics, and flat underwater shells were those three lines.
 
-The triggers for restart were voltage, water level, and authorization signals. Stations with attached depots such as Sinjeong, Gunja, and Godeok, water treatment with attached sluices such as Yeongdeungpo, Ttukseom, and Amsa, and the galleries of the deep tunnels provided that stage. When a scout thrust forward a protocol card signed and issued by the Arc, only that line, that trigger point, and that command bundle could be paused for a while; there was no universal control. An unsigned card reached only the basic on-and-off functions. The modules and the salvage economy are in [Lost Technology](/wiki/Lost-Technology-Lineage/).
+The triggers for restart were voltage, water level, and authorization signals. Stations with attached depots such as Sinjeong, Gunja, and Godeok, water treatment with attached sluices such as Yeongdeungpo, Ttukseom, and Amsa, and the galleries of the deep tunnels provided that stage. When a scout thrust forward a protocol card signed and issued by the Arc, only that line, that trigger point, and that command bundle could be paused for a while; there was no universal control. An unsigned card reached only the basic on-and-off functions. These machines are no faction's enemy. To a person caught in their search or guard routine they are a hazard, but once captured, repaired and woken with an Arc signature they become a faction's workers and units. The four steps of capture, repair, signal check and thought control are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/). The modules and the salvage economy are in [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
 Capacitor modules only used the charge already stored and could not replace generators; cells aged, and without charging terminals the repetition broke off too. A workshop repairing hydraulics did not make it look as if the fabs had returned.
 
@@ -59,7 +59,7 @@ Sweeping up the swarms with firearms was left as a last resort. Sealing, ration 
 |---|---|---|
 | People | Subway living spheres, military registers, trade sites | The three factions of station strongholds, paper registers, the seven trades |
 | Logistics humanoids | Atlas-class field trials, factory density at the front of the world | Stopped remnants and repeated transport, dismantled modules |
-| Disaster machines | Search, guard, and transport routines tied to the call network | Search and guard routines in sealed galleries stop when batteries fail or charging is lost. [Lost Technology](/wiki/Lost-Technology-Lineage/) |
+| Disaster machines | Search, guard, and transport routines tied to the call network | Search and guard routines in sealed galleries stop when batteries fail or charging is lost. Once captured they become salvage stock, and none can be newly built. [Lost Technology](/wiki/Lost-Technology-Lineage/) |
 | Raptors, feral dogs, rats | Han River birds, abandoned dogs, station rats | Colonies on the towers, the docks, and the transfer trays |
 
 ## Sources
@@ -68,5 +68,6 @@ Sweeping up the swarms with firearms was left as a last resort. Sealing, ration 
 - [Scenario Timeline](/wiki/Scenario-Timeline/)
 - [The Three Factions of Seoul](/wiki/Sixteen-States/)
 - [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/)
+- [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/)
 - [The Great Blackout](/wiki/World-Unbinding/)
 - [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/)

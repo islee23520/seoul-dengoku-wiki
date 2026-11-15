@@ -5,6 +5,15 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
 
+## 세 세력과의 관계
+
+등불개미는 어느 세력의 적도 아니다. 루틴에 걸린 사람에게는 재해이고, 붙잡으면 회수 재고가 된다. 어느 세력도 이 기체를 새로 만들지 못하므로 잃으면 다시 잡아야 한다.
+
+- 기종 번호: M12 등불개미(곤충형 수색 기체)
+- 쓰임: 어둠 속 수색을 맡는 [R-U04 수색 발광 드론 무리](/wiki/Unit-Roster-and-Tech-Tree/)(L3, 수치는 제안). 빛을 내므로 쓰는 쪽도 눈에 띈다
+- 단계: 포획은 세 세력 모두 할 수 있다. 하드웨어 정비는 정부(정비창)와 자유도시(정비 공병)가 하고, 신호 확인과 깨우기는 아크가 한다. 아크 서명이 없으면 수동으로 몰아야 해서 반응이 늦다.
+- 병종과 해금 조건은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
+
 <a id="Hostile-Group-G25-heading-0003"></a>
 
 ## 공통종과 변이종

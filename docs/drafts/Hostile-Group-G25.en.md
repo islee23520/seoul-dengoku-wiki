@@ -5,6 +5,15 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+The Lantern Ant is no faction's enemy. To a person caught in its routine it is a hazard, and once captured it becomes salvage stock. No faction can build this chassis anew, so a lost one has to be caught again.
+
+- Machine type: M12 Lantern Ant (insect-form search chassis)
+- Use: the [R-U04 searchlight insect-drones](/wiki/Unit-Roster-and-Tech-Tree/) (L3, numbers proposed) that search in the dark; because they give off light, they also expose whoever uses them
+- Steps: all three factions can capture it. Hardware repair is done by the Government (depots) and the Free Cities (maintenance engineers); signal check and wake-up are done by the Arc. Without an Arc signature they must be steered by hand and respond slowly.
+- Units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
+
 <a id="Hostile-Group-G25-heading-0003"></a>
 
 ## Common species and variants

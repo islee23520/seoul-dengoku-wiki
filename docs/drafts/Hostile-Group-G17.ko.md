@@ -5,6 +5,15 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
 
+## 세 세력과의 관계
+
+외눈탑은 어느 세력의 적도 아니다. 루틴에 걸린 사람에게는 재해이고, 붙잡으면 회수 재고가 된다. 어느 세력도 이 기체를 새로 만들지 못하므로 잃으면 다시 잡아야 한다.
+
+- 기종 번호: M6 봉쇄 감시망
+- 쓰임: 아크가 다시 켜는 [A-U08 깨운 경계 초소](/wiki/Unit-Roster-and-Tech-Tree/)(L3, 수치는 제안). 감시 장비는 세력이 나중에 얻는 무기다
+- 단계: 포획은 세 세력 모두 할 수 있다. 하드웨어 정비는 정부(정비창)와 자유도시(정비 공병)가 하고, 신호 확인과 깨우기는 아크가 한다. 다시 켠 초소는 지나가는 누구에게나 쏠 수 있어 통제에 실패할 위험이 있다.
+- 병종과 해금 조건은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
+
 <a id="Hostile-Group-G17-heading-0003"></a>
 
 ## 공통종과 변이종

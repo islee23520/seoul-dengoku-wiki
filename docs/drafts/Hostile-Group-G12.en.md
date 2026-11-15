@@ -5,6 +5,10 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+The Sinnae Deserters are soldiers who walked out of the Government army with rifles, ammunition and supplies. The moment they leave the Government they lose their rank and whatever assets they held. The band has no one above squad leader and no officers, so it cannot lay combined fire with heavy weapons. Without a depot it only spends the ammunition and parts it carried out, so what it holds can only shrink, and with no doctor its wounded do not come back. A faction that takes them in keeps them at the very bottom and uses only their skills. What the Free Cities want most is an officer who can command tanks and heavy weapons; this band has none, so taking it in gains no more than a few riflemen. If an officer is ever found among deserters, that person becomes something the factions fight over. The units opened by the movement of officers and doctors are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
+
 <a id="Hostile-Group-G12-heading-0003"></a>
 
 ## Common species and variants
