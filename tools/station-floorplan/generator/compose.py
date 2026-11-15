@@ -775,7 +775,7 @@ def compose(name_ko, half=300):
         n_h = sum(e['state'] == 'hidden' for e in exits); n_u = sum(e['state'] == 'used' for e in exits)
         A(f'<rect x="{gx + 10}" y="{gy + GS - 100}" width="{GS - 20}" height="46" fill="{C["bg"]}" fill-opacity="0.85"/>')
         A(f'<text x="{gx + 18}" y="{gy + GS - 80}" font-size="13" fill="#ffffff">아크 교리: 지상 성곽 없음 — 쓰는 출입구 {n_u}곳·숨긴 출입구 {n_h}곳만 위장, 나머지는 안에서 봉쇄. 지상은 버린 땅(명부 없음)</text>')
-        A(f'<text x="{gx + 18}" y="{gy + GS - 61}" font-size="13" fill="{C["text"]}">방어는 지하 깊이와 데이터센터·성소 쪽 후퇴로 한다. 판의 실측 지형·출입구·환기구는 위장 대상 목록</text>')
+        A(f'<text x="{gx + 18}" y="{gy + GS - 61}" font-size="13" fill="{C["text"]}">방어는 지하 깊이와 가장 깊은 최후 구역 쪽 후퇴로 한다. 판의 실측 지형·출입구·환기구는 위장 대상 목록</text>')
     else:
         A(f'<circle cx="{scx:.1f}" cy="{scy:.1f}" r="{R * k:.1f}" fill="none" stroke="{C["rubble"]}" stroke-width="1" stroke-dasharray="2 8" opacity="0.6"/>')
         A(f'<text x="{scx:.1f}" y="{scy - R * k - 10:.1f}" font-size="14" fill="{C["rubble"]}" text-anchor="middle" stroke="{C["bg"]}" stroke-width="3" paint-order="stroke">[추정] 지형 자료 없음 — 임시 고리 {R:.0f} m</text>')
@@ -1008,7 +1008,7 @@ def compose(name_ko, half=300):
     ]
     for i, (g_, t_) in enumerate(src):
         A(f'<text x="40" y="{sy0 + 26 + i * 21}" font-size="13.5" fill="{C["text"]}"><tspan fill="{C["gate"]}" font-weight="700">{esc(g_)}</tspan>  {esc(t_[:260])}</text>')
-    A(f'<text x="40" y="{sy0 + 26 + len(src) * 21 + 10}" font-size="13" fill="{C["sub"]}">세력별 변형: 정부=셔터 선·명부 가장 엄격, 지상 노출 최소 / 자유도시=지상 공장 겸용으로 지붕·작업장 노출, 차단물이 철판·컨테이너 / 아크=명부 없음, 데이터센터가 최후 구역이자 성소. 성곽·해자·성문은 설계 렌즈 표현이며 본문에는 실제 역 공간 이름을 쓴다.</text>')
+    A(f'<text x="40" y="{sy0 + 26 + len(src) * 21 + 10}" font-size="13" fill="{C["sub"]}">세력별 변형: 정부=셔터 선·명부 가장 엄격, 지상 노출 최소 / 자유도시=지상 공장 겸용으로 지붕·작업장 노출, 차단물이 철판·컨테이너 / 아크=명부 없음, 가장 깊은 층이 최후 구역. 성곽·해자·성문은 설계 렌즈 표현이며 본문에는 실제 역 공간 이름을 쓴다.</text>')
     H2 = sy0 + 26 + len(src) * 21 + 40
     maps = official_maps(name_ko)
     if maps:

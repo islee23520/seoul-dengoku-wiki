@@ -94,7 +94,7 @@ mobilisable       = 0.20 (Government) / 0.27 (Free City) / 0.30 (Arc) x populati
 
 | | Government | Free City | Arc |
 |---|---|---|---|
-| Raising a stage | District orders and corvée labour, one standard plan | Each guild builds its own section with its own money | The steward's order |
+| Raising a stage | District orders and corvée labour, one standard plan | Each guild builds its own section with its own money | Orders from bishops and cardinals |
 | Stage 4 | Wide buffer; people outside the register live in the strip | Narrow perimeter, apartment strongholds, surface workshops and greenhouses | Deep-level seal, camouflaged surface entrances |
 | Stage 5 | Radial, spreading from the large interchanges; deep stations as shelters | A mesh of equal stations | One mass joining the deep lines |
 | Weakness | People outside the register are abandoned | Weak stations are holes in the mesh | Short of air and water; tuberculosis risk |
