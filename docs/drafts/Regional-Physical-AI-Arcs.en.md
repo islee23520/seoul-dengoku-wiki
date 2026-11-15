@@ -28,9 +28,9 @@ The Gangnam shelters lived behind shut doors for decades because they feared the
 
 ## The Three Factions
 
-- **Government**: the fourteen districts north of the Han. On paper it keeps ministries for the three branches and a multiparty system, but in practice there are only two parties, the OMO Party and the Claw Party. Each district's National Assembly member holds that district's duchy as a Senator, and the Senators produce a President for life. It counts as citizens only the people on its own ledger. It thinks of the far bank as the place where barbarians live.
-- **Free City**: seven districts in the southwest. It isn't one power but a set of city-states, each standing on its own. Most residents are skilled hands who live by their work, and since there was no way to judge whose skill was higher, they never chose a leader. Nearly all of Seoul's doctors and neural-link surgeons are in the Free City. Its weapons are people and food, and its doctors let it hold out longest. Today they're called the Union as a whole. I Ilseop is Duke of Gwanak.
-- **Arc**: the four Gangnam districts. It split off from the Free City. Go Ye-jin is its Hierophant, and the faithful call her the Messiah. The faithful replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor.
+- **Government**: the fourteen districts north of the Han. On paper it keeps ministries for the three branches and a multiparty system, but in practice there are only two parties, the OMO Party and the Claw Party. At the top is the President for life, Kim Yeongyu, with Stationmasters, Division Chiefs, Bureau Chiefs and Commissioners below. It counts as citizens only the people on its own ledger. It thinks of the far bank as the place where barbarians live.
+- **Free City**: seven districts in the southwest. It isn't one power but a set of independent cities, each standing on its own, and they hold that refusing to be ruled is freedom. Most residents are skilled hands who live by their work. Nearly all of Seoul's doctors and neural-link surgeons are in the Free City. Its weapons are people and food, and its doctors let it hold out longest. There's no name for them as a whole. Its ranks are Stationmaster, Division Chief, Guild Master and Director, and at the top is the Chair of the Board, I Ilseop. He is heir of a medical house of neural-link medicine, and people want that house to lead them.
+- **Arc**: the four Gangnam districts. It split off from the Free City. Go Ye-jin, a former engineer, is its Hierophant, and the faithful call her the Messiah. Its ranks are Stationmaster, Division Chief, Bishop and Cardinal. The faithful replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor.
 
 Scarcity made people pass their work on to their children, and that's how rigid classes formed. Each shelter first chose its leader by vote, but it soon became hereditary.
 
@@ -45,9 +45,9 @@ Scarcity made people pass their work on to their children, and that's how rigid 
 | Around 2117 | The first baptism. Twelve people. |
 | 2120 | At a negotiation with shelters near the Tancheon, Ji Yeon-hui becomes Go Ye-jin's bodyguard. |
 | Around 2122 | The Gangnam shelters are joined under the name of the Arc. |
-| Winter 2126 | The eve of the third water contract. |
+| Winter 2126 | The present. Converts begin to disappear. |
 
-When Go Ye-jin stopped the machines outside Seoul, people from the Gangnam shelters came to her. The Arc teaches machine implants as a way to endure the winter. Flesh freezes, but steel doesn't. The Arc keeps an offering room beneath the old Suseo rail depot.
+When Go Ye-jin stopped the machines outside Seoul, people from the Gangnam shelters came to her. The Arc teaches machine implants as a way to endure the winter. Flesh freezes, but steel doesn't.
 
 <a id="Regional-Physical-AI-Arcs-heading-0010"></a>
 

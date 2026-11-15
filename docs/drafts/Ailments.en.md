@@ -80,9 +80,9 @@ Coolant was kept off the drinking-water ledger. When the liquid left in depot he
 
 The drinking-water and coolant ledgers were kept apart even in front of the [G19](/wiki/Hostile-Group-G19/) swarms or the equipment of [the old technology](/wiki/Lost-Technology-Lineage/). When a watchman poured coolant into a tank, waterborne disease spread.
 
-**F. Limits on low-floor living**
+**F. First floors in the flood zones**
 
-First floors south of the Han and along the tributaries were used as monsoon storage or left empty. Living quarters were on the third floor and above. The ration windows were moved into [buildings inside the embankment](/wiki/Building-Reuse-Geography/). The medical officers' patients were mostly people who had slept on a wet first floor, used a special room full of asbestos dust as quarters, or washed in a coolant puddle.
+First floors in the flood zones south of the Han and along the tributaries were used as monsoon storage or left empty. Above ground the ground floor is the best place a citizen can have, but people here live on the cold, windy upper floors to keep clear of the water. The ration windows were moved into [buildings inside the embankment](/wiki/Building-Reuse-Geography/). The medical officers' patients were mostly people who had slept on a wet first floor, used a special room full of asbestos dust as quarters, or washed in a coolant puddle.
 
 **G. Entering station interiors**
 

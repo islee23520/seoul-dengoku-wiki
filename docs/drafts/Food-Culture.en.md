@@ -37,15 +37,15 @@ The wetlands outside the Yeongdeungpo and Yeouido sluices were that water surfac
 
 When excrement and feed from the rearing cells mixed with drinking water, cases of waterborne disease increased. Connecting water from a carp-rearing cell to the ration taps caused that evening's water-quality inspection to fail. Catfish ate organic matter on the bottom, so the water could appear less cloudy. Crucian carp multiplied quickly in shallow water, and the medical officer inspected the tanks and the medicine chest together.
 
-The first floor of the Han's main channel stood close to abandoned space. Habitation pushed onto the third floor and above, cooking pushed inside the embankment, the sewage and floods along the tributaries turned playgrounds into detour embankments, and bringing fish caught beyond them to a window passed the inspection bench of the licensed market. Noryangjin's frozen remains and unloaded viscera became the dogs' night road, and the live fish of the station tanks read as protein that got through one more day without power.
+In the flood zone along the Han's main channel, first floors go under every monsoon and stand close to abandoned. People there have no choice but to live upstairs, and the cold, windy upper floors are the place of the lower class. Cooking pushed inside the embankment, the sewage and floods along the tributaries turned playgrounds into detour embankments, and bringing fish caught beyond them to a window passed the inspection bench of the licensed market. Noryangjin's frozen remains and unloaded viscera became the dogs' night road, and the live fish of the station tanks read as protein that got through one more day without power.
 
-## The Water Compacts and Water Rationing
+## Water Rationing and Treatment
 
 A. The 2026 parts and water exchange
 
 On November 6, 2026, two Yeouido vault representatives visited Yeongdeungpo waterworks. Han Jeonghun accepted two emergency generator parts and agreed to open the Yeouido water valve from 06:00 to 12:00 daily.
 
-The dated water and parts record is in [the oral records](/wiki/Oral-Stories/#the-2026-water-and-parts-exchange). Ration rice is divided according to the amount of water supplied.
+The dated water and parts record is in [the oral records](/wiki/Oral-Stories/#the-2026-water-and-parts-exchange). Seoul has plenty of water as such. What runs short is clean, treated water and the pipes and power that carry it.
 
 Even with ration rice, without the treatment watch's signature clean cooking water was unavailable. If porridge was cooked with cloudy water, cases of waterborne disease increased. Counterfeit medicine also circulated that summer.
 

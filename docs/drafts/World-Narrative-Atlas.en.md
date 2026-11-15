@@ -11,23 +11,35 @@ The setting is Seoul in the winter of 2126. About a hundred years ago, around 20
 
 Seoul has only three political powers. The details are in [The Three Factions of Seoul](/wiki/Sixteen-States/) and [Characters, Factions, and Trades](/wiki/Characters-Factions-and-Professions/).
 
-- **Government**: the 14 districts north of the Han River. On paper it keeps the ministries of the three branches and a multi-party system, but in practice there are only two parties, the OMO Party and the Claw Party. The Government recognizes as citizens only the people recorded in its own ledgers.
-- **Free City**: the 7 southwestern districts. Independent city-states with no king, now called the Union when taken together. Most residents are skilled hands who live by their work. Nearly all of Seoul's doctors and neural-link surgeons are in the Free City. The Free City's weapons are people and food, and its doctors let it hold out longest.
-- **Arc**: the 4 Gangnam districts. It split off from the Free City and is ruled clan by clan around the Hierophant, Go Ye-jin.
+- **Government**: the 14 districts north of the Han River. On paper it keeps the ministries of the three branches and a multi-party system, but in practice there are only two parties, the OMO Party and the Claw Party. The Government recognizes as citizens only the people recorded in its own ledgers. Its President is Kim Yeongyu.
+- **Free City**: the 7 southwestern districts. Independent cities standing on their own, holding that refusing to be ruled is freedom. There is no name for them taken together. The Chair of the Board is I Ilseop. Most residents are skilled hands who live by their work. Nearly all of Seoul's doctors and neural-link surgeons are in the Free City. The Free City's weapons are people and food, and its doctors let it hold out longest.
+- **Arc**: the 4 Gangnam districts. It split off from the Free City and is led by the Hierophant, Go Ye-jin, a former engineer.
 
 How families hold their places inside the three factions is covered in [Families and the Three Factions](/wiki/Chaebol-Houses-and-Century-Factions/). Scarcity made children take over their parents' work, and that is how a vertical class structure hardened.
 
-## The 25 Duchies
+## Stations and Territory
 
-Each district is one duchy. Seoul has twenty-five duchies, split 14 for the Government, 7 for the Free City, and 4 for the Arc. Place names, stations, and geography stay as they were. Only the political ownership above them is divided by district. The district-by-district table is in [The Three Factions of Seoul](/wiki/Sixteen-States/) and [Offices and Ranks](/wiki/Offices-and-Ranks/). How the duchies appear on the map is explained in [World Map](/wiki/World-and-Subway-Layers/) and [The Structure of the World Map](/wiki/World-Map-Construction/).
+Seoul's twenty-five districts are split 14 for the Government, 7 for the Free City, and 4 for the Arc. Place names, stations, and geography stay as they were. The smallest unit of rule is not the district but the station: a subway station together with the fortified ground above it. A station is worth more the more transfer lines it has and the deeper it goes, and above-ground stations are worth least. The district-by-district table is in [The Three Factions of Seoul](/wiki/Sixteen-States/) and [Offices and Ranks](/wiki/Offices-and-Ranks/). How the factions appear on the map is explained in [World Map](/wiki/World-and-Subway-Layers/) and [The Structure of the World Map](/wiki/World-Map-Construction/).
+
+How deep a person lives shows their class. Underground, deeper means higher, because shutters keep intruders out, exits are easy to control and watch, and there is geothermal heat. Above ground, higher means lower: the upper floors are cold and windy and exposed to air fighting, surveillance and attack, drones included. Everyone who holds no station is an ordinary citizen, and among them those on the ground floor stand highest. Each faction's founding retainers receive the right to live underground first.
 
 ## Offices and Titles
 
-[Offices and Ranks](/wiki/Offices-and-Ranks/) sets out the positions of the three factions.
+[Offices and Ranks](/wiki/Offices-and-Ranks/) sets out the positions of the three factions. The three share one frame, and a person's step is set by the number of Stationmasters under them.
 
-- Government: the National Assembly member elected in each district holds that district's duchy under the title Senator. The Senators produce the President from among themselves, and the President serves for life.
-- Free City: I Ilseop holds the duchy of Gwanak-gu as the Duke of Gwanak. The holders of the other six cities and their titles are not recorded.
-- Arc: Go Ye-jin is the Hierophant, and believers call her the Messiah.
+| Stationmasters under them | Government | Arc | Free City |
+|---|---|---|---|
+| 1 | Stationmaster | Stationmaster | Stationmaster |
+| 2 to 4 | Division Chief | Division Chief | Division Chief |
+| 5 to 9 | Bureau Chief | Bishop | Guild Master |
+| 10 or more | Commissioner | Cardinal | Director |
+| Top | President (Kim Yeongyu) | Hierophant (Go Ye-jin) | Chair of the Board (I Ilseop) |
+
+- Government: Commissioners are appointed by the President. The President serves for life.
+- Arc: Cardinals are ordained by the Hierophant. Believers call Go Ye-jin the Messiah.
+- Free City: Directors are appointed by the Board. By rank I Ilseop's house is a Director like any other, but because people want them to lead, the house has held the Chair of the Board for generations.
+
+A person who moves to another faction loses their assets and territory and becomes one of the lowest class, whatever their rank at home. So people move between factions mostly through abduction and capture.
 
 How to read names by bon-gwan and generation names is in [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/), and the yardsticks for the judgment of people and organizations are in [Values and Policy Scales](/wiki/Values-and-Policy-Scales/). The scales measure ten axes from −100 to 100.
 
@@ -42,13 +54,13 @@ The chronology is in the [Century Annals](/wiki/Century-Annals/) and the [Scenar
 | c. 2117 | The first baptism, of twelve people |
 | 2120 | At negotiations with the shelters near Tancheon, Ji Yeon-hui takes her place at Go Ye-jin's side |
 | c. 2122 | The Gangnam shelters are united under the name Arc |
-| Winter 2126 | The present, before the third water-supply contract |
+| Winter 2126 | The present |
 
 The strands of the story are in [Regional and Physical AI Arcs](/wiki/Regional-Physical-AI-Arcs/), and records from around the Great Blackout are collected in [The Stories](/wiki/Oral-Stories/). A single-scene commission is in [Sindorim Junction Cargo Gate](/wiki/Sindorim-Junction-Cargo-Gate/).
 
 ## Culture and Faith
 
-According to [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/), the only organized religion in Seoul in 2126 is the Arc. The Arc replaced every earlier religion. Believers replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. The Arc keeps a consecration chamber beneath the old Suseo rail depot.
+According to [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/), the only organized religion in Seoul in 2126 is the Arc. The Arc replaced every earlier religion. Believers replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor.
 
 Daily life is covered in [Food Culture](/wiki/Food-Culture/). Residents receive rations at the station windows, and the habit of taking water first and rice after remains. Illness and medicine are in [Ailments and Symptoms](/wiki/Ailments/), and the five corridors of immigrant life inside Seoul are in [Diaspora Corridors](/wiki/Diaspora-Corridors/).
 
