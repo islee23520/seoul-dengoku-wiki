@@ -10,7 +10,7 @@
     "legacy_fields": "max_size·base_size·규모 배율·적격 임계·효과는 이전 제안이며 확정 정원·능력·훈련 근거로 사용하지 않는다"
   },
   "squad_structure": {
-    "commander": "1명 필수 (지휘 스킬 보유자)",
+    "commander": "1명 필수 (지휘 스킬 보유자). 장교 지휘관은 정부만 쉽게 채운다. 자유도시와 아크에는 장교가 없어 징집 출신이나 경비 책임자가 지휘하고, 기갑·중화기 부대에는 지휘 감쇄가 걸린다. 정부에서 넘어오거나 잡혀 온 장교는 예외다",
     "members": "정착지에서 생성된 인물 중 직업·무공·능력치 매칭자",
     "max_squads_per_settlement": "지휘관 수와 같음",
     "recruitment": {
@@ -47,14 +47,14 @@
     },
     {
       "id": "UT-sword",
-      "name": "검술 소대",
-      "name_en": "Sword Squad",
+      "name": "도검 소대",
+      "name_en": "Blade Squad",
       "category": "근접 보병",
-      "description": "검법 수련 병력. 기동 근접전과 제압에 특화한다.",
+      "description": "도검 훈련 병력. 기동 근접전과 제압에 특화한다.",
       "max_size": 20,
       "base_size": 10,
       "member_match": {
-        "martial_any": ["검법", "검법 상승", "총검술", "본국검법"],
+        "martial_any": ["총검술"],
         "occupation_any": ["호위", "경비", "무사"],
         "attributes_min": { "DX": 11 }
       },
@@ -64,7 +64,7 @@
       },
       "equipment": ["도검", "방패 (선택)", "경갑"],
       "gurps_resolution": {
-        "attack": "검법 스킬로 3d6",
+        "attack": "도검 스킬로 3d6",
         "defense": "능동 방어 + 방패 보정",
         "damage": "베기 (cut)"
       },
@@ -202,25 +202,74 @@
       "name": "의무 지원대",
       "name_en": "Medical Support",
       "category": "지원",
-      "description": "흰십자단 전통의 의료 병력. 전장 응급 치료.",
+      "description": "정부 구호 병력. 흰십자단이 지키는 대학병원 건물과 약 창고에서 나오지만 의사가 없어 지혈·보온·이송 같은 응급 처치만 한다. 중상자는 부대로 돌아오지 않는다.",
       "max_size": 10,
       "base_size": 5,
       "member_match": {
         "martial_any": [],
-        "occupation_any": ["의료 진료", "약재 조제", "의무원"],
+        "occupation_any": ["응급 처치", "약재 조제", "의무원"],
         "attributes_min": { "IQ": 11 }
       },
       "commander_match": {
-        "skill": "의료 (Physician/First Aid)",
+        "skill": "응급 처치 (First Aid)",
         "attributes_min": { "IQ": 12 }
       },
-      "equipment": ["의료 도구", "약재", "들것"],
+      "equipment": ["구급낭", "지혈대", "들것"],
       "gurps_resolution": {
-        "special": "부상자 HP 회복 속도 증가",
-        "gurps_skill": "First Aid / Physician",
+        "special": "전투 중 출혈 진행을 늦추고 부상자를 후송한다",
+        "gurps_skill": "First Aid",
+        "effect": "사망 판정 재굴림과 복귀 효과 없음. 재굴림과 복귀는 자유도시 외과 의사대(UT-surgeon)만 준다"
+      },
+      "battle_role": "support_heal"
+    },
+    {
+      "id": "UT-surgeon",
+      "name": "외과 의사대",
+      "name_en": "Surgical Team",
+      "category": "지원",
+      "description": "자유도시 전용 의사 병력. 외과의와 신경 연결 시술의가 전선 뒤 수술실을 돌려 중상자를 살려 부대로 돌려보낸다. 정부와 아크에는 이 부대가 없다. 의료 로봇은 아크 소프트웨어가 있어야 움직인다.",
+      "max_size": 10,
+      "base_size": 4,
+      "member_match": {
+        "martial_any": [],
+        "occupation_any": ["외과의", "의사", "신경 시술의", "간호사"],
+        "attributes_min": { "IQ": 12 }
+      },
+      "commander_match": {
+        "skill": "의료 (Physician/Surgery)",
+        "attributes_min": { "IQ": 13 }
+      },
+      "equipment": ["수술 도구", "약재", "들것", "휴대 발전기"],
+      "gurps_resolution": {
+        "special": "부상자 HP 회복 속도 증가. 중상자를 보충 기간에 걸쳐 부대로 복귀시킨다",
+        "gurps_skill": "Physician / Surgery",
         "effect": "전투 후 사망 판정 재굴림 1회"
       },
       "battle_role": "support_heal"
+    },
+    {
+      "id": "UT-armor",
+      "name": "기갑·중화기 소대",
+      "name_en": "Armour and Heavy Weapons Platoon",
+      "category": "중화기",
+      "description": "정부 전용. 국군 차고에서 정비한 전차와 박격포·야포를 장교가 지휘한다. 자유도시는 수방사 장비를 정비할 수는 있으나 장교가 없어 지휘 감쇄를 받고, 정부에서 넘어오거나 잡혀 온 장교가 있어야 감쇄를 푼다. 아크는 이 부대를 갖지 않는다. 사격 통제와 유도 같은 첨단 기능은 아크가 서명한 소프트웨어가 있어야 완전히 돌고, 없으면 수동 기능만 쓴다.",
+      "max_size": 20,
+      "base_size": 10,
+      "member_match": {
+        "martial_any": [],
+        "occupation_any": ["군", "병", "포병", "차량 정비"],
+        "attributes_min": { "DX": 10, "IQ": 10 }
+      },
+      "commander_match": {
+        "skill": "지휘 (장교 교육)",
+        "attributes_min": { "IQ": 12 }
+      },
+      "equipment": ["전차 (궤도식)", "박격포", "야포", "소총"],
+      "gurps_resolution": {
+        "special": "중화기 화력과 장애물 파괴. 아크 소프트웨어가 없으면 사격 통제는 수동 기능만",
+        "command": "장교 지휘관이 없으면 지휘 감쇄"
+      },
+      "battle_role": "heavy_support"
     },
     {
       "id": "UT-engineer",
@@ -249,15 +298,15 @@
     },
     {
       "id": "UT-ronin",
-      "name": "낭인 부대",
-      "name_en": "Ronin Band",
+      "name": "무소속 용병대",
+      "name_en": "Freelance Band",
       "category": "특수",
-      "description": "무소속 전사 집단. 용병·약탈·호위 등 모든 역할 가능.",
+      "description": "무소속 무장 집단. 용병·약탈·호위 등 모든 역할 가능.",
       "max_size": 25,
       "base_size": 10,
       "member_match": {
-        "martial_any": ["권법", "검법", "창술", "총검술", "궁술", "암기술"],
-        "occupation_any": ["무소속", "용병", "낭인"],
+        "martial_any": ["창술", "총검술", "궁술", "암기술"],
+        "occupation_any": ["무소속", "용병"],
         "attributes_min": { "DX": 10, "ST": 10 }
       },
       "commander_match": {
@@ -266,7 +315,7 @@
       },
       "equipment": ["혼합 장비", "약탈 무기"],
       "gurps_resolution": {
-        "special": "편성 제한 없음 — 모든 무공 혼합 가능",
+        "special": "편성 제한 없음 — 모든 기술 혼합 가능",
         "loyalty": "낮음 — 급여·약탈 보상 필요"
       },
       "battle_role": "flexible"

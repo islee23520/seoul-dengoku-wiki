@@ -400,7 +400,7 @@
             "name": "청화병원",
             "observed_use": "병원",
             "river": "hangang-south",
-            "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
+            "opening_use": "야전 의무. 수술실을 돌리는 의사 당직이 있다.",
             "how": "관측된 출입구만 쓰고 나머지는 막는다.",
             "role": "support",
             "floors": [
@@ -416,7 +416,7 @@
                 "label": "침상",
                 "state": "occupied",
                 "contents": "청화병원 2층 교대 침상. S08 야전 의무.",
-                "condition": "수술실 대신 커튼 칸. 약품은 자물쇠."
+                "condition": "침상은 커튼 칸으로 나누고 수술실은 의사 당직이 돌린다. 약품은 자물쇠."
               }
             ]
           },
@@ -808,7 +808,7 @@
             "name": "정동병원",
             "observed_use": "병원",
             "river": "hangang-south",
-            "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
+            "opening_use": "야전 의무. 수술실을 돌리는 의사 당직이 있다.",
             "how": "관측된 출입구만 쓰고 나머지는 막는다.",
             "role": "support",
             "floors": [
@@ -824,7 +824,7 @@
                 "label": "침상",
                 "state": "occupied",
                 "contents": "정동병원 2층 교대 침상. S08 야전 의무.",
-                "condition": "수술실 대신 커튼 칸. 약품은 자물쇠."
+                "condition": "침상은 커튼 칸으로 나누고 수술실은 의사 당직이 돌린다. 약품은 자물쇠."
               }
             ]
           },
