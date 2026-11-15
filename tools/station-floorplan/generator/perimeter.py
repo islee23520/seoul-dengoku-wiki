@@ -61,7 +61,9 @@ def elevation_at(contours, pt):
     return best[1] if best else None
 
 
-def build(name, ext, core, faction, pop, landcover_water, apartments=None):
+def build(name, ext, core, faction, pop, landcover_water, apartments=None, guard_budget=None, k_w=None):
+    """guard_budget/k_w: research D model (emergency guards left after underground posts; arms factor x weighted length)."""
+    KW = {'cut': 1.0, 'gap': 1.0, 'facade': 0.5, 'wall': 0.5, 'natural': 0.25}
     T = load_topo(name)
     if not T: return None
     roads = _u(T.get('road', [])).intersection(ext.buffer(80))
@@ -116,13 +118,15 @@ def build(name, ext, core, faction, pop, landcover_water, apartments=None):
         tot = 0.0; cuts = 0
         for c, g in classify(ring, 5.0):
             ln = g.length if hasattr(g, 'length') else 0
-            if c == 'cut': tot += max(2, math.ceil(max(ln, 3) * COST['cut'])); cuts += 1
+            if k_w is not None:
+                tot += k_w * ln * KW[c]; cuts += (c == 'cut')
+            elif c == 'cut': tot += max(2, math.ceil(max(ln, 3) * COST['cut'])); cuts += 1
             else: tot += ln * COST[c]
         return tot, cuts
     def closed(polys):
         u = unary_union(polys)
         return u.buffer(14, join_style=2).buffer(-14, join_style=2).intersection(ext.buffer(-4))
-    guards = max(6.0, (pop or 500) * 0.15 / 3 * DOCTRINE.get(faction, 1.0))
+    guards = max(6.0, (pop or 500) * 0.15 / 3 * DOCTRINE.get(faction, 1.0)) if guard_budget is None else max(0.0, guard_budget)
     area_cap = max(8000.0, (pop or 500) * AREA_PER_HEAD * DOCTRINE.get(faction, 1.0)) + core.area
     chosen = [b for b in blocks if b.intersects(core.buffer(10))]
     if not chosen:
@@ -148,6 +152,13 @@ def build(name, ext, core, faction, pop, landcover_water, apartments=None):
             if best is None or score > best[0]: best = (score, b, nxt, c2)
         if best is None: break
         _, b, cur, cur_cost = best; chosen.append(b); rest.remove(b)
+    outposts = []
+    if cur.geom_type == 'MultiPolygon':     # exits far apart: try to join across a street, else keep the main keep + outposts
+        joined = cur.buffer(30, join_style=2).buffer(-30, join_style=2)
+        if joined.geom_type == 'Polygon': cur = joined
+        else:
+            parts = sorted(getattr(joined, 'geoms', [joined]), key=lambda g: -g.area)
+            cur, outposts = parts[0], [p_ for p_ in parts[1:] if p_.area > 50]
     segs = classify(cur.boundary)
     stat = {k: 0.0 for k in COST}; cuts = []
     for c, g in segs:
@@ -168,4 +179,4 @@ def build(name, ext, core, faction, pop, landcover_water, apartments=None):
     return {'poly': cur, 'segments': segs, 'cuts': cuts, 'stats': {k: round(v) for k, v in stat.items()},
             'share': {k: round(100 * v / L) for k, v in stat.items()}, 'length': round(L), 'blocks': len(chosen),
             'area_m2': round(cur.area), 'area_cap_m2': round(area_cap), 'guards_need': round(used_cost), 'guards_avail': round(guards), 'n_cuts': len(cuts),
-            'watch': watch, 'doctrine': DOCTRINE.get(faction, 1.0)}
+            'watch': watch, 'doctrine': DOCTRINE.get(faction, 1.0), 'outposts': outposts}

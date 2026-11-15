@@ -22,6 +22,7 @@ from pyproj import Transformer
 from smap_wfs import wfs
 from render_station import smap_names, render, ROOT
 import perimeter as PER
+import stages as STG
 
 T4326_5179 = Transformer.from_crs(4326, 5179, always_xy=True)
 T5179_5186 = Transformer.from_crs(5179, 5186, always_xy=True)
@@ -82,6 +83,15 @@ def ol_in(key, area):
     items, tree = OL[key]
     if tree is None: return []
     return [items[i] for i in tree.query(area) if items[i][0].intersects(area)]
+TERRAIN_ALL = {}
+_tp = os.path.join(ROOT, 'out/_terrain/terrain.json')
+if os.path.exists(_tp):
+    TERRAIN_ALL = {t['name']: t for t in json.load(open(_tp, encoding='utf-8'))}
+NEIGH = json.load(open(os.path.join(ROOT, 'opendata/neighbors.json'), encoding='utf-8')) if os.path.exists(os.path.join(ROOT, 'opendata/neighbors.json')) else {}
+def roofs_of(name):
+    p = os.path.join(ROOT, 'geo_cache/elev', f'{name}.json')
+    if not os.path.exists(p): return []
+    return [(x, y, g, r, a) for x, y, g, r, a in json.load(open(p, encoding='utf-8'))['bld'] if r is not None and a and a > 60]
 GATES = {}
 _gf = glob.glob(os.path.join(FAC, 'utf8/OA-13294/*20240325.csv'))
 if _gf:
@@ -216,6 +226,56 @@ def mask_polys(geo, mask, simplify=1.5, min_area=30):
         pg = Polygon(pts).buffer(0)
         if pg.area >= min_area: polys.append(pg.simplify(simplify))
     return polys
+
+def _wrap(text, width_px, fs):
+    n = max(6, int(width_px / (fs * 0.98))); out = []; t = str(text)
+    while t:
+        if len(t) <= n: out.append(t); break
+        cut = t.rfind(' ', 0, n); cut = cut if cut > n * 0.6 else n
+        out.append(t[:cut]); t = t[cut:].lstrip()
+    return out or ['']
+
+def draw_stage_table(A, STAGE, T, y0, W):
+    st_ = STAGE['stages']; start = STAGE['start_stage']; I = STAGE['inputs']; tr = STAGE['terrain']
+    A(f'<text x="40" y="{y0 + 10}" font-size="22" font-weight="700" fill="#ffffff">5단계 확장 시나리오 (잠정) — 2126 시작 단계 ★{start} · 지형 유형: {esc(tr["label"])}' + (f' (+{", ".join(STG.TERRAIN[t][0] for t in tr["tags"][1:3] if t in STG.TERRAIN)})' if len(tr['tags']) > 1 else '') + '</text>')
+    tl = []
+    if T:
+        tl.append(f'지형 읽기(실측): 반경 300 m 고저차 {T.get("relief_m", "?")} m · 역 지면 해발 {T.get("station_elev", "?")} m · 경사 상위10% {T.get("slope_p90_pct", "?")}%/100m · 하천 {T.get("river_m2_300", 0)} m² · 철도 부지 {T.get("rail_m2_300", 0)} m² · 성토·절토 {T.get("cutfill_m_300", 0)} m · 담장 {T.get("wall_m_300", 0)} m · 건폐 {round(100 * (T.get("bld_cover") or 0))}% · 10층 이상 {round(100 * (T.get("highrise_share") or 0))}% · 아파트 {T.get("apt_count", 0)}동 · 최고 지붕 해발 {T.get("roof_max_m", "?")} m')
+    tl.append(f'입력값: 2126 인구 {I["P"]:,}명 · 역 바닥 {I["F_station_m2"]:,} m²({I.get("F_station_src", "S-Map 실측")}) · 출입구 쓰는 {I["E_used"]}·숨긴 {I["E_hidden"]}·막은 {I["E_sealed"]} · 터널 차단점 {I["tunnel_cuts"]} · 환기구 {I["vents"]}({I["vents_src"]}) · 급기 {I["Q_m3h"]:,} m³/h[추정] · 물 {I["water_L"]} L/인{(" " + I["water_note"]) if I.get("water_note") else ""} · 연료 {I["fuel_kg"]} kg/인 · 지상선 가중 {I["L_surface_m"]} m · 붙은 건물 지하 {I["F_bld_m2"]:,} m² · 지붕 집수 {I.get("roof_catch_m2", 0):,} m²→{I.get("roof_water_m3_day", 0)} m³/일[추정] · 터널 {I["F_tunnel_m2"]:,} m²[추정] · 무장 계수 {I["k_w"]}·동원 {int(100 * I["M_share"])}%(소유자 질문)')
+    for i, t_ in enumerate(tl):
+        A(f'<text x="40" y="{y0 + 36 + i * 20}" font-size="13" fill="#9db7d3">{esc(t_)}</text>')
+    cols = [('단계', 200), ('공사 (공통 + 이 역 지형)', 680), ('더하는 시설', 360), ('정원·과밀', 230), ('경계 인원', 250), ('비축', 290), ('공사량·기간', 270), ('진입 조건', 280)]
+    y = y0 + 36 + len(tl) * 20 + 14; x = 40
+    for nm, w_ in cols:
+        A(f'<rect x="{x}" y="{y}" width="{w_ - 4}" height="26" fill="#1d3352"/><text x="{x + 8}" y="{y + 18}" font-size="14" font-weight="700" fill="#ffffff">{esc(nm)}</text>'); x += w_
+    y += 30
+    for r in st_:
+        cells = [
+            [f'{"★ " if r["stage"] == start else ""}{r["stage"]}단계', r['name'], f'({r["lens"]})'],
+            _wrap(r['works'], 660, 12.5) + ([''] + _wrap('지형: ' + r['terrain_works'], 660, 12.5) if r['terrain_works'] else []),
+            _wrap(r['facilities'], 340, 12.5) + [f'화장실 {r["toilets"]} · 씻는 곳 {r["washing"]}' + (f' · 병상 {r["beds"]}+격리 {r["isolation"]} · 학교 {r["schools"]}' if r['beds'] else '') + f' · 배급소 {r["ration_points"]}', f'작업장 {r["workshop_m2"]:,} m² · 재배 {int(r["grow_share"] * 100)}%'],
+            [f'최대 수용 {r["capacity"]:,}명 ({r["cap_by_max"]} 제약)', f'생활 기준 정원 {r["living_capacity"]:,}명 ({r["cap_by"]})', f'쓰는 바닥 {r["floor_m2"]:,} m²', f'환기구 {r["vents_k"]} · 급기 {r["air_m3h"]:,} m³/h({"송풍기" if r.get("air_speed", 1) > 1 else "자연"})', ('넘침: 최대 수용 초과, 바깥으로 밀려남' if r.get('overflow') else ('과밀: 생활 기준 초과' if r['over'] else '생활 기준 안'))],
+            [f'상시 {r["guard_standing"]}명', f'비상 {r["guard_emergency"]}명', f'동원 가능 {r["mobilisable"]}명', ('지킬 수 있음' if r['defensible'] else '지킬 수 없음 — 둘레 축소·무장·연기')] + ([f'지상선 실길이 {r["surface_line_real_m"]} m (가중 {r["surface_line_m"]} m), 망루 {r["watchtowers"]}'] if r['surface_line_m'] else []),
+            [f'식량 {r["food_t"]} t (창고 {r["granary_m2"]} m²)', f'물 {r["water_m3"]} m³', f'연료 {r["fuel_t"]} t (창고 {r["fuel_store_m2"]} m²)'],
+            _wrap(r['labor'], 250, 12.5) + [r['duration']],
+            _wrap(r['entry'], 260, 12.5),
+        ]
+        h = max(len(c) for c in cells) * 17 + 14
+        fill = '#173a2c' if r['stage'] == start else ('#14243a' if r['stage'] % 2 else '#101d30')
+        A(f'<rect x="40" y="{y}" width="{sum(w for _, w in cols) - 4}" height="{h}" fill="{fill}" stroke="{"#4cd97b" if r["stage"] == start else "#24405f"}" stroke-width="{2 if r["stage"] == start else 1}"/>')
+        x = 40
+        for ci, (c, (nm, w_)) in enumerate(zip(cells, cols)):
+            for li, line in enumerate(c):
+                col = '#ffffff' if (ci == 0 and li <= 1) else ('#ff8a8a' if ('지킬 수 없음' in line or '과밀:' in line or '넘침:' in line) else ('#9fe0b5' if line.startswith('지형:') else '#dce8f5'))
+                A(f'<text x="{x + 8}" y="{y + 18 + li * 17}" font-size="{14 if ci == 0 and li <= 1 else 12.5}" font-weight="{700 if ci == 0 and li <= 1 else 400}" fill="{col}">{esc(line)}</text>')
+            x += w_
+        y += h + 4
+    notes = ['공식·상수: 성장·수용력 연구 D 3.3~3.4(정원 = min(바닥÷1인 면적, 급기÷1인 환기, 물÷1인 물), 비상 경계 = 4×(쓰는·숨긴 출입구+터널 차단점) + 무장 계수×가중 지상선 + 0.02×인구 ≤ 동원 가능).',
+             '확장 법칙: 충격이 단계를 올린다 · 재료가 먼저 바뀌고 둘레는 나중 · 넓은 고리는 싸게 · 구간을 나눠 맡긴다 · 너무 커지면 새 마디(이웃 역) · 옛 고리는 안쪽 검문선·신분선으로 남는다. 퇴행: 인구 30% 손실·비축 소진 시 한 단계 내려가 가장 바깥 고리부터 버림.',
+             '소유자 결정 필요: 총기의 흔함(무장 계수), 지상 시설 난방 금기 여부, 선로 터널 거주 허용(5단계 바닥), 단계 이름 확정. 성곽 역사 이름은 설계 렌즈이며 세계 본문에는 쓰지 않는다.']
+    for i, t_ in enumerate(notes):
+        A(f'<text x="40" y="{y + 18 + i * 19}" font-size="12.5" fill="#9db7d3">{esc(t_)}</text>')
+    return y + 18 + len(notes) * 19 + 30
 
 def official_line(ln, v):
     g = lambda t: '확인' if (t or '').startswith('[확인') else ('발췌' if (t or '').startswith('[발췌') else '추정')
@@ -432,10 +492,31 @@ def compose(name_ko, half=300):
     # surface core = exits kept in use + intake vent (the underground needs no surface wall; hidden exits stay outside)
     core_parts = [Point(e['x'], e['y']).buffer(10) for e in exits if e['state'] == 'used'] or [Point(cx, cy).buffer(30)]
     if sup_pt: core_parts.append(Point(sup_pt[0], sup_pt[1]).buffer(8))
+    # research D guard model: emergency guards = 4 x (exits in use + hidden + tunnel cuts) + k_w x weighted surface line + 0.02 P <= M
+    P_ = int(plan.get('pop_2126') or 0); deg_ = int(st.get('graph_degree') or len(NEIGH.get(name_ko, [])) or 1)
+    depth_max_ = max([f['depth_m'] for g in models for f in g['floors'].values()] + [float(st.get('platform_depth_max_m') or 0)])
+    fx_ = STG.FACTION.get(faction, STG.FACTION['government'])
+    C_ = deg_ * (2 if depth_max_ >= 25 else 1)
+    ug_guard = 4 * (sum(e['state'] == 'used' for e in exits) + sum(e['state'] == 'hidden' for e in exits) + C_) + 0.02 * P_
+    surf_budget = fx_['M'] * P_ - ug_guard
     try:
-        per = None if faction == 'arc' else PER.build(name_ko, ext, unary_union(core_parts), faction, plan.get('pop_2126'), unary_union(lc['water']) if lc['water'] else None)
+        per = None if faction == 'arc' else PER.build(name_ko, ext, unary_union(core_parts), faction, plan.get('pop_2126'), unary_union(lc['water']) if lc['water'] else None,
+                                                      guard_budget=surf_budget, k_w=fx_['k_w'])
     except Exception as e_:
         print('perimeter fail', name_ko, e_); per = None
+    f_bld = 0.0; roof_m2 = 0.0
+    if per:
+        for g_, p_, gf_ in blds:
+            if gf_.intersects(per['poly']): roof_m2 += gf_.intersection(per['poly']).area
+            u_ = p_.get('und_flo_co') or 0
+            if u_ and gf_.intersects(per['poly']): f_bld += gf_.intersection(per['poly']).area * u_ * 0.7
+    f_station = sum(f['walk_m2'] for g in models for f in g['floors'].values() if f['depth_m'] > 1.5); f_src = 'S-Map 지하 층 실측'
+    if not f_station:   # surface / elevated stations: station hall floors in the S-Map model, else the official station floor area
+        f_station = sum(f['walk_m2'] for g in models for f in g['floors'].values()); f_src = 'S-Map 역사 층 실측(지상역)'
+        if not f_station: f_station = float(st.get('station_area_m2') or 0); f_src = '서울교통공사 역사 연면적'
+    terr = TERRAIN_ALL.get(name_ko, {'primary': None, 'tags': []})
+    v4_add = sum(1 for g_, rec in ol_in('vent', per['poly']) if (rec[0] or '') in ('지하철환기구', '지하철환기통', '지하환기구')) if per else 0
+    STAGE = STG.compute(st, plan, faction, terr, f_station, exits, len(own_v), deg_, depth_max_, per, f_bld, vents_s4=v4_add, vents_s5=len(line_v), f_src=f_src, roof_m2=roof_m2)
     if per or faction == 'arc':
         rubble_parts = []; barriers = []
     # ---- buildings to annotate
@@ -535,6 +616,10 @@ def compose(name_ko, half=300):
     # defensive perimeter (combined real data)
     if per:
         A(f'<path d="{path(per["poly"])}" fill="#ffffff" fill-opacity="0.04" stroke="none"/>')
+        for op_ in per.get('outposts', []):
+            A(f'<path d="{path(op_)}" fill="#3ddc84" fill-opacity="0.10" stroke="#3ddc84" stroke-width="2" stroke-dasharray="5 3"/>')
+            c_ = op_.representative_point(); sx_, sy_ = S(c_.x, c_.y)
+            A(f'<text x="{sx_:.1f}" y="{sy_ - 10:.1f}" font-size="11" fill="#3ddc84" text-anchor="middle" stroke="{C["bg"]}" stroke-width="3" paint-order="stroke">떨어진 출입구 초소</text>')
         SEGSTYLE = {'facade': ('#dce8f5', 3.2, ''), 'wall': ('#e0c080', 3.2, ''), 'natural': ('#4fa3d9', 3.2, '7 4'),
                     'gap': (C['rubble'], 6.5, '3 3'), 'cut': (C['barrier'], 9, '')}
         for c_, g_ in per['segments']:
@@ -545,6 +630,44 @@ def compose(name_ko, half=300):
             wg, wp, wh = per['watch']; wc = wg.centroid; sx_, sy_ = S(wc.x, wc.y)
             A(f'<path d="M{sx_:.1f},{sy_ - 13:.1f}L{sx_ + 4:.1f},{sy_ - 4:.1f}L{sx_ + 13:.1f},{sy_ - 4:.1f}L{sx_ + 6:.1f},{sy_ + 3:.1f}L{sx_ + 9:.1f},{sy_ + 12:.1f}L{sx_:.1f},{sy_ + 6:.1f}L{sx_ - 9:.1f},{sy_ + 12:.1f}L{sx_ - 6:.1f},{sy_ + 3:.1f}L{sx_ - 13:.1f},{sy_ - 4:.1f}L{sx_ - 4:.1f},{sy_ - 4:.1f}Z" fill="#ff5c6c" stroke="#ffffff" stroke-width="1"/>')
             A(f'<text x="{sx_ + 15:.1f}" y="{sy_ + 4:.1f}" font-size="13" fill="#ffb0b8" stroke="{C["bg"]}" stroke-width="3" paint-order="stroke">망루: {esc(wp.get("명칭") or wp.get("주기") or wp.get("용도") or "건물")} 지상 {wp.get("층수") or "?"}층, 꼭대기 해발 약 {wh:.0f} m</text>')
+    # ---- stage overlays (4: buffer band + watchtowers on real roofs, 5: tunnel links to neighbours, shelter)
+    if per:
+        band = per['poly'].buffer(40).difference(per['poly']).intersection(ext)
+        A(f'<path d="{path(band)}" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.8" stroke-dasharray="2 4" fill-rule="evenodd"/>')
+        n_w = STAGE['stages'][3]['watchtowers']; picked_w = []
+        cand_w = sorted([r for r in roofs_of(name_ko) if per['poly'].buffer(12).contains(Point(r[0], r[1]))], key=lambda r: -r[3])
+        for r in cand_w:
+            if len(picked_w) >= n_w: break
+            if all(math.dist(r[:2], q[:2]) > 45 for q in picked_w): picked_w.append(r)
+        for x_, y_, g0, r0, a0 in picked_w:
+            sx_, sy_ = S(x_, y_)
+            A(f'<path d="M{sx_:.1f},{sy_ - 8:.1f}L{sx_ + 7:.1f},{sy_ + 5:.1f}L{sx_ - 7:.1f},{sy_ + 5:.1f}Z" fill="#ff8a8a" stroke="#ffffff" stroke-width="1"/>'
+              f'<text x="{sx_ + 8:.1f}" y="{sy_ + 4:.1f}" font-size="10.5" fill="#ffb0b8" stroke="{C["bg"]}" stroke-width="2.5" paint-order="stroke">망루 {r0:.0f} m</text>')
+        STAGE['watch_points'] = [[round(x_), round(y_), round(r0, 1)] for x_, y_, g0, r0, a0 in picked_w]
+    nbs = [(n_, STATIONS[n_]) for n_ in NEIGH.get(name_ko, []) if n_ in STATIONS]
+    if nbs:
+        cand_sh = [(float(st.get('platform_depth_max_m') or 0), name_ko)] + [(float(v_.get('platform_depth_max_m') or 0), n_) for n_, v_ in nbs]
+        shelter = max(cand_sh)[1]; STAGE['shelter'] = shelter; STAGE['neighbours'] = [n_ for n_, _ in nbs]
+        for n_, v_ in nbs:
+            nx_, ny_ = T4326_5179.transform(v_['lon'], v_['lat']); dx_, dy_ = nx_ - cx, ny_ - cy; L_ = math.hypot(dx_, dy_) or 1
+            ex_ = cx + dx_ / L_ * (half - 40); ey_ = cy + dy_ / L_ * (half - 40)
+            ln_ = LineString([(cx + dx_ / L_ * 60, cy + dy_ / L_ * 60), (ex_, ey_)])
+            A(f'<path d="{path(ln_)}" fill="none" stroke="#7fe0c0" stroke-width="2" stroke-dasharray="10 5 2 5" marker-end="url(#arr)" opacity="0.85"/>')
+            tx_, ty_ = S(ex_, ey_); tx_ = min(max(tx_, gx + 150), gx + GS - 150); ty_ = min(max(ty_, gy + 80), gy + GS - 135)
+            A(f'<text x="{tx_:.1f}" y="{ty_ - 6:.1f}" font-size="12" fill="#7fe0c0" text-anchor="middle" stroke="{C["bg"]}" stroke-width="3" paint-order="stroke">5단계 터널 통로 → {esc(n_)} {int(L_)} m' + (' (대피소)' if n_ == shelter else '') + '</text>')
+    # stage name tags on the map
+    ue_ = [e for e in exits if e['state'] == 'used']
+    if ue_:
+        sx_, sy_ = S(ue_[0]['x'], ue_[0]['y'])
+        A(f'<text x="{sx_ + 12:.1f}" y="{sy_ + 18:.1f}" font-size="12" font-weight="700" fill="#3ddc84" stroke="{C["bg"]}" stroke-width="3" paint-order="stroke">1단계 출입구 초소</text>')
+    if not foot_u.is_empty:
+        b_ = foot_u.bounds; sx_, sy_ = S(b_[0], b_[3])
+        A(f'<text x="{sx_:.1f}" y="{sy_ - 6:.1f}" font-size="12" font-weight="700" fill="#e8f1ff" stroke="{C["bg"]}" stroke-width="3" paint-order="stroke">2단계 대합실 거점 · 3단계 역 구내 방어(지하)</text>')
+    if per:
+        b_ = per['poly'].bounds; sx_, sy_ = S(b_[2], b_[1])
+        A(f'<text x="{sx_:.1f}" y="{sy_ + 16:.1f}" font-size="12" font-weight="700" fill="#e0c080" text-anchor="end" stroke="{C["bg"]}" stroke-width="3" paint-order="stroke">4단계 지상 외곽 방어선 + 완충 지대</text>')
+    elif faction == 'arc':
+        A(f'<text x="{gx + 18}" y="{gy + 90}" font-size="12" font-weight="700" fill="#e0c080">4단계 깊은 층 봉쇄 (지상선 없음)</text>')
     # rubble + barriers (old ring fallback)
     for rp in rubble_parts: A(f'<path d="{path(rp)}" fill="url(#hatch)" stroke="{C["rubble"]}" stroke-width="1"/>')
     for bx, by, ang in barriers:
@@ -899,6 +1022,7 @@ def compose(name_ko, half=300):
             A(f'<text x="{mx}" y="{H2 + 26 + mh + 20}" font-size="13" fill="{C["sub"]}">{esc(cap)} — {esc(os.path.basename(fpath))}</text>')
             mx += w_ + 20
         H2 += mh + 70
+    H2 = draw_stage_table(A, STAGE, TERRAIN_ALL.get(name_ko, {}), H2, W)
     A('</svg>')
     svg = '\n'.join(out).replace(f'height="{H}" viewBox="0 0 {W} {H}"', f'height="{H2}" viewBox="0 0 {W} {H2}"', 1)
     svg = svg.replace(f'<rect width="{W}" height="{H}" fill="{C["bg"]}"/><rect width="{W}" height="{H}" fill="url(#grid)"/>',
@@ -908,7 +1032,7 @@ def compose(name_ko, half=300):
     data = {'station': name_ko, 'faction': faction, 'center5179': [cx, cy], 'half_m': half, 'models': [g['name'] for g in models],
             'floors': floor_rows, 'exits': [{k: e[k] for k in ('no', 'x', 'y', 'model', 'state')} for e in exits],
             'rubble_ring_m': R, 'rubble_cuts': len(rubble_parts), 'barriers': len(barriers),
-            'perimeter': ({k_: v_ for k_, v_ in per.items() if k_ not in ('poly', 'segments', 'cuts', 'watch')} | {'watch': ({'name': per['watch'][1].get('명칭') or per['watch'][1].get('주기'), 'floors': per['watch'][1].get('층수'), 'top_m': round(per['watch'][2])} if per.get('watch') else None)}) if per else None,
+            'stages': STAGE, 'perimeter': ({k_: v_ for k_, v_ in per.items() if k_ not in ('poly', 'segments', 'cuts', 'watch', 'outposts')} | {'outposts': len(per.get('outposts', []))} | {'watch': ({'name': per['watch'][1].get('명칭') or per['watch'][1].get('주기'), 'floors': per['watch'][1].get('층수'), 'top_m': round(per['watch'][2])} if per.get('watch') else None)}) if per else None,
             'buildings': [{'no': i, 'name': c['p'].get('buld_nm') or c['p'].get('pos_bul_nm'), 'bdtyp_cd': c['p'].get('bdtyp_cd'),
                            'gro': c['p'].get('gro_flo_co'), 'und': c['p'].get('und_flo_co'), 'use_2126': c['use'],
                            'centroid5179': list(c['gfull'].centroid.coords[0])} for i, c in enumerate(picked, 1)],
