@@ -18,7 +18,7 @@ Arc is a faith community that split from the Free City and settled in the four G
 
 **B. Baptism**
 
-Believers replace parts of their bodies with machines. This is baptism. In Arc, faith is counted by the number of implanted parts. Arc teaches machine implantation as the way to endure the winter. In winter flesh freezes and steel does not, and a machine arm does not get frostbite.
+Believers replace parts of their bodies with machines. This is baptism. In Arc, faith is counted by the number of implanted parts. Arc teaches machine implantation as the way to endure the winter. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. In winter flesh freezes and steel does not, and a machine arm does not get frostbite.
 
 **C. The offering chamber**
 

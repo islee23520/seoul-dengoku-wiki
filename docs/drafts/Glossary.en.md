@@ -42,7 +42,7 @@ This page collects the terms the wiki shares. English spellings accompany each e
 
 ## Terms of the Faith
 
-- **baptism**: the replacement of a body part with a machine. In Arc, faith is counted by the number of implanted parts.
+- **baptism**: the replacement of a body part with a machine. In Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor.
 
 <a id="glossary-s6"></a>
 

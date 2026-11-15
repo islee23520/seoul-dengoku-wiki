@@ -56,10 +56,10 @@ Before the collapse, Seoul had the Chinese-Korean commercial district of Daerim 
 - Origin community: The surviving Guro industrial complex dormitories. His great-grandfather Pham Van Minh was a night-line technician before the collapse, and after arriving in Guro from Vietnam in 2109, Pham Van Duc learned the trade from the dormitory mechanics. Pham Van Duc was born in Vietnam in 2089 and came to Guro in 2109 with his father Pham Van Loc. He learned repair work by checking old work records against the equipment alongside the dormitory mechanics, and by keeping strict tool return and shift records he rose to night maintenance crew chief. He speaks Vietnamese in everyday conversation and uses Korean instructions on the job. His great-grandfather Pham Van Minh, born in 1999, kept up manual maintenance with his coworkers when the Guro industrial complex equipment stopped during the Great Blackout. Minh's son Pham Van Tuan wrote down the tools and their return records, and his grandson Pham Van Loc deciphered those records in Vietnam. In 2109 Pham Van Loc came to Guro with his son Pham Van Duc and checked the records against the equipment on site.
 - Languages: Vietnamese for daily life, Korean for work instructions, Chinese for numbers only
 - Occupation: Mechanic
-- Affiliation: Free City (Guro-gu). Surviving dormitory shift ledger. Listed as a subcontractor with the Southwest Engineers
+- Affiliation: Free City (Guro-gu). Surviving dormitory shift ledger. Listed as a subcontractor with the Southwest conscript maintenance crews
 - Position: Night maintenance crew chief inside the barrier gate
 - Conscription history: None. No Vietnamese military record. Not on the Korean mobilization roster
-- Weapons access: Tools of his trade and protective suit. Cutting tools lent by the engineers must be returned
+- Weapons access: Tools of his trade and protective suit. Cutting tools lent by the maintenance crews must be returned
 - Personality: When a gate closes, he counts the bolts before he counts the people
 - Personal ambition: To raise the dormitory household roster to the same standing as citizenship on the Guro Workshop Council
 - Fear: That the dormitory side will be left out of evacuation during barrier drills
@@ -153,13 +153,13 @@ Pham Van Tuan's son Pham Van Loc is born in Vietnam on April 17, 2059, and learn
 - Community of origin: The Guro home-guard Mobilization Remnant. Korean nationality. Choe Il-seok was born in Guro in 2087. He served as an enlisted soldier in the Mobilization Remnant of his day, and after completing his term in 2109 he returned home and checked the shift rosters with his father, Choe Tae-yun. As roster clerk for the Guro and Geumcheon axis, he verifies actual service and return records, and he guards against the rosters being used to justify private armed groups. His great-grandfather, Choe Gyeong-seop, born in 1997, carried a reserve company's roster out during the Great Blackout and sorted those who could still be contacted from those who had fled. His son, Choe Mun-jae, separated the old evacuation lists from the current duty rosters, and his grandson, Choe Tae-yun, cross-checked the shift rosters. After finishing his service in 2109, Choe Il-seok checked actual service and return records together with his father.
 - Languages: Korean
 - Occupation: Patrol (primary). Archivist (secondary, rosters)
-- Affiliation: Government. Clerk of the Guro and Geumcheon axis Mobilization Remnant. Listed as "outside armed group" in the Guro Workshop Council ledger
+- Affiliation: Free City. Clerk of the Guro and Geumcheon conscription rolls. Keeps the keys to the Capital Defense Command remnant armory and gives only basic rifle training. There are no officers
 - Position: Mobilization roster clerk
 - Conscription record: Served as an enlisted soldier in the Mobilization Remnant of his day, completing his term in 2109. The reserve company clerk who carried the roster out during the Great Blackout was his great-grandfather, Choe Gyeong-seop
-- Access to arms: Holds the secondary key to the armory. Service firearms are sealed. Personally carries a service baton
+- Access to arms: Holds the secondary key to the Capital Defense Command remnant armory. Service firearms are sealed. Personally carries a service baton
 - Personality: Will not discuss ammunition with anyone who lacks a service number
 - Personal ambition: To keep the rosters as mobilization ledgers rather than Guro Workshop Council records, preventing them from becoming the basis of private armies
-- Fear: That the deserter platoon will tear up the rosters and turn them into a "Guro warlord" seal
+- Fear: That the deserter platoon will tear up the rosters and put the commanderless Capital Defense Command remnant gear at Guro under a private army's seal
 - Governance and negotiation style: Never keeps a key and a roster in the same place
 - Key relationships: Subcontracting tensions with Pham Van Duc. A grudge with the deserter platoon. Conducts transit inspections on Lin Xiaomei
 - Trigger event: If the rosters are turned to private armies, the southwest barrier gate and the ammunition depot will be locked down at the same time

@@ -17,7 +17,7 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 | Item | Record |
 |---|---|
 | Habitat and movement | The Bogukmun group gathers on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the monsoon and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors. |
-| Food and energy | At the Jamsil lower granary, grain sacks and tins of dry side dishes are passed to the group's side. At the Garak vent, the flashlights and rain capes are on the Elite Squad's side. After the Magok Seed House stops issue, the seed bags on the upper shelves stay tied, and only the lower sacks are in front of the door. |
+| Food and energy | At the Jamsil lower granary, grain sacks and tins of dry side dishes are passed to the group's side. At the Garak vent, the flashlights and rain capes are on the Elite Squad's side. After the Magok Seed House stops issue, the allotment seed bags on the upper shelves (shares of the Government's original stock) stay tied, and only the lower sacks are in front of the door. |
 | Life cycle and upkeep | On ration-day afternoons, people from the Bukhansan Bogukmun corridor side join the lower levels at Garak and Jamsil. When sea wind from the Incheon Trust Theater enters the corridor, the number on the outer stair grows and attendants remain on the inner threshold. When the corridor dries, the Elite Squad stands before the granary doors, and only marker cloth stays tied to the drain handle. |
 | Group behavior | The Group leader stands on the threshold of the corridor junction. The Elite Squad takes the drain and the granary doors. The Scouts stand on the vents and the ration route and face the leader's side. Attendants hold sacks and water cans on the dry tread behind the leader. |
 
@@ -112,7 +112,7 @@ On a monsoon night the water in the drain reaches the knee. The Elite Squad stan
 
 On a ration-day afternoon the Magok Seed House ration watch is at the Jamsil lower granary. The Scouts fill the space before the door, and grain sacks and tins of dry side dishes are inside the door. The watch calls the names of the waiting people from the upper level. The people whose names are called stand on the stair, and the sacks are on the Scouts' side.
 
-The Yunsaeron side stands in front of the corridor door after the Magok Seed House hands the seed-bag issue list to the ration watch. The bags written on the list are at the morning door, and the remaining bags are tied on the upper shelves. The Group leader looks toward the list from the threshold of that door.
+The Yunsaeron side stands in front of the corridor door after the Magok Seed House hands the allotment seed-bag issue list to the ration watch. The bags written on the list are at the morning door, and the remaining bags are tied on the upper shelves. The Group leader looks toward the list from the threshold of that door.
 
 On a day when the corridor is dry, the drain floor is exposed and marker cloth remains on the handle. The Elite Squad and the Scouts stand together before the door of the Garak lower granary. One shift of the Anguk Order corridor watch is on the stair outside the stretch and shines flashlights on the door. The waiting line runs up that stair.
 

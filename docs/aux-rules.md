@@ -33,6 +33,8 @@
 
 **조직 표기 매핑**(검증자 결함 3): 판독되는 산문의 옛 조직명은 위 세력 표기명으로 치환한다. 한국어: 수문국·규격맹·여의도출자연합회→자유도시, 태욱그룹·성하그룹·성하전자·동방사→아크, 대한민국정부·중앙정보부·안국총림·환적국·신내운수·흰십자단·아관사→정부. 영어: Floodgate State/Bureau·Standards League·Yeouido Investment Federation/Alliance·The Sluice·The Gauge→Free City, Taeuk Group·Seongha Group/Electronics·Jeongdong Labor Federation/Federation·Registry/Roster/Myeongbu Church·Eastern Command→Arc, Government of the Republic of Korea·Central Intelligence Agency/Bureau·Anguk Grand Monastery/Order·Transshipment State/Bureau·Sinnae Transport·White Cross (Order)·Russian Legation Command·Achasan Gate·Agwansa→The Government.
 
+> v4 덮어쓰기(2026-11-15, `CANON-BIBLE.md` 2.5절): 동방사는 아크에 그대로 둔다. 다만 아크에는 장교단과 군 계급이 없으므로, 동방사는 장교단·중화기·공장이 없는 소총 무장 세습 경비 조직이며 직제는 경비 책임자(세습), 부책임자, 경비조장, 경비대원이다. 흰십자단은 정부에 남지만 의사가 없는 응급 처치·이송 조직이며 직제는 단장, 응급처치원, 이송원뿐이다. 이 줄의 치환 기록은 W5-25 당시 스크립트가 한 일의 기록으로 남긴다.
+
 **조사·관사 교정**(3차 결함 4): 자유도시·정부·아크는 모두 받침 없는 말이므로 와/를/가/는/로를 쓴다(과/을/이/은/으로 금지), 영어는 "an Arc"·"The Government"(관사 흡수)·"a Free City". 재적재 단언으로 위반 0건 검증(3차 수정: ko 5건·en 3건 = 8건 교정 — 자유도시은·정부은×2·자유도시과·정부이, an The Government·a Arc×2). 인물 이름과 충돌하는 裸어(태욱·Taeuk)는 매핑 표에서 제외하고 행 규칙으로만 처리한다(person-0057).
 
 ## 2. 표별 결정
@@ -49,7 +51,7 @@
 ### 050 — state 열 전수(1차 적용)
 
 - `state_id`/`state_name`/`state_name_ko`(모두 NOT NULL): 확정 매핑으로 세력값(999행). 그 행 스스로가 서울 구를 밝히는 경우(직함·직위에 25개 구 이름 토큰이 정확히 하나)는 공작령값(15행: 관악구 2, 서초구 3, 서대문구 2, 강남구·마포구·노원구·광진구·동작구·중구·성동구·용산구 각 1). 이일섭(person-0998)은 바이블 §6 [승인] "관악 공작"에 따라 관악구. 유지 8행(S00 4, `polity:daejeon` 4).
-- 텍스트 예외(바이블 §6 [승인]과 §4 금지 어휘만, 새 사실 창작 없음): 이일섭 position → "관악 공작 · 제1분공방 이씨 가문 후계", 고예진 title → "아크의 교주/Hierophant of the Arc", 지연희 title → "고예진의 경호원", 조재표 낭인 문구 → 090 기존 표기 "귀환 일행 지휘자/Leader of the Returning Party", person-0057 title → "Arc 생명안전 연구책임자"(裸어 태욱 행 규칙). 성직 어휘(당회장·장로·권사·집사, 영문 Moderator·Myeongbu Church)는 제거: 대체 문구가 소유자 판단(Q22·Q23)에 남아 있으므로 빈 값(직함·직위) 또는 기존값 "없음/None"(계급). 해당: person-0086, 0088, 0089, 0094, 0095, 0096, 0104, 0105, 0108.
+- 텍스트 예외(바이블 §6 [승인]과 §4 금지 어휘만, 새 사실 창작 없음): 이일섭 position → "관악 공작 · 제1분공방 이씨 가문 후계", 고예진 title → "아크의 교주/Hierophant of the Arc", 지연희 title → "고예진의 경호원", 조재표 낭인 문구 → 090 기존 표기 "귀환 일행 지휘자/Leader of the Returning Party", person-0057 title → "Arc 생명안전 연구책임자"(裸어 태욱 행 규칙). 성직 어휘(당회장·장로·권사·집사, 영문 Moderator·Myeongbu Church)는 제거: 대체 문구가 소유자 판단(Q22·Q23)에 남아 있으므로 빈 값(직함·직위) 또는 기존값 "없음/None"(계급). 해당: person-0086, 0088, 0089, 0094, 0095, 0096, 0104, 0105, 0108. v4 덮어쓰기(2026-11-15): 이일섭은 신경 연결 수술 가문(제1분공방 이씨 가문)의 후계다. person-0057 정호준은 아크가 아니라 자유도시 HC03 마곡생명가의 생명안전 연구책임자로 통일한다.
 - 통치자 직급 110행: 전부 행 유지·정치 소속 열만. 재직함은 확정분(이일섭)만, 나머지는 Q18–Q29 대기로 원문 유지. 행별 조치는 적용 로그 `rulerRows`.
 
 ### 040-wiki-states.sql — `wiki_state` 16행 → 3행
