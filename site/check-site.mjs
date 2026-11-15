@@ -111,7 +111,33 @@ if (process.argv.includes('--write-fragment-baseline')) {
 }
 if (newBroken.length) errors.push(...newBroken.map((entry) => `Broken fragment: ${entry}`));
 
-const perLocale = info.wikiDocs + info.gddDocs + info.states + info.people + info.factions + (info.clans ?? 0) + 5;
+const perLocale = info.wikiDocs + info.gddDocs + info.states + info.people + info.factions + (info.clans ?? 0) + (info.strongholds ? info.strongholds + 1 : 0) + 5;
+// Station strongholds: every station has an EN and a KO page, and every plan image they reference was copied and has alt text.
+if (info.strongholds) {
+  let images = 0;
+  for (const pre of ['', 'ko/']) {
+    const dir = path.join(OUT, pre, 'wiki/strongholds');
+    const pages = fs.existsSync(dir) ? fs.readdirSync(dir, { withFileTypes: true }).filter((e) => e.isDirectory()).length : 0;
+    if (pages !== info.strongholds) errors.push(`${pre || 'en/'}wiki/strongholds: ${pages} station pages, expected ${info.strongholds}`);
+    if (!fs.existsSync(path.join(dir, 'index.html'))) errors.push(`${pre}wiki/strongholds/index.html missing`);
+    (function walkPlans(d) {
+      if (!fs.existsSync(d)) return;
+      for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+        const p = path.join(d, e.name);
+        if (e.isDirectory()) { walkPlans(p); continue; }
+        if (!p.endsWith('.html')) continue;
+        for (const m of fs.readFileSync(p, 'utf8').matchAll(/<img [^>]*src="([^"]*\/strongholds\/[^"]+\.webp)"[^>]*>/g)) {
+          images++;
+          if (!/\balt="[^"]+"/.test(m[0])) errors.push(`stronghold image without alt text: ${path.relative(OUT, p)}`);
+          const rel = m[1].replace(new RegExp(`^${info.base}`), '');
+          if (!fs.existsSync(path.join(OUT, rel))) errors.push(`stronghold image missing: ${m[1]}`);
+        }
+      }
+    })(dir);
+  }
+  if (images !== 2 * (info.strongholdImages ?? 0)) errors.push(`stronghold images referenced ${images}, expected ${2 * (info.strongholdImages ?? 0)} (en + ko)`);
+  console.log(`strongholds: ${info.strongholds} stations per locale, ${images} plan image references checked`);
+}
 if (count.en < perLocale) errors.push(`EN pages ${count.en} < rows ${perLocale}`);
 if (count.ko < perLocale) errors.push(`KO pages ${count.ko} < rows ${perLocale}`);
 if (count.showcase < 1) errors.push('showcase index.html missing');

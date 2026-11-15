@@ -11,6 +11,7 @@ import { spawnSync } from 'node:child_process';
 import { personPage, familyTreeSvg, STR } from './people.mjs';
 import { buildMapData, DISTRICT_FACTION } from './map.mjs';
 import { relationsPage, licensePage } from './relations.mjs';
+import { loadStrongholds, strongholdPages, STRONGHOLD_ROUTE, STRONGHOLD_IMG_DIR } from './strongholds.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, '..');
@@ -49,6 +50,7 @@ const raw = {
     edges: all('SELECT * FROM map_edge ORDER BY sort'), lines: all('SELECT * FROM map_line ORDER BY sort'), landmarks: all('SELECT * FROM map_landmark ORDER BY sort'), rail: all('SELECT * FROM map_rail ORDER BY sort'),
     holdings: all('SELECT * FROM map_holding ORDER BY sort'), underground: all('SELECT * FROM map_underground ORDER BY sort'), mapStates: all('SELECT * FROM map_state'),
   },
+  strongholds: loadStrongholds(all),
 };
 
 // ---- UI strings (the only hand-written text; everything else comes from SQL) ----
@@ -227,6 +229,10 @@ for (const L of [UI.en, UI.ko]) {
   });
 
 
+  // station strongholds (data/sql/130-strongholds.sql): index + one page per station, images from site/assets/strongholds
+  const strongholds = strongholdPages({ data: raw.strongholds, ko: L === UI.ko, g, P, BASE, factions: raw.factions, stations: raw.map.stations });
+  strongholds.pages.forEach((x) => write(`${L.prefix}${x.rel}`, page(x.title, x.content, x.fm)));
+
   // updates
   const byDate = new Map();
   for (const u of updates) { if (!byDate.has(u.date)) byDate.set(u.date, []); byDate.get(u.date).push(u); }
@@ -252,7 +258,7 @@ for (const L of [UI.en, UI.ko]) {
         { text: L.gdd, link: P('gdd/') }, { text: L.showcase, link: showcaseLink, target: '_self' },
       ],
       sidebar: {
-        [P('wiki/')]: [{ text: L.wiki, items: [{ text: L.wikiHome, link: P('wiki/') }, { text: L.factions, link: P('wiki/factions/') }, { text: L.duchies, link: P('wiki/duchies/') }, { text: L === UI.ko ? '영토 지도' : 'Territory Map', link: P('wiki/map/') }, { text: L.people, link: P('wiki/people/') }, { text: STR[L === UI.ko ? 'ko' : 'en'].clanIndex, link: P('wiki/families/') }, { text: L.updates, link: P('wiki/updates/') }, { text: L === UI.ko ? '가신 관계' : 'Retainers', link: P('wiki/relations/') }, { text: 'License', link: P('wiki/license/') }] }, ...wikiGroups],
+        [P('wiki/')]: [{ text: L.wiki, items: [{ text: L.wikiHome, link: P('wiki/') }, { text: L.factions, link: P('wiki/factions/') }, { text: L.duchies, link: P('wiki/duchies/') }, { text: strongholds.title, link: P(STRONGHOLD_ROUTE) }, { text: L === UI.ko ? '영토 지도' : 'Territory Map', link: P('wiki/map/') }, { text: L.people, link: P('wiki/people/') }, { text: STR[L === UI.ko ? 'ko' : 'en'].clanIndex, link: P('wiki/families/') }, { text: L.updates, link: P('wiki/updates/') }, { text: L === UI.ko ? '가신 관계' : 'Retainers', link: P('wiki/relations/') }, { text: 'License', link: P('wiki/license/') }] }, ...wikiGroups],
         [P('gdd/')]: [{ text: L.designDocs, items: [{ text: L.gddHome, link: P('gdd/') }] }, ...gddGroups],
       },
       outline: { level: [2, 3], label: L.onThisPage },
@@ -298,6 +304,17 @@ fs.mkdirSync(path.join(SRC, 'public'), { recursive: true });
 const crestSrc = path.join(REPO, 'public/clan-crests');
 if (fs.existsSync(crestSrc)) { fs.mkdirSync(path.join(SRC, 'public/clan-crests'), { recursive: true }); for (const c of raw.clans) { const p = path.join(crestSrc, `${c.id}.svg`); if (fs.existsSync(p)) fs.copyFileSync(p, path.join(SRC, 'public/clan-crests', `${c.id}.svg`)); } }
 fs.copyFileSync(path.join(HERE, 'assets/favicon.svg'), path.join(SRC, 'public/favicon.svg'));
+// Stronghold plan images (generated WebP, allowlisted): copy only the files the stronghold rows reference.
+{
+  const allow = new RegExp(findAllow(JSON.parse(fs.readFileSync(path.join(REPO, 'artifact-allowlist.json'), 'utf8')), STRONGHOLD_IMG_DIR));
+  const from = path.join(HERE, 'assets', STRONGHOLD_IMG_DIR); const to = path.join(SRC, 'public', STRONGHOLD_IMG_DIR);
+  fs.mkdirSync(to, { recursive: true });
+  for (const r of raw.strongholds.rows) for (const file of [r.img_ground, r.img_under].filter(Boolean)) {
+    if (!allow.test(file)) { console.error(`E_STRONGHOLD_ALLOWLIST: ${file} is outside artifact-allowlist.json`); process.exit(1); }
+    if (!fs.existsSync(path.join(from, file))) { console.error(`E_STRONGHOLD_IMAGE_MISSING: ${file}`); process.exit(1); }
+    fs.copyFileSync(path.join(from, file), path.join(to, file));
+  }
+}
 write('postcss.config.cjs', 'module.exports = { plugins: {} }\n');
 const searchLocales = {
   root: { translations: { button: { buttonText: UI.en.search, buttonAriaLabel: UI.en.search }, modal: { noResultsText: UI.en.noResults, resetButtonTitle: UI.en.reset, footer: { selectText: UI.en.toSelect, navigateText: UI.en.toNavigate, closeText: UI.en.toClose } } } },
@@ -408,5 +425,5 @@ const decodeHtmlAttr = (v) => v.replace(/&quot;/g, '"').replace(/&#39;|&apos;/g,
   console.log(`fragment href normalization: ${rewritten} href(s) rewritten to real ids`);
 }
 
-fs.writeFileSync(path.join(OUT, 'build.json'), JSON.stringify({ title: meta.title, base: BASE, locales: ['en', 'ko'], wikiDocs: raw.docs.length, gddDocs: raw.gddDocs.length, factions: raw.factions.length, clans: raw.clans.length, mapRegions: raw.map.regions.length, mapTitles: raw.map.titles.length, mapStations: raw.map.stations.length, personDetails: raw.details.size, states: raw.states.length, people: raw.people.length, updates: raw.updates.length, showcase, sqlFiles: files }, null, 1));
-console.log(`built ${meta.title} (en + ko): wiki ${raw.docs.length}, gdd ${raw.gddDocs.length}, factions ${raw.factions.length}, states ${raw.states.length}, people ${raw.people.length}; showcase ${showcase} -> ${path.relative(REPO, OUT)} (base ${BASE})`);
+fs.writeFileSync(path.join(OUT, 'build.json'), JSON.stringify({ title: meta.title, base: BASE, locales: ['en', 'ko'], wikiDocs: raw.docs.length, gddDocs: raw.gddDocs.length, factions: raw.factions.length, clans: raw.clans.length, mapRegions: raw.map.regions.length, mapTitles: raw.map.titles.length, mapStations: raw.map.stations.length, personDetails: raw.details.size, strongholds: raw.strongholds.rows.length, strongholdImages: raw.strongholds.rows.reduce((n, r) => n + (r.img_ground ? 1 : 0) + (r.img_under ? 1 : 0), 0), states: raw.states.length, people: raw.people.length, updates: raw.updates.length, showcase, sqlFiles: files }, null, 1));
+console.log(`built ${meta.title} (en + ko): wiki ${raw.docs.length}, gdd ${raw.gddDocs.length}, factions ${raw.factions.length}, states ${raw.states.length}, people ${raw.people.length}, strongholds ${raw.strongholds.rows.length}; showcase ${showcase} -> ${path.relative(REPO, OUT)} (base ${BASE})`);
