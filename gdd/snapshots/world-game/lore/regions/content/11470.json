@@ -173,7 +173,7 @@
             "name": "자생한방병원 목동점",
             "observed_use": "병원",
             "river": "tributary",
-            "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
+            "opening_use": "야전 의무. 수술실을 돌리는 의사 당직이 있다.",
             "how": "관측된 출입구만 쓰고 나머지는 막는다.",
             "role": "support",
             "floors": [
@@ -189,7 +189,7 @@
                 "label": "침상",
                 "state": "occupied",
                 "contents": "자생한방병원 목동점 2층 교대 침상. S01 야전 의무.",
-                "condition": "수술실 대신 커튼 칸. 약품은 자물쇠."
+                "condition": "침상은 커튼 칸으로 나누고 수술실은 의사 당직이 돌린다. 약품은 자물쇠."
               }
             ]
           }
@@ -311,7 +311,7 @@
             "name": "포미즈여성병원",
             "observed_use": "병원",
             "river": "tributary",
-            "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
+            "opening_use": "야전 의무. 수술실을 돌리는 의사 당직이 있다.",
             "how": "관측된 출입구만 쓰고 나머지는 막는다.",
             "role": "support",
             "floors": [
@@ -327,7 +327,7 @@
                 "label": "침상",
                 "state": "occupied",
                 "contents": "포미즈여성병원 2층 교대 침상. S01 야전 의무.",
-                "condition": "수술실 대신 커튼 칸. 약품은 자물쇠."
+                "condition": "침상은 커튼 칸으로 나누고 수술실은 의사 당직이 돌린다. 약품은 자물쇠."
               }
             ]
           },
@@ -959,7 +959,7 @@
             "name": "이대목동병원",
             "observed_use": "병원",
             "river": "tributary",
-            "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
+            "opening_use": "야전 의무. 수술실을 돌리는 의사 당직이 있다.",
             "how": "관측된 출입구만 쓰고 나머지는 막는다.",
             "role": "support",
             "floors": [
@@ -975,7 +975,7 @@
                 "label": "침상",
                 "state": "occupied",
                 "contents": "이대목동병원 2층 교대 침상. S01 야전 의무.",
-                "condition": "수술실 대신 커튼 칸. 약품은 자물쇠."
+                "condition": "침상은 커튼 칸으로 나누고 수술실은 의사 당직이 돌린다. 약품은 자물쇠."
               }
             ]
           },
@@ -3377,7 +3377,7 @@
             "name": "홍익병원",
             "observed_use": "병원",
             "river": "tributary",
-            "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
+            "opening_use": "야전 의무. 수술실을 돌리는 의사 당직이 있다.",
             "how": "관측된 출입구만 쓰고 나머지는 막는다.",
             "role": "support",
             "floors": [
@@ -3393,7 +3393,7 @@
                 "label": "침상",
                 "state": "occupied",
                 "contents": "홍익병원 2층 교대 침상. S01 야전 의무.",
-                "condition": "수술실 대신 커튼 칸. 약품은 자물쇠."
+                "condition": "침상은 커튼 칸으로 나누고 수술실은 의사 당직이 돌린다. 약품은 자물쇠."
               }
             ]
           },
