@@ -1,95 +1,129 @@
 ---
 title: Offices and Ranks
 title_ko: 관직
-model: cpa/claude-opus-5-5; the first version was generated through completion() default tier; the current text was rewritten by the agent by hand
-section_checkpoint: 검수 수정 2차
+model: claude-opus-5-5 (v4 wiki overhaul, factions worker; rewritten by hand from owner directive 07, 2026-11-16)
+section_checkpoint: v4 overhaul pass 1
 ---
 ## Origins of the Titles
 
-The Great Blackout happened about a hundred years ago, around 2026. People live in the subway stations, and only as many survived as the stations could hold.
+People live in subway stations, and only as many survived as the stations could hold. So in Seoul in 2126, the unit of power is the station. Here a station means a subway station together with the fortified ground area above it. The person who holds a station is its stationmaster, and how many stationmasters a person commands is that person's rank.
 
-With communications cut, each shelter chose a leader. At first leaders were elected, but the posts soon became hereditary. Without infrastructure the population could not grow, so people had their children take over the work they had been doing. That custom hardened a vertical class structure.
+Scarcity made children take up their parents' work, and that produced a hardened vertical hierarchy. Families that hold a station hand down the station. Families that hold no station hand down the floor they live on.
 
-## The Three Factions and the Twenty-Five Duchies
+## The Shared Rank Skeleton
 
-Seoul has only three factions: the Government, the Free City, and the Arc. Each district is one duchy, and the twenty-five duchies divide into 14 for the Government, 7 for the Free City, and 4 for the Arc. Place names and stations stay as they are. Only the political ownership above them is split among the factions.
+The Government, the Arc, and the Free City use the same skeleton. Only the name of each rung differs.
 
-| No. | District | Faction | Duchy holder |
+| Stationmasters below | Government | Arc | Free City |
 |---|---|---|---|
-| 1 | Mapo-gu | Government | Senator |
-| 2 | Yongsan-gu | Government | Senator |
-| 3 | Jung-gu | Government | Senator |
-| 4 | Seongdong-gu | Government | Senator |
-| 5 | Gwangjin-gu | Government | Senator |
-| 6 | Dongdaemun-gu | Government | Senator |
-| 7 | Jungnang-gu | Government | Senator |
-| 8 | Seongbuk-gu | Government | Senator |
-| 9 | Jongno-gu | Government | Senator |
-| 10 | Seodaemun-gu | Government | Senator |
-| 11 | Eunpyeong-gu | Government | Senator |
-| 12 | Gangbuk-gu | Government | Senator |
-| 13 | Dobong-gu | Government | Senator |
-| 14 | Nowon-gu | Government | Senator |
-| 15 | Gangseo-gu | Free City | not recorded |
-| 16 | Yangcheon-gu | Free City | not recorded |
-| 17 | Yeongdeungpo-gu | Free City | not recorded |
-| 18 | Guro-gu | Free City | not recorded |
-| 19 | Geumcheon-gu | Free City | not recorded |
-| 20 | Dongjak-gu | Free City | not recorded |
-| 21 | Gwanak-gu | Free City | I Ilseop, Duke of Gwanak |
-| 22 | Seocho-gu | Arc | not recorded |
-| 23 | Gangnam-gu | Arc | not recorded |
-| 24 | Songpa-gu | Arc | not recorded |
-| 25 | Gangdong-gu | Arc | not recorded |
+| 1 (holds one station) | Stationmaster | Stationmaster | Stationmaster |
+| 2 to 4 | Division Chief | Division Chief | Division Chief |
+| 5 to 9 | Bureau Chief | Bishop | Guild Master |
+| 10 or more | Commissioner | Cardinal | Director |
+| Head | President | Hierophant | Chair of the Board |
 
-## The Government: Three Powers on Paper
+At the top in the winter of 2126 stand President Kim Yeongyu of the Government, Hierophant Go Ye-jin of the Arc, and Chair of the Board I Ilseop of the Free City.
 
-The Government rules the 14 districts north of the Han River. On paper it keeps ministries representing the three branches of the Republic of Korea and a multiparty system. In practice there are only two parties, the OMO Party and the Claw Party. The reality is modern feudalism.
+## How Stationmasters Are Counted
 
-The Government north of the river still holds elections. Every one of them produces the same answer, and people call that democracy. What each ministry actually does is not known.
+- A person who holds one station is a stationmaster. A station here includes both the subway station and the fortified ground area above it.
+- Every rung above that counts the **total** number of stationmasters below. How many division chiefs a person commands does not matter. Someone who commands three division chiefs with nine stationmasters between them is not on the ten-stationmaster rung.
+- Losing a station lowers the count of stationmasters below, and the rank falls with it. Gaining a station raises it. The ten-stationmaster rung, however, cannot be reached by numbers alone.
 
-## The Government: Senators and Duchies
+## The Ten-Stationmaster Rung Is Appointed
 
-The National Assembly member elected in each district holds that district's duchy. The title of these holders is Senator. The Government has 14 duchies, and each Senator holds one district. A Senator's term and the way the seat passes on are not recorded.
+Commanding more than ten stationmasters does not by itself make a person a commissioner, a cardinal, or a director. The ten-stationmaster rung is filled by appointment.
 
-## The Government: The President for Life
+| Faction | Ten-stationmaster rung | Appointed by | Method |
+|---|---|---|---|
+| Government | Commissioner | The President | Appointment |
+| Arc | Cardinal | The Hierophant | Ordination |
+| Free City | Director | The Board | Appointment |
 
-The Senators gather candidates from among themselves and produce the President. The President serves for life. The method can be compared to the prince-electors who chose the emperor of the Holy Roman Empire. How a successor is chosen when the presidency falls vacant is not known.
+Some people qualify and are never appointed. Such a person commands ten or more stationmasters and still holds the title of the rung below. This becomes a seed of conflict inside the faction.
 
-## The Government: The Ledger and Its Citizens
+## Informal Standing Among Division Chiefs
 
-Since the collapse, the Government recognizes as citizens only the people recorded in its own ledger. These citizens are serfs in all but name. People carry on the work their parents did, and that is how vertical classes formed.
+Division chiefs are many and share one title. So among them there is an informal order apart from the official title. It is set by two things.
 
-The Government treats the entire south bank of the Han as barbarian land beyond a wall. People north of the river think of the far bank as a place where barbarians live.
+1. The number of stationmasters commanded. A division chief with four stands above one with two.
+2. The value of the stations commanded. When the numbers are equal, the one with more valuable stations stands higher.
 
-## The Free City: Cities Without a King
+## The Value of a Station
 
-The Free City lies in the 7 districts southwest of the Han. It isn't a single power. Like the poleis of ancient Greece, it is a set of independent city-states. Each city is its own power and holds its own duchy. There is no king.
+| Measure | Higher | Lower |
+|---|---|---|
+| Transfer lines | A transfer station with many lines | A station on a single line |
+| Depth | A station with deep platforms | A station with shallow platforms |
+| Surface or underground | An underground station | A surface station whose platforms sit above ground |
 
-Most residents are skilled hands who live by their work. Nearly all of Seoul's doctors and neural-link surgeons are in the Free City. The Free City's weapons are people and food, and its doctors let it hold out longest. There was no way to judge whose skills were greater, so they never chose a leader. In 2126 these cities are called the Union as a group.
+The master of a surface station is the lowest of all stationmasters. A surface station has no deep level to close off with shutters, and it lies open to cold, wind, and attack from the air. Why deep stations are valuable is explained in [Residence Layers and Class](/wiki/Residence-Layers-and-Class/).
 
-## The Free City: The Duke of Gwanak
+## Government Titles
 
-I Ilseop is the Duke of Gwanak and holds the duchy of Gwanak-gu. Gwanak is one of the Free City's seven duchies. The holders of the other six cities and their titles are not recorded.
+| Title | Stationmasters below | How it is reached |
+|---|---|---|
+| Stationmaster | 1 | Holding a station |
+| Division Chief | 2 to 4 | Number of stationmasters commanded |
+| Bureau Chief | 5 to 9 | Number of stationmasters commanded |
+| Commissioner | 10 or more | Appointed by the President |
+| President | Head | Kim Yeongyu |
 
-## The Arc: Clan Government
+On paper, the Government keeps the ministries and elections of the Republic of Korea. The northern Government still holds elections. Every time, the same answer comes out. The President serves for life. The real order of rank follows the table above, by the number of stationmasters commanded.
 
-The Arc lies in the 4 Gangnam districts: Seocho-gu, Gangnam-gu, Songpa-gu, and Gangdong-gu. It split off from the Free City. It is ruled by Shia-style clan government.
+## Arc Titles
 
-Believers replace parts of their bodies with machines. This is baptism. In the Arc, faith is counted by the number of implanted body parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. The Arc replaced every earlier religion.
+| Title | Stationmasters below | How it is reached |
+|---|---|---|
+| Stationmaster | 1 | Holding a station |
+| Division Chief | 2 to 4 | Number of stationmasters commanded |
+| Bishop | 5 to 9 | Number of stationmasters commanded |
+| Cardinal | 10 or more | Ordained by the Hierophant |
+| Hierophant | Head | Go Ye-jin |
 
-## The Arc: The Hierophant
+The faithful call the Hierophant the Messiah. In the Arc, faith is counted by the number of implanted parts. Rank, however, is set by the number of stationmasters commanded, not by the number of parts.
 
-Go Ye-jin is the Hierophant of the Arc. Believers call her the Messiah. Go Ye-jin grew up in the Free City.
+## Free City Titles
+
+| Title | Stationmasters below | How it is reached |
+|---|---|---|
+| Stationmaster | 1 | Holding a station |
+| Division Chief | 2 to 4 | Number of stationmasters commanded |
+| Guild Master | 5 to 9 | Number of stationmasters commanded |
+| Director | 10 or more | Appointed by the Board |
+| Chair of the Board | Head | I Ilseop. The I family holds it from generation to generation |
+
+The people of the Free City hold that refusing to be ruled is freedom. So by rank, I Ilseop and his family are directors like any other. But because people want the I family to lead them, and because the I family does in fact act as their leader, the I family holds the office of Chair of the Board generation after generation. Details are in "The Contradiction of the Free City" in [The Three Factions of Seoul](/wiki/Sixteen-States/).
+
+## Ranks in Functional Bodies
+
+Apart from station rank, bodies that carry out particular work have their own ranks.
+
+| Body | Faction | Ranks |
+|---|---|---|
+| Officer corps | Government | Military ranks. The officer class exists only in the Government |
+| White Cross Corps | Government | Head of corps, first-aid worker, transport worker. A first-aid and transport body with no doctors |
+| Dongbangsa | Arc | The Arc's hereditary rifle guard. Its commander is Bae Ujin |
+| Arc priests | Arc | Who they are is undecided |
+
+Why doctors and officers are found in only one faction each is undecided.
+
+## People Without a Station
+
+Everyone who does not hold a station is a commoner. Commoners have no rank title, and the floor they live on is their standing. The highest place among commoners belongs to those who live on the ground floor. Above ground, the higher the floor, the lower the standing. Details are in [Residence Layers and Class](/wiki/Residence-Layers-and-Class/).
+
+## People Who Go Over to Another Faction
+
+Rank holds only inside its own faction. Whatever rank a person held at home, going over to another faction means losing their assets and territory and becoming one of the lowest class. The faction that takes them uses their skill but never raises their standing. Details are in [Human Resource Movement](/wiki/Human-Resource-Movement/).
 
 ## Table of Common Titles
 
-| Faction | Duchy level | Head of faction |
-|---|---|---|
-| Government | Senator | President for Life |
-| Free City | Duke of Gwanak (I Ilseop). Other cities not recorded | None |
-| Arc | not recorded | Hierophant |
+| Rung | Government | Arc | Free City |
+|---|---|---|---|
+| 1 | Stationmaster | Stationmaster | Stationmaster |
+| 2 to 4 | Division Chief | Division Chief | Division Chief |
+| 5 to 9 | Bureau Chief | Bishop | Guild Master |
+| 10 or more | Commissioner | Cardinal | Director |
+| Head | President | Hierophant | Chair of the Board |
 
-## Succession
-
-A Government Senator is decided by the district's election, and the President is produced by the Senators from among themselves. The President serves for life. Work passes from parents to children. How Free City duchies pass on and how the Hierophant's seat passes on are not known.
+The common body of the Free City is called the Board.

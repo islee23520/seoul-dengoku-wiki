@@ -1,6 +1,6 @@
 ---
 model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
-section_checkpoint: W3-A patch: faction examples
+section_checkpoint: v4 overhaul pass 1 (factions)
 ---
 
 **A. Purpose of the Values Scale**
@@ -54,7 +54,7 @@ The five desire scales are longing, possessiveness, risk, display and duration. 
 
 **A. Criteria for Organizational Values**
 
-Organization values were likewise built on the **same ten axes** as persons. The numbers were scored against the current charter, council majorities, and ledger practice. Within the Government, the authority number an individual Senator carried could differ from the authority number of the Government itself, and it was precisely in that difference that issues budded.
+Organization values were likewise built on the **same ten axes** as persons. The numbers were scored against the current charter, the decisions of common bodies such as the Board, and ledger practice. Within the Government, the authority number an individual commissioner carried could differ from the authority number of the Government itself, and it was precisely in that difference that issues budded.
 
 <a id="조직-정책-8칸"></a>
 
@@ -67,7 +67,7 @@ Organization policies have nine categories: war, migrants, water, labor, records
 | Slot | Choices | What it looked like in Seoul |
 |---|---|---|
 | War | Defense / limited war / preemption | Garrison only / protection army / preemptive occupation |
-| Migrants | Expulsion / quarantine admission / citizenship | Gate registers |
+| Migrants | Sending back / admission as the lowest class / ransom exchange | Gate registers, family hostages |
 | Water | Contract / minimum line / hostage | Cutoff sanctions |
 | Labor | Forced service / contract / civic service | The military-household register |
 | Records | Closed / cross-verified / fully public | Wills and ledgers |
@@ -116,6 +116,8 @@ Values stood for the practice the current majority followed.
 
 | Faction | Salient axes | Practice at the opening |
 |---|---|---|
-| Government | Authority (command), qualification (heredity) | Recognizes as citizens only those entered in its registers. Trades pass from parents to children. The President serves for life. |
-| Free City | Decentralization (living-sphere partition) | Each city holds its own power; there is no king. Goods and skills are exchanged, and doctors and food let it hold out. |
-| Arc | Authority (Hierophant and families) | Rule runs through families, and believers receive baptism. |
+| Government | Authority (command), qualification (heredity) | Recognizes as citizens only those entered in its register. Trades pass from parents to children. Rank is set by the number of stationmasters commanded, and the President appoints commissioners. The President serves for life. |
+| Free City | Decentralization (living-sphere partition), authority (toward equality and consensus) | Holds that refusing to be ruled is freedom. The Board appoints directors. Even so, the I family holds the office of Chair of the Board generation after generation. Doctors and food let it hold out. |
+| Arc | Authority (the Hierophant) | The Hierophant ordains cardinals, and believers receive baptism. It holds a monopoly on ancient data-center software. |
+
+All three factions take in people from another faction as the lowest class. They use the skills and never raise the standing. So even a faction with a high openness value finds it hard to go beyond "admission as the lowest class" in its migrant policy. Details are in [Human Resource Movement](/wiki/Human-Resource-Movement/).
