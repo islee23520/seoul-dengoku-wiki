@@ -32,7 +32,7 @@ WORKS_EN = {
 }
 ARC_WORKS_EN = {
     4: 'Deep-level seal: surface entrances blocked and camouflaged, digging down below the deep tunnels and machine rooms, no light or heat let out at the surface',
-    5: 'Passages that join the deep lines into one mass, few and narrow passages to the outside, a shared reserve in the last-stand zone (data centre, sanctuary)',
+    5: 'Passages that join the deep lines into one mass, few and narrow passages to the outside, a shared reserve in the last-stand zone',
 }
 FACIL_EN = {
     1: 'Water drums, a first-aid corner, one shared kitchen',
