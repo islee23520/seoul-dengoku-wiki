@@ -2,6 +2,7 @@
   "schema": "seoul-station-control.v1",
   "baseline": "surface-territory",
   "description": "역 점령은 지표 영토와 독립된 원장이다. 개막 초안은 역 좌표의 지표 영토를 복사하고, 이후 변경은 overrides의 명시적 ControlDelta로만 반영한다.",
+  "v4_status": "polityIds·primary의 S 식별자는 v4 이전 개막 국가다. v4(2026-11-16)의 세력은 정부(government)·자유도시들(free-city)·아크(arc) 셋이며, 역을 가진 사람이 역장이고 산하 역장 수로 계급이 정해진다. 역별 세 세력 재배정은 아직 하지 않았다.",
   "overrides": [
     {
       "id": "SEOUL-2126-OPENING",

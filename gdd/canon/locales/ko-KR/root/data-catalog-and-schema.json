@@ -286,7 +286,7 @@
           "국가 식별자",
           "`state`",
           "문자열",
-          "`S00` 또는 `S01`–`S16`",
+          "`government`·`free-city`·`arc` 또는 무소속 `independent`",
           "예",
           "국가 원장"
         ],
@@ -460,7 +460,7 @@
           "`state`",
           "`state_id`",
           "`capital_station_id`",
-          "`S01`–`S16`, 개막 국가 16개"
+          "`government`·`free-city`·`arc`, 개막 세력 3개(v4)"
         ],
         [
           "`organization`",

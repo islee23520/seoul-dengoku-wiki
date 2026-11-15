@@ -3595,10 +3595,10 @@
     },
     {
       "name": "배우진",
-      "title": "사령관",
+      "title": "동방사 사령관",
       "stage": "주요",
-      "state": "S05",
-      "state_name": "동방사",
+      "state": "arc",
+      "state_name": "아크 동방사",
       "generation": "opening",
       "source": "proposal",
       "minors": false,
@@ -30949,10 +30949,10 @@
     },
     {
       "name": "이일섭",
-      "title": "제1분공방 이씨 가문 후계",
+      "title": "이사회장",
       "stage": "S1",
-      "state": "S02",
-      "state_name": "규격맹",
+      "state": "free-city",
+      "state_name": "자유도시",
       "generation": "opening",
       "source": "proposal",
       "minors": false,
@@ -31233,7 +31233,7 @@
     },
     {
       "name": "김연규",
-      "title": "온민의 수장",
+      "title": "대통령",
       "stage": "주요",
       "state": "S06",
       "state_name": "대한민국정부",
@@ -31265,10 +31265,10 @@
     },
     {
       "name": "민웅기",
-      "title": "대전 군주",
+      "title": "이사회장 측근",
       "stage": "S1",
-      "state": "polity:daejeon",
-      "state_name": "대전",
+      "state": "free-city",
+      "state_name": "자유도시",
       "generation": "opening",
       "source": "proposal",
       "minors": false,
@@ -31390,12 +31390,12 @@
       "desire": { "갈망": 20, "독점": 10, "위험": -40, "과시": -30, "지속": 50, "지향": "이성", "결합": "계약동거" }, "locked": false
     },
     {
-      "name": "지연희", "title": "독립 전령", "stage": "S1", "state": "S00", "state_name": "무소속", "generation": "opening", "source": "proposal", "minors": false,
+      "name": "지연희", "title": "교주 측근", "stage": "S1", "state": "arc", "state_name": "아크", "generation": "opening", "source": "proposal", "minors": false,
       "values": { "권위": -20, "개방": 30, "무력": -30, "물질": 20, "공동": -10, "원칙": -30, "공개": -60, "자격": 0, "분산": 30, "변혁": 40 },
       "desire": { "갈망": 40, "독점": 10, "위험": 30, "과시": -40, "지속": -20, "지향": null, "결합": null }, "locked": false
     },
     {
-      "name": "고예진", "title": "권역 간 계약 자문가", "stage": "S1", "state": "S16", "state_name": "정동노총", "generation": "opening", "source": "proposal", "minors": false,
+      "name": "고예진", "title": "교주", "stage": "S1", "state": "arc", "state_name": "아크", "generation": "opening", "source": "proposal", "minors": false,
       "values": { "권위": -10, "개방": 40, "무력": -40, "물질": 60, "공동": -40, "원칙": 20, "공개": -60, "자격": 30, "분산": 50, "변혁": 20 },
       "desire": { "갈망": 50, "독점": 40, "위험": 60, "과시": -30, "지속": 20, "지향": "양성", "결합": "비독점" }, "locked": false
     },

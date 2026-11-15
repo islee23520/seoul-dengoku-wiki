@@ -6369,7 +6369,7 @@ This document is the canonical source for the game dataset, configuration values
 | --- | --- | --- | --- | --- | --- |
 | Character Identifier | `character_id` | String | Permanent ID | Yes | Character card ledger. Do not use names as join keys |
 | Name | `name` | String | Korean display name | Yes | LORE/characters |
-| State Identifier | `state` | String | `S00` or `S01`–`S16` | Yes | State Ledger |
+| State Identifier | `state` | String | `government`, `free-city`, `arc`, or unaffiliated `independent` | Yes | State Ledger |
 | Values | `values` | Object | −100..100 per axis | Yes | `values-cast.json` |
 | Desires | `desire` | Object | −100..100 per axis, or a locked category value | Yes | `values-cast.json` |
 | Gender | `gender` | String | Female or male | Yes | `gender-cast.json` |
@@ -6398,7 +6398,7 @@ This table is a relation contract prior to implementation. Do not build an actua
 | Table | Primary Key | Main Foreign Keys | Integrity Rules |
 | --- | --- | --- | --- |
 | `person` | `character_id` | `state_id` | Keep IDs after renaming; preserve user-locked gender |
-| `state` | `state_id` | `capital_station_id` | `S01`–`S16`, 16 opening states |
+| `state` | `state_id` | `capital_station_id` | `government`, `free-city`, `arc`, 3 opening factions (v4) |
 | `organization` | `organization_id` | Many-to-many `organization_state` | Keep the IDs of the 37-organization ledger |
 | `station` | `station_id` | `district_id` | All 334 stations; Korean station names are display values |
 | `route_edge` | `(station_a, station_b)` | Two station IDs | Both endpoints must exist; no duplicate undirected edges |
@@ -6460,7 +6460,7 @@ The official wiki `/wiki/world/World-and-Subway-Layers` owns the world descripti
 | --- | --- | --- | --- | --- | --- |
 | 인물 식별자 | `character_id` | 문자열 | 영구 ID | 예 | 인물 카드 원장. 이름을 조인 키로 쓰지 않는다 |
 | 이름 | `name` | 문자열 | 한국어 표시명 | 예 | LORE/characters |
-| 국가 식별자 | `state` | 문자열 | `S00` 또는 `S01`–`S16` | 예 | 국가 원장 |
+| 국가 식별자 | `state` | 문자열 | `government`·`free-city`·`arc` 또는 무소속 `independent` | 예 | 국가 원장 |
 | 가치관 | `values` | 객체 | 축별 −100..100 | 예 | `values-cast.json` |
 | 욕망 | `desire` | 객체 | 축별 −100..100 또는 잠긴 분류값 | 예 | `values-cast.json` |
 | 성별 | `gender` | 문자열 | 여성·남성 | 예 | `gender-cast.json` |
@@ -6489,7 +6489,7 @@ The official wiki `/wiki/world/World-and-Subway-Layers` owns the world descripti
 | 테이블 | 기본키 | 주요 외래키 | 무결성 규칙 |
 | --- | --- | --- | --- |
 | `person` | `character_id` | `state_id` | 이름 변경 뒤에도 ID 유지, 사용자 잠금 성별 보존 |
-| `state` | `state_id` | `capital_station_id` | `S01`–`S16`, 개막 국가 16개 |
+| `state` | `state_id` | `capital_station_id` | `government`·`free-city`·`arc`, 개막 세력 3개(v4) |
 | `organization` | `organization_id` | 다대다 `organization_state` | 조직 37개 원장의 ID 유지 |
 | `station` | `station_id` | `district_id` | 334역 전수, 한국어 역명은 표시값 |
 | `route_edge` | `(station_a, station_b)` | 두 역 ID | 양끝 존재, 중복 무방향 간선 금지 |
@@ -6941,6 +6941,8 @@ The current design version is the SP-1.0.0 single-player build. Actions, titles,
 
 《Seoul Metro Dynasties》 is a character-driven grand strategy RPG that uses the subway network of **post-collapse Seoul** as the framework for territory, logistics, survival, and legitimacy. The collapse began with the Great Blackout around 2026, and that night is recorded in the prologue. The game is set in 2126 CE, a century later. The order the campaign depicts is a line society split by what people watch over and by faith. The player is a nobody. Being a nobody is only one rooting path. Follow the [Online User Journey](/gdd/design/online-user-journey/) for the full sequence. Starting with a small party, you move between stations and lines, building livelihood, relationships, rank, and influence within factions.
 
+v4 canon: there are three factions, the Government (President Kim Yeongyu), the Free Cities (Chair of the Board I Ilseop), and the Arc (Hierophant Go Ye-jin). All three share one rank skeleton set by the number of station masters below a person (Station Master, Headquarters Chief, Bureau Director or Bishop or Cooperative Head, Commissioner or Cardinal or Director). The deeper underground people live, the higher their class, and anyone who crosses to another faction falls to the lowest class. Details are in [Power Structure section 3.0](/gdd/rules/power-and-institutions/).
+
 In combat, each individual soldier''s attack is resolved by weapon, armor, combat skill, physical condition, and mood. Before engagement, the player deploys squads and directs movement, attack targets, fire, and ambushes, but gives no new orders to squads in melee engagement. Retreat is a battle-wide command. Characters aim for natural, realistic proportions, restrained expressions, and low-saturation flat colors, outlines, and hatching. Livelihood, subsistence, production, logistics, marriage, diplomacy, technology transfer, and mobilization are within the design scope of being linked through the same characters and world time, and are not yet implemented.
 
 The strategy screen is a 3D heightmap world map (Decision 10). The combat camera is a 3D free command view with pan, orbit, and zoom, confirmed by the owner. No angle or FOV values are set. There is no pause, slow-down, or speed-up in combat, and the campaign world and other parties continue to flow regardless of the battle. Orders are previewed on squads before engagement and then confirmed, and squads in melee engagement receive no new orders. Retreat is a battle-wide command. There is no command queue. The original bytes of the Odland assets are preserved.
@@ -6980,12 +6982,12 @@ Follows the table of contents of Namu Wiki''s [New Series/Setting](https://namu.
 
 | Document | Description |
 | --- | --- |
-| The Three Factions of Seoul | Three factions. |
-| Offices | Suryeong, Panseo, Gunsu, Hyeongam, and Chamha. A Crusader Kings layer over Joseon and 2026 offices |
+| The Three Factions of Seoul | The Government, the Free Cities, and the Arc, with the station master ladder |
+| Ranks | Station Master, Headquarters Chief, Bureau Director (Bishop, Cooperative Head), Commissioner (Cardinal, Director) |
 | Houses | 2026 Conglomerate Families and the Opening Operating Houses |
 | Operating Houses | HC·HP Ledger |
 | Conscription Remnants and Military Ledgers | Military Manpower Administration Ruins |
-| Powers and Diplomacy | Between States |
+| Powers and Diplomacy | Between the three factions |
 | Outside | Imjin, West Sea, Strait, Duman, and Incheon Corridors |
 | Migrant Corridor | People Who Came from Outside the City |
 
@@ -6995,7 +6997,7 @@ Write in the style of the character sections of Namuwiki''s [Bird That Drinks Bl
 
 | Document | Description |
 | --- | --- |
-| Characters | The Suryeong and the Chamha |
+| Characters | The three leaders and named characters |
 | Character Compendium | Named People |
 | Character Card Contract | Field Rules |
 | Character Registration Template | Empty Field |
@@ -7031,9 +7033,9 @@ Write in the style of the character sections of Namuwiki''s [Bird That Drinks Bl
 | Document | Description |
 | --- | --- |
 
-The Seoul Regional Compendium is authored data and a viewing screen for 427 date-fixed administrative dongs. It does not mean that Unity station interior terrain or the campaign has been implemented.
+The Seoul Regional Compendium is authored data and a viewing screen for 427 date-fixed administrative dongs. It does not mean that Unity station interior terrain or the three-faction campaign has been implemented.
 
-Generated art slots are not yet connected to the runtime screens. Approving and connecting art slots is a separate acceptance condition, and code verification alone does not complete the whole module. The campaign simulation, the aggregated casualty display, and items 13–17 of `ToDo.md` are not yet complete. A design written in a document does not mean it has been implemented.', '# 《서울:전국》
+Generated art slots are not yet connected to the runtime screens. Approving and connecting art slots is a separate acceptance condition, and code verification alone does not complete the whole module. The three-faction campaign simulation, the aggregated casualty display, and items 13–17 of `ToDo.md` are not yet complete. A design written in a document does not mean it has been implemented.', '# 《서울:전국》
 
 인물 시트·계산·영역별 규칙과 상황은 [인물과 영역 설계 길잡이](/gdd/system-design/mechanism-design-index/)에서 읽는다. 승인 범위와 미채택 대안을 구분하는 설계 제안이다.
 
@@ -7042,6 +7044,8 @@ Generated art slots are not yet connected to the runtime screens. Approving and 
 > **붕괴한 서울의 지하철망에서 한 인물의 생업·관계·직위·계승을 영지 운영과 노선 정치로 잇는 4X + RPG. 전투는 병사 한 사람 한 사람을 판정한다.**
 
 《서울:전국》은 아포칼립스 이후 **후세 서울**의 지하철망을 영토·물류·생존·정통성의 골격으로 삼는 인물 중심 대전략 RPG입니다. 약 2026년 대정전으로 붕괴가 시작됐고, 그 밤은 프롤로그에 적혀 있습니다. 게임의 배경은 그로부터 한 세기가 지난 서기 2126입니다. 캠페인이 그리는 질서는 사람이 지켜보는 일과 신앙이 갈라진 노선 사회입니다. 플레이어는 무명 인물입니다. 무명은 착생 갈래 하나다. 전체 순서는 [온라인 유저 여정](/gdd/design/online-user-journey/)을 따른다. 소규모 파티로 시작해 역과 노선을 오가며 생업, 관계, 직위와 세력 내 영향력을 쌓습니다.
+
+v4 정본: 세력은 정부(대통령 김연규), 자유도시들(이사회장 이일섭), 아크(교주 고예진) 셋이다. 세 세력은 산하 역장 수로 정하는 같은 계급 골격(역장, 본부장, 국장·주교·조합장, 청장·추기경·이사)을 쓴다. 지하로 깊이 살수록 상류이고, 다른 세력으로 넘어간 사람은 최하층민이 된다. 상세는 [권력 구조 3.0절](/gdd/rules/power-and-institutions/)에 있다.
 
 전투는 병사 한 사람 한 사람의 공격을 무기·방어구·전투 기술·몸 상태·기분으로 판정한다. 플레이어는 교전 전에 분대를 배치하고 이동·공격 대상·사격·매복을 지시하며 근접 교전에 들어간 분대에는 새 명령을 내리지 않는다. 후퇴는 전투 전체 명령이다. 인물은 자연·실사풍 비례, 절제된 표정과 낮은 채도의 평면 색·외곽선·해칭을 목표로 한다. 생활·생계·생산·물류·혼인·외교·기술 전승·동원은 같은 인물과 세계 시간으로 연결하는 설계 범위이며 구현 완료는 아니다.
 
@@ -7082,12 +7086,12 @@ Generated art slots are not yet connected to the runtime screens. Approving and 
 
 | 문서 | 설명 |
 | --- | --- |
-| 서울의 세 세력 | 세 세력. |
-| 관직 | 수령·판서·군수·현감·참하. 조선·2026 관직에 크루세이더 킹즈 층 |
+| 서울의 세 세력 | 정부·자유도시들·아크와 역장 계층 |
+| 계급 | 역장·본부장·국장(주교·조합장)·청장(추기경·이사) |
 | 가문 | 2026 총수 일가와 개막 운영가문 |
 | 운영가문 | HC·HP 장부 |
 | 징집 잔존과 군 장부 | 병무청 잔해 |
-| 세력과 외교 | 나라 사이 |
+| 세력과 외교 | 세 세력 사이 |
 | 바깥 | 임진·서해·해협·두만·인천 회랑 |
 | 이주민 회랑 | 시외에서 들어온 사람 |
 
@@ -7097,7 +7101,7 @@ Generated art slots are not yet connected to the runtime screens. Approving and 
 
 | 문서 | 설명 |
 | --- | --- |
-| 등장인물 | 수령과 참하 |
+| 등장인물 | 세 지도자와 이름 있는 인물 |
 | 인물 총람 | 이름 있는 사람 |
 | 인물 카드 계약 | 칸 규칙 |
 | 인물 등록 템플릿 | 빈 칸 |
@@ -7133,9 +7137,9 @@ Generated art slots are not yet connected to the runtime screens. Approving and 
 | 문서 | 설명 |
 | --- | --- |
 
-서울 지역 총람은 날짜 고정 행정동 427개의 저작 데이터와 열람 화면입니다. Unity 역 내부 지형이나 캠페인의 구현 완료를 뜻하지 않습니다.
+서울 지역 총람은 날짜 고정 행정동 427개의 저작 데이터와 열람 화면입니다. Unity 역 내부 지형이나 세 세력 캠페인의 구현 완료를 뜻하지 않습니다.
 
-생성 아트 슬롯은 아직 런타임 화면에 연결되지 않았습니다. 아트 슬롯 승인·연결은 별도 수용 조건이며, 코드 검증만으로 모듈 전체가 완료되지는 않습니다. 캠페인 시뮬레이션, 집계 사상자 표현, `ToDo.md`의 13–17 항목은 아직 완료가 아닙니다. 문서에 적힌 설계는 구현 완료를 의미하지 않습니다.');
+생성 아트 슬롯은 아직 런타임 화면에 연결되지 않았습니다. 아트 슬롯 승인·연결은 별도 수용 조건이며, 코드 검증만으로 모듈 전체가 완료되지는 않습니다. 세 세력 캠페인 시뮬레이션, 집계 사상자 표현, `ToDo.md`의 13–17 항목은 아직 완료가 아닙니다. 문서에 적힌 설계는 구현 완료를 의미하지 않습니다.');
 INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Issue-101-Ui-Ux-Decisions', 'design', 'issue-101-ui-ux-decisions', '#101 UI/UX Screen Contract — Confirmed Decisions 1–9', '#101 UI/UX 화면 계약 — 확정 결정 1–9', '', '', 'accepted', 36, 'Issue-101-Ui-Ux-Decisions.md', '# #101 UI/UX Screen Contract — Confirmed Decisions 1–9
 
 - Status: #101 decisions 1–9 confirmed. Later changes to combat objectives are marked in the notes below
@@ -7446,9 +7450,14 @@ Layers can be mixed even within a single sentence. Use the common name of equipm
 - Review copyright separately from the name itself, looking at creative expression, descriptions, sentences, character composition, and distinctive technical depictions within a work. Do not change historical facts or generic martial arts names because of copyright.
 - Real organization names may be used as they are in the factual layer. However, any use that makes a currently existing organization the perpetrator of fictional crimes, massacres, or conspiracies, or that could be mistaken for an official successor, must go through a separate review of rights, reputation, and confusion.
 - Fictional organizations should have names that reveal what they do and what authority they hold. Do not use names that read like criminal successors of real institutions.
-- Titles distinguish modern institution-specific designations from the common tiers. Do not use Joseon-era official titles as an intermediate translation layer.
+- Titles distinguish the modern institution-specific designations of the three factions from the common tiers. The common tiers are the v4 station master ladder (Station Master, Headquarters Chief, Bureau Director or Bishop or Cooperative Head, Commissioner or Cardinal or Director, President or Hierophant or Chair of the Board). Do not use Joseon-era official titles as an intermediate translation layer.
 - Name training and proficiency after the actions actually performed. Do not use organization names or titles as personal abilities, and do not create names or promotion systems for martial arts, techniques, or schools.
 - Keep the display names for competence, proficiency, traits, and body-part status distinct in meaning. Do not group individual combat skill, unit deployment, production work, and administrative authority under the same name or suffix system.
+
+- The faction names are the Government, the Free Cities (one city is a Free City), and the Arc. The Free Cities have no confederation name. The Arc is always written as the Arc and is not translated into another word.
+- The President of the Government is Kim Yeongyu.
+- v4 rank names use real Korean titles, and no new words are coined. English renderings: Station Master, Headquarters Chief, Bureau Director, Commissioner, President, Bishop, Cardinal, Hierophant, Cooperative Head, Director, Chair of the Board.
+- Weapon and equipment codes follow `<faction>-<family><tier>-<serial>` (for example `G-V4-01`). Screens show the Korean name, and the code is used only as a data identifier.
 
 ## GDD and Data Notation
 
@@ -7553,9 +7562,14 @@ Before adding a new term, ask the following.
 - 저작권은 이름 자체보다 작품 속 창작 표현·설명·문장·캐릭터 구성·고유 기술 묘사와 구별해 검토한다. 역사 사실과 일반 무술명을 저작권 때문에 바꾸지 않는다.
 - 실제 조직명은 사실 층에서 그대로 쓸 수 있다. 다만 현재 실존 조직을 창작 범죄·학살·음모의 주체로 만들거나 공식 후신이라고 오인하게 하는 사용은 별도 권리·명예·혼동 검토를 거친다.
 - 창작 조직은 하는 일과 권한이 이름에서 드러나야 한다. 실제 기관의 범죄 후신처럼 읽히는 이름은 쓰지 않는다.
-- 직책은 현대 기관별 명칭과 공통 티어를 구분한다. 조선 관직을 중간 번역층으로 쓰지 않는다.
+- 직책은 세 세력의 현대 기관별 명칭과 공통 티어를 구분한다. 공통 티어는 v4 역장 계층(역장, 본부장, 국장·주교·조합장, 청장·추기경·이사, 대통령·교주·이사회장)이다. 조선 관직을 중간 번역층으로 쓰지 않는다.
 - 훈련·숙련은 실제 수행하는 행동으로 명명한다. 조직 이름이나 직책을 개인 능력으로 사용하지 않으며 무공·초식·유파의 이름과 승급 체계를 만들지 않는다.
 - 역량·숙련·특성·부위 상태의 표시명은 각각의 의미를 구분한다. 개인 전투 기량, 부대 배치, 생산 작업과 행정 권한을 같은 이름이나 접미사 체계로 묶지 않는다.
+
+- 세력 이름은 정부, 자유도시들(도시 하나는 자유도시), 아크다. 자유도시들에는 연합 이름이 없다. 아크는 ''아크''로 적고 다른 말로 옮기지 않는다.
+- 정부 대통령은 김연규다.
+- v4 계급 이름은 실제 한국어 직함을 쓰고 새 말을 만들지 않는다. 영문 표기는 역장 Station Master, 본부장 Headquarters Chief, 국장 Bureau Director, 청장 Commissioner, 대통령 President, 주교 Bishop, 추기경 Cardinal, 교주 Hierophant, 조합장 Cooperative Head, 이사 Director, 이사회장 Chair of the Board다.
+- 무기·장비 코드는 `<세력>-<계열><단계>-<일련>`을 따른다(예: `G-V4-01`). 화면에는 한국어 이름을 보이고 코드는 데이터 식별자로만 쓴다.
 
 ## GDD·데이터 표기
 
@@ -7680,7 +7694,7 @@ If the character chosen as parent is alive, that relationship is created in the 
 
 The six starting presets are **difficulties (what is missing)**. They do not replace identity.
 
-Order: incarnation (who you are) → preset (what you start with). Example: after incarnating as the son of a Guro warlord, you choose the "Deserter Platoon" scarcity. The "commander" in the preset table is a role within the party, not a blank body made outside the world.
+Order: incarnation (who you are) → preset (what you start with). Example: after incarnating as the son of a conscript who maintains leftover Capital Defense Command equipment in Guro, you choose the "Deserter Platoon" scarcity. Guro has no commanders, so conscripts maintain the equipment and only hold their base. To pick the preset table "commander" on the Free City side, incarnate as an officer who came over from the Government. The "commander" in the preset table is a role within the party, not a blank body made outside the world.
 
 If the bloodline or affiliation from incarnation conflicts with a starting preset''s long-term rules, incarnation wins. The conflict is recorded in the ledger as a single line. This document does not modify the preset table.
 
@@ -7858,7 +7872,7 @@ The 12 screens of Decision 6 in `Intent.md` are UI/UX mockup targets and corresp
 
 시작 프리셋 여섯 종은 **난이도(무엇이 없는가)** 다. 신분을 대신하지 않는다.
 
-순서: 착생(누구인가) → 프리셋(무엇으로 시작하는가). 예: 구로 군벌의 아들로 착생한 뒤 「탈영 소대」 결핍을 고른다. 프리셋 표의 「지휘관」은 파티 안의 역할이지, 세계 바깥에서 만든 빈 몸이 아니다.
+순서: 착생(누구인가) → 프리셋(무엇으로 시작하는가). 예: 구로에서 수방사 잔존 장비를 정비하는 징집병의 아들로 착생한 뒤 「탈영 소대」 결핍을 고른다. 구로에는 지휘관이 없어 징집병이 장비를 정비하고 거점만 지킨다. 프리셋 표의 「지휘관」을 자유도시 쪽에서 고르려면 정부에서 넘어온 장교로 착생한다. 프리셋 표의 「지휘관」은 파티 안의 역할이지, 세계 바깥에서 만든 빈 몸이 아니다.
 
 착생의 혈연·소속이 시작 프리셋의 장기 규칙과 충돌하면 착생이 이긴다. 충돌은 원장에 한 줄로 남긴다. 프리셋 표는 이 문서가 고치지 않는다.
 
@@ -7996,6 +8010,16 @@ This distinguishes the contracts the owner chose from the items whose details ar
 | OD-PRESET | Epiphyte Start Preset Reinterpretation | The interview confirmed 17 items, including keeping identity, reinterpreting only scarcity and pressure, excluding possessed companions, re-consent for expeditions, and sealed transport of disputed assets. The start presets are still the old design proposals and numeric targets. | Canonical-source migration PR. This page does not change the preset numbers. |
 | OD-POV | Campaign POV and Authority UX | The six interview items entered the blueprint through PR #213. What remains is the movement speed proposal (OD-MOVE) in the hero squad document, not an open question about the POV itself. | Campaign POV and Authority |
 
+## v4 Scenario Items Left Undecided
+
+The items below were deferred by the owner as scenario devices (v4 directive, 2026-11-16). Nothing is invented for them; they stay `undecided`.
+
+| ID | Item | Current Status |
+| --- | --- | --- |
+| OD-V4-DOC | Why doctors are only in the Free Cities and officers only in the Government | Undecided. Defection and capture of doctors and officers are open means |
+| OD-V4-JIDEBT | Ji Yeon-hui debt choices | Undecided |
+| OD-V4-ARCPRIEST | Selection of Arc priests | Undecided |
+
 ## Numbers Prohibited
 
 Below are values that the canonical source has locked against creating. Do not guess default values.
@@ -8078,6 +8102,16 @@ Gameplay open items are managed in GP-01 to GP-14 of [Campaign Progression and C
 | OD-SESS | 로컬 우선 Steam 세션·월드 생명주기 | ADR-008에 호스트 세션·복구 열쇠·계보·분기 정책·LAN·멀티플레이 자격과 마지막 참가자 이탈 체크포인트가 이관돼 있다. 구현 완료는 별도다 | [로컬 우선 세션과 계보 체크포인트](/gdd/decisions/adr-008/) |
 | OD-PRESET | 착생 시작 프리셋 재해석 | 인터뷰에서 정체성 유지, 결핍·압박만 재해석, 점유 동료 제외, 원정 재동의, 분쟁 자산 봉인 운송 등 17항을 확정했다. 시작 프리셋은 아직 예전 설계 제안·수치 목표다 | 정본 이관 PR. 이 페이지가 프리셋 숫자를 고치지 않는다 |
 | OD-POV | 캠페인 POV·권한 UX | 인터뷰 6항은 PR #213으로 청사진이 들어왔다. 남은 것은 영웅 분대 문서의 이동 속도 제안(OD-MOVE)이지 POV 자체 미결이 아니다 | 캠페인 POV와 권한 |
+
+## v4 시나리오 미정
+
+아래 항목은 소유자가 시나리오 장치로 미룬 것이다(v4 지시 2026-11-16). 값을 지어내지 않고 `미정`으로 둔다.
+
+| ID | 항목 | 현재 상태 |
+| --- | --- | --- |
+| OD-V4-DOC | 의사가 자유도시에만, 장교가 정부에만 있는 이유 | 미정. 의사·장교의 이탈과 포로는 열린 수단이다 |
+| OD-V4-JIDEBT | 지연희의 빚 선택지 | 미정 |
+| OD-V4-ARCPRIEST | 아크 사제 인선 | 미정 |
 
 ## 수치 금지
 
@@ -8294,7 +8328,7 @@ The same departure splits into five.
 
 1. **Return.** Close out the commission and stamp it in the base ledger.
 2. **Settle.** You may stay at the station where you set out. An abandoned base gets a new chief seated over it.
-3. **Conquer.** Push stations and gates outward from where you stand. This is conquest in the 4X sense.
+3. **Conquer.** Push stations outward from where you stand. Holding one station makes you a station master, and rank rises as more station masters come under you. This is conquest in the 4X sense.
 4. **Wander.** Buy your way along the lines without a base. Drifting is also an expedition.
 5. **Trade.** Hand goods over at a distance and leave your name in another ledger. It may not be a round trip.
 
@@ -8326,7 +8360,7 @@ The ten screens in the reference file `GAME-REFERENCE/codex-ux-refs/seoul-screen
 
 1. **귀환.** 의뢰를 닫고 거점 장부에 찍는다.
 2. **정착.** 나선 역에 남을 수 있다. 버린 거점은 남의 수령이 앉는다.
-3. **정복.** 선 자리를 기준으로 역과 수문을 민다. 4X의 정복이다.
+3. **정복.** 선 자리를 기준으로 역을 민다. 역 하나를 가지면 역장이 되고, 산하 역장이 늘수록 계급이 오른다. 4X의 정복이다.
 4. **방랑.** 거점 없이 노선을 산다. 떠돌이도 원정이다.
 5. **교역.** 멀리 물건을 넘기고 다른 장부에 이름을 남긴다. 왕복이 아닐 수 있다.
 
@@ -8512,7 +8546,7 @@ Organize the prototype reviewed by the owner and the behavior the owner later co
 | Combat Participation | An encounter event creates combat. Only combat in which the player character actually participates displays a battlefield, and it is incompatible with the settlement screen. | Combat in which the player character does not participate proceeds automatically under the same individual rules, and the strategy map shows only the situation and result. Check participant positions, labor reservations, and the result ID, and settle only once. |
 | Situation Transitions | Settlements and combat in which the player participates switch through a single situation entry item. | Normally the current settlement; combat while the player character participates; entry is not possible while the player character is moving. Remote non-participating combat does not change the player character''s situation entry item to combat. |
 | Relationships and Presentation | Character selection is shown with portrait cards fixed to the map and a selection detail panel, and relationships and factions are shown as ledger nodes and directed edges centered on the player character. | Card pan, zoom, and off-screen exclusion preserve map coordinates. Relationships are not generated by inference. The player character''s local marker masks the registered portrait in a circle, and unregistered characters are displayed as unregistered. |
-| Title Data | Provide input locations for the territory, holder, and superior title of each kingdom, duchy, county, and barony, and enter them after the wiki confirms them. | Do not assign nations or administrative districts arbitrarily to title domains. Check for empty ledgers, reference errors, superior-title cycles, and duplicate assignments, and display effective control and title rights separately. |
+| Title Data | Provide input locations for the stations below, the holder, and the appointing authority at each tier of the v4 station master ladder (Station Master, Headquarters Chief, Bureau Director or Bishop or Cooperative Head, Commissioner or Cardinal or Director), and enter them after the wiki confirms them. | Do not assign nations or administrative districts arbitrarily to title domains. Check for empty ledgers, reference errors, superior-title cycles, and duplicate assignments, and display effective control and title rights separately. |
 
 - Selecting a related person from another nation → the player character ID and current location are kept, and a command to a contract partner without command authority is refused.
 - Refuse entry to a settlement while the player character is traveling → after arrival, display only characters at the new location. Looking up members does not increase population or labor reservations.
@@ -8742,7 +8776,7 @@ flowchart LR
 | 전투 참여 | 조우 사건이 전투를 만든다. 본체 실제 참가전만 전장을 표시하며 정착지 화면과 양립하지 않는다. | 본체 미참가전은 같은 개인 규칙의 자동 진행이며 전략맵에서 상황·결과만 본다. 참가자 위치·인력 예약·결과 ID를 검사하고 한 번만 정산한다. |
 | 상황 전환 | 정착지·참가 전투는 하나의 상황 진입 항목으로 전환한다. | 평상시 현재 정착지, 본체 참가 중 전투, 본체 이동 중 진입 불가. 원격 비참가전은 본체 상황 진입 항목을 전투로 바꾸지 않는다. |
 | 관계·표현 | 인물 선택은 지도에 고정된 초상 카드와 선택 상세, 관계·세력은 본체 중심 원장 노드·방향 간선으로 보여 준다. | 카드 팬·줌·화면밖 제외는 지도 좌표를 보존한다. 관계를 추정 생성하지 않는다. 본체 현지 표식은 등록 초상을 원형 마스킹하고 미등록은 미등록으로 표시한다. |
-| 작위 데이터 | 왕국·공작령·백작령·남작령별 영역·보유자·상위 작위 입력 장소를 마련하고 위키 확정 뒤 입력한다. | 국가나 행정구역을 임의 작위령에 배정하지 않는다. 빈 원장·참조 오류·상위 순환·중복 배정을 검사하고 실효 지배와 작위 권리를 별도로 표시한다. |
+| 작위 데이터 | v4 역장 계층(역장·본부장·국장/주교/조합장·청장/추기경/이사)별 산하 역·보유자·임명권자 입력 장소를 마련하고 위키 확정 뒤 입력한다. | 국가나 행정구역을 임의 작위령에 배정하지 않는다. 빈 원장·참조 오류·상위 순환·중복 배정을 검사하고 실효 지배와 작위 권리를 별도로 표시한다. |
 
 - 타국 관계인 선택→본체 ID와 현재 장소 유지, 명령 권한 없는 계약 상대에게 지휘 명령 거절.
 - 본체 여행 중 정착지 진입 거절→도착 뒤 새 소재지의 인물만 표시. 구성원 조회가 인구·노동 예약을 늘리지 않음.
@@ -9691,6 +9725,50 @@ External product source: https://github.com/islee23520/seoul-dengoku/tree/main (
 
 [Parent Contract: Detailed Single-Player Design](/gdd/system-design/singleplayer-design-sp-1-0-0/)
 
+## 3.0 The Three Factions and the Station Master Ladder (v4 canon)
+
+v4 canon (owner decision, 2026-11-16): Seoul has three factions, the Government, the Free Cities, and the Arc. This section takes precedence over sections 3.1 to 3.6 below, over SP-1.0.0, and over older state and title descriptions elsewhere in the GDD. The leaders are President Kim Yeongyu of the Government, Chair of the Board I Ilseop of the Free Cities, and Hierophant Go Ye-jin of the Arc. The three factions share one rank skeleton, and rank is set by the number of station masters under a person. A station means a subway station together with the fortified surface area above it.
+
+| Station masters under the holder | Government | Arc | Free Cities |
+| --- | --- | --- | --- |
+| 1 (owns one station) | Station Master | Station Master | Station Master |
+| 2 to 4 | Headquarters Chief | Headquarters Chief | Headquarters Chief |
+| 5 to 9 | Bureau Director | Bishop | Cooperative Head |
+| 10 or more (total station masters below) | Commissioner | Cardinal | Director |
+| Top | President (Kim Yeongyu) | Hierophant (Go Ye-jin) | Chair of the Board (I Ilseop) |
+
+- The ten-station tier counts the total number of station masters below a person, regardless of how many headquarters chiefs they lead.
+- Informal standing among headquarters chiefs is set by the number of station masters they lead and by the value of their stations.
+- Promotion to the ten-station tier is by appointment. The President appoints Government commissioners, the Hierophant ordains Arc cardinals, and the board appoints Free City directors. A person who qualifies but is not appointed becomes a seed of internal conflict.
+- The Free Cities hold that refusing to be ruled is what freedom means. So I Ilseop and his family are, by rank, effectively directors like any other. But the people of the Free Cities want that family to lead them, and it does lead in practice, so it has held the chair of the board for generations. This is the contradiction of the Free Cities.
+- A station is worth more the more transfer lines it has and the deeper it goes underground. The master of a surface station is the lowest of all station masters.
+- Everyone who holds no station is an ordinary citizen.
+
+### Residential Layers (common to all three factions)
+
+- The deeper underground, the higher the class. Shutters keep intruders out, exits are easy to control and watch, and the ground gives off heat. A person living on the third basement level ranks above one on the first.
+- Above ground, the higher the floor, the lower the class. Upper floors take the cold and the wind and are exposed to air combat, surveillance, and attack, drones included.
+- Among citizens, those who live on the ground floor rank highest.
+- Each faction''s founding loyalists receive underground residence first. They have no special name.
+
+### Movement of People
+
+- Abduction and capture are the core events that move people between factions.
+- Whatever rank a person held at home, moving to another faction strips them of their assets and territory and makes them one of the lowest class.
+- Natives prefer useful people of the lowest class whom they can control over strangers who bring power. The receiving faction uses their skills but never raises their standing. Sabotage, ransom talks, escape, and the jealousy of native lower-class people become sources of conflict.
+- Sabotage and escape by transferred technicians are prevented by holding their families hostage. Rescuing the hostages becomes an event for winning the technician back.
+
+### Cost Structure (v4, owner decision 2026-11-15)
+
+| Faction | Has | Lacks | Result |
+| --- | --- | --- | --- |
+| Government | Large university hospital buildings, the officer corps, heavy weapons, tanks, original seed stock | Medical professionals (Free Cities), weapon software (Arc) | Strong in a head-on fight, but it can give only first aid, so its wounded do not return. Its advanced weapons run fully only with Arc software |
+| Free Cities | Doctors and neural-link medicine, people and food, Capital Defense Command equipment on its territory | The officer corps (Government), medical robot software (Arc), original seed stock (Government) | Basic training under conscription covers rifles and maintenance, but command of tanks and heavy weapons, strategy, and tactics are limited. Its doctors let it hold out longest |
+| Arc | A monopoly on ancient data center software, mechanical bodies | Factories, heavy weapons, hospitals, neural-direct surgery (Free City doctors) | It keeps only a rifle-level minimum defense. Its weapon is the power to switch the hardware of other factions on and off, and using that power breeds distrust of backdoors |
+
+- Why doctors and officers sit on only one side is undecided. Defection and capture of doctors and officers are open means.
+- Unit types, weapon numbering (`<faction>-<family><tier>-<serial>`), and each faction''s tech tree L1 to L5 follow `snapshots/world-game/lore/name-pools/unit-roster.json`. L1 and L2 open with a faction''s own facilities, and from L3 each tier needs one more thing that belongs to someone else (officers, doctors, Arc software, recovered roaming machines).
+
 ## 3.1 State, Institutions, and Legitimacy
 
 Seoul fact: State formation refers to the owner-confirmed contract in canon/contracts/state-formation-contract.json. It does not redefine independent acquisition → state transition, prior enrollment, personal holdings, or the distinction of territory. The tier, position, occupation, and command authority of SP-1.0.0 are each separate authorities. The Six-Jiri Kingdom is a non-holder, and its limited notification right is not expanded into an approval right.
@@ -9740,6 +9818,50 @@ CK3 reference only: depth-verification-20261027.md:1871-1875 confirms, for the c
 외부 제품 원천: https://github.com/islee23520/seoul-dengoku/tree/main (측정 revision 3e3c03349eafaaf88347d119a4bdd0c6d44abc53; 인용은 고정 revision URL 사용). CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다. 해당 설치본의 무결성은 미검증이다. 출처 경로와 식별자는 조사 표기이며 게임 UI 표시명이 아니다.
 
 [상위 계약: 싱글플레이 상세 기획](/gdd/system-design/singleplayer-design-sp-1-0-0/)
+
+## 3.0 세 세력과 역장 계층 (v4 정본)
+
+v4 정본(소유자 확정 2026-11-16): 서울의 세력은 정부, 자유도시들, 아크 셋이다. 이 절은 아래 3.1~3.6절, SP-1.0.0과 다른 GDD 문서의 옛 국가·작위 서술보다 우선한다. 지도자는 정부 대통령 김연규, 자유도시들 이사회장 이일섭, 아크 교주 고예진이다. 세 세력은 같은 계급 골격을 쓰고, 계급은 산하에 둔 역장 수로 정한다. ''역''은 지하철역과 그 위 지상 성채 영역을 함께 이른다.
+
+| 산하 역장 수 | 정부 | 아크 | 자유도시 |
+| --- | --- | --- | --- |
+| 1 (역 1개 소유) | 역장 | 역장 | 역장 |
+| 2~4 | 본부장 | 본부장 | 본부장 |
+| 5~9 | 국장 | 주교 | 조합장 |
+| 10 이상 (산하 역장 합계) | 청장 | 추기경 | 이사 |
+| 최상단 | 대통령 (김연규) | 교주 (고예진) | 이사회장 (이일섭) |
+
+- 10명 단계는 산하 역장 합계로 센다. 거느린 본부장 수와는 상관없다.
+- 본부장 사이의 비공식 급은 거느린 역장 수와 역의 가치로 정해진다.
+- 10명 단계 승급은 임명제다. 정부 청장은 대통령이 임명하고, 아크 추기경은 교주가 서품하며, 자유도시 이사는 이사회가 임명한다. 자격을 갖추고도 임명받지 못한 사람은 내부 갈등의 씨앗이 된다.
+- 자유도시는 지배를 거부하는 것을 자유로 내세운다. 그래서 이일섭과 그 가문도 계급으로는 사실상 같은 이사다. 다만 자유도시 사람들이 그 가문이 이끌어 주기를 바라고 실제로 지도자 역할을 하므로 대대로 이사회장을 맡는다. 이것이 자유도시의 모순이다.
+- 역의 가치는 환승 노선이 많을수록, 지하로 깊을수록 높다. 지상역 역장은 역장 가운데 가장 낮다.
+- 역을 갖지 못한 사람은 모두 일반 시민이다.
+
+### 거주 층위 (세 세력 공통)
+
+- 지하로 깊을수록 상류다. 셔터로 침입을 막고, 출구를 통제하고 감시하기 쉬우며, 지열이 있다. 지하 1층보다 지하 3층에 사는 사람이 상류다.
+- 지상은 높은 층일수록 하층이다. 추위와 강풍을 받고, 드론을 포함한 공중전·감시·공격에 약하다.
+- 시민 가운데서는 지층(지상 1층)에 사는 사람이 가장 높다.
+- 지하 거주권은 각 세력의 개국공신이 먼저 받는다. 이들을 따로 부르는 이름은 없다.
+
+### 인적자원 이동
+
+- 납치와 포획이 세력 사이 인적자원 이동의 핵심 사건이다.
+- 본진에서의 계급과 상관없이 다른 세력으로 옮겨 가면 가진 자산과 영토를 빼앗기고 최하층민이 된다.
+- 원주민은 힘을 가진 이방인보다 통제할 수 있는 ''쓸모 있는 최하층민''을 원한다. 받아 간 세력은 기술만 쓰고 신분은 올려 주지 않는다. 태업, 몸값 협상, 탈출, 원주민 하층민의 질투가 갈등이 된다.
+- 넘어간 기술자의 태업과 탈출은 가족을 인질로 잡아 막는다. 인질 구출은 기술자를 되찾는 사건이 된다.
+
+### 비용 구조 (v4, 소유자 결정 2026-11-15)
+
+| 세력 | 가진 것 | 없는 것 | 결과 |
+| --- | --- | --- | --- |
+| 정부 | 대형 대학병원 건물, 장교층, 중화기, 전차, 원종 씨앗 | 의료기술자(자유도시), 무기 소프트웨어(아크) | 정면 전투는 강하지만 응급 처치까지만 해서 부상병이 돌아오지 않는다. 첨단 무기는 아크 소프트웨어가 있어야 완전히 돈다 |
+| 자유도시 | 의사와 신경 연결 의술, 사람과 식량, 영토 안의 수방사 장비 | 장교층(정부), 의료로봇 소프트웨어(아크), 원종 씨앗(정부) | 징병제 기초군사훈련으로 소총과 정비는 되지만 전차·중화기 지휘와 전략·전술에 한계가 있다. 의사가 있어 오래 버틴다 |
+| 아크 | 고대 데이터센터 소프트웨어 독점, 기계신체 | 공장, 중화기, 병원, 신경 직결 시술(자유도시 의사) | 소총 수준의 최소 방위만 한다. 남의 하드웨어를 켜고 끄는 힘이 무기이고, 그 힘을 쓰면 백도어 불신을 부른다 |
+
+- 의사와 장교가 왜 한쪽에만 있는지는 미정이다. 의사·장교의 이탈과 포로는 열린 수단이다.
+- 병종, 무기 넘버링(`<세력>-<계열><단계>-<일련>`), 세력별 테크트리 L1~L5는 `snapshots/world-game/lore/name-pools/unit-roster.json`을 따른다. L1·L2는 자기 시설로 열고, L3부터는 남의 것(장교, 의사, 아크 소프트웨어, 회수한 로밍 기계)이 하나씩 더 필요하다.
 
 ## 3.1 국가·기관·정통성
 
@@ -11582,6 +11704,13 @@ Succession is not decided by bloodline alone. Candidates are considered in the o
 
 
 
+### RWARFARE-45 Movement of People: Abduction, Capture, and Migration (v4)
+
+Abduction and capture are the core events that move people between factions. A character who moves to another faction loses their assets and territory and becomes one of the lowest class, whatever rank they held at home.
+The receiving faction uses that character''s skills but never raises their standing. Sabotage, ransom talks, escape, and the jealousy of native lower-class people are recorded as events.
+Sabotage and escape by transferred technicians are prevented by holding their families hostage. Rescuing the hostages is an event for winning the technician back.
+Defection and capture of doctors and officers are open means of filling the gaps between factions. Why doctors and officers sit on only one side is undecided.
+
 ## Resolution Order
 
 1. First check the actual route, supplies, authority, and exclusive-contract conflicts. Impossible promises are cut off here.
@@ -11933,6 +12062,13 @@ SP-1.0.0: Every character may hold casus belli and title-right instances, but ho
 ### RWARFARE-44 보상과 위협
 
 
+
+### RWARFARE-45 인적자원 이동: 납치·포획과 이주 (v4)
+
+납치와 포획이 세력 사이 인적자원 이동의 핵심 사건이다. 다른 세력으로 옮겨 간 인물은 본진 계급과 상관없이 가진 자산과 영토를 잃고 최하층민이 된다.
+받아 간 세력은 그 인물의 기술만 쓰고 신분을 올려 주지 않는다. 태업, 몸값 협상, 탈출, 원주민 하층민의 질투를 사건으로 남긴다.
+넘어간 기술자의 태업과 탈출은 가족 인질로 막는다. 인질 구출은 기술자를 되찾는 사건이다.
+의사와 장교의 이탈·포로는 세력 사이 결핍을 메우는 열린 수단이다. 의사와 장교가 왜 한쪽에만 있는지는 미정이다.
 
 ## 판정 순서
 
@@ -85476,7 +85612,7 @@ Status: Proposed. This distinguishes approved rules, selected policies, unadopte
 
 D01 covers a character''s permanent identity and the records of their abilities, skills, and traits. The player acts as one primary character per campaign. NPCs are other characters who use the same action contracts for movement, labor, education, politics, and combat. Being the primary character does not grant anyone else''s body or authority. The primary character, squad leader, combat commander, rights holder, and institutional officer are distinct roles, and one character may hold several of them. States and institutions own the procedures for offices, rights, and property, and a character sheet does not manufacture success for an institutional procedure that has not been filled in.
 
-Abilities, proficiencies, traits, temporary situational modifiers, offices, titles of nobility, possession, effective control, and military command are kept distinct. Holding a public office does not turn an institution''s treasury into personal property or assign every troop to the holder. The Sumun State monarch''s election by contract council and the Central Technology Preservation Institute director''s selection by examination are procedures defined in the setting, not ability-score formulas.
+Abilities, proficiencies, traits, temporary situational modifiers, offices, titles of nobility, possession, effective control, and military command are kept distinct. Holding a public office does not turn an institution''s treasury into personal property or assign every troop to the holder. The President''s appointment of Government commissioners, the Hierophant''s ordination of Arc cardinals, and the board''s appointment of Free City directors are procedures defined in the setting, not ability-score formulas.
 
 ## 2. Player Decisions and Eligibility
 
@@ -85599,7 +85735,7 @@ The use of the numerical alternatives is action and combat calculation, and the 
 
 D01은 인물의 영구 신원과 능력·기술·특성 기록을 다룬다. 플레이어는 한 캠페인에서 한 본체 인물로 행동한다. NPC는 같은 이동·노동·교육·정치·전투 행동 계약을 쓰는 다른 인물이다. 본체라는 이유로 타인의 신체나 권한을 얻지 않는다. 본체·분대장·전투 지휘관·권리 보유자·기관 담당자는 서로 다른 역할이며 한 인물이 여럿을 맡을 수 있다. 국가와 기관은 직위·권리·재산의 절차를 소유하고, 인물 시트가 비어 있는 제도 절차의 성공을 대신 만들어 주지 않는다.
 
-능력, 숙련, 특성, 일시적 상황 보정, 직위, 작위, 점유, 실효 통제, 군사 지휘는 구분한다. 공직을 맡아도 기관 금고가 개인 재산으로 바뀌거나 모든 병력이 배속되지 않는다. 수문국 군주의 계약 회의 선출과 중앙기술보존원 원장의 시험 선발은 설정의 절차이지 능력치 공식이 아니다.
+능력, 숙련, 특성, 일시적 상황 보정, 직위, 작위, 점유, 실효 통제, 군사 지휘는 구분한다. 공직을 맡아도 기관 금고가 개인 재산으로 바뀌거나 모든 병력이 배속되지 않는다. 정부 청장의 대통령 임명, 아크 추기경의 교주 서품, 자유도시 이사의 이사회 임명은 설정의 절차이지 능력치 공식이 아니다.
 
 ## 2. 플레이어의 결정과 자격
 
@@ -88339,22 +88475,14 @@ The latest choice is to let the identity and obligations of a landless organizat
 
 The methods below are the starting settings recorded in the existing design. Do not read a method''s name as an actual candidate roster or a finished election algorithm.
 
-| Nation | Recorded Method | Detailed Inputs Needed |
+| Faction | Recorded Method | Detailed Inputs Needed |
 | --- | --- | --- |
-| Government of the Republic of Korea | Duty-Family Election | Eligible families, candidates, and votes; attribution of duty posts and acting coverage of vacancies |
-| Floodgate State | Election by the Water-Contract Family Representatives'' Contract Council | Valid contracts, representatives, council quorum, and ratification |
-| Transshipment State | Hereditary Succession by the Eldest Child of the Rail Family | Order of eligible children, exceptions for wills and adoption, and handover of the post and keys |
-| Standards League | Guild Council and Apprentice Lineage | Linking council elections to the apprentice lineage; candidate mastery and support |
-| Eastern Command | Hereditary Guard Chief | Family eligibility, takeover of guard command, and subjugation registration |
-| Russian Legation Command | Dual Command of Commander and Garrison Chief | Vacancy targets, joint authority, acting coverage, and the order of handling the two seats |
-| Taeuk Group, Seongha Group, Sinnae Transport | Family Inheritance | Separation of personal shares and licenses from the leader''s post, appointment, and ratification |
-| Yeouido Investment Federation | Council Election by the Investing Families | Separation of share inheritance, representative selection, and chair election |
-| Arc, Anguk Great Monastery | Clergy Election and Mountain Assembly Acclamation | Eligibility, procedure, and takeover of the altar and ledger |
-| White Cross Order | Master''s Designation of a Disciple as Successor | Valid designation, training, and the confirming party |
-| Central Technology Preservation Institute | Examination-Based Selection | Eligibility to sit the exam, results, and takeover of record-access rights |
-| Jeongdong Labor Federation | Direct Election by Union Members | Eligible union members, candidates, and strike-roster authority |
+| Government | The President is at the top (currently Kim Yeongyu). The President appoints commissioners | Presidential succession procedure (undecided), check of the appointee station master count, vacancy proxies |
+| Arc | The Hierophant is at the top (Go Ye-jin). The Hierophant ordains cardinals | Succession procedure for the Hierophant (undecided), check of ordination candidates, vacancy proxies |
+| Free Cities | The Chair of the Board is at the top (held by the I Ilseop family for generations). The board appoints directors | Board composition and voting, succession to the chair (undecided), vacancy proxies |
+| Lower tiers common to all three factions | Station Master, Headquarters Chief, and Bureau Director (Bishop, Cooperative Head) follow the number of station masters below | Recalculation of tier when station ownership changes, record of station value |
 
-The link between the Standards League''s apprentice lineage and its council election, and the vacancy under the Russian Legation Command''s dual system, are confirmed open questions. Do not arbitrarily merge them into a single system just because the wording differs.
+The old per-state leader procedure table was replaced by the v4 three-faction ladder (Power Structure section 3.0). Succession procedures for the President, the Hierophant, and the Chair of the Board are not yet decided.
 
 ## 5. Failure, Interruption, and Information
 
@@ -88518,22 +88646,14 @@ There are no approved numbers for legitimacy scores, exam scores, quorums, actin
 
 아래 방식은 기존 설계에 적힌 시작 설정이다. 방식의 이름을 실제 후보 명부나 완성된 선출 알고리즘으로 읽지 않는다.
 
-| 국가 | 적힌 방식 | 필요한 상세 입력 |
+| 세력 | 적힌 방식 | 필요한 상세 입력 |
 | --- | --- | --- |
-| 대한민국정부 | 당직 가문 선거 | 유권 가문·후보·표와 당직 귀속·공석 대행 |
-| 수문국 | 물 계약 가문 대표 계약 회의 선출 | 유효 계약·대표·회의 성립·인준 |
-| 환적국 | 선로 가문 장자 세습 | 적격 자녀 순서·유언과 양자 예외·직위와 열쇠 인도 |
-| 규격맹 | 길드 평의회와 도제 계보 | 평의회 선출과 도제 계보의 연결·후보 숙련·지지 |
-| 동방사 | 세습 경비 책임자 | 가족 자격·경비 지휘 인수·복속 등록 |
-| 아관사 | 사령관과 수비대장 이원 지휘 | 공석 대상·공동 권한·대행·두 자리의 처리 순서 |
-| 태욱그룹·성하그룹·신내운수 | 가문 세습 | 개인 지분·면허와 수장 직위·임명·인준의 분리 |
-| 여의도출자연합회 | 출자 가문 평의회 선출 | 지분 상속·대표 선정·의장 선출의 분리 |
-| Arc·안국총림 | 신도단 선출과 산중총회 추대 | 자격·절차·제대와 대장 인수 |
-| 흰십자단 | 스승의 후계 제자 지명 | 유효 지명·수련·확인 주체 |
-| 중앙기술보존원 | 시험 선출 | 응시 자격·결과·기록 열람권 인수 |
-| Arc | 조합원 직선 | 유권 조합원·후보·파업 명부 권한 |
+| 정부 | 대통령이 최상단이다(현재 김연규). 청장은 대통령이 임명한다 | 대통령 승계 절차(미정), 임명 대상의 산하 역장 수 확인, 공석 대행 |
+| 아크 | 교주가 최상단이다(고예진). 추기경은 교주가 서품한다 | 교주 승계 절차(미정), 서품 대상 확인, 공석 대행 |
+| 자유도시들 | 이사회장이 최상단이다(이일섭 가문이 대대로 맡는다). 이사는 이사회가 임명한다 | 이사회 구성과 의결, 이사회장 승계(미정), 공석 대행 |
+| 세 세력 공통 하위 단계 | 역장·본부장·국장(주교·조합장)은 산하 역장 수로 정해진다 | 역 소유 변경 때 단계 재계산, 역의 가치 기록 |
 
-규격맹의 도제 계보와 평의회 선출의 연결, 아관사의 이원 체제 공석은 확정 질문이다. 문구가 다르다는 이유로 임의로 하나의 제도로 통일하지 않는다.
+옛 개막 국가별 수장 절차 표는 v4 세 세력 계층으로 대체했다(권력 구조 3.0절). 대통령·교주·이사회장의 승계 절차는 아직 정하지 않았다.
 
 ## 5. 실패·중단·정보
 
@@ -88667,7 +88787,7 @@ Before an action, check in order: the target''s existence and version, feasibili
 
 Claim fabrication is divided into gathering and drafting evidence → composing the claim → recognition of its effect or rejection. Fabrication takes time, and only a structure that checks duration, cost, and risk of detection has been approved. Seoul''s numbers and success determinations are undecided. Completing a fabrication is neither possession nor a transfer of holding rights. If a death, dismissal, occupation, or loss of contact occurs between approval and execution, the remaining work is checked again. Even if it is canceled by a world event or the person in charge dies, materials already consumed and progress already completed are not reversed; only the remaining reservations are released according to the contract.
 
-A grant proceeds through draft → authority and target check → recipient consent → required confirmation or ratification → rights ledger change → operational takeover. One must join the state before receiving a grant, and a head may grant only titles lower than their own. The limit of two directly held duke-tier titles is an existing confirmed value. No new title is created where no actual title ID, domain, or rank exists. The holder is not changed before the required confirmation. If on-site takeover is blocked after confirmation, the result remains as rights held but not recovered, or takeover incomplete.
+A grant proceeds through draft → authority and target check → recipient consent → required confirmation or ratification → rights ledger change → operational takeover. One must join the state before receiving a grant, and a head may grant only titles lower than their own. The old limit of two directly held duke-tier titles was replaced by the v4 station master ladder (the ten-station tier is appointed). No new title is created where no actual title ID, domain, or rank exists. The holder is not changed before the required confirmation. If on-site takeover is blocked after confirmation, the result remains as rights held but not recovered, or takeover incomplete.
 
 An established grant removes the right from the grantor''s list and registers the same title ID to the recipient. Delegation leaves the original holder in place and entrusts only specified operations, signing, or command. Appointment grants public office authority. Buildings, institutional vaults, public stockpiles, and unit command do not transfer automatically unless their inclusion is explicitly stated. Revocation requires contract clauses, evidence of violation, and a confirmation procedure. Unlawful seizure is not a normal grant but a change of control and a rights dispute.
 
@@ -88675,7 +88795,7 @@ Switching the current body, replacing the head of a state or institution, and su
 
 ## 4. Casus Belli, War Score, and Negotiation
 
-Holding a casus belli does not grant authority to declare war, troops, or command. Every war requires a validly registered casus belli at its start. The actor''s authority, the opponent, the target title and domain, the beneficiary, eligibility, cost, objectives, and the effects of attacker victory, defender victory, white peace, surrender, and voiding are all fixed. Restoring a recognized right, supporting another eligible person''s claim, and remedying a breach of an approved higher-level contract are bundles for registration review, not a finished list of casus belli. Personal debts, passage disputes, and water supply cutoffs are not automatically made into grounds for conquest.
+Holding a casus belli does not grant authority to declare war, troops, or command. Every war requires a validly registered casus belli at its start. The actor''s authority, the opponent, the target title and domain, the beneficiary, eligibility, cost, objectives, and the effects of attacker victory, defender victory, white peace, surrender, and voiding are all fixed. Restoring a recognized right, supporting another eligible person''s claim, and remedying a breach of an approved higher-level contract are bundles for registration review, not a finished list of casus belli. Personal debts, passage disputes, and ration cutoffs are not automatically made into grounds for conquest.
 
 When supporting another person''s claim, the beneficiary named in that casus belli is the standard. The attacker is not given all the territory. The new holder and higher-level contracts are checked. A war refers to the casus belli version at the time it began, and if the grounds change, the voiding conditions of that casus belli are explicitly checked. Occupation outside the objectives does not widen the scope of transfer. Effective control, legal confirmation, title rights, public office, and personal property are independent. The transfer of rights at termination does not mean residents'' cooperation, restoration of facilities, or completed integration.
 
@@ -88783,7 +88903,7 @@ The original Basic dependency judgment and the generation of personal combat in 
 
 주장 구성은 근거 수집·작성 → 주장 구성 → 효력 인정 또는 거절로 나뉜다. 조작은 시간이 걸리며 기간·비용·발각 위험을 검사하는 구조만 승인되어 있다. 서울의 수치·성공 판정은 미정이다. 조작 완료는 점유도 보유권 이전도 아니다. 승인과 실행 사이 사망·해임·점령·연락 두절이 생기면 남은 작업을 다시 검사한다. 세계 사건으로 취소되거나 담당자가 죽어도 이미 소비한 물자와 완료한 진척은 되돌리지 않고 남은 예약만 계약에 따라 해제한다.
 
-수여는 초안 → 권한·대상 검사 → 수령자 동의 → 필요한 인준·비준 → 권리 원장 변경 → 운영 인수로 진행한다. 수여 받기 전 국가에 가입해야 하고 수장은 자신보다 낮은 작위만 나눈다. 직접 보유 공작급 둘 제한은 기존 확정값이다. 실제 작위 ID·영역·등급이 없는 곳에 새 작위를 만들지 않는다. 필요한 인준 전에 보유자를 바꾸지 않는다. 인준 후 현장 인수가 막히면 권리 보유·미회복 또는 인수 미완으로 남긴다.
+수여는 초안 → 권한·대상 검사 → 수령자 동의 → 필요한 인준·비준 → 권리 원장 변경 → 운영 인수로 진행한다. 수여 받기 전 국가에 가입해야 하고 수장은 자신보다 낮은 작위만 나눈다. 옛 직접 보유 공작급 둘 제한은 v4 역장 계층으로 대체했다(10명 단계는 임명제). 실제 작위 ID·영역·등급이 없는 곳에 새 작위를 만들지 않는다. 필요한 인준 전에 보유자를 바꾸지 않는다. 인준 후 현장 인수가 막히면 권리 보유·미회복 또는 인수 미완으로 남긴다.
 
 성립한 수여는 수여자의 목록에서 권리를 빼고 수령자에게 같은 작위 ID를 등록한다. 위임은 원 보유자를 남기고 정해진 운영·서명·지휘만 맡긴다. 임명은 공직 권한을 준다. 건물·기관 금고·공공 재고·부대 지휘는 포함 여부가 명시되지 않으면 자동 이전하지 않는다. 회수에는 계약 조항·위반 증거·인준 절차가 필요하다. 불법 강탈은 정상 수여가 아니라 통제 변경과 권리 분쟁이다.
 
@@ -88791,7 +88911,7 @@ The original Basic dependency judgment and the generation of personal combat in 
 
 ## 4. 명분, 전쟁 점수와 협상
 
-명분 보유는 선전포고 권한·병력·지휘권을 주지 않는다. 모든 전쟁은 개시 시 유효하게 등록된 명분을 요구한다. 행위자 권한, 상대, 대상 작위·영역, 수혜자, 자격, 비용, 목표, 공격 승리·방어 승리·백지 강화·항복·무효 효과를 확정한다. 인정된 권리 회복, 적격 타인 주장 지원, 승인된 상위 계약 의무 위반 구제는 등록 검토 묶음이지 완성된 명분 목록이 아니다. 개인 빚·통행 분쟁·급수 중단을 자동 정복 명분으로 만들지 않는다.
+명분 보유는 선전포고 권한·병력·지휘권을 주지 않는다. 모든 전쟁은 개시 시 유효하게 등록된 명분을 요구한다. 행위자 권한, 상대, 대상 작위·영역, 수혜자, 자격, 비용, 목표, 공격 승리·방어 승리·백지 강화·항복·무효 효과를 확정한다. 인정된 권리 회복, 적격 타인 주장 지원, 승인된 상위 계약 의무 위반 구제는 등록 검토 묶음이지 완성된 명분 목록이 아니다. 개인 빚·통행 분쟁·배급 중단을 자동 정복 명분으로 만들지 않는다.
 
 타인의 주장을 지원하면 그 명분에 적힌 수혜자가 기준이다. 공격자에게 모든 영토를 주지 않는다. 새 보유자와 상위 계약을 검사한다. 전쟁은 개시 당시 명분 판본을 참조하며 근거가 바뀌면 그 명분의 무효 조건을 명시적으로 검사한다. 목표 밖 점령은 이전 범위를 넓히지 않는다. 실효 지배·법적 인준·작위 권리·공직·개인 재산은 독립한다. 종결의 권리 이전이 주민 협력·시설 복구·통합 완료를 뜻하지 않는다.
 
@@ -88871,7 +88991,7 @@ Notation rules. Each paragraph of this document carries one of the following.
 
 The Crusader Kings III (hereafter CK3) and Norland records in Chapter 11 are **comparisons against installed scripts, documents, and announcements**, not observations of engine execution. Neither side''s figures have been adopted as Seoul''s coefficients, probabilities, or formulas.
 
-For the numerical limit on grants, the existing **limit of two directly held duke-tier titles** is kept. Costs, durations, and probabilities not yet decided are not filled in with implicit values.
+The old numerical limit on grants, the **limit of two directly held duke-tier titles**, was replaced by the v4 station master ladder. The ten-station tier (Commissioner, Cardinal, Director) is granted only by its appointing authority (the President, the Hierophant, the board). Costs, durations, and probabilities not yet decided are not filled in with implicit values.
 
 ## 1. What This Domain Covers
 
@@ -88881,7 +89001,7 @@ This document restates the already-approved policies below so they can be used i
 
 - The four kinds of draft: a Grant changes the holder of a title''s rights; an Appointment confers public-office authority; a Delegation leaves the original holder in place and entrusts only the stated operation, signing, and command; a Recall is a proposal that requires an existing contract''s recall clause, evidence of breach, and ratification.
 - Order of gates: the holder does not change until the recipient has consented and the state has ratified.
-- Grant limit: a grantor may give out only titles lower than their own, and may directly hold no more than two ducal-rank titles. No title is created where there is no actual title identifier, domain, or rank.
+- Grant limit: a grantor may give out only titles lower than their own, and only the appointing authority (the President, the Hierophant, the board) grants a ten-station tier post. No title is created where there is no actual title identifier, domain, or rank.
 - Membership requirement: to receive a grant from an existing state, the recipient must already be a member of that state.
 - Separation of axes: office, title, effective control, command, and property are different axes, and office tier is only a classification for comparison.
 - Principle of explicit inclusion: buildings, institutional treasuries, public stockpiles, and unit command are not transferred automatically unless their inclusion is stated. Writing "included" is merely a declaration of the needed scope, not proof of the authority to transfer. The ownership, management, use, and command rights of each target, and the valid authority to transfer them, are checked separately. Including an institutional treasury does not turn it into personal property.
@@ -88898,7 +89018,7 @@ No values that convert policy into points, costs, or durations have been approve
 | --- | --- |
 | Principal Character (Player) | Create drafts and propose approval only with a grant authority you actually hold, an office''s signing authority, or valid command authority. |
 | NPCs (all other characters) | They use the same action contract as the player character. The grantor, recipient, proxy, and ratification participants all act within this contract. |
-| Grantor (a member holding grant authority) | Creates the draft. May give out only titles lower than their own, and may directly hold no more than two ducal-rank titles. |
+| Grantor (a member holding grant authority) | Creates the draft. May give out only titles lower than their own, and only the appointing authority (the President, the Hierophant, the board) grants a ten-station tier post. |
 | Recipient | Receives the draft and consents or refuses. Without consent, the draft does not proceed to ratification. |
 | Ratifying Body (varies by state) | Approves or declines according to that state''s ratification procedure. Who this body is has not yet been decided for each state. [Undecided] |
 | Original Holder (Delegator) | Does not lose their rights through a delegation. Entrusts only the operation, signing, and command within the stated scope. |
@@ -88907,7 +89027,7 @@ No values that convert policy into points, costs, or durations have been approve
 | Acting Deputy (a person registered in the institution) | Acts as deputy only for persons and within the scope already registered in that institution. A vacancy alone does not create a deputy; the procedures for filling a vacancy, such as election, succession, or appointment, follow that state''s institutions. |
 | Occupier / Disputed Holder | Actually controls the site. Occupation alone does not confer lawful inheritance, ownership of an institutional treasury, or the cooperation of residents. |
 
-A state name shows only the name of a seat. The state names used in the cases below (e.g., the Government of the Republic of Korea, the Floodgate Bureau, the Transshipment Bureau, the Eastern Office) are seat names already listed in the per-state table of the existing rules; the grantors, recipients, and title identifiers in the cases are placeholders for reading these rules, not approved characters, titles, or quantities. Actual title identifiers, holders, and superior contracts await confirmed wiki input (12.1).
+A state name shows only the name of a seat. The state names used in the cases below (e.g., the Government, the Free Cities, the Arc) are seat names already listed in the per-state table of the existing rules; the grantors, recipients, and title identifiers in the cases are placeholders for reading these rules, not approved characters, titles, or quantities. Actual title identifiers, holders, and superior contracts await confirmed wiki input (12.1).
 
 ## 3. Decisions the Player Actually Makes
 
@@ -88925,7 +89045,7 @@ The action screen distinguishes `Ganeung` (possible), `Seonhaengjogeon Bujok` (i
 
 Whether any action is permitted follows a fixed order of checks: **target existence and version → feasibility such as being alive or not detained → authority → actual location/delivery → resource and exclusive reservation → the other party''s will/institutional procedure**. An action that is physically impossible is never made to succeed through high trust.
 
-**Grant (transfer of title rights)** — The grantor must be a member holding grant authority, may give out only titles lower than their own, and may directly hold no more than two ducal-rank titles. The recipient must already be a member of that state, and the target title identifier and its domain must already exist. No arbitrary title is created where there is no actual title identifier, domain, or rank. The required inputs for a draft are the grantor, the recipient, the state membership status, the target title and version, the grant authority, the superior contract, the rights, obligations, and duration, the ratifying body, and the conditions for handing over relics, documents, and keys.
+**Grant (transfer of title rights)** — The grantor must be a member holding grant authority, may give out only titles lower than their own, and only the appointing authority (the President, the Hierophant, the board) grants a ten-station tier post. The recipient must already be a member of that state, and the target title identifier and its domain must already exist. No arbitrary title is created where there is no actual title identifier, domain, or rank. The required inputs for a draft are the grantor, the recipient, the state membership status, the target title and version, the grant authority, the superior contract, the rights, obligations, and duration, the ratifying body, and the conditions for handing over relics, documents, and keys.
 
 **Appointment (conferring public-office authority)** — Gives the signing, command, and operation authority of a public office. It does not change the title holder. Authority arising from an appointment stops, and only that authority, when the post is lost.
 
@@ -89026,7 +89146,7 @@ D11 owns the framework of grants, appointments, delegations, revocations, and va
 | D06 Movement and Contact | Actual delivery routes for relics, documents, and keys; rechecking delegation expiry before arrival | Travel time and cost formulas |
 | D07 Relationships and Memory | Attribution of relationships and evaluations when a betrayal issue or re-ratification issue is opened | Relationship change functions, increments and decrements, and decay |
 | D08 Houses and Marriage | Facts distinguishing membership records from marriage records | Rules for establishing marriages and their effects |
-| D09 States and Legitimacy | Each state''s ratification procedures and registration of vacancy deputies (awaiting input) | Actual definitions of the institutions of the polities |
+| D09 States and Legitimacy | Each state''s ratification procedures and registration of vacancy deputies (awaiting input) | Actual definitions of the institutions of the three factions |
 | D10 Titles and Casus Belli | Title-right instances, and the distinction between claims and causes | Superior-contract conditions for claims, and registered values and deadlines for causes |
 | D12 Succession and Main Body | The fact of death and the existence of a succession designation | Deciding who the heir is |
 | D13 Assets and Delivery | Transfer of property whose inclusion is explicitly stated, and delivery status | Detailed rules for ownership succession and delivery procedures |
@@ -89040,7 +89160,7 @@ The four cases below are a **design output** that applies the existing rules'' l
 
 ### 10.1 Unaffiliated Recipient Rejected — Eligibility Failure
 
-- **Before**: Grantor A is a member of the Gatekeeper State and holds one real title ID. Recipient B has never joined the Gatekeeper State.
+- **Before**: Grantor A is a member of the Government and holds one real title ID. Recipient B has never joined the Government.
 - **Request**: A creates a grant draft naming B as the recipient.
 - **Event**: The draft passes the target-existence and version steps of the check order, but the affiliation check confirms that B is not a member of that state. Because grants within an existing state can only be received by members, the draft cannot advance to the confirmation stage and ends in rejection.
 - **After**: A''s holdings list and B''s status remain unchanged. Only the fact of rejection and its basis (no affiliation) are recorded. The draft does not remain pending, and B is not automatically enrolled.
@@ -89110,7 +89230,7 @@ The grant cost, delegation duration, revocation deadline, number of vassal evalu
 
 ## 13. Summary
 
-- **What is approved**: the distinction among the four kinds of drafts (conferral, appointment, delegation, revocation); the consent and ratification gates, and the holder remaining unchanged before ratification; the requirement that the recipient be a member of the organization; the limits of lower titles only and two at duke rank; the separation of axes (office, title, effective control, command, property); the principle of explicit inclusion; removal and registration under the same identifier with no copies; the `gwolli boyu·insu miwan` state; the four states of delegation and preservation of the original right; the signatories and substantive clauses of the vassal contract and the three branches of signatory change; the clause, evidence, and ratification requirements for revocation; the betrayal issue when only a relic is revoked; the denial of conferral for unlawful seizure; the denial of automatic creation of vacancies and the allowance of registered acting holders only; the deterministic acceptance order and the invalidity of retransmitting an event identifier; permanent identifiers and explicit collisions; and the separation of the title-holding ledger from the effective-control ledger.
+- **What is approved**: the distinction among the four kinds of drafts (conferral, appointment, delegation, revocation); the consent and ratification gates, and the holder remaining unchanged before ratification; the requirement that the recipient be a member of the organization; lower titles only and appointment for the ten-station tier; the separation of axes (office, title, effective control, command, property); the principle of explicit inclusion; removal and registration under the same identifier with no copies; the `gwolli boyu·insu miwan` state; the four states of delegation and preservation of the original right; the signatories and substantive clauses of the vassal contract and the three branches of signatory change; the clause, evidence, and ratification requirements for revocation; the betrayal issue when only a relic is revoked; the denial of conferral for unlawful seizure; the denial of automatic creation of vacancies and the allowance of registered acting holders only; the deterministic acceptance order and the invalidity of retransmitting an event identifier; permanent identifiers and explicit collisions; and the separation of the title-holding ledger from the effective-control ledger.
 - **Not yet decided**: the title and confirmation inputs, state-specific institutions, actual contracts, war and diplomatic settlement, claim superior contracts, delegated in-progress actions, and the figures and detailed conflict procedures of Chapter 12.
 - This document remains a proposal and does not claim that gameplay has been implemented.', '# D11 수여·위임·회수·봉신 — 독자용 설계 문서
 
@@ -89133,7 +89253,7 @@ The grant cost, delegation duration, revocation deadline, number of vassal evalu
 
 11장의 Crusader Kings III(이하 CK3)와 Norland 기록은 **설치 스크립트·문서·공지에 대한 대조**이며, 엔진 실행 관측이 아니다. 어느 쪽 수치도 서울의 계수·확률·공식으로 채택되지 않았다.
 
-수여의 수치 한도는 기존의 **직접 보유 공작급 작위 둘 제한**을 유지한다. 아직 정하지 않은 비용·기간·확률은 묵시적인 값으로 채우지 않는다.
+수여의 수치 한도였던 옛 **직접 보유 공작급 작위 둘 제한**은 v4 역장 계층으로 대체했다. 10명 단계(청장·추기경·이사)는 임명권자(대통령·교주·이사회)만 준다. 아직 정하지 않은 비용·기간·확률은 묵시적인 값으로 채우지 않는다.
 
 ## 1. 이 도메인이 다루는 것
 
@@ -89143,7 +89263,7 @@ The grant cost, delegation duration, revocation deadline, number of vassal evalu
 
 - 네 가지 초안의 구분: 수여는 작위 권리의 보유자를 바꾸고, 임명은 공직 권한을 주며, 위임은 원 보유자를 그대로 두고 적힌 운영·서명·지휘만 맡기고, 회수는 이미 있는 계약의 회수 조항·위반 증거·인준을 요구하는 제안이다.
 - 관문의 순서: 수령자의 동의와 나라의 인준이 있기 전에는 보유자가 바뀌지 않는다.
-- 수여 한도: 수여자는 자기보다 낮은 작위만 나누고, 직접 보유하는 공작급은 둘을 넘기지 않는다. 실제 작위 식별·영역·등급이 없는 곳에는 작위를 만들지 않는다.
+- 수여 한도: 수여자는 자기보다 낮은 작위만 나누고, 10명 단계 직위는 임명권자(대통령·교주·이사회)만 준다. 실제 작위 식별·영역·등급이 없는 곳에는 작위를 만들지 않는다.
 - 소속 요건: 기존 나라의 수여를 받으려면 수령자가 이미 그 나라의 소속원이어야 한다.
 - 축의 분리: 직위·작위·실효 지배·지휘·재산은 서로 다른 축이고, 직위 티어는 비교용 분류일 뿐이다.
 - 포함 명시의 원칙: 건물·기관 금고·공공 재고·부대 지휘는 포함 여부를 명시하지 않으면 자동 이전하지 않는다. 포함이라고 적는 것은 필요한 범위 선언일 뿐, 양도 권한의 증명이 아니다. 각 대상의 소유·관리·사용·지휘 권리와 유효한 이전 권한을 따로 검사한다. 기관 금고를 포함했다고 개인 재산으로 바꿀 수 없다.
@@ -89160,7 +89280,7 @@ The grant cost, delegation duration, revocation deadline, number of vassal evalu
 | --- | --- |
 | 본체 인물(플레이어) | 자기가 실제로 가진 수여 권한, 공직의 서명 권한, 또는 유효한 지휘 권한으로만 초안을 만들고 승인을 제안한다 |
 | NPC(다른 모든 인물) | 본체와 같은 행동 계약을 쓴다. 수여자·수령자·대리인·인준 참여자 모두 이 계약 안에서 움직인다 |
-| 수여자(수여 권한을 가진 소속원) | 초안을 만든다. 자기보다 낮은 작위만 나누고, 직접 보유 공작급은 둘을 넘기지 않는다 |
+| 수여자(수여 권한을 가진 소속원) | 초안을 만든다. 자기보다 낮은 작위만 나누고, 10명 단계 직위는 임명권자만 준다 |
 | 수령자 | 초안을 받아 동의하거나 거절한다. 동의하지 않으면 인준으로 넘어가지 않는다 |
 | 인준 주체(나라마다 다름) | 그 나라의 인준 절차에 따라 승인하거나 승인하지 않는다. 그 주체가 누구인지는 나라마다 아직 정해지지 않았다 【미결】 |
 | 원 보유자(위임자) | 위임에서 권리를 잃지 않는다. 적힌 범위의 운영·서명·지휘만 맡긴다 |
@@ -89169,7 +89289,7 @@ The grant cost, delegation duration, revocation deadline, number of vassal evalu
 | 대행(제도에 등록된 인물) | 그 제도에 이미 등록된 인물과 범위 안에서만 대행한다. 공석만으로 대행이 생기지 않으며, 선거·승계·임명 등 공석을 채우는 절차는 해당 나라의 제도에 따른다 |
 | 점령자·분쟁 보유자 | 현장을 실제로 통제한다. 점령만으로 합법 상속·기관 금고 소유·주민 협력을 얻지 못한다 |
 
-국가 이름은 자리의 이름만 보여 준다. 아래 사례에서 쓰는 나라 이름(예: 대한민국정부, 수문국, 환적국, 동방사)은 기존 규칙의 국가별 표에 이미 올라 있는 자리 이름이고, 사례의 수여자·수령자·작위 식별은 이 규칙을 읽기 위한 자리 표시이지 승인된 인물·작위·수량이 아니다. 실제 작위 식별·보유자·상위 계약은 위키 확정 입력을 기다린다(12.1).
+국가 이름은 자리의 이름만 보여 준다. 아래 사례에서 쓰는 나라 이름(예: 정부, 자유도시들, 아크)은 기존 규칙의 국가별 표에 이미 올라 있는 자리 이름이고, 사례의 수여자·수령자·작위 식별은 이 규칙을 읽기 위한 자리 표시이지 승인된 인물·작위·수량이 아니다. 실제 작위 식별·보유자·상위 계약은 위키 확정 입력을 기다린다(12.1).
 
 ## 3. 플레이어가 실제로 내리는 결정
 
@@ -89187,7 +89307,7 @@ The grant cost, delegation duration, revocation deadline, number of vassal evalu
 
 모든 행동 허용 여부는 정해진 검사 순서를 따른다: **대상 존재와 판본 → 생존/구금 등 수행 가능성 → 권한 → 실제 장소/전달 → 자원·배타 예약 → 상대 의사/제도 절차**. 높은 신뢰로 물리적으로 불가능한 행동을 성공시키지 않는다.
 
-**수여(작위 권리 이전)** — 수여자가 수여 권한을 가진 소속원이어야 하고, 자기보다 낮은 작위만 나눌 수 있으며, 직접 보유 공작급은 둘을 넘기지 않는다. 수령자는 이미 그 나라의 소속원이어야 하고, 대상 작위 식별과 그 영역이 이미 존재해야 한다. 실제 작위 식별·영역·등급이 없는 곳에 임의 작위를 생성하지 않는다. 초안의 필수 입력은 수여자, 수령자, 국가 가입 상태, 대상 작위와 판본, 수여 권한, 상위 계약, 권리·의무·기간, 인준기관, 유물/문서/열쇠의 인도 조건이다.
+**수여(작위 권리 이전)** — 수여자가 수여 권한을 가진 소속원이어야 하고, 자기보다 낮은 작위만 나눌 수 있으며, 10명 단계 직위는 임명권자(대통령·교주·이사회)만 준다. 수령자는 이미 그 나라의 소속원이어야 하고, 대상 작위 식별과 그 영역이 이미 존재해야 한다. 실제 작위 식별·영역·등급이 없는 곳에 임의 작위를 생성하지 않는다. 초안의 필수 입력은 수여자, 수령자, 국가 가입 상태, 대상 작위와 판본, 수여 권한, 상위 계약, 권리·의무·기간, 인준기관, 유물/문서/열쇠의 인도 조건이다.
 
 **임명(공직 권한 부여)** — 공직의 서명·지휘·운영 권한을 준다. 작위 보유자를 바꾸지 않는다. 임명으로 생긴 권한은 그 직위를 잃으면 그 권한만 멈춘다.
 
@@ -89288,7 +89408,7 @@ D11은 수여·임명·위임·회수와 봉신 계약의 골격을 소유하고
 | D06 이동·연락 | 유물·문서·열쇠의 실제 인도 경로, 도착 전 위임 만료 재검사 | 이동 시간·비용 식 |
 | D07 관계·기억 | 배신 쟁점·재비준 쟁점이 열렸을 때의 관계·평가 귀속 | 관계 변화 함수·증감·감쇠 |
 | D08 가문·혼인 | 가입 기록과 혼인 기록의 구분 사실 | 혼인 성립·효과 규칙 |
-| D09 국가·정통성 | 나라별 인준 절차·공석 대행 등록(입력 대기) | 정치체 제도의 실제 정의 |
+| D09 국가·정통성 | 나라별 인준 절차·공석 대행 등록(입력 대기) | 세 세력 제도의 실제 정의 |
 | D10 작위·명분 | 작위 권리 인스턴스, 청구·명분의 구분 | 청구의 상위 계약 조건, 명분 등록 수치·기한 |
 | D12 후계·본체 | 사망 사실, 후계 지정의 존재 | 상속인이 누구인지의 결정 |
 | D13 자산·인도 | 포함 여부가 명시된 재산의 이전, 인도 상태 | 소유권 승계·인도 절차의 상세 규칙 |
@@ -89302,7 +89422,7 @@ D11은 수여·임명·위임·회수와 봉신 계약의 골격을 소유하고
 
 ### 10.1 미가입 수령자 거절 — 적격 실패
 
-- **전**: 수여자 갑은 수문국의 소속원이고 실제 작위 식별 하나를 보유한다. 수령자 을은 수문국에 가입한 적이 없다.
+- **전**: 수여자 갑은 정부의 소속원이고 실제 작위 식별 하나를 보유한다. 수령자 을은 정부에 가입한 적이 없다.
 - **요청**: 갑이 을을 수령자로 적은 수여 초안을 만든다.
 - **사건**: 검사 순서의 대상 존재·판본 단계는 통과하지만, 소속 검사에서 을이 그 나라의 소속원이 아님이 확인된다. 기존 국가의 수여는 소속원만 받을 수 있으므로 초안은 인준 단계로 넘어가지 못하고 거절로 끝난다.
 - **후**: 갑의 보유 목록과 을의 상태는 그대로다. 거절 사실과 근거(소속 없음)만 기록된다. 초안이 대기 상태로 남거나 자동으로 가입시키지 않는다.
@@ -89372,7 +89492,7 @@ D11은 수여·임명·위임·회수와 봉신 계약의 골격을 소유하고
 
 ## 13. 요약
 
-- **승인된 것**: 네 가지 초안의 구분(수여·임명·위임·회수), 동의·인준 관문과 인준 전 보유자 불변, 소속원 수령 요건, 하급 작위만·공작급 둘 한도, 축의 분리(직위·작위·실효 지배·지휘·재산), 포함 명시의 원칙, 같은 식별 제거·등록과 사본 없음, `권리 보유·인수 미완` 상태, 위임의 네 상태와 원 권리 보존, 봉신 계약의 서명자·조항 실체와 서명자 변동 세 갈래, 회수의 조항·증거·인준 요건, 유물만 회수 시 배신 쟁점, 불법 강탈의 수여 부인, 공석의 자동 생성 부정과 등록된 대행만, 결정론적 수락 순서와 사건 식별 재전송 무효, 영구 식별자와 명시적 충돌, 작위 보유 원장과 실효 지배 원장의 분리.
+- **승인된 것**: 네 가지 초안의 구분(수여·임명·위임·회수), 동의·인준 관문과 인준 전 보유자 불변, 소속원 수령 요건, 하급 작위만·10명 단계 임명제, 축의 분리(직위·작위·실효 지배·지휘·재산), 포함 명시의 원칙, 같은 식별 제거·등록과 사본 없음, `권리 보유·인수 미완` 상태, 위임의 네 상태와 원 권리 보존, 봉신 계약의 서명자·조항 실체와 서명자 변동 세 갈래, 회수의 조항·증거·인준 요건, 유물만 회수 시 배신 쟁점, 불법 강탈의 수여 부인, 공석의 자동 생성 부정과 등록된 대행만, 결정론적 수락 순서와 사건 식별 재전송 무효, 영구 식별자와 명시적 충돌, 작위 보유 원장과 실효 지배 원장의 분리.
 - **정해지지 않은 것**: 12장의 작위·인준 입력, 나라별 제도, 실제 계약, 전쟁·외교 정산, 청구 상위 계약, 위임 진행 행동과 수치·충돌 세부 절차.
 - 이 문서는 제안으로 남으며, 플레이가 구현되었다고 말하지 않는다.');
 INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.mechanism-design-index-d12', 'system-design', 'mechanism-design-index-d12', 'Succession, Death, and Principal Body Transition', '후계·사망·본체 전환', '', '', 'proposal', 119, 'system-design/mechanism-design-index-d12.md', '# Succession, Death, and Principal Body Transition
@@ -89453,7 +89573,7 @@ The already approved rules are these.
 - **Preservation of delegation.** When a deputy dies, the original holder''s right does not disappear. A vacancy does not take over that delegation.
 - **Per-effect marriage adjudication.** On death, detention, or loss of office, the contracts for each effect (alliance, property, confirmation, succession) are checked separately and sorted into maintained, terminated, or needing reconfirmation; they are not all terminated at once. If the applicable institution is undetermined, then formation and effects are also undetermined, not "no effect."
 - **War recheck.** When the leader of an ongoing war dies, the validity of the previously registered casus belli, the legal object of the right, and the beneficiary and exercise eligibility are rechecked first, and then the new responsible party is confirmed. In a claim-backed war, the approver and the beneficiary are distinguished, and the victory right goes to the eligible beneficiary. Personal promises and office promises are adjudicated item by item for maintenance, reratification, or termination, and succession is not used to erase debts, truces, or damage records. The rule for choosing the actual war-ending type after this check has not yet been decided.
-- **Names of starting successions.** The starting successions of the polities are recorded with the name of their method: election among the duty houses, election at a covenant council of water-contract house representatives, primogeniture among the track houses, guild council and apprentice lineage, hereditary guard chief, dual commander and garrison chief, house inheritance, election by a council of investor houses, congregation election and mountain assembly acclamation, a master''s nomination of a successor disciple, examination election, and direct election by union members. Who elects, how many must gather, and what happens in a tie are not contained in the name.
+- **Names of starting successions.** In v4 the starting leaders are the tops of the three factions: the Government President (Kim Yeongyu), the Arc Hierophant (Go Ye-jin), and the Free Cities Chair of the Board (held by the I Ilseop family for generations). The ten-station tier (Commissioner, Cardinal, Director) is appointed. The succession method names of the old opening polities were retired in v4. Who elects, how many must gather, and what happens in a tie are not yet decided.
 
 There are no approved numbers for this domain. The formula for squad capacity, how weak an interim squad leader''s command is, the duration or threshold of detention, the score that decides succession, and the time limit for succession are not set, and this document does not create them. Succession, election, and death figures from other games are not Seoul''s numbers.
 
@@ -89644,7 +89764,7 @@ The items below are boundaries where the current rules cannot fix the outcome. E
 - **위임 보존.** 대리인이 죽어도 원 보유자의 권리는 사라지지 않는다. 공석이 그 위임을 대신하지 않는다.
 - **혼인 효과별 판정.** 사망·구금·관직 상실 때 동맹·재산·인준·후계 효과별 계약을 검사해 유지·종료·재인준을 나누며 일괄 종료하지 않는다. 적용 제도가 미정이면 성립과 효과도 미정이지, 효과 없음이 아니다.
 - **전쟁 재검사.** 진행 전쟁의 수장 사망은 먼저 등록된 명분의 유효·무효, 권리의 법적 대상과 수혜자·행사 자격을 다시 검사한 뒤 새 책임자를 확인한다. 주장 지원 전쟁에서는 승인자와 수혜자를 구분하고, 승리 권리는 적격한 수혜자에게 간다. 개인 약속과 직위 약속의 유지·재비준·종료를 항목별로 판정하며 계승을 이용해 빚·휴전·피해 기록을 지우지 않는다. 이 검사 뒤 실제 전쟁 종결 유형을 고르는 규칙은 아직 정해지지 않았다.
-- **시작 계승의 이름.** 각 정치체의 시작 계승에는 방식의 이름이 적혀 있다. 당직 가문 선거, 물 계약 가문 대표 계약 회의 선출, 선로 가문 장자 세습, 길드 평의회와 도제 계보, 세습 경비 책임자, 사령관·수비대장 이원, 가문 세습, 출자 가문 평의회 선출, 신도단 선출과 산중총회 추대, 스승의 후계 제자 지명, 시험 선출, 조합원 직선. 누가 뽑는지, 몇 명이 모여야 하는지, 동점이면 어떻게 되는지는 그 이름 안에 들어 있지 않다.
+- **시작 계승의 이름.** v4에서 시작 수장은 세 세력의 최상단이다. 정부 대통령(김연규), 아크 교주(고예진), 자유도시 이사회장(이일섭 가문이 대대로 맡는다). 10명 단계(청장·추기경·이사)는 임명제다. 옛 개막 정치체별 계승 방식 이름은 v4에서 폐기했다. 누가 뽑는지, 몇 명이 모여야 하는지, 동점이면 어떻게 되는지는 아직 정하지 않았다.
 
 이 영역에 승인된 수는 없다. 분대 정원을 정하는 식, 임시 분대장의 지휘가 약한 정도, 구금의 기간이나 문턱, 후계를 가르는 점수, 계승의 제한 시간은 정해져 있지 않고 이 문서가 만들지 않는다. 다른 게임의 계승·선거·사망 수치는 서울의 수가 아니다.
 
@@ -90899,7 +91019,7 @@ The player decides the following.
 
 Immediately before an action, current world facts are checked again. The target is found by stable ID rather than by name or past records, and the following are checked in order: target existence and ledger version, the actor''s survival and detention status, current authority, location, contact and actual arrival, resources and exclusive reservations, the counterpart''s intent, and institutional procedures.
 
-Opening a war is rejected without a valid registered casus belli. The candidate bundle under registration review is restoration of a recognized right, support for the claim of another eligible person, and remedy for a violation of an approved higher-level contract. A personal debt, a passage dispute, or a sluice-gate stoppage does not by itself become a casus belli for territorial conquest. The specific list and costs of casus belli are still undecided. Individual entries whose issuer, target, beneficiary, objective, nullification conditions, four termination effects, and current registration status are not approved cannot be used.
+Opening a war is rejected without a valid registered casus belli. The candidate bundle under registration review is restoration of a recognized right, support for the claim of another eligible person, and remedy for a violation of an approved higher-level contract. A personal debt, a passage dispute, or a ration stoppage does not by itself become a casus belli for territorial conquest. The specific list and costs of casus belli are still undecided. Individual entries whose issuer, target, beneficiary, objective, nullification conditions, four termination effects, and current registration status are not approved cannot be used.
 
 Even in a war already opened, validity of the casus belli is checked again just before a forced effect is applied. If the basis has disappeared, no new right is created on the spot, and the war ends according to that casus belli''s nullification effect. A nullified termination is not recorded as converted into a victory.
 
@@ -91057,7 +91177,7 @@ The **Norland** comparison covers a fixed wiki revision, MAIN/BETA patch posts, 
 
 행동 직전에는 현재 세계 사실을 다시 확인한다. 이름이나 과거 기록이 아니라 안정 ID로 대상을 찾고, 대상 존재와 원장 판본, 수행자의 생존·구금 상태, 현재 권한, 장소·연락·실제 도착, 자원과 배타 예약, 상대 의사와 제도 절차를 차례로 검사한다.
 
-전쟁 개시는 유효한 등록 명분이 없으면 거절된다. 등록 검토 대상인 후보 묶음은 인정된 권리의 회복, 적격한 다른 사람의 주장 지원, 승인된 상위 계약 위반의 구제다. 개인 빚, 통행 분쟁, 수문 중단은 그 사실만으로 영토 정복 명분이 되지 않는다. 구체적인 명분 목록과 비용은 아직 미정이다. 발급자·대상·수혜자·목표·무효 조건·네 종결 효과와 현재 등록 여부가 승인되지 않은 개별 항목은 사용할 수 없다.
+전쟁 개시는 유효한 등록 명분이 없으면 거절된다. 등록 검토 대상인 후보 묶음은 인정된 권리의 회복, 적격한 다른 사람의 주장 지원, 승인된 상위 계약 위반의 구제다. 개인 빚, 통행 분쟁, 배급 중단은 그 사실만으로 영토 정복 명분이 되지 않는다. 구체적인 명분 목록과 비용은 아직 미정이다. 발급자·대상·수혜자·목표·무효 조건·네 종결 효과와 현재 등록 여부가 승인되지 않은 개별 항목은 사용할 수 없다.
 
 이미 열린 전쟁에서도 강제 효과를 적용하기 직전에 명분이 계속 유효한지 검사한다. 근거가 사라졌다면 그 자리에서 새 권리를 만들지 않으며, 해당 명분의 무효 효과에 따라 전쟁을 끝낸다. 무효 종결을 승리로 바꾸어 기록하지 않는다.
 
@@ -91973,7 +92093,7 @@ The player''s goal is to maintain and expand the main-body character''s survival
 | Property and access | Ownership, custody, use, collateral, lease, and vault authority | Can the character spend, transfer, or deliver the property |
 | Relationships and memory | Directional trust, kinship, marriage, debt, oaths, event memories | Basis for acceptance, refusal, support, retaliation |
 
-Post tier is a comparative classification. Even at Tier 1, the post differs by country, such as president, monarch, station master, commander, or chairman. Peerage and post, and occupation and command authority, are separate. Holding public office does not turn an institutional vault into personal property or give command over all troops.
+Post tier is a comparative classification. The v4 ladder is one skeleton shared by the three factions: by the number of station masters below, Station Master (1), Headquarters Chief (2 to 4), Bureau Director, Bishop, or Cooperative Head (5 to 9), and Commissioner, Cardinal, or Director (10 or more), with the President, the Hierophant, or the Chair of the Board at the top (Power Structure section 3.0). Peerage and post, and occupation and command authority, are separate. Holding public office does not turn an institutional vault into personal property or give command over all troops.
 
 ### 1.2 Execution Order of All Actions
 
@@ -92019,7 +92139,7 @@ Each action is checked across multiple status axes. For example, a landholder wi
 
 War inputs are the war ID, approver and authority, attack/defense leads, casus belli ID, target title/territory, beneficiary, demands, approval cost, objectives, and each ending effect. A "hostile relationship" alone does not open a declaration of war. A main character without office may make plans, give support, and propose beneficiaries, but cannot approve a state war. A person whose independent state has been established uses that state''s head procedures.
 
-Registered casus belli categories: restoring recognized rights, supporting an eligible third party''s claim, and redress for breach of obligations under an approved superior contract. Whether each category is registered, its target scope, cost, truce, and reparations are pending confirmation. Personal debts, passage disputes, and floodgate water-supply cutoffs are not automatically converted into grounds for territorial conquest. An unregistered casus belli does not create a war.
+Registered casus belli categories: restoring recognized rights, supporting an eligible third party''s claim, and redress for breach of obligations under an approved superior contract. Whether each category is registered, its target scope, cost, truce, and reparations are pending confirmation. Personal debts, passage disputes, and ration cutoffs are not automatically converted into grounds for territorial conquest. An unregistered casus belli does not create a war.
 
 ### 3.2 War State Transitions
 
@@ -92039,13 +92159,13 @@ Winning a battle is not the same as winning the war. Occupying a stronghold chan
 
 Lock ending inputs → recheck casus belli and beneficiary → finalize the rights transfer list → occupation retain/return list → prisoner handling → reparations/truce/superior contract → cancel or recheck ongoing orders → event receipt. If two different wars try to transfer the same title at once, a ledger version conflict occurs and the second settlement is reviewed again. If a battle opens during a peace proposal, it is rechecked against the facts at the time of acceptance.
 
-Example: If A fights to restore B''s claim and wins, B becomes the new holder of the target right. A does not get all the occupied lands. The superior relationship between B and A is checked against the conditions stated in the casus belli, and actual floodgate control and operator cooperation remain separate matters.
+Example: If A fights to restore B''s claim and wins, B becomes the new holder of the target right. A does not get all the occupied lands. The superior relationship between B and A is checked against the conditions stated in the casus belli, and actual station control and operator cooperation remain separate matters.
 
 ## 4. Granting, Delegating, and Revoking Titles
 
 ### 4.1 Grant Contract
 
-Inputs: grantor, recipient, state membership status, target title and version, grant authority, superior contract, rights·duties·term, ratifying body, and delivery conditions for relics/documents/keys. To receive a grant from an existing state, one must already belong to it. A head may only distribute titles lower than their own, and the existing worldbuilding limit of two directly held duke-rank titles is maintained. No arbitrary title is created where there is no actual title ID, territory, or rank.
+Inputs: grantor, recipient, state membership status, target title and version, grant authority, superior contract, rights·duties·term, ratifying body, and delivery conditions for relics/documents/keys. To receive a grant from an existing state, one must already belong to it. A head may only distribute titles lower than their own. The old limit of two directly held duke-rank titles was replaced by the v4 station master ladder, and the ten-station tier (Commissioner, Cardinal, Director) is granted only by its appointing authority (the President, the Hierophant, the board). No arbitrary title is created where there is no actual title ID, territory, or rank.
 
 States: draft → authority/target check → recipient consent → ratification/approval → rights ledger change → operational takeover → completed or disputed. The default policy is not to change the holder before the required ratification. If on-site takeover fails after approval, it remains as "rights held·not recovered/takeover incomplete." In regions with a central records culture, omitting record ratification or relic inspection is grounds for invalidity.
 
@@ -92075,24 +92195,16 @@ Confirm the basis for death/vacancy → suspend the deceased''s new personal act
 
 Even if a post is vacant after a leader''s death, the institution and the state do not automatically cease to exist. Only persons and scopes registered in the system are permitted to act as proxy. If there is no eligible person or procedure, it remains a vacancy/succession dispute, and no anonymous leader is automatically generated.
 
-### 5.3 Basis of Each State''s Leader Procedure and Remaining Inputs
+### 5.3 Basis of the Three Faction Leader Procedures and Remaining Inputs (v4)
 
-| State/Type | Current Worldbuilding Approach | Inputs Needed for Detailed Design |
+| Faction/Type | Current Worldbuilding Approach | Inputs Needed for Detailed Design |
 | --- | --- | --- |
-| Government of the Republic of Korea | Duty-Family Election | Voting family rosters, candidate eligibility, attribution of votes/party posts, vacancy proxies |
-| Floodgate State | Election by the Water-Contract Family Representatives'' Contract Council | Valid contracts, representative eligibility, quorum of meetings, ratification |
-| Transshipment State | Hereditary Succession by the Eldest Child of the Rail Family | Order of eligible children, exceptions for wills and adoption, handover of posts and keys |
-| Standards League | Guild council, apprenticeship lineage | Targets to which candidate skill, guild support, and apprenticeship succession apply |
-| Eastern Command | Hereditary Guard Chief | Distinction between family eligibility and guard command takeover/subjugation registration |
-| Russian Legation Command | Dual structure of commander and garrison chief | Which seat is vacant, and the rules for joint authority and proxies |
-| Taeuk Group, Seongha Group, Sinnae Transport | Family Inheritance | Distinction between personal shares/licenses and the leader''s post, and between appointment and ratification |
-| Yeouido Investment Federation | Council Election by the Investing Families | Separation of share inheritance, representative selection, and chair election |
-| Arc, Anguk Great Monastery | Election by the congregation, acclamation by the mountain-wide assembly | Eligibility and procedure for election/acclamation, takeover of the corps/commander post |
-| White Cross Order | Master''s Designation of a Disciple as Successor | Valid nomination, training/proficiency, confirming authority |
-| Central Technology Preservation Institute | Examination-Based Selection | Examination eligibility, results, and takeover of record-viewing rights |
-| Jeongdong Labor Federation | Direct Election by Union Members | Voting union members, candidate eligibility, authority over the strike roster |
+| Government | The President is at the top (currently Kim Yeongyu). The President appoints commissioners | Presidential succession procedure (undecided), check of the appointee station master count, vacancy proxies |
+| Arc | The Hierophant is at the top (Go Ye-jin). The Hierophant ordains cardinals | Succession procedure for the Hierophant (undecided), check of ordination candidates, vacancy proxies |
+| Free Cities | The Chair of the Board is at the top (held by the I Ilseop family for generations). The board appoints directors | Board composition and voting, succession to the chair (undecided), vacancy proxies |
+| Lower tiers common to all three factions | Station Master, Headquarters Chief, and Bureau Director (Bishop, Cooperative Head) follow the number of station masters below | Recalculation of tier when station ownership changes, record of station value |
 
-Differences in detailed wording between canonical sources are not unified arbitrarily here. In particular, the link between the guild''s apprenticeship lineage and council elections, and vacancies under the dual structure, are open questions to be confirmed.
+The old per-state leader procedure table was replaced by the v4 three-faction ladder (Power Structure section 3.0). Succession procedures for the President, the Hierophant, and the Chair of the Board are not yet decided.
 
 ### 5.4 Inheritance of Claims and Rights
 
@@ -92287,7 +92399,7 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 | 재산·접근 | 소유·보관·사용·담보·임대·금고 권한 | 재산을 소비·양도·인도할 수 있는가 |
 | 관계·기억 | 방향성 신뢰, 친족, 혼인, 빚, 맹세, 사건 기억 | 수락·거절·지지·보복의 근거 |
 
-직위 티어는 비교 분류다. 티어 1이라도 나라별로 대통령·군주·역장·사령관·회장 등 다르다. 작위와 직위, 직업과 지휘권은 별개다. 공직을 맡았다고 기관 금고가 개인 재산이 되거나 모든 병력을 지휘하지 않는다.
+직위 티어는 비교 분류다. v4 계층은 세 세력 공통 골격으로, 산하 역장 수에 따라 역장(1)·본부장(2~4)·국장/주교/조합장(5~9)·청장/추기경/이사(10 이상)로 나뉘고 최상단은 대통령/교주/이사회장이다(권력 구조 3.0절). 작위와 직위, 직업과 지휘권은 별개다. 공직을 맡았다고 기관 금고가 개인 재산이 되거나 모든 병력을 지휘하지 않는다.
 
 ### 1.2 모든 행동의 실행 순서
 
@@ -92333,7 +92445,7 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 전쟁 입력은 전쟁 ID, 승인자와 권한, 공격/방어 책임자, 명분 ID, 대상 작위/영역, 수혜자, 요구 내용, 승인 비용, 목표, 각 종결 효과다. ‘적대 관계’만으로 선전포고를 열지 않는다. 무관직 본체는 계획·지원·수혜자 제안을 할 수 있지만 국가 전쟁을 승인하지 않는다. 독립 국가가 성립한 인물은 그 국가의 수장 절차를 사용한다.
 
-명분 등록 대상 묶음: 인정된 권리 회복, 적격 타인 주장 지원, 승인된 상위 계약의 의무 위반 구제. 각 묶음의 등록 여부·대상 범위·비용·휴전·배상은 확정 대기다. 개인 빚·통행 분쟁·수문 급수 중단을 자동 영토 정복 명분으로 바꾸지 않는다. 미등록 명분은 전쟁을 생성하지 않는다.
+명분 등록 대상 묶음: 인정된 권리 회복, 적격 타인 주장 지원, 승인된 상위 계약의 의무 위반 구제. 각 묶음의 등록 여부·대상 범위·비용·휴전·배상은 확정 대기다. 개인 빚·통행 분쟁·배급 중단을 자동 영토 정복 명분으로 바꾸지 않는다. 미등록 명분은 전쟁을 생성하지 않는다.
 
 ### 3.2 전쟁 상태 전이
 
@@ -92353,13 +92465,13 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 종결 입력 잠금 → 명분과 수혜자 재검사 → 권리 이전 목록 확정 → 점령 유지/반환 목록 → 포로 처리 → 배상/휴전/상위 계약 → 진행 명령 취소 또는 재검사 → 사건 영수증. 서로 다른 전쟁에서 같은 작위를 동시에 이전하려 하면 원장 판본 충돌로 두 번째 정산을 재검토한다. 강화 제안 중 전투가 열리면 수락 시점의 사실로 다시 검사한다.
 
-사례: A가 B의 주장 회복을 위해 싸워 승리하면 B가 대상 권리의 새 보유자다. A가 모든 점령지를 가지지 않는다. B와 A의 상위 관계는 명분에 기재된 조건을 검사하고, 실제 수문 통제와 운영자 협력은 따로 남는다.
+사례: A가 B의 주장 회복을 위해 싸워 승리하면 B가 대상 권리의 새 보유자다. A가 모든 점령지를 가지지 않는다. B와 A의 상위 관계는 명분에 기재된 조건을 검사하고, 실제 역 통제와 운영자 협력은 따로 남는다.
 
 ## 4. 작위 수여·위임·회수
 
 ### 4.1 수여 계약
 
-입력: 수여자, 수령자, 국가 가입 상태, 대상 작위와 판본, 수여 권한, 상위 계약, 권리·의무·기간, 인준기관, 유물/문서/열쇠의 인도 조건. 기존 국가의 수여를 받으려면 먼저 소속돼 있어야 한다. 수장은 자신보다 낮은 작위만 나누며 직접 보유 공작급 둘 제한은 기존 세계관을 유지한다. 실제 작위 ID·영역·등급이 없는 곳에 임의 작위를 생성하지 않는다.
+입력: 수여자, 수령자, 국가 가입 상태, 대상 작위와 판본, 수여 권한, 상위 계약, 권리·의무·기간, 인준기관, 유물/문서/열쇠의 인도 조건. 기존 국가의 수여를 받으려면 먼저 소속돼 있어야 한다. 수장은 자신보다 낮은 작위만 나눈다. 옛 직접 보유 공작급 둘 제한은 v4 역장 계층으로 대체했고, 10명 단계(청장·추기경·이사)는 임명권자(대통령·교주·이사회)만 준다. 실제 작위 ID·영역·등급이 없는 곳에 임의 작위를 생성하지 않는다.
 
 상태: 초안 → 권한/대상 검사 → 수령자 동의 → 인준/비준 → 권리 원장 변경 → 운영 인수 → 완료 또는 분쟁. 기본 정책은 필요한 인준 전에 보유자를 바꾸지 않는 것이다. 승인 뒤 현장 인수를 못하면 ‘권리 보유·미회복/인수 미완’으로 남긴다. 중앙 기록 문화의 권역에서는 기록 인준과 유물 열람 누락이 무효 사유다.
 
@@ -92389,24 +92501,16 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 수장 사망 뒤 직위가 공석이어도 기관과 국가는 자동 소멸하지 않는다. 대행은 제도에 등록된 인물과 범위만 허용한다. 적격자나 절차가 없으면 공석·승계 분쟁으로 남기며 무명 수장을 자동 생성하지 않는다.
 
-### 5.3 국가별 수장 절차의 근거와 남은 입력
+### 5.3 세 세력 수장 절차의 근거와 남은 입력 (v4)
 
 | 국가/유형 | 현재 세계관의 방식 | 상세 기획에서 필요한 입력 |
 | --- | --- | --- |
-| 대한민국정부 | 당직 가문 선거 | 유권 가문 명부, 후보 자격, 표/당직의 귀속, 공석 대행 |
-| 수문국 | 물 계약 가문 대표 계약 회의 선출 | 유효 계약·대표 자격·회의 성립·인준 |
-| 환적국 | 선로 가문 장자 세습 | 적격 자녀 순서, 유언·양자 예외, 직위와 열쇠 인도 |
-| 규격맹 | 길드 평의회, 도제 계보 | 후보 숙련·길드 지지·도제 계승의 적용 대상 |
-| 동방사 | 세습 경비 책임자 | 가족 자격과 경비 지휘 인수·복속 등록의 구분 |
-| 아관사 | 사령관·수비대장 이원 | 어느 자리의 공석인지, 공동 권한·대행 규칙 |
-| 태욱그룹·성하그룹·신내운수 | 가문 세습 | 개인 지분/면허와 수장 직위, 임명·인준의 구분 |
-| 여의도출자연합회 | 출자 가문 평의회 선출 | 지분 상속, 대표 선정, 의장 선출의 분리 |
-| Arc·안국총림 | 신도단 선출·산중총회 추대 | 선출/추대 자격·절차·제대/대장 인수 |
-| 흰십자단 | 스승의 후계 제자 지명 | 유효 지명·수련/숙련·확인 주체 |
-| 중앙기술보존원 | 시험 선출 | 시험 자격·결과·기록 열람권의 인수 |
-| Arc | 조합원 직선 | 유권 조합원·후보 자격·파업 명부 권한 |
+| 정부 | 대통령이 최상단이다(현재 김연규). 청장은 대통령이 임명한다 | 대통령 승계 절차(미정), 임명 대상의 산하 역장 수 확인, 공석 대행 |
+| 아크 | 교주가 최상단이다(고예진). 추기경은 교주가 서품한다 | 교주 승계 절차(미정), 서품 대상 확인, 공석 대행 |
+| 자유도시들 | 이사회장이 최상단이다(이일섭 가문이 대대로 맡는다). 이사는 이사회가 임명한다 | 이사회 구성과 의결, 이사회장 승계(미정), 공석 대행 |
+| 세 세력 공통 하위 단계 | 역장·본부장·국장(주교·조합장)은 산하 역장 수로 정해진다 | 역 소유 변경 때 단계 재계산, 역의 가치 기록 |
 
-정본 간 세부 표현 차이는 여기서 임의로 통일하지 않는다. 특히 길드의 도제 계보와 평의회 선출의 연결, 이원 체제 공석은 확정 질문이다.
+옛 개막 국가별 수장 절차 표는 v4 세 세력 계층으로 대체했다(권력 구조 3.0절). 대통령·교주·이사회장의 승계 절차는 아직 정하지 않았다.
 
 ### 5.4 주장과 권리의 상속
 

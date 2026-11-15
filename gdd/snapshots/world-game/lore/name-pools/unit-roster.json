@@ -1,337 +1,2841 @@
 {
-  "schema": "unit-roster/1",
-  "status": "legacy-proposal",
-  "note": "이전 편성 후보 자료다. 정원·효과·적격 수치는 활성 규칙이 아니며 게임 규칙의 의미는 GDD가 소유한다. 기존 후보 ID와 데이터 형태를 보존한다.",
+  "schema": "unit-roster/2",
+  "status": "v4",
+  "note": "v4 병종 로스터(2026-11-16 위키 개편 기준). 원천은 v4 유닛 로스터 결과(로스터·무기 넘버링·테크트리 L1~L5)와 v4 비용 구조(소유자 결정 2026-11-15)다. 전투 4값·속도·유지비는 계획 63 D1 척도(전투력 0~120)의 출발값이며 확정 밸런스가 아니다. 옛 냉병기·무협 계열 후보(UT-*)는 v4에서 폐기했고 retired_legacy_ids에 대응만 남긴다.",
   "design_source": {
-    "mechanics": "정착지 인구에서 후보를 모집하고 영웅과 병졸을 분리한다. 활성 정원은 지휘관 개인 능력치·국가 수준·정착지 수준에 따라 가변이며 공통 상한은 없다. 산식은 미정이다.",
-    "resolution": "현행 개인 판정 — 공격 3d6·능동 방어·DR·피해",
-    "owner_decisions": ["2026-10-02 시스템 연결 범위와 가변 부대 정원 확정"],
-    "rules_owner": "GDD/canon/locales/ko-KR/rules/hero-squads-and-simultaneous-turns.json",
-    "legacy_fields": "max_size·base_size·규모 배율·적격 임계·효과는 이전 제안이며 확정 정원·능력·훈련 근거로 사용하지 않는다"
+    "mechanics": "비용은 숫자 벌칙이 아니라 지도 위 시설과 사람이 서로 다른 세력에 흩어진 데서 나온다. 어느 세력도 혼자서는 가진 것을 완전히 쓰지 못한다. 단계가 오를수록 자기 세력 밖의 것(장교, 의사, 아크 소프트웨어, 회수한 로밍 기계)이 더 필요하다.",
+    "resolution": "현행 개인 판정 — 공격 3d6·능동 방어·DR·피해. 부대 수치는 계획 63 D1 game_unit_type 필드(class_id, platform, stack, 피해/내구/추격/차단, speed_mps, width_m)에 맞춘다.",
+    "owner_decisions": [
+      "2026-10-02 시스템 연결 범위와 가변 부대 정원 확정",
+      "2026-11-15 v4 비용 구조",
+      "2026-11-16 v4 위키 개편(세 세력 계층·유닛 로스터 반영)"
+    ],
+    "rules_owner": "GDD/canon/locales/ko-KR/rules/hero-squads-and-time-based-movement.json",
+    "battle_rules_fields": {
+      "matched": [
+        "soft_to_hard_main(세력별 부상 복귀: 정부 0.7 / 자유도시 0.15 / 아크 0.5)",
+        "reinforce_monthly",
+        "advantage.supply",
+        "shutter_level"
+      ],
+      "proposed_new": [
+        "upkeep.fuel",
+        "upkeep.ammo",
+        "license.trust",
+        "backdoor.shutdown",
+        "salvage_stock(보충 0)",
+        "드론 정찰 등급",
+        "의약품"
+      ]
+    }
   },
   "squad_structure": {
     "commander": "1명 필수 (지휘 스킬 보유자). 장교 지휘관은 정부만 쉽게 채운다. 자유도시와 아크에는 장교가 없어 징집 출신이나 경비 책임자가 지휘하고, 기갑·중화기 부대에는 지휘 감쇄가 걸린다. 정부에서 넘어오거나 잡혀 온 장교는 예외다",
-    "members": "정착지에서 생성된 인물 중 직업·무공·능력치 매칭자",
+    "members": "정착지에서 생성된 인물 중 직업·기술·능력치와 병종 필수 조건이 맞는 사람",
     "max_squads_per_settlement": "지휘관 수와 같음",
     "recruitment": {
-      "sources": ["정착지 인구 (자동 생성 NPC)", "포로 (자유 부여 조건)", "용병 (CP 기반 비용)"],
-      "npc_matching": "occupation + martial + attributes → unit type 자동 매칭"
+      "sources": [
+        "정착지 인구 (자동 생성 NPC)",
+        "포로 (자유 부여 조건)",
+        "용병 (CP 기반 비용)"
+      ],
+      "npc_matching": "occupation + skill + attributes + requires → unit type 자동 매칭",
+      "captives": "납치·포획으로 데려온 사람은 본진 계급과 상관없이 최하층민이 된다. 받아 간 세력은 기술만 쓰고 신분을 올려 주지 않는다. 태업·탈출은 가족 인질로 막는다(v4 인적자원 이동)"
     }
   },
+  "numbering": {
+    "format": "<세력>-<계열><단계>-<일련>",
+    "example": "G-V4-01 = 정부 · 차량 · L4 · 1번",
+    "factions": {
+      "G": "정부",
+      "F": "자유도시",
+      "A": "아크",
+      "R": "로밍 기계 유래(공용)"
+    },
+    "families": {
+      "S": "개인화기(소총·권총·총검·석궁)",
+      "M": "분대·중화기(기관총·박격포)",
+      "T": "대전차·대기계(무반동포·유도탄)",
+      "V": "차량·궤도차·전차",
+      "D": "무인기(드론)",
+      "W": "전자전·소프트웨어 모듈(켜고 끄기)",
+      "H": "의료(구호·수술·의료로봇)",
+      "E": "공병·공성(절단기·폭약·방벽)",
+      "B": "기계신체·착용 장비",
+      "X": "고대 병기 회수품(로밍 기계 유래)",
+      "C": "지휘·통신(무전·사격통제)"
+    },
+    "tier_digit": "단계 숫자는 해금 레벨(L1~L5)과 같다. 같은 단계 안에서는 일련번호로 구분한다. 단종·대체된 번호는 다시 쓰지 않는다.",
+    "suffixes": {
+      "/A": "아크 소프트웨어 탑재(백도어가 있다는 표시)",
+      "/M": "수동 모드",
+      "/R": "회수·개조품"
+    },
+    "unit_id": "<세력>-U<nn>. 무기 코드와 따로 센다."
+  },
+  "tier_logic": {
+    "L1": "혼자 연다(시작)",
+    "L2": "자기 시설로 연다",
+    "L3": "남의 것 하나가 필요하다",
+    "L4": "남의 것 둘이 필요하다. 세력마다 갈림길이다(대가를 받아들이거나 수동·저하 모드로 버틴다)",
+    "L5": "남의 것 셋이 필요하다"
+  },
+  "factions": [
+    {
+      "code": "G",
+      "id": "government",
+      "name": "정부",
+      "leader": "김연규",
+      "band": "황토색 완장",
+      "has": "장교단, 전차·중화기, 대형 대학병원(의사 없음), 정비창, 원종 씨앗",
+      "lacks": "의료기술자(자유도시), 무기 소프트웨어(아크)",
+      "wounded_return": 0.3,
+      "summary": "이기지만 칼을 들 때마다 잃는다: 응급처치뿐이라 부상병이 돌아오지 않는다"
+    },
+    {
+      "code": "F",
+      "id": "free-city",
+      "name": "자유도시",
+      "leader": "이일섭",
+      "band": "바랜 남색 완장",
+      "has": "의사·신경 연결 의술, 사람과 식량(징병제 기초군사훈련), 수방사 장비(영토 안)",
+      "lacks": "장교(정부 쪽), 의료로봇 소프트웨어(아크), 원종 씨앗(정부)",
+      "wounded_return": 0.85,
+      "summary": "오래 버틴다: 의사가 있어 부상병이 돌아온다. 전차·중화기 연합 지휘는 장교 없이 한계"
+    },
+    {
+      "code": "A",
+      "id": "arc",
+      "name": "아크",
+      "leader": "고예진",
+      "band": "회백 띠(가는 청록 줄)",
+      "has": "고대 데이터센터 소프트웨어 독점, 기계신체(명령 입력식), 길들인 옛 기계 몇 무리",
+      "lacks": "공장·중화기·병원 등 물적 기반, 생각 조종 수술(자유도시 의사)",
+      "wounded_return": 0.5,
+      "summary": "지렛대는 남의 하드웨어를 켜고 끄는 힘. 쓰는 순간 백도어 불신이 확정된다"
+    },
+    {
+      "code": "R",
+      "id": "salvage",
+      "name": "로밍 기계 유래(공용)",
+      "leader": null,
+      "band": "편성 세력 띠",
+      "has": "도시를 떠도는 옛 기계(생태도감 기계 항목)를 포획·회수·길들인 것",
+      "lacks": "어느 세력도 혼자서는 완성하지 못한다: 포획(사람)·정비(하드웨어)·신호 확인(아크)·생각 조종(자유도시 의사)",
+      "wounded_return": null,
+      "summary": "보충 불가(만들 수 없고 다시 잡아야 한다). 쓸수록 줄어든다"
+    }
+  ],
   "unit_types": [
     {
+      "id": "G-U01",
+      "faction": "government",
+      "faction_ko": "정부",
+      "name": "제식 소총분대",
+      "name_en": "service rifle squad",
+      "tier": "L1",
+      "class_id": "rifle",
+      "platform": "foot",
+      "stack": 6,
+      "combat": {
+        "damage": 28,
+        "toughness": 12,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 1.4,
+      "width_m": 0.6,
+      "weapons": [
+        "G-S1-01",
+        "G-S1-02"
+      ],
+      "role": "정면 화력의 기본. 장교 지휘 아래 정확하다",
+      "cost": "사람 6, 탄약",
+      "upkeep": "식량 6, 탄약 30/인",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "rifle 30/인",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "제안"
+    },
+    {
+      "id": "G-U02",
+      "faction": "government",
+      "faction_ko": "정부",
+      "name": "순찰 방패대",
+      "name_en": "patrol shield squad",
+      "tier": "L1",
+      "class_id": "guard",
+      "platform": "foot",
+      "stack": 8,
+      "combat": {
+        "damage": 14,
+        "toughness": 30,
+        "pursuit": 0,
+        "screen": 10
+      },
+      "speed_mps": 1.3,
+      "width_m": 0.7,
+      "weapons": [
+        "G-S1-03",
+        "G-S1-02"
+      ],
+      "role": "셔터 앞 질서 유지, 사격대를 막는다",
+      "cost": "사람 8",
+      "upkeep": "식량 8",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "계획 63 patrol_shield 인용"
+    },
+    {
+      "id": "G-U03",
+      "faction": "government",
+      "faction_ko": "정부",
+      "name": "장교 지휘조",
+      "name_en": "officer command team",
+      "tier": "L1",
+      "class_id": "command",
+      "platform": "foot",
+      "stack": 3,
+      "combat": {
+        "damage": 8,
+        "toughness": 12,
+        "pursuit": 0,
+        "screen": 6
+      },
+      "speed_mps": 1.4,
+      "width_m": 0.6,
+      "weapons": [
+        "G-S1-01",
+        "G-C4-01"
+      ],
+      "role": "연합 지휘: 같은 구역 아군의 명령 지연을 없애고 중화기·전차의 연합 사격을 연다. 정부만 보유",
+      "cost": "사람 3(장교)",
+      "upkeep": "식량 3, 전지 2",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "제안"
+    },
+    {
+      "id": "G-U04",
+      "faction": "government",
+      "faction_ko": "정부",
+      "name": "응급 구호조",
+      "name_en": "first-aid team",
+      "tier": "L1",
+      "class_id": "medic",
+      "platform": "foot",
+      "stack": 3,
+      "combat": {
+        "damage": 4,
+        "toughness": 10,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 1.4,
+      "width_m": 0.6,
+      "weapons": [
+        "G-H1-01"
+      ],
+      "role": "응급처치까지만. 경상자는 붙잡아 두지만 중상자는 돌아오지 못한다(부상 복귀 0.3)",
+      "cost": "사람 3, 약품",
+      "upkeep": "식량 3, 의약품 1",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "제안"
+    },
+    {
+      "id": "G-U05",
+      "faction": "government",
+      "faction_ko": "정부",
+      "name": "분대지원화기조",
+      "name_en": "squad support gun team",
+      "tier": "L2",
+      "class_id": "heavy",
+      "platform": "foot",
+      "stack": 4,
+      "combat": {
+        "damage": 60,
+        "toughness": 10,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 1.1,
+      "width_m": 0.8,
+      "weapons": [
+        "G-M2-01"
+      ],
+      "role": "제압 사격으로 적 분대 사기를 깎는다",
+      "cost": "사람 4, 탄약 다량",
+      "upkeep": "식량 4, 탄약 200/정",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "heavy 200/정",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "계획 63 saw_team 인용"
+    },
+    {
+      "id": "G-U06",
+      "faction": "government",
+      "faction_ko": "정부",
+      "name": "박격포반",
+      "name_en": "mortar section",
+      "tier": "L2",
+      "class_id": "heavy",
+      "platform": "foot",
+      "stack": 5,
+      "combat": {
+        "damage": 55,
+        "toughness": 8,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 1.0,
+      "width_m": 1.0,
+      "weapons": [
+        "G-M2-02"
+      ],
+      "role": "간접 사격. 장교 지휘조가 같은 전장에 있어야 정밀",
+      "cost": "사람 5, 포탄",
+      "upkeep": "식량 5, 포탄",
+      "requires": [
+        "officer"
+      ],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "heavy 포탄 24",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "제안"
+    },
+    {
+      "id": "G-U07",
+      "faction": "government",
+      "faction_ko": "정부",
+      "name": "공병 돌파조",
+      "name_en": "breaching engineers",
+      "tier": "L2",
+      "class_id": "engineer",
+      "platform": "foot",
+      "stack": 4,
+      "combat": {
+        "damage": 10,
+        "toughness": 14,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 1.3,
+      "width_m": 0.6,
+      "weapons": [
+        "G-E2-01"
+      ],
+      "role": "셔터·차단문 돌파, 폭약",
+      "cost": "사람 4, 폭약",
+      "upkeep": "식량 4, 유압 2",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "hydraulic 6",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "제안"
+    },
+    {
+      "id": "G-U08",
+      "faction": "government",
+      "faction_ko": "정부",
+      "name": "궤도 모터카",
+      "name_en": "rail motorcar",
+      "tier": "L2",
+      "class_id": "rail",
+      "platform": "rail",
+      "stack": 2,
+      "combat": {
+        "damage": 10,
+        "toughness": 0,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 7.0,
+      "width_m": 2.4,
+      "weapons": [
+        "G-V2-02"
+      ],
+      "role": "지하 선로 기동, 분대 수송 10",
+      "cost": "하드웨어, 전지",
+      "upkeep": "전지 10",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "battery 10",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "제안"
+    },
+    {
+      "id": "G-U09",
+      "faction": "government",
+      "faction_ko": "정부",
+      "name": "복원 장갑차",
+      "name_en": "restored armoured carrier",
+      "tier": "L3",
+      "class_id": "vehicle",
+      "platform": "vehicle",
+      "stack": 3,
+      "combat": {
+        "damage": 30,
+        "toughness": 60,
+        "pursuit": 10,
+        "screen": 0
+      },
+      "speed_mps": 6.0,
+      "width_m": 3.0,
+      "weapons": [
+        "G-V3-01",
+        "G-M2-01"
+      ],
+      "role": "지상 기동·수송 8",
+      "cost": "정비창, 연료",
+      "upkeep": "연료 12, 정비",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "fuel 12",
+      "exposure_heat": 3,
+      "noise": "loud",
+      "basis": "제안"
+    },
+    {
+      "id": "G-U10",
+      "faction": "government",
+      "faction_ko": "정부",
+      "name": "대기계 무반동포조",
+      "name_en": "anti-machine recoilless team",
+      "tier": "L3",
+      "class_id": "antiarmor",
+      "platform": "foot",
+      "stack": 3,
+      "combat": {
+        "damage": 70,
+        "toughness": 8,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 1.1,
+      "width_m": 0.8,
+      "weapons": [
+        "G-T3-01"
+      ],
+      "role": "장갑·대형 기계 처치",
+      "cost": "사람 3, 포탄",
+      "upkeep": "식량 3, 포탄",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "제안"
+    },
+    {
+      "id": "G-U11",
+      "faction": "government",
+      "faction_ko": "정부",
+      "name": "복원 전차",
+      "name_en": "restored main battle tank",
+      "tier": "L4",
+      "class_id": "vehicle",
+      "platform": "vehicle",
+      "stack": 4,
+      "combat": {
+        "damage": 110,
+        "toughness": 120,
+        "pursuit": 10,
+        "screen": 0
+      },
+      "speed_mps": 5.0,
+      "width_m": 3.6,
+      "weapons": [
+        "G-V4-01",
+        "G-C4-01"
+      ],
+      "role": "최강 정면 전력. 아크 라이선스(사격통제 단말)가 없으면 수동 조준으로 명중 −40%, 라이선스가 있으면 아크가 끌 수 있다",
+      "cost": "정비창, 연료 대량, 장교",
+      "upkeep": "연료 20, 정비, 라이선스",
+      "requires": [
+        "officer",
+        "arc_key?"
+      ],
+      "software": "licensed",
+      "backdoor_risk": 2,
+      "ammo": "",
+      "power": "fuel 20",
+      "exposure_heat": 4,
+      "noise": "loud",
+      "basis": "제안"
+    },
+    {
+      "id": "G-U12",
+      "faction": "government",
+      "faction_ko": "정부",
+      "name": "자주포 포대",
+      "name_en": "self-propelled battery",
+      "tier": "L4",
+      "class_id": "artillery",
+      "platform": "vehicle",
+      "stack": 4,
+      "combat": {
+        "damage": 95,
+        "toughness": 50,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 4.0,
+      "width_m": 3.4,
+      "weapons": [
+        "G-V4-02",
+        "G-C4-01"
+      ],
+      "role": "원거리 포격. 사격 제원 소프트웨어 없이는 산포 큼",
+      "cost": "정비창, 포탄, 장교",
+      "upkeep": "연료 16, 포탄, 라이선스",
+      "requires": [
+        "officer",
+        "arc_key?"
+      ],
+      "software": "licensed",
+      "backdoor_risk": 2,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 4,
+      "noise": "loud",
+      "basis": "제안"
+    },
+    {
+      "id": "G-U13",
+      "faction": "government",
+      "faction_ko": "정부",
+      "name": "방공 포대",
+      "name_en": "air-defence battery",
+      "tier": "L4",
+      "class_id": "emplacement",
+      "platform": "emplacement",
+      "stack": 5,
+      "combat": {
+        "damage": 90,
+        "toughness": 80,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 0,
+      "width_m": 4.0,
+      "weapons": [
+        "G-X4-01"
+      ],
+      "role": "드론·비행 기계 차단. 정부 하드웨어 + 아크 소프트웨어 공동 병기, 정지 장치는 아크 손에",
+      "cost": "복원 공사, 아크 계약",
+      "upkeep": "전력, 라이선스",
+      "requires": [
+        "arc_key",
+        "salvage:M11"
+      ],
+      "software": "arc_held",
+      "backdoor_risk": 3,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 2,
+      "noise": "loud",
+      "basis": "v4 sim \"방공 체계\"(토론안)"
+    },
+    {
+      "id": "G-U14",
+      "faction": "government",
+      "faction_ko": "정부",
+      "name": "감시 드론조",
+      "name_en": "surveillance drone team",
+      "tier": "L4",
+      "class_id": "drone",
+      "platform": "foot",
+      "stack": 3,
+      "combat": {
+        "damage": 6,
+        "toughness": 8,
+        "pursuit": 0,
+        "screen": 20
+      },
+      "speed_mps": 1.4,
+      "width_m": 0.6,
+      "weapons": [
+        "G-D4-01",
+        "G-C4-01"
+      ],
+      "role": "넓은 정찰(정찰 등급 +1~2). 비행 제어는 아크 키, 쓰는 동안 아크가 본다",
+      "cost": "정비창, 전지, 라이선스",
+      "upkeep": "전지 8, 라이선스",
+      "requires": [
+        "arc_key"
+      ],
+      "software": "licensed",
+      "backdoor_risk": 2,
+      "ammo": "",
+      "power": "battery 8",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "제안"
+    },
+    {
+      "id": "G-U15",
+      "faction": "government",
+      "faction_ko": "정부",
+      "name": "원격 지휘 무인 차량대",
+      "name_en": "remote-commanded UGV troop",
+      "tier": "L5",
+      "class_id": "machine",
+      "platform": "vehicle",
+      "stack": 2,
+      "combat": {
+        "damage": 80,
+        "toughness": 140,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 3.0,
+      "width_m": 2.8,
+      "weapons": [
+        "G-X5-01",
+        "G-C4-01"
+      ],
+      "role": "사람을 아끼는 정부 L5. 부상병이 돌아오지 않으니 기계를 앞세운다. 회수(M7) + 장교 + 아크 키",
+      "cost": "회수 기계, 연료, 장교, 라이선스",
+      "upkeep": "연료 14, 정비, 라이선스",
+      "requires": [
+        "officer",
+        "arc_key",
+        "salvage:M7"
+      ],
+      "software": "arc_held",
+      "backdoor_risk": 3,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 3,
+      "noise": "loud",
+      "basis": "생태도감 v3 15 \"귀환 무인 차량\" 인용"
+    },
+    {
+      "id": "F-U01",
+      "faction": "free-city",
+      "faction_ko": "자유도시",
+      "name": "징병 소총대",
+      "name_en": "conscript rifle company",
+      "tier": "L1",
+      "class_id": "rifle",
+      "platform": "foot",
+      "stack": 8,
+      "combat": {
+        "damage": 24,
+        "toughness": 12,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 1.4,
+      "width_m": 0.6,
+      "weapons": [
+        "F-S1-01"
+      ],
+      "role": "누구나 기초군사훈련을 받아 수가 많다. 정비는 스스로 한다",
+      "cost": "사람 8, 식량",
+      "upkeep": "식량 8, 탄약 25/인",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "rifle 25/인",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "제안"
+    },
+    {
+      "id": "F-U02",
+      "faction": "free-city",
+      "faction_ko": "자유도시",
+      "name": "민병 총검대",
+      "name_en": "militia bayonet band",
+      "tier": "L1",
+      "class_id": "line",
+      "platform": "foot",
+      "stack": 8,
+      "combat": {
+        "damage": 26,
+        "toughness": 18,
+        "pursuit": 10,
+        "screen": 0
+      },
+      "speed_mps": 1.5,
+      "width_m": 0.6,
+      "weapons": [
+        "F-S1-02"
+      ],
+      "role": "탄약이 떨어져도 싸운다. 근접 백병",
+      "cost": "사람 8",
+      "upkeep": "식량 8",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "계획 63 bayonet_line 인용"
+    },
+    {
+      "id": "F-U03",
+      "faction": "free-city",
+      "faction_ko": "자유도시",
+      "name": "진료 구호대",
+      "name_en": "doctor-led aid team",
+      "tier": "L1",
+      "class_id": "medic",
+      "platform": "foot",
+      "stack": 3,
+      "combat": {
+        "damage": 4,
+        "toughness": 10,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 1.4,
+      "width_m": 0.6,
+      "weapons": [
+        "F-H1-01"
+      ],
+      "role": "의사가 동행. 부상 복귀 0.85, 같은 구역 아군 사기 유지",
+      "cost": "사람 3(의사 1), 약품",
+      "upkeep": "식량 3, 의약품 2",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "제안"
+    },
+    {
+      "id": "F-U04",
+      "faction": "free-city",
+      "faction_ko": "자유도시",
+      "name": "정비 공병조",
+      "name_en": "maintenance engineers",
+      "tier": "L1",
+      "class_id": "engineer",
+      "platform": "foot",
+      "stack": 4,
+      "combat": {
+        "damage": 10,
+        "toughness": 14,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 1.3,
+      "width_m": 0.6,
+      "weapons": [
+        "F-E1-01"
+      ],
+      "role": "무기 정비, 바리케이드, 수방사 장비 손질",
+      "cost": "사람 4, 자재",
+      "upkeep": "식량 4",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "제안"
+    },
+    {
+      "id": "F-U05",
+      "faction": "free-city",
+      "faction_ko": "자유도시",
+      "name": "거치 기관총조",
+      "name_en": "fixed machine-gun crew",
+      "tier": "L2",
+      "class_id": "heavy",
+      "platform": "emplacement",
+      "stack": 3,
+      "combat": {
+        "damage": 65,
+        "toughness": 18,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 0,
+      "width_m": 1.2,
+      "weapons": [
+        "F-M2-01"
+      ],
+      "role": "분대 단위 운용이라 장교가 필요 없다. 개찰구 방어의 중심",
+      "cost": "사람 3, 탄약",
+      "upkeep": "식량 3, 탄약 200",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "heavy 200",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "제안"
+    },
+    {
+      "id": "F-U06",
+      "faction": "free-city",
+      "faction_ko": "자유도시",
+      "name": "유선 정찰 드론조",
+      "name_en": "tethered scout drone team",
+      "tier": "L2",
+      "class_id": "drone",
+      "platform": "foot",
+      "stack": 3,
+      "combat": {
+        "damage": 4,
+        "toughness": 8,
+        "pursuit": 0,
+        "screen": 16
+      },
+      "speed_mps": 1.4,
+      "width_m": 0.6,
+      "weapons": [
+        "F-D2-01"
+      ],
+      "role": "광섬유 유선이라 아크가 끌 수 없다. 거리 제한",
+      "cost": "광섬유 회수(M9), 전지",
+      "upkeep": "전지 4",
+      "requires": [
+        "salvage:M9"
+      ],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "battery 4",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "생태도감 v3 17 인용"
+    },
+    {
+      "id": "F-U07",
+      "faction": "free-city",
+      "faction_ko": "자유도시",
+      "name": "전동 이륜 척후대",
+      "name_en": "e-bike scouts",
+      "tier": "L2",
+      "class_id": "mounted",
+      "platform": "mount",
+      "stack": 4,
+      "combat": {
+        "damage": 24,
+        "toughness": 12,
+        "pursuit": 30,
+        "screen": 24
+      },
+      "speed_mps": 5.0,
+      "width_m": 0.9,
+      "weapons": [
+        "F-V2-03",
+        "F-S1-01"
+      ],
+      "role": "빠른 척후·습격. 전지 병목",
+      "cost": "전동 이륜차, 전지",
+      "upkeep": "전지 6, 식량 4",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "battery 6",
+      "exposure_heat": 1,
+      "noise": "normal",
+      "basis": "계획 63 ebike_riders(canon-pending)"
+    },
+    {
+      "id": "F-U08",
+      "faction": "free-city",
+      "faction_ko": "자유도시",
+      "name": "궤도 수동차",
+      "name_en": "rail handcar",
+      "tier": "L1",
+      "class_id": "rail",
+      "platform": "rail",
+      "stack": 2,
+      "combat": {
+        "damage": 0,
+        "toughness": 0,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 4.0,
+      "width_m": 2.0,
+      "weapons": [
+        "F-V1-02"
+      ],
+      "role": "조용한 선로 수송 6",
+      "cost": "자재",
+      "upkeep": "없음",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "quiet",
+      "basis": "계획 63 rail_handcar 인용"
+    },
+    {
+      "id": "F-U09",
+      "faction": "free-city",
+      "faction_ko": "자유도시",
+      "name": "작업장 박격포조",
+      "name_en": "workshop mortar crew",
+      "tier": "L3",
+      "class_id": "heavy",
+      "platform": "foot",
+      "stack": 4,
+      "combat": {
+        "damage": 45,
+        "toughness": 8,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 1.0,
+      "width_m": 1.0,
+      "weapons": [
+        "F-M3-02"
+      ],
+      "role": "장교 없이 경험으로 쏜다: 산포 큼(명중 −30%). 장교 포섭 시 정상",
+      "cost": "사람 4, 포탄",
+      "upkeep": "식량 4, 포탄",
+      "requires": [
+        "officer?"
+      ],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "제안"
+    },
+    {
+      "id": "F-U10",
+      "faction": "free-city",
+      "faction_ko": "자유도시",
+      "name": "수방사 장갑차",
+      "name_en": "capital-defence armoured vehicle",
+      "tier": "L3",
+      "class_id": "vehicle",
+      "platform": "vehicle",
+      "stack": 3,
+      "combat": {
+        "damage": 30,
+        "toughness": 60,
+        "pursuit": 10,
+        "screen": 0
+      },
+      "speed_mps": 6.0,
+      "width_m": 3.0,
+      "weapons": [
+        "F-V3-01"
+      ],
+      "role": "하드웨어는 있다. 장교가 없으면 명령 지연 ×2, 연합 사격 불가",
+      "cost": "수방사 장비, 연료",
+      "upkeep": "연료 12",
+      "requires": [
+        "officer?"
+      ],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "fuel 12",
+      "exposure_heat": 3,
+      "noise": "loud",
+      "basis": "제안"
+    },
+    {
+      "id": "F-U11",
+      "faction": "free-city",
+      "faction_ko": "자유도시",
+      "name": "신경 연결 조종사",
+      "name_en": "neural-link pilot",
+      "tier": "L3",
+      "class_id": "special",
+      "platform": "foot",
+      "stack": 2,
+      "combat": {
+        "damage": 12,
+        "toughness": 10,
+        "pursuit": 0,
+        "screen": 10
+      },
+      "speed_mps": 1.3,
+      "width_m": 0.6,
+      "weapons": [
+        "F-H3-02",
+        "F-B3-01"
+      ],
+      "role": "수술받은 조종사가 포획 기계를 생각으로 조종한다(로밍 기계 유래 병종의 성능 상한을 연다)",
+      "cost": "의사, 수술, 사람 2",
+      "upkeep": "식량 2, 의료 1",
+      "requires": [
+        "doctor"
+      ],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "제안"
+    },
+    {
+      "id": "F-U12",
+      "faction": "free-city",
+      "faction_ko": "자유도시",
+      "name": "수방사 전차",
+      "name_en": "capital-defence tank",
+      "tier": "L4",
+      "class_id": "vehicle",
+      "platform": "vehicle",
+      "stack": 4,
+      "combat": {
+        "damage": 100,
+        "toughness": 120,
+        "pursuit": 10,
+        "screen": 0
+      },
+      "speed_mps": 5.0,
+      "width_m": 3.6,
+      "weapons": [
+        "F-V4-01"
+      ],
+      "role": "장교가 없으면 이동 불가 고정 포대로만. 장교 포섭·포로 시 기동전 가능",
+      "cost": "수방사 장비, 연료 대량, 장교",
+      "upkeep": "연료 20",
+      "requires": [
+        "officer"
+      ],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "fuel 20",
+      "exposure_heat": 4,
+      "noise": "loud",
+      "basis": "제안"
+    },
+    {
+      "id": "F-U13",
+      "faction": "free-city",
+      "faction_ko": "자유도시",
+      "name": "의료로봇 야전병원",
+      "name_en": "surgical-robot field hospital",
+      "tier": "L4",
+      "class_id": "medic",
+      "platform": "emplacement",
+      "stack": 4,
+      "combat": {
+        "damage": 0,
+        "toughness": 30,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 0,
+      "width_m": 3.0,
+      "weapons": [
+        "F-H4-03"
+      ],
+      "role": "부상 복귀 0.95, 중상자도 돌아온다. 아크 소프트웨어 필요 → 아크가 끌 수 있다",
+      "cost": "의사, 의료로봇, 라이선스",
+      "upkeep": "전력, 의료 3, 라이선스",
+      "requires": [
+        "doctor",
+        "arc_key"
+      ],
+      "software": "licensed",
+      "backdoor_risk": 3,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "제안"
+    },
+    {
+      "id": "F-U14",
+      "faction": "free-city",
+      "faction_ko": "자유도시",
+      "name": "작업대 투하 드론조",
+      "name_en": "workbench drop-drone team",
+      "tier": "L3",
+      "class_id": "drone",
+      "platform": "foot",
+      "stack": 3,
+      "combat": {
+        "damage": 30,
+        "toughness": 6,
+        "pursuit": 0,
+        "screen": 10
+      },
+      "speed_mps": 1.4,
+      "width_m": 0.6,
+      "weapons": [
+        "F-D3-02"
+      ],
+      "role": "수동 전파 조종으로 소량 폭약 투하. 전파라 아크·정부의 방해에 약하다",
+      "cost": "부품, 폭약, 전지",
+      "upkeep": "전지 6",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "battery 6",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "v3 \"작업대 투하 드론조\"(덮어씀)"
+    },
+    {
+      "id": "F-U15",
+      "faction": "free-city",
+      "faction_ko": "자유도시",
+      "name": "신경 직결 사족 기체대",
+      "name_en": "neural-direct quadruped troop",
+      "tier": "L5",
+      "class_id": "machine",
+      "platform": "mount",
+      "stack": 3,
+      "combat": {
+        "damage": 40,
+        "toughness": 50,
+        "pursuit": 20,
+        "screen": 10
+      },
+      "speed_mps": 3.0,
+      "width_m": 1.4,
+      "weapons": [
+        "R-X2-01",
+        "F-B3-01"
+      ],
+      "role": "포획한 점검 로봇을 수술받은 조종사가 생각으로 몬다: 계단·터널에서 최강. 아크 키 없으면 반응 늦음",
+      "cost": "회수(M2), 조종사, 정비",
+      "upkeep": "전지 8, 의료 1",
+      "requires": [
+        "doctor",
+        "salvage:M2",
+        "arc_key?"
+      ],
+      "software": "licensed",
+      "backdoor_risk": 1,
+      "ammo": "",
+      "power": "battery 8",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "제안"
+    },
+    {
+      "id": "A-U01",
+      "faction": "arc",
+      "faction_ko": "아크",
+      "name": "경비 소총대",
+      "name_en": "guard riflemen",
+      "tier": "L1",
+      "class_id": "rifle",
+      "platform": "foot",
+      "stack": 4,
+      "combat": {
+        "damage": 22,
+        "toughness": 10,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 1.4,
+      "width_m": 0.6,
+      "weapons": [
+        "A-S1-01"
+      ],
+      "role": "소수. 성소 출입구 자위만",
+      "cost": "사람 4",
+      "upkeep": "식량 4, 탄약 20/인",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "rifle 20/인",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "제안"
+    },
+    {
+      "id": "A-U02",
+      "faction": "arc",
+      "faction_ko": "아크",
+      "name": "기계신체 신도대",
+      "name_en": "mechanical-body devotees",
+      "tier": "L1",
+      "class_id": "line",
+      "platform": "foot",
+      "stack": 5,
+      "combat": {
+        "damage": 30,
+        "toughness": 34,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 1.2,
+      "width_m": 0.7,
+      "weapons": [
+        "A-B1-01"
+      ],
+      "role": "근력·내한이 강하다. 명령 입력식이라 반응이 늦다(명령 지연 ×1.5)",
+      "cost": "사람 5, 기계신체",
+      "upkeep": "식량 3, 전지 3",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "battery 3",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "v4 확정 \"기계신체\""
+    },
+    {
+      "id": "A-U03",
+      "faction": "arc",
+      "faction_ko": "아크",
+      "name": "곤충 정찰조",
+      "name_en": "insect scouts",
+      "tier": "L1",
+      "class_id": "skirm",
+      "platform": "foot",
+      "stack": 2,
+      "combat": {
+        "damage": 0,
+        "toughness": 6,
+        "pursuit": 0,
+        "screen": 24
+      },
+      "speed_mps": 1.6,
+      "width_m": 0.5,
+      "weapons": [
+        "A-X1-01"
+      ],
+      "role": "원격 조종 곤충으로 정찰(정찰 등급 +1). 전투력 없음",
+      "cost": "사람 2",
+      "upkeep": "전지 1",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "battery 1",
+      "exposure_heat": 0,
+      "noise": "quiet",
+      "basis": "생태도감 v3 18 인용"
+    },
+    {
+      "id": "A-U04",
+      "faction": "arc",
+      "faction_ko": "아크",
+      "name": "그물 포획조",
+      "name_en": "net capture team",
+      "tier": "L1",
+      "class_id": "antidrone",
+      "platform": "foot",
+      "stack": 3,
+      "combat": {
+        "damage": 6,
+        "toughness": 10,
+        "pursuit": 0,
+        "screen": 12
+      },
+      "speed_mps": 1.4,
+      "width_m": 0.6,
+      "weapons": [
+        "A-S1-02"
+      ],
+      "role": "드론을 떨어뜨려 산 채로 잡는다 → 길들이기 재료",
+      "cost": "사람 3, 그물",
+      "upkeep": "식량 3",
+      "requires": [],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "v3 \"그물 던지기조\"(재해석)"
+    },
+    {
+      "id": "A-U05",
+      "faction": "arc",
+      "faction_ko": "아크",
+      "name": "전자전 조",
+      "name_en": "electronic warfare cell",
+      "tier": "L2",
+      "class_id": "ew",
+      "platform": "foot",
+      "stack": 3,
+      "combat": {
+        "damage": 0,
+        "toughness": 8,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 1.3,
+      "width_m": 0.6,
+      "weapons": [
+        "A-W2-01",
+        "A-W2-02"
+      ],
+      "role": "아크 소프트웨어가 든 남의 장비(전차 사격통제, 드론, 의료로봇, 방공)를 끈다. 쓰는 즉시 상대 신뢰 −, 상대가 소프트웨어를 걷어낼 동기 +",
+      "cost": "사람 3, 접근 거리",
+      "upkeep": "전지 4",
+      "requires": [],
+      "software": "arc_held",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "battery 4",
+      "exposure_heat": 0,
+      "noise": "quiet",
+      "basis": "제안"
+    },
+    {
+      "id": "A-U06",
+      "faction": "arc",
+      "faction_ko": "아크",
+      "name": "길들인 드론 무리",
+      "name_en": "tamed drone swarm",
+      "tier": "L3",
+      "class_id": "drone",
+      "platform": "foot",
+      "stack": 1,
+      "combat": {
+        "damage": 35,
+        "toughness": 6,
+        "pursuit": 0,
+        "screen": 20
+      },
+      "speed_mps": 6.0,
+      "width_m": 1.0,
+      "weapons": [
+        "A-X3-01"
+      ],
+      "role": "포획·제어 모듈 이식한 옛 무리. 보충 불가, 쓸수록 준다",
+      "cost": "회수(M8), 제어 모듈",
+      "upkeep": "전력 6",
+      "requires": [
+        "salvage:M8"
+      ],
+      "software": "arc_held",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "battery 6",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "생태도감 v3 16 / 1장 인용"
+    },
+    {
+      "id": "A-U07",
+      "faction": "arc",
+      "faction_ko": "아크",
+      "name": "깨운 물류 로봇 무리",
+      "name_en": "woken logistics robots",
+      "tier": "L3",
+      "class_id": "machine",
+      "platform": "foot",
+      "stack": 4,
+      "combat": {
+        "damage": 15,
+        "toughness": 40,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 1.0,
+      "width_m": 1.0,
+      "weapons": [
+        "A-X3-02"
+      ],
+      "role": "일꾼·이동 방벽. 아크는 고치지 못해 계속 준다",
+      "cost": "회수(M5)",
+      "upkeep": "전력 4",
+      "requires": [
+        "salvage:M5"
+      ],
+      "software": "arc_held",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "battery 4",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "생태도감 v3 13 인용"
+    },
+    {
+      "id": "A-U08",
+      "faction": "arc",
+      "faction_ko": "아크",
+      "name": "깨운 경계 초소",
+      "name_en": "woken sentry post",
+      "tier": "L3",
+      "class_id": "emplacement",
+      "platform": "emplacement",
+      "stack": 1,
+      "combat": {
+        "damage": 50,
+        "toughness": 60,
+        "pursuit": 0,
+        "screen": 10
+      },
+      "speed_mps": 0,
+      "width_m": 2.0,
+      "weapons": [
+        "A-X3-03"
+      ],
+      "role": "봉쇄 감시망을 다시 켠다. 지나가는 누구에게나 쏠 수 있다(통제 실패 위험)",
+      "cost": "회수(M6)",
+      "upkeep": "전력 3",
+      "requires": [
+        "salvage:M6"
+      ],
+      "software": "arc_held",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "battery 3",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "생태도감 v3 14 인용"
+    },
+    {
+      "id": "A-U09",
+      "faction": "arc",
+      "faction_ko": "아크",
+      "name": "정지 장치 관리조",
+      "name_en": "shutdown keyholders",
+      "tier": "L4",
+      "class_id": "command",
+      "platform": "foot",
+      "stack": 2,
+      "combat": {
+        "damage": 0,
+        "toughness": 8,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 1.3,
+      "width_m": 0.6,
+      "weapons": [
+        "A-W3-03",
+        "A-W2-01"
+      ],
+      "role": "고대 병기의 정지·공동 열쇠를 쥔다. 다른 세력과 라이선스 계약을 맺는 단위",
+      "cost": "사람 2(관리자. 인선 미정)",
+      "upkeep": "전력 2",
+      "requires": [],
+      "software": "arc_held",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "v4 sim \"정지 장치·공동 열쇠\"(토론안)"
+    },
+    {
+      "id": "A-U10",
+      "faction": "arc",
+      "faction_ko": "아크",
+      "name": "깨운 무인 차량",
+      "name_en": "woken UGV",
+      "tier": "L4",
+      "class_id": "machine",
+      "platform": "vehicle",
+      "stack": 1,
+      "combat": {
+        "damage": 70,
+        "toughness": 120,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 3.0,
+      "width_m": 2.8,
+      "weapons": [
+        "A-X4-04"
+      ],
+      "role": "깨울 수는 있으나 고치지 못한다. 수리는 정부 정비창 계약 필요",
+      "cost": "회수(M7)",
+      "upkeep": "전력 8",
+      "requires": [
+        "salvage:M7",
+        "gov_repair?"
+      ],
+      "software": "arc_held",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 3,
+      "noise": "loud",
+      "basis": "생태도감 v3 15 인용"
+    },
+    {
+      "id": "A-U11",
+      "faction": "arc",
+      "faction_ko": "아크",
+      "name": "신경 직결 기계신체 정예",
+      "name_en": "neural-direct mechanical elite",
+      "tier": "L5",
+      "class_id": "special",
+      "platform": "foot",
+      "stack": 3,
+      "combat": {
+        "damage": 50,
+        "toughness": 45,
+        "pursuit": 10,
+        "screen": 0
+      },
+      "speed_mps": 1.6,
+      "width_m": 0.7,
+      "weapons": [
+        "A-B5-02"
+      ],
+      "role": "생각으로 움직이는 기계신체. 자유도시 의사의 수술을 받아야 한다(포섭·포로·계약)",
+      "cost": "자유도시 의사, 기계신체",
+      "upkeep": "전지 4, 의료 1",
+      "requires": [
+        "doctor"
+      ],
+      "software": "arc_held",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "battery 4",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "제안"
+    },
+    {
+      "id": "R-U01",
+      "faction": "salvage",
+      "faction_ko": "로밍 기계 유래(공용)",
+      "name": "짐 나르는 서비스 로봇",
+      "name_en": "cargo service robot",
+      "tier": "L1",
+      "class_id": "support",
+      "platform": "vehicle",
+      "stack": 1,
+      "combat": {
+        "damage": 0,
+        "toughness": 20,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 2.0,
+      "width_m": 0.8,
+      "weapons": [
+        "R-X1-07"
+      ],
+      "role": "보급 운반(보급일 +1). 위험 1, 누구나 포획 가능",
+      "cost": "포획",
+      "upkeep": "전력 1",
+      "requires": [
+        "salvage:M1"
+      ],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "battery 2",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "생태도감 v3 10 인용"
+    },
+    {
+      "id": "R-U02",
+      "faction": "salvage",
+      "faction_ko": "로밍 기계 유래(공용)",
+      "name": "조련 사족 기체",
+      "name_en": "stabilised quadruped",
+      "tier": "L2",
+      "class_id": "mounted",
+      "platform": "mount",
+      "stack": 3,
+      "combat": {
+        "damage": 30,
+        "toughness": 40,
+        "pursuit": 10,
+        "screen": 10
+      },
+      "speed_mps": 2.5,
+      "width_m": 1.4,
+      "weapons": [
+        "R-X2-01"
+      ],
+      "role": "포획(사람) + 정비(하드웨어) + 신호 확인(아크). 기수는 명령식, 신경 조종사면 상위",
+      "cost": "회수(M2), 정비, 아크 확인",
+      "upkeep": "전지 8",
+      "requires": [
+        "salvage:M2",
+        "arc_key?"
+      ],
+      "software": "licensed",
+      "backdoor_risk": 1,
+      "ammo": "",
+      "power": "battery 8",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "게임 stabilized-robot(canon-pending) / 생태도감 v3 11"
+    },
+    {
+      "id": "R-U03",
+      "faction": "salvage",
+      "faction_ko": "로밍 기계 유래(공용)",
+      "name": "개조 무인 지상 차량",
+      "name_en": "converted UGV",
+      "tier": "L3",
+      "class_id": "machine",
+      "platform": "vehicle",
+      "stack": 1,
+      "combat": {
+        "damage": 60,
+        "toughness": 110,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 3.0,
+      "width_m": 2.8,
+      "weapons": [
+        "R-X3-02"
+      ],
+      "role": "회수 + 정비 + 아크 키. 세력마다 완성도 다름",
+      "cost": "회수(M7), 연료",
+      "upkeep": "연료 8",
+      "requires": [
+        "salvage:M7",
+        "arc_key?"
+      ],
+      "software": "licensed",
+      "backdoor_risk": 2,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 3,
+      "noise": "loud",
+      "basis": "생태도감 v3 15"
+    },
+    {
+      "id": "R-U04",
+      "faction": "salvage",
+      "faction_ko": "로밍 기계 유래(공용)",
+      "name": "수색 발광 드론 무리",
+      "name_en": "searchlight insect-drones",
+      "tier": "L3",
+      "class_id": "drone",
+      "platform": "foot",
+      "stack": 1,
+      "combat": {
+        "damage": 10,
+        "toughness": 4,
+        "pursuit": 0,
+        "screen": 24
+      },
+      "speed_mps": 4.0,
+      "width_m": 1.0,
+      "weapons": [
+        "R-X3-03"
+      ],
+      "role": "어둠 속 수색. 빛을 내 \"보이면 온다\"의 위험을 키운다(노출 +2)",
+      "cost": "회수(M12)",
+      "upkeep": "전력 3",
+      "requires": [
+        "salvage:M12",
+        "arc_key?"
+      ],
+      "software": "licensed",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 2,
+      "noise": "normal",
+      "basis": "구 위키 G25 \"등불개미\"(제안 재사용)"
+    },
+    {
+      "id": "R-U05",
+      "faction": "salvage",
+      "faction_ko": "로밍 기계 유래(공용)",
+      "name": "유압 공성 중장비",
+      "name_en": "hydraulic siege machine",
+      "tier": "L4",
+      "class_id": "siege",
+      "platform": "engine",
+      "stack": 1,
+      "combat": {
+        "damage": 0,
+        "toughness": 90,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 1.0,
+      "width_m": 3.5,
+      "weapons": [
+        "R-X4-04"
+      ],
+      "role": "셔터·차단문 파쇄(장벽 피해 큼). 유압 정비는 정부·자유도시",
+      "cost": "회수(M13), 유압",
+      "upkeep": "유압 8",
+      "requires": [
+        "salvage:M13"
+      ],
+      "software": "none",
+      "backdoor_risk": 0,
+      "ammo": "",
+      "power": "hydraulic 8",
+      "exposure_heat": 2,
+      "noise": "loud",
+      "basis": "구 위키 G26 \"철공룡\"(제안 재사용)"
+    },
+    {
+      "id": "R-U06",
+      "faction": "salvage",
+      "faction_ko": "로밍 기계 유래(공용)",
+      "name": "깨운 방공 포대",
+      "name_en": "woken air-defence",
+      "tier": "L4",
+      "class_id": "emplacement",
+      "platform": "emplacement",
+      "stack": 3,
+      "combat": {
+        "damage": 85,
+        "toughness": 80,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 0,
+      "width_m": 4.0,
+      "weapons": [
+        "R-X4-05"
+      ],
+      "role": "정부 하드웨어 + 아크 소프트웨어 + 정지 장치(아크). 혼자서는 아무도 못 쓴다",
+      "cost": "회수(M11), 계약",
+      "upkeep": "전력, 라이선스",
+      "requires": [
+        "salvage:M11",
+        "arc_key",
+        "gov_repair"
+      ],
+      "software": "arc_held",
+      "backdoor_risk": 3,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 0,
+      "noise": "normal",
+      "basis": "v4 sim(토론안)"
+    },
+    {
+      "id": "R-U07",
+      "faction": "salvage",
+      "faction_ko": "로밍 기계 유래(공용)",
+      "name": "되살린 장갑 기관차",
+      "name_en": "revived armoured locomotive",
+      "tier": "L5",
+      "class_id": "rail",
+      "platform": "rail",
+      "stack": 6,
+      "combat": {
+        "damage": 60,
+        "toughness": 200,
+        "pursuit": 0,
+        "screen": 0
+      },
+      "speed_mps": 6.0,
+      "width_m": 3.0,
+      "weapons": [
+        "R-X5-06"
+      ],
+      "role": "선로 위 유일 전쟁 기계. 복원(정부·자유도시 기술자) + 켜기(아크)",
+      "cost": "회수(M14), 기술자, 아크 키",
+      "upkeep": "연료 20",
+      "requires": [
+        "salvage:M14",
+        "gov_repair",
+        "arc_key"
+      ],
+      "software": "arc_held",
+      "backdoor_risk": 3,
+      "ammo": "",
+      "power": "",
+      "exposure_heat": 4,
+      "noise": "loud",
+      "basis": "v3 아크 유닛(덮어씀)"
+    }
+  ],
+  "weapons": [
+    {
+      "code": "A-B1-01",
+      "name": "기계신체(명령 입력식)",
+      "name_en": "mechanical body (command-input)",
+      "tier": "L1",
+      "note": "명령 지연 벌칙. 근력·내한",
+      "basis": "v4 확정 \"기계신체\""
+    },
+    {
+      "code": "A-B5-02",
+      "name": "신경 직결 기계신체",
+      "name_en": "neural-direct mechanical body",
+      "tier": "L5",
+      "note": "자유도시 의사 수술 필요",
+      "basis": "제안"
+    },
+    {
+      "code": "A-S1-01",
+      "name": "경비 소총",
+      "name_en": "guard rifle",
+      "tier": "L1",
+      "note": "소수. 자위 수준",
+      "basis": "제안"
+    },
+    {
+      "code": "A-S1-02",
+      "name": "그물 발사기",
+      "name_en": "net launcher",
+      "tier": "L1",
+      "note": "드론 포획 → 길들이기 재료",
+      "basis": "v3 \"그물 던지기조\"(재해석)"
+    },
+    {
+      "code": "A-W2-01",
+      "name": "정지 신호 송출기",
+      "name_en": "shutdown signal emitter",
+      "tier": "L2",
+      "note": "아크 소프트웨어가 든 남의 장비를 끈다. 쓰면 신뢰 하락",
+      "basis": "v4 sim \"정지 장치\"(토론안)"
+    },
+    {
+      "code": "A-W2-02",
+      "name": "제어 모듈",
+      "name_en": "control module",
+      "tier": "L2",
+      "note": "옛 기계에 이식해 아크 쪽으로 돌림",
+      "basis": "소설 1장 119행 인용"
+    },
+    {
+      "code": "A-W3-03",
+      "name": "공동 열쇠 단말",
+      "name_en": "joint key terminal",
+      "tier": "L3",
+      "note": "라이선스를 남에게 빌려주는 실물 열쇠(옛 \"프로토콜 카드\" 대체)",
+      "basis": "제안"
+    },
+    {
+      "code": "A-X1-01",
+      "name": "원격 조종 곤충",
+      "name_en": "remote-steered insects",
+      "tier": "L1",
+      "note": "초소형 정찰",
+      "basis": "생태도감 v3 18 인용"
+    },
+    {
+      "code": "A-X3-01",
+      "name": "길들인 군집 드론 무리",
+      "name_en": "tamed drone swarm",
+      "tier": "L3",
+      "note": "보충 불가. 쓸수록 준다",
+      "basis": "생태도감 v3 16 / 1장 \"떠돌던 드론\""
+    },
+    {
+      "code": "A-X3-02",
+      "name": "깨운 물류 로봇 무리",
+      "name_en": "woken logistics robot crew",
+      "tier": "L3",
+      "note": "일꾼·방벽. 수리 불가",
+      "basis": "생태도감 v3 13 인용"
+    },
+    {
+      "code": "A-X3-03",
+      "name": "깨운 무인 경계 초소",
+      "name_en": "woken unmanned sentry post",
+      "tier": "L3",
+      "note": "봉쇄 감시망 재가동",
+      "basis": "생태도감 v3 14 인용"
+    },
+    {
+      "code": "A-X4-04",
+      "name": "귀환 무인 차량(깨움)",
+      "name_en": "woken returning UGV",
+      "tier": "L4",
+      "note": "수리는 정부 하드웨어 필요",
+      "basis": "생태도감 v3 15 인용"
+    },
+    {
+      "code": "F-B3-01",
+      "name": "신경 조종 헬멧",
+      "name_en": "neural control helmet",
+      "tier": "L3",
+      "note": "수술받은 조종사가 기계를 생각으로 조종",
+      "basis": "제안"
+    },
+    {
+      "code": "F-D2-01",
+      "name": "유선 정찰 드론(광섬유)",
+      "name_en": "fibre-optic tethered scout drone",
+      "tier": "L2",
+      "note": "불발 탄두 지대의 광섬유(M9) 회수로 자력 제작",
+      "basis": "생태도감 v3 17 인용"
+    },
+    {
+      "code": "F-D3-02",
+      "name": "작업대 투하 드론",
+      "name_en": "workbench drop drone",
+      "tier": "L3",
+      "note": "수동 전파 조종, 소량 폭약",
+      "basis": "v3 \"작업대 투하 드론조\"(덮어씀)"
+    },
+    {
+      "code": "F-D5-03",
+      "name": "군집 드론 편대",
+      "name_en": "drone swarm wing",
+      "tier": "L5",
+      "note": "군집 제어는 아크 소프트웨어 필요",
+      "basis": "제안"
+    },
+    {
+      "code": "F-E1-01",
+      "name": "정비 공구·바리케이드 자재",
+      "name_en": "maintenance tools and barricade stock",
+      "tier": "L1",
+      "note": "무기 정비, 방벽",
+      "basis": "제안"
+    },
+    {
+      "code": "F-H1-01",
+      "name": "진료 가방·수술 도구",
+      "name_en": "medical bag and surgical kit",
+      "tier": "L1",
+      "note": "의사 동행: 부상 복귀 높음",
+      "basis": "제안"
+    },
+    {
+      "code": "F-H3-02",
+      "name": "신경 연결 수술",
+      "name_en": "neural-link surgery",
+      "tier": "L3",
+      "note": "조종사 양성. 실패 시 마비 위험",
+      "basis": "v4 sim round2 \"부분 성공, 떨림, 열\""
+    },
+    {
+      "code": "F-H4-03",
+      "name": "의료로봇 수술대",
+      "name_en": "surgical robot",
+      "tier": "L4",
+      "note": "아크 소프트웨어 필요. 백도어 위험 3",
+      "basis": "v4 비용 구조 \"의료로봇\""
+    },
+    {
+      "code": "F-M2-01",
+      "name": "수방사 기관총(거치)",
+      "name_en": "stock machine gun (fixed)",
+      "tier": "L2",
+      "note": "분대 단위 운용은 장교 불필요",
+      "basis": "제안"
+    },
+    {
+      "code": "F-M3-02",
+      "name": "작업장 박격포",
+      "name_en": "workshop mortar",
+      "tier": "L3",
+      "note": "조준은 경험 위주, 장교 없으면 명중 저하",
+      "basis": "v3 \"작업장 박격포조\"(덮어씀)"
+    },
+    {
+      "code": "F-S1-01",
+      "name": "수방사 보관 소총",
+      "name_en": "capital-defence stock rifle",
+      "tier": "L1",
+      "note": "징병제 기초군사훈련으로 누구나 다룬다",
+      "basis": "제안"
+    },
+    {
+      "code": "F-S1-02",
+      "name": "작업 도구·빈 총 총검",
+      "name_en": "work tools and empty-rifle bayonet",
+      "tier": "L1",
+      "note": "민병 근접",
+      "basis": "Era-Arms 인용"
+    },
+    {
+      "code": "F-V1-02",
+      "name": "궤도 수동차",
+      "name_en": "rail handcar",
+      "tier": "L1",
+      "note": "저소음 선로 수송",
+      "basis": "계획 63 rail_handcar"
+    },
+    {
+      "code": "F-V2-03",
+      "name": "전동 이륜차",
+      "name_en": "electric motorbike",
+      "tier": "L2",
+      "note": "전지 병목",
+      "basis": "레거시 electric-bike(canon-pending)"
+    },
+    {
+      "code": "F-V3-01",
+      "name": "수방사 장갑차",
+      "name_en": "capital-defence armoured vehicle",
+      "tier": "L3",
+      "note": "장교 없으면 지휘 벌칙(명령 지연·연합 사격 불가)",
+      "basis": "제안"
+    },
+    {
+      "code": "F-V4-01",
+      "name": "수방사 전차",
+      "name_en": "capital-defence tank",
+      "tier": "L4",
+      "note": "장교 포섭·포로 없이는 고정 포대로만",
+      "basis": "제안"
+    },
+    {
+      "code": "G-C4-01",
+      "name": "사격통제 단말(아크 라이선스)",
+      "name_en": "fire-control terminal (Arc-licensed)",
+      "tier": "L4",
+      "note": "정밀 화기 명중 정상화. 백도어 위험 2",
+      "basis": "제안"
+    },
+    {
+      "code": "G-D4-01",
+      "name": "감시 드론(복원 군용)",
+      "name_en": "restored military surveillance drone",
+      "tier": "L4",
+      "note": "기체는 정부 정비창, 비행 제어는 아크 키",
+      "basis": "제안"
+    },
+    {
+      "code": "G-E2-01",
+      "name": "유압 절단기·폭약",
+      "name_en": "hydraulic cutter and charges",
+      "tier": "L2",
+      "note": "셔터·차단문 돌파",
+      "basis": "계획 63 shutter_cutter"
+    },
+    {
+      "code": "G-H1-01",
+      "name": "응급처치 키트",
+      "name_en": "first-aid kit",
+      "tier": "L1",
+      "note": "병원은 있으나 의사 없음 → 응급까지만",
+      "basis": "제안"
+    },
+    {
+      "code": "G-M2-01",
+      "name": "분대지원 기관총",
+      "name_en": "squad machine gun",
+      "tier": "L2",
+      "note": "제압 사격, 탄약 소모 큼",
+      "basis": "Era-Arms 인용"
+    },
+    {
+      "code": "G-M2-02",
+      "name": "81 mm 박격포",
+      "name_en": "81 mm mortar",
+      "tier": "L2",
+      "note": "간접 사격. 장교 사격 지휘 필요",
+      "basis": "제안"
+    },
+    {
+      "code": "G-S1-01",
+      "name": "제식 소총(K2 계열 복원)",
+      "name_en": "service rifle (K2-pattern, restored)",
+      "tier": "L1",
+      "note": "정비창에서 부품 생산. 호환 탄약 자급",
+      "basis": "제안"
+    },
+    {
+      "code": "G-S1-02",
+      "name": "총검·제식 봉",
+      "name_en": "bayonet and baton",
+      "tier": "L1",
+      "note": "탄약 0일 때 근접 프로필",
+      "basis": "Era-Arms 인용"
+    },
+    {
+      "code": "G-S1-03",
+      "name": "진압 방패",
+      "name_en": "riot shield",
+      "tier": "L1",
+      "note": "순찰 방패대",
+      "basis": "Era-Arms \"순찰 방패\" 인용"
+    },
+    {
+      "code": "G-T3-01",
+      "name": "무반동포",
+      "name_en": "recoilless rifle",
+      "tier": "L3",
+      "note": "대장갑·대기계",
+      "basis": "제안"
+    },
+    {
+      "code": "G-V2-02",
+      "name": "궤도 모터카",
+      "name_en": "rail motorcar",
+      "tier": "L2",
+      "note": "지하 선로 기동, 전지",
+      "basis": "계획 63 rail_motorcar"
+    },
+    {
+      "code": "G-V3-01",
+      "name": "복원 장갑차(K200 계열)",
+      "name_en": "restored tracked APC",
+      "tier": "L3",
+      "note": "연료·윤활유·트랙 정비",
+      "basis": "제안"
+    },
+    {
+      "code": "G-V4-01",
+      "name": "복원 전차(K1 계열)",
+      "name_en": "restored main battle tank",
+      "tier": "L4",
+      "note": "사격통제 컴퓨터는 아크 라이선스 없으면 수동 조준",
+      "basis": "제안"
+    },
+    {
+      "code": "G-V4-02",
+      "name": "자주포·다연장 차량",
+      "name_en": "self-propelled artillery",
+      "tier": "L4",
+      "note": "사격 제원 계산 소프트웨어 → 아크 라이선스",
+      "basis": "제안"
+    },
+    {
+      "code": "G-X4-01",
+      "name": "방공 포대(고대 방공 체계 복원)",
+      "name_en": "restored air-defence battery",
+      "tier": "L4",
+      "note": "하드웨어 정부 + 소프트웨어 아크 공동 병기",
+      "basis": "v4 sim \"방공 체계\"(토론안)"
+    },
+    {
+      "code": "G-X5-01",
+      "name": "원격 지휘 무인 지상 차량",
+      "name_en": "remote-commanded unmanned ground vehicle",
+      "tier": "L5",
+      "note": "귀환 무인 차량(M7) 회수 + 장교 원격 지휘 + 아크 키",
+      "basis": "생태도감 v3 15 인용"
+    },
+    {
+      "code": "R-X1-07",
+      "name": "짐 나르는 서비스 로봇",
+      "name_en": "cargo service robot",
+      "tier": "L1",
+      "note": "서비스 로봇(M1)",
+      "basis": "생태도감 v3 10"
+    },
+    {
+      "code": "R-X2-01",
+      "name": "조련 사족 기체",
+      "name_en": "stabilised quadruped machine",
+      "tier": "L2",
+      "note": "점검 로봇(M2) 포획 + 정비 + 신호 확인",
+      "basis": "게임 stabilized-robot / 생태도감 v3 11"
+    },
+    {
+      "code": "R-X3-02",
+      "name": "개조 무인 지상 차량",
+      "name_en": "converted unmanned ground vehicle",
+      "tier": "L3",
+      "note": "귀환 무인 차량(M7)",
+      "basis": "생태도감 v3 15"
+    },
+    {
+      "code": "R-X3-03",
+      "name": "수색 발광 드론 무리",
+      "name_en": "searchlight insect-drones",
+      "tier": "L3",
+      "note": "등불개미(M12)",
+      "basis": "구 위키 G25 \"등불개미\"(제안 재사용)"
+    },
+    {
+      "code": "R-X4-04",
+      "name": "유압 공성 중장비",
+      "name_en": "hydraulic siege heavy machine",
+      "tier": "L4",
+      "note": "철공룡(M13)",
+      "basis": "구 위키 G26 \"철공룡\"(제안 재사용)"
+    },
+    {
+      "code": "R-X4-05",
+      "name": "깨운 방공 포대",
+      "name_en": "woken air-defence battery",
+      "tier": "L4",
+      "note": "방공 체계(M11) 공동 병기",
+      "basis": "v4 sim(토론안)"
+    },
+    {
+      "code": "R-X5-06",
+      "name": "되살린 장갑 기관차",
+      "name_en": "revived armoured locomotive",
+      "tier": "L5",
+      "note": "장갑 기관차(M14). 하드웨어 복원은 정부·자유도시 기술자",
+      "basis": "v3 아크 유닛(덮어씀)"
+    }
+  ],
+  "tech_tree": {
+    "government": [
+      {
+        "tier": "L1",
+        "name": "제식 군대",
+        "opens": "제식 소총·방패·장교 지휘·응급처치·정비창",
+        "unlock": "시작",
+        "weapons": [
+          "G-S1-01",
+          "G-S1-03",
+          "G-H1-01"
+        ],
+        "units": [
+          "G-U01",
+          "G-U02",
+          "G-U03",
+          "G-U04"
+        ]
+      },
+      {
+        "tier": "L2",
+        "name": "화력 복원",
+        "opens": "기관총·박격포·돌파 공병·궤도 모터카",
+        "unlock": "정비창 가동 + 장교 지휘조 보유",
+        "weapons": [
+          "G-M2-01",
+          "G-M2-02",
+          "G-E2-01",
+          "G-V2-02"
+        ],
+        "units": [
+          "G-U05",
+          "G-U06",
+          "G-U07",
+          "G-U08"
+        ]
+      },
+      {
+        "tier": "L3",
+        "name": "기동 복원",
+        "opens": "장갑차·대기계 무반동포",
+        "unlock": "연료 비축 120일 + 대형 기계 1회 격파",
+        "weapons": [
+          "G-V3-01",
+          "G-T3-01"
+        ],
+        "units": [
+          "G-U09",
+          "G-U10"
+        ]
+      },
+      {
+        "tier": "L4",
+        "name": "첨단 병기(라이선스 갈림길)",
+        "opens": "전차·자주포·방공·감시 드론",
+        "unlock": "아크 라이선스 계약(사격통제 단말) 또는 수동 모드(명중 −40%, 드론·방공 불가). 방공은 방공 체계(M11) 복원 필요",
+        "weapons": [
+          "G-V4-01",
+          "G-V4-02",
+          "G-C4-01",
+          "G-X4-01",
+          "G-D4-01"
+        ],
+        "units": [
+          "G-U11",
+          "G-U12",
+          "G-U13",
+          "G-U14"
+        ]
+      },
+      {
+        "tier": "L5",
+        "name": "사람을 아끼는 전쟁",
+        "opens": "원격 지휘 무인 차량",
+        "unlock": "귀환 무인 차량(M7) 회수 + 장교 + 아크 키. 또는 자유도시 의사 포섭으로 부상 복귀 개선(의무 갈림길)",
+        "weapons": [
+          "G-X5-01"
+        ],
+        "units": [
+          "G-U15"
+        ]
+      }
+    ],
+    "free-city": [
+      {
+        "tier": "L1",
+        "name": "징병의 도시",
+        "opens": "징병 소총·민병·의사 구호·정비·궤도 수동차",
+        "unlock": "시작",
+        "weapons": [
+          "F-S1-01",
+          "F-S1-02",
+          "F-H1-01",
+          "F-E1-01",
+          "F-V1-02"
+        ],
+        "units": [
+          "F-U01",
+          "F-U02",
+          "F-U03",
+          "F-U04",
+          "F-U08"
+        ]
+      },
+      {
+        "tier": "L2",
+        "name": "수방사 창고 열기",
+        "opens": "거치 기관총·유선 드론·전동 이륜",
+        "unlock": "수방사 장비 창고 확보 + 광섬유 회수(M9)",
+        "weapons": [
+          "F-M2-01",
+          "F-D2-01",
+          "F-V2-03"
+        ],
+        "units": [
+          "F-U05",
+          "F-U06",
+          "F-U07"
+        ]
+      },
+      {
+        "tier": "L3",
+        "name": "장교 없는 무장",
+        "opens": "작업장 박격포·장갑차·투하 드론·신경 연결 수술",
+        "unlock": "장교 없음 벌칙 아래 운용. 신경 수술은 의사 2 + 성공 시험",
+        "weapons": [
+          "F-M3-02",
+          "F-V3-01",
+          "F-D3-02",
+          "F-H3-02",
+          "F-B3-01"
+        ],
+        "units": [
+          "F-U09",
+          "F-U10",
+          "F-U11",
+          "F-U14"
+        ]
+      },
+      {
+        "tier": "L4",
+        "name": "장교와 소프트웨어(두 갈림길)",
+        "opens": "수방사 전차·의료로봇 야전병원",
+        "unlock": "전차 기동은 장교 포섭·포로·망명(정부에서). 의료로봇은 아크 라이선스(백도어 위험 3)",
+        "weapons": [
+          "F-V4-01",
+          "F-H4-03"
+        ],
+        "units": [
+          "F-U12",
+          "F-U13"
+        ]
+      },
+      {
+        "tier": "L5",
+        "name": "생각으로 움직이는 기계",
+        "opens": "신경 직결 사족 기체대·군집 드론",
+        "unlock": "점검 로봇(M2) 포획 + 수술 조종사. 군집 제어는 아크 소프트웨어",
+        "weapons": [
+          "F-D5-03",
+          "R-X2-01"
+        ],
+        "units": [
+          "F-U15"
+        ]
+      }
+    ],
+    "arc": [
+      {
+        "tier": "L1",
+        "name": "성소의 자위",
+        "opens": "경비 소총·기계신체(명령식)·곤충 정찰·그물 포획",
+        "unlock": "시작",
+        "weapons": [
+          "A-S1-01",
+          "A-B1-01",
+          "A-X1-01",
+          "A-S1-02"
+        ],
+        "units": [
+          "A-U01",
+          "A-U02",
+          "A-U03",
+          "A-U04"
+        ]
+      },
+      {
+        "tier": "L2",
+        "name": "켜고 끄는 손",
+        "opens": "정지 신호 송출기·제어 모듈",
+        "unlock": "데이터센터 접근. 남의 장비에 아크 소프트웨어가 들어가 있어야 효과",
+        "weapons": [
+          "A-W2-01",
+          "A-W2-02"
+        ],
+        "units": [
+          "A-U05"
+        ]
+      },
+      {
+        "tier": "L3",
+        "name": "옛 기계 길들이기",
+        "opens": "길들인 드론 무리·물류 로봇·경계 초소",
+        "unlock": "그물 포획·회수(M8, M5, M6) + 제어 모듈 이식. 보충 불가",
+        "weapons": [
+          "A-X3-01",
+          "A-X3-02",
+          "A-X3-03",
+          "A-W3-03"
+        ],
+        "units": [
+          "A-U06",
+          "A-U07",
+          "A-U08"
+        ]
+      },
+      {
+        "tier": "L4",
+        "name": "라이선스 외교",
+        "opens": "정지 장치 관리·깨운 무인 차량",
+        "unlock": "공동 열쇠 계약으로 정부·자유도시 장비에 들어감. 무인 차량 수리는 정부 정비창 계약",
+        "weapons": [
+          "A-X4-04"
+        ],
+        "units": [
+          "A-U09",
+          "A-U10"
+        ]
+      },
+      {
+        "tier": "L5",
+        "name": "생각하는 몸",
+        "opens": "신경 직결 기계신체 정예",
+        "unlock": "자유도시 의사 포섭·포로·계약(수술)",
+        "weapons": [
+          "A-B5-02"
+        ],
+        "units": [
+          "A-U11"
+        ]
+      }
+    ],
+    "salvage": [
+      {
+        "tier": "L1",
+        "name": "주워 쓰기",
+        "opens": "서비스 로봇",
+        "unlock": "포획만",
+        "weapons": [
+          "R-X1-07"
+        ],
+        "units": [
+          "R-U01"
+        ]
+      },
+      {
+        "tier": "L2",
+        "name": "안정화",
+        "opens": "조련 사족 기체",
+        "unlock": "포획(사람) + 정비(하드웨어) + 신호 확인(아크)",
+        "weapons": [
+          "R-X2-01"
+        ],
+        "units": [
+          "R-U02"
+        ]
+      },
+      {
+        "tier": "L3",
+        "name": "개조",
+        "opens": "무인 지상 차량·수색 발광 드론",
+        "unlock": "회수 + 정비 + 아크 키",
+        "weapons": [
+          "R-X3-02",
+          "R-X3-03"
+        ],
+        "units": [
+          "R-U03",
+          "R-U04"
+        ]
+      },
+      {
+        "tier": "L4",
+        "name": "대형 기계",
+        "opens": "유압 공성 중장비·깨운 방공",
+        "unlock": "유압·전력 정비 + 공동 열쇠",
+        "weapons": [
+          "R-X4-04",
+          "R-X4-05"
+        ],
+        "units": [
+          "R-U05",
+          "R-U06"
+        ]
+      },
+      {
+        "tier": "L5",
+        "name": "전쟁 기계",
+        "opens": "되살린 장갑 기관차",
+        "unlock": "세 세력 모두의 기술(복원·정비·켜기)",
+        "weapons": [
+          "R-X5-06"
+        ],
+        "units": [
+          "R-U07"
+        ]
+      }
+    ]
+  },
+  "cross_faction_dependencies": [
+    {
+      "source": "장교",
+      "from": "government",
+      "to": [
+        "free-city"
+      ],
+      "opens": "자유도시 L4 전차 기동, 박격포·장갑차 벌칙 해제",
+      "means": "포섭·망명·포로",
+      "risk": "포로는 충성 시험, 망명 장교는 정부 반격 표적"
+    },
+    {
+      "source": "의사(외과·신경 연결)",
+      "from": "free-city",
+      "to": [
+        "government",
+        "arc"
+      ],
+      "opens": "정부 부상 복귀 상승(L5 의무 갈림길), 아크 L5 신경 직결 정예",
+      "means": "계약·포섭·포로",
+      "risk": "의사가 빠져나가면 자유도시의 오래 버티기가 약해진다"
+    },
+    {
+      "source": "아크 소프트웨어 라이선스",
+      "from": "arc",
+      "to": [
+        "government",
+        "free-city"
+      ],
+      "opens": "정부 L4 사격통제·드론·방공, 자유도시 L4 의료로봇, 자유도시 L5 군집 드론",
+      "means": "공동 열쇠 계약",
+      "risk": "백도어: 아크가 켜고 끌 수 있다(신뢰 하락, 걷어낼 동기 상승)"
+    },
+    {
+      "source": "정부 하드웨어·정비창",
+      "from": "government",
+      "to": [
+        "arc"
+      ],
+      "opens": "아크 L4 무인 차량 수리, 방공 공동 병기",
+      "means": "정비 계약",
+      "risk": "정부가 아크 기계 내부를 본다"
+    },
+    {
+      "source": "원종 씨앗",
+      "from": "government",
+      "to": [
+        "free-city"
+      ],
+      "opens": "식량 상한(유닛 해금이 아니라 유지비 상한)",
+      "means": "거래·탈취",
+      "risk": "자유도시의 무기는 사람과 식량이다"
+    },
+    {
+      "source": "회수한 로밍 기계",
+      "from": "map",
+      "to": [
+        "government",
+        "free-city",
+        "arc"
+      ],
+      "opens": "R 계열 전부, 아크 L3·L4, 정부 L5, 자유도시 L5",
+      "means": "포획(사람)·정비(하드웨어)·신호 확인(아크)·생각 조종(자유도시 의사)",
+      "risk": "보충 불가. 아크 신호가 남아 있을 수 있다"
+    }
+  ],
+  "counters": {
+    "rule": "가위바위보 순환을 두지 않는다(계획 63 D1 game_unit_counter 비순환 가중치). 꼭대기(포병·방공·전차)는 상성이 아니라 의존(장교 상실·연료·아크 정지)으로 꺾인다. 전자전(ew)과 공성(siege)은 효과라서 순환 검사에서 뺀다.",
+    "weights": [
+      {
+        "attacker": "rifle",
+        "target": "line",
+        "weight": 1.0
+      },
+      {
+        "attacker": "rifle",
+        "target": "skirm",
+        "weight": 0.5
+      },
+      {
+        "attacker": "guard",
+        "target": "rifle",
+        "weight": 1.0
+      },
+      {
+        "attacker": "heavy",
+        "target": "guard",
+        "weight": 1.0
+      },
+      {
+        "attacker": "heavy",
+        "target": "line",
+        "weight": 0.5
+      },
+      {
+        "attacker": "mounted",
+        "target": "heavy",
+        "weight": 1.0
+      },
+      {
+        "attacker": "mounted",
+        "target": "skirm",
+        "weight": 1.0
+      },
+      {
+        "attacker": "antiarmor",
+        "target": "vehicle",
+        "weight": 1.0
+      },
+      {
+        "attacker": "antiarmor",
+        "target": "machine",
+        "weight": 1.0
+      },
+      {
+        "attacker": "vehicle",
+        "target": "mounted",
+        "weight": 1.0
+      },
+      {
+        "attacker": "vehicle",
+        "target": "heavy",
+        "weight": 0.5
+      },
+      {
+        "attacker": "artillery",
+        "target": "emplacement",
+        "weight": 1.0
+      },
+      {
+        "attacker": "artillery",
+        "target": "antiarmor",
+        "weight": 0.5
+      },
+      {
+        "attacker": "drone",
+        "target": "heavy",
+        "weight": 1.0
+      },
+      {
+        "attacker": "drone",
+        "target": "antiarmor",
+        "weight": 0.5
+      },
+      {
+        "attacker": "antidrone",
+        "target": "drone",
+        "weight": 1.0
+      },
+      {
+        "attacker": "emplacement",
+        "target": "drone",
+        "weight": 1.0
+      },
+      {
+        "attacker": "ew",
+        "target": "licensed/arc_held 장비",
+        "weight": 1.0
+      },
+      {
+        "attacker": "machine",
+        "target": "guard",
+        "weight": 1.0
+      },
+      {
+        "attacker": "siege",
+        "target": "장벽(셔터)",
+        "weight": 1.0
+      }
+    ]
+  },
+  "upkeep_logic": [
+    {
+      "resource": "식량",
+      "government": "원종 씨앗으로 안정",
+      "free-city": "가장 많이 쓴다(사람이 무기). 씨앗 없으면 상한",
+      "arc": "적다(사람이 적다)",
+      "battle_rules": "advantage.supply, 보급일"
+    },
+    {
+      "resource": "탄약·연료",
+      "government": "정비창 자급. 전차가 연료를 먹는다",
+      "free-city": "수방사 비축분 소모형",
+      "arc": "거의 없음",
+      "battle_rules": "빈칸(제안 upkeep.fuel, upkeep.ammo)"
+    },
+    {
+      "resource": "의약품·의료",
+      "government": "응급 키트뿐",
+      "free-city": "의사가 약품을 사람으로 바꾼다",
+      "arc": "기계신체 정비는 전력",
+      "battle_rules": "casualties.soft_to_hard_main 세력별(제안)"
+    },
+    {
+      "resource": "라이선스",
+      "government": "L4 정밀 화기마다",
+      "free-city": "의료로봇·군집 드론",
+      "arc": "내준다(지렛대)",
+      "battle_rules": "빈칸(제안 license.trust, backdoor.shutdown)"
+    },
+    {
+      "resource": "회수 기계",
+      "government": "쓰면 준다",
+      "free-city": "쓰면 준다",
+      "arc": "쓰면 준다(가장 의존)",
+      "battle_rules": "빈칸(제안 salvage_stock, 보충 0)"
+    }
+  ],
+  "roaming_machine_pipeline": [
+    {
+      "step": 1,
+      "action": "포획",
+      "who": "누구나(사람이 잡는다)"
+    },
+    {
+      "step": 2,
+      "action": "정비",
+      "who": "정부·자유도시(하드웨어를 고친다)"
+    },
+    {
+      "step": 3,
+      "action": "신호 확인·켜기",
+      "who": "아크(제어 모듈을 이식한다)"
+    },
+    {
+      "step": 4,
+      "action": "생각 조종",
+      "who": "자유도시 의사(신경 연결 수술)"
+    }
+  ],
+  "retired_legacy_ids": [
+    {
       "id": "UT-bayonet",
-      "name": "총검 소대",
-      "name_en": "Bayonet Squad",
-      "category": "전열 보병",
-      "description": "총검술 훈련 병력. 백병전 주력 전열을 형성한다.",
-      "max_size": 30,
-      "base_size": 15,
-      "member_match": {
-        "martial_any": ["총검술", "총검술 상승"],
-        "occupation_any": ["경비 당직", "경비", "군", "병"],
-        "attributes_min": { "DX": 10, "HT": 10 }
-      },
-      "commander_match": {
-        "skill": "지휘 또는 Leadership",
-        "attributes_min": { "IQ": 11 }
-      },
-      "equipment": ["소총 (총검 장착)", "제복", "군화"],
-      "gurps_resolution": {
-        "attack": "총검술 스킬로 3d6 굴림",
-        "defense": "능동 방어 (막기·피하기)",
-        "damage": "찌르기 (imp)",
-        "dr_target": "상대 갑옷 DR"
-      },
-      "battle_role": "melee_front"
+      "v4": [
+        "G-U01",
+        "F-U02"
+      ],
+      "reason": "총검은 소총분대와 민병 총검대의 근접 프로필로 흡수"
     },
     {
       "id": "UT-sword",
-      "name": "도검 소대",
-      "name_en": "Blade Squad",
-      "category": "근접 보병",
-      "description": "도검 훈련 병력. 기동 근접전과 제압에 특화한다.",
-      "max_size": 20,
-      "base_size": 10,
-      "member_match": {
-        "martial_any": ["총검술"],
-        "occupation_any": ["호위", "경비", "무사"],
-        "attributes_min": { "DX": 11 }
-      },
-      "commander_match": {
-        "skill": "지휘",
-        "attributes_min": { "DX": 11, "IQ": 10 }
-      },
-      "equipment": ["도검", "방패 (선택)", "경갑"],
-      "gurps_resolution": {
-        "attack": "도검 스킬로 3d6",
-        "defense": "능동 방어 + 방패 보정",
-        "damage": "베기 (cut)"
-      },
-      "battle_role": "melee_flank"
+      "v4": [],
+      "reason": "도검 전열은 v4 화기 체계에 없어 폐기"
     },
     {
       "id": "UT-spear",
-      "name": "창술 소대",
-      "name_en": "Spear Squad",
-      "category": "전열 보병",
-      "description": "창술 훈련 병력. 장거리 리치로 전열 방어를 담당한다.",
-      "max_size": 25,
-      "base_size": 12,
-      "member_match": {
-        "martial_any": ["창술", "창술 상승"],
-        "occupation_any": ["경비", "군", "병", "호위"],
-        "attributes_min": { "ST": 10, "DX": 10 }
-      },
-      "commander_match": {
-        "skill": "지휘",
-        "attributes_min": { "ST": 10, "IQ": 10 }
-      },
-      "equipment": ["장창", "방패", "제복"],
-      "gurps_resolution": {
-        "attack": "창술 스킬로 3d6",
-        "defense": "능동 방어 + 방패",
-        "damage": "찌르기 (imp)",
-        "special": "긴 무기 리치 우선 공격"
-      },
-      "battle_role": "melee_defense"
+      "v4": [],
+      "reason": "창 전열은 v4 화기 체계에 없어 폐기"
     },
     {
       "id": "UT-archer",
-      "name": "궁술 소대",
-      "name_en": "Archer Squad",
-      "category": "원거리",
-      "description": "궁술 수련 병력. 원거리 사격으로 지원한다.",
-      "max_size": 20,
-      "base_size": 10,
-      "member_match": {
-        "martial_any": ["궁술", "궁술 상승"],
-        "occupation_any": ["사냥", "경비", "정찰"],
-        "attributes_min": { "DX": 11, "ST": 10 }
-      },
-      "commander_match": {
-        "skill": "지휘",
-        "attributes_min": { "IQ": 10 }
-      },
-      "equipment": ["활", "화살", "집행 제복"],
-      "gurps_resolution": {
-        "attack": "궁술 스킬로 3d6 (명중)",
-        "damage": "관통 (imp)",
-        "range": "Bow ST 기반",
-        "ammo": "전투 중 소모 — 보급 필요"
-      },
-      "battle_role": "ranged_support"
+      "v4": [],
+      "reason": "활 사격대는 v4 화기 체계에 없어 폐기"
     },
     {
       "id": "UT-thrown",
-      "name": "암기 소대",
-      "name_en": "Skirmisher Squad",
-      "category": "원거리·특수",
-      "description": "암기술 병력. 투척 무기로 유린한 교란을 건다.",
-      "max_size": 15,
-      "base_size": 8,
-      "member_match": {
-        "martial_any": ["암기술", "암기술 상승"],
-        "occupation_any": ["정찰", "정보 수집", "무역"],
-        "attributes_min": { "DX": 11 }
-      },
-      "commander_match": {
-        "skill": "지휘",
-        "attributes_min": { "IQ": 11 }
-      },
-      "equipment": ["투척 단검", "투척 도끼", "은폐복"],
-      "gurps_resolution": {
-        "attack": "암기술 스킬로 3d6 (투척)",
-        "damage": "찌르기 (imp) 소형",
-        "special": "사거리 짧음, 명중률 높음"
-      },
-      "battle_role": "ranged_skirmish"
+      "v4": [],
+      "reason": "투척 소대는 v4 화기 체계에 없어 폐기"
     },
     {
       "id": "UT-scout",
-      "name": "정찰대",
-      "name_en": "Scout Unit",
-      "category": "특수",
-      "description": "경공·보법 수련 병력. 고속 이동과 시야 확보.",
-      "max_size": 10,
-      "base_size": 5,
-      "member_match": {
-        "martial_any": ["경공", "보법", "경공 상승", "보법 상승"],
-        "occupation_any": ["정찰", "정보 수집", "연락 당직"],
-        "attributes_min": { "DX": 11, "HT": 10 }
-      },
-      "commander_match": {
-        "skill": "지휘 또는 Survival",
-        "attributes_min": { "IQ": 11 }
-      },
-      "equipment": ["경량 장비", "은폐복", "신호 도구"],
-      "gurps_resolution": {
-        "movement": "기본 이동력 × 1.5 (경공 보정)",
-        "stealth": "Stealth 스킬",
-        "special": "전장 시야·매복 발견 담당"
-      },
-      "battle_role": "recon"
+      "v4": [
+        "F-U07",
+        "A-U03"
+      ],
+      "reason": "척후는 전동 이륜 척후대·곤충 정찰조로 대체"
     },
     {
       "id": "UT-guard",
-      "name": "호위대",
-      "name_en": "Guard Unit",
-      "category": "방어",
-      "description": "호위·방어 전문 병력. 요인 경호와 거점 방어.",
-      "max_size": 15,
-      "base_size": 8,
-      "member_match": {
-        "martial_any": ["호위철벽진", "방어 무공"],
-        "occupation_any": ["호위", "경비 당직", "수문 조작"],
-        "attributes_min": { "ST": 11, "HT": 11 }
-      },
-      "commander_match": {
-        "skill": "지휘",
-        "attributes_min": { "ST": 11, "IQ": 10 }
-      },
-      "equipment": ["방패", "둔기", "중갑"],
-      "gurps_resolution": {
-        "defense": "호위철벽진 스킬 + 방패 능동 방어",
-        "damage": "둔기 (cr)",
-        "special": "보호 대상 피해 대신 받기 가능"
-      },
-      "battle_role": "defense_protect"
+      "v4": [
+        "G-U02",
+        "A-U01"
+      ],
+      "reason": "호위는 순찰 방패대·경비 소총대로 대체"
     },
     {
       "id": "UT-medic",
-      "name": "의무 지원대",
-      "name_en": "Medical Support",
-      "category": "지원",
-      "description": "정부 구호 병력. 흰십자단이 지키는 대학병원 건물과 약 창고에서 나오지만 의사가 없어 지혈·보온·이송 같은 응급 처치만 한다. 중상자는 부대로 돌아오지 않는다.",
-      "max_size": 10,
-      "base_size": 5,
-      "member_match": {
-        "martial_any": [],
-        "occupation_any": ["응급 처치", "약재 조제", "의무원"],
-        "attributes_min": { "IQ": 11 }
-      },
-      "commander_match": {
-        "skill": "응급 처치 (First Aid)",
-        "attributes_min": { "IQ": 12 }
-      },
-      "equipment": ["구급낭", "지혈대", "들것"],
-      "gurps_resolution": {
-        "special": "전투 중 출혈 진행을 늦추고 부상자를 후송한다",
-        "gurps_skill": "First Aid",
-        "effect": "사망 판정 재굴림과 복귀 효과 없음. 재굴림과 복귀는 자유도시 외과 의사대(UT-surgeon)만 준다"
-      },
-      "battle_role": "support_heal"
+      "v4": [
+        "G-U04"
+      ],
+      "reason": "의사 없는 정부 응급 구호조"
     },
     {
       "id": "UT-surgeon",
-      "name": "외과 의사대",
-      "name_en": "Surgical Team",
-      "category": "지원",
-      "description": "자유도시 전용 의사 병력. 외과의와 신경 연결 시술의가 전선 뒤 수술실을 돌려 중상자를 살려 부대로 돌려보낸다. 정부와 아크에는 이 부대가 없다. 의료 로봇은 아크 소프트웨어가 있어야 움직인다.",
-      "max_size": 10,
-      "base_size": 4,
-      "member_match": {
-        "martial_any": [],
-        "occupation_any": ["외과의", "의사", "신경 시술의", "간호사"],
-        "attributes_min": { "IQ": 12 }
-      },
-      "commander_match": {
-        "skill": "의료 (Physician/Surgery)",
-        "attributes_min": { "IQ": 13 }
-      },
-      "equipment": ["수술 도구", "약재", "들것", "휴대 발전기"],
-      "gurps_resolution": {
-        "special": "부상자 HP 회복 속도 증가. 중상자를 보충 기간에 걸쳐 부대로 복귀시킨다",
-        "gurps_skill": "Physician / Surgery",
-        "effect": "전투 후 사망 판정 재굴림 1회"
-      },
-      "battle_role": "support_heal"
+      "v4": [
+        "F-U03",
+        "F-U13"
+      ],
+      "reason": "의사가 있는 자유도시 진료 구호대·의료로봇 야전병원"
     },
     {
       "id": "UT-armor",
-      "name": "기갑·중화기 소대",
-      "name_en": "Armour and Heavy Weapons Platoon",
-      "category": "중화기",
-      "description": "정부 전용. 국군 차고에서 정비한 전차와 박격포·야포를 장교가 지휘한다. 자유도시는 수방사 장비를 정비할 수는 있으나 장교가 없어 지휘 감쇄를 받고, 정부에서 넘어오거나 잡혀 온 장교가 있어야 감쇄를 푼다. 아크는 이 부대를 갖지 않는다. 사격 통제와 유도 같은 첨단 기능은 아크가 서명한 소프트웨어가 있어야 완전히 돌고, 없으면 수동 기능만 쓴다.",
-      "max_size": 20,
-      "base_size": 10,
-      "member_match": {
-        "martial_any": [],
-        "occupation_any": ["군", "병", "포병", "차량 정비"],
-        "attributes_min": { "DX": 10, "IQ": 10 }
-      },
-      "commander_match": {
-        "skill": "지휘 (장교 교육)",
-        "attributes_min": { "IQ": 12 }
-      },
-      "equipment": ["전차 (궤도식)", "박격포", "야포", "소총"],
-      "gurps_resolution": {
-        "special": "중화기 화력과 장애물 파괴. 아크 소프트웨어가 없으면 사격 통제는 수동 기능만",
-        "command": "장교 지휘관이 없으면 지휘 감쇄"
-      },
-      "battle_role": "heavy_support"
+      "v4": [
+        "G-U05",
+        "G-U06",
+        "G-U09",
+        "G-U11",
+        "G-U12"
+      ],
+      "reason": "정부 기갑·중화기 계열로 나눔"
     },
     {
       "id": "UT-engineer",
-      "name": "공병대",
-      "name_en": "Engineer Unit",
-      "category": "지원",
-      "description": "설비 수리·장애물 구축 병력. 거점 방어 시설 담당.",
-      "max_size": 15,
-      "base_size": 8,
-      "member_match": {
-        "martial_any": [],
-        "occupation_any": ["차량 정비", "장비 수리", "설비 점검", "궤도 관리"],
-        "attributes_min": { "IQ": 10, "ST": 10 }
-      },
-      "commander_match": {
-        "skill": "Engineering",
-        "attributes_min": { "IQ": 11 }
-      },
-      "equipment": ["공구", "재료", "용접기"],
-      "gurps_resolution": {
-        "special": "장애물 DR 부여, 거점 방어력 증가",
-        "gurps_skill": "Engineer",
-        "effect": "방어 시설 건설 속도 × 2"
-      },
-      "battle_role": "support_build"
+      "v4": [
+        "G-U07",
+        "F-U04"
+      ],
+      "reason": "공병 돌파조·정비 공병조로 대체"
     },
     {
       "id": "UT-ronin",
-      "name": "무소속 용병대",
-      "name_en": "Freelance Band",
-      "category": "특수",
-      "description": "무소속 무장 집단. 용병·약탈·호위 등 모든 역할 가능.",
-      "max_size": 25,
-      "base_size": 10,
-      "member_match": {
-        "martial_any": ["창술", "총검술", "궁술", "암기술"],
-        "occupation_any": ["무소속", "용병"],
-        "attributes_min": { "DX": 10, "ST": 10 }
-      },
-      "commander_match": {
-        "skill": "지휘 또는 intimidation",
-        "attributes_min": { "ST": 10, "DX": 10, "IQ": 10 }
-      },
-      "equipment": ["혼합 장비", "약탈 무기"],
-      "gurps_resolution": {
-        "special": "편성 제한 없음 — 모든 기술 혼합 가능",
-        "loyalty": "낮음 — 급여·약탈 보상 필요"
-      },
-      "battle_role": "flexible"
+      "v4": [],
+      "reason": "무소속 용병대는 v4 로스터에 없다. 역이 없는 사람은 일반 시민이며 세력 병종이 아니다"
     }
   ],
   "settlement_composition": {
     "principle": "정착지에 자동 생성된 인물이 부대 편성 인원 풀이 된다",
     "auto_matching": {
-      "description": "각 정착지의 인물 목록에서 직업·무공·능력치로 부대 후보를 자동 필터링",
-      "example": "S01 수문국 정착지 → 경비 당직 인물 → 총검 소대·창술 소대 후보"
+      "description": "각 정착지의 인물 목록에서 직업·기술·능력치와 병종의 필수 조건(장교·의사·아크 키·회수 기계)으로 부대 후보를 거른다",
+      "example": "정부 역 거점 → 경비 당직 인물 → 제식 소총분대(G-U01)·순찰 방패대(G-U02) 후보"
     },
     "scale_by_settlement": {
       "대거점": "인구 500+ → 부대 최대 규모 유지 가능",
       "중거점": "인구 200~499 → 부대 규모 70%",
       "소거점": "인구 50~199 → 부대 규모 50%",
-      "초소": "인구 <50 → 정찰대·의무대만"
+      "초소": "인구 <50 → 정찰·구호 병종만"
     },
     "gurps_anchor": {
       "squad_cohesion": "지휘관 Leadership 스킬 기반",
@@ -341,7 +2845,14 @@
   },
   "hero_integration": {
     "note": "여섯 영웅 클래스의 활성 역할은 GDD 영웅 분대 규칙을 따른다. 이 후보 자료가 결정 12의 주 전투 클래스와 보조 역할 태그를 폐기하지 않는다. 직업·소속만으로 클래스·수련·장비를 자동 부여하지 않는다.",
-    "classes": ["수호", "돌파", "참모", "구호", "척후", "종군"],
+    "classes": [
+      "수호",
+      "돌파",
+      "참모",
+      "구호",
+      "척후",
+      "종군"
+    ],
     "hero_role": "부대 지휘관 또는 독립 행동 영웅"
   }
 }
