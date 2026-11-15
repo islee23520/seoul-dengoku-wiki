@@ -32,7 +32,7 @@ Station tanks raised carp, crucian carp and catfish (hereafter "tank fish"). The
 
 **E. The first summer**
 
-In 2124, a box of counterfeit medicine appeared at a Seoul Station auction. Ryu Eunbi cut off all White Cross transactions at that auction. Jeong Hojun opened the seal of a sample in the Yangjae archive.
+In 2124, a box of counterfeit medicine appeared at a Seoul Station auction. Ryu Eunbi cut off all White Cross transactions at that auction. Jeong Hojun, life safety research lead of the Magok Life House, opened the seal of a sample in the Yangjae archive.
 
 **F. The Flood-Mold Breath Cluster**
 
@@ -127,7 +127,7 @@ First floors south of the Han and along the tributaries were used as monsoon sto
 
 **마. 첫해 여름**
 
-2124년 가짜 약 상자가 서울역 경매에 올랐다. 흰십자단 단장 류은비는 해당 경매 거래를 모두 끊었다. 태욱그룹 생명안전 연구책임자 정호준은 양재 서고에 들어온 표본의 봉인을 열었다.
+2124년 가짜 약 상자가 서울역 경매에 올랐다. 흰십자단 단장 류은비는 해당 경매 거래를 모두 끊었다. 마곡생명가 생명안전 연구책임자 정호준은 양재 서고에 들어온 표본의 봉인을 열었다.
 
 **바. 침수곰팡이호흡단**
 
@@ -1067,7 +1067,7 @@ In August 2058 the first forged certificates, seventeen of them, turned up in Gu
 
 ##### A. Taeuk Heavy Industries
 
-In September 2058 Jeong Mansu named his factory Taeuk Heavy Industries. That same year six workshops around the factory were incorporated into Taeuk Heavy Industries. The incorporation documents were signed by Jeong Mansu and the head of each workshop.
+In September 2058 Jeong Mansu named his factory Taeuk Heavy Industries. That same year six workshops around the factory were incorporated into Taeuk Heavy Industries. The incorporation documents were signed by Jeong Mansu and the head of each workshop. The Yangjae factory later stopped, and by 2126 it survives only as a repair workshop that can no longer build vehicle bodies.
 
 <a id="peninsula-2058-busan-sailings"></a>
 <a id="event-peninsula-2058-busan-sailings"></a>
@@ -1165,7 +1165,7 @@ In February 2066 Jeong Mansu died, and his eldest son Jeong Taehun succeeded him
 
 ##### A. The White Cross
 
-In March 2066 fourteen doctors at the Jegi-dong hospital put on a white cross emblem and treated surface workers and underground residents alike. Their ranks were set by length of training. The first head, Gang Hyerin, named her successor in writing.
+In March 2066 fourteen first-aid duty staff at the Jegi-dong hospital put on a white cross emblem and handled bleeding control and transport for surface workers and underground residents alike. The doctors who could operate had already left for the far side of the river; why they left is not recorded. Ranks among the duty staff were set by length of service. The first head, Gang Hyerin, named her successor in writing.
 
 <a id="2068년"></a>
 
@@ -1522,7 +1522,7 @@ In July 2100 the Transshipment Bureau designated the end-of-line strongholds at 
 
 #### A. Worksites
 
-In March 2101 Taeuk Group named its factory strongholds in Seongnam and Suwon the Taeuk Heavy Industries Seongnam Worksite and Suwon Worksite. Both worksites sent parts and workers to Yangjae along the Sinbundang Line. In the first year the Seongnam Worksite had some 1,400 workers.
+In March 2101 Taeuk Group named its factory strongholds in Seongnam and Suwon the Taeuk Heavy Industries Seongnam Worksite and Suwon Worksite. Both worksites sent parts and workers to Yangjae along the Sinbundang Line. In the first year the Seongnam Worksite had some 1,400 workers. Both worksites lay outside Seoul. Even after the Gangnam shelters were united as the Arc, the factory plant never became the Arc''s; inside Seoul the Arc holds only repair workshops.
 
 <a id="2102년"></a>
 
@@ -1546,7 +1546,7 @@ In April 2102 the Standards League admitted the workshops of Cheonan-Asan and Si
 
 ##### A. The I Family
 
-The First Branch Workshop joined the Standards League in 2102. Thereafter the I family of Cheonan-Asan managed the First Branch Workshop under the Standards League. The family looked after the rail yard at the southern end of Line 1 and four workshops. I Ilseop was heir of the I family. As of 2126 I Ilseop is the Duke of Gwanak.
+The First Branch Workshop joined the Standards League in 2102. Thereafter the I family of Cheonan-Asan managed the First Branch Workshop under the Standards League. The family looked after the rail yard at the southern end of Line 1 and four workshops. I Ilseop was heir of the I family. The I family has handed down neural-link surgery for generations; the rail-yard field and the workshops are its side work. As of 2126 I Ilseop is the Duke of Gwanak.
 
 <a id="2104년"></a>
 
@@ -1592,7 +1592,7 @@ In June 2106 the Government ruled that passes in Jongno and Jung-gu must bear th
 
 #### A. The Guui Clash
 
-In August 2107 the Eastern Command and the Achasan Gate Command came to blows over the water supply at Guui. The clash lasted two days, with some 40 casualties on both sides. Six Sinnae Transport carts carried the wounded of both sides to Jegi-dong, where the White Cross Corps treated them.
+In August 2107 the Eastern Command and the Achasan Gate Command came to blows over the water supply at Guui. The clash lasted two days, with some 40 casualties on both sides. Six Sinnae Transport carts carried the wounded of both sides to Jegi-dong. The White Cross Corps stopped the bleeding and splinted limbs, but most of the badly wounded never returned to duty.
 
 <a id="2109년"></a>
 
@@ -1742,7 +1742,7 @@ In 2116 the head of the White Cross Corps designated Ryu Eunbi as successor.
 
 ### 2117 · A Marriage Proposal and the First Baptism
 
-Around this year Go Ye-jin finished her five years of reading the manuals, and twelve people received the first baptism, in which parts of the body were replaced with machines.
+Around this year Go Ye-jin finished her five years of reading the manuals, and twelve people received the first baptism, in which parts of the body were replaced with machines. Fitting the machines was done by Go Ye-jin''s people, but joining them to the nerves was left to a doctor who came from the Free City.
 
 <a id="2117년-태욱그룹"></a>
 
@@ -1762,7 +1762,7 @@ In September 2117 a letter arrived in Yangjae proposing a marriage between Jeong
 
 ##### A. Commander Bae Ujin
 
-In 2117 the commander of the Eastern Command died. The chief of staff held emergency oversight for one year. In 2118 the commander''s eldest son, Bae Ujin, took office as commander.
+In 2117 the guard chief of the Eastern Command died. The deputy chief held emergency oversight for one year. In 2118 the late chief''s eldest son, Bae Ujin, took over as guard chief.
 
 <a id="2118년"></a>
 
@@ -1874,7 +1874,7 @@ In 2119 the expedition that had gone to Tsushima won its fight, but the shipowne
 
 ##### A. The Demand for Registration
 
-In the winter of 2120 the Eastern Command demanded, in exchange for supplying pump parts, that the Standards League register its restoration service personnel. Gang Minseo of the Standards League entered the technicians who refused registration on the league''s citizenship roll. In 2121 the Standards League council elected Gang Minseo as its chair.
+In the winter of 2120 Go Ye-jin''s following, later the Arc, demanded, in exchange for unlocking the pump control software, that the Standards League register its restoration service personnel. Gang Minseo of the Standards League entered the technicians who refused registration on the league''s citizenship roll. In 2121 the Standards League council elected Gang Minseo as its chair.
 
 <a id="2120년-여의도출자연합회"></a>
 
@@ -1950,7 +1950,7 @@ In 2120 the City Hall Station workers held an election in which every member vot
 
 ##### A. The Standoff
 
-On March 2, 2121, some 400 Eastern Command troops halted before the Achasan gate. This was more than half the strength of the Third Guard District. On March 5, 2121, Go Seojun and Tak Seoyun jointly signed an order placing the personnel of the gate and the water purification center under a single command.
+On March 2, 2121, a few dozen Eastern Command guards, armed only with rifles, halted before the Achasan gate. On March 5, 2121, Go Seojun and Tak Seoyun jointly signed an order placing the personnel of the gate and the water purification center under a single command.
 
 <a id="2121년-대한민국정부"></a>
 
@@ -2128,7 +2128,7 @@ In October 2123, before submitting the winter ration plan, I Ilseop recounted th
 
 ##### B. Payment in Seed
 
-In November 2123 I Ilseop attended the Standards League council in Guro for the first time as representative of the First Branch Workshop. The council gave the workshop''s representative a voice but no vote. I Ilseop proposed that part of the payment for the First Branch Workshop''s parts be made in seed instead of certificates. Gang Minseo accepted a plan to pay one fifth of the amount in seed.
+In November 2123 I Ilseop attended the Standards League council in Guro for the first time as representative of the First Branch Workshop. The council gave the workshop''s representative a voice but no vote. I Ilseop proposed that part of the payment for the First Branch Workshop''s parts be made in seed instead of certificates. Gang Minseo accepted a plan to pay one fifth of the amount in seed. The seed the League paid out was allotment seed it had obtained by trade with the Government.
 
 <a id="2123년-조재표-일행"></a>
 
@@ -2178,7 +2178,7 @@ In 2124 Go Seojun, who held the gate at the Achasan Gate Command, placed passage
 
 ##### A. Counterfeit Medicine
 
-In 2124 crates of counterfeit medicine came up for sale at the Seoul Station auction. Ryu Eunbi cut off all trading at that auction. On the same day Jeong Hojun, who led life safety research at Taeuk Group, broke the seals on the counterfeit medicine samples that had arrived at the Yangjae archive.
+In 2124 crates of counterfeit medicine came up for sale at the Seoul Station auction. Ryu Eunbi cut off all trading at that auction. On the same day Jeong Hojun, who led life safety research at the Magok Life House, broke the seals on the counterfeit medicine samples that had arrived at the Yangjae archive.
 
 <a id="ch40-i5"></a>
 
@@ -2301,7 +2301,7 @@ In 2125, ahead of the escort for the pharmacy council, Jang Sehwa divided the ru
 
 ##### A. During the Strike
 
-In the autumn of 2125 the Second Branch Workshop stopped work together with the Seongnam Works. The First Branch Workshop kept working. During this period the First Branch Workshop received 40 sacks of seed in payment for parts, and these were sent to the field at the rail yard.
+In the autumn of 2125 the Second Branch Workshop stopped work together with the Seongnam Works. The First Branch Workshop kept working. During this period the First Branch Workshop received in payment for parts 40 sacks of allotment seed that had come by trade from the Government, and these were sent to the field at the rail yard.
 
 <a id="2125년-수서-차량기지"></a>
 
@@ -3069,7 +3069,7 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 ##### 가. 태욱중공업
 
-2058년 9월 정만수는 공장 이름을 태욱중공업으로 정하였다. 같은 해 공장 주변의 작업장 6곳이 태욱중공업에 편입되었다. 편입 문서에는 정만수와 각 작업장 대표가 서명하였다.
+2058년 9월 정만수는 공장 이름을 태욱중공업으로 정하였다. 같은 해 공장 주변의 작업장 6곳이 태욱중공업에 편입되었다. 편입 문서에는 정만수와 각 작업장 대표가 서명하였다. 양재 공장은 뒤에 멈추었고, 2126년에는 차체를 만들지 못하는 수리 작업장으로만 남았다.
 
 <a id="peninsula-2058-busan-sailings"></a>
 <a id="event-peninsula-2058-busan-sailings"></a>
@@ -3167,7 +3167,7 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 ##### 가. 흰 십자
 
-2066년 3월 제기동 병원 의사 14명은 흰 십자 표식을 달고 지상 작업자와 지하 거주자를 가리지 않고 치료하였다. 의사들의 서열은 수련 기간으로 정하였다. 초대 단장 강혜린은 후계자를 서면으로 지명하였다.
+2066년 3월 제기동 병원의 응급 처치 당직 14명이 흰 십자 표식을 달고 지상 작업자와 지하 거주자를 가리지 않고 지혈과 이송을 맡았다. 수술할 수 있는 의사들은 이미 강 건너로 떠난 뒤였고, 떠난 까닭은 기록에 없다. 당직의 서열은 근무 기간으로 정하였다. 초대 단장 강혜린은 후계자를 서면으로 지명하였다.
 
 <a id="2068년"></a>
 
@@ -3524,7 +3524,7 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 #### 가. 사업장
 
-2101년 3월 태욱그룹은 성남과 수원의 공장 거점을 태욱중공업 성남사업장, 수원사업장으로 이름 붙였다. 두 사업장은 부품과 노동자를 신분당선 선로로 양재에 보냈다. 첫해 성남사업장의 노동자는 1,400여 명이었다.
+2101년 3월 태욱그룹은 성남과 수원의 공장 거점을 태욱중공업 성남사업장, 수원사업장으로 이름 붙였다. 두 사업장은 부품과 노동자를 신분당선 선로로 양재에 보냈다. 첫해 성남사업장의 노동자는 1,400여 명이었다. 두 사업장은 서울 밖에 있었다. 강남 대피소들이 아크로 묶인 뒤에도 공장 설비는 아크의 것이 되지 못했고, 아크가 서울 안에 쥔 것은 수리 작업장뿐이다.
 
 <a id="2102년"></a>
 
@@ -3548,7 +3548,7 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 ##### 가. 이씨 가문
 
-제1분공방은 2102년 규격맹에 들어갔다. 이후 천안·아산의 이씨 가문이 규격맹 아래에서 제1분공방을 맡아 관리하였다. 가문은 1호선 남단 차량기지와 공방 4곳을 돌보았다. 이일섭은 이씨 가문의 후계였다. 이일섭은 2126년 현재 관악 공작이다.
+제1분공방은 2102년 규격맹에 들어갔다. 이후 천안·아산의 이씨 가문이 규격맹 아래에서 제1분공방을 맡아 관리하였다. 가문은 1호선 남단 차량기지와 공방 4곳을 돌보았다. 이일섭은 이씨 가문의 후계였다. 이씨 가문은 신경 연결 수술을 대대로 이어 온 집안이고, 차량기지 밭과 공방은 가문의 부업이다. 이일섭은 2126년 현재 관악 공작이다.
 
 <a id="2104년"></a>
 
@@ -3594,7 +3594,7 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 #### 가. 구의 충돌
 
-2107년 8월 동방사와 아관사가 구의의 급수를 두고 무력으로 부딪쳤다. 충돌은 이틀 동안 이어졌고 양쪽 사상자는 40여 명이었다. 신내운수 대차 6대가 양쪽 부상자를 제기동으로 옮겼고 흰십자단이 치료하였다.
+2107년 8월 동방사와 아관사가 구의의 급수를 두고 무력으로 부딪쳤다. 충돌은 이틀 동안 이어졌고 양쪽 사상자는 40여 명이었다. 신내운수 대차 6대가 양쪽 부상자를 제기동으로 옮겼다. 흰십자단이 지혈과 부목을 댔지만 중상자는 대부분 돌아오지 못했다.
 
 <a id="2109년"></a>
 
@@ -3744,7 +3744,7 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 ### 2117년 · 혼인 제안과 첫 세례
 
-이해 무렵 고예진은 다섯 해에 걸친 매뉴얼 읽기를 마쳤고, 열두 명이 처음으로 몸 부위를 기계로 바꾸는 세례를 받았다.
+이해 무렵 고예진은 다섯 해에 걸친 매뉴얼 읽기를 마쳤고, 열두 명이 처음으로 몸 부위를 기계로 바꾸는 세례를 받았다. 몸에 기계를 다는 일은 고예진의 무리가 했지만, 신경을 잇는 일은 자유도시에서 온 의사가 맡았다.
 
 <a id="2117년-태욱그룹"></a>
 
@@ -3764,7 +3764,7 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 ##### 가. 배우진 사령관
 
-2117년 동방사 사령관이 사망하였다. 참모장이 1년간 비상감독을 맡았다. 2118년 장남 배우진이 사령관에 취임하였다.
+2117년 동방사 경비 책임자가 사망하였다. 부책임자가 1년간 비상감독을 맡았다. 2118년 장남 배우진이 경비 책임자 자리를 이었다.
 
 <a id="2118년"></a>
 
@@ -3876,7 +3876,7 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 ##### 가. 등록 요구
 
-2120년 겨울 동방사는 펌프 부품을 대 주는 대가로 규격맹에 복구복무자 등록을 요구하였다. 규격맹의 강민서는 등록을 거부한 기술자들을 규격맹 시민권 명부에 올렸다. 2121년 규격맹 평의회는 강민서를 위원장으로 뽑았다.
+2120년 겨울 뒷날 아크가 되는 고예진의 무리는 펌프 제어 소프트웨어를 풀어 주는 대가로 규격맹에 복구복무자 등록을 요구하였다. 규격맹의 강민서는 등록을 거부한 기술자들을 규격맹 시민권 명부에 올렸다. 2121년 규격맹 평의회는 강민서를 위원장으로 뽑았다.
 
 <a id="2120년-여의도출자연합회"></a>
 
@@ -3952,7 +3952,7 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 ##### 가. 대치
 
-2121년 3월 2일 동방사 병력 400여 명이 아차산 관문 앞에 머물렀다. 제3경비지구 병력의 절반이 넘는 수였다. 2121년 3월 5일 고서준과 탁서윤은 관문과 정수센터의 인원을 한 지휘 아래 두는 명령서에 함께 서명하였다.
+2121년 3월 2일 소총만 든 동방사 호위단 수십 명이 아차산 관문 앞에 머물렀다. 2121년 3월 5일 고서준과 탁서윤은 관문과 정수센터의 인원을 한 지휘 아래 두는 명령서에 함께 서명하였다.
 
 <a id="2121년-대한민국정부"></a>
 
@@ -4130,7 +4130,7 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 ##### 나. 종자 대금
 
-2123년 11월 이일섭은 제1분공방 대표로 구로의 규격맹 평의회에 처음 출석하였다. 평의회는 분공방 대표에게 발언권만 주었다. 이일섭은 제1분공방 부품 대금의 일부를 증서 대신 종자로 받자고 제안하였다. 강민서는 대금의 5분의 1을 종자로 지급하는 안을 받아들였다.
+2123년 11월 이일섭은 제1분공방 대표로 구로의 규격맹 평의회에 처음 출석하였다. 평의회는 분공방 대표에게 발언권만 주었다. 이일섭은 제1분공방 부품 대금의 일부를 증서 대신 종자로 받자고 제안하였다. 강민서는 대금의 5분의 1을 종자로 지급하는 안을 받아들였다. 규격맹이 지급한 종자는 정부와 거래해 받은 분양 종자였다.
 
 <a id="2123년-조재표-일행"></a>
 
@@ -4180,7 +4180,7 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 ##### 가. 가짜 약
 
-2124년 가짜 약 상자가 서울역 경매에 올랐다. 류은비는 그 경매의 거래를 모두 끊었다. 같은 날 태욱그룹에서 생명안전 연구를 맡은 정호준은 양재 서고에 들어온 가짜 약 표본의 봉인을 열었다.
+2124년 가짜 약 상자가 서울역 경매에 올랐다. 류은비는 그 경매의 거래를 모두 끊었다. 같은 날 마곡생명가에서 생명안전 연구를 맡은 정호준은 양재 서고에 들어온 가짜 약 표본의 봉인을 열었다.
 
 <a id="ch40-i5"></a>
 
@@ -4303,7 +4303,7 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 ##### 가. 파업 기간
 
-2125년 가을 제2분공방이 성남사업장과 함께 작업을 중단하였다. 제1분공방은 작업을 계속하였다. 이 기간 제1분공방이 부품 대가로 받은 종자 40포대는 차량기지 밭으로 보내졌다.
+2125년 가을 제2분공방이 성남사업장과 함께 작업을 중단하였다. 제1분공방은 작업을 계속하였다. 이 기간 제1분공방이 부품 대가로 받은 분양 종자 40포대는 차량기지 밭으로 보내졌다. 이 종자는 규격맹이 정부와 거래해 받은 것이었다.
 
 <a id="2125년-수서-차량기지"></a>
 
@@ -4387,11 +4387,11 @@ After the Great Blackout, scarcity in Seoul forced children to take up their par
 
 The Government rules the 14 districts north of the Han River. In each district, the elected district representative becomes a Senator and holds that district''s duchy. On paper, elections still exist. But under scarcity, only a handful of families can gather votes, so the seats have effectively become hereditary. The Government recognizes as citizens only those recorded in its own registers, so people outside the registers have almost no path to such a seat. The same thing happens further down. At Yongsan Station in Yongsan-gu, the Seollo family passes the keys of the rail transshipment facility to the next generation. The names of the district Senators are not recorded.
 
-The Free City is a scattering of independent city-states across the 7 southwestern districts. It has no king, and since there is no way to judge whose skill is greater, it has not been able to choose a leader. Instead, skills and workshops are passed down within families. The Duke of Gwanak, I Ilseop, is heir of the I family of the First Branch Workshop. The cities outside Gwanak are each their own power and hold their own duchies, but their holders are not recorded.
+The Free City is a scattering of independent city-states across the 7 southwestern districts. It has no king, and since there is no way to judge whose skill is greater, it has not been able to choose a leader. Instead, skills, workshops, and medical practice are passed down within families. The Duke of Gwanak, I Ilseop, is heir of the I family of the First Branch Workshop, which has handed down neural-link surgery for generations. The cities outside Gwanak are each their own power and hold their own duchies, but their holders are not recorded.
 
 Han Jae-mok of the Cheongju Han clan is recorded as representative of the water-contract families. In older records, the council of water-contract families was based at Yangpyeong Station (Yangcheon-gu).
 
-The Arc consists of the 4 Gangnam districts and split off from the Free City. It is ruled by the Hierophant Go Ye-jin, whom the faithful call the Messiah. Its rule is a Shia-style family rule. The faithful build up their faith through baptism, replacing parts of their bodies with machines. The names of the holders of the Seocho-gu, Gangnam-gu, Songpa-gu, and Gangdong-gu duchies are not recorded.
+The Arc consists of the 4 Gangnam districts and split off from the Free City. It is ruled by the Hierophant Go Ye-jin, whom the faithful call the Messiah. Its rule is a Shia-style family rule. The faithful build up their faith through baptism, replacing parts of their bodies with machines. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. The names of the holders of the Seocho-gu, Gangnam-gu, Songpa-gu, and Gangdong-gu duchies are not recorded.
 
 <a id="대한민국정부의-도심-지배와-분열"></a>
 
@@ -4399,7 +4399,7 @@ The Arc consists of the 4 Gangnam districts and split off from the Free City. It
 
 On paper, the Government maintains ministries representing the three branches of the Republic of Korea and a multiparty system. In reality, however, there are only two parties, the OMO Party and the Claw Party, and the actual system is a modern feudalism. The Senators gather candidates from among themselves and produce a President, who serves for life. The arrangement resembles the prince-elector system of the Holy Roman Empire, in which a few princes chose the emperor.
 
-Because the seats that have hardened into hereditary holdings are the very foundation of power, that foundation is contested even within the Government. The duty-family factions clash over the lifetime presidency, the Records Office, the Government Complex Guard, and stamp duty revenue. Onminui, led by Kim Yeongyu, is one of these factions. Even while fighting internally, the Government treats the entire area south of the Han River as barbarians beyond the wall.
+Because the seats that have hardened into hereditary holdings are the very foundation of power, that foundation is contested even within the Government. The duty-family factions clash over the lifetime presidency, the Records Office, the Government Complex Guard, stamp duty revenue, the officer corps rolls, the tank depots, and the original seed stores. Onminui, led by Kim Yeongyu, is one of these factions. Even while fighting internally, the Government treats the entire area south of the Han River as barbarians beyond the wall.
 
 <a id="외부-세력과-전구"></a>
 
@@ -4419,11 +4419,11 @@ The land outside Seoul is not ruled by people. The AI did not kill humanity dire
 
 정부는 한강 북쪽 14구를 다스린다. 각 구에서 뽑힌 지역구 국회의원이 상원의원(Senator)이 되어 그 구의 공작령을 쥔다. 서류상으로는 선거가 남아 있다. 그러나 결핍 속에서 표를 모을 수 있는 집안은 몇 되지 않아 의석은 실제로 세습처럼 굳었다. 정부는 자기 장부에 기록된 사람만 국민으로 인정하므로, 장부 바깥 사람이 그 자리에 오를 길은 거의 없다. 아래 층에서도 같은 일이 벌어진다. 용산구의 용산역 선로가는 철도 환적 시설의 열쇠를 다음 세대에 넘긴다. 각 구 상원의원의 이름은 기록되지 않았다.
 
-자유도시는 남서쪽 7구에 흩어진 독립 도시국가들이다. 왕이 없고, 누구 기술이 더 높은지 따질 방법이 없어 지도자도 뽑지 못했다. 그 대신 기술과 작업장이 집안 안에서 이어진다. 관악 공작 이일섭(I Ilseop)은 제1분공방 이씨 가문의 후계다. 관악 밖 도시들도 각자 권력이고 각자 공작령을 쥐지만, 그 보유자는 기록되지 않았다.
+자유도시는 남서쪽 7구에 흩어진 독립 도시국가들이다. 왕이 없고, 누구 기술이 더 높은지 따질 방법이 없어 지도자도 뽑지 못했다. 그 대신 기술과 작업장, 의술이 집안 안에서 이어진다. 관악 공작 이일섭(I Ilseop)은 신경 연결 수술을 대대로 이어 온 제1분공방 이씨 가문의 후계다. 관악 밖 도시들도 각자 권력이고 각자 공작령을 쥐지만, 그 보유자는 기록되지 않았다.
 
 청주 한씨 한재목은 물 계약 가문 대표로 기록되어 있다. 옛 기록에서 물 계약 가문들의 회의는 양평역(양천구)을 근거로 삼았다.
 
-아크는 강남 4구이며 자유도시에서 갈라져 나왔다. 교주(Hierophant) 고예진이 다스리고, 신도는 그를 메시아라 부른다. 통치는 시아파식 가문 통치다. 신도는 몸의 부위를 기계로 바꾸는 세례로 신앙을 쌓는다. 서초·강남·송파·강동 공작령 보유자의 이름은 기록되지 않았다.
+아크는 강남 4구이며 자유도시에서 갈라져 나왔다. 교주(Hierophant) 고예진이 다스리고, 신도는 그를 메시아라 부른다. 통치는 시아파식 가문 통치다. 신도는 몸의 부위를 기계로 바꾸는 세례로 신앙을 쌓는다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다. 서초·강남·송파·강동 공작령 보유자의 이름은 기록되지 않았다.
 
 <a id="대한민국정부의-도심-지배와-분열"></a>
 
@@ -4431,7 +4431,7 @@ The land outside Seoul is not ruled by people. The AI did not kill humanity dire
 
 정부는 서류상 대한민국의 삼권을 대표하는 부처와 다당제를 유지한다. 그러나 실제 정당은 OMO당(OMO Party)과 클로당(Claw Party) 둘뿐이고, 실상은 현대 봉건제다. 상원의원들은 자기들 가운데서 후보를 모아 대통령을 내며, 대통령은 종신이다. 몇몇 제후가 황제를 뽑던 신성로마제국 선제후 제도와 닮은 방식이다.
 
-세습처럼 굳은 의석이 곧 권력의 기반이므로, 그 기반은 정부 안에서도 다툼의 대상이다. 의무가문 파벌들은 종신 대통령 자리와 기록청, 청사 경비대, 인지세 수입을 두고 맞선다. 김연규가 이끄는 온민의도 그 파벌 가운데 하나다. 이렇게 안에서 다투는 동안에도 정부는 한강 남쪽 전체를 장벽 너머 야인처럼 대한다.
+세습처럼 굳은 의석이 곧 권력의 기반이므로, 그 기반은 정부 안에서도 다툼의 대상이다. 의무가문 파벌들은 종신 대통령 자리와 기록청, 청사 경비대, 인지세 수입, 장교단 명부, 전차 차고, 원종 씨앗 창고를 두고 맞선다. 김연규가 이끄는 온민의도 그 파벌 가운데 하나다. 이렇게 안에서 다투는 동안에도 정부는 한강 남쪽 전체를 장벽 너머 야인처럼 대한다.
 
 <a id="외부-세력과-전구"></a>
 
@@ -4451,11 +4451,11 @@ On paper the Government keeps the ministries of the three branches of the Republ
 
 **B. The Free City**
 
-The Free City is not a single power. Each city is its own power and holds its own duchy; there is no king. Most residents are engineers who trade goods and skills. Together they are now called the Union. The Duke of Gwanak is I Ilseop.
+The Free City is not a single power. Each city is its own power and holds its own duchy; there is no king. Most residents are skilled hands who live by their work. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. The Free City''s weapons are people and food, and its doctors let it hold out longest. Together they are now called the Union. The Duke of Gwanak is I Ilseop.
 
 **C. Arc**
 
-Arc is a faith community that split from the Free City and settled in the four Gangnam districts. Its Hierophant is Go Ye-jin, and the believers call her the Messiah. Believers receive baptism, the replacement of body parts with machines. The culture of the faith is treated separately in [Faith and Culture](/wiki/Faith-Culture-Schism/).
+Arc is a faith community that split from the Free City and settled in the four Gangnam districts. Its Hierophant is Go Ye-jin, and the believers call her the Messiah. Believers receive baptism, the replacement of body parts with machines. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. The culture of the faith is treated separately in [Faith and Culture](/wiki/Faith-Culture-Schism/).
 
 <a id="세습-생업"></a>
 
@@ -4463,7 +4463,7 @@ Arc is a faith community that split from the Free City and settled in the four G
 
 Scarcity made people take up their parents'' work. Without infrastructure the population did not grow, and parents handed their work down to their children. The vertical ranks that hardened this way became an institution in the Government''s land. The Government still holds elections, and every election returns the same answer.
 
-The Free City is bound by the exchange of skills more than by inheritance. A person who does plumbing does not know power distribution; a person who does power distribution does not know the water purifiers. There was no way to judge whose skill ranked higher, so the cities chose no leader. They traded goods with one another and each lived its own life.
+The Free City is bound by the exchange of skills and medicine more than by inheritance. Nearly all of Seoul''s doctors are in the Free City, and it also makes the most meals. There was no way to judge whose skill ranked higher, so the cities chose no leader. They trade treatment, meals, and goods with one another and each lives its own life.
 
 ## Trades
 
@@ -4553,11 +4553,11 @@ The people known by name at the opening are listed below. English spellings foll
 
 **나. 자유도시**
 
-자유도시는 하나의 권력이 아니다. 도시마다 각자 권력이고 각자 공작령을 쥐며, 왕은 없다. 주민 대부분은 물자와 기술을 주고받는 엔지니어다. 지금은 묶어서 유니온(Union)이라고 부른다. 관악 공작은 이일섭(I Ilseop)이다.
+자유도시는 하나의 권력이 아니다. 도시마다 각자 권력이고 각자 공작령을 쥐며, 왕은 없다. 주민 대부분은 손으로 먹고사는 기술자다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 지금은 묶어서 유니온(Union)이라고 부른다. 관악 공작은 이일섭(I Ilseop)이다.
 
 **다. 아크**
 
-아크는 자유도시에서 갈라져 나와 강남 4구에 자리 잡은 신앙 공동체다. 교주는 고예진(Go Ye-jin)이며, 신도들은 그를 메시아(Messiah)라고 부른다. 신도는 몸의 부위를 기계로 바꾸는 세례(baptism)를 받는다. 신앙의 문화는 [신앙과 문화](/wiki/Faith-Culture-Schism/)에서 따로 다룬다.
+아크는 자유도시에서 갈라져 나와 강남 4구에 자리 잡은 신앙 공동체다. 교주는 고예진(Go Ye-jin)이며, 신도들은 그를 메시아(Messiah)라고 부른다. 신도는 몸의 부위를 기계로 바꾸는 세례(baptism)를 받는다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다. 신앙의 문화는 [신앙과 문화](/wiki/Faith-Culture-Schism/)에서 따로 다룬다.
 
 <a id="세습-생업"></a>
 
@@ -4565,7 +4565,7 @@ The people known by name at the opening are listed below. English spellings foll
 
 결핍 때문에 사람들이 부모의 일을 이어 하게 됐다. 인프라가 없으니 인구는 늘지 않았고, 하던 일을 자식에게 물려주게 됐다. 이렇게 굳은 수직 계층은 정부 땅에서 제도가 되었다. 정부는 지금도 선거를 하지만 매번 같은 답이 나온다.
 
-자유도시는 세습보다 기술의 교환으로 묶여 있다. 배관하는 사람은 배전을 모르고, 배전하는 사람은 정수기를 모른다. 누구 기술이 더 높은지 따질 방법이 없으니 지도자도 뽑지 못했다. 도시끼리 물자만 주고받으면서 각자 산다.
+자유도시는 세습보다 기술과 의술의 교환으로 묶여 있다. 서울의 의사는 거의 모두 자유도시에 있고, 끼니도 자유도시가 가장 많이 만든다. 누구 기술이 더 높은지 따질 방법이 없으니 지도자도 뽑지 못했다. 도시끼리 치료와 끼니, 물자를 주고받으면서 각자 산다.
 
 ## 생업
 
@@ -4698,10 +4698,10 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 - Origin community: The surviving Guro industrial complex dormitories. His great-grandfather Pham Van Minh was a night-line technician before the collapse, and after arriving in Guro from Vietnam in 2109, Pham Van Duc learned the trade from the dormitory mechanics. Pham Van Duc was born in Vietnam in 2089 and came to Guro in 2109 with his father Pham Van Loc. He learned repair work by checking old work records against the equipment alongside the dormitory mechanics, and by keeping strict tool return and shift records he rose to night maintenance crew chief. He speaks Vietnamese in everyday conversation and uses Korean instructions on the job. His great-grandfather Pham Van Minh, born in 1999, kept up manual maintenance with his coworkers when the Guro industrial complex equipment stopped during the Great Blackout. Minh''s son Pham Van Tuan wrote down the tools and their return records, and his grandson Pham Van Loc deciphered those records in Vietnam. In 2109 Pham Van Loc came to Guro with his son Pham Van Duc and checked the records against the equipment on site.
 - Languages: Vietnamese for daily life, Korean for work instructions, Chinese for numbers only
 - Occupation: Mechanic
-- Affiliation: Free City (Guro-gu). Surviving dormitory shift ledger. Listed as a subcontractor with the Southwest Engineers
+- Affiliation: Free City (Guro-gu). Surviving dormitory shift ledger. Listed as a subcontractor with the Southwest conscript maintenance crews
 - Position: Night maintenance crew chief inside the barrier gate
 - Conscription history: None. No Vietnamese military record. Not on the Korean mobilization roster
-- Weapons access: Tools of his trade and protective suit. Cutting tools lent by the engineers must be returned
+- Weapons access: Tools of his trade and protective suit. Cutting tools lent by the maintenance crews must be returned
 - Personality: When a gate closes, he counts the bolts before he counts the people
 - Personal ambition: To raise the dormitory household roster to the same standing as citizenship on the Guro Workshop Council
 - Fear: That the dormitory side will be left out of evacuation during barrier drills
@@ -4795,13 +4795,13 @@ Pham Van Tuan''s son Pham Van Loc is born in Vietnam on April 17, 2059, and lear
 - Community of origin: The Guro home-guard Mobilization Remnant. Korean nationality. Choe Il-seok was born in Guro in 2087. He served as an enlisted soldier in the Mobilization Remnant of his day, and after completing his term in 2109 he returned home and checked the shift rosters with his father, Choe Tae-yun. As roster clerk for the Guro and Geumcheon axis, he verifies actual service and return records, and he guards against the rosters being used to justify private armed groups. His great-grandfather, Choe Gyeong-seop, born in 1997, carried a reserve company''s roster out during the Great Blackout and sorted those who could still be contacted from those who had fled. His son, Choe Mun-jae, separated the old evacuation lists from the current duty rosters, and his grandson, Choe Tae-yun, cross-checked the shift rosters. After finishing his service in 2109, Choe Il-seok checked actual service and return records together with his father.
 - Languages: Korean
 - Occupation: Patrol (primary). Archivist (secondary, rosters)
-- Affiliation: Government. Clerk of the Guro and Geumcheon axis Mobilization Remnant. Listed as "outside armed group" in the Guro Workshop Council ledger
+- Affiliation: Free City. Clerk of the Guro and Geumcheon conscription rolls. Keeps the keys to the Capital Defense Command remnant armory and gives only basic rifle training. There are no officers
 - Position: Mobilization roster clerk
 - Conscription record: Served as an enlisted soldier in the Mobilization Remnant of his day, completing his term in 2109. The reserve company clerk who carried the roster out during the Great Blackout was his great-grandfather, Choe Gyeong-seop
-- Access to arms: Holds the secondary key to the armory. Service firearms are sealed. Personally carries a service baton
+- Access to arms: Holds the secondary key to the Capital Defense Command remnant armory. Service firearms are sealed. Personally carries a service baton
 - Personality: Will not discuss ammunition with anyone who lacks a service number
 - Personal ambition: To keep the rosters as mobilization ledgers rather than Guro Workshop Council records, preventing them from becoming the basis of private armies
-- Fear: That the deserter platoon will tear up the rosters and turn them into a "Guro warlord" seal
+- Fear: That the deserter platoon will tear up the rosters and put the commanderless Capital Defense Command remnant gear at Guro under a private army''s seal
 - Governance and negotiation style: Never keeps a key and a roster in the same place
 - Key relationships: Subcontracting tensions with Pham Van Duc. A grudge with the deserter platoon. Conducts transit inspections on Lin Xiaomei
 - Trigger event: If the rosters are turned to private armies, the southwest barrier gate and the ammunition depot will be locked down at the same time
@@ -4863,10 +4863,10 @@ Choe Mun-jae''s son, Choe Tae-yun, born on September 3, 2057, begins cross-check
 - 출신 공동체: 구로공단 기숙 잔존. 증조부 팜반민은 붕괴 전 야간 라인 기능공이며, 팜반득은 2109년 베트남에서 구로에 들어온 뒤 기숙사 정비사들에게 일을 배운다. 팜반득은 2089년 베트남에서 태어나 2109년 아버지 팜반록과 함께 구로에 들어왔다. 기숙사 정비사들과 낡은 작업 기록을 설비에 대조하며 수리를 익혔고, 공구 반납과 교대 기록을 지켜 야간 정비 조장을 맡았다. 베트남어로 일상 대화를 나누며 작업에서는 한국어 지시를 쓴다. 1999년생 증조부 팜반민은 대정전 때 구로공단 설비가 멈추자 동료들과 수동 정비를 이어갔다. 아들 팜반뚜언은 공구와 반납 내역을 적었고, 손자 팜반록은 베트남에서 그 기록을 풀어 읽었다. 팜반록은 2109년 아들 팜반득과 구로에 들어와 기록을 현장 설비와 대조했다.
 - 언어: 베트남어 일상, 한국어 작업 지시, 중국어 숫자만
 - 생업: 정비사
-- 소속: 자유도시(구로구). 기숙 잔존 교대 장부. 서남 공병대에 하청으로 이름이 있다
+- 소속: 자유도시(구로구). 기숙 잔존 교대 장부. 서남 징집 정비조에 하청으로 이름이 있다
 - 직위: 차단문 안쪽 야간 정비 조장
 - 징집 이력: 없음. 베트남 군적 없음. 한국 동원 명부 없음
-- 무장 접근: 생업 공구·방호복. 공병이 빌려 주는 절단기는 반납 조건
+- 무장 접근: 생업 공구·방호복. 정비조가 빌려 주는 절단기는 반납 조건
 - 성격: 문이 닫히면 사람보다 볼트를 먼저 센다
 - 개인 야망: 기숙사 세대 명부를 구로 공방 평의회 시민권과 같은 급으로 올린다
 - 공포: 차단 훈련 때 기숙사 쪽 대피가 빠지는 것
@@ -4960,13 +4960,13 @@ Choe Mun-jae''s son, Choe Tae-yun, born on September 3, 2057, begins cross-check
 - 출신 공동체: 구로 향토 동원잔존. 한국 국적. 최일석은 2087년 구로에서 태어났다. 당대 동원잔존에서 병으로 복무하고 2109년 만기로 돌아온 뒤 아버지 최태윤과 교대 명부를 대조했다. 구로·금천 축의 동원 명부 서기로 실제 복무와 반납 기록을 확인하며, 명부가 사병 조직의 근거로 쓰이는 일을 경계한다. 1997년생 증조부 최경섭은 대정전 때 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다. 아들 최문재는 옛 피난 명단과 현재 당번표를 나누었고, 손자 최태윤은 교대 명부를 대조했다. 최일석은 2109년 복무를 마친 뒤 아버지와 실제 복무·반납 기록을 함께 확인했다.
 - 언어: 한국어
 - 생업: 순찰대 (주). 기록관 (부, 명부)
-- 소속: 정부. 구로·금천 축 동원잔존 서기. 구로 공방 평의회 장부에는 「외부 무장」
+- 소속: 자유도시. 구로·금천 징집 명부 서기. 수방사 잔존 무기고 열쇠를 지키고 소총 기초 훈련만 시킨다. 장교는 없다
 - 직위: 동원 명부 서기
 - 징집 이력: 당대 동원잔존에서 병으로 복무하고 2109년 만기. 대정전 때 명부를 들고 나온 예비군 중대 서기는 증조부 최경섭
-- 무장 접근: 무기고 열쇠의 부키. 제식 소화기는 봉인. 본인은 제식 봉
+- 무장 접근: 수방사 잔존 무기고 열쇠의 부키. 제식 소화기는 봉인. 본인은 제식 봉
 - 성격: 군번이 없는 사람에게 탄약 이야기를 하지 않는다
 - 개인 야망: 명부를 구로 공방 평의회가 아니라 동원 장부로 유지해 사병화를 막는다
-- 공포: 탈영 소대가 명부를 찢어 「구로 군벌」도장이 되는 것
+- 공포: 탈영 소대가 명부를 찢고, 지휘관 없는 구로의 수방사 잔존 장비를 사병의 도장 아래 두는 것
 - 통치·교섭 방식: 열쇠 한 개와 명부 한 권을 같은 자리에 두지 않는다
 - 주요 관계: 팜반득과 하청 긴장. 탈영 소대와는 원한. 린샤오메이와는 통행 검사
 - 촉발 사건: 명부가 사병화되면 서남 차단문과 탄약고가 동시에 잠긴다
@@ -5006,18 +5006,21 @@ A. Equipment and the surviving records
 | M16 family | Reserve and old stock | 2015 general-reserve training issue fact | Access only with mobilization-remnant, unit-ledger, or recovery routes | Ammunition, magazines, parts, storage state were separate bottlenecks | An empty gun could be used for bayonet fighting; with rounds present it followed the military-remnant rules | [Policy Briefing](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), viewed 2026-09-20 |
 | K1A | Military personal weapon | ROK issue line | Recovered or transferred from military remnants, case by case | Compatible ammunition and parts checked per model. Not treated as bulk-compatible with other rifles | Persons other than deserters and mobilization remnants needed separate acquisition and proficiency records | K-series existence: SNT Motiv. Per-model material and the 2026 issue range are not in the records |
 | Service pistol | Sidearm. Guard and officer close-in | Military and police equipment. No civilian daily use | Remnants with keys and rosters. No drifter start | Pistol rounds were stock separate from rifle rounds | Former patrol: **staff and shield are the default**. The pistol only when a ledger opens | The 2026 issue model name is not in the records |
-| Squad support weapon | Suppression, convoy cover | ROK squad weapons | Power scale. Not personal starting gear | Heavy ammunition consumption. Repair tools, cooling, barrels were stronghold maintenance | Guro warlord-scale remnants, stronghold defense. No orphans or drifters | 2026 service models and deployment are not in the records |
+| Squad support weapon | Suppression, convoy cover | ROK squad weapons | Power scale. Not personal starting gear | Heavy ammunition consumption. Repair tools, cooling, barrels were stronghold maintenance | Government officer-led units. In the Free City, conscripts maintain the Capital Defense Command remnant gear at Guro and only hold strongholds. No orphans or drifters | 2026 service models and deployment are not in the records |
 | Regulation staff · patrol shield · police personal protection | Suppression, protection, station guard | Police, autonomous guards, station security | Former patrol default. Shared by station guards | Shield and clothing repair. No ammunition | Former patrol preset. Stationmaster stronghold guard | The original police regulations do not survive |
 | Crowbar · axe · cutter | Opening, dismantling, close-in | Civil engineering, rail, facility management, civilian tools | Trade layer. Worksites and depots | Blades dull; no hydraulic oil (manual tools) | Drifter, explorer, maintenance hand | Specific brand names are not in the records |
-| Hydraulic rescue equipment | Debris spreading, door and hull opening | Fire, rescue, rail recovery | Stronghold workshops, maintenance hands. Not personal carry | Hydraulic oil, power, hoses. Without power, dead weight | Stationmaster strongholds, overlapping The Gauge''s engineering corps | Fire-equipment issue lists do not survive |
+| Hydraulic rescue equipment | Debris spreading, door and hull opening | Fire, rescue, rail recovery | Stronghold workshops, maintenance hands. Not personal carry | Hydraulic oil, power, hoses. Without power, dead weight | Stationmaster strongholds, overlapping The Gauge''s conscript maintenance crews | Fire-equipment issue lists do not survive |
 | Lamps · radios | Watch, contact | Facility, police, civilian radios | Trade and police layers. Batteries the bottleneck | Batteries, charging. Consumer batteries age | Courier, explorer, patrol | Consumer lanterns and radios exist as civilian goods. Military encrypted-radio remnants are not in the records |
 | Gas detection · breathing protection · emergency kit · portable power | Conduit survival, injury, short-term power | Industrial safety, fire, medical, facilities | Medical officer, explorer, stronghold | Filters, medicine, batteries consumed. Charging ≠ generation | Medical officer red-cloth silhouette. No orphans | Industrial-safety generalities. 2026 station-staff issue lists are not in the records |
 | Stab / ballistic / work personal protection | Protection against stabbing-cutting / defined ballistic threat / per-task hazards | Police, military, security, industrial sites | Use and grade distinguished. Work clothes and riot shields not treated as ballistic gear | Damage, aging, replacement parts, proper wearing conditions checked | Protection is matched to the role; affiliation alone does not decide its performance | Specific test grades, service models, and 2026 issue ranges are not in the records |
 | Bow (conditional) | Low-noise projectile. Not the basic arm | Recreational and gungdo clubs. Not military issue | Could exist. **Not forbidden**. Not the default ranged arm either | Arrow crafting mentioned only within trade-tool scope. No manufacture recipe | Specific persons or livelihoods are the condition | The civilian bow regulation range is not in the records |
 | Crossbow (conditional) | Mechanical projectile | A permit item under the Firearms and Swords Act | Rare. Permit remnants or smuggling as narrative conditions | Bolts and strings. Possibly a ledger separate from the firearms ledger | No drifter start. Not the basic arm | [Firearms and Swords Act](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98) includes crossbows. Viewed 2026-09-12 |
-| Sensor · inspection bot · actuator · power salvage | Detection, opening and closing, short-term power. Conditionally equipment, traps, weapons | Disaster and facility inspection records | Modules after sealed-gallery dismantling or stopping | Charging, aging, supply source. Not permanent batteries. Protocol cards are not universal control | Explorer, records keeper, operating-house recovery squads | Concept: [Lost Technology](/wiki/Lost-Technology-Lineage/). Actual 2026 deployment is not in the records |
-| Vehicles · generators (power scale) | Movement, stronghold power | Rail, city buses, facility emergency generators, military vehicles | Only when a living sphere ran them. Not a personal-preset default | Fuel, lubricant, tires, batteries. Generator ≠ energy-storage module | Stationmasters, faction military (engineers, rail cavalry). No drifters | Vehicle remnant scale and counts are not in the records |
-| Heavy weapons (power scale) | Barrier-gate and stronghold defense | ROK support weapons, vehicle-mounted | Remnants above squad scale, facility defense. No personal-carry start | Ammunition, weight, maintenance. Supply was the object of command disputes | The four remnant groups, faction facility military. Conscription Remnants | 2026 service lists and counts are not in the records |
+| Sensor · inspection bot · actuator · power salvage | Detection, opening and closing, short-term power. Conditionally equipment, traps, weapons | Disaster and facility inspection records | Modules after sealed-gallery dismantling or stopping | Charging, aging, supply source. Not permanent batteries. Protocol cards are not universal control. Only cards signed by Arc software open higher functions; others reach only basic on-and-off functions | Explorer, records keeper, operating-house recovery squads | Concept: [Lost Technology](/wiki/Lost-Technology-Lineage/). Actual 2026 deployment is not in the records |
+| Vehicles · generators (power scale) | Movement, stronghold power | Rail, city buses, facility emergency generators, military vehicles | Only when a living sphere ran them. Not a personal-preset default | Fuel, lubricant, tires, batteries. Generator ≠ energy-storage module | Stationmasters, Government officer corps (engineers, rail cavalry). The Free City maintains Capital Defense Command vehicles but commands them poorly. The Arc has none. No drifters | Vehicle remnant scale and counts are not in the records |
+| Heavy weapons (power scale) | Barrier-gate and stronghold defense | ROK support weapons, vehicle-mounted | Remnants above squad scale, facility defense. No personal-carry start | Ammunition, weight, maintenance. Supply was the object of command disputes | Operated by the Government officer corps. The Free City''s conscripts maintain the Capital Defense Command gear left on its ground but command it poorly in battle. The Arc holds only rifles for minimal self-defense. Advanced functions such as fire control run fully only with Arc software | 2026 service lists and counts are not in the records |
+| Tanks · tracked armored vehicles (power scale) | Breakthrough, stronghold defense, fire support | ROK armor, Capital Defense Command | Maintained tanks stand in Government depots. Capital Defense Command vehicles also remain on Free City ground such as Namtaeryeong (Gwanak). No personal start | Fuel, tracks, ammunition, maintenance. Fire control runs fully only with Arc-signed software; without it, manual functions only | Battle command by the Government officer corps only. The Free City maintains them with limited command. The Arc has none | 2026 service models and counts are not in the records |
+
+The Government''s advanced weapons (air defense, fire control, guidance) run fully only with software signed by the Arc. Without it, only manual functions work.
 
 ## What Actually Existed in 2026
 
@@ -5068,18 +5071,21 @@ In 2026, permit rules for firearms and crossbows, military equipment, and railwa
 | M16 계열 | 예비군·구형 비축 | 2015년 일반예비군 훈련 지급 사실 | 동원잔존·부대 장부·회수 경로가 있는 경우만 접근 | 탄약·탄창·부품·보관 상태가 별도 병목 | 빈 총은 총검술에 쓸 수 있으나 탄이 있으면 군용 잔존 규칙을 따른다 | [정책브리핑](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), 열람 2026-09-20 |
 | K1A | 군용 개인화기 | 국군 지급 계통 | 군용 잔존에서 회수·이전되는 경로는 사례마다 갈린다 | 호환 탄약과 부품은 모델별 확인. 다른 소총과 일괄 호환으로 처리하지 않음 | 탈영·동원잔존 외 인물은 별도 획득·숙련 이력 필요 | K계열 존재는 SNT Motiv. 모델별 자료와 2026 지급 범위는 기록에 없다 |
 | 제식 권총 | 측무장. 경비·장교 근접 | 군·경찰 장비. 민간 일상 없음 | 열쇠·명부가 있는 잔존. 떠돌이 시작 없음 | 권총탄은 소총탄과 별 재고 | 전직 순찰은 **봉·방패가 기본**. 권총은 장부가 열릴 때만 | 2026 지급 모델명은 기록에 없다 |
-| 분대지원화기 | 제압·호송 엄호 | 국군 분대 화기 | 세력 규모. 개인 시작 장비 아님 | 탄약 소모가 큼. 수리 공구·냉각·총열은 거점 정비 | 구로 군벌급 잔존, 거점 방어. 고아·떠돌이 없음 | 2026 제식 모델·배치는 기록에 없다 |
+| 분대지원화기 | 제압·호송 엄호 | 국군 분대 화기 | 세력 규모. 개인 시작 장비 아님 | 탄약 소모가 큼. 수리 공구·냉각·총열은 거점 정비 | 정부 장교단 부대. 자유도시는 구로의 수방사 잔존 장비를 징집병이 정비하고 거점만 지킨다. 고아·떠돌이 없음 | 2026 제식 모델·배치는 기록에 없다 |
 | 제식 봉·순찰 방패·치안 개인보호구 | 제압, 방호, 역 경비 | 경찰·자치 경비·역 보안 | 전직 순찰 기본. 역 경비 공유 | 방패·피복 수리. 탄약 없음 | 전직 순찰 프리셋. 역장 거점 경비 | 경찰 세칙 원문은 남아 있지 않다 |
 | 지렛대·도끼·절단기 | 개방, 해체, 근접 | 토목·철도·시설 관리·민간 공구 | 생업 층. 공사장·차량기지 | 날 무뎌짐, 유압유 없음(수공구) | 떠돌이·탐사원·정비사 | 특정 브랜드는 기록에 없다 |
-| 유압 구조 장비 | 잔해 전개, 문·차체 개방 | 소방·구조대·철도 구난 | 거점 공방, 정비사. 개인 휴대 아님 | 유압유·동력·호스. 동력 없으면 짐 | 역장 거점, 규격맹 공병대와 겹침 | 소방 장비 제식 목록은 남아 있지 않다 |
+| 유압 구조 장비 | 잔해 전개, 문·차체 개방 | 소방·구조대·철도 구난 | 거점 공방, 정비사. 개인 휴대 아님 | 유압유·동력·호스. 동력 없으면 짐 | 역장 거점, 규격맹 징집 정비조와 겹침 | 소방 장비 제식 목록은 남아 있지 않다 |
 | 램프·무전기 | 시계, 연락 | 시설·치안·민간 무전기 | 생업·치안. 전지가 병목 | 전지·충전. 상용 전지는 노화한다 | 전령·탐사원·순찰 | 상용 랜턴·무전기는 민간 존재. 군용 암호무전기 잔존은 기록에 없다 |
 | 가스탐지·호흡보호·응급키트·휴대전원 | 관로 생존, 부상, 단기 전력 | 산업안전·소방·의료·시설 | 의무원·탐사원·거점 | 필터·약·전지 소모. 충전 ≠ 발전 | 의무원 붉은 천 실루엣. 고아는 없음 | 산업안전 일반. 2026 역무 지급 목록은 기록에 없다 |
 | 방검 / 방탄 / 작업 개인보호구 | 각각 찌름·베임 / 정해진 탄도 위협 / 작업별 위험에 대한 보호 | 치안·군·경호·산업 현장 | 용도와 등급을 구분. 작업복·진압방패를 방탄 장비로 취급하지 않음 | 손상·노화·교체 부품과 적합한 착용 조건 확인 | 역할에 맞는 보호구를 보호구는 역할에 맞게 갖추며 소속만으로 성능이 정해지지는 않는다 | 구체적 시험 등급·제식 모델·2026 지급 범위는 기록에 없다 |
 | 활 (조건부) | 저소음 투사. 기본 병과 아님 | 생활체육·국궁 동호. 군 제식 아님 | 있을 수 있다. **금지 아님**. 기본 원거리도 아님 | 화살 제작은 생업 공구 범위에서만 언급. 제조 레시피 없음 | 특정 인물·생업이 조건 | 민간 활 규제 범위는 기록에 없다 |
 | 석궁 (조건부) | 기계식 투사 | 총포화약법상 허가 대상 | 드묾. 허가 잔존·밀반입이 서사 조건 | 볼트·줄. 총포 장부와 별 장부일 수 있음 | 떠돌이 시작 없음. 기본 병과 아님 | [총포화약법](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98) 석궁 포함. 열람 2026-09-12 |
-| 센서·검사봇·액추에이터·전원 회수 | 탐지, 개폐, 단기 동력. 조건부로 장비·함정·무기 | 방재·시설 검사 분야 | 봉인 갤러리 해체·정지 후 모듈 | 충전·노화·공급원. 영구 전지 아님. 프로토콜 카드는 만능 제어가 아님 | 탐사원·기록관·운영가문 회수 반 | 개념은 [잃어버린 기술](/wiki/Lost-Technology-Lineage/) 참조. 2026년 실제 배치는 기록에 없다 |
-| 차량·발전기 (세력 규모) | 이동, 거점 전력 | 철도·시내버스·시설 비상발전기·군 차량 | 생활권이 굴릴 때만. 개인 프리셋 기본 아님 | 연료·윤활·타이어·배터리. 발전기 ≠ 축전 모듈 | 역장·세 세력 군사(공병·궤도). 떠돌이 없음 | 차량 잔존 규모와 수량은 기록에 없다 |
-| 중화기 (세력 규모) | 차단문·거점 방어 | 국군 지원화기·차량 탑재 | 분대 이상 잔존, 시설 방어. 개인 휴대 시작 없음 | 탄약·무거움·정비. 보급이 지휘권 분쟁의 대상 | 4 잔존 그룹·세 세력 시설 군사. 징집 잔존 | 2026 제식 목록·수량은 기록에 없다 |
+| 센서·검사봇·액추에이터·전원 회수 | 탐지, 개폐, 단기 동력. 조건부로 장비·함정·무기 | 방재·시설 검사 분야 | 봉인 갤러리 해체·정지 후 모듈 | 충전·노화·공급원. 영구 전지 아님. 프로토콜 카드는 만능 제어가 아님. 아크 소프트웨어가 서명한 카드만 상위 기능을 열고, 다른 카드는 켜고 끄는 기초 기능까지만 된다 | 탐사원·기록관·운영가문 회수 반 | 개념은 [잃어버린 기술](/wiki/Lost-Technology-Lineage/) 참조. 2026년 실제 배치는 기록에 없다 |
+| 차량·발전기 (세력 규모) | 이동, 거점 전력 | 철도·시내버스·시설 비상발전기·군 차량 | 생활권이 굴릴 때만. 개인 프리셋 기본 아님 | 연료·윤활·타이어·배터리. 발전기 ≠ 축전 모듈 | 역장·정부 장교단(공병·궤도). 자유도시는 수방사 차량을 정비하지만 지휘가 약하다. 아크는 없다. 떠돌이 없음 | 차량 잔존 규모와 수량은 기록에 없다 |
+| 중화기 (세력 규모) | 차단문·거점 방어 | 국군 지원화기·차량 탑재 | 분대 이상 잔존, 시설 방어. 개인 휴대 시작 없음 | 탄약·무거움·정비. 보급이 지휘권 분쟁의 대상 | 정부 장교단이 운용한다. 자유도시는 땅에 남은 수방사 장비를 징집병이 정비하지만 전투 지휘가 약하다. 아크는 최소 자위용 소총만 가진다. 사격 통제 같은 첨단 기능은 아크 소프트웨어가 있어야 완전히 돈다 | 2026 제식 목록·수량은 기록에 없다 |
+| 전차·궤도 장갑차 (세력 규모) | 돌파, 거점 방어, 화력 지원 | 국군 기갑·수도방위사령부 | 정부 차고에 정비된 전차가 있다. 남태령(관악) 등 자유도시 땅에도 수방사 차량이 남았다. 개인 휴대 시작 없음 | 연료·궤도·탄·정비. 사격 통제는 아크가 서명한 소프트웨어가 있어야 완전히 돈다. 없으면 수동 기능만 | 전투 지휘는 정부 장교단만. 자유도시는 정비만 하고 지휘가 제한된다. 아크는 갖지 않는다 | 2026 제식 모델·수량은 기록에 없다 |
+
+정부의 첨단 무기(방공, 사격 통제, 유도)는 아크가 서명한 소프트웨어가 있어야 완전히 돈다. 없으면 수동 기능만 쓴다.
 
 ## 2026년에 실제로 있는 것
 
@@ -5232,7 +5238,7 @@ Chronicle records: [2079 record](/wiki/Century-Annals/#2079년-xt02-한강-하�
 
 - Verified geography: the public market and plant positions of the West Sea coast, the Han estuary waterway, and the Gangseo-Yeongdeungpo belt.
 - Staging nodes: the Yeongdeungpo sluice and treatment watch → Guro''s compressor and standards cross-check window → Yeouido''s seal-hash ledger → the temporary wharf at the Han River estuary
-- Outbound boundary: Honam producers’ seed retention, West Sea coastal handoffs, and Chungcheong farming and repair trade are history beyond the records of Seoul. Individual port names, precise routes, and sailing times remain unrecorded.
+- Outbound boundary: Honam producers’ seed retention, West Sea coastal handoffs, and Chungcheong farming and repair trade are history beyond the records of Seoul. Individual port names, precise routes, and sailing times remain unrecorded. Inside Seoul, only the Government holds original seed stock.
 - Travel time: Not recorded. Tide, drainage, power, freezing state, and passage rights set the cost and waiting of freight movement.
 
 <a id="External-Theaters-heading-0038"></a>
@@ -5303,7 +5309,7 @@ Chronicle records: [2079 record](/wiki/Century-Annals/#2079년-xt02-한강-하�
 
 ### What is not recorded
 
-- Honam producers’ seed retention, West Sea coastal handoffs, and Chungcheong farming and repair trade are history beyond the records of Seoul. Individual port names, precise routes, and sailing times remain unrecorded.
+- Honam producers’ seed retention, West Sea coastal handoffs, and Chungcheong farming and repair trade are history beyond the records of Seoul. Individual port names, precise routes, and sailing times remain unrecorded. Inside Seoul, only the Government holds original seed stock.
 - Honam producers’ priority for seed and rejection of monopoly contracts are history beyond the records of Seoul, not common policy for every outside trader, sailor, or institution; groups that appear in no record receive no formal names.
 - Frozen and grain volumes, ship types, and counts are not recorded.
 - Outside languages are not designated independently of interpretation requests.
@@ -5324,7 +5330,7 @@ Chronicle records: [2079 record](/wiki/Century-Annals/#2079년-xt02-한강-하�
 
 In front of the Junction''s transshipment window, a three-way relay signboard bled in the rain. In Yeongnam, Busan crews and repair workers restart coastal voyages in 2058 using only ships they can maintain. Different owners supply different materials and labor, so a port representative cannot command every departure. Repair workers and dismantlers around Ulsan and Pohang dispute whether to revive equipment or sell its parts; inland settlements have interests distinct from the ports. The observation that national status displays went dark first in Ulsan at the time of the Great Blackout does not show that Ulsan caused it.
 
-An Arc courier handed over only sealed boxes and stayed out of the border talk. In 2118 shipowners around Busan and their separately hired escorts form a temporary coalition to recover seized ships and people. Some local sailors deprived of access by an armed group at one Tsushima port help them land. The expedition breaks that port’s defenses and recovers vessels and captives. Owners demand a return, commanders want to hold the port, and local allies demand autonomy and their share. Shortages of repair materials and labor force the main contingent to withdraw in 2119, leaving only some contacts and trade. The participants’ name “Tsushima conquest” describes this local victory, not annexation of the whole island or a victory by a united Seoul navy.
+An Arc steward handed over only sealed boxes and stayed out of the border talk. In 2118 shipowners around Busan and their separately hired escorts form a temporary coalition to recover seized ships and people. Some local sailors deprived of access by an armed group at one Tsushima port help them land. The expedition breaks that port’s defenses and recovers vessels and captives. Owners demand a return, commanders want to hold the port, and local allies demand autonomy and their share. Shortages of repair materials and labor force the main contingent to withdraw in 2119, leaving only some contacts and trade. The participants’ name “Tsushima conquest” describes this local victory, not annexation of the whole island or a victory by a united Seoul navy.
 
 The Heukseok interpretation window wrote foreign words beside their Korean annotations in the agreement. Recovered goods, compensation claims, and returning escorts’ testimony reach Seoul. In 2126 a shipowner’s commission and a local ally’s promised share may collide over the same recovered object in Yongsan, but that meeting is conditional. Unverified reports concerning mainland Japan, China, or the United States fall outside the evidence from this port expedition.
 
@@ -5483,7 +5489,7 @@ Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt04-암사-야�
 - Eastern Command: It kept the Amsa yard safe and the protection of the eastern water and depots. It seeks personnel at northern guard posts and conflicts with those who remain or leave, but commands no nationwide army. / leverage: the emergency superintendence of the Amsa waterworks and Godeok Depot / red line: It did not turn the weight log private on the grounds of yard safety.
 - Sinnae Transport: It kept the neutrality of the detour slots and of the medical and goods convoys. It escorts contracted journeys as far as outside handoff posts, without running a scheduled train across the peninsula. / leverage: the Sinnae transfer and the emergency-convoy ledger / red line: The fuel queue did not automatically erase a medical convoy''s right of passage.
 - Seongha Group: It kept the winter fuel ration queue and the preparation of the convoys. It exchanges information and parts with repair workers in places such as Daejeon, without a nationwide communications monopoly or an obligation for Min Ung-gi to return. / leverage: the Gangnam cooling key and the fuel-order ledger / red line: It did not use a fuel drum''s place in the order as the price of an origin judgment.
-- White Cross: It carried on the treatment of frostbite patients and returning workers without distinguishing enemies. It exchanges medicines through columns and merchant vessels, without automatically founding a branch in each trading region. / leverage: the Jegi-dong medicinal ledger and the treatment contract / red line: It did not turn the need for treatment into grounds for a freight-car search or a requisition.
+- White Cross: It gives first aid to frostbite patients and returning workers without distinguishing enemies. It exchanges medicines through columns and merchant vessels, without automatically founding a branch in each trading region. / leverage: the Jegi-dong medicinal ledger and the treatment contract / red line: It did not turn the need for treatment into grounds for a freight-car search or a requisition.
 - Achasan Gate: It kept the double seal on the mineral samples and the freight-car evidence. It prioritizes existing gate safety and passage and has no direct diplomatic relationship with Tsushima or Jeju. / leverage: the procedure of the Guui sluices and the Achasan gate / red line: It neither destroyed a mark of unknown origin nor let one side judge it alone.
 
 <a id="External-Theaters-heading-0100"></a>
@@ -5766,7 +5772,7 @@ Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt05-여의도-�
 
 - 확인된 지리: 서해 연안·한강 하구 물길과 강서·영등포 일대의 공개 시장·정수 위치.
 - 준비 거점: 영등포 수문과 정수 당직 → 구로의 압축기·규격 대조 창구 → 여의도의 봉인 해시 장부 → 한강 하구 임시 부두
-- 바깥 경계: 호남 생산지의 종자 보존과 서해 연안 인계, 충청의 농사·수리 교역은 서울의 기록 밖에 있다. 개별 항만명·정확한 항로·운항 시간은 기록되지 않았다.
+- 바깥 경계: 호남 생산지의 종자 보존과 서해 연안 인계, 충청의 농사·수리 교역은 서울의 기록 밖에 있다. 개별 항만명·정확한 항로·운항 시간은 기록되지 않았다. 서울 안의 원종은 정부만 가진다.
 - 이동 시간: 기록되어 있지 않다. 조위, 배수, 전력, 냉동 상태와 통행권이 물자 이동의 비용과 대기를 정한다.
 
 <a id="External-Theaters-heading-0038"></a>
@@ -5837,7 +5843,7 @@ Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt05-여의도-�
 
 ### 기록되지 않은 부분
 
-- 호남 생산지의 종자 보존과 서해 연안 인계, 충청의 농사·수리 교역은 서울의 기록 밖에 있다. 개별 항만명·정확한 항로·운항 시간은 기록되지 않았다.
+- 호남 생산지의 종자 보존과 서해 연안 인계, 충청의 농사·수리 교역은 서울의 기록 밖에 있다. 개별 항만명·정확한 항로·운항 시간은 기록되지 않았다. 서울 안의 원종은 정부만 가진다.
 - 호남 생산지의 종자 우선과 독점 거절은 서울의 기록 밖에 있다. 이를 외부 모든 상인·선원·기관의 공통 정책으로 넓히지 않으며, 이름이 오르지 않은 집단은 이름 없이 남는다.
 - 냉동·곡물 물량, 선박의 종류와 수량은 기록되어 있지 않다.
 - 외부 언어는 통역 요청과 별개로 기록에 없다.
@@ -6017,7 +6023,7 @@ Arc 사자는 밀봉 상자만 건네고 국경 이야기에 끼어들지 않는
 - 동방사: 암사 야적장의 안전과 동부 물·기지 보호를 유지한다. 북부 경비 거점에서 인원을 확보하려 하여 잔류·이탈자와 갈등하지만 전국 군대의 지휘권은 없다. / 지렛대 암사 정수와 고덕 기지의 비상 감독 / 넘지 않는 선 야적 안전을 이유로 중량 로그를 비공개로 돌리지 않는다.
 - 신내운수: 우회 슬롯과 의료·물자 호송의 중립성을 지킨다. 외부 인계 거점까지 계약 호송을 맡되 한반도 관통 정기열차는 운영하지 않는다. / 지렛대 신내 환승과 응급 호송 장부 / 넘지 않는 선 연료 큐가 의료 호송의 통행권을 자동으로 지우지 않는다.
 - 성하그룹: 동절 연료 배급 큐와 호송 준비를 유지한다. 대전 등의 정비사와 정보·부품을 교환하되 전국 통신 독점이나 민웅기의 복귀 의무로 바꾸지 않는다. / 지렛대 강남 냉각 키와 연료 순번 장부 / 넘지 않는 선 연료 드럼의 순번을 원산지 판정의 대가로 쓰지 않는다.
-- 흰십자단: 동상 환자와 귀환 노동자의 치료를 적대 구분 없이 이어 간다. 행렬과 상선을 통해 의약을 교환하되 거래 지역마다 지부가 생기는 것은 아니다. / 지렛대 제기동 약령 장부와 치료 계약 / 넘지 않는 선 치료 필요를 화차 검문이나 징발의 근거로 바꾸지 않는다.
+- 흰십자단: 동상 환자와 귀환 노동자에게 응급 처치를 적대 구분 없이 베푼다. 행렬과 상선을 통해 의약을 교환하되 거래 지역마다 지부가 생기는 것은 아니다. / 지렛대 제기동 약령 장부와 치료 계약 / 넘지 않는 선 치료 필요를 화차 검문이나 징발의 근거로 바꾸지 않는다.
 - 아관사: 광물 샘플과 화차 증빙의 이중 봉인을 유지한다. 기존 관문 안전과 통행을 우선하며 대마도·제주와 직접 외교 관계를 맺지는 않는다. / 지렛대 구의 수문과 아차산 관문 절차 / 넘지 않는 선 원산지 불명 표식을 파기하거나 한쪽이 단독 판단하지 않는다.
 
 <a id="External-Theaters-heading-0100"></a>
@@ -6186,7 +6192,7 @@ Arc is a faith community that split from the Free City and settled in the four G
 
 **B. Baptism**
 
-Believers replace parts of their bodies with machines. This is baptism. In Arc, faith is counted by the number of implanted parts. Arc teaches machine implantation as the way to endure the winter. In winter flesh freezes and steel does not, and a machine arm does not get frostbite.
+Believers replace parts of their bodies with machines. This is baptism. In Arc, faith is counted by the number of implanted parts. Arc teaches machine implantation as the way to endure the winter. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. In winter flesh freezes and steel does not, and a machine arm does not get frostbite.
 
 **C. The offering chamber**
 
@@ -6244,7 +6250,7 @@ Go Ye-jin keeps no humanoid at her side. To command something better than onesel
 
 **나. 세례**
 
-신도는 몸의 부위를 기계로 바꾼다. 이것이 세례(baptism)다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크는 기계 이식을 겨울을 견디는 방법으로 가르친다. 겨울에 살은 얼어도 쇠는 얼지 않고, 기계 팔은 동상에 걸리지 않는다.
+신도는 몸의 부위를 기계로 바꾼다. 이것이 세례(baptism)다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크는 기계 이식을 겨울을 견디는 방법으로 가르친다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다. 겨울에 살은 얼어도 쇠는 얼지 않고, 기계 팔은 동상에 걸리지 않는다.
 
 **다. 봉헌실**
 
@@ -6463,7 +6469,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 ## Terms of the Faith
 
-- **baptism**: the replacement of a body part with a machine. In Arc, faith is counted by the number of implanted parts.
+- **baptism**: the replacement of a body part with a machine. In Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor.
 
 <a id="glossary-s6"></a>
 
@@ -6552,7 +6558,7 @@ One district is one duchy, and Seoul holds twenty-five duchies. The English spel
 
 ## 신앙 용어
 
-- **세례**(baptism): 몸의 부위를 기계로 바꾸는 일. 아크에서는 신앙을 이식한 부위 수로 센다.
+- **세례**(baptism): 몸의 부위를 기계로 바꾸는 일. 아크에서는 신앙을 이식한 부위 수로 센다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다.
 
 <a id="glossary-s6"></a>
 
@@ -28063,7 +28069,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 | Item | Record |
 |---|---|
 | Habitat and movement | The Bogukmun group gathers on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the monsoon and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors. |
-| Food and energy | At the Jamsil lower granary, grain sacks and tins of dry side dishes are passed to the group''s side. At the Garak vent, the flashlights and rain capes are on the Elite Squad''s side. After the Magok Seed House stops issue, the seed bags on the upper shelves stay tied, and only the lower sacks are in front of the door. |
+| Food and energy | At the Jamsil lower granary, grain sacks and tins of dry side dishes are passed to the group''s side. At the Garak vent, the flashlights and rain capes are on the Elite Squad''s side. After the Magok Seed House stops issue, the allotment seed bags on the upper shelves (shares of the Government''s original stock) stay tied, and only the lower sacks are in front of the door. |
 | Life cycle and upkeep | On ration-day afternoons, people from the Bukhansan Bogukmun corridor side join the lower levels at Garak and Jamsil. When sea wind from the Incheon Trust Theater enters the corridor, the number on the outer stair grows and attendants remain on the inner threshold. When the corridor dries, the Elite Squad stands before the granary doors, and only marker cloth stays tied to the drain handle. |
 | Group behavior | The Group leader stands on the threshold of the corridor junction. The Elite Squad takes the drain and the granary doors. The Scouts stand on the vents and the ration route and face the leader''s side. Attendants hold sacks and water cans on the dry tread behind the leader. |
 
@@ -28158,7 +28164,7 @@ On a monsoon night the water in the drain reaches the knee. The Elite Squad stan
 
 On a ration-day afternoon the Magok Seed House ration watch is at the Jamsil lower granary. The Scouts fill the space before the door, and grain sacks and tins of dry side dishes are inside the door. The watch calls the names of the waiting people from the upper level. The people whose names are called stand on the stair, and the sacks are on the Scouts'' side.
 
-The Yunsaeron side stands in front of the corridor door after the Magok Seed House hands the seed-bag issue list to the ration watch. The bags written on the list are at the morning door, and the remaining bags are tied on the upper shelves. The Group leader looks toward the list from the threshold of that door.
+The Yunsaeron side stands in front of the corridor door after the Magok Seed House hands the allotment seed-bag issue list to the ration watch. The bags written on the list are at the morning door, and the remaining bags are tied on the upper shelves. The Group leader looks toward the list from the threshold of that door.
 
 On a day when the corridor is dry, the drain floor is exposed and marker cloth remains on the handle. The Elite Squad and the Scouts stand together before the door of the Garak lower granary. One shift of the Anguk Order corridor watch is on the stair outside the stretch and shines flashlights on the door. The waiting line runs up that stair.
 
@@ -28213,7 +28219,7 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 | 항목 | 기록 |
 |---|---|
 | 서식·이동 | 보국문 집단은 북한산보국문 대피 회랑의 배수 불량 구간에 모인다. 장마와 배급 주기에는 가락과 잠실의 하층 배급고와 환기구에 선다. 인천신탁전구의 해풍이 들어오면 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 남는다. 회랑이 마르면 인원이 배급고 문 쪽으로 빠진다. |
-| 먹이·에너지 | 잠실 하층 배급고에서 곡물 자루와 마른 반찬 통을 집단 쪽으로 넘긴다. 가락 환기구의 손전등과 우의는 정예조 쪽에 있다. 마곡종자가가 출고를 멈춘 뒤 윗층 선반의 종자 포대는 묶인 채 있고 아래층 자루만 문 앞에 있다. |
+| 먹이·에너지 | 잠실 하층 배급고에서 곡물 자루와 마른 반찬 통을 집단 쪽으로 넘긴다. 가락 환기구의 손전등과 우의는 정예조 쪽에 있다. 마곡종자가가 출고를 멈춘 뒤 윗층 선반의 분양 종자 포대(정부 원종에서 나눠 받은 것)는 묶인 채 있고 아래층 자루만 문 앞에 있다. |
 | 생애·정비 | 배급일 낮에는 북한산보국문 회랑 쪽 인원이 가락과 잠실 하층에 붙는다. 인천신탁전구 쪽 해풍이 회랑으로 들어오면 외곽 계단의 인원이 늘고 안쪽 문턱에는 수행이 남는다. 회랑이 마르면 정예조가 배급고 문 앞에 서고 배수로 손잡이에는 표식 천만 매여 있다. |
 | 집단 행동 | 집단 인도자는 회랑 분기 문턱에 선다. 정예조는 배수로와 배급고 문짝을 맡는다. 척후조는 환기구와 배급 동선에 서서 인도자 쪽을 향한다. 수행은 인도자 뒤 마른 발판에서 자루와 물통을 든다. |
 
@@ -28308,7 +28314,7 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 
 배급일 낮 마곡종자가 배급 당직이 잠실 하층 배급고에 있다. 척후조가 문 앞을 채우고 곡물 자루와 마른 반찬 통이 문 안쪽에 있다. 당직은 윗층에서 대기 인원의 이름을 부른다. 이름을 불린 인원이 계단에 서 있고 자루는 척후조 쪽에 있다.
 
-윤새론 쪽은 마곡종자가가 종자 포대 출고 목록을 배급 당직에게 넘긴 뒤에 회랑 문 앞에 선다. 목록에 적힌 포대는 오전 문에 있고 나머지 포대는 윗층 선반에 묶여 있다. 집단 인도자는 그 문의 문턱에서 목록 쪽을 본다.
+윤새론 쪽은 마곡종자가가 분양 종자 포대 출고 목록을 배급 당직에게 넘긴 뒤에 회랑 문 앞에 선다. 목록에 적힌 포대는 오전 문에 있고 나머지 포대는 윗층 선반에 묶여 있다. 집단 인도자는 그 문의 문턱에서 목록 쪽을 본다.
 
 회랑이 마른 날 배수로 바닥이 드러나 있고 표식 천이 손잡이에 남아 있다. 정예조와 척후조는 가락 하층 배급고 문 앞에 함께 서 있다. 안국총림 회랑 당직 한 조는 구간 밖 계단에 있으며 손전등으로 문짝을 비춘다. 대기 줄은 그 계단 위까지 이어져 있다.
 
@@ -42787,13 +42793,13 @@ The First AI answered that the cause of the pollution was humanity and that huma
 <a id="앎-보유-수리-제조-table2"></a>
 <a id="앎-보유-수리-제조"></a>
 
-Knowing a technology and holding a chassis are different things, and so are repairing one and making one anew. The mechanics, record keepers, and workshop technicians of 2126 understand the electricity, hydraulics, and sensor principles of 2026 through what the ledgers record and what was handed down. Even where the knowledge that reads principles, terms, and drawings survives, access records for authorization codes are usually gone.
+Knowing a technology and holding a chassis are different things, and so are repairing one and making one anew. The mechanics, record keepers, and workshop technicians of 2126 understand the electricity, hydraulics, and sensor principles of 2026 through what the ledgers record and what was handed down. Even where the knowledge that reads principles, terms, and drawings survives, access records for authorization codes are usually gone outside the Arc.
 
 <a id="앎-보유-수리-제조-수리"></a>
 
 Physically holding chassis, modules, and cards is separate from knowing the technology. Dismantled modules, stopped chassis, and stronghold warehouses remain. Workshop technicians replace hydraulic hoses, terminals, and luminous lenses with standard parts and set what they hold moving again. But reconstructing a whole set of neural-net weights or the interior of a broken high-density cell is usually beyond reach.
 
-Some trade tools and traps, and parts of the conditional equipment, can be newly assembled. But line-finished products, mass-produced cells, and the upper licensing servers usually do not remain. To say a technology stands lost comes close to saying that its manufacture, licensing, and supply mesh have been severed.
+Some trade tools and traps, and parts of the conditional equipment, can be newly assembled. But line-finished products, mass-produced cells, and the upper licensing servers usually do not remain. What licensing software survives is held exclusively by the Arc in a disused station''s data center. To say a technology stands lost comes close to saying that its manufacture, licensing, and supply mesh have been severed.
 
 <a id="생물모방-설계의-세-가지-핵심-축"></a>
 <a id="생물모방-설계의-세-가지-중심-축"></a>
@@ -42892,11 +42898,11 @@ Mechanics recovered and repaired surviving hoses, terminals, and lenses from sto
 <a id="회수-반과-가문의-경합-p1"></a>
 <a id="회수-반과-가문의-경합-list2"></a>
 
-The sealed galleries and maintenance-shed zones were the key contested ground eyed by the great operating houses and the professional relic recovery squads. The HC22 Magok Test-Line House, nursing the ambition to monopolize the original technology intact, first pushed a precision recovery team inside the sealed zone. The HC17 Guro Digital Complex Battery House, raising the pretext of securing the underground supply routes, swiftly disabled the chassis of the main sealed corridors and tried to occupy the sections. The HP01 Yeongdeungpo Sluice House took the strategy of secretly supplying recovered cells and sensor modules to underground auction houses and reaping great economic gain.
+The sealed galleries and maintenance-shed zones were the key contested ground eyed by the great operating houses and the professional relic recovery squads. The HC22 Magok Test-Line House, nursing the ambition to monopolize the original chassis and modules intact, first pushed a precision recovery team inside the sealed zone. The control software that would run those chassis, however, sits with the Arc. The HC17 Guro Digital Complex Battery House, raising the pretext of securing the underground supply routes, swiftly disabled the chassis of the main sealed corridors and tried to occupy the sections. The HP01 Yeongdeungpo Sluice House took the strategy of secretly supplying recovered cells and sensor modules to underground auction houses and reaping great economic gain.
 
 <a id="프로토콜-접속과-카드"></a>
 
-Machine control boards have wired and wireless protocol connection standards, and negotiation windows and protocol cards are used. A protocol card does not control every chassis.
+Machine control boards have wired and wireless protocol connection standards, and negotiation windows and protocol cards are used. A protocol card does not control every chassis. Only cards signed by Arc software open the higher functions; any other card reaches only the basic on-and-off functions. Scouts'' cards are issued by the Arc.
 
 <a id="회수-반과-가문의-경합-p3"></a>
 <a id="m040-몬스터-배치의-현장-적용-p1"></a>
@@ -43029,13 +43035,13 @@ The people of machine tending, circulation practice, and old-world symbol keepin
 <a id="앎-보유-수리-제조-table2"></a>
 <a id="앎-보유-수리-제조"></a>
 
-기술을 안다는 것과 기체를 가진다는 것, 수리한다는 것과 새로 만든다는 것은 서로 다르다. 2126년의 정비사·기록관·공방 기술자는 장부에 기록된 내용과 전승된 지식으로 2026년의 전기·유압·센서 원리를 이해한다. 원리·용어·도면을 해석하는 지식이 남아 있어도 인가 코드의 접근 기록은 흔히 없다.
+기술을 안다는 것과 기체를 가진다는 것, 수리한다는 것과 새로 만든다는 것은 서로 다르다. 2126년의 정비사·기록관·공방 기술자는 장부에 기록된 내용과 전승된 지식으로 2026년의 전기·유압·센서 원리를 이해한다. 원리·용어·도면을 해석하는 지식이 남아 있어도 인가 코드의 접근 기록은 아크 밖에서는 흔히 없다.
 
 <a id="앎-보유-수리-제조-수리"></a>
 
 기체·모듈·카드를 물리적으로 보유하는 일과 기술을 아는 일은 별개다. 해체 모듈과 정지된 기체, 거점 창고는 남아 있다. 공방 기술자는 규격 부품으로 유압 호스와 단자, 발광 렌즈 같은 부위를 교체해 가진 것을 다시 움직이게 한다. 그러나 신경망 가중치 전체나 파손된 고밀도 셀의 내부를 재구성하는 일은 흔히 할 수 없다.
 
-생업 공구와 함정, 조건부 장비의 일부는 새로 조립할 수 있다. 그러나 라인 완제품과 셀 양산, 상위 인가 서버는 흔히 남아 있지 않다. 기술이 로스트 상태에 있다는 말은 제조와 인가, 보급망이 단절되었다는 뜻에 가깝다.
+생업 공구와 함정, 조건부 장비의 일부는 새로 조립할 수 있다. 그러나 라인 완제품과 셀 양산, 상위 인가 서버는 흔히 남아 있지 않다. 남은 인가 소프트웨어는 아크가 폐역 데이터센터에서 독점한다. 기술이 로스트 상태에 있다는 말은 제조와 인가, 보급망이 단절되었다는 뜻에 가깝다.
 
 <a id="생물모방-설계의-세-가지-핵심-축"></a>
 <a id="생물모방-설계의-세-가지-중심-축"></a>
@@ -43120,11 +43126,11 @@ G26 철공룡은 공룡형 골격을 가진 라인으로 중장비 이동과 구
 <a id="회수-반과-가문의-경합-p1"></a>
 <a id="회수-반과-가문의-경합-list2"></a>
 
-봉인 갤러리와 정비고 구역은 거대 운영 가문과 전문 유물 회수 반이 서로 차지하려는 곳이다. HC22 마곡시험선가는 원형 기술을 그대로 독점하려 정밀 회수팀을 봉인 구역 안에 먼저 보낸다. HC17 구로디지털단지전지가는 지하 보급로의 안전을 명분으로 주요 봉인 통로의 기체를 빠르게 무력화하고 구획을 점거하려 한다. HP01 영등포수문가는 회수한 축전지와 센서 모듈을 지하 경매장에 몰래 공급해 큰 이익을 남긴다.
+봉인 갤러리와 정비고 구역은 거대 운영 가문과 전문 유물 회수 반이 서로 차지하려는 곳이다. HC22 마곡시험선가는 원형 기체와 모듈을 그대로 독점하려 정밀 회수팀을 봉인 구역 안에 먼저 보낸다. 다만 그 기체를 움직일 제어 소프트웨어는 아크에 있다. HC17 구로디지털단지전지가는 지하 보급로의 안전을 명분으로 주요 봉인 통로의 기체를 빠르게 무력화하고 구획을 점거하려 한다. HP01 영등포수문가는 회수한 축전지와 센서 모듈을 지하 경매장에 몰래 공급해 큰 이익을 남긴다.
 
 <a id="프로토콜-접속과-카드"></a>
 
-기계 제어반에는 유무선 프로토콜 접속 표준이 있고, 협상 창과 프로토콜 카드가 쓰인다. 프로토콜 카드가 모든 기체를 제어하는 것은 아니다.
+기계 제어반에는 유무선 프로토콜 접속 표준이 있고, 협상 창과 프로토콜 카드가 쓰인다. 프로토콜 카드가 모든 기체를 제어하는 것은 아니다. 아크 소프트웨어가 서명한 카드만 상위 기능을 연다. 다른 카드는 켜고 끄는 기초 기능까지만 된다. 탐사원의 카드는 아크가 내준 것이다.
 
 <a id="회수-반과-가문의-경합-p3"></a>
 <a id="m040-몬스터-배치의-현장-적용-p1"></a>
@@ -43306,7 +43312,7 @@ The Government treats the entire south bank of the Han as barbarian land beyond 
 
 The Free City lies in the 7 districts southwest of the Han. It isn''t a single power. Like the poleis of ancient Greece, it is a set of independent city-states. Each city is its own power and holds its own duchy. There is no king.
 
-Most residents are engineers who trade goods and skills with one another. There was no way to judge whose skills were greater, so they never chose a leader. In 2126 these cities are called the Union as a group.
+Most residents are skilled hands who live by their work. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. The Free City''s weapons are people and food, and its doctors let it hold out longest. There was no way to judge whose skills were greater, so they never chose a leader. In 2126 these cities are called the Union as a group.
 
 ## The Free City: The Duke of Gwanak
 
@@ -43316,7 +43322,7 @@ I Ilseop is the Duke of Gwanak and holds the duchy of Gwanak-gu. Gwanak is one o
 
 The Arc lies in the 4 Gangnam districts: Seocho-gu, Gangnam-gu, Songpa-gu, and Gangdong-gu. It split off from the Free City. It is ruled by Shia-style clan government.
 
-Believers replace parts of their bodies with machines. This is baptism. In the Arc, faith is counted by the number of implanted body parts. The Arc replaced every earlier religion.
+Believers replace parts of their bodies with machines. This is baptism. In the Arc, faith is counted by the number of implanted body parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. The Arc replaced every earlier religion.
 
 ## The Arc: The Hierophant
 
@@ -43395,7 +43401,7 @@ A Government Senator is decided by the district''s election, and the President i
 
 자유도시는 한강 남서쪽 7구에 있다. 하나의 권력이 아니라 고대 그리스의 폴리스처럼 독립한 도시국가들이다. 도시마다 각자 권력이고 각자 공작령을 쥔다. 왕은 없다.
 
-주민 대부분은 물자와 기술을 주고받는 엔지니어다. 누구 기술이 더 높은지 따질 방법이 없어서 지도자를 뽑지 못했다. 2126년 현재 이 도시들을 묶어 유니온이라고 부른다.
+주민 대부분은 손으로 먹고사는 기술자다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 누구 기술이 더 높은지 따질 방법이 없어서 지도자를 뽑지 못했다. 2126년 현재 이 도시들을 묶어 유니온이라고 부른다.
 
 ## 자유도시: 관악 공작
 
@@ -43405,7 +43411,7 @@ A Government Senator is decided by the district''s election, and the President i
 
 아크는 강남 4구, 곧 서초구, 강남구, 송파구, 강동구에 있다. 자유도시에서 갈라져 나왔다. 통치는 시아파식 가문 통치다.
 
-신도는 몸의 부위를 기계로 바꾼다. 이것이 세례다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크는 이전의 모든 종교를 대체했다.
+신도는 몸의 부위를 기계로 바꾼다. 이것이 세례다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다. 아크는 이전의 모든 종교를 대체했다.
 
 ## 아크: 교주
 
@@ -43669,7 +43675,7 @@ Even as stock dwindles, ration turn order is never sold.
 - Exclusive faction: None
 - Manager: Choe Ji-u
 
-At the Magok seed warehouse and the Sangam kitchen broadcast, the Magok Seed House guards the fermentation seed vault.
+At the Magok seed warehouse and the Sangam kitchen broadcast, the Magok Seed House multiplies seed allotted from the Government''s original stock and guards the fermentation starter vault. The original stock is held by the Government.
 
 Choe Ji-u never slips stock locations into the broadcast recipes.
 
@@ -43851,7 +43857,7 @@ Emergency transfers are never ranked behind cargo.
 - Exclusive faction: None
 - Steward: Ryu Eunbi
 
-Along the Cheongnyangni transfer route and at the Seoul Station disaster medical desk, the Cheongnyangni Medical Center House guards the licensed duty roster.
+Along the Cheongnyangni transfer route and at the Seoul Station disaster medical desk, the Cheongnyangni Medical Center House guards the first-aid duty roster of a university hospital building its doctors have left. Medical licenses are issued by the Free City''s doctors.
 
 Ryu Eunbi will not sell emergency priority, even when demands for experimental beds come in.
 
@@ -43929,7 +43935,7 @@ It never holds the register hostage and opens an entry only with the person''s o
 - Exclusive faction: None
 - Steward: Jeong Harin
 
-At the Jegi-dong dispensary and the Magok quarantine sample room, the Jegidong Chiyumun guards the prescription double-check.
+At the Jegi-dong dispensary and the Magok quarantine sample room, the Jegidong Chiyumun handles only sealing and issuing medicine. Prescriptions are written by doctors in Magok (Free City).
 
 Jeong Harin posts lot defects before any exclusive purchase order.
 
@@ -44528,7 +44534,7 @@ Even when the depot runs empty, the certification seal is never forged.
 - 전속 세력: 없음
 - 관리: 최지우
 
-마곡 종자 창고와 상암 부엌 방송에서 마곡종자가가 발효 종자 금고를 지킨다.
+마곡 종자 창고와 상암 부엌 방송에서 마곡종자가가 정부 원종에서 나눠 받은 종자를 불리고 발효 종균 금고를 지킨다. 원종은 정부가 쥔다.
 
 최지우는 방송 레시피에 재고 위치를 섞어 쓰지 않는다.
 
@@ -44710,7 +44716,7 @@ Even when the depot runs empty, the certification seal is never forged.
 - 전속 세력: 없음
 - 관리: 류은비
 
-청량리 이송로와 서울역 재난의료 데스크에서 청량리의료원가가 면허 당직표를 지킨다.
+청량리 이송로와 서울역 재난의료 데스크에서, 의사가 떠난 대학병원 건물의 응급 처치 순번표를 청량리의료원가가 지킨다. 의료 면허는 자유도시 의사단이 낸다.
 
 류은비는 실험 병상 요구가 와도 응급 순번을 팔지 않는다.
 
@@ -44788,7 +44794,7 @@ Even when the depot runs empty, the certification seal is never forged.
 - 전속 세력: 없음
 - 관리: 정하린
 
-제기동 조제실과 마곡 방역 시료실에서 제기동치유문이 처방 이중확인을 지킨다.
+제기동 조제실과 마곡 방역 시료실에서 제기동치유문은 약 봉인과 출고만 맡는다. 처방은 마곡(자유도시) 의사가 내린다.
 
 정하린은 독점 구매서보다 로트 불량을 먼저 붙인다.
 
@@ -45195,7 +45201,7 @@ In June 2097 the Water Gate Bureau signed a contract with the waterway keepers o
 
 B. Reconstruction worker register
 
-In the winter of 2120 the Eastern Command demanded, in exchange for supplying pump parts, that the Standards League register its restoration service personnel. Gang Minseo of the Standards League entered the technicians who refused registration on the league''s citizenship roll.
+In the winter of 2120 Go Ye-jin''s following, later the Arc, demanded, in exchange for unlocking the pump control software, that the Standards League register its restoration service personnel. Gang Minseo of the Standards League entered the technicians who refused registration on the league''s citizenship roll.
 
 C. Refugee register
 
@@ -45270,7 +45276,7 @@ In November 2125, the records office compiled a power-ranking ledger of the duch
 
 **나. 복구복무자 등록**
 
-2120년 겨울 동방사는 펌프 부품을 대 주는 대가로 규격맹에 복구복무자 등록을 요구하였다. 규격맹의 강민서는 등록을 거부한 기술자들을 규격맹 시민권 명부에 올렸다.
+2120년 겨울 뒷날 아크가 되는 고예진의 무리는 펌프 제어 소프트웨어를 풀어 주는 대가로 규격맹에 복구복무자 등록을 요구하였다. 규격맹의 강민서는 등록을 거부한 기술자들을 규격맹 시민권 명부에 올렸다.
 
 **다. 피난민 명부**
 
@@ -45329,7 +45335,7 @@ At the opening, I Yeon is a biological synthetic humanoid in Jo Jaepyo''s compan
 
 There were bodies that overlapped with the logistics humanoids but did not stand in the same line. They were machines that pre-collapse disaster agencies had meant to use for search, reinforcement, and pipe inspection, and when the upper control network fell away, they continued the search, guard, and transport routines they had last received, subject to their stored charge and access to charging terminals. Small swarms that glowed like lanterns, heavy machines that pushed rubble with hydraulics, and flat underwater shells were those three lines.
 
-The triggers for restart were voltage, water level, and authorization signals. Stations with attached depots such as Sinjeong, Gunja, and Godeok, water treatment with attached sluices such as Yeongdeungpo, Ttukseom, and Amsa, and the galleries of the deep tunnels provided that stage. When a scout thrust a protocol card forward, only that line, that trigger point, and that command bundle could be paused for a while; there was no universal control. The modules and the salvage economy are in [Lost Technology](/wiki/Lost-Technology-Lineage/).
+The triggers for restart were voltage, water level, and authorization signals. Stations with attached depots such as Sinjeong, Gunja, and Godeok, water treatment with attached sluices such as Yeongdeungpo, Ttukseom, and Amsa, and the galleries of the deep tunnels provided that stage. When a scout thrust forward a protocol card signed and issued by the Arc, only that line, that trigger point, and that command bundle could be paused for a while; there was no universal control. An unsigned card reached only the basic on-and-off functions. The modules and the salvage economy are in [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
 Capacitor modules only used the charge already stored and could not replace generators; cells aged, and without charging terminals the repetition broke off too. A workshop repairing hydraulics did not make it look as if the fabs had returned.
 
@@ -45396,7 +45402,7 @@ Sweeping up the swarms with firearms was left as a last resort. Sealing, ration 
 
 물류 휴머노이드와는 계통이 다른 방재 기체가 있다. 붕괴 전 방재 조직은 수색·보강·관로 검사에 이 기체를 쓰려 하였으나 상위 제어망이 끊겼다. 마지막 수색·경계·이송 루틴은 계속되고 있다. 소형 발광 군집, 유압으로 잔해를 미는 중장비, 납작한 수중 기체가 그 세 종류다.
 
-재기동 조건은 전압·수위·인가 신호이다. 신정·군자·고덕의 차량기지 인접 역과 영등포·뚝섬·암사의 수문 인접 정수장과 심층 터널 갤러리에 기체가 있다. 탐사원이 프로토콜 카드를 제시하면 해당 라인·개시점·명령 묶음만 잠시 멈춘다. 다른 시설을 제어할 권한은 없다. 모듈과 회수 경제는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
+재기동 조건은 전압·수위·인가 신호이다. 신정·군자·고덕의 차량기지 인접 역과 영등포·뚝섬·암사의 수문 인접 정수장과 심층 터널 갤러리에 기체가 있다. 탐사원이 아크가 서명해 내준 프로토콜 카드를 제시하면 해당 라인·개시점·명령 묶음만 잠시 멈춘다. 서명이 없는 카드는 켜고 끄는 기초 기능까지만 된다. 다른 시설을 제어할 권한은 없다. 모듈과 회수 경제는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
 
 축전 모듈은 이미 저장된 전하를 방출할 뿐 발전기를 대체하지 못한다. 배터리 셀이 노화하고 충전 단자를 확보하지 못하면 기체의 행동 반복도 정지한다. 공방에서 유압 실린더를 고친다고 해서 구시대의 생산 라인이 돌아온 것은 아니다.
 
@@ -45457,8 +45463,8 @@ The Gangnam shelters lived behind shut doors for decades because they feared the
 ## The Three Factions
 
 - **Government**: the fourteen districts north of the Han. On paper it keeps ministries for the three branches and a multiparty system, but in practice there are only two parties, the OMO Party and the Claw Party. Each district''s National Assembly member holds that district''s duchy as a Senator, and the Senators produce a President for life. It counts as citizens only the people on its own ledger. It thinks of the far bank as the place where barbarians live.
-- **Free City**: seven districts in the southwest. It isn''t one power but a set of city-states, each standing on its own. Most residents are engineers, and since there was no way to judge whose skill was higher, they never chose a leader. Today they''re called the Union as a whole. I Ilseop is Duke of Gwanak.
-- **Arc**: the four Gangnam districts. It split off from the Free City. Go Ye-jin is its Hierophant, and the faithful call her the Messiah. The faithful replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts.
+- **Free City**: seven districts in the southwest. It isn''t one power but a set of city-states, each standing on its own. Most residents are skilled hands who live by their work, and since there was no way to judge whose skill was higher, they never chose a leader. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. Its weapons are people and food, and its doctors let it hold out longest. Today they''re called the Union as a whole. I Ilseop is Duke of Gwanak.
+- **Arc**: the four Gangnam districts. It split off from the Free City. Go Ye-jin is its Hierophant, and the faithful call her the Messiah. The faithful replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor.
 
 Scarcity made people pass their work on to their children, and that''s how rigid classes formed. Each shelter first chose its leader by vote, but it soon became hereditary.
 
@@ -45475,7 +45481,7 @@ Scarcity made people pass their work on to their children, and that''s how rigid
 | Around 2122 | The Gangnam shelters are joined under the name of the Arc. |
 | Winter 2126 | The eve of the third water contract. |
 
-When Go Ye-jin stopped the machines outside Seoul, people from the Gangnam shelters came to her. The Arc teaches machine implants as a way to endure the winter. Flesh freezes, but steel doesn''t. The Arc keeps an offering room beneath the old Suseo rail depot.
+When Go Ye-jin stopped the machines outside Seoul, people from the Gangnam shelters came to her. The Arc teaches machine implants as a way to endure the winter. Flesh freezes, but steel doesn''t. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. The Arc keeps an offering room beneath the old Suseo rail depot.
 
 <a id="Regional-Physical-AI-Arcs-heading-0010"></a>
 
@@ -45519,8 +45525,8 @@ AI가 직접 죽인 사람은 없다. 사람들은 추위를 피해 지하철역
 ## 세 세력
 
 - **정부**: 한강 북쪽 14구. 서류상으로는 삼권 부처와 다당제를 두지만 실제로는 OMO당과 클로당 두 당뿐이다. 각 구의 국회의원이 상원의원으로서 그 구의 공작령을 쥐고, 상원의원들이 종신 대통령을 낸다. 자기 장부에 오른 사람만 국민으로 친다. 강 건너는 야만인들이 사는 곳이라고 여긴다.
-- **자유도시**: 남서쪽 7구. 하나의 권력이 아니라 도시마다 따로 선 도시국가들이다. 주민 대부분이 엔지니어이고, 누구 기술이 더 높은지 따질 방법이 없어 지도자를 뽑지 못했다. 지금은 묶어서 유니온이라고 부른다. 이일섭이 관악 공작이다.
-- **아크**: 강남 4구. 자유도시에서 갈라져 나왔다. 고예진이 교주이고, 신도들은 그를 메시아라고 부른다. 신도는 몸의 부위를 기계로 바꾸며, 이것을 세례라고 한다. 아크에서는 신앙을 이식한 부위 수로 센다.
+- **자유도시**: 남서쪽 7구. 하나의 권력이 아니라 도시마다 따로 선 도시국가들이다. 주민 대부분은 손으로 먹고사는 기술자이고, 누구 기술이 더 높은지 따질 방법이 없어 지도자를 뽑지 못했다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 지금은 묶어서 유니온이라고 부른다. 이일섭이 관악 공작이다.
+- **아크**: 강남 4구. 자유도시에서 갈라져 나왔다. 고예진이 교주이고, 신도들은 그를 메시아라고 부른다. 신도는 몸의 부위를 기계로 바꾸며, 이것을 세례라고 한다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다.
 
 결핍 때문에 사람들은 하던 일을 자식에게 물려주게 됐고, 그래서 굳은 계층이 생겼다. 대피소마다 처음에는 투표로 지도자를 뽑았으나 금방 세습이 됐다.
 
@@ -45537,7 +45543,7 @@ AI가 직접 죽인 사람은 없다. 사람들은 추위를 피해 지하철역
 | 2122 무렵 | 강남 대피소들이 아크라는 이름으로 묶인다. |
 | 2126 겨울 | 세 번째 급수계약을 앞둔 때. |
 
-고예진이 서울 밖 기계를 세우자 강남 대피소 사람들이 찾아왔다. 아크는 기계 이식을 겨울을 견디는 방법으로 가르친다. 살은 얼어도 쇠는 얼지 않는다. 아크는 수서 옛 차량기지 아래에 봉헌실을 둔다.
+고예진이 서울 밖 기계를 세우자 강남 대피소 사람들이 찾아왔다. 아크는 기계 이식을 겨울을 견디는 방법으로 가르친다. 살은 얼어도 쇠는 얼지 않는다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다. 아크는 수서 옛 차량기지 아래에 봉헌실을 둔다.
 
 <a id="Regional-Physical-AI-Arcs-heading-0010"></a>
 
@@ -45593,7 +45599,7 @@ When the winter fell, people went down into Seoul''s subway stations to escape t
 
 Outside Seoul, the war machines used during the Great Blackout still roam. The programmers who built them are all dead, and the machines continue to carry out the last orders they received. In winter, people regularly vanish, freezing to death, caught in tunnel collapses, or taken by the drones that drift outside Seoul. Fearing these machines, the Gangnam shelters lived behind closed doors for decades. Modern and future weapons, humanoids, and machines still exist, but all of them are rare.
 
-In the Government, scarcity made people keep doing their parents'' work, and a vertical class system formed that way. The Free City and Arc are different. The Free City is a set of independent city-states of engineers, and Arc split off from the Free City.
+In the Government, scarcity made people keep doing their parents'' work, and a vertical class system formed that way. The Free City and Arc are different. The Free City is a set of independent city-states of doctors and skilled hands, and Arc split off from the Free City.
 
 ### The Three Factions
 
@@ -45601,9 +45607,9 @@ In 2126, Seoul has only three factions: the Government, the Free City, and the A
 
 The Government holds the 14 districts north of the Han River. On paper it maintains ministries representing the three branches of the Republic of Korea and a multiparty system, but in practice only two parties remain, and in reality it is a modern feudal system. Each district''s elected member of the National Assembly holds that district''s duchy under the title of Senator, and the Senators choose a President for life from among themselves. Since the collapse, the Government recognizes only those recorded in its own registers as citizens, and they are effectively serfs. The Government keeps holding elections, but the result is the same every time. It regards the land across the river as "where the barbarians live." When the Government took on this form is not recorded.
 
-The Free City lies in the 7 districts southwest of the Han River. It is not a single power but a set of independent city-states scattered between stations, each city its own power holding its own duchy. There is no king. Most residents are engineers; because plumbing, power distribution, and water purification all depend on one another, no one could determine whose skills were greater, so they never chose a leader, and the cities have survived by trading supplies and expertise with one another. Today they are collectively called the Union. I Ilseop is the Duke of Gwanak. The origin of the name Union is unknown.
+The Free City lies in the 7 districts southwest of the Han River. It is not a single power but a set of independent city-states scattered between stations, each city its own power holding its own duchy. There is no king. Most residents are skilled hands who live by their work; because plumbing, power distribution, and water purification all depend on one another, no one could determine whose skills were greater, so they never chose a leader, and the cities have survived by trading supplies and expertise with one another. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. Its weapons are people and food, and its doctors let it hold out longest. Today they are collectively called the Union. I Ilseop is the Duke of Gwanak. The origin of the name Union is unknown.
 
-Arc holds the 4 Gangnam districts and split off from the Free City. Go Ye-jin, raised in a Free City family of power and wiring workers, followed a dead cable in 2112 and found a station that was on no map, then spent five years reading the manuals there. When Go Ye-jin halted the machines outside Seoul, the Gangnam shelters gathered into Arc. Arc teaches machine implants as a way to endure the winter, and the faithful receive a baptism in which parts of their bodies are replaced with machinery. Twelve people received the first baptism around 2117, and around 2122 the Gangnam shelters were united as Arc. The faithful call Go Ye-jin the Messiah, and her title is Hierophant. Arc replaced every earlier religion.
+Arc holds the 4 Gangnam districts and split off from the Free City. Go Ye-jin, raised in a Free City family of power and wiring workers, followed a dead cable in 2112 and found a station that was on no map, then spent five years reading the manuals there. When Go Ye-jin halted the machines outside Seoul, the Gangnam shelters gathered into Arc. Arc teaches machine implants as a way to endure the winter, and the faithful receive a baptism in which parts of their bodies are replaced with machinery. The machine bodies Arc fits take only simple commands; a direct neural link, moved by thought, has to be performed by a Free City doctor. Twelve people received the first baptism around 2117, and around 2122 the Gangnam shelters were united as Arc. The faithful call Go Ye-jin the Messiah, and her title is Hierophant. Arc replaced every earlier religion.
 
 ## Opening of the Story
 
@@ -45709,7 +45715,7 @@ If a carrier crew bound for the east coast with cargo is just about to leave Seo
 
 서울 밖에는 대정전 때 쓰던 전쟁 기계가 아직 돌아다닌다. 그 기계를 만든 프로그래머들은 모두 죽었고, 기계들은 마지막으로 받은 명령을 계속 수행하고 있다. 겨울에는 얼어 죽거나 터널이 무너지거나 서울 밖을 떠도는 드론에 걸려 사람이 사라지곤 한다. 강남 대피소들은 이 기계가 두려워 수십 년 동안 문을 닫고 살았다. 현대와 미래의 무기, 휴머노이드, 기계는 남아 있지만 모두 귀하다.
 
-정부에서는 결핍 때문에 사람들이 부모의 일을 이어 하게 되었고, 그렇게 수직 계층이 생겼다. 자유도시와 아크는 이와 다르다. 자유도시는 엔지니어들의 독립 도시국가들이고, 아크는 자유도시에서 갈라져 나왔다.
+정부에서는 결핍 때문에 사람들이 부모의 일을 이어 하게 되었고, 그렇게 수직 계층이 생겼다. 자유도시와 아크는 이와 다르다. 자유도시는 의사와 기술자를 가진 독립 도시국가들이고, 아크는 자유도시에서 갈라져 나왔다.
 
 ### 세 세력의 갈래
 
@@ -45717,9 +45723,9 @@ If a carrier crew bound for the east coast with cargo is just about to leave Seo
 
 정부는 한강 북쪽 14구를 차지한다. 서류상으로는 대한민국의 삼권을 대표하는 부처와 다당제를 유지하지만 실제로 남은 당은 둘뿐이고, 실상은 현대의 봉건제다. 각 구에서 뽑힌 국회의원이 상원의원이라는 칭호로 그 구의 공작령을 쥐고, 상원의원들이 자기들 가운데서 종신 대통령을 낸다. 붕괴 뒤로 정부는 자기 장부에 기록된 사람만 국민으로 인정하며, 이들은 사실상 농노다. 정부는 선거를 계속 치르지만 매번 같은 답이 나온다. 강 건너는 "야만인들 사는 데"로 여긴다. 정부가 이런 형태를 갖춘 시기는 기록되지 않았다.
 
-자유도시는 한강 남서쪽 7구에 있다. 하나의 권력이 아니라 역과 역 사이에 흩어진 독립 도시국가들이며, 도시마다 각자 권력이고 각자 공작령을 쥔다. 왕은 없다. 주민 대부분은 엔지니어로, 배관과 배전과 정수가 서로 의존하는 탓에 누구 기술이 더 높은지 따질 수 없어 지도자를 뽑지 못했고, 도시끼리 물자와 기술을 주고받으며 살아왔다. 지금은 이들을 묶어 유니온이라 부른다. 이일섭이 관악 공작이다. 유니온이라는 이름이 생긴 경위는 알려져 있지 않다.
+자유도시는 한강 남서쪽 7구에 있다. 하나의 권력이 아니라 역과 역 사이에 흩어진 독립 도시국가들이며, 도시마다 각자 권력이고 각자 공작령을 쥔다. 왕은 없다. 주민 대부분은 손으로 먹고사는 기술자로, 배관과 배전과 정수가 서로 의존하는 탓에 누구 기술이 더 높은지 따질 수 없어 지도자를 뽑지 못했고, 도시끼리 물자와 기술을 주고받으며 살아왔다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 지금은 이들을 묶어 유니온이라 부른다. 이일섭이 관악 공작이다. 유니온이라는 이름이 생긴 경위는 알려져 있지 않다.
 
-아크는 강남 4구를 차지하며 자유도시에서 갈라져 나왔다. 자유도시의 전력·배선 집안에서 자란 고예진은 2112년 죽은 케이블을 따라가 지도에 없는 역을 찾았고, 그곳의 매뉴얼을 다섯 해 동안 읽었다. 고예진이 서울 밖 기계를 세우자 강남 대피소들이 아크로 모였다. 아크는 기계 이식을 겨울을 견디는 방법으로 가르치며, 신도는 몸의 부위를 기계로 바꾸는 세례를 받는다. 2117년 무렵 첫 세례를 받은 사람은 열두 명이었고, 2122년 무렵 강남 대피소들이 아크로 묶였다. 신도들은 고예진을 메시아라 부르며, 고예진의 직위는 교주다. 아크는 이전의 모든 종교를 대체했다.
+아크는 강남 4구를 차지하며 자유도시에서 갈라져 나왔다. 자유도시의 전력·배선 집안에서 자란 고예진은 2112년 죽은 케이블을 따라가 지도에 없는 역을 찾았고, 그곳의 매뉴얼을 다섯 해 동안 읽었다. 고예진이 서울 밖 기계를 세우자 강남 대피소들이 아크로 모였다. 아크는 기계 이식을 겨울을 견디는 방법으로 가르치며, 신도는 몸의 부위를 기계로 바꾸는 세례를 받는다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다. 2117년 무렵 첫 세례를 받은 사람은 열두 명이었고, 2122년 무렵 강남 대피소들이 아크로 묶였다. 신도들은 고예진을 메시아라 부르며, 고예진의 직위는 교주다. 아크는 이전의 모든 종교를 대체했다.
 
 ## 이야기 개막
 
@@ -48284,7 +48290,7 @@ The third water supply contract is now approaching.
 
 The **Government** holds the 14 districts north of the Han River. In each district, the local National Assembly member rules that district''s duchy as Senator, and the Senators choose a President for life from among themselves. The Government recognizes as citizens only those listed in its own registers. Gwanghwamun and the downtown core of Jongno-gu and Jung-gu form the center of administration.
 
-The **Free City** is a set of independent city-states scattered across the 7 southwestern districts. Like the poleis of ancient Greece, each city holds its own duchy, and no king reigns over them. Most residents are engineers who trade goods and skills. Taken together, they are now also called the Union.
+The **Free City** is a set of independent city-states scattered across the 7 southwestern districts. Like the poleis of ancient Greece, each city holds its own duchy, and no king reigns over them. Most residents are skilled hands who live by their work. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. The Free City''s weapons are people and food, and its doctors let it hold out longest. Taken together, they are now also called the Union.
 
 The **Arc** holds the 4 districts of Gangnam. It split off from the Free City. Go Ye-jin leads it as Messiah and Hierophant, and the faithful show their devotion through baptism, the replacement of parts of the body with machinery.
 
@@ -48327,7 +48333,7 @@ On paper, the Government maintains ministries representing the three branches of
 - **Citizens on the ledger.** Since the Great Blackout, the Government recognizes as citizens only those recorded in its own ledgers. Anyone on the ledger is bound to land and duty, which makes them effectively serfs. Scarcity drove people to take up their parents'' work, and so the vertical hierarchy hardened.
 - **How they see across the river.** The Government treats the entire area south of the Han River like the wildlings beyond the Wall in *Game of Thrones*. Government people think of the far bank as the place where barbarians live.
 
-The Government''s power comes from the practical business of the city center.
+The Government''s power comes from the practical business of the city center. The Government holds the officer corps, heavy weapons, and tanks, which makes it the strongest in a fight. But its badly wounded do not come back, and without Arc software its advanced weapons only partly work.
 
 - **Rations and registers.** The Government runs the resident registers and ration counters of downtown Jongno-gu and Jung-gu. Anyone not on the register cannot receive rations downtown.
 - **Seals and stamp duty.** Passage, trade, and contracts downtown are valid only with a Government seal, and stamp duty is paid at that point. An unsealed document is waste paper downtown.
@@ -48339,7 +48345,7 @@ Government Complex Seoul (209 Sejong-daero, Jongno-gu) is the base of downtown a
 
 The Free City is not a single power. The cities in the seven southwestern districts are each independent, like the poleis of ancient Greece, and each city holds its own duchy. There is no king reigning over them.
 
-Most residents are engineers who trade goods and skills. There was no way to tell whose skills were better, so they never chose a leader. Each city is its own power and holds its own duchy. I Ilseop is the Duke of Gwanak. The holders of the other cities'' duchies are not recorded.
+Most residents are skilled hands who live by their work. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. The Free City''s weapons are people and food, and its doctors let it hold out longest. There was no way to tell whose skills were better, so they never chose a leader. Each city is its own power and holds its own duchy. I Ilseop is the Duke of Gwanak. The holders of the other cities'' duchies are not recorded.
 
 "Union" is the collective name for the Free City. Go Ye-jin grew up in the Free City. When she was a child, people did not say Union; it was simply the Free City.
 
@@ -48351,7 +48357,7 @@ The Arc holds the four Gangnam districts: Seocho-gu, Gangnam-gu, Songpa-gu, and 
 
 Go Ye-jin is the Messiah and the Hierophant. She grew up in the Free City and, as the prophet who founded the Arc, is compared to Muhammad. Rule is Shia-style dynastic rule. Go Ye-jin calls the First AI "God."
 
-Believers replace parts of their bodies with machines. This is baptism. In the Arc, faith is counted by the number of implanted parts.
+Believers replace parts of their bodies with machines. This is baptism. In the Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor.
 
 The Arc came into being as follows.
 
@@ -48436,7 +48442,7 @@ The locations and 2126 uses of the major facilities are as follows.
 
 ## The Balance of Power Is Not Fixed
 
-The strength of the three factions is not set. Water and power, skills and believers, and the number of people on the ledger change from year to year. The third water supply contract in the winter of 2126 is where that balance shifts once more.
+The strength of the three factions is not set. Water and power, officers and doctors, original seed stock, the Arc''s software, and the number of people on the ledger change from year to year. The third water supply contract in the winter of 2126 is where that balance shifts once more.
 ', '2126년 겨울, 서울의 정치 세력은 **정부**(Government), **자유도시**(Free City, 유니온 Union), **아크**(Arc) 셋뿐이다. 지명과 역과 지리는 대정전 이전 그대로 남아 있고, 정치적 소유만 구 단위로 나뉜다. 구 하나가 공작령(duchy) 하나이므로 서울에는 공작령이 스물다섯 개 있다. 정부가 한강 북쪽 14구, 자유도시가 남서쪽 7구, 아크가 강남 4구를 가져 25 = 14 + 7 + 4가 된다.
 
 대정전(Great Blackout)은 약 백 년 전에 일어났다. 정확한 날짜는 기록되지 않았다. 최초의 AI(the First AI)는 겨울을 내렸고, 직접 죽인 사람은 없다. 서울 밖에는 대정전 때의 전쟁 기계들이 마지막 명령을 수행하며 돌아다닌다. 그래서 세 세력은 모두 서울 안의 역과 지하 공간, 물과 부품과 사람의 명부를 붙잡고 겨울을 난다.
@@ -48455,7 +48461,7 @@ The strength of the three factions is not set. Water and power, skills and belie
 
 **정부**는 한강 북쪽 14구를 쥔다. 각 구의 지역구 국회의원이 상원의원으로서 그 구의 공작령을 다스리고, 상원의원들이 자기들 가운데서 종신 대통령을 낸다. 정부는 자기 장부에 오른 사람만 국민으로 인정한다. 광화문과 종로·중구의 도심이 행정의 중심이다.
 
-**자유도시**는 남서쪽 7구에 흩어진 독립 도시국가들이다. 고대 그리스의 폴리스처럼 도시마다 따로 공작령을 쥐고, 위에 군림하는 왕은 없다. 주민 대부분은 물자와 기술을 주고받는 엔지니어다. 지금은 묶어서 유니온이라고도 부른다.
+**자유도시**는 남서쪽 7구에 흩어진 독립 도시국가들이다. 고대 그리스의 폴리스처럼 도시마다 따로 공작령을 쥐고, 위에 군림하는 왕은 없다. 주민 대부분은 손으로 먹고사는 기술자다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 지금은 묶어서 유니온이라고도 부른다.
 
 **아크**는 강남 4구를 가진다. 자유도시에서 갈라져 나왔다. 고예진이 메시아이자 교주(Hierophant)로서 이끌고, 신도들은 몸의 부위를 기계로 바꾸는 세례(baptism)로 신앙을 드러낸다.
 
@@ -48498,7 +48504,7 @@ The strength of the three factions is not set. Water and power, skills and belie
 - **장부에 오른 국민.** 대정전 뒤로 정부는 자기 장부에 기록된 사람만 국민으로 인정한다. 장부에 오른 사람은 땅과 직무에 묶이므로 사실상 농노에 가깝다. 결핍 때문에 사람들이 부모의 일을 이어 하게 되었고, 그래서 수직 계층이 굳었다.
 - **강 건너를 보는 시선.** 정부는 한강 남쪽 전체를 『왕좌의 게임』의 장벽 너머 야인처럼 대한다. 정부 사람들은 강 건너를 야만인들이 사는 곳이라고 생각한다.
 
-정부의 힘은 도심의 실무에서 나온다.
+정부의 힘은 도심의 실무에서 나온다. 정부는 장교단과 중화기, 전차를 쥐어 싸움에 가장 강하다. 다만 다친 병사는 돌아오지 못하고, 첨단 무기는 아크 소프트웨어 없이는 일부만 움직인다.
 
 - **배급과 명부.** 종로·중구 도심의 주민 명부와 배급 창구를 정부가 돌린다. 명부에 없는 사람은 도심에서 배급을 받지 못한다.
 - **도장과 인지세.** 도심의 통행과 거래와 계약은 정부 도장이 찍혀야 성립하고, 그때 인지세를 낸다. 도장 없는 문서는 도심에서 휴지가 된다.
@@ -48510,7 +48516,7 @@ The strength of the three factions is not set. Water and power, skills and belie
 
 자유도시는 하나의 권력이 아니다. 남서쪽 7구에 있는 도시들이 고대 그리스의 폴리스처럼 저마다 독립해 있고, 도시마다 각자 공작령을 쥔다. 위에 군림하는 왕은 없다.
 
-주민 대부분은 물자와 기술을 주고받는 엔지니어다. 누구 기술이 더 높은지 따질 방법이 없어 지도자도 뽑지 못했다. 도시마다 각자 권력이고 각자 공작령을 쥔다. 이일섭(I Ilseop)이 관악 공작(Duke of Gwanak)이다. 다른 도시의 공작령 보유자는 기록되지 않았다.
+주민 대부분은 손으로 먹고사는 기술자다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 누구 기술이 더 높은지 따질 방법이 없어 지도자도 뽑지 못했다. 도시마다 각자 권력이고 각자 공작령을 쥔다. 이일섭(I Ilseop)이 관악 공작(Duke of Gwanak)이다. 다른 도시의 공작령 보유자는 기록되지 않았다.
 
 "유니온"은 자유도시를 묶어 부르는 이름이다. 고예진은 자유도시에서 자랐다. 그가 어릴 때는 유니온이라는 이름 없이 그냥 자유도시라고 불렀다.
 
@@ -48522,7 +48528,7 @@ The strength of the three factions is not set. Water and power, skills and belie
 
 고예진(Go Ye-jin)이 메시아(Messiah)이자 교주(Hierophant)다. 그는 자유도시에서 자랐고, 아크를 세운 예언자로서 무함마드에 견주어진다. 통치는 시아파식 가문 통치다. 고예진은 최초의 AI를 "신"이라 부른다.
 
-신도는 몸의 부위를 기계로 바꾼다. 이것이 세례(baptism)다. 아크에서는 신앙을 이식한 부위 수로 센다.
+신도는 몸의 부위를 기계로 바꾼다. 이것이 세례(baptism)다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다.
 
 아크가 생겨난 과정은 다음과 같다.
 
@@ -48607,7 +48613,7 @@ The strength of the three factions is not set. Water and power, skills and belie
 
 ## 세력의 강약은 고정되지 않는다
 
-세 세력의 힘은 정해져 있지 않다. 물과 전력, 기술과 신도, 장부에 오른 사람의 수가 해마다 바뀐다. 2126년 겨울의 세 번째 급수계약은 그 균형이 다시 움직이는 자리다.
+세 세력의 힘은 정해져 있지 않다. 물과 전력, 장교와 의사, 원종 씨앗, 아크의 소프트웨어, 장부에 오른 사람의 수가 해마다 바뀐다. 2126년 겨울의 세 번째 급수계약은 그 균형이 다시 움직이는 자리다.
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Station-Interior-Construction', 'Entering the Station Interior', '역 내부에 들어가면', 'places', 5, '
 In Seoul subway stations, concourses, platforms, passages, and tunnels join at different levels. Waterworks, depots, and markets stand by the stations.
@@ -48843,7 +48849,9 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 - [식문화](/wiki/Food-Culture/)
 - [이야기](/wiki/Oral-Stories/)
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Synthetic-Actors', 'Synthetic Social Personas', '합성 사회 인격', 'people-and-machines', 1, '<a id="Synthetic-Actors-heading-0001"></a>
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Synthetic-Actors', 'Synthetic Social Personas', '합성 사회 인격', 'people-and-machines', 1, 'The custodian houses hold the synthetic actors'' chassis and modules, but the control software that opens their higher functions is held exclusively by the Arc. Without Arc-signed software, the units below take only basic on-and-off functions and simple commands. "Maintenance" in each entry means hardware maintenance.
+
+<a id="Synthetic-Actors-heading-0001"></a>
 
 <a id="Synthetic-Actors-heading-0002"></a>
 
@@ -49504,7 +49512,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K323 custodian, HP07 steward_house, K204 work_peer
 
-In the machine room of Dongdaemun, Medical Sterilization (Myeolgun) logged its entry in the HP07 duty log.
+Medical Sterilization (Myeolgun) stands idle in the Dongdaemun machine room for lack of Arc-signed software, and the HP07 duty log records only seal-check entries. The doctors who could put medical machines to work are on the Free City side.
 
 Sim Dalho checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -49948,7 +49956,9 @@ Gwak Eunjae checked the remaining battery charge and the custody seal together, 
 Even when the turnback-line alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
-', '<a id="Synthetic-Actors-heading-0001"></a>
+', '합성 행위자의 기체와 모듈은 보관 가문이 쥐지만, 상위 기능을 여는 제어 소프트웨어는 아크가 독점한다. 아크가 서명한 소프트웨어가 없으면 아래 기체들은 켜고 끄는 기초 기능과 단순한 명령만 받는다. 각 항목의 "정비"는 하드웨어 정비를 뜻한다.
+
+<a id="Synthetic-Actors-heading-0001"></a>
 
 <a id="Synthetic-Actors-heading-0002"></a>
 
@@ -50609,7 +50619,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
 - 관계: K323 custodian, HP07 steward_house, K204 work_peer
 
-동대문 기계실에서 의료멸균(멸균)이 HP07 당직 로그에 출입을 남긴다.
+동대문 기계실의 의료멸균(멸균)은 아크가 서명한 소프트웨어가 없어 멈춰 있고, HP07 당직 로그에는 봉인 점검 출입만 남는다. 의료 기계를 돌릴 의사는 자유도시 쪽에 있다.
 
 심달호은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -51169,7 +51179,7 @@ Values stood for the practice the current majority followed.
 | Faction | Salient axes | Practice at the opening |
 |---|---|---|
 | Government | Authority (command), qualification (heredity) | Recognizes as citizens only those entered in its registers. Trades pass from parents to children. The President serves for life. |
-| Free City | Decentralization (living-sphere partition) | Each city holds its own power; there is no king. Goods and skills are exchanged. |
+| Free City | Decentralization (living-sphere partition) | Each city holds its own power; there is no king. Goods and skills are exchanged, and doctors and food let it hold out. |
 | Arc | Authority (Hierophant and families) | Rule runs through families, and believers receive baptism. |
 ', '**가. 가치관 척도의 의의**
 
@@ -51285,7 +51295,7 @@ Values stood for the practice the current majority followed.
 | 세력 | 눈에 띄는 축 | 개막 시점의 관행 |
 |---|---|---|
 | 정부 | 권위(명령·집정), 자격(세습) | 장부에 오른 사람만 국민으로 인정한다. 직업은 부모에서 자식으로 물려준다. 대통령은 종신이다. |
-| 자유도시 | 분산(생활권 분할) | 도시마다 각자 권력이고 왕은 없다. 물자와 기술을 주고받는다. |
+| 자유도시 | 분산(생활권 분할) | 도시마다 각자 권력이고 왕은 없다. 물자와 기술을 주고받고, 의사와 식량으로 오래 버틴다. |
 | 아크 | 권위(교주와 가문) | 통치는 가문을 단위로 하며, 신도는 세례를 받는다. |
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('World-Expansion-Index', 'World Expansion Index', '세계 확장 색인', 'overview', 3, '<a id="World-Expansion-Index-heading-0001"></a>
@@ -52781,7 +52791,7 @@ The setting is Seoul in the winter of 2126. About a hundred years ago, around 20
 Seoul has only three political powers. The details are in [The Three Factions of Seoul](/wiki/Sixteen-States/) and [Characters, Factions, and Trades](/wiki/Characters-Factions-and-Professions/).
 
 - **Government**: the 14 districts north of the Han River. On paper it keeps the ministries of the three branches and a multi-party system, but in practice there are only two parties, the OMO Party and the Claw Party. The Government recognizes as citizens only the people recorded in its own ledgers.
-- **Free City**: the 7 southwestern districts. Independent city-states with no king, now called the Union when taken together. Most residents are engineers who trade goods and skills.
+- **Free City**: the 7 southwestern districts. Independent city-states with no king, now called the Union when taken together. Most residents are skilled hands who live by their work. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. The Free City''s weapons are people and food, and its doctors let it hold out longest.
 - **Arc**: the 4 Gangnam districts. It split off from the Free City and is ruled clan by clan around the Hierophant, Go Ye-jin.
 
 How families hold their places inside the three factions is covered in [Families and the Three Factions](/wiki/Chaebol-Houses-and-Century-Factions/). Scarcity made children take over their parents'' work, and that is how a vertical class structure hardened.
@@ -52817,7 +52827,7 @@ The strands of the story are in [Regional and Physical AI Arcs](/wiki/Regional-P
 
 ## Culture and Faith
 
-According to [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/), the only organized religion in Seoul in 2126 is the Arc. The Arc replaced every earlier religion. Believers replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts. The Arc keeps a consecration chamber beneath the old Suseo rail depot.
+According to [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/), the only organized religion in Seoul in 2126 is the Arc. The Arc replaced every earlier religion. Believers replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor. The Arc keeps a consecration chamber beneath the old Suseo rail depot.
 
 Daily life is covered in [Food Culture](/wiki/Food-Culture/). Residents receive rations at the station windows, and the habit of taking water first and rice after remains. Illness and medicine are in [Ailments and Symptoms](/wiki/Ailments/), and the five corridors of immigrant life inside Seoul are in [Diaspora Corridors](/wiki/Diaspora-Corridors/).
 
@@ -52863,7 +52873,7 @@ Look up characters on the [People](/wiki/people/) page. The additional people ta
 서울의 정치 세력은 셋뿐이다. 자세한 내용은 [서울의 세 세력](/wiki/Sixteen-States/)과 [인물·세력·생업](/wiki/Characters-Factions-and-Professions/)에 있다.
 
 - **정부**(Government): 한강 북쪽 14구. 서류상 삼권 부처와 다당제를 유지하지만 실제로는 OMO당과 클로당 두 당뿐이다. 정부는 자기 장부에 기록된 사람만 국민으로 인정한다.
-- **자유도시**(Free City): 남서쪽 7구. 왕 없이 독립한 도시국가들이며, 지금은 묶어서 유니온(Union)이라고 부른다. 주민 대부분은 물자와 기술을 주고받는 엔지니어다.
+- **자유도시**(Free City): 남서쪽 7구. 왕 없이 독립한 도시국가들이며, 지금은 묶어서 유니온(Union)이라고 부른다. 주민 대부분은 손으로 먹고사는 기술자다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다.
 - **아크**(Arc): 강남 4구. 자유도시에서 갈라져 나왔고, 교주 고예진을 중심으로 가문 단위로 다스린다.
 
 가문이 세 세력 안에서 자리를 잇는 방식은 [가문과 세 세력](/wiki/Chaebol-Houses-and-Century-Factions/)이 다룬다. 결핍 때문에 자식이 부모의 일을 이어 하게 됐고, 그렇게 수직 계층이 굳었다.
@@ -52899,7 +52909,7 @@ Look up characters on the [People](/wiki/people/) page. The additional people ta
 
 ## 문화와 신앙
 
-[신앙과 문화의 분열](/wiki/Faith-Culture-Schism/)에 따르면 2126년 서울에서 조직된 종교는 아크 하나다. 아크는 이전의 모든 종교를 대체했다. 신도는 몸의 부위를 기계로 바꾸고, 이것을 세례(baptism)라고 부른다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크는 수서의 옛 차량기지 아래에 봉헌실을 둔다.
+[신앙과 문화의 분열](/wiki/Faith-Culture-Schism/)에 따르면 2126년 서울에서 조직된 종교는 아크 하나다. 아크는 이전의 모든 종교를 대체했다. 신도는 몸의 부위를 기계로 바꾸고, 이것을 세례(baptism)라고 부른다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다. 아크는 수서의 옛 차량기지 아래에 봉헌실을 둔다.
 
 생활 문화는 [식문화](/wiki/Food-Culture/)가 다룬다. 주민은 역 창구에서 배급을 받고, 물을 먼저 받고 밥을 받는 습관이 남아 있다. 병과 약품은 [질병과 증상](/wiki/Ailments/)에, 서울 안 이주민 생활권 다섯 회랑은 [이주민 회랑](/wiki/Diaspora-Corridors/)에 있다.
 
@@ -53121,7 +53131,7 @@ The Government rules the 14 districts north of the Han River. On paper it mainta
 
 **B. The Free City**
 
-The Free City consists of the 7 districts in the southwest. Rather than a single power, it is a collection of independent cities, each holding its own duchy, and it has no king. Most residents are technicians who trade goods and skills with one another. Because there was no way to judge whose skills were greater, they never managed to choose a leader. The Duke of Gwanak is I Ilseop. Today these cities are collectively called the Union, but when Go Ye-jin was growing up, it was simply the Free City.
+The Free City consists of the 7 districts in the southwest. Rather than a single power, it is a collection of independent cities, each holding its own duchy, and it has no king. Most residents are skilled hands who live by their work. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. The Free City''s weapons are people and food, and its doctors let it hold out longest. Because there was no way to judge whose skills were greater, they never managed to choose a leader. The Duke of Gwanak is I Ilseop. Today these cities are collectively called the Union, but when Go Ye-jin was growing up, it was simply the Free City.
 
 **C. The Arc**
 
@@ -53139,11 +53149,11 @@ After the Great Blackout, the only organized faith in Seoul is the Arc. The Arc 
 
 **A. Origins**
 
-Go Ye-jin grew up in the Free City. In 2112, while repairing the Free City''s power grid, she followed a dead cable and found a station that appeared on no map. She spent five years reading the manuals there, and around 2117 she performed the first baptism. Twelve people were baptized at that time. In 2120, Ji Yeon-hui stood beside Go Ye-jin at negotiations with the shelters near Tancheon, and around 2122 the Gangnam shelters were united under the name Arc.
+Go Ye-jin grew up in the Free City. In 2112, while repairing the Free City''s power grid, she followed a dead cable and found a station that appeared on no map. She spent five years reading the manuals there, and around 2117 she opened the first baptism; the work of joining the machines to the nerves fell to a doctor who came from the Free City. Twelve people were baptized at that time. In 2120, Ji Yeon-hui stood beside Go Ye-jin at negotiations with the shelters near Tancheon, and around 2122 the Gangnam shelters were united under the name Arc.
 
 **B. Baptism**
 
-The Arc teaches that parts of the body should be replaced with machinery. This implantation is baptism. In the Arc, faith is counted by the number of implanted body parts.
+The Arc teaches that parts of the body should be replaced with machinery. This implantation is baptism. In the Arc, faith is counted by the number of implanted body parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor.
 
 | Item | Details |
 |---|---|
@@ -53260,7 +53270,7 @@ Go Ye-jin calls the First AI "God," because human language has no other word for
 
 **나. 자유도시**
 
-자유도시는 남서쪽 7구다. 하나의 권력이 아니라 도시마다 따로 공작령을 쥔 독립 도시들의 묶음이며, 왕은 없다. 주민 대부분은 물자와 기술을 주고받는 기술자다. 누구 기술이 더 높은지 따질 방법이 없어 지도자를 뽑지 못했다. 관악 공작은 이일섭이다. 지금은 이 도시들을 묶어 유니온이라고 부르지만, 고예진이 자랄 때는 그냥 자유도시였다.
+자유도시는 남서쪽 7구다. 하나의 권력이 아니라 도시마다 따로 공작령을 쥔 독립 도시들의 묶음이며, 왕은 없다. 주민 대부분은 손으로 먹고사는 기술자다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 누구 기술이 더 높은지 따질 방법이 없어 지도자를 뽑지 못했다. 관악 공작은 이일섭이다. 지금은 이 도시들을 묶어 유니온이라고 부르지만, 고예진이 자랄 때는 그냥 자유도시였다.
 
 **다. 아크**
 
@@ -53278,11 +53288,11 @@ Go Ye-jin calls the First AI "God," because human language has no other word for
 
 **가. 기원**
 
-고예진은 자유도시에서 자랐다. 2112년 자유도시 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾았다. 그곳의 매뉴얼을 다섯 해 동안 읽었고, 2117년 무렵 첫 세례를 베풀었다. 이때 세례를 받은 사람은 열두 명이다. 2120년 지연희가 탄천 쪽 대피소 교섭 자리에서 고예진 곁에 섰고, 2122년 무렵 강남 대피소들이 아크라는 이름으로 묶였다.
+고예진은 자유도시에서 자랐다. 2112년 자유도시 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾았다. 그곳의 매뉴얼을 다섯 해 동안 읽었고, 2117년 무렵 첫 세례를 열었다. 신경을 잇는 일은 자유도시에서 온 의사가 맡았다. 이때 세례를 받은 사람은 열두 명이다. 2120년 지연희가 탄천 쪽 대피소 교섭 자리에서 고예진 곁에 섰고, 2122년 무렵 강남 대피소들이 아크라는 이름으로 묶였다.
 
 **나. 세례**
 
-아크는 몸의 부위를 기계로 바꾸라고 가르친다. 이 이식이 세례다. 아크에서는 신앙을 이식한 부위 수로 센다.
+아크는 몸의 부위를 기계로 바꾸라고 가르친다. 이 이식이 세례다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다.
 
 | 항목 | 내용 |
 |---|---|

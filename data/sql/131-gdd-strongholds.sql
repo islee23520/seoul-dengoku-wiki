@@ -84,9 +84,10 @@ daily water               = population x water source per person + roof catchmen
 roof catchment            = roof area inside the line x 1.4 m a year x 80% collected / 365   [estimated]
 standing watch    = shift factor (Government 4.5, Free City and Arc 4) x posts + patrols of sealed entrances
 emergency watch   = 4 x (used and hidden entrances + tunnel cut points) + arms factor x weighted surface line + 0.02 x population
-mobilisable       = 0.20 (Government) / 0.27 (Free City) / 0.30 (Arc) x population
+mobilisable       = 0.20 (Government) / 0.30 (Free City) / 0.12 (Arc) x population   [game definition]
 ```
 
+- Mobilisable share: the Free City is highest because its people are its weapon, and the Arc is lowest because it keeps only rifle guards. The per-station mobilisable and defence figures on the station pages were still computed with the earlier shares (0.20 / 0.27 / 0.30) and have to be recomputed.
 - Floor: the station''s measured underground floor (S-Map indoor models, floors deeper than 1.5 m). Surface and elevated stations have no such floor, so they use the measured S-Map station-hall floors instead; one station with no S-Map model uses the Seoul Metro gross floor area. Each station page names its floor source. From stage 4, basements of buildings inside the line (basement floors x footprint x 0.7); in stage 5, 300 m x 9 m of tunnel toward each neighbour [estimated].
 - Water: a station with no water source has no daily water to count; it lives by melting snow, which costs extra fuel, and its pages say so (37 stations).
 - When the emergency watch exceeds the mobilisable force, the stage is "not defensible".
@@ -196,9 +197,10 @@ mobilisable       = 0.20 (Government) / 0.27 (Free City) / 0.30 (Arc) x populati
 지붕 빗물받이    = 성곽 안 지붕 면적 × 연 1.4 m × 모으는 비율 80% ÷ 365   [추정]
 상시 경계  = 교대(정부 4.5, 자유도시·아크 4) × 초소 수 + 막은 출입구 순찰
 비상 경계  = 4 × (쓰는·숨긴 출입구 + 터널 차단점) + 무장 계수 × 가중 지상선 + 0.02 × 인구
-동원 가능  = 0.20(정부) / 0.27(자유도시) / 0.30(아크) × 인구
+동원 가능  = 0.20(정부) / 0.30(자유도시) / 0.12(아크) × 인구   [게임 정의]
 ```
 
+- 동원 비율: 사람이 무기인 자유도시가 가장 높고, 소총 경비만 둔 아크가 가장 낮다. 역별 문서의 동원 가능 인원과 방어 수치는 아직 이전 비율(0.20 / 0.27 / 0.30)로 계산되어 있어 다시 계산해야 한다.
 - 바닥: 역 지하 바닥(S-Map 실내 모형에서 깊이 1.5 m를 넘는 층의 실측). 지상역과 고가역은 그런 바닥이 없으므로 S-Map 역사 층 실측 바닥을 쓴다. S-Map 모형이 없는 역 한 곳은 서울교통공사 역사 연면적을 쓴다. 역별 문서마다 바닥 출처를 밝힌다. 4단계부터 성곽 안 건물 지하층(지하 층수 × 바닥 면적 × 0.7), 5단계는 이웃 역마다 터널 300 m × 9 m [추정].
 - 물: 물원이 없는 역은 하루 물을 셀 수 없고 눈을 녹여 지내며 연료가 더 든다. 해당 역 문서에 이를 적는다(37곳).
 - 비상 경계가 동원 가능 인원을 넘으면 그 단계는 "지킬 수 없음"이다.

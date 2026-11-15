@@ -8557,7 +8557,7 @@ A character has a permanent character ID, affiliation, main body occupancy, curr
 | Labor · Mobilization | Available → facility/transport/unit/treatment reservation → performance → completed/injured/interrupted → return eligibility check | A person is not reserved for overlapping roles in the same time interval. Absence of skills, absence of equipment, travel, and injury are different from available labor. Returning does not create a new character or reactivate the reservations of the dead. |
 | Livelihood and Shortage | Consumption right/reservation → allocation → actual issuance/arrival → consumption → satisfied/short → constraints on next actions | Receiving rations and purchase demand are not duplicated. The same labor loss caused by shortage is not applied twice, in livelihood and in the economy. Satisfaction is recorded as a state separate from mood, loyalty, and T. |
 
-- Even if 5 of a population of 500 are individualized and 3 are mobilized, the total population stays the same, and they are not duplicated in facility/aggregate labor for that time. When 1 injured person is treated and returns, the existing ID and reservations are carried over. The numbers are validation inputs.
+- Even if 5 of a population of 500 are individualized and 3 are mobilized, the total population stays the same, and they are not duplicated in facility/aggregate labor for that time. When 1 injured person is treated and returns, the existing ID and reservations are carried over. Seriously wounded Government troops do not return. Only a faction that has doctors can treat the wounded back to duty. The numbers are validation inputs.
 - When a command is sent to a contract counterpart of another state, a non-commanded target of the same faction, or a target whose command delegation has expired, the authority check results are distinguished. Review cancellation/deferral for a base relocation before the command is received, a severed contact channel, and target detention.
 - If individualization and production deadlines, mobilization and treatment, or arrival and consumption occur at the same world time, reservations and totals are replayed by acceptance order and causal events. Reapplying the same event does not increase population, supplies, or available labor.
 
@@ -8787,7 +8787,7 @@ flowchart LR
 | 노동·소집 | 가용→시설/운송/부대/치료 예약→수행→완료/부상/중단→복귀 가능 검사 | 한 사람의 같은 시간 구간을 겹치는 역할에 예약하지 않는다. 직능 부재·장비 부재·이동·부상은 가용 노동과 다르다. 복귀는 새 인물을 생성하거나 사망자의 예약을 재활성화하지 않는다. |
 | 생활·부족 | 소비 권리/예약→배정→실제 지급/도착→소비→충족/부족→다음 행동 제약 | 배급 수령과 구매 수요를 중복하지 않는다. 부족에 따른 동일 노동 손실을 생활과 경제에서 두 번 적용하지 않는다. 충족과 기분·충성·T는 다른 상태로 기록한다. |
 
-- 인구 500명의 5명을 개인화하고 3명을 소집해도 총인구는 그대로이며 해당 시간 시설/집계 노동에는 중복하지 않는다. 부상 1명 치료·복귀 때 기존 ID와 예약을 이어 간다. 숫자는 검증 입력이다.
+- 인구 500명의 5명을 개인화하고 3명을 소집해도 총인구는 그대로이며 해당 시간 시설/집계 노동에는 중복하지 않는다. 부상 1명 치료·복귀 때 기존 ID와 예약을 이어 간다. 정부 부대의 중상자는 복귀하지 않는다. 복귀 치료는 의사를 가진 세력만 한다. 숫자는 검증 입력이다.
 - 타국 계약 상대·동일 세력 무지휘 대상·지휘 위임 만료 대상에 명령을 보내면 권한 검사 결과를 구분한다. 명령 수신 전 거점 이동·연락 경로 단절·대상 구금의 취소/보류를 검토한다.
 - 개인화와 생산 마감·소집과 치료·도착과 소비가 같은 세계 시간에 발생하면 수락 순서와 원인 사건으로 예약·합계를 재생한다. 같은 사건을 다시 적용해도 인구·물자·가용 노동이 늘지 않는다.
 
@@ -9232,8 +9232,8 @@ All 1,004 enter the hero catalog. Classes draw on the role separation of Total W
 | --- | --- | --- |
 | Guardian | Holding passages, covering fire, defending retreat routes | Maintains the formation''s morale and equipment protection |
 | Breacher | Opening blocked approaches, breaching equipment and facilities | Clears the way with maintenance, tools, and Physical AI equipment |
-| Strategist | Straightening formations, target intelligence, supply coordination | Raises the quality of the same order through roll calls, records, agitation, and intelligence |
-| Relief | First aid, equipment repair, stabilizing contamination and fatigue | Handles medical care, equipment, and morale recovery. Does not revive the dead |
+| Strategist | Straightening formations, target intelligence, supply coordination | Raises the quality of the same order through roll calls, records, agitation, and intelligence. Only the Government, which has the officer corps, fields it by default; other factions only with an officer who defected or was captured |
+| Relief | First aid, equipment repair, stabilizing contamination and fatigue | Handles medical care, equipment, and morale recovery. Does not revive the dead. Government and Arc relief stops at first aid; surgery and treatment back to duty belong only to the Free City, which has doctors |
 | Scout | Reconnaissance, route control, covert operations | Reveals information about paths, hazards, and facilities, and changes encounter conditions |
 | Field Service | A hero whose specialization is not yet locked | Protects the expedition''s continuity and baseline morale, and remains a subject for later review |
 
@@ -9348,8 +9348,8 @@ Even if a new capacity falls below the current headcount because of a commander 
 | --- | --- | --- |
 | 수호 | 통로 유지, 엄호, 퇴로 방어 | 대열의 사기와 장비 방호를 유지한다 |
 | 돌파 | 막힌 접근로 개방, 장비·시설 돌파 | 정비·도구·피지컬 에이아이 장비로 길을 연다 |
-| 참모 | 진형 정돈, 표적 정보, 보급 조정 | 호명·기록·선동·정보로 같은 명령의 완성도를 높인다 |
-| 구호 | 응급 처치, 장비 수리, 오염·피로 안정 | 의료·장비·사기 회복을 다룬다. 사망자를 되살리지 않는다 |
+| 참모 | 진형 정돈, 표적 정보, 보급 조정 | 호명·기록·선동·정보로 같은 명령의 완성도를 높인다. 장교층이 있는 정부만 기본으로 쓰고, 다른 세력은 넘어오거나 잡혀 온 장교가 있을 때만 쓴다 |
+| 구호 | 응급 처치, 장비 수리, 오염·피로 안정 | 의료·장비·사기 회복을 다룬다. 사망자를 되살리지 않는다. 정부와 아크의 구호는 응급 처치까지이고, 수술과 복귀 치료는 의사가 있는 자유도시만 한다 |
 | 척후 | 정찰, 경로 통제, 은밀 공작 | 길·위험·시설 정보를 드러내고 조우 조건을 바꾼다 |
 | 종군 | 전문성이 아직 잠기지 않은 영웅 | 원정의 연속성과 기본 사기를 지키며 추후 검토 대상으로 남는다 |
 
@@ -88345,7 +88345,7 @@ The methods below are the starting settings recorded in the existing design. Do 
 | Floodgate State | Election by the Water-Contract Family Representatives'' Contract Council | Valid contracts, representatives, council quorum, and ratification |
 | Transshipment State | Hereditary Succession by the Eldest Child of the Rail Family | Order of eligible children, exceptions for wills and adoption, and handover of the post and keys |
 | Standards League | Guild Council and Apprentice Lineage | Linking council elections to the apprentice lineage; candidate mastery and support |
-| Eastern Command | Hereditary Commander | Family eligibility, takeover of military command, and subjugation registration |
+| Eastern Command | Hereditary Guard Chief | Family eligibility, takeover of guard command, and subjugation registration |
 | Russian Legation Command | Dual Command of Commander and Garrison Chief | Vacancy targets, joint authority, acting coverage, and the order of handling the two seats |
 | Taeuk Group, Seongha Group, Sinnae Transport | Family Inheritance | Separation of personal shares and licenses from the leader''s post, appointment, and ratification |
 | Yeouido Investment Federation | Council Election by the Investing Families | Separation of share inheritance, representative selection, and chair election |
@@ -88524,7 +88524,7 @@ There are no approved numbers for legitimacy scores, exam scores, quorums, actin
 | 수문국 | 물 계약 가문 대표 계약 회의 선출 | 유효 계약·대표·회의 성립·인준 |
 | 환적국 | 선로 가문 장자 세습 | 적격 자녀 순서·유언과 양자 예외·직위와 열쇠 인도 |
 | 규격맹 | 길드 평의회와 도제 계보 | 평의회 선출과 도제 계보의 연결·후보 숙련·지지 |
-| 동방사 | 세습 사령관 | 가족 자격·군 지휘 인수·복속 등록 |
+| 동방사 | 세습 경비 책임자 | 가족 자격·경비 지휘 인수·복속 등록 |
 | 아관사 | 사령관과 수비대장 이원 지휘 | 공석 대상·공동 권한·대행·두 자리의 처리 순서 |
 | 태욱그룹·성하그룹·신내운수 | 가문 세습 | 개인 지분·면허와 수장 직위·임명·인준의 분리 |
 | 여의도출자연합회 | 출자 가문 평의회 선출 | 지분 상속·대표 선정·의장 선출의 분리 |
@@ -89453,7 +89453,7 @@ The already approved rules are these.
 - **Preservation of delegation.** When a deputy dies, the original holder''s right does not disappear. A vacancy does not take over that delegation.
 - **Per-effect marriage adjudication.** On death, detention, or loss of office, the contracts for each effect (alliance, property, confirmation, succession) are checked separately and sorted into maintained, terminated, or needing reconfirmation; they are not all terminated at once. If the applicable institution is undetermined, then formation and effects are also undetermined, not "no effect."
 - **War recheck.** When the leader of an ongoing war dies, the validity of the previously registered casus belli, the legal object of the right, and the beneficiary and exercise eligibility are rechecked first, and then the new responsible party is confirmed. In a claim-backed war, the approver and the beneficiary are distinguished, and the victory right goes to the eligible beneficiary. Personal promises and office promises are adjudicated item by item for maintenance, reratification, or termination, and succession is not used to erase debts, truces, or damage records. The rule for choosing the actual war-ending type after this check has not yet been decided.
-- **Names of starting successions.** The starting successions of the polities are recorded with the name of their method: election among the duty houses, election at a covenant council of water-contract house representatives, primogeniture among the track houses, guild council and apprentice lineage, hereditary commander, dual commander and garrison chief, house inheritance, election by a council of investor houses, congregation election and mountain assembly acclamation, a master''s nomination of a successor disciple, examination election, and direct election by union members. Who elects, how many must gather, and what happens in a tie are not contained in the name.
+- **Names of starting successions.** The starting successions of the polities are recorded with the name of their method: election among the duty houses, election at a covenant council of water-contract house representatives, primogeniture among the track houses, guild council and apprentice lineage, hereditary guard chief, dual commander and garrison chief, house inheritance, election by a council of investor houses, congregation election and mountain assembly acclamation, a master''s nomination of a successor disciple, examination election, and direct election by union members. Who elects, how many must gather, and what happens in a tie are not contained in the name.
 
 There are no approved numbers for this domain. The formula for squad capacity, how weak an interim squad leader''s command is, the duration or threshold of detention, the score that decides succession, and the time limit for succession are not set, and this document does not create them. Succession, election, and death figures from other games are not Seoul''s numbers.
 
@@ -89644,7 +89644,7 @@ The items below are boundaries where the current rules cannot fix the outcome. E
 - **위임 보존.** 대리인이 죽어도 원 보유자의 권리는 사라지지 않는다. 공석이 그 위임을 대신하지 않는다.
 - **혼인 효과별 판정.** 사망·구금·관직 상실 때 동맹·재산·인준·후계 효과별 계약을 검사해 유지·종료·재인준을 나누며 일괄 종료하지 않는다. 적용 제도가 미정이면 성립과 효과도 미정이지, 효과 없음이 아니다.
 - **전쟁 재검사.** 진행 전쟁의 수장 사망은 먼저 등록된 명분의 유효·무효, 권리의 법적 대상과 수혜자·행사 자격을 다시 검사한 뒤 새 책임자를 확인한다. 주장 지원 전쟁에서는 승인자와 수혜자를 구분하고, 승리 권리는 적격한 수혜자에게 간다. 개인 약속과 직위 약속의 유지·재비준·종료를 항목별로 판정하며 계승을 이용해 빚·휴전·피해 기록을 지우지 않는다. 이 검사 뒤 실제 전쟁 종결 유형을 고르는 규칙은 아직 정해지지 않았다.
-- **시작 계승의 이름.** 각 정치체의 시작 계승에는 방식의 이름이 적혀 있다. 당직 가문 선거, 물 계약 가문 대표 계약 회의 선출, 선로 가문 장자 세습, 길드 평의회와 도제 계보, 세습 사령관, 사령관·수비대장 이원, 가문 세습, 출자 가문 평의회 선출, 신도단 선출과 산중총회 추대, 스승의 후계 제자 지명, 시험 선출, 조합원 직선. 누가 뽑는지, 몇 명이 모여야 하는지, 동점이면 어떻게 되는지는 그 이름 안에 들어 있지 않다.
+- **시작 계승의 이름.** 각 정치체의 시작 계승에는 방식의 이름이 적혀 있다. 당직 가문 선거, 물 계약 가문 대표 계약 회의 선출, 선로 가문 장자 세습, 길드 평의회와 도제 계보, 세습 경비 책임자, 사령관·수비대장 이원, 가문 세습, 출자 가문 평의회 선출, 신도단 선출과 산중총회 추대, 스승의 후계 제자 지명, 시험 선출, 조합원 직선. 누가 뽑는지, 몇 명이 모여야 하는지, 동점이면 어떻게 되는지는 그 이름 안에 들어 있지 않다.
 
 이 영역에 승인된 수는 없다. 분대 정원을 정하는 식, 임시 분대장의 지휘가 약한 정도, 구금의 기간이나 문턱, 후계를 가르는 점수, 계승의 제한 시간은 정해져 있지 않고 이 문서가 만들지 않는다. 다른 게임의 계승·선거·사망 수치는 서울의 수가 아니다.
 
@@ -92083,7 +92083,7 @@ Even if a post is vacant after a leader''s death, the institution and the state 
 | Floodgate State | Election by the Water-Contract Family Representatives'' Contract Council | Valid contracts, representative eligibility, quorum of meetings, ratification |
 | Transshipment State | Hereditary Succession by the Eldest Child of the Rail Family | Order of eligible children, exceptions for wills and adoption, handover of posts and keys |
 | Standards League | Guild council, apprenticeship lineage | Targets to which candidate skill, guild support, and apprenticeship succession apply |
-| Eastern Command | Hereditary Commander | Distinction between family eligibility and military command takeover/subjugation registration |
+| Eastern Command | Hereditary Guard Chief | Distinction between family eligibility and guard command takeover/subjugation registration |
 | Russian Legation Command | Dual structure of commander and garrison chief | Which seat is vacant, and the rules for joint authority and proxies |
 | Taeuk Group, Seongha Group, Sinnae Transport | Family Inheritance | Distinction between personal shares/licenses and the leader''s post, and between appointment and ratification |
 | Yeouido Investment Federation | Council Election by the Investing Families | Separation of share inheritance, representative selection, and chair election |
@@ -92397,7 +92397,7 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 | 수문국 | 물 계약 가문 대표 계약 회의 선출 | 유효 계약·대표 자격·회의 성립·인준 |
 | 환적국 | 선로 가문 장자 세습 | 적격 자녀 순서, 유언·양자 예외, 직위와 열쇠 인도 |
 | 규격맹 | 길드 평의회, 도제 계보 | 후보 숙련·길드 지지·도제 계승의 적용 대상 |
-| 동방사 | 세습 사령관 | 가족 자격과 군 지휘 인수·복속 등록의 구분 |
+| 동방사 | 세습 경비 책임자 | 가족 자격과 경비 지휘 인수·복속 등록의 구분 |
 | 아관사 | 사령관·수비대장 이원 | 어느 자리의 공석인지, 공동 권한·대행 규칙 |
 | 태욱그룹·성하그룹·신내운수 | 가문 세습 | 개인 지분/면허와 수장 직위, 임명·인준의 구분 |
 | 여의도출자연합회 | 출자 가문 평의회 선출 | 지분 상속, 대표 선정, 의장 선출의 분리 |
