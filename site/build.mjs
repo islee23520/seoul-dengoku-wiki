@@ -17,7 +17,16 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, '..');
 const SQL_DIR = path.join(REPO, 'data/sql');
 const SRC = path.join(HERE, '.vp-src');
-const OUT = path.resolve(process.env.SITE_OUT ?? path.join(REPO, 'dist-pages'));
+const OUT = path.resolve(process.env.SITE_OUT || path.join(REPO, 'dist-pages'));
+// Safety: OUT is wiped with rmSync and by VitePress before writing. Refuse any OUT that is the repository,
+// one of its ancestors, the site folder itself, or a filesystem root, so a mistyped or empty SITE_OUT cannot delete the checkout.
+{
+  const inside = (child, parent) => { const r = path.relative(parent, child); return r === '' || (!r.startsWith('..') && !path.isAbsolute(r)); };
+  if (inside(REPO, OUT) || inside(HERE, OUT) || OUT === path.parse(OUT).root) {
+    console.error(`E_UNSAFE_SITE_OUT: refusing to build into ${OUT} (it is the repository, an ancestor of it, or a filesystem root). Set SITE_OUT to a dedicated output folder.`);
+    process.exit(2);
+  }
+}
 let BASE = process.env.SITE_BASE ?? '/seoul-dengoku-wiki/';
 if (!BASE.startsWith('/')) BASE = `/${BASE}`;
 if (!BASE.endsWith('/')) BASE += '/';
