@@ -48,6 +48,26 @@ A. Equipment and the surviving records
 
 The Government's advanced weapons (air defense, fire control, guidance) run fully only with software signed by the Arc. Without it, only manual functions work.
 
+## Arms and Units by Faction
+
+A. What each faction holds
+
+Arms follow the places where facilities, and the people who know how to use them, ended up scattered. No faction can use the weapons it holds fully on its own. The reasons are set out in [The Cost Structure of the Three Factions](/wiki/Cost-Structure/).
+
+| Faction | Arms it holds | What it must get from others to use them fully | Starting units |
+|---|---|---|---|
+| Government (President Kim Yeongyu) | Service rifles (restored K2 pattern), squad machine guns, mortars, restored armored carriers and tanks, self-propelled guns, depots | Fire-control, drone and air-defense software (Arc); doctors who can send the badly wounded back (Free Cities) | Service rifle squad, patrol shield squad, officer command team, first-aid team |
+| Free Cities (Chair of the Board I Ilseop) | Capital Defense Command stock rifles, machine guns, armored vehicles and tanks; maintenance tools; doctors and neural-link surgery | Officers to command tanks and heavy weapons together (Government); medical-robot software (Arc); original seed stock (Government) | Conscript rifle company, militia bayonet band, doctor-led aid team, maintenance engineers, rail handcar |
+| Arc (Hierophant Go Ye-jin) | Guard rifles, command-input mechanical bodies, remote-steered insects, net launchers, shutdown signal emitters | Factories and depots to repair chassis (Government); neural-direct surgery that makes a body move by thought (Free City doctors) | Guard riflemen (the Eastern Command), mechanical-body devotees, insect scouts, net capture team |
+
+B. Drones and surveillance
+
+Drones and surveillance gear are not weapons anyone starts with; factions acquire them later. At the start no faction can fly a fighting drone. The Arc's remote-steered insects only scout. The Free Cities are first to build tethered scout drones, using optical fiber recovered from fields of unexploded warheads. Because they are steered by wire, the Arc cannot switch them off. The Arc nets roaming drone swarms, implants control modules and tames them. The Government restores military surveillance drones, but their flight control runs only under an Arc license.
+
+C. Roaming machines and ancient weapons
+
+The AI is not a common enemy of the three factions. A roaming machine is a hazard that falls on the buildings outside the shutters, and a resource that becomes a unit once it is caught, repaired and woken. Ancient weapons found now and then (an air-defense system, an armored locomotive) wake only when two or more factions put their skills together, so a find is itself a diplomatic event. Units, weapon codes and unlock conditions by tier are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
+
 ## What Actually Existed in 2026
 
 A. Scope of the reviewed sources

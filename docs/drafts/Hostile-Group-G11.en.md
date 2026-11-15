@@ -5,6 +5,10 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+The Gangnam Stray Humanoids are humanoid synthetics on Arc ground (Gangnam) who have left the management records. The control software that opens higher functions is held by the Arc, so this group runs on basic functions and simple commands without a signature. They cannot make batteries or parts themselves, so they depend on exchange slots, and they stop when parts reach their wear limit. The Arc has no factory to repair them, so repairs need Government or Free City maintenance hands. They are no common enemy, and whether each is treated as a person or as a chassis in custody is decided one by one under the rules in [People and Machines](/wiki/People-and-Machines/).
+
 <a id="Hostile-Group-G11-heading-0003"></a>
 
 ## Common species and variants

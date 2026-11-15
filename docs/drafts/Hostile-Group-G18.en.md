@@ -5,6 +5,15 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+The Fire-Leg Train is no faction's enemy. To a person caught in its routine it is a hazard, and once captured it becomes salvage stock. No faction can build this chassis anew, so a lost one has to be caught again.
+
+- Machine type: M3 track and conduit inspection robot
+- Use: it does not become a unit. Parts for rail cars and records of tunnel cracks remain, and they serve to maintain Government and Free City rail units
+- Steps: all three factions can capture it. Hardware repair is done by the Government (depots) and the Free Cities (maintenance engineers); signal check and wake-up are done by the Arc. The war machine on the rails (the revived armored locomotive) is not this type but a separately found ancient weapon.
+- Units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
+
 <a id="Hostile-Group-G18-heading-0003"></a>
 
 ## Common species and variants

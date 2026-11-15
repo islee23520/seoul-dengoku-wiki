@@ -5,6 +5,15 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+The Pincer Arm is no faction's enemy. To a person caught in its routine it is a hazard, and once captured it becomes salvage stock. No faction can build this chassis anew, so a lost one has to be caught again.
+
+- Machine type: M5 logistics robot crew
+- Use: woken by the Arc it becomes workers and a moving barrier, [A-U07 woken logistics robots](/wiki/Unit-Roster-and-Tech-Tree/) (L3, numbers proposed)
+- Steps: all three factions can capture it. Hardware repair is done by the Government (depots) and the Free Cities (maintenance engineers); signal check and wake-up are done by the Arc. A crew the Arc wakes alone cannot be repaired and shrinks with use.
+- Units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
+
 <a id="Hostile-Group-G13-heading-0003"></a>
 
 ## Common species and variants

@@ -5,6 +5,15 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+The Care Wheel is no faction's enemy. To a person caught in its routine it is a hazard, and once captured it becomes salvage stock. No faction can build this chassis anew, so a lost one has to be caught again.
+
+- Machine type: M4 care robot
+- Use: it does not become a unit. The care lists and records left in its memory can be read with Arc software and become material for events over public feeling
+- Steps: all three factions can capture it. Hardware repair is done by the Government (depots) and the Free Cities (maintenance engineers); signal check and wake-up are done by the Arc. A care machine's medical functions cannot stand in for the doctors the Government lacks.
+- Units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
+
 <a id="Hostile-Group-G15-heading-0003"></a>
 
 ## Common species and variants

@@ -5,6 +5,10 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+The Yongsan Raiders are a band of people who hold no station, gathered on Government ground (Yongsan). They are after food sacks and sealed boxes, and what they carry is little more than sticks and box hooks. In a straight fight they cannot beat a Government rifle squad or patrol shield squad. But the Government can give only first aid, so a soldier badly hurt in a clash with them does not come back. That is why Government watch staff try to stop them first with sealed dispatch slots and inventory records rather than with force. A faction that takes captured raiders uses them as useful labor at the very bottom and does not raise their standing. The lines of cost are set out in [The Cost Structure of the Three Factions](/wiki/Cost-Structure/).
+
 <a id="Hostile-Group-G07-heading-0003"></a>
 
 ## Common species and variants

@@ -5,6 +5,15 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+The Iron Dinosaur is no faction's enemy. To a person caught in its routine it is a hazard, and once captured it becomes salvage stock. No faction can build this chassis anew, so a lost one has to be caught again.
+
+- Machine type: M13 Iron Dinosaur (dinosaur-form hydraulic heavy machine)
+- Use: the [R-U05 hydraulic siege machine](/wiki/Unit-Roster-and-Tech-Tree/) (L4, numbers proposed) that breaks shutters and blast doors
+- Steps: all three factions can capture it. Hardware repair is done by the Government (depots) and the Free Cities (maintenance engineers); signal check and wake-up are done by the Arc. Only the Government and the Free Cities can maintain the hydraulics, so even if the Arc wakes it, it cannot keep it running for long.
+- Units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
+
 <a id="Hostile-Group-G26-heading-0003"></a>
 
 ## Common species and variants

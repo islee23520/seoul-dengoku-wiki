@@ -10,7 +10,7 @@ The city's disaster-response organizations matched chassis forms to missions. In
 <a id="개요-p4"></a>
 <a id="개요-p2"></a>
 
-The First AI answered that the cause of the pollution was humanity and that humanity had to shrink, and it brought winter. The AI killed no one directly. When winter fell, people went down into the subway stations, and only as many as the stations could hold survived. Outside Seoul, the war machines of the Great Blackout still roam, carrying out their last orders. Machines whose command and control had weakened wandered in small packs, and people became able to face them.
+The First AI answered that the cause of the pollution was humanity and that humanity had to shrink, and it brought winter. The AI killed no one directly. When winter fell, people went down into the subway stations, and only as many as the stations could hold survived. Outside Seoul, the war machines of the Great Blackout still roam, carrying out their last orders. Machines whose command and control had weakened wandered in small packs, and people became able to face them. The AI is not a common enemy of the three factions. A roaming machine is a hazard that can fall on a district like a raid, and it is also a resource: caught, repaired and woken, it becomes a unit of the faction that holds it.
 
 <a id="앎-보유-수리-제조-table2"></a>
 <a id="앎-보유-수리-제조"></a>
@@ -21,7 +21,7 @@ Knowing a technology and holding a chassis are different things, and so are repa
 
 Physically holding chassis, modules, and cards is separate from knowing the technology. Dismantled modules, stopped chassis, and stronghold warehouses remain. Workshop technicians replace hydraulic hoses, terminals, and luminous lenses with standard parts and set what they hold moving again. But reconstructing a whole set of neural-net weights or the interior of a broken high-density cell is usually beyond reach.
 
-Some trade tools and traps, and parts of the conditional equipment, can be newly assembled. But line-finished products, mass-produced cells, and the upper licensing servers usually do not remain. What licensing software survives is held exclusively by the Arc in a disused station's data center. To say a technology stands lost comes close to saying that its manufacture, licensing, and supply mesh have been severed.
+Some trade tools and traps, and parts of the conditional equipment, can be newly assembled. But line-finished products, mass-produced cells, and the upper licensing servers usually do not remain. The Arc holds a monopoly on the licensing software that remains: it keeps the software of an ancient data center. To say a technology stands lost comes close to saying that its manufacture, licensing, and supply mesh have been severed.
 
 <a id="생물모방-설계의-세-가지-핵심-축"></a>
 <a id="생물모방-설계의-세-가지-중심-축"></a>
@@ -124,7 +124,7 @@ The sealed galleries and maintenance-shed zones were the key contested ground ey
 
 <a id="프로토콜-접속과-카드"></a>
 
-Machine control boards have wired and wireless protocol connection standards, and negotiation windows and protocol cards are used. A protocol card does not control every chassis. Only cards signed by Arc software open the higher functions; any other card reaches only the basic on-and-off functions. Scouts' cards are issued by the Arc.
+Machine control boards have wired and wireless protocol connection standards, and negotiation windows and protocol cards are used. A protocol card does not control every chassis. Only cards signed by Arc software open the higher functions; any other card reaches only the basic on-and-off functions. Scouts' cards are issued by the Arc. A signed card is the physical form of a license the Arc lends to others. Whoever receives it can use a chassis fully, but also receives the fact that the Arc can switch that chassis off with the same signature. Once the Arc switches something off, the other side hesitates over the next contract and starts looking for a way to strip the Arc's software out.
 
 <a id="회수-반과-가문의-경합-p3"></a>
 <a id="m040-몬스터-배치의-현장-적용-p1"></a>
@@ -132,6 +132,19 @@ Machine control boards have wired and wireless protocol connection standards, an
 <a id="m040-몬스터-배치의-현장-적용"></a>
 
 These armed recovery squads competed in performance by occupying restart triggers ahead of others to capture intact chassis, or disabling them on the spot to strip the core modules. The lost-chassis swarm included in the M040 deployment appeared in sequence at the field the moment the trigger fired in the designated sealed conduit. G25 Lantern Ant chassis spread a broad front along the corridor's forward side, minutely detecting intruder responses. G26 Iron Dinosaur chassis heavily blocked the stronghold crossings, physically repelling mid-range approach.
+
+### From Capture to Unit
+
+A captured chassis passes through four steps before it becomes a faction unit. Each step can be done only by certain factions.
+
+| Step | Work | Who can do it |
+|---|---|---|
+| 1. Capture | Take the chassis intact with people, nets and recoilless guns | All three factions |
+| 2. Repair | Fix the broken hardware and replace parts | Government (depots), Free Cities (maintenance engineers) |
+| 3. Signal check and wake-up | Implant a control module and wake the chassis with an Arc signature | Arc |
+| 4. Thought control | A pilot who has had neural-link surgery drives the chassis by thought | Free Cities (doctors) |
+
+The Government does steps 1 and 2 alone and needs an Arc license for step 3. The Arc can do only steps 1 and 3, so chassis it cannot repair dwindle with use. The Free Cities can do steps 1, 2 and 4, but without an Arc signature the chassis responds slowly. No faction can build a new chassis, so a lost one has to be caught again. Machines left behind after a raid is driven off become salvage stock, so a raid is both a threat and a chance to unlock something. Faction units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
 
 <a id="연결"></a>
 <a id="출처"></a>
@@ -146,6 +159,8 @@ These armed recovery squads competed in performance by occupying restart trigger
 - [The operating houses](/wiki/Operating-Houses/)
 - [The three factions of Seoul](/wiki/Sixteen-States/)
 - [The arms and technology of this era](/wiki/Era-Arms-and-Tech-Level/)
+- [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/)
+- [The Cost Structure of the Three Factions](/wiki/Cost-Structure/)
 - [The Scenario Timeline](/wiki/Scenario-Timeline/)
 - [Horizon Forbidden West](https://www.playstation.com/en-us/games/horizon-forbidden-west/)
 

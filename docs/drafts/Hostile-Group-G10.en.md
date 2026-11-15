@@ -6,6 +6,10 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
+## Relation to the Three Factions
+
+What the Bogukmun group is after is grain sacks and sacks of distributed seed. Only the Government holds the original seed stock, and seed anywhere else is only what was handed out from it. A sack of seed is therefore worth more than the same weight of grain, and for a faction whose weapons are people and food, like the Free Cities, it is the supply that sets the ceiling on conscription. The lower ration stores at Garak and Jamsil where the group stands are on Arc ground. The Arc keeps only a minimal rifle-level defense, so it cannot hold the store doors for long. The lines of cost are set out in [The Cost Structure of the Three Factions](/wiki/Cost-Structure/).
+
 <a id="Hostile-Group-G10-heading-0003"></a>
 
 ## Common species and variants

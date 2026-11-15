@@ -34,6 +34,36 @@ Common species and special variants that share a habitat are read apart. Machine
 | [G25 · Lantern Ant](/wiki/Hostile-Group-G25/) | Surviving automatic machines | 16 |
 | [G26 · Iron Dinosaur](/wiki/Hostile-Group-G26/) | Surviving automatic machines | 16 |
 
+## Reading Alongside the Three Factions
+
+A. Machines are not a common enemy
+
+The AI is not a common enemy of the three factions. To a person caught in its routine a surviving automatic machine is a hazard; once captured it is a resource that becomes salvage stock. No faction can build these chassis anew. For a chassis to become a unit it passes through capture (all three factions), hardware repair (Government and Free Cities), signal check and wake-up (Arc) and thought control (Free City doctors). Machine type numbers and units follow [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/). The machine type numbers (M1 to M14) are a different series from the "source placement" numbers in the entries below.
+
+| Group compendium | Machine type | Path to a unit |
+|---|---|---|
+| [G13 · Pincer Arm](/wiki/Hostile-Group-G13/) | M5 logistics robot crew | A-U07 woken logistics robots, woken by the Arc |
+| [G14 · Empty Cart](/wiki/Hostile-Group-G14/) | M1 service robot | R-U01 cargo service robot, which anyone can catch |
+| [G15 · Care Wheel](/wiki/Hostile-Group-G15/) | M4 care robot | Does not become a unit; its remaining records are read with Arc software |
+| [G16 · Girder Spider](/wiki/Hostile-Group-G16/) | M2 inspection robot (four-legged) | R-U02 stabilized quadruped, F-U15 neural-direct quadruped troop |
+| [G17 · One-Eye Tower](/wiki/Hostile-Group-G17/) | M6 blockade watch net | A-U08 woken sentry post, switched back on by the Arc |
+| [G18 · Fire-Leg Train](/wiki/Hostile-Group-G18/) | M3 track and conduit inspection robot | Does not become a unit; it yields parts to maintain rail units |
+| [G25 · Lantern Ant](/wiki/Hostile-Group-G25/) | M12 Lantern Ant | R-U04 searchlight insect-drones |
+| [G26 · Iron Dinosaur](/wiki/Hostile-Group-G26/) | M13 Iron Dinosaur | R-U05 hydraulic siege machine |
+
+B. Human groups and the cost structure
+
+The hostile human groups are not enemies from outside the three factions; they are bands that formed in the gaps the factions' cost structure leaves. The reasons are set out in [The Cost Structure of the Three Factions](/wiki/Cost-Structure/).
+
+| Group compendium | Ground | Place in the cost structure |
+|---|---|---|
+| [G07 · Yongsan Raiders](/wiki/Hostile-Group-G07/) | Government | People who hold no station go after food. The Government wins, but badly wounded soldiers do not come back |
+| [G08 · Dongdaemun Raiders](/wiki/Hostile-Group-G08/) | Government | They take the emergency supplies of the doctorless White Cross |
+| [G09 · Sangam Deserters](/wiki/Hostile-Group-G09/) | Government | Soldiers who left the Government army. With no officers or doctors, what they hold can only shrink |
+| [G10 · Bogukmun group](/wiki/Hostile-Group-G10/) | Government (Bogukmun), Arc (Garak, Jamsil) | They go after grain and distributed seed. Only the Government holds the original seed stock |
+| [G11 · Gangnam Stray Humanoids](/wiki/Hostile-Group-G11/) | Arc | Synthetics running on basic functions without a signature. Repairs need Government or Free City hands |
+| [G12 · Sinnae Deserters](/wiki/Hostile-Group-G12/) | Government | Soldiers who left the Government army. A faction that takes them keeps them at the very bottom |
+
 <a id="Hostile-Ecology-Index-heading-0004"></a>
 
 ## G01 · Wild Boar
@@ -1585,7 +1615,7 @@ Night survey beams, single-shot welds, and unmanned cranes on temporary slabs we
 
 - Origin: These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter.
 
-After the collapse, the construction machines left in the blueprint vault of the Jeongdong Federation and on the heavy-equipment deck of the Eastern Command woke up reading local blueprint caches.
+After the collapse, the construction machines left in the Suseo blueprint vault and on an idle construction deck woke up reading local blueprint caches.
 
 The approval workflow and the site supervisors' signatures were dead, and only the blueprint layers from just before the last revision remained.
 
