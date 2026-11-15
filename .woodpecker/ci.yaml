@@ -12,14 +12,15 @@ clone:
       recursive: false
 
 steps:
-  - name: compile-public-snapshot
+  # The same build GitHub Actions runs before deploying Pages (.github/workflows/pages.yml):
+  # raw SQL in data/sql -> in-memory SQLite -> VitePress -> dist-pages, then the output checks.
+  # This lane gates PRs and branches; GitHub Actions alone deploys Pages from main.
+  # No database credentials or deployment action belongs here; the public site never reads PostgreSQL.
+  - name: pages-build
     image: bash
     commands:
-      # Local backend: the pinned host node (same binary the approver rebuilds with).
+      # Local backend: the pinned host node (Node 24, provides node:sqlite).
       - export PATH=/opt/linalab/node/bin:$PATH
-      - npm ci --ignore-scripts
-      # No database credentials or deployment action belongs in this lane.
-      # The first reviewed snapshot is required; absence must fail closed.
-      - node deploy/compile-check.mjs
-      - node scripts/check-static-snapshot.mjs
-      - node --test scripts/test-seed-sync.mjs scripts/test-migration-provenance.mjs scripts/test-public-snapshot.mjs scripts/test-static-snapshot.mjs
+      - cd site && npm ci --no-audit --no-fund && cd ..
+      - SITE_BASE=/ SITE_REPO_URL=https://github.com/islee23520/seoul-dengoku-wiki node site/build.mjs
+      - SITE_BASE=/ node site/check-site.mjs
