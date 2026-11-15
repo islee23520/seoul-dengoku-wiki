@@ -7,7 +7,7 @@ The map shows opening-day surface holdings alongside mapped rail locations. A ra
 
 | Map layer | Coverage |
 |---|---|
-| Surface holdings | The three factions (Government, Free City, Arc) and the 25 duchies at the opening |
+| Surface holdings | The 307 station strongholds of the three factions at the opening (Government 153, Free City 77, Arc 77) |
 | Rail locations | Mapped stations and tracks |
 
 ## Winter and Station Depth
@@ -21,6 +21,12 @@ The default underground classification follows floors: B1 through B3 are interme
 Clothing follows the actual indoor temperature and heating conditions before the default for a floor. Heated surface interiors and warm underground rooms do not require all the insulation worn outdoors. Electricity production does not mean every station and passage is continuously heated, so power supply alone does not establish a warm interior. Where indoor conditions are unknown, the floor-based temperature default applies.
 
 At the same underground level, cold varies with the regional surface temperature and the amount of air entering from outside. Intermediate passages admitting much cold air can fall below the baseline to less than 8°C, while remaining warmer than the local surface. Deep quarters are less affected by outside air and their baseline varies less. Surface differences are not simply added to or subtracted from underground temperatures; heating and outside-air exposure are considered together for the occupied space.
+
+### Depth and Standing
+
+Depth divides standing as well as temperature. The residence layers are the same in all three factions. The deeper the level, the higher the people who live there. Deep levels keep intruders out behind shutters, make the exits easy to control and watch, and are warmed by the ground. A resident of the third basement level ranks above a resident of the first.
+
+Above ground the order is reversed: the higher the floor, the lower the people. High floors are cold and windy and lie open to watching and attack from the air, drones included. Everyone who holds no station is an ordinary citizen, and among citizens those who live on the ground floor rank highest. For the same reasons a station is worth more the deeper it goes, and surface stations are worth the least.
 
 ### Regional Surface Temperatures
 

@@ -10,7 +10,7 @@ After the collapse, Seoul's buildings were not built anew. The positions and for
 
 A. Smallest unit of occupation
 
-The dong remained the cells that divided area, the minimum unit a power could take was the building, and planting a flag on a dong's name occupied nothing.
+The dong remained the cells that divided area. The smallest unit of territory is the station, meaning the subway station together with the surface stronghold above it. Outside the stronghold the unit a power could take was the building, and planting a flag on a dong's name occupied nothing.
 
 B. Station building first
 
@@ -30,7 +30,7 @@ Place names and functions came from the past, the borders divided, and the prese
 
 A. Districts north and south of the river
 
-The districts set north of the Han were Jongno, Jung-gu, Yongsan, Seongdong, Gwangjin, Dongdaemun, Jungnang, Seongbuk, Gangbuk, Dobong, Nowon, Eunpyeong, Seodaemun, Mapo, and Gangseo; those set south were Yangcheon, Guro, Geumcheon, Yeongdeungpo, Dongjak, Gwanak, Seocho, Gangnam, Songpa, and Gangdong.
+The districts set north of the Han were Jongno, Jung-gu, Yongsan, Seongdong, Gwangjin, Dongdaemun, Jungnang, Seongbuk, Gangbuk, Dobong, Nowon, Eunpyeong, Seodaemun, and Mapo; those set south were Gangseo, Yangcheon, Guro, Geumcheon, Yeongdeungpo, Dongjak, Gwanak, Seocho, Gangnam, Songpa, and Gangdong.
 
 B. Tributaries
 
@@ -38,19 +38,19 @@ The tributaries split the districts. The Jungnang Stream ran through Jungnang, D
 
 C. Waterfront rules
 
-The waterfront rules were read from the layers first. The first floor of the main channel was monsoon storage or abandoned space, habitation pushed above the third floor, and the ration windows sat inside the embankment. The tributary banks were sewage and flood, wild boar and raccoon dog corridors, and school playgrounds served as detour embankments. Inland highlands like Gwanak and Dobong took slopes and blackouts instead of floods, and the schools became evacuation halls.
+The waterfront rules were read from the layers first. The first floor of the main channel was monsoon storage or abandoned space, habitation on the main-channel waterfront pushed above the third floor, and the ration windows sat inside the embankment. Away from the waterfront, the lower the floor above ground, the higher the standing of those who lived there. The tributary banks were sewage and flood, wild boar and raccoon dog corridors, and school playgrounds served as detour embankments. Inland highlands like Gwanak and Dobong took slopes and blackouts instead of floods, and the schools became evacuation halls.
 
 ## The Trades the Districts Took
 
 A. Origins of building roles
 
-The three factions hold one duchy per district, and a district's building trades came out of the district's own facilities. The Yeongdeungpo treatment plant and the Sinjeong depot, the Banghwa depot, the Changdong wheel works, the Noryangjin cold storage, and the Jegi-dong medicinal herbs were the first hands each district kept.
+The three factions divide their territory by station, and their station strongholds draw on the district's facilities. A district's building trades came out of the district's own facilities. The Yeongdeungpo treatment plant and the Sinjeong depot, the Banghwa depot, the Changdong wheel works, the Noryangjin cold storage, and the Jegi-dong medicinal herbs were the first hands each district kept.
 
 | District | River side | Buildings taken first |
 |---|---|---|
 | Yeongdeungpo | South, Han and Anyang | Treatment plant and station unloading floor. The market as a reserved-ration window. |
 | Yangcheon, Guro, Geumcheon | South, Anyang | Depots and industrial blocks. Schools for drying parts. |
-| Gangseo | North, Han | Banghwa depot and research blocks. The airport memory went to storage. |
+| Gangseo | South, Han | Banghwa depot and research blocks. The airport memory went to storage. |
 | Yongsan, Mapo | North, Han | Rail warehouses and berths. Broadcast blocks as record relay. |
 | Jongno, Jung-gu | North, Cheonggye | Administrative blocks and universities. Ledgers and sealed stacks. |
 | Seongdong, Gwangjin | North, Han | Workshops and bridge approaches. Schools as repair practice. |
@@ -75,7 +75,7 @@ Militia sleep in schools, and ration windows occupy community centers. Each buil
 | University | Record-copying workshops. Laboratory blocks sealed or stripped for parts. |
 | Market | Licensed market. Splitting reserved portions from sale portions. |
 | Station | Hand-off of living freight and the refuge floors. The tracks carried the state's transit toll. |
-| Apartment | Habitation only above the third floor. Floors 1–2 flooded storage or abandoned. |
+| Apartment | The ground floor is the best place for citizens to live, and the higher the floor, the lower the people (cold, strong wind, drone watching and attack). On the main-channel waterfront, habitation only above the third floor; floors 1–2 flooded storage or abandoned. |
 | Park · green space | Thin cultivation, grazing, monsoon drainage. Explicitly stated unless used as burial ground. |
 | Shop · office | Workshop or shutter-sealed. |
 
