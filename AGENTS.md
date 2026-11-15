@@ -131,7 +131,7 @@ node server/wiki-document-api.mjs                        # WIKI_DOCUMENT_PG 또�
 |`docs/repo-pg-orm.md`|repo↔PG 계약: 범위 표 데이터 migration, 공개 렌더 투영, 계보·신선도 게이트(소유자 G1/G2 승인 2026-11-07)|
 |`artifact-allowlist.json`|dist/ 산출물·라우트 허용 목록(루트에 위치)|
 |`vite.config.ts`, `tsconfig.json`|빌드·타입 설정(vitest 설정은 #625에서 삭제)|
-|`.github/workflows/pages.yml`|GitHub Pages 배포(2026-11-10 WSL 호스팅 대체). `.woodpecker/deploy.yaml`(WSL deploy-request 레인)은 은퇴·삭제됨. `.woodpecker/ci.yaml`은 별개로 남아 있음|
+|`.github/workflows/pages.yml`|GitHub Pages 배포(2026-11-10 WSL 호스팅 대체). `.woodpecker/deploy.yaml`(WSL deploy-request 레인)은 은퇴·삭제됨. `.woodpecker/ci.yaml`(이 호스트의 Woodpecker, buildci.linalab.io)은 PR·브랜치 검사 전용으로, Pages와 같은 빌드(`site/build.mjs` → `site/check-site.mjs`)를 돌리고 배포하지 않는다(2026-11-15, 옛 공개 snapshot 게이트 대체). 공개 사이트는 PostgreSQL을 읽지 않는다|
 
 ## Runtime/Tooling Preferences
 
