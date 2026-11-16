@@ -42,7 +42,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "D10 아치파이 — 작위·권리·명분·인준 전체 논리"
+          "text": "D10 아치파이 — 직함·권리·명분·인준 전체 논리"
         }
       ]
     },
@@ -52,7 +52,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "이 페이지는 작위·권리·명분·인준 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+          "text": "이 페이지는 직함·권리·명분·인준 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
         }
       ]
     },
@@ -172,7 +172,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "자료 소유자는 D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한, 유지 계약은 legal-holder·pressability·transfer·inheritance-recognition·eligibility-loss·fabrication-mandate·cb-beneficiary-survival·duplicate-basis·same-title-restoration다. 상태 소유 경계는 rightId,titleId,basisId,beneficiary,active/suspended,recognition evidence,CB exact binding,mandate/completion receipts. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
+          "text": "자료 소유자는 D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한, 유지 계약은 legal-holder·pressability·transfer·inheritance-recognition·eligibility-loss·fabrication-mandate·cb-beneficiary-survival·duplicate-basis·same-title-restoration다. 상태 소유 경계는 rightId,titleId,basisId,beneficiary,active/suspended,recognition evidence,CB exact binding,mandate/completion receipts. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
         }
       ]
     },
@@ -281,7 +281,7 @@
         [
           {
             "kind": "text",
-            "text": "작위 신원 — [권리·지배 분리] 이름·직위 등급은 검색 단서일 뿐이다. 영구 titleId로 작위를 찾고 범위·상위 작위·최하위 예외를 등록 원문대로 읽는다. (원문: d10.b9.orderedSteps[1])"
+            "text": "직함 신원 — [권리·지배 분리] 이름·직위 등급은 검색 단서일 뿐이다. 영구 titleId로 직함을 찾고 범위·상위 직함·최하위 예외를 등록 원문대로 읽는다. (원문: d10.b9.orderedSteps[1])"
           }
         ],
         [
@@ -293,19 +293,19 @@
         [
           {
             "kind": "text",
-            "text": "실효 지배 별도 — [권리·지배 분리] ControlRecord의 점유 영토는 작위의 영토 집합 안에서만 유효하며 지배자 변경으로 법적 보유자나 영토 범위를 변경하지 않는다. (원문: d10.b9.lifecycle.occupat​ion)"
+            "text": "실효 지배 별도 — [권리·지배 분리] ControlRecord의 점유 영토는 직함의 영토 집합 안에서만 유효하며 지배자 변경으로 법적 보유자나 영토 범위를 변경하지 않는다. (원문: d10.b9.lifecycle.occupat​ion)"
           }
         ],
         [
           {
             "kind": "text",
-            "text": "서로 다른 근거 병존 — [권리·지배 분리] 같은 인물·작위여도 rightId와 basisId가 다른 권리는 함께 보존한다. 동일 이름으로 합치거나 배타 권리로 추론하지 않는다. (원문: d10.b9.formulaSheet[7].e​xpression; d10.b9.formulaSheet[7].u​nit; d10.b9.formulaSheet[7].r​ounding; d10.b9.formulaSheet[7].c​lamp; d10.b9.formulaSheet[7].r​ng)"
+            "text": "서로 다른 근거 병존 — [권리·지배 분리] 같은 인물·직함이여도 rightId와 basisId가 다른 권리는 함께 보존한다. 동일 이름으로 합치거나 배타 권리로 추론하지 않는다. (원문: d10.b9.formulaSheet[7].e​xpression; d10.b9.formulaSheet[7].u​nit; d10.b9.formulaSheet[7].r​ounding; d10.b9.formulaSheet[7].c​lamp; d10.b9.formulaSheet[7].r​ng)"
           }
         ],
         [
           {
             "kind": "text",
-            "text": "행사 조건 — [권리 행사·전쟁 사유] 활성 권리·정확한 작위·살아 있는 수혜자·별도 전쟁 권한·모든 대상 ID가 결속된 등록 CB가 모두 필요하다. (원문: d10.b9.formulaSheet[1].e​xpression; d10.b9.formulaSheet[1].u​nit; d10.b9.formulaSheet[1].r​ounding; d10.b9.formulaSheet[1].c​lamp; d10.b9.formulaSheet[1].r​ng)"
+            "text": "행사 조건 — [권리 행사·전쟁 사유] 활성 권리·정확한 직함·살아 있는 수혜자·별도 전쟁 권한·모든 대상 ID가 결속된 등록 CB가 모두 필요하다. (원문: d10.b9.formulaSheet[1].e​xpression; d10.b9.formulaSheet[1].u​nit; d10.b9.formulaSheet[1].r​ounding; d10.b9.formulaSheet[1].c​lamp; d10.b9.formulaSheet[1].r​ng)"
           }
         ],
         [
@@ -335,37 +335,37 @@
         [
           {
             "kind": "text",
-            "text": "승계 적격 기록 — [양도·승계 인정] 현재 작위별 기록이 후계자를 명시해야 승계를 인정한다. transferable 하나만으로 승계되지 않는다. (원문: d10.b9.formulaSheet[3].e​xpression; d10.b9.formulaSheet[3].u​nit; d10.b9.formulaSheet[3].r​ounding; d10.b9.formulaSheet[3].c​lamp; d10.b9.formulaSheet[3].r​ng)"
+            "text": "승계 적격 기록 — [양도·승계 인정] 현재 직함별 기록이 후계자를 명시해야 승계를 인정한다. transferable 하나만으로 승계되지 않는다. (원문: d10.b9.formulaSheet[3].e​xpression; d10.b9.formulaSheet[3].u​nit; d10.b9.formulaSheet[3].r​ounding; d10.b9.formulaSheet[3].c​lamp; d10.b9.formulaSheet[3].r​ng)"
           }
         ],
         [
           {
             "kind": "text",
-            "text": "활성 권리 — [정지·동일 작위 복구] 자격 상실 전 동일 rightId/titleId/basisId의​ active 상태다. (원문: d10.b9.formulaSheet[4].e​xpression; d10.b9.formulaSheet[4].u​nit; d10.b9.formulaSheet[4].r​ounding; d10.b9.formulaSheet[4].c​lamp; d10.b9.formulaSheet[4].r​ng)"
+            "text": "활성 권리 — [정지·동일 직함 복구] 자격 상실 전 동일 rightId/titleId/basisId의​ active 상태다. (원문: d10.b9.formulaSheet[4].e​xpression; d10.b9.formulaSheet[4].u​nit; d10.b9.formulaSheet[4].r​ounding; d10.b9.formulaSheet[4].c​lamp; d10.b9.formulaSheet[4].r​ng)"
           }
         ],
         [
           {
             "kind": "text",
-            "text": "자격 상실 정지 — [정지·동일 작위 복구] active에서 suspended로만 전이한다. 삭제·수혜자 재배정·임의 만료는 없다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+            "text": "자격 상실 정지 — [정지·동일 직함 복구] active에서 suspended로만 전이한다. 삭제·수혜자 재배정·임의 만료는 없다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
           }
         ],
         [
           {
             "kind": "text",
-            "text": "복구 근거 — [정지·동일 작위 복구] 정지 이유가 작위 무효이고 정확히 같은 titleId의 복구 판본 증거가 있어야 한다. 다른 작위로 바꾸지 않는다. (원문: d10.b9.formulaSheet[8].e​xpression; d10.b9.formulaSheet[8].u​nit; d10.b9.formulaSheet[8].r​ounding; d10.b9.formulaSheet[8].c​lamp; d10.b9.formulaSheet[8].r​ng)"
+            "text": "복구 근거 — [정지·동일 직함 복구] 정지 이유가 직함 무효이고 정확히 같은 titleId의 복구 판본 증거가 있어야 한다. 다른 직함으로 바꾸지 않는다. (원문: d10.b9.formulaSheet[8].e​xpression; d10.b9.formulaSheet[8].u​nit; d10.b9.formulaSheet[8].r​ounding; d10.b9.formulaSheet[8].c​lamp; d10.b9.formulaSheet[8].r​ng)"
           }
         ],
         [
           {
             "kind": "text",
-            "text": "동일 권리 활성화 — [정지·동일 작위 복구] 같은 rightId와 titleId를 보존한 채 active로 복구한다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+            "text": "동일 권리 활성화 — [정지·동일 직함 복구] 같은 rightId와 titleId를 보존한 채 active로 복구한다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
           }
         ],
         [
           {
             "kind": "text",
-            "text": "위임 결속 — [날조 단일 위임] 권한 있는 담당자·mandateEventId·대상 작위·수혜자를 하나의 정확한 위임에 결속한다. (원문: d10.b9.formulaSheet[5].e​xpression; d10.b9.formulaSheet[5].u​nit; d10.b9.formulaSheet[5].r​ounding; d10.b9.formulaSheet[5].c​lamp; d10.b9.formulaSheet[5].r​ng)"
+            "text": "위임 결속 — [날조 단일 위임] 권한 있는 담당자·mandateEventId·대상 직함·수혜자를 하나의 정확한 위임에 결속한다. (원문: d10.b9.formulaSheet[5].e​xpression; d10.b9.formulaSheet[5].u​nit; d10.b9.formulaSheet[5].r​ounding; d10.b9.formulaSheet[5].c​lamp; d10.b9.formulaSheet[5].r​ng)"
           }
         ],
         [
@@ -549,7 +549,7 @@
         [
           "운용 — 현재 판본·행위 선택",
           "d10.b9.dataOwner",
-          "\"D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
+          "\"D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -579,7 +579,7 @@
         [
           "운용 — 정확 입력·단위",
           "d10.b9.fields[0].owner",
-          "\"D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
+          "\"D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -629,7 +629,7 @@
         [
           "운용 — 정확 입력·단위",
           "d10.b9.fields[1].owner",
-          "\"D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
+          "\"D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -674,7 +674,7 @@
         [
           "운용 — 정확 입력·단위",
           "d10.b9.fields[2].owner",
-          "\"D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
+          "\"D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -719,7 +719,7 @@
         [
           "운용 — 정확 입력·단위",
           "d10.b9.fields[3].owner",
-          "\"D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
+          "\"D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -764,7 +764,7 @@
         [
           "운용 — 정확 입력·단위",
           "d10.b9.fields[4].owner",
-          "\"D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
+          "\"D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -809,7 +809,7 @@
         [
           "운용 — 정확 입력·단위",
           "d10.b9.fields[5].owner",
-          "\"D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
+          "\"D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -887,7 +887,7 @@
           "\"Validate strict field types, stable unique IDs, rulesVersion and full checkpoint invariants.\""
         ],
         [
-          "운용 — 작위 신원",
+          "운용 — 직함 신원",
           "d10.b9.orderedSteps[1]",
           "\"Resolve title and right by stable ID; names, office tier and historical registries are search evidence only.\""
         ],

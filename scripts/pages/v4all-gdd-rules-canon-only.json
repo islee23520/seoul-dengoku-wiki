@@ -1,0 +1,110 @@
+{
+  "batch": "canon-only",
+  "basis": "080이 렌더하지 않는 canon JSON 전용 텍스트(paragraph lines). 080 규칙과 같은 용어 정책.",
+  "rules": [
+    {
+      "id": "cj-fw-loyalty1",
+      "file": "rules/rules-factions-warfare-clauses.json",
+      "from": "영웅마다 자기 군주에 대한 충성 값을 둔다. 범위는 0~100이고 군주 자신은 늘 100이다.",
+      "to": "영웅마다 자기 세력 수장에 대한 충성 값을 둔다. 범위는 0~100이고 세력 수장 자신은 늘 100이다.",
+      "expect": 1,
+      "reason": "RWARFARE-42 충성 대상 = 세력 수장(080 RWARFARE-42 본문은 비어 있음, canon 전용)"
+    },
+    {
+      "id": "cj-fw-loyalty2",
+      "file": "rules/rules-factions-warfare-clauses.json",
+      "from": "기분과 군주에 대한 신뢰 `T[영웅,군주]`",
+      "to": "기분과 세력 수장에 대한 신뢰 `T[영웅,세력 수장]`",
+      "expect": 1,
+      "reason": "같은 조항"
+    },
+    {
+      "id": "cj-fw-loyalty3",
+      "file": "rules/rules-factions-warfare-clauses.json",
+      "from": "다른 영웅은 다른 군주에게 옮겨 간다",
+      "to": "다른 영웅은 다른 세력 수장에게 옮겨 간다",
+      "expect": 1,
+      "reason": "같은 조항"
+    },
+    {
+      "id": "cj-fw-reward1",
+      "file": "rules/rules-factions-warfare-clauses.json",
+      "from": "군주는 자기 영웅에게 보상과 위협 명령을 내릴 수 있다.",
+      "to": "세력 수장은 자기 영웅에게 보상과 위협 명령을 내릴 수 있다.",
+      "expect": 1,
+      "reason": "RWARFARE-44"
+    },
+    {
+      "id": "cj-fw-reward2",
+      "file": "rules/rules-factions-warfare-clauses.json",
+      "from": "두 효과의 크기는 군주의 설득 기술에 비례한다.",
+      "to": "두 효과의 크기는 세력 수장의 설득 기술에 비례한다.",
+      "expect": 1,
+      "reason": "같은 조항"
+    },
+    {
+      "id": "cj-fw-vassal",
+      "file": "rules/rules-factions-warfare-clauses.json",
+      "from": "작위·봉신·왕조 규칙은",
+      "to": "직함·봉신·왕조 규칙은",
+      "expect": 1,
+      "reason": "작위 → 직함"
+    },
+    {
+      "id": "cj-fw-contract",
+      "file": "rules/rules-factions-warfare-clauses.json",
+      "from": "상급·하급 작위, 양측",
+      "to": "상급·하급 직함, 양측",
+      "expect": 1,
+      "reason": "작위 → 직함"
+    },
+    {
+      "id": "cj-iu-heir",
+      "file": "root/issue-101-ui-ux-decisions.json",
+      "from": "그 인물로 플레이를 이어가되, 작위와",
+      "to": "그 인물로 플레이를 이어가되, 직함과",
+      "expect": 1,
+      "reason": "작위 → 직함(080에 없는 canon 전용 목업 문단)"
+    },
+    {
+      "id": "cj-iu-split1",
+      "file": "root/issue-101-ui-ux-decisions.json",
+      "from": "승계와 작위별 정치적 승계는 별개입니다. 작위는 해당 지역의",
+      "to": "승계와 직함별 정치적 승계는 별개입니다. 직함은 해당 지역의",
+      "expect": 1,
+      "reason": "같은 문단"
+    },
+    {
+      "id": "cj-iu-split2",
+      "file": "root/issue-101-ui-ux-decisions.json",
+      "from": "따릅니다. 작위가 없으면 작위 승계 판정도",
+      "to": "따릅니다. 직함이 없으면 직함 승계 판정도",
+      "expect": 1,
+      "reason": "같은 문단"
+    },
+    {
+      "id": "cj-pi-geo-states",
+      "file": "rules/power-and-institutions.json",
+      "from": "옛 지리 왕국 작위는 v4에서 쓰지 않는다.",
+      "to": "옛 지리 국가의 칭호는 v4에서 쓰지 않는다.",
+      "expect": 1,
+      "reason": "canon의 기존 v4 문장 속 왕국·작위를 080(b2-six-jiri-ko)과 같은 문장으로"
+    },
+    {
+      "id": "cj-d11-restore-authority",
+      "file": "system-design/mechanism-d11.json",
+      "from": "v4 CANON-BIBLE 2.6 appointment rule, replaces the old sp1.b38 limit",
+      "to": "existing SP1 sp1.b38 limit, not new balance",
+      "expect": 1,
+      "reason": "잔여 계약 줄 복원"
+    },
+    {
+      "id": "cj-d11-restore-clamp",
+      "file": "system-design/mechanism-d11.json",
+      "from": "reject without a recorded appointment, do not silently downgrade",
+      "to": "reject over-limit, do not silently clamp",
+      "expect": 1,
+      "reason": "잔여 계약 줄 복원"
+    }
+  ]
+}

@@ -1,0 +1,834 @@
+{
+  "batch": "b4-references-proposals-design",
+  "basis": "docs/CANON-BIBLE.md 1절 규칙 7·8, 2.6, 5절. 외부 게임 참조 문서의 봉건 단계 이름은 중립 단계 번호(1~4단계 영역, N단계 직함 보유자)와 통치자·국가·영지 관리자로 바꾼다. 서울 규칙은 세력 수장·역·역장·구·직함을 쓴다. 제품명(Crusader Kings, Romance of the Three Kingdoms), 링크 slug(ref-crusader-kings-3), REF 태그 키(MB-KINGDOM, MB-LORD-DEFECTION), 코드 식별자(CapturedLord)는 유지한다.",
+  "rules": [
+    {
+      "id": "b4-ck3-duke-count-ko",
+      "docs": [
+        "doc.Ref-Crusader-Kings-3"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "공작 아래 백작을",
+      "to": "3단계 직함 보유자 아래 2단계 직함 보유자를",
+      "expect": 1,
+      "reason": "CK3 단계를 중립 단계 번호로"
+    },
+    {
+      "id": "b4-ck3-barony-ko",
+      "docs": [
+        "doc.Ref-Crusader-Kings-3"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "ko-noun",
+      "from": "남작령",
+      "to": "1단계 영역",
+      "expect": 1,
+      "reason": "CK3 barony"
+    },
+    {
+      "id": "b4-ck3-county-ko",
+      "docs": [
+        "doc.Ref-Crusader-Kings-3"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "ko-noun",
+      "from": "백작령",
+      "to": "2단계 영역",
+      "expect": 9,
+      "reason": "CK3 county"
+    },
+    {
+      "id": "b4-ck3-duchy-ko",
+      "docs": [
+        "doc.Ref-Crusader-Kings-3"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "ko-noun",
+      "from": "공작령",
+      "to": "3단계 영역",
+      "expect": 5,
+      "reason": "CK3 duchy"
+    },
+    {
+      "id": "b4-ck3-kingdom-ko",
+      "docs": [
+        "doc.Ref-Crusader-Kings-3"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "ko-noun",
+      "from": "왕국",
+      "to": "4단계 영역",
+      "expect": 8,
+      "reason": "CK3 kingdom"
+    },
+    {
+      "id": "b4-ck3-crownauth-ko",
+      "docs": [
+        "doc.Ref-Crusader-Kings-3"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "왕권",
+      "to": "통치권",
+      "expect": 5,
+      "reason": "CK3 crown authority"
+    },
+    {
+      "id": "b4-ck3-lord-ko",
+      "docs": [
+        "doc.Ref-Crusader-Kings-3"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "ko-noun",
+      "from": "영주",
+      "to": "통치자",
+      "expect": 1,
+      "reason": "CK3 holder"
+    },
+    {
+      "id": "b4-ck3-ruler-ko",
+      "docs": [
+        "doc.Ref-Crusader-Kings-3"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "ko-noun",
+      "from": "군주",
+      "to": "통치자",
+      "expect": 22,
+      "reason": "CK3 ruler"
+    },
+    {
+      "id": "b4-ck3-king-ko",
+      "docs": [
+        "doc.Ref-Crusader-Kings-3"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "ko-noun",
+      "from": "(?<![가-힣])왕(?!조|권|관|국|위|족)",
+      "to": "통치자",
+      "expect": 2,
+      "reason": "CK3 king"
+    },
+    {
+      "id": "b4-ck3-duke-count-en",
+      "docs": [
+        "doc.Ref-Crusader-Kings-3"
+      ],
+      "fields": [
+        "title",
+        "summary",
+        "body_md"
+      ],
+      "kind": "literal",
+      "from": "Reorganizing counts under a duke",
+      "to": "Reorganizing tier-2 holders under a tier-3 holder",
+      "expect": 1,
+      "reason": "같은 문장 영어"
+    },
+    {
+      "id": "b4-ck3-tiers-en",
+      "docs": [
+        "doc.Ref-Crusader-Kings-3"
+      ],
+      "fields": [
+        "title",
+        "summary",
+        "body_md"
+      ],
+      "kind": "regex",
+      "from": "\\b(?:baronies|counties|Counties|county|duchies|duchy|kingdoms|Kingdoms|kingdom|king)\\b",
+      "to": "",
+      "expect": 25,
+      "reason": "CK3 단계 이름을 중립 단계 번호로",
+      "map": {
+        "baronies": "tier-1 holdings",
+        "counties": "tier-2 domains",
+        "Counties": "Tier-2 domains",
+        "county": "tier-2 domain",
+        "duchies": "tier-3 domains",
+        "duchy": "tier-3 domain",
+        "kingdoms": "tier-4 realms",
+        "Kingdoms": "tier-4 realms",
+        "kingdom": "tier-4 realm",
+        "king": "ruler"
+      }
+    },
+    {
+      "id": "b4-rmi-rulermode-ko",
+      "docs": [
+        "doc.Ref-Mechanism-Index"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "군주제",
+      "to": "통치자 플레이",
+      "expect": 2,
+      "reason": "삼국지 14 군주 플레이 모드"
+    },
+    {
+      "id": "b4-rmi-ruling-clan-ko",
+      "docs": [
+        "doc.Ref-Mechanism-Index"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "현 군주 가문",
+      "to": "현 통치 가문",
+      "expect": 1,
+      "reason": "Bannerlord ruling clan"
+    },
+    {
+      "id": "b4-rmi-ruler-ko",
+      "docs": [
+        "doc.Ref-Mechanism-Index"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "ko-noun",
+      "from": "군주",
+      "to": "통치자",
+      "expect": 2,
+      "reason": "외부 게임 ruler"
+    },
+    {
+      "id": "b4-rmi-kingdom-ko",
+      "docs": [
+        "doc.Ref-Mechanism-Index"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "ko-noun",
+      "from": "왕국",
+      "to": "국가",
+      "expect": 4,
+      "reason": "Bannerlord kingdom"
+    },
+    {
+      "id": "b4-rmi-lord-ko",
+      "docs": [
+        "doc.Ref-Mechanism-Index"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "ko-noun",
+      "from": "영주",
+      "to": "영지 관리자",
+      "expect": 4,
+      "reason": "신장의야망 영주(領主)"
+    },
+    {
+      "id": "b4-rmi-king-ko",
+      "docs": [
+        "doc.Ref-Mechanism-Index"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "'빈손→왕' 공식",
+      "to": "'빈손→통치자' 공식",
+      "expect": 1,
+      "reason": "비유 공식"
+    },
+    {
+      "id": "b4-rmi-nobles-ko",
+      "docs": [
+        "doc.Ref-Mechanism-Index"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "Lords는 능력표",
+      "to": "귀족 인물은 능력표",
+      "expect": 1,
+      "reason": "Bannerlord Lords(귀족 NPC)"
+    },
+    {
+      "id": "b4-rmi-nobles-en",
+      "docs": [
+        "doc.Ref-Mechanism-Index"
+      ],
+      "fields": [
+        "title",
+        "summary",
+        "body_md"
+      ],
+      "kind": "literal",
+      "from": "Lords use an ability table",
+      "to": "Nobles use an ability table",
+      "expect": 1,
+      "reason": "같은 문장"
+    },
+    {
+      "id": "b4-rmi-lord-en",
+      "docs": [
+        "doc.Ref-Mechanism-Index"
+      ],
+      "fields": [
+        "title",
+        "summary",
+        "body_md"
+      ],
+      "kind": "regex",
+      "from": "\\b(?:castle lords|castle lord|provincial lord|lords|lord)\\b",
+      "to": "",
+      "expect": 11,
+      "reason": "신장의야망·태합입지전 lord",
+      "map": {
+        "castle lords": "castle keepers",
+        "castle lord": "castle keeper",
+        "provincial lord": "provincial governor",
+        "lords": "domain holders",
+        "lord": "domain holder"
+      }
+    },
+    {
+      "id": "b4-rmi-kingdom-en",
+      "docs": [
+        "doc.Ref-Mechanism-Index"
+      ],
+      "fields": [
+        "title",
+        "summary",
+        "body_md"
+      ],
+      "kind": "regex",
+      "from": "(?<!Three )\\b(?:Kingdom|kingdom)\\b",
+      "to": "",
+      "expect": 5,
+      "reason": "Bannerlord kingdom → realm(제품명 Three Kingdoms 제외, REF 태그 대문자 키 제외)",
+      "map": {
+        "Kingdom": "Realm",
+        "kingdom": "realm"
+      }
+    },
+    {
+      "id": "b4-rmi-fief-en",
+      "docs": [
+        "doc.Ref-Mechanism-Index"
+      ],
+      "fields": [
+        "title",
+        "summary",
+        "body_md"
+      ],
+      "kind": "regex",
+      "from": "\\bfiefs?\\b",
+      "to": "",
+      "expect": 5,
+      "reason": "Bannerlord fief → holding",
+      "map": {
+        "fief": "holding",
+        "fiefs": "holdings"
+      }
+    },
+    {
+      "id": "b4-rmi-king-en",
+      "docs": [
+        "doc.Ref-Mechanism-Index"
+      ],
+      "fields": [
+        "title",
+        "summary",
+        "body_md"
+      ],
+      "kind": "literal",
+      "from": "\"empty-handed → king\"",
+      "to": "\"empty-handed → ruler\"",
+      "expect": 1,
+      "reason": "비유 공식"
+    },
+    {
+      "id": "b4-batchd-squad-ko",
+      "docs": [
+        "doc.owner-approved-batch-d"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "국가 수준(군주 2·봉신 1·그 밖 0)",
+      "to": "세력 내 단계(세력 수장 2·산하 직위자 1·그 밖 0)",
+      "expect": 1,
+      "reason": "분대 정원 산식의 수준 항(수치 불변)"
+    },
+    {
+      "id": "b4-batchd-squad2-ko",
+      "docs": [
+        "doc.owner-approved-batch-d"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "군주·고R 인물",
+      "to": "세력 수장·고R 인물",
+      "expect": 1,
+      "reason": "같은 제안"
+    },
+    {
+      "id": "b4-batchd-ck3-ko",
+      "docs": [
+        "doc.owner-approved-batch-d"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "ko-noun",
+      "from": "군주",
+      "to": "통치자",
+      "expect": 2,
+      "reason": "CK3 장르 근거 인용"
+    },
+    {
+      "id": "b4-batchd-lord-ko",
+      "docs": [
+        "doc.owner-approved-batch-d"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "약해진 영주의 땅",
+      "to": "약해진 통치자의 땅",
+      "expect": 1,
+      "reason": "CK3 장르 근거"
+    },
+    {
+      "id": "b4-batchd-lord-en",
+      "docs": [
+        "doc.owner-approved-batch-d"
+      ],
+      "fields": [
+        "title",
+        "summary",
+        "body_md"
+      ],
+      "kind": "literal",
+      "from": "a weakened lord",
+      "to": "a weakened ruler",
+      "expect": 1,
+      "reason": "같은 문장"
+    },
+    {
+      "id": "b4-ck3-genre-ruler-ko",
+      "docs": [
+        "doc.owner-approved-defaults-off-keep"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "NPC 군주의 야망",
+      "to": "NPC 통치자의 야망",
+      "expect": 1,
+      "reason": "CK3 장르 근거"
+    },
+    {
+      "id": "b4-crown-victory-ko",
+      "docs": [
+        "doc.owner-approved-defaults-on"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "통일·왕관 승리",
+      "to": "통일·통치권 승리",
+      "expect": 1,
+      "reason": "CK3 crown victory"
+    },
+    {
+      "id": "b4-mst-fiefs-en",
+      "docs": [
+        "doc.owner-approved-mst-01"
+      ],
+      "fields": [
+        "title",
+        "summary",
+        "body_md"
+      ],
+      "kind": "regex",
+      "from": "\\b(?:Fiefs|fiefs|fief)\\b",
+      "to": "",
+      "expect": 5,
+      "reason": "받은 영토 단위는 역(CB 1절 규칙 8)",
+      "map": {
+        "Fiefs": "Stations",
+        "fiefs": "stations",
+        "fief": "station"
+      }
+    },
+    {
+      "id": "b4-sid-lords-en",
+      "docs": [
+        "doc.Station-Interior-Design"
+      ],
+      "fields": [
+        "title",
+        "summary",
+        "body_md"
+      ],
+      "kind": "regex",
+      "from": "\\blords\\b",
+      "to": "stationmasters",
+      "expect": 2,
+      "reason": "역 영토의 보유자 = 역장"
+    },
+    {
+      "id": "b4-sid-lord-ko",
+      "docs": [
+        "doc.Station-Interior-Design"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "ko-noun",
+      "from": "영주",
+      "to": "역장",
+      "expect": 2,
+      "reason": "같은 규칙"
+    },
+    {
+      "id": "b4-narr-county-ko",
+      "docs": [
+        "doc.Narrative-Direction"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "county 소유나",
+      "to": "역 소유나",
+      "expect": 1,
+      "reason": "v4 최소 영토 단위 역"
+    },
+    {
+      "id": "b4-narr-county-en",
+      "docs": [
+        "doc.Narrative-Direction"
+      ],
+      "fields": [
+        "title",
+        "summary",
+        "body_md"
+      ],
+      "kind": "literal",
+      "from": "county ownership",
+      "to": "station ownership",
+      "expect": 1,
+      "reason": "같은 문장"
+    },
+    {
+      "id": "b4-open-county-ko",
+      "docs": [
+        "doc.Open-Decisions"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "county 조회",
+      "to": "구 조회",
+      "expect": 1,
+      "reason": "지리 단위 구(District)"
+    },
+    {
+      "id": "b4-open-county-en",
+      "docs": [
+        "doc.Open-Decisions"
+      ],
+      "fields": [
+        "title",
+        "summary",
+        "body_md"
+      ],
+      "kind": "literal",
+      "from": "county lookup",
+      "to": "district lookup",
+      "expect": 1,
+      "reason": "같은 문장"
+    },
+    {
+      "id": "b4-journey-monarch-ko",
+      "docs": [
+        "doc.Online-User-Journey"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "군주나 한재목을",
+      "to": "세력 수장이나 한재목을",
+      "expect": 1,
+      "reason": "고정 본체 후보"
+    },
+    {
+      "id": "b4-journey-monarch-en",
+      "docs": [
+        "doc.Online-User-Journey"
+      ],
+      "fields": [
+        "title",
+        "summary",
+        "body_md"
+      ],
+      "kind": "literal",
+      "from": "Neither the monarch nor Han Jaemok",
+      "to": "Neither a faction leader nor Han Jaemok",
+      "expect": 1,
+      "reason": "같은 문장"
+    },
+    {
+      "id": "b4-issue101-fiefs-en",
+      "docs": [
+        "doc.Issue-101-Ui-Ux-Decisions"
+      ],
+      "fields": [
+        "title",
+        "summary",
+        "body_md"
+      ],
+      "kind": "literal",
+      "from": "diplomacy, fiefs, titles",
+      "to": "diplomacy, stations, titles",
+      "expect": 1,
+      "reason": "같은 문장"
+    },
+    {
+      "id": "b4-main-title-ko",
+      "docs": [
+        "doc.ADR-001",
+        "doc.ADR-002",
+        "doc.ADR-004",
+        "doc.ADR-005",
+        "doc.ADR-006",
+        "doc.ADR-007",
+        "doc.ADR-008",
+        "doc.Campaign-Movement-296",
+        "doc.Narrative-Direction",
+        "doc.owner-approved-batch-d",
+        "doc.owner-approved-d09-offices",
+        "doc.owner-approved-defaults-off-keep",
+        "doc.owner-approved-defaults-on-c",
+        "doc.owner-approved-defaults-on",
+        "doc.owner-approved-mst-01",
+        "doc.owner-approved-unr-01",
+        "doc.pa-01-aging-ability-decay",
+        "doc.pw-01-war-declaration-threshold",
+        "doc.Scenario-Hold-the-Gate",
+        "doc.Station-Interior-Design",
+        "doc.ui-01-campaign-time-control",
+        "doc.Ref-Crusader-Kings-3",
+        "doc.Ref-Mechanism-Index",
+        "doc.Ref-Norland-Triage",
+        "doc.Asset-Pipeline",
+        "doc.Data-Catalog-and-Schema",
+        "doc.Design-Requirements",
+        "doc.Development-Roadmap",
+        "doc.Game-References",
+        "doc.Game-Thesis",
+        "doc.Home",
+        "doc.Issue-101-Ui-Ux-Decisions",
+        "doc.Korean-Terminology-and-Naming",
+        "doc.Online-User-Journey",
+        "doc.Open-Decisions",
+        "doc.Research-Sources",
+        "doc.Ui-Implementation-Pipeline"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "ko-noun",
+      "from": "주작위",
+      "to": "주직함",
+      "expect": 3,
+      "reason": "CK3 primary title"
+    },
+    {
+      "id": "b4-title-domain-ko",
+      "docs": [
+        "doc.ADR-001",
+        "doc.ADR-002",
+        "doc.ADR-004",
+        "doc.ADR-005",
+        "doc.ADR-006",
+        "doc.ADR-007",
+        "doc.ADR-008",
+        "doc.Campaign-Movement-296",
+        "doc.Narrative-Direction",
+        "doc.owner-approved-batch-d",
+        "doc.owner-approved-d09-offices",
+        "doc.owner-approved-defaults-off-keep",
+        "doc.owner-approved-defaults-on-c",
+        "doc.owner-approved-defaults-on",
+        "doc.owner-approved-mst-01",
+        "doc.owner-approved-unr-01",
+        "doc.pa-01-aging-ability-decay",
+        "doc.pw-01-war-declaration-threshold",
+        "doc.Scenario-Hold-the-Gate",
+        "doc.Station-Interior-Design",
+        "doc.ui-01-campaign-time-control",
+        "doc.Ref-Crusader-Kings-3",
+        "doc.Ref-Mechanism-Index",
+        "doc.Ref-Norland-Triage",
+        "doc.Asset-Pipeline",
+        "doc.Data-Catalog-and-Schema",
+        "doc.Design-Requirements",
+        "doc.Development-Roadmap",
+        "doc.Game-References",
+        "doc.Game-Thesis",
+        "doc.Home",
+        "doc.Issue-101-Ui-Ux-Decisions",
+        "doc.Korean-Terminology-and-Naming",
+        "doc.Online-User-Journey",
+        "doc.Open-Decisions",
+        "doc.Research-Sources",
+        "doc.Ui-Implementation-Pipeline"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "ko-noun",
+      "from": "작위령",
+      "to": "직함 영역",
+      "expect": 1,
+      "reason": "작위령 → 직함 영역"
+    },
+    {
+      "id": "b4-title-noun-ko",
+      "docs": [
+        "doc.ADR-001",
+        "doc.ADR-002",
+        "doc.ADR-004",
+        "doc.ADR-005",
+        "doc.ADR-006",
+        "doc.ADR-007",
+        "doc.ADR-008",
+        "doc.Campaign-Movement-296",
+        "doc.Narrative-Direction",
+        "doc.owner-approved-batch-d",
+        "doc.owner-approved-d09-offices",
+        "doc.owner-approved-defaults-off-keep",
+        "doc.owner-approved-defaults-on-c",
+        "doc.owner-approved-defaults-on",
+        "doc.owner-approved-mst-01",
+        "doc.owner-approved-unr-01",
+        "doc.pa-01-aging-ability-decay",
+        "doc.pw-01-war-declaration-threshold",
+        "doc.Scenario-Hold-the-Gate",
+        "doc.Station-Interior-Design",
+        "doc.ui-01-campaign-time-control",
+        "doc.Ref-Crusader-Kings-3",
+        "doc.Ref-Mechanism-Index",
+        "doc.Ref-Norland-Triage",
+        "doc.Asset-Pipeline",
+        "doc.Data-Catalog-and-Schema",
+        "doc.Design-Requirements",
+        "doc.Development-Roadmap",
+        "doc.Game-References",
+        "doc.Game-Thesis",
+        "doc.Home",
+        "doc.Issue-101-Ui-Ux-Decisions",
+        "doc.Korean-Terminology-and-Naming",
+        "doc.Online-User-Journey",
+        "doc.Open-Decisions",
+        "doc.Research-Sources",
+        "doc.Ui-Implementation-Pipeline"
+      ],
+      "fields": [
+        "title_ko",
+        "summary_ko",
+        "body_ko_md"
+      ],
+      "kind": "ko-noun",
+      "from": "(?<!무)작위(?!적)",
+      "to": "직함",
+      "expect": 66,
+      "reason": "작위 → 직함"
+    }
+  ]
+}

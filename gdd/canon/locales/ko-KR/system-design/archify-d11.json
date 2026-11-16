@@ -302,7 +302,7 @@
         [
           {
             "kind": "text",
-            "text": "수여할 하위 작위 — [작위 수여] 기존 작위와 현재 보유자·개정을 확인한다. 수여자의 지위보다 낮은 작위와 해당 국가 구성원 수혜자가 필요하다. (원문: d11.b9.orderedSteps[4])"
+            "text": "수여할 하위 직함 — [직함 수여] 기존 직함과 현재 보유자·개정을 확인한다. 수여자의 지위보다 낮은 직함과 해당 국가 구성원 수혜자가 필요하다. (원문: d11.b9.orderedSteps[4])"
           }
         ],
         [
@@ -314,25 +314,25 @@
         [
           {
             "kind": "text",
-            "text": "동의·생존·의례 — [작위 수여] 수혜자 동의와 살아 있는 적법 인준권자, 필요한 의례·기록·유물 근거를 각각 확인한다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+            "text": "동의·생존·의례 — [직함 수여] 수혜자 동의와 살아 있는 적법 인준권자, 필요한 의례·기록·유물 근거를 각각 확인한다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
           }
         ],
         [
           {
             "kind": "text",
-            "text": "동일 작위 보유자 변경 — [작위 수여] 모든 조건 충족 시 같은 작위가 한 보유 목록에서 빠지고 정확히 한 수혜자 목록에 들어간다. 전체 작위 수와 기관 재산은 보존한다. (원문: d11.b9.commitPoint)"
+            "text": "동일 직함 보유자 변경 — [직함 수여] 모든 조건 충족 시 같은 직함이 한 보유 목록에서 빠지고 정확히 한 수혜자 목록에 들어간다. 전체 직함 수와 기관 재산은 보존한다. (원문: d11.b9.commitPoint)"
           }
         ],
         [
           {
             "kind": "text",
-            "text": "실물 인계 별도 — [작위 수여] 필수 의례 근거가 없으면 법적 수여 불가다. 법적 수여 후 열쇠가 없으면 권리는 보유하되 회수·운영 인계가 미완이다. (원문: d11.b11.stateSheet.custo​dy)"
+            "text": "실물 인계 별도 — [직함 수여] 필수 의례 근거가 없으면 법적 수여 불가다. 법적 수여 후 열쇠가 없으면 권리는 보유하되 회수·운영 인계가 미완이다. (원문: d11.b11.stateSheet.custo​dy)"
           }
         ],
         [
           {
             "kind": "text",
-            "text": "직위 임명 — [임명·위임·회수] 임명은 office 권한만 변경하며 법적 작위 보유자를 바꾸지 않는다. (원문: d11.b11.stateSheet.owner​ship)"
+            "text": "직위 임명 — [임명·위임·회수] 임명은 office 권한만 변경하며 법적 직함 보유자를 바꾸지 않는다. (원문: d11.b11.stateSheet.owner​ship)"
           }
         ],
         [
@@ -1210,7 +1210,7 @@
           "\"Validate all participating revisions before committing. D11 closure model demonstrates one title ledger only; cross-domain transaction implementation belongs to Task48.\""
         ],
         [
-          "운용 — 동일 작위 보유자 변경",
+          "운용 — 동일 직함 보유자 변경",
           "d11.b9.commitPoint",
           "\"All grant/recall guards pass and institution ratification is recorded; same permanent title leaves one holder list and enters exactly one recipient list in one logical commit. Custody is not that commit.\""
         ],

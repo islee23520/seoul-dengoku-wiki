@@ -1,0 +1,182 @@
+{
+  "batch": "gdd-files",
+  "basis": "080 규칙과 같은 용어 정책을 gdd/** 비SQL 파일에 적용한다. 범위 밖: d11-flow.html의 공작위 한도 노드(D11 잔여 계약), ADR-003·지도 구성·역 점령 30 스냅샷(소유자 결정 Slack 1794815698). design-store/**는 생성물(손 편집 금지, design-store/AGENTS.md)이라 제외한다.",
+  "rules": [
+    {
+      "id": "f-d07-own-leader",
+      "file": "gdd/canon/archify/generated/d07-flow.html",
+      "from": "자기 군주",
+      "to": "자기 세력 수장",
+      "expect": 14,
+      "reason": "080 Archify-D07과 같은 D07 충성 대상"
+    },
+    {
+      "id": "f-d10-title",
+      "file": "gdd/canon/archify/generated/d10-flow.html",
+      "from": "작위",
+      "to": "직함",
+      "expect": 23,
+      "reason": "080 Archify-D10과 같은 작위 → 직함"
+    },
+    {
+      "id": "f-d11-grant-req",
+      "file": "gdd/canon/archify/generated/d11-flow.html",
+      "from": "작위 수여 요청",
+      "to": "직함 수여 요청",
+      "expect": 3,
+      "reason": "080 Archify-D11 본문 전환과 같음"
+    },
+    {
+      "id": "f-d11-lower",
+      "file": "gdd/canon/archify/generated/d11-flow.html",
+      "from": "수여할 하위 작위",
+      "to": "수여할 하위 직함",
+      "expect": 8,
+      "reason": "같음"
+    },
+    {
+      "id": "f-d11-same",
+      "file": "gdd/canon/archify/generated/d11-flow.html",
+      "from": "동일 작위 보유자 변경",
+      "to": "동일 직함 보유자 변경",
+      "expect": 8,
+      "reason": "같음"
+    },
+    {
+      "id": "f-cast-family-han",
+      "file": "gdd/snapshots/world-game/lore/name-pools/cast-family-trees.json",
+      "from": "물 계약 가문들이 양평역 계약 회의에서 군주를 뽑고, 한재목은 그 선거에서 수문가의 표를 모아 군주 자리에 앉았다.",
+      "to": "물 계약 가문들이 양평역 계약 회의에서 이사를 뽑고, 한재목은 그 선거에서 수문가의 표를 모아 이사 자리에 앉았다.",
+      "expect": 1,
+      "reason": "한재목의 v4 직함은 자유도시 이사(050·090 person-0001)"
+    },
+    {
+      "id": "f-cast-household-han",
+      "file": "gdd/snapshots/world-game/lore/name-pools/cast-household-relations.json",
+      "from": "\"role\": \"군주의 수문 지휘를 현장에서 집행\"",
+      "to": "\"role\": \"이사 한재목의 수문 지휘를 현장에서 집행\"",
+      "expect": 2,
+      "reason": "같은 인물(K001 한재목)의 v4 직함"
+    },
+    {
+      "id": "f-person-cand-min",
+      "file": "gdd/snapshots/world-game/lore/name-pools/person-id-candidates.json",
+      "from": "\"title\": \"대전 군주\"",
+      "to": "\"title\": \"이일섭의 측근\"",
+      "expect": 1,
+      "reason": "민웅기 v4 직함(050 person-1008, CB 6.1)"
+    },
+    {
+      "id": "f-backfill-king",
+      "file": "gdd/snapshots/world-game/lore/name-pools/cast-backfill-draft.json",
+      "from": "배급 순서를 정하는 자가 서울의 왕을 고르게 한다.",
+      "to": "배급 순서를 정하는 자가 서울의 세력 수장을 고르게 한다.",
+      "expect": 1,
+      "reason": "인물 가치관 문장의 비유 왕 → 세력 수장"
+    },
+    {
+      "id": "f-director-ruler",
+      "file": "gdd/RESEARCH/verification/director-followup-20260928/README.md",
+      "from": "영웅 충성0~100, 군주100,",
+      "to": "영웅 충성0~100, 세력 수장100,",
+      "expect": 1,
+      "reason": "D07 충성 대상"
+    },
+    {
+      "id": "f-pilot-title1",
+      "file": "gdd/RESEARCH/verification/json-canon-alternative-pilot-20260921.md",
+      "from": "「작위와 생업」",
+      "to": "「직함과 생업」",
+      "expect": 1,
+      "reason": "옛 문서 절 제목 인용"
+    },
+    {
+      "id": "f-pilot-title2",
+      "file": "gdd/RESEARCH/verification/json-canon-alternative-pilot-20260921.md",
+      "from": "왜, 작위와 생업, 계승",
+      "to": "왜, 직함과 생업, 계승",
+      "expect": 1,
+      "reason": "같음"
+    },
+    {
+      "id": "f-pilot-map",
+      "file": "gdd/RESEARCH/verification/offices-json-pilot-state-map-20260921.json",
+      "from": "\"작위와 생업\"",
+      "to": "\"직함과 생업\"",
+      "expect": 1,
+      "reason": "같음"
+    },
+    {
+      "id": "f-norland-ko-lord1",
+      "file": "gdd/GAME-REFERENCE/norland-consolidated-research.md",
+      "from": "[관찰] 영주·주민·건물·경제",
+      "to": "[관찰] 가신·주민·건물·경제",
+      "expect": 1,
+      "reason": "Norland lord(휘하 인물) → 가신, 080과 같은 용어"
+    },
+    {
+      "id": "f-norland-ko-lord2",
+      "file": "gdd/GAME-REFERENCE/norland-consolidated-research.md",
+      "from": "네 영주와 전사0명",
+      "to": "네 가신과 전사0명",
+      "expect": 1,
+      "reason": "같음"
+    },
+    {
+      "id": "f-norland-ko-lord3",
+      "file": "gdd/GAME-REFERENCE/norland-consolidated-research.md",
+      "from": "영주관 시종 부재",
+      "to": "가신관 시종 부재",
+      "expect": 1,
+      "reason": "같음"
+    },
+    {
+      "id": "f-norland-ko-king",
+      "file": "gdd/GAME-REFERENCE/norland-consolidated-research.md",
+      "from": "천재 왕의 병력·예산2배",
+      "to": "천재 통치자의 병력·예산2배",
+      "expect": 1,
+      "reason": "Norland king → 통치자"
+    },
+    {
+      "id": "f-norland-en-lords1",
+      "file": "gdd/GAME-REFERENCE/norland-combat.md",
+      "from": "four lords and zero warriors",
+      "to": "four retainers and zero warriors",
+      "expect": 1,
+      "reason": "Norland lord → retainer"
+    },
+    {
+      "id": "f-norland-en-lord2",
+      "file": "gdd/GAME-REFERENCE/norland-combat.md",
+      "from": "A lord commands a squad",
+      "to": "A retainer commands a squad",
+      "expect": 1,
+      "reason": "같음"
+    },
+    {
+      "id": "f-norland-en-lords3",
+      "file": "gdd/GAME-REFERENCE/norland-combat.md",
+      "from": "a commander chosen from the lords",
+      "to": "a commander chosen from the retainers",
+      "expect": 1,
+      "reason": "같음"
+    },
+    {
+      "id": "f-norland-en-king",
+      "file": "gdd/GAME-REFERENCE/norland-combat.md",
+      "from": "A genius king doubles",
+      "to": "A genius ruler doubles",
+      "expect": 1,
+      "reason": "Norland king → ruler"
+    },
+    {
+      "id": "f-values-cast-han",
+      "file": "gdd/snapshots/world-game/lore/name-pools/values-cast.json",
+      "from": "\"name\": \"한재목\",\n      \"title\": \"군주\"",
+      "to": "\"name\": \"한재목\",\n      \"title\": \"이사\"",
+      "expect": 1,
+      "reason": "한재목 v4 직함은 자유도시 이사(050 person-0001)"
+    }
+  ]
+}

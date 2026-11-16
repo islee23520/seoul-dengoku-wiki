@@ -1,0 +1,14 @@
+{
+  "batch": "b2-rules",
+  "basis": "docs/CANON-BIBLE.md 1절 규칙 7·8, 2.6, 5절. 세력을 가로지르는 기계 규칙이므로 중립어(세력 수장·직함·역)를 쓴다. '방해 공작·은밀 공작'은 첩보 작전(sabotage/covert operation)이라 바꾸지 않는다(false_positive).",
+  "rules": [
+    { "id": "b2-six-jiri-ko", "docs": ["doc.Power-and-Institutions"], "fields": ["body_ko_md"], "kind": "literal", "from": "6지리왕국은 비보유자이며 제한 통지권을 승인권으로 확대하지 않는다.", "to": "옛 지리 국가의 칭호는 v4에서 쓰지 않는다. 세력과 계급은 3.0절을 따른다.", "expect": 1, "reason": "폐지 정치체 칭호. canon JSON(power-and-institutions.json)의 v4 문장과 같은 뜻으로 맞춘다" },
+    { "id": "b2-six-jiri-en", "docs": ["doc.Power-and-Institutions"], "fields": ["body_md"], "kind": "literal", "from": "The Six-Jiri Kingdom is a non-holder, and its limited notification right is not expanded into an approval right.", "to": "Titles of the old geographic states are not used in v4; factions and ranks follow section 3.0.", "expect": 1, "reason": "같은 문장 영어" },
+    { "id": "b2-ruler-war-ko", "docs": ["doc.Rules-FactionsWarfare"], "fields": ["body_ko_md"], "kind": "literal", "from": "군주 사이 전쟁", "to": "세력 수장 사이 전쟁", "expect": 1, "reason": "전쟁 점수 규칙은 세 세력 공통" },
+    { "id": "b2-ruler-war-en", "docs": ["doc.Rules-FactionsWarfare"], "fields": ["body_md"], "kind": "literal", "from": "In a war between lords,", "to": "In a war between faction leaders,", "expect": 1, "reason": "같은 문장 영어" },
+    { "id": "b2-ruler-order-ko", "docs": ["doc.Rules-FactionsWarfare"], "fields": ["body_ko_md"], "kind": "literal", "from": "군주·직위권자의 명령", "to": "세력 수장·직위권자의 명령", "expect": 1, "reason": "기록 조작 명령권자" },
+    { "id": "b2-fiefs-en", "docs": ["doc.Rules-FactionsWarfare"], "fields": ["body_md"], "kind": "literal", "from": "unrecovered fiefs, disputes, and occupiers", "to": "unrecovered stations, disputes, and occupiers", "expect": 1, "reason": "v4 최소 영토 단위는 역(CB 1절 규칙 8)" },
+    { "id": "b2-title-domain-ko", "docs": ["doc.Campaign-Progression", "doc.Rules-FactionsWarfare", "doc.Power-and-Institutions", "doc.Economy-and-Logistics"], "fields": ["body_ko_md"], "kind": "ko-noun", "from": "작위령", "to": "직함 영역", "expect": 2, "reason": "작위령(칭호에 딸린 영역) → 직함 영역" },
+    { "id": "b2-title-noun-ko", "docs": ["doc.Campaign-Progression", "doc.Rules-FactionsWarfare", "doc.Power-and-Institutions", "doc.Economy-and-Logistics"], "fields": ["title_ko", "summary_ko", "body_ko_md"], "kind": "ko-noun", "from": "(?<![무가-힣])작위(?!적)", "to": "직함", "expect": 34, "reason": "작위 → 직함(직위=공직 권한과 계속 구분). 조사는 받침에 맞춘다" }
+  ]
+}
