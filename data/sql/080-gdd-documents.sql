@@ -8737,7 +8737,7 @@ flowchart LR
 
 ## 생활·영지·인물 정치를 잇는 네 축
 
-생활·관계·생계·생산·물류·혼인·외교·기술 전승·동원·습격을 전투와 이동에 연결하는 것이 설계 범위다(2026-10-02 결정 15). 플레이어는 국가가 아니라 한 인물이며 생업·관직·인준으로 행동 권한을 얻는다. 생활 결핍은 노동·기분을 바꾸고 생산·보급의 결과는 충성·전쟁·계승으로 이어진다. 부상·구금은 다시 노동·관계에 남는다. 아래는 반영 범위와 미정 입력을 구분한 계획이며 게임 구현 완료가 아니다. 전략맵의 시점은 지도 목록에서 선택한 본체 인물의 위치와 알려진 정보에 따른다. 기본 표시층은 세력의 정치영역이며 외교·영지·작위·관직·정치 상황·전투 상황을 보여 준다. 지하철·철도는 선택 표시층이고 기본값은 꺼짐이다. 정착지 화면은 본체가 실제로 있는 현재 정착지이며 현장 직접 조작은 본체만 대상으로 한다. 다른 인물은 자신의 목표·생업·일정에 따라 행동하고 대화·명령의 대상이 된다. 소속 세력·관계 간선·물리적 소재지는 별개다. 목록은 실제 인물·세력·관계 원장에서 읽고, 소속이나 관계만으로 동거·지휘권을 부여하지 않는다. 현재 위치가 없으면 미확인으로 남기고 시나리오 배치를 개막 위치로 확정하지 않는다.
+생활·관계·생계·생산·물류·혼인·외교·기술 전승·동원·습격을 전투와 이동에 연결하는 것이 설계 범위다(2026-10-02 결정 15). 플레이어는 국가가 아니라 한 인물이며 생업·관직·인준으로 행동 권한을 얻는다. 생활 결핍은 노동·기분을 바꾸고 생산·보급의 결과는 충성·전쟁·계승으로 이어진다. 부상·구금은 다시 노동·관계에 남는다. 아래는 반영 범위와 미정 입력을 구분한 계획이며 게임 구현 완료가 아니다. 전략맵의 시점은 지도 목록에서 선택한 본체 인물의 위치와 알려진 정보에 따른다. 기본 표시층은 세력의 정치영역이며 외교·영지·직함·관직·정치 상황·전투 상황을 보여 준다. 지하철·철도는 선택 표시층이고 기본값은 꺼짐이다. 정착지 화면은 본체가 실제로 있는 현재 정착지이며 현장 직접 조작은 본체만 대상으로 한다. 다른 인물은 자신의 목표·생업·일정에 따라 행동하고 대화·명령의 대상이 된다. 소속 세력·관계 간선·물리적 소재지는 별개다. 목록은 실제 인물·세력·관계 원장에서 읽고, 소속이나 관계만으로 동거·지휘권을 부여하지 않는다. 현재 위치가 없으면 미확인으로 남기고 시나리오 배치를 개막 위치로 확정하지 않는다.
 
 | 축 | 기존 계약과 반영 범위 | 아직 정하지 않은 입력 | 반영 위치 |
 | --- | --- | --- | --- |
@@ -8769,19 +8769,19 @@ flowchart LR
 | 시스템 | 확정 계약 | 상태·입출력 경계 |
 | --- | --- | --- |
 | 시작·시점 | 타이틀→메인 메뉴→지도 기반 개막 인물 선택→선택 인물 시점 시작. 각 화면은 배타적이다. | 선택 자격·시작 위치는 원천과 승인 상태를 검사한다. 본체 ID는 시작 후 대상 선택으로 바뀌지 않는다. 세계 시간·게임 HUD는 게임 시작 뒤 활성화한다. |
-| 전략과 지도 | 전략맵은 외교·영지·작위·정세·전투 상황을 읽는다. 정치·작위·지상·지하 모드를 분리한다. | 국가명·국가색은 공통 지배 표시다. 작위·지표·역 통제는 별도 데이터층이며 지배색이 다른 층의 권리를 생성하지 않는다. 행정 경계와 영토 경계를 구분한다. |
+| 전략과 지도 | 전략맵은 외교·영지·직함·정세·전투 상황을 읽는다. 정치·직함·지상·지하 모드를 분리한다. | 국가명·국가색은 공통 지배 표시다. 직함·지표·역 통제는 별도 데이터층이며 지배색이 다른 층의 권리를 생성하지 않는다. 행정 경계와 영토 경계를 구분한다. |
 | 지하 연결 | 실제 다음 역 인접 연결을 사용하고 급행의 중간역 건너뛰기 운행을 이동 간선으로 만들지 않는다. | 운행 계통·물리 연결·통행 상태를 분리한다. 미확인 연결은 표시·이동을 허용하지 않고 원천 ID·판본·검증 상태를 남긴다. |
 | 인물과 장소 | 소속·관계·현재 소재지는 서로 다른 사실이다. 같은 장소의 인물만 정착지에 나타난다. | 세력 구성원·관계인은 원격 조회할 수 있으나 조회·선택이 이동·동거·지휘권을 뜻하지 않는다. 소재지 미기록은 미확인으로 남긴다. |
 | 직접 조작·명령 | 본체 한 인물만 직접 조작한다. NPC는 목표·욕구·업무·휴식 일정을 따라 자율 행동한다. | 대상 선택 ID와 본체 ID를 분리한다. 명령·대화는 행위자 권한·관계 유형·방향·장소·거리·현재 일정·거절 원인을 검사한다. |
 | 전투 참여 | 조우 사건이 전투를 만든다. 본체 실제 참가전만 전장을 표시하며 정착지 화면과 양립하지 않는다. | 본체 미참가전은 같은 개인 규칙의 자동 진행이며 전략맵에서 상황·결과만 본다. 참가자 위치·인력 예약·결과 ID를 검사하고 한 번만 정산한다. |
 | 상황 전환 | 정착지·참가 전투는 하나의 상황 진입 항목으로 전환한다. | 평상시 현재 정착지, 본체 참가 중 전투, 본체 이동 중 진입 불가. 원격 비참가전은 본체 상황 진입 항목을 전투로 바꾸지 않는다. |
 | 관계·표현 | 인물 선택은 지도에 고정된 초상 카드와 선택 상세, 관계·세력은 본체 중심 원장 노드·방향 간선으로 보여 준다. | 카드 팬·줌·화면밖 제외는 지도 좌표를 보존한다. 관계를 추정 생성하지 않는다. 본체 현지 표식은 등록 초상을 원형 마스킹하고 미등록은 미등록으로 표시한다. |
-| 작위 데이터 | v4 역장 계층(역장·본부장·국장/주교/조합장·청장/추기경/이사)별 산하 역·보유자·임명권자 입력 장소를 마련하고 위키 확정 뒤 입력한다. | 국가나 행정구역을 임의 작위령에 배정하지 않는다. 빈 원장·참조 오류·상위 순환·중복 배정을 검사하고 실효 지배와 작위 권리를 별도로 표시한다. |
+| 직함 데이터 | v4 역장 계층(역장·본부장·국장/주교/조합장·청장/추기경/이사)별 산하 역·보유자·임명권자 입력 장소를 마련하고 위키 확정 뒤 입력한다. | 국가나 행정구역을 임의 직함 영역에 배정하지 않는다. 빈 원장·참조 오류·상위 순환·중복 배정을 검사하고 실효 지배와 직함 권리를 별도로 표시한다. |
 
 - 타국 관계인 선택→본체 ID와 현재 장소 유지, 명령 권한 없는 계약 상대에게 지휘 명령 거절.
 - 본체 여행 중 정착지 진입 거절→도착 뒤 새 소재지의 인물만 표시. 구성원 조회가 인구·노동 예약을 늘리지 않음.
 - 본체 미참가전 전장 진입 거절·전략 자동 정산, 본체 참가전 정착지 진입 거절·결과 후 복귀·중복 결과 거절.
-- 작위 원장 공란·미확인 역 연결·미등록 초상·미기록 소재지를 다른 자료로 임의 보충하지 않음. 검토 사례는 실행 통과 증거와 별도 기록.
+- 직함 원장 공란·미확인 역 연결·미등록 초상·미기록 소재지를 다른 자료로 임의 보충하지 않음. 검토 사례는 실행 통과 증거와 별도 기록.
 
 ## 게임플레이 미정 항목의 결정 계약
 
@@ -8795,7 +8795,7 @@ flowchart LR
 | GP-04 생활·인구·노동 | 개인화 범위·소비·임금/배급과 부족이 노동·기분·거점에 전이되는 정산 순서는? | 제안: 집계와 개인 명부 사이 이동을 원인 사건으로 보존하고 한 인력 한 예약을 검사한다. 부족의 노동 손실은 한 정산 경계에서만 적용한다. | 입력 인구/직능/예약/배급/욕구 → 가용노동·충족·불만·복귀. 소집/치료/화물 중복·물0 식량충분·배급과 구매 중복 사례. | Economy; Strongholds; 주민 생활 |
 | GP-05 생산·시설·건설 | 단계별 실제 소비 건설과 수요·예약 생산은 확정됐다. 자원·시설 목록과 단계별 비용·기간·해체 회수는? | 확정: 자격 노동·도구·재료가 갖춰진 단계만 진행, 중단 시 진척·미사용 자재 보존, 소비 재료 자동 환급 없음. 경제 상세 조항을 따른다. | 입력 주문/시설/자원/권한 → 예약·부분완료·완료·중단. 수요0·전력없음·시설점령·공사중양도 사례. | Economy; Strongholds; 데이터 목록 |
 | GP-06 화물·경제 마감 | 마감 이하의 검증 도착분 포함은 확정됐다. 분할 화물·봉쇄·실제 재고 소유·마감 주기는? | 확정: 동일 시각 도착 검증 뒤 예약·생산·소비, 인과·수락 순서 및 중복 도착 차단. 경제 판정 순서를 유지한다. | 입력 발송/이동/도착/마감 → 재고소유·소비가능·미도착. 동일시각 도착/봉쇄·분할화물·재전송·중복도착 사례. | Economy; Save-and-Determinism |
-| GP-07 영토·작위·인준 | 실효 지배·인준과 작위 권리 별도 원장은 확정됐다. 취득·통합 비용/기간 및 미배정 작위 제도는? | 확정: 점령·양도와 법적 권리·협력·운영은 다른 상태다. 작위는 위키 확정 입력을 기다리고 주장·명분·인준은 세력·전쟁 상세 조항을 따른다. | 입력 지역/작위/행위자/계약/인준 → 취득·거절·분쟁·권리변경. 지배국≠작위보유·공석·외부영토·시설만취득 사례. | Strongholds; Factions RWARFARE-38; 작위 데이터 |
+| GP-07 영토·직함·인준 | 실효 지배·인준과 직함 권리 별도 원장은 확정됐다. 취득·통합 비용/기간 및 미배정 직함 제도는? | 확정: 점령·양도와 법적 권리·협력·운영은 다른 상태다. 직함은 위키 확정 입력을 기다리고 주장·명분·인준은 세력·전쟁 상세 조항을 따른다. | 입력 지역/직함/행위자/계약/인준 → 취득·거절·분쟁·권리변경. 지배국≠직함보유·공석·외부영토·시설만취득 사례. | Strongholds; Factions RWARFARE-38; 직함 데이터 |
 | GP-08 가변 정원·동원 | 정원 감소의 초과 인원 보존·추가 모집/합류 제한은 확정됐다. 세 입력과 산식·재편 비용은? | 초과 유지·재편 요구는 확정. 현재 인물·장비·예약을 보존하고 실제 분리·지휘관 재배정 사건으로 변경한다. 정원 산식과 추가 페널티는 미정이다. | 입력 지휘관/수준/모집후보/장비 → 정원·실편성·예약. 임시분대장·정원감소·부상·분리합류·영웅별도 사례. | Hero-Squads; Battle; Economy |
 | GP-09 혼인·계승 | 국가별 제도·효과별 종료와 혼인 주장 경로 구분은 확정됐다. 동의·인준·재산·계승 자격의 상세는? | 확정: 혼인 자체 주장 자동 생성 없음, 배우자 주장·자녀 상속·계승과 별도 담당자 조작. 효과별 유지·종료·재인준은 세력·전쟁 조항을 따른다. | 입력 당사자/동의/제도/인준/효과 → 성립·거절·정치변경. 사망·구금·직위상실·다국가제도충돌·후계공석 사례. | Factions; Hero-Squads 계승; WIKI 가족 사실 |
 | GP-10 기술·교육·복구 | 기술별 실제 교육은 확정됐다. 기술별 요구·기간·비용·성과·복구 조건은? | 교사 숙련·기록·도구·실습 장소·학습자 요구 여부를 기술별로 정의하고 진척을 쌓는다. 기록만으로 해금하거나 모든 기술에 같은 필수 항목을 강제하지 않는다. | 입력 기술/숙련자/증거/교육자/도구 → 수행가능·교육·복구. 기록만존재·직업만존재·숙련자포획·시설이동 사례. | 경제 직능; 데이터 기술; WIKI 기술 계보 |
@@ -8804,7 +8804,7 @@ flowchart LR
 | GP-13 외교·전쟁·강화·소멸 | 명분 필수·주장 조작·전쟁 점수·종결 구조는 확정됐다. 명분 목록/비용·휴전·배상·상위 계약·잔존/소멸은? | 세력·전쟁 상세 조항의 명분별 요구 관철·백지 강화·항복·무효 종료를 따른다. 종결 권리 이전과 주민 통합을 분리하며 영토 없는 조직의 소멸 조건은 미정이다. | 입력 제안자/대상/계약/권한/거점/후계 → 요청·수락·실행·실패·잔존. 강화중조우·불가능약속·수장사망이나거점보존·영토없는조직 사례. | Factions; Warfare; Campaign-Progression |
 | GP-14 관측·저장·세션 | 실시간 활동·원격 정보·오프라인 인물·마지막 참가자 이탈의 저장/노출 경계는? | 제안: 원인 사건·목적별 RNG·판본·체크포인트와 개인/집계/전투 예약을 저장한다. 본체 부재의 대행권한과 공개 정보 범위를 ADR-008에 맞춘다. | 입력 참가자/권한/관측/저장판본 → 대행·세계정지·복구·오류. 마지막이탈·진행전투·미호환세이브·동일명령재생 사례. | Save-and-Determinism; ADR-008; 데이터 원장 |
 
-결정 순서: GP-01·03·04·14의 인물·권한·보존·저장 경계 → GP-02·05·06의 이동·생산·물류 → GP-07·08·09·10의 영토·작위·동원·혼인·교육 → GP-11·12·13의 판정 실행·조우·전쟁 종료. 각 항목은 결정 근거·판본·담당 정본·실행/문서 검증 결과를 따로 기록한다. 계승·관측·정산처럼 여러 시스템이 공유하는 상태는 단일 소유자를 두고 다른 문서에서 참조한다.
+결정 순서: GP-01·03·04·14의 인물·권한·보존·저장 경계 → GP-02·05·06의 이동·생산·물류 → GP-07·08·09·10의 영토·직함·동원·혼인·교육 → GP-11·12·13의 판정 실행·조우·전쟁 종료. 각 항목은 결정 근거·판본·담당 정본·실행/문서 검증 결과를 따로 기록한다. 계승·관측·정산처럼 여러 시스템이 공유하는 상태는 단일 소유자를 두고 다른 문서에서 참조한다.
 
 ## 인물·권한·노동의 상태 계약
 
@@ -8827,7 +8827,7 @@ flowchart LR
 
 ## 누적 결정과 남은 전투 제안
 
-이동은 거리·수단·상태, 현재 정보는 관측·보고, 탐사 보상은 정보·기회로 확정됐다. 건설은 단계별 실제 소비, 생산은 수요·예약 주문, 화물은 마감 시각 이하 검증 도착분을 포함한다. 실효 지배·인준과 작위 권리를 분리하며 정원 감소 때 초과 인원을 보존한다. 국가별 혼인과 효과별 종료, 기술별 교육, 배우자 주장·자녀 상속·계승 및 권한 있는 담당자의 별도 주장 조작, 모든 전쟁의 명분 필요를 적용한다. 구체 계수·시간·비용과 미배정 제도/작위는 미정이다.
+이동은 거리·수단·상태, 현재 정보는 관측·보고, 탐사 보상은 정보·기회로 확정됐다. 건설은 단계별 실제 소비, 생산은 수요·예약 주문, 화물은 마감 시각 이하 검증 도착분을 포함한다. 실효 지배·인준과 직함 권리를 분리하며 정원 감소 때 초과 인원을 보존한다. 국가별 혼인과 효과별 종료, 기술별 교육, 배우자 주장·자녀 상속·계승 및 권한 있는 담당자의 별도 주장 조작, 모든 전쟁의 명분 필요를 적용한다. 구체 계수·시간·비용과 미배정 제도/직함은 미정이다.
 
 | 미응답 항목 | 설계 제안 — 확정 아님 | 유지할 승인 경계 |
 | --- | --- | --- |
@@ -9091,7 +9091,7 @@ Product Decisions 13 (individual-check combat), 14 (time-based strategic movemen
 
 ## 4.3 자산·채무·상속·인도
 
-서울 사실: 정착지는 재산이지 신규 작위가 아니다(https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Foundation/Presentation/SeoulCampaignSession.cs#L68). 자산 사용·인도는 SP-1.0.0의 자격→예약→실행→영수증 경계로 읽는다. CK3 참조: mechanics-05-economy.md:100-156은 보유 유형과 수정자·통제·발전도 재료의 분리를 보인다. 실제 월 정산 순서·반올림은 미노출이다. 제품 권한: 서울 채무·상속·생산 수치의 확장 정책은 제도 미정이다.
+서울 사실: 정착지는 재산이지 신규 직함이 아니다(https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Foundation/Presentation/SeoulCampaignSession.cs#L68). 자산 사용·인도는 SP-1.0.0의 자격→예약→실행→영수증 경계로 읽는다. CK3 참조: mechanics-05-economy.md:100-156은 보유 유형과 수정자·통제·발전도 재료의 분리를 보인다. 실제 월 정산 순서·반올림은 미노출이다. 제품 권한: 서울 채무·상속·생산 수치의 확장 정책은 제도 미정이다.
 
 ## 4.4 물류·고립·과확장
 
@@ -9771,7 +9771,7 @@ v4 canon (owner decision, 2026-11-16): Seoul has three factions, the Government,
 
 ## 3.1 State, Institutions, and Legitimacy
 
-Seoul fact: State formation refers to the owner-confirmed contract in canon/contracts/state-formation-contract.json. It does not redefine independent acquisition → state transition, prior enrollment, personal holdings, or the distinction of territory. The tier, position, occupation, and command authority of SP-1.0.0 are each separate authorities. The Six-Jiri Kingdom is a non-holder, and its limited notification right is not expanded into an approval right.
+Seoul fact: State formation refers to the owner-confirmed contract in canon/contracts/state-formation-contract.json. It does not redefine independent acquisition → state transition, prior enrollment, personal holdings, or the distinction of territory. The tier, position, occupation, and command authority of SP-1.0.0 are each separate authorities. Titles of the old geographic states are not used in v4; factions and ranks follow section 3.0.
 
 ## 3.2 Titles, Rights, Justification, and Ratification
 
@@ -9821,7 +9821,7 @@ CK3 reference only: depth-verification-20261027.md:1871-1875 confirms, for the c
 
 ## 3.0 세 세력과 역장 계층 (v4 정본)
 
-v4 정본(소유자 확정 2026-11-16): 서울의 세력은 정부, 자유도시들, 아크 셋이다. 이 절은 아래 3.1~3.6절, SP-1.0.0과 다른 GDD 문서의 옛 국가·작위 서술보다 우선한다. 지도자는 정부 대통령 김연규, 자유도시들 이사회장 이일섭, 아크 교주 고예진이다. 세 세력은 같은 계급 골격을 쓰고, 계급은 산하에 둔 역장 수로 정한다. ''역''은 지하철역과 그 위 지상 성채 영역을 함께 이른다.
+v4 정본(소유자 확정 2026-11-16): 서울의 세력은 정부, 자유도시들, 아크 셋이다. 이 절은 아래 3.1~3.6절, SP-1.0.0과 다른 GDD 문서의 옛 국가·직함 서술보다 우선한다. 지도자는 정부 대통령 김연규, 자유도시들 이사회장 이일섭, 아크 교주 고예진이다. 세 세력은 같은 계급 골격을 쓰고, 계급은 산하에 둔 역장 수로 정한다. ''역''은 지하철역과 그 위 지상 성채 영역을 함께 이른다.
 
 | 산하 역장 수 | 정부 | 아크 | 자유도시 |
 | --- | --- | --- | --- |
@@ -9865,11 +9865,11 @@ v4 정본(소유자 확정 2026-11-16): 서울의 세력은 정부, 자유도시
 
 ## 3.1 국가·기관·정통성
 
-서울 사실: 국가 성립은 canon/contracts/state-formation-contract.json의 소유자 확정 계약을 참조한다. 독립 취득→국가 전이·사전 가입·개인 보유와 영토 구분을 재정의하지 않는다. SP-1.0.0의 티어·직위·직업·지휘권은 각각 다른 권한이다. 6지리왕국은 비보유자이며 제한 통지권을 승인권으로 확대하지 않는다.
+서울 사실: 국가 성립은 canon/contracts/state-formation-contract.json의 소유자 확정 계약을 참조한다. 독립 취득→국가 전이·사전 가입·개인 보유와 영토 구분을 재정의하지 않는다. SP-1.0.0의 티어·직위·직업·지휘권은 각각 다른 권한이다. 옛 지리 국가의 칭호는 v4에서 쓰지 않는다. 세력과 계급은 3.0절을 따른다.
 
-## 3.2 작위·권리·명분·인준
+## 3.2 직함·권리·명분·인준
 
-서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Foundation/Presentation/SeoulCampaignSession.cs#L68 의 정착지는 재산이며 신규 작위 배분이 아니다. 인준·지지 및 권한 자격은 SP-1.0.0을 따른다. CK3 참조: mechanics-06-vassals-court-council.md:11-95 및 depth-02-power-structures.md:178-206의 계약그룹·단계 트리는 권리 표현의 참고다. 정정된 정적 참조 — depth-verification-20261027.md:1855-1900 PASS 범위에 한정; 씨족 배수·최종 세율 요약은 검증 불일치로 채택하지 않는다.
+서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Foundation/Presentation/SeoulCampaignSession.cs#L68 의 정착지는 재산이며 신규 직함 배분이 아니다. 인준·지지 및 권한 자격은 SP-1.0.0을 따른다. CK3 참조: mechanics-06-vassals-court-council.md:11-95 및 depth-02-power-structures.md:178-206의 계약그룹·단계 트리는 권리 표현의 참고다. 정정된 정적 참조 — depth-verification-20261027.md:1855-1900 PASS 범위에 한정; 씨족 배수·최종 세율 요약은 검증 불일치로 채택하지 않는다.
 
 ## 3.3 수여·위임·회수·봉신 계약
 
@@ -11768,7 +11768,7 @@ Defection and capture of doctors and officers are open means of filling the gaps
 
 ## Title Rights, Marriage Claims, and Casus Belli
 
-Effective control and legal ratification are separated. Occupation and cession events change on-the-ground control, but civilian cooperation, administration, stabilization, integration, and ratification are separate stages. The ledger of title holdings, rights, obligations, and superior contracts is independent of the ledger of effective control, and unrecovered fiefs, disputes, and occupiers are displayed together. A transfer of rights at the end of a war does not mean that civilian cooperation and facility recovery are complete.
+Effective control and legal ratification are separated. Occupation and cession events change on-the-ground control, but civilian cooperation, administration, stabilization, integration, and ratification are separate stages. The ledger of title holdings, rights, obligations, and superior contracts is independent of the ledger of effective control, and unrecovered stations, disputes, and occupiers are displayed together. A transfer of rights at the end of a war does not mean that civilian cooperation and facility recovery are complete.
 
 Marriage applies each state''s political, property, and succession institutions. The consent and ratification of the parties and the attribution of effects are recorded in the event ledger. Marriage-claim paths are divided into using the spouse''s existing claim, inheritance of a claim by children, and fabrication of a claim separate from succession rights. Marriage alone does not automatically grant a new claim or territory. Upon death, imprisonment, or loss of office, contracts are checked by alliance, property, ratification, and succession effects and sorted into maintained, terminated, or re-ratified; they are not terminated all at once.
 
@@ -11785,7 +11785,7 @@ Every war requires a casus belli. Before a declaration of war, fix the actor''s 
 | Item | War Progression Rules | Consistency Boundaries |
 | --- | --- | --- |
 | Score | Attack and defense scores are opposite values from -100 to +100. They change through battles, occupation, key prisoners, and control of casus belli goals. | Tactical victory and defeat are separated from war termination. Score gains are applied once per war or event ID. |
-| Battle and Occupation | In a war between lords, the score earned from battles is capped at 50. Occupation contribution is calculated based on the scope and size of the strongholds the defender holds. | A stronghold''s inclusion scope, denominator, and partial occupation are settled with actual approved data. A faction is not eliminated on battle results alone just because it has no full territory. |
+| Battle and Occupation | In a war between faction leaders, the score earned from battles is capped at 50. Occupation contribution is calculated based on the scope and size of the strongholds the defender holds. | A stronghold''s inclusion scope, denominator, and partial occupation are settled with actual approved data. A faction is not eliminated on battle results alone just because it has no full territory. |
 | Objective Control | While full control of the casus belli objective is maintained, time-accumulated score is earned; if the opponent recovers part of it, the accumulation condition is checked again. Duration during which the attacker has not secured the objective counts toward the defending side. | The period and growth rate linking this to Seoul''s world time and economic cycle are undecided. The objective''s title and effective control are kept separate. |
 | Key Prisoners | Capturing the opposing leader +100, primary heir +50, second heir +25, third heir +10, capital occupation +10. | Applies only when the result of an individual detention in battle corresponds to the actual commander, heir, or capital of that war. Duplicates of the same person or the same event are prohibited. |
 | Termination | At +30, a white peace may be requested; at +100, demands are enforced; at -100, the losing side surrenders. Voluntary surrender is possible, and the outcome for each casus belli is applied. | A white peace is a request, not an unconditional acceptance. The institutional counterpart of the acceptance conditions and the peace-acceptance modifier is undecided. |
@@ -12046,10 +12046,10 @@ SP-1.0.0: Every character may hold casus belli and title-right instances, but ho
 | 키 | 정치 효과 |
 | --- | --- |
 | `west-sluice` | 봉신에게 물 할당과 헌납례를 조항으로 요구하고 지정 유언에 이행 기록을 붙임 |
-| `center-record` | 작위 수여에 기록 인준과 유물 열람이 없으면 권역 전체에 무효 |
+| `center-record` | 직함 수여에 기록 인준과 유물 열람이 없으면 권역 전체에 무효 |
 | `north-refuge` | 강제복무 조항이 있는 봉신을 거부하고 양자·신도가 혈족보다 앞설 수 있음 |
-| `east-caravan` | 보호 명분으로 하위 작위 회수가 열리기 쉽고 `plot` 임계가 낮아짐 |
-| `southeast-ration` | 작위보다 조정권이 후계를 가름하고 소집 조항을 거의 안 받음 |
+| `east-caravan` | 보호 명분으로 하위 직함 회수가 열리기 쉽고 `plot` 임계가 낮아짐 |
+| `southeast-ration` | 직함보다 조정권이 후계를 가름하고 소집 조항을 거의 안 받음 |
 
 ### RWARFARE-42 충성
 
@@ -12107,10 +12107,10 @@ SP-1.0.0: Every character may hold casus belli and title-right instances, but ho
 - 국가에 고정 성격, 영원한 동맹, 배신 확률을 두지 말 것
 - 경건 슬라이더나 정통성을 직접 올리는 명령을 두지 말 것(충성은 RWARFARE-44의 보상·위협으로 바꿀 수 있다)
 - 혈통만의 왕조나 무명 지도자 자동 생성을 두지 말 것
-- 영토만으로 작위를 인준하거나 유물 없는 통합을 완성으로 보지 말 것
+- 영토만으로 직함을 인준하거나 유물 없는 통합을 완성으로 보지 말 것
 - 신앙 칸과 의례 달력 없는 봉신 계약을 성립시키지 말 것
 - 옛 국가 제도의 부활을 승리 결말로 두지 말 것
-- 서울 밖 고유 신앙명과 작위명을 그대로 옮기지 말 것
+- 서울 밖 고유 신앙명과 직함명을 그대로 옮기지 말 것
 - 문화 키를 국가 ID로 바꿔 쓰지 말 것
 - 병과 관습으로 전투 규칙을 고치지 말 것
 - 상인 생업자에게 소집을 강제하지 말 것
@@ -12125,34 +12125,34 @@ SP-1.0.0: Every character may hold casus belli and title-right instances, but ho
 - 계약·잠긴 표기는 두 원문에 없었다. 구현 상수가 생기면 그 값을 우선한다.
 - 검산 고정: Rel 0.53. 압력 73. 압박증가 6. 피로계수 0.8. 패주손실 32.
 
-## 작위 권리·혼인 주장·전쟁 명분
+## 직함 권리·혼인 주장·전쟁 명분
 
-실효 지배와 법적 인준을 분리한다. 점령·양도 사건은 현장 통제를 바꾸지만 주민 협력·운영·안정화·통합과 인준은 별도 단계다. 작위 보유·권리·의무·상위 계약 원장과 실효 지배 원장은 독립하며 미회복 영지·분쟁·점유자를 함께 표시한다. 전쟁 종결의 권리 이전은 주민 협력과 시설 복구 완료를 뜻하지 않는다.
+실효 지배와 법적 인준을 분리한다. 점령·양도 사건은 현장 통제를 바꾸지만 주민 협력·운영·안정화·통합과 인준은 별도 단계다. 직함 보유·권리·의무·상위 계약 원장과 실효 지배 원장은 독립하며 미회복 영지·분쟁·점유자를 함께 표시한다. 전쟁 종결의 권리 이전은 주민 협력과 시설 복구 완료를 뜻하지 않는다.
 
 혼인은 국가별 정치·재산·계승 제도를 적용한다. 당사자 동의·인준과 효과 귀속을 사건 원장에 남긴다. 혼인 주장 경로는 배우자의 기존 주장 활용, 자녀의 주장 상속, 계승권과 별도 주장 조작으로 구분한다. 혼인 성립만으로 새 주장이나 영토를 자동 지급하지 않는다. 사망·구금·관직 상실 때는 동맹·재산·인준·후계 효과별 계약을 검사해 유지·종료·재인준을 나누며 일괄 종료하지 않는다.
 
-작위령의 주장을 근거로 권리 회복을 요구할 수 있고 주장은 시간이 걸리는 조작으로 구성할 수 있다. 조작은 군주·직위권자의 명령을 받은 권한 있는 기록·공증·계보 담당자가 수행한다. 접근 가능한 기록·계보·인준 경로·기간·비용·발각 위험을 검사한다. 근거 수집/작성→주장 구성→효력 인정/거절을 분리하고 조작 완료를 곧 점유로 취급하지 않는다. 무관직 본체의 직접 조작 경로는 채택하지 않는다.
+직함 영역의 주장을 근거로 권리 회복을 요구할 수 있고 주장은 시간이 걸리는 조작으로 구성할 수 있다. 조작은 세력 수장·직위권자의 명령을 받은 권한 있는 기록·공증·계보 담당자가 수행한다. 접근 가능한 기록·계보·인준 경로·기간·비용·발각 위험을 검사한다. 근거 수집/작성→주장 구성→효력 인정/거절을 분리하고 조작 완료를 곧 점유로 취급하지 않는다. 무관직 본체의 직접 조작 경로는 채택하지 않는다.
 
 | 주장 상태 | 기본 처리 | 남은 제도 경계 |
 | --- | --- | --- |
-| 계승 중 잠재 주장 | 현재 보유자의 생존 중 정해진 계승 자격에 귀속된다. | 국가별 자녀 자격·혈통 외 계승·관직 후계와 작위 계승을 연결해야 한다. |
+| 계승 중 잠재 주장 | 현재 보유자의 생존 중 정해진 계승 자격에 귀속된다. | 국가별 자녀 자격·혈통 외 계승·관직 후계와 직함 계승을 연결해야 한다. |
 | 관철된 주장 | 정당한 계승·권리 회복의 근거이며, 보유자가 사망하면 자녀에게 미관철 주장으로 상속되는 경로를 둔다. | 국가별 인준·혼인·계승 예외와 개인 권리 승계 자격은 별도 명시한다. |
 | 미관철 주장 | 별도 상속하지 않으며 주장 전쟁이 백지 강화로 끝나면 관철된 주장 상태로 바뀐다. | 주장 소멸/자격 상실과 진행 전쟁 무효 조건을 명분별로 검사한다. |
 
-모든 전쟁에는 명분이 필요하다. 선전포고 전에 행위자 권한·상대·대상 작위/영역·수혜자·명분 자격·비용·전쟁 목표와 승리·백지 강화·항복·무효 종료 효과를 확정한다. 주장을 다른 인물을 위해 관철하면 새 보유자와 상위 계약을 검사하며 공격자에게 모든 영토를 자동 귀속하지 않는다. 목표 밖의 점령은 명분의 권리 이전 범위를 확대하지 않는다. 세부 명분 목록·국가별 요구 비용·상위 계약은 아직 미정이다.
+모든 전쟁에는 명분이 필요하다. 선전포고 전에 행위자 권한·상대·대상 직함/영역·수혜자·명분 자격·비용·전쟁 목표와 승리·백지 강화·항복·무효 종료 효과를 확정한다. 주장을 다른 인물을 위해 관철하면 새 보유자와 상위 계약을 검사하며 공격자에게 모든 영토를 자동 귀속하지 않는다. 목표 밖의 점령은 명분의 권리 이전 범위를 확대하지 않는다. 세부 명분 목록·국가별 요구 비용·상위 계약은 아직 미정이다.
 
 | 항목 | 전쟁 진행 규칙 | 정합성 경계 |
 | --- | --- | --- |
 | 점수 | 공격·방어 점수는 -100~+100의 반대 값이다. 전투·점령·핵심 포로·명분 목표 지배로 변한다. | 전술 승패와 전쟁 종결을 분리한다. 점수 가산은 한 전쟁·사건 ID에서 한 번 적용한다. |
-| 전투와 점령 | 군주 사이 전쟁에서 전투로 얻는 점수는 최대 50이다. 점령 기여는 방어자의 보유 거점 범위·규모를 기준으로 계산한다. | 거점의 포함 범위·분모·부분 점령은 실제 승인 데이터로 닫는다. 전체 영토가 없다고 전투 결과만으로 소멸시키지 않는다. |
-| 목표 지배 | 명분 목표의 전체 지배가 지속되면 시간 누적 점수를 얻으며 상대가 일부를 회복하면 누적 조건을 다시 검사한다. 공격자가 목표를 확보하지 못한 지속 시간은 방어측에 기여한다. | 서울의 세계 시간·경제 주기와 연결하는 기간/증가율은 미정이다. 목표 작위와 실효 지배를 분리한다. |
+| 전투와 점령 | 세력 수장 사이 전쟁에서 전투로 얻는 점수는 최대 50이다. 점령 기여는 방어자의 보유 거점 범위·규모를 기준으로 계산한다. | 거점의 포함 범위·분모·부분 점령은 실제 승인 데이터로 닫는다. 전체 영토가 없다고 전투 결과만으로 소멸시키지 않는다. |
+| 목표 지배 | 명분 목표의 전체 지배가 지속되면 시간 누적 점수를 얻으며 상대가 일부를 회복하면 누적 조건을 다시 검사한다. 공격자가 목표를 확보하지 못한 지속 시간은 방어측에 기여한다. | 서울의 세계 시간·경제 주기와 연결하는 기간/증가율은 미정이다. 목표 직함과 실효 지배를 분리한다. |
 | 핵심 포로 | 상대 수장 포획 +100, 주 후계 +50, 두 번째 후계 +25, 세 번째 후계 +10, 수도 점령 +10. | 전투의 개인 구금 결과가 실제 해당 전쟁의 지휘권자·후계·수도에 대응할 때만 적용한다. 동일 인물·같은 사건 중복은 금지한다. |
 | 종결 | +30에서 백지 강화 요청, +100에서 요구 관철, -100에서 패배측 항복. 자발 항복은 가능하며 명분별 결과를 적용한다. | 백지 강화는 요청이지 무조건 수락이 아니다. 수락 조건·강화 수락 보정의 제도 대응은 미정이다. |
 | 명분 무효 | 명분 자격·대상 권리·수혜자·상대의 대상 통제 변화로 근거가 사라지면 명분별 무효 조건에 따라 미결 종료할 수 있다. | 종결 이유와 점령 반환·권리·포로·배상·휴전 효과를 원장에 남긴다. 전쟁 세션을 조용히 성공으로 대체하지 않는다. |
 
-전쟁 목표·점수·종결·권리 이전은 위 승인 구조를 따르되, 서울의 개인 전투 판정·관측 보고·안정화·인준은 별도 계약으로 연결한다. 작위 지도의 네 등급이 모두 독립 주장 명분을 가진다고 추정하지 않는다. 최하위 작위 영역의 주장 가능 범위, 혈통 외 후계와 포로 점수의 대응, 특수 정치 체제·무소속 군대의 예외, 휴전·배상·주장 비용은 미정이며 국가별 제도 확정 뒤 등록한다.
+전쟁 목표·점수·종결·권리 이전은 위 승인 구조를 따르되, 서울의 개인 전투 판정·관측 보고·안정화·인준은 별도 계약으로 연결한다. 직함 지도의 네 등급이 모두 독립 주장 명분을 가진다고 추정하지 않는다. 최하위 직함 영역의 주장 가능 범위, 혈통 외 후계와 포로 점수의 대응, 특수 정치 체제·무소속 군대의 예외, 휴전·배상·주장 비용은 미정이며 국가별 제도 확정 뒤 등록한다.
 
-SP-1.0.0: 모든 인물이 명분·작위 권리 인스턴스를 보유할 수 있으나 보유만으로 지휘/선전포고 권한은 생기지 않는다. 유효 명분이 전쟁 목표와 종결 요구를 고정한다. W=100/상대=-100에서 명분 범위의 강제 수락·단일 종결을 처리하며 추가 강탈을 허용하지 않는다. 양측 100 미만에서는 영토·자산·포로 석방/송환·외교 의무별 점수를 가진 독자 협상을 채택한다. 가격/수락 함수는 상세 계약 구조를 따르고 미정 계수를 원천 값으로 가장하지 않는다.');
+SP-1.0.0: 모든 인물이 명분·직함 권리 인스턴스를 보유할 수 있으나 보유만으로 지휘/선전포고 권한은 생기지 않는다. 유효 명분이 전쟁 목표와 종결 요구를 고정한다. W=100/상대=-100에서 명분 범위의 강제 수락·단일 종결을 처리하며 추가 강탈을 허용하지 않는다. 양측 100 미만에서는 영토·자산·포로 석방/송환·외교 의무별 점수를 가진 독자 협상을 채택한다. 가격/수락 함수는 상세 계약 구조를 따르고 미정 계수를 원천 값으로 가장하지 않는다.');
 INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Rules-SaveDeterminism', 'rules', 'rules-save-determinism-clauses', 'Save and Determinism Rules', '저장과 결정성 규칙', '', '', 'accepted', 59, 'rules/Rules-SaveDeterminism.md', '# Save and Determinism Rules
 
 ## Migration Verdict — Preservation Clauses and Historical Scope
