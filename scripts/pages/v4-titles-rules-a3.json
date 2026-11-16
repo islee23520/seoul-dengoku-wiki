@@ -1,0 +1,152 @@
+{
+ "purpose": "v4 직함 변환 a3: 윤서린(person-0145)을 대상으로 하는 관계 basis의 현재형 '대통령' 지칭을 전 대통령으로 바꾸거나 이름으로 고친다(양쪽 인물의 incoming/outgoing, en·ko).",
+ "hold": [
+  "person-0374"
+ ],
+ "rules": [
+  {
+   "id": "v4t-a3-001",
+   "group": "a3",
+   "file": "090",
+   "type": "sub",
+   "person": "person-0145",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "from": "세 유언 공개로 대통령 인준권을 견제",
+   "to": "세 유언 공개로 전 대통령의 인준권을 견제",
+   "expect": 1
+  },
+  {
+   "id": "v4t-a3-002",
+   "group": "a3",
+   "file": "090",
+   "type": "sub",
+   "person": "person-0088",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "from": "세 유언 공개로 대통령 인준권을 견제",
+   "to": "세 유언 공개로 전 대통령의 인준권을 견제",
+   "expect": 1
+  },
+  {
+   "id": "v4t-a3-003",
+   "group": "a3",
+   "file": "090",
+   "type": "sub",
+   "person": "person-0145",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "from": "Checks the president's ratification authority",
+   "to": "Checks the former president's ratification authority",
+   "expect": 1
+  },
+  {
+   "id": "v4t-a3-004",
+   "group": "a3",
+   "file": "090",
+   "type": "sub",
+   "person": "person-0088",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "from": "Checks the president's ratification authority",
+   "to": "Checks the former president's ratification authority",
+   "expect": 1
+  },
+  {
+   "id": "v4t-a3-005",
+   "group": "a3",
+   "file": "090",
+   "type": "sub",
+   "person": "person-0145",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "from": "당회 수장 인준을 대통령 지휘로 심사",
+   "to": "당회 수장 인준을 전 대통령 지휘로 심사",
+   "expect": 1
+  },
+  {
+   "id": "v4t-a3-006",
+   "group": "a3",
+   "file": "090",
+   "type": "sub",
+   "person": "person-0146",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "from": "당회 수장 인준을 대통령 지휘로 심사",
+   "to": "당회 수장 인준을 전 대통령 지휘로 심사",
+   "expect": 1
+  },
+  {
+   "id": "v4t-a3-007",
+   "group": "a3",
+   "file": "090",
+   "type": "sub",
+   "person": "person-0145",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "from": "under the President's command",
+   "to": "under the Former President's command",
+   "expect": 1
+  },
+  {
+   "id": "v4t-a3-008",
+   "group": "a3",
+   "file": "090",
+   "type": "sub",
+   "person": "person-0146",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "from": "under the President's command",
+   "to": "under the Former President's command",
+   "expect": 1
+  },
+  {
+   "id": "v4t-a3-009",
+   "group": "a3",
+   "file": "090",
+   "type": "sub",
+   "person": "person-0145",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "from": "대통령 추대 세력의 의료이송 기록",
+   "to": "윤서린 추대 세력의 의료이송 기록",
+   "expect": 1
+  },
+  {
+   "id": "v4t-a3-010",
+   "group": "a3",
+   "file": "090",
+   "type": "sub",
+   "person": "person-0148",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "from": "대통령 추대 세력의 의료이송 기록",
+   "to": "윤서린 추대 세력의 의료이송 기록",
+   "expect": 1
+  },
+  {
+   "id": "v4t-a3-011",
+   "group": "a3",
+   "file": "090",
+   "type": "sub",
+   "person": "person-0145",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "from": "Medical Transfer Records of the Presidential Backers",
+   "to": "Medical Transfer Records of Yun Seorin's Backers",
+   "expect": 1
+  },
+  {
+   "id": "v4t-a3-012",
+   "group": "a3",
+   "file": "090",
+   "type": "sub",
+   "person": "person-0148",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "from": "Medical Transfer Records of the Presidential Backers",
+   "to": "Medical Transfer Records of Yun Seorin's Backers",
+   "expect": 1
+  }
+ ]
+}
