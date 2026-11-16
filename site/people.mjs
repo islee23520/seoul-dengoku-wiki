@@ -76,8 +76,26 @@ function axisRows(entries, meta, i, ko) {
   }).join('');
 }
 
+// Private narrative stays in the source data but is never rendered: a detail record lists dotted paths in
+// `privateFields` (e.g. "characterProfile.traits.0"), and those values are dropped before the page is built.
+// Paths are removed deepest index first so array positions stay valid.
+function withoutPrivate(d) {
+  if (!d?.privateFields?.length) return d;
+  const c = structuredClone(d);
+  const paths = [...d.privateFields].sort((a, b) => b.localeCompare(a, 'en', { numeric: true }));
+  for (const fieldPath of paths) {
+    const keys = fieldPath.split('.');
+    const last = keys.pop();
+    const parent = keys.reduce((o, k) => o?.[k], c);
+    if (Array.isArray(parent)) parent.splice(Number(last), 1);
+    else if (parent) delete parent[last];
+  }
+  return c;
+}
+
 /** One person page (Markdown with embedded HTML blocks). `d` is the parsed detail JSON for the locale; `p` the roster row. */
-export function personPage({ p, d, dKo, ko, g, P, stateRow, factionName, clan }) {
+export function personPage({ p, d: rawD, dKo: rawDKo, ko, g, P, stateRow, factionName, clan }) {
+  const d = withoutPrivate(rawD), dKo = withoutPrivate(rawDKo);
   const S = ko ? STR.ko : STR.en;
   const L = (k) => (ko ? p[`${k}_ko`] : p[k]);
   const out = [];
