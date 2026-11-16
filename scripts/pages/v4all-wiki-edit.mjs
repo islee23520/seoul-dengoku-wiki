@@ -6,6 +6,8 @@
 //   110 data/sql/110-family-trees.sql    family_tree.json · json_ko (JSON 문자열, 잎 단위)
 //   050 data/sql/050-wiki-people.sql     wiki_person 표시 열 title · position · rank (en/ko)
 //   120 data/sql/120-map-core.sql        map_landmark.detail · detail_ko (같은 파일의 다른 표 문장은 그대로 둔다)
+//   121 data/sql/120-map-core.sql        map_region.summary · summary_ko · opening_state · opening_state_ko
+//   115 data/sql/115-retainer-graph.sql  retainer_graph.json · json_ko (JSON 문자열, 잎 단위)
 // 규칙(rules[]): { id, file, col?, key?, pathRe?, from, to, re?, expect }
 //   col    — 열 이름(문자열 또는 배열). 없으면 그 파일의 편집 열 전체.
 //   key    — 행 키(slug·person_id·clan_id). 없으면 모든 행.
@@ -31,14 +33,16 @@ const FILES = {
   '030': { file: 'data/sql/030-wiki-documents.sql', table: 'wiki_document', key: 'slug', cols: ['slug', 'title', 'title_ko', 'category_id', 'sort', 'body_md', 'body_ko_md'], edit: ['body_md', 'body_ko_md'], json: false },
   '090': { file: 'data/sql/090-person-details.sql', table: 'person_detail', key: 'person_id', cols: ['person_id', 'clan_id', 'json', 'json_ko'], edit: ['json', 'json_ko'], json: true },
   '110': { file: 'data/sql/110-family-trees.sql', table: 'family_tree', key: 'clan_id', cols: ['clan_id', 'json', 'json_ko'], edit: ['json', 'json_ko'], json: true },
-  '050': { file: 'data/sql/050-wiki-people.sql', table: 'wiki_person', key: 'id', cols: ['id', 'sort', 'faction_id', 'name', 'name_ko', 'title', 'title_ko', 'position', 'position_ko', 'rank', 'rank_ko', 'tier', 'occupation', 'occupation_ko', 'gender', 'gender_ko', 'stage', 'stage_ko', 'state_id', 'state_name', 'state_name_ko'], edit: ['title', 'title_ko', 'position', 'position_ko', 'rank', 'rank_ko'], json: false },
+  '050': { file: 'data/sql/050-wiki-people.sql', table: 'wiki_person', key: 'id', cols: ['id', 'sort', 'faction_id', 'name', 'name_ko', 'title', 'title_ko', 'position', 'position_ko', 'rank', 'rank_ko', 'tier', 'occupation', 'occupation_ko', 'gender', 'gender_ko', 'stage', 'stage_ko', 'state_id', 'state_name', 'state_name_ko'], edit: ['title', 'title_ko', 'position', 'position_ko', 'rank', 'rank_ko', 'occupation', 'occupation_ko'], json: false },
+  '121': { file: 'data/sql/120-map-core.sql', table: 'map_region', key: 'id', cols: ['id', 'sort', 'name', 'name_ko', 'district', 'district_ko', 'path', 'status', 'polities', 'summary', 'summary_ko', 'opening_state', 'opening_state_ko', 'station_count', 'area_m2', 'density_2126'], edit: ['summary', 'summary_ko', 'opening_state', 'opening_state_ko'], json: false },
+  '115': { file: 'data/sql/115-retainer-graph.sql', table: 'retainer_graph', key: 'id', cols: ['id', 'json', 'json_ko'], edit: ['json', 'json_ko'], json: true },
   '120': { file: 'data/sql/120-map-core.sql', table: 'map_landmark', key: 'id', cols: ['id', 'sort', 'name', 'name_ko', 'region_id', 'holder_id', 'role', 'role_ko', 'detail', 'detail_ko', 'x', 'y', 'fortification'], edit: ['detail', 'detail_ko'], json: false },
 };
 // JSON 안에서 키·열거값으로 쓰는 필드. 최상위 .rank(표시 문자열)만 예외로 편집할 수 있다.
-const KEY_FIELDS = new Set(['id', 'titleId', 'parentTitleId', 'politicalParentTitleId', 'holderPersonId', 'directLiegePersonId', 'stateId', 'state', 'holdingId', 'geographicTitleId', 'rank', 'formalTitleRank', 'territorialScale', 'personId', 'clanId', 'characterId']);
+const KEY_FIELDS = new Set(['id', 'titleId', 'parentTitleId', 'politicalParentTitleId', 'holderPersonId', 'directLiegePersonId', 'stateId', 'state', 'holdingId', 'geographicTitleId', 'rank', 'formalTitleRank', 'territorialScale', 'personId', 'clanId', 'characterId', 'relationKind', 'courtId', 'liegePersonId', 'ownerPersonId', 'fromPersonId', 'toPersonId']);
 const isKeyPath = (p) => p !== '.rank' && KEY_FIELDS.has(p.split('.').pop().replace(/\[\]$/, ''));
 // 옛 칭호 어휘(보고용 집계). 위키 범위 오탐(공작원, 은밀 공작, 영주역·공영주차장, 무작위)은 따로 센다.
-const OLD = /공작령|공작위|공작|백작령|백작|남작령|남작|영주|왕국|국왕|군주|왕격|작위|\b(?:Dukes?|Duch(?:y|ies)|Ducal|County|Counties|Barony|Baronies|Barons?|Lords?|Kingdoms?|Kings?|Monarchs?|Monarchy|Sovereigns?|Peerage|Fiefs?)\b|\b(?:dukes?|duch(?:y|ies)|ducal|barony|baronies|lords?|kingdoms?|kings?|monarchs?|monarchy|sovereigns?|peerage|fiefs?)\b/g;
+const OLD = /봉신|봉토|봉건|봉작|종주|\b(?:[Vv]assal(?:s|age)?|[Ff]ief(?:dom)?s?|[Ll]ieges?|[Ss]uzerains?|[Ff]eudal)\b|공작령|공작위|공작|백작령|백작|남작령|남작|영주|왕국|국왕|군주|왕격|작위|\b(?:Dukes?|Duch(?:y|ies)|Ducal|County|Counties|Barony|Baronies|Barons?|Lords?|Kingdoms?|Kings?|Monarchs?|Monarchy|Sovereigns?|Peerage|Fiefs?)\b|\b(?:dukes?|duch(?:y|ies)|ducal|barony|baronies|lords?|kingdoms?|kings?|monarchs?|monarchy|sovereigns?|peerage|fiefs?)\b/g;
 const FALSE_POS = /공작원|은밀 공작|공영주차장|\| 영주 \| Yeongju|무작위|Emma King|\bKing\b(?=', '킹')/g;
 const fail = (code, msg) => { console.error(msg); process.exit(code); };
 
@@ -116,7 +120,8 @@ function applyRules(file, key, col, p, v) {
 const outTexts = {};
 for (const file of used) {
   const spec = FILES[file];
-  const text = fs.readFileSync(path.join(REPO, spec.file), 'utf8');
+  const prev = used.find((f) => f !== file && FILES[f].file === spec.file && outTexts[f] !== undefined);
+  const text = prev ? outTexts[prev] : fs.readFileSync(path.join(REPO, spec.file), 'utf8');
   const rows = rowsOf(loadDb(text), spec);
   const spans = locate(spec, text, rows);
   const touched = [];
@@ -166,5 +171,6 @@ fs.mkdirSync(path.dirname(path.resolve(args.report)), { recursive: true });
 fs.writeFileSync(path.resolve(args.report), JSON.stringify(report, null, 1));
 fs.writeFileSync(path.resolve(args.report).replace(/\.json$/, '.changes.tsv'), changes.map((c) => c.join('\t')).join('\n') + '\n');
 if (bad.length) fail(EXIT.RULE, 'E_RULE_COUNT: ' + bad.length + '개 규칙 적중 불일치\n' + bad.map((r) => r.id + ' ' + JSON.stringify(r.from).slice(0, 80) + ' 적중 ' + hits.get(r.id) + ' ≠ 기대 ' + r.expect).join('\n'));
-if (!args.dryRun) for (const file of used) fs.writeFileSync(path.join(REPO, FILES[file].file), outTexts[file]);
+// 같은 파일을 쓰는 표가 둘이면 마지막 표의 출력이 앞 표의 편집을 이미 담고 있다.
+if (!args.dryRun) for (const file of used) if (used.slice(used.indexOf(file) + 1).every((f) => FILES[f].file !== FILES[file].file)) fs.writeFileSync(path.join(REPO, FILES[file].file), outTexts[file]);
 console.log(`${args.dryRun ? 'dry-run' : 'applied'}: ${rules.length} rules, ${report.total_replacements} replacements; ` + Object.entries(report.files).map(([f, x]) => `${path.basename(f)} touched ${x.statements_touched}, old terms ${x.old_term_hits_before} -> ${x.old_term_hits_after}`).join('; '));
