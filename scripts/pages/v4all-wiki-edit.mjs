@@ -4,11 +4,14 @@
 //   030 data/sql/030-wiki-documents.sql  wiki_document.body_md · body_ko_md (Markdown 문자열)
 //   090 data/sql/090-person-details.sql  person_detail.json · json_ko (JSON 문자열, 잎 단위)
 //   110 data/sql/110-family-trees.sql    family_tree.json · json_ko (JSON 문자열, 잎 단위)
+//   050 data/sql/050-wiki-people.sql     wiki_person 표시 열 title · position · rank (en/ko)
+//   120 data/sql/120-map-core.sql        map_landmark.detail · detail_ko (같은 파일의 다른 표 문장은 그대로 둔다)
 // 규칙(rules[]): { id, file, col?, key?, pathRe?, from, to, re?, expect }
 //   col    — 열 이름(문자열 또는 배열). 없으면 그 파일의 편집 열 전체.
 //   key    — 행 키(slug·person_id·clan_id). 없으면 모든 행.
 //   pathRe — JSON 잎 경로 정규식(배열 첨자는 []로 접는다, 예: ^\.sections\.Life$). JSON 열에만 쓴다.
 //   re     — true면 from을 전역 정규식으로, 아니면 정확한 부분 문자열로 찾는다.
+//   exact  — true면 값(JSON 잎 또는 열 값) 전체가 from과 같을 때만 바꾼다(직함·품계 같은 표시 값).
 //   expect — 이 규칙이 바꾼 횟수. 실제와 다르면 실패한다(재현 가능한 적중 수).
 // 규칙은 적힌 순서대로 잎마다 적용한다. 다음은 어떤 규칙도 건드리지 않는다:
 //   키·열거값 잎(id, titleId, rank, stateId 등), 보류 인물(hold), 렌더에서만 숨기는 비공개 잎(privateFields).
@@ -28,6 +31,8 @@ const FILES = {
   '030': { file: 'data/sql/030-wiki-documents.sql', table: 'wiki_document', key: 'slug', cols: ['slug', 'title', 'title_ko', 'category_id', 'sort', 'body_md', 'body_ko_md'], edit: ['body_md', 'body_ko_md'], json: false },
   '090': { file: 'data/sql/090-person-details.sql', table: 'person_detail', key: 'person_id', cols: ['person_id', 'clan_id', 'json', 'json_ko'], edit: ['json', 'json_ko'], json: true },
   '110': { file: 'data/sql/110-family-trees.sql', table: 'family_tree', key: 'clan_id', cols: ['clan_id', 'json', 'json_ko'], edit: ['json', 'json_ko'], json: true },
+  '050': { file: 'data/sql/050-wiki-people.sql', table: 'wiki_person', key: 'id', cols: ['id', 'sort', 'faction_id', 'name', 'name_ko', 'title', 'title_ko', 'position', 'position_ko', 'rank', 'rank_ko', 'tier', 'occupation', 'occupation_ko', 'gender', 'gender_ko', 'stage', 'stage_ko', 'state_id', 'state_name', 'state_name_ko'], edit: ['title', 'title_ko', 'position', 'position_ko', 'rank', 'rank_ko'], json: false },
+  '120': { file: 'data/sql/120-map-core.sql', table: 'map_landmark', key: 'id', cols: ['id', 'sort', 'name', 'name_ko', 'region_id', 'holder_id', 'role', 'role_ko', 'detail', 'detail_ko', 'x', 'y', 'fortification'], edit: ['detail', 'detail_ko'], json: false },
 };
 // JSON 안에서 키·열거값으로 쓰는 필드. 최상위 .rank(표시 문자열)만 예외로 편집할 수 있다.
 const KEY_FIELDS = new Set(['id', 'titleId', 'parentTitleId', 'politicalParentTitleId', 'holderPersonId', 'directLiegePersonId', 'stateId', 'state', 'holdingId', 'geographicTitleId', 'rank', 'formalTitleRank', 'territorialScale', 'personId', 'clanId', 'characterId']);
@@ -58,19 +63,18 @@ const loadDb = (text) => {
   return db;
 };
 const rowsOf = (db, spec) => db.prepare('SELECT ' + spec.cols.join(', ') + ' FROM ' + spec.table + ' ORDER BY rowid').all();
-// 원문에서 행마다 재직렬화한 INSERT 문의 위치를 찾는다. 문 사이에는 줄바꿈만 있어야 한다.
+// 원문에서 그 표의 INSERT 문을 순서대로 찾아 행마다 재직렬화 값과 바이트 단위로 대조한다.
+// 같은 파일의 다른 표 문장은 위치만 건너뛰고 건드리지 않는다.
 function locate(spec, text, rows) {
-  const spans = [];
-  let cur = text.indexOf('INSERT INTO ');
-  for (const r of rows) {
+  const head = 'INSERT INTO ' + spec.table + ' (';
+  const starts = [];
+  for (let i = text.indexOf(head); i >= 0; i = text.indexOf(head, i + 1)) if (i === 0 || text[i - 1] === '\n') starts.push(i);
+  if (starts.length !== rows.length) fail(EXIT.ROUNDTRIP, 'E_ROUNDTRIP: ' + spec.file + ' ' + spec.table + ' 문 ' + starts.length + ' ≠ 행 ' + rows.length);
+  return rows.map((r, n) => {
     const s = serialize(spec, r);
-    if (text.slice(cur, cur + s.length) !== s) fail(EXIT.ROUNDTRIP, 'E_ROUNDTRIP: ' + spec.file + ' ' + r[spec.key]);
-    spans.push([cur, cur + s.length]);
-    cur += s.length;
-    while (text[cur] === '\n' || text[cur] === '\r') cur++;
-  }
-  if (text.slice(cur).includes('INSERT INTO')) fail(EXIT.ROUNDTRIP, 'E_ROUNDTRIP: ' + spec.file + ' 적재되지 않은 INSERT가 남았다');
-  return spans;
+    if (text.slice(starts[n], starts[n] + s.length) !== s) fail(EXIT.ROUNDTRIP, 'E_ROUNDTRIP: ' + spec.file + ' ' + r[spec.key]);
+    return [starts[n], starts[n] + s.length];
+  });
 }
 function walkLeaves(node, p, fn) {
   if (Array.isArray(node)) node.forEach((v, i) => { if (typeof v === 'string') node[i] = fn(p + '[]', v, `${p}.${i}`); else walkLeaves(v, p + '[]', fn); });
@@ -88,6 +92,7 @@ for (const r of rules) {
   if (r.key && hold.has(r.key)) fail(EXIT.RULE, 'E_RULE_HOLD: 보류 인물 규칙 ' + r.id);
   if (r.from === r.to) fail(EXIT.RULE, 'E_RULE_NOOP: ' + r.id);
   if (r.pathRe && !FILES[r.file].json) fail(EXIT.RULE, 'E_RULE_PATH: 문자열 열에 pathRe ' + r.id);
+  if (r.exact && r.re) fail(EXIT.RULE, 'E_RULE_MODE: exact와 re를 함께 쓸 수 없다 ' + r.id);
   if (!Number.isInteger(r.expect)) fail(EXIT.RULE, 'E_RULE_EXPECT: ' + r.id);
 }
 const hits = new Map(rules.map((r) => [r.id, 0]));
@@ -99,9 +104,9 @@ function applyRules(file, key, col, p, v) {
   let s = v;
   for (const r of rules) {
     if (r.file !== file || (r.key && r.key !== key) || (r.cols && !r.cols.includes(col)) || (r.pathRx && !r.pathRx.test(p))) continue;
-    const n = r.rx ? countOf(s, r.rx) : s.split(r.from).length - 1;
+    const n = r.exact ? (s === r.from ? 1 : 0) : r.rx ? countOf(s, r.rx) : s.split(r.from).length - 1;
     if (!n) continue;
-    s = r.rx ? s.replace(r.rx, r.to) : s.split(r.from).join(r.to);
+    s = r.exact ? r.to : r.rx ? s.replace(r.rx, r.to) : s.split(r.from).join(r.to);
     hits.set(r.id, hits.get(r.id) + n);
     changes.push([file, key, col, p, r.id, n]);
   }
@@ -144,6 +149,8 @@ for (const file of used) {
     if (hold.has(r[spec.key]) && serialize(spec, r) !== serialize(spec, rows[i])) fail(EXIT.POST, 'E_POST: 보류 행 변경 ' + r[spec.key]);
   });
   const inserts = (t) => (t.match(/^INSERT INTO /gm) ?? []).length;
+  const ownOut = (out.match(new RegExp('^INSERT INTO ' + spec.table + ' \\(', 'gm')) ?? []).length;
+  if (ownOut !== rows.length) fail(EXIT.POST, 'E_POST: ' + spec.table + ' 문 수 ' + spec.file);
   if (inserts(out) !== inserts(text)) fail(EXIT.POST, 'E_POST: INSERT 문 수 ' + spec.file);
   report.files[spec.file] = {
     insert_count: inserts(text), table_rows: rows.length, statements_touched: touched.length, touched,

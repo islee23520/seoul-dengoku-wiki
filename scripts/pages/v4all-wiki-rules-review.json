@@ -1,0 +1,667 @@
+{
+ "purpose": "v4 전면 전환 레인 B, 고PD 판정(PR #733 리뷰, Slack 1794815726): (1) Arc 수장 → 교주/Hierophant, (2) 이홍원·정서온·정유라의 추기경을 추기경(잠정)/Cardinal (provisional)으로, (3) 남윤경(person-0374) B안 확정: 정부 명동역 역장, 아크 신앙은 개인 신앙, 롯데월드타워 거주 유지.",
+ "hold": [],
+ "rules": [
+  {
+   "id": "v4all-r-001",
+   "expect": 2,
+   "group": "arc-top",
+   "file": "090",
+   "key": "person-0088",
+   "col": "json_ko",
+   "pathRe": "^\\.openingTitles\\[\\]\\.basis$",
+   "from": "Arc 수장.",
+   "to": "Arc 교주."
+  },
+  {
+   "id": "v4all-r-002",
+   "expect": 2,
+   "group": "arc-top",
+   "file": "090",
+   "key": "person-0088",
+   "col": "json",
+   "pathRe": "^\\.openingTitles\\[\\]\\.basis$",
+   "from": "Head of the Arc.",
+   "to": "Hierophant of the Arc."
+  },
+  {
+   "id": "v4all-r-003",
+   "expect": 2,
+   "group": "cardinal-provisional",
+   "file": "050",
+   "key": "person-0272",
+   "col": [
+    "title_ko",
+    "rank_ko"
+   ],
+   "exact": true,
+   "from": "추기경",
+   "to": "추기경(잠정)"
+  },
+  {
+   "id": "v4all-r-004",
+   "expect": 2,
+   "group": "cardinal-provisional",
+   "file": "050",
+   "key": "person-0272",
+   "col": [
+    "title",
+    "rank"
+   ],
+   "exact": true,
+   "from": "Cardinal",
+   "to": "Cardinal (provisional)"
+  },
+  {
+   "id": "v4all-r-005",
+   "expect": 3,
+   "group": "cardinal-provisional",
+   "file": "090",
+   "key": "person-0272",
+   "col": "json_ko",
+   "pathRe": "^\\.(title|rank|fields\\.품계|fields\\.직함|fields\\.직위)$",
+   "exact": true,
+   "from": "추기경",
+   "to": "추기경(잠정)"
+  },
+  {
+   "id": "v4all-r-006",
+   "expect": 3,
+   "group": "cardinal-provisional",
+   "file": "090",
+   "key": "person-0272",
+   "col": "json",
+   "pathRe": "^\\.(title|rank|fields\\.Rank|fields\\.Title|fields\\.Position)$",
+   "exact": true,
+   "from": "Cardinal",
+   "to": "Cardinal (provisional)"
+  },
+  {
+   "id": "v4all-r-007",
+   "expect": 2,
+   "group": "cardinal-provisional",
+   "file": "050",
+   "key": "person-0399",
+   "col": [
+    "title_ko",
+    "rank_ko"
+   ],
+   "exact": true,
+   "from": "추기경",
+   "to": "추기경(잠정)"
+  },
+  {
+   "id": "v4all-r-008",
+   "expect": 2,
+   "group": "cardinal-provisional",
+   "file": "050",
+   "key": "person-0399",
+   "col": [
+    "title",
+    "rank"
+   ],
+   "exact": true,
+   "from": "Cardinal",
+   "to": "Cardinal (provisional)"
+  },
+  {
+   "id": "v4all-r-009",
+   "expect": 1,
+   "group": "cardinal-provisional",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json_ko",
+   "pathRe": "^\\.(title|rank|fields\\.품계|fields\\.직함|fields\\.직위)$",
+   "exact": true,
+   "from": "추기경",
+   "to": "추기경(잠정)"
+  },
+  {
+   "id": "v4all-r-010",
+   "expect": 1,
+   "group": "cardinal-provisional",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json",
+   "pathRe": "^\\.(title|rank|fields\\.Rank|fields\\.Title|fields\\.Position)$",
+   "exact": true,
+   "from": "Cardinal",
+   "to": "Cardinal (provisional)"
+  },
+  {
+   "id": "v4all-r-011",
+   "expect": 2,
+   "group": "cardinal-provisional",
+   "file": "050",
+   "key": "person-1005",
+   "col": [
+    "title_ko",
+    "rank_ko"
+   ],
+   "exact": true,
+   "from": "추기경",
+   "to": "추기경(잠정)"
+  },
+  {
+   "id": "v4all-r-012",
+   "expect": 2,
+   "group": "cardinal-provisional",
+   "file": "050",
+   "key": "person-1005",
+   "col": [
+    "title",
+    "rank"
+   ],
+   "exact": true,
+   "from": "Cardinal",
+   "to": "Cardinal (provisional)"
+  },
+  {
+   "id": "v4all-r-013",
+   "expect": 2,
+   "group": "cardinal-provisional",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json_ko",
+   "pathRe": "^\\.(title|rank|fields\\.품계|fields\\.직함|fields\\.직위)$",
+   "exact": true,
+   "from": "추기경",
+   "to": "추기경(잠정)"
+  },
+  {
+   "id": "v4all-r-014",
+   "expect": 2,
+   "group": "cardinal-provisional",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json",
+   "pathRe": "^\\.(title|rank|fields\\.Rank|fields\\.Title|fields\\.Position)$",
+   "exact": true,
+   "from": "Cardinal",
+   "to": "Cardinal (provisional)"
+  },
+  {
+   "id": "v4all-r-015",
+   "expect": 2,
+   "group": "0374-roster",
+   "file": "050",
+   "key": "person-0374",
+   "col": [
+    "title_ko",
+    "rank_ko"
+   ],
+   "exact": true,
+   "from": "수석 신도",
+   "to": "역장"
+  },
+  {
+   "id": "v4all-r-016",
+   "expect": 2,
+   "group": "0374-roster",
+   "file": "050",
+   "key": "person-0374",
+   "col": [
+    "title",
+    "rank"
+   ],
+   "exact": true,
+   "from": "Lead Believer",
+   "to": "Stationmaster"
+  },
+  {
+   "id": "v4all-r-017",
+   "expect": 1,
+   "group": "0374-roster",
+   "file": "050",
+   "key": "person-0374",
+   "col": "position_ko",
+   "exact": true,
+   "from": "Arc 수석 신도",
+   "to": "명동역 역장"
+  },
+  {
+   "id": "v4all-r-018",
+   "expect": 1,
+   "group": "0374-roster",
+   "file": "050",
+   "key": "person-0374",
+   "col": "position",
+   "exact": true,
+   "from": "Lead Believer of the Arc",
+   "to": "Myeongdong Station Stationmaster"
+  },
+  {
+   "id": "v4all-r-019",
+   "expect": 3,
+   "group": "0374-detail",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json_ko",
+   "pathRe": "^\\.(title|rank|fields\\.품계)$",
+   "exact": true,
+   "from": "수석 신도",
+   "to": "역장"
+  },
+  {
+   "id": "v4all-r-020",
+   "expect": 2,
+   "group": "0374-detail",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json_ko",
+   "pathRe": "^\\.(position|fields\\.직함)$",
+   "exact": true,
+   "from": "Arc 수석 신도",
+   "to": "명동역 역장"
+  },
+  {
+   "id": "v4all-r-021",
+   "expect": 1,
+   "group": "0374-detail",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json_ko",
+   "pathRe": "^\\.fields\\.소속$",
+   "exact": true,
+   "from": "Arc",
+   "to": "정부"
+  },
+  {
+   "id": "v4all-r-022",
+   "expect": 3,
+   "group": "0374-detail",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "pathRe": "^\\.(title|rank|fields\\.Rank)$",
+   "exact": true,
+   "from": "Lead Believer",
+   "to": "Stationmaster"
+  },
+  {
+   "id": "v4all-r-023",
+   "expect": 2,
+   "group": "0374-detail",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "pathRe": "^\\.(position|fields\\.Title)$",
+   "exact": true,
+   "from": "Lead Believer of the Arc",
+   "to": "Myeongdong Station Stationmaster"
+  },
+  {
+   "id": "v4all-r-024",
+   "expect": 1,
+   "group": "0374-detail",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "pathRe": "^\\.fields\\.Affiliation$",
+   "exact": true,
+   "from": "Arc",
+   "to": "The Government"
+  },
+  {
+   "id": "v4all-r-025",
+   "expect": 2,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json_ko",
+   "from": "- 소속: Arc",
+   "to": "- 소속: 정부"
+  },
+  {
+   "id": "v4all-r-026",
+   "expect": 2,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json_ko",
+   "from": "- 품계: 수석 신도",
+   "to": "- 품계: 역장"
+  },
+  {
+   "id": "v4all-r-027",
+   "expect": 2,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json_ko",
+   "from": "- 직함: Arc 수석 신도",
+   "to": "- 직함: 명동역 역장"
+  },
+  {
+   "id": "v4all-r-028",
+   "expect": 2,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json_ko",
+   "from": "관직. 품계 수석 신도. 직함은 Arc 수석 신도.",
+   "to": "관직. 품계 역장. 직함은 명동역 역장."
+  },
+  {
+   "id": "v4all-r-029",
+   "expect": 2,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json_ko",
+   "from": "신도단 비밀 선거로 뽑혔으며 교주 인준 없이 직무를 맡는다.",
+   "to": "정부 사다리에서 명동역 하나를 가진 역장이다. 아크 신앙은 개인 신앙이며 직위가 아니다."
+  },
+  {
+   "id": "v4all-r-030",
+   "expect": 2,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json_ko",
+   "from": "남윤경은 중구 명동길 74 Arc 성소 제대와 Arc 명부에서 일했다.",
+   "to": "남윤경은 정부의 명동역 역장이다. 개인 신앙으로 아크를 믿어 중구 명동길 74 Arc 성소의 제대와 명부 일을 신자로서 돕는다."
+  },
+  {
+   "id": "v4all-r-031",
+   "expect": 2,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json_ko",
+   "from": "명동역 신도단이 비밀 선거로 수석 신도를 선출했으며 교주 인준이 없는 선거의 정당성은 계속 다투어진다. ",
+   "to": ""
+  },
+  {
+   "id": "v4all-r-032",
+   "expect": 2,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json_ko",
+   "from": "명동역과 Arc 성소의 명부를 따라 혼인·양자·위령 인준을 맡는다.",
+   "to": "명동역 장부와 Arc 성소 명부를 맞춰 혼인·양자·위령 기록을 정리한다."
+  },
+  {
+   "id": "v4all-r-033",
+   "expect": 3,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json_ko",
+   "from": "명동역의 인준과 Arc 성소의 예식·행정 업무를 명동 슬롯에 결속한다. 수석 신도 선출 기록과 교주 인준의 부재, 그리고 관할 제약을 보존한다.",
+   "to": "명동역 역장 업무를 명동 슬롯에 결속한다. Arc 성소 일은 개인 신앙으로 돕는 일이며 관할 근거가 아니다."
+  },
+  {
+   "id": "v4all-r-034",
+   "expect": 2,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json_ko",
+   "from": "명동역 Arc 사무소의 신도단은 비밀 선거로 수석 신도를 뽑고, 교주 없는 선출의 정당성을 둘러싼 이의를 계속 받는다.",
+   "to": "명동역의 아크 신도 모임에서 남윤경은 명부를 맡는 신자일 뿐이며, 그 일은 정부 역장 직무와 따로 둔다."
+  },
+  {
+   "id": "v4all-r-035",
+   "expect": 1,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json_ko",
+   "from": "공개 거래와 비공개 배급을 함께 쓰는 조정이 강점이지만 교주 없는 선출의 정당성은 계속 다투어진다.",
+   "to": "공개 거래와 비공개 배급을 함께 쓰는 조정이 강점이다."
+  },
+  {
+   "id": "v4all-r-036",
+   "expect": 6,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json_ko",
+   "from": "새 작위·영지·점유권을",
+   "to": "새 직위·영지·점유권을"
+  },
+  {
+   "id": "v4all-r-037",
+   "expect": 2,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "from": "- Affiliation: Arc",
+   "to": "- Affiliation: The Government"
+  },
+  {
+   "id": "v4all-r-038",
+   "expect": 2,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "from": "- Rank: Lead Believer",
+   "to": "- Rank: Stationmaster"
+  },
+  {
+   "id": "v4all-r-039",
+   "expect": 2,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "from": "- Title: Lead Believer of the Arc",
+   "to": "- Title: Myeongdong Station Stationmaster"
+  },
+  {
+   "id": "v4all-r-040",
+   "expect": 2,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "from": "Rank: Lead Believer. Title: Lead Believer of the Arc.",
+   "to": "Rank: Stationmaster. Title: Myeongdong Station Stationmaster."
+  },
+  {
+   "id": "v4all-r-041",
+   "expect": 1,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "from": "Chosen by the congregation's secret election and holds the post without the Hierophant's ratification.",
+   "to": "She is a Government stationmaster holding the one station of Myeongdong. Her Arc devotion is personal faith, not an office."
+  },
+  {
+   "id": "v4all-r-042",
+   "expect": 1,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "from": "Chosen by the congregation's secret ballot, and holds office without the Hierophant's ratification.",
+   "to": "She is a Government stationmaster holding the one station of Myeongdong. Her Arc devotion is personal faith, not an office."
+  },
+  {
+   "id": "v4all-r-043",
+   "expect": 1,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "from": "Nam Yungyeong worked at the Arc sanctuary altar and Arc registers, 74 Myeongdong-gil, Jung-gu.",
+   "to": "Nam Yungyeong is the Government's Stationmaster of Myeongdong Station. Out of personal faith in the Arc she helps as a believer with the altar and registers of the Arc sanctuary at 74 Myeongdong-gil, Jung-gu."
+  },
+  {
+   "id": "v4all-r-044",
+   "expect": 1,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "from": "Nam Yungyeong worked at the altar and the Arc register of Arc sanctuary, 74 Myeongdong-gil, Jung-gu.",
+   "to": "Nam Yungyeong is the Government's Stationmaster of Myeongdong Station. Out of personal faith in the Arc she helps as a believer with the altar and registers of the Arc sanctuary at 74 Myeongdong-gil, Jung-gu."
+  },
+  {
+   "id": "v4all-r-045",
+   "expect": 1,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "from": "The Myeongdong Station congregation elected a lead believer by secret election, and the legitimacy of an election without the Hierophant's ratification remains contested. ",
+   "to": ""
+  },
+  {
+   "id": "v4all-r-046",
+   "expect": 1,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "from": "The congregation of Myeongdong Station elected the lead believer by secret ballot, and the legitimacy of an election without the Hierophant's ratification remains contested. ",
+   "to": ""
+  },
+  {
+   "id": "v4all-r-047",
+   "expect": 1,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "from": "Handles marriage, adoption, and memorial rite ratifications according to the registers of Myeongdong Station and Arc sanctuary.",
+   "to": "Reconciles the Myeongdong Station ledger with the Arc sanctuary registers to keep marriage, adoption, and memorial records."
+  },
+  {
+   "id": "v4all-r-048",
+   "expect": 1,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "from": "Following the registers of Myeongdong Station and Arc sanctuary, Nam Yungyeong handles approvals of marriages, adoptions, and memorial rites.",
+   "to": "Nam Yungyeong reconciles the Myeongdong Station ledger with the Arc sanctuary registers to keep marriage, adoption, and memorial records."
+  },
+  {
+   "id": "v4all-r-049",
+   "expect": 2,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "from": "Binds Myeongdong Station's ratifications and Arc sanctuary's ritual and administrative work to the Myeongdong slot. Preserves the record of the lead believer's election, the absence of the Hierophant's ratification, and the jurisdictional limits.",
+   "to": "Binds the Myeongdong stationmaster's duties to the Myeongdong slot. Her help at the Arc sanctuary is personal faith and gives no jurisdiction."
+  },
+  {
+   "id": "v4all-r-050",
+   "expect": 1,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "from": "Binds Myeongdong Station's approvals and Arc sanctuary's ritual and administrative duties to the Myeongdong slot. Preserves the record of the lead believer's election, the absence of the Hierophant's ratification, and the jurisdictional constraints.",
+   "to": "Binds the Myeongdong stationmaster's duties to the Myeongdong slot. Her help at the Arc sanctuary is personal faith and gives no jurisdiction."
+  },
+  {
+   "id": "v4all-r-051",
+   "expect": 1,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "from": "The congregation at the Myeongdong Station Arc office chooses the lead believer by secret election and continues to receive objections over the legitimacy of an election without the Hierophant.",
+   "to": "Among the Arc believers at Myeongdong Station, Nam Yungyeong only keeps the register as a believer, and she keeps that apart from her Government stationmaster duties."
+  },
+  {
+   "id": "v4all-r-052",
+   "expect": 1,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "from": "The congregation of the Arc office at Myeongdong Station elects the lead believer by secret ballot and continues to face objections over the legitimacy of an election without the Hierophant.",
+   "to": "Among the Arc believers at Myeongdong Station, Nam Yungyeong only keeps the register as a believer, and she keeps that apart from her Government stationmaster duties."
+  },
+  {
+   "id": "v4all-r-053",
+   "expect": 1,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "from": "Coordinating public trade and private emergency distribution is a strength, while the legitimacy of election without the Hierophant remains disputed.",
+   "to": "Coordinating public trade and private emergency distribution is a strength."
+  },
+  {
+   "id": "v4all-r-054",
+   "expect": 6,
+   "group": "0374-prose",
+   "file": "090",
+   "key": "person-0374",
+   "col": "json",
+   "from": "\\bnoble title, fief\\b|\\btitle, fief\\b",
+   "to": "rank, holding",
+   "re": true
+  },
+  {
+   "id": "v4all-r-055",
+   "expect": 1,
+   "group": "0374-tree",
+   "file": "110",
+   "key": "b0a8-c758-b839",
+   "col": "json_ko",
+   "from": "명동역 신도단의 비밀 선거에서 남윤경이 수석 신도로 선출되었으나 교주 없이 치른 선거의 정당성은 계속 다투어진다.",
+   "to": "남윤경은 정부의 명동역 역장이며, 아크 신앙은 개인 신앙으로만 지킨다."
+  },
+  {
+   "id": "v4all-r-056",
+   "expect": 1,
+   "group": "0374-tree",
+   "file": "110",
+   "key": "b0a8-c758-b839",
+   "col": "json_ko",
+   "from": "혼인·양자·위령 인준은 선거 뒤에도 이어지지만, 교주 인준이 없다는 이의가 봉인마다 따른다.",
+   "to": "혼인·양자·위령 기록은 명동역 장부와 Arc 명부에 함께 남는다."
+  },
+  {
+   "id": "v4all-r-057",
+   "expect": 1,
+   "group": "0374-tree",
+   "file": "110",
+   "key": "b0a8-c758-b839",
+   "col": "json",
+   "from": "In the secret election of the Myeongdong Station congregation, Nam Yungyeong was elected Lead Believer, but the legitimacy of an election held without the Hierophant remains contested.",
+   "to": "Nam Yungyeong is the Government's Stationmaster of Myeongdong Station and keeps her Arc devotion as personal faith."
+  },
+  {
+   "id": "v4all-r-058",
+   "expect": 1,
+   "group": "0374-tree",
+   "file": "110",
+   "key": "b0a8-c758-b839",
+   "col": "json",
+   "from": "Ratification of marriage, adoption, and memorial rites continues after the election, but an objection that there is no ratification by the Hierophant follows every seal.",
+   "to": "Marriage, adoption, and memorial records are kept in both the Myeongdong Station ledger and the Arc registers."
+  },
+  {
+   "id": "v4all-r-059",
+   "expect": 1,
+   "group": "0374-map",
+   "file": "120",
+   "key": "lotte-world-tower",
+   "col": "detail_ko",
+   "from": "수석 신도 남윤경(K373)이 거주하는",
+   "to": "명동역 역장 남윤경(K373)이 거주하는"
+  },
+  {
+   "id": "v4all-r-060",
+   "expect": 1,
+   "group": "0374-map",
+   "file": "120",
+   "key": "lotte-world-tower",
+   "col": "detail",
+   "from": "where Lead Believer Nam Yun-gyeong (K373) resides",
+   "to": "where Nam Yun-gyeong (K373), Stationmaster of Myeongdong Station, resides"
+  }
+ ]
+}
