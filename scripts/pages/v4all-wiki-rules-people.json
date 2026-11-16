@@ -1,0 +1,164 @@
+{
+ "purpose": "v4 전면 전환 레인 B: 인물 상세(090)와 가계도(110)의 옛 칭호 서술을 v4 어휘로 바꾼다. 한재목 선출은 수문국 이사 선출, 민웅기는 전직 대전선 수장·최상단 등급, 면책 문구의 작위/noble title/fief는 직위/rank/holding.",
+ "hold": [
+  "person-0374"
+ ],
+ "rules": [
+  {
+   "id": "v4all-p-001",
+   "file": "090",
+   "from": "물 계약 가문들이 양평역 계약 회의에서 군주를 뽑을 때 한재목은 수문가의 표를 모아 군주 자리에 앉았다.",
+   "to": "물 계약 가문들이 양평역 계약 회의에서 수문국 이사를 뽑을 때 한재목은 수문가의 표를 모아 이사 자리에 앉았다.",
+   "expect": 2,
+   "key": "person-0001",
+   "col": "json_ko",
+   "group": "history-0001"
+  },
+  {
+   "id": "v4all-p-002",
+   "file": "090",
+   "from": "When the water contract houses chose a monarch at the Yangpyeong Station Contract Council, Han Jaemok gathered the votes of the floodgate houses and took the monarch's seat.",
+   "to": "When the water contract houses chose the Director of the Floodgate State at the Yangpyeong Station Contract Council, Han Jaemok gathered the votes of the floodgate houses and took the director's seat.",
+   "expect": 2,
+   "key": "person-0001",
+   "col": "json",
+   "group": "history-0001"
+  },
+  {
+   "id": "v4all-p-003",
+   "file": "110",
+   "from": "물 계약 가문들이 양평역 계약 회의에서 군주를 뽑고, 한재목은 그 선거에서 수문가의 표를 모아 군주 자리에 앉았다.",
+   "to": "물 계약 가문들이 양평역 계약 회의에서 수문국 이사를 뽑고, 한재목은 그 선거에서 수문가의 표를 모아 이사 자리에 앉았다.",
+   "expect": 1,
+   "col": "json_ko",
+   "group": "history-0001"
+  },
+  {
+   "id": "v4all-p-004",
+   "file": "110",
+   "from": "The water-contract houses chose a sovereign at the Yangpyeong Station contract assembly, and Han Jaemok gathered the votes of the Sluice House in that election and took the sovereign's seat.",
+   "to": "The water-contract houses chose the Director of the Floodgate State at the Yangpyeong Station contract assembly, and Han Jaemok gathered the votes of the Sluice House in that election and took the director's seat.",
+   "expect": 1,
+   "col": "json",
+   "group": "history-0001"
+  },
+  {
+   "id": "v4all-p-005",
+   "file": "090",
+   "from": "전직 대전 군주(대전선·왕격)는 이전 정치 등급의 기록으로만 남는다.",
+   "to": "대전선을 이끈 전직 수장이었고 그 자리가 최상단 등급이었다는 사실은 이전 정치 등급의 기록으로만 남는다. 자유도시에서 그는 수장이 아니라 이사회장의 측근이다.",
+   "expect": 2,
+   "key": "person-1008",
+   "col": "json_ko",
+   "group": "history-1008"
+  },
+  {
+   "id": "v4all-p-006",
+   "file": "090",
+   "from": "대전 군주·대전선은 2026-10-22 세력 이동으로 해소하고, 왕격은 이전 정치 등급의 기록으로만 남긴다.",
+   "to": "대전선 수장 자리와 대전선은 2026-10-22 세력 이동으로 해소하고, 최상단 등급이었다는 점은 이전 정치 등급의 기록으로만 남긴다.",
+   "expect": 1,
+   "key": "person-1008",
+   "col": "json_ko",
+   "group": "history-1008"
+  },
+  {
+   "id": "v4all-p-007",
+   "file": "090",
+   "from": "The former Daejeon lord (Daejeon Seon, Wanggyeok) survives only as a record of a former political rank.",
+   "to": "His past as head of the Daejeon Line, then a top-tier post, survives only as a record of a former political rank. In the Free Cities he is not a head of anything but an aide to the Chair of the Board.",
+   "expect": 2,
+   "key": "person-1008",
+   "col": "json",
+   "group": "history-1008"
+  },
+  {
+   "id": "v4all-p-008",
+   "file": "090",
+   "from": "The Daejeon lord and Daejeon Seon are dissolved by the faction shift of 2026-10-22, and Wanggyeok survives only as a record of a former political rank.",
+   "to": "The Daejeon Line headship and the Daejeon Line itself are dissolved by the faction shift of 2026-10-22, and its top-tier standing survives only as a record of a former political rank.",
+   "expect": 1,
+   "key": "person-1008",
+   "col": "json",
+   "group": "history-1008"
+  },
+  {
+   "id": "v4all-p-009",
+   "file": "090",
+   "from": "Fief Council",
+   "to": "Vassal States Council",
+   "expect": 1,
+   "key": "person-0186",
+   "col": "json",
+   "group": "name"
+  },
+  {
+   "id": "v4all-p-010",
+   "file": "090",
+   "from": "영토 작위 배분(",
+   "to": "영토 배분(",
+   "expect": 7,
+   "col": "json_ko",
+   "pathRe": "^\\.openingTitles\\[\\]\\.basis$",
+   "group": "basis"
+  },
+  {
+   "id": "v4all-p-011",
+   "file": "090",
+   "from": "봉건 작위",
+   "to": "봉건 품계",
+   "expect": 7,
+   "col": "json_ko",
+   "group": "disclaimer-ko"
+  },
+  {
+   "id": "v4all-p-012",
+   "file": "090",
+   "from": "작위·영지",
+   "to": "직위·영지",
+   "expect": 368,
+   "col": "json_ko",
+   "group": "disclaimer-ko"
+  },
+  {
+   "id": "v4all-p-013",
+   "file": "090",
+   "from": "\\btitles of nobility\\b|\\bnoble titles\\b|\\btitles of rank\\b",
+   "to": "ranks",
+   "expect": 105,
+   "col": "json",
+   "re": true,
+   "group": "disclaimer-en"
+  },
+  {
+   "id": "v4all-p-014",
+   "file": "090",
+   "from": "\\btitle of nobility\\b|\\bnoble title\\b|\\bnoble rank\\b|\\brank of nobility\\b|\\btitle of rank\\b|\\bpeerage\\b",
+   "to": "rank",
+   "expect": 216,
+   "col": "json",
+   "re": true,
+   "group": "disclaimer-en"
+  },
+  {
+   "id": "v4all-p-015",
+   "file": "090",
+   "from": "\\bfiefs\\b",
+   "to": "holdings",
+   "expect": 178,
+   "col": "json",
+   "re": true,
+   "group": "disclaimer-en"
+  },
+  {
+   "id": "v4all-p-016",
+   "file": "090",
+   "from": "\\bfief\\b",
+   "to": "holding",
+   "expect": 244,
+   "col": "json",
+   "re": true,
+   "group": "disclaimer-en"
+  }
+ ]
+}
