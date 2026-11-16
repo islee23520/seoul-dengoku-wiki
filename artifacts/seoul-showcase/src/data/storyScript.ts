@@ -65,7 +65,7 @@ export const SPEAKERS: Record<SpeakerId, Speaker> = {
   k1008: {
     id: "k1008", personId: "person-1008", characterId: "K1008", name: { ko: "민웅기", en: "Min Woong-gi" }, gender: "male",
     voice: "32-year-old man, patient, explains costs plainly, technician's calm",
-    title: { ko: "자유도시 봉신 · 통신 정비·배분 담당", en: "Free Cities vassal, comms repair and distribution" }, clan: "여흥 민씨", rank: "왕격 보존 (개인 정치 등급)", state: "자유도시",
+    title: { ko: "자유도시 통신 정비·배분 담당 · 대전선을 이끈 전직 수장", en: "Free Cities comms repair and distribution, former head of the Daejeon Line" }, clan: "여흥 민씨", rank: "이사회장의 측근", state: "자유도시",
     portrait: "portraits/person-1008.webp", tint: "hsl(186 45% 60%)",
   },
   k998: {
@@ -142,9 +142,9 @@ export const SCENES: StoryScene[] = [
     place: { ko: "2호선 터널", en: "Line 2 tunnel" }, year: "재편 전", bg: "tunnel",
     lines: [
       N("v3-six-01", "그 무렵, 서울에 나라들이 섰다.", "In that era, states arose in Seoul."),
-      N("v3-six-02", "나라마다 수도역이 따로 있었고, 군주를 세우는 방식도 선거, 세습, 도제 계승, 추대로 서로 달랐다.", "Each had its own capital station, and they chose rulers in different ways: election, inheritance, apprenticeship, acclamation.", { source: "sixteen" }),
+      N("v3-six-02", "나라마다 수도역이 따로 있었고, 수장을 세우는 방식도 선거, 세습, 도제 계승, 추대로 서로 달랐다.", "Each had its own capital station, and they chose their leaders in different ways: election, inheritance, apprenticeship, acclamation.", { source: "sixteen" }),
       S("v4-six-03", "iyen", "2116년에 세 나라로 묶이긴 했는데, 처음부터 지금처럼 편이 갈린 건 아니에요. 그전에 무슨 일이 있었는지부터 볼까요?", "They came together as three states in 2116, but the sides weren't always the ones we know today. Shall we look at what happened before that?", { cast: ["iyen"], source: "annals" }),
-      S("v3-six-04", "iyen", "근데 없어진 나라는 없어요. 원래 수장이랑 관직이 봉신으로 그대로 남았거든요. 오늘 만날 사람들한테 물어보면 더 잘 알 거예요.", "But none of them disappeared. Their rulers and offices stayed on as vassals. The people we're meeting today can tell you more.", { cast: ["iyen"], source: "annals" }),
+      S("v3-six-04", "iyen", "근데 없어진 나라는 없어요. 원래 수장이랑 관직이 더 큰 나라 아래에서 그대로 남았거든요. 오늘 만날 사람들한테 물어보면 더 잘 알 거예요.", "But none of them disappeared. Their leaders and offices carried on under the larger states. The people we're meeting today can tell you more.", { cast: ["iyen"], source: "annals" }),
     ],
   },
   {
@@ -175,7 +175,7 @@ export const SCENES: StoryScene[] = [
       N("v5-hist-10", "같은 해 6월, 당산에서는 화물 보관용 냉동 압축기가 일주일 동안 멈췄다. 규격맹은 교체 부품 순번을 바꾸고, 중앙정보부는 냉동 순번을 조정했다. 수문국·태욱그룹·여의도출자연합회도 배수와 봉인 상자, 화물 인수를 나누어 처리했다.", "That June, a cargo refrigeration compressor in Dangsan stopped for a week. The League rearranged replacement parts, and the Central Intelligence Division changed refrigeration schedules. Sumun-guk, Taeuk Group and the Yeouido Investors’ Federation handled drainage, sealed containers and cargo acceptance.", { caption: { ko: "2114 · 당산 냉동 압축기 정지", en: "2114 · Dangsan refrigeration failure" } }),
       N("v5-hist-11", "10월에는 암사에서 화차의 무게가 기록과 맞지 않았다. 동방사가 재검수에 나섰고, 신내운수는 환승 순번을 바꿨다. 성하그룹은 연료를, 흰십자단은 환자 이송을 확인했다. 아관사는 위조 표를 증거로 봉인했다.", "In October, freight weights at Amsa did not match their records. Dongbang-sa re-inspected the cars, and Sinnae Transport changed transfer schedules. Seongha Group checked fuel; the White Cross checked patient transport. Agwan-sa sealed forged labels as evidence.", { caption: { ko: "2114 · 암사 화차 중량 재검수", en: "2114 · Amsa freight re-inspection" } }),
       S("v5-hist-12", "iyen", "여기서 함께 일한 나라들을 기억해 두세요. 2116년의 구성과 많이 겹쳐요. 공동 업무만으로 합병이 이뤄졌다는 뜻은 아니에요. 다만 나라 사이의 관계를 볼 때, 전투 기록만 봐서는 놓치는 부분이 있다는 거예요.", "Remember which states worked together here. Many appear together again in 2116. That does not mean shared work alone brought about a merger. It means battle records tell only part of the story of relations between states.", { cast: ["iyen"], source: "annals" }),
-      N("v5-hist-13", "그리고 2116년, 연대기에 옛 세 국가의 성립이 기록된다. 수문국은 옛 규격맹 진영으로 옮겼다. 성하그룹·신내운수·흰십자단과 안국총림은 정부 아래 들어갔다. 정동노총은 옛 종교 진영에 남았다. 소속은 달라졌지만, 기존 수장과 관직은 봉신으로 이어졌다.", "Then, in 2116, the annals record the formation of the three old states. Sumun-guk moved to the old League camp. Seongha Group, Sinnae Transport, the White Cross and Anguk Chongnim came under the Government. Jeongdong Labor Federation remained in the old religious camp. Affiliations changed, but existing rulers and offices continued as vassals.", { caption: { ko: "2116 · 규격맹 / 정부 / 종교 연합 / 중립", en: "2116 · League / Government / Coalition / neutral" } }),
+      N("v5-hist-13", "그리고 2116년, 연대기에 옛 세 국가의 성립이 기록된다. 수문국은 옛 규격맹 진영으로 옮겼다. 성하그룹·신내운수·흰십자단과 안국총림은 정부 아래 들어갔다. 정동노총은 옛 종교 진영에 남았다. 소속은 달라졌지만, 기존 수장과 관직은 그대로 이어졌다.", "Then, in 2116, the annals record the formation of the three old states. Sumun-guk moved to the old League camp. Seongha Group, Sinnae Transport, the White Cross and Anguk Chongnim came under the Government. Jeongdong Labor Federation remained in the old religious camp. Affiliations changed, but existing leaders and offices carried on.", { caption: { ko: "2116 · 규격맹 / 정부 / 종교 연합 / 중립", en: "2116 · League / Government / Coalition / neutral" } }),
     ],
   },
   {
@@ -186,7 +186,7 @@ export const SCENES: StoryScene[] = [
       S("v3-rec-02", "k1007", "온민의의 김연규입니다. 앉으십시오. 대한민국정부부터 말씀드리겠습니다.", "Kim Yeon-gyu of Onminui. Please sit. I'll start with the Republic of Korea Government.", { cast: ["iyen", "k1007"], source: "profile" }),
       S("v3-rec-03", "k1007", "2116년에 정부는 동방사, 아관사, 환적국, 안국총림, 성하그룹, 신내운수, 흰십자단, 이렇게 일곱 나라를 거느리게 되었습니다.", "In 2116 the Government came to lead seven states: Dongbang-sa, Agwan-sa, Hwanjeok-guk, Anguk Chongnim, Seongha Group, Sinnae Transport and the White Cross.", { cast: ["iyen", "k1007"], source: "annals", caption: { ko: "정부 + 7국 · 청와대 중심 강북", en: "Government + 7 · Gangbuk around the Blue House" } }),
       S("v3-rec-04", "iyen", "그 일곱 나라는 지금도 자기 수장이 있죠?", "And those seven still have their own rulers?", { cast: ["iyen", "k1007"] }),
-      S("v3-rec-05", "k1007", "예. 기존 수장과 관직은 봉신으로 남았습니다. 저는 그 나라들과 맺은 조약 문서를 온민의 기록과 함께 모으고 있습니다.", "Yes. Their rulers and offices remained as vassals. I'm collecting the treaties with those states, along with Onminui's records.", { cast: ["iyen", "k1007"], source: "profile" }),
+      S("v3-rec-05", "k1007", "예. 기존 수장과 관직은 정부 아래에서 그대로 남았습니다. 저는 그 나라들과 맺은 조약 문서를 온민의 기록과 함께 모으고 있습니다.", "Yes. Their leaders and offices stayed on under the Government. I'm collecting the treaties with those states, along with Onminui's records.", { cast: ["iyen", "k1007"], source: "profile" }),
       S("v3-rec-06", "iyen", "윤서린 쪽에서는 아직 등재만 허락했다면서요?", "I heard Yoon Seo-rin's side has only allowed the registration so far?", { cast: ["iyen", "k1007"], source: "profile" }),
       S("v3-rec-07", "k1007", "맞습니다. 인준은 아직 받지 못했습니다. 그래서 등재된 것을 인준받았다고 말하지는 않습니다.", "That's right. We haven't received ratification yet, so I don't describe the registration as ratified.", { cast: ["iyen", "k1007"], source: "profile" }),
     ],
@@ -224,9 +224,9 @@ export const SCENES: StoryScene[] = [
     place: { ko: "수서역 대합실 배급 창구", en: "Suseo Station concourse, ration counter" }, year: "2126", bg: "suseo",
     lines: [
       S("v3-rel-01", "iyen", "민웅기 씨, 지금 바빠요? 신종목 씨가 중계기 부품 얘기 좀 물어보래요.", "Min Woong-gi, are you busy? Shin Jong-mok asked me to check on the relay parts.", { cast: ["iyen", "k1008"] }),
-      S("v3-rel-02", "k1008", "앉으세요. 민웅기입니다. 자유도시 봉신이고, 여기서 통신 정비랑 배분을 맡고 있어요.", "Have a seat. I'm Min Woong-gi. I'm a Free Cities vassal, and I handle comms repair and distribution here.", { cast: ["iyen", "k1008"], source: "profile" }),
-      S("v4-rel-03", "iyen", "왕격을 유지하고 계신다고 들었어요. 그러면 이곳도 직접 다스리시는 건가요?", "I heard you've retained a king's rank. Does that mean you govern this place yourself?", { cast: ["iyen", "k1008"], source: "profile" }),
-      S("v3-rel-04", "k1008", "아니요. 왕격은 제 개인 정치 등급으로 남은 거고, 땅이나 작위가 따라오는 건 아니에요. 저는 이 창구 일을 하는 사람이에요.", "No. The king's rank stayed on as my personal political grade. It doesn't come with land or a title. I'm the person who runs this counter.", { cast: ["iyen", "k1008"], source: "profile" }),
+      S("v3-rel-02", "k1008", "앉으세요. 민웅기입니다. 자유도시 이사회장 측근이고, 여기서 통신 정비랑 배분을 맡고 있어요.", "Have a seat. I'm Min Woong-gi. I work under the Free Cities' Chair of the Board, and I handle comms repair and distribution here.", { cast: ["iyen", "k1008"], source: "profile" }),
+      S("v4-rel-03", "iyen", "대전선을 이끄셨다고 들었어요. 그러면 이곳도 직접 다스리시는 건가요?", "I heard you used to lead the Daejeon Line. Does that mean you govern this place yourself?", { cast: ["iyen", "k1008"], source: "profile" }),
+      S("v3-rel-04", "k1008", "아니요. 대전선 수장이었던 건 지난 기록으로만 남은 거고, 땅이나 직함이 따라오는 건 아니에요. 저는 이 창구 일을 하는 사람이에요.", "No. Leading the Daejeon Line is only a past record now. It doesn't come with land or a title. I'm the person who runs this counter.", { cast: ["iyen", "k1008"], source: "profile" }),
       S("v3-rel-05", "k1008", "문제는 부품이에요. 중계기에 넣을 부품이랑 집 전기, 경작 도구 고칠 부품이 같은 상자에서 나오거든요.", "The problem is parts. The relay parts and the parts for household power and fixing farm tools all come out of the same box.", { cast: ["iyen", "k1008"], source: "profile" }),
       S("v3-rel-06", "iyen", "그럼 어느 쪽을 먼저 고쳐요?", "So which do you fix first?", { cast: ["iyen", "k1008"] }),
       S("v3-rel-07", "k1008", "제가 정하지 않아요. 주민들한테 각각 비용이 얼마인지 설명하고, 순서는 같이 정해요. 한쪽은 늦어질 수밖에 없어요.", "I don't decide that. I explain to the residents what each one costs, and we set the order together. One side is going to be late either way.", { cast: ["iyen", "k1008"], source: "profile" }),
