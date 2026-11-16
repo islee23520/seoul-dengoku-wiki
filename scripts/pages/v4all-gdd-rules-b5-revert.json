@@ -21,6 +21,21 @@
       "from": "[Dd]ucal|DUCAL|공작위 한도|공작위 직접|공작위 수|lord generation|자동 군주 생성|16국|16-country|16 countries|[Ss]ixteen state|16 states",
       "expect": 69,
       "reason": "잔여 계약 재설계는 범위 밖"
+    },
+    {
+      "id": "b5-restore-ducal-sheet-rows",
+      "docs": [
+        "doc.Archify-D11",
+        "doc.Mechanism-D11"
+      ],
+      "fields": [
+        "body_md",
+        "body_ko_md"
+      ],
+      "kind": "restore",
+      "from": "existing SP1 sp1\\.b38 limit, not new balance|reject over-limit, do not silently clamp",
+      "expect": 4,
+      "reason": "D11-DUCAL-BOUNDARY 공식 시트의 authority·clamp 줄도 잔여 계약이다"
     }
   ]
 }

@@ -58282,9 +58282,9 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "id": "D11-DUCAL-BOUNDARY",
       "expression": "recipientDirectDucalAfter = recipientDirectDucalBefore + indicator(grantedTitleIsDucal); eligible iff after <= 2",
       "unit": "direct ducal title count",
-      "authority": "v4 CANON-BIBLE 2.6 appointment rule, replaces the old sp1.b38 limit",
+      "authority": "existing SP1 sp1.b38 limit, not new balance",
       "rounding": "exact integer",
-      "clamp": "reject without a recorded appointment, do not silently downgrade"
+      "clamp": "reject over-limit, do not silently clamp"
     },
     {
       "id": "D11-SINGLE-RESULT",
@@ -58720,9 +58720,9 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "id": "D11-DUCAL-BOUNDARY",
       "expression": "recipientDirectDucalAfter = recipientDirectDucalBefore + indicator(grantedTitleIsDucal); eligible iff after <= 2",
       "unit": "direct ducal title count",
-      "authority": "v4 CANON-BIBLE 2.6 appointment rule, replaces the old sp1.b38 limit",
+      "authority": "existing SP1 sp1.b38 limit, not new balance",
       "rounding": "exact integer",
-      "clamp": "reject without a recorded appointment, do not silently downgrade"
+      "clamp": "reject over-limit, do not silently clamp"
     },
     {
       "id": "D11-SINGLE-RESULT",
