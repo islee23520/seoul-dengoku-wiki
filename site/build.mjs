@@ -63,7 +63,7 @@ const raw = {
 };
 
 // ---- UI strings (the only hand-written text; everything else comes from SQL) ----
-// Owner decision 2026-11-10: how each faction is governed. Titles (duchies) are held per district (gu).
+// Owner decision 2026-11-10: how each faction is governed. Rank is counted by the stations a person holds; districts (gu) are geographic only.
 const FACTION_STRUCTURE = {
   government: {
     en: 'North of the Han river. Led by President Kim Yeongyu. Ranks count the stationmasters a person commands: stationmaster (one station), division chief (2 to 4), bureau chief (5 to 9) and commissioner (10 or more, appointed by the President). The Government holds the officers, heavy weapons, tanks, large university hospitals and the original seed stock, but has no doctors: it gives first aid only, so badly wounded soldiers do not return. Its advanced weapons run fully only with Arc software.',
@@ -94,7 +94,7 @@ const UI = {
     cols: { id: 'ID', state: 'State', ruler: 'Ruler', capital: 'Capital', power: 'Power', faction: 'Faction', name: 'Name', title: 'Title', occupation: 'Occupation', rank: 'Rank' },
     fields: { stateId: 'State ID', government: 'Government', power: 'Power', origin: 'Origin', ruler: 'Ruler', capital: 'Capital', faction: 'Faction', base: 'Base', position: 'Position', occupation: 'Occupation', gender: 'Gender', stage: 'Stage', state: 'State', rank: 'Rank', title: 'Title' },
     members: 'Member states', centerRegion: 'Center', aiPosition: 'Stance toward AI', recorded: (n) => `${n} recorded people.`, independentNote: 'Affiliation is not yet decided in the canon.',
-    featStates: (n) => `Three factions - the Government, the Free City and Arc - and the duchies they hold.`, featPeople: (n) => `${n} characters with ranks, occupations and allegiances.`,
+    featStates: (n) => `Three factions - the Government, the Free City and Arc - and the stations they hold.`, featPeople: (n) => `${n} characters with ranks, occupations and allegiances.`,
     featWiki: (n) => `${n} articles on history, factions, ecology, culture and geography of a post-blackout Seoul.`, featGdd: (n) => `${n} documents covering rules, systems, art direction and decisions.`,
     featUpdates: 'What changed in the wiki and when.', tagline: meta.tagline, siteTitle: meta.title,
   },
@@ -110,8 +110,8 @@ const UI = {
     statesLead: (n, f) => `정부, 자유도시, 아크 ${f}개 세력이 지하철 세계를 다스립니다. 힘은 쥔 역의 수로 셉니다.`,
     peopleLead: (n) => `등장인물 ${n}명. 사이트 검색이나 브라우저 찾기(Ctrl+F)로 이름을 찾으세요.`,
     gddLead: (n) => `규칙, 아키텍처, 아트, 결정 기록, 레퍼런스, 시스템 설계 문서 ${n}개.`,
-    cols: { id: 'ID', state: '국가', ruler: '군주', capital: '수도', power: '국력', faction: '세력', name: '이름', title: '직함', occupation: '직업', rank: '직급' },
-    fields: { stateId: '국가 ID', government: '정체', power: '국력', origin: '기원', ruler: '군주', capital: '수도', faction: '세력', base: '거점', position: '직위', occupation: '직업', gender: '성별', stage: '단계', state: '국가', rank: '직급', title: '직함' },
+    cols: { id: 'ID', state: '국가', ruler: '수장', capital: '수도', power: '국력', faction: '세력', name: '이름', title: '직함', occupation: '직업', rank: '직급' },
+    fields: { stateId: '국가 ID', government: '정체', power: '국력', origin: '기원', ruler: '수장', capital: '수도', faction: '세력', base: '거점', position: '직위', occupation: '직업', gender: '성별', stage: '단계', state: '국가', rank: '직급', title: '직함' },
     members: '소속 국가', centerRegion: '중심 지역', aiPosition: 'AI에 대한 입장', recorded: (n) => `등록된 인물 ${n}명.`, independentNote: '정본에서 아직 소속이 정해지지 않았습니다.',
     featStates: (n) => `정부, 자유도시, 아크 세 세력과 그들이 쥔 역.`, featPeople: (n) => `직급, 직업, 소속을 가진 인물 ${n}명.`,
     featWiki: (n) => `대정전 이후 서울의 역사, 세력, 생태, 문화, 지리를 다룬 문서 ${n}개.`, featGdd: (n) => `규칙, 시스템, 아트 방향, 결정 기록을 담은 문서 ${n}개.`,
@@ -164,7 +164,7 @@ for (const L of [UI.en, UI.ko]) {
   const states = raw.states, people = raw.people, updates = raw.updates;
   const docsOf = (cid) => raw.docs.filter((d) => d.category_id === cid);
   const factionCount = factions.filter((x) => states.some((s) => s.faction_id === x.id)).length;
-  // Territory: one duchy per district (gu), faction per owner rule (map.mjs DISTRICT_FACTION).
+  // Territory: one geographic district (gu) per map title of rank 'duchy', faction per owner rule (map.mjs DISTRICT_FACTION).
   const titleById = new Map(raw.map.titles.map((t) => [t.id, t]));
   const duchyRows = raw.map.titles.filter((t) => t.rank === 'duchy');
   const guFaction = new Map(Object.entries(DISTRICT_FACTION).flatMap(([fid, gus]) => gus.map((gu) => [gu, fid])));
@@ -181,7 +181,7 @@ for (const L of [UI.en, UI.ko]) {
   const wikiGroups = raw.cats.filter((c) => !c.parent_id).map((c) => ({ text: g(c, 'label'), collapsed: true, items: docsOf(c.id).map((d) => ({ text: g(d, 'title'), link: P(`wiki/${d.slug}/`) })) })).filter((x) => x.items.length);
   write(`${L.prefix}wiki/index.md`, page(L.wiki, `# ${L.wiki}\n\n${L.wikiLead(raw.docs.length)}\n\n[${L.factions}](${P('wiki/factions/')}) · [${L.duchies} (${duchyRows.length})](${P('wiki/duchies/')}) · [${L.people} (${people.length})](${P('wiki/people/')}) · [${L.updates}](${P('wiki/updates/')})\n\n${raw.cats.filter((c) => !c.parent_id && docsOf(c.id).length).map((c) => `## ${g(c, 'label')}\n\n${g(c, 'summary')}\n\n${docsOf(c.id).map((d) => `- [${g(d, 'title')}](${P(`wiki/${d.slug}/`)})`).join('\n')}\n`).join('\n')}`));
 
-  // factions: territory = duchies; organizations = former states
+  // factions: territory = districts; organizations = former states
   const members = (fid) => states.filter((s) => s.faction_id === fid);
   write(`${L.prefix}wiki/factions/index.md`, page(L.factions, `# ${L.factions}\n\n${L.statesLead(states.length, factionCount)}\n\n${factions.filter((x) => members(x.id).length).map((x) => `## [${g(x, 'name')}](${P(`wiki/factions/${x.id}/`)})\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n${duchiesOf(x.id).map((t) => `- [${g(t, 'name')}](${P(`wiki/duchies/${duchySlug(t)}/`)})`).join('\n')}\n`).join('\n')}`));
   factions.filter((x) => members(x.id).length || people.some((p) => p.faction_id === x.id)).forEach((x) => {
@@ -193,7 +193,7 @@ for (const L of [UI.en, UI.ko]) {
   // /wiki/states/ now shows the three factions only (owner decision: the sixteen-state chart is retired)
   write(`${L.prefix}wiki/states/index.md`, page(L.factions, `# ${L.factions}\n\n${L.statesLead(states.length, factionCount)}\n\n${factions.filter((x) => x.id !== 'independent').map((x) => `## [${g(x, 'name')}](${P(`wiki/factions/${x.id}/`)})\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n- ${L.duchies}: ${duchiesOf(x.id).length} · ${L.people}: ${people.filter((p) => p.faction_id === x.id).length}\n`).join('\n')}
 \n---\n\n${L.orgsNote}`));
-  // duchies: one per district (gu), faction by owner rule
+  // districts (route /wiki/duchies/ kept): one per gu, faction by owner rule
   write(`${L.prefix}wiki/duchies/index.md`, page(L.duchies, `# ${L.duchies}\n\n${L === UI.ko ? '구는 지리 단위다. 각 구가 어느 세력 땅에 있는지와 역 수를 보인다. 힘은 구가 아니라 쥔 역의 수로 센다.' : 'Districts are geographic units. Each row shows which faction\'s land the district lies in and how many stations it has. Power is counted in stations held, not districts.'}\n\n| ${L === UI.ko ? '구' : 'District'} | ${L.factions} | ${L === UI.ko ? '옛 선거구' : 'Former constituencies'} | ${L === UI.ko ? '역' : 'Stations'} |\n| --- | --- | --- | --- |\n${duchyRows.map((t) => `| [${g(t, 'name')}](${P(`wiki/duchies/${duchySlug(t)}/`)}) | [${cell(factionName(guFaction.get(t.name_ko)))}](${P(`wiki/factions/${guFaction.get(t.name_ko)}/`)}) | ${JSON.parse(t.county_ids).length} | ${stationsOfGu(t.name_ko)} |`).join('\n')}`));
   duchyRows.forEach((t) => {
     const fid = guFaction.get(t.name_ko); const counties = JSON.parse(t.county_ids).map((id) => titleById.get(id)).filter(Boolean);

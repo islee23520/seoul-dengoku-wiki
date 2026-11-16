@@ -4,7 +4,7 @@
 //   map.titles.json         title polygons (geometry only, locale independent)                         (loaded when titles are shown)
 //   map.rail.json           physical rail polylines already projected to map units                     (loaded when rail is shown)
 
-// Owner rule: each district (gu) is one duchy. North of the Han river is the Government; Gangnam-side east is Arc; Gangnam-side west is the Free City.
+// Owner rule: each district (gu) belongs to one faction's land. North of the Han river is the Government; Gangnam-side east is Arc; Gangnam-side west is the Free City.
 // Gwanak-gu joins the Free City (owner answer 2026-11-10).
 export const DISTRICT_FACTION = {
   government: ['마포구', '용산구', '중구', '성동구', '광진구', '동대문구', '중랑구', '성북구', '종로구', '서대문구', '은평구', '강북구', '도봉구', '노원구'],
