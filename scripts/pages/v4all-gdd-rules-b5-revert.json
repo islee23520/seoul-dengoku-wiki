@@ -1,0 +1,26 @@
+{
+  "batch": "b5-revert-leftovers",
+  "baseRef": "17e813cf",
+  "basis": "소유자 범위 결정(Slack 1794815698): GDD 잔여 4건(기계 시트 d09/d11/d12의 잔여 계약, ADR-003, 지도 구성 스냅샷, 역 점령 30)은 범위 밖이다. 배치 1·3에서 바꾼 잔여 계약 줄(공작위 직접 보유 한도 계약, 수장 자동 생성 규칙, 16국 절차 페이로드)을 17e813cf 원문으로 되돌린다. 같은 문서의 일반 본문 용어 전환(작위→직함, 군주→세력 수장 등)은 유지한다.",
+  "rules": [
+    {
+      "id": "b5-restore-leftover-contract-lines",
+      "docs": [
+        "doc.Archify-D09",
+        "doc.Archify-D11",
+        "doc.Archify-D12",
+        "doc.Mechanism-D09",
+        "doc.Mechanism-D11",
+        "doc.Mechanism-D12"
+      ],
+      "fields": [
+        "body_md",
+        "body_ko_md"
+      ],
+      "kind": "restore",
+      "from": "[Dd]ucal|DUCAL|공작위 한도|공작위 직접|공작위 수|lord generation|자동 군주 생성|16국|16-country|16 countries|[Ss]ixteen state|16 states",
+      "expect": 69,
+      "reason": "잔여 계약 재설계는 범위 밖"
+    }
+  ]
+}

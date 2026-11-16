@@ -21351,7 +21351,7 @@ Current scope limit: No domain-specific new original-trpg module. Reuse existing
 - Same state, office, and edition — mixed, stale, or duplicate events, nonexistent institutions, and invalid office references are rejected. (Source: d09.b9.orderedSteps[0])
 - Office event types — loss, election attempt, acting authority, and restoration are handled independently. (Source: d09.b9.orderedSteps[0]; d09.b9.orderedSteps[1]; d09.b9.orderedSteps[2]; d09.b9.orderedSteps[8])
 - Only the target office becomes vacant — holder=null, effective=false, vacant=true. The institution, treasury, debt, lineage, and other offices are preserved. Status is selection-pending, and no successor is created. (Source: d09.b9.orderedSteps[1])
-- Approved state and office procedure — requires approvalStatus=approved and the fields required for each selector. Actual values for the three factions and institution payloads are not written automatically. (Source: d09.b9.orderedSteps[2]; d09.b9.orderedSteps[3])
+- Approved state and office procedure — requires approvalStatus=approved and the fields required for each selector. Actual values for the 16 states and institution payloads are not written automatically. (Source: d09.b9.orderedSteps[2]; d09.b9.orderedSteps[3])
 - Unique, explicitly eligible candidates — only candidates with eligible=true remain. Duplicate IDs are rejected. If there is no exam, no exam values are created. (Source: d09.b9.orderedSteps[3])
 - Exam score, unit, and threshold — an exam selector requires required=true, a registered scoreUnit and minimumScore, and known candidate scores. Only score≥minimum passes. (Source: d09.b9.orderedSteps[3])
 - Empty candidate set — the number of candidates is checked after eligibility and exams. (Source: d09.b9.orderedSteps[3]; d09.b9.orderedSteps[4])
@@ -21606,7 +21606,7 @@ Current scope limit: No domain-specific new original-trpg module. Reuse existing
 | Operation — Vacancy, Institution, and History Preserved | d09.b9.lifecycle.load | "Restore exact procedure and receipt revision. Do not rerun completed appointment or acting authorization. Unsupported/mixed version fails explicitly." |
 | Operation — Same State, Office, and Edition | d09.b9.failure | "Duplicate event, duplicate ballot, vote by an ineligible voter, vote for an ineligible candidate, mismatched state/office, stale revision, absent required per-state field, incompatible unit or concurrent revision rejects atomically." |
 | Pending — Excluded from Operational Path | d09.b9.proposalHeld[0].i​d | "P01" |
-| Pending — Excluded from Operational Path | d09.b9.proposalHeld[0].s​cope | "Three-faction office procedure payloads" |
+| Pending — Excluded from Operational Path | d09.b9.proposalHeld[0].s​cope | "Sixteen state/office procedure payloads" |
 | Pending — Excluded from Operational Path | d09.b9.proposalHeld[0].f​ields[0] | "selector" |
 | Pending — Excluded from Operational Path | d09.b9.proposalHeld[0].f​ields[1] | "candidateRule and actual eligibility records" |
 | Pending — Excluded from Operational Path | d09.b9.proposalHeld[0].f​ields[2] | "voterRule and actual elector roster" |
@@ -21712,7 +21712,7 @@ Current scope limit: No domain-specific new original-trpg module. Reuse existing
 | Operation — Procedure, Score, and Numeric Policy Undecided | d09.b11.decisions[3].row​ | "D22" |
 | Operation — Procedure, Score, and Numeric Policy Undecided | d09.b11.decisions[3].cho​senOption | "B" |
 | Operation — Procedure, Score, and Numeric Policy Undecided | d09.b11.decisions[3].app​lied | "Normalize units and field meanings first. Exact legitimacy formula, coefficient, clamp and consumer values remain later approvals." |
-| Operation — Procedure, Score, and Numeric Policy Undecided | d09.b11.approvalBoundary​ | "Sealed D09 Option A approves a separate explicit procedure record for each of the three factions. It does not approve one universal elector list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or state-specific payload. Missing payloads remain proposals and block appointment atomically." |
+| Operation — Procedure, Score, and Numeric Policy Undecided | d09.b11.approvalBoundary​ | "Sealed D09 Option A approves a separate explicit procedure record for each of the sixteen states. It does not approve one universal elector list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or state-specific payload. Missing payloads remain proposals and block appointment atomically." |
 | Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[0].​source | "task-26-remaining-decis​ions-20261008/decision-r​ecord.json" |
 | Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[0].​sha256 | "e531c6240930c5812305a7f​1d614484b78b36c7b66e0edc​a12cc9c9c90a4c8f0" |
 | Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[0].​anchors[0] | "D09" |
@@ -21741,7 +21741,7 @@ Current scope limit: No domain-specific new original-trpg module. Reuse existing
 | Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[4].​source | "task-24/cells/norland/D​09/verified-input-r1/Don​eClaim.json" |
 | Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[4].​sha256 | "6660c352e059dd5f98406a8​fa3db668288bf3b194145108​b69e987fe01bc859b" |
 | Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[4].​status | "documentary-comparison-​only" |
-| Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[4].​limit | "No Norland rank probability, politics threshold, faction-leader generation or turn/day conversion imported." |
+| Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[4].​limit | "No Norland rank probability, politics threshold, lord generation or turn/day conversion imported." |
 | Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[5].​source | "task-25-gurps-like-basi​s-20261008/basis.json" |
 | Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[5].​sha256 | "5d39843deba40e876bd8f0e​361a2596ace8a7311fc3ec48​c38242928628450b2" |
 | Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[5].​anchors[0] | "L-success" |
@@ -21813,7 +21813,7 @@ Current scope limit: No domain-specific new original-trpg module. Reuse existing
 | Operation — Office and Categorical Lawfulness Candidate | d09.b11.exceptions[8] | "Categorical legitimacy is not a numeric score" |
 | Operation — Procedure, Score, and Numeric Policy Undecided | d09.b11.validatorScope | "Typed evidence-carrier validation of the approved structural algorithm. Every concrete person, threshold, count, score, treasury and action in cases.json is an oracle fixture, not an adopted Seoul world value." |
 | Pending — Excluded from Operational Path | d09.b11.intentionallyPro​posal[0].id | "P01" |
-| Pending — Excluded from Operational Path | d09.b11.intentionallyPro​posal[0].scope | "The three-faction office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions" |
+| Pending — Excluded from Operational Path | d09.b11.intentionallyPro​posal[0].scope | "The sixteen state/office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions" |
 | Pending — Excluded from Operational Path | d09.b11.intentionallyPro​posal[0].reason | "D09-A requires individual records but does not contain their facts or numbers." |
 | Pending — Excluded from Operational Path | d09.b11.intentionallyPro​posal[0].status | "proposal-held" |
 | Pending — Excluded from Operational Path | d09.b11.intentionallyPro​posal[0].numericApproval​ | false |
@@ -21915,11 +21915,11 @@ D09의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 - 같은 국가·직위·판본 — 혼합·stale·중복 사건·없는 기관·잘못된 직위 참조 거부. (원문: d09.b9.orderedSteps[0])
 - 직위 사건 종류 — 상실·선출 시도·대행·복원을 독립 처리한다. (원문: d09.b9.orderedSteps[0]; d09.b9.orderedSteps[1]; d09.b9.orderedSteps[2]; d09.b9.orderedSteps[8])
 - 대상 직위만 공석 — holder=null,effective=fa​lse,vacant=true. 기관·국고·부채·계보·다른 직위 유지. selection-pending이며 후임 생성 없음. (원문: d09.b9.orderedSteps[1])
-- 승인된 국가·직위 절차 — approvalStatus=approved와​ selector별 필수 fields 필요. 실제 세 세력 값·기관 payload는 자동 작성하지 않는다. (원문: d09.b9.orderedSteps[2]; d09.b9.orderedSteps[3])
+- 승인된 국가·직위 절차 — approvalStatus=approved와​ selector별 필수 fields 필요. 실제 16국 값·기관 payload는 자동 작성하지 않는다. (원문: d09.b9.orderedSteps[2]; d09.b9.orderedSteps[3])
 - 고유 명시 적격 후보 — eligible=true 후보만 남긴다. ID 중복 거부. 시험 없으면 시험 값을 만들지 않는다. (원문: d09.b9.orderedSteps[3])
 - 시험 점수·단위·기준 — 시험 selector는 required=true,등록 scoreUnit·minimumScore와 알려진 후보 점수 필요. score≥minimum만 통과. (원문: d09.b9.orderedSteps[3])
 - 후보 집합 공백 — 자격·시험 후 후보 수 확인. (원문: d09.b9.orderedSteps[3]; d09.b9.orderedSteps[4])
-- 후보 없음·공석 유지 — no-candidate. 최고 기량·새 후보·자동 세력 수장 생성 없음. (원문: d09.b9.orderedSteps[3])
+- 후보 없음·공석 유지 — no-candidate. 최고 기량·새 후보·자동 군주 생성 없음. (원문: d09.b9.orderedSteps[3])
 - 투표·임명 경로 — vote/exam-then-vote와 appointment/exam-then-ap​pointment 분리. (원문: d09.b9.orderedSteps[4]; d09.b9.orderedSteps[6])
 - 고유 유권자·유효 한 표 — 유일 적격 유권자와 그들의 한 유효 후보 표만 허용. 중복·부적격 표를 합산하지 않는다. (원문: d09.b9.orderedSteps[4])
 - 등록 정족수 — count: 참여자≥requiredCount; all-eligible:참여자=적격 선거인 수. (원문: d09.b9.orderedSteps[4]; d09.b9.orderedSteps[5])
@@ -22170,7 +22170,7 @@ D09의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 공석·기관·이력 유지 | d09.b9.lifecycle.load | "Restore exact procedure and receipt revision. Do not rerun completed appointment or acting authorization. Unsupported/mixed version fails explicitly." |
 | 운용 — 같은 국가·직위·판본 | d09.b9.failure | "Duplicate event, duplicate ballot, vote by an ineligible voter, vote for an ineligible candidate, mismatched state/office, stale revision, absent required per-state field, incompatible unit or concurrent revision rejects atomically." |
 | 미결 — 운용 경로 제외 | d09.b9.proposalHeld[0].i​d | "P01" |
-| 미결 — 운용 경로 제외 | d09.b9.proposalHeld[0].s​cope | "Three-faction office procedure payloads" |
+| 미결 — 운용 경로 제외 | d09.b9.proposalHeld[0].s​cope | "Sixteen state/office procedure payloads" |
 | 미결 — 운용 경로 제외 | d09.b9.proposalHeld[0].f​ields[0] | "selector" |
 | 미결 — 운용 경로 제외 | d09.b9.proposalHeld[0].f​ields[1] | "candidateRule and actual eligibility records" |
 | 미결 — 운용 경로 제외 | d09.b9.proposalHeld[0].f​ields[2] | "voterRule and actual elector roster" |
@@ -22276,7 +22276,7 @@ D09의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 절차·점수·수치 정책 미결 | d09.b11.decisions[3].row​ | "D22" |
 | 운용 — 절차·점수·수치 정책 미결 | d09.b11.decisions[3].cho​senOption | "B" |
 | 운용 — 절차·점수·수치 정책 미결 | d09.b11.decisions[3].app​lied | "Normalize units and field meanings first. Exact legitimacy formula, coefficient, clamp and consumer values remain later approvals." |
-| 운용 — 절차·점수·수치 정책 미결 | d09.b11.approvalBoundary​ | "Sealed D09 Option A approves a separate explicit procedure record for each of the three factions. It does not approve one universal elector list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or state-specific payload. Missing payloads remain proposals and block appointment atomically." |
+| 운용 — 절차·점수·수치 정책 미결 | d09.b11.approvalBoundary​ | "Sealed D09 Option A approves a separate explicit procedure record for each of the sixteen states. It does not approve one universal elector list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or state-specific payload. Missing payloads remain proposals and block appointment atomically." |
 | 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[0].​source | "task-26-remaining-decis​ions-20261008/decision-r​ecord.json" |
 | 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[0].​sha256 | "e531c6240930c5812305a7f​1d614484b78b36c7b66e0edc​a12cc9c9c90a4c8f0" |
 | 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[0].​anchors[0] | "D09" |
@@ -22305,7 +22305,7 @@ D09의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[4].​source | "task-24/cells/norland/D​09/verified-input-r1/Don​eClaim.json" |
 | 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[4].​sha256 | "6660c352e059dd5f98406a8​fa3db668288bf3b194145108​b69e987fe01bc859b" |
 | 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[4].​status | "documentary-comparison-​only" |
-| 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[4].​limit | "No Norland rank probability, politics threshold, faction-leader generation or turn/day conversion imported." |
+| 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[4].​limit | "No Norland rank probability, politics threshold, lord generation or turn/day conversion imported." |
 | 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[5].​source | "task-25-gurps-like-basi​s-20261008/basis.json" |
 | 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[5].​sha256 | "5d39843deba40e876bd8f0e​361a2596ace8a7311fc3ec48​c38242928628450b2" |
 | 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[5].​anchors[0] | "L-success" |
@@ -22377,7 +22377,7 @@ D09의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 직위·범주 적법성 후보 | d09.b11.exceptions[8] | "Categorical legitimacy is not a numeric score" |
 | 운용 — 절차·점수·수치 정책 미결 | d09.b11.validatorScope | "Typed evidence-carrier validation of the approved structural algorithm. Every concrete person, threshold, count, score, treasury and action in cases.json is an oracle fixture, not an adopted Seoul world value." |
 | 미결 — 운용 경로 제외 | d09.b11.intentionallyPro​posal[0].id | "P01" |
-| 미결 — 운용 경로 제외 | d09.b11.intentionallyPro​posal[0].scope | "The three-faction office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions" |
+| 미결 — 운용 경로 제외 | d09.b11.intentionallyPro​posal[0].scope | "The sixteen state/office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions" |
 | 미결 — 운용 경로 제외 | d09.b11.intentionallyPro​posal[0].reason | "D09-A requires individual records but does not contain their facts or numbers." |
 | 미결 — 운용 경로 제외 | d09.b11.intentionallyPro​posal[0].status | "proposal-held" |
 | 미결 — 운용 경로 제외 | d09.b11.intentionallyPro​posal[0].numericApproval​ | false |
@@ -23199,16 +23199,16 @@ This page presents, as structural diagrams, the machine inputs, verification ord
 {"domainId":"D11","diagramId":"d11-flow","moduleTitle":"D11 Operation Flow"}
 ```
 
-Consumer Contract (authority-and-conservation-no-roll): Title count conserved; delegation subset of actually held scope without changing holder. The old direct holding cap is replaced by the v4 appointment rule: a ten-station tier office is granted only by the faction''s appointing authority, not by d10 rating.
+Consumer Contract (authority-and-conservation-no-roll): Title count conserved; delegation subset of actually held scope without changing holder. Preserve existing direct ducal limit 2 as documented old contract, not d10 rating.
 
 ## Calculation and Output
 
 ```text
 D11-TITLE-CONSERVATION [] N_after = N_before; H_after(T) = recipient iff valid grant commit; count(holders(T)) = 1
-D11-DUCAL-BOUNDARY [] tenStationTierEligible = appointmentRecorded(appointingAuthority(faction), recipient); appointingAuthority: government President, Arc Hierophant, Free City Board; no direct-holding cap
+D11-DUCAL-BOUNDARY [] recipientDirectDucalAfter = recipientDirectDucalBefore + indicator(grantedTitleIsDucal); eligible iff after <= 2
 D11-SINGLE-RESULT [] committedEffects(eventId) <= 1
 D11-F1 [Candidate · Pre-approval] titleCountAfter=titleCountBefore; valid grant changes one legal holder; delegatedScope subsetOf actuallyHeldScope while holder unchanged
-D11-F2 [Candidate · Pre-approval] tenStationTierEligible=appointmentRecorded(appointingAuthority); no direct-holding cap; new result at most once
+D11-F2 [Candidate · Pre-approval] directDucalAfter=directDucalBefore+indicator(isDucal); existing eligibility limit <=2; new result at most once
 
 ```
 
@@ -23228,7 +23228,7 @@ The remaining contract leaves of D11 are preserved as a reference ledger linked 
 - signerLoss — enum (contract disposition)
 - superiorEdges — array of title-pair references (contract-edge)
 
-The data owners are D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order. The maintained contracts are D11-TITLE-CONSERVATION, D11-DUCAL-BOUNDARY, and D11-SINGLE-RESULT. The state ownership boundaries are title holder/controller,office,delegation scope,ten-station tier appointment,contract clause,ratification,key/location handover,receipts. Commit rules: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below.
+The data owners are D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order. The maintained contracts are D11-TITLE-CONSERVATION, D11-DUCAL-BOUNDARY, and D11-SINGLE-RESULT. The state ownership boundaries are title holder/controller,office,delegation scope,ducal count,contract clause,ratification,key/location handover,receipts. Commit rules: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below.
 
 ## Error and Hold Codes
 
@@ -23247,7 +23247,7 @@ Current scope limits: No domain-specific new original-trpg module. Reuse existin
 ## Processing by Flow Node and Original Steps
 
 - Title to Be Granted — [Title Grant] Verify the existing title, its current holder, and its revision. A title lower than the grantor''s rank and a recipient who is a member of that state are required. (Source: d11.b9.orderedSteps[4])
-- Ten-Station Tier Appointment Check — [Title Grant] A ten-station tier office (Commissioner, Cardinal, Director) is granted only when the faction''s appointing authority (the President, the Hierophant, the Board) has recorded the appointment. Without that record the grant is rejected and not downgraded to another office. (Source: d11.b9.formulaSheet[1].e​xpression; d11.b9.formulaSheet[1].u​nit; d11.b9.formulaSheet[1].a​uthority; d11.b9.formulaSheet[1].r​ounding; d11.b9.formulaSheet[1].c​lamp)
+- Ducal Title Limit Check — [Title Grant] Add 1 to the direct ducal title count only if the title being granted is ducal. If the result exceeds 2, reject it rather than truncating. (Source: d11.b9.formulaSheet[1].e​xpression; d11.b9.formulaSheet[1].u​nit; d11.b9.formulaSheet[1].a​uthority; d11.b9.formulaSheet[1].r​ounding; d11.b9.formulaSheet[1].c​lamp)
 - Consent, Survival, and Ritual — [Title Grant] Separately verify the recipient''s consent, a living and lawful ratifying authority, and the required ritual, record, and relic grounds. (Source: see the domain contract flow and detail items)
 - Change of Holder of the Same Title — [Title Grant] When all conditions are met, the same title is removed from one holder list and enters exactly one recipient''s list. The total number of titles and institutional property are preserved. (Source: d11.b9.commitPoint)
 - Physical Handover Kept Separate — [Title Grant] Without the required ritual grounds, a legal grant is impossible. If the key is missing after a legal grant, the right is held but recovery and operational handover remain incomplete. (Source: d11.b11.stateSheet.custo​dy)
@@ -23352,7 +23352,7 @@ Current scope limits: No domain-specific new original-trpg module. Reuse existin
 | Operation — Exact Input and Units | d11.b9.fields[5].name | "grantorRank,titleRank,r​ecipientDucalCount" |
 | Operation — Exact Input and Units | d11.b9.fields[5].type | "safe integer" |
 | Operation — Exact Input and Units | d11.b9.fields[5].unit | "ordered-rank / directly-held-title-coun​t" |
-| Operation — Exact Input and Units | d11.b9.fields[5].range | "nonnegative authored rank/count; ten-station tier requires a recorded appointment" |
+| Operation — Exact Input and Units | d11.b9.fields[5].range | "nonnegative authored rank/count; ducal direct holdings <=2" |
 | Operation — Exact Input and Units | d11.b9.fields[5].null | "reject E_INPUT" |
 | Operation — Exact Input and Units | d11.b9.fields[5].owner | "D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order" |
 | Operation — Exact Input and Units | d11.b9.fields[5].read | "D01 identity/alive/capabilit​y; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/​superior contract; D13 custody/included rights; D18 accepted event order and rule version" |
@@ -23428,7 +23428,7 @@ Current scope limits: No domain-specific new original-trpg module. Reuse existin
 | Operation — Current Edition and Action Selection | d11.b9.orderedSteps[1] | "Match existing result by event ID and full payload before reapplying. Reject changed replay." |
 | Operation — Current Edition and Action Selection | d11.b9.orderedSteps[2] | "Read title identity and revision; refuse stale snapshot without mutations." |
 | Operation — Current Edition and Action Selection | d11.b9.orderedSteps[3] | "Check capability, actual authority, location/delivery, exclusive resource reservations and counterpart consent/institution in D03 order." |
-| Operation — Subordinate Title to Be Granted | d11.b9.orderedSteps[4] | "For grant require existing lower title, country-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. A ten-station tier office requires the faction appointing authority''s recorded appointment." |
+| Operation — Subordinate Title to Be Granted | d11.b9.orderedSteps[4] | "For grant require existing lower title, country-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. Direct ducal holding after addition cannot exceed existing limit two." |
 | Operation — Delegation Within Held Scope | d11.b9.orderedSteps[5] | "For recall require approved existing clause, breach evidence and applicable ratification. For delegation keep legal holder and restrict scope to actually held rights. Appointment touches office powers only." |
 | Operation — Current Edition and Action Selection | d11.b9.orderedSteps[6] | "Emit exactly one legal delta for grant/recall. Preserve ID count, institutional property, omitted assets, original-owner rights and completed progress." |
 | Operation — Illegal Seizure | d11.b9.orderedSteps[7] | "Assess physical handover separately. Unlawful seizure affects control/custody and opens dispute/betrayal, never lawful holder or recall." |
@@ -23441,11 +23441,11 @@ Current scope limits: No domain-specific new original-trpg module. Reuse existin
 | Operation — Current Edition and Action Selection | d11.b9.formulaSheet[0].r​ounding | "none; exact integer/set operation" |
 | Operation — Current Edition and Action Selection | d11.b9.formulaSheet[0].c​lamp | "none" |
 | Historical Reference — Excluded from Operational Path | d11.b9.formulaSheet[1].i​d | "D11-DUCAL-BOUNDARY" |
-| Operation — Ten-Station Tier Appointment Check | d11.b9.formulaSheet[1].e​xpression | "tenStationTierEligi​ble = appointmentRecorded(appointingAuth​ority(faction), recipient)" |
-| Operation — Ten-Station Tier Appointment Check | d11.b9.formulaSheet[1].u​nit | "recorded ten-station tier appointments" |
-| Operation — Ten-Station Tier Appointment Check | d11.b9.formulaSheet[1].a​uthority | "v4 CANON-BIBLE 2.6 appointment rule, replaces the old sp1.b38 limit" |
-| Operation — Ten-Station Tier Appointment Check | d11.b9.formulaSheet[1].r​ounding | "exact integer" |
-| Operation — Ten-Station Tier Appointment Check | d11.b9.formulaSheet[1].c​lamp | "reject without a recorded appointment, do not silently downgrade" |
+| Operation — Ducal Title Limit Check | d11.b9.formulaSheet[1].e​xpression | "recipientDirectDucalAft​er = recipientDirectDucalBefo​re + indicator(grantedTitleIs​Ducal); eligible iff after <= 2" |
+| Operation — Ducal Title Limit Check | d11.b9.formulaSheet[1].u​nit | "direct ducal title count" |
+| Operation — Ducal Title Limit Check | d11.b9.formulaSheet[1].a​uthority | "existing SP1 sp1.b38 limit, not new balance" |
+| Operation — Ducal Title Limit Check | d11.b9.formulaSheet[1].r​ounding | "exact integer" |
+| Operation — Ducal Title Limit Check | d11.b9.formulaSheet[1].c​lamp | "reject over-limit, do not silently clamp" |
 | Historical Reference — Excluded from Operational Path | d11.b9.formulaSheet[2].i​d | "D11-SINGLE-RESULT" |
 | Operation — Current Edition and Action Selection | d11.b9.formulaSheet[2].e​xpression | "committedEffects(eventI​d) <= 1" |
 | Operation — Current Edition and Action Selection | d11.b9.formulaSheet[2].u​nit | "logical commits per permanent event" |
@@ -23464,7 +23464,7 @@ Current scope limits: No domain-specific new original-trpg module. Reuse existin
 | Operation — Comparing Identical Event Content | d11.b9.failure | "D18 supplies accepted order; first valid same-revision title update changes revision and makes the other proposal stale. No invented priority/tie key. Duplicate identical event returns no second effect; same ID with different payload is explicit conflict." |
 | Held — excluded from operational path | d11.b9.proposalHeld[0].i​d | "P11-COUNTRY-RATIFICATIO​N" |
 | Held — excluded from operational path | d11.b9.proposalHeld[0].o​wner | "D09" |
-| Held — excluded from operational path | d11.b9.proposalHeld[0].d​escription | "Actual three-faction ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar." |
+| Held — excluded from operational path | d11.b9.proposalHeld[0].d​escription | "Actual 16-country ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar." |
 | Held — excluded from operational path | d11.b9.proposalHeld[0].v​alues | null |
 | Held — excluded from operational path | d11.b9.proposalHeld[0].d​ecision | "T68-D09-COUNTRY-LAWS A is authoring direction only" |
 | Held — excluded from operational path | d11.b9.proposalHeld[0].s​tatus | "proposal-held" |
@@ -23588,16 +23588,16 @@ Current scope limits: No domain-specific new original-trpg module. Reuse existin
 {"domainId":"D11","diagramId":"d11-flow","moduleTitle":"D11 운용 흐름"}
 ```
 
-소비자 계약(authority-and-conservation-no-roll): Title count conserved; delegation subset of actually held scope without changing holder. The old direct holding cap is replaced by the v4 appointment rule: a ten-station tier office is granted only by the faction''s appointing authority, not by d10 rating.
+소비자 계약(authority-and-conservation-no-roll): Title count conserved; delegation subset of actually held scope without changing holder. Preserve existing direct ducal limit 2 as documented old contract, not d10 rating.
 
 ## 계산과 출력
 
 ```text
 D11-TITLE-CONSERVATION [] N_after = N_before; H_after(T) = recipient iff valid grant commit; count(holders(T)) = 1
-D11-DUCAL-BOUNDARY [] tenStationTierEligible = appointmentRecorded(appointingAuthority(faction), recipient); appointingAuthority: government President, Arc Hierophant, Free City Board; no direct-holding cap
+D11-DUCAL-BOUNDARY [] recipientDirectDucalAfter = recipientDirectDucalBefore + indicator(grantedTitleIsDucal); eligible iff after <= 2
 D11-SINGLE-RESULT [] committedEffects(eventId) <= 1
 D11-F1 [후보·승인 전] titleCountAfter=titleCountBefore; valid grant changes one legal holder; delegatedScope subsetOf actuallyHeldScope while holder unchanged
-D11-F2 [후보·승인 전] tenStationTierEligible=appointmentRecorded(appointingAuthority); no direct-holding cap; new result at most once
+D11-F2 [후보·승인 전] directDucalAfter=directDucalBefore+indicator(isDucal); existing eligibility limit <=2; new result at most once
 
 ```
 
@@ -23617,7 +23617,7 @@ D11의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 - signerLoss — enum (contract disposition)
 - superiorEdges — array of title-pair references (contract-edge)
 
-자료 소유자는 D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order, 유지 계약은 D11-TITLE-CONSERVATION·D11-DUCAL-BOUNDARY·D11-SINGLE-RESULT다. 상태 소유 경계는 title holder/controller,office,delegation scope,ten-station tier appointment,contract clause,ratification,key/location handover,receipts. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below.
+자료 소유자는 D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order, 유지 계약은 D11-TITLE-CONSERVATION·D11-DUCAL-BOUNDARY·D11-SINGLE-RESULT다. 상태 소유 경계는 title holder/controller,office,delegation scope,ducal count,contract clause,ratification,key/location handover,receipts. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below.
 
 ## 오류·보류 코드
 
@@ -23636,7 +23636,7 @@ D11의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 ## 흐름 노드별 처리와 원문 단계
 
 - 수여할 하위 직함 — [직함 수여] 기존 직함과 현재 보유자·개정을 확인한다. 수여자의 지위보다 낮은 직함과 해당 국가 구성원 수혜자가 필요하다. (원문: d11.b9.orderedSteps[4])
-- 10 이상 단계 임명 검사 — [직함 수여] 10 이상 단계 직위(청장·추기경·이사)는 세력별 임명권자(대통령·교주·이사회)의 임명 기록이 있을 때만 준다. 기록이 없으면 거부하며 다른 직위로 낮춰 주지 않는다. (원문: d11.b9.formulaSheet[1].e​xpression; d11.b9.formulaSheet[1].u​nit; d11.b9.formulaSheet[1].a​uthority; d11.b9.formulaSheet[1].r​ounding; d11.b9.formulaSheet[1].c​lamp)
+- 공작위 한도 검사 — [작위 수여] 직접 공작위 수에 수여 대상이 공작위일 때만 1을 더한다. 결과가 2를 넘으면 거부하며 잘라내지 않는다. (원문: d11.b9.formulaSheet[1].e​xpression; d11.b9.formulaSheet[1].u​nit; d11.b9.formulaSheet[1].a​uthority; d11.b9.formulaSheet[1].r​ounding; d11.b9.formulaSheet[1].c​lamp)
 - 동의·생존·의례 — [직함 수여] 수혜자 동의와 살아 있는 적법 인준권자, 필요한 의례·기록·유물 근거를 각각 확인한다. (원문: 도메인 계약 흐름과 상세 항목 참조)
 - 동일 직함 보유자 변경 — [직함 수여] 모든 조건 충족 시 같은 직함이 한 보유 목록에서 빠지고 정확히 한 수혜자 목록에 들어간다. 전체 직함 수와 기관 재산은 보존한다. (원문: d11.b9.commitPoint)
 - 실물 인계 별도 — [직함 수여] 필수 의례 근거가 없으면 법적 수여 불가다. 법적 수여 후 열쇠가 없으면 권리는 보유하되 회수·운영 인계가 미완이다. (원문: d11.b11.stateSheet.custo​dy)
@@ -23741,7 +23741,7 @@ D11의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 정확 입력·단위 | d11.b9.fields[5].name | "grantorRank,titleRank,r​ecipientDucalCount" |
 | 운용 — 정확 입력·단위 | d11.b9.fields[5].type | "safe integer" |
 | 운용 — 정확 입력·단위 | d11.b9.fields[5].unit | "ordered-rank / directly-held-title-coun​t" |
-| 운용 — 정확 입력·단위 | d11.b9.fields[5].range | "nonnegative authored rank/count; ten-station tier requires a recorded appointment" |
+| 운용 — 정확 입력·단위 | d11.b9.fields[5].range | "nonnegative authored rank/count; ducal direct holdings <=2" |
 | 운용 — 정확 입력·단위 | d11.b9.fields[5].null | "reject E_INPUT" |
 | 운용 — 정확 입력·단위 | d11.b9.fields[5].owner | "D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order" |
 | 운용 — 정확 입력·단위 | d11.b9.fields[5].read | "D01 identity/alive/capabilit​y; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/​superior contract; D13 custody/included rights; D18 accepted event order and rule version" |
@@ -23817,7 +23817,7 @@ D11의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 현재 판본·행위 선택 | d11.b9.orderedSteps[1] | "Match existing result by event ID and full payload before reapplying. Reject changed replay." |
 | 운용 — 현재 판본·행위 선택 | d11.b9.orderedSteps[2] | "Read title identity and revision; refuse stale snapshot without mutations." |
 | 운용 — 현재 판본·행위 선택 | d11.b9.orderedSteps[3] | "Check capability, actual authority, location/delivery, exclusive resource reservations and counterpart consent/institution in D03 order." |
-| 운용 — 수여할 하위 직함 | d11.b9.orderedSteps[4] | "For grant require existing lower title, country-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. A ten-station tier office requires the faction appointing authority''s recorded appointment." |
+| 운용 — 수여할 하위 작위 | d11.b9.orderedSteps[4] | "For grant require existing lower title, country-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. Direct ducal holding after addition cannot exceed existing limit two." |
 | 운용 — 보유 범위 내 위임 | d11.b9.orderedSteps[5] | "For recall require approved existing clause, breach evidence and applicable ratification. For delegation keep legal holder and restrict scope to actually held rights. Appointment touches office powers only." |
 | 운용 — 현재 판본·행위 선택 | d11.b9.orderedSteps[6] | "Emit exactly one legal delta for grant/recall. Preserve ID count, institutional property, omitted assets, original-owner rights and completed progress." |
 | 운용 — 불법 압류 | d11.b9.orderedSteps[7] | "Assess physical handover separately. Unlawful seizure affects control/custody and opens dispute/betrayal, never lawful holder or recall." |
@@ -23830,11 +23830,11 @@ D11의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 현재 판본·행위 선택 | d11.b9.formulaSheet[0].r​ounding | "none; exact integer/set operation" |
 | 운용 — 현재 판본·행위 선택 | d11.b9.formulaSheet[0].c​lamp | "none" |
 | 역사 참조 — 운용 경로 제외 | d11.b9.formulaSheet[1].i​d | "D11-DUCAL-BOUNDARY" |
-| 운용 — 10 이상 단계 임명 검사 | d11.b9.formulaSheet[1].e​xpression | "tenStationTierEligi​ble = appointmentRecorded(appointingAuth​ority(faction), recipient)" |
-| 운용 — 10 이상 단계 임명 검사 | d11.b9.formulaSheet[1].u​nit | "recorded ten-station tier appointments" |
-| 운용 — 10 이상 단계 임명 검사 | d11.b9.formulaSheet[1].a​uthority | "v4 CANON-BIBLE 2.6 appointment rule, replaces the old sp1.b38 limit" |
-| 운용 — 10 이상 단계 임명 검사 | d11.b9.formulaSheet[1].r​ounding | "exact integer" |
-| 운용 — 10 이상 단계 임명 검사 | d11.b9.formulaSheet[1].c​lamp | "reject without a recorded appointment, do not silently downgrade" |
+| 운용 — 공작위 한도 검사 | d11.b9.formulaSheet[1].e​xpression | "recipientDirectDucalAft​er = recipientDirectDucalBefo​re + indicator(grantedTitleIs​Ducal); eligible iff after <= 2" |
+| 운용 — 공작위 한도 검사 | d11.b9.formulaSheet[1].u​nit | "direct ducal title count" |
+| 운용 — 공작위 한도 검사 | d11.b9.formulaSheet[1].a​uthority | "existing SP1 sp1.b38 limit, not new balance" |
+| 운용 — 공작위 한도 검사 | d11.b9.formulaSheet[1].r​ounding | "exact integer" |
+| 운용 — 공작위 한도 검사 | d11.b9.formulaSheet[1].c​lamp | "reject over-limit, do not silently clamp" |
 | 역사 참조 — 운용 경로 제외 | d11.b9.formulaSheet[2].i​d | "D11-SINGLE-RESULT" |
 | 운용 — 현재 판본·행위 선택 | d11.b9.formulaSheet[2].e​xpression | "committedEffects(eventI​d) <= 1" |
 | 운용 — 현재 판본·행위 선택 | d11.b9.formulaSheet[2].u​nit | "logical commits per permanent event" |
@@ -23853,7 +23853,7 @@ D11의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 동일 사건 내용 비교 | d11.b9.failure | "D18 supplies accepted order; first valid same-revision title update changes revision and makes the other proposal stale. No invented priority/tie key. Duplicate identical event returns no second effect; same ID with different payload is explicit conflict." |
 | 보류 — 운용 경로 제외 | d11.b9.proposalHeld[0].i​d | "P11-COUNTRY-RATIFICATIO​N" |
 | 보류 — 운용 경로 제외 | d11.b9.proposalHeld[0].o​wner | "D09" |
-| 보류 — 운용 경로 제외 | d11.b9.proposalHeld[0].d​escription | "Actual three-faction ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar." |
+| 보류 — 운용 경로 제외 | d11.b9.proposalHeld[0].d​escription | "Actual 16-country ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar." |
 | 보류 — 운용 경로 제외 | d11.b9.proposalHeld[0].v​alues | null |
 | 보류 — 운용 경로 제외 | d11.b9.proposalHeld[0].d​ecision | "T68-D09-COUNTRY-LAWS A is authoring direction only" |
 | 보류 — 운용 경로 제외 | d11.b9.proposalHeld[0].s​tatus | "proposal-held" |
@@ -24243,7 +24243,7 @@ Current scope limits: No domain-specific new original-trpg module. Reuse existin
 | Held — excluded from operational path | d12.b9.proposalHeld[2].i​d | "P-COUNTRIES" |
 | Held — excluded from operational path | d12.b9.proposalHeld[2].s​tatus | "proposal-held" |
 | Held — excluded from operational path | d12.b9.proposalHeld[2].o​wner | "D09" |
-| Held — excluded from operational path | d12.b9.proposalHeld[2].d​etail | "Actual three-faction electors, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values." |
+| Held — excluded from operational path | d12.b9.proposalHeld[2].d​etail | "Actual 16-country electors, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values." |
 | Held — excluded from operational path | d12.b9.proposalHeld[2].n​umericApproval | false |
 | Held — excluded from operational path | d12.b9.proposalHeld[2].o​perative | false |
 | Held — excluded from operational path | d12.b9.proposalHeld[3].i​d | "P-RIGHTS" |
@@ -24379,7 +24379,7 @@ Current scope limits: No domain-specific new original-trpg module. Reuse existin
 | Operation — Current Edition and Action Selection | d12.b11.authority.sealed​Selections[1].row | "D09" |
 | Operation — Current Edition and Action Selection | d12.b11.authority.sealed​Selections[1].decisionId​ | "T68-D09-COUNTRY-LAWS" |
 | Operation — Current Edition and Action Selection | d12.b11.authority.sealed​Selections[1].chosenOpti​on | "A" |
-| Operation — Current Edition and Action Selection | d12.b11.authority.sealed​Selections[1].applicatio​n | "Each of the three factions supplies its own electors, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records." |
+| Operation — Current Edition and Action Selection | d12.b11.authority.sealed​Selections[1].applicatio​n | "Each of 16 countries supplies its own electors, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records." |
 | Operation — Current Edition and Action Selection | d12.b11.authority.sealed​Selections[2].row | "D10" |
 | Operation — Current Edition and Action Selection | d12.b11.authority.sealed​Selections[2].decisionId​ | "T68-D12-PERMANENT-DETEN​TION" |
 | Operation — Current Edition and Action Selection | d12.b11.authority.sealed​Selections[2].chosenOpti​on | "A" |
@@ -24500,7 +24500,7 @@ Current scope limits: No domain-specific new original-trpg module. Reuse existin
 | Operation — Current Edition and Action Selection | d12.b11.decisionDisposit​ion[8].decisionId | "T68-D09-COUNTRY-LAWS" |
 | Operation — Current Edition and Action Selection | d12.b11.decisionDisposit​ion[8].subdecisionKey | "country-institutions-re​sidual" |
 | Operation — Current Edition and Action Selection | d12.b11.decisionDisposit​ion[8].chosenOption | "A" |
-| Operation — Current Edition and Action Selection | d12.b11.decisionDisposit​ion[8].selectedLabel | "Specify electors, quorum, resolver, confirmation, and proxy for each of the three factions" |
+| Operation — Current Edition and Action Selection | d12.b11.decisionDisposit​ion[8].selectedLabel | "Specify electors, quorum, resolver, confirmation, and proxy for each of the 16 states" |
 | Operation — Current Edition and Action Selection | d12.b11.decisionDisposit​ion[8].disposition | "APPLIED_BOUNDED_WITH_UP​STREAM_DEFER" |
 | Operation — Current Edition and Action Selection | d12.b11.decisionDisposit​ion[8].boundary | "D09 country-specific procedure; OFFICE/P-COUNTRIES" |
 | Operation — Current Edition and Action Selection | d12.b11.decisionDisposit​ion[8].scope | "Preserve selected direction; no new concrete values/records approved." |
@@ -25066,7 +25066,7 @@ D12의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 보류 — 운용 경로 제외 | d12.b9.proposalHeld[2].i​d | "P-COUNTRIES" |
 | 보류 — 운용 경로 제외 | d12.b9.proposalHeld[2].s​tatus | "proposal-held" |
 | 보류 — 운용 경로 제외 | d12.b9.proposalHeld[2].o​wner | "D09" |
-| 보류 — 운용 경로 제외 | d12.b9.proposalHeld[2].d​etail | "Actual three-faction electors, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values." |
+| 보류 — 운용 경로 제외 | d12.b9.proposalHeld[2].d​etail | "Actual 16-country electors, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values." |
 | 보류 — 운용 경로 제외 | d12.b9.proposalHeld[2].n​umericApproval | false |
 | 보류 — 운용 경로 제외 | d12.b9.proposalHeld[2].o​perative | false |
 | 보류 — 운용 경로 제외 | d12.b9.proposalHeld[3].i​d | "P-RIGHTS" |
@@ -25202,7 +25202,7 @@ D12의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 현재 판본·행위 선택 | d12.b11.authority.sealed​Selections[1].row | "D09" |
 | 운용 — 현재 판본·행위 선택 | d12.b11.authority.sealed​Selections[1].decisionId​ | "T68-D09-COUNTRY-LAWS" |
 | 운용 — 현재 판본·행위 선택 | d12.b11.authority.sealed​Selections[1].chosenOpti​on | "A" |
-| 운용 — 현재 판본·행위 선택 | d12.b11.authority.sealed​Selections[1].applicatio​n | "Each of the three factions supplies its own electors, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records." |
+| 운용 — 현재 판본·행위 선택 | d12.b11.authority.sealed​Selections[1].applicatio​n | "Each of 16 countries supplies its own electors, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records." |
 | 운용 — 현재 판본·행위 선택 | d12.b11.authority.sealed​Selections[2].row | "D10" |
 | 운용 — 현재 판본·행위 선택 | d12.b11.authority.sealed​Selections[2].decisionId​ | "T68-D12-PERMANENT-DETEN​TION" |
 | 운용 — 현재 판본·행위 선택 | d12.b11.authority.sealed​Selections[2].chosenOpti​on | "A" |
@@ -25323,7 +25323,7 @@ D12의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 현재 판본·행위 선택 | d12.b11.decisionDisposit​ion[8].decisionId | "T68-D09-COUNTRY-LAWS" |
 | 운용 — 현재 판본·행위 선택 | d12.b11.decisionDisposit​ion[8].subdecisionKey | "country-institutions-re​sidual" |
 | 운용 — 현재 판본·행위 선택 | d12.b11.decisionDisposit​ion[8].chosenOption | "A" |
-| 운용 — 현재 판본·행위 선택 | d12.b11.decisionDisposit​ion[8].selectedLabel | "세 세력 각각 선거인·정족수·해결자·인준·대행을 명시" |
+| 운용 — 현재 판본·행위 선택 | d12.b11.decisionDisposit​ion[8].selectedLabel | "16국 각각 선거인·정족수·해결자·인준·대행을 명시" |
 | 운용 — 현재 판본·행위 선택 | d12.b11.decisionDisposit​ion[8].disposition | "APPLIED_BOUNDED_WITH_UP​STREAM_DEFER" |
 | 운용 — 현재 판본·행위 선택 | d12.b11.decisionDisposit​ion[8].boundary | "D09 country-specific procedure; OFFICE/P-COUNTRIES" |
 | 운용 — 현재 판본·행위 선택 | d12.b11.decisionDisposit​ion[8].scope | "Preserve selected direction; no new concrete values/records approved." |
@@ -56089,7 +56089,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
   "proposalHeld": [
     {
       "id": "P01",
-      "scope": "Three-faction office procedure payloads",
+      "scope": "Sixteen state/office procedure payloads",
       "fields": [
         "selector",
         "candidateRule and actual eligibility records",
@@ -56240,7 +56240,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "applied": "Normalize units and field meanings first. Exact legitimacy formula, coefficient, clamp and consumer values remain later approvals."
     }
   ],
-  "approvalBoundary": "Sealed D09 Option A approves a separate explicit procedure record for each of the three factions. It does not approve one universal elector list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or state-specific payload. Missing payloads remain proposals and block appointment atomically.",
+  "approvalBoundary": "Sealed D09 Option A approves a separate explicit procedure record for each of the sixteen states. It does not approve one universal elector list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or state-specific payload. Missing payloads remain proposals and block appointment atomically.",
   "sourceClaims": [
     {
       "source": "task-26-remaining-decisions-20261008/decision-record.json",
@@ -56285,7 +56285,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "source": "task-24/cells/norland/D09/verified-input-r1/DoneClaim.json",
       "sha256": "6660c352e059dd5f98406a8fa3db668288bf3b194145108b69e987fe01bc859b",
       "status": "documentary-comparison-only",
-      "limit": "No Norland rank probability, politics threshold, faction-leader generation or turn/day conversion imported."
+      "limit": "No Norland rank probability, politics threshold, lord generation or turn/day conversion imported."
     },
     {
       "source": "task-25-gurps-like-basis-20261008/basis.json",
@@ -56391,7 +56391,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
   "intentionallyProposal": [
     {
       "id": "P01",
-      "scope": "The three-faction office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions",
+      "scope": "The sixteen state/office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions",
       "reason": "D09-A requires individual records but does not contain their facts or numbers.",
       "status": "proposal-held",
       "numericApproval": false,
@@ -56766,7 +56766,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
   "proposalHeld": [
     {
       "id": "P01",
-      "scope": "Three-faction office procedure payloads",
+      "scope": "Sixteen state/office procedure payloads",
       "fields": [
         "selector",
         "candidateRule and actual eligibility records",
@@ -56917,7 +56917,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "applied": "Normalize units and field meanings first. Exact legitimacy formula, coefficient, clamp and consumer values remain later approvals."
     }
   ],
-  "approvalBoundary": "Sealed D09 Option A approves a separate explicit procedure record for each of the three factions. It does not approve one universal elector list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or state-specific payload. Missing payloads remain proposals and block appointment atomically.",
+  "approvalBoundary": "Sealed D09 Option A approves a separate explicit procedure record for each of the sixteen states. It does not approve one universal elector list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or state-specific payload. Missing payloads remain proposals and block appointment atomically.",
   "sourceClaims": [
     {
       "source": "task-26-remaining-decisions-20261008/decision-record.json",
@@ -56962,7 +56962,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "source": "task-24/cells/norland/D09/verified-input-r1/DoneClaim.json",
       "sha256": "6660c352e059dd5f98406a8fa3db668288bf3b194145108b69e987fe01bc859b",
       "status": "documentary-comparison-only",
-      "limit": "No Norland rank probability, politics threshold, faction-leader generation or turn/day conversion imported."
+      "limit": "No Norland rank probability, politics threshold, lord generation or turn/day conversion imported."
     },
     {
       "source": "task-25-gurps-like-basis-20261008/basis.json",
@@ -57068,7 +57068,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
   "intentionallyProposal": [
     {
       "id": "P01",
-      "scope": "The three-faction office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions",
+      "scope": "The sixteen state/office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions",
       "reason": "D09-A requires individual records but does not contain their facts or numbers.",
       "status": "proposal-held",
       "numericApproval": false,
@@ -58051,7 +58051,7 @@ Status: a scoped operating contract. It distinguishes the public Lite''s referen
 1. Validates the input and rule version, and does not apply the result of the same event more than once.
 2. After confirming the title''s identity and revision, cross-checks the performer''s qualification, authority, transmission, reservation, and consent.
 3. Confirms the recipient''s affiliation and consent, the ratifying authority''s survival, and the ceremonial and record grounds.
-4. Rejects a ten-station tier office (Commissioner, Cardinal, Director) without the recorded appointment of the faction''s appointing authority (the President, the Hierophant, the Board), and does not downgrade it to another office.
+4. Rejects any grant that would exceed the limit of two directly held existing ducal titles, and does not arbitrarily trim it.
 5. Confirms the revocation clause, violation, and ratification, and limits delegation to the authority actually held.
 6. Passes the title and rights preservation checks, then applies the legal change once.
 7. Physical handover and illegal seizure are adjudicated separately from legal holding.
@@ -58165,7 +58165,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "name": "grantorRank,titleRank,recipientDucalCount",
       "type": "safe integer",
       "unit": "ordered-rank / directly-held-title-count",
-      "range": "nonnegative authored rank/count; ten-station tier requires a recorded appointment",
+      "range": "nonnegative authored rank/count; ducal direct holdings <=2",
       "null": "reject E_INPUT",
       "owner": "D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order",
       "read": "D01 identity/alive/capability; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/superior contract; D13 custody/included rights; D18 accepted event order and rule version",
@@ -58262,7 +58262,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     "Match existing result by event ID and full payload before reapplying. Reject changed replay.",
     "Read title identity and revision; refuse stale snapshot without mutations.",
     "Check capability, actual authority, location/delivery, exclusive resource reservations and counterpart consent/institution in D03 order.",
-    "For grant require existing lower title, country-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. A ten-station tier office requires the faction appointing authority''s recorded appointment.",
+    "For grant require existing lower title, country-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. Direct ducal holding after addition cannot exceed existing limit two.",
     "For recall require approved existing clause, breach evidence and applicable ratification. For delegation keep legal holder and restrict scope to actually held rights. Appointment touches office powers only.",
     "Emit exactly one legal delta for grant/recall. Preserve ID count, institutional property, omitted assets, original-owner rights and completed progress.",
     "Assess physical handover separately. Unlawful seizure affects control/custody and opens dispute/betrayal, never lawful holder or recall.",
@@ -58280,8 +58280,8 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     },
     {
       "id": "D11-DUCAL-BOUNDARY",
-      "expression": "tenStationTierEligible = appointmentRecorded(appointingAuthority(faction), recipient); appointingAuthority: government President, Arc Hierophant, Free City Board; no direct-holding cap",
-      "unit": "recorded ten-station tier appointments",
+      "expression": "recipientDirectDucalAfter = recipientDirectDucalBefore + indicator(grantedTitleIsDucal); eligible iff after <= 2",
+      "unit": "direct ducal title count",
       "authority": "v4 CANON-BIBLE 2.6 appointment rule, replaces the old sp1.b38 limit",
       "rounding": "exact integer",
       "clamp": "reject without a recorded appointment, do not silently downgrade"
@@ -58313,7 +58313,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     {
       "id": "P11-COUNTRY-RATIFICATION",
       "owner": "D09",
-      "description": "Actual three-faction ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar.",
+      "description": "Actual 16-country ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar.",
       "values": null,
       "decision": "T68-D09-COUNTRY-LAWS A is authoring direction only",
       "status": "proposal-held",
@@ -58489,7 +58489,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
 1. 입력과 규칙 판본을 검증하고 동일 사건의 결과를 중복 반영하지 않는다.
 2. 직함 신원·개정을 확인한 뒤 수행 자격·권한·전달·예약·동의를 대조한다.
 3. 수여 대상의 소속·동의, 인준권자의 생존과 의례·기록 근거를 확인한다.
-4. 10 이상 단계 직위(청장·추기경·이사)는 세력별 임명권자(대통령·교주·이사회)의 임명 기록이 없으면 거부하며 다른 직위로 낮춰 주지 않는다.
+4. 기존 공작위 직접 보유 한도 둘을 넘으면 거부하며 임의로 잘라내지 않는다.
 5. 회수 조항·위반·인준을 확인하고 위임은 실제 보유 권한 안으로 제한한다.
 6. 직함·권리 보존 검사를 거쳐 법적 변동을 한 번 반영한다.
 7. 물리 인계·불법 압류는 법적 보유와 따로 판정한다.
@@ -58603,7 +58603,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "name": "grantorRank,titleRank,recipientDucalCount",
       "type": "safe integer",
       "unit": "ordered-rank / directly-held-title-count",
-      "range": "nonnegative authored rank/count; ten-station tier requires a recorded appointment",
+      "range": "nonnegative authored rank/count; ducal direct holdings <=2",
       "null": "reject E_INPUT",
       "owner": "D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order",
       "read": "D01 identity/alive/capability; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/superior contract; D13 custody/included rights; D18 accepted event order and rule version",
@@ -58700,7 +58700,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     "Match existing result by event ID and full payload before reapplying. Reject changed replay.",
     "Read title identity and revision; refuse stale snapshot without mutations.",
     "Check capability, actual authority, location/delivery, exclusive resource reservations and counterpart consent/institution in D03 order.",
-    "For grant require existing lower title, country-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. A ten-station tier office requires the faction appointing authority''s recorded appointment.",
+    "For grant require existing lower title, country-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. Direct ducal holding after addition cannot exceed existing limit two.",
     "For recall require approved existing clause, breach evidence and applicable ratification. For delegation keep legal holder and restrict scope to actually held rights. Appointment touches office powers only.",
     "Emit exactly one legal delta for grant/recall. Preserve ID count, institutional property, omitted assets, original-owner rights and completed progress.",
     "Assess physical handover separately. Unlawful seizure affects control/custody and opens dispute/betrayal, never lawful holder or recall.",
@@ -58718,8 +58718,8 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     },
     {
       "id": "D11-DUCAL-BOUNDARY",
-      "expression": "tenStationTierEligible = appointmentRecorded(appointingAuthority(faction), recipient); appointingAuthority: government President, Arc Hierophant, Free City Board; no direct-holding cap",
-      "unit": "recorded ten-station tier appointments",
+      "expression": "recipientDirectDucalAfter = recipientDirectDucalBefore + indicator(grantedTitleIsDucal); eligible iff after <= 2",
+      "unit": "direct ducal title count",
       "authority": "v4 CANON-BIBLE 2.6 appointment rule, replaces the old sp1.b38 limit",
       "rounding": "exact integer",
       "clamp": "reject without a recorded appointment, do not silently downgrade"
@@ -58751,7 +58751,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     {
       "id": "P11-COUNTRY-RATIFICATION",
       "owner": "D09",
-      "description": "Actual three-faction ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar.",
+      "description": "Actual 16-country ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar.",
       "values": null,
       "decision": "T68-D09-COUNTRY-LAWS A is authoring direction only",
       "status": "proposal-held",
@@ -59186,7 +59186,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "id": "P-COUNTRIES",
       "status": "proposal-held",
       "owner": "D09",
-      "detail": "Actual three-faction electors, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values.",
+      "detail": "Actual 16-country electors, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values.",
       "numericApproval": false,
       "operative": false
     },
@@ -59396,7 +59396,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
         "row": "D09",
         "decisionId": "T68-D09-COUNTRY-LAWS",
         "chosenOption": "A",
-        "application": "Each of the three factions supplies its own electors, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records."
+        "application": "Each of 16 countries supplies its own electors, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records."
       },
       {
         "row": "D10",
@@ -59556,7 +59556,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "decisionId": "T68-D09-COUNTRY-LAWS",
       "subdecisionKey": "country-institutions-residual",
       "chosenOption": "A",
-      "selectedLabel": "Specify electors, quorum, resolver, ratification, and acting authority for each of the three factions",
+      "selectedLabel": "Specify electors, quorum, resolver, ratification, and acting authority for each of the 16 countries",
       "disposition": "APPLIED_BOUNDED_WITH_UPSTREAM_DEFER",
       "boundary": "D09 country-specific procedure; OFFICE/P-COUNTRIES",
       "scope": "Preserve selected direction; no new concrete values/records approved.",
@@ -60200,7 +60200,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "id": "P-COUNTRIES",
       "status": "proposal-held",
       "owner": "D09",
-      "detail": "Actual three-faction electors, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values.",
+      "detail": "Actual 16-country electors, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values.",
       "numericApproval": false,
       "operative": false
     },
@@ -60410,7 +60410,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
         "row": "D09",
         "decisionId": "T68-D09-COUNTRY-LAWS",
         "chosenOption": "A",
-        "application": "Each of the three factions supplies its own electors, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records."
+        "application": "Each of 16 countries supplies its own electors, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records."
       },
       {
         "row": "D10",
@@ -60570,7 +60570,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "decisionId": "T68-D09-COUNTRY-LAWS",
       "subdecisionKey": "country-institutions-residual",
       "chosenOption": "A",
-      "selectedLabel": "세 세력 각각 선거인·정족수·해결자·인준·대행을 명시",
+      "selectedLabel": "16국 각각 선거인·정족수·해결자·인준·대행을 명시",
       "disposition": "APPLIED_BOUNDED_WITH_UPSTREAM_DEFER",
       "boundary": "D09 country-specific procedure; OFFICE/P-COUNTRIES",
       "scope": "Preserve selected direction; no new concrete values/records approved.",

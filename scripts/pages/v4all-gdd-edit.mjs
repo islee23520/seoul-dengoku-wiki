@@ -13,6 +13,8 @@
 //            `map` is given, otherwise `to` ($1.. allowed).
 //   lineMatch (optional RegExp source) limits the rule to lines that match it, e.g. external-game citations;
 //   lineExclude (optional RegExp source) skips lines that match it (the Seoul-side complement).
+//   restore  puts back, verbatim from git revision rulesDoc.baseRef, every line whose BASE text matches `from`
+//            (RegExp source) and differs now; used to return out-of-scope lines to their original wording.
 //   context  "ref" | "seoul" limits the rule to lines inside / outside an external-game reference context:
 //            a line is "ref" when it or any enclosing markdown heading matches rulesDoc.refContext.{line,heading}.
 // Rules apply in file order. Untouched INSERT statements stay byte-identical; the INSERT count must stay 129.
@@ -22,6 +24,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { DatabaseSync } from 'node:sqlite';
+import { execFileSync } from 'node:child_process';
 
 const REPO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const SQL = path.join(REPO, 'data/sql/080-gdd-documents.sql');
@@ -119,6 +122,15 @@ const byId = new Map(rows.map((r) => [r.id, r]));
 
 // ---- apply --------------------------------------------------------------------
 const rulesDoc = JSON.parse(fs.readFileSync(path.resolve(REPO, args.rules), 'utf8'));
+let baseCache = null;
+function baseRows() {
+  if (baseCache) return baseCache;
+  if (!rulesDoc.baseRef) throw new Error('E_RULES: restore rules need rulesDoc.baseRef');
+  const tmp = `${SQL}.v4all-base.tmp`;
+  fs.writeFileSync(tmp, execFileSync('git', ['-C', REPO, 'show', `${rulesDoc.baseRef}:data/sql/080-gdd-documents.sql`], { maxBuffer: 1 << 26 }));
+  try { baseCache = new Map(loadRows(tmp).map((r) => [r.id, r])); } finally { fs.rmSync(tmp); }
+  return baseCache;
+}
 const REF_LINE = rulesDoc.refContext ? new RegExp(rulesDoc.refContext.line) : null;
 const REF_HEAD = rulesDoc.refContext ? new RegExp(rulesDoc.refContext.heading) : null;
 function refLines(text) {
@@ -141,7 +153,13 @@ for (const rule of rulesDoc.rules) {
     for (const f of rule.fields) {
       if (!TEXT_FIELDS.has(f)) { console.error(`E_RULE_FIELD: ${rule.id}: ${f}`); process.exit(4); }
       let next; let n = 0;
-      if (rule.lineMatch || rule.lineExclude || rule.context) {
+      if (rule.kind === 'restore') {
+        const baseRow = baseRows().get(id);
+        const want = new RegExp(rule.from);
+        const cur = row[f].split('\n'); const old = baseRow[f].split('\n');
+        if (cur.length !== old.length) { console.error(`E_RESTORE_LINES: ${rule.id}: ${id}.${f}`); process.exit(4); }
+        next = cur.map((line, li) => (want.test(old[li]) && line !== old[li] ? (n++, old[li]) : line)).join('\n');
+      } else if (rule.lineMatch || rule.lineExclude || rule.context) {
         const only = rule.lineMatch ? new RegExp(rule.lineMatch) : null;
         const skip = rule.lineExclude ? new RegExp(rule.lineExclude) : null;
         const refs = rule.context ? refLines(row[f]) : null;
