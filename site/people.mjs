@@ -37,7 +37,7 @@ const STR = {
     profile: 'Abilities and Traits', ability: 'Ability', base: 'Base', final: 'Final', skills: 'Skills', skill: 'Skill', level: 'Level', traits: 'Traits', behavior: 'Behavior', stress: 'Stress', relationship: 'Relationship', health: 'Physical condition', unassessed: 'Physical condition has not been assessed yet.', part: 'Part', severity: 'Severity',
     abilityNote: 'A base ability of 10 is a trained practitioner. The base cap is 20 and the final cap, with every effect applied, is 100.',
     basics: 'Basic Information', name: 'Name', state: 'Organization', faction: 'Faction', birth: 'Date of birth', age: 'Age', ageAsOf: 'Age as of', position: 'Position', tier: 'Common tier', rank: 'State rank', occupation: 'Occupation', gender: 'Gender', stage: 'Stage', generation: 'Generation',
-    relations: 'Relationships and Ties', liege: 'Direct liege', contact: 'Work contact', courtVassal: 'Court vassal', canon: 'Canonical Detail', fullCard: 'Full canonical card text',
+    relations: 'Relationships and Ties', liege: 'Direct superior', contact: 'Work contact', courtVassal: 'Direct subordinate', canon: 'Canonical Detail', fullCard: 'Full canonical card text',
     values: 'Values', desire: 'Desire', orientation: 'Orientation', union: 'Union', household: 'Household and Faith', personFaith: 'Personal faith', houseFaith: 'House faith', humanoid: 'Humanoid admission to the household', humanoidExcluded: 'Excluded by the political power the person belongs to', humanoidReview: 'Reviewed individually',
     titles: 'Opening Jurisdictions and Superior Authority', holdings: 'Directly Held Domains and Facilities', subHoldings: 'Domains Held by Subordinates in this District', retinue: 'Retinue',
     clanLine: (n) => `${n} family tree`, noClan: 'No bongwan (clan seat)', family: 'Family tree', crest: 'crest',
@@ -52,9 +52,9 @@ const STR = {
     profile: '역량과 특성', ability: '역량', base: '기본', final: '최종', skills: '행동 숙련', skill: '숙련', level: '수준', traits: '특성', behavior: '행동', stress: '스트레스', relationship: '관계', health: '신체 상태', unassessed: '신체 상태는 아직 평가되지 않았습니다.', part: '부위', severity: '손상 정도',
     abilityNote: '기본 역량 10은 해당 분야 숙련자 수준입니다. 기본 상한은 20, 모든 효과를 반영한 최종 상한은 100입니다.',
     basics: '기본 정보', name: '이름', state: '소속 단체', faction: '세력', birth: '생년월일', age: '만 나이', ageAsOf: '나이 기준일', position: '직위', tier: '직급(공통 티어)', rank: '국가 품계', occupation: '직업', gender: '성별', stage: '단계', generation: '세대',
-    relations: '관계와 접점', liege: '직속 주군', contact: '업무 접점', courtVassal: '궁정 가신', canon: '정본 상세', fullCard: '정본 카드 원문 전체',
+    relations: '관계와 접점', liege: '직속 상관', contact: '업무 접점', courtVassal: '직속 부하', canon: '정본 상세', fullCard: '정본 카드 원문 전체',
     values: '가치관', desire: '욕망', orientation: '지향', union: '결합', household: '가정과 신앙', personFaith: '개인 신앙', houseFaith: '가문 신앙', humanoid: '휴머노이드 가정 반입', humanoidExcluded: '소속 정치 세력의 반입 배제', humanoidReview: '개별 심사',
-    titles: '개막 관할과 상위 권한', holdings: '직접 보유 영지와 시설', subHoldings: '구 내 하위 보유자 영지', retinue: '가신단',
+    titles: '개막 관할과 상위 권한', holdings: '직접 보유 영지와 시설', subHoldings: '구 내 하위 보유자 영지', retinue: '수행단',
     clanLine: (n) => `${n} 가계도`, noClan: '본관 없음', family: '가계도', crest: '문장',
     permissions: '이름·초상 사용 허가', nameUse: '이름 사용', likenessUse: '초상 사용', granted: '허가됨', recorded: '기록일', yes: '예', none: '없음',
     clanIndex: '본관 가문 색인', clanLead: (c, n) => `본관 가문 ${c}개, 등록 인물 ${n}명. 각 가문 페이지에서 구성원과 가계도를 볼 수 있습니다.`, nonKorean: '본관을 적용하지 않는 가계', nonKoreanLead: '한국 문중의 본관이나 항렬을 적용하지 않는 가계입니다.',
@@ -99,8 +99,8 @@ function withoutPrivate(d) {
 
 /** One person page (Markdown with embedded HTML blocks). `d` is the parsed detail JSON for the locale; `p` the roster row. */
 // Some person_detail field names still carry an old feudal term. The JSON keys stay as stored data;
-// only the label shown on the page is mapped to the v4 wording the other records already use.
-const FIELD_LABEL = { '봉건 작위': '봉건 품계', 'Feudal Title': 'Feudal Rank' };
+// only the label shown on the page is mapped to the v4 wording (품계 / Rank).
+const FIELD_LABEL = { '봉건 작위': '품계', '봉건 품계': '품계', 'Feudal Title': 'Rank', 'Feudal Rank': 'Rank' };
 const fieldLabel = (k) => FIELD_LABEL[k] ?? k;
 
 export function personPage({ p, d: rawD, dKo: rawDKo, ko, g, P, stateRow, factionName, clan }) {
