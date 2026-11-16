@@ -80,7 +80,7 @@ const FACTION_STRUCTURE = {
 };
 const UI = {
   en: {
-    lang: 'en-US', label: 'English', prefix: '', wiki: 'Wiki', states: 'States', duchies: 'Districts', orgs: 'Organizations (former states)', orgsNote: 'The sixteen-state chart is retired. Power is now counted in stations held under three factions; districts are geographic only. The rows below are the organizations that used to be states.', factions: 'Factions', people: 'People', gdd: 'Design Docs (GDD)', showcase: 'Showcase',
+    lang: 'en-US', label: 'English', prefix: '', wiki: 'Wiki', states: 'States', districts: 'Districts', orgs: 'Organizations (former states)', orgsNote: 'The sixteen-state chart is retired. Power is now counted in stations held under three factions; districts are geographic only. The rows below are the organizations that used to be states.', factions: 'Factions', people: 'People', gdd: 'Design Docs (GDD)', showcase: 'Showcase',
     updates: 'Update History', wikiHome: 'Wiki Home', gddHome: 'GDD Home', designDocs: 'Design Docs', overview: 'Overview', onThisPage: 'On this page',
     prev: 'Previous page', next: 'Next page', menu: 'Menu', search: 'Search', noResults: 'No results for', reset: 'Reset search', toSelect: 'to select', toNavigate: 'to navigate', toClose: 'to close',
     appearance: 'Appearance', returnTop: 'Return to top', skip: 'Skip to content', footerMsg: 'Public world bible and game design documents.',
@@ -99,7 +99,7 @@ const UI = {
     featUpdates: 'What changed in the wiki and when.', tagline: meta.tagline, siteTitle: meta.title,
   },
   ko: {
-    lang: 'ko-KR', label: '한국어', prefix: 'ko/', wiki: '위키', states: '국가', duchies: '구', orgs: '단체 (옛 국가)', orgsNote: '십육국 체제는 폐지됐다. 이제 힘은 세 세력 아래 쥔 역의 수로 센다. 구는 지리 단위일 뿐이다. 아래 표는 옛 국가였던 단체들이다.', factions: '세력', people: '인물', gdd: '설계 문서(GDD)', showcase: '쇼케이스',
+    lang: 'ko-KR', label: '한국어', prefix: 'ko/', wiki: '위키', states: '국가', districts: '구', orgs: '단체 (옛 국가)', orgsNote: '십육국 체제는 폐지됐다. 이제 힘은 세 세력 아래 쥔 역의 수로 센다. 구는 지리 단위일 뿐이다. 아래 표는 옛 국가였던 단체들이다.', factions: '세력', people: '인물', gdd: '설계 문서(GDD)', showcase: '쇼케이스',
     updates: '갱신 이력', wikiHome: '위키 홈', gddHome: 'GDD 홈', designDocs: '설계 문서', overview: '개요', onThisPage: '이 페이지에서',
     prev: '이전 문서', next: '다음 문서', menu: '메뉴', search: '검색', noResults: '결과 없음:', reset: '검색 초기화', toSelect: '선택', toNavigate: '이동', toClose: '닫기',
     appearance: '화면 모드', returnTop: '맨 위로', skip: '본문으로 건너뛰기', footerMsg: '공개 세계관 위키와 게임 설계 문서.',
@@ -155,6 +155,15 @@ fs.mkdirSync(SRC, { recursive: true });
 // Pick the field for a locale: English columns are plain, Korean ones end in _ko.
 const f = (L) => (row, k) => (L === UI.ko ? row[`${k}_ko`] : row[k]);
 
+// Territory: one geographic district (gu) per map title of rank 'duchy' (enum value kept), faction per owner rule (map.mjs DISTRICT_FACTION).
+// Districts live at /wiki/districts/<gu code>/; the old /wiki/duchies/ paths are static redirect stubs written after the VitePress build.
+const DISTRICT_ROUTE = 'wiki/districts/';
+const LEGACY_DISTRICT_ROUTE = 'wiki/duchies/';
+const titleById = new Map(raw.map.titles.map((t) => [t.id, t]));
+const districtRows = raw.map.titles.filter((t) => t.rank === 'duchy');
+const districtSlug = (t) => t.id.split(':').pop();
+const guFaction = new Map(Object.entries(DISTRICT_FACTION).flatMap(([fid, gus]) => gus.map((gu) => [gu, fid])));
+
 const localeConfigs = {};
 for (const L of [UI.en, UI.ko]) {
   const g = f(L);
@@ -164,13 +173,7 @@ for (const L of [UI.en, UI.ko]) {
   const states = raw.states, people = raw.people, updates = raw.updates;
   const docsOf = (cid) => raw.docs.filter((d) => d.category_id === cid);
   const factionCount = factions.filter((x) => states.some((s) => s.faction_id === x.id)).length;
-  // Territory: one geographic district (gu) per map title of rank 'duchy', faction per owner rule (map.mjs DISTRICT_FACTION).
-  const titleById = new Map(raw.map.titles.map((t) => [t.id, t]));
-  const duchyRows = raw.map.titles.filter((t) => t.rank === 'duchy');
-  const guFaction = new Map(Object.entries(DISTRICT_FACTION).flatMap(([fid, gus]) => gus.map((gu) => [gu, fid])));
-  const duchyOfGu = new Map(duchyRows.map((t) => [t.name_ko, t]));
-  const duchySlug = (t) => t.id.split(':').pop();
-  const duchiesOf = (fid) => duchyRows.filter((t) => guFaction.get(t.name_ko) === fid);
+  const districtsOf = (fid) => districtRows.filter((t) => guFaction.get(t.name_ko) === fid);
   const stationsOfGu = (gu) => raw.map.stations.filter((s) => s.district_ko === gu).length;
 
   // wiki articles
@@ -179,25 +182,25 @@ for (const L of [UI.en, UI.ko]) {
     write(`${L.prefix}wiki/${d.slug}/index.md`, page(g(d, 'title'), `# ${g(d, 'title')}\n\n${body(bodyMd, L)}`));
   });
   const wikiGroups = raw.cats.filter((c) => !c.parent_id).map((c) => ({ text: g(c, 'label'), collapsed: true, items: docsOf(c.id).map((d) => ({ text: g(d, 'title'), link: P(`wiki/${d.slug}/`) })) })).filter((x) => x.items.length);
-  write(`${L.prefix}wiki/index.md`, page(L.wiki, `# ${L.wiki}\n\n${L.wikiLead(raw.docs.length)}\n\n[${L.factions}](${P('wiki/factions/')}) · [${L.duchies} (${duchyRows.length})](${P('wiki/duchies/')}) · [${L.people} (${people.length})](${P('wiki/people/')}) · [${L.updates}](${P('wiki/updates/')})\n\n${raw.cats.filter((c) => !c.parent_id && docsOf(c.id).length).map((c) => `## ${g(c, 'label')}\n\n${g(c, 'summary')}\n\n${docsOf(c.id).map((d) => `- [${g(d, 'title')}](${P(`wiki/${d.slug}/`)})`).join('\n')}\n`).join('\n')}`));
+  write(`${L.prefix}wiki/index.md`, page(L.wiki, `# ${L.wiki}\n\n${L.wikiLead(raw.docs.length)}\n\n[${L.factions}](${P('wiki/factions/')}) · [${L.districts} (${districtRows.length})](${P(DISTRICT_ROUTE)}) · [${L.people} (${people.length})](${P('wiki/people/')}) · [${L.updates}](${P('wiki/updates/')})\n\n${raw.cats.filter((c) => !c.parent_id && docsOf(c.id).length).map((c) => `## ${g(c, 'label')}\n\n${g(c, 'summary')}\n\n${docsOf(c.id).map((d) => `- [${g(d, 'title')}](${P(`wiki/${d.slug}/`)})`).join('\n')}\n`).join('\n')}`));
 
   // factions: territory = districts; organizations = former states
   const members = (fid) => states.filter((s) => s.faction_id === fid);
-  write(`${L.prefix}wiki/factions/index.md`, page(L.factions, `# ${L.factions}\n\n${L.statesLead(states.length, factionCount)}\n\n${factions.filter((x) => members(x.id).length).map((x) => `## [${g(x, 'name')}](${P(`wiki/factions/${x.id}/`)})\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n${duchiesOf(x.id).map((t) => `- [${g(t, 'name')}](${P(`wiki/duchies/${duchySlug(t)}/`)})`).join('\n')}\n`).join('\n')}`));
+  write(`${L.prefix}wiki/factions/index.md`, page(L.factions, `# ${L.factions}\n\n${L.statesLead(states.length, factionCount)}\n\n${factions.filter((x) => members(x.id).length).map((x) => `## [${g(x, 'name')}](${P(`wiki/factions/${x.id}/`)})\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n${districtsOf(x.id).map((t) => `- [${g(t, 'name')}](${P(`${DISTRICT_ROUTE}${districtSlug(t)}/`)})`).join('\n')}\n`).join('\n')}`));
   factions.filter((x) => members(x.id).length || people.some((p) => p.faction_id === x.id)).forEach((x) => {
     const peopleN = people.filter((p) => p.faction_id === x.id).length;
-    write(`${L.prefix}wiki/factions/${x.id}/index.md`, page(g(x, 'name'), `# ${g(x, 'name')}\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n| ${L === UI.ko ? "항목" : "Field"} | ${L === UI.ko ? "값" : "Value"} |\n| --- | --- |\n${g(x, 'center_region') ? `| ${L.centerRegion} | ${cell(g(x, 'center_region'))} |\n| ${L.aiPosition} | ${cell(g(x, 'ai_position'))} |\n` : ''}| ${L.fields.state} | ${members(x.id).length} |\n| ${L.people} | ${peopleN} |\n\n${x.id === 'independent' ? `${L.independentNote}\n\n` : ''}## ${L.duchies}\n\n| ${L === UI.ko ? '구' : 'District'} | ${L === UI.ko ? '옛 선거구' : 'Old constituencies'} | ${L === UI.ko ? '역' : 'Stations'} |\n| --- | --- | --- |\n${duchiesOf(x.id).map((t) => `| [${cell(g(t, 'name'))}](${P(`wiki/duchies/${duchySlug(t)}/`)}) | ${JSON.parse(t.county_ids).length} | ${stationsOfGu(t.name_ko)} |`).join('\n')}\n\n## ${L.orgs}\n\n${members(x.id).map((s) => `- ${cell(g(s, 'name'))} — ${cell(g(s, 'ruler'))}`).join('\n')}\n`));
+    write(`${L.prefix}wiki/factions/${x.id}/index.md`, page(g(x, 'name'), `# ${g(x, 'name')}\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n| ${L === UI.ko ? "항목" : "Field"} | ${L === UI.ko ? "값" : "Value"} |\n| --- | --- |\n${g(x, 'center_region') ? `| ${L.centerRegion} | ${cell(g(x, 'center_region'))} |\n| ${L.aiPosition} | ${cell(g(x, 'ai_position'))} |\n` : ''}| ${L.fields.state} | ${members(x.id).length} |\n| ${L.people} | ${peopleN} |\n\n${x.id === 'independent' ? `${L.independentNote}\n\n` : ''}## ${L.districts}\n\n| ${L === UI.ko ? '구' : 'District'} | ${L === UI.ko ? '옛 선거구' : 'Old constituencies'} | ${L === UI.ko ? '역' : 'Stations'} |\n| --- | --- | --- |\n${districtsOf(x.id).map((t) => `| [${cell(g(t, 'name'))}](${P(`${DISTRICT_ROUTE}${districtSlug(t)}/`)}) | ${JSON.parse(t.county_ids).length} | ${stationsOfGu(t.name_ko)} |`).join('\n')}\n\n## ${L.orgs}\n\n${members(x.id).map((s) => `- ${cell(g(s, 'name'))} — ${cell(g(s, 'ruler'))}`).join('\n')}\n`));
   });
 
   // states
   // /wiki/states/ now shows the three factions only (owner decision: the sixteen-state chart is retired)
-  write(`${L.prefix}wiki/states/index.md`, page(L.factions, `# ${L.factions}\n\n${L.statesLead(states.length, factionCount)}\n\n${factions.filter((x) => x.id !== 'independent').map((x) => `## [${g(x, 'name')}](${P(`wiki/factions/${x.id}/`)})\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n- ${L.duchies}: ${duchiesOf(x.id).length} · ${L.people}: ${people.filter((p) => p.faction_id === x.id).length}\n`).join('\n')}
+  write(`${L.prefix}wiki/states/index.md`, page(L.factions, `# ${L.factions}\n\n${L.statesLead(states.length, factionCount)}\n\n${factions.filter((x) => x.id !== 'independent').map((x) => `## [${g(x, 'name')}](${P(`wiki/factions/${x.id}/`)})\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n- ${L.districts}: ${districtsOf(x.id).length} · ${L.people}: ${people.filter((p) => p.faction_id === x.id).length}\n`).join('\n')}
 \n---\n\n${L.orgsNote}`));
-  // districts (route /wiki/duchies/ kept): one per gu, faction by owner rule
-  write(`${L.prefix}wiki/duchies/index.md`, page(L.duchies, `# ${L.duchies}\n\n${L === UI.ko ? '구는 지리 단위다. 각 구가 어느 세력 땅에 있는지와 역 수를 보인다. 힘은 구가 아니라 쥔 역의 수로 센다.' : 'Districts are geographic units. Each row shows which faction\'s land the district lies in and how many stations it has. Power is counted in stations held, not districts.'}\n\n| ${L === UI.ko ? '구' : 'District'} | ${L.factions} | ${L === UI.ko ? '옛 선거구' : 'Former constituencies'} | ${L === UI.ko ? '역' : 'Stations'} |\n| --- | --- | --- | --- |\n${duchyRows.map((t) => `| [${g(t, 'name')}](${P(`wiki/duchies/${duchySlug(t)}/`)}) | [${cell(factionName(guFaction.get(t.name_ko)))}](${P(`wiki/factions/${guFaction.get(t.name_ko)}/`)}) | ${JSON.parse(t.county_ids).length} | ${stationsOfGu(t.name_ko)} |`).join('\n')}`));
-  duchyRows.forEach((t) => {
-    const fid = guFaction.get(t.name_ko); const counties = JSON.parse(t.county_ids).map((id) => titleById.get(id)).filter(Boolean);
-    write(`${L.prefix}wiki/duchies/${duchySlug(t)}/index.md`, page(g(t, 'name'), `# ${g(t, 'name')}\n\n- ${L.factions}: [${cell(factionName(fid))}](${P(`wiki/factions/${fid}/`)})\n- ${L === UI.ko ? '옛 선거구' : 'Old constituencies'}: ${counties.map((c) => cell(g(c, 'name'))).join(' · ')}\n- ${L === UI.ko ? '역' : 'Stations'}: ${stationsOfGu(t.name_ko)}\n\n${FACTION_STRUCTURE[fid]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n[${L === UI.ko ? '영토 지도에서 보기' : 'Open the territory map'}](${P('wiki/map/')})`));
+  // districts: one per gu, faction by owner rule
+  write(`${L.prefix}${DISTRICT_ROUTE}index.md`, page(L.districts, `# ${L.districts}\n\n${L === UI.ko ? '구는 지리 단위다. 각 구가 어느 세력 땅에 있는지와 역 수를 보인다. 힘은 구가 아니라 쥔 역의 수로 센다.' : 'Districts are geographic units. Each row shows which faction\'s land the district lies in and how many stations it has. Power is counted in stations held, not districts.'}\n\n| ${L === UI.ko ? '구' : 'District'} | ${L.factions} | ${L === UI.ko ? '옛 선거구' : 'Former constituencies'} | ${L === UI.ko ? '역' : 'Stations'} |\n| --- | --- | --- | --- |\n${districtRows.map((t) => `| [${g(t, 'name')}](${P(`${DISTRICT_ROUTE}${districtSlug(t)}/`)}) | [${cell(factionName(guFaction.get(t.name_ko)))}](${P(`wiki/factions/${guFaction.get(t.name_ko)}/`)}) | ${JSON.parse(t.county_ids).length} | ${stationsOfGu(t.name_ko)} |`).join('\n')}`));
+  districtRows.forEach((t) => {
+    const fid = guFaction.get(t.name_ko); const constituencies = JSON.parse(t.county_ids).map((id) => titleById.get(id)).filter(Boolean);
+    write(`${L.prefix}${DISTRICT_ROUTE}${districtSlug(t)}/index.md`, page(g(t, 'name'), `# ${g(t, 'name')}\n\n- ${L.factions}: [${cell(factionName(fid))}](${P(`wiki/factions/${fid}/`)})\n- ${L === UI.ko ? '옛 선거구' : 'Old constituencies'}: ${constituencies.map((c) => cell(g(c, 'name'))).join(' · ')}\n- ${L === UI.ko ? '역' : 'Stations'}: ${stationsOfGu(t.name_ko)}\n\n${FACTION_STRUCTURE[fid]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n[${L === UI.ko ? '영토 지도에서 보기' : 'Open the territory map'}](${P('wiki/map/')})`));
   });
   // people: search page (client island) + one rich page per person from person_detail
   const SS = L === UI.ko ? STR.ko : STR.en;
@@ -267,7 +270,7 @@ for (const L of [UI.en, UI.ko]) {
         { text: L.gdd, link: P('gdd/') }, { text: L.showcase, link: showcaseLink, target: '_self' },
       ],
       sidebar: {
-        [P('wiki/')]: [{ text: L.wiki, items: [{ text: L.wikiHome, link: P('wiki/') }, { text: L.factions, link: P('wiki/factions/') }, { text: L.duchies, link: P('wiki/duchies/') }, { text: strongholds.title, link: P(STRONGHOLD_ROUTE) }, { text: L === UI.ko ? '영토 지도' : 'Territory Map', link: P('wiki/map/') }, { text: L.people, link: P('wiki/people/') }, { text: STR[L === UI.ko ? 'ko' : 'en'].clanIndex, link: P('wiki/families/') }, { text: L.updates, link: P('wiki/updates/') }, { text: L === UI.ko ? '가신 관계' : 'Retainers', link: P('wiki/relations/') }, { text: 'License', link: P('wiki/license/') }] }, ...wikiGroups],
+        [P('wiki/')]: [{ text: L.wiki, items: [{ text: L.wikiHome, link: P('wiki/') }, { text: L.factions, link: P('wiki/factions/') }, { text: L.districts, link: P(DISTRICT_ROUTE) }, { text: strongholds.title, link: P(STRONGHOLD_ROUTE) }, { text: L === UI.ko ? '영토 지도' : 'Territory Map', link: P('wiki/map/') }, { text: L.people, link: P('wiki/people/') }, { text: STR[L === UI.ko ? 'ko' : 'en'].clanIndex, link: P('wiki/families/') }, { text: L.updates, link: P('wiki/updates/') }, { text: L === UI.ko ? '가신 관계' : 'Retainers', link: P('wiki/relations/') }, { text: 'License', link: P('wiki/license/') }] }, ...wikiGroups],
         [P('gdd/')]: [{ text: L.designDocs, items: [{ text: L.gddHome, link: P('gdd/') }] }, ...gddGroups],
       },
       outline: { level: [2, 3], label: L.onThisPage },
@@ -434,5 +437,28 @@ const decodeHtmlAttr = (v) => v.replace(/&quot;/g, '"').replace(/&#39;|&apos;/g,
   console.log(`fragment href normalization: ${rewritten} href(s) rewritten to real ids`);
 }
 
-fs.writeFileSync(path.join(OUT, 'build.json'), JSON.stringify({ title: meta.title, base: BASE, locales: ['en', 'ko'], wikiDocs: raw.docs.length, gddDocs: raw.gddDocs.length, factions: raw.factions.length, clans: raw.clans.length, mapRegions: raw.map.regions.length, mapTitles: raw.map.titles.length, mapStations: raw.map.stations.length, personDetails: raw.details.size, strongholds: raw.strongholds.rows.length, strongholdImages: raw.strongholds.rows.reduce((n, r) => n + (r.img_ground ? 1 : 0) + (r.img_under ? 1 : 0), 0), states: raw.states.length, people: raw.people.length, updates: raw.updates.length, showcase, sqlFiles: files }, null, 1));
+// ---- redirect stubs for the retired /wiki/duchies/ route (2026-11-16, v4: duchies became districts) ----
+// GitHub Pages cannot send 301s, so each old URL (en and /ko/, index and one per gu code) gets a static page with
+// a zero-second meta refresh, a canonical link and a plain link to its /wiki/districts/ replacement. The stubs are
+// written straight into OUT after VitePress, so they are not in the sidebar, search index or dead-link check, and
+// they carry the locale title, lang attribute and text that site/check-site.mjs requires of every page.
+const escHtml = (v) => String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+let redirectStubs = 0;
+for (const L of [UI.en, UI.ko]) {
+  const ko = L === UI.ko;
+  const targets = [{ from: '', to: '', name: L.districts }, ...districtRows.map((t) => ({ from: `${districtSlug(t)}/`, to: `${districtSlug(t)}/`, name: ko ? t.name_ko : t.name }))];
+  for (const x of targets) {
+    const url = `${BASE}${L.prefix}${DISTRICT_ROUTE}${x.to}`;
+    const title = ko ? `${x.name} 페이지 이동 | ${L.siteTitle}` : `${x.name} has moved | ${L.siteTitle}`;
+    const text = ko ? `이 페이지는 새 주소로 옮겨졌습니다. 자동으로 이동하지 않으면 아래 링크를 누르세요.` : 'This page has moved to a new address. If you are not redirected, follow the link below.';
+    const html = `<!DOCTYPE html>\n<html lang="${L.lang}">\n<head>\n<meta charset="utf-8">\n<title>${escHtml(title)}</title>\n<meta name="robots" content="noindex">\n<link rel="canonical" href="${escHtml(url)}">\n<meta http-equiv="refresh" content="0; url=${escHtml(url)}">\n</head>\n<body>\n<p>${escHtml(text)}</p>\n<p><a href="${escHtml(url)}">${escHtml(x.name)}</a></p>\n</body>\n</html>\n`;
+    const file = path.join(OUT, L.prefix, LEGACY_DISTRICT_ROUTE, x.from, 'index.html');
+    fs.mkdirSync(path.dirname(file), { recursive: true });
+    fs.writeFileSync(file, html);
+    redirectStubs++;
+  }
+}
+console.log(`redirect stubs: ${redirectStubs} page(s) under ${LEGACY_DISTRICT_ROUTE} point at ${DISTRICT_ROUTE}`);
+
+fs.writeFileSync(path.join(OUT, 'build.json'), JSON.stringify({ title: meta.title, base: BASE, locales: ['en', 'ko'], wikiDocs: raw.docs.length, gddDocs: raw.gddDocs.length, factions: raw.factions.length, clans: raw.clans.length, mapRegions: raw.map.regions.length, mapTitles: raw.map.titles.length, mapStations: raw.map.stations.length, personDetails: raw.details.size, strongholds: raw.strongholds.rows.length, redirectStubs, strongholdImages: raw.strongholds.rows.reduce((n, r) => n + (r.img_ground ? 1 : 0) + (r.img_under ? 1 : 0), 0), states: raw.states.length, people: raw.people.length, updates: raw.updates.length, showcase, sqlFiles: files }, null, 1));
 console.log(`built ${meta.title} (en + ko): wiki ${raw.docs.length}, gdd ${raw.gddDocs.length}, factions ${raw.factions.length}, states ${raw.states.length}, people ${raw.people.length}, strongholds ${raw.strongholds.rows.length}; showcase ${showcase} -> ${path.relative(REPO, OUT)} (base ${BASE})`);
