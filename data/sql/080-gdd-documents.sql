@@ -23464,7 +23464,7 @@ Current scope limits: No domain-specific new original-trpg module. Reuse existin
 | Operation — Comparing Identical Event Content | d11.b9.failure | "D18 supplies accepted order; first valid same-revision title update changes revision and makes the other proposal stale. No invented priority/tie key. Duplicate identical event returns no second effect; same ID with different payload is explicit conflict." |
 | Held — excluded from operational path | d11.b9.proposalHeld[0].i​d | "P11-COUNTRY-RATIFICATIO​N" |
 | Held — excluded from operational path | d11.b9.proposalHeld[0].o​wner | "D09" |
-| Held — excluded from operational path | d11.b9.proposalHeld[0].d​escription | "Actual 16-country ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar." |
+| Held — excluded from operational path | d11.b9.proposalHeld[0].d​escription | "Actual three-faction ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar." |
 | Held — excluded from operational path | d11.b9.proposalHeld[0].v​alues | null |
 | Held — excluded from operational path | d11.b9.proposalHeld[0].d​ecision | "T68-D09-COUNTRY-LAWS A is authoring direction only" |
 | Held — excluded from operational path | d11.b9.proposalHeld[0].s​tatus | "proposal-held" |
@@ -23853,7 +23853,7 @@ D11의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 동일 사건 내용 비교 | d11.b9.failure | "D18 supplies accepted order; first valid same-revision title update changes revision and makes the other proposal stale. No invented priority/tie key. Duplicate identical event returns no second effect; same ID with different payload is explicit conflict." |
 | 보류 — 운용 경로 제외 | d11.b9.proposalHeld[0].i​d | "P11-COUNTRY-RATIFICATIO​N" |
 | 보류 — 운용 경로 제외 | d11.b9.proposalHeld[0].o​wner | "D09" |
-| 보류 — 운용 경로 제외 | d11.b9.proposalHeld[0].d​escription | "Actual 16-country ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar." |
+| 보류 — 운용 경로 제외 | d11.b9.proposalHeld[0].d​escription | "Actual three-faction ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar." |
 | 보류 — 운용 경로 제외 | d11.b9.proposalHeld[0].v​alues | null |
 | 보류 — 운용 경로 제외 | d11.b9.proposalHeld[0].d​ecision | "T68-D09-COUNTRY-LAWS A is authoring direction only" |
 | 보류 — 운용 경로 제외 | d11.b9.proposalHeld[0].s​tatus | "proposal-held" |
@@ -24243,7 +24243,7 @@ Current scope limits: No domain-specific new original-trpg module. Reuse existin
 | Held — excluded from operational path | d12.b9.proposalHeld[2].i​d | "P-COUNTRIES" |
 | Held — excluded from operational path | d12.b9.proposalHeld[2].s​tatus | "proposal-held" |
 | Held — excluded from operational path | d12.b9.proposalHeld[2].o​wner | "D09" |
-| Held — excluded from operational path | d12.b9.proposalHeld[2].d​etail | "Actual 16-country electors, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values." |
+| Held — excluded from operational path | d12.b9.proposalHeld[2].d​etail | "Actual three-faction electors, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values." |
 | Held — excluded from operational path | d12.b9.proposalHeld[2].n​umericApproval | false |
 | Held — excluded from operational path | d12.b9.proposalHeld[2].o​perative | false |
 | Held — excluded from operational path | d12.b9.proposalHeld[3].i​d | "P-RIGHTS" |
@@ -24379,7 +24379,7 @@ Current scope limits: No domain-specific new original-trpg module. Reuse existin
 | Operation — Current Edition and Action Selection | d12.b11.authority.sealed​Selections[1].row | "D09" |
 | Operation — Current Edition and Action Selection | d12.b11.authority.sealed​Selections[1].decisionId​ | "T68-D09-COUNTRY-LAWS" |
 | Operation — Current Edition and Action Selection | d12.b11.authority.sealed​Selections[1].chosenOpti​on | "A" |
-| Operation — Current Edition and Action Selection | d12.b11.authority.sealed​Selections[1].applicatio​n | "Each of 16 countries supplies its own electors, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records." |
+| Operation — Current Edition and Action Selection | d12.b11.authority.sealed​Selections[1].applicatio​n | "Each of the three factions supplies its own electors, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records." |
 | Operation — Current Edition and Action Selection | d12.b11.authority.sealed​Selections[2].row | "D10" |
 | Operation — Current Edition and Action Selection | d12.b11.authority.sealed​Selections[2].decisionId​ | "T68-D12-PERMANENT-DETEN​TION" |
 | Operation — Current Edition and Action Selection | d12.b11.authority.sealed​Selections[2].chosenOpti​on | "A" |
@@ -25066,7 +25066,7 @@ D12의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 보류 — 운용 경로 제외 | d12.b9.proposalHeld[2].i​d | "P-COUNTRIES" |
 | 보류 — 운용 경로 제외 | d12.b9.proposalHeld[2].s​tatus | "proposal-held" |
 | 보류 — 운용 경로 제외 | d12.b9.proposalHeld[2].o​wner | "D09" |
-| 보류 — 운용 경로 제외 | d12.b9.proposalHeld[2].d​etail | "Actual 16-country electors, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values." |
+| 보류 — 운용 경로 제외 | d12.b9.proposalHeld[2].d​etail | "Actual three-faction electors, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values." |
 | 보류 — 운용 경로 제외 | d12.b9.proposalHeld[2].n​umericApproval | false |
 | 보류 — 운용 경로 제외 | d12.b9.proposalHeld[2].o​perative | false |
 | 보류 — 운용 경로 제외 | d12.b9.proposalHeld[3].i​d | "P-RIGHTS" |
@@ -25202,7 +25202,7 @@ D12의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 현재 판본·행위 선택 | d12.b11.authority.sealed​Selections[1].row | "D09" |
 | 운용 — 현재 판본·행위 선택 | d12.b11.authority.sealed​Selections[1].decisionId​ | "T68-D09-COUNTRY-LAWS" |
 | 운용 — 현재 판본·행위 선택 | d12.b11.authority.sealed​Selections[1].chosenOpti​on | "A" |
-| 운용 — 현재 판본·행위 선택 | d12.b11.authority.sealed​Selections[1].applicatio​n | "Each of 16 countries supplies its own electors, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records." |
+| 운용 — 현재 판본·행위 선택 | d12.b11.authority.sealed​Selections[1].applicatio​n | "Each of the three factions supplies its own electors, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records." |
 | 운용 — 현재 판본·행위 선택 | d12.b11.authority.sealed​Selections[2].row | "D10" |
 | 운용 — 현재 판본·행위 선택 | d12.b11.authority.sealed​Selections[2].decisionId​ | "T68-D12-PERMANENT-DETEN​TION" |
 | 운용 — 현재 판본·행위 선택 | d12.b11.authority.sealed​Selections[2].chosenOpti​on | "A" |
@@ -45418,7 +45418,7 @@ HP와 FP의 최대 기준과 현재값은 분리한다. 현재값의 음수 허�
 | D07 관계·기억·충성·평가 | identity, traits; SEOUL-RELATION-CLASS, SEOUL-SINGLE-RESULT | unobserved event cannot update observer trust; trust is not authority | Change/decay/duration and evaluation coefficients |
 | D08 가문·친족·혼인·양자 | identity; 수치 식 없음 | existing valid marriage/family facts persist; new formation requires applicable institution and evidence | Country marriage/adoption eligibility, consent effects and shares |
 | D09 국가·정부·기관·정통성 | identity; 수치 식 없음 | office vacancy stops that office authority only; living personal contracts remain separate | Country office eligibility/election/regency and legitimacy coefficients |
-| D10 작위·권리·명분·인준 | identity; SEOUL-W-ENDPOINT | claim/legal right/effective occupation differ; valid cause and named beneficiary required | Claim lists, creation cost, recognized institution and persistence effects |
+| D10 직함·권리·명분·인준 | identity; SEOUL-W-ENDPOINT | claim/legal right/effective occupation differ; valid cause and named beneficiary required | Claim lists, creation cost, recognized institution and persistence effects |
 | D11 수여·위임·회수·봉신 | identity; 수치 식 없음 | appointment changes office powers, delegation preserves original holder, grant changes specified right | Country ratification/revocation and contract termination details |
 | D12 후계·사망·본체 전환 | identity, health; 수치 식 없음 | detention while alive is not death inheritance; body/office/property transitions separate | Successor eligibility, no-successor continuation and explicit return authority |
 | D13 자산·채무·상속·인도 | identity, equipment; SEOUL-CARGO-CONSERVATION, SEOUL-SINGLE-RESULT | signature/legal ownership/custody/physical delivery separate; collateral survives transfer | Inheritance shares, family laws, debt priority and partial-delivery remedies |
@@ -46424,14 +46424,14 @@ Unresolved inputs: Tick/phase values; simultaneous final order; save-error limit
 [D11 전체 독자 규칙](/gdd/system-design/mechanism-design-index-d11/)
 
 - 배우: 수여자 갑, 수령자 을, 점령자 병
-- 입력: 동의·인준 완료 작위 T-셋; 열쇠 갑 보관
+- 입력: 동의·인준 완료 직함 T-셋; 열쇠 갑 보관
 - 결정: 권리 원장 변경과 인수
 - 자격과 경계: 명시된 권리 범위와 인준 완료
 - 전: 갑 보유; 금고·부대 지휘는 초안 밖
-- 행동: 같은 작위 ID를 갑 목록에서 을 목록으로 이전
+- 행동: 같은 직함 ID를 갑 목록에서 을 목록으로 이전
 - 후: 을 권리 보유·인수 미완; 병 점령은 통제·분쟁
 - 실패: 미인준이면 원 보유자 유지; 두 수여로 복제 불가
-- 보존 사실: 작위 ID, 초안 밖 금고·지휘, 소비·진척
+- 보존 사실: 직함 ID, 초안 밖 금고·지휘, 소비·진척
 
 분류: bounded-Seoul-state-semantics; proposed-sheet-model. 참조 계산: 수치식 없음. 상태 계약: STATE-D11. 계산과 제약의 원문은 [전체 계산 사례](/gdd/system-design/character-sheet-formulas/)를 따른다.
 
@@ -53550,7 +53550,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "type": "integer|null",
       "unit": "loyalty-point",
       "range": "0..100",
-      "null": "unknown; monarch self resolves to 100",
+      "null": "unknown; faction leader self resolves to 100",
       "owner": "D07",
       "read": "D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time",
       "write": "D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references",
@@ -53836,7 +53836,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     "Trust is not authority, consent, property, passage, relationship fact, mood, or loyalty.",
     "An observer updates only that observer''s memory and trust after direct observation or receipt of a report.",
     "Hidden world facts and personal knowledge are separate; late discovery does not rewrite earlier decisions.",
-    "Loyalty is a separate 0..100 state toward the hero''s monarch; monarch self-loyalty is 100; exactly 25 is not below 25.",
+    "Loyalty is a separate 0..100 state toward the hero''s faction leader; faction-leader self-loyalty is 100; exactly 25 is not below 25.",
     "The same ResultId is applied at most once; retransmission is not a new evaluation.",
     "Compliance and performance are separate records; good independent action may be noncompliant and successful.",
     "Impossible orders and orders invalidated by sender death are execution failures, not deliberate disobedience.",
@@ -53881,7 +53881,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     "institutionInputs": "D09-A requires country-specific institution records and actual authority/basis evidence. Existing valid relation facts survive missing inputs; unsupported new establishment remains unresolved rather than globally rejected or invented.",
     "personPayloadReview": "D20-A preserves locked person values and requires identity-first, person-by-person and axis-by-axis disposition. An unreviewed person payload cannot enter D07 state or formulas.",
     "organizationPayloadReview": "D21-A requires organization-by-organization, field-by-field source and disposition. Organization policy does not automatically write an individual''s trust or loyalty.",
-    "loyalty": "Separate hero-to-own-monarch state in 0..100. Monarch self is 100. Below25 is a predicate; path opening requires an approved persistence/risk rule and is otherwise withheld.",
+    "loyalty": "Separate hero-to-own-faction-leader state in 0..100. Faction leader self is 100. Below25 is a predicate; path opening requires an approved persistence/risk rule and is otherwise withheld.",
     "commandEvaluation": "One order evaluation contains immutable receipt context, decision-time awareness/authority/feasibility, actual action, separately observed performance, compliance classification, performance classification and result identity.",
     "succession": "Do not copy predecessor personal trust or memory into heir. Preserve public history, institutional duties and contracts only through their owning succession policies.",
     "preservation": "Load/body change does not reset permanent event IDs, awareness history, current trust or settled results. Trust changes do not silently alter contracts, property, consent or authority."
@@ -54006,7 +54006,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "type": "integer|null",
       "unit": "loyalty-point",
       "range": "0..100",
-      "null": "unknown; monarch self resolves to 100",
+      "null": "unknown; faction leader self resolves to 100",
       "owner": "D07",
       "read": "D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time",
       "write": "D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references",
@@ -54292,7 +54292,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     "Trust is not authority, consent, property, passage, relationship fact, mood, or loyalty.",
     "An observer updates only that observer''s memory and trust after direct observation or receipt of a report.",
     "Hidden world facts and personal knowledge are separate; late discovery does not rewrite earlier decisions.",
-    "Loyalty is a separate 0..100 state toward the hero''s monarch; monarch self-loyalty is 100; exactly 25 is not below 25.",
+    "Loyalty is a separate 0..100 state toward the hero''s faction leader; faction-leader self-loyalty is 100; exactly 25 is not below 25.",
     "The same ResultId is applied at most once; retransmission is not a new evaluation.",
     "Compliance and performance are separate records; good independent action may be noncompliant and successful.",
     "Impossible orders and orders invalidated by sender death are execution failures, not deliberate disobedience.",
@@ -54337,7 +54337,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     "institutionInputs": "D09-A requires country-specific institution records and actual authority/basis evidence. Existing valid relation facts survive missing inputs; unsupported new establishment remains unresolved rather than globally rejected or invented.",
     "personPayloadReview": "D20-A preserves locked person values and requires identity-first, person-by-person and axis-by-axis disposition. An unreviewed person payload cannot enter D07 state or formulas.",
     "organizationPayloadReview": "D21-A requires organization-by-organization, field-by-field source and disposition. Organization policy does not automatically write an individual''s trust or loyalty.",
-    "loyalty": "Separate hero-to-own-monarch state in 0..100. Monarch self is 100. Below25 is a predicate; path opening requires an approved persistence/risk rule and is otherwise withheld.",
+    "loyalty": "Separate hero-to-own-faction-leader state in 0..100. Faction leader self is 100. Below25 is a predicate; path opening requires an approved persistence/risk rule and is otherwise withheld.",
     "commandEvaluation": "One order evaluation contains immutable receipt context, decision-time awareness/authority/feasibility, actual action, separately observed performance, compliance classification, performance classification and result identity.",
     "succession": "Do not copy predecessor personal trust or memory into heir. Preserve public history, institutional duties and contracts only through their owning succession policies.",
     "preservation": "Load/body change does not reset permanent event IDs, awareness history, current trust or settled results. Trust changes do not silently alter contracts, property, consent or authority."
@@ -56089,7 +56089,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
   "proposalHeld": [
     {
       "id": "P01",
-      "scope": "Sixteen state/office procedure payloads",
+      "scope": "Three-faction office procedure payloads",
       "fields": [
         "selector",
         "candidateRule and actual eligibility records",
@@ -56240,7 +56240,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "applied": "Normalize units and field meanings first. Exact legitimacy formula, coefficient, clamp and consumer values remain later approvals."
     }
   ],
-  "approvalBoundary": "Sealed D09 Option A approves a separate explicit procedure record for each of the sixteen states. It does not approve one universal elector list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or state-specific payload. Missing payloads remain proposals and block appointment atomically.",
+  "approvalBoundary": "Sealed D09 Option A approves a separate explicit procedure record for each of the three factions. It does not approve one universal elector list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or state-specific payload. Missing payloads remain proposals and block appointment atomically.",
   "sourceClaims": [
     {
       "source": "task-26-remaining-decisions-20261008/decision-record.json",
@@ -56285,7 +56285,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "source": "task-24/cells/norland/D09/verified-input-r1/DoneClaim.json",
       "sha256": "6660c352e059dd5f98406a8fa3db668288bf3b194145108b69e987fe01bc859b",
       "status": "documentary-comparison-only",
-      "limit": "No Norland rank probability, politics threshold, lord generation or turn/day conversion imported."
+      "limit": "No Norland rank probability, politics threshold, faction-leader generation or turn/day conversion imported."
     },
     {
       "source": "task-25-gurps-like-basis-20261008/basis.json",
@@ -56391,7 +56391,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
   "intentionallyProposal": [
     {
       "id": "P01",
-      "scope": "The sixteen state/office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions",
+      "scope": "The three-faction office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions",
       "reason": "D09-A requires individual records but does not contain their facts or numbers.",
       "status": "proposal-held",
       "numericApproval": false,
@@ -56766,7 +56766,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
   "proposalHeld": [
     {
       "id": "P01",
-      "scope": "Sixteen state/office procedure payloads",
+      "scope": "Three-faction office procedure payloads",
       "fields": [
         "selector",
         "candidateRule and actual eligibility records",
@@ -56917,7 +56917,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "applied": "Normalize units and field meanings first. Exact legitimacy formula, coefficient, clamp and consumer values remain later approvals."
     }
   ],
-  "approvalBoundary": "Sealed D09 Option A approves a separate explicit procedure record for each of the sixteen states. It does not approve one universal elector list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or state-specific payload. Missing payloads remain proposals and block appointment atomically.",
+  "approvalBoundary": "Sealed D09 Option A approves a separate explicit procedure record for each of the three factions. It does not approve one universal elector list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or state-specific payload. Missing payloads remain proposals and block appointment atomically.",
   "sourceClaims": [
     {
       "source": "task-26-remaining-decisions-20261008/decision-record.json",
@@ -56962,7 +56962,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "source": "task-24/cells/norland/D09/verified-input-r1/DoneClaim.json",
       "sha256": "6660c352e059dd5f98406a8fa3db668288bf3b194145108b69e987fe01bc859b",
       "status": "documentary-comparison-only",
-      "limit": "No Norland rank probability, politics threshold, lord generation or turn/day conversion imported."
+      "limit": "No Norland rank probability, politics threshold, faction-leader generation or turn/day conversion imported."
     },
     {
       "source": "task-25-gurps-like-basis-20261008/basis.json",
@@ -57068,7 +57068,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
   "intentionallyProposal": [
     {
       "id": "P01",
-      "scope": "The sixteen state/office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions",
+      "scope": "The three-faction office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions",
       "reason": "D09-A requires individual records but does not contain their facts or numbers.",
       "status": "proposal-held",
       "numericApproval": false,
@@ -57117,7 +57117,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
   ]
 }
 ```');
-INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Mechanism-D10', 'system-design', 'mechanism-d10', 'D10 Peerage, Rights, Justification, and Ratification Operating Contract and Formula Sheet', 'D10 작위·권리·명분·인준 작동 계약과 공식 시트', '', '', 'accepted', 99, 'system-design/Mechanism-D10.md', '# D10 Peerage, Rights, Justification, and Ratification Operating Contract and Formula Sheet
+INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Mechanism-D10', 'system-design', 'mechanism-d10', 'D10 Titles, Rights, Justification, and Ratification Operating Contract and Formula Sheet', 'D10 직함·권리·명분·인준 작동 계약과 공식 시트', '', '', 'accepted', 99, 'system-design/Mechanism-D10.md', '# D10 Titles, Rights, Justification, and Ratification Operating Contract and Formula Sheet
 
 ## Game Logic Overhaul Alignment Boundary
 
@@ -57574,7 +57574,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     "E_VERSION incompatible rules version"
   ]
 }
-```', '# D10 작위·권리·명분·인준 작동 계약과 공식 시트
+```', '# D10 직함·권리·명분·인준 작동 계약과 공식 시트
 
 ## 게임 로직 개편 정합 경계
 
@@ -57582,7 +57582,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
 
 [대응 장과 확인된 근거](/gdd/rules/power-and-institutions/)
 
-법적 권리, 실효 지배, 점유, 직위와 재산을 별도 원장으로 다룬다. 양도·승계 인정·자격 정지·날조 위임·수혜자 생존·병존 근거·동일 작위 복구는 정확한 신원과 귀속된 근거를 요구한다.
+법적 권리, 실효 지배, 점유, 직위와 재산을 별도 원장으로 다룬다. 양도·승계 인정·자격 정지·날조 위임·수혜자 생존·병존 근거·동일 직함 복구는 정확한 신원과 귀속된 근거를 요구한다.
 
 상태: 범위가 한정된 작동 계약. 공개 Lite의 참조 계산, 서울의 승인된 절차·보존 규칙, 미승인 제안을 구분한다. proposal-held는 실행할 수 없는 보류 항목이며 0이나 승인 수치가 아니다. 이 문서는 전체 도메인 수치 완성이나 런타임 구현을 뜻하지 않는다.
 
@@ -57590,12 +57590,12 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
 
 ## 처리 순서와 책임 경계
 
-1. 스냅샷·규칙·작위·권리·사건의 정확한 신원을 검증한다.
-2. 이름이나 직위 등급이 아니라 영구 ID로 작위와 권리를 찾는다.
+1. 스냅샷·규칙·직함·권리·사건의 정확한 신원을 검증한다.
+2. 이름이나 직위 등급이 아니라 영구 ID로 직함과 권리를 찾는다.
 3. 같은 사건의 동일 재전송과 변경된 재전송을 구분한다.
 4. 행위별 동의·권한·승계 자격·생존·위임·복구 근거를 확인한다.
 5. 권리와 점유·군사지휘·재산을 서로 추론하지 않는다.
-6. 선택된 전이만 적용하며 권리·작위·근거의 신원을 보존한다.
+6. 선택된 전이만 적용하며 권리·직함·근거의 신원을 보존한다.
 7. 결과 후보를 검증한 뒤 영수증과 개정을 한 번에 반영한다.
 
 ## 정규화된 데이터·공식 계약
@@ -57631,7 +57631,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     ],
     "compatibility": "규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다."
   },
-  "dataOwner": "D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한",
+  "dataOwner": "D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한",
   "fields": [
     {
       "name": "title",
@@ -57639,7 +57639,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "unit": "stable title identity and registered territory set",
       "range": "nonempty titleId, registered rankId, zero or more territory IDs, superiorTitleId or null",
       "null": "missing title blocks rights transition; null superior is allowed only when the registered record says lowest-rank exception or top-level root",
-      "owner": "D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한",
+      "owner": "D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한",
       "read": "complete checkpoint at exact revision; stable title/right/person/event IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records",
       "write": "D10 right status or beneficiary after all guards; single fabrication mandate consumption receipt; revision and immutable event receipt",
       "snapshot": "Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion.",
@@ -57651,7 +57651,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "unit": "one person-title-basis legal relation",
       "range": "active | suspended | terminated; pressed | unpressed | potential",
       "null": "unknown basis, beneficiary, title or status blocks operation",
-      "owner": "D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한",
+      "owner": "D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한",
       "read": "complete checkpoint at exact revision; stable title/right/person/event IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records",
       "write": "D10 right status or beneficiary after all guards; single fabrication mandate consumption receipt; revision and immutable event receipt",
       "snapshot": "Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion.",
@@ -57662,7 +57662,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "type": "ControlRecord | null",
       "unit": "effective control of a registered title/territory scope",
       "null": "no verified controller; never implies holder or owner",
-      "owner": "D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한",
+      "owner": "D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한",
       "read": "complete checkpoint at exact revision; stable title/right/person/event IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records",
       "write": "D10 right status or beneficiary after all guards; single fabrication mandate consumption receipt; revision and immutable event receipt",
       "snapshot": "Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion.",
@@ -57673,7 +57673,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "type": "string | null",
       "unit": "D09 office classification",
       "null": "not an error; never substitutes for title rank",
-      "owner": "D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한",
+      "owner": "D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한",
       "read": "complete checkpoint at exact revision; stable title/right/person/event IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records",
       "write": "D10 right status or beneficiary after all guards; single fabrication mandate consumption receipt; revision and immutable event receipt",
       "snapshot": "Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion.",
@@ -57684,7 +57684,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "type": "typed D10 event",
       "unit": "immutable event identity at exact revision/rules version",
       "null": "forbidden",
-      "owner": "D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한",
+      "owner": "D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한",
       "read": "complete checkpoint at exact revision; stable title/right/person/event IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records",
       "write": "D10 right status or beneficiary after all guards; single fabrication mandate consumption receipt; revision and immutable event receipt",
       "snapshot": "Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion.",
@@ -57695,7 +57695,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "type": "RatificationEvidence[]",
       "unit": "registered institution, scope and evidence identifiers",
       "null": "unknown; blocks transitions that require ratification",
-      "owner": "D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한",
+      "owner": "D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한",
       "read": "complete checkpoint at exact revision; stable title/right/person/event IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records",
       "write": "D10 right status or beneficiary after all guards; single fabrication mandate consumption receipt; revision and immutable event receipt",
       "snapshot": "Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion.",
@@ -58040,7 +58040,7 @@ This document retains its existing proposal status. The formulas, tables, and bl
 
 [Corresponding Chapters and Confirmed Grounds](/gdd/rules/power-and-institutions/)
 
-Conferral changes the legal holder of the same peerage title, appointment changes only the authority of an office, and delegation keeps the original holder while defining a scope. Revocation requires a contract clause, grounds for violation, and ratification, and separates legal effect from actual handover.
+Conferral changes the legal holder of the same title, appointment changes only the authority of an office, and delegation keeps the original holder while defining a scope. Revocation requires a contract clause, grounds for violation, and ratification, and separates legal effect from actual handover.
 
 Status: a scoped operating contract. It distinguishes the public Lite''s reference calculations, Seoul''s approved procedures and preservation rules, and unapproved proposals. A proposal-held item is a deferred entry that cannot be executed, and it is neither 0 nor an approved figure. This document does not imply full-domain numerical completion or a runtime implementation.
 
@@ -58049,11 +58049,11 @@ Status: a scoped operating contract. It distinguishes the public Lite''s referen
 ## Processing Order and Responsibility Boundaries
 
 1. Validates the input and rule version, and does not apply the result of the same event more than once.
-2. After confirming the peerage''s identity and revision, cross-checks the performer''s qualification, authority, transmission, reservation, and consent.
+2. After confirming the title''s identity and revision, cross-checks the performer''s qualification, authority, transmission, reservation, and consent.
 3. Confirms the recipient''s affiliation and consent, the ratifying authority''s survival, and the ceremonial and record grounds.
-4. Rejects any grant that would exceed the limit of two directly held existing ducal titles, and does not arbitrarily trim it.
+4. Rejects a ten-station tier office (Commissioner, Cardinal, Director) without the recorded appointment of the faction''s appointing authority (the President, the Hierophant, the Board), and does not downgrade it to another office.
 5. Confirms the revocation clause, violation, and ratification, and limits delegation to the authority actually held.
-6. Passes the peerage and rights preservation checks, then applies the legal change once.
+6. Passes the title and rights preservation checks, then applies the legal change once.
 7. Physical handover and illegal seizure are adjudicated separately from legal holding.
 8. Loss of a signatory is handled by reading each contract''s continuation, re-ratification, and termination clauses, and does not automatically delete the organization.
 
@@ -58165,7 +58165,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "name": "grantorRank,titleRank,recipientDucalCount",
       "type": "safe integer",
       "unit": "ordered-rank / directly-held-title-count",
-      "range": "nonnegative authored rank/count; ducal direct holdings <=2",
+      "range": "nonnegative authored rank/count; ten-station tier requires a recorded appointment",
       "null": "reject E_INPUT",
       "owner": "D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order",
       "read": "D01 identity/alive/capability; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/superior contract; D13 custody/included rights; D18 accepted event order and rule version",
@@ -58262,7 +58262,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     "Match existing result by event ID and full payload before reapplying. Reject changed replay.",
     "Read title identity and revision; refuse stale snapshot without mutations.",
     "Check capability, actual authority, location/delivery, exclusive resource reservations and counterpart consent/institution in D03 order.",
-    "For grant require existing lower title, country-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. Direct ducal holding after addition cannot exceed existing limit two.",
+    "For grant require existing lower title, country-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. A ten-station tier office requires the faction appointing authority''s recorded appointment.",
     "For recall require approved existing clause, breach evidence and applicable ratification. For delegation keep legal holder and restrict scope to actually held rights. Appointment touches office powers only.",
     "Emit exactly one legal delta for grant/recall. Preserve ID count, institutional property, omitted assets, original-owner rights and completed progress.",
     "Assess physical handover separately. Unlawful seizure affects control/custody and opens dispute/betrayal, never lawful holder or recall.",
@@ -58280,11 +58280,11 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     },
     {
       "id": "D11-DUCAL-BOUNDARY",
-      "expression": "recipientDirectDucalAfter = recipientDirectDucalBefore + indicator(grantedTitleIsDucal); eligible iff after <= 2",
-      "unit": "direct ducal title count",
-      "authority": "existing SP1 sp1.b38 limit, not new balance",
+      "expression": "tenStationTierEligible = appointmentRecorded(appointingAuthority(faction), recipient); appointingAuthority: government President, Arc Hierophant, Free City Board; no direct-holding cap",
+      "unit": "recorded ten-station tier appointments",
+      "authority": "v4 CANON-BIBLE 2.6 appointment rule, replaces the old sp1.b38 limit",
       "rounding": "exact integer",
-      "clamp": "reject over-limit, do not silently clamp"
+      "clamp": "reject without a recorded appointment, do not silently downgrade"
     },
     {
       "id": "D11-SINGLE-RESULT",
@@ -58313,7 +58313,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     {
       "id": "P11-COUNTRY-RATIFICATION",
       "owner": "D09",
-      "description": "Actual 16-country ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar.",
+      "description": "Actual three-faction ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar.",
       "values": null,
       "decision": "T68-D09-COUNTRY-LAWS A is authoring direction only",
       "status": "proposal-held",
@@ -58478,7 +58478,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
 
 [대응 장과 확인된 근거](/gdd/rules/power-and-institutions/)
 
-수여는 동일 작위의 법적 보유자를 바꾸고, 임명은 직위 권한만 바꾸며, 위임은 원보유자를 유지한 채 범위를 정한다. 회수는 계약 조항·위반 근거·인준을 요구하고 법적 효력과 실제 인계를 분리한다.
+수여는 동일 직함의 법적 보유자를 바꾸고, 임명은 직위 권한만 바꾸며, 위임은 원보유자를 유지한 채 범위를 정한다. 회수는 계약 조항·위반 근거·인준을 요구하고 법적 효력과 실제 인계를 분리한다.
 
 상태: 범위가 한정된 작동 계약. 공개 Lite의 참조 계산, 서울의 승인된 절차·보존 규칙, 미승인 제안을 구분한다. proposal-held는 실행할 수 없는 보류 항목이며 0이나 승인 수치가 아니다. 이 문서는 전체 도메인 수치 완성이나 런타임 구현을 뜻하지 않는다.
 
@@ -58487,11 +58487,11 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
 ## 처리 순서와 책임 경계
 
 1. 입력과 규칙 판본을 검증하고 동일 사건의 결과를 중복 반영하지 않는다.
-2. 작위 신원·개정을 확인한 뒤 수행 자격·권한·전달·예약·동의를 대조한다.
+2. 직함 신원·개정을 확인한 뒤 수행 자격·권한·전달·예약·동의를 대조한다.
 3. 수여 대상의 소속·동의, 인준권자의 생존과 의례·기록 근거를 확인한다.
-4. 기존 공작위 직접 보유 한도 둘을 넘으면 거부하며 임의로 잘라내지 않는다.
+4. 10 이상 단계 직위(청장·추기경·이사)는 세력별 임명권자(대통령·교주·이사회)의 임명 기록이 없으면 거부하며 다른 직위로 낮춰 주지 않는다.
 5. 회수 조항·위반·인준을 확인하고 위임은 실제 보유 권한 안으로 제한한다.
-6. 작위·권리 보존 검사를 거쳐 법적 변동을 한 번 반영한다.
+6. 직함·권리 보존 검사를 거쳐 법적 변동을 한 번 반영한다.
 7. 물리 인계·불법 압류는 법적 보유와 따로 판정한다.
 8. 서명자 상실은 계약별 유지·재인준·종료 조항을 읽으며 조직을 자동 삭제하지 않는다.
 
@@ -58603,7 +58603,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "name": "grantorRank,titleRank,recipientDucalCount",
       "type": "safe integer",
       "unit": "ordered-rank / directly-held-title-count",
-      "range": "nonnegative authored rank/count; ducal direct holdings <=2",
+      "range": "nonnegative authored rank/count; ten-station tier requires a recorded appointment",
       "null": "reject E_INPUT",
       "owner": "D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order",
       "read": "D01 identity/alive/capability; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/superior contract; D13 custody/included rights; D18 accepted event order and rule version",
@@ -58700,7 +58700,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     "Match existing result by event ID and full payload before reapplying. Reject changed replay.",
     "Read title identity and revision; refuse stale snapshot without mutations.",
     "Check capability, actual authority, location/delivery, exclusive resource reservations and counterpart consent/institution in D03 order.",
-    "For grant require existing lower title, country-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. Direct ducal holding after addition cannot exceed existing limit two.",
+    "For grant require existing lower title, country-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. A ten-station tier office requires the faction appointing authority''s recorded appointment.",
     "For recall require approved existing clause, breach evidence and applicable ratification. For delegation keep legal holder and restrict scope to actually held rights. Appointment touches office powers only.",
     "Emit exactly one legal delta for grant/recall. Preserve ID count, institutional property, omitted assets, original-owner rights and completed progress.",
     "Assess physical handover separately. Unlawful seizure affects control/custody and opens dispute/betrayal, never lawful holder or recall.",
@@ -58718,11 +58718,11 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     },
     {
       "id": "D11-DUCAL-BOUNDARY",
-      "expression": "recipientDirectDucalAfter = recipientDirectDucalBefore + indicator(grantedTitleIsDucal); eligible iff after <= 2",
-      "unit": "direct ducal title count",
-      "authority": "existing SP1 sp1.b38 limit, not new balance",
+      "expression": "tenStationTierEligible = appointmentRecorded(appointingAuthority(faction), recipient); appointingAuthority: government President, Arc Hierophant, Free City Board; no direct-holding cap",
+      "unit": "recorded ten-station tier appointments",
+      "authority": "v4 CANON-BIBLE 2.6 appointment rule, replaces the old sp1.b38 limit",
       "rounding": "exact integer",
-      "clamp": "reject over-limit, do not silently clamp"
+      "clamp": "reject without a recorded appointment, do not silently downgrade"
     },
     {
       "id": "D11-SINGLE-RESULT",
@@ -58751,7 +58751,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     {
       "id": "P11-COUNTRY-RATIFICATION",
       "owner": "D09",
-      "description": "Actual 16-country ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar.",
+      "description": "Actual three-faction ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar.",
       "values": null,
       "decision": "T68-D09-COUNTRY-LAWS A is authoring direction only",
       "status": "proposal-held",
@@ -59186,7 +59186,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "id": "P-COUNTRIES",
       "status": "proposal-held",
       "owner": "D09",
-      "detail": "Actual 16-country electors, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values.",
+      "detail": "Actual three-faction electors, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values.",
       "numericApproval": false,
       "operative": false
     },
@@ -59396,7 +59396,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
         "row": "D09",
         "decisionId": "T68-D09-COUNTRY-LAWS",
         "chosenOption": "A",
-        "application": "Each of 16 countries supplies its own electors, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records."
+        "application": "Each of the three factions supplies its own electors, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records."
       },
       {
         "row": "D10",
@@ -59556,7 +59556,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "decisionId": "T68-D09-COUNTRY-LAWS",
       "subdecisionKey": "country-institutions-residual",
       "chosenOption": "A",
-      "selectedLabel": "Specify electors, quorum, resolver, ratification, and acting authority for each of the 16 countries",
+      "selectedLabel": "Specify electors, quorum, resolver, ratification, and acting authority for each of the three factions",
       "disposition": "APPLIED_BOUNDED_WITH_UPSTREAM_DEFER",
       "boundary": "D09 country-specific procedure; OFFICE/P-COUNTRIES",
       "scope": "Preserve selected direction; no new concrete values/records approved.",
@@ -59931,7 +59931,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
 
 [대응 장과 확인된 근거](/gdd/rules/power-and-institutions/)
 
-본체 조작권, 직위, 작위·명분, 재산과 계약 효과를 독립적으로 판정한다. 사망과 영구 구금은 다른 사건이며 석방만으로 원래 몸에 돌아가지 않는다. 명분·분대·사망 민감 조항·조직·관계 효과·공통 단위의 구조 검증은 아직 보류되어 있다.
+본체 조작권, 직위, 직함·명분, 재산과 계약 효과를 독립적으로 판정한다. 사망과 영구 구금은 다른 사건이며 석방만으로 원래 몸에 돌아가지 않는다. 명분·분대·사망 민감 조항·조직·관계 효과·공통 단위의 구조 검증은 아직 보류되어 있다.
 
 상태: 범위가 한정된 작동 계약. 공개 Lite의 참조 계산, 서울의 승인된 절차·보존 규칙, 미승인 제안을 구분한다. proposal-held는 실행할 수 없는 보류 항목이며 0이나 승인 수치가 아니다. 이 문서는 전체 도메인 수치 완성이나 런타임 구현을 뜻하지 않는다.
 
@@ -59941,7 +59941,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
 
 1. 형식·사건 신원·전체 개정을 검증하고 동일 결과의 재전송을 구분한다.
 2. 확인된 사실과 같은 경계의 사망 집합을 읽고 사망자의 새 개인 행동을 중지한다.
-3. 직위·작위·재산·계약을 스냅샷으로 보존한 뒤 본체를 독립 선택한다.
+3. 직위·직함·재산·계약을 스냅샷으로 보존한 뒤 본체를 독립 선택한다.
 4. 적격 지정자 또는 등록된 순서를 따르되 순서 미확인은 선택 보류, 확인된 빈 목록은 경로 종료로 구분한다.
 5. 직위는 국가별 적격·인준 결과를, 재산은 유효한 개별 처분을 읽으며 물리 인계를 추론하지 않는다.
 6. 미완 명령·전쟁 약속은 항목별 재검사하고 소비 자원·완료 진척을 보존한다.
@@ -60200,7 +60200,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "id": "P-COUNTRIES",
       "status": "proposal-held",
       "owner": "D09",
-      "detail": "Actual 16-country electors, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values.",
+      "detail": "Actual three-faction electors, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values.",
       "numericApproval": false,
       "operative": false
     },
@@ -60410,7 +60410,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
         "row": "D09",
         "decisionId": "T68-D09-COUNTRY-LAWS",
         "chosenOption": "A",
-        "application": "Each of 16 countries supplies its own electors, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records."
+        "application": "Each of the three factions supplies its own electors, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records."
       },
       {
         "row": "D10",
@@ -60570,7 +60570,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       "decisionId": "T68-D09-COUNTRY-LAWS",
       "subdecisionKey": "country-institutions-residual",
       "chosenOption": "A",
-      "selectedLabel": "16국 각각 선거인·정족수·해결자·인준·대행을 명시",
+      "selectedLabel": "세 세력 각각 선거인·정족수·해결자·인준·대행을 명시",
       "disposition": "APPLIED_BOUNDED_WITH_UPSTREAM_DEFER",
       "boundary": "D09 country-specific procedure; OFFICE/P-COUNTRIES",
       "scope": "Preserve selected direction; no new concrete values/records approved.",
@@ -65539,7 +65539,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     },
     "D17": {
       "chosenOption": "B",
-      "application": "작위와 상위 계약은 개인 자산이 아닌 별도 권리 입력이다; 취득 기간으로 실물 도착을 추정하지 않는다.",
+      "application": "직함과 상위 계약은 개인 자산이 아닌 별도 권리 입력이다; 취득 기간으로 실물 도착을 추정하지 않는다.",
       "heldValuesRemainProposals": true
     },
     "D19": {
@@ -66136,13 +66136,13 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       ],
       "consequences": {
         "tradeoff": "완료 범위가 넓지만 세계관 결정이 늘어난다",
-        "downstreamChanges": "작위·상위 계약·비준 절차·취득/안정화 기간",
+        "downstreamChanges": "직함·상위 계약·비준 절차·취득/안정화 기간",
         "selectionEffect": "A/B 응답은 제안 방향·작성/검토 방식 선택이다. 정확한 함수·계수·단위·실제 레코드·개인/국가 처분은 아래 잔여 입력 승인 전 채택되지 않는다."
       },
       "dossierPointer": "/decisions/16",
       "relevant": true,
       "disposition": "apply-selected-direction-defer-held-inputs",
-      "reason": "작위와 상위 계약은 개인 자산이 아닌 별도 권리 입력이다; 취득 기간으로 실물 도착을 추정하지 않는다.",
+      "reason": "직함과 상위 계약은 개인 자산이 아닌 별도 권리 입력이다; 취득 기간으로 실물 도착을 추정하지 않는다.",
       "application": "contract.json#/decisionApplications/D17",
       "heldBoundary": "A/B 응답은 제안 방향·작성/검토 방식 선택이다. 정확한 함수·계수·단위·실제 레코드·개인/국가 처분은 아래 잔여 입력 승인 전 채택되지 않는다."
     },
@@ -70517,12 +70517,12 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       ],
       "consequences": {
         "tradeoff": "완료 범위가 넓지만 세계관 결정이 늘어난다",
-        "downstreamChanges": "작위·상위 계약·비준 절차·취득/안정화 기간",
+        "downstreamChanges": "직함·상위 계약·비준 절차·취득/안정화 기간",
         "selectionEffect": "A/B 응답은 제안 방향·작성/검토 방식 선택이다. 정확한 함수·계수·단위·실제 레코드·개인/국가 처분은 아래 잔여 입력 승인 전 채택되지 않는다."
       },
       "relevance": "cross-domain-consumer-boundary",
       "disposition": "defer-with-trace",
-      "reason": "작위/인준은 숙련 및 기술 자격과 분리; D10 실제 레코드 후속.",
+      "reason": "직함/인준은 숙련 및 기술 자격과 분리; D10 실제 레코드 후속.",
       "target": "proposals.json#crossDomainDeferrals",
       "heldBoundary": "A/B 응답은 제안 방향·작성/검토 방식 선택이다. 정확한 함수·계수·단위·실제 레코드·개인/국가 처분은 아래 잔여 입력 승인 전 채택되지 않는다."
     },
@@ -71079,10 +71079,10 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       },
       {
         "rowId": "D17",
-        "reason": "작위/인준은 숙련 및 기술 자격과 분리; D10 실제 레코드 후속.",
+        "reason": "직함/인준은 숙련 및 기술 자격과 분리; D10 실제 레코드 후속.",
         "consequences": {
           "tradeoff": "완료 범위가 넓지만 세계관 결정이 늘어난다",
-          "downstreamChanges": "작위·상위 계약·비준 절차·취득/안정화 기간",
+          "downstreamChanges": "직함·상위 계약·비준 절차·취득/안정화 기간",
           "selectionEffect": "A/B 응답은 제안 방향·작성/검토 방식 선택이다. 정확한 함수·계수·단위·실제 레코드·개인/국가 처분은 아래 잔여 입력 승인 전 채택되지 않는다."
         }
       },
@@ -76116,7 +76116,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       ],
       "consequences": {
         "tradeoff": "완료 범위가 넓지만 세계관 결정이 늘어난다",
-        "downstreamChanges": "작위·상위 계약·비준 절차·취득/안정화 기간",
+        "downstreamChanges": "직함·상위 계약·비준 절차·취득/안정화 기간",
         "selectionEffect": "A/B 응답은 제안 방향·작성/검토 방식 선택이다. 정확한 함수·계수·단위·실제 레코드·개인/국가 처분은 아래 잔여 입력 승인 전 채택되지 않는다."
       },
       "decisionPointer": "/decisions/16",
@@ -83993,7 +83993,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
     },
     {
       "id": "D17/titles-ratification",
-      "field": "작위·상위 계약·비준 절차·취득/안정화 기간",
+      "field": "직함·상위 계약·비준 절차·취득/안정화 기간",
       "value": null,
       "status": "proposal-held",
       "decisionBoundary": "decision-record.json /decisions/16/consequences/selectionEffect",
@@ -85046,7 +85046,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
       ],
       "consequences": {
         "tradeoff": "완료 범위가 넓지만 세계관 결정이 늘어난다",
-        "downstreamChanges": "작위·상위 계약·비준 절차·취득/안정화 기간",
+        "downstreamChanges": "직함·상위 계약·비준 절차·취득/안정화 기간",
         "selectionEffect": "A/B 응답은 제안 방향·작성/검토 방식 선택이다. 정확한 함수·계수·단위·실제 레코드·개인/국가 처분은 아래 잔여 입력 승인 전 채택되지 않는다."
       },
       "consequencesChecked": true,
@@ -85691,7 +85691,7 @@ A custom negotiation in which both sides are below an absolute value of 100 is a
 
 **Crusader Kings III.** The reference installed version is 1.20.0.3, build 25652598, checksum 8e45; this is distinguished as the installation authority, and DLC, mods, and scenarios are left unconfirmed. Script constants, conditions, helpers by range, and adjustments have been confirmed only within the quoted scope. The addition/subtraction in derived calculations and the difference between the education value of 10 and the additive description in the documentation are already limited source differences and do not amount to a complete native formula. The language–TL correspondence is a surveyed unresolved equivalence and gives no default of 0 or conversion formula. The five-versus-six non-equivalence of innate traits is likewise limited to that scope. Seoul records the individual baselines but does not adopt them as its own CP, proficiency, or derived formulas.
 
-**Norland.** The wiki''s pinned version, the MAIN announcement, the BETA announcement, and the historical installed build 25211575 are separate authorities. The old wiki on loyalty and the announcement of relationship-centered changes are not merged into the same current build. The blanket claim that talents are absent also does not match the patch''s talent reintroduction, politician experience, and Duelist changes. The past action experience table, the announcement halving teacher and knowledge experience, and the usage-increase values in the historical data are different channels and cannot produce the current growth rate. The effective skill ×2 and ticket ×1.5 in cultural combat are non-equivalent mechanisms in different units. Per-action eligibility is not merged into a single universal lord eligibility. Seoul records the actual actions, education, and states under the same contract but does not transplant the source game''s constants, probabilities, or roles as they are.
+**Norland.** The wiki''s pinned version, the MAIN announcement, the BETA announcement, and the historical installed build 25211575 are separate authorities. The old wiki on loyalty and the announcement of relationship-centered changes are not merged into the same current build. The blanket claim that talents are absent also does not match the patch''s talent reintroduction, politician experience, and Duelist changes. The past action experience table, the announcement halving teacher and knowledge experience, and the usage-increase values in the historical data are different channels and cannot produce the current growth rate. The effective skill ×2 and ticket ×1.5 in cultural combat are non-equivalent mechanisms in different units. Per-action eligibility is not merged into a single universal retainer eligibility. Seoul records the actual actions, education, and states under the same contract but does not transplant the source game''s constants, probabilities, or roles as they are.
 
 ## 10. Concrete Alternatives for Unapproved Policies
 
@@ -85735,7 +85735,7 @@ The use of the numerical alternatives is action and combat calculation, and the 
 
 D01은 인물의 영구 신원과 능력·기술·특성 기록을 다룬다. 플레이어는 한 캠페인에서 한 본체 인물로 행동한다. NPC는 같은 이동·노동·교육·정치·전투 행동 계약을 쓰는 다른 인물이다. 본체라는 이유로 타인의 신체나 권한을 얻지 않는다. 본체·분대장·전투 지휘관·권리 보유자·기관 담당자는 서로 다른 역할이며 한 인물이 여럿을 맡을 수 있다. 국가와 기관은 직위·권리·재산의 절차를 소유하고, 인물 시트가 비어 있는 제도 절차의 성공을 대신 만들어 주지 않는다.
 
-능력, 숙련, 특성, 일시적 상황 보정, 직위, 작위, 점유, 실효 통제, 군사 지휘는 구분한다. 공직을 맡아도 기관 금고가 개인 재산으로 바뀌거나 모든 병력이 배속되지 않는다. 정부 청장의 대통령 임명, 아크 추기경의 교주 서품, 자유도시 이사의 이사회 임명은 설정의 절차이지 능력치 공식이 아니다.
+능력, 숙련, 특성, 일시적 상황 보정, 직위, 직함, 점유, 실효 통제, 군사 지휘는 구분한다. 공직을 맡아도 기관 금고가 개인 재산으로 바뀌거나 모든 병력이 배속되지 않는다. 정부 청장의 대통령 임명, 아크 추기경의 교주 서품, 자유도시 이사의 이사회 임명은 설정의 절차이지 능력치 공식이 아니다.
 
 ## 2. 플레이어의 결정과 자격
 
@@ -85777,7 +85777,7 @@ D01은 인물의 영구 신원과 능력·기술·특성 기록을 다룬다. �
 
 모든 인물은 유효한 권리·명분 인스턴스를 보유할 수 있지만 보유만으로 선전포고 권한·병력·지휘권을 받지 않는다. 전쟁 개시에는 유효한 등록 명분이 필요하다. 전쟁 점수 W는 -100부터 100, 상대 점수는 -W다. 종결에서는 명분과 수혜자 자격을 다시 검사한다. 명분이 이미 무효라면 ±100의 승패 효과보다 무효 조건을 먼저 적용하고, 그 명분의 반환·잔존 규칙으로 처리한다. 무효를 백지 강화나 승리로 바꾸어 근거 없는 권리를 만들지 않는다. 명분이 유효한 ±100에서는 명분 판본에 정한 승패 효과와 고정된 목표 범위로 즉시 종결하며 응답 지연을 이용한 추가 포획·점령·강제 요구를 허용하지 않는다. 목표 밖 권리·영토와 제삼자의 권리를 점수만으로 강제 이전하지 못한다.
 
-주장 지원 전쟁에서는 공격 승인자와 명분에 지정된 수혜자를 구분한다. 수혜자의 동의, 소속·지원 계약, 주장 효력, 목표 작위와 제도상 행사 자격을 검사하며 승리 권리는 그 적격 수혜자에게 이전한다. 공격 지휘관이나 점령자가 대신 개인 보유하지 않는다. 법적 권리 이전과 점령 유지·반환, 현장 실효 통제, 운영자 협력과 실제 인도는 별개다. 수혜자가 얻는 작위의 등급과 상위 계약도 다시 검사하므로 승리만으로 무조건 공격자의 하급 봉신이 되지 않는다.
+주장 지원 전쟁에서는 공격 승인자와 명분에 지정된 수혜자를 구분한다. 수혜자의 동의, 소속·지원 계약, 주장 효력, 목표 직함과 제도상 행사 자격을 검사하며 승리 권리는 그 적격 수혜자에게 이전한다. 공격 지휘관이나 점령자가 대신 개인 보유하지 않는다. 법적 권리 이전과 점령 유지·반환, 현장 실효 통제, 운영자 협력과 실제 인도는 별개다. 수혜자가 얻는 직함의 등급과 상위 계약도 다시 검사하므로 승리만으로 무조건 공격자의 하급 봉신이 되지 않는다.
 
 양측 절댓값 100 미만의 맞춤 교섭은 서울의 승인된 독자 확장이다. 가격 판본 미등록 항목은 서명·정산을 잠그고 유효 등록 항목은 협상할 수 있다. 가격 평가가 전쟁 점수 이하라는 이유만으로 자동 수락하지 않는다. 협상 중 시간과 전투는 계속되며 수락 전 ±100 도달은 명분·수혜자 재검사와 무효 조건 우선 처리를 거친 강제 명분 종결이 우선한다. 인물은 매매 물품이 아니라 유효한 석방·송환·면담·자발적 배속 행위의 대상으로 다룬다.
 
@@ -85788,7 +85788,7 @@ D01은 인물의 영구 신원과 능력·기술·특성 기록을 다룬다. �
 | 명령·권한·일정 | D03은 실제 요청·전달·권한·일정을, D01은 인물 동일성과 시트 기록을 맡는다. |
 | 인구·고용·배급 | D04는 총 인구·노동·예약을 보존하며 D01 개인화는 인구 생성이 아니다. |
 | 관계·평가 | D07은 관측·기억·관계 반영을 맡으며 D01 신원은 원 발신자를 유지한다. |
-| 작위·권리·명분 | D10은 종류별 효력·인준·승계를 맡으며 신원 확인은 권리를 주지 않는다. |
+| 직함·권리·명분 | D10은 종류별 효력·인준·승계를 맡으며 신원 확인은 권리를 주지 않는다. |
 | 교육·지식 | D14는 실제 접근·교육·진척을 다루고 D01 숙련 기록은 문서 소유와 분리한다. |
 | 분대·전투 | D15는 배속·실제 참가·전투 실행을, D01은 개인 기록의 세 범위를 맡는다. |
 | 전쟁·협상·인도 | D16·D17은 명분 종결·협상·실제 인도를 다루며 D01은 권리 보유자를 식별한다. |
@@ -85806,7 +85806,7 @@ D01은 인물의 영구 신원과 능력·기술·특성 기록을 다룬다. �
 
 **기준시각 뒤 증원.** 전: 전투가 진행되고 증원 부대가 정산 기준시각 뒤 실제 도착한다. 행동: 도착을 확인한다. 후: 이전 기준시각 집계에는 넣지 않지만 진행 중 참가를 허용한다. 이전 집계 제외를 영구 이동 상태나 참가 거절로 바꾸지 않는다.
 
-**유효 명분과 지정 수혜자.** 전: 공격자 갑이 수혜자 을의 주장을 지원하며 을의 동의·지원 계약·주장·목표 작위·행사 자격이 유효하다. 행동: 갑이 W=100에 도달하고 종결에서 명분과 을의 자격을 다시 확인한다. 후: 명분에 지정된 권리는 을에게 이전하며 갑의 점령만으로 갑의 개인 권리가 되지 않는다. 목표 밖 제삼자 권리는 보존하고 현장 통제·운영자 협력·실제 인도는 별도로 검사한다.
+**유효 명분과 지정 수혜자.** 전: 공격자 갑이 수혜자 을의 주장을 지원하며 을의 동의·지원 계약·주장·목표 직함·행사 자격이 유효하다. 행동: 갑이 W=100에 도달하고 종결에서 명분과 을의 자격을 다시 확인한다. 후: 명분에 지정된 권리는 을에게 이전하며 갑의 점령만으로 갑의 개인 권리가 되지 않는다. 목표 밖 제삼자 권리는 보존하고 현장 통제·운영자 협력·실제 인도는 별도로 검사한다.
 
 **점수 종결 전에 무효가 된 명분.** 전: 개전 때 유효했던 명분이 종결 검사에서는 무효이며 공격측 점수가 100이다. 행동: 명분 무효 조건을 먼저 검사한다. 후: 승리 효과로 권리를 새로 주지 않고 해당 명분의 반환·잔존 규칙을 적용한다. 포로·휴전·취소 비용은 명분 정책을 따르며 백지 강화의 주장 효과로 자동 대체하지 않는다.
 
@@ -85814,7 +85814,7 @@ D01은 인물의 영구 신원과 능력·기술·특성 기록을 다룬다. �
 
 **Crusader Kings III.** 참조 설치판은 1.20.0.3, 빌드 25652598, 체크섬 8e45를 설치 권위로 구분하고 DLC·모드·시나리오는 미확인으로 둔다. 스크립트 상수·조건·구간별 도우미·보정은 인용 범위에서만 확인됐다. 파생 계산의 더하기/빼기와 교육 값 10 대 문서의 가산 설명 차이는 이미 한정된 원천 차이이며 완전한 네이티브 산식이 아니다. 언어·TL 대응은 조사된 미해결 동등성이고 기본값 0이나 변환식을 주지 않는다. 선천 특성의 다섯 대 여섯 비동등도 그 범위에 한정된다. 서울은 개인 기준을 기록하되 이를 자신의 CP·숙련·파생 공식으로 채택하지 않는다.
 
-**Norland.** 위키 고정 판본, MAIN 발표, BETA 발표, 역사 설치 빌드 25211575는 서로 다른 권위다. 충성도에 관한 옛 위키와 관계 중심 변경 발표를 같은 현재 빌드로 합치지 않는다. 재능 부재의 포괄 주장도 패치의 재능 재도입·정치가 경험치·Duelist 변경과 맞지 않는다. 과거 행동 경험치 표, 교사·지식 경험치 절반 발표, 역사 데이터의 사용 증가 값은 다른 채널이라 현재 성장률을 만들 수 없다. 문화 전투의 유효 기술 x2와 티켓 x1.5는 다른 단위의 비동등 기작이다. 행동별 자격을 하나의 보편 영주 자격으로 합치지 않는다. 서울은 같은 계약의 실제 행동·교육·상태를 기록하지만 원작의 상수·확률·역할을 그대로 이식하지 않는다.
+**Norland.** 위키 고정 판본, MAIN 발표, BETA 발표, 역사 설치 빌드 25211575는 서로 다른 권위다. 충성도에 관한 옛 위키와 관계 중심 변경 발표를 같은 현재 빌드로 합치지 않는다. 재능 부재의 포괄 주장도 패치의 재능 재도입·정치가 경험치·Duelist 변경과 맞지 않는다. 과거 행동 경험치 표, 교사·지식 경험치 절반 발표, 역사 데이터의 사용 증가 값은 다른 채널이라 현재 성장률을 만들 수 없다. 문화 전투의 유효 기술 x2와 티켓 x1.5는 다른 단위의 비동등 기작이다. 행동별 자격을 하나의 보편 가신 자격으로 합치지 않는다. 서울은 같은 계약의 실제 행동·교육·상태를 기록하지만 원작의 상수·확률·역할을 그대로 이식하지 않는다.
 
 ## 10. 미승인 정책의 구체적 대안
 
@@ -86084,7 +86084,7 @@ This document reads the already approved rules side by side as **one combat sign
 - Actual contact: strategic remote orders are delivered along the actual contact routes available at that time.
 - Safety first: safety, physiological needs, and detention incapacity take precedence over needs and schedules.
 - No pause, no speed control, no order queue.
-- Authorized record keeper: record manipulation is performed only by authorized record, notary, and genealogy officials acting on the orders of a sovereign or office holder.
+- Authorized record keeper: record manipulation is performed only by authorized record, notary, and genealogy officials acting on the orders of a faction leader or office holder.
 
 No values converting these policies into score or time have been approved. Identifiers are permanent, revision conflicts and storage errors are stated explicitly, and no automatic renumbering, automatic migration, or silent mixing of rules is done.
 
@@ -86099,7 +86099,7 @@ No values converting these policies into score or time have been approved. Ident
 | Superior Commander (Sender) | Sends the directive. The receipt record and the evaluation result belong to this commander character. | sp1.b112, sp1.b114 |
 | Evaluating Party (Commander Character) | Evaluates at the moment they learn of the outcome through observation or reports, and uses the result as the basis for their memory of that principal and for later assignment and trust decisions. | sp1.b114 |
 | Local Commander (NPC) | Judges automatic battle orders against the prior objective, stance, and authority, together with actual observed information, capabilities, and objectives. A new remote order must go through contact, receipt, and acceptance. | combat-formula.20261003.pipeline stage 1 |
-| Authorized Record, Notary, and Genealogy Officer | Receives orders from a lord or office holder and carries out record manipulation (gathering/drafting evidence → composing a claim → recognizing or rejecting its validity). A direct manipulation path for a principal without an office is not adopted. | claims-owner.20261003.fabrication |
+| Authorized Record, Notary, and Genealogy Officer | Receives orders from a faction leader or office holder and carries out record manipulation (gathering/drafting evidence → composing a claim → recognizing or rejecting its validity). A direct manipulation path for a principal without an office is not adopted. | claims-owner.20261003.fabrication |
 | Delegator and Proxy | A delegation is in exactly one of these states: valid, suspended, expired, or revoked. If the proxy dies, the original holder''s rights remain. | sp1.b38–b43 |
 
 The actors above are not separate principals; they are roles that a single principal can take on, plus roles of other NPCs. The state names and office titles in the history ledger are not proof of command authority in the current world. The valid records of current character, assignment, delegation, and location must be checked. The cases below are hypothetical situations that illustrate the roles and do not fix a cast or quantities.
@@ -86122,7 +86122,7 @@ Whether an action is permitted is determined by the actual checks set for each p
 
 **Strategic Remote Order** — The delegation must be valid by passing the membership, consent, ratification, and scope gates, and there must be an actual contact route (messenger, radio, contact network) usable at that time. The target receives it and can accept it only if there is no inability to perform due to safety, physiology, or detention. If the authority ended before receipt, the arrived order has its authority checked again. The record officer is not a requirement of this path.
 
-**Record Manipulation** — Performed only by an authorized record, notary, and genealogy officer who has received an order from a lord or office holder. Checks the accessible record, genealogy, and ratification paths, as well as the duration, cost, and risk of detection. A direct manipulation path for a principal without an office is not adopted.
+**Record Manipulation** — Performed only by an authorized record, notary, and genealogy officer who has received an order from a faction leader or office holder. Checks the accessible record, genealogy, and ratification paths, as well as the duration, cost, and risk of detection. A direct manipulation path for a principal without an office is not adopted.
 
 **Common Battle Constraints** — There is no pause, speed control, or order queue. The holding of and waiting for a response to a strategic request differs from this battle queue. An authority failure or physical impossibility is not put into a queue to be automatically made to succeed later.
 
@@ -86251,7 +86251,7 @@ The examples below are hypothetical situations that apply approved rules. They s
 
 - **Before**: The avatar squad leader has received an order (the reception record''s 7 fields as they are), and the existing directional trust and loyalty values are in place.
 - **Request**: For the order handed down, choose `Dokja Haengdong` (independent action). In a separate situation, the same principal, holding no office, tries to directly alter a claim in the ledger.
-- **Event**: The squad leader''s choice is a named choice, so input is not locked and there is no forced execution. Even if the actual execution result is an observation that contributes to the objective (a favorable contribution), compliance and performance are recorded as separate items, and `Dokja Haengdong` (independent action) is not changed into `Ttareugi` (following) just because the observation turned out favorable. The evaluation is attributed by sender and result identifier, and the same result identifier is never applied twice. The office-less principal''s attempt to tamper with the records is rejected, because that person is not an authorized records, notarization, or genealogy officer acting on an order from the lord or an office holder.
+- **Event**: The squad leader''s choice is a named choice, so input is not locked and there is no forced execution. Even if the actual execution result is an observation that contributes to the objective (a favorable contribution), compliance and performance are recorded as separate items, and `Dokja Haengdong` (independent action) is not changed into `Ttareugi` (following) just because the observation turned out favorable. The evaluation is attributed by sender and result identifier, and the same result identifier is never applied twice. The office-less principal''s attempt to tamper with the records is rejected, because that person is not an authorized records, notarization, or genealogy officer acting on an order from the faction leader or an office holder.
 - **After**: There is no automatic trust reduction fixed to disobedience. How much trust and loyalty change after the evaluation is not yet decided, and this does not mean the change is 0. The classification thresholds of friend `T ≥ 25`, enemy `T ≤ -25`, and nemesis `T ≤ -50` remain as they are. A refused record tampering does not create occupancy.
 
 ### 10.5 Actual Arrival and Deadline — Point-in-Time Judgment, Not Permanent Waiting
@@ -86380,13 +86380,13 @@ D03은 **인물의 행동, 명령, 권한, 일정**을 다룬다. 한 플레이�
 
 이 문서는 이미 승인된 규칙을 **전투 신호 하나**와 **전략 원격 명령 하나**로 나란히 읽은 것이다. 다음은 승인된 정책 목록이고, 각 항목은 해당 승인 결정에 귀속한다.
 
-- 축의 분리: 직위·작위·점유·실효 통제·군사 지휘는 서로 다른 축이다.
+- 축의 분리: 직위·직함·점유·실효 통제·군사 지휘는 서로 다른 축이다.
 - 위임 관문: 회원 자격·동의·인준·범위가 갖춰질 때만 성립하고 소유를 옮기지 않는다.
 - 배속 범위: 본체 지휘관은 등록된 범위 안의 모든 배속 분대를 직접 지휘한다. 각 분대에 별도 분대장이 있어도 상위 지휘 권한을 막지 않는다.
 - 실제 연락: 전략 원격 명령은 그때 쓸 수 있는 실제 연락 경로를 따라 전달된다.
 - 안전 우선: 안전·생리·구금 불능은 욕구·일정보다 앞선다.
 - 일시정지 없음, 속도 조절 없음, 명령 대기열 없음.
-- 권한 있는 기록 담당: 기록 조작은 군주·직위권자의 명령을 받은 권한 있는 기록·공증·계보 담당자만 한다.
+- 권한 있는 기록 담당: 기록 조작은 세력 수장·직위권자의 명령을 받은 권한 있는 기록·공증·계보 담당자만 한다.
 
 이 정책들을 점수나 시간으로 환산하는 값은 승인되지 않았다. 식별자는 영구하고, 개정 충돌과 저장 오류는 명시하며, 자동 재번호·자동 이전·침묵의 규칙 혼합은 하지 않는다.
 
@@ -86401,7 +86401,7 @@ D03은 **인물의 행동, 명령, 권한, 일정**을 다룬다. 한 플레이�
 | 상위 지휘관(발신자) | 하달을 발신한다. 수신 기록과 평가 결과는 이 지휘관 인물에 귀속한다 | sp1.b112, sp1.b114 |
 | 평가 주체(지휘관 인물) | 관측·보고로 알게 된 시점에 평가하고, 그 본체에 대한 기억·후속 배속/신임 판단의 근거로 쓴다 | sp1.b114 |
 | 현지 지휘관(NPC) | 자동 전투 명령을 사전 목적·태세·권한과 실제 관측 정보·능력·목표로 판단한다. 새 원격 명령은 연락·수신·수락을 거친다 | combat-formula.20261003.pipeline 1단계 |
-| 권한 있는 기록·공증·계보 담당자 | 군주·직위권자의 명령을 받아 기록 조작(근거 수집/작성→주장 구성→효력 인정/거절)을 수행한다. 직위가 없는 본체의 직접 조작 경로는 채택하지 않는다 | claims-owner.20261003.fabrication |
+| 권한 있는 기록·공증·계보 담당자 | 세력 수장·직위권자의 명령을 받아 기록 조작(근거 수집/작성→주장 구성→효력 인정/거절)을 수행한다. 직위가 없는 본체의 직접 조작 경로는 채택하지 않는다 | claims-owner.20261003.fabrication |
 | 위임자·대리인 | 위임은 유효·정지·만료·회수 중 하나의 상태를 가진다. 대리인이 죽어도 원 보유자의 권리는 남는다 | sp1.b38–b43 |
 
 위 행위자들은 서로 다른 본체들이 아니라 한 본체가 맡을 수 있는 역할과 다른 NPC의 역할이다. 역사 장부의 국가명·직위명은 현재 세계의 지휘권 증명이 아니다. 현재 인물·배속·위임·장소의 유효한 기록을 검사해야 한다. 아래 사례는 역할을 설명하는 가상 상황이며 캐스트나 수량을 확정하지 않는다.
@@ -86424,7 +86424,7 @@ D03은 **인물의 행동, 명령, 권한, 일정**을 다룬다. 한 플레이�
 
 **전략 원격 명령** — 위임이 회원 자격·동의·인준·범위 관문을 통과해 유효해야 하고, 그때 쓸 수 있는 실제 연락 경로(전령·무전·연락망)가 있어야 한다. 대상이 수신하고, 안전·생리·구금의 수행 불능이 없을 때 수락할 수 있다. 수신보다 먼저 권한이 끝났으면 도착한 명령은 권한을 다시 검사받는다. 기록 담당자는 이 경로의 요건이 아니다.
 
-**기록 조작** — 군주·직위권자의 명령을 받은 권한 있는 기록·공증·계보 담당자만 수행한다. 접근 가능한 기록·계보·인준 경로와 기간·비용·발각 위험을 검사한다. 직위가 없는 본체의 직접 조작 경로는 채택하지 않는다.
+**기록 조작** — 세력 수장·직위권자의 명령을 받은 권한 있는 기록·공증·계보 담당자만 수행한다. 접근 가능한 기록·계보·인준 경로와 기간·비용·발각 위험을 검사한다. 직위가 없는 본체의 직접 조작 경로는 채택하지 않는다.
 
 **전투의 공통 제약** — 일시정지·속도 조절·명령 대기열이 없다. 전략 요청의 보류·응답 대기는 이 전투 대기열과 다르다. 권한 실패나 물리적 불가능을 대기열에 넣어 나중에 자동 성공시키지 않는다.
 
@@ -86510,7 +86510,7 @@ D03은 명령의 골격을 소유하고, 아래 표의 실체는 각 도메인�
 | D05 경제·생산·자원 | 마감 시점에 검증된 현지 재고와 화물 도착분 | 화물 분배·재고 산출·소비 순서 설계 |
 | D06 이동·연락 | 실제 연락 경로(전령·무전·연락망)의 존재, 실제 이동·도착 | 이동 시간·비용 식, 지도·관측 설계 |
 | D07 관계·기억 | 방향성 신뢰·충성의 현재 값, 고정된 친구·적·숙적 분류 문턱, 평가의 귀속 | 관계 변화 함수·증감·감쇠·기간 |
-| D10 작위·명분 | 권리 인스턴스의 존재(전쟁 개막 명분 등) | 명분 등록 수치·기한 |
+| D10 직함·명분 | 권리 인스턴스의 존재(전쟁 개막 명분 등) | 명분 등록 수치·기한 |
 | D11 수여·위임 | 위임의 관문(자격·동의·인준·범위) 절차 | 회수 조건의 상세 규칙 |
 | D13 자산·전달 | 협상 대상 자산의 소유·처분 가능성, 실제 인도 상태 | 자산 권리·인도·중복 요구 판정 |
 | D15 전투·분대 | 분대·배속 목록, 전투 세션 등록 범위, 증원 도착 사실 | 전투 계산식·정원·증원 조건 수치 |
@@ -86522,7 +86522,7 @@ D03은 명령의 골격을 소유하고, 아래 표의 실체는 각 도메인�
 
 전쟁 생성 요청은 먼저 등록 명분의 유효성을 검사하며, 유효한 명분이 없으면 강제 종결점이나 협상 계산에 들어가기 전에 거절된다. 진행 중 명분도 근거 변화로 이미 무효가 되었다면 ±100 강제 종결보다 무효 조건을 먼저 검사하며, 점수가 근거 없는 권리를 만들지 않는다(sp1.b121). 무관직 인물도 명분을 보유할 수 있지만 그것만으로 선전포고 권한·병력·지휘권이 생기지 않는다(sp1.b118). 전쟁 점수는 -100~100이고 상대 점수는 반대 부호다. ±100에서는 명분 판본의 목표 범위에 한정된 강제 종결이 먼저 성립하고, 대기 중인 협상 제안은 버리며, 응답을 기다려 추가 피해·자산 요구를 쌓지 않는다(sp1.b119, b121, b127–b128). 절댓값 100 미만에서는 서울 독자 확장인 항목별 협상을 제안할 수 있다. 미등록 가격 항목은 서명·정산을 막고 유효 등록된 항목만 협상할 수 있다. 요구 가격 합계에서 제공 가격 합계를 빼는 평가 구조가 있어도 `V ≤ W`는 자동 수락이 아니다. 가격·수락 계수는 미정이며, 서명 권한, 당사자의 처분 권한, 실제 이행 가능성, 같은 자산의 중복 요구 여부를 별도로 검사한다. 사람의 매매, 강제 혼인, 비동의 배속은 협상 항목이 될 수 없다. 합의 뒤 자산·인물·부대의 이전은 실제 인도와 이동을 거쳐야 하며 명령 기록만으로 즉시 완료되지 않는다(sp1.b124–b128). D03은 이 결과를 소비할 뿐 가격·분배·처분 권한을 만들지 않는다.
 
-주장 지원 전쟁을 요청할 때는 승인하는 수장과 권리를 받을 수혜자를 구분한다. 이름으로 찾은 수혜자를 안정된 인물 식별자로 확정하고 명분에 고정하며, 그 인물의 동의·소속/지원 계약·주장 효력·목표 작위·제도상 행사 자격을 검사한다. 승리 권리는 그 수혜자에게 이전하고 공격자가 대신 개인 보유하지 않는다. 예를 들어 가상의 주장자 김하린이 수장에게 지원을 요청해도 김하린의 적격과 수혜자 지정이 확인되어야 하며, 수장이 승리했다는 이유로 김하린의 권리를 가져가지 않는다. 수혜자가 얻는 작위의 실제 등급과 상위 계약으로 상위 관계를 다시 검사하고 동급/상급 권리를 자동으로 하급 봉신 관계로 바꾸지 않는다(sp1.b118, b119, sp1.reference.beneficiary).
+주장 지원 전쟁을 요청할 때는 승인하는 수장과 권리를 받을 수혜자를 구분한다. 이름으로 찾은 수혜자를 안정된 인물 식별자로 확정하고 명분에 고정하며, 그 인물의 동의·소속/지원 계약·주장 효력·목표 직함·제도상 행사 자격을 검사한다. 승리 권리는 그 수혜자에게 이전하고 공격자가 대신 개인 보유하지 않는다. 예를 들어 가상의 주장자 김하린이 수장에게 지원을 요청해도 김하린의 적격과 수혜자 지정이 확인되어야 하며, 수장이 승리했다는 이유로 김하린의 권리를 가져가지 않는다. 수혜자가 얻는 직함의 실제 등급과 상위 계약으로 상위 관계를 다시 검사하고 동급/상급 권리를 자동으로 하급 봉신 관계로 바꾸지 않는다(sp1.b118, b119, sp1.reference.beneficiary).
 
 ## 10. 사례 — 상태 전이 설계
 
@@ -86553,7 +86553,7 @@ D03은 명령의 골격을 소유하고, 아래 표의 실체는 각 도메인�
 
 - **전**: 본체 분대장이 하달을 받았고(수신 기록 7필드 그대로), 기존 방향성 신뢰와 충성 값이 자리 잡고 있다.
 - **요청**: 하달에 대해 `독자 행동`을 고른다. 별도 상황에서 같은 본체가 무관직 상태로 장부의 주장을 직접 고치려 한다.
-- **사건**: 분대장의 선택은 이름 있는 선택이므로 입력이 잠기지 않고 강제 실행도 없다. 실제 실행 결과 목표에 기여하는 관측이더라도(유리한 기여) 준수 여부와 성과는 별개 항목으로 기록되고, 관측이 유리하다는 이유로 `독자 행동`이 `따르기`로 바뀌지 않는다. 평가는 보낸 이와 결과 식별자로 귀속되고 같은 결과 식별자를 두 번 적용하지 않는다. 무관직 본체의 기록 조작 시도는 군주·직위권자의 명령을 받은 권한 있는 기록·공증·계보 담당자가 아니므로 거절된다.
+- **사건**: 분대장의 선택은 이름 있는 선택이므로 입력이 잠기지 않고 강제 실행도 없다. 실제 실행 결과 목표에 기여하는 관측이더라도(유리한 기여) 준수 여부와 성과는 별개 항목으로 기록되고, 관측이 유리하다는 이유로 `독자 행동`이 `따르기`로 바뀌지 않는다. 평가는 보낸 이와 결과 식별자로 귀속되고 같은 결과 식별자를 두 번 적용하지 않는다. 무관직 본체의 기록 조작 시도는 세력 수장·직위권자의 명령을 받은 권한 있는 기록·공증·계보 담당자가 아니므로 거절된다.
 - **후**: 불복종에 고정된 자동 신뢰 감소는 없다. 평가 뒤 신뢰·충성이 얼마나 변하는지는 아직 정하지 않았으며 변화량이 0이라는 뜻이 아니다. 친구 `T ≥ 25`, 적 `T ≤ -25`, 숙적 `T ≤ -50`의 분류 문턱은 그대로다. 거절된 기록 조작은 점유를 만들지 않는다.
 
 ### 10.5 실제 도착과 마감 — 영구 대기가 아닌 시점별 판정
@@ -87206,7 +87206,7 @@ In the preserved data of installed version 1.20.0.3, build 25652598, defined val
 
 ### Noland
 
-Data from different versions were not merged as if they were a single version. The road''s dirt path `+20%` and stone path `+40%` come from wiki revision 1385, and nectar `+30%/36 hours` comes from resource wiki revision 1129. The removal of the nectar movement bonus is from the **Patches 46-48 (MAIN)** announcement. The same announcement explains that if a raider squad''s natural travel time is shorter than 24 hours, it is made to stand still until the total travel time is at least 24 hours, but the exact waiting arrangement and the equality condition at the boundary time have not been confirmed. It also says that only **crime-scene markers** are shown in the king''s vision for the following 24 hours, and this is not to be read as a universal validity period for all observation information. Movement between buildings `−75%`, the road exception, and elderly movement `−15%` are from the **Patches 54-56 (MAIN)** announcement. The trade availability `11 AM` is from trade wiki revision 1275, and the historical parameter capture is build 25211575. The distance unit, the load-speed coupling formula, and the remaining-segment accumulator have not been confirmed. These revisions, announcements, and historical captures are separate document boundaries and are not authoritative for the current world state, and the original figures are not Seoul''s figures either.
+Data from different versions were not merged as if they were a single version. The road''s dirt path `+20%` and stone path `+40%` come from wiki revision 1385, and nectar `+30%/36 hours` comes from resource wiki revision 1129. The removal of the nectar movement bonus is from the **Patches 46-48 (MAIN)** announcement. The same announcement explains that if a raider squad''s natural travel time is shorter than 24 hours, it is made to stand still until the total travel time is at least 24 hours, but the exact waiting arrangement and the equality condition at the boundary time have not been confirmed. It also says that only **crime-scene markers** are shown in the ruler''s vision for the following 24 hours, and this is not to be read as a universal validity period for all observation information. Movement between buildings `−75%`, the road exception, and elderly movement `−15%` are from the **Patches 54-56 (MAIN)** announcement. The trade availability `11 AM` is from trade wiki revision 1275, and the historical parameter capture is build 25211575. The distance unit, the load-speed coupling formula, and the remaining-segment accumulator have not been confirmed. These revisions, announcements, and historical captures are separate document boundaries and are not authoritative for the current world state, and the original figures are not Seoul''s figures either.
 
 The data from the two games serve only as comparison evidence and do not approve Seoul''s single cargo identity preservation, arrival-first settlement, or war and command locks on its behalf.
 
@@ -87318,7 +87318,7 @@ GP-06 전체는 아직 열려 있지만 소유자가 고른 일곱 정책은 별
 
 ### 놀랜드
 
-서로 다른 판본의 자료를 한 판본처럼 합치지 않았다. 도로의 흙길 `+20%`와 돌길 `+40%`는 위키 개정 1385, 넥타르 `+30%/36시간`은 자원 위키 개정 1129다. 넥타르 이동 보너스 제거는 **Patches 46-48 (MAIN)** 공지다. 같은 공지에서 약탈자 분대의 자연 이동 시간이 24시간보다 짧으면 총 이동 시간이 적어도 24시간이 될 때까지 서 있게 한다고 설명하지만, 정확한 대기 배치와 경계 시각의 동등 조건은 확인되지 않았다. 또한 왕의 시야에는 **범죄 장소 표식만** 이후 24시간 동안 표시된다고 하며, 이를 모든 관측 정보의 보편 유효 기간으로 읽지 않는다. 건물 사이 이동 `−75%`, 도로 예외, 노년 이동 `−15%`는 **Patches 54-56 (MAIN)** 공지다. 거래 가용 `오전 11시`는 거래 위키 개정 1275이고, 역사 매개변수 캡처는 빌드 25211575다. 거리 단위, 짐-속도 결합식, 잔여 구간 누산기는 확인되지 않았다. 이 개정·공지·역사 캡처는 서로 다른 문서 경계이며 현재 세계 상태의 권위가 아니고, 원작 수치도 서울 수치가 아니다.
+서로 다른 판본의 자료를 한 판본처럼 합치지 않았다. 도로의 흙길 `+20%`와 돌길 `+40%`는 위키 개정 1385, 넥타르 `+30%/36시간`은 자원 위키 개정 1129다. 넥타르 이동 보너스 제거는 **Patches 46-48 (MAIN)** 공지다. 같은 공지에서 약탈자 분대의 자연 이동 시간이 24시간보다 짧으면 총 이동 시간이 적어도 24시간이 될 때까지 서 있게 한다고 설명하지만, 정확한 대기 배치와 경계 시각의 동등 조건은 확인되지 않았다. 또한 통치자의 시야에는 **범죄 장소 표식만** 이후 24시간 동안 표시된다고 하며, 이를 모든 관측 정보의 보편 유효 기간으로 읽지 않는다. 건물 사이 이동 `−75%`, 도로 예외, 노년 이동 `−15%`는 **Patches 54-56 (MAIN)** 공지다. 거래 가용 `오전 11시`는 거래 위키 개정 1275이고, 역사 매개변수 캡처는 빌드 25211575다. 거리 단위, 짐-속도 결합식, 잔여 구간 누산기는 확인되지 않았다. 이 개정·공지·역사 캡처는 서로 다른 문서 경계이며 현재 세계 상태의 권위가 아니고, 원작 수치도 서울 수치가 아니다.
 
 두 게임의 자료는 비교 근거일 뿐 서울의 단일 화물 정체성 보존, 도착-우선 정산, 전쟁·지휘 잠금을 대신 승인하지 않는다.
 
@@ -87350,7 +87350,7 @@ This document explains the approved scope of relationships, memory, loyalty, and
 
 ## 1. What This Document Covers
 
-D07 owns three things. First, the trust and memory of a character who has actually come to know something. Second, loyalty to a lord, which is a separate state. Third, the record of compliance and performance for a single order that a squad leader received in battle. What relationships do not create — the establishment of command authority, property rights, consent, right of passage, or marriage — lies outside this document, and Chapters 8 and 9 draw that boundary precisely.
+D07 owns three things. First, the trust and memory of a character who has actually come to know something. Second, loyalty to a faction leader, which is a separate state. Third, the record of compliance and performance for a single order that a squad leader received in battle. What relationships do not create — the establishment of command authority, property rights, consent, right of passage, or marriage — lies outside this document, and Chapters 8 and 9 draw that boundary precisely.
 
 The reading order is as follows. Chapter 2 covers the actors, Chapter 3 the decisions the player actually makes, and Chapter 4 eligibility. Chapters 5 and 6 are the structure of actions and the already-approved states and formulas, and Chapters 7 and 8 are the boundaries of failure, preservation, information, and authority. Chapter 9 covers cross-domain ownership, Chapter 10 four concrete cases, Chapter 11 external references (Crusader Kings III, Norland), Chapter 12 open issues and decision-ready alternatives, and Chapter 13 a summary of the boundary between what is settled and what is open.
 
@@ -87366,7 +87366,7 @@ The reading order is as follows. Chapter 2 covers the actors, Chapter 3 the deci
 
 **Evaluator (Observer / Report Recipient).** A character who has actually seen something directly or learned of it through a report. At the moment they come to know it, they update only their own trust and their own memory. They do not correct anyone else''s trust on their behalf.
 
-**Lord.** The object of the loyalty state. Each hero has a separate loyalty value toward their own lord, and the lord''s own loyalty is always at the maximum.
+**Faction leader.** The object of the loyalty state. Each hero has a separate loyalty value toward their own faction leader, and the faction leader''s own loyalty is always at the maximum.
 
 **States, institutions, and systems (owners of setting facts).** The country-specific systems that determine the establishment and termination of marriage, oaths, and command relationships are facts of the world setting. A relationship fact that has already been validly established and stored is not deleted or downgraded to an unestablished record just because the system input is undetermined. However, if a request to establish a new relationship is made and it is not sufficiently clear which system applies, or what the basis for establishment under that system is, the request is left as `Jedo Mijeong/Hwagin Geungeo Bujok` (system undetermined / insufficient basis for confirmation). This document does not invent that system.
 
@@ -87436,7 +87436,7 @@ Life-need fulfillment and mood, loyalty, and trust are distinct records. Shortag
 
 ### 6.5 Stored Facts
 
-The following are stored: peerage and office history, rights disputes, the fulfillment and breach of promises, captivity, injury, and death, marriage and kinship, education progress, disclosed evidence, property and debts, truce and war outcomes, witnessing and memory, and current trust. Later actions read these facts again. Loading a save and switching bodies do not reset these records.
+The following are stored: title and office history, rights disputes, the fulfillment and breach of promises, captivity, injury, and death, marriage and kinship, education progress, disclosed evidence, property and debts, truce and war outcomes, witnessing and memory, and current trust. Later actions read these facts again. Loading a save and switching bodies do not reset these records.
 
 ### 6.6 Permanent Storage Is Not Permanent Fixation
 
@@ -87463,7 +87463,7 @@ The following are preserved even amid failure and interruption.
 3. If death, dismissal, occupation, or loss of contact occurs between approval and execution, the scheduled work is checked again. Supplies already spent and progress already made are not reversed, and only the remaining resources are released according to the contract.
 4. Rights changes filed at the same time are judged against a single ledger version, and conflicts are resolved by a set order of acceptance.
 5. When the commander changes, existing orders and evaluations remain with their original sender and history intact, and are checked again under the new commander''s authority.
-6. Even when trust changes, contracts, debts, oaths, marriages, offices, and property remain as they are. Even when an office is vacant, only that office''s signing, command, and operation stop, and personal property, peerage rights, and other valid contracts are not transferred automatically.
+6. Even when trust changes, contracts, debts, oaths, marriages, offices, and property remain as they are. Even when an office is vacant, only that office''s signing, command, and operation stop, and personal property, title rights, and other valid contracts are not transferred automatically.
 7. Current information is obtained through observation and reports, and is stored together with its time. The same information is not produced repeatedly as a fixed resource reward.
 8. Replaying with the same starting values and the same choice record must yield the same world state and the same event record. The randomness of combat, encounters, the world, and characters are separate streams. The random numbers that pick names use only the character stream. The processing order of one stream does not change the results of another stream. Relationship judgments do not disturb the results of other streams.
 
@@ -87531,7 +87531,7 @@ The source games'' opinion, mood, loyalty, and relationships are not the same va
 The game files are based on version 1.20.0.3, build 25652598, checksum 8e45. No branch has been confirmed. The separate wiki pages are of different versions: Family 34883 (classification guide), Family (relation) 34905 (1.10), Government 36619, Laws 36572, Religion 36691, and Culture 36509 (1.20), and Power sharing 36540 (1.19).
 
 - The standard success outcome of Sway declares, after the survival check and the non-Persian branch, a target→actor opinion of +25, a modifier accumulation cap of 100, and a monthly decay of 0.05. Other success outcomes and the Persian branch differ. Because accumulation exists, this cannot be read as universal deduplication of the same report.
-- The memory of a close family member''s death evaluates its conditions based on the **memory owner**, and the owner and the deceased are separate. Its duration is declared as `5 + 125·R + 25·D + 25·PR + 25·PF + 25·PW + 195·PP` years. `R` is 1 if the memory owner, or any of the owner''s close family or spouse, is a ruler, and 0 otherwise. `D` is 1 if the memory owner''s highest held title tier (`highest_held_title_tier`) is duke or above. The range is not changed by the deceased''s title tier. `PR` is 1 if there is any rival relationship between the memory owner and the player, and it is not a condition exclusive to nemesis. `PF` is the player being a friend. `PW` is 1 if, among the wards connected to the memory owner by `any_relation type=ward`, at least one is the player. `PP` is the condition that the memory owner or a parent is the player. Each Boolean term is added only once even when multiple persons qualify. It is not of the form "base memory 10 years," nor a separate preservation for a deceased owner, nor a +1000 years preservation for a player character. The memory retention period is not opinion decay. For example, if the memory owner is a count and the deceased close family member is a ruling duke, then when all other player conditions are false, `R=1, D=0`, so it is `5+125=130` years, not `155`. Conversely, if the memory owner is a duke, `D=1` even when the deceased is not a ruler or is below duke rank.
+- The memory of a close family member''s death evaluates its conditions based on the **memory owner**, and the owner and the deceased are separate. Its duration is declared as `5 + 125·R + 25·D + 25·PR + 25·PF + 25·PW + 195·PP` years. `R` is 1 if the memory owner, or any of the owner''s close family or spouse, is a ruler, and 0 otherwise. `D` is 1 if the memory owner''s highest held title tier (`highest_held_title_tier`) is tier 3 or above. The range is not changed by the deceased''s title tier. `PR` is 1 if there is any rival relationship between the memory owner and the player, and it is not a condition exclusive to nemesis. `PF` is the player being a friend. `PW` is 1 if, among the wards connected to the memory owner by `any_relation type=ward`, at least one is the player. `PP` is the condition that the memory owner or a parent is the player. Each Boolean term is added only once even when multiple persons qualify. It is not of the form "base memory 10 years," nor a separate preservation for a deceased owner, nor a +1000 years preservation for a player character. The memory retention period is not opinion decay. For example, if the memory owner holds a tier-2 title and the deceased close family member is a ruler holding a tier-3 title, then when all other player conditions are false, `R=1, D=0`, so it is `5+125=130` years, not `155`. Conversely, if the memory owner holds a tier-3 title, `D=1` even when the deceased is not a ruler or holds a title below tier 3.
 - Relationship contributions, in the owner→target direction, are friend +60, best friend +120, rival -60, nemesis -120, mentor +20, and student +30. The reciprocal correspondence of friend and rival, and of mentor and student, does not mean the opposite-direction opinions are equal. There is no corresponding declaration for grudges. This declaration alone does not mean every relationship is permanent.
 - Murder discovery records knowledge, then checks blocking conditions and sends a notice. The notice event itself has no numeric opinion effect, but exposure is separate, and a surviving non-self exposer receives an owner→exposer opinion effect of -30 for 20 years. Knowledge, notice, and public exposure are distinct. known_murder blocks only some branches and does not prove general report deduplication.
 - The regent loyalty score, when a ruler exists, reads opinion, relationship, personality, position, culture, empathy, conditional fear, obedience, override, and domestic power in order. The visible thresholds 75/25 are not a basis for Seoul''s loyalty range of 0..100. The wiki''s Selfless summary and the game file''s ordered exceptions are not merged into a single same-version rule.
@@ -87547,11 +87547,11 @@ The family documents separate marriage acceptance from lineage and approval. The
 The preservation evidence is a mix of official release notices, pinned revisions of the publisher-hosted community wiki, and historical stored values. A wiki revision is not a game build, and main and beta notices are kept separate. The stored values of historical build 25211575 are not merged into the current formula because patch correspondence and branch are unconfirmed.
 
 - Mood 0..100, thoughts from events, desires, and needs, and the effect in the direction from the slighted person to the slighting person are documented (N-D07-01/02). They are not the same as Seoul''s trust axis.
-- The historical loyalty explanation for Lords 1314 says that it reads daily mood and opinion of the king, that the king is 100, and that if loyalty stays below 25 for a long time, a rebellion or defection path opens. Population 1316 describes loyalty 0 and unfriendly conditions. They have not been reconciled into a single rebellion condition in the same build. There is also an explanation in main40 that replaced the lord''s single-variable loyalty with relationships and followers, and soldier loyalty is separate (N-D07-03/04/05).
+- The historical loyalty explanation for Lords 1314 says that it reads daily mood and opinion of the ruler, that the ruler is 100, and that if loyalty stays below 25 for a long time, a rebellion or defection path opens. Population 1316 describes loyalty 0 and unfriendly conditions. They have not been reconciled into a single rebellion condition in the same build. There is also an explanation in main40 that replaced the retainer''s single-variable loyalty with relationships and followers, and soldier loyalty is separate (N-D07-03/04/05).
 - main40 contains both the statement that the marriage relationship bonus fades over 20 years and the statement that the Spouse thought ends 20 days after marriage (N-D07-06). Whether they are separate effects or an inconsistency in one effect is unresolved. Neither duration is chosen as Seoul decay.
-- beta54 and main54-56 state that a usurper receives the thought about the new ruler with the opposite sign of the relationship with the former ruler (N-D07-07/21). The identity of the actor in that wording is unresolved, and it is not arbitrarily replaced with an observer or the new king. The main -20..+20 limit (N-D07-08) is the range of that thought, not Seoul''s trust range.
-- The victory loyalty probability change from 35% to 10% and the +1 percentage point per Command level (N-D07-09), and the halved frequency of political actions and sermons by player-faction politicians with a ruler relationship above 0 (N-D07-10), are local conditions of each notice. They are not merged to mean the same loyalty variable even after the replacement of lord loyalty.
-- An unhappy lord with a weak will refuses most missions (N-D07-11). Inability to move is a physical inability (N-D07-12). To delegate to an ally, the receiving ally''s relationship toward the politician must satisfy `opinion[ally, politician] > allianceThreshold + 20` (N-D07-13, beta51). `allianceThreshold` itself varies by personality and edition, so it is not replaced with a fixed value here. A persuasion attempt is possible when the relationship with the threatening lord is ≥0 (N-D07-14). Eligibility to accept is not the same as success in carrying it out.
+- beta54 and main54-56 state that a usurper receives the thought about the new ruler with the opposite sign of the relationship with the former ruler (N-D07-07/21). The identity of the actor in that wording is unresolved, and it is not arbitrarily replaced with an observer or the new ruler. The main -20..+20 limit (N-D07-08) is the range of that thought, not Seoul''s trust range.
+- The victory loyalty probability change from 35% to 10% and the +1 percentage point per Command level (N-D07-09), and the halved frequency of political actions and sermons by player-faction politicians with a ruler relationship above 0 (N-D07-10), are local conditions of each notice. They are not merged to mean the same loyalty variable even after the replacement of retainer loyalty.
+- An unhappy retainer with a weak will refuses most missions (N-D07-11). Inability to move is a physical inability (N-D07-12). To delegate to an ally, the receiving ally''s relationship toward the politician must satisfy `opinion[ally, politician] > allianceThreshold + 20` (N-D07-13, beta51). `allianceThreshold` itself varies by personality and edition, so it is not replaced with a fixed value here. A persuasion attempt is possible when the relationship with the threatening retainer is ≥0 (N-D07-14). Eligibility to accept is not the same as success in carrying it out.
 - The supervisor activity check''s prisoner productivity bonus of 10%→20% (N-D07-15) and the historical stored values 0.03/1.045/1.2 (N-D07-16) are not a general performance-evaluation formula. The exponent and units of the stored values are unconfirmed.
 - The relationship display runs from the character to the selected target, and the invert toggle changes the description (N-D07-17). Witnessing a squad''s annihilation adds a thought, but no formulas for radius, confidence, late discovery, or deduplication are given (N-D07-18). A rumor in the daily report and the removal of a rumor notification are different operations (N-D07-19). A fistfight affects witnesses'' support and interest and no longer improves the opponent relationship (N-D07-20). The end of improvement is not broadened into the absence of all relationship effects.
 
@@ -87627,7 +87627,7 @@ The six items below are questions that change how the game plays. This document 
 
 ## 1. 이 문서가 다루는 것
 
-D07은 세 가지를 소유한다. 첫째, 무언가를 실제로 알게 된 인물의 신뢰와 기억이다. 둘째, 군주에 대한 충성이라는 별도 상태다. 셋째, 전투에서 분대장이 받은 명령 하나에 대한 준수와 성과의 기록이다. 관계가 만들지 않는 것 — 지휘권, 재산권, 동의, 통과권, 혼인의 성립 — 은 이 문서의 밖이고, 8장과 9장이 그 경계를 정확히 긋는다.
+D07은 세 가지를 소유한다. 첫째, 무언가를 실제로 알게 된 인물의 신뢰와 기억이다. 둘째, 세력 수장에 대한 충성이라는 별도 상태다. 셋째, 전투에서 분대장이 받은 명령 하나에 대한 준수와 성과의 기록이다. 관계가 만들지 않는 것 — 지휘권, 재산권, 동의, 통과권, 혼인의 성립 — 은 이 문서의 밖이고, 8장과 9장이 그 경계를 정확히 긋는다.
 
 읽는 순서는 다음과 같다. 2장에서 행위자를, 3장에서 플레이어가 실제로 내리는 결정을, 4장에서 자격을 본다. 5장과 6장이 행동의 구조와 이미 승인된 상태·식이고, 7장과 8장이 실패·보존과 정보·권한의 경계다. 9장은 교차 도메인 소유, 10장은 네 개의 구체적 사례, 11장은 외부 참조(Crusader Kings III, Norland), 12장이 미결 사항과 결정 준비된 대안이고, 13장이 확정과 미결의 경계 요약이다.
 
@@ -87643,7 +87643,7 @@ D07은 세 가지를 소유한다. 첫째, 무언가를 실제로 알게 된 인
 
 **평가 주체(관측자·보고 수신자).** 어떤 일을 실제로 직접 보았거나 보고로 알게 된 인물이다. 자기가 알게 된 시점에 자기의 신뢰와 자기의 기억만 갱신한다. 다른 사람의 신뢰를 대신 고치지 않는다.
 
-**군주.** 충성 상태의 대상이다. 영웅마다 자기 군주에 대한 충성 값을 따로 가지며, 군주 자신의 충성은 늘 최댓값이다.
+**세력 수장.** 충성 상태의 대상이다. 영웅마다 자기 세력 수장에 대한 충성 값을 따로 가지며, 세력 수장 자신의 충성은 늘 최댓값이다.
 
 **국가·기관·제도(설정 사실의 소유자).** 혼인, 맹세, 지휘 관계의 성립과 종료를 정하는 나라별 제도는 세계 설정의 사실이다. 이미 유효하게 성립해 저장된 관계 사실은 제도 입력이 미정이라는 이유로 지우거나 미성립 기록으로 낮추지 않는다. 다만 새 관계의 성립을 요청하면서 어느 제도가 적용되는지, 그 제도의 성립 근거가 무엇인지 충분히 알 수 없다면 그 요청은 `제도 미정/확인 근거 부족`으로 남긴다. 이 문서는 그 제도를 발명하지 않는다.
 
@@ -87705,7 +87705,7 @@ D07은 세 가지를 소유한다. 첫째, 무언가를 실제로 알게 된 인
 
 ### 6.3 충성
 
-군주에 대한 충성은 `0`에서 `100`까지의 별도 상태다. 하루의 기분과 군주에 대한 신뢰 `T[영웅, 군주]`를 읽는다. 군주 자신의 충성은 늘 `100`이다. 충성이 `25` 미만인 채로 이어지면 후계 반란이나 다른 영웅이 떠나는 길이 열릴 수 있다. 그러나 그것이 매일 반드시 일어나는 반란은 아니다. 얼마나 오래 지속되어야 길이 열리는지, 하루에 얼마나 변하는지, 어떤 위험 행동이 문턱을 넘는지는 정해지지 않았다(12장 1항). 위험 업무 수락은 관계를 판단 입력으로 읽되, 충성에 따른 구체적인 허용 문턱은 미정이다.
+세력 수장에 대한 충성은 `0`에서 `100`까지의 별도 상태다. 하루의 기분과 세력 수장에 대한 신뢰 `T[영웅, 세력 수장]`를 읽는다. 세력 수장 자신의 충성은 늘 `100`이다. 충성이 `25` 미만인 채로 이어지면 후계 반란이나 다른 영웅이 떠나는 길이 열릴 수 있다. 그러나 그것이 매일 반드시 일어나는 반란은 아니다. 얼마나 오래 지속되어야 길이 열리는지, 하루에 얼마나 변하는지, 어떤 위험 행동이 문턱을 넘는지는 정해지지 않았다(12장 1항). 위험 업무 수락은 관계를 판단 입력으로 읽되, 충성에 따른 구체적인 허용 문턱은 미정이다.
 
 ### 6.4 서로 다른 기록
 
@@ -87713,7 +87713,7 @@ D07은 세 가지를 소유한다. 첫째, 무언가를 실제로 알게 된 인
 
 ### 6.5 저장되는 사실
 
-작위와 직위 이력, 권리 분쟁, 약속의 이행과 위반, 포로와 부상과 사망, 혼인과 친족, 교육 진척, 공개된 증거, 재산과 채무, 휴전과 전쟁 결과, 목격과 기억, 현재 신뢰를 저장한다. 이후 행동은 이 사실을 다시 읽는다. 불러오기와 몸을 바꾸는 일이 이 기록을 초기화하지 않는다.
+직함과 직위 이력, 권리 분쟁, 약속의 이행과 위반, 포로와 부상과 사망, 혼인과 친족, 교육 진척, 공개된 증거, 재산과 채무, 휴전과 전쟁 결과, 목격과 기억, 현재 신뢰를 저장한다. 이후 행동은 이 사실을 다시 읽는다. 불러오기와 몸을 바꾸는 일이 이 기록을 초기화하지 않는다.
 
 ### 6.6 영구 저장은 영원한 고정이 아니다
 
@@ -87740,7 +87740,7 @@ D07은 세 가지를 소유한다. 첫째, 무언가를 실제로 알게 된 인
 3. 승인과 실행 사이에 사망, 해임, 점령, 연락 두절이 생기면 예약된 일을 다시 검사한다. 이미 쓴 물자와 이미 끝난 진척은 되돌리지 않고, 남은 자원만 계약에 따라 풀어 준다.
 4. 동시에 걸린 권리 변경은 하나의 원장 판본에서 판단하고, 정해진 수락 순서로 충돌을 가른다.
 5. 지휘관이 바뀌면 기존 명령과 평가는 원래 발신자와 이력을 유지한 채 남고, 새 지휘관의 권한으로 다시 검사한다.
-6. 신뢰가 바뀌어도 계약, 빚, 맹세, 혼인, 직위, 재산은 그대로다. 직위가 비어도 그 직위의 서명과 지휘와 운영만 멈추고, 개인 재산과 작위 권리와 다른 유효 계약은 자동으로 넘어가지 않는다.
+6. 신뢰가 바뀌어도 계약, 빚, 맹세, 혼인, 직위, 재산은 그대로다. 직위가 비어도 그 직위의 서명과 지휘와 운영만 멈추고, 개인 재산과 직함 권리와 다른 유효 계약은 자동으로 넘어가지 않는다.
 7. 현재 정보는 관측과 보고로 얻고, 그 시각과 함께 저장한다. 같은 정보를 고정된 자원 보상으로 반복해서 만들지 않는다.
 8. 같은 시작값과 같은 선택 기록으로 다시 돌리면 같은 세계 상태와 같은 사건 기록이어야 한다. 전투, 조우, 세계, 인물의 무작위는 서로 다른 흐름이다. 이름을 고르는 난수는 인물 흐름만 쓴다. 한 흐름의 처리 순서가 다른 흐름의 결과를 바꾸지 않는다. 관계 판단이 다른 흐름의 결과를 흔들지 않는다.
 
@@ -87758,7 +87758,7 @@ D07은 세 가지를 소유한다. 첫째, 무언가를 실제로 알게 된 인
 
 ## 9. 교차 도메인 소유
 
-이 영역은 아는 사람의 기억과 신뢰, 군주에 대한 충성, 그리고 명령 하나에 대한 준수와 성과의 기록을 다룬다. 다음은 여기서 정하지 않는다.
+이 영역은 아는 사람의 기억과 신뢰, 세력 수장에 대한 충성, 그리고 명령 하나에 대한 준수와 성과의 기록을 다룬다. 다음은 여기서 정하지 않는다.
 
 - **명령·일정(D03).** 명령을 작성하고 전달하고 일정과 맞추는 절차는 D03의 소유다. 이 문서는 전투 하달을 받은 분대장이 따르거나, 일부만 하거나, 독자적으로 할 수 있다는 것과, 욕구와 일정이 부딪히면 보류·거절·교섭으로 남는다는 것만 쓴다.
 - **관측 시각(D06).** 정보를 언제 관측하고 보고하는지는 D06의 소유다. 이 문서는 알게 된 시점에만 자기 신뢰와 기억을 고친다는 것과, 정보를 시각과 함께 저장하고 고정 자원으로 반복 지급하지 않는다는 것만 가져온다.
@@ -87808,10 +87808,10 @@ D07은 세 가지를 소유한다. 첫째, 무언가를 실제로 알게 된 인
 게임 파일은 1.20.0.3, 빌드 25652598, 체크섬 8e45 기준이다. 분기는 확인되지 않았다. 별도의 위키 문서는 Family 34883(분류 안내), Family(relation) 34905(1.10), Government 36619·Laws 36572·Religion 36691·Culture 36509(1.20), Power sharing 36540(1.19)로 서로 다른 판본이다.
 
 - 회유의 표준 성공 결과는 생존 검사와 비페르시아 분기 뒤 대상→주체 의견 +25, 수정자 누적 상한 100, 월 0.05 감쇠를 선언한다. 다른 성공 결과와 페르시아 분기는 다르다. 누적이 있으므로 같은 보고의 보편적 중복 제거라고 읽을 수 없다.
-- 가까운 가족의 사망 기억은 **기억 소유자**를 기준으로 조건을 평가하며, 소유자와 사망 대상은 분리된다. 지속은 `5 + 125·R + 25·D + 25·PR + 25·PF + 25·PW + 195·PP`년으로 선언된다. `R`은 기억 소유자 본인 또는 그 가까운 가족 또는 배우자 가운데 군주인 사람이 하나라도 있으면 1, 아니면 0이다. `D`는 기억 소유자의 최고 보유 작위 단계(`highest_held_title_tier`)가 공작 이상이면 1이다. 사망 대상의 작위 단계로 범위를 바꾸지 않는다. `PR`은 기억 소유자와 플레이어 사이에 적(rival) 관계가 하나라도 있으면 1이며 숙적(nemesis) 전용 조건이 아니다. `PF`는 플레이어 친구, `PW`는 기억 소유자가 `any_relation type=ward`로 연결된 피후견인 가운데 플레이어인 인물이 하나라도 있으면 1, `PP`는 기억 소유자 본인 또는 부모가 플레이어인 조건이다. 각 Boolean 항은 자격자가 여러 명이어도 한 번만 더한다. 기본 기억 10년이나 별도의 사망한 소유자 보존, 플레이 인물 보존 +1000년과 같은 식이 아니다. 기억 보존 기간은 의견 감쇠가 아니다. 예를 들어 기억 소유자가 백작이고 사망한 가까운 가족이 공작인 군주라면, 다른 플레이어 조건이 모두 거짓일 때 `R=1, D=0`이므로 `5+125=130`년이지 `155`년이 아니다. 반대로 기억 소유자가 공작이면 사망 대상이 군주가 아니거나 공작 미만이어도 `D=1`이다.
+- 가까운 가족의 사망 기억은 **기억 소유자**를 기준으로 조건을 평가하며, 소유자와 사망 대상은 분리된다. 지속은 `5 + 125·R + 25·D + 25·PR + 25·PF + 25·PW + 195·PP`년으로 선언된다. `R`은 기억 소유자 본인 또는 그 가까운 가족 또는 배우자 가운데 통치자인 사람이 하나라도 있으면 1, 아니면 0이다. `D`는 기억 소유자의 최고 보유 직함 단계(`highest_held_title_tier`)가 3단계 이상이면 1이다. 사망 대상의 직함 단계로 범위를 바꾸지 않는다. `PR`은 기억 소유자와 플레이어 사이에 적(rival) 관계가 하나라도 있으면 1이며 숙적(nemesis) 전용 조건이 아니다. `PF`는 플레이어 친구, `PW`는 기억 소유자가 `any_relation type=ward`로 연결된 피후견인 가운데 플레이어인 인물이 하나라도 있으면 1, `PP`는 기억 소유자 본인 또는 부모가 플레이어인 조건이다. 각 Boolean 항은 자격자가 여러 명이어도 한 번만 더한다. 기본 기억 10년이나 별도의 사망한 소유자 보존, 플레이 인물 보존 +1000년과 같은 식이 아니다. 기억 보존 기간은 의견 감쇠가 아니다. 예를 들어 기억 소유자가 2단계 직함 보유자이고 사망한 가까운 가족이 3단계 직함을 가진 통치자라면, 다른 플레이어 조건이 모두 거짓일 때 `R=1, D=0`이므로 `5+125=130`년이지 `155`년이 아니다. 반대로 기억 소유자가 3단계 직함 보유자이면 사망 대상이 통치자가 아니거나 3단계 미만이어도 `D=1`이다.
 - 관계 기여는 소유자→대상 방향으로 친구 +60, 가장 친한 친구 +120, 적 -60, 숙적 -120, 스승 +20, 제자 +30이다. 친구와 적의 상호 대응, 스승과 제자의 대응은 반대 방향 의견이 같다는 뜻이 아니다. 원한에는 대응 선언이 없다. 이 선언만으로 모든 관계가 영구적이라고 말하지 않는다.
 - 살인 발견은 지식 기록 뒤 차단 조건을 보고 고지를 보낸다. 해당 고지 사건 자체에는 수치 의견 효과가 없지만 폭로는 별도이며 생존한 비자기 폭로자에게 소유자→폭로자 의견 -30/20년 효과가 있다. 지식·고지·공개 노출은 별개다. known_murder는 일부 분기만 막으며 일반 보고 중복 제거를 입증하지 않는다.
-- 섭정 충성 점수는 군주가 있을 때 의견·관계·성격·직책·문화·공감·조건부 공포·복종·덮어쓰기·국내 권력을 순서대로 읽는다. 가시 문턱 75/25는 서울 충성 0..100의 근거가 아니다. 위키의 Selfless 요약과 게임 파일의 순서 있는 예외를 같은 판본 규칙으로 합치지 않는다.
+- 섭정 충성 점수는 통치자가 있을 때 의견·관계·성격·직책·문화·공감·조건부 공포·복종·덮어쓰기·국내 권력을 순서대로 읽는다. 가시 문턱 75/25는 서울 충성 0..100의 근거가 아니다. 위키의 Selfless 요약과 게임 파일의 순서 있는 예외를 같은 판본 규칙으로 합치지 않는다.
 - 인질 이야기의 사건 간격 180..365일, 무효화 40..60일, 성인 결과 1..3일, 모험가 유지 1일은 각기 다른 선언이다. 사망은 이야기를 끝내고 계속된 전달에는 비구금 조건이 있다. 주석 처리된 -10..10 표시는 실제 제한이 아니며 가중치가 확률 분포를 입증하지 않는다.
 - fill_coffers 적격은 내정 + 0.5·학식 + 0.5·계략 + 20·독단 + 20·무정함 - 20·관대 - 20·탐욕이며 독립 조건을 더한다. 함수에 명시된 상·하한은 없다. 적격과 실제 업무 성과·책임은 다르다.
 - 동맹 소집은 자격·전쟁 조건을 먼저 보고, 전쟁이 계속 존재할 때 거절 결과를 적용한다. 거절한 행위자→수신자 의견은 공격 측이면 -20/10년, 아니면 -50/25년이며 정부·의형제·계약 결과가 별도로 있다. 소멸한 전쟁, 불가능한 요청, 의도적 거절은 같은 경우가 아니다.
@@ -87824,15 +87824,15 @@ D07은 세 가지를 소유한다. 첫째, 무언가를 실제로 알게 된 인
 보존 근거는 공식 배포 공지, 배급사 호스팅 커뮤니티 위키의 고정 개정판, 역사적 저장값의 혼합이다. 위키 개정판은 게임 빌드가 아니며 main·beta 공지는 분리한다. 역사적 빌드 25211575의 저장값은 패치 대응과 분기가 확인되지 않아 현재 식으로 합치지 않는다.
 
 - 기분 0..100과 사건·욕구·필요의 생각, 무시당한 사람→무시한 사람 방향 효과가 문서화되어 있다(N-D07-01/02). 서울의 신뢰 축과 같지 않다.
-- Lords 1314의 과거 충성 설명은 매일 기분·왕에 대한 의견을 읽고 왕은 100, 25 미만이 오래 지속되면 반란·이탈 경로가 열린다고 한다. Population 1316은 충성 0과 비우호 조건을 설명한다. 같은 빌드의 하나의 반란 조건으로 화해되지 않았다. main40에서 영주 일변량 충성을 관계·추종자로 대체한 설명도 있으며 병사 충성은 별개다(N-D07-03/04/05).
+- Lords 1314의 과거 충성 설명은 매일 기분·통치자에 대한 의견을 읽고 통치자는 100, 25 미만이 오래 지속되면 반란·이탈 경로가 열린다고 한다. Population 1316은 충성 0과 비우호 조건을 설명한다. 같은 빌드의 하나의 반란 조건으로 화해되지 않았다. main40에서 가신 일변량 충성을 관계·추종자로 대체한 설명도 있으며 병사 충성은 별개다(N-D07-03/04/05).
 - main40은 혼인 관계 보너스가 20년에 걸쳐 사라진다는 문장과 Spouse 생각이 혼인 20일 뒤 끝난다는 문장을 함께 담는다(N-D07-06). 별개 효과인지 한 효과의 불일치인지 미해결이다. 어느 기간도 서울 감쇠로 고르지 않는다.
 - beta54와 main54-56은 찬탈자가 새 통치자에 대한 생각을 이전 통치자 관계의 반대 부호로 받는다고 적는다(N-D07-07/21). 그 문구의 행위자 지칭은 미해결이며 관찰자나 새 왕으로 임의 교체하지 않는다. main의 -20..+20 제한(N-D07-08)은 해당 생각의 범위이지 서울 신뢰 범위가 아니다.
-- 승리 충성 확률 35%→10%와 Command 단계별 +1%포인트(N-D07-09), 통치자 관계 >0인 플레이어 진영 정치인의 정치 행동·설교 절반 빈도(N-D07-10)는 각 공지의 국소 조건이다. 영주 충성 대체 뒤에도 같은 충성 변수를 뜻한다고 합치지 않는다.
-- 불행하고 강한 의지 없는 영주는 대부분의 임무를 거절한다(N-D07-11). 이동 불능은 물리적 불능이다(N-D07-12). 동맹에게 위임하려면 수신 동맹이 정치인을 향해 가진 관계가 `opinion[ally, politician] > allianceThreshold + 20`이어야 한다(N-D07-13, beta51). `allianceThreshold` 자체는 성격과 판본에 따라 달라져 여기서 고정값으로 바꾸지 않는다. 위협하는 영주와 관계 ≥0일 때 설득 시도가 가능하다(N-D07-14). 수락 자격과 실행 성공은 다르다.
+- 승리 충성 확률 35%→10%와 Command 단계별 +1%포인트(N-D07-09), 통치자 관계 >0인 플레이어 진영 정치인의 정치 행동·설교 절반 빈도(N-D07-10)는 각 공지의 국소 조건이다. 가신 충성 대체 뒤에도 같은 충성 변수를 뜻한다고 합치지 않는다.
+- 불행하고 강한 의지 없는 가신은 대부분의 임무를 거절한다(N-D07-11). 이동 불능은 물리적 불능이다(N-D07-12). 동맹에게 위임하려면 수신 동맹이 정치인을 향해 가진 관계가 `opinion[ally, politician] > allianceThreshold + 20`이어야 한다(N-D07-13, beta51). `allianceThreshold` 자체는 성격과 판본에 따라 달라져 여기서 고정값으로 바꾸지 않는다. 위협하는 가신과 관계 ≥0일 때 설득 시도가 가능하다(N-D07-14). 수락 자격과 실행 성공은 다르다.
 - 감독관 활동 점검의 포로 생산성 보너스 10%→20%(N-D07-15)와 역사적 저장값 0.03/1.045/1.2(N-D07-16)는 일반 성과 평가식이 아니다. 저장값의 지수·단위는 미확인이다.
 - 관계 표시는 인물→선택 대상 방향이며 반전 토글이 설명을 바꾼다(N-D07-17). 분대 궤멸 목격은 생각을 추가하지만 반경·신뢰도·늦은 발견·중복 제거 식은 제시하지 않는다(N-D07-18). 일일 보고의 소문과 소문 알림 제거는 서로 다른 조작이다(N-D07-19). 주먹다짐은 목격자의 지지·관심에 영향을 주며 더 이상 상대 관계를 개선하지 않는다(N-D07-20). 개선 중단을 모든 관계 효과의 부재로 넓히지 않는다.
 
-두 원작 모두 같은 보고 두 번, 늦은 비밀 발견, 후계 개인 신뢰, 불능과 거역의 비교에서 국소 근거와 미확인 부분을 함께 남긴다. 알림 감소는 효과 중복 제거가 아니고, 이전 군주가 자기 추종자를 유지하는 것은 후계자에게 관계를 물려주는 것이 아니다. 엔진의 합산·반올림·난수·감쇠 시각·갱신 주기는 확인되지 않았다.
+두 원작 모두 같은 보고 두 번, 늦은 비밀 발견, 후계 개인 신뢰, 불능과 거역의 비교에서 국소 근거와 미확인 부분을 함께 남긴다. 알림 감소는 효과 중복 제거가 아니고, 이전 통치자가 자기 추종자를 유지하는 것은 후계자에게 관계를 물려주는 것이 아니다. 엔진의 합산·반올림·난수·감쇠 시각·갱신 주기는 확인되지 않았다.
 
 ## 12. 미결 사항 — 결정 준비된 대안
 
@@ -87841,13 +87841,13 @@ D07은 세 가지를 소유한다. 첫째, 무언가를 실제로 알게 된 인
 ### 12.1 관계·평가의 증감·감쇠·지속 (T68-D07-EVALUATION-DECAY/relation-evaluation)
 
 - **질문.** 어떤 일을 누가 책임지는가(직접 본 일과 보고로 안 일을 어느 인물의 신뢰·기억에 귀속할 것인가). 신뢰, 충성, 기분, 기억은 어떤 사건에서 오르거나 내리는가. 기억이 사라지는 방식은 무엇인가. 충성이 25 미만으로 얼마나 지속되어야 반란이나 이탈의 길이 열리는가. 어떤 행동이 위험 행동인가.
-- **현재 확정 경계.** 방향성 `T`, 구간 `25/−25/−50`, 충성 `0..100`(군주 100), 관측 시점 갱신, 별개 기록, 증감 없는 부족의 전환 금지까지만 승인되었다.
+- **현재 확정 경계.** 방향성 `T`, 구간 `25/−25/−50`, 충성 `0..100`(세력 수장 100), 관측 시점 갱신, 별개 기록, 증감 없는 부족의 전환 금지까지만 승인되었다.
 - **대안 갈래.** (a) 귀속 — 직접 목격=행위자 직접 귀속 / 보고=보고 시점·보고 경로 반영 / 연쇄 보고의 귀속 주체. (b) 증감 — 사건 유형별 고정표 / 근거 가중(목격 대 보고) / 값 구간별 비대칭. (c) 감쇠 — 고정 기간 후 소멸 / 단조 감쇠 함수 / 갱신 시점 리셋. (d) 충성 지속 — 연속 N일 미만 게이트 / 최초 미만 도달 시 경로 개방 후 회복 조건. 어느 갈래도 이 문서가 선택하지 않는다.
 - **소비자 활용.** 플레이어는 사건을 알게 된 인물이 누구에게 왜 반응하는지, 그 반응이 신뢰·충성·기억 중 무엇에 남는지 읽고 다음 면담이나 계약 행동을 판단한다. 회복·화해 또는 시간이 지난 뒤 변화가 가능한지와 그 조건을 알 수 있어야 한다. 아직 정해지지 않은 변화량이나 회복 기간은 알 수 없는 값으로 구분한다.
 - **이상적 결과.** 같은 사건을 알고 반응한 인물의 정보 취득 시점과 반응 대상이 보이고, 직접 피해와 공개 평판, 신뢰와 충성, 기억의 지속이 구분된다. 회복 가능한 효과는 정해진 회복 조건과 종료 시점을 통해 이해할 수 있고, 정해지지 않은 변화량·기간을 확정된 결과처럼 보여 주지 않는다.
 - **현재 공백.** 증감량, 감쇠 곡선, 지속 기간, 위험 행동 문턱의 값이 없다. 외부 참조의 대응값(CK3 `+25/0.05`, Norland 대체 이전 충성)은 비교 기준일 뿐이다.
 - **미결 사유.** 사건별 변화량과 지속 기간은 아직 결정되지 않았기 때문이다. 기존 문턱을 정한 것만으로 새 변화량을 정할 수는 없다.
-- **QA.** 같은 시작 상태·관측 시점·선택 기록으로 같은 사건을 알게 된 인물의 전후 기록을 비교한다. 변화량이 미정이면 사건을 안 사실과 수치 결과가 미정임을 구분하며, 미정을 0으로 계산하지 않는다. 같은 `ResultId`가 다시 도착해도 두 번째 반응을 적용하지 않고, 아직 사건을 모르는 관찰자의 신뢰·기억은 그 사건으로 바뀌지 않는다. 신뢰가 정확히 `25/−25/−50`일 때 고정 분류 조건을 유지한다. 충성 `0/100`은 승인 범위의 양끝이고 군주 자신의 충성은 `100`이며, 정확히 `25`는 `25 미만`이 아니다. `25 미만`이어도 지속 기간이 미정인 동안 즉시 반란·이탈을 확정하지 않는다. 회복·소멸 대안의 비교에서는 사건 이력은 남고 각 대안에서 정한 효과의 종료 조건만 달라지는지 본다.
+- **QA.** 같은 시작 상태·관측 시점·선택 기록으로 같은 사건을 알게 된 인물의 전후 기록을 비교한다. 변화량이 미정이면 사건을 안 사실과 수치 결과가 미정임을 구분하며, 미정을 0으로 계산하지 않는다. 같은 `ResultId`가 다시 도착해도 두 번째 반응을 적용하지 않고, 아직 사건을 모르는 관찰자의 신뢰·기억은 그 사건으로 바뀌지 않는다. 신뢰가 정확히 `25/−25/−50`일 때 고정 분류 조건을 유지한다. 충성 `0/100`은 승인 범위의 양끝이고 세력 수장 자신의 충성은 `100`이며, 정확히 `25`는 `25 미만`이 아니다. `25 미만`이어도 지속 기간이 미정인 동안 즉시 반란·이탈을 확정하지 않는다. 회복·소멸 대안의 비교에서는 사건 이력은 남고 각 대안에서 정한 효과의 종료 조건만 달라지는지 본다.
 
 ### 12.2 명령 평가 인터페이스 (GP-11/command-evaluation-interface)
 
@@ -88113,11 +88113,11 @@ Observations from the two games are **how those games behave**, not Seoul rules.
 - Source attribution: the publisher-hosted community wiki (`wiki.hoodedhorse.com/Norland`) at pinned revisions — World `oldid=1284`, States `oldid=1262`, Lords `oldid=1314`, Actions `oldid=1318` — and developer announcements (Patch #25/#26, Patch #39·#40, Patch #43 BETA, Patch #57 BETA, Update #35, Patches #54–#56 bundle). All 16 items are documentation checks (raw processing not confirmed).
 - **Necessary condition for marriage**: World oldid1284 — the foreign-city marriage action is possible only if the relationship between the two rulers is +5 or higher. It is a necessary condition, not full eligibility. The effects are bride relocation, gold payment (proportional to the bride city''s strength), and a +30 ruler relationship; this is a list of outcomes, not a transaction order or property-transfer rule.
 - **Marker of forced marriage (historical)**: The Patch #25 announcement attached a forced-marriage incident to newlywed relationships <50, and Patch #39·#40 removed that incident and retroactively wrote the threshold as <25. The threshold mismatch between the two records remains unreconciled, and this incident is not a consent system.
-- **Divorce**: Actions oldid1318, bishop entry and divorce table — marriage ends through the married lord, a bishop in the city, and a gold cost. The consent of the other party, the paying party, children, and property effects are not documented.
-- **Recognition and genealogy**: States oldid1262 classifies births outside marriage or to a female ruler as bastards, and Patch #26 displays legitimate and bastard children and married neighboring houses in the family tree. Patch #43 BETA creates fake parents for initial AI lords so they are recognized as kin. Display and classification do not grant recognition authority, succession, or ownership.
+- **Divorce**: Actions oldid1318, bishop entry and divorce table — marriage ends through the married retainer, a bishop in the city, and a gold cost. The consent of the other party, the paying party, children, and property effects are not documented.
+- **Recognition and genealogy**: States oldid1262 classifies births outside marriage or to a female ruler as bastards, and Patch #26 displays legitimate and bastard children and married neighboring houses in the family tree. Patch #43 BETA creates fake parents for initial AI retainers so they are recognized as kin. Display and classification do not grant recognition authority, succession, or ownership.
 - **Duration and state values**: the 3-day romance state in Patch #57 BETA, the 48-hour married-couple date cooldown in Patch #39·#40, the puppeting of parents after marriage of an AI bride under 24 in Update #35, and the 3-day childbirth and small childbirth-death probability in States oldid1262. All are conditional values in that game and are not Seoul durations or probabilities.
-- **Political invalidation on death or loss of office**: the Patch #54 BETA fix item in the Patches #54–#56 bundle — the target''s death, dementia, or loss of lordship resets that politician''s strategy. It is a political-strategy invalidation, not a termination of marriage.
-- Correspondence with Seoul: the Norland material we checked documents the relationship threshold (+5), the marriage outcome list, and the gold cost of bishop divorce, but this material alone does not fix the actual processing order or the point of immediate determination. In Seoul, relationship is a separate state owned by D07, and whether a marriage takes effect is judged by the applicable institution. Norland''s reset of political strategy upon death or loss of lordship is a contrasting case of state separation and does not prove whether the marriage ends or that other effects remain unchanged.
+- **Political invalidation on death or loss of office**: the Patch #54 BETA fix item in the Patches #54–#56 bundle — the target''s death, dementia, or loss of retainer status resets that politician''s strategy. It is a political-strategy invalidation, not a termination of marriage.
+- Correspondence with Seoul: the Norland material we checked documents the relationship threshold (+5), the marriage outcome list, and the gold cost of bishop divorce, but this material alone does not fix the actual processing order or the point of immediate determination. In Seoul, relationship is a separate state owned by D07, and whether a marriage takes effect is judged by the applicable institution. Norland''s reset of political strategy upon death or loss of retainer status is a contrasting case of state separation and does not prove whether the marriage ends or that other effects remain unchanged.
 
 The scope of the CK3 and Norland documents and scripts we checked cannot determine Seoul''s bilateral procedures. This is not a claim that neither game as a whole has a complete bilateral procedure. Because the cost, command, and display evidence of external games does not substitute for approval of Seoul''s procedures for consent, eligibility, ratification, and taking effect, the bilateral-procedure problem in §13 is left undecided.
 
@@ -88168,7 +88168,7 @@ D08 is now a **domain of record and suspension**. What is approved is all of the
 
 D08은 **가문과 혼인에서 무엇이 기록되고, 무엇이 성립하며, 무엇이 서로 섞이지 않는가**를 정의한다.
 
-다룬다: 혼인에 대한 당사자 동의와 제도의 인준을 사건 원장에 남기는 일, 적용 제도가 정해지기 전의 성립 판정 보류, 성립한 혼인의 효과(동맹·재산·인준·후계)를 하나씩 유지·종료·재인준하는 틀, 주장으로 가는 세 갈래 길의 구분, 성별 작성 규칙, 양자라는 이름의 자리, 인격으로 인정된 합성 존재의 비양도성, 본체·수장 자리·개별 작위·재산 계승의 분리.
+다룬다: 혼인에 대한 당사자 동의와 제도의 인준을 사건 원장에 남기는 일, 적용 제도가 정해지기 전의 성립 판정 보류, 성립한 혼인의 효과(동맹·재산·인준·후계)를 하나씩 유지·종료·재인준하는 틀, 주장으로 가는 세 갈래 길의 구분, 성별 작성 규칙, 양자라는 이름의 자리, 인격으로 인정된 합성 존재의 비양도성, 본체·수장 자리·개별 직함·재산 계승의 분리.
 
 다루지 않는다: 주장과 권리의 자격·판정(D10), 후계 절차와 본체 전환 자체(D12), 재산 상속·인도 규칙(D13), 국가 기관의 선거·정족·동점·섭정·정통성(D09), 조직의 생존과 소멸(D16), 관계·기억·충성의 수치(D07), 사건 원장·세계 시계·저장 판본(D18). §11이 소유 경계를 정리한다.
 
@@ -88207,7 +88207,7 @@ D08은 **가문과 혼인에서 무엇이 기록되고, 무엇이 성립하며, 
 - 혼인이 성립하지 않았다고 그 사정이 따로 정해져 있을 때에만 끝낼 혼인 효과가 없다. 제도를 몰라 성립을 정할 수 없을 때는 효과가 있는지조차 정할 수 없다(정본 산문 b8).
 - 성별은 여성과 남성만 쓰고, 이미 지정된 성별은 그대로 둔다. 지정되지 않은 인물은 그 나라의 설정에 따라 배정한다. 이것은 사람을 적을 때의 작성 규칙이고, 나이·성별·후보 자격을 새로 정한 것이 아니다(정본 산문 b9, 성별 작성 소유자 결정 2026-09-19).
 - 소속 변경·관계 변경·이동·관직 인준은 서로 다른 원인 사건이다. 혼인을 기록했다고 소속·있는 곳·관직이 따라 바뀌지 않고, 그 반대도 같다(정본 산문 b11, 인물·권한·노동 상태 계약).
-- 본체 계승·수장 자리 계승·개별 작위·재산 계승은 서로 다른 사건이고, 새 본체는 죽은 본체의 권한·기술·친구를 복사받지 않는다(SP1 b47).
+- 본체 계승·수장 자리 계승·개별 직함·재산 계승은 서로 다른 사건이고, 새 본체는 죽은 본체의 권한·기술·친구를 복사받지 않는다(SP1 b47).
 - 인격으로 인정된 합성 존재는 양도 가능한 자산 목록에서 제외된다(SP1 b61).
 - 인물·사건·결과의 ID는 영구적이고, 같은 사건 ID의 재전송은 새 결과를 만들지 않는다(SP1 b12·b13, 인물·권한·노동 상태 계약).
 
@@ -88363,13 +88363,13 @@ D08은 **가문과 혼인에서 무엇이 기록되고, 무엇이 성립하며, 
 ### 12.2 Norland
 
 - 원천 귀속: 배포사 호스팅 커뮤니티 위키(`wiki.hoodedhorse.com/Norland`) 고정 판오판 — World `oldid=1284`, States `oldid=1262`, Lords `oldid=1314`, Actions `oldid=1318` — 및 개발자 공지(Patch #25/#26, Patch #39·#40, Patch #43 BETA, Patch #57 BETA, Update #35, Patches #54–#56 묶음). 16항목 모두 문서 검증이다(원시 처리 미확인).
-- **혼인의 필요조건**: World oldid1284 — 두 군주 관계가 +5 이상이어야 외국 도시 혼인 행동이 가능하다. 필요조건이지 완전한 적격은 아니다. 효과는 신도 이주·금 지급(신도 도시 강도에 비례)·군주 관계 +30이고, 이는 결과 목록이지 거래 순서나 재산 이전 규칙이 아니다.
+- **혼인의 필요조건**: World oldid1284 — 두 통치자 관계가 +5 이상이어야 외국 도시 혼인 행동이 가능하다. 필요조건이지 완전한 적격은 아니다. 효과는 신도 이주·금 지급(신도 도시 강도에 비례)·통치자 관계 +30이고, 이는 결과 목록이지 거래 순서나 재산 이전 규칙이 아니다.
 - **강제 혼인의 표식(역사적)**: Patch #25 공지는 신혼 관계 <50에 강제 혼인 사고를 붙였고, Patch #39·#40는 그 사고를 제거하며 문턱을 소급 <25로 적었다. 두 기록의 문턱 불일치는 미조정 상태로 남아 있고, 이 사고는 동의 체계가 아니다.
-- **이혼**: Actions oldid1318 주교 항목·이혼 표 — 혼인한 영주·도시 내 주교·금 비용으로 혼인이 끝난다. 대상 동의·지급 주체·자녀·재산 효과는 문서화되지 않았다.
-- **인지·계보**: States oldid1262는 혼인 밖 출생 또는 여성 군주 소생을 사생으로 분류하고, Patch #26은 적법·사생 자녀와 혼인한 이웃 가문을 족보에 표시한다. Patch #43 BETA는 초기 AI 영주에게 가짜 부모를 만들어 친족으로 인지시킨다. 표시·분류는 인지 권한·계승·소유를 부여하지 않는다.
+- **이혼**: Actions oldid1318 주교 항목·이혼 표 — 혼인한 가신·도시 내 주교·금 비용으로 혼인이 끝난다. 대상 동의·지급 주체·자녀·재산 효과는 문서화되지 않았다.
+- **인지·계보**: States oldid1262는 혼인 밖 출생 또는 여성 통치자 소생을 사생으로 분류하고, Patch #26은 적법·사생 자녀와 혼인한 이웃 가문을 족보에 표시한다. Patch #43 BETA는 초기 AI 가신에게 가짜 부모를 만들어 친족으로 인지시킨다. 표시·분류는 인지 권한·계승·소유를 부여하지 않는다.
 - **기간·상태 값**: Patch #57 BETA의 연애 상태 3일, Patch #39·#40의 부부 데이트 재사용 대기 48시간, Update #35의 AI 신부 24세 미만 혼인 후 부모 꼭두각시화, States oldid1262의 출산 3일·출산 사망 소확률. 모두 그 게임의 조건부 값이고 서울 기간·확률이 아니다.
-- **사망·직위 상실의 정치 무효화**: Patches #54–#56 묶음의 Patch #54 BETA 수정 항목 — 대상 사망·치매·영주직 상실이 해당 정치인 전략을 초기화한다. 정치 전략 무효화이지 혼인 종료가 아니다.
-- 서울과의 대응: 확인한 Norland 자료는 관계 문턱(+5), 혼인 결과 목록, 주교 이혼의 금 비용을 문서화하지만, 이 자료만으로 실제 처리 순서나 즉시 판정 시점을 확정하지 않는다. 서울에서는 관계가 D07 소유의 별개 상태이고 혼인 성립은 적용 제도로 판단한다. Norland의 사망·영주직 상실에 따른 정치 전략 초기화는 상태 분리의 대조 사례이며, 혼인 종료 여부나 다른 효과의 불변을 입증하지 않는다.
+- **사망·직위 상실의 정치 무효화**: Patches #54–#56 묶음의 Patch #54 BETA 수정 항목 — 대상 사망·치매·가신직 상실이 해당 정치인 전략을 초기화한다. 정치 전략 무효화이지 혼인 종료가 아니다.
+- 서울과의 대응: 확인한 Norland 자료는 관계 문턱(+5), 혼인 결과 목록, 주교 이혼의 금 비용을 문서화하지만, 이 자료만으로 실제 처리 순서나 즉시 판정 시점을 확정하지 않는다. 서울에서는 관계가 D07 소유의 별개 상태이고 혼인 성립은 적용 제도로 판단한다. Norland의 사망·가신직 상실에 따른 정치 전략 초기화는 상태 분리의 대조 사례이며, 혼인 종료 여부나 다른 효과의 불변을 입증하지 않는다.
 
 확인한 CK3·Norland 문서·스크립트 범위는 서울의 양자 절차를 결정하지 못한다. 이는 두 게임 전체에 완전한 양자 절차가 없다는 주장이 아니다. 외부 게임의 비용·명령·표시 근거가 서울의 동의·자격·인준·성립 절차 승인을 대신하지 않으므로, §13의 양자 절차 문제는 미결로 남긴다.
 
@@ -88537,15 +88537,15 @@ In the preserved 1.20.0.3 / build 25652598 materials, feudal elections handle th
 
 Bureaucratic appointments involve government access, candidate tiers, score order, and the context of handling office transfers, and the restrictions on holding a council seat together with other offices are conditional. They cannot be carried over as a concurrent-office ban applying to all of Seoul. In handling finance-related vacancies, there are commands that, under conditions such as having no successor councillor, add treasury funds to a superior and destroy the title. Explicit deduction from the previous treasury and final preservation of assets are not proven. Therefore, do not say that ‘the treasury is transferred completely,’ or that it equals the continued existence of a Seoul institutional treasury.
 
-A regency is a context in which power is shared with an existing monarch, and its validity and actual capability conditions differ. It is not the same as Seoul''s acting role, which fills in for an empty office. In tests, the annotations and the actual operands differ, so the actual values and units must be distinguished. Legitimacy uses classification thresholds multiplied by coefficients according to tier and era, but raw rounding and initialization are not proven. This material does not adopt any Seoul legitimacy formula or threshold value. General character generation or test-tube generation is likewise not evidence for ‘generating an unknown leader for every election vacancy.’
+A regency is a context in which power is shared with an existing ruler, and its validity and actual capability conditions differ. It is not the same as Seoul''s acting role, which fills in for an empty office. In tests, the annotations and the actual operands differ, so the actual values and units must be distinguished. Legitimacy uses classification thresholds multiplied by coefficients according to tier and era, but raw rounding and initialization are not proven. This material does not adopt any Seoul legitimacy formula or threshold value. General character generation or test-tube generation is likewise not evidence for ‘generating an unknown leader for every election vacancy.’
 
 ### Norland
 
-In the preserved documents of the official wiki and official patches, king-only actions, lord candidate eligibility, politician selection, and specific relationship updates on accession and on a suzerain''s death each have different handling. The general king eligibility table does not fully explain candidate priority, ties, or the default successor. Concurrent holding of politician and successor roles is also directional and conditional, so it must not be turned into a universal permission or ban on holding multiple offices.
+In the preserved documents of the official wiki and official patches, ruler-only actions, retainer candidate eligibility, politician selection, and specific relationship updates on accession and on a suzerain''s death each have different handling. The general ruler eligibility table does not fully explain candidate priority, ties, or the default successor. Concurrent holding of politician and successor roles is also directional and conditional, so it must not be turned into a universal permission or ban on holding multiple offices.
 
 The politics-related threshold was 20 in main 50–53, then restored to 40 in beta 55 / main 54–56, and Actions revision 1318 also records 40. Do not use the historical 20 as a current invariant. The knowledge-based politician selection of beta 43 was changed to persuasion-based selection in main 46–48. The strict ‘greater than 6’ persuasion requirement does not include being equal to 6, but candidate ties and the actual selection order are unresolved. These values are not Seoul eligibility values.
 
-Noble exhaustion, a suzerain''s death, and an existing lord''s resettlement of ruins are each documented facts within their own contexts. They do not prove a general rule that a new leader is generated for every vacancy. The treasury modifications concerning confiscated funds and the King''s Ring likewise do not fully prove the treasury custodian, spending authority, or survival during a vacancy. The capacity for free-lord titles is not the geometry of Seoul''s territory or the identity of an institutional office. Voting, quorum, tests, scope of acting authority, legitimacy figures, and the order of sequential processing remain within the limits of the preserved materials even in the source games.
+Noble exhaustion, a suzerain''s death, and an existing retainer''s resettlement of ruins are each documented facts within their own contexts. They do not prove a general rule that a new leader is generated for every vacancy. The treasury modifications concerning confiscated funds and the Ruler''s Ring likewise do not fully prove the treasury custodian, spending authority, or survival during a vacancy. The capacity for free-retainer titles is not the geometry of Seoul''s territory or the identity of an institutional office. Voting, quorum, tests, scope of acting authority, legitimacy figures, and the order of sequential processing remain within the limits of the preserved materials even in the source games.
 
 The structures of the two source games serve as a basis for comparing Seoul''s institutions. They are limited to what was confirmed in the preserved documents and are not observations of the game running. Some materials lack a confirmed correspondence between document version and historical build, so actual behavior in that build cannot be established.
 
@@ -88592,7 +88592,7 @@ There are no approved numbers for legitimacy scores, exam scores, quorums, actin
 | 인물 | 동일 인물의 신원, 생존, 행동 가능 상태 | 직위·상속·지휘권 |
 | 소속·시민 자격 | 어느 국가·조직의 구성원인지와 인정 | 국가 이름의 선전포고·공공 재산 처분 |
 | 직위 | 기관, 자리, 관할, 현재 보유자, 서명 범위 | 개인 금고 소유·모든 병력 지휘 |
-| 작위·영지 | 대상 권리와 의무, 보유자, 상위 계약, 인정 | 현장의 즉시 사용·다른 직위 취득 |
+| 직함·영지 | 대상 권리와 의무, 보유자, 상위 계약, 인정 | 현장의 즉시 사용·다른 직위 취득 |
 | 실효 지배 | 지금 현장에서 통제하는 사람과 점령·분쟁 | 합법 보유·주민 협조·기관 운영 |
 | 지휘 | 지정 부대와 유효한 지휘·위임 범위 | 기관 소유 재산 처분·타 부대 편입 |
 | 재산·접근 | 소유, 보관, 사용, 금고 접근 | 접근한 재산의 개인 소유 |
@@ -88600,7 +88600,7 @@ There are no approved numbers for legitimacy scores, exam scores, quorums, actin
 
 직위 티어는 국가 사이에서 비교하는 분류다. 같은 티어도 같은 직위가 아니며 높은 티어가 군사 지휘·세습·국가 전체 외교를 자동 허용하지 않는다. 실제 권한은 그 직위와 별도 계약의 범위에서 온다. 전투 지휘관은 전투 세션에 등록된 지휘 범위와 배속 분대 목록에 모두 포함되는 모든 분대를 대상으로 지휘하되, 즉시 하달된 명령에 대한 현장 분대장의 자율 판단과 평가를 없애지 않는다. 국가 직위와 이 전투 지휘 계약은 서로를 대체하지 않는다.
 
-후보의 자격, 투표권, 기술 자격은 작위 주장과 다른 자료다. 배우자·친족·양자라는 관계 기록만으로 모든 권리나 직위를 받지 않는다. 개인적 신뢰나 지지는 사건에 따라 변할 수 있으나, 그것이 제도의 고정 자격 문턱이나 분류 기준을 저절로 바꾸지는 않는다. 서울의 정통성 문턱값이나 선출 점수는 아직 승인된 값이 없다.
+후보의 자격, 투표권, 기술 자격은 직함 주장과 다른 자료다. 배우자·친족·양자라는 관계 기록만으로 모든 권리나 직위를 받지 않는다. 개인적 신뢰나 지지는 사건에 따라 변할 수 있으나, 그것이 제도의 고정 자격 문턱이나 분류 기준을 저절로 바꾸지는 않는다. 서울의 정통성 문턱값이나 선출 점수는 아직 승인된 값이 없다.
 
 이름으로 사람을 검색할 수 있어야 한다. 이름이 같거나 개명한 경우에도 동일성은 영구 ID로 확인한다. 과거 인물 등록 자료는 과거 신원 발급의 증거이며 현재 국가의 구성원·후보·수장 명부를 대신하지 않는다.
 
@@ -88624,13 +88624,13 @@ There are no approved numbers for legitimacy scores, exam scores, quorums, actin
 
 ### 3.3 수장이 죽었을 때
 
-전: 수장의 직위·작위·재산·계약은 서로 다른 항목으로 존재한다.
+전: 수장의 직위·직함·재산·계약은 서로 다른 항목으로 존재한다.
 
 행동: 사망 근거가 확정된다. 사망한 사람은 새로운 개인 행동을 시작하지 못하고 직위는 공석이 된다.
 
 후: 기관과 국가는 수장의 죽음만으로 자동 소멸하지 않는다. 기관의 재산을 수장의 개인 유산으로 바꾸지 않는다. 각 항목의 후계 제도 조회, 후보 자격 검사, 선거·지명·시험·세습 절차, 인준, 권리 이전, 인도·인수, 분쟁 기록은 각각의 근거가 있어야 진행한다. 탈락한 후보를 삭제하지 않고 남은 주장은 제도에 따라 기록한다. 적격자나 절차가 없으면 공석·승계 분쟁으로 남으며 무명 수장을 만들어 성공 처리하지 않는다.
 
-몸의 계승, 국가·기관 수장 계승, 개별 작위·재산 계승은 별도 사건이다. 새 몸은 이전 몸의 권한·기술·친구를 복사받지 않는다. 그렇다고 새 몸과 새 수장이 반드시 다른 사람이어야 하는 것은 아니다. 직위의 제도·후보 검사·절차·인준이 독립적으로 같은 사람을 선택했다면 같은 사람이 맡을 수 있다. 몸이 바뀐 사실 자체는 그 선택이나 상속의 근거가 아니다. 영구 구금으로 몸이 바뀌어도 구금된 사람은 살아 있으므로 사망 상속을 열지 않는다.
+몸의 계승, 국가·기관 수장 계승, 개별 직함·재산 계승은 별도 사건이다. 새 몸은 이전 몸의 권한·기술·친구를 복사받지 않는다. 그렇다고 새 몸과 새 수장이 반드시 다른 사람이어야 하는 것은 아니다. 직위의 제도·후보 검사·절차·인준이 독립적으로 같은 사람을 선택했다면 같은 사람이 맡을 수 있다. 몸이 바뀐 사실 자체는 그 선택이나 상속의 근거가 아니다. 영구 구금으로 몸이 바뀌어도 구금된 사람은 살아 있으므로 사망 상속을 열지 않는다.
 
 ### 3.4 공석의 대행과 조직의 잔존
 
@@ -88661,7 +88661,7 @@ There are no approved numbers for legitimacy scores, exam scores, quorums, actin
 
 세계에서 작업을 취소하거나 인물이 죽었다고 이미 완료한 진척과 소비를 없던 일로 하지 않는다. 앞으로 남은 수행과 자격은 해당 행동 계약에서 처리한다. 기관 금고의 소유가 유지된다는 사실은 금고 잔고가 모든 사건에서 고정된다는 뜻이 아니다. 적법한 기관 지출과 인도는 각각의 자산 계약으로 판단한다. 이미 적용된 결과를 다시 적용해 효과나 소비를 중복시키지 않으며 승인된 규칙 판본을 조용히 바꾸지 않는다.
 
-플레이어에게 필요한 정보는 직위명·기관·보유자·공석, 행동의 권한 근거와 범위, 등록된 대행 범위, 제도 미정과 후보 자격 부족의 구분, 인정·실효 지배·작위 권리의 구분이다. 이는 정보 표시 제안이며 모든 금고 잔액·비공개 표·타인의 기억을 전지적으로 공개하는 승인과는 다르다. 공개 범위는 기관·행위자의 열람권을 정해야 한다.
+플레이어에게 필요한 정보는 직위명·기관·보유자·공석, 행동의 권한 근거와 범위, 등록된 대행 범위, 제도 미정과 후보 자격 부족의 구분, 인정·실효 지배·직함 권리의 구분이다. 이는 정보 표시 제안이며 모든 금고 잔액·비공개 표·타인의 기억을 전지적으로 공개하는 승인과는 다르다. 공개 범위는 기관·행위자의 열람권을 정해야 한다.
 
 ## 6. 의미 있는 판단 예시
 
@@ -88671,7 +88671,7 @@ There are no approved numbers for legitimacy scores, exam scores, quorums, actin
 
 ### 예시 B: 수장 사망과 같은 사람의 합법적 선출
 
-전: 수장이 죽고 새 몸으로 선택된 인물이 후계 후보이기도 하다. 행동: 몸 전환과 별도로 국가의 후보 검사·선출·인준 절차를 밟는다. 후: 절차가 독립적으로 그 사람을 선택하면 새 몸과 수장이 같은 사람일 수 있다. 제도나 후보가 없으면 공석·분쟁으로 남는다. 몸 전환만으로 금고·작위·기술·친구가 전달되지는 않는다.
+전: 수장이 죽고 새 몸으로 선택된 인물이 후계 후보이기도 하다. 행동: 몸 전환과 별도로 국가의 후보 검사·선출·인준 절차를 밟는다. 후: 절차가 독립적으로 그 사람을 선택하면 새 몸과 수장이 같은 사람일 수 있다. 제도나 후보가 없으면 공석·분쟁으로 남는다. 몸 전환만으로 금고·직함·기술·친구가 전달되지는 않는다.
 
 ### 예시 C: 대행과 기관 지출
 
@@ -88679,7 +88679,7 @@ There are no approved numbers for legitimacy scores, exam scores, quorums, actin
 
 ### 예시 D: 점령, 도착, 전쟁 종료의 다른 근거
 
-전: 부대가 현장을 점령했고 다른 부대가 이동 중이다. 행동: 도착한 부대는 실제 도착 뒤 참여 자격을 판단한다. 진행 중인 전투에 실제 도착한 어느 부대든 증원 참여가 허용된다. 후: 점령은 실효 지배 기록이지 직위 취득이나 권리 인정이 아니다. 전쟁에는 유효한 명분과 목표 한정 전쟁점수 범위 ±100, 사용자 정의 협상이 적용된다. 다른 사람의 주장을 지원하는 공격자와 권리 수혜자는 구별하며 강제 종결 전에도 명분의 계속 유효성을 확인한다. 종결 뒤의 작위·권리 이전은 D10, 점령·전쟁 기록과 조직 잔존은 D16, 합의와 정산은 D17의 근거로 각각 판단한다. 어느 효과도 점령이나 몸 전환만으로 자동 발생하지 않는다.
+전: 부대가 현장을 점령했고 다른 부대가 이동 중이다. 행동: 도착한 부대는 실제 도착 뒤 참여 자격을 판단한다. 진행 중인 전투에 실제 도착한 어느 부대든 증원 참여가 허용된다. 후: 점령은 실효 지배 기록이지 직위 취득이나 권리 인정이 아니다. 전쟁에는 유효한 명분과 목표 한정 전쟁점수 범위 ±100, 사용자 정의 협상이 적용된다. 다른 사람의 주장을 지원하는 공격자와 권리 수혜자는 구별하며 강제 종결 전에도 명분의 계속 유효성을 확인한다. 종결 뒤의 직함·권리 이전은 D10, 점령·전쟁 기록과 조직 잔존은 D16, 합의와 정산은 D17의 근거로 각각 판단한다. 어느 효과도 점령이나 몸 전환만으로 자동 발생하지 않는다.
 
 ## 7. 다른 영역과의 소유 경계
 
@@ -88689,7 +88689,7 @@ There are no approved numbers for legitimacy scores, exam scores, quorums, actin
 | D03 | 공통 행동·명령 계약 | 직위와 별도로 검사하는 수행 자격·권한 근거 |
 | D07 | 개인 관계·기억·충성·평가 | 변하는 지지와 현장 판단·평가, 고정 제도 자격과의 구분 |
 | D08 | 친족·혼인·양자와 가족법 | 기록과 법적 후보 자격의 구분 |
-| D10 | 작위·주장·인준 | 직위와 구별된 권리·수혜자 |
+| D10 | 직함·주장·인준 | 직위와 구별된 권리·수혜자 |
 | D11 | 위임·서명 계약과 회수 | 해당 계약만의 유효성과 범위 |
 | D12 | 몸 계승과 구금·복귀 | 수장 계승과 별도인 몸 선택 |
 | D13 | 재산·금고·상속·인도 | 기관 소유와 개인 소유·실제 지출 |
@@ -88706,17 +88706,17 @@ There are no approved numbers for legitimacy scores, exam scores, quorums, actin
 
 보존된 1.20.0.3 / build 25652598 자료에서 봉건선거는 선거인 집합·후보 필터·표의 힘·후보 점수를 따로 다룬다. 한 사람의 후보 적격과 득표를 구별하는 비교에 쓸 수 있다. 전체 집계나 최종 동수 해결은 확인되지 않았고 정족수·동점은 조사된 미해결이다. 모르는 규칙을 ‘없음’이나 0으로 읽지 않는다.
 
-관료 임명에는 정부 접근·후보 티어·점수 순서와 직위 이전 처리의 문맥이 있으며, 평의회와 다른 직위의 겸임 제한은 조건별이다. 서울 전체에 적용할 겸직 금지로 옮길 수 없다. 재무 관련 공석 처리에서는 후임 평의원이 없는 등 조건 아래 상급자에게 금고 자금을 더하고 작위를 파괴하는 명령이 보인다. 이전 금고의 명시적 차감과 최종 자산 보존은 입증되지 않았다. 따라서 ‘금고를 완전히 이전한다’거나 서울 기관 금고의 존속과 같다고 말하지 않는다.
+관료 임명에는 정부 접근·후보 티어·점수 순서와 직위 이전 처리의 문맥이 있으며, 평의회와 다른 직위의 겸임 제한은 조건별이다. 서울 전체에 적용할 겸직 금지로 옮길 수 없다. 재무 관련 공석 처리에서는 후임 평의원이 없는 등 조건 아래 상급자에게 금고 자금을 더하고 직함을 파괴하는 명령이 보인다. 이전 금고의 명시적 차감과 최종 자산 보존은 입증되지 않았다. 따라서 ‘금고를 완전히 이전한다’거나 서울 기관 금고의 존속과 같다고 말하지 않는다.
 
-섭정은 기존 군주와 권력을 공유하는 문맥이며 유효성과 실제 능력 조건이 다르다. 빈 직위를 대신 채우는 서울 대행과 동일하지 않다. 시험에서는 주석과 실행 피연산자가 달라 실제 값과 단위를 구별해야 한다. 정통성은 티어와 시대에 따라 계수가 곱해지는 분류 문턱을 사용하지만 원시 반올림과 초기화는 입증되지 않았다. 서울의 정통성 식이나 문턱값을 이 자료에서 채택하지 않는다. 일반 인물 생성이나 시험관 생성도 ‘선거 공석마다 무명 수장 생성’의 증거가 아니다.
+섭정은 기존 통치자와 권력을 공유하는 문맥이며 유효성과 실제 능력 조건이 다르다. 빈 직위를 대신 채우는 서울 대행과 동일하지 않다. 시험에서는 주석과 실행 피연산자가 달라 실제 값과 단위를 구별해야 한다. 정통성은 티어와 시대에 따라 계수가 곱해지는 분류 문턱을 사용하지만 원시 반올림과 초기화는 입증되지 않았다. 서울의 정통성 식이나 문턱값을 이 자료에서 채택하지 않는다. 일반 인물 생성이나 시험관 생성도 ‘선거 공석마다 무명 수장 생성’의 증거가 아니다.
 
 ### Norland
 
-공식 위키와 공식 패치의 보존 문서에서는 왕 전용 행동, 영주 후보 자격, 정치인 선택, 즉위 및 종주 사망에 따른 특정 관계 갱신이 서로 다른 처리를 가진다. 일반 왕 자격표가 후보 우선순위·동점·기본 후계자를 완전히 설명하지는 않는다. 정치인과 후계자 겸임도 방향별 조건이므로 보편적 겸직 허용이나 금지로 만들지 않는다.
+공식 위키와 공식 패치의 보존 문서에서는 통치자 전용 행동, 가신 후보 자격, 정치인 선택, 즉위 및 종주 사망에 따른 특정 관계 갱신이 서로 다른 처리를 가진다. 일반 통치자 자격표가 후보 우선순위·동점·기본 후계자를 완전히 설명하지는 않는다. 정치인과 후계자 겸임도 방향별 조건이므로 보편적 겸직 허용이나 금지로 만들지 않는다.
 
 정치 관련 문턱은 main 50–53의 20 이후 beta 55 / main 54–56에서 40으로 복원됐고 Actions 개정 1318도 40을 기록한다. 역사적 20을 현재 불변값으로 쓰지 않는다. beta 43의 지식 기반 정치인 선택은 main 46–48의 설득 기반 선택으로 바뀌었다. 설득 자격의 엄격한 ‘6보다 큼’은 6과 같음을 포함하지 않지만 후보 동점과 실제 선택 순서는 미해결이다. 이 값은 서울 자격값이 아니다.
 
-귀족 소진·종주 사망·기존 영주의 폐허 재정착은 각각 자기 문맥의 문서 사실이다. 공석마다 새 수장을 생성한다는 일반 규칙을 증명하지 않는다. 몰수금과 왕의 반지에 관한 금고 수정도 금고 보관자·지출권·공석 중 생존을 완전히 입증하지 않는다. 자유 영주 작위 수용량은 서울 영토의 기하나 기관 직위의 동일성이 아니다. 투표·정족수·시험·대행 범위·정통성 수치·연속 처리 순서는 원작에서도 보존 자료의 한계 안에 남는다.
+귀족 소진·종주 사망·기존 가신의 폐허 재정착은 각각 자기 문맥의 문서 사실이다. 공석마다 새 수장을 생성한다는 일반 규칙을 증명하지 않는다. 몰수금과 통치자의 반지에 관한 금고 수정도 금고 보관자·지출권·공석 중 생존을 완전히 입증하지 않는다. 자유 가신 직함 수용량은 서울 영토의 기하나 기관 직위의 동일성이 아니다. 투표·정족수·시험·대행 범위·정통성 수치·연속 처리 순서는 원작에서도 보존 자료의 한계 안에 남는다.
 
 두 원작의 구조는 서울의 제도를 비교하는 근거다. 보존 문서에서 확인한 범위이며 게임 실행 관찰은 아니다. 문서 판본과 역사 빌드의 대응이 확인되지 않은 자료도 있어 해당 빌드에서의 실제 동작까지 확정할 수는 없다.
 
@@ -88731,13 +88731,13 @@ There are no approved numbers for legitimacy scores, exam scores, quorums, actin
 | 규격맹·아관사 | 복수 기구의 역할을 일관되게 연결 | 도제 계보와 평의회 연결·이원 공석 순서 미정 | 도제 계보로 후보를 제한하고 평의회 선출 또는 계보 추천과 평의회 인준; 이원 권한은 독립 대행 또는 공동 인준 | 한 자리 공석이 다른 자리 권한을 자동 흡수하지 않는가? |
 | 대행·섭정 | 공석 업무와 기존 수장 보조를 구별 | 등록 주체·범위 변경·해제·기간 미정 | 사전 등록 범위만 유지 또는 별도 적법한 기관 결정으로 범위를 변경 | 등록 없는 인물과 범위 밖 요청을 막는가? |
 | 정통성 | 인준·협조·분쟁의 근거를 보여 줌 | 기록할 사실·수치·문턱값 미정 | 인준과 분쟁의 사건 기록만 표시 또는 별도 승인된 수치·고정 분류를 추가 | 개인 지지 변화가 고정 문턱 자체를 바꾸지 않는가? |
-| 작위·인준·전쟁 효과 | D10의 권리·수혜자 판단, D16의 명분·전쟁 종결, D17의 협상·정산을 연결 | 실제 작위·영역·상위 계약·인준기관·세부 종결 효과 미정 | 기관의 인정 문서로 권리 확정 또는 당사자 합의 후 별도 인준 | 공격자와 수혜자를 구별하고 계속 유효한 명분만 종결하는가? |
+| 직함·인준·전쟁 효과 | D10의 권리·수혜자 판단, D16의 명분·전쟁 종결, D17의 협상·정산을 연결 | 실제 직함·영역·상위 계약·인준기관·세부 종결 효과 미정 | 기관의 인정 문서로 권리 확정 또는 당사자 합의 후 별도 인준 | 공격자와 수혜자를 구별하고 계속 유효한 명분만 종결하는가? |
 | 무영토 조직 | 잔존 신원과 의무를 적법하게 처리 | 잔존 방향은 선택됐으나 대표·보관자·해산 절차 미정 | 기존 유효 대표 유지 또는 적법한 기관 절차로 제한 보관자 지정 | 사망·영토 상실만으로 삭제하지 않고 무권한 대표도 만들지 않는가? |
 | 조직 가치·정보 공개 | 지지 판단과 기록 열람을 설계 | 가치 목록은 제안이며 열람권 미정 | 공개 인준·공석만 표시 또는 권한별 상세 장부 공개; 가치 변화는 사건 기록과 별도 정책 개정으로 구분 | 이름 검색과 ID 동일성, 비공개 정보 경계가 유지되는가? |
 | 건강·파생 능력의 직위 자격 | 자격 제안자가 개인 계산을 기관 자격과 연결 | 원본 Basic 및 해당 계산 승인 없음 | 건강 수치 없이 독립 제도 자격만 사용 또는 원본과 계산 승인 후 별도 개인 결과를 읽음 | 공개 발췌·Lite로 원본을 대체하거나 미승인 점수를 넣지 않는가? |
 
 정통성 점수·시험 점수·정족수·대행 기간·새 비용은 승인된 숫자가 없다. 건강이나 파생 능력을 직위 자격에 사용할지, 사용한다면 어떤 기준으로 후보를 구분할지는 아직 정해지지 않았다.');
-INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.mechanism-design-index-d10', 'system-design', 'mechanism-design-index-d10', 'D10 Title, Rights, Justification, Ratification', 'D10 작위·권리·명분·인준', '', '', 'proposal', 117, 'system-design/mechanism-design-index-d10.md', '# D10 Title, Rights, Justification, Ratification
+INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.mechanism-design-index-d10', 'system-design', 'mechanism-design-index-d10', 'D10 Title, Rights, Justification, Ratification', 'D10 직함·권리·명분·인준', '', '', 'proposal', 117, 'system-design/mechanism-design-index-d10.md', '# D10 Title, Rights, Justification, Ratification
 
 ## Game Logic Overhaul Alignment Boundary
 
@@ -88757,11 +88757,11 @@ The player is a single main-body character, and NPCs follow the same action cont
 
 | Actor | Decisions Available | Separately Required Conditions |
 | --- | --- | --- |
-| Unaffiliated, Officeless Person | Request employment, joining, or mediation; request war support for one''s own claim | Joining first is required to receive a state fief grant; command authority is required to lead state troops |
+| Unaffiliated, Officeless Person | Request employment, joining, or mediation; request war support for one''s own claim | Joining first is required to receive a state station grant; command authority is required to lead state troops |
 | State-Affiliated, Officeless Person | Service or duty contracts under the institution; petitions for grants | Declaring war in the state''s name, disposing of public assets, and ratifying records require separate authority |
 | Claimant / Succession Candidate | Submit evidence, assert succession eligibility, request support, and be a candidate beneficiary of a casus belli | A claim in itself is not ownership, possession, or effective control |
 | Title Holder | Operation, income, and duties under the contract; claims for restoring rights; permitted sub-grants | Cannot immediately use facilities they do not possess, nor arbitrarily create titles of equal or higher rank |
-| Record, Notarization, and Genealogy Officer | Compose claims on the orders of a monarch or office holder with authority | Requires the relevant duty authority and accessible record, genealogy, and ratification channels; direct operation by an officeless main body is not adopted |
+| Record, Notarization, and Genealogy Officer | Compose claims on the orders of a faction leader or office holder with authority | Requires the relevant duty authority and accessible record, genealogy, and ratification channels; direct operation by an officeless main body is not adopted |
 | Head of State | Appointments, grant proposals, diplomacy, and war authorization under the state''s institutions | Does not gain another state''s ratification authority or an unconditional right of revocation |
 | Occupier | Security, supply, and negotiation within the area actually controlled | Occupation alone does not yield lawful inheritance, ownership of institutional treasuries, or the cooperation of residents |
 
@@ -88787,7 +88787,7 @@ Before an action, check in order: the target''s existence and version, feasibili
 
 Claim fabrication is divided into gathering and drafting evidence → composing the claim → recognition of its effect or rejection. Fabrication takes time, and only a structure that checks duration, cost, and risk of detection has been approved. Seoul''s numbers and success determinations are undecided. Completing a fabrication is neither possession nor a transfer of holding rights. If a death, dismissal, occupation, or loss of contact occurs between approval and execution, the remaining work is checked again. Even if it is canceled by a world event or the person in charge dies, materials already consumed and progress already completed are not reversed; only the remaining reservations are released according to the contract.
 
-A grant proceeds through draft → authority and target check → recipient consent → required confirmation or ratification → rights ledger change → operational takeover. One must join the state before receiving a grant, and a head may grant only titles lower than their own. The old limit of two directly held duke-tier titles was replaced by the v4 station master ladder (the ten-station tier is appointed). No new title is created where no actual title ID, domain, or rank exists. The holder is not changed before the required confirmation. If on-site takeover is blocked after confirmation, the result remains as rights held but not recovered, or takeover incomplete.
+A grant proceeds through draft → authority and target check → recipient consent → required confirmation or ratification → rights ledger change → operational takeover. One must join the state before receiving a grant, and a head may grant only titles lower than their own. The old limit of two directly held top-tier titles was replaced by the v4 station master ladder (the ten-station tier is appointed). No new title is created where no actual title ID, domain, or rank exists. The holder is not changed before the required confirmation. If on-site takeover is blocked after confirmation, the result remains as rights held but not recovered, or takeover incomplete.
 
 An established grant removes the right from the grantor''s list and registers the same title ID to the recipient. Delegation leaves the original holder in place and entrusts only specified operations, signing, or command. Appointment grants public office authority. Buildings, institutional vaults, public stockpiles, and unit command do not transfer automatically unless their inclusion is explicitly stated. Revocation requires contract clauses, evidence of violation, and a confirmation procedure. Unlawful seizure is not a normal grant but a change of control and a rights dispute.
 
@@ -88799,7 +88799,7 @@ Holding a casus belli does not grant authority to declare war, troops, or comman
 
 When supporting another person''s claim, the beneficiary named in that casus belli is the standard. The attacker is not given all the territory. The new holder and higher-level contracts are checked. A war refers to the casus belli version at the time it began, and if the grounds change, the voiding conditions of that casus belli are explicitly checked. Occupation outside the objectives does not widen the scope of transfer. Effective control, legal confirmation, title rights, public office, and personal property are independent. The transfer of rights at termination does not mean residents'' cooperation, restoration of facilities, or completed integration.
 
-War score W ranges from -100 to 100, and the opponent''s is -W. In a war between monarchs, the combat score is capped at 50. Capturing the actual head of that war is +100; capturing the designated primary, second, and third heirs is +50, +25, and +10; and occupying the capital is +10. For a single war or event ID, the addition applies only once, and the same person or the same event is not counted twice. An election candidate is not arbitrarily designated as the primary heir. +30 makes a white peace request possible but is not automatic acceptance. Voluntary surrender follows the result defined by each casus belli.
+War score W ranges from -100 to 100, and the opponent''s is -W. In a war between faction leaders, the combat score is capped at 50. Capturing the actual head of that war is +100; capturing the designated primary, second, and third heirs is +50, +25, and +10; and occupying the capital is +10. For a single war or event ID, the addition applies only once, and the same person or the same event is not counted twice. An election candidate is not arbitrarily designated as the primary heir. +30 makes a white peace request possible but is not automatic acceptance. Voluntary surrender follows the result defined by each casus belli.
 
 Occupation contribution is based on the scope and scale of the strongholds the defender holds. If full control of the casus belli''s objectives persists, cumulative contribution over time is gained, and if part of it is recovered, the conditions are checked again. Duration during which the attacker fails to secure the objectives contributes to the defending side. The denominator, partial occupation, duration, rate of increase, and peace acceptance modifiers are undecided. A tactical victory alone does not automatically dissolve an organization that holds no territory.
 
@@ -88831,9 +88831,9 @@ D10 covers the types of rights, claim states, and the boundaries of a casus bell
 
 The verified sources for CK3 are the preserved scripts of 1.20.0.3, build 25652598, and a community wiki from a separate point in time. Title hierarchy and de jure parents, actual holders, terrain, and offices are different scopes. A claim changes as a character–title relationship and is not evidence of a tradable inventory item. Fabrication leads, after work progress, to events, payments, and the granting of unpressed claims, and differs from occupation. A white peace strengthens only the weak claims on the target list, while defeat or surrender handles the corresponding claim. Title and vassal transactions from victory are separate from changes in occupation control. Automatic death inheritance, list storage, native enumeration, rounding, and active paths still have verification limits.
 
-Differences among CK3 sources are also retained. The wiki description of a fixed 20% for duchy fabrication is not the same as a conditional weighted branch. The old path of requesting from a religious head is distinguished as a pressed claim, while Buy Claim is distinguished as payment in faith resources and an unpressed claim, and differs from the path of buying things with gold. Partial costs of supporting another house''s claim are not read as the final war declaration cost. The powerful-vassal condition for creating an empire is ''at least half'' under the default-disabled rule, not an unconditional majority-ratification law. We do not write that the confirmed title-tier symbol mapping is ''unrecovered,'' but we also do not say that native automatic calculation has been confirmed. PAM requests, old requests, empire rules, and de jure changes are different paths. These figures, probabilities, and religious institutions are not transplanted into Seoul.
+Differences among CK3 sources are also retained. The wiki description of a fixed 20% for tier-3 claim fabrication is not the same as a conditional weighted branch. The old path of requesting from a religious head is distinguished as a pressed claim, while Buy Claim is distinguished as payment in faith resources and an unpressed claim, and differs from the path of buying things with gold. Partial costs of supporting another house''s claim are not read as the final war declaration cost. The powerful-vassal condition for creating an empire is ''at least half'' under the default-disabled rule, not an unconditional majority-ratification law. We do not write that the confirmed title-tier symbol mapping is ''unrecovered,'' but we also do not say that native automatic calculation has been confirmed. PAM requests, old requests, empire rules, and de jure changes are different paths. These figures, probabilities, and religious institutions are not transplanted into Seoul.
 
-Norland distinguishes the World 1284, Lords 1314, Actions 1318, and States 1262 wiki versions from individual beta/main developer announcements. Grant Title and recall are character roles, not Seoul''s grants of territorial titles. Region, city, and town terrain are not grantable legal titles. Gold plundering, relationship changes, and vassalization from ordinary city attacks are separate transitions, so victory is not read as ownership. Peace treaty expiration is not claim expiration, and lowborn and lesser lord are not the lowest tier of territorial titles. The emperor condition counts the number of states; it is not a title tier.
+Norland distinguishes the World 1284, Lords 1314, Actions 1318, and States 1262 wiki versions from individual beta/main developer announcements. Grant Title and recall are character roles, not Seoul''s grants of territorial titles. Region, city, and town terrain are not grantable legal titles. Gold plundering, relationship changes, and vassalization from ordinary city attacks are separate transitions, so victory is not read as ownership. Peace treaty expiration is not claim expiration, and lowborn and lesser retainer are not the lowest tier of territorial titles. The emperor condition counts the number of states; it is not a title tier.
 
 Norland''s vassal action restrictions, qualitative tribute dependence, and the order of demand, refusal, and victory are limited to their respective document versions. The Patches 54–56 MAIN announcement states that a neighboring state newly vassalized by a player cannot rebel for 3 in-game days. This is not a general protection that also prevents invasion or title recall. The timer start, refresh, native application, and correspondence to the actual build are unconfirmed. The Debt of Honor vassalization path in beta57 is separate evidence from a separate version. The pre-hire requirement in beta40 and the combined Hire and Grant Title command in beta54 are version changes. The inauguration occurring after a grant in main50–53 does not prove a transaction that requires legal ratification beforehand. Crown transfer and succession preservation are crown and role states, not a universal hierarchy of title rights. Tribute calculation, AI acceptance, hidden conditions, and the native application order are unconfirmed. Seoul''s pre-grant ratification is based on Seoul''s approval clause.
 
@@ -88853,7 +88853,7 @@ The following are alternatives for filling real gameplay gaps, and none of them 
 | Non-Bloodline Succession, Special Regimes, and Unaffiliated Armies | Only key figures under the actual institution correspond to the capture score | A: only registered institutional successors correspond to existing items; B: regimes with no correspondence get a separate effect approved. A minimizes misidentification, while B suits expressing non-hereditary institutions. | Correspondence inputs and separate effects are undecided. Election candidates are not arbitrarily made successors of a state. Check that the scope of claims on the lowest-tier title and the independent casus belli for each of the four tiers are also separately approved. |
 | T68-D11-CONTRACT-RECALL: Grant, Delegation, and Recall Handover | Distinguish legal rights from on-site takeover responsibility | A: staged handover after ratification; B: contractual takeover confirmation after ratification. A emphasizes visibility of on-site disputes, while B emphasizes tracing contractual responsibility. | Obligations, consent, expiration, costs, and recall conditions are undecided. Check that the original holder is retained upon delegation, that rights are preserved after the agent''s death, and that automatic transfer of treasuries and troops is prohibited. |
 
-The original Basic dependency judgment and the generation of personal combat in sieges and captures are not closed by these options. Organizing the approval structure so that it can be read, finalizing state-specific policies and figures, and completing implementation are different outcomes.', '# D10 작위·권리·명분·인준
+The original Basic dependency judgment and the generation of personal combat in sieges and captures are not closed by these options. Organizing the approval structure so that it can be read, finalizing state-specific policies and figures, and completing implementation are different outcomes.', '# D10 직함·권리·명분·인준
 
 ## 게임 로직 개편 정합 경계
 
@@ -88876,12 +88876,12 @@ The original Basic dependency judgment and the generation of personal combat in 
 | 무소속·무관직 인물 | 고용·가입·중재 요청, 자기 주장에 대한 전쟁 지원 요청 | 국가 영지 수여 수령에는 선행 가입; 국가 병력 지휘에는 지휘권 |
 | 국가 소속·무관직 인물 | 제도상 서비스·복무 계약, 수여 청원 | 국가 이름의 선전포고·공공 자산 처분·기록 인준은 별도 권한 |
 | 주장자·후계 후보 | 증거 제출·계승 자격 주장·지지 요청·명분의 수혜 후보 | 주장 자체는 보유권·점유·실효 지배가 아님 |
-| 작위 보유자 | 계약상 운영·수입·의무, 권리 회복 청구, 허용된 하위 수여 | 점유하지 못한 시설의 즉시 사용이나 동급·상급 작위 임의 창설은 불가 |
-| 기록·공증·계보 담당자 | 권한 있는 군주·직위권자의 명령으로 주장 구성 | 해당 업무 권한과 접근 가능한 기록·계보·인준 경로; 무관직 본체의 직접 조작은 미채택 |
+| 직함 보유자 | 계약상 운영·수입·의무, 권리 회복 청구, 허용된 하위 수여 | 점유하지 못한 시설의 즉시 사용이나 동급·상급 직함 임의 창설은 불가 |
+| 기록·공증·계보 담당자 | 권한 있는 세력 수장·직위권자의 명령으로 주장 구성 | 해당 업무 권한과 접근 가능한 기록·계보·인준 경로; 무관직 본체의 직접 조작은 미채택 |
 | 국가 수장 | 국가 제도상 임명·수여 제안·외교·전쟁 승인 | 타국 인준권이나 무조건 회수권은 생기지 않음 |
 | 점령자 | 실제 통제 범위의 경비·보급·협상 | 점령만으로 합법 상속·기관 금고 소유·주민 협력은 얻지 못함 |
 
-임명 지휘관은 자신에게 배정된 모든 분대에 대해 유효한 지휘 범위 안에서 명령한다. 개별 분대장은 하달을 즉시 수신하고 따름·일부 수행·독자 행동을 자율적으로 선택한다. 준수 여부와 실제 성과는 별도로 기록하며, 평가 주체는 명령을 보낸 원 발신 지휘관 인물이다. 지휘관이 교체되어도 기존 명령·평가·기억의 원 발신자와 이력을 보존하고 새 지휘관 권한으로 남은 명령을 재검사한다. 작위·공직 티어가 타 지휘관 부대의 지휘권을 만들지는 않는다. 진행 중인 전투에 실제 도착하는 어느 부대도 그 전투에 증원으로 참여할 수 있다. 승인 또는 발송만으로 현장에 나타나지 않으며 집계 경계·초기 편성·출발지·등급으로 증원 참가를 제한하지 않는다. 이는 권리 이전과 전투 참가를 혼동하지 않기 위한 연결 조건이다.
+임명 지휘관은 자신에게 배정된 모든 분대에 대해 유효한 지휘 범위 안에서 명령한다. 개별 분대장은 하달을 즉시 수신하고 따름·일부 수행·독자 행동을 자율적으로 선택한다. 준수 여부와 실제 성과는 별도로 기록하며, 평가 주체는 명령을 보낸 원 발신 지휘관 인물이다. 지휘관이 교체되어도 기존 명령·평가·기억의 원 발신자와 이력을 보존하고 새 지휘관 권한으로 남은 명령을 재검사한다. 직함·공직 티어가 타 지휘관 부대의 지휘권을 만들지는 않는다. 진행 중인 전투에 실제 도착하는 어느 부대도 그 전투에 증원으로 참여할 수 있다. 승인 또는 발송만으로 현장에 나타나지 않으며 집계 경계·초기 편성·출발지·등급으로 증원 참가를 제한하지 않는다. 이는 권리 이전과 전투 참가를 혼동하지 않기 위한 연결 조건이다.
 
 ## 2. 자격과 권리의 구분
 
@@ -88889,11 +88889,11 @@ The original Basic dependency judgment and the generation of personal combat in 
 
 | 주장 상태 | 이미 받아들여진 처리 | 아직 필요한 제도 |
 | --- | --- | --- |
-| 잠재 주장 | 현재 보유자 생존 중 정해진 계승 자격에 귀속 | 자녀 자격, 혈통 외 계승, 관직 후계와 작위 계승의 연결 |
+| 잠재 주장 | 현재 보유자 생존 중 정해진 계승 자격에 귀속 | 자녀 자격, 혈통 외 계승, 관직 후계와 직함 계승의 연결 |
 | 관철된 주장 | 정당한 계승·권리 회복의 근거; 보유자 사망 시 적격 자녀에게 미관철 주장으로 이어짐 | 적격 자녀, 국가별 인준·혼인·계승 예외 |
 | 미관철 주장 | 별도 상속하지 않음; 해당 주장 전쟁의 백지 강화로 관철된 주장으로 바뀜 | 주장 소멸·자격 상실·명분별 전쟁 무효 조건 |
 
-작위 보유권은 해당 작위의 계승 제도를 따른다. 공직 후보 자격·선거권·기술 자격은 작위 주장과 같은 종류가 아니다. 개인 관계가 좋아지거나 나빠지는 것은 지지·수락의 근거 변화이며 직위 티어 같은 고정 비교 분류의 경계가 변했다는 뜻이 아니다. 높은 신뢰도 물리적 불가능이나 권한 부재를 대신하지 못한다.
+직함 보유권은 해당 직함의 계승 제도를 따른다. 공직 후보 자격·선거권·기술 자격은 직함 주장과 같은 종류가 아니다. 개인 관계가 좋아지거나 나빠지는 것은 지지·수락의 근거 변화이며 직위 티어 같은 고정 비교 분류의 경계가 변했다는 뜻이 아니다. 높은 신뢰도 물리적 불가능이나 권한 부재를 대신하지 못한다.
 
 혼인은 국가별 정치·재산·계승 제도와 당사자 동의·인준을 따른다. 혼인 성립만으로 새 주장·영토를 지급하거나 배우자의 모든 주장을 공유하지 않는다. 배우자의 기존 주장 활용, 자녀의 주장 상속, 계승권과 별도의 주장 조작은 다른 경로다. 사망·구금·관직 상실 때 동맹·재산·인준·후계 효과마다 유지·종료·재인준을 검사한다.
 
@@ -88903,19 +88903,19 @@ The original Basic dependency judgment and the generation of personal combat in 
 
 주장 구성은 근거 수집·작성 → 주장 구성 → 효력 인정 또는 거절로 나뉜다. 조작은 시간이 걸리며 기간·비용·발각 위험을 검사하는 구조만 승인되어 있다. 서울의 수치·성공 판정은 미정이다. 조작 완료는 점유도 보유권 이전도 아니다. 승인과 실행 사이 사망·해임·점령·연락 두절이 생기면 남은 작업을 다시 검사한다. 세계 사건으로 취소되거나 담당자가 죽어도 이미 소비한 물자와 완료한 진척은 되돌리지 않고 남은 예약만 계약에 따라 해제한다.
 
-수여는 초안 → 권한·대상 검사 → 수령자 동의 → 필요한 인준·비준 → 권리 원장 변경 → 운영 인수로 진행한다. 수여 받기 전 국가에 가입해야 하고 수장은 자신보다 낮은 작위만 나눈다. 옛 직접 보유 공작급 둘 제한은 v4 역장 계층으로 대체했다(10명 단계는 임명제). 실제 작위 ID·영역·등급이 없는 곳에 새 작위를 만들지 않는다. 필요한 인준 전에 보유자를 바꾸지 않는다. 인준 후 현장 인수가 막히면 권리 보유·미회복 또는 인수 미완으로 남긴다.
+수여는 초안 → 권한·대상 검사 → 수령자 동의 → 필요한 인준·비준 → 권리 원장 변경 → 운영 인수로 진행한다. 수여 받기 전 국가에 가입해야 하고 수장은 자신보다 낮은 직함만 나눈다. 옛 직접 보유 상위 둘 제한은 v4 역장 계층으로 대체했다(10명 단계는 임명제). 실제 직함 ID·영역·등급이 없는 곳에 새 직함을 만들지 않는다. 필요한 인준 전에 보유자를 바꾸지 않는다. 인준 후 현장 인수가 막히면 권리 보유·미회복 또는 인수 미완으로 남긴다.
 
-성립한 수여는 수여자의 목록에서 권리를 빼고 수령자에게 같은 작위 ID를 등록한다. 위임은 원 보유자를 남기고 정해진 운영·서명·지휘만 맡긴다. 임명은 공직 권한을 준다. 건물·기관 금고·공공 재고·부대 지휘는 포함 여부가 명시되지 않으면 자동 이전하지 않는다. 회수에는 계약 조항·위반 증거·인준 절차가 필요하다. 불법 강탈은 정상 수여가 아니라 통제 변경과 권리 분쟁이다.
+성립한 수여는 수여자의 목록에서 권리를 빼고 수령자에게 같은 직함 ID를 등록한다. 위임은 원 보유자를 남기고 정해진 운영·서명·지휘만 맡긴다. 임명은 공직 권한을 준다. 건물·기관 금고·공공 재고·부대 지휘는 포함 여부가 명시되지 않으면 자동 이전하지 않는다. 회수에는 계약 조항·위반 증거·인준 절차가 필요하다. 불법 강탈은 정상 수여가 아니라 통제 변경과 권리 분쟁이다.
 
-본체 교체, 국가·기관 수장 교체, 개별 작위·재산 계승은 별도 사건이다. 적법한 절차가 같은 살아 있는 인물을 다시 선정하는 일도 사망 상속이 아니다. 영구 구금으로 본체가 바뀌어도 구금자는 살아 있다. 새 본체에게 이전 본체의 권리·권한·기술·친구를 복사하지 않는다. 대리인의 죽음은 원 보유자의 권리를 없애지 않는다. 공석은 국가·기관의 자동 소멸이 아니다.
+본체 교체, 국가·기관 수장 교체, 개별 직함·재산 계승은 별도 사건이다. 적법한 절차가 같은 살아 있는 인물을 다시 선정하는 일도 사망 상속이 아니다. 영구 구금으로 본체가 바뀌어도 구금자는 살아 있다. 새 본체에게 이전 본체의 권리·권한·기술·친구를 복사하지 않는다. 대리인의 죽음은 원 보유자의 권리를 없애지 않는다. 공석은 국가·기관의 자동 소멸이 아니다.
 
 ## 4. 명분, 전쟁 점수와 협상
 
-명분 보유는 선전포고 권한·병력·지휘권을 주지 않는다. 모든 전쟁은 개시 시 유효하게 등록된 명분을 요구한다. 행위자 권한, 상대, 대상 작위·영역, 수혜자, 자격, 비용, 목표, 공격 승리·방어 승리·백지 강화·항복·무효 효과를 확정한다. 인정된 권리 회복, 적격 타인 주장 지원, 승인된 상위 계약 의무 위반 구제는 등록 검토 묶음이지 완성된 명분 목록이 아니다. 개인 빚·통행 분쟁·배급 중단을 자동 정복 명분으로 만들지 않는다.
+명분 보유는 선전포고 권한·병력·지휘권을 주지 않는다. 모든 전쟁은 개시 시 유효하게 등록된 명분을 요구한다. 행위자 권한, 상대, 대상 직함·영역, 수혜자, 자격, 비용, 목표, 공격 승리·방어 승리·백지 강화·항복·무효 효과를 확정한다. 인정된 권리 회복, 적격 타인 주장 지원, 승인된 상위 계약 의무 위반 구제는 등록 검토 묶음이지 완성된 명분 목록이 아니다. 개인 빚·통행 분쟁·배급 중단을 자동 정복 명분으로 만들지 않는다.
 
-타인의 주장을 지원하면 그 명분에 적힌 수혜자가 기준이다. 공격자에게 모든 영토를 주지 않는다. 새 보유자와 상위 계약을 검사한다. 전쟁은 개시 당시 명분 판본을 참조하며 근거가 바뀌면 그 명분의 무효 조건을 명시적으로 검사한다. 목표 밖 점령은 이전 범위를 넓히지 않는다. 실효 지배·법적 인준·작위 권리·공직·개인 재산은 독립한다. 종결의 권리 이전이 주민 협력·시설 복구·통합 완료를 뜻하지 않는다.
+타인의 주장을 지원하면 그 명분에 적힌 수혜자가 기준이다. 공격자에게 모든 영토를 주지 않는다. 새 보유자와 상위 계약을 검사한다. 전쟁은 개시 당시 명분 판본을 참조하며 근거가 바뀌면 그 명분의 무효 조건을 명시적으로 검사한다. 목표 밖 점령은 이전 범위를 넓히지 않는다. 실효 지배·법적 인준·직함 권리·공직·개인 재산은 독립한다. 종결의 권리 이전이 주민 협력·시설 복구·통합 완료를 뜻하지 않는다.
 
-전쟁 점수 W는 -100~100이며 상대는 -W다. 군주 사이 전쟁의 전투 점수는 최대 50이다. 실제 그 전쟁의 수장 포획은 +100, 지정 주·두 번째·세 번째 후계 포획은 +50·+25·+10, 수도 점령은 +10이다. 한 전쟁·사건 ID의 가산은 한 번이며 같은 인물·같은 사건을 중복하지 않는다. 선거 후보를 임의로 주 후계로 지정하지 않는다. +30은 백지 강화 요청 가능이지 자동 수락이 아니다. 자발 항복은 명분별 결과를 따른다.
+전쟁 점수 W는 -100~100이며 상대는 -W다. 세력 수장 사이 전쟁의 전투 점수는 최대 50이다. 실제 그 전쟁의 수장 포획은 +100, 지정 주·두 번째·세 번째 후계 포획은 +50·+25·+10, 수도 점령은 +10이다. 한 전쟁·사건 ID의 가산은 한 번이며 같은 인물·같은 사건을 중복하지 않는다. 선거 후보를 임의로 주 후계로 지정하지 않는다. +30은 백지 강화 요청 가능이지 자동 수락이 아니다. 자발 항복은 명분별 결과를 따른다.
 
 점령 기여는 방어자의 보유 거점 범위·규모를 기준으로 한다. 명분 목표의 전체 지배가 지속되면 시간 누적 기여를 얻고 일부 회복 시 조건을 다시 검사한다. 공격자가 목표를 확보하지 못한 지속 시간은 방어측에 기여한다. 분모·부분 점령·기간·증가율과 강화 수락 보정은 미정이다. 전술 승리만으로 영토 없는 조직을 자동 소멸시키지 않는다.
 
@@ -88945,13 +88945,13 @@ D10은 권리 종류·주장 상태·명분의 대상과 수혜자 경계를 다
 
 ## 7. 두 원작의 확인된 구조와 서울과의 차이
 
-CK3의 확인 자료는 1.20.0.3, build 25652598의 보존 스크립트와 별도 시점의 커뮤니티 위키다. 작위 위계·de jure 부모, 실제 보유자, 지형과 공직은 다른 범위다. 주장은 인물–작위 관계로 변하며 거래 가능한 재고 아이템이라는 증거는 아니다. 조작은 작업 진척 뒤 사건·지불·미관철 주장 부여로 이어지며 점유와 다르다. 백지 강화는 대상 목록의 약한 주장만 강화하고 패배·포기는 해당 주장을 처리한다. 승리의 작위·봉신 거래는 점령 통제 변경과 별도다. 자동 사망 상속·목록 저장·native 열거·반올림·활성 경로는 여전히 확인 한계가 있다.
+CK3의 확인 자료는 1.20.0.3, build 25652598의 보존 스크립트와 별도 시점의 커뮤니티 위키다. 직함 위계·de jure 부모, 실제 보유자, 지형과 공직은 다른 범위다. 주장은 인물–직함 관계로 변하며 거래 가능한 재고 아이템이라는 증거는 아니다. 조작은 작업 진척 뒤 사건·지불·미관철 주장 부여로 이어지며 점유와 다르다. 백지 강화는 대상 목록의 약한 주장만 강화하고 패배·포기는 해당 주장을 처리한다. 승리의 직함·봉신 거래는 점령 통제 변경과 별도다. 자동 사망 상속·목록 저장·native 열거·반올림·활성 경로는 여전히 확인 한계가 있다.
 
-CK3 자료 사이의 차이도 남긴다. 공작령 조작의 고정 20%라는 위키 설명은 조건부 가중치 분기와 같지 않다. 종교 수장에게 요청하는 구 경로는 관철 주장, Buy Claim은 신앙 자원 지불과 미관철 주장으로 구분되며 금화로 물건을 사는 경로와 다르다. 타 가문 주장 지원의 부분 비용을 최종 선전포고 비용으로 읽지 않는다. 제국 생성의 강력 봉신 조건은 기본 비활성 규칙에서 절반 이상이지 무조건 과반 인준법이 아니다. 확인된 작위 티어 기호 대응을 ‘미복구’라고 적지 않되 native 자동 계산이 확인되었다고도 하지 않는다. PAM 요청·구 요청·제국 규칙·de jure 변경은 다른 경로다. 이 수치·확률·종교 제도를 서울에 이식하지 않는다.
+CK3 자료 사이의 차이도 남긴다. 3단계 영역 주장 조작의 고정 20%라는 위키 설명은 조건부 가중치 분기와 같지 않다. 종교 수장에게 요청하는 구 경로는 관철 주장, Buy Claim은 신앙 자원 지불과 미관철 주장으로 구분되며 금화로 물건을 사는 경로와 다르다. 타 가문 주장 지원의 부분 비용을 최종 선전포고 비용으로 읽지 않는다. 제국 생성의 강력 봉신 조건은 기본 비활성 규칙에서 절반 이상이지 무조건 과반 인준법이 아니다. 확인된 직함 티어 기호 대응을 ‘미복구’라고 적지 않되 native 자동 계산이 확인되었다고도 하지 않는다. PAM 요청·구 요청·제국 규칙·de jure 변경은 다른 경로다. 이 수치·확률·종교 제도를 서울에 이식하지 않는다.
 
-Norland는 World 1284, Lords 1314, Actions 1318, States 1262 위키 판본과 개별 beta/main 개발자 발표를 구분한다. Grant Title·회수는 인물 역할이며 서울의 영토 작위 수여가 아니다. 지역·도시·마을 지형은 수여 가능한 법적 작위가 아니다. 일반 도시 공격의 금화 약탈·관계 변화와 봉신화는 별도 전이이므로 승리를 소유권으로 읽지 않는다. 평화조약 만료는 주장 만료가 아니며 lowborn·lesser lord는 영토 작위 최하위 등급이 아니다. 황제 조건은 주 수를 세는 조건이지 작위 티어가 아니다.
+Norland는 World 1284, Lords 1314, Actions 1318, States 1262 위키 판본과 개별 beta/main 개발자 발표를 구분한다. Grant Title·회수는 인물 역할이며 서울의 영토 직함 수여가 아니다. 지역·도시·마을 지형은 수여 가능한 법적 직함이 아니다. 일반 도시 공격의 금화 약탈·관계 변화와 봉신화는 별도 전이이므로 승리를 소유권으로 읽지 않는다. 평화조약 만료는 주장 만료가 아니며 lowborn·lesser retainer는 영토 직함 최하위 등급이 아니다. 황제 조건은 주 수를 세는 조건이지 직함 티어가 아니다.
 
-Norland의 봉신 행동 제한·질적 조공 의존과 요구·거절·승리 순서는 각각의 문서 판본에 한정한다. Patches 54–56 MAIN 발표는 플레이어가 새로 봉신화한 이웃 주가 게임 내 3일 동안 반란을 일으킬 수 없다고 명시한다. 이는 침공·작위 회수까지 막는 일반 보호가 아니다. 타이머 시작·갱신·native 적용과 실제 build 대응은 미확인이다. beta57의 Debt of Honor 봉신화 경로는 별도 판본의 별도 근거다. beta40의 사전 고용 요구와 beta54의 Hire and Grant Title 결합 명령은 버전 변경이다. main50–53의 수여 후 취임식 발생은 법적 인준이 선행해야 하는 거래를 입증하지 않는다. 왕관 이전·후계 보존은 왕관·역할 상태이지 보편적 작위 권리 계층이 아니다. 조공 계산·AI 수락·숨은 조건·native 적용 순서는 미확인이다. 서울의 수여 전 인준은 서울 승인 조항에 근거한다.
+Norland의 봉신 행동 제한·질적 조공 의존과 요구·거절·승리 순서는 각각의 문서 판본에 한정한다. Patches 54–56 MAIN 발표는 플레이어가 새로 봉신화한 이웃 주가 게임 내 3일 동안 반란을 일으킬 수 없다고 명시한다. 이는 침공·직함 회수까지 막는 일반 보호가 아니다. 타이머 시작·갱신·native 적용과 실제 build 대응은 미확인이다. beta57의 Debt of Honor 봉신화 경로는 별도 판본의 별도 근거다. beta40의 사전 고용 요구와 beta54의 Hire and Grant Title 결합 명령은 버전 변경이다. main50–53의 수여 후 취임식 발생은 법적 인준이 선행해야 하는 거래를 입증하지 않는다. 통치권 이전·후계 보존은 통치권·역할 상태이지 보편적 직함 권리 계층이 아니다. 조공 계산·AI 수락·숨은 조건·native 적용 순서는 미확인이다. 서울의 수여 전 인준은 서울 승인 조항에 근거한다.
 
 ## 8. 미승인 선택안: 용도·이상·공백·이유·QA
 
@@ -88959,14 +88959,14 @@ Norland의 봉신 행동 제한·질적 조공 의존과 요구·거절·승리 
 
 | 질문과 용도 | 이상적인 결과 | 구체적 대안과 선택 이유 | 남은 공백·확인 사례(QA) |
 | --- | --- | --- | --- |
-| GP-07·국가 제도: 수여·인준 대상 확정 | 현재 작위와 관할 기관이 명료함 | A: 국가별 중앙 등록부 인준, B: 해당 권역 기관 인준. A는 충돌 비교가 쉽고 B는 분권 제도를 표현함 | 실제 ID·영역·보유자·상위 계약·기관 미정. 옛 등록부와 현재 통제가 다를 때 각각 표시하고 없는 ID를 생성하지 않는지 확인 |
-| GP-09·국가별 가족법: 잠재·상속 주장 적격자 | 주장 경로와 공직·재산 자격이 혼동되지 않음 | A: 국가가 인정한 자녀 중 해당 작위법상 적격자, B: 자녀 관계 인정 후 별도 작위 인준으로 적격 확정. A는 절차가 단순하고 B는 가족법과 권리법을 분리함 | 친자·양자·동의·혼인·혈통 외 승계 규정 미정. 두 대안 모두 관철→미관철 자녀 경로와 미관철 비상속을 보존; 배우자 자동 공유 금지 확인 |
-| T68-D09-COUNTRY-LAWS·국가 제도(미승인): 선거 공석·인준·섭정·대행 권한 처리 | 유권자·후보·회의 성립·동률 처리·정통성 근거를 확인하고 임시 권한과 정식 보유권을 구분함 | A: 국가별 유권 명부의 대표가 회의 성립 요건을 확인해 선출하고 동률이면 재선출 절차로 돌리며, 등록 대행자는 명시된 보존·인도 업무만 수행. B: 국가별 적격 대표 회의가 후보를 추대하고 별도 인준기관이 동률 분쟁을 심사하며, 등록 섭정은 명시된 위임 업무만 수행. A는 선거 책임 추적, B는 선출과 인준의 분리를 중시함. 두 안 모두 국가별 기존 선거·세습·지명 방식을 대신 채택하지 않음 | 실제 유권자·후보 명부, 회의 성립·정족수 규칙, 동률 해결 주체·절차, 섭정·대행 등록·종료·서명 범위, 인준·정통성의 증거와 효력 미정. 정족수 숫자·정통성 문턱·국가법을 발명하지 않음. QA: 유권자 누락·회의 불성립·동률에는 정식 권리 이전이 성립했다고 쓰지 않는지; 공석에도 기관 존속을 보존하는지; 등록 대행자가 범위 밖 수여·전쟁 승인을 요청하면 권한 검사가 막는지; 섭정 인준이 개인 재산·작위 자동 이전으로 바뀌지 않는지 확인 |
+| GP-07·국가 제도: 수여·인준 대상 확정 | 현재 직함과 관할 기관이 명료함 | A: 국가별 중앙 등록부 인준, B: 해당 권역 기관 인준. A는 충돌 비교가 쉽고 B는 분권 제도를 표현함 | 실제 ID·영역·보유자·상위 계약·기관 미정. 옛 등록부와 현재 통제가 다를 때 각각 표시하고 없는 ID를 생성하지 않는지 확인 |
+| GP-09·국가별 가족법: 잠재·상속 주장 적격자 | 주장 경로와 공직·재산 자격이 혼동되지 않음 | A: 국가가 인정한 자녀 중 해당 직함법상 적격자, B: 자녀 관계 인정 후 별도 직함 인준으로 적격 확정. A는 절차가 단순하고 B는 가족법과 권리법을 분리함 | 친자·양자·동의·혼인·혈통 외 승계 규정 미정. 두 대안 모두 관철→미관철 자녀 경로와 미관철 비상속을 보존; 배우자 자동 공유 금지 확인 |
+| T68-D09-COUNTRY-LAWS·국가 제도(미승인): 선거 공석·인준·섭정·대행 권한 처리 | 유권자·후보·회의 성립·동률 처리·정통성 근거를 확인하고 임시 권한과 정식 보유권을 구분함 | A: 국가별 유권 명부의 대표가 회의 성립 요건을 확인해 선출하고 동률이면 재선출 절차로 돌리며, 등록 대행자는 명시된 보존·인도 업무만 수행. B: 국가별 적격 대표 회의가 후보를 추대하고 별도 인준기관이 동률 분쟁을 심사하며, 등록 섭정은 명시된 위임 업무만 수행. A는 선거 책임 추적, B는 선출과 인준의 분리를 중시함. 두 안 모두 국가별 기존 선거·세습·지명 방식을 대신 채택하지 않음 | 실제 유권자·후보 명부, 회의 성립·정족수 규칙, 동률 해결 주체·절차, 섭정·대행 등록·종료·서명 범위, 인준·정통성의 증거와 효력 미정. 정족수 숫자·정통성 문턱·국가법을 발명하지 않음. QA: 유권자 누락·회의 불성립·동률에는 정식 권리 이전이 성립했다고 쓰지 않는지; 공석에도 기관 존속을 보존하는지; 등록 대행자가 범위 밖 수여·전쟁 승인을 요청하면 권한 검사가 막는지; 섭정 인준이 개인 재산·직함 자동 이전으로 바뀌지 않는지 확인 |
 | T68-D10-RIGHTS-LIFECYCLE: 양도·소멸 | 권리별 효력 이유와 현재 명분 유효성을 설명 가능 | A: 근거 소멸 사건별 심사, B: 권리 종류별 갱신 심사와 근거 소멸 재검사. A는 불필요한 기한을 피하고 B는 기록 갱신 제도를 표현함 | 양도 가능 종류·상속 예외·만료 기간·인준기관 미정. 소멸과 +100이 겹치면 유효성 먼저 검사; 공통 성공 판정·공통 TTL을 만들지 않는지 확인 |
 | 주장 구성의 기간·비용·위험과 중단 진척 | 기록 접근·담당 권한과 실제 비용이 연결됨 | A: 인준 단계별 비용과 후임의 기존 기록 재검사, B: 작업 계약 전체 비용과 인수 승인 후 잔여 작업 수행. A는 단계 책임, B는 계약 예측성을 중시함 | 금액·기간·발각 효과·후임 인수 조건 미정. 무관직 직접 조작 차단, 이미 소비·완료 보존, 미완료를 권리로 바꾸지 않음 확인 |
 | GP-13: 명분·협상·휴전·배상 | 강제 범위와 자발 거래를 비교 가능 | A: 명분별 항목 가격표, B: 국가별 평가표를 명분 판본에 고정. A는 비교 일관성, B는 제도 차이를 표현함 | 명분 등록·비용·휴전·배상·수락 보정 미정. V≤W 자동 수락 금지, 미등록 항목 서명 차단, 수혜자와 공격자 구분 확인 |
-| 점령·목표 시간 점수 | 통제 회복과 점수 근거를 설명 가능 | A: 승인 거점별 기여 합, B: 승인 규모 가중 기여 합. A는 거점 비교, B는 규모 차이 표현에 적합함 | 분모·부분 점령·기간·증가율 미정. 목표 일부 회복 시 누적 조건 재검사, 군주 간 전투 상한 50 보존 확인 |
-| 혈통 외 후계·특수 체제·무소속 군대 | 실제 제도상 핵심 인물만 포로 점수에 대응 | A: 등록된 제도상 후계만 기존 항목에 대응, B: 대응이 없는 체제는 별도 효과를 승인받음. A는 오인 최소화, B는 비세습 제도 표현에 적합함 | 대응 입력과 별도 효과 미정. 선거 후보를 임의 주 후계로 만들지 않음; 최하위 작위 주장 범위·네 등급별 독립 명분도 별도 승인 확인 |
+| 점령·목표 시간 점수 | 통제 회복과 점수 근거를 설명 가능 | A: 승인 거점별 기여 합, B: 승인 규모 가중 기여 합. A는 거점 비교, B는 규모 차이 표현에 적합함 | 분모·부분 점령·기간·증가율 미정. 목표 일부 회복 시 누적 조건 재검사, 세력 수장 간 전투 상한 50 보존 확인 |
+| 혈통 외 후계·특수 체제·무소속 군대 | 실제 제도상 핵심 인물만 포로 점수에 대응 | A: 등록된 제도상 후계만 기존 항목에 대응, B: 대응이 없는 체제는 별도 효과를 승인받음. A는 오인 최소화, B는 비세습 제도 표현에 적합함 | 대응 입력과 별도 효과 미정. 선거 후보를 임의 주 후계로 만들지 않음; 최하위 직함 주장 범위·네 등급별 독립 명분도 별도 승인 확인 |
 | T68-D11-CONTRACT-RECALL: 수여·위임·회수 인도 | 법적 권리와 현장 인수 책임을 구분 | A: 인준 후 단계별 인도, B: 인준 후 계약상 인수 확인. A는 현장 분쟁 가시성, B는 계약 책임 추적을 중시함 | 의무·동의·만료·비용·회수 조건 미정. 위임 시 원 보유자 유지, 대리인 사망 후 권리 보존, 금고·병력 자동 이전 금지 확인 |
 
 원본 Basic 의존 판정이나 공성·포획의 개인 전투 생성은 이 선택안으로 닫지 않는다. 승인 구조를 읽을 수 있게 정리한 것과 국가별 정책·수치 확정, 구현 완료는 서로 다른 결과다.');
@@ -88991,7 +88991,7 @@ Notation rules. Each paragraph of this document carries one of the following.
 
 The Crusader Kings III (hereafter CK3) and Norland records in Chapter 11 are **comparisons against installed scripts, documents, and announcements**, not observations of engine execution. Neither side''s figures have been adopted as Seoul''s coefficients, probabilities, or formulas.
 
-The old numerical limit on grants, the **limit of two directly held duke-tier titles**, was replaced by the v4 station master ladder. The ten-station tier (Commissioner, Cardinal, Director) is granted only by its appointing authority (the President, the Hierophant, the board). Costs, durations, and probabilities not yet decided are not filled in with implicit values.
+The old numerical limit on grants, the **limit of two directly held top-tier titles**, was replaced by the v4 station master ladder. The ten-station tier (Commissioner, Cardinal, Director) is granted only by its appointing authority (the President, the Hierophant, the board). Costs, durations, and probabilities not yet decided are not filled in with implicit values.
 
 ## 1. What This Domain Covers
 
@@ -89072,7 +89072,7 @@ Draft → authority/target check → recipient''s consent → ratification/appro
 
 Once ratification is recorded, that title identifier is removed from the grantor''s holdings and registered in the recipient''s list **under the same identifier**. No copy is created. Subordinate contracts, taxes/water supply/passage, and ritual obligations record the signatory and the succession policy. Buildings, institutional treasuries, public stockpiles, and unit command are not transferred automatically unless the inclusion of each is stated. Even included targets must satisfy the relevant ownership and transfer authority and contract. Taking over management, use, and command authority differs from transferring ownership, and without an actual rights input for the target, the transfer is not confirmed.
 
-The ledger of title holdings, rights, obligations, and superior contracts and the effective-control ledger are independent. The two ledgers display unrecovered fiefs, disputes, and occupants together. A claim to a title differs from holding the title, and a claim is not converted into a grant.
+The ledger of title holdings, rights, obligations, and superior contracts and the effective-control ledger are independent. The two ledgers display unrecovered stations, disputes, and occupants together. A claim to a title differs from holding the title, and a claim is not converted into a grant.
 
 ### 5.3 State of a Delegation 【Approved】
 
@@ -89196,7 +89196,7 @@ The title grant script declares the gates for actor, recipient, and selected tit
 
 ### 11.2 Norland
 
-In the documentation, Grant/Revoke adds or removes lord status, and Pass Crown changes king status. The investiture ritual is described as coming after the grant. These roles and events are not equivalent to Seoul''s transferable territorial title ledger or the pre-grant confirmation gate. The vassal demand acceptance, refusal, and war outcomes, as well as the rules for tribute, puppets, and hostages, are likewise read only within the scope of that document version''s description. A hostage joining a city or a seizure by force does not prove a lawful transfer of title ownership.
+In the documentation, Grant/Revoke adds or removes retainer status, and Pass Crown changes ruler status. The investiture ritual is described as coming after the grant. These roles and events are not equivalent to Seoul''s transferable territorial title ledger or the pre-grant confirmation gate. The vassal demand acceptance, refusal, and war outcomes, as well as the rules for tribute, puppets, and hostages, are likewise read only within the scope of that document version''s description. A hostage joining a city or a seizure by force does not prove a lawful transfer of title ownership.
 
 ## 12. Still Undecided
 
@@ -89244,7 +89244,7 @@ The grant cost, delegation duration, revocation deadline, number of vassal evalu
 
 [설계 길잡이](/gdd/system-design/mechanism-design-index/) · [상황과 사례](/gdd/system-design/domain-situations/) · [시트와 계산](/gdd/system-design/character-sheet-formulas/)
 
-- 기존 수여·봉신·작위 권리 규칙의 확정 범위를 설명한다. 아직 정하지 않은 제도·계약·수량과 식은 12장에 남겨 둔다.
+- 기존 수여·봉신·직함 권리 규칙의 확정 범위를 설명한다. 아직 정하지 않은 제도·계약·수량과 식은 12장에 남겨 둔다.
 
 표기 규칙. 이 문서의 단락에는 다음 중 하나가 붙는다.
 
@@ -89253,23 +89253,23 @@ The grant cost, delegation duration, revocation deadline, number of vassal evalu
 
 11장의 Crusader Kings III(이하 CK3)와 Norland 기록은 **설치 스크립트·문서·공지에 대한 대조**이며, 엔진 실행 관측이 아니다. 어느 쪽 수치도 서울의 계수·확률·공식으로 채택되지 않았다.
 
-수여의 수치 한도였던 옛 **직접 보유 공작급 작위 둘 제한**은 v4 역장 계층으로 대체했다. 10명 단계(청장·추기경·이사)는 임명권자(대통령·교주·이사회)만 준다. 아직 정하지 않은 비용·기간·확률은 묵시적인 값으로 채우지 않는다.
+수여의 수치 한도였던 옛 **직접 보유 상위 직함 둘 제한**은 v4 역장 계층으로 대체했다. 10명 단계(청장·추기경·이사)는 임명권자(대통령·교주·이사회)만 준다. 아직 정하지 않은 비용·기간·확률은 묵시적인 값으로 채우지 않는다.
 
 ## 1. 이 도메인이 다루는 것
 
-이 문서는 **작위와 공직 권한을 어떻게 나누고, 맡기고, 되돌리는가, 그리고 봉신 관계를 어떤 계약으로 성립시키는가**를 다룬다. 한 플레이어는 한 본체 인물을 통해 캠페인을 이어 가고, 세계의 다른 인물은 같은 행동 계약을 쓰는 NPC다. 수여·임명·위임·회수는 모두 그 본체가 실제로 가진 권한으로만 제안할 수 있고, 화면을 바꿔 시간을 되돌리거나 본체를 복제하지 않는다. 세계 시간은 하나다.
+이 문서는 **직함과 공직 권한을 어떻게 나누고, 맡기고, 되돌리는가, 그리고 봉신 관계를 어떤 계약으로 성립시키는가**를 다룬다. 한 플레이어는 한 본체 인물을 통해 캠페인을 이어 가고, 세계의 다른 인물은 같은 행동 계약을 쓰는 NPC다. 수여·임명·위임·회수는 모두 그 본체가 실제로 가진 권한으로만 제안할 수 있고, 화면을 바꿔 시간을 되돌리거나 본체를 복제하지 않는다. 세계 시간은 하나다.
 
 이 문서는 아래의 이미 승인된 정책을 실제 플레이 판단에 쓸 수 있게 다시 적은 것이다. 각 항목은 해당 승인 결정에 귀속한다.
 
-- 네 가지 초안의 구분: 수여는 작위 권리의 보유자를 바꾸고, 임명은 공직 권한을 주며, 위임은 원 보유자를 그대로 두고 적힌 운영·서명·지휘만 맡기고, 회수는 이미 있는 계약의 회수 조항·위반 증거·인준을 요구하는 제안이다.
+- 네 가지 초안의 구분: 수여는 직함 권리의 보유자를 바꾸고, 임명은 공직 권한을 주며, 위임은 원 보유자를 그대로 두고 적힌 운영·서명·지휘만 맡기고, 회수는 이미 있는 계약의 회수 조항·위반 증거·인준을 요구하는 제안이다.
 - 관문의 순서: 수령자의 동의와 나라의 인준이 있기 전에는 보유자가 바뀌지 않는다.
-- 수여 한도: 수여자는 자기보다 낮은 작위만 나누고, 10명 단계 직위는 임명권자(대통령·교주·이사회)만 준다. 실제 작위 식별·영역·등급이 없는 곳에는 작위를 만들지 않는다.
+- 수여 한도: 수여자는 자기보다 낮은 직함만 나누고, 10명 단계 직위는 임명권자(대통령·교주·이사회)만 준다. 실제 직함 식별·영역·등급이 없는 곳에는 직함을 만들지 않는다.
 - 소속 요건: 기존 나라의 수여를 받으려면 수령자가 이미 그 나라의 소속원이어야 한다.
-- 축의 분리: 직위·작위·실효 지배·지휘·재산은 서로 다른 축이고, 직위 티어는 비교용 분류일 뿐이다.
+- 축의 분리: 직위·직함·실효 지배·지휘·재산은 서로 다른 축이고, 직위 티어는 비교용 분류일 뿐이다.
 - 포함 명시의 원칙: 건물·기관 금고·공공 재고·부대 지휘는 포함 여부를 명시하지 않으면 자동 이전하지 않는다. 포함이라고 적는 것은 필요한 범위 선언일 뿐, 양도 권한의 증명이 아니다. 각 대상의 소유·관리·사용·지휘 권리와 유효한 이전 권한을 따로 검사한다. 기관 금고를 포함했다고 개인 재산으로 바꿀 수 없다.
-- 원장의 분리: 작위 보유·권리·의무·상위 계약 원장과 실효 지배 원장은 독립하며, 점령·양도는 현장 통제만 바꾼다.
+- 원장의 분리: 직함 보유·권리·의무·상위 계약 원장과 실효 지배 원장은 독립하며, 점령·양도는 현장 통제만 바꾼다.
 - 봉신 계약의 실체: 봉신은 국가 관계 수치가 아니라 서명자와 조항을 가진 계약으로 성립한다.
-- 충돌의 해소: 같은 판본에서 같은 작위에 두 수여가 겹치면 결정론적 수락 순서로 하나만 받는다.
+- 충돌의 해소: 같은 판본에서 같은 직함에 두 수여가 겹치면 결정론적 수락 순서로 하나만 받는다.
 - 식별자와 판본의 의무: 식별자는 영구하고, 개정 충돌과 저장 오류는 명시하며, 자동 재번호·자동 이전·침묵의 규칙 혼합을 하지 않는다.
 
 정책을 점수·비용·기간으로 환산하는 값은 승인되지 않았다. 수여의 비용, 위임의 기간, 회수의 기한, 봉신의 평가·의무를 나타내는 수는 없다. 【미결】 항목들은 12장에서 결정 대기 상태로 다룬다.
@@ -89280,26 +89280,26 @@ The grant cost, delegation duration, revocation deadline, number of vassal evalu
 | --- | --- |
 | 본체 인물(플레이어) | 자기가 실제로 가진 수여 권한, 공직의 서명 권한, 또는 유효한 지휘 권한으로만 초안을 만들고 승인을 제안한다 |
 | NPC(다른 모든 인물) | 본체와 같은 행동 계약을 쓴다. 수여자·수령자·대리인·인준 참여자 모두 이 계약 안에서 움직인다 |
-| 수여자(수여 권한을 가진 소속원) | 초안을 만든다. 자기보다 낮은 작위만 나누고, 10명 단계 직위는 임명권자만 준다 |
+| 수여자(수여 권한을 가진 소속원) | 초안을 만든다. 자기보다 낮은 직함만 나누고, 10명 단계 직위는 임명권자만 준다 |
 | 수령자 | 초안을 받아 동의하거나 거절한다. 동의하지 않으면 인준으로 넘어가지 않는다 |
 | 인준 주체(나라마다 다름) | 그 나라의 인준 절차에 따라 승인하거나 승인하지 않는다. 그 주체가 누구인지는 나라마다 아직 정해지지 않았다 【미결】 |
 | 원 보유자(위임자) | 위임에서 권리를 잃지 않는다. 적힌 범위의 운영·서명·지휘만 맡긴다 |
 | 대리인(위임을 받은 이) | 맡은 범위 안에서만 유효하게 행동한다. 대리인이 죽어도 원 보유자의 권리는 남는다 |
-| 권한 있는 기록·공증·계보 담당자 | 군주·직위권자의 명령을 받아 작위령의 주장 조작(근거 수집/작성→주장 구성→효력 인정/거절)을 수행한다. 직위가 없는 본체의 직접 조작 경로는 채택하지 않는다 |
+| 권한 있는 기록·공증·계보 담당자 | 세력 수장·직위권자의 명령을 받아 직함 영역의 주장 조작(근거 수집/작성→주장 구성→효력 인정/거절)을 수행한다. 직위가 없는 본체의 직접 조작 경로는 채택하지 않는다 |
 | 대행(제도에 등록된 인물) | 그 제도에 이미 등록된 인물과 범위 안에서만 대행한다. 공석만으로 대행이 생기지 않으며, 선거·승계·임명 등 공석을 채우는 절차는 해당 나라의 제도에 따른다 |
 | 점령자·분쟁 보유자 | 현장을 실제로 통제한다. 점령만으로 합법 상속·기관 금고 소유·주민 협력을 얻지 못한다 |
 
-국가 이름은 자리의 이름만 보여 준다. 아래 사례에서 쓰는 나라 이름(예: 정부, 자유도시들, 아크)은 기존 규칙의 국가별 표에 이미 올라 있는 자리 이름이고, 사례의 수여자·수령자·작위 식별은 이 규칙을 읽기 위한 자리 표시이지 승인된 인물·작위·수량이 아니다. 실제 작위 식별·보유자·상위 계약은 위키 확정 입력을 기다린다(12.1).
+국가 이름은 자리의 이름만 보여 준다. 아래 사례에서 쓰는 나라 이름(예: 정부, 자유도시들, 아크)은 기존 규칙의 국가별 표에 이미 올라 있는 자리 이름이고, 사례의 수여자·수령자·직함 식별은 이 규칙을 읽기 위한 자리 표시이지 승인된 인물·직함·수량이 아니다. 실제 직함 식별·보유자·상위 계약은 위키 확정 입력을 기다린다(12.1).
 
 ## 3. 플레이어가 실제로 내리는 결정
 
 1. **초안의 종류 선택** — 수여, 임명, 위임, 회수 넷 중 하나를 골라 초안을 만든다. 이 선택은 이름 있는 결정이고, 넷은 서로 다른 결과를 낸다(4장).
-2. **초안의 내용 확정** — 수령자, 대상 작위와 판본, 상위 계약, 권리·의무·기간, 인준기관, 유물/문서/열쇠의 인도 조건을 적는다. 건물·기관 금고·공공 재고·부대 지휘는 포함 여부와 해당 권리의 이전 권한을 각각 확인한다. 보관·열쇠 소지·공직 권한만으로 소유권이 생기지 않는다.
+2. **초안의 내용 확정** — 수령자, 대상 직함과 판본, 상위 계약, 권리·의무·기간, 인준기관, 유물/문서/열쇠의 인도 조건을 적는다. 건물·기관 금고·공공 재고·부대 지휘는 포함 여부와 해당 권리의 이전 권한을 각각 확인한다. 보관·열쇠 소지·공직 권한만으로 소유권이 생기지 않는다.
 3. **수령자로서의 응답** — 받은 초안에 동의하거나 거절한다. 동의가 없으면 인준 단계로 넘어가지 않는다.
 4. **위임의 범위 지정** — 위임은 맡기는 범위와 근거를 적어야만 성립한다. 범위 밖의 행동은 그 위임으로 정당화되지 않는다.
 5. **회수 제안의 근거 선택** — 회수는 이미 있는 계약의 회수 조항, 위반 증거, 인준 절차를 요구하는 별도 제안이다. 조항이 없는 계약을 무조건 회수하는 길은 없다.
 
-플레이어는 정해지지 않은 나라의 인준기관을 임의로 만들거나 그 절차를 끝낸 것으로 처리하지 못한다. 다만 국가 제도에 따라 본체가 정당한 인준 직위와 권한을 실제로 가진다면, 그 권한으로 승인하거나 거절할 수 있다. 제도 미정은 플레이어의 인준 역할을 일률적으로 금지하는 규칙이 아니다. 무관직 본체가 작위령의 주장을 직접 고치는 경로는 없다. 공석이 생겼다고 위임·상속·대행 임명·권한 흡수가 자동으로 일어나지 않는다.
+플레이어는 정해지지 않은 나라의 인준기관을 임의로 만들거나 그 절차를 끝낸 것으로 처리하지 못한다. 다만 국가 제도에 따라 본체가 정당한 인준 직위와 권한을 실제로 가진다면, 그 권한으로 승인하거나 거절할 수 있다. 제도 미정은 플레이어의 인준 역할을 일률적으로 금지하는 규칙이 아니다. 무관직 본체가 직함 영역의 주장을 직접 고치는 경로는 없다. 공석이 생겼다고 위임·상속·대행 임명·권한 흡수가 자동으로 일어나지 않는다.
 
 행동 화면은 `가능`, `선행조건 부족`, `권한 없음`, `응답 대기`, `제도 미정`을 구분하고 근거를 표시한다(8장).
 
@@ -89307,19 +89307,19 @@ The grant cost, delegation duration, revocation deadline, number of vassal evalu
 
 모든 행동 허용 여부는 정해진 검사 순서를 따른다: **대상 존재와 판본 → 생존/구금 등 수행 가능성 → 권한 → 실제 장소/전달 → 자원·배타 예약 → 상대 의사/제도 절차**. 높은 신뢰로 물리적으로 불가능한 행동을 성공시키지 않는다.
 
-**수여(작위 권리 이전)** — 수여자가 수여 권한을 가진 소속원이어야 하고, 자기보다 낮은 작위만 나눌 수 있으며, 10명 단계 직위는 임명권자(대통령·교주·이사회)만 준다. 수령자는 이미 그 나라의 소속원이어야 하고, 대상 작위 식별과 그 영역이 이미 존재해야 한다. 실제 작위 식별·영역·등급이 없는 곳에 임의 작위를 생성하지 않는다. 초안의 필수 입력은 수여자, 수령자, 국가 가입 상태, 대상 작위와 판본, 수여 권한, 상위 계약, 권리·의무·기간, 인준기관, 유물/문서/열쇠의 인도 조건이다.
+**수여(직함 권리 이전)** — 수여자가 수여 권한을 가진 소속원이어야 하고, 자기보다 낮은 직함만 나눌 수 있으며, 10명 단계 직위는 임명권자(대통령·교주·이사회)만 준다. 수령자는 이미 그 나라의 소속원이어야 하고, 대상 직함 식별과 그 영역이 이미 존재해야 한다. 실제 직함 식별·영역·등급이 없는 곳에 임의 직함을 생성하지 않는다. 초안의 필수 입력은 수여자, 수령자, 국가 가입 상태, 대상 직함과 판본, 수여 권한, 상위 계약, 권리·의무·기간, 인준기관, 유물/문서/열쇠의 인도 조건이다.
 
-**임명(공직 권한 부여)** — 공직의 서명·지휘·운영 권한을 준다. 작위 보유자를 바꾸지 않는다. 임명으로 생긴 권한은 그 직위를 잃으면 그 권한만 멈춘다.
+**임명(공직 권한 부여)** — 공직의 서명·지휘·운영 권한을 준다. 직함 보유자를 바꾸지 않는다. 임명으로 생긴 권한은 그 직위를 잃으면 그 권한만 멈춘다.
 
 **위임(범위 있는 대리)** — 원 보유자를 그대로 두고, 적힌 운영·서명·지휘만 맡긴다. 맡기는 범위와 근거를 적어야 성립한다. 위임된 지휘는 그 범위 안에서만 유효하다.
 
 **회수(계약의 되돌림)** — 이미 있는 계약의 회수 조항, 위반 증거, 인준 절차를 모두 요구한다. 위반 주장만 있고 회수 조항·절차가 없으면 자동 회수가 성립하지 않는다. 위임을 철회하지 않은 채 유물만 회수하면 배신의 쟁점을 연다.
 
-**봉신 계약의 서명** — 봉신은 국가 관계 수치가 아니라 서명자와 조항을 가진 계약으로 성립한다. 계약 한 줄에는 상급·하급 작위, 양측 제안자·서명자·비준자, 직위 귀속과 인물 귀속의 구분, 급수·통행·배급·호송·기록 인준·소집 가운데 실제로 이행할 조항을 적는다. 공개 신앙을 적고 숨은 신앙은 비공개 원장에만 둔다. 양측 문화 키와 실제로 출석할 의례 조항, 서명자가 죽거나 직위를 잃을 때의 자동 유지·재비준·종료 가운데 하나를 함께 적는다. 공개 신앙·문화 키·의례 달력이 빠진 계약은 재비준 쟁점을 연다. 같은 물자를 두 계약에 동시에 묶거나 같은 유물을 두 사당에 동시에 둘 수 없다. 소집 조항은 전투 병력을 불러내지 않고 동원 명부·무기고 열쇠·탈영 장부를 누구에게 열지만 정한다. 상인 생업자에게 소집을 거는 계약은 거부된다. 수장이 직접 쥔 역은 직할, 이름 있는 봉신에게 준 역은 위임이다.
+**봉신 계약의 서명** — 봉신은 국가 관계 수치가 아니라 서명자와 조항을 가진 계약으로 성립한다. 계약 한 줄에는 상급·하급 직함, 양측 제안자·서명자·비준자, 직위 귀속과 인물 귀속의 구분, 급수·통행·배급·호송·기록 인준·소집 가운데 실제로 이행할 조항을 적는다. 공개 신앙을 적고 숨은 신앙은 비공개 원장에만 둔다. 양측 문화 키와 실제로 출석할 의례 조항, 서명자가 죽거나 직위를 잃을 때의 자동 유지·재비준·종료 가운데 하나를 함께 적는다. 공개 신앙·문화 키·의례 달력이 빠진 계약은 재비준 쟁점을 연다. 같은 물자를 두 계약에 동시에 묶거나 같은 유물을 두 사당에 동시에 둘 수 없다. 소집 조항은 전투 병력을 불러내지 않고 동원 명부·무기고 열쇠·탈영 장부를 누구에게 열지만 정한다. 상인 생업자에게 소집을 거는 계약은 거부된다. 수장이 직접 쥔 역은 직할, 이름 있는 봉신에게 준 역은 위임이다.
 
-**중앙 기록 문화의 권역** — 그 권역에서는 기록 인준이나 유물 열람이 빠지면 그 수여는 무효다. 무효가 되어도 작위가 새로 생기거나 다른 사람에게 넘어가지 않는다.
+**중앙 기록 문화의 권역** — 그 권역에서는 기록 인준이나 유물 열람이 빠지면 그 수여는 무효다. 무효가 되어도 직함이 새로 생기거나 다른 사람에게 넘어가지 않는다.
 
-경계도 분명하다. 높은 티어라는 이유만으로 수여·임명·지휘가 한꺼번에 열리지 않는다. 공직을 맡았다고 기관 금고가 개인 재산이 되거나 모든 병력의 지휘가 열리지 않는다. 가입 기록만으로 혼인이 성립하지 않고, 혼인 기록만으로 작위가 넘어가지도 않는다. 점령·양도는 현장 통제를 바꿀 뿐 법적 보유자를 바꾸지 않는다.
+경계도 분명하다. 높은 티어라는 이유만으로 수여·임명·지휘가 한꺼번에 열리지 않는다. 공직을 맡았다고 기관 금고가 개인 재산이 되거나 모든 병력의 지휘가 열리지 않는다. 가입 기록만으로 혼인이 성립하지 않고, 혼인 기록만으로 직함이 넘어가지도 않는다. 점령·양도는 현장 통제를 바꿀 뿐 법적 보유자를 바꾸지 않는다.
 
 ## 5. 상태와 전이
 
@@ -89332,9 +89332,9 @@ The grant cost, delegation duration, revocation deadline, number of vassal evalu
 
 ### 5.2 권리 원장의 변경 【승인】
 
-인준이 기록되면 그 작위 식별은 수여자의 보유 목록에서 빠지고 수령자 목록에 **같은 식별로** 등록된다. 사본은 생기지 않는다. 하위 계약·세금/급수/통행·의례 의무는 서명자와 승계 정책을 기록한다. 건물·기관 금고·공공 재고·부대 지휘는 각각 포함 여부를 명시하지 않으면 자동 이전하지 않는다. 포함된 대상도 해당 소유·이전 권한과 계약을 충족해야 한다. 관리·사용·지휘 권한의 인수와 소유권 이전은 다르며, 실제 대상의 권리 입력이 없으면 이전을 확정하지 않는다.
+인준이 기록되면 그 직함 식별은 수여자의 보유 목록에서 빠지고 수령자 목록에 **같은 식별로** 등록된다. 사본은 생기지 않는다. 하위 계약·세금/급수/통행·의례 의무는 서명자와 승계 정책을 기록한다. 건물·기관 금고·공공 재고·부대 지휘는 각각 포함 여부를 명시하지 않으면 자동 이전하지 않는다. 포함된 대상도 해당 소유·이전 권한과 계약을 충족해야 한다. 관리·사용·지휘 권한의 인수와 소유권 이전은 다르며, 실제 대상의 권리 입력이 없으면 이전을 확정하지 않는다.
 
-작위 보유·권리·의무·상위 계약 원장과 실효 지배 원장은 독립한다. 두 원장은 미회복 영지·분쟁·점유자를 함께 표시한다. 작위에 대한 청구는 작위 보유와 다르고, 청구를 수여로 바꾸지 않는다.
+직함 보유·권리·의무·상위 계약 원장과 실효 지배 원장은 독립한다. 두 원장은 미회복 영지·분쟁·점유자를 함께 표시한다. 직함에 대한 청구는 직함 보유와 다르고, 청구를 수여로 바꾸지 않는다.
 
 ### 5.3 위임의 상태 【승인】
 
@@ -89346,7 +89346,7 @@ The grant cost, delegation duration, revocation deadline, number of vassal evalu
 
 ### 5.5 충돌과 판본 【승인】
 
-같은 판본에서 같은 작위에 두 수여가 겹치면 결정론적 수락 순서로 하나만 받는다. 동시 권리 전이는 같은 원장 판본에서 평가한다. 같은 사건 식별을 다시 보내도 두 번째 결과는 생기지 않는다. 승인과 실행 사이에 사망·해임·점령·연락 두절이 끼어들면 아직 남은 인수를 다시 검사한다.
+같은 판본에서 같은 직함에 두 수여가 겹치면 결정론적 수락 순서로 하나만 받는다. 동시 권리 전이는 같은 원장 판본에서 평가한다. 같은 사건 식별을 다시 보내도 두 번째 결과는 생기지 않는다. 승인과 실행 사이에 사망·해임·점령·연락 두절이 끼어들면 아직 남은 인수를 다시 검사한다.
 
 ### 5.6 저장·판본 의무 【승인】
 
@@ -89356,12 +89356,12 @@ The grant cost, delegation duration, revocation deadline, number of vassal evalu
 
 수여 허용 판정은 4장의 경로별 실제 검사만 따른다. 정책을 점수로 환산하는 판정식은 승인되지 않았다. 승인된 것은 아래 기록 의무다.
 
-- 초안의 필수 입력(수여자, 수령자, 국가 가입 상태, 대상 작위와 판본, 수여 권한, 상위 계약, 권리·의무·기간, 인준기관, 유물/문서/열쇠의 인도 조건)을 남긴다.
-- 권리 변경 시 수여자 보유 목록에서 제거하고 수령자에게 같은 작위 식별로 등록한 사실을 남긴다. 사본 없음.
+- 초안의 필수 입력(수여자, 수령자, 국가 가입 상태, 대상 직함과 판본, 수여 권한, 상위 계약, 권리·의무·기간, 인준기관, 유물/문서/열쇠의 인도 조건)을 남긴다.
+- 권리 변경 시 수여자 보유 목록에서 제거하고 수령자에게 같은 직함 식별로 등록한 사실을 남긴다. 사본 없음.
 - 하위 계약·세금/급수/통행·의례 의무는 서명자와 승계 정책과 함께 기록한다.
 - 포함 여부를 명시하지 않은 건물·기관 금고·공공 재고·부대 지휘는 이전하지 않은 사실로 남는다.
 - 위임은 상태(유효·정지·만료·회수)와 근거 사건·범위를 함께 저장한다.
-- 작위 보유 원장과 실효 지배 원장을 분리해 기록하고, 미회복 영지·분쟁·점유자를 함께 표시한다.
+- 직함 보유 원장과 실효 지배 원장을 분리해 기록하고, 미회복 영지·분쟁·점유자를 함께 표시한다.
 - 같은 사건 식별의 재전송은 새 결과를 만들지 않는다.
 - 승인 뒤 사망·해임·점령·연락 두절이 끼어들면 남은 인수를 다시 검사한 사실을 남긴다.
 - 식별자는 영구적이고, 개정 충돌과 저장 오류는 명시한다.
@@ -89371,7 +89371,7 @@ The grant cost, delegation duration, revocation deadline, number of vassal evalu
 **실패해도 보유자는 그대로다.**
 
 - 필요한 인준이 없으면 보유자는 그대로다. 인준이 없었으므로 초안은 어떤 권리도 옮기지 않은 채 남는다.
-- 중앙 기록 문화의 권역에서 기록 인준이나 유물 열람이 빠지면 그 수여는 무효다. 무효가 되어도 작위가 새로 생기거나 다른 사람에게 넘어가지 않는다.
+- 중앙 기록 문화의 권역에서 기록 인준이나 유물 열람이 빠지면 그 수여는 무효다. 무효가 되어도 직함이 새로 생기거나 다른 사람에게 넘어가지 않는다.
 - 인준 전에 필요한 승인자가 죽으면, 받아들여진 문장은 그 죽음에 특별한 결과를 주지 않는다. 그 공석을 누가 대신 승인하는지는 정해지지 않았다【미결】.
 - 미가입 수령자에게 보낸 초안은 거절된다.
 
@@ -89394,8 +89394,8 @@ The grant cost, delegation duration, revocation deadline, number of vassal evalu
 - 행동 화면은 `가능`, `선행조건 부족`, `권한 없음`, `응답 대기`, `제도 미정`을 구분하고 근거를 표시한다. 숨은 사실을 이유 표시로 누설하지 않고 `확인된 근거 부족`으로 설명한다. 인준 주체가 정해지지 않은 나라의 수여는 `제도 미정`으로 보인다.
 - 봉신 계약에는 공개 신앙을 적고, 숨은 신앙은 비공개 원장에만 둔다. 공개 계약 화면이 비공개 원장을 읽지 않는다.
 - 점령·양도 사건은 현장 통제를 바꾸지만 주민 협력·운영·안정화·통합과 인준은 별도 단계다. 전쟁 종결의 권리 이전은 주민 협력과 시설 복구 완료를 뜻하지 않는다. 화면은 두 원장을 함께 표시한다(미회복 영지·분쟁·점유자).
-- 조회가 수여 권한을 만들지 않는다. 작위 보유자의 `가능한 행동`은 자기 작위의 계약상 운영·수입·의무, 권리 회복 청구, 허용된 하위 수여뿐이고, 점유하지 못한 시설의 즉시 사용과 동급/상급 작위의 임의 창설은 추가 권한이 필요한 행동이다.
-- 주장자·후계 후보는 증거 제출·계승 자격 주장·지지 요청·정해진 명분의 수혜 후보만 할 수 있고, 주장을 보유권이나 현장 지배로 사용하지 못한다. 작위에 대한 청구는 작위 보유와 다르다.
+- 조회가 수여 권한을 만들지 않는다. 직함 보유자의 `가능한 행동`은 자기 직함의 계약상 운영·수입·의무, 권리 회복 청구, 허용된 하위 수여뿐이고, 점유하지 못한 시설의 즉시 사용과 동급/상급 직함의 임의 창설은 추가 권한이 필요한 행동이다.
+- 주장자·후계 후보는 증거 제출·계승 자격 주장·지지 요청·정해진 명분의 수혜 후보만 할 수 있고, 주장을 보유권이나 현장 지배로 사용하지 못한다. 직함에 대한 청구는 직함 보유와 다르다.
 
 ## 9. 교차 도메인 소유
 
@@ -89409,7 +89409,7 @@ D11은 수여·임명·위임·회수와 봉신 계약의 골격을 소유하고
 | D07 관계·기억 | 배신 쟁점·재비준 쟁점이 열렸을 때의 관계·평가 귀속 | 관계 변화 함수·증감·감쇠 |
 | D08 가문·혼인 | 가입 기록과 혼인 기록의 구분 사실 | 혼인 성립·효과 규칙 |
 | D09 국가·정통성 | 나라별 인준 절차·공석 대행 등록(입력 대기) | 세 세력 제도의 실제 정의 |
-| D10 작위·명분 | 작위 권리 인스턴스, 청구·명분의 구분 | 청구의 상위 계약 조건, 명분 등록 수치·기한 |
+| D10 직함·명분 | 직함 권리 인스턴스, 청구·명분의 구분 | 청구의 상위 계약 조건, 명분 등록 수치·기한 |
 | D12 후계·본체 | 사망 사실, 후계 지정의 존재 | 상속인이 누구인지의 결정 |
 | D13 자산·인도 | 포함 여부가 명시된 재산의 이전, 인도 상태 | 소유권 승계·인도 절차의 상세 규칙 |
 | D16 전쟁·포로 | 전쟁 종결의 권리 이전 목록 | 정산 순서·점령 분모·포로 규칙 |
@@ -89422,31 +89422,31 @@ D11은 수여·임명·위임·회수와 봉신 계약의 골격을 소유하고
 
 ### 10.1 미가입 수령자 거절 — 적격 실패
 
-- **전**: 수여자 갑은 정부의 소속원이고 실제 작위 식별 하나를 보유한다. 수령자 을은 정부에 가입한 적이 없다.
+- **전**: 수여자 갑은 정부의 소속원이고 실제 직함 식별 하나를 보유한다. 수령자 을은 정부에 가입한 적이 없다.
 - **요청**: 갑이 을을 수령자로 적은 수여 초안을 만든다.
 - **사건**: 검사 순서의 대상 존재·판본 단계는 통과하지만, 소속 검사에서 을이 그 나라의 소속원이 아님이 확인된다. 기존 국가의 수여는 소속원만 받을 수 있으므로 초안은 인준 단계로 넘어가지 못하고 거절로 끝난다.
 - **후**: 갑의 보유 목록과 을의 상태는 그대로다. 거절 사실과 근거(소속 없음)만 기록된다. 초안이 대기 상태로 남거나 자동으로 가입시키지 않는다.
 
-### 10.2 같은 작위, 두 수여 — 판본 충돌과 결정론적 수락
+### 10.2 같은 직함, 두 수여 — 판본 충돌과 결정론적 수락
 
-- **전**: 갑은 기존 작위 식별 T- 하나의 보유자이며 유효한 하위 수여 권한을 가진다. 을과 병은 같은 나라의 적격 소속원이다. 두 초안은 대상과 권한 검사를 거치고, 각 수령자의 동의와 유효한 국가 절차의 인준을 요구한다. 이는 제도·권한 입력이 주어졌다는 사례의 전제이지 특정 나라의 제도를 확정한 것이 아니다.
-- **요청**: 초안 → 권한/대상 검사 → 수령자 동의 → 인준/비준 → 권리 원장 변경의 순서를 지키면서, 같은 작위에 대한 두 권리 전이가 같은 원장 판본에서 경합한다.
-- **사건**: 동시 권리 전이는 같은 원장 판본에서 평가되고, 같은 작위에 두 수여가 겹쳤으므로 결정론적 수락 순서로 하나만 받는다. 수락 순서를 동의나 인준 이전의 별도 관문으로 정하지 않는다. 같은 사건 식별을 다시 보내도 두 번째 결과는 생기지 않는다.
-- **후**: 승인된 한쪽에서만 작위 식별이 갑의 목록에서 빠지고 수령자 목록에 같은 식별로 등록된다. 사본은 생기지 않는다. 다른 초안은 같은 권리를 다시 이전하지 못하며, 경합 결과와 수락 순서의 근거가 남는다. 구체적인 내부 판정 단계나 실패 상태명은 이 사례가 추가로 정하지 않는다. 순서를 정하는 구체적 우선순위 식은 승인되지 않았다(12.7).
+- **전**: 갑은 기존 직함 식별 T- 하나의 보유자이며 유효한 하위 수여 권한을 가진다. 을과 병은 같은 나라의 적격 소속원이다. 두 초안은 대상과 권한 검사를 거치고, 각 수령자의 동의와 유효한 국가 절차의 인준을 요구한다. 이는 제도·권한 입력이 주어졌다는 사례의 전제이지 특정 나라의 제도를 확정한 것이 아니다.
+- **요청**: 초안 → 권한/대상 검사 → 수령자 동의 → 인준/비준 → 권리 원장 변경의 순서를 지키면서, 같은 직함에 대한 두 권리 전이가 같은 원장 판본에서 경합한다.
+- **사건**: 동시 권리 전이는 같은 원장 판본에서 평가되고, 같은 직함에 두 수여가 겹쳤으므로 결정론적 수락 순서로 하나만 받는다. 수락 순서를 동의나 인준 이전의 별도 관문으로 정하지 않는다. 같은 사건 식별을 다시 보내도 두 번째 결과는 생기지 않는다.
+- **후**: 승인된 한쪽에서만 직함 식별이 갑의 목록에서 빠지고 수령자 목록에 같은 식별로 등록된다. 사본은 생기지 않는다. 다른 초안은 같은 권리를 다시 이전하지 못하며, 경합 결과와 수락 순서의 근거가 남는다. 구체적인 내부 판정 단계나 실패 상태명은 이 사례가 추가로 정하지 않는다. 순서를 정하는 구체적 우선순위 식은 승인되지 않았다(12.7).
 
 ### 10.3 인준 거절·승인자 사망 — 원 보유 유지
 
-- **전**: 이 사례에 한해 유효한 국가 제도와 필요한 인준 직위·승인자가 이미 주어졌다고 가정한다. 갑이 을에게 기존 작위 식별 T- 둘을 수여하는 초안은 권한/대상 검사와 동의를 마쳤고 인준만 남았다. 이 전제는 실제 나라의 인준기관을 정한 것이 아니다. 제도가 미정인 실제 나라에서는 승인자나 거절 사건을 만들어 내지 않고 `제도 미정`으로 남긴다【미결】.
+- **전**: 이 사례에 한해 유효한 국가 제도와 필요한 인준 직위·승인자가 이미 주어졌다고 가정한다. 갑이 을에게 기존 직함 식별 T- 둘을 수여하는 초안은 권한/대상 검사와 동의를 마쳤고 인준만 남았다. 이 전제는 실제 나라의 인준기관을 정한 것이 아니다. 제도가 미정인 실제 나라에서는 승인자나 거절 사건을 만들어 내지 않고 `제도 미정`으로 남긴다【미결】.
 - **요청**: 인준이 기록되려 한다.
 - **사건**: 두 갈래로 갈린다. 갈래 A(인준 거절) — 인준 주체가 승인하지 않으면 보유자는 바뀌지 않는다. 갈래 B(승인자 사망) — 인준 전에 필요한 승인자가 죽으면 그 죽음 자체는 특별한 결과를 주지 않고, 인준이 없었으므로 보유자는 바뀌지 않은 채 남는다. 그 공석을 누가 대신 승인하는지는 정해지지 않았고, 이 문서가 대신 고르지 않는다.
-- **후**: 두 갈래 모두 갑의 보유 목록은 그대로고, 초안과 거절·미인준 사실만 기록된다. 작위가 새로 생기거나 제3의 인물에게 넘어가지 않는다. 무효 사유(중앙 기록 문화 권역의 기록 인준·유물 열람 누락)도 같은 결과로 남는다.
+- **후**: 두 갈래 모두 갑의 보유 목록은 그대로고, 초안과 거절·미인준 사실만 기록된다. 직함이 새로 생기거나 제3의 인물에게 넘어가지 않는다. 무효 사유(중앙 기록 문화 권역의 기록 인준·유물 열람 누락)도 같은 결과로 남는다.
 
 ### 10.4 수여 성공·열쇠 미인도 — 권리와 인수의 분리, 불법 강탈과의 대조
 
-- **전**: 갑이 을에게 작위 식별 T- 셋을 수여하는 초안이 동의와 인준을 모두 통과했다. 초안에는 나라의 금고와 어느 부대의 지휘는 넣지 않았고, 그 작위의 열쇠는 아직 갑의 손에 있다. 같은 시기에 병이 무력으로 그 작위의 현장을 점령한다.
+- **전**: 갑이 을에게 직함 식별 T- 셋을 수여하는 초안이 동의와 인준을 모두 통과했다. 초안에는 나라의 금고와 어느 부대의 지휘는 넣지 않았고, 그 직함의 열쇠는 아직 갑의 손에 있다. 같은 시기에 병이 무력으로 그 직함의 현장을 점령한다.
 - **요청**: 권리 원장 변경과 현장 인수가 진행된다.
-- **사건**: 인준이 기록되므로 작위 식별 T- 셋은 갑의 목록에서 빠지고 을의 목록에 같은 식별로 등록된다. 사본은 생기지 않는다. 금고와 부대 지휘는 초안에 없었으므로 이전 소유와 이전 지휘에 남는다. 열쇠가 인도되지 않았으므로 을은 `권리 보유·인수 미완`으로 남는다. 병의 점령은 수여가 아니므로 병을 보유자로 등록하지 않고, 현장 통제가 바뀌었다는 기록과 권리 분쟁으로 남는다.
-- **후**: 을은 권리를 보유하지만 현장을 손에 넣지 못했고, 작위 보유 원장과 실효 지배 원장이 서로 다른 사실을 함께 표시한다. 이미 소비한 물자와 이미 끝난 진척은 되돌리지 않고 남은 인수만 다시 검사한다. 인도 절차 자체는 보관·인도를 다루는 쪽의 일이다.
+- **사건**: 인준이 기록되므로 직함 식별 T- 셋은 갑의 목록에서 빠지고 을의 목록에 같은 식별로 등록된다. 사본은 생기지 않는다. 금고와 부대 지휘는 초안에 없었으므로 이전 소유와 이전 지휘에 남는다. 열쇠가 인도되지 않았으므로 을은 `권리 보유·인수 미완`으로 남는다. 병의 점령은 수여가 아니므로 병을 보유자로 등록하지 않고, 현장 통제가 바뀌었다는 기록과 권리 분쟁으로 남는다.
+- **후**: 을은 권리를 보유하지만 현장을 손에 넣지 못했고, 직함 보유 원장과 실효 지배 원장이 서로 다른 사실을 함께 표시한다. 이미 소비한 물자와 이미 끝난 진척은 되돌리지 않고 남은 인수만 다시 검사한다. 인도 절차 자체는 보관·인도를 다루는 쪽의 일이다.
 
 ## 11. 외부 참조 — Crusader Kings III와 Norland
 
@@ -89454,17 +89454,17 @@ D11은 수여·임명·위임·회수와 봉신 계약의 골격을 소유하고
 
 ### 11.1 Crusader Kings III
 
-작위 수여 스크립트는 행위자·수령자·선택 작위의 관문과 자동 수락을 선언하지만 실제 수여가 코드에서 처리된다고 명시한다. 따라서 스크립트만으로 원시 수여 트랜잭션을 증명할 수 없다. 봉신 이전 스크립트는 선택 봉신의 상급 변경과 확정 효과를 구분하고, 계약 의무 변경은 변경량과 가드를 사용한다. PAM 청원은 별도 관문과 편지 선택지를 거쳐 법적 상급 작위를 바꾸는 경로다. 유물 선물의 소유자 변경은 작위 식별 운반 체계와 동등하지 않다.
+직함 수여 스크립트는 행위자·수령자·선택 직함의 관문과 자동 수락을 선언하지만 실제 수여가 코드에서 처리된다고 명시한다. 따라서 스크립트만으로 원시 수여 트랜잭션을 증명할 수 없다. 봉신 이전 스크립트는 선택 봉신의 상급 변경과 확정 효과를 구분하고, 계약 의무 변경은 변경량과 가드를 사용한다. PAM 청원은 별도 관문과 편지 선택지를 거쳐 법적 상급 직함을 바꾸는 경로다. 유물 선물의 소유자 변경은 직함 식별 운반 체계와 동등하지 않다.
 
 ### 11.2 Norland
 
-문서의 Grant/Revoke는 lord 지위를 더하거나 빼며, Pass Crown은 king 지위를 바꾼다. 서임 의례는 수여 뒤에 온다고 서술된다. 이 역할·사건은 서울의 이전 가능한 영토 작위 원장이나 수여 전 인준 관문과 동등하지 않다. 봉신 수요 수락·거절·전쟁 결과, 조공·괴뢰·인질의 규칙도 해당 문서 판본의 서술 범위에서만 읽는다. 인질의 도시 합류나 무력 강탈은 합법적인 작위 소유권 이전을 증명하지 않는다.
+문서의 Grant/Revoke는 가신 지위를 더하거나 빼며, Pass Crown은 통치자 지위를 바꾼다. 서임 의례는 수여 뒤에 온다고 서술된다. 이 역할·사건은 서울의 이전 가능한 영토 직함 원장이나 수여 전 인준 관문과 동등하지 않다. 봉신 수요 수락·거절·전쟁 결과, 조공·괴뢰·인질의 규칙도 해당 문서 판본의 서술 범위에서만 읽는다. 인질의 도시 합류나 무력 강탈은 합법적인 직함 소유권 이전을 증명하지 않는다.
 
 ## 12. 아직 정하지 않은 것
 
-### 12.1 작위·인준 입력
+### 12.1 직함·인준 입력
 
-실제 작위 식별·등급·영역·보유자·상위 계약·인준 주체, 취득·안정화·통합의 기간과 비용, 최하위 작위 주장 가능 범위는 미정이다. 실제 입력이 없으면 자리 표시를 확정 작위로 사용하거나 점유만으로 보유자를 바꾸지 않는다.
+실제 직함 식별·등급·영역·보유자·상위 계약·인준 주체, 취득·안정화·통합의 기간과 비용, 최하위 직함 주장 가능 범위는 미정이다. 실제 입력이 없으면 자리 표시를 확정 직함으로 사용하거나 점유만으로 보유자를 바꾸지 않는다.
 
 ### 12.2 나라별 제도
 
@@ -89480,7 +89480,7 @@ D11은 수여·임명·위임·회수와 봉신 계약의 골격을 소유하고
 
 ### 12.5 청구의 상위 계약 조건
 
-누구를 위해 작위 청구를 행사할 때 상위 계약이 요구하는 조건은 미정이다. 청구는 보유권이나 현장 지배가 아니다.
+누구를 위해 직함 청구를 행사할 때 상위 계약이 요구하는 조건은 미정이다. 청구는 보유권이나 현장 지배가 아니다.
 
 ### 12.6 위임받은 이의 진행 중 행동
 
@@ -89492,8 +89492,8 @@ D11은 수여·임명·위임·회수와 봉신 계약의 골격을 소유하고
 
 ## 13. 요약
 
-- **승인된 것**: 네 가지 초안의 구분(수여·임명·위임·회수), 동의·인준 관문과 인준 전 보유자 불변, 소속원 수령 요건, 하급 작위만·10명 단계 임명제, 축의 분리(직위·작위·실효 지배·지휘·재산), 포함 명시의 원칙, 같은 식별 제거·등록과 사본 없음, `권리 보유·인수 미완` 상태, 위임의 네 상태와 원 권리 보존, 봉신 계약의 서명자·조항 실체와 서명자 변동 세 갈래, 회수의 조항·증거·인준 요건, 유물만 회수 시 배신 쟁점, 불법 강탈의 수여 부인, 공석의 자동 생성 부정과 등록된 대행만, 결정론적 수락 순서와 사건 식별 재전송 무효, 영구 식별자와 명시적 충돌, 작위 보유 원장과 실효 지배 원장의 분리.
-- **정해지지 않은 것**: 12장의 작위·인준 입력, 나라별 제도, 실제 계약, 전쟁·외교 정산, 청구 상위 계약, 위임 진행 행동과 수치·충돌 세부 절차.
+- **승인된 것**: 네 가지 초안의 구분(수여·임명·위임·회수), 동의·인준 관문과 인준 전 보유자 불변, 소속원 수령 요건, 하급 직함만·10명 단계 임명제, 축의 분리(직위·직함·실효 지배·지휘·재산), 포함 명시의 원칙, 같은 식별 제거·등록과 사본 없음, `권리 보유·인수 미완` 상태, 위임의 네 상태와 원 권리 보존, 봉신 계약의 서명자·조항 실체와 서명자 변동 세 갈래, 회수의 조항·증거·인준 요건, 유물만 회수 시 배신 쟁점, 불법 강탈의 수여 부인, 공석의 자동 생성 부정과 등록된 대행만, 결정론적 수락 순서와 사건 식별 재전송 무효, 영구 식별자와 명시적 충돌, 직함 보유 원장과 실효 지배 원장의 분리.
+- **정해지지 않은 것**: 12장의 직함·인준 입력, 나라별 제도, 실제 계약, 전쟁·외교 정산, 청구 상위 계약, 위임 진행 행동과 수치·충돌 세부 절차.
 - 이 문서는 제안으로 남으며, 플레이가 구현되었다고 말하지 않는다.');
 INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.mechanism-design-index-d12', 'system-design', 'mechanism-design-index-d12', 'Succession, Death, and Principal Body Transition', '후계·사망·본체 전환', '', '', 'proposal', 119, 'system-design/mechanism-design-index-d12.md', '# Succession, Death, and Principal Body Transition
 
@@ -89667,7 +89667,7 @@ Seoul''s rules for this domain come from the owner''s decisions about Seoul. The
 - Edition: a documentation survey based on official community wiki oldid captures (Actions rev1318, Lords rev1314, World rev1284, Warfare rev1319) and Steam announcements (IDs 6146943657173940808, 1796631172375296, 1809869180071665, 1816849002015273, 1825093633188129, 1830797770236682, 1839676055888772, 1845383656387035), with historical capture build 25211575. It is not verification of the current build or of execution.
 - Heir designation and throne succession actions (wiki rev1318): actions that designate an eligible target as heir or hand over the throne. These are merely examples of designation actions, and the preserved material has no raw rules for automatic succession selection.
 - Ring rules (announcement 6146943657173940808, patch 25): when a ruler dies, the ring passes to a spouse or eldest child of the same faction (when both are on the local map). Priority, remote delivery, division, and disposal are not determined by the sentence and remain unresolved.
-- Trade agreements persist after the king''s death. This is a counterexample to the generalization that "all contracts are terminated en masse by death."
+- Trade agreements persist after the ruler''s death. This is a counterexample to the generalization that "all contracts are terminated en masse by death."
 - When an overlord dies, all vassals become independent (wiki rev1284), and peace may also end upon the death of the peace counterparty. Cases that differ by target are recorded separately, and there is no global event order.
 - Hostages and prisoners: hostages can be assigned to actions other than military actions (wiki rev1314), and scope fixes for the order of prisoner recognition, corpse, and grave, as well as the ban on kidnapping rulers (patch 58), exist as separate scope-limited records. Regency, eligibility of a detained heir, resurrection and recovery, and body switching are not documented.
 - Death threshold (wiki rev1319): the pain threshold is 50, and a warrior dies when it is exceeded. That threshold figure belongs to Norland and is not Seoul''s death determination.
@@ -89711,7 +89711,7 @@ The items below are boundaries where the current rules cannot fix the outcome. E
 ## 등장하는 주체
 
 - **플레이어(본체 인물).** 생존한 개막 인물 하나다. 몸이 죽거나 영구 구금되면 지정 후계 또는 계승 순서의 다음 인물이 새 본체가 된다. 플레이어는 한 본체의 행동과 그 몸에게 실제로 유효한 지휘를 통해서만 세계에 관여한다.
-- **NPC 인물.** 플레이어와 같은 행동 조건을 따른다. 지정 후계, 계승 순서의 인물, 직위·작위·재산의 후보도 모두 같은 계약 안에 있다.
+- **NPC 인물.** 플레이어와 같은 행동 조건을 따른다. 지정 후계, 계승 순서의 인물, 직위·직함·재산의 후보도 모두 같은 계약 안에 있다.
 - **후보와 탈락한 후보.** 각 항목의 제도가 자격을 검사한다. 뽑히지 않은 후보는 그 제도가 남겨 주는 주장을 유지하고, 탈락했다고 사라지지 않는다.
 - **남은 분대와 임시 분대장.** 본체를 잃은 분대는 병졸 가운데 임시 분대장을 뽑는다. 임시 분대장이 정식 영웅 지휘관과 같은 종류의 명령을 내리고 효과는 더 약하다는 데까지가 승인된 규칙이다. 약한 정도는 정해지지 않았고, 정식 영웅의 클래스와 캠페인 역할을 자동으로 받지 않는다. 임시 분대장이 생겼다는 사실만으로 새 본체의 원격 지휘가 성립하지는 않는다.
 - **국가와 기관.** 수장이 죽어도 없어지지 않는다. 빈 직위의 선거·지명·시험·세습·인준 절차는 국가 제도의 몫이다.
@@ -89729,7 +89729,7 @@ The items below are boundaries where the current rules cannot fix the outcome. E
 ## 누가 자격 있는가
 
 - **몸의 전환.** 몸이 바뀌려면 지정 후계가 있거나, 이미 받아들여진 계승 순서의 다음 인물이 있어야 한다. 순서의 다음 사람이 누구인지는 가문의 제도가 정할 일이며 아직 정해지지 않았다. 후계가 아무도 없으면 그 인물의 경로는 끝난다.
-- **직위·작위·재산.** 항목마다 자기 제도와 자격을 갖춘 후보가 있어야 넘어간다. 한 항목의 후계가 없다고 다른 항목의 후계가 생기지는 않는다. 적격한 후보가 없거나 절차가 없으면 그 직위는 공석이거나 승계 분쟁으로 남는다. 이름 없는 수장을 만들어 빈자리를 채우지 않는다.
+- **직위·직함·재산.** 항목마다 자기 제도와 자격을 갖춘 후보가 있어야 넘어간다. 한 항목의 후계가 없다고 다른 항목의 후계가 생기지는 않는다. 적격한 후보가 없거나 절차가 없으면 그 직위는 공석이거나 승계 분쟁으로 남는다. 이름 없는 수장을 만들어 빈자리를 채우지 않는다.
 - **영구 구금.** 아무도 상속자로 만들지 않는다. 구금된 인물은 살아 있고, 그 상태를 죽음으로 다루어 상속을 열지 않는다. 살아 있는 포로는 자기 재산을 유지한다. 구금 계약이 허용하는 면담·편지·교섭은 가능하지만 자유 이동과 현장 작업은 불가능하다. 직위의 서명·지휘·운영 가능 여부와 그 인물 자신의 다른 계약은 각각 수행 가능성·권한·전달 조건을 다시 검사하며, 구금만으로 모두 동결됐다고 보지 않는다. 무엇이 영구 구금인지는 아직 정해지지 않았다. 석방된 이전 본체로 돌아가는 방향은 별도의 명시적이고 권한 있는 신원·통제 인계가 있을 때만 허용하는 것으로 선택됐지만, 그 인계를 승인할 구체적 권한자는 아직 정해지지 않았다.
 - **신원.** 인물에게 신원을 발급하는 일은 이미 받아들여져 있다. 그 발급은 나이·기술·위치·권리가 몇 개인지를 정하지 않는다. 새 몸이 된다고 그런 숫자가 새로 생기지 않는다.
 
@@ -89743,7 +89743,7 @@ The items below are boundaries where the current rules cannot fix the outcome. E
 
 생존자에게는 가족과 연인이라는 사실, 그리고 애도의 사건이 남는다. 신뢰가 높다고 없던 지휘권·재산권·동의·통과권이 생기지는 않는다. 관계가 변해도 기존 계약은 해지 조항과 행동 사건을 거쳐야 바뀐다.
 
-작위를 보유할 권리는 그 작위의 계승 제도를 따른다. 관철된 주장은 적격한 자녀에게 아직 관철되지 않은 주장으로 이어진다. 아직 관철되지 않은 주장은 그 방식으로 상속되지 않는다. 배우자라는 이유만으로 모든 주장을 함께 갖지 않는다. 공직 후보의 자격·선거권·기술의 자격은 작위 주장과 같은 것으로 다루지 않는다.
+직함을 보유할 권리는 그 직함의 계승 제도를 따른다. 관철된 주장은 적격한 자녀에게 아직 관철되지 않은 주장으로 이어진다. 아직 관철되지 않은 주장은 그 방식으로 상속되지 않는다. 배우자라는 이유만으로 모든 주장을 함께 갖지 않는다. 공직 후보의 자격·선거권·기술의 자격은 직함 주장과 같은 것으로 다루지 않는다.
 
 위임은 원래 보유자를 남겨 두고 적힌 운영과 서명과 지휘만 맡긴다. 위임을 받은 사람이 죽어도 원래 보유자의 권리는 사라지지 않는다. 위임은 빈 직위를 메우는 임명이 아니다.
 
@@ -89751,13 +89751,13 @@ The items below are boundaries where the current rules cannot fix the outcome. E
 
 ## 상태와 이미 승인된 규칙
 
-이 영역이 읽고 쓰는 상태는 이것들이다. 본체 지정과 계승 순서 기록, 인물별 관계·기술·신뢰, 직위·작위의 점유와 이력, 재산 항목의 소유자·수혜자·수량 근거·담보·예약·인도 장소·이행 상태, 분대의 지휘 상태, 사건의 식별과 원장 판본. 영웅 한 명은 한 시점에 지휘관·배속·독립 요원·사용 불가 가운데 하나의 상태만 가진다. 이동할 수 있는 전략 분대에는 정식 영웅 지휘관이 한 명 필요하다.
+이 영역이 읽고 쓰는 상태는 이것들이다. 본체 지정과 계승 순서 기록, 인물별 관계·기술·신뢰, 직위·직함의 점유와 이력, 재산 항목의 소유자·수혜자·수량 근거·담보·예약·인도 장소·이행 상태, 분대의 지휘 상태, 사건의 식별과 원장 판본. 영웅 한 명은 한 시점에 지휘관·배속·독립 요원·사용 불가 가운데 하나의 상태만 가진다. 이동할 수 있는 전략 분대에는 정식 영웅 지휘관이 한 명 필요하다.
 
 이미 승인된 규칙은 이것들이다.
 
-- **세 갈래 분리.** 플레이어 본체 계승, 국가·기관 수장 계승, 개별 작위·재산 계승을 별도 사건으로 처리한다. 새 본체가 된 인물에게 죽은 본체의 모든 권한·기술·친구를 복사하지 않는다.
+- **세 갈래 분리.** 플레이어 본체 계승, 국가·기관 수장 계승, 개별 직함·재산 계승을 별도 사건으로 처리한다. 새 본체가 된 인물에게 죽은 본체의 모든 권한·기술·친구를 복사하지 않는다.
 - **본체 전환.** 본체 사망 또는 영구 구금 시 지정 후계, 없으면 계승 순서의 인물이 새 본체가 된다. 후계가 없으면 해당 캐릭터 경로가 끝난다. 시점은 새 본체의 실제 위치로 이동하며 남은 분대는 임시 병졸 분대장을 선출한다. 이전 본체의 권리·기술·관계·미수락 명령은 전환만으로 이전되지 않는다. 남은 부대에 내리는 원격 명령은 새 본체와 분대의 실제 지휘 관계, 같은 세력 지휘 계약, 연락 경로, 수령과 수락 기록을 모두 확인한다.
-- **공석 절차의 순서.** 사망·공석 근거 확정 → 사망한 인물의 개인 신규 행동 중단 또는 살아 있는 인물의 직위 상실로 그 직위의 서명·지휘·운영 권한만 중단 → 직위·작위·재산·계약 목록 스냅샷 → 항목별 후계 제도 조회 → 후보 자격 검사 → 선거·지명·시험·세습 등 절차 → 인준 → 항목별 권리 이전 → 인도·인수 → 분쟁 기록.
+- **공석 절차의 순서.** 사망·공석 근거 확정 → 사망한 인물의 개인 신규 행동 중단 또는 살아 있는 인물의 직위 상실로 그 직위의 서명·지휘·운영 권한만 중단 → 직위·직함·재산·계약 목록 스냅샷 → 항목별 후계 제도 조회 → 후보 자격 검사 → 선거·지명·시험·세습 등 절차 → 인준 → 항목별 권리 이전 → 인도·인수 → 분쟁 기록.
 - **재산 전이의 순서.** 상속 목록 확정 → 분쟁·담보 표시 → 소유권 전이 → 실제 인도 예약 → 수령 검증. 동일 사망 사건 재적용 시 재산을 복제하지 않는다.
 - **구금 규칙.** 영구 구금으로 본체가 바뀌어도 구금된 인물은 살아 있다. 이를 사망으로 처리해 상속을 열지 않는다. 구금된 사람은 자기 재산을 유지한다. 구금 중 행동과 직위 권한은 구금 계약과 실제 수행 조건으로 다시 검사하며 일괄 동결하지 않는다. 석방 뒤 이전 본체 복귀는 별도의 명시적 권한 인계를 요구한다는 방향만 선택됐고, 구체 권한자는 미정이다.
 - **주장 계승.** 관철된 주장은 적격 자녀에게 미관철 주장으로 이어지고, 미관철 주장은 별도 상속하지 않는다. 배우자가 모든 주장을 자동 공유하지 않는다.
@@ -89772,7 +89772,7 @@ The items below are boundaries where the current rules cannot fix the outcome. E
 
 식별은 영구적이다. 같은 사망 사건을 다시 적용해도 권리나 재산이 늘어나지 않고 처음의 영수를 돌려준다. 유언 변경과 사망이 같은 시각이면 이미 받아들여진 사건 순서와 그 제도의 유효 시점을 쓴다. 어느 쪽을 먼저 볼지의 새 규칙은 없다. 동시 권리 전이는 같은 원장 판본에서 평가하고 결정론적 수락 순서로 충돌을 해소한다.
 
-불러오기와 몸의 변경은 저장된 관계, 권리, 재산의 이력을 초기화하지 않는다. 작위와 직위의 이력, 권리 분쟁, 약속의 이행과 위반, 포로와 부상과 사망, 혼인과 친족, 교육의 진척, 공개된 증거, 재산과 채무, 휴전과 전쟁의 결과, 목격과 기억과 지금의 신뢰는 남는다. 이후의 행동은 그 사실을 다시 읽는다.
+불러오기와 몸의 변경은 저장된 관계, 권리, 재산의 이력을 초기화하지 않는다. 직함과 직위의 이력, 권리 분쟁, 약속의 이행과 위반, 포로와 부상과 사망, 혼인과 친족, 교육의 진척, 공개된 증거, 재산과 채무, 휴전과 전쟁의 결과, 목격과 기억과 지금의 신뢰는 남는다. 이후의 행동은 그 사실을 다시 읽는다.
 
 ## 하나의 사망을 끝까지 따라가기
 
@@ -89804,19 +89804,19 @@ The items below are boundaries where the current rules cannot fix the outcome. E
 ## 정보와 권한의 경계
 
 - 개인 신뢰는 후계에게 복사되지 않는다. 신뢰는 관계 영역의 판단 입력이지 권한의 원천이 아니다. 높은 신뢰가 없던 지휘권·재산권·동의·통과권을 만들지 않는다.
-- 권한은 계약과 실제 관계에서 온다. 새 본체의 원격 지휘는 유효 계약뿐 아니라 실제 지휘 관계, 같은 세력, 연락 경로, 수령과 수락을 확인해야 한다. 직위 권한은 개인 재산·작위 권리·다른 유효 계약과 구분되며 공석만으로 아무 것도 자동으로 일어나지 않는다.
+- 권한은 계약과 실제 관계에서 온다. 새 본체의 원격 지휘는 유효 계약뿐 아니라 실제 지휘 관계, 같은 세력, 연락 경로, 수령과 수락을 확인해야 한다. 직위 권한은 개인 재산·직함 권리·다른 유효 계약과 구분되며 공석만으로 아무 것도 자동으로 일어나지 않는다.
 - 관측과 기억은 목격한 주체의 것이다. 목격과 기억과 지금의 신뢰는 사망 뒤에도 저장되고, 이후의 행동이 그 사실을 다시 읽는다.
 - 저장된 세계 이력은 새 본체에게 자동으로 알려지거나 공개되지 않는다. 후계가 볼 수 있는 보고·기록은 그 몸의 실제 지식·자격, 공개 권한, 전달 경로를 따로 확인한다. 이전 본체의 사적 지식이나 접근 권한은 몸 전환만으로 복사하지 않으며, 숨은 사실을 실패 이유로 드러내지 않는다.
 - 법적 소유와 물리 보관은 별개다. 소유권을 얻어도 점령된 창고의 물자는 인벤토리로 순간 이동하지 않고, 운송 중인 장비는 도착 전에 쓸 수 없다.
 - 이름은 식별이 아니다. 사람과 사건과 재산은 내부 식별로 가리킨다.
-- 이 영역의 규칙은 이미 잠긴 결정을 바꾸지 않는다. 임명은 공직 권한을 주고 수여는 작위 권리의 보유자를 바꾸며 위임은 원 보유자를 남긴다. 전쟁에는 등록된 정당한 명분이 있어야 한다.
+- 이 영역의 규칙은 이미 잠긴 결정을 바꾸지 않는다. 임명은 공직 권한을 주고 수여는 직함 권리의 보유자를 바꾸며 위임은 원 보유자를 남긴다. 전쟁에는 등록된 정당한 명분이 있어야 한다.
 
 ## 다른 영역이 맡는 것
 
 - **관계·기억·충성(D07).** 신뢰가 행동의 입력으로 쓰이는 방식과 생존자의 애도 사건 처리.
 - **가문·친족·혼인·양자(D08).** 혼인이 성립하는지와 가문의 제도. 이 문서는 이미 성립한 혼인의 효과를 효과마다 따로 보고, 적용 제도를 모르는 사례의 성립과 효과는 미정으로 유지한다.
 - **국가·정부·기관·정통성(D09).** 선거, 지명, 시험, 세습, 인준을 나라마다 어떻게 하는지와 빈 직위를 누가 채우는지. 시작 계승의 방식 이름은 이미 세계관에 있고, 그 안의 유권자·성립 인원·동점 처리는 그 영역의 미결 입력이다.
-- **작위·권리·명분·인준(D10).** 어떤 권리가 죽음과 함께 끝나거나 옮겨 가는지, 주장의 제도.
+- **직함·권리·명분·인준(D10).** 어떤 권리가 죽음과 함께 끝나거나 옮겨 가는지, 주장의 제도.
 - **수여·위임·회수·봉신(D11).** 위임 상태의 세부와 수여·회수 절차. 위임을 받은 사람이 죽을 때 원래 권리가 보존되는 경계는 이 문서가 유지한다.
 - **자산·채무·상속·인도(D13).** 재산을 어떻게 나누고 유언과 지분과 담보를 어떻게 다루는지. 수혜자가 없으면 이 문서는 보류만 한다.
 - **전투·지휘·분대·정원(D15).** 분대 정원의 식과 임시 분대장 지휘 효과의 크기.
@@ -89842,10 +89842,10 @@ The items below are boundaries where the current rules cannot fix the outcome. E
 ### 크루세이더 킹즈 3 (Crusader Kings III, Paradox Interactive)
 
 - 판본: 설치본 1.20.0.3, 빌드 25652598(선행 감사의 설치 경계; 활성 분기·DLC·모드 상태는 미확인). 아래 내용은 보존된 스크립트·문서 조각 기준이며 실행 동작 검증이 아니다.
-- 후계 지정: 지정 자격·군주별 비용·지정 효과의 분기(행정 최상위 군주 일치, 공동 통치, 만달라(Mandala) 특례, 성인 모험가와 위신 없음 분기)가 스크립트 선언으로 확인되었다. 원시 계승 재계산 관측은 아니다.
+- 후계 지정: 지정 자격·통치자별 비용·지정 효과의 분기(행정 최상위 통치자 일치, 공동 통치, 만달라(Mandala) 특례, 성인 모험가와 위신 없음 분기)가 스크립트 선언으로 확인되었다. 원시 계승 재계산 관측은 아니다.
 - 계승 순위와 선거: 상속 계급, 선거 후보 정책, 최고 점수 선택과 가점 구성은 확인되었다. 동점·동연령의 원시 순위는 보존 원문에 없어 미해결로 남는다.
-- 분할 상속: 계승 법 설정과 최소 지분은 확인되었다. 엔진의 작위 순회·포장·반올림은 관측되지 않아 미해결이다.
-- 직위 선거와 임명: 봉건 작위 선거와 행정 임원 임명의 분리, 가점 정의와 상위 누적 변수는 확인되었다. 원장 저장·상한 적용·동점 처리는 미해결이다.
+- 분할 상속: 계승 법 설정과 최소 지분은 확인되었다. 엔진의 직함 순회·포장·반올림은 관측되지 않아 미해결이다.
+- 직위 선거와 임명: 봉건 직함 선거와 행정 임원 임명의 분리, 가점 정의와 상위 누적 변수는 확인되었다. 원장 저장·상한 적용·동점 처리는 미해결이다.
 - 동시 사망: 사전 사맡 처리와 동시 효과·사건 지원은 문서화되어 있으나 다중 사망의 대기열·동점·원자 커밋은 미해결이다. 어떤 순서도 추론하지 않는다.
 - 진행 전쟁: 통상 명분 무효화와 청구자 진영 전환은 별개 경로로 확인되었다. 재평가 시점은 미해결이고, 상속인에게 명분이 이전된다고 추론하지 않는다.
 - 구금과 생존: 수감은 별도의 생존 상태 사건이며 일반 사망 계승이 아니다. 활동·이동 효과는 범위가 한정되어 있다. 현행 D12 r2 조사에서 ''수감 상속인은 보편 실격''은 원 소비자가 명시적으로 배제한 가설적이고 근거 없는 일반화로 분류되었으며, 실제 소비자 모순은 확인되지 않았다. 만달라 특례의 도전 경로와 추방·양위의 별도 경로는 각각의 범위에서 유지된다.
@@ -89856,13 +89856,13 @@ The items below are boundaries where the current rules cannot fix the outcome. E
 ### 놀랜드 (Norland, Long Jaunt / Hooded Horse)
 
 - 판본: 공식 커뮤니티 위키 oldid 캡처(Actions rev1318, Lords rev1314, World rev1284, Warfare rev1319)와 Steam 공지(식별 6146943657173940808, 1796631172375296, 1809869180071665, 1816849002015273, 1825093633188129, 1830797770236682, 1839676055888772, 1845383656387035), 역사 캡처 빌드 25211575 기준의 문서 조사다. 현재 빌드·실행 검증이 아니다.
-- 후계 지정과 왕위 승계 행동(위키 rev1318): 대상이 적격일 때 후계로 지정하거나 왕위를 넘기는 행동. 지정 행동의 사례일 뿐 자동 계승 선택의 원시 규칙은 보존 자료에 없다.
-- 반지 규칙(공지 6146943657173940808, 패치 25): 군주 사망 시 반지는 같은 세력의 배우자나 장자에게 넘어간다(둘 다 지역 지도 위에 있을 때). 우선순위, 원격 전달, 분할, 폐기는 문장이 정하지 않아 미해결이다.
-- 무역 협정은 왕의 사망 뒤에도 유지된다. ''모든 계약이 사망으로 일괄 종료된다''는 일반화의 반례다.
-- 수중군주 사망 시 가신이 모두 독립하고(위키 rev1284), 강화 상대의 사망으로 강화가 끝나기도 한다. 대상마다 다른 사례가 별개로 기록되어 있을 뿐 전역 사건 순서는 없다.
+- 후계 지정과 통치자 지위 승계 행동(위키 rev1318): 대상이 적격일 때 후계로 지정하거나 통치자 지위를 넘기는 행동. 지정 행동의 사례일 뿐 자동 계승 선택의 원시 규칙은 보존 자료에 없다.
+- 반지 규칙(공지 6146943657173940808, 패치 25): 통치자 사망 시 반지는 같은 세력의 배우자나 장자에게 넘어간다(둘 다 지역 지도 위에 있을 때). 우선순위, 원격 전달, 분할, 폐기는 문장이 정하지 않아 미해결이다.
+- 무역 협정은 통치자의 사망 뒤에도 유지된다. ''모든 계약이 사망으로 일괄 종료된다''는 일반화의 반례다.
+- 상위 통치자 사망 시 가신이 모두 독립하고(위키 rev1284), 강화 상대의 사망으로 강화가 끝나기도 한다. 대상마다 다른 사례가 별개로 기록되어 있을 뿐 전역 사건 순서는 없다.
 - 인질과 포로: 인질은 군사 행동 외의 행동에 배치할 수 있고(위키 rev1314), 포로 인정·시신·무덤 순서의 범위 수정과 통치자 납치 금지(패치 58)가 별개의 범위 한정 기록으로 존재한다. 섭정, 구금된 후계의 적격, 부활·회복, 몸 전환은 문서화되어 있지 않다.
 - 사망 문턱(위키 rev1319): 고통 문턱은 50이고, 넘으면 전사가 죽는다. 그 문턱 수치는 놀랜드의 것이고 서울의 사망 판정이 아니다.
-- 시험판과 본편 혼합 금지: 시험판 패치의 주교 승계 이전과 자유 작위 보호, 본편 패치의 후계 보존은 서로 다른 분기의 기록이다. 판본 계보와 설치 빌드 대응 없이 하나의 누적 현행 규칙으로 합치지 않는다.
+- 시험판과 본편 혼합 금지: 시험판 패치의 주교 승계 이전과 자유 직함 보호, 본편 패치의 후계 보존은 서로 다른 분기의 기록이다. 판본 계보와 설치 빌드 대응 없이 하나의 누적 현행 규칙으로 합치지 않는다.
 - 사망 결과의 부분 순서: 애도와 정치 제거, 사절 전달 중 사망, 반란 의도, 군단장 교체, 대상 사망으로 인한 취소가 각각 범위 한정으로 기록되어 있다. 검사한 자료는 서울에 필요한 전역 순서·원자성·예외 우선순위를 확립하지 않는다.
 - **서울과의 관계.** 놀랜드 문서는 별개 기능과 수정의 모음이지 통합된 계승 수명 주기가 아니며, 자동 계승 선택·동시 사망 트랜잭션·본체 전환 원장의 증거는 없다. 서울의 항목별 분리와 보존 규칙은 놀랜드에서 가져온 것이 아니며, 놀랜드의 문턱·규칙 수치는 서울의 수로 쓰지 않는다.
 
@@ -90092,7 +90092,7 @@ The observations from the two games are **the behavior of those games** and not 
 
 - Reading authority: **official hosted wiki documents and developer announcements** (documentary only). There is no installed-build badge, and nothing has been verified by execution.
 - Ring inheritance: developer announcement **Patch #25** (announcement ID `6146943657173940808`) — when a ruler dies, the ring passes to the spouse or eldest child of the same faction, with the condition that both are on the regional map. This is an observation of conditional transfer.
-- Debt of honor: developer announcement **Patch #36 (MAIN)** (ID `1797820624494526`) — it remains valid while both rulers are alive and does not need to be claimed immediately. The same announcement also includes a bug fix for when a king inherits a ring.
+- Debt of honor: developer announcement **Patch #36 (MAIN)** (ID `1797820624494526`) — it remains valid while both rulers are alive and does not need to be claimed immediately. The same announcement also includes a bug fix for when a ruler inherits a ring.
 - Delivery-order bug fix: developer announcement **Patch #41 (MAIN)** (ID `1813041031246909`) — a fix for a bug where the ransom quest appeared before the prisoner was actually delivered to the city. This is an after-the-fact repair observation pointing in the same direction as Seoul''s ordering rule that "arrival and delivery come first" (`economy-owner.20261003.arrival`, sp1.b65).
 - Storage and funds: developer announcement **Patch #42 (MAIN)** (ID `1815580768299345`) — fixes for vagrants stealing from storage, for confiscated goods going to the player''s storage when the thief is caught, and for the self-quests for depositing and withdrawing funds.
 - Borrowing: developer announcement **Patches 46–48 (MAIN)** (ID `1825093633188129`) — non-repayment only provokes the creditor''s anger, and the loan limit is adjusted to 500 coins. Seoul does not adopt this amount (12.7).
@@ -90191,7 +90191,7 @@ D13은 **자산, 채무, 상속, 인도**를 다룬다. 한 사람이 죽거나,
 - 한 본체·동일 행동 계약·세계 시간 하나: 플레이어는 한 본체 인물로 관여하고 다른 인물은 같은 행동 조건을 따른다(sp1.b3, sp1.b92; scope-map `singleplayer-one-body`).
 - 자산 종류의 분리: 개인 물자·장비·화폐, 기관 창고·금고·설비, 공동 재산과 지분, 임대·사용 허가, 빚·채권·담보, 기록·열쇠·유물은 서로 다른 것이다(sp1.b61; scope-map `separate-status-and-authority`).
 - 자산 상태의 아홉 축: 있는 장소, 수량 또는 개체, 소유자, 보관 책임자, 사용권, 예약, 담보, 인도 중, 분쟁. 물류 상태와 법적 권리 상태를 분리하고, 전쟁 중 운송 화물도 같은 자산 ID와 분할 원천을 유지한다(sp1.b62).
-- 계승 사건의 분리: 본체 계승, 국가·기관 수장 계승, 작위 계승, 재산 계승은 서로 다른 사건이다(sp1.b47; scope-map `succession-and-body-change`).
+- 계승 사건의 분리: 본체 계승, 국가·기관 수장 계승, 직함 계승, 재산 계승은 서로 다른 사건이다(sp1.b47; scope-map `succession-and-body-change`).
 - 영구 구금은 상속을 열지 않는다: 구금된 인물은 살아 있고 재산은 그 인물에게 남는다(sp1.b49).
 - 사망 시 전수의 순서: 상속 목록 확정 → 분쟁/담보 표시 → 소유권 전이 → 실제 인도 예약 → 수령 검증. 소유권을 얻어도 적 점령 창고의 물자가 인벤토리로 순간 이동하지 않는다. 분할 상속은 총량을 보존하고 예약·담보 중 물자는 별도 표시한다. 미확정 제도는 상속 보류이며 무소유 상태나 자동 균등 분배로 대신하지 않는다(sp1.b65).
 - 수혜자 판정 근거와 기관 잔류: 개인 재산은 해당 국가 제도·유효 유언·혼인/공동재산 계약을 검사하고, 기관 재산은 기관에 남고 새 직위 보유자는 필요한 관리 권한만 인수하며, 빚·채권은 귀속과 승계 조항을 검사해 모든 후계에게 무조건 부채를 떠넘기지 않는다(sp1.b64).
@@ -90373,7 +90373,7 @@ D13은 자산의 정체, 소유, 담보와 예약의 표시, 소유권 전이, �
 - 몸값: `game/common/scripted_effects/00_prison_effects.txt` 1–234행, `game/common/character_interactions/00_prison_interactions.txt` 1886–2051행, `game/common/script_values/00_interaction_values.txt` 171–371행. 지불이 석방보다 앞서는 순서는 읽혀지나, 전액 분기의 하한 조건 문구가 모호하여 승격 보류로 남아 있다(ESCALATE D13-C04). 이 조각을 서울 규칙으로 인용하지 않는다.
 - 차용과 상속: `game/common/scripted_effects/00_scripted_effects.txt` 20–79행(대출 변수 설정), `game/events/death_events/death_management_events.txt` 95–105·141–291행(사망 시 채권자 재귀속), `game/events/relations_events/vassal_events.txt` 1033–1071·1205–1215·1275–1290행(상환), `game/common/on_action/death.txt` 2417–2425행. 사망 이벤트가 채무자 목록을 `player_heir`에 다시 묶는 관찰은 서울의 "모든 후계에게 빚을 얹지 않는다"(sp1.b64)와 **다른** 설계임을 보여 준다(D13-C05, D13-C06).
 - 실제 인도: `game/common/task_contracts/laamp_transport_contracts.txt` 367–445·455–554·557–664행, `game/events/dlc/ep3/ep3_contract_events.txt` 78–94·393–418·514–536·2363–2368·2446–2475행, `game/common/on_action/travel_on_actions.txt` 186–222·1110–1150행. 계약 여행 중 소유자 변수 임시 변경은 운송 보관의 표현이지 별도의 법적 소유자 이관으로 읽히지 않았다(D13-C07).
-- 작위 결속 상속: `game/common/on_action/title_on_actions.txt` 1067–1129·1387–1437행. 선행 보유자의 유물 중 작위 지정 변수와 일치하는 것을 새 보유자에게 넘긴다(D13-C08).
+- 직함 결속 상속: `game/common/on_action/title_on_actions.txt` 1067–1129·1387–1437행. 선행 보유자의 유물 중 직함 지정 변수와 일치하는 것을 새 보유자에게 넘긴다(D13-C08).
 - 재정 구제와 부채 단계: `game/common/character_interactions/10_tgp_interactions.txt` 11626–11782행, `game/common/defines/00_defines.txt` 295–302행(소득 개월수 기준 부채 단계 배열).
 - 위키: 이번에 새로 대조한 공식 호스팅 커뮤니티 문서는 Succession laws oldid=36702, Prisoner oldid=36542, Subjects oldid=36525, Authority laws oldid=36448, Resources oldid=36512의 다섯 문서다. 별도로 **Government oldid=36619, Laws oldid=36572, Power sharing oldid=36540**의 세 문서는 기존의 과거 인용만 유지한다. 이 세 문서는 정확한 과거 색인 경로가 현재 존재하지 않아 이번에 새로 읽은 근거가 아니며, 대체 원문도 채택하지 않았다. 계승 시 금 예외의 형제 분할 비율과 상한은 관찰로만 남아 있고 서울 값이 아니다(D13-C11).
 - 읽은 한계: 설치 스크립트·위키 문서 대조이며 원시 엔진 내부(고정소수점, 할당 원자성, 저장 형식)는 확인되지 않았다. 몇몇 주장은 반증 또는 승격 보류로 분류되어 있다.
@@ -90381,8 +90381,8 @@ D13은 자산의 정체, 소유, 담보와 예약의 표시, 소유권 전이, �
 ### 11.2 Norland
 
 - 읽은 권위: **공식 호스팅 위키 문서와 개발자 공지**(documentary only). 설치 빌드 배지가 없고 실행 검증되지 않았다.
-- 반지 상속: 개발자 공지 **Patch #25**(공지 식별자 `6146943657173940808`) — 군주 사망 시 반지가 같은 세력의 배우자 또는 맏이에게 넘어가되 두 사람이 지역 지도에 있을 때라는 조건이 붙는다. 조건부 이전의 관찰이다.
-- 명예의 빚: 개발자 공지 **Patch #36 (MAIN)**(식별자 `1797820624494526`) — 두 군주가 살아 있는 동안 유효하고 즉시 청구할 필요가 없다. 같은 공지에 왕이 반지를 상속받을 때의 결함 수정이 함께 있다.
+- 반지 상속: 개발자 공지 **Patch #25**(공지 식별자 `6146943657173940808`) — 통치자 사망 시 반지가 같은 세력의 배우자 또는 맏이에게 넘어가되 두 사람이 지역 지도에 있을 때라는 조건이 붙는다. 조건부 이전의 관찰이다.
+- 명예의 빚: 개발자 공지 **Patch #36 (MAIN)**(식별자 `1797820624494526`) — 두 통치자가 살아 있는 동안 유효하고 즉시 청구할 필요가 없다. 같은 공지에 통치자가 반지를 상속받을 때의 결함 수정이 함께 있다.
 - 인도 순서 결함 수정: 개발자 공지 **Patch #41 (MAIN)**(식별자 `1813041031246909`) — 포로를 실제로 도시에 인도하기 전에 몸값 임무가 나타나던 결함 수정. "도착·인도가 선행한다"는 서울의 순서 규칙(`economy-owner.20261003.arrival`, sp1.b65)과 같은 방향의 사후 수선 관찰이다.
 - 창고와 자금: 개발자 공지 **Patch #42 (MAIN)**(식별자 `1815580768299345`) — 유랑민의 창고 절도와 적발 시 몰수품이 플레이어 창고로 가는 처리, 자금 예치·인출 자기 과제 수정.
 - 차용: 개발자 공지 **Patches 46–48 (MAIN)**(식별자 `1825093633188129`) — 미상환은 채권자의 분노만 일으키고 대출 한도가 500 동전으로 조정. 서울은 이 액수를 채택하지 않는다(12.7).
@@ -90884,7 +90884,7 @@ Facts that occurred in the world and information a character has learned are dis
 
 세계에 실제 일어난 행동과 각 인물이 관측·보고로 알게 된 행동을 따로 둔다. 전투 결과 원장에 숨은 행동이 존재한다고 먼 지휘관이 곧바로 알지는 않는다. 누구의 보고로 언제 알았는지를 관계 평가가 읽는다. 표시에서도 권한·선행조건 부족·응답 대기·제도 미정을 구분하고, 숨은 사실 대신 확인된 근거 부족을 설명한다. 인물과 분대 이름은 검색할 수 있게 하되 동명이인·개명·지휘관 교체의 동일성은 영구 식별자로 확인한다. 역사 명부는 당시 신원 발급의 근거일 뿐 현재 생존·위치·권리·능력의 근거가 아니다.
 
-신뢰 T[갑,을]와 T[을,갑]는 별개다. 친구는 25 이상, 적은 -25 이하, 숙적은 -50 이하라는 기존 문턱을 유지한다. 군주에 대한 충성 0–100은 별도 상태다. 친족·계약·맹세·지휘는 관계 사실이지 신뢰 점수 자체가 아니다. 높은 신뢰는 없는 지휘권이나 동의를 만들지 않는다. 불복종에 고정 신뢰 감소를 자동 부여하지 않으며, 관계 변화와 감쇠는 관측 근거와 승인된 규칙을 요구한다. 후계에게 사망자의 개인 신뢰를 복사하지 않는다.
+신뢰 T[갑,을]와 T[을,갑]는 별개다. 친구는 25 이상, 적은 -25 이하, 숙적은 -50 이하라는 기존 문턱을 유지한다. 세력 수장에 대한 충성 0–100은 별도 상태다. 친족·계약·맹세·지휘는 관계 사실이지 신뢰 점수 자체가 아니다. 높은 신뢰는 없는 지휘권이나 동의를 만들지 않는다. 불복종에 고정 신뢰 감소를 자동 부여하지 않으며, 관계 변화와 감쇠는 관측 근거와 승인된 규칙을 요구한다. 후계에게 사망자의 개인 신뢰를 복사하지 않는다.
 
 근거: sp1.b13–14, b79–89, b111–115; D15 source.b14, b17, b24.
 
@@ -91187,7 +91187,7 @@ The **Norland** comparison covers a fixed wiki revision, MAIN/BETA patch posts, 
 
 현재 승인된 점수 칸은 다음과 같다.
 
-- 군주 사이 전쟁의 전투 기여는 최대 50이다.
+- 세력 수장 사이 전쟁의 전투 기여는 최대 50이다.
 - 상대 수장을 실제로 포획하면 +100이다.
 - 그 전쟁이 지정한 주 후계, 두 번째 후계, 세 번째 후계를 실제로 포획하면 각각 +50, +25, +10이다.
 - 그 전쟁의 수도를 실제로 점령하면 +10이다.
@@ -91201,7 +91201,7 @@ The **Norland** comparison covers a fixed wiki revision, MAIN/BETA patch posts, 
 
 ## 점령, 권리, 정착지는 별도 상태다
 
-거점을 점령하면 현장의 실효 지배가 바뀐다. 법적 권리와 작위 원장, 인준, 주민 협력, 정착지 운영, 안정화, 통합, 시설 복구는 자동으로 바뀌지 않는다. 전쟁 종결로 권리가 이전되어도 현재 통제 주체와 정착지의 복구 상태는 별도로 남는다. 주장을 구성해도 점령한 것이 아니며, 점령해도 주장이 인준된 것이 아니다.
+거점을 점령하면 현장의 실효 지배가 바뀐다. 법적 권리와 직함 원장, 인준, 주민 협력, 정착지 운영, 안정화, 통합, 시설 복구는 자동으로 바뀌지 않는다. 전쟁 종결로 권리가 이전되어도 현재 통제 주체와 정착지의 복구 상태는 별도로 남는다. 주장을 구성해도 점령한 것이 아니며, 점령해도 주장이 인준된 것이 아니다.
 
 ## 강화 협상과 포로
 
@@ -91261,7 +91261,7 @@ The **Norland** comparison covers a fixed wiki revision, MAIN/BETA patch posts, 
 
 ## 영역 소유권
 
-D16은 유효한 명분으로 전쟁을 열고, 승인된 사건을 중복 없이 W에 반영하며, 정확한 ±100에서 계속 유효한 명분의 목표만 종결하는 규칙을 소유한다. D10은 권리·작위·인준과 수혜자 자격을, D15는 모든 배정 분대의 즉시 지휘와 지휘관 자율·평가를, D17은 가격·수락·예약·서명·인도를, D18은 같은 경계의 사건 순서를 소유한다. 이동 영역은 실제 도착을 판정하고, 정착지 영역은 운영·복구·통합을 소유한다.
+D16은 유효한 명분으로 전쟁을 열고, 승인된 사건을 중복 없이 W에 반영하며, 정확한 ±100에서 계속 유효한 명분의 목표만 종결하는 규칙을 소유한다. D10은 권리·직함·인준과 수혜자 자격을, D15는 모든 배정 분대의 즉시 지휘와 지휘관 자율·평가를, D17은 가격·수락·예약·서명·인도를, D18은 같은 경계의 사건 순서를 소유한다. 이동 영역은 실제 도착을 판정하고, 정착지 영역은 운영·복구·통합을 소유한다.
 
 ## 아직 승인되지 않은 선택지
 
@@ -91281,7 +91281,7 @@ D16은 유효한 명분으로 전쟁을 열고, 승인된 사건을 중복 없�
 
 - 7. **원본 Basic과 세 전투 계산 범위** — 원천/상태: T68-COMBAT-THREE-DIMENSIONS/three-scope-calculation, GP-11/combat-calculation; combat-formula.20261003.status, gameplay-unknown.20261003.matrix/GP-11, sp1.b114, sp1.b100; 미승인. 사용: 개인·상황·부대 계산과 공성·포획 생성의 입력을 비교한다. 이상: 원본 개인 기준과 서울 재설계를 같은 전후 상태로 비교한다. 공백: 원본 Basic 식별자·규칙·정오표와 함수·계수·상하한·채널·배분·시간 환산이 없다. 선택지: 원본 확보까지 계산을 미정으로 유지 / Basic 비의존 새 모델을 별도 승인하되 Basic 완료로 표시하지 않음. 이유: 해당 원천은 설계 범위 또는 미정 질문이며 정책·수치 선택의 승인 근거가 아니다. 조치: 원본과 정확한 별도 결정 뒤 계산하며 지금은 범위만 유지한다. QA: 한 행동의 개인·집계 피해 중복과 인구·장비·HP 보존을 검사한다.
 
-- 8. **작위·영역·인준 입력** — 원천/상태: GP-07/titles-ratification; gameplay-unknown.20261003.matrix/GP-07, sp1.b38, sp1.b39, sp1.b100; 미승인. 사용: 권리 이전 대상과 인준 기관을 찾는다. 이상: 실제 작위 ID·영역·보유자·상위 계약이 설명 가능하다. 공백: 실제 입력과 취득·통합 비용/기간, 미배정 작위 제도가 없다. 선택지: 개별 작위별 제도 등록 / 제도별 공통 틀에 개별 작위 입력 등록. 이유: 해당 원천은 설계 범위 또는 미정 질문이며 정책·수치 선택의 승인 근거가 아니다. 조치: D10과 정착지 소유자가 입력과 제도를 승인한다. QA: 통제자와 작위 보유자가 다른 경우, 공석, 시설만 취득을 비교한다.
+- 8. **직함·영역·인준 입력** — 원천/상태: GP-07/titles-ratification; gameplay-unknown.20261003.matrix/GP-07, sp1.b38, sp1.b39, sp1.b100; 미승인. 사용: 권리 이전 대상과 인준 기관을 찾는다. 이상: 실제 직함 ID·영역·보유자·상위 계약이 설명 가능하다. 공백: 실제 입력과 취득·통합 비용/기간, 미배정 직함 제도가 없다. 선택지: 개별 직함별 제도 등록 / 제도별 공통 틀에 개별 직함 입력 등록. 이유: 해당 원천은 설계 범위 또는 미정 질문이며 정책·수치 선택의 승인 근거가 아니다. 조치: D10과 정착지 소유자가 입력과 제도를 승인한다. QA: 통제자와 직함 보유자가 다른 경우, 공석, 시설만 취득을 비교한다.
 
 - 9. **명령 평가 인터페이스** — 원천/상태: GP-11/command-evaluation-interface; gameplay-unknown.20261003.matrix/GP-11, sp1.b114, sp1.b100; 미승인. 사용: 전쟁에 전달할 전투 사실과 명령 준수·성과를 구분한다. 이상: 실제 관측·목적·원 발신자·결과 ID로 책임을 설명한다. 공백: 평가 화면·주체·현지 판단 상세와 관계·승진·징계 함수가 없다. 선택지: 명령별 평가 / 명령 변경 구간별 평가. 이유: 해당 원천은 설계 범위 또는 미정 질문이며 정책·수치 선택의 승인 근거가 아니다. 조치: D15가 화면과 평가 접점을 선택하되 고정 불복종 페널티를 만들지 않는다. QA: 불가능한 명령·발신자 사망과 자의적 거부, 좋은 성과와 준수 여부를 분리한다.
 
@@ -91342,7 +91342,7 @@ Each item must pass all of the following conditions to remain in a finalized pro
 5. If a right or contract has a fixed beneficiary, the beneficiary is not changed simply because one party is the attacker.
 6. Immediately before signing, the war, casus belli, authority, ownership, claim, and custody ledgers, and the actual ability to fulfill, are checked again.
 
-Negotiation items may include transfers of fiefs and rights, payment or return of assets, release or repatriation of prisoners, and promises such as passage, water supply, rations, escort, ratification, higher-level contracts, and ceasefires. Characters are subjects of release, repatriation, interview, and voluntary assignment, not goods to be traded. Forced marriage and non-consensual assignment do not exist in this structure. A synthetic being recognized as a person is likewise not a transferable asset.
+Negotiation items may include transfers of stations and rights, payment or return of assets, release or repatriation of prisoners, and promises such as passage, water supply, rations, escort, ratification, higher-level contracts, and ceasefires. Characters are subjects of release, repatriation, interview, and voluntary assignment, not goods to be traded. Forced marriage and non-consensual assignment do not exist in this structure. A synthetic being recognized as a person is likewise not a transferable asset.
 
 A name may be used to find a subject, while a stable ID establishes the actual identity. Even if a name changes or there are namesakes, the IDs of proposals, rights, and delivery targets do not change. A past approval roster is a record of past identification, not an authority that overwrites the current world''s ownership, survival, custody, position, location, or authority. This surface rule is the current proposal owned by D01 and does not imply D17''s prices or acceptance approval.
 
@@ -91357,7 +91357,7 @@ Even when several numbers appear together on the negotiation screen, they are di
 
 Therefore `V <= W` is not an automatic acceptance condition. The sum structure of V only produces comparable records; it does not replace the other side''s consent or signing authority. A finalized proposal containing even one unregistered item is blocked from signing and settlement, but this does not remove the eligibility to keep negotiating the other registered items in a new version.
 
-Already approved war score figures are recorded in W only when the actual role and the event match. A battle contribution between lords is at most 50, capturing the opposing head is +100, the actual primary heir is +50, the second heir is +25, the third heir is +10, and actually occupying the capital is +10. The same character and event are not counted twice. +30 is the point at which a white-peace request can be made, not an automatic acceptance. These numbers are not item prices, acceptance modifiers, or reparation amounts. The denominator for occupation contribution, partial occupation, the duration of target control, and the rate of increase have not been decided.
+Already approved war score figures are recorded in W only when the actual role and the event match. A battle contribution between faction leaders is at most 50, capturing the opposing head is +100, the actual primary heir is +50, the second heir is +25, the third heir is +10, and actually occupying the capital is +10. The same character and event are not counted twice. +30 is the point at which a white-peace request can be made, not an automatic acceptance. These numbers are not item prices, acceptance modifiers, or reparation amounts. The denominator for occupation contribution, partial occupation, the duration of target control, and the rate of increase have not been decided.
 
 ## 4. Signing, Settlement, Reservation, and Actual Delivery
 
@@ -91412,7 +91412,7 @@ The player should be able to distinguish and view the current W, the proposal ve
 
 ### Example A — One Registered Price and One Unregistered Price
 
-In a valid war where W is 42, A puts the return of a fief''s rights and the repatriation of prisoners into a single proposal. The first item has a registered price version, but the second does not. V is not completed, and the unregistered item is not calculated as 0. If A attempts a final signature, signing of the entire proposal is blocked. The first item can continue to be negotiated in a new proposal version.
+In a valid war where W is 42, A puts the return of a station''s rights and the repatriation of prisoners into a single proposal. The first item has a registered price version, but the second does not. V is not completed, and the unregistered item is not calculated as 0. If A attempts a final signature, signing of the entire proposal is blocked. The first item can continue to be negotiated in a new proposal version.
 
 ### Example B — Rejection Even When V Is Smaller Than W
 
@@ -91512,7 +91512,7 @@ The two games'' item prices, income multipliers, auto-acceptance counts, duratio
 
 따라서 `V <= W`는 자동 수락 조건이 아니다. V의 합 구조는 비교 가능한 기록을 만들 뿐, 상대의 동의나 서명 권한을 대신하지 않는다. 미등록 항목 하나가 포함된 확정 안은 서명과 정산이 막히지만, 다른 등록 항목을 새 판본에서 계속 협상할 자격까지 사라지지는 않는다.
 
-이미 승인된 전쟁 점수 수치는 실제 역할과 사건이 일치할 때만 W에 기록한다. 군주 사이 전투의 기여는 최대 50, 상대 수장 포획은 +100, 실제 주 후계는 +50, 두 번째 후계는 +25, 세 번째 후계는 +10, 실제 수도 점령은 +10이다. 같은 인물과 사건을 중복 계산하지 않는다. +30은 백지 강화를 요청할 수 있는 자리이지 자동 수락이 아니다. 이 수들은 항목 가격, 수락 보정, 배상액이 아니다. 점령 기여의 분모, 부분 점령, 목표 지배 기간과 증가율은 정해져 있지 않다.
+이미 승인된 전쟁 점수 수치는 실제 역할과 사건이 일치할 때만 W에 기록한다. 세력 수장 사이 전투의 기여는 최대 50, 상대 수장 포획은 +100, 실제 주 후계는 +50, 두 번째 후계는 +25, 세 번째 후계는 +10, 실제 수도 점령은 +10이다. 같은 인물과 사건을 중복 계산하지 않는다. +30은 백지 강화를 요청할 수 있는 자리이지 자동 수락이 아니다. 이 수들은 항목 가격, 수락 보정, 배상액이 아니다. 점령 기여의 분모, 부분 점령, 목표 지배 기간과 증가율은 정해져 있지 않다.
 
 ## 4. 서명, 정산, 예약과 실제 인도
 
@@ -92000,7 +92000,7 @@ The only references to the original work are the GURPS Fourth Edition preview th
 - [D07 관계·기억·충성·평가](/gdd/system-design/mechanism-design-index-d07/) · [상황](/gdd/system-design/domain-situations/). 계산 연결: SEOUL-RELATION-CLASS, SEOUL-SINGLE-RESULT.
 - [D08 가문·친족·혼인·양자](/gdd/system-design/mechanism-design-index-d08/) · [상황](/gdd/system-design/domain-situations/). 계산 연결: 상태 계약만 소비.
 - [D09 국가·정부·기관·정통성](/gdd/system-design/mechanism-design-index-d09/) · [상황](/gdd/system-design/domain-situations/). 계산 연결: 상태 계약만 소비.
-- [D10 작위·권리·명분·인준](/gdd/system-design/mechanism-design-index-d10/) · [상황](/gdd/system-design/domain-situations/). 계산 연결: SEOUL-W-ENDPOINT.
+- [D10 직함·권리·명분·인준](/gdd/system-design/mechanism-design-index-d10/) · [상황](/gdd/system-design/domain-situations/). 계산 연결: SEOUL-W-ENDPOINT.
 - [D11 수여·위임·회수·봉신](/gdd/system-design/mechanism-design-index-d11/) · [상황](/gdd/system-design/domain-situations/). 계산 연결: 상태 계약만 소비.
 - [D12 후계·사망·본체 전환](/gdd/system-design/mechanism-design-index-d12/) · [상황](/gdd/system-design/domain-situations/). 계산 연결: 상태 계약만 소비.
 - [D13 자산·채무·상속·인도](/gdd/system-design/mechanism-design-index-d13/) · [상황](/gdd/system-design/domain-situations/). 계산 연결: SEOUL-CARGO-CONSERVATION, SEOUL-SINGLE-RESULT.
@@ -92076,7 +92076,7 @@ The confirmed rules of the existing GDD are maintained. Following the owner''s i
 
 ## 1. The Center of Play and the Common Execution Contract
 
-The player''s goal is to maintain and expand the main-body character''s survival, livelihood, relationships, skills, and rights. Becoming a ruler is not the only path of progression. Workers, agents, officers on duty, commanders, fief holders, and institutional heads all act on the basis of their own qualifications and contracts. Livelihood achievements become evidence of contract fulfillment, and that evidence affects cooperation, appointment, support, and confirmation. Successfully completing a repair does not automatically grant a post.
+The player''s goal is to maintain and expand the main-body character''s survival, livelihood, relationships, skills, and rights. Becoming a ruler is not the only path of progression. Workers, agents, officers on duty, commanders, station holders, and institutional heads all act on the basis of their own qualifications and contracts. Livelihood achievements become evidence of contract fulfillment, and that evidence affects cooperation, appointment, support, and confirmation. Successfully completing a repair does not automatically grant a post.
 
 ### 1.1 Status Is Not Merged into a Single Rank Slot
 
@@ -92086,14 +92086,14 @@ The player''s goal is to maintain and expand the main-body character''s survival
 | Location | Actual whereabouts, movement route, posture, progress | On-site access, interviews, work, combat participation |
 | Affiliation and citizenship | Joining a state or organization, recognizing party and edition | Rights and duties of the joined party |
 | Office | Institution, title, tier, term/succession method, jurisdiction, signing authority | Which institutional acts can be approved |
-| Title and Holding | Peerage ID, holder, target domain, superior contract, recognition status | What rights and duties the character holds |
+| Title and Holding | Title ID, holder, target domain, superior contract, recognition status | What rights and duties the character holds |
 | Effective control | On-site controller, stationing, occupation, dispute | Can it currently be enforced on site |
 | Command | Target unit, command trunk line, scope of delegation, expiration | Which orders can be given to whom |
 | Skill and Labor | Personal proficiency, qualifications, schedule, reservations | Can the character actually do the work |
 | Property and access | Ownership, custody, use, collateral, lease, and vault authority | Can the character spend, transfer, or deliver the property |
 | Relationships and memory | Directional trust, kinship, marriage, debt, oaths, event memories | Basis for acceptance, refusal, support, retaliation |
 
-Post tier is a comparative classification. The v4 ladder is one skeleton shared by the three factions: by the number of station masters below, Station Master (1), Headquarters Chief (2 to 4), Bureau Director, Bishop, or Cooperative Head (5 to 9), and Commissioner, Cardinal, or Director (10 or more), with the President, the Hierophant, or the Chair of the Board at the top (Power Structure section 3.0). Peerage and post, and occupation and command authority, are separate. Holding public office does not turn an institutional vault into personal property or give command over all troops.
+Post tier is a comparative classification. The v4 ladder is one skeleton shared by the three factions: by the number of station masters below, Station Master (1), Headquarters Chief (2 to 4), Bureau Director, Bishop, or Cooperative Head (5 to 9), and Commissioner, Cardinal, or Director (10 or more), with the President, the Hierophant, or the Chair of the Board at the top (Power Structure section 3.0). Title and post, and occupation and command authority, are separate. Holding public office does not turn an institutional vault into personal property or give command over all troops.
 
 ### 1.2 Execution Order of All Actions
 
@@ -92105,7 +92105,7 @@ If death, dismissal, occupation, or loss of contact occurs between approval and 
 
 The action UI distinguishes "Possible," "Prerequisites Lacking," "No Authority," "Awaiting Response," and "System Undecided" and displays the basis. It does not leak hidden facts through the reason display and instead explains with "Insufficient confirmed basis."
 
-## 2. Actual Actions by Character and Peerage State
+## 2. Actual Actions by Character and Title State
 
 ### 2.1 Common Actions and Restrictions
 
@@ -92113,9 +92113,9 @@ Every able person can perform their own movement, observation, conversation requ
 
 | Status/Rights State | Available Actions | Actions Requiring Additional Authority |
 | --- | --- | --- |
-| Unaffiliated·Random | Employment applications, trade, expeditions, escort contracts, membership requests, requests for arbitration of one''s own rights | Joining before receiving a state fief grant, commanding state troops, granting titles to others |
+| Unaffiliated·Random | Employment applications, trade, expeditions, escort contracts, membership requests, requests for arbitration of one''s own rights | Joining before receiving a state station grant, commanding state troops, granting titles to others |
 | State Member·No Office | Services under civic/organizational institutions, labor/education/service contracts, petitions for grants | Declaring war in the state''s name, disposing of public assets, ratifying records |
-| Tier 5 Staff | Assigned counter, duty, and signing work; submitting evidence and reporting | Appointments, grants, or musters beyond one''s own signing scope; a position without land is not treated as a fief |
+| Tier 5 Staff | Assigned counter, duty, and signing work; submitting evidence and reporting | Appointments, grants, or musters beyond one''s own signing scope; a position without land is not treated as a station |
 | Tier 4~2 Institutional Officials | Orders, budgets, and duty assignments for delegated facilities, living areas, and tasks | Tier alone does not open up military command, inheritance, or full state diplomacy |
 | Title Holder | Contractual operations, income, and duties of one''s own title; claims to restore rights; permitted sub-grants | Immediate use of facilities not yet occupied; arbitrary creation of titles of equal or higher rank |
 | Appointed Commander | Posture, movement, and operation orders for the designated unit; remote orders are subject to the communication contract | Disposing of institution-owned property, forcing civilian labor, incorporating other units |
@@ -92165,7 +92165,7 @@ Example: If A fights to restore B''s claim and wins, B becomes the new holder of
 
 ### 4.1 Grant Contract
 
-Inputs: grantor, recipient, state membership status, target title and version, grant authority, superior contract, rights·duties·term, ratifying body, and delivery conditions for relics/documents/keys. To receive a grant from an existing state, one must already belong to it. A head may only distribute titles lower than their own. The old limit of two directly held duke-rank titles was replaced by the v4 station master ladder, and the ten-station tier (Commissioner, Cardinal, Director) is granted only by its appointing authority (the President, the Hierophant, the board). No arbitrary title is created where there is no actual title ID, territory, or rank.
+Inputs: grantor, recipient, state membership status, target title and version, grant authority, superior contract, rights·duties·term, ratifying body, and delivery conditions for relics/documents/keys. To receive a grant from an existing state, one must already belong to it. A head may only distribute titles lower than their own. The old limit of two directly held top-tier titles was replaced by the v4 station master ladder, and the ten-station tier (Commissioner, Cardinal, Director) is granted only by its appointing authority (the President, the Hierophant, the board). No arbitrary title is created where there is no actual title ID, territory, or rank.
 
 States: draft → authority/target check → recipient consent → ratification/approval → rights ledger change → operational takeover → completed or disputed. The default policy is not to change the holder before the required ratification. If on-site takeover fails after approval, it remains as "rights held·not recovered/takeover incomplete." In regions with a central records culture, omitting record ratification or relic inspection is grounds for invalidity.
 
@@ -92382,7 +92382,7 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 ## 1. 플레이의 중심과 공통 실행 계약
 
-플레이어의 목적은 본체의 생존·생활·관계·기술·권리를 유지하고 확대하는 것이다. 군주가 되는 것만이 진행 경로는 아니다. 노동자·요원·당직자·지휘관·영지 보유자·기관 수장 모두 자신의 자격과 계약으로 행동한다. 생활 성과는 계약 이행의 증거가 되고, 그 증거가 협력·임명·지지·인준에 영향을 준다. 수리를 성공했다고 직위를 자동 지급하지 않는다.
+플레이어의 목적은 본체의 생존·생활·관계·기술·권리를 유지하고 확대하는 것이다. 세력 수장이 되는 것만이 진행 경로는 아니다. 노동자·요원·당직자·지휘관·영지 보유자·기관 수장 모두 자신의 자격과 계약으로 행동한다. 생활 성과는 계약 이행의 증거가 되고, 그 증거가 협력·임명·지지·인준에 영향을 준다. 수리를 성공했다고 직위를 자동 지급하지 않는다.
 
 ### 1.1 상태를 하나의 신분 칸에 합치지 않는다
 
@@ -92392,14 +92392,14 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 | 장소 | 실제 소재지, 이동 경로·태세·진척 | 현장 접근, 면담, 작업, 전투 참가 |
 | 소속·시민 자격 | 국가·조직 가입, 인정 주체와 판본 | 가입 대상 권리와 의무 |
 | 직위 | 기관·직함·티어, 임기/계승 방식, 관할, 서명 권한 | 어떤 기관 행위를 승인할 수 있는가 |
-| 작위·영지 | 작위 ID, 보유자, 대상 영역, 상위 계약, 인정 상태 | 어떤 권리와 의무를 가졌는가 |
+| 직함·영지 | 직함 ID, 보유자, 대상 영역, 상위 계약, 인정 상태 | 어떤 권리와 의무를 가졌는가 |
 | 실효 지배 | 현장 통제자, 주둔·점령·분쟁 | 현재 현장에서 집행 가능한가 |
 | 지휘 | 대상 부대·지휘 간선·위임 범위·만료 | 누구에게 어느 명령을 내릴 수 있는가 |
 | 기술·노동 | 개인 숙련, 자격, 일정, 예약 | 실제 일을 할 수 있는가 |
 | 재산·접근 | 소유·보관·사용·담보·임대·금고 권한 | 재산을 소비·양도·인도할 수 있는가 |
 | 관계·기억 | 방향성 신뢰, 친족, 혼인, 빚, 맹세, 사건 기억 | 수락·거절·지지·보복의 근거 |
 
-직위 티어는 비교 분류다. v4 계층은 세 세력 공통 골격으로, 산하 역장 수에 따라 역장(1)·본부장(2~4)·국장/주교/조합장(5~9)·청장/추기경/이사(10 이상)로 나뉘고 최상단은 대통령/교주/이사회장이다(권력 구조 3.0절). 작위와 직위, 직업과 지휘권은 별개다. 공직을 맡았다고 기관 금고가 개인 재산이 되거나 모든 병력을 지휘하지 않는다.
+직위 티어는 비교 분류다. v4 계층은 세 세력 공통 골격으로, 산하 역장 수에 따라 역장(1)·본부장(2~4)·국장/주교/조합장(5~9)·청장/추기경/이사(10 이상)로 나뉘고 최상단은 대통령/교주/이사회장이다(권력 구조 3.0절). 직함과 직위, 직업과 지휘권은 별개다. 공직을 맡았다고 기관 금고가 개인 재산이 되거나 모든 병력을 지휘하지 않는다.
 
 ### 1.2 모든 행동의 실행 순서
 
@@ -92411,7 +92411,7 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 행동 UI는 ‘가능’, ‘선행조건 부족’, ‘권한 없음’, ‘응답 대기’, ‘제도 미정’을 구분하고 근거를 표시한다. 숨은 사실을 이유 표시로 누설하지 않고 ‘확인된 근거 부족’으로 설명한다.
 
-## 2. 인물·작위 상태별 실제 행동
+## 2. 인물·직함 상태별 실제 행동
 
 ### 2.1 공통 행동과 제한
 
@@ -92419,13 +92419,13 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 | 신분/권리 상태 | 가능한 행동 | 추가 권한이 필요한 행동 |
 | --- | --- | --- |
-| 무소속·무작위 | 고용 지원, 거래, 탐사, 호송 계약, 가입 요청, 자기 권리의 중재 요청 | 국가 영지 수여 수령 전 가입, 국가 병력 지휘, 타인 작위 수여 |
+| 무소속·무작위 | 고용 지원, 거래, 탐사, 호송 계약, 가입 요청, 자기 권리의 중재 요청 | 국가 영지 수여 수령 전 가입, 국가 병력 지휘, 타인 직함 수여 |
 | 국가 소속·무관직 | 시민/조직 제도상 서비스, 노동·교육·복무 계약, 수여 청원 | 국가 이름의 선전포고·공공 자산 처분·기록 인준 |
 | 티어 5 실무자 | 배정된 창구·당직·서명 업무, 근거 제출·보고 | 자기 서명 범위를 넘는 임명·수여·소집; 땅 없는 직위를 영지로 취급하지 않음 |
 | 티어 4~2 기관 담당자 | 위임된 시설·생활권·업무의 주문·예산·당직 배정 | 티어만으로 군 지휘·세습·전체 국가 외교가 열리지 않음 |
-| 작위 보유자 | 자기 작위의 계약상 운영·수입·의무, 권리 회복 청구, 허용된 하위 수여 | 점유하지 못한 시설의 즉시 사용, 동급/상급 작위의 임의 창설 |
+| 직함 보유자 | 자기 직함의 계약상 운영·수입·의무, 권리 회복 청구, 허용된 하위 수여 | 점유하지 못한 시설의 즉시 사용, 동급/상급 직함의 임의 창설 |
 | 임명 지휘관 | 지정 부대의 태세·이동·작전 명령; 원격 명령은 연락 계약 적용 | 기관 소유 재산 처분, 민간 노동 강제, 타 부대 편입 |
-| 국가 수장 | 국가 제도에 따른 임명·수여 제안·외교·전쟁 승인·후계 절차 | 타국 인준권, 자기보다 높은 작위 수여, 계약 위반 없는 무조건 회수 |
+| 국가 수장 | 국가 제도에 따른 임명·수여 제안·외교·전쟁 승인·후계 절차 | 타국 인준권, 자기보다 높은 직함 수여, 계약 위반 없는 무조건 회수 |
 | 주장자·후계 후보 | 증거 제출, 계승 자격 주장, 지지 요청, 정해진 명분의 수혜 후보 | 주장을 보유권이나 현장 지배로 사용 |
 | 점령자·분쟁 보유자 | 실제 통제 아래 경비·보급·협상; 점령 규칙의 집행 | 점령만으로 합법 상속·기관 금고 소유·주민 협력 확보 |
 
@@ -92435,7 +92435,7 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 - 생활: 배급 신청, 물·식량 구매, 숙소/치료 요청, 휴식, 약속 참석. 수급 자격·실제 물자·일정 검사.
 - 경제: 주문 제안, 노동 예약, 수리/건설 단계 승인, 호송 의뢰, 화물 인도, 임대·담보 설정. 예산 소유자와 서명자 구분.
-- 정치: 가입, 임명 지원/추천, 작위 수여 청원, 계약 개정 제안, 인준 신청, 후계 지지/실격 근거 제출, 혼인/양자 협의.
+- 정치: 가입, 임명 지원/추천, 직함 수여 청원, 계약 개정 제안, 인준 신청, 후계 지지/실격 근거 제출, 혼인/양자 협의.
 - 군사: 허가된 모집·배속·재편, 이동/주둔/매복, 전쟁 계획 제출, 선전포고, 목표 공격, 철수/항복 요청. 실제 지휘권과 동원 명부 접근 구분.
 - 정보: 정찰, 보고 수신, 기록 열람 요청, 소문 반증·폭로, 허가된 기록 작성. 알고 있는 사실과 공개할 권한 구분.
 
@@ -92443,7 +92443,7 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 ### 3.1 선전포고 전 명분 계약
 
-전쟁 입력은 전쟁 ID, 승인자와 권한, 공격/방어 책임자, 명분 ID, 대상 작위/영역, 수혜자, 요구 내용, 승인 비용, 목표, 각 종결 효과다. ‘적대 관계’만으로 선전포고를 열지 않는다. 무관직 본체는 계획·지원·수혜자 제안을 할 수 있지만 국가 전쟁을 승인하지 않는다. 독립 국가가 성립한 인물은 그 국가의 수장 절차를 사용한다.
+전쟁 입력은 전쟁 ID, 승인자와 권한, 공격/방어 책임자, 명분 ID, 대상 직함/영역, 수혜자, 요구 내용, 승인 비용, 목표, 각 종결 효과다. ‘적대 관계’만으로 선전포고를 열지 않는다. 무관직 본체는 계획·지원·수혜자 제안을 할 수 있지만 국가 전쟁을 승인하지 않는다. 독립 국가가 성립한 인물은 그 국가의 수장 절차를 사용한다.
 
 명분 등록 대상 묶음: 인정된 권리 회복, 적격 타인 주장 지원, 승인된 상위 계약의 의무 위반 구제. 각 묶음의 등록 여부·대상 범위·비용·휴전·배상은 확정 대기다. 개인 빚·통행 분쟁·배급 중단을 자동 영토 정복 명분으로 바꾸지 않는다. 미등록 명분은 전쟁을 생성하지 않는다.
 
@@ -92451,7 +92451,7 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 준비 → 유효성 검증 → 선전포고 기록 → 진행 → 강화 요청/요구 관철/항복/명분 무효 → 종결 효과 적용 → 사후 계약. 준비에서 실패하면 전쟁은 생기지 않는다. 진행 중 전투·점령·포로 사건은 해당 전쟁과 목표를 참조하고 하나의 사건에서 점수를 한 번만 변경한다.
 
-기존 확정 점수는 공격/방어 -100~+100 반대 값이며 전투·점령·핵심 포로·목표 지배로 변한다. 군주 간 전투 점수 최대 50, 수장 포획 +100, 지정된 주/두 번째/세 번째 후계 포획 +50/+25/+10, 수도 점령 +10이다. 이는 실제 제도상 수장·후계·수도로 대응될 때만 사용한다. 선거 국가의 후보를 임의로 ‘주 후계’로 지정해 점수를 주지 않는다. 목표 점유 지속 기간과 증가율은 미정이다.
+기존 확정 점수는 공격/방어 -100~+100 반대 값이며 전투·점령·핵심 포로·목표 지배로 변한다. 세력 수장 간 전투 점수 최대 50, 수장 포획 +100, 지정된 주/두 번째/세 번째 후계 포획 +50/+25/+10, 수도 점령 +10이다. 이는 실제 제도상 수장·후계·수도로 대응될 때만 사용한다. 선거 국가의 후보를 임의로 ‘주 후계’로 지정해 점수를 주지 않는다. 목표 점유 지속 기간과 증가율은 미정이다.
 
 +30은 백지 강화 요청 자격이고 수락 보장이 아니다. +100은 명분에 고정된 요구 관철, -100은 패배측 항복이며 자발 항복도 가능하다. 점수와 별개로 명분 근거가 사라지면 명분별 무효 규칙을 검사한다. 수장 사망만으로 모든 전쟁이 자동 끝나지는 않는다.
 
@@ -92463,33 +92463,33 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 ### 3.4 종결 처리의 순서
 
-종결 입력 잠금 → 명분과 수혜자 재검사 → 권리 이전 목록 확정 → 점령 유지/반환 목록 → 포로 처리 → 배상/휴전/상위 계약 → 진행 명령 취소 또는 재검사 → 사건 영수증. 서로 다른 전쟁에서 같은 작위를 동시에 이전하려 하면 원장 판본 충돌로 두 번째 정산을 재검토한다. 강화 제안 중 전투가 열리면 수락 시점의 사실로 다시 검사한다.
+종결 입력 잠금 → 명분과 수혜자 재검사 → 권리 이전 목록 확정 → 점령 유지/반환 목록 → 포로 처리 → 배상/휴전/상위 계약 → 진행 명령 취소 또는 재검사 → 사건 영수증. 서로 다른 전쟁에서 같은 직함을 동시에 이전하려 하면 원장 판본 충돌로 두 번째 정산을 재검토한다. 강화 제안 중 전투가 열리면 수락 시점의 사실로 다시 검사한다.
 
 사례: A가 B의 주장 회복을 위해 싸워 승리하면 B가 대상 권리의 새 보유자다. A가 모든 점령지를 가지지 않는다. B와 A의 상위 관계는 명분에 기재된 조건을 검사하고, 실제 역 통제와 운영자 협력은 따로 남는다.
 
-## 4. 작위 수여·위임·회수
+## 4. 직함 수여·위임·회수
 
 ### 4.1 수여 계약
 
-입력: 수여자, 수령자, 국가 가입 상태, 대상 작위와 판본, 수여 권한, 상위 계약, 권리·의무·기간, 인준기관, 유물/문서/열쇠의 인도 조건. 기존 국가의 수여를 받으려면 먼저 소속돼 있어야 한다. 수장은 자신보다 낮은 작위만 나눈다. 옛 직접 보유 공작급 둘 제한은 v4 역장 계층으로 대체했고, 10명 단계(청장·추기경·이사)는 임명권자(대통령·교주·이사회)만 준다. 실제 작위 ID·영역·등급이 없는 곳에 임의 작위를 생성하지 않는다.
+입력: 수여자, 수령자, 국가 가입 상태, 대상 직함과 판본, 수여 권한, 상위 계약, 권리·의무·기간, 인준기관, 유물/문서/열쇠의 인도 조건. 기존 국가의 수여를 받으려면 먼저 소속돼 있어야 한다. 수장은 자신보다 낮은 직함만 나눈다. 옛 직접 보유 상위 둘 제한은 v4 역장 계층으로 대체했고, 10명 단계(청장·추기경·이사)는 임명권자(대통령·교주·이사회)만 준다. 실제 직함 ID·영역·등급이 없는 곳에 임의 직함을 생성하지 않는다.
 
 상태: 초안 → 권한/대상 검사 → 수령자 동의 → 인준/비준 → 권리 원장 변경 → 운영 인수 → 완료 또는 분쟁. 기본 정책은 필요한 인준 전에 보유자를 바꾸지 않는 것이다. 승인 뒤 현장 인수를 못하면 ‘권리 보유·미회복/인수 미완’으로 남긴다. 중앙 기록 문화의 권역에서는 기록 인준과 유물 열람 누락이 무효 사유다.
 
-권리 변경 시 수여자의 보유 목록에서 대상 권리를 제거하고 수령자에게 같은 작위 ID를 등록한다. 하위 계약·세금/급수/통행·의례 의무는 서명자와 승계 정책을 기록한다. 건물·기관 금고·공공 재고·부대 지휘는 각각 포함 여부를 명시하지 않으면 자동 이전하지 않는다.
+권리 변경 시 수여자의 보유 목록에서 대상 권리를 제거하고 수령자에게 같은 직함 ID를 등록한다. 하위 계약·세금/급수/통행·의례 의무는 서명자와 승계 정책을 기록한다. 건물·기관 금고·공공 재고·부대 지휘는 각각 포함 여부를 명시하지 않으면 자동 이전하지 않는다.
 
 ### 4.2 임명·수여·위임을 구분한다
 
-임명은 공직 권한을 준다. 수여는 작위 권리의 보유자를 바꾼다. 위임은 원 보유자를 남기고 정해진 운영/서명/지휘만 맡긴다. 위임 상태는 유효·정지·만료·회수이며 근거 사건과 범위를 저장한다. 대리인이 죽어도 원 보유자의 권리는 사라지지 않는다.
+임명은 공직 권한을 준다. 수여는 직함 권리의 보유자를 바꾼다. 위임은 원 보유자를 남기고 정해진 운영/서명/지휘만 맡긴다. 위임 상태는 유효·정지·만료·회수이며 근거 사건과 범위를 저장한다. 대리인이 죽어도 원 보유자의 권리는 사라지지 않는다.
 
 회수 제안은 계약의 회수 조항·위반 증거·인준 절차를 요구한다. 위임을 철회하지 않은 채 유물만 회수하면 기존 규칙대로 배신 쟁점을 연다. 높은 티어라는 이유로 타인의 개인 재산·직위를 즉시 제거하지 않는다. 불법 강탈은 정상 수여로 표시하지 않고 현장 통제 변경과 권리 분쟁으로 기록한다.
 
-검증 사례: 미가입 수령자 거절; 동일 작위를 두 사람에게 동시 수여 시 판본 충돌; 인준 거절 시 원 보유 유지; 수여 성공·열쇠 미인도 시 인수 미완; 수여자 사망 전후 초안과 확정 권리 구분.
+검증 사례: 미가입 수령자 거절; 동일 직함을 두 사람에게 동시 수여 시 판본 충돌; 인준 거절 시 원 보유 유지; 수여 성공·열쇠 미인도 시 인수 미완; 수여자 사망 전후 초안과 확정 권리 구분.
 
-## 5. 후계 발생과 작위 전달
+## 5. 후계 발생과 직함 전달
 
 ### 5.1 세 종류의 계승
 
-플레이어 본체 계승, 국가/기관 수장 계승, 개별 작위·재산 계승을 별도 사건으로 처리한다. 새 본체가 된 인물에게 죽은 본체의 모든 권한·기술·친구를 복사하지 않는다.
+플레이어 본체 계승, 국가/기관 수장 계승, 개별 직함·재산 계승을 별도 사건으로 처리한다. 새 본체가 된 인물에게 죽은 본체의 모든 권한·기술·친구를 복사하지 않는다.
 
 기존 확정: 본체 사망 또는 영구 구금 시 지정 후계, 없으면 계승 순서의 인물이 새 본체가 된다. 후계가 없으면 해당 캐릭터 경로가 끝난다. 시점은 새 본체의 실제 위치로 이동하며 남은 분대는 임시 병졸 분대장을 선출한다. 남은 부대의 지휘는 새 본체에게 유효하게 이어지는 계약 범위를 확인한다.
 
@@ -92497,7 +92497,7 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 ### 5.2 계승 사건의 처리 순서
 
-사망/공석 근거 확정 → 사망한 인물의 개인 신규 행동 중단 또는 살아 있는 인물의 직위 상실로 공석이 된 해당 직위의 서명·지휘·운영 권한만 중단 → 직위·작위·재산·계약 목록 스냅샷 → 항목별 후계 제도 조회 → 후보 자격 검사 → 선거/지명/시험/세습 등 절차 → 인준 → 항목별 권리 이전 → 인도/인수 → 분쟁 기록. 살아 있는 인물의 개인 생활·이동과 별도의 유효 계약에 따른 행동은 각각의 자격 조건으로 판단하며, 직위 공석만으로 중단하지 않는다. 직위 권한은 개인 재산·작위 권리·다른 유효 계약과 구분하며, 공석만으로 자동 상속·이전·대행 임명·권한 흡수를 발생시키지 않는다. 선택되지 않은 후보의 주장은 제도에 따라 남기며 탈락했다고 인물을 삭제하지 않는다.
+사망/공석 근거 확정 → 사망한 인물의 개인 신규 행동 중단 또는 살아 있는 인물의 직위 상실로 공석이 된 해당 직위의 서명·지휘·운영 권한만 중단 → 직위·직함·재산·계약 목록 스냅샷 → 항목별 후계 제도 조회 → 후보 자격 검사 → 선거/지명/시험/세습 등 절차 → 인준 → 항목별 권리 이전 → 인도/인수 → 분쟁 기록. 살아 있는 인물의 개인 생활·이동과 별도의 유효 계약에 따른 행동은 각각의 자격 조건으로 판단하며, 직위 공석만으로 중단하지 않는다. 직위 권한은 개인 재산·직함 권리·다른 유효 계약과 구분하며, 공석만으로 자동 상속·이전·대행 임명·권한 흡수를 발생시키지 않는다. 선택되지 않은 후보의 주장은 제도에 따라 남기며 탈락했다고 인물을 삭제하지 않는다.
 
 수장 사망 뒤 직위가 공석이어도 기관과 국가는 자동 소멸하지 않는다. 대행은 제도에 등록된 인물과 범위만 허용한다. 적격자나 절차가 없으면 공석·승계 분쟁으로 남기며 무명 수장을 자동 생성하지 않는다.
 
@@ -92514,7 +92514,7 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 ### 5.4 주장과 권리의 상속
 
-작위 보유권은 해당 작위의 계승 제도를 따른다. 관철된 주장은 적격 자녀에게 미관철 주장으로 이어지는 기존 경로를 유지하고 미관철 주장은 별도 상속하지 않는다. 배우자라는 이유로 모든 주장을 자동 공유하지 않는다. 공직 후보 자격·선거권·기술 자격은 작위 주장과 같은 자료형으로 처리하지 않는다.
+직함 보유권은 해당 직함의 계승 제도를 따른다. 관철된 주장은 적격 자녀에게 미관철 주장으로 이어지는 기존 경로를 유지하고 미관철 주장은 별도 상속하지 않는다. 배우자라는 이유로 모든 주장을 자동 공유하지 않는다. 공직 후보 자격·선거권·기술 자격은 직함 주장과 같은 자료형으로 처리하지 않는다.
 
 진행 전쟁의 수장 사망은 새 책임자·수혜자·명분을 재검사한다. 개인 약속과 직위 약속의 유지/재비준/종료를 항목별로 판정한다. 계승을 이용해 빚·휴전·피해 기록을 지우지 않는다.
 
@@ -92560,7 +92560,7 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 기존 확정 관계 수치는 방향성 신뢰 T[A,B]다. 별도 호감 수치를 추가하지 않는다. T 25 이상 친구, -25 이하 적, -50 이하 숙적을 유지한다. 가족·혼인·연인·스승/제자·계약·빚·맹세·지휘는 실제 관계 사실이며 신뢰와 같지 않다. A가 B를 신뢰한다고 B도 A를 같은 값으로 신뢰하지 않는다.
 
-군주에 대한 충성은 별도 기존 상태 0~100이다. 일별 기분과 군주에 대한 신뢰를 읽으며 군주 자신은 100이다. 충성 25 미만의 지속 시 후계 반란/다른 영웅의 이탈 경로가 열리지만 지속 기간·변화량·위험 행동 문턱은 미정이다. 이를 매일 반드시 발생하는 반란으로 해석하지 않는다.
+세력 수장에 대한 충성은 별도 기존 상태 0~100이다. 일별 기분과 세력 수장에 대한 신뢰를 읽으며 세력 수장 자신은 100이다. 충성 25 미만의 지속 시 후계 반란/다른 영웅의 이탈 경로가 열리지만 지속 기간·변화량·위험 행동 문턱은 미정이다. 이를 매일 반드시 발생하는 반란으로 해석하지 않는다.
 
 ### 8.2 관계 사건 처리
 
@@ -92576,7 +92576,7 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 ### 8.4 캠페인에 영구적으로 남는 것
 
-작위/직위 이력, 권리 분쟁, 약속의 이행/위반, 포로·부상·사망, 혼인·친족, 교육 진척, 공개된 증거, 재산·채무, 휴전·전쟁 결과, 목격/기억과 현재 신뢰를 저장한다. 이후 행동은 이 사실을 다시 읽는다. 불러오기와 본체 변경은 이를 초기화하지 않는다.
+직함/직위 이력, 권리 분쟁, 약속의 이행/위반, 포로·부상·사망, 혼인·친족, 교육 진척, 공개된 증거, 재산·채무, 휴전·전쟁 결과, 목격/기억과 현재 신뢰를 저장한다. 이후 행동은 이 사실을 다시 읽는다. 불러오기와 본체 변경은 이를 초기화하지 않는다.
 
 영구 저장은 모든 감정이 영원히 고정된다는 뜻이 아니다. 회복·화해·애도 변화·소멸 기간이 있는 효과는 규칙과 종료 시점을 함께 저장한다. 잊힘/감쇠 함수는 확정 대기다. 숨은 사실의 세계 기록과 각 인물이 알고 있는 사실을 따로 저장한다.
 
@@ -92592,10 +92592,10 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 ## 10. 플레이어가 확인하는 상세 화면
 
-- 인물: 생존·부상·구금·실제 장소, 소속/직위/작위/지휘권, 일정·예약, 기술, 재산, 방향성 관계, 현재 가능한 행동과 불가 이유.
-- 작위: 보유·주장·실효 지배·인준의 네 영역, 상위 계약, 수여/계승 방식, 수입/의무, 인수 중인 자산, 변경 이력.
+- 인물: 생존·부상·구금·실제 장소, 소속/직위/직함/지휘권, 일정·예약, 기술, 재산, 방향성 관계, 현재 가능한 행동과 불가 이유.
+- 직함: 보유·주장·실효 지배·인준의 네 영역, 상위 계약, 수여/계승 방식, 수입/의무, 인수 중인 자산, 변경 이력.
 - 전쟁: 명분·목표·수혜자·종결 효과, 점수의 사건별 근거, 실제 참가/보급/점령, 강화 제안 상태, 포로, 종결 정산.
-- 계승: 사망/공석 근거, 본체 후보와 직위/작위별 후보의 차이, 자격·인준 절차·분쟁, 전수/인도 목록, 유지/재비준/종료 계약.
+- 계승: 사망/공석 근거, 본체 후보와 직위/직함별 후보의 차이, 자격·인준 절차·분쟁, 전수/인도 목록, 유지/재비준/종료 계약.
 - 자산/지식: 누가 소유·보관·사용하는지, 예약/담보/접근 제한, 현재 인도 위치, 기록과 숙련의 차이, 교육 단계와 중단 사유.
 - 관계: 인물 A→B와 B→A 구분, 공개 가능한 원인 사건, 계약 상태, 친족/맹세/지휘 사실, 회복 가능한 효과와 영구 이력.
 
@@ -92605,11 +92605,11 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 확정: 교차 자격 검사, 인준 전 권리 미변경, 항목별 계승, 기관 자산 잔존, 실제 인도, 영구 구금과 사망 분리, 기록과 숙련 분리, 교육 진척 보존, 관측 후 관계 갱신, 후계에게 개인 관계 비복사, 단일 캠페인 저장.
 
-미정 데이터: 실제 작위령·보유자, 국가별 후보/선거/시험/인준 입력, 명분 목록별 비용/휴전/배상, 판정 함수와 보정·감쇠 계수, 개별 협상 항목의 가격표. 미정 데이터를 정본 메커니즘 승인으로 자동 생성하지 않는다.
+미정 데이터: 실제 직함 영역·보유자, 국가별 후보/선거/시험/인준 입력, 명분 목록별 비용/휴전/배상, 판정 함수와 보정·감쇠 계수, 개별 협상 항목의 가격표. 미정 데이터를 정본 메커니즘 승인으로 자동 생성하지 않는다.
 
 ## 12. 상태 검증 시나리오
 
-미가입 인물 수여 거절; 수여 승인 직전 수장 사망; 같은 작위 동시 수여; 권리 상속 성공·적 점령 창고 인도 실패; 본체 영구 구금 뒤 재산 비상속; 공직 선거와 개인 재산 상속의 서로 다른 수혜자; 후계 교체 중 전쟁 명분 유효/무효 분기; 목표 밖 점령 미귀속; 교사 사망 뒤 기존 진척 복원; 관계 비밀의 관측자별 갱신; 계약 승계와 개인 신뢰 분리; 세이브 복원 뒤 같은 ResultId 재정산 거절. 각 사례에서 상태 전후·실패 이유·총량·ID·사건 순서를 비교한다.
+미가입 인물 수여 거절; 수여 승인 직전 수장 사망; 같은 직함 동시 수여; 권리 상속 성공·적 점령 창고 인도 실패; 본체 영구 구금 뒤 재산 비상속; 공직 선거와 개인 재산 상속의 서로 다른 수혜자; 후계 교체 중 전쟁 명분 유효/무효 분기; 목표 밖 점령 미귀속; 교사 사망 뒤 기존 진척 복원; 관계 비밀의 관측자별 갱신; 계약 승계와 개인 신뢰 분리; 세이브 복원 뒤 같은 ResultId 재정산 거절. 각 사례에서 상태 전후·실패 이유·총량·ID·사건 순서를 비교한다.
 
 ## 13. 근거와 승인 경계
 
@@ -92637,9 +92637,9 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 하달 → 즉시 수신 → 따름/독자 선택 → 실제 실행 → 명령별 평가 → 지휘관 기억/관계 반영. 같은 명령 평가를 결과 ID로 두 번 적용하지 않는다. 지휘관 교체 때 기존 명령/평가는 원 발신자와 이력을 보존하며 새 지휘관 권한으로 재검사한다.
 
-## 16. 인물이 보유하는 명분·작위 권리
+## 16. 인물이 보유하는 명분·직함 권리
 
-모든 인물은 명분과 작위 권리를 인스턴스 목록처럼 보유할 수 있다. 인물 ID·권리 ID·종류·대상·근거·발급/승계 사건·효력·인준 주체·판본·상속/소멸 조건을 가진다. 소지 목록은 권리의 인터페이스이지 모든 권리를 물건처럼 자유 거래·복제한다는 규칙이 아니다. 양도/사용/승계 가능 여부는 권리 종류의 계약을 따른다. 작위 보유권·잠재/관철/미관철 주장·전쟁 명분을 다른 종류로 표시한다.
+모든 인물은 명분과 직함 권리를 인스턴스 목록처럼 보유할 수 있다. 인물 ID·권리 ID·종류·대상·근거·발급/승계 사건·효력·인준 주체·판본·상속/소멸 조건을 가진다. 소지 목록은 권리의 인터페이스이지 모든 권리를 물건처럼 자유 거래·복제한다는 규칙이 아니다. 양도/사용/승계 가능 여부는 권리 종류의 계약을 따른다. 직함 보유권·잠재/관철/미관철 주장·전쟁 명분을 다른 종류로 표시한다.
 
 무관직·무소속 인물도 적격 근거가 있으면 보유할 수 있다. 명분 보유는 선전포고 권한·병력·지휘권을 자동 지급하지 않는다. 권한 있는 수장에게 자기 주장의 전쟁 지원을 요청할 수 있으며 수혜자는 명분에 고정한다. 전쟁 개시 시 유효한 명분 인스턴스가 없으면 생성 거절한다.
 
@@ -92655,7 +92655,7 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 양측은 100 미만일 때 협상안에 요구와 제공을 함께 적는다. 협상안은 전쟁 ID·제안 판본·서명 권한·대상/수혜자·항목 목록·이행 시점·기한·위반 효과를 가진다. 항목은 영지/권리 이전, 자산 지급/반환, 포로 석방/송환, 통행/급수/배급/호송/인준/상위 계약/휴전 같은 외교 약속이다. 인물의 매매·강제 혼인·동의 없는 일반 배속을 허용하는 구조는 아니다.
 
-각 항목은 고유 ID, 종류, 수량/범위, 처분 권한, 평가 입력과 가격 판본, 점수, 명분상 허용 범위, 이행 가능성을 가진다. 영지는 등록된 작위/영역의 평가 단위, 물자는 실제 수량과 등록 경제 단위, 포로는 구금 상태와 석방의 정치 효과, 외교는 범위·기간·의무·실제 경로를 읽는다. 하나의 원장 자산을 여러 항목에 중복 요구하지 못한다. 전쟁 점수와 가격 점수는 다른 기록이며 협상으로 전투 점수를 소비/조작하지 않는다.
+각 항목은 고유 ID, 종류, 수량/범위, 처분 권한, 평가 입력과 가격 판본, 점수, 명분상 허용 범위, 이행 가능성을 가진다. 영지는 등록된 직함/영역의 평가 단위, 물자는 실제 수량과 등록 경제 단위, 포로는 구금 상태와 석방의 정치 효과, 외교는 범위·기간·의무·실제 경로를 읽는다. 하나의 원장 자산을 여러 항목에 중복 요구하지 못한다. 전쟁 점수와 가격 점수는 다른 기록이며 협상으로 전투 점수를 소비/조작하지 않는다.
 
 평가식의 구조는 V(안)=Σ요구항목가격-Σ제공항목가격이다. 가격은 동일 전쟁/제안 판본의 상태 스냅샷으로 평가한다. 전쟁 점수 W, 목표 통제·보급·계승·핵심 포로·현재 의무·관계·기억·이행 가능성을 읽는 수락 함수로 승인/거절/역제안을 결정한다. 단순히 V≤W이면 자동 수락으로 처리하지 않는다. 모든 범주의 가격 함수와 수락 보정 계수는 데이터 설계 대상이며 원천에 없는 값을 만들어 채우지 않는다. 미등록 항목은 협상 UI에 ‘평가 미정’으로 보이며 확정 안의 서명/정산을 차단한다.
 
@@ -92665,17 +92665,17 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 ## 19. 명분별 결과와 권리 승계의 상세 대응
 
-주장 지원 전쟁은 승인자와 수혜자를 분리한다. 수혜자의 동의·소속/지원 계약·주장 효력·목표 작위·제도상 행사 자격을 검사한다. 승리 권리는 수혜자에게 이전하며 공격자가 대신 개인 보유하지 않는다. 상위 관계는 수혜자가 얻는 작위의 실제 등급과 상위 계약으로 재검사한다. 동급/상급 권리를 얻은 수혜자를 무조건 하급 봉신으로 묶지 않는다. 직위 티어를 곧 작위 등급으로 사용하지 않는다.
+주장 지원 전쟁은 승인자와 수혜자를 분리한다. 수혜자의 동의·소속/지원 계약·주장 효력·목표 직함·제도상 행사 자격을 검사한다. 승리 권리는 수혜자에게 이전하며 공격자가 대신 개인 보유하지 않는다. 상위 관계는 수혜자가 얻는 직함의 실제 등급과 상위 계약으로 재검사한다. 동급/상급 권리를 얻은 수혜자를 무조건 하급 봉신으로 묶지 않는다. 직위 티어를 곧 직함 등급으로 사용하지 않는다.
 
 | 종결 | 대상 권리 | 주장 효과 | 추가 경계 |
 | --- | --- | --- | --- |
-| 공격측 요구 관철 | 명분에 지정된 작위를 적격 수혜자에게 이전 | 성공한 권리와 남은 주장 정리를 명분별로 기록 | 하위 계약·현장 운영·인도는 별도 검사 |
+| 공격측 요구 관철 | 명분에 지정된 직함을 적격 수혜자에게 이전 | 성공한 권리와 남은 주장 정리를 명분별로 기록 | 하위 계약·현장 운영·인도는 별도 검사 |
 | 백지 강화 | 대상 보유권은 유지 | 이 전쟁에 사용한 미관철 주장은 관철 상태로 변화 | 수혜자의 다른 모든 주장까지 변경하지 않음 |
 | 공격측 패배/항복 | 방어측이 대상 보유권 유지 | 이 명분에 사용된 주장을 제거 | 방어자가 공격자의 모든 영토를 자동 취득하지 않음 |
 | 명분 무효 | 명분별 반환/잔존 규칙 검사 | 백지 강화와 다르므로 자동 주장 승격 없음 | 취소 비용·포로·휴전은 명분 정책에 명시 |
 
 개인 주장·상위 권리·복속 해소·기관 자산 회복은 서로 다른 명분 종류다. 다른 명분의 패배 배상/인물 구금/상위 계약 효과를 일반 주장 전쟁에 복사하지 않는다. 일부 명분에서 백지 강화·포로 점수가 달라지는 예외는 등록된 정책에서만 허용하며 모든 전쟁에 적용하지 않는다. 점령은 실제 통제 변화이며 적의 정상 점령으로 권리 회복 전쟁이 자동 무효가 되지 않는다. 법적 대상·수혜자·행사 자격의 변경이 무효 검사의 입력이다.
 
-기존 보유자의 작위를 상속하는 것과 보유자가 가지고 있던 관철 주장을 자녀가 미관철 주장으로 상속하는 것은 별도 경로다. 적격 자녀가 실제 받지 못한 부모 작위의 주장을 얻는지, 분할 상속에서 어떤 후보에게 남는지는 국가별 제도를 요구한다. 전쟁 진행 중 사망 시 공격 책임자·방어 책임자·주장 수혜자를 각각 재검사하고 후보가 여러 명이면 임의 첫 자녀로 바꾸지 않는다. 유효 승계 대상이 없으면 명분별 무효/승계 대기를 적용한다.
+기존 보유자의 직함을 상속하는 것과 보유자가 가지고 있던 관철 주장을 자녀가 미관철 주장으로 상속하는 것은 별도 경로다. 적격 자녀가 실제 받지 못한 부모 직함의 주장을 얻는지, 분할 상속에서 어떤 후보에게 남는지는 국가별 제도를 요구한다. 전쟁 진행 중 사망 시 공격 책임자·방어 책임자·주장 수혜자를 각각 재검사하고 후보가 여러 명이면 임의 첫 자녀로 바꾸지 않는다. 유효 승계 대상이 없으면 명분별 무효/승계 대기를 적용한다.
 
 휴전은 종결 유형·명분·서명자/직위 귀속·시작/종료 시각·예외·위반 효과를 저장한다. 수장 교체가 휴전을 자동 삭제한다고 추정하지 않는다. 서울 세계 시간에 대한 기간과 제도별 위반 비용은 별도 입력이다. 수락 평가에는 전쟁 점수와 항목 가치뿐 아니라 진행 손실·목표 유지 가능성·구금·관계·계약·보급이 들어가되 없는 경로/재산/권한은 점수 보정으로 통과하지 않는다.');

@@ -9,6 +9,12 @@
 //   ko-noun  treats `from` as a RegExp source for a Korean noun and replaces it with `to`, fixing the
 //            following particle when the final consonant changes (가/이, 는/은, 를/을, 와/과, 로/으로 ...).
 //   expect   is the exact total hit count over docs x fields; any other count aborts (exit 4).
+//   regex    treats `from` as a RegExp source (flags in `flags`, default g); the replacement is `map[match]` when
+//            `map` is given, otherwise `to` ($1.. allowed).
+//   lineMatch (optional RegExp source) limits the rule to lines that match it, e.g. external-game citations;
+//   lineExclude (optional RegExp source) skips lines that match it (the Seoul-side complement).
+//   context  "ref" | "seoul" limits the rule to lines inside / outside an external-game reference context:
+//            a line is "ref" when it or any enclosing markdown heading matches rulesDoc.refContext.{line,heading}.
 // Rules apply in file order. Untouched INSERT statements stay byte-identical; the INSERT count must stay 129.
 // Exit codes: 0 ok, 2 usage, 3 roundtrip mismatch, 4 rule count mismatch, 5 post-check failure.
 import fs from 'node:fs';
@@ -70,6 +76,20 @@ function applyRule(text, rule) {
     }
     return [n ? out + text.slice(last) : text, n];
   }
+  if (rule.kind === 'regex') {
+    const flags = rule.flags ?? 'g';
+    const re = new RegExp(rule.from, flags.includes('g') ? flags : `${flags}g`);
+    let n = 0;
+    const next = text.replace(re, (...m) => {
+      n++;
+      if (rule.map) {
+        if (!(m[0] in rule.map)) throw new Error(`E_RULE_MAP: ${rule.id}: no mapping for ${JSON.stringify(m[0])}`);
+        return rule.map[m[0]];
+      }
+      return rule.to.replace(/\$(\d)/g, (_, d) => m[Number(d)] ?? '');
+    });
+    return [next, n];
+  }
   throw new Error(`E_RULE_KIND: ${rule.id}`);
 }
 
@@ -99,6 +119,17 @@ const byId = new Map(rows.map((r) => [r.id, r]));
 
 // ---- apply --------------------------------------------------------------------
 const rulesDoc = JSON.parse(fs.readFileSync(path.resolve(REPO, args.rules), 'utf8'));
+const REF_LINE = rulesDoc.refContext ? new RegExp(rulesDoc.refContext.line) : null;
+const REF_HEAD = rulesDoc.refContext ? new RegExp(rulesDoc.refContext.heading) : null;
+function refLines(text) {
+  if (!REF_LINE) throw new Error('E_RULES: context rules need rulesDoc.refContext');
+  const stack = [];
+  return text.split('\n').map((line) => {
+    const h = line.match(/^(#{1,6}) (.*)/);
+    if (h) { while (stack.length && stack[stack.length - 1].lv >= h[1].length) stack.pop(); stack.push({ lv: h[1].length, t: h[2] }); }
+    return REF_LINE.test(line) || stack.some((s) => REF_HEAD.test(s.t));
+  });
+}
 const before = new Map(rows.map((r) => [r.id, { ...r }]));
 const applied = [];
 let failed = 0;
@@ -109,7 +140,17 @@ for (const rule of rulesDoc.rules) {
     if (!row) { console.error(`E_RULE_DOC: ${rule.id}: ${id}`); process.exit(4); }
     for (const f of rule.fields) {
       if (!TEXT_FIELDS.has(f)) { console.error(`E_RULE_FIELD: ${rule.id}: ${f}`); process.exit(4); }
-      const [next, n] = applyRule(row[f], rule);
+      let next; let n = 0;
+      if (rule.lineMatch || rule.lineExclude || rule.context) {
+        const only = rule.lineMatch ? new RegExp(rule.lineMatch) : null;
+        const skip = rule.lineExclude ? new RegExp(rule.lineExclude) : null;
+        const refs = rule.context ? refLines(row[f]) : null;
+        next = row[f].split('\n').map((line, li) => {
+          if ((only && !only.test(line)) || (skip && skip.test(line))) return line;
+          if (refs && (rule.context === 'ref') !== refs[li]) return line;
+          const [l, k] = applyRule(line, rule); n += k; return l;
+        }).join('\n');
+      } else [next, n] = applyRule(row[f], rule);
       row[f] = next; total += n;
       if (n) perDoc[`${id}.${f}`] = n;
     }
