@@ -104,7 +104,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "**긴장** 쌍(a,b)마다 매주: `Δ = borderPush×min(5, 접경칸)/5 + goalPush×(확장 야망인 쪽 수) − tensionCool − (동맹 allyCalm) − (봉신쌍 1)`; 긴장 = clamp(긴장+Δ, 0, 100). 확장 야망 = {promotion, land, revenge}."
+          "text": "**긴장** 쌍(a,b)마다 매주: `Δ = borderPush×min(5, 접경칸)/5 + goalPush×(확장 야망인 쪽 수) − tensionCool − (동맹 allyCalm) − (상하쌍 1)`; 긴장 = clamp(긴장+Δ, 0, 100). 확장 야망 = {promotion, land, revenge}."
         }
       ],
       "id": "source.b6"
@@ -114,7 +114,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "**선전 가능**(a가 b에게) = 모두 참: ① 긴장 ≥ declareTension ② S_a ≥ minStrengthRatio×S_b ③ L_a ≥ minLegitimacy ④ 진행 중 전쟁 < maxWars ⑤ 둘 다 다른 전쟁 중 아님 ⑥ 동맹 아님 ⑦ 봉신쌍 아님 ⑧ a의 야망이 확장 ⑨ 쌍·각 나라 쿨다운 없음."
+          "text": "**선전 가능**(a가 b에게) = 모두 참: ① 긴장 ≥ declareTension ② S_a ≥ minStrengthRatio×S_b ③ L_a ≥ minLegitimacy ④ 진행 중 전쟁 < maxWars ⑤ 둘 다 다른 전쟁 중 아님 ⑥ 동맹 아님 ⑦ 상하쌍 아님 ⑧ a의 야망이 확장 ⑨ 쌍·각 나라 쿨다운 없음."
         }
       ],
       "id": "source.b7"

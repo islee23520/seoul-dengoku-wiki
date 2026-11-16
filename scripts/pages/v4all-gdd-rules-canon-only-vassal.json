@@ -1,0 +1,46 @@
+{
+ "batch": "canon-only-vassal",
+ "basis": "080이 렌더하지 않는 canon JSON 전용 봉신 문장. vassal 배치와 같은 용어 정책.",
+ "rules": [
+  {
+   "id": "cj-vs-fw-1",
+   "file": "rules/rules-factions-warfare-clauses.json",
+   "from": "직함·봉신·왕조 규칙은",
+   "to": "직함·임명·왕조 규칙은",
+   "expect": 1,
+   "reason": "canon 전용 문장(080 미렌더). 서울 규칙 — 080 RWARFARE-38과 같은 v4 임명 어휘"
+  },
+  {
+   "id": "cj-vs-fw-2",
+   "file": "rules/rules-factions-warfare-clauses.json",
+   "from": "봉신은 국가 관계 수치가 아니라",
+   "to": "임명 관계는 국가 관계 수치가 아니라",
+   "expect": 1,
+   "reason": "canon 전용 문장(080 미렌더). 서울 규칙 — 080 RWARFARE-38과 같은 v4 임명 어휘"
+  },
+  {
+   "id": "cj-vs-fw-3",
+   "file": "rules/rules-factions-warfare-clauses.json",
+   "from": "권역사와 권역사 사이의 봉신 계약이다.",
+   "to": "권역사와 권역사 사이의 위임·임명 계약이다.",
+   "expect": 1,
+   "reason": "canon 전용 문장(080 미렌더). 서울 규칙 — 080 RWARFARE-38과 같은 v4 임명 어휘"
+  },
+  {
+   "id": "cj-vs-fw-4",
+   "file": "rules/rules-factions-warfare-clauses.json",
+   "from": "이름 있는 봉신에게 준 역은",
+   "to": "이름 있는 산하 역장에게 준 역은",
+   "expect": 1,
+   "reason": "canon 전용 문장(080 미렌더). 서울 규칙 — 080 RWARFARE-38과 같은 v4 임명 어휘"
+  },
+  {
+   "id": "cj-vs-fw-5",
+   "file": "rules/rules-factions-warfare-clauses.json",
+   "from": "신앙 가족이 다른 봉신 계약은",
+   "to": "신앙 가족이 다른 위임·임명 계약은",
+   "expect": 1,
+   "reason": "canon 전용 문장(080 미렌더). 서울 규칙 — 080 RWARFARE-38과 같은 v4 임명 어휘"
+  }
+ ]
+}

@@ -1,0 +1,1578 @@
+{
+ "batch": "vassal",
+ "basis": "게이트 C1 봉신/vassal 계열: 서울 규칙의 봉신·봉토·종주·vassal·fief·liege·suzerain·feudal을 v4 임명·위임·산하 어휘로, 외부 게임 서술은 레인 A 중립어(가신/retainer·통치자/ruler, CK3 정부형은 제품 고유명 Feudal)로 바꾼다. 소유자 제외 잔여 계약 줄(공작위 한도, Mechanism-D11 JSON 키 vassal)과 참조 파일명은 그대로 둔다.",
+ "rules": [
+  {
+   "id": "vs-g-ck3-ko",
+   "docs": [
+    "doc.Ref-Crusader-Kings-3"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "regex",
+   "from": "봉신화|봉신|봉건화는|봉건",
+   "map": {
+    "봉신화": "가신화",
+    "봉신": "가신",
+    "봉건화는": "Feudal형 전환은",
+    "봉건": "Feudal형"
+   },
+   "expect": 55,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler); CK3 정부형 이름은 제품 고유명 Feudal로"
+  },
+  {
+   "id": "vs-g-ck3-en",
+   "docs": [
+    "doc.Ref-Crusader-Kings-3"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "regex",
+   "from": "(?<![-\\w])(?:[Vv]assals?|vassalization|liege|feudal|Feudalization)(?![-\\w])",
+   "map": {
+    "vassal": "retainer",
+    "vassals": "retainers",
+    "Vassal": "Retainer",
+    "Vassals": "Retainers",
+    "vassalization": "retainer status",
+    "liege": "ruler",
+    "feudal": "Feudal",
+    "Feudalization": "Conversion to Feudal government"
+   },
+   "expect": 55,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler); 참조 파일명 mechanics-06-vassals-court-council.md는 유지"
+  },
+  {
+   "id": "vs-g-1-owner-approved-batch-d-en",
+   "docs": [
+    "doc.owner-approved-batch-d"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "(ruler 2 · vassal 1 · other 0)",
+   "to": "(faction leader 2 · subordinate officeholder 1 · other 0)",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6) (ko 세력 수장 2·산하 직위자 1과 맞춤)"
+  },
+  {
+   "id": "vs-g-2-owner-approved-batch-d-en",
+   "docs": [
+    "doc.owner-approved-batch-d"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "CK3: a vassal's unilateral action is subject to the ruler's judgment.",
+   "to": "CK3: a retainer's unilateral action is subject to the ruler's judgment.",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-3-owner-approved-d09-offic-en",
+   "docs": [
+    "doc.owner-approved-d09-offices"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "Duties may pile up on a single capable vassal",
+   "to": "Duties may pile up on a single capable subordinate",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-4-owner-approved-d09-offic-ko",
+   "docs": [
+    "doc.owner-approved-d09-offices"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "유능한 가신 한 명에게",
+   "to": "유능한 부하 한 명에게",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-5-owner-approved-defaults--en",
+   "docs": [
+    "doc.owner-approved-defaults-on"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "no vassal contract clauses",
+   "to": "no appointment contract clauses",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-6-owner-approved-defaults--ko",
+   "docs": [
+    "doc.owner-approved-defaults-on"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "봉신 계약 조항이 없다",
+   "to": "위임·임명 계약 조항이 없다",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-7-owner-approved-defaults--en",
+   "docs": [
+    "doc.owner-approved-defaults-on"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "when a vassal contract is created, record both rites (liege key + vassal key)",
+   "to": "when an appointment contract is created, record both rites (superior key + subordinate key)",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-8-owner-approved-defaults--ko",
+   "docs": [
+    "doc.owner-approved-defaults-on"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "봉신 계약이 생길 때 두 제례(주군 키+봉신 키)",
+   "to": "위임·임명 계약이 생길 때 두 제례(상위 키+산하 키)",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-9-owner-approved-defaults--en",
+   "docs": [
+    "doc.owner-approved-defaults-on"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "+5 to the vassal revolt-risk threshold",
+   "to": "+5 to the subordinate revolt-risk threshold",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-10-owner-approved-defaults--ko",
+   "docs": [
+    "doc.owner-approved-defaults-on"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "가신 반란 위험 문턱",
+   "to": "산하 반란 위험 문턱",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-11-owner-approved-defaults--en",
+   "docs": [
+    "doc.owner-approved-defaults-on"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "culture and faith change vassal contract terms",
+   "to": "culture and faith change retainer contract terms",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-12-owner-approved-defaults--ko",
+   "docs": [
+    "doc.owner-approved-defaults-on"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "CK3 문화·신앙은 봉신 계약 조건",
+   "to": "CK3 문화·신앙은 가신 계약 조건",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-mst-ko",
+   "docs": [
+    "doc.owner-approved-mst-01"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "ko-noun",
+   "from": "봉토",
+   "to": "역",
+   "expect": 5,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6) (en Granted Stations와 맞춤)"
+  },
+  {
+   "id": "vs-g-13-owner-approved-unr-01-en",
+   "docs": [
+    "doc.owner-approved-unr-01"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "in CK3, when vassal grievances",
+   "to": "in CK3, when retainer grievances",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-14-pw-01-war-declaration-th-en",
+   "docs": [
+    "doc.pw-01-war-declaration-threshold"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "bongsinssang",
+   "to": "sanghassang",
+   "expect": 2,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6) (변수 표기)"
+  },
+  {
+   "id": "vs-g-15-pw-01-war-declaration-th-en",
+   "docs": [
+    "doc.pw-01-war-declaration-threshold"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "= vassal pair)",
+   "to": "= superior–subordinate pair)",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-16-pw-01-war-declaration-th-en",
+   "docs": [
+    "doc.pw-01-war-declaration-threshold"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "not a vassal pair",
+   "to": "not a superior–subordinate pair",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-17-pw-01-war-declaration-th-ko",
+   "docs": [
+    "doc.pw-01-war-declaration-threshold"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "봉신쌍",
+   "to": "상하쌍",
+   "expect": 2,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-18-ref-mechanism-index-en",
+   "docs": [
+    "doc.Ref-Mechanism-Index"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "### 9.1 Unaffiliated → Mercenary → Vassal → Realm",
+   "to": "### 9.1 Unaffiliated → Mercenary → Retainer → Realm",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-19-ref-mechanism-index-ko",
+   "docs": [
+    "doc.Ref-Mechanism-Index"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "### 9.1 무소속→용병→봉신→국가",
+   "to": "### 9.1 무소속→용병→가신→국가",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-20-ref-mechanism-index-en",
+   "docs": [
+    "doc.Ref-Mechanism-Index"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "and vassal status at T2",
+   "to": "and retainer status at T2",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-21-ref-mechanism-index-ko",
+   "docs": [
+    "doc.Ref-Mechanism-Index"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "T2/명성150에 봉신 자격",
+   "to": "T2/명성150에 가신 자격",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-22-ref-mechanism-index-en",
+   "docs": [
+    "doc.Ref-Mechanism-Index"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "and a vassal takes part in holdings",
+   "to": "and a retainer takes part in holdings",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-23-ref-mechanism-index-ko",
+   "docs": [
+    "doc.Ref-Mechanism-Index"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "봉신은 봉토·정책·군단 동원",
+   "to": "가신은 영지·정책·군단 동원",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-24-ref-mechanism-index-ko",
+   "docs": [
+    "doc.Ref-Mechanism-Index"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "세계 지도·봉토·군단·공성",
+   "to": "세계 지도·영지·군단·공성",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-25-ref-mechanism-index-ko",
+   "docs": [
+    "doc.Ref-Mechanism-Index"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "봉토는 공성 기여만으로",
+   "to": "영지는 공성 기여만으로",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-26-game-references-en",
+   "docs": [
+    "doc.Game-References"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "CK3-style combat abstraction and feudal succession",
+   "to": "CK3-style combat abstraction and title succession",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-27-game-references-ko",
+   "docs": [
+    "doc.Game-References"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "CK3식 전투 추상화·봉건 계승",
+   "to": "CK3식 전투 추상화·직함 계승",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-28-online-user-journey-en",
+   "docs": [
+    "doc.Online-User-Journey"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "Dynasty and Vassal Politics",
+   "to": "Dynasty and Appointment Politics",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-29-online-user-journey-en",
+   "docs": [
+    "doc.Online-User-Journey"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "dynasty and vassal politics",
+   "to": "dynasty and appointment politics",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-30-online-user-journey-ko",
+   "docs": [
+    "doc.Online-User-Journey"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "왕조와 봉신 정치",
+   "to": "왕조와 임명 정치",
+   "expect": 2,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-31-open-decisions-en",
+   "docs": [
+    "doc.Open-Decisions"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "holdings, vassalage, or facility rights",
+   "to": "holdings, appointment relations, or facility rights",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-32-campaign-progression-en",
+   "docs": [
+    "doc.Campaign-Progression"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "integration, and vassalage.",
+   "to": "integration, and appointment.",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-33-campaign-progression-en",
+   "docs": [
+    "doc.Campaign-Progression"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "controlling vassal territory outside Seoul",
+   "to": "controlling subordinate territory outside Seoul",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-34-campaign-progression-en",
+   "docs": [
+    "doc.Campaign-Progression"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "the vassalage and succession clauses",
+   "to": "the appointment and succession clauses",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-35-campaign-progression-ko",
+   "docs": [
+    "doc.Campaign-Progression"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "통합 및 봉신 계약을",
+   "to": "통합 및 위임·임명 계약을",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-36-campaign-progression-ko",
+   "docs": [
+    "doc.Campaign-Progression"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "서울 밖 봉신 영토",
+   "to": "서울 밖 산하 영토",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-37-campaign-progression-ko",
+   "docs": [
+    "doc.Campaign-Progression"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "세력·전쟁의 봉신·계승 조항",
+   "to": "세력·전쟁의 임명·계승 조항",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-38-power-and-institutions-en",
+   "docs": [
+    "doc.Power-and-Institutions"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "## 3.3 Grants, Delegation, Revocation, and Vassal Contracts",
+   "to": "## 3.3 Grants, Delegation, Revocation, and Appointment Contracts",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-39-power-and-institutions-ko",
+   "docs": [
+    "doc.Power-and-Institutions"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "## 3.3 수여·위임·회수·봉신 계약",
+   "to": "## 3.3 수여·위임·회수·임명 계약",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-40-power-and-institutions-en",
+   "docs": [
+    "doc.Power-and-Institutions"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "tribute, vassalage, delegation",
+   "to": "tribute, appointment, delegation",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-41-power-and-institutions-ko",
+   "docs": [
+    "doc.Power-and-Institutions"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "서울 공납·봉신·위임",
+   "to": "서울 공납·임명·위임",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-42-rules-factions-warfare-c-en",
+   "docs": [
+    "doc.Rules-FactionsWarfare"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "### RWARFARE-38 Vassal Contract",
+   "to": "### RWARFARE-38 Appointment Contract",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-43-rules-factions-warfare-c-ko",
+   "docs": [
+    "doc.Rules-FactionsWarfare"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "### RWARFARE-38 봉신 계약",
+   "to": "### RWARFARE-38 위임·임명 계약",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-44-rules-factions-warfare-c-en",
+   "docs": [
+    "doc.Rules-FactionsWarfare"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "tribute rites from vassals",
+   "to": "tribute rites from subordinates",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-45-rules-factions-warfare-c-ko",
+   "docs": [
+    "doc.Rules-FactionsWarfare"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "봉신에게 물 할당",
+   "to": "산하 직위자에게 물 할당",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-46-rules-factions-warfare-c-en",
+   "docs": [
+    "doc.Rules-FactionsWarfare"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "Rejects vassals bound",
+   "to": "Rejects subordinates bound",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-47-rules-factions-warfare-c-ko",
+   "docs": [
+    "doc.Rules-FactionsWarfare"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "강제복무 조항이 있는 봉신을",
+   "to": "강제복무 조항이 있는 산하 직위자를",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-48-rules-factions-warfare-c-en",
+   "docs": [
+    "doc.Rules-FactionsWarfare"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "allow a vassal contract to be established",
+   "to": "allow an appointment contract to be established",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-49-rules-factions-warfare-c-ko",
+   "docs": [
+    "doc.Rules-FactionsWarfare"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "없는 봉신 계약을",
+   "to": "없는 위임·임명 계약을",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-50-character-sheet-formulas-en",
+   "docs": [
+    "doc.character-sheet-formulas"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "D11 Conferral, Delegation, Revocation, Vassalage",
+   "to": "D11 Conferral, Delegation, Revocation, Appointment",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-51-character-sheet-formulas-ko",
+   "docs": [
+    "doc.character-sheet-formulas"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "D11 수여·위임·회수·봉신",
+   "to": "D11 수여·위임·회수·임명",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-52-mechanism-d15-en",
+   "docs": [
+    "doc.Mechanism-D15"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "suzerain contracts",
+   "to": "superior contracts",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6) (ko 상위 계약과 맞춤)"
+  },
+  {
+   "id": "vs-g-53-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d01"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "make them a lesser vassal of the attacker",
+   "to": "make them a lower-ranked subordinate of the attacker",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-54-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d01"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "공격자의 하급 봉신이 되지",
+   "to": "공격자의 하위 직속 부하가 되지",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-55-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d03"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "into a lower vassal relationship",
+   "to": "into a lower subordinate relationship",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-56-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d03"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "하급 봉신 관계로",
+   "to": "하위 직속 관계로",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-57-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d09"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "feudal elections",
+   "to": "title elections",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-58-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d09"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "봉건선거",
+   "to": "직함 선거",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-59-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d09"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "a suzerain's death",
+   "to": "a superior ruler's death",
+   "expect": 2,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-60-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d09"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "종주 사망",
+   "to": "상위 통치자 사망",
+   "expect": 2,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-61-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d10"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "Title and vassal transactions",
+   "to": "Title and retainer transactions",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-62-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d10"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "직함·봉신 거래",
+   "to": "직함·가신 거래",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-63-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d10"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "powerful-vassal condition",
+   "to": "powerful-retainer condition",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-64-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d10"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "강력 봉신 조건",
+   "to": "강력 가신 조건",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-65-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d10"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "봉신화",
+   "to": "가신화",
+   "expect": 3,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-66-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d10"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "Norland's vassal action restrictions",
+   "to": "Norland's retainer action restrictions",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-67-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d10"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "Norland의 봉신 행동 제한",
+   "to": "Norland의 가신 행동 제한",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-68-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "수여·위임·회수·봉신",
+   "to": "수여·위임·회수·임명",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-69-mechanism-design-index-ko",
+   "docs": [
+    "doc.mechanism-design-index"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "수여·위임·회수·봉신",
+   "to": "수여·위임·회수·임명",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-70-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d12"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "수여·위임·회수·봉신",
+   "to": "수여·위임·회수·임명",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-71-mechanism-design-index-en",
+   "docs": [
+    "doc.mechanism-design-index"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "Grants, Delegation, Revocation, and Vassals",
+   "to": "Grants, Delegation, Revocation, and Appointments",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-72-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d12"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "Conferral, Delegation, Revocation, and Vassals",
+   "to": "Conferral, Delegation, Revocation, and Appointments",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-d11-title",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "title",
+    "title_ko"
+   ],
+   "kind": "regex",
+   "from": "Recall, and Vassals|회수·봉신",
+   "map": {
+    "Recall, and Vassals": "Recall, and Appointments",
+    "회수·봉신": "회수·임명"
+   },
+   "expect": 2,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-73-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "# D11 Grants, Delegation, Recall, and Vassals",
+   "to": "# D11 Grants, Delegation, Recall, and Appointments",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-74-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "grants, vassals, and title rights",
+   "to": "grants, appointments, and title rights",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-75-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "수여·봉신·직함 권리",
+   "to": "수여·임명·직함 권리",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-76-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "what contract establishes a vassal relationship",
+   "to": "what contract establishes an appointment relationship",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-77-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "봉신 관계를 어떤 계약으로",
+   "to": "임명 관계를 어떤 계약으로",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-78-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "The substance of a vassal contract: a vassalage is established",
+   "to": "The substance of an appointment contract: an appointment relationship is established",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-79-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "**Signing a vassal contract** — A vassalage is established",
+   "to": "**Signing an appointment contract** — An appointment relationship is established",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-80-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "봉신 계약의 실체: 봉신은",
+   "to": "위임·임명 계약의 실체: 임명 관계는",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-81-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "**봉신 계약의 서명** — 봉신은",
+   "to": "**위임·임명 계약의 서명** — 임명 관계는",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-82-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "obligations of a vassal",
+   "to": "obligations of a subordinate officeholder",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-83-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "봉신의 평가·의무",
+   "to": "산하 직위자의 평가·의무",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-84-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "given to a named vassal is delegated",
+   "to": "given to a named subordinate stationmaster is delegated",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-85-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "이름 있는 봉신에게 준 역",
+   "to": "이름 있는 산하 역장에게 준 역",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-86-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "### 5.4 Change of Signatory in a Vassal Contract",
+   "to": "### 5.4 Change of Signatory in an Appointment Contract",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-87-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "### 5.4 봉신 계약의 서명자 변동",
+   "to": "### 5.4 위임·임명 계약의 서명자 변동",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-88-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "A vassal contract",
+   "to": "An appointment contract",
+   "expect": 2,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-89-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "and vassal contracts",
+   "to": "and appointment contracts",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-90-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "Signing Procedure for Vassal Contract Clauses",
+   "to": "Signing Procedure for Appointment Contract Clauses",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-91-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "number of vassal evaluations",
+   "to": "number of subordinate officeholder evaluations",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-92-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "of the vassal contract",
+   "to": "of the appointment contract",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-93-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "봉신 평가·의무의 수",
+   "to": "산하 직위자 평가·의무의 수",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-94-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "The vassal transfer script distinguishes the selected vassal's liege change",
+   "to": "The retainer transfer script distinguishes the selected retainer's ruler change",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-95-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "changes the legal liege title",
+   "to": "changes the legal superior title",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-96-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "봉신 이전 스크립트는 선택 봉신의",
+   "to": "가신 이전 스크립트는 선택 가신의",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-97-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "The vassal demand acceptance",
+   "to": "The retainer demand acceptance",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-98-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "봉신 수요 수락",
+   "to": "가신 수요 수락",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-99-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "봉신 계약",
+   "to": "위임·임명 계약",
+   "expect": 5,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6) (나머지 서울 규칙 줄 전부)"
+  },
+  {
+   "id": "vs-g-100-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d12"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "the separation between feudal title elections",
+   "to": "the separation between title elections",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-101-mechanism-design-index-d-ko",
+   "docs": [
+    "doc.mechanism-design-index-d12"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "봉건 직함 선거",
+   "to": "직함 선거",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-102-mechanism-design-index-d-en",
+   "docs": [
+    "doc.mechanism-design-index-d12"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "When an overlord dies, all vassals become independent",
+   "to": "When a superior ruler dies, all retainers become independent",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer, 통치자/ruler)"
+  },
+  {
+   "id": "vs-g-103-singleplayer-design-sp-1-en",
+   "docs": [
+    "doc.Singleplayer-Design-SP-1-0-0"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "fiefdom/right transfers",
+   "to": "holding/right transfers",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6) (ko 영지/권리와 맞춤)"
+  },
+  {
+   "id": "vs-g-104-singleplayer-design-sp-1-en",
+   "docs": [
+    "doc.Singleplayer-Design-SP-1-0-0"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "Fiefdoms read",
+   "to": "Holdings read",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-105-singleplayer-design-sp-1-en",
+   "docs": [
+    "doc.Singleplayer-Design-SP-1-0-0"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "cession of fiefdoms outside",
+   "to": "cession of holdings outside",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-106-singleplayer-design-sp-1-en",
+   "docs": [
+    "doc.Singleplayer-Design-SP-1-0-0"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "as a lower vassal",
+   "to": "as a lower subordinate",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  },
+  {
+   "id": "vs-g-107-singleplayer-design-sp-1-ko",
+   "docs": [
+    "doc.Singleplayer-Design-SP-1-0-0"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "하급 봉신으로",
+   "to": "하위 직속 부하로",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 임명·위임 어휘(CANON-BIBLE 2.6)"
+  }
+ ]
+}
