@@ -1169,7 +1169,7 @@ wiki_person 변경 열은 position 2·position_ko 1뿐(faction·stage·state 계
 | person-1013 | json_ko | $.fields.소속 | 환적국. 이태원 통행 골목. 환적국 배차 창구의 통역 용역 → 정부. 이태원 통행 골목. 정부 배차 창구의 통역 용역 |
 | person-1014 | json_ko | $.fields.소속 | 환적국. 울타리 용역 장부. 환적국에 창고 기억으로 등록 → 정부. 울타리 용역 장부. 정부에 창고 기억으로 등록 |
 | person-1016 | json | $.fields.Affiliation | Seoul Metropolitan Government local civil service organization. Clerk of the Guro–Geumcheo → Seoul Metropolitan Government local civil service organization. Clerk of the Guro–Geumcheo |
-| person-1017 | json_ko | $.fields.소속 | [비공개 서사 생략] → [비공개 서사 생략] |
+| person-1017 | json_ko | $.fields.소속 | 2120년부터 고예진의 경호원이다. 실제로는 여러 세력의 소식과 비밀을 모아 거래하는 길목사무소에 속해 있다. → 2120년부터 고예진의 경호원이다. 실제로는 여러 세력의 소식과 비밀을 모아 거래하는 사무소에 속해 있다. |
 | person-1017 | json | $.fields.Affiliation | She has been Go Ye-jin's bodyguard since 2120. In reality she belongs to the Crossroads Of → She has been Go Ye-jin's bodyguard since 2120. In reality she belongs to an office that co |
 | person-1022 | json_ko | $.fields.소속 | 환적국. 독립 상단 → 정부. 독립 상단 |
 | person-1022 | json | $.fields.Affiliation | Transshipment Realm. Independent Trading House → The Government. Independent Trading House |
@@ -1419,7 +1419,7 @@ wiki_person 변경 열은 position 2·position_ko 1뿐(faction·stage·state 계
 | person-1013 | json_ko | $.biography | - 소속: 환적국. 이태원 통행 골목. 환적국 배차 창구의 통역 용역 → - 소속: 정부. 이태원 통행 골목. 정부 배차 창구의 통역 용역 |
 | person-1014 | json_ko | $.biography | - 소속: 환적국. 울타리 용역 장부. 환적국에 창고 기억으로 등록 → - 소속: 정부. 울타리 용역 장부. 정부에 창고 기억으로 등록 |
 | person-1016 | json | $.biography | - Affiliation: Seoul Metropolitan Government local civil service organization. Mobilizatio → - Affiliation: Seoul Metropolitan Government local civil service organization. Mobilizatio |
-| person-1017 | json_ko | $.biography | [비공개 서사 생략] → [비공개 서사 생략] |
+| person-1017 | json_ko | $.biography | - 소속: 2120년부터 고예진의 경호원이다. 실제로는 여러 세력의 소식과 비밀을 모아 거래하는 길목사무소에 속해 있다. → - 소속: 2120년부터 고예진의 경호원이다. 실제로는 여러 세력의 소식과 비밀을 모아 거래하는 사무소에 속해 있다. |
 | person-1017 | json | $.biography | - Affiliation: She has been Go Ye-jin's bodyguard since 2120. In reality she belongs to th → - Affiliation: She has been Go Ye-jin's bodyguard since 2120. In reality she belongs to an |
 | person-1022 | json_ko | $.biography | - 소속: 환적국. 독립 상단 → - 소속: 정부. 독립 상단 |
 | person-1022 | json | $.biography | - Affiliation: Transshipment Bureau. Independent merchant house → - Affiliation: The Government. Independent merchant house |
