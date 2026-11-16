@@ -2189,7 +2189,7 @@ Combat, negotiation, exploration, and non-intervention for personal gain are all
 
 Opening a route must bring real benefits such as supplies, trade, easier travel, or reunions. New conflicts arise from separate actors and goals, and are not handled by detecting good deeds and spawning enemies. Successes in which no one is hurt, and the satisfaction of defeating an obvious enemy, are also allowed.
 
-Immediate dangers and known costs are shown before a choice is made. Facts, inferences, and rumors are distinguished. Even when characters interpret events differently, the actual events and the settlement results must be consistent. Rewards and relationship changes must be grounded in witnessing, reporting, or participation. Only cases confirmed in the Seoul source material are adjudicated: in the Samseong Station roster and water contract, separate O Gyeongjae''s position from Im Chowon''s sealed testimony and unfinished maintenance training; Sin Jongmok''s attempt to recover the transceiver unit is conditioned on the daily power supply that depends on the same part and on the residents'' consent. The Yongsan exchange''s existing medical-call priority, reduced freight dispatch, and single-car operating-rights costs are not to be converted into bank principal, arrears, or seizure. Im Hajun''s disappearance is not a death hook, and Bak Nuri''s operational responsibility and O Gyeongjae''s post are not automatically inherited by Im Chowon. Platform access, railway trunk lines, and service restoration do not mean county ownership or a new overlord. The order of the new refrigeration/relay negotiations, the presentation of records, and the costs and outcomes of choosing to participate or hold back are not yet approved incidents.
+Immediate dangers and known costs are shown before a choice is made. Facts, inferences, and rumors are distinguished. Even when characters interpret events differently, the actual events and the settlement results must be consistent. Rewards and relationship changes must be grounded in witnessing, reporting, or participation. Only cases confirmed in the Seoul source material are adjudicated: in the Samseong Station roster and water contract, separate O Gyeongjae''s position from Im Chowon''s sealed testimony and unfinished maintenance training; Sin Jongmok''s attempt to recover the transceiver unit is conditioned on the daily power supply that depends on the same part and on the residents'' consent. The Yongsan exchange''s existing medical-call priority, reduced freight dispatch, and single-car operating-rights costs are not to be converted into bank principal, arrears, or seizure. Im Hajun''s disappearance is not a death hook, and Bak Nuri''s operational responsibility and O Gyeongjae''s post are not automatically inherited by Im Chowon. Platform access, railway trunk lines, and service restoration do not mean station ownership or a new overlord. The order of the new refrigeration/relay negotiations, the presentation of records, and the costs and outcomes of choosing to participate or hold back are not yet approved incidents.
 
 Competence, humor, rest, and the restoration of daily life are also part of the narrative. Do not use every warm scene as foreshadowing for a later tragedy. Do not have the author punish players with a hidden morality score for choosing personal gain or a military solution.
 
@@ -2286,7 +2286,7 @@ The goal the player should remember is the following scene. At first, the door I
 
 길을 열면 물자, 거래, 이동 편의, 재회 같은 실제 이익이 있어야 한다. 새로운 갈등은 별도의 행위자와 목표 때문에 생기며, 선행을 감지해 적을 생성하는 식으로 처리하지 않는다. 아무도 다치지 않는 성공과 명백한 적을 물리치는 통쾌함도 허용한다.
 
-즉시 위험과 알려진 비용은 선택 전에 보여준다. 사실, 추정, 소문은 구별한다. 인물의 해석이 달라도 실제 사건과 정산 결과는 일관되어야 한다. 보상과 관계 변화에는 목격·보고·참여의 근거가 있어야 한다. 서울 원천에서 확인된 사례만 판독한다: 삼성역 명부·물 계약에서 오경재의 직위와 임초원의 봉인 증언/미완 정비 교육을 분리하고, 신종목의 송수신도 회수 시도는 같은 부품에 의존한 생활 전력과 주민 동의를 조건으로 둔다. 용산 교환실의 기존 의료 호출 우선·줄어든 화물 배차·한 칸 운영권 비용은 은행 원금·연체·압류로 치환하지 않는다. 임하준의 실종은 사망 hook이 아니며 박누리의 운영 책임과 오경재의 직책을 임초원에게 자동 승계시키지 않는다. 승강장 접근·철도 간선·서비스 회복은 county 소유나 새 주군이 아니다. 새로운 냉장/중계 협의 순서·기록 제시·참여/보류 선택의 비용과 결말은 아직 승인된 사건이 아니다.
+즉시 위험과 알려진 비용은 선택 전에 보여준다. 사실, 추정, 소문은 구별한다. 인물의 해석이 달라도 실제 사건과 정산 결과는 일관되어야 한다. 보상과 관계 변화에는 목격·보고·참여의 근거가 있어야 한다. 서울 원천에서 확인된 사례만 판독한다: 삼성역 명부·물 계약에서 오경재의 직위와 임초원의 봉인 증언/미완 정비 교육을 분리하고, 신종목의 송수신도 회수 시도는 같은 부품에 의존한 생활 전력과 주민 동의를 조건으로 둔다. 용산 교환실의 기존 의료 호출 우선·줄어든 화물 배차·한 칸 운영권 비용은 은행 원금·연체·압류로 치환하지 않는다. 임하준의 실종은 사망 hook이 아니며 박누리의 운영 책임과 오경재의 직책을 임초원에게 자동 승계시키지 않는다. 승강장 접근·철도 간선·서비스 회복은 역 소유나 새 주군이 아니다. 새로운 냉장/중계 협의 순서·기록 제시·참여/보류 선택의 비용과 결말은 아직 승인된 사건이 아니다.
 
 유능함, 유머, 휴식, 일상의 회복도 서사의 일부다. 모든 따뜻한 장면을 이후 비극의 복선으로 쓰지 않는다. 개인 이익이나 군사적 해결을 택했다고 작가가 숨은 도덕 점수로 벌하지 않는다.
 
@@ -2346,7 +2346,7 @@ What the GDD leaves blank: RWARFARE-37 says that when an unaffiliated character 
 
 Proposed rule: When an unaffiliated (S00) character stakes 60 funds and 30 reputation and settles on a tile (excluding the capital and the last 6 tiles) of a state that has collapsed to legitimacy L below 35, an independent state is established. The identifier is X-hash8 (seed, founder, tile) and is permanent; the state''s name and order are not identifiers. The new state''s legitimacy is 20 (new local claim) and its power is 15.
 
-Genre basis: In CK3, an unaffiliated adventurer carves off land from a weakened lord and opens an independent domain.
+Genre basis: In CK3, an unaffiliated adventurer carves off land from a weakened ruler and opens an independent domain.
 
 Balance impact: Requires 60 funds and a legitimacy collapse, so it is uncommon.
 
@@ -2454,11 +2454,11 @@ Code link: On (recommended) / Off (as in the original GDD)', '# 승인된 제안
 
 GDD가 비운 것: RBATTLE-06은 분대 정원을 지휘관 능력치·국가 수준·정착지 수준으로 정하되 산식은 미정이라고 한다. — 근거 경로: rules-battle-clauses.json RBATTLE-06
 
-제안 규칙: 정원 = clamp(6 + floor(무력 기량/2) + 국가 수준(군주 2·봉신 1·그 밖 0) + floor(R/40), 6, 14). 공통 상한은 두지 않되 안전 범위만 둔다. 영웅은 병사 수와 별도.
+제안 규칙: 정원 = clamp(6 + floor(무력 기량/2) + 세력 내 단계(세력 수장 2·산하 직위자 1·그 밖 0) + floor(R/40), 6, 14). 공통 상한은 두지 않되 안전 범위만 둔다. 영웅은 병사 수와 별도.
 
 장르 근거: CK3 지휘관 능력이 병력 효율에, 영지 규모가 소집 규모에 영향을 준다.
 
-균형 영향: 기본 인물은 6~8명 분대, 군주·고R 인물은 최대 14명.
+균형 영향: 기본 인물은 6~8명 분대, 세력 수장·고R 인물은 최대 14명.
 
 지금 코드의 임시값: src/engine/battle.ts squadCap 계수
 
@@ -2474,7 +2474,7 @@ GDD가 비운 것: RWARFARE-37은 무소속 인물이 스스로 영지를 취득
 
 제안 규칙: 무소속(S00) 인물이 정통성 L 35 미만으로 무너진 나라의 칸(수도·마지막 6칸 제외)에 자금 60·평판 30을 걸고 자리를 잡으면 독립 국가가 선다. 식별자는 X-해시8(시드·창건자·칸)으로 영구이며 국명·순서는 식별자가 아니다. 새 나라의 정통성은 20(현지 신규 주장), 세력 15.
 
-장르 근거: CK3 무소속 모험가가 약해진 영주의 땅을 떼어 내 독립 영지를 연다.
+장르 근거: CK3 무소속 모험가가 약해진 통치자의 땅을 떼어 내 독립 영지를 연다.
 
 균형 영향: 자금 60과 정통성 붕괴가 필요해 흔치 않다.
 
@@ -2528,7 +2528,7 @@ GDD가 비운 것: RBATTLE-09는 포획을 인물별 구금 결과로 두지만 
 
 제안 규칙: 전투가 패배로 끝나면 25%로 구금된다(4주). 구금 중에는 이동·약속 참석이 막히고(면담·편지·교섭은 별도 요청), 기간이 지나거나 몸값 30을 내면 풀린다. 인물·식별자는 유지.
 
-장르 근거: CK3: 패전 군주는 포로가 되고 몸값으로 풀려난다.
+장르 근거: CK3: 패전 통치자는 포로가 되고 몸값으로 풀려난다.
 
 균형 영향: 한 번의 패전이 4주를 막는다.
 
@@ -2546,7 +2546,7 @@ GDD가 비운 것: RWARFARE-35는 수장이 처벌·배상하거나 사후 승�
 
 제안 규칙: 긴장 55 이상인 이웃(전쟁·동맹 아님)에 대해 수장이 있는 나라의 군령관(위계 3~4)이 주당 1.5%로 독단 공격. 수장의 야망이 확장형이고 전력이 1.1배 이상이면 사후 승인(긴장을 선전 문턱 70으로), 아니면 처벌·배상(긴장 −15, 전력 −1). 어느 쪽도 전쟁을 직접 열지 않는다.
 
-장르 근거: CK3: 가신의 독단은 군주의 판결 대상이다.
+장르 근거: CK3: 가신의 독단은 통치자의 판결 대상이다.
 
 균형 영향: 약 1.1년에 한 번꼴.
 
@@ -2595,19 +2595,19 @@ Alternative: One position per person (previous invariant).
 
 Code link: Applied (decided)', '# 승인된 제안 — OFC-01
 
-소유자가 2026-10-10에 결정한 D09 예시 A의 정리다: 관직 겸임은 허용하고 작위는 한 사람에 하나로 둔다. 정본 반영 전이라 제안 문서로만 올린다(병합은 소유자).
+소유자가 2026-10-10에 결정한 D09 예시 A의 정리다: 관직 겸임은 허용하고 직함은 한 사람에 하나로 둔다. 정본 반영 전이라 제안 문서로만 올린다(병합은 소유자).
 
-## OFC-01 관직 겸임과 작위 하나(D09 예시 A)
+## OFC-01 관직 겸임과 직함 하나(D09 예시 A)
 
 상태: 제안(소유자 승인 2026-10-10, 병합 전).
 
-GDD가 비운 것: D09 예시 A는 한 사람이 두 직위를 가질 수 있다고 하나 직위와 작위의 구분·상한이 없다. — 근거 경로: mechanism-design-index-d09.json 예시 A · 3.1
+GDD가 비운 것: D09 예시 A는 한 사람이 두 직위를 가질 수 있다고 하나 직위와 직함의 구분·상한이 없다. — 근거 경로: mechanism-design-index-d09.json 예시 A · 3.1
 
-제안 규칙: 관직(수장·관리·지휘·재무 등 직무)은 한 사람이 여러 개를 겸임할 수 있고 한 관직의 보유자는 한 명이다. 작위(권리의 직함)는 한 사람에 하나다. 영지는 재산(D13)이라 한 작위 아래 여러 칸을 가질 수 있다. 관직 보유자가 죽으면 그 관직은 빈다.
+제안 규칙: 관직(수장·관리·지휘·재무 등 직무)은 한 사람이 여러 개를 겸임할 수 있고 한 관직의 보유자는 한 명이다. 직함(권리의 직함)는 한 사람에 하나다. 영지는 재산(D13)이라 한 직함 아래 여러 칸을 가질 수 있다. 관직 보유자가 죽으면 그 관직은 빈다.
 
-장르 근거: CK3: 한 인물이 여러 궁정 직책을 겸하지만 작위는 서열로 하나의 대표 직함을 가진다.
+장르 근거: CK3: 한 인물이 여러 궁정 직책을 겸하지만 직함은 서열로 하나의 대표 직함을 가진다.
 
-균형 영향: 유능한 가신 한 명에게 직무가 몰릴 수 있으나 작위 상한이 권력 집중을 막는다.
+균형 영향: 유능한 가신 한 명에게 직무가 몰릴 수 있으나 직함 상한이 권력 집중을 막는다.
 
 지금 코드의 임시값: world.ts setTitle·setOffice
 
@@ -2684,7 +2684,7 @@ Implementation: src/engine/travel.ts TRAVEL_PLACEHOLDER', '# 승인된 제안 �
 
 제안 규칙: 동맹이 있고(위반할 조약) 이름 있는 수장이 실행하며 그 수장이 알던 촉발 사건(동맹국의 최근 8주 내 패배)과 동기(야망 land/revenge/promotion & 전력 우세 1.3배)가 있을 때, 주당 4% 확률로 동맹을 깨고 긴장 +40, 정통성 −8. 셋 중 하나라도 없으면 배신이 아니다.
 
-장르 근거: CK3는 동맹 파기에 명분·평판 대가를 두고 NPC 군주의 야망이 동기가 된다.
+장르 근거: CK3는 동맹 파기에 명분·평판 대가를 두고 NPC 통치자의 야망이 동기가 된다.
 
 균형 영향: 세계 판도 변화가 커져 같은 시드의 NPC 역사가 달라진다.
 
@@ -2946,7 +2946,7 @@ Implementation: src/engine/world.ts worldWeek', '# 승인된 제안 묶음 A —
 
 제안 규칙: 성장 경로 점령→안정화→전문화(시설 둘 이상 가동률 0.5↑)→노선 투사(동맹 1↑ 또는 교역 기술 3↑)→질서 헌장. 안정화 실패(단계<안정화)나 과확장 O>1.5는 회복 태세, 회복 태세는 안정화로만 돌아간다. 헌장 조건 넷: 노선 연합(동맹 3) · 독립 역 협약(통합 단계 8주 유지) · 교역 질서(거래 미시 줄 6건) · 기술 복구(숙련 3). 하나라도 채우면 그 결말이 기록되고 게임은 계속되며 여러 결말이 함께 남는다.
 
-장르 근거: CK3는 통일·왕관 승리 외에 ‘왕조 목표’ 달성 업적을 둔다. Nowland는 정착지 번영 목표를 여러 갈래로 평가한다. 둘 다 승리를 하나로 닫지 않는다.
+장르 근거: CK3는 통일·통치권 승리 외에 ‘왕조 목표’ 달성 업적을 둔다. Nowland는 정착지 번영 목표를 여러 갈래로 평가한다. 둘 다 승리를 하나로 닫지 않는다.
 
 균형 영향: 8주 통합 유지는 O≤1·권위/협력 유지가 필요해 중반 이후에 열린다.
 
@@ -3000,7 +3000,7 @@ Implementation: src/engine/world.ts worldWeek', '# 승인된 제안 묶음 A —
 
 정본이 비운 것: 제례·문화 키 상태와 봉신 계약 조항이 없다. (근거 rules-factions-warfare-clauses.json RWARFARE-39·41)
 
-제안 규칙: 봉신 계약이 생길 때 두 제례(주군 키+봉신 키)를 한 줄에 기록한다. 국가→키트는 안정 해시 임시 배정(5종). 키트는 평가 가중치로만 쓴다: 동쪽 대상은 가신 반란 위험 문턱 +5, 중앙 기록은 기록 기술 2 미만이면 작위 수여 무효. 나머지 키트는 표시만 한다.
+제안 규칙: 봉신 계약이 생길 때 두 제례(주군 키+봉신 키)를 한 줄에 기록한다. 국가→키트는 안정 해시 임시 배정(5종). 키트는 평가 가중치로만 쓴다: 동쪽 대상은 가신 반란 위험 문턱 +5, 중앙 기록은 기록 기술 2 미만이면 직함 수여 무효. 나머지 키트는 표시만 한다.
 
 장르 근거: CK3 문화·신앙은 봉신 계약 조건과 수락 가중치를 바꾼다(자동 수락은 아님).
 
@@ -3025,17 +3025,17 @@ INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summa
 
 This is a proposal the owner approved on 2026-10-10 with the default set to On. It is submitted only as a proposal document because it has not yet been merged into the canon. The formulas in RCAMPAIGN-17·21 are unchanged; only the stronghold list composition and distance decay are proposed (provisional).
 
-## MST-01 Multi-Stronghold State (Capital + Granted Fiefs)
+## MST-01 Multi-Stronghold State (Capital + Granted Stations)
 
 Status: Proposed (owner-approved 2026-10-10, not yet merged). Recommended default: On.
 
 What the GDD leaves blank: RCAMPAIGN-17 (stronghold-weighted average) and 21 (target weighting toward the weaker stronghold) presuppose multiple strongholds, but in this game a character holds only one stronghold. The GDD has no stronghold list composition or per-distance values. — Basis paths: rules-campaign-clauses.json RCAMPAIGN-17·19·21
 
-Proposed rule: stronghold list = my nation''s capital tile + the fief tiles I have received (max 7). Transfer tiles (4 or more neighbors) have weight 1.5, all others 1.0. A stronghold h tiles away from the capital gets shortage ×(1+0.15h), connectivity ×0.9^h, authority and cooperation −3h, and isolation +0.1 if at war. Crisis probability is based on the stronghold-weighted average shortage and isolation, and the crisis target leans toward the weaker stronghold via the GDD weighting formula (w×(1+2×shortage+2×isolation+(1−min(S,F,L)/100))). The target is recorded in the ledger.
+Proposed rule: stronghold list = my nation''s capital tile + the station tiles I have received (max 7). Transfer tiles (4 or more neighbors) have weight 1.5, all others 1.0. A stronghold h tiles away from the capital gets shortage ×(1+0.15h), connectivity ×0.9^h, authority and cooperation −3h, and isolation +0.1 if at war. Crisis probability is based on the stronghold-weighted average shortage and isolation, and the crisis target leans toward the weaker stronghold via the GDD weighting formula (w×(1+2×shortage+2×isolation+(1−min(S,F,L)/100))). The target is recorded in the ledger.
 
-Genre basis: in CK3, the farther a holding or fief is, the weaker the control, and rebellions and crises arise from the weakest holding.
+Genre basis: in CK3, the farther a holding or station is, the weaker the control, and rebellions and crises arise from the weakest holding.
 
-Balance impact: a character with no fiefs has a single stronghold, so it is the same as now. As fiefs increase, crisis targets become more dispersed.
+Balance impact: a character with no stations has a single stronghold, so it is the same as now. As stations increase, crisis targets become more dispersed.
 
 Provisional values in current code: coefficients in src/engine/stations.ts
 
@@ -3769,7 +3769,7 @@ Do not turn the full list of candidate functions into a mandatory list for every
 
 An immutable definition binds designId, definitionRevision, sourceEditionRefs, each source hash, geometryHash, and stable facility/space/connection IDs. The opening seed references that definition and provides only the approved initial ownership, occupation, blockade, and facility operating states. A campaign delta in progress references the causing event, time, target ID, and the base definition/seed edition. Do not copy characters, titles of nobility, or real-time operations into the asset sidecar.
 
-Partial holding, facility management, right of passage, whole-building occupation, administrative-district slot rights, and electoral-district titles are separate relationships. None of them grants another automatically. No-man''s-land is valid, and no lords, population, or political placements are generated without evidence. The existence of a physical door or passage does not imply that it is open, working, or permitted for access. Do not overwrite current ownership, blockade, operation, or damage states by re-importing initial values.
+Partial holding, facility management, right of passage, whole-building occupation, administrative-district slot rights, and electoral-district titles are separate relationships. None of them grants another automatically. No-man''s-land is valid, and no stationmasters, population, or political placements are generated without evidence. The existence of a physical door or passage does not imply that it is open, working, or permitted for access. Do not overwrite current ownership, blockade, operation, or damage states by re-importing initial values.
 
 ## Data Updates and Manual Edit Conflicts
 
@@ -3779,7 +3779,7 @@ A stale source hash, a broken spatial reference, a confirmed treatment of an unv
 
 ## Boundary Between Review and Follow-up Acceptance
 
-Report separately, per facility, the target denominator and the review status and reasons for identity, metric, topology, rights, currency, adaptation, and living functions. Do not drop unmeasured facilities from the denominator, and do not call the candidate processing rate a full-survey measurement rate. assertedConnection and pendingEndpoint are valid partial survey records and do not block completion of the survey package wholesale. However, pending items are excluded from the traversal graph and from the numerator of the confirmed-connection ratio, and are preserved in the unconfirmed list. For example, keep the Our Gallery–Simincheong connection wording, but if the actual endpoint on the Simincheong side is unconfirmed, do not create a room or coordinates, and leave it as a pendingEndpoint. Do not promote it to a VERIFIED connector before both ends and the required inter-floor correspondence are verified. Reconciling source, rights, hash, and both-end references is done separately from reviewing the actual rendered text. Substituting slots for room counts, creating nonexistent floors, assigning fixed lords, copying a rainy-season template for winter, double-counting the area of shared passages, and automatically joining the same B2 remain rejected candidates and are not put into the canon.
+Report separately, per facility, the target denominator and the review status and reasons for identity, metric, topology, rights, currency, adaptation, and living functions. Do not drop unmeasured facilities from the denominator, and do not call the candidate processing rate a full-survey measurement rate. assertedConnection and pendingEndpoint are valid partial survey records and do not block completion of the survey package wholesale. However, pending items are excluded from the traversal graph and from the numerator of the confirmed-connection ratio, and are preserved in the unconfirmed list. For example, keep the Our Gallery–Simincheong connection wording, but if the actual endpoint on the Simincheong side is unconfirmed, do not create a room or coordinates, and leave it as a pendingEndpoint. Do not promote it to a VERIFIED connector before both ends and the required inter-floor correspondence are verified. Reconciling source, rights, hash, and both-end references is done separately from reviewing the actual rendered text. Substituting slots for room counts, creating nonexistent floors, assigning fixed stationmasters, copying a rainy-season template for winter, double-counting the area of shared passages, and automatically joining the same B2 remain rejected candidates and are not put into the canon.
 
 This proposal does not provide per-facility floor plans, measured values, opening settings, a new validator, or game features. Unconfirmed detailed archetypes and rights are follow-up survey items and are not conditions that block the draft. Reflecting it in the distribution canon requires actual approval and verification for that scope, and consumption in Unity requires separate import, serialization, execution, and save verification.
 
@@ -3797,7 +3797,7 @@ Read the current canon at the links above for approval rules and data contracts.
 
 ## 정본 소유와 승인된 규칙
 
-GDD는 의미·자료형·관계·제약과 결정 상태를 소유한다. 현재 Wiki 원천은 시설 정체·관측 참조와 승인된 개막 사실을, 외부 자산 원천은 원형 기하·편집 상태·각색 손실과 권리 근거를 소유한다. GAME은 후속 승인된 투영만 소비한다. GDD snapshot을 현재 Wiki 대신 사용하지 않는다. 이 제안은 새 소유자·작위·인물·연대·시설가격·폭·층고·정원·생산량·연료식을 부여하지 않는다.
+GDD는 의미·자료형·관계·제약과 결정 상태를 소유한다. 현재 Wiki 원천은 시설 정체·관측 참조와 승인된 개막 사실을, 외부 자산 원천은 원형 기하·편집 상태·각색 손실과 권리 근거를 소유한다. GAME은 후속 승인된 투영만 소비한다. GDD snapshot을 현재 Wiki 대신 사용하지 않는다. 이 제안은 새 소유자·직함·인물·연대·시설가격·폭·층고·정원·생산량·연료식을 부여하지 않는다.
 
 [거점과 영토 규칙](/gdd/rules/rules-strongholds-clauses/)의 RSTRONGHOLDS-11 시설 슬롯과 RSTRONGHOLDS-25 점유 단위, [경제와 물류 규칙](/gdd/rules/rules-economy-logistics-clauses/)의 필수 소비 선예약·실제 노동과 도구·재료 소비·주문과 병목·교육 계약을 참조한다. [게임 데이터 원장과 스키마 계약](/gdd/design/data-catalog-and-schema/)의 안정 ID·원천 해시·생성 영수증·이동 그래프와 지표 경계 분리를 유지한다. 이 문서의 제안은 이들 accepted 문서를 덮어쓰지 않는다.
 
@@ -3848,9 +3848,9 @@ metric 원형에는 좌표계·원점·축·수직 기준·sourceFeatureId와 �
 
 ## 정의·개막 seed·진행 상태를 분리한다
 
-immutable definition은 designId·definitionRevision·sourceEditionRefs와 각 원천 해시·geometryHash·안정 시설/공간/연결 ID를 묶는다. 개막 seed는 그 definition을 참조해 승인된 초기 소유·점유·봉쇄·시설 작동 상태만 제공한다. 진행 중 campaign delta는 원인 사건·시점·대상 ID와 기반 definition/seed 판본을 참조한다. 자산 sidecar에 인물·작위·실시간 운영을 복제하지 않는다.
+immutable definition은 designId·definitionRevision·sourceEditionRefs와 각 원천 해시·geometryHash·안정 시설/공간/연결 ID를 묶는다. 개막 seed는 그 definition을 참조해 승인된 초기 소유·점유·봉쇄·시설 작동 상태만 제공한다. 진행 중 campaign delta는 원인 사건·시점·대상 ID와 기반 definition/seed 판본을 참조한다. 자산 sidecar에 인물·직함·실시간 운영을 복제하지 않는다.
 
-부분 보유·시설 관리·통행권·건물 전체 점유·행정동 슬롯권·지역구 작위는 별도 관계다. 서로를 자동 수여하지 않는다. 무주지는 유효하며 근거 없는 영주·인구·정치 배치를 생성하지 않는다. 물리적 문과 통로의 존재는 열림·작동·접근 허가를 뜻하지 않는다. 초기값 재수입으로 현재 소유·봉쇄·운영·손상 상태를 덮어쓰지 않는다.
+부분 보유·시설 관리·통행권·건물 전체 점유·행정동 슬롯권·지역구 직함은 별도 관계다. 서로를 자동 수여하지 않는다. 무주지는 유효하며 근거 없는 역장·인구·정치 배치를 생성하지 않는다. 물리적 문과 통로의 존재는 열림·작동·접근 허가를 뜻하지 않는다. 초기값 재수입으로 현재 소유·봉쇄·운영·손상 상태를 덮어쓰지 않는다.
 
 ## 자료 갱신과 수동 수정 충돌
 
@@ -3860,7 +3860,7 @@ stale source hash, 깨진 공간 참조, 미확인 연결의 확정 처리, 같�
 
 ## 검토와 후속 수용의 경계
 
-시설별 대상 분모, 정체·metric·위상·권리·현행성·각색·생활 기능 검토 상태와 사유를 따로 보고한다. 미실측 시설을 분모에서 버리지 않고 후보 처리율을 전수 실측률로 부르지 않는다. assertedConnection과 pendingEndpoint는 유효한 partial 조사 기록이며 조사 패키지 완료를 일괄 차단하지 않는다. 다만 pending은 통행용 그래프와 confirmed 연결 비율의 분자에서 제외하고 미확인 목록에 보존한다. 예를 들어 아워갤러리–시민청 연결 문구는 보존하되 시민청측 실제 끝점이 미확인이면 방이나 좌표를 만들지 않고 pendingEndpoint로 남긴다. 양끝과 필요한 층간 대응을 검증하기 전에는 VERIFIED connector로 승격하지 않는다. 원천·권리·해시·양끝 참조 대사와 실제 렌더 본문 검토는 별개로 수행한다. 슬롯을 방 수로 치환, 없는 층 생성, 고정 영주 부여, 겨울에 우기 템플릿 복사, 공용 통로 중복 면적, 같은 B2 자동 접합은 불합격 후보로 남기고 정본에 넣지 않는다.
+시설별 대상 분모, 정체·metric·위상·권리·현행성·각색·생활 기능 검토 상태와 사유를 따로 보고한다. 미실측 시설을 분모에서 버리지 않고 후보 처리율을 전수 실측률로 부르지 않는다. assertedConnection과 pendingEndpoint는 유효한 partial 조사 기록이며 조사 패키지 완료를 일괄 차단하지 않는다. 다만 pending은 통행용 그래프와 confirmed 연결 비율의 분자에서 제외하고 미확인 목록에 보존한다. 예를 들어 아워갤러리–시민청 연결 문구는 보존하되 시민청측 실제 끝점이 미확인이면 방이나 좌표를 만들지 않고 pendingEndpoint로 남긴다. 양끝과 필요한 층간 대응을 검증하기 전에는 VERIFIED connector로 승격하지 않는다. 원천·권리·해시·양끝 참조 대사와 실제 렌더 본문 검토는 별개로 수행한다. 슬롯을 방 수로 치환, 없는 층 생성, 고정 역장 부여, 겨울에 우기 템플릿 복사, 공용 통로 중복 면적, 같은 B2 자동 접합은 불합격 후보로 남기고 정본에 넣지 않는다.
 
 이 제안은 시설별 도면·실측 수치·개막 설정·새 검증기·게임 기능을 제공하지 않는다. 세부 원형과 권리의 미확인은 후속 조사 항목이며 초안을 막는 조건이 아니다. 배포 정본 반영은 해당 범위의 실제 승인·검증을, Unity 소비는 별도 import·직렬화·실행·저장 검증을 요구한다.
 
@@ -4041,7 +4041,7 @@ The original work''s institution names, titles, and source identifiers are not r
 **[Inferred]** One cycle goes as follows.
 
 1. **Diagnosis**: Check heirs, demesne limit, income and military expenses, vassal discontent, alliances and wars, and stress and health.
-2. **Goal selection**: Choose a near-term goal such as inheritance stability, duchy consolidation, a specific marriage, cultural innovation, or faith reform.
+2. **Goal selection**: Choose a near-term goal such as inheritance stability, tier-3 domain consolidation, a specific marriage, cultural innovation, or faith reform.
 3. **Character assignment**: Place suitable people as spouses, wards, councilors, commanders, and scheme partners.
 4. **Action commitment**: Invest resources, time, and political risk in construction, marriage, gifts, schemes, securing a casus belli, and declaring war.
 5. **Time progression**: Monthly income and growth, pregnancy, birth and death, events, tasks and schemes, and army movements all proceed together.
@@ -4074,14 +4074,14 @@ The original work''s institution names, titles, and source identifiers are not r
 
 1. **Who is eligible**: Gender laws such as male-only, male-preference, equal, female-preference, and female-only; religion and government conditions; and legitimacy, oath, and disinheritance status.
 2. **How is it divided**: Realm succession laws such as Confederate Partition, Partition, High Partition, and single-heir inheritance.
-3. **Is there a separate law for a specific title**: Elective titles can choose a different heir from the realm succession law. Do not equate succession of the primary title with succession of all county titles.[Source-M02; original text not obtained]
+3. **Is there a separate law for a specific title**: Elective titles can choose a different heir from the realm succession law. Do not equate succession of the primary title with succession of all tier-2 domain titles.[Source-M02; original text not obtained]
 
 ### 3.3 Major Succession Laws and Opinion Effects [Unverified]
 
 | Law | Title Distribution | Opinion and Power Effects and Risks |
 | --- | --- | --- |
-| Confederate Partition | Divides titles among eligible children, and if conditions are met, can newly create equal-rank titles for distribution. The primary heir gets priority for the primary title and the capital base. | In exchange for giving shares to multiple children, new kingdoms may arise and break away. Partition-type laws are structurally more favorable to non-primary-heir children than single-heir inheritance. |
-| Partition | Divides the titles you hold, but does not create new titles because of inheritance. | If you held a second kingdom title, it can still split apart. "No new titles created" does not mean "no fragmentation." |
+| Confederate Partition | Divides titles among eligible children, and if conditions are met, can newly create equal-rank titles for distribution. The primary heir gets priority for the primary title and the capital base. | In exchange for giving shares to multiple children, new tier-4 realms may arise and break away. Partition-type laws are structurally more favorable to non-primary-heir children than single-heir inheritance. |
+| Partition | Divides the titles you hold, but does not create new titles because of inheritance. | If you held a second tier-4 realm title, it can still split apart. "No new titles created" does not mean "no fragmentation." |
 | High Partition | Gives the primary heir at least half of the titles first and divides the rest. | It makes it easier for the primary heir to maintain power, but does not eliminate the other children''s shares and claims. |
 | Primogeniture | Single-heir succession through the line of the eldest eligible child. | Favorable for preserving territory, and excluded relatives become a source of grievance and justification for conflict. There are technology, authority, and special-power conditions. |
 | Ultimogeniture | Single-heir succession through the line of the youngest eligible child. | The possibility of a long reign and the risk of an underage succession both increase. |
@@ -4090,7 +4090,7 @@ The original work''s institution names, titles, and source identifiers are not r
 
 The **exact opinion values and scope of application** of the laws themselves, such as Partition and Primogeniture, could not be confirmed at present. Do not sum up relatives'' inheritance grievances, vassals'' grievances over authority changes, the law bonuses of election laws, and "opinion of predecessor" into a single fixed modifier. For law changes, the required innovation, crown authority, vassal consent, and prestige costs must be checked separately in the relevant UI.[Source-M02; original text not obtained]
 
-**[Inference: Partition Example]** If a king holding Kingdoms A and B has two equally eligible sons and there is no separate election or exception, the primary heir may receive A and the other son may receive B, becoming an independent king of equal rank. Conversely, if the primary heir inherits an empire and his brother receives only a kingdom under that empire, the brother usually remains a vassal. The exact distribution also reflects existing grants made during the ruler''s lifetime and the title hierarchy, so "simply dividing counties by the number of children" is not the actual algorithm.
+**[Inference: Partition Example]** If a ruler holding tier-4 realms A and B has two equally eligible sons and there is no separate election or exception, the primary heir may receive A and the other son may receive B, becoming an independent ruler of equal rank. Conversely, if the primary heir inherits an empire and his brother receives only a tier-4 realm under that empire, the brother usually remains a vassal. The exact distribution also reflects existing grants made during the ruler''s lifetime and the title hierarchy, so "simply dividing tier-2 domains by the number of children" is not the actual algorithm.
 
 ### 3.4 Means and Costs of Succession Preparation [Unverified]
 
@@ -4114,7 +4114,7 @@ Simply spending a resource does not lower the corresponding renown level by the 
 - **Domain Limit**: The cap on how many holdings a ruler can hold directly. It varies with Stewardship skill, title rank, spousal support, perks, culture, and so on. The traditional base rule of `+1` domain limit per `6` Stewardship is a figure that needs version cross-checking.
 - **Exceeding the Domain Limit**: Penalties apply to tax and levy efficiency. This is why it is better to grant land to loyal vassals than to hold it all directly without limit. The latest per-excess-holding rate is unverified.
 - **Development**: The foundation of military and economic output and cultural innovation. The known base effect for feudal and clan governments is `+0.5%` tax and levies per point of development, but government-specific exceptions and the latest figures are unverified.
-- **Control**: The level of governing enforcement in a county, usually `0–100`. It drops through occupation, revolt, and events, and is restored through Marshal tasks and the like. The known base rule is `-1%` tax and `-0.5%` levies for each point of control below 100, but the current application, caps, and special effects are unverified.
+- **Control**: The level of governing enforcement in a tier-2 domain, usually `0–100`. It drops through occupation, revolt, and events, and is restored through Marshal tasks and the like. The known base rule is `-1%` tax and `-0.5%` levies for each point of control below 100, but the current application, caps, and special effects are unverified.
 - **Buildings**: Gold is paid up front, and after the construction time they yield effects such as taxes, troops, supplies, and men-at-arms garrisons. They are constrained by terrain, holding type, cultural innovations, and building slots and tiers. Men-at-arms garrison bonuses must not be mixed with the realm-wide building bonuses from launch.
 
 **[Inference: economic judgment formula]** `wol sunsuip (monthly net income) = jikhal suip (direct income) + bongsin suip (vassal income) + gita jeonggi suip (other regular income) - gunbi (military expenses) - gungjeong·jikchaek·gita jeonggi biyong (court, office, and other regular costs)`. This is an accounting formula that describes the line items, not an engine formula that reproduces the order in which every game modifier is applied. The simple payback period of a construction is `geonseolbi (construction cost) / chuga wol sunsuip (additional monthly net income)`, but because it ignores ownership changes through death, conquest, and inheritance, it cannot be the whole basis for long-term decisions.
@@ -4287,9 +4287,9 @@ Conceptual Daily Losses ≈ Advantage-Adjusted Damage × k_day / Enemy Effective
 
 ### 7.1 Spatial Hierarchy and De Jure Territory [Unconfirmed]
 
-The small holdings and baronies on the map belong to the hierarchy of counties, duchies, kingdoms, and empires. The space for army movement and sieges and the space for taxes, titles, and inheritance are connected but are not the same unit. A county has states such as culture, faith, development, and control, and its internal holdings come in types such as castles, cities, and temples.
+The small holdings and tier-1 holdings on the map belong to the hierarchy of tier-2 domains, tier-3 domains, tier-4 realms, and empires. The space for army movement and sieges and the space for taxes, titles, and inheritance are connected but are not the same unit. A tier-2 domain has states such as culture, faith, development, and control, and its internal holdings come in types such as castles, cities, and temples.
 
-**De jure** is which higher title a territory legally belongs to, and **de facto** is whose vassal it actually is now. Conquering a de jure duchy of another kingdom does not immediately change the de jure map. Long-term integration is affected by the conditions for de jure shifts and by tasks. When granting a title equal to or higher than one''s liege''s, the possibility of independence must be considered.
+**De jure** is which higher title a territory legally belongs to, and **de facto** is whose vassal it actually is now. Conquering a de jure tier-3 domain of another tier-4 realm does not immediately change the de jure map. Long-term integration is affected by the conditions for de jure shifts and by tasks. When granting a title equal to or higher than one''s liege''s, the possibility of independence must be considered.
 
 ### 7.2 Map Modes Are Questions Posed to the Same World
 
@@ -4303,7 +4303,7 @@ Culture is not a simple fixed `+5%` table per ethnic group. **Ethos**, **Heritag
 
 - **Ethos** gives a culture''s broad tendency, such as war, administration, spirit, or community.
 - **Traditions** change concrete rules such as unit types, terrain specialization, marriage and kinship, economy, activities, and legal and social practices. They have per-era slot limits, prerequisites, prestige costs, and establishment times.
-- The **culture head** is usually the ruler who controls the most counties of that culture, and chooses the culture''s focus innovation.
+- The **culture head** is usually the ruler who controls the most tier-2 domains of that culture, and chooses the culture''s focus innovation.
 - **Innovation research** progresses through the average development of the culture''s holdings, the head''s learning and interest, exposure from other cultures, and so on. Choosing a focus is not an immediate purchase of a technology.
 - **Cultural Acceptance** is the degree of coexistence between two cultures, and it matters for governance, relations, and hybridization conditions. It is a different value from the personal affinity of one character for another culture. [Source-M05; original text not obtained]
 
@@ -4314,7 +4314,7 @@ Culture is not a simple fixed `+5%` table per ethnic group. **Ethos**, **Heritag
 | Reforming an Existing Culture | Adjusts the traditions and so on of an existing culture | Culture head qualification, tradition conditions, prestige, and installation time. It is not an action that instantly converts every member of that culture in the world to another culture. |
 | Hybridization | Selects elements of two cultures to form a new hybrid culture | A feature tied to the court expansion. There are contact, acceptance, and cultural conditions within the realm, a prestige cost, and a reuse limit. The known base acceptance threshold is `40%`, which can be reduced by cultural flexibility and the like, but the latest value is unconfirmed. It has the advantage of combining the innovations of the two parent cultures. |
 | Divergence | Forms a new culture split off from an existing culture | A feature tied to the court expansion. There are a prestige cost, a cultural change selection, and realm and duration restrictions. It differs from hybridization, which automatically obtains the innovations of another parent culture. |
-| Culture Promotion | Changes a county''s culture to the ruler''s culture | Steward time and the long-term opportunity cost of domestic affairs. It does not convert the entire population and their faith at once. |
+| Culture Promotion | Changes a tier-2 domain''s culture to the ruler''s culture | Steward time and the long-term opportunity cost of domestic affairs. It does not convert the entire population and their faith at once. |
 
 In hybridization and divergence, the regions the new culture will occupy and the characters who convert are determined by conditions. A ruler creating a new culture does not mean all existing holdings convert immediately. The base reuse cooldown, per-era tradition slots, and all prestige prices could not be confirmed in this investigation. [Source-M05; original text not obtained]
 
@@ -4340,7 +4340,7 @@ Opinion generally ranges from `-100~+100`, and **the value with which A rates B 
 
 ### 8.2 Vassals, Crown Authority, and Factions [Unconfirmed]
 
-A liege rules a large realm indirectly through vassals. The demesne limit and the vassal count limit are separate. Reorganizing counts under a duke can reduce the number of direct vassals, but the intermediate liege becomes stronger and taxes and levies are passed on indirectly. Crown authority widens powers such as title revocation, wars between vassals, and succession control, but it provokes vassal opinion penalties and political resistance.
+A liege rules a large realm indirectly through vassals. The demesne limit and the vassal count limit are separate. Reorganizing tier-2 holders under a tier-3 holder can reduce the number of direct vassals, but the intermediate liege becomes stronger and taxes and levies are passed on indirectly. Crown authority widens powers such as title revocation, wars between vassals, and succession control, but it provokes vassal opinion penalties and political resistance.
 
 The main factions are **Liberty** (lowering crown authority), **Independence**, **Claimant** (backing another person), **Dissolution** (dissolving the higher realm), and popular or peasant discontent over religion, culture, and public sentiment. When a faction''s military strength ratio and discontent reach the conditions, it sends an ultimatum, and if refused, a civil war can result. An alliance with the ruler, imprisonment, fostering, a strong hook, dread, and the like can prevent or suppress faction participation, but their applicable conditions and exceptions differ from one another. Not every faction is explained by the same 80% figure or a single identical opinion threshold.
 
@@ -4368,8 +4368,8 @@ A **Claim to a title** and a **casus belli (CB) that uses that claim** are diffe
 | Pressed and unpressed claims | A pressed claim may pass to the next generation in a weakened form, while an unpressed claim usually does not persist automatically. | Conditions such as waging a claim war without being defeated may affect the status of the right. The exact inheritance eligibility and changes by peace result need UI confirmation. |
 | Another person''s claim | Press the rights of a court member, vassal, or relative on their behalf | The beneficiary receives the title. Depending on conditions such as whether the title is lower than the attacker''s, the beneficiary is incorporated as a vassal or becomes independent. |
 | Customary-rights war | Demand a region legally belonging to your own title | Settles the relevant territory and vassal relationships. The extent that can be demanded at once may vary with technology. |
-| Conquest | Eligibility by tribe, specific faith, culture, government, etc. | Conquer counties, duchies, and so on. There are prestige and piety tiers, resource costs, and target restrictions. |
-| Holy War | Religious war against a hostile faith | Counties, duchies, and kingdom-scale conquests are possible, with faith costs and piety requirements. Rulers of the opposing faith may join the defense. |
+| Conquest | Eligibility by tribe, specific faith, culture, government, etc. | Conquer tier-2 domains, tier-3 domains, and so on. There are prestige and piety tiers, resource costs, and target restrictions. |
+| Holy War | Religious war against a hostile faith | Tier-2 domains, tier-3 domains, and tier-4 realm-scale conquests are possible, with faith costs and piety requirements. Rulers of the opposing faith may join the defense. |
 | Invasion and Subjugation | Eligibility tied to a specific government, religion, culture, decision, or character | Subjugates a large territory or a ruler. Each casus belli has its own restrictions, such as a lifetime usage limit. |
 | Great Holy War | Conditions such as religious head, tenets, and timing | A separate system in which multiple participants contribute and titles are distributed to the beneficiary. It is not the same as an ordinary holy war. |
 | Faction and Tyranny Wars | Rejected ultimatums and unjust acts of rule | The goal is a political outcome such as a change of crown authority, independence, replacing the ruler, or dissolution. |
@@ -4426,7 +4426,7 @@ This is a regional system unique to this regional expansion. It is not a mission
 - **Status Quo / Detente**: Institutionalizes divided spheres of influence. It differs from an outcome in which a single emperor annexes everything.
 - **Conciliation / Rapprochement**: Forms stable coexistence with forces of other faiths and cultures. Diplomatic relations and the conditions of the relevant phase are important.
 
-An ending decision is not a button that is available once you merely match the stage. It requires concrete qualifications such as the share of regional territory, relations with independent rulers, and the cultural and faith integration of the capital and kingdom, and it has changed with patches. After the ending, the title structure and regional modifiers may change. Here we do not invent the latest territory ratios, exact decision IDs, or bonus values.
+An ending decision is not a button that is available once you merely match the stage. It requires concrete qualifications such as the share of regional territory, relations with independent rulers, and the cultural and faith integration of the capital and tier-4 realm, and it has changed with patches. After the ending, the title structure and regional modifiers may change. Here we do not invent the latest territory ratios, exact decision IDs, or bonus values.
 
 **[Inferred]** The distinguishing feature of the struggle is that "the best military action" and "the catalyst for your desired ending" can conflict. If you want a conciliation ending but keep generating only hostility catalysts, personal expansion can obstruct the regional system''s goal.
 
@@ -4604,14 +4604,14 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 
 **[미확인]** 기본 역사 시작일의 대표는 867년과 1066년이며, 후속 확장에는 1178년 등 다른 시작일이 추가되었다. 전통적 기본 종료 연도는 1453년이다. 플레이어는 일시정지 가능한 실시간 달력 위에서 결혼·교육·내정·계책·전쟁을 병행한다. 규칙과 플레이 가능 정부에 따라 종료 조건은 달라진다. 전통적 지주 플레이에서는 계승 가능한 같은 왕조의 후계자를 잃거나 플레이 가능한 영지를 잃으면 게임 오버가 될 수 있지만, 무토지 모험가 등 확장 플레이에는 그대로 적용하면 안 된다.
 
-**[추론]** 따라서 핵심 성공 척도는 지도 색칠만이 아니다. ''사망 후에도 지배 기반이 남는가'', ''가문이 여러 통치자를 배출하는가'', ''신앙·문화·가계 계획을 실현했는가''가 병렬 목표다. 현재 군주의 승리가 다음 군주의 분열을 만들 수 있다.
+**[추론]** 따라서 핵심 성공 척도는 지도 색칠만이 아니다. ''사망 후에도 지배 기반이 남는가'', ''가문이 여러 통치자를 배출하는가'', ''신앙·문화·가계 계획을 실현했는가''가 병렬 목표다. 현재 통치자의 승리가 다음 통치자의 분열을 만들 수 있다.
 
 ### 1.2 세 겹의 상태 [미확인]
 
 | 층 | 소유하는 주요 상태 | 전환 시 일어나는 일 |
 | --- | --- | --- |
 | 인물 | 나이, 성격, 기량, 생활방식 특전, 건강, 스트레스, 개인 관계, 명예·신앙 | 사망하면 그 인물의 선택 능력과 관계망이 종료·재편된다. 개인 명예와 신앙을 왕조 공용 잔고로 취급하지 않는다. |
-| 작위·영지 | 작위 법률, 영주, 봉신 관계, 건물, 개발도, 통제력 | 계승·전쟁·수여·박탈로 보유자가 바뀌어도 영지의 물적 상태는 대체로 남는다. |
+| 직함·영지 | 직함 법률, 통치자, 봉신 관계, 건물, 개발도, 통제력 | 계승·전쟁·수여·박탈로 보유자가 바뀌어도 영지의 물적 상태는 대체로 남는다. |
 | 집안·왕조 | 친족 계통, 집안 수장·왕조 수장, 왕조 명성, 유산 | 플레이 인물이 바뀌어도 장기적 투자와 혈통을 이어 간다. |
 
 ## 2. 코어루프
@@ -4623,12 +4623,12 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 **[추론]** 한 바퀴는 다음과 같다.
 
 1. **진단**: 후계자, 직할 한도, 수입·군비, 봉신 불만, 동맹·전쟁, 스트레스·건강을 확인한다.
-2. **목표 선정**: 상속 안정, 공작령 통합, 특정 결혼, 문화 혁신, 신앙 개혁 등 가까운 목표를 고른다.
+2. **목표 선정**: 상속 안정, 3단계 영역 통합, 특정 결혼, 문화 혁신, 신앙 개혁 등 가까운 목표를 고른다.
 3. **인물 배치**: 배우자·피후견인·자문위원·지휘관·계책 협력자에 적합한 사람을 배치한다.
 4. **행동 확정**: 건설, 혼인, 선물, 계책, 명분 확보, 선전포고에 자원·시간·정치적 위험을 투입한다.
 5. **시간 진행**: 월 수입과 성장, 임신·출생·죽음, 사건, 과업·계책, 군대 이동이 겹쳐 진행된다.
 6. **결과 수습**: 포로 몸값, 새 봉신, 점령지 통제, 부채, 스트레스, 관계 악화에 대응한다.
-7. **세대 전달**: 사망과 계승으로 작위·영토를 재배분하고 새로운 인물로 다시 진단한다.
+7. **세대 전달**: 사망과 계승으로 직함·영토를 재배분하고 새로운 인물로 다시 진단한다.
 
 ### 2.2 행동은 시간·자원·사람을 동시에 점유한다 [미확인]
 
@@ -4648,7 +4648,7 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 
 - **유년기**: 교육 초점과 후견인을 통해 성년 기량·교육 특성·성격 형성에 영향을 준다. 성격은 원하는 보너스를 무제한 장착하는 장비가 아니다.
 - **성년기**: 생활방식 경험치를 얻고 특전을 해금하며, 혼인·자녀·정복·활동으로 재산과 명예를 축적한다.
-- **노년기**: 건강 악화, 상속 분배, 미성년 후계자·섭정, 계승 직후 반란에 대비한다. 오래 산 군주의 관계 자산이 후계자에게 그대로 복사되지는 않는다.
+- **노년기**: 건강 악화, 상속 분배, 미성년 후계자·섭정, 계승 직후 반란에 대비한다. 오래 산 통치자의 관계 자산이 후계자에게 그대로 복사되지는 않는다.
 - **왕조 성장**: 혼인을 통한 혈통 확장과 독립 통치자의 증가가 가문 명성을 키우고, 유산은 여러 세대의 인물에게 효과를 준다.
 - **문화 시대**: 부족 시대, 중세 초기, 중세 성기, 중세 후기로 혁신 풀이 확장된다. 달력 조건과 기존 혁신 연구 조건을 모두 고려하므로 금을 냈다고 즉시 장자상속을 획득하지 않는다.[원천-M05; 원문 미확보]
 
@@ -4656,27 +4656,27 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 
 1. **누가 자격이 있는가**: 남성 전용·남성 우선·평등·여성 우선·여성 전용 등 성별 법, 종교·정부 조건, 적서·서약·폐적 상태.
 2. **어떻게 나누는가**: 연합 분할·분할·고등 분할·단독 상속 등 영역 계승법.
-3. **특정 작위에 별도 법이 있는가**: 선거 작위는 영역 계승법과 다른 후계자를 뽑을 수 있다. 주작위 승계와 모든 백작령 승계를 동일시하지 않는다.[원천-M02; 원문 미확보]
+3. **특정 직함에 별도 법이 있는가**: 선거 직함은 영역 계승법과 다른 후계자를 뽑을 수 있다. 주직함 승계와 모든 2단계 영역 승계를 동일시하지 않는다.[원천-M02; 원문 미확보]
 
 ### 3.3 주요 계승법과 의견 효과 [미확인]
 
-| 법률 | 작위 배분 | 의견·권력 효과와 위험 |
+| 법률 | 직함 배분 | 의견·권력 효과와 위험 |
 | --- | --- | --- |
-| 연합 분할 Confederate Partition | 자격 있는 자녀에게 나누며, 조건을 만족하면 분배용 동급 작위를 새로 생성할 수 있다. 주후계자는 주작위와 수도 기반을 우선한다. | 여러 자녀에게 몫을 주는 대신 새 왕국이 생겨 독립할 위험이 있다. 분할 계열은 단독 상속보다 비주후계 자녀에게 우호적인 구조다. |
-| 분할 Partition | 보유 중인 작위를 나누지만 상속 때문에 새 작위를 생성하지 않는다. | 두 번째 왕국 작위를 보유했다면 여전히 분열할 수 있다. ''새 작위를 안 만듦''은 ''분열 없음''이 아니다. |
-| 고등 분할 High Partition | 주후계자에게 최소 절반의 작위를 우선 배분하고 나머지를 분할한다. | 주후계자의 세력 유지가 쉬워지지만 다른 자녀 몫과 주장을 제거하지 않는다. |
+| 연합 분할 Confederate Partition | 자격 있는 자녀에게 나누며, 조건을 만족하면 분배용 동급 직함을 새로 생성할 수 있다. 주후계자는 주직함과 수도 기반을 우선한다. | 여러 자녀에게 몫을 주는 대신 새 4단계 영역이 생겨 독립할 위험이 있다. 분할 계열은 단독 상속보다 비주후계 자녀에게 우호적인 구조다. |
+| 분할 Partition | 보유 중인 직함을 나누지만 상속 때문에 새 직함을 생성하지 않는다. | 두 번째 4단계 영역 직함을 보유했다면 여전히 분열할 수 있다. ''새 직함을 안 만듦''은 ''분열 없음''이 아니다. |
+| 고등 분할 High Partition | 주후계자에게 최소 절반의 직함을 우선 배분하고 나머지를 분할한다. | 주후계자의 세력 유지가 쉬워지지만 다른 자녀 몫과 주장을 제거하지 않는다. |
 | 장자상속 Primogeniture | 자격 있는 가장 나이 많은 자녀 계통으로 단독 계승한다. | 영토 보존에 유리하고 제외된 친족은 불만·명분의 근원이 된다. 기술·권위·특수 권한 조건이 있다. |
 | 말자상속 Ultimogeniture | 자격 있는 가장 어린 자녀 계통으로 단독 계승한다. | 긴 재위 가능성과 미성년 계승 위험이 함께 커진다. |
 | 집안 연장자 상속 House Seniority | 집안에서 자격 있는 최고령 인물이 계승한다. | 친자녀 계획보다 집안 전체의 연령 구조가 중요해지고 짧은 재위가 반복될 수 있다. |
-| 선거 Elective | 작위별 유권자가 후보 자격·호감·기량·정치 이해관계에 따라 투표한다. 봉건·스칸디나비아·색슨·태니스트 선거 등의 후보·유권자 규칙이 다르다. | 군주가 원하는 후보를 지지해도 승리가 보장되지 않는다. 봉건 선거의 직속 봉신 의견 `+10`은 알려진 기본 규칙의 예시지만 이번 원문 대조는 하지 못했다. 적용 작위와 다른 선거법에 일반화하지 않는다. |
+| 선거 Elective | 직함별 유권자가 후보 자격·호감·기량·정치 이해관계에 따라 투표한다. 봉건·스칸디나비아·색슨·태니스트 선거 등의 후보·유권자 규칙이 다르다. | 통치자가 원하는 후보를 지지해도 승리가 보장되지 않는다. 봉건 선거의 직속 봉신 의견 `+10`은 알려진 기본 규칙의 예시지만 이번 원문 대조는 하지 못했다. 적용 직함과 다른 선거법에 일반화하지 않는다. |
 
-분할·장자상속 등 법률 자체의 **정확한 의견 수치와 적용 대상**은 현재 확인하지 못했다. 친족의 상속 불만, 권위 변경의 봉신 불만, 선거법의 법률 보너스, ''전임자에 대한 의견''을 하나의 고정 보정으로 합산해서는 안 된다. 법 변경은 필요한 혁신·왕권·봉신 동의·명예 비용을 해당 UI에서 별도로 확인해야 한다.[원천-M02; 원문 미확보]
+분할·장자상속 등 법률 자체의 **정확한 의견 수치와 적용 대상**은 현재 확인하지 못했다. 친족의 상속 불만, 권위 변경의 봉신 불만, 선거법의 법률 보너스, ''전임자에 대한 의견''을 하나의 고정 보정으로 합산해서는 안 된다. 법 변경은 필요한 혁신·통치권·봉신 동의·명예 비용을 해당 UI에서 별도로 확인해야 한다.[원천-M02; 원문 미확보]
 
-**[추론: 분할 예시]** 왕국 A·B를 가진 왕에게 동등한 자격의 두 아들이 있고 별도 선거·예외가 없다면, 주후계자가 A를 받고 다른 아들이 B를 받아 동급 독립 왕이 될 수 있다. 반대로 주후계자가 제국을 이어받고 형제가 제국 아래 왕국만 받는다면 형제는 보통 봉신으로 남는다. 정확한 분배는 기존 생전 수여와 작위 계층까지 반영하므로 ''자녀 수로 백작령을 단순 나눔''은 실제 알고리즘이 아니다.
+**[추론: 분할 예시]** 4단계 영역 A·B를 가진 통치자에게 동등한 자격의 두 아들이 있고 별도 선거·예외가 없다면, 주후계자가 A를 받고 다른 아들이 B를 받아 동급 독립 통치자가 될 수 있다. 반대로 주후계자가 제국을 이어받고 형제가 제국 아래 4단계 영역만 받는다면 형제는 보통 봉신으로 남는다. 정확한 분배는 기존 생전 수여와 직함 계층까지 반영하므로 ''자녀 수로 2단계 영역을 단순 나눔''은 실제 알고리즘이 아니다.
 
 ### 3.4 계승 준비의 수단과 비용 [미확인]
 
-생전 작위 수여, 주작위·수도 관리, 선거 도입·투표 영향력, 적법한 폐적, 종교가 허용하는 수도 서약, 혼인·출산 조절, 상위 작위 생성이 대안이다. 폐적은 왕조 명성·개인 명예와 친족 관계 비용을 수반할 수 있고, 살해는 적대 계책의 실패·발각·친족살해 위험을 가진다. 작위 파괴는 해당 봉신 불만과 명예 비용을 만들며 연합 분할의 재생성을 반드시 막지는 못한다.[원천-M02][원천-M06; 원문 미확보]
+생전 직함 수여, 주직함·수도 관리, 선거 도입·투표 영향력, 적법한 폐적, 종교가 허용하는 수도 서약, 혼인·출산 조절, 상위 직함 생성이 대안이다. 폐적은 왕조 명성·개인 명예와 친족 관계 비용을 수반할 수 있고, 살해는 적대 계책의 실패·발각·친족살해 위험을 가진다. 직함 파괴는 해당 봉신 불만과 명예 비용을 만들며 연합 분할의 재생성을 반드시 막지는 못한다.[원천-M02][원천-M06; 원문 미확보]
 
 ## 4. 경제
 
@@ -4684,8 +4684,8 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 
 | 자원 | 대표 유입 | 대표 지출·용도 | 별도 누적 지표 |
 | --- | --- | --- | --- |
-| 금 Gold | 직할 세금, 봉신 납부, 몸값, 약탈, 교계 지원, 사건 | 건설, 무장병 모집·유지, 소집군, 용병, 선물·뇌물, 활동, 작위 생성 | 부채는 행동 제약과 군사·정치 압박을 만든다. |
-| 명예 Prestige | 작위·지위, 전쟁·활동·사건, 혼인 | 일부 전쟁 명분, 법·문화 변경, 부족 병력·건설 등 | 위신 단계 Level of Fame는 보유 잔고와 구별한다. |
+| 금 Gold | 직할 세금, 봉신 납부, 몸값, 약탈, 교계 지원, 사건 | 건설, 무장병 모집·유지, 소집군, 용병, 선물·뇌물, 활동, 직함 생성 | 부채는 행동 제약과 군사·정치 압박을 만든다. |
+| 명예 Prestige | 직함·지위, 전쟁·활동·사건, 혼인 | 일부 전쟁 명분, 법·문화 변경, 부족 병력·건설 등 | 위신 단계 Level of Fame는 보유 잔고와 구별한다. |
 | 신앙 Piety | 학습·성직·순례·교리 친화 행동, 전쟁·사건 | 성전, 교계 요청, 개종·신앙 창설·개혁 등 | 헌신 단계 Level of Devotion는 보유 잔고와 구별한다. |
 | 왕조 명성 Renown | 살아 있는 왕조원, 독립 통치자·혼인 관계의 조건부 기여, 특수 효과 | 왕조 유산, 폐적 등 수장 행동 | 왕조 장엄도 Level of Splendor와 잔고를 구별한다. |
 
@@ -4693,10 +4693,10 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 
 ### 4.2 직할령, 개발도, 통제력 [미확인]
 
-- **직할 한도 Domain Limit**: 통치자가 직접 보유할 수 있는 영지의 한도. 관리 기량·작위 등급·배우자 지원·특전·문화 등으로 달라진다. 전통적 기본 규칙의 관리 `6`당 직할 한도 `+1`은 버전 대조가 필요한 수치다.
+- **직할 한도 Domain Limit**: 통치자가 직접 보유할 수 있는 영지의 한도. 관리 기량·직함 등급·배우자 지원·특전·문화 등으로 달라진다. 전통적 기본 규칙의 관리 `6`당 직할 한도 `+1`은 버전 대조가 필요한 수치다.
 - **직할 초과**: 세금·징집병 효율에 불이익이 생긴다. 무한히 직접 보유하는 것보다 충성할 봉신에게 나누는 이유다. 최신 초과 1개당 비율은 미확인이다.
 - **개발도 Development**: 군사·경제 생산과 문화 혁신의 기반. 알려진 봉건·씨족 기본 효과는 개발도 1당 세금과 징집병 `+0.5%`지만 정부별 예외와 최신 수치는 미확인이다.
-- **통제력 Control**: 백작령의 통치 집행 수준으로 보통 `0–100`. 점령·반란·사건으로 떨어지고 무관장 과업 등으로 회복한다. 알려진 기본 규칙은 100 미만에서 통제력 1 부족당 세금 `-1%`, 징집병 `-0.5%`지만 현행 적용·상한·특수 효과는 미확인이다.
+- **통제력 Control**: 2단계 영역의 통치 집행 수준으로 보통 `0–100`. 점령·반란·사건으로 떨어지고 무관장 과업 등으로 회복한다. 알려진 기본 규칙은 100 미만에서 통제력 1 부족당 세금 `-1%`, 징집병 `-0.5%`지만 현행 적용·상한·특수 효과는 미확인이다.
 - **건물**: 금을 선지출하고 건설 시간을 지나 세금·병력·보급·무장병 주둔 효과 등을 얻는다. 지형·영지 유형·문화 혁신·건물 슬롯과 단계가 제약한다. 무장병 주둔 보너스는 출시 당시의 전역 건물 보너스와 혼합하면 안 된다.
 
 **[추론: 경제 판단식]** `월 순수입 = 직할 수입 + 봉신 수입 + 기타 정기 수입 - 군비 - 궁정·직책·기타 정기 비용`. 이는 항목을 설명하는 회계식이며, 모든 게임 보정의 적용 순서를 재현한 엔진 공식은 아니다. 건설의 단순 회수 기간은 `건설비 / 추가 월 순수입`이지만 사망·정복·상속에 따른 소유권 변경을 무시하므로 장기 의사결정의 전부가 될 수 없다.
@@ -4704,7 +4704,7 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 ### 4.3 봉신 수입과 정부 [미확인]
 
 - **봉건**: 봉신 계약이 세금과 징집병 의무를 정한다. 높은 의무는 일반적으로 봉신 호감을 낮추며, 구실이나 상응하는 양보 없이 불리하게 바꾸면 폭정 문제를 만들 수 있다. 성벽·군역·자문회 권리 같은 특수 조항도 거래 대상이다.
-- **씨족**: 초기 규칙에는 군주에 대한 의견이 세금·병력 기여에 직접 중요했다. 후속 규칙에는 세금 관할·징세관·세금 정책이 도입되었다. 두 체계를 같은 현행 계산식으로 제시하지 않는다.
+- **씨족**: 초기 규칙에는 통치자에 대한 의견이 세금·병력 기여에 직접 중요했다. 후속 규칙에는 세금 관할·징세관·세금 정책이 도입되었다. 두 체계를 같은 현행 계산식으로 제시하지 않는다.
 - **부족**: 위신 단계가 봉신 기여와 통치 능력에 중요하고 일부 군비·건설에 금 대신 명예를 쓴다. 봉건화는 경제 기반과 군사 비용 구조를 바꾸는 전환이다.
 - **신정·공화 봉신**: 종교와 정부별 규칙으로 납부한다. 특히 성직자 지지가 사원 수입에 영향을 주는 신앙과 직접 사원을 보유하는 신앙을 구별한다.
 - **행정제·유목제·무토지**: 확장별 별도 경제·계승 체계가 있으므로 봉건 계약 공식을 그대로 적용하지 않는다. 이 문서에서 각각의 세부 수치는 검증하지 않았다.
@@ -4751,7 +4751,7 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 
 | 자리 | 기량·기능 | 실질 비용·갈등 |
 | --- | --- | --- |
-| 재상 Chancellor | 외교: 대외 관계, 국내 봉신 관계, 작위 관습권 통합 관련 과업 | 뛰어난 평민 대신 유력 봉신을 앉힐 정치적 유인이 있다. |
+| 재상 Chancellor | 외교: 대외 관계, 국내 봉신 관계, 직함 관습권 통합 관련 과업 | 뛰어난 평민 대신 유력 봉신을 앉힐 정치적 유인이 있다. |
 | 무관장 Marshal | 전투: 통제력 증가, 군대 조직·기사 훈련 등 | 반란 지역 안정과 전투력 강화를 동시에 최대로 할 수 없다. |
 | 관리관 Steward | 관리: 세금 징수, 개발도 증가, 문화 촉진 | 단기 세금, 장기 성장, 동화 사이의 기회비용. |
 | 첩보장 Spymaster | 계책: 계책 지원·방해, 비밀 탐색 | 불충한 고기량 첩보장은 자신을 노리는 계책에 위험한 인물이 된다. |
@@ -4774,7 +4774,7 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 | Warfare | 4 Inherited Tactics, 전술 계승 | 무장병 상성 대응 효율 `+15%`. |
 | Warfare | 5 Private Army, 사병 | 무장병 연대 수 한도 `+1`. 한 연대의 병력 크기 한도와 다르다. |
 | Law 법 | 1 Mostly Fair, 대체로 공정 | 사냥·연회 비용 `-30%`가 알려진 구판 대표 효과. 활동 개편 후 정확한 적용 항목은 미확인. |
-| Law | 2 Faithful Magistrates, 충실한 행정관 | 봉신 대중 의견 `+5` 계열의 민심 안정 효과. 개인 봉신의 군주 호감과 대중 의견을 구별한다. 정확한 현행 대상 범위 미확인. |
+| Law | 2 Faithful Magistrates, 충실한 행정관 | 봉신 대중 의견 `+5` 계열의 민심 안정 효과. 개인 봉신의 통치자 호감과 대중 의견을 구별한다. 정확한 현행 대상 범위 미확인. |
 | Law | 3 Power and Prosperity, 권력과 번영 | 관리 생활방식 경험치 `+10%`. |
 | Law | 4 Delegated Authority, 권한 위임 | 유력 봉신 의견 `+5`. |
 | Law | 5 Home Estates, 가문 영지 | 직할 한도 `+1`. |
@@ -4860,18 +4860,18 @@ A = max(0, 내 우위 - 상대 우위)
 
 - 적의 요새 영지를 포위하고 수비대보다 충분한 병력을 유지하면 공성이 진행된다. 공성 진행은 요새 수준·수비대·공성 병기·지휘 특성·공성 사건의 영향을 받는다.
 - 공성 병기는 대응 가능한 최대 요새 수준이 있어 낡은 병기를 무한히 쌓는 것만으로 모든 성을 같은 속도로 함락할 수 없다.
-- 성벽 돌파 후 강습이 가능해질 수 있으나 큰 병력 손실을 감수한다. 수도 함락은 군주·가족 포획 가능성 때문에 전략적 가치가 크다.
+- 성벽 돌파 후 강습이 가능해질 수 있으나 큰 병력 손실을 감수한다. 수도 함락은 통치자·가족 포획 가능성 때문에 전략적 가치가 크다.
 - 보급 한도보다 큰 병력을 한 지역에 집중하면 보급이 악화된다. 적지·질병·겨울·특정 이동 경로의 소모는 전투 없이 병력을 깎는다. 군대를 나눠 보급하다 교전 때 합치는 운용이 필요하다.
 - 전쟁 점수는 전투, 목표 지역 점령·유지의 시간 누적, 기타 점령, 핵심 포로 등으로 구성된다. 일반적 강제 요구 기준은 `+100%`, 항복 측은 `-100%`이며 전투 점수 상한·목표 점수·특수 CB 예외가 있다.
-- 적 군주 포획은 보통 결정적 전쟁 점수를 주지만, 동맹의 군주나 다른 전쟁의 포로를 잡았다고 현재 전쟁이 자동 종료되지는 않는다. 전쟁 점수 우세와 평화 협상 확정도 구별한다.[원천-M03; 원문 미확보]
+- 적 통치자 포획은 보통 결정적 전쟁 점수를 주지만, 동맹의 통치자나 다른 전쟁의 포로를 잡았다고 현재 전쟁이 자동 종료되지는 않는다. 전쟁 점수 우세와 평화 협상 확정도 구별한다.[원천-M03; 원문 미확보]
 
 ## 7. 지도/세계
 
 ### 7.1 공간 계층과 관습권 [미확인]
 
-지도상의 작은 영지·남작령은 백작령, 공작령, 왕국, 제국 계층에 속한다. 군대 이동·공성의 공간과 세금·작위·상속의 공간은 서로 연결되지만 동일한 단위가 아니다. 백작령은 문화·신앙·개발도·통제 같은 상태를 가지며 내부 영지에는 성채·도시·사원 등의 유형이 있다.
+지도상의 작은 영지·1단계 영역은 2단계 영역, 3단계 영역, 4단계 영역, 제국 계층에 속한다. 군대 이동·공성의 공간과 세금·직함·상속의 공간은 서로 연결되지만 동일한 단위가 아니다. 2단계 영역은 문화·신앙·개발도·통제 같은 상태를 가지며 내부 영지에는 성채·도시·사원 등의 유형이 있다.
 
-**관습권 De jure**은 법적으로 어느 상위 작위에 속하는가이고, **실효 지배 De facto**는 지금 실제로 누구의 봉신인가다. 다른 왕국의 관습권 공작령을 정복해도 즉시 관습권 지도가 바뀌지 않는다. 장기 통합은 관습권 이동 조건과 과업의 영향을 받는다. 주군보다 동급 이상인 작위를 수여하는 경우 독립 가능성을 검토해야 한다.
+**관습권 De jure**은 법적으로 어느 상위 직함에 속하는가이고, **실효 지배 De facto**는 지금 실제로 누구의 봉신인가다. 다른 4단계 영역의 관습권 3단계 영역을 정복해도 즉시 관습권 지도가 바뀌지 않는다. 장기 통합은 관습권 이동 조건과 과업의 영향을 받는다. 주군보다 동급 이상인 직함을 수여하는 경우 독립 가능성을 검토해야 한다.
 
 ### 7.2 지도 모드는 같은 세계에 던지는 질문
 
@@ -4885,7 +4885,7 @@ A = max(0, 내 우위 - 상대 우위)
 
 - **기풍**은 전쟁·행정·정신·공동체 등 문화의 큰 경향을 부여한다.
 - **전통**은 병종, 지형 전문화, 결혼·친족, 경제, 활동, 법·사회 관행 등의 구체 규칙을 바꾼다. 시대별 슬롯 한도·선행 조건·명예 비용·설립 시간이 있다.
-- **문화 수장**은 보통 해당 문화 백작령을 가장 많이 지배하는 통치자이며 문화의 관심 혁신을 선택한다.
+- **문화 수장**은 보통 해당 문화 2단계 영역을 가장 많이 지배하는 통치자이며 문화의 관심 혁신을 선택한다.
 - **혁신 연구**는 문화 영지의 평균 개발도, 수장의 학습과 관심, 다른 문화로부터의 노출 등으로 진행된다. 관심 선택은 기술을 즉시 구입하는 것이 아니다.
 - **문화 수용도 Acceptance**는 두 문화 사이의 공존 정도로, 통치·관계와 혼합 조건에 중요하다. 한 인물이 다른 문화를 좋아하는 개인 호감과 다른 값이다.[원천-M05; 원문 미확보]
 
@@ -4896,9 +4896,9 @@ A = max(0, 내 우위 - 상대 우위)
 | 기존 문화 개혁 | 기존 문화의 전통 등을 조정 | 문화 수장 자격, 전통 조건, 명예, 설치 시간. 세계의 모든 문화원을 즉시 다른 문화로 바꾸는 행동이 아니다. |
 | 혼합 Hybridization | 두 문화 요소를 선택해 새 혼합 문화를 구성 | 궁정 확장 관련 기능. 영역 내 접촉·수용도·문화 조건, 명예 비용·재사용 제한이 있다. 알려진 기본 수용도 기준은 `40%`, 문화적 유연성 등으로 감소 가능하나 최신값 미확인. 두 부모 문화의 혁신을 결합하는 이점이 있다. |
 | 분화 Divergence | 기존 문화에서 갈라진 새 문화를 구성 | 궁정 확장 관련 기능. 명예 비용, 문화 변경 선택, 영역·기간 제약이 있다. 다른 부모 문화의 혁신을 자동으로 얻는 혼합과 다르다. |
-| 문화 촉진 | 백작령의 문화를 통치자 문화로 바꿈 | 관리관 시간과 장기 내정 기회비용. 사람 전체와 신앙까지 한 번에 전환하지 않는다. |
+| 문화 촉진 | 2단계 영역의 문화를 통치자 문화로 바꿈 | 관리관 시간과 장기 내정 기회비용. 사람 전체와 신앙까지 한 번에 전환하지 않는다. |
 
-혼합·분화 때 새 문화가 차지할 지역과 전환하는 인물은 조건에 의해 정해진다. 군주가 새 문화를 만들었다고 모든 기존 영지가 즉시 전환하는 것은 아니다. 기본 재사용 대기 기간, 시대별 전통 슬롯, 모든 명예 가격은 이 조사에서 확인하지 못했다.[원천-M05; 원문 미확보]
+혼합·분화 때 새 문화가 차지할 지역과 전환하는 인물은 조건에 의해 정해진다. 통치자가 새 문화를 만들었다고 모든 기존 영지가 즉시 전환하는 것은 아니다. 기본 재사용 대기 기간, 시대별 전통 슬롯, 모든 명예 가격은 이 조사에서 확인하지 못했다.[원천-M05; 원문 미확보]
 
 ## 8. 외교/세력
 
@@ -4910,21 +4910,21 @@ A = max(0, 내 우위 - 상대 우위)
 | --- | --- | --- |
 | 일반 외교 기량 | 여러 인물의 기본 평가를 조정 | 정확한 기량당 값은 이번 대조 없음. |
 | 성격·덕목·죄악 | 같은·대립 성격과 신앙의 도덕 평가로 보정 | 동일 특성도 신앙 교리에 따라 평가가 달라질 수 있다. |
-| 단기·장기 재위 | 새 군주 불신과 장기 통치 신뢰 | 알려진 기본 단기 재위 최대 불이익 `-20`은 정부·보정·패치 예외 미확인. |
+| 단기·장기 재위 | 새 통치자 불신과 장기 통치 신뢰 | 알려진 기본 단기 재위 최대 불이익 `-20`은 정부·보정·패치 예외 미확인. |
 | 유력 봉신의 자리 요구 | 자문회에서 배제된 주요 봉신 불만 | 알려진 기본 `-40`; 모든 봉신에게 적용되는 값이 아니다. |
-| 작위 욕구·계층 불일치 | 관습권 봉신·작위를 원하는 인물이 불만 | 어떤 작위·누구에 대한 보정인지 개별로 확인. |
-| 선물·설득·친교·작위 수여 | 특정 방향의 의견을 올림 | 선물은 금, 설득은 계책 슬롯·시간, 수여는 소유권을 소비한다. |
+| 직함 욕구·계층 불일치 | 관습권 봉신·직함을 원하는 인물이 불만 | 어떤 직함·누구에 대한 보정인지 개별로 확인. |
+| 선물·설득·친교·직함 수여 | 특정 방향의 의견을 올림 | 선물은 금, 설득은 계책 슬롯·시간, 수여는 소유권을 소비한다. |
 | 폭정 Tyranny | 정당하지 않은 투옥·박탈·처형 등으로 집단적 불만 | 피해자 개인의 원한과 별도의 누적 불이익. 불법 행위마다 동일 수치가 아니다. |
 | 공포 Dread | 상대의 담력에 따라 위축·공포 상태를 유도 | 대표 범위 `0–100`. 좋아하게 만드는 것이 아니라 저항을 억제하는 별도 축이다. |
-| 전임자 의견 | 이전 군주와의 관계가 새 군주 평가에 일부 반영 | 기존 호감 전체가 그대로 상속되는 것은 아니다. |
+| 전임자 의견 | 이전 통치자와의 관계가 새 통치자 평가에 일부 반영 | 기존 호감 전체가 그대로 상속되는 것은 아니다. |
 
-**[추론]** 의견 `+100`만으로 동맹·봉신화·모든 계책 협조를 보장할 수 없다. 제안에는 작위 등급, 거리, 종교, 군사력, 친족 관계, 계약, 성격 같은 별도 조건이 있다. 공포로 유지한 복종은 공포가 낮은 후계자에게 취약할 수 있다.
+**[추론]** 의견 `+100`만으로 동맹·봉신화·모든 계책 협조를 보장할 수 없다. 제안에는 직함 등급, 거리, 종교, 군사력, 친족 관계, 계약, 성격 같은 별도 조건이 있다. 공포로 유지한 복종은 공포가 낮은 후계자에게 취약할 수 있다.
 
-### 8.2 봉신, 왕권, 파벌 [미확인]
+### 8.2 봉신, 통치권, 파벌 [미확인]
 
-주군은 봉신을 통해 큰 영역을 간접 통치한다. 직할 한도와 봉신 수 한도는 별개다. 공작 아래 백작을 정리하면 직접 봉신 수를 줄일 수 있지만 중간 주군이 더 강해지고 세금·병력은 간접 전달된다. 왕권은 작위 박탈·봉신 간 전쟁·계승 통제 등 권한을 넓히는 대신 봉신 의견과 정치적 저항을 유발한다.
+주군은 봉신을 통해 큰 영역을 간접 통치한다. 직할 한도와 봉신 수 한도는 별개다. 3단계 직함 보유자 아래 2단계 직함 보유자를 정리하면 직접 봉신 수를 줄일 수 있지만 중간 주군이 더 강해지고 세금·병력은 간접 전달된다. 통치권은 직함 박탈·봉신 간 전쟁·계승 통제 등 권한을 넓히는 대신 봉신 의견과 정치적 저항을 유발한다.
 
-대표 파벌은 **자유 Liberty**(왕권 하향), **독립 Independence**, **주장자 Claimant**(다른 인물 옹립), **해체 Dissolution**(상위 영역 해체), 민중·농민의 종교·문화·민심 불만이다. 파벌의 군사력 비율과 불만이 조건에 도달하면 최후통첩을 보내고 거절 시 내전이 될 수 있다. 군주와의 동맹, 투옥, 친교·강한 구실·공포 등은 파벌 참여를 막거나 억제할 수 있으나 적용 조건과 예외는 서로 다르다. 모든 파벌을 동일한 80% 또는 동일한 의견 임계값 하나로 설명하지 않는다.
+대표 파벌은 **자유 Liberty**(통치권 하향), **독립 Independence**, **주장자 Claimant**(다른 인물 옹립), **해체 Dissolution**(상위 영역 해체), 민중·농민의 종교·문화·민심 불만이다. 파벌의 군사력 비율과 불만이 조건에 도달하면 최후통첩을 보내고 거절 시 내전이 될 수 있다. 통치자와의 동맹, 투옥, 친교·강한 구실·공포 등은 파벌 참여를 막거나 억제할 수 있으나 적용 조건과 예외는 서로 다르다. 모든 파벌을 동일한 80% 또는 동일한 의견 임계값 하나로 설명하지 않는다.
 
 ### 8.3 혼인 동맹과 구실·계책
 
@@ -4942,19 +4942,19 @@ A = max(0, 내 우위 - 상대 우위)
 
 ### 8.4 명분 Claims와 전쟁 명분 Casus Belli [미확인]
 
-**작위에 대한 권리 주장 Claim**과 **그 주장을 사용한 전쟁 사유 CB**는 다르다. 명분을 갖고 있어도 선전포고 자격·성별·신앙·휴전·봉신 권한 등의 제한을 받는다.[원천-M02][원천-M03; 원문 미확보]
+**직함에 대한 권리 주장 Claim**과 **그 주장을 사용한 전쟁 사유 CB**는 다르다. 명분을 갖고 있어도 선전포고 자격·성별·신앙·휴전·봉신 권한 등의 제한을 받는다.[원천-M02][원천-M03; 원문 미확보]
 
 | 유형 | 취득·사용 | 승리 결과·대가 |
 | --- | --- | --- |
-| 개인 작위 명분 | 계승·가족 권리, 신도의 위조, 종교 수장 요청, 특전 등 | 지정 작위를 얻는다. 위조 완료 금, 요청 신앙, 전쟁 명예 등 취득·사용 비용이 별개다. |
+| 개인 직함 명분 | 계승·가족 권리, 신도의 위조, 종교 수장 요청, 특전 등 | 지정 직함을 얻는다. 위조 완료 금, 요청 신앙, 전쟁 명예 등 취득·사용 비용이 별개다. |
 | 압박된·미압박된 명분 | 압박된 명분은 다음 세대에 약화된 형태로 이어질 수 있고 미압박 명분은 보통 자동 영속하지 않는다. | 패배하지 않고 명분 전쟁을 수행하는 조건 등이 권리 상태에 영향을 줄 수 있다. 정확한 상속 자격·평화 결과별 변화는 UI 확인 필요. |
-| 다른 인물의 명분 | 궁정 인물·봉신·친족의 권리를 대신 주장 | 수혜자가 작위를 받는다. 수혜 작위가 공격자보다 낮은지 등 조건에 따라 봉신으로 편입되거나 독립한다. |
-| 관습권 전쟁 | 자신의 작위에 법적으로 속한 지역을 요구 | 해당 영토·봉신 관계를 정리한다. 기술에 따라 한 번에 요구할 범위가 달라질 수 있다. |
-| 정복 Conquest | 부족·특정 신앙·문화·정부 등의 자격 | 백작령·공작령 등을 정복한다. 위신·헌신 등급과 자원 비용·대상 제약이 있다. |
-| 성전 Holy War | 적대적 신앙과의 종교 전쟁 | 백작령·공작령·왕국 규모가 가능하고 신앙 비용·헌신 요구가 있다. 상대 신앙 통치자들이 방어에 가담할 수 있다. |
+| 다른 인물의 명분 | 궁정 인물·봉신·친족의 권리를 대신 주장 | 수혜자가 직함을 받는다. 수혜 직함이 공격자보다 낮은지 등 조건에 따라 봉신으로 편입되거나 독립한다. |
+| 관습권 전쟁 | 자신의 직함에 법적으로 속한 지역을 요구 | 해당 영토·봉신 관계를 정리한다. 기술에 따라 한 번에 요구할 범위가 달라질 수 있다. |
+| 정복 Conquest | 부족·특정 신앙·문화·정부 등의 자격 | 2단계 영역·3단계 영역 등을 정복한다. 위신·헌신 등급과 자원 비용·대상 제약이 있다. |
+| 성전 Holy War | 적대적 신앙과의 종교 전쟁 | 2단계 영역·3단계 영역·4단계 영역 규모가 가능하고 신앙 비용·헌신 요구가 있다. 상대 신앙 통치자들이 방어에 가담할 수 있다. |
 | 침공·복속 | 특정 정부·종교·문화·결단·인물 자격 | 넓은 영토나 통치자를 굴복시킨다. 평생 횟수 제한 등 CB별 제약을 가진다. |
-| 대성전 Great Holy War | 종교 수장·교리·시기 등의 조건 | 여러 참여자가 기여하고 수혜자에게 작위를 분배하는 별도 체계. 일반 성전과 같지 않다. |
-| 파벌·폭정 전쟁 | 최후통첩 거절·부당한 통치 조치 | 왕권 변경·독립·군주 교체·해체 등 정치적 결과가 목표다. |
+| 대성전 Great Holy War | 종교 수장·교리·시기 등의 조건 | 여러 참여자가 기여하고 수혜자에게 직함을 분배하는 별도 체계. 일반 성전과 같지 않다. |
+| 파벌·폭정 전쟁 | 최후통첩 거절·부당한 통치 조치 | 통치권 변경·독립·통치자 교체·해체 등 정치적 결과가 목표다. |
 
 휴전 파기는 명예·외교 불이익을 만들 수 있고, 같은 땅을 점령해도 전쟁의 법적 목표 밖이면 마음대로 합병하지 못한다. 공격 승리·무승부·항복의 배상·권리 변화는 CB마다 다르므로 선전포고 화면의 세 결과를 별도로 읽어야 한다.
 
@@ -4966,7 +4966,7 @@ A = max(0, 내 우위 - 상대 우위)
 
 **[미확인]** 사건의 유발 조건은 활동·생활방식·가족·특성·궁정·여행·전쟁·종교·문화·이전 사건 플래그 등이다. 선택은 자원·스트레스·의견·관계·건강·특성·명분·비밀·후속 사건을 바꿀 수 있다. 학습이나 성격으로 열리는 특별 선택도 있지만 모든 능력 판정이 같은 선형 성공률 공식을 사용하지는 않는다.
 
-**[추론]** 내러티브는 완전히 별도의 스토리 캠페인이 아니라 시스템 상태의 재해석이다. ''자비로운 군주가 반란 지도자를 처형할 것인가''는 금·안전·공포·성격 비용이 동시에 걸린 의사결정이며, 승리 보상과 개인적 손실을 같은 선택에 둔다.
+**[추론]** 내러티브는 완전히 별도의 스토리 캠페인이 아니라 시스템 상태의 재해석이다. ''자비로운 통치자가 반란 지도자를 처형할 것인가''는 금·안전·공포·성격 비용이 동시에 걸린 의사결정이며, 승리 보상과 개인적 손실을 같은 선택에 둔다.
 
 ### 9.2 종교·신앙·교리 [미확인]
 
@@ -4985,7 +4985,7 @@ A = max(0, 내 우위 - 상대 우위)
 
 **비개혁 신앙 개혁**은 조직되지 않은 신앙을 조직화하는 별도 경로이며, 알려진 기본 조건에는 해당 신앙 성지 `3곳` 통제가 있다. 이미 조직된 신앙에서 새 신앙을 만드는 모든 경우에 이 성지 조건을 붙여서는 안 된다.
 
-창설·개혁은 군주의 개인 개종만으로 끝나지 않는다. 가족·봉신의 동참 여부, 영지 개종 시간, 기존 종교와의 적대·성전, 성직 수입과 혼인 적법성 변화가 뒤따른다. 성직자를 세속 군주의 통제 아래 두는 교리와 독립 종교 수장을 두는 교리는 정치경제 구조까지 다르게 만든다. 정확한 비용 계산식·성지 조건의 예외·생애별 제한은 원문 확인 전 확정하지 않는다.[원천-M04; 원문 미확보]
+창설·개혁은 통치자의 개인 개종만으로 끝나지 않는다. 가족·봉신의 동참 여부, 영지 개종 시간, 기존 종교와의 적대·성전, 성직 수입과 혼인 적법성 변화가 뒤따른다. 성직자를 세속 통치자의 통제 아래 두는 교리와 독립 종교 수장을 두는 교리는 정치경제 구조까지 다르게 만든다. 정확한 비용 계산식·성지 조건의 예외·생애별 제한은 원문 확인 전 확정하지 않는다.[원천-M04; 원문 미확보]
 
 ### 9.4 지역 투쟁 지역 투쟁 [미확인]
 
@@ -5008,7 +5008,7 @@ A = max(0, 내 우위 - 상대 우위)
 - **현상 유지 Status Quo / Detente**: 분할된 세력권을 제도화한다. 하나의 황제가 전부 합병하는 결말과 다르다.
 - **화해 Conciliation / Rapprochement**: 다른 신앙·문화 세력과 안정적 공존을 형성한다. 외교 관계와 해당 국면의 조건이 중요하다.
 
-종결 결단은 단계만 맞추면 되는 버튼이 아니다. 해당 지역 영토 비율, 독립 통치자 관계, 수도·왕국의 문화·신앙 통합 같은 구체 자격을 요구하며 패치에 따라 변경되어 왔다. 종결 이후 작위 구조·지역 보정이 달라질 수 있다. 여기서 최신 영토 비율·정확한 결단 ID·보너스 수치를 창작하지 않는다.
+종결 결단은 단계만 맞추면 되는 버튼이 아니다. 해당 지역 영토 비율, 독립 통치자 관계, 수도·4단계 영역의 문화·신앙 통합 같은 구체 자격을 요구하며 패치에 따라 변경되어 왔다. 종결 이후 직함 구조·지역 보정이 달라질 수 있다. 여기서 최신 영토 비율·정확한 결단 ID·보너스 수치를 창작하지 않는다.
 
 **[추론]** 투쟁의 특징은 ''최선의 군사 행동''과 ''원하는 결말의 촉매''가 충돌할 수 있다는 점이다. 화해 결말을 원하면서 적대 촉매만 계속 만들면 개인의 확장이 지역 시스템의 목표를 방해할 수 있다.
 
@@ -5037,8 +5037,8 @@ A = max(0, 내 우위 - 상대 우위)
 | 정직함 Honest·공정함 Just | 거짓말·부정한 계책·불의한 처벌 관련 선택 | 진실 공개가 외교·가족 관계를 파괴할 수 있다. 정확한 비용은 선택별로 다르다. |
 | 탐욕 Greedy | 금을 나눠 주는 선물·기부·특정 관대한 선택 | 금을 지키면 봉신 달래기·필요한 사건 해결을 놓칠 수 있다. |
 | 수줍음 Shy | 낯선 사람과의 교류·초대·대규모 사교의 특정 선택 | 사교 기피가 동맹·인재·관계 형성을 방해한다. |
-| 야심 Ambitious | 지위를 포기하거나 특정 조건에서 작위를 수여하는 선택 | 직접 보유 집착이 직할 초과·봉신 불만을 낳는다. 모든 작위 수여가 무조건 같은 스트레스는 아니다. |
-| 친구·가족 사망 | 가까운 관계의 죽음·비극 | 관계망이 풍부한 군주도 연속 사별에 취약하다. |
+| 야심 Ambitious | 지위를 포기하거나 특정 조건에서 직함을 수여하는 선택 | 직접 보유 집착이 직할 초과·봉신 불만을 낳는다. 모든 직함 수여가 무조건 같은 스트레스는 아니다. |
+| 친구·가족 사망 | 가까운 관계의 죽음·비극 | 관계망이 풍부한 통치자도 연속 사별에 취약하다. |
 | 고문·구금·사건 실패 | 피해 상태나 특정 사건 효과 | 직접 통제할 수 없는 외부 사건도 스트레스를 만든다. |
 
 - **대처 특성 Coping mechanisms**: 음주, 대마 사용, 은둔, 난폭한 감정 표출, 식욕 상실, 폭식, 방탕, 무절제한 소비, 자해 같은 부정적·양면적 대처와 운동, 일기 쓰기, 친구에게 털어놓기 같은 상대적으로 건전한 대처가 있다. 이용 가능성은 사건·특성·신앙·관계에 달린다.
@@ -5046,11 +5046,11 @@ A = max(0, 내 우위 - 상대 우위)
 - **사냥·연회·순례·여행**: 활동과 이벤트에서 스트레스가 변하지만 모든 성격이 같은 활동으로 항상 회복하지 않는다. 수줍은 인물에게 사교 선택이 오히려 부담일 수 있다.
 - **붕괴 선택**: 새 대처 특성을 받고 당장 완화하거나, 이를 거부하고 더 높은 스트레스를 감수하거나, 더 심각한 자기 파괴·정치적 결과로 이어질 수 있다. 단계별 모든 이벤트가 퇴위·자살 같은 같은 선택을 보장하지 않는다.
 
-**[추론]** 스트레스의 설계적 역할은 선택을 금으로 환산하지 못하게 만드는 것이다. 같은 반란자 처분이라도 가학적 군주와 자비로운 군주에게 최적 선택이 달라진다. 스트레스 감소만 최적화하면 재정·도덕·인재·건강이 악화될 수 있다.
+**[추론]** 스트레스의 설계적 역할은 선택을 금으로 환산하지 못하게 만드는 것이다. 같은 반란자 처분이라도 가학적 통치자와 자비로운 통치자에게 최적 선택이 달라진다. 스트레스 감소만 최적화하면 재정·도덕·인재·건강이 악화될 수 있다.
 
 ### 10.3 복합 위기와 난이도 조절 [미확인]
 
-- **계승 위기**: 강한 장기 재위 군주가 죽으면 분할·단기 재위·새로운 관계·미성년·약한 군대가 동시에 겹친다.
+- **계승 위기**: 강한 장기 재위 통치자가 죽으면 분할·단기 재위·새로운 관계·미성년·약한 군대가 동시에 겹친다.
 - **확장 과부하**: 낮은 통제력, 다른 신앙·문화, 직할·봉신 한도, 강한 신규 봉신, 장거리 방어가 정복의 수익을 지연시킨다.
 - **군사·재정 악순환**: 장기 소집 → 부채 → 약화된 전쟁 수행 → 포로·배상 → 재건 지연의 연쇄가 가능하다.
 - **건강·역병·여행**: 나이·질병·부상·치료·활동 위험은 계획한 사망 순서와 교육·혼인 계획을 깨뜨린다. 역병·여행 세부는 관련 패치·DLC 범위를 구별한다.
@@ -5061,9 +5061,9 @@ A = max(0, 내 우위 - 상대 우위)
 
 1. 이 자원과 보정은 인물·영지·왕조 중 누구의 것인가?
 2. 이번 선택은 즉시 금만 쓰는가, 과업·계책·활동 시간도 점유하는가?
-3. 사망하면 작위·부대·관계·유산 중 무엇이 누구에게 남는가?
+3. 사망하면 직함·부대·관계·유산 중 무엇이 누구에게 남는가?
 4. 군사력 표시는 보급·지형·상성·기사·우위를 반영하지 않은 단순 총원인가?
-5. 전쟁 승리 시 작위를 받는 사람은 나인가, 명분 보유자인가? 그가 내 봉신으로 남는가?
+5. 전쟁 승리 시 직함을 받는 사람은 나인가, 명분 보유자인가? 그가 내 봉신으로 남는가?
 6. 문화·신앙 변경은 인물만 바꾸는가, 영지·봉신·전쟁 적대까지 바꾸는가?
 7. 지금의 정치적 효율이 내 성격의 스트레스와 다음 세대의 반란 비용을 높이는가?
 8. 그 지역에서 해당 행동은 개인 목표와 어떤 단계 촉매를 동시에 움직이는가?
@@ -5330,10 +5330,10 @@ This list was found during the reference research but has not yet been reflected
 
 > Base single-player structure. War Sails and mods excluded. Cross-checked against launch reviews, subsequent official patches, and the dedicated wiki; it does not guarantee every latest perk, daily wage, or founding condition. See detailed research §9. [S145-S153]
 
-### 9.1 Unaffiliated → Mercenary → Vassal → Kingdom [REF:MB-PROGRESSION]
+### 9.1 Unaffiliated → Mercenary → Vassal → Realm [REF:MB-PROGRESSION]
 
-- [Document] A clan includes characters, family, companions, and multiple parties, and a kingdom includes multiple clans. According to the wiki, you gain mercenary status at T1/Renown 50 and vassal status at T2/Renown 150. The campaign has a framework of family and main quests, while Sandbox omits it. [S146-S147; S151 §5]
-- [Document] A mercenary''s influence is tied to contract income, and a vassal takes part in fiefs, policies, and army mobilization. An independent clan''s holding of territory is distinguished from declaring a kingdom. The official e1.7.0 announcement describes founding through a governor dialogue, so the old guide claiming the Dragon Banner quest is the only way to found a kingdom is not adopted. [S149; S152]
+- [Document] A clan includes characters, family, companions, and multiple parties, and a realm includes multiple clans. According to the wiki, you gain mercenary status at T1/Renown 50 and vassal status at T2/Renown 150. The campaign has a framework of family and main quests, while Sandbox omits it. [S146-S147; S151 §5]
+- [Document] A mercenary''s influence is tied to contract income, and a vassal takes part in holdings, policies, and army mobilization. An independent clan''s holding of territory is distinguished from declaring a realm. The official e1.7.0 announcement describes founding through a governor dialogue, so the old guide claiming the Dragon Banner quest is the only way to found a realm is not adopted. [S149; S152]
 - [Inference] This sequence is not a mandatory chapter list but a path for learning authority. BB is also a free sandbox, but its persistent subject is a mercenary company, whereas in Bannerlord even the clan''s national role changes. [S97; S106; S146-S149]
 - [Application Proposal] Janseon translates this into an authority transition of service contract → passage/supply agreement → operations consignment → optional self-governance. [S165]
 
@@ -5344,10 +5344,10 @@ This list was found during the reference research but has not yet been reflected
 - [Inference] Focus points are not money that instantly buys skill levels. The growth path is which character you actually assign to which task. [S148]
 - [Application Proposal] Janseon''s specialist personnel must change a party''s endurance through restoration, transport, and medical work, beyond combat strength. [S165]
 
-### 9.3 World map, fiefs, armies, and sieges [REF:MB-KINGDOM]
+### 9.3 World map, holdings, armies, and sieges [REF:MB-KINGDOM]
 
 - [Document/Inference] There are three functional surfaces: an integrated strategy/travel map on which parties move, a local exploration space, and direct combat. Local interactions can also be handled through menus. Korean sources describe 84 days per year, but the actual conversion to seconds and the auto-pause boundaries of every menu are unverified. [S145-S146; S151 §7; S153]
-- [Document] A fief is not automatically owned just by contributing to a siege; an allocation vote or the ruler''s decision intervenes. The governor, facilities, food, prosperity, loyalty, security, and the safety of connected villages matter. [S146; S151 §6]
+- [Document] A holding is not automatically owned just by contributing to a siege; an allocation vote or the ruler''s decision intervenes. The governor, facilities, food, prosperity, loyalty, security, and the safety of connected villages matter. [S146; S151 §6]
 - [Document] With influence you can call other clans'' parties into an army and replenish cohesion. Calling your own clan''s parties is an exception to the influence cost. A siege involves preparing camps/equipment on the map and then moves into direct combat with walls, gates, ladders, and siege equipment. [S149; S151 §4.2/§6.2]
 - [Application Proposal] Refer to defensive responsibility, dispersal of companions, and blockades of connected areas, but do not add large-scale first-person action combat. [S165]
 
@@ -5367,9 +5367,9 @@ This list was found during the reference research but has not yet been reflected
 - [Document/Inference] On the national map you handle domestic affairs, marching, contact battles, and sieges, and in a separate field battle you command units and retreat routes in real time. The main game has two map types, strategy and field battle, and the expansion''s sieges are not counted retroactively. [S154 3300/4100/7300/7400; S155]
 - [Document] You can adjust running/paused time; marching consumes provisions daily, income arrives at the start of each month, and merit evaluations occur every three months. This differs from Tenshouki''s seasonal turns. [S154 3300/7100/8600]
 
-### 10.2 Status, titles, and fief assignments [REF:NA-DELEGATION]
+### 10.2 Status, titles, and holding assignments [REF:NA-DELEGATION]
 
-- [Document] The roles of a magistrate of directly held land, a lord of another castle, a castle lord, and a corps commander are different. A status raised through merit unlocks the positions one may hold. Lower statuses gain experience as magistrates, and the freedom to reassign lords/castle lords is also opened by the system reform policy. [S154 3200/5100/8100]
+- [Document] The roles of a magistrate of directly held land, a domain holder of another castle, a castle keeper, and a corps commander are different. A status raised through merit unlocks the positions one may hold. Lower statuses gain experience as magistrates, and the freedom to reassign domain holders/castle keepers is also opened by the system reform policy. [S154 3200/5100/8100]
 - [Document] Giving a low position to a high status can lower loyalty. Low loyalty carries the risk of defection, early surrender of a castle, and unauthorized withdrawal, while ability and compatibility affect development and a castle''s strength. A district without a manager is not developed. [S154 3200/4300/5100]
 - [Inference] The growth loop is territorial expansion → new positions → rewarding meritorious retainers → increased development/strength. A shortage of talent is a real bottleneck to expansion. [S154 5100/8600]
 - [Application Proposal] Separate the station master, facility manager, and patrol command roles, and display vacancies in managers and the results of delegation. [S165]
@@ -5377,12 +5377,12 @@ This list was found during the reference research but has not yet been reflected
 ### 10.3 Economy and war preparation [REF:NA-ECONOMY]
 
 - [Document] Farmland/irrigation → koku → provisions and troops; markets/merchant towns → gold income. Unlike the gold tribute, provisions are stock held per castle. Effort is tied up in tasks and recovers after completion, and policies have a preparation period and monthly upkeep. [S154 4100/4200/5100/8100]
-- [Document] Designating a target halts the lord''s domestic affairs and switches to military preparation. A combat-ready state increases strength and carried provisions. Autonomous construction under the castle-town policy differs from direct construction in speed/cost. [S154 5300/7100]
+- [Document] Designating a target halts the domain holder''s domestic affairs and switches to military preparation. A combat-ready state increases strength and carried provisions. Autonomous construction under the castle-town policy differs from direct construction in speed/cost. [S154 5300/7100]
 - [Application Proposal] Include in mobilization costs not only the supplies used on deployment but also the halted production and local personnel. [S165]
 
 ### 10.4 Units, sieges, and prestige [REF:NA-WAR]
 
-- [Document] The castle lord and the lords under him shape a unit''s abilities. Cavalry/matchlock LV is an attack effect depending on facilities, policies, and traits, and is not the same as Tenshouki''s exclusive troop-type choice. Road width and the number of days of provisions limit deployment. [S154 4200/7100]
+- [Document] The castle keeper and the domain holders under him shape a unit''s abilities. Cavalry/matchlock LV is an attack effect depending on facilities, policies, and traits, and is not the same as Tenshouki''s exclusive troop-type choice. Road width and the number of days of provisions limit deployment. [S154 4200/7100]
 - [Document] In the main game, sieges involve encirclement/assault and a durability contest, and in field battles victory comes not only by annihilation but also through total morale, retreat routes, and defeating the daimyo. Prestige can even change nearby allegiance, diplomacy, and loyalty. [S154 7200/7300/7400]
 - [Application Proposal] Refer to the causality in which tactical results affect cooperation/passage at adjacent stations, but do not unconditionally award entire territories on a single victory. [S165]
 
@@ -5399,12 +5399,12 @@ This list was found during the reference research but has not yet been reflected
 ### 11.1 Career Advancement Is Not a Single Forced Tree [REF:TR-CAREER]
 
 - [Document] Hideyoshi''s rise is the motif, but the goals differ among warriors, merchants, ninja, and pirates, and among swordmasters, tea masters, physicians, and blacksmiths. One can start as a rōnin or as a character with an existing post, and "peasant → Kampaku" is not a common level tree. [S157; S158 1200; S159 4200/5160]
-- [Document] Below the rank of Karō, one carries out the lord''s orders; from castle lord upward, one opens direct councils and assigns work to subordinates. A provincial lord decides on multiple castles and transport, and a daimyo decides on diplomacy, the direction of conquest, and requests from other occupational factions. Independence/succession differs from simple automatic XP promotion. [S159 5100/5130/5160]
+- [Document] Below the rank of Karō, one carries out the domain holder''s orders; from castle keeper upward, one opens direct councils and assigns work to subordinates. A provincial governor decides on multiple castles and transport, and a daimyo decides on diplomacy, the direction of conquest, and requests from other occupational factions. Independence/succession differs from simple automatic XP promotion. [S159 5100/5130/5160]
 - [Application Proposal] Set livelihood skill, organizational rank, and facility operating authority as separate axes, so that a medic can achieve the feat of running a clinic without becoming a general. [S165]
 
 ### 11.2 Deadlines and Return Reports [REF:TR-TIME]
 
-- [Document] The warrior council is held on days 1-5 of odd-numbered months: choose a mission → carry it out → report to the lord within the deadline → merit. In spare time one earns money, takes up apprenticeships, and socializes. Securing the mission item alone does not complete the report. [S159 5100]
+- [Document] The warrior council is held on days 1-5 of odd-numbered months: choose a mission → carry it out → report to the domain holder within the deadline → merit. In spare time one earns money, takes up apprenticeships, and socializes. Securing the mission item alone does not complete the report. [S159 5100]
 - [Document] Ninja/pirates attend within one month after an irregular summons, and merchants hold councils at the start of odd-numbered months. Stipends go into the home strongbox at the start of each month. Travel/training/rest create opportunity costs in the schedule. [S158 3100/3200; S159 4200-4500/5200-5400]
 - [Application Proposal] For Janseon''s transport, treatment, and recovery requests, distinguish between task completion, the return report, and personal time until the next job. [S165]
 
@@ -5451,7 +5451,7 @@ This list was found during the reference research but has not yet been reflected
 
 ### 12.5 The Five-Title Combination Principle [REF:RTK-SYNTHESIS]
 
-- [Inference] Unicorn centers growth on expanding formation options through liberation, Bannerlord on a clan''s political qualifications, Shinsei on delegating personnel affairs, Taikō Risshiden on an individual''s career/authority, and Romance of the Three Kingdoms 14 on land, administration, and supply connections. They cannot all be bundled under the same "empty-handed → king" formula. [S141; S146-S149; S154; S158-S159; S162]
+- [Inference] Unicorn centers growth on expanding formation options through liberation, Bannerlord on a clan''s political qualifications, Shinsei on delegating personnel affairs, Taikō Risshiden on an individual''s career/authority, and Romance of the Three Kingdoms 14 on land, administration, and supply connections. They cannot all be bundled under the same "empty-handed → ruler" formula. [S141; S146-S149; S154; S158-S159; S162]
 - [Application Proposal] Janseon''s core is the BB expedition profit/loss + K survival/recovery sustainability + Taikō Risshiden''s separation of livelihood and rank. Unicorn''s matchups/formations, Shinsei''s delegation, and the supply-cutoff connections of Romance of the Three Kingdoms reinforce that core. [S84; S89; S97; S102-S104; S141; S154; S158-S159; S162]
 - [Application Proposal] Unicorn''s "defenders can also sortie" and the dedicated-personnel costs of Shinsei/Romance of the Three Kingdoms are incompatible, so a choice must be made. For Janseon, we recommend proxy substitution or an operating-efficiency loss during expeditions, with the numbers and qualifications designed separately. The existing manual SRPG, 3 roles × B1/B2 contract, and the occupation → stabilization → integration design are not changed by this research. [S141 p.20; S154 5300; S162 4200; S165]
 
@@ -5488,7 +5488,7 @@ All citations are linked to the S-IDs in `.omo/evidence/gameplay-rubric-6d3fe97/
 
 ### 13.4 Bannerlord: Regular Troops Are Conformity Throughput [REF:MB-PRISONER-RECRUIT]
 
-- **[Document]** The provided Capture prisoners is a classic commission. The earlier game''s 40% + Persuasion × 4%, 24-hour camp, and -3 morale are not cited as Bannerlord formulas. Companions are hired at taverns and Lords use an ability table, so a separate recruitment-formula source is needed. [S116, S117, S118]
+- **[Document]** The provided Capture prisoners is a classic commission. The earlier game''s 40% + Persuasion × 4%, 24-hour camp, and -3 morale are not cited as Bannerlord formulas. Companions are hired at taverns and Nobles use an ability table, so a separate recruitment-formula source is needed. [S116, S117, S118]
 - **[Document]** I read the official v1.2.12 API and the same-version commit `d345b5dfc42b0fbb06b8b4b48b96486ed86d0d2f` of a public decompilation. The official API has declarations only; the coefficients come from an unofficial code archive. It is not guaranteed to be the common official formula for all current distributions. [S119, S120]
 - **[Document: Code]** Required amount per unit `K=(Level+6)^2-10`; the hourly base gain of the selected troop-type bundle is `10+0.05×Leadership`, rounded after perk adjustments. Recruitable count is `min(prisoner count, floor(troop-type XP/K))`. [S119]
 - **[Document]** Each hour, starting from a random point, **only one** incomplete regular-troop bundle increases. It does not increase for every prisoner or every troop type at the same time. When recruitment is confirmed, XP and prisoner count decrease and member count increases. Heroes are excluded from regular-troop recruitment. [S119, S120]
@@ -5498,9 +5498,9 @@ All citations are linked to the S-IDs in `.omo/evidence/gameplay-rubric-6d3fe97/
 
 ### 13.5 Bannerlord: Defection of Noble Prisoners to a Clan [REF:MB-LORD-DEFECTION]
 
-- **[Document: Original Text]** The 1.2.12 eligibility for the prisoner line "join us, and be set free." requires: the player to be the kingdom ruler, the target to be a clan leader, the current ruling clan to be excluded, and the prisoner to be in custody of the player''s party or owned settlement; the CapturedLord/FreedHero context immediately after battle is excluded. The claim that "noble prisoners can never defect" is also wrong. [S121]
+- **[Document: Original Text]** The 1.2.12 eligibility for the prisoner line "join us, and be set free." requires: the player to be the realm ruler, the target to be a clan leader, the current ruling clan to be excluded, and the prisoner to be in custody of the player''s party or owned settlement; the CapturedLord/FreedHero context immediately after battle is excluded. The claim that "noble prisoners can never defect" is also wrong. [S121]
 - **[Document]** Hesitations over trust, oaths, loyalty, policy, and interests are resolved through argument. Options and outcomes (success, critical success, failure, critical failure) vary with the skill/trait used, argument strength, relationship, and event ledger. After success, a separate clan-joining barter may be needed. A failed attempt on the same target/hesitation has a retry restriction within 1 week. [S121]
-- **[Document]** Ransom is calculated from clan, wealth, number of fiefs, and perks, and noble escape is a daily check depending on location, number of guards, and perks. This is distinct from hourly escape when the regular-troop limit is exceeded. The clan/friend/faction/honor costs of peaceful release and execution are also separate. [S123]
+- **[Document]** Ransom is calculated from clan, wealth, number of holdings, and perks, and noble escape is a daily check depending on location, number of guards, and perks. This is distinct from hourly escape when the regular-troop limit is exceeded. The clan/friend/faction/honor costs of peaceful release and execution are also separate. [S123]
 - **[Inference]** Recruiting ordinary prisoners is a troop conversion, while noble defection is a change of affiliation of a political group. Explaining them with the same button/success rate breaks both the scale and the causality. [S119, S121, S123]
 - **[Proposed Application]** Treat Janseon''s major leaders as targets of political events rather than ordinary roster recruitment. Even characters in ordinary duty roles update vacancies and affiliation relationships, and their original faction as a whole does not automatically become an ally. [Basis: S121, S127]
 
@@ -5851,10 +5851,10 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 
 > 기본 싱글플레이 구조. War Sails/모드 제외. 출시 리뷰와 후속 공식 패치, 전용 위키를 교차 확인하며 최신 모든 퍽·일당·창건 조건을 보증하지 않는다. 상세 연구 §9. [S145-S153]
 
-### 9.1 무소속→용병→봉신→왕국 [REF:MB-PROGRESSION]
+### 9.1 무소속→용병→봉신→국가 [REF:MB-PROGRESSION]
 
-- [문서] 클랜은 인물·가족·동료와 여러 파티를 포함하며 왕국은 여러 클랜을 포함한다. 위키상 T1/명성50에 용병, T2/명성150에 봉신 자격을 얻는다. 캠페인에는 가족·메인 퀘스트의 틀이 있고 Sandbox는 이를 생략한다. [S146-S147; S151 §5]
-- [문서] 용병의 영향력은 계약 수입에 연결되고 봉신은 봉토·정책·군단 동원에 참여한다. 독립 클랜의 영지 보유와 왕국 선포는 구별한다. 공식 e1.7.0 공지는 총독 대화 창건을 설명하므로 Dragon Banner 퀘스트만이 창건 방법이라는 옛 가이드는 채택하지 않는다. [S149; S152]
+- [문서] 클랜은 인물·가족·동료와 여러 파티를 포함하며 국가는 여러 클랜을 포함한다. 위키상 T1/명성50에 용병, T2/명성150에 봉신 자격을 얻는다. 캠페인에는 가족·메인 퀘스트의 틀이 있고 Sandbox는 이를 생략한다. [S146-S147; S151 §5]
+- [문서] 용병의 영향력은 계약 수입에 연결되고 봉신은 봉토·정책·군단 동원에 참여한다. 독립 클랜의 영지 보유와 국가 선포는 구별한다. 공식 e1.7.0 공지는 총독 대화 창건을 설명하므로 Dragon Banner 퀘스트만이 창건 방법이라는 옛 가이드는 채택하지 않는다. [S149; S152]
 - [추론] 이 순서는 강제 장 목록이 아니라 권한을 배우는 경로다. BB 역시 자유 샌드박스지만 지속 주체가 용병회사이며 배너로드는 클랜의 국가적 역할까지 바뀐다. [S97; S106; S146-S149]
 - [적용 제안] 잔선은 용역 계약→통행/보급 협약→운영 위탁→선택적 자치의 권한 전이로 번역한다. [S165]
 
@@ -5868,7 +5868,7 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 ### 9.3 세계 지도·봉토·군단·공성 [REF:MB-KINGDOM]
 
 - [문서/추론] 파티가 움직이는 전략/여행 통합 지도, 현지 탐색 공간, 직접 전투의 3종 기능 표면이다. 지역 상호작용은 메뉴로도 처리할 수 있다. 한국 자료는 84일/년을 설명하지만 실제 초 환산과 모든 메뉴의 자동정지 경계는 미검증이다. [S145-S146; S151 §7; S153]
-- [문서] 봉토는 공성 기여만으로 자동 소유되지 않고 배분 투표/군주의 결정이 개입한다. 총독·시설·식량·번영·충성·치안과 연결 마을의 안전이 중요하다. [S146; S151 §6]
+- [문서] 봉토는 공성 기여만으로 자동 소유되지 않고 배분 투표/통치자의 결정이 개입한다. 총독·시설·식량·번영·충성·치안과 연결 마을의 안전이 중요하다. [S146; S151 §6]
 - [문서] 영향력으로 다른 클랜 파티를 군단에 부르고 결속을 보충한다. 자기 클랜 파티 호출은 영향력 예외다. 공성은 지도에서 캠프/장비를 준비한 뒤 성벽·문·사다리·공성 장비가 있는 직접 전투로 이어진다. [S149; S151 §4.2/§6.2]
 - [적용 제안] 수비 책임·동료 분산·연결 봉쇄는 참조하되 대규모 1인칭 액션 전투를 추가하지 않는다. [S165]
 
@@ -5890,7 +5890,7 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 
 ### 10.2 신분과 직명·지행 [REF:NA-DELEGATION]
 
-- [문서] 직할지 대관, 다른 성의 영주, 성주, 군단장은 역할이 다르다. 훈공으로 오른 신분이 맡을 수 있는 자리를 해금한다. 낮은 신분은 대관에서 경험을 쌓고, 영주/성주 재배치 자유도도 제도개신 정책으로 열린다. [S154 3200/5100/8100]
+- [문서] 직할지 대관, 다른 성의 영지 관리자, 성주, 군단장은 역할이 다르다. 훈공으로 오른 신분이 맡을 수 있는 자리를 해금한다. 낮은 신분은 대관에서 경험을 쌓고, 영지 관리자/성주 재배치 자유도도 제도개신 정책으로 열린다. [S154 3200/5100/8100]
 - [문서] 높은 신분에 낮은 자리를 주면 충성이 하락할 수 있다. 낮은 충성은 출분·성의 조기 항복·독단 철수 위험이며, 능력·상성은 개발·성 전력에 영향을 준다. 담당자가 없는 군은 개발되지 않는다. [S154 3200/4300/5100]
 - [추론] 영토 확대→새 자리→공신 보상→개발/전력 증가가 성장 루프다. 인재 부족은 실제 확장 병목이다. [S154 5100/8600]
 - [적용 제안] 역장·시설 책임자·순찰 지휘를 분리하고 담당자 공백과 위임 결과를 표시한다. [S165]
@@ -5898,12 +5898,12 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 ### 10.3 경제와 전쟁 준비 [REF:NA-ECONOMY]
 
 - [문서] 농촌/관개→석고→군량·병력, 시장/상인 마을→금 수입이다. 금 상납과 달리 군량은 성별 재고다. 노력은 작업에 묶였다가 완료 후 회복하고 정책은 준비 기간과 월 유지비를 가진다. [S154 4100/4200/5100/8100]
-- [문서] 목표 지정은 영주의 내정을 중단시키고 군비 준비로 전환한다. 임전 상태는 전력·휴대 군량을 늘린다. 성하 방침의 자율 건설은 직접 건설과 속도/비용이 다르다. [S154 5300/7100]
+- [문서] 목표 지정은 영지 관리자의 내정을 중단시키고 군비 준비로 전환한다. 임전 상태는 전력·휴대 군량을 늘린다. 성하 방침의 자율 건설은 직접 건설과 속도/비용이 다르다. [S154 5300/7100]
 - [적용 제안] 동원 비용에 출진 시 물자뿐 아니라 중단된 생산과 현지 인력을 포함한다. [S165]
 
 ### 10.4 부대·공성·위풍 [REF:NA-WAR]
 
-- [문서] 성주와 소속 영주가 부대 능력을 형성한다. 기마/철포 LV는 시설·정책·특성에 따른 공격 효과이며 천상기의 배타적 병과 선택과 같지 않다. 도로 폭과 군량 일수가 전개를 제한한다. [S154 4200/7100]
+- [문서] 성주와 소속 영지 관리자가 부대 능력을 형성한다. 기마/철포 LV는 시설·정책·특성에 따른 공격 효과이며 천상기의 배타적 병과 선택과 같지 않다. 도로 폭과 군량 일수가 전개를 제한한다. [S154 4200/7100]
 - [문서] 본편 공성은 포위/강공과 내구도 공방, 합전은 전멸 외에도 총사기·퇴로·다이묘 격파로 승리한다. 위풍은 인근 귀속·외교·충성까지 바꿀 수 있다. [S154 7200/7300/7400]
 - [적용 제안] 전술 결과가 인접 역의 협력/통행에 영향을 주는 인과를 참고하되 승리 한 번으로 무조건 영토 전체를 지급하지 않는다. [S165]
 
@@ -5943,9 +5943,9 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 
 ## 12. 삼국지 (三國志) — 14의 토지·담당자·보급선
 
-> 2020 본편 군주제. 삼국지 8 REMAKE 등 전 무장 플레이 작품과 구별하며 ''2026 최신 출시작''이라는 수식어를 쓰지 않는다. 상세 연구 §12-14. [S161-S164]
+> 2020 본편 통치자 플레이. 삼국지 8 REMAKE 등 전 무장 플레이 작품과 구별하며 ''2026 최신 출시작''이라는 수식어를 쓰지 않는다. 상세 연구 §12-14. [S161-S164]
 
-### 12.1 군주제·HEX·10일 실행 [REF:RTK-MAPS]
+### 12.1 통치자 플레이·HEX·10일 실행 [REF:RTK-MAPS]
 
 - [문서] 최소 도시를 가진 세력을 고르고 HEX→지역 중심(core)→도시권을 확보한다. 군단은 여러 도시의 위임 조직이다. 도시를 모두 잃으면 세력이 붕괴한다. [S162 2400/3100/3300]
 - [문서/추론] 전쟁과 행정이 같은 연속 지도에서 진행된다. 전략 단계에서 명령을 정하고 진행10일→보고로 반복하며 일반 명령은 진행 중 변경할 수 없다. 월은3순, 수입은 월초, 보급은 매순이다. Adjutant로 지정된 무장의 전법 타이밍 개입은 예외로 구별한다. [S162 3200/3300/5300]
@@ -5955,7 +5955,7 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 
 - [문서] 공식은1000+무장·150+개성, 한국자료는 기본 역사무장1000·46도시·340중요지점을 기술한다. DLC/편집/역사 집계 범위를 구분한다. [S161; S163]
 - [문서] 지역·징병·훈련 담당자를 임명하고 그 사람이 출진/다른 일을 하면 효과가 감소한다. 지역 무담당은 계절 개발/치안 하락을 낳는다. 통솔·무력·지력·정치·매력의 행정 용도가 다르다. [S162 4200]
-- [문서] 군주의 주의는 시정 부서 슬롯·비용 한도를 정하고, 배치한 무장의 정책이 다음 순부터 활성화된다. 군사에는 자격과 정책 비용 예외가 있다. [S162 4100]
+- [문서] 통치자의 주의는 시정 부서 슬롯·비용 한도를 정하고, 배치한 무장의 정책이 다음 순부터 활성화된다. 군사에는 자격과 정책 비용 예외가 있다. [S162 4100]
 - [적용 제안] 유명 전투원뿐 아니라 평범한 전문 인력도 시설·지역 운영에 필요하게 만든다. [S165]
 
 ### 12.3 개발·징병·진형·연계 [REF:RTK-WAR]
@@ -5972,7 +5972,7 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 
 ### 12.5 5종 결합 원칙 [REF:RTK-SYNTHESIS]
 
-- [추론] 유니콘은 해방에 따른 편성 선택지 확대, 배너로드는 클랜의 정치적 자격, 신생은 인사 위임, 태합입지전은 개인의 경력/권한, 삼국지14는 토지·행정·보급 연결을 성장의 중심으로 삼는다. 모두를 같은 ''빈손→왕'' 공식으로 묶을 수 없다. [S141; S146-S149; S154; S158-S159; S162]
+- [추론] 유니콘은 해방에 따른 편성 선택지 확대, 배너로드는 클랜의 정치적 자격, 신생은 인사 위임, 태합입지전은 개인의 경력/권한, 삼국지14는 토지·행정·보급 연결을 성장의 중심으로 삼는다. 모두를 같은 ''빈손→통치자'' 공식으로 묶을 수 없다. [S141; S146-S149; S154; S158-S159; S162]
 - [적용 제안] 잔선의 중심은 BB 원정 손익+K 생존/회복 지속성+태합입지전 생업/직위 분리다. 유니콘의 상성/편성, 신생의 위임, 삼국지의 연결 차단은 그 중심을 보강한다. [S84; S89; S97; S102-S104; S141; S154; S158-S159; S162]
 - [적용 제안] 유니콘의 ''수비병도 출격 가능''과 신생/삼국지의 전담 인력 비용은 양립하지 않으므로 선택해야 한다. 잔선에서는 원정 시 대행 또는 운영 효율 손실을 권하며, 수치와 자격은 별도 설계다. 기존 수동 SRPG·3역×B1/B2 계약과 점령→안정화→통합 설계를 이 연구로 변경하지 않는다. [S141 p.20; S154 5300; S162 4200; S165]
 
@@ -6009,7 +6009,7 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 
 ### 13.4 배너로드: 일반병은 conformity 처리량이다 [REF:MB-PRISONER-RECRUIT]
 
-- **[문서]** 제공 Capture prisoners는 classic 의뢰다. 구작의40%+Persuasion×4%, 캠프24시간, 사기-3을 Bannerlord 공식으로 인용하지 않는다. Companions는 주점 고용, Lords는 능력표여서 별도 모집 공식 근거가 필요하다. [S116, S117, S118]
+- **[문서]** 제공 Capture prisoners는 classic 의뢰다. 구작의40%+Persuasion×4%, 캠프24시간, 사기-3을 Bannerlord 공식으로 인용하지 않는다. Companions는 주점 고용, 귀족 인물은 능력표여서 별도 모집 공식 근거가 필요하다. [S116, S117, S118]
 - **[문서]** 공식 v1.2.12 API와 공개 역컴파일의 같은 버전 커밋 `d345b5dfc42b0fbb06b8b4b48b96486ed86d0d2f`를 읽었다. 공식 API는 선언만, 계수는 비공식 코드 아카이브다. 현재 모든 배포판의 공통 공식으로 보증하지 않는다. [S119, S120]
 - **[문서: 코드]** 1명당 필요량 `K=(Level+6)^2-10`; 선택된 병종 묶음의 시간당 기본 증가 `10+0.05×Leadership`에 퍽 보정 후 반올림. 모집 가능 수는 `min(포로 수, floor(병종 XP/K))`. [S119]
 - **[문서]** 매시간 무작위 시작점에서 미완료 일반병 묶음 **하나만** 증가한다. 포로 각각/모든 병종이 동시에 증가하지 않는다. 모집 확정 때 XP·포로 수를 줄이고 멤버 수를 늘린다. Hero는 일반병 모집 대상에서 제외한다. [S119, S120]
@@ -6019,7 +6019,7 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 
 ### 13.5 배너로드: 귀족 포로의 가문 전향 [REF:MB-LORD-DEFECTION]
 
-- **[문서: 원문]** 포로 대사 "join us, and be set free."의1.2.12 자격은 플레이어 왕국 지도자, 대상 가문 지도자, 현 군주 가문 제외, 플레이어 파티/소유 정착지 custody이며 전투 직후 CapturedLord/FreedHero 컨텍스트는 제외한다. ''귀족 포로는 절대 전향 불가''도 틀리다. [S121]
+- **[문서: 원문]** 포로 대사 "join us, and be set free."의1.2.12 자격은 플레이어 국가 지도자, 대상 가문 지도자, 현 통치 가문 제외, 플레이어 파티/소유 정착지 custody이며 전투 직후 CapturedLord/FreedHero 컨텍스트는 제외한다. ''귀족 포로는 절대 전향 불가''도 틀리다. [S121]
 - **[문서]** 신뢰·맹세·충성·정책·이익의 망설임을 논변으로 해소한다. 사용 skill/trait·논변 강도·관계와 사건 원장에 따라 옵션/성공·대성공·실패·대실패가 달라진다. 성공 뒤 별도의 가문 가입 barter가 필요할 수 있다. 실패한 동일 대상/망설임은1주 이내 재시도 제한이 있다. [S121]
 - **[문서]** 몸값은 가문·재산·영지 수·퍽으로 산정하며, 귀족 탈출은 장소·호위 인원·퍽에 따른 일일 판정이다. 일반병 한도 초과의 시간당 탈출과 구별한다. 평화 석방과 처형의 가문/친구/세력/명예 비용도 별도다. [S123]
 - **[추론]** 일반 포로 모집은 병력 전환, 귀족 전향은 정치 집단의 소속 변경이다. 같은 버튼/성공률로 설명하면 규모와 인과가 무너진다. [S119, S121, S123]
@@ -6237,7 +6237,7 @@ The number of adopted figures is 0. Document verification means the source was r
 | D07 | 명령·복종 | 21 | 20 | 1 | 0 | 0 | 없음 |
 | D08 | 전투·피해 | 16 | 16 | 0 | 0 | 0 | 없음 |
 | D09 | 부상·사망 | 50 | 50 | 0 | 0 | 0 | 없음 |
-| D10 | 작위·보유 | 16 | 10 | 0 | 6 | 0 | 없음 |
+| D10 | 직함·보유 | 16 | 10 | 0 | 6 | 0 | 없음 |
 | D11 | 수여·박탈 | 245 | 234 | 0 | 11 | 0 | 없음 |
 | D12 | 계승 | 25 | 25 | 0 | 0 | 0 | 없음 |
 | D13 | 세력·관계 | 40 | 40 | 0 | 0 | 0 | 없음 |
@@ -6597,7 +6597,7 @@ MDA 층은 설계 어휘다. 개발 단위는 GitHub 요구 티켓이다.
 
 ## 시제품 계약의 제품 이관 경계
 
-제품은 [캠페인 진행과 위기](/gdd/rules/campaign-progression/)의 인물 시점 시스템 계약을 보존한다. 타이틀·메뉴·인물 선택·게임은 배타적 화면 수명이고, 지도 선택은 본체·대상·소재지·지휘권을 분리한다. 정치·작위·지상·지하를 나누되 국가명·국가색과 행정/영토 경계를 일관되게 표시한다. 초상은 등록 자료만 사용하고 지도 앵커·팬·줌·화면밖 제외 및 본체 원형 표시를 유지한다. 관계·세력은 본체 중심 원장 노드·유형·방향 간선으로 표시하며 추정 관계를 만들지 않는다. 엔진·웹 빌드 교체는 별도 기술 이관이며 세부 미정 GP-01~14를 승인 없이 채우지 않는다.');
+제품은 [캠페인 진행과 위기](/gdd/rules/campaign-progression/)의 인물 시점 시스템 계약을 보존한다. 타이틀·메뉴·인물 선택·게임은 배타적 화면 수명이고, 지도 선택은 본체·대상·소재지·지휘권을 분리한다. 정치·직함·지상·지하를 나누되 국가명·국가색과 행정/영토 경계를 일관되게 표시한다. 초상은 등록 자료만 사용하고 지도 앵커·팬·줌·화면밖 제외 및 본체 원형 표시를 유지한다. 관계·세력은 본체 중심 원장 노드·유형·방향 간선으로 표시하며 추정 관계를 만들지 않는다. 엔진·웹 빌드 교체는 별도 기술 이관이며 세부 미정 GP-01~14를 승인 없이 채우지 않는다.');
 INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Development-Roadmap', 'design', 'development-roadmap', 'Development Roadmap', '개발 로드맵', '', '', 'accepted', 32, 'Development-Roadmap.md', '# Development Roadmap
 
 The current product plan gives priority to the detailed SP-1.0.0 single-player contract. It uses one player, one main body, NPCs, and a single campaign save, and the shared world, maximum participants, host, disconnection, occupation, and online proxy clauses of this document are preserved as history and are not used as current execution premises. The contracts for actual movement, on-site participation, authority, single settlement, and save errors are retained. In case of conflict, follow the replacement scope of [Single-Player Detailed Design SP-1.0.0](/gdd/system-design/singleplayer-design-sp-1-0-0/). This does not mean implementation is complete or that existing saves are converted automatically.
@@ -6801,7 +6801,7 @@ The full mechanisms of each game can be read on the following wiki pages:
 - [Crusader Kings 3](/gdd/references/ref-crusader-kings-3/) — character-driven grand strategy (succession, dynasties, war)
 - Noland — individually resolved combat and settlement and relationship management', '# 레퍼런스 게임 조사 — 무엇을 누구에게서 빌렸나
 
-현재 레퍼런스 게임은 **크루세이더 킹즈 3(CK3)**와 **노랜드(Norland)**로 제한한다. 게임 전체 목표는 **4X + RPG**이며, 전투 목표는 **노랜드식 개인 판정 전투**다. 전투 카메라는 소유자가 확정한 3D 자유 지휘 시점이고, 전투에는 일시정지가 없다. 턴제 전투가 포함된 작품은 현재 레퍼런스에서 제외하며, 과거 조사 원문은 저장소 내부 `RESEARCH/canon-reference/`에 보존한다. CK2 **After the End** 원본(`Ofaloaf/postapoc` 0.9, `61eb04ee2b42e8a7fcdc659597fe2f30e6df07f8`)과 Fanfork(`9Kbits/ateff` 1.1.1, `8565e230ac49a092096bc122e112374f5df5418c`)는 이번 서사의 인과 구조를 비교한 **조사 출처**이지, 위의 현행 게임플레이·UI 레퍼런스 목록에 추가하거나 원전 지명·법·수치를 채택한 것이 아니다. CK3의 [시스템 백과](/gdd/references/ref-crusader-kings-3/)는 작위·계승·사건 표현의 비교 출처일 뿐 CK2판 인물·신앙·사건의 증거가 아니다. 원본 전용 사건을 Fanfork 검증으로 표시하거나 CK3 lore를 CK2 서사 근거로 바꾸지 않는다.
+현재 레퍼런스 게임은 **크루세이더 킹즈 3(CK3)**와 **노랜드(Norland)**로 제한한다. 게임 전체 목표는 **4X + RPG**이며, 전투 목표는 **노랜드식 개인 판정 전투**다. 전투 카메라는 소유자가 확정한 3D 자유 지휘 시점이고, 전투에는 일시정지가 없다. 턴제 전투가 포함된 작품은 현재 레퍼런스에서 제외하며, 과거 조사 원문은 저장소 내부 `RESEARCH/canon-reference/`에 보존한다. CK2 **After the End** 원본(`Ofaloaf/postapoc` 0.9, `61eb04ee2b42e8a7fcdc659597fe2f30e6df07f8`)과 Fanfork(`9Kbits/ateff` 1.1.1, `8565e230ac49a092096bc122e112374f5df5418c`)는 이번 서사의 인과 구조를 비교한 **조사 출처**이지, 위의 현행 게임플레이·UI 레퍼런스 목록에 추가하거나 원전 지명·법·수치를 채택한 것이 아니다. CK3의 [시스템 백과](/gdd/references/ref-crusader-kings-3/)는 직함·계승·사건 표현의 비교 출처일 뿐 CK2판 인물·신앙·사건의 증거가 아니다. 원본 전용 사건을 Fanfork 검증으로 표시하거나 CK3 lore를 CK2 서사 근거로 바꾸지 않는다.
 
 > 이 페이지의 잔선 적용은 설계 방향과 구현 제안이다. 여섯 프리셋, 전략 지도,
 > 포획·영입, 지속 부상 등이 현재 런타임에 모두 구현되었다는 뜻이 아니다.
@@ -6912,7 +6912,7 @@ The strategic map covers two layers within Seoul''s administrative boundary: the
 
 Failure remains in the world. Injury, capture, death, supplies, grudges. Characters are the unit of politics. Rank, memory, and heirs change who holds the nation. A line is both land and supplies. Every change is tracked in the ledger.', '# 개요
 
-현재 기획 판본은 SP-1.0.0 싱글플레이다. 행동·작위·전쟁·수여·계승·자산/지식 전수·관계와 영구 영향은 [싱글플레이 상세 기획](/gdd/system-design/singleplayer-design-sp-1-0-0/)을 따른다. 이전 공유 세계·호스트·접속자 기획은 현재 실행 전제가 아니며 구현 완료를 뜻하지 않는다.
+현재 기획 판본은 SP-1.0.0 싱글플레이다. 행동·직함·전쟁·수여·계승·자산/지식 전수·관계와 영구 영향은 [싱글플레이 상세 기획](/gdd/system-design/singleplayer-design-sp-1-0-0/)을 따른다. 이전 공유 세계·호스트·접속자 기획은 현재 실행 전제가 아니며 구현 완료를 뜻하지 않는다.
 
 플레이어는 영웅이 아니다. 2126년 서울, 어느 역 앞에 선 사람이다. 그 자리가 오리엔테이션이다. 탐험·확장·개발·정복은 그 자리에서 밖으로 열린다. 세계 원장에 남는다. 이것이 이 게임의 4X다. 거점으로 퇴근하는 순환이 장르가 아니다.
 
@@ -7039,7 +7039,7 @@ Generated art slots are not yet connected to the runtime screens. Approving and 
 
 인물 시트·계산·영역별 규칙과 상황은 [인물과 영역 설계 길잡이](/gdd/system-design/mechanism-design-index/)에서 읽는다. 승인 범위와 미채택 대안을 구분하는 설계 제안이다.
 
-현재 기획 판본은 SP-1.0.0 싱글플레이다. 행동·작위·전쟁·수여·계승·자산/지식 전수·관계와 영구 영향은 [싱글플레이 상세 기획](/gdd/system-design/singleplayer-design-sp-1-0-0/)을 따른다. 이전 공유 세계·호스트·접속자 기획은 현재 실행 전제가 아니며 구현 완료를 뜻하지 않는다.
+현재 기획 판본은 SP-1.0.0 싱글플레이다. 행동·직함·전쟁·수여·계승·자산/지식 전수·관계와 영구 영향은 [싱글플레이 상세 기획](/gdd/system-design/singleplayer-design-sp-1-0-0/)을 따른다. 이전 공유 세계·호스트·접속자 기획은 현재 실행 전제가 아니며 구현 완료를 뜻하지 않는다.
 
 > **붕괴한 서울의 지하철망에서 한 인물의 생업·관계·직위·계승을 영지 운영과 노선 정치로 잇는 4X + RPG. 전투는 병사 한 사람 한 사람을 판정한다.**
 
@@ -7211,7 +7211,7 @@ The strategic map and base information are not an omniscient world map. The map 
 
 
 - Hub bulletin board: News relevant to the current hub and nearby known routes.
-- Strategy Map: Change markers on the display layers showing known factions'' political territories, diplomacy, fiefs, titles, offices, battle situations, and selections.
+- Strategy Map: Change markers on the display layers showing known factions'' political territories, diplomacy, stations, titles, offices, battle situations, and selections.
 - Character Records: Events delivered to the player that are related to the character in question.
 - A world record opened when needed: the source, timing, and verification status of events I have learned about.
 
@@ -7332,7 +7332,7 @@ The following items will be handled in separate issues that turn the screen cont
 
 
 - 거점 게시판: 현재 거점과 알려진 주변 노선의 관련 소식.
-- 전략맵: 알려진 세력 정치영역·외교·영지·작위·관직·전투 상황과 선택 표시층의 변화 표식.
+- 전략맵: 알려진 세력 정치영역·외교·영지·직함·관직·전투 상황과 선택 표시층의 변화 표식.
 - 인물 기록: 해당 인물과 관련되어 플레이어에게 전달된 사건.
 - 필요할 때 여는 세계 기록: 내가 알게 된 사건의 출처·시점·검증 상태.
 
@@ -7354,7 +7354,7 @@ The following items will be handled in separate issues that turn the screen cont
 
 
 
-1. 생전 후계 지정: 지정 인물의 현재 유효 여부와 예상 작위·자산·분쟁을 구분.
+1. 생전 후계 지정: 지정 인물의 현재 유효 여부와 예상 직함·자산·분쟁을 구분.
 2. 
 3. 
 4. 
@@ -7654,7 +7654,7 @@ The current canon has no account screen. The first slot of the board in [How UI 
 
 The player does not bring in a blank commander from outside. The player becomes **one person** who already exists in the Seoul of the later age.
 
-In the current product, the only character open in the starting selection is Sin Jongmok. Settling the selection flow in the list does not mean the whole character ledger is unlocked for play. Neither the monarch nor Han Jaemok is fixed as a default body, and the broader POC sample is not carried over into product unlocks. New character creation is on hold. The random and custom incarnations and the presets below are preserved as contracts for later journeys and are not features offered on the current selection screen. The approved Sin Jongmok starting scenario is maintained, and the other characters and place arrangements of the experimental POC are not moved into the opening position. Detailed placement and additional unlock conditions are not newly set in this document.
+In the current product, the only character open in the starting selection is Sin Jongmok. Settling the selection flow in the list does not mean the whole character ledger is unlocked for play. Neither a faction leader nor Han Jaemok is fixed as a default body, and the broader POC sample is not carried over into product unlocks. New character creation is on hold. The random and custom incarnations and the presets below are preserved as contracts for later journeys and are not features offered on the current selection screen. The approved Sin Jongmok starting scenario is maintained, and the other characters and place arrangements of the experimental POC are not moved into the opening position. Detailed placement and additional unlock conditions are not newly set in this document.
 
 A named personId is one living account. No exception is made for rank. The Character Compendium, the cast of characters, and kin created during incarnation all fall under this.
 
@@ -7832,7 +7832,7 @@ The 12 screens of Decision 6 in `Intent.md` are UI/UX mockup targets and corresp
 
 플레이어는 빈 지휘관을 밖에서 들고 오지 않는다. 이미 있는 후세 서울의 **한 사람**이 된다.
 
-현재 제품의 시작 선택에서 열린 인물은 신종목뿐이다. 목록의 선택 흐름을 확정한 것이 전체 인물 원장의 플레이 가능 해금을 뜻하지 않는다. 군주나 한재목을 고정 본체로 두지 않으며 broader POC sample를 제품 해금으로 옮기지 않는다. 신규 캐릭터 생성은 보류한다. 아래 무작위·커스텀 착생과 프리셋은 후속 여정 계약으로 보존하며 현재 선택 화면에서 제공되는 기능이 아니다. 승인된 신종목 시작 시나리오를 유지하며 실험 POC의 다른 인물·장소 배치를 개막 위치로 옮기지 않는다. 세부 배치와 추가 해금 조건은 이 문서에서 새로 정하지 않는다.
+현재 제품의 시작 선택에서 열린 인물은 신종목뿐이다. 목록의 선택 흐름을 확정한 것이 전체 인물 원장의 플레이 가능 해금을 뜻하지 않는다. 세력 수장이나 한재목을 고정 본체로 두지 않으며 broader POC sample를 제품 해금으로 옮기지 않는다. 신규 캐릭터 생성은 보류한다. 아래 무작위·커스텀 착생과 프리셋은 후속 여정 계약으로 보존하며 현재 선택 화면에서 제공되는 기능이 아니다. 승인된 신종목 시작 시나리오를 유지하며 실험 POC의 다른 인물·장소 배치를 개막 위치로 옮기지 않는다. 세부 배치와 추가 해금 조건은 이 문서에서 새로 정하지 않는다.
 
 이름 있는 personId는 살아 있는 계정 하나다. 직위로 예외를 두지 않는다. 인물 총람, 등장인물, 착생 때 만든 친족이 여기 든다.
 
@@ -7941,7 +7941,7 @@ The 12 screens of Decision 6 in `Intent.md` are UI/UX mockup targets and corresp
 - 사전 후계 상태는 경고와 재지정 기회를 위한 현재 시점의 안내다. 최종 유효성은 **사망 순간**에 판정한다. 지정 인물이 사망했거나 다른 계정이 조종 중이면 유효한 지정 후계자로 보지 않는다. 한 personId를 두 계정에 동시에 바인드하지 않는다.
 - 유효한 지정 후계자가 있으면 계정의 조종 바인드를 `heirPersonId`로 옮겨 **같은 월드**에서 플레이를 계속한다. 후계자는 자신의 지식·능력·관계로 시작한다. 망자의 정보는 실제 전달된 것만 알며 자동으로 복사하지 않는다.
 - 지정 후계자가 없거나 사망 순간 유효하지 않으면 **게임오버**다. 이후 새 착생은 **새 월드**의 별개 플레이이며 망자의 정보·자산·관계를 승계하지 않는다. 새 월드는 로컬 자식 서버나 전용 서버가 연 계보로 시작한다. 받은 체크포인트를 호스트하면 부모 계보가 아니라 새 계보다(ADR-008).
-- 플레이 조종권의 승계는 직위·작위·자산의 승계와 다르다. 작위는 왕조와 봉신 정치의 작위별 순서, 현지 관습·교리·인준·분쟁을 따른다. 망자에게 작위가 없으면 작위 승계 판정도 없다. 개인 소유물, 직위·조직 재산, 계약상 권리는 구분하며 정확한 배분식은 후속 시스템 설계에서 정한다.
+- 플레이 조종권의 승계는 직위·직함·자산의 승계와 다르다. 직함은 왕조와 봉신 정치의 직함별 순서, 현지 관습·교리·인준·분쟁을 따른다. 망자에게 직함이 없으면 직함 승계 판정도 없다. 개인 소유물, 직위·조직 재산, 계약상 권리는 구분하며 정확한 배분식은 후속 시스템 설계에서 정한다.
 - 파티 리더가 죽으면 파티 승계는 기존 규칙을 따른다. 파티 리더 승계는 계정 바인드와 같지 않다.
 - 사망 순간 이미 정한 후계 규칙을 즉시 평가한다. 오프라인 점유 인물이 죽어도 같다. 유효한 후계가 있으면 바인딩을 옮기고, 없으면 게임오버를 기록한다. 오프라인 후계자는 재접속할 때까지 일상·정치 NPC다.
 - 각 참가자는 자신이 플레이했거나 죽은 인물 기록의 로컬 아카이브를 둔다. 호스트 월드는 원본 기록을 가진다. 로컬 아카이브를 잃으면 복구 비밀과 사람 확인 뒤에 호스트가 서명한 기록으로 재구성할 수 있다. 아카이브의 열람은 새 인물의 게임 내 지식 획득이 아니다.
@@ -8058,7 +8058,7 @@ New combat values and Unity names fall outside this order.
 
 ## Gameplay Open Decisions Ledger
 
-Gameplay open items are managed in GP-01 to GP-14 of [Campaign Progression and Crises](/gdd/rules/campaign-progression/) by question, proposal, input/output, failure/verification cases, and canonical ownership. The prototype''s character placements, times, prices, capacities, and damage values are not grounds for confirmation. Title decrees are entered after the wiki is finalized and are currently unassigned. The selected body, NPC authority, on-site participation, the four map modes, real adjacent stations, and exclusive scenes remain direct decisions. Product direction A (a standalone game) and B (an actual CK3 mod) are not yet chosen. With identical inputs in G1 to G9, the following are each compared as preserved, abstracted, lost, additionally implemented, or unverified: notification and ownership/enforcement (G1), documents, technologies, and positions (G2), different elections and inheritance (G3), service and territory holding (G4), station access, county lookup, and actual arrival (G5), rites, beliefs, institutional policy, and skill (G6), information on hidden events (G7), body succession and knowledge (G8), and single settlement by ResultId (G9). In X1 direct experience, A has a design responsibility to preserve the body, companions, actual arrival, six body parts, and the 3D pan/orbit/zoom goal, while B''s event and stat representation explicitly loses direct performance, continuous spatial interaction with companions, and 3D tactical judgment. Recording part states does not bring that direct experience back. This loss is a loss in the compared representations, not a verdict that it is universally impossible in the CK3 engine. For both directions, actual engine, save, and mod/DLC verification for G1 to G9 and X1 is NOT_RUN, and cost and duration are unmeasured. This comparison does not change holdings, vassalage, or facility rights, and does not choose between A and B.', '# 열린 결정 목록
+Gameplay open items are managed in GP-01 to GP-14 of [Campaign Progression and Crises](/gdd/rules/campaign-progression/) by question, proposal, input/output, failure/verification cases, and canonical ownership. The prototype''s character placements, times, prices, capacities, and damage values are not grounds for confirmation. Title decrees are entered after the wiki is finalized and are currently unassigned. The selected body, NPC authority, on-site participation, the four map modes, real adjacent stations, and exclusive scenes remain direct decisions. Product direction A (a standalone game) and B (an actual CK3 mod) are not yet chosen. With identical inputs in G1 to G9, the following are each compared as preserved, abstracted, lost, additionally implemented, or unverified: notification and ownership/enforcement (G1), documents, technologies, and positions (G2), different elections and inheritance (G3), service and territory holding (G4), station access, district lookup, and actual arrival (G5), rites, beliefs, institutional policy, and skill (G6), information on hidden events (G7), body succession and knowledge (G8), and single settlement by ResultId (G9). In X1 direct experience, A has a design responsibility to preserve the body, companions, actual arrival, six body parts, and the 3D pan/orbit/zoom goal, while B''s event and stat representation explicitly loses direct performance, continuous spatial interaction with companions, and 3D tactical judgment. Recording part states does not bring that direct experience back. This loss is a loss in the compared representations, not a verdict that it is universally impossible in the CK3 engine. For both directions, actual engine, save, and mod/DLC verification for G1 to G9 and X1 is NOT_RUN, and cost and duration are unmeasured. This comparison does not change holdings, vassalage, or facility rights, and does not choose between A and B.', '# 열린 결정 목록
 
 현재 제품 기획은 SP-1.0.0 싱글플레이 상세 계약을 우선한다. 한 플레이어·한 본체·NPC·단일 캠페인 저장을 사용하며 이 문서의 공유 세계·최대 참가자·호스트·접속 종료·점유·온라인 대행 조항은 역사로 보존하고 현재 실행 전제로 사용하지 않는다. 실제 이동·현장 참가·권한·단일 정산·저장 오류 계약은 유지한다. 충돌 시 [싱글플레이 상세 기획 SP-1.0.0](/gdd/system-design/singleplayer-design-sp-1-0-0/)의 대체 범위를 따른다. 구현 완료나 기존 저장 자동 변환을 뜻하지 않는다.
 
@@ -8151,7 +8151,7 @@ Gameplay open items are managed in GP-01 to GP-14 of [Campaign Progression and C
 
 ## 게임플레이 미정 결정 원장
 
-게임플레이 미정은 [캠페인 진행과 위기](/gdd/rules/campaign-progression/)의 GP-01~14에서 질문·제안·입출력·실패/검증 사례·정본 소유로 관리한다. 시제품의 인물 배치·시간·가격·정원·피해 수치는 확정 근거가 아니다. 작위령은 위키 확정 뒤 입력하며 현재 미배정이다. 선택 본체·NPC 권한·현장 참여·네 지도 모드·실제 인접역·배타 씬은 직접 결정으로 유지한다. 제품 방향 A(자체 게임)와 B(실제 CK3 모드)는 미선택이다. 동일 입력의 G1~G9에서 통지와 소유·집행(G1), 문서·기술·직위(G2), 서로 다른 선출·세습(G3), 서비스와 영토 보유(G4), 역 접근·county 조회·실제 도착(G5), 의례·믿음·기관 정책·기량(G6), 숨은 사건의 정보(G7), 본체 계승과 지식(G8), ResultId 단일 정산(G9)을 보존·추상화·손실·추가구현·미검증으로 각각 비교한다. X1 직접 경험에서 A는 본체·동료·실제 도착·여섯 신체 부위·3D 팬/오빗/줌 목표를 보존할 설계 책임이 있고, B의 사건·능력치 표현은 직접 수행·동료의 연속 공간 상호작용·입체 전술 판단을 명시적으로 잃는다. 부위 상태를 기록해도 그 직접 경험은 돌아오지 않는다. 이 손실은 비교한 표현의 손실이지 CK3 엔진의 보편적 불가능 판정이 아니다. 두 방향 모두 G1~G9와 X1 실제 엔진·저장·모드/DLC 실증은 NOT_RUN이며 비용·기간은 미측정이다. 이 비교가 보유·복속·시설권을 바꾸거나 A/B를 선택하지 않는다.');
+게임플레이 미정은 [캠페인 진행과 위기](/gdd/rules/campaign-progression/)의 GP-01~14에서 질문·제안·입출력·실패/검증 사례·정본 소유로 관리한다. 시제품의 인물 배치·시간·가격·정원·피해 수치는 확정 근거가 아니다. 직함 영역은 위키 확정 뒤 입력하며 현재 미배정이다. 선택 본체·NPC 권한·현장 참여·네 지도 모드·실제 인접역·배타 씬은 직접 결정으로 유지한다. 제품 방향 A(자체 게임)와 B(실제 CK3 모드)는 미선택이다. 동일 입력의 G1~G9에서 통지와 소유·집행(G1), 문서·기술·직위(G2), 서로 다른 선출·세습(G3), 서비스와 영토 보유(G4), 역 접근·구 조회·실제 도착(G5), 의례·믿음·기관 정책·기량(G6), 숨은 사건의 정보(G7), 본체 계승과 지식(G8), ResultId 단일 정산(G9)을 보존·추상화·손실·추가구현·미검증으로 각각 비교한다. X1 직접 경험에서 A는 본체·동료·실제 도착·여섯 신체 부위·3D 팬/오빗/줌 목표를 보존할 설계 책임이 있고, B의 사건·능력치 표현은 직접 수행·동료의 연속 공간 상호작용·입체 전술 판단을 명시적으로 잃는다. 부위 상태를 기록해도 그 직접 경험은 돌아오지 않는다. 이 손실은 비교한 표현의 손실이지 CK3 엔진의 보편적 불가능 판정이 아니다. 두 방향 모두 G1~G9와 X1 실제 엔진·저장·모드/DLC 실증은 NOT_RUN이며 비용·기간은 미측정이다. 이 비교가 보유·복속·시설권을 바꾸거나 A/B를 선택하지 않는다.');
 INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Research-Sources', 'design', 'research-sources', 'Research Source Registry', '연구 출처 등록부', '', '', 'accepted', 40, 'Research-Sources.md', '# Research Source Registry
 
 The public wiki registers factual sources only.
