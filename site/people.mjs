@@ -98,6 +98,11 @@ function withoutPrivate(d) {
 }
 
 /** One person page (Markdown with embedded HTML blocks). `d` is the parsed detail JSON for the locale; `p` the roster row. */
+// Some person_detail field names still carry an old feudal term. The JSON keys stay as stored data;
+// only the label shown on the page is mapped to the v4 wording the other records already use.
+const FIELD_LABEL = { '봉건 작위': '봉건 품계', 'Feudal Title': 'Feudal Rank' };
+const fieldLabel = (k) => FIELD_LABEL[k] ?? k;
+
 export function personPage({ p, d: rawD, dKo: rawDKo, ko, g, P, stateRow, factionName, clan }) {
   const d = withoutPrivate(rawD), dKo = withoutPrivate(rawDKo);
   const S = ko ? STR.ko : STR.en;
@@ -112,7 +117,7 @@ export function personPage({ p, d: rawD, dKo: rawDKo, ko, g, P, stateRow, factio
     ...(d?.birthDate ? [[S.birth, d.birthDate], [S.age, d.age], [S.ageAsOf, d.ageAsOf]] : []),
     [S.position, L('position')], [S.tier, p.tier], [S.rank, L('rank')], [S.occupation, L('occupation')], [S.gender, L('gender')], [S.stage, L('stage')],
     ...(d?.generation ? [[S.generation, d.generation]] : []),
-    ...Object.entries(d?.fields ?? {}).filter(([k]) => !['가치관', '욕망', '직위', '소속', 'Values', 'Desire', 'Position', 'Affiliation'].includes(k)).map(([k, v]) => [k, v]),
+    ...Object.entries(d?.fields ?? {}).filter(([k]) => !['가치관', '욕망', '직위', '소속', 'Values', 'Desire', 'Position', 'Affiliation'].includes(k)).map(([k, v]) => [fieldLabel(k), v]),
   ].filter(([, v]) => hasText(v));
   out.push(`## ${S.basics}\n\n| ${ko ? '항목' : 'Field'} | ${ko ? '값' : 'Value'} |\n| --- | --- |\n${rows.map(([k, v]) => `| ${cell(k)} | ${/^\[.*\]\(.*\)$/.test(String(v)) ? v : cell(v)} |`).join('\n')}\n`);
   if (!d) return out.join('\n');
