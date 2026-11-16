@@ -19428,7 +19428,7 @@ Current scope limit: Named helper only; no complete authoritative domain state o
 - Exactly approved effect candidates — the same cause/effect/result applies only once. Trust is per direction; loyalty is a separate ledger. (Source: d07.b9.orderedSteps[4]; d07.b9.orderedSteps[8])
 - Known directional trust input — only a finite T[A,B] is looked up. No inference of T[B,A], no clamping, no contract change. (Source: d07.b9.orderedSteps[6])
 - Three independent bands computed — friend=T≥25; enemy=T≤-25; nemesis=T≤-50. A nemesis also counts as an enemy. (Source: d07.b9.orderedSteps[6]; d07.b9.orderedSteps[8])
-- Loyalty and own-lord check — integer 0..100. If the target is one''s own lord, 100. An unknown value is never set to 0. (Source: d07.b9.orderedSteps[6])
+- Loyalty and own-faction-leader check — integer 0..100. If the target is one''s own faction leader, 100. An unknown value is never set to 0. (Source: d07.b9.orderedSteps[6])
 - Low-loyalty predicate — belowThreshold=L<25. Exactly 25 is false. Rebellion/defection conditions, cycles, and probabilities are unresolved. (Source: d07.b9.orderedSteps[6]; d07.b9.orderedSteps[8])
 - Separation of evidence at the time of command — awareness, authority, feasibility, actual action, and later performance at that time do not substitute for one another. (Source: d07.b9.orderedSteps[5])
 - Execution failure classification — impossibility or invalidation by the sender''s death is an execution-failure, not deliberate disobedience. (Source: d07.b9.orderedSteps[5])
@@ -19492,13 +19492,13 @@ Current scope limit: Named helper only; no complete authoritative domain state o
 | Operation — Applying Attributed Result and Settlement ID | d07.b9.fields[2].write | "D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references" |
 | Operation — Identity, Version, and Duplicate Results | d07.b9.fields[2].snapsho​t | "All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot." |
 | Operation — Applying Attributed Result and Settlement ID | d07.b9.fields[2].commitP​oint | "After identity/version/awarene​ss/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only." |
-| Operation — Loyalty and Own-Lord Check | d07.b9.fields[3].name | "loyalty" |
-| Operation — Loyalty and Own-Lord Check | d07.b9.fields[3].type | "integer&#124;null" |
-| Operation — Loyalty and Own-Lord Check | d07.b9.fields[3].unit | "loyalty-point" |
-| Operation — Loyalty and Own-Lord Check | d07.b9.fields[3].range | "0..100" |
-| Operation — Loyalty and Own-Lord Check | d07.b9.fields[3].null | "unknown; monarch self resolves to 100" |
-| Operation — Loyalty and Own-Lord Check | d07.b9.fields[3].owner | "D07" |
-| Operation — Loyalty and Own-Lord Check | d07.b9.fields[3].read | "D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time" |
+| Operation — Loyalty and Own-Faction-Leader Check | d07.b9.fields[3].name | "loyalty" |
+| Operation — Loyalty and Own-Faction-Leader Check | d07.b9.fields[3].type | "integer&#124;null" |
+| Operation — Loyalty and Own-Faction-Leader Check | d07.b9.fields[3].unit | "loyalty-point" |
+| Operation — Loyalty and Own-Faction-Leader Check | d07.b9.fields[3].range | "0..100" |
+| Operation — Loyalty and Own-Faction-Leader Check | d07.b9.fields[3].null | "unknown; faction leader self resolves to 100" |
+| Operation — Loyalty and Own-Faction-Leader Check | d07.b9.fields[3].owner | "D07" |
+| Operation — Loyalty and Own-Faction-Leader Check | d07.b9.fields[3].read | "D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time" |
 | Operation — Applying Attributed Result and Settlement ID | d07.b9.fields[3].write | "D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references" |
 | Operation — Identity, Version, and Duplicate Results | d07.b9.fields[3].snapsho​t | "All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot." |
 | Operation — Applying Attributed Result and Settlement ID | d07.b9.fields[3].commitP​oint | "After identity/version/awarene​ss/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only." |
@@ -19700,7 +19700,7 @@ Current scope limit: Named helper only; no complete authoritative domain state o
 | Operation — Personal Trust Not Inherited, Records Preserved | d07.b11.approvedExisting​Rules[2] | "Trust is not authority, consent, property, passage, relationship fact, mood, or loyalty." |
 | Operation — Observer''s Direct Observation and Received Report | d07.b11.approvedExisting​Rules[3] | "An observer updates only that observer''s memory and trust after direct observation or receipt of a report." |
 | Operation — Permitted Awareness and Memory Records | d07.b11.approvedExisting​Rules[4] | "Hidden world facts and personal knowledge are separate; late discovery does not rewrite earlier decisions." |
-| Operation — Loyalty and Own-Lord Check | d07.b11.approvedExisting​Rules[5] | "Loyalty is a separate 0..100 state toward the hero''s monarch; monarch self-loyalty is 100; exactly 25 is not below 25." |
+| Operation — Loyalty and Own-Faction-Leader Check | d07.b11.approvedExisting​Rules[5] | "Loyalty is a separate 0..100 state toward the hero''s faction leader; faction-leader self-loyalty is 100; exactly 25 is not below 25." |
 | Operation — Identity, Version, and Duplicate Results | d07.b11.approvedExisting​Rules[6] | "The same ResultId is applied at most once; retransmission is not a new evaluation." |
 | Operation — Compliance Classification Retained | d07.b11.approvedExisting​Rules[7] | "Compliance and performance are separate records; good independent action may be noncompliant and successful." |
 | Operation — Execution Failure Classification | d07.b11.approvedExisting​Rules[8] | "Impossible orders and orders invalidated by sender death are execution failures, not deliberate disobedience." |
@@ -19731,7 +19731,7 @@ Current scope limit: Named helper only; no complete authoritative domain state o
 | Operation — Awareness and Effect Policy Unresolved | d07.b11.stateSheet.insti​tutionInputs | "D09-A requires country-specific institution records and actual authority/basis evidence. Existing valid relation facts survive missing inputs; unsupported new establishment remains unresolved rather than globally rejected or invented." |
 | Operation — Awareness and Effect Policy Unresolved | d07.b11.stateSheet.perso​nPayloadReview | "D20-A preserves locked person values and requires identity-first, person-by-person and axis-by-axis disposition. An unreviewed person payload cannot enter D07 state or formulas." |
 | Operation — Awareness and Effect Policy Unresolved | d07.b11.stateSheet.organ​izationPayloadReview | "D21-A requires organization-by-organiza​tion, field-by-field source and disposition. Organization policy does not automatically write an individual''s trust or loyalty." |
-| Operation — Loyalty and Own-Lord Check | d07.b11.stateSheet.loyal​ty | "Separate hero-to-own-monarch state in 0..100. Monarch self is 100. Below25 is a predicate; path opening requires an approved persistence/risk rule and is otherwise withheld." |
+| Operation — Loyalty and Own-Faction-Leader Check | d07.b11.stateSheet.loyal​ty | "Separate hero-to-own-faction-leader state in 0..100. Faction leader self is 100. Below25 is a predicate; path opening requires an approved persistence/risk rule and is otherwise withheld." |
 | Operation — Separation of Evidence at Time of Command | d07.b11.stateSheet.comma​ndEvaluation | "One order evaluation contains immutable receipt context, decision-time awareness/authority/feas​ibility, actual action, separately observed performance, compliance classification, performance classification and result identity." |
 | Operation — Personal Trust Not Inherited, Records Preserved | d07.b11.stateSheet.succe​ssion | "Do not copy predecessor personal trust or memory into heir. Preserve public history, institutional duties and contracts only through their owning succession policies." |
 | Operation — Personal Trust Not Inherited, Records Preserved | d07.b11.stateSheet.prese​rvation | "Load/body change does not reset permanent event IDs, awareness history, current trust or settled results. Trust changes do not silently alter contracts, property, consent or authority." |
@@ -19820,7 +19820,7 @@ D07의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 - 정확 승인 효과 후보 — 같은 cause/effect/result는 한 번. 신뢰는 방향별, 충성은 별도 원장. (원문: d07.b9.orderedSteps[4]; d07.b9.orderedSteps[8])
 - 알려진 방향 신뢰 입력 — 유한 T[A,B]만 조회. T[B,A] 추론·clamp·계약 변경 없음. (원문: d07.b9.orderedSteps[6])
 - 독립 세 구간 계산 — friend=T≥25; enemy=T≤-25; nemesis=T≤-50. 원수는 적대도 참. (원문: d07.b9.orderedSteps[6]; d07.b9.orderedSteps[8])
-- 충성·자기 군주 검사 — 0..100 정수. 자기 군주이면 100. 모르는 값을 0으로 두지 않는다. (원문: d07.b9.orderedSteps[6])
+- 충성·자기 세력 수장 검사 — 0..100 정수. 자기 세력 수장이면 100. 모르는 값을 0으로 두지 않는다. (원문: d07.b9.orderedSteps[6])
 - 낮은 충성 술어 — belowThreshold=L<25. 정확히 25는 false. 반란·이탈 조건·주기·확률은 미결. (원문: d07.b9.orderedSteps[6]; d07.b9.orderedSteps[8])
 - 명령 당시 증거 분리 — 당시 인지·권한·가능성·실제 행동·나중 성과를 서로 대체하지 않는다. (원문: d07.b9.orderedSteps[5])
 - 실행 실패 분류 — 불가능 또는 발신자 사망 무효는 execution-failure이며 고의 불복종 아님. (원문: d07.b9.orderedSteps[5])
@@ -19884,13 +19884,13 @@ D07의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 귀속 결과·정산 ID 반영 | d07.b9.fields[2].write | "D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references" |
 | 운용 — 신원·판본·중복 결과 | d07.b9.fields[2].snapsho​t | "All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot." |
 | 운용 — 귀속 결과·정산 ID 반영 | d07.b9.fields[2].commitP​oint | "After identity/version/awarene​ss/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only." |
-| 운용 — 충성·자기 군주 검사 | d07.b9.fields[3].name | "loyalty" |
-| 운용 — 충성·자기 군주 검사 | d07.b9.fields[3].type | "integer&#124;null" |
-| 운용 — 충성·자기 군주 검사 | d07.b9.fields[3].unit | "loyalty-point" |
-| 운용 — 충성·자기 군주 검사 | d07.b9.fields[3].range | "0..100" |
-| 운용 — 충성·자기 군주 검사 | d07.b9.fields[3].null | "unknown; monarch self resolves to 100" |
-| 운용 — 충성·자기 군주 검사 | d07.b9.fields[3].owner | "D07" |
-| 운용 — 충성·자기 군주 검사 | d07.b9.fields[3].read | "D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time" |
+| 운용 — 충성·자기 세력 수장 검사 | d07.b9.fields[3].name | "loyalty" |
+| 운용 — 충성·자기 세력 수장 검사 | d07.b9.fields[3].type | "integer&#124;null" |
+| 운용 — 충성·자기 세력 수장 검사 | d07.b9.fields[3].unit | "loyalty-point" |
+| 운용 — 충성·자기 세력 수장 검사 | d07.b9.fields[3].range | "0..100" |
+| 운용 — 충성·자기 세력 수장 검사 | d07.b9.fields[3].null | "unknown; faction leader self resolves to 100" |
+| 운용 — 충성·자기 세력 수장 검사 | d07.b9.fields[3].owner | "D07" |
+| 운용 — 충성·자기 세력 수장 검사 | d07.b9.fields[3].read | "D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time" |
 | 운용 — 귀속 결과·정산 ID 반영 | d07.b9.fields[3].write | "D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references" |
 | 운용 — 신원·판본·중복 결과 | d07.b9.fields[3].snapsho​t | "All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot." |
 | 운용 — 귀속 결과·정산 ID 반영 | d07.b9.fields[3].commitP​oint | "After identity/version/awarene​ss/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only." |
@@ -20092,7 +20092,7 @@ D07의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 개인 신뢰 비승계·기록 보존 | d07.b11.approvedExisting​Rules[2] | "Trust is not authority, consent, property, passage, relationship fact, mood, or loyalty." |
 | 운용 — 관찰자 직접 관측·수령 보고 | d07.b11.approvedExisting​Rules[3] | "An observer updates only that observer''s memory and trust after direct observation or receipt of a report." |
 | 운용 — 허용된 인지·기억 기록 | d07.b11.approvedExisting​Rules[4] | "Hidden world facts and personal knowledge are separate; late discovery does not rewrite earlier decisions." |
-| 운용 — 충성·자기 군주 검사 | d07.b11.approvedExisting​Rules[5] | "Loyalty is a separate 0..100 state toward the hero''s monarch; monarch self-loyalty is 100; exactly 25 is not below 25." |
+| 운용 — 충성·자기 세력 수장 검사 | d07.b11.approvedExisting​Rules[5] | "Loyalty is a separate 0..100 state toward the hero''s faction leader; faction-leader self-loyalty is 100; exactly 25 is not below 25." |
 | 운용 — 신원·판본·중복 결과 | d07.b11.approvedExisting​Rules[6] | "The same ResultId is applied at most once; retransmission is not a new evaluation." |
 | 운용 — 준수 분류 유지 | d07.b11.approvedExisting​Rules[7] | "Compliance and performance are separate records; good independent action may be noncompliant and successful." |
 | 운용 — 실행 실패 분류 | d07.b11.approvedExisting​Rules[8] | "Impossible orders and orders invalidated by sender death are execution failures, not deliberate disobedience." |
@@ -20123,7 +20123,7 @@ D07의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 인지·효과 정책 미결 | d07.b11.stateSheet.insti​tutionInputs | "D09-A requires country-specific institution records and actual authority/basis evidence. Existing valid relation facts survive missing inputs; unsupported new establishment remains unresolved rather than globally rejected or invented." |
 | 운용 — 인지·효과 정책 미결 | d07.b11.stateSheet.perso​nPayloadReview | "D20-A preserves locked person values and requires identity-first, person-by-person and axis-by-axis disposition. An unreviewed person payload cannot enter D07 state or formulas." |
 | 운용 — 인지·효과 정책 미결 | d07.b11.stateSheet.organ​izationPayloadReview | "D21-A requires organization-by-organiza​tion, field-by-field source and disposition. Organization policy does not automatically write an individual''s trust or loyalty." |
-| 운용 — 충성·자기 군주 검사 | d07.b11.stateSheet.loyal​ty | "Separate hero-to-own-monarch state in 0..100. Monarch self is 100. Below25 is a predicate; path opening requires an approved persistence/risk rule and is otherwise withheld." |
+| 운용 — 충성·자기 세력 수장 검사 | d07.b11.stateSheet.loyal​ty | "Separate hero-to-own-faction-leader state in 0..100. Faction leader self is 100. Below25 is a predicate; path opening requires an approved persistence/risk rule and is otherwise withheld." |
 | 운용 — 명령 당시 증거 분리 | d07.b11.stateSheet.comma​ndEvaluation | "One order evaluation contains immutable receipt context, decision-time awareness/authority/feas​ibility, actual action, separately observed performance, compliance classification, performance classification and result identity." |
 | 운용 — 개인 신뢰 비승계·기록 보존 | d07.b11.stateSheet.succe​ssion | "Do not copy predecessor personal trust or memory into heir. Preserve public history, institutional duties and contracts only through their owning succession policies." |
 | 운용 — 개인 신뢰 비승계·기록 보존 | d07.b11.stateSheet.prese​rvation | "Load/body change does not reset permanent event IDs, awareness history, current trust or settled results. Trust changes do not silently alter contracts, property, consent or authority." |
@@ -21351,7 +21351,7 @@ Current scope limit: No domain-specific new original-trpg module. Reuse existing
 - Same state, office, and edition — mixed, stale, or duplicate events, nonexistent institutions, and invalid office references are rejected. (Source: d09.b9.orderedSteps[0])
 - Office event types — loss, election attempt, acting authority, and restoration are handled independently. (Source: d09.b9.orderedSteps[0]; d09.b9.orderedSteps[1]; d09.b9.orderedSteps[2]; d09.b9.orderedSteps[8])
 - Only the target office becomes vacant — holder=null, effective=false, vacant=true. The institution, treasury, debt, lineage, and other offices are preserved. Status is selection-pending, and no successor is created. (Source: d09.b9.orderedSteps[1])
-- Approved state and office procedure — requires approvalStatus=approved and the fields required for each selector. Actual values for the 16 states and institution payloads are not written automatically. (Source: d09.b9.orderedSteps[2]; d09.b9.orderedSteps[3])
+- Approved state and office procedure — requires approvalStatus=approved and the fields required for each selector. Actual values for the three factions and institution payloads are not written automatically. (Source: d09.b9.orderedSteps[2]; d09.b9.orderedSteps[3])
 - Unique, explicitly eligible candidates — only candidates with eligible=true remain. Duplicate IDs are rejected. If there is no exam, no exam values are created. (Source: d09.b9.orderedSteps[3])
 - Exam score, unit, and threshold — an exam selector requires required=true, a registered scoreUnit and minimumScore, and known candidate scores. Only score≥minimum passes. (Source: d09.b9.orderedSteps[3])
 - Empty candidate set — the number of candidates is checked after eligibility and exams. (Source: d09.b9.orderedSteps[3]; d09.b9.orderedSteps[4])
@@ -21606,7 +21606,7 @@ Current scope limit: No domain-specific new original-trpg module. Reuse existing
 | Operation — Vacancy, Institution, and History Preserved | d09.b9.lifecycle.load | "Restore exact procedure and receipt revision. Do not rerun completed appointment or acting authorization. Unsupported/mixed version fails explicitly." |
 | Operation — Same State, Office, and Edition | d09.b9.failure | "Duplicate event, duplicate ballot, vote by an ineligible voter, vote for an ineligible candidate, mismatched state/office, stale revision, absent required per-state field, incompatible unit or concurrent revision rejects atomically." |
 | Pending — Excluded from Operational Path | d09.b9.proposalHeld[0].i​d | "P01" |
-| Pending — Excluded from Operational Path | d09.b9.proposalHeld[0].s​cope | "Sixteen state/office procedure payloads" |
+| Pending — Excluded from Operational Path | d09.b9.proposalHeld[0].s​cope | "Three-faction office procedure payloads" |
 | Pending — Excluded from Operational Path | d09.b9.proposalHeld[0].f​ields[0] | "selector" |
 | Pending — Excluded from Operational Path | d09.b9.proposalHeld[0].f​ields[1] | "candidateRule and actual eligibility records" |
 | Pending — Excluded from Operational Path | d09.b9.proposalHeld[0].f​ields[2] | "voterRule and actual elector roster" |
@@ -21712,7 +21712,7 @@ Current scope limit: No domain-specific new original-trpg module. Reuse existing
 | Operation — Procedure, Score, and Numeric Policy Undecided | d09.b11.decisions[3].row​ | "D22" |
 | Operation — Procedure, Score, and Numeric Policy Undecided | d09.b11.decisions[3].cho​senOption | "B" |
 | Operation — Procedure, Score, and Numeric Policy Undecided | d09.b11.decisions[3].app​lied | "Normalize units and field meanings first. Exact legitimacy formula, coefficient, clamp and consumer values remain later approvals." |
-| Operation — Procedure, Score, and Numeric Policy Undecided | d09.b11.approvalBoundary​ | "Sealed D09 Option A approves a separate explicit procedure record for each of the sixteen states. It does not approve one universal elector list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or state-specific payload. Missing payloads remain proposals and block appointment atomically." |
+| Operation — Procedure, Score, and Numeric Policy Undecided | d09.b11.approvalBoundary​ | "Sealed D09 Option A approves a separate explicit procedure record for each of the three factions. It does not approve one universal elector list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or state-specific payload. Missing payloads remain proposals and block appointment atomically." |
 | Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[0].​source | "task-26-remaining-decis​ions-20261008/decision-r​ecord.json" |
 | Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[0].​sha256 | "e531c6240930c5812305a7f​1d614484b78b36c7b66e0edc​a12cc9c9c90a4c8f0" |
 | Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[0].​anchors[0] | "D09" |
@@ -21741,7 +21741,7 @@ Current scope limit: No domain-specific new original-trpg module. Reuse existing
 | Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[4].​source | "task-24/cells/norland/D​09/verified-input-r1/Don​eClaim.json" |
 | Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[4].​sha256 | "6660c352e059dd5f98406a8​fa3db668288bf3b194145108​b69e987fe01bc859b" |
 | Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[4].​status | "documentary-comparison-​only" |
-| Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[4].​limit | "No Norland rank probability, politics threshold, lord generation or turn/day conversion imported." |
+| Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[4].​limit | "No Norland rank probability, politics threshold, faction-leader generation or turn/day conversion imported." |
 | Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[5].​source | "task-25-gurps-like-basi​s-20261008/basis.json" |
 | Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[5].​sha256 | "5d39843deba40e876bd8f0e​361a2596ace8a7311fc3ec48​c38242928628450b2" |
 | Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[5].​anchors[0] | "L-success" |
@@ -21813,7 +21813,7 @@ Current scope limit: No domain-specific new original-trpg module. Reuse existing
 | Operation — Office and Categorical Lawfulness Candidate | d09.b11.exceptions[8] | "Categorical legitimacy is not a numeric score" |
 | Operation — Procedure, Score, and Numeric Policy Undecided | d09.b11.validatorScope | "Typed evidence-carrier validation of the approved structural algorithm. Every concrete person, threshold, count, score, treasury and action in cases.json is an oracle fixture, not an adopted Seoul world value." |
 | Pending — Excluded from Operational Path | d09.b11.intentionallyPro​posal[0].id | "P01" |
-| Pending — Excluded from Operational Path | d09.b11.intentionallyPro​posal[0].scope | "The sixteen state/office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions" |
+| Pending — Excluded from Operational Path | d09.b11.intentionallyPro​posal[0].scope | "The three-faction office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions" |
 | Pending — Excluded from Operational Path | d09.b11.intentionallyPro​posal[0].reason | "D09-A requires individual records but does not contain their facts or numbers." |
 | Pending — Excluded from Operational Path | d09.b11.intentionallyPro​posal[0].status | "proposal-held" |
 | Pending — Excluded from Operational Path | d09.b11.intentionallyPro​posal[0].numericApproval​ | false |
@@ -21915,11 +21915,11 @@ D09의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 - 같은 국가·직위·판본 — 혼합·stale·중복 사건·없는 기관·잘못된 직위 참조 거부. (원문: d09.b9.orderedSteps[0])
 - 직위 사건 종류 — 상실·선출 시도·대행·복원을 독립 처리한다. (원문: d09.b9.orderedSteps[0]; d09.b9.orderedSteps[1]; d09.b9.orderedSteps[2]; d09.b9.orderedSteps[8])
 - 대상 직위만 공석 — holder=null,effective=fa​lse,vacant=true. 기관·국고·부채·계보·다른 직위 유지. selection-pending이며 후임 생성 없음. (원문: d09.b9.orderedSteps[1])
-- 승인된 국가·직위 절차 — approvalStatus=approved와​ selector별 필수 fields 필요. 실제 16국 값·기관 payload는 자동 작성하지 않는다. (원문: d09.b9.orderedSteps[2]; d09.b9.orderedSteps[3])
+- 승인된 국가·직위 절차 — approvalStatus=approved와​ selector별 필수 fields 필요. 실제 세 세력 값·기관 payload는 자동 작성하지 않는다. (원문: d09.b9.orderedSteps[2]; d09.b9.orderedSteps[3])
 - 고유 명시 적격 후보 — eligible=true 후보만 남긴다. ID 중복 거부. 시험 없으면 시험 값을 만들지 않는다. (원문: d09.b9.orderedSteps[3])
 - 시험 점수·단위·기준 — 시험 selector는 required=true,등록 scoreUnit·minimumScore와 알려진 후보 점수 필요. score≥minimum만 통과. (원문: d09.b9.orderedSteps[3])
 - 후보 집합 공백 — 자격·시험 후 후보 수 확인. (원문: d09.b9.orderedSteps[3]; d09.b9.orderedSteps[4])
-- 후보 없음·공석 유지 — no-candidate. 최고 기량·새 후보·자동 군주 생성 없음. (원문: d09.b9.orderedSteps[3])
+- 후보 없음·공석 유지 — no-candidate. 최고 기량·새 후보·자동 세력 수장 생성 없음. (원문: d09.b9.orderedSteps[3])
 - 투표·임명 경로 — vote/exam-then-vote와 appointment/exam-then-ap​pointment 분리. (원문: d09.b9.orderedSteps[4]; d09.b9.orderedSteps[6])
 - 고유 유권자·유효 한 표 — 유일 적격 유권자와 그들의 한 유효 후보 표만 허용. 중복·부적격 표를 합산하지 않는다. (원문: d09.b9.orderedSteps[4])
 - 등록 정족수 — count: 참여자≥requiredCount; all-eligible:참여자=적격 선거인 수. (원문: d09.b9.orderedSteps[4]; d09.b9.orderedSteps[5])
@@ -22170,7 +22170,7 @@ D09의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 공석·기관·이력 유지 | d09.b9.lifecycle.load | "Restore exact procedure and receipt revision. Do not rerun completed appointment or acting authorization. Unsupported/mixed version fails explicitly." |
 | 운용 — 같은 국가·직위·판본 | d09.b9.failure | "Duplicate event, duplicate ballot, vote by an ineligible voter, vote for an ineligible candidate, mismatched state/office, stale revision, absent required per-state field, incompatible unit or concurrent revision rejects atomically." |
 | 미결 — 운용 경로 제외 | d09.b9.proposalHeld[0].i​d | "P01" |
-| 미결 — 운용 경로 제외 | d09.b9.proposalHeld[0].s​cope | "Sixteen state/office procedure payloads" |
+| 미결 — 운용 경로 제외 | d09.b9.proposalHeld[0].s​cope | "Three-faction office procedure payloads" |
 | 미결 — 운용 경로 제외 | d09.b9.proposalHeld[0].f​ields[0] | "selector" |
 | 미결 — 운용 경로 제외 | d09.b9.proposalHeld[0].f​ields[1] | "candidateRule and actual eligibility records" |
 | 미결 — 운용 경로 제외 | d09.b9.proposalHeld[0].f​ields[2] | "voterRule and actual elector roster" |
@@ -22276,7 +22276,7 @@ D09의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 절차·점수·수치 정책 미결 | d09.b11.decisions[3].row​ | "D22" |
 | 운용 — 절차·점수·수치 정책 미결 | d09.b11.decisions[3].cho​senOption | "B" |
 | 운용 — 절차·점수·수치 정책 미결 | d09.b11.decisions[3].app​lied | "Normalize units and field meanings first. Exact legitimacy formula, coefficient, clamp and consumer values remain later approvals." |
-| 운용 — 절차·점수·수치 정책 미결 | d09.b11.approvalBoundary​ | "Sealed D09 Option A approves a separate explicit procedure record for each of the sixteen states. It does not approve one universal elector list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or state-specific payload. Missing payloads remain proposals and block appointment atomically." |
+| 운용 — 절차·점수·수치 정책 미결 | d09.b11.approvalBoundary​ | "Sealed D09 Option A approves a separate explicit procedure record for each of the three factions. It does not approve one universal elector list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or state-specific payload. Missing payloads remain proposals and block appointment atomically." |
 | 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[0].​source | "task-26-remaining-decis​ions-20261008/decision-r​ecord.json" |
 | 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[0].​sha256 | "e531c6240930c5812305a7f​1d614484b78b36c7b66e0edc​a12cc9c9c90a4c8f0" |
 | 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[0].​anchors[0] | "D09" |
@@ -22305,7 +22305,7 @@ D09의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[4].​source | "task-24/cells/norland/D​09/verified-input-r1/Don​eClaim.json" |
 | 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[4].​sha256 | "6660c352e059dd5f98406a8​fa3db668288bf3b194145108​b69e987fe01bc859b" |
 | 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[4].​status | "documentary-comparison-​only" |
-| 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[4].​limit | "No Norland rank probability, politics threshold, lord generation or turn/day conversion imported." |
+| 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[4].​limit | "No Norland rank probability, politics threshold, faction-leader generation or turn/day conversion imported." |
 | 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[5].​source | "task-25-gurps-like-basi​s-20261008/basis.json" |
 | 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[5].​sha256 | "5d39843deba40e876bd8f0e​361a2596ace8a7311fc3ec48​c38242928628450b2" |
 | 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[5].​anchors[0] | "L-success" |
@@ -22377,7 +22377,7 @@ D09의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 직위·범주 적법성 후보 | d09.b11.exceptions[8] | "Categorical legitimacy is not a numeric score" |
 | 운용 — 절차·점수·수치 정책 미결 | d09.b11.validatorScope | "Typed evidence-carrier validation of the approved structural algorithm. Every concrete person, threshold, count, score, treasury and action in cases.json is an oracle fixture, not an adopted Seoul world value." |
 | 미결 — 운용 경로 제외 | d09.b11.intentionallyPro​posal[0].id | "P01" |
-| 미결 — 운용 경로 제외 | d09.b11.intentionallyPro​posal[0].scope | "The sixteen state/office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions" |
+| 미결 — 운용 경로 제외 | d09.b11.intentionallyPro​posal[0].scope | "The three-faction office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions" |
 | 미결 — 운용 경로 제외 | d09.b11.intentionallyPro​posal[0].reason | "D09-A requires individual records but does not contain their facts or numbers." |
 | 미결 — 운용 경로 제외 | d09.b11.intentionallyPro​posal[0].status | "proposal-held" |
 | 미결 — 운용 경로 제외 | d09.b11.intentionallyPro​posal[0].numericApproval​ | false |
@@ -22412,7 +22412,7 @@ D09의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 미결 — 운용 경로 제외 | d09.b11.intentionallyPro​posal[5].status | "proposal-held" |
 | 미결 — 운용 경로 제외 | d09.b11.intentionallyPro​posal[5].numericApproval​ | false |
 | 미결 — 운용 경로 제외 | d09.b11.intentionallyPro​posal[5].operative | false |');
-INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Archify-D10', 'system-design', 'archify-d10', 'D10 Archipie — Full Logic of Titles, Rights, Justification, and Ratification', 'D10 아치파이 — 작위·권리·명분·인준 전체 논리', '', '', 'accepted', 78, 'system-design/Archify-D10.md', '# D10 Archipie — Full Logic of Titles, Rights, Justification, and Ratification
+INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Archify-D10', 'system-design', 'archify-d10', 'D10 Archipie — Full Logic of Titles, Rights, Justification, and Ratification', 'D10 아치파이 — 직함·권리·명분·인준 전체 논리', '', '', 'accepted', 78, 'system-design/Archify-D10.md', '# D10 Archipie — Full Logic of Titles, Rights, Justification, and Ratification
 
 This page shows the machine inputs, validation order, contract calculations, state and preservation boundaries, and error and hold paths of the titles, rights, justification, and ratification domain as structural diagrams. The sources are the relevant mechanism contract and the 2026-10-08 transition map; numeric approval status follows the original contract.
 
@@ -22800,9 +22800,9 @@ Current scope limits: Named helper only; no complete authoritative domain state 
 | Operation — Current Edition and Action Selection | d10.b11.exceptions[9] | "E_SAME_TITLE restoration attempts a different title" |
 | Operation — Current Edition and Action Selection | d10.b11.exceptions[10] | "E_REPLAY_CONFLICT same event ID with changed payload" |
 | Operation — Current Edition and Action Selection | d10.b11.exceptions[11] | "E_STALE_SNAPSHOT new event at wrong revision" |
-| Operation — Current Edition and Action Selection | d10.b11.exceptions[12] | "E_VERSION incompatible rules version" |', '# D10 아치파이 — 작위·권리·명분·인준 전체 논리
+| Operation — Current Edition and Action Selection | d10.b11.exceptions[12] | "E_VERSION incompatible rules version" |', '# D10 아치파이 — 직함·권리·명분·인준 전체 논리
 
-이 페이지는 작위·권리·명분·인준 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다.
+이 페이지는 직함·권리·명분·인준 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다.
 
 ## 기계 입력과 검증 흐름
 
@@ -22840,7 +22840,7 @@ D10의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 - event — typed D10 event (immutable event identity at exact revision/rules version)
 - ratification — RatificationEvidence[] (registered institution, scope and evidence identifiers)
 
-자료 소유자는 D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한, 유지 계약은 legal-holder·pressability·transfer·inheritance-recognition·eligibility-loss·fabrication-mandate·cb-beneficiary-survival·duplicate-basis·same-title-restoration다. 상태 소유 경계는 rightId,titleId,basisId,beneficiary,active/suspended,recognition evidence,CB exact binding,mandate/completion receipts. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below.
+자료 소유자는 D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한, 유지 계약은 legal-holder·pressability·transfer·inheritance-recognition·eligibility-loss·fabrication-mandate·cb-beneficiary-survival·duplicate-basis·same-title-restoration다. 상태 소유 경계는 rightId,titleId,basisId,beneficiary,active/suspended,recognition evidence,CB exact binding,mandate/completion receipts. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below.
 
 ## 오류·보류 코드
 
@@ -22859,21 +22859,21 @@ D10의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 
 ## 흐름 노드별 처리와 원문 단계
 
-- 작위 신원 — [권리·지배 분리] 이름·직위 등급은 검색 단서일 뿐이다. 영구 titleId로 작위를 찾고 범위·상위 작위·최하위 예외를 등록 원문대로 읽는다. (원문: d10.b9.orderedSteps[1])
+- 직함 신원 — [권리·지배 분리] 이름·직위 등급은 검색 단서일 뿐이다. 영구 titleId로 직함을 찾고 범위·상위 직함·최하위 예외를 등록 원문대로 읽는다. (원문: d10.b9.orderedSteps[1])
 - 활성 권리 집합 — [권리·지배 분리] 동일 titleId에 대해 보유권으로 인정된 active 권리의 beneficiaryId만 집합에 포함한다. 점유·직위·명칭은 포함 조건이 아니다. (원문: d10.b9.formulaSheet[0].e​xpression; d10.b9.formulaSheet[0].u​nit; d10.b9.formulaSheet[0].r​ounding; d10.b9.formulaSheet[0].c​lamp; d10.b9.formulaSheet[0].r​ng; d10.b9.formulaSheet[0].g​uard)
-- 실효 지배 별도 — [권리·지배 분리] ControlRecord의 점유 영토는 작위의 영토 집합 안에서만 유효하며 지배자 변경으로 법적 보유자나 영토 범위를 변경하지 않는다. (원문: d10.b9.lifecycle.occupat​ion)
-- 서로 다른 근거 병존 — [권리·지배 분리] 같은 인물·작위여도 rightId와 basisId가 다른 권리는 함께 보존한다. 동일 이름으로 합치거나 배타 권리로 추론하지 않는다. (원문: d10.b9.formulaSheet[7].e​xpression; d10.b9.formulaSheet[7].u​nit; d10.b9.formulaSheet[7].r​ounding; d10.b9.formulaSheet[7].c​lamp; d10.b9.formulaSheet[7].r​ng)
-- 행사 조건 — [권리 행사·전쟁 사유] 활성 권리·정확한 작위·살아 있는 수혜자·별도 전쟁 권한·모든 대상 ID가 결속된 등록 CB가 모두 필요하다. (원문: d10.b9.formulaSheet[1].e​xpression; d10.b9.formulaSheet[1].u​nit; d10.b9.formulaSheet[1].r​ounding; d10.b9.formulaSheet[1].c​lamp; d10.b9.formulaSheet[1].r​ng)
+- 실효 지배 별도 — [권리·지배 분리] ControlRecord의 점유 영토는 직함의 영토 집합 안에서만 유효하며 지배자 변경으로 법적 보유자나 영토 범위를 변경하지 않는다. (원문: d10.b9.lifecycle.occupat​ion)
+- 서로 다른 근거 병존 — [권리·지배 분리] 같은 인물·직함이여도 rightId와 basisId가 다른 권리는 함께 보존한다. 동일 이름으로 합치거나 배타 권리로 추론하지 않는다. (원문: d10.b9.formulaSheet[7].e​xpression; d10.b9.formulaSheet[7].u​nit; d10.b9.formulaSheet[7].r​ounding; d10.b9.formulaSheet[7].c​lamp; d10.b9.formulaSheet[7].r​ng)
+- 행사 조건 — [권리 행사·전쟁 사유] 활성 권리·정확한 직함·살아 있는 수혜자·별도 전쟁 권한·모든 대상 ID가 결속된 등록 CB가 모두 필요하다. (원문: d10.b9.formulaSheet[1].e​xpression; d10.b9.formulaSheet[1].u​nit; d10.b9.formulaSheet[1].r​ounding; d10.b9.formulaSheet[1].c​lamp; d10.b9.formulaSheet[1].r​ng)
 - 행사 가능 — [권리 행사·전쟁 사유] 위 조건의 논리곱이 참일 때만 pressable이다. 이 계산은 군대·재산·인준을 새로 발급하지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)
 - 고정 수혜자 사망 — [권리 행사·전쟁 사유] 고정된 수혜자의 사망은 기존 CB를 무효로 한다. 별도 대체 규칙이 없으면 공격자를 수혜자로 치환하지 않는다. (원문: d10.b9.formulaSheet[6].e​xpression; d10.b9.formulaSheet[6].u​nit; d10.b9.formulaSheet[6].r​ounding; d10.b9.formulaSheet[6].c​lamp; d10.b9.formulaSheet[6].r​ng)
 - 양도 동의·권한 — [양도·승계 인정] 정확한 동의·권한·필요 인준이 확인되기 전에는 양도하지 않는다. (원문: d10.b9.formulaSheet[2].e​xpression; d10.b9.formulaSheet[2].u​nit; d10.b9.formulaSheet[2].r​ounding; d10.b9.formulaSheet[2].c​lamp; d10.b9.formulaSheet[2].r​ng)
 - 수혜자만 변경 — [양도·승계 인정] 단일 원자 반영으로 beneficiaryId만 바꾸며 rightId/titleId/basisId는​ 그대로다. (원문: 도메인 계약 흐름과 상세 항목 참조)
-- 승계 적격 기록 — [양도·승계 인정] 현재 작위별 기록이 후계자를 명시해야 승계를 인정한다. transferable 하나만으로 승계되지 않는다. (원문: d10.b9.formulaSheet[3].e​xpression; d10.b9.formulaSheet[3].u​nit; d10.b9.formulaSheet[3].r​ounding; d10.b9.formulaSheet[3].c​lamp; d10.b9.formulaSheet[3].r​ng)
-- 활성 권리 — [정지·동일 작위 복구] 자격 상실 전 동일 rightId/titleId/basisId의​ active 상태다. (원문: d10.b9.formulaSheet[4].e​xpression; d10.b9.formulaSheet[4].u​nit; d10.b9.formulaSheet[4].r​ounding; d10.b9.formulaSheet[4].c​lamp; d10.b9.formulaSheet[4].r​ng)
-- 자격 상실 정지 — [정지·동일 작위 복구] active에서 suspended로만 전이한다. 삭제·수혜자 재배정·임의 만료는 없다. (원문: 도메인 계약 흐름과 상세 항목 참조)
-- 복구 근거 — [정지·동일 작위 복구] 정지 이유가 작위 무효이고 정확히 같은 titleId의 복구 판본 증거가 있어야 한다. 다른 작위로 바꾸지 않는다. (원문: d10.b9.formulaSheet[8].e​xpression; d10.b9.formulaSheet[8].u​nit; d10.b9.formulaSheet[8].r​ounding; d10.b9.formulaSheet[8].c​lamp; d10.b9.formulaSheet[8].r​ng)
-- 동일 권리 활성화 — [정지·동일 작위 복구] 같은 rightId와 titleId를 보존한 채 active로 복구한다. (원문: 도메인 계약 흐름과 상세 항목 참조)
-- 위임 결속 — [날조 단일 위임] 권한 있는 담당자·mandateEventId·대상 작위·수혜자를 하나의 정확한 위임에 결속한다. (원문: d10.b9.formulaSheet[5].e​xpression; d10.b9.formulaSheet[5].u​nit; d10.b9.formulaSheet[5].r​ounding; d10.b9.formulaSheet[5].c​lamp; d10.b9.formulaSheet[5].r​ng)
+- 승계 적격 기록 — [양도·승계 인정] 현재 직함별 기록이 후계자를 명시해야 승계를 인정한다. transferable 하나만으로 승계되지 않는다. (원문: d10.b9.formulaSheet[3].e​xpression; d10.b9.formulaSheet[3].u​nit; d10.b9.formulaSheet[3].r​ounding; d10.b9.formulaSheet[3].c​lamp; d10.b9.formulaSheet[3].r​ng)
+- 활성 권리 — [정지·동일 직함 복구] 자격 상실 전 동일 rightId/titleId/basisId의​ active 상태다. (원문: d10.b9.formulaSheet[4].e​xpression; d10.b9.formulaSheet[4].u​nit; d10.b9.formulaSheet[4].r​ounding; d10.b9.formulaSheet[4].c​lamp; d10.b9.formulaSheet[4].r​ng)
+- 자격 상실 정지 — [정지·동일 직함 복구] active에서 suspended로만 전이한다. 삭제·수혜자 재배정·임의 만료는 없다. (원문: 도메인 계약 흐름과 상세 항목 참조)
+- 복구 근거 — [정지·동일 직함 복구] 정지 이유가 직함 무효이고 정확히 같은 titleId의 복구 판본 증거가 있어야 한다. 다른 직함으로 바꾸지 않는다. (원문: d10.b9.formulaSheet[8].e​xpression; d10.b9.formulaSheet[8].u​nit; d10.b9.formulaSheet[8].r​ounding; d10.b9.formulaSheet[8].c​lamp; d10.b9.formulaSheet[8].r​ng)
+- 동일 권리 활성화 — [정지·동일 직함 복구] 같은 rightId와 titleId를 보존한 채 active로 복구한다. (원문: 도메인 계약 흐름과 상세 항목 참조)
+- 위임 결속 — [날조 단일 위임] 권한 있는 담당자·mandateEventId·대상 직함·수혜자를 하나의 정확한 위임에 결속한다. (원문: d10.b9.formulaSheet[5].e​xpression; d10.b9.formulaSheet[5].u​nit; d10.b9.formulaSheet[5].r​ounding; d10.b9.formulaSheet[5].c​lamp; d10.b9.formulaSheet[5].r​ng)
 - 한 번 소비 — [날조 단일 위임] 해당 위임은 한 번만 소비한다. 별도 완료·인정 사건 없이 권리를 만들지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)
 - 위임 종료 — [날조 단일 위임] 종료해도 완료된 증거와 이미 소비한 작업을 보존한다. 미래 예약 해제는 해당 계약 소유이며 미정이다. (원문: d10.b9.lifecycle.cancel)
 - 정확 입력·단위 — 필수 키·타입·영구 ID·단위를 검증한다. 미확인 입력과 잘못된 형식을 구분한다. (원문: d10.b9.fields[0].name; d10.b9.fields[0].type; d10.b9.fields[0].unit; d10.b9.fields[0].range; d10.b9.fields[0].null; d10.b9.fields[0].owner; d10.b9.fields[0].read; d10.b9.fields[0].write; d10.b9.fields[0].snapsho​t; d10.b9.fields[0].commitP​oint; d10.b9.fields[1].name; d10.b9.fields[1].type; d10.b9.fields[1].unit; d10.b9.fields[1].range; d10.b9.fields[1].null; d10.b9.fields[1].owner; d10.b9.fields[1].read; d10.b9.fields[1].write; d10.b9.fields[1].snapsho​t; d10.b9.fields[1].commitP​oint; d10.b9.fields[2].name; d10.b9.fields[2].type; d10.b9.fields[2].unit; d10.b9.fields[2].null; d10.b9.fields[2].owner; d10.b9.fields[2].read; d10.b9.fields[2].write; d10.b9.fields[2].snapsho​t; d10.b9.fields[2].commitP​oint; d10.b9.fields[3].name; d10.b9.fields[3].type; d10.b9.fields[3].unit; d10.b9.fields[3].null; d10.b9.fields[3].owner; d10.b9.fields[3].read; d10.b9.fields[3].write; d10.b9.fields[3].snapsho​t; d10.b9.fields[3].commitP​oint; d10.b9.fields[4].name; d10.b9.fields[4].type; d10.b9.fields[4].unit; d10.b9.fields[4].null; d10.b9.fields[4].owner; d10.b9.fields[4].read; d10.b9.fields[4].write; d10.b9.fields[4].snapsho​t; d10.b9.fields[4].commitP​oint; d10.b9.fields[5].name; d10.b9.fields[5].type; d10.b9.fields[5].unit; d10.b9.fields[5].null; d10.b9.fields[5].owner; d10.b9.fields[5].read; d10.b9.fields[5].write; d10.b9.fields[5].snapsho​t; d10.b9.fields[5].commitP​oint)
@@ -22907,13 +22907,13 @@ D10의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 역사 참조 — 운용 경로 제외 | d10.b9.rulesVersionLinka​ge.canonRules[2].path | "canon/locales/ko-KR/rul​es/rules-factions-warfar​e-clauses.json" |
 | 역사 참조 — 운용 경로 제외 | d10.b9.rulesVersionLinka​ge.canonRules[2].sha256 | "cd10396fbf6bf4368f043a5​efb493f5e743b496f2c0f3b6​1f19db2b148adfdec" |
 | 역사 참조 — 운용 경로 제외 | d10.b9.rulesVersionLinka​ge.compatibility | "규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다." |
-| 운용 — 현재 판본·행위 선택 | d10.b9.dataOwner | "D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한" |
+| 운용 — 현재 판본·행위 선택 | d10.b9.dataOwner | "D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[0].name | "title" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[0].type | "TitleRecord" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[0].unit | "stable title identity and registered territory set" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[0].range | "nonempty titleId, registered rankId, zero or more territory IDs, superiorTitleId or null" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[0].null | "missing title blocks rights transition; null superior is allowed only when the registered record says lowest-rank exception or top-level root" |
-| 운용 — 정확 입력·단위 | d10.b9.fields[0].owner | "D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한" |
+| 운용 — 정확 입력·단위 | d10.b9.fields[0].owner | "D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[0].read | "complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[0].write | "D10 right status or beneficiary after all guards; single fabrication mandate consumption receipt; revision and immutable event receipt" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[0].snapsho​t | "Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion." |
@@ -22923,7 +22923,7 @@ D10의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 정확 입력·단위 | d10.b9.fields[1].unit | "one person-title-basis legal relation" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[1].range | "active &#124; suspended &#124; terminated; pressed &#124; unpressed &#124; potential" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[1].null | "unknown basis, beneficiary, title or status blocks operation" |
-| 운용 — 정확 입력·단위 | d10.b9.fields[1].owner | "D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한" |
+| 운용 — 정확 입력·단위 | d10.b9.fields[1].owner | "D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[1].read | "complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[1].write | "D10 right status or beneficiary after all guards; single fabrication mandate consumption receipt; revision and immutable event receipt" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[1].snapsho​t | "Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion." |
@@ -22932,7 +22932,7 @@ D10의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 정확 입력·단위 | d10.b9.fields[2].type | "ControlRecord &#124; null" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[2].unit | "effective control of a registered title/territory scope" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[2].null | "no verified controller; never implies holder or owner" |
-| 운용 — 정확 입력·단위 | d10.b9.fields[2].owner | "D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한" |
+| 운용 — 정확 입력·단위 | d10.b9.fields[2].owner | "D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[2].read | "complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[2].write | "D10 right status or beneficiary after all guards; single fabrication mandate consumption receipt; revision and immutable event receipt" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[2].snapsho​t | "Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion." |
@@ -22941,7 +22941,7 @@ D10의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 정확 입력·단위 | d10.b9.fields[3].type | "string &#124; null" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[3].unit | "D09 office classification" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[3].null | "not an error; never substitutes for title rank" |
-| 운용 — 정확 입력·단위 | d10.b9.fields[3].owner | "D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한" |
+| 운용 — 정확 입력·단위 | d10.b9.fields[3].owner | "D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[3].read | "complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[3].write | "D10 right status or beneficiary after all guards; single fabrication mandate consumption receipt; revision and immutable event receipt" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[3].snapsho​t | "Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion." |
@@ -22950,7 +22950,7 @@ D10의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 정확 입력·단위 | d10.b9.fields[4].type | "typed D10 event" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[4].unit | "immutable event identity at exact revision/rules version" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[4].null | "forbidden" |
-| 운용 — 정확 입력·단위 | d10.b9.fields[4].owner | "D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한" |
+| 운용 — 정확 입력·단위 | d10.b9.fields[4].owner | "D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[4].read | "complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[4].write | "D10 right status or beneficiary after all guards; single fabrication mandate consumption receipt; revision and immutable event receipt" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[4].snapsho​t | "Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion." |
@@ -22959,7 +22959,7 @@ D10의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 정확 입력·단위 | d10.b9.fields[5].type | "RatificationEvidence[]"​ |
 | 운용 — 정확 입력·단위 | d10.b9.fields[5].unit | "registered institution, scope and evidence identifiers" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[5].null | "unknown; blocks transitions that require ratification" |
-| 운용 — 정확 입력·단위 | d10.b9.fields[5].owner | "D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한" |
+| 운용 — 정확 입력·단위 | d10.b9.fields[5].owner | "D10 직함·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[5].read | "complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[5].write | "D10 right status or beneficiary after all guards; single fabrication mandate consumption receipt; revision and immutable event receipt" |
 | 운용 — 정확 입력·단위 | d10.b9.fields[5].snapsho​t | "Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion." |
@@ -22975,7 +22975,7 @@ D10의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 동일 사건 내용 비교 | d10.b9.snapshot | "Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion." |
 | 운용 — 선택 결과 원자 검증 | d10.b9.commitPoint | "Build candidate state, validate identity preservation, title existence, required consent/authority/ratifi​cation and cross-domain references, then atomically append one receipt and revision. Any failure leaves the checkpoint unchanged." |
 | 운용 — 현재 판본·행위 선택 | d10.b9.orderedSteps[0] | "Validate strict field types, stable unique IDs, rulesVersion and full checkpoint invariants." |
-| 운용 — 작위 신원 | d10.b9.orderedSteps[1] | "Resolve title and right by stable ID; names, office tier and historical registries are search evidence only." |
+| 운용 — 직함 신원 | d10.b9.orderedSteps[1] | "Resolve title and right by stable ID; names, office tier and historical registries are search evidence only." |
 | 운용 — 현재 판본·행위 선택 | d10.b9.orderedSteps[2] | "Check exact replay/event conflict before revision conflict so retries are deterministic." |
 | 운용 — 현재 판본·행위 선택 | d10.b9.orderedSteps[3] | "Evaluate event-specific consent, authority, recorded eligibility, beneficiary life, mandate or restoration evidence." |
 | 운용 — 현재 판본·행위 선택 | d10.b9.orderedSteps[4] | "Keep legal right, effective control, occupation, office and property separate; never derive one from another." |
@@ -23199,16 +23199,16 @@ This page presents, as structural diagrams, the machine inputs, verification ord
 {"domainId":"D11","diagramId":"d11-flow","moduleTitle":"D11 Operation Flow"}
 ```
 
-Consumer Contract (authority-and-conservation-no-roll): Title count conserved; delegation subset of actually held scope without changing holder. Preserve existing direct ducal limit 2 as documented old contract, not d10 rating.
+Consumer Contract (authority-and-conservation-no-roll): Title count conserved; delegation subset of actually held scope without changing holder. The old direct holding cap is replaced by the v4 appointment rule: a ten-station tier office is granted only by the faction''s appointing authority, not by d10 rating.
 
 ## Calculation and Output
 
 ```text
 D11-TITLE-CONSERVATION [] N_after = N_before; H_after(T) = recipient iff valid grant commit; count(holders(T)) = 1
-D11-DUCAL-BOUNDARY [] recipientDirectDucalAfter = recipientDirectDucalBefore + indicator(grantedTitleIsDucal); eligible iff after <= 2
+D11-DUCAL-BOUNDARY [] tenStationTierEligible = appointmentRecorded(appointingAuthority(faction), recipient); appointingAuthority: government President, Arc Hierophant, Free City Board; no direct-holding cap
 D11-SINGLE-RESULT [] committedEffects(eventId) <= 1
 D11-F1 [Candidate · Pre-approval] titleCountAfter=titleCountBefore; valid grant changes one legal holder; delegatedScope subsetOf actuallyHeldScope while holder unchanged
-D11-F2 [Candidate · Pre-approval] directDucalAfter=directDucalBefore+indicator(isDucal); existing eligibility limit <=2; new result at most once
+D11-F2 [Candidate · Pre-approval] tenStationTierEligible=appointmentRecorded(appointingAuthority); no direct-holding cap; new result at most once
 
 ```
 
@@ -23228,7 +23228,7 @@ The remaining contract leaves of D11 are preserved as a reference ledger linked 
 - signerLoss — enum (contract disposition)
 - superiorEdges — array of title-pair references (contract-edge)
 
-The data owners are D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order. The maintained contracts are D11-TITLE-CONSERVATION, D11-DUCAL-BOUNDARY, and D11-SINGLE-RESULT. The state ownership boundaries are title holder/controller,office,delegation scope,ducal count,contract clause,ratification,key/location handover,receipts. Commit rules: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below.
+The data owners are D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order. The maintained contracts are D11-TITLE-CONSERVATION, D11-DUCAL-BOUNDARY, and D11-SINGLE-RESULT. The state ownership boundaries are title holder/controller,office,delegation scope,ten-station tier appointment,contract clause,ratification,key/location handover,receipts. Commit rules: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below.
 
 ## Error and Hold Codes
 
@@ -23247,7 +23247,7 @@ Current scope limits: No domain-specific new original-trpg module. Reuse existin
 ## Processing by Flow Node and Original Steps
 
 - Title to Be Granted — [Title Grant] Verify the existing title, its current holder, and its revision. A title lower than the grantor''s rank and a recipient who is a member of that state are required. (Source: d11.b9.orderedSteps[4])
-- Ducal Title Limit Check — [Title Grant] Add 1 to the direct ducal title count only if the title being granted is ducal. If the result exceeds 2, reject it rather than truncating. (Source: d11.b9.formulaSheet[1].e​xpression; d11.b9.formulaSheet[1].u​nit; d11.b9.formulaSheet[1].a​uthority; d11.b9.formulaSheet[1].r​ounding; d11.b9.formulaSheet[1].c​lamp)
+- Ten-Station Tier Appointment Check — [Title Grant] A ten-station tier office (Commissioner, Cardinal, Director) is granted only when the faction''s appointing authority (the President, the Hierophant, the Board) has recorded the appointment. Without that record the grant is rejected and not downgraded to another office. (Source: d11.b9.formulaSheet[1].e​xpression; d11.b9.formulaSheet[1].u​nit; d11.b9.formulaSheet[1].a​uthority; d11.b9.formulaSheet[1].r​ounding; d11.b9.formulaSheet[1].c​lamp)
 - Consent, Survival, and Ritual — [Title Grant] Separately verify the recipient''s consent, a living and lawful ratifying authority, and the required ritual, record, and relic grounds. (Source: see the domain contract flow and detail items)
 - Change of Holder of the Same Title — [Title Grant] When all conditions are met, the same title is removed from one holder list and enters exactly one recipient''s list. The total number of titles and institutional property are preserved. (Source: d11.b9.commitPoint)
 - Physical Handover Kept Separate — [Title Grant] Without the required ritual grounds, a legal grant is impossible. If the key is missing after a legal grant, the right is held but recovery and operational handover remain incomplete. (Source: d11.b11.stateSheet.custo​dy)
@@ -23352,7 +23352,7 @@ Current scope limits: No domain-specific new original-trpg module. Reuse existin
 | Operation — Exact Input and Units | d11.b9.fields[5].name | "grantorRank,titleRank,r​ecipientDucalCount" |
 | Operation — Exact Input and Units | d11.b9.fields[5].type | "safe integer" |
 | Operation — Exact Input and Units | d11.b9.fields[5].unit | "ordered-rank / directly-held-title-coun​t" |
-| Operation — Exact Input and Units | d11.b9.fields[5].range | "nonnegative authored rank/count; ducal direct holdings <=2" |
+| Operation — Exact Input and Units | d11.b9.fields[5].range | "nonnegative authored rank/count; ten-station tier requires a recorded appointment" |
 | Operation — Exact Input and Units | d11.b9.fields[5].null | "reject E_INPUT" |
 | Operation — Exact Input and Units | d11.b9.fields[5].owner | "D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order" |
 | Operation — Exact Input and Units | d11.b9.fields[5].read | "D01 identity/alive/capabilit​y; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/​superior contract; D13 custody/included rights; D18 accepted event order and rule version" |
@@ -23428,7 +23428,7 @@ Current scope limits: No domain-specific new original-trpg module. Reuse existin
 | Operation — Current Edition and Action Selection | d11.b9.orderedSteps[1] | "Match existing result by event ID and full payload before reapplying. Reject changed replay." |
 | Operation — Current Edition and Action Selection | d11.b9.orderedSteps[2] | "Read title identity and revision; refuse stale snapshot without mutations." |
 | Operation — Current Edition and Action Selection | d11.b9.orderedSteps[3] | "Check capability, actual authority, location/delivery, exclusive resource reservations and counterpart consent/institution in D03 order." |
-| Operation — Subordinate Title to Be Granted | d11.b9.orderedSteps[4] | "For grant require existing lower title, country-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. Direct ducal holding after addition cannot exceed existing limit two." |
+| Operation — Subordinate Title to Be Granted | d11.b9.orderedSteps[4] | "For grant require existing lower title, country-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. A ten-station tier office requires the faction appointing authority''s recorded appointment." |
 | Operation — Delegation Within Held Scope | d11.b9.orderedSteps[5] | "For recall require approved existing clause, breach evidence and applicable ratification. For delegation keep legal holder and restrict scope to actually held rights. Appointment touches office powers only." |
 | Operation — Current Edition and Action Selection | d11.b9.orderedSteps[6] | "Emit exactly one legal delta for grant/recall. Preserve ID count, institutional property, omitted assets, original-owner rights and completed progress." |
 | Operation — Illegal Seizure | d11.b9.orderedSteps[7] | "Assess physical handover separately. Unlawful seizure affects control/custody and opens dispute/betrayal, never lawful holder or recall." |
@@ -23441,11 +23441,11 @@ Current scope limits: No domain-specific new original-trpg module. Reuse existin
 | Operation — Current Edition and Action Selection | d11.b9.formulaSheet[0].r​ounding | "none; exact integer/set operation" |
 | Operation — Current Edition and Action Selection | d11.b9.formulaSheet[0].c​lamp | "none" |
 | Historical Reference — Excluded from Operational Path | d11.b9.formulaSheet[1].i​d | "D11-DUCAL-BOUNDARY" |
-| Operation — Ducal Title Limit Check | d11.b9.formulaSheet[1].e​xpression | "recipientDirectDucalAft​er = recipientDirectDucalBefo​re + indicator(grantedTitleIs​Ducal); eligible iff after <= 2" |
-| Operation — Ducal Title Limit Check | d11.b9.formulaSheet[1].u​nit | "direct ducal title count" |
-| Operation — Ducal Title Limit Check | d11.b9.formulaSheet[1].a​uthority | "existing SP1 sp1.b38 limit, not new balance" |
-| Operation — Ducal Title Limit Check | d11.b9.formulaSheet[1].r​ounding | "exact integer" |
-| Operation — Ducal Title Limit Check | d11.b9.formulaSheet[1].c​lamp | "reject over-limit, do not silently clamp" |
+| Operation — Ten-Station Tier Appointment Check | d11.b9.formulaSheet[1].e​xpression | "tenStationTierEligi​ble = appointmentRecorded(appointingAuth​ority(faction), recipient)" |
+| Operation — Ten-Station Tier Appointment Check | d11.b9.formulaSheet[1].u​nit | "recorded ten-station tier appointments" |
+| Operation — Ten-Station Tier Appointment Check | d11.b9.formulaSheet[1].a​uthority | "v4 CANON-BIBLE 2.6 appointment rule, replaces the old sp1.b38 limit" |
+| Operation — Ten-Station Tier Appointment Check | d11.b9.formulaSheet[1].r​ounding | "exact integer" |
+| Operation — Ten-Station Tier Appointment Check | d11.b9.formulaSheet[1].c​lamp | "reject without a recorded appointment, do not silently downgrade" |
 | Historical Reference — Excluded from Operational Path | d11.b9.formulaSheet[2].i​d | "D11-SINGLE-RESULT" |
 | Operation — Current Edition and Action Selection | d11.b9.formulaSheet[2].e​xpression | "committedEffects(eventI​d) <= 1" |
 | Operation — Current Edition and Action Selection | d11.b9.formulaSheet[2].u​nit | "logical commits per permanent event" |
@@ -23588,16 +23588,16 @@ Current scope limits: No domain-specific new original-trpg module. Reuse existin
 {"domainId":"D11","diagramId":"d11-flow","moduleTitle":"D11 운용 흐름"}
 ```
 
-소비자 계약(authority-and-conservation-no-roll): Title count conserved; delegation subset of actually held scope without changing holder. Preserve existing direct ducal limit 2 as documented old contract, not d10 rating.
+소비자 계약(authority-and-conservation-no-roll): Title count conserved; delegation subset of actually held scope without changing holder. The old direct holding cap is replaced by the v4 appointment rule: a ten-station tier office is granted only by the faction''s appointing authority, not by d10 rating.
 
 ## 계산과 출력
 
 ```text
 D11-TITLE-CONSERVATION [] N_after = N_before; H_after(T) = recipient iff valid grant commit; count(holders(T)) = 1
-D11-DUCAL-BOUNDARY [] recipientDirectDucalAfter = recipientDirectDucalBefore + indicator(grantedTitleIsDucal); eligible iff after <= 2
+D11-DUCAL-BOUNDARY [] tenStationTierEligible = appointmentRecorded(appointingAuthority(faction), recipient); appointingAuthority: government President, Arc Hierophant, Free City Board; no direct-holding cap
 D11-SINGLE-RESULT [] committedEffects(eventId) <= 1
 D11-F1 [후보·승인 전] titleCountAfter=titleCountBefore; valid grant changes one legal holder; delegatedScope subsetOf actuallyHeldScope while holder unchanged
-D11-F2 [후보·승인 전] directDucalAfter=directDucalBefore+indicator(isDucal); existing eligibility limit <=2; new result at most once
+D11-F2 [후보·승인 전] tenStationTierEligible=appointmentRecorded(appointingAuthority); no direct-holding cap; new result at most once
 
 ```
 
@@ -23617,7 +23617,7 @@ D11의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 - signerLoss — enum (contract disposition)
 - superiorEdges — array of title-pair references (contract-edge)
 
-자료 소유자는 D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order, 유지 계약은 D11-TITLE-CONSERVATION·D11-DUCAL-BOUNDARY·D11-SINGLE-RESULT다. 상태 소유 경계는 title holder/controller,office,delegation scope,ducal count,contract clause,ratification,key/location handover,receipts. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below.
+자료 소유자는 D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order, 유지 계약은 D11-TITLE-CONSERVATION·D11-DUCAL-BOUNDARY·D11-SINGLE-RESULT다. 상태 소유 경계는 title holder/controller,office,delegation scope,ten-station tier appointment,contract clause,ratification,key/location handover,receipts. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below.
 
 ## 오류·보류 코드
 
@@ -23635,12 +23635,12 @@ D11의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 
 ## 흐름 노드별 처리와 원문 단계
 
-- 수여할 하위 작위 — [작위 수여] 기존 작위와 현재 보유자·개정을 확인한다. 수여자의 지위보다 낮은 작위와 해당 국가 구성원 수혜자가 필요하다. (원문: d11.b9.orderedSteps[4])
-- 공작위 한도 검사 — [작위 수여] 직접 공작위 수에 수여 대상이 공작위일 때만 1을 더한다. 결과가 2를 넘으면 거부하며 잘라내지 않는다. (원문: d11.b9.formulaSheet[1].e​xpression; d11.b9.formulaSheet[1].u​nit; d11.b9.formulaSheet[1].a​uthority; d11.b9.formulaSheet[1].r​ounding; d11.b9.formulaSheet[1].c​lamp)
-- 동의·생존·의례 — [작위 수여] 수혜자 동의와 살아 있는 적법 인준권자, 필요한 의례·기록·유물 근거를 각각 확인한다. (원문: 도메인 계약 흐름과 상세 항목 참조)
-- 동일 작위 보유자 변경 — [작위 수여] 모든 조건 충족 시 같은 작위가 한 보유 목록에서 빠지고 정확히 한 수혜자 목록에 들어간다. 전체 작위 수와 기관 재산은 보존한다. (원문: d11.b9.commitPoint)
-- 실물 인계 별도 — [작위 수여] 필수 의례 근거가 없으면 법적 수여 불가다. 법적 수여 후 열쇠가 없으면 권리는 보유하되 회수·운영 인계가 미완이다. (원문: d11.b11.stateSheet.custo​dy)
-- 직위 임명 — [임명·위임·회수] 임명은 office 권한만 변경하며 법적 작위 보유자를 바꾸지 않는다. (원문: d11.b11.stateSheet.owner​ship)
+- 수여할 하위 직함 — [직함 수여] 기존 직함과 현재 보유자·개정을 확인한다. 수여자의 지위보다 낮은 직함과 해당 국가 구성원 수혜자가 필요하다. (원문: d11.b9.orderedSteps[4])
+- 10 이상 단계 임명 검사 — [직함 수여] 10 이상 단계 직위(청장·추기경·이사)는 세력별 임명권자(대통령·교주·이사회)의 임명 기록이 있을 때만 준다. 기록이 없으면 거부하며 다른 직위로 낮춰 주지 않는다. (원문: d11.b9.formulaSheet[1].e​xpression; d11.b9.formulaSheet[1].u​nit; d11.b9.formulaSheet[1].a​uthority; d11.b9.formulaSheet[1].r​ounding; d11.b9.formulaSheet[1].c​lamp)
+- 동의·생존·의례 — [직함 수여] 수혜자 동의와 살아 있는 적법 인준권자, 필요한 의례·기록·유물 근거를 각각 확인한다. (원문: 도메인 계약 흐름과 상세 항목 참조)
+- 동일 직함 보유자 변경 — [직함 수여] 모든 조건 충족 시 같은 직함이 한 보유 목록에서 빠지고 정확히 한 수혜자 목록에 들어간다. 전체 직함 수와 기관 재산은 보존한다. (원문: d11.b9.commitPoint)
+- 실물 인계 별도 — [직함 수여] 필수 의례 근거가 없으면 법적 수여 불가다. 법적 수여 후 열쇠가 없으면 권리는 보유하되 회수·운영 인계가 미완이다. (원문: d11.b11.stateSheet.custo​dy)
+- 직위 임명 — [임명·위임·회수] 임명은 office 권한만 변경하며 법적 직함 보유자를 바꾸지 않는다. (원문: d11.b11.stateSheet.owner​ship)
 - 보유 범위 내 위임 — [임명·위임·회수] 위임은 실제 보유한 권한의 부분집합에 한정하고 원보유자를 유지한다. (원문: d11.b9.orderedSteps[5])
 - 회수 조항·위반·인준 — [임명·위임·회수] 기존 승인 회수 조항과 위반 증거 및 해당 인준이 필요하다. 회수 완료 이전 법적 보유를 바꾸지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)
 - 계약 회수 — [임명·위임·회수] 유효한 회수는 그 계약 범위만 종료하고 별도 실물 인계까지 자동 완료하지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)
@@ -23741,7 +23741,7 @@ D11의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 정확 입력·단위 | d11.b9.fields[5].name | "grantorRank,titleRank,r​ecipientDucalCount" |
 | 운용 — 정확 입력·단위 | d11.b9.fields[5].type | "safe integer" |
 | 운용 — 정확 입력·단위 | d11.b9.fields[5].unit | "ordered-rank / directly-held-title-coun​t" |
-| 운용 — 정확 입력·단위 | d11.b9.fields[5].range | "nonnegative authored rank/count; ducal direct holdings <=2" |
+| 운용 — 정확 입력·단위 | d11.b9.fields[5].range | "nonnegative authored rank/count; ten-station tier requires a recorded appointment" |
 | 운용 — 정확 입력·단위 | d11.b9.fields[5].null | "reject E_INPUT" |
 | 운용 — 정확 입력·단위 | d11.b9.fields[5].owner | "D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order" |
 | 운용 — 정확 입력·단위 | d11.b9.fields[5].read | "D01 identity/alive/capabilit​y; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/​superior contract; D13 custody/included rights; D18 accepted event order and rule version" |
@@ -23812,12 +23812,12 @@ D11의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 선택 결과 원자 검증 | d11.b9.writeSet[2] | "D13 custody request through owner" |
 | 운용 — 선택 결과 원자 검증 | d11.b9.writeSet[3] | "D07 dispute/betrayal issue event only" |
 | 운용 — 동일 사건 내용 비교 | d11.b9.snapshot | "Validate all participating revisions before committing. D11 closure model demonstrates one title ledger only; cross-domain transaction implementation belongs to Task48." |
-| 운용 — 동일 작위 보유자 변경 | d11.b9.commitPoint | "All grant/recall guards pass and institution ratification is recorded; same permanent title leaves one holder list and enters exactly one recipient list in one logical commit. Custody is not that commit." |
+| 운용 — 동일 직함 보유자 변경 | d11.b9.commitPoint | "All grant/recall guards pass and institution ratification is recorded; same permanent title leaves one holder list and enters exactly one recipient list in one logical commit. Custody is not that commit." |
 | 운용 — 현재 판본·행위 선택 | d11.b9.orderedSteps[0] | "Parse typed operation and unit-bearing snapshot; reject damaged or wrong-version load." |
 | 운용 — 현재 판본·행위 선택 | d11.b9.orderedSteps[1] | "Match existing result by event ID and full payload before reapplying. Reject changed replay." |
 | 운용 — 현재 판본·행위 선택 | d11.b9.orderedSteps[2] | "Read title identity and revision; refuse stale snapshot without mutations." |
 | 운용 — 현재 판본·행위 선택 | d11.b9.orderedSteps[3] | "Check capability, actual authority, location/delivery, exclusive resource reservations and counterpart consent/institution in D03 order." |
-| 운용 — 수여할 하위 작위 | d11.b9.orderedSteps[4] | "For grant require existing lower title, country-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. Direct ducal holding after addition cannot exceed existing limit two." |
+| 운용 — 수여할 하위 직함 | d11.b9.orderedSteps[4] | "For grant require existing lower title, country-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. A ten-station tier office requires the faction appointing authority''s recorded appointment." |
 | 운용 — 보유 범위 내 위임 | d11.b9.orderedSteps[5] | "For recall require approved existing clause, breach evidence and applicable ratification. For delegation keep legal holder and restrict scope to actually held rights. Appointment touches office powers only." |
 | 운용 — 현재 판본·행위 선택 | d11.b9.orderedSteps[6] | "Emit exactly one legal delta for grant/recall. Preserve ID count, institutional property, omitted assets, original-owner rights and completed progress." |
 | 운용 — 불법 압류 | d11.b9.orderedSteps[7] | "Assess physical handover separately. Unlawful seizure affects control/custody and opens dispute/betrayal, never lawful holder or recall." |
@@ -23830,11 +23830,11 @@ D11의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 현재 판본·행위 선택 | d11.b9.formulaSheet[0].r​ounding | "none; exact integer/set operation" |
 | 운용 — 현재 판본·행위 선택 | d11.b9.formulaSheet[0].c​lamp | "none" |
 | 역사 참조 — 운용 경로 제외 | d11.b9.formulaSheet[1].i​d | "D11-DUCAL-BOUNDARY" |
-| 운용 — 공작위 한도 검사 | d11.b9.formulaSheet[1].e​xpression | "recipientDirectDucalAft​er = recipientDirectDucalBefo​re + indicator(grantedTitleIs​Ducal); eligible iff after <= 2" |
-| 운용 — 공작위 한도 검사 | d11.b9.formulaSheet[1].u​nit | "direct ducal title count" |
-| 운용 — 공작위 한도 검사 | d11.b9.formulaSheet[1].a​uthority | "existing SP1 sp1.b38 limit, not new balance" |
-| 운용 — 공작위 한도 검사 | d11.b9.formulaSheet[1].r​ounding | "exact integer" |
-| 운용 — 공작위 한도 검사 | d11.b9.formulaSheet[1].c​lamp | "reject over-limit, do not silently clamp" |
+| 운용 — 10 이상 단계 임명 검사 | d11.b9.formulaSheet[1].e​xpression | "tenStationTierEligi​ble = appointmentRecorded(appointingAuth​ority(faction), recipient)" |
+| 운용 — 10 이상 단계 임명 검사 | d11.b9.formulaSheet[1].u​nit | "recorded ten-station tier appointments" |
+| 운용 — 10 이상 단계 임명 검사 | d11.b9.formulaSheet[1].a​uthority | "v4 CANON-BIBLE 2.6 appointment rule, replaces the old sp1.b38 limit" |
+| 운용 — 10 이상 단계 임명 검사 | d11.b9.formulaSheet[1].r​ounding | "exact integer" |
+| 운용 — 10 이상 단계 임명 검사 | d11.b9.formulaSheet[1].c​lamp | "reject without a recorded appointment, do not silently downgrade" |
 | 역사 참조 — 운용 경로 제외 | d11.b9.formulaSheet[2].i​d | "D11-SINGLE-RESULT" |
 | 운용 — 현재 판본·행위 선택 | d11.b9.formulaSheet[2].e​xpression | "committedEffects(eventI​d) <= 1" |
 | 운용 — 현재 판본·행위 선택 | d11.b9.formulaSheet[2].u​nit | "logical commits per permanent event" |
@@ -24500,7 +24500,7 @@ Current scope limits: No domain-specific new original-trpg module. Reuse existin
 | Operation — Current Edition and Action Selection | d12.b11.decisionDisposit​ion[8].decisionId | "T68-D09-COUNTRY-LAWS" |
 | Operation — Current Edition and Action Selection | d12.b11.decisionDisposit​ion[8].subdecisionKey | "country-institutions-re​sidual" |
 | Operation — Current Edition and Action Selection | d12.b11.decisionDisposit​ion[8].chosenOption | "A" |
-| Operation — Current Edition and Action Selection | d12.b11.decisionDisposit​ion[8].selectedLabel | "Specify electors, quorum, resolver, confirmation, and proxy for each of the 16 states" |
+| Operation — Current Edition and Action Selection | d12.b11.decisionDisposit​ion[8].selectedLabel | "Specify electors, quorum, resolver, confirmation, and proxy for each of the three factions" |
 | Operation — Current Edition and Action Selection | d12.b11.decisionDisposit​ion[8].disposition | "APPLIED_BOUNDED_WITH_UP​STREAM_DEFER" |
 | Operation — Current Edition and Action Selection | d12.b11.decisionDisposit​ion[8].boundary | "D09 country-specific procedure; OFFICE/P-COUNTRIES" |
 | Operation — Current Edition and Action Selection | d12.b11.decisionDisposit​ion[8].scope | "Preserve selected direction; no new concrete values/records approved." |
@@ -25323,7 +25323,7 @@ D12의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 현재 판본·행위 선택 | d12.b11.decisionDisposit​ion[8].decisionId | "T68-D09-COUNTRY-LAWS" |
 | 운용 — 현재 판본·행위 선택 | d12.b11.decisionDisposit​ion[8].subdecisionKey | "country-institutions-re​sidual" |
 | 운용 — 현재 판본·행위 선택 | d12.b11.decisionDisposit​ion[8].chosenOption | "A" |
-| 운용 — 현재 판본·행위 선택 | d12.b11.decisionDisposit​ion[8].selectedLabel | "16국 각각 선거인·정족수·해결자·인준·대행을 명시" |
+| 운용 — 현재 판본·행위 선택 | d12.b11.decisionDisposit​ion[8].selectedLabel | "세 세력 각각 선거인·정족수·해결자·인준·대행을 명시" |
 | 운용 — 현재 판본·행위 선택 | d12.b11.decisionDisposit​ion[8].disposition | "APPLIED_BOUNDED_WITH_UP​STREAM_DEFER" |
 | 운용 — 현재 판본·행위 선택 | d12.b11.decisionDisposit​ion[8].boundary | "D09 country-specific procedure; OFFICE/P-COUNTRIES" |
 | 운용 — 현재 판본·행위 선택 | d12.b11.decisionDisposit​ion[8].scope | "Preserve selected direction; no new concrete values/records approved." |
@@ -29330,7 +29330,7 @@ D13의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 현재 판본·행위 선택 | d13.b11.decisionApplicat​ions.D12.application | "자산 가격과 행동 비용·수락 조건 및 스냅샷을 분리한다." |
 | 운용 — 현재 판본·행위 선택 | d13.b11.decisionApplicat​ions.D12.heldValuesRemai​nProposals | true |
 | 운용 — 현재 판본·행위 선택 | d13.b11.decisionApplicat​ions.D17.chosenOption | "B" |
-| 운용 — 현재 판본·행위 선택 | d13.b11.decisionApplicat​ions.D17.application | "작위와 상위 계약은 개인 자산이 아닌 별도 권리 입력이다; 취득 기간으로 실물 도착을 추정하지 않는다." |
+| 운용 — 현재 판본·행위 선택 | d13.b11.decisionApplicat​ions.D17.application | "직함과 상위 계약은 개인 자산이 아닌 별도 권리 입력이다; 취득 기간으로 실물 도착을 추정하지 않는다." |
 | 운용 — 현재 판본·행위 선택 | d13.b11.decisionApplicat​ions.D17.heldValuesRemai​nProposals | true |
 | 운용 — 현재 판본·행위 선택 | d13.b11.decisionApplicat​ions.D19.chosenOption | "A" |
 | 운용 — 현재 판본·행위 선택 | d13.b11.decisionApplicat​ions.D19.application | "수여·만료·사망·회수의 권한과 실제 인계를 계약별로 분리한다." |
@@ -29746,12 +29746,12 @@ D13의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 현재 판본·행위 선택 | d13.b11.decisionDisposit​ion[16].domains[2] | "D11" |
 | 운용 — 현재 판본·행위 선택 | d13.b11.decisionDisposit​ion[16].domains[3] | "D16" |
 | 운용 — 현재 판본·행위 선택 | d13.b11.decisionDisposit​ion[16].consequences.tra​deoff | "완료 범위가 넓지만 세계관 결정이 늘어난다" |
-| 운용 — 현재 판본·행위 선택 | d13.b11.decisionDisposit​ion[16].consequences.dow​nstreamChanges | "작위·상위 계약·비준 절차·취득/안정화 기간" |
+| 운용 — 현재 판본·행위 선택 | d13.b11.decisionDisposit​ion[16].consequences.dow​nstreamChanges | "직함·상위 계약·비준 절차·취득/안정화 기간" |
 | 운용 — 현재 판본·행위 선택 | d13.b11.decisionDisposit​ion[16].consequences.sel​ectionEffect | "A/B 응답은 제안 방향·작성/검토 방식 선택이다. 정확한 함수·계수·단위·실제 레코드·개인/국가 처분은 아래 잔여 입력 승인 전 채택되지 않는다." |
 | 운용 — 현재 판본·행위 선택 | d13.b11.decisionDisposit​ion[16].dossierPointer | "/decisions/16" |
 | 운용 — 현재 판본·행위 선택 | d13.b11.decisionDisposit​ion[16].relevant | true |
 | 운용 — 현재 판본·행위 선택 | d13.b11.decisionDisposit​ion[16].disposition | "apply-selected-directio​n-defer-held-inputs" |
-| 운용 — 현재 판본·행위 선택 | d13.b11.decisionDisposit​ion[16].reason | "작위와 상위 계약은 개인 자산이 아닌 별도 권리 입력이다; 취득 기간으로 실물 도착을 추정하지 않는다." |
+| 운용 — 현재 판본·행위 선택 | d13.b11.decisionDisposit​ion[16].reason | "직함과 상위 계약은 개인 자산이 아닌 별도 권리 입력이다; 취득 기간으로 실물 도착을 추정하지 않는다." |
 | 운용 — 현재 판본·행위 선택 | d13.b11.decisionDisposit​ion[16].application | "contract.json#/decision​Applications/D17" |
 | 운용 — 현재 판본·행위 선택 | d13.b11.decisionDisposit​ion[16].heldBoundary | "A/B 응답은 제안 방향·작성/검토 방식 선택이다. 정확한 함수·계수·단위·실제 레코드·개인/국가 처분은 아래 잔여 입력 승인 전 채택되지 않는다." |
 | 운용 — 현재 판본·행위 선택 | d13.b11.decisionDisposit​ion[17].rowId | "D18" |
@@ -32969,11 +32969,11 @@ D14의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 현재 판본·행위 선택 | d14.b11.decisionDisposit​ion[16].declaredDomains[​2] | "D11" |
 | 운용 — 현재 판본·행위 선택 | d14.b11.decisionDisposit​ion[16].declaredDomains[​3] | "D16" |
 | 운용 — 현재 판본·행위 선택 | d14.b11.decisionDisposit​ion[16].consequences.tra​deoff | "완료 범위가 넓지만 세계관 결정이 늘어난다" |
-| 운용 — 현재 판본·행위 선택 | d14.b11.decisionDisposit​ion[16].consequences.dow​nstreamChanges | "작위·상위 계약·비준 절차·취득/안정화 기간" |
+| 운용 — 현재 판본·행위 선택 | d14.b11.decisionDisposit​ion[16].consequences.dow​nstreamChanges | "직함·상위 계약·비준 절차·취득/안정화 기간" |
 | 운용 — 현재 판본·행위 선택 | d14.b11.decisionDisposit​ion[16].consequences.sel​ectionEffect | "A/B 응답은 제안 방향·작성/검토 방식 선택이다. 정확한 함수·계수·단위·실제 레코드·개인/국가 처분은 아래 잔여 입력 승인 전 채택되지 않는다." |
 | 운용 — 현재 판본·행위 선택 | d14.b11.decisionDisposit​ion[16].relevance | "cross-domain-consumer-b​oundary" |
 | 운용 — 현재 판본·행위 선택 | d14.b11.decisionDisposit​ion[16].disposition | "defer-with-trace" |
-| 운용 — 현재 판본·행위 선택 | d14.b11.decisionDisposit​ion[16].reason | "작위/인준은 숙련 및 기술 자격과 분리; D10 실제 레코드 후속." |
+| 운용 — 현재 판본·행위 선택 | d14.b11.decisionDisposit​ion[16].reason | "직함/인준은 숙련 및 기술 자격과 분리; D10 실제 레코드 후속." |
 | 운용 — 현재 판본·행위 선택 | d14.b11.decisionDisposit​ion[16].target | "proposals.json#crossDom​ainDeferrals" |
 | 운용 — 현재 판본·행위 선택 | d14.b11.decisionDisposit​ion[16].heldBoundary | "A/B 응답은 제안 방향·작성/검토 방식 선택이다. 정확한 함수·계수·단위·실제 레코드·개인/국가 처분은 아래 잔여 입력 승인 전 채택되지 않는다." |
 | 운용 — 현재 판본·행위 선택 | d14.b11.decisionDisposit​ion[17].rowId | "D18" |
@@ -33355,9 +33355,9 @@ D14의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 보류 — 운용 경로 제외 | d14.b11.proposalContext.​crossDomainDeferrals[10]​.consequences.downstream​Changes | "인구 계보·추출·복귀·예약; 능력 생성은 D36" |
 | 보류 — 운용 경로 제외 | d14.b11.proposalContext.​crossDomainDeferrals[10]​.consequences.selectionE​ffect | "A/B 응답은 제안 방향·작성/검토 방식 선택이다. 정확한 함수·계수·단위·실제 레코드·개인/국가 처분은 아래 잔여 입력 승인 전 채택되지 않는다." |
 | 보류 — 운용 경로 제외 | d14.b11.proposalContext.​crossDomainDeferrals[11]​.rowId | "D17" |
-| 보류 — 운용 경로 제외 | d14.b11.proposalContext.​crossDomainDeferrals[11]​.reason | "작위/인준은 숙련 및 기술 자격과 분리; D10 실제 레코드 후속." |
+| 보류 — 운용 경로 제외 | d14.b11.proposalContext.​crossDomainDeferrals[11]​.reason | "직함/인준은 숙련 및 기술 자격과 분리; D10 실제 레코드 후속." |
 | 보류 — 운용 경로 제외 | d14.b11.proposalContext.​crossDomainDeferrals[11]​.consequences.tradeoff | "완료 범위가 넓지만 세계관 결정이 늘어난다" |
-| 보류 — 운용 경로 제외 | d14.b11.proposalContext.​crossDomainDeferrals[11]​.consequences.downstream​Changes | "작위·상위 계약·비준 절차·취득/안정화 기간" |
+| 보류 — 운용 경로 제외 | d14.b11.proposalContext.​crossDomainDeferrals[11]​.consequences.downstream​Changes | "직함·상위 계약·비준 절차·취득/안정화 기간" |
 | 보류 — 운용 경로 제외 | d14.b11.proposalContext.​crossDomainDeferrals[11]​.consequences.selectionE​ffect | "A/B 응답은 제안 방향·작성/검토 방식 선택이다. 정확한 함수·계수·단위·실제 레코드·개인/국가 처분은 아래 잔여 입력 승인 전 채택되지 않는다." |
 | 보류 — 운용 경로 제외 | d14.b11.proposalContext.​crossDomainDeferrals[12]​.rowId | "D20" |
 | 보류 — 운용 경로 제외 | d14.b11.proposalContext.​crossDomainDeferrals[12]​.reason | "개인 가치/욕구 잠금은 보존; 학습률 가중치로 임의 환산하지 않음." |
@@ -37444,7 +37444,7 @@ D15의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 현재 판본·행위 선택 | d15.b11.decisionDisposit​ion[16].domains[2] | "D11" |
 | 운용 — 현재 판본·행위 선택 | d15.b11.decisionDisposit​ion[16].domains[3] | "D16" |
 | 운용 — 현재 판본·행위 선택 | d15.b11.decisionDisposit​ion[16].consequences.tra​deoff | "완료 범위가 넓지만 세계관 결정이 늘어난다" |
-| 운용 — 현재 판본·행위 선택 | d15.b11.decisionDisposit​ion[16].consequences.dow​nstreamChanges | "작위·상위 계약·비준 절차·취득/안정화 기간" |
+| 운용 — 현재 판본·행위 선택 | d15.b11.decisionDisposit​ion[16].consequences.dow​nstreamChanges | "직함·상위 계약·비준 절차·취득/안정화 기간" |
 | 운용 — 현재 판본·행위 선택 | d15.b11.decisionDisposit​ion[16].consequences.sel​ectionEffect | "A/B 응답은 제안 방향·작성/검토 방식 선택이다. 정확한 함수·계수·단위·실제 레코드·개인/국가 처분은 아래 잔여 입력 승인 전 채택되지 않는다." |
 | 운용 — 현재 판본·행위 선택 | d15.b11.decisionDisposit​ion[16].decisionPointer | "/decisions/16" |
 | 운용 — 현재 판본·행위 선택 | d15.b11.decisionDisposit​ion[16].dossierPointer | "/decisions/16" |
@@ -43299,7 +43299,7 @@ D18의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 보류 — 운용 경로 제외 | d18.b9.proposalHeld[29].​numericApproval | false |
 | 보류 — 운용 경로 제외 | d18.b9.proposalHeld[29].​operative | false |
 | 보류 — 운용 경로 제외 | d18.b9.proposalHeld[30].​id | "D17/titles-ratification​" |
-| 보류 — 운용 경로 제외 | d18.b9.proposalHeld[30].​field | "작위·상위 계약·비준 절차·취득/안정화 기간" |
+| 보류 — 운용 경로 제외 | d18.b9.proposalHeld[30].​field | "직함·상위 계약·비준 절차·취득/안정화 기간" |
 | 보류 — 운용 경로 제외 | d18.b9.proposalHeld[30].​value | null |
 | 보류 — 운용 경로 제외 | d18.b9.proposalHeld[30].​status | "proposal-held" |
 | 보류 — 운용 경로 제외 | d18.b9.proposalHeld[30].​decisionBoundary | "decision-record.json /decisions/16/consequenc​es/selectionEffect" |
@@ -44024,7 +44024,7 @@ D18의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 현재 판본·행위 선택 | d18.b11.decisionDisposit​ion[16].domains[2] | "D11" |
 | 운용 — 현재 판본·행위 선택 | d18.b11.decisionDisposit​ion[16].domains[3] | "D16" |
 | 운용 — 현재 판본·행위 선택 | d18.b11.decisionDisposit​ion[16].consequences.tra​deoff | "완료 범위가 넓지만 세계관 결정이 늘어난다" |
-| 운용 — 현재 판본·행위 선택 | d18.b11.decisionDisposit​ion[16].consequences.dow​nstreamChanges | "작위·상위 계약·비준 절차·취득/안정화 기간" |
+| 운용 — 현재 판본·행위 선택 | d18.b11.decisionDisposit​ion[16].consequences.dow​nstreamChanges | "직함·상위 계약·비준 절차·취득/안정화 기간" |
 | 운용 — 현재 판본·행위 선택 | d18.b11.decisionDisposit​ion[16].consequences.sel​ectionEffect | "A/B 응답은 제안 방향·작성/검토 방식 선택이다. 정확한 함수·계수·단위·실제 레코드·개인/국가 처분은 아래 잔여 입력 승인 전 채택되지 않는다." |
 | 운용 — 현재 판본·행위 선택 | d18.b11.decisionDisposit​ion[16].consequencesChec​ked | true |
 | 운용 — 현재 판본·행위 선택 | d18.b11.decisionDisposit​ion[16].disposition | "apply-policy-defer-held​-values" |
